@@ -5,6 +5,18 @@ import "../js/omnidexer.js";
 import * as ut from "./util.js";
 
 export class UtilSearchIndex {
+	static _getEntityLocators ({entities, indexMeta}) {
+		const sourcePageCounts = new Map();
+		return new Map(entities.map((ent, ix) => {
+			const source = Omnidexer.getProperty(ent, indexMeta.source || "source");
+			const page = Omnidexer.getProperty(ent, indexMeta.page || "page");
+			const sourcePageKey = JSON.stringify([source, page]);
+			const ixSourcePage = sourcePageCounts.get(sourcePageKey) || 0;
+			sourcePageCounts.set(sourcePageKey, ixSourcePage + 1);
+			return [ent, {ix, count: entities.length, ixSourcePage}];
+		}));
+	}
+
 	/**
 	 * Prefer "core" sources, then official sources, then others.
 	 */
@@ -17,8 +29,8 @@ export class UtilSearchIndex {
 		return aStandard !== bStandard ? bStandard - aStandard : SortUtil.ascSortLower(a, b);
 	}
 
-	static async pGetIndex ({doLogging = true, noFilter = false} = {}) {
-		return UtilSearchIndex._pGetIndex({doLogging, noFilter});
+	static async pGetIndex ({doLogging = true, noFilter = false, isIncludeSourceFile = false} = {}) {
+		return UtilSearchIndex._pGetIndex({doLogging, noFilter, isIncludeSourceFile});
 	}
 
 	static async pGetIndexAlternate (forProp, {doLogging = true, noFilter = false} = {}) {
@@ -39,7 +51,7 @@ export class UtilSearchIndex {
 		return UtilSearchIndex._pGetIndex({opts, optsAddToIndex, doLogging, noFilter});
 	}
 
-	static async _pGetIndex ({opts = {}, optsAddToIndex = {}, doLogging = true, noFilter = false} = {}) {
+	static async _pGetIndex ({opts = {}, optsAddToIndex = {}, doLogging = true, noFilter = false, isIncludeSourceFile = false} = {}) {
 		ut.patchLoadJson();
 
 		const indexer = new Omnidexer();
@@ -59,9 +71,17 @@ export class UtilSearchIndex {
 				const filePath = `./data/${indexMeta.dir}/${filename}`;
 				const contents = ut.readJson(filePath);
 				if (doLogging) console.log(`\tindexing ${filePath}`);
-				const optsNxt = {isNoFilter: noFilter};
+				const entities = Omnidexer.getProperty(contents, indexMeta.listProp) || [];
+				const entityLocators = this._getEntityLocators({entities, indexMeta});
+				const optsNxt = {
+					isNoFilter: noFilter,
+					isIncludeEntityLocator: isIncludeSourceFile,
+					fnGetEntityLocator: ent => entityLocators.get(ent),
+				};
 				if (opts.alternate) optsNxt.alt = indexMeta.alternateIndexes[opts.alternate];
+				const ixStart = indexer.getIndex().x.length;
 				await indexer.pAddToIndex(indexMeta, contents, {...optsNxt, ...optsAddToIndex});
+				if (isIncludeSourceFile) indexer.getIndex().x.slice(ixStart).forEach(it => it.f = filePath.replace(/^\.\//, ""));
 			}
 		}
 		// endregion
@@ -75,15 +95,23 @@ export class UtilSearchIndex {
 			const data = await DataUtil.loadJSON(filePath);
 
 			if (indexMeta.postLoad) indexMeta.postLoad(data);
+			const entities = Omnidexer.getProperty(data, indexMeta.listProp) || [];
+			const entityLocators = this._getEntityLocators({entities, indexMeta});
 
 			if (doLogging) console.log(`\tindexing ${filePath}`);
 			Object.values(data)
 				.filter(it => it instanceof Array)
 				.forEach(it => it.sort((a, b) => UtilSearchIndex._sortSources(SourceUtil.getEntitySource(a), SourceUtil.getEntitySource(b)) || SortUtil.ascSortLower(a.name || MiscUtil.get(a, "inherits", "name") || "", b.name || MiscUtil.get(b, "inherits", "name") || "")));
 
-			const optsNxt = {isNoFilter: noFilter};
+			const optsNxt = {
+				isNoFilter: noFilter,
+				isIncludeEntityLocator: isIncludeSourceFile,
+				fnGetEntityLocator: ent => entityLocators.get(ent),
+			};
 			if (opts.alternate) optsNxt.alt = indexMeta.alternateIndexes[opts.alternate];
+			const ixStart = indexer.getIndex().x.length;
 			await indexer.pAddToIndex(indexMeta, data, {...optsNxt, ...optsAddToIndex});
+			if (isIncludeSourceFile) indexer.getIndex().x.slice(ixStart).forEach(it => it.f = filePath.replace(/^\.\//, ""));
 		}
 		// endregion
 

@@ -109,6 +109,8 @@ class Omnidexer {
 	 * @param [options.isIncludeImg]
 	 * @param [options.isIncludeExtendedSourceInfo]
 	 * @param [options.isSkipNonPartnered]
+	 * @param [options.isIncludeEntityLocator]
+	 * @param [options.fnGetEntityLocator]
 	 */
 	async pAddToIndex (arbiter, json, options) {
 		options = options || {};
@@ -119,11 +121,12 @@ class Omnidexer {
 		const dataArr = Omnidexer.getProperty(json, arbiter.listProp);
 		if (!dataArr) return;
 
-		const state = {arbiter, index, options};
+		const state = {arbiter, dataArr, index, options};
 
 		let ixOffset = 0;
 		for (let ix = 0; ix < dataArr.length; ++ix) {
 			const it = dataArr[ix];
+			state.ixEntity = ix;
 
 			const name = Omnidexer.getProperty(it, arbiter.primary || "name");
 			await this._pAddToIndex_pHandleItem(state, it, ix + ixOffset, name);
@@ -190,6 +193,22 @@ class Omnidexer {
 			u: hash,
 			p: Omnidexer.getProperty(ent, arbiter.page || "page"),
 		};
+		if (options.isIncludeEntityLocator) {
+			const page = Omnidexer.getProperty(ent, arbiter.page || "page");
+			const entityLocator = options.fnGetEntityLocator?.(ent);
+			indexDoc._entityLocator = {
+				prop: arbiter.listProp,
+				ix: entityLocator?.ix ?? state.ixEntity,
+				count: entityLocator?.count ?? state.dataArr.length,
+				name: ent.ENG_name ?? ent.name,
+				source: src,
+				page,
+				ixSourcePage: entityLocator?.ixSourcePage ?? state.dataArr
+					.slice(0, state.ixEntity)
+					.filter(it => Omnidexer.getProperty(it, arbiter.source || "source") === src && Omnidexer.getProperty(it, arbiter.page || "page") === page)
+					.length,
+			};
+		}
 		if (src != null) indexDoc.s = this.getMetaId("s", src);
 		if (arbiter.isHover) indexDoc.h = 1;
 		if (arbiter.isFauxPage) indexDoc.hx = 1;
