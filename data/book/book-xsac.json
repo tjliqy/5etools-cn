@@ -18,7 +18,8 @@
 								"{@book 玩家手册|XPHB}",
 								"{@book 怪物图鉴|XMM}",
 								"{@book 城主指南|XDMG}"
-							]
+							],
+							"columns": 3
 						},
 						{
 							"ENG_name": "Errata",
@@ -327,7 +328,7 @@
 											"name": "如果你有像狡猾行动或风行步伐这样的特性，你可以在你的回合中多次采取冲刺行动吗？",
 											"type": "entries",
 											"entries": [
-												"如果你可以将{@action 疾走|XPHB}动作作为附赠动作，规则中没有任何内容阻止你同时用常规动作采取{@action 疾走|XPHB}动作。当你使用像{@classFeature 动作如潮|战士|XPHB|2|XPHB}这样的特性时，同样的原则也适用；你可以用你的两个动作都采取{@action 疾走|XPHB}动作。"
+												"如果你能将{@action 疾走|XPHB}动作作为附赠动作执行，规则中没有任何内容阻止你同时用你的常规动作也执行{@action 疾走|XPHB}动作。当你使用像{@classFeature 动作如潮|战士|XPHB|2|XPHB}这样的特性时，同样的原则也适用；你可以用你的两个动作都来执行{@action 疾走|XPHB}动作。"
 											],
 											"id": "026"
 										},
@@ -1728,7 +1729,7 @@
 											"name": "树肤术如何与盾牌、掩蔽和其他AC加值相互作用？",
 											"type": "entries",
 											"entries": [
-												"{@spell 树肤术|XPHB}的目标如果其AC低于17，则{@variantrule 护甲等级|XPHB}变为17。这意味着目标有效忽略其AC的任何加值\u2014\u2014包括任何护甲、{@item 盾牌|XPHB}或掩护\u2014\u2014除非其AC高于17。例如，如果你是{@spell 树肤术|XPHB}法术的目标且你的AC通常为14，在法术效应下你的AC为17；然而，如果你的AC通常为16且你有{@variantrule 掩护|XPHB|半身掩护}，你的AC为18，此时{@spell 树肤术|XPHB|树肤术的}效应不适用。"
+												"{@spell 树肤术|XPHB}的目标如果其{@variantrule 护甲等级|XPHB}低于17，则其护甲等级变为17。这意味着目标有效地忽略了对其护甲等级的任何加值\\u2014\\u2014包括任何护甲、{@item 盾牌|XPHB}或半身掩护\\u2014\\u2014除非其护甲等级高于17。例如，如果你是{@spell 树肤术|XPHB}法术的目标，并且你的护甲等级通常是14，那么在法术效果下你的护甲等级是17；然而，如果你的护甲等级通常是16并且你拥有{@variantrule 掩护|XPHB|半身掩护}，那么你的护甲等级是18，此时{@spell 树肤术|XPHB|树肤术的}的效果就不相关了。"
 											],
 											"id": "0c9"
 										},
@@ -1943,8 +1944,8 @@
 											"id": "0e0"
 										},
 										{
-											"ENG_name": "Can a creature under the effects of Polymorph have other spell effects on them, or are those game statistics also replaced by the those of the beast form?",
-											"name": "处于变形术效果下的生物能否同时受到其他法术效果影响？还是说这些游戏数据也会被野兽形态的数据所取代？",
+											"ENG_name": "Can a creature under the effects of Polymorph have other spell effects on them, or are those game statistics also replaced by those of the beast form?",
+											"name": "处于变形术效果下的生物能否同时拥有其他法术效果，还是那些游戏数据也被野兽形态的数据所取代？",
 											"type": "entries",
 											"entries": [
 												"{@spell 变形术|XPHB}仅将目标的角色卡或资料卡替换为选民形态的资料卡。其他效应，例如其他法术，仍然存在。"
@@ -2091,8 +2092,8 @@
 											"id": "0f1"
 										},
 										{
-											"ENG_name": "If a Shadow rolls a Critical Hit, does it reduce the target's Strength by 2d4, as well dealing the extra Necrotic damage?",
-											"name": "如果一个暗影骰出了重击，它是否会减少目标2d4的力量值，并造成额外的暗蚀伤害？",
+											"ENG_name": "If a Shadow rolls a Critical Hit, does it reduce the target's Strength by 2d4, as well as dealing the extra Necrotic damage?",
+											"name": "如果幽影骰出重击，它除了造成额外的黯蚀伤害外，是否还会使目标的力量降低2d4？",
 											"type": "entries",
 											"entries": [
 												"不会。一个{@variantrule 重击|XPHB}让你掷骰伤害骰子两次。造成伤害的效应是指减少目标的{@variantrule 生命值|XPHB}。{@creature 幽影|XMM|幽影的}力量减少不是伤害，因为它对目标的{@variantrule 生命值|XPHB}没有效果。"
@@ -2118,8 +2119,8 @@
 											"id": "0f4"
 										},
 										{
-											"ENG_name": "Can a Hydra use Reactive Heads to make multiple Opportunity Attack against one creature at the same time when it provokes?",
-											"name": "九头蛇能否在被激怒时使用反应多头对同一生物发动多次借机攻击？",
+											"ENG_name": "Can a Hydra use Reactive Heads to make multiple Opportunity Attacks against one creature at the same time when it provokes?",
+											"name": "当九头蛇引发借机攻击时，它能否同时对同一个生物使用反应头部进行多次借机攻击？",
 											"type": "entries",
 											"entries": [
 												"是的。出于这个原因，我们建议当你准备从一只{@creature 多头蛇|XMM}身边{@action 撤离|XPHB}时使用撤离动作。"

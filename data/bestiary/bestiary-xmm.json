@@ -25495,14 +25495,14 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"巨鳄鱼发动一次啃咬攻击和一次尾击攻击"
+						"巨鳄发动一次啃咬攻击和一次尾击攻击"
 					]
 				},
 				{
 					"ENG_name": "Bite",
 					"name": "啃咬",
 					"entries": [
-						"{@atkr m} {@hit 8}，触及5尺。{@h}21（{@damage 3d10 + 5}）穿刺伤害。若目标生物体型不超过大型，则其陷入{@condition 受擒|XPHB}状态（逃脱{@dc 15}）。{@condition 受擒|XPHB}期间，目标还会陷入{@condition 束缚|XPHB}状态，且不能成为巨鳄鱼尾击的目标。"
+						"{@atkr m} {@hit 8}，触及5尺。{@h}21（{@damage 3d10 + 5}）穿刺伤害。若目标生物体型不超过大型，则其陷入{@condition 受擒|XPHB}状态（逃脱{@dc 15}）。{@condition 受擒|XPHB}期间，目标还会陷入{@condition 束缚|XPHB}状态，且不能成为巨鳄尾击的目标。"
 					]
 				},
 				{
@@ -32927,7 +32927,7 @@
 					"ENG_name": "Spell Immunity",
 					"name": "法术免疫",
 					"entries": [
-						"恐怖铠甲免疫由其创造者所选择的三种法术。典型的选择包括{@spell 灼热金属|XPHB}、{@spell 闪电束|XPHB}和{@spell 魔法飞弹|XPHB}。"
+						"恐怖铠甲免疫由其创造者所选择的三种法术。典型的选择包括{@spell 疗伤术|XPHB}、{@spell 闪电束|XPHB}和{@spell 魔法飞弹|XPHB}。"
 					]
 				}
 			],
@@ -46946,7 +46946,7 @@
 		},
 		{
 			"ENG_name": "Polar Bear",
-			"name": "白熊",
+			"name": "北极熊",
 			"type": "beast",
 			"source": "XMM",
 			"page": 367,

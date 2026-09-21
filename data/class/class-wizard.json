@@ -216,10 +216,10 @@
 				{
 					"title": "每环法术位",
 					"colLabels": [
-						"{@filter 1st|spells|level=1|class=法师}",
-						"{@filter 2nd|spells|level=2|class=法师}",
-						"{@filter 3rd|spells|level=3|class=法师}",
-						"{@filter 4th|spells|level=4|class=法师}",
+						"{@filter 1环|spells|level=1|class=法师}",
+						"{@filter 2环|spells|level=2|class=法师}",
+						"{@filter 3环|spells|level=3|class=法师}",
+						"{@filter 4环|spells|level=4|class=法师}",
 						"{@filter 5th|spells|level=5|class=法师}",
 						"{@filter 6th|spells|level=6|class=法师}",
 						"{@filter 7th|spells|level=7|class=法师}",
@@ -735,10 +735,10 @@
 				{
 					"title": "每环法术位",
 					"colLabels": [
-						"{@filter 1st|spells|level=1|class=法师}",
-						"{@filter 2nd|spells|level=2|class=法师}",
-						"{@filter 3rd|spells|level=3|class=法师}",
-						"{@filter 4th|spells|level=4|class=法师}",
+						"{@filter 1环|spells|level=1|class=法师}",
+						"{@filter 2环|spells|level=2|class=法师}",
+						"{@filter 3环|spells|level=3|class=法师}",
+						"{@filter 4环|spells|level=4|class=法师}",
 						"{@filter 5th|spells|level=5|class=法师}",
 						"{@filter 6th|spells|level=6|class=法师}",
 						"{@filter 7th|spells|level=7|class=法师}",
@@ -4501,7 +4501,7 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"从6级起，你可以将魔法能量存于体内并于之后增幅你危险异常的法术。以这种方式存储的能量。便被称为一股魔力潮涌。",
+				"从6级起，你可以将魔法能量存于体内并于之后增幅你危险异常的法术。以这种方式存储的能量，便被称为一股魔力潮涌。",
 				"你可以储存至多等同于你智力调整值（至少1）股的魔力潮涌。当你完成一次长休时，你的魔力潮涌数量将变回一股。当你成功用{@spell 解除魔法}或{@spell 法术反制}终止或打断一个法术时，你可以从被你挫败的法术中窃得魔力，以此获得一股魔力潮涌。而当你在没有任何一股魔力潮涌的情况下完成一次短休时，你也能获得一股魔力潮涌。",
 				"每回合一次，当你用一个法师法术对一个生物或物件造成伤害时，你可以消耗一股魔力潮涌来对那个目标造成等同于你的法师等级半数的额外力场伤害。"
 			]

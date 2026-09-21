@@ -5654,7 +5654,7 @@
 						"max": "1"
 					},
 					"spell": {
-						"uuid": "@spell[至圣斩|xphb]"
+						"uuid": "@spell[至圣斩|XPHB]"
 					}
 				}
 			],
@@ -5976,7 +5976,7 @@
 						]
 					},
 					"spell": {
-						"uuid": "@spell[猎人印记|xphb]",
+						"uuid": "@spell[猎人印记|XPHB]",
 						"spellbook": true,
 						"level": 1
 					}
@@ -7824,7 +7824,7 @@
 						"max": "1"
 					},
 					"spell": {
-						"uuid": "@spell[死者复活|xphb]",
+						"uuid": "@spell[死者复活|XPHB]",
 						"properties": [
 							"材质"
 						],
@@ -9956,7 +9956,7 @@
 					],
 					"rows": [
 						[
-							"3rd",
+							"3环",
 							"2"
 						],
 						[
@@ -10057,7 +10057,7 @@
 			"level": 3,
 			"entries": [
 				"奥术射击都是魔法效果，每一个都与魔法学派之一相关联。",
-				"如果一个选项需要进行豁免投掷，你的奥术射击豁免投掷DC的计算方式如下：",
+				"如果一个选项需要进行豁免检定，你的奥术射击豁免DC的计算方式如下：",
 				{
 					"ENG_name": "Arcane Shot",
 					"name": "奥术射击",
@@ -13818,7 +13818,7 @@
 						"value": "60"
 					},
 					"spell": {
-						"uuid": "@spell[神导术|xphb]",
+						"uuid": "@spell[神导术|XPHB]",
 						"spellbook": true
 					}
 				}
@@ -14679,7 +14679,7 @@
 						"type": "bonus"
 					},
 					"spell": {
-						"uuid": "@spell[维生术|xphb]",
+						"uuid": "@spell[维生术|XPHB]",
 						"spellbook": true
 					}
 				}
@@ -19083,7 +19083,7 @@
 						]
 					},
 					"spell": {
-						"uuid": "@spell[黑暗术|xphb]",
+						"uuid": "@spell[黑暗术|XPHB]",
 						"properties": [
 							"声音",
 							"姿势",
@@ -20641,17 +20641,17 @@
 						{
 							"ENG_name": "Beast of the Land",
 							"name": "大地野兽",
-							"uuid": "@creature[大地野兽|xphb]"
+							"uuid": "@creature[大地野兽|XPHB]"
 						},
 						{
 							"ENG_name": "Beast of the Sea",
 							"name": "海洋野兽",
-							"uuid": "@creature[海洋野兽|xphb]"
+							"uuid": "@creature[海洋野兽|XPHB]"
 						},
 						{
 							"ENG_name": "Beast of the Sky",
 							"name": "天空野兽",
-							"uuid": "@creature[天空野兽|xphb]"
+							"uuid": "@creature[天空野兽|XPHB]"
 						}
 					],
 					"bonuses": {
@@ -20703,17 +20703,17 @@
 						{
 							"ENG_name": "Beast of the Land",
 							"name": "大地野兽",
-							"uuid": "@creature[大地野兽|xphb]"
+							"uuid": "@creature[大地野兽|XPHB]"
 						},
 						{
 							"ENG_name": "Beast of the Sea",
 							"name": "海洋野兽",
-							"uuid": "@creature[海洋野兽|xphb]"
+							"uuid": "@creature[海洋野兽|XPHB]"
 						},
 						{
 							"ENG_name": "Beast of the Sky",
 							"name": "天空野兽",
-							"uuid": "@creature[天空野兽|xphb]"
+							"uuid": "@creature[天空野兽|XPHB]"
 						}
 					],
 					"bonuses": {
@@ -21764,7 +21764,7 @@
 						}
 					},
 					"spell": {
-						"uuid": "@spell[死者交谈|xphb]",
+						"uuid": "@spell[死者交谈|XPHB]",
 						"properties": [
 							"声音",
 							"姿势",
@@ -21902,7 +21902,7 @@
 						"type": "bonus"
 					},
 					"spell": {
-						"uuid": "@spell[法师之手|xphb]"
+						"uuid": "@spell[法师之手|XPHB]"
 					}
 				}
 			],
@@ -22871,7 +22871,7 @@
 						]
 					},
 					"spell": {
-						"uuid": "@spell[野兽召唤术|xphb]",
+						"uuid": "@spell[野兽召唤术|XPHB]",
 						"properties": [
 							"材质"
 						],
@@ -22904,7 +22904,7 @@
 						]
 					},
 					"spell": {
-						"uuid": "@spell[野兽召唤术|xphb]",
+						"uuid": "@spell[野兽召唤术|XPHB]",
 						"properties": [
 							"材质",
 							"专注"
@@ -24396,7 +24396,7 @@
 						"max": "max(1,@abilities.cha.mod)"
 					},
 					"spell": {
-						"uuid": "@spell[迷踪步|xphb]",
+						"uuid": "@spell[迷踪步|XPHB]",
 						"level": 2,
 						"properties": [
 							"声音",
@@ -24496,7 +24496,7 @@
 						"condition": "受到伤害后"
 					},
 					"spell": {
-						"uuid": "@spell[迷踪步|xphb]",
+						"uuid": "@spell[迷踪步|XPHB]",
 						"level": 2,
 						"properties": [
 							"声音",
@@ -25875,17 +25875,17 @@
 						{
 							"ENG_name": "Air",
 							"name": "空气",
-							"uuid": "@creature[野兽灵魄（天空）|xphb]"
+							"uuid": "@creature[野兽灵魄（天空）|XPHB]"
 						},
 						{
 							"ENG_name": "Land",
 							"name": "大地",
-							"uuid": "@creature[野兽灵魄（大地）|xphb]"
+							"uuid": "@creature[野兽灵魄（大地）|XPHB]"
 						},
 						{
 							"ENG_name": "Water",
 							"name": "水",
-							"uuid": "@creature[野兽灵魄（海洋）|xphb]"
+							"uuid": "@creature[野兽灵魄（海洋）|XPHB]"
 						}
 					],
 					"bonuses": {
@@ -25932,17 +25932,17 @@
 						{
 							"ENG_name": "Fuming",
 							"name": "愤怒",
-							"uuid": "@creature[妖精灵魄（愤怒）|xphb]"
+							"uuid": "@creature[妖精灵魄（愤怒）|XPHB]"
 						},
 						{
 							"ENG_name": "Mirthful",
 							"name": "欢欣",
-							"uuid": "@creature[妖精灵魄（欢欣）|xphb]"
+							"uuid": "@creature[妖精灵魄（欢欣）|XPHB]"
 						},
 						{
 							"ENG_name": "Tricksy",
 							"name": "诡诈",
-							"uuid": "@creature[妖精灵魄（诡诈）|xphb]"
+							"uuid": "@creature[妖精灵魄（诡诈）|XPHB]"
 						}
 					],
 					"bonuses": {

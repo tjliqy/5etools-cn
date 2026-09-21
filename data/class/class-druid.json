@@ -237,10 +237,10 @@
 				{
 					"title": "每环法术位",
 					"colLabels": [
-						"{@filter 1st|spells|level=1|class=德鲁伊}",
-						"{@filter 2nd|spells|level=2|class=德鲁伊}",
-						"{@filter 3rd|spells|level=3|class=德鲁伊}",
-						"{@filter 4th|spells|level=4|class=德鲁伊}",
+						"{@filter 1环|spells|level=1|class=德鲁伊}",
+						"{@filter 2环|spells|level=2|class=德鲁伊}",
+						"{@filter 3环|spells|level=3|class=德鲁伊}",
+						"{@filter 4环|spells|level=4|class=德鲁伊}",
 						"{@filter 5th|spells|level=5|class=德鲁伊}",
 						"{@filter 6th|spells|level=6|class=德鲁伊}",
 						"{@filter 7th|spells|level=7|class=德鲁伊}",
@@ -805,10 +805,10 @@
 				{
 					"title": "每环法术位",
 					"colLabels": [
-						"{@filter 1st|spells|level=1|class=德鲁伊}",
-						"{@filter 2nd|spells|level=2|class=德鲁伊}",
-						"{@filter 3rd|spells|level=3|class=德鲁伊}",
-						"{@filter 4th|spells|level=4|class=德鲁伊}",
+						"{@filter 1环|spells|level=1|class=德鲁伊}",
+						"{@filter 2环|spells|level=2|class=德鲁伊}",
+						"{@filter 3环|spells|level=3|class=德鲁伊}",
+						"{@filter 4环|spells|level=4|class=德鲁伊}",
 						"{@filter 5th|spells|level=5|class=德鲁伊}",
 						"{@filter 6th|spells|level=6|class=德鲁伊}",
 						"{@filter 7th|spells|level=7|class=德鲁伊}",
@@ -2157,13 +2157,13 @@
 					],
 					"rows": [
 						[
-							"2nd",
+							"2环",
 							"{@filter 1/4|bestiary|challenge rating=[&0;&1/4]|type=beast|speed type=!fly;!swim|miscellaneous=!swarm}",
 							"无飞行或游泳速度",
 							"狼"
 						],
 						[
-							"4th",
+							"4环",
 							"{@filter 1/2|bestiary|challenge rating=[&0;&1/2]|type=beast|speed type=!fly|miscellaneous=!swarm}",
 							"无飞行速度",
 							"鳄鱼"
@@ -3029,7 +3029,7 @@
 					],
 					"rows": [
 						[
-							"3rd",
+							"3环",
 							"{@spell 定身类人}, {@spell 荆棘丛生}"
 						],
 						[
@@ -3059,7 +3059,7 @@
 					],
 					"rows": [
 						[
-							"3rd",
+							"3环",
 							"{@spell 镜影术}, {@spell 迷踪步}"
 						],
 						[
@@ -3089,7 +3089,7 @@
 					],
 					"rows": [
 						[
-							"3rd",
+							"3环",
 							"{@spell 朦胧术}, {@spell 沉默术}"
 						],
 						[
@@ -3119,7 +3119,7 @@
 					],
 					"rows": [
 						[
-							"3rd",
+							"3环",
 							"{@spell 树肤术}, {@spell 蛛行术}"
 						],
 						[
@@ -3149,7 +3149,7 @@
 					],
 					"rows": [
 						[
-							"3rd",
+							"3环",
 							"{@spell 隐形术}, {@spell 行动无踪}"
 						],
 						[
@@ -3179,7 +3179,7 @@
 					],
 					"rows": [
 						[
-							"3rd",
+							"3环",
 							"{@spell 蛛行术}, {@spell 荆棘丛生}"
 						],
 						[
@@ -3209,7 +3209,7 @@
 					],
 					"rows": [
 						[
-							"3rd",
+							"3环",
 							"{@spell 黑暗术}, {@spell 马友夫强酸箭}"
 						],
 						[
@@ -3239,7 +3239,7 @@
 					],
 					"rows": [
 						[
-							"3rd",
+							"3环",
 							"{@spell 蛛行术}, {@spell 蛛网术}"
 						],
 						[
@@ -3377,12 +3377,12 @@
 					],
 					"rows": [
 						[
-							"2nd",
+							"2环",
 							"{@filter 1|bestiary|challenge rating=[&0;&1]|type=beast|speed type=!fly;!swim|miscellaneous=!swarm}",
 							"无飞行或游泳速度"
 						],
 						[
-							"4th",
+							"4环",
 							"{@filter 1|bestiary|challenge rating=[&0;&1]|type=beast|speed type=!fly|miscellaneous=!swarm}",
 							"无飞行速度"
 						],
@@ -3553,7 +3553,7 @@
 					],
 					"rows": [
 						[
-							"3rd",
+							"3环",
 							"{@spell 目盲术/耳聋术}, {@spell 遗体防腐}"
 						],
 						[
@@ -3977,11 +3977,11 @@
 					],
 					"rows": [
 						[
-							"2nd",
+							"2环",
 							"{@spell 燃烧之手}, {@spell 疗伤术}"
 						],
 						[
-							"3rd",
+							"3环",
 							"{@spell 炽焰法球}, {@spell 灼热射线}"
 						],
 						[
@@ -4509,7 +4509,7 @@
 					],
 					"rows": [
 						[
-							"3rd",
+							"3环",
 							"{@spell 朦胧术|XPHB}, {@spell 燃烧之手|XPHB}, {@spell 火焰箭|XPHB}"
 						],
 						[
@@ -4539,7 +4539,7 @@
 					],
 					"rows": [
 						[
-							"3rd",
+							"3环",
 							"{@spell 云雾术|XPHB}, {@spell 定身类人|XPHB}, {@spell 冷冻射线|XPHB}"
 						],
 						[
@@ -4569,7 +4569,7 @@
 					],
 					"rows": [
 						[
-							"3rd",
+							"3环",
 							"{@spell 迷踪步|XPHB}, {@spell 电爪|XPHB}, {@spell 睡眠术|XPHB}"
 						],
 						[
@@ -4599,7 +4599,7 @@
 					],
 					"rows": [
 						[
-							"3rd",
+							"3环",
 							"{@spell 酸液飞溅|XPHB}, {@spell 致病射线|XPHB}, {@spell 蛛网术|XPHB}"
 						],
 						[

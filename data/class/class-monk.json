@@ -1813,10 +1813,10 @@
 						}
 					],
 					"colLabels": [
-						"{@filter 1st|spells|level=1|subclass=武僧：秘术武者}",
-						"{@filter 2nd|spells|level=2|subclass=武僧：秘术武者}",
-						"{@filter 3rd|spells|level=3|subclass=武僧：秘术武者}",
-						"{@filter 4th|spells|level=4|subclass=武僧：秘术武者}"
+						"{@filter 1环|spells|level=1|subclass=武僧：秘术武者}",
+						"{@filter 2环|spells|level=2|subclass=武僧：秘术武者}",
+						"{@filter 3环|spells|level=3|subclass=武僧：秘术武者}",
+						"{@filter 4环|spells|level=4|subclass=武僧：秘术武者}"
 					],
 					"rowsSpellProgression": [
 						[
@@ -4318,7 +4318,7 @@
 		},
 		{
 			"ENG_name": "Agile Parry",
-			"name": "灵巧格档",
+			"name": "灵巧格挡",
 			"source": "XGE",
 			"page": 34,
 			"className": "武僧",
@@ -4389,7 +4389,7 @@
 					"entries": [
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "灵巧格档|武僧|PHB|剑圣|XGE|3"
+							"subclassFeature": "灵巧格挡|武僧|PHB|剑圣|XGE|3"
 						},
 						{
 							"type": "refSubclassFeature",
@@ -4505,7 +4505,7 @@
 			"entries": [
 				"从3级选择此宗派起，你可以投掷出魔法圣光形成的灼热箭矢。",
 				"你可以在 {@action 攻击} 动作中发动一种新的特殊攻击：一次30尺范围的远程法术攻击。你熟练于这种攻击，且可以在攻击检定与其伤害掷骰上使用你的敏捷调整值。它造成光耀伤害，伤害骰为{@damage d4}。这一攻击的伤害骰大小会随着你的等级增长而改变，其大小即武僧职业表中的 武艺Martial Arts 一列。",
-				"如果你在自己的回合内执行了 {@action 攻击} 动作，并在其中使用了这一特殊攻击作为{@action 攻击}动作的一部分，你就可以花费1点气，再用附赠动作进行两次额外的此种特殊攻击。"
+				"如果你在自己的回合内执行了 {@action 攻击} 动作，并在其中使用了这一特殊攻击作为攻击动作的一部分，你就可以花费1点气，再用附赠动作进行两次额外的此种特殊攻击。当你获得额外攻击特性后，你在{@action 攻击}动作中的每一次攻击都可以用于发动此种特殊攻击。"
 			]
 		},
 		{

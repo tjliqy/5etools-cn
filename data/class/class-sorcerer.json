@@ -321,10 +321,10 @@
 				{
 					"title": "每环法术位",
 					"colLabels": [
-						"{@filter 1st|spells|level=1|class=术士}",
-						"{@filter 2nd|spells|level=2|class=术士}",
-						"{@filter 3rd|spells|level=3|class=术士}",
-						"{@filter 4th|spells|level=4|class=术士}",
+						"{@filter 1环|spells|level=1|class=术士}",
+						"{@filter 2环|spells|level=2|class=术士}",
+						"{@filter 3环|spells|level=3|class=术士}",
+						"{@filter 4环|spells|level=4|class=术士}",
 						"{@filter 5th|spells|level=5|class=术士}",
 						"{@filter 6th|spells|level=6|class=术士}",
 						"{@filter 7th|spells|level=7|class=术士}",
@@ -898,10 +898,10 @@
 				{
 					"title": "每环法术位",
 					"colLabels": [
-						"{@filter 1st|spells|level=1|class=术士}",
-						"{@filter 2nd|spells|level=2|class=术士}",
-						"{@filter 3rd|spells|level=3|class=术士}",
-						"{@filter 4th|spells|level=4|class=术士}",
+						"{@filter 1环|spells|level=1|class=术士}",
+						"{@filter 2环|spells|level=2|class=术士}",
+						"{@filter 3环|spells|level=3|class=术士}",
+						"{@filter 4环|spells|level=4|class=术士}",
 						"{@filter 5th|spells|level=5|class=术士}",
 						"{@filter 6th|spells|level=6|class=术士}",
 						"{@filter 7th|spells|level=7|class=术士}",
@@ -2416,19 +2416,19 @@
 							],
 							"rows": [
 								[
-									"1st",
+									"1环",
 									"2"
 								],
 								[
-									"2nd",
+									"2环",
 									"3"
 								],
 								[
-									"3rd",
+									"3环",
 									"5"
 								],
 								[
-									"4th",
+									"4环",
 									"6"
 								],
 								[
@@ -3319,13 +3319,13 @@
 					],
 					"rows": [
 						[
-							"1st",
+							"1环",
 							"{@spell 护盾术}",
 							"{@spell 致病射线}",
 							"{@spell 七彩喷射}"
 						],
 						[
-							"3rd",
+							"3环",
 							"{@spell 次等复原术}",
 							"{@spell 目盲术/耳聋术}",
 							"{@spell 变身术}"
@@ -4192,11 +4192,11 @@
 					],
 					"rows": [
 						[
-							"1st",
+							"1环",
 							"{@spell 哈达之臂}, {@spell 不谐低语}, {@spell 心灵之楔|tce}"
 						],
 						[
-							"3rd",
+							"3环",
 							"{@spell 安定心神}, {@spell 侦测思想}"
 						],
 						[
@@ -4357,11 +4357,11 @@
 					],
 					"rows": [
 						[
-							"1st",
+							"1环",
 							"{@spell 警报术}, {@spell 防护善恶}"
 						],
 						[
-							"3rd",
+							"3环",
 							"{@spell 援助术}, {@spell 次等复原术}"
 						],
 						[
@@ -4620,7 +4620,7 @@
 			"header": 2,
 			"entries": [
 				"自14级起，你可以使用附赠动作从你背上展现开一对光翼。光翼展现期间，你将具有30尺的飞行速度。这对光翼将一直持续到你{@condition 失能}、死亡、或你以一个附赠动作主动遣散为止。",
-				"这对光翼的外观取决于你为 神圣魔法Divine Magic 特性所选择的亲和力：善良与守序将展露雄鹰之翅，邪恶与混乱将展露蝙蝠之翅，而中立则将展露蜻蜓之翅。"
+				"这对光翼的外观取决于你为神圣魔法特性所选择的亲和力：善良与守序将展露雄鹰之翅，邪恶与混乱将展露蝙蝠之翅，而中立则将展露蜻蜓之翅。"
 			]
 		},
 		{
@@ -4809,7 +4809,7 @@
 			"subclassSource": "XGE",
 			"level": 1,
 			"entries": [
-				"你内在的魔法源于气元素之力量。这些力量几乎全都源自于那场惊世骇俗的 大暴雨Great Rain，而那狂风因其威力之强而仍被市井传颂；不过也许你的血脉是受到强大气元素生物的影响而成的，例如风巨灵。不论情况如何，风暴之魔力早已浸透你的灵魂。",
+				"你内在的魔法源于气元素之力量。这些力量几乎全都源自于那场惊世骇俗的大暴雨，而那狂风因其威力之强而仍被市井传颂；不过也许你的血脉是受到强大气元素生物的影响而成的，例如风巨灵。不论情况如何，风暴之魔力早已浸透你的灵魂。",
 				"风暴术士是极具价值的海员。其魔法足以驾驭其周边的风与气象。且他们的能力亦可用于对抗鲨华鱼人、海盗、以及其他的水上威胁。",
 				{
 					"type": "refSubclassFeature",
@@ -4833,7 +4833,7 @@
 			"level": 1,
 			"header": 1,
 			"entries": [
-				"自1级起，当你在你的回合中施展了1环或更高环阶的法术后，你可以立刻用附赠动作引导气元素的旋风涡流环绕着你。此时，你可以飞行至多10尺，此次移动不会引发借机攻击。"
+				"自1级起，当你在你的回合中施展1环或更高环阶的法术之前或之后，你可以立刻用附赠动作引导气元素的旋风涡流环绕着你。此时，你可以飞行至多10尺，此次移动不会引发借机攻击。"
 			]
 		},
 		{

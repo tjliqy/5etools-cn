@@ -1,0 +1,4 @@
+interface:
+  display_name: "同步中文译文到数据库"
+  short_description: "审查 data 中文译文并安全同步到翻译数据库"
+  default_prompt: "使用 $sync-cn-to-db 审查指定 data 路径的译文改动，并在确认后同步到数据库。"
