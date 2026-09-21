@@ -2689,7 +2689,7 @@
 		},
 		{
 			"ENG_name": "Plant Spirit",
-			"name": "植物精魄",
+			"name": "植物灵魄",
 			"type": "plant",
 			"source": "AU",
 			"page": 44,
@@ -3456,7 +3456,7 @@
 		},
 		{
 			"ENG_name": "Venger",
-			"name": "温戈尔",
+			"name": "文格尔",
 			"type": "fiend",
 			"isNamedCreature": true,
 			"source": "AU",
@@ -3519,7 +3519,7 @@
 					"name": "施法",
 					"type": "spellcasting",
 					"headerEntries": [
-						"温戈尔施展以下一道法术，使用魅力作为施法属性（法术豁免{@dc 19}）："
+						"文格尔施展以下一道法术，使用魅力作为施法属性（法术豁免{@dc 19}）："
 					],
 					"will": [
 						"{@spell 侦测魔法|XPHB}",
@@ -3547,7 +3547,7 @@
 					"name": "心灵遥控（2/日）",
 					"type": "spellcasting",
 					"headerEntries": [
-						"温戈尔施展{@spell 心灵遥控|XPHB}，使用与施法动作相同的施法属性。"
+						"文格尔施展{@spell 心灵遥控|XPHB}，使用与施法动作相同的施法属性。"
 					],
 					"daily": {
 						"2": [
@@ -3565,7 +3565,7 @@
 					"name": "护身魔法",
 					"type": "spellcasting",
 					"headerEntries": [
-						"温戈尔施展{@spell 法术反制|XPHB}或{@spell 护盾术|XPHB}以回应法术的触发条件，使用与施法动作相同的施法属性。"
+						"文格尔施展{@spell 法术反制|XPHB}或{@spell 护盾术|XPHB}以回应法术的触发条件，使用与施法动作相同的施法属性。"
 					],
 					"will": [
 						"{@spell 法术反制|XPHB}",
@@ -3583,28 +3583,28 @@
 					"ENG_name": "Fiendish Restoration",
 					"name": "邪魔复苏",
 					"entries": [
-						"若温戈尔死亡，其躯体消散为猩红尘埃，并在{@dice 1d10}天后于其某个巢穴中的某处获得新的躯体，以全部{@variantrule 生命值|XPHB}复活。"
+						"若文格尔死亡，其躯体消散为猩红尘埃，并在{@dice 1d10}天后于其某个巢穴中的某处获得新的躯体，以全部{@variantrule 生命值|XPHB}复活。"
 					]
 				},
 				{
 					"ENG_name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
 					"name": "传奇抗性（3/日，或巢穴内4/日）",
 					"entries": [
-						"温戈尔豁免失败时，可以将其改为豁免成功。"
+						"文格尔豁免失败时，可以将其改为豁免成功。"
 					]
 				},
 				{
 					"ENG_name": "Magic Resistance",
 					"name": "魔法抗性",
 					"entries": [
-						"温戈尔对抗法术和魔法效应时进行的豁免检定具有{@variantrule 优势|XPHB}。"
+						"文格尔对抗法术和魔法效应时进行的豁免检定具有{@variantrule 优势|XPHB}。"
 					]
 				},
 				{
 					"ENG_name": "Mounted Adept",
 					"name": "骑战大师",
 					"entries": [
-						"温戈尔骑乘时，他和其坐骑的敏捷豁免检定具有{@variantrule 优势|XPHB}，且温戈尔可以强制将一次以其坐骑为目标的攻击改为以他自己为目标。若温戈尔陷入{@condition 失能|XPHB}状态，则其无法使用此特性。"
+						"文格尔骑乘时，他和其坐骑的敏捷豁免检定具有{@variantrule 优势|XPHB}，且文格尔可以强制将一次以其坐骑为目标的攻击改为以他自己为目标。若文格尔陷入{@condition 失能|XPHB}状态，则其无法使用此特性。"
 					]
 				}
 			],
@@ -3613,7 +3613,7 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"温戈尔发动三次攻击，使用猩红之爪或猩红爆射的任意组合。"
+						"文格尔发动三次攻击，使用猩红之爪或猩红爆射的任意组合。"
 					]
 				},
 				{
@@ -3637,21 +3637,21 @@
 					"ENG_name": "Booming Censure",
 					"name": "轰雷训诫",
 					"entries": [
-						"{@actSave wis} {@dc 19}，温戈尔60尺内可见的一名生物。{@actSaveFail} 14（{@damage 4d6}）心灵伤害，且目标陷入{@condition 恐慌|XPHB}状态，直至其下个回合结束。{@actSaveSuccess} 仅半伤。"
+						"{@actSave wis} {@dc 19}，文格尔60尺内可见的一名生物。{@actSaveFail} 14（{@damage 4d6}）心灵伤害，且目标陷入{@condition 恐慌|XPHB}状态，直至其下个回合结束。{@actSaveSuccess} 仅半伤。"
 					]
 				},
 				{
 					"ENG_name": "Crimson Strike",
 					"name": "猩红打击",
 					"entries": [
-						"温戈尔发动一次猩红之爪或猩红爆射攻击。"
+						"文格尔发动一次猩红之爪或猩红爆射攻击。"
 					]
 				},
 				{
 					"ENG_name": "Magic-Binding Chains",
 					"name": "缚魔锁链",
 					"entries": [
-						"{@actSave dex} {@dc 19}，温戈尔30尺内可见的一名生物。{@actSaveFail} 目标陷入{@condition 束缚|XPHB}状态，直至其下个回合结束。处于{@condition 束缚|XPHB}状态时，目标无法执行{@action 魔法|XPHB}动作。{@actSaveSuccessOrFail} 直至温戈尔下个回合开始，其都无法再执行此动作。"
+						"{@actSave dex} {@dc 19}，文格尔30尺内可见的一名生物。{@actSaveFail} 目标陷入{@condition 束缚|XPHB}状态，直至其下个回合结束。处于{@condition 束缚|XPHB}状态时，目标无法执行{@action 魔法|XPHB}动作。{@actSaveSuccessOrFail} 直至文格尔下个回合开始，其都无法再执行此动作。"
 					]
 				}
 			],
@@ -3781,13 +3781,13 @@
 				"倒地"
 			],
 			"languages": [
-				"说你会的语言"
+				"会说你知晓的语言"
 			],
 			"pbNote": "等于你的熟练加值",
 			"trait": [
 				{
 					"ENG_name": "Pact Bond",
-					"name": "契约纽带",
+					"name": "契约连结",
 					"entries": [
 						"将你的{@variantrule 熟练|XPHB|熟练加值}加到契灵进行的任意属性检定和豁免检定中。"
 					]
@@ -3805,7 +3805,7 @@
 			"bonus": [
 				{
 					"ENG_name": "Divine Power (1/Day)",
-					"name": "神力（1/日）",
+					"name": "神圣之力（1/日）",
 					"entries": [
 						"你的契灵依其形态以下列方式之一展现其神力的残余：",
 						{
@@ -3818,7 +3818,7 @@
 						},
 						{
 							"ENG_name": "Fiendish Swap (Fiend Only)",
-							"name": "邪魔换位（仅邪魔）",
+							"name": "邪魔易位（仅邪魔）",
 							"type": "entries",
 							"entries": [
 								"若你和契灵相距不超过60尺，则你二人传送并互换位置。"
@@ -3864,10 +3864,10 @@
 						},
 						"bonus": {
 							"mode": "replaceArr",
-							"replace": "神力（1/日）",
+							"replace": "神圣之力（1/日）",
 							"items": {
 								"ENG_name": "Divine Power (1/Day)",
-								"name": "神力（1/日）",
+								"name": "神圣之力（1/日）",
 								"entries": [
 									{
 										"ENG_name": "Healing Touch",
@@ -3907,14 +3907,14 @@
 						},
 						"bonus": {
 							"mode": "replaceArr",
-							"replace": "神力（1/日）",
+							"replace": "神圣之力（1/日）",
 							"items": {
 								"ENG_name": "Divine Power (1/Day)",
-								"name": "神力（1/日）",
+								"name": "神圣之力（1/日）",
 								"entries": [
 									{
 										"ENG_name": "Fiendish Swap",
-										"name": "邪魔换位",
+										"name": "邪魔易位",
 										"type": "entries",
 										"entries": [
 											"若你和契灵相距不超过60尺，则你二人传送并互换位置。"
@@ -3950,10 +3950,10 @@
 						},
 						"bonus": {
 							"mode": "replaceArr",
-							"replace": "神力（1/日）",
+							"replace": "神圣之力（1/日）",
 							"items": {
 								"ENG_name": "Divine Power (1/Day)",
-								"name": "神力（1/日）",
+								"name": "神圣之力（1/日）",
 								"entries": [
 									{
 										"ENG_name": "Cursed Invocation",

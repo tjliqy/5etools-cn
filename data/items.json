@@ -20873,7 +20873,7 @@
 				"这根6尺长的节杖由一整块巨大的水晶雕刻而成，顶端是一个完美的透明圆球。该{@item 法杖|XPHB}具有20充能。其可以作为一把魔法{@item 长棍|XPHB}被持用，并且以其进行的攻击检定和伤害掷骰具有+3加值。",
 				{
 					"ENG_name": "Adept",
-					"name": "专家",
+					"name": "行家里手",
 					"type": "entries",
 					"entries": [
 						"持握该{@item 法杖|XPHB}期间，你的智力（{@skill 奥秘|XPHB}）检定具有{@variantrule 优势|XPHB}。"
@@ -21489,7 +21489,7 @@
 					"name": "劝阻灵光",
 					"type": "entries",
 					"entries": [
-						"持握该{@item 法杖|XPHB}期间，你可以执行{@action 魔法|XPHB}动作创造出一道源自你的30尺{@variantrule 光环 [效应区域]|XPHB|光环}心神动荡区域，持续1分钟。每当该{@variantrule 光环 [效应区域]|XPHB|光环}进入一个你可见的生物的空间时，以及每当一个你可见的生物进入该{@variantrule 光环 [效应区域]|XPHB|光环}或在其中结束其回合时，你可以迫使该生物进行一次{@dc 15}的感知豁免。若豁免失败，则该生物陷入{@condition 恐慌|XPHB}状态，直至其下一回合开始。"
+						"持握该{@item 法杖|XPHB}期间，你可以执行{@action 魔法|XPHB}动作创造出一道源自你的30尺心神动荡{@variantrule 光环 [效应区域]|XPHB|光环}，持续1分钟。每当该{@variantrule 光环 [效应区域]|XPHB|光环}进入一个你可见的生物的空间时，以及每当一个你可见的生物进入该{@variantrule 光环 [效应区域]|XPHB|光环}或在其中结束其回合时，你可以迫使该生物进行一次{@dc 15}的感知豁免。若豁免失败，则该生物陷入{@condition 恐慌|XPHB}状态，直至其下一回合开始。"
 					]
 				},
 				{
@@ -27587,7 +27587,7 @@
 						"mode": "appendArr",
 						"items": {
 							"ENG_name": "Flowering",
-							"name": "开花",
+							"name": "盛放",
 							"type": "entries",
 							"entries": [
 								"权杖的两端长着色彩鲜艳芬芳四溢的花朵。",
@@ -29755,7 +29755,7 @@
 						"mode": "appendArr",
 						"items": {
 							"ENG_name": "Golden",
-							"name": "金",
+							"name": "灿金",
 							"type": "entries",
 							"entries": [
 								"神像的黄金熠熠生辉，象眼镶嵌着闪烁的红宝石。",
@@ -40792,7 +40792,7 @@
 						"mode": "appendArr",
 						"items": {
 							"ENG_name": "Lunar",
-							"name": "月",
+							"name": "月辉",
 							"type": "entries",
 							"entries": [
 								"角色们追到了一名魔鬼，他侍奉着邪教徒们崇拜的邪魔。多亏了牧师，角色们击败了这名魔鬼，于是DM决定让魔杖进化为极珍稀并获得月辉词条。"
@@ -41938,7 +41938,7 @@
 						"mode": "appendArr",
 						"items": {
 							"ENG_name": "Many",
-							"name": "众首",
+							"name": "万孔",
 							"type": "entries",
 							"entries": [
 								"锁孔重叠交错装点在武器柄部，构成令人眼花缭乱的图样。你用此魔法武器进行攻击检定和伤害掷骰的加值提升至+3。当你令此武器变形时，你还可以令其变形为{@item 战斧|XPHB}、{@item 长剑|XPHB}、{@item 刺剑|XPHB}、{@item 弯刀|XPHB}或{@item 战锤|XPHB}。",
@@ -42072,7 +42072,7 @@
 				},
 				{
 					"ENG_name": "Trip",
-					"name": "摔绊",
+					"name": "绊摔",
 					"type": "entries",
 					"entries": [
 						"当你使用该武器进行近战攻击时，你可以消耗1充能，使你该次攻击检定具有{@variantrule 优势|XPHB}。如果攻击命中，则目标需进行一次{@dc 13}的力量豁免。若豁免失败，则目标陷入{@condition 倒地|XPHB}状态。"
@@ -46466,7 +46466,7 @@
 				},
 				{
 					"ENG_name": "Spellcasting Focus",
-					"name": "法器",
+					"name": "施法法器",
 					"type": "entries",
 					"entries": [
 						"这颗法球可用作一个奥术法器。"
@@ -46767,7 +46767,7 @@
 				},
 				{
 					"ENG_name": "Spellcasting Focus",
-					"name": "法器",
+					"name": "施法法器",
 					"type": "entries",
 					"entries": [
 						"你可以将该法球作为施展你术士法术的{@variantrule 法器|XPHB}。"
@@ -53919,7 +53919,7 @@
 		},
 		{
 			"ENG_name": "Queen Ehlissa's Marvelous Nightingale",
-			"name": "伊莉莎女王的奇妙夜莺",
+			"name": "爱莉莎女王的奇妙夜莺",
 			"source": "AU",
 			"page": 122,
 			"rarity": "artifact",
@@ -53929,7 +53929,7 @@
 			"rechargeAmount": "{@dice 1d6 + 1}",
 			"charges": 6,
 			"entries": [
-				"伊莉莎女王的奇妙夜莺得名于其第一任主人\u2014\u2014灰鹰世界东法兰尼斯的一位女王。其起源已不可考，但有传说称，它是为了安慰女王失去心爱宠物鸣禽的悲痛而制作的。",
+				"爱莉莎女王的奇妙夜莺得名于其第一任主人\u2014\u2014灰鹰世界东法兰尼斯的一位女王。其起源已不可考，但有传说称，这件神器是为了安慰女王失去心爱宠物鸣禽的悲痛而制作的。",
 				"这只机械鸣禽拥有水晶双眼、金色羽毛，以及背部一枚小巧的发条钥匙。作为{@action 魔法|XPHB}动作，你可以让这只鸟鲜活地动起来，持续10分钟，在此期间其会唱出在300尺范围内都能听见的优美旋律；你也可以令其恢复机械形态。当夜莺变回机械形态后，其在接下来的1小时内无法再次活化。",
 				{
 					"ENG_name": "Aura of Truth",
@@ -60713,7 +60713,7 @@
 				"这只沉重的魔法手镯能使你的心智免受潜在干扰的影响。佩戴此手镯期间，你获得以下增益。",
 				{
 					"ENG_name": "Deep Knowledge",
-					"name": "渊博学识",
+					"name": "深邃学识",
 					"type": "entries",
 					"entries": [
 						"当你执行{@action 研究|XPHB}动作，并使用一项你拥有熟练的技能进行智力检定时，你可以将{@dice d20}掷骰中9或更低的结果视为10。"
@@ -65162,7 +65162,7 @@
 				"这只干枯的手或爪子系在一根皮绳上，可以作为项链或手链佩戴。佩戴该战利品期间，你获得以下增益。",
 				{
 					"ENG_name": "Dispelling Touch",
-					"name": "祛法触",
+					"name": "解魔之触",
 					"type": "entries",
 					"entries": [
 						"当你使用近战法术攻击命中一个生物时，你可以激活战利品，作为该次攻击的一部分施展法术{@spell 解除魔法|XPHB}，以被命中的生物为目标。该词条一经使用，则直至下一黎明前，都无法再次使用。"
@@ -65170,7 +65170,7 @@
 				},
 				{
 					"ENG_name": "Helping Hand",
-					"name": "援手",
+					"name": "援助之手",
 					"type": "entries",
 					"entries": [
 						"当你使用法术位施展法术时，你可以无需任何姿势成分地来施展该法术。"
@@ -72871,7 +72871,7 @@
 						"mode": "appendArr",
 						"items": {
 							"ENG_name": "Ten",
-							"name": "十",
+							"name": "十孔",
 							"type": "entries",
 							"entries": [
 								"武器柄部点缀着十个装饰性锁孔。你用此魔法武器进行攻击检定和伤害掷骰的加值提升至+2。此外，当你令此武器变形时，可以变形为任意简易近战武器。"
@@ -74061,7 +74061,7 @@
 			"entries": [
 				{
 					"ENG_name": "Three",
-					"name": "三",
+					"name": "三孔",
 					"type": "entries",
 					"entries": [
 						"武器柄部点缀着三个装饰性锁孔。",
@@ -77985,7 +77985,7 @@
 						"mode": "appendArr",
 						"items": {
 							"ENG_name": "Vigilant",
-							"name": "警觉",
+							"name": "警醒",
 							"type": "entries",
 							"entries": [
 								"在发现一本满是符号的奇异典籍后，那些与权杖相近的符号令魔契师感受到赋予其魔力的存在的认可。DM决定让权杖进化为珍稀物品，并获得警醒词条。"
