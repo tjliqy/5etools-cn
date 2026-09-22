@@ -14,6 +14,11 @@
 			text-align: center;
 		}
 
+		&download progress {
+			display: block;
+			height: 16px;
+		}
+
 		&layout {
 			gap: vars.$spacer * 2;
 			padding: vars.$spacer * 2 0;

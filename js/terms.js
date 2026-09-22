@@ -3,7 +3,8 @@ import {OmnisearchBacking} from "./omnisearch/omnisearch-backing.js";
 import {OmnisearchUtilsUi} from "./omnisearch/omnisearch-utils-ui.js";
 
 class TermsPage {
-	static _TERMS_API_URL = "http://kiwee.top:11321/api/v1/terms";
+	static _TERMS_DATA_URL = "docs/terms-20260922-142718.json";
+	static _TERMS_CACHE_NAME = "5etools-terms-v1";
 	static _BUQUANSHU_API_URL = "https://5echmsearch.kagangtuya.top/api/search";
 	static _BUQUANSHU_SITE_URL = "https://5echm.kagangtuya.top/";
 	static _PAGE_SIZE = 10;
@@ -11,6 +12,8 @@ class TermsPage {
 
 	static _els = {};
 	static _requestId = 0;
+	static _termsData = null;
+	static _termsLoadError = null;
 
 	static async pInit () {
 		await Promise.all([
@@ -21,6 +24,11 @@ class TermsPage {
 
 		this._render();
 		this._setFormFromUrl();
+		try {
+			await this._pLoadTermsData();
+		} catch (error) {
+			this._termsLoadError = error;
+		}
 		await this._pSearch({isSetUrl: false});
 		window.dispatchEvent(new Event("toolsLoaded"));
 	}
@@ -30,6 +38,10 @@ class TermsPage {
 		main.innerHTML = `
 			<div class="ve-flex-col pg-terms__layout">
 				<div class="pg-terms__banner">参与术语库共建，请加入QQ群1045869232</div>
+				<div id="terms-download" class="pg-terms__download pg-terms__panel ve-hidden">
+					<div id="terms-download-label" class="ve-mb-1">正在准备术语库……</div>
+					<progress id="terms-download-progress" class="ve-w-100" max="100"></progress>
+				</div>
 				<section class="pg-terms__panel">
 					<form id="terms-form">
 						<div class="ve-flex ve-input-group">
@@ -70,6 +82,9 @@ class TermsPage {
 
 		this._els = {
 			form: document.getElementById("terms-form"),
+			download: document.getElementById("terms-download"),
+			downloadLabel: document.getElementById("terms-download-label"),
+			downloadProgress: document.getElementById("terms-download-progress"),
 			query: document.getElementById("terms-query"),
 			category: document.getElementById("terms-category"),
 			source: document.getElementById("terms-source"),
@@ -156,33 +171,155 @@ class TermsPage {
 		this._els.bqsPagination.innerHTML = "";
 	}
 
-	static async _pGetTerms (state) {
-		const url = new URL(this._TERMS_API_URL);
-		url.searchParams.set("page", state.page);
-		url.searchParams.set("limit", this._PAGE_SIZE);
-		url.searchParams.set("sort", state.sort);
-		if (state.query) {
-			const isChinese = /[\u3400-\u9fff]/u.test(state.query);
-			url.searchParams.set(`${state.exact ? "eq_" : ""}${isChinese ? "cn" : "en"}`, state.query);
-		}
-		if (state.category) url.searchParams.set("category", state.category);
-		if (state.source) url.searchParams.set("source", state.source);
-		if (state.status !== "") url.searchParams.set("to_be_discussed", state.status);
+	static async _pLoadTermsData () {
+		const url = new URL(this._TERMS_DATA_URL, location.href).href;
+		let cache = null;
+		let cachedResponse = null;
+		let previousCachedResponse = null;
 
-		try {
-			if (location.protocol === "https:" && url.protocol === "http:") {
-				throw new Error("术语服务目前仅提供 HTTP，HTTPS 页面无法直接请求。请为接口配置 HTTPS 或同源反向代理。");
+		if ("caches" in globalThis) {
+			try {
+				cache = await caches.open(this._TERMS_CACHE_NAME);
+				cachedResponse = await cache.match(url);
+				if (!cachedResponse) previousCachedResponse = await this._pGetLatestCachedTermsResponse(cache);
+			} catch (ignored) {
+				// Continue without persistent caching when Cache Storage is unavailable.
 			}
-			const response = await fetch(url, {headers: {Accept: "application/json"}});
-			if (!response.ok) throw new Error(`HTTP ${response.status}`);
-			const payload = await response.json();
-			if (payload.code !== 20000 || !payload.data || !Array.isArray(payload.data.items)) {
-				throw new Error(payload.message || "接口返回格式不正确");
-			}
-			return {data: payload.data};
-		} catch (error) {
-			return {error};
 		}
+
+		if (cachedResponse) {
+			try {
+				this._termsData = await this._pParseTermsResponse(cachedResponse);
+				return;
+			} catch (ignored) {
+				if (cache) await cache.delete(url);
+			}
+		}
+
+		let downloadedResponse = null;
+		try {
+			downloadedResponse = await this._pDownloadTermsData(url);
+		} catch (error) {
+			if (!previousCachedResponse) throw error;
+			this._termsData = await this._pParseTermsResponse(previousCachedResponse);
+			return;
+		}
+		this._termsData = await this._pParseTermsResponse(downloadedResponse.clone());
+		if (cache) {
+			try {
+				await cache.put(url, downloadedResponse);
+				await this._pDeleteOldTermsCacheEntries(cache, url);
+			} catch (ignored) {
+				// The current session can still use the downloaded data if persistence fails.
+			}
+		}
+	}
+
+	static async _pGetLatestCachedTermsResponse (cache) {
+		const requests = (await cache.keys())
+			.map(request => ({request, timestamp: this._getTermsFileTimestamp(request.url)}))
+			.filter(meta => meta.timestamp)
+			.sort((a, b) => b.timestamp.localeCompare(a.timestamp));
+		return requests.length ? cache.match(requests[0].request) : null;
+	}
+
+	static async _pDeleteOldTermsCacheEntries (cache, currentUrl) {
+		const requests = await cache.keys();
+		await Promise.all(requests
+			.filter(request => request.url !== currentUrl && this._getTermsFileTimestamp(request.url))
+			.map(request => cache.delete(request)));
+	}
+
+	static _getTermsFileTimestamp (url) {
+		return /\/terms-(\d{8}-\d{6})\.json(?:$|[?#])/u.exec(url)?.[1] || null;
+	}
+
+	static async _pDownloadTermsData (url) {
+		this._setDownloadProgress({isVisible: true, loaded: 0, total: 0});
+		try {
+			const response = await fetch(url, {cache: "no-store"});
+			if (!response.ok) throw new Error(`HTTP ${response.status}`);
+			if (!response.body) return response;
+
+			const total = Number(response.headers.get("content-length")) || 0;
+			const reader = response.body.getReader();
+			const chunks = [];
+			let loaded = 0;
+
+			while (true) {
+				const {done, value} = await reader.read();
+				if (done) break;
+				chunks.push(value);
+				loaded += value.byteLength;
+				this._setDownloadProgress({isVisible: true, loaded, total});
+			}
+
+			return new Response(new Blob(chunks, {type: "application/json"}), {
+				status: response.status,
+				statusText: response.statusText,
+				headers: response.headers,
+			});
+		} finally {
+			this._setDownloadProgress({isVisible: false});
+		}
+	}
+
+	static _setDownloadProgress ({isVisible, loaded = 0, total = 0}) {
+		this._els.download.classList.toggle("ve-hidden", !isVisible);
+		if (!isVisible) return;
+
+		const loadedText = this._getDisplayFileSize(loaded);
+		if (total) {
+			const percent = Math.min(Math.round(loaded / total * 100), 100);
+			this._els.downloadProgress.value = percent;
+			this._els.downloadLabel.textContent = `正在下载术语库：${percent}%（${loadedText} / ${this._getDisplayFileSize(total)}）`;
+			return;
+		}
+
+		this._els.downloadProgress.removeAttribute("value");
+		this._els.downloadLabel.textContent = `正在下载术语库：${loadedText}`;
+	}
+
+	static _getDisplayFileSize (bytes) {
+		if (bytes < 1024) return `${bytes} B`;
+		if (bytes < 1024 ** 2) return `${(bytes / 1024).toFixed(1)} KB`;
+		return `${(bytes / 1024 ** 2).toFixed(1)} MB`;
+	}
+
+	static async _pParseTermsResponse (response) {
+		const data = await response.json();
+		if (!data || !Array.isArray(data.items)) throw new Error("术语库文件格式不正确");
+		return data;
+	}
+
+	static async _pGetTerms (state) {
+		if (!this._termsData) return {error: this._termsLoadError || new Error("术语库尚未加载")};
+
+		const query = state.query.toLocaleLowerCase();
+		const isChinese = /[\u3400-\u9fff]/u.test(state.query);
+		const sourceQueries = state.source.split(/[,，\n]+/u).map(it => it.trim().toLocaleLowerCase()).filter(Boolean);
+		const items = this._termsData.items
+			.filter(item => {
+				if (query) {
+					const value = String(isChinese ? item.cn : item.en).toLocaleLowerCase();
+					if (state.exact ? value !== query : !value.includes(query)) return false;
+				}
+				if (state.category && !String(item.category).toLocaleLowerCase().includes(state.category.toLocaleLowerCase())) return false;
+				if (sourceQueries.length) {
+					const itemSources = String(item.source).toLocaleLowerCase();
+					if (!sourceQueries.some(source => itemSources.includes(source))) return false;
+				}
+				return state.status === "" || Number(item.to_be_discussed) === Number(state.status);
+			})
+			.sort(this._getTermsSort(state.sort));
+		const start = (state.page - 1) * this._PAGE_SIZE;
+		return {data: {count: items.length, items: items.slice(start, start + this._PAGE_SIZE)}};
+	}
+
+	static _getTermsSort (sort) {
+		const direction = sort.startsWith("-") ? -1 : 1;
+		const field = sort.slice(1);
+		return (a, b) => direction * String(a[field] ?? "").localeCompare(String(b[field] ?? ""), "zh-CN", {numeric: true, sensitivity: "base"});
 	}
 
 	static async _pGetSiteResults (query) {
