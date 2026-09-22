@@ -1,0 +1,102 @@
+@use "vars/vars";
+@use "vars/vars-night";
+
+@layer vetools {
+	.pg-terms__ {
+		&layout {
+			gap: vars.$spacer * 2;
+			padding: vars.$spacer * 2 0;
+		}
+
+		&panel {
+			border: 1px solid vars.$rgb-border-grey;
+			border-radius: 5px;
+			padding: vars.$spacer * 2;
+			background: vars.$rgb-bg;
+		}
+
+		&filters {
+			display: grid;
+			grid-template-columns: repeat(4, minmax(140px, 1fr));
+			gap: vars.$spacer;
+		}
+
+		&label {
+			display: flex;
+			flex-direction: column;
+			gap: 3px;
+			font-size: 12px;
+			font-weight: 600;
+		}
+
+		&term {
+			border-top: 1px solid vars.$rgb-border-grey;
+			padding: vars.$spacer * 1.5 0;
+		}
+
+		&term:first-child {
+			border-top: 0;
+			padding-top: 0;
+		}
+
+		&term-name {
+			font-size: 17px;
+			font-weight: 600;
+		}
+
+		&badge {
+			display: inline-block;
+			border-radius: 10px;
+			padding: 1px 7px;
+			background: #e7e7e7;
+			font-size: 11px;
+		}
+
+		&badge--pending {
+			background: #f3d9a5;
+			color: #674600;
+		}
+
+		&result {
+			border-top: 1px solid vars.$rgb-border-grey;
+			padding: vars.$spacer 0;
+		}
+
+		&result:first-child {
+			border-top: 0;
+		}
+
+		&preview {
+			white-space: pre-line;
+			word-break: break-word;
+		}
+
+		@media screen and (width <= #{vars.$width-screen-md}) {
+			&filters {
+				grid-template-columns: repeat(2, minmax(140px, 1fr));
+			}
+		}
+
+		@media screen and (width <= #{vars.$width-screen-sm}) {
+			&filters {
+				grid-template-columns: 1fr;
+			}
+		}
+	}
+
+	.ve-night-mode .pg-terms__ {
+		&panel {
+			border-color: vars-night.$rgb-border-grey--night;
+			background: vars-night.$rgb-bg--night;
+		}
+
+		&term,
+		&result {
+			border-color: vars-night.$rgb-border-grey--night;
+		}
+
+		&badge {
+			background: #444;
+		}
+	}
+}
