@@ -38,5 +38,13 @@
         }
       ]
     }
-  ]
+  ],
+  "redirects": [
+      {
+        "source": "/api/terms",
+        "destination": "http://kiwee.top:11321/api/v1/terms",
+        "statusCode": 301
+      }
+    ]
+
 }
