@@ -401,8 +401,7 @@
 					]
 				}
 			],
-			"hasFluffImages": true,
-			"translator": "不全书"
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Actor",
@@ -797,8 +796,7 @@
 						"当你施展一道幻术学派的法术时，你能选择一名位于你30尺内能看见你的盟友。那名盟友获得{@variantrule 英雄激励|XPHB}。此增益一经使用，直至完成{@variantrule 长休|XPHB}你都无法再次使用。"
 					]
 				}
-			],
-			"translator": "不全书"
+			]
 		},
 		{
 			"ENG_name": "Arcane Eloquence",
@@ -840,8 +838,7 @@
 						"当你进行魅力（{@skill 欺瞒|XPHB}、{@skill 威吓|XPHB}或{@skill 游说|XPHB}）检定时，你可以投掷{@dice 1d4}并将骰值加入该属性检定。"
 					]
 				}
-			],
-			"translator": "不全书"
+			]
 		},
 		{
 			"ENG_name": "Arcane Infiltrator",
@@ -883,8 +880,7 @@
 						"你能以{@variantrule 附赠动作|XPHB}执行{@action 回避|XPHB}动作。你能使用此增益的次数等于你的{@variantrule 熟练|XPHB|熟练加值}，当你完成{@variantrule 长休|XPHB}时重获所有已消耗的使用次数。"
 					]
 				}
-			],
-			"translator": "不全书"
+			]
 		},
 		{
 			"ENG_name": "Arcane Omens",
@@ -926,8 +922,7 @@
 						"当你或一名位于你30尺内你可见的生物豁免失败时，你能以{@variantrule 反应|XPHB}投掷{@dice 1d4}并将骰值加入该豁免总值，这可能使失败改为成功。你能使用此增益的次数等于你的{@variantrule 熟练|XPHB|熟练加值}，当你完成{@variantrule 长休|XPHB}时重获所有已消耗的使用次数。"
 					]
 				}
-			],
-			"translator": "不全书"
+			]
 		},
 		{
 			"ENG_name": "Arcane Overload",
@@ -969,8 +964,7 @@
 						"当你施展一道塑能法术并以之造成伤害时，你能将你的{@variantrule 熟练|XPHB|熟练加值}加入该法术的其中一枚伤害骰。此增益一经使用，直至完成{@variantrule 长休|XPHB}你都无法再次使用。"
 					]
 				}
-			],
-			"translator": "不全书"
+			]
 		},
 		{
 			"ENG_name": "Arcane Safeguard",
@@ -1012,8 +1006,7 @@
 						"当你执行{@action 协助|XPHB}动作辅助一次盟友的属性检定时，那名盟友获得等于你{@variantrule 熟练|XPHB|熟练加值}的{@variantrule 临时生命值|XPHB}。"
 					]
 				}
-			],
-			"translator": "不全书"
+			]
 		},
 		{
 			"ENG_name": "Arcane Undertaker",
@@ -1066,8 +1059,7 @@
 						"当你执行{@action 协助|XPHB}动作稳定一名0{@variantrule 生命值|XPHB}生物的伤势时，你获得{@variantrule 英雄激励|XPHB}。此增益一经使用，直至完成{@variantrule 长休|XPHB}你都无法再次使用。"
 					]
 				}
-			],
-			"translator": "不全书"
+			]
 		},
 		{
 			"ENG_name": "Arcane Warrior",
@@ -1104,8 +1096,7 @@
 			"entries": [
 				"你习得两道你选择的法师戏法。推荐选择{@spell 法师之手|XPHB}和{@spell 冷冻射线|XPHB}。智力、感知或魅力是你施展这些法术的施法属性（在你选取此专长时选择）。",
 				"每当你获得新等级时，你可以将其中一道戏法替换为另一道法师戏法。"
-			],
-			"translator": "不全书"
+			]
 		},
 		{
 			"ENG_name": "Archery",
@@ -1875,8 +1866,7 @@
 						"当你使用法术位施展一道造成伤害的法术时，你可以令其魔法能量爆发涌动。你能将该法术伤害骰投出的1和2都视为3，且受到该法术伤害的生物陷入{@condition 倒地|XPHB}状态。此增益一经使用，直至你投掷{@variantrule 先攻|XPHB}、完成{@variantrule 长休|XPHB}或{@variantrule 短休|XPHB}你都无法再次使用。"
 					]
 				}
-			],
-			"translator": "不全书"
+			]
 		},
 		{
 			"ENG_name": "Boon of Exquisite Radiance",
@@ -2384,17 +2374,17 @@
 							"style": "list-hang-notitle",
 							"items": [
 								{
-									"type": "item",
 									"ENG_name": "Rote Casting",
 									"name": "强记施法",
+									"type": "item",
 									"entries": [
 										"选择一道来自所选学派且记录在你职业法术列表的一环法术。你始终准备着那道法术，且可以无需法术位且无需法术成分地施展该法术。"
 									]
 								},
 								{
-									"type": "item",
 									"ENG_name": "Signature Arcanum",
 									"name": "招牌奥术",
+									"type": "item",
 									"entries": [
 										"选择一道来自所选学派的不高于七环的法术。你始终准备着那道法术。你可以无需法术位地施展该法术一次，当你完成{@variantrule 长休|XPHB}时，你重获以此法施展该法术的能力。"
 									]
@@ -2412,8 +2402,7 @@
 						"你可多次选取本专长，但每次选取时都必须选择一个不同的魔法学派。"
 					]
 				}
-			],
-			"translator": "不全书"
+			]
 		},
 		{
 			"ENG_name": "Boon of Misty Escape",
@@ -3337,11 +3326,10 @@
 					"name": "矢志不移",
 					"type": "entries",
 					"entries": [
-						"当你正为某效应维持{@status 专注|XPHB}时，你仅会因以下情况失去{@status 专注|XPHB}：你施展一道需要{@status 专注|XPHB}的法术、你激活另一个需要{@status 专注|XPHB}的效应、你陷入{@condition 石化|XPHB}或{@condition 昏迷|XPHB}状态，或你死亡。"
+						"当你正为某效应维持{@status 专注|XPHB}时，你仅会因以下情况失去{@status 专注|XPHB}：你施展一道需要专注的法术、你激活另一个需要{@status 专注|XPHB}的效应、你陷入{@condition 石化|XPHB}或{@condition 昏迷|XPHB}状态，或你死亡。"
 					]
 				}
-			],
-			"translator": "不全书"
+			]
 		},
 		{
 			"ENG_name": "Boon of the Night Spirit",
@@ -4066,8 +4054,7 @@
 						]
 					]
 				}
-			],
-			"translator": "不全书"
+			]
 		},
 		{
 			"ENG_name": "Crafter",
@@ -4565,8 +4552,7 @@
 						]
 					]
 				}
-			],
-			"translator": "不全书"
+			]
 		},
 		{
 			"ENG_name": "Divinely Favored",
@@ -5330,8 +5316,7 @@
 					]
 				}
 			],
-			"hasFluffImages": true,
-			"translator": "不全书"
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Elven Accuracy",
@@ -5570,8 +5555,7 @@
 						]
 					]
 				}
-			],
-			"translator": "不全书"
+			]
 		},
 		{
 			"ENG_name": "Enclave Magic",
@@ -5735,8 +5719,7 @@
 						]
 					]
 				}
-			],
-			"translator": "不全书"
+			]
 		},
 		{
 			"ENG_name": "Fade Away",
@@ -5870,8 +5853,7 @@
 						"当你使用你具有熟练的技能进行属性检定时，若你的魔宠位于你5尺内，你在该检定上获得{@variantrule 优势|XPHB}。你能使用此增益的次数等于你的{@variantrule 熟练|XPHB|熟练加值}，当你完成{@variantrule 长休|XPHB}时重获所有已消耗的使用次数。"
 					]
 				}
-			],
-			"translator": "不全书"
+			]
 		},
 		{
 			"ENG_name": "Fey Teleportation",
@@ -5953,7 +5935,7 @@
 			],
 			"additionalSpells": [
 				{
-					"ability": "继承",
+					"ability": "inherit",
 					"innate": {
 						"_": {
 							"daily": {
@@ -6003,7 +5985,7 @@
 			],
 			"additionalSpells": [
 				{
-					"ability": "继承",
+					"ability": "inherit",
 					"innate": {
 						"_": {
 							"daily": {
@@ -7663,8 +7645,7 @@
 						]
 					]
 				}
-			],
-			"translator": "不全书"
+			]
 		},
 		{
 			"ENG_name": "Infernal Constitution",
@@ -8720,10 +8701,7 @@
 			"category": "G",
 			"prerequisite": [
 				{
-					"level": 4,
-					"feat": [
-						"magic initiate|xphb"
-					]
+					"level": 4
 				}
 			],
 			"ability": [
@@ -8733,62 +8711,6 @@
 							"str",
 							"dex"
 						]
-					}
-				}
-			],
-			"additionalSpells": [
-				{
-					"name": "Cleric Spells",
-					"ability": "inherit",
-					"prepared": {
-						"_": {
-							"daily": {
-								"1e": [
-									{
-										"choose": "level=1|class=Cleric"
-									},
-									{
-										"choose": "level=2|class=Cleric"
-									}
-								]
-							}
-						}
-					}
-				},
-				{
-					"name": "Druid Spells",
-					"ability": "inherit",
-					"prepared": {
-						"_": {
-							"daily": {
-								"1e": [
-									{
-										"choose": "level=1|class=Druid"
-									},
-									{
-										"choose": "level=2|class=Druid"
-									}
-								]
-							}
-						}
-					}
-				},
-				{
-					"name": "Wizard Spells",
-					"ability": "inherit",
-					"prepared": {
-						"_": {
-							"daily": {
-								"1e": [
-									{
-										"choose": "level=1|class=Wizard"
-									},
-									{
-										"choose": "level=2|class=Wizard"
-									}
-								]
-							}
-						}
 					}
 				}
 			],
@@ -8909,14 +8831,13 @@
 				},
 				{
 					"ENG_name": "Spell Change",
-					"name": "法术切换",
+					"name": "改变法术",
 					"type": "entries",
 					"entries": [
 						"每当你获得新的等级时，你可以将你在此专长选择的其中一道法术替换为另一道来自所选法术列表的环阶相同的法术。"
 					]
 				}
-			],
-			"translator": "不全书"
+			]
 		},
 		{
 			"ENG_name": "Magic Initiate",
@@ -11568,8 +11489,7 @@
 						]
 					]
 				}
-			],
-			"translator": "不全书"
+			]
 		},
 		{
 			"ENG_name": "Observant",
@@ -11806,8 +11726,7 @@
 						"你的魔宠可以移动穿过其他生物和物件，如同穿过{@variantrule 困难地形|XPHB}一般。若你的魔宠在其回合结束时还处于一个物件内，其将被转移至其最后身处的未占据空间。"
 					]
 				}
-			],
-			"translator": "不全书"
+			]
 		},
 		{
 			"ENG_name": "Outlands Envoy",
@@ -12154,9 +12073,9 @@
 				{
 					"choose": {
 						"from": [
-							"necrotic",
-							"psychic",
-							"radiant"
+							"暗蚀",
+							"心灵",
+							"光耀"
 						]
 					}
 				}
@@ -12179,8 +12098,7 @@
 						"你能消耗15尺移动力传送至一处位于你15尺内你可见的未占据空间。你能使用此增益的次数等于你的{@variantrule 熟练|XPHB|熟练加值}，但每回合限一次，当你完成{@variantrule 长休|XPHB}时重获所有已消耗的使用次数。"
 					]
 				}
-			],
-			"translator": "不全书"
+			]
 		},
 		{
 			"ENG_name": "Potent Dragonmark",
@@ -12698,7 +12616,7 @@
 					"type": "list",
 					"items": [
 						"当你双手持握双刃弯刀时，你的AC得到+1加值。",
-						"双刃弯刀在你持握时具有{@itemProperty F|PHB|灵巧}属性。"
+						"双刃弯刀在你持握时具有{@itemProperty F|PHB|灵巧}词条。"
 					]
 				}
 			],
@@ -13564,7 +13482,7 @@
 			],
 			"additionalSpells": [
 				{
-					"ability": "继承",
+					"ability": "inherit",
 					"innate": {
 						"_": {
 							"daily": {
@@ -13614,7 +13532,7 @@
 			],
 			"additionalSpells": [
 				{
-					"ability": "继承",
+					"ability": "inherit",
 					"innate": {
 						"_": {
 							"daily": {
@@ -14141,10 +14059,7 @@
 			"category": "G",
 			"prerequisite": [
 				{
-					"level": 4,
-					"feat": [
-						"familiar friend|au"
-					]
+					"level": 4
 				}
 			],
 			"ability": [
@@ -14216,8 +14131,7 @@
 						"只要你的魔宠位于你120尺内，正能量便会充斥源自你魔宠的5尺{@variantrule 光环 [效应区域]|XPHB|光环}。每当一名盟友在该{@variantrule 光环 [效应区域]|XPHB|光环}中掷骰以决定一名生物恢复的{@variantrule 生命值|XPHB}数量时，那名盟友可以将骰出的1和2都视为3。"
 					]
 				}
-			],
-			"translator": "不全书"
+			]
 		},
 		{
 			"ENG_name": "Soul of the Storm Giant",
@@ -14354,10 +14268,10 @@
 				{
 					"choose": {
 						"from": [
-							"necrotic",
-							"psychic",
-							"radiant",
-							"thunder"
+							"暗蚀",
+							"心灵",
+							"光耀",
+							"雷鸣"
 						]
 					}
 				}
@@ -14381,8 +14295,7 @@
 					]
 				}
 			],
-			"hasFluffImages": true,
-			"translator": "不全书"
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Spell Sniper",
@@ -14583,8 +14496,7 @@
 						"若你具有{@action 躲藏|XPHB}动作赋予的{@condition 隐形|XPHB}状态，只要你结束该回合时处于{@variantrule 掩护|XPHB|四分之三掩护}或{@variantrule 掩护|XPHB|全身掩护}后，施展带有言语成分的法术或发动法术攻击都不会终止你身上的该状态。"
 					]
 				}
-			],
-			"translator": "不全书"
+			]
 		},
 		{
 			"ENG_name": "Spellfire Adept",
@@ -15885,7 +15797,7 @@
 			],
 			"additionalSpells": [
 				{
-					"ability": "继承",
+					"ability": "inherit",
 					"known": {
 						"_": [
 							"法师之手#c"
@@ -15929,7 +15841,7 @@
 			],
 			"additionalSpells": [
 				{
-					"ability": "继承",
+					"ability": "inherit",
 					"known": {
 						"_": [
 							"法师之手|XPHB#c"
@@ -15980,7 +15892,7 @@
 			],
 			"additionalSpells": [
 				{
-					"ability": "继承",
+					"ability": "inherit",
 					"innate": {
 						"_": {
 							"daily": {
@@ -16029,7 +15941,7 @@
 			],
 			"additionalSpells": [
 				{
-					"ability": "继承",
+					"ability": "inherit",
 					"innate": {
 						"_": {
 							"daily": {
@@ -16261,8 +16173,7 @@
 						]
 					]
 				}
-			],
-			"translator": "不全书"
+			]
 		},
 		{
 			"ENG_name": "Transmuted Anatomy",
@@ -16271,7 +16182,7 @@
 			"page": 28,
 			"category": "O",
 			"traitTags": [
-				"Speed"
+				"速度"
 			],
 			"entries": [
 				"你获得以下增益。",
@@ -16291,8 +16202,7 @@
 						"你对抗将迫使你违背意愿变形的效应所进行的豁免具有{@variantrule 优势|XPHB}。此外，当你的体质豁免失败时，你能以{@variantrule 反应|XPHB}投掷{@dice 1d4}并将骰值加入该豁免总值，这可能使失败改为成功。你能使用此增益的次数等于你的{@variantrule 熟练|XPHB|熟练加值}，当你完成{@variantrule 长休|XPHB}时重获所有已消耗的使用次数。"
 					]
 				}
-			],
-			"translator": "不全书"
+			]
 		},
 		{
 			"ENG_name": "Treacherous Allure",
@@ -16732,8 +16642,7 @@
 						"当一名位于你魔宠5尺内的生物被一次攻击检定命中时，你的魔宠能执行{@variantrule 反应|XPHB}，令该生物对抗那次攻击的{@variantrule 护甲等级|XPHB}获得加值，这可能使那次攻击改为失手。该加值等于你的{@variantrule 熟练|XPHB|熟练加值}。"
 					]
 				}
-			],
-			"translator": "不全书"
+			]
 		},
 		{
 			"ENG_name": "Watchers",

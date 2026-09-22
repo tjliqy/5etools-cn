@@ -2811,7 +2811,7 @@
 								},
 								"entry": "梅花A"
 							},
-							"{@card 禽爪|千象无常牌|LLK}"
+							"{@card 利爪|千象无常牌|LLK}"
 						],
 						[
 							{
@@ -2841,7 +2841,7 @@
 								},
 								"entry": "梅花J"
 							},
-							"{@card 骷髅|千象无常牌|LLK}"
+							"{@card 头骨|千象无常牌|LLK}"
 						],
 						[
 							{
@@ -4029,7 +4029,7 @@
 							"ENG_name": "Strahd's Enemy",
 							"name": "施特拉德的敌人",
 							"suits": [
-								"无"
+								"none"
 							],
 							"entries": [
 								"此牌揭晓一名强大助力，在对抗黑暗的战斗中给予你们帮助。"
@@ -4059,7 +4059,7 @@
 							"ENG_name": "Strahd",
 							"name": "施特拉德",
 							"suits": [
-								"无"
+								"none"
 							],
 							"entries": [
 								"你的敌人是一个黑暗的造物，力量超凡，这张卡将领你到他面前。"
@@ -8418,7 +8418,7 @@
 				"height": 1227
 			},
 			"entries": [
-				"一套{@filter 你具有熟练项的珍稀及以上稀有度的魔法护甲套装|items|source=|type=light armor;heavy armor;medium armor|rarity=rare;very rare;legendary;artifact|category=}（由DM选择）出现在你的手上。如果你没有任何护甲熟练，当你未穿戴护甲时你的基础AC变为12+你的敏捷调整值。"
+				"一套{@filter 珍稀及以上稀有度的魔法护甲套装|items|source=|type=light armor;heavy armor;medium armor|rarity=rare;very rare;legendary;artifact|category=}（由DM选择）出现在你的手上。如果你没有任何护甲熟练，当你未穿戴护甲时你的基础AC变为12+你的敏捷调整值。"
 			]
 		},
 		{
@@ -29314,7 +29314,7 @@
 			"page": 9,
 			"suit": "大阿卡纳",
 			"value": 0,
-			"valueName": "无",
+			"valueName": "None",
 			"face": {
 				"type": "image",
 				"href": {

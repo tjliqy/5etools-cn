@@ -157,10 +157,10 @@
 				{
 					"title": "每环法术位",
 					"colLabels": [
-						"{@filter 1环|spells|level=1|class=圣武士}",
-						"{@filter 2环|spells|level=2|class=圣武士}",
-						"{@filter 3环|spells|level=3|class=圣武士}",
-						"{@filter 4环|spells|level=4|class=圣武士}",
+						"{@filter 1st|spells|level=1|class=圣武士}",
+						"{@filter 2nd|spells|level=2|class=圣武士}",
+						"{@filter 3rd|spells|level=3|class=圣武士}",
+						"{@filter 4th|spells|level=4|class=圣武士}",
 						"{@filter 5th|spells|level=5|class=圣武士}"
 					],
 					"rowsSpellProgression": [
@@ -615,10 +615,10 @@
 				{
 					"title": "每环法术位",
 					"colLabels": [
-						"{@filter 1环|spells|level=1|class=圣武士}",
-						"{@filter 2环|spells|level=2|class=圣武士}",
-						"{@filter 3环|spells|level=3|class=圣武士}",
-						"{@filter 4环|spells|level=4|class=圣武士}",
+						"{@filter 1st|spells|level=1|class=圣武士}",
+						"{@filter 2nd|spells|level=2|class=圣武士}",
+						"{@filter 3rd|spells|level=3|class=圣武士}",
+						"{@filter 4th|spells|level=4|class=圣武士}",
 						"{@filter 5th|spells|level=5|class=圣武士}"
 					],
 					"rowsSpellProgression": [
@@ -2659,7 +2659,7 @@
 							"{@spell 炼狱叱喝}, {@spell 致伤术}"
 						],
 						[
-							"5th",
+							"5环",
 							"{@spell 疯狂冠冕}, {@spell 黑暗术}"
 						],
 						[
@@ -2824,7 +2824,7 @@
 							"{@spell 诱捕打击}, {@spell 动物交谈}"
 						],
 						[
-							"5th",
+							"5环",
 							"{@spell 月华之光}, {@spell 迷踪步}"
 						],
 						[
@@ -3070,7 +3070,7 @@
 							"{@spell 防护善恶}, {@spell 庇护术}"
 						],
 						[
-							"5th",
+							"5环",
 							"{@spell 次等复原术}, {@spell 诚实之域}"
 						],
 						[
@@ -3364,7 +3364,7 @@
 							"{@spell 灾祸术}, {@spell 猎人印记}"
 						],
 						[
-							"5th",
+							"5环",
 							"{@spell 定身类人}, {@spell 迷踪步}"
 						],
 						[
@@ -3620,7 +3620,7 @@
 							"{@spell 命令术}, {@spell 强令对决}"
 						],
 						[
-							"5th",
+							"5环",
 							"{@spell 守护之链}, {@spell 诚实之域}"
 						],
 						[
@@ -3878,7 +3878,7 @@
 							"{@spell 光导箭}, {@spell 英雄气概}"
 						],
 						[
-							"5th",
+							"5环",
 							"{@spell 强化属性}, {@spell 魔化武器}"
 						],
 						[
@@ -4159,7 +4159,7 @@
 							"{@spell 警报术}, {@spell 侦测魔法}"
 						],
 						[
-							"5th",
+							"5环",
 							"{@spell 月华之光}, {@spell 识破隐形}"
 						],
 						[
@@ -4432,7 +4432,7 @@
 							"{@spell 黯冰狱铠}, {@spell 命令术}"
 						],
 						[
-							"5th",
+							"5环",
 							"{@spell 定身类人}, {@spell 灵体武器}"
 						],
 						[
@@ -4650,7 +4650,7 @@
 							"{@spell 庇护术}, {@spell 睡眠术}"
 						],
 						[
-							"5th",
+							"5环",
 							"{@spell 安定心神}, {@spell 定身类人}"
 						],
 						[

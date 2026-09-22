@@ -81,7 +81,7 @@
 					"{@item 矛|phb|三叉枪}"
 				],
 				"tools": [
-					"{@item 草药工具|PHB}"
+					"{@item 草药工具|phb}"
 				],
 				"toolProficiencies": [
 					{
@@ -237,10 +237,10 @@
 				{
 					"title": "每环法术位",
 					"colLabels": [
-						"{@filter 1环|spells|level=1|class=德鲁伊}",
-						"{@filter 2环|spells|level=2|class=德鲁伊}",
-						"{@filter 3环|spells|level=3|class=德鲁伊}",
-						"{@filter 4环|spells|level=4|class=德鲁伊}",
+						"{@filter 1st|spells|level=1|class=德鲁伊}",
+						"{@filter 2nd|spells|level=2|class=德鲁伊}",
+						"{@filter 3rd|spells|level=3|class=德鲁伊}",
+						"{@filter 4th|spells|level=4|class=德鲁伊}",
 						"{@filter 5th|spells|level=5|class=德鲁伊}",
 						"{@filter 6th|spells|level=6|class=德鲁伊}",
 						"{@filter 7th|spells|level=7|class=德鲁伊}",
@@ -805,10 +805,10 @@
 				{
 					"title": "每环法术位",
 					"colLabels": [
-						"{@filter 1环|spells|level=1|class=德鲁伊}",
-						"{@filter 2环|spells|level=2|class=德鲁伊}",
-						"{@filter 3环|spells|level=3|class=德鲁伊}",
-						"{@filter 4环|spells|level=4|class=德鲁伊}",
+						"{@filter 1st|spells|level=1|class=德鲁伊}",
+						"{@filter 2nd|spells|level=2|class=德鲁伊}",
+						"{@filter 3rd|spells|level=3|class=德鲁伊}",
+						"{@filter 4th|spells|level=4|class=德鲁伊}",
 						"{@filter 5th|spells|level=5|class=德鲁伊}",
 						"{@filter 6th|spells|level=6|class=德鲁伊}",
 						"{@filter 7th|spells|level=7|class=德鲁伊}",
@@ -3033,7 +3033,7 @@
 							"{@spell 定身类人}, {@spell 荆棘丛生}"
 						],
 						[
-							"5th",
+							"5环",
 							"{@spell 雪雨暴}, {@spell 缓慢术}"
 						],
 						[
@@ -3063,7 +3063,7 @@
 							"{@spell 镜影术}, {@spell 迷踪步}"
 						],
 						[
-							"5th",
+							"5环",
 							"{@spell 水下呼吸}, {@spell 水上行走}"
 						],
 						[
@@ -3093,7 +3093,7 @@
 							"{@spell 朦胧术}, {@spell 沉默术}"
 						],
 						[
-							"5th",
+							"5环",
 							"{@spell 造粮术}, {@spell 防护能量}"
 						],
 						[
@@ -3123,7 +3123,7 @@
 							"{@spell 树肤术}, {@spell 蛛行术}"
 						],
 						[
-							"5th",
+							"5环",
 							"{@spell 召雷术}, {@spell 植物滋长}"
 						],
 						[
@@ -3153,7 +3153,7 @@
 							"{@spell 隐形术}, {@spell 行动无踪}"
 						],
 						[
-							"5th",
+							"5环",
 							"{@spell 昼明术}, {@spell 加速术}"
 						],
 						[
@@ -3183,7 +3183,7 @@
 							"{@spell 蛛行术}, {@spell 荆棘丛生}"
 						],
 						[
-							"5th",
+							"5环",
 							"{@spell 闪电束}, {@spell 融身入石}"
 						],
 						[
@@ -3213,7 +3213,7 @@
 							"{@spell 黑暗术}, {@spell 马友夫强酸箭}"
 						],
 						[
-							"5th",
+							"5环",
 							"{@spell 水上行走}, {@spell 臭云术}"
 						],
 						[
@@ -3243,7 +3243,7 @@
 							"{@spell 蛛行术}, {@spell 蛛网术}"
 						],
 						[
-							"5th",
+							"5环",
 							"{@spell 气化形体}, {@spell 臭云术}"
 						],
 						[
@@ -3557,7 +3557,7 @@
 							"{@spell 目盲术/耳聋术}, {@spell 遗体防腐}"
 						],
 						[
-							"5th",
+							"5环",
 							"{@spell 活化死尸}, {@spell 气化形体}"
 						],
 						[
@@ -3985,7 +3985,7 @@
 							"{@spell 炽焰法球}, {@spell 灼热射线}"
 						],
 						[
-							"5th",
+							"5环",
 							"{@spell 植物滋长}, {@spell 回生术}"
 						],
 						[
@@ -4513,7 +4513,7 @@
 							"{@spell 朦胧术|XPHB}, {@spell 燃烧之手|XPHB}, {@spell 火焰箭|XPHB}"
 						],
 						[
-							"5th",
+							"5环",
 							"{@spell 火球术|XPHB}"
 						],
 						[
@@ -4543,7 +4543,7 @@
 							"{@spell 云雾术|XPHB}, {@spell 定身类人|XPHB}, {@spell 冷冻射线|XPHB}"
 						],
 						[
-							"5th",
+							"5环",
 							"{@spell 雪雨暴|XPHB}"
 						],
 						[
@@ -4573,7 +4573,7 @@
 							"{@spell 迷踪步|XPHB}, {@spell 电爪|XPHB}, {@spell 睡眠术|XPHB}"
 						],
 						[
-							"5th",
+							"5环",
 							"{@spell 闪电束|XPHB}"
 						],
 						[
@@ -4603,7 +4603,7 @@
 							"{@spell 酸液飞溅|XPHB}, {@spell 致病射线|XPHB}, {@spell 蛛网术|XPHB}"
 						],
 						[
-							"5th",
+							"5环",
 							"{@spell 臭云术|XPHB}"
 						],
 						[

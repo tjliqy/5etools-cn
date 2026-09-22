@@ -1,20 +1,20 @@
 
-> 5etools@2.34.0 test:data
+> 5etools@2.35.1 test:data
 > node test/test-all.js
 
 ##### FilterCheck passed! #####
+##### ScaleDiceCheck passed! #####
 ##### StripTagTest passed! #####
 ##### StandaloneTagTest passed! #####
 ##### TableDiceTest passed! #####
-##### AdventureBookTagCheck passed! #####
 ##### AreaCheck passed! #####
 ##### EntriesCheck passed! #####
 ##### EscapeCharacterCheck passed! #####
 ##### DuplicateEntityCheck passed! #####
 ##### RefTagCheck passed! #####
 ##### TestCopyCheck passed! #####
+##### HasFluffCheck passed! #####
 ##### EntityFileHandlerAction passed! #####
-##### EntityFileHandlerAdventureBook passed! #####
 ##### EntityFileHandlerBackground passed! #####
 ##### EntityFileHandlerClass passed! #####
 ##### EntityFileHandlerConditionDisease passed! #####
@@ -36,127 +36,39 @@
 ##### EntityFileHandlerFoundrySpells passed! #####
 Error messages for LinkCheck:
 
-Missing link: {@spell bless} in file ./data/adventure/adventure-dip.json (evaluates to "spells.html#bless_phb")
-Missing link: {@table 火巨人行囊内容; 火巨人行囊物品|BGG|火巨人行囊} in file ./data/adventure/adventure-gotsf.json (evaluates to "tables.html#%e7%81%ab%e5%b7%a8%e4%ba%ba%e8%a1%8c%e5%9b%8a%e5%86%85%e5%ae%b9%3b%20%e7%81%ab%e5%b7%a8%e4%ba%ba%e8%a1%8c%e5%9b%8a%e7%89%a9%e5%93%81_bgg")
-Missing link: {@creature Reghed Warrior|IDRotF|Warriors} in file ./data/adventure/adventure-idrotf.json (evaluates to "bestiary.html#reghed%20warrior_idrotf")
-Missing link: {@creature gaj|BAM} in file ./data/adventure/adventure-lox.json (evaluates to "bestiary.html#gaj_bam")
-Missing link: {@condition Poisoned} in file ./data/adventure/adventure-tftyp-dit.json (evaluates to "conditionsdiseases.html#poisoned_phb")
+Missing link: {@creature 教团骑士|CoS} in file ./data/adventure/adventure-cos.json (evaluates to "bestiary.html#%e6%95%99%e5%9b%a2%e9%aa%91%e5%a3%ab_cos")
+Missing link: {@creature 教团骑士|CoS} in file ./data/adventure/adventure-cos.json (evaluates to "bestiary.html#%e6%95%99%e5%9b%a2%e9%aa%91%e5%a3%ab_cos")
+Missing link: {@creature 教团骑士|CoS} in file ./data/adventure/adventure-cos.json (evaluates to "bestiary.html#%e6%95%99%e5%9b%a2%e9%aa%91%e5%a3%ab_cos")
 Missing link: {@table 贮藏|ToA} in file ./data/adventure/adventure-toa.json (evaluates to "tables.html#%e8%b4%ae%e8%97%8f_toa")
 Missing link: {@table 贮藏|ToA} in file ./data/adventure/adventure-toa.json (evaluates to "tables.html#%e8%b4%ae%e8%97%8f_toa")
 Missing link: {@table 贮藏|ToA} in file ./data/adventure/adventure-toa.json (evaluates to "tables.html#%e8%b4%ae%e8%97%8f_toa")
-Missing link: {@table 变体：混合药水; 药水混合||药水混合} in file ./data/adventure/adventure-wdh.json (evaluates to "tables.html#%e5%8f%98%e4%bd%93%ef%bc%9a%e6%b7%b7%e5%90%88%e8%8d%af%e6%b0%b4%3b%20%e8%8d%af%e6%b0%b4%e6%b7%b7%e5%90%88_dmg")
-Missing link: (as "statblock" entry) {"ENG_name":"Mortuary Encounters (Levels 1—4)","name":"葬仪社遭遇 (等级1—4)","type":"statblock","source":"AATM","tag":"table"} in file ./data/book/book-aatm.json (evaluates to "tables.html#%e8%91%ac%e4%bb%aa%e7%a4%be%e9%81%ad%e9%81%87%20(%e7%ad%89%e7%ba%a71%e2%80%944)_aatm")
-Missing link: (as "statblock" entry) {"ENG_name":"Mortuary Encounters (Levels 5—10)","name":"葬仪社遭遇 (等级5—10)","type":"statblock","source":"AATM","tag":"table"} in file ./data/book/book-aatm.json (evaluates to "tables.html#%e8%91%ac%e4%bb%aa%e7%a4%be%e9%81%ad%e9%81%87%20(%e7%ad%89%e7%ba%a75%e2%80%9410)_aatm")
-Missing link: (as "statblock" entry) {"ENG_name":"Mortuary Encounters (Levels 11—16)","name":"葬仪社遭遇 (等级11—16)","type":"statblock","source":"AATM","tag":"table"} in file ./data/book/book-aatm.json (evaluates to "tables.html#%e8%91%ac%e4%bb%aa%e7%a4%be%e9%81%ad%e9%81%87%20(%e7%ad%89%e7%ba%a711%e2%80%9416)_aatm")
-Missing link: {@table 神奇蘑菇; 神奇蘑菇效应|TCE|神奇蘑菇效应表} in file ./data/book/book-bmt.json (evaluates to "tables.html#%e7%a5%9e%e5%a5%87%e8%98%91%e8%8f%87%3b%20%e7%a5%9e%e5%a5%87%e8%98%91%e8%8f%87%e6%95%88%e5%ba%94_tce")
+Missing link: {@background 组织代理人|SCAG} in file ./data/adventure/adventure-wdh.json (evaluates to "backgrounds.html#%e7%bb%84%e7%bb%87%e4%bb%a3%e7%90%86%e4%ba%ba_scag")
 Missing link: {@item 护盾|PHB|盾牌} in file ./data/book/book-bmt.json (evaluates to "items.html#%e6%8a%a4%e7%9b%be_phb")
-Missing link: {@class Barbarian} in file ./data/book/book-ps-d.json (evaluates to "classes.html#barbarian_phb")
-Missing link: {@class Fighter} in file ./data/book/book-ps-d.json (evaluates to "classes.html#fighter_phb")
-Missing link: {@class Bard} in file ./data/book/book-ps-d.json (evaluates to "classes.html#bard_phb")
-Missing link: {@class Cleric} in file ./data/book/book-ps-d.json (evaluates to "classes.html#cleric_phb")
-Missing link: {@class Bard} in file ./data/book/book-ps-d.json (evaluates to "classes.html#bard_phb")
-Missing link: {@class Druid} in file ./data/book/book-ps-d.json (evaluates to "classes.html#druid_phb")
-Missing link: {@class Fighter} in file ./data/book/book-ps-d.json (evaluates to "classes.html#fighter_phb")
-Missing link: {@class Ranger} in file ./data/book/book-ps-d.json (evaluates to "classes.html#ranger_phb")
-Missing link: {@spell magic missile} in file ./data/book/book-sac.json (evaluates to "spells.html#magic%20missile_phb")
-Missing link: {@status surprised} in file ./data/book/book-sac.json (evaluates to "conditionsdiseases.html#surprised_phb")
-Missing link: {@skill Nature} in file ./data/book/book-tce.json (evaluates to "skill#nature_phb")
-Missing link: {@skill Perception} in file ./data/book/book-tce.json (evaluates to "skill#perception_phb")
-Missing link: {@skill Arcana} in file ./data/book/book-tce.json (evaluates to "skill#arcana_phb")
-Missing link: {@skill Religion} in file ./data/book/book-tce.json (evaluates to "skill#religion_phb")
-Missing link: {@skill Insight} in file ./data/book/book-tce.json (evaluates to "skill#insight_phb")
-Missing link: {@skill Persuasion} in file ./data/book/book-tce.json (evaluates to "skill#persuasion_phb")
-Missing link: {@skill Investigation} in file ./data/book/book-tce.json (evaluates to "skill#investigation_phb")
-Missing link: {@skill Insight} in file ./data/book/book-tce.json (evaluates to "skill#insight_phb")
-Missing link: {@skill Investigation} in file ./data/book/book-tce.json (evaluates to "skill#investigation_phb")
-Missing link: {@skill Insight} in file ./data/book/book-tce.json (evaluates to "skill#insight_phb")
-Missing link: {@skill Investigation} in file ./data/book/book-tce.json (evaluates to "skill#investigation_phb")
-Missing link: {@skill Insight} in file ./data/book/book-tce.json (evaluates to "skill#insight_phb")
-Missing link: {@skill Perception} in file ./data/book/book-tce.json (evaluates to "skill#perception_phb")
-Missing link: {@skill Survival} in file ./data/book/book-tce.json (evaluates to "skill#survival_phb")
-Missing link: {@skill Arcana} in file ./data/book/book-tce.json (evaluates to "skill#arcana_phb")
-Missing link: {@skill Insight} in file ./data/book/book-tce.json (evaluates to "skill#insight_phb")
-Missing link: {@skill Perception} in file ./data/book/book-tce.json (evaluates to "skill#perception_phb")
-Missing link: {@skill Investigation} in file ./data/book/book-tce.json (evaluates to "skill#investigation_phb")
-Missing link: {@skill Insight} in file ./data/book/book-tce.json (evaluates to "skill#insight_phb")
-Missing link: {@skill Investigation} in file ./data/book/book-tce.json (evaluates to "skill#investigation_phb")
-Missing link: {@skill Insight} in file ./data/book/book-tce.json (evaluates to "skill#insight_phb")
-Missing link: {@skill Investigation} in file ./data/book/book-tce.json (evaluates to "skill#investigation_phb")
-Missing link: {@skill Perception} in file ./data/book/book-tce.json (evaluates to "skill#perception_phb")
-Missing link: {@skill Persuasion} in file ./data/book/book-tce.json (evaluates to "skill#persuasion_phb")
-Missing link: {@skill Intimidation} in file ./data/book/book-tce.json (evaluates to "skill#intimidation_phb")
-Missing link: {@skill Investigation} in file ./data/book/book-tce.json (evaluates to "skill#investigation_phb")
-Missing link: {@skill Intimidation} in file ./data/book/book-tce.json (evaluates to "skill#intimidation_phb")
-Missing link: {@skill Persuasion} in file ./data/book/book-tce.json (evaluates to "skill#persuasion_phb")
-Missing link: {@skill Stealth} in file ./data/book/book-tce.json (evaluates to "skill#stealth_phb")
-Missing link: {@skill History} in file ./data/book/book-tce.json (evaluates to "skill#history_phb")
-Missing link: {@skill Perception} in file ./data/book/book-tce.json (evaluates to "skill#perception_phb")
-Missing link: {@table 钱币; 钱币价值|XPHB|相对值} in file ./data/book/book-xdmg.json (evaluates to "tables.html#%e9%92%b1%e5%b8%81%3b%20%e9%92%b1%e5%b8%81%e4%bb%b7%e5%80%bc_xphb")
-Missing link: {@table Random Magic Items - Arcana|XDMG|Arcana} in file ./data/book/book-xmm.json (evaluates to "tables.html#random%20magic%20items%20-%20arcana_xdmg")
-Missing link: {@table Random Magic Items - Armaments|XDMG|Armaments} in file ./data/book/book-xmm.json (evaluates to "tables.html#random%20magic%20items%20-%20armaments_xdmg")
-Missing link: {@table Random Magic Items - Implements|XDMG|Implements} in file ./data/book/book-xmm.json (evaluates to "tables.html#random%20magic%20items%20-%20implements_xdmg")
-Missing link: {@table Random Magic Items - Relics|XDMG|Relics} in file ./data/book/book-xmm.json (evaluates to "tables.html#random%20magic%20items%20-%20relics_xdmg")
+Missing link: {@race 吸血鬼语|PSZ|吸血鬼们} in file ./data/book/book-scc.json (evaluates to "races.html#%e5%90%b8%e8%a1%80%e9%ac%bc%e8%af%ad_psz")
 Missing link: {@item 一副扑克牌|XPHB} in file ./data/book/book-xphb.json (evaluates to "items.html#%e4%b8%80%e5%89%af%e6%89%91%e5%85%8b%e7%89%8c_xphb")
-Missing link: {@table 魔法物品根据稀有度的定价; 魔法物品稀有度与价格|XDMG|200 GP} in file ./data/magicvariants.json (evaluates to "tables.html#%e9%ad%94%e6%b3%95%e7%89%a9%e5%93%81%e6%a0%b9%e6%8d%ae%e7%a8%80%e6%9c%89%e5%ba%a6%e7%9a%84%e5%ae%9a%e4%bb%b7%3b%20%e9%ad%94%e6%b3%95%e7%89%a9%e5%93%81%e7%a8%80%e6%9c%89%e5%ba%a6%e4%b8%8e%e4%bb%b7%e6%a0%bc_xdmg")
-Missing link: {@table 魔法物品根据稀有度的定价; 魔法物品稀有度与价格|XDMG|2,000 GP} in file ./data/magicvariants.json (evaluates to "tables.html#%e9%ad%94%e6%b3%95%e7%89%a9%e5%93%81%e6%a0%b9%e6%8d%ae%e7%a8%80%e6%9c%89%e5%ba%a6%e7%9a%84%e5%ae%9a%e4%bb%b7%3b%20%e9%ad%94%e6%b3%95%e7%89%a9%e5%93%81%e7%a8%80%e6%9c%89%e5%ba%a6%e4%b8%8e%e4%bb%b7%e6%a0%bc_xdmg")
-Missing link: {@table 魔法物品根据稀有度的定价; 魔法物品稀有度与价格|XDMG|20,000 GP} in file ./data/magicvariants.json (evaluates to "tables.html#%e9%ad%94%e6%b3%95%e7%89%a9%e5%93%81%e6%a0%b9%e6%8d%ae%e7%a8%80%e6%9c%89%e5%ba%a6%e7%9a%84%e5%ae%9a%e4%bb%b7%3b%20%e9%ad%94%e6%b3%95%e7%89%a9%e5%93%81%e7%a8%80%e6%9c%89%e5%ba%a6%e4%b8%8e%e4%bb%b7%e6%a0%bc_xdmg")
+Missing link: {@card 利爪|千象无常牌|LLK} in file ./data/decks.json (evaluates to "card#%e5%88%a9%e7%88%aa_%e5%8d%83%e8%b1%a1%e6%97%a0%e5%b8%b8%e7%89%8c_llk")
+Missing link: {@card 头骨|千象无常牌|LLK} in file ./data/decks.json (evaluates to "card#%e5%a4%b4%e9%aa%a8_%e5%8d%83%e8%b1%a1%e6%97%a0%e5%b8%b8%e7%89%8c_llk")
+Missing link: {@card 利爪|千象无常牌|LLK} in file ./data/items.json (evaluates to "card#%e5%88%a9%e7%88%aa_%e5%8d%83%e8%b1%a1%e6%97%a0%e5%b8%b8%e7%89%8c_llk")
+Missing link: {@card 头骨|千象无常牌|LLK} in file ./data/items.json (evaluates to "card#%e5%a4%b4%e9%aa%a8_%e5%8d%83%e8%b1%a1%e6%97%a0%e5%b8%b8%e7%89%8c_llk")
+Missing link: {@creature 植物精魄|AU} in file ./data/spells/spells-au.json (evaluates to "bestiary.html#%e6%a4%8d%e7%89%a9%e7%b2%be%e9%ad%84_au")
 
 Error messages for BraceCheck:
 
-Mismatched braces in ./data/adventure/adventure-idrotf.json: "讲台上的书是{@item 苍白法典|IDRotF}（见{@adventure 附录D|IDRotF|22}）。没有守卫或生物在看守它。如果她还在队伍中，{@creature 瓦琳·哈贝尔|IDRotF}渴望得到这本书，哪怕只是为了在她的法术书中加入{@spell 冰冷一指|IDRotF}法术（见{@adventure 附录D|IDRotF|22|{@spell 冰冷一指|IDRotF}|IDRotF}}）。如果它存在于宿主的身体里，{@creature 纳斯·兰托米尔的幽魂|IDRotF}会在宿主拿起或抓住这本书时得到安息。"
-Mismatched braces in ./data/adventure/adventure-idrotf.json: "魔卫是由法师法术（详见{@spell 创造魔卫|IDRotF}法术，位于{@adventure 附录D|IDRotF|22|{@spell 创造魔卫|IDRotF}|IDRotF}}）或其他奥术手段创造的魔法类人存在。"
 Mismatched braces in ./data/adventure/adventure-oow.json: "传送门的当前目的地在"传送门"表格中注明。您可以选择您喜欢的遭遇，或者掷骰子查看角色们最终到达何处，对于已经访问过的地点需要重新掷骰。对于前三个目的地，掷一个{@dice d6}以防止角色们到达{@i 独行侠}。对于后续的目的地，掷一个{@dice d8}。或者，您可以在角色们从其他三个地点返回后，随时允许他们到达总部飞船（见下面的"{@adventure 在{@i 独行者号}上|OoW|4|登上独行侠号}"）。|OoW|4|On Board The Maverick}" below) any time after they've returned from three other destinations."
-Mismatched braces in ./data/adventure/adventure-sdw.json: "承载着克劳吉利亚玛塔宝藏的高台高20英尺。高台边缘的南北两侧各自矗立着两座雕像（见下方的"{@adventure 雕像|SDW|3|雕像. 此区域的四座雕像描绘了以下形象（见"{@adventure 巢穴特征|SDW|3|巢穴特征}"侧栏）：|SDW|3|Lair Features}" sidebar):}"）。成功通过 {@dc 12} 智力（{@skill 调查}）检定的角色会注意到在两对雕像之间的高台地面上有三个直径5英尺的浅凹痕。{@spell 侦测魔法} 法术揭示这些凹痕散发出防护魔法的灵光。"
-Mismatched braces in ./data/adventure/adventure-sdw.json: "如果多芙·鹰手（位于 {@area 区域C8|070|x}）、风暴·银手（位于 {@area 区域C8|070|x}）和莱拉·银手（位于 {@area 区域C4|06b|x}）的雕像被放置在她们的姐妹雕像旁边的凹槽中（见下方 "{@adventure 雕像|SDW|3|雕像. 此区域中的四座雕像描绘了以下人物（见 "{@adventure 巢穴特征|SDW|3|巢穴特征}" 侧边栏）：|SDW|3|Lair Features}" sidebar):}"），墙壁将被摧毁。如果高原上的任何一座雕像被移走，墙壁会重新形成。如果将这三座雕像以外的任何雕像放入凹槽中，该雕像将以猛烈力量爆炸。雕像周围 10 英尺范围内的每个生物必须进行一次 {@dc 15} 敏捷豁免，豁免失败则受到 33（{@dice 6d10}）点钝击伤害，豁免成功则伤害减半。"
 
-Error messages for ScaleDiceCheck:
+Error messages for AdventureBookTagCheck:
 
-Unknown mode "undefined".
-Unknown mode "undefined".
-Unknown mode "undefined".
-Unknown mode "undefined".
-Unknown mode "undefined".
-Unknown mode "undefined".
-Unknown mode "undefined".
-Unknown mode "undefined".
-Unknown mode "undefined".
-Unknown mode "undefined".
-Unknown mode "undefined".
-Unknown mode "undefined".
-Unknown mode "undefined".
-Unknown mode "undefined".
-Unknown mode "undefined".
-Unknown mode "undefined".
-Unknown mode "undefined".
-Unknown mode "undefined".
-Unknown mode "undefined".
-Unknown mode "undefined".
-Unknown mode "undefined".
-Unknown mode "undefined".
-Unknown mode "undefined".
-Unknown mode "undefined".
-Unknown mode "undefined".
-Unknown mode "undefined".
-Unknown mode "undefined".
-Unknown mode "undefined".
-Unknown mode "undefined".
-Unknown mode "undefined".
-Unknown mode "undefined".
-Unknown mode "undefined".
-Unknown mode "extra amount".
+Missing link: book header UID "不可见的攻击者与目标|PHB|9|不可见的敌人与目标" in file ./data/actions.json section name "不可见的敌人与目标" was not found in chapter "9"
+Missing link: book header UID "仲夏王庭|XDMG|5|夏之王庭" in file ./data/book/book-xdmg.json section name "夏之王庭" was not found in chapter "5"
+Missing link: book header UID "第六章|XDMG|5|夏之王庭" in file ./data/book/book-xdmg.json section name "夏之王庭" was not found in chapter "5"
+Missing link: book header UID "温戈尔|XDMG|8|温戈尔" in file ./data/items.json section name "温戈尔" was not found in chapter "8"
 
-Error messages for HasFluffCheck:
+Error messages for EntityFileHandlerAdventureBook:
 
-subclass hash "%e9%ad%94%e5%a5%91%e5%b8%88_phb,state:sub_%e5%a4%a9%e7%95%8c_xge=b1"  not found in corresponding "subclassFluff" fluff!
-subclass hash "%e9%ad%94%e5%a5%91%e5%b8%88_phb,state:sub_%e5%92%92%e5%89%91_xge=b1"  not found in corresponding "subclassFluff" fluff!
-subclass hash "%e9%ad%94%e5%a5%91%e5%b8%88_phb,state:sub_%e6%b7%b1%e6%b5%b7%e6%84%8f%e5%bf%97_tce=b1" not found in corresponding "subclassFluff" fluff!
-subclass hash "%e9%ad%94%e5%a5%91%e5%b8%88_phb,state:sub_%e5%b7%a8%e7%81%b5_tce=b1"  not found in corresponding "subclassFluff" fluff!
-subclass hash "%e9%ad%94%e5%a5%91%e5%b8%88_phb,state:sub_%e4%ba%a1%e7%81%b5_vrgr=b1" not found in corresponding "subclassFluff" fluff!
-subclass hash "%e9%ad%94%e5%a5%91%e5%b8%88_xphb,state:sub_%e8%87%b3%e9%ab%98%e5%a6%96%e7%b2%be_xphb=b1" not found in corresponding "subclassFluff" fluff!
-subclass hash "%e9%ad%94%e5%a5%91%e5%b8%88_xphb,state:sub_%e5%a4%a9%e7%95%8c_xphb=b1" not found in corresponding "subclassFluff" fluff!
-subclass hash "%e9%ad%94%e5%a5%91%e5%b8%88_xphb,state:sub_%e9%82%aa%e9%ad%94_xphb=b1" not found in corresponding "subclassFluff" fluff!
-subclass hash "%e9%ad%94%e5%a5%91%e5%b8%88_xphb,state:sub_%e6%97%a7%e6%97%a5%e6%94%af%e9%85%8d%e8%80%85_xphb=b1" not found in corresponding "subclassFluff" fluff!
-subclass hash "%e9%ad%94%e5%a5%91%e5%b8%88_xphb,state:sub_%e4%ba%a1%e7%81%b5_rhw=b1" not found in corresponding "subclassFluff" fluff!
+Invalid statblock header link: XPHB chapter 4 header "半身人" (evaluates to "stathash-%e5%8d%8a%e8%ba%ab%e4%ba%ba_xphb") matched 0 statblocks in file ./data/books.json (expected exactly 1)
+Invalid statblock header link: AU chapter 1 header "奥秘领域（牧师）" (evaluates to "stathash-%e7%89%a7%e5%b8%88_xphb,state:sub_%e5%a5%a5%e7%a7%98%e9%a2%86%e5%9f%9f_au=b1") matched 0 statblocks in file ./data/books.json (expected exactly 1)
+Invalid statblock header link: AU chapter 1 header "契灵宗主（魔契师）" (evaluates to "stathash-%e9%ad%94%e5%a5%91%e5%b8%88_xphb,state:sub_%e5%a5%91%e7%81%b5%e5%ae%97%e4%b8%bb_au=b1") matched 0 statblocks in file ./data/books.json (expected exactly 1)
+---
 
 Error messages for EntityFileHandlerBestiary:
 
@@ -166,12 +78,11 @@ Missing link: 地狱火战锤|BGDIA in file ./data/bestiary/bestiary-bgdia.json 
 Error messages for EntityFileHandlerDeck:
 
 Missing link: 喷火|万象无常牌|XDMG in file ./data/decks.json (evaluates to "card#%e5%96%b7%e7%81%ab_%e4%b8%87%e8%b1%a1%e6%97%a0%e5%b8%b8%e7%89%8c_xdmg") in "cards"
-Spread "魔域天机|CoS" in file ./data/decks.json had an outcome for card "战士|塔罗卡牌组|cos", which is not in the deck!
-Spread "魔域天机|CoS" in file ./data/decks.json position "施特拉德典籍" had no outcome for card "武者|塔罗卡牌组|cos"!
-Spread "魔域天机|CoS" in file ./data/decks.json position "渡鸦圣徽" had no outcome for card "武者|塔罗卡牌组|cos"!
-Spread "魔域天机|CoS" in file ./data/decks.json position "日耀之剑" had no outcome for card "武者|塔罗卡牌组|cos"!
+Spread "魔域天机|CoS" in file ./data/decks.json position "施特拉德的敌人" required suit "无", which the deck does not have!
+Spread "魔域天机|CoS" in file ./data/decks.json position "施特拉德" required suit "无", which the deck does not have!
+Spread "魔域天机|CoS" in file ./data/decks.json wanted 2 cards of suits ["无"], but the deck has only 0!
 ---
 
 
-	Run duration: 1:12.321 (m:ss.mmm)
+	Run duration: 1:26.871 (m:ss.mmm)
 Tests failed!
