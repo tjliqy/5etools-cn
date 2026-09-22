@@ -3,6 +3,17 @@
 
 @layer vetools {
 	.pg-terms__ {
+		&banner {
+			border: 1px solid #d7b45a;
+			border-radius: 5px;
+			padding: vars.$spacer * 1.5 vars.$spacer * 2;
+			background: #fff3cd;
+			color: #664d03;
+			font-size: 16px;
+			font-weight: 600;
+			text-align: center;
+		}
+
 		&layout {
 			gap: vars.$spacer * 2;
 			padding: vars.$spacer * 2 0;
@@ -19,6 +30,29 @@
 			display: grid;
 			grid-template-columns: repeat(4, minmax(140px, 1fr));
 			gap: vars.$spacer;
+		}
+
+		&filter-details {
+			text-align: center;
+		}
+
+		&filter-toggle {
+			display: inline-block;
+			list-style: none;
+			user-select: none;
+		}
+
+		&filter-toggle::-webkit-details-marker {
+			display: none;
+		}
+
+		&filter-details[open] &filter-toggle {
+			margin-bottom: vars.$spacer;
+		}
+
+		&filter-details[open] &filters,
+		&filter-details[open] > label {
+			text-align: left;
 		}
 
 		&label {
@@ -85,6 +119,12 @@
 	}
 
 	.ve-night-mode .pg-terms__ {
+		&banner {
+			border-color: #8a6d2f;
+			background: #493c20;
+			color: #ffe6a6;
+		}
+
 		&panel {
 			border-color: vars-night.$rgb-border-grey--night;
 			background: vars-night.$rgb-bg--night;

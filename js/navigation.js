@@ -132,6 +132,7 @@ class NavBar {
 
 		this._addElement_dropdown({category: NavBar._CAT_UTILITIES});
 		this._addElement_li({keyPath: [NavBar._CAT_UTILITIES], page: "search.html", aText: "搜索"});
+		this._addElement_li({keyPath: [NavBar._CAT_UTILITIES], page: "terms.html", aText: "术语库"});
 		this._addElement_divider({keyPath: [NavBar._CAT_UTILITIES]});
 		this._addElement_li({keyPath: [NavBar._CAT_UTILITIES], page: "blocklist.html", aText: "内容黑名单"});
 		this._addElement_li({keyPath: [NavBar._CAT_UTILITIES], page: "manageprerelease.html", aText: I18nUtil.get("page.manageprelease.manage_prerelease_content")});
