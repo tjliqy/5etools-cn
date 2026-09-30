@@ -30,7 +30,27 @@ def stable_token(value) -> str:
     return text
 
 
-MACHINE_LEAF = re.compile(r"/(alId|colStyles(?:\[\d+\])?)$")
+MACHINE_LEAF = re.compile(r"/(alId|colStyles(?:\[\d+\])?|summonedByClass|style|type/tags(?:\[\d+\])?|spellcasting(?:\[\d+\])?/ability)$")
+
+# Tag-segment sub-jobs address individual pipe fields inside a containing string, e.g.
+# uid "...entries[0].condition[0].1" is pipe field 1 of the second {@condition ...} tag.
+TAG_FIELD_UID = re.compile(r"\.(?P<tag>[A-Za-z][A-Za-z0-9_-]*)\[\d+\]\.(?P<field>\d+)$")
+# Variable-style tags whose pipe field 0 is a machine variable name (VDC/Vdist/Vdam) or number.
+VARIABLE_TAGS = {"footnote", "damage", "dice", "scaledice", "scaledamage", "hit", "dc"}
+# Machine tokens carry no whitespace: source codes (HFN2025, MD-BNR), URLs, variable
+# scale labels (Vdam x 2), numeric ranges (12/14/15). Prose always contains spaces.
+MACHINE_TOKEN = re.compile(r"^[A-Za-z0-9][A-Za-z0-9_./-]*(?: x \d+)?$")
+
+
+def is_machine_tag_field(job) -> bool:
+    """True for tag-segment sub-jobs addressing a routing/machine pipe field."""
+    match = TAG_FIELD_UID.search(job.uid or "")
+    if not match:
+        return False
+    field = int(match.group("field"))
+    if field == 0 and match.group("tag") not in VARIABLE_TAGS:
+        return False
+    return bool(MACHINE_TOKEN.fullmatch(job.en_str or ""))
 
 
 def path_segments(key_path: str):
@@ -54,12 +74,37 @@ def resolve_job_value(root, key_path: str):
         if selector is None:
             continue
         if re.fullmatch(r"\d+\](?:\[\d+)*", selector):
-            # analyser emits nested row-cell selectors as e.g. "rows[0][0]" -> selector "0][0"
+            # analyser emits nested row-cell selectors as e.g. "rows[0][0]" -> selector "0][0]"
             for index in (int(part) for part in selector.replace("]", "").split("[")):
                 if not isinstance(current, list) or index >= len(current):
                     return None, None
                 current = current[index]
                 resolved += f"/{index}"
+            continue
+        indexed_named = re.fullmatch(r"(\d+)\]\[(name=[^\]]+)$", selector)
+        if indexed_named:
+            # analyser emits index-anchored row-cell selectors as e.g. "rows[0][name=X]" ->
+            # selector "0][name=X]": index the row, then select the named cell within it.
+            index = int(indexed_named.group(1))
+            if not isinstance(current, list) or index >= len(current):
+                return None, None
+            row = current[index]
+            if not isinstance(row, list):
+                return None, None
+            expected = dict(part.split("=", 1) for part in indexed_named.group(2).split(";") if "=" in part)
+            matches = []
+            for cell_index, cell in enumerate(row):
+                if not isinstance(cell, dict):
+                    continue
+                if all(
+                    value in {stable_token(actual) for actual in ([cell.get(field)] + ([cell.get("ENG_name")] if field == "name" else []))}
+                    for field, value in expected.items()
+                ):
+                    matches.append(cell_index)
+            if len(matches) != 1:
+                return None, None
+            current = row[matches[0]]
+            resolved += f"/{index}/{matches[0]}"
             continue
         if not isinstance(current, list):
             return None, None
@@ -155,9 +200,15 @@ def main() -> int:
         if args.target and isinstance(job.en_str, str):
             if job.en_str in source_codes:
                 continue
+            plain_path, plain_value = resolve_job_value(target_data, job.key_path)
             target_path, target_value = resolve_job_target(target_data, job.key_path)
             if target_path is None:
                 unresolved_paths.append(item)
+                continue
+            # A tag-segment token job only folds to its parent string; a plain string
+            # job resolves directly. Only token jobs may be machine-excluded.
+            is_token_job = plain_path is None or not isinstance(plain_value, str)
+            if is_token_job and is_machine_tag_field(job):
                 continue
             untranslated = job.en_str == target_value or (job.need_translate and isinstance(target_value, str) and job.en_str in target_value)
             if untranslated and job.need_translate and not MACHINE_LEAF.search(job.key_path):
