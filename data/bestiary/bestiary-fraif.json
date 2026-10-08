@@ -322,7 +322,7 @@
 				},
 				{
 					"ENG_name": "Unearth Ruins",
-					"name": "功亏一篑",
+					"name": "遗迹",
 					"entries": [
 						"这条龙魔法般地升起破碎的古代遗迹，形成一个以它120尺内能看见的一点为中心，半径20尺、高60尺的{@variantrule 柱状 [效应区域]|XPHB|柱状}。{@variantrule 柱状 [效应区域]|XPHB|柱状}内的地面变为{@variantrule 困难地形|XPHB}。每个在{@variantrule 柱状 [效应区域]|XPHB|柱状}出现时位于其中的生物受到以下效果。{@actSave str} {@dc 18}。{@actSaveFail} 5（{@damage 2d4}）钝击伤害，且目标获得{@condition 倒地|XPHB}状态。{@actSaveSuccessOrFail} 这条龙在它的下个回合开始前不能再次使用此动作。"
 					]
@@ -698,7 +698,7 @@
 				},
 				{
 					"ENG_name": "Unearth Ruins",
-					"name": "功亏一篑",
+					"name": "遗迹",
 					"entries": [
 						"这条龙魔法般地在其能看见的120尺内一点升起破碎的古代遗迹，形成一个半径20尺、60尺高的{@variantrule 柱状 [效应区域]|XPHB|柱状}。{@variantrule 柱状 [效应区域]|XPHB|柱状}内的地面变为{@variantrule 困难地形|XPHB}。当{@variantrule 柱状 [效应区域]|XPHB|柱状}出现时，其中的每个生物都会受到以下效果。{@actSave str} {@dc 22}。{@actSaveFail} 13（{@damage 3d8}）钝击伤害，且目标获得{@condition 倒地|XPHB}状态。{@actSaveSuccessOrFail} 这条龙在其下一回合开始前无法再次使用此动作。"
 					]

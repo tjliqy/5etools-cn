@@ -155,8 +155,8 @@ export class ConverterUi extends BaseComponent {
 
 							return {
 								type: "statblockInline",
-								dataType: this.activeConverter.prop,
-								data: ent,
+								statblockType: this.activeConverter.prop,
+								statblockData: ent,
 							};
 						});
 

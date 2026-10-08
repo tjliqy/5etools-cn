@@ -3321,13 +3321,13 @@
 						"目标无法执行附加动作或反应动作，且必须在其每回合开始时掷1d10来决定该回合的行为，具体参照下表。",
 						{
 							"type": "table",
-							"colStyles": [
-								"col-2 text-center",
-								"col-10"
-							],
 							"colLabels": [
 								"1d10",
 								"轮次的行为"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
 							],
 							"rows": [
 								[
@@ -7804,7 +7804,7 @@
 					"statuses": [
 						"poisoned"
 					],
-					"description": "目标中毒一分钟。"
+					"description": "目标陷入&Reference[Poisoned apply=false]状态一分钟。"
 				}
 			],
 			"migrationVersion": 3

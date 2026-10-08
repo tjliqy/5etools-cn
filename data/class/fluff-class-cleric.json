@@ -9,6 +9,8 @@
 					"ENG_name": "Cleric",
 					"name": "牧师",
 					"type": "section",
+					"source": "PHB",
+					"page": 56,
 					"entries": [
 						"双臂和眼睛向太阳举起，口中念着祈祷，一个精灵开始散发出内在的光芒，这光芒溢出来治愈他疲惫的战友们。",
 						"吟唱着荣耀之歌，一个矮人挥舞着他的斧头，以宽阔的弧线劈砍着排列在他面前的兽人队伍，每击败一个敌人，他都向神高声赞美。",
@@ -51,12 +53,12 @@
 								}
 							]
 						}
-					],
-					"source": "PHB",
-					"page": 56
+					]
 				},
 				{
 					"type": "section",
+					"source": "XGE",
+					"page": 17,
 					"entries": [
 						{
 							"type": "quote",
@@ -316,9 +318,7 @@
 								}
 							]
 						}
-					],
-					"source": "XGE",
-					"page": 17
+					]
 				}
 			],
 			"images": [
@@ -354,14 +354,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "一位拥有神力的奇迹祭司",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Cleric.webp"
 					},
-					"credit": "Michael Broussard",
 					"width": 1700,
-					"height": 2177
+					"height": 2177,
+					"title": "一位拥有神力的奇迹祭司",
+					"credit": "Michael Broussard"
 				},
 				{
 					"type": "image",
@@ -369,10 +369,10 @@
 						"type": "internal",
 						"path": "classes/XPHB/051-03-027.cleric-praying.webp"
 					},
-					"title": "一位牧师为当日的法术虔诚祈祷",
-					"credit": "Irina Nordsol",
 					"width": 1855,
-					"height": 1200
+					"height": 1200,
+					"title": "一位牧师为当日的法术虔诚祈祷",
+					"credit": "Irina Nordsol"
 				}
 			]
 		}
@@ -634,14 +634,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "生命领域子职",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Life Cleric.webp"
 					},
-					"credit": "Tomas Duchek",
 					"width": 850,
-					"height": 1838
+					"height": 1838,
+					"title": "生命领域子职",
+					"credit": "Tomas Duchek"
 				}
 			]
 		},
@@ -655,14 +655,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "光明领域子职",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Light Cleric.webp"
 					},
-					"credit": "Jodie Muir",
 					"width": 850,
-					"height": 2410
+					"height": 2410,
+					"title": "光明领域子职",
+					"credit": "Jodie Muir"
 				}
 			]
 		},
@@ -676,14 +676,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "诡术领域子职",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Trickery Cleric.webp"
 					},
-					"credit": "Polar Engine",
 					"width": 850,
-					"height": 2045
+					"height": 2045,
+					"title": "诡术领域子职",
+					"credit": "Polar Engine"
 				}
 			]
 		},
@@ -697,14 +697,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "战争领域子职",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/War Cleric.webp"
 					},
-					"credit": "Polar Engine",
 					"width": 905,
-					"height": 1440
+					"height": 1440,
+					"title": "战争领域子职",
+					"credit": "Polar Engine"
 				}
 			]
 		},
@@ -722,9 +722,9 @@
 						"type": "internal",
 						"path": "classes/FRHoF/Knowledge Cleric.webp"
 					},
-					"credit": "Marcela Medeiros",
 					"width": 850,
-					"height": 2062
+					"height": 2062,
+					"credit": "Marcela Medeiros"
 				}
 			]
 		},
@@ -742,10 +742,10 @@
 						"type": "internal",
 						"path": "classes/RHW/Grave Domain Cleric.webp"
 					},
-					"title": "坟墓领域牧师",
-					"credit": "Ignatius Budi",
 					"width": 850,
-					"height": 1393
+					"height": 1393,
+					"title": "坟墓领域牧师",
+					"credit": "Ignatius Budi"
 				}
 			]
 		},
@@ -772,10 +772,10 @@
 						"type": "internal",
 						"path": "classes/AU/Arcana Domain Cleric.webp"
 					},
-					"title": "奥秘领域牧师",
-					"credit": "Billy Christian",
 					"width": 850,
-					"height": 1717
+					"height": 1717,
+					"title": "奥秘领域牧师",
+					"credit": "Billy Christian"
 				}
 			]
 		}

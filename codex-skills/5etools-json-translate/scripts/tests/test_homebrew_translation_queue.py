@@ -1,4 +1,5 @@
 import json
+import importlib.util
 import sqlite3
 import subprocess
 import tempfile
@@ -7,6 +8,9 @@ from pathlib import Path
 
 
 SCRIPT = Path(__file__).resolve().parents[1] / "homebrew_translation_queue.py"
+SPEC = importlib.util.spec_from_file_location("homebrew_translation_queue", SCRIPT)
+QUEUE = importlib.util.module_from_spec(SPEC)
+SPEC.loader.exec_module(QUEUE)
 
 
 class QueueIntegrationTests(unittest.TestCase):
@@ -212,6 +216,38 @@ class QueueIntegrationTests(unittest.TestCase):
 
         self.assertTrue(active.exists())
         self.assertTrue(manual.exists())
+
+    def test_build_target_change_is_absorbed_into_candidate_commit(self):
+        target = self.repo / "book" / "A; 一.json"
+        generated = self.repo / "_generated" / "index.json"
+        target.parent.mkdir(parents=True)
+        generated.parent.mkdir(parents=True)
+        target.write_text('{"value":"before"}\n', encoding="utf-8")
+        generated.write_text('{}\n', encoding="utf-8")
+        self._git("add", "book/A; 一.json", "_generated/index.json")
+        self._git("commit", "-m", "candidate")
+
+        target.write_text('{"value":"normalized"}\n', encoding="utf-8")
+        generated.write_text('{"changed":true}\n', encoding="utf-8")
+
+        self.assertTrue(QUEUE.absorb_build_target_change(self.repo, "book/A; 一.json"))
+        self.assertEqual(self._git("show", "HEAD:book/A; 一.json"), '{"value":"normalized"}')
+        self.assertEqual(QUEUE.non_generated_change_paths(self.repo), [])
+        self.assertIn("_generated/index.json", self._git("status", "--short"))
+
+    def test_build_change_outside_target_is_rejected(self):
+        target = self.repo / "book" / "A; 一.json"
+        other = self.repo / "book" / "B; 二.json"
+        target.parent.mkdir(parents=True)
+        target.write_text('{}\n', encoding="utf-8")
+        other.write_text('{}\n', encoding="utf-8")
+        self._git("add", "book/A; 一.json", "book/B; 二.json")
+        self._git("commit", "-m", "candidate")
+        target.write_text('{"changed":true}\n', encoding="utf-8")
+        other.write_text('{"changed":true}\n', encoding="utf-8")
+
+        with self.assertRaisesRegex(RuntimeError, "outside the selected target"):
+            QUEUE.absorb_build_target_change(self.repo, "book/A; 一.json")
 
 
 if __name__ == "__main__":

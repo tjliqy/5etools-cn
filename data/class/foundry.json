@@ -9832,7 +9832,7 @@
 					"type": "utility",
 					"activation": {
 						"type": "special",
-						"condition": "每当你执行攻击动作时",
+						"condition": "每当你采取攻击行动时",
 						"value": 1
 					}
 				}
@@ -23200,7 +23200,7 @@
 					"type": "save",
 					"activation": {
 						"type": "",
-						"condition": "当你造成偷袭伤害时"
+						"condition": "当你使用诡诈打击的毒素选项时"
 					},
 					"target": {
 						"affects": {
@@ -25277,7 +25277,7 @@
 		},
 		{
 			"ENG_name": "Semblance of Life",
-			"name": "拟态生命",
+			"name": "生命的假象",
 			"source": "AU",
 			"className": "魔契师",
 			"classSource": "XPHB",

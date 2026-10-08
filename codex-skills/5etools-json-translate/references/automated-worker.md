@@ -84,4 +84,6 @@ For scheduler control flow, `integrate-next` exits `0` after a merge, `3` when n
 
 After an integration succeeds (including recovery of an integration already present in shared history), `integrate-next` automatically removes orphaned `auto-translate/*` and `auto-integrate/*` worktrees under the configured worker root. It preserves every worktree referenced by an active queue task, chunk-parent worktrees, worktrees outside that root, and non-automation branches. Cleanup results are returned in `worktree_cleanup`; cleanup failures are reported without undoing the successful integration.
 
+If `npm run build` normalizes only the selected target JSON during serial integration, the coordinator amends that normalization into the candidate commit and then subjects the resulting file to the structure, schema, and full repository-test gates. Any build change to another non-generated file remains a hard integration failure. The merge result reports whether normalization was absorbed in `build_target_absorbed`.
+
 By default `sync` routes source files larger than 250,000 bytes to `needs_chunking`, so ordinary workers cannot accidentally lease them. The scheduler should create their parent plans with `homebrew_translation_chunks.py plan`. Override `--chunk-threshold-bytes` only as an explicit deployment choice; use `0` to disable automatic routing.

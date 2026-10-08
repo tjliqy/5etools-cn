@@ -476,6 +476,7 @@
 			"ENG_name": "Circus Tent",
 			"name": "马戏帐篷",
 			"source": "AU",
+			"page": 106,
 			"facilityType": "special",
 			"level": 9,
 			"prerequisite": [
@@ -893,6 +894,7 @@
 			"ENG_name": "Entertainment Salon",
 			"name": "娱乐沙龙",
 			"source": "AU",
+			"page": 84,
 			"facilityType": "special",
 			"level": 5,
 			"prerequisite": [
@@ -1079,6 +1081,7 @@
 			"ENG_name": "Geothermal Vent",
 			"name": "地热喷口",
 			"source": "AU",
+			"page": 95,
 			"facilityType": "special",
 			"level": 5,
 			"prerequisite": [
@@ -1109,6 +1112,7 @@
 						"当你对此设施下达{@book 增强|XDMG|7|增强}指令时，在接下来的7天里，该设施的雇员会传授一系列冥想技巧，让角色得以减轻其受到的火焰伤害。在此期间的每一天都在此处训练至少8小时的任何角色，会在训练期结束时获得以下好处：",
 						{
 							"type": "list",
+							"style": "list-hang-notitle",
 							"items": [
 								{
 									"ENG_name": "Heat Tolerant",
@@ -1116,8 +1120,7 @@
 									"type": "item",
 									"entry": "当你受到火焰伤害时，你可以进行一次{@variantrule 反应|XPHB}，使该伤害减少{@dice 1d4}加你的等级。此好处持续7天。"
 								}
-							],
-							"style": "list-hang-notitle"
+							]
 						}
 					]
 				},
@@ -1328,6 +1331,7 @@
 			"ENG_name": "Heist Planning Chamber",
 			"name": "劫案规划室",
 			"source": "AU",
+			"page": 102,
 			"facilityType": "special",
 			"level": 9,
 			"prerequisite": [
@@ -1368,6 +1372,7 @@
 						"一名使用该模型为盗窃或潜入进行至少8小时准备的角色从以下角色中选择一项。只要该角色处于模型所描绘建筑1英里范围内，该角色的好处便持续生效，为期7天或直到你再次进行准备为止：",
 						{
 							"type": "list",
+							"style": "list-hang-notitle",
 							"items": [
 								{
 									"ENG_name": "Enforcer:",
@@ -1405,8 +1410,7 @@
 									"type": "item",
 									"entry": "敏捷（{@skill 巧手|XPHB}）检定具有{@variantrule 优势|XPHB}"
 								}
-							],
-							"style": "list-hang-notitle"
+							]
 						}
 					]
 				},
@@ -1684,6 +1688,7 @@
 			"ENG_name": "Lighthouse",
 			"name": "灯塔",
 			"source": "AU",
+			"page": 110,
 			"facilityType": "special",
 			"level": 9,
 			"prerequisite": [
@@ -1878,7 +1883,7 @@
 				"增强"
 			],
 			"entries": [
-				"黎兰达舵台允许建造在元素飞艇或元素帆船内的机动据点旅行。该设施的雇员是一名{@book 黎兰达家族的龙纹继承人|EFA|5|黎兰达家族}。在元素飞艇上，飞艇的{@book 舵台|EFA|7|舵台}乘员站点是该设施的一部分（见{@book 第七章|EFA|7|船员及操作站}）。",
+								"黎兰达舵台允许建造在元素飞艇或元素帆船内的机动据点旅行。该设施的雇员是一名{@book 黎兰达家族的龙纹继承人|EFA|5|黎兰达家族}。在元素飞艇上，飞艇的{@book 舵台|EFA|7|海姆}乘员站点是该设施的一部分（见{@book 第七章|EFA|7|船员及操作站}）。",
 				{
 					"ENG_name": "Empower: Travel",
 					"name": "增强：旅行",
@@ -2174,6 +2179,7 @@
 			"ENG_name": "Morgue",
 			"name": "太平间",
 			"source": "AU",
+			"page": 91,
 			"facilityType": "special",
 			"level": 5,
 			"prerequisite": [
@@ -2266,14 +2272,14 @@
 						"你的博物馆包含一件宝藏，当你花费7天研究它并在你的据点完成一次长休时，它会给予你一个魔法{@filter 魅惑|rewards|type=魅惑}（参见{@book 城主指南|XDMG}中的\"{@book 超自然赠礼|XDMG|2|超自然赠礼}\"）。该护咒持续7天或直到你使用它。当你仍拥有一个护咒时，你无法从该设施获得另一个护咒。护咒的效果取决于你博物馆中宝藏的起源。你可以选择以下选项之一（你的DM可能会根据你过去的探险提供更多选项或限制现有选项）：",
 						{
 							"type": "list",
+							"columns": 3,
 							"items": [
 								"{@reward 阿贡尼森护咒|EFA}",
 								"{@reward 阿室多迦罗护咒|EFA}",
 								"{@reward 达坎护咒|EFA}",
 								"{@reward 凯伯护咒|EFA}",
 								"{@reward 希恩德瑞克护咒|EFA}"
-							],
-							"columns": 3
+							]
 						}
 					]
 				},
@@ -2463,6 +2469,7 @@
 			"ENG_name": "Planar Gateway",
 			"name": "位面门户",
 			"source": "AU",
+			"page": 98,
 			"facilityType": "special",
 			"level": 17,
 			"prerequisite": [
@@ -3109,6 +3116,7 @@
 			"ENG_name": "Soup Kitchen",
 			"name": "施粥厨房",
 			"source": "AU",
+			"page": 113,
 			"facilityType": "special",
 			"level": 5,
 			"prerequisite": [
@@ -3177,11 +3185,11 @@
 						"在你的精魄宝库中进行一次长休后，你将获得以下魔法护咒之一：",
 						{
 							"type": "list",
+							"columns": 3,
 							"items": [
 								"{@reward 驱魔魅咒|RHW}",
 								"{@reward 恶咒魅惑|RHW}"
-							],
-							"columns": 3
+							]
 						},
 						"魅惑持续7天或直到你使用它。智力、感知或魅力是魅惑法术的施法属性（每次获得此魅惑时选择）。"
 					]
@@ -3485,6 +3493,7 @@
 			"ENG_name": "Transmutation Vat",
 			"name": "变化缸",
 			"source": "AU",
+			"page": 88,
 			"facilityType": "special",
 			"level": 5,
 			"prerequisite": [

@@ -1,1759 +1,15 @@
 {
-	"data": [
+	"bookData": [
 		{
-			"ENG_name": "Activity Pages",
-			"name": "活动页面",
-			"type": "section",
-			"page": 1,
-			"entries": [
+			"id": "AWM",
+			"source": "AWM",
+			"data": [
 				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/AWM/00033.webp"
-					},
-					"title": "与穆克一起冒险",
-					"credit": "Emi Tanji",
-					"expectsLightBackground": true,
-					"altText": "与穆克一起冒险",
-					"width": 2175,
-					"height": 2100
-				},
-				{
-					"type": "quote",
-					"style": "quote-pull",
-					"entries": [
-						"一本适合所有级别玩家的冒险活动书"
-					],
-					"skipMarks": true,
-					"skipItalics": true
-				},
-				{
-					"type": "entries",
-					"style": "text-center",
-					"entries": [
-						{
-							"type": "entries",
-							"entries": [
-								{
-									"ENG_name": "In Support of Extra Life",
-									"name": "支持Extra Life",
-									"type": "entries",
-									"page": 1,
-									"entries": [
-										"",
-										"创作与插画：Emi Tanji",
-										"冒险与设计天才 - 亚当·李与克里斯·林赛",
-										"特别感谢巴特·卡罗尔"
-									],
-									"id": "003"
-								}
-							],
-							"id": "002"
-						}
-					],
-					"id": "001"
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/AWM/00004.webp"
-					},
-					"title": "你好！我是（最勇敢的）地精穆克",
-					"credit": "Emi Tanji",
-					"expectsLightBackground": true,
-					"altText": "你好！我是（最勇敢的）地精穆克。乌黑的头发有点味道。但是好闻的味道！超级大的耳朵有超级好的听力。地精有黄色或橙色的皮肤。我的鼻子像小猫。凶猛的小猫。谁需要靴子？我需要潜行！等级：3。专长：超级潜行。擅长攀爬，而且我能和动物说话！",
-					"width": 2175,
-					"height": 2925
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/AWM/00005.webp"
-					},
-					"title": "{@b 你的}冒险者是什么样的？",
-					"credit": "Emi Tanji",
-					"expectsLightBackground": true,
-					"altText": "你的名字。你的冒险者长什么样？",
-					"width": 2175,
-					"height": 2925
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/AWM/00006.webp"
-					},
-					"title": "让我向你介绍我最好的朋友和伙伴，{@creature 松鸟|AWM}！",
-					"credit": "Emi Tanji",
-					"expectsLightBackground": true,
-					"altText": "让我向你介绍我最好的朋友和伙伴，鸟松鼠！部分是鸟，部分是松鼠，全都棒极了。鸟松鼠是由一位厉害的法师用魔法制造的！哦不。",
-					"width": 2175,
-					"height": 2925
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/AWM/00007.webp"
-					},
-					"title": "绘制你的魔法生物组合！",
-					"credit": "Emi Tanji",
-					"expectsLightBackground": true,
-					"altText": "画出你的魔法生物组合！猫头鹰 + 熊 = 枭熊。蜘蛛 + 青蛙 = 蜘蛛蛙。犀牛 + 鲨鱼 = 犀牛鲨。",
-					"width": 2175,
-					"height": 2925
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/AWM/00008.webp"
-					},
-					"title": "外面有一些疯狂的怪物。",
-					"credit": "Emi Tanji",
-					"expectsLightBackground": true,
-					"altText": "眼魔：这家伙有十一只眼睛！ 石盲怪：小心它的喙啄！ 灰 slaad：尝起来一点都不像沙拉！ 恶心！ 外面有些疯狂的怪物。 你最好跟着我们！",
-					"width": 2175,
-					"height": 2925
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/AWM/00009.webp"
-					},
-					"title": "如何绘制一个...",
-					"credit": "Emi Tanji",
-					"expectsLightBackground": true,
-					"altText": "如何画一个... 地精（我！）、呋噜、格龙蛙人。现在轮到你了！",
-					"width": 2175,
-					"height": 2925
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/AWM/00010.webp"
-					},
-					"title": "如果我们要去冒险，我们应该时刻做好准备！",
-					"credit": "Emi Tanji",
-					"expectsLightBackground": true,
-					"altText": "如果我们要去冒险，我们应该时刻做好准备！这是我的超酷盾牌。我自己做的。",
-					"width": 2175,
-					"height": 2925
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/AWM/00011.webp"
-					},
-					"title": "你的盾牌是什么样子的？",
-					"credit": "Emi Tanji",
-					"expectsLightBackground": true,
-					"altText": "你的盾牌看起来是什么样子的？这里有一些不同的形状可供选择。鸟松鼠已准备好行动！",
-					"width": 2175,
-					"height": 2925
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/AWM/00012.webp"
-					},
-					"title": "冒险时间到了！",
-					"credit": "Emi Tanji",
-					"expectsLightBackground": true,
-					"altText": "冒险时间到了！嘿！你可以拿走我的地图。我已经有了最好的宝藏。最闪亮的岩石。我的朋友史拉皮。雪山。小心巨人。宝藏？大水。愚蠢地精。地精镇。暗黑森林。",
-					"width": 2175,
-					"height": 2925
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/AWM/00013.webp"
-					},
-					"title": "创建你自己的地图！",
-					"credit": "Emi Tanji",
-					"expectsLightBackground": true,
-					"altText": "创建你自己的地图！",
-					"width": 2175,
-					"height": 2925
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/AWM/00014.webp"
-					},
-					"title": "什么东西在穆克的船下游动？",
-					"credit": "Emi Tanji",
-					"expectsLightBackground": true,
-					"altText": "什么东西在穆克的船下游动？",
-					"width": 2175,
-					"height": 2925
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/AWM/00015.webp"
-					},
-					"title": "穆克应该攀爬哪根藤蔓才能到达安全处？",
-					"credit": "Emi Tanji",
-					"expectsLightBackground": true,
-					"altText": "穆克应该攀爬哪根藤蔓才能到达安全处？沼喉怪。安全处。凌弱怪。",
-					"width": 2175,
-					"height": 2925
-				},
-				{
-					"type": "entries",
-					"page": 14,
-					"entries": [
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "book/AWM/00016.webp"
-							},
-							"title": "哇！穆克找到了一个{@item 魔术袋}",
-							"credit": "Emi Tanji",
-							"expectsLightBackground": true,
-							"altText": "哇！穆克找到了一个戏法袋。你从戏法袋里抽出了什么？",
-							"width": 2175,
-							"height": 2925
-						},
-						"这是一个魔法袋子，可以召唤一个毛茸茸的朋友来协助你的冒险！",
-						"掷{@dice 2d6|两个，6面骰子}并使用下面的表格查看会出现什么动物及其个性！",
-						{
-							"type": "list",
-							"style": "list-no-bullets",
-							"columns": 2,
-							"page": 14,
-							"items": [
-								{
-									"type": "table",
-									"page": 14,
-									"colLabels": [
-										"{@dice d6|🎲}",
-										"动物类型"
-									],
-									"colStyles": [
-										"col-2 text-center",
-										"col-10"
-									],
-									"rows": [
-										[
-											"1",
-											"{@creature 巨獾}"
-										],
-										[
-											"2",
-											"{@creature 老鼠}"
-										],
-										[
-											"3",
-											"{@creature 猫头鹰}"
-										],
-										[
-											"4",
-											"狗"
-										],
-										[
-											"5",
-											"微型山羊"
-										],
-										[
-											"6",
-											"刺猬"
-										]
-									]
-								},
-								{
-									"type": "table",
-									"page": 14,
-									"colLabels": [
-										"{@dice d6|🎲}",
-										"动物性格"
-									],
-									"colStyles": [
-										"col-2 text-center",
-										"col-10"
-									],
-									"rows": [
-										[
-											"1",
-											"瞌睡虫"
-										],
-										[
-											"2",
-											"狂怒而疯狂！"
-										],
-										[
-											"3",
-											"为爱痴狂"
-										],
-										[
-											"4",
-											"快乐"
-										],
-										[
-											"5",
-											"调皮的"
-										],
-										[
-											"6",
-											"非常，非常悲伤"
-										]
-									]
-								}
-							]
-						}
-					],
-					"id": "004"
-				},
-				{
-					"ENG_name": "Word Find",
-					"name": "文字寻宝",
+					"ENG_name": "Activity Pages",
+					"name": "活动页面",
 					"type": "section",
-					"page": 15,
-					"entries": [
-						{
-							"type": "table",
-							"page": 15,
-							"colStyles": [
-								"text-center",
-								"text-center",
-								"text-center",
-								"text-center",
-								"text-center",
-								"text-center",
-								"text-center",
-								"text-center",
-								"text-center",
-								"text-center",
-								"text-center",
-								"text-center",
-								"text-center",
-								"text-center",
-								"text-center"
-							],
-							"rows": [
-								[
-									"O",
-									"K",
-									"W",
-									"A",
-									"Z",
-									"T",
-									"H",
-									"B",
-									"E",
-									"B",
-									"F",
-									"O",
-									"N",
-									"N",
-									"B"
-								],
-								[
-									"W",
-									"E",
-									"U",
-									"F",
-									"W",
-									"P",
-									"R",
-									"R",
-									"U",
-									"I",
-									"L",
-									"T",
-									"Q",
-									"O",
-									"G"
-								],
-								[
-									"L",
-									"N",
-									"N",
-									"M",
-									"M",
-									"M",
-									"U",
-									"O",
-									"R",
-									"L",
-									"E",
-									"R",
-									"W",
-									"G",
-									"V"
-								],
-								[
-									"B",
-									"S",
-									"I",
-									"U",
-									"N",
-									"T",
-									"P",
-									"K",
-									"L",
-									"D",
-									"L",
-									"N",
-									"D",
-									"A",
-									"W"
-								],
-								[
-									"E",
-									"A",
-									"L",
-									"L",
-									"N",
-									"D",
-									"Y",
-									"E",
-									"X",
-									"L",
-									"V",
-									"Y",
-									"F",
-									"R",
-									"L"
-								],
-								[
-									"A",
-									"F",
-									"K",
-									"E",
-									"B",
-									"O",
-									"O",
-									"N",
-									"W",
-									"D",
-									"Z",
-									"W",
-									"W",
-									"D",
-									"Q"
-								],
-								[
-									"R",
-									"W",
-									"V",
-									"T",
-									"S",
-									"O",
-									"P",
-									"K",
-									"N",
-									"H",
-									"X",
-									"C",
-									"N",
-									"U",
-									"J"
-								],
-								[
-									"U",
-									"D",
-									"H",
-									"L",
-									"H",
-									"I",
-									"G",
-									"U",
-									"C",
-									"X",
-									"E",
-									"V",
-									"B",
-									"T",
-									"G"
-								],
-								[
-									"A",
-									"R",
-									"L",
-									"L",
-									"L",
-									"O",
-									"B",
-									"E",
-									"H",
-									"O",
-									"L",
-									"D",
-									"E",
-									"R",
-									"B"
-								],
-								[
-									"L",
-									"U",
-									"G",
-									"N",
-									"O",
-									"L",
-									"L",
-									"N",
-									"Z",
-									"E",
-									"R",
-									"V",
-									"T",
-									"U",
-									"B"
-								],
-								[
-									"L",
-									"H",
-									"Z",
-									"H",
-									"T",
-									"T",
-									"Q",
-									"R",
-									"T",
-									"Q",
-									"T",
-									"E",
-									"G",
-									"B",
-									"O"
-								],
-								[
-									"T",
-									"E",
-									"E",
-									"E",
-									"T",
-									"T",
-									"E",
-									"L",
-									"U",
-									"B",
-									"I",
-									"B",
-									"D",
-									"B",
-									"L"
-								],
-								[
-									"C",
-									"R",
-									"K",
-									"V",
-									"Q",
-									"F",
-									"H",
-									"O",
-									"I",
-									"S",
-									"E",
-									"J",
-									"Z",
-									"K",
-									"S"
-								],
-								[
-									"O",
-									"R",
-									"E",
-									"W",
-									"O",
-									"R",
-									"D",
-									"R",
-									"V",
-									"A",
-									"B",
-									"A",
-									"L",
-									"P",
-									"M"
-								],
-								[
-									"V",
-									"A",
-									"F",
-									"X",
-									"E",
-									"R",
-									"P",
-									"A",
-									"R",
-									"B",
-									"I",
-									"S",
-									"R",
-									"K",
-									"M"
-								]
-							]
-						},
-						{
-							"type": "inset",
-							"page": 15,
-							"entries": [
-								{
-									"type": "list",
-									"style": "list-no-bullets",
-									"columns": 2,
-									"page": 15,
-									"items": [
-										"冒险",
-										"眼魔",
-										"熊地精",
-										"鲨蜥",
-										"啵灵蛙",
-										"龙",
-										"卓尔",
-										"精灵",
-										"呋噜",
-										"鬣狗人",
-										"地精",
-										"英雄",
-										"天狗",
-										"穆克",
-										"枭熊",
-										"巨魔"
-									]
-								}
-							],
-							"id": "006"
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "book/AWM/00016a.webp"
-							},
-							"title": "{@creature 松鸟|AWM} 不太会阅读... 你能帮帮忙吗？",
-							"credit": "Emi Tanji",
-							"expectsLightBackground": true,
-							"altText": "松鸟不太会阅读... 你能帮帮忙吗？",
-							"width": 813,
-							"height": 718
-						}
-					],
-					"id": "005"
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/AWM/00017.webp"
-					},
-					"title": "呃哦... 看起来我们遇到了一些... 交友术？",
-					"credit": "Emi Tanji",
-					"expectsLightBackground": true,
-					"altText": "呃哦... 看来我们遇到了一些... 朋友？熊地精也是一种地精类生物。它们超级大... 大概有7英尺高！它们总喜欢对我们地精发号施令！",
-					"width": 2175,
-					"height": 2925
-				},
-				{
-					"type": "entries",
-					"page": 17,
-					"entries": [
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "book/AWM/00018.webp"
-							},
-							"title": "魅力检定！",
-							"credit": "Emi Tanji",
-							"expectsLightBackground": true,
-							"altText": "魅力检定！协助穆克选择恰当的言辞来通过熊地精警卫！",
-							"width": 2175,
-							"height": 651
-						},
-						{
-							"type": "list",
-							"style": "list-no-bullets",
-							"page": 17,
-							"items": [
-								{
-									"ENG_name": "Exclamation:",
-									"name": "感叹：",
-									"type": "item",
-									"entries": [
-										""
-									]
-								},
-								{
-									"ENG_name": "Adjective:",
-									"name": "形容词：",
-									"type": "item",
-									"entries": [
-										""
-									]
-								},
-								{
-									"ENG_name": "Adjective:",
-									"name": "形容词：",
-									"type": "item",
-									"entries": [
-										""
-									]
-								},
-								{
-									"ENG_name": "Time of day:",
-									"name": "白昼时间：",
-									"type": "item",
-									"entries": [
-										""
-									]
-								},
-								{
-									"ENG_name": "Adjective:",
-									"name": "形容词：",
-									"type": "item",
-									"entries": [
-										""
-									]
-								},
-								{
-									"ENG_name": "Plural noun:",
-									"name": "复数名词:",
-									"type": "item",
-									"entries": [
-										""
-									]
-								},
-								{
-									"ENG_name": "Number:",
-									"name": "编号：",
-									"type": "item",
-									"entries": [
-										""
-									]
-								},
-								{
-									"ENG_name": "Scary noun:",
-									"name": "恐怖名词：",
-									"type": "item",
-									"entries": [
-										""
-									]
-								},
-								{
-									"ENG_name": "Adjective:",
-									"name": "形容词：",
-									"type": "item",
-									"entries": [
-										""
-									]
-								},
-								{
-									"ENG_name": "Name of person in room:",
-									"name": "房间内人员姓名：",
-									"type": "item",
-									"entries": [
-										""
-									]
-								},
-								{
-									"ENG_name": "Noun:",
-									"name": "名词:",
-									"type": "item",
-									"entries": [
-										""
-									]
-								},
-								{
-									"ENG_name": "Verb:",
-									"name": "动词:",
-									"type": "item",
-									"entries": [
-										""
-									]
-								},
-								{
-									"ENG_name": "Adverb:",
-									"name": "副词：",
-									"type": "item",
-									"entries": [
-										""
-									]
-								}
-							]
-						},
-						{
-							"type": "list",
-							"style": "list-no-bullets",
-							"columns": 2,
-							"page": 17,
-							"items": [
-								{
-									"ENG_name": "Instructions",
-									"name": "说明",
-									"type": "inset",
-									"page": 17,
-									"entries": [
-										"一旦你选好了你的词语，翻到下一页并按所列顺序填空。大声朗读穆克的演讲，并决定他是否能凭借魅力通过地精熊人的考验！"
-									],
-									"id": "008"
-								},
-								{
-									"ENG_name": "Definitions",
-									"name": "定义",
-									"type": "inset",
-									"page": 17,
-									"entries": [
-										{
-											"type": "list",
-											"style": "list-no-bullets",
-											"page": 17,
-											"items": [
-												{
-													"ENG_name": "Adjective:",
-													"name": "形容词：",
-													"type": "item",
-													"entries": [
-														"一个{@i 描述}某物或某人的词语"
-													]
-												},
-												{
-													"ENG_name": "Adverb:",
-													"name": "副词：",
-													"type": "item",
-													"entries": [
-														"一个动词（动作）通常以 \"ly\" 结尾"
-													]
-												},
-												{
-													"ENG_name": "Noun:",
-													"name": "名词:",
-													"type": "item",
-													"entries": [
-														"一个人、地点或事物"
-													]
-												},
-												{
-													"ENG_name": "Plural Noun:",
-													"name": "复数名词:",
-													"type": "item",
-													"entries": [
-														"多个人、地点或事物"
-													]
-												},
-												{
-													"ENG_name": "Verb:",
-													"name": "动词:",
-													"type": "item",
-													"entries": [
-														"Ab 动作，或某人做的某事"
-													]
-												}
-											]
-										}
-									],
-									"id": "009"
-								}
-							]
-						}
-					],
-					"id": "007"
-				},
-				{
-					"type": "entries",
-					"page": 18,
-					"entries": [
-						{
-							"type": "insetReadaloud",
-							"page": 18,
-							"style": "text-center",
-							"entries": [
-								"{@footnote __________________|感叹号} {@footnote __________________|形容词} 警卫！",
-								"这难道不是一个{@footnote __________________|形容词} {@footnote __________________|一天中的时间}吗？",
-								"我的名字是穆克，那个{@footnote __________________|形容词}！",
-								"你可能听说过我，因为我的{@footnote __________________|复数名词}相当有名！",
-								"我战胜{@footnote __________________|数值}个{@footnote __________________|恐怖名词}的胜利之歌都是真的！",
-								"你的{@footnote __________________|形容词}领袖，{@footnote __________________|房间内人员姓名}允许我通过。",
-								"但是！如果你敢给我们任何{@footnote __________________|名词}，我的搭档就会{@footnote __________________|动词}你们两个！",
-								"小心，{@creature 松鸟|AWM}战斗起来相当{@footnote __________________|副词}！"
-							],
-							"id": "00b"
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "book/AWM/00019.webp"
-							},
-							"credit": "Emi Tanji",
-							"expectsLightBackground": true,
-							"width": 2175,
-							"height": 2925
-						}
-					],
-					"id": "00a"
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/AWM/00020.webp"
-					},
-					"title": "协助穆克在骷髅之前找到{@creature 松鸟|AWM}！",
-					"credit": "Emi Tanji",
-					"expectsLightBackground": true,
-					"altText": "协助穆克在骷髅之前找到鸟松鼠！",
-					"width": 2175,
-					"height": 2925
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/AWM/00021.webp"
-					},
-					"title": "矮人们失去了他们所有的头发！",
-					"credit": "Emi Tanji",
-					"expectsLightBackground": true,
-					"altText": "这些矮人失去了所有的毛发！给这四位勇敢的矮人族裔画上胡子/眉毛/头发！像我一样！",
-					"width": 2175,
-					"height": 2925
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/AWM/00022.webp"
-					},
-					"title": "即使是最勇敢的地精也会害怕！",
-					"credit": "Emi Tanji",
-					"expectsLightBackground": true,
-					"altText": "即使是最勇敢的地精也会害怕！画出狄摩高根的两个头。我不敢看！",
-					"width": 2175,
-					"height": 2925
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/AWM/00023.webp"
-					},
-					"title": "这是宝藏吗？",
-					"credit": "Emi Tanji",
-					"expectsLightBackground": true,
-					"altText": "这是宝藏吗？",
-					"width": 2175,
-					"height": 2925
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/AWM/00024.webp"
-					},
-					"title": "破译宝藏箱子中的秘密卷轴！",
-					"credit": "Emi Tanji",
-					"expectsLightBackground": true,
-					"altText": "破译宝藏箱子里的秘密卷轴！结束！感谢你与我们一同冒险！",
-					"width": 2175,
-					"height": 2925
-				}
-			],
-			"id": "000"
-		},
-		{
-			"ENG_name": "Answers",
-			"name": "答案",
-			"type": "section",
-			"page": 24,
-			"entries": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/AWM/00025.webp"
-					},
-					"title": "答案",
-					"credit": "Emi Tanji",
-					"expectsLightBackground": true,
-					"altText": "穆克应该攀爬哪根藤蔓才能到达安全处？攀爬3号藤蔓！秘密卷轴：重要的不是我们拥有什么......而是我们拥有谁。",
-					"width": 2175,
-					"height": 2925
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/AWM/00026.webp"
-					},
-					"title": "如果你喜欢和穆克一起冒险，前方还有更多精彩！继续阅读以了解更多关于穆克、他的地精同伴以及{@u 你}可以参与的冒险！",
-					"credit": "Emi Tanji",
-					"expectsLightBackground": true,
-					"altText": "如果你喜欢与穆克一起冒险，前方还有更多精彩！继续阅读以了解更多关于穆克、他的地精同伴以及你可以参与的冒险！",
-					"width": 2596,
-					"height": 3433
-				}
-			],
-			"id": "00c"
-		},
-		{
-			"ENG_name": "Muk and Friends",
-			"name": "穆克和朋友们",
-			"type": "section",
-			"page": 26,
-			"entries": [
-				"欢迎来到穆克的世界，一个勇敢的小地精和他忠诚的伙伴{@creature 松鸟|AWM}。他们和一群地精朋友一起生活在丹克伍德森林深处的哥布林镇，挖掘幼虫、建造泥屋，并为他们的地精盛宴采集可食用的坚果、根茎和浆果。",
-				"但丹克伍德是一个充满魔法的地方，居住着怪物和古老的功亏一篑。穆克在探索家园的过程中经历了许多冒险，并遇到了许多生物\u2014\u2014有些友好，有些则非常暴躁。",
-				"穆克的朋友，古怪的侏儒法师杜恩瓦格尔\u2014\u2014创造了{@creature 松鸟|AWM}的那位\u2014\u2014在丹克伍德为穆克安排了各种各样的任务。杜恩瓦格尔总是想出新的实验，并需要实验材料，这让穆克和他的朋友们忙个不停。",
-				{
-					"ENG_name": "How to Play!",
-					"name": "如何进行游戏！",
-					"type": "section",
-					"page": 26,
-					"entries": [
-						"这本冒险手册是专为一名成人DM设计，向孩子们介绍如何在{@style 龙与地下城|dnd-font}中扮演角色和讲述故事。",
-						"故事点子是基本的，不需要地图。你需要的只是一些骰子、铅笔、纸张和你们的想象力。 每个冒险点子都有一个基本的问题要解决，你可以要求玩家回答一些关于故事的问题。 在这次冒险中，你将与你的玩家共同创造故事，让他们适应用自己的想象力来创造世界并在其中讲述故事。 这些问题都是扩大想象力的建议，因此你可以添加自己的问题并加以扩展。 通常情况下，新玩家并不知道他们可以想到他们的想象力可以变出{@b 任何东西}，所以需要地下城主的一些提示才能打破可能的界限，进入一个有着的魔法和奇迹存在的想象世界的空间。"
-					],
-					"id": "00e"
-				},
-				{
-					"ENG_name": "The Heroes",
-					"name": "英雄们",
-					"type": "section",
-					"page": 26,
-					"entries": [
-						"这本冒险活动手册有自己的角色阵容，供玩家作为冒险者使用。 每个英雄都有自己的背景故事，你可以向玩家介绍这些故事，让他们了解自己的角色是怎样的。 也可以让玩家自己编造一个全新的背景故事。",
-						{
-							"ENG_name": "You Like Adventure Hooks?",
-							"name": "你喜欢冒险点子吗？",
-							"type": "inset",
-							"page": 26,
-							"entries": [
-								"这里列出了穆克和朋友们可以在阴林的有趣点子。 用它们来启发冒险！",
-								"投掷一个{@dice d8}：",
-								{
-									"type": "table",
-									"page": 26,
-									"colLabels": [
-										"d8",
-										"冒险引子"
-									],
-									"colStyles": [
-										"col-2 text-center",
-										"col-10"
-									],
-									"rows": [
-										[
-											"1",
-											"树精的银橡子（我打赌她一定会喜欢它的）"
-										],
-										[
-											"2",
-											"独角兽的魔法角（有东西在找它吗？）"
-										],
-										[
-											"3",
-											"金哨子（吹哨子有什么用？）"
-										],
-										[
-											"4",
-											"一只金质小鸟的塑像（它会活过来吗？）"
-										],
-										[
-											"5",
-											"一根失传已久的Gob-Stick（对所有地精来说都是神圣的！）"
-										],
-										[
-											"6",
-											"一张藏宝图！ (它通向哪里？ 有什么宝藏？）"
-										],
-										[
-											"7",
-											"一只迷失的水獭。 (它的记忆是否是被邪恶鬼婆的法术抹除掉的？）"
-										],
-										[
-											"8",
-											"一个头骨。 (它想找到剩下的骨头吗？）"
-										]
-									]
-								}
-							],
-							"id": "010"
-						},
-						{
-							"ENG_name": "Muk and Birdsquirrel",
-							"name": "穆克和松鸟",
-							"type": "entries",
-							"page": 26,
-							"entries": [
-								"穆克和{@creature 松鸟|AWM}是一对形影不离的冒险家。 他们喜欢一起在森林里探险和交朋友。 他们喜欢去调查其他地精害怕的地方 ，希望为地精法师杜恩瓦格找到奇物。",
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "book/AWM/00028.webp"
-									},
-									"credit": "Emi Tanji",
-									"expectsLightBackground": true,
-									"width": 1450,
-									"height": 1417
-								}
-							],
-							"id": "011"
-						},
-						{
-							"ENG_name": "Ungo",
-							"name": "乌戈",
-							"type": "entries",
-							"page": 26,
-							"entries": [
-								"乌戈曾经是最凶猛的地精战士，传说他曾打败过许多兽人。后来他放弃了暴力，现在住在一个山洞里，满足于在阴林游荡，与树木交谈坐在溪流旁 看着银色的小鱼在水里游来游去。他比周围的任何地精都更了解阴林，他的内心充满了智慧和善良。",
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "book/AWM/00029.webp"
-									},
-									"credit": "Emi Tanji",
-									"expectsLightBackground": true,
-									"width": 1846,
-									"height": 2521
-								}
-							],
-							"id": "012"
-						},
-						{
-							"ENG_name": "Wam and Rikruk",
-							"name": "瓦姆和里鲁克",
-							"type": "entries",
-							"page": 27,
-							"entries": [
-								"瓦姆是一个坚强的战士，但也有一颗金子般的心。 她比穆克年长，她教会了穆克如何在阴阴林生存。 几季前，她在树林里发现了一个被遗弃的小地精，她给他取名为里鲁克。 瓦姆认为里鲁克是妖精之神赐给她的，她要把他培养成一个伟大的妖精酋长。",
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "book/AWM/00031.webp"
-									},
-									"credit": "Emi Tanji",
-									"expectsLightBackground": true,
-									"width": 1446,
-									"height": 2179
-								}
-							],
-							"id": "013"
-						},
-						{
-							"ENG_name": "Lord Fishbone",
-							"name": "鱼刺领主",
-							"type": "entries",
-							"page": 27,
-							"entries": [
-								"鱼刺领主曾用名古克 Guk。古克一直梦想着传说中位于阴林外的大城市。 但从来没有地精敢去那里。 有一天古克失踪了，有传言说他终于找到了大城市。 几年后，古克以鱼刺领主的身份回来了，他穿着人类的衣服，留着优雅的小胡子。 鱼刺领主讲了很多关于他们在大城市里经历的各种奇异冒险的故事。鱼刺领主勇敢、充满活力，是一位潇洒、大胆的冒险家。",
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "book/AWM/00030.webp"
-									},
-									"credit": "Emi Tanji",
-									"expectsLightBackground": true,
-									"width": 1588,
-									"height": 2042
-								}
-							],
-							"id": "014"
-						},
-						{
-							"ENG_name": "NPCs",
-							"name": "NPCs",
-							"type": "inset",
-							"page": 27,
-							"entries": [
-								"以下NPC可供你在游戏中使用。当角色们进行冒险时，可以随意让他们出现来协助或阻碍角色。他们可能拥有队伍解决问题所需的信息，或者可以帮助击败怪物或治疗受伤的冒险者。",
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "book/AWM/00031a.webp"
-									},
-									"credit": "Emi Tanji",
-									"expectsLightBackground": true,
-									"maxHeight": 250,
-									"width": 708,
-									"height": 630
-								},
-								{
-									"ENG_name": "The Wizard Doonwaggle",
-									"name": "法师杜恩瓦格",
-									"type": "entries",
-									"page": 27,
-									"entries": [
-										"杜恩瓦格尔是一位古怪的侏儒法师，他涉足丹克伍德的自然魔法，并用它来创造杂交生物和机械玩具。"
-									],
-									"id": "016"
-								},
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "book/AWM/00031b.webp"
-									},
-									"credit": "Emi Tanji",
-									"expectsLightBackground": true,
-									"maxHeight": 250,
-									"width": 1668,
-									"height": 772
-								},
-								{
-									"ENG_name": "Dankwood Elders",
-									"name": "暗木长老",
-									"type": "entries",
-									"page": 27,
-									"entries": [
-										"暗木长者是三位被选出来引导暗木地精的部落成员。格里布尔是一名萨满，戈姆是一名战士，金斯特是一名工匠。"
-									],
-									"id": "017"
-								},
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "book/AWM/00031c.webp"
-									},
-									"credit": "Emi Tanji",
-									"expectsLightBackground": true,
-									"maxHeight": 250,
-									"width": 844,
-									"height": 761
-								},
-								{
-									"ENG_name": "Grubbah the Bugbear",
-									"name": "熊地精格鲁巴",
-									"type": "entries",
-									"page": 27,
-									"entries": [
-										"格拉巴是一个熊地精，她是所有熊地精的首领。她强壮、凶猛，而且总是饥饿，所以如果你想和她做朋友，食物是最好的方式。"
-									],
-									"id": "018"
-								},
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "book/AWM/00031d.webp"
-									},
-									"credit": "Emi Tanji",
-									"expectsLightBackground": true,
-									"maxHeight": 250,
-									"width": 813,
-									"height": 615
-								},
-								{
-									"ENG_name": "Slurpy",
-									"name": "咕噜咕噜",
-									"type": "entries",
-									"page": 27,
-									"entries": [
-										"斯拉皮是穆克的地精朋友，住在大水附近。他热爱寻宝，知道许多秘密地点。他最珍视的财产是他的最闪亮之岩，这是他机灵地从一位名叫格雷格的愚蠢人类冒险者那里赢来的。"
-									],
-									"id": "019"
-								}
-							],
-							"id": "015"
-						}
-					],
-					"id": "00f"
-				},
-				{
-					"ENG_name": "Adventure Ideas",
-					"name": "冒险点子",
-					"type": "section",
-					"page": 28,
-					"entries": [
-						"每次冒险都有一个无需诉诸战斗就能解决的办法。 这些问题的目的是为你的玩家提供一些素材，以唤起对如何解决问题的思考。 每个故事都有多种可能的讲述方式，因此请打开思维的闸门，让你的想象力引导道路！",
-						{
-							"ENG_name": "The Great Kroom",
-							"name": "伟大的喀戎姆",
-							"type": "entries",
-							"page": 28,
-							"entries": [
-								"树林里传来隆隆声，乌戈知道那是{@creature 紫虫，伟大的喀戎姆|AWM|紫虫，伟大的喀戎姆}的回来了。 在阴林地下挖掘巨大的隧道。 问题是，乌戈已经忘了上次喀戎姆是什么时候来的，地精是怎么把他赶走的。 喀戎姆来过这里。 如果它继续挖下去，整个哥布镇都会掉进隧道里！",
-								{
-									"ENG_name": "Questions to ask:",
-									"name": "要问的问题：",
-									"type": "list",
-									"page": 28,
-									"items": [
-										"你认为他们是如何赶走喀戎姆的？ 他们迷惑了他？ 是法术吗？",
-										"也许可以问问法师杜恩瓦格，看看他是怎么想的！",
-										"紫虫喜欢什么？ 它们讨厌什么？"
-									]
-								}
-							],
-							"id": "01b"
-						},
-						{
-							"ENG_name": "The Hungry Otyugh",
-							"name": "饥饿的食腐兽",
-							"type": "entries",
-							"page": 28,
-							"entries": [
-								"没人喜欢{@creature 饥饿食腐兽|AWM|食腐兽}，因为它又臭又会发出难听的声音。 他可能脾气很坏，但穆克知道这只是 因为他饿了。 问题是，{@creature 饥饿食腐兽|AWM|食腐兽}吃的所有东西都很恶心，而且它还在靠近哥布镇，寻找更多的食物。",
-								{
-									"ENG_name": "Questions to ask:",
-									"name": "要问的问题：",
-									"type": "list",
-									"page": 28,
-									"items": [
-										"穆克怎样才能帮助这个可怜又讨人厌的怪物？",
-										"食腐兽会吃哪些恶心的东西？在哪里可以找到？",
-										"有什么办法能让食腐兽不那么臭？"
-									]
-								}
-							],
-							"id": "01c"
-						},
-						{
-							"ENG_name": "Birdsquirrel's Journey",
-							"name": "松鸟的旅程",
-							"type": "entries",
-							"page": 28,
-							"entries": [
-								"据说，{@creature 松鸟|AWM}是由疯法师杜恩瓦格创造的。 但是{@creature 松鸟|AWM}现在带着穆克去森林深处寻找松鸟一家。 唯一的问题是它们被一个{@creature 阴林鬼婆|AWM|邪恶的鬼婆}抓走了。她想用这些独特而神奇的生物做她的最新的汤料！",
-								{
-									"ENG_name": "Questions to ask:",
-									"name": "要问的问题：",
-									"type": "list",
-									"page": 28,
-									"items": [
-										"鬼婆的汤里还有哪些配料？",
-										"鬼婆为什么要煲汤？",
-										"她脾气暴躁吗？ 还是她有软肋？",
-										"她有宠物吗？",
-										"她孤独吗？"
-									]
-								}
-							],
-							"id": "01d"
-						},
-						{
-							"ENG_name": "Getting Knocked Koo-Koo",
-							"name": "被打晕",
-							"type": "inset",
-							"page": 28,
-							"entries": [
-								"阴林中的大部分遭遇战都可以无需战斗即可解决。 但如果地精在混战中失去所有的生命值，让他们被打晕过去，醒来后就会陷入更加困难的境地。例如：如果穆克与熊地精打输了，他可能会在鬼婆大锅里醒来，并必须用语言说服自己不要成为药水的一部分。 或者，当从一伙讨厌的地精手中逃脱时，他不小心从树上摔了下来。让他像火鸡一样被绑在暴躁的地精营地里醒来。"
-							],
-							"id": "01e"
-						},
-						{
-							"ENG_name": "Doonwaggle's Contraption",
-							"name": "杜恩瓦格的装置",
-							"type": "entries",
-							"page": 28,
-							"entries": [
-								"杜恩瓦格需要三样东西来做他最新的魔法实验，他希望穆克和他的朋友们能帮他拿到这三样东西。",
-								{
-									"ENG_name": "The items are:",
-									"name": "这三样东西是：",
-									"type": "list",
-									"page": 28,
-									"items": [
-										"一颗来自淡水蚌的珍珠，淡水蚌只生活在水晶洞内的水域中，由一群{@creature 水晶洞穴人鱼|AWM|人鱼}守护。",
-										"来自神圣的波恩图Boontu树的金色坚果，传说这棵树上充满着{@creature 布恩图猴|AWM|脾气暴躁的猴子}。",
-										"一根来自{@creature 羽蛇萨莱斯|AWM|萨莱斯} 的羽毛，Saleeth 是一只温柔的羽蛇，她住在森林中一座高山上的破庙里。"
-									]
-								},
-								"一旦杜恩瓦格拿到材料，他说这个装置将是他迄今为止最好的作品！",
-								{
-									"ENG_name": "Questions to ask:",
-									"name": "要问的问题：",
-									"type": "list",
-									"page": 28,
-									"items": [
-										"{@creature 水晶洞穴人鱼|AWM|人鱼}想要什么来换取珍珠？ 一首歌？ 一块宝石？",
-										"如何在不惊动{@creature 布恩图猴|AWM|脾气暴躁的猴子}的情况下拿到坚果？",
-										"{@creature 羽蛇萨莱斯|AWM|萨莱斯}想要什么来换取羽毛？",
-										"杜恩瓦格的装置建成后能做什么？"
-									]
-								}
-							],
-							"id": "01f"
-						},
-						{
-							"ENG_name": "The Big Water Slurpent",
-							"name": "大水蛞",
-							"type": "entries",
-							"page": 28,
-							"entries": [
-								"大水Big Water是一个很少有地精去的地方。 长老们说大水中央的小岛上曾经矗立着一座伟大的法师塔。法师创造了一个巨大的怪物在岛上游来游去，守护着塔里所有的宝藏。 传说很久以前的一天，法师施展了一个禁咒，整个塔沉入湖中，所有的宝藏也随之沉入湖中。",
-								"大水是一个奇特而神奇的地方，很少有人 会去，但鱼刺领主说，如果有人能游到水下，进入塔里，就能看到那里是否有宝藏。",
-								{
-									"ENG_name": "Questions to ask:",
-									"name": "要问的问题：",
-									"type": "list",
-									"page": 28,
-									"items": [
-										"塔在水下多深？",
-										"关于塔内宝藏的传言有哪些？ 是什么？",
-										"如何通过{@creature 大水蛞|AWM}？ 它喜欢吃妖精吗？ 你能用魔法缩小它吗？",
-										"有没有一种用森林植物制成的魔法药水可以让穆克和他的伙伴们在水下呼吸？"
-									]
-								}
-							],
-							"id": "020"
-						},
-						{
-							"ENG_name": "Dealing with Dummy Goblins",
-							"name": "对付蠢蠢地精",
-							"type": "entries",
-							"page": 28,
-							"entries": [
-								"{@creature 蠢蠢地精|AWM|蠢蠢地精部落}离的很远，他们不会给我们带来太多麻烦。 但就在今天早上，瓦姆发现一些蠢蠢地精溜进了营地，偷走了 里鲁克最喜欢的玩具--双头蛇拨浪鼓。 她知道是他们干的，因为瓦姆是个追踪专家，她发现了他们的脚印。",
-								"蠢蠢地精并不都是坏人，也许他们拿走拨浪鼓是有原因的。 要想知道如何在不战斗的情况下拿回拨浪鼓。",
-								{
-									"ENG_name": "Questions to ask:",
-									"name": "要问的问题：",
-									"type": "list",
-									"page": 28,
-									"items": [
-										"蠢蠢地精为什么要拿走拨浪鼓？",
-										"拨浪鼓有魔力吗？",
-										"拨浪鼓藏在哪里？",
-										"穆克怎样才能在不引起争斗的情况下拿到拨浪鼓？"
-									]
-								}
-							],
-							"id": "021"
-						},
-						{
-							"ENG_name": "The Dwarf King",
-							"name": "矮人国王",
-							"type": "entries",
-							"page": 29,
-							"entries": [
-								"就在你到达雪山的时候，有一个洞穴，许多地精在高脚杯酒吧都听说过这个洞穴。 因为传说这里住着一个{@creature 山丘巨人布洛博|AWM|脾气非常暴躁的山丘巨人}。据说山丘巨人会吃掉地精，所以只有愚蠢的地精才会去巨人洞穴。",
-								"但还有一个传言说，很久以前，有一个矮人国王去那里寻找传说中的宝石--鹰眼。但他一去不回。 地精看到过矮人在寻找他们的国王，但他们从来没有去过，地精害怕矮人，所以没人告诉他们关于国王的事情。",
-								"但现在穆克在阴林发现了一个哭泣的{@creature 矮人|AWM}、她是国王的女儿，她想念她的父亲。 穆克和他的朋友们能勇敢地面对山丘巨人，找到矮人国王吗？",
-								{
-									"ENG_name": "Questions to ask:",
-									"name": "要问的问题：",
-									"type": "list",
-									"page": 29,
-									"items": [
-										"穆克是如何通过暴躁的山丘巨人的？",
-										"鹰眼是否让矮人国王进入了魔法的沉睡状态？",
-										"拯救国王会让矮人和地精成为朋友吗？"
-									]
-								}
-							],
-							"id": "022"
-						}
-					],
-					"id": "01a"
-				},
-				{
-					"ENG_name": "Monsters",
-					"name": "怪物",
-					"type": "section",
-					"page": 29,
-					"entries": [
-						"以下怪物经过简化/修改，以在Muk历险记中使用。 以下数据供你参考。 你可以根据自己的故事情节随意调整或添加。",
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "book/AWM/00032.webp"
-							},
-							"credit": "Emi Tanji",
-							"expectsLightBackground": true,
-							"width": 1277,
-							"height": 1315
-						},
-						{
-							"ENG_name": "Big Water Slurpent",
-							"name": "大水蛞",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "AWM",
-							"page": 29,
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Big Water Slurpent",
-							"name": "大水蛞",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "AWM",
-							"page": 29,
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Birdsquirrel",
-							"name": "松鸟",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "AWM",
-							"page": 30,
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Birdsquirrel",
-							"name": "松鸟",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "AWM",
-							"page": 30,
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Boontu Monkey",
-							"name": "布恩图猴",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "AWM",
-							"page": 30,
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Boontu Monkey",
-							"name": "布恩图猴",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "AWM",
-							"page": 30,
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Crystal Cave Merfolk",
-							"name": "水晶洞穴人鱼",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "AWM",
-							"page": 31,
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Crystal Cave Merfolk",
-							"name": "水晶洞穴人鱼",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "AWM",
-							"page": 31,
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Dankwood Hag",
-							"name": "阴林鬼婆",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "AWM",
-							"page": 31,
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Dankwood Hag",
-							"name": "阴林鬼婆",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "AWM",
-							"page": 31,
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Dum-Dum Goblin",
-							"name": "蠢蠢地精",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "AWM",
-							"page": 32,
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Dum-Dum Goblin",
-							"name": "蠢蠢地精",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "AWM",
-							"page": 32,
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Dwarf",
-							"name": "矮人",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "AWM",
-							"page": 32,
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Dwarf",
-							"name": "矮人",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "AWM",
-							"page": 32,
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Great Kroom, Purple Worm",
-							"name": "紫虫，伟大的喀戎姆",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "AWM",
-							"page": 33,
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Great Kroom, Purple Worm",
-							"name": "紫虫，伟大的喀戎姆",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "AWM",
-							"page": 33,
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Hangry Otyugh",
-							"name": "饥饿食腐兽",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "AWM",
-							"page": 33,
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Hangry Otyugh",
-							"name": "饥饿食腐兽",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "AWM",
-							"page": 33,
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Hill Giant, Blorbo",
-							"name": "山丘巨人布洛博",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "AWM",
-							"page": 34,
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Hill Giant, Blorbo",
-							"name": "山丘巨人布洛博",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "AWM",
-							"page": 34,
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Saleeth the Couatl",
-							"name": "羽蛇萨莱斯",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "AWM",
-							"page": 34,
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Saleeth the Couatl",
-							"name": "羽蛇萨莱斯",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "AWM",
-							"page": 34,
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						}
-					],
-					"id": "023"
-				},
-				{
-					"ENG_name": "Dankwood Goblins",
-					"name": "阴林地精",
-					"type": "section",
-					"page": 35,
-					"entries": [
-						{
-							"type": "quote",
-							"entries": [
-								"啊，阴林地精！ 我曾四处冒险却从未见过如此独特有趣的地精。也许是阴林本身的魔力，因为这片森林据说曾是一位强大的耐瑟瑞尔的圣所，但谁又说得准呢？ 在这个奇妙的世界，无论你走到哪里，都会有新的东西让人目不暇接，叹为观止！"
-							],
-							"by": "守护者Leafy Skiptoes"
-						},
-						"阴林的地精和其他普通的地精没什么两样，但他们比世界上野蛮粗野的地精更温和、更有艺术气息。",
-						"他们好奇心强，与森林中的小动物建立了魔法的联系，他们经常与这些小动物成为朋友。 他们敏捷，喜欢探索。 因此，他们是伟大的冒险家和向导。",
-						{
-							"ENG_name": "Goblin (Dankwood)",
-							"name": "地精 (阴林)",
-							"type": "statblock",
-							"tag": "race",
-							"source": "AWM",
-							"page": 35,
-							"style": "narrow"
-						}
-					],
-					"id": "024"
-				},
-				{
-					"ENG_name": "Character Sheets",
-					"name": "角色卡",
-					"type": "section",
-					"page": 35,
+					"id": "000",
+					"page": 1,
 					"entries": [
 						{
 							"type": "image",
@@ -1761,76 +17,45 @@
 								"type": "internal",
 								"path": "book/AWM/00033.webp"
 							},
-							"title": "与穆克一起冒险：角色表",
-							"credit": "Emi Tanji",
-							"expectsLightBackground": true,
-							"altText": "与穆克一起冒险：角色表",
 							"width": 2175,
-							"height": 2100
+							"height": 2100,
+							"title": "与穆克一起冒险",
+							"altText": "与穆克一起冒险",
+							"credit": "Emi Tanji",
+							"expectsLightBackground": true
 						},
-						"创建你自己的{@i 拥有}暗木林冒险者，或扮演一个地精英雄！",
 						{
-							"type": "gallery",
-							"images": [
+							"type": "quote",
+							"style": "quote-pull",
+							"skipMarks": true,
+							"skipItalics": true,
+							"entries": [
+								"一本适合所有级别玩家的冒险活动书"
+							]
+						},
+						{
+							"type": "entries",
+							"id": "001",
+							"style": "text-center",
+							"entries": [
 								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "book/AWM/00005.webp"
-									},
-									"title": "{@5etoolsImg 空白角色卡|pdf/AWM/Blank_Sheet.pdf}",
-									"credit": "Emi Tanji",
-									"expectsLightBackground": true,
-									"width": 2175,
-									"height": 2925
-								},
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "book/AWM/00028.webp"
-									},
-									"title": "{@5etoolsImg 穆克与鸟松鼠（伙伴）|pdf/AWM/Muk.pdf}",
-									"credit": "Emi Tanji",
-									"expectsLightBackground": true,
-									"width": 1450,
-									"height": 1417
-								},
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "book/AWM/00031.webp"
-									},
-									"title": "{@5etoolsImg 瓦姆与里克鲁克|pdf/AWM/Wam_Rikruk.pdf}",
-									"credit": "Emi Tanji",
-									"expectsLightBackground": true,
-									"width": 1446,
-									"height": 2179
-								},
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "book/AWM/00029.webp"
-									},
-									"title": "{@5etoolsImg 乌戈|pdf/AWM/Ungo.pdf}",
-									"credit": "Emi Tanji",
-									"expectsLightBackground": true,
-									"width": 1846,
-									"height": 2521
-								},
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "book/AWM/00030.webp"
-									},
-									"title": "{@5etoolsImg 鱼刺领主|pdf/AWM/Fishbone.pdf}",
-									"credit": "Emi Tanji",
-									"expectsLightBackground": true,
-									"width": 1588,
-									"height": 2042
+									"type": "entries",
+									"id": "002",
+									"entries": [
+										{
+											"ENG_name": "In Support of Extra Life",
+											"name": "支持Extra Life",
+											"type": "entries",
+											"id": "003",
+											"page": 1,
+											"entries": [
+												"",
+												"创作与插画：Emi Tanji",
+												"冒险与设计天才 - 亚当·李与克里斯·林赛",
+												"特别感谢巴特·卡罗尔"
+											]
+										}
+									]
 								}
 							]
 						},
@@ -1838,67 +63,1848 @@
 							"type": "image",
 							"href": {
 								"type": "internal",
-								"path": "book/AWM/00038.webp"
+								"path": "book/AWM/00004.webp"
 							},
-							"credit": "Emi Tanji",
-							"expectsLightBackground": true,
 							"width": 2175,
-							"height": 2925
+							"height": 2925,
+							"title": "你好！我是（最勇敢的）地精穆克",
+							"altText": "你好！我是（最勇敢的）地精穆克。乌黑的头发有点味道。但是好闻的味道！超级大的耳朵有超级好的听力。地精有黄色或橙色的皮肤。我的鼻子像小猫。凶猛的小猫。谁需要靴子？我需要潜行！等级：3。专长：超级潜行。擅长攀爬，而且我能和动物说话！",
+							"credit": "Emi Tanji",
+							"expectsLightBackground": true
 						},
 						{
 							"type": "image",
 							"href": {
 								"type": "internal",
-								"path": "book/AWM/00039.webp"
+								"path": "book/AWM/00005.webp"
 							},
-							"title": "成为英雄。打出D&D。为孩子们。",
-							"credit": "Emi Tanji",
-							"expectsLightBackground": true,
 							"width": 2175,
-							"height": 2925
+							"height": 2925,
+							"title": "{@b 你的}冒险者是什么样的？",
+							"altText": "你的名字。你的冒险者长什么样？",
+							"credit": "Emi Tanji",
+							"expectsLightBackground": true
 						},
 						{
-							"type": "inset",
-							"page": 44,
-							"style": "text-center",
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/AWM/00006.webp"
+							},
+							"width": 2175,
+							"height": 2925,
+							"title": "让我向你介绍我最好的朋友和伙伴，{@creature 松鸟|AWM}！",
+							"altText": "让我向你介绍我最好的朋友和伙伴，鸟松鼠！部分是鸟，部分是松鼠，全都棒极了。鸟松鼠是由一位厉害的法师用魔法制造的！哦不。",
+							"credit": "Emi Tanji",
+							"expectsLightBackground": true
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/AWM/00007.webp"
+							},
+							"width": 2175,
+							"height": 2925,
+							"title": "绘制你的魔法生物组合！",
+							"altText": "画出你的魔法生物组合！猫头鹰 + 熊 = 枭熊。蜘蛛 + 青蛙 = 蜘蛛蛙。犀牛 + 鲨鱼 = 犀牛鲨。",
+							"credit": "Emi Tanji",
+							"expectsLightBackground": true
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/AWM/00008.webp"
+							},
+							"width": 2175,
+							"height": 2925,
+							"title": "外面有一些疯狂的怪物。",
+							"altText": "眼魔：这家伙有十一只眼睛！ 石盲怪：小心它的喙啄！ 灰 slaad：尝起来一点都不像沙拉！ 恶心！ 外面有些疯狂的怪物。 你最好跟着我们！",
+							"credit": "Emi Tanji",
+							"expectsLightBackground": true
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/AWM/00009.webp"
+							},
+							"width": 2175,
+							"height": 2925,
+							"title": "如何绘制一个...",
+							"altText": "如何画一个... 地精（我！）、呋噜、格龙蛙人。现在轮到你了！",
+							"credit": "Emi Tanji",
+							"expectsLightBackground": true
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/AWM/00010.webp"
+							},
+							"width": 2175,
+							"height": 2925,
+							"title": "如果我们要去冒险，我们应该时刻做好准备！",
+							"altText": "如果我们要去冒险，我们应该时刻做好准备！这是我的超酷盾牌。我自己做的。",
+							"credit": "Emi Tanji",
+							"expectsLightBackground": true
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/AWM/00011.webp"
+							},
+							"width": 2175,
+							"height": 2925,
+							"title": "你的盾牌是什么样子的？",
+							"altText": "你的盾牌看起来是什么样子的？这里有一些不同的形状可供选择。鸟松鼠已准备好行动！",
+							"credit": "Emi Tanji",
+							"expectsLightBackground": true
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/AWM/00012.webp"
+							},
+							"width": 2175,
+							"height": 2925,
+							"title": "冒险时间到了！",
+							"altText": "冒险时间到了！嘿！你可以拿走我的地图。我已经有了最好的宝藏。最闪亮的岩石。我的朋友史拉皮。雪山。小心巨人。宝藏？大水。愚蠢地精。地精镇。暗黑森林。",
+							"credit": "Emi Tanji",
+							"expectsLightBackground": true
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/AWM/00013.webp"
+							},
+							"width": 2175,
+							"height": 2925,
+							"title": "创建你自己的地图！",
+							"altText": "创建你自己的地图！",
+							"credit": "Emi Tanji",
+							"expectsLightBackground": true
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/AWM/00014.webp"
+							},
+							"width": 2175,
+							"height": 2925,
+							"title": "什么东西在穆克的船下游动？",
+							"altText": "什么东西在穆克的船下游动？",
+							"credit": "Emi Tanji",
+							"expectsLightBackground": true
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/AWM/00015.webp"
+							},
+							"width": 2175,
+							"height": 2925,
+							"title": "穆克应该攀爬哪根藤蔓才能到达安全处？",
+							"altText": "穆克应该攀爬哪根藤蔓才能到达安全处？沼喉怪。安全处。凌弱怪。",
+							"credit": "Emi Tanji",
+							"expectsLightBackground": true
+						},
+						{
+							"type": "entries",
+							"id": "004",
+							"page": 14,
 							"entries": [
-								"障碍和敌人无法阻挡，只要我们团结协作。",
 								{
-									"ENG_name": "Thank you",
-									"name": "致谢",
-									"type": "entries",
-									"page": 44,
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/AWM/00016.webp"
+									},
+									"width": 2175,
+									"height": 2925,
+									"title": "哇！穆克找到了一个{@item 魔术袋}",
+									"altText": "哇！穆克找到了一个戏法袋。你从戏法袋里抽出了什么？",
+									"credit": "Emi Tanji",
+									"expectsLightBackground": true
+								},
+								"这是一个魔法袋子，可以召唤一个毛茸茸的朋友来协助你的冒险！",
+								"掷{@dice 2d6|两个，6面骰子}并使用下面的表格查看会出现什么动物及其个性！",
+								{
+									"type": "list",
+									"page": 14,
+									"style": "list-no-bullets",
+									"columns": 2,
+									"items": [
+										{
+											"type": "table",
+											"page": 14,
+											"colLabels": [
+												"{@dice d6|🎲}",
+												"动物类型"
+											],
+											"colStyles": [
+												"col-2 text-center",
+												"col-10"
+											],
+											"rows": [
+												[
+													"1",
+													"{@creature 巨獾}"
+												],
+												[
+													"2",
+													"{@creature 老鼠}"
+												],
+												[
+													"3",
+													"{@creature 猫头鹰}"
+												],
+												[
+													"4",
+													"狗"
+												],
+												[
+													"5",
+													"微型山羊"
+												],
+												[
+													"6",
+													"刺猬"
+												]
+											]
+										},
+										{
+											"type": "table",
+											"page": 14,
+											"colLabels": [
+												"{@dice d6|🎲}",
+												"动物性格"
+											],
+											"colStyles": [
+												"col-2 text-center",
+												"col-10"
+											],
+											"rows": [
+												[
+													"1",
+													"瞌睡虫"
+												],
+												[
+													"2",
+													"狂怒而疯狂！"
+												],
+												[
+													"3",
+													"为爱痴狂"
+												],
+												[
+													"4",
+													"快乐"
+												],
+												[
+													"5",
+													"调皮的"
+												],
+												[
+													"6",
+													"非常，非常悲伤"
+												]
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Word Find",
+							"name": "文字寻宝",
+							"type": "section",
+							"id": "005",
+							"page": 15,
+							"entries": [
+								{
+									"type": "table",
+									"page": 15,
+									"colStyles": [
+										"text-center",
+										"text-center",
+										"text-center",
+										"text-center",
+										"text-center",
+										"text-center",
+										"text-center",
+										"text-center",
+										"text-center",
+										"text-center",
+										"text-center",
+										"text-center",
+										"text-center",
+										"text-center",
+										"text-center"
+									],
+									"rows": [
+										[
+											"O",
+											"K",
+											"W",
+											"A",
+											"Z",
+											"T",
+											"H",
+											"B",
+											"E",
+											"B",
+											"F",
+											"O",
+											"N",
+											"N",
+											"B"
+										],
+										[
+											"W",
+											"E",
+											"U",
+											"F",
+											"W",
+											"P",
+											"R",
+											"R",
+											"U",
+											"I",
+											"L",
+											"T",
+											"Q",
+											"O",
+											"G"
+										],
+										[
+											"L",
+											"N",
+											"N",
+											"M",
+											"M",
+											"M",
+											"U",
+											"O",
+											"R",
+											"L",
+											"E",
+											"R",
+											"W",
+											"G",
+											"V"
+										],
+										[
+											"B",
+											"S",
+											"I",
+											"U",
+											"N",
+											"T",
+											"P",
+											"K",
+											"L",
+											"D",
+											"L",
+											"N",
+											"D",
+											"A",
+											"W"
+										],
+										[
+											"E",
+											"A",
+											"L",
+											"L",
+											"N",
+											"D",
+											"Y",
+											"E",
+											"X",
+											"L",
+											"V",
+											"Y",
+											"F",
+											"R",
+											"L"
+										],
+										[
+											"A",
+											"F",
+											"K",
+											"E",
+											"B",
+											"O",
+											"O",
+											"N",
+											"W",
+											"D",
+											"Z",
+											"W",
+											"W",
+											"D",
+											"Q"
+										],
+										[
+											"R",
+											"W",
+											"V",
+											"T",
+											"S",
+											"O",
+											"P",
+											"K",
+											"N",
+											"H",
+											"X",
+											"C",
+											"N",
+											"U",
+											"J"
+										],
+										[
+											"U",
+											"D",
+											"H",
+											"L",
+											"H",
+											"I",
+											"G",
+											"U",
+											"C",
+											"X",
+											"E",
+											"V",
+											"B",
+											"T",
+											"G"
+										],
+										[
+											"A",
+											"R",
+											"L",
+											"L",
+											"L",
+											"O",
+											"B",
+											"E",
+											"H",
+											"O",
+											"L",
+											"D",
+											"E",
+											"R",
+											"B"
+										],
+										[
+											"L",
+											"U",
+											"G",
+											"N",
+											"O",
+											"L",
+											"L",
+											"N",
+											"Z",
+											"E",
+											"R",
+											"V",
+											"T",
+											"U",
+											"B"
+										],
+										[
+											"L",
+											"H",
+											"Z",
+											"H",
+											"T",
+											"T",
+											"Q",
+											"R",
+											"T",
+											"Q",
+											"T",
+											"E",
+											"G",
+											"B",
+											"O"
+										],
+										[
+											"T",
+											"E",
+											"E",
+											"E",
+											"T",
+											"T",
+											"E",
+											"L",
+											"U",
+											"B",
+											"I",
+											"B",
+											"D",
+											"B",
+											"L"
+										],
+										[
+											"C",
+											"R",
+											"K",
+											"V",
+											"Q",
+											"F",
+											"H",
+											"O",
+											"I",
+											"S",
+											"E",
+											"J",
+											"Z",
+											"K",
+											"S"
+										],
+										[
+											"O",
+											"R",
+											"E",
+											"W",
+											"O",
+											"R",
+											"D",
+											"R",
+											"V",
+											"A",
+											"B",
+											"A",
+											"L",
+											"P",
+											"M"
+										],
+										[
+											"V",
+											"A",
+											"F",
+											"X",
+											"E",
+											"R",
+											"P",
+											"A",
+											"R",
+											"B",
+											"I",
+											"S",
+											"R",
+											"K",
+											"M"
+										]
+									]
+								},
+								{
+									"type": "inset",
+									"id": "006",
+									"page": 15,
 									"entries": [
 										{
-											"type": "quote",
-											"entries": [
-												"致所有支持、鼓励并加入我这次冒险的人。特别感谢亚当·李，D&D的世界建筑师，他拥有发现万物美好并为他人照亮道路的天赋。",
-												"我们可以一起完成如此多的事情，我很感激看到由《龙与地下城》社群培育出的善意、欢笑和支持。让我们保持友善，让我们行善举，让我们一起讲述我们的故事。"
-											],
-											"by": "艾米"
+											"type": "list",
+											"page": 15,
+											"style": "list-no-bullets",
+											"columns": 2,
+											"items": [
+												"冒险",
+												"眼魔",
+												"熊地精",
+												"鲨蜥",
+												"啵灵蛙",
+												"龙",
+												"卓尔",
+												"精灵",
+												"呋噜",
+												"鬣狗人",
+												"地精",
+												"英雄",
+												"天狗",
+												"穆克",
+												"枭熊",
+												"巨魔"
+											]
 										}
-									],
-									"id": "027"
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/AWM/00016a.webp"
+									},
+									"width": 813,
+									"height": 718,
+									"title": "{@creature 松鸟|AWM} 不太会阅读... 你能帮帮忙吗？",
+									"altText": "松鸟不太会阅读... 你能帮帮忙吗？",
+									"credit": "Emi Tanji",
+									"expectsLightBackground": true
 								}
-							],
-							"id": "026"
+							]
 						},
 						{
 							"type": "image",
 							"href": {
 								"type": "internal",
-								"path": "book/AWM/00040.webp"
+								"path": "book/AWM/00017.webp"
 							},
+							"width": 2175,
+							"height": 2925,
+							"title": "呃哦... 看起来我们遇到了一些... 交友术？",
+							"altText": "呃哦... 看来我们遇到了一些... 朋友？熊地精也是一种地精类生物。它们超级大... 大概有7英尺高！它们总喜欢对我们地精发号施令！",
 							"credit": "Emi Tanji",
-							"expectsLightBackground": true,
-							"width": 663,
-							"height": 508
+							"expectsLightBackground": true
+						},
+						{
+							"type": "entries",
+							"id": "007",
+							"page": 17,
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/AWM/00018.webp"
+									},
+									"width": 2175,
+									"height": 651,
+									"title": "魅力检定！",
+									"altText": "魅力检定！协助穆克选择恰当的言辞来通过熊地精警卫！",
+									"credit": "Emi Tanji",
+									"expectsLightBackground": true
+								},
+								{
+									"type": "list",
+									"page": 17,
+									"style": "list-no-bullets",
+									"items": [
+										{
+											"ENG_name": "Exclamation:",
+											"name": "感叹：",
+											"type": "item",
+											"entries": [
+												""
+											]
+										},
+										{
+											"ENG_name": "Adjective:",
+											"name": "形容词：",
+											"type": "item",
+											"entries": [
+												""
+											]
+										},
+										{
+											"ENG_name": "Adjective:",
+											"name": "形容词：",
+											"type": "item",
+											"entries": [
+												""
+											]
+										},
+										{
+											"ENG_name": "Time of day:",
+											"name": "白昼时间：",
+											"type": "item",
+											"entries": [
+												""
+											]
+										},
+										{
+											"ENG_name": "Adjective:",
+											"name": "形容词：",
+											"type": "item",
+											"entries": [
+												""
+											]
+										},
+										{
+											"ENG_name": "Plural noun:",
+											"name": "复数名词:",
+											"type": "item",
+											"entries": [
+												""
+											]
+										},
+										{
+											"ENG_name": "Number:",
+											"name": "编号：",
+											"type": "item",
+											"entries": [
+												""
+											]
+										},
+										{
+											"ENG_name": "Scary noun:",
+											"name": "恐怖名词：",
+											"type": "item",
+											"entries": [
+												""
+											]
+										},
+										{
+											"ENG_name": "Adjective:",
+											"name": "形容词：",
+											"type": "item",
+											"entries": [
+												""
+											]
+										},
+										{
+											"ENG_name": "Name of person in room:",
+											"name": "房间内人员姓名：",
+											"type": "item",
+											"entries": [
+												""
+											]
+										},
+										{
+											"ENG_name": "Noun:",
+											"name": "名词:",
+											"type": "item",
+											"entries": [
+												""
+											]
+										},
+										{
+											"ENG_name": "Verb:",
+											"name": "动词:",
+											"type": "item",
+											"entries": [
+												""
+											]
+										},
+										{
+											"ENG_name": "Adverb:",
+											"name": "副词：",
+											"type": "item",
+											"entries": [
+												""
+											]
+										}
+									]
+								},
+								{
+									"type": "list",
+									"page": 17,
+									"style": "list-no-bullets",
+									"columns": 2,
+									"items": [
+										{
+											"ENG_name": "Instructions",
+											"name": "说明",
+											"type": "inset",
+											"id": "008",
+											"page": 17,
+											"entries": [
+												"一旦你选好了你的词语，翻到下一页并按所列顺序填空。大声朗读穆克的演讲，并决定他是否能凭借魅力通过地精熊人的考验！"
+											]
+										},
+										{
+											"ENG_name": "Definitions",
+											"name": "定义",
+											"type": "inset",
+											"id": "009",
+											"page": 17,
+											"entries": [
+												{
+													"type": "list",
+													"page": 17,
+													"style": "list-no-bullets",
+													"items": [
+														{
+															"ENG_name": "Adjective:",
+															"name": "形容词：",
+															"type": "item",
+															"entries": [
+																"一个{@i 描述}某物或某人的词语"
+															]
+														},
+														{
+															"ENG_name": "Adverb:",
+															"name": "副词：",
+															"type": "item",
+															"entries": [
+																"一个动词（动作）通常以 \"ly\" 结尾"
+															]
+														},
+														{
+															"ENG_name": "Noun:",
+															"name": "名词:",
+															"type": "item",
+															"entries": [
+																"一个人、地点或事物"
+															]
+														},
+														{
+															"ENG_name": "Plural Noun:",
+															"name": "复数名词:",
+															"type": "item",
+															"entries": [
+																"多个人、地点或事物"
+															]
+														},
+														{
+															"ENG_name": "Verb:",
+															"name": "动词:",
+															"type": "item",
+															"entries": [
+																"Ab 动作，或某人做的某事"
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"id": "00a",
+							"page": 18,
+							"entries": [
+								{
+									"type": "insetReadaloud",
+									"id": "00b",
+									"page": 18,
+									"style": "text-center",
+									"entries": [
+										"{@footnote __________________|感叹号} {@footnote __________________|形容词} 警卫！",
+										"这难道不是一个{@footnote __________________|形容词} {@footnote __________________|一天中的时间}吗？",
+										"我的名字是穆克，那个{@footnote __________________|形容词}！",
+										"你可能听说过我，因为我的{@footnote __________________|复数名词}相当有名！",
+										"我战胜{@footnote __________________|数值}个{@footnote __________________|恐怖名词}的胜利之歌都是真的！",
+										"你的{@footnote __________________|形容词}领袖，{@footnote __________________|房间内人员姓名}允许我通过。",
+										"但是！如果你敢给我们任何{@footnote __________________|名词}，我的搭档就会{@footnote __________________|动词}你们两个！",
+										"小心，{@creature 松鸟|AWM}战斗起来相当{@footnote __________________|副词}！"
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/AWM/00019.webp"
+									},
+									"width": 2175,
+									"height": 2925,
+									"credit": "Emi Tanji",
+									"expectsLightBackground": true
+								}
+							]
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/AWM/00020.webp"
+							},
+							"width": 2175,
+							"height": 2925,
+							"title": "协助穆克在骷髅之前找到{@creature 松鸟|AWM}！",
+							"altText": "协助穆克在骷髅之前找到鸟松鼠！",
+							"credit": "Emi Tanji",
+							"expectsLightBackground": true
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/AWM/00021.webp"
+							},
+							"width": 2175,
+							"height": 2925,
+							"title": "矮人们失去了他们所有的头发！",
+							"altText": "这些矮人失去了所有的毛发！给这四位勇敢的矮人族裔画上胡子/眉毛/头发！像我一样！",
+							"credit": "Emi Tanji",
+							"expectsLightBackground": true
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/AWM/00022.webp"
+							},
+							"width": 2175,
+							"height": 2925,
+							"title": "即使是最勇敢的地精也会害怕！",
+							"altText": "即使是最勇敢的地精也会害怕！画出狄摩高根的两个头。我不敢看！",
+							"credit": "Emi Tanji",
+							"expectsLightBackground": true
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/AWM/00023.webp"
+							},
+							"width": 2175,
+							"height": 2925,
+							"title": "这是宝藏吗？",
+							"altText": "这是宝藏吗？",
+							"credit": "Emi Tanji",
+							"expectsLightBackground": true
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/AWM/00024.webp"
+							},
+							"width": 2175,
+							"height": 2925,
+							"title": "破译宝藏箱子中的秘密卷轴！",
+							"altText": "破译宝藏箱子里的秘密卷轴！结束！感谢你与我们一同冒险！",
+							"credit": "Emi Tanji",
+							"expectsLightBackground": true
 						}
-					],
-					"id": "025"
+					]
+				},
+				{
+					"ENG_name": "Answers",
+					"name": "答案",
+					"type": "section",
+					"id": "00c",
+					"page": 24,
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/AWM/00025.webp"
+							},
+							"width": 2175,
+							"height": 2925,
+							"title": "答案",
+							"altText": "穆克应该攀爬哪根藤蔓才能到达安全处？攀爬3号藤蔓！秘密卷轴：重要的不是我们拥有什么......而是我们拥有谁。",
+							"credit": "Emi Tanji",
+							"expectsLightBackground": true
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/AWM/00026.webp"
+							},
+							"width": 2596,
+							"height": 3433,
+							"title": "如果你喜欢和穆克一起冒险，前方还有更多精彩！继续阅读以了解更多关于穆克、他的地精同伴以及{@u 你}可以参与的冒险！",
+							"altText": "如果你喜欢与穆克一起冒险，前方还有更多精彩！继续阅读以了解更多关于穆克、他的地精同伴以及你可以参与的冒险！",
+							"credit": "Emi Tanji",
+							"expectsLightBackground": true
+						}
+					]
+				},
+				{
+					"ENG_name": "Muk and Friends",
+					"name": "穆克和朋友们",
+					"type": "section",
+					"id": "00d",
+					"page": 26,
+					"entries": [
+						"欢迎来到穆克的世界，一个勇敢的小地精和他忠诚的伙伴{@creature 松鸟|AWM}。他们和一群地精朋友一起生活在丹克伍德森林深处的哥布林镇，挖掘幼虫、建造泥屋，并为他们的地精盛宴采集可食用的坚果、根茎和浆果。",
+						"但丹克伍德是一个充满魔法的地方，居住着怪物和古老的遗迹。穆克在探索家园的过程中经历了许多冒险，并遇到了许多生物\u2014\u2014有些友好，有些则非常暴躁。",
+						"穆克的朋友，古怪的侏儒法师杜恩瓦格尔\u2014\u2014创造了{@creature 松鸟|AWM}的那位\u2014\u2014在丹克伍德为穆克安排了各种各样的任务。杜恩瓦格尔总是想出新的实验，并需要实验材料，这让穆克和他的朋友们忙个不停。",
+						{
+							"ENG_name": "How to Play!",
+							"name": "如何进行游戏！",
+							"type": "section",
+							"id": "00e",
+							"page": 26,
+							"entries": [
+								"这本冒险手册是专为一名成人DM设计，向孩子们介绍如何在{@style 龙与地下城|dnd-font}中扮演角色和讲述故事。",
+								"故事点子是基本的，不需要地图。你需要的只是一些骰子、铅笔、纸张和你们的想象力。 每个冒险点子都有一个基本的问题要解决，你可以要求玩家回答一些关于故事的问题。 在这次冒险中，你将与你的玩家共同创造故事，让他们适应用自己的想象力来创造世界并在其中讲述故事。 这些问题都是扩大想象力的建议，因此你可以添加自己的问题并加以扩展。 通常情况下，新玩家并不知道他们可以想到他们的想象力可以变出{@b 任何东西}，所以需要地下城主的一些提示才能打破可能的界限，进入一个有着的魔法和奇迹存在的想象世界的空间。"
+							]
+						},
+						{
+							"ENG_name": "The Heroes",
+							"name": "英雄们",
+							"type": "section",
+							"id": "00f",
+							"page": 26,
+							"entries": [
+								"这本冒险活动手册有自己的角色阵容，供玩家作为冒险者使用。 每个英雄都有自己的背景故事，你可以向玩家介绍这些故事，让他们了解自己的角色是怎样的。 也可以让玩家自己编造一个全新的背景故事。",
+								{
+									"ENG_name": "You Like Adventure Hooks?",
+									"name": "你喜欢冒险点子吗？",
+									"type": "inset",
+									"id": "010",
+									"page": 26,
+									"entries": [
+										"这里列出了穆克和朋友们可以在阴林的有趣点子。 用它们来启发冒险！",
+										"投掷一个{@dice d8}：",
+										{
+											"type": "table",
+											"page": 26,
+											"colLabels": [
+												"d8",
+												"冒险引子"
+											],
+											"colStyles": [
+												"col-2 text-center",
+												"col-10"
+											],
+											"rows": [
+												[
+													"1",
+													"树精的银橡子（我打赌她一定会喜欢它的）"
+												],
+												[
+													"2",
+													"独角兽的魔法角（有东西在找它吗？）"
+												],
+												[
+													"3",
+													"金哨子（吹哨子有什么用？）"
+												],
+												[
+													"4",
+													"一只金质小鸟的塑像（它会活过来吗？）"
+												],
+												[
+													"5",
+													"一根失传已久的Gob-Stick（对所有地精来说都是神圣的！）"
+												],
+												[
+													"6",
+													"一张藏宝图！ (它通向哪里？ 有什么宝藏？）"
+												],
+												[
+													"7",
+													"一只迷失的水獭。 (它的记忆是否是被邪恶鬼婆的法术抹除掉的？）"
+												],
+												[
+													"8",
+													"一个头骨。 (它想找到剩下的骨头吗？）"
+												]
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Muk and Birdsquirrel",
+									"name": "穆克和松鸟",
+									"type": "entries",
+									"id": "011",
+									"page": 26,
+									"entries": [
+										"穆克和{@creature 松鸟|AWM}是一对形影不离的冒险家。 他们喜欢一起在森林里探险和交朋友。 他们喜欢去调查其他地精害怕的地方 ，希望为地精法师杜恩瓦格找到奇物。",
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "book/AWM/00028.webp"
+											},
+											"width": 1450,
+											"height": 1417,
+											"credit": "Emi Tanji",
+											"expectsLightBackground": true
+										}
+									]
+								},
+								{
+									"ENG_name": "Ungo",
+									"name": "乌戈",
+									"type": "entries",
+									"id": "012",
+									"page": 26,
+									"entries": [
+										"乌戈曾经是最凶猛的地精战士，传说他曾打败过许多兽人。后来他放弃了暴力，现在住在一个山洞里，满足于在阴林游荡，与树木交谈坐在溪流旁 看着银色的小鱼在水里游来游去。他比周围的任何地精都更了解阴林，他的内心充满了智慧和善良。",
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "book/AWM/00029.webp"
+											},
+											"width": 1846,
+											"height": 2521,
+											"credit": "Emi Tanji",
+											"expectsLightBackground": true
+										}
+									]
+								},
+								{
+									"ENG_name": "Wam and Rikruk",
+									"name": "瓦姆和里鲁克",
+									"type": "entries",
+									"id": "013",
+									"page": 27,
+									"entries": [
+										"瓦姆是一个坚强的战士，但也有一颗金子般的心。 她比穆克年长，她教会了穆克如何在阴阴林生存。 几季前，她在树林里发现了一个被遗弃的小地精，她给他取名为里鲁克。 瓦姆认为里鲁克是妖精之神赐给她的，她要把他培养成一个伟大的妖精酋长。",
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "book/AWM/00031.webp"
+											},
+											"width": 1446,
+											"height": 2179,
+											"credit": "Emi Tanji",
+											"expectsLightBackground": true
+										}
+									]
+								},
+								{
+									"ENG_name": "Lord Fishbone",
+									"name": "鱼刺领主",
+									"type": "entries",
+									"id": "014",
+									"page": 27,
+									"entries": [
+										"鱼刺领主曾用名古克 Guk。古克一直梦想着传说中位于阴林外的大城市。 但从来没有地精敢去那里。 有一天古克失踪了，有传言说他终于找到了大城市。 几年后，古克以鱼刺领主的身份回来了，他穿着人类的衣服，留着优雅的小胡子。 鱼刺领主讲了很多关于他们在大城市里经历的各种奇异冒险的故事。鱼刺领主勇敢、充满活力，是一位潇洒、大胆的冒险家。",
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "book/AWM/00030.webp"
+											},
+											"width": 1588,
+											"height": 2042,
+											"credit": "Emi Tanji",
+											"expectsLightBackground": true
+										}
+									]
+								},
+								{
+									"ENG_name": "NPCs",
+									"name": "NPCs",
+									"type": "inset",
+									"id": "015",
+									"page": 27,
+									"entries": [
+										"以下NPC可供你在游戏中使用。当角色们进行冒险时，可以随意让他们出现来协助或阻碍角色。他们可能拥有队伍解决问题所需的信息，或者可以帮助击败怪物或治疗受伤的冒险者。",
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "book/AWM/00031a.webp"
+											},
+											"width": 708,
+											"height": 630,
+											"maxHeight": 250,
+											"credit": "Emi Tanji",
+											"expectsLightBackground": true
+										},
+										{
+											"ENG_name": "The Wizard Doonwaggle",
+											"name": "法师杜恩瓦格",
+											"type": "entries",
+											"id": "016",
+											"page": 27,
+											"entries": [
+												"杜恩瓦格尔是一位古怪的侏儒法师，他涉足丹克伍德的自然魔法，并用它来创造杂交生物和机械玩具。"
+											]
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "book/AWM/00031b.webp"
+											},
+											"width": 1668,
+											"height": 772,
+											"maxHeight": 250,
+											"credit": "Emi Tanji",
+											"expectsLightBackground": true
+										},
+										{
+											"ENG_name": "Dankwood Elders",
+											"name": "暗木长老",
+											"type": "entries",
+											"id": "017",
+											"page": 27,
+											"entries": [
+												"暗木长者是三位被选出来引导暗木地精的部落成员。格里布尔是一名萨满，戈姆是一名战士，金斯特是一名工匠。"
+											]
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "book/AWM/00031c.webp"
+											},
+											"width": 844,
+											"height": 761,
+											"maxHeight": 250,
+											"credit": "Emi Tanji",
+											"expectsLightBackground": true
+										},
+										{
+											"ENG_name": "Grubbah the Bugbear",
+											"name": "熊地精格鲁巴",
+											"type": "entries",
+											"id": "018",
+											"page": 27,
+											"entries": [
+												"格拉巴是一个熊地精，她是所有熊地精的首领。她强壮、凶猛，而且总是饥饿，所以如果你想和她做朋友，食物是最好的方式。"
+											]
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "book/AWM/00031d.webp"
+											},
+											"width": 813,
+											"height": 615,
+											"maxHeight": 250,
+											"credit": "Emi Tanji",
+											"expectsLightBackground": true
+										},
+										{
+											"ENG_name": "Slurpy",
+											"name": "咕噜咕噜",
+											"type": "entries",
+											"id": "019",
+											"page": 27,
+											"entries": [
+												"斯拉皮是穆克的地精朋友，住在大水附近。他热爱寻宝，知道许多秘密地点。他最珍视的财产是他的最闪亮之岩，这是他机灵地从一位名叫格雷格的愚蠢人类冒险者那里赢来的。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Adventure Ideas",
+							"name": "冒险点子",
+							"type": "section",
+							"id": "01a",
+							"page": 28,
+							"entries": [
+								"每次冒险都有一个无需诉诸战斗就能解决的办法。 这些问题的目的是为你的玩家提供一些素材，以唤起对如何解决问题的思考。 每个故事都有多种可能的讲述方式，因此请打开思维的闸门，让你的想象力引导道路！",
+								{
+									"ENG_name": "The Great Kroom",
+									"name": "伟大的喀戎姆",
+									"type": "entries",
+									"id": "01b",
+									"page": 28,
+									"entries": [
+										"树林里传来隆隆声，乌戈知道那是{@creature 紫虫，伟大的喀戎姆|AWM|紫虫，伟大的喀戎姆}的回来了。 在阴林地下挖掘巨大的隧道。 问题是，乌戈已经忘了上次喀戎姆是什么时候来的，地精是怎么把他赶走的。 喀戎姆来过这里。 如果它继续挖下去，整个哥布镇都会掉进隧道里！",
+										{
+											"ENG_name": "Questions to ask:",
+											"name": "要问的问题：",
+											"type": "list",
+											"page": 28,
+											"items": [
+												"你认为他们是如何赶走喀戎姆的？ 他们迷惑了他？ 是法术吗？",
+												"也许可以问问法师杜恩瓦格，看看他是怎么想的！",
+												"紫虫喜欢什么？ 它们讨厌什么？"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "The Hungry Otyugh",
+									"name": "饥饿的食腐兽",
+									"type": "entries",
+									"id": "01c",
+									"page": 28,
+									"entries": [
+										"没人喜欢{@creature 饥饿食腐兽|AWM|食腐兽}，因为它又臭又会发出难听的声音。 他可能脾气很坏，但穆克知道这只是 因为他饿了。 问题是，{@creature 饥饿食腐兽|AWM|食腐兽}吃的所有东西都很恶心，而且它还在靠近哥布镇，寻找更多的食物。",
+										{
+											"ENG_name": "Questions to ask:",
+											"name": "要问的问题：",
+											"type": "list",
+											"page": 28,
+											"items": [
+												"穆克怎样才能帮助这个可怜又讨人厌的怪物？",
+												"食腐兽会吃哪些恶心的东西？在哪里可以找到？",
+												"有什么办法能让食腐兽不那么臭？"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Birdsquirrel's Journey",
+									"name": "松鸟的旅程",
+									"type": "entries",
+									"id": "01d",
+									"page": 28,
+									"entries": [
+										"据说，{@creature 松鸟|AWM}是由疯法师杜恩瓦格创造的。 但是{@creature 松鸟|AWM}现在带着穆克去森林深处寻找松鸟一家。 唯一的问题是它们被一个{@creature 阴林鬼婆|AWM|邪恶的鬼婆}抓走了。她想用这些独特而神奇的生物做她的最新的汤料！",
+										{
+											"ENG_name": "Questions to ask:",
+											"name": "要问的问题：",
+											"type": "list",
+											"page": 28,
+											"items": [
+												"鬼婆的汤里还有哪些配料？",
+												"鬼婆为什么要煲汤？",
+												"她脾气暴躁吗？ 还是她有软肋？",
+												"她有宠物吗？",
+												"她孤独吗？"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Getting Knocked Koo-Koo",
+									"name": "被打晕",
+									"type": "inset",
+									"id": "01e",
+									"page": 28,
+									"entries": [
+										"阴林中的大部分遭遇战都可以无需战斗即可解决。 但如果地精在混战中失去所有的生命值，让他们被打晕过去，醒来后就会陷入更加困难的境地。例如：如果穆克与熊地精打输了，他可能会在鬼婆大锅里醒来，并必须用语言说服自己不要成为药水的一部分。 或者，当从一伙讨厌的地精手中逃脱时，他不小心从树上摔了下来。让他像火鸡一样被绑在暴躁的地精营地里醒来。"
+									]
+								},
+								{
+									"ENG_name": "Doonwaggle's Contraption",
+									"name": "杜恩瓦格的装置",
+									"type": "entries",
+									"id": "01f",
+									"page": 28,
+									"entries": [
+										"杜恩瓦格需要三样东西来做他最新的魔法实验，他希望穆克和他的朋友们能帮他拿到这三样东西。",
+										{
+											"ENG_name": "The items are:",
+											"name": "这三样东西是：",
+											"type": "list",
+											"page": 28,
+											"items": [
+												"一颗来自淡水蚌的珍珠，淡水蚌只生活在水晶洞内的水域中，由一群{@creature 水晶洞穴人鱼|AWM|人鱼}守护。",
+												"来自神圣的波恩图Boontu树的金色坚果，传说这棵树上充满着{@creature 布恩图猴|AWM|脾气暴躁的猴子}。",
+												"一根来自{@creature 羽蛇萨莱斯|AWM|萨莱斯} 的羽毛，Saleeth 是一只温柔的羽蛇，她住在森林中一座高山上的破庙里。"
+											]
+										},
+										"一旦杜恩瓦格拿到材料，他说这个装置将是他迄今为止最好的作品！",
+										{
+											"ENG_name": "Questions to ask:",
+											"name": "要问的问题：",
+											"type": "list",
+											"page": 28,
+											"items": [
+												"{@creature 水晶洞穴人鱼|AWM|人鱼}想要什么来换取珍珠？ 一首歌？ 一块宝石？",
+												"如何在不惊动{@creature 布恩图猴|AWM|脾气暴躁的猴子}的情况下拿到坚果？",
+												"{@creature 羽蛇萨莱斯|AWM|萨莱斯}想要什么来换取羽毛？",
+												"杜恩瓦格的装置建成后能做什么？"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "The Big Water Slurpent",
+									"name": "大水蛞",
+									"type": "entries",
+									"id": "020",
+									"page": 28,
+									"entries": [
+										"大水Big Water是一个很少有地精去的地方。 长老们说大水中央的小岛上曾经矗立着一座伟大的法师塔。法师创造了一个巨大的怪物在岛上游来游去，守护着塔里所有的宝藏。 传说很久以前的一天，法师施展了一个禁咒，整个塔沉入湖中，所有的宝藏也随之沉入湖中。",
+										"大水是一个奇特而神奇的地方，很少有人 会去，但鱼刺领主说，如果有人能游到水下，进入塔里，就能看到那里是否有宝藏。",
+										{
+											"ENG_name": "Questions to ask:",
+											"name": "要问的问题：",
+											"type": "list",
+											"page": 28,
+											"items": [
+												"塔在水下多深？",
+												"关于塔内宝藏的传言有哪些？ 是什么？",
+												"如何通过{@creature 大水蛞|AWM}？ 它喜欢吃妖精吗？ 你能用魔法缩小它吗？",
+												"有没有一种用森林植物制成的魔法药水可以让穆克和他的伙伴们在水下呼吸？"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Dealing with Dummy Goblins",
+									"name": "对付蠢蠢地精",
+									"type": "entries",
+									"id": "021",
+									"page": 28,
+									"entries": [
+										"{@creature 蠢蠢地精|AWM|蠢蠢地精部落}离的很远，他们不会给我们带来太多麻烦。 但就在今天早上，瓦姆发现一些蠢蠢地精溜进了营地，偷走了 里鲁克最喜欢的玩具--双头蛇拨浪鼓。 她知道是他们干的，因为瓦姆是个追踪专家，她发现了他们的脚印。",
+										"蠢蠢地精并不都是坏人，也许他们拿走拨浪鼓是有原因的。 要想知道如何在不战斗的情况下拿回拨浪鼓。",
+										{
+											"ENG_name": "Questions to ask:",
+											"name": "要问的问题：",
+											"type": "list",
+											"page": 28,
+											"items": [
+												"蠢蠢地精为什么要拿走拨浪鼓？",
+												"拨浪鼓有魔力吗？",
+												"拨浪鼓藏在哪里？",
+												"穆克怎样才能在不引起争斗的情况下拿到拨浪鼓？"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "The Dwarf King",
+									"name": "矮人国王",
+									"type": "entries",
+									"id": "022",
+									"page": 29,
+									"entries": [
+										"就在你到达雪山的时候，有一个洞穴，许多地精在高脚杯酒吧都听说过这个洞穴。 因为传说这里住着一个{@creature 山丘巨人布洛博|AWM|脾气非常暴躁的山丘巨人}。据说山丘巨人会吃掉地精，所以只有愚蠢的地精才会去巨人洞穴。",
+										"但还有一个传言说，很久以前，有一个矮人国王去那里寻找传说中的宝石--鹰眼。但他一去不回。 地精看到过矮人在寻找他们的国王，但他们从来没有去过，地精害怕矮人，所以没人告诉他们关于国王的事情。",
+										"但现在穆克在阴林发现了一个哭泣的{@creature 矮人|AWM}、她是国王的女儿，她想念她的父亲。 穆克和他的朋友们能勇敢地面对山丘巨人，找到矮人国王吗？",
+										{
+											"ENG_name": "Questions to ask:",
+											"name": "要问的问题：",
+											"type": "list",
+											"page": 29,
+											"items": [
+												"穆克是如何通过暴躁的山丘巨人的？",
+												"鹰眼是否让矮人国王进入了魔法的沉睡状态？",
+												"拯救国王会让矮人和地精成为朋友吗？"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Monsters",
+							"name": "怪物",
+							"type": "section",
+							"id": "023",
+							"page": 29,
+							"entries": [
+								"以下怪物经过简化/修改，以在Muk历险记中使用。 以下数据供你参考。 你可以根据自己的故事情节随意调整或添加。",
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/AWM/00032.webp"
+									},
+									"width": 1277,
+									"height": 1315,
+									"credit": "Emi Tanji",
+									"expectsLightBackground": true
+								},
+								{
+									"ENG_name": "Big Water Slurpent",
+									"name": "大水蛞",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "AWM",
+									"page": 29,
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Big Water Slurpent",
+									"name": "大水蛞",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "AWM",
+									"page": 29,
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Birdsquirrel",
+									"name": "松鸟",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "AWM",
+									"page": 30,
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Birdsquirrel",
+									"name": "松鸟",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "AWM",
+									"page": 30,
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Boontu Monkey",
+									"name": "布恩图猴",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "AWM",
+									"page": 30,
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Boontu Monkey",
+									"name": "布恩图猴",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "AWM",
+									"page": 30,
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Crystal Cave Merfolk",
+									"name": "水晶洞穴人鱼",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "AWM",
+									"page": 31,
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Crystal Cave Merfolk",
+									"name": "水晶洞穴人鱼",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "AWM",
+									"page": 31,
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Dankwood Hag",
+									"name": "阴林鬼婆",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "AWM",
+									"page": 31,
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Dankwood Hag",
+									"name": "阴林鬼婆",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "AWM",
+									"page": 31,
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Dum-Dum Goblin",
+									"name": "蠢蠢地精",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "AWM",
+									"page": 32,
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Dum-Dum Goblin",
+									"name": "蠢蠢地精",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "AWM",
+									"page": 32,
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Dwarf",
+									"name": "矮人",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "AWM",
+									"page": 32,
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Dwarf",
+									"name": "矮人",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "AWM",
+									"page": 32,
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Great Kroom, Purple Worm",
+									"name": "紫虫，伟大的喀戎姆",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "AWM",
+									"page": 33,
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Great Kroom, Purple Worm",
+									"name": "紫虫，伟大的喀戎姆",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "AWM",
+									"page": 33,
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Hangry Otyugh",
+									"name": "饥饿食腐兽",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "AWM",
+									"page": 33,
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Hangry Otyugh",
+									"name": "饥饿食腐兽",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "AWM",
+									"page": 33,
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Hill Giant, Blorbo",
+									"name": "山丘巨人布洛博",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "AWM",
+									"page": 34,
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Hill Giant, Blorbo",
+									"name": "山丘巨人布洛博",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "AWM",
+									"page": 34,
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Saleeth the Couatl",
+									"name": "羽蛇萨莱斯",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "AWM",
+									"page": 34,
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Saleeth the Couatl",
+									"name": "羽蛇萨莱斯",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "AWM",
+									"page": 34,
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								}
+							]
+						},
+						{
+							"ENG_name": "Dankwood Goblins",
+							"name": "阴林地精",
+							"type": "section",
+							"id": "024",
+							"page": 35,
+							"entries": [
+								{
+									"type": "quote",
+									"entries": [
+										"啊，阴林地精！ 我曾四处冒险却从未见过如此独特有趣的地精。也许是阴林本身的魔力，因为这片森林据说曾是一位强大的耐瑟瑞尔的圣所，但谁又说得准呢？ 在这个奇妙的世界，无论你走到哪里，都会有新的东西让人目不暇接，叹为观止！"
+									],
+									"by": "守护者Leafy Skiptoes"
+								},
+								"阴林的地精和其他普通的地精没什么两样，但他们比世界上野蛮粗野的地精更温和、更有艺术气息。",
+								"他们好奇心强，与森林中的小动物建立了魔法的联系，他们经常与这些小动物成为朋友。 他们敏捷，喜欢探索。 因此，他们是伟大的冒险家和向导。",
+								{
+									"ENG_name": "Goblin (Dankwood)",
+									"name": "地精 (阴林)",
+									"type": "statblock",
+									"tag": "race",
+									"source": "AWM",
+									"page": 35,
+									"style": "narrow"
+								}
+							]
+						},
+						{
+							"ENG_name": "Character Sheets",
+							"name": "角色卡",
+							"type": "section",
+							"id": "025",
+							"page": 35,
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/AWM/00033.webp"
+									},
+									"width": 2175,
+									"height": 2100,
+									"title": "与穆克一起冒险：角色表",
+									"altText": "与穆克一起冒险：角色表",
+									"credit": "Emi Tanji",
+									"expectsLightBackground": true
+								},
+								"创建你自己的{@i 拥有}暗木林冒险者，或扮演一个地精英雄！",
+								{
+									"type": "gallery",
+									"images": [
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "book/AWM/00005.webp"
+											},
+											"width": 2175,
+											"height": 2925,
+											"title": "{@5etoolsImg 空白角色卡|pdf/AWM/Blank_Sheet.pdf}",
+											"credit": "Emi Tanji",
+											"expectsLightBackground": true
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "book/AWM/00028.webp"
+											},
+											"width": 1450,
+											"height": 1417,
+											"title": "{@5etoolsImg 穆克与鸟松鼠（伙伴）|pdf/AWM/Muk.pdf}",
+											"credit": "Emi Tanji",
+											"expectsLightBackground": true
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "book/AWM/00031.webp"
+											},
+											"width": 1446,
+											"height": 2179,
+											"title": "{@5etoolsImg 瓦姆与里克鲁克|pdf/AWM/Wam_Rikruk.pdf}",
+											"credit": "Emi Tanji",
+											"expectsLightBackground": true
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "book/AWM/00029.webp"
+											},
+											"width": 1846,
+											"height": 2521,
+											"title": "{@5etoolsImg 乌戈|pdf/AWM/Ungo.pdf}",
+											"credit": "Emi Tanji",
+											"expectsLightBackground": true
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "book/AWM/00030.webp"
+											},
+											"width": 1588,
+											"height": 2042,
+											"title": "{@5etoolsImg 鱼刺领主|pdf/AWM/Fishbone.pdf}",
+											"credit": "Emi Tanji",
+											"expectsLightBackground": true
+										}
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/AWM/00038.webp"
+									},
+									"width": 2175,
+									"height": 2925,
+									"credit": "Emi Tanji",
+									"expectsLightBackground": true
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/AWM/00039.webp"
+									},
+									"width": 2175,
+									"height": 2925,
+									"title": "成为英雄。打出D&D。为孩子们。",
+									"credit": "Emi Tanji",
+									"expectsLightBackground": true
+								},
+								{
+									"type": "inset",
+									"id": "026",
+									"page": 44,
+									"style": "text-center",
+									"entries": [
+										"障碍和敌人无法阻挡，只要我们团结协作。",
+										{
+											"ENG_name": "Thank you",
+											"name": "致谢",
+											"type": "entries",
+											"id": "027",
+											"page": 44,
+											"entries": [
+												{
+													"type": "quote",
+													"entries": [
+														"致所有支持、鼓励并加入我这次冒险的人。特别感谢亚当·李，D&D的世界建筑师，他拥有发现万物美好并为他人照亮道路的天赋。",
+														"我们可以一起完成如此多的事情，我很感激看到由《龙与地下城》社群培育出的善意、欢笑和支持。让我们保持友善，让我们行善举，让我们一起讲述我们的故事。"
+													],
+													"by": "艾米"
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/AWM/00040.webp"
+									},
+									"width": 663,
+									"height": 508,
+									"credit": "Emi Tanji",
+									"expectsLightBackground": true
+								}
+							]
+						}
+					]
 				}
-			],
-			"id": "00d"
+			]
 		}
 	]
 }

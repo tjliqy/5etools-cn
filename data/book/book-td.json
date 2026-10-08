@@ -1,2184 +1,2190 @@
 {
-	"data": [
+	"bookData": [
 		{
-			"ENG_name": "Tarot Deck",
-			"name": "塔罗牌",
-			"type": "section",
-			"page": 1,
-			"entries": [
-				"《龙与地下城》是一款发生在玩家心中的幻想角色扮演游戏。塔罗牌是一种古老的占卜形式，它能够触及我们世界的魔法维度。它们共同创造了一场想象力的冒险\u2014\u2014一场寻宝之旅，帮助你解开生命的奥秘，发现自我的秘密。",
+			"id": "TD",
+			"source": "TD",
+			"data": [
 				{
-					"type": "hr"
-				},
-				{
-					"type": "entries",
+					"ENG_name": "Tarot Deck",
+					"name": "塔罗牌",
+					"type": "section",
+					"id": "000",
+					"page": 1,
 					"entries": [
-						{
-							"ENG_name": "How to Read Tarot",
-							"name": "如何阅读塔罗牌",
-							"type": "entries",
-							"page": 1,
-							"entries": [
-								"传统上塔罗牌是由占卜师和求卜者进行游戏，但随着占卜的进行，你可以自由地转换角色。要为自己占卜塔罗牌，你需要同时扮演占卜师和求卜者的角色。大多数塔罗牌占卜都是从一个问题开始的，问题的质量将决定答案的质量。例如，不要问{@i 我为什么总是感到悲伤？}，而是尝试问{@i 我如何为自己的生活带来更多的欢乐？}",
-								"每张被揭示的卡片都增添了独特的意义，帮助求问者探究自己的生活和心理，以清晰了解当前情况，并得出对未来可能的结论。",
-								"尽管这个小册子解释了每张牌的根源含义，但每张牌的真正含义只能在阅读的上下文中发现，因为牌开始相互影响以创造一个故事。因此，最好是让阅读自然展开（五张牌是一个很好的数字），而不是试图定义答案。",
-								{
-									"ENG_name": "The Major Arcana,",
-									"name": "大阿卡那",
-									"type": "entries",
-									"page": 2,
-									"entries": [
-										"编号从0到21的牌表示所有人类都会经历的原型生活教训，如爱情、失去、变化和意识。大阿卡纳代表了我们一生中不断重温的挑战，但每次都在不同的地方；随着时间的推移，我们的生活经验在不断扩展，因此我们的理解能力使我们对这些教训有了更深入的洞察。"
-									],
-									"id": "003"
-								},
-								{
-									"ENG_name": "The Minor Arcana,",
-									"name": "小阿卡那",
-									"type": "entries",
-									"page": 2,
-									"entries": [
-										"由56张牌组成，分为四种花色。这些牌代表了生活中出现的暂时的高潮和低谷，它们突然出现又消失，与大阿卡纳所代表的持久和不断演变的转变不同。",
-										"在这个塔罗牌组中，我们将传统的小阿卡纳牌组\u2014\u2014权杖、宝剑、圣杯和星币\u2014\u2014映射到了D&D游戏中的能力上。",
-										{
-											"type": "list",
-											"style": "list-hang-notitle",
-											"page": 2,
-											"items": [
-												{
-													"ENG_name": "Strength",
-													"name": "力量",
-													"type": "item",
-													"nameDot": false,
-													"entries": [
-														"表示你改变环境的身体能力。它也是你的热情、创造力、内在决心和心灵。这些牌向求卜者表明，他们需要采取行动，专注于自己的内在力量，以在世界上带来变化。"
-													]
-												},
-												{
-													"ENG_name": "Intelligence",
-													"name": "智力",
-													"type": "item",
-													"nameDot": false,
-													"entries": [
-														"代表智力的力量如何塑造我们的世界。这些牌向求知者展示了他们如何使用自己的思想来塑造态度和现实。我们很少在没有大脑围绕它创造故事的情况下看到世界的真实面貌。"
-													]
-												},
-												{
-													"ENG_name": "Wisdom",
-													"name": "感知",
-													"type": "item",
-													"nameDot": false,
-													"entries": [
-														"不仅代表你的外在感知，也代表你洞察内在世界并看到自身微妙之处的能力。这些卡片告诉求问者要向内转，倾听心灵和身体的非言语语言，以便获得洞察力和直觉的感知。"
-													]
-												},
-												{
-													"ENG_name": "Charisma",
-													"name": "魅力",
-													"type": "item",
-													"nameDot": false,
-													"entries": [
-														"表示一个人的自信、口才以及用他们的能量影响物质世界的能力。这些牌向求问者展示他们内在美丽和力量的绽放正在进行中，或者他们有机会增强自尊，扩大享受乐趣和快乐的能力。"
-													]
-												}
-											]
-										}
-									],
-									"id": "004"
-								}
-							],
-							"id": "002"
-						},
+						"《龙与地下城》是一款发生在玩家心中的幻想角色扮演游戏。塔罗牌是一种古老的占卜形式，它能够触及我们世界的魔法维度。它们共同创造了一场想象力的冒险\u2014\u2014一场寻宝之旅，帮助你解开生命的奥秘，发现自我的秘密。",
 						{
 							"type": "hr"
 						},
 						{
-							"ENG_name": "Upright and Reversed Meanings",
-							"name": "正位和逆位含义",
 							"type": "entries",
-							"page": 3,
+							"id": "001",
 							"entries": [
-								"许多塔罗牌读者认为倒置（反向）的牌与正位牌的含义相反。在这个小册子中，并没有提到倒置的含义，但作为塔罗牌的读者，你可以自由地跟随你的直觉。如果你觉得寻求者需要一点警醒，那么倒置的解释通常可以起到作用。"
-							],
-							"id": "005"
-						},
-						{
-							"ENG_name": "Card Spreads",
-							"name": "牌阵布局",
-							"type": "entries",
-							"page": 3,
-							"entries": [
-								"阅读塔罗牌有许多流行的展开方式。以下是一些基本的。您可以自由发挥，创造自己的！",
 								{
-									"ENG_name": "One-Card Spread",
-									"name": "单张牌展开",
+									"ENG_name": "How to Read Tarot",
+									"name": "如何阅读塔罗牌",
 									"type": "entries",
-									"page": 3,
+									"id": "002",
+									"page": 1,
 									"entries": [
-										"单牌阅读适合快速检视。它可以用于获得你需要做出的决定的清晰度，或者保持一天中你脑海中的主要信息。"
-									],
-									"id": "007"
-								},
-								{
-									"ENG_name": "Three-Card Spread",
-									"name": "三张牌展开",
-									"type": "entries",
-									"page": 4,
-									"entries": [
-										"三张牌的占卜通常用来解释过去、现在和未来，但它们也可以表示\"问题、障碍、解决方案\"或\"思想、感受、行动\"。",
+										"传统上塔罗牌是由占卜师和求卜者进行游戏，但随着占卜的进行，你可以自由地转换角色。要为自己占卜塔罗牌，你需要同时扮演占卜师和求卜者的角色。大多数塔罗牌占卜都是从一个问题开始的，问题的质量将决定答案的质量。例如，不要问{@i 我为什么总是感到悲伤？}，而是尝试问{@i 我如何为自己的生活带来更多的欢乐？}",
+										"每张被揭示的卡片都增添了独特的意义，帮助求问者探究自己的生活和心理，以清晰了解当前情况，并得出对未来可能的结论。",
+										"尽管这个小册子解释了每张牌的根源含义，但每张牌的真正含义只能在阅读的上下文中发现，因为牌开始相互影响以创造一个故事。因此，最好是让阅读自然展开（五张牌是一个很好的数字），而不是试图定义答案。",
 										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "book/TD/Three Card Spread.webp"
-											},
-											"credit": "Fred Gissubel",
-											"width": 960,
-											"height": 587
-										}
-									],
-									"id": "008"
-								},
-								{
-									"ENG_name": "Five-Card Spread",
-									"name": "五牌牌阵",
-									"type": "entries",
-									"page": 4,
-									"entries": [
-										"五张牌的展开可以让解读更加完整，并提供更深层次的信息，包含更多的复杂性和细微差别。",
-										"这是一个带有D&D特色的五张牌展开（见对页）的例子：",
-										{
-											"type": "list",
-											"style": "list-decimal",
-											"page": 4,
-											"items": [
-												"这张牌代表当前的情况、问题和/或目标。",
-												"这张牌显示了心灵深处正在起作用的东西。根植于过去，这种影响必须被揭示出来才能被利用或释放。",
-												"这张卡代表你在解决任务时需要集中注意力的事物。",
-												"这张卡片表示你需要发展或放弃某些东西，以便推进你的任务。",
-												"这张牌是答案的解决方案，或显示了完全解决问题所需要的是什么。"
+											"ENG_name": "The Major Arcana,",
+											"name": "大阿卡那",
+											"type": "entries",
+											"id": "003",
+											"page": 2,
+											"entries": [
+												"编号从0到21的牌表示所有人类都会经历的原型生活教训，如爱情、失去、变化和意识。大阿卡纳代表了我们一生中不断重温的挑战，但每次都在不同的地方；随着时间的推移，我们的生活经验在不断扩展，因此我们的理解能力使我们对这些教训有了更深入的洞察。"
 											]
 										},
 										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "book/TD/Five Card Spread.webp"
-											},
-											"credit": "Fred Gissubel",
-											"width": 960,
-											"height": 1452
+											"ENG_name": "The Minor Arcana,",
+											"name": "小阿卡那",
+											"type": "entries",
+											"id": "004",
+											"page": 2,
+											"entries": [
+												"由56张牌组成，分为四种花色。这些牌代表了生活中出现的暂时的高潮和低谷，它们突然出现又消失，与大阿卡纳所代表的持久和不断演变的转变不同。",
+												"在这个塔罗牌组中，我们将传统的小阿卡纳牌组\u2014\u2014权杖、宝剑、圣杯和星币\u2014\u2014映射到了D&D游戏中的能力上。",
+												{
+													"type": "list",
+													"page": 2,
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"ENG_name": "Strength",
+															"name": "力量",
+															"type": "item",
+															"nameDot": false,
+															"entries": [
+																"表示你改变环境的身体能力。它也是你的热情、创造力、内在决心和心灵。这些牌向求卜者表明，他们需要采取行动，专注于自己的内在力量，以在世界上带来变化。"
+															]
+														},
+														{
+															"ENG_name": "Intelligence",
+															"name": "智力",
+															"type": "item",
+															"nameDot": false,
+															"entries": [
+																"代表智力的力量如何塑造我们的世界。这些牌向求知者展示了他们如何使用自己的思想来塑造态度和现实。我们很少在没有大脑围绕它创造故事的情况下看到世界的真实面貌。"
+															]
+														},
+														{
+															"ENG_name": "Wisdom",
+															"name": "感知",
+															"type": "item",
+															"nameDot": false,
+															"entries": [
+																"不仅代表你的外在感知，也代表你洞察内在世界并看到自身微妙之处的能力。这些卡片告诉求问者要向内转，倾听心灵和身体的非言语语言，以便获得洞察力和直觉的感知。"
+															]
+														},
+														{
+															"ENG_name": "Charisma",
+															"name": "魅力",
+															"type": "item",
+															"nameDot": false,
+															"entries": [
+																"表示一个人的自信、口才以及用他们的能量影响物质世界的能力。这些牌向求问者展示他们内在美丽和力量的绽放正在进行中，或者他们有机会增强自尊，扩大享受乐趣和快乐的能力。"
+															]
+														}
+													]
+												}
+											]
 										}
-									],
-									"id": "009"
-								}
-							],
-							"id": "006"
-						},
-						{
-							"ENG_name": "D&D Encounters",
-							"name": "D&D遭遇战",
-							"type": "entries",
-							"page": 6,
-							"entries": [
-								"在这本小册子中，你将看到一个带有&符号的章节{@note （斜体文本）}。这一章节为你提供了一种在D&D游戏中使用塔罗牌的方式。你可以在冒险前抽一张牌，为你提供一个围绕故事展开的剧情元素，或者在冒险过程中抽一张牌，为故事增添一个有趣的转折。尽情发挥创意，为你的游戏设计使用这套牌的新方法吧！"
-							],
-							"id": "00a"
-						},
-						{
-							"ENG_name": "An Adventure in a Spread",
-							"name": "牌阵中的冒险",
-							"type": "entries",
-							"page": 6,
-							"entries": [
-								"使用D&D遭遇提示，您可以创造有趣的冒险钩子，或者为正在进行的游戏增添一些趣味。使用多张卡片，您可以发挥创意，混合D&D遭遇，为您的玩家发明一个独特的场景！以下是三张卡片的展开以及它们的D&D遭遇：",
+									]
+								},
 								{
-									"type": "gallery",
-									"images": [
+									"type": "hr"
+								},
+								{
+									"ENG_name": "Upright and Reversed Meanings",
+									"name": "正位和逆位含义",
+									"type": "entries",
+									"id": "005",
+									"page": 3,
+									"entries": [
+										"许多塔罗牌读者认为倒置（反向）的牌与正位牌的含义相反。在这个小册子中，并没有提到倒置的含义，但作为塔罗牌的读者，你可以自由地跟随你的直觉。如果你觉得寻求者需要一点警醒，那么倒置的解释通常可以起到作用。"
+									]
+								},
+								{
+									"ENG_name": "Card Spreads",
+									"name": "牌阵布局",
+									"type": "entries",
+									"id": "006",
+									"page": 3,
+									"entries": [
+										"阅读塔罗牌有许多流行的展开方式。以下是一些基本的。您可以自由发挥，创造自己的！",
+										{
+											"ENG_name": "One-Card Spread",
+											"name": "单张牌展开",
+											"type": "entries",
+											"id": "007",
+											"page": 3,
+											"entries": [
+												"单牌阅读适合快速检视。它可以用于获得你需要做出的决定的清晰度，或者保持一天中你脑海中的主要信息。"
+											]
+										},
+										{
+											"ENG_name": "Three-Card Spread",
+											"name": "三张牌展开",
+											"type": "entries",
+											"id": "008",
+											"page": 4,
+											"entries": [
+												"三张牌的占卜通常用来解释过去、现在和未来，但它们也可以表示\"问题、障碍、解决方案\"或\"思想、感受、行动\"。",
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "book/TD/Three Card Spread.webp"
+													},
+													"width": 960,
+													"height": 587,
+													"credit": "Fred Gissubel"
+												}
+											]
+										},
+										{
+											"ENG_name": "Five-Card Spread",
+											"name": "五牌牌阵",
+											"type": "entries",
+											"id": "009",
+											"page": 4,
+											"entries": [
+												"五张牌的展开可以让解读更加完整，并提供更深层次的信息，包含更多的复杂性和细微差别。",
+												"这是一个带有D&D特色的五张牌展开（见对页）的例子：",
+												{
+													"type": "list",
+													"page": 4,
+													"style": "list-decimal",
+													"items": [
+														"这张牌代表当前的情况、问题和/或目标。",
+														"这张牌显示了心灵深处正在起作用的东西。根植于过去，这种影响必须被揭示出来才能被利用或释放。",
+														"这张卡代表你在解决任务时需要集中注意力的事物。",
+														"这张卡片表示你需要发展或放弃某些东西，以便推进你的任务。",
+														"这张牌是答案的解决方案，或显示了完全解决问题所需要的是什么。"
+													]
+												},
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "book/TD/Five Card Spread.webp"
+													},
+													"width": 960,
+													"height": 1452,
+													"credit": "Fred Gissubel"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "D&D Encounters",
+									"name": "D&D遭遇战",
+									"type": "entries",
+									"id": "00a",
+									"page": 6,
+									"entries": [
+										"在这本小册子中，你将看到一个带有&符号的章节{@note （斜体文本）}。这一章节为你提供了一种在D&D游戏中使用塔罗牌的方式。你可以在冒险前抽一张牌，为你提供一个围绕故事展开的剧情元素，或者在冒险过程中抽一张牌，为故事增添一个有趣的转折。尽情发挥创意，为你的游戏设计使用这套牌的新方法吧！"
+									]
+								},
+								{
+									"ENG_name": "An Adventure in a Spread",
+									"name": "牌阵中的冒险",
+									"type": "entries",
+									"id": "00b",
+									"page": 6,
+									"entries": [
+										"使用D&D遭遇提示，您可以创造有趣的冒险钩子，或者为正在进行的游戏增添一些趣味。使用多张卡片，您可以发挥创意，混合D&D遭遇，为您的玩家发明一个独特的场景！以下是三张卡片的展开以及它们的D&D遭遇：",
+										{
+											"type": "gallery",
+											"images": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/STR-Q.webp"
+													},
+													"width": 720,
+													"height": 1246,
+													"credit": "Fred Gissubel"
+												},
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/MA-Tower.webp"
+													},
+													"width": 720,
+													"height": 1248,
+													"credit": "Fred Gissubel"
+												},
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/WIS-10.webp"
+													},
+													"width": 720,
+													"height": 1247,
+													"credit": "Fred Gissubel"
+												}
+											]
+										},
+										{
+											"type": "list",
+											"page": 6,
+											"style": "list-no-bullets",
+											"columns": 3,
+											"items": [
+												{
+													"ENG_name": "Queen of Strength",
+													"name": "力量女王",
+													"type": "item",
+													"entries": [
+														"{@i 派对被要求护送一位政治人物穿越敌对地形。}"
+													]
+												},
+												{
+													"ENG_name": "The Tower",
+													"name": "高塔",
+													"type": "item",
+													"entries": [
+														"{@i 你周围的大地神秘地开始在一场猛烈的地震中摇晃。}"
+													]
+												},
+												{
+													"ENG_name": "Ten of Wisdom",
+													"name": "感知十",
+													"type": "item",
+													"entries": [
+														"{@i 队伍在一个立石圈中发现了一个魔法传送门。}"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Creating the Story",
+									"name": "创造故事",
+									"type": "entries",
+									"id": "00c",
+									"page": 7,
+									"entries": [
+										"以下是如何从对面页面上的任何或所有D&D遭遇提示中制作冒险的例子："
+									]
+								},
+								{
+									"type": "hr"
+								},
+								{
+									"ENG_name": "Diplomatic Escort",
+									"name": "外交护送",
+									"type": "entries",
+									"id": "00d",
+									"page": 7,
+									"entries": [
+										"派对被要求护送一位来自精类庭的精灵外交官进入恐怖森林。森林中有一个魔法传送门，可以将她送回妖精荒野。众所周知，有一个邪恶的精类想要捕获这位外交官。在森林深处，他们终于找到了石圈，但触发了伏击。一场剧烈的地震在他们周围爆发，一位精类法师召唤了数个土元素，以阻止精灵外交官进入。"
+									]
+								},
+								{
+									"ENG_name": "The Nether Portal",
+									"name": "下界传送门",
+									"type": "entries",
+									"id": "00e",
+									"page": 7,
+									"entries": [
+										"被困在一场毁灭性地震的中心，队伍发现自己处于一个着火且废墟的城市中。当他们向安全地带移动时，他们被一位牧师接近。她受了致命伤，但在她临终之际，她递给队伍中的一员一个密封的卷轴，并恳求他们保管好它。如果队伍打开卷轴，他们会发现一张古老的地图，上面突出显示了一个山峰。如果队伍攀登山峰，他们会在山顶发现一个由立石环绕的发光传送门。"
+									]
+								},
+								{
+									"ENG_name": "Stranded!",
+									"name": "被困！",
+									"type": "entries",
+									"id": "00f",
+									"page": 7,
+									"entries": [
+										"在冒险中，队伍发现了一个中间有魔法传送门的立石圈。如果他们选择穿过传送门，他们会出现在一个奇怪的世界。当他们探索时，一场剧烈的地震摧毁了传送门！"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "The Deck",
+					"name": "牌组",
+					"type": "section",
+					"id": "010",
+					"page": 8,
+					"entries": [
+						"{@note 参见牌组页面；{@deck 塔罗牌|TD}。}",
+						{
+							"ENG_name": "The Major Arcana",
+							"name": "大阿卡纳",
+							"type": "entries",
+							"id": "011",
+							"page": 9,
+							"entries": [
+								{
+									"ENG_name": "The Fool",
+									"name": "愚者",
+									"type": "entries",
+									"id": "012",
+									"page": 9,
+									"entries": [
 										{
 											"type": "image",
 											"href": {
 												"type": "internal",
-												"path": "decks/TD/STR-Q.webp"
+												"path": "decks/TD/MA-Fool.webp"
 											},
-											"credit": "Fred Gissubel",
 											"width": 720,
-											"height": 1246
+											"height": 1248,
+											"maxWidth": 240,
+											"credit": "Fred Gissubel"
 										},
+										"以纯真和惊奇之心追随你的内心。",
+										"{@i 你遇到了一个侏儒，他说如果你跟随他，他会带你去一个奇妙的宝藏。}"
+									]
+								},
+								{
+									"ENG_name": "The Magician",
+									"name": "魔术师",
+									"type": "entries",
+									"id": "013",
+									"page": 9,
+									"entries": [
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "decks/TD/MA-Magician.webp"
+											},
+											"width": 720,
+											"height": 1247,
+											"maxWidth": 240,
+											"credit": "Fred Gissubel"
+										},
+										"挖掘你的天赋，找到看待世界的新方式。",
+										"{@i 你遇到了一位智者，他给了你一把能打开魔法锁的钥匙。}"
+									]
+								},
+								{
+									"ENG_name": "The High Priestess",
+									"name": "女祭司",
+									"type": "entries",
+									"id": "014",
+									"page": 10,
+									"entries": [
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "decks/TD/MA-High Priestess.webp"
+											},
+											"width": 720,
+											"height": 1247,
+											"maxWidth": 240,
+											"credit": "Fred Gissubel"
+										},
+										"访问你的直觉，调谐到女性力量的源泉。",
+										"{@i 你遇到了一位圣洁的女性，她为你们每个人提供了一份礼物。}"
+									]
+								},
+								{
+									"ENG_name": "The Empress",
+									"name": "女皇",
+									"type": "entries",
+									"id": "015",
+									"page": 10,
+									"entries": [
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "decks/TD/MA-Empress.webp"
+											},
+											"width": 720,
+											"height": 1245,
+											"maxWidth": 240,
+											"credit": "Fred Gissubel"
+										},
+										"意识到你表达美和从力量之源培养他人的能力。",
+										"{@i 你遇到了一个国家的女王，她有一个重要的任务要交给你。}"
+									]
+								},
+								{
+									"ENG_name": "The Emperor",
+									"name": "皇帝",
+									"type": "entries",
+									"id": "016",
+									"page": 11,
+									"entries": [
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "decks/TD/MA-Emperor.webp"
+											},
+											"width": 720,
+											"height": 1247,
+											"maxWidth": 240,
+											"credit": "Fred Gissubel"
+										},
+										"找到你内在权威感的源泉。",
+										"{@i 你遇到了一个遥远国度的国王，他寻求你的帮助。}"
+									]
+								},
+								{
+									"ENG_name": "The Hierophant",
+									"name": "教皇",
+									"type": "entries",
+									"id": "017",
+									"page": 11,
+									"entries": [
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "decks/TD/MA-Hierophant.webp"
+											},
+											"width": 720,
+											"height": 1250,
+											"maxWidth": 240,
+											"credit": "Fred Gissubel"
+										},
+										"运用灵性理解与感知来感知世界。",
+										"{@i 你找到了一本由一位智者所著的圣书，书中包含了一个隐藏的神秘秘密。}"
+									]
+								},
+								{
+									"ENG_name": "The Lovers",
+									"name": "恋人",
+									"type": "entries",
+									"id": "018",
+									"page": 12,
+									"entries": [
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "decks/TD/MA-Lovers.webp"
+											},
+											"width": 720,
+											"height": 1246,
+											"maxWidth": 240,
+											"credit": "Fred Gissubel"
+										},
+										"在尊重你的价值观的同时，找到与自己和他人相处的和谐。",
+										"{@i 一个神秘的人向你提出了一个诱人的提议。}"
+									]
+								},
+								{
+									"ENG_name": "The Chariot",
+									"name": "战车",
+									"type": "entries",
+									"id": "019",
+									"page": 12,
+									"entries": [
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "decks/TD/MA-Chariot.webp"
+											},
+											"width": 720,
+											"height": 1245,
+											"maxWidth": 240,
+											"credit": "Fred Gissubel"
+										},
+										"坚持你的意图，实现你的愿望。",
+										"{@i 你发现了一个被困的伊夫利特，他提出如果你能找到释放他的方法，他将为你服务一年。}"
+									]
+								},
+								{
+									"ENG_name": "Strength",
+									"name": "力量",
+									"type": "entries",
+									"id": "01a",
+									"page": 13,
+									"entries": [
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "decks/TD/MA-Strength.webp"
+											},
+											"width": 720,
+											"height": 1244,
+											"maxWidth": 240,
+											"credit": "Fred Gissubel"
+										},
+										"你穿越恐惧，找到自己内在不可动摇的力量的能力。",
+										"{@i 一个魁梧的战士挡住了去路，挑战任何人进行徒手格斗。}"
+									]
+								},
+								{
+									"ENG_name": "The Hermit",
+									"name": "隐者",
+									"type": "entries",
+									"id": "01b",
+									"page": 13,
+									"entries": [
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "decks/TD/MA-Hermit.webp"
+											},
+											"width": 720,
+											"height": 1246,
+											"maxWidth": 240,
+											"credit": "Fred Gissubel"
+										},
+										"成为自己的光，在黑暗中找到自己的道路。",
+										"{@i 你遇到了一个正在寻找值得的冒险者去击败一个魔法怪物的僧侣。}"
+									]
+								},
+								{
+									"ENG_name": "The Wheel of Fortune",
+									"name": "命运之轮",
+									"type": "entries",
+									"id": "01c",
+									"page": 14,
+									"entries": [
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "decks/TD/MA-Wheel of Fortune.webp"
+											},
+											"width": 720,
+											"height": 1250,
+											"maxWidth": 240,
+											"credit": "Fred Gissubel"
+										},
+										"你命运的转折点以及你适应变化的能力。",
+										"{@i 你遇到了一个半身人法师，如果你善待他\u2014\u2014他会给你们一个\"好运眨眼\"。你在下一次掷骰中获得优势。}"
+									]
+								},
+								{
+									"ENG_name": "Justice",
+									"name": "正义",
+									"type": "entries",
+									"id": "01d",
+									"page": 14,
+									"entries": [
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "decks/TD/MA-Justice.webp"
+											},
+											"width": 720,
+											"height": 1249,
+											"maxWidth": 240,
+											"credit": "Fred Gissubel"
+										},
+										"你通过打破旧的、限制性的信念来创造新现实的能力。",
+										"{@i 一个贫穷的村民向你求助，并提供一件稀有的魔法物品作为报酬。}"
+									]
+								},
+								{
+									"ENG_name": "The Hanged Man",
+									"name": "倒吊人",
+									"type": "entries",
+									"id": "01e",
+									"page": 15,
+									"entries": [
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "decks/TD/MA-Hanged Man.webp"
+											},
+											"width": 720,
+											"height": 1250,
+											"maxWidth": 240,
+											"credit": "Fred Gissubel"
+										},
+										"从不同的角度看待事物的必要性。",
+										"{@i 你做了一个奇怪的梦，梦见和一只奥图格谈论生活。当你醒来时，你的感知属性永久增加了一点。}"
+									]
+								},
+								{
+									"ENG_name": "Death",
+									"name": "死亡",
+									"type": "entries",
+									"id": "01f",
+									"page": 15,
+									"entries": [
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "decks/TD/MA-Death.webp"
+											},
+											"width": 720,
+											"height": 1247,
+											"maxWidth": 240,
+											"credit": "Fred Gissubel"
+										},
+										"从一种感知现实到另一种感知现实的转变以及习惯性模式的结束",
+										"{@i 一位吸血鬼领主提供给你永生不死的礼物，以换取一个小小的恩惠。}"
+									]
+								},
+								{
+									"ENG_name": "Temperance",
+									"name": "节制",
+									"type": "entries",
+									"id": "020",
+									"page": 16,
+									"entries": [
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "decks/TD/MA-Temperance.webp"
+											},
+											"width": 720,
+											"height": 1251,
+											"maxWidth": 240,
+											"credit": "Fred Gissubel"
+										},
+										"我们以一种审慎和耐心的方式处理事情的能力。",
+										"{@i 你在接下来的{@dice 1d6}次感知豁免检定中获得优势。}"
+									]
+								},
+								{
+									"ENG_name": "The Devil",
+									"name": "魔鬼",
+									"type": "entries",
+									"id": "021",
+									"page": 16,
+									"entries": [
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "decks/TD/MA-Devil.webp"
+											},
+											"width": 720,
+											"height": 1248,
+											"maxWidth": 240,
+											"credit": "Fred Gissubel"
+										},
+										"如何处理我们的阴影自我。这张牌召唤我们穿透谎言，看看我们能对自己有多诚实。",
+										"{@i 你遇到了一个恶魔，他提出用一件稀有的魔法物品来换取一个恩惠。}"
+									]
+								},
+								{
+									"ENG_name": "The Tower",
+									"name": "高塔",
+									"type": "entries",
+									"id": "022",
+									"page": 17,
+									"entries": [
 										{
 											"type": "image",
 											"href": {
 												"type": "internal",
 												"path": "decks/TD/MA-Tower.webp"
 											},
-											"credit": "Fred Gissubel",
 											"width": 720,
-											"height": 1248
+											"height": 1248,
+											"maxWidth": 240,
+											"credit": "Fred Gissubel"
 										},
+										"我们珍视的信念或物质结构的崩溃。正是在不抵抗中，我们能找到平和与感知。",
+										"{@i 你周围的大地神秘地开始在一场猛烈的地震中摇晃。}"
+									]
+								},
+								{
+									"ENG_name": "The Star",
+									"name": "星星",
+									"type": "entries",
+									"id": "023",
+									"page": 17,
+									"entries": [
 										{
 											"type": "image",
 											"href": {
 												"type": "internal",
-												"path": "decks/TD/WIS-10.webp"
+												"path": "decks/TD/MA-Star.webp"
 											},
-											"credit": "Fred Gissubel",
 											"width": 720,
-											"height": 1247
-										}
+											"height": 1251,
+											"maxWidth": 240,
+											"credit": "Fred Gissubel"
+										},
+										"找到可以引导我们度过生活的焦点。我们内在的导航系统。我们的北极星。",
+										"{@i 你发现了一个机械玩具木偶，它总是走向最近的酒馆。}"
 									]
 								},
 								{
-									"type": "list",
-									"style": "list-no-bullets",
-									"columns": 3,
-									"page": 6,
-									"items": [
+									"ENG_name": "The Moon",
+									"name": "月亮",
+									"type": "entries",
+									"id": "024",
+									"page": 18,
+									"entries": [
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "decks/TD/MA-Moon.webp"
+											},
+											"width": 720,
+											"height": 1247,
+											"maxWidth": 240,
+											"credit": "Fred Gissubel"
+										},
+										"面对并允许根深蒂固的恐惧在你的意识之光中溶解。从心中移除言语，深呼吸。",
+										"{@i 你遇到了一个女巫，她希望你看看她的水晶球。}"
+									]
+								},
+								{
+									"ENG_name": "The Sun",
+									"name": "太阳",
+									"type": "entries",
+									"id": "025",
+									"page": 18,
+									"entries": [
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "decks/TD/MA-Sun.webp"
+											},
+											"width": 720,
+											"height": 1247,
+											"maxWidth": 240,
+											"credit": "Fred Gissubel"
+										},
+										"回归童年的纯真和活力。",
+										"{@i 掷{@dice 1d6+6}，这个结果将成为你接下来七十二小时的年龄。}"
+									]
+								},
+								{
+									"ENG_name": "Judgement",
+									"name": "审判",
+									"type": "entries",
+									"id": "026",
+									"page": 19,
+									"entries": [
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "decks/TD/MA-Judgement.webp"
+											},
+											"width": 720,
+											"height": 1251,
+											"maxWidth": 240,
+											"credit": "Fred Gissubel"
+										},
+										"我们辨别真正重要事物的能力，并用它来修剪我们生活花园中的杂草。",
+										"{@i 一个丘陵巨人在一夜饮酒后沉睡。在其腰带上的锁子甲袋中，你可以听到有人在低声呼救。}"
+									]
+								},
+								{
+									"ENG_name": "The World",
+									"name": "世界",
+									"type": "entries",
+									"id": "027",
+									"page": 19,
+									"entries": [
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "decks/TD/MA-World.webp"
+											},
+											"width": 720,
+											"height": 1247,
+											"maxWidth": 240,
+											"credit": "Fred Gissubel"
+										},
+										"结束。在内心和外在达到完成和力量的地方。",
+										"{@i 你看到有人在路边哭泣。他们被迫要嫁给一个他们不愿意的人。}"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "The Minor Arcana",
+							"name": "小阿卡纳",
+							"type": "section",
+							"id": "028",
+							"page": 20,
+							"entries": [
+								{
+									"ENG_name": "Strength",
+									"name": "力量",
+									"type": "entries",
+									"id": "029",
+									"page": 20,
+									"entries": [
+										{
+											"ENG_name": "Ace of Strength",
+											"name": "力量王牌",
+											"type": "entries",
+											"id": "02a",
+											"page": 20,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/STR-A.webp"
+													},
+													"width": 720,
+													"height": 1248,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"所有创造能量的源泉都在你内心。你拥有想象、开始并完成任何你决心去做的项目的力量。",
+												"{@i 一个贵族的孩子离家出走，加入了蒙塔古勋爵的怪物马戏团。他恳求你找到并带回他们。}"
+											]
+										},
+										{
+											"ENG_name": "Two of Strength",
+											"name": "力量之二",
+											"type": "entries",
+											"id": "02b",
+											"page": 20,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/STR-2.webp"
+													},
+													"width": 720,
+													"height": 1248,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"朝着未来目标成长并取得进步。享受发现你喜欢做的事情。",
+												"{@i 一个醉酒的乞丐在小巷里向你发誓，他看到国王的儿子变成了狼人。城市中发生了可怕的杀戮事件。}"
+											]
+										},
+										{
+											"ENG_name": "Three of Strength",
+											"name": "力量三",
+											"type": "entries",
+											"id": "02c",
+											"page": 21,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/STR-3.webp"
+													},
+													"width": 720,
+													"height": 1250,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"扩大你的影响力范围，传达你的想法。取得进步",
+												"{@i 一个正在训练中的年轻圣武士说，他的圣武士团偷走了一个对大地精来说神圣的物品。他感到内疚，想要偷回它并归还给他们。}"
+											]
+										},
+										{
+											"ENG_name": "Four of Strength",
+											"name": "力量的四",
+											"type": "entries",
+											"id": "02d",
+											"page": 21,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/STR-4.webp"
+													},
+													"width": 720,
+													"height": 1248,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"整体大于部分之和。寻找他人进行合作。",
+												"{@i 一个小镇的镇长宣称提夫林是\"道德体面的威胁\"，并希望将他们集中起来并拘留。}"
+											]
+										},
+										{
+											"ENG_name": "Five of Strength",
+											"name": "力量五",
+											"type": "entries",
+											"id": "02e",
+											"page": 22,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/STR-5.webp"
+													},
+													"width": 720,
+													"height": 1251,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"完全专注于当下，以便有效地协同工作。放下竞争。",
+												"{@i 一支巡回马戏团的巨型蜘蛛死了，这让其主人悲痛欲绝。你能帮他找到一些巨型蜘蛛卵来孵化吗？}"
+											]
+										},
+										{
+											"ENG_name": "Six of Strength",
+											"name": "力量六",
+											"type": "entries",
+											"id": "02f",
+											"page": 22,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/STR-6.webp"
+													},
+													"width": 720,
+													"height": 1250,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"享受成功，但不要对它产生依赖。你对成功的定义是什么？经历高潮和低谷。",
+												"{@i 队伍被请求让一个年轻人陪同他们下一次的冒险，作为成年礼的一部分。}"
+											]
+										},
+										{
+											"ENG_name": "Seven of Strength",
+											"name": "力量七",
+											"type": "entries",
+											"id": "030",
+											"page": 23,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/STR-7.webp"
+													},
+													"width": 720,
+													"height": 1243,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"应对压倒性的情绪。放下造成压力的因素\u2014\u2014完美主义、欲望、恐惧、过度担忧未来。",
+												"{@i 你发现了一柄魔法剑。掷一个{@dice d6}。1\u20133：它是一柄+1剑。4\u20136：它是一柄+1剑，出鞘时会大声歌唱。}"
+											]
+										},
+										{
+											"ENG_name": "Eight of Strength",
+											"name": "力量八",
+											"type": "entries",
+											"id": "031",
+											"page": 23,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/STR-8.webp"
+													},
+													"width": 720,
+													"height": 1248,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"顺其自然，适应变化。轻松把握目标，享受旅程。",
+												"{@i 在一场雷暴中，冒险者们看到了一个洞穴的入口。那里是一群老巫婆的家。}"
+											]
+										},
+										{
+											"ENG_name": "Nine of Strength",
+											"name": "力量之九",
+											"type": "entries",
+											"id": "032",
+											"page": 24,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/STR-9.webp"
+													},
+													"width": 720,
+													"height": 1246,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"寻找决心的源泉，以克服困难。一次信仰的考验。",
+												"{@i 一座闹鬼的房子中的邪恶开始影响下方山谷中的村庄农田。农民们已经筹集了一笔钱，支付给你以清除邪恶。}"
+											]
+										},
+										{
+											"ENG_name": "Ten of Strength",
+											"name": "力量十",
+											"type": "entries",
+											"id": "033",
+											"page": 24,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/STR-10.webp"
+													},
+													"width": 720,
+													"height": 1250,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"确保发声。不要试图做所有事情。在可能的情况下委派责任。表达自己。",
+												"{@i 一个仁慈的德鲁伊教团想要回他们的圣石。它现在镶嵌在一个自负但强大的国王的王冠上。}"
+											]
+										},
+										{
+											"ENG_name": "Page of Strength",
+											"name": "力量侍从",
+											"type": "entries",
+											"id": "034",
+											"page": 25,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/STR-P.webp"
+													},
+													"width": 720,
+													"height": 1248,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"做出一些了不起的事情需要能量。加油！激发你的自由精神，追随你的激情。",
+												"{@i 一个自称\"圣洁\"的牧师团体（实际上是邪恶的）要求你取回被偷走的圣物。那是被一个真正的圣洁之人偷走的独角兽角。}"
+											]
+										},
+										{
+											"ENG_name": "Knight of Strength",
+											"name": "力量骑士",
+											"type": "entries",
+											"id": "035",
+											"page": 25,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/STR-Kn.webp"
+													},
+													"width": 720,
+													"height": 1241,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"全力以赴，不回头。听从直觉。采取一切必要行动使之实现。",
+												"{@i 冒险者们发现了一个传讯石。在另一端，有人陷入了深深的困境，正在恳求帮助。}"
+											]
+										},
 										{
 											"ENG_name": "Queen of Strength",
 											"name": "力量女王",
-											"type": "item",
+											"type": "entries",
+											"id": "036",
+											"page": 26,
 											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/STR-Q.webp"
+													},
+													"width": 720,
+													"height": 1246,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"传播爱，让你的光芒闪耀。有勇气迈向下一个层次。",
 												"{@i 派对被要求护送一位政治人物穿越敌对地形。}"
 											]
 										},
 										{
-											"ENG_name": "The Tower",
-											"name": "高塔",
-											"type": "item",
+											"ENG_name": "King of Strength",
+											"name": "力量之王",
+											"type": "entries",
+											"id": "037",
+											"page": 26,
 											"entries": [
-												"{@i 你周围的大地神秘地开始在一场猛烈的地震中摇晃。}"
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/STR-Ki.webp"
+													},
+													"width": 720,
+													"height": 1248,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"充分展现你的领导力，实现你的愿景。教导他人。",
+												"{@i 在旅行途中，队伍遇到了一个试图奴役附近村庄的蛇人巢穴。}"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Intelligence",
+									"name": "智力",
+									"type": "entries",
+									"id": "038",
+									"page": 27,
+									"entries": [
+										{
+											"ENG_name": "Ace of Intelligence",
+											"name": "智慧A",
+											"type": "entries",
+											"id": "039",
+											"page": 27,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/INT-A.webp"
+													},
+													"width": 720,
+													"height": 1250,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"找到你内心的法师，运用你的天赋去发现新的想法并取得突破。",
+												"{@i 队伍遇到了一位强大的法师，他们可以向他提出一个问题并获得真实的答案。}"
+											]
+										},
+										{
+											"ENG_name": "Two of Intelligence",
+											"name": "智慧二",
+											"type": "entries",
+											"id": "03a",
+											"page": 27,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/INT-2.webp"
+													},
+													"width": 720,
+													"height": 1249,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"我们内心的独白如何引起混乱，以及我们如何必须找到一种方式去倾听我们的内心。",
+												"{@i 你看到一个刻有魔法符号的拉杆。你要拉动它吗？}"
+											]
+										},
+										{
+											"ENG_name": "Three of Intelligence",
+											"name": "智慧三",
+											"type": "entries",
+											"id": "03b",
+											"page": 28,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/INT-3.webp"
+													},
+													"width": 720,
+													"height": 1244,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"找到一种方法来治愈并从焦虑和情感痛苦中学习。",
+												"{@i 一个哭泣的树精请求你拯救她的森林，使其免受兽人的破坏。}"
+											]
+										},
+										{
+											"ENG_name": "Four of Intelligence",
+											"name": "智力四",
+											"type": "entries",
+											"id": "03c",
+											"page": 28,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/INT-4.webp"
+													},
+													"width": 720,
+													"height": 1249,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"在继续前进之前花时间冥想，同时确保你不是在回避行动。",
+												"{@i 下一次你进行的短休将相当于一次长休。}"
+											]
+										},
+										{
+											"ENG_name": "Five of Intelligence",
+											"name": "智慧之五",
+											"type": "entries",
+											"id": "03d",
+											"page": 29,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/INT-5.webp"
+													},
+													"width": 720,
+													"height": 1252,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"竞争如何滋生冲突，使我们分裂，从而造成痛苦。",
+												"{@i 冒险者们遇到了两位贵族，他们为了争夺一件魔法（但被诅咒的）物品而争斗。}"
+											]
+										},
+										{
+											"ENG_name": "Six of Intelligence",
+											"name": "智慧的六",
+											"type": "entries",
+											"id": "03e",
+											"page": 29,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/INT-6.webp"
+													},
+													"width": 720,
+													"height": 1252,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"释放自己，摆脱负担和旧的思维方式。",
+												"{@i 一个鬼魂接近了队伍中的一个成员，声称是已故多年的亲戚。它寻求复仇。}"
+											]
+										},
+										{
+											"ENG_name": "Seven of Intelligence",
+											"name": "智慧七",
+											"type": "entries",
+											"id": "03f",
+											"page": 30,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/INT-7.webp"
+													},
+													"width": 720,
+													"height": 1253,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"我们如何玩游戏，隐藏真实的自我，出于恐惧或伤害而掩饰我们的意图。",
+												"{@i 一个变形怪已经潜入了国王的宫廷，国王正在寻找能够将其揭露出来的人。}"
+											]
+										},
+										{
+											"ENG_name": "Eight of Intelligence",
+											"name": "智慧八",
+											"type": "entries",
+											"id": "040",
+											"page": 30,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/INT-8.webp"
+													},
+													"width": 720,
+													"height": 1248,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"摆脱罪恶感和自我惩罚的纠缠。",
+												"{@i 附近的一个村庄被黑暗精灵入侵，正在寻求援助。}"
+											]
+										},
+										{
+											"ENG_name": "Nine of Intelligence",
+											"name": "智慧九",
+											"type": "entries",
+											"id": "041",
+											"page": 31,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/INT-9.webp"
+													},
+													"width": 720,
+													"height": 1247,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"观察思想如何制造混乱，并找到一个方法，从一个冷静的静止空间中观察它们。",
+												"{@i 一个灵吸怪使用噬脑怪控制了监狱长。它利用他来捕食囚犯。}"
+											]
+										},
+										{
+											"ENG_name": "Ten of Intelligence",
+											"name": "智慧十",
+											"type": "entries",
+											"id": "042",
+											"page": 31,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/INT-10.webp"
+													},
+													"width": 720,
+													"height": 1246,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"我们如何处理生活中出现的问题。我们是逃避和否认吗？我们是愤怒地反应吗？我们是否保持意识和觉察？",
+												"{@i 镇长失踪了。她被一个吸血鬼迷住了。}"
+											]
+										},
+										{
+											"ENG_name": "Page of Intelligence",
+											"name": "智力侍从",
+											"type": "entries",
+											"id": "043",
+											"page": 32,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/INT-P.webp"
+													},
+													"width": 720,
+													"height": 1248,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"发现传达你的想法并将其付诸行动的新方法。",
+												"{@i 一个法师希望你帮她找一些稀有的法术材料。}"
+											]
+										},
+										{
+											"ENG_name": "Knight of Intelligence",
+											"name": "智慧骑士",
+											"type": "entries",
+											"id": "044",
+											"page": 32,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/INT-Kn.webp"
+													},
+													"width": 720,
+													"height": 1248,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"将原始的雄心壮志转化为建设性的、深思熟虑的、专注的计划。",
+												"{@i 一个圣洁的组织需要你的帮助来净化一个被恶魔玷污的地方。}"
+											]
+										},
+										{
+											"ENG_name": "Queen of Intelligence",
+											"name": "智慧女王",
+											"type": "entries",
+											"id": "045",
+											"page": 33,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/INT-Q.webp"
+													},
+													"width": 720,
+													"height": 1248,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"在慈悲的心态中清晰地表达你的愿望的必要性。",
+												"{@i 有人带着一个谋杀之谜来找你，他们希望你解开这个谜团。}"
+											]
+										},
+										{
+											"ENG_name": "King of Intelligence",
+											"name": "智慧之王",
+											"type": "entries",
+											"id": "046",
+											"page": 33,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/INT-Ki.webp"
+													},
+													"width": 720,
+													"height": 1249,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"清晰地使用你的智慧，但不要让它压倒你的内心。",
+												"{@i 一位女王受到了女巫的诅咒。你被请求帮助解除这个咒语。}"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Wisdom",
+									"name": "感知",
+									"type": "entries",
+									"id": "047",
+									"page": 34,
+									"entries": [
+										{
+											"ENG_name": "Ace of Wisdom",
+											"name": "感知王牌",
+											"type": "entries",
+											"id": "048",
+											"page": 34,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/WIS-A.webp"
+													},
+													"width": 720,
+													"height": 1247,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"我们有能力利用洞察力的能量来治愈情感并爱护我们自己。",
+												"{@i 一群精灵请求队伍帮助他们找回一件神圣的神器。}"
+											]
+										},
+										{
+											"ENG_name": "Two of Wisdom",
+											"name": "感知之二",
+											"type": "entries",
+											"id": "049",
+											"page": 34,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/WIS-2.webp"
+													},
+													"width": 720,
+													"height": 1248,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"能够与某人\u2014\u2014无论是朋友还是爱人\u2014\u2014在一起，同时仍然保持你自己的个体感。",
+												"{@i 城市警卫队队长接近你，想看看你是否愿意追踪并捕获一个危险的罪犯。}"
+											]
+										},
+										{
+											"ENG_name": "Three of Wisdom",
+											"name": "感知三",
+											"type": "entries",
+											"id": "04a",
+											"page": 35,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/WIS-3.webp"
+													},
+													"width": 720,
+													"height": 1248,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"花时间与你的朋友们一起庆祝活着的简单快乐。",
+												"{@i 你被附近城镇的镇长邀请参加他们的\"怪物节\"。}"
+											]
+										},
+										{
+											"ENG_name": "Four of Wisdom",
+											"name": "感知四",
+											"type": "entries",
+											"id": "04b",
+											"page": 35,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/WIS-4.webp"
+													},
+													"width": 720,
+													"height": 1248,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"花时间冥想，放下脑海中所有嘈杂的思绪。",
+												"{@i 你在一棵老树的空心中发现了一个精美的盒子里藏有一张宝藏图。}"
+											]
+										},
+										{
+											"ENG_name": "Five of Wisdom",
+											"name": "感知的五",
+											"type": "entries",
+											"id": "04c",
+											"page": 36,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/WIS-5.webp"
+													},
+													"width": 720,
+													"height": 1249,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"保持乐观的心态，不让过去的伤痛影响你对当前时刻的解读。",
+												"{@i 一个还魂鬼向你诉说它的故事，并请求帮助完成它的复仇行为。}"
+											]
+										},
+										{
+											"ENG_name": "Six of Wisdom",
+											"name": "感知六",
+											"type": "entries",
+											"id": "04d",
+											"page": 36,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/WIS-6.webp"
+													},
+													"width": 720,
+													"height": 1247,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"我们能够成为孩子，在世界中玩耍。回归纯真。",
+												"{@i 你找到了一颗宝石。当你转向远处的山脉时，宝石开始跳动并发光。}"
+											]
+										},
+										{
+											"ENG_name": "Seven of Wisdom",
+											"name": "感知七",
+											"type": "entries",
+											"id": "04e",
+											"page": 37,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/WIS-7.webp"
+													},
+													"width": 720,
+													"height": 1248,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"我们在决策中具有辨别能力，并能从清晰和感知的角度做出选择。",
+												"{@i 一位图书管理员在图书馆的地下室发现了一扇隐藏的石门，上面覆盖着魔法符文。}"
+											]
+										},
+										{
+											"ENG_name": "Eight of Wisdom",
+											"name": "感知八",
+											"type": "entries",
+											"id": "04f",
+											"page": 37,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/WIS-8.webp"
+													},
+													"width": 720,
+													"height": 1248,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"通过相信有更好的事情在等待，找到摆脱过去痛苦的方法。",
+												"{@i 墓地的坟墓似乎被盗了，但有些人说这是死者自己挖出来的。}"
+											]
+										},
+										{
+											"ENG_name": "Nine of Wisdom",
+											"name": "感知九",
+											"type": "entries",
+											"id": "050",
+											"page": 38,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/WIS-9.webp"
+													},
+													"width": 720,
+													"height": 1246,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"找到享受我们成就和不陷入自满之间的平衡。",
+												"{@i 有传言称一群掠夺者正在前往一个村庄。村民们请求队伍提供帮助。}"
 											]
 										},
 										{
 											"ENG_name": "Ten of Wisdom",
 											"name": "感知十",
-											"type": "item",
+											"type": "entries",
+											"id": "051",
+											"page": 38,
 											"entries": [
-												"{@i 队伍在一个立石圈中发现了一个魔法传送门。}"
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/WIS-10.webp"
+													},
+													"width": 720,
+													"height": 1247,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"将头脑与心灵统一。在情感平衡中与他人和你的周围环境建立联系。",
+												"{@i 队伍遇到了一个魔法传送门，周围环绕着一圈立石。}"
+											]
+										},
+										{
+											"ENG_name": "Page of Wisdom",
+											"name": "感知之页",
+											"type": "entries",
+											"id": "052",
+											"page": 39,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/WIS-P.webp"
+													},
+													"width": 720,
+													"height": 1248,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"由你的好奇心和创造力激发，开始新的旅程。",
+												"{@i 一个男人蹒跚地向你走来，递给你一把银钥匙。他喘息着说，\"找到那条鱼\"，然后倒地身亡。他身上有一股海水的气味。}"
+											]
+										},
+										{
+											"ENG_name": "Knight of Wisdom",
+											"name": "感知骑士",
+											"type": "entries",
+											"id": "053",
+											"page": 39,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/WIS-Kn.webp"
+													},
+													"width": 720,
+													"height": 1251,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"信任你的热情，允许自己大胆梦想，并想象最好的事情发生在你身上。",
+												"{@i 有传言说，镇长被看到和一个小恶魔签订了契约。}"
+											]
+										},
+										{
+											"ENG_name": "Queen of Wisdom",
+											"name": "感知女王",
+											"type": "entries",
+											"id": "054",
+											"page": 40,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/WIS-Q.webp"
+													},
+													"width": 720,
+													"height": 1253,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"深入同情心的深处，平息批判性思维，以创造情绪稳定。",
+												"{@i 一只鸭子摇摇摆摆地走过来，说他目睹了一起谋杀案，并希望你们能抓住凶手。}"
+											]
+										},
+										{
+											"ENG_name": "King of Wisdom",
+											"name": "感知之王",
+											"type": "entries",
+											"id": "055",
+											"page": 40,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/WIS-Ki.webp"
+													},
+													"width": 720,
+													"height": 1243,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"完全接受这一刻。让抱怨消散。对自己温柔以待。",
+												"{@i 一位贵族向你走来，说他被派了一名刺客来杀他，他需要你的帮助。}"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Charisma",
+									"name": "魅力",
+									"type": "entries",
+									"id": "056",
+									"page": 41,
+									"entries": [
+										{
+											"ENG_name": "Ace of Charisma",
+											"name": "魅力A",
+											"type": "entries",
+											"id": "057",
+											"page": 41,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/CHA-A.webp"
+													},
+													"width": 720,
+													"height": 1245,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"一个新的机会以及显现和丰富的时候。",
+												"{@i 一个神秘的刺客组织开始追捕队伍中的一名成员。}"
+											]
+										},
+										{
+											"ENG_name": "Two of Charisma",
+											"name": "魅力的二",
+											"type": "entries",
+											"id": "058",
+											"page": 41,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/CHA-2.webp"
+													},
+													"width": 720,
+													"height": 1246,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"我们通过明确我们的优先事项，优雅而轻松地管理我们的时间的能力。",
+												"{@i 一群维京战士在一艘长船上。他们声称找到了通往冥河的道路，并且他们打算去与恶魔战斗。}"
+											]
+										},
+										{
+											"ENG_name": "Three of Charisma",
+											"name": "魅力之三",
+											"type": "entries",
+											"id": "059",
+											"page": 42,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/CHA-3.webp"
+													},
+													"width": 720,
+													"height": 1247,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"利用团队的力量，学习如何协作。",
+												"{@i 一个害羞的食人魔请求队伍救出他的宠物山羊，它被一个邪恶的独眼巨人抓走了。}"
+											]
+										},
+										{
+											"ENG_name": "Four of Charisma",
+											"name": "魅力四",
+											"type": "entries",
+											"id": "05a",
+											"page": 42,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/CHA-4.webp"
+													},
+													"width": 720,
+													"height": 1248,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"在理财时要谨慎，但不要陷入恐惧或贪婪。",
+												"{@i 一个矮人声称在他的矿井中发现了一条秘银矿脉，但现在有怪物占据了那里，他需要帮助才能夺回矿脉。}"
+											]
+										},
+										{
+											"ENG_name": "Five of Charisma",
+											"name": "魅力五",
+											"type": "entries",
+											"id": "05b",
+											"page": 43,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/CHA-5.webp"
+													},
+													"width": 720,
+													"height": 1250,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"找出如何摆脱匮乏心态，享受以任何形式出现在我们生活中的丰富。",
+												"{@i 一个狗头人询问队伍是否愿意和他一起踏上冒险之旅，前往龙牙山脉寻找传说中的提亚玛特之眼。}"
+											]
+										},
+										{
+											"ENG_name": "Six of Charisma",
+											"name": "魅力六",
+											"type": "entries",
+											"id": "05c",
+											"page": 43,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/CHA-6.webp"
+													},
+													"width": 720,
+													"height": 1248,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"在不牺牲你的价值观或耗尽你的能量的情况下，充分地给予和接受。",
+												"{@i 一位老水手告诉了你沿海地区一个传说中的沉船的确切位置。}"
+											]
+										},
+										{
+											"ENG_name": "Seven of Charisma",
+											"name": "魅力七",
+											"type": "entries",
+											"id": "05d",
+											"page": 44,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/CHA-7.webp"
+													},
+													"width": 720,
+													"height": 1246,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"允许你的计划发展和展开，不急不躁，不焦虑。",
+												"{@i 镇长被传言被邪恶的灵魂附身。镇长正在秘密准备牺牲整个城镇。}"
+											]
+										},
+										{
+											"ENG_name": "Eight of Charisma",
+											"name": "魅力八",
+											"type": "entries",
+											"id": "05e",
+											"page": 44,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/CHA-8.webp"
+													},
+													"width": 720,
+													"height": 1247,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"注重把简单的事情做好。慢而稳赢得比赛。",
+												"{@i 一位矮人锻造大师的魔法锤子被偷了，她请求你的帮助。作为回报，她将为你锻造一把武器。}"
+											]
+										},
+										{
+											"ENG_name": "Nine of Charisma",
+											"name": "魅力九",
+											"type": "entries",
+											"id": "05f",
+											"page": 45,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/CHA-9.webp"
+													},
+													"width": 720,
+													"height": 1247,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"从\"生存模式\"中走出来的能力，享受我们所拥有的丰富和自给自足。欣赏美好。",
+												"{@i 有东西在城市下方挖掘隧道，你们的队伍被要求进行调查。}"
+											]
+										},
+										{
+											"ENG_name": "Ten of Charisma",
+											"name": "魅力十",
+											"type": "entries",
+											"id": "060",
+											"page": 45,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/CHA-10.webp"
+													},
+													"width": 720,
+													"height": 1246,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"拥有一个支持你和你的梦的人际网络所带来的安全感。长期成功。",
+												"{@i 一位圣武士请求帮助，以找回他倒下的同伴的遗体。}"
+											]
+										},
+										{
+											"ENG_name": "Page of Charisma",
+											"name": "魅力侍从",
+											"type": "entries",
+											"id": "061",
+											"page": 46,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/CHA-P.webp"
+													},
+													"width": 720,
+													"height": 1250,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"开始行动，即使是小事也要重新点燃冒险的感觉。意识到哪些事情不起作用。",
+												"{@i 某物摧毁了横跨裂谷的绳索桥。村民们需要帮助重建它。}"
+											]
+										},
+										{
+											"ENG_name": "Knight of Charisma",
+											"name": "魅力骑士",
+											"type": "entries",
+											"id": "062",
+											"page": 46,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/CHA-Kn.webp"
+													},
+													"width": 720,
+													"height": 1248,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"找到享受日常的方法，为我们自己的成功承担责任，并放下期望。良好的工作自会证明一切。",
+												"{@i 当地的疯狂法师想要得到石像鬼或者鸡蛇兽的卵，并愿意慷慨支付。}"
+											]
+										},
+										{
+											"ENG_name": "Queen of Charisma",
+											"name": "魅力女王",
+											"type": "entries",
+											"id": "063",
+											"page": 47,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/CHA-Q.webp"
+													},
+													"width": 720,
+													"height": 1248,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"为自己和他人创造一个培养伟大的环境。保持工作与生活的平衡。",
+												"{@i 一个农民声称他的下金蛋的鹅被一个独眼巨人偷走了，他请求你们帮助找回鹅。}"
+											]
+										},
+										{
+											"ENG_name": "King of Charisma",
+											"name": "魅力之王",
+											"type": "entries",
+											"id": "064",
+											"page": 47,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "decks/TD/CHA-Ki.webp"
+													},
+													"width": 720,
+													"height": 1248,
+													"maxWidth": 240,
+													"credit": "Fred Gissubel"
+												},
+												"收获你努力的成果。享受丰富，同时不迷失在获取中。",
+												"{@i 队伍里有吟游诗人吗？国王正在举办舞会，但娱乐节目的表演者还没有出现。}"
 											]
 										}
 									]
 								}
-							],
-							"id": "00b"
-						},
-						{
-							"ENG_name": "Creating the Story",
-							"name": "创造故事",
-							"type": "entries",
-							"page": 7,
-							"entries": [
-								"以下是如何从对面页面上的任何或所有D&D遭遇提示中制作冒险的例子："
-							],
-							"id": "00c"
-						},
-						{
-							"type": "hr"
-						},
-						{
-							"ENG_name": "Diplomatic Escort",
-							"name": "外交护送",
-							"type": "entries",
-							"page": 7,
-							"entries": [
-								"派对被要求护送一位来自精类庭的精灵外交官进入恐怖森林。森林中有一个魔法传送门，可以将她送回妖精荒野。众所周知，有一个邪恶的精类想要捕获这位外交官。在森林深处，他们终于找到了石圈，但触发了伏击。一场剧烈的地震在他们周围爆发，一位精类法师召唤了数个土元素，以阻止精灵外交官进入。"
-							],
-							"id": "00d"
-						},
-						{
-							"ENG_name": "The Nether Portal",
-							"name": "下界传送门",
-							"type": "entries",
-							"page": 7,
-							"entries": [
-								"被困在一场毁灭性地震的中心，队伍发现自己处于一个着火且废墟的城市中。当他们向安全地带移动时，他们被一位牧师接近。她受了致命伤，但在她临终之际，她递给队伍中的一员一个密封的卷轴，并恳求他们保管好它。如果队伍打开卷轴，他们会发现一张古老的地图，上面突出显示了一个山峰。如果队伍攀登山峰，他们会在山顶发现一个由立石环绕的发光传送门。"
-							],
-							"id": "00e"
-						},
-						{
-							"ENG_name": "Stranded!",
-							"name": "被困！",
-							"type": "entries",
-							"page": 7,
-							"entries": [
-								"在冒险中，队伍发现了一个中间有魔法传送门的立石圈。如果他们选择穿过传送门，他们会出现在一个奇怪的世界。当他们探索时，一场剧烈的地震摧毁了传送门！"
-							],
-							"id": "00f"
-						}
-					],
-					"id": "001"
-				}
-			],
-			"id": "000"
-		},
-		{
-			"ENG_name": "The Deck",
-			"name": "牌组",
-			"type": "section",
-			"page": 8,
-			"entries": [
-				"{@note 参见牌组页面；{@deck 塔罗牌|TD}。}",
-				{
-					"ENG_name": "The Major Arcana",
-					"name": "大阿卡纳",
-					"type": "entries",
-					"page": 9,
-					"entries": [
-						{
-							"ENG_name": "The Fool",
-							"name": "愚者",
-							"type": "entries",
-							"page": 9,
-							"entries": [
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "decks/TD/MA-Fool.webp"
-									},
-									"credit": "Fred Gissubel",
-									"maxWidth": 240,
-									"width": 720,
-									"height": 1248
-								},
-								"以纯真和惊奇之心追随你的内心。",
-								"{@i 你遇到了一个侏儒，他说如果你跟随他，他会带你去一个奇妙的宝藏。}"
-							],
-							"id": "012"
-						},
-						{
-							"ENG_name": "The Magician",
-							"name": "魔术师",
-							"type": "entries",
-							"page": 9,
-							"entries": [
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "decks/TD/MA-Magician.webp"
-									},
-									"credit": "Fred Gissubel",
-									"maxWidth": 240,
-									"width": 720,
-									"height": 1247
-								},
-								"挖掘你的天赋，找到看待世界的新方式。",
-								"{@i 你遇到了一位智者，他给了你一把能打开魔法锁的钥匙。}"
-							],
-							"id": "013"
-						},
-						{
-							"ENG_name": "The High Priestess",
-							"name": "女祭司",
-							"type": "entries",
-							"page": 10,
-							"entries": [
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "decks/TD/MA-High Priestess.webp"
-									},
-									"credit": "Fred Gissubel",
-									"maxWidth": 240,
-									"width": 720,
-									"height": 1247
-								},
-								"访问你的直觉，调谐到女性力量的源泉。",
-								"{@i 你遇到了一位圣洁的女性，她为你们每个人提供了一份礼物。}"
-							],
-							"id": "014"
-						},
-						{
-							"ENG_name": "The Empress",
-							"name": "女皇",
-							"type": "entries",
-							"page": 10,
-							"entries": [
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "decks/TD/MA-Empress.webp"
-									},
-									"credit": "Fred Gissubel",
-									"maxWidth": 240,
-									"width": 720,
-									"height": 1245
-								},
-								"意识到你表达美和从力量之源培养他人的能力。",
-								"{@i 你遇到了一个国家的女王，她有一个重要的任务要交给你。}"
-							],
-							"id": "015"
-						},
-						{
-							"ENG_name": "The Emperor",
-							"name": "皇帝",
-							"type": "entries",
-							"page": 11,
-							"entries": [
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "decks/TD/MA-Emperor.webp"
-									},
-									"credit": "Fred Gissubel",
-									"maxWidth": 240,
-									"width": 720,
-									"height": 1247
-								},
-								"找到你内在权威感的源泉。",
-								"{@i 你遇到了一个遥远国度的国王，他寻求你的帮助。}"
-							],
-							"id": "016"
-						},
-						{
-							"ENG_name": "The Hierophant",
-							"name": "教皇",
-							"type": "entries",
-							"page": 11,
-							"entries": [
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "decks/TD/MA-Hierophant.webp"
-									},
-									"credit": "Fred Gissubel",
-									"maxWidth": 240,
-									"width": 720,
-									"height": 1250
-								},
-								"运用灵性理解与感知来感知世界。",
-								"{@i 你找到了一本由一位智者所著的圣书，书中包含了一个隐藏的神秘秘密。}"
-							],
-							"id": "017"
-						},
-						{
-							"ENG_name": "The Lovers",
-							"name": "恋人",
-							"type": "entries",
-							"page": 12,
-							"entries": [
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "decks/TD/MA-Lovers.webp"
-									},
-									"credit": "Fred Gissubel",
-									"maxWidth": 240,
-									"width": 720,
-									"height": 1246
-								},
-								"在尊重你的价值观的同时，找到与自己和他人相处的和谐。",
-								"{@i 一个神秘的人向你提出了一个诱人的提议。}"
-							],
-							"id": "018"
-						},
-						{
-							"ENG_name": "The Chariot",
-							"name": "战车",
-							"type": "entries",
-							"page": 12,
-							"entries": [
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "decks/TD/MA-Chariot.webp"
-									},
-									"credit": "Fred Gissubel",
-									"maxWidth": 240,
-									"width": 720,
-									"height": 1245
-								},
-								"坚持你的意图，实现你的愿望。",
-								"{@i 你发现了一个被困的伊夫利特，他提出如果你能找到释放他的方法，他将为你服务一年。}"
-							],
-							"id": "019"
-						},
-						{
-							"ENG_name": "Strength",
-							"name": "力量",
-							"type": "entries",
-							"page": 13,
-							"entries": [
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "decks/TD/MA-Strength.webp"
-									},
-									"credit": "Fred Gissubel",
-									"maxWidth": 240,
-									"width": 720,
-									"height": 1244
-								},
-								"你穿越恐惧，找到自己内在不可动摇的力量的能力。",
-								"{@i 一个魁梧的战士挡住了去路，挑战任何人进行徒手格斗。}"
-							],
-							"id": "01a"
-						},
-						{
-							"ENG_name": "The Hermit",
-							"name": "隐者",
-							"type": "entries",
-							"page": 13,
-							"entries": [
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "decks/TD/MA-Hermit.webp"
-									},
-									"credit": "Fred Gissubel",
-									"maxWidth": 240,
-									"width": 720,
-									"height": 1246
-								},
-								"成为自己的光，在黑暗中找到自己的道路。",
-								"{@i 你遇到了一个正在寻找值得的冒险者去击败一个魔法怪物的僧侣。}"
-							],
-							"id": "01b"
-						},
-						{
-							"ENG_name": "The Wheel of Fortune",
-							"name": "命运之轮",
-							"type": "entries",
-							"page": 14,
-							"entries": [
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "decks/TD/MA-Wheel of Fortune.webp"
-									},
-									"credit": "Fred Gissubel",
-									"maxWidth": 240,
-									"width": 720,
-									"height": 1250
-								},
-								"你命运的转折点以及你适应变化的能力。",
-								"{@i 你遇到了一个半身人法师，如果你善待他\u2014\u2014他会给你们一个\"好运眨眼\"。你在下一次掷骰中获得优势。}"
-							],
-							"id": "01c"
-						},
-						{
-							"ENG_name": "Justice",
-							"name": "正义",
-							"type": "entries",
-							"page": 14,
-							"entries": [
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "decks/TD/MA-Justice.webp"
-									},
-									"credit": "Fred Gissubel",
-									"maxWidth": 240,
-									"width": 720,
-									"height": 1249
-								},
-								"你通过打破旧的、限制性的信念来创造新现实的能力。",
-								"{@i 一个贫穷的村民向你求助，并提供一件稀有的魔法物品作为报酬。}"
-							],
-							"id": "01d"
-						},
-						{
-							"ENG_name": "The Hanged Man",
-							"name": "倒吊人",
-							"type": "entries",
-							"page": 15,
-							"entries": [
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "decks/TD/MA-Hanged Man.webp"
-									},
-									"credit": "Fred Gissubel",
-									"maxWidth": 240,
-									"width": 720,
-									"height": 1250
-								},
-								"从不同的角度看待事物的必要性。",
-								"{@i 你做了一个奇怪的梦，梦见和一只奥图格谈论生活。当你醒来时，你的感知属性永久增加了一点。}"
-							],
-							"id": "01e"
-						},
-						{
-							"ENG_name": "Death",
-							"name": "死亡",
-							"type": "entries",
-							"page": 15,
-							"entries": [
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "decks/TD/MA-Death.webp"
-									},
-									"credit": "Fred Gissubel",
-									"maxWidth": 240,
-									"width": 720,
-									"height": 1247
-								},
-								"从一种感知现实到另一种感知现实的转变以及习惯性模式的结束",
-								"{@i 一位吸血鬼领主提供给你永生不死的礼物，以换取一个小小的恩惠。}"
-							],
-							"id": "01f"
-						},
-						{
-							"ENG_name": "Temperance",
-							"name": "节制",
-							"type": "entries",
-							"page": 16,
-							"entries": [
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "decks/TD/MA-Temperance.webp"
-									},
-									"credit": "Fred Gissubel",
-									"maxWidth": 240,
-									"width": 720,
-									"height": 1251
-								},
-								"我们以一种审慎和耐心的方式处理事情的能力。",
-								"{@i 你在接下来的{@dice 1d6}次感知豁免检定中获得优势。}"
-							],
-							"id": "020"
-						},
-						{
-							"ENG_name": "The Devil",
-							"name": "魔鬼",
-							"type": "entries",
-							"page": 16,
-							"entries": [
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "decks/TD/MA-Devil.webp"
-									},
-									"credit": "Fred Gissubel",
-									"maxWidth": 240,
-									"width": 720,
-									"height": 1248
-								},
-								"如何处理我们的阴影自我。这张牌召唤我们穿透谎言，看看我们能对自己有多诚实。",
-								"{@i 你遇到了一个恶魔，他提出用一件稀有的魔法物品来换取一个恩惠。}"
-							],
-							"id": "021"
-						},
-						{
-							"ENG_name": "The Tower",
-							"name": "高塔",
-							"type": "entries",
-							"page": 17,
-							"entries": [
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "decks/TD/MA-Tower.webp"
-									},
-									"credit": "Fred Gissubel",
-									"maxWidth": 240,
-									"width": 720,
-									"height": 1248
-								},
-								"我们珍视的信念或物质结构的崩溃。正是在不抵抗中，我们能找到平和与感知。",
-								"{@i 你周围的大地神秘地开始在一场猛烈的地震中摇晃。}"
-							],
-							"id": "022"
-						},
-						{
-							"ENG_name": "The Star",
-							"name": "星星",
-							"type": "entries",
-							"page": 17,
-							"entries": [
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "decks/TD/MA-Star.webp"
-									},
-									"credit": "Fred Gissubel",
-									"maxWidth": 240,
-									"width": 720,
-									"height": 1251
-								},
-								"找到可以引导我们度过生活的焦点。我们内在的导航系统。我们的北极星。",
-								"{@i 你发现了一个机械玩具木偶，它总是走向最近的酒馆。}"
-							],
-							"id": "023"
-						},
-						{
-							"ENG_name": "The Moon",
-							"name": "月亮",
-							"type": "entries",
-							"page": 18,
-							"entries": [
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "decks/TD/MA-Moon.webp"
-									},
-									"credit": "Fred Gissubel",
-									"maxWidth": 240,
-									"width": 720,
-									"height": 1247
-								},
-								"面对并允许根深蒂固的恐惧在你的意识之光中溶解。从心中移除言语，深呼吸。",
-								"{@i 你遇到了一个女巫，她希望你看看她的水晶球。}"
-							],
-							"id": "024"
-						},
-						{
-							"ENG_name": "The Sun",
-							"name": "太阳",
-							"type": "entries",
-							"page": 18,
-							"entries": [
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "decks/TD/MA-Sun.webp"
-									},
-									"credit": "Fred Gissubel",
-									"maxWidth": 240,
-									"width": 720,
-									"height": 1247
-								},
-								"回归童年的纯真和活力。",
-								"{@i 掷{@dice 1d6+6}，这个结果将成为你接下来七十二小时的年龄。}"
-							],
-							"id": "025"
-						},
-						{
-							"ENG_name": "Judgement",
-							"name": "审判",
-							"type": "entries",
-							"page": 19,
-							"entries": [
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "decks/TD/MA-Judgement.webp"
-									},
-									"credit": "Fred Gissubel",
-									"maxWidth": 240,
-									"width": 720,
-									"height": 1251
-								},
-								"我们辨别真正重要事物的能力，并用它来修剪我们生活花园中的杂草。",
-								"{@i 一个丘陵巨人在一夜饮酒后沉睡。在其腰带上的锁子甲袋中，你可以听到有人在低声呼救。}"
-							],
-							"id": "026"
-						},
-						{
-							"ENG_name": "The World",
-							"name": "世界",
-							"type": "entries",
-							"page": 19,
-							"entries": [
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "decks/TD/MA-World.webp"
-									},
-									"credit": "Fred Gissubel",
-									"maxWidth": 240,
-									"width": 720,
-									"height": 1247
-								},
-								"结束。在内心和外在达到完成和力量的地方。",
-								"{@i 你看到有人在路边哭泣。他们被迫要嫁给一个他们不愿意的人。}"
-							],
-							"id": "027"
-						}
-					],
-					"id": "011"
-				},
-				{
-					"ENG_name": "The Minor Arcana",
-					"name": "小阿卡纳",
-					"type": "section",
-					"page": 20,
-					"entries": [
-						{
-							"ENG_name": "Strength",
-							"name": "力量",
-							"type": "entries",
-							"page": 20,
-							"entries": [
-								{
-									"ENG_name": "Ace of Strength",
-									"name": "力量王牌",
-									"type": "entries",
-									"page": 20,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/STR-A.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1248
-										},
-										"所有创造能量的源泉都在你内心。你拥有想象、开始并完成任何你决心去做的项目的力量。",
-										"{@i 一个贵族的孩子离家出走，加入了蒙塔古勋爵的怪物马戏团。他恳求你找到并带回他们。}"
-									],
-									"id": "02a"
-								},
-								{
-									"ENG_name": "Two of Strength",
-									"name": "力量之二",
-									"type": "entries",
-									"page": 20,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/STR-2.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1248
-										},
-										"朝着未来目标成长并取得进步。享受发现你喜欢做的事情。",
-										"{@i 一个醉酒的乞丐在小巷里向你发誓，他看到国王的儿子变成了狼人。城市中发生了可怕的杀戮事件。}"
-									],
-									"id": "02b"
-								},
-								{
-									"ENG_name": "Three of Strength",
-									"name": "力量三",
-									"type": "entries",
-									"page": 21,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/STR-3.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1250
-										},
-										"扩大你的影响力范围，传达你的想法。取得进步",
-										"{@i 一个正在训练中的年轻圣武士说，他的圣武士团偷走了一个对大地精来说神圣的物品。他感到内疚，想要偷回它并归还给他们。}"
-									],
-									"id": "02c"
-								},
-								{
-									"ENG_name": "Four of Strength",
-									"name": "力量的四",
-									"type": "entries",
-									"page": 21,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/STR-4.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1248
-										},
-										"整体大于部分之和。寻找他人进行合作。",
-										"{@i 一个小镇的镇长宣称提夫林是\"道德体面的威胁\"，并希望将他们集中起来并拘留。}"
-									],
-									"id": "02d"
-								},
-								{
-									"ENG_name": "Five of Strength",
-									"name": "力量五",
-									"type": "entries",
-									"page": 22,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/STR-5.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1251
-										},
-										"完全专注于当下，以便有效地协同工作。放下竞争。",
-										"{@i 一支巡回马戏团的巨型蜘蛛死了，这让其主人悲痛欲绝。你能帮他找到一些巨型蜘蛛卵来孵化吗？}"
-									],
-									"id": "02e"
-								},
-								{
-									"ENG_name": "Six of Strength",
-									"name": "力量六",
-									"type": "entries",
-									"page": 22,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/STR-6.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1250
-										},
-										"享受成功，但不要对它产生依赖。你对成功的定义是什么？经历高潮和低谷。",
-										"{@i 队伍被请求让一个年轻人陪同他们下一次的冒险，作为成年礼的一部分。}"
-									],
-									"id": "02f"
-								},
-								{
-									"ENG_name": "Seven of Strength",
-									"name": "力量七",
-									"type": "entries",
-									"page": 23,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/STR-7.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1243
-										},
-										"应对压倒性的情绪。放下造成压力的因素\u2014\u2014完美主义、欲望、恐惧、过度担忧未来。",
-										"{@i 你发现了一柄魔法剑。掷一个{@dice d6}。1\u20133：它是一柄+1剑。4\u20136：它是一柄+1剑，出鞘时会大声歌唱。}"
-									],
-									"id": "030"
-								},
-								{
-									"ENG_name": "Eight of Strength",
-									"name": "力量八",
-									"type": "entries",
-									"page": 23,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/STR-8.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1248
-										},
-										"顺其自然，适应变化。轻松把握目标，享受旅程。",
-										"{@i 在一场雷暴中，冒险者们看到了一个洞穴的入口。那里是一群老巫婆的家。}"
-									],
-									"id": "031"
-								},
-								{
-									"ENG_name": "Nine of Strength",
-									"name": "力量之九",
-									"type": "entries",
-									"page": 24,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/STR-9.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1246
-										},
-										"寻找决心的源泉，以克服困难。一次信仰的考验。",
-										"{@i 一座闹鬼的房子中的邪恶开始影响下方山谷中的村庄农田。农民们已经筹集了一笔钱，支付给你以清除邪恶。}"
-									],
-									"id": "032"
-								},
-								{
-									"ENG_name": "Ten of Strength",
-									"name": "力量十",
-									"type": "entries",
-									"page": 24,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/STR-10.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1250
-										},
-										"确保发声。不要试图做所有事情。在可能的情况下委派责任。表达自己。",
-										"{@i 一个仁慈的德鲁伊教团想要回他们的圣石。它现在镶嵌在一个自负但强大的国王的王冠上。}"
-									],
-									"id": "033"
-								},
-								{
-									"ENG_name": "Page of Strength",
-									"name": "力量侍从",
-									"type": "entries",
-									"page": 25,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/STR-P.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1248
-										},
-										"做出一些了不起的事情需要能量。加油！激发你的自由精神，追随你的激情。",
-										"{@i 一个自称\"圣洁\"的牧师团体（实际上是邪恶的）要求你取回被偷走的圣物。那是被一个真正的圣洁之人偷走的独角兽角。}"
-									],
-									"id": "034"
-								},
-								{
-									"ENG_name": "Knight of Strength",
-									"name": "力量骑士",
-									"type": "entries",
-									"page": 25,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/STR-Kn.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1241
-										},
-										"全力以赴，不回头。听从直觉。采取一切必要行动使之实现。",
-										"{@i 冒险者们发现了一个传讯石。在另一端，有人陷入了深深的困境，正在恳求帮助。}"
-									],
-									"id": "035"
-								},
-								{
-									"ENG_name": "Queen of Strength",
-									"name": "力量女王",
-									"type": "entries",
-									"page": 26,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/STR-Q.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1246
-										},
-										"传播爱，让你的光芒闪耀。有勇气迈向下一个层次。",
-										"{@i 派对被要求护送一位政治人物穿越敌对地形。}"
-									],
-									"id": "036"
-								},
-								{
-									"ENG_name": "King of Strength",
-									"name": "力量之王",
-									"type": "entries",
-									"page": 26,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/STR-Ki.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1248
-										},
-										"充分展现你的领导力，实现你的愿景。教导他人。",
-										"{@i 在旅行途中，队伍遇到了一个试图奴役附近村庄的蛇人巢穴。}"
-									],
-									"id": "037"
-								}
-							],
-							"id": "029"
-						},
-						{
-							"ENG_name": "Intelligence",
-							"name": "智力",
-							"type": "entries",
-							"page": 27,
-							"entries": [
-								{
-									"ENG_name": "Ace of Intelligence",
-									"name": "智慧A",
-									"type": "entries",
-									"page": 27,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/INT-A.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1250
-										},
-										"找到你内心的法师，运用你的天赋去发现新的想法并取得突破。",
-										"{@i 队伍遇到了一位强大的法师，他们可以向他提出一个问题并获得真实的答案。}"
-									],
-									"id": "039"
-								},
-								{
-									"ENG_name": "Two of Intelligence",
-									"name": "智慧二",
-									"type": "entries",
-									"page": 27,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/INT-2.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1249
-										},
-										"我们内心的独白如何引起混乱，以及我们如何必须找到一种方式去倾听我们的内心。",
-										"{@i 你看到一个刻有魔法符号的拉杆。你要拉动它吗？}"
-									],
-									"id": "03a"
-								},
-								{
-									"ENG_name": "Three of Intelligence",
-									"name": "智慧三",
-									"type": "entries",
-									"page": 28,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/INT-3.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1244
-										},
-										"找到一种方法来治愈并从焦虑和情感痛苦中学习。",
-										"{@i 一个哭泣的树精请求你拯救她的森林，使其免受兽人的破坏。}"
-									],
-									"id": "03b"
-								},
-								{
-									"ENG_name": "Four of Intelligence",
-									"name": "智力四",
-									"type": "entries",
-									"page": 28,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/INT-4.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1249
-										},
-										"在继续前进之前花时间冥想，同时确保你不是在回避行动。",
-										"{@i 下一次你进行的短休将相当于一次长休。}"
-									],
-									"id": "03c"
-								},
-								{
-									"ENG_name": "Five of Intelligence",
-									"name": "智慧之五",
-									"type": "entries",
-									"page": 29,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/INT-5.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1252
-										},
-										"竞争如何滋生冲突，使我们分裂，从而造成痛苦。",
-										"{@i 冒险者们遇到了两位贵族，他们为了争夺一件魔法（但被诅咒的）物品而争斗。}"
-									],
-									"id": "03d"
-								},
-								{
-									"ENG_name": "Six of Intelligence",
-									"name": "智慧的六",
-									"type": "entries",
-									"page": 29,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/INT-6.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1252
-										},
-										"释放自己，摆脱负担和旧的思维方式。",
-										"{@i 一个鬼魂接近了队伍中的一个成员，声称是已故多年的亲戚。它寻求复仇。}"
-									],
-									"id": "03e"
-								},
-								{
-									"ENG_name": "Seven of Intelligence",
-									"name": "智慧七",
-									"type": "entries",
-									"page": 30,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/INT-7.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1253
-										},
-										"我们如何玩游戏，隐藏真实的自我，出于恐惧或伤害而掩饰我们的意图。",
-										"{@i 一个变形怪已经潜入了国王的宫廷，国王正在寻找能够将其揭露出来的人。}"
-									],
-									"id": "03f"
-								},
-								{
-									"ENG_name": "Eight of Intelligence",
-									"name": "智慧八",
-									"type": "entries",
-									"page": 30,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/INT-8.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1248
-										},
-										"摆脱罪恶感和自我惩罚的纠缠。",
-										"{@i 附近的一个村庄被黑暗精灵入侵，正在寻求援助。}"
-									],
-									"id": "040"
-								},
-								{
-									"ENG_name": "Nine of Intelligence",
-									"name": "智慧九",
-									"type": "entries",
-									"page": 31,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/INT-9.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1247
-										},
-										"观察思想如何制造混乱，并找到一个方法，从一个冷静的静止空间中观察它们。",
-										"{@i 一个灵吸怪使用噬脑怪控制了监狱长。它利用他来捕食囚犯。}"
-									],
-									"id": "041"
-								},
-								{
-									"ENG_name": "Ten of Intelligence",
-									"name": "智慧十",
-									"type": "entries",
-									"page": 31,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/INT-10.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1246
-										},
-										"我们如何处理生活中出现的问题。我们是逃避和否认吗？我们是愤怒地反应吗？我们是否保持意识和觉察？",
-										"{@i 镇长失踪了。她被一个吸血鬼迷住了。}"
-									],
-									"id": "042"
-								},
-								{
-									"ENG_name": "Page of Intelligence",
-									"name": "智力侍从",
-									"type": "entries",
-									"page": 32,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/INT-P.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1248
-										},
-										"发现传达你的想法并将其付诸行动的新方法。",
-										"{@i 一个法师希望你帮她找一些稀有的法术材料。}"
-									],
-									"id": "043"
-								},
-								{
-									"ENG_name": "Knight of Intelligence",
-									"name": "智慧骑士",
-									"type": "entries",
-									"page": 32,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/INT-Kn.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1248
-										},
-										"将原始的雄心壮志转化为建设性的、深思熟虑的、专注的计划。",
-										"{@i 一个圣洁的组织需要你的帮助来净化一个被恶魔玷污的地方。}"
-									],
-									"id": "044"
-								},
-								{
-									"ENG_name": "Queen of Intelligence",
-									"name": "智慧女王",
-									"type": "entries",
-									"page": 33,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/INT-Q.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1248
-										},
-										"在慈悲的心态中清晰地表达你的愿望的必要性。",
-										"{@i 有人带着一个谋杀之谜来找你，他们希望你解开这个谜团。}"
-									],
-									"id": "045"
-								},
-								{
-									"ENG_name": "King of Intelligence",
-									"name": "智慧之王",
-									"type": "entries",
-									"page": 33,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/INT-Ki.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1249
-										},
-										"清晰地使用你的智慧，但不要让它压倒你的内心。",
-										"{@i 一位女王受到了女巫的诅咒。你被请求帮助解除这个咒语。}"
-									],
-									"id": "046"
-								}
-							],
-							"id": "038"
-						},
-						{
-							"ENG_name": "Wisdom",
-							"name": "感知",
-							"type": "entries",
-							"page": 34,
-							"entries": [
-								{
-									"ENG_name": "Ace of Wisdom",
-									"name": "感知王牌",
-									"type": "entries",
-									"page": 34,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/WIS-A.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1247
-										},
-										"我们有能力利用洞察力的能量来治愈情感并爱护我们自己。",
-										"{@i 一群精灵请求队伍帮助他们找回一件神圣的神器。}"
-									],
-									"id": "048"
-								},
-								{
-									"ENG_name": "Two of Wisdom",
-									"name": "感知之二",
-									"type": "entries",
-									"page": 34,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/WIS-2.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1248
-										},
-										"能够与某人\u2014\u2014无论是朋友还是爱人\u2014\u2014在一起，同时仍然保持你自己的个体感。",
-										"{@i 城市警卫队队长接近你，想看看你是否愿意追踪并捕获一个危险的罪犯。}"
-									],
-									"id": "049"
-								},
-								{
-									"ENG_name": "Three of Wisdom",
-									"name": "感知三",
-									"type": "entries",
-									"page": 35,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/WIS-3.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1248
-										},
-										"花时间与你的朋友们一起庆祝活着的简单快乐。",
-										"{@i 你被附近城镇的镇长邀请参加他们的\"怪物节\"。}"
-									],
-									"id": "04a"
-								},
-								{
-									"ENG_name": "Four of Wisdom",
-									"name": "感知四",
-									"type": "entries",
-									"page": 35,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/WIS-4.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1248
-										},
-										"花时间冥想，放下脑海中所有嘈杂的思绪。",
-										"{@i 你在一棵老树的空心中发现了一个精美的盒子里藏有一张宝藏图。}"
-									],
-									"id": "04b"
-								},
-								{
-									"ENG_name": "Five of Wisdom",
-									"name": "感知的五",
-									"type": "entries",
-									"page": 36,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/WIS-5.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1249
-										},
-										"保持乐观的心态，不让过去的伤痛影响你对当前时刻的解读。",
-										"{@i 一个还魂鬼向你诉说它的故事，并请求帮助完成它的复仇行为。}"
-									],
-									"id": "04c"
-								},
-								{
-									"ENG_name": "Six of Wisdom",
-									"name": "感知六",
-									"type": "entries",
-									"page": 36,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/WIS-6.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1247
-										},
-										"我们能够成为孩子，在世界中玩耍。回归纯真。",
-										"{@i 你找到了一颗宝石。当你转向远处的山脉时，宝石开始跳动并发光。}"
-									],
-									"id": "04d"
-								},
-								{
-									"ENG_name": "Seven of Wisdom",
-									"name": "感知七",
-									"type": "entries",
-									"page": 37,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/WIS-7.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1248
-										},
-										"我们在决策中具有辨别能力，并能从清晰和感知的角度做出选择。",
-										"{@i 一位图书管理员在图书馆的地下室发现了一扇隐藏的石门，上面覆盖着魔法符文。}"
-									],
-									"id": "04e"
-								},
-								{
-									"ENG_name": "Eight of Wisdom",
-									"name": "感知八",
-									"type": "entries",
-									"page": 37,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/WIS-8.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1248
-										},
-										"通过相信有更好的事情在等待，找到摆脱过去痛苦的方法。",
-										"{@i 墓地的坟墓似乎被盗了，但有些人说这是死者自己挖出来的。}"
-									],
-									"id": "04f"
-								},
-								{
-									"ENG_name": "Nine of Wisdom",
-									"name": "感知九",
-									"type": "entries",
-									"page": 38,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/WIS-9.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1246
-										},
-										"找到享受我们成就和不陷入自满之间的平衡。",
-										"{@i 有传言称一群掠夺者正在前往一个村庄。村民们请求队伍提供帮助。}"
-									],
-									"id": "050"
-								},
-								{
-									"ENG_name": "Ten of Wisdom",
-									"name": "感知十",
-									"type": "entries",
-									"page": 38,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/WIS-10.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1247
-										},
-										"将头脑与心灵统一。在情感平衡中与他人和你的周围环境建立联系。",
-										"{@i 队伍遇到了一个魔法传送门，周围环绕着一圈立石。}"
-									],
-									"id": "051"
-								},
-								{
-									"ENG_name": "Page of Wisdom",
-									"name": "感知之页",
-									"type": "entries",
-									"page": 39,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/WIS-P.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1248
-										},
-										"由你的好奇心和创造力激发，开始新的旅程。",
-										"{@i 一个男人蹒跚地向你走来，递给你一把银钥匙。他喘息着说，\"找到那条鱼\"，然后倒地身亡。他身上有一股海水的气味。}"
-									],
-									"id": "052"
-								},
-								{
-									"ENG_name": "Knight of Wisdom",
-									"name": "感知骑士",
-									"type": "entries",
-									"page": 39,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/WIS-Kn.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1251
-										},
-										"信任你的热情，允许自己大胆梦想，并想象最好的事情发生在你身上。",
-										"{@i 有传言说，镇长被看到和一个小恶魔签订了契约。}"
-									],
-									"id": "053"
-								},
-								{
-									"ENG_name": "Queen of Wisdom",
-									"name": "感知女王",
-									"type": "entries",
-									"page": 40,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/WIS-Q.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1253
-										},
-										"深入同情心的深处，平息批判性思维，以创造情绪稳定。",
-										"{@i 一只鸭子摇摇摆摆地走过来，说他目睹了一起谋杀案，并希望你们能抓住凶手。}"
-									],
-									"id": "054"
-								},
-								{
-									"ENG_name": "King of Wisdom",
-									"name": "感知之王",
-									"type": "entries",
-									"page": 40,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/WIS-Ki.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1243
-										},
-										"完全接受这一刻。让抱怨消散。对自己温柔以待。",
-										"{@i 一位贵族向你走来，说他被派了一名刺客来杀他，他需要你的帮助。}"
-									],
-									"id": "055"
-								}
-							],
-							"id": "047"
-						},
-						{
-							"ENG_name": "Charisma",
-							"name": "魅力",
-							"type": "entries",
-							"page": 41,
-							"entries": [
-								{
-									"ENG_name": "Ace of Charisma",
-									"name": "魅力A",
-									"type": "entries",
-									"page": 41,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/CHA-A.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1245
-										},
-										"一个新的机会以及显现和丰富的时候。",
-										"{@i 一个神秘的刺客组织开始追捕队伍中的一名成员。}"
-									],
-									"id": "057"
-								},
-								{
-									"ENG_name": "Two of Charisma",
-									"name": "魅力的二",
-									"type": "entries",
-									"page": 41,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/CHA-2.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1246
-										},
-										"我们通过明确我们的优先事项，优雅而轻松地管理我们的时间的能力。",
-										"{@i 一群维京战士在一艘长船上。他们声称找到了通往冥河的道路，并且他们打算去与恶魔战斗。}"
-									],
-									"id": "058"
-								},
-								{
-									"ENG_name": "Three of Charisma",
-									"name": "魅力之三",
-									"type": "entries",
-									"page": 42,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/CHA-3.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1247
-										},
-										"利用团队的力量，学习如何协作。",
-										"{@i 一个害羞的食人魔请求队伍救出他的宠物山羊，它被一个邪恶的独眼巨人抓走了。}"
-									],
-									"id": "059"
-								},
-								{
-									"ENG_name": "Four of Charisma",
-									"name": "魅力四",
-									"type": "entries",
-									"page": 42,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/CHA-4.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1248
-										},
-										"在理财时要谨慎，但不要陷入恐惧或贪婪。",
-										"{@i 一个矮人声称在他的矿井中发现了一条秘银矿脉，但现在有怪物占据了那里，他需要帮助才能夺回矿脉。}"
-									],
-									"id": "05a"
-								},
-								{
-									"ENG_name": "Five of Charisma",
-									"name": "魅力五",
-									"type": "entries",
-									"page": 43,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/CHA-5.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1250
-										},
-										"找出如何摆脱匮乏心态，享受以任何形式出现在我们生活中的丰富。",
-										"{@i 一个狗头人询问队伍是否愿意和他一起踏上冒险之旅，前往龙牙山脉寻找传说中的提亚玛特之眼。}"
-									],
-									"id": "05b"
-								},
-								{
-									"ENG_name": "Six of Charisma",
-									"name": "魅力六",
-									"type": "entries",
-									"page": 43,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/CHA-6.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1248
-										},
-										"在不牺牲你的价值观或耗尽你的能量的情况下，充分地给予和接受。",
-										"{@i 一位老水手告诉了你沿海地区一个传说中的沉船的确切位置。}"
-									],
-									"id": "05c"
-								},
-								{
-									"ENG_name": "Seven of Charisma",
-									"name": "魅力七",
-									"type": "entries",
-									"page": 44,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/CHA-7.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1246
-										},
-										"允许你的计划发展和展开，不急不躁，不焦虑。",
-										"{@i 镇长被传言被邪恶的灵魂附身。镇长正在秘密准备牺牲整个城镇。}"
-									],
-									"id": "05d"
-								},
-								{
-									"ENG_name": "Eight of Charisma",
-									"name": "魅力八",
-									"type": "entries",
-									"page": 44,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/CHA-8.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1247
-										},
-										"注重把简单的事情做好。慢而稳赢得比赛。",
-										"{@i 一位矮人锻造大师的魔法锤子被偷了，她请求你的帮助。作为回报，她将为你锻造一把武器。}"
-									],
-									"id": "05e"
-								},
-								{
-									"ENG_name": "Nine of Charisma",
-									"name": "魅力九",
-									"type": "entries",
-									"page": 45,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/CHA-9.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1247
-										},
-										"从\"生存模式\"中走出来的能力，享受我们所拥有的丰富和自给自足。欣赏美好。",
-										"{@i 有东西在城市下方挖掘隧道，你们的队伍被要求进行调查。}"
-									],
-									"id": "05f"
-								},
-								{
-									"ENG_name": "Ten of Charisma",
-									"name": "魅力十",
-									"type": "entries",
-									"page": 45,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/CHA-10.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1246
-										},
-										"拥有一个支持你和你的梦的人际网络所带来的安全感。长期成功。",
-										"{@i 一位圣武士请求帮助，以找回他倒下的同伴的遗体。}"
-									],
-									"id": "060"
-								},
-								{
-									"ENG_name": "Page of Charisma",
-									"name": "魅力侍从",
-									"type": "entries",
-									"page": 46,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/CHA-P.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1250
-										},
-										"开始行动，即使是小事也要重新点燃冒险的感觉。意识到哪些事情不起作用。",
-										"{@i 某物摧毁了横跨裂谷的绳索桥。村民们需要帮助重建它。}"
-									],
-									"id": "061"
-								},
-								{
-									"ENG_name": "Knight of Charisma",
-									"name": "魅力骑士",
-									"type": "entries",
-									"page": 46,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/CHA-Kn.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1248
-										},
-										"找到享受日常的方法，为我们自己的成功承担责任，并放下期望。良好的工作自会证明一切。",
-										"{@i 当地的疯狂法师想要得到石像鬼或者鸡蛇兽的卵，并愿意慷慨支付。}"
-									],
-									"id": "062"
-								},
-								{
-									"ENG_name": "Queen of Charisma",
-									"name": "魅力女王",
-									"type": "entries",
-									"page": 47,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/CHA-Q.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1248
-										},
-										"为自己和他人创造一个培养伟大的环境。保持工作与生活的平衡。",
-										"{@i 一个农民声称他的下金蛋的鹅被一个独眼巨人偷走了，他请求你们帮助找回鹅。}"
-									],
-									"id": "063"
-								},
-								{
-									"ENG_name": "King of Charisma",
-									"name": "魅力之王",
-									"type": "entries",
-									"page": 47,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "decks/TD/CHA-Ki.webp"
-											},
-											"credit": "Fred Gissubel",
-											"maxWidth": 240,
-											"width": 720,
-											"height": 1248
-										},
-										"收获你努力的成果。享受丰富，同时不迷失在获取中。",
-										"{@i 队伍里有吟游诗人吗？国王正在举办舞会，但娱乐节目的表演者还没有出现。}"
-									],
-									"id": "064"
-								}
-							],
-							"id": "056"
-						}
-					],
-					"id": "028"
-				}
-			],
-			"id": "010"
-		},
-		{
-			"ENG_name": "Credits",
-			"name": "制作组",
-			"type": "section",
-			"page": 48,
-			"entries": [
-				"商标和版权 © 2022 由Wizards of the Coast LLC所有",
-				"版权所有。",
-				"由美国克拉克森·波特出版社出版，该出版社是兰登书屋的一个品牌，属于企鹅兰登书屋有限责任公司，纽约。",
-				"{@link 克拉克森波特.com}",
-				"CLARKSON POTTER 是企鹅兰登书屋有限责任公司的商标，带有版权符号的 POTTER 是注册商标。",
-				"《龙与地下城》、其标志、D&D以及龙形符号均为威世智有限责任公司的商标。© 2022 威世智",
-				"ISBN 978-1-9848-2466-0",
-				"中国印刷",
-				{
-					"type": "list",
-					"style": "list-no-bullets",
-					"items": [
-						{
-							"ENG_name": "Writer:",
-							"name": "编剧：",
-							"type": "item",
-							"entries": [
-								"设计师"
-							]
-						},
-						{
-							"ENG_name": "Illustrator:",
-							"name": "插画师：",
-							"type": "item",
-							"entries": [
-								"弗雷德·吉斯贝尔"
-							]
-						},
-						{
-							"ENG_name": "Editor:",
-							"name": "编辑：",
-							"type": "item",
-							"entries": [
-								"安吉琳·博尔斯奇"
-							]
-						},
-						{
-							"ENG_name": "Designer:",
-							"name": "设计师：",
-							"type": "item",
-							"entries": [
-								"妮可·布洛克"
-							]
-						},
-						{
-							"ENG_name": "Production Editor:",
-							"name": "制作编辑：",
-							"type": "item",
-							"entries": [
-								"艾比·奥拉迪波"
-							]
-						},
-						{
-							"ENG_name": "Production Manager:",
-							"name": "生产经理：",
-							"type": "item",
-							"entries": [
-								"路易莎·弗兰卡维拉"
-							]
-						},
-						{
-							"ENG_name": "Compositor:",
-							"name": "合成师：",
-							"type": "item",
-							"entries": [
-								"早志江佐织"
-							]
-						},
-						{
-							"ENG_name": "Copyeditor:",
-							"name": "校对编辑：",
-							"type": "item",
-							"entries": [
-								"戴安娜·德鲁"
 							]
 						}
 					]
 				},
-				"10 9 8 7 6",
-				"第一版"
-			],
-			"id": "065"
+				{
+					"ENG_name": "Credits",
+					"name": "制作组",
+					"type": "section",
+					"id": "065",
+					"page": 48,
+					"entries": [
+						"商标和版权 © 2022 由Wizards of the Coast LLC所有",
+						"版权所有。",
+						"由美国克拉克森·波特出版社出版，该出版社是兰登书屋的一个品牌，属于企鹅兰登书屋有限责任公司，纽约。",
+						"{@link 克拉克森波特.com}",
+						"CLARKSON POTTER 是企鹅兰登书屋有限责任公司的商标，带有版权符号的 POTTER 是注册商标。",
+						"《龙与地下城》、其标志、D&D以及龙形符号均为威世智有限责任公司的商标。© 2022 威世智",
+						"ISBN 978-1-9848-2466-0",
+						"中国印刷",
+						{
+							"type": "list",
+							"style": "list-no-bullets",
+							"items": [
+								{
+									"ENG_name": "Writer:",
+									"name": "编剧：",
+									"type": "item",
+									"entries": [
+										"设计师"
+									]
+								},
+								{
+									"ENG_name": "Illustrator:",
+									"name": "插画师：",
+									"type": "item",
+									"entries": [
+										"弗雷德·吉斯贝尔"
+									]
+								},
+								{
+									"ENG_name": "Editor:",
+									"name": "编辑：",
+									"type": "item",
+									"entries": [
+										"安吉琳·博尔斯奇"
+									]
+								},
+								{
+									"ENG_name": "Designer:",
+									"name": "设计师：",
+									"type": "item",
+									"entries": [
+										"妮可·布洛克"
+									]
+								},
+								{
+									"ENG_name": "Production Editor:",
+									"name": "制作编辑：",
+									"type": "item",
+									"entries": [
+										"艾比·奥拉迪波"
+									]
+								},
+								{
+									"ENG_name": "Production Manager:",
+									"name": "生产经理：",
+									"type": "item",
+									"entries": [
+										"路易莎·弗兰卡维拉"
+									]
+								},
+								{
+									"ENG_name": "Compositor:",
+									"name": "合成师：",
+									"type": "item",
+									"entries": [
+										"早志江佐织"
+									]
+								},
+								{
+									"ENG_name": "Copyeditor:",
+									"name": "校对编辑：",
+									"type": "item",
+									"entries": [
+										"戴安娜·德鲁"
+									]
+								}
+							]
+						},
+						"10 9 8 7 6",
+						"第一版"
+					]
+				}
+			]
 		}
 	]
 }

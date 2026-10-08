@@ -1,987 +1,2967 @@
 {
-	"data": [
+	"adventureData": [
 		{
-			"ENG_name": "Introduction",
-			"name": "简介",
-			"type": "section",
-			"page": 4,
-			"id": "000",
-			"entries": [
+			"id": "DrDe-TWoO",
+			"source": "DrDe-TWoO",
+			"data": [
 				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "adventure/DrDe/000-dragon-delves-cover.webp"
-					},
-					"width": 1701,
-					"height": 2242
-				},
-				{
-					"ENG_name": "Dragons in Dungeons",
-					"name": "地下城中的龙",
+					"ENG_name": "Introduction",
+					"name": "简介",
 					"type": "section",
+					"id": "000",
 					"page": 4,
-					"id": "001",
 					"entries": [
-						"没有什么比集结一群英雄在神秘地下城中对抗强大巨龙更能体现《龙与地下城》的精髓了。无论是50多年前首批踏入幽暗地城的冒险者，还是如今正准备开始第一次冒险的新手玩家，都将被这些经典元素跨越时空的联系在一起。",
-						"{@i 巨龙迷城}是对这一共同传统的颂扬。本书中的十个冒险故事均以盘踞巢穴的龙为核心，专为1至12级角色设计，提供多样挑战\u2014\u2014从击败邪恶之龙到与善良之龙合作，再到应对更复杂的道德困境。作为巨龙巢穴的地城类型丰富多样，既有洞穴群落，也有城市废墟及其他场景。",
-						"地城藏龙处，冒险永不息！"
-					]
-				},
-				{
-					"ENG_name": "Using This Book",
-					"name": "使用本书",
-					"type": "section",
-					"page": 4,
-					"id": "002",
-					"entries": [
-						"类似 {@i 巨龙迷城} 这样的冒险集，用途十分广泛，能满足你带团的各种需求：可作为单次冒险，也可作为长战役中的\"补充内容\"，或是形成系列战役，让角色从1级成长至12级的巅峰结局。",
-						"这些冒险提供了最少备团准备工作的说明（请参见本介绍后文的{@area 运行冒险|009|x}）。",
 						{
-							"ENG_name": "One-Shot Adventure",
-							"name": "单次冒险",
-							"type": "entries",
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "adventure/DrDe/000-dragon-delves-cover.webp"
+							},
+							"width": 1701,
+							"height": 2242
+						},
+						{
+							"ENG_name": "Dragons in Dungeons",
+							"name": "地下城中的龙",
+							"type": "section",
+							"id": "001",
 							"page": 4,
-							"id": "003",
 							"entries": [
-								"也许你是通常会以玩家的身份参与一场正在运行的战役，但你想尝试成为一个地下城主。也许你试图组建一个新的队伍，需要看看玩家们在你开始主持一个完整战役前是如何相处的。也许通常在某个时候带你们游玩的那个主持人生病了或者有了别的安排，但其他玩家都做好了跑团的准备。或者你的队伍可能需要在当前的战役中休息一下或者找个消遣。在提到的这些任何一种情况下，你都可以从本书中选择一个冒险并且运作它。"
+								"没有什么比集结一群英雄在神秘地下城中对抗强大巨龙更能体现《龙与地下城》的精髓了。无论是50多年前首批踏入幽暗地城的冒险者，还是如今正准备开始第一次冒险的新手玩家，都将被这些经典元素跨越时空的联系在一起。",
+								"{@i 巨龙迷城}是对这一共同传统的颂扬。本书中的十个冒险故事均以盘踞巢穴的龙为核心，专为1至12级角色设计，提供多样挑战\u2014\u2014从击败邪恶之龙到与善良之龙合作，再到应对更复杂的道德困境。作为巨龙巢穴的地城类型丰富多样，既有洞穴群落，也有城市废墟及其他场景。",
+								"地城藏龙处，冒险永不息！"
 							]
 						},
 						{
-							"ENG_name": "In an Ongoing Campaign",
-							"name": "在长期战役中",
-							"type": "entries",
+							"ENG_name": "Using This Book",
+							"name": "使用本书",
+							"type": "section",
+							"id": "002",
 							"page": 4,
-							"id": "004",
 							"entries": [
-								"也许你的玩家角色知道他们需要做什么来挫败邪恶 BOSS 的计划，但他们还不够强大，无法实现他们的目标。也许他们刚刚在战役中完成了一个重要的剧情节点，你想让在沉浸于下一幕无法预测的情节之前，让他们舒缓一下节奏。或者他们正在环游世界的旅程中，而你正在寻找一些东西让路途变得有趣\u2014\u2014用一场道中遭遇的简短冒险。或者你还没有为下一场冒险做好准备，所以你需要一条支线！在提到的这些任何一种情况下，你都可以从本书中选择一个冒险作为\"填充章节\"或者分支任务。",
+								"类似 {@i 巨龙迷城} 这样的冒险集，用途十分广泛，能满足你带团的各种需求：可作为单次冒险，也可作为长战役中的\"补充内容\"，或是形成系列战役，让角色从1级成长至12级的巅峰结局。",
+								"这些冒险提供了最少备团准备工作的说明（请参见本介绍后文的{@area 运行冒险|009|x}）。",
 								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "adventure/DrDe/001-00-001.intro-splash.webp"
-									},
-									"width": 850,
-									"height": 2286
+									"ENG_name": "One-Shot Adventure",
+									"name": "单次冒险",
+									"type": "entries",
+									"id": "003",
+									"page": 4,
+									"entries": [
+										"也许你是通常会以玩家的身份参与一场正在运行的战役，但你想尝试成为一个地下城主。也许你试图组建一个新的队伍，需要看看玩家们在你开始主持一个完整战役前是如何相处的。也许通常在某个时候带你们游玩的那个主持人生病了或者有了别的安排，但其他玩家都做好了跑团的准备。或者你的队伍可能需要在当前的战役中休息一下或者找个消遣。在提到的这些任何一种情况下，你都可以从本书中选择一个冒险并且运作它。"
+									]
 								},
-								"当角色的等级合适你想运作的冒险时，只需要描述冒险者们是如何在当前的探险地点结束他们的剧情。而本书的每个冒险开场都带有一个简短的场景描述，例如\"一个临近森林的村庄。\"除了这些基本细节以外，你还可以随意更改这场冒险发生的地理位置以适配你的战役。",
-								"但如果你有时间准备，可以将正在进行的冒险融入你战役的主题和威胁中。你可以修改冒险中人物和地点的名称，使其更契合你的世界；将冒险中的反派与你战役中重要的组织和事件联系起来；并在龙的宝藏中埋下与你战役主题相关的线索。"
+								{
+									"ENG_name": "In an Ongoing Campaign",
+									"name": "在长期战役中",
+									"type": "entries",
+									"id": "004",
+									"page": 4,
+									"entries": [
+										"也许你的玩家角色知道他们需要做什么来挫败邪恶 BOSS 的计划，但他们还不够强大，无法实现他们的目标。也许他们刚刚在战役中完成了一个重要的剧情节点，你想让在沉浸于下一幕无法预测的情节之前，让他们舒缓一下节奏。或者他们正在环游世界的旅程中，而你正在寻找一些东西让路途变得有趣\u2014\u2014用一场道中遭遇的简短冒险。或者你还没有为下一场冒险做好准备，所以你需要一条支线！在提到的这些任何一种情况下，你都可以从本书中选择一个冒险作为\"填充章节\"或者分支任务。",
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "adventure/DrDe/001-00-001.intro-splash.webp"
+											},
+											"width": 850,
+											"height": 2286
+										},
+										"当角色的等级合适你想运作的冒险时，只需要描述冒险者们是如何在当前的探险地点结束他们的剧情。而本书的每个冒险开场都带有一个简短的场景描述，例如\"一个临近森林的村庄。\"除了这些基本细节以外，你还可以随意更改这场冒险发生的地理位置以适配你的战役。",
+										"但如果你有时间准备，可以将正在进行的冒险融入你战役的主题和威胁中。你可以修改冒险中人物和地点的名称，使其更契合你的世界；将冒险中的反派与你战役中重要的组织和事件联系起来；并在龙的宝藏中埋下与你战役主题相关的线索。"
+									]
+								}
 							]
-						}
-					]
-				},
-				{
-					"ENG_name": "Creating a Campaign",
-					"name": "创作战役",
-					"type": "section",
-					"page": 4,
-					"id": "005",
-					"entries": [
-						"这些冒险可以串联成一个完整的以龙为主题的战役。只需引导玩家按书中顺序进行冒险，并在每段冒险结束时基于故事情节给予等级提升，确保他们的角色能应对接下来的挑战。(在最终冒险前无需等级提升。)你也可以使用下列叙事框架将这些冒险彼此联系起来。",
+						},
 						{
-							"ENG_name": "Option 1: Mysterious Patron",
-							"name": "选项1：神秘庇护者",
-							"type": "entries",
+							"ENG_name": "Creating a Campaign",
+							"name": "创作战役",
+							"type": "section",
+							"id": "005",
 							"page": 4,
-							"id": "006",
 							"entries": [
-								"让一位真实身份略显神秘的和善庇护者在新晋冒险者生涯早期就与之结交，并依次派他们去执行每次冒险任务。这位庇护者可能是一位富有魅力的年轻修士、一位和蔼的导师、一个顽皮的小家伙，或是一位糊涂的老者，或许身边还伴随着七只金丝雀或眩目的黄色蝴蝶\u2014\u2014它们实则是上古金龙所化，龙神巴哈姆特的同伴，而巴哈姆特正是庇护者的真实身份。",
-								"或许是预见到他们注定成为强大的英雄，巴哈姆特将这些冒险者置于他象征性的羽翼之下，派遣他们去应对世界各地与龙相关的各类事务，无论大小。当某次冒险最初看似与龙无关（例如\"{@area 奥喀斯之命|0ca|x}\"第3章）结果却与龙息息相关时，这位守护者可能会佯装惊讶，但这当然正是巴哈姆特派人物前去调查的原因。",
-								"你可直接按文本使用每个冒险，由角色的赞助者将他们引导至冒险引子的大致方向，且不剧透后续冒险中的任何惊喜。亦可选择让赞助者在早期就向角色透露秘密，告知他们龙将会是他们冒险的特别焦点，并沿途调整部分冒险引子。"
+								"这些冒险可以串联成一个完整的以龙为主题的战役。只需引导玩家按书中顺序进行冒险，并在每段冒险结束时基于故事情节给予等级提升，确保他们的角色能应对接下来的挑战。(在最终冒险前无需等级提升。)你也可以使用下列叙事框架将这些冒险彼此联系起来。",
+								{
+									"ENG_name": "Option 1: Mysterious Patron",
+									"name": "选项1：神秘庇护者",
+									"type": "entries",
+									"id": "006",
+									"page": 4,
+									"entries": [
+										"让一位真实身份略显神秘的和善庇护者在新晋冒险者生涯早期就与之结交，并依次派他们去执行每次冒险任务。这位庇护者可能是一位富有魅力的年轻修士、一位和蔼的导师、一个顽皮的小家伙，或是一位糊涂的老者，或许身边还伴随着七只金丝雀或眩目的黄色蝴蝶\u2014\u2014它们实则是上古金龙所化，龙神巴哈姆特的同伴，而巴哈姆特正是庇护者的真实身份。",
+										"或许是预见到他们注定成为强大的英雄，巴哈姆特将这些冒险者置于他象征性的羽翼之下，派遣他们去应对世界各地与龙相关的各类事务，无论大小。当某次冒险最初看似与龙无关（例如\"{@area 奥喀斯之命|0ca|x}\"第3章）结果却与龙息息相关时，这位守护者可能会佯装惊讶，但这当然正是巴哈姆特派人物前去调查的原因。",
+										"你可直接按文本使用每个冒险，由角色的赞助者将他们引导至冒险引子的大致方向，且不剧透后续冒险中的任何惊喜。亦可选择让赞助者在早期就向角色透露秘密，告知他们龙将会是他们冒险的特别焦点，并沿途调整部分冒险引子。"
+									]
+								},
+								{
+									"ENG_name": "Option 2: Brazen Egg",
+									"name": "选项2：赤铜之卵",
+									"type": "entries",
+									"id": "007",
+									"page": 5,
+									"entries": [
+										"从第10章的引言遭遇战\"{@adventure 砂岩城之龙|DrDe-DotSC|1}\"开始战役，以艾德米尔将黄铜之卵托付给角色们作为结束。不过艾德米尔的指示有所不同：她解释说这颗卵必须被\"浸泡\"在十条龙的财宝中（每种色彩龙和金属龙各一条）才能激活其力量。她还暗示这颗卵会引导角色们找到合适的龙巢。事实上，任何在卵15英尺范围内入睡的角色都会做生动的梦，引领他们前往下一个冒险的起点。",
+										"要从龙之宝藏中汲取力量，龙蛋必须在宝藏中待上8小时，被硬币覆盖并被其他物品环绕。然而，一旦被赋能的龙蛋被带入安斯拉德斯的藏宝室（{@adventure 区域H16|DrDe-DotSC|1|H16: 宝藏}，参见第10章），它将达到其全部潜力并开始裂开，如该冒险所述。"
+									]
+								},
+								{
+									"ENG_name": "Option 3: Hoard Magic Items",
+									"name": "选项3：囤积魔法物品",
+									"type": "entries",
+									"id": "008",
+									"page": 5,
+									"entries": [
+										"若你拥有{@book 费资本的巨龙宝库|FTD|4}，书中描述的魔法物品收藏可作为驱使角色寻找更强大、更多样龙类的动力。在前三个冒险中获得下列额外物品奖励：在「{@adventure 日落时分的死神|DrDe-DaS|1}」中获得{@item 覆鳞饰物|FTD}，在「{@adventure 面包师的捉襟见肘|DrDe-BD|1}」中获得{@item 龙器|FTD}，在「{@area 奥喀斯之命|0ca|x}」中获得{@item 龙怒武器|FTD}与{@item 龙触法器|FTD}。所有物品在初次获取时为休眠状态，但在后续冒险中可通过浸入龙类宝藏唤醒。"
+									]
+								}
 							]
 						},
 						{
-							"ENG_name": "Option 2: Brazen Egg",
-							"name": "选项2：赤铜之卵",
-							"type": "entries",
-							"page": 5,
-							"id": "007",
+							"ENG_name": "Running the Adventures",
+							"name": "运行冒险",
+							"type": "section",
+							"id": "009",
+							"page": 6,
 							"entries": [
-								"从第10章的引言遭遇战\"{@adventure 砂岩城之龙|DrDe-DotSC|1}\"开始战役，以艾德米尔将黄铜之卵托付给角色们作为结束。不过艾德米尔的指示有所不同：她解释说这颗卵必须被\"浸泡\"在十条龙的财宝中（每种色彩龙和金属龙各一条）才能激活其力量。她还暗示这颗卵会引导角色们找到合适的龙巢。事实上，任何在卵15英尺范围内入睡的角色都会做生动的梦，引领他们前往下一个冒险的起点。",
-								"要从龙之宝藏中汲取力量，龙蛋必须在宝藏中待上8小时，被硬币覆盖并被其他物品环绕。然而，一旦被赋能的龙蛋被带入安斯拉德斯的藏宝室（{@adventure 区域H16|DrDe-DotSC|1|H16: 宝藏}，参见第10章），它将达到其全部潜力并开始裂开，如该冒险所述。"
+								"要运行这些冒险模组，你需要第五版的核心规则书：{@book 玩家手册|XPHB}、{@book 城主指南|XDMG}和{@book 怪物图鉴|XMM}。冒险中提到的法术和装备描述参见{@book 玩家手册|XPHB}，魔法物品详情参阅{@book 城主指南|XDMG}，怪物数据则出现在{@book 怪物图鉴|XMM}。",
+								"本书目录总结了该合集所收录的冒险。每个冒险针对四至六名特定等级的角色设计，但如{@book 城主指南|XDMG}所述，你可以通过调整遭遇中敌人的数量或为小型队伍补充额外资源来适配更大或更小的团队。这些冒险均可发生于你选择的任何世界，只要该地点拥有各冒险开头列出的基本要素即可。",
+								{
+									"ENG_name": "Preparation",
+									"name": "预备",
+									"type": "entries",
+									"id": "00a",
+									"page": 6,
+									"entries": [
+										"本书中的每个冒险都以一个帮助您准备和进行冒险的页面开始。它包括以下要素：",
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"ENG_name": "Key Plot Points",
+													"name": "关键剧情节点",
+													"type": "item",
+													"entry": "冒险故事中关键要素的概要"
+												},
+												{
+													"ENG_name": "Preparation",
+													"name": "预备",
+													"type": "item",
+													"entry": "为开展冒险做准备所需的步骤，包括你可能需要的所有来自{@book 怪物图鉴|XMM}的怪物数据块列表"
+												},
+												{
+													"ENG_name": "Key NPCs",
+													"name": "关键NPCs",
+													"type": "item",
+													"entry": "一张总结了冒险中关键非玩家角色的表格\u2014\u2014包括他们的名字、角色、状态块和位置\u2014\u2014帮助你在游戏过程中追踪他们"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Player Assistance",
+									"name": "玩家助手",
+									"type": "entries",
+									"id": "00b",
+									"page": 6,
+									"entries": [
+										"如{@book 城主指南|XDMG}所述，您可以通过将某些任务委派给其他玩家来简化您作为地下城主（DM）的职责\u2014\u2014特别是当您第一次担任DM时尤为实用。游戏开始前，请与其他玩家共同分配以下任何或全部任务：",
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"ENG_name": "Initiative Tracker",
+													"name": "先攻追踪者",
+													"type": "item",
+													"entry": "在战斗中，一名玩家负责记录角色与怪物的先攻顺序。"
+												},
+												{
+													"ENG_name": "Monster Wranglers",
+													"name": "怪物操手",
+													"type": "item",
+													"entry": "当角色与敌对怪物进入战斗时，由一到两名玩家使用{@book 怪物图鉴|XMM}中的这些数据卡来操控怪物。（两名玩家可共同承担此职责。）"
+												},
+												{
+													"ENG_name": "Rules Consultant",
+													"name": "规则顾问",
+													"type": "item",
+													"entry": "一名玩家根据需要查阅{@book 玩家手册|XPHB}或其他书籍中的规则。"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Adventures for One Character",
+									"name": "单人角色冒险",
+									"type": "entries",
+									"id": "00c",
+									"page": 6,
+									"entries": [
+										"尽管{@book 城主指南|XDMG}解释了如何根据队伍规模调整冒险，但其中三个冒险（在目录中标示）特别适合单人冒险者游玩。这些冒险都包含确保角色面临适当挑战的指示说明。",
+										"这些说明的核心是{@reward 孤勇者祝福|DrDe}，一种增强单人角色属性的超自然赠礼。",
+										{
+											"ENG_name": "Blessing of the Lone Champion",
+											"name": "孤勇者祝福",
+											"type": "statblock",
+											"tag": "reward",
+											"source": "DrDe",
+											"page": 6
+										},
+										"祝福的持续时间为本次冒险的时长。"
+									]
+								},
+								{
+									"ENG_name": "A Draconic History",
+									"name": "龙族历史",
+									"type": "inset",
+									"id": "00e",
+									"page": 6,
+									"entries": [
+										"除了十个冒险故事外，本书还包含特别章节，展示了每种龙类的艺术画作，涵盖了《龙与地下城》近50年历史\u2014\u2014从1977年的《怪物手册》直至2025年发行的最新版本。过去五十年间，所有十种龙类的形象都经历了显著演变，但仔细观察这些画作仍能发现传承元素：从蓝龙的鼻角到银龙的冠冕，皆一脉相承。",
+										"艺术家托德·洛克伍德为2000年《龙与地下城》第三版的发布牵头对十种龙类进行了全面修订，其设计基于现实世界动物的解剖结构，并与早期设计保持了某些延续性。除少量变体外，这些设计为D&D的龙类确立了延续二十余年的标准。",
+										"为迎接2025年《{@book 怪物图鉴|XMM}》的发行，艺术指导乔什·赫尔曼在D&D进入第二个半世纪之际，主导了对所有巨龙形象的全面翻新。本次重新设计旨在通过外观突显每条巨龙的独特身份\u2014\u2014包括个性、偏好栖息地和战斗风格\u2014\u2014确保每种龙类的视觉辨识度得以彰显。",
+										"同样地，本书着重展示了以某一类巨龙为主题的冒险会如何与其他冒险体验截然不同。"
+									]
+								}
 							]
 						},
 						{
-							"ENG_name": "Option 3: Hoard Magic Items",
-							"name": "选项3：囤积魔法物品",
-							"type": "entries",
-							"page": 5,
-							"id": "008",
+							"ENG_name": "Adventures",
+							"name": "冒险",
+							"type": "section",
+							"id": "00d",
 							"entries": [
-								"若你拥有{@book 费资本的巨龙宝库|FTD|4}，书中描述的魔法物品收藏可作为驱使角色寻找更强大、更多样龙类的动力。在前三个冒险中获得下列额外物品奖励：在「{@adventure 日落时分的死神|DrDe-DaS|1}」中获得{@item 覆鳞饰物|FTD}，在「{@adventure 面包师的捉襟见肘|DrDe-BD|1}」中获得{@item 龙器|FTD}，在「{@area 奥喀斯之命|0ca|x}」中获得{@item 龙怒武器|FTD}与{@item 龙触法器|FTD}。所有物品在初次获取时为休眠状态，但在后续冒险中可通过浸入龙类宝藏唤醒。"
+								{
+									"type": "list",
+									"columns": 3,
+									"items": [
+										"{@adventure 日落时分的死神（1级）|DrDe-DaS|1}",
+										"{@adventure 面包师的捉襟见肘（3级）|DrDe-BD|1}",
+										"{@area 奥喀斯之命（4级）|0ca|x}",
+										"{@adventure 虚空唤谁而鸣（5级）|DrDe-FWtVC|1}",
+										"{@adventure 纳基凯尔之龙（7级）|DrDe-TDoN|1}",
+										"{@adventure 禁忌谷（9级）|DrDe-TFV|1}",
+										"{@adventure 风暴将临（10级）|DrDe-BtS|1}",
+										"{@adventure 夺命颤寒（11级）|DrDe-SD|1}",
+										"{@adventure 一枚铜币换一首歌（12级）|DrDe-ACfaS|1}",
+										"{@adventure 砂岩城之龙（12级）|DrDe-DotSC|1}"
+									]
+								}
 							]
 						}
 					]
 				},
 				{
-					"ENG_name": "Running the Adventures",
-					"name": "运行冒险",
+					"ENG_name": "The Will of Orcus",
+					"name": "奥喀斯之命",
 					"type": "section",
-					"page": 6,
-					"id": "009",
+					"id": "0ca",
+					"page": 49,
 					"entries": [
-						"要运行这些冒险模组，你需要第五版的核心规则书：{@book 玩家手册|XPHB}、{@book 城主指南|XDMG}和{@book 怪物图鉴|XMM}。冒险中提到的法术和装备描述参见{@book 玩家手册|XPHB}，魔法物品详情参阅{@book 城主指南|XDMG}，怪物数据则出现在{@book 怪物图鉴|XMM}。",
-						"本书目录总结了该合集所收录的冒险。每个冒险针对四至六名特定等级的角色设计，但如{@book 城主指南|XDMG}所述，你可以通过调整遭遇中敌人的数量或为小型队伍补充额外资源来适配更大或更小的团队。这些冒险均可发生于你选择的任何世界，只要该地点拥有各冒险开头列出的基本要素即可。",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								"{@i {@b An adventure for Level 4 characters.}}",
+								"{@i 该冒险的长度为一至两次团。}",
+								"{@i 它可以发生在任何有群山和定居点的地方。}"
+							]
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "adventure/DrDe/045-03-001.chapter-three-splash.webp"
+							},
+							"width": 1700,
+							"height": 2200,
+							"credit": "Jodie Muir"
+						},
+						{
+							"ENG_name": "Key Plot Points",
+							"name": "关键剧情节点",
+							"type": "section",
+							"id": "0cb",
+							"page": 49,
+							"entries": [
+								"以下信息对冒险故事至关重要：",
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"ENG_name": "Disturbing Activity",
+											"name": "不安动向",
+											"type": "item",
+											"entry": "一位名叫欧瑞安·索拉里斯的阿斯莫旅馆老板，请求角色们调查一群盘踞在附近一座供奉奥喀斯的神殿中的邪恶邪教徒。这群邪教徒一直在偷窃物资，欧瑞安请求角色们能寻回并归还被盗物资。"
+										},
+										{
+											"ENG_name": "Temple Invasion",
+											"name": "入侵神殿",
+											"type": "item",
+											"entry": "为了挫败这群邪教徒，角色们必须闯入神殿。在此过程中，他们会得知有一条银龙一直在试图离间邪教徒，并阻止他们为祸世间\u2014\u2014直至有英雄到来并协助他斩杀邪教徒的首领。"
+										},
+										{
+											"ENG_name": "Meeting the Dragon",
+											"name": "会面银龙",
+											"type": "item",
+											"entry": "如果角色们未能在对抗邪教徒的战斗中证明自己的实力，那么这条银龙将会以三个命令考验他们。角色们必须要么完成这三项命令，要么识破银龙的欺瞒。如果角色们赢得银龙的信任，他就会道出自己的故事。"
+										}
+									]
+								}
+							]
+						},
 						{
 							"ENG_name": "Preparation",
 							"name": "预备",
-							"type": "entries",
-							"page": 6,
-							"id": "00a",
-							"entries": [
-								"本书中的每个冒险都以一个帮助您准备和进行冒险的页面开始。它包括以下要素：",
-								{
-									"type": "list",
-									"style": "list-hang-notitle",
-									"items": [
-										{
-											"ENG_name": "Key Plot Points",
-											"name": "关键剧情节点",
-											"type": "item",
-											"entry": "冒险故事中关键要素的概要"
-										},
-										{
-											"ENG_name": "Preparation",
-											"name": "预备",
-											"type": "item",
-											"entry": "为开展冒险做准备所需的步骤，包括你可能需要的所有来自{@book 怪物图鉴|XMM}的怪物数据块列表"
-										},
-										{
-											"ENG_name": "Key NPCs",
-											"name": "关键NPCs",
-											"type": "item",
-											"entry": "一张总结了冒险中关键非玩家角色的表格\u2014\u2014包括他们的名字、角色、状态块和位置\u2014\u2014帮助你在游戏过程中追踪他们"
-										}
-									]
-								}
-							]
-						},
-						{
-							"ENG_name": "Player Assistance",
-							"name": "玩家助手",
-							"type": "entries",
-							"page": 6,
-							"id": "00b",
-							"entries": [
-								"如{@book 城主指南|XDMG}所述，您可以通过将某些任务委派给其他玩家来简化您作为地下城主（DM）的职责\u2014\u2014特别是当您第一次担任DM时尤为实用。游戏开始前，请与其他玩家共同分配以下任何或全部任务：",
-								{
-									"type": "list",
-									"style": "list-hang-notitle",
-									"items": [
-										{
-											"ENG_name": "Initiative Tracker",
-											"name": "先攻追踪者",
-											"type": "item",
-											"entry": "在战斗中，一名玩家负责记录角色与怪物的先攻顺序。"
-										},
-										{
-											"ENG_name": "Monster Wranglers",
-											"name": "怪物操手",
-											"type": "item",
-											"entry": "当角色与敌对怪物进入战斗时，由一到两名玩家使用{@book 怪物图鉴|XMM}中的这些数据卡来操控怪物。（两名玩家可共同承担此职责。）"
-										},
-										{
-											"ENG_name": "Rules Consultant",
-											"name": "规则顾问",
-											"type": "item",
-											"entry": "一名玩家根据需要查阅{@book 玩家手册|XPHB}或其他书籍中的规则。"
-										}
-									]
-								}
-							]
-						},
-						{
-							"ENG_name": "Adventures for One Character",
-							"name": "单人角色冒险",
-							"type": "entries",
-							"page": 6,
-							"id": "00c",
-							"entries": [
-								"尽管{@book 城主指南|XDMG}解释了如何根据队伍规模调整冒险，但其中三个冒险（在目录中标示）特别适合单人冒险者游玩。这些冒险都包含确保角色面临适当挑战的指示说明。",
-								"这些说明的核心是{@reward 孤勇者祝福|DrDe}，一种增强单人角色属性的超自然赠礼。",
-								{
-									"ENG_name": "Blessing of the Lone Champion",
-									"name": "孤勇者祝福",
-									"type": "statblock",
-									"page": 6,
-									"source": "DrDe",
-									"tag": "reward"
-								},
-								"祝福的持续时间为本次冒险的时长。"
-							]
-						},
-						{
-							"ENG_name": "A Draconic History",
-							"name": "龙族历史",
-							"type": "inset",
-							"page": 6,
-							"id": "00e",
-							"entries": [
-								"除了十个冒险故事外，本书还包含特别章节，展示了每种龙类的艺术画作，涵盖了《龙与地下城》近50年历史\u2014\u2014从1977年的《怪物手册》直至2025年发行的最新版本。过去五十年间，所有十种龙类的形象都经历了显著演变，但仔细观察这些画作仍能发现传承元素：从蓝龙的鼻角到银龙的冠冕，皆一脉相承。",
-								"艺术家托德·洛克伍德为2000年《龙与地下城》第三版的发布牵头对十种龙类进行了全面修订，其设计基于现实世界动物的解剖结构，并与早期设计保持了某些延续性。除少量变体外，这些设计为D&D的龙类确立了延续二十余年的标准。",
-								"为迎接2025年《{@book 怪物图鉴|XMM}》的发行，艺术指导乔什·赫尔曼在D&D进入第二个半世纪之际，主导了对所有巨龙形象的全面翻新。本次重新设计旨在通过外观突显每条巨龙的独特身份\u2014\u2014包括个性、偏好栖息地和战斗风格\u2014\u2014确保每种龙类的视觉辨识度得以彰显。",
-								"同样地，本书着重展示了以某一类巨龙为主题的冒险会如何与其他冒险体验截然不同。"
-							]
-						}
-					]
-				},
-				{
-					"ENG_name": "Adventures",
-					"name": "冒险",
-					"type": "section",
-					"entries": [
-						{
-							"type": "list",
-							"columns": 3,
-							"items": [
-								"{@adventure 日落时分的死神（1级）|DrDe-DaS|1}",
-								"{@adventure 面包师的捉襟见肘（3级）|DrDe-BD|1}",
-								"{@area 奥喀斯之命（4级）|0ca|x}",
-								"{@adventure 虚空唤谁而鸣（5级）|DrDe-FWtVC|1}",
-								"{@adventure 纳基凯尔之龙（7级）|DrDe-TDoN|1}",
-								"{@adventure 禁忌谷（9级）|DrDe-TFV|1}",
-								"{@adventure 风暴将临（10级）|DrDe-BtS|1}",
-								"{@adventure 夺命颤寒（11级）|DrDe-SD|1}",
-								"{@adventure 一枚铜币换一首歌（12级）|DrDe-ACfaS|1}",
-								"{@adventure 砂岩城之龙（12级）|DrDe-DotSC|1}"
-							]
-						}
-					],
-					"id": "00d"
-				}
-			]
-		},
-		{
-			"ENG_name": "The Will of Orcus",
-			"name": "奥喀斯之命",
-			"type": "section",
-			"page": 49,
-			"id": "0ca",
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"items": [
-						"{@i {@b An adventure for Level 4 characters.}}",
-						"{@i 该冒险的长度为一至两次团。}",
-						"{@i 它可以发生在任何有群山和定居点的地方。}"
-					]
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "adventure/DrDe/045-03-001.chapter-three-splash.webp"
-					},
-					"credit": "Jodie Muir",
-					"width": 1700,
-					"height": 2200
-				},
-				{
-					"ENG_name": "Key Plot Points",
-					"name": "关键剧情节点",
-					"type": "section",
-					"page": 49,
-					"id": "0cb",
-					"entries": [
-						"以下信息对冒险故事至关重要：",
-						{
-							"type": "list",
-							"style": "list-hang-notitle",
-							"items": [
-								{
-									"ENG_name": "Disturbing Activity",
-									"name": "不安动向",
-									"type": "item",
-									"entry": "一位名叫欧瑞安·索拉里斯的阿斯莫旅馆老板，请求角色们调查一群盘踞在附近一座供奉奥喀斯的神殿中的邪恶邪教徒。这群邪教徒一直在偷窃物资，欧瑞安请求角色们能寻回并归还被盗物资。"
-								},
-								{
-									"ENG_name": "Temple Invasion",
-									"name": "入侵神殿",
-									"type": "item",
-									"entry": "为了挫败这群邪教徒，角色们必须闯入神殿。在此过程中，他们会得知有一条银龙一直在试图离间邪教徒，并阻止他们为祸世间\u2014\u2014直至有英雄到来并协助他斩杀邪教徒的首领。"
-								},
-								{
-									"ENG_name": "Meeting the Dragon",
-									"name": "会面银龙",
-									"type": "item",
-									"entry": "如果角色们未能在对抗邪教徒的战斗中证明自己的实力，那么这条银龙将会以三个命令考验他们。角色们必须要么完成这三项命令，要么识破银龙的欺瞒。如果角色们赢得银龙的信任，他就会道出自己的故事。"
-								}
-							]
-						}
-					]
-				},
-				{
-					"ENG_name": "Preparation",
-					"name": "预备",
-					"type": "section",
-					"page": 49,
-					"id": "0cc",
-					"entries": [
-						"在开始冒险之前，请按照以下步骤进行准备：",
-						{
-							"type": "list",
-							"style": "list-hang-notitle",
-							"items": [
-								{
-									"ENG_name": "Step 1",
-									"name": "第一步",
-									"type": "item",
-									"entry": "阅读\"{@area 冒险背景|0cd|x}\"部分。"
-								},
-								{
-									"ENG_name": "Step 2",
-									"name": "第二步",
-									"type": "item",
-									"entry": "请先熟悉以下 {@adventure 关键NPCs|DrDe-TWoO|1|关键NPCs} 表格。在冒险过程中，角色们将与这些人物进行互动。"
-								},
-								{
-									"ENG_name": "Step 3",
-									"name": "第三步",
-									"type": "item",
-									"entry": "制作一份{@area 神殿地图|0d0|x}副本。（你将在冒险开始后不久与其他玩家共享此内容。）"
-								},
-								{
-									"ENG_name": "Step 4",
-									"name": "第四步",
-									"type": "item",
-									"entry": "在《{@book 怪物图鉴|XMM}》或D&DBeyond中标记以下的数据卡。"
-								}
-							]
-						},
-						{
-							"type": "list",
-							"columns": 3,
-							"items": [
-								"{@creature 黑布丁|XMM}",
-								"{@creature 平民|XMM}",
-								"{@creature 蠕行之爪集群|XMM|蠕行之爪集群}",
-								"{@creature 邪教狂信者|XMM}",
-								"{@creature 燃焰之颅|XMM}",
-								"{@creature 妖鬼坟语者|XMM}",
-								"{@creature 幽魂|XMM}",
-								"{@creature 食尸鬼|XMM}",
-								"{@creature 木乃伊|XMM}",
-								"{@creature 银龙雏龙|XMM}",
-								"{@creature 骷髅|XMM}",
-								"{@creature 燃火骷髅|XMM|燃火骷髅}",
-								"{@creature 恶灵|XMM}",
-								"{@creature 邪灵|XMM}",
-								"{@creature 丧尸|XMM}",
-								"{@creature 食人魔僵尸|XMM|食人魔丧尸}"
-							]
-						},
-						{
-							"ENG_name": "Black Pudding",
-							"name": "黑布丁",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Black Pudding",
-							"name": "黑布丁",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Commoner",
-							"name": "平民",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Commoner",
-							"name": "平民",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Swarm of Crawling Claws",
-							"name": "蠕行之爪集群",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Swarm of Crawling Claws",
-							"name": "蠕行之爪集群",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Cultist Fanatic",
-							"name": "邪教狂信者",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Cultist Fanatic",
-							"name": "邪教狂信者",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Flameskull",
-							"name": "燃焰之颅",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Flameskull",
-							"name": "燃焰之颅",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Ghast Gravecaller",
-							"name": "妖鬼坟语者",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Ghast Gravecaller",
-							"name": "妖鬼坟语者",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Ghost",
-							"name": "幽魂",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Ghost",
-							"name": "幽魂",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Ghoul",
-							"name": "食尸鬼",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Ghoul",
-							"name": "食尸鬼",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Mummy",
-							"name": "木乃伊",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Mummy",
-							"name": "木乃伊",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Silver Dragon Wyrmling",
-							"name": "银龙雏龙",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Silver Dragon Wyrmling",
-							"name": "银龙雏龙",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Skeleton",
-							"name": "骷髅",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Skeleton",
-							"name": "骷髅",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Flaming Skeleton",
-							"name": "燃火骷髅",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Flaming Skeleton",
-							"name": "燃火骷髅",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Specter",
-							"name": "恶灵",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Specter",
-							"name": "恶灵",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Wraith",
-							"name": "邪灵",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Wraith",
-							"name": "邪灵",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Zombie",
-							"name": "丧尸",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Zombie",
-							"name": "丧尸",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Ogre Zombie",
-							"name": "食人魔僵尸",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Ogre Zombie",
-							"name": "食人魔僵尸",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"type": "table",
-							"caption": "关键NPCs",
+							"type": "section",
+							"id": "0cc",
 							"page": 49,
-							"colLabels": [
-								"名称",
-								"职能",
-								"数据卡",
-								"位置"
-							],
-							"colStyles": [
-								"col-3-5",
-								"col-3-5",
-								"col-2-5",
-								"col-2-5"
-							],
-							"rows": [
-								[
-									"阿基拉·诺里克修斯",
-									"狂热虔诚的龙裔教徒",
-									"{@creature 邪教狂信者|XMM}（中型，混乱邪恶）",
-									"{@area T1|0e2|x}"
-								],
-								[
-									"埃莱斯·脆骨",
-									"被欺骗的矮人邪教徒",
-									"{@creature 邪教狂信者|XMM}（中型，混乱邪恶）",
-									"{@area T6|0fa|x}"
-								],
-								[
-									"梅琳德拉·沃克斯",
-									"邪教图书管理员",
-									"{@creature 幽魂|XMM} （混乱邪恶）",
-									"{@area T6|0fa|x}"
-								],
-								[
-									"欧瑞安·索拉里斯",
-									"阿斯莫旅馆老板兼委托任务者",
-									"{@creature 平民|XMM} （中型，守序善良）",
-									"\"{@area 开始冒险|0ce|x}\""
-								],
-								[
-									"奈扎鲁姆",
-									"戏耍奥喀斯邪教徒的龙",
-									"{@creature 银龙雏龙|XMM}",
-									"{@area T13|11b|x}"
-								],
-								[
-									"希娅",
-									"邪教首领",
-									"{@creature 妖鬼坟语者|XMM}",
-									"{@area T12|117|x}"
-								],
-								[
-									"扬迪斯·摩根",
-									"心存疑虑的人类邪教徒",
-									"{@creature 邪教狂信者|XMM}（中型，混乱中立）",
-									"{@area T7|101|x}"
-								]
-							]
-						}
-					]
-				},
-				{
-					"ENG_name": "Adventure Background",
-					"name": "冒险背景",
-					"type": "section",
-					"page": 50,
-					"id": "0cd",
-					"entries": [
-						"一支邪教重新占据了一座隐匿于山间的废弃神殿。虽然这座神殿饱经岁月侵蚀、年久失修，但邪教徒们仍在神殿核心处欣喜地发现了一尊完好无损的不死魔君奥喀斯的雕像。",
-						"这支邪教的可怖首领希娅更是惊喜不已，因为她听见这尊雕像竟然传出了魔君的声音。奥喀斯向她许诺，将透露给她隐秘知识，使{@area 希娅教团|0d5|x}成为一支强大的势力。",
-						"希娅和她的邪教徒同伴们全然不知那雕像中传出的声音并非奥喀斯，而是一条名叫奈扎鲁姆的银龙。奈扎鲁姆原本正在探索这座神殿，考虑将其作为潜在的巢穴，此时希娅和她的邪教徒们突然出现。奈扎鲁姆通过雕像底部的一扇密门，钻入了雕像之中。这条银龙正在借助诡计来阻止该邪教做出过于恶劣的行径，同时也在吸引可能的盟友来到神殿，帮助他击败邪教首领。",
-						"奈扎鲁姆一方面指使邪教首领去执行一些相对无害的盗窃物资的任务，另一方面也在对邪教中那些非亡灵的成员低语，意图动摇他们对希娅的忠诚。这些容易受骗的邪教徒们已然陷入混乱，而角色们的到来则为奈扎鲁姆计划的最终阶段拉开了序幕。"
-					]
-				},
-				{
-					"ENG_name": "Beginning the Adventure",
-					"name": "开始冒险",
-					"type": "section",
-					"page": 50,
-					"id": "0ce",
-					"entries": [
-						"开始冒险时，请大声朗读以下内容：",
-						{
-							"type": "insetReadaloud",
-							"page": 50,
-							"id": "0cf",
 							"entries": [
-								"在灰水镇这个偏远的山村，死亡灾厄旅馆堪称当地的一处奇景。这间旅馆由一对夫妇创办，他们曾经英勇地击溃了在附近山中建立神殿的奥喀斯教团，并借此从冒险生涯中功成身退。如今，旅馆由他们的继承人打理，其间装饰着他们当年冒险时的累累战利品。你们原本只是来此探访这间远近闻名的旅馆，然而气氛却因阿斯莫旅馆老板欧瑞安·索拉里斯的求助而变得凝重。欧瑞安是一位银发金瞳、面容严肃的阿斯莫。\"邪恶已经重返那座神殿，\"其对你们说道。\"夜里，步履蹒跚的尸体在周围游荡，挖掘着古老的墓冢，身边伴随着身穿猩红长袍、戴着山羊面具的诡异身影。他们正在偷取食物、工具和油漆，显然是在为了某种邪恶目的。我敢肯定，假以时日，他们必将如我父母当年曾面对的邪教一般，掀起新的恐怖统治。我没能继承父母的辉煌事业，但你们有能力阻止这场邪恶。\""
+								"在开始冒险之前，请按照以下步骤进行准备：",
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"ENG_name": "Step 1",
+											"name": "第一步",
+											"type": "item",
+											"entry": "阅读\"{@area 冒险背景|0cd|x}\"部分。"
+										},
+										{
+											"ENG_name": "Step 2",
+											"name": "第二步",
+											"type": "item",
+											"entry": "请先熟悉以下 {@adventure 关键NPCs|DrDe-TWoO|1|关键NPCs} 表格。在冒险过程中，角色们将与这些人物进行互动。"
+										},
+										{
+											"ENG_name": "Step 3",
+											"name": "第三步",
+											"type": "item",
+											"entry": "制作一份{@area 神殿地图|0d0|x}副本。（你将在冒险开始后不久与其他玩家共享此内容。）"
+										},
+										{
+											"ENG_name": "Step 4",
+											"name": "第四步",
+											"type": "item",
+											"entry": "在《{@book 怪物图鉴|XMM}》或D&DBeyond中标记以下的数据卡。"
+										}
+									]
+								},
+								{
+									"type": "list",
+									"columns": 3,
+									"items": [
+										"{@creature 黑布丁|XMM}",
+										"{@creature 平民|XMM}",
+										"{@creature 蠕行之爪集群|XMM|蠕行之爪集群}",
+										"{@creature 邪教狂信者|XMM}",
+										"{@creature 燃焰之颅|XMM}",
+										"{@creature 妖鬼坟语者|XMM}",
+										"{@creature 幽魂|XMM}",
+										"{@creature 食尸鬼|XMM}",
+										"{@creature 木乃伊|XMM}",
+										"{@creature 银龙雏龙|XMM}",
+										"{@creature 骷髅|XMM}",
+										"{@creature 燃火骷髅|XMM|燃火骷髅}",
+										"{@creature 恶灵|XMM}",
+										"{@creature 邪灵|XMM}",
+										"{@creature 丧尸|XMM}",
+										"{@creature 食人魔僵尸|XMM|食人魔丧尸}"
+									]
+								},
+								{
+									"ENG_name": "Black Pudding",
+									"name": "黑布丁",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Black Pudding",
+									"name": "黑布丁",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Commoner",
+									"name": "平民",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Commoner",
+									"name": "平民",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Swarm of Crawling Claws",
+									"name": "蠕行之爪集群",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Swarm of Crawling Claws",
+									"name": "蠕行之爪集群",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Cultist Fanatic",
+									"name": "邪教狂信者",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Cultist Fanatic",
+									"name": "邪教狂信者",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Flameskull",
+									"name": "燃焰之颅",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Flameskull",
+									"name": "燃焰之颅",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Ghast Gravecaller",
+									"name": "妖鬼坟语者",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Ghast Gravecaller",
+									"name": "妖鬼坟语者",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Ghost",
+									"name": "幽魂",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Ghost",
+									"name": "幽魂",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Ghoul",
+									"name": "食尸鬼",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Ghoul",
+									"name": "食尸鬼",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Mummy",
+									"name": "木乃伊",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Mummy",
+									"name": "木乃伊",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Silver Dragon Wyrmling",
+									"name": "银龙雏龙",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Silver Dragon Wyrmling",
+									"name": "银龙雏龙",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Skeleton",
+									"name": "骷髅",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Skeleton",
+									"name": "骷髅",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Flaming Skeleton",
+									"name": "燃火骷髅",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Flaming Skeleton",
+									"name": "燃火骷髅",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Specter",
+									"name": "恶灵",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Specter",
+									"name": "恶灵",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Wraith",
+									"name": "邪灵",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Wraith",
+									"name": "邪灵",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Zombie",
+									"name": "丧尸",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Zombie",
+									"name": "丧尸",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Ogre Zombie",
+									"name": "食人魔僵尸",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Ogre Zombie",
+									"name": "食人魔僵尸",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
+								},
+								{
+									"type": "table",
+									"caption": "关键NPCs",
+									"page": 49,
+									"colLabels": [
+										"名称",
+										"职能",
+										"数据卡",
+										"位置"
+									],
+									"colStyles": [
+										"col-3-5",
+										"col-3-5",
+										"col-2-5",
+										"col-2-5"
+									],
+									"rows": [
+										[
+											"阿基拉·诺里克修斯",
+											"狂热虔诚的龙裔教徒",
+											"{@creature 邪教狂信者|XMM}（中型，混乱邪恶）",
+											"{@area T1|0e2|x}"
+										],
+										[
+											"埃莱斯·脆骨",
+											"被欺骗的矮人邪教徒",
+											"{@creature 邪教狂信者|XMM}（中型，混乱邪恶）",
+											"{@area T6|0fa|x}"
+										],
+										[
+											"梅琳德拉·沃克斯",
+											"邪教图书管理员",
+											"{@creature 幽魂|XMM} （混乱邪恶）",
+											"{@area T6|0fa|x}"
+										],
+										[
+											"欧瑞安·索拉里斯",
+											"阿斯莫旅馆老板兼委托任务者",
+											"{@creature 平民|XMM} （中型，守序善良）",
+											"\"{@area 开始冒险|0ce|x}\""
+										],
+										[
+											"奈扎鲁姆",
+											"戏耍奥喀斯邪教徒的龙",
+											"{@creature 银龙雏龙|XMM}",
+											"{@area T13|11b|x}"
+										],
+										[
+											"希娅",
+											"邪教首领",
+											"{@creature 妖鬼坟语者|XMM}",
+											"{@area T12|117|x}"
+										],
+										[
+											"扬迪斯·摩根",
+											"心存疑虑的人类邪教徒",
+											"{@creature 邪教狂信者|XMM}（中型，混乱中立）",
+											"{@area T7|101|x}"
+										]
+									]
+								}
 							]
 						},
-						"欧瑞安·索拉里斯是一位友好的旅馆老板（中型，守序善良{@creature 平民|XMM}），其会为角色们提供当晚免费住宿，并敦促他们在破晓时分前往神殿。",
 						{
-							"ENG_name": "Temple Map",
-							"name": "神殿地图",
-							"type": "entries",
+							"ENG_name": "Adventure Background",
+							"name": "冒险背景",
+							"type": "section",
+							"id": "0cd",
 							"page": 50,
-							"id": "0d0",
 							"entries": [
+								"一支邪教重新占据了一座隐匿于山间的废弃神殿。虽然这座神殿饱经岁月侵蚀、年久失修，但邪教徒们仍在神殿核心处欣喜地发现了一尊完好无损的不死魔君奥喀斯的雕像。",
+								"这支邪教的可怖首领希娅更是惊喜不已，因为她听见这尊雕像竟然传出了魔君的声音。奥喀斯向她许诺，将透露给她隐秘知识，使{@area 希娅教团|0d5|x}成为一支强大的势力。",
+								"希娅和她的邪教徒同伴们全然不知那雕像中传出的声音并非奥喀斯，而是一条名叫奈扎鲁姆的银龙。奈扎鲁姆原本正在探索这座神殿，考虑将其作为潜在的巢穴，此时希娅和她的邪教徒们突然出现。奈扎鲁姆通过雕像底部的一扇密门，钻入了雕像之中。这条银龙正在借助诡计来阻止该邪教做出过于恶劣的行径，同时也在吸引可能的盟友来到神殿，帮助他击败邪教首领。",
+								"奈扎鲁姆一方面指使邪教首领去执行一些相对无害的盗窃物资的任务，另一方面也在对邪教中那些非亡灵的成员低语，意图动摇他们对希娅的忠诚。这些容易受骗的邪教徒们已然陷入混乱，而角色们的到来则为奈扎鲁姆计划的最终阶段拉开了序幕。"
+							]
+						},
+						{
+							"ENG_name": "Beginning the Adventure",
+							"name": "开始冒险",
+							"type": "section",
+							"id": "0ce",
+							"page": 50,
+							"entries": [
+								"开始冒险时，请大声朗读以下内容：",
+								{
+									"type": "insetReadaloud",
+									"id": "0cf",
+									"page": 50,
+									"entries": [
+										"在灰水镇这个偏远的山村，死亡灾厄旅馆堪称当地的一处奇景。这间旅馆由一对夫妇创办，他们曾经英勇地击溃了在附近山中建立神殿的奥喀斯教团，并借此从冒险生涯中功成身退。如今，旅馆由他们的继承人打理，其间装饰着他们当年冒险时的累累战利品。你们原本只是来此探访这间远近闻名的旅馆，然而气氛却因阿斯莫旅馆老板欧瑞安·索拉里斯的求助而变得凝重。欧瑞安是一位银发金瞳、面容严肃的阿斯莫。\"邪恶已经重返那座神殿，\"其对你们说道。\"夜里，步履蹒跚的尸体在周围游荡，挖掘着古老的墓冢，身边伴随着身穿猩红长袍、戴着山羊面具的诡异身影。他们正在偷取食物、工具和油漆，显然是在为了某种邪恶目的。我敢肯定，假以时日，他们必将如我父母当年曾面对的邪教一般，掀起新的恐怖统治。我没能继承父母的辉煌事业，但你们有能力阻止这场邪恶。\""
+									]
+								},
+								"欧瑞安·索拉里斯是一位友好的旅馆老板（中型，守序善良{@creature 平民|XMM}），其会为角色们提供当晚免费住宿，并敦促他们在破晓时分前往神殿。",
+								{
+									"ENG_name": "Temple Map",
+									"name": "神殿地图",
+									"type": "entries",
+									"id": "0d0",
+									"page": 50,
+									"entries": [
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "adventure/DrDe/046-03-002.temple-handout.webp"
+											},
+											"width": 1700,
+											"height": 2301,
+											"credit": "Paolo Vacala"
+										},
+										"当角色们准备好前往神殿时，向玩家们分发神殿地图的副本，并朗读以下内容：",
+										{
+											"type": "insetReadaloud",
+											"id": "0d1",
+											"page": 50,
+											"entries": [
+												"这幅神殿的简略地图是欧瑞安的父母当年绘制的，如今其将它郑重托付给你们。欧瑞安保证地图内容的准确性，但也坦言其中可能有所缺漏。他还在地图上附上了一份被盗物品的清单。"
+											]
+										},
+										"作为回报，如果角色们能够铲除神殿中的邪恶，并尽可能带回被盗的物品，欧瑞安将会向镇民们募集资金，为每位冒险者支付 200 GP 的报酬。"
+									]
+								},
+								{
+									"ENG_name": "Travel to the Temple",
+									"name": "前往神殿",
+									"type": "entries",
+									"id": "0d2",
+									"page": 50,
+									"entries": [
+										"用以下描述来概括前往神殿的旅程：",
+										{
+											"type": "insetReadaloud",
+											"id": "0d3",
+											"page": 50,
+											"entries": [
+												"前往神殿的旅程短暂而平静。薄雪覆盖着地面，凛冽的寒风是你们遭遇的唯一敌人。云雾遮蔽着前方被狂风吹拂的山峰。凿刻在山体底部的神殿大门豁然敞开，宽 10 尺，高 20 尺。复行深入数尺，一段粗糙开凿的石阶向下延伸，没入冰冷的岩床之中。墙壁上每隔一段距离就镶嵌着山羊头骨，诡异的幽幽绿光从中照射而出。"
+											]
+										},
+										"大门处并未设有岗哨。石阶向下延伸 50 尺，直达入口（区域 {@area T1|0e2|x}），那里有守卫看守。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "The Temple of Orcus",
+							"name": "奥喀斯神殿",
+							"type": "section",
+							"id": "0d4",
+							"page": 50,
+							"entries": [
+								"这座神殿由奥喀斯的忠实信徒在一个多世纪前雕凿而成。二十年前，一群冒险者攻入神殿，斩杀了邪教首领，并将剩余的邪教徒吓得四散奔逃。",
+								"此后神殿一直处于荒废，直到几周前，银龙奈扎鲁姆偶然发现了这里，并将其视为潜在的巢穴，开始进行探索。巧合的是，仅在数日之后，希娅和她的追随者们也抵达了此地，意图以奥喀斯之名重新夺回神殿的掌控权。",
+								{
+									"ENG_name": "Xia's Cult",
+									"name": "希娅教团",
+									"type": "entries",
+									"id": "0d5",
+									"page": 51,
+									"entries": [
+										"教团的首领希娅是一位{@creature 妖鬼|XMM}\u2014\u2014奥喀斯的亡灵仆从。几名食尸鬼担任她的亲信助手，而受希娅控制的丧尸则为教团承担繁重的杂务。该教团的其余成员共有三人，他们对这位不死魔君的信仰从极端狂热到盲目迷信不等。",
+										{
+											"ENG_name": "Talking to Cultists",
+											"name": "与邪教徒交谈",
+											"type": "entries",
+											"id": "0d6",
+											"page": 51,
+											"entries": [
+												"神殿中住着三名非亡灵的邪教徒，作为希娅与她活化的丧尸之间的中间人。在发现这些邪教徒的房间的描述中，会注明角色们是否能通过与他们交谈来获取有关教团的信息。如果这些邪教徒愿意开口，那他们会分享以下信息。"
+											]
+										},
+										{
+											"ENG_name": "Speaking Statue",
+											"name": "会说话的雕像",
+											"type": "entries",
+											"id": "0d7",
+											"page": 51,
+											"entries": [
+												"希娅认为奥喀斯通过主殿（{@area T13|11b|x} 区域）中的雕像与她沟通。希娅毫不质疑地遵从雕像的命令，尽管她也觉得这些命令让人费解。雕像在向希娅下达命令的同时，也在她那些凡人追随者的心中播下疑虑的种子。"
+											]
+										},
+										{
+											"ENG_name": "Temple Secrets",
+											"name": "神殿的秘密",
+											"type": "entries",
+											"id": "0d8",
+											"page": 51,
+											"entries": [
+												"希娅相信这座神殿藏有许多秘密。只要没有在为奥喀斯的雕像做事，希娅的追随者们就会不断地在神殿中搜寻隐藏的秘密。"
+											]
+										},
+										{
+											"ENG_name": "Xia's Goals",
+											"name": "希娅的目标",
+											"type": "entries",
+											"id": "0d9",
+											"page": 51,
+											"entries": [
+												"在进行神殿修缮工作的同时，希娅不断从附近墓地中盗取尸体，来补充她的\"食物储备\"并壮大她的劳工队伍。待神殿的工程竣工后，她计划献祭神殿方圆十里内的所有人类与动物，以此为神殿祝圣，释放其潜藏的力量。"
+											]
+										},
+										{
+											"ENG_name": "Orcus's Orders",
+											"name": "奥喀斯的命令",
+											"type": "entries",
+											"id": "0da",
+											"page": 51,
+											"entries": [
+												"邪教徒们对来自恶魔领主雕像的指令感到困惑，其中包括以下内容：",
+												{
+													"type": "list",
+													"items": [
+														"推倒并摧毁神殿内所有食尸鬼雕像，连同一切象征恶魔领主的标志也一并毁掉。（这项工作已在区域{@area T1|0e2|x}开始。）",
+														"在墙面上绘制银白色的云朵图案。（该工作目前正在区域 {@area T12|117|x}进行。）",
+														"将一副龙棋放置在主殿（（区域 {@area T13|11b|x}）。（棋具被摆放到奥喀斯雕像前不久后便神秘失踪。）"
+													]
+												},
+												"通过指示邪教徒们从附近村镇盗取修缮用的物资，奈扎鲁姆希望能让更多人注意到这个邪教的存在。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Temple Features",
+									"name": "庙宇特征",
+									"type": "entries",
+									"id": "0db",
+									"page": 51,
+									"entries": [
+										"除非另有说明，该神殿具有以下特征。",
+										{
+											"ENG_name": "Ceilings",
+											"name": "天花板",
+											"type": "entries",
+											"id": "0dc",
+											"page": 51,
+											"entries": [
+												"神殿的通道和房间均为 20 尺高，唯独{@area T13|11b|x}区域的天花板为 30 尺高。"
+											]
+										},
+										{
+											"ENG_name": "Dim Light",
+											"name": "微光光照",
+											"type": "entries",
+											"id": "0dd",
+											"page": 51,
+											"entries": [
+												"神殿墙壁上镶嵌的山羊头骨散发出诡异的绿色光芒，为整个神殿提供{@variantrule 微光光照|XPHB}。"
+											]
+										},
+										{
+											"ENG_name": "Doors and Secret Doors",
+											"name": "门和暗门",
+											"type": "entries",
+											"id": "0de",
+											"page": 51,
+											"entries": [
+												"密神殿的门均为未上锁的铁门，配有雕刻的骨质门把。密门由石头制成，与周围的墙壁融为一体（需{@dc 15}才能注意到）。密门同样未上锁，可借由隐藏的铁质铰链开启。"
+											]
+										},
+										{
+											"ENG_name": "Rubble",
+											"name": "瓦砾",
+											"type": "entries",
+											"id": "0df",
+											"page": 51,
+											"entries": [
+												"在{@area 地图：奥喀斯神殿|40e|x}上标记的碎石区域是{@variantrule 困难地形|XPHB}。"
+											]
+										},
+										{
+											"ENG_name": "Skeletal Remains",
+											"name": "遗骨残骸",
+											"type": "entries",
+											"id": "0e0",
+											"page": 51,
+											"entries": [
+												"奥喀斯神庙上标示有原始邪教徒的遗骨残骸。搜查一具邪教徒的遗骸需执行一次{@action 搜索|XPHB}动作，并能找到一件破损的猩红长袍、一把生锈的{@item 短剑|XPHB}、一把老旧的{@item 短弓|XPHB}、一个装有{@dice 1d10}支{@item 箭矢 (20)|XPHB|箭矢}的{@item 箭袋|XPHB}，以及{@dice 1d10}GP。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Temple Locations",
+							"name": "神殿地点",
+							"type": "section",
+							"id": "0e1",
+							"page": 51,
+							"entries": [
+								"以下地点与地图：奥喀斯神庙上的标记相对应。",
+								{
+									"type": "gallery",
+									"images": [
+										{
+											"type": "image",
+											"id": "40e",
+											"href": {
+												"type": "internal",
+												"path": "adventure/DrDe/047-map-03.02-temple-of-orcus-dm.webp"
+											},
+											"hrefThumbnail": {
+												"type": "internal",
+												"path": "adventure/DrDe/thumbnail/047-map-03.02-temple-of-orcus-dm.webp"
+											},
+											"width": 3165,
+											"height": 4096,
+											"imageType": "map",
+											"grid": {
+												"type": "square",
+												"size": 173,
+												"offsetX": 50,
+												"offsetY": 22,
+												"scale": 2
+											},
+											"title": "地图 3.2：奥喀斯神殿",
+											"credit": "Mike Schley",
+											"mapRegions": [
+												{
+													"area": "0ed",
+													"points": [
+														[
+															1673,
+															2954
+														],
+														[
+															1673,
+															3029
+														],
+														[
+															2261,
+															3029
+														],
+														[
+															2261,
+															2954
+														]
+													]
+												},
+												{
+													"area": "0f0",
+													"points": [
+														[
+															1160,
+															2965
+														],
+														[
+															1160,
+															3380
+														],
+														[
+															1658,
+															3380
+														],
+														[
+															1658,
+															2965
+														]
+													]
+												},
+												{
+													"area": "123",
+													"points": [
+														[
+															720,
+															3337
+														],
+														[
+															887,
+															3463
+														],
+														[
+															1054,
+															3334
+														],
+														[
+															1008,
+															3210
+														],
+														[
+															1140,
+															3210
+														],
+														[
+															1140,
+															3126
+														],
+														[
+															787,
+															3126
+														]
+													]
+												},
+												{
+													"area": "123",
+													"points": [
+														[
+															1762,
+															3336
+														],
+														[
+															1926,
+															3466
+														],
+														[
+															2090,
+															3336
+														],
+														[
+															2028,
+															3123
+														],
+														[
+															1676,
+															3123
+														],
+														[
+															1676,
+															3206
+														],
+														[
+															1808,
+															3206
+														]
+													]
+												},
+												{
+													"area": "0fa",
+													"points": [
+														[
+															285,
+															2430
+														],
+														[
+															545,
+															2430
+														],
+														[
+															545,
+															2349
+														],
+														[
+															725,
+															2349
+														],
+														[
+															725,
+															2099
+														],
+														[
+															889,
+															2099
+														],
+														[
+															889,
+															2345
+														],
+														[
+															1051,
+															2345
+														],
+														[
+															1051,
+															2688
+														],
+														[
+															889,
+															2688
+														],
+														[
+															889,
+															2948
+														],
+														[
+															714,
+															2948
+														],
+														[
+															714,
+															2691
+														],
+														[
+															542,
+															2691
+														],
+														[
+															542,
+															2608
+														],
+														[
+															285,
+															2608
+														]
+													]
+												},
+												{
+													"area": "0f5",
+													"points": [
+														[
+															1077,
+															2361
+														],
+														[
+															1748,
+															2361
+														],
+														[
+															1748,
+															2775
+														],
+														[
+															1498,
+															2775
+														],
+														[
+															1498,
+															2938
+														],
+														[
+															1316,
+															2938
+														],
+														[
+															1316,
+															2775
+														],
+														[
+															1077,
+															2775
+														]
+													]
+												},
+												{
+													"area": "117",
+													"points": [
+														[
+															1247,
+															1672
+														],
+														[
+															1247,
+															2335
+														],
+														[
+															1567,
+															2335
+														],
+														[
+															1567,
+															1672
+														]
+													]
+												},
+												{
+													"area": "107",
+													"points": [
+														[
+															369,
+															1562
+														],
+														[
+															369,
+															1726
+														],
+														[
+															533,
+															1726
+														],
+														[
+															533,
+															1562
+														]
+													]
+												},
+												{
+													"area": "107",
+													"points": [
+														[
+															555,
+															1566
+														],
+														[
+															555,
+															1729
+														],
+														[
+															705,
+															1729
+														],
+														[
+															705,
+															1566
+														]
+													]
+												},
+												{
+													"area": "107",
+													"points": [
+														[
+															723,
+															1566
+														],
+														[
+															723,
+															1729
+														],
+														[
+															881,
+															1729
+														],
+														[
+															881,
+															1566
+														]
+													]
+												},
+												{
+													"area": "107",
+													"points": [
+														[
+															296,
+															1750
+														],
+														[
+															296,
+															1905
+														],
+														[
+															446,
+															1905
+														],
+														[
+															446,
+															1750
+														]
+													]
+												},
+												{
+													"area": "107",
+													"points": [
+														[
+															372,
+															1920
+														],
+														[
+															372,
+															2076
+														],
+														[
+															533,
+															2076
+														],
+														[
+															533,
+															1920
+														]
+													]
+												},
+												{
+													"area": "107",
+													"points": [
+														[
+															555,
+															2080
+														],
+														[
+															555,
+															1925
+														],
+														[
+															705,
+															1925
+														],
+														[
+															705,
+															2080
+														]
+													]
+												},
+												{
+													"area": "101",
+													"points": [
+														[
+															464,
+															1750
+														],
+														[
+															965,
+															1750
+														],
+														[
+															965,
+															2080
+														],
+														[
+															726,
+															2080
+														],
+														[
+															726,
+															1902
+														],
+														[
+															464,
+															1902
+														]
+													]
+												},
+												{
+													"area": "108",
+													"points": [
+														[
+															987,
+															1755
+														],
+														[
+															1223,
+															1755
+														],
+														[
+															1223,
+															2348
+														],
+														[
+															1076,
+															2348
+														],
+														[
+															1076,
+															1916
+														],
+														[
+															987,
+															1916
+														]
+													]
+												},
+												{
+													"area": "10b",
+													"points": [
+														[
+															1826,
+															1758
+														],
+														[
+															1593,
+															1758
+														],
+														[
+															1593,
+															2348
+														],
+														[
+															1745,
+															2348
+														],
+														[
+															1745,
+															1911
+														],
+														[
+															1826,
+															1911
+														]
+													]
+												},
+												{
+													"area": "111",
+													"points": [
+														[
+															1849,
+															1758
+														],
+														[
+															1941,
+															1758
+														],
+														[
+															1941,
+															1569
+														],
+														[
+															2438,
+															1569
+														],
+														[
+															2438,
+															2078
+														],
+														[
+															1929,
+															2078
+														],
+														[
+															1929,
+															1909
+														],
+														[
+															1849,
+															1909
+														]
+													]
+												},
+												{
+													"area": "0e9",
+													"points": [
+														[
+															1924,
+															2096
+														],
+														[
+															2099,
+															2096
+														],
+														[
+															2099,
+															2437
+														],
+														[
+															2263,
+															2437
+														],
+														[
+															2263,
+															2604
+														],
+														[
+															1768,
+															2604
+														],
+														[
+															1768,
+															2432
+														],
+														[
+															1924,
+															2432
+														]
+													]
+												},
+												{
+													"area": "11b",
+													"points": [
+														[
+															1223,
+															1730
+														],
+														[
+															901,
+															1730
+														],
+														[
+															901,
+															1309
+														],
+														[
+															1076,
+															1309
+														],
+														[
+															1076,
+															1055
+														],
+														[
+															1153,
+															1055
+														],
+														[
+															1149,
+															1009
+														],
+														[
+															1151,
+															964
+														],
+														[
+															1171,
+															920
+														],
+														[
+															1198,
+															880
+														],
+														[
+															1244,
+															837
+														],
+														[
+															1301,
+															806
+														],
+														[
+															1376,
+															790
+														],
+														[
+															1431,
+															791
+														],
+														[
+															1483,
+															800
+														],
+														[
+															1532,
+															819
+														],
+														[
+															1580,
+															849
+														],
+														[
+															1621,
+															877
+														],
+														[
+															1650,
+															926
+														],
+														[
+															1665,
+															975
+														],
+														[
+															1665,
+															1048
+														],
+														[
+															1749,
+															1048
+														],
+														[
+															1749,
+															1312
+														],
+														[
+															1915,
+															1312
+														],
+														[
+															1915,
+															1730
+														],
+														[
+															1592,
+															1730
+														],
+														[
+															1592,
+															1643
+														],
+														[
+															1223,
+															1643
+														]
+													]
+												},
+												{
+													"area": "123",
+													"points": [
+														[
+															1051,
+															1133
+														],
+														[
+															717,
+															1133
+														],
+														[
+															633,
+															941
+														],
+														[
+															797,
+															791
+														],
+														[
+															977,
+															941
+														],
+														[
+															928,
+															1048
+														],
+														[
+															1051,
+															1048
+														]
+													]
+												},
+												{
+													"area": "123",
+													"points": [
+														[
+															876,
+															1314
+														],
+														[
+															579,
+															1314
+														],
+														[
+															625,
+															1192
+														],
+														[
+															458,
+															1056
+														],
+														[
+															285,
+															1186
+														],
+														[
+															360,
+															1392
+														],
+														[
+															876,
+															1392
+														]
+													]
+												},
+												{
+													"area": "123",
+													"points": [
+														[
+															1940,
+															1310
+														],
+														[
+															2237,
+															1310
+														],
+														[
+															2191,
+															1192
+														],
+														[
+															2356,
+															1055
+														],
+														[
+															2531,
+															1189
+														],
+														[
+															2451,
+															1392
+														],
+														[
+															1940,
+															1392
+														]
+													]
+												},
+												{
+													"area": "123",
+													"points": [
+														[
+															1767,
+															1052
+														],
+														[
+															1894,
+															1052
+														],
+														[
+															1842,
+															935
+														],
+														[
+															2013,
+															788
+														],
+														[
+															2183,
+															941
+														],
+														[
+															2101,
+															1131
+														],
+														[
+															1767,
+															1131
+														]
+													]
+												},
+												{
+													"area": "0e2",
+													"points": [
+														[
+															2272,
+															2349
+														],
+														[
+															2619,
+															2349
+														],
+														[
+															2619,
+															2602
+														],
+														[
+															2861,
+															2602
+														],
+														[
+															2861,
+															2780
+														],
+														[
+															2619,
+															2780
+														],
+														[
+															2619,
+															3037
+														],
+														[
+															2272,
+															3037
+														]
+													]
+												}
+											]
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "adventure/DrDe/048-map-03.02-temple-of-orcus-player.webp"
+											},
+											"width": 3165,
+											"height": 4096,
+											"imageType": "mapPlayer",
+											"grid": {
+												"type": "square",
+												"size": 173,
+												"offsetX": 50,
+												"offsetY": 22,
+												"scale": 2
+											},
+											"title": "玩家版本",
+											"credit": "Mike Schley",
+											"mapParent": {
+												"id": "40e"
+											}
+										}
+									]
+								},
+								{
+									"ENG_name": "T1: Temple Entry",
+									"name": "T1: 神殿入口",
+									"type": "entries",
+									"id": "0e2",
+									"page": 51,
+									"entries": [
+										"当角色们沿着阶梯来到此处时，朗读或转述以下内容：",
+										{
+											"type": "insetReadaloud",
+											"id": "0e3",
+											"page": 51,
+											"entries": [
+												"石阶尽头是一间宽敞的大厅。两只干瘦的怪物伏在阶梯底部，它们利爪锋锐，长舌垂涎，在你们靠近时不安地舔着嘴唇。房间东北角，三名衣衫褴褛、身披猩红长袍的身影正拉拽着缠绕在一尊食尸鬼雕像上的绳索。他们发出非人的呻吟声，试图将雕像拉倒，一名身穿长袍的龙裔在一旁高声指挥着。地板上满是破碎的瓷砖，更多的碎片则堆满了房间中央的两辆手推车。西侧通道入口旁，靠墙斜放着两把扫帚。"
+											]
+										},
+										"两只{@creature 丧尸|XMM|丧尸们}负责守卫阶梯，而阿基拉·诺里克修斯（中型，混乱邪恶{@creature 邪教狂信者|XMM}）\u2014\u2014一名狂热的龙裔奥喀斯信徒\u2014\u2014正监督三具丧尸笨拙地劳作。希娅命令他们将这个房间内的雕像推倒，并将瓦砾清扫干净以便搬运出去。阿基拉与{@creature 食尸鬼|XMM|食尸鬼们}的态度为敌对，会攻击任何没有穿着{@area 希娅教团|0d5|x}猩红长袍的人。丧尸则会在阿基拉的命令下发动攻击。",
+										{
+											"type": "entries",
+											"id": "0e4",
+											"page": 54,
+											"entries": [
+												{
+													"ENG_name": "Cultist",
+													"name": "邪教徒",
+													"type": "entries",
+													"id": "0e5",
+													"page": 54,
+													"entries": [
+														"阿基拉·诺里克修斯对奥喀斯教团的事业深信不疑。她甚至渴望自己的死亡，因为她坚信死后将被转化为亡灵。因此，她会战斗至死，绝对不会和角色们透露任何信息。"
+													]
+												},
+												{
+													"ENG_name": "Broken Tiles",
+													"name": "破碎的地砖",
+													"type": "entries",
+													"id": "0e6",
+													"page": 54,
+													"entries": [
+														"直到最近，房间地板上还镶嵌着一幅彩绘瓷砖马赛克画，描绘了奥喀斯屠戮一支人类骑士军团并将他们尸体活化的景象。希娅命令手下摧毁这副马赛克画，并将碎片清扫装入手推车中。任何使用{@action 研究|XPHB}动作检视这些碎片的角色，可以进行一次{@dc 13}智力（{@skill 调查|XPHB}）检定，成功即可判断这副马赛克画曾描绘的是不死魔君奥喀斯。"
+													]
+												},
+												{
+													"ENG_name": "Secret Door",
+													"name": "暗门",
+													"type": "entries",
+													"id": "0e7",
+													"page": 54,
+													"entries": [
+														"在西南角瓦砾堆后方的墙体中嵌有一扇密门（见\"{@area 庙宇特征|0db|x}\"）。密门之后，是一条向下倾斜的通道（区域 {@area T3|0ed|x}）。"
+													]
+												},
+												{
+													"ENG_name": "Stolen Goods to Recover",
+													"name": "可回收的被盗物资",
+													"type": "entries",
+													"id": "0e8",
+													"page": 54,
+													"entries": [
+														"扫帚、{@item 绳索|XPHB|绳索}与手推车皆为被盗取的物资（见\"被盗物资\"）。"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "T2: T-Shaped Passage",
+									"name": "T2: T型通道",
+									"type": "entries",
+									"id": "0e9",
+									"page": 54,
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"id": "0ea",
+											"page": 54,
+											"entries": [
+												"这条分叉通道尽头分别通向西侧与北侧的铁质双开门。在交汇处附近的地板上，躺着三具身穿覆尘猩红长袍的骸骨。"
+											]
+										},
+										{
+											"type": "entries",
+											"id": "0eb",
+											"entries": [
+												{
+													"ENG_name": "Skeletal Remains",
+													"name": "遗骨残骸",
+													"type": "entries",
+													"id": "0ec",
+													"entries": [
+														"关于这些骸骨的更多信息，见\"{@area 庙宇特征|0db|x}\""
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "T3: Sloped Passageway",
+									"name": "T3：倾斜通道",
+									"type": "entries",
+									"id": "0ed",
+									"page": 54,
+									"entries": [
+										"这条布满灰尘的隧道宽 5 尺，向西明显倾斜，通道西端比东端低约 10 尺。",
+										{
+											"type": "entries",
+											"id": "0ee",
+											"entries": [
+												{
+													"ENG_name": "Doors",
+													"name": "门",
+													"type": "entries",
+													"id": "0ef",
+													"page": 54,
+													"entries": [
+														"从隧道内部可清楚看到通往区域{@area T1|0e2|x}和{@area T4|0f0|x}的门。"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "T4: Hall of Swiveling Statues",
+									"name": "T4：旋像之厅",
+									"type": "entries",
+									"id": "0f0",
+									"page": 54,
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"id": "0f1",
+											"page": 54,
+											"entries": [
+												"房间东西两侧墙壁上排列着六尊食尸鬼般的类人雕像，它们伸展利爪，大张嘴巴，伸出石质舌头。地板上躺着五具身穿覆尘猩红长袍的骸骨。南侧墙面上雕刻着一颗巨山羊头骨，横跨十尺。"
+											]
+										},
+										"墙壁上雕刻的巨山羊头骨是奥喀斯的象征。",
+										{
+											"type": "entries",
+											"id": "0f2",
+											"entries": [
+												{
+													"ENG_name": "Skeletal Remains",
+													"name": "遗骨残骸",
+													"type": "entries",
+													"id": "0f3",
+													"page": 54,
+													"entries": [
+														"这个房间内共有五堆遗骨残骸（见\"{@area 庙宇特征|0db|x}\"）。当首次有人打开此房间内通往宝库（{@area T14|123|x}区域）的密门时，其中一堆遗骸会活化，燃起邪恶的火焰，化为一只{@creature 燃火骷髅|XMM} ，而其余四堆遗骸则各活化为一只{@creature 骷髅|XMM}。这些骷髅对所有非亡灵生物皆为敌对。"
+													]
+												},
+												{
+													"ENG_name": "Secret Doors and Statues",
+													"name": "密门与雕像",
+													"type": "entries",
+													"id": "0f4",
+													"page": 54,
+													"entries": [
+														"这个房间内共有三扇密门（见\"{@area 庙宇特征|0db|x}\"），每扇都隐藏在一尊食尸鬼雕像的背后。雕像与密门之间的空间仅能容纳微型生物自如穿行；该区域对小型或中型生物而言视为{@variantrule 困难地形|XPHB}。",
+														"当一个非亡灵生物尝试穿过密门时，对应的雕像将以基座为轴旋转并用利爪袭击该生物。该生物必须进行一次{@dc 12}的敏捷豁免，失败时受到 7（{@dice 2d6}）挥砍伤害。以一项{@action 操作|XPHB}动作，一个角色可以将{@item 匕首|XPHB}、铁钉或类似物件插入雕像基座与地面之间的缝隙，从而阻止雕像旋转。"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "T5: Sinister Stairs",
+									"name": "T5：险恶阶梯",
+									"type": "entries",
+									"id": "0f5",
+									"page": 54,
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"id": "0f6",
+											"page": 54,
+											"entries": [
+												"四根石柱支撑着这间空旷大厅的拱形穹顶。两条宽阔的隧道通向北方，而大厅的北侧、西侧与东侧墙上各有一扇关闭的铁质双开门。北侧的双开门上刻画着生有犄角的恶魔领主奥喀斯的可憎面容。他的邪恶目光凝视着房间南端一段黑色抛光大理石铺就的阶梯，阶梯向下延伸 10 尺，通往另一扇双开门。石质扶手分列阶梯两侧。"
+											]
+										},
+										{
+											"type": "entries",
+											"id": "0f7",
+											"entries": [
+												{
+													"ENG_name": "Hidden Lever",
+													"name": "隐藏拉杆",
+													"type": "entries",
+													"id": "0f8",
+													"page": 54,
+													"entries": [
+														"若一个角色执行{@action 搜索|XPHB}动作检查西南侧石柱，将自动发现一块松动的嵌板，其后藏有一根铁质拉杆（在{@area 地图：奥喀斯神殿|40e|x}上以 L 标记）。以一项{@action 操作|XPHB}动作，一个生物可以拉动该拉杆，以重置下方所述的陷阱。"
+													]
+												},
+												{
+													"ENG_name": "Trap",
+													"name": "陷阱",
+													"type": "entries",
+													"id": "0f9",
+													"page": 55,
+													"entries": [
+														"每当非亡灵生物踏上该阶梯，阶梯便会坍塌，形成一道滑坡。与此同时，阶梯底部隐藏陷坑的石盖将弹开。",
+														"首次有非亡灵生物踏上阶梯时，该生物必须进行一次 {@dc 16}的敏捷豁免，失败时会沿着滑坡坠入陷坑。陷坑深 20 尺，内壁布满生锈的尖刺。该生物会受到坠落造成的 7（{@dice 2d6}）钝击伤害，外加尖刺造成的 9（{@dice 2d8}）穿刺伤害。",
+														"拉动隐藏拉杆会关闭陷坑的盖子并复原阶梯。盖子只在陷阱被触发时才会打开，除此之外，在上面行走是安全的。以一项{@action 操作|XPHB}动作，一个角色可以尝试强行打开盖子（无论是从坑内还是坑外），成功进行一次{@dc 20} 的力量（{@skill 运动|XPHB}）检定即可。"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "T6: Occult Library",
+									"name": "T6：秘教图书馆",
+									"type": "entries",
+									"id": "0fa",
+									"page": 55,
+									"entries": [
+										"角色们若在这个房间的任一入口处侧耳倾听，便会察觉到室内传来沉重的脚步声以及家具被砸碎的响动。",
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "adventure/DrDe/049-03-003.zombified-ogres.webp"
+											},
+											"width": 1700,
+											"height": 1307
+										},
+										{
+											"type": "insetReadaloud",
+											"id": "0fb",
+											"page": 55,
+											"entries": [
+												"一股腐臭味扑面而来\u2014\u2014其源头是两只丧尸化了的食人魔。它们看起来是在服从一名身穿红袍的矮人的指挥，正在砸毁房间里所有的家具。黑檀木制成并饰以颅骨的书桌与椅子碎裂地散落在四具身着覆尘猩红长袍、早已化为枯骨的人类遗骸之中。北侧、南侧与西侧的深凹壁龛内，各自排列着高大的石质书架。在你们对面的壁龛中，一位漂浮在空中的幽灵般的人类女性正苦苦哀求食人魔停止这场毁灭性的暴行。"
+											]
+										},
+										"根据奥喀斯雕像的指示，希娅命令这位邪教徒\u2014\u2014名叫埃莱斯·脆骨的矮人（中型，混乱邪恶{@creature 邪教狂信者|XMM} ）\u2014\u2014彻底摧毁这座图书馆内的一切。埃莱斯指挥着两头{@creature 食人魔僵尸|XMM|食人魔僵尸} 执行这项粗暴的工作。邪教徒与这些丧尸的态度为敌对，会攻击任何没有穿着希娅教团猩红长袍的人。",
+										"{@b 邪教徒}。埃莱斯·脆骨被希娅骗入了这个奥喀斯教团。希娅说服这位矮人相信世界即将终结，诸神已经陨落，死亡之恶魔军势即将取得最终的胜利，从而劝说他在这场宇宙冲突中加入\"胜利的一方\"。一旦埃莱斯注意到有角色使用了明显的神圣魔法\u2014\u2014例如治疗盟友或驱散亡灵\u2014\u2014这名矮人便会投降。在这种情况下，埃莱斯会愿意分享关于邪教的信息，以换取有关现存神祇和宇宙现状的信息。有关埃莱斯能分享的内容，见前文\"{@area 希娅教团|0d5|x}\"。",
+										{
+											"type": "entries",
+											"id": "0fc",
+											"entries": [
+												{
+													"ENG_name": "Alcoves",
+													"name": "壁龛",
+													"type": "entries",
+													"id": "0fd",
+													"page": 56,
+													"entries": [
+														"每处壁龛都藏有 {@dice 4d10 + 20} 本字迹模糊的书籍和卷轴，它们均已变得脆弱易燃。角色若执行{@action 研究|XPHB}动作并成功进行一次{@dc 15}的智力（{@skill 宗教|XPHB}）检定，便能辨认出这些材料描述了奥喀斯信徒们所实践的各种仪式。"
+													]
+												},
+												{
+													"ENG_name": "Ghostly Librarian",
+													"name": "幽魂图书管理员",
+													"type": "entries",
+													"id": "0fe",
+													"page": 56,
+													"entries": [
+														"壁龛中的幽灵身影是梅琳德拉·沃克斯的{@creature 幽魂|XMM}，她是以前奥喀斯教团的图书管理员。她是混乱邪恶阵营，最初对访客的态度为冷漠。她极度愤怒于丧尸破坏她收藏的书籍和卷轴，但她无法阻止它们，因为她曾发誓永不伤害教团的盟友。当梅琳德拉注意到角色们时，她会假定他们是不受此类誓言约束的入侵者，于是恳求他们消灭那些{@creature 食人魔僵尸|XMM|食人魔僵尸}。若角色愿意效劳，则梅琳德拉的态度将变为友好；若角色们拒绝帮忙，则她继续保持冷漠。",
+														"若角色在她态度为友好时与其交谈，她将透露，多年前冒险者们突袭神殿时，她因为拒绝放弃自己的图书馆，而最终被他们所杀。若角色询问宝藏或秘密知识，梅琳德拉会建议他们检查每尊雕像后方是否藏有密门，声称\"秘密宝库遍布各处\"。",
+														"梅琳德拉不知道如何在死后获得安宁。角色若执行{@action 研究|XPHB}动作并成功进行一次 {@dc 15}的智力（{@skill 宗教|XPHB}）检定的，便能判断出让她灵魂安息的方法：要么将图书馆内所有的书籍和卷轴悉数移走，要么将它们全部摧毁。梅琳德拉会对任何试图移走或摧毁她收藏品的人变得敌对，并与他们战斗。"
+													]
+												},
+												{
+													"ENG_name": "Secret Door",
+													"name": "暗门",
+													"type": "entries",
+													"id": "0ff",
+													"page": 56,
+													"entries": [
+														"北侧壁龛中的一座书架隐藏着一扇密门（见\"{@area 庙宇特征|0db|x}\"），门后便是餐厅（{@area T7|101|x}区域）。"
+													]
+												},
+												{
+													"ENG_name": "Skeletal Remains",
+													"name": "遗骨残骸",
+													"type": "entries",
+													"id": "100",
+													"page": 56,
+													"entries": [
+														"关于这些骸骨的更多信息，见\"神殿特征\"。"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "T7: Dining Hall",
+									"name": "T7: 餐厅",
+									"type": "entries",
+									"id": "101",
+									"page": 56,
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"id": "102",
+											"page": 56,
+											"entries": [
+												"这间厅室内摆放着一张四足如爪的长方形餐桌，周围环绕着十二把高背椅。每把椅背上都挂着一副由山羊头骨制成的骇人面具。一名身穿猩红长袍，脸色蜡黄的年轻人类，正坐在餐桌一端，吃着一些看起来半生不熟、闻起来还倒胃口的的肉。他身旁的桌边斜靠着一把扫帚。"
+											]
+										},
+										"希娅和她的邪教徒们在外出时会佩戴这些山羊头骨面具。这些面具虽然令人胆寒，但一文不值。",
+										{
+											"type": "entries",
+											"id": "103",
+											"entries": [
+												{
+													"ENG_name": "Cultist",
+													"name": "邪教徒",
+													"type": "entries",
+													"id": "104",
+													"page": 56,
+													"entries": [
+														"这名坐在桌旁、面对南墙密门的年轻人是扬迪斯·莫格林（中型，混乱中立{@creature 邪教狂信者|XMM}），他是{@area 希娅教团|0d5|x}的一员，但正在对自己的参与感到动摇。他最初是被能转化为比希娅更强大的亡灵生物的许诺所吸引，并且喜欢假装自己已经成为亡灵。他化着苍白的妆，像丧尸一样脚步蹒跚，吃着半生不熟的腐肉，但没人会被这拙劣的伪装所欺骗。",
+														"无论角色是否穿着希娅教团的猩红长袍，扬迪斯对他们的态度都为冷漠。如果角色们与他战斗，扬迪斯将战斗至{@status 浴血|XPHB}，届时他便会投降。",
+														"来自奥喀斯雕像中奈扎鲁姆的低语令扬迪斯深感困惑。他无法理解，为何奥喀斯竟命令希娅毁掉神殿内所有关于奥喀斯的象征，而当扬迪斯独自面对雕像时，它会向他低语生命的美好、新鲜空气的愉悦、美味佳肴的享受以及英雄事迹的荣耀。他的疑虑使他很容易被引离邪教。角色若执行{@action 影响|XPHB}动作并成功进行一次{@dc 10}的魅力（{@skill 欺瞒|XPHB}或{@skill 威吓|XPHB}）检定，便能从他那里套取信息（有关扬迪斯能分享的教团信息，见前文\"{@area 希娅教团|0d5|x}\"）。"
+													]
+												},
+												{
+													"ENG_name": "Secret Door",
+													"name": "暗门",
+													"type": "entries",
+													"id": "105",
+													"page": 56,
+													"entries": [
+														"南墙上的密门（见\"{@area 庙宇特征|0db|x}\"）拉开后，可通往其后的图书馆（{@area T6|0fa|x} 区域）。"
+													]
+												},
+												{
+													"ENG_name": "Stolen Goods to Recover",
+													"name": "可回收的被盗物资",
+													"type": "entries",
+													"id": "106",
+													"page": 56,
+													"entries": [
+														"扬迪斯的扫帚为被盗取的物资（见\"被盗物资\"）"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "T8: Living Quarters",
+									"name": "T8: 生活区",
+									"type": "entries",
+									"id": "107",
+									"page": 56,
+									"entries": [
+										"六间卧室通向餐厅（{@area T7|101|x} 区域）。每间都摆放着两张简朴的木制行军床，配有稻草填充的床垫以及羊毛毯。每张床旁都设有几个墙钩用于悬挂衣物。只有三间房间有近期被使用过的痕迹。"
+									]
+								},
+								{
+									"ENG_name": "T9: West Tunnel",
+									"name": "T9: 西侧隧道",
+									"type": "entries",
+									"id": "108",
+									"page": 57,
+									"entries": [
+										"这条 {@i L} 形走廊从 {@area T5|0f5|x} 区域通向餐厅（{@area T7|101|x} 区域）的一扇双开门。",
+										{
+											"type": "entries",
+											"id": "109",
+											"entries": [
+												{
+													"ENG_name": "Secret Door",
+													"name": "暗门",
+													"type": "entries",
+													"id": "10a",
+													"page": 57,
+													"entries": [
+														"北墙上的一扇密门虚掩着，无需属性检定即可发现。扬迪斯（见 {@area T7|101|x} 区域）最近发现了它，并用一根旧指骨将门卡住，使其无法完全合拢，以便他再次找到。"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "T10: East Tunnel",
+									"name": "T10：东侧隧道",
+									"type": "entries",
+									"id": "10b",
+									"page": 57,
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"id": "10c",
+											"page": 57,
+											"entries": [
+												"这条隧道中散落着四具死去人类的蒙尘骸骨，身上披着破烂的猩红长袍。其中一具骨骸斜倚在靠近一扇双开门的角落里。它戴着一枚腐烂山羊头颅形状的护身符，手中紧握着一串钥匙。"
+											]
+										},
+										"这条 L 形走廊从 {@area T5|0f5|x} 区域通向祭仪密室（{@area T11|111|x} 区域）的一扇双开门。",
+										{
+											"type": "entries",
+											"id": "10d",
+											"entries": [
+												{
+													"ENG_name": "Secret Door",
+													"name": "暗门",
+													"type": "entries",
+													"id": "10e",
+													"page": 57,
+													"entries": [
+														"北墙上嵌着一扇密门（见\"{@area 庙宇特征|0db|x}\"），它通往主殿（{@area T13|11b|x} 区域）。"
+													]
+												},
+												{
+													"ENG_name": "Skeletal Remains",
+													"name": "遗骨残骸",
+													"type": "entries",
+													"id": "10f",
+													"page": 57,
+													"entries": [
+														"关于这些骸骨的更多信息，见\"神殿特征\"。"
+													]
+												},
+												{
+													"ENG_name": "Treasure",
+													"name": "宝藏",
+													"type": "entries",
+													"id": "110",
+													"page": 57,
+													"entries": [
+														"双开门旁那具无生命的骷髅，正是神殿大祭司仅存的遗骸。它手中紧握着一串系有三把铁钥匙的钥匙环，这些钥匙可打开 {@area T11|111|x} 区域的牢房门；它脖子上则戴着一条项链，上面挂着一枚腐烂山羊头颅形状的护身符（奥喀斯的象征）。这枚银质护身符价值 25GP，并设有一个暗格，里面藏着一张折叠起来的{@spell 活化死尸|XPHB}{@item 法术卷轴|XDMG}。角色若对护身符执行{@action 搜索|XPHB}动作并成功进行一次{@dc 15}的感知（{@skill 察觉|XPHB}）检定，便能发现这个暗格。"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "T11. Ritual Chamber",
+									"name": "T11. 祭仪密室",
+									"type": "entries",
+									"id": "111",
+									"page": 57,
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"id": "112",
+											"page": 57,
+											"entries": [
+												"锈迹斑斑的镣铐垂挂在密室的墙上。房间中央放着两块石板。北边那块石板上横陈着一具人类骸骨，身披沾满灰尘的猩红长袍，戴着眼罩。骸骨的一只枯手紧握着一条鞭子。东侧墙边有三扇生锈的牢门，门后是长满霉菌的牢房。"
+											]
+										},
+										"过去，邪教徒们会在此进行骇人的仪式。人类囚犯会被关押在这些牢房中（见下文），直到被献祭。他们死后会被带回这间密室，由大祭司将其活化为丧尸。",
+										{
+											"type": "entries",
+											"id": "113",
+											"entries": [
+												{
+													"ENG_name": "Cells",
+													"name": "牢房",
+													"type": "entries",
+													"id": "114",
+													"page": 57,
+													"entries": [
+														"三间牢房的门全都上了锁；东侧隧道（{@area T10|10b|x} 区域）的一具骷髅持有钥匙。撬开其中一把锁的 DC 为 15。各牢房内容如下：",
+														{
+															"type": "list",
+															"style": "list-hang-notitle",
+															"items": [
+																"{@b A单元}中有两具人类的遗骨残骸。",
+																"{@b 牢房 B}表面空无一物，但其东墙的一块松动石头后面藏有一个暗格。角色若执行{@action 搜索|XPHB}动作并成功进行一次 {@dc 13} 的感知（{@skill 察觉|XPHB}）检定，便能发现这块松动的石头及其后藏着的宝物（见下文\"宝藏\"）。",
+																"{@b 牢房C}里是一位叛逆的提夫林邪教徒的骨骸，他曾试图推翻神殿大祭司，却以失败告终。惊扰这具骨骸会导致叛徒的灵魂化为{@creature 邪灵|XMM}显现，并与角色们战斗。"
+															]
+														}
+													]
+												},
+												{
+													"ENG_name": "Skeletal Remains",
+													"name": "遗骨残骸",
+													"type": "entries",
+													"id": "115",
+													"page": 57,
+													"entries": [
+														"牢房中的骷髅都穿着破烂的布条，既无装备也无宝藏。而北侧石板上的那具骷髅则属于大祭司的拷问官（见下文\"宝藏\"及\"{@area 庙宇特征|0db|x}\"部分）。"
+													]
+												},
+												{
+													"ENG_name": "Treasure",
+													"name": "宝藏",
+													"type": "entries",
+													"id": "116",
+													"page": 57,
+													"entries": [
+														"那名死去的拷问官手中握着一条{@item +1 鞭子|XDMG}。B牢房内松动石头后面藏着一根{@item 探秘魔杖|XDMG}。"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "T12: Ghastly Work",
+									"name": "T12：妖诡工程",
+									"type": "entries",
+									"id": "117",
+									"page": 57,
+									"entries": [
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "adventure/DrDe/050-03-004.xia-npc-with-zombies.webp"
+											},
+											"width": 1700,
+											"height": 1227,
+											"title": "带僵尸的NPC",
+											"credit": "Jodie Muir"
+										},
+										{
+											"type": "insetReadaloud",
+											"id": "118",
+											"page": 57,
+											"entries": [
+												"这间柱廊大厅中弥漫着死亡的腐臭。西侧墙面上倚靠着两架十尺高的梯子。每架梯子上都爬着一个身穿猩红长袍的腐烂身影，正笨拙地挥动画笔在墙上涂抹着什么。而每架梯子底部还各站着一具活化的尸体，稳稳地扶着梯子。很难分辨这些丧尸到底在画些什么。大厅中央站着一位脸色苍白、神情不悦的女子，正在监督这群丧尸的\"创作\"。她身着同样的猩红长袍，头戴一顶有角头饰。四个枯瘦如柴的怪物围绕在她的身边，利爪如钩，舌头细长，眼神中充满饥渴。大厅北端的双开门敞开着，露出门后一间广阔的大殿。在那座宏伟殿堂的尽头，阴影笼罩之处，一尊庞大的山羊状恶魔雕像巍然耸立。"
+											]
+										},
+										"这位女子名叫希娅，是一位{@creature 妖鬼坟语者|XMM} 。她的身边跟随着四只{@creature 食尸鬼|XMM|食尸鬼们}。希娅指派了四具身穿猩红长袍的{@creature 丧尸|XMM|丧尸们}，在墙面上绘制蓬松的白云与银色的巨龙，此举是遵循隔壁房间（{@area T13|11b|x} 区域）中奥喀斯雕像给予她的指示。每架{@item 梯子|XPHB}都由一具丧尸扶稳，另一具丧尸则摇摇晃晃地站在梯顶，手握漆刷与油漆罐。希娅正愤怒地斥责着丧尸们拙劣的画工。",
+										"一旦察觉到异样，希娅便会命令她的食尸鬼们迎战入侵者，而她自己则撤退到 T13 区域，向奥喀斯雕像寻求指引。雕像中会传出洪亮的声音回应道：\"这是你最后的考验，希娅。别让我失望！\"随后，希娅会重新加入食尸鬼中，死战到底。为奈扎鲁姆掷先攻。在他的回合中，他会从 T13 区域雕像后方的密门中现身，加入战局，他相信这些闯入的冒险者正是他苦候多时的英雄。",
+										"与此同时，丧尸们仍在奉命行事，继续画画和扶着梯子，直到有角色与它们交战为止。如果扶着梯子的丧尸或在梯子上的丧尸受到伤害，梯子上的丧尸就会摔落。那只丧尸会坠落 10 尺，它的油漆罐也会随之洒落。",
+										{
+											"type": "entries",
+											"id": "119",
+											"entries": [
+												{
+													"ENG_name": "Stolen Goods to Recover",
+													"name": "可回收的被盗物资",
+													"type": "entries",
+													"id": "11a",
+													"page": 58,
+													"entries": [
+														"这些{@item 梯子|XPHB|梯子}、油漆罐与漆刷全都是被盗取的物资（见\"被盗物资\"）。"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "T13: Great Statue of Orcus",
+									"name": "T13: 奥喀斯巨像",
+									"type": "entries",
+									"id": "11b",
+									"page": 58,
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"id": "11c",
+											"page": 58,
+											"entries": [
+												"一尊巨大的奥喀斯雕像几乎顶到了这间高达三十尺的大厅的天花板。浓郁的焚香气息从雕像基座旁的一个大型石制火盆中升腾而起，完全盖住了那一丝挥之不去的死亡臭味。恶魔领主那山羊颅骨般的面容怒视着你们，几尊邪教徒雕像则从大厅阴影角落向外凝视。"
+											]
+										},
+										"主殿内燃烧的熏香几乎完全掩盖了弥漫在大厅中的腐臭。",
+										"一条名为奈扎鲁姆的{@creature 银龙雏龙|XMM}正潜伏在奥喀斯雕像内部，他会说通用语。这条银龙能透过雕像空洞的眼睛、鼻孔和嘴巴，向外窥视大厅。在不操控希娅为其办事时，奈扎鲁姆便独自下龙棋打发时间。他所拥有的这套龙棋是被盗物品（见下文\"被盗物资\"）。",
+										{
+											"type": "entries",
+											"id": "11d",
+											"entries": [
+												{
+													"ENG_name": "Roleplaying Nezzarum",
+													"name": "扮演奈扎鲁姆",
+													"type": "entries",
+													"id": "11e",
+													"page": 59,
+													"entries": [
+														"奈扎鲁姆一直在此等待，期待着能有冒险者前来击败希娅与她的教团，因为他很清楚自己没有足够的力量独自对抗他们。如果 {@area T12|117|x} 区域爆发战斗，且奈扎鲁姆察觉到了战况（无论是希娅前来恳求奥喀斯雕像的援助，还是他从雕像内的藏身处察觉到战斗的展开），他便会从雕像中现身，加入战斗。如果角色们击败了希娅，并且奈扎鲁姆在此次遭遇中幸存下来，则这条银龙就会对他们抱以友好态度。如果角色们在未与希娅交战前就接近奈扎鲁姆，这条银龙最初会持冷漠的态度。"
+													]
+												},
+												{
+													"ENG_name": "Indifferent Dragon",
+													"name": "冷漠之龙",
+													"type": "entries",
+													"id": "11f",
+													"page": 59,
+													"entries": [
+														"若奈扎鲁姆尚未亲眼见证角色们在战斗中展现实力，他会选择谨慎行事，决定对他们进行考验。他会从\"奈扎鲁姆的指令\"表中随机选出一项命令，并依照角色的回应来评判他们。如果他们满足了他的要求，他会显得很高兴；如果他们拒绝命令，则仍然对他们保持冷漠态度。",
+														"每当角色离开大厅后再次返回，奈扎鲁姆就会提出一项新命令，直到他提出三项为止。他不会重复相同的命令，因此若你掷出了重复结果，可重新掷骰，或从表中选一项不同的命令。若角色们完成了他提出的全部三项命令，奈扎鲁姆对他们的态度将转为友好。",
+														{
+															"type": "table",
+															"caption": "奈扎鲁姆的命令",
+															"page": 59,
+															"colLabels": [
+																"1d6",
+																"命令术"
+															],
+															"colStyles": [
+																"col-2 text-center",
+																"col-10"
+															],
+															"rows": [
+																[
+																	"1",
+																	"\"给我准备一顿包含熟肉、清蒸蔬菜和新鲜水果的宴席！\"（角色们可以在镇上购买食物并备餐，花费 3GP。）"
+																],
+																[
+																	"2",
+																	"\"给我带来一轮奶酪！\"（角色们可以在镇上购买奶酪，花费 5SP。）"
+																],
+																[
+																	"3",
+																	"\"给我带点配得上巨龙的宝藏！\"（奈扎鲁姆期待价值至少 100GP 的宝藏，或具有历史价值的东西。）"
+																],
+																[
+																	"4",
+																	"\"再给我拿两罐银色油漆！\"（角色们可以在镇上购买油漆，每罐 2SP。）"
+																],
+																[
+																	"5",
+																	"\"再给我拿两罐银漆来！\"（角色可以在镇上以每罐2银币的价格购买银漆。）"
+																],
+																[
+																	"6",
+																	"\"给我带来一个邪恶之物的头颅！\"（如果角色们询问建议，他会回答：\"丧尸是邪恶的，不是吗？给我带一颗丧尸的头！\"）"
+																]
+															]
+														},
+														"被\"奥喀斯\"命令的古怪之处所震惊的角色，可以执行{@action 搜索|XPHB}动作并进行一次 {@dc 15} 的感知（{@skill 洞悉|XPHB}）检定。如果检定成功，则该角色会意识到一场骗局正在上演。"
+													]
+												},
+												{
+													"ENG_name": "Friendly Dragon",
+													"name": "友好之龙",
+													"type": "entries",
+													"id": "120",
+													"page": 59,
+													"entries": [
+														"若奈扎鲁姆变得友好，他会讲述自己来到神殿以及随后邪教抵达的故事（见\"{@area 冒险背景|0cd|x}\"）。如果角色们尚未击败希娅，这将成为奈扎鲁姆最优先的目标；他会承诺将协助他们对抗这名妖鬼和所有参与的邪教徒。",
+														"奈扎鲁姆尚未彻底探索整座神殿，因此未能发现任何其他密门（除了雕像底部的那个）。只要角色们愿意与他平分宝物，他便不会干涉他们在神殿内的寻宝行动。"
+													]
+												},
+												{
+													"ENG_name": "Secret Doors",
+													"name": "暗门",
+													"type": "entries",
+													"id": "121",
+													"page": 59,
+													"entries": [
+														"这座大厅共藏有七道密门（见\"{@area 庙宇特征|0db|x}\"）",
+														{
+															"type": "list",
+															"style": "list-hang-notitle",
+															"items": [
+																{
+																	"ENG_name": "Statue Access",
+																	"name": "雕像通道",
+																	"type": "item",
+																	"entry": "奥喀斯雕像基座内藏有一道密门，拉开后可见一条蜿蜒向上的楼梯，通往雕像头部一个直径约 10 尺的房间。"
+																},
+																{
+																	"ENG_name": "South Wall Exits",
+																	"name": "南墙出口",
+																	"type": "item",
+																	"entry": "南墙上有两道密门通向走廊（{@area T9|108|x}和{@area T10|10b|x} 区域）。西侧的门（通往{@area T9|108|x} 区域）虚掩着，无需属性检定即可找到。"
+																},
+																{
+																	"ENG_name": "To the Vaults",
+																	"name": "通往宝库",
+																	"type": "item",
+																	"entry": "四扇隐藏在雕像后的密门分别通向不同的宝库（见{@area T14|123|x} 区域）。雕像与密门之间的空间仅能容纳微型生物自如穿行；对小型或中型生物而言，该区域视为{@variantrule 困难地形|XPHB}。"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ENG_name": "Stolen Goods to Recover",
+													"name": "可回收的被盗物资",
+													"type": "entries",
+													"id": "122",
+													"page": 59,
+													"entries": [
+														"那副龙棋与焚烧用的熏香都是被盗取的物资（见\"被盗物资\"）。若奈扎鲁姆态度友好，他会允许角色们将这些邪教徒偷来的物品归还原主。"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "T14: Secret Vaults",
+									"name": "T14：蜜藏金库",
+									"type": "entries",
+									"id": "123",
+									"page": 59,
+									"entries": [
+										"主殿（{@area T13|11b|x} 区域）连接着四间密藏宝库，雕像大厅（{@area T4|0f0|x}区域）还有另外两间。这些宝库大体一致，但每间都包含一尊不同的雕像、一份不同的宝藏，以及一个不同的宝藏守护者。",
+										{
+											"type": "insetReadaloud",
+											"id": "124",
+											"page": 59,
+											"entries": [
+												"一条隧道通向一个五边形房间，房间角落里立着一尊布满蛛网的雕像。"
+											]
+										},
+										{
+											"type": "entries",
+											"id": "125",
+											"entries": [
+												{
+													"ENG_name": "Vault Contents",
+													"name": "宝库内容",
+													"type": "entries",
+													"id": "126",
+													"page": 59,
+													"entries": [
+														"使用\"雕像\"表格来确定每尊雕像的形态，\"生物\"表格来确定每个宝库的守护者，以及\"宝藏\"表格来确定其中所藏的物品（见下文\"获取宝库宝藏\"）。"
+													]
+												},
+												{
+													"ENG_name": "Accessing the Vaults' Treasure",
+													"name": "获取宝库宝藏",
+													"type": "entries",
+													"id": "127",
+													"page": 60,
+													"entries": [
+														"每尊雕像下方设有一个直径 3 尺，深 3 尺圆柱形隔间。要取出其中的宝藏，角色必须推倒或摧毁雕像。每尊雕像都是一个 AC17，HP18 的中型物件，并且{@variantrule 免疫|XPHB}毒素和心灵伤害。一个角色可以执行{@action 操作|XPHB}动作尝试推倒雕像，成功进行一次的{@dc 17}的力量（{@skill 运动|XPHB}）检定即可做到。",
+														{
+															"type": "table",
+															"caption": "雕像",
+															"page": 60,
+															"colLabels": [
+																"1d6",
+																"雕像形态"
+															],
+															"colStyles": [
+																"col-2 text-center",
+																"col-10 text-center"
+															],
+															"rows": [
+																[
+																	"1",
+																	"身披斗篷的{@creature 吸血鬼|XMM}"
+																],
+																[
+																	"2",
+																	"{@creature 死亡骑士|XMM}"
+																],
+																[
+																	"3",
+																	"{@creature 巫妖|XMM}"
+																],
+																[
+																	"4",
+																	"{@creature 木乃伊领主|XMM}"
+																],
+																[
+																	"5",
+																	"骷髅山羊"
+																],
+																[
+																	"6",
+																	"{@creature 邪灵|XMM}"
+																]
+															]
+														},
+														{
+															"type": "table",
+															"caption": "生物",
+															"page": 60,
+															"colLabels": [
+																"1d6",
+																"守卫"
+															],
+															"colStyles": [
+																"col-2 text-center",
+																"col-10"
+															],
+															"rows": [
+																[
+																	"1",
+																	"一个敌对的{@creature 蠕行之爪集群|XMM}栖息在雕像的缝隙和角落里，当雕像被惊扰时便会现身攻击。"
+																],
+																[
+																	"2",
+																	"惊扰雕像会使其头部裂开，释放出一只敌对的{@creature 燃焰之颅|XMM} 。"
+																],
+																[
+																	"3",
+																	"雕像充当着一具石棺。惊扰雕像会使其破碎，释放出里面的敌对的{@creature 木乃伊|XMM} 。"
+																],
+																[
+																	"4",
+																	"惊扰雕像会使四只{@creature 恶灵|XMM|恶灵}从墙壁后的空腔中出现。它们会穿墙而出，与角色们交战。"
+																],
+																[
+																	"5",
+																	"惊扰雕像会使其吐出一只敌对的{@creature 黑布丁|XMM}。"
+																],
+																[
+																	"6",
+																	"没有守卫。"
+																]
+															]
+														},
+														{
+															"type": "table",
+															"caption": "宝藏",
+															"page": 60,
+															"colLabels": [
+																"1d6",
+																"隔间内容"
+															],
+															"colStyles": [
+																"col-2 text-center",
+																"col-10"
+															],
+															"rows": [
+																[
+																	"1",
+																	"一个篮子，里面装着一根看似为{@item 奥喀斯之杖|XDMG}，但实则毫无力量的复制品（价值 50 GP），当受到法术{@spell 侦测魔法|XPHB}影响时会散发出虚假的魔法灵光。"
+																],
+																[
+																	"2",
+																	"一颗孔雀石颅骨（价值 250GP），置于一堆{@dice 2d6 × 100}GP 之上。"
+																],
+																[
+																	"3",
+																	"一尊 3 尺高的奥喀斯雕像，由猩红色大理石制成。（价值 750 GP，重 75 磅）。"
+																],
+																[
+																	"4",
+																	"一个篮子，里面装着一件随机决定的普通魔法物品（见《{@book 城主指南|XDMG}》）。"
+																],
+																[
+																	"5",
+																	"一个棺木，里面装着一具呈胎儿姿势、佩戴金项链的人类木乃伊尸体（价值 750 GP）。"
+																],
+																[
+																	"6",
+																	"一个篮子，里面装着一件随机决定的非普通魔法物品（见《{@book 城主指南|XDMG}》）。"
+																]
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Conclusion",
+							"name": "结局",
+							"type": "section",
+							"id": "128",
+							"page": 60,
+							"entries": [
+								"在肃清了神殿中的{@area 希娅教团|0d5|x}后，角色们便可返回灰水镇领取他们的报酬。即使他们未能清除所有威胁，欧瑞安也会相信角色们已完成任务，并据此支付报酬。旅馆老板欣然接收角色们从神殿寻回的所有被盗物品，并确保它们物归原主。",
+								"若角色们揭示邪教的古怪行径实为一条银龙所为，欧瑞安会忆起偶尔曾观察到一条雏龙在云间翱翔，但除此之外便一无所知了。",
 								{
 									"type": "image",
 									"href": {
 										"type": "internal",
-										"path": "adventure/DrDe/046-03-002.temple-handout.webp"
+										"path": "adventure/DrDe/051-03-005.ram-skull.webp"
 									},
-									"credit": "Paolo Vacala",
+									"width": 850,
+									"height": 761,
+									"credit": "Jodie Muir"
+								}
+							]
+						},
+						{
+							"ENG_name": "History of Silver Dragons",
+							"name": "银龙的历史",
+							"type": "section",
+							"id": "129",
+							"page": 43,
+							"entries": [
+								"{@font 奥恩·达拉斯特里克斯|languages/XPHB/Draconic/Iokharik-v2.woff2}",
+								{
+									"type": "insetReadaloud",
+									"id": "12a",
+									"entries": [
+										"尽管多年来龙的外形发生了诸多变化，银龙独特的冠饰在每一代形象中都清晰可见。"
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/052-03-007.silver-dragon-2009.webp"
+									},
+									"width": 1849,
+									"height": 1700,
+									"title": "艾伯伦战役指南（2009）",
+									"credit": "Chippy"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/053-03-008.silver-dragon-1993.webp"
+									},
+									"width": 832,
+									"height": 1009,
+									"title": "怪物图鉴（1993）",
+									"credit": "Mark A. Nelson"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/054-03-009.silver-dragon-1977.webp"
+									},
+									"width": 684,
+									"height": 845,
+									"title": "{@book 怪物图鉴|XMM} (1977)",
+									"credit": "David C. Sutherland"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/055-03-010.silver-dragon-draconomicon.webp"
+									},
+									"width": 1320,
+									"height": 1868,
+									"title": "龙之书（2003）",
+									"credit": "Richard Sardinha"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/056-03-011.silver-dragon-mtg.webp"
+									},
+									"width": 744,
+									"height": 1040,
+									"title": "指挥官传奇：博德之门之战 (2022)",
+									"credit": "Andrey Kuzinskiy"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/057-03-012.silver-dragon-anatomy.webp"
+									},
+									"width": 850,
+									"height": 385,
+									"title": "龙之书（2003）",
+									"credit": "Todd Lockwood"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/058-03-013.silver-dragon-2009.webp"
+									},
 									"width": 1700,
-									"height": 2301
-								},
-								"当角色们准备好前往神殿时，向玩家们分发神殿地图的副本，并朗读以下内容：",
-								{
-									"type": "insetReadaloud",
-									"page": 50,
-									"id": "0d1",
-									"entries": [
-										"这幅神殿的简略地图是欧瑞安的父母当年绘制的，如今其将它郑重托付给你们。欧瑞安保证地图内容的准确性，但也坦言其中可能有所缺漏。他还在地图上附上了一份被盗物品的清单。"
-									]
-								},
-								"作为回报，如果角色们能够铲除神殿中的邪恶，并尽可能带回被盗的物品，欧瑞安将会向镇民们募集资金，为每位冒险者支付 200 GP 的报酬。"
-							]
-						},
-						{
-							"ENG_name": "Travel to the Temple",
-							"name": "前往神殿",
-							"type": "entries",
-							"page": 50,
-							"id": "0d2",
-							"entries": [
-								"用以下描述来概括前往神殿的旅程：",
-								{
-									"type": "insetReadaloud",
-									"page": 50,
-									"id": "0d3",
-									"entries": [
-										"前往神殿的旅程短暂而平静。薄雪覆盖着地面，凛冽的寒风是你们遭遇的唯一敌人。云雾遮蔽着前方被狂风吹拂的山峰。凿刻在山体底部的神殿大门豁然敞开，宽 10 尺，高 20 尺。复行深入数尺，一段粗糙开凿的石阶向下延伸，没入冰冷的岩床之中。墙壁上每隔一段距离就镶嵌着山羊头骨，诡异的幽幽绿光从中照射而出。"
-									]
-								},
-								"大门处并未设有岗哨。石阶向下延伸 50 尺，直达入口（区域 {@area T1|0e2|x}），那里有守卫看守。"
-							]
-						}
-					]
-				},
-				{
-					"ENG_name": "The Temple of Orcus",
-					"name": "奥喀斯神殿",
-					"type": "section",
-					"page": 50,
-					"id": "0d4",
-					"entries": [
-						"这座神殿由奥喀斯的忠实信徒在一个多世纪前雕凿而成。二十年前，一群冒险者攻入神殿，斩杀了邪教首领，并将剩余的邪教徒吓得四散奔逃。",
-						"此后神殿一直处于荒废，直到几周前，银龙奈扎鲁姆偶然发现了这里，并将其视为潜在的巢穴，开始进行探索。巧合的是，仅在数日之后，希娅和她的追随者们也抵达了此地，意图以奥喀斯之名重新夺回神殿的掌控权。",
-						{
-							"ENG_name": "Xia's Cult",
-							"name": "希娅教团",
-							"type": "entries",
-							"page": 51,
-							"id": "0d5",
-							"entries": [
-								"教团的首领希娅是一位{@creature 妖鬼|XMM}\u2014\u2014奥喀斯的亡灵仆从。几名食尸鬼担任她的亲信助手，而受希娅控制的丧尸则为教团承担繁重的杂务。该教团的其余成员共有三人，他们对这位不死魔君的信仰从极端狂热到盲目迷信不等。",
-								{
-									"ENG_name": "Talking to Cultists",
-									"name": "与邪教徒交谈",
-									"type": "entries",
-									"page": 51,
-									"id": "0d6",
-									"entries": [
-										"神殿中住着三名非亡灵的邪教徒，作为希娅与她活化的丧尸之间的中间人。在发现这些邪教徒的房间的描述中，会注明角色们是否能通过与他们交谈来获取有关教团的信息。如果这些邪教徒愿意开口，那他们会分享以下信息。"
-									]
+									"height": 1234,
+									"title": "怪物手册2（2009）",
+									"credit": "Lars Grant-West"
 								},
 								{
-									"ENG_name": "Speaking Statue",
-									"name": "会说话的雕像",
-									"type": "entries",
-									"page": 51,
-									"id": "0d7",
-									"entries": [
-										"希娅认为奥喀斯通过主殿（{@area T13|11b|x} 区域）中的雕像与她沟通。希娅毫不质疑地遵从雕像的命令，尽管她也觉得这些命令让人费解。雕像在向希娅下达命令的同时，也在她那些凡人追随者的心中播下疑虑的种子。"
-									]
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/059-03-014.silver-dragon-2014.webp"
+									},
+									"width": 850,
+									"height": 1110,
+									"title": "{@book 怪物图鉴|XMM} (2014)",
+									"credit": "Tom Babbey"
 								},
 								{
-									"ENG_name": "Temple Secrets",
-									"name": "神殿的秘密",
-									"type": "entries",
-									"page": 51,
-									"id": "0d8",
-									"entries": [
-										"希娅相信这座神殿藏有许多秘密。只要没有在为奥喀斯的雕像做事，希娅的追随者们就会不断地在神殿中搜寻隐藏的秘密。"
-									]
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/060-03-015.silver-dragon-2023.webp"
+									},
+									"width": 1700,
+									"height": 833,
+									"title": "概念艺术（2023）",
+									"credit": "Alexander Ostrowski"
 								},
 								{
-									"ENG_name": "Xia's Goals",
-									"name": "希娅的目标",
-									"type": "entries",
-									"page": 51,
-									"id": "0d9",
-									"entries": [
-										"在进行神殿修缮工作的同时，希娅不断从附近墓地中盗取尸体，来补充她的\"食物储备\"并壮大她的劳工队伍。待神殿的工程竣工后，她计划献祭神殿方圆十里内的所有人类与动物，以此为神殿祝圣，释放其潜藏的力量。"
-									]
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/061-03-016.silver-dragon-three-scenes-color.webp"
+									},
+									"width": 850,
+									"height": 1136,
+									"title": "概念艺术（2023）",
+									"credit": "John Grello"
 								},
 								{
-									"ENG_name": "Orcus's Orders",
-									"name": "奥喀斯的命令",
-									"type": "entries",
-									"page": 51,
-									"id": "0da",
-									"entries": [
-										"邪教徒们对来自恶魔领主雕像的指令感到困惑，其中包括以下内容：",
-										{
-											"type": "list",
-											"items": [
-												"推倒并摧毁神殿内所有食尸鬼雕像，连同一切象征恶魔领主的标志也一并毁掉。（这项工作已在区域{@area T1|0e2|x}开始。）",
-												"在墙面上绘制银白色的云朵图案。（该工作目前正在区域 {@area T12|117|x}进行。）",
-												"将一副龙棋放置在主殿（（区域 {@area T13|11b|x}）。（棋具被摆放到奥喀斯雕像前不久后便神秘失踪。）"
-											]
-										},
-										"通过指示邪教徒们从附近村镇盗取修缮用的物资，奈扎鲁姆希望能让更多人注意到这个邪教的存在。"
-									]
-								}
-							]
-						},
-						{
-							"ENG_name": "Temple Features",
-							"name": "庙宇特征",
-							"type": "entries",
-							"page": 51,
-							"id": "0db",
-							"entries": [
-								"除非另有说明，该神殿具有以下特征。",
-								{
-									"ENG_name": "Ceilings",
-									"name": "天花板",
-									"type": "entries",
-									"page": 51,
-									"id": "0dc",
-									"entries": [
-										"神殿的通道和房间均为 20 尺高，唯独{@area T13|11b|x}区域的天花板为 30 尺高。"
-									]
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/062-03-017.silver-dragon-scenes-development.webp"
+									},
+									"width": 850,
+									"height": 751,
+									"title": "概念艺术（2023）",
+									"credit": "John Grello"
 								},
 								{
-									"ENG_name": "Dim Light",
-									"name": "微光光照",
-									"type": "entries",
-									"page": 51,
-									"id": "0dd",
-									"entries": [
-										"神殿墙壁上镶嵌的山羊头骨散发出诡异的绿色光芒，为整个神殿提供{@variantrule 微光光照|XPHB}。"
-									]
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/063-03-018.silver-dragon-2025.webp"
+									},
+									"width": 1700,
+									"height": 1100,
+									"title": "{@book 怪物图鉴|XMM} (2025)",
+									"credit": "Anna Podedworna"
 								},
 								{
-									"ENG_name": "Doors and Secret Doors",
-									"name": "门和暗门",
-									"type": "entries",
-									"page": 51,
-									"id": "0de",
-									"entries": [
-										"密神殿的门均为未上锁的铁门，配有雕刻的骨质门把。密门由石头制成，与周围的墙壁融为一体（需{@dc 15}才能注意到）。密门同样未上锁，可借由隐藏的铁质铰链开启。"
-									]
-								},
-								{
-									"ENG_name": "Rubble",
-									"name": "瓦砾",
-									"type": "entries",
-									"page": 51,
-									"id": "0df",
-									"entries": [
-										"在{@area 地图：奥喀斯神殿|40e|x}上标记的碎石区域是{@variantrule 困难地形|XPHB}。"
-									]
-								},
-								{
-									"ENG_name": "Skeletal Remains",
-									"name": "遗骨残骸",
-									"type": "entries",
-									"page": 51,
-									"id": "0e0",
-									"entries": [
-										"奥喀斯神庙上标示有原始邪教徒的遗骨残骸。搜查一具邪教徒的遗骸需执行一次{@action 搜索|XPHB}动作，并能找到一件破损的猩红长袍、一把生锈的{@item 短剑|XPHB}、一把老旧的{@item 短弓|XPHB}、一个装有{@dice 1d10}支{@item 箭矢 (20)|XPHB|箭矢}的{@item 箭袋|XPHB}，以及{@dice 1d10}GP。"
-									]
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/064-03-018.silver-dragon-wips.webp"
+									},
+									"width": 1700,
+									"height": 387,
+									"title": "概念艺术（2023）",
+									"credit": "John Grello"
 								}
 							]
 						}
 					]
 				},
 				{
-					"ENG_name": "Temple Locations",
-					"name": "神殿地点",
+					"ENG_name": "Credits",
+					"name": "制作组",
 					"type": "section",
-					"page": 51,
-					"id": "0e1",
+					"id": "40b",
+					"page": 2,
 					"entries": [
-						"以下地点与地图：奥喀斯神庙上的标记相对应。",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"columns": 2,
+							"items": [
+								{
+									"ENG_name": "Lead Designers:",
+									"name": "首席设计师：",
+									"type": "item",
+									"entry": "Amanda Hamon, James Wyatt"
+								},
+								{
+									"ENG_name": "Designers:",
+									"name": "设计师：",
+									"type": "item",
+									"entry": "Justice Ramin Arman, Makenzie De Armas, Anthony Joyce-Rivera, Renee Knipe, Ron Lundeen, Christopher Perkins, Patrick Renie, Erin Roberts, F. Wesley Schneider, Carl Sibley, Jason Tondro, Steve Townshend"
+								},
+								{
+									"ENG_name": "Rules Developers:",
+									"name": "规则开发者：",
+									"type": "item",
+									"entry": "Makenzie De Armas (lead), Jeremy Crawford, Ron Lundeen"
+								},
+								{
+									"ENG_name": "Editors:",
+									"name": "编辑：",
+									"type": "item",
+									"entry": "Judy Bauer (lead), Emma Candon, Sadie Lowry, Hannah Rose, Sue Weinlein, Hans Ziegler"
+								},
+								{
+									"ENG_name": "Art Directors:",
+									"name": "艺术指导：",
+									"type": "item",
+									"entry": "Matt Cole (lead), Fury Galluzzi, Josh Herman, Kate Irwin, Emi Tanji"
+								},
+								{
+									"ENG_name": "Graphic Designers:",
+									"name": "平面设计师：",
+									"type": "item",
+									"entry": "Matt Cole, Paolo Vacala"
+								},
+								{
+									"ENG_name": "Cover Illustrators:",
+									"name": "封面插画师：",
+									"type": "item",
+									"entry": "Justine Jones, Greg Staples"
+								},
+								{
+									"ENG_name": "Interior Illustrators:",
+									"name": "内页插画师：",
+									"type": "item",
+									"entry": "Tom Babbey, Daren Bader, Clyde Caldwell, Chippy, Simon Dominic, Jeff Easley, Luke Eidenschink, Larry Elmore, Jason A. Engle, Lars Grant-West, John Grello, Johan Grenier, Justine Jones, Andrew Kolb, Vance Kovacs, Andrey Kuzinskiy, Ed Kwong, Todd Lockwood, Antonio José Manzanedo, Dominik Mayer, Caio Monteiro, Martin Mottet, Jodie Muir, Mark A. Nelson, Alexander Ostrowski, Keith Parkinson, Anna Podedworna, Steve Prescott, Chris Rallis, Joshua Raphael, Richard Sardinha, Chris Seaman, Rudy Siswanto, Craig J Spearing, Ron Spencer, Leroy Steinmann, Zack Stella, Matt Stewart, Matt Stikker, David C. Sutherland, Autumn Rain Turkel, Paolo Vacala, Svetlin Velinov, Raoul Vitale, Jabari Weathers, Campbell White"
+								},
+								{
+									"ENG_name": "Cartographers:",
+									"name": "制图师：",
+									"type": "item",
+									"entry": "Francesca Baerald, Jared Blando, CoupleOfKooks, Andrew Kolb, Dyson Logos, Damien Mammoliti, Mike Schley, Paolo Vacala"
+								},
+								{
+									"ENG_name": "Consultants:",
+									"name": "顾问：",
+									"type": "item",
+									"entry": "Shawn Banerjee, Eytan Bernstein, Daniel Delgado, Sameer Joseph"
+								},
+								{
+									"ENG_name": "Producers:",
+									"name": "制作人：",
+									"type": "item",
+									"entry": "Rob Hawkey (lead), Bill Benham, Siera Bruggeman, Vanessa Hoskins"
+								}
+							]
+						},
+						"{@i 本书献给Christopher Perkins，感谢他数十年来为《龙与地下城》作出的贡献。}",
 						{
 							"type": "gallery",
 							"images": [
@@ -989,2012 +2969,38 @@
 									"type": "image",
 									"href": {
 										"type": "internal",
-										"path": "adventure/DrDe/047-map-03.02-temple-of-orcus-dm.webp"
+										"path": "adventure/DrDe/199-11-001.title-splash.webp"
 									},
-									"imageType": "map",
-									"title": "地图 3.2：奥喀斯神殿",
-									"credit": "Mike Schley",
-									"width": 3165,
-									"height": 4096,
-									"id": "40e",
-									"grid": {
-										"type": "square",
-										"size": 173,
-										"offsetX": 50,
-										"offsetY": 22,
-										"scale": 2
-									},
-									"mapRegions": [
-										{
-											"area": "0ed",
-											"points": [
-												[
-													1673,
-													2954
-												],
-												[
-													1673,
-													3029
-												],
-												[
-													2261,
-													3029
-												],
-												[
-													2261,
-													2954
-												]
-											]
-										},
-										{
-											"area": "0f0",
-											"points": [
-												[
-													1160,
-													2965
-												],
-												[
-													1160,
-													3380
-												],
-												[
-													1658,
-													3380
-												],
-												[
-													1658,
-													2965
-												]
-											]
-										},
-										{
-											"area": "123",
-											"points": [
-												[
-													720,
-													3337
-												],
-												[
-													887,
-													3463
-												],
-												[
-													1054,
-													3334
-												],
-												[
-													1008,
-													3210
-												],
-												[
-													1140,
-													3210
-												],
-												[
-													1140,
-													3126
-												],
-												[
-													787,
-													3126
-												]
-											]
-										},
-										{
-											"area": "123",
-											"points": [
-												[
-													1762,
-													3336
-												],
-												[
-													1926,
-													3466
-												],
-												[
-													2090,
-													3336
-												],
-												[
-													2028,
-													3123
-												],
-												[
-													1676,
-													3123
-												],
-												[
-													1676,
-													3206
-												],
-												[
-													1808,
-													3206
-												]
-											]
-										},
-										{
-											"area": "0fa",
-											"points": [
-												[
-													285,
-													2430
-												],
-												[
-													545,
-													2430
-												],
-												[
-													545,
-													2349
-												],
-												[
-													725,
-													2349
-												],
-												[
-													725,
-													2099
-												],
-												[
-													889,
-													2099
-												],
-												[
-													889,
-													2345
-												],
-												[
-													1051,
-													2345
-												],
-												[
-													1051,
-													2688
-												],
-												[
-													889,
-													2688
-												],
-												[
-													889,
-													2948
-												],
-												[
-													714,
-													2948
-												],
-												[
-													714,
-													2691
-												],
-												[
-													542,
-													2691
-												],
-												[
-													542,
-													2608
-												],
-												[
-													285,
-													2608
-												]
-											]
-										},
-										{
-											"area": "0f5",
-											"points": [
-												[
-													1077,
-													2361
-												],
-												[
-													1748,
-													2361
-												],
-												[
-													1748,
-													2775
-												],
-												[
-													1498,
-													2775
-												],
-												[
-													1498,
-													2938
-												],
-												[
-													1316,
-													2938
-												],
-												[
-													1316,
-													2775
-												],
-												[
-													1077,
-													2775
-												]
-											]
-										},
-										{
-											"area": "117",
-											"points": [
-												[
-													1247,
-													1672
-												],
-												[
-													1247,
-													2335
-												],
-												[
-													1567,
-													2335
-												],
-												[
-													1567,
-													1672
-												]
-											]
-										},
-										{
-											"area": "107",
-											"points": [
-												[
-													369,
-													1562
-												],
-												[
-													369,
-													1726
-												],
-												[
-													533,
-													1726
-												],
-												[
-													533,
-													1562
-												]
-											]
-										},
-										{
-											"area": "107",
-											"points": [
-												[
-													555,
-													1566
-												],
-												[
-													555,
-													1729
-												],
-												[
-													705,
-													1729
-												],
-												[
-													705,
-													1566
-												]
-											]
-										},
-										{
-											"area": "107",
-											"points": [
-												[
-													723,
-													1566
-												],
-												[
-													723,
-													1729
-												],
-												[
-													881,
-													1729
-												],
-												[
-													881,
-													1566
-												]
-											]
-										},
-										{
-											"area": "107",
-											"points": [
-												[
-													296,
-													1750
-												],
-												[
-													296,
-													1905
-												],
-												[
-													446,
-													1905
-												],
-												[
-													446,
-													1750
-												]
-											]
-										},
-										{
-											"area": "107",
-											"points": [
-												[
-													372,
-													1920
-												],
-												[
-													372,
-													2076
-												],
-												[
-													533,
-													2076
-												],
-												[
-													533,
-													1920
-												]
-											]
-										},
-										{
-											"area": "107",
-											"points": [
-												[
-													555,
-													2080
-												],
-												[
-													555,
-													1925
-												],
-												[
-													705,
-													1925
-												],
-												[
-													705,
-													2080
-												]
-											]
-										},
-										{
-											"area": "101",
-											"points": [
-												[
-													464,
-													1750
-												],
-												[
-													965,
-													1750
-												],
-												[
-													965,
-													2080
-												],
-												[
-													726,
-													2080
-												],
-												[
-													726,
-													1902
-												],
-												[
-													464,
-													1902
-												]
-											]
-										},
-										{
-											"area": "108",
-											"points": [
-												[
-													987,
-													1755
-												],
-												[
-													1223,
-													1755
-												],
-												[
-													1223,
-													2348
-												],
-												[
-													1076,
-													2348
-												],
-												[
-													1076,
-													1916
-												],
-												[
-													987,
-													1916
-												]
-											]
-										},
-										{
-											"area": "10b",
-											"points": [
-												[
-													1826,
-													1758
-												],
-												[
-													1593,
-													1758
-												],
-												[
-													1593,
-													2348
-												],
-												[
-													1745,
-													2348
-												],
-												[
-													1745,
-													1911
-												],
-												[
-													1826,
-													1911
-												]
-											]
-										},
-										{
-											"area": "111",
-											"points": [
-												[
-													1849,
-													1758
-												],
-												[
-													1941,
-													1758
-												],
-												[
-													1941,
-													1569
-												],
-												[
-													2438,
-													1569
-												],
-												[
-													2438,
-													2078
-												],
-												[
-													1929,
-													2078
-												],
-												[
-													1929,
-													1909
-												],
-												[
-													1849,
-													1909
-												]
-											]
-										},
-										{
-											"area": "0e9",
-											"points": [
-												[
-													1924,
-													2096
-												],
-												[
-													2099,
-													2096
-												],
-												[
-													2099,
-													2437
-												],
-												[
-													2263,
-													2437
-												],
-												[
-													2263,
-													2604
-												],
-												[
-													1768,
-													2604
-												],
-												[
-													1768,
-													2432
-												],
-												[
-													1924,
-													2432
-												]
-											]
-										},
-										{
-											"area": "11b",
-											"points": [
-												[
-													1223,
-													1730
-												],
-												[
-													901,
-													1730
-												],
-												[
-													901,
-													1309
-												],
-												[
-													1076,
-													1309
-												],
-												[
-													1076,
-													1055
-												],
-												[
-													1153,
-													1055
-												],
-												[
-													1149,
-													1009
-												],
-												[
-													1151,
-													964
-												],
-												[
-													1171,
-													920
-												],
-												[
-													1198,
-													880
-												],
-												[
-													1244,
-													837
-												],
-												[
-													1301,
-													806
-												],
-												[
-													1376,
-													790
-												],
-												[
-													1431,
-													791
-												],
-												[
-													1483,
-													800
-												],
-												[
-													1532,
-													819
-												],
-												[
-													1580,
-													849
-												],
-												[
-													1621,
-													877
-												],
-												[
-													1650,
-													926
-												],
-												[
-													1665,
-													975
-												],
-												[
-													1665,
-													1048
-												],
-												[
-													1749,
-													1048
-												],
-												[
-													1749,
-													1312
-												],
-												[
-													1915,
-													1312
-												],
-												[
-													1915,
-													1730
-												],
-												[
-													1592,
-													1730
-												],
-												[
-													1592,
-													1643
-												],
-												[
-													1223,
-													1643
-												]
-											]
-										},
-										{
-											"area": "123",
-											"points": [
-												[
-													1051,
-													1133
-												],
-												[
-													717,
-													1133
-												],
-												[
-													633,
-													941
-												],
-												[
-													797,
-													791
-												],
-												[
-													977,
-													941
-												],
-												[
-													928,
-													1048
-												],
-												[
-													1051,
-													1048
-												]
-											]
-										},
-										{
-											"area": "123",
-											"points": [
-												[
-													876,
-													1314
-												],
-												[
-													579,
-													1314
-												],
-												[
-													625,
-													1192
-												],
-												[
-													458,
-													1056
-												],
-												[
-													285,
-													1186
-												],
-												[
-													360,
-													1392
-												],
-												[
-													876,
-													1392
-												]
-											]
-										},
-										{
-											"area": "123",
-											"points": [
-												[
-													1940,
-													1310
-												],
-												[
-													2237,
-													1310
-												],
-												[
-													2191,
-													1192
-												],
-												[
-													2356,
-													1055
-												],
-												[
-													2531,
-													1189
-												],
-												[
-													2451,
-													1392
-												],
-												[
-													1940,
-													1392
-												]
-											]
-										},
-										{
-											"area": "123",
-											"points": [
-												[
-													1767,
-													1052
-												],
-												[
-													1894,
-													1052
-												],
-												[
-													1842,
-													935
-												],
-												[
-													2013,
-													788
-												],
-												[
-													2183,
-													941
-												],
-												[
-													2101,
-													1131
-												],
-												[
-													1767,
-													1131
-												]
-											]
-										},
-										{
-											"area": "0e2",
-											"points": [
-												[
-													2272,
-													2349
-												],
-												[
-													2619,
-													2349
-												],
-												[
-													2619,
-													2602
-												],
-												[
-													2861,
-													2602
-												],
-												[
-													2861,
-													2780
-												],
-												[
-													2619,
-													2780
-												],
-												[
-													2619,
-													3037
-												],
-												[
-													2272,
-													3037
-												]
-											]
-										}
-									],
-									"hrefThumbnail": {
+									"width": 850,
+									"height": 963,
+									"credit": "Alexander Ostrowski"
+								}
+							]
+						},
+						{
+							"type": "gallery",
+							"images": [
+								{
+									"type": "image",
+									"href": {
 										"type": "internal",
-										"path": "adventure/DrDe/thumbnail/047-map-03.02-temple-of-orcus-dm.webp"
-									}
+										"path": "adventure/DrDe/200-11-002.traditional-cover.webp"
+									},
+									"width": 850,
+									"height": 951,
+									"title": "封面故事：在Greg Staples创作的这张极具张力的海报中，三位勇敢的冒险者直面由五种色彩龙所带来的未知险境。"
 								},
 								{
 									"type": "image",
 									"href": {
 										"type": "internal",
-										"path": "adventure/DrDe/048-map-03.02-temple-of-orcus-player.webp"
+										"path": "adventure/DrDe/201-11-003.alt-cover.webp"
 									},
-									"imageType": "mapPlayer",
-									"title": "玩家版本",
-									"width": 3165,
-									"height": 4096,
-									"credit": "Mike Schley",
-									"mapParent": {
-										"id": "40e"
-									},
-									"grid": {
-										"type": "square",
-										"size": 173,
-										"offsetX": 50,
-										"offsetY": 22,
-										"scale": 2
-									}
+									"width": 850,
+									"height": 951,
+									"title": "替换封面：Justine Jones以迷幻笔触，绘就一幅群龙入梦的奇幻图景。"
 								}
 							]
-						},
-						{
-							"ENG_name": "T1: Temple Entry",
-							"name": "T1: 神殿入口",
-							"type": "entries",
-							"page": 51,
-							"id": "0e2",
-							"entries": [
-								"当角色们沿着阶梯来到此处时，朗读或转述以下内容：",
-								{
-									"type": "insetReadaloud",
-									"page": 51,
-									"id": "0e3",
-									"entries": [
-										"石阶尽头是一间宽敞的大厅。两只干瘦的怪物伏在阶梯底部，它们利爪锋锐，长舌垂涎，在你们靠近时不安地舔着嘴唇。房间东北角，三名衣衫褴褛、身披猩红长袍的身影正拉拽着缠绕在一尊食尸鬼雕像上的绳索。他们发出非人的呻吟声，试图将雕像拉倒，一名身穿长袍的龙裔在一旁高声指挥着。地板上满是破碎的瓷砖，更多的碎片则堆满了房间中央的两辆手推车。西侧通道入口旁，靠墙斜放着两把扫帚。"
-									]
-								},
-								"两只{@creature 丧尸|XMM|丧尸们}负责守卫阶梯，而阿基拉·诺里克修斯（中型，混乱邪恶{@creature 邪教狂信者|XMM}）\u2014\u2014一名狂热的龙裔奥喀斯信徒\u2014\u2014正监督三具丧尸笨拙地劳作。希娅命令他们将这个房间内的雕像推倒，并将瓦砾清扫干净以便搬运出去。阿基拉与{@creature 食尸鬼|XMM|食尸鬼们}的态度为敌对，会攻击任何没有穿着{@area 希娅教团|0d5|x}猩红长袍的人。丧尸则会在阿基拉的命令下发动攻击。",
-								{
-									"type": "entries",
-									"page": 54,
-									"id": "0e4",
-									"entries": [
-										{
-											"ENG_name": "Cultist",
-											"name": "邪教徒",
-											"type": "entries",
-											"page": 54,
-											"id": "0e5",
-											"entries": [
-												"阿基拉·诺里克修斯对奥喀斯教团的事业深信不疑。她甚至渴望自己的死亡，因为她坚信死后将被转化为亡灵。因此，她会战斗至死，绝对不会和角色们透露任何信息。"
-											]
-										},
-										{
-											"ENG_name": "Broken Tiles",
-											"name": "破碎的地砖",
-											"type": "entries",
-											"page": 54,
-											"id": "0e6",
-											"entries": [
-												"直到最近，房间地板上还镶嵌着一幅彩绘瓷砖马赛克画，描绘了奥喀斯屠戮一支人类骑士军团并将他们尸体活化的景象。希娅命令手下摧毁这副马赛克画，并将碎片清扫装入手推车中。任何使用{@action 研究|XPHB}动作检视这些碎片的角色，可以进行一次{@dc 13}智力（{@skill 调查|XPHB}）检定，成功即可判断这副马赛克画曾描绘的是不死魔君奥喀斯。"
-											]
-										},
-										{
-											"ENG_name": "Secret Door",
-											"name": "暗门",
-											"type": "entries",
-											"page": 54,
-											"id": "0e7",
-											"entries": [
-												"在西南角瓦砾堆后方的墙体中嵌有一扇密门（见\"{@area 庙宇特征|0db|x}\"）。密门之后，是一条向下倾斜的通道（区域 {@area T3|0ed|x}）。"
-											]
-										},
-										{
-											"ENG_name": "Stolen Goods to Recover",
-											"name": "可回收的被盗物资",
-											"type": "entries",
-											"page": 54,
-											"id": "0e8",
-											"entries": [
-												"扫帚、{@item 绳索|XPHB|绳索}与手推车皆为被盗取的物资（见\"被盗物资\"）。"
-											]
-										}
-									]
-								}
-							]
-						},
-						{
-							"ENG_name": "T2: T-Shaped Passage",
-							"name": "T2: T型通道",
-							"type": "entries",
-							"page": 54,
-							"id": "0e9",
-							"entries": [
-								{
-									"type": "insetReadaloud",
-									"page": 54,
-									"id": "0ea",
-									"entries": [
-										"这条分叉通道尽头分别通向西侧与北侧的铁质双开门。在交汇处附近的地板上，躺着三具身穿覆尘猩红长袍的骸骨。"
-									]
-								},
-								{
-									"type": "entries",
-									"id": "0eb",
-									"entries": [
-										{
-											"ENG_name": "Skeletal Remains",
-											"name": "遗骨残骸",
-											"type": "entries",
-											"id": "0ec",
-											"entries": [
-												"关于这些骸骨的更多信息，见\"{@area 庙宇特征|0db|x}\""
-											]
-										}
-									]
-								}
-							]
-						},
-						{
-							"ENG_name": "T3: Sloped Passageway",
-							"name": "T3：倾斜通道",
-							"type": "entries",
-							"page": 54,
-							"id": "0ed",
-							"entries": [
-								"这条布满灰尘的隧道宽 5 尺，向西明显倾斜，通道西端比东端低约 10 尺。",
-								{
-									"type": "entries",
-									"id": "0ee",
-									"entries": [
-										{
-											"ENG_name": "Doors",
-											"name": "门",
-											"type": "entries",
-											"page": 54,
-											"id": "0ef",
-											"entries": [
-												"从隧道内部可清楚看到通往区域{@area T1|0e2|x}和{@area T4|0f0|x}的门。"
-											]
-										}
-									]
-								}
-							]
-						},
-						{
-							"ENG_name": "T4: Hall of Swiveling Statues",
-							"name": "T4：旋像之厅",
-							"type": "entries",
-							"page": 54,
-							"id": "0f0",
-							"entries": [
-								{
-									"type": "insetReadaloud",
-									"page": 54,
-									"id": "0f1",
-									"entries": [
-										"房间东西两侧墙壁上排列着六尊食尸鬼般的类人雕像，它们伸展利爪，大张嘴巴，伸出石质舌头。地板上躺着五具身穿覆尘猩红长袍的骸骨。南侧墙面上雕刻着一颗巨山羊头骨，横跨十尺。"
-									]
-								},
-								"墙壁上雕刻的巨山羊头骨是奥喀斯的象征。",
-								{
-									"type": "entries",
-									"id": "0f2",
-									"entries": [
-										{
-											"ENG_name": "Skeletal Remains",
-											"name": "遗骨残骸",
-											"type": "entries",
-											"page": 54,
-											"id": "0f3",
-											"entries": [
-												"这个房间内共有五堆遗骨残骸（见\"{@area 庙宇特征|0db|x}\"）。当首次有人打开此房间内通往宝库（{@area T14|123|x}区域）的密门时，其中一堆遗骸会活化，燃起邪恶的火焰，化为一只{@creature 燃火骷髅|XMM} ，而其余四堆遗骸则各活化为一只{@creature 骷髅|XMM}。这些骷髅对所有非亡灵生物皆为敌对。"
-											]
-										},
-										{
-											"ENG_name": "Secret Doors and Statues",
-											"name": "密门与雕像",
-											"type": "entries",
-											"page": 54,
-											"id": "0f4",
-											"entries": [
-												"这个房间内共有三扇密门（见\"{@area 庙宇特征|0db|x}\"），每扇都隐藏在一尊食尸鬼雕像的背后。雕像与密门之间的空间仅能容纳微型生物自如穿行；该区域对小型或中型生物而言视为{@variantrule 困难地形|XPHB}。",
-												"当一个非亡灵生物尝试穿过密门时，对应的雕像将以基座为轴旋转并用利爪袭击该生物。该生物必须进行一次{@dc 12}的敏捷豁免，失败时受到 7（{@dice 2d6}）挥砍伤害。以一项{@action 操作|XPHB}动作，一个角色可以将{@item 匕首|XPHB}、铁钉或类似物件插入雕像基座与地面之间的缝隙，从而阻止雕像旋转。"
-											]
-										}
-									]
-								}
-							]
-						},
-						{
-							"ENG_name": "T5: Sinister Stairs",
-							"name": "T5：险恶阶梯",
-							"type": "entries",
-							"page": 54,
-							"id": "0f5",
-							"entries": [
-								{
-									"type": "insetReadaloud",
-									"page": 54,
-									"id": "0f6",
-									"entries": [
-										"四根石柱支撑着这间空旷大厅的拱形穹顶。两条宽阔的隧道通向北方，而大厅的北侧、西侧与东侧墙上各有一扇关闭的铁质双开门。北侧的双开门上刻画着生有犄角的恶魔领主奥喀斯的可憎面容。他的邪恶目光凝视着房间南端一段黑色抛光大理石铺就的阶梯，阶梯向下延伸 10 尺，通往另一扇双开门。石质扶手分列阶梯两侧。"
-									]
-								},
-								{
-									"type": "entries",
-									"id": "0f7",
-									"entries": [
-										{
-											"ENG_name": "Hidden Lever",
-											"name": "隐藏拉杆",
-											"type": "entries",
-											"page": 54,
-											"id": "0f8",
-											"entries": [
-												"若一个角色执行{@action 搜索|XPHB}动作检查西南侧石柱，将自动发现一块松动的嵌板，其后藏有一根铁质拉杆（在{@area 地图：奥喀斯神殿|40e|x}上以 L 标记）。以一项{@action 操作|XPHB}动作，一个生物可以拉动该拉杆，以重置下方所述的陷阱。"
-											]
-										},
-										{
-											"ENG_name": "Trap",
-											"name": "陷阱",
-											"type": "entries",
-											"page": 55,
-											"id": "0f9",
-											"entries": [
-												"每当非亡灵生物踏上该阶梯，阶梯便会坍塌，形成一道滑坡。与此同时，阶梯底部隐藏陷坑的石盖将弹开。",
-												"首次有非亡灵生物踏上阶梯时，该生物必须进行一次 {@dc 16}的敏捷豁免，失败时会沿着滑坡坠入陷坑。陷坑深 20 尺，内壁布满生锈的尖刺。该生物会受到坠落造成的 7（{@dice 2d6}）钝击伤害，外加尖刺造成的 9（{@dice 2d8}）穿刺伤害。",
-												"拉动隐藏拉杆会关闭陷坑的盖子并复原阶梯。盖子只在陷阱被触发时才会打开，除此之外，在上面行走是安全的。以一项{@action 操作|XPHB}动作，一个角色可以尝试强行打开盖子（无论是从坑内还是坑外），成功进行一次{@dc 20} 的力量（{@skill 运动|XPHB}）检定即可。"
-											]
-										}
-									]
-								}
-							]
-						},
-						{
-							"ENG_name": "T6: Occult Library",
-							"name": "T6：秘教图书馆",
-							"type": "entries",
-							"page": 55,
-							"id": "0fa",
-							"entries": [
-								"角色们若在这个房间的任一入口处侧耳倾听，便会察觉到室内传来沉重的脚步声以及家具被砸碎的响动。",
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "adventure/DrDe/049-03-003.zombified-ogres.webp"
-									},
-									"width": 1700,
-									"height": 1307
-								},
-								{
-									"type": "insetReadaloud",
-									"page": 55,
-									"id": "0fb",
-									"entries": [
-										"一股腐臭味扑面而来\u2014\u2014其源头是两只丧尸化了的食人魔。它们看起来是在服从一名身穿红袍的矮人的指挥，正在砸毁房间里所有的家具。黑檀木制成并饰以颅骨的书桌与椅子碎裂地散落在四具身着覆尘猩红长袍、早已化为枯骨的人类遗骸之中。北侧、南侧与西侧的深凹壁龛内，各自排列着高大的石质书架。在你们对面的壁龛中，一位漂浮在空中的幽灵般的人类女性正苦苦哀求食人魔停止这场毁灭性的暴行。"
-									]
-								},
-								"根据奥喀斯雕像的指示，希娅命令这位邪教徒\u2014\u2014名叫埃莱斯·脆骨的矮人（中型，混乱邪恶{@creature 邪教狂信者|XMM} ）\u2014\u2014彻底摧毁这座图书馆内的一切。埃莱斯指挥着两头{@creature 食人魔僵尸|XMM|食人魔僵尸} 执行这项粗暴的工作。邪教徒与这些丧尸的态度为敌对，会攻击任何没有穿着希娅教团猩红长袍的人。",
-								"{@b 邪教徒}。埃莱斯·脆骨被希娅骗入了这个奥喀斯教团。希娅说服这位矮人相信世界即将终结，诸神已经陨落，死亡之恶魔军势即将取得最终的胜利，从而劝说他在这场宇宙冲突中加入\"胜利的一方\"。一旦埃莱斯注意到有角色使用了明显的神圣魔法\u2014\u2014例如治疗盟友或驱散亡灵\u2014\u2014这名矮人便会投降。在这种情况下，埃莱斯会愿意分享关于邪教的信息，以换取有关现存神祇和宇宙现状的信息。有关埃莱斯能分享的内容，见前文\"{@area 希娅教团|0d5|x}\"。",
-								{
-									"type": "entries",
-									"id": "0fc",
-									"entries": [
-										{
-											"ENG_name": "Alcoves",
-											"name": "壁龛",
-											"type": "entries",
-											"page": 56,
-											"id": "0fd",
-											"entries": [
-												"每处壁龛都藏有 {@dice 4d10 + 20} 本字迹模糊的书籍和卷轴，它们均已变得脆弱易燃。角色若执行{@action 研究|XPHB}动作并成功进行一次{@dc 15}的智力（{@skill 宗教|XPHB}）检定，便能辨认出这些材料描述了奥喀斯信徒们所实践的各种仪式。"
-											]
-										},
-										{
-											"ENG_name": "Ghostly Librarian",
-											"name": "幽魂图书管理员",
-											"type": "entries",
-											"page": 56,
-											"id": "0fe",
-											"entries": [
-												"壁龛中的幽灵身影是梅琳德拉·沃克斯的{@creature 幽魂|XMM}，她是以前奥喀斯教团的图书管理员。她是混乱邪恶阵营，最初对访客的态度为冷漠。她极度愤怒于丧尸破坏她收藏的书籍和卷轴，但她无法阻止它们，因为她曾发誓永不伤害教团的盟友。当梅琳德拉注意到角色们时，她会假定他们是不受此类誓言约束的入侵者，于是恳求他们消灭那些{@creature 食人魔僵尸|XMM|食人魔僵尸}。若角色愿意效劳，则梅琳德拉的态度将变为友好；若角色们拒绝帮忙，则她继续保持冷漠。",
-												"若角色在她态度为友好时与其交谈，她将透露，多年前冒险者们突袭神殿时，她因为拒绝放弃自己的图书馆，而最终被他们所杀。若角色询问宝藏或秘密知识，梅琳德拉会建议他们检查每尊雕像后方是否藏有密门，声称\"秘密宝库遍布各处\"。",
-												"梅琳德拉不知道如何在死后获得安宁。角色若执行{@action 研究|XPHB}动作并成功进行一次 {@dc 15}的智力（{@skill 宗教|XPHB}）检定的，便能判断出让她灵魂安息的方法：要么将图书馆内所有的书籍和卷轴悉数移走，要么将它们全部摧毁。梅琳德拉会对任何试图移走或摧毁她收藏品的人变得敌对，并与他们战斗。"
-											]
-										},
-										{
-											"ENG_name": "Secret Door",
-											"name": "暗门",
-											"type": "entries",
-											"page": 56,
-											"id": "0ff",
-											"entries": [
-												"北侧壁龛中的一座书架隐藏着一扇密门（见\"{@area 庙宇特征|0db|x}\"），门后便是餐厅（{@area T7|101|x}区域）。"
-											]
-										},
-										{
-											"ENG_name": "Skeletal Remains",
-											"name": "遗骨残骸",
-											"type": "entries",
-											"page": 56,
-											"id": "100",
-											"entries": [
-												"关于这些骸骨的更多信息，见\"神殿特征\"。"
-											]
-										}
-									]
-								}
-							]
-						},
-						{
-							"ENG_name": "T7: Dining Hall",
-							"name": "T7: 餐厅",
-							"type": "entries",
-							"page": 56,
-							"id": "101",
-							"entries": [
-								{
-									"type": "insetReadaloud",
-									"page": 56,
-									"id": "102",
-									"entries": [
-										"这间厅室内摆放着一张四足如爪的长方形餐桌，周围环绕着十二把高背椅。每把椅背上都挂着一副由山羊头骨制成的骇人面具。一名身穿猩红长袍，脸色蜡黄的年轻人类，正坐在餐桌一端，吃着一些看起来半生不熟、闻起来还倒胃口的的肉。他身旁的桌边斜靠着一把扫帚。"
-									]
-								},
-								"希娅和她的邪教徒们在外出时会佩戴这些山羊头骨面具。这些面具虽然令人胆寒，但一文不值。",
-								{
-									"type": "entries",
-									"id": "103",
-									"entries": [
-										{
-											"ENG_name": "Cultist",
-											"name": "邪教徒",
-											"type": "entries",
-											"page": 56,
-											"id": "104",
-											"entries": [
-												"这名坐在桌旁、面对南墙密门的年轻人是扬迪斯·莫格林（中型，混乱中立{@creature 邪教狂信者|XMM}），他是{@area 希娅教团|0d5|x}的一员，但正在对自己的参与感到动摇。他最初是被能转化为比希娅更强大的亡灵生物的许诺所吸引，并且喜欢假装自己已经成为亡灵。他化着苍白的妆，像丧尸一样脚步蹒跚，吃着半生不熟的腐肉，但没人会被这拙劣的伪装所欺骗。",
-												"无论角色是否穿着希娅教团的猩红长袍，扬迪斯对他们的态度都为冷漠。如果角色们与他战斗，扬迪斯将战斗至{@status 浴血|XPHB}，届时他便会投降。",
-												"来自奥喀斯雕像中奈扎鲁姆的低语令扬迪斯深感困惑。他无法理解，为何奥喀斯竟命令希娅毁掉神殿内所有关于奥喀斯的象征，而当扬迪斯独自面对雕像时，它会向他低语生命的美好、新鲜空气的愉悦、美味佳肴的享受以及英雄事迹的荣耀。他的疑虑使他很容易被引离邪教。角色若执行{@action 影响|XPHB}动作并成功进行一次{@dc 10}的魅力（{@skill 欺瞒|XPHB}或{@skill 威吓|XPHB}）检定，便能从他那里套取信息（有关扬迪斯能分享的教团信息，见前文\"{@area 希娅教团|0d5|x}\"）。"
-											]
-										},
-										{
-											"ENG_name": "Secret Door",
-											"name": "暗门",
-											"type": "entries",
-											"page": 56,
-											"id": "105",
-											"entries": [
-												"南墙上的密门（见\"{@area 庙宇特征|0db|x}\"）拉开后，可通往其后的图书馆（{@area T6|0fa|x} 区域）。"
-											]
-										},
-										{
-											"ENG_name": "Stolen Goods to Recover",
-											"name": "可回收的被盗物资",
-											"type": "entries",
-											"page": 56,
-											"id": "106",
-											"entries": [
-												"扬迪斯的扫帚为被盗取的物资（见\"被盗物资\"）"
-											]
-										}
-									]
-								}
-							]
-						},
-						{
-							"ENG_name": "T8: Living Quarters",
-							"name": "T8: 生活区",
-							"type": "entries",
-							"page": 56,
-							"id": "107",
-							"entries": [
-								"六间卧室通向餐厅（{@area T7|101|x} 区域）。每间都摆放着两张简朴的木制行军床，配有稻草填充的床垫以及羊毛毯。每张床旁都设有几个墙钩用于悬挂衣物。只有三间房间有近期被使用过的痕迹。"
-							]
-						},
-						{
-							"ENG_name": "T9: West Tunnel",
-							"name": "T9: 西侧隧道",
-							"type": "entries",
-							"page": 57,
-							"id": "108",
-							"entries": [
-								"这条 {@i L} 形走廊从 {@area T5|0f5|x} 区域通向餐厅（{@area T7|101|x} 区域）的一扇双开门。",
-								{
-									"type": "entries",
-									"id": "109",
-									"entries": [
-										{
-											"ENG_name": "Secret Door",
-											"name": "暗门",
-											"type": "entries",
-											"page": 57,
-											"id": "10a",
-											"entries": [
-												"北墙上的一扇密门虚掩着，无需属性检定即可发现。扬迪斯（见 {@area T7|101|x} 区域）最近发现了它，并用一根旧指骨将门卡住，使其无法完全合拢，以便他再次找到。"
-											]
-										}
-									]
-								}
-							]
-						},
-						{
-							"ENG_name": "T10: East Tunnel",
-							"name": "T10：东侧隧道",
-							"type": "entries",
-							"page": 57,
-							"id": "10b",
-							"entries": [
-								{
-									"type": "insetReadaloud",
-									"page": 57,
-									"id": "10c",
-									"entries": [
-										"这条隧道中散落着四具死去人类的蒙尘骸骨，身上披着破烂的猩红长袍。其中一具骨骸斜倚在靠近一扇双开门的角落里。它戴着一枚腐烂山羊头颅形状的护身符，手中紧握着一串钥匙。"
-									]
-								},
-								"这条 L 形走廊从 {@area T5|0f5|x} 区域通向祭仪密室（{@area T11|111|x} 区域）的一扇双开门。",
-								{
-									"type": "entries",
-									"id": "10d",
-									"entries": [
-										{
-											"ENG_name": "Secret Door",
-											"name": "暗门",
-											"type": "entries",
-											"page": 57,
-											"id": "10e",
-											"entries": [
-												"北墙上嵌着一扇密门（见\"{@area 庙宇特征|0db|x}\"），它通往主殿（{@area T13|11b|x} 区域）。"
-											]
-										},
-										{
-											"ENG_name": "Skeletal Remains",
-											"name": "遗骨残骸",
-											"type": "entries",
-											"page": 57,
-											"id": "10f",
-											"entries": [
-												"关于这些骸骨的更多信息，见\"神殿特征\"。"
-											]
-										},
-										{
-											"ENG_name": "Treasure",
-											"name": "宝藏",
-											"type": "entries",
-											"page": 57,
-											"id": "110",
-											"entries": [
-												"双开门旁那具无生命的骷髅，正是神殿大祭司仅存的遗骸。它手中紧握着一串系有三把铁钥匙的钥匙环，这些钥匙可打开 {@area T11|111|x} 区域的牢房门；它脖子上则戴着一条项链，上面挂着一枚腐烂山羊头颅形状的护身符（奥喀斯的象征）。这枚银质护身符价值 25GP，并设有一个暗格，里面藏着一张折叠起来的{@spell 活化死尸|XPHB}{@item 法术卷轴|XDMG}。角色若对护身符执行{@action 搜索|XPHB}动作并成功进行一次{@dc 15}的感知（{@skill 察觉|XPHB}）检定，便能发现这个暗格。"
-											]
-										}
-									]
-								}
-							]
-						},
-						{
-							"ENG_name": "T11. Ritual Chamber",
-							"name": "T11. 祭仪密室",
-							"type": "entries",
-							"page": 57,
-							"id": "111",
-							"entries": [
-								{
-									"type": "insetReadaloud",
-									"page": 57,
-									"id": "112",
-									"entries": [
-										"锈迹斑斑的镣铐垂挂在密室的墙上。房间中央放着两块石板。北边那块石板上横陈着一具人类骸骨，身披沾满灰尘的猩红长袍，戴着眼罩。骸骨的一只枯手紧握着一条鞭子。东侧墙边有三扇生锈的牢门，门后是长满霉菌的牢房。"
-									]
-								},
-								"过去，邪教徒们会在此进行骇人的仪式。人类囚犯会被关押在这些牢房中（见下文），直到被献祭。他们死后会被带回这间密室，由大祭司将其活化为丧尸。",
-								{
-									"type": "entries",
-									"id": "113",
-									"entries": [
-										{
-											"ENG_name": "Cells",
-											"name": "牢房",
-											"type": "entries",
-											"page": 57,
-											"id": "114",
-											"entries": [
-												"三间牢房的门全都上了锁；东侧隧道（{@area T10|10b|x} 区域）的一具骷髅持有钥匙。撬开其中一把锁的 DC 为 15。各牢房内容如下：",
-												{
-													"type": "list",
-													"items": [
-														"{@b A单元}中有两具人类的遗骨残骸。",
-														"{@b 牢房 B}表面空无一物，但其东墙的一块松动石头后面藏有一个暗格。角色若执行{@action 搜索|XPHB}动作并成功进行一次 {@dc 13} 的感知（{@skill 察觉|XPHB}）检定，便能发现这块松动的石头及其后藏着的宝物（见下文\"宝藏\"）。",
-														"{@b 牢房C}里是一位叛逆的提夫林邪教徒的骨骸，他曾试图推翻神殿大祭司，却以失败告终。惊扰这具骨骸会导致叛徒的灵魂化为{@creature 邪灵|XMM}显现，并与角色们战斗。"
-													],
-													"style": "list-hang-notitle"
-												}
-											]
-										},
-										{
-											"ENG_name": "Skeletal Remains",
-											"name": "遗骨残骸",
-											"type": "entries",
-											"page": 57,
-											"id": "115",
-											"entries": [
-												"牢房中的骷髅都穿着破烂的布条，既无装备也无宝藏。而北侧石板上的那具骷髅则属于大祭司的拷问官（见下文\"宝藏\"及\"{@area 庙宇特征|0db|x}\"部分）。"
-											]
-										},
-										{
-											"ENG_name": "Treasure",
-											"name": "宝藏",
-											"type": "entries",
-											"page": 57,
-											"id": "116",
-											"entries": [
-												"那名死去的拷问官手中握着一条{@item +1 鞭子|XDMG}。B牢房内松动石头后面藏着一根{@item 探秘魔杖|XDMG}。"
-											]
-										}
-									]
-								}
-							]
-						},
-						{
-							"ENG_name": "T12: Ghastly Work",
-							"name": "T12：妖诡工程",
-							"type": "entries",
-							"page": 57,
-							"id": "117",
-							"entries": [
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "adventure/DrDe/050-03-004.xia-npc-with-zombies.webp"
-									},
-									"title": "带僵尸的NPC",
-									"credit": "Jodie Muir",
-									"width": 1700,
-									"height": 1227
-								},
-								{
-									"type": "insetReadaloud",
-									"page": 57,
-									"id": "118",
-									"entries": [
-										"这间柱廊大厅中弥漫着死亡的腐臭。西侧墙面上倚靠着两架十尺高的梯子。每架梯子上都爬着一个身穿猩红长袍的腐烂身影，正笨拙地挥动画笔在墙上涂抹着什么。而每架梯子底部还各站着一具活化的尸体，稳稳地扶着梯子。很难分辨这些丧尸到底在画些什么。大厅中央站着一位脸色苍白、神情不悦的女子，正在监督这群丧尸的\"创作\"。她身着同样的猩红长袍，头戴一顶有角头饰。四个枯瘦如柴的怪物围绕在她的身边，利爪如钩，舌头细长，眼神中充满饥渴。大厅北端的双开门敞开着，露出门后一间广阔的大殿。在那座宏伟殿堂的尽头，阴影笼罩之处，一尊庞大的山羊状恶魔雕像巍然耸立。"
-									]
-								},
-								"这位女子名叫希娅，是一位{@creature 妖鬼坟语者|XMM} 。她的身边跟随着四只{@creature 食尸鬼|XMM|食尸鬼们}。希娅指派了四具身穿猩红长袍的{@creature 丧尸|XMM|丧尸们}，在墙面上绘制蓬松的白云与银色的巨龙，此举是遵循隔壁房间（{@area T13|11b|x} 区域）中奥喀斯雕像给予她的指示。每架{@item 梯子|XPHB}都由一具丧尸扶稳，另一具丧尸则摇摇晃晃地站在梯顶，手握漆刷与油漆罐。希娅正愤怒地斥责着丧尸们拙劣的画工。",
-								"一旦察觉到异样，希娅便会命令她的食尸鬼们迎战入侵者，而她自己则撤退到 T13 区域，向奥喀斯雕像寻求指引。雕像中会传出洪亮的声音回应道：\"这是你最后的考验，希娅。别让我失望！\"随后，希娅会重新加入食尸鬼中，死战到底。为奈扎鲁姆掷先攻。在他的回合中，他会从 T13 区域雕像后方的密门中现身，加入战局，他相信这些闯入的冒险者正是他苦候多时的英雄。",
-								"与此同时，丧尸们仍在奉命行事，继续画画和扶着梯子，直到有角色与它们交战为止。如果扶着梯子的丧尸或在梯子上的丧尸受到伤害，梯子上的丧尸就会摔落。那只丧尸会坠落 10 尺，它的油漆罐也会随之洒落。",
-								{
-									"type": "entries",
-									"id": "119",
-									"entries": [
-										{
-											"ENG_name": "Stolen Goods to Recover",
-											"name": "可回收的被盗物资",
-											"type": "entries",
-											"page": 58,
-											"id": "11a",
-											"entries": [
-												"这些{@item 梯子|XPHB|梯子}、油漆罐与漆刷全都是被盗取的物资（见\"被盗物资\"）。"
-											]
-										}
-									]
-								}
-							]
-						},
-						{
-							"ENG_name": "T13: Great Statue of Orcus",
-							"name": "T13: 奥喀斯巨像",
-							"type": "entries",
-							"page": 58,
-							"id": "11b",
-							"entries": [
-								{
-									"type": "insetReadaloud",
-									"page": 58,
-									"id": "11c",
-									"entries": [
-										"一尊巨大的奥喀斯雕像几乎顶到了这间高达三十尺的大厅的天花板。浓郁的焚香气息从雕像基座旁的一个大型石制火盆中升腾而起，完全盖住了那一丝挥之不去的死亡臭味。恶魔领主那山羊颅骨般的面容怒视着你们，几尊邪教徒雕像则从大厅阴影角落向外凝视。"
-									]
-								},
-								"主殿内燃烧的熏香几乎完全掩盖了弥漫在大厅中的腐臭。",
-								"一条名为奈扎鲁姆的{@creature 银龙雏龙|XMM}正潜伏在奥喀斯雕像内部，他会说通用语。这条银龙能透过雕像空洞的眼睛、鼻孔和嘴巴，向外窥视大厅。在不操控希娅为其办事时，奈扎鲁姆便独自下龙棋打发时间。他所拥有的这套龙棋是被盗物品（见下文\"被盗物资\"）。",
-								{
-									"type": "entries",
-									"id": "11d",
-									"entries": [
-										{
-											"ENG_name": "Roleplaying Nezzarum",
-											"name": "扮演奈扎鲁姆",
-											"type": "entries",
-											"page": 59,
-											"id": "11e",
-											"entries": [
-												"奈扎鲁姆一直在此等待，期待着能有冒险者前来击败希娅与她的教团，因为他很清楚自己没有足够的力量独自对抗他们。如果 {@area T12|117|x} 区域爆发战斗，且奈扎鲁姆察觉到了战况（无论是希娅前来恳求奥喀斯雕像的援助，还是他从雕像内的藏身处察觉到战斗的展开），他便会从雕像中现身，加入战斗。如果角色们击败了希娅，并且奈扎鲁姆在此次遭遇中幸存下来，则这条银龙就会对他们抱以友好态度。如果角色们在未与希娅交战前就接近奈扎鲁姆，这条银龙最初会持冷漠的态度。"
-											]
-										},
-										{
-											"ENG_name": "Indifferent Dragon",
-											"name": "冷漠之龙",
-											"type": "entries",
-											"page": 59,
-											"id": "11f",
-											"entries": [
-												"若奈扎鲁姆尚未亲眼见证角色们在战斗中展现实力，他会选择谨慎行事，决定对他们进行考验。他会从\"奈扎鲁姆的指令\"表中随机选出一项命令，并依照角色的回应来评判他们。如果他们满足了他的要求，他会显得很高兴；如果他们拒绝命令，则仍然对他们保持冷漠态度。",
-												"每当角色离开大厅后再次返回，奈扎鲁姆就会提出一项新命令，直到他提出三项为止。他不会重复相同的命令，因此若你掷出了重复结果，可重新掷骰，或从表中选一项不同的命令。若角色们完成了他提出的全部三项命令，奈扎鲁姆对他们的态度将转为友好。",
-												{
-													"type": "table",
-													"caption": "奈扎鲁姆的命令",
-													"page": 59,
-													"colLabels": [
-														"1d6",
-														"命令术"
-													],
-													"colStyles": [
-														"col-2 text-center",
-														"col-10"
-													],
-													"rows": [
-														[
-															"1",
-															"\"给我准备一顿包含熟肉、清蒸蔬菜和新鲜水果的宴席！\"（角色们可以在镇上购买食物并备餐，花费 3GP。）"
-														],
-														[
-															"2",
-															"\"给我带来一轮奶酪！\"（角色们可以在镇上购买奶酪，花费 5SP。）"
-														],
-														[
-															"3",
-															"\"给我带点配得上巨龙的宝藏！\"（奈扎鲁姆期待价值至少 100GP 的宝藏，或具有历史价值的东西。）"
-														],
-														[
-															"4",
-															"\"再给我拿两罐银色油漆！\"（角色们可以在镇上购买油漆，每罐 2SP。）"
-														],
-														[
-															"5",
-															"\"再给我拿两罐银漆来！\"（角色可以在镇上以每罐2银币的价格购买银漆。）"
-														],
-														[
-															"6",
-															"\"给我带来一个邪恶之物的头颅！\"（如果角色们询问建议，他会回答：\"丧尸是邪恶的，不是吗？给我带一颗丧尸的头！\"）"
-														]
-													]
-												},
-												"被\"奥喀斯\"命令的古怪之处所震惊的角色，可以执行{@action 搜索|XPHB}动作并进行一次 {@dc 15} 的感知（{@skill 洞悉|XPHB}）检定。如果检定成功，则该角色会意识到一场骗局正在上演。"
-											]
-										},
-										{
-											"ENG_name": "Friendly Dragon",
-											"name": "友好之龙",
-											"type": "entries",
-											"page": 59,
-											"id": "120",
-											"entries": [
-												"若奈扎鲁姆变得友好，他会讲述自己来到神殿以及随后邪教抵达的故事（见\"{@area 冒险背景|0cd|x}\"）。如果角色们尚未击败希娅，这将成为奈扎鲁姆最优先的目标；他会承诺将协助他们对抗这名妖鬼和所有参与的邪教徒。",
-												"奈扎鲁姆尚未彻底探索整座神殿，因此未能发现任何其他密门（除了雕像底部的那个）。只要角色们愿意与他平分宝物，他便不会干涉他们在神殿内的寻宝行动。"
-											]
-										},
-										{
-											"ENG_name": "Secret Doors",
-											"name": "暗门",
-											"type": "entries",
-											"page": 59,
-											"id": "121",
-											"entries": [
-												"这座大厅共藏有七道密门（见\"{@area 庙宇特征|0db|x}\"）",
-												{
-													"type": "list",
-													"style": "list-hang-notitle",
-													"items": [
-														{
-															"ENG_name": "Statue Access",
-															"name": "雕像通道",
-															"type": "item",
-															"entry": "奥喀斯雕像基座内藏有一道密门，拉开后可见一条蜿蜒向上的楼梯，通往雕像头部一个直径约 10 尺的房间。"
-														},
-														{
-															"ENG_name": "South Wall Exits",
-															"name": "南墙出口",
-															"type": "item",
-															"entry": "南墙上有两道密门通向走廊（{@area T9|108|x}和{@area T10|10b|x} 区域）。西侧的门（通往{@area T9|108|x} 区域）虚掩着，无需属性检定即可找到。"
-														},
-														{
-															"ENG_name": "To the Vaults",
-															"name": "通往宝库",
-															"type": "item",
-															"entry": "四扇隐藏在雕像后的密门分别通向不同的宝库（见{@area T14|123|x} 区域）。雕像与密门之间的空间仅能容纳微型生物自如穿行；对小型或中型生物而言，该区域视为{@variantrule 困难地形|XPHB}。"
-														}
-													]
-												}
-											]
-										},
-										{
-											"ENG_name": "Stolen Goods to Recover",
-											"name": "可回收的被盗物资",
-											"type": "entries",
-											"page": 59,
-											"id": "122",
-											"entries": [
-												"那副龙棋与焚烧用的熏香都是被盗取的物资（见\"被盗物资\"）。若奈扎鲁姆态度友好，他会允许角色们将这些邪教徒偷来的物品归还原主。"
-											]
-										}
-									]
-								}
-							]
-						},
-						{
-							"ENG_name": "T14: Secret Vaults",
-							"name": "T14：蜜藏金库",
-							"type": "entries",
-							"page": 59,
-							"id": "123",
-							"entries": [
-								"主殿（{@area T13|11b|x} 区域）连接着四间密藏宝库，雕像大厅（{@area T4|0f0|x}区域）还有另外两间。这些宝库大体一致，但每间都包含一尊不同的雕像、一份不同的宝藏，以及一个不同的宝藏守护者。",
-								{
-									"type": "insetReadaloud",
-									"page": 59,
-									"id": "124",
-									"entries": [
-										"一条隧道通向一个五边形房间，房间角落里立着一尊布满蛛网的雕像。"
-									]
-								},
-								{
-									"type": "entries",
-									"id": "125",
-									"entries": [
-										{
-											"ENG_name": "Vault Contents",
-											"name": "宝库内容",
-											"type": "entries",
-											"page": 59,
-											"id": "126",
-											"entries": [
-												"使用\"雕像\"表格来确定每尊雕像的形态，\"生物\"表格来确定每个宝库的守护者，以及\"宝藏\"表格来确定其中所藏的物品（见下文\"获取宝库宝藏\"）。"
-											]
-										},
-										{
-											"ENG_name": "Accessing the Vaults' Treasure",
-											"name": "获取宝库宝藏",
-											"type": "entries",
-											"page": 60,
-											"id": "127",
-											"entries": [
-												"每尊雕像下方设有一个直径 3 尺，深 3 尺圆柱形隔间。要取出其中的宝藏，角色必须推倒或摧毁雕像。每尊雕像都是一个 AC17，HP18 的中型物件，并且{@variantrule 免疫|XPHB}毒素和心灵伤害。一个角色可以执行{@action 操作|XPHB}动作尝试推倒雕像，成功进行一次的{@dc 17}的力量（{@skill 运动|XPHB}）检定即可做到。",
-												{
-													"type": "table",
-													"caption": "雕像",
-													"page": 60,
-													"colLabels": [
-														"1d6",
-														"雕像形态"
-													],
-													"colStyles": [
-														"col-2 text-center",
-														"col-10 text-center"
-													],
-													"rows": [
-														[
-															"1",
-															"身披斗篷的{@creature 吸血鬼|XMM}"
-														],
-														[
-															"2",
-															"{@creature 死亡骑士|XMM}"
-														],
-														[
-															"3",
-															"{@creature 巫妖|XMM}"
-														],
-														[
-															"4",
-															"{@creature 木乃伊领主|XMM}"
-														],
-														[
-															"5",
-															"骷髅山羊"
-														],
-														[
-															"6",
-															"{@creature 邪灵|XMM}"
-														]
-													]
-												},
-												{
-													"type": "table",
-													"caption": "生物",
-													"page": 60,
-													"colLabels": [
-														"1d6",
-														"守卫"
-													],
-													"colStyles": [
-														"col-2 text-center",
-														"col-10"
-													],
-													"rows": [
-														[
-															"1",
-															"一个敌对的{@creature 蠕行之爪集群|XMM}栖息在雕像的缝隙和角落里，当雕像被惊扰时便会现身攻击。"
-														],
-														[
-															"2",
-															"惊扰雕像会使其头部裂开，释放出一只敌对的{@creature 燃焰之颅|XMM} 。"
-														],
-														[
-															"3",
-															"雕像充当着一具石棺。惊扰雕像会使其破碎，释放出里面的敌对的{@creature 木乃伊|XMM} 。"
-														],
-														[
-															"4",
-															"惊扰雕像会使四只{@creature 恶灵|XMM|恶灵}从墙壁后的空腔中出现。它们会穿墙而出，与角色们交战。"
-														],
-														[
-															"5",
-															"惊扰雕像会使其吐出一只敌对的{@creature 黑布丁|XMM}。"
-														],
-														[
-															"6",
-															"没有守卫。"
-														]
-													]
-												},
-												{
-													"type": "table",
-													"caption": "宝藏",
-													"page": 60,
-													"colLabels": [
-														"1d6",
-														"隔间内容"
-													],
-													"colStyles": [
-														"col-2 text-center",
-														"col-10"
-													],
-													"rows": [
-														[
-															"1",
-															"一个篮子，里面装着一根看似为{@item 奥喀斯之杖|XDMG}，但实则毫无力量的复制品（价值 50 GP），当受到法术{@spell 侦测魔法|XPHB}影响时会散发出虚假的魔法灵光。"
-														],
-														[
-															"2",
-															"一颗孔雀石颅骨（价值 250GP），置于一堆{@dice 2d6 × 100}GP 之上。"
-														],
-														[
-															"3",
-															"一尊 3 尺高的奥喀斯雕像，由猩红色大理石制成。（价值 750 GP，重 75 磅）。"
-														],
-														[
-															"4",
-															"一个篮子，里面装着一件随机决定的普通魔法物品（见《{@book 城主指南|XDMG}》）。"
-														],
-														[
-															"5",
-															"一个棺木，里面装着一具呈胎儿姿势、佩戴金项链的人类木乃伊尸体（价值 750 GP）。"
-														],
-														[
-															"6",
-															"一个篮子，里面装着一件随机决定的非普通魔法物品（见《{@book 城主指南|XDMG}》）。"
-														]
-													]
-												}
-											]
-										}
-									]
-								}
-							]
-						}
-					]
-				},
-				{
-					"ENG_name": "Conclusion",
-					"name": "结局",
-					"type": "section",
-					"page": 60,
-					"id": "128",
-					"entries": [
-						"在肃清了神殿中的{@area 希娅教团|0d5|x}后，角色们便可返回灰水镇领取他们的报酬。即使他们未能清除所有威胁，欧瑞安也会相信角色们已完成任务，并据此支付报酬。旅馆老板欣然接收角色们从神殿寻回的所有被盗物品，并确保它们物归原主。",
-						"若角色们揭示邪教的古怪行径实为一条银龙所为，欧瑞安会忆起偶尔曾观察到一条雏龙在云间翱翔，但除此之外便一无所知了。",
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/051-03-005.ram-skull.webp"
-							},
-							"credit": "Jodie Muir",
-							"width": 850,
-							"height": 761
-						}
-					]
-				},
-				{
-					"ENG_name": "History of Silver Dragons",
-					"name": "银龙的历史",
-					"type": "section",
-					"page": 43,
-					"id": "129",
-					"entries": [
-						"{@font 奥恩·达拉斯特里克斯|languages/XPHB/Draconic/Iokharik-v2.woff2}",
-						{
-							"type": "insetReadaloud",
-							"id": "12a",
-							"entries": [
-								"尽管多年来龙的外形发生了诸多变化，银龙独特的冠饰在每一代形象中都清晰可见。"
-							]
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/052-03-007.silver-dragon-2009.webp"
-							},
-							"title": "艾伯伦战役指南（2009）",
-							"credit": "Chippy",
-							"width": 1849,
-							"height": 1700
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/053-03-008.silver-dragon-1993.webp"
-							},
-							"title": "怪物图鉴（1993）",
-							"credit": "Mark A. Nelson",
-							"width": 832,
-							"height": 1009
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/054-03-009.silver-dragon-1977.webp"
-							},
-							"title": "{@book 怪物图鉴|XMM} (1977)",
-							"credit": "David C. Sutherland",
-							"width": 684,
-							"height": 845
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/055-03-010.silver-dragon-draconomicon.webp"
-							},
-							"title": "龙之书（2003）",
-							"credit": "Richard Sardinha",
-							"width": 1320,
-							"height": 1868
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/056-03-011.silver-dragon-mtg.webp"
-							},
-							"title": "指挥官传奇：博德之门之战 (2022)",
-							"credit": "Andrey Kuzinskiy",
-							"width": 744,
-							"height": 1040
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/057-03-012.silver-dragon-anatomy.webp"
-							},
-							"title": "龙之书（2003）",
-							"credit": "Todd Lockwood",
-							"width": 850,
-							"height": 385
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/058-03-013.silver-dragon-2009.webp"
-							},
-							"title": "怪物手册2（2009）",
-							"credit": "Lars Grant-West",
-							"width": 1700,
-							"height": 1234
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/059-03-014.silver-dragon-2014.webp"
-							},
-							"title": "{@book 怪物图鉴|XMM} (2014)",
-							"credit": "Tom Babbey",
-							"width": 850,
-							"height": 1110
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/060-03-015.silver-dragon-2023.webp"
-							},
-							"title": "概念艺术（2023）",
-							"credit": "Alexander Ostrowski",
-							"width": 1700,
-							"height": 833
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/061-03-016.silver-dragon-three-scenes-color.webp"
-							},
-							"title": "概念艺术（2023）",
-							"credit": "John Grello",
-							"width": 850,
-							"height": 1136
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/062-03-017.silver-dragon-scenes-development.webp"
-							},
-							"title": "概念艺术（2023）",
-							"credit": "John Grello",
-							"width": 850,
-							"height": 751
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/063-03-018.silver-dragon-2025.webp"
-							},
-							"title": "{@book 怪物图鉴|XMM} (2025)",
-							"credit": "Anna Podedworna",
-							"width": 1700,
-							"height": 1100
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/064-03-018.silver-dragon-wips.webp"
-							},
-							"title": "概念艺术（2023）",
-							"credit": "John Grello",
-							"width": 1700,
-							"height": 387
-						}
-					]
-				}
-			]
-		},
-		{
-			"ENG_name": "Credits",
-			"name": "制作组",
-			"type": "section",
-			"page": 2,
-			"id": "40b",
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"columns": 2,
-					"items": [
-						{
-							"ENG_name": "Lead Designers:",
-							"name": "首席设计师：",
-							"type": "item",
-							"entry": "Amanda Hamon, James Wyatt"
-						},
-						{
-							"ENG_name": "Designers:",
-							"name": "设计师：",
-							"type": "item",
-							"entry": "Justice Ramin Arman, Makenzie De Armas, Anthony Joyce-Rivera, Renee Knipe, Ron Lundeen, Christopher Perkins, Patrick Renie, Erin Roberts, F. Wesley Schneider, Carl Sibley, Jason Tondro, Steve Townshend"
-						},
-						{
-							"ENG_name": "Rules Developers:",
-							"name": "规则开发者：",
-							"type": "item",
-							"entry": "Makenzie De Armas (lead), Jeremy Crawford, Ron Lundeen"
-						},
-						{
-							"ENG_name": "Editors:",
-							"name": "编辑：",
-							"type": "item",
-							"entry": "Judy Bauer (lead), Emma Candon, Sadie Lowry, Hannah Rose, Sue Weinlein, Hans Ziegler"
-						},
-						{
-							"ENG_name": "Art Directors:",
-							"name": "艺术指导：",
-							"type": "item",
-							"entry": "Matt Cole (lead), Fury Galluzzi, Josh Herman, Kate Irwin, Emi Tanji"
-						},
-						{
-							"ENG_name": "Graphic Designers:",
-							"name": "平面设计师：",
-							"type": "item",
-							"entry": "Matt Cole, Paolo Vacala"
-						},
-						{
-							"ENG_name": "Cover Illustrators:",
-							"name": "封面插画师：",
-							"type": "item",
-							"entry": "Justine Jones, Greg Staples"
-						},
-						{
-							"ENG_name": "Interior Illustrators:",
-							"name": "内页插画师：",
-							"type": "item",
-							"entry": "Tom Babbey, Daren Bader, Clyde Caldwell, Chippy, Simon Dominic, Jeff Easley, Luke Eidenschink, Larry Elmore, Jason A. Engle, Lars Grant-West, John Grello, Johan Grenier, Justine Jones, Andrew Kolb, Vance Kovacs, Andrey Kuzinskiy, Ed Kwong, Todd Lockwood, Antonio José Manzanedo, Dominik Mayer, Caio Monteiro, Martin Mottet, Jodie Muir, Mark A. Nelson, Alexander Ostrowski, Keith Parkinson, Anna Podedworna, Steve Prescott, Chris Rallis, Joshua Raphael, Richard Sardinha, Chris Seaman, Rudy Siswanto, Craig J Spearing, Ron Spencer, Leroy Steinmann, Zack Stella, Matt Stewart, Matt Stikker, David C. Sutherland, Autumn Rain Turkel, Paolo Vacala, Svetlin Velinov, Raoul Vitale, Jabari Weathers, Campbell White"
-						},
-						{
-							"ENG_name": "Cartographers:",
-							"name": "制图师：",
-							"type": "item",
-							"entry": "Francesca Baerald, Jared Blando, CoupleOfKooks, Andrew Kolb, Dyson Logos, Damien Mammoliti, Mike Schley, Paolo Vacala"
-						},
-						{
-							"ENG_name": "Consultants:",
-							"name": "顾问：",
-							"type": "item",
-							"entry": "Shawn Banerjee, Eytan Bernstein, Daniel Delgado, Sameer Joseph"
-						},
-						{
-							"ENG_name": "Producers:",
-							"name": "制作人：",
-							"type": "item",
-							"entry": "Rob Hawkey (lead), Bill Benham, Siera Bruggeman, Vanessa Hoskins"
-						}
-					]
-				},
-				"{@i 本书献给Christopher Perkins，感谢他数十年来为《龙与地下城》作出的贡献。}",
-				{
-					"type": "gallery",
-					"images": [
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/199-11-001.title-splash.webp"
-							},
-							"credit": "Alexander Ostrowski",
-							"width": 850,
-							"height": 963
-						}
-					]
-				},
-				{
-					"type": "gallery",
-					"images": [
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/200-11-002.traditional-cover.webp"
-							},
-							"title": "封面故事：在Greg Staples创作的这张极具张力的海报中，三位勇敢的冒险者直面由五种色彩龙所带来的未知险境。",
-							"width": 850,
-							"height": 951
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/201-11-003.alt-cover.webp"
-							},
-							"title": "替换封面：Justine Jones以迷幻笔触，绘就一幅群龙入梦的奇幻图景。",
-							"width": 850,
-							"height": 951
 						}
 					]
 				}

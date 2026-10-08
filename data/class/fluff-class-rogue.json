@@ -14,6 +14,8 @@
 					"ENG_name": "Rogue",
 					"name": "游荡者",
 					"type": "section",
+					"source": "PHB",
+					"page": 94,
 					"entries": [
 						"示意同伴们等待，一个半身人悄悄穿过地牢大厅。她将耳朵贴在门上，然后拿出一套工具，在眨眼间撬开了锁。然后她消失在阴影中，而她的战士朋友走上前去踢开门。",
 						"一个人类潜伏在小巷的阴影中，而他的同伙正在为伏击做准备。当他们的目标\u2014\u2014一个臭名昭著的奴隶贩子\u2014\u2014经过小巷时，同伙大声呼喊，奴隶贩子前来调查，刺客的刀刃在他发出声音之前就割断了他的喉咙。",
@@ -54,12 +56,12 @@
 								}
 							]
 						}
-					],
-					"page": 94,
-					"source": "PHB"
+					]
 				},
 				{
 					"type": "section",
+					"source": "XGE",
+					"page": 44,
 					"entries": [
 						{
 							"type": "quote",
@@ -312,9 +314,7 @@
 								}
 							]
 						}
-					],
-					"page": 44,
-					"source": "XGE"
+					]
 				}
 			],
 			"images": [
@@ -350,14 +350,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "一位在隐匿与诡计方面灵巧的专家",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Rogue.webp"
 					},
-					"credit": "Aurore Folny",
 					"width": 1700,
-					"height": 2255
+					"height": 2255,
+					"title": "一位在隐匿与诡计方面灵巧的专家",
+					"credit": "Aurore Folny"
 				},
 				{
 					"type": "image",
@@ -365,9 +365,9 @@
 						"type": "internal",
 						"path": "classes/XPHB/099-04-014.cunning-rogue.webp"
 					},
-					"credit": "Bryan Sola",
 					"width": 1843,
-					"height": 1440
+					"height": 1440,
+					"credit": "Bryan Sola"
 				},
 				{
 					"type": "image",
@@ -375,9 +375,9 @@
 						"type": "internal",
 						"path": "classes/XPHB/101-04-016.rogue-v-dragon.webp"
 					},
-					"credit": "Billy Christian",
 					"width": 1843,
-					"height": 1440
+					"height": 1440,
+					"credit": "Billy Christian"
 				},
 				{
 					"type": "image",
@@ -385,9 +385,9 @@
 						"type": "internal",
 						"path": "classes/XPHB/104-04-019.sneak-attack.webp"
 					},
-					"credit": "Evyn Fong",
 					"width": 1959,
-					"height": 1440
+					"height": 1440,
+					"credit": "Evyn Fong"
 				}
 			]
 		}
@@ -542,14 +542,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "诡术师子职",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Arcane Trickster Rogue.webp"
 					},
-					"credit": "Nathaniel Himawan",
 					"width": 850,
-					"height": 2022
+					"height": 2022,
+					"title": "诡术师子职",
+					"credit": "Nathaniel Himawan"
 				}
 			]
 		},
@@ -563,14 +563,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "刺客子职",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Assassin Rogue.webp"
 					},
-					"credit": "Ignatius Budi",
 					"width": 850,
-					"height": 2098
+					"height": 2098,
+					"title": "刺客子职",
+					"credit": "Ignatius Budi"
 				}
 			]
 		},
@@ -584,14 +584,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "魂刃子职",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Soulknife Rogue.webp"
 					},
-					"credit": "Yuhong Ding",
 					"width": 850,
-					"height": 1939
+					"height": 1939,
+					"title": "魂刃子职",
+					"credit": "Yuhong Ding"
 				}
 			]
 		},
@@ -605,14 +605,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "盗贼子职",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Thief Rogue.webp"
 					},
-					"credit": "Jodie Muir",
 					"width": 850,
-					"height": 2360
+					"height": 2360,
+					"title": "盗贼子职",
+					"credit": "Jodie Muir"
 				}
 			]
 		},
@@ -630,9 +630,9 @@
 						"type": "internal",
 						"path": "classes/FRHoF/Scion of the Three Rogue.webp"
 					},
-					"credit": "Tneh Keong",
 					"width": 850,
-					"height": 2009
+					"height": 2009,
+					"credit": "Tneh Keong"
 				}
 			]
 		},
@@ -650,10 +650,10 @@
 						"type": "internal",
 						"path": "classes/RHW/Phantom Rogue.webp"
 					},
-					"title": "鬼魅游荡者",
-					"credit": "Ignatius Budi",
 					"width": 850,
-					"height": 1668
+					"height": 1668,
+					"title": "鬼魅游荡者",
+					"credit": "Ignatius Budi"
 				}
 			]
 		}

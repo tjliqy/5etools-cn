@@ -32,7 +32,16 @@ def stable_token(value) -> str:
 
 # optionalfeature featureType values are routing keys into _meta.optionalFeatureTypes
 # ("name" or cross-source "name:SOURCE") and stay byte-identical in translated files.
-MACHINE_LEAF = re.compile(r"/(alId|colStyles(?:\[\d+\])?|summonedByClass|style|type/tags(?:\[\d+\])?|spellcasting(?:\[\d+\])?/ability|featureType(?:\[\d+\])?|page|(?:skill|save)/[a-z]+)$")
+# Foundry VTT config subtrees are machine values substituted verbatim by Foundry/
+# (also foundryClassFeature activities roll.formula dice strings like "d@flags.ll.exploit.faces")
+# plutonium import: midiProperties enums ("default", "never"), midi-qol/dae/
+# ActiveAuras/plutonium/dnd5e/core flags ("multi", "system", "turnStartSource",
+# "1Attack", dedupeId, hash, sourceId, advancementOrigin) and heal-activity
+# formulas ("@scale.dancer.special-dance-roll"). Translating any of them would
+# break Foundry import semantics. foundryEffects change leaves (key/value like
+# "system.attributes.senses.truesight"/"@attributes.senses.blindsight") are
+# Foundry data-path/formula tokens with the same verbatim-substitution semantics.
+MACHINE_LEAF = re.compile(r"/(alId|colStyles(?:\[\d+\])?|summonedByClass|style|type/tags(?:\[\d+\])?|spellcasting(?:\[\d+\])?/ability|featureType(?:\[\d+\])?|page|(?:skill|save)/[a-z]+|midiProperties/[A-Za-z0-9_]+|healing/bonus|flags(?:/[A-Za-z0-9_.%-]+|\[\d+\])+|foundryEffects(?:\[[^\]]*\])?/changes(?:\[\d+\])?/(?:key|mode|value|priority)|activities(?:\[[^\]]*\])?/roll\.formula)$")
 
 # Renderer variable placeholders like "<$cha_mod$>" (item charge counts) are
 # substituted verbatim by the site and must stay byte-identical.
@@ -43,6 +52,15 @@ VARIABLE_TOKEN = re.compile(r"^<\$[^<$]+\$>$")
 # site and must stay byte-identical; single tokens are covered by VARIABLE_TOKEN.
 VARIABLE_FORMULA = re.compile(
     r"^<\$[^<$]+\$>(?:\s*[+\-*/×÷]\s*(?:<\$[^<$]+\$>|\d+))*$"
+)
+
+# Renderer formulas additionally wrapped in an evaluated math function, e.g.
+# classFeature resources count "ceil(<$level$> / 2)" or main-repo
+# "floor((<$level$> + 1) / 8) + 4", are evaluated verbatim by the site and must
+# stay byte-identical; the zh data keeps such function formulas untranslated.
+VARIABLE_FORMULA_FUNCTION = re.compile(
+    r"^(?:ceil|floor|max|min)\(\s*<\$[^<$]+\$>\s*(?:[+\-*/×÷]\s*(?:<\$[^<$]+\$>|\d+)\s*)+\)"
+    r"(?:\s*[+\-*/×÷]\s*(?:<\$[^<$]+\$>|\d+))*$"
 )
 
 # Foundry scene/map config values like "#ffffff" (foundrySceneRoot lights color) are
@@ -73,7 +91,10 @@ ROUTE_TAG_FIELDS = {"area"}
 # Machine tokens carry no whitespace: source codes (HFN2025, MD-BNR), URLs
 # (quickreference.html#bookref-quick,3,surprise,0), variable scale labels (Vdam x 2),
 # numeric ranges (12/14/15), style parameters (dnd-font;large). Prose always contains spaces.
-MACHINE_TOKEN = re.compile(r"^[A-Za-z0-9][A-Za-z0-9_./#,%?=&;-]*(?: x \d+)?$")
+# Source codes may carry a colon: declared abbreviations (KT:SB) and pipe-suffix
+# routing forms ("kibblestasty:cc"/"kibblestasty:bms" in classSpells) stay
+# byte-identical machine anchors even when the dependency is undeclared in _meta.
+MACHINE_TOKEN = re.compile(r"^[A-Za-z0-9][A-Za-z0-9_./#,%?=&;:-]*(?: x \d+)?$")
 # Dice-math expressions whose only word token is the proficiency bonus alias,
 # e.g. "+ PB" or "30 + 10 × PB". Pure machine math, never translatable prose.
 PB_FORMULA = re.compile(r"[+\-−\d\s,dD×xX*/().]*PB[+\-−\d\s,dD×xX*/().]*")
@@ -267,7 +288,7 @@ def main() -> int:
                 continue
             if VARIABLE_TOKEN.match(job.en_str):
                 continue
-            if VARIABLE_FORMULA.match(job.en_str):
+            if VARIABLE_FORMULA.match(job.en_str) or VARIABLE_FORMULA_FUNCTION.match(job.en_str):
                 continue
             if HEX_COLOR_TOKEN.match(job.en_str):
                 continue
@@ -309,14 +330,32 @@ def main() -> int:
                         stripped = re.sub(re.escape(sc), "", stripped, flags=re.IGNORECASE)
                 if job.en_str.lower() not in stripped.lower():
                     continue
+            # Routing pipe fields (index >= 1) are machine anchors that stay
+            # byte-identical to filenames/source codes; English they contain
+            # must not count as untranslated display text when a tag's
+            # display (field 0) has already been localized. Bare pipe-suffixed
+            # routing entries (classSpells "感知鲜血|kibblestasty:bms") carry the
+            # same anchors without braces: for a pipe-field sub-job, project the
+            # containing string down to its display segment (before the first
+            # pipe) so undeclared dependency codes are not flagged as prose.
+            uid_field = TAG_FIELD_UID.search(job.uid or "")
+            if (
+                uid_field
+                and int(uid_field.group("field")) >= 1
+                and isinstance(target_value, str)
+                and "|" in target_value
+            ):
+                projected_value = target_value.split("|", 1)[0]
+            elif isinstance(target_value, str):
+                projected_value = TAG_DISPLAY_ONLY.sub(
+                    lambda m: m.group(1), target_value
+                )
+            else:
+                projected_value = target_value
             untranslated = job.en_str == target_value or (
                 job.need_translate
                 and isinstance(target_value, str)
-                # Routing pipe fields (index >= 1) are machine anchors that stay
-                # byte-identical to filenames/source codes; English they contain
-                # must not count as untranslated display text when a tag's
-                # display (field 0) has already been localized.
-                and job.en_str in TAG_DISPLAY_ONLY.sub(lambda m: m.group(1), target_value)
+                and job.en_str in projected_value
             )
             if untranslated and job.need_translate and not MACHINE_LEAF.search(job.key_path):
                 residuals.append({**item, "target_paths": [target_path]})

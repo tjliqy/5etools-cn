@@ -1,2577 +1,1679 @@
 {
-	"data": [
+	"adventureData": [
 		{
-			"ENG_name": "Introduction",
-			"name": "简介",
-			"type": "section",
-			"page": 4,
-			"id": "000",
-			"entries": [
+			"id": "DrDe-FWtVC",
+			"source": "DrDe-FWtVC",
+			"data": [
 				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "adventure/DrDe/000-dragon-delves-cover.webp"
-					},
-					"width": 1701,
-					"height": 2242
-				},
-				{
-					"ENG_name": "Dragons in Dungeons",
-					"name": "地下城中的龙",
+					"ENG_name": "Introduction",
+					"name": "简介",
 					"type": "section",
+					"id": "000",
 					"page": 4,
-					"id": "001",
 					"entries": [
-						"没有什么比集结一群英雄在神秘地下城中对抗强大巨龙更能体现《龙与地下城》的精髓了。无论是50多年前首批踏入幽暗地城的冒险者，还是如今正准备开始第一次冒险的新手玩家，都将被这些经典元素跨越时空的联系在一起。",
-						"{@i 巨龙迷城}是对这一共同传统的颂扬。本书中的十个冒险故事均以盘踞巢穴的龙为核心，专为1至12级角色设计，提供多样挑战\u2014\u2014从击败邪恶之龙到与善良之龙合作，再到应对更复杂的道德困境。作为巨龙巢穴的地城类型丰富多样，既有洞穴群落，也有城市废墟及其他场景。",
-						"地城藏龙处，冒险永不息！"
-					]
-				},
-				{
-					"ENG_name": "Using This Book",
-					"name": "使用本书",
-					"type": "section",
-					"page": 4,
-					"id": "002",
-					"entries": [
-						"类似 {@i 巨龙迷城} 这样的冒险集，用途十分广泛，能满足你带团的各种需求：可作为单次冒险，也可作为长战役中的\"补充内容\"，或是形成系列战役，让角色从1级成长至12级的巅峰结局。",
-						"这些冒险提供了最少备团准备工作的说明（请参见本介绍后文的{@area 运行冒险|009|x}）。",
 						{
-							"ENG_name": "One-Shot Adventure",
-							"name": "单次冒险",
-							"type": "entries",
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "adventure/DrDe/000-dragon-delves-cover.webp"
+							},
+							"width": 1701,
+							"height": 2242
+						},
+						{
+							"ENG_name": "Dragons in Dungeons",
+							"name": "地下城中的龙",
+							"type": "section",
+							"id": "001",
 							"page": 4,
-							"id": "003",
 							"entries": [
-								"也许你是通常会以玩家的身份参与一场正在运行的战役，但你想尝试成为一个地下城主。也许你试图组建一个新的队伍，需要看看玩家们在你开始主持一个完整战役前是如何相处的。也许通常在某个时候带你们游玩的那个主持人生病了或者有了别的安排，但其他玩家都做好了跑团的准备。或者你的队伍可能需要在当前的战役中休息一下或者找个消遣。在提到的这些任何一种情况下，你都可以从本书中选择一个冒险并且运作它。"
+								"没有什么比集结一群英雄在神秘地下城中对抗强大巨龙更能体现《龙与地下城》的精髓了。无论是50多年前首批踏入幽暗地城的冒险者，还是如今正准备开始第一次冒险的新手玩家，都将被这些经典元素跨越时空的联系在一起。",
+								"{@i 巨龙迷城}是对这一共同传统的颂扬。本书中的十个冒险故事均以盘踞巢穴的龙为核心，专为1至12级角色设计，提供多样挑战\u2014\u2014从击败邪恶之龙到与善良之龙合作，再到应对更复杂的道德困境。作为巨龙巢穴的地城类型丰富多样，既有洞穴群落，也有城市废墟及其他场景。",
+								"地城藏龙处，冒险永不息！"
 							]
 						},
 						{
-							"ENG_name": "In an Ongoing Campaign",
-							"name": "在长期战役中",
-							"type": "entries",
+							"ENG_name": "Using This Book",
+							"name": "使用本书",
+							"type": "section",
+							"id": "002",
 							"page": 4,
-							"id": "004",
 							"entries": [
-								"也许你的玩家角色知道他们需要做什么来挫败邪恶 BOSS 的计划，但他们还不够强大，无法实现他们的目标。也许他们刚刚在战役中完成了一个重要的剧情节点，你想让在沉浸于下一幕无法预测的情节之前，让他们舒缓一下节奏。或者他们正在环游世界的旅程中，而你正在寻找一些东西让路途变得有趣\u2014\u2014用一场道中遭遇的简短冒险。或者你还没有为下一场冒险做好准备，所以你需要一条支线！在提到的这些任何一种情况下，你都可以从本书中选择一个冒险作为\"填充章节\"或者分支任务。",
+								"类似 {@i 巨龙迷城} 这样的冒险集，用途十分广泛，能满足你带团的各种需求：可作为单次冒险，也可作为长战役中的\"补充内容\"，或是形成系列战役，让角色从1级成长至12级的巅峰结局。",
+								"这些冒险提供了最少备团准备工作的说明（请参见本介绍后文的{@area 运行冒险|009|x}）。",
 								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "adventure/DrDe/001-00-001.intro-splash.webp"
-									},
-									"width": 850,
-									"height": 2286
+									"ENG_name": "One-Shot Adventure",
+									"name": "单次冒险",
+									"type": "entries",
+									"id": "003",
+									"page": 4,
+									"entries": [
+										"也许你是通常会以玩家的身份参与一场正在运行的战役，但你想尝试成为一个地下城主。也许你试图组建一个新的队伍，需要看看玩家们在你开始主持一个完整战役前是如何相处的。也许通常在某个时候带你们游玩的那个主持人生病了或者有了别的安排，但其他玩家都做好了跑团的准备。或者你的队伍可能需要在当前的战役中休息一下或者找个消遣。在提到的这些任何一种情况下，你都可以从本书中选择一个冒险并且运作它。"
+									]
 								},
-								"当角色的等级合适你想运作的冒险时，只需要描述冒险者们是如何在当前的探险地点结束他们的剧情。而本书的每个冒险开场都带有一个简短的场景描述，例如\"一个临近森林的村庄。\"除了这些基本细节以外，你还可以随意更改这场冒险发生的地理位置以适配你的战役。",
-								"但如果你有时间准备，可以将正在进行的冒险融入你战役的主题和威胁中。你可以修改冒险中人物和地点的名称，使其更契合你的世界；将冒险中的反派与你战役中重要的组织和事件联系起来；并在龙的宝藏中埋下与你战役主题相关的线索。"
+								{
+									"ENG_name": "In an Ongoing Campaign",
+									"name": "在长期战役中",
+									"type": "entries",
+									"id": "004",
+									"page": 4,
+									"entries": [
+										"也许你的玩家角色知道他们需要做什么来挫败邪恶 BOSS 的计划，但他们还不够强大，无法实现他们的目标。也许他们刚刚在战役中完成了一个重要的剧情节点，你想让在沉浸于下一幕无法预测的情节之前，让他们舒缓一下节奏。或者他们正在环游世界的旅程中，而你正在寻找一些东西让路途变得有趣\u2014\u2014用一场道中遭遇的简短冒险。或者你还没有为下一场冒险做好准备，所以你需要一条支线！在提到的这些任何一种情况下，你都可以从本书中选择一个冒险作为\"填充章节\"或者分支任务。",
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "adventure/DrDe/001-00-001.intro-splash.webp"
+											},
+											"width": 850,
+											"height": 2286
+										},
+										"当角色的等级合适你想运作的冒险时，只需要描述冒险者们是如何在当前的探险地点结束他们的剧情。而本书的每个冒险开场都带有一个简短的场景描述，例如\"一个临近森林的村庄。\"除了这些基本细节以外，你还可以随意更改这场冒险发生的地理位置以适配你的战役。",
+										"但如果你有时间准备，可以将正在进行的冒险融入你战役的主题和威胁中。你可以修改冒险中人物和地点的名称，使其更契合你的世界；将冒险中的反派与你战役中重要的组织和事件联系起来；并在龙的宝藏中埋下与你战役主题相关的线索。"
+									]
+								}
 							]
-						}
-					]
-				},
-				{
-					"ENG_name": "Creating a Campaign",
-					"name": "创作战役",
-					"type": "section",
-					"page": 4,
-					"id": "005",
-					"entries": [
-						"这些冒险可以串联成一个完整的以龙为主题的战役。只需引导玩家按书中顺序进行冒险，并在每段冒险结束时基于故事情节给予等级提升，确保他们的角色能应对接下来的挑战。(在最终冒险前无需等级提升。)你也可以使用下列叙事框架将这些冒险彼此联系起来。",
+						},
 						{
-							"ENG_name": "Option 1: Mysterious Patron",
-							"name": "选项1：神秘庇护者",
-							"type": "entries",
+							"ENG_name": "Creating a Campaign",
+							"name": "创作战役",
+							"type": "section",
+							"id": "005",
 							"page": 4,
-							"id": "006",
 							"entries": [
-								"让一位真实身份略显神秘的和善庇护者在新晋冒险者生涯早期就与之结交，并依次派他们去执行每次冒险任务。这位庇护者可能是一位富有魅力的年轻修士、一位和蔼的导师、一个顽皮的小家伙，或是一位糊涂的老者，或许身边还伴随着七只金丝雀或眩目的黄色蝴蝶\u2014\u2014它们实则是上古金龙所化，龙神巴哈姆特的同伴，而巴哈姆特正是庇护者的真实身份。",
-								"或许是预见到他们注定成为强大的英雄，巴哈姆特将这些冒险者置于他象征性的羽翼之下，派遣他们去应对世界各地与龙相关的各类事务，无论大小。当某次冒险最初看似与龙无关（例如\"{@adventure 奥喀斯之命|DrDe-TWoO|1}\"第3章）结果却与龙息息相关时，这位守护者可能会佯装惊讶，但这当然正是巴哈姆特派人物前去调查的原因。",
-								"你可直接按文本使用每个冒险，由角色的赞助者将他们引导至冒险引子的大致方向，且不剧透后续冒险中的任何惊喜。亦可选择让赞助者在早期就向角色透露秘密，告知他们龙将会是他们冒险的特别焦点，并沿途调整部分冒险引子。"
-							]
-						},
-						{
-							"ENG_name": "Option 2: Brazen Egg",
-							"name": "选项2：赤铜之卵",
-							"type": "entries",
-							"page": 5,
-							"id": "007",
-							"entries": [
-								"从第10章的引言遭遇战\"{@adventure 砂岩城之龙|DrDe-DotSC|1}\"开始战役，以艾德米尔将黄铜之卵托付给角色们作为结束。不过艾德米尔的指示有所不同：她解释说这颗卵必须被\"浸泡\"在十条龙的财宝中（每种色彩龙和金属龙各一条）才能激活其力量。她还暗示这颗卵会引导角色们找到合适的龙巢。事实上，任何在卵15英尺范围内入睡的角色都会做生动的梦，引领他们前往下一个冒险的起点。",
-								"要从龙之宝藏中汲取力量，龙蛋必须在宝藏中待上8小时，被硬币覆盖并被其他物品环绕。然而，一旦被赋能的龙蛋被带入安斯拉德斯的藏宝室（{@adventure 区域H16|DrDe-DotSC|1|H16: 宝藏}，参见第10章），它将达到其全部潜力并开始裂开，如该冒险所述。"
-							]
-						},
-						{
-							"ENG_name": "Option 3: Hoard Magic Items",
-							"name": "选项3：囤积魔法物品",
-							"type": "entries",
-							"page": 5,
-							"id": "008",
-							"entries": [
-								"若你拥有{@book 费资本的巨龙宝库|FTD|4}，书中描述的魔法物品收藏可作为驱使角色寻找更强大、更多样龙类的动力。在前三个冒险中获得下列额外物品奖励：在「{@adventure 日落时分的死神|DrDe-DaS|1}」中获得{@item 覆鳞饰物|FTD}，在「{@adventure 面包师的捉襟见肘|DrDe-BD|1}」中获得{@item 龙器|FTD}，在「{@adventure 奥喀斯之命|DrDe-TWoO|1}」中获得{@item 龙怒武器|FTD}与{@item 龙触法器|FTD}。所有物品在初次获取时为休眠状态，但在后续冒险中可通过浸入龙类宝藏唤醒。"
-							]
-						}
-					]
-				},
-				{
-					"ENG_name": "Running the Adventures",
-					"name": "运行冒险",
-					"type": "section",
-					"page": 6,
-					"id": "009",
-					"entries": [
-						"要运行这些冒险模组，你需要第五版的核心规则书：{@book 玩家手册|XPHB}、{@book 城主指南|XDMG}和{@book 怪物图鉴|XMM}。冒险中提到的法术和装备描述参见{@book 玩家手册|XPHB}，魔法物品详情参阅{@book 城主指南|XDMG}，怪物数据则出现在{@book 怪物图鉴|XMM}。",
-						"本书目录总结了该合集所收录的冒险。每个冒险针对四至六名特定等级的角色设计，但如{@book 城主指南|XDMG}所述，你可以通过调整遭遇中敌人的数量或为小型队伍补充额外资源来适配更大或更小的团队。这些冒险均可发生于你选择的任何世界，只要该地点拥有各冒险开头列出的基本要素即可。",
-						{
-							"ENG_name": "Preparation",
-							"name": "预备",
-							"type": "entries",
-							"page": 6,
-							"id": "00a",
-							"entries": [
-								"本书中的每个冒险都以一个帮助您准备和进行冒险的页面开始。它包括以下要素：",
+								"这些冒险可以串联成一个完整的以龙为主题的战役。只需引导玩家按书中顺序进行冒险，并在每段冒险结束时基于故事情节给予等级提升，确保他们的角色能应对接下来的挑战。(在最终冒险前无需等级提升。)你也可以使用下列叙事框架将这些冒险彼此联系起来。",
 								{
-									"type": "list",
-									"style": "list-hang-notitle",
-									"items": [
-										{
-											"ENG_name": "Key Plot Points",
-											"name": "关键剧情节点",
-											"type": "item",
-											"entry": "冒险故事中关键要素的概要"
-										},
-										{
-											"ENG_name": "Preparation",
-											"name": "预备",
-											"type": "item",
-											"entry": "为开展冒险做准备所需的步骤，包括你可能需要的所有来自{@book 怪物图鉴|XMM}的怪物数据块列表"
-										},
-										{
-											"ENG_name": "Key NPCs",
-											"name": "关键NPCs",
-											"type": "item",
-											"entry": "一张总结了冒险中关键非玩家角色的表格\u2014\u2014包括他们的名字、角色、状态块和位置\u2014\u2014帮助你在游戏过程中追踪他们"
-										}
+									"ENG_name": "Option 1: Mysterious Patron",
+									"name": "选项1：神秘庇护者",
+									"type": "entries",
+									"id": "006",
+									"page": 4,
+									"entries": [
+										"让一位真实身份略显神秘的和善庇护者在新晋冒险者生涯早期就与之结交，并依次派他们去执行每次冒险任务。这位庇护者可能是一位富有魅力的年轻修士、一位和蔼的导师、一个顽皮的小家伙，或是一位糊涂的老者，或许身边还伴随着七只金丝雀或眩目的黄色蝴蝶\u2014\u2014它们实则是上古金龙所化，龙神巴哈姆特的同伴，而巴哈姆特正是庇护者的真实身份。",
+										"或许是预见到他们注定成为强大的英雄，巴哈姆特将这些冒险者置于他象征性的羽翼之下，派遣他们去应对世界各地与龙相关的各类事务，无论大小。当某次冒险最初看似与龙无关（例如\"{@adventure 奥喀斯之命|DrDe-TWoO|1}\"第3章）结果却与龙息息相关时，这位守护者可能会佯装惊讶，但这当然正是巴哈姆特派人物前去调查的原因。",
+										"你可直接按文本使用每个冒险，由角色的赞助者将他们引导至冒险引子的大致方向，且不剧透后续冒险中的任何惊喜。亦可选择让赞助者在早期就向角色透露秘密，告知他们龙将会是他们冒险的特别焦点，并沿途调整部分冒险引子。"
+									]
+								},
+								{
+									"ENG_name": "Option 2: Brazen Egg",
+									"name": "选项2：赤铜之卵",
+									"type": "entries",
+									"id": "007",
+									"page": 5,
+									"entries": [
+										"从第10章的引言遭遇战\"{@adventure 砂岩城之龙|DrDe-DotSC|1}\"开始战役，以艾德米尔将黄铜之卵托付给角色们作为结束。不过艾德米尔的指示有所不同：她解释说这颗卵必须被\"浸泡\"在十条龙的财宝中（每种色彩龙和金属龙各一条）才能激活其力量。她还暗示这颗卵会引导角色们找到合适的龙巢。事实上，任何在卵15英尺范围内入睡的角色都会做生动的梦，引领他们前往下一个冒险的起点。",
+										"要从龙之宝藏中汲取力量，龙蛋必须在宝藏中待上8小时，被硬币覆盖并被其他物品环绕。然而，一旦被赋能的龙蛋被带入安斯拉德斯的藏宝室（{@adventure 区域H16|DrDe-DotSC|1|H16: 宝藏}，参见第10章），它将达到其全部潜力并开始裂开，如该冒险所述。"
+									]
+								},
+								{
+									"ENG_name": "Option 3: Hoard Magic Items",
+									"name": "选项3：囤积魔法物品",
+									"type": "entries",
+									"id": "008",
+									"page": 5,
+									"entries": [
+										"若你拥有{@book 费资本的巨龙宝库|FTD|4}，书中描述的魔法物品收藏可作为驱使角色寻找更强大、更多样龙类的动力。在前三个冒险中获得下列额外物品奖励：在「{@adventure 日落时分的死神|DrDe-DaS|1}」中获得{@item 覆鳞饰物|FTD}，在「{@adventure 面包师的捉襟见肘|DrDe-BD|1}」中获得{@item 龙器|FTD}，在「{@adventure 奥喀斯之命|DrDe-TWoO|1}」中获得{@item 龙怒武器|FTD}与{@item 龙触法器|FTD}。所有物品在初次获取时为休眠状态，但在后续冒险中可通过浸入龙类宝藏唤醒。"
 									]
 								}
 							]
 						},
 						{
-							"ENG_name": "Player Assistance",
-							"name": "玩家助手",
-							"type": "entries",
+							"ENG_name": "Running the Adventures",
+							"name": "运行冒险",
+							"type": "section",
+							"id": "009",
 							"page": 6,
-							"id": "00b",
 							"entries": [
-								"如{@book 城主指南|XDMG}所述，您可以通过将某些任务委派给其他玩家来简化您作为地下城主（DM）的职责\u2014\u2014特别是当您第一次担任DM时尤为实用。游戏开始前，请与其他玩家共同分配以下任何或全部任务：",
+								"要运行这些冒险模组，你需要第五版的核心规则书：{@book 玩家手册|XPHB}、{@book 城主指南|XDMG}和{@book 怪物图鉴|XMM}。冒险中提到的法术和装备描述参见{@book 玩家手册|XPHB}，魔法物品详情参阅{@book 城主指南|XDMG}，怪物数据则出现在{@book 怪物图鉴|XMM}。",
+								"本书目录总结了该合集所收录的冒险。每个冒险针对四至六名特定等级的角色设计，但如{@book 城主指南|XDMG}所述，你可以通过调整遭遇中敌人的数量或为小型队伍补充额外资源来适配更大或更小的团队。这些冒险均可发生于你选择的任何世界，只要该地点拥有各冒险开头列出的基本要素即可。",
 								{
-									"type": "list",
-									"style": "list-hang-notitle",
-									"items": [
-										{
-											"ENG_name": "Initiative Tracker",
-											"name": "先攻追踪者",
-											"type": "item",
-											"entry": "在战斗中，一名玩家负责记录角色与怪物的先攻顺序。"
-										},
-										{
-											"ENG_name": "Monster Wranglers",
-											"name": "怪物操手",
-											"type": "item",
-											"entry": "当角色与敌对怪物进入战斗时，由一到两名玩家使用{@book 怪物图鉴|XMM}中的这些数据卡来操控怪物。（两名玩家可共同承担此职责。）"
-										},
-										{
-											"ENG_name": "Rules Consultant",
-											"name": "规则顾问",
-											"type": "item",
-											"entry": "一名玩家根据需要查阅{@book 玩家手册|XPHB}或其他书籍中的规则。"
-										}
-									]
-								}
-							]
-						},
-						{
-							"ENG_name": "Adventures for One Character",
-							"name": "单人角色冒险",
-							"type": "entries",
-							"page": 6,
-							"id": "00c",
-							"entries": [
-								"尽管{@book 城主指南|XDMG}解释了如何根据队伍规模调整冒险，但其中三个冒险（在目录中标示）特别适合单人冒险者游玩。这些冒险都包含确保角色面临适当挑战的指示说明。",
-								"这些说明的核心是{@reward 孤勇者祝福|DrDe}，一种增强单人角色属性的超自然赠礼。",
-								{
-									"ENG_name": "Blessing of the Lone Champion",
-									"name": "孤勇者祝福",
-									"type": "statblock",
+									"ENG_name": "Preparation",
+									"name": "预备",
+									"type": "entries",
+									"id": "00a",
 									"page": 6,
-									"source": "DrDe",
-									"tag": "reward"
-								},
-								"祝福的持续时间为本次冒险的时长。"
-							]
-						},
-						{
-							"ENG_name": "A Draconic History",
-							"name": "龙族历史",
-							"type": "inset",
-							"page": 6,
-							"id": "00e",
-							"entries": [
-								"除了十个冒险故事外，本书还包含特别章节，展示了每种龙类的艺术画作，涵盖了《龙与地下城》近50年历史\u2014\u2014从1977年的《怪物手册》直至2025年发行的最新版本。过去五十年间，所有十种龙类的形象都经历了显著演变，但仔细观察这些画作仍能发现传承元素：从蓝龙的鼻角到银龙的冠冕，皆一脉相承。",
-								"艺术家托德·洛克伍德为2000年《龙与地下城》第三版的发布牵头对十种龙类进行了全面修订，其设计基于现实世界动物的解剖结构，并与早期设计保持了某些延续性。除少量变体外，这些设计为D&D的龙类确立了延续二十余年的标准。",
-								"为迎接2025年《{@book 怪物图鉴|XMM}》的发行，艺术指导乔什·赫尔曼在D&D进入第二个半世纪之际，主导了对所有巨龙形象的全面翻新。本次重新设计旨在通过外观突显每条巨龙的独特身份\u2014\u2014包括个性、偏好栖息地和战斗风格\u2014\u2014确保每种龙类的视觉辨识度得以彰显。",
-								"同样地，本书着重展示了以某一类巨龙为主题的冒险会如何与其他冒险体验截然不同。"
-							]
-						}
-					]
-				},
-				{
-					"ENG_name": "Adventures",
-					"name": "冒险",
-					"type": "section",
-					"entries": [
-						{
-							"type": "list",
-							"columns": 3,
-							"items": [
-								"{@adventure 日落时分的死神（1级）|DrDe-DaS|1}",
-								"{@adventure 面包师的捉襟见肘（3级）|DrDe-BD|1}",
-								"{@adventure 奥喀斯之命（4级）|DrDe-TWoO|1}",
-								"{@area 虚空唤谁而鸣（5级）|12b|x}",
-								"{@adventure 纳基凯尔之龙（7级）|DrDe-TDoN|1}",
-								"{@adventure 禁忌谷（9级）|DrDe-TFV|1}",
-								"{@adventure 风暴将临（10级）|DrDe-BtS|1}",
-								"{@adventure 夺命颤寒（11级）|DrDe-SD|1}",
-								"{@adventure 一枚铜币换一首歌（12级）|DrDe-ACfaS|1}",
-								"{@adventure 砂岩城之龙（12级）|DrDe-DotSC|1}"
-							]
-						}
-					],
-					"id": "00d"
-				}
-			]
-		},
-		{
-			"ENG_name": "For Whom the Void Calls",
-			"name": "虚空唤谁而鸣",
-			"type": "section",
-			"page": 65,
-			"id": "12b",
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"items": [
-						"{@i {@b An adventure for Level 5 characters.}}",
-						"{@i 该冒险的长度为一至两次团。}",
-						"{@i 它可以发生在任何有河流穿过的峡谷中。}"
-					]
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "adventure/DrDe/065-04-001.chapter-four-splash.webp"
-					},
-					"credit": "Justine Jones",
-					"width": 1700,
-					"height": 2200
-				},
-				{
-					"ENG_name": "Key Plot Points",
-					"name": "关键剧情节点",
-					"type": "section",
-					"page": 65,
-					"id": "12c",
-					"entries": [
-						"以下信息对冒险故事至关重要：",
-						{
-							"type": "list",
-							"style": "list-hang-notitle",
-							"items": [
-								{
-									"ENG_name": "Distress Call",
-									"name": "求救信号",
-									"type": "item",
-									"entry": "冒险者们接收到一条心灵感应求救信号。信号发送者声称自己是一个有知性的{@item 次元袋|XDMG}，最近被一条恶龙偷走。这个袋子乞求获救。"
-								},
-								{
-									"ENG_name": "Far Realm Connection",
-									"name": "遥远国度连接",
-									"type": "item",
-									"entry": "冒险者们并不知道，求救信号的发送者实际上是一个{@item 吞噬袋|XDMG}。它是一个栖息于遥远国度（Far Realm）的邪恶跨维度生物的进食口器，能够通过心灵感应与袋子1英里范围内的生物联系。"
-								},
-								{
-									"ENG_name": "Starglass Waypoint",
-									"name": "星镜路标",
-									"type": "item",
-									"entry": "回应心灵感应求救信号的角色会被引导至{@area 星镜路标|136|x}，那里曾经是一处位面传送门所在地，现在是一头名为伊拉甘的黄铜幼龙的巢穴。{@item 吞噬袋|XDMG}就藏于龙的财宝堆中。当他们探索星辉之路站时，角色可能会遭遇一位严厉的吉斯洋基骑士、失常的魔冢，以及一头对宝物不断从魔法袋中消失感到厌烦的龙。"
-								}
-							]
-						}
-					]
-				},
-				{
-					"ENG_name": "Preparation",
-					"name": "预备",
-					"type": "section",
-					"page": 65,
-					"id": "12d",
-					"entries": [
-						"在开始冒险之前，请按照以下步骤进行准备：",
-						{
-							"type": "list",
-							"style": "list-hang-notitle",
-							"items": [
-								{
-									"ENG_name": "Step 1",
-									"name": "第一步",
-									"type": "item",
-									"entry": "请阅读\"{@area 冒险背景|12e|x}\"部分。"
-								},
-								{
-									"ENG_name": "Step 2",
-									"name": "第二步",
-									"type": "item",
-									"entry": "检查区域 {@area S18|16b|x}（位于\"{@area 上层区域地点|162|x}\"）。如果觉得过于复杂，可跳过本节。"
-								},
-								{
-									"ENG_name": "Step 3",
-									"name": "第三步",
-									"type": "item",
-									"entry": "请熟悉以下关键NPC表。在冒险过程中，角色们将与这些NPC互动。"
-								},
-								{
-									"ENG_name": "Step 4",
-									"name": "第四步",
-									"type": "item",
-									"entry": "阅读关于{@item 吞噬袋|XDMG}的描述（选自{@book 城主指南|XDMG}或在D&D Beyond上）。此外，也可以查看关于星界和遥远国度的描述。"
-								},
-								{
-									"ENG_name": "Step 5",
-									"name": "第五步",
-									"type": "item",
-									"entry": "在《{@book 怪物图鉴|XMM}》或D&DBeyond中标记以下的数据卡。"
-								}
-							]
-						},
-						{
-							"type": "list",
-							"columns": 3,
-							"items": [
-								"{@creature 青年黄铜龙|XMM|黄铜龙（青年）}",
-								"{@creature 土元素|XMM}",
-								"{@creature 吉斯洋基骑士|XMM}",
-								"{@creature 隐形追猎者|XMM}",
-								"{@creature 带翼狗头人|XMM|翼龙狗头人}",
-								"{@creature 拟身怪|XMM}",
-								"{@creature 魔冢·二元冢|XMM}",
-								"{@creature 魔冢·四元冢|XMM}",
-								"{@creature 魔冢·三元冢|XMM}",
-								"{@creature 蔓生怪|XMM}",
-								"{@creature 史拉蓝蟾|XMM|史拉蓝蟾}",
-								"{@creature 观察者眼魔|XMM}",
-								"{@creature 水元素|XMM}"
-							]
-						},
-						{
-							"ENG_name": "Young Brass Dragon",
-							"name": "青年黄铜龙",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Young Brass Dragon",
-							"name": "青年黄铜龙",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Earth Elemental",
-							"name": "土元素",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Earth Elemental",
-							"name": "土元素",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Githyanki Knight",
-							"name": "吉斯洋基骑士",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Githyanki Knight",
-							"name": "吉斯洋基骑士",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Invisible Stalker",
-							"name": "隐形追猎者",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Invisible Stalker",
-							"name": "隐形追猎者",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Winged Kobold",
-							"name": "带翼狗头人",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Winged Kobold",
-							"name": "带翼狗头人",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Mimic",
-							"name": "拟身怪",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Mimic",
-							"name": "拟身怪",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Modron Duodrone",
-							"name": "魔冢·二元冢",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Modron Duodrone",
-							"name": "魔冢·二元冢",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Modron Quadrone",
-							"name": "魔冢·四元冢",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Modron Quadrone",
-							"name": "魔冢·四元冢",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Modron Tridrone",
-							"name": "魔冢·三元冢",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Modron Tridrone",
-							"name": "魔冢·三元冢",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Shambling Mound",
-							"name": "蔓生怪",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Shambling Mound",
-							"name": "蔓生怪",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Blue Slaad",
-							"name": "史拉蓝蟾",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Blue Slaad",
-							"name": "史拉蓝蟾",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Spectator",
-							"name": "观察者眼魔",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Spectator",
-							"name": "观察者眼魔",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Water Elemental",
-							"name": "水元素",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Water Elemental",
-							"name": "水元素",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"type": "table",
-							"caption": "关键NPCs",
-							"page": 65,
-							"colLabels": [
-								"名称",
-								"职能",
-								"数据卡",
-								"位置"
-							],
-							"colStyles": [
-								"col-3-5",
-								"col-3-5",
-								"col-2-5",
-								"col-2-5"
-							],
-							"rows": [
-								[
-									"博布辛",
-									"盗贼",
-									"{@creature 带翼狗头人|XMM}",
-									"{@area S24|17b|x}"
-								],
-								[
-									"凯利弗隆",
-									"有意识的{@item 吞噬袋|XDMG}，自称是{@item 次元袋|XDMG}",
-									"\u2014",
-									"{@area S12|15d|x}"
-								],
-								[
-									"卡拉·瓦尔雷斯",
-									"守卫前哨站的魔像",
-									"{@creature 吉斯洋基骑士|XMM}（守序中立）",
-									"{@area S18|16b|x}"
-								],
-								[
-									"伊拉甘",
-									"巢穴中藏有{@item 吞噬袋|XDMG}的龙",
-									"{@creature 青年黄铜龙|XMM}",
-									"{@area S10|157|x}"
-								]
-							]
-						}
-					]
-				},
-				{
-					"ENG_name": "Adventure Background",
-					"name": "冒险背景",
-					"type": "section",
-					"page": 66,
-					"id": "12e",
-					"entries": [
-						"一百多年前，吉斯扬基人和魔冢建造了{@area 星镜路标|136|x}作为一处孵化场\u2014\u2014一个安全且隐蔽的地方，用以养育和训练他们的后代。这座前哨站深处的位面传送门曾允许吉斯扬基人自由往返于星界。九年前，一场地震损坏了位面传送门后，吉斯扬基人放弃了这座前哨站，但留下了负责维护的魔冢。",
-						"一年前，一条名为伊拉甘的黄铜龙幼龙将这个前哨站据为自己的巢穴。",
-						{
-							"ENG_name": "The Bag of Devouring",
-							"name": "吞噬之袋",
-							"type": "entries",
-							"page": 66,
-							"id": "12f",
-							"entries": [
-								"当大约一年前伊拉甘抵达时，模组们接受了他的领导，并开始改造前哨站以满足巨龙的需求。与此同时，伊拉甘在星玻璃哨站周边的土地上搜寻财宝，以充实他那微薄的藏品。一周前，他发现了因脱水而死的冒险者遗骸。在冒险者的物品中，有一个魔法袋子，被巨龙误认为是{@item 次元袋|XDMG}。",
-								"伊拉甘把袋子带回家，并在里面存放了一些他最喜欢的宝石。第二天，他惊恐地发现袋子空了。不知道这实际上是一个{@item 吞噬袋|XDMG}并已经吞噬了那些宝石，伊拉甘命令模组人在前哨站中搜查窃贼。当没有发现入侵者时，这条龙开始怀疑一个或多个模组人可能偷走了宝石。",
-								"两天前，伊拉甘为了验证他的理论，将一些不太贵重的财宝放入袋中并无人看管，而他自己则在哨站入口处守望。一天后，袋子空了！伊拉甘指责魔冢偷走了他的财宝，并在一怒之下摧毁了其中几个。接着他用碎石堵住了通往他藏宝处的隧道，并开始猎杀剩余的魔冢。",
-								"被摧毁的魔冢化为尘埃，未留一丝痕迹。其中一名幸存的魔冢触发了前哨站指挥中心的无声警报，向星界的吉斯洋基人要塞发送了信号。"
-							]
-						}
-					]
-				},
-				{
-					"ENG_name": "Beginning the Adventure",
-					"name": "开始冒险",
-					"type": "section",
-					"page": 66,
-					"id": "130",
-					"entries": [
-						"冒险者们正穿行于峡谷之中，突然接收到一道心灵感应求救信号。请朗读或转述以下内容来铺垫场景：",
-						{
-							"type": "insetReadaloud",
-							"page": 66,
-							"id": "131",
-							"entries": [
-								"你正穿行于一个寂静的峡谷中，没有鸟兽的踪迹。就连富含矿物质的碧绿色河流也静止不动。峡谷岩壁上装饰着铜红色与板岩蓝相间的条纹。有时，一片空气会在酷热中闪烁摇曳，峡谷的色彩仿佛在灼热的阳光下翩跹起舞。这诡异的寂静突然被一个低沉的男中音打破：「你好，能帮帮我吗？」周遭并无其他生物，因此片刻之后你才意识到这个声音直接回响在你们脑海中。「求你们了，我被一条龙抓走了！」"
-							]
-						},
-						"心灵感应信号源自依附于{@item 吞噬袋|XDMG}的异界生物，该生物能感知袋子1英里范围内的其他生物。它传递以下信息：",
-						{
-							"type": "insetReadaloud",
-							"page": 66,
-							"id": "132",
-							"entries": [
-								"\"我叫凯利弗伦。当时我和同伴阿格斯一起旅行，突然一条龙发现了我们并将我带到了它的巢穴。我担心这条龙永远不会放我走。如果可以的话，请救救我！\""
-							]
-						},
-						"在收到凯利弗隆的消息后，角色可以采取一个{@action 搜索|XPHB}动作并进行一次{@dc 20}感知（{@skill 洞悉|XPHB}）检定。若成功，角色会感觉到凯利弗隆所言属实但含糊其辞。",
-						{
-							"ENG_name": "Questions and Answers",
-							"name": "问题与解答",
-							"type": "entries",
-							"page": 66,
-							"id": "133",
-							"entries": [
-								"克利弗伦在切断与角色的心灵感应联系前会回答三个问题。在任何情况下，克利弗伦都不会透露其真实本质。以下是角色可能会问的一些问题及克利弗伦的回答：",
-								{
-									"type": "list",
-									"style": "list-hang-notitle",
-									"items": [
-										{
-											"ENG_name": "Who Are You?",
-											"name": "你是谁？",
-											"type": "item",
-											"entry": "\"我是一个{@item 次元袋|XDMG}，被赋予了感知能力。救救我，我就是你的了！\""
-										},
-										{
-											"ENG_name": "Where Are You?",
-											"name": "你在哪里？",
-											"type": "item",
-											"entry": "\"如果你们继续沿着现在的路线前进，将会发现一座横跨峡谷河流的闪烁水晶桥。这座桥通向巨龙位于峡谷岩壁深处的隐秘巢穴入口。\""
-										},
-										{
-											"ENG_name": "Who Is Argus?",
-											"name": "阿戈斯是谁？",
-											"type": "item",
-											"entry": "\"阿古斯是我以前的主人。\""
-										},
-										{
-											"ENG_name": "Did the Dragon Kill Argus?",
-											"name": "是龙杀了阿戈斯吗？",
-											"type": "item",
-											"entry": "\"不，阿格斯在巨龙找到我们之前不久因口渴而死。\""
-										}
-									]
-								},
-								"{@b 关于这条龙，你能告诉我们什么}？\"巨龙渴望财宝，体型大到足以让人骑在它的背上。\"（凯利弗隆无法感知颜色，因此无法辨别龙鳞的颜色。）",
-								"{@b 你能告诉我们关于龙的巢穴的哪些信息}？\"它看起来不像巨龙的巢穴。可能是别的什么人建造的。而且巢穴里还住着一些奇怪的金属生物\u2014\u2014它们会服从巨龙的命令。\"（凯利弗隆指的是模组生物，但他不知道该如何描述它们。）",
-								"如果角色们决定不去营救克利弗龙，它会最后一次建立心灵感应联系并敦促他们重新考虑。接着它描述了巨龙宝藏中的其他财宝（参见区域 {@area S12|15d|x}），希望角色的贪婪能占上风。若此举无效，克利弗龙会告知他们巨龙正在伤害栖息在其巢穴中的金属生物，并敦促角色们为这些生物进行干预。"
-							]
-						},
-						{
-							"ENG_name": "Approaching Starglass Waypoint",
-							"name": "接近星玻之路传送点",
-							"type": "entries",
-							"page": 67,
-							"id": "134",
-							"entries": [
-								"当角色们继续他们的跋涉，沿着峡谷行进近一英里后，请大声朗读或转述以下内容：",
-								{
-									"type": "insetReadaloud",
-									"page": 67,
-									"id": "135",
 									"entries": [
-										"横跨在你前方停滞河流上方的是一座水晶桥，它能捕捉并散射自然光。这座桥连接到嵌入峡谷岩壁、距河面二十英尺高的石制平台上。远端优雅的石拱环绕着一扇由玻璃和黄铜制成的精美双门。"
-									]
-								},
-								"峡谷深200英尺，但河流仅深10英尺。水晶桥安全可通行，通往双扇门（区域{@area S1|13f|x}）。白天时，桥梁闪耀着太阳的金色光芒；夜晚则映射月亮的苍白光辉（{@variantrule 微光光照|XPHB}）。"
-							]
-						}
-					]
-				},
-				{
-					"ENG_name": "Starglass Waypoint",
-					"name": "星镜路标",
-					"type": "section",
-					"page": 67,
-					"id": "136",
-					"entries": [
-						"当星界之路传送站通往星界的传送门因地震受损并开始故障时，吉斯洋基人无法修复它，因此他们放弃了这个前哨站。不久之后，这个前哨站变成了被遗忘的废墟，只有吉斯洋基人留下的魔冢栖息其中。",
-						"直到最近，黄铜龙伊拉甘还依赖魔像来帮助建造他的巢穴。此后他已经摧毁了其中的许多魔像。",
-						{
-							"ENG_name": "Starglass Waypoint Features",
-							"name": "星玻璃航点特性",
-							"type": "entries",
-							"page": 67,
-							"id": "137",
-							"entries": [
-								"除非特殊说明，星辉道标具有以下特性。",
-								{
-									"ENG_name": "Glassteel Doors",
-									"name": "玻璃钢门",
-									"type": "entries",
-									"page": 67,
-									"id": "138",
-									"entries": [
-										"建筑群中的所有门都由一种名为玻璃钢的魔法物质制成，这种材料具有玻璃的质地和透明度，同时具备极强的韧性。这些门对所有伤害具有免疫。",
-										"某些门被魔法封印（如{@area 地图：星镜之路低层|40f|x}和{@area 地图：星玻传送点上阶|162|x}所示）。每扇被封印的门上都刻有星形符文，触摸时能感受到温热。解开封印门需要纹章卡或{@spell 敲击术|XPHB}法术。",
-										{
-											"ENG_name": "Glyph Cards",
-											"name": "符文卡片",
-											"type": "entries",
-											"page": 67,
-											"id": "139",
-											"entries": [
-												"符文卡是一种大小与扑克牌相近的陶瓷片，上面刻有星形符文并镶嵌蓝色水晶。卡上的符文与星玻璃路标点密封门上的符文相匹配。前哨站人员和访客曾将符文卡用作通行钥匙。这些卡片现在可以在前哨站内的各处找到。",
-												"触碰一张符文卡到封印的门上可将其解锁；门将保持解锁状态1分钟。一旦打开，可以用东西撑住门以防止其再次上锁。"
-											]
-										}
-									]
-								},
-								{
-									"ENG_name": "Levels and Elevators",
-									"name": "层级与升降机",
-									"type": "entries",
-									"page": 67,
-									"id": "13a",
-									"entries": [
-										"该哨站拥有上层与下层；星界传送门室（区域{@area S12|15d|x}）位于下层下方10英尺处。玻璃楼梯连接着这些楼层，同样连接的还有四个由魔法和隐藏齿轮驱动的升降梯。",
-										{
-											"ENG_name": "Elevators",
-											"name": "升降梯",
-											"type": "entries",
-											"page": 67,
-											"id": "13b",
-											"entries": [
-												"每部电梯由一个两层高的机械升降装置构成，配有密封的滑动玻璃钢门（参见上文\"玻璃钢门\"）。进入电梯后，生物可通过以任意语言说出或做出\"上升\"或\"下降\"的手势，以一个{@action 魔法|XPHB}动作指令电梯升降。电梯门需手动开闭，层间移动耗时6秒。"
-											]
-										}
-									]
-								},
-								{
-									"ENG_name": "Lighting",
-									"name": "光照",
-									"type": "entries",
-									"page": 67,
-									"id": "13c",
-									"entries": [
-										"除非另有说明，否则固定在墙上的魔法水晶壁架为整个建筑群提供{@variantrule 明亮光照|XPHB}。生物可以通过轻触壁架来开启或关闭它。"
-									]
-								},
-								{
-									"ENG_name": "Walls, Floors, and Ceilings",
-									"name": "墙壁、地板和天花板",
-									"type": "entries",
-									"page": 67,
-									"id": "13d",
-									"entries": [
-										"墙壁、地板和天花板由光滑的灰色石块与厚重的磨砂蓝玻璃板构成。双层区域（区域{@area S2|140|x}、{@area S3|142|x}、{@area S7|14e|x}及{@area S8|152|x}）天花板高20英尺，星界传送门大厅（区域{@area S12|15d|x}）高60英尺，其余各处均为10英尺高。"
-									]
-								}
-							]
-						},
-						{
-							"ENG_name": "Lower Level Locations",
-							"name": "下层区域地点",
-							"type": "entries",
-							"page": 67,
-							"id": "13e",
-							"entries": [
-								{
-									"type": "gallery",
-									"images": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "adventure/DrDe/066-map-04.01-starglass-waypoint-lower-level-dm.webp"
-											},
-											"imageType": "map",
-											"title": "地图 4.1：星镜之路下层区",
-											"credit": "Dyson Logos",
-											"width": 3538,
-											"height": 4096,
-											"id": "40f",
-											"grid": {
-												"type": "square",
-												"size": 93
-											},
-											"mapRegions": [
-												{
-													"area": "15d",
-													"points": [
-														[
-															467,
-															189
-														],
-														[
-															467,
-															1115
-														],
-														[
-															1486,
-															1115
-														],
-														[
-															1486,
-															189
-														]
-													]
-												},
-												{
-													"area": "15c",
-													"points": [
-														[
-															1492,
-															375
-														],
-														[
-															1492,
-															933
-														],
-														[
-															1857,
-															933
-														],
-														[
-															1857,
-															375
-														]
-													]
-												},
-												{
-													"area": "157",
-													"points": [
-														[
-															2342,
-															470
-														],
-														[
-															2342,
-															834
-														],
-														[
-															1870,
-															834
-														],
-														[
-															1870,
-															470
-														]
-													]
-												},
-												{
-													"area": "152",
-													"points": [
-														[
-															2886,
-															1119
-														],
-														[
-															2886,
-															470
-														],
-														[
-															2342,
-															470
-														],
-														[
-															2342,
-															1119
-														]
-													]
-												},
-												{
-													"area": "14e",
-													"points": [
-														[
-															2419,
-															1134
-														],
-														[
-															2419,
-															2044
-														],
-														[
-															2792,
-															2044
-														],
-														[
-															2792,
-															1134
-														]
-													]
-												},
-												{
-													"area": "13f",
-													"points": [
-														[
-															2050,
-															3272
-														],
-														[
-															2226,
-															3272
-														],
-														[
-															2226,
-															3357
-														],
-														[
-															2282,
-															3364
-														],
-														[
-															2337,
-															3377
-														],
-														[
-															2337,
-															3434
-														],
-														[
-															1956,
-															3434
-														],
-														[
-															1956,
-															3364
-														],
-														[
-															2050,
-															3347
-														]
-													]
-												},
-												{
-													"area": "148",
-													"points": [
-														[
-															1495,
-															2526
-														],
-														[
-															1495,
-															2882
-														],
-														[
-															1765,
-															2882
-														],
-														[
-															1765,
-															2526
-														]
-													]
-												},
-												{
-													"area": "140",
-													"points": [
-														[
-															1775,
-															2520
-														],
-														[
-															1775,
-															3261
-														],
-														[
-															2513,
-															3261
-														],
-														[
-															2513,
-															2520
-														]
-													]
-												},
-												{
-													"area": "146",
-													"points": [
-														[
-															2530,
-															2794
-														],
-														[
-															2530,
-															3069
-														],
-														[
-															2792,
-															3069
-														],
-														[
-															2792,
-															2794
-														]
-													]
-												},
-												{
-													"area": "155",
-													"points": [
-														[
-															2899,
-															742
-														],
-														[
-															3066,
-															742
-														],
-														[
-															3066,
-															1306
-														],
-														[
-															3165,
-															1306
-														],
-														[
-															3165,
-															2880
-														],
-														[
-															2813,
-															2880
-														],
-														[
-															2813,
-															2796
-														],
-														[
-															3073,
-															2796
-														],
-														[
-															3073,
-															1392
-														],
-														[
-															2985,
-															1392
-														],
-														[
-															2985,
-															841
-														],
-														[
-															2899,
-															841
-														]
-													]
-												},
-												{
-													"area": "14a",
-													"points": [
-														[
-															1771,
-															2099
-														],
-														[
-															1904,
-															2228
-														],
-														[
-															2329,
-															2228
-														],
-														[
-															2329,
-															1821
-														],
-														[
-															2179,
-															1677
-														],
-														[
-															1913,
-															1677
-														],
-														[
-															1771,
-															1825
-														]
-													]
-												},
-												{
-													"area": "142",
-													"points": [
-														[
-															2234,
-															2256
-														],
-														[
-															2343,
-															2256
-														],
-														[
-															2343,
-															2052
-														],
-														[
-															2835,
-															2052
-														],
-														[
-															2981,
-															2185
-														],
-														[
-															2981,
-															2653
-														],
-														[
-															2841,
-															2785
-														],
-														[
-															2526,
-															2785
-														],
-														[
-															2526,
-															2502
-														],
-														[
-															2234,
-															2502
-														]
-													]
-												}
-											],
-											"hrefThumbnail": {
-												"type": "internal",
-												"path": "adventure/DrDe/thumbnail/066-map-04.01-starglass-waypoint-lower-level-dm.webp"
-											}
-										},
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "adventure/DrDe/067-map-04.01-starglass-waypoint-lower-level-player.webp"
-											},
-											"imageType": "mapPlayer",
-											"title": "玩家版本",
-											"width": 3538,
-											"height": 4096,
-											"credit": "Dyson Logos",
-											"mapParent": {
-												"id": "40f"
-											},
-											"grid": {
-												"type": "square",
-												"size": 93
-											}
-										}
-									]
-								},
-								"以下地点标记在{@area 地图 4.1|40f|x}上。",
-								{
-									"ENG_name": "S1: Doors of Glass and Brass",
-									"name": "S1: 玻璃与黄铜之门",
-									"type": "entries",
-									"page": 67,
-									"id": "13f",
-									"entries": [
-										"通往中庭（区域S2）的前门未上锁且无阻碍，它们通过润滑良好的铰链轻松摆动开启。"
-									]
-								},
-								{
-									"ENG_name": "S2: Atrium",
-									"name": "S2: 大堂",
-									"type": "entries",
-									"page": 69,
-									"id": "140",
-									"entries": [
-										{
-											"type": "insetReadaloud",
-											"page": 69,
-											"id": "141",
-											"entries": [
-												"这座中庭内，一座玻璃阶梯攀升十尺通往环绕中庭边缘的阳台。一个由金属和玻璃制成的密封舱室容纳着同样升至阳台的升降梯。东西两侧设有玻璃门。东北角是以水晶喷泉为核心的厅堂。"
-											]
-										},
-										"喷泉在区域{@area S3|142|x}中有描述。阳台在区域{@area S13|163|x}中有描述。\"{@area 星玻璃航点特性|137|x}\"提供了关于壁灯和电梯的信息。"
-									]
-								},
-								{
-									"ENG_name": "S3: Fountain Court",
-									"name": "S3：喷泉庭院",
-									"type": "entries",
-									"page": 69,
-									"id": "142",
-									"entries": [
-										{
-											"type": "insetReadaloud",
-											"page": 69,
-											"id": "143",
-											"entries": [
-												"一座优雅的水晶喷泉装点着庭院中央。喷泉的中心是一座美丽的水晶骑士雕像，头戴战盔、身着华丽铠甲，双手紧握一柄水晶巨剑的剑柄；剑尖矗立在她双脚前方。在角落散落着碎石，那里悬挂的阳台部分已经坍塌。北侧有一条二十英尺宽的走廊，堆积着更多碎石和几处商贩摊位的残骸。庭院西侧有一扇宽阔的滑动玻璃门。"
-											]
-										},
-										"通往储藏室（区域 {@area S6|14a|x}）的滑动玻璃门需要雕文卡才能开启（详情见\"{@area 星玻璃航点特性|137|x}\"）。商会走廊在区域 {@area S7|14e|x} 有详细描述，露台则在区域 {@area S13|163|x} 和 {@area S16|169|x} 有所说明。",
-										{
-											"ENG_name": "Crystal Fountain",
-											"name": "水晶喷泉",
-											"type": "entries",
-											"page": 69,
-											"id": "144",
-											"entries": [
-												"仔细检查喷泉会发现停滞混浊的水。如果搅动水面，潜伏在喷泉中的敌对生物{@creature 水元素|XMM}会伏击角色。",
-												"作为{@action 研究|XPHB}动作，角色可以检查喷泉雕像并进行一次{@dc 15}智力（{@skill 历史|XPHB}）检定。若成功，角色会认出雕像描绘的是传奇战士吉斯\u2014\u2014她曾帮助自己的族人（吉斯扬基与吉斯泽雷）从夺心魔暴政中解放。"
-											]
-										},
-										{
-											"ENG_name": "Treasure",
-											"name": "宝藏",
-											"type": "entries",
-											"page": 69,
-											"id": "145",
-											"entries": [
-												"花费10分钟仔细搜寻喷泉水池的角色会发现一枚符文卡和25金币的散落硬币。"
-											]
-										}
-									]
-								},
-								{
-									"ENG_name": "S4: Forge",
-									"name": "S4: 锻炉",
-									"type": "entries",
-									"page": 69,
-									"id": "146",
-									"entries": [
-										{
-											"type": "insetReadaloud",
-											"page": 69,
-											"id": "147",
-											"entries": [
-												"锈迹斑斑的工具挂在这个尘土飞扬的车间墙壁挂钩上。东面墙上的门紧闭着。靠南墙放着一个大型铸铁炉。一根直径一英尺的金属烟囱从炉顶伸出两英尺后插入墙内。炉子发出奇怪的咔嗒声。"
-											]
-										},
-										"吉斯扬基铁匠曾在此打造工具与盔甲。熔炉内部可容纳一名中型或两名小型生物；其管道过于狭窄，小型或中型生物无法进入。",
-										"咯吱声来自一个躲在炉子里的紧张{@creature 魔冢·二元冢|XMM}。打开炉子铁门的角色会发现这个冷漠的模组，它通晓模组语和通用手语。",
-										"这只双体机械怪正躲避着伊拉甘的追踪，且希望独处。如果角色们不断打扰它，双体机械怪会从体内的插槽中取出一张纹章卡（见\"{@area 星玻璃航点特性|137|x}\"），将卡片交给他们，并表明自己没有其他信息或宝藏可提供。双体机械怪只会在自卫时进行战斗。"
-									]
-								},
-								{
-									"ENG_name": "S5: Library",
-									"name": "S5: 图书馆",
-									"type": "entries",
-									"page": 69,
-									"id": "148",
-									"entries": [
-										{
-											"type": "insetReadaloud",
-											"page": 69,
-											"id": "149",
-											"entries": [
-												"一只大致呈球形的生物漂浮在房间中央，它有一只巨大的主眼和四根眼柄。它悬浮在四个装有玻璃门的空书柜之间。一段楼梯向北延伸而上。"
-											]
-										},
-										"这个漂浮的生物是一只警觉的{@creature 观察者眼魔|XMM}，它被错误地召唤来守护书架而非书籍。当吉斯洋基人废弃{@area 星镜路标|136|x}时，他们搬走了所有书籍以防被盗或损坏。观察者起初态度冷淡，但会对干扰书架的非吉斯洋基人或魔冢生物转为敌对并发动攻击。",
-										"该生物在被询问时会通过心灵感应分享以下信息：",
+										"本书中的每个冒险都以一个帮助您准备和进行冒险的页面开始。它包括以下要素：",
 										{
 											"type": "list",
 											"style": "list-hang-notitle",
 											"items": [
 												{
-													"ENG_name": "Old Outpost",
-													"name": "古老前哨站",
+													"ENG_name": "Key Plot Points",
+													"name": "关键剧情节点",
 													"type": "item",
-													"entry": "星辰玻璃航标由吉斯扬基和魔冢围绕一个位面之门建造。（观察者从未离开过这个房间，因此不知道门的位置。）"
+													"entry": "冒险故事中关键要素的概要"
 												},
 												{
-													"ENG_name": "Modron Caretakers",
-													"name": "魔像看护者",
+													"ENG_name": "Preparation",
+													"name": "预备",
 													"type": "item",
-													"entry": "吉斯扬基在多年前放弃了这座前哨站，但留下了魔冢来维持它的运作。"
+													"entry": "为开展冒险做准备所需的步骤，包括你可能需要的所有来自{@book 怪物图鉴|XMM}的怪物数据块列表"
 												},
 												{
-													"ENG_name": "Draconic Newcomer",
-													"name": "龙裔新手",
+													"ENG_name": "Key NPCs",
+													"name": "关键NPCs",
 													"type": "item",
-													"entry": "一只黄铜鳞片的巨龙大约一年前抵达了前哨站并在此安家。前哨站的魔像们与巨龙沟通有困难，但仍尽力让它保持愉悦。"
+													"entry": "一张总结了冒险中关键非玩家角色的表格\u2014\u2014包括他们的名字、角色、状态块和位置\u2014\u2014帮助你在游戏过程中追踪他们"
 												}
 											]
 										}
 									]
 								},
 								{
-									"ENG_name": "S6: Secured Supplies",
-									"name": "S6：安全物资",
+									"ENG_name": "Player Assistance",
+									"name": "玩家助手",
 									"type": "entries",
-									"page": 70,
-									"id": "14a",
+									"id": "00b",
+									"page": 6,
 									"entries": [
+										"如{@book 城主指南|XDMG}所述，您可以通过将某些任务委派给其他玩家来简化您作为地下城主（DM）的职责\u2014\u2014特别是当您第一次担任DM时尤为实用。游戏开始前，请与其他玩家共同分配以下任何或全部任务：",
 										{
-											"type": "insetReadaloud",
-											"page": 70,
-											"id": "14b",
-											"entries": [
-												"这个近乎八边形的房间里摆放着带有金属配件的密封板条箱。一座玻璃楼梯向上通往悬挑的楼层；从上方传来微弱的嗡鸣声。"
-											]
-										},
-										"楼梯通往安全站（区域{@area S18|16b|x}）。",
-										{
-											"ENG_name": "Crates",
-											"name": "板条箱",
-											"type": "entries",
-											"page": 70,
-											"id": "14c",
-											"entries": [
-												"板条箱的位置标注在{@area 地图：星镜之路低层|13e|x}上。标有1至4的四个板条箱是真实的。标有Q的板条箱实际上是四个{@creature 魔冢·四元冢|XMM|模组四元体}，它们的腿缩回且武器隐藏在视野之外。（如果它们先前被吸引到{@area S18|16b|x}，则不会出现此处。）被动{@skill 察觉|XPHB}达到14或更高的角色在接近5英尺范围内时会识破伪装的四元模组。标有M的板条箱实际上是一只{@creature 拟身怪|XMM}，正期待一顿美餐，因为它不吃模组生物。",
-												"若非魔冢或吉斯洋基人者擅动真实板条箱或拟形怪，四元体便会发动攻击。除此之外，它们对入侵者保持漠然态度，仅出于自卫而战。它们通晓魔冢语和通用手语。"
-											]
-										},
-										{
-											"ENG_name": "Treasure",
-											"name": "宝藏",
-											"type": "entries",
-											"page": 70,
-											"id": "14d",
-											"entries": [
-												"四个真正的大木箱中装着吉斯洋基人留下的货物；伊拉甘尚未意识到这些箱子里有贵重物品，因此还未将它们据为己有。",
-												"{@b 板条箱 1 和 2}中各自装有一百份口粮，这些口粮经过魔法保存，即使已经存放数十年仍可食用。",
-												"{@b 箱子3}内有四十九块5磅重的银制贸易锭（每块价值25金币）。明显缺少一块银锭（位于区域{@area S24|17b|x}的沉洞中）。",
-												"{@b 板条箱4}装有发条齿轮、弹簧、链条和哨站升降梯的其他替换零件。这些散落的杂物中有一个装着一枚{@item 发条护符|XDMG}的扁平松木盒。"
-											]
-										}
-									]
-								},
-								{
-									"ENG_name": "S7: Merchants' Concourse",
-									"name": "S7: 商贾之廊",
-									"type": "entries",
-									"page": 70,
-									"id": "14e",
-									"entries": [
-										{
-											"type": "insetReadaloud",
-											"page": 70,
-											"id": "14f",
-											"entries": [
-												"这条二十尺宽的走廊墙边排列着七个商贩摊位。其中五个摊位处于不同程度的破败状态。另外两个被东侧墙壁部分坍塌的阳台落石压毁。西墙高处有两扇紧闭的窗户。"
-											]
-										},
-										"有关阳台的描述，请参阅区域 {@area S13|163|x} 和 {@area S17|16a|x}。",
-										{
-											"ENG_name": "Treasure",
-											"name": "宝藏",
-											"type": "entries",
-											"page": 70,
-											"id": "150",
-											"entries": [
-												"一个角色翻找摊位1分钟（或被掩埋在瓦砾下的摊位需要1小时）可以执行一次{@action 搜索|XPHB}动作来进行一次{@dc 13}感知（{@skill 察觉|XPHB}）检定，成功则发现宝藏。一旦摊位的宝藏被发现，那里就再没有其他有价值的东西了。",
-												"角色们搜索的第一个隔间是空的。他们按以下顺序发现其他隔间的宝藏：",
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
 												{
-													"type": "list",
-													"style": "list-decimal",
-													"items": [
-														"水晶盒（价值20金币），内含四瓶{@item 通晓药水|XDMG|通晓药水}",
-														"镶嵌血石的金戒指（价值250金币）",
-														"描绘红色巨龙的挂毯（价值750金币）",
-														"{@item 治疗药水|XDMG}（强效）",
-														"{@item 火蛋白石|XDMG}（价值1000金币）",
-														"{@item 秘银甲|XDMG}（胸甲）"
-													]
-												}
-											]
-										},
-										{
-											"ENG_name": "Windows",
-											"name": "窗户",
-											"type": "entries",
-											"page": 70,
-											"id": "151",
-											"entries": [
-												"这些窗户朝向大厅，位于西侧地面13英尺高处。它们由玻璃钢制成（详见\"{@area 星玻璃航点特性|137|x}\"）。通过这些窗户可以俯瞰两个豪华套房（区域{@area S21|173|x}和{@area S22|176|x}）。"
-											]
-										}
-									]
-								},
-								{
-									"ENG_name": "S8: Ylagan's Watch",
-									"name": "S8：伊拉根的守望",
-									"type": "entries",
-									"page": 70,
-									"id": "152",
-									"entries": [
-										{
-											"type": "insetReadaloud",
-											"page": 70,
-											"id": "153",
-											"entries": [
-												"一座玻璃阶梯与玻璃围栏的电梯通向十尺高的阳台，环绕着大厅的北墙与东墙。另一部电梯的滑动门嵌在西南角落的西墙里。东墙上一扇门紧闭着。向西延伸的隧道被一道二十尺高、二十尺宽的整齐堆砌碎石墙所阻断。虽然这处大厅看似空无一人，但你挥之不去被注视的感觉！"
-											]
-										},
-										"当角色们首次抵达此处时，位于星界传送门室（区域{@area S12|15d|x}）的智能物品{@item 吞噬袋|XDMG}会再次与他们进行心灵感应交流：",
-										{
-											"type": "insetReadaloud",
-											"page": 70,
-											"id": "154",
-											"entries": [
-												"\"你已经很接近了。越过这片废墟就是龙的宝库。你将在那里找到我。\""
-											]
-										},
-										"幼年黄铜龙{@creature 青年黄铜龙|XMM}从碎石墙（区域{@area S10|157|x}）内部观察着队伍。"
-									]
-								},
-								{
-									"ENG_name": "S9: Maintenance Corridor",
-									"name": "S9：维护走廊",
-									"type": "entries",
-									"page": 70,
-									"id": "155",
-									"entries": [
-										{
-											"type": "insetReadaloud",
-											"page": 70,
-											"id": "156",
-											"entries": [
-												"门打开后露出一条狭窄、曲折的走廊，充满了彩虹色的薄雾。"
-											]
-										},
-										"当吉斯扬基人占据前哨站时，魔冢利用这条走廊绕开拥挤区域。彩虹色的气体使走廊处于{@variantrule 轻度遮蔽|XPHB}状态，这是一种无法解释的现象。",
-										"当处于毒气区域内及离开后的1分钟内，生物将获得{@condition 中毒|XPHB}状态，表现为急性恶心和定向障碍。毒气不会扩散至前哨站的其他区域。可通过安全站（区域{@area S18|16b|x}）内的控制面板暂时清除毒气。"
-									]
-								},
-								{
-									"ENG_name": "S10: Dragon in the Rubble",
-									"name": "S10: 废墟中的巨龙",
-									"type": "entries",
-									"page": 71,
-									"id": "157",
-									"entries": [
-										"伊拉甘在星界之门大厅（区域{@area S12|15d|x}）建造了一堵高20英尺、宽20英尺、厚10英尺的碎石墙，以封闭通往他的宝藏的通道。利用他的掘地速度，伊拉甘可以轻松穿过碎石，并且擅长迅速在身后（或周围）重建墙壁，以防止其他人通过。",
-										"当角色们首次抵达时，{@creature 青年黄铜龙|XMM}已与它从收藏的{@item 命令土元素石核|XDMG}召唤出的{@creature 土元素|XMM}一同掩埋在瓦砾中。该元素生物听从巨龙指挥。二者均具备{@table 掩护|XPHB|全身掩护}。藏身期间，伊拉甘运用{@sense 盲视|XPHB}，而元素生物则通过{@sense 震颤感知|XPHB}来探查墙外动静。",
-										{
-											"ENG_name": "Roleplaying Ylagan",
-											"name": "扮演伊拉甘",
-											"type": "entries",
-											"page": 71,
-											"id": "158",
-											"entries": [
-												"敌对青年龙认为角色们回到星界传送门房间（区域 {@area S12|15d|x}）是为了偷取更多它的财宝，至少已经成功过一次。作为 {@action 影响|XPHB} 动作，角色可以尝试用一次成功的 {@dc 17} 魅力（{@skill 游说|XPHB}）检定来说服伊拉甘他们并非盗窃的实施者。",
-												"一旦确认角色们不是他所追捕的窃贼，亚拉甘只会在他们威胁到他或他的宝藏时才会与他们战斗。此外，他会请求他们帮忙找到从他宝库中偷取宝石的小偷。如果角色们索要报酬，亚拉甘表示他愿意用自己宝库中的一件魔法斗篷（{@item 万众时尚斗篷|XDMG}）作为交换来换取他们的帮助。",
-												"伊拉甘对角色们被一个心灵感应的袋子引诱到{@area 星镜路标|136|x}的说法似乎持怀疑态度，但他足够聪明，知道有些魔法物品是具有意识的，因此他并没有完全否定这个说法。如果角色们提出购买这个袋子，伊拉甘愿意以2000金币或其他等价物出售给他们。（如果他们达成交易，巨龙坚持要求角色们待在原地，等待他取来袋子。）"
-											]
-										},
-										{
-											"ENG_name": "Ylagan in Combat",
-											"name": "伊拉甘 战斗表现",
-											"type": "entries",
-											"page": 71,
-											"id": "159",
-											"entries": [
-												"如果角色们的言行表明他们打算杀死他或掠夺他的宝藏，伊拉甘会从藏身处使用他的睡眠吐息，试图尽可能多地覆盖目标区域。随后他会从碎石中冲出，与未被气体催眠的角色们战斗。",
-												"在战斗中，每当伊拉甘开始其回合处于{@status 浴血|XPHB}状态时，他会进行一次{@dc 10}感知豁免检定。若豁免失败，伊拉甘的自我保护本能会驱使他通过最安全的路线逃离，要么返回他的财宝库（区域{@area S12|15d|x}），要么离开前哨站。这条龙重视自己的生命胜过财宝。但他会对那些迫使他逃离的人怀恨在心。"
-											]
-										},
-										{
-											"ENG_name": "Clearing the Rubble",
-											"name": "清除碎石",
-											"type": "entries",
-											"page": 71,
-											"id": "15a",
-											"entries": [
-												"一名角色可以在10分钟内清理一块5英尺见方的瓦砾。多名角色同时工作可以按比例缩短所需时间。"
-											]
-										},
-										{
-											"ENG_name": "Hidden Door",
-											"name": "隐藏门",
-											"type": "entries",
-											"page": 71,
-											"id": "15b",
-											"entries": [
-												"碎石遮蔽了南墙的一扇门，其后楼梯通往一条走廊（区域 {@area S19|170|x}）。"
-											]
-										}
-									]
-								},
-								{
-									"ENG_name": "S11: Access Way",
-									"name": "S11: 入口通道",
-									"type": "entries",
-									"page": 71,
-									"id": "15c",
-									"entries": [
-										"两座从地板延伸到天花板的石制旋转栅栏挡住了通往星界传送门室的路（区域{@area S12|15d|x}）。这些旋转栅栏墙可以手动逆时针旋转，以允许大型或更小的生物通过。对大型生物（包括伊拉甘）来说，这些旋转栅栏是{@variantrule 困难地形|XPHB}。",
-										"在转门西侧，生物可通过玻璃墙电梯或两侧的楼梯下降10英尺到达星界门厅（区域S12）（详见\"{@area 星玻璃航点特性|137|x}\"）。"
-									]
-								},
-								{
-									"ENG_name": "S12: Astral Gate",
-									"name": "S12: 星界之门",
-									"type": "entries",
-									"page": 71,
-									"id": "15d",
-									"entries": [
-										{
-											"type": "insetReadaloud",
-											"page": 71,
-											"id": "15e",
-											"entries": [
-												"这个宽敞房间的墙壁向内倾斜，在地板上方60英尺处汇合，形成类似金字塔结构的顶点。碎石沿着墙壁堆积。房间的中心是一座20英尺高的紫色石拱门，拱顶处有一道缺口。明亮的紫色余烬从拱门的断裂处喷出，如同烟雾般向上飘散。拱门后方整齐堆放着大量钱币和其他财宝。"
-											]
-										},
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "adventure/DrDe/068-04-002.astral-gate.webp"
-											},
-											"title": "星界之门",
-											"credit": "Justine Jones",
-											"width": 1700,
-											"height": 1169
-										},
-										"这些碎石堆是{@variantrule 困难地形|XPHB}。",
-										{
-											"ENG_name": "Astral Gate",
-											"name": "星界之门",
-											"type": "entries",
-											"page": 71,
-											"id": "15f",
-											"entries": [
-												"紫色拱门曾是通往星界吉斯洋基城市的一个双向传送门。这个传送门已经遭到无法修复的损坏，无法正常工作。任何进入拱门两半之间空间或在其回合开始时位于该区域的生物会受到11（{@dice 2d10}）点心灵伤害。"
-											]
-										},
-										{
-											"ENG_name": "Dragon's Hoard",
-											"name": "巨龙宝库",
-											"type": "entries",
-											"page": 71,
-											"id": "160",
-											"entries": [
-												"除非伊拉甘已撤退至此处房间，否则巨龙宝藏无人看守。其包括如下物品：",
+													"ENG_name": "Initiative Tracker",
+													"name": "先攻追踪者",
+													"type": "item",
+													"entry": "在战斗中，一名玩家负责记录角色与怪物的先攻顺序。"
+												},
 												{
-													"type": "list",
-													"items": [
-														"600金币、9,000银币和45,000铜币的散钱",
-														"青铜瓮，内含八颗有瑕疵的红宝石（每颗价值50金币）和一条镶嵌月光石泪滴的银项链（价值750金币）",
-														"七个翡翠宝珠（每个价值100金币），每个宝珠上以炼狱语刻有九层地狱之一的名字（阿弗纳斯、迪斯、弥瑙洛斯、弗莱格索斯、马尔博吉、马拉多米尼和卡尼亚；斯泰吉亚和奈瑟斯的宝珠未包含在伊拉甘的收藏中）",
-														"看起来像是空无的{@item 次元袋|XDMG}的{@item 吞噬袋|XDMG}（参见下方\"凯利弗隆\"）",
-														"{@item 万众时尚斗篷|XDMG}被整齐地折叠着",
-														"{@item +1 长矛|XDMG}",
-														"{@item 命令土元素石核|XDMG}"
-													]
+													"ENG_name": "Monster Wranglers",
+													"name": "怪物操手",
+													"type": "item",
+													"entry": "当角色与敌对怪物进入战斗时，由一到两名玩家使用{@book 怪物图鉴|XMM}中的这些数据卡来操控怪物。（两名玩家可共同承担此职责。）"
+												},
+												{
+													"ENG_name": "Rules Consultant",
+													"name": "规则顾问",
+													"type": "item",
+													"entry": "一名玩家根据需要查阅{@book 玩家手册|XPHB}或其他书籍中的规则。"
 												}
 											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Adventures for One Character",
+									"name": "单人角色冒险",
+									"type": "entries",
+									"id": "00c",
+									"page": 6,
+									"entries": [
+										"尽管{@book 城主指南|XDMG}解释了如何根据队伍规模调整冒险，但其中三个冒险（在目录中标示）特别适合单人冒险者游玩。这些冒险都包含确保角色面临适当挑战的指示说明。",
+										"这些说明的核心是{@reward 孤勇者祝福|DrDe}，一种增强单人角色属性的超自然赠礼。",
+										{
+											"ENG_name": "Blessing of the Lone Champion",
+											"name": "孤勇者祝福",
+											"type": "statblock",
+											"tag": "reward",
+											"source": "DrDe",
+											"page": 6
+										},
+										"祝福的持续时间为本次冒险的时长。"
+									]
+								},
+								{
+									"ENG_name": "A Draconic History",
+									"name": "龙族历史",
+									"type": "inset",
+									"id": "00e",
+									"page": 6,
+									"entries": [
+										"除了十个冒险故事外，本书还包含特别章节，展示了每种龙类的艺术画作，涵盖了《龙与地下城》近50年历史\u2014\u2014从1977年的《怪物手册》直至2025年发行的最新版本。过去五十年间，所有十种龙类的形象都经历了显著演变，但仔细观察这些画作仍能发现传承元素：从蓝龙的鼻角到银龙的冠冕，皆一脉相承。",
+										"艺术家托德·洛克伍德为2000年《龙与地下城》第三版的发布牵头对十种龙类进行了全面修订，其设计基于现实世界动物的解剖结构，并与早期设计保持了某些延续性。除少量变体外，这些设计为D&D的龙类确立了延续二十余年的标准。",
+										"为迎接2025年《{@book 怪物图鉴|XMM}》的发行，艺术指导乔什·赫尔曼在D&D进入第二个半世纪之际，主导了对所有巨龙形象的全面翻新。本次重新设计旨在通过外观突显每条巨龙的独特身份\u2014\u2014包括个性、偏好栖息地和战斗风格\u2014\u2014确保每种龙类的视觉辨识度得以彰显。",
+										"同样地，本书着重展示了以某一类巨龙为主题的冒险会如何与其他冒险体验截然不同。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Adventures",
+							"name": "冒险",
+							"type": "section",
+							"id": "00d",
+							"entries": [
+								{
+									"type": "list",
+									"columns": 3,
+									"items": [
+										"{@adventure 日落时分的死神（1级）|DrDe-DaS|1}",
+										"{@adventure 面包师的捉襟见肘（3级）|DrDe-BD|1}",
+										"{@adventure 奥喀斯之命（4级）|DrDe-TWoO|1}",
+										"{@area 虚空唤谁而鸣（5级）|12b|x}",
+										"{@adventure 纳基凯尔之龙（7级）|DrDe-TDoN|1}",
+										"{@adventure 禁忌谷（9级）|DrDe-TFV|1}",
+										"{@adventure 风暴将临（10级）|DrDe-BtS|1}",
+										"{@adventure 夺命颤寒（11级）|DrDe-SD|1}",
+										"{@adventure 一枚铜币换一首歌（12级）|DrDe-ACfaS|1}",
+										"{@adventure 砂岩城之龙（12级）|DrDe-DotSC|1}"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "For Whom the Void Calls",
+					"name": "虚空唤谁而鸣",
+					"type": "section",
+					"id": "12b",
+					"page": 65,
+					"entries": [
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								"{@i {@b An adventure for Level 5 characters.}}",
+								"{@i 该冒险的长度为一至两次团。}",
+								"{@i 它可以发生在任何有河流穿过的峡谷中。}"
+							]
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "adventure/DrDe/065-04-001.chapter-four-splash.webp"
+							},
+							"width": 1700,
+							"height": 2200,
+							"credit": "Justine Jones"
+						},
+						{
+							"ENG_name": "Key Plot Points",
+							"name": "关键剧情节点",
+							"type": "section",
+							"id": "12c",
+							"page": 65,
+							"entries": [
+								"以下信息对冒险故事至关重要：",
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"ENG_name": "Distress Call",
+											"name": "求救信号",
+											"type": "item",
+											"entry": "冒险者们接收到一条心灵感应求救信号。信号发送者声称自己是一个有知性的{@item 次元袋|XDMG}，最近被一条恶龙偷走。这个袋子乞求获救。"
 										},
 										{
-											"ENG_name": "Keliphron",
-											"name": "凯利弗隆",
-											"type": "entries",
-											"page": 72,
-											"id": "161",
-											"entries": [
-												"一旦被发现，凯利弗隆的表现与任何其他{@item 吞噬袋|XDMG}无异。被袋子吞噬后吐出的物体会被抛入遥远国度并永远消失。"
-											]
+											"ENG_name": "Far Realm Connection",
+											"name": "遥远国度连接",
+											"type": "item",
+											"entry": "冒险者们并不知道，求救信号的发送者实际上是一个{@item 吞噬袋|XDMG}。它是一个栖息于遥远国度（Far Realm）的邪恶跨维度生物的进食口器，能够通过心灵感应与袋子1英里范围内的生物联系。"
+										},
+										{
+											"ENG_name": "Starglass Waypoint",
+											"name": "星镜路标",
+											"type": "item",
+											"entry": "回应心灵感应求救信号的角色会被引导至{@area 星镜路标|136|x}，那里曾经是一处位面传送门所在地，现在是一头名为伊拉甘的黄铜幼龙的巢穴。{@item 吞噬袋|XDMG}就藏于龙的财宝堆中。当他们探索星辉之路站时，角色可能会遭遇一位严厉的吉斯洋基骑士、失常的魔冢，以及一头对宝物不断从魔法袋中消失感到厌烦的龙。"
 										}
 									]
 								}
 							]
 						},
 						{
-							"ENG_name": "Upper Level Locations",
-							"name": "上层区域地点",
-							"type": "entries",
-							"page": 72,
-							"id": "162",
+							"ENG_name": "Preparation",
+							"name": "预备",
+							"type": "section",
+							"id": "12d",
+							"page": 65,
 							"entries": [
+								"在开始冒险之前，请按照以下步骤进行准备：",
 								{
-									"type": "gallery",
-									"images": [
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
 										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "adventure/DrDe/069-map-04.02-starglass-waypoint-upper-leveldm.webp"
-											},
-											"imageType": "map",
-											"title": "地图4.2：星镜航点上层",
-											"credit": "Dyson Logos",
-											"width": 3648,
-											"height": 4096,
-											"id": "410",
-											"grid": {
-												"type": "square",
-												"size": 104,
-												"offsetX": 4,
-												"offsetY": 2
-											},
-											"mapRegions": [
-												{
-													"area": "167",
-													"points": [
-														[
-															1569,
-															2928
-														],
-														[
-															1569,
-															3333
-														],
-														[
-															1865,
-															3333
-														],
-														[
-															1865,
-															2928
-														]
-													]
-												},
-												{
-													"area": "163",
-													"points": [
-														[
-															2507,
-															733
-														],
-														[
-															2805,
-															728
-														],
-														[
-															2805,
-															940
-														],
-														[
-															3015,
-															940
-														],
-														[
-															3015,
-															1143
-														],
-														[
-															2821,
-															1143
-														],
-														[
-															2821,
-															1346
-														],
-														[
-															2915,
-															1346
-														],
-														[
-															2915,
-															1874
-														],
-														[
-															3012,
-															1937
-														],
-														[
-															3012,
-															1357
-														],
-														[
-															3121,
-															1357
-														],
-														[
-															3121,
-															638
-														],
-														[
-															2507,
-															638
-														]
-													]
-												},
-												{
-													"area": "163",
-													"points": [
-														[
-															3015,
-															2185
-														],
-														[
-															2963,
-															2248
-														],
-														[
-															2924,
-															2275
-														],
-														[
-															2924,
-															2496
-														],
-														[
-															3022,
-															2496
-														],
-														[
-															3130,
-															2604
-														],
-														[
-															3130,
-															2952
-														],
-														[
-															3188,
-															2988
-														],
-														[
-															3229,
-															3046
-														],
-														[
-															3229,
-															2557
-														],
-														[
-															3072,
-															2400
-														],
-														[
-															3015,
-															2400
-														]
-													]
-												},
-												{
-													"area": "163",
-													"points": [
-														[
-															2498,
-															2621
-														],
-														[
-															2498,
-															3022
-														],
-														[
-															1980,
-															3022
-														],
-														[
-															1980,
-															3121
-														],
-														[
-															2189,
-															3121
-														],
-														[
-															2189,
-															3336
-														],
-														[
-															2088,
-															3336
-														],
-														[
-															2088,
-															3225
-														],
-														[
-															1984,
-															3225
-														],
-														[
-															1984,
-															3640
-														],
-														[
-															2392,
-															3640
-														],
-														[
-															2392,
-															3437
-														],
-														[
-															2607,
-															3437
-														],
-														[
-															2607,
-															3126
-														],
-														[
-															2972,
-															3126
-														],
-														[
-															3003,
-															3171
-														],
-														[
-															3017,
-															3221
-														],
-														[
-															2701,
-															3221
-														],
-														[
-															2701,
-															3748
-														],
-														[
-															1876,
-															3748
-														],
-														[
-															1876,
-															2923
-														],
-														[
-															2399,
-															2923
-														],
-														[
-															2399,
-															2621
-														]
-													]
-												},
-												{
-													"area": "164",
-													"points": [
-														[
-															2724,
-															3250
-														],
-														[
-															2724,
-															3541
-														],
-														[
-															3326,
-															3541
-														],
-														[
-															3326,
-															3250
-														]
-													]
-												},
-												{
-													"area": "16b",
-													"points": [
-														[
-															2489,
-															2605
-														],
-														[
-															2025,
-															2605
-														],
-														[
-															1880,
-															2460
-														],
-														[
-															1880,
-															2152
-														],
-														[
-															2033,
-															1999
-														],
-														[
-															2336,
-															1999
-														],
-														[
-															2486,
-															2144
-														]
-													]
-												},
-												{
-													"area": "17b",
-													"points": [
-														[
-															951,
-															1799
-														],
-														[
-															975,
-															1762
-														],
-														[
-															1034,
-															1723
-														],
-														[
-															1065,
-															1691
-														],
-														[
-															1094,
-															1671
-														],
-														[
-															1129,
-															1678
-														],
-														[
-															1165,
-															1676
-														],
-														[
-															1189,
-															1650
-														],
-														[
-															1236,
-															1624
-														],
-														[
-															1291,
-															1622
-														],
-														[
-															1316,
-															1685
-														],
-														[
-															1345,
-															1698
-														],
-														[
-															1390,
-															1719
-														],
-														[
-															1402,
-															1792
-														],
-														[
-															1421,
-															1825
-														],
-														[
-															1425,
-															1861
-														],
-														[
-															1452,
-															1909
-														],
-														[
-															1438,
-															1965
-														],
-														[
-															1426,
-															1999
-														],
-														[
-															1404,
-															2020
-														],
-														[
-															1380,
-															2068
-														],
-														[
-															1335,
-															2075
-														],
-														[
-															1304,
-															2072
-														],
-														[
-															1266,
-															2099
-														],
-														[
-															1238,
-															2138
-														],
-														[
-															1153,
-															2134
-														],
-														[
-															1098,
-															2124
-														],
-														[
-															1048,
-															2086
-														],
-														[
-															1024,
-															2049
-														],
-														[
-															1013,
-															2036
-														],
-														[
-															985,
-															2011
-														],
-														[
-															985,
-															1977
-														],
-														[
-															961,
-															1947
-														],
-														[
-															947,
-															1885
-														],
-														[
-															966,
-															1864
-														],
-														[
-															972,
-															1825
-														]
-													]
-												},
-												{
-													"area": "17b",
-													"points": [
-														[
-															1753,
-															1678
-														],
-														[
-															1333,
-															1678
-														],
-														[
-															1400,
-															1709
-														],
-														[
-															1407,
-															1768
-														],
-														[
-															1432,
-															1819
-														],
-														[
-															1459,
-															1871
-														],
-														[
-															1468,
-															1937
-														],
-														[
-															1468,
-															1968
-														],
-														[
-															1753,
-															1968
-														]
-													]
-												},
-												{
-													"area": "177",
-													"points": [
-														[
-															1145,
-															1363
-														],
-														[
-															1145,
-															1657
-														],
-														[
-															1760,
-															1657
-														],
-														[
-															1760,
-															1363
-														]
-													]
-												},
-												{
-													"area": "173",
-													"points": [
-														[
-															1995,
-															1368
-														],
-														[
-															1995,
-															1975
-														],
-														[
-															2597,
-															1975
-														],
-														[
-															2597,
-															1368
-														]
-													]
-												},
-												{
-													"area": "172",
-													"points": [
-														[
-															1563,
-															1152
-														],
-														[
-															1563,
-															1349
-														],
-														[
-															1767,
-															1349
-														],
-														[
-															1767,
-															1152
-														]
-													]
-												},
-												{
-													"area": "170",
-													"points": [
-														[
-															2490,
-															1166
-														],
-														[
-															1781,
-															1166
-														],
-														[
-															1781,
-															1977
-														],
-														[
-															1966,
-															1977
-														],
-														[
-															1966,
-															1342
-														],
-														[
-															2490,
-															1342
-														]
-													]
-												},
-												{
-													"area": "169",
-													"points": [
-														[
-															3026,
-															3216
-														],
-														[
-															2981,
-															2985
-														],
-														[
-															3133,
-															2964
-														],
-														[
-															3174,
-															2992
-														],
-														[
-															3226,
-															3054
-														],
-														[
-															3228,
-															3081
-														],
-														[
-															3087,
-															3216
-														]
-													]
-												},
-												{
-													"area": "16a",
-													"points": [
-														[
-															3013,
-															1947
-														],
-														[
-															2899,
-															1875
-														],
-														[
-															2884,
-															1954
-														],
-														[
-															2894,
-															2037
-														],
-														[
-															2898,
-															2144
-														],
-														[
-															2898,
-															2219
-														],
-														[
-															2936,
-															2248
-														],
-														[
-															3013,
-															2169
-														]
-													]
-												}
-											],
-											"hrefThumbnail": {
-												"type": "internal",
-												"path": "adventure/DrDe/thumbnail/069-map-04.02-starglass-waypoint-upper-leveldm.webp"
-											}
+											"ENG_name": "Step 1",
+											"name": "第一步",
+											"type": "item",
+											"entry": "请阅读\"{@area 冒险背景|12e|x}\"部分。"
 										},
 										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "adventure/DrDe/070-map-04.02-starglass-waypoint-upper-level-player.webp"
-											},
-											"imageType": "mapPlayer",
-											"title": "玩家版本",
-											"width": 3648,
-											"height": 4096,
-											"credit": "Dyson Logos",
-											"mapParent": {
-												"id": "410"
-											},
-											"grid": {
-												"type": "square",
-												"size": 104,
-												"offsetX": 4,
-												"offsetY": 2
-											}
+											"ENG_name": "Step 2",
+											"name": "第二步",
+											"type": "item",
+											"entry": "检查区域 {@area S18|16b|x}（位于\"{@area 上层区域地点|162|x}\"）。如果觉得过于复杂，可跳过本节。"
+										},
+										{
+											"ENG_name": "Step 3",
+											"name": "第三步",
+											"type": "item",
+											"entry": "请熟悉以下关键NPC表。在冒险过程中，角色们将与这些NPC互动。"
+										},
+										{
+											"ENG_name": "Step 4",
+											"name": "第四步",
+											"type": "item",
+											"entry": "阅读关于{@item 吞噬袋|XDMG}的描述（选自{@book 城主指南|XDMG}或在D&D Beyond上）。此外，也可以查看关于星界和遥远国度的描述。"
+										},
+										{
+											"ENG_name": "Step 5",
+											"name": "第五步",
+											"type": "item",
+											"entry": "在《{@book 怪物图鉴|XMM}》或D&DBeyond中标记以下的数据卡。"
 										}
 									]
 								},
-								"以下位置与{@area 地图：星玻传送点上阶|410|x}相对应。",
 								{
-									"ENG_name": "S13: Balcony",
-									"name": "S13: 阳台",
-									"type": "entries",
-									"page": 72,
-									"id": "163",
-									"entries": [
-										"这个10英尺高的阳台俯瞰着前哨站下层的东端区域（包括{@area S2|140|x}、{@area S3|142|x}、{@area S7|14e|x}和{@area S8|152|x}）。阳台由光滑的雕刻石料制成，配有3英尺高的栏杆，栏杆由紧绷的金属缆绳构成，缆绳固定在间隔5英尺的黄铜柱之间。",
-										"地震导致阳台在两处坍塌\u2014\u2014详情参见区域{@area S16|169|x}和{@area S17|16a|x}。"
+									"type": "list",
+									"columns": 3,
+									"items": [
+										"{@creature 青年黄铜龙|XMM|黄铜龙（青年）}",
+										"{@creature 土元素|XMM}",
+										"{@creature 吉斯洋基骑士|XMM}",
+										"{@creature 隐形追猎者|XMM}",
+										"{@creature 带翼狗头人|XMM|翼龙狗头人}",
+										"{@creature 拟身怪|XMM}",
+										"{@creature 魔冢·二元冢|XMM}",
+										"{@creature 魔冢·四元冢|XMM}",
+										"{@creature 魔冢·三元冢|XMM}",
+										"{@creature 蔓生怪|XMM}",
+										"{@creature 史拉蓝蟾|XMM|史拉蓝蟾}",
+										"{@creature 观察者眼魔|XMM}",
+										"{@creature 水元素|XMM}"
 									]
 								},
 								{
-									"ENG_name": "S14: Abandoned Garden",
-									"name": "S14: 废弃花园",
-									"type": "entries",
-									"page": 72,
-									"id": "164",
-									"entries": [
-										{
-											"type": "insetReadaloud",
-											"page": 72,
-											"id": "165",
-											"entries": [
-												"魔法光芒充斥这个长方形房间。光线源自天花板上三个玻璃穹顶，照耀下方五尺宽、二十尺长的植物床，床上堆满腐烂植被。"
-											]
-										},
-										"仔细观察植物丛可发现藤蔓间有两处锈蚀的突起\u2014\u2014这是洒水器的喷头，如今仅能滴落铁锈色的水珠。",
-										"如果有角色靠近花圃5英尺范围内，请念出：",
-										{
-											"type": "insetReadaloud",
-											"page": 72,
-											"id": "166",
-											"entries": [
-												"腐烂的植被聚集起来，形成两团蠕动的物体，蹒跚地向你移动。"
-											]
-										},
-										"这些藤蔓变为两个{@creature 蔓生怪|XMM|蔓生怪}攻击入侵者。这些生物会追捕逃跑的目标，若未被摧毁则会在1小时后化为无生命植被。"
-									]
+									"ENG_name": "Young Brass Dragon",
+									"name": "青年黄铜龙",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
 								},
 								{
-									"ENG_name": "S15: Teleportation Circle",
-									"name": "S15: 传送法阵",
-									"type": "entries",
-									"page": 74,
-									"id": "167",
-									"entries": [
-										{
-											"type": "insetReadaloud",
-											"page": 74,
-											"id": "168",
-											"entries": [
-												"这个空荡荡的房间地面上铭刻着一个十英尺直径的圆环，内含几何符号与奥术符文。"
-											]
-										},
-										"地板上的圆圈是一个永久传送法阵（详见{@book 玩家手册|XPHB}中的{@spell 传送法阵|XPHB}法术）。"
-									]
+									"ENG_name": "Young Brass Dragon",
+									"name": "青年黄铜龙",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
 								},
 								{
-									"ENG_name": "S16: Collapsed Balcony",
-									"name": "S16：坍塌的阳台",
-									"type": "entries",
-									"page": 74,
-									"id": "169",
-									"entries": [
-										"此处部分阳台已坍塌，形成了一个10英尺宽的缺口。尝试跳跃缺口但失败的生物将坠落10英尺至{@area S3|142|x}区域。"
-									]
+									"ENG_name": "Earth Elemental",
+									"name": "土元素",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
 								},
 								{
-									"ENG_name": "S17: Collapsed Balcony",
-									"name": "S17：坍塌的阳台",
-									"type": "entries",
-									"page": 74,
-									"id": "16a",
-									"entries": [
-										"一处15英尺长的阳台在这里坍塌。尝试跳跃缺口但失败的生物会坠入下方10英尺处的{@area S7|14e|x}区域。"
-									]
+									"ENG_name": "Earth Elemental",
+									"name": "土元素",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
 								},
 								{
-									"ENG_name": "S18: Security Station",
-									"name": "S18: 安全站",
+									"ENG_name": "Githyanki Knight",
+									"name": "吉斯洋基骑士",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Githyanki Knight",
+									"name": "吉斯洋基骑士",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Invisible Stalker",
+									"name": "隐形追猎者",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Invisible Stalker",
+									"name": "隐形追猎者",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Winged Kobold",
+									"name": "带翼狗头人",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Winged Kobold",
+									"name": "带翼狗头人",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Mimic",
+									"name": "拟身怪",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Mimic",
+									"name": "拟身怪",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Modron Duodrone",
+									"name": "魔冢·二元冢",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Modron Duodrone",
+									"name": "魔冢·二元冢",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Modron Quadrone",
+									"name": "魔冢·四元冢",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Modron Quadrone",
+									"name": "魔冢·四元冢",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Modron Tridrone",
+									"name": "魔冢·三元冢",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Modron Tridrone",
+									"name": "魔冢·三元冢",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Shambling Mound",
+									"name": "蔓生怪",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Shambling Mound",
+									"name": "蔓生怪",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Blue Slaad",
+									"name": "史拉蓝蟾",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Blue Slaad",
+									"name": "史拉蓝蟾",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Spectator",
+									"name": "观察者眼魔",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Spectator",
+									"name": "观察者眼魔",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Water Elemental",
+									"name": "水元素",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Water Elemental",
+									"name": "水元素",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
+								},
+								{
+									"type": "table",
+									"caption": "关键NPCs",
+									"page": 65,
+									"colLabels": [
+										"名称",
+										"职能",
+										"数据卡",
+										"位置"
+									],
+									"colStyles": [
+										"col-3-5",
+										"col-3-5",
+										"col-2-5",
+										"col-2-5"
+									],
+									"rows": [
+										[
+											"博布辛",
+											"盗贼",
+											"{@creature 带翼狗头人|XMM}",
+											"{@area S24|17b|x}"
+										],
+										[
+											"凯利弗隆",
+											"有意识的{@item 吞噬袋|XDMG}，自称是{@item 次元袋|XDMG}",
+											"\u2014",
+											"{@area S12|15d|x}"
+										],
+										[
+											"卡拉·瓦尔雷斯",
+											"守卫前哨站的魔像",
+											"{@creature 吉斯洋基骑士|XMM}（守序中立）",
+											"{@area S18|16b|x}"
+										],
+										[
+											"伊拉甘",
+											"巢穴中藏有{@item 吞噬袋|XDMG}的龙",
+											"{@creature 青年黄铜龙|XMM}",
+											"{@area S10|157|x}"
+										]
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Adventure Background",
+							"name": "冒险背景",
+							"type": "section",
+							"id": "12e",
+							"page": 66,
+							"entries": [
+								"一百多年前，吉斯扬基人和魔冢建造了{@area 星镜路标|136|x}作为一处孵化场\u2014\u2014一个安全且隐蔽的地方，用以养育和训练他们的后代。这座前哨站深处的位面传送门曾允许吉斯扬基人自由往返于星界。九年前，一场地震损坏了位面传送门后，吉斯扬基人放弃了这座前哨站，但留下了负责维护的魔冢。",
+								"一年前，一条名为伊拉甘的黄铜龙幼龙将这个前哨站据为自己的巢穴。",
+								{
+									"ENG_name": "The Bag of Devouring",
+									"name": "吞噬之袋",
 									"type": "entries",
-									"page": 74,
-									"id": "16b",
+									"id": "12f",
+									"page": 66,
 									"entries": [
-										"这是一个复杂的场景，因此在向玩家朗读以下文本以营造氛围前，请仔细审阅：",
+										"当大约一年前伊拉甘抵达时，模组们接受了他的领导，并开始改造前哨站以满足巨龙的需求。与此同时，伊拉甘在星玻璃哨站周边的土地上搜寻财宝，以充实他那微薄的藏品。一周前，他发现了因脱水而死的冒险者遗骸。在冒险者的物品中，有一个魔法袋子，被巨龙误认为是{@item 次元袋|XDMG}。",
+										"伊拉甘把袋子带回家，并在里面存放了一些他最喜欢的宝石。第二天，他惊恐地发现袋子空了。不知道这实际上是一个{@item 吞噬袋|XDMG}并已经吞噬了那些宝石，伊拉甘命令模组人在前哨站中搜查窃贼。当没有发现入侵者时，这条龙开始怀疑一个或多个模组人可能偷走了宝石。",
+										"两天前，伊拉甘为了验证他的理论，将一些不太贵重的财宝放入袋中并无人看管，而他自己则在哨站入口处守望。一天后，袋子空了！伊拉甘指责魔冢偷走了他的财宝，并在一怒之下摧毁了其中几个。接着他用碎石堵住了通往他藏宝处的隧道，并开始猎杀剩余的魔冢。",
+										"被摧毁的魔冢化为尘埃，未留一丝痕迹。其中一名幸存的魔冢触发了前哨站指挥中心的无声警报，向星界的吉斯洋基人要塞发送了信号。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Beginning the Adventure",
+							"name": "开始冒险",
+							"type": "section",
+							"id": "130",
+							"page": 66,
+							"entries": [
+								"冒险者们正穿行于峡谷之中，突然接收到一道心灵感应求救信号。请朗读或转述以下内容来铺垫场景：",
+								{
+									"type": "insetReadaloud",
+									"id": "131",
+									"page": 66,
+									"entries": [
+										"你正穿行于一个寂静的峡谷中，没有鸟兽的踪迹。就连富含矿物质的碧绿色河流也静止不动。峡谷岩壁上装饰着铜红色与板岩蓝相间的条纹。有时，一片空气会在酷热中闪烁摇曳，峡谷的色彩仿佛在灼热的阳光下翩跹起舞。这诡异的寂静突然被一个低沉的男中音打破：「你好，能帮帮我吗？」周遭并无其他生物，因此片刻之后你才意识到这个声音直接回响在你们脑海中。「求你们了，我被一条龙抓走了！」"
+									]
+								},
+								"心灵感应信号源自依附于{@item 吞噬袋|XDMG}的异界生物，该生物能感知袋子1英里范围内的其他生物。它传递以下信息：",
+								{
+									"type": "insetReadaloud",
+									"id": "132",
+									"page": 66,
+									"entries": [
+										"\"我叫凯利弗伦。当时我和同伴阿格斯一起旅行，突然一条龙发现了我们并将我带到了它的巢穴。我担心这条龙永远不会放我走。如果可以的话，请救救我！\""
+									]
+								},
+								"在收到凯利弗隆的消息后，角色可以采取一个{@action 搜索|XPHB}动作并进行一次{@dc 20}感知（{@skill 洞悉|XPHB}）检定。若成功，角色会感觉到凯利弗隆所言属实但含糊其辞。",
+								{
+									"ENG_name": "Questions and Answers",
+									"name": "问题与解答",
+									"type": "entries",
+									"id": "133",
+									"page": 66,
+									"entries": [
+										"克利弗伦在切断与角色的心灵感应联系前会回答三个问题。在任何情况下，克利弗伦都不会透露其真实本质。以下是角色可能会问的一些问题及克利弗伦的回答：",
 										{
-											"type": "insetReadaloud",
-											"page": 74,
-											"id": "16c",
-											"entries": [
-												"这个区域被墙壁上间隔排列的水晶壁灯照得灯火通明。地面是一个巨大的阳台，悬垂在下层的储物间上方，两者之间以玻璃楼梯相连。黄铜柱之间拉起的缆绳构成了环绕阳台的栏杆。西南侧的墙边摆放着一个嗡嗡作响的金属控制台，其倾斜的顶部分布着数个开关和一颗闪烁的红灯。控制台上方的墙面镶嵌着一块椭圆形的深色玻璃板。一个方头方脑的机械生物正紧张地站在控制台旁，它用机械手中的一只紧握着小陶瓷卡片。"
-											]
-										},
-										"控制台旁边的生物是{@creature 魔冢·二元冢|XMM}，它对入侵者漠不关心。这个二重身懂得摩登语和通用手语。如果遭到攻击，二重身会发出可听见的求救声，促使下方储藏室（区域{@area S6|14a|x}）里的四个{@creature 魔冢·四元冢|XMM|模组四元体}上来保护它。有关控制台的更多信息，请参阅下面的\"使用控制台\"。",
-										"使用一张符文卡（详见\"{@area 星玻璃航点特性|137|x}\"），双生体撤退至该位置以避开暴怒的黄铜龙。随后双生体激活了无声警报，导致控制台上的灯泡闪烁红光。",
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "adventure/DrDe/071-04-003.qaara-gith-npc.webp"
-											},
-											"credit": "Justine Jones",
-											"width": 1700,
-											"height": 1210
-										},
-										{
-											"ENG_name": "Qaara's Arrival",
-											"name": "卡拉之降临",
-											"type": "entries",
-											"page": 74,
-											"id": "16d",
-											"entries": [
-												"无声警报触发来自星界中一个吉斯扬基前哨站的响应。在你选择的时刻，一名名为卡菈·瓦勒斯（Qaara Valreth）的守序中立{@creature 吉斯洋基骑士|XMM}传送进房间，尽可能靠近控制台的空闲位置出现。按以下方式描述她的到来：",
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
 												{
-													"type": "insetReadaloud",
-													"page": 74,
-													"id": "16e",
+													"ENG_name": "Who Are You?",
+													"name": "你是谁？",
+													"type": "item",
+													"entry": "\"我是一个{@item 次元袋|XDMG}，被赋予了感知能力。救救我，我就是你的了！\""
+												},
+												{
+													"ENG_name": "Where Are You?",
+													"name": "你在哪里？",
+													"type": "item",
+													"entry": "\"如果你们继续沿着现在的路线前进，将会发现一座横跨峡谷河流的闪烁水晶桥。这座桥通向巨龙位于峡谷岩壁深处的隐秘巢穴入口。\""
+												},
+												{
+													"ENG_name": "Who Is Argus?",
+													"name": "阿戈斯是谁？",
+													"type": "item",
+													"entry": "\"阿古斯是我以前的主人。\""
+												},
+												{
+													"ENG_name": "Did the Dragon Kill Argus?",
+													"name": "是龙杀了阿戈斯吗？",
+													"type": "item",
+													"entry": "\"不，阿格斯在巨龙找到我们之前不久因口渴而死。\""
+												}
+											]
+										},
+										"{@b 关于这条龙，你能告诉我们什么}？\"巨龙渴望财宝，体型大到足以让人骑在它的背上。\"（凯利弗隆无法感知颜色，因此无法辨别龙鳞的颜色。）",
+										"{@b 你能告诉我们关于龙的巢穴的哪些信息}？\"它看起来不像巨龙的巢穴。可能是别的什么人建造的。而且巢穴里还住着一些奇怪的金属生物\u2014\u2014它们会服从巨龙的命令。\"（凯利弗隆指的是模组生物，但他不知道该如何描述它们。）",
+										"如果角色们决定不去营救克利弗龙，它会最后一次建立心灵感应联系并敦促他们重新考虑。接着它描述了巨龙宝藏中的其他财宝（参见区域 {@area S12|15d|x}），希望角色的贪婪能占上风。若此举无效，克利弗龙会告知他们巨龙正在伤害栖息在其巢穴中的金属生物，并敦促角色们为这些生物进行干预。"
+									]
+								},
+								{
+									"ENG_name": "Approaching Starglass Waypoint",
+									"name": "接近星玻之路传送点",
+									"type": "entries",
+									"id": "134",
+									"page": 67,
+									"entries": [
+										"当角色们继续他们的跋涉，沿着峡谷行进近一英里后，请大声朗读或转述以下内容：",
+										{
+											"type": "insetReadaloud",
+											"id": "135",
+											"page": 67,
+											"entries": [
+												"横跨在你前方停滞河流上方的是一座水晶桥，它能捕捉并散射自然光。这座桥连接到嵌入峡谷岩壁、距河面二十英尺高的石制平台上。远端优雅的石拱环绕着一扇由玻璃和黄铜制成的精美双门。"
+											]
+										},
+										"峡谷深200英尺，但河流仅深10英尺。水晶桥安全可通行，通往双扇门（区域{@area S1|13f|x}）。白天时，桥梁闪耀着太阳的金色光芒；夜晚则映射月亮的苍白光辉（{@variantrule 微光光照|XPHB}）。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Starglass Waypoint",
+							"name": "星镜路标",
+							"type": "section",
+							"id": "136",
+							"page": 67,
+							"entries": [
+								"当星界之路传送站通往星界的传送门因地震受损并开始故障时，吉斯洋基人无法修复它，因此他们放弃了这个前哨站。不久之后，这个前哨站变成了被遗忘的废墟，只有吉斯洋基人留下的魔冢栖息其中。",
+								"直到最近，黄铜龙伊拉甘还依赖魔像来帮助建造他的巢穴。此后他已经摧毁了其中的许多魔像。",
+								{
+									"ENG_name": "Starglass Waypoint Features",
+									"name": "星玻璃航点特性",
+									"type": "entries",
+									"id": "137",
+									"page": 67,
+									"entries": [
+										"除非特殊说明，星辉道标具有以下特性。",
+										{
+											"ENG_name": "Glassteel Doors",
+											"name": "玻璃钢门",
+											"type": "entries",
+											"id": "138",
+											"page": 67,
+											"entries": [
+												"建筑群中的所有门都由一种名为玻璃钢的魔法物质制成，这种材料具有玻璃的质地和透明度，同时具备极强的韧性。这些门对所有伤害具有免疫。",
+												"某些门被魔法封印（如{@area 地图：星镜之路低层|40f|x}和{@area 地图：星玻传送点上阶|162|x}所示）。每扇被封印的门上都刻有星形符文，触摸时能感受到温热。解开封印门需要纹章卡或{@spell 敲击术|XPHB}法术。",
+												{
+													"ENG_name": "Glyph Cards",
+													"name": "符文卡片",
+													"type": "entries",
+													"id": "139",
+													"page": 67,
 													"entries": [
-														"银色光点在空中旋舞，随后凝聚成一名瘦削的绿皮人形，身披华丽板甲，手握一柄银质巨剑。"
+														"符文卡是一种大小与扑克牌相近的陶瓷片，上面刻有星形符文并镶嵌蓝色水晶。卡上的符文与星玻璃路标点密封门上的符文相匹配。前哨站人员和访客曾将符文卡用作通行钥匙。这些卡片现在可以在前哨站内的各处找到。",
+														"触碰一张符文卡到封印的门上可将其解锁；门将保持解锁状态1分钟。一旦打开，可以用东西撑住门以防止其再次上锁。"
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "Levels and Elevators",
+											"name": "层级与升降机",
+											"type": "entries",
+											"id": "13a",
+											"page": 67,
+											"entries": [
+												"该哨站拥有上层与下层；星界传送门室（区域{@area S12|15d|x}）位于下层下方10英尺处。玻璃楼梯连接着这些楼层，同样连接的还有四个由魔法和隐藏齿轮驱动的升降梯。",
+												{
+													"ENG_name": "Elevators",
+													"name": "升降梯",
+													"type": "entries",
+													"id": "13b",
+													"page": 67,
+													"entries": [
+														"每部电梯由一个两层高的机械升降装置构成，配有密封的滑动玻璃钢门（参见上文\"玻璃钢门\"）。进入电梯后，生物可通过以任意语言说出或做出\"上升\"或\"下降\"的手势，以一个{@action 魔法|XPHB}动作指令电梯升降。电梯门需手动开闭，层间移动耗时6秒。"
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "Lighting",
+											"name": "光照",
+											"type": "entries",
+											"id": "13c",
+											"page": 67,
+											"entries": [
+												"除非另有说明，否则固定在墙上的魔法水晶壁架为整个建筑群提供{@variantrule 明亮光照|XPHB}。生物可以通过轻触壁架来开启或关闭它。"
+											]
+										},
+										{
+											"ENG_name": "Walls, Floors, and Ceilings",
+											"name": "墙壁、地板和天花板",
+											"type": "entries",
+											"id": "13d",
+											"page": 67,
+											"entries": [
+												"墙壁、地板和天花板由光滑的灰色石块与厚重的磨砂蓝玻璃板构成。双层区域（区域{@area S2|140|x}、{@area S3|142|x}、{@area S7|14e|x}及{@area S8|152|x}）天花板高20英尺，星界传送门大厅（区域{@area S12|15d|x}）高60英尺，其余各处均为10英尺高。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Lower Level Locations",
+									"name": "下层区域地点",
+									"type": "entries",
+									"id": "13e",
+									"page": 67,
+									"entries": [
+										{
+											"type": "gallery",
+											"images": [
+												{
+													"type": "image",
+													"id": "40f",
+													"href": {
+														"type": "internal",
+														"path": "adventure/DrDe/066-map-04.01-starglass-waypoint-lower-level-dm.webp"
+													},
+													"hrefThumbnail": {
+														"type": "internal",
+														"path": "adventure/DrDe/thumbnail/066-map-04.01-starglass-waypoint-lower-level-dm.webp"
+													},
+													"width": 3538,
+													"height": 4096,
+													"imageType": "map",
+													"grid": {
+														"type": "square",
+														"size": 93
+													},
+													"title": "地图 4.1：星镜之路下层区",
+													"credit": "Dyson Logos",
+													"mapRegions": [
+														{
+															"area": "15d",
+															"points": [
+																[
+																	467,
+																	189
+																],
+																[
+																	467,
+																	1115
+																],
+																[
+																	1486,
+																	1115
+																],
+																[
+																	1486,
+																	189
+																]
+															]
+														},
+														{
+															"area": "15c",
+															"points": [
+																[
+																	1492,
+																	375
+																],
+																[
+																	1492,
+																	933
+																],
+																[
+																	1857,
+																	933
+																],
+																[
+																	1857,
+																	375
+																]
+															]
+														},
+														{
+															"area": "157",
+															"points": [
+																[
+																	2342,
+																	470
+																],
+																[
+																	2342,
+																	834
+																],
+																[
+																	1870,
+																	834
+																],
+																[
+																	1870,
+																	470
+																]
+															]
+														},
+														{
+															"area": "152",
+															"points": [
+																[
+																	2886,
+																	1119
+																],
+																[
+																	2886,
+																	470
+																],
+																[
+																	2342,
+																	470
+																],
+																[
+																	2342,
+																	1119
+																]
+															]
+														},
+														{
+															"area": "14e",
+															"points": [
+																[
+																	2419,
+																	1134
+																],
+																[
+																	2419,
+																	2044
+																],
+																[
+																	2792,
+																	2044
+																],
+																[
+																	2792,
+																	1134
+																]
+															]
+														},
+														{
+															"area": "13f",
+															"points": [
+																[
+																	2050,
+																	3272
+																],
+																[
+																	2226,
+																	3272
+																],
+																[
+																	2226,
+																	3357
+																],
+																[
+																	2282,
+																	3364
+																],
+																[
+																	2337,
+																	3377
+																],
+																[
+																	2337,
+																	3434
+																],
+																[
+																	1956,
+																	3434
+																],
+																[
+																	1956,
+																	3364
+																],
+																[
+																	2050,
+																	3347
+																]
+															]
+														},
+														{
+															"area": "148",
+															"points": [
+																[
+																	1495,
+																	2526
+																],
+																[
+																	1495,
+																	2882
+																],
+																[
+																	1765,
+																	2882
+																],
+																[
+																	1765,
+																	2526
+																]
+															]
+														},
+														{
+															"area": "140",
+															"points": [
+																[
+																	1775,
+																	2520
+																],
+																[
+																	1775,
+																	3261
+																],
+																[
+																	2513,
+																	3261
+																],
+																[
+																	2513,
+																	2520
+																]
+															]
+														},
+														{
+															"area": "146",
+															"points": [
+																[
+																	2530,
+																	2794
+																],
+																[
+																	2530,
+																	3069
+																],
+																[
+																	2792,
+																	3069
+																],
+																[
+																	2792,
+																	2794
+																]
+															]
+														},
+														{
+															"area": "155",
+															"points": [
+																[
+																	2899,
+																	742
+																],
+																[
+																	3066,
+																	742
+																],
+																[
+																	3066,
+																	1306
+																],
+																[
+																	3165,
+																	1306
+																],
+																[
+																	3165,
+																	2880
+																],
+																[
+																	2813,
+																	2880
+																],
+																[
+																	2813,
+																	2796
+																],
+																[
+																	3073,
+																	2796
+																],
+																[
+																	3073,
+																	1392
+																],
+																[
+																	2985,
+																	1392
+																],
+																[
+																	2985,
+																	841
+																],
+																[
+																	2899,
+																	841
+																]
+															]
+														},
+														{
+															"area": "14a",
+															"points": [
+																[
+																	1771,
+																	2099
+																],
+																[
+																	1904,
+																	2228
+																],
+																[
+																	2329,
+																	2228
+																],
+																[
+																	2329,
+																	1821
+																],
+																[
+																	2179,
+																	1677
+																],
+																[
+																	1913,
+																	1677
+																],
+																[
+																	1771,
+																	1825
+																]
+															]
+														},
+														{
+															"area": "142",
+															"points": [
+																[
+																	2234,
+																	2256
+																],
+																[
+																	2343,
+																	2256
+																],
+																[
+																	2343,
+																	2052
+																],
+																[
+																	2835,
+																	2052
+																],
+																[
+																	2981,
+																	2185
+																],
+																[
+																	2981,
+																	2653
+																],
+																[
+																	2841,
+																	2785
+																],
+																[
+																	2526,
+																	2785
+																],
+																[
+																	2526,
+																	2502
+																],
+																[
+																	2234,
+																	2502
+																]
+															]
+														}
 													]
 												},
-												"卡菈懂得吉斯语和通用手语。她会用后者试图与遇到的任何不懂吉斯语的生物交流，希望能了解发生了什么。",
-												"除非角色与一个或多个魔冢交战，或是承认对魔冢怀有恶意，否则卡菈最初对角色们的态度是无动于衷（Indifferent）；如果是上述情况，她会对角色们表现出敌意（Hostile）并保护魔冢。",
-												"礼貌但冷漠的卡菈只想查明警报触发的原因，然后返回星界。她对冒险者的任务或巨龙对前哨站的宣称毫无兴趣。如果冒险者描述了伊拉甘对魔冢实施的暴行，卡菈表示会向星界的盟友汇报巨龙的行为，但无法保证吉斯洋基人会介入干涉。她拒绝接受命令，如果冒险者对她态度恶劣，她会试图恐吓他们离开前哨站\u2014\u2014但不会无故与他们发生战斗。"
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "adventure/DrDe/067-map-04.01-starglass-waypoint-lower-level-player.webp"
+													},
+													"width": 3538,
+													"height": 4096,
+													"imageType": "mapPlayer",
+													"grid": {
+														"type": "square",
+														"size": 93
+													},
+													"title": "玩家版本",
+													"credit": "Dyson Logos",
+													"mapParent": {
+														"id": "40f"
+													}
+												}
+											]
+										},
+										"以下地点标记在{@area 地图 4.1|40f|x}上。",
+										{
+											"ENG_name": "S1: Doors of Glass and Brass",
+											"name": "S1: 玻璃与黄铜之门",
+											"type": "entries",
+											"id": "13f",
+											"page": 67,
+											"entries": [
+												"通往中庭（区域S2）的前门未上锁且无阻碍，它们通过润滑良好的铰链轻松摆动开启。"
 											]
 										},
 										{
-											"ENG_name": "Using the Console",
-											"name": "使用控制台",
+											"ENG_name": "S2: Atrium",
+											"name": "S2: 大堂",
 											"type": "entries",
-											"page": 74,
-											"id": "16f",
+											"id": "140",
+											"page": 69,
 											"entries": [
-												"这个控制台是一件古怪的魔像科技产物。任何角色花费1分钟以{@action 研究|XPHB}动作检视它时，可进行一次{@dc 15}智力（{@skill 奥秘|XPHB}）检定。检定成功的角色会知道操作哪些开关和旋钮能激活下列功能（召唤卡菈的警报无法再次触发）。若未通过检定的角色操作了任何开关或旋钮，则根据控制台事故表掷骰决定发生的效果。",
-												"控制台是一个大型物件，具有AC18和HP27；上方的屏幕是一个中型物件，具有AC11和HP4。两者都对毒素和心灵伤害具有免疫，但对闪电伤害具有易伤。",
-												"控制台上的开关和旋钮控制以下功能：",
+												{
+													"type": "insetReadaloud",
+													"id": "141",
+													"page": 69,
+													"entries": [
+														"这座中庭内，一座玻璃阶梯攀升十尺通往环绕中庭边缘的阳台。一个由金属和玻璃制成的密封舱室容纳着同样升至阳台的升降梯。东西两侧设有玻璃门。东北角是以水晶喷泉为核心的厅堂。"
+													]
+												},
+												"喷泉在区域{@area S3|142|x}中有描述。阳台在区域{@area S13|163|x}中有描述。\"{@area 星玻璃航点特性|137|x}\"提供了关于壁灯和电梯的信息。"
+											]
+										},
+										{
+											"ENG_name": "S3: Fountain Court",
+											"name": "S3：喷泉庭院",
+											"type": "entries",
+											"id": "142",
+											"page": 69,
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "143",
+													"page": 69,
+													"entries": [
+														"一座优雅的水晶喷泉装点着庭院中央。喷泉的中心是一座美丽的水晶骑士雕像，头戴战盔、身着华丽铠甲，双手紧握一柄水晶巨剑的剑柄；剑尖矗立在她双脚前方。在角落散落着碎石，那里悬挂的阳台部分已经坍塌。北侧有一条二十英尺宽的走廊，堆积着更多碎石和几处商贩摊位的残骸。庭院西侧有一扇宽阔的滑动玻璃门。"
+													]
+												},
+												"通往储藏室（区域 {@area S6|14a|x}）的滑动玻璃门需要雕文卡才能开启（详情见\"{@area 星玻璃航点特性|137|x}\"）。商会走廊在区域 {@area S7|14e|x} 有详细描述，露台则在区域 {@area S13|163|x} 和 {@area S16|169|x} 有所说明。",
+												{
+													"ENG_name": "Crystal Fountain",
+													"name": "水晶喷泉",
+													"type": "entries",
+													"id": "144",
+													"page": 69,
+													"entries": [
+														"仔细检查喷泉会发现停滞混浊的水。如果搅动水面，潜伏在喷泉中的敌对生物{@creature 水元素|XMM}会伏击角色。",
+														"作为{@action 研究|XPHB}动作，角色可以检查喷泉雕像并进行一次{@dc 15}智力（{@skill 历史|XPHB}）检定。若成功，角色会认出雕像描绘的是传奇战士吉斯\u2014\u2014她曾帮助自己的族人（吉斯扬基与吉斯泽雷）从夺心魔暴政中解放。"
+													]
+												},
+												{
+													"ENG_name": "Treasure",
+													"name": "宝藏",
+													"type": "entries",
+													"id": "145",
+													"page": 69,
+													"entries": [
+														"花费10分钟仔细搜寻喷泉水池的角色会发现一枚符文卡和25金币的散落硬币。"
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "S4: Forge",
+											"name": "S4: 锻炉",
+											"type": "entries",
+											"id": "146",
+											"page": 69,
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "147",
+													"page": 69,
+													"entries": [
+														"锈迹斑斑的工具挂在这个尘土飞扬的车间墙壁挂钩上。东面墙上的门紧闭着。靠南墙放着一个大型铸铁炉。一根直径一英尺的金属烟囱从炉顶伸出两英尺后插入墙内。炉子发出奇怪的咔嗒声。"
+													]
+												},
+												"吉斯扬基铁匠曾在此打造工具与盔甲。熔炉内部可容纳一名中型或两名小型生物；其管道过于狭窄，小型或中型生物无法进入。",
+												"咯吱声来自一个躲在炉子里的紧张{@creature 魔冢·二元冢|XMM}。打开炉子铁门的角色会发现这个冷漠的模组，它通晓模组语和通用手语。",
+												"这只双体机械怪正躲避着伊拉甘的追踪，且希望独处。如果角色们不断打扰它，双体机械怪会从体内的插槽中取出一张纹章卡（见\"{@area 星玻璃航点特性|137|x}\"），将卡片交给他们，并表明自己没有其他信息或宝藏可提供。双体机械怪只会在自卫时进行战斗。"
+											]
+										},
+										{
+											"ENG_name": "S5: Library",
+											"name": "S5: 图书馆",
+											"type": "entries",
+											"id": "148",
+											"page": 69,
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "149",
+													"page": 69,
+													"entries": [
+														"一只大致呈球形的生物漂浮在房间中央，它有一只巨大的主眼和四根眼柄。它悬浮在四个装有玻璃门的空书柜之间。一段楼梯向北延伸而上。"
+													]
+												},
+												"这个漂浮的生物是一只警觉的{@creature 观察者眼魔|XMM}，它被错误地召唤来守护书架而非书籍。当吉斯洋基人废弃{@area 星镜路标|136|x}时，他们搬走了所有书籍以防被盗或损坏。观察者起初态度冷淡，但会对干扰书架的非吉斯洋基人或魔冢生物转为敌对并发动攻击。",
+												"该生物在被询问时会通过心灵感应分享以下信息：",
 												{
 													"type": "list",
 													"style": "list-hang-notitle",
 													"items": [
 														{
-															"ENG_name": "Activate Loudspeaker",
-															"name": "激活扬声器",
+															"ENG_name": "Old Outpost",
+															"name": "古老前哨站",
 															"type": "item",
-															"entry": "你可以发出一段简短讯息（最多二十五个词），这段讯息将在整个{@area 星镜路标|136|x}范围内广播。该讯息可以用你自己的声音传达，或者通过将你的话语翻译成魔冢语的机械语音播放。"
+															"entry": "星辰玻璃航标由吉斯扬基和魔冢围绕一个位面之门建造。（观察者从未离开过这个房间，因此不知道门的位置。）"
 														},
 														{
-															"ENG_name": "Create Sensor",
-															"name": "创造传感器",
+															"ENG_name": "Modron Caretakers",
+															"name": "魔像看护者",
 															"type": "item",
-															"entry": "你可以在以下其中一个位置（由你选择）创造一个隐形传感器：门厅（区域{@area S2|140|x}）、喷泉庭院（区域{@area S3|142|x}）、商人广场（区域{@area S7|14e|x}）、星界之门（区域{@area S12|15d|x}）或公寓走廊（区域{@area S19|170|x}）。传感器会被放置在该位置视野不受阻碍的地方，其影像会显示在控制台上方的玻璃屏幕上。通过传感器可以看到但听不到任何声音，效果持续10分钟或直到再次使用此控制台功能。"
+															"entry": "吉斯扬基在多年前放弃了这座前哨站，但留下了魔冢来维持它的运作。"
 														},
 														{
-															"ENG_name": "Enable Flight",
-															"name": "启用飞行",
+															"ENG_name": "Draconic Newcomer",
+															"name": "龙裔新手",
 															"type": "item",
-															"entry": "你激活了一个魔法效果。接下来的10分钟内，{@area 星镜路标|136|x}内的每个生物获得等同于其速度的飞行速度以及悬停能力，但仅限在前哨站内生效。当效果结束时，若某生物没有其他保持悬浮的方式，它会缓缓下降并安全着地。"
-														},
+															"entry": "一只黄铜鳞片的巨龙大约一年前抵达了前哨站并在此安家。前哨站的魔像们与巨龙沟通有困难，但仍尽力让它保持愉悦。"
+														}
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "S6: Secured Supplies",
+											"name": "S6：安全物资",
+											"type": "entries",
+											"id": "14a",
+											"page": 70,
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "14b",
+													"page": 70,
+													"entries": [
+														"这个近乎八边形的房间里摆放着带有金属配件的密封板条箱。一座玻璃楼梯向上通往悬挑的楼层；从上方传来微弱的嗡鸣声。"
+													]
+												},
+												"楼梯通往安全站（区域{@area S18|16b|x}）。",
+												{
+													"ENG_name": "Crates",
+													"name": "板条箱",
+													"type": "entries",
+													"id": "14c",
+													"page": 70,
+													"entries": [
+														"板条箱的位置标注在{@area 地图：星镜之路低层|13e|x}上。标有1至4的四个板条箱是真实的。标有Q的板条箱实际上是四个{@creature 魔冢·四元冢|XMM|模组四元体}，它们的腿缩回且武器隐藏在视野之外。（如果它们先前被吸引到{@area S18|16b|x}，则不会出现此处。）被动{@skill 察觉|XPHB}达到14或更高的角色在接近5英尺范围内时会识破伪装的四元模组。标有M的板条箱实际上是一只{@creature 拟身怪|XMM}，正期待一顿美餐，因为它不吃模组生物。",
+														"若非魔冢或吉斯洋基人者擅动真实板条箱或拟形怪，四元体便会发动攻击。除此之外，它们对入侵者保持漠然态度，仅出于自卫而战。它们通晓魔冢语和通用手语。"
+													]
+												},
+												{
+													"ENG_name": "Treasure",
+													"name": "宝藏",
+													"type": "entries",
+													"id": "14d",
+													"page": 70,
+													"entries": [
+														"四个真正的大木箱中装着吉斯洋基人留下的货物；伊拉甘尚未意识到这些箱子里有贵重物品，因此还未将它们据为己有。",
+														"{@b 板条箱 1 和 2}中各自装有一百份口粮，这些口粮经过魔法保存，即使已经存放数十年仍可食用。",
+														"{@b 箱子3}内有四十九块5磅重的银制贸易锭（每块价值25金币）。明显缺少一块银锭（位于区域{@area S24|17b|x}的沉洞中）。",
+														"{@b 板条箱4}装有发条齿轮、弹簧、链条和哨站升降梯的其他替换零件。这些散落的杂物中有一个装着一枚{@item 发条护符|XDMG}的扁平松木盒。"
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "S7: Merchants' Concourse",
+											"name": "S7: 商贾之廊",
+											"type": "entries",
+											"id": "14e",
+											"page": 70,
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "14f",
+													"page": 70,
+													"entries": [
+														"这条二十尺宽的走廊墙边排列着七个商贩摊位。其中五个摊位处于不同程度的破败状态。另外两个被东侧墙壁部分坍塌的阳台落石压毁。西墙高处有两扇紧闭的窗户。"
+													]
+												},
+												"有关阳台的描述，请参阅区域 {@area S13|163|x} 和 {@area S17|16a|x}。",
+												{
+													"ENG_name": "Treasure",
+													"name": "宝藏",
+													"type": "entries",
+													"id": "150",
+													"page": 70,
+													"entries": [
+														"一个角色翻找摊位1分钟（或被掩埋在瓦砾下的摊位需要1小时）可以执行一次{@action 搜索|XPHB}动作来进行一次{@dc 13}感知（{@skill 察觉|XPHB}）检定，成功则发现宝藏。一旦摊位的宝藏被发现，那里就再没有其他有价值的东西了。",
+														"角色们搜索的第一个隔间是空的。他们按以下顺序发现其他隔间的宝藏：",
 														{
-															"ENG_name": "Vent Gas",
-															"name": "释放毒气",
-															"type": "item",
-															"entry": "你将维护走廊（区域{@area S9|155|x}）中的气体排出，控制台传来一个低沉的声音用吉斯语说道：\"气体已排出！\"该走廊在接下来的24小时内保持畅通，之后气体会重新充满。"
+															"type": "list",
+															"style": "list-decimal",
+															"items": [
+																"水晶盒（价值20金币），内含四瓶{@item 通晓药水|XDMG|通晓药水}",
+																"镶嵌血石的金戒指（价值250金币）",
+																"描绘红色巨龙的挂毯（价值750金币）",
+																"{@item 治疗药水|XDMG}（强效）",
+																"{@item 火蛋白石|XDMG}（价值1000金币）",
+																"{@item 秘银甲|XDMG}（胸甲）"
+															]
 														}
 													]
 												},
 												{
-													"type": "table",
-													"caption": "控制台事故",
-													"page": 75,
-													"colLabels": [
-														"1d12",
-														"遇难"
-													],
-													"colStyles": [
-														"col-2 text-center",
-														"col-10"
-													],
-													"rows": [
-														[
-															"1",
-															"控制台关闭电源。它无法再次启动，此后所有功能均无法激活。"
-														],
-														[
-															"2\u20133",
-															"控制台5英尺范围内的生物会受到3（{@dice 1d6}）点闪电伤害，并有电火花从中迸发。"
-														],
-														[
-															"4\u20136",
-															"刺耳的警报声充满区域 {@area S6|14a|x} 和 {@area S18|16b|x}，持续1分钟或直到控制台被摧毁。在警报响起时，这些区域内的所有生物都将处于 {@condition 耳聋|XPHB} 状态。"
-														],
-														[
-															"7\u20139",
-															"该控制台的一个功能被意外触发。掷{@dice 1d4}决定哪个功能：结果为{@b 1}时，启动扩音器；结果为{@b 2}时，在区域{@area S12|15d|x}创建传感器；结果为{@b 3}时，启动飞行模式；结果为{@b 4}时，排放气体。"
-														],
-														[
-															"10\u201312",
-															"一只敌对的{@creature 史拉蓝蟾|XMM}从异次元空间中释放出来，出现在尽可能靠近控制台的未被占据空间。它会攻击遇到的任何生物。如果此次意外已经发生过，则再次投掷。"
-														]
+													"ENG_name": "Windows",
+													"name": "窗户",
+													"type": "entries",
+													"id": "151",
+													"page": 70,
+													"entries": [
+														"这些窗户朝向大厅，位于西侧地面13英尺高处。它们由玻璃钢制成（详见\"{@area 星玻璃航点特性|137|x}\"）。通过这些窗户可以俯瞰两个豪华套房（区域{@area S21|173|x}和{@area S22|176|x}）。"
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "S8: Ylagan's Watch",
+											"name": "S8：伊拉根的守望",
+											"type": "entries",
+											"id": "152",
+											"page": 70,
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "153",
+													"page": 70,
+													"entries": [
+														"一座玻璃阶梯与玻璃围栏的电梯通向十尺高的阳台，环绕着大厅的北墙与东墙。另一部电梯的滑动门嵌在西南角落的西墙里。东墙上一扇门紧闭着。向西延伸的隧道被一道二十尺高、二十尺宽的整齐堆砌碎石墙所阻断。虽然这处大厅看似空无一人，但你挥之不去被注视的感觉！"
+													]
+												},
+												"当角色们首次抵达此处时，位于星界传送门室（区域{@area S12|15d|x}）的智能物品{@item 吞噬袋|XDMG}会再次与他们进行心灵感应交流：",
+												{
+													"type": "insetReadaloud",
+													"id": "154",
+													"page": 70,
+													"entries": [
+														"\"你已经很接近了。越过这片废墟就是龙的宝库。你将在那里找到我。\""
+													]
+												},
+												"幼年黄铜龙{@creature 青年黄铜龙|XMM}从碎石墙（区域{@area S10|157|x}）内部观察着队伍。"
+											]
+										},
+										{
+											"ENG_name": "S9: Maintenance Corridor",
+											"name": "S9：维护走廊",
+											"type": "entries",
+											"id": "155",
+											"page": 70,
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "156",
+													"page": 70,
+													"entries": [
+														"门打开后露出一条狭窄、曲折的走廊，充满了彩虹色的薄雾。"
+													]
+												},
+												"当吉斯扬基人占据前哨站时，魔冢利用这条走廊绕开拥挤区域。彩虹色的气体使走廊处于{@variantrule 轻度遮蔽|XPHB}状态，这是一种无法解释的现象。",
+												"当处于毒气区域内及离开后的1分钟内，生物将获得{@condition 中毒|XPHB}状态，表现为急性恶心和定向障碍。毒气不会扩散至前哨站的其他区域。可通过安全站（区域{@area S18|16b|x}）内的控制面板暂时清除毒气。"
+											]
+										},
+										{
+											"ENG_name": "S10: Dragon in the Rubble",
+											"name": "S10: 废墟中的巨龙",
+											"type": "entries",
+											"id": "157",
+											"page": 71,
+											"entries": [
+												"伊拉甘在星界之门大厅（区域{@area S12|15d|x}）建造了一堵高20英尺、宽20英尺、厚10英尺的碎石墙，以封闭通往他的宝藏的通道。利用他的掘地速度，伊拉甘可以轻松穿过碎石，并且擅长迅速在身后（或周围）重建墙壁，以防止其他人通过。",
+												"当角色们首次抵达时，{@creature 青年黄铜龙|XMM}已与它从收藏的{@item 命令土元素石核|XDMG}召唤出的{@creature 土元素|XMM}一同掩埋在瓦砾中。该元素生物听从巨龙指挥。二者均具备{@table 掩护|XPHB|全身掩护}。藏身期间，伊拉甘运用{@sense 盲视|XPHB}，而元素生物则通过{@sense 震颤感知|XPHB}来探查墙外动静。",
+												{
+													"ENG_name": "Roleplaying Ylagan",
+													"name": "扮演伊拉甘",
+													"type": "entries",
+													"id": "158",
+													"page": 71,
+													"entries": [
+														"敌对青年龙认为角色们回到星界传送门房间（区域 {@area S12|15d|x}）是为了偷取更多它的财宝，至少已经成功过一次。作为 {@action 影响|XPHB} 动作，角色可以尝试用一次成功的 {@dc 17} 魅力（{@skill 游说|XPHB}）检定来说服伊拉甘他们并非盗窃的实施者。",
+														"一旦确认角色们不是他所追捕的窃贼，亚拉甘只会在他们威胁到他或他的宝藏时才会与他们战斗。此外，他会请求他们帮忙找到从他宝库中偷取宝石的小偷。如果角色们索要报酬，亚拉甘表示他愿意用自己宝库中的一件魔法斗篷（{@item 万众时尚斗篷|XDMG}）作为交换来换取他们的帮助。",
+														"伊拉甘对角色们被一个心灵感应的袋子引诱到{@area 星镜路标|136|x}的说法似乎持怀疑态度，但他足够聪明，知道有些魔法物品是具有意识的，因此他并没有完全否定这个说法。如果角色们提出购买这个袋子，伊拉甘愿意以2000金币或其他等价物出售给他们。（如果他们达成交易，巨龙坚持要求角色们待在原地，等待他取来袋子。）"
+													]
+												},
+												{
+													"ENG_name": "Ylagan in Combat",
+													"name": "伊拉甘 战斗表现",
+													"type": "entries",
+													"id": "159",
+													"page": 71,
+													"entries": [
+														"如果角色们的言行表明他们打算杀死他或掠夺他的宝藏，伊拉甘会从藏身处使用他的睡眠吐息，试图尽可能多地覆盖目标区域。随后他会从碎石中冲出，与未被气体催眠的角色们战斗。",
+														"在战斗中，每当伊拉甘开始其回合处于{@status 浴血|XPHB}状态时，他会进行一次{@dc 10}感知豁免检定。若豁免失败，伊拉甘的自我保护本能会驱使他通过最安全的路线逃离，要么返回他的财宝库（区域{@area S12|15d|x}），要么离开前哨站。这条龙重视自己的生命胜过财宝。但他会对那些迫使他逃离的人怀恨在心。"
+													]
+												},
+												{
+													"ENG_name": "Clearing the Rubble",
+													"name": "清除碎石",
+													"type": "entries",
+													"id": "15a",
+													"page": 71,
+													"entries": [
+														"一名角色可以在10分钟内清理一块5英尺见方的瓦砾。多名角色同时工作可以按比例缩短所需时间。"
+													]
+												},
+												{
+													"ENG_name": "Hidden Door",
+													"name": "隐藏门",
+													"type": "entries",
+													"id": "15b",
+													"page": 71,
+													"entries": [
+														"碎石遮蔽了南墙的一扇门，其后楼梯通往一条走廊（区域 {@area S19|170|x}）。"
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "S11: Access Way",
+											"name": "S11: 入口通道",
+											"type": "entries",
+											"id": "15c",
+											"page": 71,
+											"entries": [
+												"两座从地板延伸到天花板的石制旋转栅栏挡住了通往星界传送门室的路（区域{@area S12|15d|x}）。这些旋转栅栏墙可以手动逆时针旋转，以允许大型或更小的生物通过。对大型生物（包括伊拉甘）来说，这些旋转栅栏是{@variantrule 困难地形|XPHB}。",
+												"在转门西侧，生物可通过玻璃墙电梯或两侧的楼梯下降10英尺到达星界门厅（区域S12）（详见\"{@area 星玻璃航点特性|137|x}\"）。"
+											]
+										},
+										{
+											"ENG_name": "S12: Astral Gate",
+											"name": "S12: 星界之门",
+											"type": "entries",
+											"id": "15d",
+											"page": 71,
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "15e",
+													"page": 71,
+													"entries": [
+														"这个宽敞房间的墙壁向内倾斜，在地板上方60英尺处汇合，形成类似金字塔结构的顶点。碎石沿着墙壁堆积。房间的中心是一座20英尺高的紫色石拱门，拱顶处有一道缺口。明亮的紫色余烬从拱门的断裂处喷出，如同烟雾般向上飘散。拱门后方整齐堆放着大量钱币和其他财宝。"
+													]
+												},
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "adventure/DrDe/068-04-002.astral-gate.webp"
+													},
+													"width": 1700,
+													"height": 1169,
+													"title": "星界之门",
+													"credit": "Justine Jones"
+												},
+												"这些碎石堆是{@variantrule 困难地形|XPHB}。",
+												{
+													"ENG_name": "Astral Gate",
+													"name": "星界之门",
+													"type": "entries",
+													"id": "15f",
+													"page": 71,
+													"entries": [
+														"紫色拱门曾是通往星界吉斯洋基城市的一个双向传送门。这个传送门已经遭到无法修复的损坏，无法正常工作。任何进入拱门两半之间空间或在其回合开始时位于该区域的生物会受到11（{@dice 2d10}）点心灵伤害。"
+													]
+												},
+												{
+													"ENG_name": "Dragon's Hoard",
+													"name": "巨龙宝库",
+													"type": "entries",
+													"id": "160",
+													"page": 71,
+													"entries": [
+														"除非伊拉甘已撤退至此处房间，否则巨龙宝藏无人看守。其包括如下物品：",
+														{
+															"type": "list",
+															"items": [
+																"600金币、9,000银币和45,000铜币的散钱",
+																"青铜瓮，内含八颗有瑕疵的红宝石（每颗价值50金币）和一条镶嵌月光石泪滴的银项链（价值750金币）",
+																"七个翡翠宝珠（每个价值100金币），每个宝珠上以炼狱语刻有九层地狱之一的名字（阿弗纳斯、迪斯、弥瑙洛斯、弗莱格索斯、马尔博吉、马拉多米尼和卡尼亚；斯泰吉亚和奈瑟斯的宝珠未包含在伊拉甘的收藏中）",
+																"看起来像是空无的{@item 次元袋|XDMG}的{@item 吞噬袋|XDMG}（参见下方\"凯利弗隆\"）",
+																"{@item 万众时尚斗篷|XDMG}被整齐地折叠着",
+																"{@item +1 长矛|XDMG}",
+																"{@item 命令土元素石核|XDMG}"
+															]
+														}
+													]
+												},
+												{
+													"ENG_name": "Keliphron",
+													"name": "凯利弗隆",
+													"type": "entries",
+													"id": "161",
+													"page": 72,
+													"entries": [
+														"一旦被发现，凯利弗隆的表现与任何其他{@item 吞噬袋|XDMG}无异。被袋子吞噬后吐出的物体会被抛入遥远国度并永远消失。"
 													]
 												}
 											]
@@ -2579,180 +1681,1084 @@
 									]
 								},
 								{
-									"ENG_name": "S19: Apartment Hallway",
-									"name": "S19: 公寓走廊",
+									"ENG_name": "Upper Level Locations",
+									"name": "上层区域地点",
 									"type": "entries",
-									"page": 76,
-									"id": "170",
+									"id": "162",
+									"page": 72,
 									"entries": [
 										{
-											"type": "insetReadaloud",
-											"page": 76,
-											"id": "171",
-											"entries": [
-												"这条L形走廊的一端设有电梯，另有五扇门通向其他区域。墙上的水晶壁灯中，靠近电梯门的那一盏似乎出现了故障，正不规则地闪烁。"
-											]
-										},
-										"触碰闪烁的壁火会永久熄灭其光芒。其他水晶壁火仍能保持大厅沐浴在{@variantrule 明亮光照|XPHB}中。"
-									]
-								},
-								{
-									"ENG_name": "S20: Privy",
-									"name": "S20: 私室",
-									"type": "entries",
-									"page": 76,
-									"id": "172",
-									"entries": [
-										"这个房间里有一对木制长凳，每张长凳下方都有一个石制活板门，覆盖着地板上一个宽2英尺、深30英尺的粪坑。房间里没有其他值得注意的东西。"
-									]
-								},
-								{
-									"ENG_name": "S21: Pristine Luxury Suite",
-									"name": "S21: 顶级豪华套房",
-									"type": "entries",
-									"page": 76,
-									"id": "173",
-									"entries": [
-										{
-											"type": "insetReadaloud",
-											"page": 76,
-											"id": "174",
-											"entries": [
-												"这间豪华套房由两间房间组成，中间用一扇透明的滑动玻璃门隔开。西侧房间装饰得像一间客厅，配有软垫躺椅和扶手椅、一辆摆放着水晶高脚杯和细颈瓶的推车，以及一个衣帽架。东侧房间放置着一张舒适的四柱床、一个衣柜、一面落地镜，以及一个隐藏在三折屏风后的爪足陶瓷浴缸。东墙上的一扇窗户俯瞰着前哨站的大厅。套房的所有墙壁都镶嵌着金色，形成美丽的几何图案。"
-											]
-										},
-										"这套房间无人居住。区域S21a与S21b之间的门，与建筑内的其他门一样，由玻钢制成（参见\"{@area 星玻璃航点特性|137|x}\"）；当生物靠近至1英尺范围内时会自动滑开。俯瞰商贾广场（区域{@area S7|14e|x}）的玻钢窗户无法开启。",
-										{
-											"ENG_name": "Treasure",
-											"name": "宝藏",
-											"type": "entries",
-											"page": 76,
-											"id": "175",
-											"entries": [
-												"墙壁上每5英尺长的区域都嵌有价值100金币的黄金，需要角色花费1小时才能撬出。其它贵重物品包括两个水晶酒瓶（每个价值250金币）和八个水晶高脚杯（每个价值25金币）。"
-											]
-										}
-									]
-								},
-								{
-									"ENG_name": "S22: Luxury Suite Retreat",
-									"name": "S22: 豪华套房休憩处",
-									"type": "entries",
-									"page": 76,
-									"id": "176",
-									"entries": [
-										"这个双室套房的外观与区域{@area S21|173|x}完全相同，且拥有相同的宝藏。此外，西侧的房间内有三个{@creature 魔冢·三元冢|XMM|魔冢三阶机}，它们撤退到这里以躲避龙的怒火。这些三阶机兵对角色们态度冷漠，且每名机兵都有自己的符记牌（详见\"{@area 星玻璃航点特性|137|x}\"）。",
-										"三体机械境生物通晓摩帝语和通用手语。它们使用后者恳求角色保护它们免受伊拉甘的怒火。虽然不知道巨龙当前的位置，这些机械境生物分享了以下信息：",
-										{
-											"type": "list",
-											"style": "list-hang-notitle",
-											"items": [
+											"type": "gallery",
+											"images": [
 												{
-													"ENG_name": "Starglass Waypoint Lore",
-													"name": "星辰玻璃路标传说",
-													"type": "item",
-													"entry": "星玻璃航点是由吉斯扬基和魔冢建造的。近百年来，吉斯扬基将这个前哨站作为孵化场使用\u2014\u2014一个安全而隔绝的场所，用于养育和训练他们的幼体。前哨站深处的位面传送门使吉斯扬基得以自由往返星界。九年前，在一次地震损毁了位面传送门后，吉斯扬基废弃了这个前哨站，但留下了他们的魔冢管理者们。"
+													"type": "image",
+													"id": "410",
+													"href": {
+														"type": "internal",
+														"path": "adventure/DrDe/069-map-04.02-starglass-waypoint-upper-leveldm.webp"
+													},
+													"hrefThumbnail": {
+														"type": "internal",
+														"path": "adventure/DrDe/thumbnail/069-map-04.02-starglass-waypoint-upper-leveldm.webp"
+													},
+													"width": 3648,
+													"height": 4096,
+													"imageType": "map",
+													"grid": {
+														"type": "square",
+														"size": 104,
+														"offsetX": 4,
+														"offsetY": 2
+													},
+													"title": "地图4.2：星镜航点上层",
+													"credit": "Dyson Logos",
+													"mapRegions": [
+														{
+															"area": "167",
+															"points": [
+																[
+																	1569,
+																	2928
+																],
+																[
+																	1569,
+																	3333
+																],
+																[
+																	1865,
+																	3333
+																],
+																[
+																	1865,
+																	2928
+																]
+															]
+														},
+														{
+															"area": "163",
+															"points": [
+																[
+																	2507,
+																	733
+																],
+																[
+																	2805,
+																	728
+																],
+																[
+																	2805,
+																	940
+																],
+																[
+																	3015,
+																	940
+																],
+																[
+																	3015,
+																	1143
+																],
+																[
+																	2821,
+																	1143
+																],
+																[
+																	2821,
+																	1346
+																],
+																[
+																	2915,
+																	1346
+																],
+																[
+																	2915,
+																	1874
+																],
+																[
+																	3012,
+																	1937
+																],
+																[
+																	3012,
+																	1357
+																],
+																[
+																	3121,
+																	1357
+																],
+																[
+																	3121,
+																	638
+																],
+																[
+																	2507,
+																	638
+																]
+															]
+														},
+														{
+															"area": "163",
+															"points": [
+																[
+																	3015,
+																	2185
+																],
+																[
+																	2963,
+																	2248
+																],
+																[
+																	2924,
+																	2275
+																],
+																[
+																	2924,
+																	2496
+																],
+																[
+																	3022,
+																	2496
+																],
+																[
+																	3130,
+																	2604
+																],
+																[
+																	3130,
+																	2952
+																],
+																[
+																	3188,
+																	2988
+																],
+																[
+																	3229,
+																	3046
+																],
+																[
+																	3229,
+																	2557
+																],
+																[
+																	3072,
+																	2400
+																],
+																[
+																	3015,
+																	2400
+																]
+															]
+														},
+														{
+															"area": "163",
+															"points": [
+																[
+																	2498,
+																	2621
+																],
+																[
+																	2498,
+																	3022
+																],
+																[
+																	1980,
+																	3022
+																],
+																[
+																	1980,
+																	3121
+																],
+																[
+																	2189,
+																	3121
+																],
+																[
+																	2189,
+																	3336
+																],
+																[
+																	2088,
+																	3336
+																],
+																[
+																	2088,
+																	3225
+																],
+																[
+																	1984,
+																	3225
+																],
+																[
+																	1984,
+																	3640
+																],
+																[
+																	2392,
+																	3640
+																],
+																[
+																	2392,
+																	3437
+																],
+																[
+																	2607,
+																	3437
+																],
+																[
+																	2607,
+																	3126
+																],
+																[
+																	2972,
+																	3126
+																],
+																[
+																	3003,
+																	3171
+																],
+																[
+																	3017,
+																	3221
+																],
+																[
+																	2701,
+																	3221
+																],
+																[
+																	2701,
+																	3748
+																],
+																[
+																	1876,
+																	3748
+																],
+																[
+																	1876,
+																	2923
+																],
+																[
+																	2399,
+																	2923
+																],
+																[
+																	2399,
+																	2621
+																]
+															]
+														},
+														{
+															"area": "164",
+															"points": [
+																[
+																	2724,
+																	3250
+																],
+																[
+																	2724,
+																	3541
+																],
+																[
+																	3326,
+																	3541
+																],
+																[
+																	3326,
+																	3250
+																]
+															]
+														},
+														{
+															"area": "16b",
+															"points": [
+																[
+																	2489,
+																	2605
+																],
+																[
+																	2025,
+																	2605
+																],
+																[
+																	1880,
+																	2460
+																],
+																[
+																	1880,
+																	2152
+																],
+																[
+																	2033,
+																	1999
+																],
+																[
+																	2336,
+																	1999
+																],
+																[
+																	2486,
+																	2144
+																]
+															]
+														},
+														{
+															"area": "17b",
+															"points": [
+																[
+																	951,
+																	1799
+																],
+																[
+																	975,
+																	1762
+																],
+																[
+																	1034,
+																	1723
+																],
+																[
+																	1065,
+																	1691
+																],
+																[
+																	1094,
+																	1671
+																],
+																[
+																	1129,
+																	1678
+																],
+																[
+																	1165,
+																	1676
+																],
+																[
+																	1189,
+																	1650
+																],
+																[
+																	1236,
+																	1624
+																],
+																[
+																	1291,
+																	1622
+																],
+																[
+																	1316,
+																	1685
+																],
+																[
+																	1345,
+																	1698
+																],
+																[
+																	1390,
+																	1719
+																],
+																[
+																	1402,
+																	1792
+																],
+																[
+																	1421,
+																	1825
+																],
+																[
+																	1425,
+																	1861
+																],
+																[
+																	1452,
+																	1909
+																],
+																[
+																	1438,
+																	1965
+																],
+																[
+																	1426,
+																	1999
+																],
+																[
+																	1404,
+																	2020
+																],
+																[
+																	1380,
+																	2068
+																],
+																[
+																	1335,
+																	2075
+																],
+																[
+																	1304,
+																	2072
+																],
+																[
+																	1266,
+																	2099
+																],
+																[
+																	1238,
+																	2138
+																],
+																[
+																	1153,
+																	2134
+																],
+																[
+																	1098,
+																	2124
+																],
+																[
+																	1048,
+																	2086
+																],
+																[
+																	1024,
+																	2049
+																],
+																[
+																	1013,
+																	2036
+																],
+																[
+																	985,
+																	2011
+																],
+																[
+																	985,
+																	1977
+																],
+																[
+																	961,
+																	1947
+																],
+																[
+																	947,
+																	1885
+																],
+																[
+																	966,
+																	1864
+																],
+																[
+																	972,
+																	1825
+																]
+															]
+														},
+														{
+															"area": "17b",
+															"points": [
+																[
+																	1753,
+																	1678
+																],
+																[
+																	1333,
+																	1678
+																],
+																[
+																	1400,
+																	1709
+																],
+																[
+																	1407,
+																	1768
+																],
+																[
+																	1432,
+																	1819
+																],
+																[
+																	1459,
+																	1871
+																],
+																[
+																	1468,
+																	1937
+																],
+																[
+																	1468,
+																	1968
+																],
+																[
+																	1753,
+																	1968
+																]
+															]
+														},
+														{
+															"area": "177",
+															"points": [
+																[
+																	1145,
+																	1363
+																],
+																[
+																	1145,
+																	1657
+																],
+																[
+																	1760,
+																	1657
+																],
+																[
+																	1760,
+																	1363
+																]
+															]
+														},
+														{
+															"area": "173",
+															"points": [
+																[
+																	1995,
+																	1368
+																],
+																[
+																	1995,
+																	1975
+																],
+																[
+																	2597,
+																	1975
+																],
+																[
+																	2597,
+																	1368
+																]
+															]
+														},
+														{
+															"area": "172",
+															"points": [
+																[
+																	1563,
+																	1152
+																],
+																[
+																	1563,
+																	1349
+																],
+																[
+																	1767,
+																	1349
+																],
+																[
+																	1767,
+																	1152
+																]
+															]
+														},
+														{
+															"area": "170",
+															"points": [
+																[
+																	2490,
+																	1166
+																],
+																[
+																	1781,
+																	1166
+																],
+																[
+																	1781,
+																	1977
+																],
+																[
+																	1966,
+																	1977
+																],
+																[
+																	1966,
+																	1342
+																],
+																[
+																	2490,
+																	1342
+																]
+															]
+														},
+														{
+															"area": "169",
+															"points": [
+																[
+																	3026,
+																	3216
+																],
+																[
+																	2981,
+																	2985
+																],
+																[
+																	3133,
+																	2964
+																],
+																[
+																	3174,
+																	2992
+																],
+																[
+																	3226,
+																	3054
+																],
+																[
+																	3228,
+																	3081
+																],
+																[
+																	3087,
+																	3216
+																]
+															]
+														},
+														{
+															"area": "16a",
+															"points": [
+																[
+																	3013,
+																	1947
+																],
+																[
+																	2899,
+																	1875
+																],
+																[
+																	2884,
+																	1954
+																],
+																[
+																	2894,
+																	2037
+																],
+																[
+																	2898,
+																	2144
+																],
+																[
+																	2898,
+																	2219
+																],
+																[
+																	2936,
+																	2248
+																],
+																[
+																	3013,
+																	2169
+																]
+															]
+														}
+													]
 												},
 												{
-													"ENG_name": "Ylagan's Arrival",
-													"name": "伊拉甘的到来",
-													"type": "item",
-													"entry": "当伊拉甘一年前抵达并将这座前哨站改造为巢穴后，模组生物开始按照巨龙的需求对其进行了功能改造。"
-												},
-												{
-													"ENG_name": "Ylagan's Rage",
-													"name": "伊拉甘之怒",
-													"type": "item",
-													"entry": "这条龙将他的财宝存放在带有位面之门（区域{@area S12|15d|x}）的房间内。最近，财宝开始从龙的宝库中消失。在未能找到窃贼后，伊拉甘指责魔冢偷走了他的财宝，并愤怒地摧毁了其中几个。随后他用碎石堵住了通往宝库的隧道，并开始追捕剩余的魔冢。这些三阶魔冢试图但未能抵达安全站（区域{@area S18|16b|x}），原本希望利用那里的控制台向星界的吉斯洋基要塞发送求救信号。巨龙堵住了去路，因此三阶魔冢撤退到了这间豪华套房，期盼巨龙带着剩余的财宝离开这个前哨站。"
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "adventure/DrDe/070-map-04.02-starglass-waypoint-upper-level-player.webp"
+													},
+													"width": 3648,
+													"height": 4096,
+													"imageType": "mapPlayer",
+													"grid": {
+														"type": "square",
+														"size": 104,
+														"offsetX": 4,
+														"offsetY": 2
+													},
+													"title": "玩家版本",
+													"credit": "Dyson Logos",
+													"mapParent": {
+														"id": "410"
+													}
 												}
 											]
-										}
-									]
-								},
-								{
-									"ENG_name": "S23: Trashed Luxury Suite",
-									"name": "S23: 被毁的豪华套房",
-									"type": "entries",
-									"page": 76,
-									"id": "177",
-									"entries": [
+										},
+										"以下位置与{@area 地图：星玻传送点上阶|410|x}相对应。",
 										{
-											"type": "insetReadaloud",
+											"ENG_name": "S13: Balcony",
+											"name": "S13: 阳台",
+											"type": "entries",
+											"id": "163",
+											"page": 72,
+											"entries": [
+												"这个10英尺高的阳台俯瞰着前哨站下层的东端区域（包括{@area S2|140|x}、{@area S3|142|x}、{@area S7|14e|x}和{@area S8|152|x}）。阳台由光滑的雕刻石料制成，配有3英尺高的栏杆，栏杆由紧绷的金属缆绳构成，缆绳固定在间隔5英尺的黄铜柱之间。",
+												"地震导致阳台在两处坍塌\u2014\u2014详情参见区域{@area S16|169|x}和{@area S17|16a|x}。"
+											]
+										},
+										{
+											"ENG_name": "S14: Abandoned Garden",
+											"name": "S14: 废弃花园",
+											"type": "entries",
+											"id": "164",
+											"page": 72,
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "165",
+													"page": 72,
+													"entries": [
+														"魔法光芒充斥这个长方形房间。光线源自天花板上三个玻璃穹顶，照耀下方五尺宽、二十尺长的植物床，床上堆满腐烂植被。"
+													]
+												},
+												"仔细观察植物丛可发现藤蔓间有两处锈蚀的突起\u2014\u2014这是洒水器的喷头，如今仅能滴落铁锈色的水珠。",
+												"如果有角色靠近花圃5英尺范围内，请念出：",
+												{
+													"type": "insetReadaloud",
+													"id": "166",
+													"page": 72,
+													"entries": [
+														"腐烂的植被聚集起来，形成两团蠕动的物体，蹒跚地向你移动。"
+													]
+												},
+												"这些藤蔓变为两个{@creature 蔓生怪|XMM|蔓生怪}攻击入侵者。这些生物会追捕逃跑的目标，若未被摧毁则会在1小时后化为无生命植被。"
+											]
+										},
+										{
+											"ENG_name": "S15: Teleportation Circle",
+											"name": "S15: 传送法阵",
+											"type": "entries",
+											"id": "167",
+											"page": 74,
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "168",
+													"page": 74,
+													"entries": [
+														"这个空荡荡的房间地面上铭刻着一个十英尺直径的圆环，内含几何符号与奥术符文。"
+													]
+												},
+												"地板上的圆圈是一个永久传送法阵（详见{@book 玩家手册|XPHB}中的{@spell 传送法阵|XPHB}法术）。"
+											]
+										},
+										{
+											"ENG_name": "S16: Collapsed Balcony",
+											"name": "S16：坍塌的阳台",
+											"type": "entries",
+											"id": "169",
+											"page": 74,
+											"entries": [
+												"此处部分阳台已坍塌，形成了一个10英尺宽的缺口。尝试跳跃缺口但失败的生物将坠落10英尺至{@area S3|142|x}区域。"
+											]
+										},
+										{
+											"ENG_name": "S17: Collapsed Balcony",
+											"name": "S17：坍塌的阳台",
+											"type": "entries",
+											"id": "16a",
+											"page": 74,
+											"entries": [
+												"一处15英尺长的阳台在这里坍塌。尝试跳跃缺口但失败的生物会坠入下方10英尺处的{@area S7|14e|x}区域。"
+											]
+										},
+										{
+											"ENG_name": "S18: Security Station",
+											"name": "S18: 安全站",
+											"type": "entries",
+											"id": "16b",
+											"page": 74,
+											"entries": [
+												"这是一个复杂的场景，因此在向玩家朗读以下文本以营造氛围前，请仔细审阅：",
+												{
+													"type": "insetReadaloud",
+													"id": "16c",
+													"page": 74,
+													"entries": [
+														"这个区域被墙壁上间隔排列的水晶壁灯照得灯火通明。地面是一个巨大的阳台，悬垂在下层的储物间上方，两者之间以玻璃楼梯相连。黄铜柱之间拉起的缆绳构成了环绕阳台的栏杆。西南侧的墙边摆放着一个嗡嗡作响的金属控制台，其倾斜的顶部分布着数个开关和一颗闪烁的红灯。控制台上方的墙面镶嵌着一块椭圆形的深色玻璃板。一个方头方脑的机械生物正紧张地站在控制台旁，它用机械手中的一只紧握着小陶瓷卡片。"
+													]
+												},
+												"控制台旁边的生物是{@creature 魔冢·二元冢|XMM}，它对入侵者漠不关心。这个二重身懂得摩登语和通用手语。如果遭到攻击，二重身会发出可听见的求救声，促使下方储藏室（区域{@area S6|14a|x}）里的四个{@creature 魔冢·四元冢|XMM|模组四元体}上来保护它。有关控制台的更多信息，请参阅下面的\"使用控制台\"。",
+												"使用一张符文卡（详见\"{@area 星玻璃航点特性|137|x}\"），双生体撤退至该位置以避开暴怒的黄铜龙。随后双生体激活了无声警报，导致控制台上的灯泡闪烁红光。",
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "adventure/DrDe/071-04-003.qaara-gith-npc.webp"
+													},
+													"width": 1700,
+													"height": 1210,
+													"credit": "Justine Jones"
+												},
+												{
+													"ENG_name": "Qaara's Arrival",
+													"name": "卡拉之降临",
+													"type": "entries",
+													"id": "16d",
+													"page": 74,
+													"entries": [
+														"无声警报触发来自星界中一个吉斯扬基前哨站的响应。在你选择的时刻，一名名为卡菈·瓦勒斯（Qaara Valreth）的守序中立{@creature 吉斯洋基骑士|XMM}传送进房间，尽可能靠近控制台的空闲位置出现。按以下方式描述她的到来：",
+														{
+															"type": "insetReadaloud",
+															"id": "16e",
+															"page": 74,
+															"entries": [
+																"银色光点在空中旋舞，随后凝聚成一名瘦削的绿皮人形，身披华丽板甲，手握一柄银质巨剑。"
+															]
+														},
+														"卡菈懂得吉斯语和通用手语。她会用后者试图与遇到的任何不懂吉斯语的生物交流，希望能了解发生了什么。",
+														"除非角色与一个或多个魔冢交战，或是承认对魔冢怀有恶意，否则卡菈最初对角色们的态度是无动于衷（Indifferent）；如果是上述情况，她会对角色们表现出敌意（Hostile）并保护魔冢。",
+														"礼貌但冷漠的卡菈只想查明警报触发的原因，然后返回星界。她对冒险者的任务或巨龙对前哨站的宣称毫无兴趣。如果冒险者描述了伊拉甘对魔冢实施的暴行，卡菈表示会向星界的盟友汇报巨龙的行为，但无法保证吉斯洋基人会介入干涉。她拒绝接受命令，如果冒险者对她态度恶劣，她会试图恐吓他们离开前哨站\u2014\u2014但不会无故与他们发生战斗。"
+													]
+												},
+												{
+													"ENG_name": "Using the Console",
+													"name": "使用控制台",
+													"type": "entries",
+													"id": "16f",
+													"page": 74,
+													"entries": [
+														"这个控制台是一件古怪的魔像科技产物。任何角色花费1分钟以{@action 研究|XPHB}动作检视它时，可进行一次{@dc 15}智力（{@skill 奥秘|XPHB}）检定。检定成功的角色会知道操作哪些开关和旋钮能激活下列功能（召唤卡菈的警报无法再次触发）。若未通过检定的角色操作了任何开关或旋钮，则根据控制台事故表掷骰决定发生的效果。",
+														"控制台是一个大型物件，具有AC18和HP27；上方的屏幕是一个中型物件，具有AC11和HP4。两者都对毒素和心灵伤害具有免疫，但对闪电伤害具有易伤。",
+														"控制台上的开关和旋钮控制以下功能：",
+														{
+															"type": "list",
+															"style": "list-hang-notitle",
+															"items": [
+																{
+																	"ENG_name": "Activate Loudspeaker",
+																	"name": "激活扬声器",
+																	"type": "item",
+																	"entry": "你可以发出一段简短讯息（最多二十五个词），这段讯息将在整个{@area 星镜路标|136|x}范围内广播。该讯息可以用你自己的声音传达，或者通过将你的话语翻译成魔冢语的机械语音播放。"
+																},
+																{
+																	"ENG_name": "Create Sensor",
+																	"name": "创造传感器",
+																	"type": "item",
+																	"entry": "你可以在以下其中一个位置（由你选择）创造一个隐形传感器：门厅（区域{@area S2|140|x}）、喷泉庭院（区域{@area S3|142|x}）、商人广场（区域{@area S7|14e|x}）、星界之门（区域{@area S12|15d|x}）或公寓走廊（区域{@area S19|170|x}）。传感器会被放置在该位置视野不受阻碍的地方，其影像会显示在控制台上方的玻璃屏幕上。通过传感器可以看到但听不到任何声音，效果持续10分钟或直到再次使用此控制台功能。"
+																},
+																{
+																	"ENG_name": "Enable Flight",
+																	"name": "启用飞行",
+																	"type": "item",
+																	"entry": "你激活了一个魔法效果。接下来的10分钟内，{@area 星镜路标|136|x}内的每个生物获得等同于其速度的飞行速度以及悬停能力，但仅限在前哨站内生效。当效果结束时，若某生物没有其他保持悬浮的方式，它会缓缓下降并安全着地。"
+																},
+																{
+																	"ENG_name": "Vent Gas",
+																	"name": "释放毒气",
+																	"type": "item",
+																	"entry": "你将维护走廊（区域{@area S9|155|x}）中的气体排出，控制台传来一个低沉的声音用吉斯语说道：\"气体已排出！\"该走廊在接下来的24小时内保持畅通，之后气体会重新充满。"
+																}
+															]
+														},
+														{
+															"type": "table",
+															"caption": "控制台事故",
+															"page": 75,
+															"colLabels": [
+																"1d12",
+																"遇难"
+															],
+															"colStyles": [
+																"col-2 text-center",
+																"col-10"
+															],
+															"rows": [
+																[
+																	"1",
+																	"控制台关闭电源。它无法再次启动，此后所有功能均无法激活。"
+																],
+																[
+																	"2\u20133",
+																	"控制台5英尺范围内的生物会受到3（{@dice 1d6}）点闪电伤害，并有电火花从中迸发。"
+																],
+																[
+																	"4\u20136",
+																	"刺耳的警报声充满区域 {@area S6|14a|x} 和 {@area S18|16b|x}，持续1分钟或直到控制台被摧毁。在警报响起时，这些区域内的所有生物都将处于 {@condition 耳聋|XPHB} 状态。"
+																],
+																[
+																	"7\u20139",
+																	"该控制台的一个功能被意外触发。掷{@dice 1d4}决定哪个功能：结果为{@b 1}时，启动扩音器；结果为{@b 2}时，在区域{@area S12|15d|x}创建传感器；结果为{@b 3}时，启动飞行模式；结果为{@b 4}时，排放气体。"
+																],
+																[
+																	"10\u201312",
+																	"一只敌对的{@creature 史拉蓝蟾|XMM}从异次元空间中释放出来，出现在尽可能靠近控制台的未被占据空间。它会攻击遇到的任何生物。如果此次意外已经发生过，则再次投掷。"
+																]
+															]
+														}
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "S19: Apartment Hallway",
+											"name": "S19: 公寓走廊",
+											"type": "entries",
+											"id": "170",
 											"page": 76,
-											"id": "178",
 											"entries": [
-												"这套房间由两间被滑动玻璃门分隔开的屋子组成。两间屋内的家具都被砸成了碎片，地面上满是碎裂的木块、撕破的布料、水晶与瓷器的碎片以及破碎的镜片。就连那些饰有黄金几何图案的墙壁也未能幸免；西侧房间的南墙已部分坍塌。"
-											]
-										},
-										"区域S23a和S23b之间的门由玻钢制成（详见\"{@area 星玻璃航点特性|137|x}\"）；当生物接近至1尺范围内时会自动滑开。",
-										"一个敌对的{@creature 隐形追猎者|XMM}栖息在西边的房间。如果角色们进入套房，这个隐形追猎者会朝他们飞去，滑动玻璃钢门的开启暴露了它的存在。吉斯洋基人曾经束缚风元素来帮助清洁豪华套房。在吉斯洋基人废弃了{@area 星镜路标|136|x}后，这些元素生物聚合成隐形追猎者并变得无法控制。该追猎者会战斗至被消灭。",
-										{
-											"ENG_name": "Sinkhole",
-											"name": "陷坑",
-											"type": "entries",
-											"page": 77,
-											"id": "179",
-											"entries": [
-												"在倒塌的墙壁后方有一处自然形成的天坑（参见区域{@area S24|17b|x}）。"
+												{
+													"type": "insetReadaloud",
+													"id": "171",
+													"page": 76,
+													"entries": [
+														"这条L形走廊的一端设有电梯，另有五扇门通向其他区域。墙上的水晶壁灯中，靠近电梯门的那一盏似乎出现了故障，正不规则地闪烁。"
+													]
+												},
+												"触碰闪烁的壁火会永久熄灭其光芒。其他水晶壁火仍能保持大厅沐浴在{@variantrule 明亮光照|XPHB}中。"
 											]
 										},
 										{
-											"ENG_name": "Treasure",
-											"name": "宝藏",
+											"ENG_name": "S20: Privy",
+											"name": "S20: 私室",
 											"type": "entries",
-											"page": 77,
-											"id": "17a",
+											"id": "172",
+											"page": 76,
 											"entries": [
-												"墙壁每5英尺的部分包含价值100金币的嵌金，角色需花费1小时才能撬下。套房内无其他贵重物品。"
-											]
-										}
-									]
-								},
-								{
-									"ENG_name": "S24: Robbed Suite and Sinkhole",
-									"name": "S24: 遭劫套房与天坑",
-									"type": "entries",
-									"page": 77,
-									"id": "17b",
-									"entries": [
-										{
-											"type": "insetReadaloud",
-											"page": 77,
-											"id": "17c",
-											"entries": [
-												"这个豪华套房由两间被滑动玻璃门隔开的房间组成。西侧的房间已陷入一个沉洞中，而东侧的房间看起来像是被洗劫过。东侧房间的家具包括软垫长沙发和扶手椅、餐车、衣帽架以及抽屉被拉出的书桌。墙壁上装饰着雕刻的几何图案。"
-											]
-										},
-										"仔细观察墙壁可以发现，有人用刀子、凿子或类似工具将几何雕刻中的黄金镶嵌物取走了。仅剩几片毫无价值的黄金碎片残留在原地。彻底搜查东侧房间的家具后，未发现任何有价值的物品，也未找到关于盗贼的线索。",
-										"区域S24a和S24b之间的门由玻钢制成（详见\"{@area 星玻璃航点特性|137|x}\"）；当生物接近至1英尺范围内时会自动滑开。",
-										{
-											"ENG_name": "Sinkhole",
-											"name": "陷坑",
-											"type": "entries",
-											"page": 77,
-											"id": "17d",
-											"entries": [
-												"一场地震导致此处形成了一个60英尺深的陷坑。在没有攀爬装备的情况下，若要攀登其墙壁，需通过一次{@dc 15}力量（{@skill 运动|XPHB}）检定。",
-												"在沉洞底部，一只名为鲍勃辛的{@creature 带翼狗头人|XMM}用布料、碎木片和陶瓷家具残骸搭建了一个临时居所。鲍勃辛一周前潜入了前哨站，避开魔冢并偷走了一张雕文卡。利用这张卡片，他进入了这个套间并开始洗劫。他将财宝藏于临时居所内并以死相护，但对其他生物表现出友善态度。",
-												"了解伊拉甘烦恼原因的冒险者可能会认为带翼狗头人就是龙正在寻找的小偷。然而，鲍勃辛从未见过龙类的宝藏库房（尽管这个贪婪的带翼狗头人肯定想了解更多）。如果角色们将带翼狗头人交给伊拉甘审问，龙会审讯鲍勃辛并迅速得出结论\u2014\u2014这个狗头人确实是个小偷，但并非他要找的那个。"
+												"这个房间里有一对木制长凳，每张长凳下方都有一个石制活板门，覆盖着地板上一个宽2英尺、深30英尺的粪坑。房间里没有其他值得注意的东西。"
 											]
 										},
 										{
-											"ENG_name": "Treasure",
-											"name": "宝藏",
+											"ENG_name": "S21: Pristine Luxury Suite",
+											"name": "S21: 顶级豪华套房",
 											"type": "entries",
-											"page": 77,
-											"id": "17e",
+											"id": "173",
+											"page": 76,
 											"entries": [
-												"鲍布辛的宝藏收藏包括以下物品：",
+												{
+													"type": "insetReadaloud",
+													"id": "174",
+													"page": 76,
+													"entries": [
+														"这间豪华套房由两间房间组成，中间用一扇透明的滑动玻璃门隔开。西侧房间装饰得像一间客厅，配有软垫躺椅和扶手椅、一辆摆放着水晶高脚杯和细颈瓶的推车，以及一个衣帽架。东侧房间放置着一张舒适的四柱床、一个衣柜、一面落地镜，以及一个隐藏在三折屏风后的爪足陶瓷浴缸。东墙上的一扇窗户俯瞰着前哨站的大厅。套房的所有墙壁都镶嵌着金色，形成美丽的几何图案。"
+													]
+												},
+												"这套房间无人居住。区域S21a与S21b之间的门，与建筑内的其他门一样，由玻钢制成（参见\"{@area 星玻璃航点特性|137|x}\"）；当生物靠近至1英尺范围内时会自动滑开。俯瞰商贾广场（区域{@area S7|14e|x}）的玻钢窗户无法开启。",
+												{
+													"ENG_name": "Treasure",
+													"name": "宝藏",
+													"type": "entries",
+													"id": "175",
+													"page": 76,
+													"entries": [
+														"墙壁上每5英尺长的区域都嵌有价值100金币的黄金，需要角色花费1小时才能撬出。其它贵重物品包括两个水晶酒瓶（每个价值250金币）和八个水晶高脚杯（每个价值25金币）。"
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "S22: Luxury Suite Retreat",
+											"name": "S22: 豪华套房休憩处",
+											"type": "entries",
+											"id": "176",
+											"page": 76,
+											"entries": [
+												"这个双室套房的外观与区域{@area S21|173|x}完全相同，且拥有相同的宝藏。此外，西侧的房间内有三个{@creature 魔冢·三元冢|XMM|魔冢三阶机}，它们撤退到这里以躲避龙的怒火。这些三阶机兵对角色们态度冷漠，且每名机兵都有自己的符记牌（详见\"{@area 星玻璃航点特性|137|x}\"）。",
+												"三体机械境生物通晓摩帝语和通用手语。它们使用后者恳求角色保护它们免受伊拉甘的怒火。虽然不知道巨龙当前的位置，这些机械境生物分享了以下信息：",
 												{
 													"type": "list",
+													"style": "list-hang-notitle",
 													"items": [
-														"匕首",
-														"符文卡（参见\"{@area 星玻璃航点特性|137|x}\"）",
-														"5磅银质贸易锭（价值25金币）",
-														"22磅黄金镶嵌球（价值1100金币）",
-														"{@item 跳跃戒指|XDMG}"
+														{
+															"ENG_name": "Starglass Waypoint Lore",
+															"name": "星辰玻璃路标传说",
+															"type": "item",
+															"entry": "星玻璃航点是由吉斯扬基和魔冢建造的。近百年来，吉斯扬基将这个前哨站作为孵化场使用\u2014\u2014一个安全而隔绝的场所，用于养育和训练他们的幼体。前哨站深处的位面传送门使吉斯扬基得以自由往返星界。九年前，在一次地震损毁了位面传送门后，吉斯扬基废弃了这个前哨站，但留下了他们的魔冢管理者们。"
+														},
+														{
+															"ENG_name": "Ylagan's Arrival",
+															"name": "伊拉甘的到来",
+															"type": "item",
+															"entry": "当伊拉甘一年前抵达并将这座前哨站改造为巢穴后，模组生物开始按照巨龙的需求对其进行了功能改造。"
+														},
+														{
+															"ENG_name": "Ylagan's Rage",
+															"name": "伊拉甘之怒",
+															"type": "item",
+															"entry": "这条龙将他的财宝存放在带有位面之门（区域{@area S12|15d|x}）的房间内。最近，财宝开始从龙的宝库中消失。在未能找到窃贼后，伊拉甘指责魔冢偷走了他的财宝，并愤怒地摧毁了其中几个。随后他用碎石堵住了通往宝库的隧道，并开始追捕剩余的魔冢。这些三阶魔冢试图但未能抵达安全站（区域{@area S18|16b|x}），原本希望利用那里的控制台向星界的吉斯洋基要塞发送求救信号。巨龙堵住了去路，因此三阶魔冢撤退到了这间豪华套房，期盼巨龙带着剩余的财宝离开这个前哨站。"
+														}
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "S23: Trashed Luxury Suite",
+											"name": "S23: 被毁的豪华套房",
+											"type": "entries",
+											"id": "177",
+											"page": 76,
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "178",
+													"page": 76,
+													"entries": [
+														"这套房间由两间被滑动玻璃门分隔开的屋子组成。两间屋内的家具都被砸成了碎片，地面上满是碎裂的木块、撕破的布料、水晶与瓷器的碎片以及破碎的镜片。就连那些饰有黄金几何图案的墙壁也未能幸免；西侧房间的南墙已部分坍塌。"
+													]
+												},
+												"区域S23a和S23b之间的门由玻钢制成（详见\"{@area 星玻璃航点特性|137|x}\"）；当生物接近至1尺范围内时会自动滑开。",
+												"一个敌对的{@creature 隐形追猎者|XMM}栖息在西边的房间。如果角色们进入套房，这个隐形追猎者会朝他们飞去，滑动玻璃钢门的开启暴露了它的存在。吉斯洋基人曾经束缚风元素来帮助清洁豪华套房。在吉斯洋基人废弃了{@area 星镜路标|136|x}后，这些元素生物聚合成隐形追猎者并变得无法控制。该追猎者会战斗至被消灭。",
+												{
+													"ENG_name": "Sinkhole",
+													"name": "陷坑",
+													"type": "entries",
+													"id": "179",
+													"page": 77,
+													"entries": [
+														"在倒塌的墙壁后方有一处自然形成的天坑（参见区域{@area S24|17b|x}）。"
+													]
+												},
+												{
+													"ENG_name": "Treasure",
+													"name": "宝藏",
+													"type": "entries",
+													"id": "17a",
+													"page": 77,
+													"entries": [
+														"墙壁每5英尺的部分包含价值100金币的嵌金，角色需花费1小时才能撬下。套房内无其他贵重物品。"
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "S24: Robbed Suite and Sinkhole",
+											"name": "S24: 遭劫套房与天坑",
+											"type": "entries",
+											"id": "17b",
+											"page": 77,
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "17c",
+													"page": 77,
+													"entries": [
+														"这个豪华套房由两间被滑动玻璃门隔开的房间组成。西侧的房间已陷入一个沉洞中，而东侧的房间看起来像是被洗劫过。东侧房间的家具包括软垫长沙发和扶手椅、餐车、衣帽架以及抽屉被拉出的书桌。墙壁上装饰着雕刻的几何图案。"
+													]
+												},
+												"仔细观察墙壁可以发现，有人用刀子、凿子或类似工具将几何雕刻中的黄金镶嵌物取走了。仅剩几片毫无价值的黄金碎片残留在原地。彻底搜查东侧房间的家具后，未发现任何有价值的物品，也未找到关于盗贼的线索。",
+												"区域S24a和S24b之间的门由玻钢制成（详见\"{@area 星玻璃航点特性|137|x}\"）；当生物接近至1英尺范围内时会自动滑开。",
+												{
+													"ENG_name": "Sinkhole",
+													"name": "陷坑",
+													"type": "entries",
+													"id": "17d",
+													"page": 77,
+													"entries": [
+														"一场地震导致此处形成了一个60英尺深的陷坑。在没有攀爬装备的情况下，若要攀登其墙壁，需通过一次{@dc 15}力量（{@skill 运动|XPHB}）检定。",
+														"在沉洞底部，一只名为鲍勃辛的{@creature 带翼狗头人|XMM}用布料、碎木片和陶瓷家具残骸搭建了一个临时居所。鲍勃辛一周前潜入了前哨站，避开魔冢并偷走了一张雕文卡。利用这张卡片，他进入了这个套间并开始洗劫。他将财宝藏于临时居所内并以死相护，但对其他生物表现出友善态度。",
+														"了解伊拉甘烦恼原因的冒险者可能会认为带翼狗头人就是龙正在寻找的小偷。然而，鲍勃辛从未见过龙类的宝藏库房（尽管这个贪婪的带翼狗头人肯定想了解更多）。如果角色们将带翼狗头人交给伊拉甘审问，龙会审讯鲍勃辛并迅速得出结论\u2014\u2014这个狗头人确实是个小偷，但并非他要找的那个。"
+													]
+												},
+												{
+													"ENG_name": "Treasure",
+													"name": "宝藏",
+													"type": "entries",
+													"id": "17e",
+													"page": 77,
+													"entries": [
+														"鲍布辛的宝藏收藏包括以下物品：",
+														{
+															"type": "list",
+															"items": [
+																"匕首",
+																"符文卡（参见\"{@area 星玻璃航点特性|137|x}\"）",
+																"5磅银质贸易锭（价值25金币）",
+																"22磅黄金镶嵌球（价值1100金币）",
+																"{@item 跳跃戒指|XDMG}"
+															]
+														}
 													]
 												}
 											]
@@ -2760,256 +2766,256 @@
 									]
 								}
 							]
-						}
-					]
-				},
-				{
-					"ENG_name": "Conclusion",
-					"name": "结局",
-					"type": "section",
-					"page": 77,
-					"id": "17f",
-					"entries": [
-						"如果角色们获得了{@item 吞噬袋|XDMG}，他们最终会发现它的真实本质。到那时该如何处理它，就由他们自己决定了。",
-						"如果他们告诉尤拉甘这个袋子吞噬了他珍贵的宝石，知道真相的龙会感到安心，并对自己对待魔导机兵的行为感到懊悔。怀着悔意，他发誓会保护剩余的魔导机兵并看守它们。",
-						"伊拉甘允许角色保留他们在{@area 星镜路标|136|x}找到的宝物，但属于他个人珍藏的物品除外。",
+						},
 						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/072-04-004.ylagan-npc-dragon-with-modrons.webp"
-							},
-							"credit": "Justine Jones",
-							"width": 850,
-							"height": 731
-						}
-					]
-				},
-				{
-					"ENG_name": "History of Brass Dragons",
-					"name": "黄铜龙的历史",
-					"type": "section",
-					"page": 61,
-					"id": "180",
-					"entries": [
-						"{@font 奥拉吉·达拉斯特里克斯|languages/XPHB/Draconic/Iokharik-v2.woff2}",
-						{
-							"type": "insetReadaloud",
-							"id": "181",
+							"ENG_name": "Conclusion",
+							"name": "结局",
+							"type": "section",
+							"id": "17f",
+							"page": 77,
 							"entries": [
-								"基思·帕金森为《龙枪》冒险模组《希望之龙》(1984) 封面所绘的黄铜龙布莱兹身上的卷曲犄角造型，虽然在黄铜龙形象设定中昙花一现，但后世创作将这种犄角形态与早期设定中该龙种颈甲特征巧妙融合。"
+								"如果角色们获得了{@item 吞噬袋|XDMG}，他们最终会发现它的真实本质。到那时该如何处理它，就由他们自己决定了。",
+								"如果他们告诉尤拉甘这个袋子吞噬了他珍贵的宝石，知道真相的龙会感到安心，并对自己对待魔导机兵的行为感到懊悔。怀着悔意，他发誓会保护剩余的魔导机兵并看守它们。",
+								"伊拉甘允许角色保留他们在{@area 星镜路标|136|x}找到的宝物，但属于他个人珍藏的物品除外。",
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/072-04-004.ylagan-npc-dragon-with-modrons.webp"
+									},
+									"width": 850,
+									"height": 731,
+									"credit": "Justine Jones"
+								}
 							]
 						},
 						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/073-04-006.brass-dragon-with-rider.webp"
-							},
-							"title": "希望之龙（1984）",
-							"credit": "Keith Parkinson",
-							"width": 850,
-							"height": 855
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/074-04-007.brass-dragon-1993.webp"
-							},
-							"title": "怪物图鉴（1993）",
-							"credit": "Mark A. Nelson",
-							"width": 832,
-							"height": 929
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/075-04-008.brass-dragon-1977.webp"
-							},
-							"title": "怪物图鉴（1977）",
-							"credit": "David C. Sutherland",
-							"width": 684,
-							"height": 797
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/076-04-009.brass-dragon-draconomicon.webp"
-							},
-							"title": "龙之书（2003）",
-							"credit": "Richard Sardinha",
-							"width": 1700,
-							"height": 2410
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/077-04-011.brass-dragon-anatomy.webp"
-							},
-							"title": "龙之书（2003）",
-							"credit": "Todd Lockwood",
-							"width": 850,
-							"height": 573
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/078-04-010.brass-dragon-mtg.webp"
-							},
-							"title": "指挥官传奇：博德之门之战 (2022)",
-							"credit": "Raoul Vitale",
-							"width": 744,
-							"height": 1040
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/079-04-012.brass-dragon-2023.webp"
-							},
-							"title": "概念艺术（2023）",
-							"credit": "Alexander Ostrowski",
-							"width": 1700,
-							"height": 844
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/080-04-013.brass-dragon-2025.webp"
-							},
-							"title": "怪物图鉴（2025）",
-							"credit": "Caio Monteiro",
-							"width": 1700,
-							"height": 1100
-						}
-					]
-				}
-			]
-		},
-		{
-			"ENG_name": "Credits",
-			"name": "制作组",
-			"type": "section",
-			"page": 2,
-			"id": "40b",
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"columns": 2,
-					"items": [
-						{
-							"ENG_name": "Lead Designers:",
-							"name": "首席设计师：",
-							"type": "item",
-							"entry": "Amanda Hamon, James Wyatt"
-						},
-						{
-							"ENG_name": "Designers:",
-							"name": "设计师：",
-							"type": "item",
-							"entry": "Justice Ramin Arman, Makenzie De Armas, Anthony Joyce-Rivera, Renee Knipe, Ron Lundeen, Christopher Perkins, Patrick Renie, Erin Roberts, F. Wesley Schneider, Carl Sibley, Jason Tondro, Steve Townshend"
-						},
-						{
-							"ENG_name": "Rules Developers:",
-							"name": "规则开发者：",
-							"type": "item",
-							"entry": "Makenzie De Armas (lead), Jeremy Crawford, Ron Lundeen"
-						},
-						{
-							"ENG_name": "Editors:",
-							"name": "编辑：",
-							"type": "item",
-							"entry": "Judy Bauer (lead), Emma Candon, Sadie Lowry, Hannah Rose, Sue Weinlein, Hans Ziegler"
-						},
-						{
-							"ENG_name": "Art Directors:",
-							"name": "艺术指导：",
-							"type": "item",
-							"entry": "Matt Cole (lead), Fury Galluzzi, Josh Herman, Kate Irwin, Emi Tanji"
-						},
-						{
-							"ENG_name": "Graphic Designers:",
-							"name": "平面设计师：",
-							"type": "item",
-							"entry": "Matt Cole, Paolo Vacala"
-						},
-						{
-							"ENG_name": "Cover Illustrators:",
-							"name": "封面插画师：",
-							"type": "item",
-							"entry": "Justine Jones, Greg Staples"
-						},
-						{
-							"ENG_name": "Interior Illustrators:",
-							"name": "内页插画师：",
-							"type": "item",
-							"entry": "Tom Babbey, Daren Bader, Clyde Caldwell, Chippy, Simon Dominic, Jeff Easley, Luke Eidenschink, Larry Elmore, Jason A. Engle, Lars Grant-West, John Grello, Johan Grenier, Justine Jones, Andrew Kolb, Vance Kovacs, Andrey Kuzinskiy, Ed Kwong, Todd Lockwood, Antonio José Manzanedo, Dominik Mayer, Caio Monteiro, Martin Mottet, Jodie Muir, Mark A. Nelson, Alexander Ostrowski, Keith Parkinson, Anna Podedworna, Steve Prescott, Chris Rallis, Joshua Raphael, Richard Sardinha, Chris Seaman, Rudy Siswanto, Craig J Spearing, Ron Spencer, Leroy Steinmann, Zack Stella, Matt Stewart, Matt Stikker, David C. Sutherland, Autumn Rain Turkel, Paolo Vacala, Svetlin Velinov, Raoul Vitale, Jabari Weathers, Campbell White"
-						},
-						{
-							"ENG_name": "Cartographers:",
-							"name": "制图师：",
-							"type": "item",
-							"entry": "Francesca Baerald, Jared Blando, CoupleOfKooks, Andrew Kolb, Dyson Logos, Damien Mammoliti, Mike Schley, Paolo Vacala"
-						},
-						{
-							"ENG_name": "Consultants:",
-							"name": "顾问：",
-							"type": "item",
-							"entry": "Shawn Banerjee, Eytan Bernstein, Daniel Delgado, Sameer Joseph"
-						},
-						{
-							"ENG_name": "Producers:",
-							"name": "制作人：",
-							"type": "item",
-							"entry": "Rob Hawkey (lead), Bill Benham, Siera Bruggeman, Vanessa Hoskins"
-						}
-					]
-				},
-				"{@i 本书献给Christopher Perkins，感谢他数十年来为《龙与地下城》作出的贡献。}",
-				{
-					"type": "gallery",
-					"images": [
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/199-11-001.title-splash.webp"
-							},
-							"credit": "Alexander Ostrowski",
-							"width": 850,
-							"height": 963
+							"ENG_name": "History of Brass Dragons",
+							"name": "黄铜龙的历史",
+							"type": "section",
+							"id": "180",
+							"page": 61,
+							"entries": [
+								"{@font 奥拉吉·达拉斯特里克斯|languages/XPHB/Draconic/Iokharik-v2.woff2}",
+								{
+									"type": "insetReadaloud",
+									"id": "181",
+									"entries": [
+										"基思·帕金森为《龙枪》冒险模组《希望之龙》(1984) 封面所绘的黄铜龙布莱兹身上的卷曲犄角造型，虽然在黄铜龙形象设定中昙花一现，但后世创作将这种犄角形态与早期设定中该龙种颈甲特征巧妙融合。"
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/073-04-006.brass-dragon-with-rider.webp"
+									},
+									"width": 850,
+									"height": 855,
+									"title": "希望之龙（1984）",
+									"credit": "Keith Parkinson"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/074-04-007.brass-dragon-1993.webp"
+									},
+									"width": 832,
+									"height": 929,
+									"title": "怪物图鉴（1993）",
+									"credit": "Mark A. Nelson"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/075-04-008.brass-dragon-1977.webp"
+									},
+									"width": 684,
+									"height": 797,
+									"title": "怪物图鉴（1977）",
+									"credit": "David C. Sutherland"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/076-04-009.brass-dragon-draconomicon.webp"
+									},
+									"width": 1700,
+									"height": 2410,
+									"title": "龙之书（2003）",
+									"credit": "Richard Sardinha"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/077-04-011.brass-dragon-anatomy.webp"
+									},
+									"width": 850,
+									"height": 573,
+									"title": "龙之书（2003）",
+									"credit": "Todd Lockwood"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/078-04-010.brass-dragon-mtg.webp"
+									},
+									"width": 744,
+									"height": 1040,
+									"title": "指挥官传奇：博德之门之战 (2022)",
+									"credit": "Raoul Vitale"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/079-04-012.brass-dragon-2023.webp"
+									},
+									"width": 1700,
+									"height": 844,
+									"title": "概念艺术（2023）",
+									"credit": "Alexander Ostrowski"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/080-04-013.brass-dragon-2025.webp"
+									},
+									"width": 1700,
+									"height": 1100,
+									"title": "怪物图鉴（2025）",
+									"credit": "Caio Monteiro"
+								}
+							]
 						}
 					]
 				},
 				{
-					"type": "gallery",
-					"images": [
+					"ENG_name": "Credits",
+					"name": "制作组",
+					"type": "section",
+					"id": "40b",
+					"page": 2,
+					"entries": [
 						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/200-11-002.traditional-cover.webp"
-							},
-							"title": "封面故事：在Greg Staples创作的这张极具张力的海报中，三位勇敢的冒险者直面由五种色彩龙所带来的未知险境。",
-							"width": 850,
-							"height": 951
+							"type": "list",
+							"style": "list-hang-notitle",
+							"columns": 2,
+							"items": [
+								{
+									"ENG_name": "Lead Designers:",
+									"name": "首席设计师：",
+									"type": "item",
+									"entry": "Amanda Hamon, James Wyatt"
+								},
+								{
+									"ENG_name": "Designers:",
+									"name": "设计师：",
+									"type": "item",
+									"entry": "Justice Ramin Arman, Makenzie De Armas, Anthony Joyce-Rivera, Renee Knipe, Ron Lundeen, Christopher Perkins, Patrick Renie, Erin Roberts, F. Wesley Schneider, Carl Sibley, Jason Tondro, Steve Townshend"
+								},
+								{
+									"ENG_name": "Rules Developers:",
+									"name": "规则开发者：",
+									"type": "item",
+									"entry": "Makenzie De Armas (lead), Jeremy Crawford, Ron Lundeen"
+								},
+								{
+									"ENG_name": "Editors:",
+									"name": "编辑：",
+									"type": "item",
+									"entry": "Judy Bauer (lead), Emma Candon, Sadie Lowry, Hannah Rose, Sue Weinlein, Hans Ziegler"
+								},
+								{
+									"ENG_name": "Art Directors:",
+									"name": "艺术指导：",
+									"type": "item",
+									"entry": "Matt Cole (lead), Fury Galluzzi, Josh Herman, Kate Irwin, Emi Tanji"
+								},
+								{
+									"ENG_name": "Graphic Designers:",
+									"name": "平面设计师：",
+									"type": "item",
+									"entry": "Matt Cole, Paolo Vacala"
+								},
+								{
+									"ENG_name": "Cover Illustrators:",
+									"name": "封面插画师：",
+									"type": "item",
+									"entry": "Justine Jones, Greg Staples"
+								},
+								{
+									"ENG_name": "Interior Illustrators:",
+									"name": "内页插画师：",
+									"type": "item",
+									"entry": "Tom Babbey, Daren Bader, Clyde Caldwell, Chippy, Simon Dominic, Jeff Easley, Luke Eidenschink, Larry Elmore, Jason A. Engle, Lars Grant-West, John Grello, Johan Grenier, Justine Jones, Andrew Kolb, Vance Kovacs, Andrey Kuzinskiy, Ed Kwong, Todd Lockwood, Antonio José Manzanedo, Dominik Mayer, Caio Monteiro, Martin Mottet, Jodie Muir, Mark A. Nelson, Alexander Ostrowski, Keith Parkinson, Anna Podedworna, Steve Prescott, Chris Rallis, Joshua Raphael, Richard Sardinha, Chris Seaman, Rudy Siswanto, Craig J Spearing, Ron Spencer, Leroy Steinmann, Zack Stella, Matt Stewart, Matt Stikker, David C. Sutherland, Autumn Rain Turkel, Paolo Vacala, Svetlin Velinov, Raoul Vitale, Jabari Weathers, Campbell White"
+								},
+								{
+									"ENG_name": "Cartographers:",
+									"name": "制图师：",
+									"type": "item",
+									"entry": "Francesca Baerald, Jared Blando, CoupleOfKooks, Andrew Kolb, Dyson Logos, Damien Mammoliti, Mike Schley, Paolo Vacala"
+								},
+								{
+									"ENG_name": "Consultants:",
+									"name": "顾问：",
+									"type": "item",
+									"entry": "Shawn Banerjee, Eytan Bernstein, Daniel Delgado, Sameer Joseph"
+								},
+								{
+									"ENG_name": "Producers:",
+									"name": "制作人：",
+									"type": "item",
+									"entry": "Rob Hawkey (lead), Bill Benham, Siera Bruggeman, Vanessa Hoskins"
+								}
+							]
+						},
+						"{@i 本书献给Christopher Perkins，感谢他数十年来为《龙与地下城》作出的贡献。}",
+						{
+							"type": "gallery",
+							"images": [
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/199-11-001.title-splash.webp"
+									},
+									"width": 850,
+									"height": 963,
+									"credit": "Alexander Ostrowski"
+								}
+							]
 						},
 						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/201-11-003.alt-cover.webp"
-							},
-							"title": "替换封面：Justine Jones以迷幻笔触，绘就一幅群龙入梦的奇幻图景。",
-							"width": 850,
-							"height": 951
+							"type": "gallery",
+							"images": [
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/200-11-002.traditional-cover.webp"
+									},
+									"width": 850,
+									"height": 951,
+									"title": "封面故事：在Greg Staples创作的这张极具张力的海报中，三位勇敢的冒险者直面由五种色彩龙所带来的未知险境。"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/201-11-003.alt-cover.webp"
+									},
+									"width": 850,
+									"height": 951,
+									"title": "替换封面：Justine Jones以迷幻笔触，绘就一幅群龙入梦的奇幻图景。"
+								}
+							]
 						}
 					]
 				}

@@ -1,2317 +1,2323 @@
 {
-	"data": [
+	"bookData": [
 		{
-			"ENG_name": "Introduction: Vampires Own the Night",
-			"name": "引言：吸血鬼主宰黑夜",
-			"type": "section",
-			"id": "000",
-			"entries": [
+			"id": "ABH",
+			"source": "ABH",
+			"data": [
 				{
-					"type": "insetReadaloud",
-					"id": "001",
+					"ENG_name": "Introduction: Vampires Own the Night",
+					"name": "引言：吸血鬼主宰黑夜",
+					"type": "section",
+					"id": "000",
 					"entries": [
-						"精灵初生吸血鬼阿斯代伦·安卡宁在电子游戏{@i 博德之门 3}中魅惑了被遗忘国度粉丝们的心。在那款游戏中，阿斯代伦是一位冒险伙伴和潜在的情人，玩家可以敦促他走向救赎或暴政。",
-						"但在电子游戏事件发生之前，阿斯代伦曾是吸血鬼卡扎多尔·萨尔的受害者和不情愿的仆人，这位大魔鬼墨菲斯托费勒斯的信徒。每个黑夜，阿斯代伦和卡扎多尔的其他初生吸血鬼都会将受害者带给主人进食并杀害。为了应对萨尔的折磨和他不死生物生活的恐怖，阿斯代伦用讽刺的机智、调情和黑色幽默武装自己。数十年的夜间狩猎让阿斯代伦了解了吸血生活的方方面面：他在此透露的秘密。",
-						"对于玩家和地下城主来说，{@i 阿斯代伦的饥渴卷册}为那些被吸血鬼吸引的人提供了新的角色选项和工具，无论是在博德之门还是在你设定的任何龙与地下城冒险中。利用这些细节，阿斯代伦的粉丝们可以与最喜爱的初生吸血鬼一同冒险，而所有玩家都能发现吸血鬼地下世界最阴暗角落里潜伏着什么。"
-					]
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/ABH/000-00-001.astarion-reading.webp"
-					},
-					"title": "阿斯代伦研读他关于各种黑夜生物的书面见解。",
-					"credit": "Clint Cearley",
-					"width": 1700,
-					"height": 2260
-				},
-				{
-					"ENG_name": "Using This Supplement",
-					"name": "使用此扩展包",
-					"type": "entries",
-					"id": "002",
-					"entries": [
-						"第1章适合所有玩家阅读，而第2章和第3章仅供地下城主使用。本增补包含以下内容：",
-						"{@area 第一章|004|x} 详细介绍了吸血裔种族，以及适合对吸血鬼感兴趣或与吸血鬼历史相关的D&D角色的背景和专长。",
-						"{@area 第二章|05b|x}提供了关于卡扎多尔·萨扎尔吸血鬼家族的信息，以及与吸血鬼或梅菲斯托费勒斯相关的生物属性数据。",
-						"{@area 第三章|064|x} 提供了涉及阿斯代伦的冒险范例，以及鼠道\u2014\u2014在{@i 博德之门 3} 事件发生前阿斯代伦常去的一处场所\u2014\u2014的详细信息和地图。",
 						{
-							"ENG_name": "Astarion's Timeline",
-							"name": "阿斯代伦的时间线",
-							"type": "entries",
-							"id": "003",
+							"type": "insetReadaloud",
+							"id": "001",
 							"entries": [
-								"以下是阿斯代伦生前与死后生命中的重要日期，以谷地开垦历（DR）\u2014\u2014被遗忘国度最常用的年份计量方式呈现：",
-								"{@b 1261 DR}. 阿斯代伦·安科宁在博德之门出生。",
-								"{@b 1300 DR}。吸血鬼卡扎多尔·萨拉将阿斯塔里奥转变为初生吸血鬼。",
-								"{@b 1492 DR}。{@i 博德之门 3}的事件发生。",
-								"{@b 1501 DR}。这是 {@book 被遗忘的国度：费伦英雄|FRHoF} 和 {@book 被遗忘的国度：费伦冒险|FRAiF} 中所述事件的日期。"
-							]
-						}
-					]
-				},
-				{
-					"type": "insetReadaloud",
-					"entries": [
-						{
-							"type": "quote",
-							"entries": [
-								"你好，亲爱的！",
-								"让我们直截了当地切入正题，好吗？是的，这本典籍揭示了吸血秘密。是的，有人可能会利用这些细节来杀死吸血鬼，以及各种黑夜生物。是的，我，阿斯代伦·安库宁，一个饱受嗜血之苦的人，提供了你即将阅读的每一个细节。",
-								"这讽刺难道不美妙吗？",
-								"一如既往，我有我的理由。你看，许多吸血鬼都特别令人厌恶，它们中的任何一个都可能对我构成威胁。所以当我看到一个吸血鬼猎人走进鼠径\u2014\u2014我在博德之门最喜欢的小破酒馆时，我构思了一个绝妙的计划。我魅惑了她，使用了所有老派技巧：甜言蜜语、挑眉弄眼、扭动腰肢。然后我笑了，猎人瞥见了我的尖牙。哦，你真该看看她的表情！",
-								"一旦我们确认了，是的，她确实可以用她那讨厌的小木桩试图杀死我，我们在一点上达成了一致：我是个讨人喜欢的家伙，但不是真正的威胁。而且我掌握着能帮助她捕获一些令人印象深刻的吸血者的信息。",
-								"所以我告诉了她你将在本书中读到的每一个字。然后另一个绝妙的想法在我脑海中闪现。我拿起羽毛笔在卷轴上书写。",
-								"毕竟，难道我的话不值得在吸血鬼猎人的心中和脑海中代代相传吗？感谢众神，我们终于可以摆脱我们同类中最糟糕的那些：不谨慎的、魔鬼崇拜者、恶魔先驱者，以及无聊的家伙！",
-								"我已经与博德之门的学者们商议过，他们建议了格式、编辑惯例以及你将在本书中读到的其他此类平凡事项。结果有点枯燥，所以我冒昧地用一些更引人注目的见解来点缀这些学术内容。",
-								"只有时间才能证明这本典籍的存在是否会让我的许多同胞陷入湮灭。即使不会，至少我得到了娱乐，而你也获得了我的智慧这份礼物。",
-								"你们太客气了，亲爱的！",
-								"献上我全部的爱，",
-								"阿斯代伦"
-							],
-							"skipMarks": true
-						}
-					],
-					"id": "006"
-				}
-			]
-		},
-		{
-			"ENG_name": "Chapter 1: Vampiric Character Options",
-			"name": "第1章：吸血角色选项",
-			"type": "section",
-			"id": "004",
-			"entries": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/ABH/001-01-001.ball.webp"
-					},
-					"title": "在博德之门这场颓废舞会中的狂欢者们没有意识到吸血鬼就在他们中间潜行",
-					"credit": "Cynthia Sheppard",
-					"width": 1700,
-					"height": 2301
-				},
-				"本章包含充实与吸血黑社会有联系的角色的规则，无论是在博德之门还是您选择的另一个设定中。",
-				{
-					"ENG_name": "Character Backgrounds",
-					"name": "角色背景",
-					"type": "section",
-					"id": "005",
-					"entries": [
-						"本节中的背景适用于那些过去与吸血鬼或此类生物常相伴的人。",
-						"每个引用的专长都在本章后面的\"{@area 专长|010|x}\"部分中描述。背景在{@book 玩家手册|XPHB}中有进一步解释。",
-						{
-							"type": "list",
-							"columns": 3,
-							"items": [
-								"{@background 狂欢客|ABH}",
-								"{@background 血徒|ABH}",
-								"{@background 吸血鬼幸存者|ABH}"
-							]
-						},
-						{
-							"type": "quote",
-							"entries": [
-								"黑夜的街道上充斥着各种类型的人：误入歧途者、浑然不觉者、堕落者。然后还有醉醺醺的粗人、厌世的情侣和疲惫不堪的生还者。我喜欢把他们每个人都想象成一种独特的佳酿。"
-							],
-							"by": "阿斯代伦，暗夜品酒师"
-						},
-						{
-							"ENG_name": "Carouser",
-							"name": "狂欢客",
-							"type": "statblock",
-							"tag": "background",
-							"source": "ABH"
-						},
-						{
-							"ENG_name": "Vampire Devotee",
-							"name": "血徒",
-							"type": "statblock",
-							"tag": "background",
-							"source": "ABH"
-						},
-						{
-							"ENG_name": "Vampire Survivor",
-							"name": "吸血鬼幸存者",
-							"type": "statblock",
-							"tag": "background",
-							"source": "ABH"
-						}
-					]
-				},
-				{
-					"ENG_name": "Character Species",
-					"name": "角色种族",
-					"type": "section",
-					"id": "009",
-					"entries": [
-						"下方展示了{@race 半血裔|RHW}种族。",
-						{
-							"ENG_name": "Dhampir",
-							"name": "半血裔",
-							"type": "statblock",
-							"source": "RHW",
-							"prop": "raceFluff",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Dhampir",
-							"name": "半血裔",
-							"type": "statblock",
-							"source": "RHW",
-							"tag": "race",
-							"style": "narrow"
-						}
-					]
-				},
-				{
-					"ENG_name": "Feats",
-					"name": "专长",
-					"type": "section",
-					"id": "010",
-					"entries": [
-						"本章中的专长会按照以下不同的分类区分：起源、通用以及传奇恩惠。这些专长会以一定顺序排列。所有专长都按分类与首字母顺序列在了专长列表中。",
-						{
-							"type": "table",
-							"caption": "专长列表",
-							"colLabels": [
-								"专长",
-								"类别"
-							],
-							"colStyles": [
-								"col-6",
-								"col-6"
-							],
-							"rows": [
-								[
-									"{@feat 嗜血|ABH}",
-									"通用"
-								],
-								[
-									"{@feat 爆破手|ABH}",
-									"通用"
-								],
-								[
-									"{@feat 炽耀黎明之恩惠|ABH}",
-									"传奇恩惠"
-								],
-								[
-									"{@feat 厄影迫现之恩惠|ABH}",
-									"传奇恩惠"
-								],
-								[
-									"{@feat 雾影遁形之恩惠|ABH}",
-									"传奇恩惠"
-								],
-								[
-									"{@feat 黏滞迷雾|ABH}",
-									"通用"
-								],
-								[
-									"{@feat 沉溺痛苦|ABH}",
-									"通用"
-								],
-								[
-									"{@feat 光照使者|ABH}",
-									"通用"
-								],
-								[
-									"{@feat 吻痕|ABH}",
-									"通用"
-								],
-								[
-									"{@feat 残尸败蜕|ABH}",
-									"通用"
-								],
-								[
-									"{@feat 咎罪责难|ABH}",
-									"通用"
-								],
-								[
-									"{@feat 无休狂宴|ABH}",
-									"起源"
-								],
-								[
-									"{@feat 祸国叛心|ABH}",
-									"通用"
-								],
-								[
-									"{@feat 血族猎人|ABH}",
-									"起源"
-								],
-								[
-									"{@feat 血族玩物|ABH}",
-									"起源"
-								],
-								[
-									"{@feat 吸血鬼触碰|ABH}",
-									"通用"
-								]
-							]
-						}
-					]
-				},
-				{
-					"ENG_name": "Origin Feats",
-					"name": "起源专长",
-					"type": "section",
-					"id": "011",
-					"entries": [
-						"这些专长从属于起源分类。",
-						{
-							"type": "list",
-							"columns": 3,
-							"items": [
-								"{@feat 无休狂宴|ABH}",
-								"{@feat 血族猎人|ABH}",
-								"{@feat 血族玩物|ABH}"
-							]
-						},
-						{
-							"type": "quote",
-							"entries": [
-								"你可能会问：这些技巧最适合用于战斗还是诱惑？",
-								"我说，亲爱的们，为什么不能两者兼得呢？"
-							],
-							"by": "多才多艺的阿斯代伦"
-						},
-						{
-							"ENG_name": "Tireless Reveler",
-							"name": "无休狂宴",
-							"type": "statblock",
-							"tag": "feat",
-							"source": "ABH"
-						},
-						{
-							"ENG_name": "Vampire Hunter",
-							"name": "血族猎人",
-							"type": "statblock",
-							"tag": "feat",
-							"source": "ABH"
-						},
-						{
-							"ENG_name": "Vampire's Plaything",
-							"name": "血族玩物",
-							"type": "statblock",
-							"tag": "feat",
-							"source": "ABH"
-						}
-					]
-				},
-				{
-					"ENG_name": "General Feats",
-					"name": "通用专长",
-					"type": "section",
-					"id": "01c",
-					"entries": [
-						"这些专长从属于通用分类。",
-						{
-							"type": "list",
-							"columns": 3,
-							"items": [
-								"{@feat 嗜血|ABH}",
-								"{@feat 爆破手|ABH}",
-								"{@feat 黏滞迷雾|ABH}",
-								"{@feat 沉溺痛苦|ABH}",
-								"{@feat 光照使者|ABH}",
-								"{@feat 吻痕|ABH}",
-								"{@feat 残尸败蜕|ABH}",
-								"{@feat 咎罪责难|ABH}",
-								"{@feat 祸国叛心|ABH}",
-								"{@feat 吸血鬼触碰|ABH}"
-							]
-						},
-						{
-							"type": "quote",
-							"entries": [
-								"培养这些令人愉悦的才能，让你的敌人跪地求饶\u2014\u2014或是让你的情人神魂颠倒。"
-							],
-							"by": "阿斯代伦，关系导师"
-						},
-						{
-							"ENG_name": "Bloodlust",
-							"name": "嗜血",
-							"type": "statblock",
-							"tag": "feat",
-							"source": "ABH"
-						},
-						{
-							"ENG_name": "Bomber",
-							"name": "爆破手",
-							"type": "statblock",
-							"tag": "feat",
-							"source": "ABH"
-						},
-						{
-							"ENG_name": "Cloying Mists",
-							"name": "黏滞迷雾",
-							"type": "statblock",
-							"tag": "feat",
-							"source": "ABH"
-						},
-						{
-							"ENG_name": "Delicious Pain",
-							"name": "沉溺痛苦",
-							"type": "statblock",
-							"tag": "feat",
-							"source": "ABH"
-						},
-						{
-							"ENG_name": "Light Bringer",
-							"name": "光照使者",
-							"type": "statblock",
-							"tag": "feat",
-							"source": "ABH"
-						},
-						{
-							"ENG_name": "Love Bites",
-							"name": "吻痕",
-							"type": "statblock",
-							"tag": "feat",
-							"source": "ABH"
-						},
-						{
-							"ENG_name": "Putrefy",
-							"name": "残尸败蜕",
-							"type": "statblock",
-							"tag": "feat",
-							"source": "ABH"
-						},
-						{
-							"ENG_name": "Rebuke",
-							"name": "咎罪责难",
-							"type": "statblock",
-							"tag": "feat",
-							"source": "ABH"
-						},
-						{
-							"ENG_name": "Treacherous Allure",
-							"name": "祸国叛心",
-							"type": "statblock",
-							"tag": "feat",
-							"source": "ABH"
-						},
-						{
-							"ENG_name": "Vampire Touched",
-							"name": "吸血鬼触碰",
-							"type": "statblock",
-							"tag": "feat",
-							"source": "ABH"
-						}
-					]
-				},
-				{
-					"ENG_name": "Epic Boon Feats",
-					"name": "传奇恩惠专长",
-					"type": "section",
-					"id": "04b",
-					"entries": [
-						"这些专长从属于传奇恩惠分类。",
-						{
-							"type": "list",
-							"columns": 3,
-							"items": [
-								"{@feat 炽耀黎明之恩惠|ABH}",
-								"{@feat 厄影迫现之恩惠|ABH}",
-								"{@feat 雾影遁形之恩惠|ABH}"
+								"精灵初生吸血鬼阿斯代伦·安卡宁在电子游戏{@i 博德之门 3}中魅惑了被遗忘国度粉丝们的心。在那款游戏中，阿斯代伦是一位冒险伙伴和潜在的情人，玩家可以敦促他走向救赎或暴政。",
+								"但在电子游戏事件发生之前，阿斯代伦曾是吸血鬼卡扎多尔·萨尔的受害者和不情愿的仆人，这位大魔鬼墨菲斯托费勒斯的信徒。每个黑夜，阿斯代伦和卡扎多尔的其他初生吸血鬼都会将受害者带给主人进食并杀害。为了应对萨尔的折磨和他不死生物生活的恐怖，阿斯代伦用讽刺的机智、调情和黑色幽默武装自己。数十年的夜间狩猎让阿斯代伦了解了吸血生活的方方面面：他在此透露的秘密。",
+								"对于玩家和地下城主来说，{@i 阿斯代伦的饥渴卷册}为那些被吸血鬼吸引的人提供了新的角色选项和工具，无论是在博德之门还是在你设定的任何龙与地下城冒险中。利用这些细节，阿斯代伦的粉丝们可以与最喜爱的初生吸血鬼一同冒险，而所有玩家都能发现吸血鬼地下世界最阴暗角落里潜伏着什么。"
 							]
 						},
 						{
 							"type": "image",
 							"href": {
 								"type": "internal",
-								"path": "book/ABH/004-01-004.vampire-hunter.webp"
+								"path": "book/ABH/000-00-001.astarion-reading.webp"
 							},
-							"title": "一个吸血鬼猎人与一个吸血鬼纠缠",
-							"credit": "David Astruga",
-							"width": 850,
-							"height": 1045
+							"width": 1700,
+							"height": 2260,
+							"title": "阿斯代伦研读他关于各种黑夜生物的书面见解。",
+							"credit": "Clint Cearley"
 						},
 						{
-							"ENG_name": "Boon of Blazing Dawn",
-							"name": "炽耀黎明之恩惠",
-							"type": "statblock",
-							"tag": "feat",
-							"source": "ABH"
-						},
-						{
-							"ENG_name": "Boon of Looming Shadows",
-							"name": "厄影迫现之恩惠",
-							"type": "statblock",
-							"tag": "feat",
-							"source": "ABH"
-						},
-						{
-							"ENG_name": "Boon of Misty Escape",
-							"name": "雾影遁形之恩惠",
-							"type": "statblock",
-							"tag": "feat",
-							"source": "ABH"
-						}
-					]
-				}
-			]
-		},
-		{
-			"ENG_name": "Chapter 2: Creatures of the Night",
-			"name": "第二章：黑夜生物",
-			"type": "section",
-			"id": "05b",
-			"entries": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/ABH/005-02-001.astarion-sister.webp"
-					},
-					"title": "一个恼怒的阿斯塔里奥监视着他的妹妹维奥莱特与一个收割者魔鬼调情",
-					"credit": "Bram Sels",
-					"width": 1700,
-					"height": 2300
-				},
-				"本章描述了与阿斯泰里安、他崇拜梅菲斯托费勒斯的吸血鬼主人以及吸血黑社会相关的生物。其中一些数据块出现在{@area 第三章|064|x}中呈现的冒险中。你也可以使用这些生物来填充你自己的吸血鬼或魔鬼主题的冒险。",
-				"查阅{@book 怪物图鉴|XMM}以获取关于怪物的更多详细信息。",
-				{
-					"ENG_name": "Cazador Szarr's Family",
-					"name": "卡扎多·萨扎尔的家族",
-					"type": "section",
-					"id": "05c",
-					"entries": [
-						"吸血鬼卡扎多尔·萨阿尔崇拜九层地狱卡尼亚大公墨菲斯托费利斯。卡扎多尔创造了数个初生吸血鬼，包括阿斯代伦，他们夜间在博德之门的街道上游荡，寻找受害者带给他们的主人。卡扎多尔的\"孩子们\"使用{@creature 初生吸血鬼|XMM}资料卡且为中型，除非另有说明。卡扎多尔是一个中型{@creature 吸血鬼狱炎魔使|ABH}。",
-						{
-							"type": "quote",
-							"entries": [
-								"这看起来可能很可怕，但我向你保证，我的家族从事的魔鬼崇拜或谋杀并不比博德之门任何其他正直的贵族家族多。至少我们的晚宴宾客都玩得尖叫连连。"
-							],
-							"by": "阿斯代伦，社会评论家"
-						},
-						{
-							"ENG_name": "Cazador's Spawn",
-							"name": "卡扎多尔的衍体",
+							"ENG_name": "Using This Supplement",
+							"name": "使用此扩展包",
 							"type": "entries",
-							"id": "05d",
+							"id": "002",
 							"entries": [
-								"在{@i 博德之门 3}事件发生之前，卡扎多尔的衍体包括以下成员：",
-								"{@b 安特温·杜费}，曾经是人类，是Cazador信赖的管家。",
-								"{@b 阿斯代伦·安科宁}，曾是一名精灵治安官，是卡扎多的第二个衍体。",
-								"{@b 欧瑞梨}，曾经是一名提夫林，是卡扎多的第一个衍体。她平静的外表下隐藏着无数秘密。",
-								"{@b 达莉莉亚}，曾经是一名精灵和博德之门议会的医师长，试图通过孤注一掷的医疗手段来逆转她的吸血鬼身份。",
-								"{@b 莱昂}，曾经是人类，是卡扎多尔最新的衍体。他拼命保护自己的小女儿维多利亚，让她免受宫殿邪恶的侵害。",
-								"{@b 苍白佩特拉斯}，曾经是一名人类，是卡扎多的第三个衍体，以其傲慢和固执而闻名。",
-								"{@b 紫}，曾经是一名精灵，是卡扎多的第四位子嗣。她以折磨她的兄弟姐妹为乐，并努力取悦她的主人。",
-								"{@b 尤森}，一个小型生物，曾是一名侏儒。他为卡扎多猎杀受害者。"
+								"第1章适合所有玩家阅读，而第2章和第3章仅供地下城主使用。本增补包含以下内容：",
+								"{@area 第一章|004|x} 详细介绍了吸血裔种族，以及适合对吸血鬼感兴趣或与吸血鬼历史相关的D&D角色的背景和专长。",
+								"{@area 第二章|05b|x}提供了关于卡扎多尔·萨扎尔吸血鬼家族的信息，以及与吸血鬼或梅菲斯托费勒斯相关的生物属性数据。",
+								"{@area 第三章|064|x} 提供了涉及阿斯代伦的冒险范例，以及鼠道\u2014\u2014在{@i 博德之门 3} 事件发生前阿斯代伦常去的一处场所\u2014\u2014的详细信息和地图。",
+								{
+									"ENG_name": "Astarion's Timeline",
+									"name": "阿斯代伦的时间线",
+									"type": "entries",
+									"id": "003",
+									"entries": [
+										"以下是阿斯代伦生前与死后生命中的重要日期，以谷地开垦历（DR）\u2014\u2014被遗忘国度最常用的年份计量方式呈现：",
+										"{@b 1261 DR}. 阿斯代伦·安科宁在博德之门出生。",
+										"{@b 1300 DR}。吸血鬼卡扎多尔·萨拉将阿斯塔里奥转变为初生吸血鬼。",
+										"{@b 1492 DR}。{@i 博德之门 3}的事件发生。",
+										"{@b 1501 DR}。这是 {@book 被遗忘的国度：费伦英雄|FRHoF} 和 {@book 被遗忘的国度：费伦冒险|FRAiF} 中所述事件的日期。"
+									]
+								}
+							]
+						},
+						{
+							"type": "insetReadaloud",
+							"id": "006",
+							"entries": [
+								{
+									"type": "quote",
+									"skipMarks": true,
+									"entries": [
+										"你好，亲爱的！",
+										"让我们直截了当地切入正题，好吗？是的，这本典籍揭示了吸血秘密。是的，有人可能会利用这些细节来杀死吸血鬼，以及各种黑夜生物。是的，我，阿斯代伦·安库宁，一个饱受嗜血之苦的人，提供了你即将阅读的每一个细节。",
+										"这讽刺难道不美妙吗？",
+										"一如既往，我有我的理由。你看，许多吸血鬼都特别令人厌恶，它们中的任何一个都可能对我构成威胁。所以当我看到一个吸血鬼猎人走进鼠径\u2014\u2014我在博德之门最喜欢的小破酒馆时，我构思了一个绝妙的计划。我魅惑了她，使用了所有老派技巧：甜言蜜语、挑眉弄眼、扭动腰肢。然后我笑了，猎人瞥见了我的尖牙。哦，你真该看看她的表情！",
+										"一旦我们确认了，是的，她确实可以用她那讨厌的小木桩试图杀死我，我们在一点上达成了一致：我是个讨人喜欢的家伙，但不是真正的威胁。而且我掌握着能帮助她捕获一些令人印象深刻的吸血者的信息。",
+										"所以我告诉了她你将在本书中读到的每一个字。然后另一个绝妙的想法在我脑海中闪现。我拿起羽毛笔在卷轴上书写。",
+										"毕竟，难道我的话不值得在吸血鬼猎人的心中和脑海中代代相传吗？感谢众神，我们终于可以摆脱我们同类中最糟糕的那些：不谨慎的、魔鬼崇拜者、恶魔先驱者，以及无聊的家伙！",
+										"我已经与博德之门的学者们商议过，他们建议了格式、编辑惯例以及你将在本书中读到的其他此类平凡事项。结果有点枯燥，所以我冒昧地用一些更引人注目的见解来点缀这些学术内容。",
+										"只有时间才能证明这本典籍的存在是否会让我的许多同胞陷入湮灭。即使不会，至少我得到了娱乐，而你也获得了我的智慧这份礼物。",
+										"你们太客气了，亲爱的！",
+										"献上我全部的爱，",
+										"阿斯代伦"
+									]
+								}
 							]
 						}
 					]
 				},
 				{
-					"ENG_name": "Monsters",
-					"name": "怪物",
+					"ENG_name": "Chapter 1: Vampiric Character Options",
+					"name": "第1章：吸血角色选项",
 					"type": "section",
+					"id": "004",
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/ABH/001-01-001.ball.webp"
+							},
+							"width": 1700,
+							"height": 2301,
+							"title": "在博德之门这场颓废舞会中的狂欢者们没有意识到吸血鬼就在他们中间潜行",
+							"credit": "Cynthia Sheppard"
+						},
+						"本章包含充实与吸血黑社会有联系的角色的规则，无论是在博德之门还是您选择的另一个设定中。",
+						{
+							"ENG_name": "Character Backgrounds",
+							"name": "角色背景",
+							"type": "section",
+							"id": "005",
+							"entries": [
+								"本节中的背景适用于那些过去与吸血鬼或此类生物常相伴的人。",
+								"每个引用的专长都在本章后面的\"{@area 专长|010|x}\"部分中描述。背景在{@book 玩家手册|XPHB}中有进一步解释。",
+								{
+									"type": "list",
+									"columns": 3,
+									"items": [
+										"{@background 狂欢客|ABH}",
+										"{@background 血徒|ABH}",
+										"{@background 吸血鬼幸存者|ABH}"
+									]
+								},
+								{
+									"type": "quote",
+									"entries": [
+										"黑夜的街道上充斥着各种类型的人：误入歧途者、浑然不觉者、堕落者。然后还有醉醺醺的粗人、厌世的情侣和疲惫不堪的生还者。我喜欢把他们每个人都想象成一种独特的佳酿。"
+									],
+									"by": "阿斯代伦，暗夜品酒师"
+								},
+								{
+									"ENG_name": "Carouser",
+									"name": "狂欢客",
+									"type": "statblock",
+									"tag": "background",
+									"source": "ABH"
+								},
+								{
+									"ENG_name": "Vampire Devotee",
+									"name": "血徒",
+									"type": "statblock",
+									"tag": "background",
+									"source": "ABH"
+								},
+								{
+									"ENG_name": "Vampire Survivor",
+									"name": "吸血鬼幸存者",
+									"type": "statblock",
+									"tag": "background",
+									"source": "ABH"
+								}
+							]
+						},
+						{
+							"ENG_name": "Character Species",
+							"name": "角色种族",
+							"type": "section",
+							"id": "009",
+							"entries": [
+								"下方展示了{@race 半血裔|RHW}种族。",
+								{
+									"ENG_name": "Dhampir",
+									"name": "半血裔",
+									"type": "statblock",
+									"prop": "raceFluff",
+									"source": "RHW",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Dhampir",
+									"name": "半血裔",
+									"type": "statblock",
+									"tag": "race",
+									"source": "RHW",
+									"style": "narrow"
+								}
+							]
+						},
+						{
+							"ENG_name": "Feats",
+							"name": "专长",
+							"type": "section",
+							"id": "010",
+							"entries": [
+								"本章中的专长会按照以下不同的分类区分：起源、通用以及传奇恩惠。这些专长会以一定顺序排列。所有专长都按分类与首字母顺序列在了专长列表中。",
+								{
+									"type": "table",
+									"caption": "专长列表",
+									"colLabels": [
+										"专长",
+										"类别"
+									],
+									"colStyles": [
+										"col-6",
+										"col-6"
+									],
+									"rows": [
+										[
+											"{@feat 嗜血|ABH}",
+											"通用"
+										],
+										[
+											"{@feat 爆破手|ABH}",
+											"通用"
+										],
+										[
+											"{@feat 炽耀黎明之恩惠|ABH}",
+											"传奇恩惠"
+										],
+										[
+											"{@feat 厄影迫现之恩惠|ABH}",
+											"传奇恩惠"
+										],
+										[
+											"{@feat 雾影遁形之恩惠|ABH}",
+											"传奇恩惠"
+										],
+										[
+											"{@feat 黏滞迷雾|ABH}",
+											"通用"
+										],
+										[
+											"{@feat 沉溺痛苦|ABH}",
+											"通用"
+										],
+										[
+											"{@feat 光照使者|ABH}",
+											"通用"
+										],
+										[
+											"{@feat 吻痕|ABH}",
+											"通用"
+										],
+										[
+											"{@feat 残尸败蜕|ABH}",
+											"通用"
+										],
+										[
+											"{@feat 咎罪责难|ABH}",
+											"通用"
+										],
+										[
+											"{@feat 无休狂宴|ABH}",
+											"起源"
+										],
+										[
+											"{@feat 祸国叛心|ABH}",
+											"通用"
+										],
+										[
+											"{@feat 血族猎人|ABH}",
+											"起源"
+										],
+										[
+											"{@feat 血族玩物|ABH}",
+											"起源"
+										],
+										[
+											"{@feat 吸血鬼触碰|ABH}",
+											"通用"
+										]
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Origin Feats",
+							"name": "起源专长",
+							"type": "section",
+							"id": "011",
+							"entries": [
+								"这些专长从属于起源分类。",
+								{
+									"type": "list",
+									"columns": 3,
+									"items": [
+										"{@feat 无休狂宴|ABH}",
+										"{@feat 血族猎人|ABH}",
+										"{@feat 血族玩物|ABH}"
+									]
+								},
+								{
+									"type": "quote",
+									"entries": [
+										"你可能会问：这些技巧最适合用于战斗还是诱惑？",
+										"我说，亲爱的们，为什么不能两者兼得呢？"
+									],
+									"by": "多才多艺的阿斯代伦"
+								},
+								{
+									"ENG_name": "Tireless Reveler",
+									"name": "无休狂宴",
+									"type": "statblock",
+									"tag": "feat",
+									"source": "ABH"
+								},
+								{
+									"ENG_name": "Vampire Hunter",
+									"name": "血族猎人",
+									"type": "statblock",
+									"tag": "feat",
+									"source": "ABH"
+								},
+								{
+									"ENG_name": "Vampire's Plaything",
+									"name": "血族玩物",
+									"type": "statblock",
+									"tag": "feat",
+									"source": "ABH"
+								}
+							]
+						},
+						{
+							"ENG_name": "General Feats",
+							"name": "通用专长",
+							"type": "section",
+							"id": "01c",
+							"entries": [
+								"这些专长从属于通用分类。",
+								{
+									"type": "list",
+									"columns": 3,
+									"items": [
+										"{@feat 嗜血|ABH}",
+										"{@feat 爆破手|ABH}",
+										"{@feat 黏滞迷雾|ABH}",
+										"{@feat 沉溺痛苦|ABH}",
+										"{@feat 光照使者|ABH}",
+										"{@feat 吻痕|ABH}",
+										"{@feat 残尸败蜕|ABH}",
+										"{@feat 咎罪责难|ABH}",
+										"{@feat 祸国叛心|ABH}",
+										"{@feat 吸血鬼触碰|ABH}"
+									]
+								},
+								{
+									"type": "quote",
+									"entries": [
+										"培养这些令人愉悦的才能，让你的敌人跪地求饶\u2014\u2014或是让你的情人神魂颠倒。"
+									],
+									"by": "阿斯代伦，关系导师"
+								},
+								{
+									"ENG_name": "Bloodlust",
+									"name": "嗜血",
+									"type": "statblock",
+									"tag": "feat",
+									"source": "ABH"
+								},
+								{
+									"ENG_name": "Bomber",
+									"name": "爆破手",
+									"type": "statblock",
+									"tag": "feat",
+									"source": "ABH"
+								},
+								{
+									"ENG_name": "Cloying Mists",
+									"name": "黏滞迷雾",
+									"type": "statblock",
+									"tag": "feat",
+									"source": "ABH"
+								},
+								{
+									"ENG_name": "Delicious Pain",
+									"name": "沉溺痛苦",
+									"type": "statblock",
+									"tag": "feat",
+									"source": "ABH"
+								},
+								{
+									"ENG_name": "Light Bringer",
+									"name": "光照使者",
+									"type": "statblock",
+									"tag": "feat",
+									"source": "ABH"
+								},
+								{
+									"ENG_name": "Love Bites",
+									"name": "吻痕",
+									"type": "statblock",
+									"tag": "feat",
+									"source": "ABH"
+								},
+								{
+									"ENG_name": "Putrefy",
+									"name": "残尸败蜕",
+									"type": "statblock",
+									"tag": "feat",
+									"source": "ABH"
+								},
+								{
+									"ENG_name": "Rebuke",
+									"name": "咎罪责难",
+									"type": "statblock",
+									"tag": "feat",
+									"source": "ABH"
+								},
+								{
+									"ENG_name": "Treacherous Allure",
+									"name": "祸国叛心",
+									"type": "statblock",
+									"tag": "feat",
+									"source": "ABH"
+								},
+								{
+									"ENG_name": "Vampire Touched",
+									"name": "吸血鬼触碰",
+									"type": "statblock",
+									"tag": "feat",
+									"source": "ABH"
+								}
+							]
+						},
+						{
+							"ENG_name": "Epic Boon Feats",
+							"name": "传奇恩惠专长",
+							"type": "section",
+							"id": "04b",
+							"entries": [
+								"这些专长从属于传奇恩惠分类。",
+								{
+									"type": "list",
+									"columns": 3,
+									"items": [
+										"{@feat 炽耀黎明之恩惠|ABH}",
+										"{@feat 厄影迫现之恩惠|ABH}",
+										"{@feat 雾影遁形之恩惠|ABH}"
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/ABH/004-01-004.vampire-hunter.webp"
+									},
+									"width": 850,
+									"height": 1045,
+									"title": "一个吸血鬼猎人与一个吸血鬼纠缠",
+									"credit": "David Astruga"
+								},
+								{
+									"ENG_name": "Boon of Blazing Dawn",
+									"name": "炽耀黎明之恩惠",
+									"type": "statblock",
+									"tag": "feat",
+									"source": "ABH"
+								},
+								{
+									"ENG_name": "Boon of Looming Shadows",
+									"name": "厄影迫现之恩惠",
+									"type": "statblock",
+									"tag": "feat",
+									"source": "ABH"
+								},
+								{
+									"ENG_name": "Boon of Misty Escape",
+									"name": "雾影遁形之恩惠",
+									"type": "statblock",
+									"tag": "feat",
+									"source": "ABH"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Chapter 2: Creatures of the Night",
+					"name": "第二章：黑夜生物",
+					"type": "section",
+					"id": "05b",
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/ABH/005-02-001.astarion-sister.webp"
+							},
+							"width": 1700,
+							"height": 2300,
+							"title": "一个恼怒的阿斯塔里奥监视着他的妹妹维奥莱特与一个收割者魔鬼调情",
+							"credit": "Bram Sels"
+						},
+						"本章描述了与阿斯泰里安、他崇拜梅菲斯托费勒斯的吸血鬼主人以及吸血黑社会相关的生物。其中一些数据块出现在{@area 第三章|064|x}中呈现的冒险中。你也可以使用这些生物来填充你自己的吸血鬼或魔鬼主题的冒险。",
+						"查阅{@book 怪物图鉴|XMM}以获取关于怪物的更多详细信息。",
+						{
+							"ENG_name": "Cazador Szarr's Family",
+							"name": "卡扎多·萨扎尔的家族",
+							"type": "section",
+							"id": "05c",
+							"entries": [
+								"吸血鬼卡扎多尔·萨阿尔崇拜九层地狱卡尼亚大公墨菲斯托费利斯。卡扎多尔创造了数个初生吸血鬼，包括阿斯代伦，他们夜间在博德之门的街道上游荡，寻找受害者带给他们的主人。卡扎多尔的\"孩子们\"使用{@creature 初生吸血鬼|XMM}资料卡且为中型，除非另有说明。卡扎多尔是一个中型{@creature 吸血鬼狱炎魔使|ABH}。",
+								{
+									"type": "quote",
+									"entries": [
+										"这看起来可能很可怕，但我向你保证，我的家族从事的魔鬼崇拜或谋杀并不比博德之门任何其他正直的贵族家族多。至少我们的晚宴宾客都玩得尖叫连连。"
+									],
+									"by": "阿斯代伦，社会评论家"
+								},
+								{
+									"ENG_name": "Cazador's Spawn",
+									"name": "卡扎多尔的衍体",
+									"type": "entries",
+									"id": "05d",
+									"entries": [
+										"在{@i 博德之门 3}事件发生之前，卡扎多尔的衍体包括以下成员：",
+										"{@b 安特温·杜费}，曾经是人类，是Cazador信赖的管家。",
+										"{@b 阿斯代伦·安科宁}，曾是一名精灵治安官，是卡扎多的第二个衍体。",
+										"{@b 欧瑞梨}，曾经是一名提夫林，是卡扎多的第一个衍体。她平静的外表下隐藏着无数秘密。",
+										"{@b 达莉莉亚}，曾经是一名精灵和博德之门议会的医师长，试图通过孤注一掷的医疗手段来逆转她的吸血鬼身份。",
+										"{@b 莱昂}，曾经是人类，是卡扎多尔最新的衍体。他拼命保护自己的小女儿维多利亚，让她免受宫殿邪恶的侵害。",
+										"{@b 苍白佩特拉斯}，曾经是一名人类，是卡扎多的第三个衍体，以其傲慢和固执而闻名。",
+										"{@b 紫}，曾经是一名精灵，是卡扎多的第四位子嗣。她以折磨她的兄弟姐妹为乐，并努力取悦她的主人。",
+										"{@b 尤森}，一个小型生物，曾是一名侏儒。他为卡扎多猎杀受害者。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Monsters",
+							"name": "怪物",
+							"type": "section",
+							"id": "007",
+							"entries": [
+								{
+									"type": "list",
+									"columns": 3,
+									"items": [
+										"{@creature 恶魔图腾|ABH}",
+										"{@creature 收割者魔鬼|ABH}",
+										"{@creature 魔鬼代言人|ABH}",
+										"{@creature 吸血鬼狱炎魔使|ABH}",
+										"{@creature 吸血鬼看守|ABH}"
+									]
+								},
+								{
+									"ENG_name": "Fiendish Icon",
+									"name": "恶魔图腾",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "ABH",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Fiendish Icon",
+									"name": "恶魔图腾",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "ABH",
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Harvester Devil",
+									"name": "收割者魔鬼",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "ABH",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Harvester Devil",
+									"name": "收割者魔鬼",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "ABH",
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Speaker Devil",
+									"name": "魔鬼代言人",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "ABH",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Speaker Devil",
+									"name": "魔鬼代言人",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "ABH",
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Vampire Infernalist",
+									"name": "吸血鬼狱炎魔使",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "ABH",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Vampire Infernalist",
+									"name": "吸血鬼狱炎魔使",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "ABH",
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Vampire Warden",
+									"name": "吸血鬼看守",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "ABH",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Vampire Warden",
+									"name": "吸血鬼看守",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "ABH",
+									"style": "narrow"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Chapter 3: Adventures with Astarion",
+					"name": "第三章：与阿斯代伦的冒险",
+					"type": "section",
+					"id": "064",
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/ABH/010-03-001.rats-run.webp"
+							},
+							"width": 1700,
+							"height": 2301,
+							"title": "老鼠快跑酒馆的经理利夫·克劳斯威尔让大家都知道，这家酒馆是水手和恶棍的避难所",
+							"credit": "Clint Cearley"
+						},
+						"阿斯代伦在博德之门期间经常光顾几家破旧的场所，但名为老鼠快跑的旅馆和酒馆是他最喜欢的狩猎场之一。在这里，他悄无声息地狩猎，混入醉酒顾客的人群中，将受害者引诱到黑暗的小巷里。他会把这些不幸的灵魂拖回卡扎多尔宫殿，吸血鬼主人会在那里享用受害者的血液。",
+						"本章提供了在老鼠奔跑中设置冒险所需的所有工具。此处的细节假设你的游戏发生在{@i 博德之门 3}事件之前，并且你的玩家希望与阿斯代伦一同冒险。然而，你可以在任何时期将游戏设置在老鼠奔跑，无论是否涉及阿斯代伦。",
+						{
+							"ENG_name": "Rat's Run Adventures",
+							"name": "老鼠的奔跑冒险",
+							"type": "section",
+							"id": "065",
+							"entries": [
+								"本节介绍了老鼠巷的短篇冒险。在这些冒险中，角色应该是阿斯代伦的伙伴或在博德之门的阴暗角落声名狼藉的人物。角色可能是雇佣兵、保镖、中间人或其他可雇佣的代理人。角色不必是邪恶的，但遵纪守法的公民可能会发现这些冒险挑战了他们的道德准则。",
+								"当遭遇战发生在本章节后面\"{@area 老鼠的奔跑地点|07d|x}\"部分描述的地点时，那些NPC会在战斗爆发时寻找掩护或逃跑。所有遭遇战都发生在本章节后面的地图：老鼠跑道上。引用的怪物数据块出现在{@book 怪物图鉴|XMM}的第2章。",
+								"如果你更愿意在老鼠跑酷中创建涉及阿斯塔里奥的冒险，请掷骰或从老鼠跑酷情节表中选择来为你的游戏提供灵感。",
+								{
+									"type": "table",
+									"caption": "老鼠的奔跑路线",
+									"colLabels": [
+										"1d4",
+										"阿斯代伦..."
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-10"
+									],
+									"rows": [
+										[
+											"1",
+											"意识到几个常去老鼠跑酒吧的顾客最近失踪了。罪魁祸首是西莉亚（中型{@creature 吸血夜魇|XMM}），她是卡扎多尔·萨尔的敌人。西莉亚曾经是人类。"
+										],
+										[
+											"2",
+											"想要雇佣侏儒布雷格·利特尔托（小型{@creature 匪徒|XMM}）来获取一件强大的魔法物品，阿斯塔里奥认为这将暂时让他摆脱卡扎多的控制。"
+										],
+										[
+											"3",
+											"雇佣了一对名为塔雷娜和塔莉的人类吸血鬼猎人（中型{@creature 匪帮队长|XMM|匪帮队长}）去暗杀维奥莱特。不幸的是，维奥莱特发现了这个计划，并将这些吸血鬼猎人转变到了阿斯代伦一方。"
+										],
+										[
+											"4",
+											"已经引诱了太多顾客走向死亡，老鼠跑酒馆的经理已对阿斯塔里奥悬赏。阿斯塔里奥与角色们一起造访酒馆，却不知道常客们计划杀死他。"
+										]
+									]
+								},
+								{
+									"ENG_name": "Family Outreach",
+									"name": "家庭联络",
+									"type": "entries",
+									"id": "066",
+									"entries": [
+										"{@i 为 3 级角色准备的冒险}",
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"ENG_name": "Situation",
+													"name": "情景",
+													"type": "item",
+													"entry": "维奥莱特，{@area 卡扎多的\"家族\"|05d|x}中最新的初生吸血鬼，正试图杀死阿斯代伦。维奥莱特已经布下了几个阴谋的种子，以确保阿斯代伦死在他常去的鼠道。维奥莱特在卡扎多尔的宫殿里等待她计划的结果；她害怕如果阿斯代伦的死亡与她有关，会招致卡扎多尔的愤怒，所以她不会亲自尝试杀死他。"
+												},
+												{
+													"ENG_name": "Hook",
+													"name": "钩爪",
+													"type": "item",
+													"entry": "阿斯塔里奥几天前就认出了伪装中的维奥莱特，并偷听到了她与当地帮派\"血刃\"首领的对话。阿斯塔里奥邀请角色们加入他在老鼠跑道的行动，协助他挫败这个威胁，因为他认为维奥莱特正在他常去的酒馆策划对他的毁灭。阿斯塔里奥（中型{@creature 初生吸血鬼|XMM}）愿意支付每位角色150金币，并承诺未来给予帮助。"
+												}
+											]
+										},
+										{
+											"ENG_name": "Encounters",
+											"name": "遭遇",
+											"type": "entries",
+											"id": "067",
+											"entries": [
+												"该冒险包含以下遭遇。根据你的判断，阿斯代伦将与角色们并肩作战。",
+												{
+													"ENG_name": "First Blood",
+													"name": "首血",
+													"type": "entries",
+													"id": "068",
+													"entries": [
+														"五名血刃帮的人类成员在酒吧附近（{@area 区域 R2a|083|x}）与阿斯代伦和角色们对峙并开始战斗。其中包括首领布雷塔和索文（中型，中立邪恶 {@creature 匪帮队长|XMM|匪帮队长}）及其跟班，三名 {@creature 打手|XMM|打手们}。当血刃帮开始战斗时，其他顾客四散逃离。",
+														"如果角色捕获了这些袭击者中的任何一人，敌人会承认是维奥莱特雇佣了他们。维奥莱特告诉帮派成员，她希望在不亲自参与犯罪的情况下悄悄除掉阿斯代伦。"
+													]
+												},
+												{
+													"ENG_name": "Ambush",
+													"name": "伏击",
+													"type": "entries",
+													"id": "069",
+													"entries": [
+														"一个戴兜帽的人影将一张纸条塞到阿斯代伦手中。纸条要求他与一位朋友在楼上会面。如果被盘问，这名信使会透露自己是一个名叫切斯的人类（中型{@creature 平民|XMM}），他不知道支付10金币让他送信的人的身份。收到纸条后，阿斯代伦上楼并示意角色们跟上。",
+														"潜伏在旅馆的走道（{@area 区域R6|091|x}）上的是两个{@creature 恶魔图腾|ABH|邪魔圣像}和一个{@creature 恐怖铠甲|XMM}，这些都是维奥莱特从卡扎多的宫殿悄悄带来的。这些怪物试图伪装成装饰品，在角色进入该区域时伏击他们。如果角色不打算上楼，怪物们就会下楼与他们战斗。"
+													]
+												},
+												{
+													"ENG_name": "Final Foe",
+													"name": "最终宿敌",
+													"type": "entries",
+													"id": "06a",
+													"entries": [
+														"两个{@creature 收割者魔鬼|ABH|收割者魔鬼}潜伏在旅馆的一个房间（{@area 区域 R9a|098|x}）中。被Violet召唤来确保Astarion及其盟友死亡，这些魔鬼从它们的藏身处潜行出来战斗。如果角色和Astarion在走道上被伏击，魔鬼们会在第二轮的先攻计数0时加入战斗（输掉先攻平局）。否则，在血腥匕首倒下后，魔鬼们会下楼与角色们对峙。"
+													]
+												},
+												{
+													"ENG_name": "Conclusion",
+													"name": "结局",
+													"type": "entries",
+													"id": "06b",
+													"entries": [
+														"如果阿斯代伦在冒险中幸存，每个角色将获得400点经验值加值。一旦角色达到至少4级，考虑进行一次与紫（中型{@creature 初生吸血鬼|XMM}）以及一个或多个收割魔鬼或魔鬼图标盟友的遭遇。",
+														{
+															"type": "quote",
+															"entries": [
+																"自从她从坟墓里爬出来后，我那爱哭鼻子的妹妹维奥莱特就一直对我嫉妒得要命。她以为我处处都想羞辱她。",
+																"这很可笑，但如果她不肯放过我，我就得给她挖个更深的坟墓\u2014\u2014这次，一个她永远无法离开的坟墓。"
+															],
+															"by": "阿斯代伦，手足相争"
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "The Wayward Son",
+									"name": "迷途之子",
+									"type": "entries",
+									"id": "06c",
+									"entries": [
+										"{@i 适合12级角色的冒险}",
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"ENG_name": "Situation",
+													"name": "情景",
+													"type": "item",
+													"entry": "卡扎多，阿斯代伦的吸血鬼主人，受够了阿斯代伦的不服从。这个吸血鬼计划找到阿斯代伦，使他失能，并把他带回宫殿接受惩罚。"
+												},
+												{
+													"ENG_name": "Hook",
+													"name": "钩爪",
+													"type": "item",
+													"entry": "阿斯崔安（中型{@creature 初生吸血鬼|XMM}）邀请角色们去鼠道社交。阿斯崔安随后注意到几个{@area 卡扎多的\"家族\"|05d|x}易容成员潜伏在人群中。阿斯崔安怀疑有麻烦，请求角色们协助保护他。"
+												}
+											]
+										},
+										{
+											"ENG_name": "Encounters",
+											"name": "遭遇",
+											"type": "entries",
+											"id": "06d",
+											"entries": [
+												"本次冒险包含以下遭遇：",
+												{
+													"ENG_name": "Surrounded",
+													"name": "被包围",
+													"type": "entries",
+													"id": "06e",
+													"entries": [
+														"当角色们在酒吧（{@area 区域 R2a|083|x}）就座时，阿斯塔里奥认出来自卡扎多尔宫殿的两名{@creature 吸血鬼看守|ABH|吸血鬼守卫}。这些守卫正堵住通往鼠道（Rat's Run）的公共出口。确信宫殿有人想要绑架他，阿斯塔里奥悄悄溜上楼以躲避守卫，直到麻烦过去。",
+														"如果角色们跟随阿斯代伦，他们必须在他一起走向通往{@area 区域R6|091|x}的楼梯时保持不显眼。每个角色进行一次{@dc 13}敏捷（{@skill 隐匿|XPHB}）检定。如果检定成功，守卫们不会注意到这群人。如果检定失败，吸血鬼守卫们会注意到这群人并开始战斗。"
+													]
+												},
+												{
+													"ENG_name": "No Safe Spaces",
+													"name": "无处安全",
+													"type": "entries",
+													"id": "06f",
+													"entries": [
+														"如果角色在楼下与守卫战斗，潜伏在楼上的两个{@creature 魔鬼代言人|ABH|魔鬼发言人}会听到打斗声。这些魔鬼会在第二轮的先攻计数0时下楼加入战斗（输掉先攻平局）。",
+														"如果角色和阿斯崔安在未惊动守卫的情况下到达楼上，阿斯崔安建议撬开其中一间旅馆房间（{@area 区域 R9c|098|x}）的锁，在里面躲藏。门由木头制成。锁是简易的（1个动作撬开）且品质良好（{@dc 15}）。",
+														"当角色进入房间时，两个演说家魔鬼正藏匿其中并毫不犹豫地开始战斗。如果角色没有进入房间，魔鬼会在1分钟后发动攻击。"
+													]
+												},
+												{
+													"ENG_name": "Angry Vampire",
+													"name": "愤怒吸血鬼",
+													"type": "entries",
+													"id": "070",
+													"entries": [
+														"在角色们击败魔鬼后，当他们试图离开老鼠径时，会遭遇卡扎多（中型{@creature 吸血鬼狱炎魔使|ABH}）。该吸血鬼由两名他的{@creature 初生吸血鬼|XMM}陪同。如果角色们将卡扎多的生命值降至40点，该吸血鬼尖叫着承诺稍后会惩罚阿斯塔里奥，使用变形化为雾气并逃脱。"
+													]
+												},
+												{
+													"ENG_name": "Conclusion",
+													"name": "结局",
+													"type": "entries",
+													"id": "071",
+													"entries": [
+														"如果阿斯代伦逃脱，他会奖励角色一本{@item 健体手册|XDMG}，并且每个角色还会额外获得4,700点经验值。",
+														"如果角色们被杀死或击至昏迷，阿斯代伦会被制服并带回卡扎多尔宫殿。",
+														{
+															"type": "quote",
+															"entries": [
+																"一种特别鲁莽的水手经常光顾老鼠巷。对他们来说，死亡潜伏在每个角落，无论是在暴风雨的海上还是在这罪犯的海洋中。有些人可能会说这些水手有死亡祈愿术\u2014\u2014而我非常乐意实现它。"
+															],
+															"by": "阿斯代伦，冷酷领航员"
+														},
+														{
+															"type": "image",
+															"href": {
+																"type": "internal",
+																"path": "book/ABH/011-03-002.astarion-ambush.webp"
+															},
+															"width": 1700,
+															"height": 1070,
+															"title": "阿斯代伦的众多敌人知道他经常光顾老鼠径，并可能在那里试图伏击他",
+															"credit": "Andrea Piparo"
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Rat's Run Tavern and Inn",
+							"name": "老鼠快跑酒馆与旅馆",
+							"type": "section",
+							"id": "072",
+							"entries": [
+								"老鼠跑位于博德之门的灰港附近。这家声誉可疑的酒馆兼旅馆几个世纪以来一直是喧闹水手和那些喜欢在阴影中谋生之人的家园。乍看之下，老鼠跑是个破旧的地方，阴暗元素占据主导。深入其中，这家店铺更加险恶。",
+								{
+									"ENG_name": "Mysterious Leadership",
+									"name": "神秘领导层",
+									"type": "entries",
+									"id": "073",
+									"entries": [
+										"老鼠跑道的员工包括退休的水手以及为各种魔君工作以偿还债务的人。员工向经理报告，经理经营这家机构并忠于其神秘的所有者。",
+										{
+											"ENG_name": "Reigra Clawcroft",
+											"name": "雷格拉·克劳克罗夫特",
+											"type": "entries",
+											"id": "074",
+											"entries": [
+												"在过去的二百年里，一个名叫雷格拉·克劳克罗夫特的{@creature 罗刹|XMM}一直拥有老鼠跑道的所有权。雷格拉曾是一个可怕的海盗船长，以纹身魔裔的形象出现。当她从一个醉酒商人手中赢得老鼠跑道的所有权时，这个罗刹看到了扩张自己权力的机会。她从此退出私掠行业，意图寻找更轻松的赚钱方式。",
+												"为了远离她之前的身份，雷格拉现在伪装成一名坚定的人类女性。罗刹已指派老鼠跑道的经理鼓励恶行，雷格拉从中获利。雷格拉居住在上城区的豪华宅邸中，尽管罗刹偶尔会因公务或检查员工而留在老鼠跑道。当员工报告有问题的顾客时，有时雷格拉会亲自解决这个问题\u2014\u2014将受害者引诱到阴暗的小巷，揭示她的真实本性，并吞噬她的猎物。",
+												{
+													"type": "quote",
+													"entries": [
+														"对老鼠跑道的老板感到好奇？我只能说那只猫有爪子\u2014\u2014也就是罗刹的反向爪子。"
+													],
+													"by": "阿斯塔里奥，丑闻记者"
+												}
+											]
+										},
+										{
+											"ENG_name": "Lief Cloudswell",
+											"name": "利夫·克劳德斯韦尔",
+											"type": "entries",
+											"id": "075",
+											"entries": [
+												"过去十五年来，老鼠快跑的管理者一直是巨人族莱芙·克劳德斯威尔（中型，混乱中立 {@creature 海盗|XMM}）。莱芙有着翡翠般的眼睛和浓密的纹身，曾是一名水手，因偷窃船员财物而被逐出船队。为躲避复仇者追捕，莱芙早前与雷格拉达成协议：罗刹保护莱芙免受敌人侵害，而莱芙则无条件服从命令。莱芙性格粗犷但表面和善；她对法外之徒尤其心软。",
+												"如果你的游戏发生在{@i 博德之门 3}的事件之后，应由老鼠跑管理者表中的另一位个体来监督该机构的建立。",
+												{
+													"type": "table",
+													"caption": "老鼠的奔跑管理者",
+													"colLabels": [
+														"1d4",
+														"名称",
+														"描述",
+														"数据卡"
+													],
+													"colStyles": [
+														"col-2 text-center",
+														"col-2",
+														"col-4",
+														"col-4"
+													],
+													"rows": [
+														[
+															"1",
+															"凯拉尔·黑钢",
+															"矮人退休刺客公会中尉；残忍",
+															"（中型，中立邪恶 {@creature 刺客|XMM}）"
+														],
+														[
+															"2",
+															"德克·\"疤眉\"·詹金斯",
+															"人类退休水手；施虐狂",
+															"（中型，混乱邪恶 {@creature 海盗|XMM}）"
+														],
+														[
+															"3",
+															"耶尔娜·金牙",
+															"兽人退休海盗；快乐",
+															"（中型，混乱中立 {@creature 海盗|XMM}）"
+														],
+														[
+															"4",
+															"格里·昂德雷泰德",
+															"黑鳞龙裔退休水手；睿智",
+															"（中型，混乱中立 {@creature 打手老大|XMM}）"
+														]
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "Rowdy Watering Hole",
+											"name": "喧闹酒馆",
+											"type": "entries",
+											"id": "076",
+											"entries": [
+												"表面上，所有人都欢迎来到鼠道。对于水手来说，鼠道提供比任何船舶都更新鲜的麦酒、更美味的食物和更温暖的床铺。尽管经常有阴暗人物潜伏在酒馆舒适的卡座里，但鼠道的同志情谊十分紧密。对于一些漂泊的水手来说，这家店的常客和员工是他们最接近家人的存在。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Den of Villainy",
+									"name": "恶徒巢穴",
+									"type": "entries",
+									"id": "077",
+									"entries": [
+										"在老鼠之径的表象之下，现实是残酷的。盗贼、走私者、敲诈者和其他罪犯将老鼠之径视为避风港，这是有充分理由的。法杖成员警告任何与执法部门有关的顾客离开且永不返回；那些违抗这些指示的人将成为雷格拉的受害者。",
+										"此外，犯罪组织的代表会定期向该场所的经理支付硬币、贵重物品或魔法物品。作为交换，工作人员会隐藏这些顾客的不法行为，包括将走私货物藏在密室里、销毁犯罪证据，并确保没有目击者向当局告发。每周，经理都会将这些贿赂交给一个戴着头巾、不断变化的信使，当然，这个信使对他们的老板一无所知。",
+										{
+											"ENG_name": "Haven for Predators",
+											"name": "掠食者庇护所",
+											"type": "entries",
+											"id": "078",
+											"entries": [
+												"老鼠跑道的猖獗犯罪意味着醉醺醺的顾客的钱包经常消失，酒吧斗殴偶尔会致命，有时人们会失踪且再也不会回来。由于后一个原因，阿斯代伦认为老鼠跑道是一块未经雕琢的钻石：一个他可以引诱受害者到卡扎多尔宫殿的地方，并假设没有人会关心调查他们的失踪。阿斯代伦还与罗卡友好相处，罗卡是酒馆的顾客和公会的地精特工（参见\"{@area 老鼠的奔跑地点|07d|x}\"中的{@area 区域 R2d|086|x}）。这个初生吸血鬼偶尔会猎杀罗卡指定要消灭的人。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Tavern and Inn",
+									"name": "酒馆和客栈",
+									"type": "entries",
+									"id": "079",
+									"entries": [
+										"角色可以在老鼠跑酒馆租一间房，点菜，并买一杯饮料。",
+										{
+											"ENG_name": "Inn",
+											"name": "旅馆",
+											"type": "entries",
+											"id": "07a",
+											"entries": [
+												"想要租一间房的人物必须与经理交谈。他们可以在白昼时在主酒吧（{@area 区域 R2a|083|x}）找到，或在黑夜时在经理的行政办公室或卧室（{@area 区域R10|09a|x}和{@area R11|09d|x}）找到。一间房每天花费5银币。"
+											]
+										},
+										{
+											"ENG_name": "Tavern",
+											"name": "酒馆",
+											"type": "entries",
+											"id": "07b",
+											"entries": [
+												"麦酒、朗姆酒、威士忌和葡萄酒全天可在主吧台（区域R2a）以每杯4铜币的价格购买。餐点可在白天于厨房（{@area 区域R3|088|x}）点单。每餐花费1银币。",
+												{
+													"type": "gallery",
+													"images": [
+														{
+															"type": "image",
+															"id": "008",
+															"href": {
+																"type": "internal",
+																"path": "book/ABH/012-03-003.rats-run.webp"
+															},
+															"hrefThumbnail": {
+																"type": "internal",
+																"path": "book/ABH/thumbnail/012-03-003.rats-run.webp"
+															},
+															"width": 3165,
+															"height": 4096,
+															"imageType": "map",
+															"grid": {
+																"type": "square",
+																"size": 193,
+																"offsetX": -28,
+																"offsetY": -50,
+																"scale": 2
+															},
+															"title": "老鼠的疾奔",
+															"credit": "Mike Schley",
+															"mapRegions": [
+																{
+																	"area": "0a5",
+																	"points": [
+																		[
+																			1535,
+																			368
+																		],
+																		[
+																			1535,
+																			554
+																		],
+																		[
+																			1719,
+																			554
+																		],
+																		[
+																			1719,
+																			368
+																		]
+																	]
+																},
+																{
+																	"area": "0a2",
+																	"points": [
+																		[
+																			2308,
+																			275
+																		],
+																		[
+																			2308,
+																			645
+																		],
+																		[
+																			2680,
+																			645
+																		],
+																		[
+																			2680,
+																			275
+																		]
+																	]
+																},
+																{
+																	"area": "098",
+																	"points": [
+																		[
+																			573,
+																			949
+																		],
+																		[
+																			573,
+																			1125
+																		],
+																		[
+																			944,
+																			1125
+																		],
+																		[
+																			944,
+																			949
+																		]
+																	]
+																},
+																{
+																	"area": "098",
+																	"points": [
+																		[
+																			964,
+																			949
+																		],
+																		[
+																			964,
+																			1123
+																		],
+																		[
+																			1327,
+																			1123
+																		],
+																		[
+																			1327,
+																			949
+																		]
+																	]
+																},
+																{
+																	"area": "098",
+																	"points": [
+																		[
+																			1348,
+																			949
+																		],
+																		[
+																			1348,
+																			1125
+																		],
+																		[
+																			1713,
+																			1125
+																		],
+																		[
+																			1713,
+																			949
+																		]
+																	]
+																},
+																{
+																	"area": "098",
+																	"points": [
+																		[
+																			1735,
+																			950
+																		],
+																		[
+																			1735,
+																			1125
+																		],
+																		[
+																			2100,
+																			1125
+																		],
+																		[
+																			2100,
+																			950
+																		]
+																	]
+																},
+																{
+																	"area": "098",
+																	"points": [
+																		[
+																			2118,
+																			949
+																		],
+																		[
+																			2118,
+																			1125
+																		],
+																		[
+																			2485,
+																			1125
+																		],
+																		[
+																			2485,
+																			949
+																		]
+																	]
+																},
+																{
+																	"area": "098",
+																	"points": [
+																		[
+																			2504,
+																			950
+																		],
+																		[
+																			2681,
+																			950
+																		],
+																		[
+																			2681,
+																			1417
+																		],
+																		[
+																			2599,
+																			1417
+																		],
+																		[
+																			2599,
+																			1123
+																		],
+																		[
+																			2504,
+																			1123
+																		]
+																	]
+																},
+																{
+																	"area": "09a",
+																	"points": [
+																		[
+																			2216,
+																			1903
+																		],
+																		[
+																			2216,
+																			1631
+																		],
+																		[
+																			2407,
+																			1526
+																		],
+																		[
+																			2407,
+																			1435
+																		],
+																		[
+																			2682,
+																			1435
+																		],
+																		[
+																			2682,
+																			1703
+																		],
+																		[
+																			2438,
+																			1703
+																		],
+																		[
+																			2305,
+																			1903
+																		]
+																	]
+																},
+																{
+																	"area": "091",
+																	"points": [
+																		[
+																			2196,
+																			1905
+																		],
+																		[
+																			2023,
+																			1905
+																		],
+																		[
+																			2023,
+																			1800
+																		],
+																		[
+																			1928,
+																			1800
+																		],
+																		[
+																			1928,
+																			1704
+																		],
+																		[
+																			1330,
+																			1704
+																		],
+																		[
+																			1330,
+																			1803
+																		],
+																		[
+																			1234,
+																			1803
+																		],
+																		[
+																			1234,
+																			1896
+																		],
+																		[
+																			1160,
+																			1896
+																		],
+																		[
+																			1160,
+																			1804
+																		],
+																		[
+																			858,
+																			1604
+																		],
+																		[
+																			770,
+																			1604
+																		],
+																		[
+																			770,
+																			1413
+																		],
+																		[
+																			670,
+																			1413
+																		],
+																		[
+																			670,
+																			1146
+																		],
+																		[
+																			2580,
+																			1146
+																		],
+																		[
+																			2580,
+																			1416
+																		],
+																		[
+																			2401,
+																			1416
+																		],
+																		[
+																			2401,
+																			1318
+																		],
+																		[
+																			2497,
+																			1318
+																		],
+																		[
+																			2497,
+																			1224
+																		],
+																		[
+																			756,
+																			1224
+																		],
+																		[
+																			756,
+																			1314
+																		],
+																		[
+																			854,
+																			1314
+																		],
+																		[
+																			854,
+																			1524
+																		],
+																		[
+																			1138,
+																			1623
+																		],
+																		[
+																			2196,
+																			1623
+																		]
+																	]
+																},
+																{
+																	"area": "096",
+																	"points": [
+																		[
+																			1360,
+																			2013
+																		],
+																		[
+																			1896,
+																			2013
+																		],
+																		[
+																			1821,
+																			2088
+																		],
+																		[
+																			1433,
+																			2088
+																		]
+																	]
+																},
+																{
+																	"area": "093",
+																	"points": [
+																		[
+																			1349,
+																			1726
+																		],
+																		[
+																			1615,
+																			1726
+																		],
+																		[
+																			1615,
+																			1991
+																		],
+																		[
+																			1338,
+																			1991
+																		],
+																		[
+																			1252,
+																			1903
+																		],
+																		[
+																			1252,
+																			1824
+																		],
+																		[
+																			1349,
+																			1824
+																		]
+																	]
+																},
+																{
+																	"area": "093",
+																	"points": [
+																		[
+																			1638,
+																			1726
+																		],
+																		[
+																			1903,
+																			1726
+																		],
+																		[
+																			1903,
+																			1821
+																		],
+																		[
+																			2002,
+																			1821
+																		],
+																		[
+																			2002,
+																			1901
+																		],
+																		[
+																			1908,
+																			1993
+																		],
+																		[
+																			1638,
+																			1993
+																		]
+																	]
+																},
+																{
+																	"area": "098",
+																	"points": [
+																		[
+																			1137,
+																			1899
+																		],
+																		[
+																			1137,
+																			1819
+																		],
+																		[
+																			855,
+																			1629
+																		],
+																		[
+																			681,
+																			1629
+																		],
+																		[
+																			949,
+																			1899
+																		]
+																	]
+																},
+																{
+																	"area": "098",
+																	"points": [
+																		[
+																			572,
+																			1147
+																		],
+																		[
+																			654,
+																			1147
+																		],
+																		[
+																			654,
+																			1435
+																		],
+																		[
+																			751,
+																			1435
+																		],
+																		[
+																			751,
+																			1607
+																		],
+																		[
+																			669,
+																			1607
+																		],
+																		[
+																			572,
+																			1517
+																		]
+																	]
+																},
+																{
+																	"area": "09d",
+																	"points": [
+																		[
+																			2329,
+																			1901
+																		],
+																		[
+																			2450,
+																			1724
+																		],
+																		[
+																			2680,
+																			1724
+																		],
+																		[
+																			2680,
+																			1901
+																		]
+																	]
+																},
+																{
+																	"area": "085",
+																	"points": [
+																		[
+																			963,
+																			2587
+																		],
+																		[
+																			963,
+																			2766
+																		],
+																		[
+																			2293,
+																			2766
+																		],
+																		[
+																			2293,
+																			2587
+																		]
+																	]
+																},
+																{
+																	"area": "08f",
+																	"points": [
+																		[
+																			573,
+																			2588
+																		],
+																		[
+																			573,
+																			2862
+																		],
+																		[
+																			847,
+																			2862
+																		],
+																		[
+																			847,
+																			2588
+																		]
+																	]
+																},
+																{
+																	"area": "087",
+																	"points": [
+																		[
+																			595,
+																			3170
+																		],
+																		[
+																			1042,
+																			3170
+																		],
+																		[
+																			1042,
+																			3365
+																		],
+																		[
+																			1228,
+																			3365
+																		],
+																		[
+																			1228,
+																			3538
+																		],
+																		[
+																			950,
+																			3538
+																		]
+																	]
+																},
+																{
+																	"area": "07e",
+																	"points": [
+																		[
+																			1440,
+																			3739
+																		],
+																		[
+																			1440,
+																			3926
+																		],
+																		[
+																			1813,
+																			3926
+																		],
+																		[
+																			1813,
+																			3739
+																		]
+																	]
+																},
+																{
+																	"area": "08c",
+																	"points": [
+																		[
+																			2303,
+																			3541
+																		],
+																		[
+																			2681,
+																			3541
+																		],
+																		[
+																			2681,
+																			3360
+																		],
+																		[
+																			2455,
+																			3360
+																		]
+																	]
+																},
+																{
+																	"area": "088",
+																	"points": [
+																		[
+																			2025,
+																			3270
+																		],
+																		[
+																			2025,
+																			3538
+																		],
+																		[
+																			2278,
+																			3538
+																		],
+																		[
+																			2441,
+																			3341
+																		],
+																		[
+																			2678,
+																			3341
+																		],
+																		[
+																			2678,
+																			2979
+																		],
+																		[
+																			2300,
+																			2979
+																		]
+																	]
+																},
+																{
+																	"area": "086",
+																	"points": [
+																		[
+																			2313,
+																			2588
+																		],
+																		[
+																			2313,
+																			2959
+																		],
+																		[
+																			2680,
+																			2959
+																		],
+																		[
+																			2680,
+																			2588
+																		]
+																	]
+																},
+																{
+																	"area": "084",
+																	"points": [
+																		[
+																			1253,
+																			3348
+																		],
+																		[
+																			2001,
+																			3348
+																		],
+																		[
+																			2001,
+																			3540
+																		],
+																		[
+																			1814,
+																			3731
+																		],
+																		[
+																			1437,
+																			3731
+																		],
+																		[
+																			1253,
+																			3540
+																		]
+																	]
+																},
+																{
+																	"area": "083",
+																	"points": [
+																		[
+																			867,
+																			2586
+																		],
+																		[
+																			942,
+																			2586
+																		],
+																		[
+																			942,
+																			2784
+																		],
+																		[
+																			2303,
+																			2784
+																		],
+																		[
+																			2303,
+																			2954
+																		],
+																		[
+																			1998,
+																			3264
+																		],
+																		[
+																			1050,
+																			3264
+																		],
+																		[
+																			1050,
+																			3149
+																		],
+																		[
+																			572,
+																			3149
+																		],
+																		[
+																			572,
+																			2883
+																		],
+																		[
+																			867,
+																			2883
+																		]
+																	]
+																}
+															]
+														},
+														{
+															"type": "image",
+															"href": {
+																"type": "internal",
+																"path": "book/ABH/013-03-004.rats-run-player.webp"
+															},
+															"width": 3165,
+															"height": 4096,
+															"imageType": "mapPlayer",
+															"grid": {
+																"type": "square",
+																"size": 193,
+																"offsetX": -28,
+																"offsetY": -50,
+																"scale": 2
+															},
+															"title": "玩家版本",
+															"mapParent": {
+																"id": "008"
+															}
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "General Features",
+									"name": "通用特征",
+									"type": "entries",
+									"id": "07c",
+									"entries": [
+										"拥有数百年历史的鼠道由风化的木梁和红砖加固而成。其地板由肮脏的木材制成。该建筑的其他特征如下：",
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"ENG_name": "Ceilings",
+													"name": "天花板",
+													"type": "item",
+													"entry": "在第一层和第二层，该设施的天花板高15尺。第三层的天花板高8尺。"
+												},
+												{
+													"ENG_name": "Doors",
+													"name": "门",
+													"type": "item",
+													"entry": "作为一家24小时营业的场所，老鼠快跑旅馆的一楼前门和侧门始终未上锁。一楼的内部门也始终未上锁。二楼旅馆的门由木头制成且已上锁。锁具为简易锁（1个动作撬开）且品质良好（{@dc 15}）。"
+												},
+												{
+													"ENG_name": "Lighting",
+													"name": "光照",
+													"type": "item",
+													"entry": "在前两层，大多数区域由放置在船艏像形状壁架上的{@spell 不灭明焰|XPHB}法术照亮。第三层的区域{@area R12|0a2|x}和{@area R13|0a5|x}没有照明。"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Rat's Run Locations",
+									"name": "老鼠的奔跑地点",
+									"type": "entries",
+									"id": "07d",
+									"entries": [
+										"老鼠跑路包含第一层的酒馆和厨房，第二层的旅馆，以及第三层的藏身处。",
+										"以下地点已标注在老鼠逃跑地图上。",
+										{
+											"ENG_name": "R1: Entryway",
+											"name": "R1: 入口通道",
+											"type": "entries",
+											"id": "07e",
+											"entries": [
+												{
+													"type": "inset",
+													"id": "07f",
+													"entries": [
+														"碎裂的船桨、磨损的绳索和撕裂的船帆装饰着这些墙壁，上面还有粉笔涂鸦的字迹。台阶向下通往一个大厅，里面回荡着水手们狂欢的喧嚣声。"
+													]
+												},
+												"这个入口装饰着鼠道酒馆的顾客们多年来捐赠的海事装备，以及涂鸦信息。通用语中的短语包括\"恶棍住在这里\"和\"除了大海没有法律\"，还有其他精选的宣言和难以辨认的涂鸦。",
+												{
+													"ENG_name": "Security Guards",
+													"name": "保安人员",
+													"type": "entries",
+													"id": "080",
+													"entries": [
+														"在黑夜中，两名人类在老鼠跑道上担任警卫。已婚的费罗克和黛特·格伦斯沃斯（中型{@creature 打手|XMM|打手们}）坐在这个区域两侧的长椅上。",
+														"费洛克和德特雷拒绝任何明显是执法组织成员的进入，声称场所已满即使实际上并非如此。警卫会与任何被拒绝进入却试图进入主厅（{@area 区域R2|081|x}）的生物战斗，并在需要时呼叫其他工作人员和友好的水手协助。如果主厅发生斗殴，费洛克和德特雷会在1分钟后加入战斗并试图平息暴力。",
+														"白昼期间，费洛克和黛特丽处于休班状态。他们通常可以在大厅里吃喝，或在空置的旅馆房间（{@area 区域R9|098|x}）里沉睡。"
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "R2: Main Hall",
+											"name": "R2：主厅",
+											"type": "entries",
+											"id": "081",
+											"entries": [
+												{
+													"type": "inset",
+													"id": "082",
+													"entries": [
+														"粗鲁的水手们在这个宽敞的大厅里尽情作乐，无论是在中央的大型木制吧台，还是围绕它摆放的大型桌子旁。喧闹的顾客周围环绕着更安静、身着黑色斗篷的私人隔间。"
+													]
+												},
+												"全天开放，主厅是博德之门水手们的主要聚集地，也是罪犯们讨论阴暗交易的黄金地点。",
+												{
+													"ENG_name": "R2a",
+													"name": "R2a",
+													"type": "entries",
+													"id": "083",
+													"entries": [
+														"酒吧储备充足，有几十种不同品质的麦芽酒、朗姆酒、威士忌和葡萄酒。个人在吧台周围的凳子上借酒消愁，而更喧闹的结伙则使用东边和西边的区域。",
+														"日间的主要酒保是粗鲁的石巨人利夫·克劳斯威尔（中型，混乱中立 {@creature 海盗|XMM}），她还在楼上的旅馆向顾客出租房间。利夫携带着 {@area 区域R10|09a|x} 中保险箱的钥匙和 {@area 区域R11|09d|x} 中她抽屉的钥匙。任何时候，如果利夫怀疑某人是执法人员的代理人，她会指示他们离开。如果有人给她带来太多麻烦，她会向在 {@area 区域R1|07e|x} 的费罗克和德特雷求助。",
+														"在黑夜，莉芙会回到她的行政办公室或卧室（区域R10和R11）。晚上的酒保是两位矮人姐妹，塞拉和格伦达·碎石者（中型，混乱中立 {@creature 匪徒|XMM|匪徒们}），她们性格开朗且对莉芙坚定不移地忠诚。"
+													]
+												},
+												{
+													"ENG_name": "R2b",
+													"name": "R2b",
+													"type": "entries",
+													"id": "084",
+													"entries": [
+														"这些长桌是为想要玩纸牌、骰子或其他机会游戏的顾客预留的。一位被称为切掌者（小型{@creature 魔法学徒|XMM}）的健谈常客每天在这里经营三龙牌游戏。切掌者是一个半身人，真名是芬库斯·贝里布兰奇。其他员工不知道的是，切掌者受雇于利夫·克劳斯威尔，并向经理汇报他听到的所有传闻。"
+													]
+												},
+												{
+													"ENG_name": "R2c",
+													"name": "R2c",
+													"type": "entries",
+													"id": "085",
+													"entries": [
+														"薄薄的滑动木门让每个隔间的顾客都有一定的隐私。罪犯，其中许多是强大组织的高级成员，经常在这里会面讨论非法交易。",
+														"鬼鬼祟祟的侏儒销赃犯布雷格·利特尔托（小型{@creature 匪徒|XMM}）将这个区域作为他的行动基地。虽然不属于更大的组织，但布雷格曾为博德之门一些最显赫的玩家们销赃过贵重且令人难堪的战利品。布雷格知道强大的秘密，并且愿意与任何愿意保护他免受敌人伤害的人结盟。"
+													]
+												},
+												{
+													"ENG_name": "R2d",
+													"name": "R2d",
+													"type": "entries",
+													"id": "086",
+													"entries": [
+														"这张小型桌子集合是公会成员最喜爱的聚集地，该公会是城中一个强大的犯罪组织。每天，优雅但沉默寡言的{@creature 天狗|XMM}罗卡·微光喙都会在他们角落的预留座位上享用一杯麦酒和一个肉饼。罗卡向公会特工传递信息，并为那些希望联系神出鬼没的公会会长的人提供帮助，不过只有最有价值的信息才能传到这位领袖那里。"
+													]
+												},
+												{
+													"ENG_name": "R2e",
+													"name": "R2e",
+													"type": "entries",
+													"id": "087",
+													"entries": [
+														"这里的桌子和卡座比大厅其他区域布置得更为舒适。船长们常在此处休息，这个角落能稍微避开大厅里喧闹的水手们。",
+														{
+															"type": "quote",
+															"entries": [
+																"在主厅私人包厢紧闭的门后，你会震惊于我多么容易引诱愚人跟我一起漫步回家。我总是承诺他们会体验到一生难忘的盛宴\u2014\u2014而我总是说到做到。"
+															],
+															"by": "阿斯代伦，病态领班"
+														}
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "R3: Kitchen",
+											"name": "R3: 厨房",
+											"type": "entries",
+											"id": "088",
+											"entries": [
+												{
+													"type": "inset",
+													"id": "089",
+													"entries": [
+														"主厅与厨房被一个宽而低的酒吧隔开，后面穿着围裙的员工正忙着准备饭菜。酒吧上方挂着一块黑板，上面写着\"肉馅饼、鱼汤、豌豆泥：每份1SP\"。"
+													]
+												},
+												"顾客们沿着吧台排队，从厨房点菜。工作人员将做好的饭菜放在吧台上，供顾客取用。",
+												{
+													"ENG_name": "Staff",
+													"name": "法杖",
+													"type": "entries",
+													"id": "08a",
+													"entries": [
+														"主厨是赫斯卡·\"比格尔斯\"·塔斯克图斯（中型{@creature 海盗|XMM}），一个咧嘴大笑、声音洪亮的兽人。比格尔斯携带着{@area 区域R4|08c|x}中橱柜的钥匙。",
+														"作为助理厨师帮助比格尔斯的是健谈的提夫林达里乌斯·温特斯（中型{@creature 平民|XMM}）；严肃的人类亚历克西亚·邦德巴斯（中型匪徒）；以及热情洋溢的龙裔菲洛娜·特鲁斯凯尔（中型，混乱中立{@creature 匪徒|XMM}）。如果厨房不忙，比格尔斯会派她的助理厨师到主厅接受点菜、给桌子送饮品，或根据利夫的安排做其他工作。"
+													]
+												},
+												{
+													"ENG_name": "Treasure",
+													"name": "宝藏",
+													"type": "entries",
+													"id": "08b",
+													"entries": [
+														"东北角的橱柜里放着锅、平底锅、烤盘、餐具和其他厨房装备。此外，还有六把可当作{@item 匕首|XPHB|匕首}使用的切肉刀。",
+														"中央准备桌下方的架子上放着烹饪补给品，包括三根蜡烛和三个不同的容器，分别装着{@item 强酸|XPHB|小瓶强酸}、{@item 炽火胶|XPHB}和{@item 燃油|XPHB}。桌子上有一把附魔刀，可作为{@item +1 匕首|XDMG}使用。"
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "R4: Pantry",
+											"name": "R4：储藏室",
+											"type": "entries",
+											"id": "08c",
+											"entries": [
+												{
+													"type": "inset",
+													"id": "08d",
+													"entries": [
+														" 墙边排列着盒子和罐装的原料。在堆叠的啤酒桶和盐渍肉块旁边的角落里，一个高大的橱柜被挂锁锁着。 "
+													]
+												},
+												"这些架子上存放着面粉、糖、香料、猪油、腌肉和其他散装食材。",
+												{
+													"ENG_name": "Treasure",
+													"name": "宝藏",
+													"type": "entries",
+													"id": "08e",
+													"entries": [
+														"作为一个{@action 操作|XPHB}动作，角色可以尝试使用{@item 盗贼工具|XPHB}撬开挂锁，需成功通过{@dc 15}的敏捷（{@skill 巧手|XPHB}）检定。检定成功后，柜子打开，露出三瓶{@item 治疗药水|XDMG|治疗药水}和一个装有50金币的钱包。"
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "R5: Privies",
+											"name": "R5: 厕所",
+											"type": "entries",
+											"id": "08f",
+											"entries": [
+												{
+													"type": "inset",
+													"id": "090",
+													"entries": [
+														"这个小围场的长度方向挂着破烂的黑色窗帘，后面是地板上的洞用作厕所。一个小洗手盆靠在房间的西端。"
+													]
+												},
+												"这些厕所与城市的下水道相连。每天黄昏时分，一名工作人员会擦拭洗手盆和每个临时隔间。"
+											]
+										},
+										{
+											"ENG_name": "R6: Inn Walkway",
+											"name": "R6：旅馆走道",
+											"type": "entries",
+											"id": "091",
+											"entries": [
+												{
+													"type": "inset",
+													"id": "092",
+													"entries": [
+														"这条狭窄的木制走道通往旅馆的客房。一道由窄板条制成的栏杆将这一层与下方的大厅隔开。"
+													]
+												},
+												"这条上层走道可通过三组楼梯从主厅（{@area 区域R2|081|x}）进入。"
+											]
+										},
+										{
+											"ENG_name": "R7: Spacious Inn Rooms",
+											"name": "R7：宽敞的旅馆房间",
+											"type": "entries",
+											"id": "093",
+											"entries": [
+												{
+													"type": "inset",
+													"id": "094",
+													"entries": [
+														"这个宽敞、木质镶板的房间包含一个壁炉、床、书桌、椅子、洗脸盆、箱子和衣柜。皱巴巴的窗帘框住了南面的窗户。"
+													]
+												},
+												"这些房间比旅馆的其他房间更舒适。莉芙为那些受人尊敬或受她青睐的顾客预留了这些房间。",
+												"当雷格拉偶尔在老鼠跑道的黑夜中度过时，罗刹会占据其中一个房间。",
+												{
+													"ENG_name": "Secret Door",
+													"name": "暗门",
+													"type": "entries",
+													"id": "095",
+													"entries": [
+														"这些房间的南墙木制面板后都隐藏着一扇暗门。身处这些房间的角色可以执行{@action 搜索|XPHB}动作并进行{@dc 15}感知（{@skill 察觉|XPHB}）检定，检定成功即可发现暗门。每扇门后都有一条狭窄的木制走廊（{@area 区域R8|096|x}）。"
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "R8: Secret Corridor",
+											"name": "R8：秘密走廊",
+											"type": "entries",
+											"id": "096",
+											"entries": [
+												{
+													"type": "inset",
+													"id": "097",
+													"entries": [
+														" 在这条狭窄木制走廊的天花板中央附近，有一个五英尺见方的开口。一架从地面通往开口的梯子靠在墙边。 "
+													]
+												},
+												"这个令人幽闭的空间除了通往{@area 区域R13|0a5|x}的梯子外空无一物。"
+											]
+										},
+										{
+											"ENG_name": "R9: Inn Rooms",
+											"name": "R9：旅馆房间",
+											"type": "entries",
+											"id": "098",
+											"entries": [
+												{
+													"type": "inset",
+													"id": "099",
+													"entries": [
+														"砖木结构的墙壁环绕着这个朴素的房间，里面有一张床、一个箱子、一个洗脸盆和一个壁炉。一扇小窗户朴实无华。"
+													]
+												},
+												"利夫把这些房间租给任何愿意付钱的人，似乎对他们可能目睹的任何可疑事务都毫不在意。"
+											]
+										},
+										{
+											"ENG_name": "R10: Administrative Office",
+											"name": "R10：行政办公室",
+											"type": "entries",
+											"id": "09a",
+											"entries": [
+												{
+													"type": "inset",
+													"id": "09b",
+													"entries": [
+														"一个木制标志挂在这个房间的门扉上，写着\"私人区域！禁止入内！\""
+													]
+												},
+												"Lief 从这个办公室处理鼠道（Rat's Run）的组织事务。她也在这里存放来自罪犯的贿赂。",
+												"在黑夜，经理在{@area 区域R11|09d|x}处理文书工作或睡觉。她在这里时会把门扉锁上。在白昼，房间无人且上锁。",
+												{
+													"ENG_name": "Treasure",
+													"name": "宝藏",
+													"type": "entries",
+													"id": "09c",
+													"entries": [
+														"桌子上有与库存、客房预订和员工工资相关的记录。",
+														"在一个书桌抽屉里，一个锁箱装着给雷格拉的贿赂，信使尚未取走。作为一个{@action 操作|XPHB}动作，角色可以尝试使用盗贼工具开锁，成功通过{@dc 20}的敏捷（{@skill 巧手|XPHB}）检定即可做到。",
+														"这个保险箱包含以下物品：",
+														{
+															"type": "list",
+															"style": "list-no-bullets",
+															"items": [
+																"310 GP",
+																"一颗价值100金币的{@item 紫水晶|XDMG}",
+																"三颗纯黑色的{@item 缟玛瑙|XDMG|缟玛瑙}，每颗价值50金币",
+																"{@item 法术卷轴|XDMG} of {@spell 朦胧术|XPHB}",
+																"{@item 法术卷轴|XDMG} of {@spell 七彩喷射|XPHB}",
+																"{@item 法术卷轴|XDMG} of {@spell 恐惧术|XPHB}",
+																"{@item 火球魔杖|XDMG}"
+															]
+														}
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "R11: Manager's Bedroom",
+											"name": "R11：经理卧室",
+											"type": "entries",
+											"id": "09d",
+											"entries": [
+												{
+													"type": "inset",
+													"id": "09e",
+													"entries": [
+														"这个铺有木墙板的小房间里，摆放着一张朴素但舒适的床，床架内置抽屉。一个雕刻着航海主题图案的华丽木制衣柜和盥洗盆安放在角落。"
+													]
+												},
+												"这是利夫的个人住所。衣柜里装着各种不起眼的衣物。",
+												{
+													"ENG_name": "Secret Door",
+													"name": "暗门",
+													"type": "entries",
+													"id": "09f",
+													"entries": [
+														"西墙的木镶板后面有一道暗门。卧室中的角色可以采取{@action 搜索|XPHB}动作并进行{@dc 15}感知（{@skill 察觉|XPHB}）检定，检定成功即可发现暗门。门后是通往区域R12的楼梯。"
+													]
+												},
+												{
+													"ENG_name": "Bed Frame Drawer",
+													"name": "床架抽屉",
+													"type": "entries",
+													"id": "0a0",
+													"entries": [
+														"床架抽屉被锁上了。作为一个{@action 操作|XPHB}动作，角色可以尝试使用盗贼工具撬锁，通过成功的{@dc 20}敏捷（{@skill 巧手|XPHB}）检定来完成。"
+													]
+												},
+												{
+													"ENG_name": "Treasure",
+													"name": "宝藏",
+													"type": "entries",
+													"id": "0a1",
+													"entries": [
+														"抽屉里装着利夫的个人积蓄：一个装有500金币的钱包。它还包含一瓶{@item 活力药水|XDMG}，这是一位赞助人送给利夫的私人礼物，以换取保护他免受路斯坎刺客的追杀。"
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "R12: Attic",
+											"name": "R12: 阁楼",
+											"type": "entries",
+											"id": "0a2",
+											"entries": [
+												{
+													"type": "inset",
+													"id": "0a3",
+													"entries": [
+														"木制储物箱成堆地堆放在这个低矮的阁楼里。除最东北角的那堆箱子外，所有东西都覆盖着一层薄薄的灰尘。废弃的航海装备放在西北边的架子上，而污垢遮挡了南面窗外的景色。"
+													]
+												},
+												"这个阁楼用作储藏室，同时也是走私货物的便利藏匿点。大部分箱子里装着酒馆和旅馆的补给品，例如家具修补工具、额外的金属餐具、床单和清洁用具。西北角的架子上放着破旧的帆布、渔网和其他捐赠品，利夫最终计划在旅馆入口处（{@area 区域R1|07e|x}）展示它们。",
+												{
+													"ENG_name": "Dustless Boxes",
+													"name": "无尘箱",
+													"type": "entries",
+													"id": "0a4",
+													"entries": [
+														"东北角的箱子用粗体大写字母标记为装有面粉。箱子内是带有类似标签的棉质抽绳袋。然而，每个袋子里都是精心包裹的纸包，内含一种稀有而美丽的蛇怪鳞片，用于装饰高端服装。这些箱子总共装有三十个包裹，每个包裹含有2磅鳞片，价值15金币。",
+														"Lief 正在为公会的一位高阶人类成员 Jhera Gothill（中型，中立邪恶 {@creature 刺客|XMM}）藏匿这些从深水城出发的进口船上偷来的蛇蜥鳞片。Jhera 是一楼酒馆的常客，这位臭脸女人在那里与肆无忌惮的海上船长会面。"
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "R13: Hideaway",
+											"name": "R13: 藏身处",
+											"type": "entries",
+											"id": "0a5",
+											"entries": [
+												{
+													"type": "inset",
+													"id": "0a6",
+													"entries": [
+														"这个微型房间有一个凌乱的铺盖和散落在木地板上的枕头，地板上有一个通往下方二楼的开口。"
+													]
+												},
+												"这个区域作为藏身处，供那些需要躲避敌人或当局的人暂避风头。目前无人居住；床铺用品是前一位租客留下的。"
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Credits",
+					"name": "制作组",
+					"type": "section",
+					"id": "0a7",
 					"entries": [
 						{
 							"type": "list",
-							"columns": 3,
+							"style": "list-hang-notitle",
+							"columns": 2,
 							"items": [
-								"{@creature 恶魔图腾|ABH}",
-								"{@creature 收割者魔鬼|ABH}",
-								"{@creature 魔鬼代言人|ABH}",
-								"{@creature 吸血鬼狱炎魔使|ABH}",
-								"{@creature 吸血鬼看守|ABH}"
-							]
-						},
-						{
-							"ENG_name": "Fiendish Icon",
-							"name": "恶魔图腾",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "ABH",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Fiendish Icon",
-							"name": "恶魔图腾",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "ABH",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Harvester Devil",
-							"name": "收割者魔鬼",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "ABH",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Harvester Devil",
-							"name": "收割者魔鬼",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "ABH",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Speaker Devil",
-							"name": "魔鬼代言人",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "ABH",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Speaker Devil",
-							"name": "魔鬼代言人",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "ABH",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Vampire Infernalist",
-							"name": "吸血鬼狱炎魔使",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "ABH",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Vampire Infernalist",
-							"name": "吸血鬼狱炎魔使",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "ABH",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Vampire Warden",
-							"name": "吸血鬼看守",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "ABH",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Vampire Warden",
-							"name": "吸血鬼看守",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "ABH",
-							"style": "narrow"
-						}
-					],
-					"id": "007"
-				}
-			]
-		},
-		{
-			"ENG_name": "Chapter 3: Adventures with Astarion",
-			"name": "第三章：与阿斯代伦的冒险",
-			"type": "section",
-			"id": "064",
-			"entries": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/ABH/010-03-001.rats-run.webp"
-					},
-					"title": "老鼠快跑酒馆的经理利夫·克劳斯威尔让大家都知道，这家酒馆是水手和恶棍的避难所",
-					"credit": "Clint Cearley",
-					"width": 1700,
-					"height": 2301
-				},
-				"阿斯代伦在博德之门期间经常光顾几家破旧的场所，但名为老鼠快跑的旅馆和酒馆是他最喜欢的狩猎场之一。在这里，他悄无声息地狩猎，混入醉酒顾客的人群中，将受害者引诱到黑暗的小巷里。他会把这些不幸的灵魂拖回卡扎多尔宫殿，吸血鬼主人会在那里享用受害者的血液。",
-				"本章提供了在老鼠奔跑中设置冒险所需的所有工具。此处的细节假设你的游戏发生在{@i 博德之门 3}事件之前，并且你的玩家希望与阿斯代伦一同冒险。然而，你可以在任何时期将游戏设置在老鼠奔跑，无论是否涉及阿斯代伦。",
-				{
-					"ENG_name": "Rat's Run Adventures",
-					"name": "老鼠的奔跑冒险",
-					"type": "section",
-					"id": "065",
-					"entries": [
-						"本节介绍了老鼠巷的短篇冒险。在这些冒险中，角色应该是阿斯代伦的伙伴或在博德之门的阴暗角落声名狼藉的人物。角色可能是雇佣兵、保镖、中间人或其他可雇佣的代理人。角色不必是邪恶的，但遵纪守法的公民可能会发现这些冒险挑战了他们的道德准则。",
-						"当遭遇战发生在本章节后面\"{@area 老鼠的奔跑地点|07d|x}\"部分描述的地点时，那些NPC会在战斗爆发时寻找掩护或逃跑。所有遭遇战都发生在本章节后面的地图：老鼠跑道上。引用的怪物数据块出现在{@book 怪物图鉴|XMM}的第2章。",
-						"如果你更愿意在老鼠跑酷中创建涉及阿斯塔里奥的冒险，请掷骰或从老鼠跑酷情节表中选择来为你的游戏提供灵感。",
-						{
-							"type": "table",
-							"caption": "老鼠的奔跑路线",
-							"colLabels": [
-								"1d4",
-								"阿斯代伦..."
-							],
-							"colStyles": [
-								"col-2 text-center",
-								"col-10"
-							],
-							"rows": [
-								[
-									"1",
-									"意识到几个常去老鼠跑酒吧的顾客最近失踪了。罪魁祸首是西莉亚（中型{@creature 吸血夜魇|XMM}），她是卡扎多尔·萨尔的敌人。西莉亚曾经是人类。"
-								],
-								[
-									"2",
-									"想要雇佣侏儒布雷格·利特尔托（小型{@creature 匪徒|XMM}）来获取一件强大的魔法物品，阿斯塔里奥认为这将暂时让他摆脱卡扎多的控制。"
-								],
-								[
-									"3",
-									"雇佣了一对名为塔雷娜和塔莉的人类吸血鬼猎人（中型{@creature 匪帮队长|XMM|匪帮队长}）去暗杀维奥莱特。不幸的是，维奥莱特发现了这个计划，并将这些吸血鬼猎人转变到了阿斯代伦一方。"
-								],
-								[
-									"4",
-									"已经引诱了太多顾客走向死亡，老鼠跑酒馆的经理已对阿斯塔里奥悬赏。阿斯塔里奥与角色们一起造访酒馆，却不知道常客们计划杀死他。"
-								]
-							]
-						},
-						{
-							"ENG_name": "Family Outreach",
-							"name": "家庭联络",
-							"type": "entries",
-							"id": "066",
-							"entries": [
-								"{@i 为 3 级角色准备的冒险}",
 								{
-									"type": "list",
-									"style": "list-hang-notitle",
-									"items": [
-										{
-											"ENG_name": "Situation",
-											"name": "情景",
-											"type": "item",
-											"entry": "维奥莱特，{@area 卡扎多的\"家族\"|05d|x}中最新的初生吸血鬼，正试图杀死阿斯代伦。维奥莱特已经布下了几个阴谋的种子，以确保阿斯代伦死在他常去的鼠道。维奥莱特在卡扎多尔的宫殿里等待她计划的结果；她害怕如果阿斯代伦的死亡与她有关，会招致卡扎多尔的愤怒，所以她不会亲自尝试杀死他。"
-										},
-										{
-											"ENG_name": "Hook",
-											"name": "钩爪",
-											"type": "item",
-											"entry": "阿斯塔里奥几天前就认出了伪装中的维奥莱特，并偷听到了她与当地帮派\"血刃\"首领的对话。阿斯塔里奥邀请角色们加入他在老鼠跑道的行动，协助他挫败这个威胁，因为他认为维奥莱特正在他常去的酒馆策划对他的毁灭。阿斯塔里奥（中型{@creature 初生吸血鬼|XMM}）愿意支付每位角色150金币，并承诺未来给予帮助。"
-										}
-									]
+									"ENG_name": "Lead Designer:",
+									"name": "首席设计师：",
+									"type": "item",
+									"entry": "阿曼达·哈蒙"
 								},
 								{
-									"ENG_name": "Encounters",
-									"name": "遭遇",
-									"type": "entries",
-									"id": "067",
-									"entries": [
-										"该冒险包含以下遭遇。根据你的判断，阿斯代伦将与角色们并肩作战。",
-										{
-											"ENG_name": "First Blood",
-											"name": "首血",
-											"type": "entries",
-											"id": "068",
-											"entries": [
-												"五名血刃帮的人类成员在酒吧附近（{@area 区域 R2a|083|x}）与阿斯代伦和角色们对峙并开始战斗。其中包括首领布雷塔和索文（中型，中立邪恶 {@creature 匪帮队长|XMM|匪帮队长}）及其跟班，三名 {@creature 打手|XMM|打手们}。当血刃帮开始战斗时，其他顾客四散逃离。",
-												"如果角色捕获了这些袭击者中的任何一人，敌人会承认是维奥莱特雇佣了他们。维奥莱特告诉帮派成员，她希望在不亲自参与犯罪的情况下悄悄除掉阿斯代伦。"
-											]
-										},
-										{
-											"ENG_name": "Ambush",
-											"name": "伏击",
-											"type": "entries",
-											"id": "069",
-											"entries": [
-												"一个戴兜帽的人影将一张纸条塞到阿斯代伦手中。纸条要求他与一位朋友在楼上会面。如果被盘问，这名信使会透露自己是一个名叫切斯的人类（中型{@creature 平民|XMM}），他不知道支付10金币让他送信的人的身份。收到纸条后，阿斯代伦上楼并示意角色们跟上。",
-												"潜伏在旅馆的走道（{@area 区域R6|091|x}）上的是两个{@creature 恶魔图腾|ABH|邪魔圣像}和一个{@creature 恐怖铠甲|XMM}，这些都是维奥莱特从卡扎多的宫殿悄悄带来的。这些怪物试图伪装成装饰品，在角色进入该区域时伏击他们。如果角色不打算上楼，怪物们就会下楼与他们战斗。"
-											]
-										},
-										{
-											"ENG_name": "Final Foe",
-											"name": "最终宿敌",
-											"type": "entries",
-											"id": "06a",
-											"entries": [
-												"两个{@creature 收割者魔鬼|ABH|收割者魔鬼}潜伏在旅馆的一个房间（{@area 区域 R9a|098|x}）中。被Violet召唤来确保Astarion及其盟友死亡，这些魔鬼从它们的藏身处潜行出来战斗。如果角色和Astarion在走道上被伏击，魔鬼们会在第二轮的先攻计数0时加入战斗（输掉先攻平局）。否则，在血腥匕首倒下后，魔鬼们会下楼与角色们对峙。"
-											]
-										},
-										{
-											"ENG_name": "Conclusion",
-											"name": "结局",
-											"type": "entries",
-											"id": "06b",
-											"entries": [
-												"如果阿斯代伦在冒险中幸存，每个角色将获得400点经验值加值。一旦角色达到至少4级，考虑进行一次与紫（中型{@creature 初生吸血鬼|XMM}）以及一个或多个收割魔鬼或魔鬼图标盟友的遭遇。",
-												{
-													"type": "quote",
-													"entries": [
-														"自从她从坟墓里爬出来后，我那爱哭鼻子的妹妹维奥莱特就一直对我嫉妒得要命。她以为我处处都想羞辱她。",
-														"这很可笑，但如果她不肯放过我，我就得给她挖个更深的坟墓\u2014\u2014这次，一个她永远无法离开的坟墓。"
-													],
-													"by": "阿斯代伦，手足相争"
-												}
-											]
-										}
-									]
+									"ENG_name": "Designers:",
+									"name": "设计师：",
+									"type": "item",
+									"entry": "Ron Lundeen, Stephen Rooney, Sarra Scherb"
+								},
+								{
+									"ENG_name": "Rules Developers:",
+									"name": "规则开发者：",
+									"type": "item",
+									"entry": "Patrick Renie (主管), Makenzie De Armas, Ben Petrisor"
+								},
+								{
+									"ENG_name": "Editors:",
+									"name": "编辑：",
+									"type": "item",
+									"entry": "Adrian Ng Di Spaltro (主管), Sadie Lowry, F. Wesley Schneider, Hans Ziegler"
+								},
+								{
+									"ENG_name": "Art Director:",
+									"name": "艺术总监：",
+									"type": "item",
+									"entry": "Josh Herman"
+								},
+								{
+									"ENG_name": "Graphic Designers:",
+									"name": "平面设计师：",
+									"type": "item",
+									"entry": "Trystan Falcone (主管), Matt Cole"
+								},
+								{
+									"ENG_name": "Cover Illustrator:",
+									"name": "封面插画师：",
+									"type": "item",
+									"entry": "Magali Villeneuve"
+								},
+								{
+									"ENG_name": "Interior Illustrators:",
+									"name": "内页插画师：",
+									"type": "item",
+									"entry": "David Astruga, Luca Bancone, Clint Cearley, Andrea Piparo, Bram Sels, Cynthia Sheppard, John Tedrick"
+								},
+								{
+									"ENG_name": "Cartographer:",
+									"name": "地图作者：",
+									"type": "item",
+									"entry": "Mike Schley"
+								},
+								{
+									"ENG_name": "Consultants:",
+									"name": "顾问：",
+									"type": "item",
+									"entry": "Sameer Joseph, Alyssa Visscher"
+								},
+								{
+									"ENG_name": "Producers:",
+									"name": "制作人：",
+									"type": "item",
+									"entry": "罗伯·霍基（主管），丹·托瓦尔（主管），比尔·本汉姆，西拉·布鲁格曼，瓦妮莎·霍斯金斯"
 								}
 							]
 						},
 						{
-							"ENG_name": "The Wayward Son",
-							"name": "迷途之子",
-							"type": "entries",
-							"id": "06c",
-							"entries": [
-								"{@i 适合12级角色的冒险}",
-								{
-									"type": "list",
-									"style": "list-hang-notitle",
-									"items": [
-										{
-											"ENG_name": "Situation",
-											"name": "情景",
-											"type": "item",
-											"entry": "卡扎多，阿斯代伦的吸血鬼主人，受够了阿斯代伦的不服从。这个吸血鬼计划找到阿斯代伦，使他失能，并把他带回宫殿接受惩罚。"
-										},
-										{
-											"ENG_name": "Hook",
-											"name": "钩爪",
-											"type": "item",
-											"entry": "阿斯崔安（中型{@creature 初生吸血鬼|XMM}）邀请角色们去鼠道社交。阿斯崔安随后注意到几个{@area 卡扎多的\"家族\"|05d|x}易容成员潜伏在人群中。阿斯崔安怀疑有麻烦，请求角色们协助保护他。"
-										}
-									]
-								},
-								{
-									"ENG_name": "Encounters",
-									"name": "遭遇",
-									"type": "entries",
-									"id": "06d",
-									"entries": [
-										"本次冒险包含以下遭遇：",
-										{
-											"ENG_name": "Surrounded",
-											"name": "被包围",
-											"type": "entries",
-											"id": "06e",
-											"entries": [
-												"当角色们在酒吧（{@area 区域 R2a|083|x}）就座时，阿斯塔里奥认出来自卡扎多尔宫殿的两名{@creature 吸血鬼看守|ABH|吸血鬼守卫}。这些守卫正堵住通往鼠道（Rat's Run）的公共出口。确信宫殿有人想要绑架他，阿斯塔里奥悄悄溜上楼以躲避守卫，直到麻烦过去。",
-												"如果角色们跟随阿斯代伦，他们必须在他一起走向通往{@area 区域R6|091|x}的楼梯时保持不显眼。每个角色进行一次{@dc 13}敏捷（{@skill 隐匿|XPHB}）检定。如果检定成功，守卫们不会注意到这群人。如果检定失败，吸血鬼守卫们会注意到这群人并开始战斗。"
-											]
-										},
-										{
-											"ENG_name": "No Safe Spaces",
-											"name": "无处安全",
-											"type": "entries",
-											"id": "06f",
-											"entries": [
-												"如果角色在楼下与守卫战斗，潜伏在楼上的两个{@creature 魔鬼代言人|ABH|魔鬼发言人}会听到打斗声。这些魔鬼会在第二轮的先攻计数0时下楼加入战斗（输掉先攻平局）。",
-												"如果角色和阿斯崔安在未惊动守卫的情况下到达楼上，阿斯崔安建议撬开其中一间旅馆房间（{@area 区域 R9c|098|x}）的锁，在里面躲藏。门由木头制成。锁是简易的（1个动作撬开）且品质良好（{@dc 15}）。",
-												"当角色进入房间时，两个演说家魔鬼正藏匿其中并毫不犹豫地开始战斗。如果角色没有进入房间，魔鬼会在1分钟后发动攻击。"
-											]
-										},
-										{
-											"ENG_name": "Angry Vampire",
-											"name": "愤怒吸血鬼",
-											"type": "entries",
-											"id": "070",
-											"entries": [
-												"在角色们击败魔鬼后，当他们试图离开老鼠径时，会遭遇卡扎多（中型{@creature 吸血鬼狱炎魔使|ABH}）。该吸血鬼由两名他的{@creature 初生吸血鬼|XMM}陪同。如果角色们将卡扎多的生命值降至40点，该吸血鬼尖叫着承诺稍后会惩罚阿斯塔里奥，使用变形化为雾气并逃脱。"
-											]
-										},
-										{
-											"ENG_name": "Conclusion",
-											"name": "结局",
-											"type": "entries",
-											"id": "071",
-											"entries": [
-												"如果阿斯代伦逃脱，他会奖励角色一本{@item 健体手册|XDMG}，并且每个角色还会额外获得4,700点经验值。",
-												"如果角色们被杀死或击至昏迷，阿斯代伦会被制服并带回卡扎多尔宫殿。",
-												{
-													"type": "quote",
-													"entries": [
-														"一种特别鲁莽的水手经常光顾老鼠巷。对他们来说，死亡潜伏在每个角落，无论是在暴风雨的海上还是在这罪犯的海洋中。有些人可能会说这些水手有死亡祈愿术\u2014\u2014而我非常乐意实现它。"
-													],
-													"by": "阿斯代伦，冷酷领航员"
-												},
-												{
-													"type": "image",
-													"href": {
-														"type": "internal",
-														"path": "book/ABH/011-03-002.astarion-ambush.webp"
-													},
-													"title": "阿斯代伦的众多敌人知道他经常光顾老鼠径，并可能在那里试图伏击他",
-													"credit": "Andrea Piparo",
-													"width": 1700,
-													"height": 1070
-												}
-											]
-										}
-									]
-								}
-							]
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/ABH/014-cover.webp"
+							},
+							"width": 1700,
+							"height": 2207,
+							"title": "封面",
+							"credit": "Magali Villeneuve"
 						}
 					]
-				},
-				{
-					"ENG_name": "Rat's Run Tavern and Inn",
-					"name": "老鼠快跑酒馆与旅馆",
-					"type": "section",
-					"id": "072",
-					"entries": [
-						"老鼠跑位于博德之门的灰港附近。这家声誉可疑的酒馆兼旅馆几个世纪以来一直是喧闹水手和那些喜欢在阴影中谋生之人的家园。乍看之下，老鼠跑是个破旧的地方，阴暗元素占据主导。深入其中，这家店铺更加险恶。",
-						{
-							"ENG_name": "Mysterious Leadership",
-							"name": "神秘领导层",
-							"type": "entries",
-							"id": "073",
-							"entries": [
-								"老鼠跑道的员工包括退休的水手以及为各种魔君工作以偿还债务的人。员工向经理报告，经理经营这家机构并忠于其神秘的所有者。",
-								{
-									"ENG_name": "Reigra Clawcroft",
-									"name": "雷格拉·克劳克罗夫特",
-									"type": "entries",
-									"id": "074",
-									"entries": [
-										"在过去的二百年里，一个名叫雷格拉·克劳克罗夫特的{@creature 罗刹|XMM}一直拥有老鼠跑道的所有权。雷格拉曾是一个可怕的海盗船长，以纹身魔裔的形象出现。当她从一个醉酒商人手中赢得老鼠跑道的所有权时，这个罗刹看到了扩张自己权力的机会。她从此退出私掠行业，意图寻找更轻松的赚钱方式。",
-										"为了远离她之前的身份，雷格拉现在伪装成一名坚定的人类女性。罗刹已指派老鼠跑道的经理鼓励恶行，雷格拉从中获利。雷格拉居住在上城区的豪华宅邸中，尽管罗刹偶尔会因公务或检查员工而留在老鼠跑道。当员工报告有问题的顾客时，有时雷格拉会亲自解决这个问题\u2014\u2014将受害者引诱到阴暗的小巷，揭示她的真实本性，并吞噬她的猎物。",
-										{
-											"type": "quote",
-											"entries": [
-												"对老鼠跑道的老板感到好奇？我只能说那只猫有爪子\u2014\u2014也就是罗刹的反向爪子。"
-											],
-											"by": "阿斯塔里奥，丑闻记者"
-										}
-									]
-								},
-								{
-									"ENG_name": "Lief Cloudswell",
-									"name": "利夫·克劳德斯韦尔",
-									"type": "entries",
-									"id": "075",
-									"entries": [
-										"过去十五年来，老鼠快跑的管理者一直是巨人族莱芙·克劳德斯威尔（中型，混乱中立 {@creature 海盗|XMM}）。莱芙有着翡翠般的眼睛和浓密的纹身，曾是一名水手，因偷窃船员财物而被逐出船队。为躲避复仇者追捕，莱芙早前与雷格拉达成协议：罗刹保护莱芙免受敌人侵害，而莱芙则无条件服从命令。莱芙性格粗犷但表面和善；她对法外之徒尤其心软。",
-										"如果你的游戏发生在{@i 博德之门 3}的事件之后，应由老鼠跑管理者表中的另一位个体来监督该机构的建立。",
-										{
-											"type": "table",
-											"caption": "老鼠的奔跑管理者",
-											"colLabels": [
-												"1d4",
-												"名称",
-												"描述",
-												"数据卡"
-											],
-											"colStyles": [
-												"col-2 text-center",
-												"col-2",
-												"col-4",
-												"col-4"
-											],
-											"rows": [
-												[
-													"1",
-													"凯拉尔·黑钢",
-													"矮人退休刺客公会中尉；残忍",
-													"（中型，中立邪恶 {@creature 刺客|XMM}）"
-												],
-												[
-													"2",
-													"德克·\"疤眉\"·詹金斯",
-													"人类退休水手；施虐狂",
-													"（中型，混乱邪恶 {@creature 海盗|XMM}）"
-												],
-												[
-													"3",
-													"耶尔娜·金牙",
-													"兽人退休海盗；快乐",
-													"（中型，混乱中立 {@creature 海盗|XMM}）"
-												],
-												[
-													"4",
-													"格里·昂德雷泰德",
-													"黑鳞龙裔退休水手；睿智",
-													"（中型，混乱中立 {@creature 打手老大|XMM}）"
-												]
-											]
-										}
-									]
-								},
-								{
-									"ENG_name": "Rowdy Watering Hole",
-									"name": "喧闹酒馆",
-									"type": "entries",
-									"id": "076",
-									"entries": [
-										"表面上，所有人都欢迎来到鼠道。对于水手来说，鼠道提供比任何船舶都更新鲜的麦酒、更美味的食物和更温暖的床铺。尽管经常有阴暗人物潜伏在酒馆舒适的卡座里，但鼠道的同志情谊十分紧密。对于一些漂泊的水手来说，这家店的常客和员工是他们最接近家人的存在。"
-									]
-								}
-							]
-						},
-						{
-							"ENG_name": "Den of Villainy",
-							"name": "恶徒巢穴",
-							"type": "entries",
-							"id": "077",
-							"entries": [
-								"在老鼠之径的表象之下，现实是残酷的。盗贼、走私者、敲诈者和其他罪犯将老鼠之径视为避风港，这是有充分理由的。法杖成员警告任何与执法部门有关的顾客离开且永不返回；那些违抗这些指示的人将成为雷格拉的受害者。",
-								"此外，犯罪组织的代表会定期向该场所的经理支付硬币、贵重物品或魔法物品。作为交换，工作人员会隐藏这些顾客的不法行为，包括将走私货物藏在密室里、销毁犯罪证据，并确保没有目击者向当局告发。每周，经理都会将这些贿赂交给一个戴着头巾、不断变化的信使，当然，这个信使对他们的老板一无所知。",
-								{
-									"ENG_name": "Haven for Predators",
-									"name": "掠食者庇护所",
-									"type": "entries",
-									"id": "078",
-									"entries": [
-										"老鼠跑道的猖獗犯罪意味着醉醺醺的顾客的钱包经常消失，酒吧斗殴偶尔会致命，有时人们会失踪且再也不会回来。由于后一个原因，阿斯代伦认为老鼠跑道是一块未经雕琢的钻石：一个他可以引诱受害者到卡扎多尔宫殿的地方，并假设没有人会关心调查他们的失踪。阿斯代伦还与罗卡友好相处，罗卡是酒馆的顾客和公会的地精特工（参见\"{@area 老鼠的奔跑地点|07d|x}\"中的{@area 区域 R2d|086|x}）。这个初生吸血鬼偶尔会猎杀罗卡指定要消灭的人。"
-									]
-								}
-							]
-						},
-						{
-							"ENG_name": "Tavern and Inn",
-							"name": "酒馆和客栈",
-							"type": "entries",
-							"id": "079",
-							"entries": [
-								"角色可以在老鼠跑酒馆租一间房，点菜，并买一杯饮料。",
-								{
-									"ENG_name": "Inn",
-									"name": "旅馆",
-									"type": "entries",
-									"id": "07a",
-									"entries": [
-										"想要租一间房的人物必须与经理交谈。他们可以在白昼时在主酒吧（{@area 区域 R2a|083|x}）找到，或在黑夜时在经理的行政办公室或卧室（{@area 区域R10|09a|x}和{@area R11|09d|x}）找到。一间房每天花费5银币。"
-									]
-								},
-								{
-									"ENG_name": "Tavern",
-									"name": "酒馆",
-									"type": "entries",
-									"id": "07b",
-									"entries": [
-										"麦酒、朗姆酒、威士忌和葡萄酒全天可在主吧台（区域R2a）以每杯4铜币的价格购买。餐点可在白天于厨房（{@area 区域R3|088|x}）点单。每餐花费1银币。",
-										{
-											"type": "gallery",
-											"images": [
-												{
-													"type": "image",
-													"href": {
-														"type": "internal",
-														"path": "book/ABH/012-03-003.rats-run.webp"
-													},
-													"imageType": "map",
-													"title": "老鼠的疾奔",
-													"credit": "Mike Schley",
-													"width": 3165,
-													"height": 4096,
-													"id": "008",
-													"grid": {
-														"type": "square",
-														"size": 193,
-														"offsetX": -28,
-														"offsetY": -50,
-														"scale": 2
-													},
-													"mapRegions": [
-														{
-															"area": "0a5",
-															"points": [
-																[
-																	1535,
-																	368
-																],
-																[
-																	1535,
-																	554
-																],
-																[
-																	1719,
-																	554
-																],
-																[
-																	1719,
-																	368
-																]
-															]
-														},
-														{
-															"area": "0a2",
-															"points": [
-																[
-																	2308,
-																	275
-																],
-																[
-																	2308,
-																	645
-																],
-																[
-																	2680,
-																	645
-																],
-																[
-																	2680,
-																	275
-																]
-															]
-														},
-														{
-															"area": "098",
-															"points": [
-																[
-																	573,
-																	949
-																],
-																[
-																	573,
-																	1125
-																],
-																[
-																	944,
-																	1125
-																],
-																[
-																	944,
-																	949
-																]
-															]
-														},
-														{
-															"area": "098",
-															"points": [
-																[
-																	964,
-																	949
-																],
-																[
-																	964,
-																	1123
-																],
-																[
-																	1327,
-																	1123
-																],
-																[
-																	1327,
-																	949
-																]
-															]
-														},
-														{
-															"area": "098",
-															"points": [
-																[
-																	1348,
-																	949
-																],
-																[
-																	1348,
-																	1125
-																],
-																[
-																	1713,
-																	1125
-																],
-																[
-																	1713,
-																	949
-																]
-															]
-														},
-														{
-															"area": "098",
-															"points": [
-																[
-																	1735,
-																	950
-																],
-																[
-																	1735,
-																	1125
-																],
-																[
-																	2100,
-																	1125
-																],
-																[
-																	2100,
-																	950
-																]
-															]
-														},
-														{
-															"area": "098",
-															"points": [
-																[
-																	2118,
-																	949
-																],
-																[
-																	2118,
-																	1125
-																],
-																[
-																	2485,
-																	1125
-																],
-																[
-																	2485,
-																	949
-																]
-															]
-														},
-														{
-															"area": "098",
-															"points": [
-																[
-																	2504,
-																	950
-																],
-																[
-																	2681,
-																	950
-																],
-																[
-																	2681,
-																	1417
-																],
-																[
-																	2599,
-																	1417
-																],
-																[
-																	2599,
-																	1123
-																],
-																[
-																	2504,
-																	1123
-																]
-															]
-														},
-														{
-															"area": "09a",
-															"points": [
-																[
-																	2216,
-																	1903
-																],
-																[
-																	2216,
-																	1631
-																],
-																[
-																	2407,
-																	1526
-																],
-																[
-																	2407,
-																	1435
-																],
-																[
-																	2682,
-																	1435
-																],
-																[
-																	2682,
-																	1703
-																],
-																[
-																	2438,
-																	1703
-																],
-																[
-																	2305,
-																	1903
-																]
-															]
-														},
-														{
-															"area": "091",
-															"points": [
-																[
-																	2196,
-																	1905
-																],
-																[
-																	2023,
-																	1905
-																],
-																[
-																	2023,
-																	1800
-																],
-																[
-																	1928,
-																	1800
-																],
-																[
-																	1928,
-																	1704
-																],
-																[
-																	1330,
-																	1704
-																],
-																[
-																	1330,
-																	1803
-																],
-																[
-																	1234,
-																	1803
-																],
-																[
-																	1234,
-																	1896
-																],
-																[
-																	1160,
-																	1896
-																],
-																[
-																	1160,
-																	1804
-																],
-																[
-																	858,
-																	1604
-																],
-																[
-																	770,
-																	1604
-																],
-																[
-																	770,
-																	1413
-																],
-																[
-																	670,
-																	1413
-																],
-																[
-																	670,
-																	1146
-																],
-																[
-																	2580,
-																	1146
-																],
-																[
-																	2580,
-																	1416
-																],
-																[
-																	2401,
-																	1416
-																],
-																[
-																	2401,
-																	1318
-																],
-																[
-																	2497,
-																	1318
-																],
-																[
-																	2497,
-																	1224
-																],
-																[
-																	756,
-																	1224
-																],
-																[
-																	756,
-																	1314
-																],
-																[
-																	854,
-																	1314
-																],
-																[
-																	854,
-																	1524
-																],
-																[
-																	1138,
-																	1623
-																],
-																[
-																	2196,
-																	1623
-																]
-															]
-														},
-														{
-															"area": "096",
-															"points": [
-																[
-																	1360,
-																	2013
-																],
-																[
-																	1896,
-																	2013
-																],
-																[
-																	1821,
-																	2088
-																],
-																[
-																	1433,
-																	2088
-																]
-															]
-														},
-														{
-															"area": "093",
-															"points": [
-																[
-																	1349,
-																	1726
-																],
-																[
-																	1615,
-																	1726
-																],
-																[
-																	1615,
-																	1991
-																],
-																[
-																	1338,
-																	1991
-																],
-																[
-																	1252,
-																	1903
-																],
-																[
-																	1252,
-																	1824
-																],
-																[
-																	1349,
-																	1824
-																]
-															]
-														},
-														{
-															"area": "093",
-															"points": [
-																[
-																	1638,
-																	1726
-																],
-																[
-																	1903,
-																	1726
-																],
-																[
-																	1903,
-																	1821
-																],
-																[
-																	2002,
-																	1821
-																],
-																[
-																	2002,
-																	1901
-																],
-																[
-																	1908,
-																	1993
-																],
-																[
-																	1638,
-																	1993
-																]
-															]
-														},
-														{
-															"area": "098",
-															"points": [
-																[
-																	1137,
-																	1899
-																],
-																[
-																	1137,
-																	1819
-																],
-																[
-																	855,
-																	1629
-																],
-																[
-																	681,
-																	1629
-																],
-																[
-																	949,
-																	1899
-																]
-															]
-														},
-														{
-															"area": "098",
-															"points": [
-																[
-																	572,
-																	1147
-																],
-																[
-																	654,
-																	1147
-																],
-																[
-																	654,
-																	1435
-																],
-																[
-																	751,
-																	1435
-																],
-																[
-																	751,
-																	1607
-																],
-																[
-																	669,
-																	1607
-																],
-																[
-																	572,
-																	1517
-																]
-															]
-														},
-														{
-															"area": "09d",
-															"points": [
-																[
-																	2329,
-																	1901
-																],
-																[
-																	2450,
-																	1724
-																],
-																[
-																	2680,
-																	1724
-																],
-																[
-																	2680,
-																	1901
-																]
-															]
-														},
-														{
-															"area": "085",
-															"points": [
-																[
-																	963,
-																	2587
-																],
-																[
-																	963,
-																	2766
-																],
-																[
-																	2293,
-																	2766
-																],
-																[
-																	2293,
-																	2587
-																]
-															]
-														},
-														{
-															"area": "08f",
-															"points": [
-																[
-																	573,
-																	2588
-																],
-																[
-																	573,
-																	2862
-																],
-																[
-																	847,
-																	2862
-																],
-																[
-																	847,
-																	2588
-																]
-															]
-														},
-														{
-															"area": "087",
-															"points": [
-																[
-																	595,
-																	3170
-																],
-																[
-																	1042,
-																	3170
-																],
-																[
-																	1042,
-																	3365
-																],
-																[
-																	1228,
-																	3365
-																],
-																[
-																	1228,
-																	3538
-																],
-																[
-																	950,
-																	3538
-																]
-															]
-														},
-														{
-															"area": "07e",
-															"points": [
-																[
-																	1440,
-																	3739
-																],
-																[
-																	1440,
-																	3926
-																],
-																[
-																	1813,
-																	3926
-																],
-																[
-																	1813,
-																	3739
-																]
-															]
-														},
-														{
-															"area": "08c",
-															"points": [
-																[
-																	2303,
-																	3541
-																],
-																[
-																	2681,
-																	3541
-																],
-																[
-																	2681,
-																	3360
-																],
-																[
-																	2455,
-																	3360
-																]
-															]
-														},
-														{
-															"area": "088",
-															"points": [
-																[
-																	2025,
-																	3270
-																],
-																[
-																	2025,
-																	3538
-																],
-																[
-																	2278,
-																	3538
-																],
-																[
-																	2441,
-																	3341
-																],
-																[
-																	2678,
-																	3341
-																],
-																[
-																	2678,
-																	2979
-																],
-																[
-																	2300,
-																	2979
-																]
-															]
-														},
-														{
-															"area": "086",
-															"points": [
-																[
-																	2313,
-																	2588
-																],
-																[
-																	2313,
-																	2959
-																],
-																[
-																	2680,
-																	2959
-																],
-																[
-																	2680,
-																	2588
-																]
-															]
-														},
-														{
-															"area": "084",
-															"points": [
-																[
-																	1253,
-																	3348
-																],
-																[
-																	2001,
-																	3348
-																],
-																[
-																	2001,
-																	3540
-																],
-																[
-																	1814,
-																	3731
-																],
-																[
-																	1437,
-																	3731
-																],
-																[
-																	1253,
-																	3540
-																]
-															]
-														},
-														{
-															"area": "083",
-															"points": [
-																[
-																	867,
-																	2586
-																],
-																[
-																	942,
-																	2586
-																],
-																[
-																	942,
-																	2784
-																],
-																[
-																	2303,
-																	2784
-																],
-																[
-																	2303,
-																	2954
-																],
-																[
-																	1998,
-																	3264
-																],
-																[
-																	1050,
-																	3264
-																],
-																[
-																	1050,
-																	3149
-																],
-																[
-																	572,
-																	3149
-																],
-																[
-																	572,
-																	2883
-																],
-																[
-																	867,
-																	2883
-																]
-															]
-														}
-													],
-													"hrefThumbnail": {
-														"type": "internal",
-														"path": "book/ABH/thumbnail/012-03-003.rats-run.webp"
-													}
-												},
-												{
-													"type": "image",
-													"href": {
-														"type": "internal",
-														"path": "book/ABH/013-03-004.rats-run-player.webp"
-													},
-													"imageType": "mapPlayer",
-													"title": "玩家版本",
-													"width": 3165,
-													"height": 4096,
-													"mapParent": {
-														"id": "008"
-													},
-													"grid": {
-														"type": "square",
-														"size": 193,
-														"offsetX": -28,
-														"offsetY": -50,
-														"scale": 2
-													}
-												}
-											]
-										}
-									]
-								}
-							]
-						},
-						{
-							"ENG_name": "General Features",
-							"name": "通用特征",
-							"type": "entries",
-							"id": "07c",
-							"entries": [
-								"拥有数百年历史的鼠道由风化的木梁和红砖加固而成。其地板由肮脏的木材制成。该建筑的其他特征如下：",
-								{
-									"type": "list",
-									"style": "list-hang-notitle",
-									"items": [
-										{
-											"ENG_name": "Ceilings",
-											"name": "天花板",
-											"type": "item",
-											"entry": "在第一层和第二层，该设施的天花板高15尺。第三层的天花板高8尺。"
-										},
-										{
-											"ENG_name": "Doors",
-											"name": "门",
-											"type": "item",
-											"entry": "作为一家24小时营业的场所，老鼠快跑旅馆的一楼前门和侧门始终未上锁。一楼的内部门也始终未上锁。二楼旅馆的门由木头制成且已上锁。锁具为简易锁（1个动作撬开）且品质良好（{@dc 15}）。"
-										},
-										{
-											"ENG_name": "Lighting",
-											"name": "光照",
-											"type": "item",
-											"entry": "在前两层，大多数区域由放置在船艏像形状壁架上的{@spell 不灭明焰|XPHB}法术照亮。第三层的区域{@area R12|0a2|x}和{@area R13|0a5|x}没有照明。"
-										}
-									]
-								}
-							]
-						},
-						{
-							"ENG_name": "Rat's Run Locations",
-							"name": "老鼠的奔跑地点",
-							"type": "entries",
-							"id": "07d",
-							"entries": [
-								"老鼠跑路包含第一层的酒馆和厨房，第二层的旅馆，以及第三层的藏身处。",
-								"以下地点已标注在老鼠逃跑地图上。",
-								{
-									"ENG_name": "R1: Entryway",
-									"name": "R1: 入口通道",
-									"type": "entries",
-									"id": "07e",
-									"entries": [
-										{
-											"type": "inset",
-											"id": "07f",
-											"entries": [
-												"碎裂的船桨、磨损的绳索和撕裂的船帆装饰着这些墙壁，上面还有粉笔涂鸦的字迹。台阶向下通往一个大厅，里面回荡着水手们狂欢的喧嚣声。"
-											]
-										},
-										"这个入口装饰着鼠道酒馆的顾客们多年来捐赠的海事装备，以及涂鸦信息。通用语中的短语包括\"恶棍住在这里\"和\"除了大海没有法律\"，还有其他精选的宣言和难以辨认的涂鸦。",
-										{
-											"ENG_name": "Security Guards",
-											"name": "保安人员",
-											"type": "entries",
-											"id": "080",
-											"entries": [
-												"在黑夜中，两名人类在老鼠跑道上担任警卫。已婚的费罗克和黛特·格伦斯沃斯（中型{@creature 打手|XMM|打手们}）坐在这个区域两侧的长椅上。",
-												"费洛克和德特雷拒绝任何明显是执法组织成员的进入，声称场所已满即使实际上并非如此。警卫会与任何被拒绝进入却试图进入主厅（{@area 区域R2|081|x}）的生物战斗，并在需要时呼叫其他工作人员和友好的水手协助。如果主厅发生斗殴，费洛克和德特雷会在1分钟后加入战斗并试图平息暴力。",
-												"白昼期间，费洛克和黛特丽处于休班状态。他们通常可以在大厅里吃喝，或在空置的旅馆房间（{@area 区域R9|098|x}）里沉睡。"
-											]
-										}
-									]
-								},
-								{
-									"ENG_name": "R2: Main Hall",
-									"name": "R2：主厅",
-									"type": "entries",
-									"id": "081",
-									"entries": [
-										{
-											"type": "inset",
-											"id": "082",
-											"entries": [
-												"粗鲁的水手们在这个宽敞的大厅里尽情作乐，无论是在中央的大型木制吧台，还是围绕它摆放的大型桌子旁。喧闹的顾客周围环绕着更安静、身着黑色斗篷的私人隔间。"
-											]
-										},
-										"全天开放，主厅是博德之门水手们的主要聚集地，也是罪犯们讨论阴暗交易的黄金地点。",
-										{
-											"ENG_name": "R2a",
-											"name": "R2a",
-											"type": "entries",
-											"id": "083",
-											"entries": [
-												"酒吧储备充足，有几十种不同品质的麦芽酒、朗姆酒、威士忌和葡萄酒。个人在吧台周围的凳子上借酒消愁，而更喧闹的结伙则使用东边和西边的区域。",
-												"日间的主要酒保是粗鲁的石巨人利夫·克劳斯威尔（中型，混乱中立 {@creature 海盗|XMM}），她还在楼上的旅馆向顾客出租房间。利夫携带着 {@area 区域R10|09a|x} 中保险箱的钥匙和 {@area 区域R11|09d|x} 中她抽屉的钥匙。任何时候，如果利夫怀疑某人是执法人员的代理人，她会指示他们离开。如果有人给她带来太多麻烦，她会向在 {@area 区域R1|07e|x} 的费罗克和德特雷求助。",
-												"在黑夜，莉芙会回到她的行政办公室或卧室（区域R10和R11）。晚上的酒保是两位矮人姐妹，塞拉和格伦达·碎石者（中型，混乱中立 {@creature 匪徒|XMM|匪徒们}），她们性格开朗且对莉芙坚定不移地忠诚。"
-											]
-										},
-										{
-											"ENG_name": "R2b",
-											"name": "R2b",
-											"type": "entries",
-											"id": "084",
-											"entries": [
-												"这些长桌是为想要玩纸牌、骰子或其他机会游戏的顾客预留的。一位被称为切掌者（小型{@creature 魔法学徒|XMM}）的健谈常客每天在这里经营三龙牌游戏。切掌者是一个半身人，真名是芬库斯·贝里布兰奇。其他员工不知道的是，切掌者受雇于利夫·克劳斯威尔，并向经理汇报他听到的所有传闻。"
-											]
-										},
-										{
-											"ENG_name": "R2c",
-											"name": "R2c",
-											"type": "entries",
-											"id": "085",
-											"entries": [
-												"薄薄的滑动木门让每个隔间的顾客都有一定的隐私。罪犯，其中许多是强大组织的高级成员，经常在这里会面讨论非法交易。",
-												"鬼鬼祟祟的侏儒销赃犯布雷格·利特尔托（小型{@creature 匪徒|XMM}）将这个区域作为他的行动基地。虽然不属于更大的组织，但布雷格曾为博德之门一些最显赫的玩家们销赃过贵重且令人难堪的战利品。布雷格知道强大的秘密，并且愿意与任何愿意保护他免受敌人伤害的人结盟。"
-											]
-										},
-										{
-											"ENG_name": "R2d",
-											"name": "R2d",
-											"type": "entries",
-											"id": "086",
-											"entries": [
-												"这张小型桌子集合是公会成员最喜爱的聚集地，该公会是城中一个强大的犯罪组织。每天，优雅但沉默寡言的{@creature 天狗|XMM}罗卡·微光喙都会在他们角落的预留座位上享用一杯麦酒和一个肉饼。罗卡向公会特工传递信息，并为那些希望联系神出鬼没的公会会长的人提供帮助，不过只有最有价值的信息才能传到这位领袖那里。"
-											]
-										},
-										{
-											"ENG_name": "R2e",
-											"name": "R2e",
-											"type": "entries",
-											"id": "087",
-											"entries": [
-												"这里的桌子和卡座比大厅其他区域布置得更为舒适。船长们常在此处休息，这个角落能稍微避开大厅里喧闹的水手们。",
-												{
-													"type": "quote",
-													"entries": [
-														"在主厅私人包厢紧闭的门后，你会震惊于我多么容易引诱愚人跟我一起漫步回家。我总是承诺他们会体验到一生难忘的盛宴\u2014\u2014而我总是说到做到。"
-													],
-													"by": "阿斯代伦，病态领班"
-												}
-											]
-										}
-									]
-								},
-								{
-									"ENG_name": "R3: Kitchen",
-									"name": "R3: 厨房",
-									"type": "entries",
-									"id": "088",
-									"entries": [
-										{
-											"type": "inset",
-											"id": "089",
-											"entries": [
-												"主厅与厨房被一个宽而低的酒吧隔开，后面穿着围裙的员工正忙着准备饭菜。酒吧上方挂着一块黑板，上面写着\"肉馅饼、鱼汤、豌豆泥：每份1SP\"。"
-											]
-										},
-										"顾客们沿着吧台排队，从厨房点菜。工作人员将做好的饭菜放在吧台上，供顾客取用。",
-										{
-											"ENG_name": "Staff",
-											"name": "法杖",
-											"type": "entries",
-											"id": "08a",
-											"entries": [
-												"主厨是赫斯卡·\"比格尔斯\"·塔斯克图斯（中型{@creature 海盗|XMM}），一个咧嘴大笑、声音洪亮的兽人。比格尔斯携带着{@area 区域R4|08c|x}中橱柜的钥匙。",
-												"作为助理厨师帮助比格尔斯的是健谈的提夫林达里乌斯·温特斯（中型{@creature 平民|XMM}）；严肃的人类亚历克西亚·邦德巴斯（中型匪徒）；以及热情洋溢的龙裔菲洛娜·特鲁斯凯尔（中型，混乱中立{@creature 匪徒|XMM}）。如果厨房不忙，比格尔斯会派她的助理厨师到主厅接受点菜、给桌子送饮品，或根据利夫的安排做其他工作。"
-											]
-										},
-										{
-											"ENG_name": "Treasure",
-											"name": "宝藏",
-											"type": "entries",
-											"id": "08b",
-											"entries": [
-												"东北角的橱柜里放着锅、平底锅、烤盘、餐具和其他厨房装备。此外，还有六把可当作{@item 匕首|XPHB|匕首}使用的切肉刀。",
-												"中央准备桌下方的架子上放着烹饪补给品，包括三根蜡烛和三个不同的容器，分别装着{@item 强酸|XPHB|小瓶强酸}、{@item 炽火胶|XPHB}和{@item 燃油|XPHB}。桌子上有一把附魔刀，可作为{@item +1 匕首|XDMG}使用。"
-											]
-										}
-									]
-								},
-								{
-									"ENG_name": "R4: Pantry",
-									"name": "R4：储藏室",
-									"type": "entries",
-									"id": "08c",
-									"entries": [
-										{
-											"type": "inset",
-											"id": "08d",
-											"entries": [
-												" 墙边排列着盒子和罐装的原料。在堆叠的啤酒桶和盐渍肉块旁边的角落里，一个高大的橱柜被挂锁锁着。 "
-											]
-										},
-										"这些架子上存放着面粉、糖、香料、猪油、腌肉和其他散装食材。",
-										{
-											"ENG_name": "Treasure",
-											"name": "宝藏",
-											"type": "entries",
-											"id": "08e",
-											"entries": [
-												"作为一个{@action 操作|XPHB}动作，角色可以尝试使用{@item 盗贼工具|XPHB}撬开挂锁，需成功通过{@dc 15}的敏捷（{@skill 巧手|XPHB}）检定。检定成功后，柜子打开，露出三瓶{@item 治疗药水|XDMG|治疗药水}和一个装有50金币的钱包。"
-											]
-										}
-									]
-								},
-								{
-									"ENG_name": "R5: Privies",
-									"name": "R5: 厕所",
-									"type": "entries",
-									"id": "08f",
-									"entries": [
-										{
-											"type": "inset",
-											"id": "090",
-											"entries": [
-												"这个小围场的长度方向挂着破烂的黑色窗帘，后面是地板上的洞用作厕所。一个小洗手盆靠在房间的西端。"
-											]
-										},
-										"这些厕所与城市的下水道相连。每天黄昏时分，一名工作人员会擦拭洗手盆和每个临时隔间。"
-									]
-								},
-								{
-									"ENG_name": "R6: Inn Walkway",
-									"name": "R6：旅馆走道",
-									"type": "entries",
-									"id": "091",
-									"entries": [
-										{
-											"type": "inset",
-											"id": "092",
-											"entries": [
-												"这条狭窄的木制走道通往旅馆的客房。一道由窄板条制成的栏杆将这一层与下方的大厅隔开。"
-											]
-										},
-										"这条上层走道可通过三组楼梯从主厅（{@area 区域R2|081|x}）进入。"
-									]
-								},
-								{
-									"ENG_name": "R7: Spacious Inn Rooms",
-									"name": "R7：宽敞的旅馆房间",
-									"type": "entries",
-									"id": "093",
-									"entries": [
-										{
-											"type": "inset",
-											"id": "094",
-											"entries": [
-												"这个宽敞、木质镶板的房间包含一个壁炉、床、书桌、椅子、洗脸盆、箱子和衣柜。皱巴巴的窗帘框住了南面的窗户。"
-											]
-										},
-										"这些房间比旅馆的其他房间更舒适。莉芙为那些受人尊敬或受她青睐的顾客预留了这些房间。",
-										"当雷格拉偶尔在老鼠跑道的黑夜中度过时，罗刹会占据其中一个房间。",
-										{
-											"ENG_name": "Secret Door",
-											"name": "暗门",
-											"type": "entries",
-											"id": "095",
-											"entries": [
-												"这些房间的南墙木制面板后都隐藏着一扇暗门。身处这些房间的角色可以执行{@action 搜索|XPHB}动作并进行{@dc 15}感知（{@skill 察觉|XPHB}）检定，检定成功即可发现暗门。每扇门后都有一条狭窄的木制走廊（{@area 区域R8|096|x}）。"
-											]
-										}
-									]
-								},
-								{
-									"ENG_name": "R8: Secret Corridor",
-									"name": "R8：秘密走廊",
-									"type": "entries",
-									"id": "096",
-									"entries": [
-										{
-											"type": "inset",
-											"id": "097",
-											"entries": [
-												" 在这条狭窄木制走廊的天花板中央附近，有一个五英尺见方的开口。一架从地面通往开口的梯子靠在墙边。 "
-											]
-										},
-										"这个令人幽闭的空间除了通往{@area 区域R13|0a5|x}的梯子外空无一物。"
-									]
-								},
-								{
-									"ENG_name": "R9: Inn Rooms",
-									"name": "R9：旅馆房间",
-									"type": "entries",
-									"id": "098",
-									"entries": [
-										{
-											"type": "inset",
-											"id": "099",
-											"entries": [
-												"砖木结构的墙壁环绕着这个朴素的房间，里面有一张床、一个箱子、一个洗脸盆和一个壁炉。一扇小窗户朴实无华。"
-											]
-										},
-										"利夫把这些房间租给任何愿意付钱的人，似乎对他们可能目睹的任何可疑事务都毫不在意。"
-									]
-								},
-								{
-									"ENG_name": "R10: Administrative Office",
-									"name": "R10：行政办公室",
-									"type": "entries",
-									"id": "09a",
-									"entries": [
-										{
-											"type": "inset",
-											"id": "09b",
-											"entries": [
-												"一个木制标志挂在这个房间的门扉上，写着\"私人区域！禁止入内！\""
-											]
-										},
-										"Lief 从这个办公室处理鼠道（Rat's Run）的组织事务。她也在这里存放来自罪犯的贿赂。",
-										"在黑夜，经理在{@area 区域R11|09d|x}处理文书工作或睡觉。她在这里时会把门扉锁上。在白昼，房间无人且上锁。",
-										{
-											"ENG_name": "Treasure",
-											"name": "宝藏",
-											"type": "entries",
-											"id": "09c",
-											"entries": [
-												"桌子上有与库存、客房预订和员工工资相关的记录。",
-												"在一个书桌抽屉里，一个锁箱装着给雷格拉的贿赂，信使尚未取走。作为一个{@action 操作|XPHB}动作，角色可以尝试使用盗贼工具开锁，成功通过{@dc 20}的敏捷（{@skill 巧手|XPHB}）检定即可做到。",
-												"这个保险箱包含以下物品：",
-												{
-													"type": "list",
-													"items": [
-														"310 GP",
-														"一颗价值100金币的{@item 紫水晶|XDMG}",
-														"三颗纯黑色的{@item 缟玛瑙|XDMG|缟玛瑙}，每颗价值50金币",
-														"{@item 法术卷轴|XDMG} of {@spell 朦胧术|XPHB}",
-														"{@item 法术卷轴|XDMG} of {@spell 七彩喷射|XPHB}",
-														"{@item 法术卷轴|XDMG} of {@spell 恐惧术|XPHB}",
-														"{@item 火球魔杖|XDMG}"
-													],
-													"style": "list-no-bullets"
-												}
-											]
-										}
-									]
-								},
-								{
-									"ENG_name": "R11: Manager's Bedroom",
-									"name": "R11：经理卧室",
-									"type": "entries",
-									"id": "09d",
-									"entries": [
-										{
-											"type": "inset",
-											"id": "09e",
-											"entries": [
-												"这个铺有木墙板的小房间里，摆放着一张朴素但舒适的床，床架内置抽屉。一个雕刻着航海主题图案的华丽木制衣柜和盥洗盆安放在角落。"
-											]
-										},
-										"这是利夫的个人住所。衣柜里装着各种不起眼的衣物。",
-										{
-											"ENG_name": "Secret Door",
-											"name": "暗门",
-											"type": "entries",
-											"id": "09f",
-											"entries": [
-												"西墙的木镶板后面有一道暗门。卧室中的角色可以采取{@action 搜索|XPHB}动作并进行{@dc 15}感知（{@skill 察觉|XPHB}）检定，检定成功即可发现暗门。门后是通往区域R12的楼梯。"
-											]
-										},
-										{
-											"ENG_name": "Bed Frame Drawer",
-											"name": "床架抽屉",
-											"type": "entries",
-											"id": "0a0",
-											"entries": [
-												"床架抽屉被锁上了。作为一个{@action 操作|XPHB}动作，角色可以尝试使用盗贼工具撬锁，通过成功的{@dc 20}敏捷（{@skill 巧手|XPHB}）检定来完成。"
-											]
-										},
-										{
-											"ENG_name": "Treasure",
-											"name": "宝藏",
-											"type": "entries",
-											"id": "0a1",
-											"entries": [
-												"抽屉里装着利夫的个人积蓄：一个装有500金币的钱包。它还包含一瓶{@item 活力药水|XDMG}，这是一位赞助人送给利夫的私人礼物，以换取保护他免受路斯坎刺客的追杀。"
-											]
-										}
-									]
-								},
-								{
-									"ENG_name": "R12: Attic",
-									"name": "R12: 阁楼",
-									"type": "entries",
-									"id": "0a2",
-									"entries": [
-										{
-											"type": "inset",
-											"id": "0a3",
-											"entries": [
-												"木制储物箱成堆地堆放在这个低矮的阁楼里。除最东北角的那堆箱子外，所有东西都覆盖着一层薄薄的灰尘。废弃的航海装备放在西北边的架子上，而污垢遮挡了南面窗外的景色。"
-											]
-										},
-										"这个阁楼用作储藏室，同时也是走私货物的便利藏匿点。大部分箱子里装着酒馆和旅馆的补给品，例如家具修补工具、额外的金属餐具、床单和清洁用具。西北角的架子上放着破旧的帆布、渔网和其他捐赠品，利夫最终计划在旅馆入口处（{@area 区域R1|07e|x}）展示它们。",
-										{
-											"ENG_name": "Dustless Boxes",
-											"name": "无尘箱",
-											"type": "entries",
-											"id": "0a4",
-											"entries": [
-												"东北角的箱子用粗体大写字母标记为装有面粉。箱子内是带有类似标签的棉质抽绳袋。然而，每个袋子里都是精心包裹的纸包，内含一种稀有而美丽的蛇怪鳞片，用于装饰高端服装。这些箱子总共装有三十个包裹，每个包裹含有2磅鳞片，价值15金币。",
-												"Lief 正在为公会的一位高阶人类成员 Jhera Gothill（中型，中立邪恶 {@creature 刺客|XMM}）藏匿这些从深水城出发的进口船上偷来的蛇蜥鳞片。Jhera 是一楼酒馆的常客，这位臭脸女人在那里与肆无忌惮的海上船长会面。"
-											]
-										}
-									]
-								},
-								{
-									"ENG_name": "R13: Hideaway",
-									"name": "R13: 藏身处",
-									"type": "entries",
-									"id": "0a5",
-									"entries": [
-										{
-											"type": "inset",
-											"id": "0a6",
-											"entries": [
-												"这个微型房间有一个凌乱的铺盖和散落在木地板上的枕头，地板上有一个通往下方二楼的开口。"
-											]
-										},
-										"这个区域作为藏身处，供那些需要躲避敌人或当局的人暂避风头。目前无人居住；床铺用品是前一位租客留下的。"
-									]
-								}
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-			"ENG_name": "Credits",
-			"name": "制作组",
-			"type": "section",
-			"id": "0a7",
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"columns": 2,
-					"items": [
-						{
-							"ENG_name": "Lead Designer:",
-							"name": "首席设计师：",
-							"type": "item",
-							"entry": "阿曼达·哈蒙"
-						},
-						{
-							"ENG_name": "Designers:",
-							"name": "设计师：",
-							"type": "item",
-							"entry": "Ron Lundeen, Stephen Rooney, Sarra Scherb"
-						},
-						{
-							"ENG_name": "Rules Developers:",
-							"name": "规则开发者：",
-							"type": "item",
-							"entry": "Patrick Renie (主管), Makenzie De Armas, Ben Petrisor"
-						},
-						{
-							"ENG_name": "Editors:",
-							"name": "编辑：",
-							"type": "item",
-							"entry": "Adrian Ng Di Spaltro (主管), Sadie Lowry, F. Wesley Schneider, Hans Ziegler"
-						},
-						{
-							"ENG_name": "Art Director:",
-							"name": "艺术总监：",
-							"type": "item",
-							"entry": "Josh Herman"
-						},
-						{
-							"ENG_name": "Graphic Designers:",
-							"name": "平面设计师：",
-							"type": "item",
-							"entry": "Trystan Falcone (主管), Matt Cole"
-						},
-						{
-							"ENG_name": "Cover Illustrator:",
-							"name": "封面插画师：",
-							"type": "item",
-							"entry": "Magali Villeneuve"
-						},
-						{
-							"ENG_name": "Interior Illustrators:",
-							"name": "内页插画师：",
-							"type": "item",
-							"entry": "David Astruga, Luca Bancone, Clint Cearley, Andrea Piparo, Bram Sels, Cynthia Sheppard, John Tedrick"
-						},
-						{
-							"ENG_name": "Cartographer:",
-							"name": "地图作者：",
-							"type": "item",
-							"entry": "Mike Schley"
-						},
-						{
-							"ENG_name": "Consultants:",
-							"name": "顾问：",
-							"type": "item",
-							"entry": "Sameer Joseph, Alyssa Visscher"
-						},
-						{
-							"ENG_name": "Producers:",
-							"name": "制作人：",
-							"type": "item",
-							"entry": "罗伯·霍基（主管），丹·托瓦尔（主管），比尔·本汉姆，西拉·布鲁格曼，瓦妮莎·霍斯金斯"
-						}
-					]
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/ABH/014-cover.webp"
-					},
-					"title": "封面",
-					"credit": "Magali Villeneuve",
-					"width": 1700,
-					"height": 2207
 				}
 			]
 		}

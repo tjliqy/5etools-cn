@@ -9,6 +9,8 @@
 					"ENG_name": "Warlock",
 					"name": "魔契师",
 					"type": "section",
+					"source": "PHB",
+					"page": 105,
 					"entries": [
 						"一只伪龙蜷缩在他的肩上，一位穿着金色长袍的年轻精灵温暖地微笑着，将魔法魅力编织进他的甜言蜜语中，使宫殿哨兵屈服于他的意志。",
 						"当火焰在她的手中燃起，一个老练的人类低声念出她恶魔赞助者的秘名，将她的法术注入恶魔魔法。",
@@ -52,12 +54,12 @@
 								}
 							]
 						}
-					],
-					"page": 105,
-					"source": "PHB"
+					]
 				},
 				{
 					"type": "section",
+					"source": "XGE",
+					"page": 53,
 					"entries": [
 						{
 							"type": "quote",
@@ -277,9 +279,7 @@
 								}
 							]
 						}
-					],
-					"page": 53,
-					"source": "XGE"
+					]
 				}
 			],
 			"images": [
@@ -315,14 +315,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "一位受异界契约强化的神秘学者",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Warlock.webp"
 					},
-					"credit": "Nèstor Ossandón Leal",
 					"width": 1700,
-					"height": 2283
+					"height": 2283,
+					"title": "一位受异界契约强化的神秘学者",
+					"credit": "Nèstor Ossandón Leal"
 				},
 				{
 					"type": "image",
@@ -330,9 +330,9 @@
 						"type": "internal",
 						"path": "classes/XPHB/114-04-029.skull-spiders.webp"
 					},
-					"credit": "Wayne England",
 					"width": 1021,
-					"height": 1440
+					"height": 1440,
+					"credit": "Wayne England"
 				}
 			]
 		}
@@ -452,14 +452,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "至高妖精宗主子职",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Archfey Warlock.webp"
 					},
-					"credit": "Erion Makuo",
 					"width": 850,
-					"height": 2300
+					"height": 2300,
+					"title": "至高妖精宗主子职",
+					"credit": "Erion Makuo"
 				}
 			]
 		},
@@ -473,14 +473,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "天界宗主子职",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Celestial Warlock.webp"
 					},
-					"credit": "Ekaterina Burmak",
 					"width": 850,
-					"height": 2470
+					"height": 2470,
+					"title": "天界宗主子职",
+					"credit": "Ekaterina Burmak"
 				}
 			]
 		},
@@ -494,14 +494,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "邪魔宗主子职",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Fiend Warlock.webp"
 					},
-					"credit": "Jodie Muir",
 					"width": 850,
-					"height": 2486
+					"height": 2486,
+					"title": "邪魔宗主子职",
+					"credit": "Jodie Muir"
 				}
 			]
 		},
@@ -515,14 +515,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "旧日支配者宗主子职",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Great Old One Warlock.webp"
 					},
-					"credit": "Magali Villeneuve",
 					"width": 850,
-					"height": 1995
+					"height": 1995,
+					"title": "旧日支配者宗主子职",
+					"credit": "Magali Villeneuve"
 				}
 			]
 		},
@@ -540,10 +540,10 @@
 						"type": "internal",
 						"path": "classes/RHW/Undead Patron Warlock.webp"
 					},
-					"title": "死灵宗主魔契师",
-					"credit": "Ignatius Budi",
 					"width": 850,
-					"height": 1806
+					"height": 1806,
+					"title": "死灵宗主魔契师",
+					"credit": "Ignatius Budi"
 				}
 			]
 		},
@@ -570,10 +570,10 @@
 						"type": "internal",
 						"path": "classes/AU/Vestige Patron Warlock.webp"
 					},
-					"title": "契灵宗主魔契师",
-					"credit": "Katerina Ladon",
 					"width": 850,
-					"height": 1914
+					"height": 1914,
+					"title": "契灵宗主魔契师",
+					"credit": "Katerina Ladon"
 				}
 			]
 		}

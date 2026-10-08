@@ -14,6 +14,8 @@
 					"ENG_name": "Bard",
 					"name": "吟游诗人",
 					"type": "section",
+					"source": "PHB",
+					"page": 51,
 					"entries": [
 						"当她在一座被遗忘已久的废墟中的古老纪念碑上轻抚手指时，一位穿着粗犷皮衣的半精灵哼唱着，她脑海中涌现出知识，这是由她歌声中的魔法所召唤出来的\u2014\u2014关于建造这座纪念碑的人民以及它所描绘的神话传说的知识。",
 						"一位严肃的人类战士有节奏地用剑敲击他的鳞甲，为他的战歌设定节奏，并鼓励他的同伴们勇敢和英勇。他的歌声中的魔法使他们更加坚强和大胆。",
@@ -54,12 +56,12 @@
 								}
 							]
 						}
-					],
-					"source": "PHB",
-					"page": 51
+					]
 				},
 				{
 					"type": "section",
+					"source": "XGE",
+					"page": 12,
 					"entries": [
 						{
 							"type": "quote",
@@ -350,9 +352,7 @@
 								}
 							]
 						}
-					],
-					"source": "XGE",
-					"page": 12
+					]
 				}
 			],
 			"images": [
@@ -388,14 +388,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "一位鼓舞人心的音乐、舞蹈与魔法演艺者",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Bard.webp"
 					},
-					"credit": "Evyn Fong",
 					"width": 1700,
-					"height": 2174
+					"height": 2174,
+					"title": "一位鼓舞人心的音乐、舞蹈与魔法演艺者",
+					"credit": "Evyn Fong"
 				}
 			]
 		}
@@ -581,14 +581,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "舞蹈学院子职",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Dance Bard.webp"
 					},
-					"credit": "Katerina Ladon",
 					"width": 850,
-					"height": 2113
+					"height": 2113,
+					"title": "舞蹈学院子职",
+					"credit": "Katerina Ladon"
 				}
 			]
 		},
@@ -602,14 +602,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "魅心学院子职",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Glamour Bard.webp"
 					},
-					"credit": "Hocheol Ryu",
 					"width": 850,
-					"height": 1722
+					"height": 1722,
+					"title": "魅心学院子职",
+					"credit": "Hocheol Ryu"
 				}
 			]
 		},
@@ -623,14 +623,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "逸闻学院子职",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Lore Bard.webp"
 					},
-					"credit": "Mike Pape",
 					"width": 850,
-					"height": 2453
+					"height": 2453,
+					"title": "逸闻学院子职",
+					"credit": "Mike Pape"
 				}
 			]
 		},
@@ -644,14 +644,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "勇气学院子职",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Valor Bard.webp"
 					},
-					"credit": "Ignatius Budi",
 					"width": 850,
-					"height": 2181
+					"height": 2181,
+					"title": "勇气学院子职",
+					"credit": "Ignatius Budi"
 				}
 			]
 		},
@@ -669,9 +669,9 @@
 						"type": "internal",
 						"path": "classes/FRHoF/Moon Bard.webp"
 					},
-					"credit": "Marcela Medeiros",
 					"width": 850,
-					"height": 2562
+					"height": 2562,
+					"credit": "Marcela Medeiros"
 				}
 			]
 		},
@@ -689,10 +689,10 @@
 						"type": "internal",
 						"path": "classes/RHW/College of Spirits Bard.webp"
 					},
-					"title": "精魂学院吟游诗人",
-					"credit": "Ignatius Budi",
 					"width": 850,
-					"height": 1410
+					"height": 1410,
+					"title": "精魂学院吟游诗人",
+					"credit": "Ignatius Budi"
 				}
 			]
 		}

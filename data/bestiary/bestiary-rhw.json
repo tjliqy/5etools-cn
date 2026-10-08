@@ -1,6 +1,6 @@
 {
 	"_meta": {
-		"referenceSources": {
+		"otherSources": {
 			"monster": {
 				"XMM": "RHW"
 			}
@@ -748,7 +748,7 @@
 			"trait": [
 				{
 					"ENG_name": "Semblance of Life",
-					"name": "拟态生命",
+					"name": "生命的假象",
 					"entries": [
 						"荚囊体是被捕体植物消化生物的一个物理复制体。荚囊体在进行魅力（{@skill 欺瞒|XPHB}）检定以伪装成被消化生物时具有{@variantrule 优势|XPHB}。荚囊体死亡时会融化成浆状物。"
 					]
@@ -3073,7 +3073,7 @@
 		},
 		{
 			"ENG_name": "Gremishka",
-			"name": "诡灵什卡",
+			"name": "小法妖",
 			"type": "monstrosity",
 			"source": "RHW",
 			"page": 249,
@@ -6561,7 +6561,7 @@
 					"ENG_name": "Legendary Resistance (2/Day)",
 					"name": "传奇抗性（2/日）",
 					"entries": [
-						"若死灵脓液豁免失败，它可以改为选择成功。"
+						"若死灵脓液豁免失败，可以将其改为豁免成功。"
 					]
 				},
 				{
@@ -7436,7 +7436,7 @@
 					"ENG_name": "Legendary Resistance (3/Day)",
 					"name": "传奇抗性 (3/日)",
 					"entries": [
-						"若主宰豁免失败，其可以改为选择豁免成功。"
+						"若主宰豁免失败，可以将其改为豁免成功。"
 					]
 				},
 				{
@@ -7740,7 +7740,7 @@
 					"ENG_name": "Legendary Resistance (1/Day)",
 					"name": "传奇抗性（1/日）",
 					"entries": [
-						"若劈砍者豁免失败，它可以改为选择豁免成功。"
+						"若撕裂者豁免失败，可以将其改为豁免成功。"
 					]
 				}
 			],
@@ -7749,7 +7749,7 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"撕裂者进行两次撕裂者小刀攻击。"
+						"撕裂者进行两次撕裂者之刃攻击。"
 					]
 				},
 				{
@@ -10404,7 +10404,7 @@
 				},
 				{
 					"ENG_name": "Beak (Raven or Hybrid Form Only)",
-					"name": "喙啄（仅乌鸦形态或混合形态）",
+					"name": "喙啄（仅渡鸦与半人形态）",
 					"entries": [
 						"{@atkr m} {@hit 4}，触及5尺。{@h}11（{@damage 2d8 + 2}）穿刺伤害。如果目标是类人生物，它将受到以下效果影响。{@actSave con} {@dc 10}。{@actSaveFail} 目标被诅咒。如果被诅咒的目标{@variantrule 生命值|XPHB}降至0，它将变为一个由DM控制的鸦人，并拥有10点{@variantrule 生命值|XPHB}。{@actSaveSuccess} 目标在24小时内免疫此鸦人的诅咒。"
 					]

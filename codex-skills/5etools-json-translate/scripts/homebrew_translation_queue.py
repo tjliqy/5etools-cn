@@ -65,6 +65,35 @@ def non_generated_changes(repo: Path) -> list[str]:
     ]
 
 
+def non_generated_change_paths(repo: Path) -> list[str]:
+    paths = set()
+    for args in (
+        ("diff", "--name-only", "-z"),
+        ("diff", "--cached", "--name-only", "-z"),
+        ("ls-files", "--others", "--exclude-standard", "-z"),
+    ):
+        output = git_ok(repo, *args)
+        paths.update(path for path in output.split("\0") if path and not path.startswith("_generated/"))
+    return sorted(paths)
+
+
+def absorb_build_target_change(repo: Path, target_path: str) -> bool:
+    """Amend build normalization when it changed only the selected target JSON."""
+    dirty = non_generated_change_paths(repo)
+    if not dirty:
+        return False
+    if dirty != [target_path]:
+        raise RuntimeError("integration build changed non-generated files outside the selected target: " + ", ".join(dirty))
+    git_ok(repo, "add", "--", target_path)
+    git_ok(
+        repo,
+        "-c", "user.name=Homebrew Integration",
+        "-c", "user.email=homebrew-integration@example.invalid",
+        "commit", "--amend", "--no-edit",
+    )
+    return True
+
+
 def connect(database: Path) -> sqlite3.Connection:
     database.parent.mkdir(parents=True, exist_ok=True)
     connection = sqlite3.connect(database, timeout=30, isolation_level=None)
@@ -814,6 +843,7 @@ def command_integrate(args) -> int:
                 [sys.executable, str(SCRIPT_DIR / "run_homebrew_tests.py"), "--baseline-report", baseline.name, "--homebrew-dir", str(integration_worktree)],
             )
             validation_results = []
+            build_target_absorbed = False
             json.loads(target.read_text(encoding="utf-8-sig"))
             phase = "candidate_validation"
             for command in validation_commands:
@@ -822,9 +852,7 @@ def command_integrate(args) -> int:
                 if completed.returncode:
                     raise RuntimeError(f"integration validation failed: {' '.join(command)}\n{completed.stdout}")
                 if command[:3] == ["npm", "run", "build"]:
-                    dirty = non_generated_changes(integration_worktree)
-                    if dirty:
-                        raise RuntimeError("integration build changed non-generated files: " + ", ".join(dirty))
+                    build_target_absorbed = absorb_build_target_change(integration_worktree, row["target_path"])
                 renew_integration(connection, row["source_path"], integration_token, args.integration_lease_minutes)
             tested_commit = git_ok(integration_worktree, "rev-parse", "HEAD")
             if hash_file(live_source) != row["source_hash"]:
@@ -839,7 +867,10 @@ def command_integrate(args) -> int:
                 "UPDATE tasks SET integration_commit = ?, updated_at = ? WHERE source_path = ? AND integration_token = ?",
                 (tested_commit, stamp(), row["source_path"], integration_token),
             )
-            event(connection, row["source_path"], "integrating", {"integration_commit": tested_commit})
+            event(connection, row["source_path"], "integrating", {
+                "integration_commit": tested_commit,
+                "build_target_absorbed": build_target_absorbed,
+            })
             connection.execute("COMMIT")
             phase = "shared_fast_forward"
             renew_integration(connection, row["source_path"], integration_token, args.integration_lease_minutes)
@@ -886,7 +917,7 @@ def command_integrate(args) -> int:
     connection.execute("COMMIT")
     cleanup_errors = cleanup_worktree(repo, row["worktree_path"], row["branch"])
     worktree_cleanup = cleanup_excess_worktrees(repo, args.worktree_root, connection)
-    return emit({"ok": True, "status": "merged", "source_path": row["source_path"], "commit_sha": integrated_commit, "revalidated": ["json", "build", "structure", "schema", "tests"], "cleanup_errors": cleanup_errors, "worktree_cleanup": worktree_cleanup})
+    return emit({"ok": True, "status": "merged", "source_path": row["source_path"], "commit_sha": integrated_commit, "revalidated": ["json", "build", "structure", "schema", "tests"], "build_target_absorbed": build_target_absorbed, "cleanup_errors": cleanup_errors, "worktree_cleanup": worktree_cleanup})
 
 
 def command_status(args) -> int:

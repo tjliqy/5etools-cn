@@ -14,6 +14,8 @@
 					"ENG_name": "Ranger",
 					"name": "游侠",
 					"type": "section",
+					"source": "PHB",
+					"page": 89,
 					"entries": [
 						"林中树影下穿行人影，正追捕一群计划袭击附近村庄的兽人。只见那男人外表粗野，双手各挥舞着一柄短剑，有如钢铁狂风一般将敌人接连斩杀。",
 						"避过一团霜冻气息后，精灵迅速站稳脚跟并拉弓射箭直取白龙。尽管身处巨龙散发的恐惧气息与吐息寒意中，她仍无所畏惧的将箭矢一支接一支地射入龙鳞的缝隙中。",
@@ -54,12 +56,12 @@
 								}
 							]
 						}
-					],
-					"source": "PHB",
-					"page": 89
+					]
 				},
 				{
 					"type": "section",
+					"source": "XGE",
+					"page": 40,
 					"entries": [
 						{
 							"type": "quote",
@@ -309,9 +311,7 @@
 								}
 							]
 						}
-					],
-					"page": 40,
-					"source": "XGE"
+					]
 				}
 			],
 			"images": [
@@ -346,14 +346,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "一位被原始魔法灌注的漫游战士",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Ranger.webp"
 					},
-					"credit": "Chris Rallis",
 					"width": 1700,
-					"height": 2259
+					"height": 2259,
+					"title": "一位被原始魔法灌注的漫游战士",
+					"credit": "Chris Rallis"
 				},
 				{
 					"type": "image",
@@ -361,9 +361,9 @@
 						"type": "internal",
 						"path": "classes/XPHB/093-04-008.ranger-and-deer.webp"
 					},
-					"credit": "Mike Pape",
 					"width": 540,
-					"height": 1440
+					"height": 1440,
+					"credit": "Mike Pape"
 				}
 			]
 		}
@@ -521,14 +521,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "驯兽师子职",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Beast Master Ranger.webp"
 					},
-					"credit": "Alditha Siregar",
 					"width": 850,
-					"height": 1863
+					"height": 1863,
+					"title": "驯兽师子职",
+					"credit": "Alditha Siregar"
 				}
 			]
 		},
@@ -542,14 +542,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "妖精漫游者子职",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Fey Wanderer Ranger.webp"
 					},
-					"credit": "John Grello",
 					"width": 850,
-					"height": 2199
+					"height": 2199,
+					"title": "妖精漫游者子职",
+					"credit": "John Grello"
 				}
 			]
 		},
@@ -563,14 +563,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "幽域追踪者子职",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Gloom Stalker Ranger.webp"
 					},
-					"credit": "Polar Engine",
 					"width": 850,
-					"height": 2146
+					"height": 2146,
+					"title": "幽域追踪者子职",
+					"credit": "Polar Engine"
 				}
 			]
 		},
@@ -584,14 +584,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "猎手子职",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Hunter Ranger.webp"
 					},
-					"credit": "Katerina Ladon",
 					"width": 850,
-					"height": 1752
+					"height": 1752,
+					"title": "猎手子职",
+					"credit": "Katerina Ladon"
 				}
 			]
 		},
@@ -609,9 +609,9 @@
 						"type": "internal",
 						"path": "classes/FRHoF/Winter Walker Ranger.webp"
 					},
-					"credit": "Alejandro Pacheco",
 					"width": 850,
-					"height": 2222
+					"height": 2222,
+					"credit": "Alejandro Pacheco"
 				}
 			]
 		},
@@ -629,10 +629,10 @@
 						"type": "internal",
 						"path": "classes/RHW/Hollow Warden Ranger.webp"
 					},
-					"title": "幽邃戍卫游侠",
-					"credit": "Audy Ravindra",
 					"width": 850,
-					"height": 1563
+					"height": 1563,
+					"title": "幽邃戍卫游侠",
+					"credit": "Audy Ravindra"
 				}
 			]
 		}

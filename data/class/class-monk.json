@@ -1651,6 +1651,7 @@
 			"source": "AU",
 			"className": "武僧",
 			"classSource": "XPHB",
+			"page": 11,
 			"edition": "one",
 			"spellcastingAbility": "wis",
 			"casterProgression": "1/3",
@@ -1813,10 +1814,10 @@
 						}
 					],
 					"colLabels": [
-						"{@filter 1环|spells|level=1|subclass=武僧：秘术武者}",
-						"{@filter 2环|spells|level=2|subclass=武僧：秘术武者}",
-						"{@filter 3环|spells|level=3|subclass=武僧：秘术武者}",
-						"{@filter 4环|spells|level=4|subclass=武僧：秘术武者}"
+						"{@filter 1st|spells|level=1|subclass=武僧：秘术武者}",
+						"{@filter 2nd|spells|level=2|subclass=武僧：秘术武者}",
+						"{@filter 3rd|spells|level=3|subclass=武僧：秘术武者}",
+						"{@filter 4th|spells|level=4|subclass=武僧：秘术武者}"
 					],
 					"rowsSpellProgression": [
 						[
@@ -4566,6 +4567,7 @@
 			"ENG_name": "Warrior of the Mystic Arts",
 			"name": "秘术武者",
 			"source": "AU",
+			"page": 11,
 			"className": "武僧",
 			"classSource": "XPHB",
 			"subclassShortName": "秘术",
@@ -4584,6 +4586,7 @@
 			"ENG_name": "Spellcasting",
 			"name": "施法",
 			"source": "AU",
+			"page": 11,
 			"className": "武僧",
 			"classSource": "XPHB",
 			"subclassShortName": "秘术",
@@ -4596,6 +4599,7 @@
 					"ENG_name": "Cantrips",
 					"name": "戏法",
 					"type": "entries",
+					"page": 11,
 					"entries": [
 						"你从{@filter 术士法术列表|spells|class=术士}中选择并习得两道戏法。推荐选择{@spell 剑刃防护|XPHB}和{@spell 鸣雷破|XPHB}。每当你获得一个武僧等级时，你都能将这些戏法之一替换为另一道你从{@filter 术士法术列表|spells|class=术士}中选择的戏法。",
 						"当你的武僧等级到达10级时，你能选择并习得另一道{@filter 术士戏法|spells|level=0|class=术士}。"
@@ -4605,6 +4609,7 @@
 					"ENG_name": "Spell Slots",
 					"name": "法术位",
 					"type": "entries",
+					"page": 11,
 					"entries": [
 						"秘术武者施法表显示了你可用于施展一环及以上法术的法术位数量。你在完成一次{@variantrule 长休|XPHB}时恢复所有已消耗的法术位。"
 					]
@@ -4613,6 +4618,7 @@
 					"ENG_name": "Prepared Spells of Level 1+",
 					"name": "1环及以上的准备法术",
 					"type": "entries",
+					"page": 11,
 					"entries": [
 						"你准备可供你以此特性施展的一环及更高环阶的法术列表。为此，选择三道来自{@filter 术士法术列表|spells|class=术士}的一环法术。推荐选择{@spell 跳跃术|XPHB}、{@spell 魔法飞弹|XPHB}和{@spell 护盾术|XPHB}。",
 						"已准备法术数量会随你武僧等级的提升而增加，如秘术武者施法表中的准备法术一列所示。每当这一列的数字增加时，从{@filter 术士法术列表|spells|class=术士}中选择额外法术准备，直至法术列表中法术的数量与表格中的数字一致。你所选择法术的环阶必须是你所拥有法术位对应的环阶。例如，如果你是一位7级武僧，则你的准备法术列表能包括五道一环或二环的术士法术，随意组合。"
@@ -4622,6 +4628,7 @@
 					"ENG_name": "Changing Your Prepared Spells",
 					"name": "改变你的准备法术",
 					"type": "entries",
+					"page": 12,
 					"entries": [
 						"每当你获得一个武僧等级，就可以将你列表中的一道法术替换为另一道{@filter 术士法术|spells|class=术士}，你必须拥有替换后法术对应环阶的法术位才可以替换。"
 					]
@@ -4630,6 +4637,7 @@
 					"ENG_name": "Spellcasting Ability",
 					"name": "施法属性",
 					"type": "entries",
+					"page": 12,
 					"entries": [
 						"你术士法术的施法属性是感知。"
 					]
@@ -4638,6 +4646,7 @@
 					"ENG_name": "Spellcasting Focus",
 					"name": "法器",
 					"type": "entries",
+					"page": 12,
 					"entries": [
 						"你可以使用{@item 奥术法器|XPHB}作为你术士法术的{@variantrule 法器|XPHB}。"
 					]
@@ -4646,6 +4655,7 @@
 					"ENG_name": "Multiclassing",
 					"name": "兼职",
 					"type": "entries",
+					"page": 12,
 					"entries": [
 						"如果你兼职并拥有来自多于一个职业的施法特性，将你武僧等级的三分之一（向下取整）计入总等级，以此来确定你可用的法术位数量。"
 					]
@@ -4656,6 +4666,7 @@
 			"ENG_name": "Mystic Fighting Style",
 			"name": "秘法战斗风格",
 			"source": "AU",
+			"page": 12,
 			"className": "武僧",
 			"classSource": "XPHB",
 			"subclassShortName": "秘术",
@@ -4670,6 +4681,7 @@
 			"ENG_name": "Mystic Focus",
 			"name": "秘法武功",
 			"source": "AU",
+			"page": 12,
 			"className": "武僧",
 			"classSource": "XPHB",
 			"subclassShortName": "秘术",
@@ -4682,6 +4694,7 @@
 					"ENG_name": "Converting Spell Slots to Focus Points",
 					"name": "法术位转换为功力",
 					"type": "entries",
+					"page": 12,
 					"entries": [
 						"你可以消耗一个法术位，来恢复等同于该法术位环阶数量的已消耗功力（无需动作）。"
 					]
@@ -4690,11 +4703,13 @@
 					"ENG_name": "Recovering Spell Slots",
 					"name": "恢复法术位",
 					"type": "entries",
+					"page": 12,
 					"entries": [
 						"当你完成{@variantrule 短休|XPHB}或使用运转周天时，你可以通过转换未消耗的功力来恢复一个已消耗的法术位。恢复法术位表列出了恢复特定环阶法术位的消耗，并列出了恢复该法术位所需的最低武僧等级。你最高只能恢复四环法术位。",
 						{
 							"type": "table",
 							"caption": "恢复法术位",
+							"page": 12,
 							"colLabels": [
 								"法术位环阶",
 								"功力消耗",
@@ -4736,6 +4751,7 @@
 			"ENG_name": "Focused Strike",
 			"name": "凝神击",
 			"source": "AU",
+			"page": 13,
 			"className": "武僧",
 			"classSource": "XPHB",
 			"subclassShortName": "秘术",
@@ -4750,6 +4766,7 @@
 			"ENG_name": "Improved Mystic Fighting Style",
 			"name": "精通秘法战斗风格",
 			"source": "AU",
+			"page": 13,
 			"className": "武僧",
 			"classSource": "XPHB",
 			"subclassShortName": "秘术",

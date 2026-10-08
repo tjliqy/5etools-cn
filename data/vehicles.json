@@ -19,6 +19,7 @@
 			"capCrew": 1,
 			"capPassenger": 1,
 			"ac": 20,
+			"hp": 200,
 			"speed": {
 				"walk": 30,
 				"swim": {
@@ -26,7 +27,6 @@
 					"condition": "（若腿未伸展则两者均为0尺）"
 				}
 			},
-			"hp": 200,
 			"immune": [
 				"poison",
 				"psychic"
@@ -123,6 +123,7 @@
 			"capCrew": 1,
 			"capPassenger": 1,
 			"ac": 20,
+			"hp": 200,
 			"speed": {
 				"walk": 30,
 				"swim": {
@@ -130,7 +131,6 @@
 					"condition": "（若腿未伸展则两者均为0尺）"
 				}
 			},
-			"hp": 200,
 			"immune": [
 				"poison",
 				"psychic"
@@ -143,15 +143,15 @@
 				{
 					"type": "table",
 					"caption": "夸力许装置拉杆",
-					"colStyles": [
-						"col-1 text-center",
-						"col-5-5",
-						"col-5-5"
-					],
 					"colLabels": [
 						"拉杆",
 						"Up",
 						"下"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-5-5",
+						"col-5-5"
 					],
 					"rows": [
 						[
@@ -360,9 +360,9 @@
 				{
 					"ENG_name": "Harpoon Gun",
 					"name": "鱼叉枪",
-					"count": 3,
 					"ac": 15,
 					"hp": 50,
+					"count": 3,
 					"entries": [
 						"{@atk rw} 命中{@hit 8}，射程120/480尺，单一目标。{@h}11（{@damage 2d10}）点穿刺伤害，且目标陷入{@condition 受擒}状态（逃脱{@dc 16}）。擒抱结束前，目标的速度减半，且无法远离战斗气球。战斗气球的每台鱼叉枪可擒抱一个目标。当其通过鱼叉枪攻击使一个或多个目标处于{@condition 受擒}状态时，战斗气球的速度不减半。"
 					]
@@ -447,10 +447,10 @@
 				{
 					"ENG_name": "Ballistae",
 					"name": "弩炮",
-					"crew": 3,
-					"count": 2,
 					"ac": 15,
 					"hp": 50,
+					"count": 2,
+					"crew": 3,
 					"costs": [
 						{
 							"cost": 5000,
@@ -477,9 +477,9 @@
 				{
 					"ENG_name": "Giant Cannon",
 					"name": "巨炮",
-					"crew": 4,
 					"ac": 19,
 					"hp": 250,
+					"crew": 4,
 					"costs": [
 						{
 							"note": "火炮"
@@ -542,9 +542,9 @@
 				{
 					"ENG_name": "Ballista",
 					"name": "弩炮",
-					"crew": 3,
 					"ac": 15,
 					"hp": 50,
+					"crew": 3,
 					"costs": [
 						{
 							"cost": 5000,
@@ -571,9 +571,9 @@
 				{
 					"ENG_name": "Mangonel",
 					"name": "投石机",
-					"crew": 4,
 					"ac": 15,
 					"hp": 100,
+					"crew": 4,
 					"costs": [
 						{
 							"cost": 10000,
@@ -824,9 +824,9 @@
 				{
 					"ENG_name": "Ballista",
 					"name": "弩炮",
-					"crew": 3,
 					"ac": 15,
 					"hp": 50,
+					"crew": 3,
 					"costs": [
 						{
 							"cost": 5000,
@@ -853,9 +853,9 @@
 				{
 					"ENG_name": "Mangonel",
 					"name": "投石机",
-					"crew": 5,
 					"ac": 15,
 					"hp": 100,
+					"crew": 5,
 					"costs": [
 						{
 							"cost": 10000,
@@ -978,9 +978,9 @@
 				{
 					"ENG_name": "Ballistas",
 					"name": "弩炮",
-					"count": 4,
 					"ac": 15,
 					"hp": 50,
+					"count": 4,
 					"entries": [
 						"{@atk rw} 命中{@hit 6}，射程 120/480 尺，单一目标。{@h}16 ({@damage 3d10}) 点穿刺伤害。"
 					]
@@ -988,9 +988,9 @@
 				{
 					"ENG_name": "Mangonels",
 					"name": "投石机",
-					"count": 2,
 					"ac": 15,
 					"hp": 100,
+					"count": 2,
 					"entries": [
 						"{@atk rw} 命中{@hit 5}，射程200/800尺（不能命中距离它60尺以内的目标），单一目标。{@h}27（{@damage 5d10}）点钝击伤害。"
 					]
@@ -1115,9 +1115,9 @@
 				{
 					"ENG_name": "Mangonels",
 					"name": "投石机",
-					"count": 2,
 					"ac": 15,
 					"hp": 100,
+					"count": 2,
 					"crew": 5,
 					"costs": [
 						{
@@ -1338,10 +1338,10 @@
 				{
 					"ENG_name": "Ballistae",
 					"name": "弩炮",
-					"crew": 3,
-					"count": 4,
 					"ac": 15,
 					"hp": 50,
+					"count": 4,
+					"crew": 3,
 					"costs": [
 						{
 							"cost": 5000,
@@ -1429,9 +1429,9 @@
 				{
 					"ENG_name": "Ballista",
 					"name": "弩炮",
-					"crew": 3,
 					"ac": 15,
 					"hp": 50,
+					"crew": 3,
 					"costs": [
 						{
 							"cost": 5000,
@@ -1612,9 +1612,9 @@
 					"size": [
 						"M"
 					],
-					"count": 6,
 					"ac": 17,
 					"hp": 50,
+					"count": 6,
 					"crew": 1,
 					"entries": [
 						"这座可动炮塔能够发射一道闪电能量爆裂，且至多容纳一个中型生物。",
@@ -1911,9 +1911,9 @@
 				{
 					"ENG_name": "Eye Ray Tentacles",
 					"name": "眼波射线触手",
-					"count": 6,
 					"ac": 14,
 					"hp": 50,
+					"count": 6,
 					"entries": [
 						"{@atk g} 机械眼魔向最多三个船员可见且在其120尺范围内的目标发射以下魔法眼波射线。",
 						{
@@ -2007,10 +2007,10 @@
 				{
 					"ENG_name": "Ballistae",
 					"name": "弩炮",
-					"crew": 3,
-					"count": 4,
 					"ac": 15,
 					"hp": 50,
+					"count": 4,
+					"crew": 3,
 					"costs": [
 						{
 							"cost": 5000,
@@ -2037,9 +2037,9 @@
 				{
 					"ENG_name": "Mangonel",
 					"name": "投石机",
-					"crew": 5,
 					"ac": 15,
 					"hp": 100,
+					"crew": 5,
 					"costs": [
 						{
 							"cost": 10000,
@@ -2130,10 +2130,10 @@
 				{
 					"ENG_name": "Ballistae",
 					"name": "弩炮",
-					"crew": 3,
-					"count": 4,
 					"ac": 15,
 					"hp": 50,
+					"count": 4,
+					"crew": 3,
 					"costs": [
 						{
 							"cost": 5000,
@@ -2160,9 +2160,9 @@
 				{
 					"ENG_name": "Mangonel",
 					"name": "投石机",
-					"crew": 5,
 					"ac": 15,
 					"hp": 100,
+					"crew": 5,
 					"costs": [
 						{
 							"cost": 10000,
@@ -2580,9 +2580,9 @@
 				{
 					"ENG_name": "Ballista",
 					"name": "弩炮",
-					"crew": 3,
 					"ac": 15,
 					"hp": 50,
+					"crew": 3,
 					"costs": [
 						{
 							"cost": 5000,
@@ -2609,8 +2609,8 @@
 				{
 					"ENG_name": "Claws",
 					"name": "爪击",
-					"crew": 1,
 					"count": 2,
+					"crew": 1,
 					"costs": [
 						{
 							"note": "包含在舰船的价格中"
@@ -2632,9 +2632,9 @@
 				{
 					"ENG_name": "Mangonel",
 					"name": "投石机",
-					"crew": 5,
 					"ac": 15,
 					"hp": 100,
+					"crew": 5,
 					"costs": [
 						{
 							"cost": 10000,
@@ -2698,10 +2698,10 @@
 				{
 					"ENG_name": "Ballistae",
 					"name": "弩炮",
-					"crew": 3,
-					"count": 3,
 					"ac": 15,
 					"hp": 50,
+					"count": 3,
+					"crew": 3,
 					"costs": [
 						{
 							"cost": 5000,
@@ -2787,10 +2787,10 @@
 				{
 					"ENG_name": "Ballistae",
 					"name": "弩炮",
-					"crew": 3,
-					"count": 2,
 					"ac": 15,
 					"hp": 50,
+					"count": 2,
+					"crew": 3,
 					"costs": [
 						{
 							"cost": 5000,
@@ -2817,9 +2817,9 @@
 				{
 					"ENG_name": "Mangonel",
 					"name": "投石机",
-					"crew": 5,
 					"ac": 15,
 					"hp": 100,
+					"crew": 5,
 					"costs": [
 						{
 							"cost": 10000,
@@ -2888,9 +2888,9 @@
 				{
 					"ENG_name": "Ballista",
 					"name": "弩炮",
-					"count": 2,
 					"ac": 15,
 					"hp": 50,
+					"count": 2,
 					"crew": 3,
 					"costs": [
 						{
@@ -2991,6 +2991,10 @@
 					]
 				}
 			],
+			"hp": {
+				"average": 67,
+				"formula": "9d10 + 18"
+			},
 			"speed": {
 				"walk": 30
 			},
@@ -3000,10 +3004,6 @@
 			"int": 0,
 			"wis": 0,
 			"cha": 0,
-			"hp": {
-				"average": 67,
-				"formula": "9d10 + 18"
-			},
 			"immune": [
 				"poison",
 				"psychic"
@@ -3089,10 +3089,10 @@
 				{
 					"ENG_name": "Ballistae",
 					"name": "弩炮",
-					"crew": 3,
-					"count": 2,
 					"ac": 15,
 					"hp": 50,
+					"count": 2,
+					"crew": 3,
 					"costs": [
 						{
 							"cost": 5000,
@@ -3119,9 +3119,9 @@
 				{
 					"ENG_name": "Mangonel",
 					"name": "投石机",
-					"crew": 5,
 					"ac": 15,
 					"hp": 100,
+					"crew": 5,
 					"costs": [
 						{
 							"cost": 10000,
@@ -3187,8 +3187,8 @@
 					],
 					"ac": 17,
 					"hp": 30,
-					"crew": 1,
 					"count": 4,
+					"crew": 1,
 					"entries": [
 						"这门微缩加农炮能发射迸发的魔法力场能量。操纵该奥能发射器的船员可以执行能量脉冲动作来瞄准并发射加农炮。"
 					],
@@ -3422,10 +3422,10 @@
 				{
 					"ENG_name": "Ballistae",
 					"name": "弩炮",
-					"crew": 3,
-					"count": 3,
 					"ac": 15,
 					"hp": 50,
+					"count": 3,
+					"crew": 3,
 					"costs": [
 						{
 							"cost": 5000,
@@ -3452,9 +3452,9 @@
 				{
 					"ENG_name": "Mangonel",
 					"name": "投石机",
-					"crew": 5,
 					"ac": 15,
 					"hp": 100,
+					"crew": 5,
 					"costs": [
 						{
 							"cost": 10000,
@@ -3517,8 +3517,8 @@
 				{
 					"ENG_name": "Eyestalk Cannons",
 					"name": "眼柄光炮",
-					"crew": 1,
 					"count": 3,
+					"crew": 1,
 					"costs": [
 						{
 							"note": "包含在舰船的价格中"
@@ -3704,9 +3704,9 @@
 				{
 					"ENG_name": "Ballistas",
 					"name": "弩炮",
-					"count": 2,
 					"ac": 15,
 					"hp": 50,
+					"count": 2,
 					"entries": [
 						"{@atk rw} 命中{@hit 6}，射程 120/480 尺，单一目标。{@h}16 ({@damage 3d10}) 点穿刺伤害。"
 					]
@@ -3714,9 +3714,9 @@
 				{
 					"ENG_name": "Mangonels",
 					"name": "投石机",
-					"count": 2,
 					"ac": 15,
 					"hp": 100,
+					"count": 2,
 					"entries": [
 						"{@atk rw} 命中{@hit 5}，射程200/800尺（不能命中距离它60尺以内的目标），单一目标。{@h}27（{@damage 5d10}）点钝击伤害。"
 					]
@@ -3806,9 +3806,9 @@
 				{
 					"ENG_name": "Ballista",
 					"name": "弩炮",
-					"crew": 3,
 					"ac": 15,
 					"hp": 50,
+					"crew": 3,
 					"costs": [
 						{
 							"cost": 5000,
@@ -3970,13 +3970,13 @@
 				{
 					"type": "table",
 					"caption": "龙鳞风帆",
-					"colStyles": [
-						"col-6 text-center",
-						"col-6 text-center"
-					],
 					"colLabels": [
 						"龙的类型",
 						"伤害类型"
+					],
+					"colStyles": [
+						"col-6 text-center",
+						"col-6 text-center"
 					],
 					"rows": [
 						[

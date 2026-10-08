@@ -1,656 +1,254 @@
 {
-	"data": [
+	"adventureData": [
 		{
-			"ENG_name": "Introduction",
-			"name": "简介",
-			"type": "section",
-			"page": 4,
-			"id": "000",
-			"entries": [
+			"id": "DrDe-DaS",
+			"source": "DrDe-DaS",
+			"data": [
 				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "adventure/DrDe/000-dragon-delves-cover.webp"
-					},
-					"width": 1701,
-					"height": 2242
-				},
-				{
-					"ENG_name": "Dragons in Dungeons",
-					"name": "地下城中的龙",
+					"ENG_name": "Introduction",
+					"name": "简介",
 					"type": "section",
+					"id": "000",
 					"page": 4,
-					"id": "001",
-					"entries": [
-						"没有什么比集结一群英雄在神秘地下城中对抗强大巨龙更能体现《龙与地下城》的精髓了。无论是50多年前首批踏入幽暗地城的冒险者，还是如今正准备开始第一次冒险的新手玩家，都将被这些经典元素跨越时空的联系在一起。",
-						"{@i 巨龙迷城}是对这一共同传统的颂扬。本书中的十个冒险故事均以盘踞巢穴的龙为核心，专为1至12级角色设计，提供多样挑战\u2014\u2014从击败邪恶之龙到与善良之龙合作，再到应对更复杂的道德困境。作为巨龙巢穴的地城类型丰富多样，既有洞穴群落，也有城市废墟及其他场景。",
-						"地城藏龙处，冒险永不息！"
-					]
-				},
-				{
-					"ENG_name": "Using This Book",
-					"name": "使用本书",
-					"type": "section",
-					"page": 4,
-					"id": "002",
-					"entries": [
-						"类似 {@i 巨龙迷城} 这样的冒险集，用途十分广泛，能满足你带团的各种需求：可作为单次冒险，也可作为长战役中的\"补充内容\"，或是形成系列战役，让角色从1级成长至12级的巅峰结局。",
-						"这些冒险提供了最少备团准备工作的说明（请参见本介绍后文的{@area 运行冒险|009|x}）。",
-						{
-							"ENG_name": "One-Shot Adventure",
-							"name": "单次冒险",
-							"type": "entries",
-							"page": 4,
-							"id": "003",
-							"entries": [
-								"也许你是通常会以玩家的身份参与一场正在运行的战役，但你想尝试成为一个地下城主。也许你试图组建一个新的队伍，需要看看玩家们在你开始主持一个完整战役前是如何相处的。也许通常在某个时候带你们游玩的那个主持人生病了或者有了别的安排，但其他玩家都做好了跑团的准备。或者你的队伍可能需要在当前的战役中休息一下或者找个消遣。在提到的这些任何一种情况下，你都可以从本书中选择一个冒险并且运作它。"
-							]
-						},
-						{
-							"ENG_name": "In an Ongoing Campaign",
-							"name": "在长期战役中",
-							"type": "entries",
-							"page": 4,
-							"id": "004",
-							"entries": [
-								"也许你的玩家角色知道他们需要做什么来挫败邪恶 BOSS 的计划，但他们还不够强大，无法实现他们的目标。也许他们刚刚在战役中完成了一个重要的剧情节点，你想让在沉浸于下一幕无法预测的情节之前，让他们舒缓一下节奏。或者他们正在环游世界的旅程中，而你正在寻找一些东西让路途变得有趣\u2014\u2014用一场道中遭遇的简短冒险。或者你还没有为下一场冒险做好准备，所以你需要一条支线！在提到的这些任何一种情况下，你都可以从本书中选择一个冒险作为\"填充章节\"或者分支任务。",
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "adventure/DrDe/001-00-001.intro-splash.webp"
-									},
-									"width": 850,
-									"height": 2286
-								},
-								"当角色的等级合适你想运作的冒险时，只需要描述冒险者们是如何在当前的探险地点结束他们的剧情。而本书的每个冒险开场都带有一个简短的场景描述，例如\"一个临近森林的村庄。\"除了这些基本细节以外，你还可以随意更改这场冒险发生的地理位置以适配你的战役。",
-								"但如果你有时间准备，可以将正在进行的冒险融入你战役的主题和威胁中。你可以修改冒险中人物和地点的名称，使其更契合你的世界；将冒险中的反派与你战役中重要的组织和事件联系起来；并在龙的宝藏中埋下与你战役主题相关的线索。"
-							]
-						}
-					]
-				},
-				{
-					"ENG_name": "Creating a Campaign",
-					"name": "创作战役",
-					"type": "section",
-					"page": 4,
-					"id": "005",
-					"entries": [
-						"这些冒险可以串联成一个完整的以龙为主题的战役。只需引导玩家按书中顺序进行冒险，并在每段冒险结束时基于故事情节给予等级提升，确保他们的角色能应对接下来的挑战。(在最终冒险前无需等级提升。)你也可以使用下列叙事框架将这些冒险彼此联系起来。",
-						{
-							"ENG_name": "Option 1: Mysterious Patron",
-							"name": "选项1：神秘庇护者",
-							"type": "entries",
-							"page": 4,
-							"id": "006",
-							"entries": [
-								"让一位真实身份略显神秘的和善庇护者在新晋冒险者生涯早期就与之结交，并依次派他们去执行每次冒险任务。这位庇护者可能是一位富有魅力的年轻修士、一位和蔼的导师、一个顽皮的小家伙，或是一位糊涂的老者，或许身边还伴随着七只金丝雀或眩目的黄色蝴蝶\u2014\u2014它们实则是上古金龙所化，龙神巴哈姆特的同伴，而巴哈姆特正是庇护者的真实身份。",
-								"或许是预见到他们注定成为强大的英雄，巴哈姆特将这些冒险者置于他象征性的羽翼之下，派遣他们去应对世界各地与龙相关的各类事务，无论大小。当某次冒险最初看似与龙无关（例如\"{@adventure 奥喀斯之命|DrDe-TWoO|1}\"第3章）结果却与龙息息相关时，这位守护者可能会佯装惊讶，但这当然正是巴哈姆特派人物前去调查的原因。",
-								"你可直接按文本使用每个冒险，由角色的赞助者将他们引导至冒险引子的大致方向，且不剧透后续冒险中的任何惊喜。亦可选择让赞助者在早期就向角色透露秘密，告知他们龙将会是他们冒险的特别焦点，并沿途调整部分冒险引子。"
-							]
-						},
-						{
-							"ENG_name": "Option 2: Brazen Egg",
-							"name": "选项2：赤铜之卵",
-							"type": "entries",
-							"page": 5,
-							"id": "007",
-							"entries": [
-								"从第10章的引言遭遇战\"{@adventure 砂岩城之龙|DrDe-DotSC|1}\"开始战役，以艾德米尔将黄铜之卵托付给角色们作为结束。不过艾德米尔的指示有所不同：她解释说这颗卵必须被\"浸泡\"在十条龙的财宝中（每种色彩龙和金属龙各一条）才能激活其力量。她还暗示这颗卵会引导角色们找到合适的龙巢。事实上，任何在卵15英尺范围内入睡的角色都会做生动的梦，引领他们前往下一个冒险的起点。",
-								"要从龙之宝藏中汲取力量，龙蛋必须在宝藏中待上8小时，被硬币覆盖并被其他物品环绕。然而，一旦被赋能的龙蛋被带入安斯拉德斯的藏宝室（{@adventure 区域H16|DrDe-DotSC|1|H16: 宝藏}，参见第10章），它将达到其全部潜力并开始裂开，如该冒险所述。"
-							]
-						},
-						{
-							"ENG_name": "Option 3: Hoard Magic Items",
-							"name": "选项3：囤积魔法物品",
-							"type": "entries",
-							"page": 5,
-							"id": "008",
-							"entries": [
-								"若你拥有{@book 费资本的巨龙宝库|FTD|4}，书中描述的魔法物品收藏可作为驱使角色寻找更强大、更多样龙类的动力。在前三个冒险中获得下列额外物品奖励：在「{@area 日落时分的死神|00f|x}」中获得{@item 覆鳞饰物|FTD}，在「{@adventure 面包师的捉襟见肘|DrDe-BD|1}」中获得{@item 龙器|FTD}，在「{@adventure 奥喀斯之命|DrDe-TWoO|1}」中获得{@item 龙怒武器|FTD}与{@item 龙触法器|FTD}。所有物品在初次获取时为休眠状态，但在后续冒险中可通过浸入龙类宝藏唤醒。"
-							]
-						}
-					]
-				},
-				{
-					"ENG_name": "Running the Adventures",
-					"name": "运行冒险",
-					"type": "section",
-					"page": 6,
-					"id": "009",
-					"entries": [
-						"要运行这些冒险模组，你需要第五版的核心规则书：{@book 玩家手册|XPHB}、{@book 城主指南|XDMG}和{@book 怪物图鉴|XMM}。冒险中提到的法术和装备描述参见{@book 玩家手册|XPHB}，魔法物品详情参阅{@book 城主指南|XDMG}，怪物数据则出现在{@book 怪物图鉴|XMM}。",
-						"本书目录总结了该合集所收录的冒险。每个冒险针对四至六名特定等级的角色设计，但如{@book 城主指南|XDMG}所述，你可以通过调整遭遇中敌人的数量或为小型队伍补充额外资源来适配更大或更小的团队。这些冒险均可发生于你选择的任何世界，只要该地点拥有各冒险开头列出的基本要素即可。",
-						{
-							"ENG_name": "Preparation",
-							"name": "预备",
-							"type": "entries",
-							"page": 6,
-							"id": "00a",
-							"entries": [
-								"本书中的每个冒险都以一个帮助您准备和进行冒险的页面开始。它包括以下要素：",
-								{
-									"type": "list",
-									"style": "list-hang-notitle",
-									"items": [
-										{
-											"ENG_name": "Key Plot Points",
-											"name": "关键剧情节点",
-											"type": "item",
-											"entry": "冒险故事中关键要素的概要"
-										},
-										{
-											"ENG_name": "Preparation",
-											"name": "预备",
-											"type": "item",
-											"entry": "为开展冒险做准备所需的步骤，包括你可能需要的所有来自{@book 怪物图鉴|XMM}的怪物数据块列表"
-										},
-										{
-											"ENG_name": "Key NPCs",
-											"name": "关键NPCs",
-											"type": "item",
-											"entry": "一张总结了冒险中关键非玩家角色的表格\u2014\u2014包括他们的名字、角色、状态块和位置\u2014\u2014帮助你在游戏过程中追踪他们"
-										}
-									]
-								}
-							]
-						},
-						{
-							"ENG_name": "Player Assistance",
-							"name": "玩家助手",
-							"type": "entries",
-							"page": 6,
-							"id": "00b",
-							"entries": [
-								"如{@book 城主指南|XDMG}所述，您可以通过将某些任务委派给其他玩家来简化您作为地下城主（DM）的职责\u2014\u2014特别是当您第一次担任DM时尤为实用。游戏开始前，请与其他玩家共同分配以下任何或全部任务：",
-								{
-									"type": "list",
-									"style": "list-hang-notitle",
-									"items": [
-										{
-											"ENG_name": "Initiative Tracker",
-											"name": "先攻追踪者",
-											"type": "item",
-											"entry": "在战斗中，一名玩家负责记录角色与怪物的先攻顺序。"
-										},
-										{
-											"ENG_name": "Monster Wranglers",
-											"name": "怪物操手",
-											"type": "item",
-											"entry": "当角色与敌对怪物进入战斗时，由一到两名玩家使用{@book 怪物图鉴|XMM}中的这些数据卡来操控怪物。（两名玩家可共同承担此职责。）"
-										},
-										{
-											"ENG_name": "Rules Consultant",
-											"name": "规则顾问",
-											"type": "item",
-											"entry": "一名玩家根据需要查阅{@book 玩家手册|XPHB}或其他书籍中的规则。"
-										}
-									]
-								}
-							]
-						},
-						{
-							"ENG_name": "Adventures for One Character",
-							"name": "单人角色冒险",
-							"type": "entries",
-							"page": 6,
-							"id": "00c",
-							"entries": [
-								"尽管{@book 城主指南|XDMG}解释了如何根据队伍规模调整冒险，但其中三个冒险（在目录中标示）特别适合单人冒险者游玩。这些冒险都包含确保角色面临适当挑战的指示说明。",
-								"这些说明的核心是{@reward 孤勇者祝福|DrDe}，一种增强单人角色属性的超自然赠礼。",
-								{
-									"ENG_name": "Blessing of the Lone Champion",
-									"name": "孤勇者祝福",
-									"type": "statblock",
-									"page": 6,
-									"source": "DrDe",
-									"tag": "reward"
-								},
-								"祝福的持续时间为本次冒险的时长。"
-							]
-						},
-						{
-							"ENG_name": "A Draconic History",
-							"name": "龙族历史",
-							"type": "inset",
-							"page": 6,
-							"id": "00e",
-							"entries": [
-								"除了十个冒险故事外，本书还包含特别章节，展示了每种龙类的艺术画作，涵盖了《龙与地下城》近50年历史\u2014\u2014从1977年的《怪物手册》直至2025年发行的最新版本。过去五十年间，所有十种龙类的形象都经历了显著演变，但仔细观察这些画作仍能发现传承元素：从蓝龙的鼻角到银龙的冠冕，皆一脉相承。",
-								"艺术家托德·洛克伍德为2000年《龙与地下城》第三版的发布牵头对十种龙类进行了全面修订，其设计基于现实世界动物的解剖结构，并与早期设计保持了某些延续性。除少量变体外，这些设计为D&D的龙类确立了延续二十余年的标准。",
-								"为迎接2025年《{@book 怪物图鉴|XMM}》的发行，艺术指导乔什·赫尔曼在D&D进入第二个半世纪之际，主导了对所有巨龙形象的全面翻新。本次重新设计旨在通过外观突显每条巨龙的独特身份\u2014\u2014包括个性、偏好栖息地和战斗风格\u2014\u2014确保每种龙类的视觉辨识度得以彰显。",
-								"同样地，本书着重展示了以某一类巨龙为主题的冒险会如何与其他冒险体验截然不同。"
-							]
-						}
-					]
-				},
-				{
-					"ENG_name": "Adventures",
-					"name": "冒险",
-					"type": "section",
-					"entries": [
-						{
-							"type": "list",
-							"columns": 3,
-							"items": [
-								"{@area 日落时分的死神（1级）|00f|x}",
-								"{@adventure 面包师的捉襟见肘（3级）|DrDe-BD|1}",
-								"{@adventure 奥喀斯之命（4级）|DrDe-TWoO|1}",
-								"{@adventure 虚空唤谁而鸣（5级）|DrDe-FWtVC|1}",
-								"{@adventure 纳基凯尔之龙（7级）|DrDe-TDoN|1}",
-								"{@adventure 禁忌谷（9级）|DrDe-TFV|1}",
-								"{@adventure 风暴将临（10级）|DrDe-BtS|1}",
-								"{@adventure 夺命颤寒（11级）|DrDe-SD|1}",
-								"{@adventure 一枚铜币换一首歌（12级）|DrDe-ACfaS|1}",
-								"{@adventure 砂岩城之龙（12级）|DrDe-DotSC|1}"
-							]
-						}
-					],
-					"id": "063"
-				}
-			]
-		},
-		{
-			"ENG_name": "Death at Sunset",
-			"name": "日落时分的死神",
-			"type": "section",
-			"page": 12,
-			"id": "00f",
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"items": [
-						"{@i {@b An adventure for Level 1 characters.}}",
-						"{@i 该冒险的长度为一至两次团。}",
-						"{@i 它可以发生在任何任何森林密布的地区。}"
-					]
-				},
-				"如果你让玩家们以 2 级开卡，则跳过于红木林环中的集结并直接将玩家们移至龙巢入口处（区域 {@area R4|031|x}），从此处开始游戏。",
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "adventure/DrDe/002-01-001.chapter-one-splash.webp"
-					},
-					"credit": "Dominik Mayer",
-					"width": 1700,
-					"height": 2200
-				},
-				{
-					"ENG_name": "Key Plot Points",
-					"name": "关键剧情节点",
-					"type": "section",
-					"page": 13,
-					"id": "010",
-					"entries": [
-						"下列是本次冒险故事的关键信息：",
-						{
-							"type": "list",
-							"style": "list-hang-notitle",
-							"items": [
-								{
-									"ENG_name": "Redwood Watch",
-									"name": "红木哨地",
-									"type": "item",
-									"entry": "{@area 红木哨地|013|x}是一座建立于邪龙被消灭之后的村庄，两位来自此地的议会成员请求角色们调查附近的红木林环中发生的村民失踪事件\u2014\u2014以及在这里的树木间蔓延的神秘枯萎现象。"
-								},
-								{
-									"ENG_name": "Unnatural Corruption",
-									"name": "超凡腐化",
-									"type": "item",
-									"entry": "角色们会发现这种枯萎绝非自然现象。他们随后会从林环的住民（例如失踪的议会成员）口中得知，一条新的龙正潜伏在林中。"
-								},
-								{
-									"ENG_name": "Green Dragon Wyrmling",
-									"name": "绿龙雏龙",
-									"type": "item",
-									"entry": "角色们会发现这种腐化的源头是一条绿龙雏龙\u2014\u2014自那条被斩杀的邪龙遗留的龙蛋孵化诞生。角色们必须在这条雏龙成长得更加强大、能够威胁村庄之前突入龙巢，将其击败。"
-								}
-							]
-						}
-					]
-				},
-				{
-					"ENG_name": "Preparation",
-					"name": "预备",
-					"type": "section",
-					"page": 13,
-					"id": "011",
-					"entries": [
-						"在开始冒险之前，请按照以下步骤进行准备：",
-						{
-							"type": "list",
-							"style": "list-hang-notitle",
-							"items": [
-								{
-									"ENG_name": "Step 1",
-									"name": "第一步",
-									"type": "item",
-									"entry": "阅读\"{@area 冒险背景|012|x}\"一段（包括\"{@area 红木哨地|013|x}\"以及\"{@area 议会|014|x}\"）。"
-								},
-								{
-									"ENG_name": "Step 2",
-									"name": "第二步",
-									"type": "item",
-									"entry": "熟读下文关键NPC表中的内容。角色们将会在冒险中与这些人物互动。"
-								},
-								{
-									"ENG_name": "Step 3",
-									"name": "第三步",
-									"type": "item",
-									"entry": "熟读\"{@area 村间绿地|01e|x}\"一段中的{@adventure 村间绿地流言|DrDe-DaS|1|村间绿地流言}表中的内容。角色们每和一个新的村民互动，就应当知晓一条新的流言，直到他们了解了表中所有流言内容。"
-								},
-								{
-									"ENG_name": "Step 4",
-									"name": "第四步",
-									"type": "item",
-									"entry": "在《{@book 怪物图鉴|XMM}》或D&DBeyond中标记以下的数据卡。"
-								}
-							]
-						},
-						{
-							"type": "list",
-							"columns": 2,
-							"items": [
-								"{@creature 枯枝怪|XMM|枯枝怪}",
-								"{@creature 枯藤怪|XMM|枯藤怪}",
-								"{@creature 平民|XMM}",
-								"{@creature 树精|XMM}",
-								"{@creature 绿龙雏龙|XMM}",
-								"{@creature 警卫|XMM}",
-								"{@creature 泥魔蝠|XMM|泥魔蝠}",
-								"{@creature 贵族|XMM}",
-								"{@creature 侍祭僧侣|XMM}",
-								"{@creature 斥候|XMM}",
-								"{@creature 恶咒蛇人（1 型）|XMM}",
-								"{@creature 丧尸|XMM}",
-								"{@b 动物}:",
-								{
-									"type": "list",
-									"items": [
-										"{@creature 蟒蛇|XMM}",
-										"{@creature 巨蜈蚣|XMM}",
-										"{@creature 巨毒蛇|XMM}",
-										"{@creature 獒犬|XMM}",
-										"{@creature 昆虫集群|XMM}",
-										"{@creature 毒蛇|XMM}"
-									],
-									"style": "list-no-bullets"
-								}
-							]
-						},
-						{
-							"ENG_name": "Constrictor Snake",
-							"name": "蟒蛇",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Constrictor Snake",
-							"name": "蟒蛇",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Giant Centipede",
-							"name": "巨蜈蚣",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Giant Centipede",
-							"name": "巨蜈蚣",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Giant Venomous Snake",
-							"name": "巨毒蛇",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Giant Venomous Snake",
-							"name": "巨毒蛇",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Mastiff",
-							"name": "獒犬",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Mastiff",
-							"name": "獒犬",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Swarm of Insects",
-							"name": "昆虫集群",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Swarm of Insects",
-							"name": "昆虫集群",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Venomous Snake",
-							"name": "毒蛇",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Venomous Snake",
-							"name": "毒蛇",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"type": "table",
-							"caption": "关键NPCs",
-							"page": 13,
-							"colLabels": [
-								"名称",
-								"职能",
-								"数据卡",
-								"位置"
-							],
-							"colStyles": [
-								"col-3-5",
-								"col-3-5",
-								"col-2-5",
-								"col-2-5"
-							],
-							"rows": [
-								[
-									"{@area 阿明·风语|016|x}",
-									"失踪的精灵议会成员",
-									"{@creature 斥候|XMM}（中型）",
-									"{@area R4|031|x}"
-								],
-								[
-									"达灵、颉芮、莱琳妮以及蕾娜",
-									"被迫为小龙服务的精灵",
-									"{@creature 警卫|XMM}（中型）",
-									"{@area L1|047|x}"
-								],
-								[
-									"法苟斯·玉角",
-									"精灵村大厨",
-									"{@creature 平民|XMM} (中型)",
-									"\"{@area 村间绿地|01e|x}\""
-								],
-								[
-									"{@area 殷赫玛拉·金苔|017|x}",
-									"精灵议会成员",
-									"{@creature 侍祭僧侣|XMM}（中型）",
-									"\"{@area 英雄应召而来|019|x}\""
-								],
-								[
-									"凯能",
-									"红木林环的守护者",
-									"{@creature 树精|XMM}",
-									"{@area R3|02e|x}"
-								],
-								[
-									"梅锐蕾莎",
-									"自愿为夕临献身的仆从",
-									"{@creature 恶咒蛇人（1 型）|XMM}",
-									"{@area L3|050|x}"
-								],
-								[
-									"{@area 塞勒纳·慧林|018|x}",
-									"精灵议会成员",
-									"{@creature 贵族|XMM}（中型）",
-									"\"{@area 英雄应召而来|019|x}\""
-								],
-								[
-									"天晴·钱包光光",
-									"半身人旅行商人",
-									"{@creature 平民|XMM} (小型)",
-									"\"{@area 村间绿地|01e|x}\""
-								],
-								[
-									"夕临",
-									"夕殁之子",
-									"{@creature 绿龙雏龙|XMM}",
-									"{@area L6|057|x}"
-								]
-							]
-						}
-					]
-				},
-				{
-					"ENG_name": "Adventure Background",
-					"name": "冒险背景",
-					"type": "section",
-					"page": 14,
-					"id": "012",
 					"entries": [
 						{
 							"type": "image",
 							"href": {
 								"type": "internal",
-								"path": "adventure/DrDe/003-01-002.elven-council-members.webp"
+								"path": "adventure/DrDe/000-dragon-delves-cover.webp"
 							},
-							"credit": "Dominik Mayer",
-							"width": 1700,
-							"height": 1169
+							"width": 1701,
+							"height": 2242
 						},
-						"数个世纪以前，六支彼此对立的精灵家族冰释前嫌，言归于好。每支家族都各自种下了一株红木幼苗，结成一道圆环，作为对彼此之间新生的和谐与友爱的纪念。几十年过去，红木长得又高又大，却有一条远古绿龙于其根系间掘出巢穴，荼毒着红木林环，以及周边的整片森林。精灵们将这条龙称为{@area 夕殁|012|x}，即日落时分的死神\u2014\u2014黄昏将至，则邪龙降临。该龙十分满意于此，乐于扮演这日落时分的死神，甚至会在倾泻暴力之前宣告这一名号。",
-						"百年之前，一位名叫艾瑟樊的精灵武者和她的盟友斩杀了邪龙夕殁。艾瑟樊本人亦殒命于此次作战之中。幸存的精灵搬离了{@area 红木林环|023|x}，只留下几位守卫监视，以及一座名叫{@area 红木哨地|013|x}的小据点。",
-						"就在几个月前，已发展为一座村镇的{@area 红木哨地|013|x}中的住民注意到，森林中的树木正在遭受病害。上个月，五名村民在林环中失踪。最先失踪的是议会成员{@area 阿明·风语|016|x}。四位村民前寻找他，但却无人归来。恐惧与困惑在村庄中蔓延，议会因此寻找能够查清真相的英雄。",
-						"村民们有所不知的是，在夕殁的巢穴中，残余的龙蛋中悄然孵化出了一条绿龙雏龙。雏龙的存在腐化了森林，并将其它邪恶生物诱导至附近；正是他捕获了那些失踪的村民，迫使其为自己服务。角色们必须查清红木林环之下的腐化，并打败这条雏龙\u2014\u2014其名为夕临，即日落已然临近。",
 						{
-							"ENG_name": "Redwood Watch",
-							"name": "红木哨地",
-							"type": "entries",
-							"page": 14,
-							"id": "013",
+							"ENG_name": "Dragons in Dungeons",
+							"name": "地下城中的龙",
+							"type": "section",
+							"id": "001",
+							"page": 4,
 							"entries": [
-								"红木哨地是一座约有一百人生活的村庄，村民们大多是猎人、陷阱师、伐木工、以及匠人。住在这里的人大多都是昔日那六支家族的精灵后裔，但这座村子的祥和氛围与优美环境亦吸引了一些人类、兽人，甚至是歌利亚与龙裔前来此处。",
-								"村庄的建筑多为使用木材与树叶建造的独栋小屋，以及用作商店与居所的大型树洞。一些勇敢的住民在林间交织的枝桠上搭建居所，从那里可以俯瞰着林冠之下的地面。",
-								"红木哨地汇聚了多地的文化，所以所有村民都会说通用语。村民之间关系密切；它们会将彼此视为同属一个大家族的家人。"
+								"没有什么比集结一群英雄在神秘地下城中对抗强大巨龙更能体现《龙与地下城》的精髓了。无论是50多年前首批踏入幽暗地城的冒险者，还是如今正准备开始第一次冒险的新手玩家，都将被这些经典元素跨越时空的联系在一起。",
+								"{@i 巨龙迷城}是对这一共同传统的颂扬。本书中的十个冒险故事均以盘踞巢穴的龙为核心，专为1至12级角色设计，提供多样挑战\u2014\u2014从击败邪恶之龙到与善良之龙合作，再到应对更复杂的道德困境。作为巨龙巢穴的地城类型丰富多样，既有洞穴群落，也有城市废墟及其他场景。",
+								"地城藏龙处，冒险永不息！"
 							]
 						},
 						{
-							"ENG_name": "The Council",
-							"name": "议会",
-							"type": "entries",
-							"page": 14,
-							"id": "014",
+							"ENG_name": "Using This Book",
+							"name": "使用本书",
+							"type": "section",
+							"id": "002",
+							"page": 4,
 							"entries": [
-								"阿明和另外两名精灵议会成员领导着红木哨地\u2014\u2014不过如今阿明失踪了。这些议会成员皆是曾在一个世纪前直面夕殁的人，直至今日众人依旧铭记其英勇；如果角色们向村民询问起这些议会成员，村民们便会给出以下信息：",
+								"类似 {@i 巨龙迷城} 这样的冒险集，用途十分广泛，能满足你带团的各种需求：可作为单次冒险，也可作为长战役中的\"补充内容\"，或是形成系列战役，让角色从1级成长至12级的巅峰结局。",
+								"这些冒险提供了最少备团准备工作的说明（请参见本介绍后文的{@area 运行冒险|009|x}）。",
 								{
+									"ENG_name": "One-Shot Adventure",
+									"name": "单次冒险",
 									"type": "entries",
-									"id": "015",
+									"id": "003",
+									"page": 4,
 									"entries": [
+										"也许你是通常会以玩家的身份参与一场正在运行的战役，但你想尝试成为一个地下城主。也许你试图组建一个新的队伍，需要看看玩家们在你开始主持一个完整战役前是如何相处的。也许通常在某个时候带你们游玩的那个主持人生病了或者有了别的安排，但其他玩家都做好了跑团的准备。或者你的队伍可能需要在当前的战役中休息一下或者找个消遣。在提到的这些任何一种情况下，你都可以从本书中选择一个冒险并且运作它。"
+									]
+								},
+								{
+									"ENG_name": "In an Ongoing Campaign",
+									"name": "在长期战役中",
+									"type": "entries",
+									"id": "004",
+									"page": 4,
+									"entries": [
+										"也许你的玩家角色知道他们需要做什么来挫败邪恶 BOSS 的计划，但他们还不够强大，无法实现他们的目标。也许他们刚刚在战役中完成了一个重要的剧情节点，你想让在沉浸于下一幕无法预测的情节之前，让他们舒缓一下节奏。或者他们正在环游世界的旅程中，而你正在寻找一些东西让路途变得有趣\u2014\u2014用一场道中遭遇的简短冒险。或者你还没有为下一场冒险做好准备，所以你需要一条支线！在提到的这些任何一种情况下，你都可以从本书中选择一个冒险作为\"填充章节\"或者分支任务。",
 										{
-											"ENG_name": "Armin Whisperwind",
-											"name": "阿明·风语",
-											"type": "entries",
-											"page": 15,
-											"id": "016",
-											"entries": [
-												"阿明（中型{@creature 斥候|XMM}）在一个月前离开红木哨地，前去调查林地中的腐化。然而他至今未归。村民们担心他遭遇了什么可怕的事情，他们说，这位娴熟的精灵追迹者绝不会抛下红木哨地独自逃走。（阿明此时正在雏龙的胁迫下守卫着区域{@area R4|031|x}。）"
-											]
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "adventure/DrDe/001-00-001.intro-splash.webp"
+											},
+											"width": 850,
+											"height": 2286
 										},
+										"当角色的等级合适你想运作的冒险时，只需要描述冒险者们是如何在当前的探险地点结束他们的剧情。而本书的每个冒险开场都带有一个简短的场景描述，例如\"一个临近森林的村庄。\"除了这些基本细节以外，你还可以随意更改这场冒险发生的地理位置以适配你的战役。",
+										"但如果你有时间准备，可以将正在进行的冒险融入你战役的主题和威胁中。你可以修改冒险中人物和地点的名称，使其更契合你的世界；将冒险中的反派与你战役中重要的组织和事件联系起来；并在龙的宝藏中埋下与你战役主题相关的线索。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Creating a Campaign",
+							"name": "创作战役",
+							"type": "section",
+							"id": "005",
+							"page": 4,
+							"entries": [
+								"这些冒险可以串联成一个完整的以龙为主题的战役。只需引导玩家按书中顺序进行冒险，并在每段冒险结束时基于故事情节给予等级提升，确保他们的角色能应对接下来的挑战。(在最终冒险前无需等级提升。)你也可以使用下列叙事框架将这些冒险彼此联系起来。",
+								{
+									"ENG_name": "Option 1: Mysterious Patron",
+									"name": "选项1：神秘庇护者",
+									"type": "entries",
+									"id": "006",
+									"page": 4,
+									"entries": [
+										"让一位真实身份略显神秘的和善庇护者在新晋冒险者生涯早期就与之结交，并依次派他们去执行每次冒险任务。这位庇护者可能是一位富有魅力的年轻修士、一位和蔼的导师、一个顽皮的小家伙，或是一位糊涂的老者，或许身边还伴随着七只金丝雀或眩目的黄色蝴蝶\u2014\u2014它们实则是上古金龙所化，龙神巴哈姆特的同伴，而巴哈姆特正是庇护者的真实身份。",
+										"或许是预见到他们注定成为强大的英雄，巴哈姆特将这些冒险者置于他象征性的羽翼之下，派遣他们去应对世界各地与龙相关的各类事务，无论大小。当某次冒险最初看似与龙无关（例如\"{@adventure 奥喀斯之命|DrDe-TWoO|1}\"第3章）结果却与龙息息相关时，这位守护者可能会佯装惊讶，但这当然正是巴哈姆特派人物前去调查的原因。",
+										"你可直接按文本使用每个冒险，由角色的赞助者将他们引导至冒险引子的大致方向，且不剧透后续冒险中的任何惊喜。亦可选择让赞助者在早期就向角色透露秘密，告知他们龙将会是他们冒险的特别焦点，并沿途调整部分冒险引子。"
+									]
+								},
+								{
+									"ENG_name": "Option 2: Brazen Egg",
+									"name": "选项2：赤铜之卵",
+									"type": "entries",
+									"id": "007",
+									"page": 5,
+									"entries": [
+										"从第10章的引言遭遇战\"{@adventure 砂岩城之龙|DrDe-DotSC|1}\"开始战役，以艾德米尔将黄铜之卵托付给角色们作为结束。不过艾德米尔的指示有所不同：她解释说这颗卵必须被\"浸泡\"在十条龙的财宝中（每种色彩龙和金属龙各一条）才能激活其力量。她还暗示这颗卵会引导角色们找到合适的龙巢。事实上，任何在卵15英尺范围内入睡的角色都会做生动的梦，引领他们前往下一个冒险的起点。",
+										"要从龙之宝藏中汲取力量，龙蛋必须在宝藏中待上8小时，被硬币覆盖并被其他物品环绕。然而，一旦被赋能的龙蛋被带入安斯拉德斯的藏宝室（{@adventure 区域H16|DrDe-DotSC|1|H16: 宝藏}，参见第10章），它将达到其全部潜力并开始裂开，如该冒险所述。"
+									]
+								},
+								{
+									"ENG_name": "Option 3: Hoard Magic Items",
+									"name": "选项3：囤积魔法物品",
+									"type": "entries",
+									"id": "008",
+									"page": 5,
+									"entries": [
+										"若你拥有{@book 费资本的巨龙宝库|FTD|4}，书中描述的魔法物品收藏可作为驱使角色寻找更强大、更多样龙类的动力。在前三个冒险中获得下列额外物品奖励：在「{@area 日落时分的死神|00f|x}」中获得{@item 覆鳞饰物|FTD}，在「{@adventure 面包师的捉襟见肘|DrDe-BD|1}」中获得{@item 龙器|FTD}，在「{@adventure 奥喀斯之命|DrDe-TWoO|1}」中获得{@item 龙怒武器|FTD}与{@item 龙触法器|FTD}。所有物品在初次获取时为休眠状态，但在后续冒险中可通过浸入龙类宝藏唤醒。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Running the Adventures",
+							"name": "运行冒险",
+							"type": "section",
+							"id": "009",
+							"page": 6,
+							"entries": [
+								"要运行这些冒险模组，你需要第五版的核心规则书：{@book 玩家手册|XPHB}、{@book 城主指南|XDMG}和{@book 怪物图鉴|XMM}。冒险中提到的法术和装备描述参见{@book 玩家手册|XPHB}，魔法物品详情参阅{@book 城主指南|XDMG}，怪物数据则出现在{@book 怪物图鉴|XMM}。",
+								"本书目录总结了该合集所收录的冒险。每个冒险针对四至六名特定等级的角色设计，但如{@book 城主指南|XDMG}所述，你可以通过调整遭遇中敌人的数量或为小型队伍补充额外资源来适配更大或更小的团队。这些冒险均可发生于你选择的任何世界，只要该地点拥有各冒险开头列出的基本要素即可。",
+								{
+									"ENG_name": "Preparation",
+									"name": "预备",
+									"type": "entries",
+									"id": "00a",
+									"page": 6,
+									"entries": [
+										"本书中的每个冒险都以一个帮助您准备和进行冒险的页面开始。它包括以下要素：",
 										{
-											"ENG_name": "Gwenhumara Goldmoss",
-											"name": "殷赫玛拉·金苔",
-											"type": "entries",
-											"page": 15,
-											"id": "017",
-											"entries": [
-												"精灵治疗师殷赫玛拉（中型{@creature 侍祭僧侣|XMM}）曾在那场对抗夕殁的战役结束后照料伤员。最近她做起了关于巨龙归来的噩梦；她担心那条龙的魂魄仍徘徊在红木林环的根系之间。殷赫玛拉乐于为受伤的角色提供疗愈，不过她不敢独自离开村落。"
-											]
-										},
-										{
-											"ENG_name": "Selenar Woodwise",
-											"name": "塞勒纳·慧林",
-											"type": "entries",
-											"page": 15,
-											"id": "018",
-											"entries": [
-												"塞勒纳（中型{@creature 贵族|XMM}）是昔日在夕殁的巢穴中见证了这条远古巨龙之死的精灵武者之一。他错误地坚信森林的腐化与这死去的巨龙无关。塞勒纳十分敬重自然，并希望角色们能够辨明森林所面临的威胁究竟为何。"
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"ENG_name": "Key Plot Points",
+													"name": "关键剧情节点",
+													"type": "item",
+													"entry": "冒险故事中关键要素的概要"
+												},
+												{
+													"ENG_name": "Preparation",
+													"name": "预备",
+													"type": "item",
+													"entry": "为开展冒险做准备所需的步骤，包括你可能需要的所有来自{@book 怪物图鉴|XMM}的怪物数据块列表"
+												},
+												{
+													"ENG_name": "Key NPCs",
+													"name": "关键NPCs",
+													"type": "item",
+													"entry": "一张总结了冒险中关键非玩家角色的表格\u2014\u2014包括他们的名字、角色、状态块和位置\u2014\u2014帮助你在游戏过程中追踪他们"
+												}
 											]
 										}
+									]
+								},
+								{
+									"ENG_name": "Player Assistance",
+									"name": "玩家助手",
+									"type": "entries",
+									"id": "00b",
+									"page": 6,
+									"entries": [
+										"如{@book 城主指南|XDMG}所述，您可以通过将某些任务委派给其他玩家来简化您作为地下城主（DM）的职责\u2014\u2014特别是当您第一次担任DM时尤为实用。游戏开始前，请与其他玩家共同分配以下任何或全部任务：",
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"ENG_name": "Initiative Tracker",
+													"name": "先攻追踪者",
+													"type": "item",
+													"entry": "在战斗中，一名玩家负责记录角色与怪物的先攻顺序。"
+												},
+												{
+													"ENG_name": "Monster Wranglers",
+													"name": "怪物操手",
+													"type": "item",
+													"entry": "当角色与敌对怪物进入战斗时，由一到两名玩家使用{@book 怪物图鉴|XMM}中的这些数据卡来操控怪物。（两名玩家可共同承担此职责。）"
+												},
+												{
+													"ENG_name": "Rules Consultant",
+													"name": "规则顾问",
+													"type": "item",
+													"entry": "一名玩家根据需要查阅{@book 玩家手册|XPHB}或其他书籍中的规则。"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Adventures for One Character",
+									"name": "单人角色冒险",
+									"type": "entries",
+									"id": "00c",
+									"page": 6,
+									"entries": [
+										"尽管{@book 城主指南|XDMG}解释了如何根据队伍规模调整冒险，但其中三个冒险（在目录中标示）特别适合单人冒险者游玩。这些冒险都包含确保角色面临适当挑战的指示说明。",
+										"这些说明的核心是{@reward 孤勇者祝福|DrDe}，一种增强单人角色属性的超自然赠礼。",
+										{
+											"ENG_name": "Blessing of the Lone Champion",
+											"name": "孤勇者祝福",
+											"type": "statblock",
+											"tag": "reward",
+											"source": "DrDe",
+											"page": 6
+										},
+										"祝福的持续时间为本次冒险的时长。"
+									]
+								},
+								{
+									"ENG_name": "A Draconic History",
+									"name": "龙族历史",
+									"type": "inset",
+									"id": "00e",
+									"page": 6,
+									"entries": [
+										"除了十个冒险故事外，本书还包含特别章节，展示了每种龙类的艺术画作，涵盖了《龙与地下城》近50年历史\u2014\u2014从1977年的《怪物手册》直至2025年发行的最新版本。过去五十年间，所有十种龙类的形象都经历了显著演变，但仔细观察这些画作仍能发现传承元素：从蓝龙的鼻角到银龙的冠冕，皆一脉相承。",
+										"艺术家托德·洛克伍德为2000年《龙与地下城》第三版的发布牵头对十种龙类进行了全面修订，其设计基于现实世界动物的解剖结构，并与早期设计保持了某些延续性。除少量变体外，这些设计为D&D的龙类确立了延续二十余年的标准。",
+										"为迎接2025年《{@book 怪物图鉴|XMM}》的发行，艺术指导乔什·赫尔曼在D&D进入第二个半世纪之际，主导了对所有巨龙形象的全面翻新。本次重新设计旨在通过外观突显每条巨龙的独特身份\u2014\u2014包括个性、偏好栖息地和战斗风格\u2014\u2014确保每种龙类的视觉辨识度得以彰显。",
+										"同样地，本书着重展示了以某一类巨龙为主题的冒险会如何与其他冒险体验截然不同。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Adventures",
+							"name": "冒险",
+							"type": "section",
+							"id": "063",
+							"entries": [
+								{
+									"type": "list",
+									"columns": 3,
+									"items": [
+										"{@area 日落时分的死神（1级）|00f|x}",
+										"{@adventure 面包师的捉襟见肘（3级）|DrDe-BD|1}",
+										"{@adventure 奥喀斯之命（4级）|DrDe-TWoO|1}",
+										"{@adventure 虚空唤谁而鸣（5级）|DrDe-FWtVC|1}",
+										"{@adventure 纳基凯尔之龙（7级）|DrDe-TDoN|1}",
+										"{@adventure 禁忌谷（9级）|DrDe-TFV|1}",
+										"{@adventure 风暴将临（10级）|DrDe-BtS|1}",
+										"{@adventure 夺命颤寒（11级）|DrDe-SD|1}",
+										"{@adventure 一枚铜币换一首歌（12级）|DrDe-ACfaS|1}",
+										"{@adventure 砂岩城之龙（12级）|DrDe-DotSC|1}"
 									]
 								}
 							]
@@ -658,1464 +256,3535 @@
 					]
 				},
 				{
-					"ENG_name": "A Call for Heroes",
-					"name": "英雄应召而来",
+					"ENG_name": "Death at Sunset",
+					"name": "日落时分的死神",
 					"type": "section",
-					"page": 15,
-					"id": "019",
+					"id": "00f",
+					"page": 12,
 					"entries": [
-						"角色们在冒险开始前便已知晓红木哨地的基本历史，以及其陷入了有村民失踪的困境。当角色们进入村内时，议会成员塞勒纳·慧林和殷赫玛拉·金苔便向这些英雄们走来，并为其提供关于红木哨地所面临的困境的更多信息。",
-						"阅读或展示以下内容：",
 						{
-							"type": "insetReadaloud",
-							"page": 15,
-							"id": "01a",
-							"entries": [
-								"站在你们面前的是两位带有领导者气质的木精灵。这两人中，一位是名叫塞勒纳·慧林的男子，身着钢质胸甲，披着飘扬的绿色斗篷；另一位则是名为殷赫玛拉·金苔的女子，穿着一件轻柔的苍翠长袍。\"感谢诸位，愿意回应红木哨地的请求。\"殷赫玛拉说到。\"邪物正潜伏在红木林环之中。鉴于我们与巨龙\"夕殁\"的过往经历，你们应该能够理解我等的担忧\u2014\u2014尤其是村民正在逐渐失踪的当下。我等向你们发出请求，请为红木哨地寻回失踪的村民、弄清楚是什么导致了森林的枯萎\u2014\u2014并根除你们发现的任何威胁。\"塞勒纳在此时插话：\"我确信，森林里绝不可能有另外一条龙，但现在发生的事情非常不对劲。\"殷赫玛拉将手搭在塞勒纳的肩膀上以示安慰。"
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								"{@i {@b An adventure for Level 1 characters.}}",
+								"{@i 该冒险的长度为一至两次团。}",
+								"{@i 它可以发生在任何任何森林密布的地区。}"
 							]
 						},
-						"这两名精灵会尽其所能回答任何问题。",
-						"议会成员并不富裕，无法提供报酬，不过他们欢迎角色们自行保留其在森林中找到的任何宝物。此外，他们还会为角色们提供一间住宿用的树洞，并指出角色们该去哪找{@area 法苟斯的小餐馆|01f|x}。",
+						"如果你让玩家们以 2 级开卡，则跳过于红木林环中的集结并直接将玩家们移至龙巢入口处（区域 {@area R4|031|x}），从此处开始游戏。",
 						{
-							"ENG_name": "Gathering Samples",
-							"name": "收集样本",
-							"type": "entries",
-							"page": 15,
-							"id": "01b",
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "adventure/DrDe/002-01-001.chapter-one-splash.webp"
+							},
+							"width": 1700,
+							"height": 2200,
+							"credit": "Dominik Mayer"
+						},
+						{
+							"ENG_name": "Key Plot Points",
+							"name": "关键剧情节点",
+							"type": "section",
+							"id": "010",
+							"page": 13,
 							"entries": [
-								"在这两位精灵们回答完角色们的各种疑惑后，殷赫玛拉会提出以下请求：",
+								"下列是本次冒险故事的关键信息：",
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"ENG_name": "Redwood Watch",
+											"name": "红木哨地",
+											"type": "item",
+											"entry": "{@area 红木哨地|013|x}是一座建立于邪龙被消灭之后的村庄，两位来自此地的议会成员请求角色们调查附近的红木林环中发生的村民失踪事件\u2014\u2014以及在这里的树木间蔓延的神秘枯萎现象。"
+										},
+										{
+											"ENG_name": "Unnatural Corruption",
+											"name": "超凡腐化",
+											"type": "item",
+											"entry": "角色们会发现这种枯萎绝非自然现象。他们随后会从林环的住民（例如失踪的议会成员）口中得知，一条新的龙正潜伏在林中。"
+										},
+										{
+											"ENG_name": "Green Dragon Wyrmling",
+											"name": "绿龙雏龙",
+											"type": "item",
+											"entry": "角色们会发现这种腐化的源头是一条绿龙雏龙\u2014\u2014自那条被斩杀的邪龙遗留的龙蛋孵化诞生。角色们必须在这条雏龙成长得更加强大、能够威胁村庄之前突入龙巢，将其击败。"
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Preparation",
+							"name": "预备",
+							"type": "section",
+							"id": "011",
+							"page": 13,
+							"entries": [
+								"在开始冒险之前，请按照以下步骤进行准备：",
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"ENG_name": "Step 1",
+											"name": "第一步",
+											"type": "item",
+											"entry": "阅读\"{@area 冒险背景|012|x}\"一段（包括\"{@area 红木哨地|013|x}\"以及\"{@area 议会|014|x}\"）。"
+										},
+										{
+											"ENG_name": "Step 2",
+											"name": "第二步",
+											"type": "item",
+											"entry": "熟读下文关键NPC表中的内容。角色们将会在冒险中与这些人物互动。"
+										},
+										{
+											"ENG_name": "Step 3",
+											"name": "第三步",
+											"type": "item",
+											"entry": "熟读\"{@area 村间绿地|01e|x}\"一段中的{@adventure 村间绿地流言|DrDe-DaS|1|村间绿地流言}表中的内容。角色们每和一个新的村民互动，就应当知晓一条新的流言，直到他们了解了表中所有流言内容。"
+										},
+										{
+											"ENG_name": "Step 4",
+											"name": "第四步",
+											"type": "item",
+											"entry": "在《{@book 怪物图鉴|XMM}》或D&DBeyond中标记以下的数据卡。"
+										}
+									]
+								},
+								{
+									"type": "list",
+									"columns": 2,
+									"items": [
+										"{@creature 枯枝怪|XMM|枯枝怪}",
+										"{@creature 枯藤怪|XMM|枯藤怪}",
+										"{@creature 平民|XMM}",
+										"{@creature 树精|XMM}",
+										"{@creature 绿龙雏龙|XMM}",
+										"{@creature 警卫|XMM}",
+										"{@creature 泥魔蝠|XMM|泥魔蝠}",
+										"{@creature 贵族|XMM}",
+										"{@creature 侍祭僧侣|XMM}",
+										"{@creature 斥候|XMM}",
+										"{@creature 恶咒蛇人（1 型）|XMM}",
+										"{@creature 丧尸|XMM}",
+										"{@b 动物}:",
+										{
+											"type": "list",
+											"style": "list-no-bullets",
+											"items": [
+												"{@creature 蟒蛇|XMM}",
+												"{@creature 巨蜈蚣|XMM}",
+												"{@creature 巨毒蛇|XMM}",
+												"{@creature 獒犬|XMM}",
+												"{@creature 昆虫集群|XMM}",
+												"{@creature 毒蛇|XMM}"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Constrictor Snake",
+									"name": "蟒蛇",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Constrictor Snake",
+									"name": "蟒蛇",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Giant Centipede",
+									"name": "巨蜈蚣",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Giant Centipede",
+									"name": "巨蜈蚣",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Giant Venomous Snake",
+									"name": "巨毒蛇",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Giant Venomous Snake",
+									"name": "巨毒蛇",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Mastiff",
+									"name": "獒犬",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Mastiff",
+									"name": "獒犬",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Swarm of Insects",
+									"name": "昆虫集群",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Swarm of Insects",
+									"name": "昆虫集群",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Venomous Snake",
+									"name": "毒蛇",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Venomous Snake",
+									"name": "毒蛇",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
+								},
+								{
+									"type": "table",
+									"caption": "关键NPCs",
+									"page": 13,
+									"colLabels": [
+										"名称",
+										"职能",
+										"数据卡",
+										"位置"
+									],
+									"colStyles": [
+										"col-3-5",
+										"col-3-5",
+										"col-2-5",
+										"col-2-5"
+									],
+									"rows": [
+										[
+											"{@area 阿明·风语|016|x}",
+											"失踪的精灵议会成员",
+											"{@creature 斥候|XMM}（中型）",
+											"{@area R4|031|x}"
+										],
+										[
+											"达灵、颉芮、莱琳妮以及蕾娜",
+											"被迫为小龙服务的精灵",
+											"{@creature 警卫|XMM}（中型）",
+											"{@area L1|047|x}"
+										],
+										[
+											"法苟斯·玉角",
+											"精灵村大厨",
+											"{@creature 平民|XMM} (中型)",
+											"\"{@area 村间绿地|01e|x}\""
+										],
+										[
+											"{@area 殷赫玛拉·金苔|017|x}",
+											"精灵议会成员",
+											"{@creature 侍祭僧侣|XMM}（中型）",
+											"\"{@area 英雄应召而来|019|x}\""
+										],
+										[
+											"凯能",
+											"红木林环的守护者",
+											"{@creature 树精|XMM}",
+											"{@area R3|02e|x}"
+										],
+										[
+											"梅锐蕾莎",
+											"自愿为夕临献身的仆从",
+											"{@creature 恶咒蛇人（1 型）|XMM}",
+											"{@area L3|050|x}"
+										],
+										[
+											"{@area 塞勒纳·慧林|018|x}",
+											"精灵议会成员",
+											"{@creature 贵族|XMM}（中型）",
+											"\"{@area 英雄应召而来|019|x}\""
+										],
+										[
+											"天晴·钱包光光",
+											"半身人旅行商人",
+											"{@creature 平民|XMM} (小型)",
+											"\"{@area 村间绿地|01e|x}\""
+										],
+										[
+											"夕临",
+											"夕殁之子",
+											"{@creature 绿龙雏龙|XMM}",
+											"{@area L6|057|x}"
+										]
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Adventure Background",
+							"name": "冒险背景",
+							"type": "section",
+							"id": "012",
+							"page": 14,
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/003-01-002.elven-council-members.webp"
+									},
+									"width": 1700,
+									"height": 1169,
+									"credit": "Dominik Mayer"
+								},
+								"数个世纪以前，六支彼此对立的精灵家族冰释前嫌，言归于好。每支家族都各自种下了一株红木幼苗，结成一道圆环，作为对彼此之间新生的和谐与友爱的纪念。几十年过去，红木长得又高又大，却有一条远古绿龙于其根系间掘出巢穴，荼毒着红木林环，以及周边的整片森林。精灵们将这条龙称为{@area 夕殁|012|x}，即日落时分的死神\u2014\u2014黄昏将至，则邪龙降临。该龙十分满意于此，乐于扮演这日落时分的死神，甚至会在倾泻暴力之前宣告这一名号。",
+								"百年之前，一位名叫艾瑟樊的精灵武者和她的盟友斩杀了邪龙夕殁。艾瑟樊本人亦殒命于此次作战之中。幸存的精灵搬离了{@area 红木林环|023|x}，只留下几位守卫监视，以及一座名叫{@area 红木哨地|013|x}的小据点。",
+								"就在几个月前，已发展为一座村镇的{@area 红木哨地|013|x}中的住民注意到，森林中的树木正在遭受病害。上个月，五名村民在林环中失踪。最先失踪的是议会成员{@area 阿明·风语|016|x}。四位村民前寻找他，但却无人归来。恐惧与困惑在村庄中蔓延，议会因此寻找能够查清真相的英雄。",
+								"村民们有所不知的是，在夕殁的巢穴中，残余的龙蛋中悄然孵化出了一条绿龙雏龙。雏龙的存在腐化了森林，并将其它邪恶生物诱导至附近；正是他捕获了那些失踪的村民，迫使其为自己服务。角色们必须查清红木林环之下的腐化，并打败这条雏龙\u2014\u2014其名为夕临，即日落已然临近。",
+								{
+									"ENG_name": "Redwood Watch",
+									"name": "红木哨地",
+									"type": "entries",
+									"id": "013",
+									"page": 14,
+									"entries": [
+										"红木哨地是一座约有一百人生活的村庄，村民们大多是猎人、陷阱师、伐木工、以及匠人。住在这里的人大多都是昔日那六支家族的精灵后裔，但这座村子的祥和氛围与优美环境亦吸引了一些人类、兽人，甚至是歌利亚与龙裔前来此处。",
+										"村庄的建筑多为使用木材与树叶建造的独栋小屋，以及用作商店与居所的大型树洞。一些勇敢的住民在林间交织的枝桠上搭建居所，从那里可以俯瞰着林冠之下的地面。",
+										"红木哨地汇聚了多地的文化，所以所有村民都会说通用语。村民之间关系密切；它们会将彼此视为同属一个大家族的家人。"
+									]
+								},
+								{
+									"ENG_name": "The Council",
+									"name": "议会",
+									"type": "entries",
+									"id": "014",
+									"page": 14,
+									"entries": [
+										"阿明和另外两名精灵议会成员领导着红木哨地\u2014\u2014不过如今阿明失踪了。这些议会成员皆是曾在一个世纪前直面夕殁的人，直至今日众人依旧铭记其英勇；如果角色们向村民询问起这些议会成员，村民们便会给出以下信息：",
+										{
+											"type": "entries",
+											"id": "015",
+											"entries": [
+												{
+													"ENG_name": "Armin Whisperwind",
+													"name": "阿明·风语",
+													"type": "entries",
+													"id": "016",
+													"page": 15,
+													"entries": [
+														"阿明（中型{@creature 斥候|XMM}）在一个月前离开红木哨地，前去调查林地中的腐化。然而他至今未归。村民们担心他遭遇了什么可怕的事情，他们说，这位娴熟的精灵追迹者绝不会抛下红木哨地独自逃走。（阿明此时正在雏龙的胁迫下守卫着区域{@area R4|031|x}。）"
+													]
+												},
+												{
+													"ENG_name": "Gwenhumara Goldmoss",
+													"name": "殷赫玛拉·金苔",
+													"type": "entries",
+													"id": "017",
+													"page": 15,
+													"entries": [
+														"精灵治疗师殷赫玛拉（中型{@creature 侍祭僧侣|XMM}）曾在那场对抗夕殁的战役结束后照料伤员。最近她做起了关于巨龙归来的噩梦；她担心那条龙的魂魄仍徘徊在红木林环的根系之间。殷赫玛拉乐于为受伤的角色提供疗愈，不过她不敢独自离开村落。"
+													]
+												},
+												{
+													"ENG_name": "Selenar Woodwise",
+													"name": "塞勒纳·慧林",
+													"type": "entries",
+													"id": "018",
+													"page": 15,
+													"entries": [
+														"塞勒纳（中型{@creature 贵族|XMM}）是昔日在夕殁的巢穴中见证了这条远古巨龙之死的精灵武者之一。他错误地坚信森林的腐化与这死去的巨龙无关。塞勒纳十分敬重自然，并希望角色们能够辨明森林所面临的威胁究竟为何。"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "A Call for Heroes",
+							"name": "英雄应召而来",
+							"type": "section",
+							"id": "019",
+							"page": 15,
+							"entries": [
+								"角色们在冒险开始前便已知晓红木哨地的基本历史，以及其陷入了有村民失踪的困境。当角色们进入村内时，议会成员塞勒纳·慧林和殷赫玛拉·金苔便向这些英雄们走来，并为其提供关于红木哨地所面临的困境的更多信息。",
+								"阅读或展示以下内容：",
 								{
 									"type": "insetReadaloud",
+									"id": "01a",
 									"page": 15,
-									"id": "01c",
 									"entries": [
-										"\"在正式行动前，我想做一些准备，助你们对抗森林中的毒害，但我对这种腐化的理解尚不够深入，没法制作合适的抗毒剂。请先前去森林深处的那片红木林环吧，从那林地中的六颗红木上各取下一片树皮作为样本。把这些样本带回给我，这样我就可以按你们的需求为你们制造充足的抗毒剂。\""
+										"站在你们面前的是两位带有领导者气质的木精灵。这两人中，一位是名叫塞勒纳·慧林的男子，身着钢质胸甲，披着飘扬的绿色斗篷；另一位则是名为殷赫玛拉·金苔的女子，穿着一件轻柔的苍翠长袍。\"感谢诸位，愿意回应红木哨地的请求。\"殷赫玛拉说到。\"邪物正潜伏在红木林环之中。鉴于我们与巨龙\"夕殁\"的过往经历，你们应该能够理解我等的担忧\u2014\u2014尤其是村民正在逐渐失踪的当下。我等向你们发出请求，请为红木哨地寻回失踪的村民、弄清楚是什么导致了森林的枯萎\u2014\u2014并根除你们发现的任何威胁。\"塞勒纳在此时插话：\"我确信，森林里绝不可能有另外一条龙，但现在发生的事情非常不对劲。\"殷赫玛拉将手搭在塞勒纳的肩膀上以示安慰。"
 									]
 								},
-								"殷赫玛拉需要红木林环中那六颗红木的树皮样本，每颗各取一份，这样她就能酿造可用的{@item 抗毒剂|XPHB|抗毒剂}。她会给玩家提供六个用来储存样本的{@item 小瓶|XPHB|小瓶}。",
-								"一旦角色们带回了样本，殷赫玛拉就能为其酿造抗毒剂，每日至多十瓶。玩家们可以自行分配这些药剂。",
-								"如果角色们探索了红木林环，并为殷赫玛拉收集了六份样本，那么就奖励每人100XP，或让他们升至2级。在进入龙巢之前，角色们应当已升至2级。"
-							]
-						}
-					]
-				},
-				{
-					"ENG_name": "Exploring Redwood Watch",
-					"name": "探索红木哨地",
-					"type": "section",
-					"page": 15,
-					"id": "01d",
-					"entries": [
-						"在角色们启程前往{@area 红木林环|023|x}之前，他们也许想先花时间了解一下他们要去帮助的村民。",
-						{
-							"type": "gallery",
-							"images": [
+								"这两名精灵会尽其所能回答任何问题。",
+								"议会成员并不富裕，无法提供报酬，不过他们欢迎角色们自行保留其在森林中找到的任何宝物。此外，他们还会为角色们提供一间住宿用的树洞，并指出角色们该去哪找{@area 法苟斯的小餐馆|01f|x}。",
 								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "adventure/DrDe/004-map-01.01-redwood-grove-dm.webp"
-									},
-									"imageType": "map",
-									"title": "地图1.1: 红木林环",
-									"credit": "Damien Mammoliti",
-									"width": 4096,
-									"height": 2788,
-									"id": "00d",
-									"grid": {
-										"type": "square",
-										"size": 123,
-										"offsetX": 20,
-										"offsetY": -19
-									},
-									"mapRegions": [
+									"ENG_name": "Gathering Samples",
+									"name": "收集样本",
+									"type": "entries",
+									"id": "01b",
+									"page": 15,
+									"entries": [
+										"在这两位精灵们回答完角色们的各种疑惑后，殷赫玛拉会提出以下请求：",
 										{
-											"area": "02a",
-											"points": [
-												[
-													463,
-													1596
-												],
-												[
-													421,
-													1541
-												],
-												[
-													407,
-													1483
-												],
-												[
-													430,
-													1434
-												],
-												[
-													436,
-													1389
-												],
-												[
-													451,
-													1337
-												],
-												[
-													479,
-													1297
-												],
-												[
-													546,
-													1276
-												],
-												[
-													619,
-													1248
-												],
-												[
-													675,
-													1253
-												],
-												[
-													713,
-													1273
-												],
-												[
-													747,
-													1299
-												],
-												[
-													777,
-													1331
-												],
-												[
-													808,
-													1353
-												],
-												[
-													817,
-													1419
-												],
-												[
-													826,
-													1460
-												],
-												[
-													814,
-													1506
-												],
-												[
-													808,
-													1559
-												],
-												[
-													771,
-													1608
-												],
-												[
-													707,
-													1666
-												],
-												[
-													671,
-													1678
-												],
-												[
-													607,
-													1674
-												],
-												[
-													570,
-													1675
-												],
-												[
-													526,
-													1651
-												]
+											"type": "insetReadaloud",
+											"id": "01c",
+											"page": 15,
+											"entries": [
+												"\"在正式行动前，我想做一些准备，助你们对抗森林中的毒害，但我对这种腐化的理解尚不够深入，没法制作合适的抗毒剂。请先前去森林深处的那片红木林环吧，从那林地中的六颗红木上各取下一片树皮作为样本。把这些样本带回给我，这样我就可以按你们的需求为你们制造充足的抗毒剂。\""
 											]
 										},
-										{
-											"area": "02c",
-											"points": [
-												[
-													1157,
-													675
-												],
-												[
-													1158,
-													636
-												],
-												[
-													1155,
-													593
-												],
-												[
-													1168,
-													556
-												],
-												[
-													1187,
-													529
-												],
-												[
-													1196,
-													474
-												],
-												[
-													1218,
-													444
-												],
-												[
-													1268,
-													398
-												],
-												[
-													1314,
-													378
-												],
-												[
-													1381,
-													376
-												],
-												[
-													1427,
-													366
-												],
-												[
-													1477,
-													380
-												],
-												[
-													1500,
-													401
-												],
-												[
-													1515,
-													454
-												],
-												[
-													1539,
-													509
-												],
-												[
-													1578,
-													552
-												],
-												[
-													1588,
-													599
-												],
-												[
-													1571,
-													634
-												],
-												[
-													1561,
-													675
-												],
-												[
-													1555,
-													719
-												],
-												[
-													1521,
-													738
-												],
-												[
-													1491,
-													773
-												],
-												[
-													1460,
-													809
-												],
-												[
-													1417,
-													822
-												],
-												[
-													1366,
-													829
-												],
-												[
-													1320,
-													822
-												],
-												[
-													1236,
-													767
-												],
-												[
-													1219,
-													730
-												],
-												[
-													1180,
-													709
-												]
-											]
-										},
-										{
-											"area": "02e",
-											"points": [
-												[
-													2520,
-													527
-												],
-												[
-													2551,
-													496
-												],
-												[
-													2578,
-													460
-												],
-												[
-													2588,
-													419
-												],
-												[
-													2616,
-													396
-												],
-												[
-													2658,
-													381
-												],
-												[
-													2693,
-													382
-												],
-												[
-													2723,
-													367
-												],
-												[
-													2769,
-													365
-												],
-												[
-													2795,
-													388
-												],
-												[
-													2836,
-													417
-												],
-												[
-													2888,
-													441
-												],
-												[
-													2921,
-													490
-												],
-												[
-													2947,
-													534
-												],
-												[
-													2952,
-													579
-												],
-												[
-													2909,
-													685
-												],
-												[
-													2866,
-													745
-												],
-												[
-													2833,
-													781
-												],
-												[
-													2805,
-													791
-												],
-												[
-													2763,
-													783
-												],
-												[
-													2728,
-													787
-												],
-												[
-													2680,
-													789
-												],
-												[
-													2635,
-													768
-												],
-												[
-													2586,
-													743
-												],
-												[
-													2559,
-													704
-												],
-												[
-													2528,
-													612
-												],
-												[
-													2513,
-													553
-												]
-											]
-										},
-										{
-											"area": "031",
-											"points": [
-												[
-													3087,
-													197
-												],
-												[
-													3156,
-													192
-												],
-												[
-													3229,
-													230
-												],
-												[
-													3263,
-													279
-												],
-												[
-													3324,
-													314
-												],
-												[
-													3376,
-													366
-												],
-												[
-													3415,
-													421
-												],
-												[
-													3461,
-													431
-												],
-												[
-													3531,
-													434
-												],
-												[
-													3568,
-													472
-												],
-												[
-													3601,
-													555
-												],
-												[
-													3656,
-													642
-												],
-												[
-													3714,
-													722
-												],
-												[
-													3769,
-													809
-												],
-												[
-													3790,
-													841
-												],
-												[
-													3827,
-													898
-												],
-												[
-													3880,
-													992
-												],
-												[
-													3818,
-													966
-												],
-												[
-													3769,
-													904
-												],
-												[
-													3723,
-													846
-												],
-												[
-													3686,
-													826
-												],
-												[
-													3651,
-													794
-												],
-												[
-													3606,
-													790
-												],
-												[
-													3543,
-													794
-												],
-												[
-													3519,
-													764
-												],
-												[
-													3482,
-													725
-												],
-												[
-													3450,
-													709
-												],
-												[
-													3430,
-													683
-												],
-												[
-													3388,
-													669
-												],
-												[
-													3357,
-													611
-												],
-												[
-													3322,
-													578
-												],
-												[
-													3281,
-													555
-												],
-												[
-													3238,
-													497
-												],
-												[
-													3190,
-													445
-												],
-												[
-													3156,
-													407
-												],
-												[
-													3150,
-													363
-												],
-												[
-													3153,
-													323
-												],
-												[
-													3129,
-													264
-												],
-												[
-													3090,
-													223
-												],
-												[
-													3062,
-													203
-												]
-											]
-										},
-										{
-											"area": "034",
-											"points": [
-												[
-													2912,
-													1235
-												],
-												[
-													2927,
-													1171
-												],
-												[
-													2982,
-													1119
-												],
-												[
-													3016,
-													1073
-												],
-												[
-													3062,
-													1047
-												],
-												[
-													3109,
-													1043
-												],
-												[
-													3156,
-													1011
-												],
-												[
-													3220,
-													954
-												],
-												[
-													3287,
-													895
-												],
-												[
-													3353,
-													901
-												],
-												[
-													3420,
-													947
-												],
-												[
-													3476,
-													971
-												],
-												[
-													3564,
-													986
-												],
-												[
-													3676,
-													1001
-												],
-												[
-													3752,
-													1004
-												],
-												[
-													3862,
-													1052
-												],
-												[
-													3933,
-													1075
-												],
-												[
-													3982,
-													1135
-												],
-												[
-													3996,
-													1169
-												],
-												[
-													3970,
-													1233
-												],
-												[
-													3979,
-													1297
-												],
-												[
-													4029,
-													1401
-												],
-												[
-													4032,
-													1446
-												],
-												[
-													3982,
-													1501
-												],
-												[
-													3930,
-													1526
-												],
-												[
-													3924,
-													1611
-												],
-												[
-													3895,
-													1663
-												],
-												[
-													3842,
-													1721
-												],
-												[
-													3796,
-													1754
-												],
-												[
-													3699,
-													1791
-												],
-												[
-													3677,
-													1855
-												],
-												[
-													3659,
-													1901
-												],
-												[
-													3470,
-													1882
-												],
-												[
-													3251,
-													1823
-												],
-												[
-													3086,
-													1709
-												],
-												[
-													2982,
-													1539
-												],
-												[
-													2952,
-													1430
-												],
-												[
-													2912,
-													1337
-												],
-												[
-													2906,
-													1279
-												]
-											]
-										},
-										{
-											"area": "036",
-											"points": [
-												[
-													2508,
-													2281
-												],
-												[
-													2510,
-													2220
-												],
-												[
-													2548,
-													2171
-												],
-												[
-													2577,
-													2110
-												],
-												[
-													2624,
-													2061
-												],
-												[
-													2685,
-													2028
-												],
-												[
-													2731,
-													2025
-												],
-												[
-													2775,
-													2029
-												],
-												[
-													2804,
-													2023
-												],
-												[
-													2847,
-													2034
-												],
-												[
-													2889,
-													2067
-												],
-												[
-													2905,
-													2121
-												],
-												[
-													2918,
-													2179
-												],
-												[
-													2906,
-													2247
-												],
-												[
-													2905,
-													2332
-												],
-												[
-													2898,
-													2380
-												],
-												[
-													2853,
-													2406
-												],
-												[
-													2795,
-													2430
-												],
-												[
-													2755,
-													2451
-												],
-												[
-													2685,
-													2444
-												],
-												[
-													2641,
-													2427
-												],
-												[
-													2621,
-													2375
-												],
-												[
-													2562,
-													2357
-												],
-												[
-													2520,
-													2314
-												]
-											]
-										},
-										{
-											"area": "038",
-											"points": [
-												[
-													1050,
-													2224
-												],
-												[
-													1071,
-													2130
-												],
-												[
-													1105,
-													2009
-												],
-												[
-													1129,
-													1898
-												],
-												[
-													1266,
-													1884
-												],
-												[
-													1400,
-													1875
-												],
-												[
-													1586,
-													1897
-												],
-												[
-													1771,
-													1959
-												],
-												[
-													1938,
-													2055
-												],
-												[
-													1957,
-													2198
-												],
-												[
-													1921,
-													2340
-												],
-												[
-													1833,
-													2439
-												],
-												[
-													1693,
-													2511
-												],
-												[
-													1586,
-													2598
-												],
-												[
-													1301,
-													2601
-												],
-												[
-													1152,
-													2538
-												],
-												[
-													1108,
-													2432
-												],
-												[
-													1074,
-													2334
-												]
-											]
-										},
-										{
-											"area": "03c",
-											"points": [
-												[
-													1511,
-													1500
-												],
-												[
-													1557,
-													1394
-												],
-												[
-													1591,
-													1328
-												],
-												[
-													1658,
-													1247
-												],
-												[
-													1717,
-													1171
-												],
-												[
-													1806,
-													1134
-												],
-												[
-													1909,
-													1084
-												],
-												[
-													1973,
-													1077
-												],
-												[
-													2112,
-													1113
-												],
-												[
-													2225,
-													1183
-												],
-												[
-													2319,
-													1259
-												],
-												[
-													2367,
-													1330
-												],
-												[
-													2394,
-													1448
-												],
-												[
-													2434,
-													1552
-												],
-												[
-													2389,
-													1653
-												],
-												[
-													2321,
-													1756
-												],
-												[
-													2243,
-													1817
-												],
-												[
-													2129,
-													1894
-												],
-												[
-													1963,
-													1909
-												],
-												[
-													1845,
-													1942
-												],
-												[
-													1760,
-													1863
-												],
-												[
-													1653,
-													1738
-												],
-												[
-													1566,
-													1644
-												],
-												[
-													1525,
-													1572
-												]
-											]
-										}
-									],
-									"hrefThumbnail": {
-										"type": "internal",
-										"path": "adventure/DrDe/thumbnail/004-map-01.01-redwood-grove-dm.webp"
-									}
-								},
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "adventure/DrDe/005-map-01.01-redwood-grove-player.webp"
-									},
-									"imageType": "mapPlayer",
-									"title": "玩家版本",
-									"width": 4096,
-									"height": 2788,
-									"credit": "Damien Mammoliti",
-									"mapParent": {
-										"id": "00d"
-									},
-									"grid": {
-										"type": "square",
-										"size": 123,
-										"offsetX": 20,
-										"offsetY": -19
-									}
+										"殷赫玛拉需要红木林环中那六颗红木的树皮样本，每颗各取一份，这样她就能酿造可用的{@item 抗毒剂|XPHB|抗毒剂}。她会给玩家提供六个用来储存样本的{@item 小瓶|XPHB|小瓶}。",
+										"一旦角色们带回了样本，殷赫玛拉就能为其酿造抗毒剂，每日至多十瓶。玩家们可以自行分配这些药剂。",
+										"如果角色们探索了红木林环，并为殷赫玛拉收集了六份样本，那么就奖励每人100XP，或让他们升至2级。在进入龙巢之前，角色们应当已升至2级。"
+									]
 								}
 							]
 						},
 						{
-							"ENG_name": "Village Green",
-							"name": "村间绿地",
-							"type": "entries",
+							"ENG_name": "Exploring Redwood Watch",
+							"name": "探索红木哨地",
+							"type": "section",
+							"id": "01d",
 							"page": 15,
-							"id": "01e",
 							"entries": [
-								"每到夜晚，大多数村民们便会在这片位于红木哨地中央的村间绿地中聚集。他们在这里分享食物、进行社交、玩游戏，甚至演一些短剧。",
+								"在角色们启程前往{@area 红木林环|023|x}之前，他们也许想先花时间了解一下他们要去帮助的村民。",
 								{
-									"ENG_name": "Fergus's Grill",
-									"name": "法苟斯的小餐馆",
-									"type": "entries",
-									"page": 15,
-									"id": "01f",
-									"entries": [
-										"这位精灵大厨名叫法苟斯·玉角（中型{@creature 平民|XMM}），他是一位优雅的男人，在村间绿地里经营着一家小餐馆。法苟斯使用村民们捐赠的蘑菇、浆果、地衣、草药、兔子、鹿肉、还有其他林间猎获制作简单而美味的菜肴。只要提供少许捐赠，访客们便可享用法苟斯的美食，以及议会的酒庄中生产的优质精灵葡萄酒。"
-									]
-								},
-								{
-									"ENG_name": "Rumors",
-									"name": "流言",
-									"type": "entries",
-									"page": 16,
-									"id": "020",
-									"entries": [
-										"当角色们与红木哨地的NPC们互动时，村民们会向他们表示自己对最近发生的各种事情的担忧。掷{@adventure 村间绿地流言|DrDe-DaS|1|村间绿地流言}表以决定NPC向角色们分享了哪条流言。如果掷出的结果是角色们已知晓的流言，那就重新投掷。角色们知晓了所有留言后不要再投掷。",
+									"type": "gallery",
+									"images": [
 										{
-											"type": "table",
-											"caption": "村间绿地流言",
-											"page": 16,
-											"colLabels": [
-												"1d6",
-												"流言"
-											],
-											"colStyles": [
-												"col-2 text-center",
-												"col-10"
-											],
-											"rows": [
-												[
-													"1",
-													"不久前，有三个匪徒在森林边缘抢劫过路人。我可以打赌，他们现在仍藏在林子里面。\"[部分正确；因为那些匪徒现在已经死了，他们的尸体被活化，见区域{@area R7|038|x}。]"
-												],
-												[
-													"2",
-													"\"那条恶龙死掉时诅咒了这些树木。我们得离开，赶在诅咒把我们都杀掉之前！\"[错误；森林中没有诅咒。]"
-												],
-												[
-													"3",
-													"\"别独自在森林里行动！那里面生长着邪恶之树！\"[部分正确；龙的影响令森林中生出了许多枯萎怪，包括{@area L4|053|x}的{@creature 枯藤怪|XMM}和{@creature 枯枝怪|XMM}]"
-												],
-												[
-													"4",
-													"\"还记得艾瑟樊吗？就是跟{@area 夕殁|012|x}同归于尽的那位。没人找得到她的佩剑落叶守望。那把剑说不定还留在龙的巢穴里。\"[正确；落叶守望确实就在区域{@area L7|05d|x}中的龙之宝库里。]"
-												],
-												[
-													"5",
-													"\"林子里有一个怪人，通体发绿，头生树叶。我觉得那就是森林所显化的精魂！\"[部分正确；一只{@creature 树精|XMM}移居到了区域{@area R3|02e|x}。他也许会帮助冒险者。]"
-												],
-												[
-													"6",
-													"\"巨龙能够超越死亡，复生为怖人的憎恶龙骸。像夕殁这样恶毒的存在，绝不是被击败一次就会彻底逝去的。\"[部分正确；龙巫妖确实存在，但夕殁并不是。]"
-												]
-											]
-										}
-									]
-								},
-								{
-									"ENG_name": "Traveling Merchant",
-									"name": "旅行商人",
-									"type": "entries",
-									"page": 16,
-									"id": "021",
-									"entries": [
-										"一位名叫天晴·钱包光光（小型{@creature 平民|XMM}）的旅行商人近期在红木哨地开了间铺子。天晴是一位总是在笑的金发半身人，她就像自己的名字一样开朗。天晴在村间绿地的每天都在从她那沉重的大货车上卸货。在不做生意的时候，她会欢快地称赞自己的两匹马：油壶和蒲公英，并和路过的人聊天。",
-										{
-											"ENG_name": "Sunny's Wares",
-											"name": "天晴的货物",
-											"type": "entries",
-											"page": 16,
-											"id": "022",
-											"entries": [
-												"天晴售卖{@book 玩家手册|XPHB}中售价小于等于100GP的任何货物。然而部分货品存货有限：4份{@item 炽火胶|XPHB}，1份{@item 抗毒剂|XPHB}和4份{@item 治疗药水|XDMG|治疗药水}。"
-											]
-										},
-										{
-											"ENG_name": "Sunny's Generosity",
-											"name": "天晴的慷慨",
-											"type": "entries",
-											"page": 16,
-											"entries": [
-												"天晴对顾客十分热情。她曾是附近镇子上的商人，但她总是忍不住去帮助有需要的人，这使得她没法在残酷的商业竞争中站住脚跟。以一个{@action 影响|XPHB}动作，一名角色可以尝试说服她降价。此时角色需要进行一次{@dc 10}的魅力（{@skill 游说|XPHB}）检定。检定成功则天晴的所有商品都会打上10%的折扣。"
-											],
-											"id": "064"
-										}
-									]
-								}
-							]
-						}
-					]
-				},
-				{
-					"ENG_name": "Redwood Grove",
-					"name": "红木林环",
-					"type": "section",
-					"page": 16,
-					"id": "023",
-					"entries": [
-						"红木林环位于{@area 红木哨地|013|x}东侧三英里处。角色们抵达这里需要一小时时间。",
-						"如{@area 地图: 红木林环|00d|x}所示，红木林环中有着六颗红木，每颗树木都有大约300尺高。",
-						{
-							"ENG_name": "Redwood Grove Features",
-							"name": "红木林环特征",
-							"type": "entries",
-							"page": 16,
-							"id": "024",
-							"entries": [
-								"红木林环具有以下特征：",
-								{
-									"ENG_name": "Haunted",
-									"name": "闹鬼",
-									"type": "entries",
-									"page": 16,
-									"id": "025",
-									"entries": [
-										"自夕临孵化以来，那些昔日在与夕殁的战斗中牺牲的精灵们的亡魂便不愿再沉眠于安息。每到夜晚，他们便会化作无害的幽影，诡异地在这些树木间飘荡。微风会捎来鬼魂们的低语：\"当心，当心！\"以及\"她的后代苏醒了！\"。除此之外的更多闹鬼现象在区域{@area R8|03c|x}中有描述。"
-									]
-								},
-								{
-									"ENG_name": "Light",
-									"name": "光线",
-									"type": "entries",
-									"page": 16,
-									"id": "026",
-									"entries": [
-										"日光能够照亮林环，在白天这里是{@variantrule 明亮光照|XPHB}。到了夜晚，林冠会遮蔽月光，使得林环处于黑暗。"
-									]
-								},
-								{
-									"ENG_name": "Stream",
-									"name": "溪流",
-									"type": "entries",
-									"page": 16,
-									"id": "027",
-									"entries": [
-										"一条小溪从林环的东侧蜿蜒而过。溪流宽5尺，深度则只有几英寸。然而，龙之魔法已然污染了溪流的水体。饮用溪水的生物必须成功通过一次{@dc 12}的体质豁免，否则收到3（{@dice 1d6}）毒素伤害且陷入{@condition 中毒|XPHB}状态1小时。"
-									]
-								}
-							]
-						},
-						{
-							"ENG_name": "Bark Samples",
-							"name": "树皮样本",
-							"type": "entries",
-							"page": 16,
-							"id": "028",
-							"entries": [
-								"以一个{@action 操作|XPHB}动作，一名角色可以使用{@item 小瓶|XPHB}从附近的红木上获取一份树皮样本。这些红木分别位于区域{@area R1|02a|x}、{@area R2|02c|x}、{@area R3|02e|x}、{@area R5|034|x}、{@area R6|036|x}以及{@area R7|038|x}。"
-							]
-						},
-						{
-							"ENG_name": "Redwood Grove Locations",
-							"name": "红木林环地点",
-							"type": "entries",
-							"page": 16,
-							"id": "029",
-							"entries": [
-								"以下是{@area 地图: 红木林环|00d|x}中标出的几个地点：",
-								{
-									"ENG_name": "R1: Looming Redwood",
-									"name": "R1: 高耸的红木",
-									"type": "entries",
-									"page": 17,
-									"id": "02a",
-									"entries": [
-										{
-											"type": "insetReadaloud",
-											"page": 17,
-											"id": "02b",
-											"entries": [
-												"这株高耸的红木直插云霄，就连最下层的枝条也高不可攀，其树皮上却如哭泣般地渗出着漆黑的树液。树干周围遍布着染病的野草和凋零的野花。"
-											]
-										}
-									]
-								},
-								{
-									"ENG_name": "R2: Sickly Redwood",
-									"name": "R2: 染疫的红木",
-									"type": "entries",
-									"page": 17,
-									"id": "02c",
-									"entries": [
-										{
-											"type": "insetReadaloud",
-											"page": 17,
-											"id": "02d",
-											"entries": [
-												"这株红木曾经华美，但如今它的树皮已然凋落，如同蛇蜕一般。它高耸的枝杈给这片区域笼上了一层病态的阴影。"
-											]
-										}
-									]
-								},
-								{
-									"ENG_name": "R3: Dryad's Tree",
-									"name": "R3: 树精之树",
-									"type": "entries",
-									"page": 17,
-									"id": "02e",
-									"entries": [
-										{
-											"type": "insetReadaloud",
-											"page": 17,
-											"id": "02f",
-											"entries": [
-												"这株红木如塔楼般屹立着，其树干宛如建筑物般宽大，但其树皮已开始如干裂的皮肤般剥落。在离地几尺的地方，一个通体翠绿、头发由叶子构成的人正坐在一片真菌长成的宝座上。他用威严的眼神注视着正在靠近的你们。"
+											"type": "image",
+											"id": "00d",
+											"href": {
+												"type": "internal",
+												"path": "adventure/DrDe/004-map-01.01-redwood-grove-dm.webp"
+											},
+											"hrefThumbnail": {
+												"type": "internal",
+												"path": "adventure/DrDe/thumbnail/004-map-01.01-redwood-grove-dm.webp"
+											},
+											"width": 4096,
+											"height": 2788,
+											"imageType": "map",
+											"grid": {
+												"type": "square",
+												"size": 123,
+												"offsetX": 20,
+												"offsetY": -19
+											},
+											"title": "地图1.1: 红木林环",
+											"credit": "Damien Mammoliti",
+											"mapRegions": [
+												{
+													"area": "02a",
+													"points": [
+														[
+															463,
+															1596
+														],
+														[
+															421,
+															1541
+														],
+														[
+															407,
+															1483
+														],
+														[
+															430,
+															1434
+														],
+														[
+															436,
+															1389
+														],
+														[
+															451,
+															1337
+														],
+														[
+															479,
+															1297
+														],
+														[
+															546,
+															1276
+														],
+														[
+															619,
+															1248
+														],
+														[
+															675,
+															1253
+														],
+														[
+															713,
+															1273
+														],
+														[
+															747,
+															1299
+														],
+														[
+															777,
+															1331
+														],
+														[
+															808,
+															1353
+														],
+														[
+															817,
+															1419
+														],
+														[
+															826,
+															1460
+														],
+														[
+															814,
+															1506
+														],
+														[
+															808,
+															1559
+														],
+														[
+															771,
+															1608
+														],
+														[
+															707,
+															1666
+														],
+														[
+															671,
+															1678
+														],
+														[
+															607,
+															1674
+														],
+														[
+															570,
+															1675
+														],
+														[
+															526,
+															1651
+														]
+													]
+												},
+												{
+													"area": "02c",
+													"points": [
+														[
+															1157,
+															675
+														],
+														[
+															1158,
+															636
+														],
+														[
+															1155,
+															593
+														],
+														[
+															1168,
+															556
+														],
+														[
+															1187,
+															529
+														],
+														[
+															1196,
+															474
+														],
+														[
+															1218,
+															444
+														],
+														[
+															1268,
+															398
+														],
+														[
+															1314,
+															378
+														],
+														[
+															1381,
+															376
+														],
+														[
+															1427,
+															366
+														],
+														[
+															1477,
+															380
+														],
+														[
+															1500,
+															401
+														],
+														[
+															1515,
+															454
+														],
+														[
+															1539,
+															509
+														],
+														[
+															1578,
+															552
+														],
+														[
+															1588,
+															599
+														],
+														[
+															1571,
+															634
+														],
+														[
+															1561,
+															675
+														],
+														[
+															1555,
+															719
+														],
+														[
+															1521,
+															738
+														],
+														[
+															1491,
+															773
+														],
+														[
+															1460,
+															809
+														],
+														[
+															1417,
+															822
+														],
+														[
+															1366,
+															829
+														],
+														[
+															1320,
+															822
+														],
+														[
+															1236,
+															767
+														],
+														[
+															1219,
+															730
+														],
+														[
+															1180,
+															709
+														]
+													]
+												},
+												{
+													"area": "02e",
+													"points": [
+														[
+															2520,
+															527
+														],
+														[
+															2551,
+															496
+														],
+														[
+															2578,
+															460
+														],
+														[
+															2588,
+															419
+														],
+														[
+															2616,
+															396
+														],
+														[
+															2658,
+															381
+														],
+														[
+															2693,
+															382
+														],
+														[
+															2723,
+															367
+														],
+														[
+															2769,
+															365
+														],
+														[
+															2795,
+															388
+														],
+														[
+															2836,
+															417
+														],
+														[
+															2888,
+															441
+														],
+														[
+															2921,
+															490
+														],
+														[
+															2947,
+															534
+														],
+														[
+															2952,
+															579
+														],
+														[
+															2909,
+															685
+														],
+														[
+															2866,
+															745
+														],
+														[
+															2833,
+															781
+														],
+														[
+															2805,
+															791
+														],
+														[
+															2763,
+															783
+														],
+														[
+															2728,
+															787
+														],
+														[
+															2680,
+															789
+														],
+														[
+															2635,
+															768
+														],
+														[
+															2586,
+															743
+														],
+														[
+															2559,
+															704
+														],
+														[
+															2528,
+															612
+														],
+														[
+															2513,
+															553
+														]
+													]
+												},
+												{
+													"area": "031",
+													"points": [
+														[
+															3087,
+															197
+														],
+														[
+															3156,
+															192
+														],
+														[
+															3229,
+															230
+														],
+														[
+															3263,
+															279
+														],
+														[
+															3324,
+															314
+														],
+														[
+															3376,
+															366
+														],
+														[
+															3415,
+															421
+														],
+														[
+															3461,
+															431
+														],
+														[
+															3531,
+															434
+														],
+														[
+															3568,
+															472
+														],
+														[
+															3601,
+															555
+														],
+														[
+															3656,
+															642
+														],
+														[
+															3714,
+															722
+														],
+														[
+															3769,
+															809
+														],
+														[
+															3790,
+															841
+														],
+														[
+															3827,
+															898
+														],
+														[
+															3880,
+															992
+														],
+														[
+															3818,
+															966
+														],
+														[
+															3769,
+															904
+														],
+														[
+															3723,
+															846
+														],
+														[
+															3686,
+															826
+														],
+														[
+															3651,
+															794
+														],
+														[
+															3606,
+															790
+														],
+														[
+															3543,
+															794
+														],
+														[
+															3519,
+															764
+														],
+														[
+															3482,
+															725
+														],
+														[
+															3450,
+															709
+														],
+														[
+															3430,
+															683
+														],
+														[
+															3388,
+															669
+														],
+														[
+															3357,
+															611
+														],
+														[
+															3322,
+															578
+														],
+														[
+															3281,
+															555
+														],
+														[
+															3238,
+															497
+														],
+														[
+															3190,
+															445
+														],
+														[
+															3156,
+															407
+														],
+														[
+															3150,
+															363
+														],
+														[
+															3153,
+															323
+														],
+														[
+															3129,
+															264
+														],
+														[
+															3090,
+															223
+														],
+														[
+															3062,
+															203
+														]
+													]
+												},
+												{
+													"area": "034",
+													"points": [
+														[
+															2912,
+															1235
+														],
+														[
+															2927,
+															1171
+														],
+														[
+															2982,
+															1119
+														],
+														[
+															3016,
+															1073
+														],
+														[
+															3062,
+															1047
+														],
+														[
+															3109,
+															1043
+														],
+														[
+															3156,
+															1011
+														],
+														[
+															3220,
+															954
+														],
+														[
+															3287,
+															895
+														],
+														[
+															3353,
+															901
+														],
+														[
+															3420,
+															947
+														],
+														[
+															3476,
+															971
+														],
+														[
+															3564,
+															986
+														],
+														[
+															3676,
+															1001
+														],
+														[
+															3752,
+															1004
+														],
+														[
+															3862,
+															1052
+														],
+														[
+															3933,
+															1075
+														],
+														[
+															3982,
+															1135
+														],
+														[
+															3996,
+															1169
+														],
+														[
+															3970,
+															1233
+														],
+														[
+															3979,
+															1297
+														],
+														[
+															4029,
+															1401
+														],
+														[
+															4032,
+															1446
+														],
+														[
+															3982,
+															1501
+														],
+														[
+															3930,
+															1526
+														],
+														[
+															3924,
+															1611
+														],
+														[
+															3895,
+															1663
+														],
+														[
+															3842,
+															1721
+														],
+														[
+															3796,
+															1754
+														],
+														[
+															3699,
+															1791
+														],
+														[
+															3677,
+															1855
+														],
+														[
+															3659,
+															1901
+														],
+														[
+															3470,
+															1882
+														],
+														[
+															3251,
+															1823
+														],
+														[
+															3086,
+															1709
+														],
+														[
+															2982,
+															1539
+														],
+														[
+															2952,
+															1430
+														],
+														[
+															2912,
+															1337
+														],
+														[
+															2906,
+															1279
+														]
+													]
+												},
+												{
+													"area": "036",
+													"points": [
+														[
+															2508,
+															2281
+														],
+														[
+															2510,
+															2220
+														],
+														[
+															2548,
+															2171
+														],
+														[
+															2577,
+															2110
+														],
+														[
+															2624,
+															2061
+														],
+														[
+															2685,
+															2028
+														],
+														[
+															2731,
+															2025
+														],
+														[
+															2775,
+															2029
+														],
+														[
+															2804,
+															2023
+														],
+														[
+															2847,
+															2034
+														],
+														[
+															2889,
+															2067
+														],
+														[
+															2905,
+															2121
+														],
+														[
+															2918,
+															2179
+														],
+														[
+															2906,
+															2247
+														],
+														[
+															2905,
+															2332
+														],
+														[
+															2898,
+															2380
+														],
+														[
+															2853,
+															2406
+														],
+														[
+															2795,
+															2430
+														],
+														[
+															2755,
+															2451
+														],
+														[
+															2685,
+															2444
+														],
+														[
+															2641,
+															2427
+														],
+														[
+															2621,
+															2375
+														],
+														[
+															2562,
+															2357
+														],
+														[
+															2520,
+															2314
+														]
+													]
+												},
+												{
+													"area": "038",
+													"points": [
+														[
+															1050,
+															2224
+														],
+														[
+															1071,
+															2130
+														],
+														[
+															1105,
+															2009
+														],
+														[
+															1129,
+															1898
+														],
+														[
+															1266,
+															1884
+														],
+														[
+															1400,
+															1875
+														],
+														[
+															1586,
+															1897
+														],
+														[
+															1771,
+															1959
+														],
+														[
+															1938,
+															2055
+														],
+														[
+															1957,
+															2198
+														],
+														[
+															1921,
+															2340
+														],
+														[
+															1833,
+															2439
+														],
+														[
+															1693,
+															2511
+														],
+														[
+															1586,
+															2598
+														],
+														[
+															1301,
+															2601
+														],
+														[
+															1152,
+															2538
+														],
+														[
+															1108,
+															2432
+														],
+														[
+															1074,
+															2334
+														]
+													]
+												},
+												{
+													"area": "03c",
+													"points": [
+														[
+															1511,
+															1500
+														],
+														[
+															1557,
+															1394
+														],
+														[
+															1591,
+															1328
+														],
+														[
+															1658,
+															1247
+														],
+														[
+															1717,
+															1171
+														],
+														[
+															1806,
+															1134
+														],
+														[
+															1909,
+															1084
+														],
+														[
+															1973,
+															1077
+														],
+														[
+															2112,
+															1113
+														],
+														[
+															2225,
+															1183
+														],
+														[
+															2319,
+															1259
+														],
+														[
+															2367,
+															1330
+														],
+														[
+															2394,
+															1448
+														],
+														[
+															2434,
+															1552
+														],
+														[
+															2389,
+															1653
+														],
+														[
+															2321,
+															1756
+														],
+														[
+															2243,
+															1817
+														],
+														[
+															2129,
+															1894
+														],
+														[
+															1963,
+															1909
+														],
+														[
+															1845,
+															1942
+														],
+														[
+															1760,
+															1863
+														],
+														[
+															1653,
+															1738
+														],
+														[
+															1566,
+															1644
+														],
+														[
+															1525,
+															1572
+														]
+													]
+												}
 											]
 										},
 										{
 											"type": "image",
 											"href": {
 												"type": "internal",
-												"path": "adventure/DrDe/006-01-003.dryad-with-tree.webp"
+												"path": "adventure/DrDe/005-map-01.01-redwood-grove-player.webp"
 											},
-											"credit": "Dominik Mayer",
-											"width": 850,
-											"height": 2285
-										},
-										"这是凯能，一位早在夕临孵化之前就搬家至此的{@creature 树精|XMM}。他一开始将角色们认成土匪，因此其对角色们的态度为敌对，并命令玩家不要妄图去触碰他的树木。如果角色们尊重凯能的要求，他的态度便会变为冷漠。",
-										"以一个{@action 影响|XPHB}动作，一名角色可以请求凯能出力助其治愈森林。这样做的角色必须进行一次{@dc 12}的魅力（{@skill 游说|XPHB}）检定。检定成功则凯能的态度变为友好。他会尽其所能地回答问题，并欢迎角色们从这颗树上采集树皮样本。",
-										"凯能已经听说了一些关于一条雏龙正潜伏在夕殁昔日的巢穴之中的流言（见\"{@area 夕殁的巢穴|040|x}\"），并怀疑森林的腐化正是这雏龙所为。如果角色们并未表示他们要去斩杀这条雏龙，那凯能就会请求他们去这么做。他还警告角色们，有一个奇怪且愤怒的精灵正潜伏在巢穴入口附近（区域{@area R4|031|x}）。",
-										{
-											"ENG_name": "Slithering Spy",
-											"name": "蛇行间谍",
-											"type": "entries",
-											"page": 17,
-											"id": "030",
-											"entries": [
-												"在角色们与凯能交谈了几分钟后，一条{@creature 毒蛇|XMM}向这棵树爬来，并隐藏在它的根系之中。一个被动{@skill 察觉|XPHB}为13+的角色会注意到这条蛇。它是区域{@area L3|050|x}的蛇人，梅锐蕾莎的间谍。如果角色们与这条蛇展开战斗，蛇会在攻击一次后便试图从巢穴入口（区域{@area R4|031|x}）逃走。"
-											]
+											"width": 4096,
+											"height": 2788,
+											"imageType": "mapPlayer",
+											"grid": {
+												"type": "square",
+												"size": 123,
+												"offsetX": 20,
+												"offsetY": -19
+											},
+											"title": "玩家版本",
+											"credit": "Damien Mammoliti",
+											"mapParent": {
+												"id": "00d"
+											}
 										}
 									]
 								},
 								{
-									"ENG_name": "R4: Lair Entrance",
-									"name": "R4: 龙巢入口",
+									"ENG_name": "Village Green",
+									"name": "村间绿地",
 									"type": "entries",
-									"page": 18,
-									"id": "031",
+									"id": "01e",
+									"page": 15,
 									"entries": [
-										"这里是夕殁巢穴的入口（见\"{@area 夕殁的巢穴|040|x}\"）。失踪的精灵议会成员，{@area 阿明·风语|016|x}（中型{@creature 斥候|XMM}），还有他的{@creature 獒犬|XMM}，弗莱彻，正藏在这道裂口东北角处的根系之后，观察着角色们。",
-										"以一个{@action 搜索|XPHB}动作，一名角色可以检查龙巢入口附近的地面并进行一次{@dc 14}的感知（{@skill 察觉|XPHB}）检定。成功时，该角色找到了阿明的靴印和弗莱彻的爪印。如果阿明发现角色们找到了他留下的痕迹，或是角色们试图进入龙巢，他就便会与角色们战斗。",
+										"每到夜晚，大多数村民们便会在这片位于红木哨地中央的村间绿地中聚集。他们在这里分享食物、进行社交、玩游戏，甚至演一些短剧。",
 										{
-											"ENG_name": "Helping Armin",
-											"name": "帮助阿明",
+											"ENG_name": "Fergus's Grill",
+											"name": "法苟斯的小餐馆",
 											"type": "entries",
-											"page": 18,
-											"id": "032",
+											"id": "01f",
+											"page": 15,
 											"entries": [
-												"一个月前，在阿明进入林环研究这些腐化的时候，夕临俘获了他。这条雏龙花费了很多时日来折磨他，直到走投无路的阿明同意为他赶走一切妄图进入巢穴的人。",
-												"阿明拼尽全力地想要逃跑，并警告村民们这潜伏在林环中的腐化，但夕临已让阿明确信，一旦他试图逃离森林，这条雏龙就会杀死所有村民。阿明对任何靠近者的态度都是敌对。",
-												"以一个{@action 影响|XPHB}动作，一名角色可以试图说服阿明相信他们足够强大能够击败夕临。该角色进行一次{@dc 13}的魅力（{@skill 游说|XPHB}）检定。检定成功则阿明会停止战斗，且他的态度变为友好。阿明无法挑战雏龙，他会请求角色们护送他回到村子里。阿明知道其它失踪的精灵都被带进了龙巢，但并不知晓这些精灵们的命运，因为他无权进入龙巢。"
+												"这位精灵大厨名叫法苟斯·玉角（中型{@creature 平民|XMM}），他是一位优雅的男人，在村间绿地里经营着一家小餐馆。法苟斯使用村民们捐赠的蘑菇、浆果、地衣、草药、兔子、鹿肉、还有其他林间猎获制作简单而美味的菜肴。只要提供少许捐赠，访客们便可享用法苟斯的美食，以及议会的酒庄中生产的优质精灵葡萄酒。"
 											]
 										},
 										{
-											"ENG_name": "Development",
-											"name": "发展",
+											"ENG_name": "Rumors",
+											"name": "流言",
 											"type": "entries",
-											"page": 18,
-											"id": "033",
+											"id": "020",
+											"page": 16,
 											"entries": [
-												"如果角色们将阿明带回红木哨地，这位精灵会受到热泪盈眶、满怀感激的迎接。其他议会成员为同伴归来欣喜若狂，当晚便在村间绿地举行了一场欢庆盛宴。若角色们未出席，下次返回红木哨地时，仍会收到他们诚挚的谢意。"
-											]
-										}
-									]
-								},
-								{
-									"ENG_name": "R5: Muddy Bog",
-									"name": "R5: 泥泞沼地",
-									"type": "entries",
-									"page": 19,
-									"id": "034",
-									"entries": [
-										{
-											"type": "insetReadaloud",
-											"page": 19,
-											"id": "035",
-											"entries": [
-												"这株变得苍白的红木从泥泞的沼地中心长出。在西南角，一条涓涓细流将泥地拦在了河岸的一侧。"
-											]
-										},
-										"穿过林环的这条溪流使得恶臭且带毒的污泥在这片区域蔓延。泥泞的区域是{@variantrule 困难地形|XPHB}，且在其中结束回合的生物必须成功通过一次{@dc 10}的体质豁免检定，否则陷入{@condition 中毒|XPHB}状态直至其下一回合开始。",
-										"三只{@creature 泥魔蝠|XMM|泥魔蝠}躲藏在这些泥泞里，它们是被龙蕴含的邪恶魔法潜力吸引至此。这些魔蝠们会一直保持躲藏，直到至少一名角色踏入泥地，此时它们将会伏击角色们。一旦有两只魔蝠被摧毁，第三只魔蝠便会试图逃跑。"
-									]
-								},
-								{
-									"ENG_name": "R6: Centipede Nest",
-									"name": "R6: 蜈蚣巢穴",
-									"type": "entries",
-									"page": 19,
-									"id": "036",
-									"entries": [
-										{
-											"type": "insetReadaloud",
-											"page": 19,
-											"id": "037",
-											"entries": [
-												"这株红木已经变得病态，它的树干周围生长着恶臭的矮树丛。"
-											]
-										},
-										"森林的腐化引来了一窝致命的蜈蚣潜藏于此。当一名角色靠近这株红木时，一个{@creature 昆虫集群|XMM}蜈蚣）和一只{@creature 巨蜈蚣|XMM}便会从树皮和树根之下蠕行而出，与角色们战斗。"
-									]
-								},
-								{
-									"ENG_name": "R7: Gruesome Camp",
-									"name": "R7: 骇人营地",
-									"type": "entries",
-									"page": 19,
-									"id": "038",
-									"entries": [
-										{
-											"type": "insetReadaloud",
-											"page": 19,
-											"id": "039",
-											"entries": [
-												"这株红木的东北方有着一片燃尽的篝火，周围倒着三具类人生物的尸体。它们已开始腐烂，烂肉之上长出了黑色的斑纹。第一具尸体靠倒在树边，虫子在他张开的、黑漆漆的烂嘴里爬来爬去。第二具尸体就倒在上一具旁边，身上披着一片毯子。最后一具尸体蜷在一张发臭的铺盖里。"
-											]
-										},
-										"这三具尸体实际是被森林中的堕落能量所腐化、复生的{@creature 丧尸|XMM|丧尸们}。丧尸们会在角色们靠近任意一只丧尸的5尺内以及试图获取树皮样本时发起攻击。",
-										"以一个{@action 搜索|XPHB}动作，一名位于其中一只丧尸10尺内的角色可以检查尸体并进行一次{@dc 14}的感知（{@skill 医药|XPHB}）检定。成功时，该角色会发现这些人的死因是喝了附近溪流中的毒水。",
-										"如果角色们听过村间{@adventure 村间绿地流言|DrDe-DaS|1|村间绿地流言}表中的第一条流言，他们便能认出这些丧尸就是之前在森林边缘抢劫过路人的匪徒。",
-										{
-											"ENG_name": "Mysterious Footprints",
-											"name": "奇怪的脚印",
-											"type": "entries",
-											"page": 19,
-											"id": "03a",
-											"entries": [
-												"以一个{@action 搜索|XPHB}动作，一名角色可以搜查营地并进行一次{@dc 12}的感知（{@skill 求生|XPHB}）检定。成功时，该角色能发现一些靴印和脚印。这是{@area 阿明·风语|016|x}和他的獒犬留下的痕迹，他们现在正位于区域{@area R4|031|x}。"
-											]
-										},
-										{
-											"ENG_name": "Treasure",
-											"name": "宝藏",
-											"type": "entries",
-											"page": 19,
-											"id": "03b",
-											"entries": [
-												"翻找这些尸体的角色可以找到以下物品：",
+												"当角色们与红木哨地的NPC们互动时，村民们会向他们表示自己对最近发生的各种事情的担忧。掷{@adventure 村间绿地流言|DrDe-DaS|1|村间绿地流言}表以决定NPC向角色们分享了哪条流言。如果掷出的结果是角色们已知晓的流言，那就重新投掷。角色们知晓了所有留言后不要再投掷。",
 												{
-													"type": "list",
-													"items": [
-														"11 GP",
-														"240 SP",
-														"400 CP",
-														"三把{@item 轻弩|XPHB|轻弩}",
-														"三把{@item 弯刀|XPHB|弯刀}",
-														"三十支弩矢",
-														"{@item 医疗包|XPHB}",
-														"{@item 附盖提灯|XPHB}",
-														"两瓶{@item 燃油|XPHB}",
-														"{@item 铲子|XPHB}"
+													"type": "table",
+													"caption": "村间绿地流言",
+													"page": 16,
+													"colLabels": [
+														"1d6",
+														"流言"
+													],
+													"colStyles": [
+														"col-2 text-center",
+														"col-10"
+													],
+													"rows": [
+														[
+															"1",
+															"不久前，有三个匪徒在森林边缘抢劫过路人。我可以打赌，他们现在仍藏在林子里面。\"[部分正确；因为那些匪徒现在已经死了，他们的尸体被活化，见区域{@area R7|038|x}。]"
+														],
+														[
+															"2",
+															"\"那条恶龙死掉时诅咒了这些树木。我们得离开，赶在诅咒把我们都杀掉之前！\"[错误；森林中没有诅咒。]"
+														],
+														[
+															"3",
+															"\"别独自在森林里行动！那里面生长着邪恶之树！\"[部分正确；龙的影响令森林中生出了许多枯萎怪，包括{@area L4|053|x}的{@creature 枯藤怪|XMM}和{@creature 枯枝怪|XMM}]"
+														],
+														[
+															"4",
+															"\"还记得艾瑟樊吗？就是跟{@area 夕殁|012|x}同归于尽的那位。没人找得到她的佩剑落叶守望。那把剑说不定还留在龙的巢穴里。\"[正确；落叶守望确实就在区域{@area L7|05d|x}中的龙之宝库里。]"
+														],
+														[
+															"5",
+															"\"林子里有一个怪人，通体发绿，头生树叶。我觉得那就是森林所显化的精魂！\"[部分正确；一只{@creature 树精|XMM}移居到了区域{@area R3|02e|x}。他也许会帮助冒险者。]"
+														],
+														[
+															"6",
+															"\"巨龙能够超越死亡，复生为怖人的憎恶龙骸。像夕殁这样恶毒的存在，绝不是被击败一次就会彻底逝去的。\"[部分正确；龙巫妖确实存在，但夕殁并不是。]"
+														]
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "Traveling Merchant",
+											"name": "旅行商人",
+											"type": "entries",
+											"id": "021",
+											"page": 16,
+											"entries": [
+												"一位名叫天晴·钱包光光（小型{@creature 平民|XMM}）的旅行商人近期在红木哨地开了间铺子。天晴是一位总是在笑的金发半身人，她就像自己的名字一样开朗。天晴在村间绿地的每天都在从她那沉重的大货车上卸货。在不做生意的时候，她会欢快地称赞自己的两匹马：油壶和蒲公英，并和路过的人聊天。",
+												{
+													"ENG_name": "Sunny's Wares",
+													"name": "天晴的货物",
+													"type": "entries",
+													"id": "022",
+													"page": 16,
+													"entries": [
+														"天晴售卖{@book 玩家手册|XPHB}中售价小于等于100GP的任何货物。然而部分货品存货有限：4份{@item 炽火胶|XPHB}，1份{@item 抗毒剂|XPHB}和4份{@item 治疗药水|XDMG|治疗药水}。"
+													]
+												},
+												{
+													"ENG_name": "Sunny's Generosity",
+													"name": "天晴的慷慨",
+													"type": "entries",
+													"id": "064",
+													"page": 16,
+													"entries": [
+														"天晴对顾客十分热情。她曾是附近镇子上的商人，但她总是忍不住去帮助有需要的人，这使得她没法在残酷的商业竞争中站住脚跟。以一个{@action 影响|XPHB}动作，一名角色可以尝试说服她降价。此时角色需要进行一次{@dc 10}的魅力（{@skill 游说|XPHB}）检定。检定成功则天晴的所有商品都会打上10%的折扣。"
 													]
 												}
 											]
 										}
 									]
-								},
+								}
+							]
+						},
+						{
+							"ENG_name": "Redwood Grove",
+							"name": "红木林环",
+							"type": "section",
+							"id": "023",
+							"page": 16,
+							"entries": [
+								"红木林环位于{@area 红木哨地|013|x}东侧三英里处。角色们抵达这里需要一小时时间。",
+								"如{@area 地图: 红木林环|00d|x}所示，红木林环中有着六颗红木，每颗树木都有大约300尺高。",
 								{
-									"ENG_name": "R8: Burial Mound",
-									"name": "R8: 埋骨坟丘",
+									"ENG_name": "Redwood Grove Features",
+									"name": "红木林环特征",
 									"type": "entries",
-									"page": 19,
-									"id": "03c",
+									"id": "024",
+									"page": 16,
 									"entries": [
+										"红木林环具有以下特征：",
 										{
-											"type": "insetReadaloud",
-											"page": 19,
-											"id": "03d",
-											"entries": [
-												"一片宽大、倾斜的土坡立在林环正中，高达30尺，周边被羽毛般的草地环绕着。土堆的边缘绽放着黄色的花朵，然而如今它们都看起来病怏怏。"
-											]
-										},
-										"这是一片埋骨坟丘，埋葬着一个世纪之前在对抗{@area 夕殁|012|x}的战斗中牺牲的三十四名精灵，其中亦包括了这些精灵们的领袖，艾瑟樊。",
-										"自夕临孵化之后，这些精灵的鬼魂便不再能够安息，它们在林环中制造了各种闹鬼迹象，以此预示着即将到来的灾难。在白日里，角色们只能这里感到一种诡异的、无法解读的预感。",
-										{
-											"ENG_name": "Haunted Mound",
-											"name": "幽鬼坟丘",
+											"ENG_name": "Haunted",
+											"name": "闹鬼",
 											"type": "entries",
-											"page": 19,
-											"id": "03e",
+											"id": "025",
+											"page": 16,
 											"entries": [
-												"到了夜晚，幽灵般的朦胧图景便会显现：已然逝去的精灵武者高举着长枪，时隐时现。其中一些精灵会用通用语和精灵语念出晦涩的警告。图景之中最显著的存在便是艾瑟樊，一位身着闪烁的板甲、手执着空剑鞘的雌雄莫辨的精灵。"
+												"自夕临孵化以来，那些昔日在与夕殁的战斗中牺牲的精灵们的亡魂便不愿再沉眠于安息。每到夜晚，他们便会化作无害的幽影，诡异地在这些树木间飘荡。微风会捎来鬼魂们的低语：\"当心，当心！\"以及\"她的后代苏醒了！\"。除此之外的更多闹鬼现象在区域{@area R8|03c|x}中有描述。"
 											]
 										},
 										{
-											"ENG_name": "Vision of the Past",
-											"name": "往日之影",
+											"ENG_name": "Light",
+											"name": "光线",
 											"type": "entries",
-											"page": 19,
-											"id": "03f",
+											"id": "026",
+											"page": 16,
 											"entries": [
-												"当一名角色在夜间首次于该区域停留超过1分钟时，该角色必须成功通过一次{@dc 12}的感知豁免，否则陷入{@condition 昏迷|XPHB}状态1小时。在这段时间内，该角色无法被用魔法性或凡俗性的手段唤醒。该角色会梦到这些精灵武者牺牲的那场战斗；在死于伤口之前，夕殁向数十名精灵释放她的剧毒吐息，令这些精灵痛苦地在她的巢穴中的隧道中窒息死亡。在苏醒之前，这名角色最后意识到的景象，是这条邪龙巨大的尸体堵住了地下洞穴。"
+												"日光能够照亮林环，在白天这里是{@variantrule 明亮光照|XPHB}。到了夜晚，林冠会遮蔽月光，使得林环处于黑暗。"
+											]
+										},
+										{
+											"ENG_name": "Stream",
+											"name": "溪流",
+											"type": "entries",
+											"id": "027",
+											"page": 16,
+											"entries": [
+												"一条小溪从林环的东侧蜿蜒而过。溪流宽5尺，深度则只有几英寸。然而，龙之魔法已然污染了溪流的水体。饮用溪水的生物必须成功通过一次{@dc 12}的体质豁免，否则收到3（{@dice 1d6}）毒素伤害且陷入{@condition 中毒|XPHB}状态1小时。"
 											]
 										}
 									]
+								},
+								{
+									"ENG_name": "Bark Samples",
+									"name": "树皮样本",
+									"type": "entries",
+									"id": "028",
+									"page": 16,
+									"entries": [
+										"以一个{@action 操作|XPHB}动作，一名角色可以使用{@item 小瓶|XPHB}从附近的红木上获取一份树皮样本。这些红木分别位于区域{@area R1|02a|x}、{@area R2|02c|x}、{@area R3|02e|x}、{@area R5|034|x}、{@area R6|036|x}以及{@area R7|038|x}。"
+									]
+								},
+								{
+									"ENG_name": "Redwood Grove Locations",
+									"name": "红木林环地点",
+									"type": "entries",
+									"id": "029",
+									"page": 16,
+									"entries": [
+										"以下是{@area 地图: 红木林环|00d|x}中标出的几个地点：",
+										{
+											"ENG_name": "R1: Looming Redwood",
+											"name": "R1: 高耸的红木",
+											"type": "entries",
+											"id": "02a",
+											"page": 17,
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "02b",
+													"page": 17,
+													"entries": [
+														"这株高耸的红木直插云霄，就连最下层的枝条也高不可攀，其树皮上却如哭泣般地渗出着漆黑的树液。树干周围遍布着染病的野草和凋零的野花。"
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "R2: Sickly Redwood",
+											"name": "R2: 染疫的红木",
+											"type": "entries",
+											"id": "02c",
+											"page": 17,
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "02d",
+													"page": 17,
+													"entries": [
+														"这株红木曾经华美，但如今它的树皮已然凋落，如同蛇蜕一般。它高耸的枝杈给这片区域笼上了一层病态的阴影。"
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "R3: Dryad's Tree",
+											"name": "R3: 树精之树",
+											"type": "entries",
+											"id": "02e",
+											"page": 17,
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "02f",
+													"page": 17,
+													"entries": [
+														"这株红木如塔楼般屹立着，其树干宛如建筑物般宽大，但其树皮已开始如干裂的皮肤般剥落。在离地几尺的地方，一个通体翠绿、头发由叶子构成的人正坐在一片真菌长成的宝座上。他用威严的眼神注视着正在靠近的你们。"
+													]
+												},
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "adventure/DrDe/006-01-003.dryad-with-tree.webp"
+													},
+													"width": 850,
+													"height": 2285,
+													"credit": "Dominik Mayer"
+												},
+												"这是凯能，一位早在夕临孵化之前就搬家至此的{@creature 树精|XMM}。他一开始将角色们认成土匪，因此其对角色们的态度为敌对，并命令玩家不要妄图去触碰他的树木。如果角色们尊重凯能的要求，他的态度便会变为冷漠。",
+												"以一个{@action 影响|XPHB}动作，一名角色可以请求凯能出力助其治愈森林。这样做的角色必须进行一次{@dc 12}的魅力（{@skill 游说|XPHB}）检定。检定成功则凯能的态度变为友好。他会尽其所能地回答问题，并欢迎角色们从这颗树上采集树皮样本。",
+												"凯能已经听说了一些关于一条雏龙正潜伏在夕殁昔日的巢穴之中的流言（见\"{@area 夕殁的巢穴|040|x}\"），并怀疑森林的腐化正是这雏龙所为。如果角色们并未表示他们要去斩杀这条雏龙，那凯能就会请求他们去这么做。他还警告角色们，有一个奇怪且愤怒的精灵正潜伏在巢穴入口附近（区域{@area R4|031|x}）。",
+												{
+													"ENG_name": "Slithering Spy",
+													"name": "蛇行间谍",
+													"type": "entries",
+													"id": "030",
+													"page": 17,
+													"entries": [
+														"在角色们与凯能交谈了几分钟后，一条{@creature 毒蛇|XMM}向这棵树爬来，并隐藏在它的根系之中。一个被动{@skill 察觉|XPHB}为13+的角色会注意到这条蛇。它是区域{@area L3|050|x}的蛇人，梅锐蕾莎的间谍。如果角色们与这条蛇展开战斗，蛇会在攻击一次后便试图从巢穴入口（区域{@area R4|031|x}）逃走。"
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "R4: Lair Entrance",
+											"name": "R4: 龙巢入口",
+											"type": "entries",
+											"id": "031",
+											"page": 18,
+											"entries": [
+												"这里是夕殁巢穴的入口（见\"{@area 夕殁的巢穴|040|x}\"）。失踪的精灵议会成员，{@area 阿明·风语|016|x}（中型{@creature 斥候|XMM}），还有他的{@creature 獒犬|XMM}，弗莱彻，正藏在这道裂口东北角处的根系之后，观察着角色们。",
+												"以一个{@action 搜索|XPHB}动作，一名角色可以检查龙巢入口附近的地面并进行一次{@dc 14}的感知（{@skill 察觉|XPHB}）检定。成功时，该角色找到了阿明的靴印和弗莱彻的爪印。如果阿明发现角色们找到了他留下的痕迹，或是角色们试图进入龙巢，他就便会与角色们战斗。",
+												{
+													"ENG_name": "Helping Armin",
+													"name": "帮助阿明",
+													"type": "entries",
+													"id": "032",
+													"page": 18,
+													"entries": [
+														"一个月前，在阿明进入林环研究这些腐化的时候，夕临俘获了他。这条雏龙花费了很多时日来折磨他，直到走投无路的阿明同意为他赶走一切妄图进入巢穴的人。",
+														"阿明拼尽全力地想要逃跑，并警告村民们这潜伏在林环中的腐化，但夕临已让阿明确信，一旦他试图逃离森林，这条雏龙就会杀死所有村民。阿明对任何靠近者的态度都是敌对。",
+														"以一个{@action 影响|XPHB}动作，一名角色可以试图说服阿明相信他们足够强大能够击败夕临。该角色进行一次{@dc 13}的魅力（{@skill 游说|XPHB}）检定。检定成功则阿明会停止战斗，且他的态度变为友好。阿明无法挑战雏龙，他会请求角色们护送他回到村子里。阿明知道其它失踪的精灵都被带进了龙巢，但并不知晓这些精灵们的命运，因为他无权进入龙巢。"
+													]
+												},
+												{
+													"ENG_name": "Development",
+													"name": "发展",
+													"type": "entries",
+													"id": "033",
+													"page": 18,
+													"entries": [
+														"如果角色们将阿明带回红木哨地，这位精灵会受到热泪盈眶、满怀感激的迎接。其他议会成员为同伴归来欣喜若狂，当晚便在村间绿地举行了一场欢庆盛宴。若角色们未出席，下次返回红木哨地时，仍会收到他们诚挚的谢意。"
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "R5: Muddy Bog",
+											"name": "R5: 泥泞沼地",
+											"type": "entries",
+											"id": "034",
+											"page": 19,
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "035",
+													"page": 19,
+													"entries": [
+														"这株变得苍白的红木从泥泞的沼地中心长出。在西南角，一条涓涓细流将泥地拦在了河岸的一侧。"
+													]
+												},
+												"穿过林环的这条溪流使得恶臭且带毒的污泥在这片区域蔓延。泥泞的区域是{@variantrule 困难地形|XPHB}，且在其中结束回合的生物必须成功通过一次{@dc 10}的体质豁免检定，否则陷入{@condition 中毒|XPHB}状态直至其下一回合开始。",
+												"三只{@creature 泥魔蝠|XMM|泥魔蝠}躲藏在这些泥泞里，它们是被龙蕴含的邪恶魔法潜力吸引至此。这些魔蝠们会一直保持躲藏，直到至少一名角色踏入泥地，此时它们将会伏击角色们。一旦有两只魔蝠被摧毁，第三只魔蝠便会试图逃跑。"
+											]
+										},
+										{
+											"ENG_name": "R6: Centipede Nest",
+											"name": "R6: 蜈蚣巢穴",
+											"type": "entries",
+											"id": "036",
+											"page": 19,
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "037",
+													"page": 19,
+													"entries": [
+														"这株红木已经变得病态，它的树干周围生长着恶臭的矮树丛。"
+													]
+												},
+												"森林的腐化引来了一窝致命的蜈蚣潜藏于此。当一名角色靠近这株红木时，一个{@creature 昆虫集群|XMM}蜈蚣）和一只{@creature 巨蜈蚣|XMM}便会从树皮和树根之下蠕行而出，与角色们战斗。"
+											]
+										},
+										{
+											"ENG_name": "R7: Gruesome Camp",
+											"name": "R7: 骇人营地",
+											"type": "entries",
+											"id": "038",
+											"page": 19,
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "039",
+													"page": 19,
+													"entries": [
+														"这株红木的东北方有着一片燃尽的篝火，周围倒着三具类人生物的尸体。它们已开始腐烂，烂肉之上长出了黑色的斑纹。第一具尸体靠倒在树边，虫子在他张开的、黑漆漆的烂嘴里爬来爬去。第二具尸体就倒在上一具旁边，身上披着一片毯子。最后一具尸体蜷在一张发臭的铺盖里。"
+													]
+												},
+												"这三具尸体实际是被森林中的堕落能量所腐化、复生的{@creature 丧尸|XMM|丧尸们}。丧尸们会在角色们靠近任意一只丧尸的5尺内以及试图获取树皮样本时发起攻击。",
+												"以一个{@action 搜索|XPHB}动作，一名位于其中一只丧尸10尺内的角色可以检查尸体并进行一次{@dc 14}的感知（{@skill 医药|XPHB}）检定。成功时，该角色会发现这些人的死因是喝了附近溪流中的毒水。",
+												"如果角色们听过村间{@adventure 村间绿地流言|DrDe-DaS|1|村间绿地流言}表中的第一条流言，他们便能认出这些丧尸就是之前在森林边缘抢劫过路人的匪徒。",
+												{
+													"ENG_name": "Mysterious Footprints",
+													"name": "奇怪的脚印",
+													"type": "entries",
+													"id": "03a",
+													"page": 19,
+													"entries": [
+														"以一个{@action 搜索|XPHB}动作，一名角色可以搜查营地并进行一次{@dc 12}的感知（{@skill 求生|XPHB}）检定。成功时，该角色能发现一些靴印和脚印。这是{@area 阿明·风语|016|x}和他的獒犬留下的痕迹，他们现在正位于区域{@area R4|031|x}。"
+													]
+												},
+												{
+													"ENG_name": "Treasure",
+													"name": "宝藏",
+													"type": "entries",
+													"id": "03b",
+													"page": 19,
+													"entries": [
+														"翻找这些尸体的角色可以找到以下物品：",
+														{
+															"type": "list",
+															"items": [
+																"11 GP",
+																"240 SP",
+																"400 CP",
+																"三把{@item 轻弩|XPHB|轻弩}",
+																"三把{@item 弯刀|XPHB|弯刀}",
+																"三十支弩矢",
+																"{@item 医疗包|XPHB}",
+																"{@item 附盖提灯|XPHB}",
+																"两瓶{@item 燃油|XPHB}",
+																"{@item 铲子|XPHB}"
+															]
+														}
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "R8: Burial Mound",
+											"name": "R8: 埋骨坟丘",
+											"type": "entries",
+											"id": "03c",
+											"page": 19,
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "03d",
+													"page": 19,
+													"entries": [
+														"一片宽大、倾斜的土坡立在林环正中，高达30尺，周边被羽毛般的草地环绕着。土堆的边缘绽放着黄色的花朵，然而如今它们都看起来病怏怏。"
+													]
+												},
+												"这是一片埋骨坟丘，埋葬着一个世纪之前在对抗{@area 夕殁|012|x}的战斗中牺牲的三十四名精灵，其中亦包括了这些精灵们的领袖，艾瑟樊。",
+												"自夕临孵化之后，这些精灵的鬼魂便不再能够安息，它们在林环中制造了各种闹鬼迹象，以此预示着即将到来的灾难。在白日里，角色们只能这里感到一种诡异的、无法解读的预感。",
+												{
+													"ENG_name": "Haunted Mound",
+													"name": "幽鬼坟丘",
+													"type": "entries",
+													"id": "03e",
+													"page": 19,
+													"entries": [
+														"到了夜晚，幽灵般的朦胧图景便会显现：已然逝去的精灵武者高举着长枪，时隐时现。其中一些精灵会用通用语和精灵语念出晦涩的警告。图景之中最显著的存在便是艾瑟樊，一位身着闪烁的板甲、手执着空剑鞘的雌雄莫辨的精灵。"
+													]
+												},
+												{
+													"ENG_name": "Vision of the Past",
+													"name": "往日之影",
+													"type": "entries",
+													"id": "03f",
+													"page": 19,
+													"entries": [
+														"当一名角色在夜间首次于该区域停留超过1分钟时，该角色必须成功通过一次{@dc 12}的感知豁免，否则陷入{@condition 昏迷|XPHB}状态1小时。在这段时间内，该角色无法被用魔法性或凡俗性的手段唤醒。该角色会梦到这些精灵武者牺牲的那场战斗；在死于伤口之前，夕殁向数十名精灵释放她的剧毒吐息，令这些精灵痛苦地在她的巢穴中的隧道中窒息死亡。在苏醒之前，这名角色最后意识到的景象，是这条邪龙巨大的尸体堵住了地下洞穴。"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Death-at-Sunset's Lair",
+							"name": "夕殁的巢穴",
+							"type": "section",
+							"id": "040",
+							"page": 20,
+							"entries": [
+								"夕临的巢穴就是她逝去的母亲，夕殁，所留下的空巢。",
+								{
+									"type": "gallery",
+									"images": [
+										{
+											"type": "image",
+											"id": "07d",
+											"href": {
+												"type": "internal",
+												"path": "adventure/DrDe/007-map-01.02-death-at-sunsets-lair-dm.webp"
+											},
+											"hrefThumbnail": {
+												"type": "internal",
+												"path": "adventure/DrDe/thumbnail/007-map-01.02-death-at-sunsets-lair-dm.webp"
+											},
+											"width": 4096,
+											"height": 2788,
+											"imageType": "map",
+											"grid": {
+												"type": "square",
+												"size": 126,
+												"offsetX": 34,
+												"offsetY": 6
+											},
+											"title": "地图1.2: 夕殁的巢穴",
+											"credit": "Damien Mammoliti",
+											"mapRegions": [
+												{
+													"area": "047",
+													"points": [
+														[
+															2357,
+															1058
+														],
+														[
+															2554,
+															1014
+														],
+														[
+															2664,
+															971
+														],
+														[
+															2731,
+															898
+														],
+														[
+															2743,
+															800
+														],
+														[
+															2851,
+															733
+														],
+														[
+															2883,
+															643
+														],
+														[
+															2863,
+															608
+														],
+														[
+															2766,
+															625
+														],
+														[
+															2738,
+															660
+														],
+														[
+															2690,
+															646
+														],
+														[
+															2656,
+															565
+														],
+														[
+															2722,
+															520
+														],
+														[
+															2699,
+															454
+														],
+														[
+															2709,
+															404
+														],
+														[
+															2816,
+															384
+														],
+														[
+															2905,
+															376
+														],
+														[
+															2967,
+															453
+														],
+														[
+															2990,
+															412
+														],
+														[
+															3054,
+															335
+														],
+														[
+															3153,
+															245
+														],
+														[
+															3276,
+															154
+														],
+														[
+															3363,
+															47
+														],
+														[
+															3982,
+															518
+														],
+														[
+															3909,
+															570
+														],
+														[
+															3857,
+															651
+														],
+														[
+															3772,
+															727
+														],
+														[
+															3683,
+															808
+														],
+														[
+															3647,
+															864
+														],
+														[
+															3580,
+															884
+														],
+														[
+															3543,
+															866
+														],
+														[
+															3497,
+															904
+														],
+														[
+															3453,
+															943
+														],
+														[
+															3441,
+															977
+														],
+														[
+															3372,
+															948
+														],
+														[
+															3318,
+															960
+														],
+														[
+															3254,
+															1032
+														],
+														[
+															3229,
+															1076
+														],
+														[
+															3238,
+															1134
+														],
+														[
+															3278,
+															1169
+														],
+														[
+															3261,
+															1209
+														],
+														[
+															3249,
+															1276
+														],
+														[
+															3220,
+															1309
+														],
+														[
+															3139,
+															1360
+														],
+														[
+															2978,
+															1355
+														],
+														[
+															2805,
+															1340
+														],
+														[
+															2568,
+															1264
+														],
+														[
+															2427,
+															1164
+														],
+														[
+															2368,
+															1094
+														]
+													]
+												},
+												{
+													"area": "04d",
+													"points": [
+														[
+															3063,
+															1930
+														],
+														[
+															3122,
+															1857
+														],
+														[
+															3203,
+															1741
+														],
+														[
+															3334,
+															1665
+														],
+														[
+															3555,
+															1686
+														],
+														[
+															3679,
+															1778
+														],
+														[
+															3688,
+															1860
+														],
+														[
+															3693,
+															1967
+														],
+														[
+															3686,
+															2043
+														],
+														[
+															3668,
+															2137
+														],
+														[
+															3625,
+															2218
+														],
+														[
+															3571,
+															2332
+														],
+														[
+															3488,
+															2320
+														],
+														[
+															3450,
+															2369
+														],
+														[
+															3388,
+															2360
+														],
+														[
+															3324,
+															2332
+														],
+														[
+															3247,
+															2351
+														],
+														[
+															3162,
+															2339
+														],
+														[
+															3086,
+															2299
+														],
+														[
+															2961,
+															2268
+														],
+														[
+															2950,
+															2198
+														],
+														[
+															2958,
+															2086
+														],
+														[
+															3001,
+															2006
+														],
+														[
+															3028,
+															1951
+														]
+													]
+												},
+												{
+													"area": "050",
+													"points": [
+														[
+															3324,
+															1622
+														],
+														[
+															3284,
+															1644
+														],
+														[
+															3232,
+															1644
+														],
+														[
+															3202,
+															1627
+														],
+														[
+															3165,
+															1622
+														],
+														[
+															3183,
+															1543
+														],
+														[
+															3237,
+															1476
+														],
+														[
+															3261,
+															1400
+														],
+														[
+															3296,
+															1336
+														],
+														[
+															3319,
+															1305
+														],
+														[
+															3318,
+															1241
+														],
+														[
+															3379,
+															1197
+														],
+														[
+															3420,
+															1141
+														],
+														[
+															3458,
+															1095
+														],
+														[
+															3497,
+															1054
+														],
+														[
+															3534,
+															1000
+														],
+														[
+															3560,
+															1060
+														],
+														[
+															3593,
+															1124
+														],
+														[
+															3641,
+															1180
+														],
+														[
+															3682,
+															1244
+														],
+														[
+															3702,
+															1323
+														],
+														[
+															3726,
+															1410
+														],
+														[
+															3723,
+															1473
+														],
+														[
+															3715,
+															1543
+														],
+														[
+															3661,
+															1599
+														],
+														[
+															3595,
+															1628
+														],
+														[
+															3519,
+															1650
+														],
+														[
+															3427,
+															1647
+														],
+														[
+															3379,
+															1631
+														]
+													]
+												},
+												{
+													"area": "053",
+													"points": [
+														[
+															1727,
+															2264
+														],
+														[
+															1768,
+															2190
+														],
+														[
+															1818,
+															2144
+														],
+														[
+															1907,
+															2091
+														],
+														[
+															1978,
+															2105
+														],
+														[
+															2018,
+															2107
+														],
+														[
+															2067,
+															2082
+														],
+														[
+															2156,
+															2091
+														],
+														[
+															2252,
+															2094
+														],
+														[
+															2390,
+															2107
+														],
+														[
+															2483,
+															2107
+														],
+														[
+															2575,
+															2107
+														],
+														[
+															2621,
+															2184
+														],
+														[
+															2603,
+															2302
+														],
+														[
+															2555,
+															2398
+														],
+														[
+															2517,
+															2502
+														],
+														[
+															2475,
+															2516
+														],
+														[
+															2381,
+															2499
+														],
+														[
+															2278,
+															2508
+														],
+														[
+															2158,
+															2513
+														],
+														[
+															2066,
+															2510
+														],
+														[
+															1979,
+															2473
+														],
+														[
+															1887,
+															2475
+														],
+														[
+															1828,
+															2461
+														],
+														[
+															1767,
+															2445
+														],
+														[
+															1781,
+															2368
+														],
+														[
+															1751,
+															2304
+														]
+													]
+												},
+												{
+													"area": "057",
+													"points": [
+														[
+															742,
+															1396
+														],
+														[
+															948,
+															1356
+														],
+														[
+															1239,
+															1329
+														],
+														[
+															1458,
+															1335
+														],
+														[
+															1592,
+															1309
+														],
+														[
+															1687,
+															1339
+														],
+														[
+															1804,
+															1338
+														],
+														[
+															1881,
+															1295
+														],
+														[
+															1918,
+															1258
+														],
+														[
+															2018,
+															1196
+														],
+														[
+															2152,
+															1165
+														],
+														[
+															2185,
+															1107
+														],
+														[
+															2266,
+															1088
+														],
+														[
+															2319,
+															1055
+														],
+														[
+															2359,
+															1144
+														],
+														[
+															2471,
+															1239
+														],
+														[
+															2602,
+															1319
+														],
+														[
+															2790,
+															1375
+														],
+														[
+															3002,
+															1387
+														],
+														[
+															3153,
+															1378
+														],
+														[
+															3218,
+															1375
+														],
+														[
+															3162,
+															1447
+														],
+														[
+															3121,
+															1578
+														],
+														[
+															3088,
+															1695
+														],
+														[
+															3018,
+															1861
+														],
+														[
+															3002,
+															1926
+														],
+														[
+															2925,
+															1991
+														],
+														[
+															2879,
+															2028
+														],
+														[
+															2780,
+															2028
+														],
+														[
+															2719,
+															2041
+														],
+														[
+															2668,
+															2061
+														],
+														[
+															2614,
+															2031
+														],
+														[
+															2556,
+															1964
+														],
+														[
+															2497,
+															1997
+														],
+														[
+															2408,
+															2003
+														],
+														[
+															2352,
+															2014
+														],
+														[
+															2279,
+															2043
+														],
+														[
+															2211,
+															2023
+														],
+														[
+															2137,
+															2025
+														],
+														[
+															2066,
+															2015
+														],
+														[
+															2001,
+															2034
+														],
+														[
+															1983,
+															2015
+														],
+														[
+															1921,
+															2048
+														],
+														[
+															1817,
+															2120
+														],
+														[
+															1752,
+															2175
+														],
+														[
+															1706,
+															2252
+														],
+														[
+															1650,
+															2272
+														],
+														[
+															1561,
+															2265
+														],
+														[
+															1484,
+															2248
+														],
+														[
+															1386,
+															2225
+														],
+														[
+															1262,
+															2169
+														],
+														[
+															1155,
+															2095
+														],
+														[
+															1075,
+															2120
+														],
+														[
+															961,
+															2077
+														],
+														[
+															927,
+															2003
+														],
+														[
+															924,
+															1920
+														],
+														[
+															893,
+															1834
+														],
+														[
+															844,
+															1778
+														],
+														[
+															891,
+															1664
+														],
+														[
+															865,
+															1552
+														],
+														[
+															754,
+															1467
+														]
+													]
+												},
+												{
+													"area": "05d",
+													"points": [
+														[
+															554,
+															1501
+														],
+														[
+															604,
+															1459
+														],
+														[
+															668,
+															1489
+														],
+														[
+															724,
+															1510
+														],
+														[
+															754,
+															1501
+														],
+														[
+															847,
+															1564
+														],
+														[
+															868,
+															1660
+														],
+														[
+															821,
+															1772
+														],
+														[
+															764,
+															1789
+														],
+														[
+															696,
+															1798
+														],
+														[
+															644,
+															1855
+														],
+														[
+															573,
+															1866
+														],
+														[
+															514,
+															1829
+														],
+														[
+															511,
+															1763
+														],
+														[
+															491,
+															1683
+														],
+														[
+															493,
+															1597
+														],
+														[
+															520,
+															1529
+														]
+													]
+												},
+												{
+													"area": "055",
+													"points": [
+														[
+															726,
+															1349
+														],
+														[
+															743,
+															1290
+														],
+														[
+															762,
+															1200
+														],
+														[
+															756,
+															1094
+														],
+														[
+															718,
+															1031
+														],
+														[
+															796,
+															961
+														],
+														[
+															803,
+															881
+														],
+														[
+															933,
+															826
+														],
+														[
+															1024,
+															722
+														],
+														[
+															1183,
+															686
+														],
+														[
+															1292,
+															682
+														],
+														[
+															1432,
+															619
+														],
+														[
+															1584,
+															648
+														],
+														[
+															1668,
+															729
+														],
+														[
+															1774,
+															743
+														],
+														[
+															1909,
+															762
+														],
+														[
+															1939,
+															676
+														],
+														[
+															1979,
+															587
+														],
+														[
+															2036,
+															490
+														],
+														[
+															2152,
+															460
+														],
+														[
+															2272,
+															467
+														],
+														[
+															2420,
+															513
+														],
+														[
+															2570,
+															581
+														],
+														[
+															2619,
+															657
+														],
+														[
+															2663,
+															739
+														],
+														[
+															2707,
+															813
+														],
+														[
+															2627,
+															898
+														],
+														[
+															2555,
+															952
+														],
+														[
+															2437,
+															952
+														],
+														[
+															2365,
+															974
+														],
+														[
+															2332,
+															1003
+														],
+														[
+															2217,
+															1007
+														],
+														[
+															2133,
+															1062
+														],
+														[
+															2036,
+															1119
+														],
+														[
+															1947,
+															1138
+														],
+														[
+															1882,
+															1164
+														],
+														[
+															1867,
+															1227
+														],
+														[
+															1795,
+															1265
+														],
+														[
+															1647,
+															1244
+														],
+														[
+															1546,
+															1244
+														],
+														[
+															1466,
+															1297
+														],
+														[
+															1254,
+															1273
+														],
+														[
+															946,
+															1307
+														]
+													]
+												}
+											]
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "adventure/DrDe/008-map-01.02-death-at-sunsets-lair-player.webp"
+											},
+											"width": 4096,
+											"height": 2788,
+											"imageType": "mapPlayer",
+											"grid": {
+												"type": "square",
+												"size": 126,
+												"offsetX": 34,
+												"offsetY": 6
+											},
+											"title": "玩家版本",
+											"credit": "Damien Mammoliti",
+											"mapParent": {
+												"id": "07d"
+											}
+										}
+									]
+								},
+								{
+									"ENG_name": "Lair Features",
+									"name": "巢穴特征",
+									"type": "entries",
+									"id": "041",
+									"page": 20,
+									"entries": [
+										"巢穴具有以下特征。",
+										{
+											"ENG_name": "Ceilings",
+											"name": "天花板",
+											"type": "entries",
+											"id": "042",
+											"entries": [
+												"区域{@area L1|047|x}-{@area L5|055|x} 以及{@area L7|05d|x}的天花板高 40 尺。雏龙所居住的龙骸大厅（区域 {@area L6|057|x}）则高 60 尺。"
+											]
+										},
+										{
+											"ENG_name": "Light",
+											"name": "光线",
+											"type": "entries",
+											"id": "043",
+											"entries": [
+												"龙巢内部被黑暗笼罩。每个区域的描述都假定玩家能够在黑暗中视物或拥有光源。"
+											]
+										},
+										{
+											"ENG_name": "Tracking",
+											"name": "追踪",
+											"type": "entries",
+											"id": "044",
+											"entries": [
+												"雏龙的足迹很独特；以一个{@action 搜索|XPHB}动作，任何角色都可以试图寻找踪迹并进行一次 {@dc 13} 的感知（{@skill 求生|XPHB}）检定。检定成功则该角色找到了雏龙的足迹\u2014\u2014一路通向区域{@area L6|057|x}。"
+											]
+										},
+										{
+											"ENG_name": "Walls",
+											"name": "墙壁",
+											"type": "entries",
+											"id": "045",
+											"entries": [
+												"龙巢的墙壁由松软的泥土和粗壮的树根构成。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Lair Locations",
+									"name": "巢穴地点",
+									"type": "entries",
+									"id": "046",
+									"page": 20,
+									"entries": [
+										"以下是{@area 地图: 夕殁的巢穴|07d|x}中标出的几个地点：",
+										{
+											"ENG_name": "L1: Guarded Tunnel",
+											"name": "L1: 有人驻守的隧道",
+											"type": "entries",
+											"id": "047",
+											"page": 20,
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "048",
+													"page": 20,
+													"entries": [
+														"这条自高处倾斜向下的隧道通向幽深的黑暗，四周由泥土与扭曲的树根围绕而成。这些墙壁上有着巨大的爪痕。"
+													]
+												},
+												"墙壁西北侧的凹室中藏着红木哨地的四名精灵（中型{@creature 警卫|XMM|警卫们}）：达灵，颉芮，莱琳妮，还有蕾娜。这些精灵对角色们的态度为敌对。一旦角色们深入该区域超过 10 尺，它们就会开始战斗，叫喊着让角色们离开，别再回来。",
+												{
+													"ENG_name": "Helping the Elves",
+													"name": "帮助精灵",
+													"type": "entries",
+													"id": "049",
+													"page": 20,
+													"entries": [
+														"在{@area 阿明·风语|013|x}失踪后，这几名精灵相继前往红木林环，寻找这位议会成员。他们都遭受了与阿明相同的命运：夕临抓住他们，折磨他们，迫使他们成为自己的龙巢守卫。夕临骗这些精灵，一旦他们试图逃跑，他母亲的鬼魂便会把他们全部杀掉。雏龙还威胁到，要是这些精灵胆敢违背他，他就会对村民们出手。",
+														"以一个{@action 影响|XPHB}动作，一名角色可以告诉精灵们雏龙很快就将被打败，或是告诉他们根本没有什么龙的鬼魂。进行一次 {@dc 14} 的魅力（{@skill 游说|XPHB}）检定，检定成功则精灵们停止战斗，且态度变为友好。一旦精灵们的态度变为友好，他们就会离开，返回红木哨地。在离开之前，颉芮会告诉角色们他的铺盖里藏着一瓶强酸（见下文\"宝藏\"）。"
+													]
+												},
+												{
+													"ENG_name": "Downward Slope",
+													"name": "下坡路",
+													"type": "entries",
+													"id": "04a",
+													"page": 21,
+													"entries": [
+														"西南方向的坡道向下深入了 20 尺，通往夕殁之骨骸所在的大厅（区域{@area L6|057|x}）。这片下坡地段是{@variantrule 困难地形|XPHB}。"
+													]
+												},
+												{
+													"ENG_name": "Treasure",
+													"name": "宝藏",
+													"type": "entries",
+													"id": "04b",
+													"page": 21,
+													"entries": [
+														"西北侧的凹室中摆着精灵们的铺盖以及贫乏的食物补给。颉芮的铺盖中藏着一瓶强酸。他一直想鼓起勇气把强酸扔向雏龙。"
+													]
+												},
+												{
+													"ENG_name": "Development",
+													"name": "发展",
+													"type": "entries",
+													"id": "04c",
+													"page": 21,
+													"entries": [
+														"如果精灵们回到了红木哨地，他们会受到热切地欢迎。村民们会在晚间于村间绿地上欢庆。如果角色们错过了这次机会，他们会在下次回到红木哨地时收获发自真心的感谢。"
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "L2: Snake Pit",
+											"name": "L2: 蛇坑",
+											"type": "entries",
+											"id": "04d",
+											"page": 21,
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "04e",
+													"page": 21,
+													"entries": [
+														"根系与土层构成了这间洞室的天花板。洞室的中间是一个宽大的浅坑，其中爬满了蠕行的蛇群。"
+													]
+												},
+												"这个坑里面养着的是梅锐蕾莎（区域 L3 的蛇人）的蛇群宠物。坑里有两条{@creature 巨毒蛇|XMM|巨毒蛇}，一条{@creature 蟒蛇|XMM}，还有六条{@creature 毒蛇|XMM|毒蛇}。这些蛇不会自行离开浅坑，并会与进入坑中的角色战斗。",
+												{
+													"ENG_name": "Pit Edges",
+													"name": "坑的边缘",
+													"type": "entries",
+													"id": "04f",
+													"page": 21,
+													"entries": [
+														"蛇坑的边缘角度很大，为{@variantrule 困难地形|XPHB}。蛇坑有三尺深。"
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "L3: Marilissa's Quarters",
+											"name": "L3：梅锐蕾莎的住处",
+											"type": "entries",
+											"id": "050",
+											"page": 21,
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "051",
+													"page": 21,
+													"entries": [
+														"这片布置奇特的生活区包括一张床、一把椅子以及一张桌子。此时坐在椅子上的是一个明明有着人类身体、却长着一颗蛇头的女人。她抚摸着盘在腿上的蛇，向着你们露出恶毒的微笑。"
+													]
+												},
+												"这就是梅锐蕾莎，一条{@creature 恶咒蛇人（1 型）|XMM}，还有盘在她腿上的{@creature 毒蛇|XMM}宠物罗比。",
+												"五年之前，当夕临孵化之时，梅锐蕾莎正巧路过红木林地。她感受到了渗入森林之中的龙之魔力，坚信她天生就该为这条雏龙服务，因为这条雏龙注定要成长为可怕的巨龙，而自己便能因此平步青云。她是这条雏龙最忠诚的手下。",
+												{
+													"ENG_name": "Dealing with Marilissa",
+													"name": "对待梅锐蕾莎",
+													"type": "entries",
+													"id": "052",
+													"page": 22,
+													"entries": [
+														"如果角色们抵达该区域但尚未杀死夕临，梅锐蕾莎对他们的态度便是冷漠，并质问为何他们会出现在这里。如果角色们表现出哪怕一点对雏龙的敌意，梅锐蕾莎及其宠物的态度便会变为敌对，并与其交战。梅锐蕾莎会为了保护雏龙而战斗至死。",
+														{
+															"type": "image",
+															"href": {
+																"type": "internal",
+																"path": "adventure/DrDe/009-01-004.yuan-ti-with-serpents.webp"
+															},
+															"width": 850,
+															"height": 2367,
+															"credit": "Dominik Mayer"
+														},
+														"以一个{@action 影响|XPHB}动作，一名角色可以尝试对梅锐蕾莎说谎，隐瞒其真实意图。进行一次 {@dc 12} 的魅力（{@skill 欺瞒|XPHB}）检定，成功时，梅锐蕾莎相信角色们并不是为了伤害雏龙而来。她会允许角色们安全离开，但如果角色们在巢穴中的其它地方引发战斗，梅锐蕾莎也会赶来，作为敌人加入战场。",
+														"如果角色们告诉她他们已经杀死了雏龙，梅锐蕾莎将拒绝任何交流。她告诉角色们，她会为雏龙报仇并享受杀掉他们的过程，立刻开始战斗。"
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "L4: Root Cellar",
+											"name": "L4: 根窖",
+											"type": "entries",
+											"id": "053",
+											"page": 22,
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "054",
+													"page": 22,
+													"entries": [
+														"洞室的土墙上爬满了粗壮的树根和干燥的枯枝。"
+													]
+												},
+												"一只{@creature 枯藤怪|XMM}和一只{@creature 枯枝怪|XMM}会在此保持静止，直到玩家进入该区域超过 10 尺。这些枯萎怪随即向玩家逼近并战斗至死。"
+											]
+										},
+										{
+											"ENG_name": "L5: Centipede Infestation",
+											"name": "L5: 蜈蚣肆虐之地",
+											"type": "entries",
+											"id": "055",
+											"page": 22,
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "056",
+													"page": 22,
+													"entries": [
+														"许多有许多腿的虫子群聚在一起，覆盖了这条狭长洞室的北墙和南墙。"
+													]
+												},
+												"两只个{@creature 昆虫集群|XMM|昆虫集群}（蜈蚣）和两只{@creature 巨蜈蚣|XMM|巨蜈蚣}在这些墙壁间爬行。这些虫群会与任何靠近到该区域的北墙或南墙 5 尺内的生物战斗。"
+											]
+										},
+										{
+											"ENG_name": "L6: Corpse Chamber",
+											"name": "L6: 龙骸大厅",
+											"type": "entries",
+											"id": "057",
+											"page": 22,
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "058",
+													"page": 22,
+													"entries": [
+														"房间中央，一团淡薄的绿色雾气笼罩着一具巨大的龙骸。透过这条死龙的眼窝，你们能看到颅骨内部一个灵动穿行着的身影。\"吾乃夕临！\"一个音调高昂的声音从颅骨内部响起。\"踏入吾之巢穴者，唯有灾厄相伴！\""
+													]
+												},
+												"夕临，自夕殁的龙蛋中孵化的{@creature 绿龙雏龙|XMM}，就生活在这件厅室里。这条雏龙在他母亲的骨骸间穿行，试图引诱角色们进入这些剧毒的瘴气。当角色们进入瘴气之后，雏龙便会开始战斗。如果梅锐蕾莎（区域 L3 的蛇人）注意到此处的战斗，她会在战斗的第三轮结束时抵达战场，帮助夕临作战。",
+												{
+													"ENG_name": "Roleplaying Sunset-Is-Nigh",
+													"name": "扮演夕临",
+													"type": "entries",
+													"id": "059",
+													"page": 22,
+													"entries": [
+														"这条雏龙以延续其母亲的名号为荣。他残忍且傲慢，自缪尊贵。夕临想要超越他的母亲。他让被俘获的精灵畏惧于他的恐怖，这些成就增进了他的自信。",
+														"夕临会抓住每个机会嘲讽角色（使用龙语），将他们称为绝无可能战胜他的弱者与伪装出来的英雄。这条雏龙坚称自己是一条强大的巨龙，终有一日角色们所珍视的一切都将被他征服。"
+													]
+												},
+												{
+													"ENG_name": "Sickening Miasma",
+													"name": "致病毒瘴",
+													"type": "entries",
+													"id": "05a",
+													"page": 22,
+													"entries": [
+														"尽管夕殁已经死去很久了，但她所遗留的魔法仍然令这件洞室内翻涌着剧毒的瘴气。地图中的虚线框出了瘴气覆盖的区域。在一个回合中首次进入瘴气区域或在该区域内开始回合的角色必须成功通过一次 {@dc 12} 的体质豁免，否则陷入{@condition 中毒|XPHB}状态直至其下一回合开始。"
+													]
+												},
+												{
+													"ENG_name": "Skeleton",
+													"name": "骷髅",
+													"type": "entries",
+													"id": "05b",
+													"page": 22,
+													"entries": [
+														"夕殁的巨大骨骸阻碍了通行。带有骨头的区域是{@variantrule 困难地形|XPHB}。"
+													]
+												},
+												{
+													"ENG_name": "Treasure",
+													"name": "宝藏",
+													"type": "entries",
+													"id": "05c",
+													"page": 22,
+													"entries": [
+														"夕殁的宝库在一个世纪前就被红木林环精灵们搜刮了，他们出售了部分物品以支付修复森林的开销。剩余的物品则被分给了林地的住民。不过，一些散落的硬币组成了一条小路，向西直至一处小凹室（区域{@area L7|05d|x}），那是夕临为自己日益增长的宝库开掘的新仓库。一名角色可以花费 1 分钟的时间收集这些散落的钱币，加起来共有 6GP，37SP 以及 30CP。"
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "L7: Wyrmling's Hoard",
+											"name": "L7: 雏龙的宝库",
+											"type": "entries",
+											"id": "05d",
+											"page": 22,
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "05e",
+													"page": 22,
+													"entries": [
+														"数以千计的宝石与钱币堆在这件小室之中，其中大多为铜币和银币，但也混杂了少数金币。宝藏堆的中间插着一把华丽的剑，其上刻印着精灵的符文。"
+													]
+												},
+												"夕临在此处存储他巧取豪夺而来的宝藏。",
+												{
+													"ENG_name": "Treasure",
+													"name": "宝藏",
+													"type": "entries",
+													"id": "05f",
+													"page": 22,
+													"entries": [
+														"这处宝库包含以下宝物：",
+														{
+															"type": "list",
+															"items": [
+																"210 GP, 3,150 SP, 6,300 CP",
+																"十二颗{@item 月光石|XDMG|月光石}（每颗价值50GP）",
+																"玉质法球（价值 100GP），上面用炼狱语写着斯泰吉亚的名讳",
+																"金杯（价值 50GP）",
+																"镶着银边的手镜（价值 40GP）",
+																"象牙梳（价值 35GP）",
+																"{@item 无踪粉|XDMG}",
+																"{@item 卡夫统灵药|XDMG}",
+																"{@item 巨人之力药水|XDMG}（山丘）",
+																"{@spell 蛛网术|XPHB}的{@item 法术卷轴|XDMG}"
+															]
+														}
+													]
+												},
+												{
+													"ENG_name": "Leafwarden",
+													"name": "落叶守望",
+													"type": "entries",
+													"id": "065",
+													"page": 23,
+													"entries": [
+														"位于宝库正中的这把剑正是精灵武者艾瑟樊的佩剑，落叶守望。当邪龙被斩杀时，这把剑嵌入了夕殁的血肉中，因此精灵们没能寻回它。落叶守望是一把{@item 屠龙者长剑|XDMG|屠龙者 (长剑)}。"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Conclusion",
+							"name": "结局",
+							"type": "section",
+							"id": "060",
+							"page": 23,
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/010-01-005.green-dragon-circle.webp"
+									},
+									"width": 1700,
+									"height": 1515,
+									"credit": "Dominik Mayer"
+								},
+								"夕临败亡之后，红木哨地中的村民们大喜过望。为了纪念角色们的凯旋，议会在村间绿地举行了一场欢宴。如果角色们从{@area 红木哨地|013|x}中救出了阿明，并从龙巢中救出了剩下的精灵，那这些失踪者们也会出席，传唱着角色们的英勇事迹。议会会招待角色们，他们想在村子里停留多久都可以。",
+								"由于夕临的败亡，林间的腐化也一并消逝。{@area 红木林环的|023|x}的鬼魂们重归安宁，穿过林环的小溪不再饱含剧毒。枯萎的树木将会恢复，而任何残存的邪恶之物亦会消散。",
+								"如果角色们取回了屠龙剑落叶守望，议会成员会坚称这把剑应当由角色们保管，作为象征了村民的感激的纪念物，同时也作为角色们英勇事迹的证明。",
+								"如果角色们打败了夕临，额外奖励每名角色400XP，或让他们升至 3 级。"
+							]
+						},
+						{
+							"ENG_name": "History of Green Dragons",
+							"name": "绿龙的历史",
+							"type": "section",
+							"id": "061",
+							"page": 7,
+							"entries": [
+								"{@font ACHUAK DARASTRIX|languages/XPHB/Draconic/Iokharik-v2.woff2}",
+								{
+									"type": "insetReadaloud",
+									"id": "062",
+									"page": 7,
+									"entries": [
+										"龙枪系列中的《{@i 梦境之巨龙}》（1985）奠定了绿龙作为狡诈、善于操弄他人、擅长玩弄心智的阴谋家形象。Clyde Caldwell 绘制的知名封面图展示了强大的绿龙湛清·血瀑将噩梦注入精灵王 Loric 的心智。"
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/011-01-007.green-dragon-with-orb.webp"
+									},
+									"width": 850,
+									"height": 872,
+									"title": "梦境之巨龙（1985）",
+									"credit": "Clyde Caldwell"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/012-01-008.green-dragon-1993.webp"
+									},
+									"width": 832,
+									"height": 1008,
+									"title": "怪物图鉴（1993）",
+									"credit": "Mark A. Nelson"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/013-01-009.green-dragon-1977.webp"
+									},
+									"width": 684,
+									"height": 814,
+									"title": "怪物图鉴（1977）",
+									"credit": "David C. Sutherland"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/014-01-010.green-dragon-draconomicon.webp"
+									},
+									"width": 1320,
+									"height": 1868,
+									"title": "龙之书（2003）",
+									"credit": "Richard Sardinha"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/015-01-011.green-dragon-mtg.webp"
+									},
+									"width": 744,
+									"height": 1040,
+									"title": "被遗忘国度的冒险 (2021)",
+									"credit": "Campbell White"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/016-01-012.green-dragon-anatomy.webp"
+									},
+									"width": 850,
+									"height": 386,
+									"title": "龙之书（2003）",
+									"credit": "Todd Lockwood"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/017-01-013.green-dragon-2008.webp"
+									},
+									"width": 1700,
+									"height": 1186,
+									"title": "怪物图鉴（2008）",
+									"credit": "Lars Grant-West"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/018-01-014.green-dragon-2014.webp"
+									},
+									"width": 850,
+									"height": 525,
+									"title": "怪物手册（2014）",
+									"credit": "Daren Bader"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/019-01-015.green-dragon-2023.webp"
+									},
+									"width": 1700,
+									"height": 1934,
+									"title": "概念艺术（2023）",
+									"credit": "Alexander Ostrowski"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/020-01-016.green-dragon-heads.webp"
+									},
+									"width": 850,
+									"height": 1795,
+									"title": "概念艺术（2023）",
+									"credit": "Alexander Ostrowski"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/021-01-017.green-dragon-in-water.webp"
+									},
+									"width": 850,
+									"height": 2078,
+									"title": "怪物图鉴（2025）",
+									"credit": "Alexander Ostrowski"
 								}
 							]
 						}
 					]
 				},
 				{
-					"ENG_name": "Death-at-Sunset's Lair",
-					"name": "夕殁的巢穴",
+					"ENG_name": "Credits",
+					"name": "制作组",
 					"type": "section",
-					"page": 20,
-					"id": "040",
+					"id": "40b",
+					"page": 2,
 					"entries": [
-						"夕临的巢穴就是她逝去的母亲，夕殁，所留下的空巢。",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"columns": 2,
+							"items": [
+								{
+									"ENG_name": "Lead Designers:",
+									"name": "首席设计师：",
+									"type": "item",
+									"entry": "Amanda Hamon, James Wyatt"
+								},
+								{
+									"ENG_name": "Designers:",
+									"name": "设计师：",
+									"type": "item",
+									"entry": "Justice Ramin Arman, Makenzie De Armas, Anthony Joyce-Rivera, Renee Knipe, Ron Lundeen, Christopher Perkins, Patrick Renie, Erin Roberts, F. Wesley Schneider, Carl Sibley, Jason Tondro, Steve Townshend"
+								},
+								{
+									"ENG_name": "Rules Developers:",
+									"name": "规则开发者：",
+									"type": "item",
+									"entry": "Makenzie De Armas (lead), Jeremy Crawford, Ron Lundeen"
+								},
+								{
+									"ENG_name": "Editors:",
+									"name": "编辑：",
+									"type": "item",
+									"entry": "Judy Bauer (lead), Emma Candon, Sadie Lowry, Hannah Rose, Sue Weinlein, Hans Ziegler"
+								},
+								{
+									"ENG_name": "Art Directors:",
+									"name": "艺术指导：",
+									"type": "item",
+									"entry": "Matt Cole (lead), Fury Galluzzi, Josh Herman, Kate Irwin, Emi Tanji"
+								},
+								{
+									"ENG_name": "Graphic Designers:",
+									"name": "平面设计师：",
+									"type": "item",
+									"entry": "Matt Cole, Paolo Vacala"
+								},
+								{
+									"ENG_name": "Cover Illustrators:",
+									"name": "封面插画师：",
+									"type": "item",
+									"entry": "Justine Jones, Greg Staples"
+								},
+								{
+									"ENG_name": "Interior Illustrators:",
+									"name": "内页插画师：",
+									"type": "item",
+									"entry": "Tom Babbey, Daren Bader, Clyde Caldwell, Chippy, Simon Dominic, Jeff Easley, Luke Eidenschink, Larry Elmore, Jason A. Engle, Lars Grant-West, John Grello, Johan Grenier, Justine Jones, Andrew Kolb, Vance Kovacs, Andrey Kuzinskiy, Ed Kwong, Todd Lockwood, Antonio José Manzanedo, Dominik Mayer, Caio Monteiro, Martin Mottet, Jodie Muir, Mark A. Nelson, Alexander Ostrowski, Keith Parkinson, Anna Podedworna, Steve Prescott, Chris Rallis, Joshua Raphael, Richard Sardinha, Chris Seaman, Rudy Siswanto, Craig J Spearing, Ron Spencer, Leroy Steinmann, Zack Stella, Matt Stewart, Matt Stikker, David C. Sutherland, Autumn Rain Turkel, Paolo Vacala, Svetlin Velinov, Raoul Vitale, Jabari Weathers, Campbell White"
+								},
+								{
+									"ENG_name": "Cartographers:",
+									"name": "制图师：",
+									"type": "item",
+									"entry": "Francesca Baerald, Jared Blando, CoupleOfKooks, Andrew Kolb, Dyson Logos, Damien Mammoliti, Mike Schley, Paolo Vacala"
+								},
+								{
+									"ENG_name": "Consultants:",
+									"name": "顾问：",
+									"type": "item",
+									"entry": "Shawn Banerjee, Eytan Bernstein, Daniel Delgado, Sameer Joseph"
+								},
+								{
+									"ENG_name": "Producers:",
+									"name": "制作人：",
+									"type": "item",
+									"entry": "Rob Hawkey (lead), Bill Benham, Siera Bruggeman, Vanessa Hoskins"
+								}
+							]
+						},
+						"{@i 本书献给Christopher Perkins，感谢他数十年来为《龙与地下城》作出的贡献。}",
 						{
 							"type": "gallery",
 							"images": [
@@ -2123,1701 +3792,38 @@
 									"type": "image",
 									"href": {
 										"type": "internal",
-										"path": "adventure/DrDe/007-map-01.02-death-at-sunsets-lair-dm.webp"
+										"path": "adventure/DrDe/199-11-001.title-splash.webp"
 									},
-									"imageType": "map",
-									"title": "地图1.2: 夕殁的巢穴",
-									"credit": "Damien Mammoliti",
-									"width": 4096,
-									"height": 2788,
-									"id": "07d",
-									"grid": {
-										"type": "square",
-										"size": 126,
-										"offsetX": 34,
-										"offsetY": 6
-									},
-									"mapRegions": [
-										{
-											"area": "047",
-											"points": [
-												[
-													2357,
-													1058
-												],
-												[
-													2554,
-													1014
-												],
-												[
-													2664,
-													971
-												],
-												[
-													2731,
-													898
-												],
-												[
-													2743,
-													800
-												],
-												[
-													2851,
-													733
-												],
-												[
-													2883,
-													643
-												],
-												[
-													2863,
-													608
-												],
-												[
-													2766,
-													625
-												],
-												[
-													2738,
-													660
-												],
-												[
-													2690,
-													646
-												],
-												[
-													2656,
-													565
-												],
-												[
-													2722,
-													520
-												],
-												[
-													2699,
-													454
-												],
-												[
-													2709,
-													404
-												],
-												[
-													2816,
-													384
-												],
-												[
-													2905,
-													376
-												],
-												[
-													2967,
-													453
-												],
-												[
-													2990,
-													412
-												],
-												[
-													3054,
-													335
-												],
-												[
-													3153,
-													245
-												],
-												[
-													3276,
-													154
-												],
-												[
-													3363,
-													47
-												],
-												[
-													3982,
-													518
-												],
-												[
-													3909,
-													570
-												],
-												[
-													3857,
-													651
-												],
-												[
-													3772,
-													727
-												],
-												[
-													3683,
-													808
-												],
-												[
-													3647,
-													864
-												],
-												[
-													3580,
-													884
-												],
-												[
-													3543,
-													866
-												],
-												[
-													3497,
-													904
-												],
-												[
-													3453,
-													943
-												],
-												[
-													3441,
-													977
-												],
-												[
-													3372,
-													948
-												],
-												[
-													3318,
-													960
-												],
-												[
-													3254,
-													1032
-												],
-												[
-													3229,
-													1076
-												],
-												[
-													3238,
-													1134
-												],
-												[
-													3278,
-													1169
-												],
-												[
-													3261,
-													1209
-												],
-												[
-													3249,
-													1276
-												],
-												[
-													3220,
-													1309
-												],
-												[
-													3139,
-													1360
-												],
-												[
-													2978,
-													1355
-												],
-												[
-													2805,
-													1340
-												],
-												[
-													2568,
-													1264
-												],
-												[
-													2427,
-													1164
-												],
-												[
-													2368,
-													1094
-												]
-											]
-										},
-										{
-											"area": "04d",
-											"points": [
-												[
-													3063,
-													1930
-												],
-												[
-													3122,
-													1857
-												],
-												[
-													3203,
-													1741
-												],
-												[
-													3334,
-													1665
-												],
-												[
-													3555,
-													1686
-												],
-												[
-													3679,
-													1778
-												],
-												[
-													3688,
-													1860
-												],
-												[
-													3693,
-													1967
-												],
-												[
-													3686,
-													2043
-												],
-												[
-													3668,
-													2137
-												],
-												[
-													3625,
-													2218
-												],
-												[
-													3571,
-													2332
-												],
-												[
-													3488,
-													2320
-												],
-												[
-													3450,
-													2369
-												],
-												[
-													3388,
-													2360
-												],
-												[
-													3324,
-													2332
-												],
-												[
-													3247,
-													2351
-												],
-												[
-													3162,
-													2339
-												],
-												[
-													3086,
-													2299
-												],
-												[
-													2961,
-													2268
-												],
-												[
-													2950,
-													2198
-												],
-												[
-													2958,
-													2086
-												],
-												[
-													3001,
-													2006
-												],
-												[
-													3028,
-													1951
-												]
-											]
-										},
-										{
-											"area": "050",
-											"points": [
-												[
-													3324,
-													1622
-												],
-												[
-													3284,
-													1644
-												],
-												[
-													3232,
-													1644
-												],
-												[
-													3202,
-													1627
-												],
-												[
-													3165,
-													1622
-												],
-												[
-													3183,
-													1543
-												],
-												[
-													3237,
-													1476
-												],
-												[
-													3261,
-													1400
-												],
-												[
-													3296,
-													1336
-												],
-												[
-													3319,
-													1305
-												],
-												[
-													3318,
-													1241
-												],
-												[
-													3379,
-													1197
-												],
-												[
-													3420,
-													1141
-												],
-												[
-													3458,
-													1095
-												],
-												[
-													3497,
-													1054
-												],
-												[
-													3534,
-													1000
-												],
-												[
-													3560,
-													1060
-												],
-												[
-													3593,
-													1124
-												],
-												[
-													3641,
-													1180
-												],
-												[
-													3682,
-													1244
-												],
-												[
-													3702,
-													1323
-												],
-												[
-													3726,
-													1410
-												],
-												[
-													3723,
-													1473
-												],
-												[
-													3715,
-													1543
-												],
-												[
-													3661,
-													1599
-												],
-												[
-													3595,
-													1628
-												],
-												[
-													3519,
-													1650
-												],
-												[
-													3427,
-													1647
-												],
-												[
-													3379,
-													1631
-												]
-											]
-										},
-										{
-											"area": "053",
-											"points": [
-												[
-													1727,
-													2264
-												],
-												[
-													1768,
-													2190
-												],
-												[
-													1818,
-													2144
-												],
-												[
-													1907,
-													2091
-												],
-												[
-													1978,
-													2105
-												],
-												[
-													2018,
-													2107
-												],
-												[
-													2067,
-													2082
-												],
-												[
-													2156,
-													2091
-												],
-												[
-													2252,
-													2094
-												],
-												[
-													2390,
-													2107
-												],
-												[
-													2483,
-													2107
-												],
-												[
-													2575,
-													2107
-												],
-												[
-													2621,
-													2184
-												],
-												[
-													2603,
-													2302
-												],
-												[
-													2555,
-													2398
-												],
-												[
-													2517,
-													2502
-												],
-												[
-													2475,
-													2516
-												],
-												[
-													2381,
-													2499
-												],
-												[
-													2278,
-													2508
-												],
-												[
-													2158,
-													2513
-												],
-												[
-													2066,
-													2510
-												],
-												[
-													1979,
-													2473
-												],
-												[
-													1887,
-													2475
-												],
-												[
-													1828,
-													2461
-												],
-												[
-													1767,
-													2445
-												],
-												[
-													1781,
-													2368
-												],
-												[
-													1751,
-													2304
-												]
-											]
-										},
-										{
-											"area": "057",
-											"points": [
-												[
-													742,
-													1396
-												],
-												[
-													948,
-													1356
-												],
-												[
-													1239,
-													1329
-												],
-												[
-													1458,
-													1335
-												],
-												[
-													1592,
-													1309
-												],
-												[
-													1687,
-													1339
-												],
-												[
-													1804,
-													1338
-												],
-												[
-													1881,
-													1295
-												],
-												[
-													1918,
-													1258
-												],
-												[
-													2018,
-													1196
-												],
-												[
-													2152,
-													1165
-												],
-												[
-													2185,
-													1107
-												],
-												[
-													2266,
-													1088
-												],
-												[
-													2319,
-													1055
-												],
-												[
-													2359,
-													1144
-												],
-												[
-													2471,
-													1239
-												],
-												[
-													2602,
-													1319
-												],
-												[
-													2790,
-													1375
-												],
-												[
-													3002,
-													1387
-												],
-												[
-													3153,
-													1378
-												],
-												[
-													3218,
-													1375
-												],
-												[
-													3162,
-													1447
-												],
-												[
-													3121,
-													1578
-												],
-												[
-													3088,
-													1695
-												],
-												[
-													3018,
-													1861
-												],
-												[
-													3002,
-													1926
-												],
-												[
-													2925,
-													1991
-												],
-												[
-													2879,
-													2028
-												],
-												[
-													2780,
-													2028
-												],
-												[
-													2719,
-													2041
-												],
-												[
-													2668,
-													2061
-												],
-												[
-													2614,
-													2031
-												],
-												[
-													2556,
-													1964
-												],
-												[
-													2497,
-													1997
-												],
-												[
-													2408,
-													2003
-												],
-												[
-													2352,
-													2014
-												],
-												[
-													2279,
-													2043
-												],
-												[
-													2211,
-													2023
-												],
-												[
-													2137,
-													2025
-												],
-												[
-													2066,
-													2015
-												],
-												[
-													2001,
-													2034
-												],
-												[
-													1983,
-													2015
-												],
-												[
-													1921,
-													2048
-												],
-												[
-													1817,
-													2120
-												],
-												[
-													1752,
-													2175
-												],
-												[
-													1706,
-													2252
-												],
-												[
-													1650,
-													2272
-												],
-												[
-													1561,
-													2265
-												],
-												[
-													1484,
-													2248
-												],
-												[
-													1386,
-													2225
-												],
-												[
-													1262,
-													2169
-												],
-												[
-													1155,
-													2095
-												],
-												[
-													1075,
-													2120
-												],
-												[
-													961,
-													2077
-												],
-												[
-													927,
-													2003
-												],
-												[
-													924,
-													1920
-												],
-												[
-													893,
-													1834
-												],
-												[
-													844,
-													1778
-												],
-												[
-													891,
-													1664
-												],
-												[
-													865,
-													1552
-												],
-												[
-													754,
-													1467
-												]
-											]
-										},
-										{
-											"area": "05d",
-											"points": [
-												[
-													554,
-													1501
-												],
-												[
-													604,
-													1459
-												],
-												[
-													668,
-													1489
-												],
-												[
-													724,
-													1510
-												],
-												[
-													754,
-													1501
-												],
-												[
-													847,
-													1564
-												],
-												[
-													868,
-													1660
-												],
-												[
-													821,
-													1772
-												],
-												[
-													764,
-													1789
-												],
-												[
-													696,
-													1798
-												],
-												[
-													644,
-													1855
-												],
-												[
-													573,
-													1866
-												],
-												[
-													514,
-													1829
-												],
-												[
-													511,
-													1763
-												],
-												[
-													491,
-													1683
-												],
-												[
-													493,
-													1597
-												],
-												[
-													520,
-													1529
-												]
-											]
-										},
-										{
-											"area": "055",
-											"points": [
-												[
-													726,
-													1349
-												],
-												[
-													743,
-													1290
-												],
-												[
-													762,
-													1200
-												],
-												[
-													756,
-													1094
-												],
-												[
-													718,
-													1031
-												],
-												[
-													796,
-													961
-												],
-												[
-													803,
-													881
-												],
-												[
-													933,
-													826
-												],
-												[
-													1024,
-													722
-												],
-												[
-													1183,
-													686
-												],
-												[
-													1292,
-													682
-												],
-												[
-													1432,
-													619
-												],
-												[
-													1584,
-													648
-												],
-												[
-													1668,
-													729
-												],
-												[
-													1774,
-													743
-												],
-												[
-													1909,
-													762
-												],
-												[
-													1939,
-													676
-												],
-												[
-													1979,
-													587
-												],
-												[
-													2036,
-													490
-												],
-												[
-													2152,
-													460
-												],
-												[
-													2272,
-													467
-												],
-												[
-													2420,
-													513
-												],
-												[
-													2570,
-													581
-												],
-												[
-													2619,
-													657
-												],
-												[
-													2663,
-													739
-												],
-												[
-													2707,
-													813
-												],
-												[
-													2627,
-													898
-												],
-												[
-													2555,
-													952
-												],
-												[
-													2437,
-													952
-												],
-												[
-													2365,
-													974
-												],
-												[
-													2332,
-													1003
-												],
-												[
-													2217,
-													1007
-												],
-												[
-													2133,
-													1062
-												],
-												[
-													2036,
-													1119
-												],
-												[
-													1947,
-													1138
-												],
-												[
-													1882,
-													1164
-												],
-												[
-													1867,
-													1227
-												],
-												[
-													1795,
-													1265
-												],
-												[
-													1647,
-													1244
-												],
-												[
-													1546,
-													1244
-												],
-												[
-													1466,
-													1297
-												],
-												[
-													1254,
-													1273
-												],
-												[
-													946,
-													1307
-												]
-											]
-										}
-									],
-									"hrefThumbnail": {
+									"width": 850,
+									"height": 963,
+									"credit": "Alexander Ostrowski"
+								}
+							]
+						},
+						{
+							"type": "gallery",
+							"images": [
+								{
+									"type": "image",
+									"href": {
 										"type": "internal",
-										"path": "adventure/DrDe/thumbnail/007-map-01.02-death-at-sunsets-lair-dm.webp"
-									}
+										"path": "adventure/DrDe/200-11-002.traditional-cover.webp"
+									},
+									"width": 850,
+									"height": 951,
+									"title": "封面故事：在Greg Staples创作的这张极具张力的海报中，三位勇敢的冒险者直面由五种色彩龙所带来的未知险境。"
 								},
 								{
 									"type": "image",
 									"href": {
 										"type": "internal",
-										"path": "adventure/DrDe/008-map-01.02-death-at-sunsets-lair-player.webp"
+										"path": "adventure/DrDe/201-11-003.alt-cover.webp"
 									},
-									"imageType": "mapPlayer",
-									"title": "玩家版本",
-									"width": 4096,
-									"height": 2788,
-									"credit": "Damien Mammoliti",
-									"mapParent": {
-										"id": "07d"
-									},
-									"grid": {
-										"type": "square",
-										"size": 126,
-										"offsetX": 34,
-										"offsetY": 6
-									}
+									"width": 850,
+									"height": 951,
+									"title": "替换封面：Justine Jones以迷幻笔触，绘就一幅群龙入梦的奇幻图景。"
 								}
 							]
-						},
-						{
-							"ENG_name": "Lair Features",
-							"name": "巢穴特征",
-							"type": "entries",
-							"page": 20,
-							"id": "041",
-							"entries": [
-								"巢穴具有以下特征。",
-								{
-									"ENG_name": "Ceilings",
-									"name": "天花板",
-									"type": "entries",
-									"id": "042",
-									"entries": [
-										"区域{@area L1|047|x}-{@area L5|055|x} 以及{@area L7|05d|x}的天花板高 40 尺。雏龙所居住的龙骸大厅（区域 {@area L6|057|x}）则高 60 尺。"
-									]
-								},
-								{
-									"ENG_name": "Light",
-									"name": "光线",
-									"type": "entries",
-									"id": "043",
-									"entries": [
-										"龙巢内部被黑暗笼罩。每个区域的描述都假定玩家能够在黑暗中视物或拥有光源。"
-									]
-								},
-								{
-									"ENG_name": "Tracking",
-									"name": "追踪",
-									"type": "entries",
-									"id": "044",
-									"entries": [
-										"雏龙的足迹很独特；以一个{@action 搜索|XPHB}动作，任何角色都可以试图寻找踪迹并进行一次 {@dc 13} 的感知（{@skill 求生|XPHB}）检定。检定成功则该角色找到了雏龙的足迹\u2014\u2014一路通向区域{@area L6|057|x}。"
-									]
-								},
-								{
-									"ENG_name": "Walls",
-									"name": "墙壁",
-									"type": "entries",
-									"id": "045",
-									"entries": [
-										"龙巢的墙壁由松软的泥土和粗壮的树根构成。"
-									]
-								}
-							]
-						},
-						{
-							"ENG_name": "Lair Locations",
-							"name": "巢穴地点",
-							"type": "entries",
-							"page": 20,
-							"id": "046",
-							"entries": [
-								"以下是{@area 地图: 夕殁的巢穴|07d|x}中标出的几个地点：",
-								{
-									"ENG_name": "L1: Guarded Tunnel",
-									"name": "L1: 有人驻守的隧道",
-									"type": "entries",
-									"page": 20,
-									"id": "047",
-									"entries": [
-										{
-											"type": "insetReadaloud",
-											"page": 20,
-											"id": "048",
-											"entries": [
-												"这条自高处倾斜向下的隧道通向幽深的黑暗，四周由泥土与扭曲的树根围绕而成。这些墙壁上有着巨大的爪痕。"
-											]
-										},
-										"墙壁西北侧的凹室中藏着红木哨地的四名精灵（中型{@creature 警卫|XMM|警卫们}）：达灵，颉芮，莱琳妮，还有蕾娜。这些精灵对角色们的态度为敌对。一旦角色们深入该区域超过 10 尺，它们就会开始战斗，叫喊着让角色们离开，别再回来。",
-										{
-											"ENG_name": "Helping the Elves",
-											"name": "帮助精灵",
-											"type": "entries",
-											"page": 20,
-											"id": "049",
-											"entries": [
-												"在{@area 阿明·风语|013|x}失踪后，这几名精灵相继前往红木林环，寻找这位议会成员。他们都遭受了与阿明相同的命运：夕临抓住他们，折磨他们，迫使他们成为自己的龙巢守卫。夕临骗这些精灵，一旦他们试图逃跑，他母亲的鬼魂便会把他们全部杀掉。雏龙还威胁到，要是这些精灵胆敢违背他，他就会对村民们出手。",
-												"以一个{@action 影响|XPHB}动作，一名角色可以告诉精灵们雏龙很快就将被打败，或是告诉他们根本没有什么龙的鬼魂。进行一次 {@dc 14} 的魅力（{@skill 游说|XPHB}）检定，检定成功则精灵们停止战斗，且态度变为友好。一旦精灵们的态度变为友好，他们就会离开，返回红木哨地。在离开之前，颉芮会告诉角色们他的铺盖里藏着一瓶强酸（见下文\"宝藏\"）。"
-											]
-										},
-										{
-											"ENG_name": "Downward Slope",
-											"name": "下坡路",
-											"type": "entries",
-											"page": 21,
-											"id": "04a",
-											"entries": [
-												"西南方向的坡道向下深入了 20 尺，通往夕殁之骨骸所在的大厅（区域{@area L6|057|x}）。这片下坡地段是{@variantrule 困难地形|XPHB}。"
-											]
-										},
-										{
-											"ENG_name": "Treasure",
-											"name": "宝藏",
-											"type": "entries",
-											"page": 21,
-											"id": "04b",
-											"entries": [
-												"西北侧的凹室中摆着精灵们的铺盖以及贫乏的食物补给。颉芮的铺盖中藏着一瓶强酸。他一直想鼓起勇气把强酸扔向雏龙。"
-											]
-										},
-										{
-											"ENG_name": "Development",
-											"name": "发展",
-											"type": "entries",
-											"page": 21,
-											"id": "04c",
-											"entries": [
-												"如果精灵们回到了红木哨地，他们会受到热切地欢迎。村民们会在晚间于村间绿地上欢庆。如果角色们错过了这次机会，他们会在下次回到红木哨地时收获发自真心的感谢。"
-											]
-										}
-									]
-								},
-								{
-									"ENG_name": "L2: Snake Pit",
-									"name": "L2: 蛇坑",
-									"type": "entries",
-									"page": 21,
-									"id": "04d",
-									"entries": [
-										{
-											"type": "insetReadaloud",
-											"page": 21,
-											"id": "04e",
-											"entries": [
-												"根系与土层构成了这间洞室的天花板。洞室的中间是一个宽大的浅坑，其中爬满了蠕行的蛇群。"
-											]
-										},
-										"这个坑里面养着的是梅锐蕾莎（区域 L3 的蛇人）的蛇群宠物。坑里有两条{@creature 巨毒蛇|XMM|巨毒蛇}，一条{@creature 蟒蛇|XMM}，还有六条{@creature 毒蛇|XMM|毒蛇}。这些蛇不会自行离开浅坑，并会与进入坑中的角色战斗。",
-										{
-											"ENG_name": "Pit Edges",
-											"name": "坑的边缘",
-											"type": "entries",
-											"page": 21,
-											"id": "04f",
-											"entries": [
-												"蛇坑的边缘角度很大，为{@variantrule 困难地形|XPHB}。蛇坑有三尺深。"
-											]
-										}
-									]
-								},
-								{
-									"ENG_name": "L3: Marilissa's Quarters",
-									"name": "L3：梅锐蕾莎的住处",
-									"type": "entries",
-									"page": 21,
-									"id": "050",
-									"entries": [
-										{
-											"type": "insetReadaloud",
-											"page": 21,
-											"id": "051",
-											"entries": [
-												"这片布置奇特的生活区包括一张床、一把椅子以及一张桌子。此时坐在椅子上的是一个明明有着人类身体、却长着一颗蛇头的女人。她抚摸着盘在腿上的蛇，向着你们露出恶毒的微笑。"
-											]
-										},
-										"这就是梅锐蕾莎，一条{@creature 恶咒蛇人（1 型）|XMM}，还有盘在她腿上的{@creature 毒蛇|XMM}宠物罗比。",
-										"五年之前，当夕临孵化之时，梅锐蕾莎正巧路过红木林地。她感受到了渗入森林之中的龙之魔力，坚信她天生就该为这条雏龙服务，因为这条雏龙注定要成长为可怕的巨龙，而自己便能因此平步青云。她是这条雏龙最忠诚的手下。",
-										{
-											"ENG_name": "Dealing with Marilissa",
-											"name": "对待梅锐蕾莎",
-											"type": "entries",
-											"page": 22,
-											"id": "052",
-											"entries": [
-												"如果角色们抵达该区域但尚未杀死夕临，梅锐蕾莎对他们的态度便是冷漠，并质问为何他们会出现在这里。如果角色们表现出哪怕一点对雏龙的敌意，梅锐蕾莎及其宠物的态度便会变为敌对，并与其交战。梅锐蕾莎会为了保护雏龙而战斗至死。",
-												{
-													"type": "image",
-													"href": {
-														"type": "internal",
-														"path": "adventure/DrDe/009-01-004.yuan-ti-with-serpents.webp"
-													},
-													"credit": "Dominik Mayer",
-													"width": 850,
-													"height": 2367
-												},
-												"以一个{@action 影响|XPHB}动作，一名角色可以尝试对梅锐蕾莎说谎，隐瞒其真实意图。进行一次 {@dc 12} 的魅力（{@skill 欺瞒|XPHB}）检定，成功时，梅锐蕾莎相信角色们并不是为了伤害雏龙而来。她会允许角色们安全离开，但如果角色们在巢穴中的其它地方引发战斗，梅锐蕾莎也会赶来，作为敌人加入战场。",
-												"如果角色们告诉她他们已经杀死了雏龙，梅锐蕾莎将拒绝任何交流。她告诉角色们，她会为雏龙报仇并享受杀掉他们的过程，立刻开始战斗。"
-											]
-										}
-									]
-								},
-								{
-									"ENG_name": "L4: Root Cellar",
-									"name": "L4: 根窖",
-									"type": "entries",
-									"page": 22,
-									"id": "053",
-									"entries": [
-										{
-											"type": "insetReadaloud",
-											"page": 22,
-											"id": "054",
-											"entries": [
-												"洞室的土墙上爬满了粗壮的树根和干燥的枯枝。"
-											]
-										},
-										"一只{@creature 枯藤怪|XMM}和一只{@creature 枯枝怪|XMM}会在此保持静止，直到玩家进入该区域超过 10 尺。这些枯萎怪随即向玩家逼近并战斗至死。"
-									]
-								},
-								{
-									"ENG_name": "L5: Centipede Infestation",
-									"name": "L5: 蜈蚣肆虐之地",
-									"type": "entries",
-									"page": 22,
-									"id": "055",
-									"entries": [
-										{
-											"type": "insetReadaloud",
-											"page": 22,
-											"id": "056",
-											"entries": [
-												"许多有许多腿的虫子群聚在一起，覆盖了这条狭长洞室的北墙和南墙。"
-											]
-										},
-										"两只个{@creature 昆虫集群|XMM|昆虫集群}（蜈蚣）和两只{@creature 巨蜈蚣|XMM|巨蜈蚣}在这些墙壁间爬行。这些虫群会与任何靠近到该区域的北墙或南墙 5 尺内的生物战斗。"
-									]
-								},
-								{
-									"ENG_name": "L6: Corpse Chamber",
-									"name": "L6: 龙骸大厅",
-									"type": "entries",
-									"page": 22,
-									"id": "057",
-									"entries": [
-										{
-											"type": "insetReadaloud",
-											"page": 22,
-											"id": "058",
-											"entries": [
-												"房间中央，一团淡薄的绿色雾气笼罩着一具巨大的龙骸。透过这条死龙的眼窝，你们能看到颅骨内部一个灵动穿行着的身影。\"吾乃夕临！\"一个音调高昂的声音从颅骨内部响起。\"踏入吾之巢穴者，唯有灾厄相伴！\""
-											]
-										},
-										"夕临，自夕殁的龙蛋中孵化的{@creature 绿龙雏龙|XMM}，就生活在这件厅室里。这条雏龙在他母亲的骨骸间穿行，试图引诱角色们进入这些剧毒的瘴气。当角色们进入瘴气之后，雏龙便会开始战斗。如果梅锐蕾莎（区域 L3 的蛇人）注意到此处的战斗，她会在战斗的第三轮结束时抵达战场，帮助夕临作战。",
-										{
-											"ENG_name": "Roleplaying Sunset-Is-Nigh",
-											"name": "扮演夕临",
-											"type": "entries",
-											"page": 22,
-											"id": "059",
-											"entries": [
-												"这条雏龙以延续其母亲的名号为荣。他残忍且傲慢，自缪尊贵。夕临想要超越他的母亲。他让被俘获的精灵畏惧于他的恐怖，这些成就增进了他的自信。",
-												"夕临会抓住每个机会嘲讽角色（使用龙语），将他们称为绝无可能战胜他的弱者与伪装出来的英雄。这条雏龙坚称自己是一条强大的巨龙，终有一日角色们所珍视的一切都将被他征服。"
-											]
-										},
-										{
-											"ENG_name": "Sickening Miasma",
-											"name": "致病毒瘴",
-											"type": "entries",
-											"page": 22,
-											"id": "05a",
-											"entries": [
-												"尽管夕殁已经死去很久了，但她所遗留的魔法仍然令这件洞室内翻涌着剧毒的瘴气。地图中的虚线框出了瘴气覆盖的区域。在一个回合中首次进入瘴气区域或在该区域内开始回合的角色必须成功通过一次 {@dc 12} 的体质豁免，否则陷入{@condition 中毒|XPHB}状态直至其下一回合开始。"
-											]
-										},
-										{
-											"ENG_name": "Skeleton",
-											"name": "骷髅",
-											"type": "entries",
-											"page": 22,
-											"id": "05b",
-											"entries": [
-												"夕殁的巨大骨骸阻碍了通行。带有骨头的区域是{@variantrule 困难地形|XPHB}。"
-											]
-										},
-										{
-											"ENG_name": "Treasure",
-											"name": "宝藏",
-											"type": "entries",
-											"page": 22,
-											"id": "05c",
-											"entries": [
-												"夕殁的宝库在一个世纪前就被红木林环精灵们搜刮了，他们出售了部分物品以支付修复森林的开销。剩余的物品则被分给了林地的住民。不过，一些散落的硬币组成了一条小路，向西直至一处小凹室（区域{@area L7|05d|x}），那是夕临为自己日益增长的宝库开掘的新仓库。一名角色可以花费 1 分钟的时间收集这些散落的钱币，加起来共有 6GP，37SP 以及 30CP。"
-											]
-										}
-									]
-								},
-								{
-									"ENG_name": "L7: Wyrmling's Hoard",
-									"name": "L7: 雏龙的宝库",
-									"type": "entries",
-									"page": 22,
-									"id": "05d",
-									"entries": [
-										{
-											"type": "insetReadaloud",
-											"page": 22,
-											"id": "05e",
-											"entries": [
-												"数以千计的宝石与钱币堆在这件小室之中，其中大多为铜币和银币，但也混杂了少数金币。宝藏堆的中间插着一把华丽的剑，其上刻印着精灵的符文。"
-											]
-										},
-										"夕临在此处存储他巧取豪夺而来的宝藏。",
-										{
-											"ENG_name": "Treasure",
-											"name": "宝藏",
-											"type": "entries",
-											"page": 22,
-											"id": "05f",
-											"entries": [
-												"这处宝库包含以下宝物：",
-												{
-													"type": "list",
-													"items": [
-														"210 GP, 3,150 SP, 6,300 CP",
-														"十二颗{@item 月光石|XDMG|月光石}（每颗价值50GP）",
-														"玉质法球（价值 100GP），上面用炼狱语写着斯泰吉亚的名讳",
-														"金杯（价值 50GP）",
-														"镶着银边的手镜（价值 40GP）",
-														"象牙梳（价值 35GP）",
-														"{@item 无踪粉|XDMG}",
-														"{@item 卡夫统灵药|XDMG}",
-														"{@item 巨人之力药水|XDMG}（山丘）",
-														"{@spell 蛛网术|XPHB}的{@item 法术卷轴|XDMG}"
-													]
-												}
-											]
-										},
-										{
-											"ENG_name": "Leafwarden",
-											"name": "落叶守望",
-											"type": "entries",
-											"page": 23,
-											"entries": [
-												"位于宝库正中的这把剑正是精灵武者艾瑟樊的佩剑，落叶守望。当邪龙被斩杀时，这把剑嵌入了夕殁的血肉中，因此精灵们没能寻回它。落叶守望是一把{@item 屠龙者长剑|XDMG|屠龙者 (长剑)}。"
-											],
-											"id": "065"
-										}
-									]
-								}
-							]
-						}
-					]
-				},
-				{
-					"ENG_name": "Conclusion",
-					"name": "结局",
-					"type": "section",
-					"page": 23,
-					"id": "060",
-					"entries": [
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/010-01-005.green-dragon-circle.webp"
-							},
-							"credit": "Dominik Mayer",
-							"width": 1700,
-							"height": 1515
-						},
-						"夕临败亡之后，红木哨地中的村民们大喜过望。为了纪念角色们的凯旋，议会在村间绿地举行了一场欢宴。如果角色们从{@area 红木哨地|013|x}中救出了阿明，并从龙巢中救出了剩下的精灵，那这些失踪者们也会出席，传唱着角色们的英勇事迹。议会会招待角色们，他们想在村子里停留多久都可以。",
-						"由于夕临的败亡，林间的腐化也一并消逝。{@area 红木林环的|023|x}的鬼魂们重归安宁，穿过林环的小溪不再饱含剧毒。枯萎的树木将会恢复，而任何残存的邪恶之物亦会消散。",
-						"如果角色们取回了屠龙剑落叶守望，议会成员会坚称这把剑应当由角色们保管，作为象征了村民的感激的纪念物，同时也作为角色们英勇事迹的证明。",
-						"如果角色们打败了夕临，额外奖励每名角色400XP，或让他们升至 3 级。"
-					]
-				},
-				{
-					"ENG_name": "History of Green Dragons",
-					"name": "绿龙的历史",
-					"type": "section",
-					"page": 7,
-					"id": "061",
-					"entries": [
-						"{@font ACHUAK DARASTRIX|languages/XPHB/Draconic/Iokharik-v2.woff2}",
-						{
-							"type": "insetReadaloud",
-							"page": 7,
-							"id": "062",
-							"entries": [
-								"龙枪系列中的《{@i 梦境之巨龙}》（1985）奠定了绿龙作为狡诈、善于操弄他人、擅长玩弄心智的阴谋家形象。Clyde Caldwell 绘制的知名封面图展示了强大的绿龙湛清·血瀑将噩梦注入精灵王 Loric 的心智。"
-							]
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/011-01-007.green-dragon-with-orb.webp"
-							},
-							"title": "梦境之巨龙（1985）",
-							"credit": "Clyde Caldwell",
-							"width": 850,
-							"height": 872
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/012-01-008.green-dragon-1993.webp"
-							},
-							"title": "怪物图鉴（1993）",
-							"credit": "Mark A. Nelson",
-							"width": 832,
-							"height": 1008
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/013-01-009.green-dragon-1977.webp"
-							},
-							"title": "怪物图鉴（1977）",
-							"credit": "David C. Sutherland",
-							"width": 684,
-							"height": 814
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/014-01-010.green-dragon-draconomicon.webp"
-							},
-							"title": "龙之书（2003）",
-							"credit": "Richard Sardinha",
-							"width": 1320,
-							"height": 1868
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/015-01-011.green-dragon-mtg.webp"
-							},
-							"title": "被遗忘国度的冒险 (2021)",
-							"credit": "Campbell White",
-							"width": 744,
-							"height": 1040
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/016-01-012.green-dragon-anatomy.webp"
-							},
-							"title": "龙之书（2003）",
-							"credit": "Todd Lockwood",
-							"width": 850,
-							"height": 386
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/017-01-013.green-dragon-2008.webp"
-							},
-							"title": "怪物图鉴（2008）",
-							"credit": "Lars Grant-West",
-							"width": 1700,
-							"height": 1186
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/018-01-014.green-dragon-2014.webp"
-							},
-							"title": "怪物手册（2014）",
-							"credit": "Daren Bader",
-							"width": 850,
-							"height": 525
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/019-01-015.green-dragon-2023.webp"
-							},
-							"title": "概念艺术（2023）",
-							"credit": "Alexander Ostrowski",
-							"width": 1700,
-							"height": 1934
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/020-01-016.green-dragon-heads.webp"
-							},
-							"title": "概念艺术（2023）",
-							"credit": "Alexander Ostrowski",
-							"width": 850,
-							"height": 1795
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/021-01-017.green-dragon-in-water.webp"
-							},
-							"title": "怪物图鉴（2025）",
-							"credit": "Alexander Ostrowski",
-							"width": 850,
-							"height": 2078
-						}
-					]
-				}
-			]
-		},
-		{
-			"ENG_name": "Credits",
-			"name": "制作组",
-			"type": "section",
-			"page": 2,
-			"id": "40b",
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"columns": 2,
-					"items": [
-						{
-							"ENG_name": "Lead Designers:",
-							"name": "首席设计师：",
-							"type": "item",
-							"entry": "Amanda Hamon, James Wyatt"
-						},
-						{
-							"ENG_name": "Designers:",
-							"name": "设计师：",
-							"type": "item",
-							"entry": "Justice Ramin Arman, Makenzie De Armas, Anthony Joyce-Rivera, Renee Knipe, Ron Lundeen, Christopher Perkins, Patrick Renie, Erin Roberts, F. Wesley Schneider, Carl Sibley, Jason Tondro, Steve Townshend"
-						},
-						{
-							"ENG_name": "Rules Developers:",
-							"name": "规则开发者：",
-							"type": "item",
-							"entry": "Makenzie De Armas (lead), Jeremy Crawford, Ron Lundeen"
-						},
-						{
-							"ENG_name": "Editors:",
-							"name": "编辑：",
-							"type": "item",
-							"entry": "Judy Bauer (lead), Emma Candon, Sadie Lowry, Hannah Rose, Sue Weinlein, Hans Ziegler"
-						},
-						{
-							"ENG_name": "Art Directors:",
-							"name": "艺术指导：",
-							"type": "item",
-							"entry": "Matt Cole (lead), Fury Galluzzi, Josh Herman, Kate Irwin, Emi Tanji"
-						},
-						{
-							"ENG_name": "Graphic Designers:",
-							"name": "平面设计师：",
-							"type": "item",
-							"entry": "Matt Cole, Paolo Vacala"
-						},
-						{
-							"ENG_name": "Cover Illustrators:",
-							"name": "封面插画师：",
-							"type": "item",
-							"entry": "Justine Jones, Greg Staples"
-						},
-						{
-							"ENG_name": "Interior Illustrators:",
-							"name": "内页插画师：",
-							"type": "item",
-							"entry": "Tom Babbey, Daren Bader, Clyde Caldwell, Chippy, Simon Dominic, Jeff Easley, Luke Eidenschink, Larry Elmore, Jason A. Engle, Lars Grant-West, John Grello, Johan Grenier, Justine Jones, Andrew Kolb, Vance Kovacs, Andrey Kuzinskiy, Ed Kwong, Todd Lockwood, Antonio José Manzanedo, Dominik Mayer, Caio Monteiro, Martin Mottet, Jodie Muir, Mark A. Nelson, Alexander Ostrowski, Keith Parkinson, Anna Podedworna, Steve Prescott, Chris Rallis, Joshua Raphael, Richard Sardinha, Chris Seaman, Rudy Siswanto, Craig J Spearing, Ron Spencer, Leroy Steinmann, Zack Stella, Matt Stewart, Matt Stikker, David C. Sutherland, Autumn Rain Turkel, Paolo Vacala, Svetlin Velinov, Raoul Vitale, Jabari Weathers, Campbell White"
-						},
-						{
-							"ENG_name": "Cartographers:",
-							"name": "制图师：",
-							"type": "item",
-							"entry": "Francesca Baerald, Jared Blando, CoupleOfKooks, Andrew Kolb, Dyson Logos, Damien Mammoliti, Mike Schley, Paolo Vacala"
-						},
-						{
-							"ENG_name": "Consultants:",
-							"name": "顾问：",
-							"type": "item",
-							"entry": "Shawn Banerjee, Eytan Bernstein, Daniel Delgado, Sameer Joseph"
-						},
-						{
-							"ENG_name": "Producers:",
-							"name": "制作人：",
-							"type": "item",
-							"entry": "Rob Hawkey (lead), Bill Benham, Siera Bruggeman, Vanessa Hoskins"
-						}
-					]
-				},
-				"{@i 本书献给Christopher Perkins，感谢他数十年来为《龙与地下城》作出的贡献。}",
-				{
-					"type": "gallery",
-					"images": [
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/199-11-001.title-splash.webp"
-							},
-							"credit": "Alexander Ostrowski",
-							"width": 850,
-							"height": 963
-						}
-					]
-				},
-				{
-					"type": "gallery",
-					"images": [
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/200-11-002.traditional-cover.webp"
-							},
-							"title": "封面故事：在Greg Staples创作的这张极具张力的海报中，三位勇敢的冒险者直面由五种色彩龙所带来的未知险境。",
-							"width": 850,
-							"height": 951
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/201-11-003.alt-cover.webp"
-							},
-							"title": "替换封面：Justine Jones以迷幻笔触，绘就一幅群龙入梦的奇幻图景。",
-							"width": 850,
-							"height": 951
 						}
 					]
 				}

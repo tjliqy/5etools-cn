@@ -287,7 +287,7 @@
 			"wis": 3,
 			"cha": 1,
 			"senses": [
-				"30 尺盲视感官，该感官范围之外则视为目盲状态。"
+				"盲视30尺（此范围外则视为目盲）"
 			],
 			"immune": [
 				"poison",
@@ -415,8 +415,8 @@
 						"作为{@variantrule 附赠动作|XPHB}，你命令魔能炮台使用下方的投火机、力场弩炮或防御者选项；你可以在该选项之前或之后命令魔能炮台移动最多15尺：",
 						{
 							"type": "list",
-							"style": "list-hang-notitle",
 							"page": 10,
+							"style": "list-hang-notitle",
 							"items": [
 								{
 									"ENG_name": "Flamethrower",

@@ -215,7 +215,7 @@ class SearchPage {
 			const ptSrd52 = isSrd52 ? `<span class="ve-muted ve-relative ve-help-subtle pg-search__disp-srd" title="可用于系统参考文档(5.2)">[SRD]</span>` : "";
 
 			const ptSourceInner = source
-				? `<i>${sourceFull}</i> (<span class="${Parser.sourceJsonToSourceClassname(source)}">${sourceAbv}</span>)${ptSrd}${ptSrd52}${Parser.sourceJsonToMarkerHtml(source, {isAddBrackets: true, additionalStyles: "pg-search__disp-source-marker"})}`
+				? `<i>${sourceFull.qq()}</i> (<span class="${Parser.sourceJsonToSourceClassname(source)}">${sourceAbv.qq()}</span>)${ptSrd}${ptSrd52}${Parser.sourceJsonToMarkerHtml(source, {isAddBrackets: true, additionalStyles: "pg-search__disp-source-marker"})}`
 				: `<span></span>`;
 			const ptSource = ptPage || !adventureBookSourceHref
 				? ptSourceInner

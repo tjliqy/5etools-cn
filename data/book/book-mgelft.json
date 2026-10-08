@@ -1,1945 +1,1951 @@
 {
-	"data": [
+	"bookData": [
 		{
-			"ENG_name": "Activity Pages",
-			"name": "活动页面",
-			"type": "section",
-			"page": 1,
-			"entries": [
+			"id": "MGELFT",
+			"source": "MGELFT",
+			"data": [
 				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/MGELFT/00000.webp"
-					},
-					"title": "穆克的塔莎所授万事指南",
-					"credit": "Emi Tanji",
-					"expectsLightBackground": true,
-					"altText": "穆克的塔莎所授万事指南",
-					"width": 1255,
-					"height": 1254
-				},
-				{
-					"type": "quote",
-					"style": "quote-pull",
-					"entries": [
-						"一本适合所有级别玩家的冒险活动书"
-					],
-					"skipMarks": true,
-					"skipItalics": true
-				},
-				{
-					"type": "entries",
-					"style": "text-center",
-					"entries": [
-						{
-							"type": "entries",
-							"entries": [
-								{
-									"ENG_name": "In Support of Extra Life",
-									"name": "支持Extra Life",
-									"type": "entries",
-									"page": 1,
-									"entries": [
-										"",
-										"创作与插画：Emi Tanji",
-										"冒险与设计天才 - 亚当·李与克里斯·林赛",
-										"特别感谢巴特·卡罗尔和布兰迪·骆驼"
-									],
-									"id": "003"
-								}
-							],
-							"id": "002"
-						}
-					],
-					"id": "001"
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/MGELFT/00004.webp"
-					},
-					"title": "你好！MUK 和 {@creature 松鸟|AWM}，这里！",
-					"credit": "Emi Tanji",
-					"expectsLightBackground": true,
-					"altText": "你好！穆克与鸟松鼠，在此！注意到什么新东西了吗？我，穆克！这个地精！我最好的朋友，鸟松鼠！今天在幽暗森林有一位特别的访客，我们想让你认识她......",
-					"width": 1280,
-					"height": 1655
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/MGELFT/00005.webp"
-					},
-					"title": "塔莎女巫",
-					"credit": "Emi Tanji",
-					"expectsLightBackground": true,
-					"altText": "塔莎女巫",
-					"width": 1280,
-					"height": 1655
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/MGELFT/00006.webp"
-					},
-					"title": "给每个人一顶女巫帽",
-					"credit": "Emi Tanji",
-					"expectsLightBackground": true,
-					"altText": "给每个人一顶女巫帽。穆克。松鸟。塔莎。魔邓肯（他不是女巫，但塔莎说他希望自己是。）雪怪幼崽（如果雪怪幼崽想成为女巫......让他们当！）",
-					"width": 1280,
-					"height": 1655
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/MGELFT/00007.webp"
-					},
-					"title": "塔莎曾游历过许多地方，并遇到了一些奇妙的生物！",
-					"credit": "Emi Tanji",
-					"expectsLightBackground": true,
-					"altText": "塔莎曾游历过许多地方，并遇到了一些奇妙的生物！一个狗头人奇械师和她的小巨嘴鸟人工生命体仆从，大多数狗头人都完全痴迷于龙类！一个照顾彩色蜻蜓的斑猫人群守护者，斑猫人喜欢闪亮的东西。一个善良的费尔伯格人孢子结社德鲁伊。",
-					"width": 1280,
-					"height": 1655
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/MGELFT/00008.webp"
-					},
-					"title": "突袭塔莎的衣柜！",
-					"credit": "Emi Tanji",
-					"expectsLightBackground": true,
-					"altText": "突袭塔莎的衣柜！多么奇妙的服装！洞察之袍让你能看到所有方向！让那些格龙蛙人现在试着偷偷接近我吧！",
-					"width": 1280,
-					"height": 1655
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/MGELFT/00009.webp"
-					},
-					"title": "你的魔法施法者是什么样子的？",
-					"credit": "Emi Tanji",
-					"expectsLightBackground": true,
-					"altText": "你的魔法施法者是什么样子的？你的名字。魔法物品。",
-					"width": 1278,
-					"height": 1655
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/MGELFT/00010.webp"
-					},
-					"title": "《塔莎的坩埚》里有什么？",
-					"credit": "Emi Tanji",
-					"expectsLightBackground": true,
-					"altText": "塔莎的坩埚里有什么？你认为塔莎泡泡坩埚里应该放什么？原料，两个腐烂的：一小撮：两杯：一把：",
-					"width": 1280,
-					"height": 1655
-				},
-				{
-					"type": "entries",
-					"page": 9,
-					"style": "text-center",
-					"entries": [
-						"一个法术的{@b 成分}是你施放法术所需的。",
-						"但它们并不总是物品！",
-						"有时它是一个魔法短语或手势。",
-						"施法时可能使用哪些材料成分？",
-						{
-							"ENG_name": "Types of Spell Components",
-							"name": "法术成分类型",
-							"type": "inset",
-							"page": 9,
-							"entries": [
-								{
-									"type": "list",
-									"style": "list-no-bullets",
-									"columns": 3,
-									"page": 9,
-									"items": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "book/MGELFT/00010a.webp"
-											},
-											"credit": "Emi Tanji",
-											"expectsLightBackground": true,
-											"maxHeight": 150,
-											"width": 1037,
-											"height": 613
-										},
-										{
-											"ENG_name": "Verbal (V):",
-											"name": "言语（V）：",
-											"type": "item",
-											"entries": [
-												"以特定方式说出、吟诵或歌唱的魔法词语。"
-											]
-										},
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "book/MGELFT/00010b.webp"
-											},
-											"credit": "Emi Tanji",
-											"expectsLightBackground": true,
-											"maxHeight": 150,
-											"width": 834,
-											"height": 658
-										},
-										{
-											"ENG_name": "Somatic (S):",
-											"name": "姿势（S）:",
-											"type": "item",
-											"entries": [
-												"物理动作，例如挥手或抽动鼻子。"
-											]
-										},
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "book/MGELFT/00010c.webp"
-											},
-											"credit": "Emi Tanji",
-											"expectsLightBackground": true,
-											"maxHeight": 150,
-											"width": 889,
-											"height": 659
-										},
-										{
-											"ENG_name": "Material (M):",
-											"name": "材料 (M):",
-											"type": "item",
-											"entries": [
-												"施放你的法术所需的特定物品。"
-											]
-										}
-									]
-								}
-							],
-							"id": "007"
-						}
-					],
-					"id": "004"
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/MGELFT/00011.webp"
-					},
-					"title": "你可能会在潮湿森林中找到的一些物品",
-					"credit": "Emi Tanji",
-					"expectsLightBackground": true,
-					"altText": "你可能会在暗木森林中找到的一些物品。臭烘烘的史拉灰蟾脚趾甲屑。一个玻璃罐，里面有一只打盹的蜜蜂。绝对是一根魔法蛇杖。一簇黏糊糊的恶心蜘蛛蛙网。嘿！#1 傻瓜，来自傻瓜地精村的神秘酿造。一份被盗的昂贵精灵卷轴。最闪亮的岩石。那是我的闪亮岩石。一个会唱歌的蘑菇家族。一根枭熊羽毛。一张撕破的神秘命运纸条。\"黑色的风在呼啸。\"",
-					"width": 1280,
-					"height": 1655
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/MGELFT/00012.webp"
-					},
-					"title": "我们的最后一种材料是：温尼莓树的果实",
-					"credit": "Emi Tanji",
-					"expectsLightBackground": true,
-					"altText": "我们的最后一个成分是：温尼莓树的果实。但首先要通过那些脾气暴躁的格龙蛙人！他们的体型和我们地精差不多！为什么这么暴躁？！",
-					"width": 1279,
-					"height": 1655
-				},
-				{
-					"ENG_name": "Can you spot the difference?",
-					"name": "你能发现区别吗？",
-					"type": "entries",
-					"page": 12,
-					"style": "text-center",
-					"entries": [
-						"找出这两张图片中的{@b 10}处不同！",
-						{
-							"type": "gallery",
-							"images": [
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "book/MGELFT/00013.webp"
-									},
-									"credit": "Emi Tanji",
-									"expectsLightBackground": true,
-									"width": 1275,
-									"height": 1650
-								},
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "book/MGELFT/00014.webp"
-									},
-									"credit": "Emi Tanji",
-									"expectsLightBackground": true,
-									"width": 1275,
-									"height": 1650
-								}
-							]
-						}
-					],
-					"id": "008"
-				},
-				{
-					"type": "entries",
-					"page": 14,
-					"entries": [
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "book/MGELFT/00015.webp"
-							},
-							"title": "{@b 湍急之河}前方！",
-							"credit": "Emi Tanji",
-							"expectsLightBackground": true,
-							"altText": "前方河流湍急！",
-							"width": 1280,
-							"height": 1655
-						},
-						"协助我们的冒险者选择正确的路线以抵达{@b 安全！}",
-						"使用漩涡箭头让MUK的船在河上更快移动。",
-						"它们可以绕过岩石、原木和颠簸的水面。但如果它们命中一个怪物（以{@b X}表示），这将是一次非常湿漉漉的摔绊。"
-					],
-					"id": "009"
-				},
-				{
-					"ENG_name": "The winnieberry tree! We made it!",
-					"name": "古树莓树！我们成功了！",
-					"type": "entries",
-					"page": 15,
-					"entries": [
-						"小心那些{@creature 飞首|VGM|飞首}！",
-						"长着像{@b 蝙蝠般的}一样的翅膀在耳朵位置飞行的微型怪胎！真恶心！",
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "book/MGELFT/00016.webp"
-							},
-							"credit": "Emi Tanji",
-							"expectsLightBackground": true,
-							"width": 1280,
-							"height": 1653
-						},
-						"MUK应该攀爬哪根树枝才能获得最多的果实？",
-						"快，那些{@creature 飞首|VGM|飞首}开始集群了！"
-					],
-					"id": "00a"
-				},
-				{
-					"ENG_name": "Winnieberry Mission Accomplished!",
-					"name": "温妮莓任务完成！",
-					"type": "entries",
-					"page": 16,
-					"entries": [
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "book/MGELFT/00017.webp"
-							},
-							"title": "拥有像{@creature 松鸟|AWM}这样的{@b 助手}是最棒的！",
-							"credit": "Emi Tanji",
-							"expectsLightBackground": true,
-							"width": 1148,
-							"height": 850
-						},
-						{
-							"ENG_name": "Fun Sidekick Ideas",
-							"name": "有趣的伙伴创意",
-							"type": "inset",
-							"page": 16,
-							"style": "text-center",
-							"entries": [
-								{
-									"type": "list",
-									"style": "list-no-bullets",
-									"columns": 2,
-									"page": 16,
-									"items": [
-										{
-											"ENG_name": "A Childhood Pet",
-											"name": "童年宠物",
-											"type": "item",
-											"entries": [
-												{
-													"type": "quote",
-													"entries": [
-														"从我出生的那一天起，我们就形影不离！"
-													]
-												}
-											]
-										},
-										{
-											"ENG_name": "Someone You Rescued",
-											"name": "你曾拯救的人",
-											"type": "item",
-											"entries": [
-												{
-													"type": "quote",
-													"entries": [
-														"感谢你把我从急流河中救出来！"
-													]
-												}
-											]
-										},
-										{
-											"ENG_name": "The Befriended Creature",
-											"name": "被友善对待的生物",
-											"type": "item",
-											"entries": [
-												{
-													"type": "quote",
-													"entries": [
-														"我喜欢你孩子，你也许闻起来有点怪，但我会带你走出这个迷宫。"
-													]
-												}
-											]
-										},
-										{
-											"ENG_name": "The Expert",
-											"name": "专家",
-											"type": "item",
-											"entries": [
-												{
-													"type": "quote",
-													"entries": [
-														"我喜欢撬锁！还有潜行。还有宝藏。让我一起来吧！"
-													]
-												}
-											]
-										}
-									]
-								}
-							],
-							"id": "00c"
-						}
-					],
-					"id": "00b"
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/MGELFT/00018.webp"
-					},
-					"title": "随从可以是多年的朋友......我们称之为家人的人......或是我们刚刚遇到的人！",
-					"credit": "Emi Tanji",
-					"expectsLightBackground": true,
-					"altText": "随从可以是多年的朋友......我们称之为家人的人......或是我们刚刚遇到的人！",
-					"width": 1280,
-					"height": 1655
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/MGELFT/00019.webp"
-					},
-					"title": "如何创建一名助手",
-					"credit": "Emi Tanji",
-					"expectsLightBackground": true,
-					"altText": "如何画一个伙伴。雪怪宝宝、独角兔、狗头人。现在轮到你了！给你的伙伴写张便条！如果你需要帮助剪出字母，请向成年人求助。",
-					"width": 1700,
-					"height": 2200
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/MGELFT/00020.webp"
-					},
-					"title": "感谢伙伴",
-					"credit": "Emi Tanji",
-					"expectsLightBackground": true,
-					"altText": "感谢你，伙伴。我的伙伴名字。我的伙伴图片。我们初次相遇。我最喜欢伙伴的地方。签名：",
-					"width": 1280,
-					"height": 1655
-				},
-				{
-					"type": "entries",
-					"page": 20,
-					"entries": [
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "book/MGELFT/00021.webp"
-							},
-							"title": "没人听说过的法术，只是尚未被发现而已！",
-							"credit": "Emi Tanji",
-							"expectsLightBackground": true,
-							"altText": "没人听说过的法术，只是尚未被发现而已！",
-							"width": 1280,
-							"height": 1655
-						},
-						{
-							"ENG_name": "Fun Fact",
-							"name": "趣味知识",
-							"type": "inset",
-							"page": 20,
-							"entries": [
-								"{@creature 塔莎女巫|VEoR|塔莎} 是被收养的。她由著名的女巫芭芭·雅加抚养长大，后者住在一个立在巨大鸡腿上的小屋里！"
-							],
-							"id": "00e"
-						}
-					],
-					"id": "00d"
-				},
-				{
-					"type": "entries",
-					"page": 21,
-					"entries": [
-						"协助MUK选择恰当的词语来描述他与塔莎的冒险！",
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "book/MGELFT/00021a.webp"
-							},
-							"title": "隐秘检定！",
-							"credit": "Emi Tanji",
-							"expectsLightBackground": true,
-							"altText": "隐秘检定！",
-							"width": 1000,
-							"height": 620
-						},
-						{
-							"type": "list",
-							"style": "list-no-bullets",
-							"page": 21,
-							"items": [
-								{
-									"ENG_name": "Adjective:",
-									"name": "形容词：",
-									"type": "item",
-									"entries": [
-										""
-									]
-								},
-								{
-									"ENG_name": "Verb, past tense:",
-									"name": "动词，过去式：",
-									"type": "item",
-									"entries": [
-										""
-									]
-								},
-								{
-									"ENG_name": "Adjective:",
-									"name": "形容词：",
-									"type": "item",
-									"entries": [
-										""
-									]
-								},
-								{
-									"ENG_name": "Part of the body (Plural):",
-									"name": "身体部位（复数）：",
-									"type": "item",
-									"entries": [
-										""
-									]
-								},
-								{
-									"ENG_name": "Verb:",
-									"name": "动词:",
-									"type": "item",
-									"entries": [
-										""
-									]
-								},
-								{
-									"ENG_name": "Adjective:",
-									"name": "形容词：",
-									"type": "item",
-									"entries": [
-										""
-									]
-								},
-								{
-									"ENG_name": "Noun:",
-									"name": "名词:",
-									"type": "item",
-									"entries": [
-										""
-									]
-								},
-								{
-									"ENG_name": "Number:",
-									"name": "编号：",
-									"type": "item",
-									"entries": [
-										""
-									]
-								},
-								{
-									"ENG_name": "Adjective:",
-									"name": "形容词：",
-									"type": "item",
-									"entries": [
-										""
-									]
-								},
-								{
-									"ENG_name": "Plural noun:",
-									"name": "复数名词:",
-									"type": "item",
-									"entries": [
-										""
-									]
-								},
-								{
-									"ENG_name": "Color:",
-									"name": "颜色：",
-									"type": "item",
-									"entries": [
-										""
-									]
-								},
-								{
-									"ENG_name": "Plural noun:",
-									"name": "复数名词:",
-									"type": "item",
-									"entries": [
-										""
-									]
-								},
-								{
-									"ENG_name": "Noun:",
-									"name": "名词:",
-									"type": "item",
-									"entries": [
-										""
-									]
-								},
-								{
-									"ENG_name": "Type of container:",
-									"name": "容器类型：",
-									"type": "item",
-									"entries": [
-										""
-									]
-								},
-								{
-									"ENG_name": "Person in room:",
-									"name": "房间内的人：",
-									"type": "item",
-									"entries": [
-										""
-									]
-								},
-								{
-									"ENG_name": "Noun:",
-									"name": "名词:",
-									"type": "item",
-									"entries": [
-										""
-									]
-								}
-							]
-						},
-						{
-							"type": "list",
-							"style": "list-no-bullets",
-							"columns": 2,
-							"page": 21,
-							"items": [
-								{
-									"ENG_name": "Instructions",
-									"name": "说明",
-									"type": "inset",
-									"page": 21,
-									"entries": [
-										"一旦你完成了选择你的话语，翻到下一页并按所列顺序填写空白处。MUK发现了什么类型的法术？"
-									],
-									"id": "010"
-								},
-								{
-									"ENG_name": "Definitions",
-									"name": "定义",
-									"type": "inset",
-									"page": 21,
-									"entries": [
-										{
-											"type": "list",
-											"style": "list-no-bullets",
-											"page": 21,
-											"items": [
-												{
-													"ENG_name": "Adjective:",
-													"name": "形容词：",
-													"type": "item",
-													"entries": [
-														"一个{@i 描述}某物或某人的词语"
-													]
-												},
-												{
-													"ENG_name": "Adverb:",
-													"name": "副词：",
-													"type": "item",
-													"entries": [
-														"一个动词（动作）通常以 \"ly\" 结尾"
-													]
-												},
-												{
-													"ENG_name": "Noun:",
-													"name": "名词:",
-													"type": "item",
-													"entries": [
-														"一个人、地点或事物"
-													]
-												},
-												{
-													"ENG_name": "Plural Noun:",
-													"name": "复数名词:",
-													"type": "item",
-													"entries": [
-														"多个人、地点或事物"
-													]
-												},
-												{
-													"ENG_name": "Verb:",
-													"name": "动词:",
-													"type": "item",
-													"entries": [
-														"Ab 动作，或某人做的某事"
-													]
-												}
-											]
-										}
-									],
-									"id": "011"
-								}
-							]
-						}
-					],
-					"id": "00f"
-				},
-				{
-					"type": "entries",
-					"page": 22,
-					"entries": [
-						{
-							"type": "insetReadaloud",
-							"page": 22,
-							"style": "text-center",
-							"entries": [
-								"当塔莎第一次{@footnote _______________|动词，过去式}进暗黑森林时，我有点{@footnote _______________|形容词}。她如此{@footnote _______________|形容词}，第一次见到她让我们的{@footnote _______________|身体部位（复数）}{@footnote _______________|动词}！",
-								"塔莎最著名的法术叫做{@spell 塔莎狂笑术}。在她的协助下，我得以创造出独属于我自己的法术：MUK的{@footnote _______________|形容词} {@footnote _______________|名词}。这个法术相当高深，需要以下材料：{@footnote _______________|数值}颗温尼莓、一把{@footnote _______________|形容词}的{@footnote _______________|复数名词}、两个{@footnote _______________|颜色}的{@footnote _______________|复数名词}，每个都要有{@footnote _______________|名词}那么大。将它们全部放入一个大型{@footnote _______________|容器类型}中混合，然后唱道：\"哦，{@footnote _______________|房间内人员}，请将你的{@footnote _______________|名词}借我一用！\"",
-								"享受我的魔法咒语！"
-							],
-							"id": "013"
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "book/MGELFT/00022.webp"
-							},
-							"credit": "Emi Tanji",
-							"expectsLightBackground": true,
-							"width": 1280,
-							"height": 1655
-						},
-						{
-							"type": "inset",
-							"page": 22,
-							"entries": [
-								"查看第40页了解如何制作你自己的迷你法术书的说明！"
-							],
-							"id": "014"
-						}
-					],
-					"id": "012"
-				},
-				{
-					"type": "entries",
-					"page": 23,
-					"entries": [
-						"法术来自施法者，并可能受到其个性或特质的影响！你的法术看起来像什么？闻起来像什么？",
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "book/MGELFT/00023.webp"
-							},
-							"title": "MUK的{@spell 虔诚护盾}法术显现为一个巨大的、灵体的{@creature 松鸟|AWM}，准备进行保护！",
-							"credit": "Emi Tanji",
-							"expectsLightBackground": true,
-							"altText": "MUK的虔诚护盾法术显现为一个巨大的灵体间谍鸟松鼠，准备进行保护！",
-							"width": 1138,
-							"height": 984
-						}
-					],
-					"id": "015"
-				},
-				{
-					"ENG_name": "Word Find",
-					"name": "文字寻宝",
+					"ENG_name": "Activity Pages",
+					"name": "活动页面",
 					"type": "section",
-					"page": 24,
-					"entries": [
-						{
-							"type": "table",
-							"page": 24,
-							"colStyles": [
-								"text-center",
-								"text-center",
-								"text-center",
-								"text-center",
-								"text-center",
-								"text-center",
-								"text-center",
-								"text-center",
-								"text-center",
-								"text-center",
-								"text-center",
-								"text-center",
-								"text-center",
-								"text-center",
-								"text-center"
-							],
-							"rows": [
-								[
-									"C",
-									"C",
-									"O",
-									"C",
-									"D",
-									"L",
-									"D",
-									"N",
-									"K",
-									"B",
-									"V",
-									"H",
-									"Y",
-									"I",
-									"D"
-								],
-								[
-									"R",
-									"H",
-									"A",
-									"R",
-									"I",
-									"R",
-									"R",
-									"O",
-									"F",
-									"A",
-									"H",
-									"V",
-									"Y",
-									"U",
-									"L"
-								],
-								[
-									"K",
-									"T",
-									"U",
-									"U",
-									"A",
-									"G",
-									"O",
-									"F",
-									"A",
-									"B",
-									"H",
-									"W",
-									"D",
-									"S",
-									"O"
-								],
-								[
-									"K",
-									"I",
-									"A",
-									"Z",
-									"L",
-									"B",
-									"A",
-									"C",
-									"C",
-									"A",
-									"M",
-									"N",
-									"M",
-									"A",
-									"B"
-								],
-								[
-									"D",
-									"C",
-									"I",
-									"S",
-									"L",
-									"D",
-									"B",
-									"M",
-									"Z",
-									"Y",
-									"N",
-									"S",
-									"W",
-									"I",
-									"O"
-								],
-								[
-									"O",
-									"W",
-									"O",
-									"L",
-									"H",
-									"T",
-									"R",
-									"J",
-									"C",
-									"A",
-									"Q",
-									"S",
-									"G",
-									"K",
-									"K"
-								],
-								[
-									"D",
-									"V",
-									"E",
-									"L",
-									"D",
-									"A",
-									"D",
-									"O",
-									"S",
-									"G",
-									"L",
-									"L",
-									"E",
-									"P",
-									"S"
-								],
-								[
-									"H",
-									"P",
-									"B",
-									"W",
-									"R",
-									"Z",
-									"B",
-									"O",
-									"N",
-									"A",
-									"Z",
-									"M",
-									"G",
-									"K",
-									"W"
-								],
-								[
-									"S",
-									"M",
-									"Q",
-									"G",
-									"A",
-									"A",
-									"R",
-									"C",
-									"L",
-									"E",
-									"R",
-									"I",
-									"C",
-									"O",
-									"T"
-								],
-								[
-									"Y",
-									"H",
-									"A",
-									"A",
-									"B",
-									"C",
-									"W",
-									"F",
-									"H",
-									"N",
-									"E",
-									"F",
-									"G",
-									"B",
-									"W"
-								],
-								[
-									"Q",
-									"Y",
-									"F",
-									"G",
-									"E",
-									"C",
-									"N",
-									"R",
-									"I",
-									"N",
-									"M",
-									"H",
-									"J",
-									"H",
-									"I"
-								],
-								[
-									"A",
-									"M",
-									"T",
-									"R",
-									"D",
-									"L",
-									"I",
-									"W",
-									"Y",
-									"E",
-									"F",
-									"Q",
-									"R",
-									"Q",
-									"T"
-								],
-								[
-									"C",
-									"K",
-									"E",
-									"G",
-									"M",
-									"C",
-									"Z",
-									"X",
-									"O",
-									"Y",
-									"N",
-									"P",
-									"C",
-									"R",
-									"C"
-								],
-								[
-									"G",
-									"R",
-									"Q",
-									"S",
-									"I",
-									"D",
-									"E",
-									"K",
-									"I",
-									"C",
-									"K",
-									"E",
-									"C",
-									"N",
-									"H"
-								],
-								[
-									"S",
-									"V",
-									"R",
-									"H",
-									"X",
-									"W",
-									"Y",
-									"T",
-									"E",
-									"O",
-									"V",
-									"M",
-									"W",
-									"T",
-									"O"
-								]
-							]
-						},
-						{
-							"type": "inset",
-							"page": 24,
-							"entries": [
-								{
-									"type": "list",
-									"style": "list-no-bullets",
-									"columns": 2,
-									"page": 24,
-									"items": [
-										"芭芭雅嘎",
-										"吟游诗人",
-										"吊挂大锅",
-										"牧师",
-										"德鲁伊",
-										"妖精荒野",
-										"狗头人",
-										"魔法",
-										"助手",
-										"术士",
-										"法术",
-										"法术书",
-										"塔莎",
-										"魔契师",
-										"女巫",
-										"法师"
-									]
-								}
-							],
-							"id": "006"
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "book/MGELFT/00023a.webp"
-							},
-							"title": "{@creature 松鸟|AWM} 仍然不太会阅读... 你能帮帮忙吗？",
-							"credit": "Emi Tanji",
-							"expectsLightBackground": true,
-							"altText": "Birdsquirrel 仍然阅读能力不佳... 你能帮忙吗？",
-							"width": 853,
-							"height": 710
-						}
-					],
-					"id": "005"
-				},
-				{
-					"ENG_name": "Crossword Puzzle",
-					"name": "填字谜题",
-					"type": "entries",
-					"page": 25,
+					"id": "000",
+					"page": 1,
 					"entries": [
 						{
 							"type": "image",
 							"href": {
 								"type": "internal",
-								"path": "book/MGELFT/00023b.webp"
+								"path": "book/MGELFT/00000.webp"
 							},
-							"title": "填字谜题",
+							"width": 1255,
+							"height": 1254,
+							"title": "穆克的塔莎所授万事指南",
+							"altText": "穆克的塔莎所授万事指南",
 							"credit": "Emi Tanji",
-							"expectsLightBackground": true,
-							"altText": "填字谜题",
-							"width": 1700,
-							"height": 2200
+							"expectsLightBackground": true
 						},
-						{
-							"ENG_name": "Down",
-							"name": "下",
-							"type": "list",
-							"style": "list-no-bullets",
-							"page": 25,
-							"items": [
-								"1. 一种小型且聪明的爬行类生物。它们以崇拜龙类而闻名。",
-								"2. 塔莎在一座长着这种动物腿的小屋里长大。",
-								"3. {@creature 松鸟|AWM|鸟松鼠的} 最好的朋友。",
-								"5. 施法所需之物。",
-								"6. 瓦古尔拥有这种动物的翅膀从它们头部生长出来。"
-							]
-						},
-						{
-							"ENG_name": "Across",
-							"name": "穿越",
-							"type": "list",
-							"style": "list-no-bullets",
-							"page": 25,
-							"items": [
-								"4. 在冒险中帮助过你的人。",
-								"7. 幼年雪怪的称呼。",
-								"8. 这个著名法术的名字：{@spell 塔莎狂笑术||泰莎的恐怖___________}。"
-							]
-						}
-					],
-					"id": "016"
-				}
-			],
-			"id": "000"
-		},
-		{
-			"ENG_name": "Answers",
-			"name": "答案",
-			"type": "section",
-			"page": 26,
-			"entries": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/MGELFT/00023c.webp"
-					},
-					"title": "第11页|文字寻宝。第12和13页| 找不同",
-					"credit": "Emi Tanji",
-					"expectsLightBackground": true,
-					"altText": "第11页|文字寻宝。第12和13页| 找不同",
-					"width": 1700,
-					"height": 2200
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/MGELFT/00023d.webp"
-					},
-					"title": "第14页| 粗犷之河。第15页 |温尼莓古树",
-					"credit": "Emi Tanji",
-					"expectsLightBackground": true,
-					"altText": "第14页| 粗犷之河。第15页 |温尼莓古树",
-					"width": 1700,
-					"height": 2200
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/MGELFT/00023e.webp"
-					},
-					"title": "第24页|文字寻宝。第25页|填字谜题",
-					"credit": "Emi Tanji",
-					"expectsLightBackground": true,
-					"altText": "第24页|文字寻宝。第25页|填字谜题",
-					"width": 1700,
-					"height": 2200
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/MGELFT/00026.webp"
-					},
-					"title": "继续阅读以获取更多冒险和伙伴创意！",
-					"credit": "Emi Tanji",
-					"expectsLightBackground": true,
-					"altText": "继续阅读以获取更多冒险和伙伴创意！",
-					"width": 1280,
-					"height": 1655
-				}
-			],
-			"id": "017"
-		},
-		{
-			"ENG_name": "Adventure and Sidekick Ideas!",
-			"name": "冒险与伙伴创意！",
-			"type": "section",
-			"page": 30,
-			"entries": [
-				{
-					"ENG_name": "Adventure Ideas",
-					"name": "冒险点子",
-					"type": "section",
-					"page": 30,
-					"entries": [
-						"阴林中的每一个冒险都有一个不诉诸战斗就能解决的方案。地精可以偷偷摸摸地逃离危险，他们可以装出一副强硬的样子，虚张声势地解决问题，还能和任何人（甚至是{@creature 阴林格龙蛙人|MGELFT|脾气暴躁的格龙蛙人}！）交朋友。",
-						"阅读冒险点子，了解问题或谜团，然后查看这些问题是提示，可以让你的玩家发明自己的创造性的方法来解决冒险，并讲述他们自己的阴林故事。 每个故事都有无限可能的讲述方式，所以请尽情发挥你的想象力！",
-						{
-							"ENG_name": "Tasha's Party",
-							"name": "塔莎的派对",
-							"type": "entries",
-							"page": 30,
-							"entries": [
-								"塔莎需要你的帮助！ 她想举办一个派对制作她的超级特制绿泡泡汤。 哥布镇的每个人都很兴奋，但是塔莎说要做绿泡泡汤，她需要一些粘糊糊的蜘蛛网，这些蜘蛛网来自稀有且难以捉摸的{@creature 蜘蛙|MGELFT}。 你知道在哪里能帮她弄到吗？",
-								"你听说过{@creature 黏黏国王罗比特|MGELFT|格龙蛙人国王黏黏罗比特}吗？ 他可能知道哪里能弄到蜘蛛网，或者他和{@creature 阴林格龙蛙人|MGELFT|他的格龙蛙人}甚至有蜘蛛网可以与其交换。",
-								{
-									"ENG_name": "Questions to Ask:",
-									"name": "要问的问题：",
-									"type": "entries",
-									"page": 30,
-									"entries": [
-										{
-											"type": "list",
-											"page": 30,
-											"items": [
-												"{@creature 黏黏国王罗比特|MGELFT|罗比特国王}想用什么来交换有关{@creature 蜘蛙|MGELFT|蜘蛙}位置的信息或（如果他有的话）蜘蛛网？如果你能找出他喜欢什么、那么你们就有可能和他进行交易。",
-												"如果{@creature 阴林格龙蛙人|MGELFT|格龙蛙人}脾气太坏，那么谁会知道在阴林哪里能找到{@creature 蜘蛙|MGELFT}的网？你需要问谁才能得到这些信息？ 有很多地精朋友都知道这些事！"
-											]
-										}
-									],
-									"id": "01b"
-								},
-								{
-									"ENG_name": "Ask Around Gob-Town! Find Stuff Out!",
-									"name": "问问哥布镇周围的人！找出什么！",
-									"type": "inset",
-									"page": 30,
-									"entries": [
-										"精明而非常暴躁。要从他们那里获得的网并不容易。{@creature 黏黏国王罗比特|MGELFT|罗比特国王} 很狡猾，而 {@creature 阴林格龙蛙人|MGELFT|格龙蛙人们} 脾气超级暴躁。 要从它们那里弄到 {@creature 蜘蛙|MGELFT|蜘蛙} 网可不容易。",
-										"塔莎知道{@creature 蜘蛙|MGELFT|蜘蛙}会在清澈的能反射月光的池塘边织网，它们还会在满月时发出高亢的吱吱声。"
-									],
-									"id": "01c"
-								},
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "book/MGELFT/00026a.webp"
-									},
-									"credit": "Emi Tanji",
-									"expectsLightBackground": true,
-									"width": 1280,
-									"height": 887
-								}
-							],
-							"id": "01a"
-						},
-						{
-							"ENG_name": "The Lost Yeti",
-							"name": "迷失的雪怪",
-							"type": "entries",
-							"page": 30,
-							"entries": [
-								"在阴林闲逛时，您发现了一只{@creature 雪怪幼崽|MGELFT}。 它是个闷闷不乐的小动物，但这可能是因为它只是在想念它的家人。",
-								"你很确定它的家人住在北面的雪山上，虽然路途遥远，但如果{@creature 雪怪幼崽|MGELFT|小鬼}想回家 必须有人给它带路。",
-								{
-									"ENG_name": "The Real Story!",
-									"name": "真正的故事！",
-									"type": "entries",
-									"page": 30,
-									"entries": [
-										"这只小雪怪被一群{@creature 阴林灰矮人|MGELFT|脾气暴躁的灰矮人}将其与父母分开，雪怪住在一个山洞里，但山洞里有一扇暗门，通向一个地下迷宫。 里面藏着一个古老的宝藏。 雪怪不知道暗门和宝藏的事，但{@creature 阴林灰矮人|MGELFT|灰矮人}们知道。 他们把雪怪赶出了洞穴，以便寻找宝藏。",
-										"当英雄们把{@creature 雪怪幼崽|MGELFT|小鬼}还给它的父母时，雪怪告诉他们{@creature 阴林灰矮人|MGELFT|脾气暴躁的灰矮人}和他们是如何被赶出家门的。 我们的英雄能否帮助雪怪回到他们的家，让灰矮人们滚蛋，也许还能得到一些灰矮人正在寻找的宝藏？"
-									],
-									"id": "01e"
-								},
-								{
-									"ENG_name": "Questions to Ask:",
-									"name": "要问的问题：",
-									"type": "entries",
-									"page": 30,
-									"entries": [
-										{
-											"type": "list",
-											"page": 30,
-											"items": [
-												"有人会说{@language 雪怪语|MM}语吗？ 也许塔莎有法术或药水能做到！",
-												"有什么可能的方法可以摆脱{@creature 阴林灰矮人|MGELFT|灰矮人}？ 有些了解他们的人说，{@creature 阴林灰矮人|MGELFT|灰矮人}害怕夺心魔，也许英雄们可以打扮成他们的样子，然后把{@creature 阴林灰矮人|MGELFT|灰矮人}吓跑？",
-												"雪怪说附近住着一种超级可怕的怪物，叫做{@creature 百足魔兽}。 也许那个怪物在对付{@creature 阴林灰矮人|MGELFT|灰矮人}的时候派上用场？ 这很冒险！",
-												"{@creature 阴林灰矮人|MGELFT|灰矮人}有地图吗？ 迷宫肯定很混乱，很容易迷路！"
-											]
-										}
-									],
-									"id": "01f"
-								},
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "book/MGELFT/00026b.webp"
-									},
-									"credit": "Emi Tanji",
-									"expectsLightBackground": true,
-									"width": 1364,
-									"height": 885
-								}
-							],
-							"id": "01d"
-						},
-						{
-							"ENG_name": "The Cursed Spring",
-							"name": "被诅咒的泉水",
-							"type": "entries",
-							"page": 30,
-							"entries": [
-								"英雄们遇到了一只在泉边哭泣的{@creature 皮克精}。 泉水里全是臭泥和冒泡的污泥。 如果问她怎么了，她就告诉他们，她美丽的泉水受到了一个邪恶{@creature 泥鬼婆|MGELFT}的诅咒。 她已经搬进了阴林。 她问英雄们能否帮助她让鬼婆解除泉水的诅咒。",
-								{
-									"ENG_name": "Questions to Ask:",
-									"name": "要问的问题：",
-									"type": "entries",
-									"page": 30,
-									"entries": [
-										{
-											"type": "list",
-											"page": 30,
-											"items": [
-												"能和{@creature 泥鬼婆|MGELFT|鬼婆}商谈吗？ 每个人都有自己觊觎或渴望的东西，也许有办法找出{@creature 泥鬼婆|MGELFT|鬼婆}最渴望的东西。",
-												"你能和{@creature 泥鬼婆|MGELFT|鬼婆}交朋友吗？ 也许从来没有人友善地对待过{@creature 泥鬼婆|MGELFT|鬼婆}\u2014\u2014一个新鲜出炉的派也许能帮上忙！",
-												"{@creature 泥鬼婆|MGELFT|鬼婆}会被骗吗？ 也许她们很喜欢打赌，如果你够厉害，就能在赌局中打败她们。",
-												"你能利用你的朋友帮忙吗？ 你的朋友塔莎是个非常厉害的女巫。 也许她知道{@creature 泥鬼婆|MGELFT|鬼婆的}的弱点，你可以加以利用。"
-											]
-										}
-									],
-									"id": "021"
-								}
-							],
-							"id": "020"
-						}
-					],
-					"id": "019"
-				},
-				{
-					"ENG_name": "More Adventure Hooks!",
-					"name": "更多冒险契机！",
-					"type": "section",
-					"page": 31,
-					"entries": [
-						"以下是一些有趣的想法，可以激发在暗木林中的精彩故事。用它们来衍生更多冒险吧！",
-						{
-							"type": "table",
-							"caption": "阴林冒险点子",
-							"page": 31,
-							"colLabels": [
-								"d8",
-								"冒险引子"
-							],
-							"colStyles": [
-								"col-1 text-center",
-								"col-11"
-							],
-							"rows": [
-								[
-									"1",
-									"一支笛子，吹响后会召唤一只{@creature 天马}。（如果你骑在它背上 {@creature 天马}会飞到哪里去？）"
-								],
-								[
-									"2",
-									"一只雕刻的木鸟，拿起来就会复活并把冒险者带到洞穴入口处。 (洞穴里有什么宝藏？）"
-								],
-								[
-									"3",
-									"一只{@creature 皮克精}飞到你面前，问你是否愿意帮忙把一只{@creature 巨魔}赶出村子。(如何赶走危险的巨魔）"
-								],
-								[
-									"4",
-									"一个猎人在森林里寻找一只罕见的金角赤鹿。 (要么帮助猎人抓住赤鹿，要么帮助赤鹿逃脱猎人的追捕）。"
-								],
-								[
-									"5",
-									"一个自称有王室血统的精灵正在阴林寻求庇护。他正遭到敌对精灵的追杀，并 愿意用金币来换取你的帮助。 (这个精灵真的是他所说的那样吗？ 对手精灵是谁？）"
-								],
-								[
-									"6",
-									"一个侏儒冲向你，递给你一把金钥匙，并告诉你：\"找到水晶洞，救我。\"然后他就变成了石头！"
-								],
-								[
-									"7",
-									"你的一张网困住了一只{@creature 老虎}。 当你正在想如何处理它时，{@creature 老虎}开口说话了，它说自己曾经是一个被邪恶法师诅咒的半身人。"
-								],
-								[
-									"8",
-									"一名赏金猎人正在追捕一名罪犯。到底是罪犯坏，还是赏金猎人坏？"
-								]
-							]
-						}
-					],
-					"id": "022"
-				},
-				{
-					"ENG_name": "Monsters",
-					"name": "怪物",
-					"type": "section",
-					"page": 31,
-					"entries": [
-						"以下怪物经过简化/修改，以在Muk历险记中使用。 以下数据供你参考。 你可以根据自己的故事情节随意调整或添加。",
-						{
-							"ENG_name": "Dankwood Grung",
-							"name": "阴林格龙蛙人",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "MGELFT",
-							"page": 31,
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Dankwood Grung",
-							"name": "阴林格龙蛙人",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "MGELFT",
-							"page": 31,
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Dankwood Duergar",
-							"name": "阴林灰矮人",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "MGELFT",
-							"page": 32,
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Dankwood Duergar",
-							"name": "阴林灰矮人",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "MGELFT",
-							"page": 32,
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "book/MGELFT/00026c.webp"
-							},
-							"credit": "Emi Tanji",
-							"expectsLightBackground": true,
-							"altText": "我的宝藏！石灰色皮肤。白色头发。",
-							"width": 1552,
-							"height": 696
-						},
-						{
-							"ENG_name": "King Robbit the Slimy",
-							"name": "黏黏国王罗比特",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "MGELFT",
-							"page": 32,
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "King Robbit the Slimy",
-							"name": "黏黏国王罗比特",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "MGELFT",
-							"page": 32,
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Sludge Hag",
-							"name": "泥鬼婆",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "MGELFT",
-							"page": 33,
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Sludge Hag",
-							"name": "泥鬼婆",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "MGELFT",
-							"page": 33,
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "book/MGELFT/00026d.webp"
-							},
-							"credit": "Emi Tanji",
-							"expectsLightBackground": true,
-							"width": 1358,
-							"height": 792
-						},
-						{
-							"ENG_name": "Spiderfrog",
-							"name": "蜘蛙",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "MGELFT",
-							"page": 33,
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Spiderfrog",
-							"name": "蜘蛙",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "MGELFT",
-							"page": 33,
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Yeti Tyke",
-							"name": "雪怪幼崽",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "MGELFT",
-							"page": 34,
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Yeti Tyke",
-							"name": "雪怪幼崽",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "MGELFT",
-							"page": 34,
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						}
-					],
-					"id": "023"
-				},
-				{
-					"ENG_name": "Sidekicks",
-					"name": "协力者",
-					"type": "section",
-					"page": 35,
-					"entries": [
-						{
-							"type": "list",
-							"style": "list-no-bullets",
-							"columns": 2,
-							"page": 35,
-							"items": [
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "book/MGELFT/00031a.webp"
-									},
-									"credit": "Emi Tanji",
-									"expectsLightBackground": true,
-									"width": 782,
-									"height": 1030
-								},
-								{
-									"ENG_name": "Winky-Bix",
-									"name": "温基-比克斯",
-									"type": "inset",
-									"page": 35,
-									"entries": [
-										"{@i 小型暗木独角兔}",
-										"温基-比克斯是第一个在需要时提供协助的。他们可以每长休一次施放戏法{@spell 光亮术}。",
-										{
-											"type": "hr"
-										},
-										{
-											"ENG_name": "Personality:",
-											"name": "个性：",
-											"type": "entries",
-											"page": 35,
-											"entries": [
-												"我可能很微型，但我总是愿意全力以赴！"
-											],
-											"id": "026"
-										},
-										{
-											"ENG_name": "Flaw:",
-											"name": "缺陷：",
-											"type": "entries",
-											"page": 35,
-											"entries": [
-												"我的耳朵特别柔软也特别长\u2014\u2014有时我会被它们绊倒。"
-											],
-											"id": "027"
-										},
-										"{@skillCheck 自然之怒 2} 对{@skill 自然}检定"
-									],
-									"id": "025"
-								},
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "book/MGELFT/00031c.webp"
-									},
-									"credit": "Emi Tanji",
-									"expectsLightBackground": true,
-									"width": 782,
-									"height": 1032
-								},
-								{
-									"ENG_name": "Durdle",
-									"name": "杜德尔",
-									"type": "inset",
-									"page": 35,
-									"entries": [
-										"{@i 小型觉醒龙龟}",
-										"德尔德尔总是准备好协助施展他每天施放一次的缓慢术。",
-										{
-											"type": "hr"
-										},
-										{
-											"ENG_name": "Personality:",
-											"name": "个性：",
-											"type": "entries",
-											"page": 35,
-											"entries": [
-												"如果你花时间慢慢来，就能把事情做好。"
-											],
-											"id": "029"
-										},
-										{
-											"ENG_name": "Flaw:",
-											"name": "缺陷：",
-											"type": "entries",
-											"page": 35,
-											"entries": [
-												"总是迟到参加聚会。"
-											],
-											"id": "02a"
-										},
-										"{@skillCheck 感知 2} 对 {@skill 察觉} 检定"
-									],
-									"id": "028"
-								},
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "book/MGELFT/00031b.webp"
-									},
-									"credit": "Emi Tanji",
-									"expectsLightBackground": true,
-									"width": 785,
-									"height": 1030
-								},
-								{
-									"ENG_name": "Cole",
-									"name": "科尔",
-									"type": "inset",
-									"page": 35,
-									"entries": [
-										"{@i 活化岩石}",
-										"一个画着笑脸的活化岩石。科尔可以装进你的口袋，并会愉快地在一整天里低声说出积极的想法。",
-										{
-											"type": "hr"
-										},
-										{
-											"ENG_name": "Personality:",
-											"name": "个性：",
-											"type": "entries",
-											"page": 35,
-											"entries": [
-												"你永远是我最好的朋友！"
-											],
-											"id": "02c"
-										},
-										{
-											"ENG_name": "Flaw:",
-											"name": "缺陷：",
-											"type": "entries",
-											"page": 35,
-											"entries": [
-												"我的脸有时会被擦掉。如果你不介意的话，我需要协助把它放回去。"
-											],
-											"id": "02d"
-										},
-										"{@d20 3} 到魅力检定"
-									],
-									"id": "02b"
-								},
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "book/MGELFT/00031d.webp"
-									},
-									"credit": "Emi Tanji",
-									"expectsLightBackground": true,
-									"width": 785,
-									"height": 1032
-								},
-								{
-									"ENG_name": "Pippy",
-									"name": "皮皮",
-									"type": "inset",
-									"page": 35,
-									"entries": [
-										"{@i 微型小妖精}",
-										"皮皮是一个凶猛的{@creature 小仙灵}武者，是暗木林的守护者。如果皮皮在10尺范围内，你不会陷入{@condition 恐慌}。",
-										{
-											"type": "hr"
-										},
-										{
-											"ENG_name": "Personality:",
-											"name": "个性：",
-											"type": "entries",
-											"page": 35,
-											"entries": [
-												"我谁也不怕！"
-											],
-											"id": "02f"
-										},
-										{
-											"ENG_name": "Flaw:",
-											"name": "缺陷：",
-											"type": "entries",
-											"page": 35,
-											"entries": [
-												"我谁也不怕！"
-											],
-											"id": "030"
-										},
-										"{@hit 1} 攻击检定"
-									],
-									"id": "02e"
-								}
-							]
-						}
-					],
-					"id": "024"
-				},
-				{
-					"ENG_name": "Character Sheet",
-					"name": "角色卡",
-					"type": "section",
-					"page": 37,
-					"entries": [
-						{
-							"type": "gallery",
-							"images": [
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "book/MGELFT/00027.webp"
-									},
-									"title": "{@5etoolsImg 空白施法者角色表|pdf/MGELFT/Character Sheet.pdf}",
-									"credit": "Emi Tanji",
-									"expectsLightBackground": true,
-									"width": 1280,
-									"height": 1655
-								}
-							]
-						}
-					],
-					"id": "031"
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/MGELFT/00029.webp"
-					},
-					"title": "成为英雄并打出D&D",
-					"credit": "Emi Tanji",
-					"expectsLightBackground": true,
-					"altText": "成为英雄 & 打出 D&D。Extra Life。",
-					"width": 1280,
-					"height": 1632
-				},
-				{
-					"type": "entries",
-					"page": 40,
-					"entries": [
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "book/MGELFT/00033.webp"
-							},
-							"title": "微型法术书",
-							"credit": "Emi Tanji",
-							"expectsLightBackground": true,
-							"altText": "微型法术书",
-							"width": 1700,
-							"height": 2200
-						},
-						{
-							"type": "list",
-							"style": "list-decimal",
-							"page": 40,
-							"items": [
-								"纵向对折",
-								"展开，然后沿宽度对折成一半",
-								"展开，然后将边缘向中心折叠",
-								"你的纸张应该有像这样的折痕。",
-								"沿宽度对折并切一个一半到{@color X|ee1c25}的缝隙",
-								"展开，然后纵向折叠并将两端向中心推击",
-								"将所有页面折叠在一起，制作成你的迷你法术书！",
-								"嗒哒！"
-							]
-						},
-						"使用下一页的模板来获得额外的魔法外观！",
-						"虚线 - 折叠",
-						"实线 - 剪切"
-					],
-					"id": "032"
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/MGELFT/00034.webp"
-					},
-					"credit": "Emi Tanji",
-					"expectsLightBackground": true,
-					"width": 1700,
-					"height": 2200
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/MGELFT/00030.webp"
-					},
-					"title": "我 ❤️ Extra Life 和枭熊",
-					"credit": "Emi Tanji",
-					"expectsLightBackground": true,
-					"altText": "我 ❤️ Extra Life 和枭熊",
-					"width": 1655,
-					"height": 1278
-				},
-				{
-					"type": "inset",
-					"page": 43,
-					"style": "text-center",
-					"entries": [
 						{
 							"type": "quote",
+							"style": "quote-pull",
+							"skipMarks": true,
+							"skipItalics": true,
 							"entries": [
-								"我可能看起来不像你，你可能看起来也不像我。但这些美妙的差异，应该被庆祝和看见。",
-								"{@style 致谢|大型}",
-								"感谢加入MUK、{@creature 松鸟|AWM}和我在丹克伍德的另一次冒险\u2014\u2014我们的世界因亚当·李和克里斯·林赛的杰出才华而更加丰富。",
-								"感谢大家，感谢你们的鼓励、支持以及与我们共度的时光。一起分享的时刻是如此不可思议的宝藏。",
-								"我们可以一起完成如此多的事情，我很感激看到由《龙与地下城》社群培育出的善意、欢笑和支持。让我们保持友善，让我们行善举，让我们一起讲述我们的故事。"
-							],
-							"by": "艾米"
+								"一本适合所有级别玩家的冒险活动书"
+							]
+						},
+						{
+							"type": "entries",
+							"id": "001",
+							"style": "text-center",
+							"entries": [
+								{
+									"type": "entries",
+									"id": "002",
+									"entries": [
+										{
+											"ENG_name": "In Support of Extra Life",
+											"name": "支持Extra Life",
+											"type": "entries",
+											"id": "003",
+											"page": 1,
+											"entries": [
+												"",
+												"创作与插画：Emi Tanji",
+												"冒险与设计天才 - 亚当·李与克里斯·林赛",
+												"特别感谢巴特·卡罗尔和布兰迪·骆驼"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/MGELFT/00004.webp"
+							},
+							"width": 1280,
+							"height": 1655,
+							"title": "你好！MUK 和 {@creature 松鸟|AWM}，这里！",
+							"altText": "你好！穆克与鸟松鼠，在此！注意到什么新东西了吗？我，穆克！这个地精！我最好的朋友，鸟松鼠！今天在幽暗森林有一位特别的访客，我们想让你认识她......",
+							"credit": "Emi Tanji",
+							"expectsLightBackground": true
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/MGELFT/00005.webp"
+							},
+							"width": 1280,
+							"height": 1655,
+							"title": "塔莎女巫",
+							"altText": "塔莎女巫",
+							"credit": "Emi Tanji",
+							"expectsLightBackground": true
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/MGELFT/00006.webp"
+							},
+							"width": 1280,
+							"height": 1655,
+							"title": "给每个人一顶女巫帽",
+							"altText": "给每个人一顶女巫帽。穆克。松鸟。塔莎。魔邓肯（他不是女巫，但塔莎说他希望自己是。）雪怪幼崽（如果雪怪幼崽想成为女巫......让他们当！）",
+							"credit": "Emi Tanji",
+							"expectsLightBackground": true
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/MGELFT/00007.webp"
+							},
+							"width": 1280,
+							"height": 1655,
+							"title": "塔莎曾游历过许多地方，并遇到了一些奇妙的生物！",
+							"altText": "塔莎曾游历过许多地方，并遇到了一些奇妙的生物！一个狗头人奇械师和她的小巨嘴鸟人工生命体仆从，大多数狗头人都完全痴迷于龙类！一个照顾彩色蜻蜓的斑猫人群守护者，斑猫人喜欢闪亮的东西。一个善良的费尔伯格人孢子结社德鲁伊。",
+							"credit": "Emi Tanji",
+							"expectsLightBackground": true
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/MGELFT/00008.webp"
+							},
+							"width": 1280,
+							"height": 1655,
+							"title": "突袭塔莎的衣柜！",
+							"altText": "突袭塔莎的衣柜！多么奇妙的服装！洞察之袍让你能看到所有方向！让那些格龙蛙人现在试着偷偷接近我吧！",
+							"credit": "Emi Tanji",
+							"expectsLightBackground": true
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/MGELFT/00009.webp"
+							},
+							"width": 1278,
+							"height": 1655,
+							"title": "你的魔法施法者是什么样子的？",
+							"altText": "你的魔法施法者是什么样子的？你的名字。魔法物品。",
+							"credit": "Emi Tanji",
+							"expectsLightBackground": true
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/MGELFT/00010.webp"
+							},
+							"width": 1280,
+							"height": 1655,
+							"title": "《塔莎的坩埚》里有什么？",
+							"altText": "塔莎的坩埚里有什么？你认为塔莎泡泡坩埚里应该放什么？原料，两个腐烂的：一小撮：两杯：一把：",
+							"credit": "Emi Tanji",
+							"expectsLightBackground": true
+						},
+						{
+							"type": "entries",
+							"id": "004",
+							"page": 9,
+							"style": "text-center",
+							"entries": [
+								"一个法术的{@b 成分}是你施放法术所需的。",
+								"但它们并不总是物品！",
+								"有时它是一个魔法短语或手势。",
+								"施法时可能使用哪些材料成分？",
+								{
+									"ENG_name": "Types of Spell Components",
+									"name": "法术成分类型",
+									"type": "inset",
+									"id": "007",
+									"page": 9,
+									"entries": [
+										{
+											"type": "list",
+											"page": 9,
+											"style": "list-no-bullets",
+											"columns": 3,
+											"items": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "book/MGELFT/00010a.webp"
+													},
+													"width": 1037,
+													"height": 613,
+													"maxHeight": 150,
+													"credit": "Emi Tanji",
+													"expectsLightBackground": true
+												},
+												{
+													"ENG_name": "Verbal (V):",
+													"name": "言语（V）：",
+													"type": "item",
+													"entries": [
+														"以特定方式说出、吟诵或歌唱的魔法词语。"
+													]
+												},
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "book/MGELFT/00010b.webp"
+													},
+													"width": 834,
+													"height": 658,
+													"maxHeight": 150,
+													"credit": "Emi Tanji",
+													"expectsLightBackground": true
+												},
+												{
+													"ENG_name": "Somatic (S):",
+													"name": "姿势（S）:",
+													"type": "item",
+													"entries": [
+														"物理动作，例如挥手或抽动鼻子。"
+													]
+												},
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "book/MGELFT/00010c.webp"
+													},
+													"width": 889,
+													"height": 659,
+													"maxHeight": 150,
+													"credit": "Emi Tanji",
+													"expectsLightBackground": true
+												},
+												{
+													"ENG_name": "Material (M):",
+													"name": "材料 (M):",
+													"type": "item",
+													"entries": [
+														"施放你的法术所需的特定物品。"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/MGELFT/00011.webp"
+							},
+							"width": 1280,
+							"height": 1655,
+							"title": "你可能会在潮湿森林中找到的一些物品",
+							"altText": "你可能会在暗木森林中找到的一些物品。臭烘烘的史拉灰蟾脚趾甲屑。一个玻璃罐，里面有一只打盹的蜜蜂。绝对是一根魔法蛇杖。一簇黏糊糊的恶心蜘蛛蛙网。嘿！#1 傻瓜，来自傻瓜地精村的神秘酿造。一份被盗的昂贵精灵卷轴。最闪亮的岩石。那是我的闪亮岩石。一个会唱歌的蘑菇家族。一根枭熊羽毛。一张撕破的神秘命运纸条。\"黑色的风在呼啸。\"",
+							"credit": "Emi Tanji",
+							"expectsLightBackground": true
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/MGELFT/00012.webp"
+							},
+							"width": 1279,
+							"height": 1655,
+							"title": "我们的最后一种材料是：温尼莓树的果实",
+							"altText": "我们的最后一个成分是：温尼莓树的果实。但首先要通过那些脾气暴躁的格龙蛙人！他们的体型和我们地精差不多！为什么这么暴躁？！",
+							"credit": "Emi Tanji",
+							"expectsLightBackground": true
+						},
+						{
+							"ENG_name": "Can you spot the difference?",
+							"name": "你能发现区别吗？",
+							"type": "entries",
+							"id": "008",
+							"page": 12,
+							"style": "text-center",
+							"entries": [
+								"找出这两张图片中的{@b 10}处不同！",
+								{
+									"type": "gallery",
+									"images": [
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "book/MGELFT/00013.webp"
+											},
+											"width": 1275,
+											"height": 1650,
+											"credit": "Emi Tanji",
+											"expectsLightBackground": true
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "book/MGELFT/00014.webp"
+											},
+											"width": 1275,
+											"height": 1650,
+											"credit": "Emi Tanji",
+											"expectsLightBackground": true
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"id": "009",
+							"page": 14,
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/MGELFT/00015.webp"
+									},
+									"width": 1280,
+									"height": 1655,
+									"title": "{@b 湍急之河}前方！",
+									"altText": "前方河流湍急！",
+									"credit": "Emi Tanji",
+									"expectsLightBackground": true
+								},
+								"协助我们的冒险者选择正确的路线以抵达{@b 安全！}",
+								"使用漩涡箭头让MUK的船在河上更快移动。",
+								"它们可以绕过岩石、原木和颠簸的水面。但如果它们命中一个怪物（以{@b X}表示），这将是一次非常湿漉漉的摔绊。"
+							]
+						},
+						{
+							"ENG_name": "The winnieberry tree! We made it!",
+							"name": "古树莓树！我们成功了！",
+							"type": "entries",
+							"id": "00a",
+							"page": 15,
+							"entries": [
+								"小心那些{@creature 飞首|VGM|飞首}！",
+								"长着像{@b 蝙蝠般的}一样的翅膀在耳朵位置飞行的微型怪胎！真恶心！",
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/MGELFT/00016.webp"
+									},
+									"width": 1280,
+									"height": 1653,
+									"credit": "Emi Tanji",
+									"expectsLightBackground": true
+								},
+								"MUK应该攀爬哪根树枝才能获得最多的果实？",
+								"快，那些{@creature 飞首|VGM|飞首}开始集群了！"
+							]
+						},
+						{
+							"ENG_name": "Winnieberry Mission Accomplished!",
+							"name": "温妮莓任务完成！",
+							"type": "entries",
+							"id": "00b",
+							"page": 16,
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/MGELFT/00017.webp"
+									},
+									"width": 1148,
+									"height": 850,
+									"title": "拥有像{@creature 松鸟|AWM}这样的{@b 助手}是最棒的！",
+									"credit": "Emi Tanji",
+									"expectsLightBackground": true
+								},
+								{
+									"ENG_name": "Fun Sidekick Ideas",
+									"name": "有趣的伙伴创意",
+									"type": "inset",
+									"id": "00c",
+									"page": 16,
+									"style": "text-center",
+									"entries": [
+										{
+											"type": "list",
+											"page": 16,
+											"style": "list-no-bullets",
+											"columns": 2,
+											"items": [
+												{
+													"ENG_name": "A Childhood Pet",
+													"name": "童年宠物",
+													"type": "item",
+													"entries": [
+														{
+															"type": "quote",
+															"entries": [
+																"从我出生的那一天起，我们就形影不离！"
+															]
+														}
+													]
+												},
+												{
+													"ENG_name": "Someone You Rescued",
+													"name": "你曾拯救的人",
+													"type": "item",
+													"entries": [
+														{
+															"type": "quote",
+															"entries": [
+																"感谢你把我从急流河中救出来！"
+															]
+														}
+													]
+												},
+												{
+													"ENG_name": "The Befriended Creature",
+													"name": "被友善对待的生物",
+													"type": "item",
+													"entries": [
+														{
+															"type": "quote",
+															"entries": [
+																"我喜欢你孩子，你也许闻起来有点怪，但我会带你走出这个迷宫。"
+															]
+														}
+													]
+												},
+												{
+													"ENG_name": "The Expert",
+													"name": "专家",
+													"type": "item",
+													"entries": [
+														{
+															"type": "quote",
+															"entries": [
+																"我喜欢撬锁！还有潜行。还有宝藏。让我一起来吧！"
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/MGELFT/00018.webp"
+							},
+							"width": 1280,
+							"height": 1655,
+							"title": "随从可以是多年的朋友......我们称之为家人的人......或是我们刚刚遇到的人！",
+							"altText": "随从可以是多年的朋友......我们称之为家人的人......或是我们刚刚遇到的人！",
+							"credit": "Emi Tanji",
+							"expectsLightBackground": true
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/MGELFT/00019.webp"
+							},
+							"width": 1700,
+							"height": 2200,
+							"title": "如何创建一名助手",
+							"altText": "如何画一个伙伴。雪怪宝宝、独角兔、狗头人。现在轮到你了！给你的伙伴写张便条！如果你需要帮助剪出字母，请向成年人求助。",
+							"credit": "Emi Tanji",
+							"expectsLightBackground": true
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/MGELFT/00020.webp"
+							},
+							"width": 1280,
+							"height": 1655,
+							"title": "感谢伙伴",
+							"altText": "感谢你，伙伴。我的伙伴名字。我的伙伴图片。我们初次相遇。我最喜欢伙伴的地方。签名：",
+							"credit": "Emi Tanji",
+							"expectsLightBackground": true
+						},
+						{
+							"type": "entries",
+							"id": "00d",
+							"page": 20,
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/MGELFT/00021.webp"
+									},
+									"width": 1280,
+									"height": 1655,
+									"title": "没人听说过的法术，只是尚未被发现而已！",
+									"altText": "没人听说过的法术，只是尚未被发现而已！",
+									"credit": "Emi Tanji",
+									"expectsLightBackground": true
+								},
+								{
+									"ENG_name": "Fun Fact",
+									"name": "趣味知识",
+									"type": "inset",
+									"id": "00e",
+									"page": 20,
+									"entries": [
+										"{@creature 塔莎女巫|VEoR|塔莎} 是被收养的。她由著名的女巫芭芭·雅加抚养长大，后者住在一个立在巨大鸡腿上的小屋里！"
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"id": "00f",
+							"page": 21,
+							"entries": [
+								"协助MUK选择恰当的词语来描述他与塔莎的冒险！",
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/MGELFT/00021a.webp"
+									},
+									"width": 1000,
+									"height": 620,
+									"title": "隐秘检定！",
+									"altText": "隐秘检定！",
+									"credit": "Emi Tanji",
+									"expectsLightBackground": true
+								},
+								{
+									"type": "list",
+									"page": 21,
+									"style": "list-no-bullets",
+									"items": [
+										{
+											"ENG_name": "Adjective:",
+											"name": "形容词：",
+											"type": "item",
+											"entries": [
+												""
+											]
+										},
+										{
+											"ENG_name": "Verb, past tense:",
+											"name": "动词，过去式：",
+											"type": "item",
+											"entries": [
+												""
+											]
+										},
+										{
+											"ENG_name": "Adjective:",
+											"name": "形容词：",
+											"type": "item",
+											"entries": [
+												""
+											]
+										},
+										{
+											"ENG_name": "Part of the body (Plural):",
+											"name": "身体部位（复数）：",
+											"type": "item",
+											"entries": [
+												""
+											]
+										},
+										{
+											"ENG_name": "Verb:",
+											"name": "动词:",
+											"type": "item",
+											"entries": [
+												""
+											]
+										},
+										{
+											"ENG_name": "Adjective:",
+											"name": "形容词：",
+											"type": "item",
+											"entries": [
+												""
+											]
+										},
+										{
+											"ENG_name": "Noun:",
+											"name": "名词:",
+											"type": "item",
+											"entries": [
+												""
+											]
+										},
+										{
+											"ENG_name": "Number:",
+											"name": "编号：",
+											"type": "item",
+											"entries": [
+												""
+											]
+										},
+										{
+											"ENG_name": "Adjective:",
+											"name": "形容词：",
+											"type": "item",
+											"entries": [
+												""
+											]
+										},
+										{
+											"ENG_name": "Plural noun:",
+											"name": "复数名词:",
+											"type": "item",
+											"entries": [
+												""
+											]
+										},
+										{
+											"ENG_name": "Color:",
+											"name": "颜色：",
+											"type": "item",
+											"entries": [
+												""
+											]
+										},
+										{
+											"ENG_name": "Plural noun:",
+											"name": "复数名词:",
+											"type": "item",
+											"entries": [
+												""
+											]
+										},
+										{
+											"ENG_name": "Noun:",
+											"name": "名词:",
+											"type": "item",
+											"entries": [
+												""
+											]
+										},
+										{
+											"ENG_name": "Type of container:",
+											"name": "容器类型：",
+											"type": "item",
+											"entries": [
+												""
+											]
+										},
+										{
+											"ENG_name": "Person in room:",
+											"name": "房间内的人：",
+											"type": "item",
+											"entries": [
+												""
+											]
+										},
+										{
+											"ENG_name": "Noun:",
+											"name": "名词:",
+											"type": "item",
+											"entries": [
+												""
+											]
+										}
+									]
+								},
+								{
+									"type": "list",
+									"page": 21,
+									"style": "list-no-bullets",
+									"columns": 2,
+									"items": [
+										{
+											"ENG_name": "Instructions",
+											"name": "说明",
+											"type": "inset",
+											"id": "010",
+											"page": 21,
+											"entries": [
+												"一旦你完成了选择你的话语，翻到下一页并按所列顺序填写空白处。MUK发现了什么类型的法术？"
+											]
+										},
+										{
+											"ENG_name": "Definitions",
+											"name": "定义",
+											"type": "inset",
+											"id": "011",
+											"page": 21,
+											"entries": [
+												{
+													"type": "list",
+													"page": 21,
+													"style": "list-no-bullets",
+													"items": [
+														{
+															"ENG_name": "Adjective:",
+															"name": "形容词：",
+															"type": "item",
+															"entries": [
+																"一个{@i 描述}某物或某人的词语"
+															]
+														},
+														{
+															"ENG_name": "Adverb:",
+															"name": "副词：",
+															"type": "item",
+															"entries": [
+																"一个动词（动作）通常以 \"ly\" 结尾"
+															]
+														},
+														{
+															"ENG_name": "Noun:",
+															"name": "名词:",
+															"type": "item",
+															"entries": [
+																"一个人、地点或事物"
+															]
+														},
+														{
+															"ENG_name": "Plural Noun:",
+															"name": "复数名词:",
+															"type": "item",
+															"entries": [
+																"多个人、地点或事物"
+															]
+														},
+														{
+															"ENG_name": "Verb:",
+															"name": "动词:",
+															"type": "item",
+															"entries": [
+																"Ab 动作，或某人做的某事"
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"id": "012",
+							"page": 22,
+							"entries": [
+								{
+									"type": "insetReadaloud",
+									"id": "013",
+									"page": 22,
+									"style": "text-center",
+									"entries": [
+										"当塔莎第一次{@footnote _______________|动词，过去式}进暗黑森林时，我有点{@footnote _______________|形容词}。她如此{@footnote _______________|形容词}，第一次见到她让我们的{@footnote _______________|身体部位（复数）}{@footnote _______________|动词}！",
+										"塔莎最著名的法术叫做{@spell 塔莎狂笑术}。在她的协助下，我得以创造出独属于我自己的法术：MUK的{@footnote _______________|形容词} {@footnote _______________|名词}。这个法术相当高深，需要以下材料：{@footnote _______________|数值}颗温尼莓、一把{@footnote _______________|形容词}的{@footnote _______________|复数名词}、两个{@footnote _______________|颜色}的{@footnote _______________|复数名词}，每个都要有{@footnote _______________|名词}那么大。将它们全部放入一个大型{@footnote _______________|容器类型}中混合，然后唱道：\"哦，{@footnote _______________|房间内人员}，请将你的{@footnote _______________|名词}借我一用！\"",
+										"享受我的魔法咒语！"
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/MGELFT/00022.webp"
+									},
+									"width": 1280,
+									"height": 1655,
+									"credit": "Emi Tanji",
+									"expectsLightBackground": true
+								},
+								{
+									"type": "inset",
+									"id": "014",
+									"page": 22,
+									"entries": [
+										"查看第40页了解如何制作你自己的迷你法术书的说明！"
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"id": "015",
+							"page": 23,
+							"entries": [
+								"法术来自施法者，并可能受到其个性或特质的影响！你的法术看起来像什么？闻起来像什么？",
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/MGELFT/00023.webp"
+									},
+									"width": 1138,
+									"height": 984,
+									"title": "MUK的{@spell 虔诚护盾}法术显现为一个巨大的、灵体的{@creature 松鸟|AWM}，准备进行保护！",
+									"altText": "MUK的虔诚护盾法术显现为一个巨大的灵体间谍鸟松鼠，准备进行保护！",
+									"credit": "Emi Tanji",
+									"expectsLightBackground": true
+								}
+							]
+						},
+						{
+							"ENG_name": "Word Find",
+							"name": "文字寻宝",
+							"type": "section",
+							"id": "005",
+							"page": 24,
+							"entries": [
+								{
+									"type": "table",
+									"page": 24,
+									"colStyles": [
+										"text-center",
+										"text-center",
+										"text-center",
+										"text-center",
+										"text-center",
+										"text-center",
+										"text-center",
+										"text-center",
+										"text-center",
+										"text-center",
+										"text-center",
+										"text-center",
+										"text-center",
+										"text-center",
+										"text-center"
+									],
+									"rows": [
+										[
+											"C",
+											"C",
+											"O",
+											"C",
+											"D",
+											"L",
+											"D",
+											"N",
+											"K",
+											"B",
+											"V",
+											"H",
+											"Y",
+											"I",
+											"D"
+										],
+										[
+											"R",
+											"H",
+											"A",
+											"R",
+											"I",
+											"R",
+											"R",
+											"O",
+											"F",
+											"A",
+											"H",
+											"V",
+											"Y",
+											"U",
+											"L"
+										],
+										[
+											"K",
+											"T",
+											"U",
+											"U",
+											"A",
+											"G",
+											"O",
+											"F",
+											"A",
+											"B",
+											"H",
+											"W",
+											"D",
+											"S",
+											"O"
+										],
+										[
+											"K",
+											"I",
+											"A",
+											"Z",
+											"L",
+											"B",
+											"A",
+											"C",
+											"C",
+											"A",
+											"M",
+											"N",
+											"M",
+											"A",
+											"B"
+										],
+										[
+											"D",
+											"C",
+											"I",
+											"S",
+											"L",
+											"D",
+											"B",
+											"M",
+											"Z",
+											"Y",
+											"N",
+											"S",
+											"W",
+											"I",
+											"O"
+										],
+										[
+											"O",
+											"W",
+											"O",
+											"L",
+											"H",
+											"T",
+											"R",
+											"J",
+											"C",
+											"A",
+											"Q",
+											"S",
+											"G",
+											"K",
+											"K"
+										],
+										[
+											"D",
+											"V",
+											"E",
+											"L",
+											"D",
+											"A",
+											"D",
+											"O",
+											"S",
+											"G",
+											"L",
+											"L",
+											"E",
+											"P",
+											"S"
+										],
+										[
+											"H",
+											"P",
+											"B",
+											"W",
+											"R",
+											"Z",
+											"B",
+											"O",
+											"N",
+											"A",
+											"Z",
+											"M",
+											"G",
+											"K",
+											"W"
+										],
+										[
+											"S",
+											"M",
+											"Q",
+											"G",
+											"A",
+											"A",
+											"R",
+											"C",
+											"L",
+											"E",
+											"R",
+											"I",
+											"C",
+											"O",
+											"T"
+										],
+										[
+											"Y",
+											"H",
+											"A",
+											"A",
+											"B",
+											"C",
+											"W",
+											"F",
+											"H",
+											"N",
+											"E",
+											"F",
+											"G",
+											"B",
+											"W"
+										],
+										[
+											"Q",
+											"Y",
+											"F",
+											"G",
+											"E",
+											"C",
+											"N",
+											"R",
+											"I",
+											"N",
+											"M",
+											"H",
+											"J",
+											"H",
+											"I"
+										],
+										[
+											"A",
+											"M",
+											"T",
+											"R",
+											"D",
+											"L",
+											"I",
+											"W",
+											"Y",
+											"E",
+											"F",
+											"Q",
+											"R",
+											"Q",
+											"T"
+										],
+										[
+											"C",
+											"K",
+											"E",
+											"G",
+											"M",
+											"C",
+											"Z",
+											"X",
+											"O",
+											"Y",
+											"N",
+											"P",
+											"C",
+											"R",
+											"C"
+										],
+										[
+											"G",
+											"R",
+											"Q",
+											"S",
+											"I",
+											"D",
+											"E",
+											"K",
+											"I",
+											"C",
+											"K",
+											"E",
+											"C",
+											"N",
+											"H"
+										],
+										[
+											"S",
+											"V",
+											"R",
+											"H",
+											"X",
+											"W",
+											"Y",
+											"T",
+											"E",
+											"O",
+											"V",
+											"M",
+											"W",
+											"T",
+											"O"
+										]
+									]
+								},
+								{
+									"type": "inset",
+									"id": "006",
+									"page": 24,
+									"entries": [
+										{
+											"type": "list",
+											"page": 24,
+											"style": "list-no-bullets",
+											"columns": 2,
+											"items": [
+												"芭芭雅嘎",
+												"吟游诗人",
+												"吊挂大锅",
+												"牧师",
+												"德鲁伊",
+												"妖精荒野",
+												"狗头人",
+												"魔法",
+												"助手",
+												"术士",
+												"法术",
+												"法术书",
+												"塔莎",
+												"魔契师",
+												"女巫",
+												"法师"
+											]
+										}
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/MGELFT/00023a.webp"
+									},
+									"width": 853,
+									"height": 710,
+									"title": "{@creature 松鸟|AWM} 仍然不太会阅读... 你能帮帮忙吗？",
+									"altText": "Birdsquirrel 仍然阅读能力不佳... 你能帮忙吗？",
+									"credit": "Emi Tanji",
+									"expectsLightBackground": true
+								}
+							]
+						},
+						{
+							"ENG_name": "Crossword Puzzle",
+							"name": "填字谜题",
+							"type": "entries",
+							"id": "016",
+							"page": 25,
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/MGELFT/00023b.webp"
+									},
+									"width": 1700,
+									"height": 2200,
+									"title": "填字谜题",
+									"altText": "填字谜题",
+									"credit": "Emi Tanji",
+									"expectsLightBackground": true
+								},
+								{
+									"ENG_name": "Down",
+									"name": "下",
+									"type": "list",
+									"page": 25,
+									"style": "list-no-bullets",
+									"items": [
+										"1. 一种小型且聪明的爬行类生物。它们以崇拜龙类而闻名。",
+										"2. 塔莎在一座长着这种动物腿的小屋里长大。",
+										"3. {@creature 松鸟|AWM|鸟松鼠的} 最好的朋友。",
+										"5. 施法所需之物。",
+										"6. 瓦古尔拥有这种动物的翅膀从它们头部生长出来。"
+									]
+								},
+								{
+									"ENG_name": "Across",
+									"name": "穿越",
+									"type": "list",
+									"page": 25,
+									"style": "list-no-bullets",
+									"items": [
+										"4. 在冒险中帮助过你的人。",
+										"7. 幼年雪怪的称呼。",
+										"8. 这个著名法术的名字：{@spell 塔莎狂笑术||泰莎的恐怖___________}。"
+									]
+								}
+							]
 						}
-					],
-					"id": "033"
+					]
 				},
 				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/MGELFT/00032a.webp"
-					},
-					"credit": "Emi Tanji",
-					"expectsLightBackground": true,
-					"width": 391,
-					"height": 230
+					"ENG_name": "Answers",
+					"name": "答案",
+					"type": "section",
+					"id": "017",
+					"page": 26,
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/MGELFT/00023c.webp"
+							},
+							"width": 1700,
+							"height": 2200,
+							"title": "第11页|文字寻宝。第12和13页| 找不同",
+							"altText": "第11页|文字寻宝。第12和13页| 找不同",
+							"credit": "Emi Tanji",
+							"expectsLightBackground": true
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/MGELFT/00023d.webp"
+							},
+							"width": 1700,
+							"height": 2200,
+							"title": "第14页| 粗犷之河。第15页 |温尼莓古树",
+							"altText": "第14页| 粗犷之河。第15页 |温尼莓古树",
+							"credit": "Emi Tanji",
+							"expectsLightBackground": true
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/MGELFT/00023e.webp"
+							},
+							"width": 1700,
+							"height": 2200,
+							"title": "第24页|文字寻宝。第25页|填字谜题",
+							"altText": "第24页|文字寻宝。第25页|填字谜题",
+							"credit": "Emi Tanji",
+							"expectsLightBackground": true
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/MGELFT/00026.webp"
+							},
+							"width": 1280,
+							"height": 1655,
+							"title": "继续阅读以获取更多冒险和伙伴创意！",
+							"altText": "继续阅读以获取更多冒险和伙伴创意！",
+							"credit": "Emi Tanji",
+							"expectsLightBackground": true
+						}
+					]
+				},
+				{
+					"ENG_name": "Adventure and Sidekick Ideas!",
+					"name": "冒险与伙伴创意！",
+					"type": "section",
+					"id": "018",
+					"page": 30,
+					"entries": [
+						{
+							"ENG_name": "Adventure Ideas",
+							"name": "冒险点子",
+							"type": "section",
+							"id": "019",
+							"page": 30,
+							"entries": [
+								"阴林中的每一个冒险都有一个不诉诸战斗就能解决的方案。地精可以偷偷摸摸地逃离危险，他们可以装出一副强硬的样子，虚张声势地解决问题，还能和任何人（甚至是{@creature 阴林格龙蛙人|MGELFT|脾气暴躁的格龙蛙人}！）交朋友。",
+								"阅读冒险点子，了解问题或谜团，然后查看这些问题是提示，可以让你的玩家发明自己的创造性的方法来解决冒险，并讲述他们自己的阴林故事。 每个故事都有无限可能的讲述方式，所以请尽情发挥你的想象力！",
+								{
+									"ENG_name": "Tasha's Party",
+									"name": "塔莎的派对",
+									"type": "entries",
+									"id": "01a",
+									"page": 30,
+									"entries": [
+										"塔莎需要你的帮助！ 她想举办一个派对制作她的超级特制绿泡泡汤。 哥布镇的每个人都很兴奋，但是塔莎说要做绿泡泡汤，她需要一些粘糊糊的蜘蛛网，这些蜘蛛网来自稀有且难以捉摸的{@creature 蜘蛙|MGELFT}。 你知道在哪里能帮她弄到吗？",
+										"你听说过{@creature 黏黏国王罗比特|MGELFT|格龙蛙人国王黏黏罗比特}吗？ 他可能知道哪里能弄到蜘蛛网，或者他和{@creature 阴林格龙蛙人|MGELFT|他的格龙蛙人}甚至有蜘蛛网可以与其交换。",
+										{
+											"ENG_name": "Questions to Ask:",
+											"name": "要问的问题：",
+											"type": "entries",
+											"id": "01b",
+											"page": 30,
+											"entries": [
+												{
+													"type": "list",
+													"page": 30,
+													"items": [
+														"{@creature 黏黏国王罗比特|MGELFT|罗比特国王}想用什么来交换有关{@creature 蜘蛙|MGELFT|蜘蛙}位置的信息或（如果他有的话）蜘蛛网？如果你能找出他喜欢什么、那么你们就有可能和他进行交易。",
+														"如果{@creature 阴林格龙蛙人|MGELFT|格龙蛙人}脾气太坏，那么谁会知道在阴林哪里能找到{@creature 蜘蛙|MGELFT}的网？你需要问谁才能得到这些信息？ 有很多地精朋友都知道这些事！"
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "Ask Around Gob-Town! Find Stuff Out!",
+											"name": "问问哥布镇周围的人！找出什么！",
+											"type": "inset",
+											"id": "01c",
+											"page": 30,
+											"entries": [
+												"精明而非常暴躁。要从他们那里获得的网并不容易。{@creature 黏黏国王罗比特|MGELFT|罗比特国王} 很狡猾，而 {@creature 阴林格龙蛙人|MGELFT|格龙蛙人们} 脾气超级暴躁。 要从它们那里弄到 {@creature 蜘蛙|MGELFT|蜘蛙} 网可不容易。",
+												"塔莎知道{@creature 蜘蛙|MGELFT|蜘蛙}会在清澈的能反射月光的池塘边织网，它们还会在满月时发出高亢的吱吱声。"
+											]
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "book/MGELFT/00026a.webp"
+											},
+											"width": 1280,
+											"height": 887,
+											"credit": "Emi Tanji",
+											"expectsLightBackground": true
+										}
+									]
+								},
+								{
+									"ENG_name": "The Lost Yeti",
+									"name": "迷失的雪怪",
+									"type": "entries",
+									"id": "01d",
+									"page": 30,
+									"entries": [
+										"在阴林闲逛时，您发现了一只{@creature 雪怪幼崽|MGELFT}。 它是个闷闷不乐的小动物，但这可能是因为它只是在想念它的家人。",
+										"你很确定它的家人住在北面的雪山上，虽然路途遥远，但如果{@creature 雪怪幼崽|MGELFT|小鬼}想回家 必须有人给它带路。",
+										{
+											"ENG_name": "The Real Story!",
+											"name": "真正的故事！",
+											"type": "entries",
+											"id": "01e",
+											"page": 30,
+											"entries": [
+												"这只小雪怪被一群{@creature 阴林灰矮人|MGELFT|脾气暴躁的灰矮人}将其与父母分开，雪怪住在一个山洞里，但山洞里有一扇暗门，通向一个地下迷宫。 里面藏着一个古老的宝藏。 雪怪不知道暗门和宝藏的事，但{@creature 阴林灰矮人|MGELFT|灰矮人}们知道。 他们把雪怪赶出了洞穴，以便寻找宝藏。",
+												"当英雄们把{@creature 雪怪幼崽|MGELFT|小鬼}还给它的父母时，雪怪告诉他们{@creature 阴林灰矮人|MGELFT|脾气暴躁的灰矮人}和他们是如何被赶出家门的。 我们的英雄能否帮助雪怪回到他们的家，让灰矮人们滚蛋，也许还能得到一些灰矮人正在寻找的宝藏？"
+											]
+										},
+										{
+											"ENG_name": "Questions to Ask:",
+											"name": "要问的问题：",
+											"type": "entries",
+											"id": "01f",
+											"page": 30,
+											"entries": [
+												{
+													"type": "list",
+													"page": 30,
+													"items": [
+														"有人会说{@language 雪怪语|MM}语吗？ 也许塔莎有法术或药水能做到！",
+														"有什么可能的方法可以摆脱{@creature 阴林灰矮人|MGELFT|灰矮人}？ 有些了解他们的人说，{@creature 阴林灰矮人|MGELFT|灰矮人}害怕夺心魔，也许英雄们可以打扮成他们的样子，然后把{@creature 阴林灰矮人|MGELFT|灰矮人}吓跑？",
+														"雪怪说附近住着一种超级可怕的怪物，叫做{@creature 百足魔兽}。 也许那个怪物在对付{@creature 阴林灰矮人|MGELFT|灰矮人}的时候派上用场？ 这很冒险！",
+														"{@creature 阴林灰矮人|MGELFT|灰矮人}有地图吗？ 迷宫肯定很混乱，很容易迷路！"
+													]
+												}
+											]
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "book/MGELFT/00026b.webp"
+											},
+											"width": 1364,
+											"height": 885,
+											"credit": "Emi Tanji",
+											"expectsLightBackground": true
+										}
+									]
+								},
+								{
+									"ENG_name": "The Cursed Spring",
+									"name": "被诅咒的泉水",
+									"type": "entries",
+									"id": "020",
+									"page": 30,
+									"entries": [
+										"英雄们遇到了一只在泉边哭泣的{@creature 皮克精}。 泉水里全是臭泥和冒泡的污泥。 如果问她怎么了，她就告诉他们，她美丽的泉水受到了一个邪恶{@creature 泥鬼婆|MGELFT}的诅咒。 她已经搬进了阴林。 她问英雄们能否帮助她让鬼婆解除泉水的诅咒。",
+										{
+											"ENG_name": "Questions to Ask:",
+											"name": "要问的问题：",
+											"type": "entries",
+											"id": "021",
+											"page": 30,
+											"entries": [
+												{
+													"type": "list",
+													"page": 30,
+													"items": [
+														"能和{@creature 泥鬼婆|MGELFT|鬼婆}商谈吗？ 每个人都有自己觊觎或渴望的东西，也许有办法找出{@creature 泥鬼婆|MGELFT|鬼婆}最渴望的东西。",
+														"你能和{@creature 泥鬼婆|MGELFT|鬼婆}交朋友吗？ 也许从来没有人友善地对待过{@creature 泥鬼婆|MGELFT|鬼婆}\u2014\u2014一个新鲜出炉的派也许能帮上忙！",
+														"{@creature 泥鬼婆|MGELFT|鬼婆}会被骗吗？ 也许她们很喜欢打赌，如果你够厉害，就能在赌局中打败她们。",
+														"你能利用你的朋友帮忙吗？ 你的朋友塔莎是个非常厉害的女巫。 也许她知道{@creature 泥鬼婆|MGELFT|鬼婆的}的弱点，你可以加以利用。"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "More Adventure Hooks!",
+							"name": "更多冒险契机！",
+							"type": "section",
+							"id": "022",
+							"page": 31,
+							"entries": [
+								"以下是一些有趣的想法，可以激发在暗木林中的精彩故事。用它们来衍生更多冒险吧！",
+								{
+									"type": "table",
+									"caption": "阴林冒险点子",
+									"page": 31,
+									"colLabels": [
+										"d8",
+										"冒险引子"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											"1",
+											"一支笛子，吹响后会召唤一只{@creature 天马}。（如果你骑在它背上 {@creature 天马}会飞到哪里去？）"
+										],
+										[
+											"2",
+											"一只雕刻的木鸟，拿起来就会复活并把冒险者带到洞穴入口处。 (洞穴里有什么宝藏？）"
+										],
+										[
+											"3",
+											"一只{@creature 皮克精}飞到你面前，问你是否愿意帮忙把一只{@creature 巨魔}赶出村子。(如何赶走危险的巨魔）"
+										],
+										[
+											"4",
+											"一个猎人在森林里寻找一只罕见的金角赤鹿。 (要么帮助猎人抓住赤鹿，要么帮助赤鹿逃脱猎人的追捕）。"
+										],
+										[
+											"5",
+											"一个自称有王室血统的精灵正在阴林寻求庇护。他正遭到敌对精灵的追杀，并 愿意用金币来换取你的帮助。 (这个精灵真的是他所说的那样吗？ 对手精灵是谁？）"
+										],
+										[
+											"6",
+											"一个侏儒冲向你，递给你一把金钥匙，并告诉你：\"找到水晶洞，救我。\"然后他就变成了石头！"
+										],
+										[
+											"7",
+											"你的一张网困住了一只{@creature 老虎}。 当你正在想如何处理它时，{@creature 老虎}开口说话了，它说自己曾经是一个被邪恶法师诅咒的半身人。"
+										],
+										[
+											"8",
+											"一名赏金猎人正在追捕一名罪犯。到底是罪犯坏，还是赏金猎人坏？"
+										]
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Monsters",
+							"name": "怪物",
+							"type": "section",
+							"id": "023",
+							"page": 31,
+							"entries": [
+								"以下怪物经过简化/修改，以在Muk历险记中使用。 以下数据供你参考。 你可以根据自己的故事情节随意调整或添加。",
+								{
+									"ENG_name": "Dankwood Grung",
+									"name": "阴林格龙蛙人",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "MGELFT",
+									"page": 31,
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Dankwood Grung",
+									"name": "阴林格龙蛙人",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "MGELFT",
+									"page": 31,
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Dankwood Duergar",
+									"name": "阴林灰矮人",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "MGELFT",
+									"page": 32,
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Dankwood Duergar",
+									"name": "阴林灰矮人",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "MGELFT",
+									"page": 32,
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/MGELFT/00026c.webp"
+									},
+									"width": 1552,
+									"height": 696,
+									"altText": "我的宝藏！石灰色皮肤。白色头发。",
+									"credit": "Emi Tanji",
+									"expectsLightBackground": true
+								},
+								{
+									"ENG_name": "King Robbit the Slimy",
+									"name": "黏黏国王罗比特",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "MGELFT",
+									"page": 32,
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "King Robbit the Slimy",
+									"name": "黏黏国王罗比特",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "MGELFT",
+									"page": 32,
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Sludge Hag",
+									"name": "泥鬼婆",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "MGELFT",
+									"page": 33,
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Sludge Hag",
+									"name": "泥鬼婆",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "MGELFT",
+									"page": 33,
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/MGELFT/00026d.webp"
+									},
+									"width": 1358,
+									"height": 792,
+									"credit": "Emi Tanji",
+									"expectsLightBackground": true
+								},
+								{
+									"ENG_name": "Spiderfrog",
+									"name": "蜘蛙",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "MGELFT",
+									"page": 33,
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Spiderfrog",
+									"name": "蜘蛙",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "MGELFT",
+									"page": 33,
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Yeti Tyke",
+									"name": "雪怪幼崽",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "MGELFT",
+									"page": 34,
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Yeti Tyke",
+									"name": "雪怪幼崽",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "MGELFT",
+									"page": 34,
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								}
+							]
+						},
+						{
+							"ENG_name": "Sidekicks",
+							"name": "协力者",
+							"type": "section",
+							"id": "024",
+							"page": 35,
+							"entries": [
+								{
+									"type": "list",
+									"page": 35,
+									"style": "list-no-bullets",
+									"columns": 2,
+									"items": [
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "book/MGELFT/00031a.webp"
+											},
+											"width": 782,
+											"height": 1030,
+											"credit": "Emi Tanji",
+											"expectsLightBackground": true
+										},
+										{
+											"ENG_name": "Winky-Bix",
+											"name": "温基-比克斯",
+											"type": "inset",
+											"id": "025",
+											"page": 35,
+											"entries": [
+												"{@i 小型暗木独角兔}",
+												"温基-比克斯是第一个在需要时提供协助的。他们可以每长休一次施放戏法{@spell 光亮术}。",
+												{
+													"type": "hr"
+												},
+												{
+													"ENG_name": "Personality:",
+													"name": "个性：",
+													"type": "entries",
+													"id": "026",
+													"page": 35,
+													"entries": [
+														"我可能很微型，但我总是愿意全力以赴！"
+													]
+												},
+												{
+													"ENG_name": "Flaw:",
+													"name": "缺陷：",
+													"type": "entries",
+													"id": "027",
+													"page": 35,
+													"entries": [
+														"我的耳朵特别柔软也特别长\u2014\u2014有时我会被它们绊倒。"
+													]
+												},
+												"{@skillCheck 自然之怒 2} 对{@skill 自然}检定"
+											]
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "book/MGELFT/00031c.webp"
+											},
+											"width": 782,
+											"height": 1032,
+											"credit": "Emi Tanji",
+											"expectsLightBackground": true
+										},
+										{
+											"ENG_name": "Durdle",
+											"name": "杜德尔",
+											"type": "inset",
+											"id": "028",
+											"page": 35,
+											"entries": [
+												"{@i 小型觉醒龙龟}",
+												"德尔德尔总是准备好协助施展他每天施放一次的缓慢术。",
+												{
+													"type": "hr"
+												},
+												{
+													"ENG_name": "Personality:",
+													"name": "个性：",
+													"type": "entries",
+													"id": "029",
+													"page": 35,
+													"entries": [
+														"如果你花时间慢慢来，就能把事情做好。"
+													]
+												},
+												{
+													"ENG_name": "Flaw:",
+													"name": "缺陷：",
+													"type": "entries",
+													"id": "02a",
+													"page": 35,
+													"entries": [
+														"总是迟到参加聚会。"
+													]
+												},
+												"{@skillCheck 感知 2} 对 {@skill 察觉} 检定"
+											]
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "book/MGELFT/00031b.webp"
+											},
+											"width": 785,
+											"height": 1030,
+											"credit": "Emi Tanji",
+											"expectsLightBackground": true
+										},
+										{
+											"ENG_name": "Cole",
+											"name": "科尔",
+											"type": "inset",
+											"id": "02b",
+											"page": 35,
+											"entries": [
+												"{@i 活化岩石}",
+												"一个画着笑脸的活化岩石。科尔可以装进你的口袋，并会愉快地在一整天里低声说出积极的想法。",
+												{
+													"type": "hr"
+												},
+												{
+													"ENG_name": "Personality:",
+													"name": "个性：",
+													"type": "entries",
+													"id": "02c",
+													"page": 35,
+													"entries": [
+														"你永远是我最好的朋友！"
+													]
+												},
+												{
+													"ENG_name": "Flaw:",
+													"name": "缺陷：",
+													"type": "entries",
+													"id": "02d",
+													"page": 35,
+													"entries": [
+														"我的脸有时会被擦掉。如果你不介意的话，我需要协助把它放回去。"
+													]
+												},
+												"{@d20 3} 到魅力检定"
+											]
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "book/MGELFT/00031d.webp"
+											},
+											"width": 785,
+											"height": 1032,
+											"credit": "Emi Tanji",
+											"expectsLightBackground": true
+										},
+										{
+											"ENG_name": "Pippy",
+											"name": "皮皮",
+											"type": "inset",
+											"id": "02e",
+											"page": 35,
+											"entries": [
+												"{@i 微型小妖精}",
+												"皮皮是一个凶猛的{@creature 小仙灵}武者，是暗木林的守护者。如果皮皮在10尺范围内，你不会陷入{@condition 恐慌}。",
+												{
+													"type": "hr"
+												},
+												{
+													"ENG_name": "Personality:",
+													"name": "个性：",
+													"type": "entries",
+													"id": "02f",
+													"page": 35,
+													"entries": [
+														"我谁也不怕！"
+													]
+												},
+												{
+													"ENG_name": "Flaw:",
+													"name": "缺陷：",
+													"type": "entries",
+													"id": "030",
+													"page": 35,
+													"entries": [
+														"我谁也不怕！"
+													]
+												},
+												"{@hit 1} 攻击检定"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Character Sheet",
+							"name": "角色卡",
+							"type": "section",
+							"id": "031",
+							"page": 37,
+							"entries": [
+								{
+									"type": "gallery",
+									"images": [
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "book/MGELFT/00027.webp"
+											},
+											"width": 1280,
+											"height": 1655,
+											"title": "{@5etoolsImg 空白施法者角色表|pdf/MGELFT/Character Sheet.pdf}",
+											"credit": "Emi Tanji",
+											"expectsLightBackground": true
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/MGELFT/00029.webp"
+							},
+							"width": 1280,
+							"height": 1632,
+							"title": "成为英雄并打出D&D",
+							"altText": "成为英雄 & 打出 D&D。Extra Life。",
+							"credit": "Emi Tanji",
+							"expectsLightBackground": true
+						},
+						{
+							"type": "entries",
+							"id": "032",
+							"page": 40,
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/MGELFT/00033.webp"
+									},
+									"width": 1700,
+									"height": 2200,
+									"title": "微型法术书",
+									"altText": "微型法术书",
+									"credit": "Emi Tanji",
+									"expectsLightBackground": true
+								},
+								{
+									"type": "list",
+									"page": 40,
+									"style": "list-decimal",
+									"items": [
+										"纵向对折",
+										"展开，然后沿宽度对折成一半",
+										"展开，然后将边缘向中心折叠",
+										"你的纸张应该有像这样的折痕。",
+										"沿宽度对折并切一个一半到{@color X|ee1c25}的缝隙",
+										"展开，然后纵向折叠并将两端向中心推击",
+										"将所有页面折叠在一起，制作成你的迷你法术书！",
+										"嗒哒！"
+									]
+								},
+								"使用下一页的模板来获得额外的魔法外观！",
+								"虚线 - 折叠",
+								"实线 - 剪切"
+							]
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/MGELFT/00034.webp"
+							},
+							"width": 1700,
+							"height": 2200,
+							"credit": "Emi Tanji",
+							"expectsLightBackground": true
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/MGELFT/00030.webp"
+							},
+							"width": 1655,
+							"height": 1278,
+							"title": "我 ❤️ Extra Life 和枭熊",
+							"altText": "我 ❤️ Extra Life 和枭熊",
+							"credit": "Emi Tanji",
+							"expectsLightBackground": true
+						},
+						{
+							"type": "inset",
+							"id": "033",
+							"page": 43,
+							"style": "text-center",
+							"entries": [
+								{
+									"type": "quote",
+									"entries": [
+										"我可能看起来不像你，你可能看起来也不像我。但这些美妙的差异，应该被庆祝和看见。",
+										"{@style 致谢|大型}",
+										"感谢加入MUK、{@creature 松鸟|AWM}和我在丹克伍德的另一次冒险\u2014\u2014我们的世界因亚当·李和克里斯·林赛的杰出才华而更加丰富。",
+										"感谢大家，感谢你们的鼓励、支持以及与我们共度的时光。一起分享的时刻是如此不可思议的宝藏。",
+										"我们可以一起完成如此多的事情，我很感激看到由《龙与地下城》社群培育出的善意、欢笑和支持。让我们保持友善，让我们行善举，让我们一起讲述我们的故事。"
+									],
+									"by": "艾米"
+								}
+							]
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/MGELFT/00032a.webp"
+							},
+							"width": 391,
+							"height": 230,
+							"credit": "Emi Tanji",
+							"expectsLightBackground": true
+						}
+					]
 				}
-			],
-			"id": "018"
+			]
 		}
 	]
 }

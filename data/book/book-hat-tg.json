@@ -1,377 +1,383 @@
 {
-	"data": [
+	"bookData": [
 		{
-			"ENG_name": "Thieves' Gallery",
-			"name": "盗贼画廊",
-			"type": "section",
-			"entries": [
+			"id": "HAT-TG",
+			"source": "HAT-TG",
+			"data": [
 				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/TG/001-00-008.movie-logo.webp"
-					},
-					"width": 850,
-					"height": 291
-				},
-				"这里介绍了电影{@i 龙与地下城：侠盗荣耀}中的一些角色，你可以将这些角色作为非玩家角色（NPC）加入你的D&D战役中。本合集中的数据块展示方式与{@book 怪物图鉴|MM}中的类似。如果你不熟悉数据块格式，请先阅读《怪物手册》的导言部分。该书解释了数据块术语，并提供了各种怪物特性的规则\u2014\u2014这些信息在此不再重复。",
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/TG/002-00-009.characters-splash.webp"
-					},
-					"title": "世界最伟大的角色扮演游戏中的英雄与恶棍集合",
-					"width": 1700,
-					"height": 1100
-				},
-				{
-					"ENG_name": "Unusual Attacks and Magic",
-					"name": "非寻常攻击和魔法",
-					"type": "entries",
+					"ENG_name": "Thieves' Gallery",
+					"name": "盗贼画廊",
+					"type": "section",
+					"id": "000",
 					"entries": [
-						"有些生物拥有造成不寻常伤害类型的武器，并且施法方式也非典型。例如，{@creature 富尔格·菲特兹威廉|HAT-TG}使用他的重型十字弓造成额外的毒素伤害。这种额外伤害并非武器的特性。这样的例外是统计块的一个特殊特性，代表了生物如何使用其武器或施放其法术；这个例外对于其他生物使用武器或施法没有影响。"
-					],
-					"id": "001"
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/TG/001-00-008.movie-logo.webp"
+							},
+							"width": 850,
+							"height": 291
+						},
+						"这里介绍了电影{@i 龙与地下城：侠盗荣耀}中的一些角色，你可以将这些角色作为非玩家角色（NPC）加入你的D&D战役中。本合集中的数据块展示方式与{@book 怪物图鉴|MM}中的类似。如果你不熟悉数据块格式，请先阅读《怪物手册》的导言部分。该书解释了数据块术语，并提供了各种怪物特性的规则\u2014\u2014这些信息在此不再重复。",
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/TG/002-00-009.characters-splash.webp"
+							},
+							"width": 1700,
+							"height": 1100,
+							"title": "世界最伟大的角色扮演游戏中的英雄与恶棍集合"
+						},
+						{
+							"ENG_name": "Unusual Attacks and Magic",
+							"name": "非寻常攻击和魔法",
+							"type": "entries",
+							"id": "001",
+							"entries": [
+								"有些生物拥有造成不寻常伤害类型的武器，并且施法方式也非典型。例如，{@creature 富尔格·菲特兹威廉|HAT-TG}使用他的重型十字弓造成额外的毒素伤害。这种额外伤害并非武器的特性。这样的例外是统计块的一个特殊特性，代表了生物如何使用其武器或施放其法术；这个例外对于其他生物使用武器或施法没有影响。"
+							]
+						},
+						{
+							"ENG_name": "Stat Blocks",
+							"name": "数据卡",
+							"type": "entries",
+							"id": "002",
+							"entries": [
+								{
+									"type": "list",
+									"columns": 3,
+									"items": [
+										"{@creature 多立克|HAT-TG}",
+										"{@creature 埃德金·达尔维斯|HAT-TG}",
+										"{@creature 富尔格·菲特兹威廉|HAT-TG}",
+										"{@creature 霍尔盖·科拉格雷|HAT-TG}",
+										"{@creature 西蒙·奥玛尔|HAT-TG}",
+										"{@creature 索菲娜|HAT-TG}",
+										"{@creature 亨克·耶达尔|HAT-TG}"
+									]
+								},
+								{
+									"ENG_name": "Doric",
+									"name": "多立克",
+									"type": "section",
+									"id": "004",
+									"entries": [
+										{
+											"ENG_name": "Doric",
+											"name": "多立克",
+											"type": "statblock",
+											"prop": "monsterFluff",
+											"source": "HAT-TG",
+											"data": {
+												"renderCompact": {
+													"isSkipRootName": true
+												}
+											}
+										},
+										{
+											"ENG_name": "Doric",
+											"name": "多立克",
+											"type": "statblock",
+											"tag": "creature",
+											"source": "HAT-TG",
+											"style": "narrow"
+										}
+									]
+								},
+								{
+									"ENG_name": "Edgin Darvis",
+									"name": "埃德金·达尔维斯",
+									"type": "section",
+									"id": "005",
+									"entries": [
+										{
+											"ENG_name": "Edgin Darvis",
+											"name": "埃德金·达尔维斯",
+											"type": "statblock",
+											"prop": "monsterFluff",
+											"source": "HAT-TG",
+											"data": {
+												"renderCompact": {
+													"isSkipRootName": true
+												}
+											}
+										},
+										{
+											"ENG_name": "Edgin Darvis",
+											"name": "埃德金·达尔维斯",
+											"type": "statblock",
+											"tag": "creature",
+											"source": "HAT-TG",
+											"style": "narrow"
+										}
+									]
+								},
+								{
+									"ENG_name": "Forge Fitzwilliam",
+									"name": "富尔格·菲特兹威廉",
+									"type": "section",
+									"id": "006",
+									"entries": [
+										{
+											"ENG_name": "Forge Fitzwilliam",
+											"name": "富尔格·菲特兹威廉",
+											"type": "statblock",
+											"prop": "monsterFluff",
+											"source": "HAT-TG",
+											"data": {
+												"renderCompact": {
+													"isSkipRootName": true
+												}
+											}
+										},
+										{
+											"ENG_name": "Forge Fitzwilliam",
+											"name": "富尔格·菲特兹威廉",
+											"type": "statblock",
+											"tag": "creature",
+											"source": "HAT-TG",
+											"style": "narrow"
+										}
+									]
+								},
+								{
+									"ENG_name": "Holga Kilgore",
+									"name": "霍尔盖·科拉格雷",
+									"type": "section",
+									"id": "007",
+									"entries": [
+										{
+											"ENG_name": "Holga Kilgore",
+											"name": "霍尔盖·科拉格雷",
+											"type": "statblock",
+											"prop": "monsterFluff",
+											"source": "HAT-TG",
+											"data": {
+												"renderCompact": {
+													"isSkipRootName": true
+												}
+											}
+										},
+										{
+											"ENG_name": "Holga Kilgore",
+											"name": "霍尔盖·科拉格雷",
+											"type": "statblock",
+											"tag": "creature",
+											"source": "HAT-TG",
+											"style": "narrow"
+										}
+									]
+								},
+								{
+									"ENG_name": "Simon Aumar",
+									"name": "西蒙·奥玛尔",
+									"type": "section",
+									"id": "008",
+									"entries": [
+										{
+											"ENG_name": "Simon Aumar",
+											"name": "西蒙·奥玛尔",
+											"type": "statblock",
+											"prop": "monsterFluff",
+											"source": "HAT-TG",
+											"data": {
+												"renderCompact": {
+													"isSkipRootName": true
+												}
+											}
+										},
+										{
+											"ENG_name": "Simon Aumar",
+											"name": "西蒙·奥玛尔",
+											"type": "statblock",
+											"tag": "creature",
+											"source": "HAT-TG",
+											"style": "narrow"
+										}
+									]
+								},
+								{
+									"ENG_name": "Sofina",
+									"name": "索菲娜",
+									"type": "section",
+									"id": "009",
+									"entries": [
+										{
+											"ENG_name": "Sofina",
+											"name": "索菲娜",
+											"type": "statblock",
+											"prop": "monsterFluff",
+											"source": "HAT-TG",
+											"data": {
+												"renderCompact": {
+													"isSkipRootName": true
+												}
+											}
+										},
+										{
+											"ENG_name": "Sofina",
+											"name": "索菲娜",
+											"type": "statblock",
+											"tag": "creature",
+											"source": "HAT-TG",
+											"style": "narrow"
+										}
+									]
+								},
+								{
+									"ENG_name": "Xenk Yendar",
+									"name": "亨克·耶达尔",
+									"type": "section",
+									"id": "00a",
+									"entries": [
+										{
+											"ENG_name": "Xenk Yendar",
+											"name": "亨克·耶达尔",
+											"type": "statblock",
+											"prop": "monsterFluff",
+											"source": "HAT-TG",
+											"data": {
+												"renderCompact": {
+													"isSkipRootName": true
+												}
+											}
+										},
+										{
+											"ENG_name": "Xenk Yendar",
+											"name": "亨克·耶达尔",
+											"type": "statblock",
+											"tag": "creature",
+											"source": "HAT-TG",
+											"style": "narrow"
+										}
+									]
+								}
+							]
+						}
+					]
 				},
 				{
-					"ENG_name": "Stat Blocks",
-					"name": "数据卡",
-					"type": "entries",
+					"ENG_name": "Credits",
+					"name": "制作组",
+					"type": "section",
+					"id": "003",
 					"entries": [
 						{
 							"type": "list",
-							"columns": 3,
+							"style": "list-hang-notitle",
+							"columns": 2,
 							"items": [
-								"{@creature 多立克|HAT-TG}",
-								"{@creature 埃德金·达尔维斯|HAT-TG}",
-								"{@creature 富尔格·菲特兹威廉|HAT-TG}",
-								"{@creature 霍尔盖·科拉格雷|HAT-TG}",
-								"{@creature 西蒙·奥玛尔|HAT-TG}",
-								"{@creature 索菲娜|HAT-TG}",
-								"{@creature 亨克·耶达尔|HAT-TG}"
-							]
-						},
-						{
-							"ENG_name": "Doric",
-							"name": "多立克",
-							"type": "section",
-							"entries": [
 								{
-									"ENG_name": "Doric",
-									"name": "多立克",
-									"type": "statblock",
-									"prop": "monsterFluff",
-									"source": "HAT-TG",
-									"data": {
-										"renderCompact": {
-											"isSkipRootName": true
-										}
-									}
+									"ENG_name": "Project Leads",
+									"name": "项目主管",
+									"type": "item",
+									"entries": [
+										"杰里米·贾维斯，克里斯托弗·珀金斯"
+									]
 								},
 								{
-									"ENG_name": "Doric",
-									"name": "多立克",
-									"type": "statblock",
-									"tag": "creature",
-									"source": "HAT-TG",
-									"style": "narrow"
-								}
-							],
-							"id": "004"
-						},
-						{
-							"ENG_name": "Edgin Darvis",
-							"name": "埃德金·达尔维斯",
-							"type": "section",
-							"entries": [
-								{
-									"ENG_name": "Edgin Darvis",
-									"name": "埃德金·达尔维斯",
-									"type": "statblock",
-									"prop": "monsterFluff",
-									"source": "HAT-TG",
-									"data": {
-										"renderCompact": {
-											"isSkipRootName": true
-										}
-									}
+									"ENG_name": "Designers",
+									"name": "设计师",
+									"type": "item",
+									"entries": [
+										"艾什莉·亚历山大，丹·狄龙，罗恩·伦丁，萨拉·舍尔布"
+									]
 								},
 								{
-									"ENG_name": "Edgin Darvis",
-									"name": "埃德金·达尔维斯",
-									"type": "statblock",
-									"tag": "creature",
-									"source": "HAT-TG",
-									"style": "narrow"
-								}
-							],
-							"id": "005"
-						},
-						{
-							"ENG_name": "Forge Fitzwilliam",
-							"name": "富尔格·菲特兹威廉",
-							"type": "section",
-							"entries": [
-								{
-									"ENG_name": "Forge Fitzwilliam",
-									"name": "富尔格·菲特兹威廉",
-									"type": "statblock",
-									"prop": "monsterFluff",
-									"source": "HAT-TG",
-									"data": {
-										"renderCompact": {
-											"isSkipRootName": true
-										}
-									}
+									"ENG_name": "Rules Developer",
+									"name": "规则开发",
+									"type": "item",
+									"entries": [
+										"Jeremy Crawford"
+									]
 								},
 								{
-									"ENG_name": "Forge Fitzwilliam",
-									"name": "富尔格·菲特兹威廉",
-									"type": "statblock",
-									"tag": "creature",
-									"source": "HAT-TG",
-									"style": "narrow"
-								}
-							],
-							"id": "006"
-						},
-						{
-							"ENG_name": "Holga Kilgore",
-							"name": "霍尔盖·科拉格雷",
-							"type": "section",
-							"entries": [
-								{
-									"ENG_name": "Holga Kilgore",
-									"name": "霍尔盖·科拉格雷",
-									"type": "statblock",
-									"prop": "monsterFluff",
-									"source": "HAT-TG",
-									"data": {
-										"renderCompact": {
-											"isSkipRootName": true
-										}
-									}
+									"ENG_name": "Art Directors",
+									"name": "艺术指导",
+									"type": "item",
+									"entries": [
+										"凯特·欧文，卡拉·肯纳，吉布斯·雷诺克，汤姆·宋，肯德尔·沃尔卢奇"
+									]
 								},
 								{
-									"ENG_name": "Holga Kilgore",
-									"name": "霍尔盖·科拉格雷",
-									"type": "statblock",
-									"tag": "creature",
-									"source": "HAT-TG",
-									"style": "narrow"
-								}
-							],
-							"id": "007"
-						},
-						{
-							"ENG_name": "Simon Aumar",
-							"name": "西蒙·奥玛尔",
-							"type": "section",
-							"entries": [
-								{
-									"ENG_name": "Simon Aumar",
-									"name": "西蒙·奥玛尔",
-									"type": "statblock",
-									"prop": "monsterFluff",
-									"source": "HAT-TG",
-									"data": {
-										"renderCompact": {
-											"isSkipRootName": true
-										}
-									}
+									"ENG_name": "Editors",
+									"name": "编辑",
+									"type": "item",
+									"entries": [
+										"朱迪·鲍尔，艾德里安·吴"
+									]
 								},
 								{
-									"ENG_name": "Simon Aumar",
-									"name": "西蒙·奥玛尔",
-									"type": "statblock",
-									"tag": "creature",
-									"source": "HAT-TG",
-									"style": "narrow"
-								}
-							],
-							"id": "008"
-						},
-						{
-							"ENG_name": "Sofina",
-							"name": "索菲娜",
-							"type": "section",
-							"entries": [
-								{
-									"ENG_name": "Sofina",
-									"name": "索菲娜",
-									"type": "statblock",
-									"prop": "monsterFluff",
-									"source": "HAT-TG",
-									"data": {
-										"renderCompact": {
-											"isSkipRootName": true
-										}
-									}
+									"ENG_name": "Graphic Designer",
+									"name": "平面设计师",
+									"type": "item",
+									"entries": [
+										"Trish Yochum"
+									]
 								},
 								{
-									"ENG_name": "Sofina",
-									"name": "索菲娜",
-									"type": "statblock",
-									"tag": "creature",
-									"source": "HAT-TG",
-									"style": "narrow"
-								}
-							],
-							"id": "009"
-						},
-						{
-							"ENG_name": "Xenk Yendar",
-							"name": "亨克·耶达尔",
-							"type": "section",
-							"entries": [
-								{
-									"ENG_name": "Xenk Yendar",
-									"name": "亨克·耶达尔",
-									"type": "statblock",
-									"prop": "monsterFluff",
-									"source": "HAT-TG",
-									"data": {
-										"renderCompact": {
-											"isSkipRootName": true
-										}
-									}
+									"ENG_name": "Imaging Technician",
+									"name": "影像技术员",
+									"type": "item",
+									"entries": [
+										"Kevin Yee"
+									]
 								},
 								{
-									"ENG_name": "Xenk Yendar",
-									"name": "亨克·耶达尔",
-									"type": "statblock",
-									"tag": "creature",
-									"source": "HAT-TG",
-									"style": "narrow"
+									"ENG_name": "Illustrators",
+									"name": "插画师",
+									"type": "item",
+									"entries": [
+										"冷双成，李建森，罗阳，塔蒂亚娜·维特罗娃，叶文飞，张亮亮，张启雅"
+									]
+								},
+								{
+									"ENG_name": "Senior Producer",
+									"name": "高级制作人",
+									"type": "item",
+									"entries": [
+										"Dan Tovar"
+									]
+								},
+								{
+									"ENG_name": "Producer",
+									"name": "出品人",
+									"type": "item",
+									"entries": [
+										"加布里埃尔·瓦卢科尼斯"
+									]
+								},
+								{
+									"ENG_name": "Product Manager",
+									"name": "产品经理",
+									"type": "item",
+									"entries": [
+										"Chris Lindsay"
+									]
+								},
+								{
+									"ENG_name": "D&D Beyond Product Manager",
+									"name": "D&D Beyond产品经理",
+									"type": "item",
+									"entries": [
+										"帕特里克·巴克曼"
+									]
+								},
+								{
+									"ENG_name": "D&D Beyond Digital Design Team",
+									"name": "D&D Beyond数字设计团队",
+									"type": "item",
+									"entries": [
+										"Jay Jani, Adam Walton, Joseph Keen, Cameron Powell"
+									]
 								}
-							],
-							"id": "00a"
-						}
-					],
-					"id": "002"
-				}
-			],
-			"id": "000"
-		},
-		{
-			"ENG_name": "Credits",
-			"name": "制作组",
-			"type": "section",
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"columns": 2,
-					"items": [
-						{
-							"ENG_name": "Project Leads",
-							"name": "项目主管",
-							"type": "item",
-							"entries": [
-								"杰里米·贾维斯，克里斯托弗·珀金斯"
-							]
-						},
-						{
-							"ENG_name": "Designers",
-							"name": "设计师",
-							"type": "item",
-							"entries": [
-								"艾什莉·亚历山大，丹·狄龙，罗恩·伦丁，萨拉·舍尔布"
-							]
-						},
-						{
-							"ENG_name": "Rules Developer",
-							"name": "规则开发",
-							"type": "item",
-							"entries": [
-								"Jeremy Crawford"
-							]
-						},
-						{
-							"ENG_name": "Art Directors",
-							"name": "艺术指导",
-							"type": "item",
-							"entries": [
-								"凯特·欧文，卡拉·肯纳，吉布斯·雷诺克，汤姆·宋，肯德尔·沃尔卢奇"
-							]
-						},
-						{
-							"ENG_name": "Editors",
-							"name": "编辑",
-							"type": "item",
-							"entries": [
-								"朱迪·鲍尔，艾德里安·吴"
-							]
-						},
-						{
-							"ENG_name": "Graphic Designer",
-							"name": "平面设计师",
-							"type": "item",
-							"entries": [
-								"Trish Yochum"
-							]
-						},
-						{
-							"ENG_name": "Imaging Technician",
-							"name": "影像技术员",
-							"type": "item",
-							"entries": [
-								"Kevin Yee"
-							]
-						},
-						{
-							"ENG_name": "Illustrators",
-							"name": "插画师",
-							"type": "item",
-							"entries": [
-								"冷双成，李建森，罗阳，塔蒂亚娜·维特罗娃，叶文飞，张亮亮，张启雅"
-							]
-						},
-						{
-							"ENG_name": "Senior Producer",
-							"name": "高级制作人",
-							"type": "item",
-							"entries": [
-								"Dan Tovar"
-							]
-						},
-						{
-							"ENG_name": "Producer",
-							"name": "出品人",
-							"type": "item",
-							"entries": [
-								"加布里埃尔·瓦卢科尼斯"
-							]
-						},
-						{
-							"ENG_name": "Product Manager",
-							"name": "产品经理",
-							"type": "item",
-							"entries": [
-								"Chris Lindsay"
-							]
-						},
-						{
-							"ENG_name": "D&D Beyond Product Manager",
-							"name": "D&D Beyond产品经理",
-							"type": "item",
-							"entries": [
-								"帕特里克·巴克曼"
-							]
-						},
-						{
-							"ENG_name": "D&D Beyond Digital Design Team",
-							"name": "D&D Beyond数字设计团队",
-							"type": "item",
-							"entries": [
-								"Jay Jani, Adam Walton, Joseph Keen, Cameron Powell"
 							]
 						}
 					]
 				}
-			],
-			"id": "003"
+			]
 		}
 	]
 }

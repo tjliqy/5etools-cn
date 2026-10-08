@@ -1368,6 +1368,7 @@
 			"rarity": "none",
 			"entries": [
 				{
+					"type": "table",
 					"caption": "来自艾伦诺的饰品",
 					"colLabels": [
 						"d8",
@@ -1410,8 +1411,7 @@
 							"8",
 							"一本由亡灵精灵所著的诗集"
 						]
-					],
-					"type": "table"
+					]
 				}
 			],
 			"miscTags": [
@@ -1793,13 +1793,13 @@
 				{
 					"type": "table",
 					"caption": "炼金壶液体",
-					"colStyles": [
-						"col-6",
-						"col-6"
-					],
 					"colLabels": [
 						"液体",
 						"最大数量"
+					],
+					"colStyles": [
+						"col-6",
+						"col-6"
 					],
 					"rows": [
 						[
@@ -1874,13 +1874,13 @@
 				"一旦此壶开始生成液体，直到次日黎明前，它生成的液体无法超过其最大产量的液体或是产生另一种液体。",
 				{
 					"type": "table",
-					"colStyles": [
-						"col-6 text-center",
-						"col-6 text-center"
-					],
 					"colLabels": [
 						"液体",
 						"最大数量"
+					],
+					"colStyles": [
+						"col-6 text-center",
+						"col-6 text-center"
 					],
 					"rows": [
 						[
@@ -1941,13 +1941,13 @@
 				"一旦此壶开始生成液体，直到次日黎明前，它生成的液体无法超过其最大产量的液体或是产生另一种液体。",
 				{
 					"type": "table",
-					"colStyles": [
-						"col-6 text-center",
-						"col-6 text-center"
-					],
 					"colLabels": [
 						"液体",
 						"最大数量"
+					],
+					"colStyles": [
+						"col-6 text-center",
+						"col-6 text-center"
 					],
 					"rows": [
 						[
@@ -2645,13 +2645,13 @@
 				"佩戴此护符期间，你能够以一个{@action 魔法|XPHB}动作指名一个位于其他存在位面的你所熟悉的地点。那之后你进行一次{@dc 15}的智力（{@skill 奥秘|XPHB}）检定。如检定通过，你施展{@spell 位面转移|XPHB}。如检定失败，你和位于你15尺内的每个生物与物件将被传送至一个由投掷{@dice 1d100}并根据下表决定的随机目的地。",
 				{
 					"type": "table",
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
 					"colLabels": [
 						"1d100",
 						"目的地"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
 					],
 					"rows": [
 						[
@@ -2983,15 +2983,15 @@
 				{
 					"type": "table",
 					"caption": "夸力许装置拉杆",
-					"colStyles": [
-						"col-1 text-center",
-						"col-5-5",
-						"col-5-5"
-					],
 					"colLabels": [
 						"拉杆",
 						"Up",
 						"下"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-5-5",
+						"col-5-5"
 					],
 					"rows": [
 						[
@@ -3120,20 +3120,20 @@
 		},
 		{
 			"ENG_name": "Arcane Cannon",
-			"name": "奥术加农炮",
+			"name": "奥术火炮",
 			"source": "EGW",
 			"page": 265,
 			"rarity": "very rare",
 			"wondrous": true,
 			"entries": [
-				"这门大型加农炮被注入了魔法。它不需要常规弹药，也不需要装填。使用这门加农炮瞄准目标和发射各需要一个动作。加农炮发射后，必须等待5分钟才能再次发射。",
-				"发射这门加农炮的生物将从下列效应中选择一个，作为加农炮所造成的效应：",
+				"这门大型火炮被注入了魔法。它不需要常规弹药，也不需要装填。使用这门火炮瞄准目标和发射各需要一个动作。火炮发射后，必须等待5分钟才能再次发射。",
+				"发射这门火炮的生物将从下列效应中选择一个，作为火炮所造成的效应：",
 				{
 					"ENG_name": "Acid Jet",
 					"name": "强酸喷射",
 					"type": "entries",
 					"entries": [
-						"加农炮射出酸液，并覆盖一处300尺长，5尺宽的线状区域。该区域内的每个生物都必须进行一次{@dc 15}的敏捷豁免，豁免失败者将受到22（{@damage 4d10}）的强酸伤害，豁免成功则伤害减半。此外，敏捷豁免失败的生物在它每回合开始时受到11（{@damage 2d10}）的强酸伤害。该生物可以使用一个动作，并使用一品脱或以上的水洗落身上的酸液以终止此效应。"
+						"火炮射出酸液，并覆盖一处300尺长，5尺宽的线状区域。该区域内的每个生物都必须进行一次{@dc 15}的敏捷豁免，豁免失败者将受到22（{@damage 4d10}）的强酸伤害，豁免成功则伤害减半。此外，敏捷豁免失败的生物在它每回合开始时受到11（{@damage 2d10}）的强酸伤害。该生物可以使用一个动作，并使用一品脱或以上的水洗落身上的酸液以终止此效应。"
 					]
 				},
 				{
@@ -3141,7 +3141,7 @@
 					"name": "火焰喷射",
 					"type": "entries",
 					"entries": [
-						"加农炮射出烈焰，并覆盖一处300尺长，5尺宽的线状区域。该区域内的每个生物都必须进行一次{@dc 15}的敏捷豁免，豁免失败者将受到33（{@damage 6d10}）的火焰伤害，豁免成功则伤害减半。此外，区域内所有未被持有或穿戴的易燃物品都将被点燃。"
+						"火炮射出烈焰，并覆盖一处300尺长，5尺宽的线状区域。该区域内的每个生物都必须进行一次{@dc 15}的敏捷豁免，豁免失败者将受到33（{@damage 6d10}）的火焰伤害，豁免成功则伤害减半。此外，区域内所有未被持有或穿戴的易燃物品都将被点燃。"
 					]
 				},
 				{
@@ -3149,7 +3149,7 @@
 					"name": "冰霜射击",
 					"type": "entries",
 					"entries": [
-						"加农炮对1200尺内的一个可见位置射出一颗冰霜弹，冰霜弹在抵达目标点后爆炸，目标点周围30尺球状区域内的每个生物都必须进行一次{@dc 15}的体质豁免。豁免失败者将受到22（{@damage 4d10}）的寒冷伤害，并在下一分钟内速度减少10尺。豁免成功则伤害减半，速度不受影响。此外，速度减少的生物在其每回合结束时可以再进行一次体质豁免。如果豁免成功，则该目标身上的该效应终止。"
+						"火炮对1200尺内的一个可见位置射出一颗冰霜弹，冰霜弹在抵达目标点后爆炸，目标点周围30尺球状区域内的每个生物都必须进行一次{@dc 15}的体质豁免。豁免失败者将受到22（{@damage 4d10}）的寒冷伤害，并在下一分钟内速度减少10尺。豁免成功则伤害减半，速度不受影响。此外，速度减少的生物在其每回合结束时可以再进行一次体质豁免。如果豁免成功，则该目标身上的该效应终止。"
 					]
 				},
 				{
@@ -3157,15 +3157,15 @@
 					"name": "闪电射击",
 					"type": "entries",
 					"entries": [
-						"加农炮对1200尺内的一个可见位置射出一颗闪电弹，闪电弹在抵达目标点后爆炸，目标点周围20尺球状区域内的每个生物都必须进行一次{@dc 15}的敏捷豁免，豁免失败者将受到33（{@damage 6d10}）的闪电伤害，豁免成功则伤害减半。穿戴金属质护甲的生物在进行此豁免时有劣势。"
+						"火炮对1200尺内的一个可见位置射出一颗闪电弹，闪电弹在抵达目标点后爆炸，目标点周围20尺球状区域内的每个生物都必须进行一次{@dc 15}的敏捷豁免，豁免失败者将受到33（{@damage 6d10}）的闪电伤害，豁免成功则伤害减半。穿戴金属质护甲的生物在进行此豁免时有劣势。"
 					]
 				},
 				{
 					"ENG_name": "Poison Spray",
-					"name": "毒素喷雾",
+					"name": "毒气喷涌",
 					"type": "entries",
 					"entries": [
-						"加农炮喷出毒气并覆盖一处60尺的锥状区域。该区域内的每个生物必须进行一次{@dc 15}的体质豁免。豁免失败时，该生物受到22（{@damage 4d10}）毒素伤害并被{@condition 中毒}1分钟。豁免成功时，该生物受到一半伤害且不会{@condition 中毒}。以此方式{@condition 中毒}的生物可以在其每回合结束时重复进行该豁免检定，成功则结束其身上的该效应。"
+						"火炮喷出毒气并覆盖一处60尺的锥状区域。该区域内的每个生物必须进行一次{@dc 15}的体质豁免。豁免失败时，该生物受到22（{@damage 4d10}）毒素伤害并被{@condition 中毒}1分钟。豁免成功时，该生物受到一半伤害且不会{@condition 中毒}。以此方式{@condition 中毒}的生物可以在其每回合结束时重复进行该豁免检定，成功则结束其身上的该效应。"
 					]
 				}
 			]
@@ -3271,6 +3271,7 @@
 			"rarity": "none",
 			"entries": [
 				{
+					"type": "table",
 					"caption": "来自阿贡尼森的饰品",
 					"colLabels": [
 						"d10",
@@ -3321,8 +3322,7 @@
 							"10",
 							"一颗摸起来温暖的巨大种子"
 						]
-					],
-					"type": "table"
+					]
 				}
 			],
 			"miscTags": [
@@ -4637,13 +4637,13 @@
 				"如果你从布袋中取出1颗豆子，种入泥土或沙子中并浇上水，1分钟后，豆子将会消失并在其被种下的区域中产生一种效应。由DM在表格中选择或骰骰子在表格中随机决定。",
 				{
 					"type": "table",
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
 					"colLabels": [
 						"1d100",
 						"效应"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
 					],
 					"rows": [
 						[
@@ -4949,13 +4949,13 @@
 				"一旦袋子抽出三件毛绒物件后，直至次日黎明才可再次使用。",
 				{
 					"type": "table",
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
 					"colLabels": [
 						"1d8",
 						"生物"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
 					],
 					"rows": [
 						[
@@ -5086,13 +5086,13 @@
 				"一旦袋子抽出三件毛绒物件后，直至次日黎明才可再次使用。",
 				{
 					"type": "table",
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
 					"colLabels": [
 						"1d8",
 						"生物"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
 					],
 					"rows": [
 						[
@@ -5222,13 +5222,13 @@
 				"一旦袋子抽出三件毛绒物件后，直至次日黎明才可再次使用。",
 				{
 					"type": "table",
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
 					"colLabels": [
 						"1d8",
 						"生物"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
 					],
 					"rows": [
 						[
@@ -6221,11 +6221,13 @@
 			"name": "瑰宝秘社饰品",
 			"type": "G|XPHB",
 			"source": "AU",
+			"page": 84,
 			"rarity": "none",
 			"entries": [
 				{
 					"type": "table",
 					"caption": "瑰宝秘社饰品",
+					"page": 84,
 					"colLabels": [
 						"{@dice 1d6}",
 						"饰品"
@@ -6459,6 +6461,7 @@
 				"该风箱具有6充能。当你拿着它时，你可以执行{@action 魔法|XPHB}动作并说出三个命令语之一，以产生以下效应之一：",
 				{
 					"type": "list",
+					"style": "list-hang-notitle",
 					"items": [
 						{
 							"ENG_name": "First Command Word",
@@ -6478,8 +6481,7 @@
 							"type": "item",
 							"entry": "你消耗5充能，从风箱施展法术{@spell 死云术|XPHB}（法术{@dc 17}）。"
 						}
-					],
-					"style": "list-hang-notitle"
+					]
 				},
 				{
 					"ENG_name": "Regaining Charges",
@@ -10294,11 +10296,13 @@
 			"name": "寰宇黎明使徒会饰品",
 			"type": "G|XPHB",
 			"source": "AU",
+			"page": 87,
 			"rarity": "none",
 			"entries": [
 				{
 					"type": "table",
 					"caption": "寰宇黎明使徒会饰品",
+					"page": 87,
 					"colLabels": [
 						"{@dice 1d6}",
 						"饰品"
@@ -11291,13 +11295,13 @@
 				"另外，当你首次点亮祈神蜡烛时，你可以用它施展一次法术{@spell 异界之门|XPHB}。这样做会立刻摧毁这根蜡烛，而此法术所创造的传送门会连接至某一特定的外层位面，由DM选择或掷以下表格决定：",
 				{
 					"type": "table",
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
 					"colLabels": [
 						"1d100",
 						"外层位面"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
 					],
 					"rows": [
 						[
@@ -13917,13 +13921,13 @@
 				"从2级开始，你的决策币变成一个普通的魔法物品。当你翻转硬币时，它总是以Acquisitions Incorporated的徽记面朝下落地，并且在\"反面\"上出现一条信息。掷一个{@dice d4}在下面的表格上以确定信息内容。",
 				{
 					"type": "table",
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
 					"colLabels": [
 						"d4",
 						"决策"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
 					],
 					"rows": [
 						[
@@ -14502,11 +14506,13 @@
 			"name": "亡陵誓盟饰品",
 			"type": "G|XPHB",
 			"source": "AU",
+			"page": 91,
 			"rarity": "none",
 			"entries": [
 				{
 					"type": "table",
 					"caption": "亡陵誓盟饰品",
+					"page": 91,
 					"colLabels": [
 						"{@dice 1d6}",
 						"饰品"
@@ -15154,11 +15160,13 @@
 			"name": "熔炉司守饰品",
 			"type": "G|XPHB",
 			"source": "AU",
+			"page": 94,
 			"rarity": "none",
 			"entries": [
 				{
 					"type": "table",
 					"caption": "熔炉司守饰品",
+					"page": 94,
 					"colLabels": [
 						"{@dice 1d6}",
 						"饰品"
@@ -15389,6 +15397,7 @@
 			"ENG_name": "Crystal Ball of Ominous Portent",
 			"name": "不祥预兆水晶球",
 			"source": "AUD",
+			"page": 118,
 			"rarity": "legendary",
 			"reqAttune": true,
 			"wondrous": true,
@@ -15696,13 +15705,13 @@
 				{
 					"type": "table",
 					"caption": "力场魔方各面效果",
-					"colStyles": [
-						"col-10",
-						"col-2 text-center"
-					],
 					"colLabels": [
 						"法术",
 						"消耗充能"
+					],
+					"colStyles": [
+						"col-10",
+						"col-2 text-center"
 					],
 					"rows": [
 						[
@@ -15773,13 +15782,13 @@
 				{
 					"type": "table",
 					"caption": "召唤魔方",
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
 					"colLabels": [
 						"1d6",
 						"法术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
 					],
 					"rows": [
 						[
@@ -16370,15 +16379,15 @@
 				{
 					"type": "table",
 					"caption": "镜片",
-					"colStyles": [
-						"col-4",
-						"col-4",
-						"col-4"
-					],
 					"colLabels": [
 						"镜片颜色",
 						"法术",
 						"燃料成本"
+					],
+					"colStyles": [
+						"col-4",
+						"col-4",
+						"col-4"
 					],
 					"rows": [
 						[
@@ -17154,13 +17163,13 @@
 				{
 					"type": "table",
 					"caption": "幻象牌组",
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
 					"colLabels": [
 						"1d100",
 						"幻术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
 					],
 					"rows": [
 						[
@@ -17332,13 +17341,13 @@
 				{
 					"type": "table",
 					"caption": "万事万象无常牌",
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
 					"colLabels": [
 						"d100",
 						"卡牌"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
 					],
 					"rows": [
 						[
@@ -18552,15 +18561,15 @@
 				{
 					"type": "table",
 					"caption": "万象无常牌",
-					"colStyles": [
-						"col-2 text-center",
-						"col-2 text-center",
-						"col-8"
-					],
 					"colLabels": [
 						"{@dice 1d100}（13张牌组）",
 						"{@dice 1d100}（22张牌组）",
 						"卡牌"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-2 text-center",
+						"col-8"
 					],
 					"rows": [
 						[
@@ -18887,13 +18896,13 @@
 				{
 					"type": "table",
 					"caption": "杂烩牌组",
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
 					"colLabels": [
 						"{@dice 1d32|卡牌}",
 						"物品"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
 					],
 					"rows": [
 						[
@@ -19704,15 +19713,15 @@
 				{
 					"type": "table",
 					"caption": "狂野牌组",
-					"colStyles": [
-						"col-2 text-center",
-						"col-2 text-center",
-						"col-8"
-					],
 					"colLabels": [
 						"d4",
 						"花色",
 						"效应"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-2 text-center",
+						"col-8"
 					],
 					"rows": [
 						[
@@ -19769,13 +19778,13 @@
 				{
 					"type": "table",
 					"caption": "奇迹牌组",
-					"colStyles": [
-						"col-4 text-center",
-						"col-8"
-					],
 					"colLabels": [
 						"{@dice 1d22|卡牌}",
 						"牌面标题"
+					],
+					"colStyles": [
+						"col-4 text-center",
+						"col-8"
 					],
 					"rows": [
 						[
@@ -20539,13 +20548,13 @@
 						"这本书有8次充能，每天黎明时分恢复{@dice 1d8}次已消耗的充能。手持此书时，你可以进行一次{@action 魔法|XPHB}动作来施放下表中的其中一个法术（通过{@dc 20}检定）。表格显示了施放该法术所需消耗的充能次数。",
 						{
 							"type": "table",
-							"colStyles": [
-								"col-10",
-								"col-2 text-center"
-							],
 							"colLabels": [
 								"法术",
 								"消耗充能"
+							],
+							"colStyles": [
+								"col-10",
+								"col-2 text-center"
 							],
 							"rows": [
 								[
@@ -20891,13 +20900,13 @@
 				},
 				{
 					"type": "table",
-					"colStyles": [
-						"col-10",
-						"col-2 text-center"
-					],
 					"colLabels": [
 						"法术",
 						"消耗充能"
+					],
+					"colStyles": [
+						"col-10",
+						"col-2 text-center"
 					],
 					"rows": [
 						[
@@ -23228,13 +23237,13 @@
 				"瓶子第一次被打开时，DM按下面的表格掷骰，以此来决定会发生什么。",
 				{
 					"type": "table",
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
 					"colLabels": [
 						"1d10",
 						"效应"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
 					],
 					"rows": [
 						[
@@ -25376,13 +25385,13 @@
 										{
 											"type": "table",
 											"caption": "维克那法眼法术",
-											"colStyles": [
-												"col-10",
-												"col-2 text-center"
-											],
 											"colLabels": [
 												"法术",
 												"消耗充能"
+											],
+											"colStyles": [
+												"col-10",
+												"col-2 text-center"
 											],
 											"rows": [
 												[
@@ -25560,6 +25569,7 @@
 			"ENG_name": "Eyes of Deceit",
 			"name": "欺瞒镜片",
 			"source": "AUD",
+			"page": 118,
 			"rarity": "uncommon",
 			"wondrous": true,
 			"entries": [
@@ -28043,6 +28053,7 @@
 			"rarity": "none",
 			"entries": [
 				{
+					"type": "table",
 					"caption": "霜落之地与永恒冰原饰品",
 					"colLabels": [
 						"d8",
@@ -28085,8 +28096,7 @@
 							"8",
 							"一片白龙的鳞"
 						]
-					],
-					"type": "table"
+					]
 				}
 			],
 			"miscTags": [
@@ -28269,13 +28279,13 @@
 			"entries": [
 				{
 					"type": "table",
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
 					"colLabels": [
 						"d6",
 						"饰品"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
 					],
 					"rows": [
 						[
@@ -28745,6 +28755,7 @@
 			"entries": [
 				"探索你家乡的途中，你找到了一些古老居民的残羹剩饭，你可以投掷下方的巨人饰品表以决定它。写在括号中的物品，是与所述的巨型饰品最相似的正常大小的物件。",
 				{
+					"type": "table",
 					"caption": "巨人饰品",
 					"colLabels": [
 						"d6",
@@ -28779,8 +28790,7 @@
 							"6",
 							"一枚巨人的针箍（一个{@item 铁壶|PHB}）"
 						]
-					],
-					"type": "table"
+					]
 				}
 			],
 			"miscTags": [
@@ -31090,13 +31100,13 @@
 										{
 											"type": "table",
 											"caption": "维克那魔掌法术",
-											"colStyles": [
-												"col-10",
-												"col-2 text-center"
-											],
 											"colLabels": [
 												"法术",
 												"消耗充能"
+											],
+											"colStyles": [
+												"col-10",
+												"col-2 text-center"
 											],
 											"rows": [
 												[
@@ -31487,13 +31497,13 @@
 						"你通过帽子施展的所有法术均使用你的法术豁免DC和法术攻击加值。",
 						{
 							"type": "table",
-							"colStyles": [
-								"col-2 text-center",
-								"col-10"
-							],
 							"colLabels": [
 								"1d100",
 								"效应"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
 							],
 							"rows": [
 								[
@@ -32532,13 +32542,13 @@
 				"头盔有3发充能。你可以消耗1发充能来施展头盔中的法术。每日黎明时分，头盔恢复{@dice 1d3}发已消耗的充能。",
 				{
 					"type": "table",
-					"colStyles": [
-						"col-2 text-center",
-						"col-10 text-center"
-					],
 					"colLabels": [
 						"神",
 						"法术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text-center"
 					],
 					"rows": [
 						[
@@ -33163,11 +33173,11 @@
 		},
 		{
 			"ENG_name": "Hide of the Feral Guardian (Awakened)",
-			"name": "野性守护者的毛皮（觉醒）",
+			"name": "荒野守卫护甲（觉醒）",
 			"source": "EGW",
 			"_copy": {
 				"ENG_name": "Hide of the Feral Guardian (Dormant)",
-				"name": "野性守护者的毛皮（休眠）",
+				"name": "荒野守卫护甲（休眠）",
 				"source": "EGW",
 				"_mod": {
 					"entries": {
@@ -33201,7 +33211,7 @@
 		},
 		{
 			"ENG_name": "Hide of the Feral Guardian (Dormant)",
-			"name": "野性守护者的毛皮（休眠）",
+			"name": "荒野守卫护甲（休眠）",
 			"type": "LA",
 			"source": "EGW",
 			"page": 271,
@@ -33222,7 +33232,7 @@
 					"name": "休眠",
 					"type": "entries",
 					"entries": [
-						"当着装处于休眠状态的野性守护者的毛皮时，你获得如下增益：",
+						"当着装处于休眠状态的荒野守卫护甲时，你获得如下增益：",
 						{
 							"type": "list",
 							"items": [
@@ -33244,11 +33254,11 @@
 		},
 		{
 			"ENG_name": "Hide of the Feral Guardian (Exalted)",
-			"name": "野性守护者的毛皮（升华）",
+			"name": "荒野守卫护甲（升华）",
 			"source": "EGW",
 			"_copy": {
 				"ENG_name": "Hide of the Feral Guardian (Awakened)",
-				"name": "野性守护者的毛皮（觉醒）",
+				"name": "荒野守卫护甲（觉醒）",
 				"source": "EGW",
 				"_mod": {
 					"entries": {
@@ -33531,15 +33541,15 @@
 				{
 					"type": "table",
 					"caption": "渔夫的喜悦之钩",
-					"colStyles": [
-						"col-2 text-center",
-						"col-1",
-						"col-9"
-					],
 					"colLabels": [
 						"d20",
 						"鱼的颜色",
 						"结果"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-1",
+						"col-9"
 					],
 					"rows": [
 						[
@@ -33586,11 +33596,13 @@
 			"name": "织界者饰品",
 			"type": "G|XPHB",
 			"source": "AU",
+			"page": 98,
 			"rarity": "none",
 			"entries": [
 				{
 					"type": "table",
 					"caption": "织界者饰品",
+					"page": 98,
 					"colLabels": [
 						"{@dice 1d6}",
 						"饰品"
@@ -34026,7 +34038,7 @@
 						],
 						[
 							"05",
-							"一条项链，曾经属于你的某个兄弟姐妹，他/她在你出生的那天死去。"
+							"一条曾经属于你某个兄弟姐妹的项链，他/她在你出生的那天死去"
 						],
 						[
 							"06",
@@ -34390,7 +34402,7 @@
 						],
 						[
 							"96",
-							"一只陶瓷猫，有很多只眼睛。"
+							"一只有很多只眼睛的陶瓷猫雕像"
 						],
 						[
 							"97",
@@ -37209,13 +37221,13 @@
 				"法术{@spell 鉴定术|XPHB}可以辨别瓶中是否有囚禁生物，但只有打开瓶塞才能确定其中的生物具体是什么。一个新发现的收妖瓶可能已经囚禁了一名由DM决定或根据下表随机决定的生物（以下生物的数据见{@book 怪物图鉴|XMM}）。",
 				{
 					"type": "table",
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
 					"colLabels": [
 						"1d100",
 						"内容"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
 					],
 					"rows": [
 						[
@@ -38084,7 +38096,7 @@
 			"rechargeAmount": 3,
 			"charges": 3,
 			"entries": [
-				"三祈宝珠是分歧遗迹（见\"分歧遗迹\"侧边栏）。在古代，阿波西恩神使佩戴这个护身符作为他与三位主神的契约的象征：塞哈尼月亮编织者、阿瓦兰德拉变化使者和科雷隆大心。当宝珠被发现时，只有塞哈尼的力量在它的休眠心中脉动。其他两位神的力量等待着被英雄\u2014\u2014或英雄们\u2014\u2014重新唤醒，他们可以追随阿波西恩的足迹。",
+				"三祈宝珠是分歧遗迹（见\"分歧遗迹\"侧边栏）。在古代，阿波西恩神使佩戴这个护身符作为他与三位主神的契约的象征：塞哈尼月亮编织者、阿瓦兰德拉变化使者和科瑞隆大心。当宝珠被发现时，只有塞哈尼的力量在它的休眠心中脉动。其他两位神的力量等待着被英雄\u2014\u2014或英雄们\u2014\u2014重新唤醒，他们可以追随阿波西恩的足迹。",
 				{
 					"ENG_name": "Dormant State",
 					"name": "休眠态",
@@ -38135,7 +38147,7 @@
 							"name": "升华态",
 							"type": "entries",
 							"entries": [
-								"在这种状态下，宝珠已经接受了科雷隆大心的祝福。宝珠上出现了一颗发光的翡翠，周围环绕着金色的光环。",
+								"在这种状态下，宝珠已经接受了科瑞隆大心的祝福。宝珠上出现了一颗发光的翡翠，周围环绕着金色的光环。",
 								"宝石的以下好处得到提升：",
 								{
 									"type": "list",
@@ -38735,6 +38747,7 @@
 			"rarity": "none",
 			"entries": [
 				{
+					"type": "table",
 					"caption": "来自凯伯的饰品",
 					"colLabels": [
 						"d10",
@@ -38785,8 +38798,7 @@
 							"10",
 							"一只保存完好的昆虫；你此前从未见过与它相似的物种。"
 						]
-					],
-					"type": "table"
+					]
 				}
 			],
 			"miscTags": [
@@ -39891,13 +39903,13 @@
 				{
 					"type": "table",
 					"caption": "基于职业的活化战利品背包",
-					"colStyles": [
-						"col-2",
-						"col-10"
-					],
 					"colLabels": [
 						"职业",
 						"包"
+					],
+					"colStyles": [
+						"col-2",
+						"col-10"
 					],
 					"rows": [
 						[
@@ -40402,6 +40414,7 @@
 			"entries": [
 				"当你创建角色投掷起始饰品时，你能投掷衡鉴饰品表而不是{@book 玩家手册|PHB}中的{@item 饰品|phb|饰品表}。",
 				{
+					"type": "table",
 					"caption": "衡鉴饰品",
 					"colLabels": [
 						"d6",
@@ -40436,8 +40449,7 @@
 							"6",
 							"一柄破匕首，有着波浪形剑刃，蛇一样弯曲的剑柄"
 						]
-					],
-					"type": "table"
+					]
 				}
 			],
 			"miscTags": [
@@ -40860,7 +40872,7 @@
 				},
 				{
 					"ENG_name": "Soul Snare",
-					"name": "灵魂圈套",
+					"name": "灵魂陷阱",
 					"type": "entries",
 					"entries": [
 						"如果一位经过转生仪式的拉克森追随者在距离拉克森灵魂信标100英里内死亡，其灵魂将被信标捕获。该灵魂将在信标100英里内随机发育的类人婴儿体内转世。"
@@ -42216,6 +42228,7 @@
 			"ENG_name": "Masquerader's Brooch",
 			"name": "化装者胸针",
 			"source": "AUD",
+			"page": 118,
 			"rarity": "rare",
 			"reqAttune": true,
 			"wondrous": true,
@@ -43856,6 +43869,7 @@
 			"rarity": "none",
 			"entries": [
 				{
+					"type": "table",
 					"caption": "哀伤故地饰品",
 					"colLabels": [
 						"d10",
@@ -43906,8 +43920,7 @@
 							"10",
 							"一个具有可移动腿的木制恐龙玩具"
 						]
-					],
-					"type": "table"
+					]
 				}
 			],
 			"miscTags": [
@@ -44692,15 +44705,15 @@
 				"项链的每颗魔法念珠都可能是六种念珠之一，由DM决定或在下表中随机掷骰以确定每颗念珠的种类。一条项链可以拥有多颗同种类的念珠。要使用念珠，你必须佩戴着这条项链。每颗念珠容纳着一道法术，你能够以一个{@variantrule 附赠动作|XPHB}从中施展它所容纳的法术（需要豁免的法术使用你的法术豁免DC）。一颗魔法念珠中的法术一经施展，那颗念珠直至次日黎明前都无法再次被使用。",
 				{
 					"type": "table",
-					"colStyles": [
-						"col-2 text-center",
-						"col-5",
-						"col-5"
-					],
 					"colLabels": [
 						"1d20",
 						"念珠",
 						"法术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-5",
+						"col-5"
 					],
 					"rows": [
 						[
@@ -45382,11 +45395,13 @@
 			"name": "第九翎羽饰品",
 			"type": "G|XPHB",
 			"source": "AU",
+			"page": 102,
 			"rarity": "none",
 			"entries": [
 				{
 					"type": "table",
 					"caption": "第九翎羽饰品",
+					"page": 102,
 					"colLabels": [
 						"{@dice 1d6}",
 						"饰品"
@@ -46321,13 +46336,13 @@
 						"该法球拥有6点充能，并在每日拂晓恢复{@dice 1d4 + 2}点已消耗的充能。当你与该法球同调时，你可以从它施放以下表格中的一个法术（法术攻击调整值+10，法术豁免DC 18）。该表格指出了你必须消耗多少充能来施放该法术。",
 						{
 							"type": "table",
-							"colStyles": [
-								"col-10",
-								"col-2 text-center"
-							],
 							"colLabels": [
 								"法术",
 								"消耗充能"
+							],
+							"colStyles": [
+								"col-10",
+								"col-2 text-center"
 							],
 							"rows": [
 								[
@@ -46598,13 +46613,13 @@
 						"龙珠具有7充能，并在每日黎明时重获{@dice 1d4 + 3}已消耗的充能。你能以龙珠施展下表中的法术（豁免DC18）。表中表明了你施展对应的法术需要消耗多少充能。",
 						{
 							"type": "table",
-							"colStyles": [
-								"col-10",
-								"col-2 text-center"
-							],
 							"colLabels": [
 								"法术",
 								"消耗充能"
+							],
+							"colStyles": [
+								"col-10",
+								"col-2 text-center"
 							],
 							"rows": [
 								[
@@ -48293,11 +48308,13 @@
 			"name": "幻影马戏团饰品",
 			"type": "G|XPHB",
 			"source": "AU",
+			"page": 106,
 			"rarity": "none",
 			"entries": [
 				{
 					"type": "table",
 					"caption": "幻影马戏团饰品",
+					"page": 106,
 					"colLabels": [
 						"{@dice 1d6}",
 						"饰品"
@@ -48737,13 +48754,13 @@
 			"entries": [
 				{
 					"type": "table",
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
 					"colLabels": [
 						"d6",
 						"饰品"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
 					],
 					"rows": [
 						[
@@ -50141,13 +50158,13 @@
 				"这瓶药水由色彩龙的龙鳞研磨而成，里面的闪耀液体在光线下折射出斑驳光彩。",
 				{
 					"type": "table",
-					"colStyles": [
-						"col-6 text-center",
-						"col-6 text-center"
-					],
 					"colLabels": [
 						"颜色",
 						"伤害类型"
+					],
+					"colStyles": [
+						"col-6 text-center",
+						"col-6 text-center"
 					],
 					"rows": [
 						[
@@ -52801,6 +52818,7 @@
 			"entries": [
 				"当你创建角色投掷起始饰品时，你能投掷粹丽饰品表而不是{@book 玩家手册|PHB}中的{@item 饰品|phb|饰品表}。",
 				{
+					"type": "table",
 					"caption": "粹丽饰品",
 					"colLabels": [
 						"d6",
@@ -52835,8 +52853,7 @@
 							"6",
 							"一根彩虹色的羽毛笔"
 						]
-					],
-					"type": "table"
+					]
 				}
 			],
 			"miscTags": [
@@ -53094,15 +53111,15 @@
 				{
 					"type": "table",
 					"caption": "灵能水晶词条",
-					"colStyles": [
-						"col-2 text-center",
-						"col-2 text-center",
-						"col-8"
-					],
 					"colLabels": [
 						"智力值",
 						"心灵感应的范围",
 						"闪光"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-2 text-center",
+						"col-8"
 					],
 					"rows": [
 						[
@@ -53397,13 +53414,13 @@
 				},
 				{
 					"type": "table",
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
 					"colLabels": [
 						"d8",
 						"灾祸"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
 					],
 					"rows": [
 						[
@@ -53760,6 +53777,7 @@
 			"entries": [
 				"当你创建角色投掷起始饰品时，你能投掷量析饰品表而不是{@book 玩家手册|PHB}中的{@item 饰品|phb|饰品表}。",
 				{
+					"type": "table",
 					"caption": "量析饰品",
 					"colLabels": [
 						"d6",
@@ -53794,8 +53812,7 @@
 							"6",
 							"一个圆形面包卷切割器，使用者能在不举刀的情况下将两面都涂上黄油"
 						]
-					],
-					"type": "table"
+					]
 				}
 			],
 			"miscTags": [
@@ -53838,7 +53855,6 @@
 			"dmg2": "1d8",
 			"bonusWeapon": "+2",
 			"bonusAc": "+5",
-			"staff": true,
 			"entries": [
 				"你以此魔法武器进行的攻击检定和伤害掷骰具有+2加值。",
 				"持握此武器期间，你可以在骰{@variantrule 先攻|XPHB}后令该长棍散发出10尺{@variantrule 微光光照|XPHB}。你也可以用一个{@variantrule 附赠动作|XPHB}使其散发出同样的光照，或使用{@variantrule 附赠动作|XPHB}使该光照熄灭。",
@@ -53972,13 +53988,13 @@
 				},
 				{
 					"type": "table",
-					"colStyles": [
-						"col-10",
-						"col-2 text-center"
-					],
 					"colLabels": [
 						"法术",
 						"消耗充能"
+					],
+					"colStyles": [
+						"col-10",
+						"col-2 text-center"
 					],
 					"rows": [
 						[
@@ -55204,6 +55220,7 @@
 			"name": "坦诚戒指",
 			"type": "RG|XDMG",
 			"source": "AUD",
+			"page": 118,
 			"rarity": "uncommon",
 			"entries": [
 				"佩戴这枚朴素的金属指环期间，你的感知（{@skill 洞悉|XPHB}）检定获得+5加值。此外，你可以从戒指施展{@spell 诚实之域|XPHB}（豁免{@dc 13}）。直至下一黎明前，你都不能再以此方式施展{@spell 诚实之域|XPHB}。"
@@ -56804,13 +56821,13 @@
 						"以一个{@variantrule 附赠动作|XPHB}，你可以移动每个球体至多30尺，但球体和你的距离不得超过120尺。球体初次进入一个除你以外的，未处于{@variantrule 掩护|XPHB|全身掩护}后的生物5尺内时，球体对那个生物放出闪电并消失。该生物进行一次{@dc 15}的敏捷豁免。豁免失败时，生物受到基于你创造出的球体数量的闪电伤害，如下表所示。豁免成功时，生物受到的伤害减半。",
 						{
 							"type": "table",
-							"colStyles": [
-								"col-2 text-center",
-								"col-10"
-							],
 							"colLabels": [
 								"球体数量",
 								"闪电伤害"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
 							],
 							"rows": [
 								[
@@ -57926,6 +57943,7 @@
 			"ENG_name": "Robe of Thayan Arcana",
 			"name": "赛尔奥术法袍",
 			"source": "AUD",
+			"page": 119,
 			"rarity": "very rare",
 			"reqAttune": "由术士、魔契师或法师",
 			"reqAttuneTags": [
@@ -58208,13 +58226,13 @@
 				"此外，杂货法袍还有{@dice 4d4}个其他补丁。由DM选择补丁种类或通过在下表中掷骰以随机决定补丁种类。",
 				{
 					"type": "table",
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
 					"colLabels": [
 						"1d100",
 						"补丁"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
 					],
 					"rows": [
 						[
@@ -58983,13 +59001,13 @@
 				{
 					"type": "table",
 					"caption": "法杖碎片",
-					"colStyles": [
-						"col-2",
-						"col-10"
-					],
 					"colLabels": [
 						"碎片",
 						"法术"
+					],
+					"colStyles": [
+						"col-2",
+						"col-10"
 					],
 					"rows": [
 						[
@@ -60526,6 +60544,7 @@
 			"rarity": "none",
 			"entries": [
 				{
+					"type": "table",
 					"caption": "来自索隆娜的饰品",
 					"colLabels": [
 						"d8",
@@ -60568,8 +60587,7 @@
 							"8",
 							"一套杯子和球玩具；当你成功将球接进杯中时，你会感到一阵短暂的快乐"
 						]
-					],
-					"type": "table"
+					]
 				}
 			],
 			"miscTags": [
@@ -60661,6 +60679,7 @@
 			"ENG_name": "Scarlet Spellbook",
 			"name": "猩红法术书",
 			"source": "AUD",
+			"page": 119,
 			"rarity": "rare",
 			"reqAttune": "由法师",
 			"reqAttuneTags": [
@@ -61619,6 +61638,7 @@
 			"rarity": "none",
 			"entries": [
 				{
+					"type": "table",
 					"caption": "二手便宜货",
 					"colLabels": [
 						"d8",
@@ -61661,8 +61681,7 @@
 							"8",
 							"一尊锈蚀怪的玻璃小雕像"
 						]
-					],
-					"type": "table"
+					]
 				}
 			],
 			"miscTags": [
@@ -61711,11 +61730,13 @@
 			"name": "沧穹先知会饰品",
 			"type": "G|XPHB",
 			"source": "AU",
+			"page": 109,
 			"rarity": "none",
 			"entries": [
 				{
 					"type": "table",
 					"caption": "沧穹先知会饰品",
+					"page": 109,
 					"colLabels": [
 						"{@dice 1d6}",
 						"饰品"
@@ -62347,13 +62368,13 @@
 				},
 				{
 					"type": "table",
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
 					"colLabels": [
 						"d6",
 						"厄运"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
 					],
 					"rows": [
 						[
@@ -62700,11 +62721,13 @@
 			"name": "庇护之手饰品",
 			"type": "G|XPHB",
 			"source": "AU",
+			"page": 113,
 			"rarity": "none",
 			"entries": [
 				{
 					"type": "table",
 					"caption": "庇护之手饰品",
+					"page": 113,
 					"colLabels": [
 						"{@dice 1d6}",
 						"饰品"
@@ -63882,6 +63905,7 @@
 			"entries": [
 				"当你创建角色投掷起始饰品时，你能投掷银毫饰品表而不是{@book 玩家手册|PHB}中的{@item 饰品|phb|饰品表}。",
 				{
+					"type": "table",
 					"caption": "银毫饰品",
 					"colLabels": [
 						"d6",
@@ -63916,8 +63940,7 @@
 							"6",
 							"一叠小羊皮纸，每一张都附了魔能够贴在任意平面上，而且能被轻易的撕下"
 						]
-					],
-					"type": "table"
+					]
 				}
 			],
 			"miscTags": [
@@ -64215,13 +64238,13 @@
 				{
 					"type": "table",
 					"caption": "魔法投石索弹丸",
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
 					"colLabels": [
 						"d4",
 						"弹丸"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
 					],
 					"rows": [
 						[
@@ -66409,13 +66432,13 @@
 						"如果湮灭法球与位面传送门（如{@spell 异界之门|XPHB}制造的传送门）或是异位面空间（如次元洞内部）接触，则由DM根据下表随机决定发生的事件：",
 						{
 							"type": "table",
-							"colStyles": [
-								"col-2 text-center",
-								"col-10"
-							],
 							"colLabels": [
 								"1d100",
 								"结果"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
 							],
 							"rows": [
 								[
@@ -66673,13 +66696,13 @@
 				"通灵板具有3充能，并在每日黎明时重获1已消耗的充能。施展法术时，你可以召唤死者灵魂引导占卜板在木板表面滑动，并通过指向木板上的字母或单词来回答你的问题。触摸占卜板期间，你可以花费1分钟施展一个法术，能施展的法术与所需充能如下表所示。",
 				{
 					"type": "table",
-					"colStyles": [
-						"col-10",
-						"col-2 text-center"
-					],
 					"colLabels": [
 						"法术",
 						"消耗充能"
+					],
+					"colStyles": [
+						"col-10",
+						"col-2 text-center"
 					],
 					"rows": [
 						[
@@ -66713,6 +66736,7 @@
 			"ENG_name": "Spirit-Binding Censer",
 			"name": "缚灵香炉",
 			"source": "AUD",
+			"page": 120,
 			"rarity": "artifact",
 			"reqAttune": true,
 			"wondrous": true,
@@ -66732,13 +66756,13 @@
 				{
 					"type": "table",
 					"caption": "香炉法术",
-					"colStyles": [
-						"col-10",
-						"col-2 text-center"
-					],
 					"colLabels": [
 						"法术",
 						"消耗充能"
+					],
+					"colStyles": [
+						"col-10",
+						"col-2 text-center"
 					],
 					"rows": [
 						[
@@ -67564,13 +67588,13 @@
 						"这根法杖具有10充能。持握此法杖期间，你可以从法杖中施展以下表格中的一道法术，使用你自己的法术豁免DC。施展相应法术所需消耗的充能数如下表所示。",
 						{
 							"type": "table",
-							"colStyles": [
-								"col-10",
-								"col-2 text-center"
-							],
 							"colLabels": [
 								"法术",
 								"消耗充能"
+							],
+							"colStyles": [
+								"col-10",
+								"col-2 text-center"
 							],
 							"rows": [
 								[
@@ -67812,13 +67836,13 @@
 						"这根法杖具有10充能。持握此法杖期间，你可以从法杖中施展以下表格中的一道法术，使用你自己的法术豁免DC。施展相应法术所需消耗的充能数如下表所示。",
 						{
 							"type": "table",
-							"colStyles": [
-								"col-10",
-								"col-2 text-center"
-							],
 							"colLabels": [
 								"法术",
 								"消耗充能"
+							],
+							"colStyles": [
+								"col-10",
+								"col-2 text-center"
 							],
 							"rows": [
 								[
@@ -67968,13 +67992,13 @@
 				"这根法杖具有10充能。持握这根法杖期间，你可以从法杖中施展以下表格中的一道法术，使用你自己的施法属性调整值。施展相应法术所需消耗的充能数如下表所示。",
 				{
 					"type": "table",
-					"colStyles": [
-						"col-10",
-						"col-2 text-center"
-					],
 					"colLabels": [
 						"法术",
 						"消耗充能"
+					],
+					"colStyles": [
+						"col-10",
+						"col-2 text-center"
 					],
 					"rows": [
 						[
@@ -68198,13 +68222,13 @@
 						"持握此法杖期间，你可以从法杖中施展以下表格中的一道法术，使用你自己的法术豁免DC。施展相应法术所需消耗的充能数如下表所示。",
 						{
 							"type": "table",
-							"colStyles": [
-								"col-10",
-								"col-2 text-center"
-							],
 							"colLabels": [
 								"法术",
 								"消耗充能"
+							],
+							"colStyles": [
+								"col-10",
+								"col-2 text-center"
 							],
 							"rows": [
 								[
@@ -68564,13 +68588,13 @@
 						"持握这根法杖期间，你可以从法杖中施展以下表格中的一道法术，使用你自己的法术豁免DC。施展相应法术所需消耗的充能数如下表所示。",
 						{
 							"type": "table",
-							"colStyles": [
-								"col-10",
-								"col-2 text-center"
-							],
 							"colLabels": [
 								"法术",
 								"消耗充能"
+							],
+							"colStyles": [
+								"col-10",
+								"col-2 text-center"
 							],
 							"rows": [
 								[
@@ -68774,7 +68798,7 @@
 		},
 		{
 			"ENG_name": "Staff of the Ivory Claw",
-			"name": "象牙之爪法杖",
+			"name": "象牙爪杖",
 			"source": "EGW",
 			"page": 270,
 			"rarity": "rare",
@@ -69036,13 +69060,13 @@
 						"持握此法杖期间，你可以从法杖中施展以下表格中的一道法术，使用你自己的法术豁免DC。施展相应法术所需消耗的充能数如下表所示。",
 						{
 							"type": "table",
-							"colStyles": [
-								"col-10",
-								"col-2 text-center"
-							],
 							"colLabels": [
 								"法术",
 								"消耗充能"
+							],
+							"colStyles": [
+								"col-10",
+								"col-2 text-center"
 							],
 							"rows": [
 								[
@@ -69312,6 +69336,7 @@
 			"name": "灵魂庇护法杖",
 			"type": "M|XPHB",
 			"source": "AUD",
+			"page": 120,
 			"resist": [
 				"necrotic"
 			],
@@ -69340,6 +69365,7 @@
 						"持握该{@item 法杖|XPHB}期间，你可以执行{@action 魔法|XPHB}动作，使其散发出超自然之力，充满一处源自你的30尺{@variantrule 光环 [效应区域]|XPHB|光环}区域。该{@variantrule 光环 [效应区域]|XPHB|光环}内你选择的生物（包括你自己）获得以下增益：",
 						{
 							"type": "list",
+							"style": "list-hang-notitle",
 							"items": [
 								{
 									"ENG_name": "Undead Deterrent",
@@ -69353,8 +69379,7 @@
 									"type": "item",
 									"entry": "它们具有寒冷、暗蚀和心灵伤害的{@variantrule 抗性|XPHB}，并且它们为避免或结束{@condition 恐慌|XPHB}状态而进行的豁免检定具有{@variantrule 优势|XPHB}。"
 								}
-							],
-							"style": "list-hang-notitle"
+							]
 						},
 						"该{@variantrule 光环 [效应区域]|XPHB|光环}持续1小时，或直至你结束它（无需动作）。该词条一经使用，则直至下一黎明前，都无法再次使用。"
 					]
@@ -69503,13 +69528,13 @@
 						"持握此法杖期间，你可以从法杖中施展以下表格中的一道法术，使用你自己的法术豁免DC。施展相应法术所需消耗的充能数如下表所示。",
 						{
 							"type": "table",
-							"colStyles": [
-								"col-10",
-								"col-2 text-center"
-							],
 							"colLabels": [
 								"法术",
 								"消耗充能"
+							],
+							"colStyles": [
+								"col-10",
+								"col-2 text-center"
 							],
 							"rows": [
 								[
@@ -72803,13 +72828,13 @@
 				{
 					"type": "table",
 					"caption": "望远镜之旅事故",
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
 					"colLabels": [
 						"d6",
 						"事故"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
 					],
 					"rows": [
 						[
@@ -75796,7 +75821,7 @@
 						],
 						[
 							"75-76",
-							"一面小型镜子，照出的人脸比实际年龄苍老得多"
+							"一面小镜子，照出的人脸比实际年龄苍老得多。"
 						],
 						[
 							"77-78",
@@ -78365,13 +78390,13 @@
 						"持握这根魔杖时，你可以从中施展下列表格中的一道法术（豁免{@dc 17}）。施展对应法术所需消耗的充能数如表格所示。",
 						{
 							"type": "table",
-							"colStyles": [
-								"col-10",
-								"col-2 text-center"
-							],
 							"colLabels": [
 								"法术",
 								"消耗充能"
+							],
+							"colStyles": [
+								"col-10",
+								"col-2 text-center"
 							],
 							"rows": [
 								[
@@ -78566,6 +78591,7 @@
 			"name": "注目魔杖",
 			"type": "WD|XDMG",
 			"source": "AUD",
+			"page": 121,
 			"rarity": "uncommon",
 			"reqAttune": "由施法者",
 			"reqAttuneTags": [
@@ -78664,13 +78690,13 @@
 						"持握这根魔杖时，你可以从中施展下列表格中的一道法术（豁免{@dc 15}）。施展对应法术所需消耗的充能数如表格所示。",
 						{
 							"type": "table",
-							"colStyles": [
-								"col-10",
-								"col-2 text-center"
-							],
 							"colLabels": [
 								"法术",
 								"消耗充能"
+							],
+							"colStyles": [
+								"col-10",
+								"col-2 text-center"
 							],
 							"rows": [
 								[
@@ -79270,13 +79296,13 @@
 						"魔杖具有7充能并在每日黎明时重获{@dice 1d4 + 3}已消耗的充能。你可以从中施展下表中的法术（豁免{@dc 18}）。表中表明了你施展对应的法术需要消耗多少充能。",
 						{
 							"type": "table",
-							"colStyles": [
-								"col-10",
-								"col-2 text-center"
-							],
 							"colLabels": [
 								"法术",
 								"消耗充能"
+							],
+							"colStyles": [
+								"col-10",
+								"col-2 text-center"
 							],
 							"rows": [
 								[
@@ -79693,13 +79719,13 @@
 				},
 				{
 					"type": "table",
-					"colStyles": [
-						"col-10",
-						"col-2 text-center"
-					],
 					"colLabels": [
 						"法术",
 						"消耗充能"
+					],
+					"colStyles": [
+						"col-10",
+						"col-2 text-center"
 					],
 					"rows": [
 						[
@@ -80112,13 +80138,13 @@
 					"type": "table",
 					"caption": "惊异魔杖效应",
 					"srd52": true,
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
 					"colLabels": [
 						"1d100",
 						"效应"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
 					],
 					"rows": [
 						[
@@ -81517,15 +81543,15 @@
 				{
 					"type": "table",
 					"caption": "爪之意志吐息武器",
-					"colStyles": [
-						"col-3",
-						"col-7",
-						"col-3 text-center"
-					],
 					"colLabels": [
 						"伤害类型",
 						"区域",
 						"豁免检定"
+					],
+					"colStyles": [
+						"col-3",
+						"col-7",
+						"col-3 text-center"
 					],
 					"rows": [
 						[
@@ -82081,6 +82107,7 @@
 			"entries": [
 				"当你创建角色投掷起始饰品时，你能投掷靡华饰品表而不是{@book 玩家手册|PHB}中的{@item 饰品|phb|饰品表}。",
 				{
+					"type": "table",
 					"caption": "靡华饰品",
 					"colLabels": [
 						"d6",
@@ -82115,8 +82142,7 @@
 							"6",
 							"一条项链，上面有五个小瓶，每个瓶子里都装着发光的白色液体"
 						]
-					],
-					"type": "table"
+					]
 				}
 			],
 			"miscTags": [
@@ -82159,15 +82185,15 @@
 				"区域内未被穿着或携带的非魔法物件同样会受到该伤害。如果圆球所在的封闭区域大于100尺{@variantrule 立方 [效应区域]|XPHB|立方}，则其造成的伤害可以忽略不计。如果在一个开阔区域内启动该圆球，其会以每轮300尺的速度向随机方向飞离。",
 				{
 					"type": "table",
-					"colStyles": [
-						"col-4",
-						"col-4 text-center",
-						"col-4 text-center"
-					],
 					"colLabels": [
 						"区域",
 						"豁免DC",
 						"钝击伤害"
+					],
+					"colStyles": [
+						"col-4",
+						"col-4 text-center",
+						"col-4 text-center"
 					],
 					"rows": [
 						[
@@ -82549,6 +82575,7 @@
 			"rarity": "none",
 			"entries": [
 				{
+					"type": "table",
 					"caption": "来自希恩德瑞克的饰品",
 					"colLabels": [
 						"d8",
@@ -82591,8 +82618,7 @@
 							"8",
 							"一个用贝壳雕成的鲨华鱼人雕像"
 						]
-					],
-					"type": "table"
+					]
 				}
 			],
 			"miscTags": [
@@ -83051,13 +83077,13 @@
 				"着装此护甲期间，你具有一种特定伤害类型的抗性。具体伤害类型由DM选择，或骰骰子在表格中随机决定。",
 				{
 					"type": "table",
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
 					"colLabels": [
 						"d10",
 						"伤害类型"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
 					],
 					"rows": [
 						[
@@ -83134,13 +83160,13 @@
 				"着装此护甲期间，你具有一种特定伤害类型的{@variantrule 抗性|XPHB}。具体伤害类型由DM选择，或骰骰子在表格中随机决定。",
 				{
 					"type": "table",
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
 					"colLabels": [
 						"d10",
 						"伤害类型"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
 					],
 					"rows": [
 						[
@@ -83617,17 +83643,17 @@
 				{
 					"type": "table",
 					"caption": "适用地毯尺寸",
-					"colStyles": [
-						"col-2 text-center",
-						"col-4",
-						"col-3 text-center",
-						"col-3 text-center"
-					],
 					"colLabels": [
 						"1d100",
 						"体型",
 						"容量",
 						"飞行速度"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-4",
+						"col-3 text-center",
+						"col-3 text-center"
 					],
 					"rows": [
 						[
@@ -83684,15 +83710,15 @@
 				{
 					"type": "table",
 					"caption": "色彩玫瑰",
-					"colStyles": [
-						"col-2 text-center",
-						"col-7 text-center",
-						"col-3 text-center"
-					],
 					"colLabels": [
 						"颜色",
 						"视觉效果",
 						"伤害类型"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-7 text-center",
+						"col-3 text-center"
 					],
 					"rows": [
 						[
@@ -84390,13 +84416,13 @@
 										{
 											"type": "table",
 											"caption": "维克那法眼法术",
-											"colStyles": [
-												"col-10",
-												"col-2 text-center"
-											],
 											"colLabels": [
 												"法术",
 												"消耗充能"
+											],
+											"colStyles": [
+												"col-10",
+												"col-2 text-center"
 											],
 											"rows": [
 												[
@@ -84478,13 +84504,13 @@
 										{
 											"type": "table",
 											"caption": "维克那魔掌法术",
-											"colStyles": [
-												"col-10",
-												"col-2 text-center"
-											],
 											"colLabels": [
 												"法术",
 												"消耗充能"
+											],
+											"colStyles": [
+												"col-10",
+												"col-2 text-center"
 											],
 											"rows": [
 												[
@@ -84832,7 +84858,7 @@
 		},
 		{
 			"ENG_name": "Hide of the Feral Guardian",
-			"name": "野性守护者的毛皮",
+			"name": "荒野守卫护甲",
 			"type": "LA",
 			"source": "EGW",
 			"page": 271,
@@ -84848,9 +84874,9 @@
 				"据信这件抛光且细节精美的皮甲是梅洛拉的赠礼，在灾祸之战的恐怖降临前，赐予了一位被遗忘的大德鲁伊和自然世界的勇士。"
 			],
 			"items": [
-				"野性守护者的毛皮（休眠）|EGW",
-				"野性守护者的毛皮（觉醒）|EGW",
-				"野性守护者的毛皮（升华）|EGW"
+				"荒野守卫护甲（休眠）|EGW",
+				"荒野守卫护甲（觉醒）|EGW",
+				"荒野守卫护甲（升华）|EGW"
 			],
 			"attachedSpells": {
 				"daily": {
@@ -84948,17 +84974,17 @@
 				"如果你满足要求，他们对你和你的盟友是{@variantrule 友好【态度】|XPHB|友好}的，并遵循你的命令。",
 				{
 					"type": "table",
-					"colStyles": [
-						"col-2 text-center",
-						"col-2 text-center",
-						"col-2 text-center",
-						"col-6"
-					],
 					"colLabels": [
 						"1d100",
 						"号角类型",
 						"精魂",
 						"要求"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-2 text-center",
+						"col-2 text-center",
+						"col-6"
 					],
 					"rows": [
 						[
@@ -85303,7 +85329,7 @@
 			],
 			"recharge": "dawn",
 			"entries": [
-				"三祈宝珠是分歧遗迹（见\"分歧遗迹\"侧边栏）。在古代，阿波西恩神使佩戴这个护身符作为他与三位主神的契约的象征：塞哈尼月亮编织者、阿瓦兰德拉变化使者和科雷隆大心。当宝珠被发现时，只有塞哈尼的力量在它的休眠心中脉动。其他两位神的力量等待着被英雄\u2014\u2014或英雄们\u2014\u2014重新唤醒，他们可以追随阿波西恩的足迹。"
+				"三祈宝珠是分歧遗迹（见\"分歧遗迹\"侧边栏）。在古代，阿波西恩神使佩戴这个护身符作为他与三位主神的契约的象征：塞哈尼月亮编织者、阿瓦兰德拉变化使者和科瑞隆大心。当宝珠被发现时，只有塞哈尼的力量在它的休眠心中脉动。其他两位神的力量等待着被英雄\u2014\u2014或英雄们\u2014\u2014重新唤醒，他们可以追随阿波西恩的足迹。"
 			],
 			"items": [
 				"三祷之坠（休眠）|CRCotN",
@@ -85536,17 +85562,17 @@
 				"这本魔法书包含了制造特定类型魔像所需的信息和咒语。要解读和使用这本手册，你必须是一个至少拥有两个5环法术位的施法者。一个不能使用魔像手册的生物如果试图阅读它，将会受到{@damage 6d6}点心灵伤害。",
 				{
 					"type": "table",
-					"colStyles": [
-						"col-2 text-center",
-						"col-4",
-						"col-3 text-center",
-						"col-3 text-right"
-					],
 					"colLabels": [
 						"d20",
 						"魔像",
 						"时间",
 						"花费"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-4",
+						"col-3 text-center",
+						"col-3 text-right"
 					],
 					"rows": [
 						[
@@ -85725,6 +85751,7 @@
 			"ENG_name": "Necklace of the Beastly Familiar",
 			"name": "野兽魔宠项链",
 			"source": "AU",
+			"page": 120,
 			"rarity": "varies",
 			"reqAttune": "由施法者",
 			"reqAttuneTags": [
@@ -85972,13 +85999,13 @@
 				"当你喝下这种药剂时，你在1小时内对一种伤害类型具有{@variantrule 抗性|XPHB}。DM选择类型或通过掷以下表格随机确定。",
 				{
 					"type": "table",
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
 					"colLabels": [
 						"d10",
 						"伤害类型"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
 					],
 					"rows": [
 						[
@@ -86189,15 +86216,15 @@
 				{
 					"type": "table",
 					"caption": "夸尔羽符",
-					"colStyles": [
-						"col-2 text-center",
-						"col-5 text-center",
-						"col-5 text-center"
-					],
 					"colLabels": [
 						"1d100",
 						"符",
 						"稀有度"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-5 text-center",
+						"col-5 text-center"
 					],
 					"rows": [
 						[
@@ -86303,15 +86330,15 @@
 				"佩戴这枚戒指期间，你获得对某种类型伤害的抗性。戒指上镶嵌的宝石种类决定抗性的种类，种类由DM选择，或由DM从以下选项中随机选定。",
 				{
 					"type": "table",
-					"colStyles": [
-						"col-2 text-center",
-						"col-5",
-						"col-5"
-					],
 					"colLabels": [
 						"d10",
 						"伤害类型",
 						"宝石"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-5",
+						"col-5"
 					],
 					"rows": [
 						[
@@ -86397,15 +86424,15 @@
 				"当你佩戴这枚戒指时，你对该伤害类型具有{@variantrule 抗性|XPHB}。戒指中的宝石指示了该类型，由DM选择或通过掷骰子在下面的表格中随机确定。",
 				{
 					"type": "table",
-					"colStyles": [
-						"col-2 text-center",
-						"col-5",
-						"col-5"
-					],
 					"colLabels": [
 						"d10",
 						"伤害类型",
 						"宝石"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-5",
+						"col-5"
 					],
 					"rows": [
 						[
@@ -86600,15 +86627,15 @@
 				{
 					"type": "table",
 					"caption": "贤者印记",
-					"colStyles": [
-						"col-2",
-						"col-2",
-						"col-8"
-					],
 					"colLabels": [
 						"印记",
 						"稀有度",
 						"法术"
+					],
+					"colStyles": [
+						"col-2",
+						"col-2",
+						"col-8"
 					],
 					"rows": [
 						[
@@ -86740,13 +86767,13 @@
 				"每个防护卷轴针对特定类型的生物起作用，由DM选择或通过掷骰子在下表中决定。",
 				{
 					"type": "table",
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
 					"colLabels": [
 						"1d100",
 						"生物类型"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
 					],
 					"rows": [
 						[
@@ -86848,13 +86875,13 @@
 				"泰坦对所有其他生物都表现出{@variantrule 敌对【态度】|XPHB|敌对}态度，并在降至0{@variantrule 生命值|XPHB}时消失。如果泰坦被召唤到一个空间不足以容纳它的地方，召唤失败，卷轴被浪费。",
 				{
 					"type": "table",
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
 					"colLabels": [
 						"1d100",
 						"泰坦"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
 					],
 					"rows": [
 						[
@@ -86936,13 +86963,13 @@
 						"这块石头有6点充能，并在每天黎明时恢复{@dice 1d6}点已消耗的充能。碎片独石类型表列出了所有碎片独石共通的法术，以及每种石头特有的法术。作为一个动作，你可以消耗相应的充能点数来施放石头的一个法术，且不需要任何材料成分（豁免{@dc 16}）。",
 						{
 							"type": "table",
-							"colStyles": [
-								"col-2 text-center",
-								"col-10"
-							],
 							"colLabels": [
 								"碎晶挂饰",
 								"法术"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
 							],
 							"rows": [
 								[
@@ -87545,6 +87572,7 @@
 			"name": "逐浪武器",
 			"type": "GV|XDMG",
 			"source": "AU",
+			"page": 129,
 			"rarity": "varies",
 			"reqAttune": true,
 			"property": [

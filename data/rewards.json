@@ -7,7 +7,7 @@
 			"source": "VRGR",
 			"page": 193,
 			"entries": [
-				"这个诅咒保护着一名逝去已久的君主并惩罚任何亵渎遗体或盗窃遗物的人。",
+				"这个诅咒保护着一位逝去已久的统治者的安息之地，并惩罚任何惊扰统治者遗骸或掠夺宝藏的人。",
 				{
 					"type": "entries",
 					"entries": [
@@ -2594,8 +2594,8 @@
 				"这个玩偶是一个微型构装体。摧毁玩偶会导致里面孩子的灵魂被困在{@adventure 灵魂商贩|ToA|5|灵魂商贩}中。",
 				{
 					"type": "statblockInline",
-					"dataType": "object",
-					"data": {
+					"statblockType": "object",
+					"statblockData": {
 						"ENG_name": "Clay No-Face",
 						"name": "无面魔像",
 						"isNpc": true,
@@ -3646,8 +3646,8 @@
 				"这个玩偶是一个微型构装体。摧毁玩偶会导致里面孩子的灵魂被困在{@adventure 灵魂商贩|ToA|5|灵魂商贩}中。",
 				{
 					"type": "statblockInline",
-					"dataType": "object",
-					"data": {
+					"statblockType": "object",
+					"statblockData": {
 						"ENG_name": "Joho",
 						"name": "约霍",
 						"isNpc": true,
@@ -4855,8 +4855,8 @@
 				"这个玩偶是一个微型构装体。摧毁玩偶会导致里面孩子的灵魂被困在{@adventure 灵魂商贩|ToA|5|灵魂商贩}中。",
 				{
 					"type": "statblockInline",
-					"dataType": "object",
-					"data": {
+					"statblockType": "object",
+					"statblockData": {
 						"ENG_name": "Strawbundle",
 						"name": "草包",
 						"isNpc": true,
@@ -5003,6 +5003,7 @@
 			"name": "旅行零食",
 			"type": "Charm",
 			"source": "AU",
+			"page": 113,
 			"additionalSpells": [
 				{
 					"innate": {

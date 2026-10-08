@@ -1,6 +1,6 @@
 {
 	"_meta": {
-		"referenceSources": {
+		"otherSources": {
 			"monster": {
 				"XMM": "AU"
 			}
@@ -299,6 +299,16 @@
 						"{@spell 法师之手|XPHB}",
 						"{@spell 魔法伎俩|XPHB}"
 					],
+					"daily": {
+						"2e": [
+							"{@spell 任意门|XPHB}",
+							"{@spell 探知术|XPHB}"
+						],
+						"1e": [
+							"{@spell 克隆术|XPHB}",
+							"{@spell 铜墙铁壁|XPHB}"
+						]
+					},
 					"ability": "int",
 					"displayAs": "action"
 				},
@@ -416,7 +426,8 @@
 				"R"
 			],
 			"damageTagsSpell": [
-				"L"
+				"L",
+				"O"
 			],
 			"spellcastingTags": [
 				"O"
@@ -851,6 +862,9 @@
 			"type": "monstrosity",
 			"source": "AU",
 			"page": 142,
+			"referenceSources": [
+				"RWG"
+			],
 			"size": [
 				"M"
 			],
@@ -1944,6 +1958,9 @@
 			"type": "monstrosity",
 			"source": "AU",
 			"page": 144,
+			"referenceSources": [
+				"RWG"
+			],
 			"size": [
 				"M"
 			],
@@ -2345,6 +2362,9 @@
 			"type": "construct",
 			"source": "AU",
 			"page": 146,
+			"referenceSources": [
+				"RWG"
+			],
 			"size": [
 				"M"
 			],
@@ -2441,6 +2461,9 @@
 			"type": "construct",
 			"source": "AU",
 			"page": 146,
+			"referenceSources": [
+				"RWG"
+			],
 			"size": [
 				"L"
 			],
@@ -2977,6 +3000,9 @@
 			"type": "humanoid",
 			"source": "AU",
 			"page": 147,
+			"referenceSources": [
+				"RWG"
+			],
 			"size": [
 				"M"
 			],
@@ -3745,13 +3771,14 @@
 			"type": {
 				"type": {
 					"choose": [
-						"天族",
+						"天界语",
 						"邪魔",
 						"亡灵"
 					]
 				}
 			},
 			"source": "AU",
+			"page": 14,
 			"summonedByClass": "魔契师|XPHB",
 			"size": [
 				"S"

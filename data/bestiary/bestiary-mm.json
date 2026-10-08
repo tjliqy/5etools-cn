@@ -11566,6 +11566,8 @@
 					"ENG_name": "Variant Abilities",
 					"name": "变体能力",
 					"type": "inset",
+					"source": "VGM",
+					"page": 12,
 					"entries": [
 						"当眼魔的梦境幻想失控时，会产出一个能力组合独特的不寻常后代。其主眼和眼柄的力量跟普通眼魔有所不同，这个生物将具有一项或更多的变体能力\u2014\u2014保证可以让自以为了解眼魔的任何敌人感到意外。",
 						"该栏目提供了一些对应眼魔眼波的可替换的法术效应。每种效应都设计为与其替换者具有相等的强度等级，以让你创作一个自定义的眼魔而不需要改变该怪物的原挑战等级。作为另一种选择，你可以替换《{@book 怪物图鉴|MM}》中提及的任意伤害性眼波射线的伤害类型，比如你可以将衰弱射线替换为烧灼射线，即以火焰伤害代替原来的暗蚀伤害。",
@@ -11643,8 +11645,6 @@
 							]
 						}
 					],
-					"source": "VGM",
-					"page": 12,
 					"_version": {
 						"ENG_name": "Beholder (Variant Abilities)",
 						"name": "眼魔（变体能力）",
@@ -11772,7 +11772,7 @@
 					"ENG_name": "Undead Fortitude",
 					"name": "不死坚韧",
 					"entries": [
-						"当僵尸因受非光耀非重击伤害而使其生命值减至0时，它必须进行一次DC为5＋所受伤害值的体质豁免，豁免成功则生命值降至1。"
+						"当空骸丧尸因受非光耀非重击伤害而使其生命值减至0时，它必须进行一次DC为5＋所受伤害值的体质豁免，豁免成功则生命值降至1。"
 					]
 				}
 			],
@@ -12075,7 +12075,7 @@
 					"ENG_name": "Bite",
 					"name": "啃咬",
 					"entries": [
-						"{@atk mw} 命中{@hit 4}，触及 5 尺，单一目标。{@h}5（{@damage 1d6 + 2}）点穿刺伤害。"
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}5（{@damage 1d6 + 2}）点穿刺伤害。"
 					]
 				},
 				{
@@ -14963,7 +14963,7 @@
 					"ENG_name": "Fire Ray",
 					"name": "火焰射线",
 					"entries": [
-						"{@atk rs} 命中{@hit 7}，射程120尺，单一目标。{@h}10点（{@damage 3d6}）点火焰伤害。"
+						"{@atk rs} 命中{@hit 7}，射程120尺，单一目标。{@h}10（{@damage 3d6}）点火焰伤害。"
 					]
 				},
 				{
@@ -14979,6 +14979,8 @@
 					"ENG_name": "Demonic Cambions",
 					"name": "恶魔坎比翁",
 					"type": "variant",
+					"source": "MTF",
+					"page": 32,
 					"entries": [
 						"极少数恶魔与凡人相结合，而其中的魅惑与欲望之类经常赋予他们的坎比翁子孙邪魔魅惑Fiendish Charm能力。巴弗灭和奥喀斯的邪教徒们也能以腐化的仪式将他们主子的力量融入进一名年轻或者未出世的孩子中，产生出一名能使用特殊能力的邪教勇者Cult Champion。一名奥喀斯的坎比翁将邪魔魅惑替换为墓穴降生Spawn of the Grave，而一名巴菲门特的坎比翁则替换为魔角者之呼唤Horned",
 						{
@@ -14998,14 +15000,14 @@
 								"同时，该坎比翁可以用他的天生施法特性每天使用三次{@spell 活化死尸}。"
 							]
 						}
-					],
-					"source": "MTF",
-					"page": 32
+					]
 				},
 				{
 					"ENG_name": "Infernal Cambions",
 					"name": "地狱坎比翁",
 					"type": "variant",
+					"source": "MTF",
+					"page": 21,
 					"entries": [
 						"某些魔鬼赋予坎比翁们独特的能力来取代祂们原有的邪魔魅力（Fiendish Charm）特性，扎瑞尔（Zariel）和格殷永（Geryon）热衷于培养混血坎比翁以期在战争中的统率祂们的追随者。他们二人给予坎比翁们以\"九狱之怒\"能力取代邪魔魅力。",
 						{
@@ -15016,9 +15018,7 @@
 								"以一个附赠动作，坎比翁选择120尺内可以看到或听到它的另一个生物，该生物在下一分钟内获得所有攻击检定和豁免检定的优势，持续1分钟或者直到该坎比翁再次使用此技能。"
 							]
 						}
-					],
-					"source": "MTF",
-					"page": 21
+					]
 				}
 			],
 			"environment": [
@@ -16810,6 +16810,8 @@
 					"ENG_name": "New Giant Options",
 					"name": "新的巨人选项",
 					"type": "variant",
+					"source": "SKT",
+					"page": 245,
 					"entries": [
 						"一些成年云巨人拥有在自己周围制造能够阻挡来袭投射物的强风屏障的魔法能力。其他一些则喜欢把敌人抛向空中。这些能力由以下动作选项体现。",
 						{
@@ -16833,9 +16835,7 @@
 						"ENG_name": "Cloud Giant (Optional Actions)",
 						"name": "云巨人（可选动作）",
 						"addHeadersAs": "动作"
-					},
-					"source": "SKT",
-					"page": 245
+					}
 				}
 			],
 			"environment": [
@@ -17786,7 +17786,7 @@
 			"wis": 10,
 			"cha": 4,
 			"senses": [
-				"30 尺盲视感官，该感官范围之外则视为目盲状态。"
+				"盲视30尺（此范围外则视为目盲）"
 			],
 			"passive": 10,
 			"immune": [
@@ -21763,7 +21763,7 @@
 					"ENG_name": "Shortsword",
 					"name": "短剑",
 					"entries": [
-						"{@atk mw} 命中{@hit 4}，触及 5 尺，单一目标。{@h}5（{@damage 1d6 + 2}）点穿刺伤害。"
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}5（{@damage 1d6 + 2}）点穿刺伤害。"
 					]
 				},
 				{
@@ -26468,6 +26468,8 @@
 					"ENG_name": "New Giant Options",
 					"name": "新的巨人选项",
 					"type": "variant",
+					"source": "SKT",
+					"page": 245,
 					"entries": [
 						"一些成年火巨人受过围攻要塞据点以及突破敌人防线的训练。这些能力由以下特征体现。",
 						{
@@ -26491,9 +26493,7 @@
 						"ENG_name": "Fire Giant (Optional Actions)",
 						"name": "火巨人（可选动作）",
 						"addHeadersAs": "动作"
-					},
-					"source": "SKT",
-					"page": 245
+					}
 				}
 			],
 			"environment": [
@@ -27747,6 +27747,8 @@
 					"ENG_name": "New Giant Options",
 					"name": "新的巨人选项",
 					"type": "variant",
+					"source": "SKT",
+					"page": 246,
 					"entries": [
 						"一些成年霜巨人是用金属或骨头碎片做成捕网并投掷的熟练猎人。这一能力由以下动作选项体现。",
 						{
@@ -27762,9 +27764,7 @@
 						"ENG_name": "Frost Giant (Optional Actions)",
 						"name": "霜巨人（可选动作）",
 						"addHeadersAs": "动作"
-					},
-					"source": "SKT",
-					"page": 246
+					}
 				}
 			],
 			"environment": [
@@ -28060,7 +28060,7 @@
 					"ENG_name": "Bite",
 					"name": "啃咬",
 					"entries": [
-						"{@atk mw} 命中{@hit 4}，触及 5 尺，单一目标。{@h}5（{@damage 1d6 + 2}）点穿刺伤害。"
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}5（{@damage 1d6 + 2}）点穿刺伤害。"
 					]
 				},
 				{
@@ -28148,7 +28148,7 @@
 			"wis": 1,
 			"cha": 1,
 			"senses": [
-				"30 尺盲视感官，该感官范围之外则视为目盲状态。"
+				"盲视30尺（此范围外则视为目盲）"
 			],
 			"passive": 5,
 			"immune": [
@@ -35145,6 +35145,9 @@
 							"headerEntries": [
 								"当鬼婆集会的三名成员互相在30尺范围内时，它们都可以施放以下法师法术并共享所使用的法术位："
 							],
+							"footerEntries": [
+								"施展这些法术时，每个鬼婆都作为12级的施法者，其施法能力基于智力。法术豁免DC为12＋该鬼婆的智力调整值，法术攻击加值为4＋该鬼婆的智力调整值。"
+							],
 							"spells": {
 								"1": {
 									"slots": 4,
@@ -35188,10 +35191,7 @@
 										"{@spell 摄心目光}"
 									]
 								}
-							},
-							"footerEntries": [
-								"施展这些法术时，每个鬼婆都作为12级的施法者，其施法能力基于智力。法术豁免DC为12＋该鬼婆的智力调整值，法术攻击加值为4＋该鬼婆的智力调整值。"
-							]
+							}
 						},
 						{
 							"ENG_name": "Hag Eye",
@@ -35784,7 +35784,7 @@
 					"ENG_name": "Beak",
 					"name": "喙啄",
 					"entries": [
-						"{@atk mw} 命中{@hit 4}，触及 5 尺，单一目标。{@h}5（{@damage 1d6 + 2}）点穿刺伤害。"
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}5（{@damage 1d6 + 2}）点穿刺伤害。"
 					]
 				}
 			],
@@ -37822,6 +37822,8 @@
 					"ENG_name": "New Giant Options",
 					"name": "新的巨人选项",
 					"type": "variant",
+					"source": "SKT",
+					"page": 246,
 					"entries": [
 						"一些成年山丘巨人喜欢用自己的身体飞扑较小的敌人，并把敌人压在自己的大块头之下。这一能力由以下动作选项体现。",
 						{
@@ -37837,9 +37839,7 @@
 						"ENG_name": "Hill Giant (Optional Actions)",
 						"name": "山丘巨人（可选动作）",
 						"addHeadersAs": "动作"
-					},
-					"source": "SKT",
-					"page": 246
+					}
 				}
 			],
 			"environment": [
@@ -40010,7 +40010,7 @@
 			"trait": [
 				{
 					"ENG_name": "Detect Sentience",
-					"name": "侦测知性",
+					"name": "侦测知觉",
 					"entries": [
 						"噬脑怪可以感知并定位其周边300尺内任何智力为3或更高的生物。该侦测可以穿透屏障，但无法侦测受法术{@spell 心灵屏障}保护的生物。"
 					]
@@ -43362,7 +43362,7 @@
 					"ENG_name": "Bite",
 					"name": "啃咬",
 					"entries": [
-						"{@atk mw} 命中{@hit 4}，触及 5 尺，单一目标。{@h}5（{@damage 1d6 + 2}）点穿刺伤害。"
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}5（{@damage 1d6 + 2}）点穿刺伤害。"
 					]
 				},
 				{
@@ -43383,7 +43383,7 @@
 					"ENG_name": "Spiked Shield",
 					"name": "刺盾",
 					"entries": [
-						"{@atk mw} 命中{@hit 4}，触及 5 尺，单一目标。{@h}5（{@damage 1d6 + 2}）点穿刺伤害。"
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}5（{@damage 1d6 + 2}）点穿刺伤害。"
 					]
 				}
 			],
@@ -45409,7 +45409,7 @@
 					"ENG_name": "Amphibious",
 					"name": "水陆两栖",
 					"entries": [
-						"迈罗人鱼可在水里和空气中呼吸。"
+						"梅洛可在水里和空气中呼吸。"
 					]
 				}
 			],
@@ -47512,6 +47512,8 @@
 					"ENG_name": "Zuggtomoy's Empowerment",
 					"name": "祖格莫伊的强化",
 					"type": "variant",
+					"source": "OotA",
+					"page": 228,
 					"entries": [
 						"拥护{@creature 祖格莫伊|MTF}的蕈人开发出全新极具破环性的孢子类型。成年蕈人可以使用以下孢子效果中的两种。",
 						{
@@ -47543,9 +47545,7 @@
 						"ENG_name": "Myconid Adult (Additional Spore Effects)",
 						"name": "蕈人成体（附加孢子效果）",
 						"addHeadersAs": "动作"
-					},
-					"source": "OotA",
-					"page": 228
+					}
 				}
 			],
 			"environment": [
@@ -47698,6 +47698,8 @@
 					"ENG_name": "Zuggtomoy's Empowerment",
 					"name": "祖格莫伊的强化",
 					"type": "variant",
+					"source": "OotA",
+					"page": 228,
 					"entries": [
 						"拥护{@creature 祖格莫伊|MTF}的蕈人开发出全新极具破环性的孢子类型。成年蕈人可以使用以下孢子效果中的两种。蕈人王可以使用下列所有孢子效果。",
 						{
@@ -47729,9 +47731,7 @@
 						"ENG_name": "Myconid Sovereign (Additional Spore Effects)",
 						"name": "蕈人王（附加孢子效果）",
 						"addHeadersAs": "动作"
-					},
-					"source": "OotA",
-					"page": 228
+					}
 				}
 			],
 			"environment": [
@@ -48367,6 +48367,9 @@
 							"headerEntries": [
 								"当鬼婆集会的三名成员互相在30尺范围内时，它们都可以施放以下法师法术并共享所使用的法术位："
 							],
+							"footerEntries": [
+								"施展这些法术时，每个鬼婆都作为12级的施法者，其施法能力基于智力。法术豁免DC为12＋该鬼婆的智力调整值，法术攻击加值为4＋该鬼婆的智力调整值。"
+							],
 							"spells": {
 								"1": {
 									"slots": 4,
@@ -48410,10 +48413,7 @@
 										"{@spell 摄心目光}"
 									]
 								}
-							},
-							"footerEntries": [
-								"施展这些法术时，每个鬼婆都作为12级的施法者，其施法能力基于智力。法术豁免DC为12＋该鬼婆的智力调整值，法术攻击加值为4＋该鬼婆的智力调整值。"
-							]
+							}
 						},
 						{
 							"ENG_name": "Hag Eye",
@@ -49635,7 +49635,7 @@
 					"ENG_name": "Undead Fortitude",
 					"name": "不死坚韧",
 					"entries": [
-						"当僵尸因受非光耀非重击伤害而使其生命值减至0时，它必须进行一次DC为5＋所受伤害值的体质豁免，豁免成功则生命值降至1。"
+						"当空骸丧尸因受非光耀非重击伤害而使其生命值减至0时，它必须进行一次DC为5＋所受伤害值的体质豁免，豁免成功则生命值降至1。"
 					]
 				}
 			],
@@ -50950,7 +50950,7 @@
 					"ENG_name": "Bite",
 					"name": "啃咬",
 					"entries": [
-						"{@atk mw} 命中{@hit 4}，触及 5 尺，单一目标。{@h}5（{@damage 1d6 + 2}）点穿刺伤害。"
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}5（{@damage 1d6 + 2}）点穿刺伤害。"
 					]
 				},
 				{
@@ -53632,7 +53632,7 @@
 			"wis": 6,
 			"cha": 1,
 			"senses": [
-				"30 尺盲视感官，该感官范围之外则视为目盲状态。"
+				"盲视30尺（此范围外则视为目盲）"
 			],
 			"passive": 8,
 			"immune": [
@@ -57246,7 +57246,7 @@
 					"ENG_name": "Shortsword",
 					"name": "短剑",
 					"entries": [
-						"{@atk mw} 命中{@hit 4}，触及 5 尺，单一目标。{@h}5（{@damage 1d6 + 2}）点穿刺伤害。"
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}5（{@damage 1d6 + 2}）点穿刺伤害。"
 					]
 				},
 				{
@@ -57429,6 +57429,9 @@
 							"headerEntries": [
 								"当鬼婆集会的三名成员互相在30尺范围内时，它们都可以施放以下法师法术并共享所使用的法术位："
 							],
+							"footerEntries": [
+								"施展这些法术时，每个鬼婆都作为12级的施法者，其施法能力基于智力。法术豁免DC为12＋该鬼婆的智力调整值，法术攻击加值为4＋该鬼婆的智力调整值。"
+							],
 							"spells": {
 								"1": {
 									"slots": 4,
@@ -57472,10 +57475,7 @@
 										"{@spell 摄心目光}"
 									]
 								}
-							},
-							"footerEntries": [
-								"施展这些法术时，每个鬼婆都作为12级的施法者，其施法能力基于智力。法术豁免DC为12＋该鬼婆的智力调整值，法术攻击加值为4＋该鬼婆的智力调整值。"
-							]
+							}
 						},
 						{
 							"ENG_name": "Hag Eye",
@@ -58337,7 +58337,7 @@
 			"wis": 3,
 			"cha": 1,
 			"senses": [
-				"30 尺盲视感官，该感官范围之外则视为目盲状态。"
+				"盲视30尺（此范围外则视为目盲）"
 			],
 			"passive": 6,
 			"conditionImmune": [
@@ -58717,7 +58717,7 @@
 					"ENG_name": "Shortsword",
 					"name": "短剑",
 					"entries": [
-						"{@atk mw} 命中{@hit 4}，触及 5 尺，单一目标。{@h}5（{@damage 1d6 + 2}）点穿刺伤害。"
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}5（{@damage 1d6 + 2}）点穿刺伤害。"
 					]
 				},
 				{
@@ -60361,14 +60361,14 @@
 					"ENG_name": "Shortsword",
 					"name": "短剑",
 					"entries": [
-						"{@atk mw} 命中{@hit 4}，触及 5 尺，单一目标。{@h}5（{@damage 1d6 + 2}）点穿刺伤害。"
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}5（{@damage 1d6 + 2}）点穿刺伤害。"
 					]
 				},
 				{
 					"ENG_name": "Hand Crossbow",
 					"name": "手弩",
 					"entries": [
-						"{@atk rw} 命中{@hit 4}，射程30/120尺，单一目标。{@h}5 ({@damage 1d6 + 2}) 点穿刺伤害。"
+						"{@atk rw} 命中{@hit 4}，射程30/120尺，单一目标。{@h}5（{@damage 1d6 + 2}）点穿刺伤害。"
 					]
 				}
 			],
@@ -60782,6 +60782,8 @@
 					"ENG_name": "New Giant Options",
 					"name": "新的巨人选项",
 					"type": "variant",
+					"source": "SKT",
+					"page": 246,
 					"entries": [
 						"一些成年石巨人喜欢抓住敌人并把他们抛向空中。他们也能在地上滚动巨石，攻击一条直线上的多个敌人。这些能力由以下动作选项体现。",
 						{
@@ -60805,9 +60807,7 @@
 						"ENG_name": "Stone Giant (Optional Actions)",
 						"name": "石巨人（可选动作）",
 						"addHeadersAs": "动作"
-					},
-					"source": "SKT",
-					"page": 246
+					}
 				}
 			],
 			"environment": [
@@ -61169,6 +61169,8 @@
 					"ENG_name": "New Giant Options",
 					"name": "新的巨人选项",
 					"type": "variant",
+					"source": "SKT",
+					"page": 246,
 					"entries": [
 						"一些成年风暴巨人可以通过他们的身体引导雷鸣之力，并通过震耳欲聋的践踏释放它。这一能力由以下动作选项体现。",
 						{
@@ -61184,9 +61186,7 @@
 						"ENG_name": "Storm Giant (Optional Actions)",
 						"name": "风暴巨人（可选动作）",
 						"addHeadersAs": "动作"
-					},
-					"source": "SKT",
-					"page": 246
+					}
 				}
 			],
 			"environment": [
@@ -62454,7 +62454,7 @@
 					"ENG_name": "Spider Climb",
 					"name": "蛛行",
 					"entries": [
-						"虫群可以在困难表面上爬行。包括倒挂在天花板上活动，且不需要进行任何技能检定。"
+						"集群可以攀爬困难表面，包括倒挂在天花板上，而无需进行属性检定。"
 					]
 				},
 				{
@@ -62987,6 +62987,7 @@
 							"headerEntries": [
 								"螳螂人天生施法属性为智力。螳螂人天生可以施展以下法术而无需任何相应的法术成分。"
 							],
+							"ability": "wis",
 							"will": [
 								"{@spell 法师之手}（手是{@condition 隐形}的)"
 							],
@@ -62998,8 +62999,7 @@
 									"{@spell 朦胧术}",
 									"{@spell 魔化武器}"
 								]
-							},
-							"ability": "wis"
+							}
 						}
 					]
 				}
@@ -64938,7 +64938,7 @@
 					"ENG_name": "Claw",
 					"name": "爪击",
 					"entries": [
-						"{@atk mw} 命中{@hit 8}，触及5尺，单一目标。{@h}9 ({@damage 1d8 + 5}) 点挥砍伤害。"
+						"{@atk mw} 命中{@hit 8}，触及5尺，单一目标。{@h}9（{@damage 1d8 + 5}）点挥砍伤害。"
 					]
 				},
 				{
@@ -66633,7 +66633,7 @@
 			"wis": 3,
 			"cha": 1,
 			"senses": [
-				"30 尺盲视感官，该感官范围之外则视为目盲状态。"
+				"盲视30尺（此范围外则视为目盲）"
 			],
 			"passive": 6,
 			"conditionImmune": [
@@ -68187,14 +68187,14 @@
 					"ENG_name": "Shortsword (Humanoid or Hybrid Form Only)",
 					"name": "短剑（仅类人与半人形态）",
 					"entries": [
-						"{@atk mw} 命中{@hit 4}，触及 5 尺，单一目标。{@h}5（{@damage 1d6 + 2}）点穿刺伤害。"
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}5（{@damage 1d6 + 2}）点穿刺伤害。"
 					]
 				},
 				{
 					"ENG_name": "Hand Crossbow (Humanoid or Hybrid Form Only)",
 					"name": "手弩（仅类人与半人形态）",
 					"entries": [
-						"{@atk rw} 命中{@hit 4}，射程30/120尺，单一目标。{@h}5 ({@damage 1d6 + 2}) 点穿刺伤害。"
+						"{@atk rw} 命中{@hit 4}，射程30/120尺，单一目标。{@h}5（{@damage 1d6 + 2}）点穿刺伤害。"
 					]
 				}
 			],
@@ -74561,7 +74561,7 @@
 					"ENG_name": "Undead Fortitude",
 					"name": "不死坚韧",
 					"entries": [
-						"当僵尸因受非光耀非重击伤害而使其生命值减至0时，它必须进行一次DC为5＋所受伤害值的体质豁免，豁免成功则生命值降至1。"
+						"当空骸丧尸因受非光耀非重击伤害而使其生命值减至0时，它必须进行一次DC为5＋所受伤害值的体质豁免，豁免成功则生命值降至1。"
 					]
 				}
 			],

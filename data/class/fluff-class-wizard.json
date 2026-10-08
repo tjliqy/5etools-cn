@@ -9,6 +9,8 @@
 					"ENG_name": "Wizard",
 					"name": "法师",
 					"type": "section",
+					"source": "PHB",
+					"page": 112,
 					"entries": [
 						"精灵身上的银袍正是其身份象征。只见她凝神闭眼，摒除战场干扰后平静的咏唱法术。随着手指在身前轻盈的舞动，完成的法术结成一枚小小的火焰宝珠直投向敌人的队伍中，转瞬爆发成一片火海吞噬了所有的士兵。",
 						"经过反复认真的检查，人类法师终于在光滑石地板上刻完这幅复杂的法阵。他将铁粉撒过每一条或平直或柔曲的刻线，再念起一串冗长的咒语。而随着咒语完成，法阵中打开一个深邃的洞穴，并带来一股异域的硫磺气味。",
@@ -49,12 +51,12 @@
 								}
 							]
 						}
-					],
-					"page": 112,
-					"source": "PHB"
+					]
 				},
 				{
 					"type": "section",
+					"source": "XGE",
+					"page": 58,
 					"entries": [
 						{
 							"type": "quote",
@@ -304,9 +306,7 @@
 								}
 							]
 						}
-					],
-					"page": 58,
-					"source": "XGE"
+					]
 				}
 			],
 			"images": [
@@ -343,14 +343,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "一位博学的奥术法力使用者",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Wizard.webp"
 					},
-					"credit": "Billy Christian",
 					"width": 1700,
-					"height": 2259
+					"height": 2259,
+					"title": "一位博学的奥术法力使用者",
+					"credit": "Billy Christian"
 				},
 				{
 					"type": "image",
@@ -358,10 +358,10 @@
 						"type": "internal",
 						"path": "classes/XPHB/120-04-035.elf-queen-yolande.webp"
 					},
-					"title": "精灵女王悠兰德（Yolande）施展法术\"悠兰德王者威仪（Yolande's Regal Presence）\"用以震慑红龙",
-					"credit": "April Prime",
 					"width": 2037,
-					"height": 1440
+					"height": 1440,
+					"title": "精灵女王悠兰德（Yolande）施展法术\"悠兰德王者威仪（Yolande's Regal Presence）\"用以震慑红龙",
+					"credit": "April Prime"
 				},
 				{
 					"type": "image",
@@ -369,9 +369,9 @@
 						"type": "internal",
 						"path": "classes/XPHB/121-04-036.wizard-book.webp"
 					},
-					"credit": "Jane Katsubo",
 					"width": 1934,
-					"height": 731
+					"height": 731,
+					"credit": "Jane Katsubo"
 				},
 				{
 					"type": "image",
@@ -379,10 +379,10 @@
 						"type": "internal",
 						"path": "classes/XPHB/122-04-037.wizard-leomund.webp"
 					},
-					"title": "法师李欧蒙（Leomund）研读法术书，准备他的魔法",
-					"credit": "Michele Giorgi",
 					"width": 2155,
-					"height": 1440
+					"height": 1440,
+					"title": "法师李欧蒙（Leomund）研读法术书，准备他的魔法",
+					"credit": "Michele Giorgi"
 				}
 			]
 		}
@@ -502,14 +502,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "防护师子职",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Abjurer Wizard.webp"
 					},
-					"credit": "Caroline Gariba",
 					"width": 1071,
-					"height": 1440
+					"height": 1440,
+					"title": "防护师子职",
+					"credit": "Caroline Gariba"
 				}
 			]
 		},
@@ -523,14 +523,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "预言师子职",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Diviner Wizard.webp"
 					},
-					"credit": "Jodie Muir",
 					"width": 850,
-					"height": 1725
+					"height": 1725,
+					"title": "预言师子职",
+					"credit": "Jodie Muir"
 				}
 			]
 		},
@@ -544,14 +544,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "塑能师子职",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Evoker Wizard.webp"
 					},
-					"credit": "Caroline Gariba",
 					"width": 803,
-					"height": 1440
+					"height": 1440,
+					"title": "塑能师子职",
+					"credit": "Caroline Gariba"
 				}
 			]
 		},
@@ -565,14 +565,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "幻术师子职",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Illusionist Wizard.webp"
 					},
-					"credit": "Polar Engine",
 					"width": 850,
-					"height": 2211
+					"height": 2211,
+					"title": "幻术师子职",
+					"credit": "Polar Engine"
 				}
 			]
 		},
@@ -590,9 +590,9 @@
 						"type": "internal",
 						"path": "classes/FRHoF/Bladesinger Wizard.webp"
 					},
-					"credit": "Erion Makuo",
 					"width": 850,
-					"height": 2375
+					"height": 2375,
+					"credit": "Erion Makuo"
 				}
 			]
 		},
@@ -619,10 +619,10 @@
 						"type": "internal",
 						"path": "classes/AU/Conjurer Wizard.webp"
 					},
-					"title": "咒法法师",
-					"credit": "Ignatius Budi",
 					"width": 850,
-					"height": 2213
+					"height": 2213,
+					"title": "咒法法师",
+					"credit": "Ignatius Budi"
 				}
 			]
 		},
@@ -649,10 +649,10 @@
 						"type": "internal",
 						"path": "classes/AU/Enchanter Wizard.webp"
 					},
-					"title": "惑控法师",
-					"credit": "Gaboleps",
 					"width": 850,
-					"height": 2139
+					"height": 2139,
+					"title": "惑控法师",
+					"credit": "Gaboleps"
 				}
 			]
 		},
@@ -679,10 +679,10 @@
 						"type": "internal",
 						"path": "classes/AU/Necromancer Wizard.webp"
 					},
-					"title": "死灵法师",
-					"credit": "Jordan Kerbow",
 					"width": 850,
-					"height": 1955
+					"height": 1955,
+					"title": "死灵法师",
+					"credit": "Jordan Kerbow"
 				}
 			]
 		},
@@ -709,10 +709,10 @@
 						"type": "internal",
 						"path": "classes/AU/Transmuter Wizard.webp"
 					},
-					"title": "变化法师",
-					"credit": "Michele Giorgi",
 					"width": 850,
-					"height": 2077
+					"height": 2077,
+					"title": "变化法师",
+					"credit": "Michele Giorgi"
 				}
 			]
 		}

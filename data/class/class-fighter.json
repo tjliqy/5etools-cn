@@ -1937,6 +1937,7 @@
 			"source": "AU",
 			"className": "战士",
 			"classSource": "XPHB",
+			"page": 9,
 			"edition": "one",
 			"spellcastingAbility": "int",
 			"additionalSpells": [
@@ -2798,7 +2799,7 @@
 			"header": 1,
 			"entries": [
 				"{@i 3级回音骑士特性}",
-				"你能使用附赠动作，魔法性的在你周围15尺内的一处未被占据的可见空间内，显现出一个你自身的回音。该回音是魔法性的、半透明的、形如你的灰色形象。回音将一直存在，直到被摧毁、你以一个附赠动作将其消解、显现另一个回音、或你陷入{@condition 失能}状态为止。",
+				"你能使用附赠动作，魔法性的在你周围15尺内的一处未被占据的可见空间内，显现出一个你自身的回音。该回音是魔法性的、半透明的、形如你的黑白形象。回音将一直存在，直到被摧毁、你以一个附赠动作将其消解、显现另一个回音、或你陷入{@condition 失能}状态为止。",
 				"你的回音具有等同于 14+你的熟练加值 的AC，其只有1点生命值，但免疫于所有状态。如果回音被迫进行一次豁免，则它使用你的豁免加值。它的体型与你一样，且会占据空间。在你的回合中，你能仅靠思想来命令回音向着任意方向移动至多30尺（无需动作）。在你的回合结束时，如果你与你的回音之间的距离超过30尺，那么它会被摧毁。",
 				"你能用以下方式使用显现出的回音：",
 				{
@@ -4655,6 +4656,7 @@
 			"ENG_name": "Arcane Archer",
 			"name": "魔射手",
 			"source": "AU",
+			"page": 9,
 			"className": "战士",
 			"classSource": "XPHB",
 			"subclassShortName": "魔射手",
@@ -4681,6 +4683,7 @@
 			"ENG_name": "Arcane Archer Lore",
 			"name": "魔箭学识",
 			"source": "AU",
+			"page": 9,
 			"className": "战士",
 			"classSource": "XPHB",
 			"subclassShortName": "魔射手",
@@ -4693,6 +4696,7 @@
 					"ENG_name": "Cantrip",
 					"name": "戏法",
 					"type": "entries",
+					"page": 9,
 					"entries": [
 						"你知晓戏法{@spell 德鲁伊伎俩|XPHB}或{@spell 魔法伎俩|XPHB}其一，智力是你施展该戏法的施法属性。"
 					]
@@ -4701,6 +4705,7 @@
 					"ENG_name": "Skills",
 					"name": "技能",
 					"type": "entries",
+					"page": 9,
 					"entries": [
 						"你获得{@skill 奥秘|XPHB}和{@skill 自然|XPHB}技能的熟练。若你已熟练于其中之一，你改为获得一个你选择的1级战士其他可学技能的熟练（或在熟练于二者时获得两个1级战士其他可学技能的熟练）。"
 					]
@@ -4711,6 +4716,7 @@
 			"ENG_name": "Arcane Shot",
 			"name": "奥术射击",
 			"source": "AU",
+			"page": 9,
 			"className": "战士",
 			"classSource": "XPHB",
 			"subclassShortName": "魔射手",
@@ -4724,6 +4730,7 @@
 					"ENG_name": "Using Arcane Shot",
 					"name": "使用奥术射击",
 					"type": "entries",
+					"page": 9,
 					"entries": [
 						"每回合一次，当你使用具有{@itemProperty AF|XDMG|弹药}词条的武器发动远程攻击时，你可以将一种奥术射击选项赋予此次攻击。除非某选项不涉及到攻击检定，否则你在命中一名生物并对其造成伤害时决定是否使用该选项。",
 						"你可以使用该特性的次数等于你的智力调整值（至少1次）。当你完成{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}时，重获所有已消耗的使用次数。"
@@ -4733,6 +4740,7 @@
 					"ENG_name": "Arcane Shot Die",
 					"name": "奥术射击骰",
 					"type": "entries",
+					"page": 9,
 					"entries": [
 						"奥术射击选项依赖你的奥术射击骰，你的奥术射击骰为{@dice d6}。"
 					]
@@ -4741,6 +4749,7 @@
 					"ENG_name": "Saving Throws",
 					"name": "豁免检定",
 					"type": "entries",
+					"page": 9,
 					"entries": [
 						"若某个奥术射击选项要求进行豁免，其DC等于8加你的智力调整值加你的{@variantrule 熟练|XPHB|熟练加值}。"
 					]
@@ -4749,6 +4758,7 @@
 					"ENG_name": "At Higher Levels",
 					"name": "随级提升",
 					"type": "entries",
+					"page": 9,
 					"entries": [
 						"当你到达一定的战士等级时，你的奥术射击骰将会改变。10级变{@dice d8}，15级变{@dice d10}，18级变{@dice d12}。"
 					]
@@ -4759,6 +4769,7 @@
 			"ENG_name": "Arcane Shot Options",
 			"name": "奥术射击选项",
 			"source": "AU",
+			"page": 9,
 			"className": "战士",
 			"classSource": "XPHB",
 			"subclassShortName": "魔射手",
@@ -4811,6 +4822,7 @@
 			"ENG_name": "Curving Shot",
 			"name": "曲线射击",
 			"source": "AU",
+			"page": 9,
 			"className": "战士",
 			"classSource": "XPHB",
 			"subclassShortName": "魔射手",
@@ -4825,6 +4837,7 @@
 			"ENG_name": "Magical Ammunition",
 			"name": "注魔弹",
 			"source": "AU",
+			"page": 9,
 			"className": "战士",
 			"classSource": "XPHB",
 			"subclassShortName": "魔射手",
@@ -4838,6 +4851,7 @@
 					"ENG_name": "Darkening Ammunition",
 					"name": "暗幕弹",
 					"type": "entries",
+					"page": 9,
 					"entries": [
 						"魔法阴影充满一个源自弹药的15尺{@variantrule 光环 [效应区域]|XPHB|光环}，持续1分钟。{@variantrule 光环 [效应区域]|XPHB|光环}内的非魔法火焰被熄灭，且{@variantrule 光环 [效应区域]|XPHB|光环}内的生物在进行感知（{@skill 察觉|XPHB}）检定时承受-5减值，其{@variantrule 被动察觉|XPHB}也承受-5减值。"
 					]
@@ -4846,6 +4860,7 @@
 					"ENG_name": "Unlocking Ammunition",
 					"name": "解锁弹",
 					"type": "entries",
+					"page": 9,
 					"entries": [
 						"源自弹药的15尺{@variantrule 光环 [效应区域]|XPHB|光环}区域内爆发出一阵魔法能量。弹药还会发出一声响亮的敲击声，其声响最远300尺内都能听见。{@variantrule 光环 [效应区域]|XPHB|光环}区域内任何被一把非魔法锁具锁住的物件其锁具会被解开，被卡死的物件会被松开，被闩住的物件会被打开。若此类物件被多种锁具锁住，则只有其中一把锁会被打开。"
 					]
@@ -4854,6 +4869,7 @@
 					"ENG_name": "Vine Ammunition",
 					"name": "蔓生弹",
 					"type": "entries",
+					"page": 10,
 					"entries": [
 						"从弹药处长出一段120尺长的藤蔓，你和其他生物其后可以在藤蔓上攀爬，藤蔓将在10分钟后枯萎。"
 					]
@@ -4864,6 +4880,7 @@
 			"ENG_name": "Ever-Ready Shot",
 			"name": "有箭无患",
 			"source": "AU",
+			"page": 10,
 			"className": "战士",
 			"classSource": "XPHB",
 			"subclassShortName": "魔射手",
@@ -4878,6 +4895,7 @@
 			"ENG_name": "Indomitable Teleport",
 			"name": "不屈传送",
 			"source": "AU",
+			"page": 10,
 			"className": "战士",
 			"classSource": "XPHB",
 			"subclassShortName": "魔射手",
@@ -4892,6 +4910,7 @@
 			"ENG_name": "Masterful Shots",
 			"name": "宗师射术",
 			"source": "AU",
+			"page": 10,
 			"className": "战士",
 			"classSource": "XPHB",
 			"subclassShortName": "魔射手",

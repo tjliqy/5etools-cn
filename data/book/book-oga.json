@@ -1,214 +1,220 @@
 {
-	"data": [
+	"bookData": [
 		{
-			"ENG_name": "Introduction",
-			"name": "简介",
-			"type": "section",
-			"page": 2,
-			"entries": [
-				"自从2010年我加入D&D团队以来，我就一直在设想一个绿皮侏儒再次成为'一件事'的未来。这些在第二版格雷霍克设定中被长久遗忘的两栖动物早已俘获了我的心和想象力。所以，当我带着一些坚定的决心将它们作为瓦罗的怪物指南中的一部分被选中的生物时。它们当然不是首选，但最终当我们每个人都收到了一个'金票'来给一个生物时。尽管我的同事们嘲笑，对我来说，我的选择很清楚。终身绿皮侏儒！！！",
-				"从那时起，我得到了重新构想它们、重写它们的机会，并将它们包括在任何D&D战役设置中可能存在的生物之中......然后它发生了。有人请我在Annihilation流期间主持一桌玩家。有了将参加的所有明星名人阵容，再加上像Chris Perkins和Mike Mearls这样的超级巨星DM，我必须找到一些能让我与众不同的东西......或者至少向世界证明我只是一个古怪的傻瓜......无论如何对我来说听起来都很棒。这时我大声思考......\"如果我的玩家全都是grung呢？\"剩下的就是历史......和未来。你甚至可以在YouTube上观看。",
-				"我想感谢这些个人......他们都是出色的地下城主，让《湮灭之流》游戏中的格龙栩栩如生。马特·科尔维尔饰演 b'Loop；马克·赫尔姆斯饰演 b'Lip；亚当·科贝尔饰演 b'Lahp；以及纳迪亚·奥蒂科尔饰演 c'Ahbülos......我还要感谢那些在 Twitch 上继续与我一起 'Grung it up!' 的人......萨廷·菲尼克斯饰演 d'Ahten'khan；鲁蒂·鲁滕伯格饰演 b'Leep；劳伦·厄本饰演 b'Ang'r'Ang；特别欢迎我的新玩家......Cig Neutron 饰演白化矮人僧侣 Mee'Yah-Ghee。",
-				"你们让我成为了一个非常开心的地下城主！",
+			"id": "OGA",
+			"source": "OGA",
+			"data": [
 				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/OGA/001.webp"
-					},
-					"width": 941,
-					"height": 975
-				},
-				{
-					"ENG_name": "d'Ahten'khan",
-					"name": "d'Ahten'khan",
+					"ENG_name": "Introduction",
+					"name": "简介",
 					"type": "section",
-					"page": 3,
+					"id": "000",
+					"page": 2,
 					"entries": [
+						"自从2010年我加入D&D团队以来，我就一直在设想一个绿皮侏儒再次成为'一件事'的未来。这些在第二版格雷霍克设定中被长久遗忘的两栖动物早已俘获了我的心和想象力。所以，当我带着一些坚定的决心将它们作为瓦罗的怪物指南中的一部分被选中的生物时。它们当然不是首选，但最终当我们每个人都收到了一个'金票'来给一个生物时。尽管我的同事们嘲笑，对我来说，我的选择很清楚。终身绿皮侏儒！！！",
+						"从那时起，我得到了重新构想它们、重写它们的机会，并将它们包括在任何D&D战役设置中可能存在的生物之中......然后它发生了。有人请我在Annihilation流期间主持一桌玩家。有了将参加的所有明星名人阵容，再加上像Chris Perkins和Mike Mearls这样的超级巨星DM，我必须找到一些能让我与众不同的东西......或者至少向世界证明我只是一个古怪的傻瓜......无论如何对我来说听起来都很棒。这时我大声思考......\"如果我的玩家全都是grung呢？\"剩下的就是历史......和未来。你甚至可以在YouTube上观看。",
+						"我想感谢这些个人......他们都是出色的地下城主，让《湮灭之流》游戏中的格龙栩栩如生。马特·科尔维尔饰演 b'Loop；马克·赫尔姆斯饰演 b'Lip；亚当·科贝尔饰演 b'Lahp；以及纳迪亚·奥蒂科尔饰演 c'Ahbülos......我还要感谢那些在 Twitch 上继续与我一起 'Grung it up!' 的人......萨廷·菲尼克斯饰演 d'Ahten'khan；鲁蒂·鲁滕伯格饰演 b'Leep；劳伦·厄本饰演 b'Ang'r'Ang；特别欢迎我的新玩家......Cig Neutron 饰演白化矮人僧侣 Mee'Yah-Ghee。",
+						"你们让我成为了一个非常开心的地下城主！",
 						{
-							"type": "entries",
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/OGA/001.webp"
+							},
+							"width": 941,
+							"height": 975
+						},
+						{
+							"ENG_name": "d'Ahten'khan",
+							"name": "d'Ahten'khan",
+							"type": "section",
+							"id": "001",
+							"page": 3,
 							"entries": [
 								{
-									"ENG_name": "5th-level Grung Monk Courtier",
-									"name": "5级Grung武僧侍从",
 									"type": "entries",
-									"page": 3,
+									"id": "002",
 									"entries": [
-										"{@i 散打宗}",
-										"作为一名橙色格隆，d'Ahten'khan是该群体中最高阶层的成员，也是其战略领袖。d'Ahten'khan不是最博学的格隆，他过去严重依赖c'Ahbülos来获取相关信息和传说，直到红格隆不幸在巴提里手中丧生。",
-										"d'Ahten'khan现在依赖于b'Ang'r'Ang，她完全信任他来传达她的命令给b'Leep，一位绿色的荣格侦察兵，也是她小队中最后一位成员。由于b'Leep的地位远低于她，d'Ahten'khan永远不会直接与这位低种姓的荣格交流。",
-										"作为一群曾经成功的格龙的领袖，d'Ahten'khan 发展出了贵族的志向，并且很难不向任何愿意倾听的有价值的格龙过度传达这些想法。",
 										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "book/OGA/002.webp"
-											},
-											"width": 291,
-											"height": 498
+											"ENG_name": "5th-level Grung Monk Courtier",
+											"name": "5级Grung武僧侍从",
+											"type": "entries",
+											"id": "003",
+											"page": 3,
+											"entries": [
+												"{@i 散打宗}",
+												"作为一名橙色格隆，d'Ahten'khan是该群体中最高阶层的成员，也是其战略领袖。d'Ahten'khan不是最博学的格隆，他过去严重依赖c'Ahbülos来获取相关信息和传说，直到红格隆不幸在巴提里手中丧生。",
+												"d'Ahten'khan现在依赖于b'Ang'r'Ang，她完全信任他来传达她的命令给b'Leep，一位绿色的荣格侦察兵，也是她小队中最后一位成员。由于b'Leep的地位远低于她，d'Ahten'khan永远不会直接与这位低种姓的荣格交流。",
+												"作为一群曾经成功的格龙的领袖，d'Ahten'khan 发展出了贵族的志向，并且很难不向任何愿意倾听的有价值的格龙过度传达这些想法。",
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "book/OGA/002.webp"
+													},
+													"width": 291,
+													"height": 498
+												}
+											]
 										}
-									],
-									"id": "003"
+									]
 								}
-							],
-							"id": "002"
-						}
-					],
-					"id": "001"
-				},
-				{
-					"ENG_name": "b'Ang'r'Ang",
-					"name": "b'Ang'r'Ang",
-					"type": "section",
-					"page": 3,
-					"entries": [
+							]
+						},
 						{
-							"type": "entries",
+							"ENG_name": "b'Ang'r'Ang",
+							"name": "b'Ang'r'Ang",
+							"type": "section",
+							"id": "004",
+							"page": 3,
 							"entries": [
 								{
-									"ENG_name": "5th-level Grung Rogue Outlander",
-									"name": "5级绿皮侏儒流氓荒野游侠",
 									"type": "entries",
-									"page": 3,
+									"id": "005",
 									"entries": [
-										"{@i 策士}",
-										"作为一个更高种姓的猎人和紫色格隆，b'Ang'r'Ang是战术上的、勇敢的领导者，并且是b'Lip、b'Loop、b'Leep和b'Lahp的忠诚导师。作为团队中最有责任心的一员，她承担着对她绿色表亲的责任，这之前导致了与b'Lip的冲突，因为b'Lip更喜欢先行动再思考。",
-										"认识到自己在grung等级制度中的地位，b'Ang'r'Ang负责与兄弟们一起执行由d'Ahten'khan制定的'计划'，d'Ahten'khan依赖b'Ang'r'Ang向地位更低的绿色grung传达指令。在最近的一次batiri地精伏击之后，grung团队四散逃走，b'Lip、b'Loop和b'Lahp的下落仍然不明。",
 										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "book/OGA/003.webp"
-											},
-											"width": 416,
-											"height": 498
+											"ENG_name": "5th-level Grung Rogue Outlander",
+											"name": "5级绿皮侏儒流氓荒野游侠",
+											"type": "entries",
+											"id": "006",
+											"page": 3,
+											"entries": [
+												"{@i 策士}",
+												"作为一个更高种姓的猎人和紫色格隆，b'Ang'r'Ang是战术上的、勇敢的领导者，并且是b'Lip、b'Loop、b'Leep和b'Lahp的忠诚导师。作为团队中最有责任心的一员，她承担着对她绿色表亲的责任，这之前导致了与b'Lip的冲突，因为b'Lip更喜欢先行动再思考。",
+												"认识到自己在grung等级制度中的地位，b'Ang'r'Ang负责与兄弟们一起执行由d'Ahten'khan制定的'计划'，d'Ahten'khan依赖b'Ang'r'Ang向地位更低的绿色grung传达指令。在最近的一次batiri地精伏击之后，grung团队四散逃走，b'Lip、b'Loop和b'Lahp的下落仍然不明。",
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "book/OGA/003.webp"
+													},
+													"width": 416,
+													"height": 498
+												}
+											]
 										}
-									],
-									"id": "006"
+									]
 								}
-							],
-							"id": "005"
-						}
-					],
-					"id": "004"
-				},
-				{
-					"ENG_name": "b'Leep",
-					"name": "布利普",
-					"type": "section",
-					"page": 3,
-					"entries": [
+							]
+						},
 						{
-							"type": "entries",
+							"ENG_name": "b'Leep",
+							"name": "布利普",
+							"type": "section",
+							"id": "007",
+							"page": 3,
 							"entries": [
 								{
-									"ENG_name": "5th-level Grung Rogue Outlander",
-									"name": "5级绿皮侏儒流氓荒野游侠",
 									"type": "entries",
-									"page": 3,
+									"id": "008",
 									"entries": [
-										"{@i 斥候}",
-										"四只几乎一模一样的绿色格隆之一，b'Leep是和他的兄弟姐妹一起从蛋中孵化长大的。这些格隆从小就被训练成终极的猎人团队。",
-										"安静且有条不紊，b'Leep 体验到的焦虑水平高于平均水平......无处不在。他总是警惕着他人的诡计和陷阱，对处理奇怪的锁和机械装置有着近乎直觉的感觉，并且对丛林及其危险非常了解。他对兄弟姐妹和 b'Ang'r'Ang 非常忠诚。",
 										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "book/OGA/004.webp"
-											},
-											"width": 270,
-											"height": 341
+											"ENG_name": "5th-level Grung Rogue Outlander",
+											"name": "5级绿皮侏儒流氓荒野游侠",
+											"type": "entries",
+											"id": "009",
+											"page": 3,
+											"entries": [
+												"{@i 斥候}",
+												"四只几乎一模一样的绿色格隆之一，b'Leep是和他的兄弟姐妹一起从蛋中孵化长大的。这些格隆从小就被训练成终极的猎人团队。",
+												"安静且有条不紊，b'Leep 体验到的焦虑水平高于平均水平......无处不在。他总是警惕着他人的诡计和陷阱，对处理奇怪的锁和机械装置有着近乎直觉的感觉，并且对丛林及其危险非常了解。他对兄弟姐妹和 b'Ang'r'Ang 非常忠诚。",
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "book/OGA/004.webp"
+													},
+													"width": 270,
+													"height": 341
+												}
+											]
 										}
-									],
-									"id": "009"
+									]
 								}
-							],
-							"id": "008"
-						}
-					],
-					"id": "007"
-				},
-				{
-					"ENG_name": "Mee'Yah-Ghee",
-					"name": "米亚-吉",
-					"type": "section",
-					"page": 4,
-					"entries": [
+							]
+						},
 						{
-							"type": "entries",
+							"ENG_name": "Mee'Yah-Ghee",
+							"name": "米亚-吉",
+							"type": "section",
+							"id": "00a",
+							"page": 4,
 							"entries": [
 								{
-									"ENG_name": "6th-level Albino Dwarf Monk Hermit",
-									"name": "6级白化矮人僧侣隐士",
 									"type": "entries",
-									"page": 4,
+									"id": "00b",
 									"entries": [
-										"{@i 醉拳宗}",
-										"作为耶特普卡协会的忠实成员，米耶-吉大部分时间都泡在南扎路港商人区的各家酒馆里，边喝酒边密切关注城内的种种动向。人们总愿意在一个醉醺醺的白化病矮人身边高谈阔论\u2014\u2014毕竟这矮人似乎连自己名字都记不清。",
-										"多年前，在避世隐居期间，米亚·吉训练了年轻的蛙人达腾·卡恩。当他听说她的军队内部阶层发生了动荡后，米亚·吉深入丛林去寻找他的学生，尽其所能帮助她。",
 										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "book/OGA/005.webp"
-											},
-											"width": 687,
-											"height": 710
-										},
-										{
-											"ENG_name": "Whistle-Stick",
-											"name": "哨棒",
-											"type": "inset",
+											"ENG_name": "6th-level Albino Dwarf Monk Hermit",
+											"name": "6级白化矮人僧侣隐士",
+											"type": "entries",
+											"id": "00c",
 											"page": 4,
 											"entries": [
-												"\"一蛙之上\"的荣格被训练使用这种新的乐器。这是一种带有多个孔洞的空心管，很像长笛。你可以用它演奏音乐以娱乐，但荣格也通过一根结实的绳子（附带）挥舞它来制造声音，这样其他荣格就能通过声音识别彼此的大致位置。此外，知道盗贼隐语的荣格也可以使用哨棒以这种方式进行远距离交流。"
-											],
-											"id": "00d"
+												"{@i 醉拳宗}",
+												"作为耶特普卡协会的忠实成员，米耶-吉大部分时间都泡在南扎路港商人区的各家酒馆里，边喝酒边密切关注城内的种种动向。人们总愿意在一个醉醺醺的白化病矮人身边高谈阔论\u2014\u2014毕竟这矮人似乎连自己名字都记不清。",
+												"多年前，在避世隐居期间，米亚·吉训练了年轻的蛙人达腾·卡恩。当他听说她的军队内部阶层发生了动荡后，米亚·吉深入丛林去寻找他的学生，尽其所能帮助她。",
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "book/OGA/005.webp"
+													},
+													"width": 687,
+													"height": 710
+												},
+												{
+													"ENG_name": "Whistle-Stick",
+													"name": "哨棒",
+													"type": "inset",
+													"id": "00d",
+													"page": 4,
+													"entries": [
+														"\"一蛙之上\"的荣格被训练使用这种新的乐器。这是一种带有多个孔洞的空心管，很像长笛。你可以用它演奏音乐以娱乐，但荣格也通过一根结实的绳子（附带）挥舞它来制造声音，这样其他荣格就能通过声音识别彼此的大致位置。此外，知道盗贼隐语的荣格也可以使用哨棒以这种方式进行远距离交流。"
+													]
+												}
+											]
 										}
-									],
-									"id": "00c"
+									]
 								}
-							],
-							"id": "00b"
+							]
+						},
+						{
+							"ENG_name": "Grung Traits",
+							"name": "格龙特征",
+							"type": "section",
+							"id": "00e",
+							"page": 4,
+							"entries": [
+								"您的{@race 格龙蛙人|OGA}角色拥有一系列与生俱来的能力，这是绿皮侏儒天性的一部分。"
+							]
 						}
-					],
-					"id": "00a"
-				},
-				{
-					"ENG_name": "Grung Traits",
-					"name": "格龙特征",
-					"type": "section",
-					"page": 4,
-					"entries": [
-						"您的{@race 格龙蛙人|OGA}角色拥有一系列与生俱来的能力，这是绿皮侏儒天性的一部分。"
-					],
-					"id": "00e"
-				}
-			],
-			"id": "000"
-		},
-		{
-			"ENG_name": "Credits",
-			"name": "制作组",
-			"type": "section",
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"items": [
-						"由Christopher Lindsay创作",
-						"{@i 格隆保护协会的作者和导演}"
 					]
 				},
 				{
-					"type": "entries",
+					"ENG_name": "Credits",
+					"name": "制作组",
+					"type": "section",
+					"id": "00f",
 					"entries": [
-						"{@note 免责声明：除某个替代角色外，本文件绝不意味着将蛙人（grung）作为《D&D 冒险者联盟》或其他任何憎恶名字带过多撇号的两栖生物的城主所主持战役中的合法可玩种族......没错，如果你对毒素没有免疫力却必须触碰蛙人来治疗它......你需要进行一次豁免检定。}"
-					],
-					"id": "010"
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								"由Christopher Lindsay创作",
+								"{@i 格隆保护协会的作者和导演}"
+							]
+						},
+						{
+							"type": "entries",
+							"id": "010",
+							"entries": [
+								"{@note 免责声明：除某个替代角色外，本文件绝不意味着将蛙人（grung）作为《D&D 冒险者联盟》或其他任何憎恶名字带过多撇号的两栖生物的城主所主持战役中的合法可玩种族......没错，如果你对毒素没有免疫力却必须触碰蛙人来治疗它......你需要进行一次豁免检定。}"
+							]
+						}
+					]
 				}
-			],
-			"id": "00f"
+			]
 		}
 	]
 }

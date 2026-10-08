@@ -1,762 +1,3851 @@
 {
-	"data": [
+	"adventureData": [
 		{
-			"ENG_name": "Introduction",
-			"name": "简介",
-			"type": "section",
-			"page": 4,
-			"id": "000",
-			"entries": [
+			"id": "DrDe-BtS",
+			"source": "DrDe-BtS",
+			"data": [
 				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "adventure/DrDe/000-dragon-delves-cover.webp"
-					},
-					"width": 1701,
-					"height": 2242
-				},
-				{
-					"ENG_name": "Dragons in Dungeons",
-					"name": "地下城中的龙",
+					"ENG_name": "Introduction",
+					"name": "简介",
 					"type": "section",
+					"id": "000",
 					"page": 4,
-					"id": "001",
 					"entries": [
-						"没有什么比集结一群英雄在神秘地下城中对抗强大巨龙更能体现《龙与地下城》的精髓了。无论是50多年前首批踏入幽暗地城的冒险者，还是如今正准备开始第一次冒险的新手玩家，都将被这些经典元素跨越时空的联系在一起。",
-						"{@i 巨龙迷城}是对这一共同传统的颂扬。本书中的十个冒险故事均以盘踞巢穴的龙为核心，专为1至12级角色设计，提供多样挑战\u2014\u2014从击败邪恶之龙到与善良之龙合作，再到应对更复杂的道德困境。作为巨龙巢穴的地城类型丰富多样，既有洞穴群落，也有城市废墟及其他场景。",
-						"地城藏龙处，冒险永不息！"
-					]
-				},
-				{
-					"ENG_name": "Using This Book",
-					"name": "使用本书",
-					"type": "section",
-					"page": 4,
-					"id": "002",
-					"entries": [
-						"类似 {@i 巨龙迷城} 这样的冒险集，用途十分广泛，能满足你带团的各种需求：可作为单次冒险，也可作为长战役中的\"补充内容\"，或是形成系列战役，让角色从1级成长至12级的巅峰结局。",
-						"这些冒险提供了最少备团准备工作的说明（请参见本介绍后文的{@area 运行冒险|009|x}）。",
 						{
-							"ENG_name": "One-Shot Adventure",
-							"name": "单次冒险",
-							"type": "entries",
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "adventure/DrDe/000-dragon-delves-cover.webp"
+							},
+							"width": 1701,
+							"height": 2242
+						},
+						{
+							"ENG_name": "Dragons in Dungeons",
+							"name": "地下城中的龙",
+							"type": "section",
+							"id": "001",
 							"page": 4,
-							"id": "003",
 							"entries": [
-								"也许你是通常会以玩家的身份参与一场正在运行的战役，但你想尝试成为一个地下城主。也许你试图组建一个新的队伍，需要看看玩家们在你开始主持一个完整战役前是如何相处的。也许通常在某个时候带你们游玩的那个主持人生病了或者有了别的安排，但其他玩家都做好了跑团的准备。或者你的队伍可能需要在当前的战役中休息一下或者找个消遣。在提到的这些任何一种情况下，你都可以从本书中选择一个冒险并且运作它。"
+								"没有什么比集结一群英雄在神秘地下城中对抗强大巨龙更能体现《龙与地下城》的精髓了。无论是50多年前首批踏入幽暗地城的冒险者，还是如今正准备开始第一次冒险的新手玩家，都将被这些经典元素跨越时空的联系在一起。",
+								"{@i 巨龙迷城}是对这一共同传统的颂扬。本书中的十个冒险故事均以盘踞巢穴的龙为核心，专为1至12级角色设计，提供多样挑战\u2014\u2014从击败邪恶之龙到与善良之龙合作，再到应对更复杂的道德困境。作为巨龙巢穴的地城类型丰富多样，既有洞穴群落，也有城市废墟及其他场景。",
+								"地城藏龙处，冒险永不息！"
 							]
 						},
 						{
-							"ENG_name": "In an Ongoing Campaign",
-							"name": "在长期战役中",
-							"type": "entries",
+							"ENG_name": "Using This Book",
+							"name": "使用本书",
+							"type": "section",
+							"id": "002",
 							"page": 4,
-							"id": "004",
 							"entries": [
-								"也许你的玩家角色知道他们需要做什么来挫败邪恶 BOSS 的计划，但他们还不够强大，无法实现他们的目标。也许他们刚刚在战役中完成了一个重要的剧情节点，你想让在沉浸于下一幕无法预测的情节之前，让他们舒缓一下节奏。或者他们正在环游世界的旅程中，而你正在寻找一些东西让路途变得有趣\u2014\u2014用一场道中遭遇的简短冒险。或者你还没有为下一场冒险做好准备，所以你需要一条支线！在提到的这些任何一种情况下，你都可以从本书中选择一个冒险作为\"填充章节\"或者分支任务。",
+								"类似 {@i 巨龙迷城} 这样的冒险集，用途十分广泛，能满足你带团的各种需求：可作为单次冒险，也可作为长战役中的\"补充内容\"，或是形成系列战役，让角色从1级成长至12级的巅峰结局。",
+								"这些冒险提供了最少备团准备工作的说明（请参见本介绍后文的{@area 运行冒险|009|x}）。",
 								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "adventure/DrDe/001-00-001.intro-splash.webp"
-									},
-									"width": 850,
-									"height": 2286
+									"ENG_name": "One-Shot Adventure",
+									"name": "单次冒险",
+									"type": "entries",
+									"id": "003",
+									"page": 4,
+									"entries": [
+										"也许你是通常会以玩家的身份参与一场正在运行的战役，但你想尝试成为一个地下城主。也许你试图组建一个新的队伍，需要看看玩家们在你开始主持一个完整战役前是如何相处的。也许通常在某个时候带你们游玩的那个主持人生病了或者有了别的安排，但其他玩家都做好了跑团的准备。或者你的队伍可能需要在当前的战役中休息一下或者找个消遣。在提到的这些任何一种情况下，你都可以从本书中选择一个冒险并且运作它。"
+									]
 								},
-								"当角色的等级合适你想运作的冒险时，只需要描述冒险者们是如何在当前的探险地点结束他们的剧情。而本书的每个冒险开场都带有一个简短的场景描述，例如\"一个临近森林的村庄。\"除了这些基本细节以外，你还可以随意更改这场冒险发生的地理位置以适配你的战役。",
-								"但如果你有时间准备，可以将正在进行的冒险融入你战役的主题和威胁中。你可以修改冒险中人物和地点的名称，使其更契合你的世界；将冒险中的反派与你战役中重要的组织和事件联系起来；并在龙的宝藏中埋下与你战役主题相关的线索。"
+								{
+									"ENG_name": "In an Ongoing Campaign",
+									"name": "在长期战役中",
+									"type": "entries",
+									"id": "004",
+									"page": 4,
+									"entries": [
+										"也许你的玩家角色知道他们需要做什么来挫败邪恶 BOSS 的计划，但他们还不够强大，无法实现他们的目标。也许他们刚刚在战役中完成了一个重要的剧情节点，你想让在沉浸于下一幕无法预测的情节之前，让他们舒缓一下节奏。或者他们正在环游世界的旅程中，而你正在寻找一些东西让路途变得有趣\u2014\u2014用一场道中遭遇的简短冒险。或者你还没有为下一场冒险做好准备，所以你需要一条支线！在提到的这些任何一种情况下，你都可以从本书中选择一个冒险作为\"填充章节\"或者分支任务。",
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "adventure/DrDe/001-00-001.intro-splash.webp"
+											},
+											"width": 850,
+											"height": 2286
+										},
+										"当角色的等级合适你想运作的冒险时，只需要描述冒险者们是如何在当前的探险地点结束他们的剧情。而本书的每个冒险开场都带有一个简短的场景描述，例如\"一个临近森林的村庄。\"除了这些基本细节以外，你还可以随意更改这场冒险发生的地理位置以适配你的战役。",
+										"但如果你有时间准备，可以将正在进行的冒险融入你战役的主题和威胁中。你可以修改冒险中人物和地点的名称，使其更契合你的世界；将冒险中的反派与你战役中重要的组织和事件联系起来；并在龙的宝藏中埋下与你战役主题相关的线索。"
+									]
+								}
 							]
-						}
-					]
-				},
-				{
-					"ENG_name": "Creating a Campaign",
-					"name": "创作战役",
-					"type": "section",
-					"page": 4,
-					"id": "005",
-					"entries": [
-						"这些冒险可以串联成一个完整的以龙为主题的战役。只需引导玩家按书中顺序进行冒险，并在每段冒险结束时基于故事情节给予等级提升，确保他们的角色能应对接下来的挑战。(在最终冒险前无需等级提升。)你也可以使用下列叙事框架将这些冒险彼此联系起来。",
+						},
 						{
-							"ENG_name": "Option 1: Mysterious Patron",
-							"name": "选项1：神秘庇护者",
-							"type": "entries",
+							"ENG_name": "Creating a Campaign",
+							"name": "创作战役",
+							"type": "section",
+							"id": "005",
 							"page": 4,
-							"id": "006",
 							"entries": [
-								"让一位真实身份略显神秘的和善庇护者在新晋冒险者生涯早期就与之结交，并依次派他们去执行每次冒险任务。这位庇护者可能是一位富有魅力的年轻修士、一位和蔼的导师、一个顽皮的小家伙，或是一位糊涂的老者，或许身边还伴随着七只金丝雀或眩目的黄色蝴蝶\u2014\u2014它们实则是上古金龙所化，龙神巴哈姆特的同伴，而巴哈姆特正是庇护者的真实身份。",
-								"或许是预见到他们注定成为强大的英雄，巴哈姆特将这些冒险者置于他象征性的羽翼之下，派遣他们去应对世界各地与龙相关的各类事务，无论大小。当某次冒险最初看似与龙无关（例如\"{@adventure 奥喀斯之命|DrDe-TWoO|1}\"第3章）结果却与龙息息相关时，这位守护者可能会佯装惊讶，但这当然正是巴哈姆特派人物前去调查的原因。",
-								"你可直接按文本使用每个冒险，由角色的赞助者将他们引导至冒险引子的大致方向，且不剧透后续冒险中的任何惊喜。亦可选择让赞助者在早期就向角色透露秘密，告知他们龙将会是他们冒险的特别焦点，并沿途调整部分冒险引子。"
+								"这些冒险可以串联成一个完整的以龙为主题的战役。只需引导玩家按书中顺序进行冒险，并在每段冒险结束时基于故事情节给予等级提升，确保他们的角色能应对接下来的挑战。(在最终冒险前无需等级提升。)你也可以使用下列叙事框架将这些冒险彼此联系起来。",
+								{
+									"ENG_name": "Option 1: Mysterious Patron",
+									"name": "选项1：神秘庇护者",
+									"type": "entries",
+									"id": "006",
+									"page": 4,
+									"entries": [
+										"让一位真实身份略显神秘的和善庇护者在新晋冒险者生涯早期就与之结交，并依次派他们去执行每次冒险任务。这位庇护者可能是一位富有魅力的年轻修士、一位和蔼的导师、一个顽皮的小家伙，或是一位糊涂的老者，或许身边还伴随着七只金丝雀或眩目的黄色蝴蝶\u2014\u2014它们实则是上古金龙所化，龙神巴哈姆特的同伴，而巴哈姆特正是庇护者的真实身份。",
+										"或许是预见到他们注定成为强大的英雄，巴哈姆特将这些冒险者置于他象征性的羽翼之下，派遣他们去应对世界各地与龙相关的各类事务，无论大小。当某次冒险最初看似与龙无关（例如\"{@adventure 奥喀斯之命|DrDe-TWoO|1}\"第3章）结果却与龙息息相关时，这位守护者可能会佯装惊讶，但这当然正是巴哈姆特派人物前去调查的原因。",
+										"你可直接按文本使用每个冒险，由角色的赞助者将他们引导至冒险引子的大致方向，且不剧透后续冒险中的任何惊喜。亦可选择让赞助者在早期就向角色透露秘密，告知他们龙将会是他们冒险的特别焦点，并沿途调整部分冒险引子。"
+									]
+								},
+								{
+									"ENG_name": "Option 2: Brazen Egg",
+									"name": "选项2：赤铜之卵",
+									"type": "entries",
+									"id": "007",
+									"page": 5,
+									"entries": [
+										"从第10章的引言遭遇战\"{@adventure 砂岩城之龙|DrDe-DotSC|1}\"开始战役，以艾德米尔将黄铜之卵托付给角色们作为结束。不过艾德米尔的指示有所不同：她解释说这颗卵必须被\"浸泡\"在十条龙的财宝中（每种色彩龙和金属龙各一条）才能激活其力量。她还暗示这颗卵会引导角色们找到合适的龙巢。事实上，任何在卵15英尺范围内入睡的角色都会做生动的梦，引领他们前往下一个冒险的起点。",
+										"要从龙之宝藏中汲取力量，龙蛋必须在宝藏中待上8小时，被硬币覆盖并被其他物品环绕。然而，一旦被赋能的龙蛋被带入安斯拉德斯的藏宝室（{@adventure 区域H16|DrDe-DotSC|1|H16: 宝藏}，参见第10章），它将达到其全部潜力并开始裂开，如该冒险所述。"
+									]
+								},
+								{
+									"ENG_name": "Option 3: Hoard Magic Items",
+									"name": "选项3：囤积魔法物品",
+									"type": "entries",
+									"id": "008",
+									"page": 5,
+									"entries": [
+										"若你拥有{@book 费资本的巨龙宝库|FTD|4}，书中描述的魔法物品收藏可作为驱使角色寻找更强大、更多样龙类的动力。在前三个冒险中获得下列额外物品奖励：在「{@adventure 日落时分的死神|DrDe-DaS|1}」中获得{@item 覆鳞饰物|FTD}，在「{@adventure 面包师的捉襟见肘|DrDe-BD|1}」中获得{@item 龙器|FTD}，在「{@adventure 奥喀斯之命|DrDe-TWoO|1}」中获得{@item 龙怒武器|FTD}与{@item 龙触法器|FTD}。所有物品在初次获取时为休眠状态，但在后续冒险中可通过浸入龙类宝藏唤醒。"
+									]
+								}
 							]
 						},
 						{
-							"ENG_name": "Option 2: Brazen Egg",
-							"name": "选项2：赤铜之卵",
-							"type": "entries",
-							"page": 5,
-							"id": "007",
+							"ENG_name": "Running the Adventures",
+							"name": "运行冒险",
+							"type": "section",
+							"id": "009",
+							"page": 6,
 							"entries": [
-								"从第10章的引言遭遇战\"{@adventure 砂岩城之龙|DrDe-DotSC|1}\"开始战役，以艾德米尔将黄铜之卵托付给角色们作为结束。不过艾德米尔的指示有所不同：她解释说这颗卵必须被\"浸泡\"在十条龙的财宝中（每种色彩龙和金属龙各一条）才能激活其力量。她还暗示这颗卵会引导角色们找到合适的龙巢。事实上，任何在卵15英尺范围内入睡的角色都会做生动的梦，引领他们前往下一个冒险的起点。",
-								"要从龙之宝藏中汲取力量，龙蛋必须在宝藏中待上8小时，被硬币覆盖并被其他物品环绕。然而，一旦被赋能的龙蛋被带入安斯拉德斯的藏宝室（{@adventure 区域H16|DrDe-DotSC|1|H16: 宝藏}，参见第10章），它将达到其全部潜力并开始裂开，如该冒险所述。"
+								"要运行这些冒险模组，你需要第五版的核心规则书：{@book 玩家手册|XPHB}、{@book 城主指南|XDMG}和{@book 怪物图鉴|XMM}。冒险中提到的法术和装备描述参见{@book 玩家手册|XPHB}，魔法物品详情参阅{@book 城主指南|XDMG}，怪物数据则出现在{@book 怪物图鉴|XMM}。",
+								"本书目录总结了该合集所收录的冒险。每个冒险针对四至六名特定等级的角色设计，但如{@book 城主指南|XDMG}所述，你可以通过调整遭遇中敌人的数量或为小型队伍补充额外资源来适配更大或更小的团队。这些冒险均可发生于你选择的任何世界，只要该地点拥有各冒险开头列出的基本要素即可。",
+								{
+									"ENG_name": "Preparation",
+									"name": "预备",
+									"type": "entries",
+									"id": "00a",
+									"page": 6,
+									"entries": [
+										"本书中的每个冒险都以一个帮助您准备和进行冒险的页面开始。它包括以下要素：",
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"ENG_name": "Key Plot Points",
+													"name": "关键剧情节点",
+													"type": "item",
+													"entry": "冒险故事中关键要素的概要"
+												},
+												{
+													"ENG_name": "Preparation",
+													"name": "预备",
+													"type": "item",
+													"entry": "为开展冒险做准备所需的步骤，包括你可能需要的所有来自{@book 怪物图鉴|XMM}的怪物数据块列表"
+												},
+												{
+													"ENG_name": "Key NPCs",
+													"name": "关键NPCs",
+													"type": "item",
+													"entry": "一张总结了冒险中关键非玩家角色的表格\u2014\u2014包括他们的名字、角色、状态块和位置\u2014\u2014帮助你在游戏过程中追踪他们"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Player Assistance",
+									"name": "玩家助手",
+									"type": "entries",
+									"id": "00b",
+									"page": 6,
+									"entries": [
+										"如{@book 城主指南|XDMG}所述，您可以通过将某些任务委派给其他玩家来简化您作为地下城主（DM）的职责\u2014\u2014特别是当您第一次担任DM时尤为实用。游戏开始前，请与其他玩家共同分配以下任何或全部任务：",
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"ENG_name": "Initiative Tracker",
+													"name": "先攻追踪者",
+													"type": "item",
+													"entry": "在战斗中，一名玩家负责记录角色与怪物的先攻顺序。"
+												},
+												{
+													"ENG_name": "Monster Wranglers",
+													"name": "怪物操手",
+													"type": "item",
+													"entry": "当角色与敌对怪物进入战斗时，由一到两名玩家使用{@book 怪物图鉴|XMM}中的这些数据卡来操控怪物。（两名玩家可共同承担此职责。）"
+												},
+												{
+													"ENG_name": "Rules Consultant",
+													"name": "规则顾问",
+													"type": "item",
+													"entry": "一名玩家根据需要查阅{@book 玩家手册|XPHB}或其他书籍中的规则。"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Adventures for One Character",
+									"name": "单人角色冒险",
+									"type": "entries",
+									"id": "00c",
+									"page": 6,
+									"entries": [
+										"尽管{@book 城主指南|XDMG}解释了如何根据队伍规模调整冒险，但其中三个冒险（在目录中标示）特别适合单人冒险者游玩。这些冒险都包含确保角色面临适当挑战的指示说明。",
+										"这些说明的核心是{@reward 孤勇者祝福|DrDe}，一种增强单人角色属性的超自然赠礼。",
+										{
+											"ENG_name": "Blessing of the Lone Champion",
+											"name": "孤勇者祝福",
+											"type": "statblock",
+											"tag": "reward",
+											"source": "DrDe",
+											"page": 6
+										},
+										"祝福的持续时间为本次冒险的时长。"
+									]
+								},
+								{
+									"ENG_name": "A Draconic History",
+									"name": "龙族历史",
+									"type": "inset",
+									"id": "00e",
+									"page": 6,
+									"entries": [
+										"除了十个冒险故事外，本书还包含特别章节，展示了每种龙类的艺术画作，涵盖了《龙与地下城》近50年历史\u2014\u2014从1977年的《怪物手册》直至2025年发行的最新版本。过去五十年间，所有十种龙类的形象都经历了显著演变，但仔细观察这些画作仍能发现传承元素：从蓝龙的鼻角到银龙的冠冕，皆一脉相承。",
+										"艺术家托德·洛克伍德为2000年《龙与地下城》第三版的发布牵头对十种龙类进行了全面修订，其设计基于现实世界动物的解剖结构，并与早期设计保持了某些延续性。除少量变体外，这些设计为D&D的龙类确立了延续二十余年的标准。",
+										"为迎接2025年《{@book 怪物图鉴|XMM}》的发行，艺术指导乔什·赫尔曼在D&D进入第二个半世纪之际，主导了对所有巨龙形象的全面翻新。本次重新设计旨在通过外观突显每条巨龙的独特身份\u2014\u2014包括个性、偏好栖息地和战斗风格\u2014\u2014确保每种龙类的视觉辨识度得以彰显。",
+										"同样地，本书着重展示了以某一类巨龙为主题的冒险会如何与其他冒险体验截然不同。"
+									]
+								}
 							]
 						},
 						{
-							"ENG_name": "Option 3: Hoard Magic Items",
-							"name": "选项3：囤积魔法物品",
-							"type": "entries",
-							"page": 5,
-							"id": "008",
+							"ENG_name": "Adventures",
+							"name": "冒险",
+							"type": "section",
+							"id": "00d",
 							"entries": [
-								"若你拥有{@book 费资本的巨龙宝库|FTD|4}，书中描述的魔法物品收藏可作为驱使角色寻找更强大、更多样龙类的动力。在前三个冒险中获得下列额外物品奖励：在「{@adventure 日落时分的死神|DrDe-DaS|1}」中获得{@item 覆鳞饰物|FTD}，在「{@adventure 面包师的捉襟见肘|DrDe-BD|1}」中获得{@item 龙器|FTD}，在「{@adventure 奥喀斯之命|DrDe-TWoO|1}」中获得{@item 龙怒武器|FTD}与{@item 龙触法器|FTD}。所有物品在初次获取时为休眠状态，但在后续冒险中可通过浸入龙类宝藏唤醒。"
+								{
+									"type": "list",
+									"columns": 3,
+									"items": [
+										"{@adventure 日落时分的死神（1级）|DrDe-DaS|1}",
+										"{@adventure 面包师的捉襟见肘（3级）|DrDe-BD|1}",
+										"{@adventure 奥喀斯之命（4级）|DrDe-TWoO|1}",
+										"{@adventure 虚空唤谁而鸣（5级）|DrDe-FWtVC|1}",
+										"{@adventure 纳基凯尔之龙（7级）|DrDe-TDoN|1}",
+										"{@adventure 禁忌谷（9级）|DrDe-TFV|1}",
+										"{@area 风暴将临（10级）|29d|x}",
+										"{@adventure 夺命颤寒（11级）|DrDe-SD|1}",
+										"{@adventure 一枚铜币换一首歌（12级）|DrDe-ACfaS|1}",
+										"{@adventure 砂岩城之龙（12级）|DrDe-DotSC|1}"
+									]
+								}
 							]
 						}
 					]
 				},
 				{
-					"ENG_name": "Running the Adventures",
-					"name": "运行冒险",
+					"ENG_name": "Before the Storm",
+					"name": "风暴将临",
 					"type": "section",
-					"page": 6,
-					"id": "009",
+					"id": "29d",
+					"page": 129,
 					"entries": [
-						"要运行这些冒险模组，你需要第五版的核心规则书：{@book 玩家手册|XPHB}、{@book 城主指南|XDMG}和{@book 怪物图鉴|XMM}。冒险中提到的法术和装备描述参见{@book 玩家手册|XPHB}，魔法物品详情参阅{@book 城主指南|XDMG}，怪物数据则出现在{@book 怪物图鉴|XMM}。",
-						"本书目录总结了该合集所收录的冒险。每个冒险针对四至六名特定等级的角色设计，但如{@book 城主指南|XDMG}所述，你可以通过调整遭遇中敌人的数量或为小型队伍补充额外资源来适配更大或更小的团队。这些冒险均可发生于你选择的任何世界，只要该地点拥有各冒险开头列出的基本要素即可。",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								"{@i {@b An adventure for Level 10 characters.}}",
+								"{@i 该冒险的长度为一至两次团。}",
+								"{@i 它可以发生在任何拥有海滨定居点的地方。}"
+							]
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "adventure/DrDe/127-07-001.chapter-seven-splash.webp"
+							},
+							"width": 1700,
+							"height": 2199,
+							"credit": "Matt Stikker"
+						},
+						{
+							"ENG_name": "Key Plot Points",
+							"name": "关键剧情节点",
+							"type": "section",
+							"id": "29e",
+							"page": 129,
+							"entries": [
+								"下列是本次冒险故事的关键信息：",
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"ENG_name": "Respite Ablaze",
+											"name": "炽焰憩所",
+											"type": "item",
+											"entry": "自称为卵石钩海盗团的匪徒袭击了 {@area 回春|2a1|x}，角色们必须从燃烧的酒馆中救出村民。在村民安全后，暂憩镇的镇长雇佣角色们寻回两颗被盗的魔法宝石\u2014\u2014这些宝石原本保护着暂憩镇免受可怕风暴的侵袭。"
+										},
+										{
+											"ENG_name": "Cobblehook Cove",
+											"name": "鹅卵钩湾",
+											"type": "item",
+											"entry": "角色们必须突袭海盗的老巢 {@area 鹅卵钩湾|2b5|x} 以夺回宝石。在那里，他们发现一条名为暗影之翼的恶龙煽动了海盗们的暴行。在即将到来的风暴摧毁避难所之前，角色们必须与恶龙周旋并归还宝石。"
+										}
+									]
+								}
+							]
+						},
 						{
 							"ENG_name": "Preparation",
 							"name": "预备",
-							"type": "entries",
-							"page": 6,
-							"id": "00a",
-							"entries": [
-								"本书中的每个冒险都以一个帮助您准备和进行冒险的页面开始。它包括以下要素：",
-								{
-									"type": "list",
-									"style": "list-hang-notitle",
-									"items": [
-										{
-											"ENG_name": "Key Plot Points",
-											"name": "关键剧情节点",
-											"type": "item",
-											"entry": "冒险故事中关键要素的概要"
-										},
-										{
-											"ENG_name": "Preparation",
-											"name": "预备",
-											"type": "item",
-											"entry": "为开展冒险做准备所需的步骤，包括你可能需要的所有来自{@book 怪物图鉴|XMM}的怪物数据块列表"
-										},
-										{
-											"ENG_name": "Key NPCs",
-											"name": "关键NPCs",
-											"type": "item",
-											"entry": "一张总结了冒险中关键非玩家角色的表格\u2014\u2014包括他们的名字、角色、状态块和位置\u2014\u2014帮助你在游戏过程中追踪他们"
-										}
-									]
-								}
-							]
-						},
-						{
-							"ENG_name": "Player Assistance",
-							"name": "玩家助手",
-							"type": "entries",
-							"page": 6,
-							"id": "00b",
-							"entries": [
-								"如{@book 城主指南|XDMG}所述，您可以通过将某些任务委派给其他玩家来简化您作为地下城主（DM）的职责\u2014\u2014特别是当您第一次担任DM时尤为实用。游戏开始前，请与其他玩家共同分配以下任何或全部任务：",
-								{
-									"type": "list",
-									"style": "list-hang-notitle",
-									"items": [
-										{
-											"ENG_name": "Initiative Tracker",
-											"name": "先攻追踪者",
-											"type": "item",
-											"entry": "在战斗中，一名玩家负责记录角色与怪物的先攻顺序。"
-										},
-										{
-											"ENG_name": "Monster Wranglers",
-											"name": "怪物操手",
-											"type": "item",
-											"entry": "当角色与敌对怪物进入战斗时，由一到两名玩家使用{@book 怪物图鉴|XMM}中的这些数据卡来操控怪物。（两名玩家可共同承担此职责。）"
-										},
-										{
-											"ENG_name": "Rules Consultant",
-											"name": "规则顾问",
-											"type": "item",
-											"entry": "一名玩家根据需要查阅{@book 玩家手册|XPHB}或其他书籍中的规则。"
-										}
-									]
-								}
-							]
-						},
-						{
-							"ENG_name": "Adventures for One Character",
-							"name": "单人角色冒险",
-							"type": "entries",
-							"page": 6,
-							"id": "00c",
-							"entries": [
-								"尽管{@book 城主指南|XDMG}解释了如何根据队伍规模调整冒险，但其中三个冒险（在目录中标示）特别适合单人冒险者游玩。这些冒险都包含确保角色面临适当挑战的指示说明。",
-								"这些说明的核心是{@reward 孤勇者祝福|DrDe}，一种增强单人角色属性的超自然赠礼。",
-								{
-									"ENG_name": "Blessing of the Lone Champion",
-									"name": "孤勇者祝福",
-									"type": "statblock",
-									"page": 6,
-									"source": "DrDe",
-									"tag": "reward"
-								},
-								"祝福的持续时间为本次冒险的时长。"
-							]
-						},
-						{
-							"ENG_name": "A Draconic History",
-							"name": "龙族历史",
-							"type": "inset",
-							"page": 6,
-							"id": "00e",
-							"entries": [
-								"除了十个冒险故事外，本书还包含特别章节，展示了每种龙类的艺术画作，涵盖了《龙与地下城》近50年历史\u2014\u2014从1977年的《怪物手册》直至2025年发行的最新版本。过去五十年间，所有十种龙类的形象都经历了显著演变，但仔细观察这些画作仍能发现传承元素：从蓝龙的鼻角到银龙的冠冕，皆一脉相承。",
-								"艺术家托德·洛克伍德为2000年《龙与地下城》第三版的发布牵头对十种龙类进行了全面修订，其设计基于现实世界动物的解剖结构，并与早期设计保持了某些延续性。除少量变体外，这些设计为D&D的龙类确立了延续二十余年的标准。",
-								"为迎接2025年《{@book 怪物图鉴|XMM}》的发行，艺术指导乔什·赫尔曼在D&D进入第二个半世纪之际，主导了对所有巨龙形象的全面翻新。本次重新设计旨在通过外观突显每条巨龙的独特身份\u2014\u2014包括个性、偏好栖息地和战斗风格\u2014\u2014确保每种龙类的视觉辨识度得以彰显。",
-								"同样地，本书着重展示了以某一类巨龙为主题的冒险会如何与其他冒险体验截然不同。"
-							]
-						}
-					]
-				},
-				{
-					"ENG_name": "Adventures",
-					"name": "冒险",
-					"type": "section",
-					"entries": [
-						{
-							"type": "list",
-							"columns": 3,
-							"items": [
-								"{@adventure 日落时分的死神（1级）|DrDe-DaS|1}",
-								"{@adventure 面包师的捉襟见肘（3级）|DrDe-BD|1}",
-								"{@adventure 奥喀斯之命（4级）|DrDe-TWoO|1}",
-								"{@adventure 虚空唤谁而鸣（5级）|DrDe-FWtVC|1}",
-								"{@adventure 纳基凯尔之龙（7级）|DrDe-TDoN|1}",
-								"{@adventure 禁忌谷（9级）|DrDe-TFV|1}",
-								"{@area 风暴将临（10级）|29d|x}",
-								"{@adventure 夺命颤寒（11级）|DrDe-SD|1}",
-								"{@adventure 一枚铜币换一首歌（12级）|DrDe-ACfaS|1}",
-								"{@adventure 砂岩城之龙（12级）|DrDe-DotSC|1}"
-							]
-						}
-					],
-					"id": "00d"
-				}
-			]
-		},
-		{
-			"ENG_name": "Before the Storm",
-			"name": "风暴将临",
-			"type": "section",
-			"page": 129,
-			"id": "29d",
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"items": [
-						"{@i {@b An adventure for Level 10 characters.}}",
-						"{@i 该冒险的长度为一至两次团。}",
-						"{@i 它可以发生在任何拥有海滨定居点的地方。}"
-					]
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "adventure/DrDe/127-07-001.chapter-seven-splash.webp"
-					},
-					"credit": "Matt Stikker",
-					"width": 1700,
-					"height": 2199
-				},
-				{
-					"ENG_name": "Key Plot Points",
-					"name": "关键剧情节点",
-					"type": "section",
-					"page": 129,
-					"id": "29e",
-					"entries": [
-						"下列是本次冒险故事的关键信息：",
-						{
-							"type": "list",
-							"style": "list-hang-notitle",
-							"items": [
-								{
-									"ENG_name": "Respite Ablaze",
-									"name": "炽焰憩所",
-									"type": "item",
-									"entry": "自称为卵石钩海盗团的匪徒袭击了 {@area 回春|2a1|x}，角色们必须从燃烧的酒馆中救出村民。在村民安全后，暂憩镇的镇长雇佣角色们寻回两颗被盗的魔法宝石\u2014\u2014这些宝石原本保护着暂憩镇免受可怕风暴的侵袭。"
-								},
-								{
-									"ENG_name": "Cobblehook Cove",
-									"name": "鹅卵钩湾",
-									"type": "item",
-									"entry": "角色们必须突袭海盗的老巢 {@area 鹅卵钩湾|2b5|x} 以夺回宝石。在那里，他们发现一条名为暗影之翼的恶龙煽动了海盗们的暴行。在即将到来的风暴摧毁避难所之前，角色们必须与恶龙周旋并归还宝石。"
-								}
-							]
-						}
-					]
-				},
-				{
-					"ENG_name": "Preparation",
-					"name": "预备",
-					"type": "section",
-					"page": 129,
-					"id": "29f",
-					"entries": [
-						"在开始冒险之前，请按照以下步骤进行准备：",
-						{
-							"type": "list",
-							"style": "list-hang-notitle",
-							"items": [
-								{
-									"ENG_name": "Step 1",
-									"name": "第一步",
-									"type": "item",
-									"entry": "阅读\"{@area 冒险背景|2a0|x}\"与\"{@area 喘息之村|2a1|x}\"部分。可选阅读{@book 城主指南|XDMG}或D&D Beyond上关于气元素位面的描述。"
-								},
-								{
-									"ENG_name": "Step 2",
-									"name": "第二步",
-									"type": "item",
-									"entry": "熟悉下方的{@adventure 关键NPCs|DrDe-BtS|1|关键NPCs}表格。在整个冒险过程中，玩家角色将与这些NPC互动。"
-								},
-								{
-									"ENG_name": "Step 3",
-									"name": "第三步",
-									"type": "item",
-									"entry": "在《{@book 怪物图鉴|XMM}》或D&DBeyond中标记以下的数据卡。"
-								}
-							]
-						},
-						{
-							"type": "list",
-							"columns": 2,
-							"items": [
-								"{@creature 刺客|XMM}",
-								"{@creature 成年黑龙|XMM|黑龙，成年}",
-								"{@creature 斗篷怪|XMM}",
-								"{@creature 平民|XMM}",
-								"{@creature 暗幕魔兽|XMM}",
-								"{@creature 紫腐菌尸聚怪|XMM|真菌，紫腐菌僵尸团}",
-								"{@creature 远古穴居攫怪|XMM}",
-								"{@creature 骑士|XMM}",
-								"{@creature 魔法师|XMM}",
-								"{@creature 贵族|XMM}",
-								"{@creature 石锥怪|XMM}",
-								"{@creature 海盗|XMM}",
-								"{@creature 海盗船长|XMM}",
-								"{@creature 石绳怪|XMM}",
-								"{@creature 打手|XMM}",
-								"{@b 动物}:",
-								{
-									"type": "list",
-									"items": [
-										"{@creature 巨鳄|XMM}",
-										"{@creature 渡鸦|XMM}"
-									],
-									"columns": 3
-								}
-							]
-						},
-						{
-							"ENG_name": "Giant Crocodile",
-							"name": "巨鳄",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Giant Crocodile",
-							"name": "巨鳄",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Raven",
-							"name": "渡鸦",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Raven",
-							"name": "渡鸦",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"type": "table",
-							"caption": "关键NPCs",
+							"type": "section",
+							"id": "29f",
 							"page": 129,
-							"colLabels": [
-								"名称",
-								"职能",
-								"数据卡",
-								"位置"
-							],
-							"colStyles": [
-								"col-3-5",
-								"col-3-5",
-								"col-2-5",
-								"col-2-5"
-							],
-							"rows": [
-								[
-									"{@area 布雷佐·轻风|2ad|x}",
-									"精灵风笛手",
-									"{@creature 平民|XMM} （中型，守序中立）",
-									"\"{@area 营救村民|2a6|x}\""
-								],
-								[
-									"埃德加·布兰德",
-									"死去的海盗船长",
-									"\u2014",
-									"{@area B7|2d7|x}"
-								],
-								[
-									"盖尔·惠顿比",
-									"瑞斯庇特的兽人镇长",
-									"{@creature 贵族|XMM} (中型，守序善良)",
-									"\"{@area 会见市长|2b1|x}\""
-								],
-								[
-									"{@area 内莉达·阿德勒|2ae|x}",
-									"人类酒保",
-									"{@creature 平民|XMM} (中型，守序善良)",
-									"\"{@area 营救村民|2a6|x}\""
-								],
-								[
-									"皮埃尔·卡里松",
-									"海盗的人族厨师",
-									"{@creature 打手|XMM}（中型）",
-									"{@area B4|2cb|x}"
-								],
-								[
-									"{@area 鲁伯特·福雷斯特|2af|x}",
-									"退役人类士兵",
-									"{@creature 骑士|XMM} (中型，混乱善良)",
-									"\"{@area 营救村民|2a6|x}\""
-								],
-								[
-									"黑翼",
-									"新队长接管了{@area 钩石海盗|2b7|x}",
-									"{@creature 成年黑龙|XMM}",
-									"{@area B13|2e6|x}"
-								],
-								[
-									"{@area 瓦特里·惠斯尔鲍姆|2b0|x}",
-									"人类酒馆老板",
-									"{@creature 平民|XMM} (中型，守序善良)",
-									"\"{@area 开始冒险|2a4|x}\""
-								]
+							"entries": [
+								"在开始冒险之前，请按照以下步骤进行准备：",
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"ENG_name": "Step 1",
+											"name": "第一步",
+											"type": "item",
+											"entry": "阅读\"{@area 冒险背景|2a0|x}\"与\"{@area 喘息之村|2a1|x}\"部分。可选阅读{@book 城主指南|XDMG}或D&D Beyond上关于气元素位面的描述。"
+										},
+										{
+											"ENG_name": "Step 2",
+											"name": "第二步",
+											"type": "item",
+											"entry": "熟悉下方的{@adventure 关键NPCs|DrDe-BtS|1|关键NPCs}表格。在整个冒险过程中，玩家角色将与这些NPC互动。"
+										},
+										{
+											"ENG_name": "Step 3",
+											"name": "第三步",
+											"type": "item",
+											"entry": "在《{@book 怪物图鉴|XMM}》或D&DBeyond中标记以下的数据卡。"
+										}
+									]
+								},
+								{
+									"type": "list",
+									"columns": 2,
+									"items": [
+										"{@creature 刺客|XMM}",
+										"{@creature 成年黑龙|XMM|黑龙，成年}",
+										"{@creature 斗篷怪|XMM}",
+										"{@creature 平民|XMM}",
+										"{@creature 暗幕魔兽|XMM}",
+										"{@creature 紫腐菌尸聚怪|XMM|真菌，紫腐菌僵尸团}",
+										"{@creature 远古穴居攫怪|XMM}",
+										"{@creature 骑士|XMM}",
+										"{@creature 魔法师|XMM}",
+										"{@creature 贵族|XMM}",
+										"{@creature 石锥怪|XMM}",
+										"{@creature 海盗|XMM}",
+										"{@creature 海盗船长|XMM}",
+										"{@creature 石绳怪|XMM}",
+										"{@creature 打手|XMM}",
+										"{@b 动物}:",
+										{
+											"type": "list",
+											"columns": 3,
+											"items": [
+												"{@creature 巨鳄|XMM}",
+												"{@creature 渡鸦|XMM}"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Giant Crocodile",
+									"name": "巨鳄",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Giant Crocodile",
+									"name": "巨鳄",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Raven",
+									"name": "渡鸦",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Raven",
+									"name": "渡鸦",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
+								},
+								{
+									"type": "table",
+									"caption": "关键NPCs",
+									"page": 129,
+									"colLabels": [
+										"名称",
+										"职能",
+										"数据卡",
+										"位置"
+									],
+									"colStyles": [
+										"col-3-5",
+										"col-3-5",
+										"col-2-5",
+										"col-2-5"
+									],
+									"rows": [
+										[
+											"{@area 布雷佐·轻风|2ad|x}",
+											"精灵风笛手",
+											"{@creature 平民|XMM} （中型，守序中立）",
+											"\"{@area 营救村民|2a6|x}\""
+										],
+										[
+											"埃德加·布兰德",
+											"死去的海盗船长",
+											"\u2014",
+											"{@area B7|2d7|x}"
+										],
+										[
+											"盖尔·惠顿比",
+											"瑞斯庇特的兽人镇长",
+											"{@creature 贵族|XMM} (中型，守序善良)",
+											"\"{@area 会见市长|2b1|x}\""
+										],
+										[
+											"{@area 内莉达·阿德勒|2ae|x}",
+											"人类酒保",
+											"{@creature 平民|XMM} (中型，守序善良)",
+											"\"{@area 营救村民|2a6|x}\""
+										],
+										[
+											"皮埃尔·卡里松",
+											"海盗的人族厨师",
+											"{@creature 打手|XMM}（中型）",
+											"{@area B4|2cb|x}"
+										],
+										[
+											"{@area 鲁伯特·福雷斯特|2af|x}",
+											"退役人类士兵",
+											"{@creature 骑士|XMM} (中型，混乱善良)",
+											"\"{@area 营救村民|2a6|x}\""
+										],
+										[
+											"黑翼",
+											"新队长接管了{@area 钩石海盗|2b7|x}",
+											"{@creature 成年黑龙|XMM}",
+											"{@area B13|2e6|x}"
+										],
+										[
+											"{@area 瓦特里·惠斯尔鲍姆|2b0|x}",
+											"人类酒馆老板",
+											"{@creature 平民|XMM} (中型，守序善良)",
+											"\"{@area 开始冒险|2a4|x}\""
+										]
+									]
+								}
 							]
-						}
-					]
-				},
-				{
-					"ENG_name": "Adventure Background",
-					"name": "冒险背景",
-					"type": "section",
-					"page": 130,
-					"id": "2a0",
-					"entries": [
-						"多年来，{@area 钩石海盗|2b7|x}一直袭扰航行于乌姆布拉迪海岸的船只，劫掠货物并勒索贡品。然而，直到最近这些海盗还只袭击货船，且极少造成流血冲突。",
-						"当地居民尚不知情，一只名为黑翼的黑龙已夺取了海盗团的控制权。黑翼杀害了海盗首领，以及所有反对其暴虐野心的船员。这头巨龙命令残存的海盗洗劫沿海村落，首个目标便是避风港村庄。",
-						"当这个冒险开始时，避难所正因海盗突袭而陷入混乱。更糟的是，海盗偷走了两颗魔法宝石\u2014\u2014数个世纪以来正是这些宝石防止可怕元素风暴将避难所夷为平地。角色们必须深入海盗巢穴（现已成为黑龙巢穴），在即将到来的风暴袭击这个无防护的村庄前夺回宝石。",
+						},
 						{
-							"ENG_name": "The Village of Respite",
-							"name": "憩息村",
-							"type": "entries",
+							"ENG_name": "Adventure Background",
+							"name": "冒险背景",
+							"type": "section",
+							"id": "2a0",
 							"page": 130,
-							"id": "2a1",
+							"entries": [
+								"多年来，{@area 钩石海盗|2b7|x}一直袭扰航行于乌姆布拉迪海岸的船只，劫掠货物并勒索贡品。然而，直到最近这些海盗还只袭击货船，且极少造成流血冲突。",
+								"当地居民尚不知情，一只名为黑翼的黑龙已夺取了海盗团的控制权。黑翼杀害了海盗首领，以及所有反对其暴虐野心的船员。这头巨龙命令残存的海盗洗劫沿海村落，首个目标便是避风港村庄。",
+								"当这个冒险开始时，避难所正因海盗突袭而陷入混乱。更糟的是，海盗偷走了两颗魔法宝石\u2014\u2014数个世纪以来正是这些宝石防止可怕元素风暴将避难所夷为平地。角色们必须深入海盗巢穴（现已成为黑龙巢穴），在即将到来的风暴袭击这个无防护的村庄前夺回宝石。",
+								{
+									"ENG_name": "The Village of Respite",
+									"name": "憩息村",
+									"type": "entries",
+									"id": "2a1",
+									"page": 130,
+									"entries": [
+										{
+											"type": "gallery",
+											"images": [
+												{
+													"type": "image",
+													"id": "418",
+													"href": {
+														"type": "internal",
+														"path": "adventure/DrDe/128-map-07.01-the-village-of-respite-dm.webp"
+													},
+													"width": 3277,
+													"height": 4096,
+													"imageType": "map",
+													"grid": {
+														"type": "none"
+													},
+													"title": "地图7.1：憩息村",
+													"credit": "Jared Blando"
+												},
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "adventure/DrDe/129-map-07.01-the-village-of-respite-player.webp"
+													},
+													"width": 3277,
+													"height": 4096,
+													"imageType": "mapPlayer",
+													"grid": {
+														"type": "none"
+													},
+													"title": "玩家版本",
+													"credit": "Jared Blando",
+													"mapParent": {
+														"id": "418"
+													}
+												}
+											]
+										},
+										"《地图：瑞斯庇特村》上展示了瑞斯庇特的布局。这个村庄坐落在昂布拉迪海岸边，约有五十名居民，主要是人类、精灵和兽人。在瑞斯庇特附近，物质位面与气元素位面之间的帷幕较薄。因此，许多出生在该镇的居民都具有与气元素位面密切相关的物理特征（详见\"{@area 瑞斯庇特的元素传承|2a3|x}\"边栏）。",
+										"在{@area 钩石海盗|2b7|x}袭击之前， respite 村的生活平静祥和。村民们主要是渔民和工匠。社区菜园补充了村庄的食物供应，而自愿组成的巡逻队仅由少数来自大城市的退役士兵组成。",
+										"村民们尊敬庇护所的市长\u2014\u2014一位名叫盖尔·维滕比的兽人女性，她尽职尽责。",
+										{
+											"ENG_name": "Storm's Eye Weather Vane",
+											"name": "风暴之眼风向标",
+											"type": "entries",
+											"id": "2a2",
+											"page": 130,
+											"entries": [
+												"由于避难所附近位面之间的帷幕稀薄，源自气元素位面的猛烈风暴经常肆虐附近的海岸。很久以前，为了保护村庄，友善的巨灵制造了一件名为「风暴之眼风向标」的装置，并将其安置在村庄广场上。巨灵们将他们的魔法注入两颗{@item 元素宝石，蓝宝石|XDMG|元素宝石（蓝宝石）}中，并将宝石嵌入风向标。这件装置世代守护着避难所免受元素风暴的侵袭。然而，自从碎钩海盗偷走了宝石后，风向标便失去了作用，使得村庄在狂暴天气面前不堪一击\u2014\u2014而一场可怕的风暴预计将于今晚晚些时候来袭。",
+												{
+													"ENG_name": "Respite's Elemental Heritage",
+													"name": "瑞斯庇特的元素传承",
+													"type": "inset",
+													"id": "2a3",
+													"page": 130,
+													"entries": [
+														"气元素位面对瑞斯庇特的居民世世代代产生了深远影响。因此，许多在此镇出生的人都表现出该位面原生生物常见的生理特征，例如蓝色皮肤、在幻风中飘动的头发，或是闪烁雷电弧光的眼睛。本冒险中涉及相关角色时会详述这些特征。"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Beginning the Adventure",
+							"name": "开始冒险",
+							"type": "section",
+							"id": "2a4",
+							"page": 130,
+							"entries": [
+								"角色们清晨在{@area 回春|2a1|x}开始，莫克鱼怪酒馆近在眼前。在冒险开始前，询问玩家们为何他们的角色会在此处。例如，角色们可能是当地人。或者他们或许是听闻该区域栖息着一头黑龙的猎龙人，决心铲除这一威胁。",
+								"开始冒险时，请大声朗读或转述以下内容：",
+								{
+									"type": "insetReadaloud",
+									"id": "2a5",
+									"page": 130,
+									"entries": [
+										"海滨村庄「憩息」陷入混乱。一群名为「鹅卵石钩号」的海盗\u2014\u2014通常不会如此暴力的麻烦制造者们\u2014\u2014洗劫了村庄。黑烟从建筑中滚滚涌出，嘶嘶作响的酸液溪流顺着街道流淌。村民们四处奔逃，呼喊着亲人的名字，奋力控制灾情。岸边附近，一栋低矮建筑的窗口窜出火舌，一位蓝色皮肤的人类老妇人站在正门前拼命挥手。\"着火了！\"她喊道，\"还有人困在里面！\"其他村民惊慌失措无暇顾及\u2014\u2014只有你注意到了！"
+									]
+								},
+								"年长的人类是瓦特里·惠斯尔鲍姆（中型，中立善良{@creature 平民|XMM}），燃烧中的莫克鱼怪酒馆所有者。角色的反应可能是进入酒馆解救被困村民，或是努力扑灭大火。",
+								{
+									"ENG_name": "Rescue the Villagers",
+									"name": "营救村民",
+									"type": "entries",
+									"id": "2a6",
+									"page": 130,
+									"entries": [
+										"如果角色们进入了莫克鱼怪酒馆，朗读或转述以下内容：",
+										{
+											"type": "insetReadaloud",
+											"id": "2a7",
+											"page": 130,
+											"entries": [
+												"酒馆内烟雾弥漫。桌椅尽毁，房梁如牙签般断裂。一名棕发男子在无风自动的发丝间徒劳地试图将腿从塌陷的横梁下挣脱。黑发女子瘫倒在吧台上纹丝不动，厨房门后传来惊慌的哭喊与撞击声。"
+											]
+										},
+										"角色们可以尝试营救陷入危险的村民。与此同时，外面的路人终于听到瓦特里的呼喊，开始向火海泼水。",
+										{
+											"ENG_name": "Trapped under the Beam",
+											"name": "被困于横梁之下",
+											"type": "entries",
+											"id": "2a8",
+											"page": 131,
+											"entries": [
+												"精灵乐手{@area 布雷佐·轻风|2ad|x}（中型，守序中立{@creature 平民|XMM}）以其风笛演奏和色彩斑斓的马裤著称，此刻正被压在倒塌的房梁下。角色可采取{@action 操作|XPHB}动作进行{@dc 12}力量（{@skill 运动|XPHB}）检定，成功抬起横梁即可解救布雷佐。"
+											]
+										},
+										{
+											"ENG_name": "Unconscious on the Bar",
+											"name": "在酒吧昏迷",
+											"type": "entries",
+											"id": "2a9",
+											"page": 131,
+											"entries": [
+												"酒馆的人类酒保{@area 内莉达·阿德勒|2ae|x}（中型，中立善良{@creature 平民|XMM}）瘫软在吧台上。一名海盗用空酒瓶砸中了内莉达的头部。她并未受伤但处于{@condition 昏迷|XPHB}状态。角色可以抱起内莉达离开建筑；到达室外时她会苏醒。或者角色可以采取{@action 协助|XPHB}动作摇晃唤醒内莉达，她会尽可能快地跌跌撞撞逃出燃烧的酒馆。"
+											]
+										},
+										{
+											"ENG_name": "Stuck in the Kitchen",
+											"name": "困在厨房里",
+											"type": "entries",
+											"id": "2aa",
+											"page": 131,
+											"entries": [
+												"{@area 鲁伯特·福雷斯特|2af|x} 是一名魁梧的人类退役士兵（中型，混乱善良阵营的{@creature 骑士|XMM}）。一名海盗将鲁伯特推入厨房，并重重摔门导致门框变形。角色可以采取{@action 操作|XPHB}动作，通过一次成功的{@dc 15}力量（{@skill 运动|XPHB}）检定强行撞开变形的门。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Fight the Fire",
+									"name": "与火抗争",
+									"type": "entries",
+									"id": "2ab",
+									"page": 131,
+									"entries": [
+										"如果角色们待在酒馆外，他们可以通过以下方式扑灭火势：",
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"ENG_name": "Bucket Brigade",
+													"name": "水桶阵",
+													"type": "item",
+													"entry": "角色可以使用{@action 影响|XPHB}动作来号召其他路人和码头工人。通过一次成功的{@dc 12}魅力（{@skill 威吓|XPHB}或{@skill 游说|XPHB}）检定，村民们会组成人链从海中传递水桶来灭火。"
+												},
+												{
+													"ENG_name": "Magic",
+													"name": "魔法",
+													"type": "item",
+													"entry": "由{@spell 造水术/枯水术|XPHB}（使用至少3环法术位施展）或类似效果创造的水可以浇灭火焰。"
+												}
+											]
+										},
+										"当角色们这么做时，其他无私的村民们冲进燃烧的酒馆去营救被困的村民。"
+									]
+								},
+								{
+									"ENG_name": "Amid the Ashes",
+									"name": "灰烬之中",
+									"type": "entries",
+									"id": "2ac",
+									"page": 131,
+									"entries": [
+										"火焰熄灭，村民获救后，现场再度恢复平静。角色们可以与那些被救出的感激村民交谈。每位村民都持友好态度，对角色们深表感谢，并乐意提供他们所知的信息。",
+										"如果角色们在这场危机中没有采取任何行动，大火将被扑灭；然而，{@area 布雷佐|2ad|x}、{@area 内莉达|2ae|x}和{@area 鲁伯特|2af|x}会葬身火海。这种情况下，{@area 瓦特里|2b0|x}会对角色们充满敌意且拒绝与他们交谈。",
+										{
+											"ENG_name": "Brezo",
+											"name": "布雷佐",
+											"type": "entries",
+											"id": "2ad",
+											"page": 131,
+											"entries": [
+												"当海盗突袭{@area 回春|2a1|x}时，布雷佐正在酒馆外对晨间人群演奏风笛。袭击期间，布雷佐目睹一条眉带伤疤的黑龙掠过村庄上空，喷射酸液洪流。就在海盗破门而入纵火焚烧前，布雷佐及时逃进了酒馆内。"
+											]
+										},
+										{
+											"ENG_name": "Nelida",
+											"name": "内莉达",
+											"type": "entries",
+											"id": "2ae",
+											"page": 131,
+											"entries": [
+												"酒保听说过那些伴随海盗出现的伤痕累累黑龙的传说。这条龙的名字叫黑翼。旅行者们告诉她一个传言，称黑翼最近杀死了一群人类追随者，因为它觉得这些人类太过无能。据说黑翼已经放弃了它在更内陆城市阿达拉斯郊外的巢穴，现在正在寻找新家。"
+											]
+										},
+										{
+											"ENG_name": "Rubert",
+											"name": "鲁伯特",
+											"type": "entries",
+											"id": "2af",
+											"page": 131,
+											"entries": [
+												"鲁伯特是来自阿达拉思的退伍士兵，对黑翼及其威胁了如指掌。这只巨龙狡诈而残忍。众所周知，黑翼身边常带着三只{@creature 暗幕魔兽|XMM|暗幕魔兽}，能让他通过黑暗帷幕来攻击敌人。"
+											]
+										},
+										{
+											"ENG_name": "Vatri Whistlebaum",
+											"name": "瓦特里·惠斯尔鲍姆",
+											"type": "entries",
+											"id": "2b0",
+											"page": 132,
+											"entries": [
+												"瓦特里·惠斯尔鲍姆在与获救村民交谈后，要求与角色们私下谈话。她告诉角色们，她的孙子皮埃尔·卡里森几个月前加入了{@area 钩石海盗|2b7|x}，追求刺激与冒险。瓦特里坚信只会做饭、缺乏其他技能的皮埃尔与这次袭击毫无关系。她担心皮埃尔此刻正身陷海盗巢穴某处。瓦特里请求角色们救出皮埃尔并带他回家。作为皮埃尔平安归来的回报，她愿意交出珍藏数十年的{@item 吉运之石|XDMG}。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Meeting the Mayor",
+							"name": "会见市长",
+							"type": "section",
+							"id": "2b1",
+							"page": 132,
+							"entries": [
+								"在火焰被扑灭且角色们与任何生还者交谈后，朗读以下内容：",
+								{
+									"type": "insetReadaloud",
+									"id": "2b2",
+									"page": 132,
+									"entries": [
+										"当一位结实强壮、有着如云般白发的兽人女性走近时，人群中传出如释重负的低语声。\"盖尔市长，\"几个旁观者向她点头致意。市长在你们面前停下脚步，仔细打量着你们。\"请跟我来，\"她说道。"
+									]
+								},
+								"如果角色们帮助扑灭了莫克鱼怪酒馆的火灾，市长盖尔·惠滕比（中型，守序善良 {@creature 贵族|XMM}）会对角色们持有友好态度，并为他们所做之事表达感激。如果没有，市长则会持有敌对态度。她会告诉他们是{@area 钩石海盗|2b7|x}在一头黑龙的协助下袭击了村庄，大声质疑什么样的英雄会无视身处危难的无辜者，并建议角色们通过为村庄消除黑龙威胁来赎罪。",
+								"无论哪种情况，她都会带领角色们前往村庄广场。如果角色们跟随她，请宣读或转述以下内容：",
+								{
+									"type": "insetReadaloud",
+									"id": "2b3",
+									"page": 132,
+									"entries": [
+										"镇长将你护送至村庄广场，村民们正聚集在一座锻铁风向标周围。这座20英尺高的结构描绘了一条蛇形生物，其身躯由云雾构成。生物的铁制面容上布满深邃的抓痕，双眼处是两个空洞的眼窝。"
+									]
+								},
+								"镇长解释说，在海盗袭击期间，黑龙从风向标中抓出了两枚{@item 元素宝石，蓝宝石|XDMG|元素宝石（蓝宝石）}。如果她态度友善，会分享上述{@area \"风暴之眼风向标\"|2a2|x}下的所有信息。",
+								"作为调查动作，任何角色都可以检查风向标并进行一次{@dc 17}智力（{@skill 奥秘|XPHB}或{@skill 历史|XPHB}）检定。若成功，该角色会认出图案描绘的是一种原生于气元素位面的生物\u2014\u2014远古风暴。",
+								{
+									"ENG_name": "A Job Offer",
+									"name": "一份雇佣邀约",
+									"type": "entries",
+									"id": "2b4",
+									"page": 132,
+									"entries": [
+										"盖尔市长迫切希望在下一场风暴前找回{@item 元素宝石|XDMG|元素宝石}。她也对此感到担忧，因为科赛尔首领布兰德船长从未袭击过定居点，这使得今晨的突袭成为隐患。她怀疑黑龙与海盗们的新暴行有关。",
+										"梅尔市长向角色提供500金币以潜入{@area 鹅卵钩湾|2b5|x}的海盗藏身处，寻找宝石并将其归还至风向标。她还要求角色尽可能击杀暗翼，但她强调了找回宝石更为重要。",
+										"如果角色们显得缺乏动力且市长盖尔态度友善，她会将报酬提高到800金币\u2014\u2014这是她的全部个人积蓄。市长强调时间紧迫，不容浪费，因为有报告显示今晚将有一场风暴袭击瑞斯庇特。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Cobblehook Cove",
+							"name": "鹅卵钩湾",
+							"type": "section",
+							"id": "2b5",
+							"page": 132,
 							"entries": [
 								{
 									"type": "gallery",
 									"images": [
 										{
 											"type": "image",
+											"id": "419",
 											"href": {
 												"type": "internal",
-												"path": "adventure/DrDe/128-map-07.01-the-village-of-respite-dm.webp"
+												"path": "adventure/DrDe/130-map-07.02-cobblehook-cove-dm.webp"
 											},
-											"imageType": "map",
-											"title": "地图7.1：憩息村",
-											"credit": "Jared Blando",
-											"width": 3277,
+											"hrefThumbnail": {
+												"type": "internal",
+												"path": "adventure/DrDe/thumbnail/130-map-07.02-cobblehook-cove-dm.webp"
+											},
+											"width": 3165,
 											"height": 4096,
-											"id": "418",
+											"imageType": "map",
 											"grid": {
-												"type": "none"
-											}
+												"type": "square",
+												"size": 192,
+												"offsetX": 116,
+												"offsetY": 97,
+												"scale": 5
+											},
+											"title": "地图7.2：鹅卵石钩湾",
+											"credit": "Jared Blando",
+											"mapRegions": [
+												{
+													"area": "2e6",
+													"points": [
+														[
+															643,
+															1087
+														],
+														[
+															723,
+															1152
+														],
+														[
+															824,
+															1218
+														],
+														[
+															884,
+															1277
+														],
+														[
+															918,
+															1327
+														],
+														[
+															999,
+															1311
+														],
+														[
+															1038,
+															1289
+														],
+														[
+															1040,
+															1227
+														],
+														[
+															1048,
+															1174
+														],
+														[
+															1086,
+															1150
+														],
+														[
+															1132,
+															1111
+														],
+														[
+															1161,
+															1073
+														],
+														[
+															1209,
+															1030
+														],
+														[
+															1242,
+															987
+														],
+														[
+															1242,
+															936
+														],
+														[
+															1218,
+															886
+														],
+														[
+															1237,
+															843
+														],
+														[
+															1306,
+															818
+														],
+														[
+															1327,
+															793
+														],
+														[
+															1346,
+															766
+														],
+														[
+															1373,
+															745
+														],
+														[
+															1367,
+															658
+														],
+														[
+															1361,
+															589
+														],
+														[
+															1281,
+															558
+														],
+														[
+															1254,
+															586
+														],
+														[
+															1207,
+															574
+														],
+														[
+															1153,
+															531
+														],
+														[
+															1129,
+															474
+														],
+														[
+															1098,
+															447
+														],
+														[
+															1098,
+															405
+														],
+														[
+															1077,
+															349
+														],
+														[
+															1046,
+															301
+														],
+														[
+															1000,
+															270
+														],
+														[
+															950,
+															246
+														],
+														[
+															918,
+															236
+														],
+														[
+															863,
+															230
+														],
+														[
+															835,
+															230
+														],
+														[
+															811,
+															253
+														],
+														[
+															785,
+															279
+														],
+														[
+															760,
+															302
+														],
+														[
+															712,
+															302
+														],
+														[
+															671,
+															301
+														],
+														[
+															638,
+															323
+														],
+														[
+															584,
+															355
+														],
+														[
+															552,
+															366
+														],
+														[
+															535,
+															398
+														],
+														[
+															513,
+															442
+														],
+														[
+															484,
+															459
+														],
+														[
+															453,
+															472
+														],
+														[
+															424,
+															495
+														],
+														[
+															418,
+															520
+														],
+														[
+															415,
+															577
+														],
+														[
+															438,
+															603
+														],
+														[
+															462,
+															641
+														],
+														[
+															476,
+															687
+														],
+														[
+															468,
+															729
+														],
+														[
+															493,
+															778
+														],
+														[
+															496,
+															843
+														],
+														[
+															484,
+															888
+														],
+														[
+															476,
+															928
+														],
+														[
+															472,
+															960
+														],
+														[
+															489,
+															984
+														],
+														[
+															530,
+															994
+														],
+														[
+															554,
+															1032
+														],
+														[
+															595,
+															1054
+														]
+													]
+												},
+												{
+													"area": "2e4",
+													"points": [
+														[
+															1667,
+															529
+														],
+														[
+															1692,
+															502
+														],
+														[
+															1767,
+															499
+														],
+														[
+															1815,
+															513
+														],
+														[
+															1861,
+															542
+														],
+														[
+															1940,
+															591
+														],
+														[
+															1963,
+															622
+														],
+														[
+															1960,
+															655
+														],
+														[
+															1992,
+															695
+														],
+														[
+															2018,
+															687
+														],
+														[
+															2055,
+															670
+														],
+														[
+															2089,
+															675
+														],
+														[
+															2128,
+															717
+														],
+														[
+															2150,
+															742
+														],
+														[
+															2209,
+															788
+														],
+														[
+															2234,
+															821
+														],
+														[
+															2254,
+															872
+														],
+														[
+															2252,
+															928
+														],
+														[
+															2225,
+															911
+														],
+														[
+															2175,
+															912
+														],
+														[
+															2144,
+															921
+														],
+														[
+															2105,
+															917
+														],
+														[
+															2068,
+															903
+														],
+														[
+															2050,
+															857
+														],
+														[
+															2019,
+															855
+														],
+														[
+															1986,
+															824
+														],
+														[
+															1957,
+															831
+														],
+														[
+															1958,
+															858
+														],
+														[
+															1885,
+															869
+														],
+														[
+															1822,
+															829
+														],
+														[
+															1770,
+															813
+														],
+														[
+															1743,
+															807
+														],
+														[
+															1727,
+															815
+														],
+														[
+															1725,
+															850
+														],
+														[
+															1719,
+															881
+														],
+														[
+															1662,
+															891
+														],
+														[
+															1619,
+															874
+														],
+														[
+															1590,
+															833
+														],
+														[
+															1571,
+															790
+														],
+														[
+															1571,
+															761
+														],
+														[
+															1577,
+															733
+														],
+														[
+															1614,
+															698
+														],
+														[
+															1638,
+															682
+														],
+														[
+															1677,
+															698
+														],
+														[
+															1704,
+															713
+														],
+														[
+															1737,
+															728
+														],
+														[
+															1782,
+															718
+														],
+														[
+															1808,
+															701
+														],
+														[
+															1809,
+															664
+														],
+														[
+															1777,
+															637
+														],
+														[
+															1755,
+															610
+														],
+														[
+															1712,
+															603
+														],
+														[
+															1695,
+															594
+														],
+														[
+															1679,
+															558
+														]
+													]
+												},
+												{
+													"area": "2da",
+													"points": [
+														[
+															2518,
+															1169
+														],
+														[
+															2582,
+															1176
+														],
+														[
+															2614,
+															1164
+														],
+														[
+															2619,
+															1145
+														],
+														[
+															2618,
+															1104
+														],
+														[
+															2618,
+															1066
+														],
+														[
+															2642,
+															1049
+														],
+														[
+															2675,
+															1048
+														],
+														[
+															2728,
+															1049
+														],
+														[
+															2762,
+															1054
+														],
+														[
+															2801,
+															1071
+														],
+														[
+															2824,
+															1095
+														],
+														[
+															2848,
+															1131
+														],
+														[
+															2855,
+															1185
+														],
+														[
+															2843,
+															1207
+														],
+														[
+															2823,
+															1237
+														],
+														[
+															2810,
+															1258
+														],
+														[
+															2781,
+															1284
+														],
+														[
+															2743,
+															1297
+														],
+														[
+															2727,
+															1326
+														],
+														[
+															2695,
+															1386
+														],
+														[
+															2683,
+															1354
+														],
+														[
+															2647,
+															1315
+														],
+														[
+															2602,
+															1277
+														],
+														[
+															2575,
+															1239
+														],
+														[
+															2536,
+															1195
+														]
+													]
+												},
+												{
+													"area": "2d7",
+													"points": [
+														[
+															2727,
+															1465
+														],
+														[
+															2759,
+															1488
+														],
+														[
+															2794,
+															1502
+														],
+														[
+															2819,
+															1534
+														],
+														[
+															2838,
+															1553
+														],
+														[
+															2870,
+															1559
+														],
+														[
+															2906,
+															1574
+														],
+														[
+															2934,
+															1586
+														],
+														[
+															2951,
+															1608
+														],
+														[
+															2973,
+															1644
+														],
+														[
+															2973,
+															1657
+														],
+														[
+															2954,
+															1676
+														],
+														[
+															2928,
+															1704
+														],
+														[
+															2908,
+															1743
+														],
+														[
+															2884,
+															1773
+														],
+														[
+															2841,
+															1809
+														],
+														[
+															2807,
+															1862
+														],
+														[
+															2786,
+															1866
+														],
+														[
+															2764,
+															1887
+														],
+														[
+															2702,
+															1904
+														],
+														[
+															2675,
+															1891
+														],
+														[
+															2696,
+															1848
+														],
+														[
+															2685,
+															1795
+														],
+														[
+															2661,
+															1760
+														],
+														[
+															2647,
+															1745
+														],
+														[
+															2613,
+															1742
+														],
+														[
+															2618,
+															1701
+														],
+														[
+															2623,
+															1680
+														],
+														[
+															2661,
+															1656
+														],
+														[
+															2704,
+															1627
+														],
+														[
+															2716,
+															1601
+														],
+														[
+															2719,
+															1555
+														],
+														[
+															2705,
+															1534
+														],
+														[
+															2719,
+															1502
+														]
+													]
+												},
+												{
+													"area": "2d3",
+													"points": [
+														[
+															1874,
+															1828
+														],
+														[
+															1895,
+															1824
+														],
+														[
+															1936,
+															1821
+														],
+														[
+															1960,
+															1819
+														],
+														[
+															1987,
+															1776
+														],
+														[
+															1994,
+															1735
+														],
+														[
+															1987,
+															1704
+														],
+														[
+															1963,
+															1682
+														],
+														[
+															1956,
+															1644
+														],
+														[
+															1973,
+															1607
+														],
+														[
+															2029,
+															1591
+														],
+														[
+															2076,
+															1567
+														],
+														[
+															2124,
+															1568
+														],
+														[
+															2171,
+															1562
+														],
+														[
+															2191,
+															1548
+														],
+														[
+															2223,
+															1579
+														],
+														[
+															2274,
+															1625
+														],
+														[
+															2300,
+															1637
+														],
+														[
+															2263,
+															1663
+														],
+														[
+															2275,
+															1692
+														],
+														[
+															2306,
+															1712
+														],
+														[
+															2364,
+															1857
+														],
+														[
+															2330,
+															1879
+														],
+														[
+															2261,
+															1899
+														],
+														[
+															2189,
+															1896
+														],
+														[
+															2156,
+															1888
+														],
+														[
+															2121,
+															1920
+														],
+														[
+															2125,
+															1963
+														],
+														[
+															2136,
+															1994
+														],
+														[
+															2161,
+															2043
+														],
+														[
+															2190,
+															2087
+														],
+														[
+															2209,
+															2140
+														],
+														[
+															2209,
+															2296
+														],
+														[
+															2162,
+															2241
+														],
+														[
+															2124,
+															2193
+														],
+														[
+															2069,
+															2162
+														],
+														[
+															2018,
+															2140
+														],
+														[
+															1968,
+															2133
+														],
+														[
+															1939,
+															2119
+														],
+														[
+															1894,
+															2047
+														],
+														[
+															1874,
+															1996
+														],
+														[
+															1838,
+															1960
+														]
+													]
+												},
+												{
+													"area": "2c8",
+													"points": [
+														[
+															737,
+															2466
+														],
+														[
+															769,
+															2442
+														],
+														[
+															813,
+															2404
+														],
+														[
+															856,
+															2362
+														],
+														[
+															896,
+															2339
+														],
+														[
+															970,
+															2320
+														],
+														[
+															976,
+															2378
+														],
+														[
+															902,
+															2441
+														],
+														[
+															902,
+															2466
+														]
+													]
+												},
+												{
+													"area": "2c9",
+													"points": [
+														[
+															1534,
+															2500
+														],
+														[
+															1661,
+															2500
+														],
+														[
+															1661,
+															2340
+														],
+														[
+															1635,
+															2340
+														],
+														[
+															1591,
+															2349
+														],
+														[
+															1565,
+															2338
+														],
+														[
+															1534,
+															2352
+														]
+													]
+												},
+												{
+													"area": "2ca",
+													"points": [
+														[
+															1763,
+															2548
+														],
+														[
+															1763,
+															2428
+														],
+														[
+															1798,
+															2387
+														],
+														[
+															1835,
+															2402
+														],
+														[
+															1859,
+															2418
+														],
+														[
+															1868,
+															2440
+														],
+														[
+															1897,
+															2472
+														],
+														[
+															1903,
+															2514
+														],
+														[
+															1918,
+															2544
+														],
+														[
+															1937,
+															2565
+														],
+														[
+															1885,
+															2629
+														]
+													]
+												},
+												{
+													"area": "2c1",
+													"points": [
+														[
+															568,
+															3102
+														],
+														[
+															589,
+															3025
+														],
+														[
+															600,
+															2924
+														],
+														[
+															634,
+															2816
+														],
+														[
+															679,
+															2759
+														],
+														[
+															731,
+															2721
+														],
+														[
+															832,
+															2709
+														],
+														[
+															858,
+															2663
+														],
+														[
+															868,
+															2634
+														],
+														[
+															941,
+															2620
+														],
+														[
+															986,
+															2591
+														],
+														[
+															1005,
+															2538
+														],
+														[
+															1014,
+															2519
+														],
+														[
+															1019,
+															2469
+														],
+														[
+															1062,
+															2463
+														],
+														[
+															1107,
+															2464
+														],
+														[
+															1150,
+															2435
+														],
+														[
+															1212,
+															2417
+														],
+														[
+															1282,
+															2409
+														],
+														[
+															1352,
+															2404
+														],
+														[
+															1428,
+															2470
+														],
+														[
+															1523,
+															2542
+														],
+														[
+															1572,
+															2584
+														],
+														[
+															1627,
+															2596
+														],
+														[
+															1667,
+															2622
+														],
+														[
+															1727,
+															2667
+														],
+														[
+															1760,
+															2703
+														],
+														[
+															1790,
+															2754
+														],
+														[
+															1790,
+															2980
+														],
+														[
+															1815,
+															3105
+														],
+														[
+															1825,
+															3253
+														],
+														[
+															1760,
+															3375
+														],
+														[
+															1739,
+															3417
+														],
+														[
+															1698,
+															3452
+														],
+														[
+															1657,
+															3476
+														],
+														[
+															1623,
+															3517
+														],
+														[
+															1532,
+															3521
+														],
+														[
+															1393,
+															3496
+														],
+														[
+															1343,
+															3505
+														],
+														[
+															1314,
+															3547
+														],
+														[
+															1192,
+															3584
+														],
+														[
+															1034,
+															3572
+														],
+														[
+															703,
+															3428
+														],
+														[
+															686,
+															3399
+														],
+														[
+															602,
+															3246
+														],
+														[
+															573,
+															3162
+														]
+													]
+												},
+												{
+													"area": "2cb",
+													"points": [
+														[
+															2083,
+															2958
+														],
+														[
+															2097,
+															2903
+														],
+														[
+															2130,
+															2843
+														],
+														[
+															2133,
+															2802
+														],
+														[
+															1902,
+															2802
+														],
+														[
+															1902,
+															2709
+														],
+														[
+															1809,
+															2709
+														],
+														[
+															1809,
+															2958
+														]
+													]
+												},
+												{
+													"area": "2d1",
+													"points": [
+														[
+															1902,
+															2641
+														],
+														[
+															1958,
+															2577
+														],
+														[
+															1988,
+															2584
+														],
+														[
+															2033,
+															2586
+														],
+														[
+															2077,
+															2550
+														],
+														[
+															2117,
+															2514
+														],
+														[
+															2161,
+															2510
+														],
+														[
+															2177,
+															2501
+														],
+														[
+															2280,
+															2653
+														],
+														[
+															2282,
+															2685
+														],
+														[
+															2258,
+															2712
+														],
+														[
+															2222,
+															2731
+														],
+														[
+															2177,
+															2734
+														],
+														[
+															2151,
+															2733
+														],
+														[
+															2137,
+															2766
+														],
+														[
+															2129,
+															2780
+														],
+														[
+															1915,
+															2780
+														],
+														[
+															1915,
+															2711
+														],
+														[
+															1986,
+															2711
+														],
+														[
+															1986,
+															2692
+														],
+														[
+															1902,
+															2692
+														]
+													]
+												},
+												{
+													"area": "2bf",
+													"points": [
+														[
+															2016,
+															3309
+														],
+														[
+															2017,
+															3258
+														],
+														[
+															2053,
+															3217
+														],
+														[
+															2088,
+															3143
+														],
+														[
+															2135,
+															3153
+														],
+														[
+															2165,
+															3182
+														],
+														[
+															2221,
+															3197
+														],
+														[
+															2280,
+															3213
+														],
+														[
+															2325,
+															3219
+														],
+														[
+															2359,
+															3215
+														],
+														[
+															2407,
+															3194
+														],
+														[
+															2438,
+															3157
+														],
+														[
+															2462,
+															3119
+														],
+														[
+															2493,
+															3059
+														],
+														[
+															2508,
+															3016
+														],
+														[
+															2536,
+															2969
+														],
+														[
+															2563,
+															2944
+														],
+														[
+															2590,
+															2920
+														],
+														[
+															2601,
+															2886
+														],
+														[
+															2642,
+															2848
+														],
+														[
+															2690,
+															2836
+														],
+														[
+															2733,
+															2819
+														],
+														[
+															2801,
+															2804
+														],
+														[
+															2843,
+															2773
+														],
+														[
+															2879,
+															2785
+														],
+														[
+															2915,
+															2814
+														],
+														[
+															2964,
+															2824
+														],
+														[
+															3048,
+															2824
+														],
+														[
+															3113,
+															2836
+														],
+														[
+															3139,
+															2872
+														],
+														[
+															3121,
+															2948
+														],
+														[
+															3129,
+															3042
+														],
+														[
+															3126,
+															3111
+														],
+														[
+															3090,
+															3155
+														],
+														[
+															3076,
+															3203
+														],
+														[
+															3101,
+															3262
+														],
+														[
+															3093,
+															3374
+														],
+														[
+															3076,
+															3393
+														],
+														[
+															3057,
+															3454
+														],
+														[
+															3090,
+															3507
+														],
+														[
+															3083,
+															3609
+														],
+														[
+															3111,
+															3621
+														],
+														[
+															3132,
+															3719
+														],
+														[
+															3088,
+															3767
+														],
+														[
+															3076,
+															3839
+														],
+														[
+															3072,
+															3922
+														],
+														[
+															3069,
+															3958
+														],
+														[
+															3014,
+															3957
+														],
+														[
+															2973,
+															3936
+														],
+														[
+															2877,
+															3920
+														],
+														[
+															2807,
+															3896
+														],
+														[
+															2783,
+															3878
+														],
+														[
+															2704,
+															3862
+														],
+														[
+															2647,
+															3848
+														],
+														[
+															2575,
+															3828
+														],
+														[
+															2546,
+															3852
+														],
+														[
+															2452,
+															3875
+														],
+														[
+															2433,
+															3876
+														],
+														[
+															2368,
+															3848
+														],
+														[
+															2313,
+															3807
+														],
+														[
+															2259,
+															3822
+														],
+														[
+															2243,
+															3692
+														],
+														[
+															2217,
+															3661
+														],
+														[
+															2174,
+															3608
+														],
+														[
+															2121,
+															3574
+														],
+														[
+															2105,
+															3536
+														],
+														[
+															2078,
+															3478
+														],
+														[
+															2030,
+															3373
+														]
+													]
+												},
+												{
+													"area": "2e1",
+													"points": [
+														[
+															194,
+															2166
+														],
+														[
+															175,
+															2096
+														],
+														[
+															199,
+															2046
+														],
+														[
+															207,
+															1998
+														],
+														[
+															233,
+															1950
+														],
+														[
+															260,
+															1907
+														],
+														[
+															299,
+															1866
+														],
+														[
+															348,
+															1835
+														],
+														[
+															388,
+															1809
+														],
+														[
+															433,
+															1824
+														],
+														[
+															452,
+															1859
+														],
+														[
+															496,
+															1873
+														],
+														[
+															554,
+															1861
+														],
+														[
+															583,
+															1868
+														],
+														[
+															602,
+															1896
+														],
+														[
+															609,
+															1944
+														],
+														[
+															609,
+															1975
+														],
+														[
+															592,
+															2015
+														],
+														[
+															604,
+															2035
+														],
+														[
+															632,
+															2058
+														],
+														[
+															623,
+															2114
+														],
+														[
+															590,
+															2145
+														],
+														[
+															559,
+															2168
+														],
+														[
+															556,
+															2214
+														],
+														[
+															556,
+															2253
+														],
+														[
+															537,
+															2293
+														],
+														[
+															496,
+															2340
+														],
+														[
+															458,
+															2343
+														],
+														[
+															421,
+															2365
+														],
+														[
+															360,
+															2359
+														],
+														[
+															293,
+															2355
+														],
+														[
+															269,
+															2326
+														],
+														[
+															252,
+															2293
+														],
+														[
+															233,
+															2247
+														],
+														[
+															221,
+															2207
+														],
+														[
+															211,
+															2185
+														]
+													]
+												},
+												{
+													"area": "2df",
+													"points": [
+														[
+															656,
+															1573
+														],
+														[
+															721,
+															1542
+														],
+														[
+															755,
+															1523
+														],
+														[
+															802,
+															1514
+														],
+														[
+															858,
+															1517
+														],
+														[
+															899,
+															1532
+														],
+														[
+															911,
+															1575
+														],
+														[
+															928,
+															1588
+														],
+														[
+															959,
+															1584
+														],
+														[
+															999,
+															1583
+														],
+														[
+															1024,
+															1557
+														],
+														[
+															1035,
+															1521
+														],
+														[
+															1060,
+															1482
+														],
+														[
+															1074,
+															1444
+														],
+														[
+															1110,
+															1426
+														],
+														[
+															1151,
+															1403
+														],
+														[
+															1159,
+															1380
+														],
+														[
+															1201,
+															1367
+														],
+														[
+															1243,
+															1370
+														],
+														[
+															1294,
+															1384
+														],
+														[
+															1348,
+															1377
+														],
+														[
+															1390,
+															1371
+														],
+														[
+															1412,
+															1348
+														],
+														[
+															1414,
+															1396
+														],
+														[
+															1416,
+															1440
+														],
+														[
+															1430,
+															1488
+														],
+														[
+															1417,
+															1511
+														],
+														[
+															1392,
+															1544
+														],
+														[
+															1384,
+															1593
+														],
+														[
+															1369,
+															1648
+														],
+														[
+															1357,
+															1667
+														],
+														[
+															1333,
+															1672
+														],
+														[
+															1307,
+															1720
+														],
+														[
+															1281,
+															1740
+														],
+														[
+															1242,
+															1752
+														],
+														[
+															1233,
+															1787
+														],
+														[
+															1204,
+															1801
+														],
+														[
+															1145,
+															1820
+														],
+														[
+															1093,
+															1818
+														],
+														[
+															1012,
+															1758
+														],
+														[
+															969,
+															1765
+														],
+														[
+															899,
+															1761
+														],
+														[
+															844,
+															1741
+														],
+														[
+															799,
+															1732
+														],
+														[
+															782,
+															1739
+														],
+														[
+															767,
+															1763
+														],
+														[
+															743,
+															1783
+														],
+														[
+															712,
+															1751
+														],
+														[
+															679,
+															1691
+														],
+														[
+															657,
+															1626
+														]
+													]
+												},
+												{
+													"area": "2dd",
+													"points": [
+														[
+															1446,
+															1493
+														],
+														[
+															1427,
+															1441
+														],
+														[
+															1424,
+															1338
+														],
+														[
+															1456,
+															1303
+														],
+														[
+															1487,
+															1255
+														],
+														[
+															1501,
+															1239
+														],
+														[
+															1522,
+															1210
+														],
+														[
+															1562,
+															1195
+														],
+														[
+															1590,
+															1189
+														],
+														[
+															1607,
+															1176
+														],
+														[
+															1640,
+															1186
+														],
+														[
+															1683,
+															1192
+														],
+														[
+															1725,
+															1193
+														],
+														[
+															1775,
+															1187
+														],
+														[
+															1805,
+															1179
+														],
+														[
+															1827,
+															1159
+														],
+														[
+															1846,
+															1131
+														],
+														[
+															1874,
+															1092
+														],
+														[
+															1868,
+															1041
+														],
+														[
+															1854,
+															996
+														],
+														[
+															1839,
+															965
+														],
+														[
+															1856,
+															945
+														],
+														[
+															1890,
+															947
+														],
+														[
+															1916,
+															946
+														],
+														[
+															1945,
+															969
+														],
+														[
+															1982,
+															993
+														],
+														[
+															1976,
+															1022
+														],
+														[
+															1978,
+															1056
+														],
+														[
+															2001,
+															1071
+														],
+														[
+															2000,
+															1101
+														],
+														[
+															2012,
+															1143
+														],
+														[
+															2014,
+															1161
+														],
+														[
+															2036,
+															1193
+														],
+														[
+															2060,
+															1222
+														],
+														[
+															2089,
+															1243
+														],
+														[
+															2115,
+															1260
+														],
+														[
+															2161,
+															1291
+														],
+														[
+															2192,
+															1309
+														],
+														[
+															2231,
+															1324
+														],
+														[
+															2199,
+															1349
+														],
+														[
+															2151,
+															1363
+														],
+														[
+															2117,
+															1382
+														],
+														[
+															2066,
+															1403
+														],
+														[
+															2024,
+															1375
+														],
+														[
+															1978,
+															1361
+														],
+														[
+															1952,
+															1369
+														],
+														[
+															1935,
+															1394
+														],
+														[
+															1897,
+															1424
+														],
+														[
+															1855,
+															1454
+														],
+														[
+															1791,
+															1450
+														],
+														[
+															1746,
+															1433
+														],
+														[
+															1683,
+															1421
+														],
+														[
+															1657,
+															1399
+														],
+														[
+															1607,
+															1399
+														],
+														[
+															1559,
+															1414
+														],
+														[
+															1525,
+															1428
+														],
+														[
+															1504,
+															1447
+														],
+														[
+															1483,
+															1476
+														]
+													]
+												}
+											]
 										},
 										{
 											"type": "image",
 											"href": {
 												"type": "internal",
-												"path": "adventure/DrDe/129-map-07.01-the-village-of-respite-player.webp"
+												"path": "adventure/DrDe/131-map-07.02-cobblehook-cove-player.webp"
 											},
-											"imageType": "mapPlayer",
-											"title": "玩家版本",
-											"width": 3277,
+											"width": 3165,
 											"height": 4096,
+											"imageType": "mapPlayer",
+											"grid": {
+												"type": "square",
+												"size": 192,
+												"offsetX": 116,
+												"offsetY": 91,
+												"scale": 5
+											},
+											"title": "玩家版本",
 											"credit": "Jared Blando",
 											"mapParent": {
-												"id": "418"
-											},
-											"grid": {
-												"type": "none"
+												"id": "419"
 											}
 										}
 									]
 								},
-								"《地图：瑞斯庇特村》上展示了瑞斯庇特的布局。这个村庄坐落在昂布拉迪海岸边，约有五十名居民，主要是人类、精灵和兽人。在瑞斯庇特附近，物质位面与气元素位面之间的帷幕较薄。因此，许多出生在该镇的居民都具有与气元素位面密切相关的物理特征（详见\"{@area 瑞斯庇特的元素传承|2a3|x}\"边栏）。",
-								"在{@area 钩石海盗|2b7|x}袭击之前， respite 村的生活平静祥和。村民们主要是渔民和工匠。社区菜园补充了村庄的食物供应，而自愿组成的巡逻队仅由少数来自大城市的退役士兵组成。",
-								"村民们尊敬庇护所的市长\u2014\u2014一位名叫盖尔·维滕比的兽人女性，她尽职尽责。",
+								"{@area 钩石海盗|2b7|x}的藏身处相对容易到达，盖尔市长可以为角色们指明方向。这处海湾距离六英里，有一条沿着海岸悬崖的知名小径经过{@area 回春|2a1|x}，通往海盗洞穴。",
+								"在角色前往海湾之前，允许他们购买任何所需的非魔法物资。",
 								{
-									"ENG_name": "Storm's Eye Weather Vane",
-									"name": "风暴之眼风向标",
+									"ENG_name": "Approaching the Cove",
+									"name": "接近海湾",
 									"type": "entries",
-									"page": 130,
-									"id": "2a2",
+									"id": "2b6",
+									"page": 132,
 									"entries": [
-										"由于避难所附近位面之间的帷幕稀薄，源自气元素位面的猛烈风暴经常肆虐附近的海岸。很久以前，为了保护村庄，友善的巨灵制造了一件名为「风暴之眼风向标」的装置，并将其安置在村庄广场上。巨灵们将他们的魔法注入两颗{@item 元素宝石，蓝宝石|XDMG|元素宝石（蓝宝石）}中，并将宝石嵌入风向标。这件装置世代守护着避难所免受元素风暴的侵袭。然而，自从碎钩海盗偷走了宝石后，风向标便失去了作用，使得村庄在狂暴天气面前不堪一击\u2014\u2014而一场可怕的风暴预计将于今晚晚些时候来袭。",
 										{
-											"ENG_name": "Respite's Elemental Heritage",
-											"name": "瑞斯庇特的元素传承",
-											"type": "inset",
-											"page": 130,
-											"id": "2a3",
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "adventure/DrDe/132-07-002.cobblehook-cove-ship.webp"
+											},
+											"width": 850,
+											"height": 2285,
+											"credit": "Matt Stikker"
+										},
+										"从Respite到Cobblehook Cove的旅程原本平静无事，但当角色们接近目的地时就会变得颇具挑战，因为该区域被黑龙巢穴的魔法所扭曲。除了{@book 怪物图鉴|XMM}中描述的臭雾气与污染水源外，周围的植被变得浓密且扭曲，泥土小径泥泞不堪并开始散发硫磺味。",
+										"将上述环境细节视为{@action 研究|XPHB}动作的角色可以进行一次{@dc 12}智力（{@skill 奥秘|XPHB}或{@skill 自然|XPHB}）检定。若成功，该角色会认出这些是黑龙巢穴在附近的迹象。"
+									]
+								},
+								{
+									"ENG_name": "Cobblehook Corsairs",
+									"name": "钩石海盗",
+									"type": "entries",
+									"id": "2b7",
+									"page": 132,
+									"entries": [
+										"除皮埃尔外，仍留在海湾的海盗中，只有那些宣誓永远效忠黑翼的人。除非另有说明，这些海盗均为混乱邪恶阵营，且仅称黑翼为\"船长\"。",
+										"当海盗注意到一个角色时，他们会立即向附近的盟友呼救并开始战斗。这些过度自信的海盗会战斗至死。"
+									]
+								},
+								{
+									"ENG_name": "Cobblehook Cove Features",
+									"name": "碎钩湾特性",
+									"type": "entries",
+									"id": "2b8",
+									"page": 134,
+									"entries": [
+										"除非另有说明，卵石钩湾具有以下特征。",
+										{
+											"ENG_name": "Acid Pools",
+											"name": "酸液池",
+											"type": "entries",
+											"id": "2b9",
+											"page": 134,
 											"entries": [
-												"气元素位面对瑞斯庇特的居民世世代代产生了深远影响。因此，许多在此镇出生的人都表现出该位面原生生物常见的生理特征，例如蓝色皮肤、在幻风中飘动的头发，或是闪烁雷电弧光的眼睛。本冒险中涉及相关角色时会详述这些特征。"
+												"自从黑翼将小湾作为巢穴后，这里便充满了沸腾的酸液池。这些酸液池在{@area 地图：卵石钩湾|419|x}中标出。生物若在一个回合内首次进入酸液或在其内部开始回合，将受到11（{@dice 2d10}）点强酸伤害。未被穿着或携带的非魔法物品同样会受到此伤害。"
+											]
+										},
+										{
+											"ENG_name": "Ceilings",
+											"name": "天花板",
+											"type": "entries",
+											"id": "2ba",
+											"page": 134,
+											"entries": [
+												"在海湾的岩石洞穴中，除区域{@area B13|2e6|x}的天花板高达80英尺外，其他区域天花板高度均为40英尺。海湾人造建筑（区域{@area B3|2c6|x}和{@area B4|2cb|x}）的天花板高度为20英尺。"
+											]
+										},
+										{
+											"ENG_name": "Doors",
+											"name": "门",
+											"type": "entries",
+											"id": "2bb",
+											"page": 134,
+											"entries": [
+												"小湾内的门都未上锁，除了通往区域{@area B5|2d1|x}的门以及区域B6的侧室门，后者通向藏宝处。"
+											]
+										},
+										{
+											"ENG_name": "Elemental Gems",
+											"name": "元素宝石",
+											"type": "entries",
+											"id": "2bc",
+											"page": 134,
+											"entries": [
+												"角色们寻找的{@item 元素宝石，蓝宝石|XDMG|元素宝石（蓝宝石）}其中一颗在B6区域；另一颗在B13区域。"
+											]
+										},
+										{
+											"ENG_name": "Lighting",
+											"name": "光照",
+											"type": "entries",
+											"id": "2bd",
+											"page": 134,
+											"entries": [
+												"壁架上的环境光或{@item 火把|XPHB|火把}提供 {@variantrule 明亮光照|XPHB}（区域 {@area B1|2bf|x}\u2013{@area B6|2d3|x}） 。区域 {@area B7|2d7|x}\u2013{@area B12|2e4|x} 被黑暗 笼罩，描述默认角色拥有黑暗视觉能力。壁架上摇曳的{@item 火把|XPHB|火把}提供 {@variantrule 微光光照|XPHB}（区域{@area B13|2e6|x}）。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Cobblehook Cove Locations",
+									"name": "卵石钩湾地点",
+									"type": "entries",
+									"id": "2be",
+									"page": 134,
+									"entries": [
+										"以下地点与{@area 地图：卵石钩湾|419|x}相关联。",
+										{
+											"ENG_name": "B1: Cave Entrance",
+											"name": "B1: 洞穴入口",
+											"type": "entries",
+											"id": "2bf",
+											"page": 134,
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "2c0",
+													"page": 134,
+													"entries": [
+														"迷雾小径通向一个山洞入口。洞内高耸的石笋顶端栖息着三只色彩斑斓的鹦鹉，正在梳理羽毛。"
+													]
+												},
+												"这三只鹦鹉都使用{@creature 渡鸦|XMM}的怪物图鉴数据。若有任何一只鹦鹉注意到角色们，它会大声鸣叫，警告位于{@area B2|2c1|x}区域的{@area 海盗|2b7|x}。"
+											]
+										},
+										{
+											"ENG_name": "B2: Seaside Cave",
+											"name": "B2: 海滨洞穴",
+											"type": "entries",
+											"id": "2c1",
+											"page": 134,
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "2c2",
+													"page": 134,
+													"entries": [
+														"墙壁烛台上的火把照亮了这片广阔的洞窟，映照出岩壁突出的岩架和紧贴墙壁搭建的简陋木屋。南边的洞穴开口通向大海，一艘悬挂绿色船帆的船只停泊在码头边。洞穴中央有一潭浑浊的水池正冒着气泡。肮脏邋遢的人们四处游荡，而池边一只巨大的鳄鱼正用它那布满利齿的大嘴碾碎一根多肉的骨头。"
+													]
+												},
+												"这里聚集了八名种族和体型各异的海盗。在酸液池（见下文）附近，六名海盗（{@creature 海盗|XMM|海盗们}）正调侃着袭击{@area 回春|2a1|x}的行动。他们旁边趴着一头宠物{@creature 巨鳄|XMM}，会在海盗开战时加入战斗。码头旁停泊的船只边站着两名肌肉发达的海盗（{@creature 海盗船长|XMM|海盗船长}），他们刚把休憩处的战利品运到B6区域。",
+												{
+													"ENG_name": "Acid Pool",
+													"name": "酸液池",
+													"type": "entries",
+													"id": "2c3",
+													"page": 135,
+													"entries": [
+														"一个角色通过执行{@action 搜索|XPHB}动作凝视中央酸液池时，可以进行一次{@dc 20}感知（{@skill 察觉|XPHB}）检定。成功时，角色发现池子通往一条地下隧道。隧道通往区域{@area B11|2e1|x}。对于大多数人来说，游过隧道中的酸液是致命的（参见\"{@area 碎钩湾特性|2b8|x}\"），但黑翼频繁使用这条通道。"
+													]
+												},
+												{
+													"ENG_name": "Ledges",
+													"name": "岩架",
+													"type": "entries",
+													"id": "2c4",
+													"page": 135,
+													"entries": [
+														"洞穴两侧北面的岩壁高出地面10尺，由一块5尺宽的木板相连。"
+													]
+												},
+												{
+													"ENG_name": "Pirate Ship",
+													"name": "海盗船",
+													"type": "entries",
+													"id": "2c5",
+													"page": 135,
+													"entries": [
+														"这艘船是海盗们清晨突袭Respite时所乘的。船上既无战利品，也无船员。它那绿色的船帆看似新缝制的，上面绘有一条狞笑的黑龙。"
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "B3: Crew Quarters",
+											"name": "B3: 船员宿舍",
+											"type": "entries",
+											"id": "2c6",
+											"page": 135,
+											"entries": [
+												"摇摇欲坠的门通向这些发霉的木结构建筑的每一间。",
+												{
+													"type": "insetReadaloud",
+													"id": "2c7",
+													"page": 135,
+													"entries": [
+														"这个房间肮脏且挤满了双层床。床铺旁的桌子和几个箱子上散落着衣物和其他个人物品。"
+													]
+												},
+												"船员们在不上岸时居住在这些简陋棚屋里。他们的衣物和个人物品塞满了箱子，散落在房间各处。大多数物品一文不值，只有少数例外。",
+												{
+													"ENG_name": "B3a: Western Quarters",
+													"name": "B3a：西部区",
+													"type": "entries",
+													"id": "2c8",
+													"page": 135,
+													"entries": [
+														"一个箱子里装有一瓶{@item 高等治疗药水|XDMG|治疗药水（高等）}。箱子被锁住了。角色可以采取一个{@action 操作|XPHB}动作来撬锁，进行{@dc 15}的敏捷（{@skill 巧手|XPHB}）检定并使用{@item 盗贼工具|XPHB}。若成功，箱子打开。"
+													]
+												},
+												{
+													"ENG_name": "B3b: Central Quarters",
+													"name": "B3b: 中央区域",
+													"type": "entries",
+													"id": "2c9",
+													"page": 135,
+													"entries": [
+														"地板上铺着一张华丽的毯子。如果一个角色采取{@action 研究|XPHB}动作来检查这块毯子，并成功通过{@dc 12}智力({@skill 调查|XPHB})检定，就会意识到如果清洁干净，这块毯子价值500金币。"
+													]
+												},
+												{
+													"ENG_name": "B3c: Eastern Quarters",
+													"name": "B3c：东部区域",
+													"type": "entries",
+													"id": "2ca",
+													"page": 135,
+													"entries": [
+														"远处的墙上固定着一个人类的头骨；它的两个眼窝中各镶嵌着一颗宝石\u2014\u2014其中一颗是价值100金币的{@item 黑玉|XDMG}，可以轻松从头骨上撬下来。"
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "B4: Kitchen",
+											"name": "B4：厨房",
+											"type": "entries",
+											"id": "2cb",
+											"page": 135,
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "2cc",
+													"page": 135,
+													"entries": [
+														"一幅描绘咧着嘴笑的黑龙的挂毯悬挂在这个房间的东墙上，两侧是摆放着烹饪用品的架子。一个看起来压力很大的年轻人，皮肤呈蓝色，白发凌乱，勉强算得上刚过青春期，正在小火上搅拌一口大锅。在年轻人的两侧，各潜伏着一只巨大的蠕虫状生物，长着带钩喙的嘴，周围环绕着触须。"
+													]
+												},
+												"厨师是皮埃尔·卡里森（中型{@creature 打手|XMM}），酒馆老板{@area 瓦特里·惠斯尔鲍姆|2b0|x}的孙子。皮埃尔被囚禁在此，被迫为海盗们烹煮食物。",
+												"两只{@creature 远古穴居攫怪|XMM|远古格雷克}被训练用来确保皮埃尔不会逃跑。它们一旦注意到角色就会立即展开战斗。",
+												{
+													"ENG_name": "Difficult Terrain",
+													"name": "困难地形",
+													"type": "entries",
+													"id": "2cd",
+													"page": 135,
+													"entries": [
+														"这个房间的东半部分是{@variantrule 困难地形|XPHB}，因为那里散落着家具。"
+													]
+												},
+												{
+													"ENG_name": "Talking with Pierre",
+													"name": "与皮埃尔交谈",
+													"type": "entries",
+													"id": "2ce",
+													"page": 135,
+													"entries": [
+														"如果角色们击败了他的骇鬼鸟守卫，皮埃尔会变得友好并渴望交谈。皮埃尔承认加入海盗团是个错误；他曾渴望冒险、刺激和浪漫，但很快意识到这些海盗不过是些宵小之徒。",
+														"与其他海盗不同，皮埃尔直呼黑翼之名。当黑龙掌控船员时，皮埃尔和少数人拒绝宣誓效忠。黑翼处决了其他反抗的海盗，却饶过皮埃尔性命，以死亡威胁强迫他继续担任厨师。如今皮埃尔只求能回到{@area 回春|2a1|x}。"
+													]
+												},
+												{
+													"ENG_name": "Pierre's Map",
+													"name": "皮埃尔的地图",
+													"type": "entries",
+													"id": "2cf",
+													"page": 135,
+													"entries": [
+														"如果角色们请求皮埃尔协助找回避风港的宝石，他会为角色们绘制一份海湾的地图。该地图上的区域与地图7.2所示一致，不过皮埃尔没有标注酸液池。这位厨师在暗翼掌权期间大多被困在厨房里，因此他并不知道酸液池的存在。"
+													]
+												},
+												{
+													"ENG_name": "Treasure",
+													"name": "宝藏",
+													"type": "entries",
+													"id": "2d0",
+													"page": 135,
+													"entries": [
+														"东墙架子上有两瓶原料实际上是{@item 英勇药水|XDMG|英勇药水}。皮埃尔感激地将药水赠予角色们，作为解救他的谢礼。"
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "B5: Locked Passage",
+											"name": "B5: 上锁通道",
+											"type": "entries",
+											"id": "2d1",
+											"page": 135,
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "2d2",
+													"page": 135,
+													"entries": [
+														"在这条通道的东北端，一扇装有重重挂锁的门连同门框被嵌入了岩石中。"
+													]
+												},
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "adventure/DrDe/133-07-003.brandles-rest-skeleton.webp"
+													},
+													"width": 850,
+													"height": 2363,
+													"credit": "Matt Stikker"
+												},
+												"这把锁结构简单（1动作撬开）且品质精良（{@dc 20}）。海盗们给这扇门上了挂锁，以防皮埃尔深入建筑群内部。"
+											]
+										},
+										{
+											"ENG_name": "B6: Loot Vault",
+											"name": "B6：战利品宝库",
+											"type": "entries",
+											"id": "2d3",
+											"page": 136,
+											"entries": [
+												"当角色进入该区域30尺范围内时，请宣读或转述以下内容：",
+												{
+													"type": "insetReadaloud",
+													"id": "2d4",
+													"page": 136,
+													"entries": [
+														"前方的厅室中回荡着歌声。残酷的歌词破坏了歌曲的欢庆氛围。"
+													]
+												},
+												"数名来自海盗团的成员围坐在该区域中心的木桶周围，他们体型各异、种族多样。其中包括四名{@creature 海盗|XMM|海盗们}、两名{@creature 魔法师|XMM|魔法师们}和一名{@creature 刺客|XMM}。听见喧闹声的角色会意识到这群海盗正在歌颂海盗团今早在瑞斯庇特制造的死亡与混乱。",
+												{
+													"ENG_name": "Elemental Gem",
+													"name": "元素宝石",
+													"type": "entries",
+													"id": "2d5",
+													"page": 136,
+													"entries": [
+														"海盗们将贵重战利品存放在东侧的边厅中。此门装有一把精良的简易锁（需1次动作撬开）({@dc 20})。从{@area 风暴之眼风向标|2a2|x}盗取的{@item 元素宝石，蓝宝石|XDMG|元素宝石（蓝宝石）}其中一颗就在此房间内。"
+													]
+												},
+												{
+													"ENG_name": "Treasure",
+													"name": "宝藏",
+													"type": "entries",
+													"id": "2d6",
+													"page": 136,
+													"entries": [
+														"除了{@item 元素宝石|XDMG}外，上锁的房间内还有以下财宝：",
+														{
+															"type": "list",
+															"items": [
+																"三颗{@item 紫水晶|XDMG|紫水晶宝石}（每颗价值100 GP）",
+																"六颗橙色{@item 红玉髓|XDMG|红玉髓宝石}（每颗价值50 GP）",
+																"三颗{@item 黑曜石|XDMG|黑曜石宝石}（每颗价值10 GP）",
+																"装有今早从瑞斯派特盗走的贵重物品的大板条箱（价值1800金币）",
+																"青铜王冠（价值250金币）",
+																"银制圣杯（价值120金币）",
+																"{@item 锐锋之油|XDMG}"
+															]
+														}
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "B7: Brandle's Rest",
+											"name": "B7: 布兰德尔的安息",
+											"type": "entries",
+											"id": "2d7",
+											"page": 136,
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "2d8",
+													"page": 136,
+													"entries": [
+														"一个穿着破布的人形骷髅被钉在东边的墙上，骨头挂在登山钉上。骷髅头上戴着一顶宽边帽，上面插着一根巨大的绿色羽毛。附近的岩石上刻着以下通用语文字：'此葬无能之辈，不堪为王。'"
+													]
+												},
+												"这具骷髅是埃德加·布兰德船长的遗骸。当影翼接管海盗团时，这位船长拒绝向龙宣誓效忠。影翼杀害了他，吞食其血肉，并以此场景作为警示\u2014\u2014任何违抗龙之统治的人都将面临相同结局。",
+												{
+													"ENG_name": "Speaking with Brandle",
+													"name": "与布兰德尔对话",
+													"type": "entries",
+													"id": "2d9",
+													"page": 136,
+													"entries": [
+														"如果角色施放{@spell 死者交谈|XPHB}，布兰德船长那粗哑的头颅会尽其所能回答问题。布兰德知道黑龙在区域{@area B13|2e6|x}的宝库附近养着三只忠诚的{@creature 暗幕魔兽|XMM|暗幕魔兽}，并描述了黑龙如何利用暗mantle的黑暗光环来遮蔽敌人的视线。"
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "B8: Moldy Cavern",
+											"name": "B8: 发霉的洞穴",
+											"type": "entries",
+											"id": "2da",
+											"page": 137,
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "2db",
+													"page": 137,
+													"entries": [
+														"这个洞窟的一半被黄色霉菌覆盖。"
+													]
+												},
+												"二十块{@hazard 黄霉菌|XDMG}（参见{@book 城主指南|XDMG}）覆盖了地板的东北半部。",
+												{
+													"ENG_name": "Treasure",
+													"name": "宝藏",
+													"type": "entries",
+													"id": "2dc",
+													"page": 137,
+													"entries": [
+														"作为一个{@action 搜索|XPHB}动作，一个角色可以检查该区域并进行一次{@dc 12}感知（{@skill 察觉|XPHB}）检定。若成功，该角色会注意到一个红宝石吊坠在东墙附近的地板上闪烁。这是一个{@item 愈合护符|XDMG}。两片{@hazard 黄霉菌|XDMG}生长在护符与最近的安全地板区域之间。"
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "B9: Bubbling Intersection",
+											"name": "B9: 沸腾交点",
+											"type": "entries",
+											"id": "2dd",
+											"page": 137,
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "2de",
+													"page": 137,
+													"entries": [
+														"阴暗、冒着气泡的液体覆盖了这个洞窟的地面。"
+													]
+												},
+												"该液体是一个2英尺深的酸池（详见\"{@area 碎钩湾特性|2b8|x}\"）。"
+											]
+										},
+										{
+											"ENG_name": "B10: Stalagmite Field",
+											"name": "B10: 石笋区域",
+											"type": "entries",
+											"id": "2df",
+											"page": 137,
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "2e0",
+													"page": 137,
+													"entries": [
+														"这片洞穴中，翻腾的液体池环绕着石笋。中央的石笋向上延伸，指向布满钟乳石的洞顶。"
+													]
+												},
+												"中央的石笋实际上是一只{@creature 石绳怪|XMM}，六根钟乳石是{@creature 石锥怪|XMM|锥怪}，还有一只{@creature 斗篷怪|XMM}潜藏在钟乳石后的视野死角。这些池子是2英尺深的酸池（参见\"{@area 碎钩湾特性|2b8|x}\"）。当有角色进入该区域时，罗珀会立即开始战斗，石锥怪会在机会出现时坠落袭敌，而披风怪则会追捕那些避开罗珀的生物。"
+											]
+										},
+										{
+											"ENG_name": "B11: Acid Lake",
+											"name": "B11：酸液湖",
+											"type": "entries",
+											"id": "2e1",
+											"page": 137,
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "2e2",
+													"page": 137,
+													"entries": [
+														"一个浑浊冒泡的液体湖泊填满了这个洞穴。沼泽腐烂的气味弥漫在空气中。"
+													]
+												},
+												"这个湖泊是一片巨大的酸性池塘，深度达50英尺（参见\"{@area 碎钩湾特性|2b8|x}\"），并有一条地下隧道与区域B2的水池相连。暗翼有时会利用这条隧道作为进出其位于区域B13巢穴的捷径。",
+												"池底散落着骸骨。",
+												{
+													"ENG_name": "Treasure",
+													"name": "宝藏",
+													"type": "entries",
+													"id": "2e3",
+													"page": 137,
+													"entries": [
+														"在池面二十英尺之下，一个对酸蚀伤害具有免疫的防水箱被嵌入西墙。箱子未上锁，内含一枚{@item 强酸抗性戒指|XDMG|抗性戒指 (强酸)}和一套{@item 抗性护甲|XDMG}（酸蚀，鳞甲）。黑翼以残忍的幽默感命令受害者取回箱子，然后看着他们尝试时死去。"
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "B12: Detritus Dens",
+											"name": "B12：残骸密林",
+											"type": "entries",
+											"id": "2e4",
+											"page": 137,
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "2e5",
+													"page": 137,
+													"entries": [
+														"隧道的两侧分支出两个布满腐烂植被的房间，这些植被高高堆起且不时微微颤动。"
+													]
+												},
+												"那些抽搐的植被堆实际上是两个{@creature 紫腐菌尸聚怪|XMM|紫腐菌尸聚怪}：一个在东侧房间，一个在西侧房间。这些真菌会伏击任何经过它们所在房间或该区域中央走廊的生物。"
+											]
+										},
+										{
+											"ENG_name": "B13: Captain Sablewing's Lair",
+											"name": "B13：黑翼船长的巢穴",
+											"type": "entries",
+											"id": "2e6",
+											"page": 137,
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "2e7",
+													"page": 137,
+													"entries": [
+														"摇曳的火光在墙面上投下忽明忽暗的阴影，染血的船首像与断裂的桅杆如战利品般陈列于此。一头巨大的黑龙盘踞在40尺高的峭壁上，下方翻涌着冒着气泡的酸液池。黑龙抬起布满伤疤的眼睑，狞笑着低吼：\"海盗们果然拦不住你们。现在\u2014\u2014是准备哭喊着逃离我的巢穴，还是想在我杀死你们之前，先陪我玩个小游戏？\""
+													]
+												},
+												"萨布莱翼队长是一只{@creature 成年黑龙|XMM}。三只{@creature 暗幕魔兽|XMM|暗幕魔兽}如同钟乳石般悬挂在洞穴顶部；战斗开始时，它们会加入战斗，试图用魔法黑暗笼罩角色。这里的所有四只生物都会战斗至死。",
+												{
+													"ENG_name": "Roleplaying Sablewing",
+													"name": "扮演影翼",
+													"type": "entries",
+													"id": "2e8",
+													"page": 137,
+													"entries": [
+														"黑翼船长对他的海盗喽啰毫无敬意，视其为追求毁灭与积累更多财宝的工具。黑翼热衷于炫耀自己掌控船员的轻而易举。",
+														"黑翼拒绝退让、交出任何战利品或停止恐吓海岸。他以制造痛苦与苦难为乐。如果对话拖得太久，黑翼会感到无聊并开始战斗，认定角色们会是容易的猎物。"
+													]
+												},
+												{
+													"ENG_name": "Elemental Gem",
+													"name": "元素宝石",
+													"type": "entries",
+													"id": "2e9",
+													"page": 137,
+													"entries": [
+														"从{@area 风暴之眼风向标|2a2|x}（位于{@area 回春|2a1|x}）被偷走的{@item 元素宝石，蓝宝石|XDMG|元素宝石（蓝宝石）}其中一颗现在藏在黑翼的宝藏中。"
+													]
+												},
+												{
+													"ENG_name": "Treasure",
+													"name": "宝藏",
+													"type": "entries",
+													"id": "2ea",
+													"page": 137,
+													"entries": [
+														"除了宝石外，影翼的财宝还包括以下物品：",
+														{
+															"type": "list",
+															"items": [
+																"230 铂币（PP）、15,610 金币（GP）和 1,100 银币（SP）",
+																"镶框的银龙杰作绘画（价值2500金币），由著名龙裔画家扎蒙·维德拉克创作",
+																"{@item 水手板甲|XDMG|水手护甲 (板甲)}",
+																"{@item 反射闪避戒指|XDMG}",
+																"名为\"偏潮\"的{@item 唤鱼三叉戟|XDMG}"
+															]
+														}
+													]
+												}
 											]
 										}
 									]
 								}
 							]
-						}
-					]
-				},
-				{
-					"ENG_name": "Beginning the Adventure",
-					"name": "开始冒险",
-					"type": "section",
-					"page": 130,
-					"id": "2a4",
-					"entries": [
-						"角色们清晨在{@area 回春|2a1|x}开始，莫克鱼怪酒馆近在眼前。在冒险开始前，询问玩家们为何他们的角色会在此处。例如，角色们可能是当地人。或者他们或许是听闻该区域栖息着一头黑龙的猎龙人，决心铲除这一威胁。",
-						"开始冒险时，请大声朗读或转述以下内容：",
-						{
-							"type": "insetReadaloud",
-							"page": 130,
-							"id": "2a5",
-							"entries": [
-								"海滨村庄「憩息」陷入混乱。一群名为「鹅卵石钩号」的海盗\u2014\u2014通常不会如此暴力的麻烦制造者们\u2014\u2014洗劫了村庄。黑烟从建筑中滚滚涌出，嘶嘶作响的酸液溪流顺着街道流淌。村民们四处奔逃，呼喊着亲人的名字，奋力控制灾情。岸边附近，一栋低矮建筑的窗口窜出火舌，一位蓝色皮肤的人类老妇人站在正门前拼命挥手。\"着火了！\"她喊道，\"还有人困在里面！\"其他村民惊慌失措无暇顾及\u2014\u2014只有你注意到了！"
-							]
-						},
-						"年长的人类是瓦特里·惠斯尔鲍姆（中型，中立善良{@creature 平民|XMM}），燃烧中的莫克鱼怪酒馆所有者。角色的反应可能是进入酒馆解救被困村民，或是努力扑灭大火。",
-						{
-							"ENG_name": "Rescue the Villagers",
-							"name": "营救村民",
-							"type": "entries",
-							"page": 130,
-							"id": "2a6",
-							"entries": [
-								"如果角色们进入了莫克鱼怪酒馆，朗读或转述以下内容：",
-								{
-									"type": "insetReadaloud",
-									"page": 130,
-									"id": "2a7",
-									"entries": [
-										"酒馆内烟雾弥漫。桌椅尽毁，房梁如牙签般断裂。一名棕发男子在无风自动的发丝间徒劳地试图将腿从塌陷的横梁下挣脱。黑发女子瘫倒在吧台上纹丝不动，厨房门后传来惊慌的哭喊与撞击声。"
-									]
-								},
-								"角色们可以尝试营救陷入危险的村民。与此同时，外面的路人终于听到瓦特里的呼喊，开始向火海泼水。",
-								{
-									"ENG_name": "Trapped under the Beam",
-									"name": "被困于横梁之下",
-									"type": "entries",
-									"page": 131,
-									"id": "2a8",
-									"entries": [
-										"精灵乐手{@area 布雷佐·轻风|2ad|x}（中型，守序中立{@creature 平民|XMM}）以其风笛演奏和色彩斑斓的马裤著称，此刻正被压在倒塌的房梁下。角色可采取{@action 操作|XPHB}动作进行{@dc 12}力量（{@skill 运动|XPHB}）检定，成功抬起横梁即可解救布雷佐。"
-									]
-								},
-								{
-									"ENG_name": "Unconscious on the Bar",
-									"name": "在酒吧昏迷",
-									"type": "entries",
-									"page": 131,
-									"id": "2a9",
-									"entries": [
-										"酒馆的人类酒保{@area 内莉达·阿德勒|2ae|x}（中型，中立善良{@creature 平民|XMM}）瘫软在吧台上。一名海盗用空酒瓶砸中了内莉达的头部。她并未受伤但处于{@condition 昏迷|XPHB}状态。角色可以抱起内莉达离开建筑；到达室外时她会苏醒。或者角色可以采取{@action 协助|XPHB}动作摇晃唤醒内莉达，她会尽可能快地跌跌撞撞逃出燃烧的酒馆。"
-									]
-								},
-								{
-									"ENG_name": "Stuck in the Kitchen",
-									"name": "困在厨房里",
-									"type": "entries",
-									"page": 131,
-									"id": "2aa",
-									"entries": [
-										"{@area 鲁伯特·福雷斯特|2af|x} 是一名魁梧的人类退役士兵（中型，混乱善良阵营的{@creature 骑士|XMM}）。一名海盗将鲁伯特推入厨房，并重重摔门导致门框变形。角色可以采取{@action 操作|XPHB}动作，通过一次成功的{@dc 15}力量（{@skill 运动|XPHB}）检定强行撞开变形的门。"
-									]
-								}
-							]
 						},
 						{
-							"ENG_name": "Fight the Fire",
-							"name": "与火抗争",
-							"type": "entries",
-							"page": 131,
-							"id": "2ab",
+							"ENG_name": "Conclusion",
+							"name": "结局",
+							"type": "section",
+							"id": "2eb",
+							"page": 138,
 							"entries": [
-								"如果角色们待在酒馆外，他们可以通过以下方式扑灭火势：",
 								{
-									"type": "list",
-									"style": "list-hang-notitle",
-									"items": [
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/134-07-004.broken-weather-vane.webp"
+									},
+									"width": 1700,
+									"height": 1168,
+									"credit": "Matt Stikker"
+								},
+								"返回{@area 回春|2a1|x}的旅程平淡无奇，尽管随着暴风雨临近，天空变得不祥。如果角色未能在日落前从卵石湾取回两枚{@item 元素宝石，蓝宝石|XDMG|元素宝石（蓝宝石）}，则转到\"{@area 损坏的风向标。|2ec|x}\"。若成功取得，请参考\"{@area 修复的风向标。|2ed|x}\"。如果角色击杀了黑翼，群龙无首的{@area 钩石海盗|2b7|x}将四散并停止威胁该地区。若角色取得宝石但未击杀黑翼，这条怨恨的巨龙会逃离海湾，担心角色们会回来杀死它。",
+								{
+									"ENG_name": "Broken Weather Vane",
+									"name": "损坏的风向标",
+									"type": "entries",
+									"id": "2ec",
+									"page": 138,
+									"entries": [
+										"一场来自气元素位面的可怕风暴肆虐了Respite镇。镇长Gale警告村民们寻找避难所，但风暴的全面威力和暴雨摧毁了之前被Cobblehook Corsairs袭击中损坏的建筑。风暴过后，Respite已然沦为废墟。街道上遍布碎石瓦砾，村民们开始寻找新的家园。"
+									]
+								},
+								{
+									"ENG_name": "Restored Weather Vane",
+									"name": "修复的风向标",
+									"type": "entries",
+									"id": "2ed",
+									"page": 138,
+									"entries": [
+										"当角色们回到休憩镇时，他们发现盖尔镇长站在{@area 风暴之眼风向标|2a2|x}附近。她承诺的金币奖励就在她的背包里。{@area 瓦特里·惠斯尔鲍姆|2b0|x}也站在风向标旁，如果角色们将皮埃尔带回村庄，瓦特里会按照约定将她的{@item 吉运之石|XDMG}送给他们。",
+										"在镇长的协助下，失踪的宝石被轻易地重新嵌回风向标中。装置修复后，请宣读或转述以下内容：",
 										{
-											"ENG_name": "Bucket Brigade",
-											"name": "水桶阵",
-											"type": "item",
-											"entry": "角色可以使用{@action 影响|XPHB}动作来号召其他路人和码头工人。通过一次成功的{@dc 12}魅力（{@skill 威吓|XPHB}或{@skill 游说|XPHB}）检定，村民们会组成人链从海中传递水桶来灭火。"
-										},
-										{
-											"ENG_name": "Magic",
-											"name": "魔法",
-											"type": "item",
-											"entry": "由{@spell 造水术/枯水术|XPHB}（使用至少3环法术位施展）或类似效果创造的水可以浇灭火焰。"
+											"type": "insetReadaloud",
+											"id": "2ee",
+											"page": 138,
+											"entries": [
+												"村民们聚集在风暴之眼风向标周围，目光投向海岸。雷鸣声震撼大地，闪电的光芒照亮了从海上涌来的乌云。风向标的横杆开始旋转，整座建筑迸发出蓝绿色的能量光带。当风暴向避风港袭来时，乌云突然在村庄周围散开。尽管狂风在周围的乡野间呼啸，避风港却连一丝微风或一滴雨都没沾到。风暴过后，村民发出欢呼，有些人如释重负地哭泣。盖尔市长朝你们露出温暖的微笑。\"你们拯救了我们，\"她说。\"向避风港的英雄们致敬！\""
+											]
 										}
 									]
-								},
-								"当角色们这么做时，其他无私的村民们冲进燃烧的酒馆去营救被困的村民。"
+								}
 							]
 						},
 						{
-							"ENG_name": "Amid the Ashes",
-							"name": "灰烬之中",
-							"type": "entries",
-							"page": 131,
-							"id": "2ac",
+							"ENG_name": "History of Black Dragons",
+							"name": "黑龙的历史",
+							"type": "section",
+							"id": "2ef",
+							"page": 124,
 							"entries": [
-								"火焰熄灭，村民获救后，现场再度恢复平静。角色们可以与那些被救出的感激村民交谈。每位村民都持友好态度，对角色们深表感谢，并乐意提供他们所知的信息。",
-								"如果角色们在这场危机中没有采取任何行动，大火将被扑灭；然而，{@area 布雷佐|2ad|x}、{@area 内莉达|2ae|x}和{@area 鲁伯特|2af|x}会葬身火海。这种情况下，{@area 瓦特里|2b0|x}会对角色们充满敌意且拒绝与他们交谈。",
+								"{@font 乌塔·达拉斯特里克斯|languages/XPHB/Draconic/Iokharik-v2.woff2}",
 								{
-									"ENG_name": "Brezo",
-									"name": "布雷佐",
-									"type": "entries",
-									"page": 131,
-									"id": "2ad",
+									"type": "insetReadaloud",
+									"id": "2f0",
 									"entries": [
-										"当海盗突袭{@area 回春|2a1|x}时，布雷佐正在酒馆外对晨间人群演奏风笛。袭击期间，布雷佐目睹一条眉带伤疤的黑龙掠过村庄上空，喷射酸液洪流。就在海盗破门而入纵火焚烧前，布雷佐及时逃进了酒馆内。"
+										"两根突出的犄角\u2014\u2014几乎总是朝前生长，且2000年后优雅地弯曲\u2014\u2014再加上显著的颈部冠饰与蛇一般的舌头，定义了黑龙贯穿游戏历史的经典外观。"
 									]
 								},
 								{
-									"ENG_name": "Nelida",
-									"name": "内莉达",
-									"type": "entries",
-									"page": 131,
-									"id": "2ae",
-									"entries": [
-										"酒保听说过那些伴随海盗出现的伤痕累累黑龙的传说。这条龙的名字叫黑翼。旅行者们告诉她一个传言，称黑翼最近杀死了一群人类追随者，因为它觉得这些人类太过无能。据说黑翼已经放弃了它在更内陆城市阿达拉斯郊外的巢穴，现在正在寻找新家。"
-									]
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/135-07-006.black-dragon-spitting-acid.webp"
+									},
+									"width": 851,
+									"height": 850,
+									"title": "绝望之龙(1984)",
+									"credit": "Clyde Caldwell"
 								},
 								{
-									"ENG_name": "Rubert",
-									"name": "鲁伯特",
-									"type": "entries",
-									"page": 131,
-									"id": "2af",
-									"entries": [
-										"鲁伯特是来自阿达拉思的退伍士兵，对黑翼及其威胁了如指掌。这只巨龙狡诈而残忍。众所周知，黑翼身边常带着三只{@creature 暗幕魔兽|XMM|暗幕魔兽}，能让他通过黑暗帷幕来攻击敌人。"
-									]
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/136-07-007.black-dragon-1993.webp"
+									},
+									"width": 832,
+									"height": 987,
+									"title": "怪物图鉴（1993）",
+									"credit": "Mark A. Nelson"
 								},
 								{
-									"ENG_name": "Vatri Whistlebaum",
-									"name": "瓦特里·惠斯尔鲍姆",
-									"type": "entries",
-									"page": 132,
-									"id": "2b0",
-									"entries": [
-										"瓦特里·惠斯尔鲍姆在与获救村民交谈后，要求与角色们私下谈话。她告诉角色们，她的孙子皮埃尔·卡里森几个月前加入了{@area 钩石海盗|2b7|x}，追求刺激与冒险。瓦特里坚信只会做饭、缺乏其他技能的皮埃尔与这次袭击毫无关系。她担心皮埃尔此刻正身陷海盗巢穴某处。瓦特里请求角色们救出皮埃尔并带他回家。作为皮埃尔平安归来的回报，她愿意交出珍藏数十年的{@item 吉运之石|XDMG}。"
-									]
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/137-07-008.black-dragon-1977.webp"
+									},
+									"width": 684,
+									"height": 857,
+									"title": "怪物图鉴（1977）",
+									"credit": "David C. Sutherland"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/138-07-009.black-dragon-draconomicon.webp"
+									},
+									"width": 1278,
+									"height": 1813,
+									"title": "龙之书（2003）",
+									"credit": "Lars Grant-West"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/139-07-010.black-dragon-draginomicon.webp"
+									},
+									"width": 744,
+									"height": 1040,
+									"title": "被遗忘国度的冒险 (2021)",
+									"credit": "Jason A. Engle"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/140-07-011.black-dragon-anatomy.webp"
+									},
+									"width": 850,
+									"height": 388,
+									"title": "龙之书（2003）",
+									"credit": "Todd Lockwood"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/141-07-012.black-dragon-2014.webp"
+									},
+									"width": 850,
+									"height": 622,
+									"title": "怪物手册（2014）",
+									"credit": "Craig J Spearing"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/142-07-013.black-dragon-2008.webp"
+									},
+									"width": 1700,
+									"height": 1292,
+									"title": "怪物图鉴（2008）",
+									"credit": "Lars Grant-West"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/143-07-014.black-dragon-2023.webp"
+									},
+									"width": 1700,
+									"height": 738,
+									"title": "概念艺术（2023）",
+									"credit": "Alexander Ostrowski"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/144-07-015.black-dragon-2025.webp"
+									},
+									"width": 1700,
+									"height": 1100,
+									"title": "怪物图鉴（2025）",
+									"credit": "Martin Mottet"
 								}
 							]
 						}
 					]
 				},
 				{
-					"ENG_name": "Meeting the Mayor",
-					"name": "会见市长",
+					"ENG_name": "Credits",
+					"name": "制作组",
 					"type": "section",
-					"page": 132,
-					"id": "2b1",
+					"id": "40b",
+					"page": 2,
 					"entries": [
-						"在火焰被扑灭且角色们与任何生还者交谈后，朗读以下内容：",
 						{
-							"type": "insetReadaloud",
-							"page": 132,
-							"id": "2b2",
-							"entries": [
-								"当一位结实强壮、有着如云般白发的兽人女性走近时，人群中传出如释重负的低语声。\"盖尔市长，\"几个旁观者向她点头致意。市长在你们面前停下脚步，仔细打量着你们。\"请跟我来，\"她说道。"
+							"type": "list",
+							"style": "list-hang-notitle",
+							"columns": 2,
+							"items": [
+								{
+									"ENG_name": "Lead Designers:",
+									"name": "首席设计师：",
+									"type": "item",
+									"entry": "Amanda Hamon, James Wyatt"
+								},
+								{
+									"ENG_name": "Designers:",
+									"name": "设计师：",
+									"type": "item",
+									"entry": "Justice Ramin Arman, Makenzie De Armas, Anthony Joyce-Rivera, Renee Knipe, Ron Lundeen, Christopher Perkins, Patrick Renie, Erin Roberts, F. Wesley Schneider, Carl Sibley, Jason Tondro, Steve Townshend"
+								},
+								{
+									"ENG_name": "Rules Developers:",
+									"name": "规则开发者：",
+									"type": "item",
+									"entry": "Makenzie De Armas (lead), Jeremy Crawford, Ron Lundeen"
+								},
+								{
+									"ENG_name": "Editors:",
+									"name": "编辑：",
+									"type": "item",
+									"entry": "Judy Bauer (lead), Emma Candon, Sadie Lowry, Hannah Rose, Sue Weinlein, Hans Ziegler"
+								},
+								{
+									"ENG_name": "Art Directors:",
+									"name": "艺术指导：",
+									"type": "item",
+									"entry": "Matt Cole (lead), Fury Galluzzi, Josh Herman, Kate Irwin, Emi Tanji"
+								},
+								{
+									"ENG_name": "Graphic Designers:",
+									"name": "平面设计师：",
+									"type": "item",
+									"entry": "Matt Cole, Paolo Vacala"
+								},
+								{
+									"ENG_name": "Cover Illustrators:",
+									"name": "封面插画师：",
+									"type": "item",
+									"entry": "Justine Jones, Greg Staples"
+								},
+								{
+									"ENG_name": "Interior Illustrators:",
+									"name": "内页插画师：",
+									"type": "item",
+									"entry": "Tom Babbey, Daren Bader, Clyde Caldwell, Chippy, Simon Dominic, Jeff Easley, Luke Eidenschink, Larry Elmore, Jason A. Engle, Lars Grant-West, John Grello, Johan Grenier, Justine Jones, Andrew Kolb, Vance Kovacs, Andrey Kuzinskiy, Ed Kwong, Todd Lockwood, Antonio José Manzanedo, Dominik Mayer, Caio Monteiro, Martin Mottet, Jodie Muir, Mark A. Nelson, Alexander Ostrowski, Keith Parkinson, Anna Podedworna, Steve Prescott, Chris Rallis, Joshua Raphael, Richard Sardinha, Chris Seaman, Rudy Siswanto, Craig J Spearing, Ron Spencer, Leroy Steinmann, Zack Stella, Matt Stewart, Matt Stikker, David C. Sutherland, Autumn Rain Turkel, Paolo Vacala, Svetlin Velinov, Raoul Vitale, Jabari Weathers, Campbell White"
+								},
+								{
+									"ENG_name": "Cartographers:",
+									"name": "制图师：",
+									"type": "item",
+									"entry": "Francesca Baerald, Jared Blando, CoupleOfKooks, Andrew Kolb, Dyson Logos, Damien Mammoliti, Mike Schley, Paolo Vacala"
+								},
+								{
+									"ENG_name": "Consultants:",
+									"name": "顾问：",
+									"type": "item",
+									"entry": "Shawn Banerjee, Eytan Bernstein, Daniel Delgado, Sameer Joseph"
+								},
+								{
+									"ENG_name": "Producers:",
+									"name": "制作人：",
+									"type": "item",
+									"entry": "Rob Hawkey (lead), Bill Benham, Siera Bruggeman, Vanessa Hoskins"
+								}
 							]
 						},
-						"如果角色们帮助扑灭了莫克鱼怪酒馆的火灾，市长盖尔·惠滕比（中型，守序善良 {@creature 贵族|XMM}）会对角色们持有友好态度，并为他们所做之事表达感激。如果没有，市长则会持有敌对态度。她会告诉他们是{@area 钩石海盗|2b7|x}在一头黑龙的协助下袭击了村庄，大声质疑什么样的英雄会无视身处危难的无辜者，并建议角色们通过为村庄消除黑龙威胁来赎罪。",
-						"无论哪种情况，她都会带领角色们前往村庄广场。如果角色们跟随她，请宣读或转述以下内容：",
-						{
-							"type": "insetReadaloud",
-							"page": 132,
-							"id": "2b3",
-							"entries": [
-								"镇长将你护送至村庄广场，村民们正聚集在一座锻铁风向标周围。这座20英尺高的结构描绘了一条蛇形生物，其身躯由云雾构成。生物的铁制面容上布满深邃的抓痕，双眼处是两个空洞的眼窝。"
-							]
-						},
-						"镇长解释说，在海盗袭击期间，黑龙从风向标中抓出了两枚{@item 元素宝石，蓝宝石|XDMG|元素宝石（蓝宝石）}。如果她态度友善，会分享上述{@area \"风暴之眼风向标\"|2a2|x}下的所有信息。",
-						"作为调查动作，任何角色都可以检查风向标并进行一次{@dc 17}智力（{@skill 奥秘|XPHB}或{@skill 历史|XPHB}）检定。若成功，该角色会认出图案描绘的是一种原生于气元素位面的生物\u2014\u2014远古风暴。",
-						{
-							"ENG_name": "A Job Offer",
-							"name": "一份雇佣邀约",
-							"type": "entries",
-							"page": 132,
-							"id": "2b4",
-							"entries": [
-								"盖尔市长迫切希望在下一场风暴前找回{@item 元素宝石|XDMG|元素宝石}。她也对此感到担忧，因为科赛尔首领布兰德船长从未袭击过定居点，这使得今晨的突袭成为隐患。她怀疑黑龙与海盗们的新暴行有关。",
-								"梅尔市长向角色提供500金币以潜入{@area 鹅卵钩湾|2b5|x}的海盗藏身处，寻找宝石并将其归还至风向标。她还要求角色尽可能击杀暗翼，但她强调了找回宝石更为重要。",
-								"如果角色们显得缺乏动力且市长盖尔态度友善，她会将报酬提高到800金币\u2014\u2014这是她的全部个人积蓄。市长强调时间紧迫，不容浪费，因为有报告显示今晚将有一场风暴袭击瑞斯庇特。"
-							]
-						}
-					]
-				},
-				{
-					"ENG_name": "Cobblehook Cove",
-					"name": "鹅卵钩湾",
-					"type": "section",
-					"page": 132,
-					"id": "2b5",
-					"entries": [
+						"{@i 本书献给Christopher Perkins，感谢他数十年来为《龙与地下城》作出的贡献。}",
 						{
 							"type": "gallery",
 							"images": [
@@ -764,3121 +3853,38 @@
 									"type": "image",
 									"href": {
 										"type": "internal",
-										"path": "adventure/DrDe/130-map-07.02-cobblehook-cove-dm.webp"
+										"path": "adventure/DrDe/199-11-001.title-splash.webp"
 									},
-									"imageType": "map",
-									"title": "地图7.2：鹅卵石钩湾",
-									"credit": "Jared Blando",
-									"width": 3165,
-									"height": 4096,
-									"id": "419",
-									"grid": {
-										"type": "square",
-										"size": 192,
-										"offsetX": 116,
-										"offsetY": 97,
-										"scale": 5
-									},
-									"mapRegions": [
-										{
-											"area": "2e6",
-											"points": [
-												[
-													643,
-													1087
-												],
-												[
-													723,
-													1152
-												],
-												[
-													824,
-													1218
-												],
-												[
-													884,
-													1277
-												],
-												[
-													918,
-													1327
-												],
-												[
-													999,
-													1311
-												],
-												[
-													1038,
-													1289
-												],
-												[
-													1040,
-													1227
-												],
-												[
-													1048,
-													1174
-												],
-												[
-													1086,
-													1150
-												],
-												[
-													1132,
-													1111
-												],
-												[
-													1161,
-													1073
-												],
-												[
-													1209,
-													1030
-												],
-												[
-													1242,
-													987
-												],
-												[
-													1242,
-													936
-												],
-												[
-													1218,
-													886
-												],
-												[
-													1237,
-													843
-												],
-												[
-													1306,
-													818
-												],
-												[
-													1327,
-													793
-												],
-												[
-													1346,
-													766
-												],
-												[
-													1373,
-													745
-												],
-												[
-													1367,
-													658
-												],
-												[
-													1361,
-													589
-												],
-												[
-													1281,
-													558
-												],
-												[
-													1254,
-													586
-												],
-												[
-													1207,
-													574
-												],
-												[
-													1153,
-													531
-												],
-												[
-													1129,
-													474
-												],
-												[
-													1098,
-													447
-												],
-												[
-													1098,
-													405
-												],
-												[
-													1077,
-													349
-												],
-												[
-													1046,
-													301
-												],
-												[
-													1000,
-													270
-												],
-												[
-													950,
-													246
-												],
-												[
-													918,
-													236
-												],
-												[
-													863,
-													230
-												],
-												[
-													835,
-													230
-												],
-												[
-													811,
-													253
-												],
-												[
-													785,
-													279
-												],
-												[
-													760,
-													302
-												],
-												[
-													712,
-													302
-												],
-												[
-													671,
-													301
-												],
-												[
-													638,
-													323
-												],
-												[
-													584,
-													355
-												],
-												[
-													552,
-													366
-												],
-												[
-													535,
-													398
-												],
-												[
-													513,
-													442
-												],
-												[
-													484,
-													459
-												],
-												[
-													453,
-													472
-												],
-												[
-													424,
-													495
-												],
-												[
-													418,
-													520
-												],
-												[
-													415,
-													577
-												],
-												[
-													438,
-													603
-												],
-												[
-													462,
-													641
-												],
-												[
-													476,
-													687
-												],
-												[
-													468,
-													729
-												],
-												[
-													493,
-													778
-												],
-												[
-													496,
-													843
-												],
-												[
-													484,
-													888
-												],
-												[
-													476,
-													928
-												],
-												[
-													472,
-													960
-												],
-												[
-													489,
-													984
-												],
-												[
-													530,
-													994
-												],
-												[
-													554,
-													1032
-												],
-												[
-													595,
-													1054
-												]
-											]
-										},
-										{
-											"area": "2e4",
-											"points": [
-												[
-													1667,
-													529
-												],
-												[
-													1692,
-													502
-												],
-												[
-													1767,
-													499
-												],
-												[
-													1815,
-													513
-												],
-												[
-													1861,
-													542
-												],
-												[
-													1940,
-													591
-												],
-												[
-													1963,
-													622
-												],
-												[
-													1960,
-													655
-												],
-												[
-													1992,
-													695
-												],
-												[
-													2018,
-													687
-												],
-												[
-													2055,
-													670
-												],
-												[
-													2089,
-													675
-												],
-												[
-													2128,
-													717
-												],
-												[
-													2150,
-													742
-												],
-												[
-													2209,
-													788
-												],
-												[
-													2234,
-													821
-												],
-												[
-													2254,
-													872
-												],
-												[
-													2252,
-													928
-												],
-												[
-													2225,
-													911
-												],
-												[
-													2175,
-													912
-												],
-												[
-													2144,
-													921
-												],
-												[
-													2105,
-													917
-												],
-												[
-													2068,
-													903
-												],
-												[
-													2050,
-													857
-												],
-												[
-													2019,
-													855
-												],
-												[
-													1986,
-													824
-												],
-												[
-													1957,
-													831
-												],
-												[
-													1958,
-													858
-												],
-												[
-													1885,
-													869
-												],
-												[
-													1822,
-													829
-												],
-												[
-													1770,
-													813
-												],
-												[
-													1743,
-													807
-												],
-												[
-													1727,
-													815
-												],
-												[
-													1725,
-													850
-												],
-												[
-													1719,
-													881
-												],
-												[
-													1662,
-													891
-												],
-												[
-													1619,
-													874
-												],
-												[
-													1590,
-													833
-												],
-												[
-													1571,
-													790
-												],
-												[
-													1571,
-													761
-												],
-												[
-													1577,
-													733
-												],
-												[
-													1614,
-													698
-												],
-												[
-													1638,
-													682
-												],
-												[
-													1677,
-													698
-												],
-												[
-													1704,
-													713
-												],
-												[
-													1737,
-													728
-												],
-												[
-													1782,
-													718
-												],
-												[
-													1808,
-													701
-												],
-												[
-													1809,
-													664
-												],
-												[
-													1777,
-													637
-												],
-												[
-													1755,
-													610
-												],
-												[
-													1712,
-													603
-												],
-												[
-													1695,
-													594
-												],
-												[
-													1679,
-													558
-												]
-											]
-										},
-										{
-											"area": "2da",
-											"points": [
-												[
-													2518,
-													1169
-												],
-												[
-													2582,
-													1176
-												],
-												[
-													2614,
-													1164
-												],
-												[
-													2619,
-													1145
-												],
-												[
-													2618,
-													1104
-												],
-												[
-													2618,
-													1066
-												],
-												[
-													2642,
-													1049
-												],
-												[
-													2675,
-													1048
-												],
-												[
-													2728,
-													1049
-												],
-												[
-													2762,
-													1054
-												],
-												[
-													2801,
-													1071
-												],
-												[
-													2824,
-													1095
-												],
-												[
-													2848,
-													1131
-												],
-												[
-													2855,
-													1185
-												],
-												[
-													2843,
-													1207
-												],
-												[
-													2823,
-													1237
-												],
-												[
-													2810,
-													1258
-												],
-												[
-													2781,
-													1284
-												],
-												[
-													2743,
-													1297
-												],
-												[
-													2727,
-													1326
-												],
-												[
-													2695,
-													1386
-												],
-												[
-													2683,
-													1354
-												],
-												[
-													2647,
-													1315
-												],
-												[
-													2602,
-													1277
-												],
-												[
-													2575,
-													1239
-												],
-												[
-													2536,
-													1195
-												]
-											]
-										},
-										{
-											"area": "2d7",
-											"points": [
-												[
-													2727,
-													1465
-												],
-												[
-													2759,
-													1488
-												],
-												[
-													2794,
-													1502
-												],
-												[
-													2819,
-													1534
-												],
-												[
-													2838,
-													1553
-												],
-												[
-													2870,
-													1559
-												],
-												[
-													2906,
-													1574
-												],
-												[
-													2934,
-													1586
-												],
-												[
-													2951,
-													1608
-												],
-												[
-													2973,
-													1644
-												],
-												[
-													2973,
-													1657
-												],
-												[
-													2954,
-													1676
-												],
-												[
-													2928,
-													1704
-												],
-												[
-													2908,
-													1743
-												],
-												[
-													2884,
-													1773
-												],
-												[
-													2841,
-													1809
-												],
-												[
-													2807,
-													1862
-												],
-												[
-													2786,
-													1866
-												],
-												[
-													2764,
-													1887
-												],
-												[
-													2702,
-													1904
-												],
-												[
-													2675,
-													1891
-												],
-												[
-													2696,
-													1848
-												],
-												[
-													2685,
-													1795
-												],
-												[
-													2661,
-													1760
-												],
-												[
-													2647,
-													1745
-												],
-												[
-													2613,
-													1742
-												],
-												[
-													2618,
-													1701
-												],
-												[
-													2623,
-													1680
-												],
-												[
-													2661,
-													1656
-												],
-												[
-													2704,
-													1627
-												],
-												[
-													2716,
-													1601
-												],
-												[
-													2719,
-													1555
-												],
-												[
-													2705,
-													1534
-												],
-												[
-													2719,
-													1502
-												]
-											]
-										},
-										{
-											"area": "2d3",
-											"points": [
-												[
-													1874,
-													1828
-												],
-												[
-													1895,
-													1824
-												],
-												[
-													1936,
-													1821
-												],
-												[
-													1960,
-													1819
-												],
-												[
-													1987,
-													1776
-												],
-												[
-													1994,
-													1735
-												],
-												[
-													1987,
-													1704
-												],
-												[
-													1963,
-													1682
-												],
-												[
-													1956,
-													1644
-												],
-												[
-													1973,
-													1607
-												],
-												[
-													2029,
-													1591
-												],
-												[
-													2076,
-													1567
-												],
-												[
-													2124,
-													1568
-												],
-												[
-													2171,
-													1562
-												],
-												[
-													2191,
-													1548
-												],
-												[
-													2223,
-													1579
-												],
-												[
-													2274,
-													1625
-												],
-												[
-													2300,
-													1637
-												],
-												[
-													2263,
-													1663
-												],
-												[
-													2275,
-													1692
-												],
-												[
-													2306,
-													1712
-												],
-												[
-													2364,
-													1857
-												],
-												[
-													2330,
-													1879
-												],
-												[
-													2261,
-													1899
-												],
-												[
-													2189,
-													1896
-												],
-												[
-													2156,
-													1888
-												],
-												[
-													2121,
-													1920
-												],
-												[
-													2125,
-													1963
-												],
-												[
-													2136,
-													1994
-												],
-												[
-													2161,
-													2043
-												],
-												[
-													2190,
-													2087
-												],
-												[
-													2209,
-													2140
-												],
-												[
-													2209,
-													2296
-												],
-												[
-													2162,
-													2241
-												],
-												[
-													2124,
-													2193
-												],
-												[
-													2069,
-													2162
-												],
-												[
-													2018,
-													2140
-												],
-												[
-													1968,
-													2133
-												],
-												[
-													1939,
-													2119
-												],
-												[
-													1894,
-													2047
-												],
-												[
-													1874,
-													1996
-												],
-												[
-													1838,
-													1960
-												]
-											]
-										},
-										{
-											"area": "2c8",
-											"points": [
-												[
-													737,
-													2466
-												],
-												[
-													769,
-													2442
-												],
-												[
-													813,
-													2404
-												],
-												[
-													856,
-													2362
-												],
-												[
-													896,
-													2339
-												],
-												[
-													970,
-													2320
-												],
-												[
-													976,
-													2378
-												],
-												[
-													902,
-													2441
-												],
-												[
-													902,
-													2466
-												]
-											]
-										},
-										{
-											"area": "2c9",
-											"points": [
-												[
-													1534,
-													2500
-												],
-												[
-													1661,
-													2500
-												],
-												[
-													1661,
-													2340
-												],
-												[
-													1635,
-													2340
-												],
-												[
-													1591,
-													2349
-												],
-												[
-													1565,
-													2338
-												],
-												[
-													1534,
-													2352
-												]
-											]
-										},
-										{
-											"area": "2ca",
-											"points": [
-												[
-													1763,
-													2548
-												],
-												[
-													1763,
-													2428
-												],
-												[
-													1798,
-													2387
-												],
-												[
-													1835,
-													2402
-												],
-												[
-													1859,
-													2418
-												],
-												[
-													1868,
-													2440
-												],
-												[
-													1897,
-													2472
-												],
-												[
-													1903,
-													2514
-												],
-												[
-													1918,
-													2544
-												],
-												[
-													1937,
-													2565
-												],
-												[
-													1885,
-													2629
-												]
-											]
-										},
-										{
-											"area": "2c1",
-											"points": [
-												[
-													568,
-													3102
-												],
-												[
-													589,
-													3025
-												],
-												[
-													600,
-													2924
-												],
-												[
-													634,
-													2816
-												],
-												[
-													679,
-													2759
-												],
-												[
-													731,
-													2721
-												],
-												[
-													832,
-													2709
-												],
-												[
-													858,
-													2663
-												],
-												[
-													868,
-													2634
-												],
-												[
-													941,
-													2620
-												],
-												[
-													986,
-													2591
-												],
-												[
-													1005,
-													2538
-												],
-												[
-													1014,
-													2519
-												],
-												[
-													1019,
-													2469
-												],
-												[
-													1062,
-													2463
-												],
-												[
-													1107,
-													2464
-												],
-												[
-													1150,
-													2435
-												],
-												[
-													1212,
-													2417
-												],
-												[
-													1282,
-													2409
-												],
-												[
-													1352,
-													2404
-												],
-												[
-													1428,
-													2470
-												],
-												[
-													1523,
-													2542
-												],
-												[
-													1572,
-													2584
-												],
-												[
-													1627,
-													2596
-												],
-												[
-													1667,
-													2622
-												],
-												[
-													1727,
-													2667
-												],
-												[
-													1760,
-													2703
-												],
-												[
-													1790,
-													2754
-												],
-												[
-													1790,
-													2980
-												],
-												[
-													1815,
-													3105
-												],
-												[
-													1825,
-													3253
-												],
-												[
-													1760,
-													3375
-												],
-												[
-													1739,
-													3417
-												],
-												[
-													1698,
-													3452
-												],
-												[
-													1657,
-													3476
-												],
-												[
-													1623,
-													3517
-												],
-												[
-													1532,
-													3521
-												],
-												[
-													1393,
-													3496
-												],
-												[
-													1343,
-													3505
-												],
-												[
-													1314,
-													3547
-												],
-												[
-													1192,
-													3584
-												],
-												[
-													1034,
-													3572
-												],
-												[
-													703,
-													3428
-												],
-												[
-													686,
-													3399
-												],
-												[
-													602,
-													3246
-												],
-												[
-													573,
-													3162
-												]
-											]
-										},
-										{
-											"area": "2cb",
-											"points": [
-												[
-													2083,
-													2958
-												],
-												[
-													2097,
-													2903
-												],
-												[
-													2130,
-													2843
-												],
-												[
-													2133,
-													2802
-												],
-												[
-													1902,
-													2802
-												],
-												[
-													1902,
-													2709
-												],
-												[
-													1809,
-													2709
-												],
-												[
-													1809,
-													2958
-												]
-											]
-										},
-										{
-											"area": "2d1",
-											"points": [
-												[
-													1902,
-													2641
-												],
-												[
-													1958,
-													2577
-												],
-												[
-													1988,
-													2584
-												],
-												[
-													2033,
-													2586
-												],
-												[
-													2077,
-													2550
-												],
-												[
-													2117,
-													2514
-												],
-												[
-													2161,
-													2510
-												],
-												[
-													2177,
-													2501
-												],
-												[
-													2280,
-													2653
-												],
-												[
-													2282,
-													2685
-												],
-												[
-													2258,
-													2712
-												],
-												[
-													2222,
-													2731
-												],
-												[
-													2177,
-													2734
-												],
-												[
-													2151,
-													2733
-												],
-												[
-													2137,
-													2766
-												],
-												[
-													2129,
-													2780
-												],
-												[
-													1915,
-													2780
-												],
-												[
-													1915,
-													2711
-												],
-												[
-													1986,
-													2711
-												],
-												[
-													1986,
-													2692
-												],
-												[
-													1902,
-													2692
-												]
-											]
-										},
-										{
-											"area": "2bf",
-											"points": [
-												[
-													2016,
-													3309
-												],
-												[
-													2017,
-													3258
-												],
-												[
-													2053,
-													3217
-												],
-												[
-													2088,
-													3143
-												],
-												[
-													2135,
-													3153
-												],
-												[
-													2165,
-													3182
-												],
-												[
-													2221,
-													3197
-												],
-												[
-													2280,
-													3213
-												],
-												[
-													2325,
-													3219
-												],
-												[
-													2359,
-													3215
-												],
-												[
-													2407,
-													3194
-												],
-												[
-													2438,
-													3157
-												],
-												[
-													2462,
-													3119
-												],
-												[
-													2493,
-													3059
-												],
-												[
-													2508,
-													3016
-												],
-												[
-													2536,
-													2969
-												],
-												[
-													2563,
-													2944
-												],
-												[
-													2590,
-													2920
-												],
-												[
-													2601,
-													2886
-												],
-												[
-													2642,
-													2848
-												],
-												[
-													2690,
-													2836
-												],
-												[
-													2733,
-													2819
-												],
-												[
-													2801,
-													2804
-												],
-												[
-													2843,
-													2773
-												],
-												[
-													2879,
-													2785
-												],
-												[
-													2915,
-													2814
-												],
-												[
-													2964,
-													2824
-												],
-												[
-													3048,
-													2824
-												],
-												[
-													3113,
-													2836
-												],
-												[
-													3139,
-													2872
-												],
-												[
-													3121,
-													2948
-												],
-												[
-													3129,
-													3042
-												],
-												[
-													3126,
-													3111
-												],
-												[
-													3090,
-													3155
-												],
-												[
-													3076,
-													3203
-												],
-												[
-													3101,
-													3262
-												],
-												[
-													3093,
-													3374
-												],
-												[
-													3076,
-													3393
-												],
-												[
-													3057,
-													3454
-												],
-												[
-													3090,
-													3507
-												],
-												[
-													3083,
-													3609
-												],
-												[
-													3111,
-													3621
-												],
-												[
-													3132,
-													3719
-												],
-												[
-													3088,
-													3767
-												],
-												[
-													3076,
-													3839
-												],
-												[
-													3072,
-													3922
-												],
-												[
-													3069,
-													3958
-												],
-												[
-													3014,
-													3957
-												],
-												[
-													2973,
-													3936
-												],
-												[
-													2877,
-													3920
-												],
-												[
-													2807,
-													3896
-												],
-												[
-													2783,
-													3878
-												],
-												[
-													2704,
-													3862
-												],
-												[
-													2647,
-													3848
-												],
-												[
-													2575,
-													3828
-												],
-												[
-													2546,
-													3852
-												],
-												[
-													2452,
-													3875
-												],
-												[
-													2433,
-													3876
-												],
-												[
-													2368,
-													3848
-												],
-												[
-													2313,
-													3807
-												],
-												[
-													2259,
-													3822
-												],
-												[
-													2243,
-													3692
-												],
-												[
-													2217,
-													3661
-												],
-												[
-													2174,
-													3608
-												],
-												[
-													2121,
-													3574
-												],
-												[
-													2105,
-													3536
-												],
-												[
-													2078,
-													3478
-												],
-												[
-													2030,
-													3373
-												]
-											]
-										},
-										{
-											"area": "2e1",
-											"points": [
-												[
-													194,
-													2166
-												],
-												[
-													175,
-													2096
-												],
-												[
-													199,
-													2046
-												],
-												[
-													207,
-													1998
-												],
-												[
-													233,
-													1950
-												],
-												[
-													260,
-													1907
-												],
-												[
-													299,
-													1866
-												],
-												[
-													348,
-													1835
-												],
-												[
-													388,
-													1809
-												],
-												[
-													433,
-													1824
-												],
-												[
-													452,
-													1859
-												],
-												[
-													496,
-													1873
-												],
-												[
-													554,
-													1861
-												],
-												[
-													583,
-													1868
-												],
-												[
-													602,
-													1896
-												],
-												[
-													609,
-													1944
-												],
-												[
-													609,
-													1975
-												],
-												[
-													592,
-													2015
-												],
-												[
-													604,
-													2035
-												],
-												[
-													632,
-													2058
-												],
-												[
-													623,
-													2114
-												],
-												[
-													590,
-													2145
-												],
-												[
-													559,
-													2168
-												],
-												[
-													556,
-													2214
-												],
-												[
-													556,
-													2253
-												],
-												[
-													537,
-													2293
-												],
-												[
-													496,
-													2340
-												],
-												[
-													458,
-													2343
-												],
-												[
-													421,
-													2365
-												],
-												[
-													360,
-													2359
-												],
-												[
-													293,
-													2355
-												],
-												[
-													269,
-													2326
-												],
-												[
-													252,
-													2293
-												],
-												[
-													233,
-													2247
-												],
-												[
-													221,
-													2207
-												],
-												[
-													211,
-													2185
-												]
-											]
-										},
-										{
-											"area": "2df",
-											"points": [
-												[
-													656,
-													1573
-												],
-												[
-													721,
-													1542
-												],
-												[
-													755,
-													1523
-												],
-												[
-													802,
-													1514
-												],
-												[
-													858,
-													1517
-												],
-												[
-													899,
-													1532
-												],
-												[
-													911,
-													1575
-												],
-												[
-													928,
-													1588
-												],
-												[
-													959,
-													1584
-												],
-												[
-													999,
-													1583
-												],
-												[
-													1024,
-													1557
-												],
-												[
-													1035,
-													1521
-												],
-												[
-													1060,
-													1482
-												],
-												[
-													1074,
-													1444
-												],
-												[
-													1110,
-													1426
-												],
-												[
-													1151,
-													1403
-												],
-												[
-													1159,
-													1380
-												],
-												[
-													1201,
-													1367
-												],
-												[
-													1243,
-													1370
-												],
-												[
-													1294,
-													1384
-												],
-												[
-													1348,
-													1377
-												],
-												[
-													1390,
-													1371
-												],
-												[
-													1412,
-													1348
-												],
-												[
-													1414,
-													1396
-												],
-												[
-													1416,
-													1440
-												],
-												[
-													1430,
-													1488
-												],
-												[
-													1417,
-													1511
-												],
-												[
-													1392,
-													1544
-												],
-												[
-													1384,
-													1593
-												],
-												[
-													1369,
-													1648
-												],
-												[
-													1357,
-													1667
-												],
-												[
-													1333,
-													1672
-												],
-												[
-													1307,
-													1720
-												],
-												[
-													1281,
-													1740
-												],
-												[
-													1242,
-													1752
-												],
-												[
-													1233,
-													1787
-												],
-												[
-													1204,
-													1801
-												],
-												[
-													1145,
-													1820
-												],
-												[
-													1093,
-													1818
-												],
-												[
-													1012,
-													1758
-												],
-												[
-													969,
-													1765
-												],
-												[
-													899,
-													1761
-												],
-												[
-													844,
-													1741
-												],
-												[
-													799,
-													1732
-												],
-												[
-													782,
-													1739
-												],
-												[
-													767,
-													1763
-												],
-												[
-													743,
-													1783
-												],
-												[
-													712,
-													1751
-												],
-												[
-													679,
-													1691
-												],
-												[
-													657,
-													1626
-												]
-											]
-										},
-										{
-											"area": "2dd",
-											"points": [
-												[
-													1446,
-													1493
-												],
-												[
-													1427,
-													1441
-												],
-												[
-													1424,
-													1338
-												],
-												[
-													1456,
-													1303
-												],
-												[
-													1487,
-													1255
-												],
-												[
-													1501,
-													1239
-												],
-												[
-													1522,
-													1210
-												],
-												[
-													1562,
-													1195
-												],
-												[
-													1590,
-													1189
-												],
-												[
-													1607,
-													1176
-												],
-												[
-													1640,
-													1186
-												],
-												[
-													1683,
-													1192
-												],
-												[
-													1725,
-													1193
-												],
-												[
-													1775,
-													1187
-												],
-												[
-													1805,
-													1179
-												],
-												[
-													1827,
-													1159
-												],
-												[
-													1846,
-													1131
-												],
-												[
-													1874,
-													1092
-												],
-												[
-													1868,
-													1041
-												],
-												[
-													1854,
-													996
-												],
-												[
-													1839,
-													965
-												],
-												[
-													1856,
-													945
-												],
-												[
-													1890,
-													947
-												],
-												[
-													1916,
-													946
-												],
-												[
-													1945,
-													969
-												],
-												[
-													1982,
-													993
-												],
-												[
-													1976,
-													1022
-												],
-												[
-													1978,
-													1056
-												],
-												[
-													2001,
-													1071
-												],
-												[
-													2000,
-													1101
-												],
-												[
-													2012,
-													1143
-												],
-												[
-													2014,
-													1161
-												],
-												[
-													2036,
-													1193
-												],
-												[
-													2060,
-													1222
-												],
-												[
-													2089,
-													1243
-												],
-												[
-													2115,
-													1260
-												],
-												[
-													2161,
-													1291
-												],
-												[
-													2192,
-													1309
-												],
-												[
-													2231,
-													1324
-												],
-												[
-													2199,
-													1349
-												],
-												[
-													2151,
-													1363
-												],
-												[
-													2117,
-													1382
-												],
-												[
-													2066,
-													1403
-												],
-												[
-													2024,
-													1375
-												],
-												[
-													1978,
-													1361
-												],
-												[
-													1952,
-													1369
-												],
-												[
-													1935,
-													1394
-												],
-												[
-													1897,
-													1424
-												],
-												[
-													1855,
-													1454
-												],
-												[
-													1791,
-													1450
-												],
-												[
-													1746,
-													1433
-												],
-												[
-													1683,
-													1421
-												],
-												[
-													1657,
-													1399
-												],
-												[
-													1607,
-													1399
-												],
-												[
-													1559,
-													1414
-												],
-												[
-													1525,
-													1428
-												],
-												[
-													1504,
-													1447
-												],
-												[
-													1483,
-													1476
-												]
-											]
-										}
-									],
-									"hrefThumbnail": {
-										"type": "internal",
-										"path": "adventure/DrDe/thumbnail/130-map-07.02-cobblehook-cove-dm.webp"
-									}
-								},
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "adventure/DrDe/131-map-07.02-cobblehook-cove-player.webp"
-									},
-									"imageType": "mapPlayer",
-									"title": "玩家版本",
-									"width": 3165,
-									"height": 4096,
-									"credit": "Jared Blando",
-									"mapParent": {
-										"id": "419"
-									},
-									"grid": {
-										"type": "square",
-										"size": 192,
-										"offsetX": 116,
-										"offsetY": 91,
-										"scale": 5
-									}
-								}
-							]
-						},
-						"{@area 钩石海盗|2b7|x}的藏身处相对容易到达，盖尔市长可以为角色们指明方向。这处海湾距离六英里，有一条沿着海岸悬崖的知名小径经过{@area 回春|2a1|x}，通往海盗洞穴。",
-						"在角色前往海湾之前，允许他们购买任何所需的非魔法物资。",
-						{
-							"ENG_name": "Approaching the Cove",
-							"name": "接近海湾",
-							"type": "entries",
-							"page": 132,
-							"id": "2b6",
-							"entries": [
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "adventure/DrDe/132-07-002.cobblehook-cove-ship.webp"
-									},
-									"credit": "Matt Stikker",
 									"width": 850,
-									"height": 2285
-								},
-								"从Respite到Cobblehook Cove的旅程原本平静无事，但当角色们接近目的地时就会变得颇具挑战，因为该区域被黑龙巢穴的魔法所扭曲。除了{@book 怪物图鉴|XMM}中描述的臭雾气与污染水源外，周围的植被变得浓密且扭曲，泥土小径泥泞不堪并开始散发硫磺味。",
-								"将上述环境细节视为{@action 研究|XPHB}动作的角色可以进行一次{@dc 12}智力（{@skill 奥秘|XPHB}或{@skill 自然|XPHB}）检定。若成功，该角色会认出这些是黑龙巢穴在附近的迹象。"
-							]
-						},
-						{
-							"ENG_name": "Cobblehook Corsairs",
-							"name": "钩石海盗",
-							"type": "entries",
-							"page": 132,
-							"id": "2b7",
-							"entries": [
-								"除皮埃尔外，仍留在海湾的海盗中，只有那些宣誓永远效忠黑翼的人。除非另有说明，这些海盗均为混乱邪恶阵营，且仅称黑翼为\"船长\"。",
-								"当海盗注意到一个角色时，他们会立即向附近的盟友呼救并开始战斗。这些过度自信的海盗会战斗至死。"
-							]
-						},
-						{
-							"ENG_name": "Cobblehook Cove Features",
-							"name": "碎钩湾特性",
-							"type": "entries",
-							"page": 134,
-							"id": "2b8",
-							"entries": [
-								"除非另有说明，卵石钩湾具有以下特征。",
-								{
-									"ENG_name": "Acid Pools",
-									"name": "酸液池",
-									"type": "entries",
-									"page": 134,
-									"id": "2b9",
-									"entries": [
-										"自从黑翼将小湾作为巢穴后，这里便充满了沸腾的酸液池。这些酸液池在{@area 地图：卵石钩湾|419|x}中标出。生物若在一个回合内首次进入酸液或在其内部开始回合，将受到11（{@dice 2d10}）点强酸伤害。未被穿着或携带的非魔法物品同样会受到此伤害。"
-									]
-								},
-								{
-									"ENG_name": "Ceilings",
-									"name": "天花板",
-									"type": "entries",
-									"page": 134,
-									"id": "2ba",
-									"entries": [
-										"在海湾的岩石洞穴中，除区域{@area B13|2e6|x}的天花板高达80英尺外，其他区域天花板高度均为40英尺。海湾人造建筑（区域{@area B3|2c6|x}和{@area B4|2cb|x}）的天花板高度为20英尺。"
-									]
-								},
-								{
-									"ENG_name": "Doors",
-									"name": "门",
-									"type": "entries",
-									"page": 134,
-									"id": "2bb",
-									"entries": [
-										"小湾内的门都未上锁，除了通往区域{@area B5|2d1|x}的门以及区域B6的侧室门，后者通向藏宝处。"
-									]
-								},
-								{
-									"ENG_name": "Elemental Gems",
-									"name": "元素宝石",
-									"type": "entries",
-									"page": 134,
-									"id": "2bc",
-									"entries": [
-										"角色们寻找的{@item 元素宝石，蓝宝石|XDMG|元素宝石（蓝宝石）}其中一颗在B6区域；另一颗在B13区域。"
-									]
-								},
-								{
-									"ENG_name": "Lighting",
-									"name": "光照",
-									"type": "entries",
-									"page": 134,
-									"id": "2bd",
-									"entries": [
-										"壁架上的环境光或{@item 火把|XPHB|火把}提供 {@variantrule 明亮光照|XPHB}（区域 {@area B1|2bf|x}\u2013{@area B6|2d3|x}） 。区域 {@area B7|2d7|x}\u2013{@area B12|2e4|x} 被黑暗 笼罩，描述默认角色拥有黑暗视觉能力。壁架上摇曳的{@item 火把|XPHB|火把}提供 {@variantrule 微光光照|XPHB}（区域{@area B13|2e6|x}）。"
-									]
+									"height": 963,
+									"credit": "Alexander Ostrowski"
 								}
 							]
 						},
 						{
-							"ENG_name": "Cobblehook Cove Locations",
-							"name": "卵石钩湾地点",
-							"type": "entries",
-							"page": 134,
-							"id": "2be",
-							"entries": [
-								"以下地点与{@area 地图：卵石钩湾|419|x}相关联。",
+							"type": "gallery",
+							"images": [
 								{
-									"ENG_name": "B1: Cave Entrance",
-									"name": "B1: 洞穴入口",
-									"type": "entries",
-									"page": 134,
-									"id": "2bf",
-									"entries": [
-										{
-											"type": "insetReadaloud",
-											"page": 134,
-											"id": "2c0",
-											"entries": [
-												"迷雾小径通向一个山洞入口。洞内高耸的石笋顶端栖息着三只色彩斑斓的鹦鹉，正在梳理羽毛。"
-											]
-										},
-										"这三只鹦鹉都使用{@creature 渡鸦|XMM}的怪物图鉴数据。若有任何一只鹦鹉注意到角色们，它会大声鸣叫，警告位于{@area B2|2c1|x}区域的{@area 海盗|2b7|x}。"
-									]
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/200-11-002.traditional-cover.webp"
+									},
+									"width": 850,
+									"height": 951,
+									"title": "封面故事：在Greg Staples创作的这张极具张力的海报中，三位勇敢的冒险者直面由五种色彩龙所带来的未知险境。"
 								},
 								{
-									"ENG_name": "B2: Seaside Cave",
-									"name": "B2: 海滨洞穴",
-									"type": "entries",
-									"page": 134,
-									"id": "2c1",
-									"entries": [
-										{
-											"type": "insetReadaloud",
-											"page": 134,
-											"id": "2c2",
-											"entries": [
-												"墙壁烛台上的火把照亮了这片广阔的洞窟，映照出岩壁突出的岩架和紧贴墙壁搭建的简陋木屋。南边的洞穴开口通向大海，一艘悬挂绿色船帆的船只停泊在码头边。洞穴中央有一潭浑浊的水池正冒着气泡。肮脏邋遢的人们四处游荡，而池边一只巨大的鳄鱼正用它那布满利齿的大嘴碾碎一根多肉的骨头。"
-											]
-										},
-										"这里聚集了八名种族和体型各异的海盗。在酸液池（见下文）附近，六名海盗（{@creature 海盗|XMM|海盗们}）正调侃着袭击{@area 回春|2a1|x}的行动。他们旁边趴着一头宠物{@creature 巨鳄|XMM}，会在海盗开战时加入战斗。码头旁停泊的船只边站着两名肌肉发达的海盗（{@creature 海盗船长|XMM|海盗船长}），他们刚把休憩处的战利品运到B6区域。",
-										{
-											"ENG_name": "Acid Pool",
-											"name": "酸液池",
-											"type": "entries",
-											"page": 135,
-											"id": "2c3",
-											"entries": [
-												"一个角色通过执行{@action 搜索|XPHB}动作凝视中央酸液池时，可以进行一次{@dc 20}感知（{@skill 察觉|XPHB}）检定。成功时，角色发现池子通往一条地下隧道。隧道通往区域{@area B11|2e1|x}。对于大多数人来说，游过隧道中的酸液是致命的（参见\"{@area 碎钩湾特性|2b8|x}\"），但黑翼频繁使用这条通道。"
-											]
-										},
-										{
-											"ENG_name": "Ledges",
-											"name": "岩架",
-											"type": "entries",
-											"page": 135,
-											"id": "2c4",
-											"entries": [
-												"洞穴两侧北面的岩壁高出地面10尺，由一块5尺宽的木板相连。"
-											]
-										},
-										{
-											"ENG_name": "Pirate Ship",
-											"name": "海盗船",
-											"type": "entries",
-											"page": 135,
-											"id": "2c5",
-											"entries": [
-												"这艘船是海盗们清晨突袭Respite时所乘的。船上既无战利品，也无船员。它那绿色的船帆看似新缝制的，上面绘有一条狞笑的黑龙。"
-											]
-										}
-									]
-								},
-								{
-									"ENG_name": "B3: Crew Quarters",
-									"name": "B3: 船员宿舍",
-									"type": "entries",
-									"page": 135,
-									"id": "2c6",
-									"entries": [
-										"摇摇欲坠的门通向这些发霉的木结构建筑的每一间。",
-										{
-											"type": "insetReadaloud",
-											"page": 135,
-											"id": "2c7",
-											"entries": [
-												"这个房间肮脏且挤满了双层床。床铺旁的桌子和几个箱子上散落着衣物和其他个人物品。"
-											]
-										},
-										"船员们在不上岸时居住在这些简陋棚屋里。他们的衣物和个人物品塞满了箱子，散落在房间各处。大多数物品一文不值，只有少数例外。",
-										{
-											"ENG_name": "B3a: Western Quarters",
-											"name": "B3a：西部区",
-											"type": "entries",
-											"page": 135,
-											"id": "2c8",
-											"entries": [
-												"一个箱子里装有一瓶{@item 高等治疗药水|XDMG|治疗药水（高等）}。箱子被锁住了。角色可以采取一个{@action 操作|XPHB}动作来撬锁，进行{@dc 15}的敏捷（{@skill 巧手|XPHB}）检定并使用{@item 盗贼工具|XPHB}。若成功，箱子打开。"
-											]
-										},
-										{
-											"ENG_name": "B3b: Central Quarters",
-											"name": "B3b: 中央区域",
-											"type": "entries",
-											"page": 135,
-											"id": "2c9",
-											"entries": [
-												"地板上铺着一张华丽的毯子。如果一个角色采取{@action 研究|XPHB}动作来检查这块毯子，并成功通过{@dc 12}智力({@skill 调查|XPHB})检定，就会意识到如果清洁干净，这块毯子价值500金币。"
-											]
-										},
-										{
-											"ENG_name": "B3c: Eastern Quarters",
-											"name": "B3c：东部区域",
-											"type": "entries",
-											"page": 135,
-											"id": "2ca",
-											"entries": [
-												"远处的墙上固定着一个人类的头骨；它的两个眼窝中各镶嵌着一颗宝石\u2014\u2014其中一颗是价值100金币的{@item 黑玉|XDMG}，可以轻松从头骨上撬下来。"
-											]
-										}
-									]
-								},
-								{
-									"ENG_name": "B4: Kitchen",
-									"name": "B4：厨房",
-									"type": "entries",
-									"page": 135,
-									"id": "2cb",
-									"entries": [
-										{
-											"type": "insetReadaloud",
-											"page": 135,
-											"id": "2cc",
-											"entries": [
-												"一幅描绘咧着嘴笑的黑龙的挂毯悬挂在这个房间的东墙上，两侧是摆放着烹饪用品的架子。一个看起来压力很大的年轻人，皮肤呈蓝色，白发凌乱，勉强算得上刚过青春期，正在小火上搅拌一口大锅。在年轻人的两侧，各潜伏着一只巨大的蠕虫状生物，长着带钩喙的嘴，周围环绕着触须。"
-											]
-										},
-										"厨师是皮埃尔·卡里森（中型{@creature 打手|XMM}），酒馆老板{@area 瓦特里·惠斯尔鲍姆|2b0|x}的孙子。皮埃尔被囚禁在此，被迫为海盗们烹煮食物。",
-										"两只{@creature 远古穴居攫怪|XMM|远古格雷克}被训练用来确保皮埃尔不会逃跑。它们一旦注意到角色就会立即展开战斗。",
-										{
-											"ENG_name": "Difficult Terrain",
-											"name": "困难地形",
-											"type": "entries",
-											"page": 135,
-											"id": "2cd",
-											"entries": [
-												"这个房间的东半部分是{@variantrule 困难地形|XPHB}，因为那里散落着家具。"
-											]
-										},
-										{
-											"ENG_name": "Talking with Pierre",
-											"name": "与皮埃尔交谈",
-											"type": "entries",
-											"page": 135,
-											"id": "2ce",
-											"entries": [
-												"如果角色们击败了他的骇鬼鸟守卫，皮埃尔会变得友好并渴望交谈。皮埃尔承认加入海盗团是个错误；他曾渴望冒险、刺激和浪漫，但很快意识到这些海盗不过是些宵小之徒。",
-												"与其他海盗不同，皮埃尔直呼黑翼之名。当黑龙掌控船员时，皮埃尔和少数人拒绝宣誓效忠。黑翼处决了其他反抗的海盗，却饶过皮埃尔性命，以死亡威胁强迫他继续担任厨师。如今皮埃尔只求能回到{@area 回春|2a1|x}。"
-											]
-										},
-										{
-											"ENG_name": "Pierre's Map",
-											"name": "皮埃尔的地图",
-											"type": "entries",
-											"page": 135,
-											"id": "2cf",
-											"entries": [
-												"如果角色们请求皮埃尔协助找回避风港的宝石，他会为角色们绘制一份海湾的地图。该地图上的区域与地图7.2所示一致，不过皮埃尔没有标注酸液池。这位厨师在暗翼掌权期间大多被困在厨房里，因此他并不知道酸液池的存在。"
-											]
-										},
-										{
-											"ENG_name": "Treasure",
-											"name": "宝藏",
-											"type": "entries",
-											"page": 135,
-											"id": "2d0",
-											"entries": [
-												"东墙架子上有两瓶原料实际上是{@item 英勇药水|XDMG|英勇药水}。皮埃尔感激地将药水赠予角色们，作为解救他的谢礼。"
-											]
-										}
-									]
-								},
-								{
-									"ENG_name": "B5: Locked Passage",
-									"name": "B5: 上锁通道",
-									"type": "entries",
-									"page": 135,
-									"id": "2d1",
-									"entries": [
-										{
-											"type": "insetReadaloud",
-											"page": 135,
-											"id": "2d2",
-											"entries": [
-												"在这条通道的东北端，一扇装有重重挂锁的门连同门框被嵌入了岩石中。"
-											]
-										},
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "adventure/DrDe/133-07-003.brandles-rest-skeleton.webp"
-											},
-											"credit": "Matt Stikker",
-											"width": 850,
-											"height": 2363
-										},
-										"这把锁结构简单（1动作撬开）且品质精良（{@dc 20}）。海盗们给这扇门上了挂锁，以防皮埃尔深入建筑群内部。"
-									]
-								},
-								{
-									"ENG_name": "B6: Loot Vault",
-									"name": "B6：战利品宝库",
-									"type": "entries",
-									"page": 136,
-									"id": "2d3",
-									"entries": [
-										"当角色进入该区域30尺范围内时，请宣读或转述以下内容：",
-										{
-											"type": "insetReadaloud",
-											"page": 136,
-											"id": "2d4",
-											"entries": [
-												"前方的厅室中回荡着歌声。残酷的歌词破坏了歌曲的欢庆氛围。"
-											]
-										},
-										"数名来自海盗团的成员围坐在该区域中心的木桶周围，他们体型各异、种族多样。其中包括四名{@creature 海盗|XMM|海盗们}、两名{@creature 魔法师|XMM|魔法师们}和一名{@creature 刺客|XMM}。听见喧闹声的角色会意识到这群海盗正在歌颂海盗团今早在瑞斯庇特制造的死亡与混乱。",
-										{
-											"ENG_name": "Elemental Gem",
-											"name": "元素宝石",
-											"type": "entries",
-											"page": 136,
-											"id": "2d5",
-											"entries": [
-												"海盗们将贵重战利品存放在东侧的边厅中。此门装有一把精良的简易锁（需1次动作撬开）({@dc 20})。从{@area 风暴之眼风向标|2a2|x}盗取的{@item 元素宝石，蓝宝石|XDMG|元素宝石（蓝宝石）}其中一颗就在此房间内。"
-											]
-										},
-										{
-											"ENG_name": "Treasure",
-											"name": "宝藏",
-											"type": "entries",
-											"page": 136,
-											"id": "2d6",
-											"entries": [
-												"除了{@item 元素宝石|XDMG}外，上锁的房间内还有以下财宝：",
-												{
-													"type": "list",
-													"items": [
-														"三颗{@item 紫水晶|XDMG|紫水晶宝石}（每颗价值100 GP）",
-														"六颗橙色{@item 红玉髓|XDMG|红玉髓宝石}（每颗价值50 GP）",
-														"三颗{@item 黑曜石|XDMG|黑曜石宝石}（每颗价值10 GP）",
-														"装有今早从瑞斯派特盗走的贵重物品的大板条箱（价值1800金币）",
-														"青铜王冠（价值250金币）",
-														"银制圣杯（价值120金币）",
-														"{@item 锐锋之油|XDMG}"
-													]
-												}
-											]
-										}
-									]
-								},
-								{
-									"ENG_name": "B7: Brandle's Rest",
-									"name": "B7: 布兰德尔的安息",
-									"type": "entries",
-									"page": 136,
-									"id": "2d7",
-									"entries": [
-										{
-											"type": "insetReadaloud",
-											"page": 136,
-											"id": "2d8",
-											"entries": [
-												"一个穿着破布的人形骷髅被钉在东边的墙上，骨头挂在登山钉上。骷髅头上戴着一顶宽边帽，上面插着一根巨大的绿色羽毛。附近的岩石上刻着以下通用语文字：'此葬无能之辈，不堪为王。'"
-											]
-										},
-										"这具骷髅是埃德加·布兰德船长的遗骸。当影翼接管海盗团时，这位船长拒绝向龙宣誓效忠。影翼杀害了他，吞食其血肉，并以此场景作为警示\u2014\u2014任何违抗龙之统治的人都将面临相同结局。",
-										{
-											"ENG_name": "Speaking with Brandle",
-											"name": "与布兰德尔对话",
-											"type": "entries",
-											"page": 136,
-											"id": "2d9",
-											"entries": [
-												"如果角色施放{@spell 死者交谈|XPHB}，布兰德船长那粗哑的头颅会尽其所能回答问题。布兰德知道黑龙在区域{@area B13|2e6|x}的宝库附近养着三只忠诚的{@creature 暗幕魔兽|XMM|暗幕魔兽}，并描述了黑龙如何利用暗mantle的黑暗光环来遮蔽敌人的视线。"
-											]
-										}
-									]
-								},
-								{
-									"ENG_name": "B8: Moldy Cavern",
-									"name": "B8: 发霉的洞穴",
-									"type": "entries",
-									"page": 137,
-									"id": "2da",
-									"entries": [
-										{
-											"type": "insetReadaloud",
-											"page": 137,
-											"id": "2db",
-											"entries": [
-												"这个洞窟的一半被黄色霉菌覆盖。"
-											]
-										},
-										"二十块{@hazard 黄霉菌|XDMG}（参见{@book 城主指南|XDMG}）覆盖了地板的东北半部。",
-										{
-											"ENG_name": "Treasure",
-											"name": "宝藏",
-											"type": "entries",
-											"page": 137,
-											"id": "2dc",
-											"entries": [
-												"作为一个{@action 搜索|XPHB}动作，一个角色可以检查该区域并进行一次{@dc 12}感知（{@skill 察觉|XPHB}）检定。若成功，该角色会注意到一个红宝石吊坠在东墙附近的地板上闪烁。这是一个{@item 愈合护符|XDMG}。两片{@hazard 黄霉菌|XDMG}生长在护符与最近的安全地板区域之间。"
-											]
-										}
-									]
-								},
-								{
-									"ENG_name": "B9: Bubbling Intersection",
-									"name": "B9: 沸腾交点",
-									"type": "entries",
-									"page": 137,
-									"id": "2dd",
-									"entries": [
-										{
-											"type": "insetReadaloud",
-											"page": 137,
-											"id": "2de",
-											"entries": [
-												"阴暗、冒着气泡的液体覆盖了这个洞窟的地面。"
-											]
-										},
-										"该液体是一个2英尺深的酸池（详见\"{@area 碎钩湾特性|2b8|x}\"）。"
-									]
-								},
-								{
-									"ENG_name": "B10: Stalagmite Field",
-									"name": "B10: 石笋区域",
-									"type": "entries",
-									"page": 137,
-									"id": "2df",
-									"entries": [
-										{
-											"type": "insetReadaloud",
-											"page": 137,
-											"id": "2e0",
-											"entries": [
-												"这片洞穴中，翻腾的液体池环绕着石笋。中央的石笋向上延伸，指向布满钟乳石的洞顶。"
-											]
-										},
-										"中央的石笋实际上是一只{@creature 石绳怪|XMM}，六根钟乳石是{@creature 石锥怪|XMM|锥怪}，还有一只{@creature 斗篷怪|XMM}潜藏在钟乳石后的视野死角。这些池子是2英尺深的酸池（参见\"{@area 碎钩湾特性|2b8|x}\"）。当有角色进入该区域时，罗珀会立即开始战斗，石锥怪会在机会出现时坠落袭敌，而披风怪则会追捕那些避开罗珀的生物。"
-									]
-								},
-								{
-									"ENG_name": "B11: Acid Lake",
-									"name": "B11：酸液湖",
-									"type": "entries",
-									"page": 137,
-									"id": "2e1",
-									"entries": [
-										{
-											"type": "insetReadaloud",
-											"page": 137,
-											"id": "2e2",
-											"entries": [
-												"一个浑浊冒泡的液体湖泊填满了这个洞穴。沼泽腐烂的气味弥漫在空气中。"
-											]
-										},
-										"这个湖泊是一片巨大的酸性池塘，深度达50英尺（参见\"{@area 碎钩湾特性|2b8|x}\"），并有一条地下隧道与区域B2的水池相连。暗翼有时会利用这条隧道作为进出其位于区域B13巢穴的捷径。",
-										"池底散落着骸骨。",
-										{
-											"ENG_name": "Treasure",
-											"name": "宝藏",
-											"type": "entries",
-											"page": 137,
-											"id": "2e3",
-											"entries": [
-												"在池面二十英尺之下，一个对酸蚀伤害具有免疫的防水箱被嵌入西墙。箱子未上锁，内含一枚{@item 强酸抗性戒指|XDMG|抗性戒指 (强酸)}和一套{@item 抗性护甲|XDMG}（酸蚀，鳞甲）。黑翼以残忍的幽默感命令受害者取回箱子，然后看着他们尝试时死去。"
-											]
-										}
-									]
-								},
-								{
-									"ENG_name": "B12: Detritus Dens",
-									"name": "B12：残骸密林",
-									"type": "entries",
-									"page": 137,
-									"id": "2e4",
-									"entries": [
-										{
-											"type": "insetReadaloud",
-											"page": 137,
-											"id": "2e5",
-											"entries": [
-												"隧道的两侧分支出两个布满腐烂植被的房间，这些植被高高堆起且不时微微颤动。"
-											]
-										},
-										"那些抽搐的植被堆实际上是两个{@creature 紫腐菌尸聚怪|XMM|紫腐菌尸聚怪}：一个在东侧房间，一个在西侧房间。这些真菌会伏击任何经过它们所在房间或该区域中央走廊的生物。"
-									]
-								},
-								{
-									"ENG_name": "B13: Captain Sablewing's Lair",
-									"name": "B13：黑翼船长的巢穴",
-									"type": "entries",
-									"page": 137,
-									"id": "2e6",
-									"entries": [
-										{
-											"type": "insetReadaloud",
-											"page": 137,
-											"id": "2e7",
-											"entries": [
-												"摇曳的火光在墙面上投下忽明忽暗的阴影，染血的船首像与断裂的桅杆如战利品般陈列于此。一头巨大的黑龙盘踞在40尺高的峭壁上，下方翻涌着冒着气泡的酸液池。黑龙抬起布满伤疤的眼睑，狞笑着低吼：\"海盗们果然拦不住你们。现在\u2014\u2014是准备哭喊着逃离我的巢穴，还是想在我杀死你们之前，先陪我玩个小游戏？\""
-											]
-										},
-										"萨布莱翼队长是一只{@creature 成年黑龙|XMM}。三只{@creature 暗幕魔兽|XMM|暗幕魔兽}如同钟乳石般悬挂在洞穴顶部；战斗开始时，它们会加入战斗，试图用魔法黑暗笼罩角色。这里的所有四只生物都会战斗至死。",
-										{
-											"ENG_name": "Roleplaying Sablewing",
-											"name": "扮演影翼",
-											"type": "entries",
-											"page": 137,
-											"id": "2e8",
-											"entries": [
-												"黑翼船长对他的海盗喽啰毫无敬意，视其为追求毁灭与积累更多财宝的工具。黑翼热衷于炫耀自己掌控船员的轻而易举。",
-												"黑翼拒绝退让、交出任何战利品或停止恐吓海岸。他以制造痛苦与苦难为乐。如果对话拖得太久，黑翼会感到无聊并开始战斗，认定角色们会是容易的猎物。"
-											]
-										},
-										{
-											"ENG_name": "Elemental Gem",
-											"name": "元素宝石",
-											"type": "entries",
-											"page": 137,
-											"id": "2e9",
-											"entries": [
-												"从{@area 风暴之眼风向标|2a2|x}（位于{@area 回春|2a1|x}）被偷走的{@item 元素宝石，蓝宝石|XDMG|元素宝石（蓝宝石）}其中一颗现在藏在黑翼的宝藏中。"
-											]
-										},
-										{
-											"ENG_name": "Treasure",
-											"name": "宝藏",
-											"type": "entries",
-											"page": 137,
-											"id": "2ea",
-											"entries": [
-												"除了宝石外，影翼的财宝还包括以下物品：",
-												{
-													"type": "list",
-													"items": [
-														"230 铂币（PP）、15,610 金币（GP）和 1,100 银币（SP）",
-														"镶框的银龙杰作绘画（价值2500金币），由著名龙裔画家扎蒙·维德拉克创作",
-														"{@item 水手板甲|XDMG|水手护甲 (板甲)}",
-														"{@item 反射闪避戒指|XDMG}",
-														"名为\"偏潮\"的{@item 唤鱼三叉戟|XDMG}"
-													]
-												}
-											]
-										}
-									]
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/201-11-003.alt-cover.webp"
+									},
+									"width": 850,
+									"height": 951,
+									"title": "替换封面：Justine Jones以迷幻笔触，绘就一幅群龙入梦的奇幻图景。"
 								}
 							]
-						}
-					]
-				},
-				{
-					"ENG_name": "Conclusion",
-					"name": "结局",
-					"type": "section",
-					"page": 138,
-					"id": "2eb",
-					"entries": [
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/134-07-004.broken-weather-vane.webp"
-							},
-							"credit": "Matt Stikker",
-							"width": 1700,
-							"height": 1168
-						},
-						"返回{@area 回春|2a1|x}的旅程平淡无奇，尽管随着暴风雨临近，天空变得不祥。如果角色未能在日落前从卵石湾取回两枚{@item 元素宝石，蓝宝石|XDMG|元素宝石（蓝宝石）}，则转到\"{@area 损坏的风向标。|2ec|x}\"。若成功取得，请参考\"{@area 修复的风向标。|2ed|x}\"。如果角色击杀了黑翼，群龙无首的{@area 钩石海盗|2b7|x}将四散并停止威胁该地区。若角色取得宝石但未击杀黑翼，这条怨恨的巨龙会逃离海湾，担心角色们会回来杀死它。",
-						{
-							"ENG_name": "Broken Weather Vane",
-							"name": "损坏的风向标",
-							"type": "entries",
-							"page": 138,
-							"id": "2ec",
-							"entries": [
-								"一场来自气元素位面的可怕风暴肆虐了Respite镇。镇长Gale警告村民们寻找避难所，但风暴的全面威力和暴雨摧毁了之前被Cobblehook Corsairs袭击中损坏的建筑。风暴过后，Respite已然沦为废墟。街道上遍布碎石瓦砾，村民们开始寻找新的家园。"
-							]
-						},
-						{
-							"ENG_name": "Restored Weather Vane",
-							"name": "修复的风向标",
-							"type": "entries",
-							"page": 138,
-							"id": "2ed",
-							"entries": [
-								"当角色们回到休憩镇时，他们发现盖尔镇长站在{@area 风暴之眼风向标|2a2|x}附近。她承诺的金币奖励就在她的背包里。{@area 瓦特里·惠斯尔鲍姆|2b0|x}也站在风向标旁，如果角色们将皮埃尔带回村庄，瓦特里会按照约定将她的{@item 吉运之石|XDMG}送给他们。",
-								"在镇长的协助下，失踪的宝石被轻易地重新嵌回风向标中。装置修复后，请宣读或转述以下内容：",
-								{
-									"type": "insetReadaloud",
-									"page": 138,
-									"id": "2ee",
-									"entries": [
-										"村民们聚集在风暴之眼风向标周围，目光投向海岸。雷鸣声震撼大地，闪电的光芒照亮了从海上涌来的乌云。风向标的横杆开始旋转，整座建筑迸发出蓝绿色的能量光带。当风暴向避风港袭来时，乌云突然在村庄周围散开。尽管狂风在周围的乡野间呼啸，避风港却连一丝微风或一滴雨都没沾到。风暴过后，村民发出欢呼，有些人如释重负地哭泣。盖尔市长朝你们露出温暖的微笑。\"你们拯救了我们，\"她说。\"向避风港的英雄们致敬！\""
-									]
-								}
-							]
-						}
-					]
-				},
-				{
-					"ENG_name": "History of Black Dragons",
-					"name": "黑龙的历史",
-					"type": "section",
-					"page": 124,
-					"id": "2ef",
-					"entries": [
-						"{@font 乌塔·达拉斯特里克斯|languages/XPHB/Draconic/Iokharik-v2.woff2}",
-						{
-							"type": "insetReadaloud",
-							"id": "2f0",
-							"entries": [
-								"两根突出的犄角\u2014\u2014几乎总是朝前生长，且2000年后优雅地弯曲\u2014\u2014再加上显著的颈部冠饰与蛇一般的舌头，定义了黑龙贯穿游戏历史的经典外观。"
-							]
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/135-07-006.black-dragon-spitting-acid.webp"
-							},
-							"title": "绝望之龙(1984)",
-							"credit": "Clyde Caldwell",
-							"width": 851,
-							"height": 850
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/136-07-007.black-dragon-1993.webp"
-							},
-							"title": "怪物图鉴（1993）",
-							"credit": "Mark A. Nelson",
-							"width": 832,
-							"height": 987
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/137-07-008.black-dragon-1977.webp"
-							},
-							"title": "怪物图鉴（1977）",
-							"credit": "David C. Sutherland",
-							"width": 684,
-							"height": 857
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/138-07-009.black-dragon-draconomicon.webp"
-							},
-							"title": "龙之书（2003）",
-							"credit": "Lars Grant-West",
-							"width": 1278,
-							"height": 1813
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/139-07-010.black-dragon-draginomicon.webp"
-							},
-							"title": "被遗忘国度的冒险 (2021)",
-							"credit": "Jason A. Engle",
-							"width": 744,
-							"height": 1040
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/140-07-011.black-dragon-anatomy.webp"
-							},
-							"title": "龙之书（2003）",
-							"credit": "Todd Lockwood",
-							"width": 850,
-							"height": 388
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/141-07-012.black-dragon-2014.webp"
-							},
-							"title": "怪物手册（2014）",
-							"credit": "Craig J Spearing",
-							"width": 850,
-							"height": 622
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/142-07-013.black-dragon-2008.webp"
-							},
-							"title": "怪物图鉴（2008）",
-							"credit": "Lars Grant-West",
-							"width": 1700,
-							"height": 1292
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/143-07-014.black-dragon-2023.webp"
-							},
-							"title": "概念艺术（2023）",
-							"credit": "Alexander Ostrowski",
-							"width": 1700,
-							"height": 738
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/144-07-015.black-dragon-2025.webp"
-							},
-							"title": "怪物图鉴（2025）",
-							"credit": "Martin Mottet",
-							"width": 1700,
-							"height": 1100
-						}
-					]
-				}
-			]
-		},
-		{
-			"ENG_name": "Credits",
-			"name": "制作组",
-			"type": "section",
-			"page": 2,
-			"id": "40b",
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"columns": 2,
-					"items": [
-						{
-							"ENG_name": "Lead Designers:",
-							"name": "首席设计师：",
-							"type": "item",
-							"entry": "Amanda Hamon, James Wyatt"
-						},
-						{
-							"ENG_name": "Designers:",
-							"name": "设计师：",
-							"type": "item",
-							"entry": "Justice Ramin Arman, Makenzie De Armas, Anthony Joyce-Rivera, Renee Knipe, Ron Lundeen, Christopher Perkins, Patrick Renie, Erin Roberts, F. Wesley Schneider, Carl Sibley, Jason Tondro, Steve Townshend"
-						},
-						{
-							"ENG_name": "Rules Developers:",
-							"name": "规则开发者：",
-							"type": "item",
-							"entry": "Makenzie De Armas (lead), Jeremy Crawford, Ron Lundeen"
-						},
-						{
-							"ENG_name": "Editors:",
-							"name": "编辑：",
-							"type": "item",
-							"entry": "Judy Bauer (lead), Emma Candon, Sadie Lowry, Hannah Rose, Sue Weinlein, Hans Ziegler"
-						},
-						{
-							"ENG_name": "Art Directors:",
-							"name": "艺术指导：",
-							"type": "item",
-							"entry": "Matt Cole (lead), Fury Galluzzi, Josh Herman, Kate Irwin, Emi Tanji"
-						},
-						{
-							"ENG_name": "Graphic Designers:",
-							"name": "平面设计师：",
-							"type": "item",
-							"entry": "Matt Cole, Paolo Vacala"
-						},
-						{
-							"ENG_name": "Cover Illustrators:",
-							"name": "封面插画师：",
-							"type": "item",
-							"entry": "Justine Jones, Greg Staples"
-						},
-						{
-							"ENG_name": "Interior Illustrators:",
-							"name": "内页插画师：",
-							"type": "item",
-							"entry": "Tom Babbey, Daren Bader, Clyde Caldwell, Chippy, Simon Dominic, Jeff Easley, Luke Eidenschink, Larry Elmore, Jason A. Engle, Lars Grant-West, John Grello, Johan Grenier, Justine Jones, Andrew Kolb, Vance Kovacs, Andrey Kuzinskiy, Ed Kwong, Todd Lockwood, Antonio José Manzanedo, Dominik Mayer, Caio Monteiro, Martin Mottet, Jodie Muir, Mark A. Nelson, Alexander Ostrowski, Keith Parkinson, Anna Podedworna, Steve Prescott, Chris Rallis, Joshua Raphael, Richard Sardinha, Chris Seaman, Rudy Siswanto, Craig J Spearing, Ron Spencer, Leroy Steinmann, Zack Stella, Matt Stewart, Matt Stikker, David C. Sutherland, Autumn Rain Turkel, Paolo Vacala, Svetlin Velinov, Raoul Vitale, Jabari Weathers, Campbell White"
-						},
-						{
-							"ENG_name": "Cartographers:",
-							"name": "制图师：",
-							"type": "item",
-							"entry": "Francesca Baerald, Jared Blando, CoupleOfKooks, Andrew Kolb, Dyson Logos, Damien Mammoliti, Mike Schley, Paolo Vacala"
-						},
-						{
-							"ENG_name": "Consultants:",
-							"name": "顾问：",
-							"type": "item",
-							"entry": "Shawn Banerjee, Eytan Bernstein, Daniel Delgado, Sameer Joseph"
-						},
-						{
-							"ENG_name": "Producers:",
-							"name": "制作人：",
-							"type": "item",
-							"entry": "Rob Hawkey (lead), Bill Benham, Siera Bruggeman, Vanessa Hoskins"
-						}
-					]
-				},
-				"{@i 本书献给Christopher Perkins，感谢他数十年来为《龙与地下城》作出的贡献。}",
-				{
-					"type": "gallery",
-					"images": [
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/199-11-001.title-splash.webp"
-							},
-							"credit": "Alexander Ostrowski",
-							"width": 850,
-							"height": 963
-						}
-					]
-				},
-				{
-					"type": "gallery",
-					"images": [
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/200-11-002.traditional-cover.webp"
-							},
-							"title": "封面故事：在Greg Staples创作的这张极具张力的海报中，三位勇敢的冒险者直面由五种色彩龙所带来的未知险境。",
-							"width": 850,
-							"height": 951
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/201-11-003.alt-cover.webp"
-							},
-							"title": "替换封面：Justine Jones以迷幻笔触，绘就一幅群龙入梦的奇幻图景。",
-							"width": 850,
-							"height": 951
 						}
 					]
 				}

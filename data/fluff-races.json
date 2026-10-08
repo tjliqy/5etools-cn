@@ -129,9 +129,9 @@
 						"type": "internal",
 						"path": "races/MPMM/Aarakocra.webp"
 					},
-					"credit": "Claudio Pozas",
 					"width": 643,
-					"height": 850
+					"height": 850,
+					"credit": "Claudio Pozas"
 				}
 			]
 		},
@@ -188,9 +188,9 @@
 						"type": "internal",
 						"path": "races/MPMM/Aasimar.webp"
 					},
-					"credit": "Mike Bierek",
 					"width": 689,
-					"height": 850
+					"height": 850,
+					"credit": "Mike Bierek"
 				}
 			]
 		},
@@ -357,9 +357,9 @@
 						"type": "internal",
 						"path": "races/VGM/Aasimar.webp"
 					},
-					"credit": "Shawn Wood",
 					"width": 385,
-					"height": 618
+					"height": 618,
+					"credit": "Shawn Wood"
 				}
 			]
 		},
@@ -388,9 +388,9 @@
 						"type": "internal",
 						"path": "races/XPHB/Aasimar.webp"
 					},
-					"credit": "Aldo Domingues",
 					"width": 1700,
-					"height": 1094
+					"height": 1094,
+					"credit": "Aldo Domingues"
 				}
 			]
 		},
@@ -514,10 +514,10 @@
 						"type": "internal",
 						"path": "races/PSK/Aetherborn.webp"
 					},
-					"title": "在卡莱德斯，一个以太驱动的{@item 屠杀箭 (*)|DMG|屠杀箭}可以不借助弓发射。",
-					"credit": "Tidy Conclusion by Bastien L. Deharme",
 					"width": 1173,
-					"height": 885
+					"height": 885,
+					"title": "在卡莱德斯，一个以太驱动的{@item 屠杀箭 (*)|DMG|屠杀箭}可以不借助弓发射。",
+					"credit": "Tidy Conclusion by Bastien L. Deharme"
 				},
 				{
 					"type": "image",
@@ -525,10 +525,10 @@
 						"type": "internal",
 						"path": "races/PSK/Aetherborn2.webp"
 					},
-					"title": "精华提取",
-					"credit": "Min Yum",
 					"width": 630,
-					"height": 913
+					"height": 913,
+					"title": "精华提取",
+					"credit": "Min Yum"
 				}
 			]
 		},
@@ -547,9 +547,9 @@
 						"type": "internal",
 						"path": "races/AAG/Astral Elf.webp"
 					},
-					"credit": "Nikki Dawes",
 					"width": 1700,
-					"height": 1215
+					"height": 1215,
+					"credit": "Nikki Dawes"
 				}
 			]
 		},
@@ -608,9 +608,9 @@
 						"type": "internal",
 						"path": "races/AAG/Autognome.webp"
 					},
-					"credit": "Nikki Dawes",
 					"width": 1700,
-					"height": 1024
+					"height": 1024,
+					"credit": "Nikki Dawes"
 				}
 			]
 		},
@@ -644,10 +644,10 @@
 						"type": "internal",
 						"path": "races/PSA/Aven.webp"
 					},
-					"title": "塔克罗精英",
-					"credit": "Raoul Vitale",
 					"width": 1276,
-					"height": 880
+					"height": 880,
+					"title": "塔克罗精英",
+					"credit": "Raoul Vitale"
 				},
 				{
 					"type": "image",
@@ -655,10 +655,10 @@
 						"type": "internal",
 						"path": "races/PSA/Aven2.webp"
 					},
-					"title": "试炼的伴侣",
-					"credit": "Aaron Miller",
 					"width": 603,
-					"height": 375
+					"height": 375,
+					"title": "试炼的伴侣",
+					"credit": "Aaron Miller"
 				}
 			]
 		},
@@ -678,10 +678,10 @@
 						"type": "internal",
 						"path": "races/PSD/Aven.webp"
 					},
-					"title": "鹰身守卫",
-					"credit": "Dan Scott",
 					"width": 767,
-					"height": 543
+					"height": 543,
+					"title": "鹰身守卫",
+					"credit": "Dan Scott"
 				}
 			]
 		},
@@ -791,10 +791,10 @@
 						"type": "internal",
 						"path": "races/LFL/Boggart.webp"
 					},
-					"title": "洛温的一个博加特用青蛙作为占卜摆锤",
-					"credit": "Ioannis Fiore",
 					"width": 1700,
-					"height": 1249
+					"height": 1249,
+					"title": "洛温的一个博加特用青蛙作为占卜摆锤",
+					"credit": "Ioannis Fiore"
 				}
 			]
 		},
@@ -809,9 +809,9 @@
 						"type": "internal",
 						"path": "races/ERLW/Goblinoids.webp"
 					},
-					"credit": "Cory Trego-Erdner",
 					"width": 1000,
-					"height": 647
+					"height": 647,
+					"credit": "Cory Trego-Erdner"
 				}
 			]
 		},
@@ -830,9 +830,9 @@
 						"type": "internal",
 						"path": "races/MPMM/Bugbear.webp"
 					},
-					"credit": "Filip Burburan",
 					"width": 1700,
-					"height": 1241
+					"height": 1241,
+					"credit": "Filip Burburan"
 				}
 			]
 		},
@@ -840,7 +840,11 @@
 			"ENG_name": "Bugbear",
 			"name": "熊地精",
 			"source": "VGM",
-			"monstrous": true,
+			"_copy": {
+				"ENG_name": "Monstrous Adventurers",
+				"name": "怪物冒险者",
+				"source": "VGM"
+			},
 			"images": [
 				{
 					"type": "image",
@@ -1048,10 +1052,10 @@
 						"type": "internal",
 						"path": "races/MOT/Lagonna Band Centaur.webp"
 					},
-					"title": "拉苟那族人马",
-					"credit": "Min Yum",
 					"width": 1000,
-					"height": 1000
+					"height": 1000,
+					"title": "拉苟那族人马",
+					"credit": "Min Yum"
 				},
 				{
 					"type": "image",
@@ -1059,10 +1063,10 @@
 						"type": "internal",
 						"path": "races/MOT/Pheres Band Centaur.webp"
 					},
-					"title": "斐力兹族人马",
-					"credit": "Slawomir Maniak",
 					"width": 1000,
-					"height": 718
+					"height": 718,
+					"title": "斐力兹族人马",
+					"credit": "Slawomir Maniak"
 				}
 			]
 		},
@@ -1080,9 +1084,9 @@
 						"type": "internal",
 						"path": "races/MPMM/Centaur.webp"
 					},
-					"credit": "Eric Belisle, Jedd Chevrier",
 					"width": 1700,
-					"height": 1211
+					"height": 1211,
+					"credit": "Eric Belisle, Jedd Chevrier"
 				}
 			]
 		},
@@ -1103,9 +1107,9 @@
 						"type": "internal",
 						"path": "races/EFA/Changeling.webp"
 					},
-					"credit": "Leroy Steinmann",
 					"width": 850,
-					"height": 550
+					"height": 550,
+					"credit": "Leroy Steinmann"
 				}
 			]
 		},
@@ -1122,10 +1126,10 @@
 							"entries": [
 								{
 									"type": "quote",
+									"skipMarks": true,
 									"entries": [
 										"很久以前，有一个名叫耶斯的女人，她有一百个孩子。她的对手密谋反对她，发誓要杀死她的孩子。耶斯向至高神祈求帮助，但他们唯一的回答是风和雨。在她绝望的深渊中，一个孤独的旅者握住了她的手。\"如果他们跟随我的道路，我将保护你的孩子。让他们在世界上流浪。他们可能会被排斥和恐惧，但他们永远不会被毁灭。\"耶斯同意了，旅者给了她他的斗篷。当她把它披在孩子们身上时，他们旧的面貌消失了，他们可以成为他们想成为的任何人。事情就这样一直持续着。尽管孩子们被所有人排斥，但旅者的礼物仍然保护着他们。"
 									],
-									"skipMarks": true,
 									"by": "钱斯，幻身灵牧师"
 								},
 								"幻身灵可以随意改变自己的形态。许多幻身灵将这种天赋作为一种艺术和情感表达的形式。它也是骗子、间谍和希望欺骗他人的人不可或缺的工具。这导致许多人对幻身灵持怀疑态度。",
@@ -1170,10 +1174,10 @@
 						"type": "internal",
 						"path": "races/ERLW/Changeling.webp"
 					},
-					"title": "幻身灵采用某人的外表",
-					"credit": "Olga Drebas",
 					"width": 520,
-					"height": 1000
+					"height": 1000,
+					"title": "幻身灵采用某人的外表",
+					"credit": "Olga Drebas"
 				},
 				{
 					"type": "image",
@@ -1203,9 +1207,9 @@
 						"type": "internal",
 						"path": "races/MPMM/Changeling.webp"
 					},
-					"credit": "Sarah Stone",
 					"width": 458,
-					"height": 850
+					"height": 850,
+					"credit": "Sarah Stone"
 				}
 			]
 		},
@@ -1224,9 +1228,9 @@
 						"type": "internal",
 						"path": "races/MPMM/Deep Gnome.webp"
 					},
-					"credit": "Tom Babbey, Olly Lawson",
 					"width": 1700,
-					"height": 1223
+					"height": 1223,
+					"credit": "Tom Babbey, Olly Lawson"
 				}
 			]
 		},
@@ -1245,9 +1249,9 @@
 						"type": "internal",
 						"path": "races/RHW/Dhampir.webp"
 					},
-					"credit": "Helge C. Balzer",
 					"width": 1700,
-					"height": 1090
+					"height": 1090,
+					"credit": "Helge C. Balzer"
 				},
 				{
 					"type": "image",
@@ -1255,10 +1259,10 @@
 						"type": "internal",
 						"path": "races/RHW/Dhampir 2.webp"
 					},
-					"credit": "David Astruga",
-					"title": "半血裔在对敌人时占据上风",
 					"width": 850,
-					"height": 922
+					"height": 922,
+					"title": "半血裔在对敌人时占据上风",
+					"credit": "David Astruga"
 				}
 			]
 		},
@@ -1290,7 +1294,7 @@
 							"rows": [
 								[
 									"1",
-									"血液"
+									"鲜血"
 								],
 								[
 									"2",
@@ -1378,9 +1382,9 @@
 						"type": "internal",
 						"path": "races/VRGR/Dhampir.webp"
 					},
-					"credit": "Katerina Ladon",
 					"width": 850,
-					"height": 1066
+					"height": 1066,
+					"credit": "Katerina Ladon"
 				}
 			]
 		},
@@ -1388,85 +1392,94 @@
 			"ENG_name": "Dragonborn",
 			"name": "龙裔",
 			"source": "PHB",
-			"uncommon": true,
-			"entries": [
-				{
-					"type": "section",
-					"entries": [
-						{
-							"type": "entries",
-							"entries": [
-								"正如他们的名字所宣称的，龙族是龙的后裔，他们在一个充满恐惧和不理解的世界中自豪地行走。龙族最初是由龙神或龙本身塑造的，作为一个独特的种族，从龙蛋中孵化出来，结合了龙和类人生物的最佳属性。一些龙族是真龙的忠实仆人，其他人则成为伟大战争中的士兵，还有一些发现自己漂泊不定，生活中没有明确的使命。",
-								{
-									"ENG_name": "Proud Dragon Kin",
-									"name": "龙族之傲",
-									"type": "entries",
-									"entries": [
-										"龙裔看起来非常像以人形直立站立的龙，尽管他们没有翅膀或尾巴。最初的龙裔拥有与龙族亲属颜色相匹配的鲜艳鳞片，但代代混血造就了更为统一的外貌。他们细小精致的鳞片通常呈现黄铜或青铜色，有时也会呈现猩红、铁锈、金色或铜绿色。他们高大强壮，身高常接近6.5英尺（约1.98米），体重达300磅（约136公斤）或更重。他们的手脚末端生有宛若利爪的三指手掌与拇指",
-										"某些龙族部落中，特定类型的龙的血统非常强烈。这些龙族常常拥有更接近他们龙族祖先的鳞片\u2014\u2014鲜红色、绿色、蓝色或白色，亮丽的黑色，或者像金、银、黄铜、铜或青铜一样闪闪发光的金属色。"
-									]
-								},
-								{
-									"ENG_name": "Self-Sufficient Clans",
-									"name": "氏族之傲",
-									"type": "entries",
-									"entries": [
-										"对任何龙裔来说，氏族比生命本身更重要。龙裔对氏族的忠诚和尊重高于一切，甚至高于神明。每个龙裔的行为都关系到他或她氏族的荣誉，给氏族带来耻辱可能导致被驱逐和流放。每个龙裔都知道自己在氏族中的地位和职责，荣誉要求维护那个位置的界限。",
-										"对自我提升的持续追求反映了整个种族的自给自足。龙族重视所有努力中的技能和卓越。他们讨厌失败，并在放弃某事之前将自己推向极端的努力。龙族将掌握特定技能作为终身目标。分享相同承诺的其他种族的成员发现很容易赢得龙族的尊重。",
-										"尽管所有龙族都努力自给自足，他们认识到在困难情况下有时需要帮助。但是，这种帮助的最佳来源是部落，当一个客户需要帮助时，他们会先向另一个龙族部落寻求援助，而不是向其他种族甚至神明求助。"
-									]
-								},
-								{
-									"ENG_name": "Dragonborn Names",
-									"name": "龙裔姓名",
-									"type": "entries",
-									"entries": [
-										"龙族在出生时被赋予个人名字，但他们将族群名字放在第一位作为荣誉的标志。童年名字或昵称通常在同窝伙伴之间使用，作为一个描述性术语或亲昵的称呼。这个名字可能会回忆起一个事件或围绕一个习惯。",
-										{
-											"type": "list",
-											"style": "list-hang-notitle",
-											"items": [
-												{
-													"ENG_name": "Male Names:",
-													"name": "男性名字：",
-													"type": "item",
-													"entry": "阿尔詹, 巴拉萨尔, 布拉什, 多纳尔, 盖什, 赫斯肯, 克里夫, 梅德拉什, 梅亨, 纳达尔, 潘杰德, 帕特林, 罗加尔, 沙马什, 谢丁, 塔尔亨, 托林"
-												},
-												{
-													"ENG_name": "Female Names:",
-													"name": "女性名字：",
-													"type": "item",
-													"entry": "阿克拉、比里、达亚尔、法瑞德、哈兰、哈维拉、杰里、卡瓦、科林、米珊、纳拉、佩拉、瑞安、索拉、苏瑞娜、萨瓦、塔瓦、乌阿吉特"
-												},
-												{
-													"ENG_name": "Childhood Names:",
-													"name": "童年名字:",
-													"type": "item",
-													"entry": "攀爬者，伊尔本登，跳跃者，虔敬者，咬盾者，热情"
-												},
-												{
-													"ENG_name": "Clan Names:",
-													"name": "氏族名：",
-													"type": "item",
-													"entry": "克雷辛蒂亚洛, 达尔登德里安, 德尔米雷夫, 德拉切丹迪翁, 芬肯卡布拉顿, 克佩什克莫利克, 凯尔隆, 金巴图尔, 林克萨克森达尔, 米亚斯坦, 内莫尼斯, 诺里克修斯, 奥芬斯塔拉吉, 普雷克西安迪林, 谢斯滕德尔伊斯, 特努罗斯, 弗瑟萨瑟吉斯, 亚杰里特"
-												}
-											]
-										}
-									]
-								},
-								{
-									"ENG_name": "Draconians",
-									"name": "龙人",
-									"type": "inset",
-									"entries": [
-										"在龙枪设定中，邪恶女神塔克西丝的追随者们学会了一种黑暗仪式，使他们能够腐化金属龙的蛋，产生被称为龙人（Draconian）的邪恶龙裔。五种龙人对应五种金属龙，在长枪之战中为塔克西丝而战\u2014\u2014奥拉克（金龙）、巴兹（黄铜龙）、博扎克（青铜龙）、卡帕克（赤铜龙）和西瓦克（银龙）。它们没有龙族的吐息武器，而是拥有独特的魔法能力。"
-									]
-								}
-							]
-						}
-					]
+			"_copy": {
+				"ENG_name": "Uncommon Races",
+				"name": "罕见种族",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"正如他们的名字所宣称的，龙族是龙的后裔，他们在一个充满恐惧和不理解的世界中自豪地行走。龙族最初是由龙神或龙本身塑造的，作为一个独特的种族，从龙蛋中孵化出来，结合了龙和类人生物的最佳属性。一些龙族是真龙的忠实仆人，其他人则成为伟大战争中的士兵，还有一些发现自己漂泊不定，生活中没有明确的使命。",
+											{
+												"ENG_name": "Proud Dragon Kin",
+												"name": "龙族之傲",
+												"type": "entries",
+												"entries": [
+													"龙裔看起来非常像以人形直立站立的龙，尽管他们没有翅膀或尾巴。最初的龙裔拥有与龙族亲属颜色相匹配的鲜艳鳞片，但代代混血造就了更为统一的外貌。他们细小精致的鳞片通常呈现黄铜或青铜色，有时也会呈现猩红、铁锈、金色或铜绿色。他们高大强壮，身高常接近6.5英尺（约1.98米），体重达300磅（约136公斤）或更重。他们的手脚末端生有宛若利爪的三指手掌与拇指",
+													"某些龙族部落中，特定类型的龙的血统非常强烈。这些龙族常常拥有更接近他们龙族祖先的鳞片\u2014\u2014鲜红色、绿色、蓝色或白色，亮丽的黑色，或者像金、银、黄铜、铜或青铜一样闪闪发光的金属色。"
+												]
+											},
+											{
+												"ENG_name": "Self-Sufficient Clans",
+												"name": "氏族之傲",
+												"type": "entries",
+												"entries": [
+													"对任何龙裔来说，氏族比生命本身更重要。龙裔对氏族的忠诚和尊重高于一切，甚至高于神明。每个龙裔的行为都关系到他或她氏族的荣誉，给氏族带来耻辱可能导致被驱逐和流放。每个龙裔都知道自己在氏族中的地位和职责，荣誉要求维护那个位置的界限。",
+													"对自我提升的持续追求反映了整个种族的自给自足。龙族重视所有努力中的技能和卓越。他们讨厌失败，并在放弃某事之前将自己推向极端的努力。龙族将掌握特定技能作为终身目标。分享相同承诺的其他种族的成员发现很容易赢得龙族的尊重。",
+													"尽管所有龙族都努力自给自足，他们认识到在困难情况下有时需要帮助。但是，这种帮助的最佳来源是部落，当一个客户需要帮助时，他们会先向另一个龙族部落寻求援助，而不是向其他种族甚至神明求助。"
+												]
+											},
+											{
+												"ENG_name": "Dragonborn Names",
+												"name": "龙裔姓名",
+												"type": "entries",
+												"entries": [
+													"龙族在出生时被赋予个人名字，但他们将族群名字放在第一位作为荣誉的标志。童年名字或昵称通常在同窝伙伴之间使用，作为一个描述性术语或亲昵的称呼。这个名字可能会回忆起一个事件或围绕一个习惯。",
+													{
+														"type": "list",
+														"style": "list-hang-notitle",
+														"items": [
+															{
+																"ENG_name": "Male Names:",
+																"name": "男性名字：",
+																"type": "item",
+																"entry": "阿尔詹, 巴拉萨尔, 布拉什, 多纳尔, 盖什, 赫斯肯, 克里夫, 梅德拉什, 梅亨, 纳达尔, 潘杰德, 帕特林, 罗加尔, 沙马什, 谢丁, 塔尔亨, 托林"
+															},
+															{
+																"ENG_name": "Female Names:",
+																"name": "女性名字：",
+																"type": "item",
+																"entry": "阿克拉、比里、达亚尔、法瑞德、哈兰、哈维拉、杰里、卡瓦、科林、米珊、纳拉、佩拉、瑞安、索拉、苏瑞娜、萨瓦、塔瓦、乌阿吉特"
+															},
+															{
+																"ENG_name": "Childhood Names:",
+																"name": "童年名字:",
+																"type": "item",
+																"entry": "攀爬者，伊尔本登，跳跃者，虔敬者，咬盾者，热情"
+															},
+															{
+																"ENG_name": "Clan Names:",
+																"name": "氏族名：",
+																"type": "item",
+																"entry": "克雷辛蒂亚洛, 达尔登德里安, 德尔米雷夫, 德拉切丹迪翁, 芬肯卡布拉顿, 克佩什克莫利克, 凯尔隆, 金巴图尔, 林克萨克森达尔, 米亚斯坦, 内莫尼斯, 诺里克修斯, 奥芬斯塔拉吉, 普雷克西安迪林, 谢斯滕德尔伊斯, 特努罗斯, 弗瑟萨瑟吉斯, 亚杰里特"
+															}
+														]
+													}
+												]
+											},
+											{
+												"ENG_name": "Draconians",
+												"name": "龙人",
+												"type": "inset",
+												"entries": [
+													"在龙枪设定中，邪恶女神塔克西丝的追随者们学会了一种黑暗仪式，使他们能够腐化金属龙的蛋，产生被称为龙人（Draconian）的邪恶龙裔。五种龙人对应五种金属龙，在长枪之战中为塔克西丝而战\u2014\u2014奥拉克（金龙）、巴兹（黄铜龙）、博扎克（青铜龙）、卡帕克（赤铜龙）和西瓦克（银龙）。它们没有龙族的吐息武器，而是拥有独特的魔法能力。"
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
 				}
-			],
+			},
 			"images": [
 				{
 					"type": "image",
@@ -1504,9 +1517,9 @@
 						"type": "internal",
 						"path": "races/XPHB/Dragonborn.webp"
 					},
-					"credit": "David Auden Nash",
 					"width": 2100,
-					"height": 1359
+					"height": 1359,
+					"credit": "David Auden Nash"
 				}
 			]
 		},
@@ -1534,10 +1547,10 @@
 						"type": "internal",
 						"path": "races/FTD/Chromatic Dragonborn.webp"
 					},
-					"title": "一位红龙裔佣兵正在等待客户",
-					"credit": "Randy Vargas",
 					"width": 1700,
-					"height": 1111
+					"height": 1111,
+					"title": "一位红龙裔佣兵正在等待客户",
+					"credit": "Randy Vargas"
 				}
 			]
 		},
@@ -1563,9 +1576,9 @@
 						"type": "internal",
 						"path": "races/EGW/Dragonborn (Draconblood).webp"
 					},
-					"credit": "Axel Defois",
 					"width": 583,
-					"height": 1000
+					"height": 1000,
+					"credit": "Axel Defois"
 				}
 			]
 		},
@@ -1583,10 +1596,10 @@
 						"type": "internal",
 						"path": "races/FTD/Gem Dragonborn.webp"
 					},
-					"title": "蓝宝石、紫晶和翡翠龙裔围在火堆旁分享故事",
-					"credit": "Zoltan Boros",
 					"width": 1700,
-					"height": 1103
+					"height": 1103,
+					"title": "蓝宝石、紫晶和翡翠龙裔围在火堆旁分享故事",
+					"credit": "Zoltan Boros"
 				}
 			]
 		},
@@ -1604,10 +1617,10 @@
 						"type": "internal",
 						"path": "races/FTD/Metallic Dragonborn.webp"
 					},
-					"title": "当敌人接近时，一名青铜龙裔准备好她的强酸吐息",
-					"credit": "Andrey Kuzinskiy",
 					"width": 1700,
-					"height": 1137
+					"height": 1137,
+					"title": "当敌人接近时，一名青铜龙裔准备好她的强酸吐息",
+					"credit": "Andrey Kuzinskiy"
 				}
 			]
 		},
@@ -1633,9 +1646,9 @@
 						"type": "internal",
 						"path": "races/EGW/Dragonborn (Ravenite).webp"
 					},
-					"credit": "Axel Defois",
 					"width": 822,
-					"height": 1513
+					"height": 1513,
+					"credit": "Axel Defois"
 				}
 			]
 		},
@@ -1654,9 +1667,9 @@
 						"type": "internal",
 						"path": "races/MPMM/Duergar.webp"
 					},
-					"credit": "Christopher Bradley, Zuzanna Wužyk",
 					"width": 1700,
-					"height": 1228
+					"height": 1228,
+					"credit": "Christopher Bradley, Zuzanna Wužyk"
 				}
 			]
 		},
@@ -1826,9 +1839,9 @@
 						"type": "internal",
 						"path": "races/XPHB/Dwarf.webp"
 					},
-					"credit": "Mike Pape",
 					"width": 1700,
-					"height": 1126
+					"height": 1126,
+					"credit": "Mike Pape"
 				}
 			]
 		},
@@ -1924,10 +1937,10 @@
 						"type": "internal",
 						"path": "races/PSK/Dwarf.webp"
 					},
-					"title": "激发冲锋",
-					"credit": "Deruchenko Alexander",
 					"width": 1276,
-					"height": 968
+					"height": 968,
+					"title": "激发冲锋",
+					"credit": "Deruchenko Alexander"
 				},
 				{
 					"type": "image",
@@ -1935,10 +1948,10 @@
 						"type": "internal",
 						"path": "races/PSK/Dwarf2.webp"
 					},
-					"title": "战技动作",
-					"credit": "Winona Nelson",
 					"width": 942,
-					"height": 778
+					"height": 778,
+					"title": "战技动作",
+					"credit": "Winona Nelson"
 				}
 			]
 		},
@@ -2013,9 +2026,9 @@
 						"type": "internal",
 						"path": "races/MPMM/Eladrin.webp"
 					},
-					"credit": "Eric Belisle",
 					"width": 457,
-					"height": 850
+					"height": 850,
+					"credit": "Eric Belisle"
 				}
 			]
 		},
@@ -2053,10 +2066,10 @@
 						"type": "internal",
 						"path": "races/LFL/Elf (Lorwyn).webp"
 					},
-					"title": "洛温精灵",
-					"credit": "Lorenzo Mastroianni",
 					"width": 1700,
-					"height": 1301
+					"height": 1301,
+					"title": "洛温精灵",
+					"credit": "Lorenzo Mastroianni"
 				},
 				{
 					"type": "image",
@@ -2064,10 +2077,10 @@
 						"type": "internal",
 						"path": "races/LFL/Elf (Shadowmoor).webp"
 					},
-					"title": "影原精灵",
-					"credit": "Evyn Fong",
 					"width": 1700,
-					"height": 1301
+					"height": 1301,
+					"title": "影原精灵",
+					"credit": "Evyn Fong"
 				}
 			]
 		},
@@ -2252,9 +2265,9 @@
 						"type": "internal",
 						"path": "races/XPHB/Elf.webp"
 					},
-					"credit": "Mike Pape",
 					"width": 1700,
-					"height": 1109
+					"height": 1109,
+					"credit": "Mike Pape"
 				},
 				{
 					"type": "image",
@@ -2262,10 +2275,10 @@
 						"type": "internal",
 						"path": "races/XPHB/148-05-022.elf-city.webp"
 					},
-					"title": "一艘船从由高等精灵建造的城市出发",
-					"credit": "Jedd Chevrier",
 					"width": 2560,
-					"height": 1440
+					"height": 1440,
+					"title": "一艘船从由高等精灵建造的城市出发",
+					"credit": "Jedd Chevrier"
 				}
 			]
 		},
@@ -2644,10 +2657,10 @@
 						"type": "internal",
 						"path": "races/PSK/Elf.webp"
 					},
-					"title": "荒野漫游者",
-					"credit": "Sidharth Chaturvedi",
 					"width": 807,
-					"height": 595
+					"height": 595,
+					"title": "荒野漫游者",
+					"credit": "Sidharth Chaturvedi"
 				},
 				{
 					"type": "image",
@@ -2655,10 +2668,10 @@
 						"type": "internal",
 						"path": "races/PSK/Elf2.webp"
 					},
-					"title": "耕种者的商队",
-					"credit": "Mark Zug",
 					"width": 1276,
-					"height": 700
+					"height": 700,
+					"title": "耕种者的商队",
+					"credit": "Mark Zug"
 				}
 			]
 		},
@@ -2742,9 +2755,9 @@
 						"type": "internal",
 						"path": "races/EGW/Elf (Pallid).webp"
 					},
-					"credit": "Axel Defois",
 					"width": 325,
-					"height": 1000
+					"height": 1000,
+					"credit": "Axel Defois"
 				}
 			]
 		},
@@ -2866,10 +2879,10 @@
 						"type": "internal",
 						"path": "races/PSZ/Elf.webp"
 					},
-					"title": "转木林游侠",
-					"credit": "Wayne Reynolds",
 					"width": 534,
-					"height": 380
+					"height": 380,
+					"title": "转木林游侠",
+					"credit": "Wayne Reynolds"
 				},
 				{
 					"type": "image",
@@ -2877,10 +2890,10 @@
 						"type": "internal",
 						"path": "races/PSZ/Elf2.webp"
 					},
-					"title": "生命之泉德鲁伊",
-					"credit": "Willian Murai",
 					"width": 639,
-					"height": 313
+					"height": 313,
+					"title": "生命之泉德鲁伊",
+					"credit": "Willian Murai"
 				}
 			]
 		},
@@ -3006,10 +3019,10 @@
 						"type": "internal",
 						"path": "races/LFL/Faerie.webp"
 					},
-					"title": "洛温-影沼异界中的仙灵们常常陶醉于古怪",
-					"credit": "Ben Hill",
 					"width": 1700,
-					"height": 1023
+					"height": 1023,
+					"title": "洛温-影沼异界中的仙灵们常常陶醉于古怪",
+					"credit": "Ben Hill"
 				}
 			]
 		},
@@ -3074,9 +3087,9 @@
 						"type": "internal",
 						"path": "races/MPMM/Fairy.webp"
 					},
-					"credit": "Nikki Dawes",
 					"width": 345,
-					"height": 850
+					"height": 850,
+					"credit": "Nikki Dawes"
 				}
 			]
 		},
@@ -3141,9 +3154,9 @@
 						"type": "internal",
 						"path": "races/WBtW/Fairy.webp"
 					},
-					"credit": "Nikki Dawes",
 					"width": 850,
-					"height": 1938
+					"height": 1938,
+					"credit": "Nikki Dawes"
 				}
 			]
 		},
@@ -3163,9 +3176,9 @@
 						"type": "internal",
 						"path": "races/MPMM/Firbolg.webp"
 					},
-					"credit": "Shawn Wood",
 					"width": 828,
-					"height": 850
+					"height": 850,
+					"credit": "Shawn Wood"
 				}
 			]
 		},
@@ -3303,9 +3316,9 @@
 						"type": "internal",
 						"path": "races/VGM/Firbolg.webp"
 					},
-					"credit": "Shawn Wood",
 					"width": 420,
-					"height": 515
+					"height": 515,
+					"credit": "Shawn Wood"
 				}
 			]
 		},
@@ -3333,9 +3346,9 @@
 						"type": "internal",
 						"path": "races/LFL/Flamekin.webp"
 					},
-					"credit": "Joshua Raphael",
 					"width": 1918,
-					"height": 1269
+					"height": 1269,
+					"credit": "Joshua Raphael"
 				}
 			]
 		},
@@ -3413,9 +3426,9 @@
 						"type": "internal",
 						"path": "races/EEPC/Genasi.webp"
 					},
-					"credit": "Claudio Pozas",
 					"width": 1000,
-					"height": 665
+					"height": 665,
+					"credit": "Claudio Pozas"
 				}
 			]
 		},
@@ -3441,9 +3454,9 @@
 						"type": "internal",
 						"path": "races/MPMM/Genasi.webp"
 					},
-					"credit": "Claudio Pozas",
 					"width": 1700,
-					"height": 1154
+					"height": 1154,
+					"credit": "Claudio Pozas"
 				}
 			]
 		},
@@ -3659,9 +3672,9 @@
 						"type": "internal",
 						"path": "races/AAG/Giff.webp"
 					},
-					"credit": "Scott Murphy",
 					"width": 1700,
-					"height": 1025
+					"height": 1025,
+					"credit": "Scott Murphy"
 				}
 			]
 		},
@@ -3761,9 +3774,9 @@
 						"type": "internal",
 						"path": "races/MPMM/Githyanki.webp"
 					},
-					"credit": "Zoltan Boros",
 					"width": 1700,
-					"height": 1327
+					"height": 1327,
+					"credit": "Zoltan Boros"
 				}
 			]
 		},
@@ -3782,9 +3795,9 @@
 						"type": "internal",
 						"path": "races/MPMM/Githzerai.webp"
 					},
-					"credit": "Scott Murphy",
 					"width": 1700,
-					"height": 1338
+					"height": 1338,
+					"credit": "Scott Murphy"
 				}
 			]
 		},
@@ -3792,102 +3805,111 @@
 			"ENG_name": "Gnome",
 			"name": "侏儒",
 			"source": "PHB",
-			"uncommon": true,
-			"entries": [
-				{
-					"type": "section",
-					"entries": [
-						{
-							"type": "entries",
-							"entries": [
-								"在侏儒形成紧密社区的巢穴和街区中，持续的忙碌活动声弥漫着。更响亮的声音点缀着这种嗡嗡声：这里齿轮研磨的嘎吱声，那里轻微的爆炸声，惊讶或胜利的尖叫声，尤其是笑声的爆发。侏儒喜欢生活，享受每一刻的发明、探索、调查、创造和玩耍。",
-								{
-									"ENG_name": "Vibrant Expression",
-									"name": "充满生机",
-									"type": "entries",
-									"entries": [
-										"侏儒对生活的活力和热情在他们微小身体的每一个英寸都闪耀着。侏儒平均身高略超过3尺，体重在40到45磅之间。他们棕褐色的脸上通常装饰着宽阔的微笑（在他们显著的大鼻子下面），明亮的眼睛闪烁着兴奋。他们浅色的头发倾向于向各个方向伸出，仿佛表达了侏儒对周围一切的无尽兴趣。",
-										"侏儒的个性在其外表上表现得淋漓尽致。与他狂野的头发相比，男性侏儒的胡须被精心修剪，但通常被设计成奇特的分叉或整齐的尖角。侏儒的服装，尽管通常采用朴素的大地色调，却装饰着精美的刺绣、压花或闪亮的宝石。"
-									]
-								},
-								{
-									"ENG_name": "Delighted Dedication",
-									"name": "献身于快乐",
-									"type": "entries",
-									"entries": [
-										"就侏儒而言，活着是一件美妙的事情，他们会从他们三到五个世纪的生命中挤出每一分乐趣。人类可能会对这么长的生命过程中感到厌倦，精灵在他们漫长的岁月中也会花很多时间来品味世界的美丽，但侏儒似乎担心即使有这么多时间，他们也无法完成他们想做和想看的事情。",
-										"侏儒说话时就像是他们无法快速地将想法从脑海中说出来。即使他们在一系列主题上提供想法和意见，他们仍能仔细倾听他人，一路上适当地加上惊讶和赞赏的感叹词。",
-										"尽管侏儒喜欢各种类型的笑话，特别是双关语和恶作剧，但他们同样致力于他们承担的更严肃的任务。许多侏儒是熟练的工程师、炼金术士、修补匠和发明家。他们愿意在完善自己所做的事情的过程中犯错误并自嘲，敢于冒险（有时是鲁莽的）并怀有伟大的梦想。"
-									]
-								},
-								{
-									"ENG_name": "Bright Burrows",
-									"name": "明亮的地洞",
-									"type": "entries",
-									"entries": [
-										"侏儒在丘陵、林地中安家。他们居住在地下，但比矮人更多地呼吸新鲜空气，尽可能享受地面上自然、生动的世界。他们的家园通过巧妙的建造和简单的幻术很好地隐藏起来。受欢迎的访客很快就会被引入明亮、温暖的洞穴。那些不受欢迎的人首先不太可能找到洞穴。",
-										"在人类地区定居的侏儒通常是宝石切割师、工程师、贤者或修补匠。一些人类家庭保留了侏儒导师，确保他们的学徒在严肃的学习中也能享受到愉悦的乐趣。一个侏儒可能在他的或她的漫长一生中辅导一个单一人类家庭的几代人。"
-									]
-								},
-								{
-									"ENG_name": "Gnome Names",
-									"name": "侏儒姓名",
-									"type": "entries",
-									"entries": [
-										"侏儒喜欢名字，大多数侏儒有大约六个左右的名字。侏儒的母亲、父亲、族长、姑姑和叔叔每个人都会给侏儒一个名字，而几乎每个人的各种昵称可能会也可能不会随着时间而流行。侏儒的名字通常是祖先或远亲名字的变体，尽管有些是真正的新发明。在与对名字比较\"古板\"的人类和其他人的交往中，侏儒学会了使用不超过三个名字；一个个人名字，一个族群名字，和一个昵称，选择每个类别中最有趣的名字。",
-										{
-											"type": "list",
-											"style": "list-hang-notitle",
-											"items": [
-												{
-													"ENG_name": "Male Names:",
-													"name": "男性名字：",
-													"type": "item",
-													"entry": "阿尔斯顿，艾尔文，博迪诺克，布罗克，埃特格尔，迪姆布尔，埃尔登，厄基，冯金，弗鲁格，格博，吉姆布尔，格利姆，杰贝多，凯伦，纳姆富德尔。奥林，伦达尔，西博，沃林，沃伦，詹克"
-												},
-												{
-													"ENG_name": "Female Names:",
-													"name": "女性名字：",
-													"type": "item",
-													"entry": "Bimpnottin, Breena, Caramip, Carlin, Donella, Duvamil, Ella, Ellyjobell, Ellywick, Lilli, Loopmottin, Lorilla, Mardnab, Nissa, Nyx, Oda, Orla, Roywyn, Shamil, Tana, Waywocket, Zanna"
-												},
-												{
-													"ENG_name": "Clan Names:",
-													"name": "氏族名：",
-													"type": "item",
-													"entry": "贝伦，达格尔，福克尔，加里克，纳克尔，穆尼格，宁克尔，劳尔诺，塞亨彭，廷伯斯，图伦"
-												},
-												{
-													"ENG_name": "Nicknames:",
-													"name": "昵称：",
-													"type": "item",
-													"entry": "Aleslosh, Aslthearth, Badger, Cloak, Doublelock, Filchbatter, Fnipper, Ku, Nina, Oneshoe, Pock, Sparklegem, Scumbleduck"
-												}
-											]
-										}
-									]
-								},
-								{
-									"ENG_name": "Seeing The World",
-									"name": "放眼世界",
-									"type": "entries",
-									"entries": [
-										"侏儒好奇而冲动，他们可能会选择冒险作为一种看世界或探索的方式。作为宝石和其他精美物品的爱好者，一些侏儒选择冒险作为一条快速的\u2014\u2014尽管危险\u2014\u2014致富之路。无论是什么原因促使他们去冒险，选择这种生活方式的侏儒从中获得的乐趣，与他们从事的任何其他活动一样多，有时这会让他们冒险的同伴感到极大的烦恼。"
-									]
-								},
-								{
-									"ENG_name": "Deep Gnomes",
-									"name": "地底侏儒",
-									"type": "inset",
-									"entries": [
-										"侏儒的第三个亚种，地底侏儒（或称斯涅布力）生活在散布在幽暗地域的小社区中。与灰矮人和卓尔不同，斯涅布力和他们地表的表亲一样善良。然而，他们幽默和热情被他们压抑的环境所抑制，他们的发明专长主要指向石工。"
-									]
-								}
-							]
-						}
-					]
+			"_copy": {
+				"ENG_name": "Uncommon Races",
+				"name": "罕见种族",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"在侏儒形成紧密社区的巢穴和街区中，持续的忙碌活动声弥漫着。更响亮的声音点缀着这种嗡嗡声：这里齿轮研磨的嘎吱声，那里轻微的爆炸声，惊讶或胜利的尖叫声，尤其是笑声的爆发。侏儒喜欢生活，享受每一刻的发明、探索、调查、创造和玩耍。",
+											{
+												"ENG_name": "Vibrant Expression",
+												"name": "充满生机",
+												"type": "entries",
+												"entries": [
+													"侏儒对生活的活力和热情在他们微小身体的每一个英寸都闪耀着。侏儒平均身高略超过3尺，体重在40到45磅之间。他们棕褐色的脸上通常装饰着宽阔的微笑（在他们显著的大鼻子下面），明亮的眼睛闪烁着兴奋。他们浅色的头发倾向于向各个方向伸出，仿佛表达了侏儒对周围一切的无尽兴趣。",
+													"侏儒的个性在其外表上表现得淋漓尽致。与他狂野的头发相比，男性侏儒的胡须被精心修剪，但通常被设计成奇特的分叉或整齐的尖角。侏儒的服装，尽管通常采用朴素的大地色调，却装饰着精美的刺绣、压花或闪亮的宝石。"
+												]
+											},
+											{
+												"ENG_name": "Delighted Dedication",
+												"name": "献身于快乐",
+												"type": "entries",
+												"entries": [
+													"就侏儒而言，活着是一件美妙的事情，他们会从他们三到五个世纪的生命中挤出每一分乐趣。人类可能会对这么长的生命过程中感到厌倦，精灵在他们漫长的岁月中也会花很多时间来品味世界的美丽，但侏儒似乎担心即使有这么多时间，他们也无法完成他们想做和想看的事情。",
+													"侏儒说话时就像是他们无法快速地将想法从脑海中说出来。即使他们在一系列主题上提供想法和意见，他们仍能仔细倾听他人，一路上适当地加上惊讶和赞赏的感叹词。",
+													"尽管侏儒喜欢各种类型的笑话，特别是双关语和恶作剧，但他们同样致力于他们承担的更严肃的任务。许多侏儒是熟练的工程师、炼金术士、修补匠和发明家。他们愿意在完善自己所做的事情的过程中犯错误并自嘲，敢于冒险（有时是鲁莽的）并怀有伟大的梦想。"
+												]
+											},
+											{
+												"ENG_name": "Bright Burrows",
+												"name": "明亮的地洞",
+												"type": "entries",
+												"entries": [
+													"侏儒在丘陵、林地中安家。他们居住在地下，但比矮人更多地呼吸新鲜空气，尽可能享受地面上自然、生动的世界。他们的家园通过巧妙的建造和简单的幻术很好地隐藏起来。受欢迎的访客很快就会被引入明亮、温暖的洞穴。那些不受欢迎的人首先不太可能找到洞穴。",
+													"在人类地区定居的侏儒通常是宝石切割师、工程师、贤者或修补匠。一些人类家庭保留了侏儒导师，确保他们的学徒在严肃的学习中也能享受到愉悦的乐趣。一个侏儒可能在他的或她的漫长一生中辅导一个单一人类家庭的几代人。"
+												]
+											},
+											{
+												"ENG_name": "Gnome Names",
+												"name": "侏儒姓名",
+												"type": "entries",
+												"entries": [
+													"侏儒喜欢名字，大多数侏儒有大约六个左右的名字。侏儒的母亲、父亲、族长、姑姑和叔叔每个人都会给侏儒一个名字，而几乎每个人的各种昵称可能会也可能不会随着时间而流行。侏儒的名字通常是祖先或远亲名字的变体，尽管有些是真正的新发明。在与对名字比较\"古板\"的人类和其他人的交往中，侏儒学会了使用不超过三个名字；一个个人名字，一个族群名字，和一个昵称，选择每个类别中最有趣的名字。",
+													{
+														"type": "list",
+														"style": "list-hang-notitle",
+														"items": [
+															{
+																"ENG_name": "Male Names:",
+																"name": "男性名字：",
+																"type": "item",
+																"entry": "阿尔斯顿，艾尔文，博迪诺克，布罗克，埃特格尔，迪姆布尔，埃尔登，厄基，冯金，弗鲁格，格博，吉姆布尔，格利姆，杰贝多，凯伦，纳姆富德尔。奥林，伦达尔，西博，沃林，沃伦，詹克"
+															},
+															{
+																"ENG_name": "Female Names:",
+																"name": "女性名字：",
+																"type": "item",
+																"entry": "Bimpnottin, Breena, Caramip, Carlin, Donella, Duvamil, Ella, Ellyjobell, Ellywick, Lilli, Loopmottin, Lorilla, Mardnab, Nissa, Nyx, Oda, Orla, Roywyn, Shamil, Tana, Waywocket, Zanna"
+															},
+															{
+																"ENG_name": "Clan Names:",
+																"name": "氏族名：",
+																"type": "item",
+																"entry": "贝伦，达格尔，福克尔，加里克，纳克尔，穆尼格，宁克尔，劳尔诺，塞亨彭，廷伯斯，图伦"
+															},
+															{
+																"ENG_name": "Nicknames:",
+																"name": "昵称：",
+																"type": "item",
+																"entry": "Aleslosh, Aslthearth, Badger, Cloak, Doublelock, Filchbatter, Fnipper, Ku, Nina, Oneshoe, Pock, Sparklegem, Scumbleduck"
+															}
+														]
+													}
+												]
+											},
+											{
+												"ENG_name": "Seeing The World",
+												"name": "放眼世界",
+												"type": "entries",
+												"entries": [
+													"侏儒好奇而冲动，他们可能会选择冒险作为一种看世界或探索的方式。作为宝石和其他精美物品的爱好者，一些侏儒选择冒险作为一条快速的\u2014\u2014尽管危险\u2014\u2014致富之路。无论是什么原因促使他们去冒险，选择这种生活方式的侏儒从中获得的乐趣，与他们从事的任何其他活动一样多，有时这会让他们冒险的同伴感到极大的烦恼。"
+												]
+											},
+											{
+												"ENG_name": "Deep Gnomes",
+												"name": "地底侏儒",
+												"type": "inset",
+												"entries": [
+													"侏儒的第三个亚种，地底侏儒（或称斯涅布力）生活在散布在幽暗地域的小社区中。与灰矮人和卓尔不同，斯涅布力和他们地表的表亲一样善良。然而，他们幽默和热情被他们压抑的环境所抑制，他们的发明专长主要指向石工。"
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
 				}
-			],
+			},
 			"images": [
 				{
 					"type": "image",
@@ -3925,9 +3947,9 @@
 						"type": "internal",
 						"path": "races/XPHB/Gnome.webp"
 					},
-					"credit": "Eric Belisle",
 					"width": 1700,
-					"height": 1111
+					"height": 1111,
+					"credit": "Eric Belisle"
 				}
 			]
 		},
@@ -4178,9 +4200,9 @@
 						"type": "internal",
 						"path": "races/MPMM/Goblin.webp"
 					},
-					"credit": "Mike Jordana",
 					"width": 1700,
-					"height": 1404
+					"height": 1404,
+					"credit": "Mike Jordana"
 				}
 			]
 		},
@@ -4213,10 +4235,10 @@
 						"type": "internal",
 						"path": "races/PSZ/Goblin.webp"
 					},
-					"title": "Zada, Hedron Grinder",
-					"credit": "Chris Rallis",
 					"width": 441,
-					"height": 401
+					"height": 401,
+					"title": "Zada, Hedron Grinder",
+					"credit": "Chris Rallis"
 				},
 				{
 					"type": "image",
@@ -4224,10 +4246,10 @@
 						"type": "internal",
 						"path": "races/PSZ/Goblin2.webp"
 					},
-					"title": "石板锤",
-					"credit": "Joeseph Meehan",
 					"width": 543,
-					"height": 325
+					"height": 325,
+					"title": "石板锤",
+					"credit": "Joeseph Meehan"
 				}
 			]
 		},
@@ -4235,7 +4257,11 @@
 			"ENG_name": "Goblin",
 			"name": "地精",
 			"source": "VGM",
-			"monstrous": true,
+			"_copy": {
+				"ENG_name": "Monstrous Adventurers",
+				"name": "怪物冒险者",
+				"source": "VGM"
+			},
 			"images": [
 				{
 					"type": "image",
@@ -4289,10 +4315,10 @@
 						"type": "internal",
 						"path": "races/PSX/Goblin.webp"
 					},
-					"title": "火炮爆炸",
-					"credit": "Svetlin Velinov",
 					"width": 1280,
-					"height": 863
+					"height": 863,
+					"title": "火炮爆炸",
+					"credit": "Svetlin Velinov"
 				},
 				{
 					"type": "image",
@@ -4300,10 +4326,10 @@
 						"type": "internal",
 						"path": "races/PSX/Goblin2.webp"
 					},
-					"title": "侏儒开拓者",
-					"credit": "Josh Hass",
 					"width": 643,
-					"height": 515
+					"height": 515,
+					"title": "侏儒开拓者",
+					"credit": "Josh Hass"
 				}
 			]
 		},
@@ -4399,9 +4425,9 @@
 						"type": "internal",
 						"path": "races/MPMM/Goliath.webp"
 					},
-					"credit": "Eric Belisle, Jon Hodgson",
 					"width": 1700,
-					"height": 1379
+					"height": 1379,
+					"credit": "Eric Belisle, Jon Hodgson"
 				}
 			]
 		},
@@ -4524,9 +4550,9 @@
 						"type": "internal",
 						"path": "races/XPHB/Goliath.webp"
 					},
-					"credit": "Hinchel Or",
 					"width": 1700,
-					"height": 1111
+					"height": 1111,
+					"credit": "Hinchel Or"
 				}
 			]
 		},
@@ -4562,9 +4588,9 @@
 						"type": "internal",
 						"path": "races/AAG/Hadozee.webp"
 					},
-					"credit": "Zuzanna Wužyk",
 					"width": 1700,
-					"height": 1028
+					"height": 1028,
+					"credit": "Zuzanna Wužyk"
 				}
 			]
 		},
@@ -4572,53 +4598,62 @@
 			"ENG_name": "Half-Elf",
 			"name": "半精灵",
 			"source": "PHB",
-			"uncommon": true,
-			"entries": [
-				{
-					"type": "section",
-					"entries": [
-						{
-							"type": "entries",
-							"entries": [
-								"行走在两个世界，却真正属于任何一个，半精灵结合了一些人所说的精灵和人类父母的最佳品质：人类的好奇心、创造力和雄心壮志，以及精灵的精致感官、对自然的热爱和艺术品味。一些半精灵生活在人类中，由于情感和身体的差异而与众不同，看着朋友和亲人老去，而时间几乎不触及他们。其他人与精灵生活在一起，在同伴继续像孩子一样生活时长大成人，在永恒的精灵领域中变得焦躁不安。许多无法适应任何一个社会的半精灵，选择独自流浪的生活，或与其他不合群的人和被排斥者一起加入冒险生活。",
-								{
-									"ENG_name": "Of Two Worlds",
-									"name": "同属两个世界",
-									"type": "entries",
-									"entries": [
-										"对人类来说，半精灵看起来像精灵，而对精灵来说，他们看起来像人类。在身高上，他们与两个种族的父母相当，尽管他们既不像精灵那样苗条，也不像人类那样宽阔。他们的身高从不足5尺到大约6尺，体重从100到180磅不等，男性略高于女性，体重略重。半精灵男性确实有面部毛发，有时会留胡须以掩盖他们的精灵血统。半精灵的颜色和特征介于他们的人类和精灵父母之间，因此显示出比任何一种种族都更加明显的多样性。他们倾向于拥有他们精灵父母的眼睛。"
-									]
-								},
-								{
-									"ENG_name": "Diplomats or Wanderers",
-									"name": "说客或浪人",
-									"type": "entries",
-									"entries": [
-										"半精灵没有自己的土地，尽管他们在人类城市受欢迎，在精灵森林里则不那么受欢迎。在精灵和人类经常互动的地区的大城市中，半精灵有时足够多，可以形成自己的小社区。他们喜欢与其他半精灵的陪伴，只有这些人才能真正理解生活在这两个世界之间是什么感受。",
-										"然而，在世界的大部分地区，半精灵是相当罕见的，以至于一个人可能生活多年都遇不到另一个。有些人更喜欢完全避开人群，作为森林人、猎人或冒险家在荒野中漫游，很少访问文明世界。像精灵一样，他们的长寿驱使他们渴望漫游。相比之下，其他人则投身于社会的中心，利用他们的魅力和社会技能在外交角色或作为骗子中发挥巨大作用。"
-									]
-								},
-								{
-									"ENG_name": "Half-Elf Names",
-									"name": "半精灵姓名",
-									"type": "entries",
-									"entries": [
-										"半精灵使用人类或精灵的命名习惯。仿佛是为了强调他们并不真正适应任何一个社会，由人类抚养长大的半精灵通常被赋予精灵的名字，而在精灵中长大的半精灵则常常取人类的名字。"
-									]
-								},
-								{
-									"ENG_name": "Excellent Ambassadors",
-									"name": "优秀的使节",
-									"type": "inset",
-									"entries": [
-										"许多半精灵在很小的时候就知道如何与每个人相处，化解敌意并找到共同点。作为一个种族，他们拥有精灵的优雅而不孤傲，拥有人类的能量而不粗鲁。他们经常成为出色的大使和中介（除了在精灵和人类之间，因为每一方都怀疑半精灵偏爱另一方）。"
-									]
-								}
-							]
-						}
-					]
+			"_copy": {
+				"ENG_name": "Uncommon Races",
+				"name": "罕见种族",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"行走在两个世界，却真正属于任何一个，半精灵结合了一些人所说的精灵和人类父母的最佳品质：人类的好奇心、创造力和雄心壮志，以及精灵的精致感官、对自然的热爱和艺术品味。一些半精灵生活在人类中，由于情感和身体的差异而与众不同，看着朋友和亲人老去，而时间几乎不触及他们。其他人与精灵生活在一起，在同伴继续像孩子一样生活时长大成人，在永恒的精灵领域中变得焦躁不安。许多无法适应任何一个社会的半精灵，选择独自流浪的生活，或与其他不合群的人和被排斥者一起加入冒险生活。",
+											{
+												"ENG_name": "Of Two Worlds",
+												"name": "同属两个世界",
+												"type": "entries",
+												"entries": [
+													"对人类来说，半精灵看起来像精灵，而对精灵来说，他们看起来像人类。在身高上，他们与两个种族的父母相当，尽管他们既不像精灵那样苗条，也不像人类那样宽阔。他们的身高从不足5尺到大约6尺，体重从100到180磅不等，男性略高于女性，体重略重。半精灵男性确实有面部毛发，有时会留胡须以掩盖他们的精灵血统。半精灵的颜色和特征介于他们的人类和精灵父母之间，因此显示出比任何一种种族都更加明显的多样性。他们倾向于拥有他们精灵父母的眼睛。"
+												]
+											},
+											{
+												"ENG_name": "Diplomats or Wanderers",
+												"name": "说客或浪人",
+												"type": "entries",
+												"entries": [
+													"半精灵没有自己的土地，尽管他们在人类城市受欢迎，在精灵森林里则不那么受欢迎。在精灵和人类经常互动的地区的大城市中，半精灵有时足够多，可以形成自己的小社区。他们喜欢与其他半精灵的陪伴，只有这些人才能真正理解生活在这两个世界之间是什么感受。",
+													"然而，在世界的大部分地区，半精灵是相当罕见的，以至于一个人可能生活多年都遇不到另一个。有些人更喜欢完全避开人群，作为森林人、猎人或冒险家在荒野中漫游，很少访问文明世界。像精灵一样，他们的长寿驱使他们渴望漫游。相比之下，其他人则投身于社会的中心，利用他们的魅力和社会技能在外交角色或作为骗子中发挥巨大作用。"
+												]
+											},
+											{
+												"ENG_name": "Half-Elf Names",
+												"name": "半精灵姓名",
+												"type": "entries",
+												"entries": [
+													"半精灵使用人类或精灵的命名习惯。仿佛是为了强调他们并不真正适应任何一个社会，由人类抚养长大的半精灵通常被赋予精灵的名字，而在精灵中长大的半精灵则常常取人类的名字。"
+												]
+											},
+											{
+												"ENG_name": "Excellent Ambassadors",
+												"name": "优秀的使节",
+												"type": "inset",
+												"entries": [
+													"许多半精灵在很小的时候就知道如何与每个人相处，化解敌意并找到共同点。作为一个种族，他们拥有精灵的优雅而不孤傲，拥有人类的能量而不粗鲁。他们经常成为出色的大使和中介（除了在精灵和人类之间，因为每一方都怀疑半精灵偏爱另一方）。"
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
 				}
-			],
+			},
 			"images": [
 				{
 					"type": "image",
@@ -4645,72 +4680,81 @@
 			"ENG_name": "Half-Orc",
 			"name": "半兽人",
 			"source": "PHB",
-			"uncommon": true,
-			"entries": [
-				{
-					"type": "section",
-					"entries": [
-						{
-							"type": "entries",
-							"entries": [
-								"无论是在强大的魔契师领导下团结起来，还是在多年的冲突后达成僵持，兽人和人类部落有时会结成联盟，联合成更大的部落，给附近文明的土地带来恐怖。当这些联盟通过婚姻得到巩固时，就会诞生半兽人。一些半兽人上升到成为兽人部落的骄傲首领，他们的人类血统使他们在与纯血统兽人对手的竞争中占据优势。一些半兽人进入世界，以证明他们在人类和其他文明种族中的价值。许多人成为冒险家，因他们的英勇事迹而获得伟大成就，因他们的野蛮习俗和野蛮狂暴而声名狼藉。",
-								{
-									"ENG_name": "Scarred and Strong",
-									"name": "疤痕与强壮",
-									"type": "entries",
-									"entries": [
-										"半兽人的灰白色色素沉着、倾斜的前额、突出的下巴、显眼的牙齿和高大的体格使他们的兽人血统一目了然。半兽人身高在6到7尺之间，体重通常在180到250磅之间。",
-										"兽人将战斗留下的伤疤视为骄傲的象征，将装饰性的伤疤视为美丽之物。然而，其他伤疤则标志着一个兽人或半兽人曾经是奴隶或被放逐的耻辱。任何生活在兽人之中或附近的半兽人都有伤疤，无论是羞辱的标志还是骄傲的标志，都讲述着他们过去的功绩和伤害。这样一个生活在人类中的半兽人可能会自豪地展示这些伤疤，或者因羞愧而隐藏它们。"
-									]
-								},
-								{
-									"ENG_name": "The Mark of Gruumsh",
-									"name": "格乌什的印记",
-									"type": "entries",
-									"entries": [
-										"独眼之神格乌什创造了兽人，即使那些背弃他信仰的兽人也无法完全逃脱他的影响。半兽人也是如此，尽管他们的人类血统缓和了兽人传承的影响。一些半兽人会在梦中听见格乌什的低语，召唤他们释放内心沸腾的怒火；另一些则在近身肉搏时感受到格乌什的狂喜\u2014\u2014无论选择与他共舞还是恐惧厌恶地颤抖。半兽人并非天性邪恶，但恶念始终潜伏其中，不论他们选择拥抱还是反抗。",
-										"在格乌什的愤怒之外，半兽人情感强烈。愤怒不仅加速了他们的脉搏，还使他们的身体燃烧。侮辱像酸一样刺痛，悲伤削弱了他们的力量。但他们大声而真诚地笑，简单的身体乐趣\u2014\u2014盛宴、畅饮、摔跤、击鼓和狂野舞蹈\u2014\u2014使他们的心充满喜悦。他们往往脾气暴躁，有时阴沉，更倾向于行动而不是沉思，更倾向于战斗而不是争论。最有成就的半兽人是那些拥有足够自制力在文明土地上生存的人。"
-									]
-								},
-								{
-									"ENG_name": "Half-Orc Names",
-									"name": "半兽人名字",
-									"type": "entries",
-									"entries": [
-										"半兽人通常拥有适合他们成长文化的名称。一个想要融入人类社会的半兽人可能会放弃兽人的名字，改用人类的名字。有些拥有人类名字的半兽人决定采用喉音的兽人名字，因为他们认为这会让他们显得更加可怕。",
-										{
-											"type": "list",
-											"style": "list-hang-notitle",
-											"items": [
-												{
-													"ENG_name": "Male Orc Names:",
-													"name": "男性兽人名字：",
-													"type": "item",
-													"entry": "登奇，冯，格尔，亨克，霍尔格，因什，凯斯，克鲁斯克，穆伦，荣特，舒姆普，索克"
-												},
-												{
-													"ENG_name": "Female Orc Names:",
-													"name": "女性兽人名字：",
-													"type": "item",
-													"entry": "巴基, 埃门, 恩贡, 坎西夫, 米耶夫, 尼加, 奥瓦克, 翁卡, 沙瑟, 沃拉, 沃伦, 伊维达"
-												}
-											]
-										}
-									]
-								},
-								{
-									"ENG_name": "Grudging Acceptance",
-									"name": "强迫认同",
-									"type": "inset",
-									"entries": [
-										"每个半兽人都会找到一种方式，从那些憎恨兽人的人那里获得接受。有些人很保守，尽量不引起别人的注意。一些人尽可能公开地展示他们的虔诚和善良（无论这种展示是否真诚）。还有一些人则尽量表现得如此强硬，以至于其他人只是避开他们。"
-									]
-								}
-							]
-						}
-					]
+			"_copy": {
+				"ENG_name": "Uncommon Races",
+				"name": "罕见种族",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"无论是在强大的魔契师领导下团结起来，还是在多年的冲突后达成僵持，兽人和人类部落有时会结成联盟，联合成更大的部落，给附近文明的土地带来恐怖。当这些联盟通过婚姻得到巩固时，就会诞生半兽人。一些半兽人上升到成为兽人部落的骄傲首领，他们的人类血统使他们在与纯血统兽人对手的竞争中占据优势。一些半兽人进入世界，以证明他们在人类和其他文明种族中的价值。许多人成为冒险家，因他们的英勇事迹而获得伟大成就，因他们的野蛮习俗和野蛮狂暴而声名狼藉。",
+											{
+												"ENG_name": "Scarred and Strong",
+												"name": "疤痕与强壮",
+												"type": "entries",
+												"entries": [
+													"半兽人的灰白色色素沉着、倾斜的前额、突出的下巴、显眼的牙齿和高大的体格使他们的兽人血统一目了然。半兽人身高在6到7尺之间，体重通常在180到250磅之间。",
+													"兽人将战斗留下的伤疤视为骄傲的象征，将装饰性的伤疤视为美丽之物。然而，其他伤疤则标志着一个兽人或半兽人曾经是奴隶或被放逐的耻辱。任何生活在兽人之中或附近的半兽人都有伤疤，无论是羞辱的标志还是骄傲的标志，都讲述着他们过去的功绩和伤害。这样一个生活在人类中的半兽人可能会自豪地展示这些伤疤，或者因羞愧而隐藏它们。"
+												]
+											},
+											{
+												"ENG_name": "The Mark of Gruumsh",
+												"name": "格乌什的印记",
+												"type": "entries",
+												"entries": [
+													"独眼之神格乌什创造了兽人，即使那些背弃他信仰的兽人也无法完全逃脱他的影响。半兽人也是如此，尽管他们的人类血统缓和了兽人传承的影响。一些半兽人会在梦中听见格乌什的低语，召唤他们释放内心沸腾的怒火；另一些则在近身肉搏时感受到格乌什的狂喜\u2014\u2014无论选择与他共舞还是恐惧厌恶地颤抖。半兽人并非天性邪恶，但恶念始终潜伏其中，不论他们选择拥抱还是反抗。",
+													"在格乌什的愤怒之外，半兽人情感强烈。愤怒不仅加速了他们的脉搏，还使他们的身体燃烧。侮辱像酸一样刺痛，悲伤削弱了他们的力量。但他们大声而真诚地笑，简单的身体乐趣\u2014\u2014盛宴、畅饮、摔跤、击鼓和狂野舞蹈\u2014\u2014使他们的心充满喜悦。他们往往脾气暴躁，有时阴沉，更倾向于行动而不是沉思，更倾向于战斗而不是争论。最有成就的半兽人是那些拥有足够自制力在文明土地上生存的人。"
+												]
+											},
+											{
+												"ENG_name": "Half-Orc Names",
+												"name": "半兽人名字",
+												"type": "entries",
+												"entries": [
+													"半兽人通常拥有适合他们成长文化的名称。一个想要融入人类社会的半兽人可能会放弃兽人的名字，改用人类的名字。有些拥有人类名字的半兽人决定采用喉音的兽人名字，因为他们认为这会让他们显得更加可怕。",
+													{
+														"type": "list",
+														"style": "list-hang-notitle",
+														"items": [
+															{
+																"ENG_name": "Male Orc Names:",
+																"name": "男性兽人名字：",
+																"type": "item",
+																"entry": "登奇，冯，格尔，亨克，霍尔格，因什，凯斯，克鲁斯克，穆伦，荣特，舒姆普，索克"
+															},
+															{
+																"ENG_name": "Female Orc Names:",
+																"name": "女性兽人名字：",
+																"type": "item",
+																"entry": "巴基, 埃门, 恩贡, 坎西夫, 米耶夫, 尼加, 奥瓦克, 翁卡, 沙瑟, 沃拉, 沃伦, 伊维达"
+															}
+														]
+													}
+												]
+											},
+											{
+												"ENG_name": "Grudging Acceptance",
+												"name": "强迫认同",
+												"type": "inset",
+												"entries": [
+													"每个半兽人都会找到一种方式，从那些憎恨兽人的人那里获得接受。有些人很保守，尽量不引起别人的注意。一些人尽可能公开地展示他们的虔诚和善良（无论这种展示是否真诚）。还有一些人则尽量表现得如此强硬，以至于其他人只是避开他们。"
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
 				}
-			],
+			},
 			"images": [
 				{
 					"type": "image",
@@ -4898,9 +4942,9 @@
 						"type": "internal",
 						"path": "races/XPHB/Halfling.webp"
 					},
-					"credit": "Jane Katsubo",
 					"width": 1700,
-					"height": 1119
+					"height": 1119,
+					"credit": "Jane Katsubo"
 				}
 			]
 		},
@@ -5034,9 +5078,9 @@
 						"type": "internal",
 						"path": "races/MPMM/Harengon.webp"
 					},
-					"credit": "Beth Trott, Shawn Wood",
 					"width": 1700,
-					"height": 1189
+					"height": 1189,
+					"credit": "Beth Trott, Shawn Wood"
 				}
 			]
 		},
@@ -5055,9 +5099,9 @@
 						"type": "internal",
 						"path": "races/WBtW/Harengon.webp"
 					},
-					"credit": "Shawn Wood",
 					"width": 850,
-					"height": 1115
+					"height": 1115,
+					"credit": "Shawn Wood"
 				}
 			]
 		},
@@ -5075,9 +5119,9 @@
 						"type": "internal",
 						"path": "races/RHW/Hexblood.webp"
 					},
-					"credit": "Helge C. Balzer",
 					"width": 1700,
-					"height": 1110
+					"height": 1110,
+					"credit": "Helge C. Balzer"
 				}
 			]
 		},
@@ -5150,9 +5194,9 @@
 						"type": "internal",
 						"path": "races/VRGR/Hexblood.webp"
 					},
-					"credit": "Kai Carpenter",
 					"width": 800,
-					"height": 1483
+					"height": 1483,
+					"credit": "Kai Carpenter"
 				}
 			]
 		},
@@ -5182,9 +5226,9 @@
 						"type": "internal",
 						"path": "races/MPMM/Hobgoblin.webp"
 					},
-					"credit": "Eric Belisle, Julian Kok",
 					"width": 421,
-					"height": 850
+					"height": 850,
+					"credit": "Eric Belisle, Julian Kok"
 				}
 			]
 		},
@@ -5192,7 +5236,11 @@
 			"ENG_name": "Hobgoblin",
 			"name": "大地精",
 			"source": "VGM",
-			"monstrous": true,
+			"_copy": {
+				"ENG_name": "Monstrous Adventurers",
+				"name": "怪物冒险者",
+				"source": "VGM"
+			},
 			"images": [
 				{
 					"type": "image",
@@ -5503,9 +5551,9 @@
 						"type": "internal",
 						"path": "races/XPHB/Human.webp"
 					},
-					"credit": "Zuzanna Wužyk",
 					"width": 1700,
-					"height": 1083
+					"height": 1083,
+					"credit": "Zuzanna Wužyk"
 				}
 			]
 		},
@@ -5564,10 +5612,10 @@
 						"type": "internal",
 						"path": "races/PSA/Human (Amonkhet).webp"
 					},
-					"title": "灵魂之痕法师",
-					"credit": "Steve Argyle",
 					"width": 1174,
-					"height": 883
+					"height": 883,
+					"title": "灵魂之痕法师",
+					"credit": "Steve Argyle"
 				},
 				{
 					"type": "image",
@@ -5575,10 +5623,10 @@
 						"type": "internal",
 						"path": "races/PSA/Human (Amonkhet)2.webp"
 					},
-					"title": "胜利",
-					"credit": "Grzegorz Rutkowski",
 					"width": 1276,
-					"height": 556
+					"height": 556,
+					"title": "胜利",
+					"credit": "Grzegorz Rutkowski"
 				}
 			]
 		},
@@ -5606,10 +5654,10 @@
 						"type": "internal",
 						"path": "races/PSI/Innistrad.webp"
 					},
-					"title": "恐怖墓园守卫",
-					"credit": "Ryan Pancoast",
 					"width": 617,
-					"height": 673
+					"height": 673,
+					"title": "恐怖墓园守卫",
+					"credit": "Ryan Pancoast"
 				},
 				{
 					"type": "image",
@@ -5617,10 +5665,10 @@
 						"type": "internal",
 						"path": "races/PSI/Innistrad2.webp"
 					},
-					"title": "银刃圣武士",
-					"credit": "Jason Chan",
 					"width": 865,
-					"height": 624
+					"height": 624,
+					"title": "银刃圣武士",
+					"credit": "Jason Chan"
 				},
 				{
 					"type": "image",
@@ -5628,10 +5676,10 @@
 						"type": "internal",
 						"path": "races/PSI/Innistrad3.webp"
 					},
-					"title": "月神秘术师",
-					"credit": "Wesley Burt",
 					"width": 807,
-					"height": 575
+					"height": 575,
+					"title": "月神秘术师",
+					"credit": "Wesley Burt"
 				}
 			]
 		},
@@ -5753,10 +5801,10 @@
 						"type": "internal",
 						"path": "races/PSX/Human.webp"
 					},
-					"title": "伊萨拉的守护者",
-					"credit": "Lake Hurwitz",
 					"width": 630,
-					"height": 1026
+					"height": 1026,
+					"title": "伊萨拉的守护者",
+					"credit": "Lake Hurwitz"
 				},
 				{
 					"type": "image",
@@ -5764,10 +5812,10 @@
 						"type": "internal",
 						"path": "races/PSX/Human2.webp"
 					},
-					"title": "导航者的毁灭",
-					"credit": "Zoltan Boros",
 					"width": 625,
-					"height": 497
+					"height": 497,
+					"title": "导航者的毁灭",
+					"credit": "Zoltan Boros"
 				},
 				{
 					"type": "image",
@@ -5775,10 +5823,10 @@
 						"type": "internal",
 						"path": "races/PSX/Human3.webp"
 					},
-					"title": "探索者的侍从",
-					"credit": "Anthony Palumbo",
 					"width": 625,
-					"height": 514
+					"height": 514,
+					"title": "探索者的侍从",
+					"credit": "Anthony Palumbo"
 				}
 			]
 		},
@@ -5803,10 +5851,10 @@
 						"type": "internal",
 						"path": "races/PSK/Human.webp"
 					},
-					"title": "奇械师的顿悟",
-					"credit": "Kieran Yanner",
 					"width": 1276,
-					"height": 836
+					"height": 836,
+					"title": "奇械师的顿悟",
+					"credit": "Kieran Yanner"
 				}
 			]
 		},
@@ -5826,10 +5874,10 @@
 						"type": "internal",
 						"path": "races/PSD/Keldon.webp"
 					},
-					"title": "加尔纳，血焰",
-					"credit": "Winona Nelson",
 					"width": 628,
-					"height": 371
+					"height": 371,
+					"title": "加尔纳，血焰",
+					"credit": "Winona Nelson"
 				},
 				{
 					"type": "image",
@@ -5837,10 +5885,10 @@
 						"type": "internal",
 						"path": "races/PSD/Keldon2.webp"
 					},
-					"title": "大统帅拉达",
-					"credit": "Anna Steinbauer",
 					"width": 464,
-					"height": 901
+					"height": 901,
+					"title": "大统帅拉达",
+					"credit": "Anna Steinbauer"
 				}
 			]
 		},
@@ -5887,10 +5935,10 @@
 						"type": "internal",
 						"path": "races/PSZ/Human.webp"
 					},
-					"title": "龙主流亡者",
-					"credit": "Raymond Swanland",
 					"width": 590,
-					"height": 424
+					"height": 424,
+					"title": "龙主流亡者",
+					"credit": "Raymond Swanland"
 				},
 				{
 					"type": "image",
@@ -5898,10 +5946,10 @@
 						"type": "internal",
 						"path": "races/PSZ/Human2.webp"
 					},
-					"title": "卡赞杜刀术大师",
-					"credit": "Michael Komarck",
 					"width": 294,
-					"height": 215
+					"height": 215,
+					"title": "卡赞杜刀术大师",
+					"credit": "Michael Komarck"
 				},
 				{
 					"type": "image",
@@ -5909,10 +5957,10 @@
 						"type": "internal",
 						"path": "races/PSZ/Human3.webp"
 					},
-					"title": "宁静的管理者",
-					"credit": "Magali Villeneuve",
 					"width": 567,
-					"height": 359
+					"height": 359,
+					"title": "宁静的管理者",
+					"credit": "Magali Villeneuve"
 				},
 				{
 					"type": "image",
@@ -5920,10 +5968,10 @@
 						"type": "internal",
 						"path": "races/PSZ/Human4.webp"
 					},
-					"title": "海门神谕",
-					"credit": "Daniel Ljunggren",
 					"width": 325,
-					"height": 236
+					"height": 236,
+					"title": "海门神谕",
+					"credit": "Daniel Ljunggren"
 				}
 			]
 		},
@@ -5942,9 +5990,9 @@
 						"type": "internal",
 						"path": "races/EFA/Kalashtar.webp"
 					},
-					"credit": "Andrea de Dominicis",
 					"width": 850,
-					"height": 559
+					"height": 559,
+					"credit": "Andrea de Dominicis"
 				}
 			]
 		},
@@ -6063,9 +6111,9 @@
 						"type": "internal",
 						"path": "races/ERLW/Kalashtar.webp"
 					},
-					"credit": "Eric Belisle",
 					"width": 400,
-					"height": 1000
+					"height": 1000,
+					"credit": "Eric Belisle"
 				},
 				{
 					"type": "image",
@@ -6094,9 +6142,9 @@
 						"type": "internal",
 						"path": "races/DSotDQ/Kender.webp"
 					},
-					"credit": "Linda Lithén",
 					"width": 1700,
-					"height": 1135
+					"height": 1135,
+					"credit": "Linda Lithén"
 				}
 			]
 		},
@@ -6115,9 +6163,9 @@
 						"type": "internal",
 						"path": "races/MPMM/Kenku.webp"
 					},
-					"credit": "Scott Murphy",
 					"width": 691,
-					"height": 850
+					"height": 850,
+					"credit": "Scott Murphy"
 				}
 			]
 		},
@@ -6261,10 +6309,10 @@
 						"type": "internal",
 						"path": "races/PSA/Khenra.webp"
 					},
-					"title": "真心双胞胎",
-					"credit": "Matt Stewart",
 					"width": 1276,
-					"height": 786
+					"height": 786,
+					"title": "真心双胞胎",
+					"credit": "Matt Stewart"
 				},
 				{
 					"type": "image",
@@ -6272,10 +6320,10 @@
 						"type": "internal",
 						"path": "races/PSA/Khenra2.webp"
 					},
-					"title": "敏捷之刃卡纳拉",
-					"credit": "Tomasz Jedruszek",
 					"width": 1275,
-					"height": 705
+					"height": 705,
+					"title": "敏捷之刃卡纳拉",
+					"credit": "Tomasz Jedruszek"
 				}
 			]
 		},
@@ -6294,9 +6342,9 @@
 						"type": "internal",
 						"path": "races/EFA/Khoravar.webp"
 					},
-					"credit": "Daarken",
 					"width": 850,
-					"height": 557
+					"height": 557,
+					"credit": "Daarken"
 				}
 			]
 		},
@@ -6332,10 +6380,10 @@
 						"type": "internal",
 						"path": "races/LFL/Kithkin (Shadowmoor).webp"
 					},
-					"title": "像这样的吉斯灵等影沼居民常常发现大地是一个恐怖的地点",
-					"credit": "Edgar Sánchez Hidalgo",
 					"width": 1700,
-					"height": 1249
+					"height": 1249,
+					"title": "像这样的吉斯灵等影沼居民常常发现大地是一个恐怖的地点",
+					"credit": "Edgar Sánchez Hidalgo"
 				}
 			]
 		},
@@ -6354,9 +6402,9 @@
 						"type": "internal",
 						"path": "races/MPMM/Kobold.webp"
 					},
-					"credit": "Christopher Burdett",
 					"width": 600,
-					"height": 850
+					"height": 850,
+					"credit": "Christopher Burdett"
 				}
 			]
 		},
@@ -6364,7 +6412,11 @@
 			"ENG_name": "Kobold",
 			"name": "狗头人",
 			"source": "VGM",
-			"monstrous": true,
+			"_copy": {
+				"ENG_name": "Monstrous Adventurers",
+				"name": "怪物冒险者",
+				"source": "VGM"
+			},
 			"images": [
 				{
 					"type": "image",
@@ -6406,10 +6458,10 @@
 						"type": "internal",
 						"path": "races/PSZ/Kor.webp"
 					},
-					"title": "科尔圣化者",
-					"credit": "Dan Scott",
 					"width": 543,
-					"height": 358
+					"height": 358,
+					"title": "科尔圣化者",
+					"credit": "Dan Scott"
 				},
 				{
 					"type": "image",
@@ -6417,10 +6469,10 @@
 						"type": "internal",
 						"path": "races/PSZ/Kor2.webp"
 					},
-					"title": "科族纠缠者",
-					"credit": "Jason Rainville",
 					"width": 495,
-					"height": 453
+					"height": 453,
+					"title": "科族纠缠者",
+					"credit": "Jason Rainville"
 				},
 				{
 					"type": "image",
@@ -6428,10 +6480,10 @@
 						"type": "internal",
 						"path": "races/PSZ/Kor3.webp"
 					},
-					"title": "风筝帆学徒",
-					"credit": "Austin Hsu",
 					"width": 282,
-					"height": 186
+					"height": 186,
+					"title": "风筝帆学徒",
+					"credit": "Austin Hsu"
 				}
 			]
 		},
@@ -6551,9 +6603,9 @@
 						"type": "internal",
 						"path": "races/MOT/Leonin.webp"
 					},
-					"credit": "Wisnu Tan",
 					"width": 1500,
-					"height": 1102
+					"height": 1102,
+					"credit": "Wisnu Tan"
 				},
 				{
 					"type": "image",
@@ -6561,10 +6613,10 @@
 						"type": "internal",
 						"path": "races/MOT/Leonin Matron.webp"
 					},
-					"title": "狮族族长领导着俄瑞姿的各个部族，保护平原免受入侵者的侵扰",
-					"credit": "Steve Prescott",
 					"width": 1500,
-					"height": 1002
+					"height": 1002,
+					"title": "狮族族长领导着俄瑞姿的各个部族，保护平原免受入侵者的侵扰",
+					"credit": "Steve Prescott"
 				}
 			]
 		},
@@ -6583,9 +6635,9 @@
 						"type": "internal",
 						"path": "races/MPMM/Lizardfolk.webp"
 					},
-					"credit": "April Prime",
 					"width": 1700,
-					"height": 1210
+					"height": 1210,
+					"credit": "April Prime"
 				}
 			]
 		},
@@ -6791,9 +6843,9 @@
 						"type": "internal",
 						"path": "races/LFL/Changeling.webp"
 					},
-					"credit": "Wayne Reynolds",
 					"width": 1700,
-					"height": 1249
+					"height": 1249,
+					"credit": "Wayne Reynolds"
 				}
 			]
 		},
@@ -6899,9 +6951,9 @@
 						"type": "internal",
 						"path": "races/RHW/Lupin.webp"
 					},
-					"credit": "Helge C. Balzer",
 					"width": 1700,
-					"height": 1128
+					"height": 1128,
+					"credit": "Helge C. Balzer"
 				}
 			]
 		},
@@ -6934,10 +6986,10 @@
 						"type": "internal",
 						"path": "races/PSZ/Merfolk.webp"
 					},
-					"title": "飞地精英",
-					"credit": "Igor Kieryluk",
 					"width": 489,
-					"height": 406
+					"height": 406,
+					"title": "飞地精英",
+					"credit": "Igor Kieryluk"
 				},
 				{
 					"type": "image",
@@ -6945,10 +6997,10 @@
 						"type": "internal",
 						"path": "races/PSZ/Merfolk2.webp"
 					},
-					"title": "珊瑚盔指挥官",
-					"credit": "Jaime Jones",
 					"width": 293,
-					"height": 397
+					"height": 397,
+					"title": "珊瑚盔指挥官",
+					"credit": "Jaime Jones"
 				}
 			]
 		},
@@ -6966,10 +7018,10 @@
 						"type": "internal",
 						"path": "races/PSX/Merfolk.webp"
 					},
-					"title": "藤形神秘者",
-					"credit": "Kieran Yanner",
 					"width": 634,
-					"height": 826
+					"height": 826,
+					"title": "藤形神秘者",
+					"credit": "Kieran Yanner"
 				},
 				{
 					"type": "image",
@@ -6977,10 +7029,10 @@
 						"type": "internal",
 						"path": "races/PSX/Merfolk2.webp"
 					},
-					"title": "珊瑚盔指挥官",
-					"credit": "Jaime Jones",
 					"width": 638,
-					"height": 368
+					"height": 368,
+					"title": "珊瑚盔指挥官",
+					"credit": "Jaime Jones"
 				}
 			]
 		},
@@ -7329,9 +7381,9 @@
 						"type": "internal",
 						"path": "races/MOT/Minotaur.webp"
 					},
-					"credit": "Jason Rainville",
 					"width": 1000,
-					"height": 842
+					"height": 842,
+					"credit": "Jason Rainville"
 				},
 				{
 					"type": "image",
@@ -7339,9 +7391,9 @@
 						"type": "internal",
 						"path": "races/MOT/Minotaur 2.webp"
 					},
-					"credit": "Steve Prescott",
 					"width": 1200,
-					"height": 859
+					"height": 859,
+					"credit": "Steve Prescott"
 				}
 			]
 		},
@@ -7361,9 +7413,9 @@
 						"type": "internal",
 						"path": "races/MPMM/Minotaur.webp"
 					},
-					"credit": "Jedd Chevrier, Brynn Metheney",
 					"width": 1700,
-					"height": 1578
+					"height": 1578,
+					"credit": "Jedd Chevrier, Brynn Metheney"
 				}
 			]
 		},
@@ -7406,10 +7458,10 @@
 						"type": "internal",
 						"path": "races/PSA/Minotaur (Amonkhet).webp"
 					},
-					"title": "尼赫布，值得的",
-					"credit": "Chris Rahn",
 					"width": 1276,
-					"height": 795
+					"height": 795,
+					"title": "尼赫布，值得的",
+					"credit": "Chris Rahn"
 				},
 				{
 					"type": "image",
@@ -7417,10 +7469,107 @@
 						"type": "internal",
 						"path": "races/PSA/Minotaur (Amonkhet)2.webp"
 					},
-					"title": "牛头人神射手",
-					"credit": "Joseph Meehan",
 					"width": 577,
-					"height": 1374
+					"height": 1374,
+					"title": "牛头人神射手",
+					"credit": "Joseph Meehan"
+				}
+			]
+		},
+		{
+			"ENG_name": "Monstrous Adventurers",
+			"name": "怪物冒险者",
+			"source": "VGM",
+			"entries": [
+				{
+					"ENG_name": "Monstrous Adventurers",
+					"name": "怪物冒险者",
+					"type": "inset",
+					"page": 118,
+					"entries": [
+						"在一些战役中，通常被视为邪恶威胁的人形生物可能会出现，与人类和其他标准种族一起冒险。这一部分是针对希望将他们战役中种族选择扩展到D&D典型种族之外的DM们的。",
+						{
+							"ENG_name": "Why a Monstrous Character?",
+							"name": "为什么是怪物角色？",
+							"type": "entries",
+							"entries": [
+								"创建通常被塑造为反派的生物角色为角色扮演提供了一些有趣的可能性。无论是为了喜剧效果，还是作为一个关于背叛和失落的悲剧故事，或者作为一个反英雄，怪物角色给玩家一个机会，在战役中接受一个不寻常的挑战。在允许怪物角色进入你的战役之前，请考虑以下三个问题。"
+							]
+						},
+						{
+							"ENG_name": "Rare or Mundane?",
+							"name": "稀有还是普通？",
+							"type": "entries",
+							"entries": [
+								"考虑在你的设定中，兽人、地精以及类似的冒险者有多常见。他们是否被视为与精灵或矮人一样不陌生？他们是否会引起怀疑？这些种族在你的设定中所扮演的角色应该决定这些角色所遇到的各种反应。",
+								"不要害怕将事情推向极端。一个兽人角色可能不得不伪装进入城镇，或者因为害怕被监禁或暴民暴力而留在荒野。确保与团队讨论这样的角色如何期望世界对待他们。有些玩家喜欢扮演一个被排斥者，但不要设置一种期望却提供另一种。",
+								"你可以在你的战役中将怪物文化建立为另一种文化，它与人类、精灵和矮人有着联盟和敌对关系。一个大地精王国可能充当人类王国和一个被库斯的后代侵占的荒芜地区的缓冲地带。狗头人可能是城市建设者，是宏伟、重兵把守的建筑的建筑师，其他种族为了一定的代价居住其中。第1章中的文化笔记是这些生物在标准D&D中的描绘，但它们绝不是你战役中的定义。将它们作为你自己想法的起点。"
+							]
+						},
+						{
+							"ENG_name": "Outcast or Ambassador?",
+							"name": "流放者还是大使？",
+							"type": "entries",
+							"entries": [
+								"考虑一个怪物角色在其原生文化中的地位。这个角色是被排斥者、间谍、大使还是其他什么身份？与玩家合作确定这个角色是如何成为冒险者的。",
+								"角色的羁绊是考虑这个问题的一个很好的起点。羁绊是如何驱使角色踏上冒险之旅的？角色的特性、缺陷和理想也可以在丰富故事中发挥作用。"
+							]
+						},
+						{
+							"ENG_name": "Friends or Enemies?",
+							"name": "朋友还是敌人？",
+							"type": "entries",
+							"entries": [
+								"弄清楚角色与冒险队伍中其他成员之间的特殊联系。一个兽人术士可能是矮人游侠的死敌，但两人被迫合作以击败共同的敌人。也许小龙人术士曾是提夫林法师的魔宠，因为一些微不足道的侮辱而被愤怒的大法师变形。大地精圣武士可能曾经是人类，但得罪了错误的女巫，被诅咒变成了邪恶的外表。一个怪物角色与队伍其他成员之间的创造性联系有助于创造一个难忘的战役。",
+								"怪物起源表提供了一些想法，用于在战役中添加一个怪物角色。",
+								{
+									"type": "table",
+									"colLabels": [
+										"d8",
+										"起源"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-10"
+									],
+									"rows": [
+										[
+											"1",
+											"你是一名被派往敌人内部进行破坏的间谍。"
+										],
+										[
+											"2",
+											"你受到了诅咒或变形术的影响。"
+										],
+										[
+											"3",
+											"你是由人类、精灵或矮人抚养长大，并已采纳了他们的文化。"
+										],
+										[
+											"4",
+											"在年轻时，你选择了一种人类的宗教，并现在虔诚地为它服务。"
+										],
+										[
+											"5",
+											"你收到了神圣的启示，指引你走上了这条道路，并且偶尔会收到新的幻象来引导你。"
+										],
+										[
+											"6",
+											"你的死敌是你们族人的盟友，迫使你离开部落去寻求复仇。"
+										],
+										[
+											"7",
+											"一个邪恶实体腐蚀了你们人民的社会。"
+										],
+										[
+											"8",
+											"一次伤害或奇异的事件导致你失去了所有对过去的记忆，但偶尔会有一些片段闪回。"
+										]
+									]
+								}
+							]
+						}
+					]
 				}
 			]
 		},
@@ -7456,10 +7605,10 @@
 						"type": "internal",
 						"path": "races/PSA/Naga.webp"
 					},
-					"title": "纳迦神谕者",
-					"credit": "Deruchenko Alexander",
 					"width": 1217,
-					"height": 1345
+					"height": 1345,
+					"title": "纳迦神谕者",
+					"credit": "Deruchenko Alexander"
 				},
 				{
 					"type": "image",
@@ -7467,10 +7616,10 @@
 						"type": "internal",
 						"path": "races/PSA/Naga2.webp"
 					},
-					"title": "塔克罗普侦察兵",
-					"credit": "Victor Adame Minguez",
 					"width": 1277,
-					"height": 867
+					"height": 867,
+					"title": "塔克罗普侦察兵",
+					"credit": "Victor Adame Minguez"
 				}
 			]
 		},
@@ -7489,9 +7638,9 @@
 						"type": "internal",
 						"path": "races/MPMM/Orc.webp"
 					},
-					"credit": "Mike Jordana",
 					"width": 1700,
-					"height": 1364
+					"height": 1364,
+					"credit": "Mike Jordana"
 				}
 			]
 		},
@@ -7499,7 +7648,11 @@
 			"ENG_name": "Orc",
 			"name": "兽人",
 			"source": "VGM",
-			"monstrous": true,
+			"_copy": {
+				"ENG_name": "Monstrous Adventurers",
+				"name": "怪物冒险者",
+				"source": "VGM"
+			},
 			"images": [
 				{
 					"type": "image",
@@ -7537,9 +7690,9 @@
 						"type": "internal",
 						"path": "races/XPHB/Orc.webp"
 					},
-					"credit": "Mike Pape",
 					"width": 1700,
-					"height": 1098
+					"height": 1098,
+					"credit": "Mike Pape"
 				}
 			]
 		},
@@ -7558,10 +7711,10 @@
 						"type": "internal",
 						"path": "races/PSX/Orc.webp"
 					},
-					"title": "恐怖舰队掠夺者",
-					"credit": "Bram Sels",
 					"width": 1276,
-					"height": 785
+					"height": 785,
+					"title": "恐怖舰队掠夺者",
+					"credit": "Bram Sels"
 				}
 			]
 		},
@@ -7581,10 +7734,10 @@
 						"type": "internal",
 						"path": "races/SCC/Owlin.webp"
 					},
-					"title": "枭人在斯翠海文上空展现魔法",
-					"credit": "Johan Grenier",
 					"width": 1700,
-					"height": 1237
+					"height": 1237,
+					"title": "枭人在斯翠海文上空展现魔法",
+					"credit": "Johan Grenier"
 				}
 			]
 		},
@@ -7604,9 +7757,9 @@
 						"type": "internal",
 						"path": "races/AAG/Plasmoid.webp"
 					},
-					"credit": "Claudio Pozas",
 					"width": 1700,
-					"height": 1186
+					"height": 1186,
+					"credit": "Claudio Pozas"
 				}
 			]
 		},
@@ -7624,9 +7777,9 @@
 						"type": "internal",
 						"path": "races/RHW/Reborn.webp"
 					},
-					"credit": "Helge C. Balzer",
 					"width": 1700,
-					"height": 1124
+					"height": 1124,
+					"credit": "Helge C. Balzer"
 				}
 			]
 		},
@@ -7638,7 +7791,7 @@
 				"死亡并不总是终结。重生者便是明证，他们是那些曾经死去但，通过某种方式，现在仍然活着的个体。一些重生者身上有致命的伤疤，他们苍白的皮肤或不流血的血管清晰地表明他们曾经历过死亡。另一些重生者则是魔法或科学的奇迹，被用不同的人体缝合在一起，或是在人造的身体中承载着神秘的思维。无论起源为何，重生者都意识到自己有了新生，并追寻着自己的经历和答案。",
 				{
 					"ENG_name": "Faded Memories",
-					"name": "已逝的回忆",
+					"name": "褪色记忆",
 					"type": "entries",
 					"entries": [
 						"重生者饱受某种不连贯性之苦，他们的生命或肉体状态被中断了，而他们的精神还没有准备好应对这一切。他们对于这种中断之前的事情的记忆往往模糊不清或完全缺失。偶尔，最意想不到的经历会导致过去的感受或视象如潮水般涌入。",
@@ -7685,13 +7838,13 @@
 				},
 				{
 					"ENG_name": "Reborn Origins",
-					"name": "重生者起源",
+					"name": "复生者起源",
 					"type": "entries",
 					"entries": [
 						"重生者可能诞生于与各种亡灵生物或构装生物类似的环境。重生者起源表格提供了一些你的角色如何成为重生者的建议。",
 						{
 							"type": "table",
-							"caption": "重生者起源",
+							"caption": "复生者起源",
 							"colLabels": [
 								"d8",
 								"起源"
@@ -7745,9 +7898,9 @@
 						"type": "internal",
 						"path": "races/VRGR/Reborn.webp"
 					},
-					"credit": "Nikki Dawes",
 					"width": 580,
-					"height": 1480
+					"height": 1480,
+					"credit": "Nikki Dawes"
 				}
 			]
 		},
@@ -7766,9 +7919,9 @@
 						"type": "internal",
 						"path": "races/LFL/Rimekin.webp"
 					},
-					"credit": "Jason A. Engle",
 					"width": 1700,
-					"height": 1023
+					"height": 1023,
+					"credit": "Jason A. Engle"
 				}
 			]
 		},
@@ -7910,9 +8063,9 @@
 						"type": "internal",
 						"path": "races/MOT/Satyr.webp"
 					},
-					"credit": "Steve Prescott",
 					"width": 1000,
-					"height": 892
+					"height": 892,
+					"credit": "Steve Prescott"
 				},
 				{
 					"type": "image",
@@ -7920,9 +8073,9 @@
 						"type": "internal",
 						"path": "races/MOT/Satyr 2.webp"
 					},
-					"credit": "Johannes Voss",
 					"width": 1500,
-					"height": 1002
+					"height": 1002,
+					"credit": "Johannes Voss"
 				}
 			]
 		},
@@ -7940,9 +8093,9 @@
 						"type": "internal",
 						"path": "races/MPMM/Satyr.webp"
 					},
-					"credit": "Nikki Dawes, Thom Tenery",
 					"width": 1700,
-					"height": 1231
+					"height": 1231,
+					"credit": "Nikki Dawes, Thom Tenery"
 				}
 			]
 		},
@@ -7971,9 +8124,9 @@
 						"type": "internal",
 						"path": "races/MPMM/Sea Elf.webp"
 					},
-					"credit": "Nikki Dawes",
 					"width": 568,
-					"height": 850
+					"height": 850,
+					"credit": "Nikki Dawes"
 				}
 			]
 		},
@@ -8004,9 +8157,9 @@
 						"type": "internal",
 						"path": "races/MPMM/Shadar-kai.webp"
 					},
-					"credit": "Eric Belisle, Mark Molnar",
 					"width": 1659,
-					"height": 1700
+					"height": 1700,
+					"credit": "Eric Belisle, Mark Molnar"
 				}
 			]
 		},
@@ -8025,9 +8178,9 @@
 						"type": "internal",
 						"path": "races/EFA/Shifter.webp"
 					},
-					"credit": "John Thack",
 					"width": 850,
-					"height": 558
+					"height": 558,
+					"credit": "John Thack"
 				}
 			]
 		},
@@ -8170,9 +8323,9 @@
 						"type": "internal",
 						"path": "races/MPMM/Shifter.webp"
 					},
-					"credit": "Eric Belisle",
 					"width": 660,
-					"height": 850
+					"height": 850,
+					"credit": "Eric Belisle"
 				}
 			]
 		},
@@ -8354,10 +8507,10 @@
 						"type": "internal",
 						"path": "races/PSX/Siren.webp"
 					},
-					"title": "梦境召唤者塞壬",
-					"credit": "Eric Deschamps",
 					"width": 1276,
-					"height": 846
+					"height": 846,
+					"title": "梦境召唤者塞壬",
+					"credit": "Eric Deschamps"
 				}
 			]
 		},
@@ -8376,9 +8529,9 @@
 						"type": "internal",
 						"path": "races/MPMM/Tabaxi.webp"
 					},
-					"credit": "Shawn Wood",
 					"width": 619,
-					"height": 850
+					"height": 850,
+					"credit": "Shawn Wood"
 				}
 			]
 		},
@@ -8618,9 +8771,9 @@
 						"type": "internal",
 						"path": "races/AAG/Thri-kreen.webp"
 					},
-					"credit": "Irina Nordsol",
 					"width": 1700,
-					"height": 1067
+					"height": 1067,
+					"credit": "Irina Nordsol"
 				}
 			]
 		},
@@ -8628,77 +8781,86 @@
 			"ENG_name": "Tiefling",
 			"name": "提夫林",
 			"source": "PHB",
-			"uncommon": true,
-			"entries": [
-				{
-					"type": "section",
-					"entries": [
-						{
-							"type": "entries",
-							"entries": [
-								"被凝视和窃窃私语所问候，在街上遭受暴力和侮辱，看到每个眼神中的不信任和恐惧：这是提夫林的命运。更糟糕的是，提夫林知道这是因为几代人前达成的契约，将九层地狱统治者阿斯蒙蒂斯的精华注入了他们的血脉。他们的外表和本性不是他们的错，而是古老罪恶的结果，他们以及他们的子孙后代将永远为此负责。",
-								{
-									"ENG_name": "Infernal Bloodline",
-									"name": "地狱血脉",
-									"type": "entries",
-									"entries": [
-										"提夫林源自人类血统，在最广泛的意义上，他们看起来仍然像人类。然而，他们的地狱血统在他们的外貌上留下了清晰的印记。提夫林有大角，这些角的形状多种多样\u2014\u2014有的像公羊一样卷曲的角，有的像羚羊一样直而高的角，还有的像羚羊角一样螺旋向上。他们有粗大的尾巴，长度在四到五尺之间，当他们感到不安或紧张时，尾巴会拍打或盘绕在他们的腿上。他们的犬齿尖锐，眼睛是纯黑色、红色、白色、银色或金色，没有可见的巩膜或瞳孔。他们的肤色涵盖了人类的全部颜色范围，但也包括各种红色的阴影。他们的头发，从角后垂下，通常是深色的，从黑色或棕色到深红色、蓝色或紫色。"
-									]
-								},
-								{
-									"ENG_name": "Self-Reliant and Suspicious",
-									"name": "自恃而多疑",
-									"type": "entries",
-									"entries": [
-										"提夫林族群通常在人类城市或小镇中以小群体的形式存在，往往居住在这些地方最粗糙的区域，他们长大后可能成为骗子、小偷或犯罪领主。有时，他们也与其他少数族裔一起生活在飞地中，在那里他们受到更多的尊重。",
-										"没有家园的提夫林知道，他们必须在这个世界上自己闯出一条路，并且必须坚强才能生存。他们不会轻易相信任何声称是朋友的人，但当提夫林的同伴证明他们信任他或她时，提夫林学会向他们提供同样的信任。一旦提夫林给予某人忠诚，提夫林就会成为终身的朋友或盟友。"
-									]
-								},
-								{
-									"ENG_name": "Tiefling Names",
-									"name": "提夫林名字",
-									"type": "entries",
-									"entries": [
-										"提夫林的名字大致分为三类。出生在其他文化中的提夫林通常有反映那种文化的名字。有些名字源自世代相传的地狱语言，反映了他们的恶魔血统。还有一些年轻的提夫林为了在世界上找到自己的位置，会采用一个代表美德或其他概念的名字，并尝试体现这一概念。对一些人来说，所选的名字是一种追求。对其他人来说，它是一种严峻的命运。",
-										{
-											"type": "list",
-											"style": "list-hang-notitle",
-											"items": [
-												{
-													"ENG_name": "Male Infernal Names:",
-													"name": "男性地狱语名字：",
-													"type": "item",
-													"entry": "阿克梅诺斯, 阿姆农, 哈拉哈斯, 埃克诺恩, 塔多斯, 凯隆, 路西斯, 梅勒克, 莫尔索斯, 佩莱奥斯, 斯卡莫斯, 瑟莱"
-												},
-												{
-													"ENG_name": "Female Infernal Names:",
-													"name": "女性地狱语名字：",
-													"type": "item",
-													"entry": "阿克拉, 安纳基斯, 布里赛斯, 克里埃拉, 伊亚, 卡利斯塔, 莱里萨, 马卡里亚, 涅米亚, 费莱亚, 里埃塔"
-												},
-												{
-													"ENG_name": "Virtue Names:",
-													"name": "美德名字：",
-													"type": "item",
-													"entry": "艺术，腐肉，圣歌，信条，绝望，恐惧，荣耀，希望，理想，音乐，虚无，诗歌，探险，随机，崇敬，悲伤，折磨，疲倦"
-												}
-											]
-										}
-									]
-								},
-								{
-									"ENG_name": "Mutual Mistrust",
-									"name": "互不信任",
-									"type": "inset",
-									"entries": [
-										"人们倾向于对提夫林持怀疑态度，认为他们的地狱血统不仅在外表上留下了印记，也在他们的个性和道德上留下了痕迹。当提夫林进入商店时，店主会密切留意他们的商品，城镇警卫可能会跟随提夫林一段时间，煽动者将提夫林归咎于奇怪的事件。然而，现实是，提夫林的血统并不在很大程度上影响他或她的个性。多年应对不信任确实在大多数提夫林身上留下了印记，他们以不同的方式回应它。有些人选择符合邪恶的刻板印象，但其他人是善良的。大多数人只是非常清楚人们如何对他们作出反应。在经历了整个青春时期的不信任之后，提夫林通常发展出通过魅力或恐吓克服偏见的能力。"
-									]
-								}
-							]
-						}
-					]
+			"_copy": {
+				"ENG_name": "Uncommon Races",
+				"name": "罕见种族",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"被凝视和窃窃私语所问候，在街上遭受暴力和侮辱，看到每个眼神中的不信任和恐惧：这是提夫林的命运。更糟糕的是，提夫林知道这是因为几代人前达成的契约，将九层地狱统治者阿斯蒙蒂斯的精华注入了他们的血脉。他们的外表和本性不是他们的错，而是古老罪恶的结果，他们以及他们的子孙后代将永远为此负责。",
+											{
+												"ENG_name": "Infernal Bloodline",
+												"name": "地狱血脉",
+												"type": "entries",
+												"entries": [
+													"提夫林源自人类血统，在最广泛的意义上，他们看起来仍然像人类。然而，他们的地狱血统在他们的外貌上留下了清晰的印记。提夫林有大角，这些角的形状多种多样\u2014\u2014有的像公羊一样卷曲的角，有的像羚羊一样直而高的角，还有的像羚羊角一样螺旋向上。他们有粗大的尾巴，长度在四到五尺之间，当他们感到不安或紧张时，尾巴会拍打或盘绕在他们的腿上。他们的犬齿尖锐，眼睛是纯黑色、红色、白色、银色或金色，没有可见的巩膜或瞳孔。他们的肤色涵盖了人类的全部颜色范围，但也包括各种红色的阴影。他们的头发，从角后垂下，通常是深色的，从黑色或棕色到深红色、蓝色或紫色。"
+												]
+											},
+											{
+												"ENG_name": "Self-Reliant and Suspicious",
+												"name": "自恃而多疑",
+												"type": "entries",
+												"entries": [
+													"提夫林族群通常在人类城市或小镇中以小群体的形式存在，往往居住在这些地方最粗糙的区域，他们长大后可能成为骗子、小偷或犯罪领主。有时，他们也与其他少数族裔一起生活在飞地中，在那里他们受到更多的尊重。",
+													"没有家园的提夫林知道，他们必须在这个世界上自己闯出一条路，并且必须坚强才能生存。他们不会轻易相信任何声称是朋友的人，但当提夫林的同伴证明他们信任他或她时，提夫林学会向他们提供同样的信任。一旦提夫林给予某人忠诚，提夫林就会成为终身的朋友或盟友。"
+												]
+											},
+											{
+												"ENG_name": "Tiefling Names",
+												"name": "提夫林名字",
+												"type": "entries",
+												"entries": [
+													"提夫林的名字大致分为三类。出生在其他文化中的提夫林通常有反映那种文化的名字。有些名字源自世代相传的地狱语言，反映了他们的恶魔血统。还有一些年轻的提夫林为了在世界上找到自己的位置，会采用一个代表美德或其他概念的名字，并尝试体现这一概念。对一些人来说，所选的名字是一种追求。对其他人来说，它是一种严峻的命运。",
+													{
+														"type": "list",
+														"style": "list-hang-notitle",
+														"items": [
+															{
+																"ENG_name": "Male Infernal Names:",
+																"name": "男性地狱语名字：",
+																"type": "item",
+																"entry": "阿克梅诺斯, 阿姆农, 哈拉哈斯, 埃克诺恩, 塔多斯, 凯隆, 路西斯, 梅勒克, 莫尔索斯, 佩莱奥斯, 斯卡莫斯, 瑟莱"
+															},
+															{
+																"ENG_name": "Female Infernal Names:",
+																"name": "女性地狱语名字：",
+																"type": "item",
+																"entry": "阿克拉, 安纳基斯, 布里赛斯, 克里埃拉, 伊亚, 卡利斯塔, 莱里萨, 马卡里亚, 涅米亚, 费莱亚, 里埃塔"
+															},
+															{
+																"ENG_name": "Virtue Names:",
+																"name": "美德名字：",
+																"type": "item",
+																"entry": "艺术，腐肉，圣歌，信条，绝望，恐惧，荣耀，希望，理想，音乐，虚无，诗歌，探险，随机，崇敬，悲伤，折磨，疲倦"
+															}
+														]
+													}
+												]
+											},
+											{
+												"ENG_name": "Mutual Mistrust",
+												"name": "互不信任",
+												"type": "inset",
+												"entries": [
+													"人们倾向于对提夫林持怀疑态度，认为他们的地狱血统不仅在外表上留下了印记，也在他们的个性和道德上留下了痕迹。当提夫林进入商店时，店主会密切留意他们的商品，城镇警卫可能会跟随提夫林一段时间，煽动者将提夫林归咎于奇怪的事件。然而，现实是，提夫林的血统并不在很大程度上影响他或她的个性。多年应对不信任确实在大多数提夫林身上留下了印记，他们以不同的方式回应它。有些人选择符合邪恶的刻板印象，但其他人是善良的。大多数人只是非常清楚人们如何对他们作出反应。在经历了整个青春时期的不信任之后，提夫林通常发展出通过魅力或恐吓克服偏见的能力。"
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
 				}
-			],
+			},
 			"images": [
 				{
 					"type": "image",
@@ -8755,9 +8917,9 @@
 						"type": "internal",
 						"path": "races/XPHB/Tiefling.webp"
 					},
-					"credit": "Clint Cearley",
 					"width": 1700,
-					"height": 1111
+					"height": 1111,
+					"credit": "Clint Cearley"
 				},
 				{
 					"type": "image",
@@ -8765,10 +8927,10 @@
 						"type": "internal",
 						"path": "races/XPHB/156-05-029.infernal-chthonic-abyssal.webp"
 					},
-					"title": "炼狱提夫林、幽冥提夫林、深渊提夫林",
-					"credit": "John Grello",
 					"width": 1220,
-					"height": 737
+					"height": 737,
+					"title": "炼狱提夫林、幽冥提夫林、深渊提夫林",
+					"credit": "John Grello"
 				},
 				{
 					"type": "image",
@@ -8776,9 +8938,9 @@
 						"type": "internal",
 						"path": "races/XPHB/157-05-028.armored-tiefling.webp"
 					},
-					"credit": "Jodie Muir",
 					"width": 716,
-					"height": 1440
+					"height": 1440,
+					"credit": "Jodie Muir"
 				}
 			]
 		},
@@ -9105,9 +9267,9 @@
 						"type": "internal",
 						"path": "races/MPMM/Tortle.webp"
 					},
-					"credit": "Mark Behm, Franz Vohwinkel",
 					"width": 1700,
-					"height": 1209
+					"height": 1209,
+					"credit": "Mark Behm, Franz Vohwinkel"
 				}
 			]
 		},
@@ -9289,9 +9451,9 @@
 						"type": "internal",
 						"path": "races/MOT/Triton.webp"
 					},
-					"credit": "Ryan Pancoast",
 					"width": 1000,
-					"height": 898
+					"height": 898,
+					"credit": "Ryan Pancoast"
 				},
 				{
 					"type": "image",
@@ -9299,9 +9461,9 @@
 						"type": "internal",
 						"path": "races/MOT/Triton 2.webp"
 					},
-					"credit": "Jack Wang",
 					"width": 1500,
-					"height": 1096
+					"height": 1096,
+					"credit": "Jack Wang"
 				}
 			]
 		},
@@ -9320,9 +9482,9 @@
 						"type": "internal",
 						"path": "races/MPMM/Triton.webp"
 					},
-					"credit": "Eric Belisle",
 					"width": 514,
-					"height": 850
+					"height": 850,
+					"credit": "Eric Belisle"
 				}
 			]
 		},
@@ -9476,6 +9638,62 @@
 			]
 		},
 		{
+			"ENG_name": "Uncommon Races",
+			"name": "罕见种族",
+			"source": "PHB",
+			"entries": [
+				{
+					"ENG_name": "Uncommon Races",
+					"name": "罕见种族",
+					"type": "section",
+					"page": 33,
+					"entries": [
+						"龙裔及本章后文所提及的种族都属于罕见种族。他们不一定存在于所有的D&D世界中，而就算是在其存在的世界里，他们的分布也比矮人、精灵、半身人和人类少的多。在D&D多元宇宙中一些种族混杂的城市中，大部分人都能时常见到各种最罕见种族的新鲜面孔。但在乡下的村镇情况却不太一样。那里的普通村民通常都没见识过这些异种族，而他们的表现也会非常符合这点。",
+						{
+							"ENG_name": "Dragonborn",
+							"name": "龙裔",
+							"type": "entries",
+							"entries": [
+								"龙裔会非常容易的被误认为是怪物，特别是其那些明显有真龙鳞色遗传的个体更是如此。不过，除非龙裔开始喷火或者制造破坏，否则人们还是会小心的跟其交流而不是直接惊恐逃窜。"
+							]
+						},
+						{
+							"ENG_name": "Gnome",
+							"name": "侏儒",
+							"type": "entries",
+							"entries": [
+								"侏儒看起来人畜无害，并且会迅速以幽默接触对方的戒心。那些从没见过侏儒的普通村民通常会对侏儒充满好奇，但村民们很少对因此而表现出敌意或恐惧。"
+							]
+						},
+						{
+							"ENG_name": "Half-Elf",
+							"name": "半精灵",
+							"type": "entries",
+							"entries": [
+								"尽管很多人都没见过半精灵，但不少人听说过他们的存在。一名半精灵陌生人的到来通常会引起紧随着他的流言蜚语和窥视目光，但很少会引发公然的挑衅或公开的讨论。"
+							]
+						},
+						{
+							"ENG_name": "Half-Orc",
+							"name": "半兽人",
+							"type": "entries",
+							"entries": [
+								"通常认定一名半兽人是脾气暴躁的好斗分子是一种保险措施。因此人们看到不熟悉的半兽人时都会有所自觉。店家会在见到半兽人进店时收起贵重或易碎的商品，酒馆的客人看到半兽人时都认为很快就会爆发一场斗殴因而相继默默地离开。"
+							]
+						},
+						{
+							"ENG_name": "Tiefling",
+							"name": "提夫林",
+							"type": "entries",
+							"entries": [
+								"人们会对半兽人采取比较实在的措施，然而提夫林不同。作为能使人产生超自然恐惧的对象，其邪恶的遗传特征无法隐藏而表露无遗，因此大多数人都会将其直接当成是来自九层地狱的魔鬼。当提夫林出现时，人们会警戒的监视着他，见到他时会特意绕开，而商家甚至会提早关店而将其拒之门外。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
 			"ENG_name": "Vampire",
 			"name": "吸血鬼",
 			"source": "PSZ",
@@ -9504,10 +9722,10 @@
 						"type": "internal",
 						"path": "races/PSZ/Vampire.webp"
 					},
-					"title": "卡利塔斯，盖特的血族首领",
-					"credit": "Todd Lockwood",
 					"width": 642,
-					"height": 468
+					"height": 468,
+					"title": "卡利塔斯，盖特的血族首领",
+					"credit": "Todd Lockwood"
 				},
 				{
 					"type": "image",
@@ -9515,10 +9733,10 @@
 						"type": "internal",
 						"path": "races/PSZ/Vampire2.webp"
 					},
-					"title": "吸血鬼夜鹰",
-					"credit": "Jason Chan",
 					"width": 642,
-					"height": 437
+					"height": 437,
+					"title": "吸血鬼夜鹰",
+					"credit": "Jason Chan"
 				}
 			]
 		},
@@ -9539,10 +9757,10 @@
 						"type": "internal",
 						"path": "races/PSX/Vampire.webp"
 					},
-					"title": "残忍的征服者",
-					"credit": "Kieran Yanner",
 					"width": 1280,
-					"height": 943
+					"height": 943,
+					"title": "残忍的征服者",
+					"credit": "Kieran Yanner"
 				},
 				{
 					"type": "image",
@@ -9550,10 +9768,10 @@
 						"type": "internal",
 						"path": "races/PSX/Vampire2.webp"
 					},
-					"title": "黄昏的赞美者",
-					"credit": "Viktor Titov",
 					"width": 1280,
-					"height": 1653
+					"height": 1653,
+					"title": "黄昏的赞美者",
+					"credit": "Viktor Titov"
 				},
 				{
 					"type": "image",
@@ -9561,10 +9779,10 @@
 						"type": "internal",
 						"path": "races/PSX/Vampire3.webp"
 					},
-					"title": "动脉流动",
-					"credit": "Josh Hass",
 					"width": 640,
-					"height": 513
+					"height": 513,
+					"title": "动脉流动",
+					"credit": "Josh Hass"
 				}
 			]
 		},
@@ -9693,10 +9911,10 @@
 						"type": "internal",
 						"path": "races/PSK/Vedalken.webp"
 					},
-					"title": "灵光一闪\u2014\u2014结果是一根{@item 定身魔杖}，一个{@item 水晶球}，或是一个{@item 湮灭法球}？",
-					"credit": "Glimmer of Genius by Tommy Arnold",
 					"width": 1277,
-					"height": 911
+					"height": 911,
+					"title": "灵光一闪\u2014\u2014结果是一根{@item 定身魔杖}，一个{@item 水晶球}，或是一个{@item 湮灭法球}？",
+					"credit": "Glimmer of Genius by Tommy Arnold"
 				},
 				{
 					"type": "image",
@@ -9704,10 +9922,10 @@
 						"type": "internal",
 						"path": "races/PSK/Vedalken2.webp"
 					},
-					"title": "奇珍异宝商贩",
-					"credit": "Igor Kieryluk",
 					"width": 766,
-					"height": 1650
+					"height": 1650,
+					"title": "奇珍异宝商贩",
+					"credit": "Igor Kieryluk"
 				}
 			]
 		},
@@ -9816,10 +10034,10 @@
 						"type": "internal",
 						"path": "races/AI/Verdan.webp"
 					},
-					"title": "佛丹人成年种类",
-					"credit": "Kris Straub",
 					"width": 792,
-					"height": 1000
+					"height": 1000,
+					"title": "佛丹人成年种类",
+					"credit": "Kris Straub"
 				}
 			]
 		},
@@ -9838,9 +10056,9 @@
 						"type": "internal",
 						"path": "races/EFA/Warforged.webp"
 					},
-					"credit": "Ignacio Bazan-Lazcano",
 					"width": 850,
-					"height": 559
+					"height": 559,
+					"credit": "Ignacio Bazan-Lazcano"
 				}
 			]
 		},
@@ -9857,12 +10075,12 @@
 							"entries": [
 								{
 									"type": "quote",
+									"skipMarks": true,
 									"entries": [
 										"\"穿刺是被设计出来的，而你是偶然形成的，\"拉卡什泰说。\"重要的是灵魂，而不是容器的形状。\"",
 										"\"你凭什么认为他有灵魂？\" 杰里翁说",
 										"\"是什么让你觉得你有？\""
 									],
-									"skipMarks": true,
 									"by": "基思·贝克, {@i 破碎之地}"
 								},
 								"战俑是为终末战争而建造的。虽然最初的战俑是没有意识的自动机械，但坎尼斯家族投入了大量资源来改进这些钢铁战士。一个意想不到的突破产生了有智慧的士兵，从而产生了一些人勉强接受的新物种。战俑由木头和金属制成，但它们能感受痛苦和情感。作为武器建造的它们，现在必须找到超越战争的目的。战俑可以是可靠的盟友、冷血的杀手，或寻找真正重要之物的贤者。",
@@ -9961,9 +10179,9 @@
 						"type": "internal",
 						"path": "races/ERLW/Warforged.webp"
 					},
-					"credit": "Craig J Spearing",
 					"width": 702,
-					"height": 1000
+					"height": 1000,
+					"credit": "Craig J Spearing"
 				},
 				{
 					"type": "image",
@@ -9991,9 +10209,9 @@
 						"type": "internal",
 						"path": "races/MPMM/Yuan-ti.webp"
 					},
-					"credit": "Simon Dominic",
 					"width": 1700,
-					"height": 1192
+					"height": 1192,
+					"credit": "Simon Dominic"
 				}
 			]
 		},
@@ -10001,7 +10219,11 @@
 			"ENG_name": "Yuan-ti Pureblood",
 			"name": "纯血原体蛇人",
 			"source": "VGM",
-			"monstrous": true,
+			"_copy": {
+				"ENG_name": "Monstrous Adventurers",
+				"name": "怪物冒险者",
+				"source": "VGM"
+			},
 			"images": [
 				{
 					"type": "image",
@@ -10014,144 +10236,5 @@
 				}
 			]
 		}
-	],
-	"raceFluffMeta": {
-		"uncommon": {
-			"ENG_name": "Uncommon Races",
-			"name": "罕见种族",
-			"type": "inset",
-			"entries": [
-				"龙裔及本章后文所提及的种族都属于罕见种族。他们不一定存在于所有的D&D世界中，而就算是在其存在的世界里，他们的分布也比矮人、精灵、半身人和人类少的多。在D&D多元宇宙中一些种族混杂的城市中，大部分人都能时常见到各种最罕见种族的新鲜面孔。但在乡下的村镇情况却不太一样。那里的普通村民通常都没见识过这些异种族，而他们的表现也会非常符合这点。",
-				{
-					"ENG_name": "Dragonborn",
-					"name": "龙裔",
-					"type": "entries",
-					"entries": [
-						"龙裔会非常容易的被误认为是怪物，特别是其那些明显有真龙鳞色遗传的个体更是如此。不过，除非龙裔开始喷火或者制造破坏，否则人们还是会小心的跟其交流而不是直接惊恐逃窜。"
-					]
-				},
-				{
-					"ENG_name": "Gnome",
-					"name": "侏儒",
-					"type": "entries",
-					"entries": [
-						"侏儒看起来人畜无害，并且会迅速以幽默接触对方的戒心。那些从没见过侏儒的普通村民通常会对侏儒充满好奇，但村民们很少对因此而表现出敌意或恐惧。"
-					]
-				},
-				{
-					"ENG_name": "Half-Elf",
-					"name": "半精灵",
-					"type": "entries",
-					"entries": [
-						"尽管很多人都没见过半精灵，但不少人听说过他们的存在。一名半精灵陌生人的到来通常会引起紧随着他的流言蜚语和窥视目光，但很少会引发公然的挑衅或公开的讨论。"
-					]
-				},
-				{
-					"ENG_name": "Half-Orc",
-					"name": "半兽人",
-					"type": "entries",
-					"entries": [
-						"通常认定一名半兽人是脾气暴躁的好斗分子是一种保险措施。因此人们看到不熟悉的半兽人时都会有所自觉。店家会在见到半兽人进店时收起贵重或易碎的商品，酒馆的客人看到半兽人时都认为很快就会爆发一场斗殴因而相继默默地离开。"
-					]
-				},
-				{
-					"ENG_name": "Tiefling",
-					"name": "提夫林",
-					"type": "entries",
-					"entries": [
-						"人们会对半兽人采取比较实在的措施，然而提夫林不同。作为能使人产生超自然恐惧的对象，其邪恶的遗传特征无法隐藏而表露无遗，因此大多数人都会将其直接当成是来自九层地狱的魔鬼。当提夫林出现时，人们会警戒的监视着他，见到他时会特意绕开，而商家甚至会提早关店而将其拒之门外。"
-					]
-				}
-			]
-		},
-		"monstrous": {
-			"ENG_name": "Monstrous Adventurers",
-			"name": "怪物冒险者",
-			"type": "section",
-			"entries": [
-				"在一些战役中，通常被视为邪恶威胁的人形生物可能会出现，与人类和其他标准种族一起冒险。这一部分是针对希望将他们战役中种族选择扩展到D&D典型种族之外的DM们的。",
-				{
-					"ENG_name": "Why a Monstrous Character?",
-					"name": "为什么是怪物角色？",
-					"type": "entries",
-					"entries": [
-						"创建通常被塑造为反派的生物角色为角色扮演提供了一些有趣的可能性。无论是为了喜剧效果，还是作为一个关于背叛和失落的悲剧故事，或者作为一个反英雄，怪物角色给玩家一个机会，在战役中接受一个不寻常的挑战。在允许怪物角色进入你的战役之前，请考虑以下三个问题。"
-					]
-				},
-				{
-					"ENG_name": "Rare or Mundane?",
-					"name": "稀有还是普通？",
-					"type": "entries",
-					"entries": [
-						"考虑在你的设定中，兽人、地精以及类似的冒险者有多常见。他们是否被视为与精灵或矮人一样不陌生？他们是否会引起怀疑？这些种族在你的设定中所扮演的角色应该决定这些角色所遇到的各种反应。",
-						"不要害怕将事情推向极端。一个兽人角色可能不得不伪装进入城镇，或者因为害怕被监禁或暴民暴力而留在荒野。确保与团队讨论这样的角色如何期望世界对待他们。有些玩家喜欢扮演一个被排斥者，但不要设置一种期望却提供另一种。",
-						"你可以在你的战役中将怪物文化建立为另一种文化，它与人类、精灵和矮人有着联盟和敌对关系。一个大地精王国可能充当人类王国和一个被库斯的后代侵占的荒芜地区的缓冲地带。狗头人可能是城市建设者，是宏伟、重兵把守的建筑的建筑师，其他种族为了一定的代价居住其中。第1章中的文化笔记是这些生物在标准D&D中的描绘，但它们绝不是你战役中的定义。将它们作为你自己想法的起点。"
-					]
-				},
-				{
-					"ENG_name": "Outcast or Ambassador?",
-					"name": "流放者还是大使？",
-					"type": "entries",
-					"entries": [
-						"考虑一个怪物角色在其原生文化中的地位。这个角色是被排斥者、间谍、大使还是其他什么身份？与玩家合作确定这个角色是如何成为冒险者的。",
-						"角色的羁绊是考虑这个问题的一个很好的起点。羁绊是如何驱使角色踏上冒险之旅的？角色的特性、缺陷和理想也可以在丰富故事中发挥作用。"
-					]
-				},
-				{
-					"ENG_name": "Friends or Enemies?",
-					"name": "朋友还是敌人？",
-					"type": "entries",
-					"entries": [
-						"弄清楚角色与冒险队伍中其他成员之间的特殊联系。一个兽人术士可能是矮人游侠的死敌，但两人被迫合作以击败共同的敌人。也许小龙人术士曾是提夫林法师的魔宠，因为一些微不足道的侮辱而被愤怒的大法师变形。大地精圣武士可能曾经是人类，但得罪了错误的女巫，被诅咒变成了邪恶的外表。一个怪物角色与队伍其他成员之间的创造性联系有助于创造一个难忘的战役。",
-						"怪物起源表提供了一些想法，用于在战役中添加一个怪物角色。",
-						{
-							"type": "table",
-							"colLabels": [
-								"d8",
-								"起源"
-							],
-							"colStyles": [
-								"col-2 text-center",
-								"col-10"
-							],
-							"rows": [
-								[
-									"1",
-									"你是一名被派往敌人内部进行破坏的间谍。"
-								],
-								[
-									"2",
-									"你受到了诅咒或变形术的影响。"
-								],
-								[
-									"3",
-									"你是由人类、精灵或矮人抚养长大，并已采纳了他们的文化。"
-								],
-								[
-									"4",
-									"在年轻时，你选择了一种人类的宗教，并现在虔诚地为它服务。"
-								],
-								[
-									"5",
-									"你收到了神圣的启示，指引你走上了这条道路，并且偶尔会收到新的幻象来引导你。"
-								],
-								[
-									"6",
-									"你的死敌是你们族人的盟友，迫使你离开部落去寻求复仇。"
-								],
-								[
-									"7",
-									"一个邪恶实体腐蚀了你们人民的社会。"
-								],
-								[
-									"8",
-									"一次伤害或奇异的事件导致你失去了所有对过去的记忆，但偶尔会有一些片段闪回。"
-								]
-							]
-						}
-					]
-				}
-			]
-		}
-	}
+	]
 }

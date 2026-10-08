@@ -14,6 +14,8 @@
 					"ENG_name": "Fighter",
 					"name": "战士",
 					"type": "section",
+					"source": "PHB",
+					"page": 70,
 					"entries": [
 						"身着厚重板甲的人类持盾带头冲入地精群中。她的身后是个身穿皮甲的精灵，用精制的良弓向敌人连珠的射出箭矢。而他们附近还有位喊着口号的半兽人，帮助两名勇士在杀敌时保持优势。",
 						"身着链甲的矮人举盾站在他的伙伴和食人魔之间，以阻挡敌人致命的攻击。他的同伴身穿鳞甲，带着两把弯刀翻飞如风的半精灵，则在巨魔身边缠斗着寻找敌人疏于防御的时机。",
@@ -53,12 +55,12 @@
 								}
 							]
 						}
-					],
-					"source": "PHB",
-					"page": 70
+					]
 				},
 				{
 					"type": "section",
+					"source": "XGE",
+					"page": 27,
 					"entries": [
 						{
 							"type": "quote",
@@ -309,9 +311,7 @@
 								}
 							]
 						}
-					],
-					"source": "XGE",
-					"page": 27
+					]
 				}
 			],
 			"images": [
@@ -346,14 +346,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "所有武器与护甲的大师",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Fighter.webp"
 					},
-					"credit": "Nèstor Ossandón Leal",
 					"width": 1700,
-					"height": 2242
+					"height": 2242,
+					"title": "所有武器与护甲的大师",
+					"credit": "Nèstor Ossandón Leal"
 				},
 				{
 					"type": "image",
@@ -361,10 +361,10 @@
 						"type": "internal",
 						"path": "classes/XPHB/064-03-040.fighter-v-black-dragon.webp"
 					},
-					"title": "一位战士挺身而出，挡在盟友身前，直面黑龙的猛攻",
-					"credit": "Campbell White",
 					"width": 2184,
-					"height": 1440
+					"height": 1440,
+					"title": "一位战士挺身而出，挡在盟友身前，直面黑龙的猛攻",
+					"credit": "Campbell White"
 				}
 			]
 		}
@@ -563,14 +563,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "战斗大师子职",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Battle Master Fighter.webp"
 					},
-					"credit": "Ignarius Budi",
 					"width": 850,
-					"height": 2015
+					"height": 2015,
+					"title": "战斗大师子职",
+					"credit": "Ignarius Budi"
 				}
 			]
 		},
@@ -584,14 +584,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "勇士子职",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Champion Fighter.webp"
 					},
-					"credit": "Katerina Ladon",
 					"width": 850,
-					"height": 2000
+					"height": 2000,
+					"title": "勇士子职",
+					"credit": "Katerina Ladon"
 				}
 			]
 		},
@@ -605,14 +605,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "奥法骑士子职",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Eldritch Knight Fighter.webp"
 					},
-					"credit": "Hocheol Ryu",
 					"width": 850,
-					"height": 999
+					"height": 999,
+					"title": "奥法骑士子职",
+					"credit": "Hocheol Ryu"
 				}
 			]
 		},
@@ -626,14 +626,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "灵能武士子职",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Psi Warrior Fighter.webp"
 					},
-					"credit": "Javier Charro",
 					"width": 850,
-					"height": 2204
+					"height": 2204,
+					"title": "灵能武士子职",
+					"credit": "Javier Charro"
 				}
 			]
 		},
@@ -651,9 +651,9 @@
 						"type": "internal",
 						"path": "classes/FRHoF/Banneret Fighter.webp"
 					},
-					"credit": "Leroy Steinmann",
 					"width": 850,
-					"height": 2622
+					"height": 2622,
+					"credit": "Leroy Steinmann"
 				}
 			]
 		},
@@ -680,10 +680,10 @@
 						"type": "internal",
 						"path": "classes/AU/Arcane Archer Fighter.webp"
 					},
-					"title": "魔射手战士",
-					"credit": "Swatches Studio",
 					"width": 850,
-					"height": 1880
+					"height": 1880,
+					"title": "魔射手战士",
+					"credit": "Swatches Studio"
 				}
 			]
 		}

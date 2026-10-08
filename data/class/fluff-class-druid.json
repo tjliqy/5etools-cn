@@ -9,6 +9,8 @@
 					"ENG_name": "Druid",
 					"name": "德鲁伊",
 					"type": "section",
+					"source": "PHB",
+					"page": 64,
 					"entries": [
 						"装饰着冬青的多节杖高高举起，精灵召唤出风暴之怒，并降下惊雷电矢摧毁那群手握火把意图摧毁其森林的兽人们。",
 						"某个维持着猎豹形态的人潜伏在视野难及的参天树顶，凝视着丛林之外的邪恶气元素神殿，密切关注着邪教徒们的动静。那些利刃形态的舞动火焰，是一名冲进骷髅士兵群中的半精灵正奋力劈散这些邪恶生物。",
@@ -70,12 +72,12 @@
 								"艾伯伦德鲁伊尊崇的万物为灵信条则完全与其\"天命诸神Sovereign Host\"\"黑暗六邪神Dark Six\"以及该世界内其他宗教毫不相干。他们相信所有活物以及所有自然现象（日、月、风、火以及世界本身）都拥有精魄。因而，法术即是对这些精魄下达指令的交流手段。然而不同的德鲁伊教派都坚持自己的理念，而对精魄之间或是精魄与文明势力之间的关系各执一词。例如，\"灰烬誓约Ashbound\"信奉奥术魔法是反抗自然的恶煞，\"严冬之子Children of Winter\"则崇拜死亡之力，而\"护门者Gatekeepers\"则秉持远古传统，致力于保护世界免受异界的入侵。"
 							]
 						}
-					],
-					"source": "PHB",
-					"page": 64
+					]
 				},
 				{
 					"type": "section",
+					"source": "XGE",
+					"page": 21,
 					"entries": [
 						{
 							"type": "quote",
@@ -1429,9 +1431,7 @@
 								}
 							]
 						}
-					],
-					"source": "XGE",
-					"page": 21
+					]
 				}
 			],
 			"images": [
@@ -1467,14 +1467,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "原初之力的自然祭司",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Druid.webp"
 					},
-					"credit": "Alexander Mokhov",
 					"width": 1700,
-					"height": 2170
+					"height": 2170,
+					"title": "原初之力的自然祭司",
+					"credit": "Alexander Mokhov"
 				},
 				{
 					"type": "image",
@@ -1482,10 +1482,10 @@
 						"type": "internal",
 						"path": "classes/XPHB/057-03-033.druid-in-nature.webp"
 					},
-					"title": "一位德鲁伊通过魔法引导自然之力",
-					"credit": "Jessica Fong",
 					"width": 2226,
-					"height": 1440
+					"height": 1440,
+					"title": "一位德鲁伊通过魔法引导自然之力",
+					"credit": "Jessica Fong"
 				},
 				{
 					"type": "image",
@@ -1493,10 +1493,10 @@
 						"type": "internal",
 						"path": "classes/XPHB/060-03-036.wolf-form-druid.webp"
 					},
-					"title": "化身为狼的德鲁伊对月长啸",
-					"credit": "John Grello",
 					"width": 1500,
-					"height": 1350
+					"height": 1350,
+					"title": "化身为狼的德鲁伊对月长啸",
+					"credit": "John Grello"
 				}
 			]
 		}
@@ -1616,14 +1616,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "大地结社子职",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Land Druid.webp"
 					},
-					"credit": "Polar Engine",
 					"width": 850,
-					"height": 2513
+					"height": 2513,
+					"title": "大地结社子职",
+					"credit": "Polar Engine"
 				}
 			]
 		},
@@ -1637,14 +1637,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "月亮结社子职",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Moon Druid.webp"
 					},
-					"credit": "John Grello",
 					"width": 850,
-					"height": 2358
+					"height": 2358,
+					"title": "月亮结社子职",
+					"credit": "John Grello"
 				}
 			]
 		},
@@ -1658,14 +1658,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "海洋结社子职",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Sea Druid.webp"
 					},
-					"credit": "Ricardo Moscatello",
 					"width": 970,
-					"height": 1440
+					"height": 1440,
+					"title": "海洋结社子职",
+					"credit": "Ricardo Moscatello"
 				}
 			]
 		},
@@ -1679,14 +1679,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "星辰结社子职",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Stars Druid.webp"
 					},
-					"credit": "Marcela Medeiros",
 					"width": 850,
-					"height": 2197
+					"height": 2197,
+					"title": "星辰结社子职",
+					"credit": "Marcela Medeiros"
 				}
 			]
 		}

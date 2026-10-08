@@ -1,1116 +1,158 @@
 {
-	"data": [
+	"bookData": [
 		{
-			"ENG_name": "DM Screen",
-			"name": "城主帷幕",
-			"type": "section",
-			"entries": [
+			"id": "XScreen",
+			"source": "XScreen",
+			"data": [
 				{
-					"ENG_name": "Cover",
-					"name": "掩护",
-					"type": "entries",
+					"ENG_name": "DM Screen",
+					"name": "城主帷幕",
+					"type": "section",
+					"id": "000",
 					"entries": [
 						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "book/XScreen/XScreen Front.webp"
-							},
-							"credit": "Joy Ang",
-							"width": 1530,
-							"height": 340
-						}
-					],
-					"id": "001"
-				},
-				{
-					"ENG_name": "Conditions",
-					"name": "状态",
-					"type": "entries",
-					"entries": [
-						{
-							"ENG_name": "Blinded",
-							"name": "目盲",
-							"type": "statblock",
-							"tag": "condition",
-							"source": "XPHB"
-						},
-						{
-							"ENG_name": "Charmed",
-							"name": "魅惑",
-							"type": "statblock",
-							"tag": "condition",
-							"source": "XPHB"
-						},
-						{
-							"ENG_name": "Deafened",
-							"name": "耳聋",
-							"type": "statblock",
-							"tag": "condition",
-							"source": "XPHB"
-						},
-						{
-							"ENG_name": "Exhaustion",
-							"name": "力竭",
-							"type": "statblock",
-							"tag": "condition",
-							"source": "XPHB"
-						},
-						{
-							"ENG_name": "Frightened",
-							"name": "恐慌",
-							"type": "statblock",
-							"tag": "condition",
-							"source": "XPHB"
-						},
-						{
-							"ENG_name": "Grappled",
-							"name": "受擒",
-							"type": "statblock",
-							"tag": "condition",
-							"source": "XPHB"
-						},
-						{
-							"ENG_name": "Incapacitated",
-							"name": "失能",
-							"type": "statblock",
-							"tag": "condition",
-							"source": "XPHB"
-						},
-						{
-							"ENG_name": "Invisible",
-							"name": "隐形",
-							"type": "statblock",
-							"tag": "condition",
-							"source": "XPHB"
-						},
-						{
-							"ENG_name": "Paralyzed",
-							"name": "麻痹",
-							"type": "statblock",
-							"tag": "condition",
-							"source": "XPHB"
-						},
-						{
-							"ENG_name": "Petrified",
-							"name": "石化",
-							"type": "statblock",
-							"tag": "condition",
-							"source": "XPHB"
-						},
-						{
-							"ENG_name": "Poisoned",
-							"name": "中毒",
-							"type": "statblock",
-							"tag": "condition",
-							"source": "XPHB"
-						},
-						{
-							"ENG_name": "Prone",
-							"name": "倒地",
-							"type": "statblock",
-							"tag": "condition",
-							"source": "XPHB"
-						},
-						{
-							"ENG_name": "Restrained",
-							"name": "束缚",
-							"type": "statblock",
-							"tag": "condition",
-							"source": "XPHB"
-						},
-						{
-							"ENG_name": "Stunned",
-							"name": "震慑",
-							"type": "statblock",
-							"tag": "condition",
-							"source": "XPHB"
-						},
-						{
-							"ENG_name": "Unconscious",
-							"name": "昏迷",
-							"type": "statblock",
-							"tag": "condition",
-							"source": "XPHB"
-						}
-					],
-					"id": "002"
-				},
-				{
-					"ENG_name": "Tables",
-					"name": "表格",
-					"type": "entries",
-					"entries": [
-						{
-							"type": "table",
-							"caption": "即兴伤害",
-							"colLabels": [
-								"骰子",
-								"范例"
-							],
-							"colStyles": [
-								"col-2 text-center",
-								"col-10"
-							],
-							"rows": [
-								[
-									"{@damage 1d10}",
-									"被炭烫伤，被倒下的书柜砸伤，被毒针刺伤"
-								],
-								[
-									"{@damage 2d10}",
-									"被闪电劈中，跌进火坑中"
-								],
-								[
-									"{@damage 4d10}",
-									"在坍塌的隧道里被落下的碎石砸中，滚入装满强酸的桶里"
-								],
-								[
-									"{@damage 10d10}",
-									"被紧实的墙壁碾压，被飞旋的钢铁利刃击中，淌过熔岩"
-								],
-								[
-									"{@damage 18d10}",
-									"淹没进熔岩里，被坠毁的飞行堡垒砸中"
-								],
-								[
-									"{@damage 24d10}",
-									"翻滚进入火元素位面的火漩涡中，被神一般的生物或月球大小的怪物的巨颚压碎"
-								]
-							],
-							"data": {
-								"genTables": {
-									"tableChapterIgnore": true
-								}
-							}
-						},
-						{
-							"type": "table",
-							"caption": "伤害严重性与等级",
-							"colLabels": [
-								"角色等级",
-								"妨碍",
-								"致命"
-							],
-							"colStyles": [
-								"col-4 text-center",
-								"col-4 text-center",
-								"col-4 text-center"
-							],
-							"rows": [
-								[
-									"1\u20134",
-									"5 ({@damage 1d10})",
-									"11 ({@damage 2d10})"
-								],
-								[
-									"5\u201310",
-									"11 ({@damage 2d10})",
-									"22 ({@damage 4d10})"
-								],
-								[
-									"11\u201316",
-									"22 ({@damage 4d10})",
-									"55 ({@damage 10d10})"
-								],
-								[
-									"17\u201320",
-									"55 ({@damage 10d10})",
-									"99 ({@damage 18d10})"
-								]
-							],
-							"data": {
-								"genTables": {
-									"tableChapterIgnore": true
-								}
-							}
-						},
-						{
-							"type": "table",
-							"caption": "动作",
-							"colLabels": [
-								"动作",
-								"概述"
-							],
-							"colStyles": [
-								"col-2",
-								"col-10"
-							],
-							"rows": [
-								[
-									"{@action 攻击|XPHB}",
-									"使用武器发动攻击或发动{@variantrule 徒手打击|XPHB}"
-								],
-								[
-									"{@action 疾走|XPHB}",
-									"在回合余下的时间里，给予自己等同于自身{@variantrule 速度|XPHB}的额外移动力。"
-								],
-								[
-									"{@action 撤离|XPHB}",
-									"你在这个回合的剩余时间内移动不会引发{@action 借机攻击|XPHB|借机攻击}。"
-								],
-								[
-									"{@action 回避|XPHB}",
-									"直到你下个回合开始时，攻击掷骰对你具有{@variantrule 劣势|XPHB}，并且你在进行敏捷豁免检定时具有{@variantrule 优势|XPHB}。如果你处于{@condition 失能|XPHB}状态或你的{@variantrule 速度|XPHB}为0，你将失去此增益。"
-								],
-								[
-									"{@action 协助|XPHB}",
-									"协助另一个生物进行属性或攻击检定，或进行急救。"
-								],
-								[
-									"{@action 躲藏|XPHB}",
-									"进行一次敏捷（{@skill 隐匿|XPHB}）检定。"
-								],
-								[
-									"{@action 影响|XPHB}",
-									"进行一次魅力（{@skill 欺瞒|XPHB}、{@skill 威吓|XPHB}、{@skill 表演|XPHB}或{@skill 游说|XPHB}）或感知（{@skill 驯兽|XPHB}）检定，以改变一个生物的态度。"
-								],
-								[
-									"{@action 魔法|XPHB}",
-									"施展一道法术、使用一个魔法物品或是使用一个魔法特性。"
-								],
-								[
-									"{@action 预备|XPHB}",
-									"做好执行某个动作的准备，该动作的触发时机或情况由你决定。"
-								],
-								[
-									"{@action 搜索|XPHB}",
-									"进行一次感知（{@skill 洞悉|XPHB}、{@skill 医药|XPHB}、{@skill 察觉|XPHB}或{@skill 求生|XPHB}）检定。"
-								],
-								[
-									"{@action 研究|XPHB}",
-									"进行一次智力（{@skill 奥秘|XPHB}、{@skill 历史|XPHB}、{@skill 调查|XPHB}、{@skill 自然|XPHB}或{@skill 宗教|XPHB}）检定。"
-								],
-								[
-									"{@action 操作|XPHB}",
-									"使用一个非魔法物件。"
-								]
-							],
-							"footnotes": [
-								"{@i 参见玩家手册规则词汇表以获取完整的动作定义}"
-							],
-							"data": {
-								"genTables": {
-									"tableChapterIgnore": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Long Jump",
-							"name": "跳远",
-							"type": "statblock",
-							"tag": "variantrule",
-							"source": "XPHB"
-						},
-						{
-							"ENG_name": "High Jump",
-							"name": "跳高",
-							"type": "statblock",
-							"tag": "variantrule",
-							"source": "XPHB"
-						},
-						{
-							"ENG_name": "Concentration",
-							"name": "专注",
-							"type": "statblock",
-							"tag": "status",
-							"source": "XPHB"
-						},
-						{
-							"type": "table",
-							"caption": "技能",
-							"colLabels": [
-								"技能",
-								"属性"
-							],
-							"colStyles": [
-								"col-6",
-								"col-6"
-							],
-							"rows": [
-								[
-									"{@skill 特技|XPHB}",
-									"敏捷"
-								],
-								[
-									"{@skill 驯兽|XPHB}",
-									"感知"
-								],
-								[
-									"{@skill 奥秘|XPHB}",
-									"智力"
-								],
-								[
-									"{@skill 运动|XPHB}",
-									"力量"
-								],
-								[
-									"{@skill 欺瞒|XPHB}",
-									"魅力"
-								],
-								[
-									"{@skill 历史|XPHB}",
-									"智力"
-								],
-								[
-									"{@skill 洞悉|XPHB}",
-									"感知"
-								],
-								[
-									"{@skill 威吓|XPHB}",
-									"魅力"
-								],
-								[
-									"{@skill 调查|XPHB}",
-									"智力"
-								],
-								[
-									"{@skill 医药|XPHB}",
-									"感知"
-								],
-								[
-									"{@skill 自然|XPHB}",
-									"智力"
-								],
-								[
-									"{@skill 察觉|XPHB}",
-									"感知"
-								],
-								[
-									"{@skill 表演|XPHB}",
-									"魅力"
-								],
-								[
-									"{@skill 游说|XPHB}",
-									"魅力"
-								],
-								[
-									"{@skill 宗教|XPHB}",
-									"智力"
-								],
-								[
-									"{@skill 巧手|XPHB}",
-									"敏捷"
-								],
-								[
-									"{@skill 隐匿|XPHB}",
-									"敏捷"
-								],
-								[
-									"{@skill 求生|XPHB}",
-									"感知"
-								]
-							],
-							"data": {
-								"genTables": {
-									"tableChapterIgnore": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Death Saving Throws",
-							"name": "死亡豁免检定",
+							"ENG_name": "Cover",
+							"name": "掩护",
 							"type": "entries",
+							"id": "001",
 							"entries": [
-								"当你在回合开始时HP为0，掷一个{@dice 1d20}，并且在10+时成功。",
 								{
-									"type": "list",
-									"style": "list-hang",
-									"items": [
-										{
-											"ENG_name": "Third Success",
-											"name": "第三次成功",
-											"type": "item",
-											"entries": [
-												"你变成{@variantrule 伤势稳定|XPHB}。"
-											]
-										},
-										{
-											"ENG_name": "Third Failure",
-											"name": "第三次失败",
-											"type": "item",
-											"entries": [
-												"你死亡。"
-											]
-										},
-										{
-											"ENG_name": "Rolling a 1",
-											"name": "掷出1点",
-											"type": "item",
-											"entries": [
-												"算作两次失败。"
-											]
-										},
-										{
-											"ENG_name": "Rolling a 20",
-											"name": "掷出20点",
-											"type": "item",
-											"entries": [
-												"你恢复1点生命值。"
-											]
-										}
-									]
-								},
-								"如果你在0生命值时受到伤害，这将算作一次失败的{@variantrule 死亡豁免检定|XPHB|死亡豁免}，或者如果伤害来自{@variantrule 重击|XPHB}，则算作两次失败。"
-							],
-							"data": {
-								"variantRuleInclude": {
-									"ruleType": "C"
-								}
-							},
-							"id": "004"
-						},
-						{
-							"type": "table",
-							"caption": "物件护甲等级",
-							"colLabels": [
-								"AC",
-								"材质"
-							],
-							"colStyles": [
-								"col-2 text-center",
-								"col-10"
-							],
-							"rows": [
-								[
-									"11",
-									"布料、纸张、绳索"
-								],
-								[
-									"13",
-									"水晶、玻璃、冰"
-								],
-								[
-									"15",
-									"木"
-								],
-								[
-									"17",
-									"岩石"
-								],
-								[
-									"19",
-									"铁、钢铁"
-								],
-								[
-									"21",
-									"秘银"
-								],
-								[
-									"23",
-									"精金"
-								]
-							],
-							"data": {
-								"genTables": {
-									"tableChapterIgnore": true
-								}
-							}
-						},
-						{
-							"type": "table",
-							"caption": "物件生命值",
-							"colLabels": [
-								"体型",
-								"脆弱",
-								"牢固"
-							],
-							"colStyles": [
-								"col-6",
-								"col-3",
-								"col-3"
-							],
-							"rows": [
-								[
-									"微型（瓶子、锁）",
-									"2 ({@dice 1d4})",
-									"5 ({@dice 2d4})"
-								],
-								[
-									"小型（宝箱、鲁特琴）",
-									"3 ({@dice 1d6})",
-									"10 ({@dice 3d6})"
-								],
-								[
-									"中型（圆桶、吊灯）",
-									"4 ({@dice 1d8})",
-									"18 ({@dice 4d8})"
-								],
-								[
-									"大型（矿车、餐桌）",
-									"5 ({@dice 1d10})",
-									"27 ({@dice 5d10})"
-								]
-							],
-							"data": {
-								"genTables": {
-									"tableChapterIgnore": true
-								}
-							}
-						},
-						{
-							"type": "table",
-							"caption": "饮食与住宿",
-							"colLabels": [
-								"物品",
-								"花费"
-							],
-							"colStyles": [
-								"col-8",
-								"col-4 text-right"
-							],
-							"rows": [
-								[
-									"{@item 麦酒（马克杯）|XPHB}",
-									"4 CP"
-								],
-								[
-									"{@item 面包（一块）|XPHB}",
-									"2CP"
-								],
-								[
-									"{@item 奶酪（一角）|XPHB}",
-									"1SP"
-								],
-								[
-									"{@i 旅馆住宿（每日）}",
-									""
-								],
-								{
-									"type": "row",
-									"style": "row-indent-first",
-									"row": [
-										"流浪",
-										"7 CP"
-									]
-								},
-								{
-									"type": "row",
-									"style": "row-indent-first",
-									"row": [
-										"穷困",
-										"1SP"
-									]
-								},
-								{
-									"type": "row",
-									"style": "row-indent-first",
-									"row": [
-										"俭朴",
-										"5SP"
-									]
-								},
-								{
-									"type": "row",
-									"style": "row-indent-first",
-									"row": [
-										"舒适",
-										"8 SP"
-									]
-								},
-								{
-									"type": "row",
-									"style": "row-indent-first",
-									"row": [
-										"富裕",
-										"2GP"
-									]
-								},
-								{
-									"type": "row",
-									"style": "row-indent-first",
-									"row": [
-										"奢华",
-										"4 GP"
-									]
-								},
-								[
-									"{@i 餐点}",
-									""
-								],
-								{
-									"type": "row",
-									"style": "row-indent-first",
-									"row": [
-										"流浪",
-										"1CP"
-									]
-								},
-								{
-									"type": "row",
-									"style": "row-indent-first",
-									"row": [
-										"穷困",
-										"2CP"
-									]
-								},
-								{
-									"type": "row",
-									"style": "row-indent-first",
-									"row": [
-										"俭朴",
-										"1SP"
-									]
-								},
-								{
-									"type": "row",
-									"style": "row-indent-first",
-									"row": [
-										"舒适",
-										"2 SP"
-									]
-								},
-								{
-									"type": "row",
-									"style": "row-indent-first",
-									"row": [
-										"富裕",
-										"3 SP"
-									]
-								},
-								{
-									"type": "row",
-									"style": "row-indent-first",
-									"row": [
-										"奢华",
-										"6 SP"
-									]
-								},
-								[
-									"{@i 葡萄酒（瓶)}",
-									""
-								],
-								{
-									"type": "row",
-									"style": "row-indent-first",
-									"row": [
-										"{@item 普通葡萄酒（瓶装）|XPHB|通用语}",
-										"2 SP"
-									]
-								},
-								{
-									"type": "row",
-									"style": "row-indent-first",
-									"row": [
-										"{@item 优质红酒（瓶装）|XPHB|优质}",
-										"10GP"
-									]
-								}
-							],
-							"data": {
-								"genTables": {
-									"tableChapterIgnore": true
-								}
-							}
-						},
-						{
-							"type": "table",
-							"caption": "范例难度等级",
-							"colLabels": [
-								"任务难度",
-								"DC"
-							],
-							"colStyles": [
-								"col-10",
-								"col-2 text-center"
-							],
-							"rows": [
-								[
-									"非常容易",
-									"5"
-								],
-								[
-									"容易",
-									"10"
-								],
-								[
-									"中型",
-									"15"
-								],
-								[
-									"困难",
-									"20"
-								],
-								[
-									"非常困难",
-									"25"
-								],
-								[
-									"近乎不可能",
-									"30"
-								]
-							],
-							"data": {
-								"genTables": {
-									"tableChapterIgnore": true
-								}
-							}
-						},
-						{
-							"type": "table",
-							"caption": "光源",
-							"colLabels": [
-								"来源",
-								"明亮光照",
-								"微光光照",
-								"持续时间"
-							],
-							"colStyles": [
-								"col-3",
-								"col-3",
-								"col-3",
-								"col-3"
-							],
-							"rows": [
-								[
-									"{@item 蜡烛|XPHB}",
-									"5尺",
-									"+5英尺",
-									"1小时"
-								],
-								[
-									"{@item 油灯|XPHB}",
-									"15尺",
-									"+9米",
-									"6小时"
-								],
-								[
-									"{@item 牛眼提灯|XPHB|牛眼提灯}",
-									"60英尺{@variantrule 锥状 [效应区域]|XPHB|锥状}",
-									"+60英尺",
-									"6小时"
-								],
-								[
-									"{@item 附盖提灯|XPHB|附盖提灯}",
-									"30英尺（如果放下兜帽则没有）",
-									"+9米（降低兜帽后+1.5米）",
-									"6小时"
-								],
-								[
-									"{@item 火把|XPHB}",
-									"20尺",
-									"+20英尺",
-									"1小时"
-								]
-							],
-							"data": {
-								"genTables": {
-									"tableChapterIgnore": true
-								}
-							}
-						},
-						{
-							"type": "table",
-							"caption": "遮蔽区域",
-							"colLabels": [
-								"昏暗",
-								"效应",
-								"范例"
-							],
-							"colStyles": [
-								"col-3",
-								"col-5",
-								"col-4"
-							],
-							"rows": [
-								[
-									"{@variantrule 轻度遮蔽|XPHB}",
-									"生物在依赖视觉的感知（{@skill 察觉|XPHB}）检定上有{@variantrule 劣势|XPHB}",
-									"{@variantrule 微光光照|XPHB}, 零星的雾，中等植被"
-								],
-								[
-									"{@variantrule 重度遮蔽|XPHB}",
-									"生物具有{@condition 目盲|XPHB}状态",
-									"{@variantrule 黑暗|XPHB}, 浓雾，茂密的植被"
-								]
-							],
-							"data": {
-								"genTables": {
-									"tableChapterIgnore": true
-								}
-							}
-						},
-						{
-							"type": "table",
-							"caption": "旅行步调",
-							"colLabelRows": [
-								[
-									"",
-									{
-										"type": "cellHeader",
-										"width": 3,
-										"entry": "每...旅行的距离",
-										"style": "th-skewer"
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/XScreen/XScreen Front.webp"
 									},
-									""
-								],
-								[
-									"步调",
-									"分钟",
-									"小时",
-									"天",
-									"效应"
-								]
-							],
-							"colStyles": [
-								"col-2",
-								"col-2",
-								"col-2",
-								"col-2",
-								"col-4"
-							],
-							"rows": [
-								[
-									"快速",
-									"400 尺",
-									"4 里",
-									"30 里",
-									"{@variantrule 劣势|XPHB} 在感知（{@skill 察觉|XPHB} 或 {@skill 求生|XPHB}）和敏捷（{@skill 隐匿|XPHB}）检定上"
-								],
-								[
-									"正常",
-									"300 尺",
-									"3 里",
-									"24 里",
-									"{@variantrule 劣势|XPHB} 在敏捷（{@skill 隐匿|XPHB}）检定上"
-								],
-								[
-									"缓慢术",
-									"200 尺",
-									"2 里",
-									"18 里",
-									"{@variantrule 优势|XPHB} 在感知（{@skill 察觉|XPHB} 或 {@skill 求生|XPHB}）检定上"
-								]
-							],
-							"data": {
-								"genTables": {
-									"tableChapterIgnore": true
+									"width": 1530,
+									"height": 340,
+									"credit": "Joy Ang"
 								}
-							}
+							]
 						},
 						{
-							"type": "table",
-							"caption": "旅行地形",
-							"colLabels": [
-								"地形",
-								"最大步调",
-								"遭遇距离",
-								"觅食难度",
-								"导航DC",
-								"搜索DC"
-							],
-							"colStyles": [
-								"col-2",
-								"col-2 text-center",
-								"col-2 text-center",
-								"col-2 text-center",
-								"col-2 text-center",
-								"col-2 text-center"
-							],
-							"rows": [
-								[
-									"极地",
-									"快速*",
-									"{@dice 6d6 × 10} 尺",
-									"20",
-									"10",
-									"10"
-								],
-								[
-									"海岸",
-									"正常",
-									"{@dice 2d10 × 10} 尺",
-									"10",
-									"5",
-									"15"
-								],
-								[
-									"荒漠",
-									"正常",
-									"{@dice 6d6 × 10} 尺",
-									"20",
-									"10",
-									"10"
-								],
-								[
-									"森林",
-									"正常",
-									"{@dice 2d8 × 10} 尺",
-									"10",
-									"15",
-									"15"
-								],
-								[
-									"草地",
-									"快速",
-									"{@dice 6d6 × 10} 尺",
-									"15",
-									"5",
-									"15"
-								],
-								[
-									"丘陵",
-									"正常",
-									"{@dice 2d10 × 10} 尺",
-									"15",
-									"10",
-									"15"
-								],
-								[
-									"山地",
-									"缓慢术",
-									"{@dice 4d10 × 10} 尺",
-									"20",
-									"15",
-									"20"
-								],
-								[
-									"沼泽",
-									"缓慢术",
-									"{@dice 2d8 × 10} 尺",
-									"10",
-									"15",
-									"20"
-								],
-								[
-									"幽暗地域",
-									"正常",
-									"{@dice 2d6 × 10} 尺",
-									"20",
-									"10",
-									"20"
-								],
-								[
-									"城市",
-									"正常",
-									"{@dice 2d6 × 10} 尺",
-									"20",
-									"15",
-									"15"
-								],
-								[
-									"水路",
-									"特殊†",
-									"{@dice 6d6 × 10} 尺",
-									"15",
-									"10",
-									"15"
-								]
-							],
-							"footnotes": [
-								"*要在极地地形内保持快速步调，适当的装备（如滑雪板）不可或缺。",
-								"†角色在水中移动的速度取决于携带他们的交通工具。"
-							],
-							"data": {
-								"genTables": {
-									"tableChapterIgnore": true
+							"ENG_name": "Conditions",
+							"name": "状态",
+							"type": "entries",
+							"id": "002",
+							"entries": [
+								{
+									"ENG_name": "Blinded",
+									"name": "目盲",
+									"type": "statblock",
+									"tag": "condition",
+									"source": "XPHB"
+								},
+								{
+									"ENG_name": "Charmed",
+									"name": "魅惑",
+									"type": "statblock",
+									"tag": "condition",
+									"source": "XPHB"
+								},
+								{
+									"ENG_name": "Deafened",
+									"name": "耳聋",
+									"type": "statblock",
+									"tag": "condition",
+									"source": "XPHB"
+								},
+								{
+									"ENG_name": "Exhaustion",
+									"name": "力竭",
+									"type": "statblock",
+									"tag": "condition",
+									"source": "XPHB"
+								},
+								{
+									"ENG_name": "Frightened",
+									"name": "恐慌",
+									"type": "statblock",
+									"tag": "condition",
+									"source": "XPHB"
+								},
+								{
+									"ENG_name": "Grappled",
+									"name": "受擒",
+									"type": "statblock",
+									"tag": "condition",
+									"source": "XPHB"
+								},
+								{
+									"ENG_name": "Incapacitated",
+									"name": "失能",
+									"type": "statblock",
+									"tag": "condition",
+									"source": "XPHB"
+								},
+								{
+									"ENG_name": "Invisible",
+									"name": "隐形",
+									"type": "statblock",
+									"tag": "condition",
+									"source": "XPHB"
+								},
+								{
+									"ENG_name": "Paralyzed",
+									"name": "麻痹",
+									"type": "statblock",
+									"tag": "condition",
+									"source": "XPHB"
+								},
+								{
+									"ENG_name": "Petrified",
+									"name": "石化",
+									"type": "statblock",
+									"tag": "condition",
+									"source": "XPHB"
+								},
+								{
+									"ENG_name": "Poisoned",
+									"name": "中毒",
+									"type": "statblock",
+									"tag": "condition",
+									"source": "XPHB"
+								},
+								{
+									"ENG_name": "Prone",
+									"name": "倒地",
+									"type": "statblock",
+									"tag": "condition",
+									"source": "XPHB"
+								},
+								{
+									"ENG_name": "Restrained",
+									"name": "束缚",
+									"type": "statblock",
+									"tag": "condition",
+									"source": "XPHB"
+								},
+								{
+									"ENG_name": "Stunned",
+									"name": "震慑",
+									"type": "statblock",
+									"tag": "condition",
+									"source": "XPHB"
+								},
+								{
+									"ENG_name": "Unconscious",
+									"name": "昏迷",
+									"type": "statblock",
+									"tag": "condition",
+									"source": "XPHB"
 								}
-							}
+							]
 						},
 						{
-							"type": "table",
-							"caption": "掩护",
-							"colLabels": [
-								"遮蔽等级",
-								"对目标的增益"
-							],
-							"colStyles": [
-								"col-3",
-								"col-9"
-							],
-							"rows": [
-								[
-									"半身掩护",
-									"AC和敏捷豁免检定获得 +2 加值"
-								],
-								[
-									"四分之三掩护",
-									"AC和敏捷豁免检定获得 +5 加值"
-								],
-								[
-									"全身掩护",
-									"不能被直接选作目标"
-								]
-							],
-							"data": {
-								"genTables": {
-									"tableChapterIgnore": true
-								}
-							}
-						},
-						{
-							"type": "table",
-							"caption": "声音传播距离",
-							"colLabels": [
-								"响声",
-								"距离"
-							],
-							"colStyles": [
-								"col-6",
-								"col-6"
-							],
-							"rows": [
-								[
-									"试图保持安静",
-									"{@dice 2d6 × 5} 尺"
-								],
-								[
-									"正常噪音水平",
-									"{@dice 2d6 × 10} 尺"
-								],
-								[
-									"非常响亮",
-									"{@dice 2d6 × 50} 尺"
-								]
-							],
-							"data": {
-								"genTables": {
-									"tableChapterIgnore": true
-								}
-							}
-						},
-						{
-							"type": "table",
-							"caption": "户外能见度",
-							"colLabels": [
-								"状态",
-								"距离"
-							],
-							"colStyles": [
-								"col-6",
-								"col-6"
-							],
-							"rows": [
-								[
-									"晴天，无障碍",
-									"2英里（从高度40英里）"
-								],
-								[
-									"雨（{@variantrule 轻度遮蔽|XPHB}）",
-									"1英里"
-								],
-								[
-									"雾（{@variantrule 轻度遮蔽|XPHB}）",
-									"100至300尺"
-								]
-							],
-							"data": {
-								"genTables": {
-									"tableChapterIgnore": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Weather",
-							"name": "天气",
-							"type": "tableGroup",
-							"tables": [
+							"ENG_name": "Tables",
+							"name": "表格",
+							"type": "entries",
+							"id": "003",
+							"entries": [
 								{
 									"type": "table",
-									"caption": "天气",
+									"caption": "即兴伤害",
 									"colLabels": [
-										"1d20",
-										"气温"
+										"骰子",
+										"范例"
 									],
 									"colStyles": [
 										"col-2 text-center",
@@ -1118,16 +160,28 @@
 									],
 									"rows": [
 										[
-											"1\u201314",
-											"本季正常水准"
+											"{@damage 1d10}",
+											"被炭烫伤，被倒下的书柜砸伤，被毒针刺伤"
 										],
 										[
-											"15\u201317",
-											"{@dice 1d4 × 10} 华氏度变冷"
+											"{@damage 2d10}",
+											"被闪电劈中，跌进火坑中"
 										],
 										[
-											"18\u201320",
-											"{@dice 1d4 × 10} 华氏度变热"
+											"{@damage 4d10}",
+											"在坍塌的隧道里被落下的碎石砸中，滚入装满强酸的桶里"
+										],
+										[
+											"{@damage 10d10}",
+											"被紧实的墙壁碾压，被飞旋的钢铁利刃击中，淌过熔岩"
+										],
+										[
+											"{@damage 18d10}",
+											"淹没进熔岩里，被坠毁的飞行堡垒砸中"
+										],
+										[
+											"{@damage 24d10}",
+											"翻滚进入火元素位面的火漩涡中，被神一般的生物或月球大小的怪物的巨颚压碎"
 										]
 									],
 									"data": {
@@ -1138,31 +192,37 @@
 								},
 								{
 									"type": "table",
+									"caption": "伤害严重性与等级",
 									"colLabels": [
-										"1d20",
-										"风势",
-										"降水"
+										"角色等级",
+										"妨碍",
+										"致命"
 									],
 									"colStyles": [
-										"col-2 text-center",
-										"col-2",
-										"col-8"
+										"col-4 text-center",
+										"col-4 text-center",
+										"col-4 text-center"
 									],
 									"rows": [
 										[
-											"1\u201312",
-											"无",
-											"无"
+											"1\u20134",
+											"5 ({@damage 1d10})",
+											"11 ({@damage 2d10})"
 										],
 										[
-											"13\u201317",
-											"轻型",
-											"轻度降雨或降雪"
+											"5\u201310",
+											"11 ({@damage 2d10})",
+											"22 ({@damage 4d10})"
 										],
 										[
-											"18\u201320",
-											"强",
-											"大雨或大雪"
+											"11\u201316",
+											"22 ({@damage 4d10})",
+											"55 ({@damage 10d10})"
+										],
+										[
+											"17\u201320",
+											"55 ({@damage 10d10})",
+											"99 ({@damage 18d10})"
 										]
 									],
 									"data": {
@@ -1170,14 +230,960 @@
 											"tableChapterIgnore": true
 										}
 									}
+								},
+								{
+									"type": "table",
+									"caption": "动作",
+									"colLabels": [
+										"动作",
+										"概述"
+									],
+									"colStyles": [
+										"col-2",
+										"col-10"
+									],
+									"rows": [
+										[
+											"{@action 攻击|XPHB}",
+											"使用武器发动攻击或发动{@variantrule 徒手打击|XPHB}"
+										],
+										[
+											"{@action 疾走|XPHB}",
+											"在回合余下的时间里，给予自己等同于自身{@variantrule 速度|XPHB}的额外移动力。"
+										],
+										[
+											"{@action 撤离|XPHB}",
+											"你在这个回合的剩余时间内移动不会引发{@action 借机攻击|XPHB|借机攻击}。"
+										],
+										[
+											"{@action 回避|XPHB}",
+											"直到你下个回合开始时，攻击掷骰对你具有{@variantrule 劣势|XPHB}，并且你在进行敏捷豁免检定时具有{@variantrule 优势|XPHB}。如果你处于{@condition 失能|XPHB}状态或你的{@variantrule 速度|XPHB}为0，你将失去此增益。"
+										],
+										[
+											"{@action 协助|XPHB}",
+											"协助另一个生物进行属性或攻击检定，或进行急救。"
+										],
+										[
+											"{@action 躲藏|XPHB}",
+											"进行一次敏捷（{@skill 隐匿|XPHB}）检定。"
+										],
+										[
+											"{@action 影响|XPHB}",
+											"进行一次魅力（{@skill 欺瞒|XPHB}、{@skill 威吓|XPHB}、{@skill 表演|XPHB}或{@skill 游说|XPHB}）或感知（{@skill 驯兽|XPHB}）检定，以改变一个生物的态度。"
+										],
+										[
+											"{@action 魔法|XPHB}",
+											"施展一道法术、使用一个魔法物品或是使用一个魔法特性。"
+										],
+										[
+											"{@action 预备|XPHB}",
+											"做好执行某个动作的准备，该动作的触发时机或情况由你决定。"
+										],
+										[
+											"{@action 搜索|XPHB}",
+											"进行一次感知（{@skill 洞悉|XPHB}、{@skill 医药|XPHB}、{@skill 察觉|XPHB}或{@skill 求生|XPHB}）检定。"
+										],
+										[
+											"{@action 研究|XPHB}",
+											"进行一次智力（{@skill 奥秘|XPHB}、{@skill 历史|XPHB}、{@skill 调查|XPHB}、{@skill 自然|XPHB}或{@skill 宗教|XPHB}）检定。"
+										],
+										[
+											"{@action 操作|XPHB}",
+											"使用一个非魔法物件。"
+										]
+									],
+									"footnotes": [
+										"{@i 参见玩家手册规则词汇表以获取完整的动作定义}"
+									],
+									"data": {
+										"genTables": {
+											"tableChapterIgnore": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Long Jump",
+									"name": "跳远",
+									"type": "statblock",
+									"tag": "variantrule",
+									"source": "XPHB"
+								},
+								{
+									"ENG_name": "High Jump",
+									"name": "跳高",
+									"type": "statblock",
+									"tag": "variantrule",
+									"source": "XPHB"
+								},
+								{
+									"ENG_name": "Concentration",
+									"name": "专注",
+									"type": "statblock",
+									"tag": "status",
+									"source": "XPHB"
+								},
+								{
+									"type": "table",
+									"caption": "技能",
+									"colLabels": [
+										"技能",
+										"属性"
+									],
+									"colStyles": [
+										"col-6",
+										"col-6"
+									],
+									"rows": [
+										[
+											"{@skill 特技|XPHB}",
+											"敏捷"
+										],
+										[
+											"{@skill 驯兽|XPHB}",
+											"感知"
+										],
+										[
+											"{@skill 奥秘|XPHB}",
+											"智力"
+										],
+										[
+											"{@skill 运动|XPHB}",
+											"力量"
+										],
+										[
+											"{@skill 欺瞒|XPHB}",
+											"魅力"
+										],
+										[
+											"{@skill 历史|XPHB}",
+											"智力"
+										],
+										[
+											"{@skill 洞悉|XPHB}",
+											"感知"
+										],
+										[
+											"{@skill 威吓|XPHB}",
+											"魅力"
+										],
+										[
+											"{@skill 调查|XPHB}",
+											"智力"
+										],
+										[
+											"{@skill 医药|XPHB}",
+											"感知"
+										],
+										[
+											"{@skill 自然|XPHB}",
+											"智力"
+										],
+										[
+											"{@skill 察觉|XPHB}",
+											"感知"
+										],
+										[
+											"{@skill 表演|XPHB}",
+											"魅力"
+										],
+										[
+											"{@skill 游说|XPHB}",
+											"魅力"
+										],
+										[
+											"{@skill 宗教|XPHB}",
+											"智力"
+										],
+										[
+											"{@skill 巧手|XPHB}",
+											"敏捷"
+										],
+										[
+											"{@skill 隐匿|XPHB}",
+											"敏捷"
+										],
+										[
+											"{@skill 求生|XPHB}",
+											"感知"
+										]
+									],
+									"data": {
+										"genTables": {
+											"tableChapterIgnore": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Death Saving Throws",
+									"name": "死亡豁免检定",
+									"type": "entries",
+									"id": "004",
+									"entries": [
+										"当你在回合开始时HP为0，掷一个{@dice 1d20}，并且在10+时成功。",
+										{
+											"type": "list",
+											"style": "list-hang",
+											"items": [
+												{
+													"ENG_name": "Third Success",
+													"name": "第三次成功",
+													"type": "item",
+													"entries": [
+														"你变成{@variantrule 伤势稳定|XPHB}。"
+													]
+												},
+												{
+													"ENG_name": "Third Failure",
+													"name": "第三次失败",
+													"type": "item",
+													"entries": [
+														"你死亡。"
+													]
+												},
+												{
+													"ENG_name": "Rolling a 1",
+													"name": "掷出1点",
+													"type": "item",
+													"entries": [
+														"算作两次失败。"
+													]
+												},
+												{
+													"ENG_name": "Rolling a 20",
+													"name": "掷出20点",
+													"type": "item",
+													"entries": [
+														"你恢复1点生命值。"
+													]
+												}
+											]
+										},
+										"如果你在0生命值时受到伤害，这将算作一次失败的{@variantrule 死亡豁免检定|XPHB|死亡豁免}，或者如果伤害来自{@variantrule 重击|XPHB}，则算作两次失败。"
+									],
+									"data": {
+										"variantRuleInclude": {
+											"ruleType": "C"
+										}
+									}
+								},
+								{
+									"type": "table",
+									"caption": "物件护甲等级",
+									"colLabels": [
+										"AC",
+										"材质"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-10"
+									],
+									"rows": [
+										[
+											"11",
+											"布料、纸张、绳索"
+										],
+										[
+											"13",
+											"水晶、玻璃、冰"
+										],
+										[
+											"15",
+											"木"
+										],
+										[
+											"17",
+											"岩石"
+										],
+										[
+											"19",
+											"铁、钢铁"
+										],
+										[
+											"21",
+											"秘银"
+										],
+										[
+											"23",
+											"精金"
+										]
+									],
+									"data": {
+										"genTables": {
+											"tableChapterIgnore": true
+										}
+									}
+								},
+								{
+									"type": "table",
+									"caption": "物件生命值",
+									"colLabels": [
+										"体型",
+										"脆弱",
+										"牢固"
+									],
+									"colStyles": [
+										"col-6",
+										"col-3",
+										"col-3"
+									],
+									"rows": [
+										[
+											"微型（瓶子、锁）",
+											"2 ({@dice 1d4})",
+											"5 ({@dice 2d4})"
+										],
+										[
+											"小型（宝箱、鲁特琴）",
+											"3 ({@dice 1d6})",
+											"10 ({@dice 3d6})"
+										],
+										[
+											"中型（圆桶、吊灯）",
+											"4 ({@dice 1d8})",
+											"18 ({@dice 4d8})"
+										],
+										[
+											"大型（矿车、餐桌）",
+											"5 ({@dice 1d10})",
+											"27 ({@dice 5d10})"
+										]
+									],
+									"data": {
+										"genTables": {
+											"tableChapterIgnore": true
+										}
+									}
+								},
+								{
+									"type": "table",
+									"caption": "饮食与住宿",
+									"colLabels": [
+										"物品",
+										"花费"
+									],
+									"colStyles": [
+										"col-8",
+										"col-4 text-right"
+									],
+									"rows": [
+										[
+											"{@item 麦酒（马克杯）|XPHB}",
+											"4 CP"
+										],
+										[
+											"{@item 面包（一块）|XPHB}",
+											"2CP"
+										],
+										[
+											"{@item 奶酪（一角）|XPHB}",
+											"1SP"
+										],
+										[
+											"{@i 旅馆住宿（每日）}",
+											""
+										],
+										{
+											"type": "row",
+											"style": "row-indent-first",
+											"row": [
+												"流浪",
+												"7 CP"
+											]
+										},
+										{
+											"type": "row",
+											"style": "row-indent-first",
+											"row": [
+												"穷困",
+												"1SP"
+											]
+										},
+										{
+											"type": "row",
+											"style": "row-indent-first",
+											"row": [
+												"俭朴",
+												"5SP"
+											]
+										},
+										{
+											"type": "row",
+											"style": "row-indent-first",
+											"row": [
+												"舒适",
+												"8 SP"
+											]
+										},
+										{
+											"type": "row",
+											"style": "row-indent-first",
+											"row": [
+												"富裕",
+												"2GP"
+											]
+										},
+										{
+											"type": "row",
+											"style": "row-indent-first",
+											"row": [
+												"奢华",
+												"4 GP"
+											]
+										},
+										[
+											"{@i 餐点}",
+											""
+										],
+										{
+											"type": "row",
+											"style": "row-indent-first",
+											"row": [
+												"流浪",
+												"1CP"
+											]
+										},
+										{
+											"type": "row",
+											"style": "row-indent-first",
+											"row": [
+												"穷困",
+												"2CP"
+											]
+										},
+										{
+											"type": "row",
+											"style": "row-indent-first",
+											"row": [
+												"俭朴",
+												"1SP"
+											]
+										},
+										{
+											"type": "row",
+											"style": "row-indent-first",
+											"row": [
+												"舒适",
+												"2 SP"
+											]
+										},
+										{
+											"type": "row",
+											"style": "row-indent-first",
+											"row": [
+												"富裕",
+												"3 SP"
+											]
+										},
+										{
+											"type": "row",
+											"style": "row-indent-first",
+											"row": [
+												"奢华",
+												"6 SP"
+											]
+										},
+										[
+											"{@i 葡萄酒（瓶)}",
+											""
+										],
+										{
+											"type": "row",
+											"style": "row-indent-first",
+											"row": [
+												"{@item 普通葡萄酒（瓶装）|XPHB|通用语}",
+												"2 SP"
+											]
+										},
+										{
+											"type": "row",
+											"style": "row-indent-first",
+											"row": [
+												"{@item 优质红酒（瓶装）|XPHB|优质}",
+												"10GP"
+											]
+										}
+									],
+									"data": {
+										"genTables": {
+											"tableChapterIgnore": true
+										}
+									}
+								},
+								{
+									"type": "table",
+									"caption": "范例难度等级",
+									"colLabels": [
+										"任务难度",
+										"DC"
+									],
+									"colStyles": [
+										"col-10",
+										"col-2 text-center"
+									],
+									"rows": [
+										[
+											"非常容易",
+											"5"
+										],
+										[
+											"容易",
+											"10"
+										],
+										[
+											"中型",
+											"15"
+										],
+										[
+											"困难",
+											"20"
+										],
+										[
+											"非常困难",
+											"25"
+										],
+										[
+											"近乎不可能",
+											"30"
+										]
+									],
+									"data": {
+										"genTables": {
+											"tableChapterIgnore": true
+										}
+									}
+								},
+								{
+									"type": "table",
+									"caption": "光源",
+									"colLabels": [
+										"来源",
+										"明亮光照",
+										"微光光照",
+										"持续时间"
+									],
+									"colStyles": [
+										"col-3",
+										"col-3",
+										"col-3",
+										"col-3"
+									],
+									"rows": [
+										[
+											"{@item 蜡烛|XPHB}",
+											"5尺",
+											"+5英尺",
+											"1小时"
+										],
+										[
+											"{@item 油灯|XPHB}",
+											"15尺",
+											"+9米",
+											"6小时"
+										],
+										[
+											"{@item 牛眼提灯|XPHB|牛眼提灯}",
+											"60英尺{@variantrule 锥状 [效应区域]|XPHB|锥状}",
+											"+60英尺",
+											"6小时"
+										],
+										[
+											"{@item 附盖提灯|XPHB|附盖提灯}",
+											"30英尺（如果放下兜帽则没有）",
+											"+9米（降低兜帽后+1.5米）",
+											"6小时"
+										],
+										[
+											"{@item 火把|XPHB}",
+											"20尺",
+											"+20英尺",
+											"1小时"
+										]
+									],
+									"data": {
+										"genTables": {
+											"tableChapterIgnore": true
+										}
+									}
+								},
+								{
+									"type": "table",
+									"caption": "遮蔽区域",
+									"colLabels": [
+										"昏暗",
+										"效应",
+										"范例"
+									],
+									"colStyles": [
+										"col-3",
+										"col-5",
+										"col-4"
+									],
+									"rows": [
+										[
+											"{@variantrule 轻度遮蔽|XPHB}",
+											"生物在依赖视觉的感知（{@skill 察觉|XPHB}）检定上有{@variantrule 劣势|XPHB}",
+											"{@variantrule 微光光照|XPHB}, 零星的雾，中等植被"
+										],
+										[
+											"{@variantrule 重度遮蔽|XPHB}",
+											"生物具有{@condition 目盲|XPHB}状态",
+											"{@variantrule 黑暗|XPHB}, 浓雾，茂密的植被"
+										]
+									],
+									"data": {
+										"genTables": {
+											"tableChapterIgnore": true
+										}
+									}
+								},
+								{
+									"type": "table",
+									"caption": "旅行步调",
+									"colLabelRows": [
+										[
+											"",
+											{
+												"type": "cellHeader",
+												"style": "th-skewer",
+												"width": 3,
+												"entry": "每...旅行的距离"
+											},
+											""
+										],
+										[
+											"步调",
+											"分钟",
+											"小时",
+											"天",
+											"效应"
+										]
+									],
+									"colStyles": [
+										"col-2",
+										"col-2",
+										"col-2",
+										"col-2",
+										"col-4"
+									],
+									"rows": [
+										[
+											"快速",
+											"400 尺",
+											"4 里",
+											"30 里",
+											"{@variantrule 劣势|XPHB} 在感知（{@skill 察觉|XPHB} 或 {@skill 求生|XPHB}）和敏捷（{@skill 隐匿|XPHB}）检定上"
+										],
+										[
+											"正常",
+											"300 尺",
+											"3 里",
+											"24 里",
+											"{@variantrule 劣势|XPHB} 在敏捷（{@skill 隐匿|XPHB}）检定上"
+										],
+										[
+											"缓慢术",
+											"200 尺",
+											"2 里",
+											"18 里",
+											"{@variantrule 优势|XPHB} 在感知（{@skill 察觉|XPHB} 或 {@skill 求生|XPHB}）检定上"
+										]
+									],
+									"data": {
+										"genTables": {
+											"tableChapterIgnore": true
+										}
+									}
+								},
+								{
+									"type": "table",
+									"caption": "旅行地形",
+									"colLabels": [
+										"地形",
+										"最大步调",
+										"遭遇距离",
+										"觅食难度",
+										"导航DC",
+										"搜索DC"
+									],
+									"colStyles": [
+										"col-2",
+										"col-2 text-center",
+										"col-2 text-center",
+										"col-2 text-center",
+										"col-2 text-center",
+										"col-2 text-center"
+									],
+									"rows": [
+										[
+											"极地",
+											"快速*",
+											"{@dice 6d6 × 10} 尺",
+											"20",
+											"10",
+											"10"
+										],
+										[
+											"海岸",
+											"正常",
+											"{@dice 2d10 × 10} 尺",
+											"10",
+											"5",
+											"15"
+										],
+										[
+											"荒漠",
+											"正常",
+											"{@dice 6d6 × 10} 尺",
+											"20",
+											"10",
+											"10"
+										],
+										[
+											"森林",
+											"正常",
+											"{@dice 2d8 × 10} 尺",
+											"10",
+											"15",
+											"15"
+										],
+										[
+											"草地",
+											"快速",
+											"{@dice 6d6 × 10} 尺",
+											"15",
+											"5",
+											"15"
+										],
+										[
+											"丘陵",
+											"正常",
+											"{@dice 2d10 × 10} 尺",
+											"15",
+											"10",
+											"15"
+										],
+										[
+											"山地",
+											"缓慢术",
+											"{@dice 4d10 × 10} 尺",
+											"20",
+											"15",
+											"20"
+										],
+										[
+											"沼泽",
+											"缓慢术",
+											"{@dice 2d8 × 10} 尺",
+											"10",
+											"15",
+											"20"
+										],
+										[
+											"幽暗地域",
+											"正常",
+											"{@dice 2d6 × 10} 尺",
+											"20",
+											"10",
+											"20"
+										],
+										[
+											"城市",
+											"正常",
+											"{@dice 2d6 × 10} 尺",
+											"20",
+											"15",
+											"15"
+										],
+										[
+											"水路",
+											"特殊†",
+											"{@dice 6d6 × 10} 尺",
+											"15",
+											"10",
+											"15"
+										]
+									],
+									"footnotes": [
+										"*要在极地地形内保持快速步调，适当的装备（如滑雪板）不可或缺。",
+										"†角色在水中移动的速度取决于携带他们的交通工具。"
+									],
+									"data": {
+										"genTables": {
+											"tableChapterIgnore": true
+										}
+									}
+								},
+								{
+									"type": "table",
+									"caption": "掩护",
+									"colLabels": [
+										"遮蔽等级",
+										"对目标的增益"
+									],
+									"colStyles": [
+										"col-3",
+										"col-9"
+									],
+									"rows": [
+										[
+											"半身掩护",
+											"AC和敏捷豁免检定获得 +2 加值"
+										],
+										[
+											"四分之三掩护",
+											"AC和敏捷豁免检定获得 +5 加值"
+										],
+										[
+											"全身掩护",
+											"不能被直接选作目标"
+										]
+									],
+									"data": {
+										"genTables": {
+											"tableChapterIgnore": true
+										}
+									}
+								},
+								{
+									"type": "table",
+									"caption": "声音传播距离",
+									"colLabels": [
+										"响声",
+										"距离"
+									],
+									"colStyles": [
+										"col-6",
+										"col-6"
+									],
+									"rows": [
+										[
+											"试图保持安静",
+											"{@dice 2d6 × 5} 尺"
+										],
+										[
+											"正常噪音水平",
+											"{@dice 2d6 × 10} 尺"
+										],
+										[
+											"非常响亮",
+											"{@dice 2d6 × 50} 尺"
+										]
+									],
+									"data": {
+										"genTables": {
+											"tableChapterIgnore": true
+										}
+									}
+								},
+								{
+									"type": "table",
+									"caption": "户外能见度",
+									"colLabels": [
+										"状态",
+										"距离"
+									],
+									"colStyles": [
+										"col-6",
+										"col-6"
+									],
+									"rows": [
+										[
+											"晴天，无障碍",
+											"2英里（从高度40英里）"
+										],
+										[
+											"雨（{@variantrule 轻度遮蔽|XPHB}）",
+											"1英里"
+										],
+										[
+											"雾（{@variantrule 轻度遮蔽|XPHB}）",
+											"100至300尺"
+										]
+									],
+									"data": {
+										"genTables": {
+											"tableChapterIgnore": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Weather",
+									"name": "天气",
+									"type": "tableGroup",
+									"tables": [
+										{
+											"type": "table",
+											"caption": "天气",
+											"colLabels": [
+												"1d20",
+												"气温"
+											],
+											"colStyles": [
+												"col-2 text-center",
+												"col-10"
+											],
+											"rows": [
+												[
+													"1\u201314",
+													"本季正常水准"
+												],
+												[
+													"15\u201317",
+													"{@dice 1d4 × 10} 华氏度变冷"
+												],
+												[
+													"18\u201320",
+													"{@dice 1d4 × 10} 华氏度变热"
+												]
+											],
+											"data": {
+												"genTables": {
+													"tableChapterIgnore": true
+												}
+											}
+										},
+										{
+											"type": "table",
+											"colLabels": [
+												"1d20",
+												"风势",
+												"降水"
+											],
+											"colStyles": [
+												"col-2 text-center",
+												"col-2",
+												"col-8"
+											],
+											"rows": [
+												[
+													"1\u201312",
+													"无",
+													"无"
+												],
+												[
+													"13\u201317",
+													"轻型",
+													"轻度降雨或降雪"
+												],
+												[
+													"18\u201320",
+													"强",
+													"大雨或大雪"
+												]
+											],
+											"data": {
+												"genTables": {
+													"tableChapterIgnore": true
+												}
+											}
+										}
+									]
 								}
 							]
 						}
-					],
-					"id": "003"
+					]
 				}
-			],
-			"id": "000"
+			]
 		}
 	]
 }

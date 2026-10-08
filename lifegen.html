@@ -89,7 +89,7 @@
 
 <body>
 
-<div class="overlay-noise no-print"></div>
+<div class="overlay-noise ve-print__hidden"></div>
 
 <div class="cancer__wrp-leaderboard cancer__anchor"><div class="cancer__disp-cancer"></div><div class="cancer__wrp-leaderboard-inner cancer__wrp-interactive"><!--5ETOOLS_AD_LEADERBOARD--></div></div>
 
@@ -110,7 +110,7 @@
 <div class="cancer__wrp-sidebar cancer__wrp-sidebar-rhs cancer__wrp-sidebar-rhs--scrolling-page cancer__anchor"><div class="cancer__disp-cancer"></div><div class="cancer__sidebar-inner cancer__sidebar-inner--top cancer__wrp-interactive"><!--5ETOOLS_AD_RIGHT_1--></div><div class="cancer__sidebar-inner cancer__sidebar-inner--bottom cancer__wrp-interactive"><!--5ETOOLS_AD_RIGHT_2--></div></div>
 
 <main class="container" data-cancer-id="cancer-wrapper">
-	<div class="ve-flex no-print">
+	<div class="ve-flex ve-print__hidden">
 		<div class="form-group ve-col-2-4 ve-mr-2">
 			<label for="race">种族</label>
 			<select class="ve-form-control form-inline" id="race" disabled><option>加载中...</option></select>
@@ -136,44 +136,44 @@
 			<select class="ve-form-control form-inline" id="age" disabled><option>加载中...</option></select>
 		</div>
 	</div>
-	<div class="ve-flex no-print">
+	<div class="ve-flex ve-print__hidden">
 		<div class="form-group ve-col-12">
 			<button class="ve-btn ve-btn-default" id="btn-generate">生成</button>
 		</div>
 	</div>
 
-	<div class="ve-flex-col no-print ve-py-0">
+	<div class="ve-flex-col ve-print__hidden ve-py-0">
 		<p>这个生成器是基于<a href="#" id="xge_link">《姗纳萨的万事指南》</a>第61-73页的规则和表格。</p>
 		<p><i>意：以斜体显示所产生的文本内容是为了让使用变得更容易和快速，它们并不对应原本生成器中的任何表格。随你喜好忽视它们。</i></p>
 	</div>
 
 	<hr class="life__output ve-hidden">
 	<div class="ve-flex-col life__output ve-bg-solid ve-shadow-big ve-b-1p ve-bc-5p ve-my-3 ve-py-1 ve-px-3 ve-hidden">
-		<div class="wrp-sect-head"><h4>双亲</h4><button class="ve-btn ve-btn-xs ve-btn-default no-print" id="btn-reroll-parents">重骰</button></div>
+		<div class="wrp-sect-head"><h4>双亲</h4><button class="ve-btn ve-btn-xs ve-btn-default ve-print__hidden" id="btn-reroll-parents">重骰</button></div>
 		<p id="parents"></p>
 	</div>
 	<div class="ve-flex-col life__output ve-bg-solid ve-shadow-big ve-b-1p ve-bc-5p ve-my-3 ve-py-1 ve-px-3 ve-hidden">
-		<div class="wrp-sect-head"><h4>出生地</h4><button class="ve-btn ve-btn-xs ve-btn-default no-print" id="btn-reroll-birthplace">重骰</button></div>
+		<div class="wrp-sect-head"><h4>出生地</h4><button class="ve-btn ve-btn-xs ve-btn-default ve-print__hidden" id="btn-reroll-birthplace">重骰</button></div>
 		<p id="birthplace"></p>
 	</div>
 	<div class="ve-flex-col life__output ve-bg-solid ve-shadow-big ve-b-1p ve-bc-5p ve-my-3 ve-py-1 ve-px-3 ve-hidden">
-		<div class="wrp-sect-head"><h4>兄弟姊妹</h4><button class="ve-btn ve-btn-xs ve-btn-default no-print" id="btn-reroll-siblings">重骰</button></div>
+		<div class="wrp-sect-head"><h4>兄弟姊妹</h4><button class="ve-btn ve-btn-xs ve-btn-default ve-print__hidden" id="btn-reroll-siblings">重骰</button></div>
 		<p id="siblings"></p>
 	</div>
 	<div class="ve-flex-col life__output ve-bg-solid ve-shadow-big ve-b-1p ve-bc-5p ve-my-3 ve-py-1 ve-px-3 ve-hidden">
-		<div class="wrp-sect-head"><h4>家族和朋友</h4><button class="ve-btn ve-btn-xs ve-btn-default no-print" id="btn-reroll-family">重骰</button></div>
+		<div class="wrp-sect-head"><h4>家族和朋友</h4><button class="ve-btn ve-btn-xs ve-btn-default ve-print__hidden" id="btn-reroll-family">重骰</button></div>
 		<p id="family"></p>
 	</div>
 	<div class="ve-flex-col life__output ve-bg-solid ve-shadow-big ve-b-1p ve-bc-5p ve-my-3 ve-py-1 ve-px-3 ve-hidden">
-		<div class="wrp-sect-head"><h4>个人抉择</h4><button class="ve-btn ve-btn-xs ve-btn-default no-print" id="btn-reroll-personal">重骰</button></div>
+		<div class="wrp-sect-head"><h4>个人抉择</h4><button class="ve-btn ve-btn-xs ve-btn-default ve-print__hidden" id="btn-reroll-personal">重骰</button></div>
 		<p id="personal"></p>
 	</div>
 	<div class="ve-flex-col life__output ve-bg-solid ve-shadow-big ve-b-1p ve-bc-5p ve-my-3 ve-py-1 ve-px-3 ve-hidden">
-		<div class="wrp-sect-head"><h4>职业训练</h4><button class="ve-btn ve-btn-xs ve-btn-default no-print" id="btn-reroll-class">重骰</button></div>
+		<div class="wrp-sect-head"><h4>职业训练</h4><button class="ve-btn ve-btn-xs ve-btn-default ve-print__hidden" id="btn-reroll-class">重骰</button></div>
 		<p id="clss"></p>
 	</div>
 	<div class="ve-flex-col life__output ve-bg-solid ve-shadow-big ve-b-1p ve-bc-5p ve-my-3 ve-py-1 ve-px-3 ve-hidden">
-		<div class="wrp-sect-head"><h4>人生大事</h4><button class="ve-btn ve-btn-xs ve-btn-default no-print" id="btn-reroll-events">重骰</button></div>
+		<div class="wrp-sect-head"><h4>人生大事</h4><button class="ve-btn ve-btn-xs ve-btn-default ve-print__hidden" id="btn-reroll-events">重骰</button></div>
 		<p id="events"></p>
 	</div>
 	<div class="ve-h-50h"></div>

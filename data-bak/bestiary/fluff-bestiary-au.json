@@ -57,10 +57,10 @@
 						"type": "internal",
 						"path": "bestiary/AU/Archmages.webp"
 					},
-					"title": "Archmages from Each School of Magic: 1. {@creature Conjurer Archmage|AU|Conjurer} 2. {@creature Abjurer Archmage|AU|Abjurer} 3. {@creature Necromancer Archmage|AU|Necromancer} 4. {@creature Illusionist Archmage|AU|Illusionist} 5. {@creature Diviner Archmage|AU|Diviner} 6. {@creature Enchanter Archmage|AU|Enchanter} 7. {@creature Transmuter Archmage|AU|Transmuter} 8. {@creature Evoker Archmage|AU|Evoker}",
-					"credit": "Anna Podedworna",
 					"width": 1700,
-					"height": 1059
+					"height": 1059,
+					"title": "Archmages from Each School of Magic: 1. {@creature Conjurer Archmage|AU|Conjurer} 2. {@creature Abjurer Archmage|AU|Abjurer} 3. {@creature Necromancer Archmage|AU|Necromancer} 4. {@creature Illusionist Archmage|AU|Illusionist} 5. {@creature Diviner Archmage|AU|Diviner} 6. {@creature Enchanter Archmage|AU|Enchanter} 7. {@creature Transmuter Archmage|AU|Transmuter} 8. {@creature Evoker Archmage|AU|Evoker}",
+					"credit": "Anna Podedworna"
 				}
 			]
 		},
@@ -90,6 +90,7 @@
 								"A baelnorn extends its presence into the region it inhabits, creating the following effects:",
 								{
 									"type": "list",
+									"style": "list-hang-notitle",
 									"items": [
 										{
 											"type": "item",
@@ -105,8 +106,7 @@
 												"Creatures can't use teleportation or planar travel to enter or exit the lair."
 											]
 										}
-									],
-									"style": "list-hang-notitle"
+									]
 								},
 								"If the baelnorn is destroyed or moves its lair elsewhere, these effects end immediately."
 							]
@@ -133,9 +133,9 @@
 						"type": "internal",
 						"path": "bestiary/AU/Baelnorn.webp"
 					},
-					"credit": "Michele Giorgi",
 					"width": 850,
-					"height": 1019
+					"height": 1019,
+					"credit": "Michele Giorgi"
 				}
 			]
 		},
@@ -172,6 +172,7 @@
 						"{@creature Darkenbeast|AU|Darkenbeasts} might have vestigial characteristics of the animals they were before transformation. Roll on or choose a result from the Darkenbeast Origin table as inspiration for these cosmetic features.",
 						{
 							"type": "table",
+							"caption": "Darkenbeast Origin",
 							"colLabels": [
 								"1d6",
 								"The Darkenbeast Was Once A..."
@@ -205,8 +206,7 @@
 									"6",
 									"{@creature Wolf|XMM}, so it emits eerie howls."
 								]
-							],
-							"caption": "Darkenbeast Origin"
+							]
 						}
 					]
 				}
@@ -218,9 +218,9 @@
 						"type": "internal",
 						"path": "bestiary/AU/Darkenbeast.webp"
 					},
-					"credit": "Brian Valeza",
 					"width": 850,
-					"height": 1500
+					"height": 1500,
+					"credit": "Brian Valeza"
 				}
 			]
 		},
@@ -382,10 +382,10 @@
 						"type": "internal",
 						"path": "bestiary/AU/Groundlings.webp"
 					},
-					"title": "From Left to Right: {@creature Groundling Slayer|AU}, {@creature Groundling Grunt|AU}, {@creature Groundling Stalker|AU}",
-					"credit": "Brian Valeza",
 					"width": 1700,
-					"height": 1243
+					"height": 1243,
+					"title": "From Left to Right: {@creature Groundling Slayer|AU}, {@creature Groundling Grunt|AU}, {@creature Groundling Stalker|AU}",
+					"credit": "Brian Valeza"
 				}
 			]
 		},
@@ -479,6 +479,7 @@
 								"Now make the following changes to the stat block:",
 								{
 									"type": "list",
+									"style": "list-hang-notitle",
 									"items": [
 										{
 											"type": "item",
@@ -495,8 +496,7 @@
 											"name": "Spell Mimicry",
 											"entry": "Replace the effect of Spell Mimicry with the effect of the chosen spell. If that spell requires a saving throw, use the spell save DC from Spell Mimicry. If the spell involves an attack roll, use the attack bonus from the living spell's Magical Strike."
 										}
-									],
-									"style": "list-hang-notitle"
+									]
 								},
 								"For example, if you turn {@spell Fireball|XPHB} (a level 3 spell) into a living spell, customize the {@creature Living Vitriolic Sphere|AU} stat block. The living fireball has {@variantrule Immunity|XPHB} to Fire damage instead of Acid damage, deals Fire damage with its Magical Strike, and replicates {@i Fireball} with Spell Mimicry."
 							]
@@ -532,10 +532,10 @@
 						"type": "internal",
 						"path": "bestiary/AU/Living Thunderwave.webp"
 					},
-					"title": "{@creature Living Thunderwave|AU}",
-					"credit": "Hendry Iwanaga",
 					"width": 1700,
-					"height": 1005
+					"height": 1005,
+					"title": "{@creature Living Thunderwave|AU}",
+					"credit": "Hendry Iwanaga"
 				}
 			]
 		},
@@ -612,9 +612,9 @@
 						"type": "internal",
 						"path": "bestiary/AU/Spellguard.webp"
 					},
-					"credit": "Brian Valeza",
 					"width": 850,
-					"height": 1072
+					"height": 1072,
+					"credit": "Brian Valeza"
 				}
 			]
 		},
@@ -638,9 +638,9 @@
 						"type": "internal",
 						"path": "bestiary/AU/Taisus.webp"
 					},
-					"credit": "Michele Giorgi",
 					"width": 850,
-					"height": 1059
+					"height": 1059,
+					"credit": "Michele Giorgi"
 				}
 			]
 		},
@@ -680,6 +680,7 @@
 						"After abandoning his quest to free Tharizdun, {@creature Venger|AU} sought to use several {@item Orb of Dragonkind|XDMG|Orbs of Dragonkind} to control Tiamat. This futile endeavor earned Venger Tiamat's lifelong enmity. {@creature Venger|AU} now plots endlessly to destroy or subjugate Tiamat, among other nefarious designs. Roll on or choose a result from the Venger's Schemes table to inspire Venger's next power play.",
 						{
 							"type": "table",
+							"caption": "Venger's Schemes",
 							"colLabels": [
 								"1d6",
 								"Venger Plots To..."
@@ -713,8 +714,7 @@
 									"6",
 									"Find an artifact called the Box of Balefire and keep it away from other villains; {@creature Venger|AU} fears it could unleash Tharizdun."
 								]
-							],
-							"caption": "Venger's Schemes"
+							]
 						}
 					]
 				},
@@ -729,6 +729,7 @@
 								"Venger's presence fouls the regions his lairs inhabit, creating the following effects:",
 								{
 									"type": "list",
+									"style": "list-hang-notitle",
 									"items": [
 										{
 											"type": "item",
@@ -744,8 +745,7 @@
 												"Abyssal whispers plague visitors' dreams. Whenever a creature other than {@creature Venger|AU} or his allies finishes a {@variantrule Long Rest|XPHB} within 1 mile of a lair, it must succeed on a {@dc 15} Constitution saving throw or gain 1 {@condition Exhaustion|XPHB} level."
 											]
 										}
-									],
-									"style": "list-hang-notitle"
+									]
 								},
 								"If Venger dies or moves a lair elsewhere, these effects end immediately."
 							]
@@ -760,9 +760,9 @@
 						"type": "internal",
 						"path": "bestiary/AU/Venger.webp"
 					},
-					"credit": "Swatches Studio",
 					"width": 850,
-					"height": 1242
+					"height": 1242,
+					"credit": "Swatches Studio"
 				}
 			]
 		}

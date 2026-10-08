@@ -1893,6 +1893,7 @@
 			"source": "AU",
 			"className": "魔契师",
 			"classSource": "XPHB",
+			"page": 13,
 			"edition": "one",
 			"additionalSpells": [
 				{
@@ -1996,7 +1997,7 @@
 				"契灵宗主|魔契师|XPHB|契灵|AU|3|AU",
 				"契灵神威|魔契师|XPHB|契灵|AU|6|AU",
 				"契灵复苏|魔契师|XPHB|契灵|AU|10|AU",
-				"拟态生命|魔契师|XPHB|契灵|AU|14|AU"
+				"生命的假象|魔契师|XPHB|契灵|AU|14|AU"
 			],
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -3931,7 +3932,7 @@
 				{
 					"type": "list",
 					"items": [
-						"你获得等于{@dice 1d10}+你的魔契师等级的临时生命。",
+						"你获得等于{@dice 1d10} +你的魔契师等级的临时生命。",
 						"在你的每个回合中一次，当你攻击检定命中一个生物时，你可以强迫其进行一次感知豁免。若失败，目标直到你的下一个回合结束陷入对你的{@condition 恐慌}。",
 						"你对{@condition 恐慌}状态免疫。"
 					]
@@ -4301,6 +4302,7 @@
 			"ENG_name": "Vestige Patron",
 			"name": "契灵宗主",
 			"source": "AU",
+			"page": 13,
 			"className": "魔契师",
 			"classSource": "XPHB",
 			"subclassShortName": "契灵",
@@ -4323,6 +4325,7 @@
 			"ENG_name": "Vestige Companion",
 			"name": "契灵伙伴",
 			"source": "AU",
+			"page": 13,
 			"className": "魔契师",
 			"classSource": "XPHB",
 			"subclassShortName": "契灵",
@@ -4335,6 +4338,7 @@
 					"ENG_name": "The Vestige in Combat",
 					"name": "战斗中的契灵",
 					"type": "entries",
+					"page": 13,
 					"entries": [
 						"在战斗中，契灵在你的回合内行动。其可以自主移动或使用其{@variantrule 反应|XPHB}，但除非你以一个{@variantrule 附赠动作|XPHB}指挥它执行其数据卡中的动作或其他动作，否则其只会执行{@action 回避|XPHB}动作。当你执行{@action 攻击|XPHB}动作时，你也可以放弃其中一次攻击，转而指挥契灵执行契灵打击动作。如果你陷入{@condition 失能|XPHB}状态，契灵将自行行动，且不再受限于仅能执行{@action 回避|XPHB}动作。"
 					]
@@ -4343,6 +4347,7 @@
 					"ENG_name": "Disappearance of the Vestige",
 					"name": "契灵的消逝",
 					"type": "entries",
+					"page": 13,
 					"entries": [
 						"当契灵的{@variantrule 生命值|XPHB}降至0时，它会消失。你可以花费1分钟进行某种魔法仪式来再次显化契灵；它会以{@variantrule 生命值|XPHB}全满的状态重新出现在你5尺范围内的一处未占据空间。你可以以一个{@action 魔法|XPHB}动作将契灵暂时遣散至一处口袋维度。在契灵被暂时遣散期间，你可以以一个{@action 魔法|XPHB}动作使其重新出现在你30尺范围内的一处未占据空间。无论契灵是因{@variantrule 生命值|XPHB}降至0，还是因进入口袋维度而消失，它都会将其穿戴或携带的任何物品留在其原本占据的空间内。",
 						{
@@ -4351,6 +4356,7 @@
 							"type": "statblock",
 							"tag": "creature",
 							"source": "AU",
+							"page": 14,
 							"style": "narrow"
 						},
 						"每当你完成一次{@variantrule 长休|XPHB}后，你能够以新的形态召唤契灵，它出现在你5尺范围内的一处未占据空间。由你选择它的外观，并决定它是天族、邪魔还是亡灵。如果契灵已通过此特性显化，则其形态将转变为新的样子。"
@@ -4362,6 +4368,7 @@
 			"ENG_name": "Vestige Spells",
 			"name": "契灵法术",
 			"source": "AU",
+			"page": 14,
 			"className": "魔契师",
 			"classSource": "XPHB",
 			"subclassShortName": "契灵",
@@ -4377,6 +4384,7 @@
 			"ENG_name": "Vestige Power",
 			"name": "契灵神威",
 			"source": "AU",
+			"page": 14,
 			"className": "魔契师",
 			"classSource": "XPHB",
 			"subclassShortName": "契灵",
@@ -4391,6 +4399,7 @@
 			"ENG_name": "Vestige Recovery",
 			"name": "契灵复苏",
 			"source": "AU",
+			"page": 14,
 			"className": "魔契师",
 			"classSource": "XPHB",
 			"subclassShortName": "契灵",
@@ -4403,8 +4412,9 @@
 		},
 		{
 			"ENG_name": "Semblance of Life",
-			"name": "拟态生命",
+			"name": "生命的假象",
 			"source": "AU",
+			"page": 14,
 			"className": "魔契师",
 			"classSource": "XPHB",
 			"subclassShortName": "契灵",

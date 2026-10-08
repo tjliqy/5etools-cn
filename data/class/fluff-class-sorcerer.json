@@ -14,6 +14,8 @@
 					"ENG_name": "Sorcerer",
 					"name": "术士",
 					"type": "section",
+					"source": "PHB",
+					"page": 99,
 					"entries": [
 						"人类金色的双眼不断闪耀着光芒，抬手间便放出其经脉中燃烧的龙炎。炼狱的狂怒瞬间将敌人吞没，而她则生出一双肉翼一飞冲天。",
 						"咒术之风扬起半精灵满头长发。他张开双手抬头后仰，并随着体内透出的魔法波动漂浮到空中。魔力穿过其身躯，化作一片威力无穷的爆裂闪电喷涌而出。",
@@ -55,12 +57,12 @@
 								}
 							]
 						}
-					],
-					"page": 99,
-					"source": "PHB"
+					]
 				},
 				{
 					"type": "section",
+					"source": "XGE",
+					"page": 48,
 					"entries": [
 						{
 							"type": "quote",
@@ -388,9 +390,7 @@
 								}
 							]
 						}
-					],
-					"page": 48,
-					"source": "XGE"
+					]
 				}
 			],
 			"images": [
@@ -426,14 +426,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "一位充满天赋魔法的炫目法师",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Sorcerer.webp"
 					},
-					"credit": "Evyn Fong",
 					"width": 1700,
-					"height": 2076
+					"height": 2076,
+					"title": "一位充满天赋魔法的炫目法师",
+					"credit": "Evyn Fong"
 				},
 				{
 					"type": "image",
@@ -441,10 +441,10 @@
 						"type": "internal",
 						"path": "classes/XPHB/112-04-027.delina.webp"
 					},
-					"title": "术士戴琳娜（Delina）操纵狂野魔法，创造出难以预料的奇迹",
-					"credit": "Wisnu Tan",
 					"width": 1843,
-					"height": 1440
+					"height": 1440,
+					"title": "术士戴琳娜（Delina）操纵狂野魔法，创造出难以预料的奇迹",
+					"credit": "Wisnu Tan"
 				}
 			]
 		}
@@ -631,14 +631,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "畸变术法子职",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Aberrant Sorcerer.webp"
 					},
-					"credit": "Ignatius Budi",
 					"width": 850,
-					"height": 2185
+					"height": 2185,
+					"title": "畸变术法子职",
+					"credit": "Ignatius Budi"
 				}
 			]
 		},
@@ -652,14 +652,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "时械术法子职",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Clockwork Sorcerer.webp"
 					},
-					"credit": "Olivier Bernard",
 					"width": 850,
-					"height": 2175
+					"height": 2175,
+					"title": "时械术法子职",
+					"credit": "Olivier Bernard"
 				}
 			]
 		},
@@ -673,14 +673,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "龙族术法子职",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Draconic Sorcerer.webp"
 					},
-					"credit": "Lauren Walsh",
 					"width": 850,
-					"height": 2146
+					"height": 2146,
+					"title": "龙族术法子职",
+					"credit": "Lauren Walsh"
 				}
 			]
 		},
@@ -694,14 +694,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "狂野术法子职",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Wild Magic Sorcerer.webp"
 					},
-					"credit": "Ekaterina Burmark",
 					"width": 850,
-					"height": 1891
+					"height": 1891,
+					"title": "狂野术法子职",
+					"credit": "Ekaterina Burmark"
 				}
 			]
 		},
@@ -719,9 +719,9 @@
 						"type": "internal",
 						"path": "classes/FRHoF/Spellfire Sorcerer.webp"
 					},
-					"credit": "Ioannis Fiore",
 					"width": 850,
-					"height": 2561
+					"height": 2561,
+					"credit": "Ioannis Fiore"
 				},
 				{
 					"type": "image",
@@ -729,10 +729,10 @@
 						"type": "internal",
 						"path": "classes/FRHoF/Spellfire Sorcerer 2.webp"
 					},
-					"title": "咒火具有多种形态",
-					"credit": "Taras Susak",
 					"width": 1700,
-					"height": 1101
+					"height": 1101,
+					"title": "咒火具有多种形态",
+					"credit": "Taras Susak"
 				}
 			]
 		},
@@ -750,10 +750,10 @@
 						"type": "internal",
 						"path": "classes/RHW/Shadow Sorcery Sorcerer.webp"
 					},
-					"title": "幽影术法术士",
-					"credit": "Ignatius Budi",
 					"width": 850,
-					"height": 1221
+					"height": 1221,
+					"title": "幽影术法术士",
+					"credit": "Ignatius Budi"
 				}
 			]
 		}

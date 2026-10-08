@@ -9,6 +9,7 @@
 					"ENG_name": "Artificer",
 					"name": "奇械师",
 					"type": "section",
+					"source": "TCE",
 					"entries": [
 						"身为发明大师的奇械师能够通过巧思和魔法让物品发挥出非凡的性能。在他们心中，魔法是一个可以被用于驱动发明与法术，等待着被解码和操纵的复杂系统。在接下来的几节中，你将能找到扮演这样的一名发明家所需要的一切。奇械师通过各种工具来引导他们的奥法能量。在施法时，奇械师可能会使用炼金工具来调制出一剂神奇的灵药，可能会使用书法家工具在盟友的盔甲上绘制一个魔法印记，也可能会使用修补工具来制作一个临时的咒符。奇械师驱使的魔法和他们的工具与天赋息息相关，其他角色很少能像奇械师那样创造出目前最适用的工具。",
 						{
@@ -73,13 +74,14 @@
 								}
 							]
 						}
-					],
-					"source": "TCE"
+					]
 				},
 				{
 					"ENG_name": "Artificer",
 					"name": "奇械师",
 					"type": "section",
+					"source": "ERLW",
+					"page": 54,
 					"entries": [
 						"奇械师是最强的发明家，能够让普通的日常物品变成神奇的魔法物品。在他们心中，魔法是一个等待着被解码和操纵的复杂系统。奇械师使用工具来引导奥术能量，制造临时和永久的魔法物品。在施法时，奇械师可能会使用{@item 炼金工具|PHB}来调制出一剂神奇的灵药，可能会使用{@item 书法工具|PHB}在盟友的盔甲上绘制一个魔法印记，也可能会使用{@item 修补工具|PHB}来制作一个临时的咒符。奇械师驱使的魔法和他们的工具与天赋息息相关。",
 						{
@@ -156,9 +158,7 @@
 								}
 							]
 						}
-					],
-					"source": "ERLW",
-					"page": 54
+					]
 				}
 			],
 			"images": [
@@ -195,9 +195,9 @@
 						"type": "internal",
 						"path": "classes/EFA/Artificer.webp"
 					},
-					"credit": "Michael Broussard",
 					"width": 1700,
-					"height": 2160
+					"height": 2160,
+					"credit": "Michael Broussard"
 				}
 			]
 		}
@@ -293,9 +293,9 @@
 						"type": "internal",
 						"path": "classes/EFA/Alchemist Artificer.webp"
 					},
-					"credit": "John Grello",
 					"width": 850,
-					"height": 2087
+					"height": 2087,
+					"credit": "John Grello"
 				}
 			]
 		},
@@ -313,9 +313,9 @@
 						"type": "internal",
 						"path": "classes/EFA/Armorer Artificer.webp"
 					},
-					"credit": "John Grello",
 					"width": 850,
-					"height": 1866
+					"height": 1866,
+					"credit": "John Grello"
 				}
 			]
 		},
@@ -333,9 +333,9 @@
 						"type": "internal",
 						"path": "classes/EFA/Artillerist Artificer.webp"
 					},
-					"credit": "John Thacker",
 					"width": 850,
-					"height": 1936
+					"height": 1936,
+					"credit": "John Thacker"
 				}
 			]
 		},
@@ -353,9 +353,9 @@
 						"type": "internal",
 						"path": "classes/EFA/Battle Smith Artificer.webp"
 					},
-					"credit": "Michael Broussard",
 					"width": 850,
-					"height": 2009
+					"height": 2009,
+					"credit": "Michael Broussard"
 				}
 			]
 		},
@@ -373,9 +373,9 @@
 						"type": "internal",
 						"path": "classes/EFA/Cartographer Artificer.webp"
 					},
-					"credit": "Daarken",
 					"width": 850,
-					"height": 1998
+					"height": 1998,
+					"credit": "Daarken"
 				}
 			]
 		},
@@ -393,10 +393,10 @@
 						"type": "internal",
 						"path": "classes/RHW/Reanimator Artificer.webp"
 					},
-					"title": "苏生师奇械师",
-					"credit": "Ignatius Budi",
 					"width": 850,
-					"height": 1762
+					"height": 1762,
+					"title": "苏生师奇械师",
+					"credit": "Ignatius Budi"
 				}
 			]
 		}

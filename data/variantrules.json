@@ -983,7 +983,7 @@
 								"path": "statgen.html",
 								"hash": "pointbuy"
 							},
-							"text": "购点计算器。"
+							"entry": "购点计算器。"
 						}
 					]
 				}
@@ -3655,13 +3655,13 @@
 								{
 									"type": "table",
 									"caption": "勘探发现",
-									"colStyles": [
-										"col-2 text-center",
-										"col-10"
-									],
 									"colLabels": [
 										"检定点数总和",
 										"发现"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-10"
 									],
 									"rows": [
 										[
@@ -3840,13 +3840,13 @@
 								{
 									"type": "table",
 									"caption": "特许经营重组",
-									"colStyles": [
-										"col-2 text-center",
-										"col-10"
-									],
 									"colLabels": [
 										"成功次数",
 										"增益"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-10"
 									],
 									"rows": [
 										[
@@ -3950,13 +3950,13 @@
 								{
 									"type": "table",
 									"caption": "总部修改",
-									"colStyles": [
-										"col-2 text-center",
-										"col-10"
-									],
 									"colLabels": [
 										"成功次数",
 										"增益"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-10"
 									],
 									"rows": [
 										[
@@ -4067,21 +4067,21 @@
 										"type": "internal",
 										"path": "book/AI/022-02-21.webp"
 									},
-									"title": "营销的魔法",
 									"width": 792,
 									"height": 1000,
+									"title": "营销的魔法",
 									"credit": "Aviv Or"
 								},
 								{
 									"type": "table",
 									"caption": "营销",
-									"colStyles": [
-										"col-2 text-center",
-										"col-10"
-									],
 									"colLabels": [
 										"成功次数",
 										"增益"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-10"
 									],
 									"rows": [
 										[
@@ -4196,13 +4196,13 @@
 								{
 									"type": "table",
 									"caption": "慈善企业",
-									"colStyles": [
-										"col-2 text-center",
-										"col-10"
-									],
 									"colLabels": [
 										"检定点数总和",
 										"结果"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-10"
 									],
 									"rows": [
 										[
@@ -4476,13 +4476,13 @@
 								{
 									"type": "table",
 									"caption": "闲谈",
-									"colStyles": [
-										"col-2 text-center",
-										"col-10"
-									],
 									"colLabels": [
 										"检定点数总和",
 										"结果"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-10"
 									],
 									"rows": [
 										[
@@ -4593,13 +4593,13 @@
 								{
 									"type": "table",
 									"caption": "技术检查",
-									"colStyles": [
-										"col-2 text-center",
-										"col-10"
-									],
 									"colLabels": [
 										"检定点数总和",
 										"结果"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-10"
 									],
 									"rows": [
 										[
@@ -4693,9 +4693,9 @@
 								"type": "internal",
 								"path": "book/AI/023-02-22.webp"
 							},
-							"title": "一项合适的不正当商业行为",
 							"width": 792,
 							"height": 1000,
+							"title": "一项合适的不正当商业行为",
 							"credit": "Aviv Or"
 						},
 						{
@@ -4726,13 +4726,13 @@
 								{
 									"type": "table",
 									"caption": "不正当商业行为",
-									"colStyles": [
-										"col-2 text-center",
-										"col-10"
-									],
 									"colLabels": [
 										"成功次数",
 										"增益"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-10"
 									],
 									"rows": [
 										[
@@ -4841,13 +4841,13 @@
 								{
 									"type": "table",
 									"caption": "团队建设",
-									"colStyles": [
-										"col-2 text-center",
-										"col-10"
-									],
 									"colLabels": [
 										"检定点数总和",
 										"增益"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-10"
 									],
 									"rows": [
 										[
@@ -6150,7 +6150,7 @@
 							"type": "list",
 							"columns": 3,
 							"items": [
-								"{@trap 死亡之舞|VRGR}",
+								"{@trap 骷髅之舞|VRGR}",
 								"{@trap 无面恶意|VRGR}",
 								"{@trap 深渊天空之国邪神像|VRGR}",
 								"{@trap 恐怖记忆|VRGR}"
@@ -9273,13 +9273,13 @@
 								{
 									"type": "table",
 									"caption": "物件和水压",
-									"colStyles": [
-										"col-6",
-										"col-6"
-									],
 									"colLabels": [
 										"材质",
 										"摧毁深度"
+									],
+									"colStyles": [
+										"col-6",
+										"col-6"
 									],
 									"rows": [
 										[
@@ -9384,13 +9384,13 @@
 								{
 									"type": "table",
 									"caption": "雾的遮蔽程度",
-									"colStyles": [
-										"col-6",
-										"col-6"
-									],
 									"colLabels": [
 										"浓度",
 										"重度遮蔽距离"
+									],
+									"colStyles": [
+										"col-6",
+										"col-6"
 									],
 									"rows": [
 										[
@@ -9605,13 +9605,13 @@
 								{
 									"type": "table",
 									"caption": "沙洲DC值",
-									"colStyles": [
-										"text-center col-2",
-										"col-10"
-									],
 									"colLabels": [
 										"DC",
 										"描述"
+									],
+									"colStyles": [
+										"text-center col-2",
+										"col-10"
 									],
 									"rows": [
 										[
@@ -9712,17 +9712,17 @@
 						{
 							"type": "table",
 							"caption": "漩涡等级",
-							"colStyles": [
-								"text-center col-2-1",
-								"col-3-3",
-								"col-3-3",
-								"col-3-3 text-center"
-							],
 							"colLabels": [
 								"等级",
 								"直径",
 								"速度",
 								"DC"
+							],
+							"colStyles": [
+								"text-center col-2-1",
+								"col-3-3",
+								"col-3-3",
+								"col-3-3 text-center"
 							],
 							"rows": [
 								[
@@ -9780,13 +9780,13 @@
 								{
 									"type": "table",
 									"caption": "漩涡检定",
-									"colStyles": [
-										"col-6",
-										"col-6"
-									],
 									"colLabels": [
 										"军官",
 										"检定"
+									],
+									"colStyles": [
+										"col-6",
+										"col-6"
 									],
 									"rows": [
 										[
@@ -9810,13 +9810,13 @@
 								{
 									"type": "table",
 									"caption": "漩涡检定结果",
-									"colStyles": [
-										"col-6",
-										"col-6"
-									],
 									"colLabels": [
 										"结果",
 										"效应"
+									],
+									"colStyles": [
+										"col-6",
+										"col-6"
 									],
 									"rows": [
 										[
@@ -12522,13 +12522,13 @@
 						{
 							"type": "table",
 							"caption": "撞击伤害",
-							"colStyles": [
-								"col-6",
-								"col-6"
-							],
 							"colLabels": [
 								"体型",
 								"钝击伤害"
+							],
+							"colStyles": [
+								"col-6",
+								"col-6"
 							],
 							"rows": [
 								[
@@ -12681,15 +12681,15 @@
 						{
 							"type": "table",
 							"caption": "高于1级的协力者",
-							"colStyles": [
-								"col-1 text-center",
-								"col-2 text-center",
-								"col-9"
-							],
 							"colLabels": [
 								"等级",
 								"生命值",
 								"新特性"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-2 text-center",
+								"col-9"
 							],
 							"rows": [
 								[
@@ -13983,9 +13983,9 @@
 										"type": "internal",
 										"path": "variantrules/VRGR/111-04-007.for-survivors.webp"
 									},
-									"title": "对于生还者而言，任何敌人都可能成为其恐怖冒险的焦点",
 									"width": 850,
 									"height": 1560,
+									"title": "对于生还者而言，任何敌人都可能成为其恐怖冒险的焦点",
 									"credit": "Dawn Carlos"
 								},
 								"资源减少导致恐慌。当一个团队耗尽了他们的生命值、法术、食物或其他关键资源时，紧张和恐惧便开始蔓延。但是高等级角色肯定拥有相当数量的资源。那么通过生还者来进行一个冒险，你就能取回他们早期冒险中体验到的紧张感，从而鼓励玩家使用他们的智慧并做出强大角色可以避免的绝命选择。"
@@ -14083,9 +14083,9 @@
 										"type": "internal",
 										"path": "variantrules/VRGR/112-04-008.survivors.webp"
 									},
-									"title": "生还者是陷入恐怖情境的普通人",
 									"width": 850,
 									"height": 1324,
+									"title": "生还者是陷入恐怖情境的普通人",
 									"credit": "Nikki Dawes"
 								}
 							]
@@ -16339,13 +16339,13 @@
 								{
 									"type": "table",
 									"caption": "水手冲突 DC",
-									"colStyles": [
-										"text-center col-2",
-										"col-10"
-									],
 									"colLabels": [
 										"DC",
 										"描述"
+									],
+									"colStyles": [
+										"text-center col-2",
+										"col-10"
 									],
 									"rows": [
 										[
@@ -16369,13 +16369,13 @@
 								{
 									"type": "table",
 									"caption": "水手冲突检定",
-									"colStyles": [
-										"col-6",
-										"col-6"
-									],
 									"colLabels": [
 										"军官",
 										"检定"
+									],
+									"colStyles": [
+										"col-6",
+										"col-6"
 									],
 									"rows": [
 										[
@@ -16395,13 +16395,13 @@
 								{
 									"type": "table",
 									"caption": "水手冲突检定结果",
-									"colStyles": [
-										"col-6",
-										"col-6"
-									],
 									"colLabels": [
 										"结果",
 										"效应"
+									],
+									"colStyles": [
+										"col-6",
+										"col-6"
 									],
 									"rows": [
 										[
@@ -16435,13 +16435,13 @@
 								{
 									"type": "table",
 									"caption": "火灾 DC",
-									"colStyles": [
-										"text-center col-2",
-										"col-10"
-									],
 									"colLabels": [
 										"DC",
 										"描述"
+									],
+									"colStyles": [
+										"text-center col-2",
+										"col-10"
 									],
 									"rows": [
 										[
@@ -16465,13 +16465,13 @@
 								{
 									"type": "table",
 									"caption": "火灾检定",
-									"colStyles": [
-										"col-6",
-										"col-6"
-									],
 									"colLabels": [
 										"军官",
 										"检定"
+									],
+									"colStyles": [
+										"col-6",
+										"col-6"
 									],
 									"rows": [
 										[
@@ -16495,13 +16495,13 @@
 								{
 									"type": "table",
 									"caption": "火灾检定结果",
-									"colStyles": [
-										"col-6",
-										"col-6"
-									],
 									"colLabels": [
 										"结果",
 										"效应"
+									],
+									"colStyles": [
+										"col-6",
+										"col-6"
 									],
 									"rows": [
 										[
@@ -16535,13 +16535,13 @@
 								{
 									"type": "table",
 									"caption": "雾气 DC",
-									"colStyles": [
-										"text-center col-2",
-										"col-10"
-									],
 									"colLabels": [
 										"DC",
 										"描述"
+									],
+									"colStyles": [
+										"text-center col-2",
+										"col-10"
 									],
 									"rows": [
 										[
@@ -16565,13 +16565,13 @@
 								{
 									"type": "table",
 									"caption": "雾气检定",
-									"colStyles": [
-										"col-6",
-										"col-6"
-									],
 									"colLabels": [
 										"军官",
 										"检定"
+									],
+									"colStyles": [
+										"col-6",
+										"col-6"
 									],
 									"rows": [
 										[
@@ -16587,13 +16587,13 @@
 								{
 									"type": "table",
 									"caption": "雾气检定结果",
-									"colStyles": [
-										"col-6",
-										"col-6"
-									],
 									"colLabels": [
 										"结果",
 										"效应"
+									],
+									"colStyles": [
+										"col-6",
+										"col-6"
 									],
 									"rows": [
 										[
@@ -16627,13 +16627,13 @@
 								{
 									"type": "table",
 									"caption": "感染DC",
-									"colStyles": [
-										"text-center col-2",
-										"col-10"
-									],
 									"colLabels": [
 										"DC",
 										"描述"
+									],
+									"colStyles": [
+										"text-center col-2",
+										"col-10"
 									],
 									"rows": [
 										[
@@ -16657,13 +16657,13 @@
 								{
 									"type": "table",
 									"caption": "感染检定",
-									"colStyles": [
-										"col-6",
-										"col-6"
-									],
 									"colLabels": [
 										"军官",
 										"检定"
+									],
+									"colStyles": [
+										"col-6",
+										"col-6"
 									],
 									"rows": [
 										[
@@ -16687,13 +16687,13 @@
 								{
 									"type": "table",
 									"caption": "感染检定结果",
-									"colStyles": [
-										"col-6",
-										"col-6"
-									],
 									"colLabels": [
 										"结果",
 										"效应"
+									],
+									"colStyles": [
+										"col-6",
+										"col-6"
 									],
 									"rows": [
 										[
@@ -16727,13 +16727,13 @@
 								{
 									"type": "table",
 									"caption": "风暴DC",
-									"colStyles": [
-										"text-center col-2",
-										"col-10"
-									],
 									"colLabels": [
 										"DC",
 										"描述"
+									],
+									"colStyles": [
+										"text-center col-2",
+										"col-10"
 									],
 									"rows": [
 										[
@@ -16757,13 +16757,13 @@
 								{
 									"type": "table",
 									"caption": "风暴检定",
-									"colStyles": [
-										"col-6",
-										"col-6"
-									],
 									"colLabels": [
 										"军官",
 										"检定"
+									],
+									"colStyles": [
+										"col-6",
+										"col-6"
 									],
 									"rows": [
 										[
@@ -16787,13 +16787,13 @@
 								{
 									"type": "table",
 									"caption": "风暴检定结果",
-									"colStyles": [
-										"col-6",
-										"col-6"
-									],
 									"colLabels": [
 										"结果",
 										"效应"
+									],
+									"colStyles": [
+										"col-6",
+										"col-6"
 									],
 									"rows": [
 										[

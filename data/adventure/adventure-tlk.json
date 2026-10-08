@@ -1,383 +1,393 @@
 {
-	"data": [
+	"adventureData": [
 		{
-			"ENG_name": "Note from the Author",
-			"name": "作者的便笺",
-			"type": "section",
-			"page": 2,
-			"entries": [
-				"如果说这是一个结构松散的冒险，可能在某种程度上有些夸张。然而，某个儿童的守护神请求我提供我的冒险笔记的pdf版本。所以我们在这里。我使用了这个冒险的某个版本或另一个版本来向人们介绍D&D体验，因为它包含了一个好游戏的所有要素，而且几乎不需要什么准备时间。冒险结构的创建方式允许根据需要进行或多或少的战斗。遭遇可以更改以适应1级战役，并且有一点想象力，我相信人们可以愉快地将其修改为高等级队伍。一些描绘古龙和新石器时代的漂亮画作可能是必要的。",
-				"玩得开心。根据你的需要，随意更改、添加或移除怪物、物品和角色。",
-				"特别感谢Extra Life慈善机构和龙与地下城团队的杰出捐助者们。在这个灵吸怪统治的世界中，我们可以一起做些好事。",
+			"id": "TLK",
+			"source": "TLK",
+			"data": [
 				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "adventure/TLK/001.webp"
-					},
-					"width": 1165,
-					"height": 1190
-				},
-				{
-					"ENG_name": "Wizard of Weirding",
-					"name": "怪异法师",
+					"ENG_name": "Note from the Author",
+					"name": "作者的便笺",
 					"type": "section",
-					"page": 3,
+					"id": "000",
+					"page": 2,
 					"entries": [
+						"如果说这是一个结构松散的冒险，可能在某种程度上有些夸张。然而，某个儿童的守护神请求我提供我的冒险笔记的pdf版本。所以我们在这里。我使用了这个冒险的某个版本或另一个版本来向人们介绍D&D体验，因为它包含了一个好游戏的所有要素，而且几乎不需要什么准备时间。冒险结构的创建方式允许根据需要进行或多或少的战斗。遭遇可以更改以适应1级战役，并且有一点想象力，我相信人们可以愉快地将其修改为高等级队伍。一些描绘古龙和新石器时代的漂亮画作可能是必要的。",
+						"玩得开心。根据你的需要，随意更改、添加或移除怪物、物品和角色。",
+						"特别感谢Extra Life慈善机构和龙与地下城团队的杰出捐助者们。在这个灵吸怪统治的世界中，我们可以一起做些好事。",
 						{
-							"type": "entries",
-							"entries": [
-								{
-									"ENG_name": "Mind Flayer Alhoon",
-									"name": "灵吸怪阿尔胡恩",
-									"type": "entries",
-									"page": 3,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "adventure/TLK/002.webp"
-											},
-											"width": 723,
-											"height": 807
-										},
-										"法师威尔丁是一个伪装成人类的灵吸怪阿尔胡恩。它使用变形术使自己看起来像一个名叫威尔丁的男性人类法师。很久以前，它离开了蜂巢，通过魔法寻找力量和不朽。为了融入费伦的普通人群，阿尔胡恩娶了一个人类女性，并收养了她的孩子作为自己的。随着时间的推移，阿尔胡恩被他的妻子发现，并被迫吃掉她的大脑。目前，阿尔胡恩经营着威尔丁前哨站，他在那里开采当地山脉的矿物以资助他的研究。法师威尔丁将威尔丁的人们作为他心灵实验的对象。",
-										"法师韦尔丁将试图捕获新的有趣的冒险者，要么吞噬他们的大脑，要么在他们身上进行实验。如果遭到暴力对抗，法师韦尔丁将攻击队伍，并利用前哨站被精神控制的人口阻止任何人逃跑。",
-										"{@creature 慑心魔|VGM|灵吸怪阿尔胡恩}的属性数据块可以在《瓦罗的怪物指南》中找到。"
-									],
-									"id": "003"
-								}
-							],
-							"id": "002"
-						}
-					],
-					"id": "001"
-				},
-				{
-					"ENG_name": "Mez Kara",
-					"name": "梅兹·卡拉",
-					"type": "section",
-					"page": 3,
-					"entries": [
-						{
-							"type": "entries",
-							"entries": [
-								{
-									"ENG_name": "Sun Elf Apprentice",
-									"name": "太阳精灵学徒",
-									"type": "entries",
-									"page": 3,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "adventure/TLK/003.webp"
-											},
-											"width": 671,
-											"height": 748
-										},
-										"梅兹·卡拉是一名精灵族的{@creature 学徒法师|VGM|学徒}，师从法师威尔丁。实际上，她是他心灵控制的奴隶之一。她不知道法师是一个阿尔胡恩，但她知道他赋予了她力量。",
-										"她心甘情愿地为他服务，并且总是在寻找取悦他的方法。她会找到强大的冒险者，对他们非常感兴趣，并说服他们留在庄园里，亲自与怪异的法师见面。",
-										"学徒的属性块可以在《瓦罗的怪物指南》中找到。此外，梅兹·卡拉在1级时可以施放友谊和迷人人类。"
-									],
-									"id": "006"
-								}
-							],
-							"id": "005"
-						}
-					],
-					"id": "004"
-				},
-				{
-					"ENG_name": "Gregor Forskog",
-					"name": "格雷戈尔·福斯科格",
-					"type": "section",
-					"page": 4,
-					"entries": [
-						{
-							"type": "entries",
-							"entries": [
-								{
-									"ENG_name": "Thug and Bookie",
-									"name": "暴徒和赌博经纪人",
-									"type": "entries",
-									"page": 4,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "adventure/TLK/005.webp"
-											},
-											"width": 649,
-											"height": 698
-										},
-										"格雷戈尔是一名矿工兼赌博经纪人。他和他的团伙从当地人那里接受几乎所有事情的赌注。目前，他正准备通过将格纳特·格尼姆卡普的手指喂给他的蜥蜴人暴徒，来给不还债的格纳特·格尼姆卡普一个教训。",
-										"格雷戈尔的团伙由他自己、一个名叫Tooth的男性蜥蜴人和名叫Cat Keeper的女性歌利亚野蛮人组成。Tooth会被美味的肉食分心。Cat Keeper对猫有弱点。除此之外，他们是会做格雷戈尔要求的任何事情的粗暴之人。格雷戈尔梦想成为像散塔林会这样的正规团伙的一部分。",
-										"使用《怪物手册》中找到的{@creature 匪帮队长}和{@creature 匪徒}的统计数据来描述格雷戈尔和他的帮派。"
-									],
-									"id": "009"
-								}
-							],
-							"id": "008"
-						}
-					],
-					"id": "007"
-				},
-				{
-					"ENG_name": "Gnator Gnimmcap",
-					"name": "格纳托·格尼姆帽",
-					"type": "section",
-					"page": 4,
-					"entries": [
-						{
-							"type": "entries",
-							"entries": [
-								{
-									"ENG_name": "Grounds Keeper",
-									"name": "场地管理员",
-									"type": "entries",
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "adventure/TLK/010.webp"
-											},
-											"width": 442,
-											"height": 534
-										},
-										"格纳托·格尼姆帽是怪异庄园的园丁。为了逃避怪异法师实验带来的噩梦，他沉迷于饮酒和赌博。他欠了赌注经纪人格雷戈尔·福斯科格一大笔债务，并且已经拖欠了还款。",
-										"甘特·格尼姆卡普告诉考克林·琼斯如何通过地窖进入大厦，以换取30金币（他现在已经赌博输光了）。作为帮助解决他的赌博债务的交换，甘特将乐意帮助冒险者，只要这不会使他置身危险之中。"
-									],
-									"id": "00c"
-								}
-							],
-							"id": "00b"
-						}
-					],
-					"id": "00a"
-				},
-				{
-					"ENG_name": "Tonk Hammertoes",
-					"name": "汤克·汉默托斯",
-					"type": "section",
-					"page": 4,
-					"entries": [
-						{
-							"type": "entries",
-							"entries": [
-								{
-									"ENG_name": "Bartender",
-									"name": "酒保",
-									"type": "entries",
-									"page": 4,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "adventure/TLK/004.webp"
-											},
-											"width": 604,
-											"height": 555
-										},
-										"Tonk Hammertoes 是 Bucket's Bottom 的酒保兼老板。Tonk 被实验得有点过头了。他言语不多，智力也有所欠缺。他会很乐意提供麦芽酒，但要从他那里得到有用的信息却很困难。他见过一个天狗，但具体是什么时候、在哪里以及天狗是谁，这些细节都从他的记忆中溜走了。"
-									],
-									"id": "00f"
-								}
-							],
-							"id": "00e"
-						}
-					],
-					"id": "00d"
-				},
-				{
-					"ENG_name": "Celest Weirding",
-					"name": "Celest Weirding",
-					"type": "section",
-					"page": 5,
-					"entries": [
-						{
-							"type": "entries",
-							"entries": [
-								{
-									"ENG_name": "Daughter of the Wizard Weirding",
-									"name": "法师威丁之女",
-									"type": "entries",
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "adventure/TLK/006.webp"
-											},
-											"width": 629,
-											"height": 678
-										},
-										"Celest 拒绝与她的父亲交谈，大部分时间都呆在房间里哭泣。她迫切想要逃离，如果她确信玩家会帮助她，她会与玩家进行交易。",
-										"塞莱斯特是法师威丁的继女。她想要离开庄园和村庄，独自去探索世界。她的梦想是和她的男朋友迪基·惠特一起游览伟大的城市深水城。三天前的晚上，迪基帮助她从窗户逃走，但被她的父亲抓住了。从那以后她就再没见过迪基，担心她的父亲把他吓跑了。由于有{@creature 六岐蛇豹|ToA}在庄园里游荡，她无法独自逃脱。由于她父亲在她身上进行的实验，塞莱斯特还患有慢性头痛。塞莱斯特并不知道这些实验，但一个察觉{@dc 15}可以发现塞莱斯特戴着假发。如果假发被取下，可以看到她的整个头皮上都蚀刻着奥术图案的疤痕。",
-										"与他的许多其他实验不同，怪异法师一直在尝试改变他女儿的大脑，让她成为一个强大的灵能者。",
-										"Celest 每天可以施展一次心灵爆破。"
-									],
-									"id": "012"
-								}
-							],
-							"id": "011"
-						}
-					],
-					"id": "010"
-				},
-				{
-					"ENG_name": "Cawkrin Jones",
-					"name": "Cawkrin Jones",
-					"type": "section",
-					"page": 5,
-					"entries": [
-						{
-							"type": "entries",
-							"entries": [
-								{
-									"ENG_name": "The Lost Kenku",
-									"name": "迷失的天狗",
-									"type": "entries",
-									"page": 5,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "adventure/TLK/007.webp"
-											},
-											"width": 665,
-											"height": 712
-										},
-										"考克林目前被困在法师研究室里的一幅被施了魔法的画中。当他触摸其中一个玻璃柜时，他被魔法传送到了画里。考克林是一个天狗族小偷。如果被释放，他将尽一切可能帮助队伍。他不知道韦尔丁的秘密。",
-										"使用《Volo的怪物指南》中的{@creature 盗贼大师|VGM}属性数据块作为Cawkrin的属性。"
-									],
-									"id": "015"
-								}
-							],
-							"id": "014"
-						}
-					],
-					"id": "013"
-				},
-				{
-					"ENG_name": "The Outpost of Weirding",
-					"name": "怪异前哨站",
-					"type": "section",
-					"page": 6,
-					"entries": [
-						"威廷是一个由12英尺高的石墙保护的小村庄前哨。该村庄由一个小型住宅区、矿区、小型商业区和威廷庄园组成。威廷的大多数居民都曾受到巫师的实验影响，将在他的精神命令下成为奴仆。实验的痕迹有时可以在太阳穴和头皮附近的小疤痕中看到（{@skill 察觉} {@dc 17} 或更高）。",
-						{
-							"ENG_name": "Residential District",
-							"name": "住宅区",
-							"type": "entries",
-							"page": 6,
-							"entries": [
-								"一些单户住宅、小花园以及中小型家畜。"
-							],
-							"id": "017"
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "adventure/TLK/001.webp"
+							},
+							"width": 1165,
+							"height": 1190
 						},
 						{
-							"ENG_name": "Mining District",
-							"name": "采矿区",
-							"type": "entries",
-							"page": 6,
+							"ENG_name": "Wizard of Weirding",
+							"name": "怪异法师",
+							"type": "section",
+							"id": "001",
+							"page": 3,
 							"entries": [
-								"这个区域包括矿工营房、设备棚、铁匠铺，以及一个存放矿物的大型仓库。",
-								"玩家们将会遇见进出矿井的矿工。",
 								{
-									"ENG_name": "What the Miners Know",
-									"name": "矿工所知道的",
 									"type": "entries",
-									"page": 6,
+									"id": "002",
 									"entries": [
-										"威丁为六个月的合同支付丰厚的报酬，之后他们可以返回自己的故土。",
 										{
-											"type": "list",
-											"items": [
-												"村子后面的山里富含宝石和黄金。",
-												"偶尔有冒险者或商人经过这里。",
-												"他们没有见过天狗族。",
-												"如果队伍想要听到谣言，大多数人建议去酒馆。"
+											"ENG_name": "Mind Flayer Alhoon",
+											"name": "灵吸怪阿尔胡恩",
+											"type": "entries",
+											"id": "003",
+											"page": 3,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "adventure/TLK/002.webp"
+													},
+													"width": 723,
+													"height": 807
+												},
+												"法师威尔丁是一个伪装成人类的灵吸怪阿尔胡恩。它使用变形术使自己看起来像一个名叫威尔丁的男性人类法师。很久以前，它离开了蜂巢，通过魔法寻找力量和不朽。为了融入费伦的普通人群，阿尔胡恩娶了一个人类女性，并收养了她的孩子作为自己的。随着时间的推移，阿尔胡恩被他的妻子发现，并被迫吃掉她的大脑。目前，阿尔胡恩经营着威尔丁前哨站，他在那里开采当地山脉的矿物以资助他的研究。法师威尔丁将威尔丁的人们作为他心灵实验的对象。",
+												"法师韦尔丁将试图捕获新的有趣的冒险者，要么吞噬他们的大脑，要么在他们身上进行实验。如果遭到暴力对抗，法师韦尔丁将攻击队伍，并利用前哨站被精神控制的人口阻止任何人逃跑。",
+												"{@creature 慑心魔|VGM|灵吸怪阿尔胡恩}的属性数据块可以在《瓦罗的怪物指南》中找到。"
 											]
-										},
-										"绳索、铁锹、镐和{@item 火把|PHB|火把}等装备可以在设备棚里找到。"
-									],
-									"id": "019"
+										}
+									]
 								}
-							],
-							"id": "018"
+							]
 						},
 						{
-							"ENG_name": "Commercial District",
-							"name": "商业区",
-							"type": "entries",
-							"page": 6,
+							"ENG_name": "Mez Kara",
+							"name": "梅兹·卡拉",
+							"type": "section",
+							"id": "004",
+							"page": 3,
 							"entries": [
-								"当地贸易在商业区进行。商业区最大的建筑是酒馆旅店\"桶底客栈\"。其他区域还包括杂货店、百货商店和肉铺。",
 								{
-									"ENG_name": "Further Exploration",
-									"name": "进一步探索",
 									"type": "entries",
-									"page": 6,
+									"id": "005",
 									"entries": [
 										{
-											"type": "list",
-											"style": "list-hang-notitle",
-											"items": [
+											"ENG_name": "Sun Elf Apprentice",
+											"name": "太阳精灵学徒",
+											"type": "entries",
+											"id": "006",
+											"page": 3,
+											"entries": [
 												{
-													"ENG_name": "Sundries Shop:",
-													"name": "杂货店:",
-													"type": "item",
-													"entry": "侏儒巴里克经营的巴里克杂货店。巴里克出售各种杂物和普通商品。如果被问及，巴里克会告知队伍五天前有一只肯克路过并买走了他所有的葵花籽库存。队伍会知道考克林·琼斯对葵花籽情有独钟。"
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "adventure/TLK/003.webp"
+													},
+													"width": 671,
+													"height": 748
 												},
+												"梅兹·卡拉是一名精灵族的{@creature 学徒法师|VGM|学徒}，师从法师威尔丁。实际上，她是他心灵控制的奴隶之一。她不知道法师是一个阿尔胡恩，但她知道他赋予了她力量。",
+												"她心甘情愿地为他服务，并且总是在寻找取悦他的方法。她会找到强大的冒险者，对他们非常感兴趣，并说服他们留在庄园里，亲自与怪异的法师见面。",
+												"学徒的属性块可以在《瓦罗的怪物指南》中找到。此外，梅兹·卡拉在1级时可以施放友谊和迷人人类。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Gregor Forskog",
+							"name": "格雷戈尔·福斯科格",
+							"type": "section",
+							"id": "007",
+							"page": 4,
+							"entries": [
+								{
+									"type": "entries",
+									"id": "008",
+									"entries": [
+										{
+											"ENG_name": "Thug and Bookie",
+											"name": "暴徒和赌博经纪人",
+											"type": "entries",
+											"id": "009",
+											"page": 4,
+											"entries": [
 												{
-													"ENG_name": "Butcher Shop:",
-													"name": "肉铺：",
-													"type": "item",
-													"entry": "纳德的肉店，由女性人类纳德经营，出售各种肉类。大多数肉类来自各种恐龙。五天前，一个天狗族人来到这里，买了三块生恐龙排。（考克林后来用这些牛排分散了在庄园草坪巡逻的六岐蛇豹的注意力。）"
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "adventure/TLK/005.webp"
+													},
+													"width": 649,
+													"height": 698
 												},
+												"格雷戈尔是一名矿工兼赌博经纪人。他和他的团伙从当地人那里接受几乎所有事情的赌注。目前，他正准备通过将格纳特·格尼姆卡普的手指喂给他的蜥蜴人暴徒，来给不还债的格纳特·格尼姆卡普一个教训。",
+												"格雷戈尔的团伙由他自己、一个名叫Tooth的男性蜥蜴人和名叫Cat Keeper的女性歌利亚野蛮人组成。Tooth会被美味的肉食分心。Cat Keeper对猫有弱点。除此之外，他们是会做格雷戈尔要求的任何事情的粗暴之人。格雷戈尔梦想成为像散塔林会这样的正规团伙的一部分。",
+												"使用《怪物手册》中找到的{@creature 匪帮队长}和{@creature 匪徒}的统计数据来描述格雷戈尔和他的帮派。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Gnator Gnimmcap",
+							"name": "格纳托·格尼姆帽",
+							"type": "section",
+							"id": "00a",
+							"page": 4,
+							"entries": [
+								{
+									"type": "entries",
+									"id": "00b",
+									"entries": [
+										{
+											"ENG_name": "Grounds Keeper",
+											"name": "场地管理员",
+											"type": "entries",
+											"id": "00c",
+											"entries": [
 												{
-													"ENG_name": "Tavern:",
-													"name": "酒馆：",
-													"type": "item",
-													"entries": [
-														"无论一天中的什么时候，'桶底'总是熙熙攘攘。这家大酒馆里挤满了当地人，他们在这里放松身心，释放一天（或一夜）在矿井中辛勤工作的压力。酒馆里还有一个小型拳击/摔跤擂台，当地人在这里对拳击手之间的比赛下注。尽管周围有很多人物，但有几个特别引起了派对的注意：",
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "adventure/TLK/010.webp"
+													},
+													"width": 442,
+													"height": 534
+												},
+												"格纳托·格尼姆帽是怪异庄园的园丁。为了逃避怪异法师实验带来的噩梦，他沉迷于饮酒和赌博。他欠了赌注经纪人格雷戈尔·福斯科格一大笔债务，并且已经拖欠了还款。",
+												"甘特·格尼姆卡普告诉考克林·琼斯如何通过地窖进入大厦，以换取30金币（他现在已经赌博输光了）。作为帮助解决他的赌博债务的交换，甘特将乐意帮助冒险者，只要这不会使他置身危险之中。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Tonk Hammertoes",
+							"name": "汤克·汉默托斯",
+							"type": "section",
+							"id": "00d",
+							"page": 4,
+							"entries": [
+								{
+									"type": "entries",
+									"id": "00e",
+									"entries": [
+										{
+											"ENG_name": "Bartender",
+											"name": "酒保",
+											"type": "entries",
+											"id": "00f",
+											"page": 4,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "adventure/TLK/004.webp"
+													},
+													"width": 604,
+													"height": 555
+												},
+												"Tonk Hammertoes 是 Bucket's Bottom 的酒保兼老板。Tonk 被实验得有点过头了。他言语不多，智力也有所欠缺。他会很乐意提供麦芽酒，但要从他那里得到有用的信息却很困难。他见过一个天狗，但具体是什么时候、在哪里以及天狗是谁，这些细节都从他的记忆中溜走了。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Celest Weirding",
+							"name": "Celest Weirding",
+							"type": "section",
+							"id": "010",
+							"page": 5,
+							"entries": [
+								{
+									"type": "entries",
+									"id": "011",
+									"entries": [
+										{
+											"ENG_name": "Daughter of the Wizard Weirding",
+											"name": "法师威丁之女",
+											"type": "entries",
+											"id": "012",
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "adventure/TLK/006.webp"
+													},
+													"width": 629,
+													"height": 678
+												},
+												"Celest 拒绝与她的父亲交谈，大部分时间都呆在房间里哭泣。她迫切想要逃离，如果她确信玩家会帮助她，她会与玩家进行交易。",
+												"塞莱斯特是法师威丁的继女。她想要离开庄园和村庄，独自去探索世界。她的梦想是和她的男朋友迪基·惠特一起游览伟大的城市深水城。三天前的晚上，迪基帮助她从窗户逃走，但被她的父亲抓住了。从那以后她就再没见过迪基，担心她的父亲把他吓跑了。由于有{@creature 六岐蛇豹|ToA}在庄园里游荡，她无法独自逃脱。由于她父亲在她身上进行的实验，塞莱斯特还患有慢性头痛。塞莱斯特并不知道这些实验，但一个察觉{@dc 15}可以发现塞莱斯特戴着假发。如果假发被取下，可以看到她的整个头皮上都蚀刻着奥术图案的疤痕。",
+												"与他的许多其他实验不同，怪异法师一直在尝试改变他女儿的大脑，让她成为一个强大的灵能者。",
+												"Celest 每天可以施展一次心灵爆破。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Cawkrin Jones",
+							"name": "Cawkrin Jones",
+							"type": "section",
+							"id": "013",
+							"page": 5,
+							"entries": [
+								{
+									"type": "entries",
+									"id": "014",
+									"entries": [
+										{
+											"ENG_name": "The Lost Kenku",
+											"name": "迷失的天狗",
+											"type": "entries",
+											"id": "015",
+											"page": 5,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "adventure/TLK/007.webp"
+													},
+													"width": 665,
+													"height": 712
+												},
+												"考克林目前被困在法师研究室里的一幅被施了魔法的画中。当他触摸其中一个玻璃柜时，他被魔法传送到了画里。考克林是一个天狗族小偷。如果被释放，他将尽一切可能帮助队伍。他不知道韦尔丁的秘密。",
+												"使用《Volo的怪物指南》中的{@creature 盗贼大师|VGM}属性数据块作为Cawkrin的属性。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "The Outpost of Weirding",
+							"name": "怪异前哨站",
+							"type": "section",
+							"id": "016",
+							"page": 6,
+							"entries": [
+								"威廷是一个由12英尺高的石墙保护的小村庄前哨。该村庄由一个小型住宅区、矿区、小型商业区和威廷庄园组成。威廷的大多数居民都曾受到巫师的实验影响，将在他的精神命令下成为奴仆。实验的痕迹有时可以在太阳穴和头皮附近的小疤痕中看到（{@skill 察觉} {@dc 17} 或更高）。",
+								{
+									"ENG_name": "Residential District",
+									"name": "住宅区",
+									"type": "entries",
+									"id": "017",
+									"page": 6,
+									"entries": [
+										"一些单户住宅、小花园以及中小型家畜。"
+									]
+								},
+								{
+									"ENG_name": "Mining District",
+									"name": "采矿区",
+									"type": "entries",
+									"id": "018",
+									"page": 6,
+									"entries": [
+										"这个区域包括矿工营房、设备棚、铁匠铺，以及一个存放矿物的大型仓库。",
+										"玩家们将会遇见进出矿井的矿工。",
+										{
+											"ENG_name": "What the Miners Know",
+											"name": "矿工所知道的",
+											"type": "entries",
+											"id": "019",
+											"page": 6,
+											"entries": [
+												"威丁为六个月的合同支付丰厚的报酬，之后他们可以返回自己的故土。",
+												{
+													"type": "list",
+													"items": [
+														"村子后面的山里富含宝石和黄金。",
+														"偶尔有冒险者或商人经过这里。",
+														"他们没有见过天狗族。",
+														"如果队伍想要听到谣言，大多数人建议去酒馆。"
+													]
+												},
+												"绳索、铁锹、镐和{@item 火把|PHB|火把}等装备可以在设备棚里找到。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Commercial District",
+									"name": "商业区",
+									"type": "entries",
+									"id": "01a",
+									"page": 6,
+									"entries": [
+										"当地贸易在商业区进行。商业区最大的建筑是酒馆旅店\"桶底客栈\"。其他区域还包括杂货店、百货商店和肉铺。",
+										{
+											"ENG_name": "Further Exploration",
+											"name": "进一步探索",
+											"type": "entries",
+											"id": "01b",
+											"page": 6,
+											"entries": [
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
 														{
-															"type": "list",
-															"style": "list-hang-notitle",
-															"items": [
+															"ENG_name": "Sundries Shop:",
+															"name": "杂货店:",
+															"type": "item",
+															"entry": "侏儒巴里克经营的巴里克杂货店。巴里克出售各种杂物和普通商品。如果被问及，巴里克会告知队伍五天前有一只肯克路过并买走了他所有的葵花籽库存。队伍会知道考克林·琼斯对葵花籽情有独钟。"
+														},
+														{
+															"ENG_name": "Butcher Shop:",
+															"name": "肉铺：",
+															"type": "item",
+															"entry": "纳德的肉店，由女性人类纳德经营，出售各种肉类。大多数肉类来自各种恐龙。五天前，一个天狗族人来到这里，买了三块生恐龙排。（考克林后来用这些牛排分散了在庄园草坪巡逻的六岐蛇豹的注意力。）"
+														},
+														{
+															"ENG_name": "Tavern:",
+															"name": "酒馆：",
+															"type": "item",
+															"entries": [
+																"无论一天中的什么时候，'桶底'总是熙熙攘攘。这家大酒馆里挤满了当地人，他们在这里放松身心，释放一天（或一夜）在矿井中辛勤工作的压力。酒馆里还有一个小型拳击/摔跤擂台，当地人在这里对拳击手之间的比赛下注。尽管周围有很多人物，但有几个特别引起了派对的注意：",
 																{
-																	"ENG_name": "Mez Kara",
-																	"name": "梅兹·卡拉",
-																	"type": "item",
-																	"entry": "在安静的角落桌子上品着酒。默默地观察着酒馆里的顾客。",
-																	"nameDot": false
-																},
-																{
-																	"ENG_name": "Gnator Gnimmcap",
-																	"name": "格纳托·格尼姆帽",
-																	"type": "item",
-																	"entry": "他看起来忧心忡忡、焦虑不安，因为他下注的战斗似乎没有朝着他预期的方向发展。",
-																	"nameDot": false
-																},
-																{
-																	"ENG_name": "Gregor Forskog",
-																	"name": "格雷戈尔·福斯科格",
-																	"type": "item",
-																	"entry": "他和他的暴徒们在格斗场周围的人群中下注和收债。很快他就会质问格纳托关于偿还他的债务。",
-																	"nameDot": false
-																},
-																{
-																	"ENG_name": "Tonk Hammertoes,",
-																	"name": "Tonk Hammertoes",
-																	"type": "item",
-																	"entry": "奇怪且显得遥远，静静地照料着吧台。"
+																	"type": "list",
+																	"style": "list-hang-notitle",
+																	"items": [
+																		{
+																			"ENG_name": "Mez Kara",
+																			"name": "梅兹·卡拉",
+																			"type": "item",
+																			"nameDot": false,
+																			"entry": "在安静的角落桌子上品着酒。默默地观察着酒馆里的顾客。"
+																		},
+																		{
+																			"ENG_name": "Gnator Gnimmcap",
+																			"name": "格纳托·格尼姆帽",
+																			"type": "item",
+																			"nameDot": false,
+																			"entry": "他看起来忧心忡忡、焦虑不安，因为他下注的战斗似乎没有朝着他预期的方向发展。"
+																		},
+																		{
+																			"ENG_name": "Gregor Forskog",
+																			"name": "格雷戈尔·福斯科格",
+																			"type": "item",
+																			"nameDot": false,
+																			"entry": "他和他的暴徒们在格斗场周围的人群中下注和收债。很快他就会质问格纳托关于偿还他的债务。"
+																		},
+																		{
+																			"ENG_name": "Tonk Hammertoes,",
+																			"name": "Tonk Hammertoes",
+																			"type": "item",
+																			"entry": "奇怪且显得遥远，静静地照料着吧台。"
+																		}
+																	]
 																}
 															]
 														}
@@ -385,397 +395,393 @@
 												}
 											]
 										}
-									],
-									"id": "01b"
+									]
 								}
-							],
-							"id": "01a"
-						}
-					],
-					"id": "016"
-				},
-				{
-					"ENG_name": "Manor Of Weirding",
-					"name": "威丁庄园",
-					"type": "section",
-					"entries": [
-						"怪异庄园是一座位于村庄后部山丘上的三层大石制庄园。庄园周围有一道10尺高的石墙。一道大铁门是穿过墙壁的唯一通道。它由四个类人守卫把守。石墙上覆盖着藤蔓，藤蔓上开着在黑暗中发光的鲜黄色花朵。",
-						{
-							"type": "entries",
-							"entries": [
-								{
-									"ENG_name": "The Vines",
-									"name": "藤蔓",
-									"type": "entries",
-									"page": 6,
-									"entries": [
-										"藤蔓上有刺且有毒。如果被刺伤，冒险者将受到{@damage 1d4}点毒素伤害。如果角色进行敏捷鉴定并达到DC15，他们可以爬上墙壁并避开藤蔓。"
-									],
-									"id": "01e"
-								},
-								{
-									"ENG_name": "The Gate",
-									"name": "大门",
-									"type": "entries",
-									"page": 6,
-									"entries": [
-										"大型铁门是关闭的。它由四名守卫看守，除非由学徒梅兹或园丁格纳托·格尼姆帽陪同，否则他们会拒绝进入。使用《怪物手册》中的守卫属性数据块。"
-									],
-									"id": "01f"
-								},
-								{
-									"ENG_name": "The Yard",
-									"name": "庭院",
-									"type": "entries",
-									"page": 6,
-									"entries": [
-										"一个小小的庭院由泥土、青草和零星的花朵组成，将庄园主宅与周围的围墙隔开。三只训练有素的六岐蛇豹在庭院中巡逻，防范入侵者。使用《魔咒坟场》中的六岐蛇豹状态块。"
-									],
-									"id": "020"
-								}
-							],
-							"id": "01d"
+							]
 						},
 						{
-							"ENG_name": "Entrances into the Manor",
-							"name": "进入庄园的入口",
-							"type": "entries",
-							"page": 6,
+							"ENG_name": "Manor Of Weirding",
+							"name": "威丁庄园",
+							"type": "section",
+							"id": "01c",
 							"entries": [
-								"庄园的正门是一对由实木制成的大型双开门。它们在傍晚和夜间关闭并上锁。可以通过{@dc 18}的力量检定来破门而入，或是用{@skill 巧手}检定{@dc 17}来撬开锁。从前门进入会通向门厅。",
-								"地窖门位于庄园的后方，通往庄园下方的地窖。一个力量检定 {@dc 16} 可以将其强行打开。一个 {@skill 巧手} {@dc 13} 检定可以撬开锁。地窖门通往地窖。",
-								"在宅邸上可以看到通往各个房间的窗户。大多数窗户都用铁栅栏保护着。铁栅栏直接固定在铁窗框架上，不使用外力（或钢锯）无法打开或移除。移除铁窗栅栏需要通过{@dc 24}力量检定。其中一扇窗户的铁栅栏被弯曲打开，通往塞莱斯特·威尔丁的房间。"
-							],
-							"id": "021"
-						}
-					],
-					"id": "01c"
-				},
-				{
-					"ENG_name": "Manor Rooms",
-					"name": "庄园房间",
-					"type": "section",
-					"page": 7,
-					"entries": [
-						{
-							"ENG_name": "1st Floor",
-							"name": "一楼",
-							"type": "entries",
-							"page": 7,
-							"entries": [
+								"怪异庄园是一座位于村庄后部山丘上的三层大石制庄园。庄园周围有一道10尺高的石墙。一道大铁门是穿过墙壁的唯一通道。它由四个类人守卫把守。石墙上覆盖着藤蔓，藤蔓上开着在黑暗中发光的鲜黄色花朵。",
 								{
-									"ENG_name": "Foyer",
-									"name": "休息厅",
 									"type": "entries",
-									"page": 7,
-									"entries": [
-										"门厅装饰华丽，墙上挂着一幅巨大的法师威尔丁画像，他侧着头，手举起来，正要施法。他周围是白色的雏菊和兔子。地板是灰色和橙色石头拼成的抽象马赛克图案。门外有一张小长凳，供人坐下脱鞋，如果角色被庄园里的人邀请进来，这是必须遵守的。走廊向左（西）和右（东）延伸，有一座宏伟的楼梯通向二楼的休息平台。"
-									],
-									"id": "024"
-								},
-								{
-									"ENG_name": "The West Hall",
-									"name": "西厅",
-									"type": "entries",
-									"page": 7,
-									"entries": [
-										"西厅有一扇门通向洗涤室，走廊尽头是餐厅的入口。"
-									],
-									"id": "025"
-								},
-								{
-									"ENG_name": "West Hall - Wash Room",
-									"name": "西厅 - 洗涤室",
-									"type": "entries",
-									"page": 7,
-									"entries": [
-										"一间铺着瓷砖的小房间。一个小基座，里面装满了水。一面镜子。一个施了魔法的瓷制马桶/坐浴盆。任何掉进盆里的东西都会被传送到一个随机的位面。"
-									],
-									"id": "026"
-								},
-								{
-									"ENG_name": "West Hall - Dining Hall",
-									"name": "西厅 - 餐厅",
-									"type": "entries",
-									"page": 7,
-									"entries": [
-										"餐厅是一个长长的房间，有一个超大的餐桌，每边都足够六个人就坐。餐桌上方悬挂着一个大型水晶吊灯。除了通往西厅的出口外，还有一扇门通向厨房和仆人登陆区。"
-									],
-									"id": "027"
-								},
-								{
-									"ENG_name": "Servants' Landing",
-									"name": "仆人登陆处",
-									"type": "entries",
-									"page": 7,
-									"entries": [
-										"穿过餐厅是一扇通往连接厨房的小房间的大门，有通往地窖的楼梯，以及通往二楼的仆人楼梯。"
-									],
-									"id": "028"
-								},
-								{
-									"ENG_name": "Kitchen",
-									"name": "厨房",
-									"type": "entries",
-									"page": 7,
-									"entries": [
-										"宽敞且储备充足的厨房。有木炉和烤箱。食品储藏室满满当当。"
-									],
-									"id": "029"
-								},
-								{
-									"ENG_name": "The East Hall",
-									"name": "东厅",
-									"type": "entries",
-									"page": 7,
-									"entries": [
-										"东厅有一扇门通向图书馆，走廊尽头是客厅的入口。"
-									],
-									"id": "02a"
-								},
-								{
-									"ENG_name": "East Hall - Library",
-									"name": "东厅 - 图书馆",
-									"type": "entries",
-									"page": 7,
-									"entries": [
-										"一个四周墙壁上摆满了书籍的大房间。有一套舒适的阅读椅和一个很好的壁炉。经过调查，图书馆里充满了普通的书籍。例如：《耳环之王》、《撒哈拉之剑》、《风之耻辱》、《黑暗之花》以及《百里香之轮，一个关于草药和其他风味的故事》。"
-									],
-									"id": "02b"
-								},
-								{
-									"ENG_name": "East Hall - Parlor",
-									"name": "东厅 - 客厅",
-									"type": "entries",
-									"page": 7,
-									"entries": [
-										"一个温馨的房间，通过大落地窗可以欣赏到修剪成形的花园。书架上装饰着蜡烛和小动物雕像。五个填充得满满的椅子围绕着一个大型壁炉。角落里放着一架大竖琴。"
-									],
-									"id": "02c"
-								}
-							],
-							"id": "023"
-						},
-						{
-							"ENG_name": "2nd Floor",
-							"name": "二楼",
-							"type": "entries",
-							"entries": [
-								{
-									"ENG_name": "East Hall - Guest Rooms",
-									"name": "东厅 - 客房",
-									"type": "entries",
-									"page": 7,
-									"entries": [
-										"通过东厅可以进入四间客房，每间客房都配有床、梳妆台和带镜子的梳妆台。"
-									],
-									"id": "02e"
-								},
-								{
-									"ENG_name": "East Hall - Wash Room",
-									"name": "东厅 - 盥洗室",
-									"type": "entries",
-									"page": 7,
-									"entries": [
-										"一个铺着瓷砖的小房间。一个小基座上盛满了水。一面镜子。一个被施了魔法的铜制浴缸，可以加热里面的水。一个被施了魔法的瓷制马桶/坐浴盆。任何掉进马桶里的东西都会被传送到一个随机的位面。"
-									],
-									"id": "02f"
-								},
-								{
-									"ENG_name": "West Hall - Servants Quarters",
-									"name": "西厅 - 仆人住区",
-									"type": "entries",
-									"page": 7,
-									"entries": [
-										"通过西厅可以进入四个房间，分别是厨师、女仆和场地管理员的住房。西厅的尽头是通往仆人登陆区的入口。"
-									],
-									"id": "030"
-								},
-								{
-									"ENG_name": "West Hall - Servants Landing",
-									"name": "西厅 - 仆人楼梯平台",
-									"type": "entries",
-									"page": 7,
-									"entries": [
-										"在西厅的尽头有一个平台，仆人楼梯从这里通往一楼的仆人平台。"
-									],
-									"id": "031"
-								},
-								{
-									"ENG_name": "Second Floor Landing",
-									"name": "二楼平台",
-									"type": "entries",
-									"page": 7,
-									"entries": [
-										"在二楼的中间是一个主楼梯平台，有楼梯通往一楼的门厅，也有楼梯通往三楼的楼梯平台。"
-									],
-									"id": "032"
-								}
-							],
-							"id": "02d"
-						},
-						{
-							"ENG_name": "3rd Floor",
-							"name": "三楼",
-							"type": "entries",
-							"page": 7,
-							"entries": [
-								{
-									"ENG_name": "Gallery Hall",
-									"name": "画廊大厅",
-									"type": "entries",
-									"page": 7,
-									"entries": [
-										"大厅中挂满了栩栩如生的大型画作，每幅都描绘了不同的怪物。这些画作包括：链枷蜗牛、吉拉猿、丘丘、火焰颅骨和牛头人。",
-										"这些画作具有魔法属性，充当最后的安全系统。法师 Weirding 可以随意触发画作释放怪物。如果画作的框架被破坏或被解除魔法，画中的内容就会被释放。画廊大厅的门通向法师的研究实验室、Celest的房间、Weirding的房间以及法师的研究图书馆。"
-									],
-									"id": "034"
-								},
-								{
-									"ENG_name": "Wizard's Study Lab",
-									"name": "法师的书房实验室",
-									"type": "entries",
-									"page": 7,
-									"entries": [
-										"一个全石制的房间，中间有一个排水口。墙上挂着各种尸体。他们的皮肤被剥开，露出了肌肉层、器官和骨骼。每具尸体都被精心标记。每个尸体的头部在头骨顶部都有一个小圆洞。尸体包括：一只巨熊虫、一个地精、一个男性人类和一个灵吸怪。男性人类仍在滴血。架子上摆满了装在罐子里的器官。其中一个架子上放着一个废陋巨人安的眼睛，它会用\"邪恶之眼\"诅咒任何看到它的人（\"邪恶之眼\"的描述可以在《怪物手册》中的{@creature 废陋巨人}条目中找到）。"
-									],
-									"id": "035"
-								},
-								{
-									"ENG_name": "Celest's Room",
-									"name": "Celest的房间",
-									"type": "entries",
-									"page": 7,
-									"entries": [
-										"Celest Weirding 在房间里哭泣，因为她的父亲不让她离开，并将她困在怪异村庄。Celest 房间的窗户上的铁栏杆因为之前的逃跑尝试而向前弯曲。"
-									],
-									"id": "036"
-								},
-								{
-									"ENG_name": "Weirding's Room",
-									"name": "Weirding的房间",
-									"type": "entries",
-									"page": 8,
-									"entries": [
-										"房间内有一张床和一个装满长袍的衣柜。其中一件长袍是星辰长袍。床边的架子上放着一枚隐形戒指。",
-										"星袍和隐形戒指的描述可以在《地下城主指南》中找到。"
-									],
-									"id": "037"
-								},
-								{
-									"ENG_name": "Wizard's Study Library",
-									"name": "法师的书房图书馆",
-									"type": "entries",
-									"page": 8,
-									"entries": [
-										"一个中央有讲坛的小房间。三排锁着的玻璃柜靠墙摆放，每个柜子里都装满了书籍和各种物品。后墙上挂着一幅研究图书馆的画，画中的一切与玩家所见完全相同，除了一个天狗，Cawkrin Jones，被描绘成蹲在其中一个玻璃柜前。房间的门是魔法的。任何通过门口的物品都会触发{@spell 警报术}法术。",
-										"这些玻璃展示柜可以通过撬锁（{@dc 15}）或打破玻璃来打开。如果撬锁失败或玻璃被除了巫师韦尔丁之外的任何人触碰，试图打开柜子的玩家将被魔法传送到房间里的画中，并出现在寇克林·琼斯（Cawkrin Jones）旁边。"
-									],
-									"id": "038"
-								},
-								{
-									"ENG_name": "Items of Interest",
-									"name": "物品兴趣点",
-									"type": "entries",
-									"page": 8,
+									"id": "01d",
 									"entries": [
 										{
-											"type": "list",
-											"items": [
-												"这幅画是一个魔法监狱，任何试图闯入玻璃柜的人都会触发它。这幅画可以通过破坏画框来解除魔法或使其失效。这样做也会释放画中的居民。进行一次难度等级为 {@dc 14} 的调查检定，可以发现刻在画框上的魔法符文。",
-												"书籍：《脑死亡，灵能者的死灵法术指南》可以在一个上锁的玻璃展示柜中找到。",
-												"在其中一个上锁的玻璃展示柜中可以找到一副\"许多事物的牌组\"（详见《地下城主指南》第162页的\"许多事物的牌组\"）",
-												"在其中一个上锁的玻璃柜中可以找到一张火球术卷轴。",
-												"一瓶高效治疗药水可以在一个上锁的玻璃展示柜中找到。"
+											"ENG_name": "The Vines",
+											"name": "藤蔓",
+											"type": "entries",
+											"id": "01e",
+											"page": 6,
+											"entries": [
+												"藤蔓上有刺且有毒。如果被刺伤，冒险者将受到{@damage 1d4}点毒素伤害。如果角色进行敏捷鉴定并达到DC15，他们可以爬上墙壁并避开藤蔓。"
+											]
+										},
+										{
+											"ENG_name": "The Gate",
+											"name": "大门",
+											"type": "entries",
+											"id": "01f",
+											"page": 6,
+											"entries": [
+												"大型铁门是关闭的。它由四名守卫看守，除非由学徒梅兹或园丁格纳托·格尼姆帽陪同，否则他们会拒绝进入。使用《怪物手册》中的守卫属性数据块。"
+											]
+										},
+										{
+											"ENG_name": "The Yard",
+											"name": "庭院",
+											"type": "entries",
+											"id": "020",
+											"page": 6,
+											"entries": [
+												"一个小小的庭院由泥土、青草和零星的花朵组成，将庄园主宅与周围的围墙隔开。三只训练有素的六岐蛇豹在庭院中巡逻，防范入侵者。使用《魔咒坟场》中的六岐蛇豹状态块。"
 											]
 										}
-									],
-									"id": "039"
-								}
-							],
-							"id": "033"
-						},
-						{
-							"ENG_name": "Cellar",
-							"name": "地窖",
-							"type": "entries",
-							"page": 8,
-							"entries": [
-								"一个由大石头砌成的地窖横跨整个庄园。地窖内有成排的酒架。在地窖的后部有铁笼，除了一个笼子里关着一个名叫Quinn Quinn的狗头人外，其余都是空的。",
-								"酒窖的墙壁看起来与庄园的其他部分不同。一些墙上仍然有描绘楚尔坦矮人的古老象形文字。进行一次历史检定（{@dc 14}）可以揭示这座庄园是建立在一个更为古老的根基上。沿着其中一面墙，有一个与酒窖中其他部分不协调的酒架。将其推开后，会露出一个通向外面的秘密通道，出口位于水桶底部的后面。",
-								"梅兹·卡拉可能也在地窖里，准备将奎因·奎因带上来进行实验。"
-							],
-							"id": "03a"
-						},
-						{
-							"ENG_name": "Encounters of Manor Weirding",
-							"name": "怪异庄园的遭遇",
-							"type": "entries",
-							"page": 8,
-							"entries": [
-								"在任何探索过程中，玩家可能会遇到怪异庄园的仆人之一。这些仆人因为法师过于热衷的实验而遭受了某种形式的残疾。例子包括：不断流口水、看起来半睡半醒、类似僵尸的行为、高度偏执以及无法控制自己声音的音量。",
-								"Celeste只能在她的房间里遇到，但她可能会选择跟随队伍以逃脱。法师威尔丁不睡觉也不吃饭（除了大脑），并且经常在庄园里徘徊。如果玩家看到他，而法师没有意识到他们的存在，他将以灵吸怪的方式悬浮而不是走路。如果有任何类型的警报响起，法师就会出现。",
-								{
-									"ENG_name": "Nut Puncher Quinn Quinn",
-									"name": "坚果拳手奎因·奎因",
-									"type": "entries",
-									"page": 8,
-									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "adventure/TLK/008.webp"
-											},
-											"width": 549,
-											"height": 650
-										},
-										"{@creature 狗头人} 专门擅长猛击别人的要害部位。他身上沾满了龙粪。如果从铁笼中释放出来，昆恩·昆恩会试图猛击任何男性的睾丸，同时尖叫着，\"我是坚果拳手昆恩·昆恩！\"然后逃跑。"
-									],
-									"id": "03c"
+									]
 								},
 								{
-									"ENG_name": "Author's Note",
-									"name": "作者注",
-									"type": "inset",
+									"ENG_name": "Entrances into the Manor",
+									"name": "进入庄园的入口",
+									"type": "entries",
+									"id": "021",
+									"page": 6,
+									"entries": [
+										"庄园的正门是一对由实木制成的大型双开门。它们在傍晚和夜间关闭并上锁。可以通过{@dc 18}的力量检定来破门而入，或是用{@skill 巧手}检定{@dc 17}来撬开锁。从前门进入会通向门厅。",
+										"地窖门位于庄园的后方，通往庄园下方的地窖。一个力量检定 {@dc 16} 可以将其强行打开。一个 {@skill 巧手} {@dc 13} 检定可以撬开锁。地窖门通往地窖。",
+										"在宅邸上可以看到通往各个房间的窗户。大多数窗户都用铁栅栏保护着。铁栅栏直接固定在铁窗框架上，不使用外力（或钢锯）无法打开或移除。移除铁窗栅栏需要通过{@dc 24}力量检定。其中一扇窗户的铁栅栏被弯曲打开，通往塞莱斯特·威尔丁的房间。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Manor Rooms",
+							"name": "庄园房间",
+							"type": "section",
+							"id": "022",
+							"page": 7,
+							"entries": [
+								{
+									"ENG_name": "1st Floor",
+									"name": "一楼",
+									"type": "entries",
+									"id": "023",
+									"page": 7,
+									"entries": [
+										{
+											"ENG_name": "Foyer",
+											"name": "休息厅",
+											"type": "entries",
+											"id": "024",
+											"page": 7,
+											"entries": [
+												"门厅装饰华丽，墙上挂着一幅巨大的法师威尔丁画像，他侧着头，手举起来，正要施法。他周围是白色的雏菊和兔子。地板是灰色和橙色石头拼成的抽象马赛克图案。门外有一张小长凳，供人坐下脱鞋，如果角色被庄园里的人邀请进来，这是必须遵守的。走廊向左（西）和右（东）延伸，有一座宏伟的楼梯通向二楼的休息平台。"
+											]
+										},
+										{
+											"ENG_name": "The West Hall",
+											"name": "西厅",
+											"type": "entries",
+											"id": "025",
+											"page": 7,
+											"entries": [
+												"西厅有一扇门通向洗涤室，走廊尽头是餐厅的入口。"
+											]
+										},
+										{
+											"ENG_name": "West Hall - Wash Room",
+											"name": "西厅 - 洗涤室",
+											"type": "entries",
+											"id": "026",
+											"page": 7,
+											"entries": [
+												"一间铺着瓷砖的小房间。一个小基座，里面装满了水。一面镜子。一个施了魔法的瓷制马桶/坐浴盆。任何掉进盆里的东西都会被传送到一个随机的位面。"
+											]
+										},
+										{
+											"ENG_name": "West Hall - Dining Hall",
+											"name": "西厅 - 餐厅",
+											"type": "entries",
+											"id": "027",
+											"page": 7,
+											"entries": [
+												"餐厅是一个长长的房间，有一个超大的餐桌，每边都足够六个人就坐。餐桌上方悬挂着一个大型水晶吊灯。除了通往西厅的出口外，还有一扇门通向厨房和仆人登陆区。"
+											]
+										},
+										{
+											"ENG_name": "Servants' Landing",
+											"name": "仆人登陆处",
+											"type": "entries",
+											"id": "028",
+											"page": 7,
+											"entries": [
+												"穿过餐厅是一扇通往连接厨房的小房间的大门，有通往地窖的楼梯，以及通往二楼的仆人楼梯。"
+											]
+										},
+										{
+											"ENG_name": "Kitchen",
+											"name": "厨房",
+											"type": "entries",
+											"id": "029",
+											"page": 7,
+											"entries": [
+												"宽敞且储备充足的厨房。有木炉和烤箱。食品储藏室满满当当。"
+											]
+										},
+										{
+											"ENG_name": "The East Hall",
+											"name": "东厅",
+											"type": "entries",
+											"id": "02a",
+											"page": 7,
+											"entries": [
+												"东厅有一扇门通向图书馆，走廊尽头是客厅的入口。"
+											]
+										},
+										{
+											"ENG_name": "East Hall - Library",
+											"name": "东厅 - 图书馆",
+											"type": "entries",
+											"id": "02b",
+											"page": 7,
+											"entries": [
+												"一个四周墙壁上摆满了书籍的大房间。有一套舒适的阅读椅和一个很好的壁炉。经过调查，图书馆里充满了普通的书籍。例如：《耳环之王》、《撒哈拉之剑》、《风之耻辱》、《黑暗之花》以及《百里香之轮，一个关于草药和其他风味的故事》。"
+											]
+										},
+										{
+											"ENG_name": "East Hall - Parlor",
+											"name": "东厅 - 客厅",
+											"type": "entries",
+											"id": "02c",
+											"page": 7,
+											"entries": [
+												"一个温馨的房间，通过大落地窗可以欣赏到修剪成形的花园。书架上装饰着蜡烛和小动物雕像。五个填充得满满的椅子围绕着一个大型壁炉。角落里放着一架大竖琴。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "2nd Floor",
+									"name": "二楼",
+									"type": "entries",
+									"id": "02d",
+									"entries": [
+										{
+											"ENG_name": "East Hall - Guest Rooms",
+											"name": "东厅 - 客房",
+											"type": "entries",
+											"id": "02e",
+											"page": 7,
+											"entries": [
+												"通过东厅可以进入四间客房，每间客房都配有床、梳妆台和带镜子的梳妆台。"
+											]
+										},
+										{
+											"ENG_name": "East Hall - Wash Room",
+											"name": "东厅 - 盥洗室",
+											"type": "entries",
+											"id": "02f",
+											"page": 7,
+											"entries": [
+												"一个铺着瓷砖的小房间。一个小基座上盛满了水。一面镜子。一个被施了魔法的铜制浴缸，可以加热里面的水。一个被施了魔法的瓷制马桶/坐浴盆。任何掉进马桶里的东西都会被传送到一个随机的位面。"
+											]
+										},
+										{
+											"ENG_name": "West Hall - Servants Quarters",
+											"name": "西厅 - 仆人住区",
+											"type": "entries",
+											"id": "030",
+											"page": 7,
+											"entries": [
+												"通过西厅可以进入四个房间，分别是厨师、女仆和场地管理员的住房。西厅的尽头是通往仆人登陆区的入口。"
+											]
+										},
+										{
+											"ENG_name": "West Hall - Servants Landing",
+											"name": "西厅 - 仆人楼梯平台",
+											"type": "entries",
+											"id": "031",
+											"page": 7,
+											"entries": [
+												"在西厅的尽头有一个平台，仆人楼梯从这里通往一楼的仆人平台。"
+											]
+										},
+										{
+											"ENG_name": "Second Floor Landing",
+											"name": "二楼平台",
+											"type": "entries",
+											"id": "032",
+											"page": 7,
+											"entries": [
+												"在二楼的中间是一个主楼梯平台，有楼梯通往一楼的门厅，也有楼梯通往三楼的楼梯平台。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "3rd Floor",
+									"name": "三楼",
+									"type": "entries",
+									"id": "033",
+									"page": 7,
+									"entries": [
+										{
+											"ENG_name": "Gallery Hall",
+											"name": "画廊大厅",
+											"type": "entries",
+											"id": "034",
+											"page": 7,
+											"entries": [
+												"大厅中挂满了栩栩如生的大型画作，每幅都描绘了不同的怪物。这些画作包括：链枷蜗牛、吉拉猿、丘丘、火焰颅骨和牛头人。",
+												"这些画作具有魔法属性，充当最后的安全系统。法师 Weirding 可以随意触发画作释放怪物。如果画作的框架被破坏或被解除魔法，画中的内容就会被释放。画廊大厅的门通向法师的研究实验室、Celest的房间、Weirding的房间以及法师的研究图书馆。"
+											]
+										},
+										{
+											"ENG_name": "Wizard's Study Lab",
+											"name": "法师的书房实验室",
+											"type": "entries",
+											"id": "035",
+											"page": 7,
+											"entries": [
+												"一个全石制的房间，中间有一个排水口。墙上挂着各种尸体。他们的皮肤被剥开，露出了肌肉层、器官和骨骼。每具尸体都被精心标记。每个尸体的头部在头骨顶部都有一个小圆洞。尸体包括：一只巨熊虫、一个地精、一个男性人类和一个灵吸怪。男性人类仍在滴血。架子上摆满了装在罐子里的器官。其中一个架子上放着一个废陋巨人安的眼睛，它会用\"邪恶之眼\"诅咒任何看到它的人（\"邪恶之眼\"的描述可以在《怪物手册》中的{@creature 废陋巨人}条目中找到）。"
+											]
+										},
+										{
+											"ENG_name": "Celest's Room",
+											"name": "Celest的房间",
+											"type": "entries",
+											"id": "036",
+											"page": 7,
+											"entries": [
+												"Celest Weirding 在房间里哭泣，因为她的父亲不让她离开，并将她困在怪异村庄。Celest 房间的窗户上的铁栏杆因为之前的逃跑尝试而向前弯曲。"
+											]
+										},
+										{
+											"ENG_name": "Weirding's Room",
+											"name": "Weirding的房间",
+											"type": "entries",
+											"id": "037",
+											"page": 8,
+											"entries": [
+												"房间内有一张床和一个装满长袍的衣柜。其中一件长袍是星辰长袍。床边的架子上放着一枚隐形戒指。",
+												"星袍和隐形戒指的描述可以在《地下城主指南》中找到。"
+											]
+										},
+										{
+											"ENG_name": "Wizard's Study Library",
+											"name": "法师的书房图书馆",
+											"type": "entries",
+											"id": "038",
+											"page": 8,
+											"entries": [
+												"一个中央有讲坛的小房间。三排锁着的玻璃柜靠墙摆放，每个柜子里都装满了书籍和各种物品。后墙上挂着一幅研究图书馆的画，画中的一切与玩家所见完全相同，除了一个天狗，Cawkrin Jones，被描绘成蹲在其中一个玻璃柜前。房间的门是魔法的。任何通过门口的物品都会触发{@spell 警报术}法术。",
+												"这些玻璃展示柜可以通过撬锁（{@dc 15}）或打破玻璃来打开。如果撬锁失败或玻璃被除了巫师韦尔丁之外的任何人触碰，试图打开柜子的玩家将被魔法传送到房间里的画中，并出现在寇克林·琼斯（Cawkrin Jones）旁边。"
+											]
+										},
+										{
+											"ENG_name": "Items of Interest",
+											"name": "物品兴趣点",
+											"type": "entries",
+											"id": "039",
+											"page": 8,
+											"entries": [
+												{
+													"type": "list",
+													"items": [
+														"这幅画是一个魔法监狱，任何试图闯入玻璃柜的人都会触发它。这幅画可以通过破坏画框来解除魔法或使其失效。这样做也会释放画中的居民。进行一次难度等级为 {@dc 14} 的调查检定，可以发现刻在画框上的魔法符文。",
+														"书籍：《脑死亡，灵能者的死灵法术指南》可以在一个上锁的玻璃展示柜中找到。",
+														"在其中一个上锁的玻璃展示柜中可以找到一副\"许多事物的牌组\"（详见《地下城主指南》第162页的\"许多事物的牌组\"）",
+														"在其中一个上锁的玻璃柜中可以找到一张火球术卷轴。",
+														"一瓶高效治疗药水可以在一个上锁的玻璃展示柜中找到。"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Cellar",
+									"name": "地窖",
+									"type": "entries",
+									"id": "03a",
 									"page": 8,
 									"entries": [
-										"记住，这是一场慈善游戏。我是为了孩子们做的。"
-									],
-									"id": "03d"
+										"一个由大石头砌成的地窖横跨整个庄园。地窖内有成排的酒架。在地窖的后部有铁笼，除了一个笼子里关着一个名叫Quinn Quinn的狗头人外，其余都是空的。",
+										"酒窖的墙壁看起来与庄园的其他部分不同。一些墙上仍然有描绘楚尔坦矮人的古老象形文字。进行一次历史检定（{@dc 14}）可以揭示这座庄园是建立在一个更为古老的根基上。沿着其中一面墙，有一个与酒窖中其他部分不协调的酒架。将其推开后，会露出一个通向外面的秘密通道，出口位于水桶底部的后面。",
+										"梅兹·卡拉可能也在地窖里，准备将奎因·奎因带上来进行实验。"
+									]
+								},
+								{
+									"ENG_name": "Encounters of Manor Weirding",
+									"name": "怪异庄园的遭遇",
+									"type": "entries",
+									"id": "03b",
+									"page": 8,
+									"entries": [
+										"在任何探索过程中，玩家可能会遇到怪异庄园的仆人之一。这些仆人因为法师过于热衷的实验而遭受了某种形式的残疾。例子包括：不断流口水、看起来半睡半醒、类似僵尸的行为、高度偏执以及无法控制自己声音的音量。",
+										"Celeste只能在她的房间里遇到，但她可能会选择跟随队伍以逃脱。法师威尔丁不睡觉也不吃饭（除了大脑），并且经常在庄园里徘徊。如果玩家看到他，而法师没有意识到他们的存在，他将以灵吸怪的方式悬浮而不是走路。如果有任何类型的警报响起，法师就会出现。",
+										{
+											"ENG_name": "Nut Puncher Quinn Quinn",
+											"name": "坚果拳手奎因·奎因",
+											"type": "entries",
+											"id": "03c",
+											"page": 8,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "adventure/TLK/008.webp"
+													},
+													"width": 549,
+													"height": 650
+												},
+												"{@creature 狗头人} 专门擅长猛击别人的要害部位。他身上沾满了龙粪。如果从铁笼中释放出来，昆恩·昆恩会试图猛击任何男性的睾丸，同时尖叫着，\"我是坚果拳手昆恩·昆恩！\"然后逃跑。"
+											]
+										},
+										{
+											"ENG_name": "Author's Note",
+											"name": "作者注",
+											"type": "inset",
+											"id": "03d",
+											"page": 8,
+											"entries": [
+												"记住，这是一场慈善游戏。我是为了孩子们做的。"
+											]
+										}
+									]
 								}
-							],
-							"id": "03b"
+							]
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "adventure/TLK/009.webp"
+							},
+							"width": 1153,
+							"height": 1503
 						}
-					],
-					"id": "022"
+					]
 				},
 				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "adventure/TLK/009.webp"
-					},
-					"width": 1153,
-					"height": 1503
-				}
-			],
-			"id": "000"
-		},
-		{
-			"ENG_name": "Credits",
-			"name": "制作组",
-			"type": "section",
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"items": [
-						"{@b 插图与文字由} 肖恩·伍德"
+					"ENG_name": "Credits",
+					"name": "制作组",
+					"type": "section",
+					"id": "03e",
+					"entries": [
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								"{@b 插图与文字由} 肖恩·伍德"
+							]
+						}
 					]
 				}
-			],
-			"id": "03e"
+			]
 		}
 	]
 }

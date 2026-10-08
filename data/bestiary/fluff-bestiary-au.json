@@ -60,10 +60,10 @@
 						"type": "internal",
 						"path": "bestiary/AU/Archmages.webp"
 					},
-					"title": "各魔法学派的大法师：1. {@creature 咒法大法师|AU|咒法师} 2. {@creature 防护大法师|AU|防护师} 3. {@creature 死灵大法师|AU|死灵师} 4. {@creature 幻术大法师|AU|幻术师} 5. {@creature 预言大法师|AU|预言师} 6. {@creature 惑控大法师|AU|惑控师} 7. {@creature 变化大法师|AU|变化师} 8. {@creature 塑能大法师|AU|塑能师}",
-					"credit": "Anna Podedworna",
 					"width": 1700,
-					"height": 1059
+					"height": 1059,
+					"title": "各魔法学派的大法师：1. {@creature 咒法大法师|AU|咒法师} 2. {@creature 防护大法师|AU|防护师} 3. {@creature 死灵大法师|AU|死灵师} 4. {@creature 幻术大法师|AU|幻术师} 5. {@creature 预言大法师|AU|预言师} 6. {@creature 惑控大法师|AU|惑控师} 7. {@creature 变化大法师|AU|变化师} 8. {@creature 塑能大法师|AU|塑能师}",
+					"credit": "Anna Podedworna"
 				}
 			]
 		},
@@ -95,6 +95,7 @@
 								"贝伦巫妖会将其存在延展至所栖息的地区，产生以下效应：",
 								{
 									"type": "list",
+									"style": "list-hang-notitle",
 									"items": [
 										{
 											"ENG_name": "Projection",
@@ -112,8 +113,7 @@
 												"生物无法使用传送或位面旅行进入或离开巢穴。"
 											]
 										}
-									],
-									"style": "list-hang-notitle"
+									]
 								},
 								"若贝伦巫妖被摧毁或将巢穴移至别处，这些效应立即终止。"
 							]
@@ -140,9 +140,9 @@
 						"type": "internal",
 						"path": "bestiary/AU/Baelnorn.webp"
 					},
-					"credit": "Michele Giorgi",
 					"width": 850,
-					"height": 1019
+					"height": 1019,
+					"credit": "Michele Giorgi"
 				}
 			]
 		},
@@ -182,6 +182,7 @@
 						"{@creature 暗影兽|AU|暗影兽}可能保留着转化前动物残留的特征。掷骰或从暗影兽起源表中选择一个结果，作为这些外观特征的灵感。",
 						{
 							"type": "table",
+							"caption": "暗影兽起源",
 							"colLabels": [
 								"1d6",
 								"暗影兽曾经是一只......"
@@ -215,8 +216,7 @@
 									"6",
 									"{@creature 狼|XMM}，因此它会发出诡异的嚎叫。"
 								]
-							],
-							"caption": "暗影兽起源"
+							]
 						}
 					]
 				}
@@ -228,9 +228,9 @@
 						"type": "internal",
 						"path": "bestiary/AU/Darkenbeast.webp"
 					},
-					"credit": "Brian Valeza",
 					"width": 850,
-					"height": 1500
+					"height": 1500,
+					"credit": "Brian Valeza"
 				}
 			]
 		},
@@ -405,10 +405,10 @@
 						"type": "internal",
 						"path": "bestiary/AU/Groundlings.webp"
 					},
-					"title": "从左至右：{@creature 掘地兽杀戮者|AU}、{@creature 掘地兽步卒|AU}、{@creature 掘地兽追猎者|AU}",
-					"credit": "Brian Valeza",
 					"width": 1700,
-					"height": 1243
+					"height": 1243,
+					"title": "从左至右：{@creature 掘地兽杀戮者|AU}、{@creature 掘地兽步卒|AU}、{@creature 掘地兽追猎者|AU}",
+					"credit": "Brian Valeza"
 				}
 			]
 		},
@@ -508,6 +508,7 @@
 								"现在对统计数据块做以下修改：",
 								{
 									"type": "list",
+									"style": "list-hang-notitle",
 									"items": [
 										{
 											"ENG_name": "Damage Immunity",
@@ -527,8 +528,7 @@
 											"type": "item",
 											"entry": "将\"法术模拟\"的效应替换为所选法术的效应。若该法术需要豁免检定，使用\"法术模拟\"的法术豁免DC。若该法术涉及攻击检定，使用活化法术\"魔法打击\"的攻击加值。"
 										}
-									],
-									"style": "list-hang-notitle"
+									]
 								},
 								"例如，若你将{@spell 火球术|XPHB}（一道3环法术）转化为活化法术，请定制{@creature 活体浓酸球|AU}的统计数据块。活体火球术具有火焰伤害（而非强酸伤害）的{@variantrule 免疫|XPHB}，其\"魔法打击\"造成火焰伤害，并以\"法术模拟\"复现{@i 火球术}。"
 							]
@@ -566,10 +566,10 @@
 						"type": "internal",
 						"path": "bestiary/AU/Living Thunderwave.webp"
 					},
-					"title": "{@creature 活体雷鸣波|AU}",
-					"credit": "Hendry Iwanaga",
 					"width": 1700,
-					"height": 1005
+					"height": 1005,
+					"title": "{@creature 活体雷鸣波|AU}",
+					"credit": "Hendry Iwanaga"
 				}
 			]
 		},
@@ -651,9 +651,9 @@
 						"type": "internal",
 						"path": "bestiary/AU/Spellguard.webp"
 					},
-					"credit": "Brian Valeza",
 					"width": 850,
-					"height": 1072
+					"height": 1072,
+					"credit": "Brian Valeza"
 				}
 			]
 		},
@@ -678,9 +678,9 @@
 						"type": "internal",
 						"path": "bestiary/AU/Taisus.webp"
 					},
-					"credit": "Michele Giorgi",
 					"width": 850,
-					"height": 1059
+					"height": 1059,
+					"credit": "Michele Giorgi"
 				}
 			]
 		},
@@ -723,6 +723,7 @@
 						"在放弃解救萨瑞兹顿的图谋后，{@creature 文格尔|AU}试图使用数枚{@item 龙珠|XDMG|龙类纽带宝珠}来控制提亚马特。这场徒劳的图谋为文格尔招来了提亚马特终生的敌意。如今{@creature 文格尔|AU}无休止地密谋摧毁或征服提亚马特，此外还有种种邪恶图谋。掷骰或从文格尔的阴谋表中选择一个结果，以启发文格尔的下一次夺权行动。",
 						{
 							"type": "table",
+							"caption": "文格尔的阴谋",
 							"colLabels": [
 								"1d6",
 								"文格尔密谋......"
@@ -756,8 +757,7 @@
 									"6",
 									"找到名为业火之匣的神器，并使其远离其他恶棍；{@creature 文格尔|AU}害怕它可能释放萨瑞兹顿。"
 								]
-							],
-							"caption": "文格尔的阴谋"
+							]
 						}
 					]
 				},
@@ -773,6 +773,7 @@
 								"文格尔的存在会污秽其巢穴所在的地区，产生以下效应：",
 								{
 									"type": "list",
+									"style": "list-hang-notitle",
 									"items": [
 										{
 											"ENG_name": "Desolate Terrain",
@@ -790,8 +791,7 @@
 												"深渊的低语侵扰访客的梦境。每当{@creature 文格尔|AU}及其盟友以外的生物在巢穴1英里内完成一次{@variantrule 长休|XPHB}，其必须成功通过{@dc 15}的体质豁免，否则获得1级{@condition 力竭|XPHB}。"
 											]
 										}
-									],
-									"style": "list-hang-notitle"
+									]
 								},
 								"若文格尔死亡或将其巢穴移往别处，这些效应立即终止。"
 							]
@@ -806,9 +806,9 @@
 						"type": "internal",
 						"path": "bestiary/AU/Venger.webp"
 					},
-					"credit": "Swatches Studio",
 					"width": 850,
-					"height": 1242
+					"height": 1242,
+					"credit": "Swatches Studio"
 				}
 			]
 		}

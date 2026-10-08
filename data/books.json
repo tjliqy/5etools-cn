@@ -6545,7 +6545,7 @@
 						"恐怖题材",
 						"肉体恐怖",
 						"宇宙恐怪",
-						"暗黑奇幻",
+						"黑暗奇幻",
 						"民间恐怖",
 						"鬼魂故事",
 						"哥特恐怖",
@@ -13484,7 +13484,7 @@
 							"depth": 1
 						},
 						{
-							"header": "6：功亏一篑",
+							"header": "6：遗迹",
 							"depth": 1
 						},
 						{
@@ -16068,6 +16068,439 @@
 						"启封奥秘",
 						"D&D工作室团队"
 					]
+				}
+			],
+			"translator": "机翻"
+		},
+		{
+			"ENG_name": "Heroes' Feast Legends of the Table",
+			"name": "英雄宴桌坛传奇",
+			"id": "HFLotT",
+			"source": "HFLotT",
+			"group": "recipe",
+			"cover": {
+				"type": "internal",
+				"path": "covers/HFLotT.webp"
+			},
+			"published": "2026-09-15",
+			"author": "凯尔·纽曼",
+			"contents": [
+				{
+					"ENG_name": "Introduction",
+					"name": "简介",
+					"headers": [
+						"关于本书：职业的盛宴",
+						"品味世界"
+					]
+				},
+				{
+					"ENG_name": "Barbarian",
+					"name": "野蛮人",
+					"headers": [
+						{
+							"header": "闪炸莓果炸糕",
+							"statblock": true
+						},
+						{
+							"header": "霍尔盖的土豆",
+							"statblock": true
+						},
+						{
+							"header": "食人魔羊肉炖",
+							"statblock": true
+						},
+						{
+							"header": "香肠土豆羽衣甘蓝汤",
+							"statblock": true
+						},
+						{
+							"header": "萨尔斯",
+							"statblock": true
+						},
+						{
+							"header": "煎野猪肉配土豆",
+							"statblock": true
+						},
+						{
+							"header": "啤酒\"粥\"",
+							"statblock": true
+						},
+						{
+							"header": "朱伊尔德",
+							"statblock": true
+						}
+					]
+				},
+				{
+					"ENG_name": "Bard",
+					"name": "吟游诗人",
+					"headers": [
+						{
+							"header": "牦油巧克力司康",
+							"statblock": true
+						},
+						{
+							"header": "烤李子配布拉塔奶酪",
+							"statblock": true
+						},
+						{
+							"header": "红松镇碎糕",
+							"statblock": true
+						},
+						{
+							"header": "无聊鼬咸鱼惊喜",
+							"statblock": true
+						},
+						{
+							"header": "甜黄油麦酒",
+							"statblock": true
+						},
+						{
+							"header": "柠檬蓝莓行军蛋糕",
+							"statblock": true
+						}
+					]
+				},
+				{
+					"ENG_name": "Cleric",
+					"name": "牧师",
+					"headers": [
+						{
+							"header": "婚礼汤",
+							"statblock": true
+						},
+						{
+							"header": "造粮术",
+							"statblock": true
+						},
+						{
+							"header": "白兰地火腿配胡萝卜",
+							"statblock": true
+						},
+						{
+							"header": "烤火腿派",
+							"statblock": true
+						},
+						{
+							"header": "节日烤肋排",
+							"statblock": true
+						},
+						{
+							"header": "巨魔节宾治",
+							"statblock": true
+						},
+						{
+							"header": "魔导师之乐",
+							"statblock": true
+						}
+					]
+				},
+				{
+					"ENG_name": "Druid",
+					"name": "德鲁伊",
+					"headers": [
+						{
+							"header": "月之森洋蓟酱",
+							"source": "HFDoMM",
+							"statblock": true
+						},
+						{
+							"header": "野草莓沙拉",
+							"statblock": true
+						},
+						{
+							"header": "焗烤根茎蔬菜",
+							"statblock": true
+						},
+						{
+							"header": "午夜蘑菇帽",
+							"statblock": true
+						},
+						{
+							"header": "妖精蛋糕",
+							"statblock": true
+						},
+						{
+							"header": "清晨饼干",
+							"statblock": true
+						},
+						{
+							"header": "德鲁伊冬季鸡尾酒",
+							"statblock": true
+						}
+					]
+				},
+				{
+					"ENG_name": "Fighter",
+					"name": "战士",
+					"headers": [
+						{
+							"header": "香辣蚊蝠堡",
+							"source": "HFDoMM",
+							"statblock": true
+						},
+						{
+							"header": "至日汤",
+							"statblock": true
+						},
+						{
+							"header": "卡纳斯面包小牛肉排",
+							"statblock": true
+						},
+						{
+							"header": "坦萨尔",
+							"statblock": true
+						},
+						{
+							"header": "南瓜蜂蜜啤酒面包",
+							"statblock": true
+						},
+						{
+							"header": "苏卡",
+							"statblock": true
+						}
+					]
+				},
+				{
+					"ENG_name": "Monk",
+					"name": "武僧",
+					"headers": [
+						{
+							"header": "掌阳果哈罗米炸什锦",
+							"statblock": true
+						},
+						{
+							"header": "金瓜沙拉配柠檬酸奶与辣椒",
+							"statblock": true
+						},
+						{
+							"header": "蛇人仪式汤",
+							"statblock": true
+						},
+						{
+							"header": "茄子排配哈雷维普拉姆酱",
+							"statblock": true
+						},
+						{
+							"header": "格吕耶尔奶酪菠菜酿瓜",
+							"statblock": true
+						},
+						{
+							"header": "糯米鳗鱼卷",
+							"statblock": true
+						},
+						{
+							"header": "蜂蜜黑根塔尔",
+							"statblock": true
+						}
+					]
+				},
+				{
+					"ENG_name": "Paladin",
+					"name": "圣武士",
+					"headers": [
+						{
+							"header": "玉米扁豆汤",
+							"statblock": true
+						},
+						{
+							"header": "索兰尼亚蘑菇炖面团",
+							"statblock": true
+						},
+						{
+							"header": "苦修面包",
+							"statblock": true
+						},
+						{
+							"header": "天城特餐",
+							"statblock": true
+						},
+						{
+							"header": "克里加拉至尊",
+							"statblock": true
+						},
+						{
+							"header": "香料李子榛子费南雪",
+							"statblock": true
+						}
+					]
+				},
+				{
+					"ENG_name": "Ranger",
+					"name": "游侠",
+					"headers": [
+						{
+							"header": "\"剩菜\"烤蛋",
+							"statblock": true
+						},
+						{
+							"header": "蒜香黄油煎菌菇",
+							"statblock": true
+						},
+						{
+							"header": "侏儒蒜香鸡",
+							"statblock": true
+						},
+						{
+							"header": "香炸河鱼",
+							"statblock": true
+						},
+						{
+							"header": "盖斯阿德",
+							"statblock": true
+						},
+						{
+							"header": "苹果苹果煎饼",
+							"statblock": true
+						},
+						{
+							"header": "暮锦葵派",
+							"statblock": true
+						}
+					]
+				},
+				{
+					"ENG_name": "Rogue",
+					"name": "浪客",
+					"headers": [
+						{
+							"header": "啤酒配奶酪点心",
+							"statblock": true
+						},
+						{
+							"header": "半身人手指三明治",
+							"source": "HFDoMM",
+							"statblock": true
+						},
+						{
+							"header": "巴洛维亚蒜汤",
+							"statblock": true
+						},
+						{
+							"header": "杏子焖羊腿",
+							"statblock": true
+						},
+						{
+							"header": "水果里科塔煎饼",
+							"statblock": true
+						},
+						{
+							"header": "双高半身人派",
+							"statblock": true
+						},
+						{
+							"header": "明塔恩杏仁白兰地",
+							"statblock": true
+						}
+					]
+				},
+				{
+					"ENG_name": "Sorcerer",
+					"name": "术士",
+					"headers": [
+						{
+							"header": "蘑菇汤烩生蚝野米",
+							"statblock": true
+						},
+						{
+							"header": "芝士爆米花",
+							"source": "HFDoMM",
+							"statblock": true
+						},
+						{
+							"header": "薄荷豌豆汤",
+							"statblock": true
+						},
+						{
+							"header": "食腐兽牛排",
+							"statblock": true
+						},
+						{
+							"header": "糖渍相位蜘蛛眼",
+							"statblock": true
+						},
+						{
+							"header": "龙火蜜酒",
+							"statblock": true
+						}
+					]
+				},
+				{
+					"ENG_name": "Warlock",
+					"name": "魔契师",
+					"headers": [
+						{
+							"header": "深渊鸡煎蛋饼",
+							"statblock": true
+						},
+						{
+							"header": "蜜焰面包",
+							"statblock": true
+						},
+						{
+							"header": "醋渍枯藤怪沙拉",
+							"statblock": true
+						},
+						{
+							"header": "鹪鹩锅派",
+							"statblock": true
+						},
+						{
+							"header": "普斯库尔迎宾汤",
+							"statblock": true
+						},
+						{
+							"header": "夜鬼婆之乐",
+							"source": "HFDoMM",
+							"statblock": true
+						}
+					]
+				},
+				{
+					"ENG_name": "Wizard",
+					"name": "法师",
+					"headers": [
+						{
+							"header": "施法者炖菜",
+							"statblock": true
+						},
+						{
+							"header": "奥图迷舞面",
+							"statblock": true
+						},
+						{
+							"header": "墨鱼汁扇贝意面",
+							"statblock": true
+						},
+						{
+							"header": "Curtie的特餐",
+							"statblock": true
+						},
+						{
+							"header": "天界焦糖淋酱甜苹果挞",
+							"statblock": true
+						},
+						{
+							"header": "克雷姆菲尔斯",
+							"statblock": true
+						},
+						{
+							"header": "毕格比佳酿",
+							"statblock": true
+						}
+					]
+				},
+				{
+					"ENG_name": "Afterword: The Adventure Continues",
+					"name": "后记：冒险仍在继续"
+				},
+				{
+					"ENG_name": "Acknowledgments",
+					"name": "致谢"
+				},
+				{
+					"ENG_name": "Credits",
+					"name": "创作人员"
 				}
 			],
 			"translator": "机翻"

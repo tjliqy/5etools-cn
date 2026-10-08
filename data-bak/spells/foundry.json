@@ -3119,13 +3119,13 @@
 						"The target can't take Bonus Actions or Reactions and must roll 1d10 at the start of each of its turns to determine its behavior for that turn, consulting the table below.",
 						{
 							"type": "table",
-							"colStyles": [
-								"col-2 text-center",
-								"col-10"
-							],
 							"colLabels": [
 								"1d10",
 								"Behavior for the Turn"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
 							],
 							"rows": [
 								[

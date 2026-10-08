@@ -1179,13 +1179,13 @@
 				{
 					"type": "table",
 					"caption": "预兆",
-					"colStyles": [
-						"col-4",
-						"col-8"
-					],
 					"colLabels": [
 						"预兆",
 						"预兆预示着..."
+					],
+					"colStyles": [
+						"col-4",
+						"col-8"
 					],
 					"rows": [
 						[
@@ -3720,13 +3720,13 @@
 				"你选择施法距离内一点为中心，半径 10 尺{@variantrule 球状 [效应区域]|XPHB|球状}区域内的每名生物必须成功通过一次感知豁免，否则目标不能执行反应和附赠动作，并且必须在其每个回合开始时掷{@dice 1d10}，根据下表内容来决定当前回合的行为。",
 				{
 					"type": "table",
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
 					"colLabels": [
 						"1d10",
 						"轮次的行为"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
 					],
 					"rows": [
 						[
@@ -4621,13 +4621,13 @@
 				{
 					"type": "table",
 					"caption": "降水",
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
 					"colLabels": [
 						"等级",
 						"状态"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
 					],
 					"rows": [
 						[
@@ -4655,13 +4655,13 @@
 				{
 					"type": "table",
 					"caption": "气温",
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
 					"colLabels": [
 						"等级",
 						"状态"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
 					],
 					"rows": [
 						[
@@ -4693,13 +4693,13 @@
 				{
 					"type": "table",
 					"caption": "风势",
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
 					"colLabels": [
 						"等级",
 						"状态"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
 					],
 					"rows": [
 						[
@@ -5045,13 +5045,13 @@
 				{
 					"type": "table",
 					"caption": "材质",
-					"colStyles": [
-						"col-6",
-						"col-6"
-					],
 					"colLabels": [
 						"材质",
 						"持续时间"
+					],
+					"colStyles": [
+						"col-6",
+						"col-6"
 					],
 					"rows": [
 						[
@@ -6382,13 +6382,13 @@
 				{
 					"type": "table",
 					"caption": "圣言效应",
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
 					"colLabels": [
 						"生命值",
 						"效应"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
 					],
 					"rows": [
 						[
@@ -8676,7 +8676,7 @@
 			"srd52": true,
 			"basicRules2024": true,
 			"level": 2,
-			"school": "C",
+			"school": "V",
 			"time": [
 				{
 					"number": 1,
@@ -15940,13 +15940,13 @@
 				{
 					"type": "table",
 					"caption": "虹光射线",
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
 					"colLabels": [
 						"1d8",
 						"射线"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
 					],
 					"rows": [
 						[
@@ -16052,13 +16052,13 @@
 				{
 					"type": "table",
 					"caption": "虹光光层",
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
 					"colLabels": [
 						"秩序",
 						"效应"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
 					],
 					"rows": [
 						[
@@ -16876,13 +16876,13 @@
 				"你触碰一名类人生物的遗体或遗体的一部分。若该生物死亡时间不超过10日，则法术会创造出一具新的成年身体，并呼唤该生物的灵魂进入此新身躯。骰{@dice 1d10}，然后参照下表来决定新躯体的种族，或者DM也可以选择其他可选种族。",
 				{
 					"type": "table",
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
 					"colLabels": [
 						"1d10",
 						"种族"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
 					],
 					"rows": [
 						[
@@ -17443,13 +17443,13 @@
 				"你能看见和听见一个和你处于同一存在位面上的生物。目标生物必须进行一次感知豁免；该豁免的调整值与你对目标的了解程度有关（见下文），也与你和目标之间的物理联系程度有关。目标不知道它进行此豁免在对抗什么，只是会感觉不自在。",
 				{
 					"type": "table",
-					"colStyles": [
-						"col-10",
-						"col-2 text-center"
-					],
 					"colLabels": [
 						"你对目标的了解有...",
 						"豁免调整值"
+					],
+					"colStyles": [
+						"col-10",
+						"col-2 text-center"
 					],
 					"rows": [
 						[
@@ -17468,13 +17468,13 @@
 				},
 				{
 					"type": "table",
-					"colStyles": [
-						"col-10",
-						"col-2 text-center"
-					],
 					"colLabels": [
 						"你拥有目标的...",
 						"豁免调整值"
+					],
+					"colStyles": [
+						"col-10",
+						"col-2 text-center"
 					],
 					"rows": [
 						[
@@ -20637,19 +20637,19 @@
 				{
 					"type": "table",
 					"caption": "传送结果",
-					"colStyles": [
-						"col-4",
-						"col-2 text-center",
-						"col-2 text-center",
-						"col-2 text-center",
-						"col-2 text-center"
-					],
 					"colLabels": [
 						"熟悉程度",
 						"遇难",
 						"相似区域",
 						"偏离地点",
 						"顺利抵达"
+					],
+					"colStyles": [
+						"col-4",
+						"col-2 text-center",
+						"col-2 text-center",
+						"col-2 text-center",
+						"col-2 text-center"
 					],
 					"rows": [
 						[

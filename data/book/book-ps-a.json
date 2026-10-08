@@ -1,1469 +1,1475 @@
 {
-	"data": [
+	"bookData": [
 		{
-			"ENG_name": "Introduction",
-			"name": "简介",
-			"type": "section",
-			"entries": [
+			"id": "PS-A",
+			"source": "PSA",
+			"data": [
 				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/PSA/001.webp"
-					},
-					"width": 1278,
-					"height": 1655,
-					"title": "阿芒凯",
-					"credit": "Aleksi Briclot"
-				},
-				{
-					"type": "quote",
-					"skipItalics": true,
-					"skipMarks": true,
+					"ENG_name": "Introduction",
+					"name": "简介",
+					"type": "section",
+					"id": "000",
 					"entries": [
-						"这次整个位面转移的事情始于赞迪卡。很难想象有一个比从始至终都被构思为\"冒险世界\"的魔法位面更适合用于D&D冒险的了。因此，从{@i 《魔法：聚会的艺术\u2014赞迪卡》}过渡到{@i 异界传送: 赞迪卡}是再自然不过了。",
-						"接下来是依尼翠，得益于{@adventure 施特拉德的诅咒|CoS}冒险包几乎同时发布的巧合。随后随着{@i 异界传送: 卡拉德许}，我得以稍微偏离核心的D&D体验，呈现了一个相当灵活且快速的D&D魔法物品到以太动力发明的转化。现在，我们来到了阿芒凯\u2014\u2014一个受古埃及启发的沙漠位面，由一位邪恶的龙之漫游者统治，并设有一个不死生物肆虐中的小型安全避风港。它并非传统的D&D设定。",
-						"五位神明的考验为设定在阿蒙凯特的战役提供了最明显的故事结构。来自同一批新信徒的一群人可能会一起经历这些考验，而这些考验本身就可能构成一个短战役的全部内容。为了丰富体验，角色们也可以代表神明或大臣执行任务：保卫赫克玛，加入神明在沙漠中的狩猎远征等。如果加入大臣，战役可能会变得复杂，因为大臣通常不会经历考验（除非他们选择这样做），或者如果任何或所有的角色成为异议者。",
-						"或许将阿蒙凯特战役想象成是在五次考验的背景下进行的，而不是全部关于考验，是最好的方式。考验提供了结构和戏剧性，但角色之间的关系\u2014\u2014以及角色与世界其他部分之间的关系\u2014\u2014是故事核心展开的地方。你可以将你的战役设定在主角角色经历一次考验之前的时期，以考验作为整个故事的高潮。你可以使用团结的考验和野心的考验作为战役的框架设备，以探讨集体团结与个人成就的问题。（初级角色将根据自己的条件经历知识和力量的考验。）或者你可以完全忽略考验，专注于异见者角色试图颠覆纳克塔蒙的社会秩序。",
-						"一如既往，{@i 《魔法：阿蒙凯特的艺术》}是有关该位面信息的权威资源。有了这份文件，你可以利用这些信息，以最小的改动来构建一个基于第五版D&D规则的战役，你可以{@link 在这里找到|https://dnd.wizards.com/what-is-dnd/basic-rules}。即使没有这本书，你也可以在{@link 魔法网站|https://magic.wizards.com/}找到关于阿蒙凯特的传说。",
-						"祝你在试炼中好运！"
-					],
-					"by": "James Wyatt"
-				},
-				"{@note 这个补充材料中的游戏机制可以在您的D&D战役中使用，但它们尚未经过充分的游戏测试和设计迭代的磨练。基于这些原因，这个补充材料中的内容在D&D官方赛事中是不被允许使用的。}",
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/PSA/002.webp"
-					},
-					"width": 635,
-					"height": 1653,
-					"title": "象形文字启示",
-					"credit": "Raoul Vitale"
-				}
-			],
-			"id": "000"
-		},
-		{
-			"ENG_name": "The World of Amonkhet",
-			"name": "阿芒凯的世界",
-			"type": "section",
-			"page": 5,
-			"entries": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/PSA/003.webp"
-					},
-					"width": 1276,
-					"height": 1651,
-					"title": "岛屿",
-					"credit": "Christine Choi"
-				},
-				"高耸的、镶金的纪念碑打破了由阳光炙烤的沙地构成的无尽单调的地平线。令人敬畏的、长着动物头颅的神祇在人群中行走，给予他们关怀和保护，使他们免受沙漠恐怖的侵害。一条宽阔的、赋予生命的河流提供了丰富的恩赐，满足了每一个物质需求。快乐、充满希望的人们在献给他们仁慈神祇的宏伟神庙中献上祭品，满足了他们的精神需求。因为他们知道，这个生活，尽管可能非常美好，只是开始\u2014\u2014是他们神法老所承诺的来世完美的序曲。",
-				"阿蒙凯特是一个充满对立的位面。富饶的河谷之外是无尽的灼热沙漠。被诅咒的、干枯的木乃伊在沙漠中徘徊，而精心制作的木乃伊则在荣耀的城邦中照料着生者的需求。人们拥有他们所需要的一切。他们受到被称为赫克马的魔法屏障的保护，免受沙漠酷热和游荡木乃伊的侵扰，他们一生都在专注训练，磨练身体和心智至完美。然而，他们热切期待着被允许在战斗中死去并离开这个世界的时刻。",
-				"表面上，阿蒙凯特看起来是一个奇妙的居住之地。但在宏伟的外表背后，潜藏着一些令人不安和邪恶的东西。被认为正忙于为值得的人准备奇妙来世的明智而仁慈的神-法老，实际上是尼科·博拉斯\u2014\u2014这位恶意的龙形行走者，其阴谋远远超出了这个位面。所有的准备和训练，所有的考验和竞赛，所有为了变得值得的努力\u2014\u2014所有这些都是为了准备阿蒙凯特的人民转变为博拉斯指挥下的不死军团。",
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/PSA/004.webp"
-					},
-					"width": 1280,
-					"height": 1010,
-					"title": "炽热的太阳",
-					"credit": "Raymond Swanland"
-				},
-				{
-					"type": "entries",
-					"entries": [
-						{
-							"ENG_name": "Behind the Facade",
-							"name": "表面之下",
-							"type": "entries",
-							"page": 6,
-							"entries": [
-								"对任何平面居民来说都是未知的，整个阿蒙凯特社会一直受到尼古拉·博拉斯的操纵，他已经控制了这个世界、神祇和平面的魔法。博拉斯选择这个平面进行他的计划，是因为这里存在一种叫做拉索特普的魔法物质，它与死灵魔法的魔法以奇特而强大的方式相互作用。顺便说一句，他在这里还发现了一个虔诚、有组织的文明，他可以轻易地将其颠覆为自己的目标。他让自己成为法老神，将神祇本身置于他的控制之下，并消除了任何试图反抗他的人。然后他将这个世界转变成了一个工厂，旨在生产一支庞大的完美不死生物士兵大军\u2014\u2014用拉索特普制成的木乃伊。",
-								"适应了这个位面的奇特魔法之后，波拉斯找到了一种方法，在死亡后保存生物的战斗技能。他选择了五个他认为在他的不死生物士兵中最需要的角色方面，并围绕一系列旨在磨练和完善身体和心智这些方面的试炼构建了阿蒙凯特的社会。在他们的一生中，位面的人民相信他们正在接近承诺的来世\u2014\u2014最终在最后的试炼中死去，这是一场没有生还者的大规模战斗。但与赢得来世的位置不同，他们实际上是被用拉索特普（lazotep）制成木乃伊，并储存在波拉斯的巨大墓地中，增加了他不死生物军队的行列。"
-							],
-							"id": "003"
-						},
-						{
-							"ENG_name": "The Curse of Wandering",
-							"name": "流浪的诅咒",
-							"type": "entries",
-							"page": 6,
-							"entries": [
-								"阿蒙凯特的一部分魔法是博拉斯能够利用的，这是一种被称为漫游诅咒的死灵现象。这种自然发生的魔法会导致任何在位面上死亡的生物在短暂时间后再次复活，被无尽的饥饿诅咒和不可抗拒的攻击活人的冲动所困扰。由漫游诅咒创造的干枯木乃伊填满了主宰这个位面的沙漠荒地，不断威胁着所剩无几的生命。但阿蒙凯特的人们并不像他们害怕所有活着的人有一天都会死去并受到同样诅咒的知识那样害怕被攻击的威胁。在漫游诅咒的影响下死亡是一个充满无尽痛苦的可怕来世。",
-								"尼科·博拉斯这位神-法老向阿蒙凯特的人民提供了一种替代永恒流浪的选择：一个充满荣耀乐趣的来世。他们所需做的，以获得这种永恒幸福，就是证明自己是值得的。因此，流浪的诅咒是对人们经历神-法老所要求的虔诚考验的强烈动力。"
-							],
-							"id": "004"
-						},
 						{
 							"type": "image",
 							"href": {
 								"type": "internal",
-								"path": "book/PSA/005.webp"
+								"path": "book/PSA/001.webp"
 							},
-							"width": 1275,
-							"height": 793,
-							"title": "抓握沙丘",
-							"credit": "Daarken"
+							"width": 1278,
+							"height": 1655,
+							"title": "阿芒凯",
+							"credit": "Aleksi Briclot"
 						},
 						{
-							"ENG_name": "Putting Devotion to the Test",
-							"name": "考验虔诚",
-							"type": "entries",
-							"page": 7,
+							"type": "quote",
+							"skipMarks": true,
+							"skipItalics": true,
 							"entries": [
-								"阿蒙凯特的居民，无论是凡人还是神灵，都相信法老神在离开准备来世时，留下了五位神作为民众的管理者。在他离开期间，法老神期望人们将自己的生活奉献于证明他们值得这一伟大的奖赏。由于来世将是完美的，进入来世的人们也必须是完美的。",
-								"神祇是通往来世之路的守护者，由法老神设立，旨在净化并完善那些遵循这条道路并经历其考验的人们。每位神祇监督着五种考验之一，通过帮助准备面对该考验的入门者培养五种凡人完美的一个方面，来指导他们。",
+								"这次整个位面转移的事情始于赞迪卡。很难想象有一个比从始至终都被构思为\"冒险世界\"的魔法位面更适合用于D&D冒险的了。因此，从{@i 《魔法：聚会的艺术\u2014赞迪卡》}过渡到{@i 异界传送: 赞迪卡}是再自然不过了。",
+								"接下来是依尼翠，得益于{@adventure 施特拉德的诅咒|CoS}冒险包几乎同时发布的巧合。随后随着{@i 异界传送: 卡拉德许}，我得以稍微偏离核心的D&D体验，呈现了一个相当灵活且快速的D&D魔法物品到以太动力发明的转化。现在，我们来到了阿芒凯\u2014\u2014一个受古埃及启发的沙漠位面，由一位邪恶的龙之漫游者统治，并设有一个不死生物肆虐中的小型安全避风港。它并非传统的D&D设定。",
+								"五位神明的考验为设定在阿蒙凯特的战役提供了最明显的故事结构。来自同一批新信徒的一群人可能会一起经历这些考验，而这些考验本身就可能构成一个短战役的全部内容。为了丰富体验，角色们也可以代表神明或大臣执行任务：保卫赫克玛，加入神明在沙漠中的狩猎远征等。如果加入大臣，战役可能会变得复杂，因为大臣通常不会经历考验（除非他们选择这样做），或者如果任何或所有的角色成为异议者。",
+								"或许将阿蒙凯特战役想象成是在五次考验的背景下进行的，而不是全部关于考验，是最好的方式。考验提供了结构和戏剧性，但角色之间的关系\u2014\u2014以及角色与世界其他部分之间的关系\u2014\u2014是故事核心展开的地方。你可以将你的战役设定在主角角色经历一次考验之前的时期，以考验作为整个故事的高潮。你可以使用团结的考验和野心的考验作为战役的框架设备，以探讨集体团结与个人成就的问题。（初级角色将根据自己的条件经历知识和力量的考验。）或者你可以完全忽略考验，专注于异见者角色试图颠覆纳克塔蒙的社会秩序。",
+								"一如既往，{@i 《魔法：阿蒙凯特的艺术》}是有关该位面信息的权威资源。有了这份文件，你可以利用这些信息，以最小的改动来构建一个基于第五版D&D规则的战役，你可以{@link 在这里找到|https://dnd.wizards.com/what-is-dnd/basic-rules}。即使没有这本书，你也可以在{@link 魔法网站|https://magic.wizards.com/}找到关于阿蒙凯特的传说。",
+								"祝你在试炼中好运！"
+							],
+							"by": "James Wyatt"
+						},
+						"{@note 这个补充材料中的游戏机制可以在您的D&D战役中使用，但它们尚未经过充分的游戏测试和设计迭代的磨练。基于这些原因，这个补充材料中的内容在D&D官方赛事中是不被允许使用的。}",
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/PSA/002.webp"
+							},
+							"width": 635,
+							"height": 1653,
+							"title": "象形文字启示",
+							"credit": "Raoul Vitale"
+						}
+					]
+				},
+				{
+					"ENG_name": "The World of Amonkhet",
+					"name": "阿芒凯的世界",
+					"type": "section",
+					"id": "001",
+					"page": 5,
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/PSA/003.webp"
+							},
+							"width": 1276,
+							"height": 1651,
+							"title": "岛屿",
+							"credit": "Christine Choi"
+						},
+						"高耸的、镶金的纪念碑打破了由阳光炙烤的沙地构成的无尽单调的地平线。令人敬畏的、长着动物头颅的神祇在人群中行走，给予他们关怀和保护，使他们免受沙漠恐怖的侵害。一条宽阔的、赋予生命的河流提供了丰富的恩赐，满足了每一个物质需求。快乐、充满希望的人们在献给他们仁慈神祇的宏伟神庙中献上祭品，满足了他们的精神需求。因为他们知道，这个生活，尽管可能非常美好，只是开始\u2014\u2014是他们神法老所承诺的来世完美的序曲。",
+						"阿蒙凯特是一个充满对立的位面。富饶的河谷之外是无尽的灼热沙漠。被诅咒的、干枯的木乃伊在沙漠中徘徊，而精心制作的木乃伊则在荣耀的城邦中照料着生者的需求。人们拥有他们所需要的一切。他们受到被称为赫克马的魔法屏障的保护，免受沙漠酷热和游荡木乃伊的侵扰，他们一生都在专注训练，磨练身体和心智至完美。然而，他们热切期待着被允许在战斗中死去并离开这个世界的时刻。",
+						"表面上，阿蒙凯特看起来是一个奇妙的居住之地。但在宏伟的外表背后，潜藏着一些令人不安和邪恶的东西。被认为正忙于为值得的人准备奇妙来世的明智而仁慈的神-法老，实际上是尼科·博拉斯\u2014\u2014这位恶意的龙形行走者，其阴谋远远超出了这个位面。所有的准备和训练，所有的考验和竞赛，所有为了变得值得的努力\u2014\u2014所有这些都是为了准备阿蒙凯特的人民转变为博拉斯指挥下的不死军团。",
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/PSA/004.webp"
+							},
+							"width": 1280,
+							"height": 1010,
+							"title": "炽热的太阳",
+							"credit": "Raymond Swanland"
+						},
+						{
+							"type": "entries",
+							"id": "002",
+							"entries": [
 								{
-									"ENG_name": "Solidarity",
-									"name": "团结",
+									"ENG_name": "Behind the Facade",
+									"name": "表面之下",
 									"type": "entries",
-									"page": 7,
+									"id": "003",
+									"page": 6,
 									"entries": [
-										"奥克特，真实的猫头神，是团结之神，教导说值得的人应该认识并尊重所有神-法老认为值得的人。因为在来世，所有人都将共同目标和行动。"
-									],
-									"id": "006"
+										"对任何平面居民来说都是未知的，整个阿蒙凯特社会一直受到尼古拉·博拉斯的操纵，他已经控制了这个世界、神祇和平面的魔法。博拉斯选择这个平面进行他的计划，是因为这里存在一种叫做拉索特普的魔法物质，它与死灵魔法的魔法以奇特而强大的方式相互作用。顺便说一句，他在这里还发现了一个虔诚、有组织的文明，他可以轻易地将其颠覆为自己的目标。他让自己成为法老神，将神祇本身置于他的控制之下，并消除了任何试图反抗他的人。然后他将这个世界转变成了一个工厂，旨在生产一支庞大的完美不死生物士兵大军\u2014\u2014用拉索特普制成的木乃伊。",
+										"适应了这个位面的奇特魔法之后，波拉斯找到了一种方法，在死亡后保存生物的战斗技能。他选择了五个他认为在他的不死生物士兵中最需要的角色方面，并围绕一系列旨在磨练和完善身体和心智这些方面的试炼构建了阿蒙凯特的社会。在他们的一生中，位面的人民相信他们正在接近承诺的来世\u2014\u2014最终在最后的试炼中死去，这是一场没有生还者的大规模战斗。但与赢得来世的位置不同，他们实际上是被用拉索特普（lazotep）制成木乃伊，并储存在波拉斯的巨大墓地中，增加了他不死生物军队的行列。"
+									]
 								},
 								{
-									"ENG_name": "Knowledge",
-									"name": "了解",
+									"ENG_name": "The Curse of Wandering",
+									"name": "流浪的诅咒",
 									"type": "entries",
-									"page": 7,
+									"id": "004",
+									"page": 6,
 									"entries": [
-										"卡夫内特，这位以鹮为头的知识之神，教导说值得尊敬的人应该培养一个敏捷的心智\u2014\u2014一个能够感知到在来世等待的超乎想象的奇迹的心智。",
-										"力量。不可征服的罗纳斯，力量之神，以眼镜蛇为首，教导说，值得的人应该锻炼一个强壮的身体，以便在无尽的生命中持久不衰。"
-									],
-									"id": "007"
+										"阿蒙凯特的一部分魔法是博拉斯能够利用的，这是一种被称为漫游诅咒的死灵现象。这种自然发生的魔法会导致任何在位面上死亡的生物在短暂时间后再次复活，被无尽的饥饿诅咒和不可抗拒的攻击活人的冲动所困扰。由漫游诅咒创造的干枯木乃伊填满了主宰这个位面的沙漠荒地，不断威胁着所剩无几的生命。但阿蒙凯特的人们并不像他们害怕所有活着的人有一天都会死去并受到同样诅咒的知识那样害怕被攻击的威胁。在漫游诅咒的影响下死亡是一个充满无尽痛苦的可怕来世。",
+										"尼科·博拉斯这位神-法老向阿蒙凯特的人民提供了一种替代永恒流浪的选择：一个充满荣耀乐趣的来世。他们所需做的，以获得这种永恒幸福，就是证明自己是值得的。因此，流浪的诅咒是对人们经历神-法老所要求的虔诚考验的强烈动力。"
+									]
 								},
-								{
-									"ENG_name": "Ambition",
-									"name": "野心",
-									"type": "entries",
-									"page": 7,
-									"entries": [
-										"被颂扬的邦图，鳄鱼头的雄心之神，教导说值得的人应该追求伟大，因为在来世中，至高无上的地位将得到奖赏。"
-									],
-									"id": "008"
-								},
-								{
-									"ENG_name": "Zeal",
-									"name": "狂热",
-									"type": "entries",
-									"page": 7,
-									"entries": [
-										"热情的哈佐雷特，以豺狼头为象征的热心之神，教导人们说，配得上的人将毫不犹豫地热情奔向来世。他们将毫不留情地克服任何阻碍，以赢得在神法老身边的位置。"
-									],
-									"id": "009"
-								},
-								"通过其中一项试炼的新手将获得一个护身符\u2014\u2014一个他们将带到来世的魔法徽章。这些试炼以热情试炼达到高潮，这是一场至死方休的战斗。在这场最终战斗中死去是价值的证明，荣耀的死亡为新手赢得了来世的位置。被杀者的尸体被装载到葬礼驳船上，并通过通往来世的大门。但这并不是结束。相反，它标志着新手存在的最奇妙部分的开始。每个人都期待着在最终试炼中死亡，希望在亲密朋友手中找到荣耀的结局，这样他们就可以一起作为永恒者与法老神在来世中生活。永远。",
 								{
 									"type": "image",
 									"href": {
 										"type": "internal",
-										"path": "book/PSA/006.webp"
+										"path": "book/PSA/005.webp"
 									},
-									"width": 630,
-									"height": 1651,
-									"title": "荣誉庄稼队长",
-									"credit": "Sara Winters"
-								}
-							],
-							"id": "005"
-						}
-					],
-					"id": "002"
-				},
-				{
-					"ENG_name": "People of Naktamun",
-					"name": "纳克塔蒙的人民",
-					"type": "section",
-					"page": 8,
-					"entries": [
-						"阿蒙凯特的居民从很小的时候就开始为五位神祇的试炼接受训练。年仅五岁的儿童就被邀请成为见习者\u2014\u2014这是他们精神发展的第一阶段。一年一度的仪式是这些年轻人的成年礼，标志着他们向死后世界旅程的开始。",
-						"在完成了训练和建造将在团结试炼中被保卫的方尖碑之后，一批门徒终于准备好在测量仪式中站在五位神面前。那些被认为值得的人被要求继续他们作为法老神的入门者的来世之旅。其他人被个别神选中，走上通往来世的另一条道路，成为服务于神的维齐尔。但有些人站在两个太阳的光芒下，被认为不值得走这两条道路，缺乏进入来世所需的美德。特别是，怀疑法老神教导或纳克塔蒙生活方式的门徒被从队伍中剔除，并被流放出城邦。",
-						"你的角色背景可以反映测量仪式的结果。",
-						{
-							"type": "entries",
-							"entries": [
-								{
-									"type": "list",
-									"columns": 3,
-									"items": [
-										"{@background 学徒|PSA}",
-										"{@background 学徒（异教徒）|PSA}",
-										"{@background 大臣|PSA}",
-										"{@background 大臣（异议者）|PSA}"
-									]
+									"width": 1275,
+									"height": 793,
+									"title": "抓握沙丘",
+									"credit": "Daarken"
 								},
 								{
-									"ENG_name": "Initiate",
-									"name": "学徒",
-									"type": "statblock",
-									"tag": "background",
-									"source": "PSA"
-								},
-								{
-									"ENG_name": "Initiate (Dissenter)",
-									"name": "学徒（异教徒）",
-									"type": "statblock",
-									"tag": "background",
-									"source": "PSA"
-								},
-								{
-									"ENG_name": "Vizier",
-									"name": "大臣",
-									"type": "statblock",
-									"tag": "background",
-									"source": "PSA"
-								},
-								{
-									"ENG_name": "Vizier (Dissenter)",
-									"name": "大臣（异议者）",
-									"type": "statblock",
-									"tag": "background",
-									"source": "PSA"
-								}
-							],
-							"id": "00b"
-						}
-					],
-					"id": "00a"
-				}
-			],
-			"id": "001"
-		},
-		{
-			"ENG_name": "Races of Amonkhet",
-			"name": "阿芒凯的种族",
-			"type": "section",
-			"entries": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/PSA/007.webp"
-					},
-					"title": "艾文心智审查者",
-					"credit": "Jose Cabrera",
-					"width": 1277,
-					"height": 1652
-				},
-				{
-					"type": "list",
-					"columns": 3,
-					"items": [
-						"{@race 人类 (阿芒凯)|PSA}",
-						"{@race 艾文|PSA}",
-						"{@race 艾文 (鹰首)|PSA}",
-						"{@race 艾文 (鹭首)|PSA}",
-						"{@race 胡狼人|PSA}",
-						"{@race 牛头人 (阿芒凯)|PSA}",
-						"{@race 纳迦|PSA}"
-					]
-				},
-				{
-					"ENG_name": "Human (Amonkhet)",
-					"name": "人类 (阿芒凯)",
-					"type": "statblock",
-					"tag": "race",
-					"source": "PSA"
-				},
-				{
-					"ENG_name": "Aven",
-					"name": "艾文",
-					"type": "statblock",
-					"tag": "race",
-					"source": "PSA"
-				},
-				{
-					"ENG_name": "Aven (Hawk-Headed)",
-					"name": "艾文 (鹰首)",
-					"type": "statblock",
-					"tag": "race",
-					"source": "PSA"
-				},
-				{
-					"ENG_name": "Aven (Ibis-Headed)",
-					"name": "艾文 (鹭首)",
-					"type": "statblock",
-					"tag": "race",
-					"source": "PSA"
-				},
-				{
-					"ENG_name": "Khenra",
-					"name": "胡狼人",
-					"type": "statblock",
-					"tag": "race",
-					"source": "PSA"
-				},
-				{
-					"ENG_name": "Minotaur (Amonkhet)",
-					"name": "牛头人 (阿芒凯)",
-					"type": "statblock",
-					"tag": "race",
-					"source": "PSA"
-				},
-				{
-					"ENG_name": "Naga",
-					"name": "纳迦",
-					"type": "statblock",
-					"tag": "race",
-					"source": "PSA"
-				}
-			],
-			"id": "00c"
-		},
-		{
-			"ENG_name": "Trials of the Five Gods",
-			"name": "五大神的试炼",
-			"type": "section",
-			"page": 24,
-			"entries": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/PSA/008.webp"
-					},
-					"title": "纳克塔蒙",
-					"credit": "Titus Lunter",
-					"width": 1278,
-					"height": 1655
-				},
-				"五位神祇是阿蒙凯特的有效统治者。他们不是这个位面的创造者，但在纳克塔蒙人民等待神法老的归来时，他们是这个位面的守护者。五位神祇相信他们是被神法老创造的，神法老赋予他们教导人民神法老之道，并在他到来之前保护他们。",
-				"五位神灵代表了法老神希望在那些将成为他永恒者的人中培养的五种美德。每位神灵负责为纳克塔蒙的门徒和新信徒树立和教授其中一种美德，然后测试这些新信徒以确保他们已经掌握了他们的教导。因此，他们在门徒的第一课、度量仪式、新信徒的密集训练，以及作为新信徒旅程一部分的每一次试炼中都会出现。",
-				"在神-法老缺席的情况下，只有神明能决定新信徒是否证明了自己配得上来世的荣耀。反过来，神明通过无误地履行自己的职责来证明自己的价值。他们尽可能地使考验具有挑战性，以确保只有最有价值的人被选中。",
-				{
-					"type": "entries",
-					"entries": [
-						{
-							"type": "entries",
-							"entries": [
-								{
-									"ENG_name": "Cleric Domains",
-									"name": "牧师领域",
+									"ENG_name": "Putting Devotion to the Test",
+									"name": "考验虔诚",
 									"type": "entries",
-									"page": 24,
+									"id": "005",
+									"page": 7,
 									"entries": [
-										"五位神祇的神职人员，通常也是神祇的宰相，可以选择与他们的神祇相关的领域：团结、知识、力量、雄心或热情。"
-									],
-									"id": "010"
-								},
-								{
-									"type": "list",
-									"columns": 3,
-									"items": [
-										"{@class 牧师||奥凯特拉：团结领域|团结(PSA)|PSA}",
-										"{@class 牧师||凯夫内特：知识领域|知识(PSA)|PSA}",
-										"{@class 牧师||罗纳斯：力量领域|力量(PSA)|PSA}",
-										"{@class 牧师||邦图：野心领域|野心(PSA)|PSA}",
-										"{@class 牧师||哈佐雷特：热情领域|热忱(PSA)|PSA}"
-									]
-								},
-								{
-									"ENG_name": "Solidarity Domain (PSA)",
-									"name": "团结领域(PSA)",
-									"type": "statblock",
-									"tag": "subclass",
-									"source": "PSA",
-									"shortName": "团结(PSA)",
-									"className": "牧师",
-									"classSource": "PHB"
-								},
-								{
-									"ENG_name": "Knowledge Domain (PSA)",
-									"name": "知识领域(PSA)",
-									"type": "statblock",
-									"tag": "subclass",
-									"source": "PSA",
-									"shortName": "知识(PSA)",
-									"className": "牧师",
-									"classSource": "PHB"
-								},
-								{
-									"ENG_name": "Strength Domain (PSA)",
-									"name": "力量领域(PSA)",
-									"type": "statblock",
-									"tag": "subclass",
-									"source": "PSA",
-									"shortName": "力量(PSA)",
-									"className": "牧师",
-									"classSource": "PHB"
-								},
-								{
-									"ENG_name": "Ambition Domain (PSA)",
-									"name": "野心领域(PSA)",
-									"type": "statblock",
-									"tag": "subclass",
-									"source": "PSA",
-									"shortName": "野心(PSA)",
-									"className": "牧师",
-									"classSource": "PHB"
-								},
-								{
-									"ENG_name": "Zeal Domain (PSA)",
-									"name": "热忱领域(PSA)",
-									"type": "statblock",
-									"tag": "subclass",
-									"source": "PSA",
-									"shortName": "热忱(PSA)",
-									"className": "牧师",
-									"classSource": "PHB"
-								},
-								{
-									"type": "gallery",
-									"images": [
+										"阿蒙凯特的居民，无论是凡人还是神灵，都相信法老神在离开准备来世时，留下了五位神作为民众的管理者。在他离开期间，法老神期望人们将自己的生活奉献于证明他们值得这一伟大的奖赏。由于来世将是完美的，进入来世的人们也必须是完美的。",
+										"神祇是通往来世之路的守护者，由法老神设立，旨在净化并完善那些遵循这条道路并经历其考验的人们。每位神祇监督着五种考验之一，通过帮助准备面对该考验的入门者培养五种凡人完美的一个方面，来指导他们。",
+										{
+											"ENG_name": "Solidarity",
+											"name": "团结",
+											"type": "entries",
+											"id": "006",
+											"page": 7,
+											"entries": [
+												"奥克特，真实的猫头神，是团结之神，教导说值得的人应该认识并尊重所有神-法老认为值得的人。因为在来世，所有人都将共同目标和行动。"
+											]
+										},
+										{
+											"ENG_name": "Knowledge",
+											"name": "了解",
+											"type": "entries",
+											"id": "007",
+											"page": 7,
+											"entries": [
+												"卡夫内特，这位以鹮为头的知识之神，教导说值得尊敬的人应该培养一个敏捷的心智\u2014\u2014一个能够感知到在来世等待的超乎想象的奇迹的心智。",
+												"力量。不可征服的罗纳斯，力量之神，以眼镜蛇为首，教导说，值得的人应该锻炼一个强壮的身体，以便在无尽的生命中持久不衰。"
+											]
+										},
+										{
+											"ENG_name": "Ambition",
+											"name": "野心",
+											"type": "entries",
+											"id": "008",
+											"page": 7,
+											"entries": [
+												"被颂扬的邦图，鳄鱼头的雄心之神，教导说值得的人应该追求伟大，因为在来世中，至高无上的地位将得到奖赏。"
+											]
+										},
+										{
+											"ENG_name": "Zeal",
+											"name": "狂热",
+											"type": "entries",
+											"id": "009",
+											"page": 7,
+											"entries": [
+												"热情的哈佐雷特，以豺狼头为象征的热心之神，教导人们说，配得上的人将毫不犹豫地热情奔向来世。他们将毫不留情地克服任何阻碍，以赢得在神法老身边的位置。"
+											]
+										},
+										"通过其中一项试炼的新手将获得一个护身符\u2014\u2014一个他们将带到来世的魔法徽章。这些试炼以热情试炼达到高潮，这是一场至死方休的战斗。在这场最终战斗中死去是价值的证明，荣耀的死亡为新手赢得了来世的位置。被杀者的尸体被装载到葬礼驳船上，并通过通往来世的大门。但这并不是结束。相反，它标志着新手存在的最奇妙部分的开始。每个人都期待着在最终试炼中死亡，希望在亲密朋友手中找到荣耀的结局，这样他们就可以一起作为永恒者与法老神在来世中生活。永远。",
 										{
 											"type": "image",
 											"href": {
 												"type": "internal",
-												"path": "book/PSA/009.webp"
+												"path": "book/PSA/006.webp"
 											},
-											"title": "奥克特拉·真",
-											"credit": "Chase Stone",
 											"width": 630,
-											"height": 863
-										},
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "book/PSA/010.webp"
-											},
-											"title": "凯芙妮特，深思者",
-											"credit": "Chase Stone",
-											"width": 1276,
-											"height": 845
-										},
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "book/PSA/011.webp"
-											},
-											"title": "不屈的罗纳斯",
-											"credit": "Chase Stone",
-											"width": 1276,
-											"height": 903
-										},
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "book/PSA/012.webp"
-											},
-											"title": "博图，被颂扬者",
-											"credit": "Chase Stone",
-											"width": 741,
-											"height": 904
-										},
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "book/PSA/013.webp"
-											},
-											"title": "哈佐雷特，热情者",
-											"credit": "Chase Stone",
-											"width": 947,
-											"height": 818
+											"height": 1651,
+											"title": "荣誉庄稼队长",
+											"credit": "Sara Winters"
 										}
 									]
 								}
-							],
-							"id": "00f"
+							]
+						},
+						{
+							"ENG_name": "People of Naktamun",
+							"name": "纳克塔蒙的人民",
+							"type": "section",
+							"id": "00a",
+							"page": 8,
+							"entries": [
+								"阿蒙凯特的居民从很小的时候就开始为五位神祇的试炼接受训练。年仅五岁的儿童就被邀请成为见习者\u2014\u2014这是他们精神发展的第一阶段。一年一度的仪式是这些年轻人的成年礼，标志着他们向死后世界旅程的开始。",
+								"在完成了训练和建造将在团结试炼中被保卫的方尖碑之后，一批门徒终于准备好在测量仪式中站在五位神面前。那些被认为值得的人被要求继续他们作为法老神的入门者的来世之旅。其他人被个别神选中，走上通往来世的另一条道路，成为服务于神的维齐尔。但有些人站在两个太阳的光芒下，被认为不值得走这两条道路，缺乏进入来世所需的美德。特别是，怀疑法老神教导或纳克塔蒙生活方式的门徒被从队伍中剔除，并被流放出城邦。",
+								"你的角色背景可以反映测量仪式的结果。",
+								{
+									"type": "entries",
+									"id": "00b",
+									"entries": [
+										{
+											"type": "list",
+											"columns": 3,
+											"items": [
+												"{@background 学徒|PSA}",
+												"{@background 学徒（异教徒）|PSA}",
+												"{@background 大臣|PSA}",
+												"{@background 大臣（异议者）|PSA}"
+											]
+										},
+										{
+											"ENG_name": "Initiate",
+											"name": "学徒",
+											"type": "statblock",
+											"tag": "background",
+											"source": "PSA"
+										},
+										{
+											"ENG_name": "Initiate (Dissenter)",
+											"name": "学徒（异教徒）",
+											"type": "statblock",
+											"tag": "background",
+											"source": "PSA"
+										},
+										{
+											"ENG_name": "Vizier",
+											"name": "大臣",
+											"type": "statblock",
+											"tag": "background",
+											"source": "PSA"
+										},
+										{
+											"ENG_name": "Vizier (Dissenter)",
+											"name": "大臣（异议者）",
+											"type": "statblock",
+											"tag": "background",
+											"source": "PSA"
+										}
+									]
+								}
+							]
 						}
-					],
-					"id": "00e"
-				}
-			],
-			"id": "00d"
-		},
-		{
-			"ENG_name": "An Amonkhet Bestiary",
-			"name": "阿芒凯怪物图鉴",
-			"type": "section",
-			"page": 35,
-			"entries": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/PSA/014.webp"
-					},
-					"title": "谴责天使",
-					"credit": "Slawomir Maniak",
-					"width": 1275,
-					"height": 1651
-				},
-				{
-					"type": "list",
-					"columns": 3,
-					"items": [
-						"{@creature 成年阿蒙克赫特龙|PSA}",
-						"{@creature 阿努比斯|PSA}",
-						"{@creature 阿蒙克赫特幼龙|PSA}",
-						"{@creature 阿蒙克特多头蛇|PSA}",
-						"{@creature 阿蒙克赫特木乃伊|PSA}",
-						"{@creature 阿蒙克特木乃伊领主|PSA}",
-						"{@creature 阿蒙克赫特斯芬克斯|PSA}",
-						"{@creature 远古阿蒙克赫特龙|PSA}",
-						"{@creature 阿蒙克赫特的天使|PSA}",
-						"{@creature 受膏者|PSA}",
-						"{@creature 伊夫尼尔的恶魔领主|PSA}",
-						"{@creature 瑟罗登|PSA}",
-						"{@creature 克瑞奥斯芬克斯|PSA}",
-						"{@creature 永恒者|PSA}",
-						"{@creature 巨型河流巨蟒|PSA}",
-						"{@creature 河马|PSA}",
-						"{@creature 大型龙兽|PSA}",
-						"{@creature 蝎尾狮，穿心者|PSA}",
-						"{@creature 河流巨蛇|PSA}",
-						"{@creature 沙虫|PSA}",
-						"{@creature 蛇豹|PSA}",
-						"{@creature 小型龙|PSA}",
-						"{@creature 灵魂刺击恶魔|PSA}",
-						"{@creature 青年阿蒙克赫特龙|PSA}"
 					]
 				},
-				"即使是相对普通的动物在沙漠中也可能构成威胁。{@creature 巨蝎|MM|巨蝎}、{@creature 巨蜈蚣|MM|巨蜈蚣}、{@creature 巨蜥|MM|巨蜥}、{@creature 巨黄蜂|MM|巨黄蜂}和{@creature 昆虫集群|MM|昆虫集群}对生物和僵尸都可能构成严重威胁。",
 				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/PSA/015.webp"
-					},
-					"title": "荒地蝎",
-					"credit": "Yeong-Hao Han",
-					"width": 625,
-					"height": 440
-				},
-				{
-					"ENG_name": "Adult Amonkhet Dragon",
-					"name": "成年阿蒙克赫特龙",
+					"ENG_name": "Races of Amonkhet",
+					"name": "阿芒凯的种族",
 					"type": "section",
+					"id": "00c",
 					"entries": [
 						{
-							"ENG_name": "Adult Amonkhet Dragon",
-							"name": "成年阿蒙克赫特龙",
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/PSA/007.webp"
+							},
+							"width": 1277,
+							"height": 1652,
+							"title": "艾文心智审查者",
+							"credit": "Jose Cabrera"
+						},
+						{
+							"type": "list",
+							"columns": 3,
+							"items": [
+								"{@race 人类 (阿芒凯)|PSA}",
+								"{@race 艾文|PSA}",
+								"{@race 艾文 (鹰首)|PSA}",
+								"{@race 艾文 (鹭首)|PSA}",
+								"{@race 胡狼人|PSA}",
+								"{@race 牛头人 (阿芒凯)|PSA}",
+								"{@race 纳迦|PSA}"
+							]
+						},
+						{
+							"ENG_name": "Human (Amonkhet)",
+							"name": "人类 (阿芒凯)",
 							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSA",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"tag": "race",
+							"source": "PSA"
+						},
+						{
+							"ENG_name": "Aven",
+							"name": "艾文",
+							"type": "statblock",
+							"tag": "race",
+							"source": "PSA"
+						},
+						{
+							"ENG_name": "Aven (Hawk-Headed)",
+							"name": "艾文 (鹰首)",
+							"type": "statblock",
+							"tag": "race",
+							"source": "PSA"
+						},
+						{
+							"ENG_name": "Aven (Ibis-Headed)",
+							"name": "艾文 (鹭首)",
+							"type": "statblock",
+							"tag": "race",
+							"source": "PSA"
+						},
+						{
+							"ENG_name": "Khenra",
+							"name": "胡狼人",
+							"type": "statblock",
+							"tag": "race",
+							"source": "PSA"
+						},
+						{
+							"ENG_name": "Minotaur (Amonkhet)",
+							"name": "牛头人 (阿芒凯)",
+							"type": "statblock",
+							"tag": "race",
+							"source": "PSA"
+						},
+						{
+							"ENG_name": "Naga",
+							"name": "纳迦",
+							"type": "statblock",
+							"tag": "race",
+							"source": "PSA"
+						}
+					]
+				},
+				{
+					"ENG_name": "Trials of the Five Gods",
+					"name": "五大神的试炼",
+					"type": "section",
+					"id": "00d",
+					"page": 24,
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/PSA/008.webp"
+							},
+							"width": 1278,
+							"height": 1655,
+							"title": "纳克塔蒙",
+							"credit": "Titus Lunter"
+						},
+						"五位神祇是阿蒙凯特的有效统治者。他们不是这个位面的创造者，但在纳克塔蒙人民等待神法老的归来时，他们是这个位面的守护者。五位神祇相信他们是被神法老创造的，神法老赋予他们教导人民神法老之道，并在他到来之前保护他们。",
+						"五位神灵代表了法老神希望在那些将成为他永恒者的人中培养的五种美德。每位神灵负责为纳克塔蒙的门徒和新信徒树立和教授其中一种美德，然后测试这些新信徒以确保他们已经掌握了他们的教导。因此，他们在门徒的第一课、度量仪式、新信徒的密集训练，以及作为新信徒旅程一部分的每一次试炼中都会出现。",
+						"在神-法老缺席的情况下，只有神明能决定新信徒是否证明了自己配得上来世的荣耀。反过来，神明通过无误地履行自己的职责来证明自己的价值。他们尽可能地使考验具有挑战性，以确保只有最有价值的人被选中。",
+						{
+							"type": "entries",
+							"id": "00e",
+							"entries": [
+								{
+									"type": "entries",
+									"id": "00f",
+									"entries": [
+										{
+											"ENG_name": "Cleric Domains",
+											"name": "牧师领域",
+											"type": "entries",
+											"id": "010",
+											"page": 24,
+											"entries": [
+												"五位神祇的神职人员，通常也是神祇的宰相，可以选择与他们的神祇相关的领域：团结、知识、力量、雄心或热情。"
+											]
+										},
+										{
+											"type": "list",
+											"columns": 3,
+											"items": [
+												"{@class 牧师||奥凯特拉：团结领域|团结(PSA)|PSA}",
+												"{@class 牧师||凯夫内特：知识领域|知识(PSA)|PSA}",
+												"{@class 牧师||罗纳斯：力量领域|力量(PSA)|PSA}",
+												"{@class 牧师||邦图：野心领域|野心(PSA)|PSA}",
+												"{@class 牧师||哈佐雷特：热情领域|热忱(PSA)|PSA}"
+											]
+										},
+										{
+											"ENG_name": "Solidarity Domain (PSA)",
+											"name": "团结领域(PSA)",
+											"type": "statblock",
+											"tag": "subclass",
+											"shortName": "团结(PSA)",
+											"className": "牧师",
+											"classSource": "PHB",
+											"source": "PSA"
+										},
+										{
+											"ENG_name": "Knowledge Domain (PSA)",
+											"name": "知识领域(PSA)",
+											"type": "statblock",
+											"tag": "subclass",
+											"shortName": "知识(PSA)",
+											"className": "牧师",
+											"classSource": "PHB",
+											"source": "PSA"
+										},
+										{
+											"ENG_name": "Strength Domain (PSA)",
+											"name": "力量领域(PSA)",
+											"type": "statblock",
+											"tag": "subclass",
+											"shortName": "力量(PSA)",
+											"className": "牧师",
+											"classSource": "PHB",
+											"source": "PSA"
+										},
+										{
+											"ENG_name": "Ambition Domain (PSA)",
+											"name": "野心领域(PSA)",
+											"type": "statblock",
+											"tag": "subclass",
+											"shortName": "野心(PSA)",
+											"className": "牧师",
+											"classSource": "PHB",
+											"source": "PSA"
+										},
+										{
+											"ENG_name": "Zeal Domain (PSA)",
+											"name": "热忱领域(PSA)",
+											"type": "statblock",
+											"tag": "subclass",
+											"shortName": "热忱(PSA)",
+											"className": "牧师",
+											"classSource": "PHB",
+											"source": "PSA"
+										},
+										{
+											"type": "gallery",
+											"images": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "book/PSA/009.webp"
+													},
+													"width": 630,
+													"height": 863,
+													"title": "奥克特拉·真",
+													"credit": "Chase Stone"
+												},
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "book/PSA/010.webp"
+													},
+													"width": 1276,
+													"height": 845,
+													"title": "凯芙妮特，深思者",
+													"credit": "Chase Stone"
+												},
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "book/PSA/011.webp"
+													},
+													"width": 1276,
+													"height": 903,
+													"title": "不屈的罗纳斯",
+													"credit": "Chase Stone"
+												},
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "book/PSA/012.webp"
+													},
+													"width": 741,
+													"height": 904,
+													"title": "博图，被颂扬者",
+													"credit": "Chase Stone"
+												},
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "book/PSA/013.webp"
+													},
+													"width": 947,
+													"height": 818,
+													"title": "哈佐雷特，热情者",
+													"credit": "Chase Stone"
+												}
+											]
+										}
+									]
 								}
-							}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "An Amonkhet Bestiary",
+					"name": "阿芒凯怪物图鉴",
+					"type": "section",
+					"id": "011",
+					"page": 35,
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/PSA/014.webp"
+							},
+							"width": 1275,
+							"height": 1651,
+							"title": "谴责天使",
+							"credit": "Slawomir Maniak"
+						},
+						{
+							"type": "list",
+							"columns": 3,
+							"items": [
+								"{@creature 成年阿蒙克赫特龙|PSA}",
+								"{@creature 阿努比斯|PSA}",
+								"{@creature 阿蒙克赫特幼龙|PSA}",
+								"{@creature 阿蒙克特多头蛇|PSA}",
+								"{@creature 阿蒙克赫特木乃伊|PSA}",
+								"{@creature 阿蒙克特木乃伊领主|PSA}",
+								"{@creature 阿蒙克赫特斯芬克斯|PSA}",
+								"{@creature 远古阿蒙克赫特龙|PSA}",
+								"{@creature 阿蒙克赫特的天使|PSA}",
+								"{@creature 受膏者|PSA}",
+								"{@creature 伊夫尼尔的恶魔领主|PSA}",
+								"{@creature 瑟罗登|PSA}",
+								"{@creature 克瑞奥斯芬克斯|PSA}",
+								"{@creature 永恒者|PSA}",
+								"{@creature 巨型河流巨蟒|PSA}",
+								"{@creature 河马|PSA}",
+								"{@creature 大型龙兽|PSA}",
+								"{@creature 蝎尾狮，穿心者|PSA}",
+								"{@creature 河流巨蛇|PSA}",
+								"{@creature 沙虫|PSA}",
+								"{@creature 蛇豹|PSA}",
+								"{@creature 小型龙|PSA}",
+								"{@creature 灵魂刺击恶魔|PSA}",
+								"{@creature 青年阿蒙克赫特龙|PSA}"
+							]
+						},
+						"即使是相对普通的动物在沙漠中也可能构成威胁。{@creature 巨蝎|MM|巨蝎}、{@creature 巨蜈蚣|MM|巨蜈蚣}、{@creature 巨蜥|MM|巨蜥}、{@creature 巨黄蜂|MM|巨黄蜂}和{@creature 昆虫集群|MM|昆虫集群}对生物和僵尸都可能构成严重威胁。",
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/PSA/015.webp"
+							},
+							"width": 625,
+							"height": 440,
+							"title": "荒地蝎",
+							"credit": "Yeong-Hao Han"
 						},
 						{
 							"ENG_name": "Adult Amonkhet Dragon",
 							"name": "成年阿蒙克赫特龙",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSA",
-							"style": "narrow"
-						}
-					],
-					"id": "01e"
-				},
-				{
-					"ENG_name": "Ammit",
-					"name": "阿努比斯",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Ammit",
-							"name": "阿努比斯",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSA",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "01e",
+							"entries": [
+								{
+									"ENG_name": "Adult Amonkhet Dragon",
+									"name": "成年阿蒙克赫特龙",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSA",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Adult Amonkhet Dragon",
+									"name": "成年阿蒙克赫特龙",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSA",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Ammit",
 							"name": "阿努比斯",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSA",
-							"style": "narrow"
-						}
-					],
-					"id": "01f"
-				},
-				{
-					"ENG_name": "Amonkhet Dragon Wyrmling",
-					"name": "阿蒙克赫特幼龙",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Amonkhet Dragon Wyrmling",
-							"name": "阿蒙克赫特幼龙",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSA",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "01f",
+							"entries": [
+								{
+									"ENG_name": "Ammit",
+									"name": "阿努比斯",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSA",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Ammit",
+									"name": "阿努比斯",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSA",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Amonkhet Dragon Wyrmling",
 							"name": "阿蒙克赫特幼龙",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSA",
-							"style": "narrow"
-						}
-					],
-					"id": "020"
-				},
-				{
-					"ENG_name": "Amonkhet Hydra",
-					"name": "阿蒙克特多头蛇",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Amonkhet Hydra",
-							"name": "阿蒙克特多头蛇",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSA",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "020",
+							"entries": [
+								{
+									"ENG_name": "Amonkhet Dragon Wyrmling",
+									"name": "阿蒙克赫特幼龙",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSA",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Amonkhet Dragon Wyrmling",
+									"name": "阿蒙克赫特幼龙",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSA",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Amonkhet Hydra",
 							"name": "阿蒙克特多头蛇",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSA",
-							"style": "narrow"
-						}
-					],
-					"id": "021"
-				},
-				{
-					"ENG_name": "Amonkhet Mummy",
-					"name": "阿蒙克赫特木乃伊",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Amonkhet Mummy",
-							"name": "阿蒙克赫特木乃伊",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSA",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "021",
+							"entries": [
+								{
+									"ENG_name": "Amonkhet Hydra",
+									"name": "阿蒙克特多头蛇",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSA",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Amonkhet Hydra",
+									"name": "阿蒙克特多头蛇",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSA",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Amonkhet Mummy",
 							"name": "阿蒙克赫特木乃伊",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSA",
-							"style": "narrow"
-						}
-					],
-					"id": "022"
-				},
-				{
-					"ENG_name": "Amonkhet Mummy Lord",
-					"name": "阿蒙克特木乃伊领主",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Amonkhet Mummy Lord",
-							"name": "阿蒙克特木乃伊领主",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSA",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "022",
+							"entries": [
+								{
+									"ENG_name": "Amonkhet Mummy",
+									"name": "阿蒙克赫特木乃伊",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSA",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Amonkhet Mummy",
+									"name": "阿蒙克赫特木乃伊",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSA",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Amonkhet Mummy Lord",
 							"name": "阿蒙克特木乃伊领主",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSA",
-							"style": "narrow"
-						}
-					],
-					"id": "023"
-				},
-				{
-					"ENG_name": "Amonkhet Sphinx",
-					"name": "阿蒙克赫特斯芬克斯",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Amonkhet Sphinx",
-							"name": "阿蒙克赫特斯芬克斯",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSA",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "023",
+							"entries": [
+								{
+									"ENG_name": "Amonkhet Mummy Lord",
+									"name": "阿蒙克特木乃伊领主",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSA",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Amonkhet Mummy Lord",
+									"name": "阿蒙克特木乃伊领主",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSA",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Amonkhet Sphinx",
 							"name": "阿蒙克赫特斯芬克斯",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSA",
-							"style": "narrow"
-						}
-					],
-					"id": "024"
-				},
-				{
-					"ENG_name": "Ancient Amonkhet Dragon",
-					"name": "远古阿蒙克赫特龙",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Ancient Amonkhet Dragon",
-							"name": "远古阿蒙克赫特龙",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSA",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "024",
+							"entries": [
+								{
+									"ENG_name": "Amonkhet Sphinx",
+									"name": "阿蒙克赫特斯芬克斯",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSA",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Amonkhet Sphinx",
+									"name": "阿蒙克赫特斯芬克斯",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSA",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Ancient Amonkhet Dragon",
 							"name": "远古阿蒙克赫特龙",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSA",
-							"style": "narrow"
-						}
-					],
-					"id": "025"
-				},
-				{
-					"ENG_name": "Angel of Amonkhet",
-					"name": "阿蒙克赫特的天使",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Angel of Amonkhet",
-							"name": "阿蒙克赫特的天使",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSA",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "025",
+							"entries": [
+								{
+									"ENG_name": "Ancient Amonkhet Dragon",
+									"name": "远古阿蒙克赫特龙",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSA",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Ancient Amonkhet Dragon",
+									"name": "远古阿蒙克赫特龙",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSA",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Angel of Amonkhet",
 							"name": "阿蒙克赫特的天使",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSA",
-							"style": "narrow"
-						}
-					],
-					"id": "026"
-				},
-				{
-					"ENG_name": "Anointed",
-					"name": "受膏者",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Anointed",
-							"name": "受膏者",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSA",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "026",
+							"entries": [
+								{
+									"ENG_name": "Angel of Amonkhet",
+									"name": "阿蒙克赫特的天使",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSA",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Angel of Amonkhet",
+									"name": "阿蒙克赫特的天使",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSA",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Anointed",
 							"name": "受膏者",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSA",
-							"style": "narrow"
-						}
-					],
-					"id": "027"
-				},
-				{
-					"ENG_name": "Archfiend of Ifnir",
-					"name": "伊夫尼尔的恶魔领主",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Archfiend of Ifnir",
-							"name": "伊夫尼尔的恶魔领主",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSA",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "027",
+							"entries": [
+								{
+									"ENG_name": "Anointed",
+									"name": "受膏者",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSA",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Anointed",
+									"name": "受膏者",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSA",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Archfiend of Ifnir",
 							"name": "伊夫尼尔的恶魔领主",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSA",
-							"style": "narrow"
-						}
-					],
-					"id": "028"
-				},
-				{
-					"ENG_name": "Cerodon",
-					"name": "瑟罗登",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Cerodon",
-							"name": "瑟罗登",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSA",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "028",
+							"entries": [
+								{
+									"ENG_name": "Archfiend of Ifnir",
+									"name": "伊夫尼尔的恶魔领主",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSA",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Archfiend of Ifnir",
+									"name": "伊夫尼尔的恶魔领主",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSA",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Cerodon",
 							"name": "瑟罗登",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSA",
-							"style": "narrow"
-						}
-					],
-					"id": "029"
-				},
-				{
-					"ENG_name": "Criosphinx",
-					"name": "克瑞奥斯芬克斯",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Criosphinx",
-							"name": "克瑞奥斯芬克斯",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSA",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "029",
+							"entries": [
+								{
+									"ENG_name": "Cerodon",
+									"name": "瑟罗登",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSA",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Cerodon",
+									"name": "瑟罗登",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSA",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Criosphinx",
 							"name": "克瑞奥斯芬克斯",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSA",
-							"style": "narrow"
-						}
-					],
-					"id": "02a"
-				},
-				{
-					"ENG_name": "Eternal",
-					"name": "永恒者",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Eternal",
-							"name": "永恒者",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSA",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "02a",
+							"entries": [
+								{
+									"ENG_name": "Criosphinx",
+									"name": "克瑞奥斯芬克斯",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSA",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Criosphinx",
+									"name": "克瑞奥斯芬克斯",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSA",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Eternal",
 							"name": "永恒者",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSA",
-							"style": "narrow"
-						}
-					],
-					"id": "02b"
-				},
-				{
-					"ENG_name": "Giant River Serpent",
-					"name": "巨型河流巨蟒",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Giant River Serpent",
-							"name": "巨型河流巨蟒",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSA",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "02b",
+							"entries": [
+								{
+									"ENG_name": "Eternal",
+									"name": "永恒者",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSA",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Eternal",
+									"name": "永恒者",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSA",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Giant River Serpent",
 							"name": "巨型河流巨蟒",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSA",
-							"style": "narrow"
-						}
-					],
-					"id": "02c"
-				},
-				{
-					"ENG_name": "Hippopotamus",
-					"name": "河马",
-					"type": "section",
-					"entries": [
+							"type": "section",
+							"id": "02c",
+							"entries": [
+								{
+									"ENG_name": "Giant River Serpent",
+									"name": "巨型河流巨蟒",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSA",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Giant River Serpent",
+									"name": "巨型河流巨蟒",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSA",
+									"style": "narrow"
+								}
+							]
+						},
 						{
 							"ENG_name": "Hippopotamus",
 							"name": "河马",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSA",
-							"style": "narrow"
-						}
-					],
-					"id": "02d"
-				},
-				{
-					"ENG_name": "Large Drake",
-					"name": "大型龙兽",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Large Drake",
-							"name": "大型龙兽",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSA",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "02d",
+							"entries": [
+								{
+									"ENG_name": "Hippopotamus",
+									"name": "河马",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSA",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Large Drake",
 							"name": "大型龙兽",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSA",
-							"style": "narrow"
-						}
-					],
-					"id": "02e"
-				},
-				{
-					"ENG_name": "Manticore, Heart-Piercer",
-					"name": "蝎尾狮，穿心者",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Manticore, Heart-Piercer",
-							"name": "蝎尾狮，穿心者",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSA",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "02e",
+							"entries": [
+								{
+									"ENG_name": "Large Drake",
+									"name": "大型龙兽",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSA",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Large Drake",
+									"name": "大型龙兽",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSA",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Manticore, Heart-Piercer",
 							"name": "蝎尾狮，穿心者",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSA",
-							"style": "narrow"
-						}
-					],
-					"id": "02f"
-				},
-				{
-					"ENG_name": "River Serpent",
-					"name": "河流巨蛇",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "River Serpent",
-							"name": "河流巨蛇",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSA",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "02f",
+							"entries": [
+								{
+									"ENG_name": "Manticore, Heart-Piercer",
+									"name": "蝎尾狮，穿心者",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSA",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Manticore, Heart-Piercer",
+									"name": "蝎尾狮，穿心者",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSA",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "River Serpent",
 							"name": "河流巨蛇",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSA",
-							"style": "narrow"
-						}
-					],
-					"id": "030"
-				},
-				{
-					"ENG_name": "Sandwurm",
-					"name": "沙虫",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Sandwurm",
-							"name": "沙虫",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSA",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "030",
+							"entries": [
+								{
+									"ENG_name": "River Serpent",
+									"name": "河流巨蛇",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSA",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "River Serpent",
+									"name": "河流巨蛇",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSA",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Sandwurm",
 							"name": "沙虫",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSA",
-							"style": "narrow"
-						}
-					],
-					"id": "031"
-				},
-				{
-					"ENG_name": "Serpopard",
-					"name": "蛇豹",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Serpopard",
-							"name": "蛇豹",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSA",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "031",
+							"entries": [
+								{
+									"ENG_name": "Sandwurm",
+									"name": "沙虫",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSA",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Sandwurm",
+									"name": "沙虫",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSA",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Serpopard",
 							"name": "蛇豹",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSA",
-							"style": "narrow"
-						}
-					],
-					"id": "032"
-				},
-				{
-					"ENG_name": "Small Drake",
-					"name": "小型龙",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Small Drake",
-							"name": "小型龙",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSA",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "032",
+							"entries": [
+								{
+									"ENG_name": "Serpopard",
+									"name": "蛇豹",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSA",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Serpopard",
+									"name": "蛇豹",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSA",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Small Drake",
 							"name": "小型龙",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSA",
-							"style": "narrow"
-						}
-					],
-					"id": "033"
-				},
-				{
-					"ENG_name": "Soulstinger Demon",
-					"name": "灵魂刺击恶魔",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Soulstinger Demon",
-							"name": "灵魂刺击恶魔",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSA",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "033",
+							"entries": [
+								{
+									"ENG_name": "Small Drake",
+									"name": "小型龙",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSA",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Small Drake",
+									"name": "小型龙",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSA",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Soulstinger Demon",
 							"name": "灵魂刺击恶魔",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSA",
-							"style": "narrow"
-						}
-					],
-					"id": "034"
-				},
-				{
-					"ENG_name": "Young Amonkhet Dragon",
-					"name": "青年阿蒙克赫特龙",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Young Amonkhet Dragon",
-							"name": "青年阿蒙克赫特龙",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSA",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "034",
+							"entries": [
+								{
+									"ENG_name": "Soulstinger Demon",
+									"name": "灵魂刺击恶魔",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSA",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Soulstinger Demon",
+									"name": "灵魂刺击恶魔",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSA",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Young Amonkhet Dragon",
 							"name": "青年阿蒙克赫特龙",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSA",
-							"style": "narrow"
-						}
-					],
-					"id": "035"
-				}
-			],
-			"id": "011"
-		},
-		{
-			"ENG_name": "Appendix: Planeswalkers and the Multiverse",
-			"name": "附录：位面行者与多元宇宙",
-			"type": "section",
-			"page": 39,
-			"entries": [
-				"多元宇宙是一个无限的世界广袤空间。这些世界被称为位面，它们彼此之间的差异就像一个生物与另一个生物之间的差异一样，大小和形状、居民和环境，甚至是物理和魔法法则都各不相同。然而，魔法的存在是一个统一所有已知位面的共同因素。",
-				"对于任何一个位面的大多数居民来说，那个位面就是存在的全部。玄学上的推测可能会假设其他世界的存在，但这些概念仅仅是理论上的。只有任何一个世界中的少数人知道真相：所有的位面都悬挂在一个被称为以太\u2014\u2014或者更诗意地说，盲眼永恒\u2014\u2014的虚空中。在百万人中，只有一个人天生具有从一个位面旅行到另一个位面的潜力，而在那些具有潜力的人中，只有一小部分实际上能够点燃他们的火花，成为行走者（Planeswalkers）。",
-				"通常，这是由于一场重大的危机或创伤而发生的。濒死体验可能点燃火花，一次改变人生的顿悟甚至是一种启示性的恍惚状态也能做到。但一旦他们的火花被点燃，所有位面行者就获得了打开通往盲目永恒之路的罕见能力，并从一个位面传送到另一个位面。",
-				"行走者的生活是充满选择和自我决定的生活，不受世界或命运界限的限制。大多数行走者致力于探索多元宇宙的秘密，并在这个过程中发现他们的个人使命。通常，他们会在这个过程中发现自己灵魂的深度。",
-				{
-					"type": "hr"
-				},
-				{
-					"type": "inset",
-					"entries": [
-						{
-							"type": "table",
-							"page": 39,
-							"isStriped": false,
-							"colStyles": [
-								"col-4 text-enter",
-								"col-8"
-							],
-							"rows": [
-								[
-									{
-										"type": "image",
-										"href": {
-											"type": "internal",
-											"path": "book/PSA/017.webp"
-										},
-										"credit": "Jonas De Ro",
-										"width": 155,
-										"height": 153
-									},
-									{
-										"ENG_name": "Amonkhet",
-										"name": "阿芒凯",
-										"type": "entries",
-										"entries": [
-											"这个位面的人民面临着五个致命的考验，他们希望获得光荣的死亡\u2014\u2014以及来世的永恒荣耀。但他们真正的命运掌握在阴险的尼古拉·波拉斯手中。"
-										],
-										"id": "014"
+							"type": "section",
+							"id": "035",
+							"entries": [
+								{
+									"ENG_name": "Young Amonkhet Dragon",
+									"name": "青年阿蒙克赫特龙",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSA",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
 									}
-								],
-								[
-									{
-										"type": "image",
-										"href": {
-											"type": "internal",
-											"path": "book/PSA/018.webp"
-										},
-										"credit": "James Paick",
-										"width": 137,
-										"height": 137
-									},
-									{
-										"ENG_name": "Dominaria",
-										"name": "多米尼亚",
-										"type": "entries",
-										"entries": [
-											"多米尼亚是火山大陆席瓦、破碎时间之岛托拉利亚和寒冷的凯尔德山脉的家园，它是残酷冲突的背景，也是强大法师的栖息地。"
-										],
-										"id": "015"
-									}
-								],
-								[
-									{
-										"type": "image",
-										"href": {
-											"type": "internal",
-											"path": "book/PSA/019.webp"
-										},
-										"credit": "Jung Park",
-										"width": 151,
-										"height": 151
-									},
-									{
-										"ENG_name": "Innistrad",
-										"name": "依尼翠",
-										"type": "entries",
-										"entries": [
-											"数个世纪以来，大天使阿瓦辛和她的随从们保护着因斯瑞德的人类免受夜晚的恐怖。但随后，当一种外星疯狂控制了这个位面时，她转而攻击她本应保护的人们。"
-										],
-										"id": "016"
-									}
-								],
-								[
-									{
-										"type": "image",
-										"href": {
-											"type": "internal",
-											"path": "book/PSA/020.webp"
-										},
-										"credit": "Daniel Ljunggren",
-										"width": 150,
-										"height": 150
-									},
-									{
-										"ENG_name": "Kaladesh",
-										"name": "卡拉德许",
-										"type": "entries",
-										"entries": [
-											"卡达斯是一个充满活力、美丽的土地，正处于发明家的复兴之中，充满了创造力和乐观精神。"
-										],
-										"id": "017"
-									}
-								],
-								[
-									{
-										"type": "image",
-										"href": {
-											"type": "internal",
-											"path": "book/PSA/021.webp"
-										},
-										"credit": "Tomasz Jedruszek",
-										"width": 151,
-										"height": 151
-									},
-									{
-										"ENG_name": "New Phyrexia",
-										"name": "新费雷西亚",
-										"type": "entries",
-										"entries": [
-											"曾经被称为米罗地（Mirrodin）的这个金属位面已经被邪恶的菲瑞克斯（Phyrexian）腐化所改变。它的居民为了自己的世界而战，但最终战败，现在每天都在努力生存。"
-										],
-										"id": "018"
-									}
-								],
-								[
-									{
-										"type": "image",
-										"href": {
-											"type": "internal",
-											"path": "book/PSA/022.webp"
-										},
-										"credit": "Richard Wright",
-										"width": 152,
-										"height": 150
-									},
-									{
-										"ENG_name": "Ravnica",
-										"name": "拉尼卡",
-										"type": "entries",
-										"entries": [
-											"这个全球性的城市景观拥有无数宏伟的大厅、破败的贫民窟和古老的废墟。十个公会在这个宏伟城市中维持着不稳定的和平，共同管理着生活的各个方面。"
-										],
-										"id": "019"
-									}
-								],
-								[
-									{
-										"type": "image",
-										"href": {
-											"type": "internal",
-											"path": "book/PSA/023.webp"
-										},
-										"credit": "John Severin Brassell",
-										"width": 150,
-										"height": 151
-									},
-									{
-										"ENG_name": "Shandalar",
-										"name": "山达尔",
-										"type": "entries",
-										"entries": [
-											"沙南达拉富含魔力，是一个魔法自由流动的地方。位面行者们因为这里丰富而强大的魔法而寻找这个位面。"
-										],
-										"id": "01a"
-									}
-								],
-								[
-									{
-										"type": "image",
-										"href": {
-											"type": "internal",
-											"path": "book/PSA/024.webp"
-										},
-										"credit": "Jung Park",
-										"width": 151,
-										"height": 150
-									},
-									{
-										"ENG_name": "Theros",
-										"name": "塞洛斯",
-										"type": "entries",
-										"entries": [
-											"塞洛斯由一群令人敬畏的神祇统治。凡人在他们面前颤抖，感受到他们微不足道的任性之痛，并生活在对他们愤怒的恐惧之中。"
-										],
-										"id": "01b"
-									}
-								],
-								[
-									{
-										"type": "image",
-										"href": {
-											"type": "internal",
-											"path": "book/PSA/025.webp"
-										},
-										"credit": "Sam Burley",
-										"width": 151,
-										"height": 151
-									},
-									{
-										"ENG_name": "Zendikar",
-										"name": "赞迪卡",
-										"type": "entries",
-										"entries": [
-											"这个原始魔力之地正从以太中巨兽肆虐平面的非自然灾害中缓慢恢复。"
-										],
-										"id": "01c"
-									}
-								]
+								},
+								{
+									"ENG_name": "Young Amonkhet Dragon",
+									"name": "青年阿蒙克赫特龙",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSA",
+									"style": "narrow"
+								}
 							]
 						}
-					],
-					"id": "013"
+					]
 				},
-				"这是第四篇{@i 位面转移}文章（对应于《{@i 《魔法：聚会的艺术》}的艺术》第四卷的发布），这意味着在这一点上，你可以组建一个四人的旅法师队伍，并且让他们每个人都来自不同的位面。",
-				"从根本上讲，成为位面行者并没有附带任何游戏规则。在这种类型的战役中，从一个位面旅行到另一个位面，很像是常规战役中的陆地旅行：它关乎于到达冒险所在的地方。这是一种故事功能，而非规则功能。如果位面旅行是战役的一部分，那么队伍中的每个人都必须能够做到这一点，这样他们才能一起旅行。（在现代的魔法世界中，当你位面旅行时，没有办法带上另一个活人。）这意味着在位面旅行方面，游戏平衡并不是真正的问题\u2014\u2014它不会让一个角色比其他角色更强大，也不会让角色在对抗他们所战斗的敌人时变得更强。所以，它可以被添加到任何其他角色上，而不需要改变角色的职业、种族或背景。",
-				"行走位面是如何工作的？嗯，尽管这个系列文章的名称如此，但实际上它与{@spell 位面转移}法术并没有太多相似之处。当角色行走位面时，通常需要持续集中注意力将两个世界汇聚在一起并创建跨越它们的桥梁。这个过程大约需要一分钟，类似于施放仪式，所以通常不是行走者用来逃避战斗的手段。它也不允许太多的精确度。作为规则，行走者到达位面的点由DM决定，并且通常是角色访问位面时相同的位置。",
-				"在《魔法》小说中，角色有时会在战斗中进行位面行走，通常是在某些可怕的事情即将发生时。（这包括一个角色的位面行者火花首次点燃的情况。）为了模拟这一点，根据DM的判断，一个即将降至0生命值的位面行者可以进行一次魅力豁免检定，难度等级等于所受伤害。如果豁免成功，角色则不受伤害并位面行走离开。角色最终到达哪个位面由DM决定，因为这通常不是一个有意识的过程。",
-				"你可以在艺术书籍和{@i 位面转移}文章中详细介绍的四个世界中进行大量冒险。但如果你想将你的时空行者角色带到塞洛斯、塔基尔、拉尼卡、多明纳里亚、秘罗地、阿拉若、菲奥拉、洛温、神河或其他魔法多元宇宙中的任何世界，你可以参考我在这些文章中的做法。重新打造并调整现有的怪物，并在过程中注入健康的创意和即兴发挥。一些世界中的生物可以直接走出{@book 怪物图鉴|MM}，而其他世界则会带来更大的挑战。",
-				"最重要的事情是，涉及行走者（Planeswalkers）的战役需要玩家和地下城主（DM）之间达成一致。与通常情况相比，如果玩家决定忽视摆在他们面前的剧情线索，仅仅因为他们可以，就随意在多重宇宙中穿梭，他们可能会让地下城主的工作变得更加繁重而不是有趣。如果一个行走者去拉尼卡（Ravnica）买一杯咖啡只需要一个小时，那是一回事；但如果玩家决定今天要对抗新菲瑞克斯（New Phyrexia）的腐化，而不是跟随明显指向一个以暗影荒原（Innistrad）为背景的战役的线索，那就是另一回事了。",
-				"说到新费雷西亚，一个有旅法师参与的战役通常在高等级角色中更有趣。在《魔法》故事中出现的旅法师是各种强大的法师，他们的行动有时可以决定整个位面的命运。当然，情况并不总是这样，但要激励那些能够真正去任何地方旅行的角色留下来并根除一群{@creature 巨鼠|MM|巨鼠}可能会有些困难。",
-				"那么，行走者角色能否从阿蒙凯特穿越到被遗忘的国度所在的任何位面呢？这取决于你。《{@i 位面转移}》系列或多或少地假定了一个多宇宙之间的某种连续性，即使（例如）它并没有尝试在D&D魔法系统中模拟魔法的五种颜色的法力。所以，没有真正的原因说一个来自艾弗斯卡的精灵不能\"点燃\"并发现自己在卡达拉斯，只要这对你的玩家和你的战役有效。",
 				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/PSA/016.webp"
-					},
-					"title": "最终时刻",
-					"credit": "Raymond Swanland",
-					"width": 1275,
-					"height": 543
-				}
-			],
-			"id": "012"
-		},
-		{
-			"ENG_name": "Credits",
-			"name": "制作组",
-			"type": "entries",
-			"entries": [
+					"ENG_name": "Appendix: Planeswalkers and the Multiverse",
+					"name": "附录：位面行者与多元宇宙",
+					"type": "section",
+					"id": "012",
+					"page": 39,
+					"entries": [
+						"多元宇宙是一个无限的世界广袤空间。这些世界被称为位面，它们彼此之间的差异就像一个生物与另一个生物之间的差异一样，大小和形状、居民和环境，甚至是物理和魔法法则都各不相同。然而，魔法的存在是一个统一所有已知位面的共同因素。",
+						"对于任何一个位面的大多数居民来说，那个位面就是存在的全部。玄学上的推测可能会假设其他世界的存在，但这些概念仅仅是理论上的。只有任何一个世界中的少数人知道真相：所有的位面都悬挂在一个被称为以太\u2014\u2014或者更诗意地说，盲眼永恒\u2014\u2014的虚空中。在百万人中，只有一个人天生具有从一个位面旅行到另一个位面的潜力，而在那些具有潜力的人中，只有一小部分实际上能够点燃他们的火花，成为行走者（Planeswalkers）。",
+						"通常，这是由于一场重大的危机或创伤而发生的。濒死体验可能点燃火花，一次改变人生的顿悟甚至是一种启示性的恍惚状态也能做到。但一旦他们的火花被点燃，所有位面行者就获得了打开通往盲目永恒之路的罕见能力，并从一个位面传送到另一个位面。",
+						"行走者的生活是充满选择和自我决定的生活，不受世界或命运界限的限制。大多数行走者致力于探索多元宇宙的秘密，并在这个过程中发现他们的个人使命。通常，他们会在这个过程中发现自己灵魂的深度。",
+						{
+							"type": "hr"
+						},
+						{
+							"type": "inset",
+							"id": "013",
+							"entries": [
+								{
+									"type": "table",
+									"page": 39,
+									"isStriped": false,
+									"colStyles": [
+										"col-4 text-enter",
+										"col-8"
+									],
+									"rows": [
+										[
+											{
+												"type": "image",
+												"href": {
+													"type": "internal",
+													"path": "book/PSA/017.webp"
+												},
+												"width": 155,
+												"height": 153,
+												"credit": "Jonas De Ro"
+											},
+											{
+												"ENG_name": "Amonkhet",
+												"name": "阿芒凯",
+												"type": "entries",
+												"id": "014",
+												"entries": [
+													"这个位面的人民面临着五个致命的考验，他们希望获得光荣的死亡\u2014\u2014以及来世的永恒荣耀。但他们真正的命运掌握在阴险的尼古拉·波拉斯手中。"
+												]
+											}
+										],
+										[
+											{
+												"type": "image",
+												"href": {
+													"type": "internal",
+													"path": "book/PSA/018.webp"
+												},
+												"width": 137,
+												"height": 137,
+												"credit": "James Paick"
+											},
+											{
+												"ENG_name": "Dominaria",
+												"name": "多米尼亚",
+												"type": "entries",
+												"id": "015",
+												"entries": [
+													"多米尼亚是火山大陆席瓦、破碎时间之岛托拉利亚和寒冷的凯尔德山脉的家园，它是残酷冲突的背景，也是强大法师的栖息地。"
+												]
+											}
+										],
+										[
+											{
+												"type": "image",
+												"href": {
+													"type": "internal",
+													"path": "book/PSA/019.webp"
+												},
+												"width": 151,
+												"height": 151,
+												"credit": "Jung Park"
+											},
+											{
+												"ENG_name": "Innistrad",
+												"name": "依尼翠",
+												"type": "entries",
+												"id": "016",
+												"entries": [
+													"数个世纪以来，大天使阿瓦辛和她的随从们保护着因斯瑞德的人类免受夜晚的恐怖。但随后，当一种外星疯狂控制了这个位面时，她转而攻击她本应保护的人们。"
+												]
+											}
+										],
+										[
+											{
+												"type": "image",
+												"href": {
+													"type": "internal",
+													"path": "book/PSA/020.webp"
+												},
+												"width": 150,
+												"height": 150,
+												"credit": "Daniel Ljunggren"
+											},
+											{
+												"ENG_name": "Kaladesh",
+												"name": "卡拉德许",
+												"type": "entries",
+												"id": "017",
+												"entries": [
+													"卡达斯是一个充满活力、美丽的土地，正处于发明家的复兴之中，充满了创造力和乐观精神。"
+												]
+											}
+										],
+										[
+											{
+												"type": "image",
+												"href": {
+													"type": "internal",
+													"path": "book/PSA/021.webp"
+												},
+												"width": 151,
+												"height": 151,
+												"credit": "Tomasz Jedruszek"
+											},
+											{
+												"ENG_name": "New Phyrexia",
+												"name": "新费雷西亚",
+												"type": "entries",
+												"id": "018",
+												"entries": [
+													"曾经被称为米罗地（Mirrodin）的这个金属位面已经被邪恶的菲瑞克斯（Phyrexian）腐化所改变。它的居民为了自己的世界而战，但最终战败，现在每天都在努力生存。"
+												]
+											}
+										],
+										[
+											{
+												"type": "image",
+												"href": {
+													"type": "internal",
+													"path": "book/PSA/022.webp"
+												},
+												"width": 152,
+												"height": 150,
+												"credit": "Richard Wright"
+											},
+											{
+												"ENG_name": "Ravnica",
+												"name": "拉尼卡",
+												"type": "entries",
+												"id": "019",
+												"entries": [
+													"这个全球性的城市景观拥有无数宏伟的大厅、破败的贫民窟和古老的废墟。十个公会在这个宏伟城市中维持着不稳定的和平，共同管理着生活的各个方面。"
+												]
+											}
+										],
+										[
+											{
+												"type": "image",
+												"href": {
+													"type": "internal",
+													"path": "book/PSA/023.webp"
+												},
+												"width": 150,
+												"height": 151,
+												"credit": "John Severin Brassell"
+											},
+											{
+												"ENG_name": "Shandalar",
+												"name": "山达尔",
+												"type": "entries",
+												"id": "01a",
+												"entries": [
+													"沙南达拉富含魔力，是一个魔法自由流动的地方。位面行者们因为这里丰富而强大的魔法而寻找这个位面。"
+												]
+											}
+										],
+										[
+											{
+												"type": "image",
+												"href": {
+													"type": "internal",
+													"path": "book/PSA/024.webp"
+												},
+												"width": 151,
+												"height": 150,
+												"credit": "Jung Park"
+											},
+											{
+												"ENG_name": "Theros",
+												"name": "塞洛斯",
+												"type": "entries",
+												"id": "01b",
+												"entries": [
+													"塞洛斯由一群令人敬畏的神祇统治。凡人在他们面前颤抖，感受到他们微不足道的任性之痛，并生活在对他们愤怒的恐惧之中。"
+												]
+											}
+										],
+										[
+											{
+												"type": "image",
+												"href": {
+													"type": "internal",
+													"path": "book/PSA/025.webp"
+												},
+												"width": 151,
+												"height": 151,
+												"credit": "Sam Burley"
+											},
+											{
+												"ENG_name": "Zendikar",
+												"name": "赞迪卡",
+												"type": "entries",
+												"id": "01c",
+												"entries": [
+													"这个原始魔力之地正从以太中巨兽肆虐平面的非自然灾害中缓慢恢复。"
+												]
+											}
+										]
+									]
+								}
+							]
+						},
+						"这是第四篇{@i 位面转移}文章（对应于《{@i 《魔法：聚会的艺术》}的艺术》第四卷的发布），这意味着在这一点上，你可以组建一个四人的旅法师队伍，并且让他们每个人都来自不同的位面。",
+						"从根本上讲，成为位面行者并没有附带任何游戏规则。在这种类型的战役中，从一个位面旅行到另一个位面，很像是常规战役中的陆地旅行：它关乎于到达冒险所在的地方。这是一种故事功能，而非规则功能。如果位面旅行是战役的一部分，那么队伍中的每个人都必须能够做到这一点，这样他们才能一起旅行。（在现代的魔法世界中，当你位面旅行时，没有办法带上另一个活人。）这意味着在位面旅行方面，游戏平衡并不是真正的问题\u2014\u2014它不会让一个角色比其他角色更强大，也不会让角色在对抗他们所战斗的敌人时变得更强。所以，它可以被添加到任何其他角色上，而不需要改变角色的职业、种族或背景。",
+						"行走位面是如何工作的？嗯，尽管这个系列文章的名称如此，但实际上它与{@spell 位面转移}法术并没有太多相似之处。当角色行走位面时，通常需要持续集中注意力将两个世界汇聚在一起并创建跨越它们的桥梁。这个过程大约需要一分钟，类似于施放仪式，所以通常不是行走者用来逃避战斗的手段。它也不允许太多的精确度。作为规则，行走者到达位面的点由DM决定，并且通常是角色访问位面时相同的位置。",
+						"在《魔法》小说中，角色有时会在战斗中进行位面行走，通常是在某些可怕的事情即将发生时。（这包括一个角色的位面行者火花首次点燃的情况。）为了模拟这一点，根据DM的判断，一个即将降至0生命值的位面行者可以进行一次魅力豁免检定，难度等级等于所受伤害。如果豁免成功，角色则不受伤害并位面行走离开。角色最终到达哪个位面由DM决定，因为这通常不是一个有意识的过程。",
+						"你可以在艺术书籍和{@i 位面转移}文章中详细介绍的四个世界中进行大量冒险。但如果你想将你的时空行者角色带到塞洛斯、塔基尔、拉尼卡、多明纳里亚、秘罗地、阿拉若、菲奥拉、洛温、神河或其他魔法多元宇宙中的任何世界，你可以参考我在这些文章中的做法。重新打造并调整现有的怪物，并在过程中注入健康的创意和即兴发挥。一些世界中的生物可以直接走出{@book 怪物图鉴|MM}，而其他世界则会带来更大的挑战。",
+						"最重要的事情是，涉及行走者（Planeswalkers）的战役需要玩家和地下城主（DM）之间达成一致。与通常情况相比，如果玩家决定忽视摆在他们面前的剧情线索，仅仅因为他们可以，就随意在多重宇宙中穿梭，他们可能会让地下城主的工作变得更加繁重而不是有趣。如果一个行走者去拉尼卡（Ravnica）买一杯咖啡只需要一个小时，那是一回事；但如果玩家决定今天要对抗新菲瑞克斯（New Phyrexia）的腐化，而不是跟随明显指向一个以暗影荒原（Innistrad）为背景的战役的线索，那就是另一回事了。",
+						"说到新费雷西亚，一个有旅法师参与的战役通常在高等级角色中更有趣。在《魔法》故事中出现的旅法师是各种强大的法师，他们的行动有时可以决定整个位面的命运。当然，情况并不总是这样，但要激励那些能够真正去任何地方旅行的角色留下来并根除一群{@creature 巨鼠|MM|巨鼠}可能会有些困难。",
+						"那么，行走者角色能否从阿蒙凯特穿越到被遗忘的国度所在的任何位面呢？这取决于你。《{@i 位面转移}》系列或多或少地假定了一个多宇宙之间的某种连续性，即使（例如）它并没有尝试在D&D魔法系统中模拟魔法的五种颜色的法力。所以，没有真正的原因说一个来自艾弗斯卡的精灵不能\"点燃\"并发现自己在卡达拉斯，只要这对你的玩家和你的战役有效。",
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/PSA/016.webp"
+							},
+							"width": 1275,
+							"height": 543,
+							"title": "最终时刻",
+							"credit": "Raymond Swanland"
+						}
+					]
+				},
 				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"items": [
-						"由詹姆斯·怀亚特和阿什丽·霍普撰写",
-						"封面艺术由Titus Lunter创作",
-						"由斯科特·菲茨杰拉德编辑"
+					"ENG_name": "Credits",
+					"name": "制作组",
+					"type": "entries",
+					"id": "01d",
+					"entries": [
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								"由詹姆斯·怀亚特和阿什丽·霍普撰写",
+								"封面艺术由Titus Lunter创作",
+								"由斯科特·菲茨杰拉德编辑"
+							]
+						}
 					]
 				}
-			],
-			"id": "01d"
+			]
 		}
 	]
 }

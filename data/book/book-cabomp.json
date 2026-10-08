@@ -1,1258 +1,1121 @@
 {
-	"data": [
+	"bookData": [
 		{
-			"ENG_name": "Introduction",
-			"name": "简介",
-			"type": "section",
-			"page": 1,
-			"entries": [
+			"id": "CaBoMP",
+			"source": "CaBoMP",
+			"data": [
 				{
-					"type": "inset",
+					"ENG_name": "Introduction",
+					"name": "简介",
+					"type": "section",
+					"id": "000",
 					"page": 1,
 					"entries": [
-						"通过这本包含众多图案的书，潜入一个钩针编织与冒险的世界。{@i 龙与地下城钩针编织}为所有技能等级的粉丝和钩针编织者提供了一个机会，将他们自己最喜爱的游戏内元素变为现实。创造你自己的{@crochet 魔法学派奶奶方格}，用{@crochet 辟矢夺箭手套}武装自己，并将你的物品打包进{@crochet 次元袋}。除了与逸闻相关的物件，你还会发现一个标志性角色的怪物图鉴供你制作，包括危险又可爱的{@crochet 枭熊幼崽}、凶恶的{@crochet 夺心魔}和炽热的{@crochet 红龙}。{@i 龙与地下城钩针编织}将让各地的冒险者拿起他们新的最爱武器：钩针。"
-					],
-					"id": "001"
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/CaBoMP/009.webp"
-					},
-					"credit": "Mithy Evans",
-					"width": 1780,
-					"height": 2244
-				},
-				"在每次任务中，冒险者都必须忍受数周穿越{@quickref 困难地形||3}的旅行。在篝火旁守卫的漫漫长夜。等待侦察队归来的焦虑时光。换句话说，有充足的时间让手指变得僵硬，思绪变得混乱。有什么比一门需要灵巧的触感、对细节的关注，以及一捆足以装入任何未附魔背包的紧凑成分的手艺，更能抵御这些危险呢？",
-				"我说的，当然是那永恒的钩针编织艺术。易于上手，若有游荡的怪物出现也能迅捷地放下。容易学习且用途无穷。比书更轻，比歌谣更安静。钩针编织完美契合探索与冒险的生活。",
-				"有些人可能认为它只是一种普通的技艺，不值得出现在冒险者宏大而史诗般的生活中。但在我看来，正是这种特质让它对冒险者特别有用。当你的生活中充满了传说中的怪物和强大的魔法时，你很容易就会失去与日常奇迹的联系。",
-				"钩针编织是一项连接我们与悠久工艺传统的个体追求。跨越诸国度，遍及众星之海，你会发现这门手艺一次又一次地出现。你也会发现它就在离家更近的地方。很多时候，钩针编织都是一种打破隔阂的有益方式。人们常常渴望与同为工匠的人开启对话。关于针法与技巧、关于最喜爱的花样与毛线的交谈，可以在意想不到的地方打开大门。",
-				"所以，是的，带上你的火绒盒和{@item 火把|PHB|火把}，你的五十尺绳索，以及你数周的应急干粮。但务必为你的钩爪、你的纱线，以及一些值得作为任务目标的图案留出空间。你可能会发现，你最大的宝藏最终是由你自己的双手所创造的。",
-				{
-					"ENG_name": "About this Book",
-					"name": "关于本书",
-					"type": "entries",
-					"page": 6,
-					"entries": [
-						"你手中所持的是一个创意概念的宝藏箱，其价值足以被纳入金龙的宝库。这本由冒险者同好们设计的合集，反映了诸国度的无限多样性。无论你是在寻找一个在短休期间消遣的简易项目，还是一个提升你技能熟练度的复杂挑战，你都能在这些页面中找到激励。",
-						"{@style 龙与地下城钩针编织|dnd-font} 分为三个主要部分：钩针玩偶（毛绒玩具）、可穿戴物品和家居用品。每个部分中的项目都标有难度等级，从新手级开始，经过中级，再到高级。如果你完全是钩针编织的新手，我强烈建议从新手项目开始，这将让你练习核心的钩针编织技术。在书的结尾，你会找到一个所有针法和钩针编织术语以及图案中使用的不同类型纱线的术语表。",
-						"虽然大多数图样仅用纱线和钩爪即可完成，但少数会需要额外的成分。你会在每个项目开头找到一份完整的手法物件清单，例如金属丝、安全眼或大壁毯针刺。务必查看每个项目的详细步骤和要求，并提前备好你的补给品。你肯定不想爬到白羽山半山腰时，才发现纱线或其他所需材质短缺。",
-						"这些图案旨在让所有职业和背景的冒险者都能接触。没有需要利用{@spell 法师之手}来操控额外钩爪或{@spell 隐形仆役}来固定针脚的技术。如果你发现在尝试制作一个图案时需要施放{@spell 祝福术}或{@spell 希望信标}，你应该考虑将它暂时搁置，先尝试一个更简单的、用于技能构建的设计。",
-						"建议的纱线在大多数物质位面都应该能找到。位于妖精荒野、堕影冥界或其他半位面的编织者在寻找替代品时应格外小心。由相位蜘蛛丝、奇美拉毛皮或其他此类魔法浸染来源制成的纱线，其表现常常出人意料。从扭曲的针脚到计划外的跨位面旅行，各种困境都可能轻易降临到粗心大意的编织者身上。",
-						"闲话少叙，我邀请你拿起钩爪和纱线，开启你自己的任务！"
-					],
-					"id": "002"
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/CaBoMP/010.webp"
-					},
-					"credit": "Mithy Evans",
-					"width": 2518,
-					"height": 1586
-				}
-			],
-			"id": "000"
-		},
-		{
-			"ENG_name": "Amigurumi",
-			"name": "钩针玩偶",
-			"type": "section",
-			"page": 11,
-			"entries": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/CaBoMP/011.webp"
-					},
-					"credit": "Mithy Evans",
-					"width": 1780,
-					"height": 2244
-				},
-				"有什么能比将可怕的怪物和邪恶的神器变成可爱又令人想拥抱的欢乐象征更好呢？这正是你将通过这些可爱的钩针玩偶图案施展的魔法。这些雕像编织着一种能吸引所有年龄和技能等级的冒险者的惑控魔法。",
-				"诸国度提供了丰富的生物，其形象可以用纱线和钩爪来捕捉。所选图样涵盖了从{@crochet 凝胶方块}的简易几何结构到{@crochet 移位兽}的跨位面复杂度等一系列形态和尺寸。掌握了这些设计后，进阶工匠甚至可能想尝试改造这些图样以扩展其作品集。例如，通过调整{@crochet 红龙}图样的头部褶皱和翅膀形状\u2014\u2014当然，还有更换纱线颜色\u2014\u2014可以创造出其他类型的龙类。",
-				"以免你将此部分视为单纯的儿戏，请回想这些钩针玩偶对任何怪物猎人的用处。很少有人具备冒险者对生物解剖学细微之处的熟悉程度。在确定你被要求面对的威胁细节时，能够提供一个清晰的视觉参考会很有用。例如，一个只有四个眼柄的{@crochet 眼魔}仅仅是一个{@creature 观察者眼魔}\u2014\u2014仍然是一种威胁，但威胁较小。确保你面对的是{@creature 豹}而不是{@crochet 移位兽}，完全值得你缝制那个图案的努力！",
-				"确实，{@creature 瓦罗赞普\"瓦罗\"格达姆|ToA|瓦罗·格达姆}声称遇到过一位科米尔怪物猎人，这位猎人手工制作了一个羊毛毡玩偶来代表他们杀死的每一种危险生物。值得注意的是，{@creature 瓦罗赞普\"瓦罗\"格达姆|ToA|瓦罗}当时正在出售一套据称来自此收藏的毛绒玩具，因此这则轶事应持保留态度。即便如此，它也说明了冒险者可能为本章节中的图案想出的无数用途之一。",
-				"一旦完成，你会发现钩针玩偶非常方便。它们可以作为你独自执行任务时珍爱的同伴，也可以作为对你任务同伴的感谢之礼。它们可以用来取悦孩童，增强吟游诗人的表演，或者干扰一个无聊的哨兵。它们甚至可以成为献给那些在你冒险旅途中指引你的无形力量的感谢祭品。选择权全在你手中。",
-				{
-					"ENG_name": "Gelatinous Cube",
-					"name": "凝胶方块",
-					"type": "entries",
-					"page": 15,
-					"entries": [
 						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "crochetpatterns/CaBoMP/012.webp"
-							},
-							"credit": "Mithy Evans",
-							"width": 1780,
-							"height": 2244
-						},
-						{
-							"ENG_name": "Gelatinous Cube",
-							"name": "凝胶方块",
-							"type": "statblock",
-							"prop": "crochetPatternFluff",
-							"source": "CaBoMP",
-							"page": 15
-						},
-						{
-							"ENG_name": "Gelatinous Cube",
-							"name": "凝胶方块",
-							"type": "statblock",
-							"tag": "crochet",
-							"source": "CaBoMP",
-							"page": 15
-						}
-					],
-					"id": "004"
-				},
-				{
-					"ENG_name": "Beholder",
-					"name": "眼魔",
-					"type": "entries",
-					"page": 21,
-					"entries": [
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "crochetpatterns/CaBoMP/017.webp"
-							},
-							"credit": "Mithy Evans",
-							"width": 1780,
-							"height": 2244
-						},
-						{
-							"ENG_name": "Beholder",
-							"name": "眼魔",
-							"type": "statblock",
-							"prop": "crochetPatternFluff",
-							"source": "CaBoMP",
-							"page": 21
-						},
-						{
-							"ENG_name": "Beholder",
-							"name": "眼魔",
-							"type": "statblock",
-							"tag": "crochet",
-							"source": "CaBoMP",
-							"page": 21
-						}
-					],
-					"id": "005"
-				},
-				{
-					"ENG_name": "Displacer Beast",
-					"name": "移位兽",
-					"type": "entries",
-					"page": 29,
-					"entries": [
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "crochetpatterns/CaBoMP/022.webp"
-							},
-							"credit": "Mithy Evans",
-							"width": 1780,
-							"height": 2244
-						},
-						{
-							"ENG_name": "Displacer Beast",
-							"name": "移位兽",
-							"type": "statblock",
-							"prop": "crochetPatternFluff",
-							"source": "CaBoMP",
-							"page": 29
-						},
-						{
-							"ENG_name": "Displacer Beast",
-							"name": "移位兽",
-							"type": "statblock",
-							"tag": "crochet",
-							"source": "CaBoMP",
-							"page": 29
-						}
-					],
-					"id": "006"
-				},
-				{
-					"ENG_name": "Mind Flayer",
-					"name": "夺心魔",
-					"type": "entries",
-					"page": 39,
-					"entries": [
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "crochetpatterns/CaBoMP/032.webp"
-							},
-							"credit": "Mithy Evans",
-							"width": 1780,
-							"height": 2244
-						},
-						{
-							"ENG_name": "Mind Flayer",
-							"name": "夺心魔",
-							"type": "statblock",
-							"prop": "crochetPatternFluff",
-							"source": "CaBoMP",
-							"page": 39
-						},
-						{
-							"ENG_name": "Mind Flayer",
-							"name": "夺心魔",
-							"type": "statblock",
-							"tag": "crochet",
-							"source": "CaBoMP",
-							"page": 39
-						}
-					],
-					"id": "007"
-				},
-				{
-					"ENG_name": "Owlbear Cub",
-					"name": "枭熊幼崽",
-					"type": "entries",
-					"page": 45,
-					"entries": [
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "crochetpatterns/CaBoMP/035.webp"
-							},
-							"credit": "Mithy Evans",
-							"width": 1780,
-							"height": 2244
-						},
-						{
-							"ENG_name": "Owlbear Cub",
-							"name": "枭熊幼崽",
-							"type": "statblock",
-							"prop": "crochetPatternFluff",
-							"source": "CaBoMP",
-							"page": 45
-						},
-						{
-							"ENG_name": "Owlbear Cub",
-							"name": "枭熊幼崽",
-							"type": "statblock",
-							"tag": "crochet",
-							"source": "CaBoMP",
-							"page": 45
-						}
-					],
-					"id": "008"
-				},
-				{
-					"ENG_name": "Eye and Hand of Vecna",
-					"name": "维克那法眼和魔掌",
-					"type": "entries",
-					"page": 53,
-					"entries": [
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "crochetpatterns/CaBoMP/041.webp"
-							},
-							"credit": "Mithy Evans",
-							"width": 1780,
-							"height": 2244
-						},
-						{
-							"ENG_name": "Eye and Hand of Vecna",
-							"name": "维克那法眼和魔掌",
-							"type": "statblock",
-							"prop": "crochetPatternFluff",
-							"source": "CaBoMP",
-							"page": 53
-						},
-						{
-							"ENG_name": "Eye and Hand of Vecna",
-							"name": "维克那法眼和魔掌",
-							"type": "statblock",
-							"tag": "crochet",
-							"source": "CaBoMP",
-							"page": 53
-						}
-					],
-					"id": "009"
-				},
-				{
-					"ENG_name": "Red Dragon",
-					"name": "红龙",
-					"type": "entries",
-					"page": 59,
-					"entries": [
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "crochetpatterns/CaBoMP/045.webp"
-							},
-							"credit": "Mithy Evans",
-							"width": 1780,
-							"height": 2244
-						},
-						{
-							"ENG_name": "Red Dragon",
-							"name": "红龙",
-							"type": "statblock",
-							"prop": "crochetPatternFluff",
-							"source": "CaBoMP",
-							"page": 59
-						},
-						{
-							"ENG_name": "Red Dragon",
-							"name": "红龙",
-							"type": "statblock",
-							"tag": "crochet",
-							"source": "CaBoMP",
-							"page": 59
-						}
-					],
-					"id": "00a"
-				}
-			],
-			"id": "003"
-		},
-		{
-			"ENG_name": "Wearables",
-			"name": "可穿戴物品",
-			"type": "section",
-			"page": 73,
-			"entries": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/CaBoMP/060.webp"
-					},
-					"credit": "Mithy Evans",
-					"width": 1780,
-					"height": 2244
-				},
-				"虽然没人会愚蠢到认为衣服造就了冒险者，但合适的装束能在许多方面协助你的冒险。围巾和帽子能帮助你专注于任务，而不是那些阻碍你翻越陡峭山脉、跨越广阔海洋的刺骨寒风。手套保护你的手指，让它们在需要射出箭矢或施放法术时保持温暖和预备状态。结实的背包让你所有的装备集中且井井有条，以便在暗门或突然的伏击需要你快速反应时随时擒拿。",
-				"除了实用功能，手工衣物物件是一种令人愉悦的方式，让你能在漫长的旅路和黑暗的地下城中承载你的个体风格。你为任务携带的每件东西都需要服务于一个目的，通常不止一个。凭借创造你自己独特物件的能力，没有理由让空间限制削弱你的个人风采。通过制作你自己的围巾、帽子和手套，你可以避免那些尴尬时刻\u2014\u2014当整个队伍在踏上旅途前都在同一个商人那里囤货时，这一点变得显而易见。",
-				"此外，可穿戴物品能帮助你克服新手冒险者面临的最大阻碍之一\u2014\u2014即说服多疑的陌生人接受你的援助。龙鳞在围巾上编织出的微光，或魔法袋上的奥术纹路，能帮助你像一把饱经战痕的战斧一样迅速获得警觉村民的信任\u2014\u2014而且伴随着更少的紧张低语。",
-				"它们也能协助你补充补给品，或用来交换一夜的暖和床铺。虽然旅店老板通常更偏好钱币支付，但在你的旅途中，许多国度的老板都乐于用有用的物件进行贸易。",
-				"这些图案都经过充分测试，应能适合从初学者到专家级刺绣者的各种技能水平。有些图案的灵感来自著名的怪物和受人爱戴的神祇，而另一些则让人联想到任何冒险者都会引以为豪的奇妙魔法物品。每一个图案都提供了一个探索不同技巧、扩展你的针法库并创作一件定制作品的机会，这件作品必定会让你自己或任何幸运的收礼者感到高兴！",
-				"一个有用的注：这些图案已为中等体型的类人生物缩放，应可直接适用于大多数人类、精灵、吉斯洋基人和提夫林受赠者。你可能需要为侏儒、矮人、半身人、兽人、龙裔和歌利亚调整诸如带子长度等元素。",
-				{
-					"ENG_name": "Quiver of Ehlonna",
-					"name": "艾罗娜的箭袋",
-					"type": "entries",
-					"page": 77,
-					"entries": [
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "crochetpatterns/CaBoMP/061.webp"
-							},
-							"credit": "Mithy Evans",
-							"width": 1780,
-							"height": 2244
-						},
-						{
-							"ENG_name": "Quiver of Ehlonna",
-							"name": "艾罗娜的箭袋",
-							"type": "statblock",
-							"prop": "crochetPatternFluff",
-							"source": "CaBoMP",
-							"page": 77
-						},
-						{
-							"ENG_name": "Quiver of Ehlonna",
-							"name": "艾罗娜的箭袋",
-							"type": "statblock",
-							"tag": "crochet",
-							"source": "CaBoMP",
-							"page": 77
-						}
-					],
-					"id": "00c"
-				},
-				{
-					"ENG_name": "Platinum Dragon Cowl",
-					"name": "白金龙兜帽",
-					"type": "entries",
-					"page": 81,
-					"entries": [
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "crochetpatterns/CaBoMP/064.webp"
-							},
-							"credit": "Mithy Evans",
-							"width": 1780,
-							"height": 2244
-						},
-						{
-							"ENG_name": "Platinum Dragon Cowl",
-							"name": "白金龙兜帽",
-							"type": "statblock",
-							"prop": "crochetPatternFluff",
-							"source": "CaBoMP",
-							"page": 81
-						},
-						{
-							"ENG_name": "Platinum Dragon Cowl",
-							"name": "白金龙兜帽",
-							"type": "statblock",
-							"tag": "crochet",
-							"source": "CaBoMP",
-							"page": 81
-						}
-					],
-					"id": "00d"
-				},
-				{
-					"ENG_name": "Bracers of Archery",
-					"name": "射手护腕",
-					"type": "entries",
-					"page": 85,
-					"entries": [
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "crochetpatterns/CaBoMP/068.webp"
-							},
-							"credit": "Mithy Evans",
-							"width": 1780,
-							"height": 2244
-						},
-						{
-							"ENG_name": "Bracers of Archery",
-							"name": "射手护腕",
-							"type": "statblock",
-							"prop": "crochetPatternFluff",
-							"source": "CaBoMP",
-							"page": 85
-						},
-						{
-							"ENG_name": "Bracers of Archery",
-							"name": "射手护腕",
-							"type": "statblock",
-							"tag": "crochet",
-							"source": "CaBoMP",
-							"page": 85
-						}
-					],
-					"id": "00e"
-				},
-				{
-					"ENG_name": "Minsc's Hat of Winter Warming",
-					"name": "明斯克的暖冬帽",
-					"type": "entries",
-					"page": 89,
-					"entries": [
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "crochetpatterns/CaBoMP/072.webp"
-							},
-							"credit": "Mithy Evans",
-							"width": 1780,
-							"height": 2244
-						},
-						{
-							"ENG_name": "Minsc's Hat of Winter Warming",
-							"name": "明斯克的暖冬帽",
-							"type": "statblock",
-							"prop": "crochetPatternFluff",
-							"source": "CaBoMP",
-							"page": 89
-						},
-						{
-							"ENG_name": "Minsc's Hat of Winter Warming",
-							"name": "明斯克的暖冬帽",
-							"type": "statblock",
-							"tag": "crochet",
-							"source": "CaBoMP",
-							"page": 89
-						}
-					],
-					"id": "00f"
-				},
-				{
-					"ENG_name": "Purple Worm Scarf",
-					"name": "紫虫围巾",
-					"type": "entries",
-					"page": 93,
-					"entries": [
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "crochetpatterns/CaBoMP/075.webp"
-							},
-							"credit": "Mithy Evans",
-							"width": 1780,
-							"height": 2244
-						},
-						{
-							"ENG_name": "Purple Worm Scarf",
-							"name": "紫虫围巾",
-							"type": "statblock",
-							"prop": "crochetPatternFluff",
-							"source": "CaBoMP",
-							"page": 93
-						},
-						{
-							"ENG_name": "Purple Worm Scarf",
-							"name": "紫虫围巾",
-							"type": "statblock",
-							"tag": "crochet",
-							"source": "CaBoMP",
-							"page": 93
-						}
-					],
-					"id": "010"
-				},
-				{
-					"ENG_name": "Gloves of Missile Snaring",
-					"name": "辟矢夺箭手套",
-					"type": "entries",
-					"page": 99,
-					"entries": [
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "crochetpatterns/CaBoMP/080.webp"
-							},
-							"credit": "Mithy Evans",
-							"width": 1780,
-							"height": 2244
-						},
-						{
-							"ENG_name": "Gloves of Missile Snaring",
-							"name": "辟矢夺箭手套",
-							"type": "statblock",
-							"prop": "crochetPatternFluff",
-							"source": "CaBoMP",
-							"page": 99
-						},
-						{
-							"ENG_name": "Gloves of Missile Snaring",
-							"name": "辟矢夺箭手套",
-							"type": "statblock",
-							"tag": "crochet",
-							"source": "CaBoMP",
-							"page": 99
-						}
-					],
-					"id": "011"
-				},
-				{
-					"ENG_name": "Spellbook Pouch Belt Bag",
-					"name": "法术书小包腰带袋",
-					"type": "entries",
-					"page": 103,
-					"entries": [
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "crochetpatterns/CaBoMP/083.webp"
-							},
-							"credit": "Mithy Evans",
-							"width": 1780,
-							"height": 2244
-						},
-						{
-							"ENG_name": "Spellbook Pouch Belt Bag",
-							"name": "法术书小包腰带袋",
-							"type": "statblock",
-							"prop": "crochetPatternFluff",
-							"source": "CaBoMP",
-							"page": 103
-						},
-						{
-							"ENG_name": "Spellbook Pouch Belt Bag",
-							"name": "法术书小包腰带袋",
-							"type": "statblock",
-							"tag": "crochet",
-							"source": "CaBoMP",
-							"page": 103
-						}
-					],
-					"id": "012"
-				},
-				{
-					"ENG_name": "Mantle of Spell Resistance",
-					"name": "法术抗性斗篷",
-					"type": "entries",
-					"page": 107,
-					"entries": [
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "crochetpatterns/CaBoMP/085.webp"
-							},
-							"credit": "Mithy Evans",
-							"width": 1780,
-							"height": 2244
-						},
-						{
-							"ENG_name": "Mantle of Spell Resistance",
-							"name": "法术抗性斗篷",
-							"type": "statblock",
-							"prop": "crochetPatternFluff",
-							"source": "CaBoMP",
-							"page": 107
-						},
-						{
-							"ENG_name": "Mantle of Spell Resistance",
-							"name": "法术抗性斗篷",
-							"type": "statblock",
-							"tag": "crochet",
-							"source": "CaBoMP",
-							"page": 107
-						}
-					],
-					"id": "013"
-				},
-				{
-					"ENG_name": "Bag of Holding",
-					"name": "次元袋",
-					"type": "entries",
-					"page": 113,
-					"entries": [
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "crochetpatterns/CaBoMP/089.webp"
-							},
-							"credit": "Mithy Evans",
-							"width": 1780,
-							"height": 2244
-						},
-						{
-							"ENG_name": "Bag of Holding",
-							"name": "次元袋",
-							"type": "statblock",
-							"prop": "crochetPatternFluff",
-							"source": "CaBoMP",
-							"page": 113
-						},
-						{
-							"ENG_name": "Bag of Holding",
-							"name": "次元袋",
-							"type": "statblock",
-							"tag": "crochet",
-							"source": "CaBoMP",
-							"page": 113
-						}
-					],
-					"id": "014"
-				}
-			],
-			"id": "00b"
-		},
-		{
-			"ENG_name": "Household Items",
-			"name": "家居用品",
-			"type": "section",
-			"page": 121,
-			"entries": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/CaBoMP/095.webp"
-					},
-					"credit": "Mithy Evans",
-					"width": 1780,
-					"height": 2244
-				},
-				"很少有冒险者不欣赏一个设施齐全的家的舒适，无论他们的任务多么频繁地让他们远离它的壁炉。事实上，保护家园的渴望激励了许多人踏上他们的第一次使命，并提供了一种无论是黄金还是赞誉都无法完全比拟的喜悦。一个人的家是一种日常魔法。没有两个是完全相同的，它们由居住者的需求、偏好和奇思妙想所塑造。实际的空间可能千差万别，从最微小的角落到适合容纳数百人的宏伟厅堂。一个家可以是整洁的或杂乱的，安静的或喧闹的，一个宁静的绿洲或一个让你充满新鲜活力的充满活力的地点。然而，无论何种形态，它都是一个你属于的地方，一个完全接纳你本来面目的地点。",
-				"无论你是一个大部分时间都安居于自己塔楼图书馆的{@class 法师}，一个与同信仰者共享庙宇宿舍的{@class 牧师}，一个堡垒屹立于饱受战火蹂躏的边境、作为抵御劫掠部落意志壁垒的{@class 战士}，还是一个其简易小屋与自然环境无缝融合的{@class 德鲁伊}，你的家都反映了你的自我认知和你所选择的生活。家中的物件同样应是独一无二的，为空间本身带来一抹你的冒险色彩。迷人的手工制品将提醒你和你的访客，你为精心布置这个空间所付出的关怀与努力。",
-				"本节中的项目经过挑选，旨在适应广泛的家居环境。大多数项目将功能性与设计和奇思妙想融为一体。初学者会发现{@crochet 魔法学派奶奶方格}和{@crochet D20骰子抱枕}有无穷的用途，其简易的设计可以随着你技能的增长融入各种各样的图案中。{@crochet 拟身怪骰子袋}会吸引每位冒险者敢于冒险的一面，同时用新的缝合技术挑战你。最后，{@crochet 灵魂币杯垫||灵魂币杯垫}将为你的装饰增添一抹炼狱风情，同时保护桌面免受难看的污渍侵扰。每个设计都将有助于营造一个充满温暖和魔法的家，在黑暗时刻鼓舞你的勇气，并作为从危险中赢得的喘息之所。",
-				{
-					"ENG_name": "Schools of Magic Granny Squares",
-					"name": "魔法学派奶奶方格",
-					"type": "entries",
-					"page": 125,
-					"entries": [
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "crochetpatterns/CaBoMP/096.webp"
-							},
-							"credit": "Mithy Evans",
-							"width": 1780,
-							"height": 2244
-						},
-						{
-							"ENG_name": "Schools of Magic Granny Squares",
-							"name": "魔法学派奶奶方格",
-							"type": "statblock",
-							"prop": "crochetPatternFluff",
-							"source": "CaBoMP",
-							"page": 125
-						},
-						{
-							"ENG_name": "Schools of Magic Granny Squares",
-							"name": "魔法学派奶奶方格",
-							"type": "statblock",
-							"tag": "crochet",
-							"source": "CaBoMP",
-							"page": 125
-						}
-					],
-					"id": "016"
-				},
-				{
-					"ENG_name": "D20 Pillow",
-					"name": "D20骰子抱枕",
-					"type": "entries",
-					"page": 135,
-					"entries": [
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "crochetpatterns/CaBoMP/106.webp"
-							},
-							"credit": "Mithy Evans",
-							"width": 1780,
-							"height": 2244
-						},
-						{
-							"ENG_name": "D20 Pillow",
-							"name": "D20骰子抱枕",
-							"type": "statblock",
-							"prop": "crochetPatternFluff",
-							"source": "CaBoMP",
-							"page": 135
-						},
-						{
-							"ENG_name": "D20 Pillow",
-							"name": "D20骰子抱枕",
-							"type": "statblock",
-							"tag": "crochet",
-							"source": "CaBoMP",
-							"page": 135
-						}
-					],
-					"id": "017"
-				},
-				{
-					"ENG_name": "Mimic Dice Bag",
-					"name": "拟身怪骰子袋",
-					"type": "entries",
-					"page": 143,
-					"entries": [
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "crochetpatterns/CaBoMP/129.webp"
-							},
-							"credit": "Mithy Evans",
-							"width": 1780,
-							"height": 2244
-						},
-						{
-							"ENG_name": "Mimic Dice Bag",
-							"name": "拟身怪骰子袋",
-							"type": "statblock",
-							"prop": "crochetPatternFluff",
-							"source": "CaBoMP",
-							"page": 143
-						},
-						{
-							"ENG_name": "Mimic Dice Bag",
-							"name": "拟身怪骰子袋",
-							"type": "statblock",
-							"tag": "crochet",
-							"source": "CaBoMP",
-							"page": 143
-						}
-					],
-					"id": "018"
-				},
-				{
-					"ENG_name": "Soul Coin Coaster",
-					"name": "灵魂币杯垫",
-					"type": "entries",
-					"page": 151,
-					"entries": [
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "crochetpatterns/CaBoMP/133.webp"
-							},
-							"credit": "Mithy Evans",
-							"width": 1780,
-							"height": 2244
-						},
-						{
-							"ENG_name": "Soul Coin Coaster",
-							"name": "灵魂币杯垫",
-							"type": "statblock",
-							"prop": "crochetPatternFluff",
-							"source": "CaBoMP",
-							"page": 151
-						},
-						{
-							"ENG_name": "Soul Coin Coaster",
-							"name": "灵魂币杯垫",
-							"type": "statblock",
-							"tag": "crochet",
-							"source": "CaBoMP",
-							"page": 151
-						}
-					],
-					"id": "019"
-				}
-			],
-			"id": "015"
-		},
-		{
-			"ENG_name": "Crochet Glossary Terms",
-			"name": "钩针编织术语",
-			"type": "section",
-			"page": 155,
-			"entries": [
-				{
-					"type": "gallery",
-					"images": [
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "book/CaBoMP/138.webp"
-							},
-							"credit": "Mithy Evans",
-							"width": 1780,
-							"height": 2244
+							"type": "inset",
+							"id": "001",
+							"page": 1,
+							"entries": [
+								"通过这本包含众多图案的书，潜入一个钩针编织与冒险的世界。{@i 龙与地下城钩针编织}为所有技能等级的粉丝和钩针编织者提供了一个机会，将他们自己最喜爱的游戏内元素变为现实。创造你自己的{@crochet 魔法学派奶奶方格}，用{@crochet 辟矢夺箭手套}武装自己，并将你的物品打包进{@crochet 次元袋}。除了与逸闻相关的物件，你还会发现一个标志性角色的怪物图鉴供你制作，包括危险又可爱的{@crochet 枭熊幼崽}、凶恶的{@crochet 夺心魔}和炽热的{@crochet 红龙}。{@i 龙与地下城钩针编织}将让各地的冒险者拿起他们新的最爱武器：钩针。"
+							]
 						},
 						{
 							"type": "image",
 							"href": {
 								"type": "internal",
-								"path": "book/CaBoMP/139.webp"
+								"path": "book/CaBoMP/009.webp"
 							},
-							"credit": "Mithy Evans",
 							"width": 1780,
-							"height": 2244
+							"height": 2244,
+							"credit": "Mithy Evans"
+						},
+						"在每次任务中，冒险者都必须忍受数周穿越{@quickref 困难地形||3}的旅行。在篝火旁守卫的漫漫长夜。等待侦察队归来的焦虑时光。换句话说，有充足的时间让手指变得僵硬，思绪变得混乱。有什么比一门需要灵巧的触感、对细节的关注，以及一捆足以装入任何未附魔背包的紧凑成分的手艺，更能抵御这些危险呢？",
+						"我说的，当然是那永恒的钩针编织艺术。易于上手，若有游荡的怪物出现也能迅捷地放下。容易学习且用途无穷。比书更轻，比歌谣更安静。钩针编织完美契合探索与冒险的生活。",
+						"有些人可能认为它只是一种普通的技艺，不值得出现在冒险者宏大而史诗般的生活中。但在我看来，正是这种特质让它对冒险者特别有用。当你的生活中充满了传说中的怪物和强大的魔法时，你很容易就会失去与日常奇迹的联系。",
+						"钩针编织是一项连接我们与悠久工艺传统的个体追求。跨越诸国度，遍及众星之海，你会发现这门手艺一次又一次地出现。你也会发现它就在离家更近的地方。很多时候，钩针编织都是一种打破隔阂的有益方式。人们常常渴望与同为工匠的人开启对话。关于针法与技巧、关于最喜爱的花样与毛线的交谈，可以在意想不到的地方打开大门。",
+						"所以，是的，带上你的火绒盒和{@item 火把|PHB|火把}，你的五十尺绳索，以及你数周的应急干粮。但务必为你的钩爪、你的纱线，以及一些值得作为任务目标的图案留出空间。你可能会发现，你最大的宝藏最终是由你自己的双手所创造的。",
+						{
+							"ENG_name": "About this Book",
+							"name": "关于本书",
+							"type": "entries",
+							"id": "002",
+							"page": 6,
+							"entries": [
+								"你手中所持的是一个创意概念的宝藏箱，其价值足以被纳入金龙的宝库。这本由冒险者同好们设计的合集，反映了诸国度的无限多样性。无论你是在寻找一个在短休期间消遣的简易项目，还是一个提升你技能熟练度的复杂挑战，你都能在这些页面中找到激励。",
+								"{@style 龙与地下城钩针编织|dnd-font} 分为三个主要部分：钩针玩偶（毛绒玩具）、可穿戴物品和家居用品。每个部分中的项目都标有难度等级，从新手级开始，经过中级，再到高级。如果你完全是钩针编织的新手，我强烈建议从新手项目开始，这将让你练习核心的钩针编织技术。在书的结尾，你会找到一个所有针法和钩针编织术语以及图案中使用的不同类型纱线的术语表。",
+								"虽然大多数图样仅用纱线和钩爪即可完成，但少数会需要额外的成分。你会在每个项目开头找到一份完整的手法物件清单，例如金属丝、安全眼或大壁毯针刺。务必查看每个项目的详细步骤和要求，并提前备好你的补给品。你肯定不想爬到白羽山半山腰时，才发现纱线或其他所需材质短缺。",
+								"这些图案旨在让所有职业和背景的冒险者都能接触。没有需要利用{@spell 法师之手}来操控额外钩爪或{@spell 隐形仆役}来固定针脚的技术。如果你发现在尝试制作一个图案时需要施放{@spell 祝福术}或{@spell 希望信标}，你应该考虑将它暂时搁置，先尝试一个更简单的、用于技能构建的设计。",
+								"建议的纱线在大多数物质位面都应该能找到。位于妖精荒野、堕影冥界或其他半位面的编织者在寻找替代品时应格外小心。由相位蜘蛛丝、奇美拉毛皮或其他此类魔法浸染来源制成的纱线，其表现常常出人意料。从扭曲的针脚到计划外的跨位面旅行，各种困境都可能轻易降临到粗心大意的编织者身上。",
+								"闲话少叙，我邀请你拿起钩爪和纱线，开启你自己的任务！"
+							]
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/CaBoMP/010.webp"
+							},
+							"width": 2518,
+							"height": 1586,
+							"credit": "Mithy Evans"
 						}
 					]
 				},
 				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"columns": 2,
-					"page": 155,
-					"items": [
+					"ENG_name": "Amigurumi",
+					"name": "钩针玩偶",
+					"type": "section",
+					"id": "003",
+					"page": 11,
+					"entries": [
 						{
-							"ENG_name": "bpdc:",
-							"name": "bpdc:",
-							"type": "item",
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/CaBoMP/011.webp"
+							},
+							"width": 1780,
+							"height": 2244,
+							"credit": "Mithy Evans"
+						},
+						"有什么能比将可怕的怪物和邪恶的神器变成可爱又令人想拥抱的欢乐象征更好呢？这正是你将通过这些可爱的钩针玩偶图案施展的魔法。这些雕像编织着一种能吸引所有年龄和技能等级的冒险者的惑控魔法。",
+						"诸国度提供了丰富的生物，其形象可以用纱线和钩爪来捕捉。所选图样涵盖了从{@crochet 凝胶方块}的简易几何结构到{@crochet 移位兽}的跨位面复杂度等一系列形态和尺寸。掌握了这些设计后，进阶工匠甚至可能想尝试改造这些图样以扩展其作品集。例如，通过调整{@crochet 红龙}图样的头部褶皱和翅膀形状\u2014\u2014当然，还有更换纱线颜色\u2014\u2014可以创造出其他类型的龙类。",
+						"以免你将此部分视为单纯的儿戏，请回想这些钩针玩偶对任何怪物猎人的用处。很少有人具备冒险者对生物解剖学细微之处的熟悉程度。在确定你被要求面对的威胁细节时，能够提供一个清晰的视觉参考会很有用。例如，一个只有四个眼柄的{@crochet 眼魔}仅仅是一个{@creature 观察者眼魔}\u2014\u2014仍然是一种威胁，但威胁较小。确保你面对的是{@creature 豹}而不是{@crochet 移位兽}，完全值得你缝制那个图案的努力！",
+						"确实，{@creature 瓦罗赞普\"瓦罗\"格达姆|ToA|瓦罗·格达姆}声称遇到过一位科米尔怪物猎人，这位猎人手工制作了一个羊毛毡玩偶来代表他们杀死的每一种危险生物。值得注意的是，{@creature 瓦罗赞普\"瓦罗\"格达姆|ToA|瓦罗}当时正在出售一套据称来自此收藏的毛绒玩具，因此这则轶事应持保留态度。即便如此，它也说明了冒险者可能为本章节中的图案想出的无数用途之一。",
+						"一旦完成，你会发现钩针玩偶非常方便。它们可以作为你独自执行任务时珍爱的同伴，也可以作为对你任务同伴的感谢之礼。它们可以用来取悦孩童，增强吟游诗人的表演，或者干扰一个无聊的哨兵。它们甚至可以成为献给那些在你冒险旅途中指引你的无形力量的感谢祭品。选择权全在你手中。",
+						{
+							"ENG_name": "Gelatinous Cube",
+							"name": "凝胶方块",
+							"type": "entries",
+							"id": "004",
+							"page": 15,
 							"entries": [
-								"后柱双钩针"
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "crochetpatterns/CaBoMP/012.webp"
+									},
+									"width": 1780,
+									"height": 2244,
+									"credit": "Mithy Evans"
+								},
+								{
+									"ENG_name": "Gelatinous Cube",
+									"name": "凝胶方块",
+									"type": "statblock",
+									"prop": "crochetPatternFluff",
+									"source": "CaBoMP",
+									"page": 15
+								},
+								{
+									"ENG_name": "Gelatinous Cube",
+									"name": "凝胶方块",
+									"type": "statblock",
+									"tag": "crochet",
+									"source": "CaBoMP",
+									"page": 15
+								}
 							]
 						},
 						{
-							"ENG_name": "bphdc:",
-							"name": "bphdc:",
-							"type": "item",
+							"ENG_name": "Beholder",
+							"name": "眼魔",
+							"type": "entries",
+							"id": "005",
+							"page": 21,
 							"entries": [
-								"后柱一半双钩针"
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "crochetpatterns/CaBoMP/017.webp"
+									},
+									"width": 1780,
+									"height": 2244,
+									"credit": "Mithy Evans"
+								},
+								{
+									"ENG_name": "Beholder",
+									"name": "眼魔",
+									"type": "statblock",
+									"prop": "crochetPatternFluff",
+									"source": "CaBoMP",
+									"page": 21
+								},
+								{
+									"ENG_name": "Beholder",
+									"name": "眼魔",
+									"type": "statblock",
+									"tag": "crochet",
+									"source": "CaBoMP",
+									"page": 21
+								}
 							]
 						},
 						{
-							"ENG_name": "blo:",
-							"name": "blo:",
-							"type": "item",
+							"ENG_name": "Displacer Beast",
+							"name": "移位兽",
+							"type": "entries",
+							"id": "006",
+							"page": 29,
 							"entries": [
-								"仅后环"
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "crochetpatterns/CaBoMP/022.webp"
+									},
+									"width": 1780,
+									"height": 2244,
+									"credit": "Mithy Evans"
+								},
+								{
+									"ENG_name": "Displacer Beast",
+									"name": "移位兽",
+									"type": "statblock",
+									"prop": "crochetPatternFluff",
+									"source": "CaBoMP",
+									"page": 29
+								},
+								{
+									"ENG_name": "Displacer Beast",
+									"name": "移位兽",
+									"type": "statblock",
+									"tag": "crochet",
+									"source": "CaBoMP",
+									"page": 29
+								}
 							]
 						},
 						{
-							"ENG_name": "ch:",
-							"name": "ch:",
-							"type": "item",
+							"ENG_name": "Mind Flayer",
+							"name": "夺心魔",
+							"type": "entries",
+							"id": "007",
+							"page": 39,
 							"entries": [
-								"链击"
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "crochetpatterns/CaBoMP/032.webp"
+									},
+									"width": 1780,
+									"height": 2244,
+									"credit": "Mithy Evans"
+								},
+								{
+									"ENG_name": "Mind Flayer",
+									"name": "夺心魔",
+									"type": "statblock",
+									"prop": "crochetPatternFluff",
+									"source": "CaBoMP",
+									"page": 39
+								},
+								{
+									"ENG_name": "Mind Flayer",
+									"name": "夺心魔",
+									"type": "statblock",
+									"tag": "crochet",
+									"source": "CaBoMP",
+									"page": 39
+								}
 							]
 						},
 						{
-							"ENG_name": "ch sp:",
-							"name": "ch sp:",
-							"type": "item",
+							"ENG_name": "Owlbear Cub",
+							"name": "枭熊幼崽",
+							"type": "entries",
+							"id": "008",
+							"page": 45,
 							"entries": [
-								"链之魔契 空间"
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "crochetpatterns/CaBoMP/035.webp"
+									},
+									"width": 1780,
+									"height": 2244,
+									"credit": "Mithy Evans"
+								},
+								{
+									"ENG_name": "Owlbear Cub",
+									"name": "枭熊幼崽",
+									"type": "statblock",
+									"prop": "crochetPatternFluff",
+									"source": "CaBoMP",
+									"page": 45
+								},
+								{
+									"ENG_name": "Owlbear Cub",
+									"name": "枭熊幼崽",
+									"type": "statblock",
+									"tag": "crochet",
+									"source": "CaBoMP",
+									"page": 45
+								}
 							]
 						},
 						{
-							"ENG_name": "dblpuff:",
-							"name": "双泡芙针：",
-							"type": "item",
+							"ENG_name": "Eye and Hand of Vecna",
+							"name": "维克那法眼和魔掌",
+							"type": "entries",
+							"id": "009",
+							"page": 53,
 							"entries": [
-								"双泡芙针"
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "crochetpatterns/CaBoMP/041.webp"
+									},
+									"width": 1780,
+									"height": 2244,
+									"credit": "Mithy Evans"
+								},
+								{
+									"ENG_name": "Eye and Hand of Vecna",
+									"name": "维克那法眼和魔掌",
+									"type": "statblock",
+									"prop": "crochetPatternFluff",
+									"source": "CaBoMP",
+									"page": 53
+								},
+								{
+									"ENG_name": "Eye and Hand of Vecna",
+									"name": "维克那法眼和魔掌",
+									"type": "statblock",
+									"tag": "crochet",
+									"source": "CaBoMP",
+									"page": 53
+								}
 							]
 						},
 						{
-							"ENG_name": "dc:",
-							"name": "dc:",
-							"type": "item",
+							"ENG_name": "Red Dragon",
+							"name": "红龙",
+							"type": "entries",
+							"id": "00a",
+							"page": 59,
 							"entries": [
-								"双钩针"
-							]
-						},
-						{
-							"ENG_name": "dcdec:",
-							"name": "dcdec:",
-							"type": "item",
-							"entries": [
-								"双钩针减针（也称为dc2tog）"
-							]
-						},
-						{
-							"ENG_name": "dcinc:",
-							"name": "dcinc:",
-							"type": "item",
-							"entries": [
-								"双钩针加针（同一针目内钩2针双钩针）"
-							]
-						},
-						{
-							"ENG_name": "dcXtog in the same stitch:",
-							"name": "在同一针目上钩织dcXtog：",
-							"type": "item",
-							"entries": [
-								"双钩针 (#) stitches in the same stitch"
-							]
-						},
-						{
-							"ENG_name": "dc3tog:",
-							"name": "dc3tog:",
-							"type": "item",
-							"entries": [
-								"双钩针3针并1针"
-							]
-						},
-						{
-							"ENG_name": "dc5tog:",
-							"name": "dc5tog:",
-							"type": "item",
-							"entries": [
-								"双钩针5针并1针"
-							]
-						},
-						{
-							"ENG_name": "dec:",
-							"name": "dec:",
-							"type": "item",
-							"entries": [
-								"短针减针（也称为 sc2tog）"
-							]
-						},
-						{
-							"ENG_name": "fdc:",
-							"name": "fdc:",
-							"type": "item",
-							"entries": [
-								"基础双钩针"
-							]
-						},
-						{
-							"ENG_name": "flo:",
-							"name": "flo:",
-							"type": "item",
-							"entries": [
-								"仅前环"
-							]
-						},
-						{
-							"ENG_name": "fpdc:",
-							"name": "fpdc:",
-							"type": "item",
-							"entries": [
-								"前柱双钩针"
-							]
-						},
-						{
-							"ENG_name": "fptr:",
-							"name": "fptr:",
-							"type": "item",
-							"entries": [
-								"前柱长针"
-							]
-						},
-						{
-							"ENG_name": "fsc:",
-							"name": "fsc:",
-							"type": "item",
-							"entries": [
-								"基础短针"
-							]
-						},
-						{
-							"ENG_name": "hdc:",
-							"name": "hdc:",
-							"type": "item",
-							"entries": [
-								"一半双钩针"
-							]
-						},
-						{
-							"ENG_name": "hdc dec:",
-							"name": "hdc dec:",
-							"type": "item",
-							"entries": [
-								"一半双钩针减针（也称为 hdc2tog）"
-							]
-						},
-						{
-							"ENG_name": "hdc inc:",
-							"name": "hdc inc:",
-							"type": "item",
-							"entries": [
-								"一半双钩针增加（在同一针目中钩2针一半双钩针）"
-							]
-						},
-						{
-							"ENG_name": "htr:",
-							"name": "htr:",
-							"type": "item",
-							"entries": [
-								"一半长针（美式版本）"
-							]
-						},
-						{
-							"ENG_name": "inc:",
-							"name": "增加：",
-							"type": "item",
-							"entries": [
-								"短针加针（在同一针目中钩2个短针）"
-							]
-						},
-						{
-							"ENG_name": "inv dec:",
-							"name": "inv dec:",
-							"type": "item",
-							"entries": [
-								"隐形减针"
-							]
-						},
-						{
-							"ENG_name": "picot:",
-							"name": "皮科特：",
-							"type": "item",
-							"entries": [
-								"皮科特针法"
-							]
-						},
-						{
-							"ENG_name": "popcorn:",
-							"name": "爆米花针:",
-							"type": "item",
-							"entries": [
-								"爆米花针"
-							]
-						},
-						{
-							"ENG_name": "puff st:",
-							"name": "泡芙针:",
-							"type": "item",
-							"entries": [
-								"泡芙针"
-							]
-						},
-						{
-							"ENG_name": "sc:",
-							"name": "sc:",
-							"type": "item",
-							"entries": [
-								"短针"
-							]
-						},
-						{
-							"ENG_name": "sk st:",
-							"name": "sk st:",
-							"type": "item",
-							"entries": [
-								"跳过一针"
-							]
-						},
-						{
-							"ENG_name": "slst:",
-							"name": "slst:",
-							"type": "item",
-							"entries": [
-								"引拔针"
-							]
-						},
-						{
-							"ENG_name": "tr:",
-							"name": "tr:",
-							"type": "item",
-							"entries": [
-								"长针"
-							]
-						},
-						{
-							"ENG_name": "Vstitch:",
-							"name": "Vstitch:",
-							"type": "item",
-							"entries": [
-								"在同一针目中钩2个长针"
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "crochetpatterns/CaBoMP/045.webp"
+									},
+									"width": 1780,
+									"height": 2244,
+									"credit": "Mithy Evans"
+								},
+								{
+									"ENG_name": "Red Dragon",
+									"name": "红龙",
+									"type": "statblock",
+									"prop": "crochetPatternFluff",
+									"source": "CaBoMP",
+									"page": 59
+								},
+								{
+									"ENG_name": "Red Dragon",
+									"name": "红龙",
+									"type": "statblock",
+									"tag": "crochet",
+									"source": "CaBoMP",
+									"page": 59
+								}
 							]
 						}
 					]
 				},
 				{
-					"ENG_name": "Special Stitches",
-					"name": "特殊针法",
-					"type": "entries",
+					"ENG_name": "Wearables",
+					"name": "可穿戴物品",
+					"type": "section",
+					"id": "00b",
+					"page": 73,
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/CaBoMP/060.webp"
+							},
+							"width": 1780,
+							"height": 2244,
+							"credit": "Mithy Evans"
+						},
+						"虽然没人会愚蠢到认为衣服造就了冒险者，但合适的装束能在许多方面协助你的冒险。围巾和帽子能帮助你专注于任务，而不是那些阻碍你翻越陡峭山脉、跨越广阔海洋的刺骨寒风。手套保护你的手指，让它们在需要射出箭矢或施放法术时保持温暖和预备状态。结实的背包让你所有的装备集中且井井有条，以便在暗门或突然的伏击需要你快速反应时随时擒拿。",
+						"除了实用功能，手工衣物物件是一种令人愉悦的方式，让你能在漫长的旅路和黑暗的地下城中承载你的个体风格。你为任务携带的每件东西都需要服务于一个目的，通常不止一个。凭借创造你自己独特物件的能力，没有理由让空间限制削弱你的个人风采。通过制作你自己的围巾、帽子和手套，你可以避免那些尴尬时刻\u2014\u2014当整个队伍在踏上旅途前都在同一个商人那里囤货时，这一点变得显而易见。",
+						"此外，可穿戴物品能帮助你克服新手冒险者面临的最大阻碍之一\u2014\u2014即说服多疑的陌生人接受你的援助。龙鳞在围巾上编织出的微光，或魔法袋上的奥术纹路，能帮助你像一把饱经战痕的战斧一样迅速获得警觉村民的信任\u2014\u2014而且伴随着更少的紧张低语。",
+						"它们也能协助你补充补给品，或用来交换一夜的暖和床铺。虽然旅店老板通常更偏好钱币支付，但在你的旅途中，许多国度的老板都乐于用有用的物件进行贸易。",
+						"这些图案都经过充分测试，应能适合从初学者到专家级刺绣者的各种技能水平。有些图案的灵感来自著名的怪物和受人爱戴的神祇，而另一些则让人联想到任何冒险者都会引以为豪的奇妙魔法物品。每一个图案都提供了一个探索不同技巧、扩展你的针法库并创作一件定制作品的机会，这件作品必定会让你自己或任何幸运的收礼者感到高兴！",
+						"一个有用的注：这些图案已为中等体型的类人生物缩放，应可直接适用于大多数人类、精灵、吉斯洋基人和提夫林受赠者。你可能需要为侏儒、矮人、半身人、兽人、龙裔和歌利亚调整诸如带子长度等元素。",
+						{
+							"ENG_name": "Quiver of Ehlonna",
+							"name": "艾罗娜的箭袋",
+							"type": "entries",
+							"id": "00c",
+							"page": 77,
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "crochetpatterns/CaBoMP/061.webp"
+									},
+									"width": 1780,
+									"height": 2244,
+									"credit": "Mithy Evans"
+								},
+								{
+									"ENG_name": "Quiver of Ehlonna",
+									"name": "艾罗娜的箭袋",
+									"type": "statblock",
+									"prop": "crochetPatternFluff",
+									"source": "CaBoMP",
+									"page": 77
+								},
+								{
+									"ENG_name": "Quiver of Ehlonna",
+									"name": "艾罗娜的箭袋",
+									"type": "statblock",
+									"tag": "crochet",
+									"source": "CaBoMP",
+									"page": 77
+								}
+							]
+						},
+						{
+							"ENG_name": "Platinum Dragon Cowl",
+							"name": "白金龙兜帽",
+							"type": "entries",
+							"id": "00d",
+							"page": 81,
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "crochetpatterns/CaBoMP/064.webp"
+									},
+									"width": 1780,
+									"height": 2244,
+									"credit": "Mithy Evans"
+								},
+								{
+									"ENG_name": "Platinum Dragon Cowl",
+									"name": "白金龙兜帽",
+									"type": "statblock",
+									"prop": "crochetPatternFluff",
+									"source": "CaBoMP",
+									"page": 81
+								},
+								{
+									"ENG_name": "Platinum Dragon Cowl",
+									"name": "白金龙兜帽",
+									"type": "statblock",
+									"tag": "crochet",
+									"source": "CaBoMP",
+									"page": 81
+								}
+							]
+						},
+						{
+							"ENG_name": "Bracers of Archery",
+							"name": "射手护腕",
+							"type": "entries",
+							"id": "00e",
+							"page": 85,
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "crochetpatterns/CaBoMP/068.webp"
+									},
+									"width": 1780,
+									"height": 2244,
+									"credit": "Mithy Evans"
+								},
+								{
+									"ENG_name": "Bracers of Archery",
+									"name": "射手护腕",
+									"type": "statblock",
+									"prop": "crochetPatternFluff",
+									"source": "CaBoMP",
+									"page": 85
+								},
+								{
+									"ENG_name": "Bracers of Archery",
+									"name": "射手护腕",
+									"type": "statblock",
+									"tag": "crochet",
+									"source": "CaBoMP",
+									"page": 85
+								}
+							]
+						},
+						{
+							"ENG_name": "Minsc's Hat of Winter Warming",
+							"name": "明斯克的暖冬帽",
+							"type": "entries",
+							"id": "00f",
+							"page": 89,
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "crochetpatterns/CaBoMP/072.webp"
+									},
+									"width": 1780,
+									"height": 2244,
+									"credit": "Mithy Evans"
+								},
+								{
+									"ENG_name": "Minsc's Hat of Winter Warming",
+									"name": "明斯克的暖冬帽",
+									"type": "statblock",
+									"prop": "crochetPatternFluff",
+									"source": "CaBoMP",
+									"page": 89
+								},
+								{
+									"ENG_name": "Minsc's Hat of Winter Warming",
+									"name": "明斯克的暖冬帽",
+									"type": "statblock",
+									"tag": "crochet",
+									"source": "CaBoMP",
+									"page": 89
+								}
+							]
+						},
+						{
+							"ENG_name": "Purple Worm Scarf",
+							"name": "紫虫围巾",
+							"type": "entries",
+							"id": "010",
+							"page": 93,
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "crochetpatterns/CaBoMP/075.webp"
+									},
+									"width": 1780,
+									"height": 2244,
+									"credit": "Mithy Evans"
+								},
+								{
+									"ENG_name": "Purple Worm Scarf",
+									"name": "紫虫围巾",
+									"type": "statblock",
+									"prop": "crochetPatternFluff",
+									"source": "CaBoMP",
+									"page": 93
+								},
+								{
+									"ENG_name": "Purple Worm Scarf",
+									"name": "紫虫围巾",
+									"type": "statblock",
+									"tag": "crochet",
+									"source": "CaBoMP",
+									"page": 93
+								}
+							]
+						},
+						{
+							"ENG_name": "Gloves of Missile Snaring",
+							"name": "辟矢夺箭手套",
+							"type": "entries",
+							"id": "011",
+							"page": 99,
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "crochetpatterns/CaBoMP/080.webp"
+									},
+									"width": 1780,
+									"height": 2244,
+									"credit": "Mithy Evans"
+								},
+								{
+									"ENG_name": "Gloves of Missile Snaring",
+									"name": "辟矢夺箭手套",
+									"type": "statblock",
+									"prop": "crochetPatternFluff",
+									"source": "CaBoMP",
+									"page": 99
+								},
+								{
+									"ENG_name": "Gloves of Missile Snaring",
+									"name": "辟矢夺箭手套",
+									"type": "statblock",
+									"tag": "crochet",
+									"source": "CaBoMP",
+									"page": 99
+								}
+							]
+						},
+						{
+							"ENG_name": "Spellbook Pouch Belt Bag",
+							"name": "法术书小包腰带袋",
+							"type": "entries",
+							"id": "012",
+							"page": 103,
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "crochetpatterns/CaBoMP/083.webp"
+									},
+									"width": 1780,
+									"height": 2244,
+									"credit": "Mithy Evans"
+								},
+								{
+									"ENG_name": "Spellbook Pouch Belt Bag",
+									"name": "法术书小包腰带袋",
+									"type": "statblock",
+									"prop": "crochetPatternFluff",
+									"source": "CaBoMP",
+									"page": 103
+								},
+								{
+									"ENG_name": "Spellbook Pouch Belt Bag",
+									"name": "法术书小包腰带袋",
+									"type": "statblock",
+									"tag": "crochet",
+									"source": "CaBoMP",
+									"page": 103
+								}
+							]
+						},
+						{
+							"ENG_name": "Mantle of Spell Resistance",
+							"name": "法术抗性斗篷",
+							"type": "entries",
+							"id": "013",
+							"page": 107,
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "crochetpatterns/CaBoMP/085.webp"
+									},
+									"width": 1780,
+									"height": 2244,
+									"credit": "Mithy Evans"
+								},
+								{
+									"ENG_name": "Mantle of Spell Resistance",
+									"name": "法术抗性斗篷",
+									"type": "statblock",
+									"prop": "crochetPatternFluff",
+									"source": "CaBoMP",
+									"page": 107
+								},
+								{
+									"ENG_name": "Mantle of Spell Resistance",
+									"name": "法术抗性斗篷",
+									"type": "statblock",
+									"tag": "crochet",
+									"source": "CaBoMP",
+									"page": 107
+								}
+							]
+						},
+						{
+							"ENG_name": "Bag of Holding",
+							"name": "次元袋",
+							"type": "entries",
+							"id": "014",
+							"page": 113,
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "crochetpatterns/CaBoMP/089.webp"
+									},
+									"width": 1780,
+									"height": 2244,
+									"credit": "Mithy Evans"
+								},
+								{
+									"ENG_name": "Bag of Holding",
+									"name": "次元袋",
+									"type": "statblock",
+									"prop": "crochetPatternFluff",
+									"source": "CaBoMP",
+									"page": 113
+								},
+								{
+									"ENG_name": "Bag of Holding",
+									"name": "次元袋",
+									"type": "statblock",
+									"tag": "crochet",
+									"source": "CaBoMP",
+									"page": 113
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Household Items",
+					"name": "家居用品",
+					"type": "section",
+					"id": "015",
+					"page": 121,
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/CaBoMP/095.webp"
+							},
+							"width": 1780,
+							"height": 2244,
+							"credit": "Mithy Evans"
+						},
+						"很少有冒险者不欣赏一个设施齐全的家的舒适，无论他们的任务多么频繁地让他们远离它的壁炉。事实上，保护家园的渴望激励了许多人踏上他们的第一次使命，并提供了一种无论是黄金还是赞誉都无法完全比拟的喜悦。一个人的家是一种日常魔法。没有两个是完全相同的，它们由居住者的需求、偏好和奇思妙想所塑造。实际的空间可能千差万别，从最微小的角落到适合容纳数百人的宏伟厅堂。一个家可以是整洁的或杂乱的，安静的或喧闹的，一个宁静的绿洲或一个让你充满新鲜活力的充满活力的地点。然而，无论何种形态，它都是一个你属于的地方，一个完全接纳你本来面目的地点。",
+						"无论你是一个大部分时间都安居于自己塔楼图书馆的{@class 法师}，一个与同信仰者共享庙宇宿舍的{@class 牧师}，一个堡垒屹立于饱受战火蹂躏的边境、作为抵御劫掠部落意志壁垒的{@class 战士}，还是一个其简易小屋与自然环境无缝融合的{@class 德鲁伊}，你的家都反映了你的自我认知和你所选择的生活。家中的物件同样应是独一无二的，为空间本身带来一抹你的冒险色彩。迷人的手工制品将提醒你和你的访客，你为精心布置这个空间所付出的关怀与努力。",
+						"本节中的项目经过挑选，旨在适应广泛的家居环境。大多数项目将功能性与设计和奇思妙想融为一体。初学者会发现{@crochet 魔法学派奶奶方格}和{@crochet D20骰子抱枕}有无穷的用途，其简易的设计可以随着你技能的增长融入各种各样的图案中。{@crochet 拟身怪骰子袋}会吸引每位冒险者敢于冒险的一面，同时用新的缝合技术挑战你。最后，{@crochet 灵魂币杯垫||灵魂币杯垫}将为你的装饰增添一抹炼狱风情，同时保护桌面免受难看的污渍侵扰。每个设计都将有助于营造一个充满温暖和魔法的家，在黑暗时刻鼓舞你的勇气，并作为从危险中赢得的喘息之所。",
+						{
+							"ENG_name": "Schools of Magic Granny Squares",
+							"name": "魔法学派奶奶方格",
+							"type": "entries",
+							"id": "016",
+							"page": 125,
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "crochetpatterns/CaBoMP/096.webp"
+									},
+									"width": 1780,
+									"height": 2244,
+									"credit": "Mithy Evans"
+								},
+								{
+									"ENG_name": "Schools of Magic Granny Squares",
+									"name": "魔法学派奶奶方格",
+									"type": "statblock",
+									"prop": "crochetPatternFluff",
+									"source": "CaBoMP",
+									"page": 125
+								},
+								{
+									"ENG_name": "Schools of Magic Granny Squares",
+									"name": "魔法学派奶奶方格",
+									"type": "statblock",
+									"tag": "crochet",
+									"source": "CaBoMP",
+									"page": 125
+								}
+							]
+						},
+						{
+							"ENG_name": "D20 Pillow",
+							"name": "D20骰子抱枕",
+							"type": "entries",
+							"id": "017",
+							"page": 135,
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "crochetpatterns/CaBoMP/106.webp"
+									},
+									"width": 1780,
+									"height": 2244,
+									"credit": "Mithy Evans"
+								},
+								{
+									"ENG_name": "D20 Pillow",
+									"name": "D20骰子抱枕",
+									"type": "statblock",
+									"prop": "crochetPatternFluff",
+									"source": "CaBoMP",
+									"page": 135
+								},
+								{
+									"ENG_name": "D20 Pillow",
+									"name": "D20骰子抱枕",
+									"type": "statblock",
+									"tag": "crochet",
+									"source": "CaBoMP",
+									"page": 135
+								}
+							]
+						},
+						{
+							"ENG_name": "Mimic Dice Bag",
+							"name": "拟身怪骰子袋",
+							"type": "entries",
+							"id": "018",
+							"page": 143,
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "crochetpatterns/CaBoMP/129.webp"
+									},
+									"width": 1780,
+									"height": 2244,
+									"credit": "Mithy Evans"
+								},
+								{
+									"ENG_name": "Mimic Dice Bag",
+									"name": "拟身怪骰子袋",
+									"type": "statblock",
+									"prop": "crochetPatternFluff",
+									"source": "CaBoMP",
+									"page": 143
+								},
+								{
+									"ENG_name": "Mimic Dice Bag",
+									"name": "拟身怪骰子袋",
+									"type": "statblock",
+									"tag": "crochet",
+									"source": "CaBoMP",
+									"page": 143
+								}
+							]
+						},
+						{
+							"ENG_name": "Soul Coin Coaster",
+							"name": "灵魂币杯垫",
+							"type": "entries",
+							"id": "019",
+							"page": 151,
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "crochetpatterns/CaBoMP/133.webp"
+									},
+									"width": 1780,
+									"height": 2244,
+									"credit": "Mithy Evans"
+								},
+								{
+									"ENG_name": "Soul Coin Coaster",
+									"name": "灵魂币杯垫",
+									"type": "statblock",
+									"prop": "crochetPatternFluff",
+									"source": "CaBoMP",
+									"page": 151
+								},
+								{
+									"ENG_name": "Soul Coin Coaster",
+									"name": "灵魂币杯垫",
+									"type": "statblock",
+									"tag": "crochet",
+									"source": "CaBoMP",
+									"page": 151
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Crochet Glossary Terms",
+					"name": "钩针编织术语",
+					"type": "section",
+					"id": "01a",
 					"page": 155,
 					"entries": [
+						{
+							"type": "gallery",
+							"images": [
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/CaBoMP/138.webp"
+									},
+									"width": 1780,
+									"height": 2244,
+									"credit": "Mithy Evans"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/CaBoMP/139.webp"
+									},
+									"width": 1780,
+									"height": 2244,
+									"credit": "Mithy Evans"
+								}
+							]
+						},
 						{
 							"type": "list",
+							"page": 155,
 							"style": "list-hang-notitle",
 							"columns": 2,
-							"page": 155,
 							"items": [
 								{
-									"ENG_name": "2dec in 3sc:",
-									"name": "2dec in 3sc:",
+									"ENG_name": "bpdc:",
+									"name": "bpdc:",
 									"type": "item",
 									"entries": [
-										"进行一次标准减针，然后从刚刚减针的同一针目开始，再进行一次减针。这样可以在原本有3个短针（3sc）的位置得到2针（2dec）。"
+										"后柱双钩针"
 									]
 								},
 								{
-									"ENG_name": "Back Loop Only (blo):",
-									"name": "仅后环 (blo):",
+									"ENG_name": "bphdc:",
+									"name": "bphdc:",
 									"type": "item",
 									"entries": [
-										"仅通过针目的后环工作。"
+										"后柱一半双钩针"
 									]
 								},
 								{
-									"ENG_name": "Back Post Half Double Crochet (bphdc):",
-									"name": "后柱半双钩针 (bphdc):",
+									"ENG_name": "blo:",
+									"name": "blo:",
 									"type": "item",
 									"entries": [
-										"纱线绕线，将钩爪从后向前再向后插入前一行的针目柱周围，纱线绕线并拉出一个线圈，纱线绕线并穿过钩爪上的所有3个线圈。"
+										"仅后环"
 									]
 								},
 								{
-									"ENG_name": "Cable:",
-									"name": "电缆：",
+									"ENG_name": "ch:",
+									"name": "ch:",
 									"type": "item",
 									"entries": [
-										"跳针 2 针，在接下来的 2 针中织前针上针，在之前跳过的 2 针中织前针上针。（1 个绞花是 4 针）"
+										"链击"
 									]
 								},
 								{
-									"ENG_name": "Crab Stitch / Reverse Single Crochet (crab st):",
-									"name": "蟹针 / 反短针 (crab st):",
+									"ENG_name": "ch sp:",
+									"name": "ch sp:",
 									"type": "item",
 									"entries": [
-										"Ch1. 不翻转你的织物，将钩针从前到后插入第一个短针针目。将纱线绕在钩针上并拉出一个线圈。再次绕线并穿过两个线圈。"
+										"链之魔契 空间"
 									]
 								},
 								{
-									"ENG_name": "DcXtog in the same stitch / Bobble Stitch:",
-									"name": "在同一针目进行DcXtog / 鲍勃针：",
+									"ENG_name": "dblpuff:",
+									"name": "双泡芙针：",
 									"type": "item",
 									"entries": [
-										"这通常被称为\"泡泡针\"，但本书使用\"在同一针目内钩织X个长针并一针\"这一术语，因为它允许您根据需要改变dc5tog的针数来制作更小或更大的泡泡。例如，要在同一针目内钩织dc3tog：(1) 绕线，将钩针插入针目，绕线并拉出一个线圈，绕线并穿过两个线圈（钩针上留2个线圈）；(2) 绕线，将钩针插入同一针目，绕线并拉出一个线圈，绕线并穿过2个线圈（钩针上留3个线圈）；(3) 绕线，将钩针插入同一针目，绕线并拉出一个线圈，绕线并穿过2个线圈，绕线并穿过钩针上所有4个线圈以完成。"
+										"双泡芙针"
 									]
 								},
 								{
-									"ENG_name": "Double Puff Stitch (dblpuff):",
-									"name": "双蓬松针脚 (dblpuff):",
+									"ENG_name": "dc:",
+									"name": "dc:",
 									"type": "item",
 									"entries": [
-										"挂线，将钩针插入第一个空间并拉出一个线圈2次，挂线并将钩针插入下一个空间3次，挂线并将钩针插入下一个空间2次，挂线并拉过钩针上的所有线圈，然后锁1针。要在双泡芙针上方钩织下一行，请在锁1针的空间中钩织。当你钩织这个针法时，你正在减针。"
+										"双钩针"
 									]
 								},
 								{
-									"ENG_name": "Front Loop Only (flo):",
-									"name": "仅前环（flo）：",
+									"ENG_name": "dcdec:",
+									"name": "dcdec:",
 									"type": "item",
 									"entries": [
-										"仅通过针目的前环工作。"
+										"双钩针减针（也称为dc2tog）"
 									]
 								},
 								{
-									"ENG_name": "Half-Triple or Half-Treble Crochet (htr):",
-									"name": "半三倍长针或半长针（htr）：",
+									"ENG_name": "dcinc:",
+									"name": "dcinc:",
 									"type": "item",
 									"entries": [
-										"纱线绕两圈，将钩爪插入针目，拉出一个线圈，穿过钩爪上的2个线圈，纱线绕一圈，穿过剩余的3个线圈。"
+										"双钩针加针（同一针目内钩2针双钩针）"
 									]
 								},
 								{
-									"ENG_name": "Invisible Decrease (inv dec):",
-									"name": "隐形衰减（inv dec）：",
+									"ENG_name": "dcXtog in the same stitch:",
+									"name": "在同一针目上钩织dcXtog：",
 									"type": "item",
 									"entries": [
-										"将钩针插入指定针目的前侧线圈，将钩针插入下一针目的前侧线圈（钩针上有3个线圈）。挂线，穿过2个线圈。挂线，穿过钩针上剩余的2个线圈。"
+										"双钩针 (#) stitches in the same stitch"
 									]
 								},
 								{
-									"ENG_name": "Picot Stitch (picot):",
-									"name": "皮科特针法 (picot):",
+									"ENG_name": "dc3tog:",
+									"name": "dc3tog:",
 									"type": "item",
 									"entries": [
-										"根据图解钩2或3个锁针，在前一个针目的前半针上钩一个引拔针。"
+										"双钩针3针并1针"
 									]
 								},
 								{
-									"ENG_name": "Popcorn Stitch (popcorn):",
-									"name": "爆米花针（爆米花）：",
+									"ENG_name": "dc5tog:",
+									"name": "dc5tog:",
 									"type": "item",
 									"entries": [
-										"在指定的针目中钩5个长针，从环中移除钩针，将钩针插入第一个已钩的长针中，抓住环并拉出，钩1个锁针完成。当在爆米花针顶部工作时，在锁针1中工作。"
+										"双钩针5针并1针"
 									]
 								},
 								{
-									"ENG_name": "Puff Stitch (puff st):",
-									"name": "泡芙针 (puff st):",
+									"ENG_name": "dec:",
+									"name": "dec:",
 									"type": "item",
 									"entries": [
-										"纱线绕线，插入钩爪并拉出一个线圈5次，纱线绕线并穿过钩爪上的所有线圈并锁针1针。要在泡芙针上方钩织下一行，请在锁针1针的空间中工作。"
+										"短针减针（也称为 sc2tog）"
 									]
 								},
 								{
-									"ENG_name": "Scale / Crocodile Stitch (scale):",
-									"name": "鳞片 / 鳄鱼针法 (鳞片):",
+									"ENG_name": "fdc:",
+									"name": "fdc:",
 									"type": "item",
 									"entries": [
-										"围绕指定的dc针迹工作，在第一根dc的柱周围工作5dc，ch1，在下一根dc的柱周围工作5dc（完成1个鳞片）。"
+										"基础双钩针"
 									]
 								},
 								{
-									"ENG_name": "Spike Stitch (spike st):",
-									"name": "尖刺针法（尖刺针法）：",
+									"ENG_name": "flo:",
+									"name": "flo:",
 									"type": "item",
 									"entries": [
-										"此针法使用与短针相同的步骤，但不是在你正在钩编的当前行入针，而是向下移动并在当前行下方的一行入针工作。"
+										"仅前环"
+									]
+								},
+								{
+									"ENG_name": "fpdc:",
+									"name": "fpdc:",
+									"type": "item",
+									"entries": [
+										"前柱双钩针"
+									]
+								},
+								{
+									"ENG_name": "fptr:",
+									"name": "fptr:",
+									"type": "item",
+									"entries": [
+										"前柱长针"
+									]
+								},
+								{
+									"ENG_name": "fsc:",
+									"name": "fsc:",
+									"type": "item",
+									"entries": [
+										"基础短针"
+									]
+								},
+								{
+									"ENG_name": "hdc:",
+									"name": "hdc:",
+									"type": "item",
+									"entries": [
+										"一半双钩针"
+									]
+								},
+								{
+									"ENG_name": "hdc dec:",
+									"name": "hdc dec:",
+									"type": "item",
+									"entries": [
+										"一半双钩针减针（也称为 hdc2tog）"
+									]
+								},
+								{
+									"ENG_name": "hdc inc:",
+									"name": "hdc inc:",
+									"type": "item",
+									"entries": [
+										"一半双钩针增加（在同一针目中钩2针一半双钩针）"
+									]
+								},
+								{
+									"ENG_name": "htr:",
+									"name": "htr:",
+									"type": "item",
+									"entries": [
+										"一半长针（美式版本）"
+									]
+								},
+								{
+									"ENG_name": "inc:",
+									"name": "增加：",
+									"type": "item",
+									"entries": [
+										"短针加针（在同一针目中钩2个短针）"
+									]
+								},
+								{
+									"ENG_name": "inv dec:",
+									"name": "inv dec:",
+									"type": "item",
+									"entries": [
+										"隐形减针"
+									]
+								},
+								{
+									"ENG_name": "picot:",
+									"name": "皮科特：",
+									"type": "item",
+									"entries": [
+										"皮科特针法"
+									]
+								},
+								{
+									"ENG_name": "popcorn:",
+									"name": "爆米花针:",
+									"type": "item",
+									"entries": [
+										"爆米花针"
+									]
+								},
+								{
+									"ENG_name": "puff st:",
+									"name": "泡芙针:",
+									"type": "item",
+									"entries": [
+										"泡芙针"
+									]
+								},
+								{
+									"ENG_name": "sc:",
+									"name": "sc:",
+									"type": "item",
+									"entries": [
+										"短针"
+									]
+								},
+								{
+									"ENG_name": "sk st:",
+									"name": "sk st:",
+									"type": "item",
+									"entries": [
+										"跳过一针"
+									]
+								},
+								{
+									"ENG_name": "slst:",
+									"name": "slst:",
+									"type": "item",
+									"entries": [
+										"引拔针"
+									]
+								},
+								{
+									"ENG_name": "tr:",
+									"name": "tr:",
+									"type": "item",
+									"entries": [
+										"长针"
 									]
 								},
 								{
@@ -1260,346 +1123,489 @@
 									"name": "Vstitch:",
 									"type": "item",
 									"entries": [
-										"在同一针目中钩织2个长针。"
+										"在同一针目中钩2个长针"
 									]
 								}
 							]
-						}
-					],
-					"id": "01b"
-				}
-			],
-			"id": "01a"
-		},
-		{
-			"ENG_name": "Yarn List and Charts",
-			"name": "纱线清单与图表",
-			"type": "section",
-			"page": 157,
-			"entries": [
-				{
-					"ENG_name": "Yarn Used in Patterns",
-					"name": "图样所用纱线",
-					"type": "entries",
-					"page": 157,
-					"entries": [
+						},
 						{
-							"type": "list",
-							"style": "list-hang-notitle",
-							"columns": 2,
-							"page": 157,
-							"items": [
-								"DK重量（#3 轻型）纱线，以狮子牌 {@i 特鲁布} 展示（100%人造丝，每3½盎司 / 100克绞线为241码 / 220米）",
-								"中粗（#4 中型）纱线，以大捻线 {@i 价值} 展示（100% 丙烯酸纤维，每 6 盎司 / 170 克绞线 380 码 / 348 米）",
-								"中粗（#4 中型）纱线，以大捻线 {@i 价值磅加}（100% 丙烯酸纤维，每 17.6 盎司 / 500 克绞线含 1093 码 / 1000 米）展示",
-								"中粗（#4 中型）纱线，展示为卡隆 {@i 柔顺丝滑}（100% 丙烯酸纤维，每绞纱 315 码 / 288 米，每绞纱 6 盎司 / 170 克）",
-								"中粗（#4 中型）纱线，展示于乌鸦与新月 {@i 瑞亚·沃斯特德}（100% 美利奴羊毛，每3½盎司 / 100克绞为218码 / 199米）",
-								"中粗（#4 中型）纱线，展示为狮牌 {@i 基础针法抗起球}（100% 腈纶，每 3½ 盎司 / 100 克绞线 185 码 / 169 米）",
-								"中粗（#4 中型）纱线，展示为狮子牌 {@i 中心地带纱线}（100% 丙烯酸纤维，每 5 盎司 / 142 克绞线 251 码 / 230 米）",
-								"中粗（#4 中型）纱线，展示为狮子牌 {@i 用爱为棉绒人制作}（60% 棉，40% 腈纶，每3½盎司 / 100克绞线185码 / 169米）",
-								"中粗（#4 中型）纱线，以红心 {@i 超级节省者}（100% 腈纶，每 7 盎司 / 198 克绞纱 364 码 / 333 米）展示",
-								"中粗（#4 中型）纱线，展示为红心 {@i 超级节省者印刷品、多色与斑点}（100% 腈纶，每 5 盎司 / 142 克绞线含 244 码 / 223 米）",
-								"中粗（#4 中型）纱线，使用 WeCrochet {@i 布拉瓦} 纱线（100% 腈纶，每 3½ 盎司 / 100 克绞线 218 码 / 200 米）",
-								"粗线（#5粗）纱线，以伯纳特{@i 天鹅绒}（100%聚酯纤维，每10½盎司/300克绞线315码/288米）展示",
-								"超粗重量（#6 超粗）纱线，以伯纳特 {@i 毯子纱线} 展示（100% 聚酯纤维，每 10½ 盎司 / 300 克绞线 220 码 / 201 米）"
-							]
-						}
-					],
-					"id": "01d"
-				},
-				{
-					"ENG_name": "Charts from Patterns",
-					"name": "来自图案的图表",
-					"type": "entries",
-					"page": 157,
-					"entries": [
-						"你可以在这里查看所有来自图案的图表：",
-						"{@link https://sites.prh.com/dungeonsanddragonscrochetcharts}"
-					],
-					"id": "01e"
-				}
-			],
-			"id": "01c"
-		},
-		{
-			"ENG_name": "Credits",
-			"name": "制作组",
-			"type": "section",
-			"page": 158,
-			"entries": [
-				{
-					"type": "entries",
-					"style": "text-center",
-					"entries": [
-						"撰写：史黛西·金",
-						"图案由莎伦·波西（Posey Handmade）、艾莉西亚·斯莱（Co-op Creations SD）、丽贝卡·斯通（BextraOrdinary Creatures）和莉迪亚·维亚托里斯（EarthTricks）创作",
-						"摄影：米西·埃文斯"
-					],
-					"id": "020"
-				},
-				{
-					"ENG_name": "Acknowledgments",
-					"name": "致谢",
-					"type": "entries",
-					"page": 158,
-					"entries": [
-						"首先，我衷心感谢那些才华横溢的设计师们，没有他们，这本书将仅仅是一堆毫无根基的{@style 龙与地下城|dnd-font}逸闻。莎伦、艾莉西亚、丽贝卡和莉迪亚为这个项目带来的创意感官和奔放的热情，是一次令人愉悦的体验。",
-						"我由衷感谢整个十速出版社团队，他们为这个项目贡献了卓越的才华；能与如此多优秀的人士协作共创，我深感荣幸。编辑克莱尔·叶和佐伊·勃兰特提供了专家指导，确保了复杂流程的顺利推进。戴安娜·德鲁在完善我的初稿方面至关重要，而BJ·伯蒂则确保了每个图案的准确性。贝琪·斯特龙伯格开发了本书精美的视觉效果，并得到了克劳迪娅·桑切斯、艾比·奥拉迪波和丹·迈尔斯的额外贡献。米西·埃文斯和摄影团队，包括灯光助理萨拉·布鲁沃尔夫、造型师吉莉安·诺克斯，以及模特克劳迪娅·桑切斯、杰梅因·但丁、艾弗里·努南和艾琳·马歇尔，为每一页都注入了真实的魔法。同样非常感谢莎伊达·博鲁曼德，她引领了本书以及{@style 龙与地下城|dnd-font}青年冒险者指南从概念到发布的整个过程。",
-						"就个人而言，我要感谢我的父母支持我的两个兴趣\u2014\u2014角色扮演游戏和纺织艺术\u2014\u2014它们共同促成了这本书的诞生。我父亲带我参加了我的第一次{@style 龙与地下城|dnd-font}游戏，并一直鼓励我对奇幻和科幻的兴趣。我母亲教我缝纫，并通过她的绗缝、针线活和服装制作项目，成为我源源不断的灵感之源。他们的支持对我来说意味着整个世界。",
-						"最后，感谢我的丈夫吉姆·祖布的支持，以及托里·伍尔科特持续提供的搞笑视频，它们是我写作过程中至关重要的一部分。"
-					],
-					"id": "021"
-				},
-				{
-					"ENG_name": "About the Contributors",
-					"name": "关于贡献者",
-					"type": "entries",
-					"page": 159,
-					"entries": [
-						{
-							"type": "list",
-							"style": "list-hang-notitle",
-							"columns": 2,
-							"page": 159,
-							"items": [
+							"ENG_name": "Special Stitches",
+							"name": "特殊针法",
+							"type": "entries",
+							"id": "01b",
+							"page": 155,
+							"entries": [
 								{
-									"ENG_name": "Stacy King",
-									"name": "史黛西·金",
-									"type": "item",
-									"nameDot": false,
-									"entries": [
-										"是一位专业的书呆子，她的职业生涯就是向新人介绍她最痴迷的事物。她是{@style 龙与地下城|dnd-font}青年冒险者指南系列的合著者，为年轻读者提炼了这款标志性角色扮演游戏的逸闻和概念。她的图像小说作品包括《漫画经典》系列，该系列改编了诸如{@i 骄傲与偏见}和{@i 德古拉}等西方文学经典。除了写作，她还对十字绣、针线活、缝纫和历史服饰等纺织艺术着迷。她与她的丈夫、漫画作者吉姆·祖布以及太多的骰子一起住在多伦多市中心。"
-									]
-								},
-								{
-									"ENG_name": "Sharon Posey",
-									"name": "莎伦·波西",
-									"type": "item",
-									"nameDot": false,
-									"entries": [
-										"现居佛罗里达州彭萨科拉。她最初在十六岁时，从她如今的婆婆那里学会了钩针编织。2004年，在她和丈夫有了一个儿子之后，她开始学习制作钩针玩偶。她的第一个作品很糟糕！但随着时间的推移，她技艺渐长，并决定要创作自己的图样。她从简易的样式开始，逐步发展到复杂精细的设计。如今，莎伦和她的丈夫共同经营着波西手工。"
-									]
-								},
-								{
-									"ENG_name": "Alysia Sly",
-									"name": "艾莉西亚·斯莱",
-									"type": "item",
-									"nameDot": false,
-									"entries": [
-										"是一位居住在南达科他州苏福尔斯的纤维艺术家。她在2000年代初大约九岁时开始学习钩针编织，这要归功于她的阿姨和祖母的教导，她最早的一些作品是为她的娃娃制作连衣裙。在大学期间，当她发现了日式钩针玩偶时，她重燃了对钩针编织的热爱，从此便一直钩织不停。她在2021年底开设了她的在线商店 Co-op Creations SD。当她不钩织时，她喜欢与她的丈夫乔什以及他们的两只猫阿贾尼和塔米共度时光。"
-									]
-								},
-								{
-									"ENG_name": "Rebecca Stone",
-									"name": "丽贝卡·斯通",
-									"type": "item",
-									"nameDot": false,
-									"entries": [
-										"是一位社会科学家和纤维艺术家，出生于澳大利亚悉尼，现居住在马萨诸塞州切姆斯福德。她于2021年1月开始钩针编织，以此替代末日刷屏，并迅速爱上了受奇幻启发的钩针玩偶。她现在拥有\"非凡生物\"，在那里她喜欢设计奇幻钩针编织图案，并制作眼睛、角和其它配件，让她的创作栩栩如生。除了钩针编织，丽贝卡喜欢与她的伴侣杰森以及他们的两个儿子卡梅伦和迦勒共度时光，他们是出色的创意合作者。"
-									]
-								},
-								{
-									"ENG_name": "Lydia Viatoris",
-									"name": "莉迪亚·维亚托里斯",
-									"type": "item",
-									"nameDot": false,
-									"entries": [
-										"是一位居住在佛罗里达州杰克逊维尔的导师、艺人和设计师。她最初从她的高等麦斯导师那里学会了钩针编织，作为考试后消磨时间的一种方式，并且从那时起就一直继续追求纤维艺术。莉迪亚的职业是教授高等自然科学，并已完成生物学硕士学位。自2014年以来，她一直将假设和实验的科学方法应用于她的钩针编织工作，以\"地之戏法\"为名创作图案。她对学习、尝试新事物以及在创意领域进行通用嬉戏怀有极大的嘲笑。"
-									]
-								}
-							]
-						}
-					],
-					"id": "022"
-				},
-				{
-					"type": "hr"
-				},
-				{
-					"type": "entries",
-					"entries": [
-						{
-							"type": "list",
-							"style": "list-no-bullets",
-							"columns": 2,
-							"page": 160,
-							"items": [
-								{
-									"ENG_name": "All photography by Mithy Evans except as noted below:",
-									"name": "所有摄影由米西·埃文斯提供，除非下方另有说明：",
 									"type": "list",
-									"style": "list-hang",
+									"page": 155,
+									"style": "list-hang-notitle",
+									"columns": 2,
 									"items": [
-										"{@note 照片均单独标注艺术家署名。}",
 										{
-											"ENG_name": "Sharon Posey:",
-											"name": "莎伦·波西：",
+											"ENG_name": "2dec in 3sc:",
+											"name": "2dec in 3sc:",
 											"type": "item",
 											"entries": [
-												"1, 2, 3, 4, 5, 6, 7, 8"
+												"进行一次标准减针，然后从刚刚减针的同一针目开始，再进行一次减针。这样可以在原本有3个短针（3sc）的位置得到2针（2dec）。"
 											]
 										},
 										{
-											"ENG_name": "Rebecca Stone:",
-											"name": "丽贝卡·斯通：",
+											"ENG_name": "Back Loop Only (blo):",
+											"name": "仅后环 (blo):",
 											"type": "item",
 											"entries": [
-												"1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17"
+												"仅通过针目的后环工作。"
 											]
 										},
 										{
-											"ENG_name": "Lydia Viatoris:",
-											"name": "莉迪亚·维亚托里斯：",
+											"ENG_name": "Back Post Half Double Crochet (bphdc):",
+											"name": "后柱半双钩针 (bphdc):",
 											"type": "item",
 											"entries": [
-												"1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12"
+												"纱线绕线，将钩爪从后向前再向后插入前一行的针目柱周围，纱线绕线并拉出一个线圈，纱线绕线并穿过钩爪上的所有3个线圈。"
+											]
+										},
+										{
+											"ENG_name": "Cable:",
+											"name": "电缆：",
+											"type": "item",
+											"entries": [
+												"跳针 2 针，在接下来的 2 针中织前针上针，在之前跳过的 2 针中织前针上针。（1 个绞花是 4 针）"
+											]
+										},
+										{
+											"ENG_name": "Crab Stitch / Reverse Single Crochet (crab st):",
+											"name": "蟹针 / 反短针 (crab st):",
+											"type": "item",
+											"entries": [
+												"Ch1. 不翻转你的织物，将钩针从前到后插入第一个短针针目。将纱线绕在钩针上并拉出一个线圈。再次绕线并穿过两个线圈。"
+											]
+										},
+										{
+											"ENG_name": "DcXtog in the same stitch / Bobble Stitch:",
+											"name": "在同一针目进行DcXtog / 鲍勃针：",
+											"type": "item",
+											"entries": [
+												"这通常被称为\"泡泡针\"，但本书使用\"在同一针目内钩织X个长针并一针\"这一术语，因为它允许您根据需要改变dc5tog的针数来制作更小或更大的泡泡。例如，要在同一针目内钩织dc3tog：(1) 绕线，将钩针插入针目，绕线并拉出一个线圈，绕线并穿过两个线圈（钩针上留2个线圈）；(2) 绕线，将钩针插入同一针目，绕线并拉出一个线圈，绕线并穿过2个线圈（钩针上留3个线圈）；(3) 绕线，将钩针插入同一针目，绕线并拉出一个线圈，绕线并穿过2个线圈，绕线并穿过钩针上所有4个线圈以完成。"
+											]
+										},
+										{
+											"ENG_name": "Double Puff Stitch (dblpuff):",
+											"name": "双蓬松针脚 (dblpuff):",
+											"type": "item",
+											"entries": [
+												"挂线，将钩针插入第一个空间并拉出一个线圈2次，挂线并将钩针插入下一个空间3次，挂线并将钩针插入下一个空间2次，挂线并拉过钩针上的所有线圈，然后锁1针。要在双泡芙针上方钩织下一行，请在锁1针的空间中钩织。当你钩织这个针法时，你正在减针。"
+											]
+										},
+										{
+											"ENG_name": "Front Loop Only (flo):",
+											"name": "仅前环（flo）：",
+											"type": "item",
+											"entries": [
+												"仅通过针目的前环工作。"
+											]
+										},
+										{
+											"ENG_name": "Half-Triple or Half-Treble Crochet (htr):",
+											"name": "半三倍长针或半长针（htr）：",
+											"type": "item",
+											"entries": [
+												"纱线绕两圈，将钩爪插入针目，拉出一个线圈，穿过钩爪上的2个线圈，纱线绕一圈，穿过剩余的3个线圈。"
+											]
+										},
+										{
+											"ENG_name": "Invisible Decrease (inv dec):",
+											"name": "隐形衰减（inv dec）：",
+											"type": "item",
+											"entries": [
+												"将钩针插入指定针目的前侧线圈，将钩针插入下一针目的前侧线圈（钩针上有3个线圈）。挂线，穿过2个线圈。挂线，穿过钩针上剩余的2个线圈。"
+											]
+										},
+										{
+											"ENG_name": "Picot Stitch (picot):",
+											"name": "皮科特针法 (picot):",
+											"type": "item",
+											"entries": [
+												"根据图解钩2或3个锁针，在前一个针目的前半针上钩一个引拔针。"
+											]
+										},
+										{
+											"ENG_name": "Popcorn Stitch (popcorn):",
+											"name": "爆米花针（爆米花）：",
+											"type": "item",
+											"entries": [
+												"在指定的针目中钩5个长针，从环中移除钩针，将钩针插入第一个已钩的长针中，抓住环并拉出，钩1个锁针完成。当在爆米花针顶部工作时，在锁针1中工作。"
+											]
+										},
+										{
+											"ENG_name": "Puff Stitch (puff st):",
+											"name": "泡芙针 (puff st):",
+											"type": "item",
+											"entries": [
+												"纱线绕线，插入钩爪并拉出一个线圈5次，纱线绕线并穿过钩爪上的所有线圈并锁针1针。要在泡芙针上方钩织下一行，请在锁针1针的空间中工作。"
+											]
+										},
+										{
+											"ENG_name": "Scale / Crocodile Stitch (scale):",
+											"name": "鳞片 / 鳄鱼针法 (鳞片):",
+											"type": "item",
+											"entries": [
+												"围绕指定的dc针迹工作，在第一根dc的柱周围工作5dc，ch1，在下一根dc的柱周围工作5dc（完成1个鳞片）。"
+											]
+										},
+										{
+											"ENG_name": "Spike Stitch (spike st):",
+											"name": "尖刺针法（尖刺针法）：",
+											"type": "item",
+											"entries": [
+												"此针法使用与短针相同的步骤，但不是在你正在钩编的当前行入针，而是向下移动并在当前行下方的一行入针工作。"
+											]
+										},
+										{
+											"ENG_name": "Vstitch:",
+											"name": "Vstitch:",
+											"type": "item",
+											"entries": [
+												"在同一针目中钩织2个长针。"
 											]
 										}
 									]
-								},
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Yarn List and Charts",
+					"name": "纱线清单与图表",
+					"type": "section",
+					"id": "01c",
+					"page": 157,
+					"entries": [
+						{
+							"ENG_name": "Yarn Used in Patterns",
+							"name": "图样所用纱线",
+							"type": "entries",
+							"id": "01d",
+							"page": 157,
+							"entries": [
 								{
-									"ENG_name": "Acquiring editor:",
-									"name": "获取编辑：",
-									"type": "item",
-									"entries": [
-										"Shaida Boroumand"
+									"type": "list",
+									"page": 157,
+									"style": "list-hang-notitle",
+									"columns": 2,
+									"items": [
+										"DK重量（#3 轻型）纱线，以狮子牌 {@i 特鲁布} 展示（100%人造丝，每3½盎司 / 100克绞线为241码 / 220米）",
+										"中粗（#4 中型）纱线，以大捻线 {@i 价值} 展示（100% 丙烯酸纤维，每 6 盎司 / 170 克绞线 380 码 / 348 米）",
+										"中粗（#4 中型）纱线，以大捻线 {@i 价值磅加}（100% 丙烯酸纤维，每 17.6 盎司 / 500 克绞线含 1093 码 / 1000 米）展示",
+										"中粗（#4 中型）纱线，展示为卡隆 {@i 柔顺丝滑}（100% 丙烯酸纤维，每绞纱 315 码 / 288 米，每绞纱 6 盎司 / 170 克）",
+										"中粗（#4 中型）纱线，展示于乌鸦与新月 {@i 瑞亚·沃斯特德}（100% 美利奴羊毛，每3½盎司 / 100克绞为218码 / 199米）",
+										"中粗（#4 中型）纱线，展示为狮牌 {@i 基础针法抗起球}（100% 腈纶，每 3½ 盎司 / 100 克绞线 185 码 / 169 米）",
+										"中粗（#4 中型）纱线，展示为狮子牌 {@i 中心地带纱线}（100% 丙烯酸纤维，每 5 盎司 / 142 克绞线 251 码 / 230 米）",
+										"中粗（#4 中型）纱线，展示为狮子牌 {@i 用爱为棉绒人制作}（60% 棉，40% 腈纶，每3½盎司 / 100克绞线185码 / 169米）",
+										"中粗（#4 中型）纱线，以红心 {@i 超级节省者}（100% 腈纶，每 7 盎司 / 198 克绞纱 364 码 / 333 米）展示",
+										"中粗（#4 中型）纱线，展示为红心 {@i 超级节省者印刷品、多色与斑点}（100% 腈纶，每 5 盎司 / 142 克绞线含 244 码 / 223 米）",
+										"中粗（#4 中型）纱线，使用 WeCrochet {@i 布拉瓦} 纱线（100% 腈纶，每 3½ 盎司 / 100 克绞线 218 码 / 200 米）",
+										"粗线（#5粗）纱线，以伯纳特{@i 天鹅绒}（100%聚酯纤维，每10½盎司/300克绞线315码/288米）展示",
+										"超粗重量（#6 超粗）纱线，以伯纳特 {@i 毯子纱线} 展示（100% 聚酯纤维，每 10½ 盎司 / 300 克绞线 220 码 / 201 米）"
 									]
-								},
+								}
+							]
+						},
+						{
+							"ENG_name": "Charts from Patterns",
+							"name": "来自图案的图表",
+							"type": "entries",
+							"id": "01e",
+							"page": 157,
+							"entries": [
+								"你可以在这里查看所有来自图案的图表：",
+								"{@link https://sites.prh.com/dungeonsanddragonscrochetcharts}"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Credits",
+					"name": "制作组",
+					"type": "section",
+					"id": "01f",
+					"page": 158,
+					"entries": [
+						{
+							"type": "entries",
+							"id": "020",
+							"style": "text-center",
+							"entries": [
+								"撰写：史黛西·金",
+								"图案由莎伦·波西（Posey Handmade）、艾莉西亚·斯莱（Co-op Creations SD）、丽贝卡·斯通（BextraOrdinary Creatures）和莉迪亚·维亚托里斯（EarthTricks）创作",
+								"摄影：米西·埃文斯"
+							]
+						},
+						{
+							"ENG_name": "Acknowledgments",
+							"name": "致谢",
+							"type": "entries",
+							"id": "021",
+							"page": 158,
+							"entries": [
+								"首先，我衷心感谢那些才华横溢的设计师们，没有他们，这本书将仅仅是一堆毫无根基的{@style 龙与地下城|dnd-font}逸闻。莎伦、艾莉西亚、丽贝卡和莉迪亚为这个项目带来的创意感官和奔放的热情，是一次令人愉悦的体验。",
+								"我由衷感谢整个十速出版社团队，他们为这个项目贡献了卓越的才华；能与如此多优秀的人士协作共创，我深感荣幸。编辑克莱尔·叶和佐伊·勃兰特提供了专家指导，确保了复杂流程的顺利推进。戴安娜·德鲁在完善我的初稿方面至关重要，而BJ·伯蒂则确保了每个图案的准确性。贝琪·斯特龙伯格开发了本书精美的视觉效果，并得到了克劳迪娅·桑切斯、艾比·奥拉迪波和丹·迈尔斯的额外贡献。米西·埃文斯和摄影团队，包括灯光助理萨拉·布鲁沃尔夫、造型师吉莉安·诺克斯，以及模特克劳迪娅·桑切斯、杰梅因·但丁、艾弗里·努南和艾琳·马歇尔，为每一页都注入了真实的魔法。同样非常感谢莎伊达·博鲁曼德，她引领了本书以及{@style 龙与地下城|dnd-font}青年冒险者指南从概念到发布的整个过程。",
+								"就个人而言，我要感谢我的父母支持我的两个兴趣\u2014\u2014角色扮演游戏和纺织艺术\u2014\u2014它们共同促成了这本书的诞生。我父亲带我参加了我的第一次{@style 龙与地下城|dnd-font}游戏，并一直鼓励我对奇幻和科幻的兴趣。我母亲教我缝纫，并通过她的绗缝、针线活和服装制作项目，成为我源源不断的灵感之源。他们的支持对我来说意味着整个世界。",
+								"最后，感谢我的丈夫吉姆·祖布的支持，以及托里·伍尔科特持续提供的搞笑视频，它们是我写作过程中至关重要的一部分。"
+							]
+						},
+						{
+							"ENG_name": "About the Contributors",
+							"name": "关于贡献者",
+							"type": "entries",
+							"id": "022",
+							"page": 159,
+							"entries": [
 								{
-									"ENG_name": "Project editors:",
-									"name": "项目编辑：",
-									"type": "item",
-									"entries": [
-										"克莱尔·伊和佐伊·勃兰特"
+									"type": "list",
+									"page": 159,
+									"style": "list-hang-notitle",
+									"columns": 2,
+									"items": [
+										{
+											"ENG_name": "Stacy King",
+											"name": "史黛西·金",
+											"type": "item",
+											"nameDot": false,
+											"entries": [
+												"是一位专业的书呆子，她的职业生涯就是向新人介绍她最痴迷的事物。她是{@style 龙与地下城|dnd-font}青年冒险者指南系列的合著者，为年轻读者提炼了这款标志性角色扮演游戏的逸闻和概念。她的图像小说作品包括《漫画经典》系列，该系列改编了诸如{@i 骄傲与偏见}和{@i 德古拉}等西方文学经典。除了写作，她还对十字绣、针线活、缝纫和历史服饰等纺织艺术着迷。她与她的丈夫、漫画作者吉姆·祖布以及太多的骰子一起住在多伦多市中心。"
+											]
+										},
+										{
+											"ENG_name": "Sharon Posey",
+											"name": "莎伦·波西",
+											"type": "item",
+											"nameDot": false,
+											"entries": [
+												"现居佛罗里达州彭萨科拉。她最初在十六岁时，从她如今的婆婆那里学会了钩针编织。2004年，在她和丈夫有了一个儿子之后，她开始学习制作钩针玩偶。她的第一个作品很糟糕！但随着时间的推移，她技艺渐长，并决定要创作自己的图样。她从简易的样式开始，逐步发展到复杂精细的设计。如今，莎伦和她的丈夫共同经营着波西手工。"
+											]
+										},
+										{
+											"ENG_name": "Alysia Sly",
+											"name": "艾莉西亚·斯莱",
+											"type": "item",
+											"nameDot": false,
+											"entries": [
+												"是一位居住在南达科他州苏福尔斯的纤维艺术家。她在2000年代初大约九岁时开始学习钩针编织，这要归功于她的阿姨和祖母的教导，她最早的一些作品是为她的娃娃制作连衣裙。在大学期间，当她发现了日式钩针玩偶时，她重燃了对钩针编织的热爱，从此便一直钩织不停。她在2021年底开设了她的在线商店 Co-op Creations SD。当她不钩织时，她喜欢与她的丈夫乔什以及他们的两只猫阿贾尼和塔米共度时光。"
+											]
+										},
+										{
+											"ENG_name": "Rebecca Stone",
+											"name": "丽贝卡·斯通",
+											"type": "item",
+											"nameDot": false,
+											"entries": [
+												"是一位社会科学家和纤维艺术家，出生于澳大利亚悉尼，现居住在马萨诸塞州切姆斯福德。她于2021年1月开始钩针编织，以此替代末日刷屏，并迅速爱上了受奇幻启发的钩针玩偶。她现在拥有\"非凡生物\"，在那里她喜欢设计奇幻钩针编织图案，并制作眼睛、角和其它配件，让她的创作栩栩如生。除了钩针编织，丽贝卡喜欢与她的伴侣杰森以及他们的两个儿子卡梅伦和迦勒共度时光，他们是出色的创意合作者。"
+											]
+										},
+										{
+											"ENG_name": "Lydia Viatoris",
+											"name": "莉迪亚·维亚托里斯",
+											"type": "item",
+											"nameDot": false,
+											"entries": [
+												"是一位居住在佛罗里达州杰克逊维尔的导师、艺人和设计师。她最初从她的高等麦斯导师那里学会了钩针编织，作为考试后消磨时间的一种方式，并且从那时起就一直继续追求纤维艺术。莉迪亚的职业是教授高等自然科学，并已完成生物学硕士学位。自2014年以来，她一直将假设和实验的科学方法应用于她的钩针编织工作，以\"地之戏法\"为名创作图案。她对学习、尝试新事物以及在创意领域进行通用嬉戏怀有极大的嘲笑。"
+											]
+										}
 									]
-								},
+								}
+							]
+						},
+						{
+							"type": "hr"
+						},
+						{
+							"type": "entries",
+							"id": "023",
+							"entries": [
 								{
-									"ENG_name": "Production editor:",
-									"name": "制作编辑：",
-									"type": "item",
-									"entries": [
-										"艾比·奥拉迪波"
-									]
-								},
-								{
-									"ENG_name": "Art director and designer:",
-									"name": "艺术总监和设计师：",
-									"type": "item",
-									"entries": [
-										"贝琪·斯特龙伯格"
-									]
-								},
-								{
-									"ENG_name": "Print production designers:",
-									"name": "印刷制作设计师：",
-									"type": "item",
-									"entries": [
-										"克劳迪娅·桑切斯和费丝·海格"
-									]
-								},
-								{
-									"ENG_name": "Print production:",
-									"name": "印刷制作：",
-									"type": "item",
-									"entries": [
-										"Dan Myers"
-									]
-								},
-								{
-									"ENG_name": "Print prepress color manager:",
-									"name": "印刷印前色彩管理师：",
-									"type": "item",
-									"entries": [
-										"克劳迪娅·桑切斯"
-									]
-								},
-								{
-									"ENG_name": "Prop stylist:",
-									"name": "道具造型师：",
-									"type": "item",
-									"entries": [
-										"吉莉安·诺克斯"
-									]
-								},
-								{
-									"ENG_name": "Lighting assistant:",
-									"name": "光照助理：",
-									"type": "item",
-									"entries": [
-										"萨拉·布鲁沃尔夫"
-									]
-								},
-								{
-									"ENG_name": "Models:",
-									"name": "模型：",
-									"type": "item",
-									"entries": [
-										"克劳迪娅·桑切斯、杰曼·但丁、艾琳·马歇尔和艾弗里·努南"
-									]
-								},
-								{
-									"ENG_name": "Technical editor:",
-									"name": "技术编辑：",
-									"type": "item",
-									"entries": [
-										"BJ·伯蒂"
-									]
-								},
-								{
-									"ENG_name": "Copy editor:",
-									"name": "文字编辑：",
-									"type": "item",
-									"entries": [
-										"戴安娜·德鲁"
-									]
-								},
-								{
-									"ENG_name": "Compositor:",
-									"name": "合成师：",
-									"type": "item",
-									"entries": [
-										"汉娜·亨特"
-									]
-								},
-								{
-									"ENG_name": "Proofreaders:",
-									"name": "校对人员：",
-									"type": "item",
-									"entries": [
-										"艾莉·基克霍弗、西吉·纳克森、丽莎·布鲁索和莎拉·拉特利奇"
-									]
-								},
-								{
-									"ENG_name": "Publicist:",
-									"name": "公关人员：",
-									"type": "item",
-									"entries": [
-										"玛雅·布拉德福德"
-									]
-								},
-								{
-									"ENG_name": "Marketer:",
-									"name": "市场营销人员：",
-									"type": "item",
-									"entries": [
-										"宝拉·克雷斯波"
-									]
-								},
-								{
-									"ENG_name": "Ebook production manager:",
-									"name": "电子书产品经理：",
-									"type": "item",
-									"entries": [
-										"杰西卡·克莱因曼"
+									"type": "list",
+									"page": 160,
+									"style": "list-no-bullets",
+									"columns": 2,
+									"items": [
+										{
+											"ENG_name": "All photography by Mithy Evans except as noted below:",
+											"name": "所有摄影由米西·埃文斯提供，除非下方另有说明：",
+											"type": "list",
+											"style": "list-hang",
+											"items": [
+												"{@note 照片均单独标注艺术家署名。}",
+												{
+													"ENG_name": "Sharon Posey:",
+													"name": "莎伦·波西：",
+													"type": "item",
+													"entries": [
+														"1, 2, 3, 4, 5, 6, 7, 8"
+													]
+												},
+												{
+													"ENG_name": "Rebecca Stone:",
+													"name": "丽贝卡·斯通：",
+													"type": "item",
+													"entries": [
+														"1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17"
+													]
+												},
+												{
+													"ENG_name": "Lydia Viatoris:",
+													"name": "莉迪亚·维亚托里斯：",
+													"type": "item",
+													"entries": [
+														"1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12"
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "Acquiring editor:",
+											"name": "获取编辑：",
+											"type": "item",
+											"entries": [
+												"Shaida Boroumand"
+											]
+										},
+										{
+											"ENG_name": "Project editors:",
+											"name": "项目编辑：",
+											"type": "item",
+											"entries": [
+												"克莱尔·伊和佐伊·勃兰特"
+											]
+										},
+										{
+											"ENG_name": "Production editor:",
+											"name": "制作编辑：",
+											"type": "item",
+											"entries": [
+												"艾比·奥拉迪波"
+											]
+										},
+										{
+											"ENG_name": "Art director and designer:",
+											"name": "艺术总监和设计师：",
+											"type": "item",
+											"entries": [
+												"贝琪·斯特龙伯格"
+											]
+										},
+										{
+											"ENG_name": "Print production designers:",
+											"name": "印刷制作设计师：",
+											"type": "item",
+											"entries": [
+												"克劳迪娅·桑切斯和费丝·海格"
+											]
+										},
+										{
+											"ENG_name": "Print production:",
+											"name": "印刷制作：",
+											"type": "item",
+											"entries": [
+												"Dan Myers"
+											]
+										},
+										{
+											"ENG_name": "Print prepress color manager:",
+											"name": "印刷印前色彩管理师：",
+											"type": "item",
+											"entries": [
+												"克劳迪娅·桑切斯"
+											]
+										},
+										{
+											"ENG_name": "Prop stylist:",
+											"name": "道具造型师：",
+											"type": "item",
+											"entries": [
+												"吉莉安·诺克斯"
+											]
+										},
+										{
+											"ENG_name": "Lighting assistant:",
+											"name": "光照助理：",
+											"type": "item",
+											"entries": [
+												"萨拉·布鲁沃尔夫"
+											]
+										},
+										{
+											"ENG_name": "Models:",
+											"name": "模型：",
+											"type": "item",
+											"entries": [
+												"克劳迪娅·桑切斯、杰曼·但丁、艾琳·马歇尔和艾弗里·努南"
+											]
+										},
+										{
+											"ENG_name": "Technical editor:",
+											"name": "技术编辑：",
+											"type": "item",
+											"entries": [
+												"BJ·伯蒂"
+											]
+										},
+										{
+											"ENG_name": "Copy editor:",
+											"name": "文字编辑：",
+											"type": "item",
+											"entries": [
+												"戴安娜·德鲁"
+											]
+										},
+										{
+											"ENG_name": "Compositor:",
+											"name": "合成师：",
+											"type": "item",
+											"entries": [
+												"汉娜·亨特"
+											]
+										},
+										{
+											"ENG_name": "Proofreaders:",
+											"name": "校对人员：",
+											"type": "item",
+											"entries": [
+												"艾莉·基克霍弗、西吉·纳克森、丽莎·布鲁索和莎拉·拉特利奇"
+											]
+										},
+										{
+											"ENG_name": "Publicist:",
+											"name": "公关人员：",
+											"type": "item",
+											"entries": [
+												"玛雅·布拉德福德"
+											]
+										},
+										{
+											"ENG_name": "Marketer:",
+											"name": "市场营销人员：",
+											"type": "item",
+											"entries": [
+												"宝拉·克雷斯波"
+											]
+										},
+										{
+											"ENG_name": "Ebook production manager:",
+											"name": "电子书产品经理：",
+											"type": "item",
+											"entries": [
+												"杰西卡·克莱因曼"
+											]
+										}
 									]
 								}
 							]
 						}
-					],
-					"id": "023"
+					]
 				}
-			],
-			"id": "01f"
+			]
 		}
 	]
 }

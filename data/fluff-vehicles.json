@@ -11,9 +11,9 @@
 						"type": "internal",
 						"path": "items/DMG/Apparatus of Kwalish.webp"
 					},
-					"credit": "Aaron Hübrich",
 					"width": 1000,
-					"height": 631
+					"height": 631,
+					"credit": "Aaron Hübrich"
 				}
 			]
 		},
@@ -28,9 +28,9 @@
 						"type": "internal",
 						"path": "items/XDMG/Apparatus of Kwalish.webp"
 					},
-					"credit": "Conceptopolis",
 					"width": 1000,
-					"height": 631
+					"height": 631,
+					"credit": "Conceptopolis"
 				}
 			]
 		},
@@ -124,9 +124,9 @@
 						"type": "internal",
 						"path": "vehicles/AI/battle-balloon.webp"
 					},
-					"credit": "Kim Van Deun",
 					"width": 1501,
-					"height": 1000
+					"height": 1000,
+					"credit": "Kim Van Deun"
 				}
 			]
 		},
@@ -145,20 +145,20 @@
 						"type": "internal",
 						"path": "vehicles/AAG/Bombard.webp"
 					},
-					"credit": "Ned Rogers",
 					"width": 1700,
-					"height": 1135
+					"height": 1135,
+					"credit": "Ned Rogers"
 				},
 				{
 					"type": "image",
+					"id": "000",
 					"href": {
 						"type": "internal",
 						"path": "vehicles/AAG/Bombard Map.webp"
 					},
+					"width": 1700,
+					"height": 2200,
 					"imageType": "map",
-					"id": "000",
-					"title": "炮舰甲板平面图",
-					"credit": "Dyson Logos",
 					"grid": {
 						"type": "square",
 						"size": 150,
@@ -166,8 +166,8 @@
 						"offsetY": 9,
 						"scale": 3
 					},
-					"width": 1700,
-					"height": 2200
+					"title": "炮舰甲板平面图",
+					"credit": "Dyson Logos"
 				},
 				{
 					"type": "image",
@@ -175,12 +175,9 @@
 						"type": "internal",
 						"path": "vehicles/AAG/Bombard Map Player Version.webp"
 					},
+					"width": 1700,
+					"height": 2200,
 					"imageType": "mapPlayer",
-					"mapParent": {
-						"id": "000"
-					},
-					"title": "未标记版本",
-					"credit": "Dyson Logos",
 					"grid": {
 						"type": "square",
 						"size": 150,
@@ -188,8 +185,11 @@
 						"offsetY": 9,
 						"scale": 3
 					},
-					"width": 1700,
-					"height": 2200
+					"title": "未标记版本",
+					"credit": "Dyson Logos",
+					"mapParent": {
+						"id": "000"
+					}
 				}
 			]
 		},
@@ -209,28 +209,28 @@
 						"type": "internal",
 						"path": "vehicles/AAG/Damselfly Ship.webp"
 					},
-					"credit": "Kent Davis",
 					"width": 1700,
-					"height": 1135
+					"height": 1135,
+					"credit": "Kent Davis"
 				},
 				{
 					"type": "image",
+					"id": "000",
 					"href": {
 						"type": "internal",
 						"path": "vehicles/AAG/Damselfly Ship Map.webp"
 					},
+					"width": 1700,
+					"height": 2200,
 					"imageType": "map",
-					"id": "000",
-					"title": "蜻蛉舰甲板平面图",
-					"credit": "Dyson Logos",
 					"grid": {
 						"type": "square",
 						"size": 78,
 						"offsetX": -22,
 						"offsetY": 17
 					},
-					"width": 1700,
-					"height": 2200
+					"title": "蜻蛉舰甲板平面图",
+					"credit": "Dyson Logos"
 				},
 				{
 					"type": "image",
@@ -238,20 +238,20 @@
 						"type": "internal",
 						"path": "vehicles/AAG/Damselfly Ship Map Player Version.webp"
 					},
+					"width": 1700,
+					"height": 2200,
 					"imageType": "mapPlayer",
-					"mapParent": {
-						"id": "000"
-					},
-					"title": "未标记版本",
-					"credit": "Dyson Logos",
 					"grid": {
 						"type": "square",
 						"size": 78,
 						"offsetX": -22,
 						"offsetY": 17
 					},
-					"width": 1700,
-					"height": 2200
+					"title": "未标记版本",
+					"credit": "Dyson Logos",
+					"mapParent": {
+						"id": "000"
+					}
 				}
 			]
 		},
@@ -329,20 +329,20 @@
 						"type": "internal",
 						"path": "vehicles/AAG/Flying Fish Ship.webp"
 					},
-					"credit": "David Rene Christensen",
 					"width": 1700,
-					"height": 1135
+					"height": 1135,
+					"credit": "David Rene Christensen"
 				},
 				{
 					"type": "image",
+					"id": "000",
 					"href": {
 						"type": "internal",
 						"path": "vehicles/AAG/Flying Fish Ship Map.webp"
 					},
+					"width": 1700,
+					"height": 2200,
 					"imageType": "map",
-					"id": "000",
-					"title": "飞鱼舰甲板平面图",
-					"credit": "Dyson Logos",
 					"grid": {
 						"type": "square",
 						"size": 141,
@@ -350,8 +350,8 @@
 						"offsetY": -16,
 						"scale": 3
 					},
-					"width": 1700,
-					"height": 2200
+					"title": "飞鱼舰甲板平面图",
+					"credit": "Dyson Logos"
 				},
 				{
 					"type": "image",
@@ -359,12 +359,9 @@
 						"type": "internal",
 						"path": "vehicles/AAG/Flying Fish Ship Map Player Version.webp"
 					},
+					"width": 1700,
+					"height": 2200,
 					"imageType": "mapPlayer",
-					"mapParent": {
-						"id": "000"
-					},
-					"title": "未标记版本",
-					"credit": "Dyson Logos",
 					"grid": {
 						"type": "square",
 						"size": 141,
@@ -372,8 +369,11 @@
 						"offsetY": -16,
 						"scale": 3
 					},
-					"width": 1700,
-					"height": 2200
+					"title": "未标记版本",
+					"credit": "Dyson Logos",
+					"mapParent": {
+						"id": "000"
+					}
 				}
 			]
 		},
@@ -533,17 +533,17 @@
 						"type": "internal",
 						"path": "vehicles/GoS/galley-ship.webp"
 					},
-					"title": "桨帆船船舶",
+					"width": 2100,
+					"height": 2850,
 					"imageType": "map",
-					"credit": "Mike Schley",
 					"grid": {
 						"type": "square",
 						"size": 83,
 						"offsetX": 15,
 						"offsetY": 13
 					},
-					"width": 2100,
-					"height": 2850
+					"title": "桨帆船船舶",
+					"credit": "Mike Schley"
 				}
 			]
 		},
@@ -561,20 +561,20 @@
 						"type": "internal",
 						"path": "vehicles/AAG/Hammerhead Ship.webp"
 					},
-					"credit": "Ralph Horsley",
 					"width": 1700,
-					"height": 1135
+					"height": 1135,
+					"credit": "Ralph Horsley"
 				},
 				{
 					"type": "image",
+					"id": "000",
 					"href": {
 						"type": "internal",
 						"path": "vehicles/AAG/Hammerhead Ship Map.webp"
 					},
+					"width": 1700,
+					"height": 2200,
 					"imageType": "map",
-					"id": "000",
-					"title": "锤头鲨舰甲板平面图",
-					"credit": "Dyson Logos",
 					"grid": {
 						"type": "square",
 						"size": 120,
@@ -582,8 +582,8 @@
 						"offsetY": 23,
 						"scale": 3
 					},
-					"width": 1700,
-					"height": 2200
+					"title": "锤头鲨舰甲板平面图",
+					"credit": "Dyson Logos"
 				},
 				{
 					"type": "image",
@@ -591,12 +591,9 @@
 						"type": "internal",
 						"path": "vehicles/AAG/Hammerhead Ship Map Player Version.webp"
 					},
+					"width": 1700,
+					"height": 2200,
 					"imageType": "mapPlayer",
-					"mapParent": {
-						"id": "000"
-					},
-					"title": "未标记版本",
-					"credit": "Dyson Logos",
 					"grid": {
 						"type": "square",
 						"size": 120,
@@ -604,8 +601,11 @@
 						"offsetY": 23,
 						"scale": 3
 					},
-					"width": 1700,
-					"height": 2200
+					"title": "未标记版本",
+					"credit": "Dyson Logos",
+					"mapParent": {
+						"id": "000"
+					}
 				}
 			]
 		},
@@ -719,9 +719,9 @@
 						"type": "internal",
 						"path": "vehicles/GoS/smaller-ships.webp"
 					},
-					"title": "小型船只",
+					"width": 2063,
+					"height": 1425,
 					"imageType": "map",
-					"credit": "Mike Schley",
 					"grid": {
 						"type": "square",
 						"size": 151,
@@ -729,8 +729,8 @@
 						"offsetY": 65,
 						"scale": 2
 					},
-					"width": 2063,
-					"height": 1425
+					"title": "小型船只",
+					"credit": "Mike Schley"
 				}
 			]
 		},
@@ -750,20 +750,20 @@
 						"type": "internal",
 						"path": "vehicles/AAG/Lamprey Ship.webp"
 					},
-					"credit": "Kent Davis",
 					"width": 1700,
-					"height": 1135
+					"height": 1135,
+					"credit": "Kent Davis"
 				},
 				{
 					"type": "image",
+					"id": "000",
 					"href": {
 						"type": "internal",
 						"path": "vehicles/AAG/Lamprey Ship Map.webp"
 					},
+					"width": 1700,
+					"height": 2200,
 					"imageType": "map",
-					"id": "000",
-					"title": "七鳃鳗舰甲板平面图",
-					"credit": "Dyson Logos",
 					"grid": {
 						"type": "square",
 						"size": 184,
@@ -771,8 +771,8 @@
 						"offsetY": 21,
 						"scale": 3
 					},
-					"width": 1700,
-					"height": 2200
+					"title": "七鳃鳗舰甲板平面图",
+					"credit": "Dyson Logos"
 				},
 				{
 					"type": "image",
@@ -780,12 +780,9 @@
 						"type": "internal",
 						"path": "vehicles/AAG/Lamprey Ship Map Player Version.webp"
 					},
+					"width": 1700,
+					"height": 2200,
 					"imageType": "mapPlayer",
-					"mapParent": {
-						"id": "000"
-					},
-					"title": "未标记版本",
-					"credit": "Dyson Logos",
 					"grid": {
 						"type": "square",
 						"size": 184,
@@ -793,8 +790,11 @@
 						"offsetY": 21,
 						"scale": 3
 					},
-					"width": 1700,
-					"height": 2200
+					"title": "未标记版本",
+					"credit": "Dyson Logos",
+					"mapParent": {
+						"id": "000"
+					}
 				}
 			]
 		},
@@ -815,28 +815,28 @@
 						"type": "internal",
 						"path": "vehicles/AAG/Living Ship.webp"
 					},
-					"credit": "Alfven Ato",
 					"width": 1700,
-					"height": 1099
+					"height": 1099,
+					"credit": "Alfven Ato"
 				},
 				{
 					"type": "image",
+					"id": "000",
 					"href": {
 						"type": "internal",
 						"path": "vehicles/AAG/Living Ship Map.webp"
 					},
+					"width": 1700,
+					"height": 2200,
 					"imageType": "map",
-					"id": "000",
-					"title": "生物舰甲板平面图",
-					"credit": "Dyson Logos",
 					"grid": {
 						"type": "square",
 						"size": 66,
 						"offsetX": 34,
 						"offsetY": 33
 					},
-					"width": 1700,
-					"height": 2200
+					"title": "生物舰甲板平面图",
+					"credit": "Dyson Logos"
 				},
 				{
 					"type": "image",
@@ -844,20 +844,20 @@
 						"type": "internal",
 						"path": "vehicles/AAG/Living Ship Map Player Version.webp"
 					},
+					"width": 1700,
+					"height": 2200,
 					"imageType": "mapPlayer",
-					"mapParent": {
-						"id": "000"
-					},
-					"title": "未标记版本",
-					"credit": "Dyson Logos",
 					"grid": {
 						"type": "square",
 						"size": 66,
 						"offsetX": 34,
 						"offsetY": 33
 					},
-					"width": 1700,
-					"height": 2200
+					"title": "未标记版本",
+					"credit": "Dyson Logos",
+					"mapParent": {
+						"id": "000"
+					}
 				}
 			]
 		},
@@ -953,9 +953,9 @@
 						"type": "internal",
 						"path": "vehicles/GoS/smaller-ships.webp"
 					},
-					"title": "小型船只",
+					"width": 2063,
+					"height": 1425,
 					"imageType": "map",
-					"credit": "Mike Schley",
 					"grid": {
 						"type": "square",
 						"size": 151,
@@ -963,8 +963,8 @@
 						"offsetY": 65,
 						"scale": 2
 					},
-					"width": 2063,
-					"height": 1425
+					"title": "小型船只",
+					"credit": "Mike Schley"
 				}
 			]
 		},
@@ -982,9 +982,9 @@
 						"type": "internal",
 						"path": "vehicles/EFA/Lyrandar Air Cruiser.webp"
 					},
-					"credit": "Dave Sarabia",
 					"width": 850,
-					"height": 465
+					"height": 465,
+					"credit": "Dave Sarabia"
 				}
 			]
 		},
@@ -1029,9 +1029,9 @@
 						"type": "internal",
 						"path": "vehicles/AI/mechanical-beholder.webp"
 					},
-					"credit": "Chris Walton",
 					"width": 841,
-					"height": 1000
+					"height": 1000,
+					"credit": "Chris Walton"
 				}
 			]
 		},
@@ -1050,28 +1050,28 @@
 						"type": "internal",
 						"path": "vehicles/AAG/Nautiloid.webp"
 					},
-					"credit": "Kent Davis",
 					"width": 1700,
-					"height": 1012
+					"height": 1012,
+					"credit": "Kent Davis"
 				},
 				{
 					"type": "image",
+					"id": "000",
 					"href": {
 						"type": "internal",
 						"path": "vehicles/AAG/Nautiloid Map.webp"
 					},
+					"width": 1700,
+					"height": 2200,
 					"imageType": "map",
-					"id": "000",
-					"title": "鹦鹉螺甲板平面图",
-					"credit": "Dyson Logos",
 					"grid": {
 						"type": "square",
 						"size": 138,
 						"offsetY": -24,
 						"scale": 3
 					},
-					"width": 1700,
-					"height": 2200
+					"title": "鹦鹉螺甲板平面图",
+					"credit": "Dyson Logos"
 				},
 				{
 					"type": "image",
@@ -1079,20 +1079,20 @@
 						"type": "internal",
 						"path": "vehicles/AAG/Nautiloid Map Player Version.webp"
 					},
+					"width": 1700,
+					"height": 2200,
 					"imageType": "mapPlayer",
-					"mapParent": {
-						"id": "000"
-					},
-					"title": "未标记版本",
-					"credit": "Dyson Logos",
 					"grid": {
 						"type": "square",
 						"size": 138,
 						"offsetY": -24,
 						"scale": 3
 					},
-					"width": 1700,
-					"height": 2200
+					"title": "未标记版本",
+					"credit": "Dyson Logos",
+					"mapParent": {
+						"id": "000"
+					}
 				}
 			]
 		},
@@ -1112,28 +1112,28 @@
 						"type": "internal",
 						"path": "vehicles/AAG/Nightspider.webp"
 					},
-					"credit": "Jessica Nguyen",
 					"width": 1700,
-					"height": 1135
+					"height": 1135,
+					"credit": "Jessica Nguyen"
 				},
 				{
 					"type": "image",
+					"id": "000",
 					"href": {
 						"type": "internal",
 						"path": "vehicles/AAG/Nightspider Map.webp"
 					},
+					"width": 1700,
+					"height": 2200,
 					"imageType": "map",
-					"id": "000",
-					"title": "夜蛛甲板平面图",
-					"credit": "Dyson Logos",
 					"grid": {
 						"type": "square",
 						"size": 120,
 						"offsetY": -24,
 						"scale": 3
 					},
-					"width": 1700,
-					"height": 2200
+					"title": "夜蛛甲板平面图",
+					"credit": "Dyson Logos"
 				},
 				{
 					"type": "image",
@@ -1141,20 +1141,20 @@
 						"type": "internal",
 						"path": "vehicles/AAG/Nightspider Map Player Version.webp"
 					},
+					"width": 1700,
+					"height": 2200,
 					"imageType": "mapPlayer",
-					"mapParent": {
-						"id": "000"
-					},
-					"title": "未标记版本",
-					"credit": "Dyson Logos",
 					"grid": {
 						"type": "square",
 						"size": 120,
 						"offsetY": -24,
 						"scale": 3
 					},
-					"width": 1700,
-					"height": 2200
+					"title": "未标记版本",
+					"credit": "Dyson Logos",
+					"mapParent": {
+						"id": "000"
+					}
 				}
 			]
 		},
@@ -1432,9 +1432,9 @@
 						"type": "internal",
 						"path": "vehicles/GoS/sailing-ship.webp"
 					},
-					"title": "帆船",
+					"width": 2100,
+					"height": 2850,
 					"imageType": "map",
-					"credit": "Mike Schley",
 					"grid": {
 						"type": "square",
 						"size": 157,
@@ -1442,8 +1442,8 @@
 						"offsetY": -16,
 						"scale": 2
 					},
-					"width": 2100,
-					"height": 2850
+					"title": "帆船",
+					"credit": "Mike Schley"
 				}
 			]
 		},
@@ -1490,28 +1490,28 @@
 						"type": "internal",
 						"path": "vehicles/AAG/Scorpion Ship.webp"
 					},
-					"credit": "David Rene Christensen",
 					"width": 1700,
-					"height": 1136
+					"height": 1136,
+					"credit": "David Rene Christensen"
 				},
 				{
 					"type": "image",
+					"id": "000",
 					"href": {
 						"type": "internal",
 						"path": "vehicles/AAG/Scorpion Ship Map.webp"
 					},
+					"width": 1700,
+					"height": 2200,
 					"imageType": "map",
-					"id": "000",
-					"title": "蝎舰甲板平面图",
-					"credit": "Dyson Logos",
 					"grid": {
 						"type": "square",
 						"size": 79,
 						"offsetX": -10,
 						"offsetY": 28
 					},
-					"width": 1700,
-					"height": 2200
+					"title": "蝎舰甲板平面图",
+					"credit": "Dyson Logos"
 				},
 				{
 					"type": "image",
@@ -1519,20 +1519,20 @@
 						"type": "internal",
 						"path": "vehicles/AAG/Scorpion Ship Map Player Version.webp"
 					},
+					"width": 1700,
+					"height": 2200,
 					"imageType": "mapPlayer",
-					"mapParent": {
-						"id": "000"
-					},
-					"title": "未标记版本",
-					"credit": "Dyson Logos",
 					"grid": {
 						"type": "square",
 						"size": 79,
 						"offsetX": -10,
 						"offsetY": 28
 					},
-					"width": 1700,
-					"height": 2200
+					"title": "未标记版本",
+					"credit": "Dyson Logos",
+					"mapParent": {
+						"id": "000"
+					}
 				}
 			]
 		},
@@ -1551,20 +1551,20 @@
 						"type": "internal",
 						"path": "vehicles/AAG/Shrike Ship.webp"
 					},
-					"credit": "Olly Lawson",
 					"width": 1700,
-					"height": 1099
+					"height": 1099,
+					"credit": "Olly Lawson"
 				},
 				{
 					"type": "image",
+					"id": "000",
 					"href": {
 						"type": "internal",
 						"path": "vehicles/AAG/Shrike Ship Map.webp"
 					},
+					"width": 1700,
+					"height": 2200,
 					"imageType": "map",
-					"id": "000",
-					"title": "伯劳鸟舰甲板平面图",
-					"credit": "Dyson Logos",
 					"grid": {
 						"type": "square",
 						"size": 172,
@@ -1572,8 +1572,8 @@
 						"offsetY": 86,
 						"scale": 3
 					},
-					"width": 1700,
-					"height": 2200
+					"title": "伯劳鸟舰甲板平面图",
+					"credit": "Dyson Logos"
 				},
 				{
 					"type": "image",
@@ -1581,12 +1581,9 @@
 						"type": "internal",
 						"path": "vehicles/AAG/Shrike Ship Map Player Version.webp"
 					},
+					"width": 1700,
+					"height": 2200,
 					"imageType": "mapPlayer",
-					"mapParent": {
-						"id": "000"
-					},
-					"title": "未标记版本",
-					"credit": "Dyson Logos",
 					"grid": {
 						"type": "square",
 						"size": 172,
@@ -1594,8 +1591,11 @@
 						"offsetY": 86,
 						"scale": 3
 					},
-					"width": 1700,
-					"height": 2200
+					"title": "未标记版本",
+					"credit": "Dyson Logos",
+					"mapParent": {
+						"id": "000"
+					}
 				}
 			]
 		},
@@ -1613,20 +1613,20 @@
 						"type": "internal",
 						"path": "vehicles/AAG/Space Galleon.webp"
 					},
-					"credit": "David Rene Christensen",
 					"width": 1700,
-					"height": 1135
+					"height": 1135,
+					"credit": "David Rene Christensen"
 				},
 				{
 					"type": "image",
+					"id": "000",
 					"href": {
 						"type": "internal",
 						"path": "vehicles/AAG/Space Galleon Map.webp"
 					},
+					"width": 1700,
+					"height": 2200,
 					"imageType": "map",
-					"id": "000",
-					"title": "太空帆船甲板平面图",
-					"credit": "Dyson Logos",
 					"grid": {
 						"type": "square",
 						"size": 158,
@@ -1634,8 +1634,8 @@
 						"offsetY": -14,
 						"scale": 3
 					},
-					"width": 1700,
-					"height": 2200
+					"title": "太空帆船甲板平面图",
+					"credit": "Dyson Logos"
 				},
 				{
 					"type": "image",
@@ -1643,12 +1643,9 @@
 						"type": "internal",
 						"path": "vehicles/AAG/Space Galleon Map Player Version.webp"
 					},
+					"width": 1700,
+					"height": 2200,
 					"imageType": "mapPlayer",
-					"mapParent": {
-						"id": "000"
-					},
-					"title": "未标记版本",
-					"credit": "Dyson Logos",
 					"grid": {
 						"type": "square",
 						"size": 158,
@@ -1656,8 +1653,11 @@
 						"offsetY": -14,
 						"scale": 3
 					},
-					"width": 1700,
-					"height": 2200
+					"title": "未标记版本",
+					"credit": "Dyson Logos",
+					"mapParent": {
+						"id": "000"
+					}
 				}
 			]
 		},
@@ -1676,20 +1676,20 @@
 						"type": "internal",
 						"path": "vehicles/AAG/Squid Ship.webp"
 					},
-					"credit": "Katerina Ladon",
 					"width": 1700,
-					"height": 1136
+					"height": 1136,
+					"credit": "Katerina Ladon"
 				},
 				{
 					"type": "image",
+					"id": "000",
 					"href": {
 						"type": "internal",
 						"path": "vehicles/AAG/Squid Ship Map.webp"
 					},
+					"width": 1700,
+					"height": 2200,
 					"imageType": "map",
-					"id": "000",
-					"title": "鱿鱼舰甲板平面图",
-					"credit": "Dyson Logos",
 					"grid": {
 						"type": "square",
 						"size": 161,
@@ -1697,8 +1697,8 @@
 						"offsetY": 66,
 						"scale": 3
 					},
-					"width": 1700,
-					"height": 2200
+					"title": "鱿鱼舰甲板平面图",
+					"credit": "Dyson Logos"
 				},
 				{
 					"type": "image",
@@ -1706,12 +1706,9 @@
 						"type": "internal",
 						"path": "vehicles/AAG/Squid Ship Map Player Version.webp"
 					},
+					"width": 1700,
+					"height": 2200,
 					"imageType": "mapPlayer",
-					"mapParent": {
-						"id": "000"
-					},
-					"title": "未标记版本",
-					"credit": "Dyson Logos",
 					"grid": {
 						"type": "square",
 						"size": 161,
@@ -1719,8 +1716,11 @@
 						"offsetY": 66,
 						"scale": 3
 					},
-					"width": 1700,
-					"height": 2200
+					"title": "未标记版本",
+					"credit": "Dyson Logos",
+					"mapParent": {
+						"id": "000"
+					}
 				}
 			]
 		},
@@ -1739,20 +1739,20 @@
 						"type": "internal",
 						"path": "vehicles/AAG/Star Moth.webp"
 					},
-					"credit": "Bruce Brenneise",
 					"width": 1700,
-					"height": 1099
+					"height": 1099,
+					"credit": "Bruce Brenneise"
 				},
 				{
 					"type": "image",
+					"id": "000",
 					"href": {
 						"type": "internal",
 						"path": "vehicles/AAG/Star Moth Map.webp"
 					},
+					"width": 1700,
+					"height": 2200,
 					"imageType": "map",
-					"id": "000",
-					"title": "星蛾甲板平面图",
-					"credit": "Dyson Logos",
 					"grid": {
 						"type": "square",
 						"size": 176,
@@ -1760,8 +1760,8 @@
 						"offsetY": -28,
 						"scale": 3
 					},
-					"width": 1700,
-					"height": 2200
+					"title": "星蛾甲板平面图",
+					"credit": "Dyson Logos"
 				},
 				{
 					"type": "image",
@@ -1769,12 +1769,9 @@
 						"type": "internal",
 						"path": "vehicles/AAG/Star Moth Map Player Version.webp"
 					},
+					"width": 1700,
+					"height": 2200,
 					"imageType": "mapPlayer",
-					"mapParent": {
-						"id": "000"
-					},
-					"title": "未标记版本",
-					"credit": "Dyson Logos",
 					"grid": {
 						"type": "square",
 						"size": 176,
@@ -1782,8 +1779,11 @@
 						"offsetY": -28,
 						"scale": 3
 					},
-					"width": 1700,
-					"height": 2200
+					"title": "未标记版本",
+					"credit": "Dyson Logos",
+					"mapParent": {
+						"id": "000"
+					}
 				}
 			]
 		},
@@ -1798,22 +1798,22 @@
 			"images": [
 				{
 					"type": "image",
+					"id": "000",
 					"href": {
 						"type": "internal",
 						"path": "vehicles/EFA/Strider Airship.webp"
 					},
-					"imageType": "map",
-					"id": "000",
-					"title": "挺进者飞艇地图",
-					"credit": "Sean Macdonald",
 					"width": 3165,
 					"height": 4096,
+					"imageType": "map",
 					"grid": {
 						"type": "square",
 						"size": 116,
 						"offsetX": -21,
 						"offsetY": 11
-					}
+					},
+					"title": "挺进者飞艇地图",
+					"credit": "Sean Macdonald"
 				},
 				{
 					"type": "image",
@@ -1821,18 +1821,18 @@
 						"type": "internal",
 						"path": "vehicles/EFA/Strider Airship Player Version.webp"
 					},
-					"imageType": "mapPlayer",
-					"mapParent": {
-						"id": "000"
-					},
-					"title": "玩家版本",
 					"width": 3165,
 					"height": 4096,
+					"imageType": "mapPlayer",
 					"grid": {
 						"type": "square",
 						"size": 116,
 						"offsetX": -21,
 						"offsetY": 11
+					},
+					"title": "玩家版本",
+					"mapParent": {
+						"id": "000"
 					}
 				}
 			]
@@ -1881,20 +1881,20 @@
 						"type": "internal",
 						"path": "vehicles/AAG/Turtle Ship.webp"
 					},
-					"credit": "Alfven Ato",
 					"width": 1700,
-					"height": 1135
+					"height": 1135,
+					"credit": "Alfven Ato"
 				},
 				{
 					"type": "image",
+					"id": "000",
 					"href": {
 						"type": "internal",
 						"path": "vehicles/AAG/Turtle Ship Map.webp"
 					},
+					"width": 1700,
+					"height": 2200,
 					"imageType": "map",
-					"id": "000",
-					"title": "海龟舰甲板平面图",
-					"credit": "Dyson Logos",
 					"grid": {
 						"type": "square",
 						"size": 192,
@@ -1902,8 +1902,8 @@
 						"offsetY": -58,
 						"scale": 3
 					},
-					"width": 1700,
-					"height": 2200
+					"title": "海龟舰甲板平面图",
+					"credit": "Dyson Logos"
 				},
 				{
 					"type": "image",
@@ -1911,12 +1911,9 @@
 						"type": "internal",
 						"path": "vehicles/AAG/Turtle Ship Map Player Version.webp"
 					},
+					"width": 1700,
+					"height": 2200,
 					"imageType": "mapPlayer",
-					"mapParent": {
-						"id": "000"
-					},
-					"title": "未标记版本",
-					"credit": "Dyson Logos",
 					"grid": {
 						"type": "square",
 						"size": 192,
@@ -1924,8 +1921,11 @@
 						"offsetY": -58,
 						"scale": 3
 					},
-					"width": 1700,
-					"height": 2200
+					"title": "未标记版本",
+					"credit": "Dyson Logos",
+					"mapParent": {
+						"id": "000"
+					}
 				}
 			]
 		},
@@ -1945,20 +1945,20 @@
 						"type": "internal",
 						"path": "vehicles/AAG/Tyrant Ship.webp"
 					},
-					"credit": "Olly Lawson",
 					"width": 1700,
-					"height": 1135
+					"height": 1135,
+					"credit": "Olly Lawson"
 				},
 				{
 					"type": "image",
+					"id": "000",
 					"href": {
 						"type": "internal",
 						"path": "vehicles/AAG/Tyrant Ship Map.webp"
 					},
+					"width": 1700,
+					"height": 2200,
 					"imageType": "map",
-					"id": "000",
-					"title": "暴君舰甲板平面图",
-					"credit": "Dyson Logos",
 					"grid": {
 						"type": "square",
 						"size": 122,
@@ -1966,8 +1966,8 @@
 						"offsetY": -9,
 						"scale": 3
 					},
-					"width": 1700,
-					"height": 2200
+					"title": "暴君舰甲板平面图",
+					"credit": "Dyson Logos"
 				},
 				{
 					"type": "image",
@@ -1975,12 +1975,9 @@
 						"type": "internal",
 						"path": "vehicles/AAG/Tyrant Ship Map Player Version.webp"
 					},
+					"width": 1700,
+					"height": 2200,
 					"imageType": "mapPlayer",
-					"mapParent": {
-						"id": "000"
-					},
-					"title": "未标记版本",
-					"credit": "Dyson Logos",
 					"grid": {
 						"type": "square",
 						"size": 122,
@@ -1988,8 +1985,11 @@
 						"offsetY": -9,
 						"scale": 3
 					},
-					"width": 1700,
-					"height": 2200
+					"title": "未标记版本",
+					"credit": "Dyson Logos",
+					"mapParent": {
+						"id": "000"
+					}
 				}
 			]
 		},
@@ -2262,17 +2262,17 @@
 						"type": "internal",
 						"path": "vehicles/GoS/warship.webp"
 					},
-					"title": "战舰",
+					"width": 2100,
+					"height": 2850,
 					"imageType": "map",
-					"credit": "Mike Schley",
 					"grid": {
 						"type": "square",
 						"size": 78,
 						"offsetX": 37,
 						"offsetY": 19
 					},
-					"width": 2100,
-					"height": 2850
+					"title": "战舰",
+					"credit": "Mike Schley"
 				}
 			]
 		},
@@ -2291,20 +2291,20 @@
 						"type": "internal",
 						"path": "vehicles/AAG/Wasp Ship.webp"
 					},
-					"credit": "Olly Lawson",
 					"width": 1700,
-					"height": 1135
+					"height": 1135,
+					"credit": "Olly Lawson"
 				},
 				{
 					"type": "image",
+					"id": "000",
 					"href": {
 						"type": "internal",
 						"path": "vehicles/AAG/Wasp Ship Map.webp"
 					},
+					"width": 1700,
+					"height": 2200,
 					"imageType": "map",
-					"id": "000",
-					"title": "黄蜂舰甲板平面图",
-					"credit": "Dyson Logos",
 					"grid": {
 						"type": "square",
 						"size": 162,
@@ -2312,8 +2312,8 @@
 						"offsetY": 71,
 						"scale": 3
 					},
-					"width": 1700,
-					"height": 2200
+					"title": "黄蜂舰甲板平面图",
+					"credit": "Dyson Logos"
 				},
 				{
 					"type": "image",
@@ -2321,12 +2321,9 @@
 						"type": "internal",
 						"path": "vehicles/AAG/Wasp Ship Map Player Version.webp"
 					},
+					"width": 1700,
+					"height": 2200,
 					"imageType": "mapPlayer",
-					"mapParent": {
-						"id": "000"
-					},
-					"title": "未标记版本",
-					"credit": "Dyson Logos",
 					"grid": {
 						"type": "square",
 						"size": 162,
@@ -2334,8 +2331,11 @@
 						"offsetY": 71,
 						"scale": 3
 					},
-					"width": 1700,
-					"height": 2200
+					"title": "未标记版本",
+					"credit": "Dyson Logos",
+					"mapParent": {
+						"id": "000"
+					}
 				}
 			]
 		}

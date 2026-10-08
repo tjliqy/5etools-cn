@@ -9,6 +9,8 @@
 					"ENG_name": "Paladin",
 					"name": "圣武士",
 					"type": "section",
+					"source": "PHB",
+					"page": 82,
 					"entries": [
 						"一身沾满沿途风尘的板甲在阳光下依然闪亮，人类放下她的利剑和盾牌，双手按在重伤男子身上。男子的伤口随着其手上漫出的神圣光耀神奇地愈合，然后睁开双眼讶异的看着自己的恩人。",
 						"漆黑的斗篷让矮人在夜色中近乎隐形。他蹲守在一片裸露的岩层后，看着眼前一支正庆贺新近战绩的兽人战团。片刻之后，他悄无声息的站起，并缓步踏入兽人群中。随着矮人低语的神圣誓言，两名兽人猝然死去，而其生命的最后一刻甚至还没意识到这名矮人的存在。",
@@ -50,12 +52,12 @@
 								}
 							]
 						}
-					],
-					"page": 82,
-					"source": "PHB"
+					]
 				},
 				{
 					"type": "section",
+					"source": "XGE",
+					"page": 36,
 					"entries": [
 						{
 							"type": "quote",
@@ -382,9 +384,7 @@
 								}
 							]
 						}
-					],
-					"source": "XGE",
-					"page": 36
+					]
 				}
 			],
 			"images": [
@@ -420,14 +420,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "神圣誓言的虔诚战士",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Paladin.webp"
 					},
-					"credit": "Michael Broussard",
 					"width": 1700,
-					"height": 2176
+					"height": 2176,
+					"title": "神圣誓言的虔诚战士",
+					"credit": "Michael Broussard"
 				}
 			]
 		}
@@ -537,14 +537,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "奉献之誓子职",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Devotion Paladin.webp"
 					},
-					"credit": "Katerina Ladon",
 					"width": 850,
-					"height": 1501
+					"height": 1501,
+					"title": "奉献之誓子职",
+					"credit": "Katerina Ladon"
 				}
 			]
 		},
@@ -558,14 +558,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "荣耀之誓子职",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Glory Paladin.webp"
 					},
-					"credit": "Polar Engine",
 					"width": 850,
-					"height": 2293
+					"height": 2293,
+					"title": "荣耀之誓子职",
+					"credit": "Polar Engine"
 				}
 			]
 		},
@@ -579,14 +579,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "古贤之誓子职",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Ancients Paladin.webp"
 					},
-					"credit": "Polar Engine",
 					"width": 850,
-					"height": 2374
+					"height": 2374,
+					"title": "古贤之誓子职",
+					"credit": "Polar Engine"
 				}
 			]
 		},
@@ -600,14 +600,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "复仇之誓子职",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Vengeance Paladin.webp"
 					},
-					"credit": "Ignatius Budi",
 					"width": 850,
-					"height": 2372
+					"height": 2372,
+					"title": "复仇之誓子职",
+					"credit": "Ignatius Budi"
 				}
 			]
 		},

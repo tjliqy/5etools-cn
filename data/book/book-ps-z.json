@@ -1,1619 +1,1625 @@
 {
-	"data": [
+	"bookData": [
 		{
-			"ENG_name": "Introduction",
-			"name": "简介",
-			"type": "section",
-			"page": 3,
-			"entries": [
+			"id": "PS-Z",
+			"source": "PSZ",
+			"data": [
 				{
-					"type": "gallery",
-					"images": [
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "book/PSZ/001.webp"
-							},
-							"width": 1229,
-							"height": 1586
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "book/PSZ/002.webp"
-							},
-							"title": "塔齐姆",
-							"credit": "Aleksi Briclot",
-							"width": 480,
-							"height": 621
-						}
-					]
-				},
-				{
-					"type": "quote",
-					"entries": [
-						"{@i 龙与地下城与万智牌}",
-						"从一开始，魔法牌中的赞迪卡位面就被构想为一个\"冒险世界\"，探险队在其中深入古代遗迹，寻找奇迹和宝藏，并在途中与遇到的怪物战斗。该位面的许多创意根源都来自D&D，因此{@i 《魔法：聚会的艺术\u2014赞迪卡》}读起来非常像一本D&D战役设定书也就不足为奇了。书中充满了冒险钩子和故事种子，只缺少将赞迪卡种族、怪物和冒险改编为桌面D&D战役时所需的具体规则参考。所有这些都被令人惊叹的奇幻艺术所包围，其本身就蕴含着无限的灵感。",
-						"你可以将《{@i 异界传送: 赞迪卡}》想象成《{@i 《魔法：聚会的艺术\u2014赞迪卡》}》的补充，旨在帮助你将书中包含的世界细节和故事种子转化为激动人心的D&D战役。在赞迪卡设定D&D战役的最简单方法是，基本上按照D&D提供的规则来：赞迪卡的德鲁伊可能调用绿色法力并施展像巨大成长这样的法术，但她在D&D规则中仍然只是一个德鲁伊（可能施展{@spell 巨虫术}）。",
-						"{@i 异界传送: 赞迪卡} 是使用你可以在这里找到的第五版D&D规则制作的。D&D是一个灵活的规则系统，旨在模拟任何类型的奇幻世界。D&D的魔法系统不涉及五种颜色的法力或逐步增强到你最强大的法术，但目标不是在你的角色扮演游戏中复制{@i 玩耍}魔法的体验。重点是通过D&D规则的视角，以一种新的方式体验魔法的{@i 世界}。你真正需要的只是角色的种族、他们面对的怪物，以及一些构建战役的想法。",
-						"最终，《{@i 《魔法：聚会的艺术\u2014赞迪卡》}》将帮助您在赞迪卡创建一个D&D战役，但实际上您并不需要这本书来使用这些材料\u2014\u2014您也可以参考在{@link 魔法聚会官网}上找到的大量关于赞迪卡的传说。"
-					],
-					"skipItalics": true,
-					"skipMarks": true,
-					"by": "James Wyatt"
-				},
-				"这个补充材料中的游戏机制可以在您的D&D战役中使用，但它们尚未经过充分的游戏测试和设计迭代的磨练。基于这些原因，这个补充材料中的内容在D&D官方赛事中是不被允许使用的。",
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/PSZ/003.webp"
-					},
-					"title": "探索荒野",
-					"credit": "Anna Steinbauer",
-					"width": 254,
-					"height": 620
-				},
-				{
-					"ENG_name": "The World",
-					"name": "世界",
+					"ENG_name": "Introduction",
+					"name": "简介",
 					"type": "section",
-					"page": 4,
+					"id": "000",
+					"page": 3,
 					"entries": [
+						{
+							"type": "gallery",
+							"images": [
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/PSZ/001.webp"
+									},
+									"width": 1229,
+									"height": 1586
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/PSZ/002.webp"
+									},
+									"width": 480,
+									"height": 621,
+									"title": "塔齐姆",
+									"credit": "Aleksi Briclot"
+								}
+							]
+						},
+						{
+							"type": "quote",
+							"skipMarks": true,
+							"skipItalics": true,
+							"entries": [
+								"{@i 龙与地下城与万智牌}",
+								"从一开始，魔法牌中的赞迪卡位面就被构想为一个\"冒险世界\"，探险队在其中深入古代遗迹，寻找奇迹和宝藏，并在途中与遇到的怪物战斗。该位面的许多创意根源都来自D&D，因此{@i 《魔法：聚会的艺术\u2014赞迪卡》}读起来非常像一本D&D战役设定书也就不足为奇了。书中充满了冒险钩子和故事种子，只缺少将赞迪卡种族、怪物和冒险改编为桌面D&D战役时所需的具体规则参考。所有这些都被令人惊叹的奇幻艺术所包围，其本身就蕴含着无限的灵感。",
+								"你可以将《{@i 异界传送: 赞迪卡}》想象成《{@i 《魔法：聚会的艺术\u2014赞迪卡》}》的补充，旨在帮助你将书中包含的世界细节和故事种子转化为激动人心的D&D战役。在赞迪卡设定D&D战役的最简单方法是，基本上按照D&D提供的规则来：赞迪卡的德鲁伊可能调用绿色法力并施展像巨大成长这样的法术，但她在D&D规则中仍然只是一个德鲁伊（可能施展{@spell 巨虫术}）。",
+								"{@i 异界传送: 赞迪卡} 是使用你可以在这里找到的第五版D&D规则制作的。D&D是一个灵活的规则系统，旨在模拟任何类型的奇幻世界。D&D的魔法系统不涉及五种颜色的法力或逐步增强到你最强大的法术，但目标不是在你的角色扮演游戏中复制{@i 玩耍}魔法的体验。重点是通过D&D规则的视角，以一种新的方式体验魔法的{@i 世界}。你真正需要的只是角色的种族、他们面对的怪物，以及一些构建战役的想法。",
+								"最终，《{@i 《魔法：聚会的艺术\u2014赞迪卡》}》将帮助您在赞迪卡创建一个D&D战役，但实际上您并不需要这本书来使用这些材料\u2014\u2014您也可以参考在{@link 魔法聚会官网}上找到的大量关于赞迪卡的传说。"
+							],
+							"by": "James Wyatt"
+						},
+						"这个补充材料中的游戏机制可以在您的D&D战役中使用，但它们尚未经过充分的游戏测试和设计迭代的磨练。基于这些原因，这个补充材料中的内容在D&D官方赛事中是不被允许使用的。",
 						{
 							"type": "image",
 							"href": {
 								"type": "internal",
-								"path": "book/PSZ/004.webp"
+								"path": "book/PSZ/003.webp"
 							},
-							"width": 314,
-							"height": 828,
-							"title": "赞迪卡之战",
-							"credit": "Greg Semkow"
+							"width": 254,
+							"height": 620,
+							"title": "探索荒野",
+							"credit": "Anna Steinbauer"
 						},
-						"赞迪卡是一个充满致命风险和无价回报的危险世界。从其居民的角度来看，这是一个敌对的地方，似乎在积极地试图杀死任何敢于在那里生活的生物。危险是不断的。危险的地形、狡猾的捕食者和大规模的自然灾害都对生存提出了持续的挑战\u2014\u2014同样，通过这个位面，被称为\"动荡\"的不可预测的变化波也不断挑战着生存。即使是弥漫在这片土地上的法力也是野性的，难以驯服。对于那些使用它的人来说，它几乎感觉像是活的，有时会导致土地显现出像法术一样的魔法效果。赞迪卡是一个致命危险的位面，但那个位面的居民长大时变得坚强而有韧性，准备好面对他们唯一知道的世界的危险。",
-						"位面行者\u2014\u2014拥有在广阔多元宇宙中穿梭各个世界的强大法师\u2014\u2014拥有更广阔的视野。对他们来说，赞迪卡的危险具有不同的含义。在很久以前，三个拥有巨大力量的外星生物被囚禁在赞迪卡，以防止它们逐个位面地吞噬整个多元宇宙。但是这些奥德赛族在位面内的存在就像一个活体内部的溃疡感染。赞迪卡并不是试图灭绝所有居住在位面的生物\u2014\u2014它一直在徒劳地试图摧毁奥德赛族。其居民只是恰好挡在了路上。",
-						"在被囚禁在魔法监狱中数个世纪之后，艾卓兹族再次获得了自由。与三巨头的肆虐以及它们繁衍出的无数后代相比，赞迪卡的其他危险都显得微不足道。赞迪卡的文明，始终脆弱且不确定，现在正濒临毁灭的边缘，这个位面本身似乎也面临着灭绝的威胁。",
 						{
-							"ENG_name": "Adventures on Zendikar",
-							"name": "赞迪卡的冒险",
-							"type": "entries",
+							"ENG_name": "The World",
+							"name": "世界",
+							"type": "section",
+							"id": "001",
 							"page": 4,
 							"entries": [
-								"赞迪卡是一个充满冒险机会的世界。勇敢的英雄、贪婪的财宝猎人和寻求被遗忘知识的智者都可以找到无数的废墟去探索、谜团去揭开，以及需要击败的恶棍和怪物。探险家族、学术机构、富有的商人和退休的冒险家都赞助探险和发现的任务。商队需要护卫来保护他们免受匪徒、掠食者和波动的影响。与此同时，从狡猾的吸血鬼智者阿诺文到怪物般的恶魔位面行者奥布·尼克斯利斯，恶棍的阴谋吸引着潜在的英雄们像飞蛾扑火一样。"
-							],
-							"id": "002"
-						},
-						{
-							"ENG_name": "Ruins of Zendikar",
-							"name": "赞迪卡废墟",
-							"type": "entries",
-							"page": 5,
-							"entries": [
-								"赞迪卡遍布着古代遗迹，适合探险。在埃卓基崛起之前，对这些遗址的探险主要是出于好奇心、寻找财富或名声，或寻求魔法力量。然而自从埃卓基从他们的监狱中逃脱以来，勇敢的探险家们深入这些废墟，希望更多地了解他们所面临的威胁\u2014\u2014以及如何阻止它。",
-								"在赞迪卡战役中的玩家角色可能会发现来自该位面历史的任何时期的遗迹：在奥德赛族到来之前，奥德赛族首次到来的时期（当时位面行者们正在努力将它们困住），或者是相对和平的时期之后。",
 								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/PSZ/004.webp"
+									},
+									"width": 314,
+									"height": 828,
+									"title": "赞迪卡之战",
+									"credit": "Greg Semkow"
+								},
+								"赞迪卡是一个充满致命风险和无价回报的危险世界。从其居民的角度来看，这是一个敌对的地方，似乎在积极地试图杀死任何敢于在那里生活的生物。危险是不断的。危险的地形、狡猾的捕食者和大规模的自然灾害都对生存提出了持续的挑战\u2014\u2014同样，通过这个位面，被称为\"动荡\"的不可预测的变化波也不断挑战着生存。即使是弥漫在这片土地上的法力也是野性的，难以驯服。对于那些使用它的人来说，它几乎感觉像是活的，有时会导致土地显现出像法术一样的魔法效果。赞迪卡是一个致命危险的位面，但那个位面的居民长大时变得坚强而有韧性，准备好面对他们唯一知道的世界的危险。",
+								"位面行者\u2014\u2014拥有在广阔多元宇宙中穿梭各个世界的强大法师\u2014\u2014拥有更广阔的视野。对他们来说，赞迪卡的危险具有不同的含义。在很久以前，三个拥有巨大力量的外星生物被囚禁在赞迪卡，以防止它们逐个位面地吞噬整个多元宇宙。但是这些奥德赛族在位面内的存在就像一个活体内部的溃疡感染。赞迪卡并不是试图灭绝所有居住在位面的生物\u2014\u2014它一直在徒劳地试图摧毁奥德赛族。其居民只是恰好挡在了路上。",
+								"在被囚禁在魔法监狱中数个世纪之后，艾卓兹族再次获得了自由。与三巨头的肆虐以及它们繁衍出的无数后代相比，赞迪卡的其他危险都显得微不足道。赞迪卡的文明，始终脆弱且不确定，现在正濒临毁灭的边缘，这个位面本身似乎也面临着灭绝的威胁。",
+								{
+									"ENG_name": "Adventures on Zendikar",
+									"name": "赞迪卡的冒险",
 									"type": "entries",
+									"id": "002",
+									"page": 4,
 									"entries": [
+										"赞迪卡是一个充满冒险机会的世界。勇敢的英雄、贪婪的财宝猎人和寻求被遗忘知识的智者都可以找到无数的废墟去探索、谜团去揭开，以及需要击败的恶棍和怪物。探险家族、学术机构、富有的商人和退休的冒险家都赞助探险和发现的任务。商队需要护卫来保护他们免受匪徒、掠食者和波动的影响。与此同时，从狡猾的吸血鬼智者阿诺文到怪物般的恶魔位面行者奥布·尼克斯利斯，恶棍的阴谋吸引着潜在的英雄们像飞蛾扑火一样。"
+									]
+								},
+								{
+									"ENG_name": "Ruins of Zendikar",
+									"name": "赞迪卡废墟",
+									"type": "entries",
+									"id": "003",
+									"page": 5,
+									"entries": [
+										"赞迪卡遍布着古代遗迹，适合探险。在埃卓基崛起之前，对这些遗址的探险主要是出于好奇心、寻找财富或名声，或寻求魔法力量。然而自从埃卓基从他们的监狱中逃脱以来，勇敢的探险家们深入这些废墟，希望更多地了解他们所面临的威胁\u2014\u2014以及如何阻止它。",
+										"在赞迪卡战役中的玩家角色可能会发现来自该位面历史的任何时期的遗迹：在奥德赛族到来之前，奥德赛族首次到来的时期（当时位面行者们正在努力将它们困住），或者是相对和平的时期之后。",
 										{
-											"ENG_name": "Pre-Eldrazi Ruins",
-											"name": "奥札奇到来之前的遗迹",
 											"type": "entries",
-											"page": 5,
+											"id": "004",
 											"entries": [
-												"在奥扎奇来到赞迪卡之前，这个世界并不特别引人注目。它拥有强大的魔力，并拥有强大的人类文明（分布在所有七个大陆）、寇族（主要在翁杜和阿库姆）、精灵（主要在穆拉萨和巴拉格德）、以及人鱼（主要在塔齐姆、古尔德拉兹和塞吉里）。这个时代的遗迹自然表明，人们并不知道奥扎奇或由奥扎奇巨人启发的三位神。这些文明有自己的神祇，对现代人来说是无法识别的。在现代，奥扎奇崛起之前，这些文明经常被错误地认为是\"奥扎奇\"，从而产生了许多关于这些外星生物本质的误解。",
-												"伊尔德拉兹之前的时代是强大魔法的时代。这个时代的遗迹常常被魔法陷阱所守护，但它们也提供了相应的奖励，形式为魔法物品和其他魔法效果（如治疗喷泉）。它们常常被灵魂、阴影和幽灵所困扰，而残留的魔法效果使它们成为恶魔吸引人的家园。在这样的遗迹中也可以找到魔法构装生物和魔像（尽管不是由赫德隆制成的构装生物），它们常常守卫着宝库。当然，一些遗迹已经被自然元素侵蚀，被自然动物或地精占据为巢穴。赞迪卡遗迹中的货币宝藏通常以宝石或珍贵艺术品的形式存在，但它们也拥有来源不明的古老硬币，包括白金币和白金。",
-												"这些古老文明的活生生的后代可能仍然居住在特别偏远的废墟中。这些居民可能从他们最初的形态中怪异地退化了\u2014\u2014只有最模糊的类似他们美人鱼祖先的库托阿，或者是从人类文化中因黑暗魔法而污染血统的提夫林或元提。",
-												"这个时代的遗址包括以下这些：",
 												{
-													"type": "list",
-													"items": [
-														"伊奥尔废墟（阿库姆）",
-														"歌唱之城（穆拉萨）",
-														"火焰中的密码（村雨）",
-														"法杜恩（翁杜的贾瓦尔岛）",
-														"阳泉（塔齐姆）",
-														"本瑟德里克斯（塞吉里）"
+													"ENG_name": "Pre-Eldrazi Ruins",
+													"name": "奥札奇到来之前的遗迹",
+													"type": "entries",
+													"id": "005",
+													"page": 5,
+													"entries": [
+														"在奥扎奇来到赞迪卡之前，这个世界并不特别引人注目。它拥有强大的魔力，并拥有强大的人类文明（分布在所有七个大陆）、寇族（主要在翁杜和阿库姆）、精灵（主要在穆拉萨和巴拉格德）、以及人鱼（主要在塔齐姆、古尔德拉兹和塞吉里）。这个时代的遗迹自然表明，人们并不知道奥扎奇或由奥扎奇巨人启发的三位神。这些文明有自己的神祇，对现代人来说是无法识别的。在现代，奥扎奇崛起之前，这些文明经常被错误地认为是\"奥扎奇\"，从而产生了许多关于这些外星生物本质的误解。",
+														"伊尔德拉兹之前的时代是强大魔法的时代。这个时代的遗迹常常被魔法陷阱所守护，但它们也提供了相应的奖励，形式为魔法物品和其他魔法效果（如治疗喷泉）。它们常常被灵魂、阴影和幽灵所困扰，而残留的魔法效果使它们成为恶魔吸引人的家园。在这样的遗迹中也可以找到魔法构装生物和魔像（尽管不是由赫德隆制成的构装生物），它们常常守卫着宝库。当然，一些遗迹已经被自然元素侵蚀，被自然动物或地精占据为巢穴。赞迪卡遗迹中的货币宝藏通常以宝石或珍贵艺术品的形式存在，但它们也拥有来源不明的古老硬币，包括白金币和白金。",
+														"这些古老文明的活生生的后代可能仍然居住在特别偏远的废墟中。这些居民可能从他们最初的形态中怪异地退化了\u2014\u2014只有最模糊的类似他们美人鱼祖先的库托阿，或者是从人类文化中因黑暗魔法而污染血统的提夫林或元提。",
+														"这个时代的遗址包括以下这些：",
+														{
+															"type": "list",
+															"items": [
+																"伊奥尔废墟（阿库姆）",
+																"歌唱之城（穆拉萨）",
+																"火焰中的密码（村雨）",
+																"法杜恩（翁杜的贾瓦尔岛）",
+																"阳泉（塔齐姆）",
+																"本瑟德里克斯（塞吉里）"
+															]
+														},
+														{
+															"type": "image",
+															"href": {
+																"type": "internal",
+																"path": "book/PSZ/005.webp"
+															},
+															"width": 597,
+															"height": 372,
+															"title": "艾欧遗迹探险",
+															"credit": "Chris Rahn"
+														}
 													]
 												},
 												{
-													"type": "image",
-													"href": {
-														"type": "internal",
-														"path": "book/PSZ/005.webp"
-													},
-													"title": "艾欧遗迹探险",
-													"credit": "Chris Rahn",
-													"width": 597,
-													"height": 372
-												}
-											],
-											"id": "005"
-										},
-										{
-											"ENG_name": "Ruins of the Eldrazi Era",
-											"name": "奥札奇时代的遗迹",
-											"type": "entries",
-											"page": 6,
-											"entries": [
-												"当乌金、索林和纳希丽在赞迪卡困住了伊尔德拉兹时，由此产生的混乱和破坏最终导致了该位面古代文明的衰落。然而，在衰落之前，强大的国家集结了强大的军队和强大的魔法来对抗遍布世界的伊尔德拉兹后代。他们利用现有的魔法以及纳希丽的六面体的力量来协助他们的努力，这个时代的魔法技术现在因为伊尔德拉兹的威胁再次出现而备受追捧。魔法武器，通常包含类似于六面体上雕刻的图案，常常在这个时代废墟中被发现。同样，在伊尔德拉兹时代的古老图书馆中，仍然可以找到包含有关伊尔德拉兹的知识以及用于束缚或摧毁它们的有用法术的卷轴和书籍。",
-												"这个时代的神庙描绘了一些古老的神，但在这个时期，对天使的崇拜也开始了。一些教堂围绕着乌金（以及在较小程度上的索林和纳希莉）的神像建造。",
-												"这个时代自豪地创造了诸如此类的场所：",
-												{
-													"type": "list",
-													"items": [
-														"乌金之眼（阿库姆）",
-														"塔尔·特里格（阿库姆）",
-														"阿加迪姆墓穴（翁杜）",
-														"艾梅里亚，天空废墟（塔齐姆）"
+													"ENG_name": "Ruins of the Eldrazi Era",
+													"name": "奥札奇时代的遗迹",
+													"type": "entries",
+													"id": "006",
+													"page": 6,
+													"entries": [
+														"当乌金、索林和纳希丽在赞迪卡困住了伊尔德拉兹时，由此产生的混乱和破坏最终导致了该位面古代文明的衰落。然而，在衰落之前，强大的国家集结了强大的军队和强大的魔法来对抗遍布世界的伊尔德拉兹后代。他们利用现有的魔法以及纳希丽的六面体的力量来协助他们的努力，这个时代的魔法技术现在因为伊尔德拉兹的威胁再次出现而备受追捧。魔法武器，通常包含类似于六面体上雕刻的图案，常常在这个时代废墟中被发现。同样，在伊尔德拉兹时代的古老图书馆中，仍然可以找到包含有关伊尔德拉兹的知识以及用于束缚或摧毁它们的有用法术的卷轴和书籍。",
+														"这个时代的神庙描绘了一些古老的神，但在这个时期，对天使的崇拜也开始了。一些教堂围绕着乌金（以及在较小程度上的索林和纳希莉）的神像建造。",
+														"这个时代自豪地创造了诸如此类的场所：",
+														{
+															"type": "list",
+															"items": [
+																"乌金之眼（阿库姆）",
+																"塔尔·特里格（阿库姆）",
+																"阿加迪姆墓穴（翁杜）",
+																"艾梅里亚，天空废墟（塔齐姆）"
+															]
+														},
+														{
+															"type": "image",
+															"href": {
+																"type": "internal",
+																"path": "book/PSZ/006.webp"
+															},
+															"width": 485,
+															"height": 503,
+															"title": "艾米莉亚，天空废墟",
+															"credit": "Jamie Jones"
+														}
 													]
 												},
 												{
-													"type": "image",
-													"href": {
-														"type": "internal",
-														"path": "book/PSZ/006.webp"
-													},
-													"title": "艾米莉亚，天空废墟",
-													"credit": "Jamie Jones",
-													"width": 485,
-													"height": 503
-												}
-											],
-											"id": "006"
-										},
-										{
-											"ENG_name": "Post-Eldrazi Ruins",
-											"name": "后奥札奇遗迹",
-											"type": "entries",
-											"page": 6,
-											"entries": [
-												"当艾卓兹族从赞迪卡消失，纳希丽进入乌金之眼的休眠状态后，这个位面永远地改变了面貌。动荡摧毁了许多定居点，科族开始过上了游牧生活。随着时间的流逝，艾卓兹族恐怖的真实本质被遗忘，而那些巨人在神庙中以人鱼族和科族的神灵形象出现的艺术表现。在科族中，这些形象有时伴随着纳希丽的雕像，她是\"塔利卜的先知\"，教会了她的人民石匠艺术。",
-												"埃德拉兹遗址包括以下内容：",
-												{
-													"type": "list",
-													"items": [
-														"活生生的尖塔（穆拉萨）",
-														"乌拉神庙（塔齐姆）",
-														"哈格拉蓄水池（古尔达兹）",
-														"佐夫螺旋（古尔德拉兹）"
+													"ENG_name": "Post-Eldrazi Ruins",
+													"name": "后奥札奇遗迹",
+													"type": "entries",
+													"id": "007",
+													"page": 6,
+													"entries": [
+														"当艾卓兹族从赞迪卡消失，纳希丽进入乌金之眼的休眠状态后，这个位面永远地改变了面貌。动荡摧毁了许多定居点，科族开始过上了游牧生活。随着时间的流逝，艾卓兹族恐怖的真实本质被遗忘，而那些巨人在神庙中以人鱼族和科族的神灵形象出现的艺术表现。在科族中，这些形象有时伴随着纳希丽的雕像，她是\"塔利卜的先知\"，教会了她的人民石匠艺术。",
+														"埃德拉兹遗址包括以下内容：",
+														{
+															"type": "list",
+															"items": [
+																"活生生的尖塔（穆拉萨）",
+																"乌拉神庙（塔齐姆）",
+																"哈格拉蓄水池（古尔达兹）",
+																"佐夫螺旋（古尔德拉兹）"
+															]
+														},
+														{
+															"type": "image",
+															"href": {
+																"type": "internal",
+																"path": "book/PSZ/007.webp"
+															},
+															"width": 354,
+															"height": 818,
+															"title": "水墓",
+															"credit": "Min Yum"
+														}
 													]
-												},
-												{
-													"type": "image",
-													"href": {
-														"type": "internal",
-														"path": "book/PSZ/007.webp"
-													},
-													"title": "水墓",
-													"credit": "Min Yum",
-													"width": 354,
-													"height": 818
 												}
-											],
-											"id": "007"
+											]
 										}
-									],
-									"id": "004"
+									]
 								}
-							],
-							"id": "003"
+							]
 						}
-					],
-					"id": "001"
-				}
-			],
-			"id": "000"
-		},
-		{
-			"ENG_name": "Races of Zendikar",
-			"name": "赞迪卡的种族",
-			"type": "section",
-			"page": 7,
-			"entries": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/PSZ/008.webp"
-					},
-					"title": "激发冲锋",
-					"credit": "Willian Murai",
-					"width": 477,
-					"height": 617
-				},
-				{
-					"type": "list",
-					"columns": 3,
-					"items": [
-						"{@race 精灵 (赞迪卡)|PSZ}",
-						"{@race 精灵 (赞迪卡; 玖瑞加精灵)|PSZ}",
-						"{@race 精灵 (赞迪卡; 慕达雅精灵)|PSZ}",
-						"{@race 精灵 (赞迪卡; 特裘如精灵)|PSZ}",
-						"{@race 地精|PSZ}",
-						"{@race 地精 (赞迪卡; 葛塔部落)|PSZ}",
-						"{@race 地精 (赞迪卡; 熔足部落)|PSZ}",
-						"{@race 地精 (赞迪卡; 图图部落)|PSZ}",
-						"{@race 人类 (赞迪卡)|PSZ}",
-						"{@race 寇族|PSZ}",
-						"{@race 人鱼|PSZ}",
-						"{@race 人鱼 (赞迪卡; 诡术信仰寇希)|PSZ}",
-						"{@race 人鱼 (赞迪卡; 风之信仰伊美黎)|PSZ}",
-						"{@race 人鱼 (赞迪卡; 水之信仰钨拉)|PSZ}",
-						"{@race 吸血鬼|PSZ}",
-						"{@race 吸血鬼 (赞迪卡)|PSZ}"
 					]
 				},
 				{
-					"ENG_name": "Elf (Zendikar)",
-					"name": "精灵 (赞迪卡)",
-					"type": "statblock",
-					"tag": "race",
-					"source": "PSZ"
-				},
-				{
-					"ENG_name": "Elf (Zendikar; Joraga Nation)",
-					"name": "精灵 (赞迪卡; 玖瑞加精灵)",
-					"type": "statblock",
-					"tag": "race",
-					"source": "PSZ"
-				},
-				{
-					"ENG_name": "Elf (Zendikar; Mul Daya Nation)",
-					"name": "精灵 (赞迪卡; 慕达雅精灵)",
-					"type": "statblock",
-					"tag": "race",
-					"source": "PSZ"
-				},
-				{
-					"ENG_name": "Elf (Zendikar; Tajuru Nation)",
-					"name": "精灵 (赞迪卡; 特裘如精灵)",
-					"type": "statblock",
-					"tag": "race",
-					"source": "PSZ"
-				},
-				{
-					"ENG_name": "Goblin",
-					"name": "地精",
-					"type": "statblock",
-					"tag": "race",
-					"source": "PSZ"
-				},
-				{
-					"ENG_name": "Goblin (Zendikar; Grotag Tribe)",
-					"name": "地精 (赞迪卡; 葛塔部落)",
-					"type": "statblock",
-					"tag": "race",
-					"source": "PSZ"
-				},
-				{
-					"ENG_name": "Goblin (Zendikar; Lavastep Tribe)",
-					"name": "地精 (赞迪卡; 熔足部落)",
-					"type": "statblock",
-					"tag": "race",
-					"source": "PSZ"
-				},
-				{
-					"ENG_name": "Goblin (Zendikar; Tuktuk Tribe)",
-					"name": "地精 (赞迪卡; 图图部落)",
-					"type": "statblock",
-					"tag": "race",
-					"source": "PSZ"
-				},
-				{
-					"ENG_name": "Human (Zendikar)",
-					"name": "人类 (赞迪卡)",
-					"type": "statblock",
-					"tag": "race",
-					"source": "PSZ"
-				},
-				{
-					"ENG_name": "Kor",
-					"name": "寇族",
-					"type": "statblock",
-					"tag": "race",
-					"source": "PSZ"
-				},
-				{
-					"ENG_name": "Merfolk",
-					"name": "人鱼",
-					"type": "statblock",
-					"tag": "race",
-					"source": "PSZ"
-				},
-				{
-					"ENG_name": "Merfolk (Zendikar; Cosi Creed)",
-					"name": "人鱼 (赞迪卡; 诡术信仰寇希)",
-					"type": "statblock",
-					"tag": "race",
-					"source": "PSZ"
-				},
-				{
-					"ENG_name": "Merfolk (Zendikar; Emeria Creed)",
-					"name": "人鱼 (赞迪卡; 风之信仰伊美黎)",
-					"type": "statblock",
-					"tag": "race",
-					"source": "PSZ"
-				},
-				{
-					"ENG_name": "Merfolk (Zendikar; Ula Creed)",
-					"name": "人鱼 (赞迪卡; 水之信仰钨拉)",
-					"type": "statblock",
-					"tag": "race",
-					"source": "PSZ"
-				},
-				{
-					"ENG_name": "Vampire",
-					"name": "吸血鬼",
-					"type": "statblock",
-					"tag": "race",
-					"source": "PSZ"
-				},
-				{
-					"ENG_name": "Vampire (Zendikar)",
-					"name": "吸血鬼 (赞迪卡)",
-					"type": "statblock",
-					"tag": "race",
-					"source": "PSZ"
-				}
-			],
-			"id": "008"
-		},
-		{
-			"ENG_name": "A Zendikar Bestiary",
-			"name": "赞迪卡怪物图鉴",
-			"type": "section",
-			"page": 20,
-			"entries": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/PSZ/009.webp"
-					},
-					"title": "艾欧娜，艾美利亚之盾",
-					"credit": "Jason Chan",
-					"width": 480,
-					"height": 620
-				},
-				"在大多数情况下，没有必要从头开始创造新的怪物来反映赞迪卡的生物。《D&D怪物手册》中充满了在赞迪卡有明显对应物的生物。例如，那个位面的土壤狮仅仅是狮子的一种。还有许多接近的对应物。怪物手册中的蜣螂是一个很好地代表腐蚀爬行者的方式，类似的例子比比皆是。本节的目标是指导您选择这样的对应物。伊尔德拉兹是个例外\u2014\u2014它们是赞迪卡故事中如此重要的一部分，以至于它们值得更多的关注。",
-				{
-					"type": "list",
-					"columns": 3,
-					"items": [
-						"{@creature 天使|PSZ}",
-						"{@creature 救赎天使|PSZ}",
-						"{@creature 巴洛斯|PSZ}",
-						"{@creature 巨石足巨人|PSZ}",
-						"{@creature 腐蚀爬行者|PSZ}",
-						"{@creature 龙兽（大型）|PSZ}",
-						"{@creature 幼龙（小型）|PSZ}",
-						"{@creature 伊莫库|PSZ}",
-						"{@creature 晶角兽|PSZ}",
-						"{@creature 格纳尔利德|PSZ}",
-						"{@creature 戈马索亚|PSZ}",
-						"{@creature 大猫|PSZ}",
-						"{@creature 狮鹫（类型1）|PSZ}",
-						"{@creature 狮鹫（类型2）|PSZ}",
-						"{@creature 刺心蚊|PSZ}",
-						"{@creature 小恶魔|PSZ}",
-						"{@creature 哈达|PSZ}",
-						"{@creature 约娜|PSZ}",
-						"{@creature 科兹雷克|PSZ}",
-						"{@creature 克拉肯|PSZ}",
-						"{@creature 林瓦拉|PSZ}",
-						"{@creature 食人魔咒术师|PSZ}",
-						"{@creature 牛|PSZ}",
-						"{@creature 瘟疫恶魔|PSZ}",
-						"{@creature 幽影|PSZ}",
-						"{@creature 碎颅巨人|PSZ}",
-						"{@creature 浅滩蛇|PSZ}",
-						"{@creature 斯芬克斯（类型1）|PSZ}",
-						"{@creature 斯芬克斯（类型2）|PSZ}",
-						"{@creature 精魄|PSZ}",
-						"{@creature 苏拉卡|PSZ}",
-						"{@creature 泰拉斯多顿|PSZ}",
-						"{@creature 大地践踏者|PSZ}",
-						"{@creature 森林之喉|PSZ}",
-						"{@creature 沟壑巨人|PSZ}",
-						"{@creature 转木巨人|PSZ}",
-						"{@creature 乌尔阿莫格|PSZ}",
-						"{@creature 吸血鬼转化躯壳|PSZ}",
-						"{@creature 破坏森林的巴洛斯|PSZ}",
-						"{@creature 邪灵|PSZ}",
-						"{@creature 亚龙|PSZ}",
-						"{@creature 赞迪卡龙|PSZ}",
-						"{@creature 赞迪卡魔像|PSZ}"
-					]
-				},
-				{
-					"ENG_name": "Angel",
-					"name": "天使",
+					"ENG_name": "Races of Zendikar",
+					"name": "赞迪卡的种族",
 					"type": "section",
+					"id": "008",
+					"page": 7,
 					"entries": [
 						{
-							"ENG_name": "Angel",
-							"name": "天使",
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/PSZ/008.webp"
+							},
+							"width": 477,
+							"height": 617,
+							"title": "激发冲锋",
+							"credit": "Willian Murai"
+						},
+						{
+							"type": "list",
+							"columns": 3,
+							"items": [
+								"{@race 精灵 (赞迪卡)|PSZ}",
+								"{@race 精灵 (赞迪卡; 玖瑞加精灵)|PSZ}",
+								"{@race 精灵 (赞迪卡; 慕达雅精灵)|PSZ}",
+								"{@race 精灵 (赞迪卡; 特裘如精灵)|PSZ}",
+								"{@race 地精|PSZ}",
+								"{@race 地精 (赞迪卡; 葛塔部落)|PSZ}",
+								"{@race 地精 (赞迪卡; 熔足部落)|PSZ}",
+								"{@race 地精 (赞迪卡; 图图部落)|PSZ}",
+								"{@race 人类 (赞迪卡)|PSZ}",
+								"{@race 寇族|PSZ}",
+								"{@race 人鱼|PSZ}",
+								"{@race 人鱼 (赞迪卡; 诡术信仰寇希)|PSZ}",
+								"{@race 人鱼 (赞迪卡; 风之信仰伊美黎)|PSZ}",
+								"{@race 人鱼 (赞迪卡; 水之信仰钨拉)|PSZ}",
+								"{@race 吸血鬼|PSZ}",
+								"{@race 吸血鬼 (赞迪卡)|PSZ}"
+							]
+						},
+						{
+							"ENG_name": "Elf (Zendikar)",
+							"name": "精灵 (赞迪卡)",
 							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSZ",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
+							"tag": "race",
+							"source": "PSZ"
+						},
+						{
+							"ENG_name": "Elf (Zendikar; Joraga Nation)",
+							"name": "精灵 (赞迪卡; 玖瑞加精灵)",
+							"type": "statblock",
+							"tag": "race",
+							"source": "PSZ"
+						},
+						{
+							"ENG_name": "Elf (Zendikar; Mul Daya Nation)",
+							"name": "精灵 (赞迪卡; 慕达雅精灵)",
+							"type": "statblock",
+							"tag": "race",
+							"source": "PSZ"
+						},
+						{
+							"ENG_name": "Elf (Zendikar; Tajuru Nation)",
+							"name": "精灵 (赞迪卡; 特裘如精灵)",
+							"type": "statblock",
+							"tag": "race",
+							"source": "PSZ"
+						},
+						{
+							"ENG_name": "Goblin",
+							"name": "地精",
+							"type": "statblock",
+							"tag": "race",
+							"source": "PSZ"
+						},
+						{
+							"ENG_name": "Goblin (Zendikar; Grotag Tribe)",
+							"name": "地精 (赞迪卡; 葛塔部落)",
+							"type": "statblock",
+							"tag": "race",
+							"source": "PSZ"
+						},
+						{
+							"ENG_name": "Goblin (Zendikar; Lavastep Tribe)",
+							"name": "地精 (赞迪卡; 熔足部落)",
+							"type": "statblock",
+							"tag": "race",
+							"source": "PSZ"
+						},
+						{
+							"ENG_name": "Goblin (Zendikar; Tuktuk Tribe)",
+							"name": "地精 (赞迪卡; 图图部落)",
+							"type": "statblock",
+							"tag": "race",
+							"source": "PSZ"
+						},
+						{
+							"ENG_name": "Human (Zendikar)",
+							"name": "人类 (赞迪卡)",
+							"type": "statblock",
+							"tag": "race",
+							"source": "PSZ"
+						},
+						{
+							"ENG_name": "Kor",
+							"name": "寇族",
+							"type": "statblock",
+							"tag": "race",
+							"source": "PSZ"
+						},
+						{
+							"ENG_name": "Merfolk",
+							"name": "人鱼",
+							"type": "statblock",
+							"tag": "race",
+							"source": "PSZ"
+						},
+						{
+							"ENG_name": "Merfolk (Zendikar; Cosi Creed)",
+							"name": "人鱼 (赞迪卡; 诡术信仰寇希)",
+							"type": "statblock",
+							"tag": "race",
+							"source": "PSZ"
+						},
+						{
+							"ENG_name": "Merfolk (Zendikar; Emeria Creed)",
+							"name": "人鱼 (赞迪卡; 风之信仰伊美黎)",
+							"type": "statblock",
+							"tag": "race",
+							"source": "PSZ"
+						},
+						{
+							"ENG_name": "Merfolk (Zendikar; Ula Creed)",
+							"name": "人鱼 (赞迪卡; 水之信仰钨拉)",
+							"type": "statblock",
+							"tag": "race",
+							"source": "PSZ"
+						},
+						{
+							"ENG_name": "Vampire",
+							"name": "吸血鬼",
+							"type": "statblock",
+							"tag": "race",
+							"source": "PSZ"
+						},
+						{
+							"ENG_name": "Vampire (Zendikar)",
+							"name": "吸血鬼 (赞迪卡)",
+							"type": "statblock",
+							"tag": "race",
+							"source": "PSZ"
+						}
+					]
+				},
+				{
+					"ENG_name": "A Zendikar Bestiary",
+					"name": "赞迪卡怪物图鉴",
+					"type": "section",
+					"id": "009",
+					"page": 20,
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/PSZ/009.webp"
+							},
+							"width": 480,
+							"height": 620,
+							"title": "艾欧娜，艾美利亚之盾",
+							"credit": "Jason Chan"
+						},
+						"在大多数情况下，没有必要从头开始创造新的怪物来反映赞迪卡的生物。《D&D怪物手册》中充满了在赞迪卡有明显对应物的生物。例如，那个位面的土壤狮仅仅是狮子的一种。还有许多接近的对应物。怪物手册中的蜣螂是一个很好地代表腐蚀爬行者的方式，类似的例子比比皆是。本节的目标是指导您选择这样的对应物。伊尔德拉兹是个例外\u2014\u2014它们是赞迪卡故事中如此重要的一部分，以至于它们值得更多的关注。",
+						{
+							"type": "list",
+							"columns": 3,
+							"items": [
+								"{@creature 天使|PSZ}",
+								"{@creature 救赎天使|PSZ}",
+								"{@creature 巴洛斯|PSZ}",
+								"{@creature 巨石足巨人|PSZ}",
+								"{@creature 腐蚀爬行者|PSZ}",
+								"{@creature 龙兽（大型）|PSZ}",
+								"{@creature 幼龙（小型）|PSZ}",
+								"{@creature 伊莫库|PSZ}",
+								"{@creature 晶角兽|PSZ}",
+								"{@creature 格纳尔利德|PSZ}",
+								"{@creature 戈马索亚|PSZ}",
+								"{@creature 大猫|PSZ}",
+								"{@creature 狮鹫（类型1）|PSZ}",
+								"{@creature 狮鹫（类型2）|PSZ}",
+								"{@creature 刺心蚊|PSZ}",
+								"{@creature 小恶魔|PSZ}",
+								"{@creature 哈达|PSZ}",
+								"{@creature 约娜|PSZ}",
+								"{@creature 科兹雷克|PSZ}",
+								"{@creature 克拉肯|PSZ}",
+								"{@creature 林瓦拉|PSZ}",
+								"{@creature 食人魔咒术师|PSZ}",
+								"{@creature 牛|PSZ}",
+								"{@creature 瘟疫恶魔|PSZ}",
+								"{@creature 幽影|PSZ}",
+								"{@creature 碎颅巨人|PSZ}",
+								"{@creature 浅滩蛇|PSZ}",
+								"{@creature 斯芬克斯（类型1）|PSZ}",
+								"{@creature 斯芬克斯（类型2）|PSZ}",
+								"{@creature 精魄|PSZ}",
+								"{@creature 苏拉卡|PSZ}",
+								"{@creature 泰拉斯多顿|PSZ}",
+								"{@creature 大地践踏者|PSZ}",
+								"{@creature 森林之喉|PSZ}",
+								"{@creature 沟壑巨人|PSZ}",
+								"{@creature 转木巨人|PSZ}",
+								"{@creature 乌尔阿莫格|PSZ}",
+								"{@creature 吸血鬼转化躯壳|PSZ}",
+								"{@creature 破坏森林的巴洛斯|PSZ}",
+								"{@creature 邪灵|PSZ}",
+								"{@creature 亚龙|PSZ}",
+								"{@creature 赞迪卡龙|PSZ}",
+								"{@creature 赞迪卡魔像|PSZ}"
+							]
 						},
 						{
 							"ENG_name": "Angel",
 							"name": "天使",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSZ",
-							"style": "narrow"
-						}
-					],
-					"id": "00b"
-				},
-				{
-					"ENG_name": "Archon of Redemption",
-					"name": "救赎天使",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Archon of Redemption",
-							"name": "救赎天使",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSZ",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "00b",
+							"entries": [
+								{
+									"ENG_name": "Angel",
+									"name": "天使",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSZ",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Angel",
+									"name": "天使",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSZ",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Archon of Redemption",
 							"name": "救赎天使",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSZ",
-							"style": "narrow"
-						}
-					],
-					"id": "00c"
-				},
-				{
-					"ENG_name": "Baloth",
-					"name": "巴洛斯",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Baloth",
-							"name": "巴洛斯",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSZ",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "00c",
+							"entries": [
+								{
+									"ENG_name": "Archon of Redemption",
+									"name": "救赎天使",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSZ",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Archon of Redemption",
+									"name": "救赎天使",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSZ",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Baloth",
 							"name": "巴洛斯",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSZ",
-							"style": "narrow"
-						}
-					],
-					"id": "00d"
-				},
-				{
-					"ENG_name": "Boulderfoot Giant",
-					"name": "巨石足巨人",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Boulderfoot Giant",
-							"name": "巨石足巨人",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSZ",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "00d",
+							"entries": [
+								{
+									"ENG_name": "Baloth",
+									"name": "巴洛斯",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSZ",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Baloth",
+									"name": "巴洛斯",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSZ",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Boulderfoot Giant",
 							"name": "巨石足巨人",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSZ",
-							"style": "narrow"
-						}
-					],
-					"id": "00e"
-				},
-				{
-					"ENG_name": "Caustic Crawler",
-					"name": "腐蚀爬行者",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Caustic Crawler",
-							"name": "腐蚀爬行者",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSZ",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "00e",
+							"entries": [
+								{
+									"ENG_name": "Boulderfoot Giant",
+									"name": "巨石足巨人",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSZ",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Boulderfoot Giant",
+									"name": "巨石足巨人",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSZ",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Caustic Crawler",
 							"name": "腐蚀爬行者",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSZ",
-							"style": "narrow"
-						}
-					],
-					"id": "00f"
-				},
-				{
-					"ENG_name": "Drake (Large)",
-					"name": "龙兽（大型）",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Drake (Large)",
-							"name": "龙兽（大型）",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSZ",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "00f",
+							"entries": [
+								{
+									"ENG_name": "Caustic Crawler",
+									"name": "腐蚀爬行者",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSZ",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Caustic Crawler",
+									"name": "腐蚀爬行者",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSZ",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Drake (Large)",
 							"name": "龙兽（大型）",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSZ",
-							"style": "narrow"
-						}
-					],
-					"id": "010"
-				},
-				{
-					"ENG_name": "Drake (Small)",
-					"name": "幼龙（小型）",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Drake (Small)",
-							"name": "幼龙（小型）",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSZ",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "010",
+							"entries": [
+								{
+									"ENG_name": "Drake (Large)",
+									"name": "龙兽（大型）",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSZ",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Drake (Large)",
+									"name": "龙兽（大型）",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSZ",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Drake (Small)",
 							"name": "幼龙（小型）",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSZ",
-							"style": "narrow"
-						}
-					],
-					"id": "011"
-				},
-				{
-					"ENG_name": "Emrakul",
-					"name": "伊莫库",
-					"type": "section",
-					"entries": [
+							"type": "section",
+							"id": "011",
+							"entries": [
+								{
+									"ENG_name": "Drake (Small)",
+									"name": "幼龙（小型）",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSZ",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Drake (Small)",
+									"name": "幼龙（小型）",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSZ",
+									"style": "narrow"
+								}
+							]
+						},
 						{
 							"ENG_name": "Emrakul",
 							"name": "伊莫库",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSZ",
-							"style": "narrow"
-						}
-					],
-					"id": "012"
-				},
-				{
-					"ENG_name": "Felidar",
-					"name": "晶角兽",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Felidar",
-							"name": "晶角兽",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSZ",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "012",
+							"entries": [
+								{
+									"ENG_name": "Emrakul",
+									"name": "伊莫库",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSZ",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Felidar",
 							"name": "晶角兽",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSZ",
-							"style": "narrow"
-						}
-					],
-					"id": "013"
-				},
-				{
-					"ENG_name": "Gnarlid",
-					"name": "格纳尔利德",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Gnarlid",
-							"name": "格纳尔利德",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSZ",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "013",
+							"entries": [
+								{
+									"ENG_name": "Felidar",
+									"name": "晶角兽",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSZ",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Felidar",
+									"name": "晶角兽",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSZ",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Gnarlid",
 							"name": "格纳尔利德",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSZ",
-							"style": "narrow"
-						}
-					],
-					"id": "014"
-				},
-				{
-					"ENG_name": "Gomazoa",
-					"name": "戈马索亚",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Gomazoa",
-							"name": "戈马索亚",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSZ",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "014",
+							"entries": [
+								{
+									"ENG_name": "Gnarlid",
+									"name": "格纳尔利德",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSZ",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Gnarlid",
+									"name": "格纳尔利德",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSZ",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Gomazoa",
 							"name": "戈马索亚",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSZ",
-							"style": "narrow"
-						}
-					],
-					"id": "015"
-				},
-				{
-					"ENG_name": "Great Cat",
-					"name": "大猫",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Great Cat",
-							"name": "大猫",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSZ",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "015",
+							"entries": [
+								{
+									"ENG_name": "Gomazoa",
+									"name": "戈马索亚",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSZ",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Gomazoa",
+									"name": "戈马索亚",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSZ",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Great Cat",
 							"name": "大猫",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSZ",
-							"style": "narrow"
-						}
-					],
-					"id": "016"
-				},
-				{
-					"ENG_name": "Griffin (Type 1)",
-					"name": "狮鹫（类型1）",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Griffin (Type 1)",
-							"name": "狮鹫（类型1）",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSZ",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "016",
+							"entries": [
+								{
+									"ENG_name": "Great Cat",
+									"name": "大猫",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSZ",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Great Cat",
+									"name": "大猫",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSZ",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Griffin (Type 1)",
 							"name": "狮鹫（类型1）",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSZ",
-							"style": "narrow"
-						}
-					],
-					"id": "017"
-				},
-				{
-					"ENG_name": "Griffin (Type 2)",
-					"name": "狮鹫（类型2）",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Griffin (Type 2)",
-							"name": "狮鹫（类型2）",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSZ",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "017",
+							"entries": [
+								{
+									"ENG_name": "Griffin (Type 1)",
+									"name": "狮鹫（类型1）",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSZ",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Griffin (Type 1)",
+									"name": "狮鹫（类型1）",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSZ",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Griffin (Type 2)",
 							"name": "狮鹫（类型2）",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSZ",
-							"style": "narrow"
-						}
-					],
-					"id": "018"
-				},
-				{
-					"ENG_name": "Heartstabber Mosquito",
-					"name": "刺心蚊",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Heartstabber Mosquito",
-							"name": "刺心蚊",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSZ",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "018",
+							"entries": [
+								{
+									"ENG_name": "Griffin (Type 2)",
+									"name": "狮鹫（类型2）",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSZ",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Griffin (Type 2)",
+									"name": "狮鹫（类型2）",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSZ",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Heartstabber Mosquito",
 							"name": "刺心蚊",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSZ",
-							"style": "narrow"
-						}
-					],
-					"id": "019"
-				},
-				{
-					"ENG_name": "Hellion",
-					"name": "小恶魔",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Hellion",
-							"name": "小恶魔",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSZ",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "019",
+							"entries": [
+								{
+									"ENG_name": "Heartstabber Mosquito",
+									"name": "刺心蚊",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSZ",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Heartstabber Mosquito",
+									"name": "刺心蚊",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSZ",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Hellion",
 							"name": "小恶魔",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSZ",
-							"style": "narrow"
-						}
-					],
-					"id": "01a"
-				},
-				{
-					"ENG_name": "Hurda",
-					"name": "哈达",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Hurda",
-							"name": "哈达",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSZ",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "01a",
+							"entries": [
+								{
+									"ENG_name": "Hellion",
+									"name": "小恶魔",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSZ",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Hellion",
+									"name": "小恶魔",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSZ",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Hurda",
 							"name": "哈达",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSZ",
-							"style": "narrow"
-						}
-					],
-					"id": "01b"
-				},
-				{
-					"ENG_name": "Iona",
-					"name": "约娜",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Iona",
-							"name": "约娜",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSZ",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "01b",
+							"entries": [
+								{
+									"ENG_name": "Hurda",
+									"name": "哈达",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSZ",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Hurda",
+									"name": "哈达",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSZ",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Iona",
 							"name": "约娜",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSZ",
-							"style": "narrow"
-						}
-					],
-					"id": "01c"
-				},
-				{
-					"ENG_name": "Kozilek",
-					"name": "科兹雷克",
-					"type": "section",
-					"entries": [
+							"type": "section",
+							"id": "01c",
+							"entries": [
+								{
+									"ENG_name": "Iona",
+									"name": "约娜",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSZ",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Iona",
+									"name": "约娜",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSZ",
+									"style": "narrow"
+								}
+							]
+						},
 						{
 							"ENG_name": "Kozilek",
 							"name": "科兹雷克",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSZ",
-							"style": "narrow"
-						}
-					],
-					"id": "01d"
-				},
-				{
-					"ENG_name": "Kraken",
-					"name": "克拉肯",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Kraken",
-							"name": "克拉肯",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSZ",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "01d",
+							"entries": [
+								{
+									"ENG_name": "Kozilek",
+									"name": "科兹雷克",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSZ",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Kraken",
 							"name": "克拉肯",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSZ",
-							"style": "narrow"
-						}
-					],
-					"id": "01e"
-				},
-				{
-					"ENG_name": "Linvala",
-					"name": "林瓦拉",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Linvala",
-							"name": "林瓦拉",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSZ",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "01e",
+							"entries": [
+								{
+									"ENG_name": "Kraken",
+									"name": "克拉肯",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSZ",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Kraken",
+									"name": "克拉肯",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSZ",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Linvala",
 							"name": "林瓦拉",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSZ",
-							"style": "narrow"
-						}
-					],
-					"id": "01f"
-				},
-				{
-					"ENG_name": "Ogre Channeler",
-					"name": "食人魔咒术师",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Ogre Channeler",
-							"name": "食人魔咒术师",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSZ",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "01f",
+							"entries": [
+								{
+									"ENG_name": "Linvala",
+									"name": "林瓦拉",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSZ",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Linvala",
+									"name": "林瓦拉",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSZ",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Ogre Channeler",
 							"name": "食人魔咒术师",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSZ",
-							"style": "narrow"
-						}
-					],
-					"id": "020"
-				},
-				{
-					"ENG_name": "Oxen",
-					"name": "牛",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Oxen",
-							"name": "牛",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSZ",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "020",
+							"entries": [
+								{
+									"ENG_name": "Ogre Channeler",
+									"name": "食人魔咒术师",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSZ",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Ogre Channeler",
+									"name": "食人魔咒术师",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSZ",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Oxen",
 							"name": "牛",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSZ",
-							"style": "narrow"
-						}
-					],
-					"id": "021"
-				},
-				{
-					"ENG_name": "Pestilence Demon",
-					"name": "瘟疫恶魔",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Pestilence Demon",
-							"name": "瘟疫恶魔",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSZ",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "021",
+							"entries": [
+								{
+									"ENG_name": "Oxen",
+									"name": "牛",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSZ",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Oxen",
+									"name": "牛",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSZ",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Pestilence Demon",
 							"name": "瘟疫恶魔",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSZ",
-							"style": "narrow"
-						}
-					],
-					"id": "022"
-				},
-				{
-					"ENG_name": "Shade",
-					"name": "幽影",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Shade",
-							"name": "幽影",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSZ",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "022",
+							"entries": [
+								{
+									"ENG_name": "Pestilence Demon",
+									"name": "瘟疫恶魔",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSZ",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Pestilence Demon",
+									"name": "瘟疫恶魔",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSZ",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Shade",
 							"name": "幽影",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSZ",
-							"style": "narrow"
-						}
-					],
-					"id": "023"
-				},
-				{
-					"ENG_name": "Shatterskull Giant",
-					"name": "碎颅巨人",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Shatterskull Giant",
-							"name": "碎颅巨人",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSZ",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "023",
+							"entries": [
+								{
+									"ENG_name": "Shade",
+									"name": "幽影",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSZ",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Shade",
+									"name": "幽影",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSZ",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Shatterskull Giant",
 							"name": "碎颅巨人",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSZ",
-							"style": "narrow"
-						}
-					],
-					"id": "024"
-				},
-				{
-					"ENG_name": "Shoal Serpent",
-					"name": "浅滩蛇",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Shoal Serpent",
-							"name": "浅滩蛇",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSZ",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "024",
+							"entries": [
+								{
+									"ENG_name": "Shatterskull Giant",
+									"name": "碎颅巨人",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSZ",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Shatterskull Giant",
+									"name": "碎颅巨人",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSZ",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Shoal Serpent",
 							"name": "浅滩蛇",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSZ",
-							"style": "narrow"
-						}
-					],
-					"id": "025"
-				},
-				{
-					"ENG_name": "Sphinx (Type 1)",
-					"name": "斯芬克斯（类型1）",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Sphinx (Type 1)",
-							"name": "斯芬克斯（类型1）",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSZ",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "025",
+							"entries": [
+								{
+									"ENG_name": "Shoal Serpent",
+									"name": "浅滩蛇",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSZ",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Shoal Serpent",
+									"name": "浅滩蛇",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSZ",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Sphinx (Type 1)",
 							"name": "斯芬克斯（类型1）",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSZ",
-							"style": "narrow"
-						}
-					],
-					"id": "026"
-				},
-				{
-					"ENG_name": "Sphinx (Type 2)",
-					"name": "斯芬克斯（类型2）",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Sphinx (Type 2)",
-							"name": "斯芬克斯（类型2）",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSZ",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "026",
+							"entries": [
+								{
+									"ENG_name": "Sphinx (Type 1)",
+									"name": "斯芬克斯（类型1）",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSZ",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Sphinx (Type 1)",
+									"name": "斯芬克斯（类型1）",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSZ",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Sphinx (Type 2)",
 							"name": "斯芬克斯（类型2）",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSZ",
-							"style": "narrow"
-						}
-					],
-					"id": "027"
-				},
-				{
-					"ENG_name": "Spirit",
-					"name": "精魄",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Spirit",
-							"name": "精魄",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSZ",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "027",
+							"entries": [
+								{
+									"ENG_name": "Sphinx (Type 2)",
+									"name": "斯芬克斯（类型2）",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSZ",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Sphinx (Type 2)",
+									"name": "斯芬克斯（类型2）",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSZ",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Spirit",
 							"name": "精魄",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSZ",
-							"style": "narrow"
-						}
-					],
-					"id": "028"
-				},
-				{
-					"ENG_name": "Surrakar",
-					"name": "苏拉卡",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Surrakar",
-							"name": "苏拉卡",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSZ",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "028",
+							"entries": [
+								{
+									"ENG_name": "Spirit",
+									"name": "精魄",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSZ",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Spirit",
+									"name": "精魄",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSZ",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Surrakar",
 							"name": "苏拉卡",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSZ",
-							"style": "narrow"
-						}
-					],
-					"id": "029"
-				},
-				{
-					"ENG_name": "Terastodon",
-					"name": "泰拉斯多顿",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Terastodon",
-							"name": "泰拉斯多顿",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSZ",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "029",
+							"entries": [
+								{
+									"ENG_name": "Surrakar",
+									"name": "苏拉卡",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSZ",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Surrakar",
+									"name": "苏拉卡",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSZ",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Terastodon",
 							"name": "泰拉斯多顿",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSZ",
-							"style": "narrow"
-						}
-					],
-					"id": "02a"
-				},
-				{
-					"ENG_name": "Terra Stomper",
-					"name": "大地践踏者",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Terra Stomper",
-							"name": "大地践踏者",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSZ",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "02a",
+							"entries": [
+								{
+									"ENG_name": "Terastodon",
+									"name": "泰拉斯多顿",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSZ",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Terastodon",
+									"name": "泰拉斯多顿",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSZ",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Terra Stomper",
 							"name": "大地践踏者",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSZ",
-							"style": "narrow"
-						}
-					],
-					"id": "02b"
-				},
-				{
-					"ENG_name": "Timbermaw",
-					"name": "森林之喉",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Timbermaw",
-							"name": "森林之喉",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSZ",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "02b",
+							"entries": [
+								{
+									"ENG_name": "Terra Stomper",
+									"name": "大地践踏者",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSZ",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Terra Stomper",
+									"name": "大地践踏者",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSZ",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Timbermaw",
 							"name": "森林之喉",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSZ",
-							"style": "narrow"
-						}
-					],
-					"id": "02c"
-				},
-				{
-					"ENG_name": "Trench Giant",
-					"name": "沟壑巨人",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Trench Giant",
-							"name": "沟壑巨人",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSZ",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "02c",
+							"entries": [
+								{
+									"ENG_name": "Timbermaw",
+									"name": "森林之喉",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSZ",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Timbermaw",
+									"name": "森林之喉",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSZ",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Trench Giant",
 							"name": "沟壑巨人",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSZ",
-							"style": "narrow"
-						}
-					],
-					"id": "02d"
-				},
-				{
-					"ENG_name": "Turntimber Giant",
-					"name": "转木巨人",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Turntimber Giant",
-							"name": "转木巨人",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSZ",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "02d",
+							"entries": [
+								{
+									"ENG_name": "Trench Giant",
+									"name": "沟壑巨人",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSZ",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Trench Giant",
+									"name": "沟壑巨人",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSZ",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Turntimber Giant",
 							"name": "转木巨人",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSZ",
-							"style": "narrow"
-						}
-					],
-					"id": "02e"
-				},
-				{
-					"ENG_name": "Ulamog",
-					"name": "乌尔阿莫格",
-					"type": "section",
-					"entries": [
+							"type": "section",
+							"id": "02e",
+							"entries": [
+								{
+									"ENG_name": "Turntimber Giant",
+									"name": "转木巨人",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSZ",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Turntimber Giant",
+									"name": "转木巨人",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSZ",
+									"style": "narrow"
+								}
+							]
+						},
 						{
 							"ENG_name": "Ulamog",
 							"name": "乌尔阿莫格",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSZ",
-							"style": "narrow"
-						}
-					],
-					"id": "02f"
-				},
-				{
-					"ENG_name": "Vampire Null",
-					"name": "吸血鬼转化躯壳",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Vampire Null",
-							"name": "吸血鬼转化躯壳",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSZ",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "02f",
+							"entries": [
+								{
+									"ENG_name": "Ulamog",
+									"name": "乌尔阿莫格",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSZ",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Vampire Null",
 							"name": "吸血鬼转化躯壳",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSZ",
-							"style": "narrow"
-						}
-					],
-					"id": "030"
-				},
-				{
-					"ENG_name": "Woodcrasher Baloth",
-					"name": "破坏森林的巴洛斯",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Woodcrasher Baloth",
-							"name": "破坏森林的巴洛斯",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSZ",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "030",
+							"entries": [
+								{
+									"ENG_name": "Vampire Null",
+									"name": "吸血鬼转化躯壳",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSZ",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Vampire Null",
+									"name": "吸血鬼转化躯壳",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSZ",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Woodcrasher Baloth",
 							"name": "破坏森林的巴洛斯",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSZ",
-							"style": "narrow"
-						}
-					],
-					"id": "031"
-				},
-				{
-					"ENG_name": "Wraith",
-					"name": "邪灵",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Wraith",
-							"name": "邪灵",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSZ",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "031",
+							"entries": [
+								{
+									"ENG_name": "Woodcrasher Baloth",
+									"name": "破坏森林的巴洛斯",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSZ",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Woodcrasher Baloth",
+									"name": "破坏森林的巴洛斯",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSZ",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Wraith",
 							"name": "邪灵",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSZ",
-							"style": "narrow"
-						}
-					],
-					"id": "032"
-				},
-				{
-					"ENG_name": "Wurm",
-					"name": "亚龙",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Wurm",
-							"name": "亚龙",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSZ",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "032",
+							"entries": [
+								{
+									"ENG_name": "Wraith",
+									"name": "邪灵",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSZ",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Wraith",
+									"name": "邪灵",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSZ",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Wurm",
 							"name": "亚龙",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSZ",
-							"style": "narrow"
-						}
-					],
-					"id": "033"
-				},
-				{
-					"ENG_name": "Zendikar Dragon",
-					"name": "赞迪卡龙",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Zendikar Dragon",
-							"name": "赞迪卡龙",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSZ",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "033",
+							"entries": [
+								{
+									"ENG_name": "Wurm",
+									"name": "亚龙",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSZ",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Wurm",
+									"name": "亚龙",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSZ",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Zendikar Dragon",
 							"name": "赞迪卡龙",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSZ",
-							"style": "narrow"
-						}
-					],
-					"id": "034"
-				},
-				{
-					"ENG_name": "Zendikar Golem",
-					"name": "赞迪卡魔像",
-					"type": "section",
-					"entries": [
-						{
-							"ENG_name": "Zendikar Golem",
-							"name": "赞迪卡魔像",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "PSZ",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
+							"type": "section",
+							"id": "034",
+							"entries": [
+								{
+									"ENG_name": "Zendikar Dragon",
+									"name": "赞迪卡龙",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSZ",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Zendikar Dragon",
+									"name": "赞迪卡龙",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSZ",
+									"style": "narrow"
 								}
-							}
+							]
 						},
 						{
 							"ENG_name": "Zendikar Golem",
 							"name": "赞迪卡魔像",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "PSZ",
-							"style": "narrow"
+							"type": "section",
+							"id": "035",
+							"entries": [
+								{
+									"ENG_name": "Zendikar Golem",
+									"name": "赞迪卡魔像",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "PSZ",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Zendikar Golem",
+									"name": "赞迪卡魔像",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "PSZ",
+									"style": "narrow"
+								}
+							]
 						}
-					],
-					"id": "035"
-				}
-			],
-			"id": "009"
-		},
-		{
-			"ENG_name": "Credits",
-			"name": "制作组",
-			"type": "entries",
-			"entries": [
+					]
+				},
 				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"items": [
-						"由James Wyatt撰写",
-						"封面艺术由Adam Paquette创作"
+					"ENG_name": "Credits",
+					"name": "制作组",
+					"type": "entries",
+					"id": "00a",
+					"entries": [
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								"由James Wyatt撰写",
+								"封面艺术由Adam Paquette创作"
+							]
+						}
 					]
 				}
-			],
-			"id": "00a"
+			]
 		}
 	]
 }

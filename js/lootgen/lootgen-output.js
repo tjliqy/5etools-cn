@@ -32,7 +32,7 @@ export class LootGenOutput {
 
 	_getEleTitleSplit () {
 		const btnRivet = !globalThis.IS_VTT && ExtensionUtil.ACTIVE
-			? veT`<button title="发送到Foundry (按住SHIFT以临时导入)" class="no-print ve-btn ve-btn-xs ve-btn-default"><span class="glyphicon glyphicon-send"></span></button>`
+			? veT`<button title="发送到Foundry (按住SHIFT以临时导入)" class="ve-print__hidden ve-btn ve-btn-xs ve-btn-default"><span class="glyphicon glyphicon-send"></span></button>`
 				.vee.onn("click", evt => this._pDoSendToFoundry({isTemp: !!evt.shiftKey}))
 			: null;
 

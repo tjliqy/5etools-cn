@@ -1,1980 +1,966 @@
 {
-	"data": [
+	"adventureData": [
 		{
-			"ENG_name": "Introduction",
-			"name": "简介",
-			"type": "section",
-			"page": 4,
-			"id": "000",
-			"entries": [
+			"id": "DrDe-BD",
+			"source": "DrDe-BD",
+			"data": [
 				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "adventure/DrDe/000-dragon-delves-cover.webp"
-					},
-					"width": 1701,
-					"height": 2242
-				},
-				{
-					"ENG_name": "Dragons in Dungeons",
-					"name": "地下城中的龙",
+					"ENG_name": "Introduction",
+					"name": "简介",
 					"type": "section",
+					"id": "000",
 					"page": 4,
-					"id": "001",
 					"entries": [
-						"没有什么比集结一群英雄在神秘地下城中对抗强大巨龙更能体现《龙与地下城》的精髓了。无论是50多年前首批踏入幽暗地城的冒险者，还是如今正准备开始第一次冒险的新手玩家，都将被这些经典元素跨越时空的联系在一起。",
-						"{@i 巨龙迷城}是对这一共同传统的颂扬。本书中的十个冒险故事均以盘踞巢穴的龙为核心，专为1至12级角色设计，提供多样挑战\u2014\u2014从击败邪恶之龙到与善良之龙合作，再到应对更复杂的道德困境。作为巨龙巢穴的地城类型丰富多样，既有洞穴群落，也有城市废墟及其他场景。",
-						"地城藏龙处，冒险永不息！"
-					]
-				},
-				{
-					"ENG_name": "Using This Book",
-					"name": "使用本书",
-					"type": "section",
-					"page": 4,
-					"id": "002",
-					"entries": [
-						"类似 {@i 巨龙迷城} 这样的冒险集，用途十分广泛，能满足你带团的各种需求：可作为单次冒险，也可作为长战役中的\"补充内容\"，或是形成系列战役，让角色从1级成长至12级的巅峰结局。",
-						"这些冒险提供了最少备团准备工作的说明（请参见本介绍后文的{@area 运行冒险|009|x}）。",
 						{
-							"ENG_name": "One-Shot Adventure",
-							"name": "单次冒险",
-							"type": "entries",
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "adventure/DrDe/000-dragon-delves-cover.webp"
+							},
+							"width": 1701,
+							"height": 2242
+						},
+						{
+							"ENG_name": "Dragons in Dungeons",
+							"name": "地下城中的龙",
+							"type": "section",
+							"id": "001",
 							"page": 4,
-							"id": "003",
 							"entries": [
-								"也许你是通常会以玩家的身份参与一场正在运行的战役，但你想尝试成为一个地下城主。也许你试图组建一个新的队伍，需要看看玩家们在你开始主持一个完整战役前是如何相处的。也许通常在某个时候带你们游玩的那个主持人生病了或者有了别的安排，但其他玩家都做好了跑团的准备。或者你的队伍可能需要在当前的战役中休息一下或者找个消遣。在提到的这些任何一种情况下，你都可以从本书中选择一个冒险并且运作它。"
+								"没有什么比集结一群英雄在神秘地下城中对抗强大巨龙更能体现《龙与地下城》的精髓了。无论是50多年前首批踏入幽暗地城的冒险者，还是如今正准备开始第一次冒险的新手玩家，都将被这些经典元素跨越时空的联系在一起。",
+								"{@i 巨龙迷城}是对这一共同传统的颂扬。本书中的十个冒险故事均以盘踞巢穴的龙为核心，专为1至12级角色设计，提供多样挑战\u2014\u2014从击败邪恶之龙到与善良之龙合作，再到应对更复杂的道德困境。作为巨龙巢穴的地城类型丰富多样，既有洞穴群落，也有城市废墟及其他场景。",
+								"地城藏龙处，冒险永不息！"
 							]
 						},
 						{
-							"ENG_name": "In an Ongoing Campaign",
-							"name": "在长期战役中",
-							"type": "entries",
+							"ENG_name": "Using This Book",
+							"name": "使用本书",
+							"type": "section",
+							"id": "002",
 							"page": 4,
-							"id": "004",
 							"entries": [
-								"也许你的玩家角色知道他们需要做什么来挫败邪恶 BOSS 的计划，但他们还不够强大，无法实现他们的目标。也许他们刚刚在战役中完成了一个重要的剧情节点，你想让在沉浸于下一幕无法预测的情节之前，让他们舒缓一下节奏。或者他们正在环游世界的旅程中，而你正在寻找一些东西让路途变得有趣\u2014\u2014用一场道中遭遇的简短冒险。或者你还没有为下一场冒险做好准备，所以你需要一条支线！在提到的这些任何一种情况下，你都可以从本书中选择一个冒险作为\"填充章节\"或者分支任务。",
+								"类似 {@i 巨龙迷城} 这样的冒险集，用途十分广泛，能满足你带团的各种需求：可作为单次冒险，也可作为长战役中的\"补充内容\"，或是形成系列战役，让角色从1级成长至12级的巅峰结局。",
+								"这些冒险提供了最少备团准备工作的说明（请参见本介绍后文的{@area 运行冒险|009|x}）。",
 								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "adventure/DrDe/001-00-001.intro-splash.webp"
-									},
-									"width": 850,
-									"height": 2286
+									"ENG_name": "One-Shot Adventure",
+									"name": "单次冒险",
+									"type": "entries",
+									"id": "003",
+									"page": 4,
+									"entries": [
+										"也许你是通常会以玩家的身份参与一场正在运行的战役，但你想尝试成为一个地下城主。也许你试图组建一个新的队伍，需要看看玩家们在你开始主持一个完整战役前是如何相处的。也许通常在某个时候带你们游玩的那个主持人生病了或者有了别的安排，但其他玩家都做好了跑团的准备。或者你的队伍可能需要在当前的战役中休息一下或者找个消遣。在提到的这些任何一种情况下，你都可以从本书中选择一个冒险并且运作它。"
+									]
 								},
-								"当角色的等级合适你想运作的冒险时，只需要描述冒险者们是如何在当前的探险地点结束他们的剧情。而本书的每个冒险开场都带有一个简短的场景描述，例如\"一个临近森林的村庄。\"除了这些基本细节以外，你还可以随意更改这场冒险发生的地理位置以适配你的战役。",
-								"但如果你有时间准备，可以将正在进行的冒险融入你战役的主题和威胁中。你可以修改冒险中人物和地点的名称，使其更契合你的世界；将冒险中的反派与你战役中重要的组织和事件联系起来；并在龙的宝藏中埋下与你战役主题相关的线索。"
+								{
+									"ENG_name": "In an Ongoing Campaign",
+									"name": "在长期战役中",
+									"type": "entries",
+									"id": "004",
+									"page": 4,
+									"entries": [
+										"也许你的玩家角色知道他们需要做什么来挫败邪恶 BOSS 的计划，但他们还不够强大，无法实现他们的目标。也许他们刚刚在战役中完成了一个重要的剧情节点，你想让在沉浸于下一幕无法预测的情节之前，让他们舒缓一下节奏。或者他们正在环游世界的旅程中，而你正在寻找一些东西让路途变得有趣\u2014\u2014用一场道中遭遇的简短冒险。或者你还没有为下一场冒险做好准备，所以你需要一条支线！在提到的这些任何一种情况下，你都可以从本书中选择一个冒险作为\"填充章节\"或者分支任务。",
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "adventure/DrDe/001-00-001.intro-splash.webp"
+											},
+											"width": 850,
+											"height": 2286
+										},
+										"当角色的等级合适你想运作的冒险时，只需要描述冒险者们是如何在当前的探险地点结束他们的剧情。而本书的每个冒险开场都带有一个简短的场景描述，例如\"一个临近森林的村庄。\"除了这些基本细节以外，你还可以随意更改这场冒险发生的地理位置以适配你的战役。",
+										"但如果你有时间准备，可以将正在进行的冒险融入你战役的主题和威胁中。你可以修改冒险中人物和地点的名称，使其更契合你的世界；将冒险中的反派与你战役中重要的组织和事件联系起来；并在龙的宝藏中埋下与你战役主题相关的线索。"
+									]
+								}
 							]
-						}
-					]
-				},
-				{
-					"ENG_name": "Creating a Campaign",
-					"name": "创作战役",
-					"type": "section",
-					"page": 4,
-					"id": "005",
-					"entries": [
-						"这些冒险可以串联成一个完整的以龙为主题的战役。只需引导玩家按书中顺序进行冒险，并在每段冒险结束时基于故事情节给予等级提升，确保他们的角色能应对接下来的挑战。(在最终冒险前无需等级提升。)你也可以使用下列叙事框架将这些冒险彼此联系起来。",
+						},
 						{
-							"ENG_name": "Option 1: Mysterious Patron",
-							"name": "选项1：神秘庇护者",
-							"type": "entries",
+							"ENG_name": "Creating a Campaign",
+							"name": "创作战役",
+							"type": "section",
+							"id": "005",
 							"page": 4,
-							"id": "006",
 							"entries": [
-								"让一位真实身份略显神秘的和善庇护者在新晋冒险者生涯早期就与之结交，并依次派他们去执行每次冒险任务。这位庇护者可能是一位富有魅力的年轻修士、一位和蔼的导师、一个顽皮的小家伙，或是一位糊涂的老者，或许身边还伴随着七只金丝雀或眩目的黄色蝴蝶\u2014\u2014它们实则是上古金龙所化，龙神巴哈姆特的同伴，而巴哈姆特正是庇护者的真实身份。",
-								"或许是预见到他们注定成为强大的英雄，巴哈姆特将这些冒险者置于他象征性的羽翼之下，派遣他们去应对世界各地与龙相关的各类事务，无论大小。当某次冒险最初看似与龙无关（例如\"{@adventure 奥喀斯之命|DrDe-TWoO|1}\"第3章）结果却与龙息息相关时，这位守护者可能会佯装惊讶，但这当然正是巴哈姆特派人物前去调查的原因。",
-								"你可直接按文本使用每个冒险，由角色的赞助者将他们引导至冒险引子的大致方向，且不剧透后续冒险中的任何惊喜。亦可选择让赞助者在早期就向角色透露秘密，告知他们龙将会是他们冒险的特别焦点，并沿途调整部分冒险引子。"
+								"这些冒险可以串联成一个完整的以龙为主题的战役。只需引导玩家按书中顺序进行冒险，并在每段冒险结束时基于故事情节给予等级提升，确保他们的角色能应对接下来的挑战。(在最终冒险前无需等级提升。)你也可以使用下列叙事框架将这些冒险彼此联系起来。",
+								{
+									"ENG_name": "Option 1: Mysterious Patron",
+									"name": "选项1：神秘庇护者",
+									"type": "entries",
+									"id": "006",
+									"page": 4,
+									"entries": [
+										"让一位真实身份略显神秘的和善庇护者在新晋冒险者生涯早期就与之结交，并依次派他们去执行每次冒险任务。这位庇护者可能是一位富有魅力的年轻修士、一位和蔼的导师、一个顽皮的小家伙，或是一位糊涂的老者，或许身边还伴随着七只金丝雀或眩目的黄色蝴蝶\u2014\u2014它们实则是上古金龙所化，龙神巴哈姆特的同伴，而巴哈姆特正是庇护者的真实身份。",
+										"或许是预见到他们注定成为强大的英雄，巴哈姆特将这些冒险者置于他象征性的羽翼之下，派遣他们去应对世界各地与龙相关的各类事务，无论大小。当某次冒险最初看似与龙无关（例如\"{@adventure 奥喀斯之命|DrDe-TWoO|1}\"第3章）结果却与龙息息相关时，这位守护者可能会佯装惊讶，但这当然正是巴哈姆特派人物前去调查的原因。",
+										"你可直接按文本使用每个冒险，由角色的赞助者将他们引导至冒险引子的大致方向，且不剧透后续冒险中的任何惊喜。亦可选择让赞助者在早期就向角色透露秘密，告知他们龙将会是他们冒险的特别焦点，并沿途调整部分冒险引子。"
+									]
+								},
+								{
+									"ENG_name": "Option 2: Brazen Egg",
+									"name": "选项2：赤铜之卵",
+									"type": "entries",
+									"id": "007",
+									"page": 5,
+									"entries": [
+										"从第10章的引言遭遇战\"{@adventure 砂岩城之龙|DrDe-DotSC|1}\"开始战役，以艾德米尔将黄铜之卵托付给角色们作为结束。不过艾德米尔的指示有所不同：她解释说这颗卵必须被\"浸泡\"在十条龙的财宝中（每种色彩龙和金属龙各一条）才能激活其力量。她还暗示这颗卵会引导角色们找到合适的龙巢。事实上，任何在卵15英尺范围内入睡的角色都会做生动的梦，引领他们前往下一个冒险的起点。",
+										"要从龙之宝藏中汲取力量，龙蛋必须在宝藏中待上8小时，被硬币覆盖并被其他物品环绕。然而，一旦被赋能的龙蛋被带入安斯拉德斯的藏宝室（{@adventure 区域H16|DrDe-DotSC|1|H16: 宝藏}，参见第10章），它将达到其全部潜力并开始裂开，如该冒险所述。"
+									]
+								},
+								{
+									"ENG_name": "Option 3: Hoard Magic Items",
+									"name": "选项3：囤积魔法物品",
+									"type": "entries",
+									"id": "008",
+									"page": 5,
+									"entries": [
+										"若你拥有{@book 费资本的巨龙宝库|FTD|4}，书中描述的魔法物品收藏可作为驱使角色寻找更强大、更多样龙类的动力。在前三个冒险中获得下列额外物品奖励：在「{@adventure 日落时分的死神|DrDe-DaS|1}」中获得{@item 覆鳞饰物|FTD}，在「{@area 面包师的捉襟见肘|063|x}」中获得{@item 龙器|FTD}，在「{@adventure 奥喀斯之命|DrDe-TWoO|1}」中获得{@item 龙怒武器|FTD}与{@item 龙触法器|FTD}。所有物品在初次获取时为休眠状态，但在后续冒险中可通过浸入龙类宝藏唤醒。"
+									]
+								}
 							]
 						},
 						{
-							"ENG_name": "Option 2: Brazen Egg",
-							"name": "选项2：赤铜之卵",
-							"type": "entries",
-							"page": 5,
-							"id": "007",
+							"ENG_name": "Running the Adventures",
+							"name": "运行冒险",
+							"type": "section",
+							"id": "009",
+							"page": 6,
 							"entries": [
-								"从第10章的引言遭遇战\"{@adventure 砂岩城之龙|DrDe-DotSC|1}\"开始战役，以艾德米尔将黄铜之卵托付给角色们作为结束。不过艾德米尔的指示有所不同：她解释说这颗卵必须被\"浸泡\"在十条龙的财宝中（每种色彩龙和金属龙各一条）才能激活其力量。她还暗示这颗卵会引导角色们找到合适的龙巢。事实上，任何在卵15英尺范围内入睡的角色都会做生动的梦，引领他们前往下一个冒险的起点。",
-								"要从龙之宝藏中汲取力量，龙蛋必须在宝藏中待上8小时，被硬币覆盖并被其他物品环绕。然而，一旦被赋能的龙蛋被带入安斯拉德斯的藏宝室（{@adventure 区域H16|DrDe-DotSC|1|H16: 宝藏}，参见第10章），它将达到其全部潜力并开始裂开，如该冒险所述。"
+								"要运行这些冒险模组，你需要第五版的核心规则书：{@book 玩家手册|XPHB}、{@book 城主指南|XDMG}和{@book 怪物图鉴|XMM}。冒险中提到的法术和装备描述参见{@book 玩家手册|XPHB}，魔法物品详情参阅{@book 城主指南|XDMG}，怪物数据则出现在{@book 怪物图鉴|XMM}。",
+								"本书目录总结了该合集所收录的冒险。每个冒险针对四至六名特定等级的角色设计，但如{@book 城主指南|XDMG}所述，你可以通过调整遭遇中敌人的数量或为小型队伍补充额外资源来适配更大或更小的团队。这些冒险均可发生于你选择的任何世界，只要该地点拥有各冒险开头列出的基本要素即可。",
+								{
+									"ENG_name": "Preparation",
+									"name": "预备",
+									"type": "entries",
+									"id": "00a",
+									"page": 6,
+									"entries": [
+										"本书中的每个冒险都以一个帮助您准备和进行冒险的页面开始。它包括以下要素：",
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"ENG_name": "Key Plot Points",
+													"name": "关键剧情节点",
+													"type": "item",
+													"entry": "冒险故事中关键要素的概要"
+												},
+												{
+													"ENG_name": "Preparation",
+													"name": "预备",
+													"type": "item",
+													"entry": "为开展冒险做准备所需的步骤，包括你可能需要的所有来自{@book 怪物图鉴|XMM}的怪物数据块列表"
+												},
+												{
+													"ENG_name": "Key NPCs",
+													"name": "关键NPCs",
+													"type": "item",
+													"entry": "一张总结了冒险中关键非玩家角色的表格\u2014\u2014包括他们的名字、角色、状态块和位置\u2014\u2014帮助你在游戏过程中追踪他们"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Player Assistance",
+									"name": "玩家助手",
+									"type": "entries",
+									"id": "00b",
+									"page": 6,
+									"entries": [
+										"如{@book 城主指南|XDMG}所述，您可以通过将某些任务委派给其他玩家来简化您作为地下城主（DM）的职责\u2014\u2014特别是当您第一次担任DM时尤为实用。游戏开始前，请与其他玩家共同分配以下任何或全部任务：",
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"ENG_name": "Initiative Tracker",
+													"name": "先攻追踪者",
+													"type": "item",
+													"entry": "在战斗中，一名玩家负责记录角色与怪物的先攻顺序。"
+												},
+												{
+													"ENG_name": "Monster Wranglers",
+													"name": "怪物操手",
+													"type": "item",
+													"entry": "当角色与敌对怪物进入战斗时，由一到两名玩家使用{@book 怪物图鉴|XMM}中的这些数据卡来操控怪物。（两名玩家可共同承担此职责。）"
+												},
+												{
+													"ENG_name": "Rules Consultant",
+													"name": "规则顾问",
+													"type": "item",
+													"entry": "一名玩家根据需要查阅{@book 玩家手册|XPHB}或其他书籍中的规则。"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Adventures for One Character",
+									"name": "单人角色冒险",
+									"type": "entries",
+									"id": "00c",
+									"page": 6,
+									"entries": [
+										"尽管{@book 城主指南|XDMG}解释了如何根据队伍规模调整冒险，但其中三个冒险（在目录中标示）特别适合单人冒险者游玩。这些冒险都包含确保角色面临适当挑战的指示说明。",
+										"这些说明的核心是{@reward 孤勇者祝福|DrDe}，一种增强单人角色属性的超自然赠礼。",
+										{
+											"ENG_name": "Blessing of the Lone Champion",
+											"name": "孤勇者祝福",
+											"type": "statblock",
+											"tag": "reward",
+											"source": "DrDe",
+											"page": 6
+										},
+										"祝福的持续时间为本次冒险的时长。"
+									]
+								},
+								{
+									"ENG_name": "A Draconic History",
+									"name": "龙族历史",
+									"type": "inset",
+									"id": "00e",
+									"page": 6,
+									"entries": [
+										"除了十个冒险故事外，本书还包含特别章节，展示了每种龙类的艺术画作，涵盖了《龙与地下城》近50年历史\u2014\u2014从1977年的《怪物手册》直至2025年发行的最新版本。过去五十年间，所有十种龙类的形象都经历了显著演变，但仔细观察这些画作仍能发现传承元素：从蓝龙的鼻角到银龙的冠冕，皆一脉相承。",
+										"艺术家托德·洛克伍德为2000年《龙与地下城》第三版的发布牵头对十种龙类进行了全面修订，其设计基于现实世界动物的解剖结构，并与早期设计保持了某些延续性。除少量变体外，这些设计为D&D的龙类确立了延续二十余年的标准。",
+										"为迎接2025年《{@book 怪物图鉴|XMM}》的发行，艺术指导乔什·赫尔曼在D&D进入第二个半世纪之际，主导了对所有巨龙形象的全面翻新。本次重新设计旨在通过外观突显每条巨龙的独特身份\u2014\u2014包括个性、偏好栖息地和战斗风格\u2014\u2014确保每种龙类的视觉辨识度得以彰显。",
+										"同样地，本书着重展示了以某一类巨龙为主题的冒险会如何与其他冒险体验截然不同。"
+									]
+								}
 							]
 						},
 						{
-							"ENG_name": "Option 3: Hoard Magic Items",
-							"name": "选项3：囤积魔法物品",
-							"type": "entries",
-							"page": 5,
-							"id": "008",
+							"ENG_name": "Adventures",
+							"name": "冒险",
+							"type": "section",
+							"id": "00d",
 							"entries": [
-								"若你拥有{@book 费资本的巨龙宝库|FTD|4}，书中描述的魔法物品收藏可作为驱使角色寻找更强大、更多样龙类的动力。在前三个冒险中获得下列额外物品奖励：在「{@adventure 日落时分的死神|DrDe-DaS|1}」中获得{@item 覆鳞饰物|FTD}，在「{@area 面包师的捉襟见肘|063|x}」中获得{@item 龙器|FTD}，在「{@adventure 奥喀斯之命|DrDe-TWoO|1}」中获得{@item 龙怒武器|FTD}与{@item 龙触法器|FTD}。所有物品在初次获取时为休眠状态，但在后续冒险中可通过浸入龙类宝藏唤醒。"
+								{
+									"type": "list",
+									"columns": 3,
+									"items": [
+										"{@adventure 日落时分的死神（1级）|DrDe-DaS|1}",
+										"{@area 面包师的捉襟见肘（3级）|063|x}",
+										"{@adventure 奥喀斯之命（4级）|DrDe-TWoO|1}",
+										"{@adventure 虚空唤谁而鸣（5级）|DrDe-FWtVC|1}",
+										"{@adventure 纳基凯尔之龙（7级）|DrDe-TDoN|1}",
+										"{@adventure 禁忌谷（9级）|DrDe-TFV|1}",
+										"{@adventure 风暴将临（10级）|DrDe-BtS|1}",
+										"{@adventure 夺命颤寒（11级）|DrDe-SD|1}",
+										"{@adventure 一枚铜币换一首歌（12级）|DrDe-ACfaS|1}",
+										"{@adventure 砂岩城之龙（12级）|DrDe-DotSC|1}"
+									]
+								}
 							]
 						}
 					]
 				},
 				{
-					"ENG_name": "Running the Adventures",
-					"name": "运行冒险",
+					"ENG_name": "Baker's Doesn't",
+					"name": "面包师的捉襟见肘",
 					"type": "section",
-					"page": 6,
-					"id": "009",
+					"id": "063",
+					"page": 29,
 					"entries": [
-						"要运行这些冒险模组，你需要第五版的核心规则书：{@book 玩家手册|XPHB}、{@book 城主指南|XDMG}和{@book 怪物图鉴|XMM}。冒险中提到的法术和装备描述参见{@book 玩家手册|XPHB}，魔法物品详情参阅{@book 城主指南|XDMG}，怪物数据则出现在{@book 怪物图鉴|XMM}。",
-						"本书目录总结了该合集所收录的冒险。每个冒险针对四至六名特定等级的角色设计，但如{@book 城主指南|XDMG}所述，你可以通过调整遭遇中敌人的数量或为小型队伍补充额外资源来适配更大或更小的团队。这些冒险均可发生于你选择的任何世界，只要该地点拥有各冒险开头列出的基本要素即可。",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								"{@i {@b An adventure for Level 3 characters.}}",
+								"{@i 该冒险的长度为一至两次团。}",
+								"{@i 它可以发生在任何邻近森林的村庄中。}"
+							]
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "adventure/DrDe/022-02-001.chapter-two-splash.webp"
+							},
+							"width": 1700,
+							"height": 2258,
+							"credit": "Andrew Kolb"
+						},
+						{
+							"ENG_name": "Key Plot Points",
+							"name": "关键剧情节点",
+							"type": "section",
+							"id": "064",
+							"page": 29,
+							"entries": [
+								"以下信息对冒险故事至关重要：",
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"ENG_name": "Confectionery Conflagration",
+											"name": "糖果烈焰",
+											"type": "item",
+											"entry": "冒险者们帮助一位名叫伊迪丝·阿普尔加斯的半身人糖果师，她的店铺被一条金龙意外点燃。现场线索表明可能与当地面包师菲尔·弗洛尔福吉有关，而目击者看到幼龙逃进了森林。角色们可以审讯菲尔或深入森林。"
+										},
+										{
+											"ENG_name": "Fill's Bakery",
+											"name": "菲尔面包店",
+											"type": "item",
+											"entry": "造访菲尔面包店的NPC们了解到，他一直在秘密抚养这条名为布里欧修巴恩的顽皮幼龙。那天早上，小龙原本想去糖果店吓唬伊迪丝，却不慎引发了火灾，随后逃进了森林。菲尔目前不知道布里欧修巴恩的下落。"
+										},
+										{
+											"ENG_name": "The Candy Cottage",
+											"name": "糖果小屋",
+											"type": "item",
+											"entry": "在森林中寻找布里欧修贝恩将角色们引向一间糖果小屋，一个名为{@area 尼布切克叔叔|06a|x}的鬼婆抓住了幼龙。在与鬼婆对峙时，角色们发现多年前伊迪丝曾与鬼婆立下契约，用她的弟弟换取终身享用不尽的糖果。"
+										}
+									]
+								}
+							]
+						},
 						{
 							"ENG_name": "Preparation",
 							"name": "预备",
-							"type": "entries",
-							"page": 6,
-							"id": "00a",
-							"entries": [
-								"本书中的每个冒险都以一个帮助您准备和进行冒险的页面开始。它包括以下要素：",
-								{
-									"type": "list",
-									"style": "list-hang-notitle",
-									"items": [
-										{
-											"ENG_name": "Key Plot Points",
-											"name": "关键剧情节点",
-											"type": "item",
-											"entry": "冒险故事中关键要素的概要"
-										},
-										{
-											"ENG_name": "Preparation",
-											"name": "预备",
-											"type": "item",
-											"entry": "为开展冒险做准备所需的步骤，包括你可能需要的所有来自{@book 怪物图鉴|XMM}的怪物数据块列表"
-										},
-										{
-											"ENG_name": "Key NPCs",
-											"name": "关键NPCs",
-											"type": "item",
-											"entry": "一张总结了冒险中关键非玩家角色的表格\u2014\u2014包括他们的名字、角色、状态块和位置\u2014\u2014帮助你在游戏过程中追踪他们"
-										}
-									]
-								}
-							]
-						},
-						{
-							"ENG_name": "Player Assistance",
-							"name": "玩家助手",
-							"type": "entries",
-							"page": 6,
-							"id": "00b",
-							"entries": [
-								"如{@book 城主指南|XDMG}所述，您可以通过将某些任务委派给其他玩家来简化您作为地下城主（DM）的职责\u2014\u2014特别是当您第一次担任DM时尤为实用。游戏开始前，请与其他玩家共同分配以下任何或全部任务：",
-								{
-									"type": "list",
-									"style": "list-hang-notitle",
-									"items": [
-										{
-											"ENG_name": "Initiative Tracker",
-											"name": "先攻追踪者",
-											"type": "item",
-											"entry": "在战斗中，一名玩家负责记录角色与怪物的先攻顺序。"
-										},
-										{
-											"ENG_name": "Monster Wranglers",
-											"name": "怪物操手",
-											"type": "item",
-											"entry": "当角色与敌对怪物进入战斗时，由一到两名玩家使用{@book 怪物图鉴|XMM}中的这些数据卡来操控怪物。（两名玩家可共同承担此职责。）"
-										},
-										{
-											"ENG_name": "Rules Consultant",
-											"name": "规则顾问",
-											"type": "item",
-											"entry": "一名玩家根据需要查阅{@book 玩家手册|XPHB}或其他书籍中的规则。"
-										}
-									]
-								}
-							]
-						},
-						{
-							"ENG_name": "Adventures for One Character",
-							"name": "单人角色冒险",
-							"type": "entries",
-							"page": 6,
-							"id": "00c",
-							"entries": [
-								"尽管{@book 城主指南|XDMG}解释了如何根据队伍规模调整冒险，但其中三个冒险（在目录中标示）特别适合单人冒险者游玩。这些冒险都包含确保角色面临适当挑战的指示说明。",
-								"这些说明的核心是{@reward 孤勇者祝福|DrDe}，一种增强单人角色属性的超自然赠礼。",
-								{
-									"ENG_name": "Blessing of the Lone Champion",
-									"name": "孤勇者祝福",
-									"type": "statblock",
-									"page": 6,
-									"source": "DrDe",
-									"tag": "reward"
-								},
-								"祝福的持续时间为本次冒险的时长。"
-							]
-						},
-						{
-							"ENG_name": "A Draconic History",
-							"name": "龙族历史",
-							"type": "inset",
-							"page": 6,
-							"id": "00e",
-							"entries": [
-								"除了十个冒险故事外，本书还包含特别章节，展示了每种龙类的艺术画作，涵盖了《龙与地下城》近50年历史\u2014\u2014从1977年的《怪物手册》直至2025年发行的最新版本。过去五十年间，所有十种龙类的形象都经历了显著演变，但仔细观察这些画作仍能发现传承元素：从蓝龙的鼻角到银龙的冠冕，皆一脉相承。",
-								"艺术家托德·洛克伍德为2000年《龙与地下城》第三版的发布牵头对十种龙类进行了全面修订，其设计基于现实世界动物的解剖结构，并与早期设计保持了某些延续性。除少量变体外，这些设计为D&D的龙类确立了延续二十余年的标准。",
-								"为迎接2025年《{@book 怪物图鉴|XMM}》的发行，艺术指导乔什·赫尔曼在D&D进入第二个半世纪之际，主导了对所有巨龙形象的全面翻新。本次重新设计旨在通过外观突显每条巨龙的独特身份\u2014\u2014包括个性、偏好栖息地和战斗风格\u2014\u2014确保每种龙类的视觉辨识度得以彰显。",
-								"同样地，本书着重展示了以某一类巨龙为主题的冒险会如何与其他冒险体验截然不同。"
-							]
-						}
-					]
-				},
-				{
-					"ENG_name": "Adventures",
-					"name": "冒险",
-					"type": "section",
-					"entries": [
-						{
-							"type": "list",
-							"columns": 3,
-							"items": [
-								"{@adventure 日落时分的死神（1级）|DrDe-DaS|1}",
-								"{@area 面包师的捉襟见肘（3级）|063|x}",
-								"{@adventure 奥喀斯之命（4级）|DrDe-TWoO|1}",
-								"{@adventure 虚空唤谁而鸣（5级）|DrDe-FWtVC|1}",
-								"{@adventure 纳基凯尔之龙（7级）|DrDe-TDoN|1}",
-								"{@adventure 禁忌谷（9级）|DrDe-TFV|1}",
-								"{@adventure 风暴将临（10级）|DrDe-BtS|1}",
-								"{@adventure 夺命颤寒（11级）|DrDe-SD|1}",
-								"{@adventure 一枚铜币换一首歌（12级）|DrDe-ACfaS|1}",
-								"{@adventure 砂岩城之龙（12级）|DrDe-DotSC|1}"
-							]
-						}
-					],
-					"id": "00d"
-				}
-			]
-		},
-		{
-			"ENG_name": "Baker's Doesn't",
-			"name": "面包师的捉襟见肘",
-			"type": "section",
-			"page": 29,
-			"id": "063",
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"items": [
-						"{@i {@b An adventure for Level 3 characters.}}",
-						"{@i 该冒险的长度为一至两次团。}",
-						"{@i 它可以发生在任何邻近森林的村庄中。}"
-					]
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "adventure/DrDe/022-02-001.chapter-two-splash.webp"
-					},
-					"credit": "Andrew Kolb",
-					"width": 1700,
-					"height": 2258
-				},
-				{
-					"ENG_name": "Key Plot Points",
-					"name": "关键剧情节点",
-					"type": "section",
-					"page": 29,
-					"id": "064",
-					"entries": [
-						"以下信息对冒险故事至关重要：",
-						{
-							"type": "list",
-							"style": "list-hang-notitle",
-							"items": [
-								{
-									"ENG_name": "Confectionery Conflagration",
-									"name": "糖果烈焰",
-									"type": "item",
-									"entry": "冒险者们帮助一位名叫伊迪丝·阿普尔加斯的半身人糖果师，她的店铺被一条金龙意外点燃。现场线索表明可能与当地面包师菲尔·弗洛尔福吉有关，而目击者看到幼龙逃进了森林。角色们可以审讯菲尔或深入森林。"
-								},
-								{
-									"ENG_name": "Fill's Bakery",
-									"name": "菲尔面包店",
-									"type": "item",
-									"entry": "造访菲尔面包店的NPC们了解到，他一直在秘密抚养这条名为布里欧修巴恩的顽皮幼龙。那天早上，小龙原本想去糖果店吓唬伊迪丝，却不慎引发了火灾，随后逃进了森林。菲尔目前不知道布里欧修巴恩的下落。"
-								},
-								{
-									"ENG_name": "The Candy Cottage",
-									"name": "糖果小屋",
-									"type": "item",
-									"entry": "在森林中寻找布里欧修贝恩将角色们引向一间糖果小屋，一个名为{@area 尼布切克叔叔|06a|x}的鬼婆抓住了幼龙。在与鬼婆对峙时，角色们发现多年前伊迪丝曾与鬼婆立下契约，用她的弟弟换取终身享用不尽的糖果。"
-								}
-							]
-						}
-					]
-				},
-				{
-					"ENG_name": "Preparation",
-					"name": "预备",
-					"type": "section",
-					"page": 29,
-					"id": "065",
-					"entries": [
-						"在开始冒险之前，请按照以下步骤进行准备：",
-						{
-							"type": "list",
-							"style": "list-hang-notitle",
-							"items": [
-								{
-									"ENG_name": "Step 1",
-									"name": "第一步",
-									"type": "item",
-									"entry": "如果你是为单一角色主持此游戏，请阅读\"{@area 单一角色跑团|066|x}\"章节。"
-								},
-								{
-									"ENG_name": "Step 2",
-									"name": "第二步",
-									"type": "item",
-									"entry": "阅读\"{@area 冒险背景|067|x}\""
-								},
-								{
-									"ENG_name": "Step 3",
-									"name": "第三步",
-									"type": "item",
-									"entry": "熟读下文关键NPC表中的内容。角色们将会在冒险中与这些人物互动。"
-								},
-								{
-									"ENG_name": "Step 4",
-									"name": "第四步",
-									"type": "item",
-									"entry": "在《{@book 怪物图鉴|XMM}》或D&DBeyond中标记以下的数据卡。"
-								}
-							]
-						},
-						{
-							"type": "list",
-							"columns": 3,
-							"items": [
-								"{@creature 活化闷人毯|XMM}",
-								"{@creature 匪徒|XMM}",
-								"{@creature 熊地精武者|XMM}",
-								"{@creature 蛇鸡|XMM}",
-								"{@creature 平民|XMM}",
-								"{@creature 树精|XMM}",
-								"{@creature 地精武者|XMM}",
-								"{@creature 金龙雏龙|XMM}",
-								"{@creature 绿鬼婆|XMM}",
-								"{@creature 冰魔蝠|XMM|冰魔蝠}",
-								"{@creature 木乃伊|XMM}",
-								"{@creature 食人魔|XMM}",
-								"{@creature 打手|XMM}"
-							]
-						},
-						{
-							"ENG_name": "Animated Rug of Smothering",
-							"name": "活化闷人毯",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Animated Rug of Smothering",
-							"name": "活化闷人毯",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Bandit",
-							"name": "匪徒",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Bandit",
-							"name": "匪徒",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Bugbear Warrior",
-							"name": "熊地精武者",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Bugbear Warrior",
-							"name": "熊地精武者",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Cockatrice",
-							"name": "蛇鸡",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Cockatrice",
-							"name": "蛇鸡",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Commoner",
-							"name": "平民",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Commoner",
-							"name": "平民",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Dryad",
-							"name": "树精",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Dryad",
-							"name": "树精",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Goblin Warrior",
-							"name": "地精武者",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Goblin Warrior",
-							"name": "地精武者",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Gold Dragon Wyrmling",
-							"name": "金龙雏龙",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Gold Dragon Wyrmling",
-							"name": "金龙雏龙",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Green Hag",
-							"name": "绿鬼婆",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Green Hag",
-							"name": "绿鬼婆",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Ice Mephit",
-							"name": "冰魔蝠",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Ice Mephit",
-							"name": "冰魔蝠",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Mummy",
-							"name": "木乃伊",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Mummy",
-							"name": "木乃伊",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Ogre",
-							"name": "食人魔",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Ogre",
-							"name": "食人魔",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						},
-						{
-							"ENG_name": "Tough",
-							"name": "打手",
-							"type": "statblock",
-							"prop": "monsterFluff",
-							"source": "XMM",
-							"data": {
-								"renderCompact": {
-									"isSkipRootName": true
-								}
-							}
-						},
-						{
-							"ENG_name": "Tough",
-							"name": "打手",
-							"type": "statblock",
-							"tag": "creature",
-							"source": "XMM",
-							"style": "narrow"
-						}
-					]
-				},
-				{
-					"ENG_name": "Running for One Character",
-					"name": "单一角色跑团",
-					"type": "section",
-					"page": 29,
-					"id": "066",
-					"entries": [
-						"你可以为一名3级角色进行这个冒险。理想情况下，该角色应当至少精通以下技能中的两项：",
-						{
-							"type": "list",
-							"columns": 3,
-							"items": [
-								"{@skill 运动|XPHB}",
-								"{@skill 欺瞒|XPHB}",
-								"{@skill 历史|XPHB}",
-								"{@skill 洞悉|XPHB}",
-								"{@skill 察觉|XPHB}",
-								"{@skill 游说|XPHB}",
-								"{@skill 巧手|XPHB}",
-								"{@skill 隐匿|XPHB}"
-							]
-						},
-						"独行角色获得{@reward 孤勇者祝福|DrDe}（见简介）以弥补缺少同伴的不足。",
-						{
-							"type": "table",
-							"caption": "关键NPCs",
+							"type": "section",
+							"id": "065",
 							"page": 29,
-							"colLabels": [
-								"名称",
-								"职能",
-								"数据卡",
-								"位置"
-							],
-							"colStyles": [
-								"col-3-5",
-								"col-3-5",
-								"col-2-5",
-								"col-2-5"
-							],
-							"rows": [
-								[
-									"阿斯杰·阿普尔加斯",
-									"迷途的半身人流浪者",
-									"{@creature 平民|XMM} (小型)",
-									"{@area C15|0be|x}"
-								],
-								[
-									"布里欧修班",
-									"被{@area 尼布切克叔叔|06a|x}施加{@condition 魅惑|XPHB}的龙",
-									"{@creature 金龙雏龙|XMM}",
-									"{@area C10|0a7|x}"
-								],
-								[
-									"巴霸·乌加",
-									"活化玩偶",
-									"{@creature 食人魔|XMM}（经过调整）",
-									"{@area C9|0a5|x}"
-								],
-								[
-									"{@area 伊迪丝·阿普尔加斯|068|x}",
-									"狡猾邪恶的半身人甜点师",
-									"{@creature 平民|XMM} (小型生物，中立邪恶)",
-									"\"{@area 营救伊迪丝|06f|x}\""
-								],
-								[
-									"{@area 菲尔·弗洛弗格|069|x}",
-									"矮人面包师与退役强盗",
-									"{@creature 匪徒|XMM} (中型)",
-									"\"{@area 到达面包店|07a|x}\""
-								],
-								[
-									"{@area 尼布切克叔叔|06a|x}",
-									"嗜甜如命的邪恶巫婆",
-									"{@creature 绿鬼婆|XMM}",
-									"{@area C10|0a7|x}"
-								]
-							]
-						}
-					]
-				},
-				{
-					"ENG_name": "Adventure Background",
-					"name": "冒险背景",
-					"type": "section",
-					"page": 30,
-					"id": "067",
-					"entries": [
-						"位于一条繁忙路线上的一处小而舒适的歇脚点，哈伯顿村居住着一群友善的民众，他们喜爱由{@area 菲尔·弗洛弗格|069|x}制作的面包与糕点。",
-						"这些镇民们所不知道的是，菲尔用龙焰来烘焙他的商品。当菲尔抚养的那只不守规矩的金龙雏龙失踪的同一天，哈伯顿镇最新开业的甜品店突然起火，角色们便卷入了一个童话般的阴谋，最终将他们引向一位口味可憎的老妖婆的小屋。",
-						"三位与金龙幼龙相遇的糖果师傅被巧妙融入本次冒险的剧情中。",
-						{
-							"ENG_name": "Edith Applegarth",
-							"name": "伊迪丝·阿普尔加斯",
-							"type": "entries",
-							"page": 30,
-							"id": "068",
 							"entries": [
-								"当她还是一个小女孩时，伊迪丝和她的弟弟阿斯杰在森林里迷了路。远离家园的他们发现了一条五彩糖果铺成的小径，顺着它来到了林间的一座小屋。殊不知，这里是{@area 尼布切克叔叔|06a|x}的家，一个喜欢吞噬访客的邪恶男巫婆。尼布尔叔叔以和蔼祖父的形象出现在伊迪丝和阿斯杰面前，邀请孩子们进屋。",
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "adventure/DrDe/023-02-002.edith-applegarth-npc.webp"
-									},
-									"credit": "Andrew Kolb",
-									"width": 850,
-									"height": 1021
-								},
-								"伊迪丝渐渐看穿了啃叔的把戏，拒绝成为夜婆的美食。聪明又自私的伊迪丝与夜婆达成协议，用弟弟换取了享用不尽的糖果。夜婆被伊迪丝的机智与冷酷打动，接受了交易，于是伊迪丝独自离开了小屋。",
-								"艾迪丝再也没有踏入那座小屋一步，也不知道她离开后弟弟遭遇了什么。实际上，尼布尔契克叔叔将阿斯杰变成了糖果生物，并强迫他在厨房里当帮工。",
-								"多年来，伊迪丝利用她与尼布尔奇克叔叔的契约建立起蓬勃发展的生意。在他们相遇数十年后，她仍然从巫婆那里收集糖果，并在全国各地的糖果店中出售。",
-								"为了换取糖果店里稳定的糖果供应，伊迪丝会将顾客视为巫婆的潜在受害者。她会派一些容易被骗或讨厌的人去巫婆的小屋跑腿，并谎称那是她姐姐的房子。为了避免引起怀疑，伊迪丝每隔几年就会把店搬到一个新城镇。"
-							]
-						},
-						{
-							"ENG_name": "Fill Flourforge",
-							"name": "菲尔·弗洛弗格",
-							"type": "entries",
-							"page": 30,
-							"id": "069",
-							"entries": [
-								"菲尔·弗劳弗吉，一名退休的矮人强盗，酷爱烘焙。当一条金龙将他的盗贼团其他成员烧成焦炭（因他们拙劣地试图盗窃龙之财宝）后，菲尔的犯罪生涯就此终结。尽管菲尔是唯一的生还者，但这次任务并非完全失败。这个矮人带着性命、一小笔财富和一件无价之宝逃离了巢穴：一颗金龙蛋。",
-								"菲尔没有继续他的匪徒生涯，而是用这次抢劫的赃物开了一家面包店。不久后，蛋在他的烤箱旁孵化。菲尔给出生的小龙取名为布里欧修贝恩，并将她抚养为自己的养女。面包店刚开业时，菲尔的甜点反响褒贬不一，但在新助手布里欧修贝恩的帮助下，他的糕点赢得了当地的声誉。特别是他的肉桂卷，用龙焰烤得恰到好处。",
-								"菲尔对布里欧什贝恩的存在守口如瓶。他担心其他人会惧怕这条龙，或者更糟，试图设陷阱捕捉或杀死她。"
-							]
-						},
-						{
-							"ENG_name": "Uncle Nibblecheek",
-							"name": "尼布切克叔叔",
-							"type": "entries",
-							"page": 30,
-							"id": "06a",
-							"entries": [
-								"在哈伯尔顿镇外的树林中，坐落着尼布尔契克姑姑的小屋，这位绿鬼婆有着邪恶的甜食癖好。一条糖果小径蜿蜒穿过盘根错节的森林，通向这间甜腻的小屋，引诱那些轻信他人且饥肠辘辘、偏离寻常道路的旅人来到鬼婆门前。来访者永远受到'欢迎'。",
-								"一旦客人进入，尼布尔奇克叔叔会以各种新鲜烘焙的美食款待他们，将他们养胖并用糖分诱导的昏迷使他们昏昏欲睡。随后，在一群糖果生物的协助和一系列魔法甜品设备的帮助下，尼布尔奇克叔叔将受害者们转变为甜点并大快朵颐。"
-							]
-						}
-					]
-				},
-				{
-					"ENG_name": "Confectionery Conflagration",
-					"name": "糖果烈焰",
-					"type": "section",
-					"page": 31,
-					"id": "06b",
-					"entries": [
-						"开始冒险时，请大声朗读或转述以下内容：",
-						{
-							"type": "insetReadaloud",
-							"page": 31,
-							"id": "06c",
-							"entries": [
-								"一条磨损严重的土路蜿蜒穿过哈伯顿村，这个聚居地住着工匠、农民和伐木工，简朴的建筑散落在森林景观中。当地人勤劳而有礼貌，当你穿过村庄时，他们会用微笑或点头向你致意。当你拐过一个弯时，一缕黑烟引起了你的注意！它从树林边缘附近的一座低矮原木建筑中升起。火焰吞噬了木制屋顶，空气中弥漫着烧焦糖的气味，里面传来微弱的声音：\"救命！救命！\""
-							]
-						},
-						"哈伯顿镇上最新的糖果店被熊熊大火吞噬，店主被困其中。这场火灾是由幼龙布里欧许班无意间引起的。布里欧许班对监护人{@area 菲尔·弗洛弗格|069|x}有着极强的保护欲，她误将菲尔抱怨糖果店抢走顾客的言辞理解成店主伊迪斯威胁了菲尔。布里欧许班本意只是想吓唬伊迪斯离菲尔远点，却不慎点燃了糖果店。惊慌失措的幼龙现已逃往森林深处。",
-						{
-							"ENG_name": "Confectionery Layout",
-							"name": "糖果点心布局",
-							"type": "entries",
-							"page": 31,
-							"id": "06d",
-							"entries": [
-								{
-									"type": "gallery",
-									"images": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "adventure/DrDe/024-map-02.01-confectionery-conflagration-dm.webp"
-											},
-											"imageType": "map",
-											"title": "地图2.1：糖果大燃烧",
-											"credit": "Andrew Kolb",
-											"width": 3295,
-											"height": 4096,
-											"id": "406",
-											"grid": {
-												"type": "square",
-												"size": 211,
-												"offsetX": 84,
-												"offsetY": 31
-											}
-										},
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "adventure/DrDe/025-map-02.01-confectionery-conflagration-player.webp"
-											},
-											"imageType": "mapPlayer",
-											"title": "玩家版本",
-											"width": 3295,
-											"height": 4096,
-											"credit": "Andrew Kolb",
-											"mapParent": {
-												"id": "406"
-											},
-											"grid": {
-												"type": "square",
-												"size": 211,
-												"offsetX": 84,
-												"offsetY": 31
-											}
-										}
-									]
-								},
-								"糖果店（见地图：糖果店的混乱）是一间简陋的20英尺见方的单层木屋，内部布置简单。它有两个入口，前门和后门，均未上锁。建筑内没有厨房，因为伊迪丝的糖果都来自{@area 尼布切克叔叔|06a|x}。"
-							]
-						},
-						{
-							"ENG_name": "Putting Out the Fire",
-							"name": "扑灭火源",
-							"type": "entries",
-							"page": 31,
-							"id": "06e",
-							"entries": [
-								"火焰将在10分钟后将糖果屋化为一片冒烟的废墟，除非角色们采取行动扑灭它。角色可以通过以下方式灭火：",
+								"在开始冒险之前，请按照以下步骤进行准备：",
 								{
 									"type": "list",
 									"style": "list-hang-notitle",
 									"items": [
 										{
-											"ENG_name": "Bucket Brigade",
-											"name": "水桶阵",
+											"ENG_name": "Step 1",
+											"name": "第一步",
 											"type": "item",
-											"entry": "角色可以执行{@action 影响|XPHB}动作来召集镇民并进行一次{@dc 12}魅力（{@skill 威吓|XPHB}或{@skill 游说|XPHB}）检定。若成功，镇民们会组成人链传递水桶。该队伍从附近的水井打水，并在5分钟内扑灭火势。"
+											"entry": "如果你是为单一角色主持此游戏，请阅读\"{@area 单一角色跑团|066|x}\"章节。"
 										},
 										{
-											"ENG_name": "Magic",
-											"name": "魔法",
+											"ENG_name": "Step 2",
+											"name": "第二步",
 											"type": "item",
-											"entry": "由{@spell 造水术/枯水术|XPHB}或类似效果产生的水可以扑灭火焰。"
+											"entry": "阅读\"{@area 冒险背景|067|x}\""
+										},
+										{
+											"ENG_name": "Step 3",
+											"name": "第三步",
+											"type": "item",
+											"entry": "熟读下文关键NPC表中的内容。角色们将会在冒险中与这些人物互动。"
+										},
+										{
+											"ENG_name": "Step 4",
+											"name": "第四步",
+											"type": "item",
+											"entry": "在《{@book 怪物图鉴|XMM}》或D&DBeyond中标记以下的数据卡。"
 										}
 									]
+								},
+								{
+									"type": "list",
+									"columns": 3,
+									"items": [
+										"{@creature 活化闷人毯|XMM}",
+										"{@creature 匪徒|XMM}",
+										"{@creature 熊地精武者|XMM}",
+										"{@creature 蛇鸡|XMM}",
+										"{@creature 平民|XMM}",
+										"{@creature 树精|XMM}",
+										"{@creature 地精武者|XMM}",
+										"{@creature 金龙雏龙|XMM}",
+										"{@creature 绿鬼婆|XMM}",
+										"{@creature 冰魔蝠|XMM|冰魔蝠}",
+										"{@creature 木乃伊|XMM}",
+										"{@creature 食人魔|XMM}",
+										"{@creature 打手|XMM}"
+									]
+								},
+								{
+									"ENG_name": "Animated Rug of Smothering",
+									"name": "活化闷人毯",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Animated Rug of Smothering",
+									"name": "活化闷人毯",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Bandit",
+									"name": "匪徒",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Bandit",
+									"name": "匪徒",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Bugbear Warrior",
+									"name": "熊地精武者",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Bugbear Warrior",
+									"name": "熊地精武者",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Cockatrice",
+									"name": "蛇鸡",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Cockatrice",
+									"name": "蛇鸡",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Commoner",
+									"name": "平民",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Commoner",
+									"name": "平民",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Dryad",
+									"name": "树精",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Dryad",
+									"name": "树精",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Goblin Warrior",
+									"name": "地精武者",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Goblin Warrior",
+									"name": "地精武者",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Gold Dragon Wyrmling",
+									"name": "金龙雏龙",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Gold Dragon Wyrmling",
+									"name": "金龙雏龙",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Green Hag",
+									"name": "绿鬼婆",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Green Hag",
+									"name": "绿鬼婆",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Ice Mephit",
+									"name": "冰魔蝠",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Ice Mephit",
+									"name": "冰魔蝠",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Mummy",
+									"name": "木乃伊",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Mummy",
+									"name": "木乃伊",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Ogre",
+									"name": "食人魔",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Ogre",
+									"name": "食人魔",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
+								},
+								{
+									"ENG_name": "Tough",
+									"name": "打手",
+									"type": "statblock",
+									"prop": "monsterFluff",
+									"source": "XMM",
+									"data": {
+										"renderCompact": {
+											"isSkipRootName": true
+										}
+									}
+								},
+								{
+									"ENG_name": "Tough",
+									"name": "打手",
+									"type": "statblock",
+									"tag": "creature",
+									"source": "XMM",
+									"style": "narrow"
 								}
 							]
 						},
 						{
-							"ENG_name": "Rescuing Edith",
-							"name": "营救伊迪丝",
-							"type": "entries",
-							"page": 31,
-							"id": "06f",
+							"ENG_name": "Running for One Character",
+							"name": "单一角色跑团",
+							"type": "section",
+							"id": "066",
+							"page": 29,
 							"entries": [
-								"一旦角色们处理好了火势，他们就能安全地从糖果店中救出伊迪丝。如果有角色试图在灭火前拯救伊迪丝，需要进行{@dc 15}敏捷豁免检定，失败则受到7（{@dice 2d6}）点火焰伤害，成功则只受半数伤害。",
-								"一旦进入其中，寻找伊迪丝的角色会发现这位半身人女性正蜷缩在柜台下方，周围曾经笑容满面的棒棒糖已经融化扭成怪异细长的鬼脸。然后该角色可以护送伊迪丝离开糖果店（无需进行任何技能检定）。",
-								"伊迪丝（小型，中立邪恶{@creature 平民|XMM}）已步入暮年。她戴着眼睛，穿着邋遢的衣服，扎着象征其年轻心态的辫子。伊迪丝对救援者表现得很友善。",
-								"如果角色们不前去营救伊迪丝，会有两名英勇的镇民冒火冲入燃烧的建筑物救出这位糖果师。不论营救伊迪丝的是镇民还是角色们，她的救援者们都会在情感投入的围观群众欢呼声中脱险。"
-							]
-						},
-						{
-							"ENG_name": "After the Fire",
-							"name": "烈火之后",
-							"type": "entries",
-							"page": 32,
-							"id": "070",
-							"entries": [
-								"如果角色们曾与火灾对抗，这对伊迪丝的生意只是小挫折；如果没有，她的糖果店就被毁了。无论哪种情况，她都会在事件发生后接近角色们：",
+								"你可以为一名3级角色进行这个冒险。理想情况下，该角色应当至少精通以下技能中的两项：",
 								{
-									"type": "insetReadaloud",
-									"page": 32,
-									"id": "071",
-									"entries": [
-										"伊迪丝·阿普尔加思站在她冒着烟的糖果店前，房梁被烟灰熏得漆黑。\"哎呀，多么糟糕的一天！谁会做出如此恶劣的事情？\""
+									"type": "list",
+									"columns": 3,
+									"items": [
+										"{@skill 运动|XPHB}",
+										"{@skill 欺瞒|XPHB}",
+										"{@skill 历史|XPHB}",
+										"{@skill 洞悉|XPHB}",
+										"{@skill 察觉|XPHB}",
+										"{@skill 游说|XPHB}",
+										"{@skill 巧手|XPHB}",
+										"{@skill 隐匿|XPHB}"
 									]
 								},
-								"伊迪丝的困惑是真实的。她不知道是谁或是什么引起了火灾，但她确定那不是她。",
-								"如果角色们参与营救了她，她会感谢他们的救命之恩。随后，伊迪丝请求角色们找出罪魁祸首，以便其能向有关部门举报。作为小队协助的回报，伊迪丝承诺给予每位角色10枚金币以及一批他们最爱的甜点，并补充表示自己希望能提供更多酬谢。",
-								"如果他们接受了，伊迪丝建议他们可以先四处打听或查看是否有闯入的迹象。无论如何，伊迪斯都会留在现场评估损失，不再继续陪同他们。",
-								{
-									"ENG_name": "Gathering Clues",
-									"name": "收集线索",
-									"type": "entries",
-									"page": 32,
-									"id": "072",
-									"entries": [
-										"角色可以在或围绕废弃糖果店发现以下线索。",
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "adventure/DrDe/026-02-003.fill-flourforge-npc.webp"
-											},
-											"credit": "Andrew Kolb",
-											"width": 850,
-											"height": 1044
-										},
-										{
-											"ENG_name": "Burnt Roll",
-											"name": "烧焦卷轴",
-											"type": "entries",
-											"page": 32,
-											"id": "073",
-											"entries": [
-												"一个角色若采取{@action 搜索|XPHB}动作并成功通过{@dc 12}感知（{@skill 察觉|XPHB}）检定，就会在糖果店后方的草丛中发现半个被啃过的、略焦的肉桂卷。通过在镇上打听，或者采取后续的{@action 研究|XPHB}动作并成功通过{@dc 12}智力（{@skill 历史|XPHB}）检定，可得知这个面包卷是由一位名叫菲尔·面粉煅（Fill Flourforge）的矮人经营的本地烘焙坊制作的（详见「{@area 菲尔面包店|078|x}」）。"
-											]
-										},
-										{
-											"ENG_name": "Family Portrait",
-											"name": "家庭肖像",
-											"type": "entries",
-											"page": 32,
-											"id": "074",
-											"entries": [
-												"一名角色若搜查糖果店内部（或在烧毁后搜索其灰烬），会发现一幅被烧焦的伊迪丝和她弟弟阿斯特儿时的画像。若将画像归还给她，伊迪丝会落下一滴眼泪，并解释道：\"小时候，弟弟'消失在森林里再没回过家'。\"她没再多作说明。"
-											]
-										},
-										{
-											"ENG_name": "Foul Play",
-											"name": "不正当手段",
-											"type": "entries",
-											"page": 32,
-											"id": "075",
-											"entries": [
-												"如果迫不得已要指认一个可能的嫌疑人，伊迪丝或其他镇民会不情愿地暗示，当地的烘焙师{@area 菲尔·弗洛弗格|069|x}可能从成为镇上唯一的甜点供应商中获益。"
-											]
-										},
-										{
-											"ENG_name": "Unreliable Witness",
-											"name": "不可靠的目击者",
-											"type": "entries",
-											"page": 32,
-											"id": "076",
-											"entries": [
-												"如果角色们向围观者征集目击证词，一位醉醺醺的人类女性（其可信度存疑）声称自己在火灾发生后看见一只\"金色蜥蜴\"飞进了树林。这个名叫皮特拉·希尔弗的目击者随后就开始喋喋不休地讲述她曾被穴居人绑架、却无人相信的经历。"
-											]
-										}
-									]
-								}
-							]
-						},
-						{
-							"ENG_name": "Next Steps",
-							"name": "下一步",
-							"type": "entries",
-							"page": 32,
-							"id": "077",
-							"entries": [
-								"根据收集到的线索，玩家们可能会决定调查面包店或是前往森林追踪逃离火灾的怪物。如果玩家从面包店开始，参见\"{@area 菲尔面包店|078|x}\"；如果从森林开始，请跳转到\"{@area 糖果小屋|080|x}。\""
-							]
-						}
-					]
-				},
-				{
-					"ENG_name": "Fill's Bakery",
-					"name": "菲尔面包店",
-					"type": "section",
-					"page": 32,
-					"id": "078",
-					"entries": [
-						"哈伯顿的大部分居民都在菲尔面包店购买面包。这家古雅的双层店铺位于城镇中心附近，为饥饿的旅人和勤劳的当地人提供服务。",
-						"当不在招待顾客时，菲尔通常会在厨房里，尝试新食谱并准备店里每日供应的各式烘焙食品。",
-						{
-							"ENG_name": "Bakery Layout",
-							"name": "面包店布局",
-							"type": "entries",
-							"page": 32,
-							"id": "079",
-							"entries": [
-								"从外面看，这家面包店（地图见{@area 地图：菲尔的面包店|40c|x}）就像一块巨型面包。一楼设有厨房、储藏室和店面。二楼则是菲尔和他秘密的龙族副厨布里欧什贝恩的居住区。"
-							]
-						},
-						{
-							"ENG_name": "Arrival at the Bakery",
-							"name": "到达面包店",
-							"type": "entries",
-							"page": 33,
-							"id": "07a",
-							"entries": [
-								"当角色们进入面包店时，朗读或转述以下文字：",
-								{
-									"type": "insetReadaloud",
-									"page": 33,
-									"id": "07b",
-									"entries": [
-										"踏入这家迷人的面包店时，铜铃清脆作响。阳光透过小窗洒落，照亮了枫木架子上整齐排列的彩色糖果、沾满面粉的面包和金黄酥皮点心。新鲜出炉的面包香气弥漫在空气中。一位眉毛浓密、面容光洁的矮人从厨房走出，手里端着盘肉桂卷。「日安，」他将点心摆上货架时说道，「需要些什么？」"
-									]
-								},
-								"{@area 菲尔·弗洛弗格|069|x}（中型{@creature 匪徒|XMM}）身着一件面粉弄脏的围裙。他很友善，热情欢迎所有顾客。",
-								"菲尔一边试图向角色们推销烘焙点心（见\"{@area 有什么在售？|07c|x}\"），一边与他们闲聊。如果他们告诉菲尔关于伊迪丝糖果店的火灾，他看起来明显很震惊。这位面包师强烈否认任何纵火的指控，并回答说他有很多顾客可以证明火灾发生时他一直在自己的面包店里。然而，一个聆听菲尔的不在场证明并成功通过{@dc 15}感知（{@skill 洞悉|XPHB}）检定角色能够察觉他在隐瞒着什么。",
-								"角色可以通过采取{@action 影响|XPHB}动作并进行一项{@dc 14}魅力（{@skill 威吓|XPHB}或{@skill 游说|XPHB}）检定来从菲尔那里获取更多信息。若成功，菲尔会讲述完整的故事（详见\"{@area 龙之困境|07e|x}\"）。如果角色出示在糖果店外找到的被咬过的面包卷，将自动成功通过此检定。若检定失败，菲尔会坚持原来的说法，但角色可以再次尝试。"
-							]
-						},
-						{
-							"ENG_name": "What's for Sale?",
-							"name": "有什么在售？",
-							"type": "entries",
-							"page": 33,
-							"id": "07c",
-							"entries": [
-								"菲尔靠售卖面包和糕点过着诚实的生活。他的商品及其价格如下方的烘焙食品表所示。",
+								"独行角色获得{@reward 孤勇者祝福|DrDe}（见简介）以弥补缺少同伴的不足。",
 								{
 									"type": "table",
-									"caption": "烘焙食品",
-									"page": 33,
+									"caption": "关键NPCs",
+									"page": 29,
 									"colLabels": [
-										"物品",
-										"价格"
+										"名称",
+										"职能",
+										"数据卡",
+										"位置"
 									],
 									"colStyles": [
-										"col-8",
-										"col-4"
+										"col-3-5",
+										"col-3-5",
+										"col-2-5",
+										"col-2-5"
 									],
 									"rows": [
 										[
-											"肉桂卷",
-											"1银币（1金币可买一打）"
+											"阿斯杰·阿普尔加斯",
+											"迷途的半身人流浪者",
+											"{@creature 平民|XMM} (小型)",
+											"{@area C15|0be|x}"
 										],
 										[
-											"甜面包（带有蓝色、粉色或黄色糖霜）",
-											"3 cp"
+											"布里欧修班",
+											"被{@area 尼布切克叔叔|06a|x}施加{@condition 魅惑|XPHB}的龙",
+											"{@creature 金龙雏龙|XMM}",
+											"{@area C10|0a7|x}"
 										],
 										[
-											"一条面包",
-											"2CP"
+											"巴霸·乌加",
+											"活化玩偶",
+											"{@creature 食人魔|XMM}（经过调整）",
+											"{@area C9|0a5|x}"
+										],
+										[
+											"{@area 伊迪丝·阿普尔加斯|068|x}",
+											"狡猾邪恶的半身人甜点师",
+											"{@creature 平民|XMM} (小型生物，中立邪恶)",
+											"\"{@area 营救伊迪丝|06f|x}\""
+										],
+										[
+											"{@area 菲尔·弗洛弗格|069|x}",
+											"矮人面包师与退役强盗",
+											"{@creature 匪徒|XMM} (中型)",
+											"\"{@area 到达面包店|07a|x}\""
+										],
+										[
+											"{@area 尼布切克叔叔|06a|x}",
+											"嗜甜如命的邪恶巫婆",
+											"{@creature 绿鬼婆|XMM}",
+											"{@area C10|0a7|x}"
 										]
 									]
 								}
 							]
 						},
 						{
-							"ENG_name": "Dragon Dilemma",
-							"name": "龙之困境",
-							"type": "entries",
-							"page": 33,
-							"id": "07e",
+							"ENG_name": "Adventure Background",
+							"name": "冒险背景",
+							"type": "section",
+							"id": "067",
+							"page": 30,
 							"entries": [
-								"一旦菲尔认为他可以信任这些角色\u2014\u2014或者觉得别无选择\u2014\u2014他会透露以下信息：",
+								"位于一条繁忙路线上的一处小而舒适的歇脚点，哈伯顿村居住着一群友善的民众，他们喜爱由{@area 菲尔·弗洛弗格|069|x}制作的面包与糕点。",
+								"这些镇民们所不知道的是，菲尔用龙焰来烘焙他的商品。当菲尔抚养的那只不守规矩的金龙雏龙失踪的同一天，哈伯顿镇最新开业的甜品店突然起火，角色们便卷入了一个童话般的阴谋，最终将他们引向一位口味可憎的老妖婆的小屋。",
+								"三位与金龙幼龙相遇的糖果师傅被巧妙融入本次冒险的剧情中。",
 								{
-									"type": "list",
-									"style": "list-hang-notitle",
-									"items": [
+									"ENG_name": "Edith Applegarth",
+									"name": "伊迪丝·阿普尔加斯",
+									"type": "entries",
+									"id": "068",
+									"page": 30,
+									"entries": [
+										"当她还是一个小女孩时，伊迪丝和她的弟弟阿斯杰在森林里迷了路。远离家园的他们发现了一条五彩糖果铺成的小径，顺着它来到了林间的一座小屋。殊不知，这里是{@area 尼布切克叔叔|06a|x}的家，一个喜欢吞噬访客的邪恶男巫婆。尼布尔叔叔以和蔼祖父的形象出现在伊迪丝和阿斯杰面前，邀请孩子们进屋。",
 										{
-											"ENG_name": "Past Life",
-											"name": "过往经历",
-											"type": "item",
-											"entry": "菲尔曾是个土匪。他的最后一次抢劫差点要了他的命，但他带着一颗金龙蛋和足够的金币逃了出来，用这些钱开了间面包店，彻底金盆洗手了。"
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "adventure/DrDe/023-02-002.edith-applegarth-npc.webp"
+											},
+											"width": 850,
+											"height": 1021,
+											"credit": "Andrew Kolb"
 										},
-										{
-											"ENG_name": "Secret Ingredient",
-											"name": "秘制原料",
-											"type": "item",
-											"entry": "菲尔糕点是使用龙焰烘烤的，这是一种严格保密的秘密配方，由菲尔在秘密场所饲养的一头金龙提供。最近几个月，随着名为布里欧修祸的幼龙逐渐长大，菲尔越来越难以将它隐藏在公众视线之外。"
-										},
-										{
-											"ENG_name": "Missing Dragon",
-											"name": "失踪的巨龙",
-											"type": "item",
-											"entry": "在烤好了今天的甜面包后，奶油卷灾星消失了。菲尔担心那条龙可能对糕点店的大火负有责任。若果真如此，菲尔发誓要匿名资助其重建工作。"
-										}
+										"伊迪丝渐渐看穿了啃叔的把戏，拒绝成为夜婆的美食。聪明又自私的伊迪丝与夜婆达成协议，用弟弟换取了享用不尽的糖果。夜婆被伊迪丝的机智与冷酷打动，接受了交易，于是伊迪丝独自离开了小屋。",
+										"艾迪丝再也没有踏入那座小屋一步，也不知道她离开后弟弟遭遇了什么。实际上，尼布尔契克叔叔将阿斯杰变成了糖果生物，并强迫他在厨房里当帮工。",
+										"多年来，伊迪丝利用她与尼布尔奇克叔叔的契约建立起蓬勃发展的生意。在他们相遇数十年后，她仍然从巫婆那里收集糖果，并在全国各地的糖果店中出售。",
+										"为了换取糖果店里稳定的糖果供应，伊迪丝会将顾客视为巫婆的潜在受害者。她会派一些容易被骗或讨厌的人去巫婆的小屋跑腿，并谎称那是她姐姐的房子。为了避免引起怀疑，伊迪丝每隔几年就会把店搬到一个新城镇。"
 									]
 								},
 								{
-									"ENG_name": "Fill's Quest",
-									"name": "菲尔的冒险",
+									"ENG_name": "Fill Flourforge",
+									"name": "菲尔·弗洛弗格",
 									"type": "entries",
-									"page": 33,
-									"id": "07f",
+									"id": "069",
+									"page": 30,
+									"entries": [
+										"菲尔·弗劳弗吉，一名退休的矮人强盗，酷爱烘焙。当一条金龙将他的盗贼团其他成员烧成焦炭（因他们拙劣地试图盗窃龙之财宝）后，菲尔的犯罪生涯就此终结。尽管菲尔是唯一的生还者，但这次任务并非完全失败。这个矮人带着性命、一小笔财富和一件无价之宝逃离了巢穴：一颗金龙蛋。",
+										"菲尔没有继续他的匪徒生涯，而是用这次抢劫的赃物开了一家面包店。不久后，蛋在他的烤箱旁孵化。菲尔给出生的小龙取名为布里欧修贝恩，并将她抚养为自己的养女。面包店刚开业时，菲尔的甜点反响褒贬不一，但在新助手布里欧修贝恩的帮助下，他的糕点赢得了当地的声誉。特别是他的肉桂卷，用龙焰烤得恰到好处。",
+										"菲尔对布里欧什贝恩的存在守口如瓶。他担心其他人会惧怕这条龙，或者更糟，试图设陷阱捕捉或杀死她。"
+									]
+								},
+								{
+									"ENG_name": "Uncle Nibblecheek",
+									"name": "尼布切克叔叔",
+									"type": "entries",
+									"id": "06a",
+									"page": 30,
+									"entries": [
+										"在哈伯尔顿镇外的树林中，坐落着尼布尔契克姑姑的小屋，这位绿鬼婆有着邪恶的甜食癖好。一条糖果小径蜿蜒穿过盘根错节的森林，通向这间甜腻的小屋，引诱那些轻信他人且饥肠辘辘、偏离寻常道路的旅人来到鬼婆门前。来访者永远受到'欢迎'。",
+										"一旦客人进入，尼布尔奇克叔叔会以各种新鲜烘焙的美食款待他们，将他们养胖并用糖分诱导的昏迷使他们昏昏欲睡。随后，在一群糖果生物的协助和一系列魔法甜品设备的帮助下，尼布尔奇克叔叔将受害者们转变为甜点并大快朵颐。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Confectionery Conflagration",
+							"name": "糖果烈焰",
+							"type": "section",
+							"id": "06b",
+							"page": 31,
+							"entries": [
+								"开始冒险时，请大声朗读或转述以下内容：",
+								{
+									"type": "insetReadaloud",
+									"id": "06c",
+									"page": 31,
+									"entries": [
+										"一条磨损严重的土路蜿蜒穿过哈伯顿村，这个聚居地住着工匠、农民和伐木工，简朴的建筑散落在森林景观中。当地人勤劳而有礼貌，当你穿过村庄时，他们会用微笑或点头向你致意。当你拐过一个弯时，一缕黑烟引起了你的注意！它从树林边缘附近的一座低矮原木建筑中升起。火焰吞噬了木制屋顶，空气中弥漫着烧焦糖的气味，里面传来微弱的声音：\"救命！救命！\""
+									]
+								},
+								"哈伯顿镇上最新的糖果店被熊熊大火吞噬，店主被困其中。这场火灾是由幼龙布里欧许班无意间引起的。布里欧许班对监护人{@area 菲尔·弗洛弗格|069|x}有着极强的保护欲，她误将菲尔抱怨糖果店抢走顾客的言辞理解成店主伊迪斯威胁了菲尔。布里欧许班本意只是想吓唬伊迪斯离菲尔远点，却不慎点燃了糖果店。惊慌失措的幼龙现已逃往森林深处。",
+								{
+									"ENG_name": "Confectionery Layout",
+									"name": "糖果点心布局",
+									"type": "entries",
+									"id": "06d",
+									"page": 31,
 									"entries": [
 										{
 											"type": "gallery",
 											"images": [
 												{
 													"type": "image",
+													"id": "406",
 													"href": {
 														"type": "internal",
-														"path": "adventure/DrDe/027-map-02.02-fills-bakery-dm.webp"
+														"path": "adventure/DrDe/024-map-02.01-confectionery-conflagration-dm.webp"
 													},
-													"imageType": "map",
-													"title": "地图2.2：菲尔兹面包店",
-													"credit": "Andrew Kolb",
 													"width": 3295,
 													"height": 4096,
-													"id": "40c",
+													"imageType": "map",
 													"grid": {
 														"type": "square",
 														"size": 211,
 														"offsetX": 84,
 														"offsetY": 31
-													}
+													},
+													"title": "地图2.1：糖果大燃烧",
+													"credit": "Andrew Kolb"
 												},
 												{
 													"type": "image",
 													"href": {
 														"type": "internal",
-														"path": "adventure/DrDe/028-map-02.02-fills-bakery-player.webp"
+														"path": "adventure/DrDe/025-map-02.01-confectionery-conflagration-player.webp"
 													},
-													"imageType": "mapPlayer",
-													"title": "玩家版本",
 													"width": 3295,
 													"height": 4096,
-													"credit": "Andrew Kolb",
-													"mapParent": {
-														"id": "40c"
-													},
+													"imageType": "mapPlayer",
 													"grid": {
 														"type": "square",
 														"size": 211,
 														"offsetX": 84,
 														"offsetY": 31
+													},
+													"title": "玩家版本",
+													"credit": "Andrew Kolb",
+													"mapParent": {
+														"id": "406"
 													}
 												}
 											]
 										},
-										"在告知上述信息后，菲尔恳求角色们找到布里欧什贝恩并将他的被监护人安全带回家。他哀求他们不要杀死那条龙\u2014\u2014她是他仅存的家人。只要布里欧什贝恩安全归来，菲尔承诺将从自己过往犯罪生涯的藏匿财物中拿出100金币奖励众人。",
-										"如果角色们接受，菲尔告诉他们布里欧什班喜欢在城镇东边的树林里嬉戏和打猎。然后他递给角色们一个装有三个温热肉桂卷的袋子\u2014\u2014布里欧什班最爱的甜点\u2014\u2014用来引诱这条龙回面包店。菲尔强调角色们不能吃掉这些面包卷，否则这条龙可能不会听从他们的命令。如果他们想要自己的，菲尔会免费送给每位角色一个面包卷。",
-										"如果角色们拒绝，菲尔只要求他们不要泄露他分享的秘密。在离开前，面包师提到布里欧修贝恩就像优质面包：外表硬脆但内里柔软。他再次热切请求角色们不要伤害她。"
-									]
-								}
-							]
-						}
-					]
-				},
-				{
-					"ENG_name": "The Candy Cottage",
-					"name": "糖果小屋",
-					"type": "section",
-					"page": 34,
-					"id": "080",
-					"entries": [
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/029-02-004.candy-cottage.webp"
-							},
-							"credit": "Andrew Kolb",
-							"width": 1700,
-							"height": 1168
-						},
-						"哈勃顿以东是一片未经开发的参天古树区，野生动物繁衍生息。",
-						"纵火烧毁伊迪丝的糖果店后，奶油面包逃进了森林，在那里她闻到了一路糖果的香气，放纵了自己的嗜甜之欲，但这路糖果将她引入了邪灵{@area 尼布切克叔叔|06a|x}的魔爪。角色的调查会让他们走上相同的道路。",
-						"尼布尔奇克叔叔的小屋坐落在远离哈布尔顿的一处如画小树林中。",
-						{
-							"ENG_name": "Candy Trail",
-							"name": "糖果小径",
-							"type": "entries",
-							"page": 34,
-							"id": "081",
-							"entries": [
-								"当角色们进入森林时，朗读或转述以下内容：",
-								{
-									"type": "insetReadaloud",
-									"page": 34,
-									"id": "082",
-									"entries": [
-										"哈伯顿之外延展着一片茂密的森林。参天大树高耸入云，林中小动物在这些古老的树干中筑巢，苔藓像绿色的长胡须般从树枝上垂下。空气清新怡人。短暂徘徊后，你偶然发现一条点缀着彩色糖果的小径。这条糖果小径向森林深处延伸。"
+										"糖果店（见地图：糖果店的混乱）是一间简陋的20英尺见方的单层木屋，内部布置简单。它有两个入口，前门和后门，均未上锁。建筑内没有厨房，因为伊迪丝的糖果都来自{@area 尼布切克叔叔|06a|x}。"
 									]
 								},
-								"在跟随踪迹一小时后，角色们抵达了尼布尔奇克叔叔的糖果小屋。"
-							]
-						},
-						{
-							"ENG_name": "Arriving at the Cottage",
-							"name": "到达小屋",
-							"type": "entries",
-							"page": 35,
-							"id": "083",
-							"entries": [
-								"当角色们抵达小屋时，阅读或转述以下文字：",
 								{
-									"type": "insetReadaloud",
-									"page": 35,
-									"id": "084",
+									"ENG_name": "Putting Out the Fire",
+									"name": "扑灭火源",
+									"type": "entries",
+									"id": "06e",
+									"page": 31,
 									"entries": [
-										"糖果小径尽头是一座位于森林深处的宽敞小屋。混合的甜美香气从建筑中飘散而出，各种糖果装饰着它的外部：棒棒糖、太妃糖、松露巧克力以及其他一口大小的美味。彩色的糖玻璃板构成了它的窗格，粉红威化饼干板铺就了前廊，屋顶则用甘草编织而成。一座矮胖的薄荷糖塔从屋后拔地而起，顶部覆盖着厚厚的糖霜漩涡。小屋东侧是一座红色的小谷仓，而森林边缘附近则矗立着一间北向的户外厕所。两者皆由巧克力板搭建而成。"
-									]
-								},
-								"角色可以随意取食装点小屋的糖果。被食用的糖果会在10分钟后被魔法补充。任何品尝过小屋外表甜点的角色都会产生进入小屋的强烈欲望，但可以抵抗这种诱惑。",
-								{
-									"type": "gallery",
-									"images": [
+										"火焰将在10分钟后将糖果屋化为一片冒烟的废墟，除非角色们采取行动扑灭它。角色可以通过以下方式灭火：",
 										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "adventure/DrDe/030-map-02.03-candy-cottage-dm.webp"
-											},
-											"imageType": "map",
-											"title": "地图2.3：糖果小屋",
-											"credit": "Andrew Kolb",
-											"width": 4096,
-											"height": 2667,
-											"id": "40d",
-											"grid": {
-												"type": "square",
-												"size": 106,
-												"offsetX": 71,
-												"offsetY": 69
-											},
-											"mapRegions": [
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
 												{
-													"area": "08c",
-													"points": [
-														[
-															919,
-															2208
-														],
-														[
-															919,
-															2401
-														],
-														[
-															1342,
-															2401
-														],
-														[
-															1342,
-															2208
-														]
-													]
+													"ENG_name": "Bucket Brigade",
+													"name": "水桶阵",
+													"type": "item",
+													"entry": "角色可以执行{@action 影响|XPHB}动作来召集镇民并进行一次{@dc 12}魅力（{@skill 威吓|XPHB}或{@skill 游说|XPHB}）检定。若成功，镇民们会组成人链传递水桶。该队伍从附近的水井打水，并在5分钟内扑灭火势。"
 												},
 												{
-													"area": "090",
-													"points": [
-														[
-															721,
-															1781
-														],
-														[
-															721,
-															2170
-														],
-														[
-															1006,
-															2170
-														],
-														[
-															1006,
-															1781
-														]
-													]
-												},
-												{
-													"area": "094",
-													"points": [
-														[
-															1252,
-															1781
-														],
-														[
-															1252,
-															2172
-														],
-														[
-															1539,
-															2172
-														],
-														[
-															1539,
-															1781
-														]
-													]
-												},
-												{
-													"area": "08e",
-													"points": [
-														[
-															1040,
-															1888
-														],
-														[
-															1040,
-															2171
-														],
-														[
-															1218,
-															2171
-														],
-														[
-															1218,
-															1888
-														]
-													]
-												},
-												{
-													"area": "09b",
-													"points": [
-														[
-															1043,
-															1118
-														],
-														[
-															1043,
-															1850
-														],
-														[
-															1221,
-															1850
-														],
-														[
-															1221,
-															1118
-														]
-													]
-												},
-												{
-													"area": "097",
-													"points": [
-														[
-															723,
-															1145
-														],
-														[
-															1010,
-															1145
-														],
-														[
-															1010,
-															1746
-														],
-														[
-															719,
-															1746
-														],
-														[
-															719,
-															1600
-														],
-														[
-															620,
-															1501
-														],
-														[
-															620,
-															1395
-														],
-														[
-															723,
-															1291
-														]
-													]
-												},
-												{
-													"area": "09d",
-													"points": [
-														[
-															1253,
-															1147
-														],
-														[
-															1253,
-															1744
-														],
-														[
-															1861,
-															1744
-														],
-														[
-															1861,
-															1147
-														]
-													]
-												},
-												{
-													"area": "0a1",
-													"points": [
-														[
-															1882,
-															1139
-														],
-														[
-															1882,
-															1752
-														],
-														[
-															2285,
-															1752
-														],
-														[
-															2285,
-															1139
-														]
-													]
-												},
-												{
-													"area": "0b1",
-													"points": [
-														[
-															1571,
-															1108
-														],
-														[
-															1860,
-															1108
-														],
-														[
-															1905,
-															1097
-														],
-														[
-															1941,
-															1082
-														],
-														[
-															1976,
-															1061
-														],
-														[
-															2012,
-															1028
-														],
-														[
-															2034,
-															992
-														],
-														[
-															2051,
-															950
-														],
-														[
-															2062,
-															911
-														],
-														[
-															2063,
-															861
-														],
-														[
-															2060,
-															815
-														],
-														[
-															2046,
-															772
-														],
-														[
-															2032,
-															736
-														],
-														[
-															2011,
-															699
-														],
-														[
-															1981,
-															670
-														],
-														[
-															1942,
-															644
-														],
-														[
-															1902,
-															627
-														],
-														[
-															1859,
-															620
-														],
-														[
-															1821,
-															616
-														],
-														[
-															1781,
-															619
-														],
-														[
-															1742,
-															629
-														],
-														[
-															1703,
-															644
-														],
-														[
-															1674,
-															661
-														],
-														[
-															1643,
-															692
-														],
-														[
-															1619,
-															724
-														],
-														[
-															1599,
-															764
-														],
-														[
-															1582,
-															804
-														],
-														[
-															1576,
-															848
-														],
-														[
-															1571,
-															888
-														]
-													]
-												},
-												{
-													"area": "0a7",
-													"points": [
-														[
-															1041,
-															897
-														],
-														[
-															1041,
-															349
-														],
-														[
-															1198,
-															192
-														],
-														[
-															1381,
-															192
-														],
-														[
-															1539,
-															350
-														],
-														[
-															1539,
-															704
-														],
-														[
-															1230,
-															704
-														],
-														[
-															1230,
-															897
-														]
-													]
-												},
-												{
-													"area": "0b0",
-													"points": [
-														[
-															1260,
-															736
-														],
-														[
-															1260,
-															897
-														],
-														[
-															1535,
-															897
-														],
-														[
-															1535,
-															736
-														]
-													]
-												},
-												{
-													"area": "0a5",
-													"points": [
-														[
-															723,
-															614
-														],
-														[
-															723,
-															932
-														],
-														[
-															1009,
-															932
-														],
-														[
-															1009,
-															614
-														]
-													]
-												},
-												{
-													"area": "0b6",
-													"points": [
-														[
-															2176,
-															387
-														],
-														[
-															2176,
-															213
-														],
-														[
-															2308,
-															213
-														],
-														[
-															2308,
-															387
-														]
-													]
-												},
-												{
-													"area": "0b9",
-													"points": [
-														[
-															3391,
-															1026
-														],
-														[
-															3391,
-															1336
-														],
-														[
-															3801,
-															1336
-														],
-														[
-															3801,
-															1026
-														]
-													]
-												},
-												{
-													"area": "0be",
-													"points": [
-														[
-															2968,
-															1453
-														],
-														[
-															2968,
-															1865
-														],
-														[
-															3800,
-															1865
-														],
-														[
-															3800,
-															1453
-														]
-													]
+													"ENG_name": "Magic",
+													"name": "魔法",
+													"type": "item",
+													"entry": "由{@spell 造水术/枯水术|XPHB}或类似效果产生的水可以扑灭火焰。"
 												}
-											],
-											"hrefThumbnail": {
-												"type": "internal",
-												"path": "adventure/DrDe/thumbnail/030-map-02.03-candy-cottage-dm.webp"
-											}
-										},
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "adventure/DrDe/031-map-02.03-candy-cottage-player.webp"
-											},
-											"imageType": "mapPlayer",
-											"title": "玩家版本",
-											"width": 4096,
-											"height": 2667,
-											"credit": "Andrew Kolb",
-											"mapParent": {
-												"id": "40d"
-											},
-											"grid": {
-												"type": "square",
-												"size": 106,
-												"offsetX": 71,
-												"offsetY": 69
-											}
-										}
-									]
-								}
-							]
-						},
-						{
-							"ENG_name": "Candy Creatures",
-							"name": "糖果生物",
-							"type": "entries",
-							"page": 35,
-							"id": "085",
-							"entries": [
-								"小屋中的某些效果可以改变生物的外形，以及它所穿着或携带的所有非魔法物品\u2014\u2014将它们变成活化的糖果。当角色被转化为活化糖果时，文本会指定糖果的种类。",
-								"处于糖果形态的生物不会衰老，但该形态变化不会影响其属性数据。糖果护甲与其同类常规护甲同样坚固，糖果武器也与普通版本一样致命且耐用。",
-								"糖果生物若成为{@spell 高等复原术|XPHB}法术的目标或{@area 尼布切克叔叔|06a|x}死亡，则会恢复原本形态。作为一个{@action 魔法|XPHB}动作，妖鬼婆可以恢复其触碰的一个生物。如果糖果生物受到另一个也会将其目标变成糖果的效果影响，该生物不会再被改变，但仍会正常承受其他所有后果。"
-							]
-						},
-						{
-							"ENG_name": "Cottage Features",
-							"name": "小屋特性",
-							"type": "entries",
-							"page": 35,
-							"id": "086",
-							"entries": [
-								"除非另有说明，小屋具有以下特征。",
-								{
-									"ENG_name": "Ceilings",
-									"name": "天花板",
-									"type": "entries",
-									"page": 35,
-									"id": "087",
-									"entries": [
-										"小屋的天花板高10尺，塔楼（区域{@area C12|0b1|x}）除外，那里的天花板高20尺。所有天花板都覆盖着一层甜糖霜。"
-									]
-								},
-								{
-									"ENG_name": "Doors",
-									"name": "门",
-									"type": "entries",
-									"page": 35,
-									"id": "088",
-									"entries": [
-										"小屋内的门均由厚实的巧克力条制成，表面蚀刻着木纹图案。每扇巧克力门都没有上锁，其坚固程度与木门相当。"
-									]
-								},
-								{
-									"ENG_name": "Edible Objects",
-									"name": "可食用物品",
-									"type": "entries",
-									"page": 35,
-									"id": "089",
-									"entries": [
-										"除文中特别指出的少数例外外，小屋中属于尼布尔切克叔叔的所有物品都由糖果制成。这些物品与不可食用的同类物品一样实用且耐用。"
-									]
-								},
-								{
-									"ENG_name": "Lighting",
-									"name": "光照",
-									"type": "entries",
-									"page": 35,
-									"id": "08a",
-									"entries": [
-										"小屋内的每个房间都充满了来自魔法糖果球的{@variantrule 明亮光照|XPHB}。吃掉糖果球或将其带离小屋会熄灭其光芒。"
-									]
-								}
-							]
-						},
-						{
-							"ENG_name": "Cottage Locations",
-							"name": "小屋位置",
-							"type": "entries",
-							"page": 35,
-							"id": "08b",
-							"entries": [
-								"以下位置标记于{@area 地图：糖果小屋|40d|x}。",
-								{
-									"ENG_name": "C1: Porch",
-									"name": "C1: 门廊",
-									"type": "entries",
-									"page": 35,
-									"id": "08c",
-									"entries": [
-										{
-											"type": "insetReadaloud",
-											"page": 35,
-											"id": "08d",
-											"entries": [
-												"小屋前延伸出一个有顶的门廊，其地板由明亮的粉色威化板构成。前门则由相配的巧克力板制成，雕刻成木纹样式。在双门前，一块由水果皮革制成的门垫上写着\"请擦擦脚\"。一把糖果摇椅面朝森林。"
-											]
-										},
-										"这块门垫是由柔软糖果制成的{@creature 活化闷人毯|XMM}。它会攻击那些没有擦脚就进入小屋的访客。否则，魔毯会保持静止。"
-									]
-								},
-								{
-									"ENG_name": "C2: Foyer",
-									"name": "C2: 前厅",
-									"type": "entries",
-									"page": 35,
-									"id": "08e",
-									"entries": [
-										{
-											"type": "insetReadaloud",
-											"page": 35,
-											"id": "08f",
-											"entries": [
-												"这间朴素的玄关里弥漫着糖果香气。门口内挂着各式外套与斗篷，下方则摆着不同尺码的靴鞋。东侧是用糖果家具布置的客厅，西边则是儿童游戏室。"
-											]
-										},
-										"这些衣物与鞋履属于那些从未离开小屋的访客。"
-									]
-								},
-								{
-									"ENG_name": "C3: Bubba Wugga's Playroom",
-									"name": "C3：布巴·乌加的游乐室",
-									"type": "entries",
-									"page": 35,
-									"id": "090",
-									"entries": [
-										{
-											"type": "insetReadaloud",
-											"page": 35,
-											"id": "091",
-											"entries": [
-												"色彩鲜艳的玩具散落在这间宽敞的游戏室里。一个巨大的空摇篮倾覆在地板上。"
-											]
-										},
-										"这间游戏室及其中的所有物属于巴伯·伍加，一个由尼布尔·奇克叔叔创造的智慧玩偶。巴伯·伍加（参见区域 {@area C9|0a5|x}）通常睡在那张婴儿床里，那张床足够大，可以舒适地容纳一个食人魔体型的婴儿。",
-										{
-											"ENG_name": "Toys",
-											"name": "玩具",
-											"type": "entries",
-											"page": 36,
-											"id": "092",
-											"entries": [
-												"这个房间陈列着一系列令人印象深刻的玩具，其中许多比它们的常规版本要大得多：包括装扮套装、小雕像、道具武器，以及一匹和成年马一样大的摇摇马。骑上摇摇马会触发一个{@spell 魔嘴术|XPHB}法术，使马匹发出嘶鸣声并大声喊叫\"热狗！\"好几次。"
-											]
-										},
-										{
-											"ENG_name": "Treasure",
-											"name": "宝藏",
-											"type": "entries",
-											"page": 36,
-											"id": "093",
-											"entries": [
-												"在玩具之中有一个{@item 魔术袋|XDMG}（灰色）。一名角色若进行{@action 搜索|XPHB}动作并通过{@dc 13}感知（{@skill 察觉|XPHB}）检定即可发现该袋子。"
 											]
 										}
 									]
 								},
 								{
-									"ENG_name": "C4: Sitting Room",
-									"name": "C4：客厅",
+									"ENG_name": "Rescuing Edith",
+									"name": "营救伊迪丝",
 									"type": "entries",
-									"page": 36,
-									"id": "094",
+									"id": "06f",
+									"page": 31,
 									"entries": [
-										{
-											"type": "insetReadaloud",
-											"page": 36,
-											"id": "095",
-											"entries": [
-												"这个房间里摆放着糖果制成的家具，包括一张沙发、两把椅子和一张矮桌。精致的糖果茶杯放在白砂糖垫巾上，沿着桌边排列。一个糖果茶壶悬挂在壁炉里的噼啪火焰上方，轻轻鸣响。"
-											]
-										},
-										"{@area 尼布切克叔叔|06a|x}偶尔会在这个客厅里招待客人。",
-										{
-											"ENG_name": "Secret Trapdoor",
-											"name": "秘密陷阱门",
-											"type": "entries",
-											"page": 36,
-											"id": "096",
-											"entries": [
-												"在东北角，一个活板门巧妙地隐藏在地板中。任何角色花费1分钟搜索房间寻找秘密门可通过一次成功的 {@dc 15} 感知（{@skill 察觉|XPHB}）检定发现活板门。打开活板门会露出一架通向地牢（区域 {@area C15|0be|x}）的糖果梯子。"
-											]
-										}
+										"一旦角色们处理好了火势，他们就能安全地从糖果店中救出伊迪丝。如果有角色试图在灭火前拯救伊迪丝，需要进行{@dc 15}敏捷豁免检定，失败则受到7（{@dice 2d6}）点火焰伤害，成功则只受半数伤害。",
+										"一旦进入其中，寻找伊迪丝的角色会发现这位半身人女性正蜷缩在柜台下方，周围曾经笑容满面的棒棒糖已经融化扭成怪异细长的鬼脸。然后该角色可以护送伊迪丝离开糖果店（无需进行任何技能检定）。",
+										"伊迪丝（小型，中立邪恶{@creature 平民|XMM}）已步入暮年。她戴着眼睛，穿着邋遢的衣服，扎着象征其年轻心态的辫子。伊迪丝对救援者表现得很友善。",
+										"如果角色们不前去营救伊迪丝，会有两名英勇的镇民冒火冲入燃烧的建筑物救出这位糖果师。不论营救伊迪丝的是镇民还是角色们，她的救援者们都会在情感投入的围观群众欢呼声中脱险。"
 									]
 								},
 								{
-									"ENG_name": "C5: Taffy Factory",
-									"name": "C5：太妃糖工厂",
+									"ENG_name": "After the Fire",
+									"name": "烈火之后",
 									"type": "entries",
-									"page": 36,
-									"id": "097",
+									"id": "070",
+									"page": 32,
 									"entries": [
+										"如果角色们曾与火灾对抗，这对伊迪丝的生意只是小挫折；如果没有，她的糖果店就被毁了。无论哪种情况，她都会在事件发生后接近角色们：",
 										{
 											"type": "insetReadaloud",
-											"page": 36,
-											"id": "098",
+											"id": "071",
+											"page": 32,
 											"entries": [
-												"有节奏的、橡胶般的拍打声充满了这个嘈杂的房间。两个身材魁梧、毛茸茸的人形生物戴着手套和发网，将一团团类似口香糖的物质堆进房间后部的一台奇特装置中。这台机器的疯狂机械臂将色彩鲜艳的物质拉伸并扭曲成太妃糖条。与此同时，第三位工人将太妃糖剪断、包装，并按口味分类装入三个桶中的一个。"
+												"伊迪丝·阿普尔加思站在她冒着烟的糖果店前，房梁被烟灰熏得漆黑。\"哎呀，多么糟糕的一天！谁会做出如此恶劣的事情？\""
 											]
 										},
-										"三只{@creature 熊地精武者|XMM|熊地精武者}正在这个房间里制作太妃糖。这些熊地精为尼布尔奇克叔叔工作，并对入侵者表现出敌意。战斗中，它们会试图将角色推入太妃糖拉制机（描述如下）。",
-										"一名角色可以采取{@action 影响|XPHB}动作并进行一次{@dc 12}魅力（{@skill 欺瞒|XPHB}）检定，试图骗熊地精认为该角色是啃噬叔叔的客人。被成功欺骗的熊地精将对该角色转为中立态度。",
+										"伊迪丝的困惑是真实的。她不知道是谁或是什么引起了火灾，但她确定那不是她。",
+										"如果角色们参与营救了她，她会感谢他们的救命之恩。随后，伊迪丝请求角色们找出罪魁祸首，以便其能向有关部门举报。作为小队协助的回报，伊迪丝承诺给予每位角色10枚金币以及一批他们最爱的甜点，并补充表示自己希望能提供更多酬谢。",
+										"如果他们接受了，伊迪丝建议他们可以先四处打听或查看是否有闯入的迹象。无论如何，伊迪斯都会留在现场评估损失，不再继续陪同他们。",
 										{
-											"ENG_name": "Taffy",
-											"name": "太妃糖",
+											"ENG_name": "Gathering Clues",
+											"name": "收集线索",
 											"type": "entries",
-											"page": 37,
-											"id": "099",
+											"id": "072",
+											"page": 32,
 											"entries": [
-												"这三个糖果桶里各有一百块包装好的咸水太妃糖。角色们可以用这些太妃糖安抚巴霸·乌嘎（参见区域{@area C9|0a5|x}）。",
-												"一大团未经拉伸、未被包裹的太妃糖状物质躺在地板上，靠西墙的窗边。一个生物如果在回合中第一次进入与该太妃糖团共享的格子，或在其回合结束时处于该格子，则必须成功通过一次{@dc 10}敏捷豁免检定，否则将获得{@condition 束缚|XPHB}状态，直到其下一个回合结束。"
-											]
-										},
-										{
-											"ENG_name": "Taffy Puller",
-											"name": "太妃糖拉制机",
-											"type": "entries",
-											"page": 37,
-											"id": "09a",
-											"entries": [
-												"靠北墙矗立着一台糖果装置，它能神奇地将其内容物拉伸成盐水太妃糖。任何在太妃糖拉伸器手臂占据的空间内开始其回合的生物，必须成功通过一次{@dc 15}力量豁免，否则将受到9（{@dice 2d8}）点钝击伤害，并被转化为糖果生物（见\"{@area 糖果生物|085|x}\"）。在此状态下，该生物将拥有柔软略带弹性的太妃糖形态。"
-											]
-										}
-									]
-								},
-								{
-									"ENG_name": "C6: Trapped Hallway",
-									"name": "C6：被陷阱封锁的走廊",
-									"type": "entries",
-									"page": 37,
-									"id": "09b",
-									"entries": [
-										{
-											"type": "insetReadaloud",
-											"page": 37,
-											"id": "09c",
-											"entries": [
-												"这条长廊的地板上铺着点缀着薄荷色格子的瓷砖，上面还洒满了面粉。"
-											]
-										},
-										"如地图所示，走廊中段横跨着一块压力板。任何进行搜索陷阱检定并成功通过{@dc 15} 感知（{@skill 察觉|XPHB}）检定的角色会注意到该压力板。",
-										"当一个生物踩上压力板时，一根5英尺长、10英尺宽的木制擀面杖会从大厅北端的天花板上落下，并沿着走廊滚动，碾压路径上的所有生物。走廊中的每个生物都必须成功通过一次{@dc 15}敏捷豁免检定，否则将受到7（{@dice 2d6}）点钝击伤害，陷入{@condition 倒地|XPHB}状态，并被转化为糖果生物（参见\"{@area 糖果生物|085|x}\"）。在被糖果化期间，该生物会变成扁平的姜饼形态。",
-										"擀面杖停在大厅的南端。"
-									]
-								},
-								{
-									"ENG_name": "C7: Candied Apple Orchard",
-									"name": "C7: 蜜饯苹果园",
-									"type": "entries",
-									"page": 37,
-									"id": "09d",
-									"entries": [
-										{
-											"type": "insetReadaloud",
-											"page": 37,
-											"id": "09e",
-											"entries": [
-												"庭院中有四棵树皮如薄荷糖般的树木，精致的白色树枝上悬挂着糖果苹果。一道四英尺高、由泡泡糖砖块砌成的墙壁挡住了南面的入口。"
-											]
-										},
-										"自然光充盈于此庭院中。翻越低矮墙壁轻而易举，但需要额外花费5尺移动速度。",
-										"三只糖果{@creature 树精|XMM|树精}（参见\"{@area 糖果生物|085|x}\"）藏在树林中，监视着闯入者。若一名角色仔细观察树林并通过{@dc 16}感知（{@skill 察觉|XPHB}）检定，即可发现一只树妖。",
-										{
-											"ENG_name": "Candied Apples",
-											"name": "蜜饯苹果",
-											"type": "entries",
-											"page": 37,
-											"id": "09f",
-											"entries": [
-												"若角色试图拾取任何蜜饯苹果，一位糖果树精将停止隐匿并用精灵语发出以下警告：",
+												"角色可以在或围绕废弃糖果店发现以下线索。",
 												{
-													"type": "insetReadaloud",
-													"page": 37,
-													"id": "0a0",
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "adventure/DrDe/026-02-003.fill-flourforge-npc.webp"
+													},
+													"width": 850,
+													"height": 1044,
+													"credit": "Andrew Kolb"
+												},
+												{
+													"ENG_name": "Burnt Roll",
+													"name": "烧焦卷轴",
+													"type": "entries",
+													"id": "073",
+													"page": 32,
 													"entries": [
-														"\"站住！这些糖苹果是留给孩子们和野生动物的。收回你的手，否则就要承受自然的怒火。\""
+														"一个角色若采取{@action 搜索|XPHB}动作并成功通过{@dc 12}感知（{@skill 察觉|XPHB}）检定，就会在糖果店后方的草丛中发现半个被啃过的、略焦的肉桂卷。通过在镇上打听，或者采取后续的{@action 研究|XPHB}动作并成功通过{@dc 12}智力（{@skill 历史|XPHB}）检定，可得知这个面包卷是由一位名叫菲尔·面粉煅（Fill Flourforge）的矮人经营的本地烘焙坊制作的（详见「{@area 菲尔面包店|078|x}」）。"
 													]
 												},
-												"每天，这片区域的树木都会魔法般地结出{@dice 1d10}个裹着脆脆糖衣的清脆苹果。苹果的茎干是方便食用的糖果棒。角色们可以用这些糖苹果安抚布巴·乌嘎（见区域{@area C9|0a5|x}）。",
-												"树精会攻击那些无视其命令的角色，但它们允许儿童和动物自由享用苹果。想要避免战斗的角色可以通过各种巧妙的方法获取苹果：",
 												{
-													"type": "list",
-													"items": [
-														"通过变形成一只林地动物",
-														"通过解救被困在地牢（区域 {@area C15|0be|x}）中的孩子阿斯杰，并向他寻求帮助",
-														"通过成功的{@dc 15}敏捷({@skill 巧手|XPHB})检定，每次成功偷取一个苹果",
-														"通过使用{@spell 动物交谈|XPHB}法术从周围森林中招募林地生物，或成功通过一次{@dc 15}感知（{@skill 驯兽|XPHB}）检定"
+													"ENG_name": "Family Portrait",
+													"name": "家庭肖像",
+													"type": "entries",
+													"id": "074",
+													"page": 32,
+													"entries": [
+														"一名角色若搜查糖果店内部（或在烧毁后搜索其灰烬），会发现一幅被烧焦的伊迪丝和她弟弟阿斯特儿时的画像。若将画像归还给她，伊迪丝会落下一滴眼泪，并解释道：\"小时候，弟弟'消失在森林里再没回过家'。\"她没再多作说明。"
+													]
+												},
+												{
+													"ENG_name": "Foul Play",
+													"name": "不正当手段",
+													"type": "entries",
+													"id": "075",
+													"page": 32,
+													"entries": [
+														"如果迫不得已要指认一个可能的嫌疑人，伊迪丝或其他镇民会不情愿地暗示，当地的烘焙师{@area 菲尔·弗洛弗格|069|x}可能从成为镇上唯一的甜点供应商中获益。"
+													]
+												},
+												{
+													"ENG_name": "Unreliable Witness",
+													"name": "不可靠的目击者",
+													"type": "entries",
+													"id": "076",
+													"page": 32,
+													"entries": [
+														"如果角色们向围观者征集目击证词，一位醉醺醺的人类女性（其可信度存疑）声称自己在火灾发生后看见一只\"金色蜥蜴\"飞进了树林。这个名叫皮特拉·希尔弗的目击者随后就开始喋喋不休地讲述她曾被穴居人绑架、却无人相信的经历。"
 													]
 												}
 											]
@@ -1982,792 +968,1812 @@
 									]
 								},
 								{
-									"ENG_name": "C8: Chocatrice Barn",
-									"name": "C8：陆行鸟鸡怪畜栏",
+									"ENG_name": "Next Steps",
+									"name": "下一步",
 									"type": "entries",
-									"page": 37,
-									"id": "0a1",
+									"id": "077",
+									"page": 32,
 									"entries": [
-										{
-											"type": "insetReadaloud",
-											"page": 37,
-											"id": "0a2",
-											"entries": [
-												"八座巧克力雕像分布在这座质朴的谷仓各处。雕像刻画了神情痛苦的人形生物。四只长着可可色羽毛的肮脏禽鸟在雕像周围点头啄食，对着巧克力塑像发出刺耳鸣叫。最北端的雕像后方地面上有个用白色面丝编织的鸟巢。"
-											]
-										},
-										"四只巧力怪鸡栖息在这个谷仓中，会攻击任何闯入者。它们都使用{@creature 蛇鸡|XMM}的数据卡，但如果生物因它们的石化啃咬而获得{@condition 石化|XPHB}状态，则会变成巧克力而非石头。",
-										{
-											"ENG_name": "Chocolate Eggs",
-											"name": "巧克力蛋",
-											"type": "entries",
-											"page": 38,
-											"id": "0a3",
-											"entries": [
-												"在最北侧雕像后方的一堆切碎的酥皮面团中藏有六颗奶油夹心巧克力蛋，角色们可用其安抚巴霸·乌嘎（见区域{@area C9|0a5|x}）。"
-											]
-										},
-										{
-											"ENG_name": "Statues",
-											"name": "雕像",
-											"type": "entries",
-											"page": 38,
-											"id": "0a4",
-											"entries": [
-												"这些雕像是徒步者、猎人、伐木工人和其他不幸旅客的巧克力残骸。每一具都被巧克力怪鸟的喙啄出了细小的孔洞；有几具缺失了手指和脚趾。"
-											]
-										}
+										"根据收集到的线索，玩家们可能会决定调查面包店或是前往森林追踪逃离火灾的怪物。如果玩家从面包店开始，参见\"{@area 菲尔面包店|078|x}\"；如果从森林开始，请跳转到\"{@area 糖果小屋|080|x}。\""
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Fill's Bakery",
+							"name": "菲尔面包店",
+							"type": "section",
+							"id": "078",
+							"page": 32,
+							"entries": [
+								"哈伯顿的大部分居民都在菲尔面包店购买面包。这家古雅的双层店铺位于城镇中心附近，为饥饿的旅人和勤劳的当地人提供服务。",
+								"当不在招待顾客时，菲尔通常会在厨房里，尝试新食谱并准备店里每日供应的各式烘焙食品。",
+								{
+									"ENG_name": "Bakery Layout",
+									"name": "面包店布局",
+									"type": "entries",
+									"id": "079",
+									"page": 32,
+									"entries": [
+										"从外面看，这家面包店（地图见{@area 地图：菲尔的面包店|40c|x}）就像一块巨型面包。一楼设有厨房、储藏室和店面。二楼则是菲尔和他秘密的龙族副厨布里欧什贝恩的居住区。"
 									]
 								},
 								{
-									"ENG_name": "C9: Bubba Wugga",
-									"name": "C9: 巴霸·沃嘎",
+									"ENG_name": "Arrival at the Bakery",
+									"name": "到达面包店",
 									"type": "entries",
-									"page": 38,
-									"id": "0a5",
+									"id": "07a",
+									"page": 33,
 									"entries": [
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "adventure/DrDe/032-02-005.bubba-wugga-npc.webp"
-											},
-											"credit": "Andrew Kolb",
-											"width": 850,
-											"height": 1004
-										},
+										"当角色们进入面包店时，朗读或转述以下文字：",
 										{
 											"type": "insetReadaloud",
-											"page": 38,
-											"id": "0a6",
+											"id": "07b",
+											"page": 33,
 											"entries": [
-												"一个穿着尿布的巨型婴儿玩偶坐在由铰链连接的巧克力棒制成的双扇门前。即便坐着，玩偶也超过七英尺高。它攥着一根看起来不怀好意的棒棒糖，独眼从玩偶脸上窥视着你。它直勾勾盯着你的方向。「对不叽，」独眼玩偶得意洋洋地闷声说道，「厨房关门啦。」"
+												"踏入这家迷人的面包店时，铜铃清脆作响。阳光透过小窗洒落，照亮了枫木架子上整齐排列的彩色糖果、沾满面粉的面包和金黄酥皮点心。新鲜出炉的面包香气弥漫在空气中。一位眉毛浓密、面容光洁的矮人从厨房走出，手里端着盘肉桂卷。「日安，」他将点心摆上货架时说道，「需要些什么？」"
 											]
 										},
-										"玩偶布巴·乌加被放置在双扇门前，按照{@area 尼布切克叔叔|06a|x}的指示，拒绝让访客进入厨房（区域{@area C10|0a7|x}）。布巴·乌加是一个构装体，通晓通用语和精灵语；在其他方面使用{@creature 食人魔|XMM}的数据模板。它挥舞着一根棒棒糖形状的{@item 巨棒|XPHB}，并能自动通过所有试图迫使其违背尼伯奇克叔叔命令的法术豁免检定。",
-										"如果巴霸·沃嘎在战斗中击败了角色们，他们将在1点{@variantrule 生命值|XPHB|生命值}的状态下，作为囚犯在地牢（区域{@area C15|0be|x}）中醒来。",
-										"只有糖果能让巴霸·乌嘎无视女巫的指示。要让这个人偶站到一边，角色们必须从农舍别处带来三种不同的糖果。巴霸·乌嘎会高兴地告诉角色们它最喜欢的糖果及位置（详见「巴霸·乌嘎最爱的糖果」表），且不接受任何替代品。获得糖果后，巴霸·乌嘎会抱着战利品挤出通道，退回到游戏室（区域{@area C3|090|x}），并小心翼翼地跨过走廊中的压力板（区域{@area C6|09b|x}）。",
+										"{@area 菲尔·弗洛弗格|069|x}（中型{@creature 匪徒|XMM}）身着一件面粉弄脏的围裙。他很友善，热情欢迎所有顾客。",
+										"菲尔一边试图向角色们推销烘焙点心（见\"{@area 有什么在售？|07c|x}\"），一边与他们闲聊。如果他们告诉菲尔关于伊迪丝糖果店的火灾，他看起来明显很震惊。这位面包师强烈否认任何纵火的指控，并回答说他有很多顾客可以证明火灾发生时他一直在自己的面包店里。然而，一个聆听菲尔的不在场证明并成功通过{@dc 15}感知（{@skill 洞悉|XPHB}）检定角色能够察觉他在隐瞒着什么。",
+										"角色可以通过采取{@action 影响|XPHB}动作并进行一项{@dc 14}魅力（{@skill 威吓|XPHB}或{@skill 游说|XPHB}）检定来从菲尔那里获取更多信息。若成功，菲尔会讲述完整的故事（详见\"{@area 龙之困境|07e|x}\"）。如果角色出示在糖果店外找到的被咬过的面包卷，将自动成功通过此检定。若检定失败，菲尔会坚持原来的说法，但角色可以再次尝试。"
+									]
+								},
+								{
+									"ENG_name": "What's for Sale?",
+									"name": "有什么在售？",
+									"type": "entries",
+									"id": "07c",
+									"page": 33,
+									"entries": [
+										"菲尔靠售卖面包和糕点过着诚实的生活。他的商品及其价格如下方的烘焙食品表所示。",
 										{
 											"type": "table",
-											"caption": "布巴·乌加最爱的糖果",
-											"page": 38,
+											"caption": "烘焙食品",
+											"page": 33,
 											"colLabels": [
-												"糖果",
-												"位置"
+												"物品",
+												"价格"
 											],
 											"colStyles": [
-												"col-4",
-												"col-8"
+												"col-8",
+												"col-4"
 											],
 											"rows": [
 												[
-													"冰糖苹果",
-													"蜜饯苹果园（区域 {@area C7|09d|x}）"
+													"肉桂卷",
+													"1银币（1金币可买一打）"
 												],
 												[
-													"巧克力蛋",
-													"陆行鸟鸡舍（区域 {@area C8|0a1|x}）"
+													"甜面包（带有蓝色、粉色或黄色糖霜）",
+													"3 cp"
 												],
 												[
-													"姜饼",
-													"条纹地牢（区域 {@area C15|0be|x}）"
-												],
-												[
-													"软糖枕头",
-													"胶质木乃伊之墓（区域{@area C14|0b9|x}）"
-												],
-												[
-													"海盐太妃糖",
-													"太妃糖工厂（区域 {@area C5|097|x}）"
+													"一条面包",
+													"2CP"
 												]
 											]
 										}
 									]
 								},
 								{
-									"ENG_name": "C10: Candy Kitchen",
-									"name": "C10: 糖果厨房",
+									"ENG_name": "Dragon Dilemma",
+									"name": "龙之困境",
 									"type": "entries",
-									"page": 38,
-									"id": "0a7",
+									"id": "07e",
+									"page": 33,
 									"entries": [
+										"一旦菲尔认为他可以信任这些角色\u2014\u2014或者觉得别无选择\u2014\u2014他会透露以下信息：",
 										{
-											"type": "insetReadaloud",
-											"page": 38,
-											"id": "0a8",
-											"entries": [
-												"一个佝偻的巫婆像绿皮肤的可怕老头，围着沾满污渍的烘焙围裙在沸腾的糖罐和杂乱的柜台间穿梭。巧克力蟾蜍、闪烁的罐子里装着仍在颤动的薄翼，以及其他外形怪异的原料堆满了工作台面。西南角有一段用巧克力木板制成的楼梯通向下方。厨房的主要特征是一个镶嵌着红宝石的巨大木烧金属烤炉，铰链门敞开着，露出熊熊燃烧的火焰。"
-											]
-										},
-										{
-											"type": "insetReadaloud",
-											"page": 39,
-											"id": "0a9",
-											"entries": [
-												"一只体型如大狗般的金龙蜷伏在炉顶上。龙的眼睛显得浑浊发白。女巫察觉到你的闯入，猛地转过身来，说道：\"嘿！谁放你们进来的？\""
-											]
-										},
-										"尼布尔奇克叔叔，一只暴躁的{@creature 绿鬼婆|XMM}，在这间忙碌的厨房工作。这个鬼婆最初对角色们态度漠然，但无法容忍有人进入他的厨房；他们在此停留越久，他就变得越加暴躁，直到他的态度转变为敌对。",
-										"如果角色们与尼布尔奇克叔叔战斗，他会拍手命令雏龙保护他（见下方的\"布里欧修贝恩\"）。这个巫婆会战斗直到{@status 浴血|XPHB}，此时他会为活命讨价还价（见\"{@area 与女巫交涉|0ac|x}\"）。如果尼布尔奇克叔叔被杀死，所有被他魔法变成糖果的生物（见\"{@area 蜜饯生物|085|x}\"）都会恢复原形。",
-										"同时对抗龙和巫婆可能不会让角色们占得上风。如果角色们被击败，他们将在监狱（区域 {@area C15|0be|x}）中醒来，每人只剩 1 {@variantrule 生命值|XPHB|生命值}。",
-										{
-											"ENG_name": "Briochebane",
-											"name": "布里欧修班",
-											"type": "entries",
-											"page": 39,
-											"id": "0aa",
-											"entries": [
-												"布里欧许灾星是菲尔信任的学徒与烘焙伙伴，它是一条会讲通用语和矮人语的{@creature 金龙雏龙|XMM}。当她来到小屋时，咀嚼叔叔用魔法糕点诱骗她吃下，这使得她变得顺从；布里欧许灾星因此处于{@condition 魅惑|XPHB}状态。该状态结束前，雏龙将巫婆视为盟友并服从咀嚼叔叔。若角色采取{@action 搜索|XPHB}动作观察雏龙，并通过{@dc 13}感知（{@skill 洞悉|XPHB}）检定，则会发现她被魅惑了。",
-												"队伍可以通过以下方式解除雏龙的魅惑状态：",
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
 												{
-													"type": "list",
-													"style": "list-hang-notitle",
-													"items": [
+													"ENG_name": "Past Life",
+													"name": "过往经历",
+													"type": "item",
+													"entry": "菲尔曾是个土匪。他的最后一次抢劫差点要了他的命，但他带着一颗金龙蛋和足够的金币逃了出来，用这些钱开了间面包店，彻底金盆洗手了。"
+												},
+												{
+													"ENG_name": "Secret Ingredient",
+													"name": "秘制原料",
+													"type": "item",
+													"entry": "菲尔糕点是使用龙焰烘烤的，这是一种严格保密的秘密配方，由菲尔在秘密场所饲养的一头金龙提供。最近几个月，随着名为布里欧修祸的幼龙逐渐长大，菲尔越来越难以将它隐藏在公众视线之外。"
+												},
+												{
+													"ENG_name": "Missing Dragon",
+													"name": "失踪的巨龙",
+													"type": "item",
+													"entry": "在烤好了今天的甜面包后，奶油卷灾星消失了。菲尔担心那条龙可能对糕点店的大火负有责任。若果真如此，菲尔发誓要匿名资助其重建工作。"
+												}
+											]
+										},
+										{
+											"ENG_name": "Fill's Quest",
+											"name": "菲尔的冒险",
+											"type": "entries",
+											"id": "07f",
+											"page": 33,
+											"entries": [
+												{
+													"type": "gallery",
+													"images": [
 														{
-															"ENG_name": "Cinnamon Bribe",
-															"name": "肉桂贿赂",
-															"type": "item",
-															"entry": "对布里欧许小恶龙（Briochebane）采取{@action 操作|XPHB}动作，并呈上Fill's面包店的肉桂卷，可立即终止其魅惑状态。作为动作吞下卷饼后，布里欧许会感谢角色们并将他们视为朋友。随后她会带着复仇的快意与Nibblecheek叔叔战斗。"
+															"type": "image",
+															"id": "40c",
+															"href": {
+																"type": "internal",
+																"path": "adventure/DrDe/027-map-02.02-fills-bakery-dm.webp"
+															},
+															"width": 3295,
+															"height": 4096,
+															"imageType": "map",
+															"grid": {
+																"type": "square",
+																"size": 211,
+																"offsetX": 84,
+																"offsetY": 31
+															},
+															"title": "地图2.2：菲尔兹面包店",
+															"credit": "Andrew Kolb"
 														},
 														{
-															"ENG_name": "Damaging the Dragon",
-															"name": "伤害巨龙",
-															"type": "item",
-															"entry": "每当布里欧修贝恩受到伤害时，她会进行一次{@dc 15}感知豁免检定。若成功，她身上的该状态结束。"
+															"type": "image",
+															"href": {
+																"type": "internal",
+																"path": "adventure/DrDe/028-map-02.02-fills-bakery-player.webp"
+															},
+															"width": 3295,
+															"height": 4096,
+															"imageType": "mapPlayer",
+															"grid": {
+																"type": "square",
+																"size": 211,
+																"offsetX": 84,
+																"offsetY": 31
+															},
+															"title": "玩家版本",
+															"credit": "Andrew Kolb",
+															"mapParent": {
+																"id": "40c"
+															}
+														}
+													]
+												},
+												"在告知上述信息后，菲尔恳求角色们找到布里欧什贝恩并将他的被监护人安全带回家。他哀求他们不要杀死那条龙\u2014\u2014她是他仅存的家人。只要布里欧什贝恩安全归来，菲尔承诺将从自己过往犯罪生涯的藏匿财物中拿出100金币奖励众人。",
+												"如果角色们接受，菲尔告诉他们布里欧什班喜欢在城镇东边的树林里嬉戏和打猎。然后他递给角色们一个装有三个温热肉桂卷的袋子\u2014\u2014布里欧什班最爱的甜点\u2014\u2014用来引诱这条龙回面包店。菲尔强调角色们不能吃掉这些面包卷，否则这条龙可能不会听从他们的命令。如果他们想要自己的，菲尔会免费送给每位角色一个面包卷。",
+												"如果角色们拒绝，菲尔只要求他们不要泄露他分享的秘密。在离开前，面包师提到布里欧修贝恩就像优质面包：外表硬脆但内里柔软。他再次热切请求角色们不要伤害她。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "The Candy Cottage",
+							"name": "糖果小屋",
+							"type": "section",
+							"id": "080",
+							"page": 34,
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/029-02-004.candy-cottage.webp"
+									},
+									"width": 1700,
+									"height": 1168,
+									"credit": "Andrew Kolb"
+								},
+								"哈勃顿以东是一片未经开发的参天古树区，野生动物繁衍生息。",
+								"纵火烧毁伊迪丝的糖果店后，奶油面包逃进了森林，在那里她闻到了一路糖果的香气，放纵了自己的嗜甜之欲，但这路糖果将她引入了邪灵{@area 尼布切克叔叔|06a|x}的魔爪。角色的调查会让他们走上相同的道路。",
+								"尼布尔奇克叔叔的小屋坐落在远离哈布尔顿的一处如画小树林中。",
+								{
+									"ENG_name": "Candy Trail",
+									"name": "糖果小径",
+									"type": "entries",
+									"id": "081",
+									"page": 34,
+									"entries": [
+										"当角色们进入森林时，朗读或转述以下内容：",
+										{
+											"type": "insetReadaloud",
+											"id": "082",
+											"page": 34,
+											"entries": [
+												"哈伯顿之外延展着一片茂密的森林。参天大树高耸入云，林中小动物在这些古老的树干中筑巢，苔藓像绿色的长胡须般从树枝上垂下。空气清新怡人。短暂徘徊后，你偶然发现一条点缀着彩色糖果的小径。这条糖果小径向森林深处延伸。"
+											]
+										},
+										"在跟随踪迹一小时后，角色们抵达了尼布尔奇克叔叔的糖果小屋。"
+									]
+								},
+								{
+									"ENG_name": "Arriving at the Cottage",
+									"name": "到达小屋",
+									"type": "entries",
+									"id": "083",
+									"page": 35,
+									"entries": [
+										"当角色们抵达小屋时，阅读或转述以下文字：",
+										{
+											"type": "insetReadaloud",
+											"id": "084",
+											"page": 35,
+											"entries": [
+												"糖果小径尽头是一座位于森林深处的宽敞小屋。混合的甜美香气从建筑中飘散而出，各种糖果装饰着它的外部：棒棒糖、太妃糖、松露巧克力以及其他一口大小的美味。彩色的糖玻璃板构成了它的窗格，粉红威化饼干板铺就了前廊，屋顶则用甘草编织而成。一座矮胖的薄荷糖塔从屋后拔地而起，顶部覆盖着厚厚的糖霜漩涡。小屋东侧是一座红色的小谷仓，而森林边缘附近则矗立着一间北向的户外厕所。两者皆由巧克力板搭建而成。"
+											]
+										},
+										"角色可以随意取食装点小屋的糖果。被食用的糖果会在10分钟后被魔法补充。任何品尝过小屋外表甜点的角色都会产生进入小屋的强烈欲望，但可以抵抗这种诱惑。",
+										{
+											"type": "gallery",
+											"images": [
+												{
+													"type": "image",
+													"id": "40d",
+													"href": {
+														"type": "internal",
+														"path": "adventure/DrDe/030-map-02.03-candy-cottage-dm.webp"
+													},
+													"hrefThumbnail": {
+														"type": "internal",
+														"path": "adventure/DrDe/thumbnail/030-map-02.03-candy-cottage-dm.webp"
+													},
+													"width": 4096,
+													"height": 2667,
+													"imageType": "map",
+													"grid": {
+														"type": "square",
+														"size": 106,
+														"offsetX": 71,
+														"offsetY": 69
+													},
+													"title": "地图2.3：糖果小屋",
+													"credit": "Andrew Kolb",
+													"mapRegions": [
+														{
+															"area": "08c",
+															"points": [
+																[
+																	919,
+																	2208
+																],
+																[
+																	919,
+																	2401
+																],
+																[
+																	1342,
+																	2401
+																],
+																[
+																	1342,
+																	2208
+																]
+															]
 														},
 														{
-															"ENG_name": "Nibblecheek's Demise",
-															"name": "尼布尔奇克的末日",
-															"type": "item",
-															"entry": "杀死这个巫婆将解除雏龙身上的魅惑状态。"
+															"area": "090",
+															"points": [
+																[
+																	721,
+																	1781
+																],
+																[
+																	721,
+																	2170
+																],
+																[
+																	1006,
+																	2170
+																],
+																[
+																	1006,
+																	1781
+																]
+															]
+														},
+														{
+															"area": "094",
+															"points": [
+																[
+																	1252,
+																	1781
+																],
+																[
+																	1252,
+																	2172
+																],
+																[
+																	1539,
+																	2172
+																],
+																[
+																	1539,
+																	1781
+																]
+															]
+														},
+														{
+															"area": "08e",
+															"points": [
+																[
+																	1040,
+																	1888
+																],
+																[
+																	1040,
+																	2171
+																],
+																[
+																	1218,
+																	2171
+																],
+																[
+																	1218,
+																	1888
+																]
+															]
+														},
+														{
+															"area": "09b",
+															"points": [
+																[
+																	1043,
+																	1118
+																],
+																[
+																	1043,
+																	1850
+																],
+																[
+																	1221,
+																	1850
+																],
+																[
+																	1221,
+																	1118
+																]
+															]
+														},
+														{
+															"area": "097",
+															"points": [
+																[
+																	723,
+																	1145
+																],
+																[
+																	1010,
+																	1145
+																],
+																[
+																	1010,
+																	1746
+																],
+																[
+																	719,
+																	1746
+																],
+																[
+																	719,
+																	1600
+																],
+																[
+																	620,
+																	1501
+																],
+																[
+																	620,
+																	1395
+																],
+																[
+																	723,
+																	1291
+																]
+															]
+														},
+														{
+															"area": "09d",
+															"points": [
+																[
+																	1253,
+																	1147
+																],
+																[
+																	1253,
+																	1744
+																],
+																[
+																	1861,
+																	1744
+																],
+																[
+																	1861,
+																	1147
+																]
+															]
+														},
+														{
+															"area": "0a1",
+															"points": [
+																[
+																	1882,
+																	1139
+																],
+																[
+																	1882,
+																	1752
+																],
+																[
+																	2285,
+																	1752
+																],
+																[
+																	2285,
+																	1139
+																]
+															]
+														},
+														{
+															"area": "0b1",
+															"points": [
+																[
+																	1571,
+																	1108
+																],
+																[
+																	1860,
+																	1108
+																],
+																[
+																	1905,
+																	1097
+																],
+																[
+																	1941,
+																	1082
+																],
+																[
+																	1976,
+																	1061
+																],
+																[
+																	2012,
+																	1028
+																],
+																[
+																	2034,
+																	992
+																],
+																[
+																	2051,
+																	950
+																],
+																[
+																	2062,
+																	911
+																],
+																[
+																	2063,
+																	861
+																],
+																[
+																	2060,
+																	815
+																],
+																[
+																	2046,
+																	772
+																],
+																[
+																	2032,
+																	736
+																],
+																[
+																	2011,
+																	699
+																],
+																[
+																	1981,
+																	670
+																],
+																[
+																	1942,
+																	644
+																],
+																[
+																	1902,
+																	627
+																],
+																[
+																	1859,
+																	620
+																],
+																[
+																	1821,
+																	616
+																],
+																[
+																	1781,
+																	619
+																],
+																[
+																	1742,
+																	629
+																],
+																[
+																	1703,
+																	644
+																],
+																[
+																	1674,
+																	661
+																],
+																[
+																	1643,
+																	692
+																],
+																[
+																	1619,
+																	724
+																],
+																[
+																	1599,
+																	764
+																],
+																[
+																	1582,
+																	804
+																],
+																[
+																	1576,
+																	848
+																],
+																[
+																	1571,
+																	888
+																]
+															]
+														},
+														{
+															"area": "0a7",
+															"points": [
+																[
+																	1041,
+																	897
+																],
+																[
+																	1041,
+																	349
+																],
+																[
+																	1198,
+																	192
+																],
+																[
+																	1381,
+																	192
+																],
+																[
+																	1539,
+																	350
+																],
+																[
+																	1539,
+																	704
+																],
+																[
+																	1230,
+																	704
+																],
+																[
+																	1230,
+																	897
+																]
+															]
+														},
+														{
+															"area": "0b0",
+															"points": [
+																[
+																	1260,
+																	736
+																],
+																[
+																	1260,
+																	897
+																],
+																[
+																	1535,
+																	897
+																],
+																[
+																	1535,
+																	736
+																]
+															]
+														},
+														{
+															"area": "0a5",
+															"points": [
+																[
+																	723,
+																	614
+																],
+																[
+																	723,
+																	932
+																],
+																[
+																	1009,
+																	932
+																],
+																[
+																	1009,
+																	614
+																]
+															]
+														},
+														{
+															"area": "0b6",
+															"points": [
+																[
+																	2176,
+																	387
+																],
+																[
+																	2176,
+																	213
+																],
+																[
+																	2308,
+																	213
+																],
+																[
+																	2308,
+																	387
+																]
+															]
+														},
+														{
+															"area": "0b9",
+															"points": [
+																[
+																	3391,
+																	1026
+																],
+																[
+																	3391,
+																	1336
+																],
+																[
+																	3801,
+																	1336
+																],
+																[
+																	3801,
+																	1026
+																]
+															]
+														},
+														{
+															"area": "0be",
+															"points": [
+																[
+																	2968,
+																	1453
+																],
+																[
+																	2968,
+																	1865
+																],
+																[
+																	3800,
+																	1865
+																],
+																[
+																	3800,
+																	1453
+																]
+															]
+														}
+													]
+												},
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "adventure/DrDe/031-map-02.03-candy-cottage-player.webp"
+													},
+													"width": 4096,
+													"height": 2667,
+													"imageType": "mapPlayer",
+													"grid": {
+														"type": "square",
+														"size": 106,
+														"offsetX": 71,
+														"offsetY": 69
+													},
+													"title": "玩家版本",
+													"credit": "Andrew Kolb",
+													"mapParent": {
+														"id": "40d"
+													}
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Candy Creatures",
+									"name": "糖果生物",
+									"type": "entries",
+									"id": "085",
+									"page": 35,
+									"entries": [
+										"小屋中的某些效果可以改变生物的外形，以及它所穿着或携带的所有非魔法物品\u2014\u2014将它们变成活化的糖果。当角色被转化为活化糖果时，文本会指定糖果的种类。",
+										"处于糖果形态的生物不会衰老，但该形态变化不会影响其属性数据。糖果护甲与其同类常规护甲同样坚固，糖果武器也与普通版本一样致命且耐用。",
+										"糖果生物若成为{@spell 高等复原术|XPHB}法术的目标或{@area 尼布切克叔叔|06a|x}死亡，则会恢复原本形态。作为一个{@action 魔法|XPHB}动作，妖鬼婆可以恢复其触碰的一个生物。如果糖果生物受到另一个也会将其目标变成糖果的效果影响，该生物不会再被改变，但仍会正常承受其他所有后果。"
+									]
+								},
+								{
+									"ENG_name": "Cottage Features",
+									"name": "小屋特性",
+									"type": "entries",
+									"id": "086",
+									"page": 35,
+									"entries": [
+										"除非另有说明，小屋具有以下特征。",
+										{
+											"ENG_name": "Ceilings",
+											"name": "天花板",
+											"type": "entries",
+											"id": "087",
+											"page": 35,
+											"entries": [
+												"小屋的天花板高10尺，塔楼（区域{@area C12|0b1|x}）除外，那里的天花板高20尺。所有天花板都覆盖着一层甜糖霜。"
+											]
+										},
+										{
+											"ENG_name": "Doors",
+											"name": "门",
+											"type": "entries",
+											"id": "088",
+											"page": 35,
+											"entries": [
+												"小屋内的门均由厚实的巧克力条制成，表面蚀刻着木纹图案。每扇巧克力门都没有上锁，其坚固程度与木门相当。"
+											]
+										},
+										{
+											"ENG_name": "Edible Objects",
+											"name": "可食用物品",
+											"type": "entries",
+											"id": "089",
+											"page": 35,
+											"entries": [
+												"除文中特别指出的少数例外外，小屋中属于尼布尔切克叔叔的所有物品都由糖果制成。这些物品与不可食用的同类物品一样实用且耐用。"
+											]
+										},
+										{
+											"ENG_name": "Lighting",
+											"name": "光照",
+											"type": "entries",
+											"id": "08a",
+											"page": 35,
+											"entries": [
+												"小屋内的每个房间都充满了来自魔法糖果球的{@variantrule 明亮光照|XPHB}。吃掉糖果球或将其带离小屋会熄灭其光芒。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Cottage Locations",
+									"name": "小屋位置",
+									"type": "entries",
+									"id": "08b",
+									"page": 35,
+									"entries": [
+										"以下位置标记于{@area 地图：糖果小屋|40d|x}。",
+										{
+											"ENG_name": "C1: Porch",
+											"name": "C1: 门廊",
+											"type": "entries",
+											"id": "08c",
+											"page": 35,
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "08d",
+													"page": 35,
+													"entries": [
+														"小屋前延伸出一个有顶的门廊，其地板由明亮的粉色威化板构成。前门则由相配的巧克力板制成，雕刻成木纹样式。在双门前，一块由水果皮革制成的门垫上写着\"请擦擦脚\"。一把糖果摇椅面朝森林。"
+													]
+												},
+												"这块门垫是由柔软糖果制成的{@creature 活化闷人毯|XMM}。它会攻击那些没有擦脚就进入小屋的访客。否则，魔毯会保持静止。"
+											]
+										},
+										{
+											"ENG_name": "C2: Foyer",
+											"name": "C2: 前厅",
+											"type": "entries",
+											"id": "08e",
+											"page": 35,
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "08f",
+													"page": 35,
+													"entries": [
+														"这间朴素的玄关里弥漫着糖果香气。门口内挂着各式外套与斗篷，下方则摆着不同尺码的靴鞋。东侧是用糖果家具布置的客厅，西边则是儿童游戏室。"
+													]
+												},
+												"这些衣物与鞋履属于那些从未离开小屋的访客。"
+											]
+										},
+										{
+											"ENG_name": "C3: Bubba Wugga's Playroom",
+											"name": "C3：布巴·乌加的游乐室",
+											"type": "entries",
+											"id": "090",
+											"page": 35,
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "091",
+													"page": 35,
+													"entries": [
+														"色彩鲜艳的玩具散落在这间宽敞的游戏室里。一个巨大的空摇篮倾覆在地板上。"
+													]
+												},
+												"这间游戏室及其中的所有物属于巴伯·伍加，一个由尼布尔·奇克叔叔创造的智慧玩偶。巴伯·伍加（参见区域 {@area C9|0a5|x}）通常睡在那张婴儿床里，那张床足够大，可以舒适地容纳一个食人魔体型的婴儿。",
+												{
+													"ENG_name": "Toys",
+													"name": "玩具",
+													"type": "entries",
+													"id": "092",
+													"page": 36,
+													"entries": [
+														"这个房间陈列着一系列令人印象深刻的玩具，其中许多比它们的常规版本要大得多：包括装扮套装、小雕像、道具武器，以及一匹和成年马一样大的摇摇马。骑上摇摇马会触发一个{@spell 魔嘴术|XPHB}法术，使马匹发出嘶鸣声并大声喊叫\"热狗！\"好几次。"
+													]
+												},
+												{
+													"ENG_name": "Treasure",
+													"name": "宝藏",
+													"type": "entries",
+													"id": "093",
+													"page": 36,
+													"entries": [
+														"在玩具之中有一个{@item 魔术袋|XDMG}（灰色）。一名角色若进行{@action 搜索|XPHB}动作并通过{@dc 13}感知（{@skill 察觉|XPHB}）检定即可发现该袋子。"
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "C4: Sitting Room",
+											"name": "C4：客厅",
+											"type": "entries",
+											"id": "094",
+											"page": 36,
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "095",
+													"page": 36,
+													"entries": [
+														"这个房间里摆放着糖果制成的家具，包括一张沙发、两把椅子和一张矮桌。精致的糖果茶杯放在白砂糖垫巾上，沿着桌边排列。一个糖果茶壶悬挂在壁炉里的噼啪火焰上方，轻轻鸣响。"
+													]
+												},
+												"{@area 尼布切克叔叔|06a|x}偶尔会在这个客厅里招待客人。",
+												{
+													"ENG_name": "Secret Trapdoor",
+													"name": "秘密陷阱门",
+													"type": "entries",
+													"id": "096",
+													"page": 36,
+													"entries": [
+														"在东北角，一个活板门巧妙地隐藏在地板中。任何角色花费1分钟搜索房间寻找秘密门可通过一次成功的 {@dc 15} 感知（{@skill 察觉|XPHB}）检定发现活板门。打开活板门会露出一架通向地牢（区域 {@area C15|0be|x}）的糖果梯子。"
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "C5: Taffy Factory",
+											"name": "C5：太妃糖工厂",
+											"type": "entries",
+											"id": "097",
+											"page": 36,
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "098",
+													"page": 36,
+													"entries": [
+														"有节奏的、橡胶般的拍打声充满了这个嘈杂的房间。两个身材魁梧、毛茸茸的人形生物戴着手套和发网，将一团团类似口香糖的物质堆进房间后部的一台奇特装置中。这台机器的疯狂机械臂将色彩鲜艳的物质拉伸并扭曲成太妃糖条。与此同时，第三位工人将太妃糖剪断、包装，并按口味分类装入三个桶中的一个。"
+													]
+												},
+												"三只{@creature 熊地精武者|XMM|熊地精武者}正在这个房间里制作太妃糖。这些熊地精为尼布尔奇克叔叔工作，并对入侵者表现出敌意。战斗中，它们会试图将角色推入太妃糖拉制机（描述如下）。",
+												"一名角色可以采取{@action 影响|XPHB}动作并进行一次{@dc 12}魅力（{@skill 欺瞒|XPHB}）检定，试图骗熊地精认为该角色是啃噬叔叔的客人。被成功欺骗的熊地精将对该角色转为中立态度。",
+												{
+													"ENG_name": "Taffy",
+													"name": "太妃糖",
+													"type": "entries",
+													"id": "099",
+													"page": 37,
+													"entries": [
+														"这三个糖果桶里各有一百块包装好的咸水太妃糖。角色们可以用这些太妃糖安抚巴霸·乌嘎（参见区域{@area C9|0a5|x}）。",
+														"一大团未经拉伸、未被包裹的太妃糖状物质躺在地板上，靠西墙的窗边。一个生物如果在回合中第一次进入与该太妃糖团共享的格子，或在其回合结束时处于该格子，则必须成功通过一次{@dc 10}敏捷豁免检定，否则将获得{@condition 束缚|XPHB}状态，直到其下一个回合结束。"
+													]
+												},
+												{
+													"ENG_name": "Taffy Puller",
+													"name": "太妃糖拉制机",
+													"type": "entries",
+													"id": "09a",
+													"page": 37,
+													"entries": [
+														"靠北墙矗立着一台糖果装置，它能神奇地将其内容物拉伸成盐水太妃糖。任何在太妃糖拉伸器手臂占据的空间内开始其回合的生物，必须成功通过一次{@dc 15}力量豁免，否则将受到9（{@dice 2d8}）点钝击伤害，并被转化为糖果生物（见\"{@area 糖果生物|085|x}\"）。在此状态下，该生物将拥有柔软略带弹性的太妃糖形态。"
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "C6: Trapped Hallway",
+											"name": "C6：被陷阱封锁的走廊",
+											"type": "entries",
+											"id": "09b",
+											"page": 37,
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "09c",
+													"page": 37,
+													"entries": [
+														"这条长廊的地板上铺着点缀着薄荷色格子的瓷砖，上面还洒满了面粉。"
+													]
+												},
+												"如地图所示，走廊中段横跨着一块压力板。任何进行搜索陷阱检定并成功通过{@dc 15} 感知（{@skill 察觉|XPHB}）检定的角色会注意到该压力板。",
+												"当一个生物踩上压力板时，一根5英尺长、10英尺宽的木制擀面杖会从大厅北端的天花板上落下，并沿着走廊滚动，碾压路径上的所有生物。走廊中的每个生物都必须成功通过一次{@dc 15}敏捷豁免检定，否则将受到7（{@dice 2d6}）点钝击伤害，陷入{@condition 倒地|XPHB}状态，并被转化为糖果生物（参见\"{@area 糖果生物|085|x}\"）。在被糖果化期间，该生物会变成扁平的姜饼形态。",
+												"擀面杖停在大厅的南端。"
+											]
+										},
+										{
+											"ENG_name": "C7: Candied Apple Orchard",
+											"name": "C7: 蜜饯苹果园",
+											"type": "entries",
+											"id": "09d",
+											"page": 37,
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "09e",
+													"page": 37,
+													"entries": [
+														"庭院中有四棵树皮如薄荷糖般的树木，精致的白色树枝上悬挂着糖果苹果。一道四英尺高、由泡泡糖砖块砌成的墙壁挡住了南面的入口。"
+													]
+												},
+												"自然光充盈于此庭院中。翻越低矮墙壁轻而易举，但需要额外花费5尺移动速度。",
+												"三只糖果{@creature 树精|XMM|树精}（参见\"{@area 糖果生物|085|x}\"）藏在树林中，监视着闯入者。若一名角色仔细观察树林并通过{@dc 16}感知（{@skill 察觉|XPHB}）检定，即可发现一只树妖。",
+												{
+													"ENG_name": "Candied Apples",
+													"name": "蜜饯苹果",
+													"type": "entries",
+													"id": "09f",
+													"page": 37,
+													"entries": [
+														"若角色试图拾取任何蜜饯苹果，一位糖果树精将停止隐匿并用精灵语发出以下警告：",
+														{
+															"type": "insetReadaloud",
+															"id": "0a0",
+															"page": 37,
+															"entries": [
+																"\"站住！这些糖苹果是留给孩子们和野生动物的。收回你的手，否则就要承受自然的怒火。\""
+															]
+														},
+														"每天，这片区域的树木都会魔法般地结出{@dice 1d10}个裹着脆脆糖衣的清脆苹果。苹果的茎干是方便食用的糖果棒。角色们可以用这些糖苹果安抚布巴·乌嘎（见区域{@area C9|0a5|x}）。",
+														"树精会攻击那些无视其命令的角色，但它们允许儿童和动物自由享用苹果。想要避免战斗的角色可以通过各种巧妙的方法获取苹果：",
+														{
+															"type": "list",
+															"items": [
+																"通过变形成一只林地动物",
+																"通过解救被困在地牢（区域 {@area C15|0be|x}）中的孩子阿斯杰，并向他寻求帮助",
+																"通过成功的{@dc 15}敏捷({@skill 巧手|XPHB})检定，每次成功偷取一个苹果",
+																"通过使用{@spell 动物交谈|XPHB}法术从周围森林中招募林地生物，或成功通过一次{@dc 15}感知（{@skill 驯兽|XPHB}）检定"
+															]
 														}
 													]
 												}
 											]
 										},
 										{
-											"ENG_name": "Kitchen Equipment",
-											"name": "厨房设备",
+											"ENG_name": "C8: Chocatrice Barn",
+											"name": "C8：陆行鸟鸡怪畜栏",
 											"type": "entries",
-											"page": 39,
-											"id": "0ab",
+											"id": "0a1",
+											"page": 37,
 											"entries": [
-												"烘焙用具、厨具和烤箱均由抛光的金属制成，而非糖果。生物在一个回合内首次进入烤箱或在其内开始回合时，将受到11（{@dice 2d10}）点火焰伤害。若此伤害将啃舅舅的生命值降低至0（{@variantrule 生命值|XPHB}），他会融化成糖果浆，哀嚎着\"我在融化！\"并逐渐消解。"
+												{
+													"type": "insetReadaloud",
+													"id": "0a2",
+													"page": 37,
+													"entries": [
+														"八座巧克力雕像分布在这座质朴的谷仓各处。雕像刻画了神情痛苦的人形生物。四只长着可可色羽毛的肮脏禽鸟在雕像周围点头啄食，对着巧克力塑像发出刺耳鸣叫。最北端的雕像后方地面上有个用白色面丝编织的鸟巢。"
+													]
+												},
+												"四只巧力怪鸡栖息在这个谷仓中，会攻击任何闯入者。它们都使用{@creature 蛇鸡|XMM}的数据卡，但如果生物因它们的石化啃咬而获得{@condition 石化|XPHB}状态，则会变成巧克力而非石头。",
+												{
+													"ENG_name": "Chocolate Eggs",
+													"name": "巧克力蛋",
+													"type": "entries",
+													"id": "0a3",
+													"page": 38,
+													"entries": [
+														"在最北侧雕像后方的一堆切碎的酥皮面团中藏有六颗奶油夹心巧克力蛋，角色们可用其安抚巴霸·乌嘎（见区域{@area C9|0a5|x}）。"
+													]
+												},
+												{
+													"ENG_name": "Statues",
+													"name": "雕像",
+													"type": "entries",
+													"id": "0a4",
+													"page": 38,
+													"entries": [
+														"这些雕像是徒步者、猎人、伐木工人和其他不幸旅客的巧克力残骸。每一具都被巧克力怪鸟的喙啄出了细小的孔洞；有几具缺失了手指和脚趾。"
+													]
+												}
 											]
 										},
 										{
-											"ENG_name": "Parleying with the Hag",
-											"name": "与女巫交涉",
+											"ENG_name": "C9: Bubba Wugga",
+											"name": "C9: 巴霸·沃嘎",
 											"type": "entries",
-											"page": 39,
-											"id": "0ac",
+											"id": "0a5",
+											"page": 38,
 											"entries": [
-												"角色若在塔楼（区域{@area C12|0b1|x}）找到巫婆的假牙，可用它赎回幼龙。如果角色进行{@action 影响|XPHB}行动展示假牙，并通过{@dc 15}魅力（{@skill 游说|XPHB}）检定，尼布尔奇克叔叔会不情愿地将幼龙交给角色，并告知解除其对幼龙魔法控制的方法。",
-												"由DM裁定，角色们或许可以用其他东西替代假牙，例如一份家传秘方、菲尔的一个美味肉桂卷，或是尼布尔切克叔叔的性命（如果巫婆处于浴血状态）。",
-												"作为交易的一部分，尼伯尔奇克叔叔会将队伍中所有糖果生物恢复原形。如果角色们从地牢（区域 {@area C15|0be|x}）中救出了阿斯格，尼伯尔奇克叔叔也会对他施以同样的恩惠，解除伊迪丝与夜鬼婆的契约。随后夜鬼婆会催促队伍赶快离开。"
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "adventure/DrDe/032-02-005.bubba-wugga-npc.webp"
+													},
+													"width": 850,
+													"height": 1004,
+													"credit": "Andrew Kolb"
+												},
+												{
+													"type": "insetReadaloud",
+													"id": "0a6",
+													"page": 38,
+													"entries": [
+														"一个穿着尿布的巨型婴儿玩偶坐在由铰链连接的巧克力棒制成的双扇门前。即便坐着，玩偶也超过七英尺高。它攥着一根看起来不怀好意的棒棒糖，独眼从玩偶脸上窥视着你。它直勾勾盯着你的方向。「对不叽，」独眼玩偶得意洋洋地闷声说道，「厨房关门啦。」"
+													]
+												},
+												"玩偶布巴·乌加被放置在双扇门前，按照{@area 尼布切克叔叔|06a|x}的指示，拒绝让访客进入厨房（区域{@area C10|0a7|x}）。布巴·乌加是一个构装体，通晓通用语和精灵语；在其他方面使用{@creature 食人魔|XMM}的数据模板。它挥舞着一根棒棒糖形状的{@item 巨棒|XPHB}，并能自动通过所有试图迫使其违背尼伯奇克叔叔命令的法术豁免检定。",
+												"如果巴霸·沃嘎在战斗中击败了角色们，他们将在1点{@variantrule 生命值|XPHB|生命值}的状态下，作为囚犯在地牢（区域{@area C15|0be|x}）中醒来。",
+												"只有糖果能让巴霸·乌嘎无视女巫的指示。要让这个人偶站到一边，角色们必须从农舍别处带来三种不同的糖果。巴霸·乌嘎会高兴地告诉角色们它最喜欢的糖果及位置（详见「巴霸·乌嘎最爱的糖果」表），且不接受任何替代品。获得糖果后，巴霸·乌嘎会抱着战利品挤出通道，退回到游戏室（区域{@area C3|090|x}），并小心翼翼地跨过走廊中的压力板（区域{@area C6|09b|x}）。",
+												{
+													"type": "table",
+													"caption": "布巴·乌加最爱的糖果",
+													"page": 38,
+													"colLabels": [
+														"糖果",
+														"位置"
+													],
+													"colStyles": [
+														"col-4",
+														"col-8"
+													],
+													"rows": [
+														[
+															"冰糖苹果",
+															"蜜饯苹果园（区域 {@area C7|09d|x}）"
+														],
+														[
+															"巧克力蛋",
+															"陆行鸟鸡舍（区域 {@area C8|0a1|x}）"
+														],
+														[
+															"姜饼",
+															"条纹地牢（区域 {@area C15|0be|x}）"
+														],
+														[
+															"软糖枕头",
+															"胶质木乃伊之墓（区域{@area C14|0b9|x}）"
+														],
+														[
+															"海盐太妃糖",
+															"太妃糖工厂（区域 {@area C5|097|x}）"
+														]
+													]
+												}
 											]
 										},
 										{
-											"ENG_name": "Treasure",
-											"name": "宝藏",
+											"ENG_name": "C10: Candy Kitchen",
+											"name": "C10: 糖果厨房",
 											"type": "entries",
-											"page": 39,
-											"id": "0ad",
+											"id": "0a7",
+											"page": 38,
 											"entries": [
-												"一百颗每颗价值1金币的假红宝石装饰在烤炉的外表上。一名角色需要花费10分钟才能从烤炉表面撬下所有这些\"宝石\"。"
+												{
+													"type": "insetReadaloud",
+													"id": "0a8",
+													"page": 38,
+													"entries": [
+														"一个佝偻的巫婆像绿皮肤的可怕老头，围着沾满污渍的烘焙围裙在沸腾的糖罐和杂乱的柜台间穿梭。巧克力蟾蜍、闪烁的罐子里装着仍在颤动的薄翼，以及其他外形怪异的原料堆满了工作台面。西南角有一段用巧克力木板制成的楼梯通向下方。厨房的主要特征是一个镶嵌着红宝石的巨大木烧金属烤炉，铰链门敞开着，露出熊熊燃烧的火焰。"
+													]
+												},
+												{
+													"type": "insetReadaloud",
+													"id": "0a9",
+													"page": 39,
+													"entries": [
+														"一只体型如大狗般的金龙蜷伏在炉顶上。龙的眼睛显得浑浊发白。女巫察觉到你的闯入，猛地转过身来，说道：\"嘿！谁放你们进来的？\""
+													]
+												},
+												"尼布尔奇克叔叔，一只暴躁的{@creature 绿鬼婆|XMM}，在这间忙碌的厨房工作。这个鬼婆最初对角色们态度漠然，但无法容忍有人进入他的厨房；他们在此停留越久，他就变得越加暴躁，直到他的态度转变为敌对。",
+												"如果角色们与尼布尔奇克叔叔战斗，他会拍手命令雏龙保护他（见下方的\"布里欧修贝恩\"）。这个巫婆会战斗直到{@status 浴血|XPHB}，此时他会为活命讨价还价（见\"{@area 与女巫交涉|0ac|x}\"）。如果尼布尔奇克叔叔被杀死，所有被他魔法变成糖果的生物（见\"{@area 蜜饯生物|085|x}\"）都会恢复原形。",
+												"同时对抗龙和巫婆可能不会让角色们占得上风。如果角色们被击败，他们将在监狱（区域 {@area C15|0be|x}）中醒来，每人只剩 1 {@variantrule 生命值|XPHB|生命值}。",
+												{
+													"ENG_name": "Briochebane",
+													"name": "布里欧修班",
+													"type": "entries",
+													"id": "0aa",
+													"page": 39,
+													"entries": [
+														"布里欧许灾星是菲尔信任的学徒与烘焙伙伴，它是一条会讲通用语和矮人语的{@creature 金龙雏龙|XMM}。当她来到小屋时，咀嚼叔叔用魔法糕点诱骗她吃下，这使得她变得顺从；布里欧许灾星因此处于{@condition 魅惑|XPHB}状态。该状态结束前，雏龙将巫婆视为盟友并服从咀嚼叔叔。若角色采取{@action 搜索|XPHB}动作观察雏龙，并通过{@dc 13}感知（{@skill 洞悉|XPHB}）检定，则会发现她被魅惑了。",
+														"队伍可以通过以下方式解除雏龙的魅惑状态：",
+														{
+															"type": "list",
+															"style": "list-hang-notitle",
+															"items": [
+																{
+																	"ENG_name": "Cinnamon Bribe",
+																	"name": "肉桂贿赂",
+																	"type": "item",
+																	"entry": "对布里欧许小恶龙（Briochebane）采取{@action 操作|XPHB}动作，并呈上Fill's面包店的肉桂卷，可立即终止其魅惑状态。作为动作吞下卷饼后，布里欧许会感谢角色们并将他们视为朋友。随后她会带着复仇的快意与Nibblecheek叔叔战斗。"
+																},
+																{
+																	"ENG_name": "Damaging the Dragon",
+																	"name": "伤害巨龙",
+																	"type": "item",
+																	"entry": "每当布里欧修贝恩受到伤害时，她会进行一次{@dc 15}感知豁免检定。若成功，她身上的该状态结束。"
+																},
+																{
+																	"ENG_name": "Nibblecheek's Demise",
+																	"name": "尼布尔奇克的末日",
+																	"type": "item",
+																	"entry": "杀死这个巫婆将解除雏龙身上的魅惑状态。"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ENG_name": "Kitchen Equipment",
+													"name": "厨房设备",
+													"type": "entries",
+													"id": "0ab",
+													"page": 39,
+													"entries": [
+														"烘焙用具、厨具和烤箱均由抛光的金属制成，而非糖果。生物在一个回合内首次进入烤箱或在其内开始回合时，将受到11（{@dice 2d10}）点火焰伤害。若此伤害将啃舅舅的生命值降低至0（{@variantrule 生命值|XPHB}），他会融化成糖果浆，哀嚎着\"我在融化！\"并逐渐消解。"
+													]
+												},
+												{
+													"ENG_name": "Parleying with the Hag",
+													"name": "与女巫交涉",
+													"type": "entries",
+													"id": "0ac",
+													"page": 39,
+													"entries": [
+														"角色若在塔楼（区域{@area C12|0b1|x}）找到巫婆的假牙，可用它赎回幼龙。如果角色进行{@action 影响|XPHB}行动展示假牙，并通过{@dc 15}魅力（{@skill 游说|XPHB}）检定，尼布尔奇克叔叔会不情愿地将幼龙交给角色，并告知解除其对幼龙魔法控制的方法。",
+														"由DM裁定，角色们或许可以用其他东西替代假牙，例如一份家传秘方、菲尔的一个美味肉桂卷，或是尼布尔切克叔叔的性命（如果巫婆处于浴血状态）。",
+														"作为交易的一部分，尼伯尔奇克叔叔会将队伍中所有糖果生物恢复原形。如果角色们从地牢（区域 {@area C15|0be|x}）中救出了阿斯格，尼伯尔奇克叔叔也会对他施以同样的恩惠，解除伊迪丝与夜鬼婆的契约。随后夜鬼婆会催促队伍赶快离开。"
+													]
+												},
+												{
+													"ENG_name": "Treasure",
+													"name": "宝藏",
+													"type": "entries",
+													"id": "0ad",
+													"page": 39,
+													"entries": [
+														"一百颗每颗价值1金币的假红宝石装饰在烤炉的外表上。一名角色需要花费10分钟才能从烤炉表面撬下所有这些\"宝石\"。"
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "C11: Pantry",
+											"name": "C11: 食品储藏室",
+											"type": "entries",
+											"id": "0ae",
+											"page": 39,
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "0af",
+													"page": 39,
+													"entries": [
+														"这个储备充足的食品储藏室里，架子上摆满了烘焙原料。"
+													]
+												},
+												"这个食品储藏室里的补给品包括一套崭新的厨师工具、一顶大厨帽子和十袋面粉。一块{@hazard 绿软泥|XDMG}（参见{@book 城主指南|XDMG}）被装在标有\"奶奶的酸面团发酵剂\"的罐子里。",
+												{
+													"ENG_name": "Treasure",
+													"name": "宝藏",
+													"type": "entries",
+													"id": "0b0",
+													"page": 39,
+													"entries": [
+														"彻底搜查食品储藏室需要1分钟并找到一个装有{@item 无踪粉|XDMG}的小袋。"
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "C12: Tower",
+											"name": "C12: 高塔",
+											"type": "entries",
+											"id": "0b1",
+											"page": 39,
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "0b2",
+													"page": 39,
+													"entries": [
+														"由冰糖制成的弧形书架排列在这座塔的内墙上。其他家具包括一把舒适椅子、一张边桌和一张华丽的爪足书桌，均由黑巧克力雕刻而成。边桌上有一个咬了一半的糖渍苹果，被一副假牙夹住。一根弯曲的扫帚靠在书桌旁，一本打开的故事书放在上面。"
+													]
+												},
+												"书架上摆满了关于烹饪和烘焙的书籍，全部用精灵语写成并由糖果制成。舔舐书脊可以尝到其中知识的味道，而吞下整本书则会引发一阵糖分亢奋，随后伴随轻微的腹痛和胀气。",
+												{
+													"ENG_name": "Hag's Dentures",
+													"name": "巫婆的假牙",
+													"type": "entries",
+													"id": "0b3",
+													"page": 40,
+													"entries": [
+														"尼布尔奇克叔叔的假牙在他啃食茶几上的糖苹果时弹了出来。在他能将假牙从粘稠的糖果中解放之前，那位女巫已被召唤到别处。将假牙从苹果上取下需要一个{@action 操作|XPHB}动作，并通过一个{@dc 10}力量（{@skill 运动|XPHB}）检定。"
+													]
+												},
+												{
+													"ENG_name": "Storybook",
+													"name": "故事书",
+													"type": "entries",
+													"id": "0b4",
+													"page": 40,
+													"entries": [
+														"桌上的这本故事书描述了伊蒂丝与尼布切克叔叔的契约（详情请见\"{@area 冒险背景|067|x}\"）。书中将伊蒂丝的生活描绘成一个童话故事，并配以适合儿童的插画来突出重要事件。翻阅此书的角色会了解到，伊蒂丝年轻时曾造访过这间小屋、背叛了她的兄弟，并与女巫达成了合作关系。",
+														"这本书的最后几页是空白的，因为伊迪丝的故事尚未结束。在冒险的最后，这本书会神奇地补完它的最后几页，以反映这位糖果师与她失散已久的兄弟的命运。"
+													]
+												},
+												{
+													"ENG_name": "Treasure",
+													"name": "宝藏",
+													"type": "entries",
+													"id": "0b5",
+													"page": 40,
+													"entries": [
+														"靠在桌边的扫帚是一把{@item 芭芭·雅嘎的舞空帚|XDMG}。书桌抽屉里藏着一张卷起的{@item 法术卷轴|XDMG}，记载着{@spell 高等复原术|XPHB}。"
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "C13: Outhouse",
+											"name": "C13: 外屋",
+											"type": "entries",
+											"id": "0b6",
+											"page": 40,
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "0b7",
+													"page": 40,
+													"entries": [
+														"一间散发着诡异气味的户外厕所紧邻小屋后方的树林。"
+													]
+												},
+												"这个外屋由巧克力木板搭成。外屋内部有一本破旧的法术书和一个位于浅坑上方的巧克力座位。",
+												{
+													"ENG_name": "Treasure",
+													"name": "宝藏",
+													"type": "entries",
+													"id": "0b8",
+													"page": 40,
+													"entries": [
+														"这本法术书有几页被撕掉了。剩余页面上记载着以下法术：{@spell 警报术|XPHB}、{@spell 易容术|XPHB}、{@spell 敲击术|XPHB}、{@spell 蛛行术|XPHB}以及{@spell 臭云术|XPHB}。"
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "C14: Gummy Mummy's Tomb",
+											"name": "C14: 软糖木乃伊之墓",
+											"type": "entries",
+											"id": "0b9",
+											"page": 40,
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "0ba",
+													"page": 40,
+													"entries": [
+														"这座墓室中有一具由硬糖制成的石棺。两尊由冰糖和椰子制成的雕像矗立在石棺两侧，周围堆满了金币和其他珍品。石棺上方的墙上刻着铭文：\"愿死亡诅咒所有打扰我安眠之人。\""
+													]
+												},
+												"这座陵墓供奉着一位被尼布尔奇克叔叔诅咒的自私王子。如今变成胶质{@creature 木乃伊|XMM}的王子躺在石棺中，由两只椰子{@creature 冰魔蝠|XMM|冰魔蝠}看守。角色可以通过一次成功的{@dc 15}力量（{@skill 运动|XPHB}）检定抬起或推开石棺盖。",
+												"如果角色打扰了石棺或宝藏，胶质王子将从石棺中出现并与角色交战。小鬼们也会加入战斗。",
+												{
+													"ENG_name": "Candy Curse",
+													"name": "糖果诅咒",
+													"type": "entries",
+													"id": "0bb",
+													"page": 40,
+													"entries": [
+														"任何偷窃王子财宝的角色必须成功通过一次{@dc 15}感知豁免检定，否则将被转化为糖果生物（参见\"{@area 糖果生物|085|x}\"）。在此形态下，该角色拥有半透明的软糖身躯。"
+													]
+												},
+												{
+													"ENG_name": "Fake Treasure",
+													"name": "假宝藏",
+													"type": "entries",
+													"id": "0bc",
+													"page": 40,
+													"entries": [
+														"乍看之下，这些财宝包含数百枚金币、珠宝和其他贵重礼物，但都是糖果仿制品\u2014\u2014箔纸包裹的巧克力圆片、几何形状的糖晶体以及精心装饰的翻糖蛋糕。使用{@action 研究|XPHB}动作检视财宝的角色会发觉它们都是赝品。"
+													]
+												},
+												{
+													"ENG_name": "Gummy Pillow",
+													"name": "软糖枕头",
+													"type": "entries",
+													"id": "0bd",
+													"page": 40,
+													"entries": [
+														"石棺内有一个与真人大小相同的软糖枕头，角色们可以用它来安抚巴布瓦格（参见区域 {@area C9|0a5|x}）。"
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "C15: Striped Dungeon",
+											"name": "C15：斑纹地城",
+											"type": "entries",
+											"id": "0be",
+											"page": 40,
+											"entries": [
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "adventure/DrDe/033-02-006.gingerbread-people.webp"
+													},
+													"width": 1700,
+													"height": 1217,
+													"credit": "Andrew Kolb"
+												},
+												{
+													"type": "insetReadaloud",
+													"id": "0bf",
+													"page": 40,
+													"entries": [
+														"糖果笼子悬挂在这个糖釉地牢的天花板上，墙壁上装饰着条纹。一个由粉色泡泡糖制成的男孩占据着其中一个笼子，独自哼着欢快的曲调。在另一个笼子里，一具异常巨大的人类骷髅松散地握着一把沉重的斧头。笼子之间站着四个姜饼人\u2014\u2014每个都有六英尺高，手里拿着擀面杖作为武器。"
+													]
+												},
+												"房间东南角有一架糖果梯子通向10英尺高的天花板上一个明显的活板门。活板门可轻松推开，通往上方休息室（区域{@area C4|094|x}）",
+												"四个手持可当作硬头锤使用的擀面杖的姜饼人（混乱邪恶 {@creature 打手|XMM|打手们}）会攻击任何闯入者。这些姜饼人懂得通用语和精灵语。",
+												{
+													"ENG_name": "Gingerbread",
+													"name": "姜饼",
+													"type": "entries",
+													"id": "0c0",
+													"page": 40,
+													"entries": [
+														"被击败的姜饼人会碎裂成无生命的姜饼块，角色可用这些碎块安抚布巴·乌嘎（参见区域{@area C9|0a5|x}）。"
+													]
+												},
+												{
+													"ENG_name": "Candy Cages",
+													"name": "糖果笼",
+													"type": "entries",
+													"id": "0c1",
+													"page": 40,
+													"entries": [
+														"八只笼子悬挂在天花板上，由甘草绳索悬吊，离地2英尺。这些笼子的红白条纹栏杆是由硬如钢铁的糖果手杖制成。每只笼子足够容纳一只中型生物，并配有一个装有复杂优质锁（开锁需1分钟，{@dc 15}）的铰链门。如果角色位于笼子内部，则开锁检定需应用{@variantrule 劣势|XPHB}。若检定失败，角色可再次尝试。",
+														"为了破坏或强行打开笼门，这些门可与石门相提并论。"
+													]
+												},
+												{
+													"ENG_name": "Prisoners",
+													"name": "囚犯",
+													"type": "entries",
+													"id": "0c2",
+													"page": 41,
+													"entries": [
+														"两具牢笼里有囚犯，但其中一具已成骨架，显然已死。",
+														"艾斯格·阿普加斯是一位活跃的半身人（小型{@creature 平民|XMM}），他被糖果化了（参见 \"{@area 糖果生物|085|x}\"）并坐在其中一个笼子里，看起来像柔软的粉色泡泡糖。艾斯格在数十年前被妖婆糖果化，此后就没有再变老过。他对角色们态度友好。当他注意到他们时，他会礼貌地请求他们释放他。",
+														"如果角色们对阿斯格友善，他会透露以下信息：",
+														{
+															"type": "list",
+															"style": "list-hang-notitle",
+															"items": [
+																{
+																	"ENG_name": "Asger's Story",
+																	"name": "艾斯格的故事",
+																	"type": "item",
+																	"entry": "阿斯杰和他的妹妹伊迪丝很久以前偶然发现了这座小屋。他以为{@area 尼布切克叔叔|0a7|x}收养了他，但很想念他的妹妹。（阿斯杰不知道伊迪丝与女巫的契约。）"
+																},
+																{
+																	"ENG_name": "Cottage Owner",
+																	"name": "小屋主人",
+																	"type": "item",
+																	"entry": "这个小屋属于一个刻薄的老头，他只吃糖果和他变成糖果的人。这个巫婆很久以前就没了牙齿，没有假牙就什么也吃不了，而他经常把假牙弄丢。"
+																},
+																{
+																	"ENG_name": "Kitchen Helper",
+																	"name": "厨房助手",
+																	"type": "item",
+																	"entry": "直到最近，尼布奇克叔叔还强迫阿斯格担任他的厨房助手，但在一连串烘焙失误后，老巫婆把他关在了这里。阿斯格害怕自己会被替代，不久后就会被吃掉。"
+																},
+																{
+																	"ENG_name": "Skeleton",
+																	"name": "骷髅",
+																	"type": "item",
+																	"entry": "阿斯杰不知道另一个笼子里那个骷髅囚犯的身份，他给那人起了个绰号叫\"果冻豆先生\"。"
+																}
+															]
+														},
+														"在分享完这些信息后，阿斯格表示愿意陪伴角色们进行冒险。他熟知这座小屋的情况，能为角色们指引所有房间的位置\u2014\u2014尽管有时会忘记房内栖息的生物。战斗过程中，阿斯格会躲在安全距离外观战，并为角色们加油助威。",
+														"如果角色们拒绝了阿斯杰的提议，他会前往布巴·乌加的游乐室（区域{@area C3|090|x}），并在接下来的冒险中一直待在那里。"
+													]
+												},
+												{
+													"ENG_name": "Treasure",
+													"name": "宝藏",
+													"type": "entries",
+													"id": "0c3",
+													"page": 42,
+													"entries": [
+														"软糖先生手持一把{@item +1 巨斧|XDMG}。"
+													]
+												}
 											]
 										}
 									]
-								},
+								}
+							]
+						},
+						{
+							"ENG_name": "Conclusion",
+							"name": "结局",
+							"type": "section",
+							"id": "0c4",
+							"page": 42,
+							"entries": [
+								"冒险的结局取决于角色的行动。",
 								{
-									"ENG_name": "C11: Pantry",
-									"name": "C11: 食品储藏室",
+									"ENG_name": "Uncle Nibblecheek's Revenge",
+									"name": "尼布尔奇克叔叔的复仇",
 									"type": "entries",
-									"page": 39,
-									"id": "0ae",
+									"id": "0c5",
+									"page": 42,
 									"entries": [
-										{
-											"type": "insetReadaloud",
-											"page": 39,
-											"id": "0af",
-											"entries": [
-												"这个储备充足的食品储藏室里，架子上摆满了烘焙原料。"
-											]
-										},
-										"这个食品储藏室里的补给品包括一套崭新的厨师工具、一顶大厨帽子和十袋面粉。一块{@hazard 绿软泥|XDMG}（参见{@book 城主指南|XDMG}）被装在标有\"奶奶的酸面团发酵剂\"的罐子里。",
-										{
-											"ENG_name": "Treasure",
-											"name": "宝藏",
-											"type": "entries",
-											"page": 39,
-											"id": "0b0",
-											"entries": [
-												"彻底搜查食品储藏室需要1分钟并找到一个装有{@item 无踪粉|XDMG}的小袋。"
-											]
-										}
+										"如果尼布利奇克叔叔在冒险中幸存下来，且角色们对他的小屋或仆从造成了重大破坏，女巫会报复性地雇佣八名{@creature 地精武者|XMM|地精武者}来追杀角色。这些地精会在执行任务前跟踪角色数日。不过地精们是懦夫，一旦战局对他们不利就会停止战斗。",
+										"如果他得知哥布林们的失败，尼伯尔·奇克舅舅就会关闭小屋并深入森林，在那里与其他两位巫团成员会面。他们一起密谋如何让角色们垮台。"
 									]
 								},
 								{
-									"ENG_name": "C12: Tower",
-									"name": "C12: 高塔",
+									"ENG_name": "Asger and Edith",
+									"name": "阿斯格与伊迪丝",
 									"type": "entries",
-									"page": 39,
-									"id": "0b1",
+									"id": "0c6",
+									"page": 42,
 									"entries": [
+										"如果角色们救出了阿斯杰，他们可能会决定让他与{@area 伊迪丝|068|x}团聚，或是尝试为他找一个新家。阿斯杰可能的结局包括以下：",
 										{
-											"type": "insetReadaloud",
-											"page": 39,
-											"id": "0b2",
-											"entries": [
-												"由冰糖制成的弧形书架排列在这座塔的内墙上。其他家具包括一把舒适椅子、一张边桌和一张华丽的爪足书桌，均由黑巧克力雕刻而成。边桌上有一个咬了一半的糖渍苹果，被一副假牙夹住。一根弯曲的扫帚靠在书桌旁，一本打开的故事书放在上面。"
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"ENG_name": "Finding Asger a New Home",
+													"name": "为阿斯格寻找新家",
+													"type": "item",
+													"entry": "如果角色们将阿瑟尔的事告知 {@area 填充|069|x}，这位矮人面包师会提出收养他。连同布里欧许班，三人组成了一个意想不到的家庭，尽管如此，他们还是从此过上了幸福的生活。"
+												},
+												{
+													"ENG_name": "Reuniting Asger with Edith",
+													"name": "重聚阿斯杰与伊迪丝",
+													"type": "item",
+													"entry": "如果角色们将阿斯杰带回给伊迪丝，这位年长的糖果师一见到她的兄弟便崩溃了。自从他们一起迷失在森林中以来，他未曾老去一天。她泪眼朦胧，满怀悔恨，放弃了邪恶的行径，并发誓要弥补失去的时光。伊迪丝实现了她的诺言。"
+												},
+												{
+													"ENG_name": "Other Endings",
+													"name": "其他结局",
+													"type": "item",
+													"entry": "如果角色们没有在小屋中遇到阿斯格，他会根据巫婆是死是活，要么通过挤过笼子的栏杆获得自由，要么回去继续担任{@area 尼布尔奇克叔叔的|06a|x}厨房助手。"
+												}
 											]
 										},
-										"书架上摆满了关于烹饪和烘焙的书籍，全部用精灵语写成并由糖果制成。舔舐书脊可以尝到其中知识的味道，而吞下整本书则会引发一阵糖分亢奋，随后伴随轻微的腹痛和胀气。",
-										{
-											"ENG_name": "Hag's Dentures",
-											"name": "巫婆的假牙",
-											"type": "entries",
-											"page": 40,
-											"id": "0b3",
-											"entries": [
-												"尼布尔奇克叔叔的假牙在他啃食茶几上的糖苹果时弹了出来。在他能将假牙从粘稠的糖果中解放之前，那位女巫已被召唤到别处。将假牙从苹果上取下需要一个{@action 操作|XPHB}动作，并通过一个{@dc 10}力量（{@skill 运动|XPHB}）检定。"
-											]
-										},
-										{
-											"ENG_name": "Storybook",
-											"name": "故事书",
-											"type": "entries",
-											"page": 40,
-											"id": "0b4",
-											"entries": [
-												"桌上的这本故事书描述了伊蒂丝与尼布切克叔叔的契约（详情请见\"{@area 冒险背景|067|x}\"）。书中将伊蒂丝的生活描绘成一个童话故事，并配以适合儿童的插画来突出重要事件。翻阅此书的角色会了解到，伊蒂丝年轻时曾造访过这间小屋、背叛了她的兄弟，并与女巫达成了合作关系。",
-												"这本书的最后几页是空白的，因为伊迪丝的故事尚未结束。在冒险的最后，这本书会神奇地补完它的最后几页，以反映这位糖果师与她失散已久的兄弟的命运。"
-											]
-										},
-										{
-											"ENG_name": "Treasure",
-											"name": "宝藏",
-											"type": "entries",
-											"page": 40,
-											"id": "0b5",
-											"entries": [
-												"靠在桌边的扫帚是一把{@item 芭芭·雅嘎的舞空帚|XDMG}。书桌抽屉里藏着一张卷起的{@item 法术卷轴|XDMG}，记载着{@spell 高等复原术|XPHB}。"
-											]
-										}
+										"如果角色们在阿斯格不在场的情况下质问伊迪丝关于她的罪行，她会供认不讳。多年负罪感的负担下，这位糖果商向当地执法部门自首，并从此再未重开店铺。",
+										"否则伊迪丝会支付赏金给玩家角色们，并举报布里欧什班与菲尔给当局，收拾她的生意离开，搬到下一个镇子上去。"
 									]
 								},
 								{
-									"ENG_name": "C13: Outhouse",
-									"name": "C13: 外屋",
+									"ENG_name": "Fill's Reward",
+									"name": "菲尔的奖赏",
 									"type": "entries",
-									"page": 40,
-									"id": "0b6",
-									"entries": [
-										{
-											"type": "insetReadaloud",
-											"page": 40,
-											"id": "0b7",
-											"entries": [
-												"一间散发着诡异气味的户外厕所紧邻小屋后方的树林。"
-											]
-										},
-										"这个外屋由巧克力木板搭成。外屋内部有一本破旧的法术书和一个位于浅坑上方的巧克力座位。",
-										{
-											"ENG_name": "Treasure",
-											"name": "宝藏",
-											"type": "entries",
-											"page": 40,
-											"id": "0b8",
-											"entries": [
-												"这本法术书有几页被撕掉了。剩余页面上记载着以下法术：{@spell 警报术|XPHB}、{@spell 易容术|XPHB}、{@spell 敲击术|XPHB}、{@spell 蛛行术|XPHB}以及{@spell 臭云术|XPHB}。"
-											]
-										}
-									]
-								},
-								{
-									"ENG_name": "C14: Gummy Mummy's Tomb",
-									"name": "C14: 软糖木乃伊之墓",
-									"type": "entries",
-									"page": 40,
-									"id": "0b9",
-									"entries": [
-										{
-											"type": "insetReadaloud",
-											"page": 40,
-											"id": "0ba",
-											"entries": [
-												"这座墓室中有一具由硬糖制成的石棺。两尊由冰糖和椰子制成的雕像矗立在石棺两侧，周围堆满了金币和其他珍品。石棺上方的墙上刻着铭文：\"愿死亡诅咒所有打扰我安眠之人。\""
-											]
-										},
-										"这座陵墓供奉着一位被尼布尔奇克叔叔诅咒的自私王子。如今变成胶质{@creature 木乃伊|XMM}的王子躺在石棺中，由两只椰子{@creature 冰魔蝠|XMM|冰魔蝠}看守。角色可以通过一次成功的{@dc 15}力量（{@skill 运动|XPHB}）检定抬起或推开石棺盖。",
-										"如果角色打扰了石棺或宝藏，胶质王子将从石棺中出现并与角色交战。小鬼们也会加入战斗。",
-										{
-											"ENG_name": "Candy Curse",
-											"name": "糖果诅咒",
-											"type": "entries",
-											"page": 40,
-											"id": "0bb",
-											"entries": [
-												"任何偷窃王子财宝的角色必须成功通过一次{@dc 15}感知豁免检定，否则将被转化为糖果生物（参见\"{@area 糖果生物|085|x}\"）。在此形态下，该角色拥有半透明的软糖身躯。"
-											]
-										},
-										{
-											"ENG_name": "Fake Treasure",
-											"name": "假宝藏",
-											"type": "entries",
-											"page": 40,
-											"id": "0bc",
-											"entries": [
-												"乍看之下，这些财宝包含数百枚金币、珠宝和其他贵重礼物，但都是糖果仿制品\u2014\u2014箔纸包裹的巧克力圆片、几何形状的糖晶体以及精心装饰的翻糖蛋糕。使用{@action 研究|XPHB}动作检视财宝的角色会发觉它们都是赝品。"
-											]
-										},
-										{
-											"ENG_name": "Gummy Pillow",
-											"name": "软糖枕头",
-											"type": "entries",
-											"page": 40,
-											"id": "0bd",
-											"entries": [
-												"石棺内有一个与真人大小相同的软糖枕头，角色们可以用它来安抚巴布瓦格（参见区域 {@area C9|0a5|x}）。"
-											]
-										}
-									]
-								},
-								{
-									"ENG_name": "C15: Striped Dungeon",
-									"name": "C15：斑纹地城",
-									"type": "entries",
-									"page": 40,
-									"id": "0be",
+									"id": "0c7",
+									"page": 42,
 									"entries": [
 										{
 											"type": "image",
 											"href": {
 												"type": "internal",
-												"path": "adventure/DrDe/033-02-006.gingerbread-people.webp"
+												"path": "adventure/DrDe/034-02-007.happy-briochebane-npc.webp"
 											},
-											"credit": "Andrew Kolb",
-											"width": 1700,
-											"height": 1217
+											"width": 850,
+											"height": 1080,
+											"credit": "Andrew Kolb"
 										},
-										{
-											"type": "insetReadaloud",
-											"page": 40,
-											"id": "0bf",
-											"entries": [
-												"糖果笼子悬挂在这个糖釉地牢的天花板上，墙壁上装饰着条纹。一个由粉色泡泡糖制成的男孩占据着其中一个笼子，独自哼着欢快的曲调。在另一个笼子里，一具异常巨大的人类骷髅松散地握着一把沉重的斧头。笼子之间站着四个姜饼人\u2014\u2014每个都有六英尺高，手里拿着擀面杖作为武器。"
-											]
-										},
-										"房间东南角有一架糖果梯子通向10英尺高的天花板上一个明显的活板门。活板门可轻松推开，通往上方休息室（区域{@area C4|094|x}）",
-										"四个手持可当作硬头锤使用的擀面杖的姜饼人（混乱邪恶 {@creature 打手|XMM|打手们}）会攻击任何闯入者。这些姜饼人懂得通用语和精灵语。",
-										{
-											"ENG_name": "Gingerbread",
-											"name": "姜饼",
-											"type": "entries",
-											"page": 40,
-											"id": "0c0",
-											"entries": [
-												"被击败的姜饼人会碎裂成无生命的姜饼块，角色可用这些碎块安抚布巴·乌嘎（参见区域{@area C9|0a5|x}）。"
-											]
-										},
-										{
-											"ENG_name": "Candy Cages",
-											"name": "糖果笼",
-											"type": "entries",
-											"page": 40,
-											"id": "0c1",
-											"entries": [
-												"八只笼子悬挂在天花板上，由甘草绳索悬吊，离地2英尺。这些笼子的红白条纹栏杆是由硬如钢铁的糖果手杖制成。每只笼子足够容纳一只中型生物，并配有一个装有复杂优质锁（开锁需1分钟，{@dc 15}）的铰链门。如果角色位于笼子内部，则开锁检定需应用{@variantrule 劣势|XPHB}。若检定失败，角色可再次尝试。",
-												"为了破坏或强行打开笼门，这些门可与石门相提并论。"
-											]
-										},
-										{
-											"ENG_name": "Prisoners",
-											"name": "囚犯",
-											"type": "entries",
-											"page": 41,
-											"id": "0c2",
-											"entries": [
-												"两具牢笼里有囚犯，但其中一具已成骨架，显然已死。",
-												"艾斯格·阿普加斯是一位活跃的半身人（小型{@creature 平民|XMM}），他被糖果化了（参见 \"{@area 糖果生物|085|x}\"）并坐在其中一个笼子里，看起来像柔软的粉色泡泡糖。艾斯格在数十年前被妖婆糖果化，此后就没有再变老过。他对角色们态度友好。当他注意到他们时，他会礼貌地请求他们释放他。",
-												"如果角色们对阿斯格友善，他会透露以下信息：",
-												{
-													"type": "list",
-													"style": "list-hang-notitle",
-													"items": [
-														{
-															"ENG_name": "Asger's Story",
-															"name": "艾斯格的故事",
-															"type": "item",
-															"entry": "阿斯杰和他的妹妹伊迪丝很久以前偶然发现了这座小屋。他以为{@area 尼布切克叔叔|0a7|x}收养了他，但很想念他的妹妹。（阿斯杰不知道伊迪丝与女巫的契约。）"
-														},
-														{
-															"ENG_name": "Cottage Owner",
-															"name": "小屋主人",
-															"type": "item",
-															"entry": "这个小屋属于一个刻薄的老头，他只吃糖果和他变成糖果的人。这个巫婆很久以前就没了牙齿，没有假牙就什么也吃不了，而他经常把假牙弄丢。"
-														},
-														{
-															"ENG_name": "Kitchen Helper",
-															"name": "厨房助手",
-															"type": "item",
-															"entry": "直到最近，尼布奇克叔叔还强迫阿斯格担任他的厨房助手，但在一连串烘焙失误后，老巫婆把他关在了这里。阿斯格害怕自己会被替代，不久后就会被吃掉。"
-														},
-														{
-															"ENG_name": "Skeleton",
-															"name": "骷髅",
-															"type": "item",
-															"entry": "阿斯杰不知道另一个笼子里那个骷髅囚犯的身份，他给那人起了个绰号叫\"果冻豆先生\"。"
-														}
-													]
-												},
-												"在分享完这些信息后，阿斯格表示愿意陪伴角色们进行冒险。他熟知这座小屋的情况，能为角色们指引所有房间的位置\u2014\u2014尽管有时会忘记房内栖息的生物。战斗过程中，阿斯格会躲在安全距离外观战，并为角色们加油助威。",
-												"如果角色们拒绝了阿斯杰的提议，他会前往布巴·乌加的游乐室（区域{@area C3|090|x}），并在接下来的冒险中一直待在那里。"
-											]
-										},
-										{
-											"ENG_name": "Treasure",
-											"name": "宝藏",
-											"type": "entries",
-											"page": 42,
-											"id": "0c3",
-											"entries": [
-												"软糖先生手持一把{@item +1 巨斧|XDMG}。"
-											]
-										}
+										"如果角色们将布里欧许班从女巫手中解救出来，这条幼龙会在不被发现的情况下跟随角色们回到菲尔的面包店。它为自己烧毁伊迪丝的糖果店而再三道歉，并为让伊迪丝陷入危险而深感内疚。如果布里欧许班与伊迪丝接触，它也会向她道歉。",
+										"菲尔在龙归来时予以告诫，但重逢依然喜悦。菲尔用一盒热腾腾的糕点和一个装着100金币的钱袋奖励了冒险者们。",
+										"如果获悉伊迪丝的不端行为，菲尔将撤销之前为她糖果店损坏支付的提议。",
+										"如果角色们举报菲尔或其受监护人纵火糖果店，菲尔会试图说服布里奥奇班逃离哈布顿，但布里奥奇班坚持留下弥补过错。角色们将失去奖励；若角色们空手而归向菲尔复命也同样如此。"
 									]
+								}
+							]
+						},
+						{
+							"ENG_name": "History of Gold Dragons",
+							"name": "金龙的历史",
+							"type": "section",
+							"id": "0c8",
+							"page": 24,
+							"entries": [
+								"{@font 奥瑞克斯·达拉斯特里克斯|languages/XPHB/Draconic/Iokharik-v2.woff2}",
+								{
+									"type": "insetReadaloud",
+									"id": "0c9",
+									"entries": [
+										"金龙最初是无翼蛇形的，在D&D的历史中，它们的外形变化比任何其他龙类都要多。它们在2025年{@book 怪物图鉴|XMM}中的形象是对其原始外观的有意致敬。"
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/035-02-009.gold-dragon-with-staff.webp"
+									},
+									"width": 850,
+									"height": 1180,
+									"title": "巨龙议会（1994）",
+									"credit": "Jeff Easley"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/036-02-010.gold-dragon-1993.webp"
+									},
+									"width": 832,
+									"height": 1016,
+									"title": "怪物图鉴（1993）",
+									"credit": "Mark A. Nelson"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/037-02-011.gold-dragon-1977.webp"
+									},
+									"width": 684,
+									"height": 824,
+									"title": "怪物图鉴（1977）",
+									"credit": "David C. Sutherland"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/038-02-012.gold-dragon-draconomicon.webp"
+									},
+									"width": 1314,
+									"height": 1845,
+									"title": "龙之书（2003）",
+									"credit": "Ron Spencer"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/039-02-013.gold-dragon-mtg.webp"
+									},
+									"width": 744,
+									"height": 1040,
+									"title": "指挥官传奇：博德之门之战 (2022)",
+									"credit": "Todd Lockwood"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/040-02-014.gold-dragon-anatomy.webp"
+									},
+									"width": 850,
+									"height": 666,
+									"title": "龙之书（2003）",
+									"credit": "Todd Lockwood"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/041-02-015.gold-dragon-2008.webp"
+									},
+									"width": 1700,
+									"height": 1232,
+									"title": "怪物手册2（2009）",
+									"credit": "Chris Seaman"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/042-02-016.gold-dragon-2014.webp"
+									},
+									"width": 850,
+									"height": 1101,
+									"title": "怪物手册（2014）",
+									"credit": "Autumn Rain Turkel"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/043-02-017.gold-dragon-2023.webp"
+									},
+									"width": 1700,
+									"height": 956,
+									"title": "概念艺术（2023）",
+									"credit": "Alexander Ostrowski"
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/044-02-018.gold-dragon-2025.webp"
+									},
+									"width": 1700,
+									"height": 1039,
+									"title": "怪物图鉴（2025）",
+									"credit": "Alexander Ostrowski"
 								}
 							]
 						}
 					]
 				},
 				{
-					"ENG_name": "Conclusion",
-					"name": "结局",
+					"ENG_name": "Credits",
+					"name": "制作组",
 					"type": "section",
-					"page": 42,
-					"id": "0c4",
+					"id": "40b",
+					"page": 2,
 					"entries": [
-						"冒险的结局取决于角色的行动。",
 						{
-							"ENG_name": "Uncle Nibblecheek's Revenge",
-							"name": "尼布尔奇克叔叔的复仇",
-							"type": "entries",
-							"page": 42,
-							"id": "0c5",
-							"entries": [
-								"如果尼布利奇克叔叔在冒险中幸存下来，且角色们对他的小屋或仆从造成了重大破坏，女巫会报复性地雇佣八名{@creature 地精武者|XMM|地精武者}来追杀角色。这些地精会在执行任务前跟踪角色数日。不过地精们是懦夫，一旦战局对他们不利就会停止战斗。",
-								"如果他得知哥布林们的失败，尼伯尔·奇克舅舅就会关闭小屋并深入森林，在那里与其他两位巫团成员会面。他们一起密谋如何让角色们垮台。"
-							]
-						},
-						{
-							"ENG_name": "Asger and Edith",
-							"name": "阿斯格与伊迪丝",
-							"type": "entries",
-							"page": 42,
-							"id": "0c6",
-							"entries": [
-								"如果角色们救出了阿斯杰，他们可能会决定让他与{@area 伊迪丝|068|x}团聚，或是尝试为他找一个新家。阿斯杰可能的结局包括以下：",
+							"type": "list",
+							"style": "list-hang-notitle",
+							"columns": 2,
+							"items": [
 								{
-									"type": "list",
-									"style": "list-hang-notitle",
-									"items": [
-										{
-											"ENG_name": "Finding Asger a New Home",
-											"name": "为阿斯格寻找新家",
-											"type": "item",
-											"entry": "如果角色们将阿瑟尔的事告知 {@area 填充|069|x}，这位矮人面包师会提出收养他。连同布里欧许班，三人组成了一个意想不到的家庭，尽管如此，他们还是从此过上了幸福的生活。"
-										},
-										{
-											"ENG_name": "Reuniting Asger with Edith",
-											"name": "重聚阿斯杰与伊迪丝",
-											"type": "item",
-											"entry": "如果角色们将阿斯杰带回给伊迪丝，这位年长的糖果师一见到她的兄弟便崩溃了。自从他们一起迷失在森林中以来，他未曾老去一天。她泪眼朦胧，满怀悔恨，放弃了邪恶的行径，并发誓要弥补失去的时光。伊迪丝实现了她的诺言。"
-										},
-										{
-											"ENG_name": "Other Endings",
-											"name": "其他结局",
-											"type": "item",
-											"entry": "如果角色们没有在小屋中遇到阿斯格，他会根据巫婆是死是活，要么通过挤过笼子的栏杆获得自由，要么回去继续担任{@area 尼布尔奇克叔叔的|06a|x}厨房助手。"
-										}
-									]
+									"ENG_name": "Lead Designers:",
+									"name": "首席设计师：",
+									"type": "item",
+									"entry": "Amanda Hamon, James Wyatt"
 								},
-								"如果角色们在阿斯格不在场的情况下质问伊迪丝关于她的罪行，她会供认不讳。多年负罪感的负担下，这位糖果商向当地执法部门自首，并从此再未重开店铺。",
-								"否则伊迪丝会支付赏金给玩家角色们，并举报布里欧什班与菲尔给当局，收拾她的生意离开，搬到下一个镇子上去。"
+								{
+									"ENG_name": "Designers:",
+									"name": "设计师：",
+									"type": "item",
+									"entry": "Justice Ramin Arman, Makenzie De Armas, Anthony Joyce-Rivera, Renee Knipe, Ron Lundeen, Christopher Perkins, Patrick Renie, Erin Roberts, F. Wesley Schneider, Carl Sibley, Jason Tondro, Steve Townshend"
+								},
+								{
+									"ENG_name": "Rules Developers:",
+									"name": "规则开发者：",
+									"type": "item",
+									"entry": "Makenzie De Armas (lead), Jeremy Crawford, Ron Lundeen"
+								},
+								{
+									"ENG_name": "Editors:",
+									"name": "编辑：",
+									"type": "item",
+									"entry": "Judy Bauer (lead), Emma Candon, Sadie Lowry, Hannah Rose, Sue Weinlein, Hans Ziegler"
+								},
+								{
+									"ENG_name": "Art Directors:",
+									"name": "艺术指导：",
+									"type": "item",
+									"entry": "Matt Cole (lead), Fury Galluzzi, Josh Herman, Kate Irwin, Emi Tanji"
+								},
+								{
+									"ENG_name": "Graphic Designers:",
+									"name": "平面设计师：",
+									"type": "item",
+									"entry": "Matt Cole, Paolo Vacala"
+								},
+								{
+									"ENG_name": "Cover Illustrators:",
+									"name": "封面插画师：",
+									"type": "item",
+									"entry": "Justine Jones, Greg Staples"
+								},
+								{
+									"ENG_name": "Interior Illustrators:",
+									"name": "内页插画师：",
+									"type": "item",
+									"entry": "Tom Babbey, Daren Bader, Clyde Caldwell, Chippy, Simon Dominic, Jeff Easley, Luke Eidenschink, Larry Elmore, Jason A. Engle, Lars Grant-West, John Grello, Johan Grenier, Justine Jones, Andrew Kolb, Vance Kovacs, Andrey Kuzinskiy, Ed Kwong, Todd Lockwood, Antonio José Manzanedo, Dominik Mayer, Caio Monteiro, Martin Mottet, Jodie Muir, Mark A. Nelson, Alexander Ostrowski, Keith Parkinson, Anna Podedworna, Steve Prescott, Chris Rallis, Joshua Raphael, Richard Sardinha, Chris Seaman, Rudy Siswanto, Craig J Spearing, Ron Spencer, Leroy Steinmann, Zack Stella, Matt Stewart, Matt Stikker, David C. Sutherland, Autumn Rain Turkel, Paolo Vacala, Svetlin Velinov, Raoul Vitale, Jabari Weathers, Campbell White"
+								},
+								{
+									"ENG_name": "Cartographers:",
+									"name": "制图师：",
+									"type": "item",
+									"entry": "Francesca Baerald, Jared Blando, CoupleOfKooks, Andrew Kolb, Dyson Logos, Damien Mammoliti, Mike Schley, Paolo Vacala"
+								},
+								{
+									"ENG_name": "Consultants:",
+									"name": "顾问：",
+									"type": "item",
+									"entry": "Shawn Banerjee, Eytan Bernstein, Daniel Delgado, Sameer Joseph"
+								},
+								{
+									"ENG_name": "Producers:",
+									"name": "制作人：",
+									"type": "item",
+									"entry": "Rob Hawkey (lead), Bill Benham, Siera Bruggeman, Vanessa Hoskins"
+								}
 							]
 						},
+						"{@i 本书献给Christopher Perkins，感谢他数十年来为《龙与地下城》作出的贡献。}",
 						{
-							"ENG_name": "Fill's Reward",
-							"name": "菲尔的奖赏",
-							"type": "entries",
-							"page": 42,
-							"id": "0c7",
-							"entries": [
+							"type": "gallery",
+							"images": [
 								{
 									"type": "image",
 									"href": {
 										"type": "internal",
-										"path": "adventure/DrDe/034-02-007.happy-briochebane-npc.webp"
+										"path": "adventure/DrDe/199-11-001.title-splash.webp"
 									},
-									"credit": "Andrew Kolb",
 									"width": 850,
-									"height": 1080
+									"height": 963,
+									"credit": "Alexander Ostrowski"
+								}
+							]
+						},
+						{
+							"type": "gallery",
+							"images": [
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/200-11-002.traditional-cover.webp"
+									},
+									"width": 850,
+									"height": 951,
+									"title": "封面故事：在Greg Staples创作的这张极具张力的海报中，三位勇敢的冒险者直面由五种色彩龙所带来的未知险境。"
 								},
-								"如果角色们将布里欧许班从女巫手中解救出来，这条幼龙会在不被发现的情况下跟随角色们回到菲尔的面包店。它为自己烧毁伊迪丝的糖果店而再三道歉，并为让伊迪丝陷入危险而深感内疚。如果布里欧许班与伊迪丝接触，它也会向她道歉。",
-								"菲尔在龙归来时予以告诫，但重逢依然喜悦。菲尔用一盒热腾腾的糕点和一个装着100金币的钱袋奖励了冒险者们。",
-								"如果获悉伊迪丝的不端行为，菲尔将撤销之前为她糖果店损坏支付的提议。",
-								"如果角色们举报菲尔或其受监护人纵火糖果店，菲尔会试图说服布里奥奇班逃离哈布顿，但布里奥奇班坚持留下弥补过错。角色们将失去奖励；若角色们空手而归向菲尔复命也同样如此。"
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/DrDe/201-11-003.alt-cover.webp"
+									},
+									"width": 850,
+									"height": 951,
+									"title": "替换封面：Justine Jones以迷幻笔触，绘就一幅群龙入梦的奇幻图景。"
+								}
 							]
-						}
-					]
-				},
-				{
-					"ENG_name": "History of Gold Dragons",
-					"name": "金龙的历史",
-					"type": "section",
-					"page": 24,
-					"id": "0c8",
-					"entries": [
-						"{@font 奥瑞克斯·达拉斯特里克斯|languages/XPHB/Draconic/Iokharik-v2.woff2}",
-						{
-							"type": "insetReadaloud",
-							"id": "0c9",
-							"entries": [
-								"金龙最初是无翼蛇形的，在D&D的历史中，它们的外形变化比任何其他龙类都要多。它们在2025年{@book 怪物图鉴|XMM}中的形象是对其原始外观的有意致敬。"
-							]
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/035-02-009.gold-dragon-with-staff.webp"
-							},
-							"title": "巨龙议会（1994）",
-							"credit": "Jeff Easley",
-							"width": 850,
-							"height": 1180
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/036-02-010.gold-dragon-1993.webp"
-							},
-							"title": "怪物图鉴（1993）",
-							"credit": "Mark A. Nelson",
-							"width": 832,
-							"height": 1016
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/037-02-011.gold-dragon-1977.webp"
-							},
-							"title": "怪物图鉴（1977）",
-							"credit": "David C. Sutherland",
-							"width": 684,
-							"height": 824
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/038-02-012.gold-dragon-draconomicon.webp"
-							},
-							"title": "龙之书（2003）",
-							"credit": "Ron Spencer",
-							"width": 1314,
-							"height": 1845
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/039-02-013.gold-dragon-mtg.webp"
-							},
-							"title": "指挥官传奇：博德之门之战 (2022)",
-							"credit": "Todd Lockwood",
-							"width": 744,
-							"height": 1040
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/040-02-014.gold-dragon-anatomy.webp"
-							},
-							"title": "龙之书（2003）",
-							"credit": "Todd Lockwood",
-							"width": 850,
-							"height": 666
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/041-02-015.gold-dragon-2008.webp"
-							},
-							"title": "怪物手册2（2009）",
-							"credit": "Chris Seaman",
-							"width": 1700,
-							"height": 1232
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/042-02-016.gold-dragon-2014.webp"
-							},
-							"title": "怪物手册（2014）",
-							"credit": "Autumn Rain Turkel",
-							"width": 850,
-							"height": 1101
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/043-02-017.gold-dragon-2023.webp"
-							},
-							"title": "概念艺术（2023）",
-							"credit": "Alexander Ostrowski",
-							"width": 1700,
-							"height": 956
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/044-02-018.gold-dragon-2025.webp"
-							},
-							"title": "怪物图鉴（2025）",
-							"credit": "Alexander Ostrowski",
-							"width": 1700,
-							"height": 1039
-						}
-					]
-				}
-			]
-		},
-		{
-			"ENG_name": "Credits",
-			"name": "制作组",
-			"type": "section",
-			"page": 2,
-			"id": "40b",
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"columns": 2,
-					"items": [
-						{
-							"ENG_name": "Lead Designers:",
-							"name": "首席设计师：",
-							"type": "item",
-							"entry": "Amanda Hamon, James Wyatt"
-						},
-						{
-							"ENG_name": "Designers:",
-							"name": "设计师：",
-							"type": "item",
-							"entry": "Justice Ramin Arman, Makenzie De Armas, Anthony Joyce-Rivera, Renee Knipe, Ron Lundeen, Christopher Perkins, Patrick Renie, Erin Roberts, F. Wesley Schneider, Carl Sibley, Jason Tondro, Steve Townshend"
-						},
-						{
-							"ENG_name": "Rules Developers:",
-							"name": "规则开发者：",
-							"type": "item",
-							"entry": "Makenzie De Armas (lead), Jeremy Crawford, Ron Lundeen"
-						},
-						{
-							"ENG_name": "Editors:",
-							"name": "编辑：",
-							"type": "item",
-							"entry": "Judy Bauer (lead), Emma Candon, Sadie Lowry, Hannah Rose, Sue Weinlein, Hans Ziegler"
-						},
-						{
-							"ENG_name": "Art Directors:",
-							"name": "艺术指导：",
-							"type": "item",
-							"entry": "Matt Cole (lead), Fury Galluzzi, Josh Herman, Kate Irwin, Emi Tanji"
-						},
-						{
-							"ENG_name": "Graphic Designers:",
-							"name": "平面设计师：",
-							"type": "item",
-							"entry": "Matt Cole, Paolo Vacala"
-						},
-						{
-							"ENG_name": "Cover Illustrators:",
-							"name": "封面插画师：",
-							"type": "item",
-							"entry": "Justine Jones, Greg Staples"
-						},
-						{
-							"ENG_name": "Interior Illustrators:",
-							"name": "内页插画师：",
-							"type": "item",
-							"entry": "Tom Babbey, Daren Bader, Clyde Caldwell, Chippy, Simon Dominic, Jeff Easley, Luke Eidenschink, Larry Elmore, Jason A. Engle, Lars Grant-West, John Grello, Johan Grenier, Justine Jones, Andrew Kolb, Vance Kovacs, Andrey Kuzinskiy, Ed Kwong, Todd Lockwood, Antonio José Manzanedo, Dominik Mayer, Caio Monteiro, Martin Mottet, Jodie Muir, Mark A. Nelson, Alexander Ostrowski, Keith Parkinson, Anna Podedworna, Steve Prescott, Chris Rallis, Joshua Raphael, Richard Sardinha, Chris Seaman, Rudy Siswanto, Craig J Spearing, Ron Spencer, Leroy Steinmann, Zack Stella, Matt Stewart, Matt Stikker, David C. Sutherland, Autumn Rain Turkel, Paolo Vacala, Svetlin Velinov, Raoul Vitale, Jabari Weathers, Campbell White"
-						},
-						{
-							"ENG_name": "Cartographers:",
-							"name": "制图师：",
-							"type": "item",
-							"entry": "Francesca Baerald, Jared Blando, CoupleOfKooks, Andrew Kolb, Dyson Logos, Damien Mammoliti, Mike Schley, Paolo Vacala"
-						},
-						{
-							"ENG_name": "Consultants:",
-							"name": "顾问：",
-							"type": "item",
-							"entry": "Shawn Banerjee, Eytan Bernstein, Daniel Delgado, Sameer Joseph"
-						},
-						{
-							"ENG_name": "Producers:",
-							"name": "制作人：",
-							"type": "item",
-							"entry": "Rob Hawkey (lead), Bill Benham, Siera Bruggeman, Vanessa Hoskins"
-						}
-					]
-				},
-				"{@i 本书献给Christopher Perkins，感谢他数十年来为《龙与地下城》作出的贡献。}",
-				{
-					"type": "gallery",
-					"images": [
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/199-11-001.title-splash.webp"
-							},
-							"credit": "Alexander Ostrowski",
-							"width": 850,
-							"height": 963
-						}
-					]
-				},
-				{
-					"type": "gallery",
-					"images": [
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/200-11-002.traditional-cover.webp"
-							},
-							"title": "封面故事：在Greg Staples创作的这张极具张力的海报中，三位勇敢的冒险者直面由五种色彩龙所带来的未知险境。",
-							"width": 850,
-							"height": 951
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "adventure/DrDe/201-11-003.alt-cover.webp"
-							},
-							"title": "替换封面：Justine Jones以迷幻笔触，绘就一幅群龙入梦的奇幻图景。",
-							"width": 850,
-							"height": 951
 						}
 					]
 				}

@@ -2956,6 +2956,7 @@
 			"source": "AU",
 			"className": "牧师",
 			"classSource": "XPHB",
+			"page": 8,
 			"edition": "one",
 			"additionalSpells": [
 				{
@@ -3714,12 +3715,18 @@
 					"type": "entries",
 					"entries": [
 						{
-							"type": "refClassFeature",
-							"classFeature": "神圣打击|牧师|XPHB|7"
-						},
-						{
-							"type": "refClassFeature",
-							"classFeature": "强力施法|牧师|XPHB|7"
+							"type": "options",
+							"count": 1,
+							"entries": [
+								{
+									"type": "refClassFeature",
+									"classFeature": "神圣打击|牧师|XPHB|7"
+								},
+								{
+									"type": "refClassFeature",
+									"classFeature": "强力施法|牧师|XPHB|7"
+								}
+							]
 						}
 					]
 				}
@@ -7228,6 +7235,7 @@
 			"ENG_name": "Arcana Domain",
 			"name": "奥秘领域",
 			"source": "AU",
+			"page": 8,
 			"className": "牧师",
 			"classSource": "XPHB",
 			"subclassShortName": "奥秘",
@@ -7255,6 +7263,7 @@
 			"ENG_name": "Arcana Domain Spells",
 			"name": "奥秘领域法术",
 			"source": "AU",
+			"page": 8,
 			"className": "牧师",
 			"classSource": "XPHB",
 			"subclassShortName": "奥秘",
@@ -7266,6 +7275,7 @@
 				{
 					"type": "table",
 					"caption": "奥秘领域法术",
+					"page": 8,
 					"colLabels": [
 						"牧师等级",
 						"准备法术"
@@ -7299,6 +7309,7 @@
 			"ENG_name": "Modify Magic",
 			"name": "调整魔法",
 			"source": "AU",
+			"page": 8,
 			"className": "牧师",
 			"classSource": "XPHB",
 			"subclassShortName": "奥秘",
@@ -7321,6 +7332,7 @@
 			"ENG_name": "Student of Arcana",
 			"name": "奥秘学者",
 			"source": "AU",
+			"page": 8,
 			"className": "牧师",
 			"classSource": "XPHB",
 			"subclassShortName": "奥秘",
@@ -7333,6 +7345,7 @@
 					"ENG_name": "Magical Knowledge",
 					"name": "魔法学识",
 					"type": "entries",
+					"page": 8,
 					"entries": [
 						"你获得{@skill 奥秘|XPHB}技能或一项从牧师1级可用技能中选择的技能的熟练。"
 					]
@@ -7341,6 +7354,7 @@
 					"ENG_name": "Cantrips",
 					"name": "戏法",
 					"type": "entries",
+					"page": 8,
 					"entries": [
 						"你习得由你选择的两道{@filter 法师戏法|spells|level=0|class=法师}。每当你获得一个牧师等级时，你都可以将这些戏法中的一道替换为另一道{@filter 法师戏法|spells|level=0|class=法师}。"
 					]
@@ -7351,6 +7365,7 @@
 			"ENG_name": "Fortifying Spell",
 			"name": "巩固法术",
 			"source": "AU",
+			"page": 8,
 			"className": "牧师",
 			"classSource": "XPHB",
 			"subclassShortName": "奥秘",
@@ -7370,6 +7385,7 @@
 			"ENG_name": "Tenacious Spell",
 			"name": "稳固法术",
 			"source": "AU",
+			"page": 8,
 			"className": "牧师",
 			"classSource": "XPHB",
 			"subclassShortName": "奥秘",
@@ -7389,6 +7405,7 @@
 			"ENG_name": "Dispelling Recovery",
 			"name": "驱法复原",
 			"source": "AU",
+			"page": 9,
 			"className": "牧师",
 			"classSource": "XPHB",
 			"subclassShortName": "奥秘",
@@ -7404,6 +7421,7 @@
 			"ENG_name": "Magical Mastery",
 			"name": "奥术精通",
 			"source": "AU",
+			"page": 9,
 			"className": "牧师",
 			"classSource": "XPHB",
 			"subclassShortName": "奥秘",

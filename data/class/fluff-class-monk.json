@@ -14,6 +14,8 @@
 					"ENG_name": "Monk",
 					"name": "武僧",
 					"type": "section",
+					"source": "PHB",
+					"page": 76,
 					"entries": [
 						"她双掌如电，眨眼之间拍飞袭来的箭雨。半精灵冲出掩体，投身进入大群大地精的战团中。她游斗于敌人之中，一边猛烈出拳一边将对手抡倒在地，直至最后只剩她一人独自站在战场中央.",
 						"画满纹身的人类深吸一口气，并摆出一副临战架势。随着第一个兽人先锋冲到面前，他张口吐出一片咆哮的烈焰，瞬间吞没了眼前的敌人。",
@@ -56,12 +58,12 @@
 								}
 							]
 						}
-					],
-					"source": "PHB",
-					"page": 76
+					]
 				},
 				{
 					"type": "section",
+					"source": "XGE",
+					"page": 32,
 					"entries": [
 						{
 							"type": "quote",
@@ -311,9 +313,7 @@
 								}
 							]
 						}
-					],
-					"source": "XGE",
-					"page": 32
+					]
 				}
 			],
 			"images": [
@@ -350,14 +350,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "超自然专注的武术家",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Monk.webp"
 					},
-					"credit": "Joshua Raphael",
 					"width": 1700,
-					"height": 2192
+					"height": 2192,
+					"title": "超自然专注的武术家",
+					"credit": "Joshua Raphael"
 				}
 			]
 		}
@@ -515,14 +515,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "命流武者子职",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Mercy Monk.webp"
 					},
-					"credit": "Olivier Bernard",
 					"width": 850,
-					"height": 2513
+					"height": 2513,
+					"title": "命流武者子职",
+					"credit": "Olivier Bernard"
 				}
 			]
 		},
@@ -536,14 +536,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "暗影武者子职",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Shadow Monk.webp"
 					},
-					"credit": "Nathaniel Himawan",
 					"width": 850,
-					"height": 1762
+					"height": 1762,
+					"title": "暗影武者子职",
+					"credit": "Nathaniel Himawan"
 				}
 			]
 		},
@@ -557,14 +557,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "四象武者子职",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Elements Monk.webp"
 					},
-					"credit": "Katerina Ladon",
 					"width": 850,
-					"height": 2300
+					"height": 2300,
+					"title": "四象武者子职",
+					"credit": "Katerina Ladon"
 				}
 			]
 		},
@@ -578,14 +578,14 @@
 			"images": [
 				{
 					"type": "image",
-					"title": "散打武者子职",
 					"href": {
 						"type": "internal",
 						"path": "classes/XPHB/Open Hand Monk.webp"
 					},
-					"credit": "Katerina Ladon",
 					"width": 850,
-					"height": 2005
+					"height": 2005,
+					"title": "散打武者子职",
+					"credit": "Katerina Ladon"
 				}
 			]
 		},
@@ -612,10 +612,10 @@
 						"type": "internal",
 						"path": "classes/AU/Warrior of the Mystic Arts Monk.webp"
 					},
-					"title": "秘术武者武僧",
-					"credit": "Swatches Studio",
 					"width": 850,
-					"height": 1793
+					"height": 1793,
+					"title": "秘术武者武僧",
+					"credit": "Swatches Studio"
 				}
 			]
 		}

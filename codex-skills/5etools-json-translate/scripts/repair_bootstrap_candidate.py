@@ -16,7 +16,12 @@ def repair(source, candidate, path=""):
     changes = []
     if isinstance(source, dict):
         candidate = candidate if isinstance(candidate, dict) else {}
-        out = {key: copy.deepcopy(value) for key, value in candidate.items() if key in LOCALIZED_ONLY_KEYS}
+        out = {
+            key: copy.deepcopy(value)
+            for key, value in candidate.items()
+            if key in LOCALIZED_ONLY_KEYS
+            or (path == "/_meta" and key == "translators")
+        }
         for key, source_value in source.items():
             child_path = f"{path}/{key}"
             if key not in candidate:

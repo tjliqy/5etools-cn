@@ -14,6 +14,7 @@ from typing import Any
 
 
 DEFAULT_ALLOWED_EXTRA_KEYS = {"ENG_name", "translator"}
+META_TRANSLATORS_PATH = "/_meta/translators"
 DEFAULT_TRANSLATED_KEY_PATHS = ("*/containerCapacity/item/*",)
 MAX_ALLOWED_DIFFERENCE_EXAMPLES = 50
 TAG_ONLY_NAME = re.compile(r"^\{@[^ ]+ ([^|}]+)(?:\|[^}]*)?}$")
@@ -128,7 +129,8 @@ class StructureComparator:
         target_core_keys = [
             key
             for key in target
-            if key not in self.allowed_extra_keys or key in source
+            if (key not in self.allowed_extra_keys or key in source)
+            and not (path == "/_meta" and key == "translators" and key not in source)
         ]
         source_set = set(source_keys)
         target_core_set = set(target_core_keys)
@@ -180,6 +182,23 @@ class StructureComparator:
                         "message": f"Allowed localized-only field {key!r}",
                     }
                 )
+
+        if path == "/_meta" and "translators" in target and "translators" not in source:
+            value = target["translators"]
+            if not isinstance(value, list) or any(not isinstance(item, str) for item in value):
+                self.error(
+                    "localized_metadata_type",
+                    META_TRANSLATORS_PATH,
+                    "Localized metadata field 'translators' must be an array of strings",
+                    expected="array of strings",
+                    actual=_type_name(value),
+                )
+            else:
+                self.allow({
+                    "code": "localized_metadata",
+                    "path": META_TRANSLATORS_PATH,
+                    "message": "Allowed localized-only field 'translators'",
+                })
 
         source_name = source.get("name")
         if (

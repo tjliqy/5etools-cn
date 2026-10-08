@@ -1,680 +1,686 @@
 {
-	"data": [
+	"adventureData": [
 		{
-			"ENG_name": "Restoring Harmony: A Web of Lies",
-			"name": "恢复和谐：谎言之网",
-			"type": "section",
-			"page": 2,
-			"entries": [
-				"欢迎来到《恢复和谐》，这是一个与美味多彩的NERDS糖果联名的\"龙与地下城\"系列冒险。",
-				"为了进行这个冒险，你需要使用DND5e的基础规则。这个冒险模组的最后包含了你需要的所有魔法物品和怪物数据卡。",
-				"《一起冒险》是一个分为六个1级小冒险的战役，适用于单人玩家，还有一个为多人玩家准备的较长冒险。每个小冒险大约需要45分钟来玩，而最后的冒险大约需要60-90分钟来玩。",
-				"你可以按照任意顺序来游玩这些迷你冒险，但最终的冒险应该在最后来玩，以下列出了所有的冒险：",
+			"id": "NRH-AWoL",
+			"source": "NRH-AWoL",
+			"data": [
 				{
-					"type": "list",
-					"items": [
-						"{@adventure 冒险 1 糖果山冒险|NRH-TCMC}",
-						"{@adventure 冒险 2 荒野中的呼唤|NRH-AVitW}",
-						"{@adventure 冒险 3 棘手局面|NRH-ASS}",
-						"{@adventure 冒险 4 幻象马戏团|NRH-CoI}",
-						"{@adventure 冒险 5 失落墓穴|NRH-TLT}",
-						"{@adventure 冒险 6 谎言之网|NRH-AWoL}",
-						"{@adventure 冒险 7 共同冒险|NRH-AT}"
-					],
-					"columns": 3
-				},
-				{
-					"ENG_name": "Story Summary",
-					"name": "故事梗概",
-					"type": "entries",
+					"ENG_name": "Restoring Harmony: A Web of Lies",
+					"name": "恢复和谐：谎言之网",
+					"type": "section",
+					"id": "000",
 					"page": 2,
 					"entries": [
-						"只因长久妒羡着 NERDS 一族乐天热忱的秉性，以及那缤纷诱人的妙趣本质，眼魔伊莫（Emo）伙同其雇佣的悍匪灰石先生（Mr. Greystone），向着 NERDS 挚爱的和谐之城悍然发难。历经数载搜寻，这对奸邪之徒终是寻获了那口圣物\u2014\u2014棱镜之井（Prismatic Well），正是它赋予了和谐之城万般鲜活明丽的绮彩。而今，凭借对棱镜之井的掌控，伊莫与灰石先生已开始榨取和谐之城的色彩源流。若无人出面阻止，整座城池将渐渐褪为灰白色，世间万物，亦会最终沦入永恒的黑白死寂。",
-						"对于 NERDS 一族来说，和谐之城的色彩渐渐褪去，已是一桩令人惶惶不安的谜案。是什么为和谐之城赋予了色彩，也是未解之谜。眼下他们别无他法，唯有祈盼那份力量能再次恢复，让和谐之城的缤纷华彩再度焕发生机。但有一群人知道其中的内情\u2014\u2014他们便是守密者协会（ the Lorekeeper Society），一个发誓要守护和谐之城的神秘组织。守密者们知道棱镜之井的力量，可就连他们，也早已遗失了圣井的确切方位。万幸的是，他们知道借由一件名为和谐护身符的上古圣物可以找到圣井。但必需找到六颗力量宝石才能激活护身符。护身符一旦启动，便会指引持有者找到棱镜之井的隐秘藏地；不仅如此，它也蕴含着关闭圣井的力量。",
-						"长久以来，力量宝石被人们藏于地牢深处、密林腹地与高塔之巅以确保其安全。尽管守密者协会中没有人掌握守护力量宝石的魔法生物与诡谲陷阱的详细资料；但我们英勇无畏的 NERDS 一族，早已蓄势待发，定能肩负起恢复和谐之城的重任，迎难而上！"
-					],
-					"id": "001"
-				},
-				{
-					"ENG_name": "Solo Play",
-					"name": "单人游戏",
-					"type": "entries",
-					"page": 2,
-					"entries": [
-						"因为这些冒险（冒险7 共同冒险 除外）是为单人玩家设计的，所以一些怪物可能对于相应等级的角色来说强度较高。对于那些急于投入战斗的玩家，你可以考虑通过角色扮演来解决这次危机（例如与怪物交朋友或欺骗它们）。在任何遭遇中，你可以都自由的提供非常规的解决方案或其他代替战斗的方案。",
-						"你也可将剧情调整得更为温和友善\u2014\u2014比如允许玩家豁免检定自动成功、让怪物当场化敌为友，或是赋予玩家所有掷骰都具有优势的福利。",
-						{
-							"ENG_name": "TPK: Total Party Kill",
-							"name": "TPK: 团灭",
-							"type": "entries",
-							"page": 2,
-							"entries": [
-								"在单人游戏中，角色总是有可能死亡。对于单个冒险者来说，这种死亡会导致游戏直接结束；这不是一个大家都想看到的结果！避免死亡的一种方法是让冒险者随时都有治疗手段。如果他们没有治疗手段，可以让他们在一个满是灰尘的箱子里找到一瓶{@item 治疗药水}，或者在旅途中发现一种将生命值回满的特殊植物。",
-								"在意外死亡的情况下，你可以让一个有用的NPC（比如霍尼卡特先生）拯救局面并复活他们，或者你可以让他们放弃死亡豁免检定，醒来时发现自己正被拖到一个不愉快的地方。"
-							],
-							"id": "003"
-						}
-					],
-					"id": "002"
-				},
-				{
-					"ENG_name": "Adventure Outline",
-					"name": "冒险大纲",
-					"type": "entries",
-					"page": 3,
-					"entries": [
-						"这部分是此冒险的快速概览：",
+						"欢迎来到《恢复和谐》，这是一个与美味多彩的NERDS糖果联名的\"龙与地下城\"系列冒险。",
+						"为了进行这个冒险，你需要使用DND5e的基础规则。这个冒险模组的最后包含了你需要的所有魔法物品和怪物数据卡。",
+						"《一起冒险》是一个分为六个1级小冒险的战役，适用于单人玩家，还有一个为多人玩家准备的较长冒险。每个小冒险大约需要45分钟来玩，而最后的冒险大约需要60-90分钟来玩。",
+						"你可以按照任意顺序来游玩这些迷你冒险，但最终的冒险应该在最后来玩，以下列出了所有的冒险：",
 						{
 							"type": "list",
+							"columns": 3,
 							"items": [
-								"黄衣牧师在灵感寺冥想时，被神秘的霍尼卡特先生接近。",
-								"霍尼卡特先生告诉Yellow，他正在寻找藏红花宝石。他认为这块宝石藏在附近的一座寺庙里。",
-								"黄色旅行到寺庙，发现了一条通往蜘蛛巢穴的隧道。",
-								"处理完蜘蛛后，Yellow解开了一个谜题箱子，里面装有藏红花宝石。"
+								"{@adventure 冒险 1 糖果山冒险|NRH-TCMC}",
+								"{@adventure 冒险 2 荒野中的呼唤|NRH-AVitW}",
+								"{@adventure 冒险 3 棘手局面|NRH-ASS}",
+								"{@adventure 冒险 4 幻象马戏团|NRH-CoI}",
+								"{@adventure 冒险 5 失落墓穴|NRH-TLT}",
+								"{@adventure 冒险 6 谎言之网|NRH-AWoL}",
+								"{@adventure 冒险 7 共同冒险|NRH-AT}"
 							]
-						}
-					],
-					"id": "004"
-				},
-				{
-					"ENG_name": "Beginning Play",
-					"name": "开始游戏",
-					"type": "entries",
-					"page": 3,
-					"entries": [
-						"将角色卡（见下文\"黄衣牧师\"）交给玩家，并让他们熟悉黄衣。",
-						"所有加粗的生物或NPC都有属性块，这些属性块包括在冒险的末尾，以及角色可以获得的任何魔法物品。",
-						"你们俩都准备好了之后，就可以开始游戏了。"
-					],
-					"id": "005"
-				},
-				{
-					"ENG_name": "Adventure 6: A Sticky Situation",
-					"name": "冒险6：棘手的局面",
-					"type": "section",
-					"page": 3,
-					"entries": [
-						"当游戏开始时，黄衣牧师在灵感修道院的冥想花园中。请阅读或转述以下内容：",
-						{
-							"type": "insetReadaloud",
-							"page": 3,
-							"entries": [
-								"启示修道院的牧师们正在寻找和谐之地发生的色彩中断事件的答案。许多人花费他们的白天阅读充满古老知识的厚重书籍，而其他人则与社区合作，激发团结的感觉。",
-								"今天，你坐在喷泉旁边，沉思着颜色消失的谜团，这时你看到一只蜜蜂在水里挣扎，快要淹死了。你记得修道院的长者说过，无论生物多么渺小，或者它们是否让你感到恐惧，都应该被宽恕，因为这是秩序之道。"
-							],
-							"id": "007"
 						},
-						"如果Yellow救了蜜蜂，他们在冒险中后期将获得一个不太可能的盟友。",
-						"与蜜蜂相遇后，请阅读以下内容：",
 						{
-							"type": "insetReadaloud",
-							"page": 3,
-							"entries": [
-								"当你回到思考如何解决颜色断电之谜时，一个戴着角框眼镜的小个子男人走近你并微笑。"
-							],
-							"id": "008"
-						},
-						"这位男士自我介绍为{@creature 霍尼卡特先生|NRH-TCMC}，知识守护者协会的大师。他问黄色是否有时间谈论一件非常重要的事情，说和谐的所有色彩都岌岌可危。如果黄色同意，阅读或转述以下内容：",
-						{
-							"type": "insetReadaloud",
-							"page": 3,
-							"entries": [
-								"我属于一个誓言保护和谐之地的秘密组织。这些色彩中断是由我们尚不了解的邪恶力量引起的，但我们需要你的帮助来恢复一个可以帮助我们根除邪恶的物品。这个物品叫做藏红花宝石。它已经丢失了一段时间，但我最近的研究表明我几乎可以确定它的位置。你能帮我们找回它吗？"
-							],
-							"id": "009"
-						},
-						"霍尼卡特先生给了小黄一张旧地图，地图上标出了黑暗森林深处的一个位置。地图上有一条神秘的留言：\"跟随甜味。\"",
-						"霍尼卡特先生祝愿黄衣牧师旅途平安，并告诉黄衣牧师他会在珍妮·雷恩，一家当地酒馆等他。如果黄衣牧师索要金钱，霍尼卡特先生会给他一个装有25金币的小袋。",
-						{
+							"ENG_name": "Story Summary",
+							"name": "故事梗概",
 							"type": "entries",
+							"id": "001",
+							"page": 2,
 							"entries": [
-								{
-									"ENG_name": "Journey Through Darkwood Forest",
-									"name": "穿越黑暗森林之旅",
-									"type": "entries",
-									"page": 4,
-									"entries": [
-										"在穿越暗木林的旅途中，黄有机会发现一些治疗草药，如果收集并煮成茶，可以起到{@item 治疗药水}的作用。为了找到足够制作一剂草药的草药，黄必须首先成功通过一个{@dc 12}智力（{@skill 自然}）检定来找到草药，然后成功通过一个{@dc 12}智力（{@skill 医药}）检定将其煮成药物。草药只够制作一剂药水。",
-										"当黄衣靠近神庙时，他们开始闻到空气中的甜味\u2014\u2014那是蜂蜜的不可错识的香味。"
-									],
-									"id": "00b"
-								}
-							],
-							"id": "00a"
-						}
-					],
-					"id": "006"
-				},
-				{
-					"ENG_name": "Temple of Miel",
-					"name": "米埃尔神庙",
-					"type": "section",
-					"page": 4,
-					"entries": [
-						"米耶尔神庙曾经是一个专门供奉蜜蜂的庇护所。当Yellow到达神庙时，请阅读或转述以下内容：",
+								"只因长久妒羡着 NERDS 一族乐天热忱的秉性，以及那缤纷诱人的妙趣本质，眼魔伊莫（Emo）伙同其雇佣的悍匪灰石先生（Mr. Greystone），向着 NERDS 挚爱的和谐之城悍然发难。历经数载搜寻，这对奸邪之徒终是寻获了那口圣物\u2014\u2014棱镜之井（Prismatic Well），正是它赋予了和谐之城万般鲜活明丽的绮彩。而今，凭借对棱镜之井的掌控，伊莫与灰石先生已开始榨取和谐之城的色彩源流。若无人出面阻止，整座城池将渐渐褪为灰白色，世间万物，亦会最终沦入永恒的黑白死寂。",
+								"对于 NERDS 一族来说，和谐之城的色彩渐渐褪去，已是一桩令人惶惶不安的谜案。是什么为和谐之城赋予了色彩，也是未解之谜。眼下他们别无他法，唯有祈盼那份力量能再次恢复，让和谐之城的缤纷华彩再度焕发生机。但有一群人知道其中的内情\u2014\u2014他们便是守密者协会（ the Lorekeeper Society），一个发誓要守护和谐之城的神秘组织。守密者们知道棱镜之井的力量，可就连他们，也早已遗失了圣井的确切方位。万幸的是，他们知道借由一件名为和谐护身符的上古圣物可以找到圣井。但必需找到六颗力量宝石才能激活护身符。护身符一旦启动，便会指引持有者找到棱镜之井的隐秘藏地；不仅如此，它也蕴含着关闭圣井的力量。",
+								"长久以来，力量宝石被人们藏于地牢深处、密林腹地与高塔之巅以确保其安全。尽管守密者协会中没有人掌握守护力量宝石的魔法生物与诡谲陷阱的详细资料；但我们英勇无畏的 NERDS 一族，早已蓄势待发，定能肩负起恢复和谐之城的重任，迎难而上！"
+							]
+						},
 						{
-							"type": "insetReadaloud",
+							"ENG_name": "Solo Play",
+							"name": "单人游戏",
+							"type": "entries",
+							"id": "002",
+							"page": 2,
+							"entries": [
+								"因为这些冒险（冒险7 共同冒险 除外）是为单人玩家设计的，所以一些怪物可能对于相应等级的角色来说强度较高。对于那些急于投入战斗的玩家，你可以考虑通过角色扮演来解决这次危机（例如与怪物交朋友或欺骗它们）。在任何遭遇中，你可以都自由的提供非常规的解决方案或其他代替战斗的方案。",
+								"你也可将剧情调整得更为温和友善\u2014\u2014比如允许玩家豁免检定自动成功、让怪物当场化敌为友，或是赋予玩家所有掷骰都具有优势的福利。",
+								{
+									"ENG_name": "TPK: Total Party Kill",
+									"name": "TPK: 团灭",
+									"type": "entries",
+									"id": "003",
+									"page": 2,
+									"entries": [
+										"在单人游戏中，角色总是有可能死亡。对于单个冒险者来说，这种死亡会导致游戏直接结束；这不是一个大家都想看到的结果！避免死亡的一种方法是让冒险者随时都有治疗手段。如果他们没有治疗手段，可以让他们在一个满是灰尘的箱子里找到一瓶{@item 治疗药水}，或者在旅途中发现一种将生命值回满的特殊植物。",
+										"在意外死亡的情况下，你可以让一个有用的NPC（比如霍尼卡特先生）拯救局面并复活他们，或者你可以让他们放弃死亡豁免检定，醒来时发现自己正被拖到一个不愉快的地方。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Adventure Outline",
+							"name": "冒险大纲",
+							"type": "entries",
+							"id": "004",
+							"page": 3,
+							"entries": [
+								"这部分是此冒险的快速概览：",
+								{
+									"type": "list",
+									"items": [
+										"黄衣牧师在灵感寺冥想时，被神秘的霍尼卡特先生接近。",
+										"霍尼卡特先生告诉Yellow，他正在寻找藏红花宝石。他认为这块宝石藏在附近的一座寺庙里。",
+										"黄色旅行到寺庙，发现了一条通往蜘蛛巢穴的隧道。",
+										"处理完蜘蛛后，Yellow解开了一个谜题箱子，里面装有藏红花宝石。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Beginning Play",
+							"name": "开始游戏",
+							"type": "entries",
+							"id": "005",
+							"page": 3,
+							"entries": [
+								"将角色卡（见下文\"黄衣牧师\"）交给玩家，并让他们熟悉黄衣。",
+								"所有加粗的生物或NPC都有属性块，这些属性块包括在冒险的末尾，以及角色可以获得的任何魔法物品。",
+								"你们俩都准备好了之后，就可以开始游戏了。"
+							]
+						},
+						{
+							"ENG_name": "Adventure 6: A Sticky Situation",
+							"name": "冒险6：棘手的局面",
+							"type": "section",
+							"id": "006",
+							"page": 3,
+							"entries": [
+								"当游戏开始时，黄衣牧师在灵感修道院的冥想花园中。请阅读或转述以下内容：",
+								{
+									"type": "insetReadaloud",
+									"id": "007",
+									"page": 3,
+									"entries": [
+										"启示修道院的牧师们正在寻找和谐之地发生的色彩中断事件的答案。许多人花费他们的白天阅读充满古老知识的厚重书籍，而其他人则与社区合作，激发团结的感觉。",
+										"今天，你坐在喷泉旁边，沉思着颜色消失的谜团，这时你看到一只蜜蜂在水里挣扎，快要淹死了。你记得修道院的长者说过，无论生物多么渺小，或者它们是否让你感到恐惧，都应该被宽恕，因为这是秩序之道。"
+									]
+								},
+								"如果Yellow救了蜜蜂，他们在冒险中后期将获得一个不太可能的盟友。",
+								"与蜜蜂相遇后，请阅读以下内容：",
+								{
+									"type": "insetReadaloud",
+									"id": "008",
+									"page": 3,
+									"entries": [
+										"当你回到思考如何解决颜色断电之谜时，一个戴着角框眼镜的小个子男人走近你并微笑。"
+									]
+								},
+								"这位男士自我介绍为{@creature 霍尼卡特先生|NRH-TCMC}，知识守护者协会的大师。他问黄色是否有时间谈论一件非常重要的事情，说和谐的所有色彩都岌岌可危。如果黄色同意，阅读或转述以下内容：",
+								{
+									"type": "insetReadaloud",
+									"id": "009",
+									"page": 3,
+									"entries": [
+										"我属于一个誓言保护和谐之地的秘密组织。这些色彩中断是由我们尚不了解的邪恶力量引起的，但我们需要你的帮助来恢复一个可以帮助我们根除邪恶的物品。这个物品叫做藏红花宝石。它已经丢失了一段时间，但我最近的研究表明我几乎可以确定它的位置。你能帮我们找回它吗？"
+									]
+								},
+								"霍尼卡特先生给了小黄一张旧地图，地图上标出了黑暗森林深处的一个位置。地图上有一条神秘的留言：\"跟随甜味。\"",
+								"霍尼卡特先生祝愿黄衣牧师旅途平安，并告诉黄衣牧师他会在珍妮·雷恩，一家当地酒馆等他。如果黄衣牧师索要金钱，霍尼卡特先生会给他一个装有25金币的小袋。",
+								{
+									"type": "entries",
+									"id": "00a",
+									"entries": [
+										{
+											"ENG_name": "Journey Through Darkwood Forest",
+											"name": "穿越黑暗森林之旅",
+											"type": "entries",
+											"id": "00b",
+											"page": 4,
+											"entries": [
+												"在穿越暗木林的旅途中，黄有机会发现一些治疗草药，如果收集并煮成茶，可以起到{@item 治疗药水}的作用。为了找到足够制作一剂草药的草药，黄必须首先成功通过一个{@dc 12}智力（{@skill 自然}）检定来找到草药，然后成功通过一个{@dc 12}智力（{@skill 医药}）检定将其煮成药物。草药只够制作一剂药水。",
+												"当黄衣靠近神庙时，他们开始闻到空气中的甜味\u2014\u2014那是蜂蜜的不可错识的香味。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Temple of Miel",
+							"name": "米埃尔神庙",
+							"type": "section",
+							"id": "00c",
 							"page": 4,
 							"entries": [
-								"一座古老的寺庙已成废墟。其拱形天花板现已坍塌，曾经的形状像蜂窝。蜜蜂形状的雕像散落在寺庙基础的破碎轮廓周围。",
-								"在庭院中，一圈覆盖着苔藓的石头围绕着一口井。井边有一个绞车和一只水桶。甜美的香气从井中飘出，蜜蜂聚集在井边。"
-							],
-							"id": "00d"
+								"米耶尔神庙曾经是一个专门供奉蜜蜂的庇护所。当Yellow到达神庙时，请阅读或转述以下内容：",
+								{
+									"type": "insetReadaloud",
+									"id": "00d",
+									"page": 4,
+									"entries": [
+										"一座古老的寺庙已成废墟。其拱形天花板现已坍塌，曾经的形状像蜂窝。蜜蜂形状的雕像散落在寺庙基础的破碎轮廓周围。",
+										"在庭院中，一圈覆盖着苔藓的石头围绕着一口井。井边有一个绞车和一只水桶。甜美的香气从井中飘出，蜜蜂聚集在井边。"
+									]
+								},
+								{
+									"type": "image",
+									"id": "018",
+									"href": {
+										"type": "internal",
+										"path": "adventure/NRH-AWoL/012.webp"
+									},
+									"hrefThumbnail": {
+										"type": "internal",
+										"path": "adventure/NRH-AWoL/thumbnail/012.webp"
+									},
+									"width": 560,
+									"height": 846,
+									"imageType": "map",
+									"grid": {
+										"type": "square",
+										"size": 70,
+										"scale": 2
+									},
+									"credit": "Red Central",
+									"mapRegions": [
+										{
+											"area": "011",
+											"points": [
+												[
+													271,
+													361
+												],
+												[
+													271,
+													597
+												],
+												[
+													257,
+													627
+												],
+												[
+													259,
+													653
+												],
+												[
+													283,
+													680
+												],
+												[
+													316,
+													683
+												],
+												[
+													347,
+													664
+												],
+												[
+													356,
+													630
+												],
+												[
+													341,
+													601
+												],
+												[
+													321,
+													590
+												],
+												[
+													310,
+													581
+												],
+												[
+													310,
+													361
+												]
+											]
+										},
+										{
+											"area": "012",
+											"points": [
+												[
+													273,
+													356
+												],
+												[
+													239,
+													353
+												],
+												[
+													194,
+													329
+												],
+												[
+													166,
+													297
+												],
+												[
+													146,
+													244
+												],
+												[
+													127,
+													196
+												],
+												[
+													147,
+													156
+												],
+												[
+													176,
+													129
+												],
+												[
+													191,
+													117
+												],
+												[
+													214,
+													96
+												],
+												[
+													264,
+													84
+												],
+												[
+													304,
+													86
+												],
+												[
+													347,
+													90
+												],
+												[
+													371,
+													116
+												],
+												[
+													390,
+													134
+												],
+												[
+													420,
+													170
+												],
+												[
+													426,
+													217
+												],
+												[
+													416,
+													277
+												],
+												[
+													399,
+													319
+												],
+												[
+													366,
+													343
+												],
+												[
+													316,
+													351
+												]
+											]
+										}
+									]
+								},
+								"搜索寺庙的场地没有发现隐藏的门或房间，尽管有许多蜂巢（见下文\"获取蜂蜜\"）。",
+								{
+									"ENG_name": "The Well",
+									"name": "井",
+									"type": "entries",
+									"id": "00e",
+									"page": 4,
+									"entries": [
+										"井深50尺，底部是一池蜜糖般甜美的水。如果Yellow将水桶放入井中取样，他们会发现水是凉爽、甜美且口感宜人的。",
+										"通过一次成功的 {@dc 15} 智力（{@skill 奥秘}）检定，黄可以识别出这里正在施展的是咒法系魔法。",
+										{
+											"ENG_name": "Going into the Well",
+											"name": "进入井中",
+											"type": "entries",
+											"id": "00f",
+											"page": 4,
+											"entries": [
+												"如果黄进入井中，他们会遇到一群不悦的蜜蜂（使用{@creature 昆虫集群}数据卡），除非黄之前在种植园帮助过那只蜜蜂，若是如此，蜜蜂们会允许他们通过。如果黄在冒险前期没有拯救那只蜜蜂，那么集群会骚扰黄，黄必须与之战斗或设法干扰它们。允许在这里进行创造性的解决难题，例如建造一朵巨大的花或用烟把蜜蜂熏得昏昏欲睡、温顺服帖。",
+												"一旦蜜蜂被处理掉，黄可以爬下井或者使用绳子和桶将自己降低下去。黄必须成功通过一个 {@dc 12} 力量（{@skill 运动}）检定，否则会掉入蜂蜜甜味的水中。如果黄被蜂蜜水覆盖，蜜蜂会在接下来的冒险中跟随黄，使其在敏捷（{@skill 隐匿}）检定上处于劣势。",
+												"在水位线上方，黄色在井的一侧看到一个开口\u2014\u2014一个5尺宽的小走廊（见下图中的区域T1）。",
+												{
+													"ENG_name": "Dungeon Master Note: Safety Check",
+													"name": "地下城主注：安全检查",
+													"type": "inset",
+													"id": "010",
+													"page": 4,
+													"entries": [
+														"区域T2是一个巨大蜘蛛的巢穴。在继续进行以下场景之前，请确保你的玩家没有蜘蛛恐惧症（对蜘蛛有深深的恐惧）。如果你的玩家对蜘蛛感到不舒服，区域T2将由一个骷髅守卫，而区域T1则充满了骨头而不是蜘蛛网。"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "T1. Narrow Tunnel",
+									"name": "T1. 狭窄隧道",
+									"type": "entries",
+									"id": "011",
+									"page": 4,
+									"entries": [
+										"如果小黄进入从井通往区域T2的狭窄隧道，他们会看到隧道里布满了越来越密集的蜘蛛网，这些蜘蛛网在区域内交错。要到达区域T2，小黄必须小心翼翼地穿过这些网。",
+										"每移动 10 英尺，黄必须进行一次 {@dc 13} 敏捷检定。若失败，他们会触碰到蛛网，发出振动并警报 {@creature Szikzith|NRH-AWoL}（见区域 T2）。{@creature Szikzith|NRH-AWoL} 要么在埋伏处等待，要么会下来隧道调查。若成功，黄可以获得突袭。"
+									]
+								},
+								{
+									"ENG_name": "T2. Beehive Room",
+									"name": "T2. 蜂巢室",
+									"type": "entries",
+									"id": "012",
+									"page": 5,
+									"entries": [
+										"当Yellow进入这个房间时，请阅读或转述以下内容：",
+										{
+											"type": "insetReadaloud",
+											"id": "013",
+											"page": 5,
+											"entries": [
+												"这个房间的形状像一个巨大的蜂巢，覆盖着蜂窝和蜘蛛网。墙壁上雕刻着六边形图案，向上弯曲形成一个40尺高的圆顶天花板。大块的蜂巢悬挂在墙壁上，蜂蜜从蜂巢中滴落。",
+												"在地板上，一层层密集的蜘蛛网下面，有一个放在4尺高的石柱上的箱子。"
+											]
+										},
+										"这是{@creature Szikzith|NRH-AWoL}的巢穴，一只觉醒的巨型狼蛛。{@creature Szikzith|NRH-AWoL}贪婪而狡猾，并且已经对蜂蜜产生了喜好。她想要尽可能多的蜂蜜\u2014\u2014但她已经吃了那么多美味的蜂蜜，以至于蜂巢房间里再也没有了，而且她已经变得太胖，无法通过小隧道逃脱。",
+										"{@creature Szikzith|NRH-AWoL} 守卫着她的巢穴，如果她发现黄龙想要某样东西\u2014\u2014比如那个箱子\u2014\u2014她会要求他们带蜂蜜给她。{@creature Szikzith|NRH-AWoL} 并不太聪明，所以可以通过一次成功的 {@dc 13} 智力（{@skill 欺瞒}）检定来欺骗她。{@creature Szikzith|NRH-AWoL} 也不介意违背协议，如果她觉得可以恐吓黄龙以获得更多的蜂蜜，她就会要求更多。在这里奖励你的玩家进行的出色角色扮演。",
+										{
+											"type": "entries",
+											"id": "014",
+											"entries": [
+												{
+													"ENG_name": "Getting Honey",
+													"name": "获取蜂蜜",
+													"type": "entries",
+													"id": "015",
+													"page": 5,
+													"entries": [
+														"在寺庙废墟周围可以找到蜂蜜，但获取它可能会有难度。黄必须成功通过一个{@dc 15}智力 ({@skill 自然})检定才能在不被蜜蜂攻击的情况下获取一些蜂蜜（使用{@creature 昆虫集群}的统计数据）。如果你的玩家想出了一个聪明的获取蜂蜜的计划，那么允许他们以优势掷骰或自动成功。良好的角色扮演总是会得到奖励！",
+														"一旦处理了{@creature Szikzith|NRH-AWoL}，黄色必须割开蛛网，揭露一个装饰有蜜蜂和花朵图案的美丽锁箱。箱子的盖子上写着一个谜语：\"我是一个梳子，但不是用来梳头发的。\"",
+														"这个箱子侧面有五个可旋转的圆盘。每个圆盘上都刻有字母表中的字母，并且可以独立于其他圆盘旋转，以创建不同的字母对齐组合。要打开箱子，必须将圆盘对齐，使得最上面的字母拼出\"HONEY\"。",
+														"如果你的玩家不喜欢解谜或者他们感到沮丧，让 Yellow 通过一个成功的 {@dc 10} 智力检定来打开宝箱。宝箱里面是藏红花石。"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Completing the Mission",
+									"name": "完成任务",
+									"type": "entries",
+									"id": "016",
+									"page": 5,
+									"entries": [
+										"如果Yellow返回修道院与Honeycutt先生会面，并如承诺交付藏红花宝石，Honeycutt先生会非常感激Yellow。他提供给Yellow知识守护者协会的会员资格，并询问Yellow是否愿意帮助他结束那些敢于使和谐之地的生动灵魂变得暗淡的人。Honeycutt先生说他快要找出造成色彩中断的罪魁祸首了，他觉得他将需要英雄们的帮助来阻止他们。",
+										"霍尼卡特先生还递给黄衣一个长长的木盒，感谢他\"在为和谐之城服务中超越了职责。\"盒子里是一把{@item 瓦解之锤}。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Magic Items",
+							"name": "魔法物品",
+							"type": "section",
+							"id": "017",
+							"page": 5,
+							"entries": [
+								"以下魔法物品出现在这次冒险中。",
+								{
+									"type": "list",
+									"columns": 3,
+									"items": [
+										"{@item 瓦解之锤}"
+									]
+								},
+								{
+									"ENG_name": "Mace of Disruption",
+									"name": "瓦解之锤",
+									"type": "statblock",
+									"tag": "item"
+								}
+							]
 						},
 						{
 							"type": "image",
 							"href": {
 								"type": "internal",
-								"path": "adventure/NRH-AWoL/012.webp"
+								"path": "adventure/NRH-AWoL/sheet011.webp"
 							},
-							"width": 560,
-							"height": 846,
-							"mapRegions": [
-								{
-									"area": "011",
-									"points": [
-										[
-											271,
-											361
-										],
-										[
-											271,
-											597
-										],
-										[
-											257,
-											627
-										],
-										[
-											259,
-											653
-										],
-										[
-											283,
-											680
-										],
-										[
-											316,
-											683
-										],
-										[
-											347,
-											664
-										],
-										[
-											356,
-											630
-										],
-										[
-											341,
-											601
-										],
-										[
-											321,
-											590
-										],
-										[
-											310,
-											581
-										],
-										[
-											310,
-											361
-										]
-									]
-								},
-								{
-									"area": "012",
-									"points": [
-										[
-											273,
-											356
-										],
-										[
-											239,
-											353
-										],
-										[
-											194,
-											329
-										],
-										[
-											166,
-											297
-										],
-										[
-											146,
-											244
-										],
-										[
-											127,
-											196
-										],
-										[
-											147,
-											156
-										],
-										[
-											176,
-											129
-										],
-										[
-											191,
-											117
-										],
-										[
-											214,
-											96
-										],
-										[
-											264,
-											84
-										],
-										[
-											304,
-											86
-										],
-										[
-											347,
-											90
-										],
-										[
-											371,
-											116
-										],
-										[
-											390,
-											134
-										],
-										[
-											420,
-											170
-										],
-										[
-											426,
-											217
-										],
-										[
-											416,
-											277
-										],
-										[
-											399,
-											319
-										],
-										[
-											366,
-											343
-										],
-										[
-											316,
-											351
-										]
-									]
-								}
-							],
-							"imageType": "map",
-							"grid": {
-								"type": "square",
-								"size": 70,
-								"scale": 2
-							},
-							"hrefThumbnail": {
+							"width": 1275,
+							"height": 825
+						},
+						{
+							"type": "image",
+							"href": {
 								"type": "internal",
-								"path": "adventure/NRH-AWoL/thumbnail/012.webp"
+								"path": "adventure/NRH-AWoL/sheet012.webp"
 							},
-							"id": "018",
-							"credit": "Red Central"
-						},
-						"搜索寺庙的场地没有发现隐藏的门或房间，尽管有许多蜂巢（见下文\"获取蜂蜜\"）。",
-						{
-							"ENG_name": "The Well",
-							"name": "井",
-							"type": "entries",
-							"page": 4,
-							"entries": [
-								"井深50尺，底部是一池蜜糖般甜美的水。如果Yellow将水桶放入井中取样，他们会发现水是凉爽、甜美且口感宜人的。",
-								"通过一次成功的 {@dc 15} 智力（{@skill 奥秘}）检定，黄可以识别出这里正在施展的是咒法系魔法。",
-								{
-									"ENG_name": "Going into the Well",
-									"name": "进入井中",
-									"type": "entries",
-									"page": 4,
-									"entries": [
-										"如果黄进入井中，他们会遇到一群不悦的蜜蜂（使用{@creature 昆虫集群}数据卡），除非黄之前在种植园帮助过那只蜜蜂，若是如此，蜜蜂们会允许他们通过。如果黄在冒险前期没有拯救那只蜜蜂，那么集群会骚扰黄，黄必须与之战斗或设法干扰它们。允许在这里进行创造性的解决难题，例如建造一朵巨大的花或用烟把蜜蜂熏得昏昏欲睡、温顺服帖。",
-										"一旦蜜蜂被处理掉，黄可以爬下井或者使用绳子和桶将自己降低下去。黄必须成功通过一个 {@dc 12} 力量（{@skill 运动}）检定，否则会掉入蜂蜜甜味的水中。如果黄被蜂蜜水覆盖，蜜蜂会在接下来的冒险中跟随黄，使其在敏捷（{@skill 隐匿}）检定上处于劣势。",
-										"在水位线上方，黄色在井的一侧看到一个开口\u2014\u2014一个5尺宽的小走廊（见下图中的区域T1）。",
-										{
-											"ENG_name": "Dungeon Master Note: Safety Check",
-											"name": "地下城主注：安全检查",
-											"type": "inset",
-											"page": 4,
-											"entries": [
-												"区域T2是一个巨大蜘蛛的巢穴。在继续进行以下场景之前，请确保你的玩家没有蜘蛛恐惧症（对蜘蛛有深深的恐惧）。如果你的玩家对蜘蛛感到不舒服，区域T2将由一个骷髅守卫，而区域T1则充满了骨头而不是蜘蛛网。"
-											],
-											"id": "010"
-										}
-									],
-									"id": "00f"
-								}
-							],
-							"id": "00e"
-						},
-						{
-							"ENG_name": "T1. Narrow Tunnel",
-							"name": "T1. 狭窄隧道",
-							"type": "entries",
-							"page": 4,
-							"entries": [
-								"如果小黄进入从井通往区域T2的狭窄隧道，他们会看到隧道里布满了越来越密集的蜘蛛网，这些蜘蛛网在区域内交错。要到达区域T2，小黄必须小心翼翼地穿过这些网。",
-								"每移动 10 英尺，黄必须进行一次 {@dc 13} 敏捷检定。若失败，他们会触碰到蛛网，发出振动并警报 {@creature Szikzith|NRH-AWoL}（见区域 T2）。{@creature Szikzith|NRH-AWoL} 要么在埋伏处等待，要么会下来隧道调查。若成功，黄可以获得突袭。"
-							],
-							"id": "011"
-						},
-						{
-							"ENG_name": "T2. Beehive Room",
-							"name": "T2. 蜂巢室",
-							"type": "entries",
-							"page": 5,
-							"entries": [
-								"当Yellow进入这个房间时，请阅读或转述以下内容：",
-								{
-									"type": "insetReadaloud",
-									"page": 5,
-									"entries": [
-										"这个房间的形状像一个巨大的蜂巢，覆盖着蜂窝和蜘蛛网。墙壁上雕刻着六边形图案，向上弯曲形成一个40尺高的圆顶天花板。大块的蜂巢悬挂在墙壁上，蜂蜜从蜂巢中滴落。",
-										"在地板上，一层层密集的蜘蛛网下面，有一个放在4尺高的石柱上的箱子。"
-									],
-									"id": "013"
-								},
-								"这是{@creature Szikzith|NRH-AWoL}的巢穴，一只觉醒的巨型狼蛛。{@creature Szikzith|NRH-AWoL}贪婪而狡猾，并且已经对蜂蜜产生了喜好。她想要尽可能多的蜂蜜\u2014\u2014但她已经吃了那么多美味的蜂蜜，以至于蜂巢房间里再也没有了，而且她已经变得太胖，无法通过小隧道逃脱。",
-								"{@creature Szikzith|NRH-AWoL} 守卫着她的巢穴，如果她发现黄龙想要某样东西\u2014\u2014比如那个箱子\u2014\u2014她会要求他们带蜂蜜给她。{@creature Szikzith|NRH-AWoL} 并不太聪明，所以可以通过一次成功的 {@dc 13} 智力（{@skill 欺瞒}）检定来欺骗她。{@creature Szikzith|NRH-AWoL} 也不介意违背协议，如果她觉得可以恐吓黄龙以获得更多的蜂蜜，她就会要求更多。在这里奖励你的玩家进行的出色角色扮演。",
-								{
-									"type": "entries",
-									"entries": [
-										{
-											"ENG_name": "Getting Honey",
-											"name": "获取蜂蜜",
-											"type": "entries",
-											"page": 5,
-											"entries": [
-												"在寺庙废墟周围可以找到蜂蜜，但获取它可能会有难度。黄必须成功通过一个{@dc 15}智力 ({@skill 自然})检定才能在不被蜜蜂攻击的情况下获取一些蜂蜜（使用{@creature 昆虫集群}的统计数据）。如果你的玩家想出了一个聪明的获取蜂蜜的计划，那么允许他们以优势掷骰或自动成功。良好的角色扮演总是会得到奖励！",
-												"一旦处理了{@creature Szikzith|NRH-AWoL}，黄色必须割开蛛网，揭露一个装饰有蜜蜂和花朵图案的美丽锁箱。箱子的盖子上写着一个谜语：\"我是一个梳子，但不是用来梳头发的。\"",
-												"这个箱子侧面有五个可旋转的圆盘。每个圆盘上都刻有字母表中的字母，并且可以独立于其他圆盘旋转，以创建不同的字母对齐组合。要打开箱子，必须将圆盘对齐，使得最上面的字母拼出\"HONEY\"。",
-												"如果你的玩家不喜欢解谜或者他们感到沮丧，让 Yellow 通过一个成功的 {@dc 10} 智力检定来打开宝箱。宝箱里面是藏红花石。"
-											],
-											"id": "015"
-										}
-									],
-									"id": "014"
-								}
-							],
-							"id": "012"
-						},
-						{
-							"ENG_name": "Completing the Mission",
-							"name": "完成任务",
-							"type": "entries",
-							"page": 5,
-							"entries": [
-								"如果Yellow返回修道院与Honeycutt先生会面，并如承诺交付藏红花宝石，Honeycutt先生会非常感激Yellow。他提供给Yellow知识守护者协会的会员资格，并询问Yellow是否愿意帮助他结束那些敢于使和谐之地的生动灵魂变得暗淡的人。Honeycutt先生说他快要找出造成色彩中断的罪魁祸首了，他觉得他将需要英雄们的帮助来阻止他们。",
-								"霍尼卡特先生还递给黄衣一个长长的木盒，感谢他\"在为和谐之城服务中超越了职责。\"盒子里是一把{@item 瓦解之锤}。"
-							],
-							"id": "016"
+							"width": 1275,
+							"height": 825
 						}
-					],
-					"id": "00c"
+					]
 				},
 				{
-					"ENG_name": "Magic Items",
-					"name": "魔法物品",
+					"ENG_name": "Credits",
+					"name": "制作组",
 					"type": "section",
-					"page": 5,
-					"entries": [
-						"以下魔法物品出现在这次冒险中。",
-						{
-							"type": "list",
-							"items": [
-								"{@item 瓦解之锤}"
-							],
-							"columns": 3
-						},
-						{
-							"ENG_name": "Mace of Disruption",
-							"name": "瓦解之锤",
-							"type": "statblock",
-							"tag": "item"
-						}
-					],
-					"id": "017"
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "adventure/NRH-AWoL/sheet011.webp"
-					},
-					"width": 1275,
-					"height": 825
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "adventure/NRH-AWoL/sheet012.webp"
-					},
-					"width": 1275,
-					"height": 825
-				}
-			],
-			"id": "000"
-		},
-		{
-			"ENG_name": "Credits",
-			"name": "制作组",
-			"type": "section",
-			"entries": [
-				{
-					"type": "entries",
+					"id": "019",
 					"entries": [
 						{
-							"type": "list",
-							"style": "list-hang-notitle",
-							"columns": 2,
-							"items": [
+							"type": "entries",
+							"id": "01a",
+							"entries": [
 								{
-									"ENG_name": "Dungeons & Dragons Team:",
-									"name": "龙与地下城团队：",
-									"type": "entries",
-									"entries": [
+									"type": "list",
+									"style": "list-hang-notitle",
+									"columns": 2,
+									"items": [
 										{
-											"type": "list",
-											"style": "list-hang-notitle",
-											"items": [
+											"ENG_name": "Dungeons & Dragons Team:",
+											"name": "龙与地下城团队：",
+											"type": "entries",
+											"id": "01b",
+											"entries": [
 												{
-													"ENG_name": "Adventure Design",
-													"name": "冒险设计",
-													"type": "item",
-													"entries": [
-														"Kat Kruger，Adam Lee"
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"ENG_name": "Adventure Design",
+															"name": "冒险设计",
+															"type": "item",
+															"entries": [
+																"Kat Kruger，Adam Lee"
+															]
+														},
+														{
+															"ENG_name": "Additional Development",
+															"name": "额外开发",
+															"type": "item",
+															"entries": [
+																"Bill Benham"
+															]
+														},
+														{
+															"ENG_name": "Character Design",
+															"name": "角色设计",
+															"type": "item",
+															"entries": [
+																"Chris Tulach"
+															]
+														},
+														{
+															"ENG_name": "Graphic Design",
+															"name": "平面设计",
+															"type": "item",
+															"entries": [
+																"艾玛·埃克布莱德"
+															]
+														},
+														{
+															"ENG_name": "Editors",
+															"name": "编辑",
+															"type": "item",
+															"entries": [
+																"阿什利·米凯拉·劳森，汉娜·罗斯"
+															]
+														},
+														{
+															"ENG_name": "Creator Manager",
+															"name": "创作者管理器",
+															"type": "item",
+															"entries": [
+																"Pelham Greene"
+															]
+														},
+														{
+															"ENG_name": "Illustrations",
+															"name": "插图",
+															"type": "item",
+															"entries": [
+																"红色中心"
+															]
+														},
+														{
+															"ENG_name": "Producer",
+															"name": "出品人",
+															"type": "item",
+															"entries": [
+																"Bill Benham"
+															]
+														},
+														{
+															"ENG_name": "Brand Manager",
+															"name": "品牌经理",
+															"type": "item",
+															"entries": [
+																"Shelly Mazzanoble"
+															]
+														},
+														{
+															"ENG_name": "Director of Category Licensing",
+															"name": "品类授权总监",
+															"type": "item",
+															"entries": [
+																"安·厄普"
+															]
+														}
 													]
-												},
+												}
+											]
+										},
+										{
+											"ENG_name": "Ferrara Team:",
+											"name": "费拉拉团队：",
+											"type": "entries",
+											"id": "01c",
+											"entries": [
 												{
-													"ENG_name": "Additional Development",
-													"name": "额外开发",
-													"type": "item",
-													"entries": [
-														"Bill Benham"
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"ENG_name": "Sr. Associate Brand Manager, NERDS:",
+															"name": "高级品牌经理，书呆子：",
+															"type": "item",
+															"entries": [
+																"卢卡斯·克劳斯"
+															]
+														},
+														{
+															"ENG_name": "Content Manager, NERDS:",
+															"name": "内容经理，书呆子：",
+															"type": "item",
+															"entries": [
+																"安妮·贝尔格莱德"
+															]
+														},
+														{
+															"ENG_name": "Brand Manager, NERDS:",
+															"name": "品牌经理，书呆子：",
+															"type": "item",
+															"entries": [
+																"乔伊·拉斯"
+															]
+														},
+														{
+															"ENG_name": "Director of Licensing & Partnerships, Ferrara Candy Co.",
+															"name": "Ferrara糖果公司许可与合作伙伴关系总监",
+															"type": "item",
+															"entries": [
+																"艾米·帕格尔斯"
+															]
+														}
 													]
-												},
+												}
+											]
+										},
+										{
+											"ENG_name": "Tripleclix Team:",
+											"name": "三重点击团队：",
+											"type": "entries",
+											"id": "01d",
+											"entries": [
 												{
-													"ENG_name": "Character Design",
-													"name": "角色设计",
-													"type": "item",
-													"entries": [
-														"Chris Tulach"
-													]
-												},
-												{
-													"ENG_name": "Graphic Design",
-													"name": "平面设计",
-													"type": "item",
-													"entries": [
-														"艾玛·埃克布莱德"
-													]
-												},
-												{
-													"ENG_name": "Editors",
-													"name": "编辑",
-													"type": "item",
-													"entries": [
-														"阿什利·米凯拉·劳森，汉娜·罗斯"
-													]
-												},
-												{
-													"ENG_name": "Creator Manager",
-													"name": "创作者管理器",
-													"type": "item",
-													"entries": [
-														"Pelham Greene"
-													]
-												},
-												{
-													"ENG_name": "Illustrations",
-													"name": "插图",
-													"type": "item",
-													"entries": [
-														"红色中心"
-													]
-												},
-												{
-													"ENG_name": "Producer",
-													"name": "出品人",
-													"type": "item",
-													"entries": [
-														"Bill Benham"
-													]
-												},
-												{
-													"ENG_name": "Brand Manager",
-													"name": "品牌经理",
-													"type": "item",
-													"entries": [
-														"Shelly Mazzanoble"
-													]
-												},
-												{
-													"ENG_name": "Director of Category Licensing",
-													"name": "品类授权总监",
-													"type": "item",
-													"entries": [
-														"安·厄普"
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"ENG_name": "Managing Partner",
+															"name": "管理合伙人",
+															"type": "item",
+															"entries": [
+																"詹妮弗·厄布"
+															]
+														},
+														{
+															"ENG_name": "Founder, Managing Partner",
+															"name": "创始人，管理合伙人",
+															"type": "item",
+															"entries": [
+																"克里斯托弗·厄布"
+															]
+														},
+														{
+															"ENG_name": "VP, Head of Partnership Marketing",
+															"name": "副总裁，合作伙伴营销负责人",
+															"type": "item",
+															"entries": [
+																"肯尼思·林登鲍姆"
+															]
+														},
+														{
+															"ENG_name": "Additional Support",
+															"name": "额外支持",
+															"type": "item",
+															"entries": [
+																"VMLY&R Commerce，Taxi，Pep 和 Golin"
+															]
+														}
 													]
 												}
 											]
 										}
-									],
-									"id": "01b"
-								},
-								{
-									"ENG_name": "Ferrara Team:",
-									"name": "费拉拉团队：",
-									"type": "entries",
-									"entries": [
-										{
-											"type": "list",
-											"style": "list-hang-notitle",
-											"items": [
-												{
-													"ENG_name": "Sr. Associate Brand Manager, NERDS:",
-													"name": "高级品牌经理，书呆子：",
-													"type": "item",
-													"entries": [
-														"卢卡斯·克劳斯"
-													]
-												},
-												{
-													"ENG_name": "Content Manager, NERDS:",
-													"name": "内容经理，书呆子：",
-													"type": "item",
-													"entries": [
-														"安妮·贝尔格莱德"
-													]
-												},
-												{
-													"ENG_name": "Brand Manager, NERDS:",
-													"name": "品牌经理，书呆子：",
-													"type": "item",
-													"entries": [
-														"乔伊·拉斯"
-													]
-												},
-												{
-													"ENG_name": "Director of Licensing & Partnerships, Ferrara Candy Co.",
-													"name": "Ferrara糖果公司许可与合作伙伴关系总监",
-													"type": "item",
-													"entries": [
-														"艾米·帕格尔斯"
-													]
-												}
-											]
-										}
-									],
-									"id": "01c"
-								},
-								{
-									"ENG_name": "Tripleclix Team:",
-									"name": "三重点击团队：",
-									"type": "entries",
-									"entries": [
-										{
-											"type": "list",
-											"style": "list-hang-notitle",
-											"items": [
-												{
-													"ENG_name": "Managing Partner",
-													"name": "管理合伙人",
-													"type": "item",
-													"entries": [
-														"詹妮弗·厄布"
-													]
-												},
-												{
-													"ENG_name": "Founder, Managing Partner",
-													"name": "创始人，管理合伙人",
-													"type": "item",
-													"entries": [
-														"克里斯托弗·厄布"
-													]
-												},
-												{
-													"ENG_name": "VP, Head of Partnership Marketing",
-													"name": "副总裁，合作伙伴营销负责人",
-													"type": "item",
-													"entries": [
-														"肯尼思·林登鲍姆"
-													]
-												},
-												{
-													"ENG_name": "Additional Support",
-													"name": "额外支持",
-													"type": "item",
-													"entries": [
-														"VMLY&R Commerce，Taxi，Pep 和 Golin"
-													]
-												}
-											]
-										}
-									],
-									"id": "01d"
+									]
 								}
 							]
 						}
-					],
-					"id": "01a"
+					]
 				}
-			],
-			"id": "019"
+			]
 		}
 	]
 }

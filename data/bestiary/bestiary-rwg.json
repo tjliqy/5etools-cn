@@ -1,0 +1,72 @@
+{
+	"_meta": {
+		"dependencies": {
+			"monster": [
+				"XMM"
+			]
+		},
+		"otherSources": {
+			"monster": {
+				"XMM": "RWG",
+				"AU": "RWG"
+			}
+		}
+	},
+	"monster": [
+		{
+			"ENG_name": "Ri'all",
+			"name": "莉雅尔",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "RWG",
+			"_copy": {
+				"ENG_name": "Death Cultist",
+				"name": "死亡邪教徒",
+				"source": "XMM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "邪教徒",
+						"with": "莉雅尔",
+						"flags": "i"
+					}
+				}
+			},
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"incapacitated",
+				"invisible",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
+			"trait": [
+				{
+					"ENG_name": "Immunities and Saves",
+					"name": "免疫与豁免",
+					"entries": [
+						"莉雅尔的所有豁免检定自动成功。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Spirit Wail {@recharge 5}",
+					"name": "魂灵惊嚎{@recharge 5}",
+					"entries": [
+						"{@actSave wis} {@dc 14}，源自邪教徒的20尺{@variantrule 光环 [效应区域]|XPHB|光环}区域内的每名生物（赛尔佣兵除外）。{@actSaveFail} 7（{@damage 2d6}）心灵伤害，且目标陷入{@condition 恐慌|XPHB}状态直至其下个回合结束。{@actSaveSuccess} 仅半伤。"
+					]
+				}
+			]
+		}
+	]
+}

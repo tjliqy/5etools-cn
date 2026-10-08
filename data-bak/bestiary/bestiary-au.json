@@ -1,6 +1,6 @@
 {
 	"_meta": {
-		"referenceSources": {
+		"otherSources": {
 			"monster": {
 				"XMM": "AU"
 			}
@@ -288,6 +288,16 @@
 						"{@spell Mage Hand|XPHB}",
 						"{@spell Prestidigitation|XPHB}"
 					],
+					"daily": {
+						"2e": [
+							"{@spell Dimension Door|XPHB}",
+							"{@spell Scrying|XPHB}"
+						],
+						"1e": [
+							"{@spell Clone|XPHB}",
+							"{@spell Guards and Wards|XPHB}"
+						]
+					},
 					"ability": "int",
 					"displayAs": "action"
 				},
@@ -396,7 +406,8 @@
 				"R"
 			],
 			"damageTagsSpell": [
-				"L"
+				"L",
+				"O"
 			],
 			"spellcastingTags": [
 				"O"
@@ -813,6 +824,9 @@
 			"name": "Darkenbeast",
 			"source": "AU",
 			"page": 142,
+			"referenceSources": [
+				"RWG"
+			],
 			"size": [
 				"M"
 			],
@@ -1859,6 +1873,9 @@
 			"name": "Groundling Stalker",
 			"source": "AU",
 			"page": 144,
+			"referenceSources": [
+				"RWG"
+			],
 			"size": [
 				"M"
 			],
@@ -2243,6 +2260,9 @@
 			"name": "Living Thunderwave",
 			"source": "AU",
 			"page": 146,
+			"referenceSources": [
+				"RWG"
+			],
 			"size": [
 				"M"
 			],
@@ -2334,6 +2354,9 @@
 			"name": "Living Vitriolic Sphere",
 			"source": "AU",
 			"page": 146,
+			"referenceSources": [
+				"RWG"
+			],
 			"size": [
 				"L"
 			],
@@ -2848,6 +2871,9 @@
 			"name": "Spellguard",
 			"source": "AU",
 			"page": 147,
+			"referenceSources": [
+				"RWG"
+			],
 			"size": [
 				"M"
 			],
@@ -3578,6 +3604,7 @@
 		{
 			"name": "Vestige Companion",
 			"source": "AU",
+			"page": 14,
 			"summonedByClass": "Warlock|XPHB",
 			"size": [
 				"S"

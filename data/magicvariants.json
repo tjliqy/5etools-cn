@@ -881,7 +881,7 @@
 				}
 			],
 			"inherits": {
-				"namePrefix": "冥河之剑",
+				"namePrefix": "修罗场之刃",
 				"source": "EGW",
 				"page": 265,
 				"rarity": "rare",
@@ -891,7 +891,7 @@
 					"这把剑的黑色刀刃是由一种神秘的奥术合金锻造而成。使用这把魔法武器进行攻击和伤害判定时，你会获得{=bonusWeapon}的额外加成。只要这把剑在你的身上，你便免疫驱散亡灵。",
 					{
 						"ENG_name": "Dark Blessing",
-						"name": "黑暗赐福",
+						"name": "黑暗馈赠",
 						"type": "entries",
 						"entries": [
 							"持有这把剑时，你可以使用一个动作为自己增加{@dice 1d4 + 4}点临时生命值。这个特性直到下一个黄昏之前不能再次使用。"
@@ -899,7 +899,7 @@
 					},
 					{
 						"ENG_name": "Disheartening Strike",
-						"name": "挫败打击",
+						"name": "沮丧打击",
 						"type": "entries",
 						"entries": [
 							"使用这个武器攻击生物并命中时，你可以让目标充满不安的恐惧：目标在你下一回合结束前进行的下一次豁免检定将处于不利状态。如果生物对{@condition 恐慌}状态免疫，则忽略此效果。一旦使用这个特性，直到下一个黄昏之前你不能再使用。"
@@ -1102,6 +1102,9 @@
 						"mode": "setProp",
 						"value": "传说"
 					}
+				},
+				"_preserve": {
+					"page": true
 				}
 			}
 		},
@@ -1130,13 +1133,13 @@
 					"在对一个生物造成额外伤害后，弹药将变为非魔法物品。",
 					{
 						"type": "table",
-						"colStyles": [
-							"col-2 text-center",
-							"col-10"
-						],
 						"colLabels": [
 							"1d100",
 							"生物类型"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
 						],
 						"rows": [
 							[
@@ -5216,7 +5219,7 @@
 		},
 		{
 			"ENG_name": "Last Stand Armor",
-			"name": "背水一战护甲",
+			"name": "最终之战护甲",
 			"type": "GV|DMG",
 			"requires": [
 				{
@@ -5224,7 +5227,7 @@
 				}
 			],
 			"inherits": {
-				"namePrefix": "背水一战",
+				"namePrefix": "最终之战",
 				"source": "EGW",
 				"page": 267,
 				"rarity": "very rare",
@@ -5248,6 +5251,7 @@
 			"inherits": {
 				"namePrefix": "汲命",
 				"source": "AUD",
+				"page": 118,
 				"rarity": "rare",
 				"reqAttune": true,
 				"bonusWeapon": "+1",
@@ -5888,13 +5892,13 @@
 					{
 						"type": "table",
 						"caption": "月刃词条",
-						"colStyles": [
-							"col-2 text-center",
-							"col-10"
-						],
 						"colLabels": [
 							"1d100",
 							"词条"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
 						],
 						"rows": [
 							[
@@ -6602,6 +6606,9 @@
 						"mode": "appendIfNotExistsArr",
 						"items": "fire"
 					}
+				},
+				"_preserve": {
+					"page": true
 				}
 			}
 		},
@@ -6961,6 +6968,7 @@
 			"inherits": {
 				"namePrefix": "狙击者手镯",
 				"source": "AUD",
+				"page": 119,
 				"rarity": "common",
 				"reqAttune": true,
 				"entries": [
@@ -6987,6 +6995,7 @@
 			"inherits": {
 				"namePrefix": "燃法",
 				"source": "AUD",
+				"page": 119,
 				"rarity": "very rare",
 				"reqAttune": "由施法者",
 				"reqAttuneTags": [
@@ -7146,6 +7155,9 @@
 						"value": "AU"
 					},
 					"inherits.srd52": "remove"
+				},
+				"_preserve": {
+					"page": true
 				}
 			},
 			"requires": [
@@ -7225,6 +7237,9 @@
 						"mode": "setProp",
 						"value": "传说"
 					}
+				},
+				"_preserve": {
+					"page": true
 				}
 			}
 		},
@@ -7748,6 +7763,7 @@
 			"inherits": {
 				"namePrefix": "赛尔",
 				"source": "AUD",
+				"page": 121,
 				"rarity": "rare",
 				"reqAttune": true,
 				"bonusWeapon": "+1",
@@ -7853,19 +7869,20 @@
 			"inherits": {
 				"namePrefix": "诡计",
 				"source": "AUD",
+				"page": 121,
 				"rarity": "common",
 				"entries": [
 					"触碰该武器期间，你可以执行{@action 魔法|XPHB}动作，将其变形成一件寻常物品，或变回其武器形态。变形为寻常物品期间，其无法被用于攻击。",
 					"不同的诡计武器会变形为不同的物品。由DM选择该寻常物品，或通过掷骰下表随机决定。",
 					{
 						"type": "table",
-						"colStyles": [
-							"col-2 text-center",
-							"col-10"
-						],
 						"colLabels": [
 							"{@dice 1d10}",
 							"该武器变形为......"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
 						],
 						"rows": [
 							[
@@ -8202,7 +8219,7 @@
 		},
 		{
 			"ENG_name": "Weapon of Certain Death",
-			"name": "绝命武器",
+			"name": "致命武器",
 			"type": "GV|DMG",
 			"requires": [
 				{
@@ -8213,7 +8230,7 @@
 				"net": true
 			},
 			"inherits": {
-				"namePrefix": "绝命",
+				"namePrefix": "致命",
 				"source": "EGW",
 				"page": 270,
 				"rarity": "rare",

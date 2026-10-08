@@ -1,416 +1,422 @@
 {
-	"data": [
+	"bookData": [
 		{
-			"ENG_name": "About Eldraine",
-			"name": "关于艾尔德拉因",
-			"type": "section",
-			"id": "001",
-			"entries": [
-				"埃德拉因是一个充满冒险和城堡、骑士和法师、邪恶的魔契师和奇幻生物的故事书世界。曾经，勇敢的骑士们会从五个皇家法庭出发去完成崇高的任务\u2014\u2014但来自另一个世界的恐怖菲瑞克斯人的入侵改变了一切，留下了王国的废墟。",
-				"埃尔德雷恩的领域与荒野随着2019年的{@i 埃德拉因的王座}系列被引入《魔法风云会》的玩家。新的{@i 埃德拉因的荒野}系列展示了世界在非瑞克西亚入侵之后的景象，抛弃了骑士与城堡，深入探索了奇异神秘的荒野。在这里，巨人在云端中蹒跚而行，精灵制造恶作剧，女巫在沸腾的大锅旁咯咯笑着。",
-				"当一个生物的名字以{@b 粗体}显示时，这是一个视觉提示，指向其数据块，该数据块出现在{@book 怪物图鉴|MM}中，除非另有说明。",
+			"id": "MCV4EC",
+			"source": "MCV4EC",
+			"data": [
 				{
-					"ENG_name": "The Wilds",
-					"name": "荒野",
-					"type": "entries",
-					"id": "002",
+					"ENG_name": "About Eldraine",
+					"name": "关于艾尔德拉因",
+					"type": "section",
+					"id": "001",
 					"entries": [
-						"越过法庭，跨过溪流，进入森林\u2014\u2014那里就是荒野，埃德拉因所有土地中最神奇、最奇怪、最危险的地方。与王国的秩序和结构形成对比，荒野是不可预测的，并且没有统一在任何一个政府体系之下。",
-						"荒野之地就像那里居住的生物一样未被驯服且多样化。魔法在这里肆意蔓延，以奇异而常常美丽的方式显现。它可以是诱人的、赋予力量的和恢复性的。它也可以是令人反感的、令人虚弱的和破坏性的。",
-						"无数智慧生物物种栖息在荒野中，包括人类。除了本集合中描述的那些生物外，许多来自{@book 怪物图鉴|MM}和其他来源的生物也生活在艾尔德雷恩的荒野中：",
+						"埃德拉因是一个充满冒险和城堡、骑士和法师、邪恶的魔契师和奇幻生物的故事书世界。曾经，勇敢的骑士们会从五个皇家法庭出发去完成崇高的任务\u2014\u2014但来自另一个世界的恐怖菲瑞克斯人的入侵改变了一切，留下了王国的废墟。",
+						"埃尔德雷恩的领域与荒野随着2019年的{@i 埃德拉因的王座}系列被引入《魔法风云会》的玩家。新的{@i 埃德拉因的荒野}系列展示了世界在非瑞克西亚入侵之后的景象，抛弃了骑士与城堡，深入探索了奇异神秘的荒野。在这里，巨人在云端中蹒跚而行，精灵制造恶作剧，女巫在沸腾的大锅旁咯咯笑着。",
+						"当一个生物的名字以{@b 粗体}显示时，这是一个视觉提示，指向其数据块，该数据块出现在{@book 怪物图鉴|MM}中，除非另有说明。",
 						{
-							"type": "list",
-							"style": "list-hang-notitle",
-							"items": [
+							"ENG_name": "The Wilds",
+							"name": "荒野",
+							"type": "entries",
+							"id": "002",
+							"entries": [
+								"越过法庭，跨过溪流，进入森林\u2014\u2014那里就是荒野，埃德拉因所有土地中最神奇、最奇怪、最危险的地方。与王国的秩序和结构形成对比，荒野是不可预测的，并且没有统一在任何一个政府体系之下。",
+								"荒野之地就像那里居住的生物一样未被驯服且多样化。魔法在这里肆意蔓延，以奇异而常常美丽的方式显现。它可以是诱人的、赋予力量的和恢复性的。它也可以是令人反感的、令人虚弱的和破坏性的。",
+								"无数智慧生物物种栖息在荒野中，包括人类。除了本集合中描述的那些生物外，许多来自{@book 怪物图鉴|MM}和其他来源的生物也生活在艾尔德雷恩的荒野中：",
 								{
-									"ENG_name": "Humans",
-									"name": "人类",
-									"type": "item",
-									"entry": "无论是出于绝望还是在宫廷之外生活的愿望，人类始终存在于荒野之中。这些人包括坚韧且足智多谋的猎人、林务员和工匠，他们常常沾染上一些来自更为奇幻的邻居的怪癖。除了在{@book 怪物图鉴|MM}和其他来源中发现的非玩家角色状态块外，请参阅本集合中的{@creature 艾卓骑士|MCV4EC}。"
-								},
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"ENG_name": "Humans",
+											"name": "人类",
+											"type": "item",
+											"entry": "无论是出于绝望还是在宫廷之外生活的愿望，人类始终存在于荒野之中。这些人包括坚韧且足智多谋的猎人、林务员和工匠，他们常常沾染上一些来自更为奇幻的邻居的怪癖。除了在{@book 怪物图鉴|MM}和其他来源中发现的非玩家角色状态块外，请参阅本集合中的{@creature 艾卓骑士|MCV4EC}。"
+										},
+										{
+											"ENG_name": "Elves",
+											"name": "精灵",
+											"type": "item",
+											"entry": "作为一个曾经强大帝国的后裔，埃尔卓因的精灵们在作为自然守护者的角色中找到了新的目标。大多数精灵以猎人、采集者和德鲁伊的小队形式穿行于森林中，尽管仍有一些精灵居住在遍布荒野的破败堡垒和杂草丛生的城堡中。除了在{@book 怪物图鉴|MM}和其他资料中找到的非玩家角色数据块外，请参阅本合集中的{@creature 赤牙狐人|MCV4EC}。"
+										},
+										{
+											"ENG_name": "Dwarves",
+											"name": "矮人",
+											"type": "item",
+											"entry": "Eldraine的矮人包括矿工、铁匠和其他工匠，他们重视辛勤工作和独立性。这些工匠以从他们开采的矿物中制作精美的珠宝和坚固的武器为荣，并且他们重视工作的尊严。"
+										},
+										{
+											"ENG_name": "Merfolk",
+											"name": "人鱼",
+											"type": "item",
+											"entry": "在荒野中，{@creature 人鱼}被称为贪婪的守护者，他们守护着奥秘魔法、知识和神器。据说他们在埃德拉因的湖泊、池塘和许愿井中囤积着珍贵的魔法物品、书籍和其他秘密。"
+										},
+										{
+											"ENG_name": "Fauns",
+											"name": "羊人",
+											"type": "item",
+											"entry": "在法力克斯入侵之前，半羊人（使用{@creature 半羊人}统计块）是隐居的生物，生活在森林深处的紧密家庭单位中。看到他们的家园受到攻击激发了他们离开森林，加入Eldraine的其余部分进行防御。入侵结束后，半羊人接管了Tanglespan，这是一个位于王国和荒野之间的巨大裂缝。他们绘制出横跨裂缝的交错路径，击退潜伏在桥下希望享用旅行者的{@creature 巨魔||巨魔}，并以适度的通行费引导旅行者穿越裂缝。"
+										},
+										{
+											"ENG_name": "Giants",
+											"name": "巨人",
+											"type": "item",
+											"entry": "巨人是罕见的生物，无论是在王国还是荒野中都同样自在。在加伦布里格和恩贝雷斯，{@creature 火巨人||火巨人}和{@creature 石巨人||石巨人}分别作为强大的骑士和强壮的劳动者。在荒野中，{@creature 山丘巨人||山丘巨人}一直对王国的统治者持敌对态度，即使在精灵统治这片土地时也是如此。{@creature 云巨人||云雾}和{@creature 风暴巨人||风暴巨人}居住在由魔法云构成的岛屿上，远离荒野。（关于Stormkeld及其巨人居民的更多信息，请查看本合集中的{@creature 风暴雄鹿|MCV4EC}条目。）{@book 毕格比巨献：巨人之荣耀|BGG}包含了许多额外的巨人统计块，以及可能在Stormkeld中发现的其他生物的描述，例如{@creature 巨鹅|BGG|巨鹅}和{@creature 巨牛|BGG|巨牛}。"
+										},
+										{
+											"ENG_name": "Redcaps",
+											"name": "红帽子",
+											"type": "item",
+											"entry": "红帽怪（使用《{@book 魔邓肯巨献:多元宇宙的怪物|MPMM}》中的{@creature 红帽子|MPMM}统计块或《{@creature 地精}》统计块）是恶作剧的混乱代理人。他们战斗时没有任何荣誉感或公平竞争的概念；他们专门进行偷袭和伏击，经常在边界之地袭击村庄，然后撤退到更深处的荒野。"
+										},
+										{
+											"ENG_name": "Ogres",
+											"name": "食人魔们",
+											"type": "item",
+											"entry": "食人魔比其他巨人更小、更卑鄙，性情凶恶且倾向于暴力。除了在{@book 怪物图鉴|MM}和{@book 多元宇宙的怪物|MPMM}中提供的食人魔数据块外，请参阅本合集内的{@creature 食人魔鼠王|MCV4EC}。"
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "In This Collection",
+							"name": "在这个合集中",
+							"type": "entries",
+							"id": "003",
+							"entries": [
+								"{@i 怪物手册：瑟洛兰生物} 包含Eldraine的二十五位居民的详细信息。下面的表格显示了所有这些生物，并允许你按生物类型和挑战等级进行排序。",
 								{
-									"ENG_name": "Elves",
-									"name": "精灵",
-									"type": "item",
-									"entry": "作为一个曾经强大帝国的后裔，埃尔卓因的精灵们在作为自然守护者的角色中找到了新的目标。大多数精灵以猎人、采集者和德鲁伊的小队形式穿行于森林中，尽管仍有一些精灵居住在遍布荒野的破败堡垒和杂草丛生的城堡中。除了在{@book 怪物图鉴|MM}和其他资料中找到的非玩家角色数据块外，请参阅本合集中的{@creature 赤牙狐人|MCV4EC}。"
-								},
-								{
-									"ENG_name": "Dwarves",
-									"name": "矮人",
-									"type": "item",
-									"entry": "Eldraine的矮人包括矿工、铁匠和其他工匠，他们重视辛勤工作和独立性。这些工匠以从他们开采的矿物中制作精美的珠宝和坚固的武器为荣，并且他们重视工作的尊严。"
-								},
-								{
-									"ENG_name": "Merfolk",
-									"name": "人鱼",
-									"type": "item",
-									"entry": "在荒野中，{@creature 人鱼}被称为贪婪的守护者，他们守护着奥秘魔法、知识和神器。据说他们在埃德拉因的湖泊、池塘和许愿井中囤积着珍贵的魔法物品、书籍和其他秘密。"
-								},
-								{
-									"ENG_name": "Fauns",
-									"name": "羊人",
-									"type": "item",
-									"entry": "在法力克斯入侵之前，半羊人（使用{@creature 半羊人}统计块）是隐居的生物，生活在森林深处的紧密家庭单位中。看到他们的家园受到攻击激发了他们离开森林，加入Eldraine的其余部分进行防御。入侵结束后，半羊人接管了Tanglespan，这是一个位于王国和荒野之间的巨大裂缝。他们绘制出横跨裂缝的交错路径，击退潜伏在桥下希望享用旅行者的{@creature 巨魔||巨魔}，并以适度的通行费引导旅行者穿越裂缝。"
-								},
-								{
-									"ENG_name": "Giants",
-									"name": "巨人",
-									"type": "item",
-									"entry": "巨人是罕见的生物，无论是在王国还是荒野中都同样自在。在加伦布里格和恩贝雷斯，{@creature 火巨人||火巨人}和{@creature 石巨人||石巨人}分别作为强大的骑士和强壮的劳动者。在荒野中，{@creature 山丘巨人||山丘巨人}一直对王国的统治者持敌对态度，即使在精灵统治这片土地时也是如此。{@creature 云巨人||云雾}和{@creature 风暴巨人||风暴巨人}居住在由魔法云构成的岛屿上，远离荒野。（关于Stormkeld及其巨人居民的更多信息，请查看本合集中的{@creature 风暴雄鹿|MCV4EC}条目。）{@book 毕格比巨献：巨人之荣耀|BGG}包含了许多额外的巨人统计块，以及可能在Stormkeld中发现的其他生物的描述，例如{@creature 巨鹅|BGG|巨鹅}和{@creature 巨牛|BGG|巨牛}。"
-								},
-								{
-									"ENG_name": "Redcaps",
-									"name": "红帽子",
-									"type": "item",
-									"entry": "红帽怪（使用《{@book 魔邓肯巨献:多元宇宙的怪物|MPMM}》中的{@creature 红帽子|MPMM}统计块或《{@creature 地精}》统计块）是恶作剧的混乱代理人。他们战斗时没有任何荣誉感或公平竞争的概念；他们专门进行偷袭和伏击，经常在边界之地袭击村庄，然后撤退到更深处的荒野。"
-								},
-								{
-									"ENG_name": "Ogres",
-									"name": "食人魔们",
-									"type": "item",
-									"entry": "食人魔比其他巨人更小、更卑鄙，性情凶恶且倾向于暴力。除了在{@book 怪物图鉴|MM}和{@book 多元宇宙的怪物|MPMM}中提供的食人魔数据块外，请参阅本合集内的{@creature 食人魔鼠王|MCV4EC}。"
+									"type": "table",
+									"caption": "Eldraine生物",
+									"colLabels": [
+										"CR",
+										"生物",
+										"生物类型"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-6",
+										"col-4"
+									],
+									"rows": [
+										[
+											"1/2",
+											"{@creature 借物仙灵|MCV4EC}",
+											"妖精"
+										],
+										[
+											"1/2",
+											"{@creature 姜饼怪人|MCV4EC}",
+											"构装"
+										],
+										[
+											"1",
+											"{@creature 害人仙灵|MCV4EC}",
+											"妖精"
+										],
+										[
+											"2",
+											"{@creature 引路仙灵|MCV4EC}",
+											"妖精"
+										],
+										[
+											"2",
+											"{@creature 阴沟鼠王|MCV4EC}",
+											"邪魔"
+										],
+										[
+											"3",
+											"{@creature 艾卓骑士|MCV4EC}",
+											"类人"
+										],
+										[
+											"3",
+											"{@creature 食人魔鼠王|MCV4EC}",
+											"巨人"
+										],
+										[
+											"3",
+											"{@creature 赤牙狐人|MCV4EC}",
+											"怪兽"
+										],
+										[
+											"4",
+											"{@creature 甘饴惊惧兽|MCV4EC}",
+											"邪魔"
+										],
+										[
+											"5",
+											"{@creature 不亡骑士|MCV4EC}",
+											"亡灵"
+										],
+										[
+											"5",
+											"{@creature 暗沼野女巫|MCV4EC}",
+											"类人"
+										],
+										[
+											"5",
+											"{@creature 梦魇恶灵|MCV4EC}",
+											"异怪"
+										],
+										[
+											"6",
+											"{@creature 猎巫狼|MCV4EC}",
+											"怪兽"
+										],
+										[
+											"7",
+											"{@creature 鹅鹅妈|MCV4EC}",
+											"妖精"
+										],
+										[
+											"11",
+											"{@creature 至高仙欺名客|MCV4EC}",
+											"妖精"
+										],
+										[
+											"11",
+											"{@creature 烈咬多头龙|MCV4EC}",
+											"怪兽"
+										],
+										[
+											"11",
+											"{@creature 风暴雄鹿|MCV4EC}",
+											"元素"
+										],
+										[
+											"11",
+											"{@creature 树妖|MCV4EC}",
+											"植物"
+										],
+										[
+											"12",
+											"{@creature 至高仙仁慈守卫|MCV4EC}",
+											"妖精"
+										],
+										[
+											"12",
+											"{@creature 至高仙魔法师|MCV4EC}",
+											"妖精"
+										],
+										[
+											"12",
+											"{@creature 暗夜恶灵|MCV4EC}",
+											"亡灵"
+										],
+										[
+											"13",
+											"{@creature 至高仙贵族|MCV4EC}",
+											"妖精"
+										],
+										[
+											"15",
+											"{@creature 境限统领|MCV4EC}",
+											"天族"
+										],
+										[
+											"15",
+											"{@creature 残虐巫|MCV4EC}",
+											"龙"
+										],
+										[
+											"18",
+											"{@creature 豆茎亚龙|MCV4EC}",
+											"怪兽"
+										]
+									]
 								}
 							]
 						}
 					]
 				},
 				{
-					"ENG_name": "In This Collection",
-					"name": "在这个合集中",
-					"type": "entries",
-					"id": "003",
-					"entries": [
-						"{@i 怪物手册：瑟洛兰生物} 包含Eldraine的二十五位居民的详细信息。下面的表格显示了所有这些生物，并允许你按生物类型和挑战等级进行排序。",
-						{
-							"type": "table",
-							"caption": "Eldraine生物",
-							"colLabels": [
-								"CR",
-								"生物",
-								"生物类型"
-							],
-							"colStyles": [
-								"col-2 text-center",
-								"col-6",
-								"col-4"
-							],
-							"rows": [
-								[
-									"1/2",
-									"{@creature 借物仙灵|MCV4EC}",
-									"妖精"
-								],
-								[
-									"1/2",
-									"{@creature 姜饼怪人|MCV4EC}",
-									"构装"
-								],
-								[
-									"1",
-									"{@creature 害人仙灵|MCV4EC}",
-									"妖精"
-								],
-								[
-									"2",
-									"{@creature 引路仙灵|MCV4EC}",
-									"妖精"
-								],
-								[
-									"2",
-									"{@creature 阴沟鼠王|MCV4EC}",
-									"邪魔"
-								],
-								[
-									"3",
-									"{@creature 艾卓骑士|MCV4EC}",
-									"类人"
-								],
-								[
-									"3",
-									"{@creature 食人魔鼠王|MCV4EC}",
-									"巨人"
-								],
-								[
-									"3",
-									"{@creature 赤牙狐人|MCV4EC}",
-									"怪兽"
-								],
-								[
-									"4",
-									"{@creature 甘饴惊惧兽|MCV4EC}",
-									"邪魔"
-								],
-								[
-									"5",
-									"{@creature 不亡骑士|MCV4EC}",
-									"亡灵"
-								],
-								[
-									"5",
-									"{@creature 暗沼野女巫|MCV4EC}",
-									"类人"
-								],
-								[
-									"5",
-									"{@creature 梦魇恶灵|MCV4EC}",
-									"异怪"
-								],
-								[
-									"6",
-									"{@creature 猎巫狼|MCV4EC}",
-									"怪兽"
-								],
-								[
-									"7",
-									"{@creature 鹅鹅妈|MCV4EC}",
-									"妖精"
-								],
-								[
-									"11",
-									"{@creature 至高仙欺名客|MCV4EC}",
-									"妖精"
-								],
-								[
-									"11",
-									"{@creature 烈咬多头龙|MCV4EC}",
-									"怪兽"
-								],
-								[
-									"11",
-									"{@creature 风暴雄鹿|MCV4EC}",
-									"元素"
-								],
-								[
-									"11",
-									"{@creature 树妖|MCV4EC}",
-									"植物"
-								],
-								[
-									"12",
-									"{@creature 至高仙仁慈守卫|MCV4EC}",
-									"妖精"
-								],
-								[
-									"12",
-									"{@creature 至高仙魔法师|MCV4EC}",
-									"妖精"
-								],
-								[
-									"12",
-									"{@creature 暗夜恶灵|MCV4EC}",
-									"亡灵"
-								],
-								[
-									"13",
-									"{@creature 至高仙贵族|MCV4EC}",
-									"妖精"
-								],
-								[
-									"15",
-									"{@creature 境限统领|MCV4EC}",
-									"天族"
-								],
-								[
-									"15",
-									"{@creature 残虐巫|MCV4EC}",
-									"龙"
-								],
-								[
-									"18",
-									"{@creature 豆茎亚龙|MCV4EC}",
-									"怪兽"
-								]
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-			"ENG_name": "Credits",
-			"name": "制作组",
-			"type": "section",
-			"entries": [
-				{
-					"type": "entries",
+					"ENG_name": "Credits",
+					"name": "制作组",
+					"type": "section",
+					"id": "000",
 					"entries": [
 						{
-							"type": "list",
-							"style": "list-hang-notitle",
-							"columns": 2,
-							"items": [
+							"type": "entries",
+							"id": "004",
+							"entries": [
 								{
 									"type": "list",
 									"style": "list-hang-notitle",
+									"columns": 2,
 									"items": [
-										{
-											"ENG_name": "Project Lead",
-											"name": "项目负责人",
-											"type": "item",
-											"entries": [
-												"James Wyatt"
-											]
-										},
-										{
-											"ENG_name": "Art Director",
-											"name": "美术指导",
-											"type": "item",
-											"entries": [
-												"Fury Galluzzi"
-											]
-										},
-										{
-											"ENG_name": "Writers",
-											"name": "作者",
-											"type": "item",
-											"entries": [
-												"Makenzie De Armas, Carl Sibley"
-											]
-										},
-										{
-											"ENG_name": "Rules Developers",
-											"name": "规则开发",
-											"type": "item",
-											"entries": [
-												"杰里米·克劳福德，罗恩·伦丁，本·佩特里索尔"
-											]
-										},
-										{
-											"ENG_name": "Editors",
-											"name": "编辑",
-											"type": "item",
-											"entries": [
-												"埃坦·伯恩斯坦，贾尼卡·卡特，里奇·莱斯库弗莱尔"
-											]
-										},
-										{
-											"ENG_name": "Lead Graphic Designer",
-											"name": "首席平面设计师",
-											"type": "item",
-											"entries": [
-												"Matt Cole"
-											]
-										},
-										{
-											"ENG_name": "Additional Art Directors",
-											"name": "附加艺术总监",
-											"type": "item",
-											"entries": [
-												"德博拉·加西亚，道恩·穆林，萨姆·帕迪拉，辛西娅·谢泼德，扎克·斯特拉，安德鲁·瓦拉斯"
-											]
-										},
-										{
-											"ENG_name": "Cover Illustrator",
-											"name": "封面插画师",
-											"type": "item",
-											"entries": [
-												"约书亚·拉斐尔"
-											]
-										},
-										{
-											"ENG_name": "Interior Illustrators",
-											"name": "内页插画师",
-											"type": "item",
-											"entries": [
-												"莉安娜·克罗斯安，埃里克·德斯尚普，阿尔多·多明格斯，耶斯佩尔·艾辛，多纳托·詹科拉，尼古拉斯·格雷戈里，伊戈尔·克尔斯蒂奇，斯瓦沃米尔·马尼亚克，乔迪·穆尔，玛尔塔·纳埃尔，内雷伊达，内斯托·奥桑多·莱亚尔，阿纳斯塔西娅·奥夫奇尼科娃，安娜·帕夫列娃，文森特·普罗塞，克里斯·拉恩，杰森·雷维尔，乔舒·拉斐尔，杰夫·辛普森，约翰·斯坦科，拉乌尔·维塔莱"
-											]
-										},
-										{
-											"ENG_name": "Game Architects",
-											"name": "游戏架构师",
-											"type": "item",
-											"entries": [
-												"Jeremy Crawford, Christopher Perkins"
-											]
-										},
-										{
-											"ENG_name": "Studio Art Director",
-											"name": "工作室艺术总监",
-											"type": "item",
-											"entries": [
-												"Josh Herman"
-											]
-										},
-										{
-											"ENG_name": "Managing Editor",
-											"name": "主管编辑",
-											"type": "item",
-											"entries": [
-												"Judy Bauer"
-											]
-										},
-										{
-											"ENG_name": "Imaging Technicians",
-											"name": "成像技术",
-											"type": "item",
-											"entries": [
-												"罗伯特·科尼利厄斯，西尔维亚·科尔特斯，卡琳娜·德尔加多，J·洛内，怀尔德·麦克库洛夫，玛莎·里维拉，布莱恩·威廉姆斯，凯文·伊"
-											]
-										},
-										{
-											"ENG_name": "Senior Producer",
-											"name": "高级制作人",
-											"type": "item",
-											"entries": [
-												"Dan Tovar"
-											]
-										},
-										{
-											"ENG_name": "Producers",
-											"name": "制作人",
-											"type": "item",
-											"entries": [
-												"谢拉·布鲁格曼，安迪·史密斯"
-											]
-										},
-										{
-											"ENG_name": "Product Manager",
-											"name": "产品经理",
-											"type": "item",
-											"entries": [
-												"Natalie Egan"
-											]
-										}
-									]
-								},
-								{
-									"ENG_name": "D&D Beyond",
-									"name": "D&D Beyond",
-									"type": "entries",
-									"entries": [
 										{
 											"type": "list",
 											"style": "list-hang-notitle",
 											"items": [
 												{
+													"ENG_name": "Project Lead",
+													"name": "项目负责人",
+													"type": "item",
+													"entries": [
+														"James Wyatt"
+													]
+												},
+												{
+													"ENG_name": "Art Director",
+													"name": "美术指导",
+													"type": "item",
+													"entries": [
+														"Fury Galluzzi"
+													]
+												},
+												{
+													"ENG_name": "Writers",
+													"name": "作者",
+													"type": "item",
+													"entries": [
+														"Makenzie De Armas, Carl Sibley"
+													]
+												},
+												{
+													"ENG_name": "Rules Developers",
+													"name": "规则开发",
+													"type": "item",
+													"entries": [
+														"杰里米·克劳福德，罗恩·伦丁，本·佩特里索尔"
+													]
+												},
+												{
+													"ENG_name": "Editors",
+													"name": "编辑",
+													"type": "item",
+													"entries": [
+														"埃坦·伯恩斯坦，贾尼卡·卡特，里奇·莱斯库弗莱尔"
+													]
+												},
+												{
+													"ENG_name": "Lead Graphic Designer",
+													"name": "首席平面设计师",
+													"type": "item",
+													"entries": [
+														"Matt Cole"
+													]
+												},
+												{
+													"ENG_name": "Additional Art Directors",
+													"name": "附加艺术总监",
+													"type": "item",
+													"entries": [
+														"德博拉·加西亚，道恩·穆林，萨姆·帕迪拉，辛西娅·谢泼德，扎克·斯特拉，安德鲁·瓦拉斯"
+													]
+												},
+												{
+													"ENG_name": "Cover Illustrator",
+													"name": "封面插画师",
+													"type": "item",
+													"entries": [
+														"约书亚·拉斐尔"
+													]
+												},
+												{
+													"ENG_name": "Interior Illustrators",
+													"name": "内页插画师",
+													"type": "item",
+													"entries": [
+														"莉安娜·克罗斯安，埃里克·德斯尚普，阿尔多·多明格斯，耶斯佩尔·艾辛，多纳托·詹科拉，尼古拉斯·格雷戈里，伊戈尔·克尔斯蒂奇，斯瓦沃米尔·马尼亚克，乔迪·穆尔，玛尔塔·纳埃尔，内雷伊达，内斯托·奥桑多·莱亚尔，阿纳斯塔西娅·奥夫奇尼科娃，安娜·帕夫列娃，文森特·普罗塞，克里斯·拉恩，杰森·雷维尔，乔舒·拉斐尔，杰夫·辛普森，约翰·斯坦科，拉乌尔·维塔莱"
+													]
+												},
+												{
+													"ENG_name": "Game Architects",
+													"name": "游戏架构师",
+													"type": "item",
+													"entries": [
+														"Jeremy Crawford, Christopher Perkins"
+													]
+												},
+												{
+													"ENG_name": "Studio Art Director",
+													"name": "工作室艺术总监",
+													"type": "item",
+													"entries": [
+														"Josh Herman"
+													]
+												},
+												{
+													"ENG_name": "Managing Editor",
+													"name": "主管编辑",
+													"type": "item",
+													"entries": [
+														"Judy Bauer"
+													]
+												},
+												{
+													"ENG_name": "Imaging Technicians",
+													"name": "成像技术",
+													"type": "item",
+													"entries": [
+														"罗伯特·科尼利厄斯，西尔维亚·科尔特斯，卡琳娜·德尔加多，J·洛内，怀尔德·麦克库洛夫，玛莎·里维拉，布莱恩·威廉姆斯，凯文·伊"
+													]
+												},
+												{
+													"ENG_name": "Senior Producer",
+													"name": "高级制作人",
+													"type": "item",
+													"entries": [
+														"Dan Tovar"
+													]
+												},
+												{
+													"ENG_name": "Producers",
+													"name": "制作人",
+													"type": "item",
+													"entries": [
+														"谢拉·布鲁格曼，安迪·史密斯"
+													]
+												},
+												{
 													"ENG_name": "Product Manager",
 													"name": "产品经理",
 													"type": "item",
 													"entries": [
-														"Jeff Turriff"
-													]
-												},
-												{
-													"ENG_name": "Digital Design Team",
-													"name": "数字设计团队",
-													"type": "item",
-													"entries": [
-														"Jay Jani, Adam Walton, Sean Stoves"
+														"Natalie Egan"
 													]
 												}
 											]
-										}
-									],
-									"id": "005"
-								},
-								"基于Eldraine王座和Eldraine荒野世界构建团队的工作：Fox Allison, Doug Beyer, Lauren Bond, Sam Burley, Ovidio Cartagena, Orrin Chaplin, Christine Choi, Jehan Choo, Crystal Chang, Kelly Digges, Grace Fong, Deborah Garcia, Roy Graham, Jenna Helland, Gray Highsmith, Daniel Holt, Taylor Ingvarsson, Tom Jenkot, Jackie Jones, Jess Lanzillo, Peter Lee, Miguel Lopez, Alison Lührs, Emily Mei, Leah Miller, Chris Mooney, Meris Mullaley, Dawn Murin, Rebecca On, Cynthia Sheppard, Nick Southam, Zack Stella, Emily Teng, Gerritt Turner, Andrew Vallas, José Vega, Sarah Wassell, James Wyatt, Ari Zirulnik。"
+										},
+										{
+											"ENG_name": "D&D Beyond",
+											"name": "D&D Beyond",
+											"type": "entries",
+											"id": "005",
+											"entries": [
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"ENG_name": "Product Manager",
+															"name": "产品经理",
+															"type": "item",
+															"entries": [
+																"Jeff Turriff"
+															]
+														},
+														{
+															"ENG_name": "Digital Design Team",
+															"name": "数字设计团队",
+															"type": "item",
+															"entries": [
+																"Jay Jani, Adam Walton, Sean Stoves"
+															]
+														}
+													]
+												}
+											]
+										},
+										"基于Eldraine王座和Eldraine荒野世界构建团队的工作：Fox Allison, Doug Beyer, Lauren Bond, Sam Burley, Ovidio Cartagena, Orrin Chaplin, Christine Choi, Jehan Choo, Crystal Chang, Kelly Digges, Grace Fong, Deborah Garcia, Roy Graham, Jenna Helland, Gray Highsmith, Daniel Holt, Taylor Ingvarsson, Tom Jenkot, Jackie Jones, Jess Lanzillo, Peter Lee, Miguel Lopez, Alison Lührs, Emily Mei, Leah Miller, Chris Mooney, Meris Mullaley, Dawn Murin, Rebecca On, Cynthia Sheppard, Nick Southam, Zack Stella, Emily Teng, Gerritt Turner, Andrew Vallas, José Vega, Sarah Wassell, James Wyatt, Ari Zirulnik。"
+									]
+								}
 							]
 						}
-					],
-					"id": "004"
+					]
 				}
-			],
-			"id": "000"
+			]
 		}
 	]
 }

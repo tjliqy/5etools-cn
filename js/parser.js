@@ -832,8 +832,12 @@ Parser.CLASSES_TO_CN = {
 	"Paladin": "圣武士",
 	"Ranger": "游侠",
 	"Sorcerer": "术士",
-	"Warlock": "邪术师",
+	"Warlock": "魔契师",
 	"Wizard": "法师",
+	"Rogue": "游荡者",
+	"Fighter": "战士",
+	"Barbarian": "狂战士",
+	"Monk": "武僧",
 };
 Parser.itemValueToFull = function (item, opts = { isShortForm: false, isSmallUnits: false }) {
 	return Parser._moneyToFull(item, "value", "valueMult", opts);
@@ -3510,6 +3514,7 @@ Parser.SRC_HFFotM = "HFFotM";
 Parser.SRC_HFStCM = "HFStCM";
 Parser.SRC_PaF = "PaF";
 Parser.SRC_HFDoMM = "HFDoMM";
+Parser.SRC_HFLotT = "HFLotT";
 Parser.SRC_CM = "CM";
 Parser.SRC_NRH = "NRH";
 Parser.SRC_NRH_TCMC = "NRH-TCMC";
@@ -3537,6 +3542,7 @@ Parser.SRC_HBTD = "HBTD";
 Parser.SRC_BQGT = "BQGT";
 Parser.SRC_CaBoMP = "CaBoMP";
 Parser.SRC_BQDD = "BQDD";
+Parser.SRC_RWG = "RWG";
 
 Parser.SRC_PS_PREFIX = "PS";
 
@@ -3717,6 +3723,7 @@ Parser.SOURCE_JSON_TO_FULL[Parser.SRC_HFFotM] = "英雄盛宴：多元宇宙风�
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_HFStCM] = "英雄盛宴：救救孩子的菜谱";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PaF] = "骰子与酒杯";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_HFDoMM] = "英雄盛宴：佳肴百珍牌";
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_HFLotT] = "英雄盛宴：餐桌传奇";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_CM] = "烛堡秘辛";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_NRH] = Parser.NRH_NAME;
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_NRH_TCMC] = `${Parser.NRH_NAME}: 糖果山冒险`;
@@ -3758,6 +3765,7 @@ Parser.SOURCE_JSON_TO_FULL[Parser.SRC_MisMV1] = `${Parser.MisMVX_PREFIX}卷一`;
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_AATM] = `${Parser.AA_PREFIX}葬仪社`;
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_CaBoMP] = "钩针编织：百变图案集";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_BQDD] = "边陲之地任务：匕首危机！";
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_RWG] = "红袍巫师的博弈";
 
 Parser.SOURCE_JSON_TO_ABV = {};
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHB] = "PHB'14";
@@ -3902,6 +3910,7 @@ Parser.SOURCE_JSON_TO_ABV[Parser.SRC_HFFotM] = "HFFotM";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_HFStCM] = "HFStCM";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PaF] = "PaF";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_HFDoMM] = "HFDoMM";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_HFLotT] = "HFLotT";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_CM] = "CM";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_NRH] = "NRH";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_NRH_TCMC] = "NRH-TCMC";
@@ -3943,6 +3952,7 @@ Parser.SOURCE_JSON_TO_ABV[Parser.SRC_MisMV1] = "MisMV1";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_AATM] = "AATM";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_CaBoMP] = "CaBoMP";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_BQDD] = "BQDD";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_RWG] = "RWG";
 
 Parser.SOURCE_JSON_TO_DATE = {};
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_PHB] = "2014-08-19";
@@ -4086,6 +4096,7 @@ Parser.SOURCE_JSON_TO_DATE[Parser.SRC_HFFotM] = "2023-11-07";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_HFStCM] = "2023-11-21";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_PaF] = "2024-08-27";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_HFDoMM] = "2024-10-01";
+Parser.SOURCE_JSON_TO_DATE[Parser.SRC_HFDoMM] = "2026-09-15";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_CM] = "2021-03-16";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_NRH] = "2021-09-01";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_NRH_TCMC] = "2021-09-01";
@@ -4127,6 +4138,7 @@ Parser.SOURCE_JSON_TO_DATE[Parser.SRC_MisMV1] = "2023-05-03";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_AATM] = "2023-10-17";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_CaBoMP] = "2026-03-31";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_BQDD] = "2026-05-28";
+Parser.SOURCE_JSON_TO_DATE[Parser.SRC_RWG] = "2026-09-15";
 
 // region Source categories
 Parser.SOURCES_ADVENTURES = new Set([
@@ -4231,6 +4243,7 @@ Parser.SOURCES_ADVENTURES = new Set([
 	Parser.SRC_FFotR,
 	Parser.SRC_AUD,
 	Parser.SRC_AWM,
+	Parser.SRC_RWG,
 ]);
 Parser.SOURCES_CORE_SUPPLEMENTS = new Set(Object.keys(Parser.SOURCE_JSON_TO_FULL).filter(it => !Parser.SOURCES_ADVENTURES.has(it)));
 Parser.SOURCES_NON_STANDARD_WOTC = new Set([
@@ -4280,6 +4293,7 @@ Parser.SOURCES_NON_STANDARD_WOTC = new Set([
 	Parser.SRC_ScoEE,
 	Parser.SRC_HBTD,
 	Parser.SRC_BQGT,
+	Parser.SRC_RWG,
 ]);
 Parser.SOURCES_PARTNERED_WOTC = new Set([
 	/*
@@ -4461,6 +4475,7 @@ Parser.SOURCES_AVAILABLE_DOCS_BOOK = {};
 	Parser.SRC_HF,
 	Parser.SRC_HFFotM,
 	Parser.SRC_PaF,
+	Parser.SRC_HFLotT,
 	Parser.SRC_BMT,
 	Parser.SRC_DMTCRG,
 	Parser.SRC_XPHB,
@@ -4593,6 +4608,7 @@ Parser.SOURCES_AVAILABLE_DOCS_ADVENTURE = {};
 	Parser.SRC_FFotR,
 	Parser.SRC_BQDD,
 	Parser.SRC_AUD,
+	Parser.SRC_RWG,
 ].forEach(src => {
 	Parser.SOURCES_AVAILABLE_DOCS_ADVENTURE[src] = src;
 	Parser.SOURCES_AVAILABLE_DOCS_ADVENTURE[src.toLowerCase()] = src;
@@ -4652,6 +4668,7 @@ Parser.PROP_TO_DISPLAY_NAME = {
 	"charoption": "其他角色创建选项",
 	"encounterShape": "Encounter Shape",
 	"crochetPattern": "手工艺品",
+	"renderdemo": "Renderer Sample",
 	
 	"bonus": "附赠动作",
 	"legendary": "传奇动作",
@@ -5041,7 +5058,7 @@ Parser.MON_TAG_TO_CN = {
 	"troglodyte": "穴蜥人",
 	"vampire": "吸血鬼",
 	"warforged": "战俑",
-	"warlock": "邪术师",
+	"warlock": "魔契师",
 	"wizard": "法师",
 	"xvart": "法特怪",
 	"young gem": "青年宝石龙",
@@ -5317,7 +5334,21 @@ Parser.RECIPE_CATEGORY_TO_CN = {
 	"The Low Lantern": "低灯笼",
 	"The Halfway Inn": "半途旅店",
 	"One-Eyed Jax": "独眼杰克斯",
+	"Artificer": "奇械师",
+	"Bard": "吟游诗人",
+	"Cleric": "牧师",
+	"Druid": "德鲁伊",
+	"Paladin": "圣武士",
+	"Ranger": "游侠",
+	"Sorcerer": "术士",
+	"Warlock": "魔契师",
+	"Wizard": "法师",
+	"Rogue": "游荡者",
+	"Fighter": "战士",
+	"Barbarian": "狂战士",
+	"Monk": "武僧"
 };
+
 Parser.recipeCategoryToCn = function (type) {
 	return Parser._parse_aToB(Parser.RECIPE_CATEGORY_TO_CN, type);
 };
