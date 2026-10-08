@@ -178,6 +178,8 @@ class QueueIntegrationTests(unittest.TestCase):
     def test_integration_reconciles_commit_already_in_shared_history(self):
         claim = self._claim_one()
         subprocess.run(["git", "-C", str(self.repo), "worktree", "remove", "--force", claim["worktree"]], check=True)
+        orphan = self.worktrees / "orphan-worker"
+        self._git("worktree", "add", "-b", "auto-translate/orphan", str(orphan), "HEAD")
         head = self._git("rev-parse", "HEAD")
         with sqlite3.connect(self.database) as connection:
             connection.execute(
@@ -187,9 +189,29 @@ class QueueIntegrationTests(unittest.TestCase):
             )
         result = self._queue("integrate-next", expected=3)
         self.assertEqual(result["message"], "NO_READY_TASK")
+        self.assertEqual(result["worktree_cleanup"]["removed"], [str(orphan)])
+        self.assertFalse(orphan.exists())
         with sqlite3.connect(self.database) as connection:
             status = connection.execute("SELECT status FROM tasks").fetchone()[0]
         self.assertEqual(status, "merged")
+
+    def test_successful_reconciliation_preserves_active_and_non_worker_worktrees(self):
+        claim = self._claim_one()
+        active = Path(claim["worktree"])
+        manual = self.root / "manual-proofread"
+        self._git("worktree", "add", "-b", "proofread/manual", str(manual), "HEAD")
+        head = self._git("rev-parse", "HEAD")
+        with sqlite3.connect(self.database) as connection:
+            connection.execute(
+                """INSERT INTO tasks(source_path, source_hash, status, integration_commit, updated_at)
+                   VALUES ('collection/reconciled.json', 'hash', 'integrating', ?, 'now')""",
+                (head,),
+            )
+
+        self._queue("integrate-next", expected=3)
+
+        self.assertTrue(active.exists())
+        self.assertTrue(manual.exists())
 
 
 if __name__ == "__main__":

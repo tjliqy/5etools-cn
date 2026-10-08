@@ -169,6 +169,52 @@ def cleanup_worktree(target_repo: Path, worktree_path: str | None, branch: str |
     return errors
 
 
+def cleanup_excess_worktrees(
+    target_repo: Path,
+    worktree_root: Path,
+    connection: sqlite3.Connection,
+) -> dict[str, list]:
+    """Remove orphaned coordinator worktrees after a successful integration."""
+    root = worktree_root.resolve()
+    active_paths = {
+        Path(row["worktree_path"]).resolve()
+        for row in connection.execute(
+            """SELECT worktree_path FROM tasks
+               WHERE worktree_path IS NOT NULL
+               AND status IN ('leased', 'ready', 'integrating', 'chunked', 'reclaiming', 'failing')"""
+        )
+    }
+    result = run_git(target_repo, "worktree", "list", "--porcelain")
+    if result.returncode:
+        return {"removed": [], "errors": [result.stderr.strip() or result.stdout.strip()]}
+
+    removed: list[str] = []
+    errors: list[dict[str, str]] = []
+    entries = [block.splitlines() for block in result.stdout.strip().split("\n\n") if block.strip()]
+    for lines in entries:
+        fields = {line.split(" ", 1)[0]: line.split(" ", 1)[1] for line in lines if " " in line}
+        path_text = fields.get("worktree")
+        branch_ref = fields.get("branch", "")
+        branch_prefix = "refs/heads/"
+        branch = branch_ref[len(branch_prefix):] if branch_ref.startswith(branch_prefix) else branch_ref
+        if not path_text or not branch.startswith(("auto-translate/", "auto-integrate/")):
+            continue
+        path = Path(path_text).resolve()
+        try:
+            path.relative_to(root)
+        except ValueError:
+            continue
+        if path in active_paths:
+            continue
+        cleanup_errors = cleanup_worktree(target_repo, str(path), branch)
+        if cleanup_errors:
+            errors.append({"worktree": str(path), "error": "; ".join(cleanup_errors)})
+        else:
+            removed.append(str(path))
+    run_git(target_repo, "worktree", "prune")
+    return {"removed": removed, "errors": errors}
+
+
 def command_sync(args) -> int:
     root = args.source_root.resolve()
     if not root.is_dir():
@@ -662,6 +708,7 @@ def command_integrate(args) -> int:
     if dirty_base:
         return emit({"ok": False, "error": "target repository has non-generated uncommitted changes; integration refused", "changes": dirty_base}, 2)
     connection = connect(args.database)
+    reconciled_integration = False
     for interrupted in connection.execute("SELECT * FROM tasks WHERE status = 'integrating'").fetchall():
         integrated = interrupted["integration_commit"] and run_git(repo, "merge-base", "--is-ancestor", interrupted["integration_commit"], "HEAD").returncode == 0
         expired = not interrupted["lease_expires_at"] or interrupted["lease_expires_at"] <= stamp()
@@ -688,6 +735,7 @@ def command_integrate(args) -> int:
         connection.execute("COMMIT")
         if integrated:
             cleanup_worktree(repo, interrupted["worktree_path"], interrupted["branch"])
+            reconciled_integration = True
     integration_token = uuid.uuid4().hex
     integration_expires = stamp(now() + dt.timedelta(minutes=args.integration_lease_minutes))
     base_head = git_ok(repo, "rev-parse", "HEAD")
@@ -699,7 +747,8 @@ def command_integrate(args) -> int:
     ).fetchone()
     if row is None:
         connection.execute("COMMIT")
-        return emit({"ok": True, "status": "empty", "message": "NO_READY_TASK"}, 3)
+        cleanup = cleanup_excess_worktrees(repo, args.worktree_root, connection) if reconciled_integration else {"removed": [], "errors": []}
+        return emit({"ok": True, "status": "empty", "message": "NO_READY_TASK", "worktree_cleanup": cleanup}, 3)
     connection.execute(
         """UPDATE tasks SET status = 'integrating', integration_token = ?, integration_base = ?,
            lease_expires_at = ?, integration_commit = NULL, updated_at = ?
@@ -814,7 +863,9 @@ def command_integrate(args) -> int:
         if updated.rowcount:
             event(connection, row["source_path"], "integration_blocked" if status == "blocked" else "integration_retry", {"phase": phase, "error": str(exc)})
         connection.execute("COMMIT")
-        return emit({"ok": False, "status": status if updated.rowcount else "ownership_lost", "source_path": row["source_path"], "phase": phase, "error": str(exc), "retry_after": retry_after}, 2)
+        result_status = status if updated.rowcount else "ownership_lost"
+        exit_code = 4 if result_status == "ready" else 2
+        return emit({"ok": False, "status": result_status, "source_path": row["source_path"], "phase": phase, "error": str(exc), "retry_after": retry_after}, exit_code)
     finally:
         if integration_worktree.exists():
             run_git(repo, "worktree", "remove", "--force", str(integration_worktree))
@@ -834,7 +885,8 @@ def command_integrate(args) -> int:
     event(connection, row["source_path"], "merged", {"worker_commit": row["commit_sha"], "integrated_commit": integrated_commit})
     connection.execute("COMMIT")
     cleanup_errors = cleanup_worktree(repo, row["worktree_path"], row["branch"])
-    return emit({"ok": True, "status": "merged", "source_path": row["source_path"], "commit_sha": integrated_commit, "revalidated": ["json", "build", "structure", "schema", "tests"], "cleanup_errors": cleanup_errors})
+    worktree_cleanup = cleanup_excess_worktrees(repo, args.worktree_root, connection)
+    return emit({"ok": True, "status": "merged", "source_path": row["source_path"], "commit_sha": integrated_commit, "revalidated": ["json", "build", "structure", "schema", "tests"], "cleanup_errors": cleanup_errors, "worktree_cleanup": worktree_cleanup})
 
 
 def command_status(args) -> int:

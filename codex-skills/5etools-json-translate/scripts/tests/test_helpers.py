@@ -107,6 +107,29 @@ class HelperTests(unittest.TestCase):
     def test_test_output_normalization(self):
         self.assertEqual(tests.normalized("Ran in 1.2s\nRun duration: 3ms"), "Ran in <duration>\nRun duration: <duration>")
 
+    def test_test_output_normalization_ignores_directory_progress(self):
+        baseline = '[  PROP_CHECK] Checking dir "action"...\nExisting error'
+        candidate = (
+            '[  PROP_CHECK] Checking dir "action"...\n'
+            '[  PROP_CHECK] Checking dir "book"...\n'
+            'Existing error'
+        )
+        self.assertEqual(tests.normalized(baseline), tests.normalized(candidate))
+
+        baseline = 'Running on directory "action"...\nExisting error'
+        candidate = 'Running on directory "action"...\nRunning on directory "book"...\nExisting error'
+        self.assertEqual(tests.normalized(baseline), tests.normalized(candidate))
+
+    def test_test_output_normalization_preserves_real_diagnostics(self):
+        baseline = '[  PROP_CHECK] Checking dir "action"...\nExisting error'
+        candidate = (
+            '[  PROP_CHECK] Checking dir "action"...\n'
+            '[  PROP_CHECK] Checking dir "book"...\n'
+            'book/New.json was missing a "book" property!\n'
+            'Existing error'
+        )
+        self.assertNotEqual(tests.normalized(baseline), tests.normalized(candidate))
+
     def test_structure_compare_accepts_explicit_snapshot_outside_source_root(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

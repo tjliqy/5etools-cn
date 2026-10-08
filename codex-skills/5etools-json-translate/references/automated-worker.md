@@ -78,4 +78,8 @@ Completion rejects expired/replaced leases, changed sources, missing targets, co
 
 A scheduler should run `sync`, then `reclaim-expired`, then start the configured number of workers. It may start workers concurrently because claims are atomic and each claim receives a separate Git worktree. Run one serial integration process for `ready` tasks. `integrate-next` refuses to operate when the shared Chinese repository has any uncommitted changes.
 
+For scheduler control flow, `integrate-next` exits `0` after a merge, `3` when no eligible task exists, and `4` when a transient integration or validation failure has safely returned the task to `ready`. A serial scheduler may continue to the next task after exit `4`; exit `2` indicates a blocked, ownership, input, or system error which should stop the current integration cycle.
+
+After an integration succeeds (including recovery of an integration already present in shared history), `integrate-next` automatically removes orphaned `auto-translate/*` and `auto-integrate/*` worktrees under the configured worker root. It preserves every worktree referenced by an active queue task, chunk-parent worktrees, worktrees outside that root, and non-automation branches. Cleanup results are returned in `worktree_cleanup`; cleanup failures are reported without undoing the successful integration.
+
 By default `sync` routes source files larger than 250,000 bytes to `needs_chunking`, so ordinary workers cannot accidentally lease them. The scheduler should create their parent plans with `homebrew_translation_chunks.py plan`. Override `--chunk-threshold-bytes` only as an explicit deployment choice; use `0` to disable automatic routing.

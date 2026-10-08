@@ -19,7 +19,12 @@ COMMANDS = (
 def normalized(text: str) -> str:
     text = re.sub(r"Ran in [^\n\r]+", "Ran in <duration>", text)
     text = re.sub(r"Run duration: [^\n\r]+", "Run duration: <duration>", text)
-    return text.strip()
+    lines = [
+        line for line in text.splitlines()
+        if not re.match(r'^\[\s*PROP_CHECK\] Checking dir ".+"\.\.\.$', line)
+        and not re.match(r'^Running on directory ".+"\.\.\.$', line)
+    ]
+    return "\n".join(lines).strip()
 
 
 def run(root: Path):
