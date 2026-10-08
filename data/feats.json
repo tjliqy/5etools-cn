@@ -113,7 +113,7 @@
 					"name": "异种魔法",
 					"type": "entries",
 					"entries": [
-						"你从{@filter 从术士法术列表中选择的戏法|spells|level=0|class=术士}。此外，从该法术列表中选择一个一环法术。你总是准备着该法术。你可以无需法术位施放该法术一次，并在完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}后恢复以此方式施放该法术的能力。你也可以使用你拥有的任何法术位来施放该法术。体质是你施放该法术的施法属性。"
+						"你知晓一道由你从{@filter 术士法术列表|spells|level=0|class=术士}中选择的戏法。此外，从该法术列表中选择一个一环法术。你总是准备着该法术。你可以无需法术位施放该法术一次，并在完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}后恢复以此方式施放该法术的能力。你也可以使用你拥有的任何法术位来施放该法术。体质是你施放该法术的施法属性。"
 					]
 				},
 				{
@@ -2719,7 +2719,7 @@
 				},
 				{
 					"ENG_name": "Mark of Warding",
-					"name": "警戒龙纹",
+					"name": "守御龙纹",
 					"ability": {
 						"choose": [
 							"int",
@@ -2739,7 +2739,7 @@
 				},
 				{
 					"ENG_name": "Mark of Sentinel",
-					"name": "守护龙纹",
+					"name": "哨戒龙纹",
 					"ability": {
 						"choose": [
 							"int",
@@ -2839,7 +2839,7 @@
 				},
 				{
 					"ENG_name": "Mark of Finding",
-					"name": "探索龙纹",
+					"name": "探寻龙纹",
 					"ability": {
 						"choose": [
 							"int",
@@ -2922,11 +2922,11 @@
 							"rows": [
 								[
 									"{@spell 动物形态|XPHB}",
-									"操控"
+									"畜牧"
 								],
 								[
 									"{@spell 操控天气|XPHB}",
-									"风暴"
+									"暴风"
 								],
 								[
 									"{@spell 半位面|XPHB}",
@@ -2934,15 +2934,15 @@
 								],
 								[
 									"{@spell 英雄宴|XPHB}",
-									"好客"
+									"招待"
 								],
 								[
 									"{@spell 迷宫术|XPHB}",
-									"守卫"
+									"守御"
 								],
 								[
 									"{@spell 心灵屏障|XPHB}",
-									"哨兵"
+									"哨戒"
 								],
 								[
 									"{@spell 位面转移|XPHB}",
@@ -2950,19 +2950,19 @@
 								],
 								[
 									"{@spell 投影术|XPHB}",
-									"幽影"
+									"阴影"
 								],
 								[
 									"{@spell 再生术|XPHB}",
-									"治疗"
+									"医疗"
 								],
 								[
 									"{@spell 徽记术|XPHB}",
-									"抄写"
+									"抄录"
 								],
 								[
 									"{@spell 传送术|XPHB}",
-									"发现"
+									"探寻"
 								],
 								[
 									"{@spell 真知术|XPHB}",
@@ -6543,7 +6543,7 @@
 		},
 		{
 			"ENG_name": "Greater Aberrant Mark",
-			"name": "高等异种纹",
+			"name": "高等异种龙纹",
 			"source": "EFA",
 			"page": 43,
 			"category": "G",
@@ -6564,15 +6564,15 @@
 				"你获得以下增益。",
 				{
 					"ENG_name": "Improved Fortitude",
-					"name": "强化坚定园",
+					"name": "强化坚韧",
 					"type": "entries",
 					"entries": [
-						"当你使用你的异种龙纹专长的异种坚定增益时，你可以掷{@dice 1d6}而非{@dice 1d4}。你现在还可以在完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}后重获异种坚定的使用次数。"
+						"当你使用你的异种龙纹专长的异种坚韧增益时，你可以掷{@dice 1d6}而非{@dice 1d4}。你现在还可以在完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}后重获异种坚韧的使用次数。"
 					]
 				},
 				{
 					"ENG_name": "Mark of Inspiration",
-					"name": "灵感之纹",
+					"name": "灵感龙纹",
 					"type": "entries",
 					"entries": [
 						"当你施放一个戏法时，你可以掷一个或二个你未消耗的{@variantrule 生命值骰|XPHB}。你获得等于掷骰数值加上你的体质调整值的{@variantrule 临时生命值|XPHB}，并且你选择的30尺内的一个生物（不包括你）受到等于掷骰数值的力场伤害。那些骰子随后被消耗。",
@@ -6584,7 +6584,7 @@
 		},
 		{
 			"ENG_name": "Greater Mark of Detection",
-			"name": "高等侦测之纹",
+			"name": "高等侦测龙纹",
 			"source": "EFA",
 			"page": 43,
 			"category": "G",
@@ -6622,7 +6622,7 @@
 				},
 				{
 					"ENG_name": "Shared Detection",
-					"name": "共享侦测",
+					"name": "有识同享",
 					"type": "entries",
 					"entries": [
 						"当你使用你的{@feat 侦测龙纹|EFA}专长的魔法侦测增益来施放{@spell 识破隐形|XPHB}而无需法术位时，你可以选择你30尺内能看见的一个生物。该生物也在法术持续时间内获得该法术的增益。"
@@ -6634,7 +6634,7 @@
 		},
 		{
 			"ENG_name": "Greater Mark of Finding",
-			"name": "高等探索之纹",
+			"name": "高等探寻龙纹",
 			"source": "EFA",
 			"page": 43,
 			"category": "G",
@@ -6642,7 +6642,7 @@
 				{
 					"level": 4,
 					"feat": [
-						"探索龙纹|EFA"
+						"探寻龙纹|EFA"
 					]
 				}
 			],
@@ -6667,15 +6667,15 @@
 					"name": "直觉锐化",
 					"type": "entries",
 					"entries": [
-						"当你使用你的{@feat 探索龙纹|EFA}专长的猎人直觉增益时，你可以掷{@dice 1d6}而非{@dice 1d4}。"
+						"当你使用你的{@feat 探寻龙纹|EFA}专长的猎手直觉增益时，你可以掷{@dice 1d6}而非{@dice 1d4}。"
 					]
 				},
 				{
 					"ENG_name": "Improved Finding",
-					"name": "深度探索",
+					"name": "探幽索隐",
 					"type": "entries",
 					"entries": [
-						"当你使用你的{@feat 探索龙纹|EFA}的寻者魔法增益来施放{@spell 猎人印记|XPHB}而无需法术位时，该法术的射程加倍，并且你可以修改该法术使得目标在持续时间内无法从{@condition 隐形|XPHB}状态中获益。"
+						"当你使用你的{@feat 探寻龙纹|EFA}的探寻魔法增益来施放{@spell 猎人印记|XPHB}而无需法术位时，该法术的施法距离翻倍，并且你可以修改该法术使得目标在持续时间内无法从{@condition 隐形|XPHB}状态中获益。"
 					]
 				}
 			],
@@ -6684,7 +6684,7 @@
 		},
 		{
 			"ENG_name": "Greater Mark of Handling",
-			"name": "高等畜牧之纹",
+			"name": "高等畜牧龙纹",
 			"source": "EFA",
 			"page": 43,
 			"category": "G",
@@ -6730,7 +6730,7 @@
 				},
 				{
 					"ENG_name": "Subdue Animal",
-					"name": "驯服动物",
+					"name": "震服万兽",
 					"type": "entries",
 					"entries": [
 						"作为一个{@action 魔法|XPHB}动作，你对你30尺内能看见的一只野兽或怪兽施加命令。目标必须成功通过一次感知豁免检定（DC 8加上你的感知调整值和{@variantrule 熟练|XPHB|熟练加值}）否则获得{@condition 恐慌|XPHB}状态直到你的下个回合开始。你可以使用此增益的次数等于你的{@variantrule 熟练|XPHB|熟练加值}，且你在完成一次{@variantrule 长休|XPHB}后恢复所有已消耗的使用次数。"
@@ -6741,7 +6741,7 @@
 		},
 		{
 			"ENG_name": "Greater Mark of Healing",
-			"name": "高等医疗之纹",
+			"name": "高等医疗龙纹",
 			"source": "EFA",
 			"page": 44,
 			"category": "G",
@@ -6774,12 +6774,12 @@
 					"name": "直觉锐化",
 					"type": "entries",
 					"entries": [
-						"当你使用你的{@feat 医疗龙纹|EFA}专长的医疗直觉增益时，你可以掷{@dice 1d6}而非{@dice 1d4}。"
+						"当你使用你的{@feat 医疗龙纹|EFA}专长的医学直觉增益时，你可以掷{@dice 1d6}而非{@dice 1d4}。"
 					]
 				},
 				{
 					"ENG_name": "Improved Healing",
-					"name": "医疗妙手",
+					"name": "妙手回春",
 					"type": "entries",
 					"entries": [
 						"你现在可以使用你的{@feat 医疗龙纹|EFA}专长的治愈之触增益来施放{@spell 疗伤术|XPHB}而不消耗法术位，次数等于你的{@variantrule 熟练|XPHB|熟练加值}，并且当你完成一次{@variantrule 长休|XPHB}时恢复所有已消耗的使用次数。此外，当你施放{@spell 疗伤术|XPHB}并掷骰决定恢复的{@variantrule 生命值|XPHB}数值时，你可以将掷骰结果中的任何1或2视为3。"
@@ -6790,7 +6790,7 @@
 		},
 		{
 			"ENG_name": "Greater Mark of Hospitality",
-			"name": "高等招待之纹",
+			"name": "高等招待龙纹",
 			"source": "EFA",
 			"page": 44,
 			"category": "G",
@@ -6828,10 +6828,10 @@
 				},
 				{
 					"ENG_name": "Improved Hospitality",
-					"name": "强化好客",
+					"name": "宾至如归",
 					"type": "entries",
 					"entries": [
-						"当你施放{@spell 净化饮食|XPHB}时，你可以修改该法术使其不产生正常效果，而是让你选择的30尺内的每个生物得到恢复。每个受影响的生物的{@condition 力竭|XPHB}等级缩小1级，并且该生物获得等于你的{@variantrule 熟练|XPHB|熟练加值}加上你的智力、感知或魅力调整值（在你选择此专长时决定）的{@variantrule 临时生命值|XPHB}。一旦你使用此增益修改了该法术，直到你完成一次{@variantrule 长休|XPHB}前不能再这样做。"
+						"当你施放{@spell 净化饮食|XPHB}时，你可以修改该法术使其不产生正常效果，而是让你选择的30尺内的每个生物得到恢复。每个受影响的生物的{@condition 力竭|XPHB}等级减少1级，并且该生物获得等于你的{@variantrule 熟练|XPHB|熟练加值}加上你的智力、感知或魅力调整值（在你选择此专长时决定）的{@variantrule 临时生命值|XPHB}。一旦你使用此增益修改了该法术，直到你完成一次{@variantrule 长休|XPHB}前不能再这样做。"
 					]
 				}
 			],
@@ -6839,7 +6839,7 @@
 		},
 		{
 			"ENG_name": "Greater Mark of Making",
-			"name": "高等创造之纹",
+			"name": "高等创造龙纹",
 			"source": "EFA",
 			"page": 44,
 			"category": "G",
@@ -6880,7 +6880,7 @@
 					"name": "鬼斧神造",
 					"type": "entries",
 					"entries": [
-						"当你使用你的{@feat 创造龙纹|EFA}专长的魔力制造增益来无法术位施放{@spell 魔化武器|XPHB}时，你以3环版本施放该法术。"
+						"当你使用你的{@feat 创造龙纹|EFA}专长的法术匠人增益来无需法术位施放{@spell 魔化武器|XPHB}时，你以3环版本施放该法术。"
 					]
 				}
 			],
@@ -6889,7 +6889,7 @@
 		},
 		{
 			"ENG_name": "Greater Mark of Passage",
-			"name": "高等通行之纹",
+			"name": "高等通行龙纹",
 			"source": "EFA",
 			"page": 44,
 			"category": "G",
@@ -6927,10 +6927,10 @@
 				},
 				{
 					"ENG_name": "Improved Passage",
-					"name": "强化通行",
+					"name": "比翼生花",
 					"type": "entries",
 					"entries": [
-						"当你使用你的{@feat 通行龙纹|EFA}专长的魔法通行增益来施放{@spell 迷踪步|XPHB}而不消耗法术位时，你还可以在传送前选择至多两个你30尺内能看见的愿意生物。每个目标可以随后使用{@variantrule 反应|XPHB}来传送至多30尺到一个它能看见的未占据空间。"
+						"当你使用你的{@feat 通行龙纹|EFA}专长的魔法通行增益来施放{@spell 迷踪步|XPHB}而不消耗法术位时，你还可以在传送前选择至多两个你30尺内能看见的自愿生物。每个目标可以随后使用{@variantrule 反应|XPHB}来传送至多30尺到一个它能看见的未占据空间。"
 					]
 				}
 			],
@@ -6939,7 +6939,7 @@
 		},
 		{
 			"ENG_name": "Greater Mark of Scribing",
-			"name": "高等抄录之纹",
+			"name": "高等抄录龙纹",
 			"source": "EFA",
 			"page": 44,
 			"category": "G",
@@ -6977,10 +6977,10 @@
 				},
 				{
 					"ENG_name": "Inspired Scribing",
-					"name": "章天录地",
+					"name": "刻神牍心",
 					"type": "entries",
 					"entries": [
-						"当你施放{@spell 通晓语言|XPHB}时，你可以修改该法术以包含你30尺内能看见的至多三个自愿生物。每个选民生物在持续时间内也获得该法术的增益。此外，在法术持续时间内，你和选民生物可以在彼此1英里范围内通过心灵感应相互交流。一旦你使用此增益修改了该法术，直到你完成一次{@variantrule 长休|XPHB}前，你无法再次这样做。"
+						"当你施放{@spell 通晓语言|XPHB}时，你可以调整该法术，使其包含你30尺内能看见的至多三名自愿生物。每名被选生物在持续时间内也获得该法术的增益。此外，在法术持续时间内，只要你和被选生物位于彼此1里内，你们就能以心灵感应互相交流。一旦你以此增益调整该法术，直至完成一次{@variantrule 长休|XPHB}你都无法再如此做。"
 					]
 				}
 			],
@@ -6988,7 +6988,7 @@
 		},
 		{
 			"ENG_name": "Greater Mark of Sentinel",
-			"name": "高等守护之纹",
+			"name": "高等哨戒龙纹",
 			"source": "EFA",
 			"page": 44,
 			"category": "G",
@@ -6996,7 +6996,7 @@
 				{
 					"level": 4,
 					"feat": [
-						"守护龙纹|EFA"
+						"哨戒龙纹|EFA"
 					]
 				}
 			],
@@ -7021,15 +7021,15 @@
 					"name": "直觉锐化",
 					"type": "entries",
 					"entries": [
-						"当你使用你的{@feat 守护龙纹|EFA}专长的守卫直觉增益时，你可以掷{@dice 1d6}而非{@dice 1d4}。"
+						"当你使用你的{@feat 哨戒龙纹|EFA}专长的哨戒直觉增益时，你可以掷{@dice 1d6}而非{@dice 1d4}。"
 					]
 				},
 				{
 					"ENG_name": "Improved Sentinel",
-					"name": "遥不可及",
+					"name": "枕戈待旦",
 					"type": "entries",
 					"entries": [
-						"当你使用你的{@feat 守护龙纹|EFA}专长的警醒护卫增益时，你还可以作为该同一{@variantrule 反应|XPHB}的一部分用武器或{@variantrule 徒手打击|XPHB}进行一次攻击。"
+						"当你使用你的{@feat 哨戒龙纹|EFA}专长的警戒哨卫增益时，你还可以作为该同一{@variantrule 反应|XPHB}的一部分用武器或{@variantrule 徒手打击|XPHB}进行一次攻击。"
 					]
 				}
 			],
@@ -7037,7 +7037,7 @@
 		},
 		{
 			"ENG_name": "Greater Mark of Shadow",
-			"name": "高等阴影之纹",
+			"name": "高等阴影龙纹",
 			"source": "EFA",
 			"page": 45,
 			"category": "G",
@@ -7070,7 +7070,7 @@
 					"name": "直觉锐化",
 					"type": "entries",
 					"entries": [
-						"当你使用你的{@feat 阴影龙纹|EFA}专长的狡诈直觉增益时，你可以掷{@dice 1d6}而非{@dice 1d4}。"
+						"当你使用你的{@feat 阴影龙纹|EFA}专长的狡黠直觉增益时，你可以掷{@dice 1d6}而非{@dice 1d4}。"
 					]
 				},
 				{
@@ -7087,7 +7087,7 @@
 		},
 		{
 			"ENG_name": "Greater Mark of Storm",
-			"name": "高等风暴之纹",
+			"name": "高等暴风龙纹",
 			"source": "EFA",
 			"page": 45,
 			"category": "G",
@@ -7120,7 +7120,7 @@
 					"name": "直觉锐化",
 					"type": "entries",
 					"entries": [
-						"当你使用你的{@feat 暴风龙纹|EFA}专长的驭风者直觉增益时，你可以掷{@dice 1d6}而非{@dice 1d4}。"
+						"当你使用你的{@feat 暴风龙纹|EFA}专长的风骑直觉增益时，你可以掷{@dice 1d6}而非{@dice 1d4}。"
 					]
 				},
 				{
@@ -7128,7 +7128,7 @@
 					"name": "长风化翼",
 					"type": "entries",
 					"entries": [
-						"当你使用你的{@feat 暴风龙纹|EFA}专长的风暴魔法增益来施放{@spell 造风术|XPHB}而无需法术位时，你在法术持续时间内还会获得{@variantrule 飞行速度|XPHB}为60尺。"
+						"当你使用你的{@feat 暴风龙纹|EFA}专长的暴风魔法增益来施放{@spell 造风术|XPHB}而无需法术位时，你在法术持续时间内还会获得60尺的{@variantrule 飞行速度|XPHB}。"
 					]
 				}
 			],
@@ -7137,7 +7137,7 @@
 		},
 		{
 			"ENG_name": "Greater Mark of Warding",
-			"name": "高等警戒之纹",
+			"name": "高等守御龙纹",
 			"source": "EFA",
 			"page": 45,
 			"category": "G",
@@ -7145,7 +7145,7 @@
 				{
 					"level": 4,
 					"feat": [
-						"警戒龙纹|EFA"
+						"守御龙纹|EFA"
 					]
 				}
 			],
@@ -7170,12 +7170,12 @@
 					"name": "直觉锐化",
 					"type": "entries",
 					"entries": [
-						"当你使用你的{@feat 警戒龙纹|EFA}专长的守卫直觉增益时，你可以掷{@dice 1d6}而非{@dice 1d4}。"
+						"当你使用你的{@feat 守御龙纹|EFA}专长的御护直觉增益时，你可以掷{@dice 1d6}而非{@dice 1d4}。"
 					]
 				},
 				{
 					"ENG_name": "Improved Warding",
-					"name": "警心涤虑",
+					"name": "固若金汤",
 					"type": "entries",
 					"entries": [
 						"当一个生物对你或你30尺内能看见的生物进行攻击检定时，你可以采取一个{@variantrule 反应|XPHB}来使该掷骰获得{@variantrule 劣势|XPHB}。你可以使用此增益的次数等于你的{@variantrule 熟练|XPHB|熟练加值}，且你在完成一次{@variantrule 长休|XPHB}后恢复所有已使用的次数。"
@@ -9454,7 +9454,7 @@
 		},
 		{
 			"ENG_name": "Mark of Finding",
-			"name": "探索龙纹",
+			"name": "探寻龙纹",
 			"source": "EFA",
 			"page": 39,
 			"category": "D",
@@ -9520,7 +9520,7 @@
 				"你获得以下增益。",
 				{
 					"ENG_name": "Hunter's Intuition",
-					"name": "猎人直觉",
+					"name": "猎手直觉",
 					"type": "entries",
 					"entries": [
 						"当你进行一次感知（{@skill 察觉|XPHB}或{@skill 求生|XPHB}）检定时，你可以投掷{@dice 1d4}并将骰出的数值添加到该属性检定中。"
@@ -9528,7 +9528,7 @@
 				},
 				{
 					"ENG_name": "Finder's Magic",
-					"name": "寻者魔法",
+					"name": "探寻魔法",
 					"type": "entries",
 					"entries": [
 						"你总是准备了{@spell 猎人印记|XPHB}法术。你可以无需法术位施放它一次，并且当你完成一次{@variantrule 长休|XPHB}时恢复以此方式施放它的能力。你也可以使用你拥有的任何适当等级的法术位来施放它。智力、感知或魅力是你施放该法术的施法属性（在选择此专长时选择）。",
@@ -9540,10 +9540,10 @@
 					"name": "龙纹法术",
 					"type": "entries",
 					"entries": [
-						"如果你拥有施法或契约魔法职业特性，探索龙纹法术列表中的法术将被添加到该特性的法术列表中。",
+						"如果你拥有施法或契约魔法职业特性，探寻龙纹法术列表中的法术将被添加到该特性的法术列表中。",
 						{
 							"type": "table",
-							"caption": "探索龙纹法术",
+							"caption": "探寻龙纹法术",
 							"colStyles": [
 								"col-2 text-center",
 								"col-10"
@@ -9659,7 +9659,7 @@
 				},
 				{
 					"ENG_name": "Monstrous Connections",
-					"name": "怪物关联",
+					"name": "异兽联结",
 					"type": "entries",
 					"entries": [
 						"当你达到角色等级3时，若生物的智力值为3或更低，你可以在施放{@spell 化兽为友|XPHB}或{@spell 动物交谈|XPHB}时以怪兽为目标。"
@@ -9779,7 +9779,7 @@
 				"你获得以下增益。",
 				{
 					"ENG_name": "Medical Intuition",
-					"name": "医疗直觉",
+					"name": "医学直觉",
 					"type": "entries",
 					"entries": [
 						"当你进行一次感知（{@skill 医药|XPHB}）检定或使用{@item 草药工具|XPHB}进行一次属性检定时，你可以掷{@dice 1d4}并将掷出的数值添加到该属性检定中。"
@@ -10044,7 +10044,7 @@
 				},
 				{
 					"ENG_name": "Spellsmith",
-					"name": "魔力制造",
+					"name": "法术匠人",
 					"type": "entries",
 					"entries": [
 						"你知晓{@spell 修复术|XPHB}戏法。你还总是准备了{@spell 魔化武器|XPHB}法术。你可以无需法术位施放该法术一次，并且当你完成一次{@variantrule 长休|XPHB}后恢复以此方式施放它的能力。你也可以使用你拥有的任何法术位来施放它。智力、感知或魅力是你施放这些法术的施法属性（在选择此专长时选择）。"
@@ -10309,7 +10309,7 @@
 				},
 				{
 					"ENG_name": "Scribe's Insight",
-					"name": "文员领悟",
+					"name": "文员洞见",
 					"type": "entries",
 					"entries": [
 						"你知晓{@spell 传讯术|XPHB}戏法。你还总是准备着{@spell 通晓语言|XPHB}法术。你可以无需法术位施放它一次，并且当你完成一次{@variantrule 长休|XPHB}后恢复以此方式施放它的能力。你也可以使用你拥有的任何适当等级的法术位来施放它。智力、感知或魅力是你施放该法术的施法属性（在选择此专长时选择）。",
@@ -10364,7 +10364,7 @@
 		},
 		{
 			"ENG_name": "Mark of Sentinel",
-			"name": "守护龙纹",
+			"name": "哨戒龙纹",
 			"source": "EFA",
 			"page": 41,
 			"category": "D",
@@ -10423,7 +10423,7 @@
 				"你获得以下增益。",
 				{
 					"ENG_name": "Sentinel's Intuition",
-					"name": "守卫直觉",
+					"name": "哨戒直觉",
 					"type": "entries",
 					"entries": [
 						"当你进行一次感知（{@skill 洞悉|XPHB}或{@skill 察觉|XPHB}）检定时，你可以投掷{@dice 1d4}并将掷骰结果添加到该属性检定中。"
@@ -10439,7 +10439,7 @@
 				},
 				{
 					"ENG_name": "Vigilant Guardian",
-					"name": "警醒护卫",
+					"name": "警戒哨卫",
 					"type": "entries",
 					"entries": [
 						"当一个你5尺内能看见的生物被攻击检定命中时，你可以使用一个{@variantrule 反应|XPHB}来与该生物交换位置，并由你承受该攻击。你可以使用此特性的次数等于你的{@variantrule 熟练|XPHB|熟练加值}，并在完成一次{@variantrule 长休|XPHB}后恢复所有已使用的次数。"
@@ -10450,10 +10450,10 @@
 					"name": "龙纹法术",
 					"type": "entries",
 					"entries": [
-						"如果你拥有施法或契约魔法职业特性，守护龙纹法术列表中的法术将被添加到该特性的法术列表中。",
+						"如果你拥有施法或契约魔法职业特性，哨戒龙纹法术列表中的法术将被添加到该特性的法术列表中。",
 						{
 							"type": "table",
-							"caption": "守护龙纹法术",
+							"caption": "哨戒龙纹法术",
 							"colStyles": [
 								"col-2 text-center",
 								"col-10"
@@ -10557,7 +10557,7 @@
 				"你获得以下增益。",
 				{
 					"ENG_name": "Cunning Intuition",
-					"name": "狡诈直觉",
+					"name": "狡黠直觉",
 					"type": "entries",
 					"entries": [
 						"当你进行一次敏捷（{@skill 隐匿|XPHB}）或魅力（{@skill 表演|XPHB}）检定时，你可以投掷{@dice 1d4}并将骰出的数值添加到该属性检定中。"
@@ -10686,7 +10686,7 @@
 				"你获得以下增益。",
 				{
 					"ENG_name": "Windwright's Intuition",
-					"name": "驭风者直觉",
+					"name": "风骑直觉",
 					"type": "entries",
 					"entries": [
 						"当你进行一次敏捷（{@skill 特技|XPHB}）检定或使用{@item 领航工具|XPHB}进行一次属性检定时，你可以掷{@dice 1d4}并将掷出的数值加到该属性检定上。"
@@ -10702,7 +10702,7 @@
 				},
 				{
 					"ENG_name": "Storm Magic",
-					"name": "风暴魔法",
+					"name": "暴风魔法",
 					"type": "entries",
 					"entries": [
 						"你知晓{@spell 鸣雷破|XPHB}戏法。当你达到角色等级3时，你还总是准备了{@spell 造风术|XPHB}法术。你可以无需法术位施放该法术一次，并且当你完成一次{@variantrule 长休|XPHB}后恢复以此方式施放它的能力。你也可以使用你拥有的任何适当等级的法术位来施放它。智力、感知或魅力是这些法术的施法属性（在选择此专长时选择）。"
@@ -10756,7 +10756,7 @@
 		},
 		{
 			"ENG_name": "Mark of Warding",
-			"name": "警戒龙纹",
+			"name": "守御龙纹",
 			"source": "EFA",
 			"page": 42,
 			"category": "D",
@@ -10823,7 +10823,7 @@
 				"你获得以下增益。",
 				{
 					"ENG_name": "Warder's Intuition",
-					"name": "守卫直觉",
+					"name": "御护直觉",
 					"type": "entries",
 					"entries": [
 						"当你进行一次智力（{@skill 调查|XPHB}）检定或使用{@item 盗贼工具|XPHB}的属性检定时，你可以掷{@dice 1d4}并将掷出的数值添加到该属性检定中。"
@@ -10831,7 +10831,7 @@
 				},
 				{
 					"ENG_name": "Wards and Seals",
-					"name": "警卫封印",
+					"name": "缄守封护",
 					"type": "entries",
 					"entries": [
 						"你总是准备了{@spell 警报术|XPHB}和{@spell 法师护甲|XPHB}法术。你可以无需法术位施放每个法术一次，并且当你完成一次{@variantrule 长休|XPHB}后，你重新获得以此方式施放它的能力。",
@@ -10844,10 +10844,10 @@
 					"name": "龙纹法术",
 					"type": "entries",
 					"entries": [
-						"如果你拥有施法或契约魔法职业特性，警戒龙纹法术列表中的法术将被添加到该特性的法术列表中。",
+						"如果你拥有施法或契约魔法职业特性，守御龙纹法术列表中的法术将被添加到该特性的法术列表中。",
 						{
 							"type": "table",
-							"caption": "警戒龙纹法术",
+							"caption": "守御龙纹法术",
 							"colStyles": [
 								"col-2 text-center",
 								"col-10"
@@ -12136,7 +12136,7 @@
 					"name": "龙纹准备",
 					"type": "entries",
 					"entries": [
-						"你总是准备着标记法术列表上的法术（如果有的话）。"
+						"你总是准备着龙纹法术列表上的法术（如果有的话）。"
 					]
 				},
 				{
@@ -12144,7 +12144,7 @@
 					"name": "龙纹施法",
 					"type": "entries",
 					"entries": [
-						"你拥有一个额外的法术位来施放由你的龙纹专长所授予的法术。该法术位的等级为你等级的一半（向上取整），最高为5环。当你完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}时，你恢复已消耗的法术位。你只能使用此法术位来施放因你的龙纹专长或此专长的龙纹预备增益而预备的法术。"
+						"你拥有一个额外的法术位来施放由你的龙纹专长所授予的法术。该法术位的等级为你等级的一半（向上取整），最高为5环。当你完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}时，你恢复已消耗的法术位。你只能使用此法术位来施放因你的龙纹专长或此专长的龙纹准备增益而准备着的法术。"
 					]
 				}
 			],

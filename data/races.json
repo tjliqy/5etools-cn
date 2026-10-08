@@ -2048,7 +2048,7 @@
 				},
 				{
 					"ENG_name": "Shape-Shifter",
-					"name": "化兽者",
+					"name": "变形",
 					"type": "entries",
 					"entries": [
 						"作为一个动作，你可以变形以改变你的外貌和声音。你决定变化的细节，包括你的肤色、头发长度和性别。你还可以调整你的身高和体重，并可以在中型和小型之间改变你的体型。你可以使自己看起来像另一个可玩种族的成员，但你的游戏数据不会改变。你不能复制你从未见过的个体的外貌，并且你必须采用与你具有相同基本肢体排列的形态。此特质不会改变你的服装和装备。",
@@ -9244,7 +9244,7 @@
 				"name": "体型：",
 				"type": "item",
 				"entries": [
-					"中型（约6-7英尺高）"
+					"中型（约6-7尺高）"
 				]
 			},
 			"entries": [
@@ -9837,7 +9837,7 @@
 				},
 				{
 					"ENG_name": "Lethargy Resilience",
-					"name": "怠惰恢复力",
+					"name": "昏睡抗力",
 					"type": "entries",
 					"entries": [
 						"当你为避免或结束{@condition 昏迷|XPHB}状态的豁免检定失败时，你可以改为成功。一旦你使用了这个特性，直到你完成{@dice 1d4}次{@variantrule 长休|XPHB|长休}前，你无法再次使用。"
@@ -15843,13 +15843,13 @@
 				"name": "体型：",
 				"type": "item",
 				"entries": [
-					"中型（约6-8英尺高）或小型（约3-4英尺高），在你选择此种族时决定"
+					"中型（约6-8尺高）或小型（约3-4尺高），在你选择此种族时决定"
 				]
 			},
 			"entries": [
 				{
 					"ENG_name": "Construct Resilience",
-					"name": "构装体恢复力",
+					"name": "构装坚韧",
 					"type": "entries",
 					"entries": [
 						"你对毒素伤害具有{@variantrule 抗性|XPHB}。你在避免或结束{@condition 中毒|XPHB}状态的豁免检定上也具有{@variantrule 优势|XPHB}。"
@@ -15868,7 +15868,7 @@
 					"name": "哨兵式休息",
 					"type": "entries",
 					"entries": [
-						"你不需要睡眠，魔法也不能使你陷入睡眠。如果你在6小时内保持无法行动且静止的状态，你可以完成一次{@variantrule 长休|XPHB}。在此期间，你看起来是惰性的但保持清醒。"
+						"你不需要睡眠，魔法也不能使你陷入睡眠。如果你在6小时内保持不活动且静止的状态，你可以完成一次{@variantrule 长休|XPHB}。在此期间，你看起来是惰性的但保持清醒。"
 					]
 				},
 				{
@@ -17334,14 +17334,14 @@
 		},
 		{
 			"ENG_name": "Mark of Warding",
-			"name": "警戒龙纹",
+			"name": "守御龙纹",
 			"source": "ERLW",
 			"raceName": "矮人",
 			"raceSource": "PHB",
 			"page": 51,
 			"reprintedAs": [
 				{
-					"uid": "警戒龙纹|EFA",
+					"uid": "守御龙纹|EFA",
 					"tag": "feat"
 				}
 			],
@@ -17409,10 +17409,10 @@
 					"name": "龙纹法术",
 					"type": "entries",
 					"entries": [
-						"如果你拥有施法或契约魔法职业能力，警戒龙纹法术表中的法术将加入你施法职业的法术列表中。",
+						"如果你拥有施法或契约魔法职业能力，守御龙纹法术表中的法术将加入你施法职业的法术列表中。",
 						{
 							"type": "table",
-							"caption": "警戒龙纹法术",
+							"caption": "守御龙纹法术",
 							"colLabels": [
 								"法术环阶",
 								"法术"
@@ -20507,14 +20507,14 @@
 		},
 		{
 			"ENG_name": "Variant; Mark of Finding",
-			"name": "变体; 探索龙纹",
+			"name": "变体; 探寻龙纹",
 			"source": "ERLW",
 			"raceName": "半兽人",
 			"raceSource": "PHB",
 			"page": 41,
 			"reprintedAs": [
 				{
-					"uid": "探索龙纹|EFA",
+					"uid": "探寻龙纹|EFA",
 					"tag": "feat"
 				}
 			],
@@ -20621,10 +20621,10 @@
 					"name": "龙纹法术",
 					"type": "entries",
 					"entries": [
-						"如果你拥有施法或契约魔法职业特性，探索龙纹法术列表中的法术会被添加到你施法职业的法术列表中。",
+						"如果你拥有施法或契约魔法职业特性，探寻龙纹法术列表中的法术会被添加到你施法职业的法术列表中。",
 						{
 							"type": "table",
-							"caption": "探索龙纹法术",
+							"caption": "探寻龙纹法术",
 							"colLabels": [
 								"法术环阶",
 								"法术"
@@ -21585,14 +21585,14 @@
 		},
 		{
 			"ENG_name": "Mark of Sentinel",
-			"name": "守护龙纹",
+			"name": "哨戒龙纹",
 			"source": "ERLW",
 			"raceName": "人类",
 			"raceSource": "PHB",
 			"page": 48,
 			"reprintedAs": [
 				{
-					"uid": "守护龙纹|EFA",
+					"uid": "哨戒龙纹|EFA",
 					"tag": "feat"
 				}
 			],
@@ -21667,10 +21667,10 @@
 					"name": "龙纹法术",
 					"type": "entries",
 					"entries": [
-						"如果你拥有施法或契约魔法职业特性，守护龙纹法术表格中的法术将被添加到你施法职业的法术列表中。",
+						"如果你拥有施法或契约魔法职业特性，哨戒龙纹法术表格中的法术将被添加到你施法职业的法术列表中。",
 						{
 							"type": "table",
-							"caption": "守护龙纹法术",
+							"caption": "哨戒龙纹法术",
 							"colLabels": [
 								"法术环阶",
 								"法术"
@@ -21763,14 +21763,14 @@
 		},
 		{
 			"ENG_name": "Variant; Mark of Finding",
-			"name": "变体; 探索龙纹",
+			"name": "变体; 探寻龙纹",
 			"source": "ERLW",
 			"raceName": "人类",
 			"raceSource": "PHB",
 			"page": 41,
 			"reprintedAs": [
 				{
-					"uid": "探索龙纹|EFA",
+					"uid": "探寻龙纹|EFA",
 					"tag": "feat"
 				}
 			],
@@ -21870,10 +21870,10 @@
 					"name": "龙纹法术",
 					"type": "entries",
 					"entries": [
-						"如果你拥有施法或契约魔法职业特性，探索龙纹法术列表中的法术会被添加到你施法职业的法术列表中。",
+						"如果你拥有施法或契约魔法职业特性，探寻龙纹法术列表中的法术会被添加到你施法职业的法术列表中。",
 						{
 							"type": "table",
-							"caption": "探索龙纹法术",
+							"caption": "探寻龙纹法术",
 							"colLabels": [
 								"法术环阶",
 								"法术"

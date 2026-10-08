@@ -397,7 +397,7 @@
 			"objectType": "U",
 			"ac": 18,
 			"hp": {
-				"special": "5 × 你的奇械师等级（对火炮施放{@spell 修复术|XPHB}可为其恢复{@dice 2d6}点生命值）"
+				"special": "5 × 你的奇械师等级（对炮台施放{@spell 修复术|XPHB}可为其恢复{@dice 2d6}点生命值）"
 			},
 			"immune": [
 				"毒素",
@@ -409,7 +409,7 @@
 			"actionEntries": [
 				{
 					"ENG_name": "Activate Cannon (Requires You to be within 60 Feet of the Cannon)",
-					"name": "激活火炮（需位于火炮60尺范围内）",
+					"name": "激活炮台（需位于炮台60尺范围内）",
 					"type": "entries",
 					"entries": [
 						"作为{@variantrule 附赠动作|XPHB}，你命令魔能炮台使用下方的投火机、力场弩炮或防御者选项；你可以在该选项之前或之后命令魔能炮台移动最多15尺：",
@@ -420,10 +420,10 @@
 							"items": [
 								{
 									"ENG_name": "Flamethrower",
-									"name": "烈焰喷射",
+									"name": "投火机",
 									"type": "item",
 									"entries": [
-										"该火炮向15尺的{@variantrule 锥状 [效应区域]|XPHB|锥状}区域喷射火焰。该区域内的每个生物需进行对抗{@dcYourSpellSave}的敏捷豁免检定，豁免失败则受到{@damage 2d8}火焰伤害，豁免成功则受到一半伤害。{@variantrule 锥状 [效应区域]|XPHB|锥状}区域内未被穿着或携带的可燃物件开始燃烧。"
+										"该炮台向15尺的{@variantrule 锥状 [效应区域]|XPHB|锥状}区域喷射火焰。该区域内的每个生物需进行对抗{@dcYourSpellSave}的敏捷豁免检定，豁免失败则受到{@damage 2d8}火焰伤害，豁免成功则受到一半伤害。{@variantrule 锥状 [效应区域]|XPHB|锥状}区域内未被穿着或携带的可燃物件开始燃烧。"
 									]
 								},
 								{
@@ -436,10 +436,10 @@
 								},
 								{
 									"ENG_name": "Protector",
-									"name": "保护者",
+									"name": "防御者",
 									"type": "item",
 									"entries": [
-										"该火炮爆发出一股正能量，使其自身和你选择的10尺内的每个生物获得等于{@dice 1d8}加上你的智力调整值（最低为+1）点{@variantrule 临时生命值|XPHB}。"
+										"该炮台爆发出一股正能量，使其自身和你选择的10尺内的每个生物获得等于{@dice 1d8}加上你的智力调整值（最低为+1）点{@variantrule 临时生命值|XPHB}。"
 									]
 								}
 							]

@@ -3001,7 +3001,7 @@
 		},
 		{
 			"ENG_name": "Dazzling Weapon",
-			"name": "炫目武器",
+			"name": "眩目武器",
 			"type": "GV|XDMG",
 			"requires": [
 				{
@@ -3012,7 +3012,7 @@
 				}
 			],
 			"inherits": {
-				"namePrefix": "炫目",
+				"namePrefix": "眩目",
 				"source": "EFA",
 				"page": 112,
 				"rarity": "rare",
@@ -3023,7 +3023,7 @@
 				"charges": 4,
 				"entries": [
 					"这把魔法武器在使用它进行的攻击和伤害掷骰上提供{=bonusWeapon}加值。当你持握它时，你可以使用一个{@variantrule 附赠动作|XPHB}使其散发出30尺半径的{@variantrule 明亮光照|XPHB}和额外30尺的{@variantrule 微光光照|XPHB}。你可以使用一个{@variantrule 附赠动作|XPHB}来熄灭光线。",
-					"该武器有4充能。你可以在被攻击检定命中后立即采取一个{@variantrule 反应|XPHB}以消耗武器的1充能并迫使攻击手进行一次DC 15体质豁免检定。豁免失败时，攻击手获得{@condition 目盲|XPHB}状态直到其下一回合结束。该武器在拂晓时恢复{@dice 1d4}已消耗的充能。"
+					"该武器有4充能。你可以在被攻击检定命中后立即采取一个{@variantrule 反应|XPHB}以消耗武器的1充能并迫使攻击者进行一次DC 15体质豁免检定。豁免失败时，攻击者获得{@condition 目盲|XPHB}状态直到其下一回合结束。该武器在拂晓时恢复{@dice 1d4}已消耗的充能。"
 				],
 				"light": [
 					{

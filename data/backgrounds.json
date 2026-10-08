@@ -7,7 +7,7 @@
 	"background": [
 		{
 			"ENG_name": "Aberrant Heir",
-			"name": "畸变继承人",
+			"name": "异种后裔",
 			"source": "EFA",
 			"page": 25,
 			"edition": "one",
@@ -13348,7 +13348,7 @@
 					],
 					"rows": [
 						[
-							"卡尼斯",
+							"坎尼斯",
 							"{@item 炼金工具|phb} 和 {@item 修补工具|phb}"
 						],
 						[
@@ -13360,7 +13360,7 @@
 							"{@item 酿酒工具|phb} 和 {@item 厨师工具|phb}"
 						],
 						[
-							"乔拉斯克",
+							"乔拉斯科",
 							"{@item 炼金工具|phb} 和 {@item 草药工具|phb}"
 						],
 						[
@@ -13368,7 +13368,7 @@
 							"{@item 盗贼工具|phb} 和 {@item 修补工具|phb}"
 						],
 						[
-							"林兰德",
+							"黎兰达",
 							"{@item 领航工具|phb} 和 {@filter 载具（海上和空中）|items|source=phb;dmg|miscellaneous=平凡的|type=载具(水上);载具(空中)}"
 						],
 						[
@@ -13380,7 +13380,7 @@
 							"一副{@filter 赌具|items|source=phb|miscellaneous=平凡的|type=赌具}和一辆{@filter 载具 (陆运)|items|source=phb;dmg|miscellaneous=平凡的|type=载具（陆运）}"
 						],
 						[
-							"费奥兰",
+							"费亚兰",
 							"{@item 易容工具|phb} 和一件{@filter 乐器|items|source=phb|miscellaneous=平凡的|type=乐器}"
 						],
 						[
@@ -13388,15 +13388,15 @@
 							"{@item 书法工具|phb}和{@item 文书伪造工具|phb}"
 						],
 						[
-							"萨拉释克",
+							"撒剌释克",
 							"一副{@filter 赌具|items|source=phb|miscellaneous=平凡的|type=赌具}和{@item 盗贼工具|phb}"
 						],
 						[
-							"索兰尼",
+							"苏兰尼",
 							"一种{@filter 乐器|items|source=phb|miscellaneous=平凡的|type=乐器}和{@item 毒药工具|phb}"
 						],
 						[
-							"瓦塔利斯",
+							"瓦达利斯",
 							"{@item 草药工具|phb} 和 {@filter 载具 (陆运)|items|source=phb;dmg|miscellaneous=平凡的|type=载具（陆运）}"
 						]
 					]
@@ -13631,7 +13631,7 @@
 		},
 		{
 			"ENG_name": "House Cannith Heir",
-			"name": "卡尼斯家族继承人",
+			"name": "坎尼斯家族后裔",
 			"source": "EFA",
 			"page": 27,
 			"edition": "one",
@@ -13751,7 +13751,7 @@
 		},
 		{
 			"ENG_name": "House Deneith Heir",
-			"name": "邓奈斯家族继承人",
+			"name": "邓奈斯家族后裔",
 			"source": "EFA",
 			"page": 27,
 			"edition": "one",
@@ -13790,7 +13790,7 @@
 			],
 			"feats": [
 				{
-					"守护龙纹|efa": true
+					"哨戒龙纹|efa": true
 				}
 			],
 			"skillProficiencies": [
@@ -13843,7 +13843,7 @@
 							"ENG_name": "Feat:",
 							"name": "专长：",
 							"type": "item",
-							"entry": "{@feat 守护龙纹|EFA}"
+							"entry": "{@feat 哨戒龙纹|EFA}"
 						},
 						{
 							"ENG_name": "Skill Proficiencies:",
@@ -13871,7 +13871,7 @@
 		},
 		{
 			"ENG_name": "House Ghallanda Heir",
-			"name": "伽兰达家族继承人",
+			"name": "伽兰达家族后裔",
 			"source": "EFA",
 			"page": 28,
 			"edition": "one",
@@ -13990,7 +13990,7 @@
 		},
 		{
 			"ENG_name": "House Jorasco Heir",
-			"name": "乔拉斯克家族继承人",
+			"name": "乔拉斯科家族后裔",
 			"source": "EFA",
 			"page": 28,
 			"edition": "one",
@@ -14103,7 +14103,7 @@
 		},
 		{
 			"ENG_name": "House Kundarak Heir",
-			"name": "昆达拉克家族继承人",
+			"name": "昆达拉克家族后裔",
 			"source": "EFA",
 			"page": 29,
 			"edition": "one",
@@ -14142,7 +14142,7 @@
 			],
 			"feats": [
 				{
-					"警戒龙纹|efa": true
+					"守御龙纹|efa": true
 				}
 			],
 			"skillProficiencies": [
@@ -14187,7 +14187,7 @@
 							"ENG_name": "Feat:",
 							"name": "专长：",
 							"type": "item",
-							"entry": "{@feat 警戒龙纹|EFA}"
+							"entry": "{@feat 守御龙纹|EFA}"
 						},
 						{
 							"ENG_name": "Skill Proficiencies:",
@@ -14215,7 +14215,7 @@
 		},
 		{
 			"ENG_name": "House Lyrandar Heir",
-			"name": "林兰德家族继承人",
+			"name": "黎兰达家族后裔",
 			"source": "EFA",
 			"page": 29,
 			"edition": "one",
@@ -14327,7 +14327,7 @@
 		},
 		{
 			"ENG_name": "House Medani Heir",
-			"name": "梅丹尼家族继承人",
+			"name": "梅丹尼家族后裔",
 			"source": "EFA",
 			"page": 30,
 			"edition": "one",
@@ -14439,7 +14439,7 @@
 		},
 		{
 			"ENG_name": "House Orien Heir",
-			"name": "欧瑞恩家族继承人",
+			"name": "欧瑞恩家族后裔",
 			"source": "EFA",
 			"page": 30,
 			"edition": "one",
@@ -14553,7 +14553,7 @@
 		},
 		{
 			"ENG_name": "House Phiarlan Heir",
-			"name": "费奥兰家族继承人",
+			"name": "费亚兰家族后裔",
 			"source": "EFA",
 			"page": 31,
 			"edition": "one",
@@ -14665,7 +14665,7 @@
 		},
 		{
 			"ENG_name": "House Sivis Heir",
-			"name": "西维斯家族继承人",
+			"name": "西维斯家族后裔",
 			"source": "EFA",
 			"page": 31,
 			"edition": "one",
@@ -14790,7 +14790,7 @@
 		},
 		{
 			"ENG_name": "House Tharashk Heir",
-			"name": "萨拉释克家族继承人",
+			"name": "撒剌释克家族后裔",
 			"source": "EFA",
 			"page": 32,
 			"edition": "one",
@@ -14829,7 +14829,7 @@
 			],
 			"feats": [
 				{
-					"探索龙纹|efa": true
+					"探寻龙纹|efa": true
 				}
 			],
 			"skillProficiencies": [
@@ -14880,7 +14880,7 @@
 							"ENG_name": "Feat:",
 							"name": "专长：",
 							"type": "item",
-							"entry": "{@feat 探索龙纹|EFA}"
+							"entry": "{@feat 探寻龙纹|EFA}"
 						},
 						{
 							"ENG_name": "Skill Proficiencies:",
@@ -14908,7 +14908,7 @@
 		},
 		{
 			"ENG_name": "House Thuranni Heir",
-			"name": "索兰尼家族继承人",
+			"name": "苏兰尼家族后裔",
 			"source": "EFA",
 			"page": 32,
 			"edition": "one",
@@ -15024,7 +15024,7 @@
 		},
 		{
 			"ENG_name": "House Vadalis Heir",
-			"name": "瓦塔利斯家族继承人",
+			"name": "瓦达利斯家族后裔",
 			"source": "EFA",
 			"page": 33,
 			"edition": "one",
