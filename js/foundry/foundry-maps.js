@@ -53,7 +53,7 @@ export class MapNamer {
 
 	_isVersionMapName (str) {
 		if (this.constructor._RE_VERSION_MAP_NAMES.test(str)) return true;
-		if (/^\(?without tokens\)?$/i.test(str)) return true;
+		if (/^\(?:without tokens|无token\)?$/i.test(str)) return true;
 		return false;
 	}
 

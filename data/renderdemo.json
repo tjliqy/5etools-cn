@@ -85,7 +85,7 @@
 								"这个标签的用途是打开指定页面，并预先套用指定的筛选选项。对有志成为\"JSON 领航员\"的新人来说，有一个主要的坑\u2014\u2014筛选值使用的是数据中的{@i 内部}名称。例如，..|school=D|.. 会把法术筛选为预言学派，因为\"D\"是数据中预言学派的标识符；而写成 ..|school=预言术|.. 这样是不生效的。",
 								"这里的\"filter_name_X\"要与下拉菜单中显示的过滤器名称的字面文本完全一致。",
 								"下面是一些实际使用的例子：",
-								"{@filter 具有智力加值的种族|races|Ability Scores (Including Subrace)=智力 +any}",
+								"{@filter 具有智力加值的种族|races|Ability Scores (Including Subspecies)=智力+任意}",
 								"{@filter 吟游诗人的戏法和一环法术|spells|level=0;1|class=吟游诗人}",
 								"{@filter 挑战等级为 1 或更低的野兽|bestiary|challenge rating=[&0;&1]|type=beast}",
 								"{@filter 力量值达到 18 或更高的生物|bestiary|strength=[18;]}",

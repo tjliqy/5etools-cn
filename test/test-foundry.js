@@ -102,7 +102,10 @@ class _FileHandlerInit extends _FileHandlerBase {
 								const identifier = advancement.configuration?.identifier || Parser.stringToSlug(advancement.title);
 								if (!identifier) throw new Error(`Expected "ScaleValue" to include "configuration.identifier" or "title"!`);
 
-								const meta = MiscUtil.getOrSet(this._scaleValues, Parser.stringToSlug(ent.name), identifier, {cntUses: 0, sources: new Set()});
+								const nameSlug = ent.ENG_name
+									? ent.ENG_name.trim().toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")
+									: Parser.stringToSlug(ent.name);
+								const meta = MiscUtil.getOrSet(this._scaleValues, nameSlug, identifier, {cntUses: 0, sources: new Set()});
 								meta.sources.add(SourceUtil.getEntitySource(ent));
 							});
 					});
@@ -184,6 +187,9 @@ class TestFoundry {
 		},
 
 		ignoresNeverUsed: {
+			[Parser.SRC_AU]: new Set([
+				"@scale.arcane-archer.arcane-shot",
+			]),
 			[Parser.SRC_TCE]: new Set([
 				"@scale.artificer.infusions",
 				"@scale.alchemist.elixir",

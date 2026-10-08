@@ -170,7 +170,8 @@
 								"number": 2,
 								"faces": 10
 							}
-						}
+						},
+						"identifier": "brutal-strike"
 					},
 					"title": "凶蛮打击"
 				},
@@ -194,7 +195,8 @@
 							"16": {
 								"value": 6
 							}
-						}
+						},
+						"identifier": "rages"
 					},
 					"title": "狂暴次数"
 				}
@@ -272,7 +274,8 @@
 								"number": 2,
 								"faces": 8
 							}
-						}
+						},
+						"identifier": "divine-strike"
 					},
 					"title": "神圣打击"
 				}
@@ -319,7 +322,8 @@
 							"17": {
 								"value": 4
 							}
-						}
+						},
+						"identifier": "wild-shape-uses"
 					},
 					"title": "野性变形使用次数"
 				},
@@ -337,7 +341,8 @@
 							"8": {
 								"value": 8
 							}
-						}
+						},
+						"identifier": "known-forms"
 					},
 					"title": "已知形态"
 				},
@@ -354,7 +359,8 @@
 								"number": 2,
 								"faces": 8
 							}
-						}
+						},
+						"identifier": "elemental-fury"
 					},
 					"title": "元素之怒"
 				}
@@ -379,7 +385,8 @@
 							"17": {
 								"value": 2
 							}
-						}
+						},
+						"identifier": "action-surge"
 					},
 					"title": "动作如潮"
 				},
@@ -397,7 +404,8 @@
 							"17": {
 								"value": 3
 							}
-						}
+						},
+						"identifier": "indomitable"
 					},
 					"title": "不屈"
 				},
@@ -415,7 +423,8 @@
 							"10": {
 								"value": 4
 							}
-						}
+						},
+						"identifier": "second-wind"
 					},
 					"title": "回气"
 				}
@@ -474,7 +483,8 @@
 							"18": {
 								"value": 30
 							}
-						}
+						},
+						"identifier": "unarmored-movement"
 					},
 					"title": "无甲移动"
 				},
@@ -620,7 +630,8 @@
 							"17": {
 								"value": 6
 							}
-						}
+						},
+						"identifier": "favored-enemy"
 					},
 					"title": "宿敌"
 				},
@@ -697,7 +708,8 @@
 								"number": 10,
 								"faces": 6
 							}
-						}
+						},
+						"identifier": "sneak-attack"
 					},
 					"title": "偷袭"
 				}
@@ -1256,7 +1268,8 @@
 							"10": {
 								"value": 3
 							}
-						}
+						},
+						"identifier": "cantrips"
 					},
 					"title": "戏法"
 				},
@@ -17370,7 +17383,7 @@
 		},
 		{
 			"ENG_name": "Dragon",
-			"name": "龙",
+			"name": "巨龙座",
 			"source": "XPHB",
 			"className": "德鲁伊",
 			"classSource": "XPHB",
@@ -28485,7 +28498,7 @@
 		},
 		{
 			"ENG_name": "Shape-Shifter",
-			"name": "化兽者",
+			"name": "变形生物",
 			"source": "AU",
 			"className": "法师",
 			"classSource": "XPHB",

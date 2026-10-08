@@ -64,6 +64,8 @@
 					"description": "选择你已知的一个魔契师戏法中造成伤害的戏法。你可以将你的魅力调整值加到该法术的伤害骰上。"
 				}
 			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
 			"migrationVersion": 3,
 			"translator": "不全书"
 		},
@@ -346,6 +348,8 @@
 					"description": "目标的基础AC变为13加上其敏捷调整值。"
 				}
 			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
 			"migrationVersion": 3,
 			"translator": "不全书"
 		},
@@ -404,6 +408,8 @@
 					"description": "目标只能通过推或拉触及范围内的固定物体或表面（如墙壁或天花板）来移动，使其能够像攀爬一样移动。"
 				}
 			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
 			"migrationVersion": 3,
 			"translator": "不全书"
 		},
@@ -687,6 +693,86 @@
 			"translator": "不全书"
 		},
 		{
+			"ENG_name": "Banishing Shot",
+			"name": "放逐弹",
+			"source": "AU",
+			"activities": [
+				{
+					"type": "save",
+					"activation": {
+						"type": ""
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1",
+								"target": {
+									"prop": "subclassFeature",
+									"uid": "奥术射击|fighter|XPHB|魔射手|au|3"
+								}
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"type": "creature",
+							"count": "1"
+						}
+					},
+					"damage": {
+						"onSave": "full",
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@scale.arcane-archer.arcane-shot.die"
+								},
+								"types": [
+									"心灵"
+								]
+							}
+						]
+					},
+					"save": {
+						"ability": [
+							"叉"
+						],
+						"dc": {
+							"calculation": "int"
+						},
+						"visible": true
+					},
+					"effects": [
+						{
+							"foundryId": "banishingShot"
+						}
+					]
+				}
+			],
+			"effects": [
+				{
+					"foundryId": "banishingShot",
+					"duration": {
+						"units": "秒",
+						"expiry": "目标结束"
+					},
+					"statuses": [
+						"incapacitated"
+					],
+					"changes": [
+						{
+							"key": "system.attributes.movement.speed",
+							"value": 0,
+							"mode": "OVERRIDE"
+						}
+					],
+					"description": "被放逐期间，该生物处于&Reference[失能 apply=false]状态且速度为0。在其下一回合结束时，目标会重新出现在它离开的空间，如果该空间已被占据，则出现在最近的未被占据空间。"
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
 			"ENG_name": "Beast Speech",
 			"name": "野兽之语",
 			"source": "PHB",
@@ -700,6 +786,79 @@
 			],
 			"migrationVersion": 3,
 			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Beguiling Shot",
+			"name": "欺诈弹",
+			"source": "AU",
+			"activities": [
+				{
+					"type": "save",
+					"activation": {
+						"type": ""
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1",
+								"target": {
+									"prop": "subclassFeature",
+									"uid": "奥术射击|fighter|XPHB|魔射手|au|3"
+								}
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"type": "creature",
+							"count": "1"
+						}
+					},
+					"damage": {
+						"onSave": "full",
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "2@scale.arcane-archer.arcane-shot.die"
+								},
+								"types": [
+									"心灵"
+								]
+							}
+						]
+					},
+					"save": {
+						"ability": [
+							"wis"
+						],
+						"dc": {
+							"calculation": "int"
+						},
+						"visible": true
+					},
+					"effects": [
+						{
+							"foundryId": "beguilingShot"
+						}
+					]
+				}
+			],
+			"effects": [
+				{
+					"foundryId": "beguilingShot",
+					"duration": {
+						"units": "秒",
+						"expiry": "sourceStart"
+					},
+					"statuses": [
+						"charmed"
+					],
+					"description": "目标获得 &Reference[Charmed apply=false] 状态，直到你的下个回合开始，将你或目标30尺内你的一名盟友（由你选择）视为魅惑者。若魅惑者攻击目标、对其造成伤害或强迫其进行豁免检定，则魅惑状态提前结束。"
+				}
+			],
+			"migrationVersion": 3
 		},
 		{
 			"ENG_name": "Bewitching Whispers",
@@ -804,6 +963,55 @@
 			"translator": "不全书"
 		},
 		{
+			"ENG_name": "Bursting Shot",
+			"name": "爆裂弹",
+			"source": "AU",
+			"activities": [
+				{
+					"type": "damage",
+					"activation": {
+						"type": ""
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1",
+								"target": {
+									"prop": "subclassFeature",
+									"uid": "奥术射击|fighter|XPHB|魔射手|au|3"
+								}
+							}
+						]
+					},
+					"target": {
+						"template": {
+							"units": "ft",
+							"type": "radius",
+							"size": "10"
+						},
+						"affects": {
+							"type": "creature"
+						}
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "2@scale.arcane-archer.arcane-shot.die"
+								},
+								"types": [
+									"力场"
+								]
+							}
+						]
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
 			"ENG_name": "Careful Spell",
 			"name": "谨慎法术",
 			"source": "XPHB",
@@ -838,6 +1046,8 @@
 					}
 				}
 			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
 			"migrationVersion": 3,
 			"translator": "不全书"
 		},
@@ -1016,6 +1226,8 @@
 					]
 				}
 			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
 			"migrationVersion": 3,
 			"translator": "不全书"
 		},
@@ -1118,6 +1330,8 @@
 					}
 				}
 			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
 			"migrationVersion": 3,
 			"translator": "不全书"
 		},
@@ -1333,6 +1547,8 @@
 					]
 				}
 			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
 			"migrationVersion": 3,
 			"translator": "不全书"
 		},
@@ -1365,8 +1581,228 @@
 					}
 				}
 			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
 			"migrationVersion": 3,
 			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Enfeebling Shot",
+			"name": "虚弱弹",
+			"source": "AU",
+			"activities": [
+				{
+					"type": "save",
+					"activation": {
+						"type": ""
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1",
+								"target": {
+									"prop": "subclassFeature",
+									"uid": "奥术射击|fighter|XPHB|魔射手|au|3"
+								}
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"type": "creature",
+							"count": "1"
+						}
+					},
+					"damage": {
+						"onSave": "full",
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "2@scale.arcane-archer.arcane-shot.die"
+								},
+								"types": [
+									"暗蚀"
+								]
+							}
+						]
+					},
+					"save": {
+						"ability": [
+							"con"
+						],
+						"dc": {
+							"calculation": "int"
+						},
+						"visible": true
+					},
+					"effects": [
+						{
+							"foundryId": "enfeeblingShot",
+							"level": {
+								"min": 3,
+								"max": 9
+							}
+						},
+						{
+							"foundryId": "enfeeblingShot1",
+							"level": {
+								"min": 10,
+								"max": 14
+							}
+						},
+						{
+							"foundryId": "enfeeblingShot2",
+							"level": {
+								"min": 15,
+								"max": 17
+							}
+						},
+						{
+							"foundryId": "enfeeblingShot3",
+							"level": {
+								"min": 18
+							}
+						}
+					]
+				}
+			],
+			"effects": [
+				{
+					"foundryId": "enfeeblingShot",
+					"duration": {
+						"units": "秒",
+						"expiry": "目标结束"
+					},
+					"statuses": [
+						"poisoned"
+					],
+					"changes": [
+						{
+							"key": "system.rolls.damage.mwak.bonus",
+							"value": "-1d6",
+							"mode": "ADD"
+						},
+						{
+							"key": "system.rolls.damage.rwak.bonus",
+							"value": "-1d6",
+							"mode": "ADD"
+						},
+						{
+							"key": "system.rolls.damage.msak.bonus",
+							"value": "-1d6",
+							"mode": "ADD"
+						},
+						{
+							"key": "system.rolls.damage.rsak.bonus",
+							"value": "-1d6",
+							"mode": "ADD"
+						}
+					],
+					"description": "目标获得&Reference[Poisoned apply=false]状态，直到其下一回合结束。每当以此方式中毒的目标以攻击检定命中时，其从该次攻击的总伤害中减去等同于你一次奥术射击骰掷骰结果的数值。"
+				},
+				{
+					"foundryId": "enfeeblingShot1",
+					"duration": {
+						"units": "秒",
+						"expiry": "目标结束"
+					},
+					"statuses": [
+						"poisoned"
+					],
+					"changes": [
+						{
+							"key": "system.rolls.damage.mwak.bonus",
+							"value": "-1d8",
+							"mode": "ADD"
+						},
+						{
+							"key": "system.rolls.damage.rwak.bonus",
+							"value": "-1d8",
+							"mode": "ADD"
+						},
+						{
+							"key": "system.rolls.damage.msak.bonus",
+							"value": "-1d8",
+							"mode": "ADD"
+						},
+						{
+							"key": "system.rolls.damage.rsak.bonus",
+							"value": "-1d8",
+							"mode": "ADD"
+						}
+					],
+					"description": "目标获得&Reference[Poisoned apply=false]状态，直到其下一回合结束。每当以此方式中毒的目标以攻击检定命中时，其从该次攻击的总伤害中减去等同于你一次奥术射击骰掷骰结果的数值。"
+				},
+				{
+					"foundryId": "enfeeblingShot2",
+					"duration": {
+						"units": "秒",
+						"expiry": "目标结束"
+					},
+					"statuses": [
+						"poisoned"
+					],
+					"changes": [
+						{
+							"key": "system.rolls.damage.mwak.bonus",
+							"value": "-1d10",
+							"mode": "ADD"
+						},
+						{
+							"key": "system.rolls.damage.rwak.bonus",
+							"value": "-1d10",
+							"mode": "ADD"
+						},
+						{
+							"key": "system.rolls.damage.msak.bonus",
+							"value": "-1d10",
+							"mode": "ADD"
+						},
+						{
+							"key": "system.rolls.damage.rsak.bonus",
+							"value": "-1d10",
+							"mode": "ADD"
+						}
+					],
+					"description": "目标获得&Reference[Poisoned apply=false]状态，直到其下一回合结束。每当以此方式中毒的目标以攻击检定命中时，其从该次攻击的总伤害中减去等同于你一次奥术射击骰掷骰结果的数值。"
+				},
+				{
+					"foundryId": "enfeeblingShot3",
+					"duration": {
+						"units": "秒",
+						"expiry": "目标结束"
+					},
+					"statuses": [
+						"poisoned"
+					],
+					"changes": [
+						{
+							"key": "system.rolls.damage.mwak.bonus",
+							"value": "-1d12",
+							"mode": "ADD"
+						},
+						{
+							"key": "system.rolls.damage.rwak.bonus",
+							"value": "-1d12",
+							"mode": "ADD"
+						},
+						{
+							"key": "system.rolls.damage.msak.bonus",
+							"value": "-1d12",
+							"mode": "ADD"
+						},
+						{
+							"key": "system.rolls.damage.rsak.bonus",
+							"value": "-1d12",
+							"mode": "ADD"
+						}
+					],
+					"description": "目标获得&Reference[Poisoned apply=false]状态，直到其下一回合结束。每当以此方式中毒的目标以攻击检定命中时，其从该次攻击的总伤害中减去等同于你一次奥术射击骰掷骰结果的数值。"
+				}
+			],
+			"migrationVersion": 3
 		},
 		{
 			"ENG_name": "Enhanced Arcane Focus",
@@ -1778,6 +2214,8 @@
 					}
 				}
 			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
 			"migrationVersion": 3,
 			"translator": "不全书"
 		},
@@ -1906,6 +2344,8 @@
 					}
 				}
 			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
 			"migrationVersion": 3,
 			"translator": "不全书"
 		},
@@ -2017,6 +2457,8 @@
 					}
 				}
 			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
 			"migrationVersion": 3,
 			"translator": "不全书"
 		},
@@ -2244,6 +2686,102 @@
 			"translator": "不全书"
 		},
 		{
+			"ENG_name": "Grasping Shot",
+			"name": "缠绕弹",
+			"source": "AU",
+			"activities": [
+				{
+					"type": "save",
+					"activation": {
+						"type": ""
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1",
+								"target": {
+									"prop": "subclassFeature",
+									"uid": "奥术射击|fighter|XPHB|魔射手|au|3"
+								}
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"type": "creature",
+							"count": "1"
+						}
+					},
+					"damage": {
+						"onSave": "full",
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@scale.arcane-archer.arcane-shot.die"
+								},
+								"types": [
+									"挥砍"
+								]
+							}
+						]
+					},
+					"save": {
+						"ability": [
+							"str"
+						],
+						"dc": {
+							"calculation": "int"
+						},
+						"visible": true
+					},
+					"effects": [
+						{
+							"foundryId": "graspingShot"
+						}
+					]
+				},
+				{
+					"ENG_name": "Escape Check",
+					"name": "逃脱检定",
+					"type": "check",
+					"activation": {
+						"type": "action"
+					},
+					"target": {
+						"affects": {
+							"type": "creature",
+							"count": "1"
+						}
+					},
+					"check": {
+						"associated": [
+							"运动"
+						],
+						"dc": {
+							"calculation": "int"
+						},
+						"visible": true
+					}
+				}
+			],
+			"effects": [
+				{
+					"foundryId": "graspingShot",
+					"duration": {
+						"value": 1,
+						"units": "分钟"
+					},
+					"statuses": [
+						"restrained"
+					],
+					"description": "目标获得&Reference[束缚 apply=false]状态，持续1分钟或直到你再次使用此选项。目标或一个在其触及范围内的生物可以执行一个动作，进行一次力量（运动）检定对抗你的奥术射击豁免DC，检定成功则移除荆棘并结束目标身上的束缚状态。"
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
 			"ENG_name": "Heightened Spell",
 			"name": "升阶法术",
 			"source": "XPHB",
@@ -2272,6 +2810,8 @@
 					}
 				}
 			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
 			"migrationVersion": 3,
 			"translator": "不全书"
 		},
@@ -2911,6 +3451,8 @@
 					}
 				}
 			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
 			"migrationVersion": 3,
 			"translator": "不全书"
 		},
@@ -3064,6 +3606,8 @@
 					"description": "要识破你的伪装，一个生物必须采取研究动作来检查你的外貌，并在对抗你法术豁免DC的[[/check ability=int skill=inv]]检定中成功。"
 				}
 			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
 			"migrationVersion": 3,
 			"translator": "不全书"
 		},
@@ -3291,6 +3835,8 @@
 					"description": "当你使用徒手打击造成伤害时，新生长的部分会依照括号内类型造成1d6点伤害，而非正常的徒手打击伤害，且你使用施法关键属性调整值代替力量值进行攻击检定和伤害掷骰。"
 				}
 			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
 			"migrationVersion": 3,
 			"translator": "不全书"
 		},
@@ -3553,6 +4099,8 @@
 					"description": "该法术在目标进行攻击检定、造成伤害或施放法术之后立即提前结束。"
 				}
 			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
 			"migrationVersion": 3,
 			"translator": "不全书"
 		},
@@ -3612,6 +4160,8 @@
 					"description": "法术持续期间，该生物每回合可消耗10尺移动力进行一次至多30尺的跳跃。"
 				}
 			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
 			"migrationVersion": 3,
 			"translator": "不全书"
 		},
@@ -3742,6 +4292,8 @@
 					]
 				}
 			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
 			"migrationVersion": 3,
 			"translator": "不全书"
 		},
@@ -3838,6 +4390,8 @@
 					]
 				}
 			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
 			"migrationVersion": 3,
 			"translator": "不全书"
 		},
@@ -3887,6 +4441,66 @@
 			],
 			"migrationVersion": 3,
 			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Piercing Shot",
+			"name": "穿梭弹",
+			"source": "AU",
+			"activities": [
+				{
+					"type": "save",
+					"activation": {
+						"type": ""
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1",
+								"target": {
+									"prop": "subclassFeature",
+									"uid": "奥术射击|fighter|XPHB|魔射手|au|3"
+								}
+							}
+						]
+					},
+					"target": {
+						"template": {
+							"units": "ft",
+							"type": "line",
+							"size": "30",
+							"width": "1"
+						},
+						"affects": {
+							"type": "creature"
+						}
+					},
+					"damage": {
+						"onSave": "half",
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "2@scale.arcane-archer.arcane-shot.die"
+								},
+								"types": [
+									"穿刺"
+								]
+							}
+						]
+					},
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "int"
+						},
+						"visible": true
+					}
+				}
+			],
+			"migrationVersion": 3
 		},
 		{
 			"ENG_name": "Precision Attack",
@@ -4022,6 +4636,8 @@
 					}
 				}
 			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
 			"migrationVersion": 3,
 			"translator": "不全书"
 		},
@@ -4270,6 +4886,8 @@
 					"description": "选择一个你所知的需要进行攻击检定的魔契师小法术。当你用该小法术击中一个大型或更小的生物时，你可以将该生物推向远离你直线方向最多10英尺。"
 				}
 			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
 			"migrationVersion": 3,
 			"translator": "不全书"
 		},
@@ -5080,6 +5698,62 @@
 			"translator": "不全书"
 		},
 		{
+			"ENG_name": "Seeking Shot",
+			"name": "追踪弹",
+			"source": "AU",
+			"activities": [
+				{
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1",
+								"target": {
+									"prop": "subclassFeature",
+									"uid": "奥术射击|fighter|XPHB|魔射手|au|3"
+								}
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"type": "creature",
+							"count": "1",
+							"special": "在过去1分钟内被看见"
+						}
+					},
+					"damage": {
+						"onSave": "half",
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "2@scale.arcane-archer.arcane-shot.die"
+								},
+								"types": [
+									"力场"
+								]
+							}
+						]
+					},
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "int"
+						},
+						"visible": true
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
 			"ENG_name": "Seeking Spell",
 			"name": "追踪法术",
 			"source": "XPHB",
@@ -5110,6 +5784,79 @@
 			],
 			"migrationVersion": 3,
 			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Shadow Shot",
+			"name": "遮影弹",
+			"source": "AU",
+			"activities": [
+				{
+					"type": "save",
+					"activation": {
+						"type": ""
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1",
+								"target": {
+									"prop": "subclassFeature",
+									"uid": "奥术射击|fighter|XPHB|魔射手|au|3"
+								}
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"type": "creature",
+							"count": "1"
+						}
+					},
+					"damage": {
+						"onSave": "full",
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@scale.arcane-archer.arcane-shot.die"
+								},
+								"types": [
+									"心灵"
+								]
+							}
+						]
+					},
+					"save": {
+						"ability": [
+							"wis"
+						],
+						"dc": {
+							"calculation": "int"
+						},
+						"visible": true
+					},
+					"effects": [
+						{
+							"foundryId": "shadowShot"
+						}
+					]
+				}
+			],
+			"effects": [
+				{
+					"foundryId": "shadowShot",
+					"duration": {
+						"units": "秒",
+						"expiry": "目标结束"
+					},
+					"statuses": [
+						"blinded"
+					],
+					"description": "目标获得&Reference[目盲 apply=false]状态，直到其下一回合结束。"
+				}
+			],
+			"migrationVersion": 3
 		},
 		{
 			"ENG_name": "Sign of Ill Omen",
@@ -5295,6 +6042,8 @@
 					}
 				}
 			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
 			"migrationVersion": 3,
 			"translator": "不全书"
 		},
@@ -5541,6 +6290,8 @@
 					}
 				}
 			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
 			"migrationVersion": 3,
 			"translator": "不全书"
 		},
@@ -5599,6 +6350,8 @@
 					}
 				}
 			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
 			"migrationVersion": 3,
 			"translator": "不全书"
 		},
@@ -5618,6 +6371,8 @@
 					]
 				}
 			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
 			"migrationVersion": 3,
 			"translator": "不全书"
 		}
