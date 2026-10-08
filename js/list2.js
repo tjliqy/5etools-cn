@@ -297,7 +297,7 @@ export class List {
 	_initFuzzySearch () {
 		elasticlunr.clearStopWords();
 		this._fuzzySearch = elasticlunr(function () {
-			this.use(lunr.zh);
+			this.use(elasticlunr.zh);
 			this.addField("s");
 			this.setRef("id");
 		});

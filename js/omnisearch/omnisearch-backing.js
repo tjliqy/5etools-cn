@@ -19,7 +19,7 @@ export class OmnisearchBacking {
 	static async _pDoSearchLoad () {
 		elasticlunr.clearStopWords();
 		this._searchIndex = elasticlunr(function () {
-			this.use(lunr.zh);
+			this.use(elasticlunr.zh);
 			this.addField("n");
 			this.addField("cn");
 			this.addField("sA");

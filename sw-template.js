@@ -366,7 +366,7 @@ const runtimeManifest = new Map(self.__WB_RUNTIME_MANIFEST.map(
 		revision,
 	}) =>
 		[
-			new URL(route, self.registration.scope).href,
+			new URL(url, self.registration.scope).href,
 			revision,
 		],
 ));
