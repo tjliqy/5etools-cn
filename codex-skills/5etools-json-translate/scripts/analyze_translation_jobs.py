@@ -18,7 +18,7 @@ from app.core.translator.job_need_translate_setter import JobNeedTranslateSetter
 
 
 SEGMENT = re.compile(r"^(?P<key>[^[]+)(?:\[(?P<selector>.*)\])?$")
-EMBEDDED_TAG_SUFFIX = re.compile(r"/(?P<tag>[A-Za-z][A-Za-z0-9_-]*)\[\d+\]$")
+EMBEDDED_TAG_SUFFIX = re.compile(r"/(?P<tag>[A-Za-z0-9][A-Za-z0-9_-]*)\[\d+\]$")
 
 
 def stable_token(value) -> str:
@@ -30,16 +30,52 @@ def stable_token(value) -> str:
     return text
 
 
-MACHINE_LEAF = re.compile(r"/(alId|colStyles(?:\[\d+\])?|summonedByClass|style|type/tags(?:\[\d+\])?|spellcasting(?:\[\d+\])?/ability)$")
+# optionalfeature featureType values are routing keys into _meta.optionalFeatureTypes
+# ("name" or cross-source "name:SOURCE") and stay byte-identical in translated files.
+MACHINE_LEAF = re.compile(r"/(alId|colStyles(?:\[\d+\])?|summonedByClass|style|type/tags(?:\[\d+\])?|spellcasting(?:\[\d+\])?/ability|featureType(?:\[\d+\])?|page|(?:skill|save)/[a-z]+)$")
+
+# Renderer variable placeholders like "<$cha_mod$>" (item charge counts) are
+# substituted verbatim by the site and must stay byte-identical.
+VARIABLE_TOKEN = re.compile(r"^<\$[^<$]+\$>$")
+
+# Foundry scene/map config values like "#ffffff" (foundrySceneRoot lights color) are
+# machine color codes substituted verbatim by the renderer; they must stay byte-identical
+# and are never translatable text.
+HEX_COLOR_TOKEN = re.compile(r"^#[0-9A-Fa-f]{3,8}$")
+
+# {@link display|url} field 0 is normally translatable display text, but a single-field
+# bare URL ({@link incompetech.com}) is machine content rendered verbatim.
+URL_TOKEN = re.compile(r"^(?:https?://|www\.)?[A-Za-z0-9][A-Za-z0-9_%#,&=./?+-]*\.[A-Za-z]{2,}(?:[/?#][^\s]*)?$")
 
 # Tag-segment sub-jobs address individual pipe fields inside a containing string, e.g.
 # uid "...entries[0].condition[0].1" is pipe field 1 of the second {@condition ...} tag.
-TAG_FIELD_UID = re.compile(r"\.(?P<tag>[A-Za-z][A-Za-z0-9_-]*)\[\d+\]\.(?P<field>\d+)$")
+# Tag names may start with a digit ({@5etools ...}).
+TAG_FIELD_UID = re.compile(r"\.(?P<tag>[A-Za-z0-9][A-Za-z0-9_-]*)\[\d+\]\.(?P<field>\d+)$")
+# Malformed tags missing their type ("{@ baby mimics|src}" -> uid "...entries[2].[1].0")
+# are source defects kept byte-identical; their key paths carry an unresolvable bare
+# "/[N]" tag segment and the swallowed first word is not an entity reference.
+MALFORMED_TAG_UID = re.compile(r"\.\[\d+\]\.\d+$")
 # Variable-style tags whose pipe field 0 is a machine variable name (VDC/Vdist/Vdam) or number.
-VARIABLE_TAGS = {"footnote", "damage", "dice", "scaledice", "scaledamage", "hit", "dc"}
-# Machine tokens carry no whitespace: source codes (HFN2025, MD-BNR), URLs, variable
-# scale labels (Vdam x 2), numeric ranges (12/14/15). Prose always contains spaces.
-MACHINE_TOKEN = re.compile(r"^[A-Za-z0-9][A-Za-z0-9_./-]*(?: x \d+)?$")
+# Their field 0 is always a formula/variable ("10 + PB", "1d6 − 1", "int 20"), never display
+# prose, so whitespace/operators do not make it translatable.
+VARIABLE_TAGS = {"footnote", "damage", "dice", "scaledice", "scaledamage", "hit", "dc", "ability", "skillCheck"}
+# Tags whose pipe fields >=1 are routing anchors that must stay byte-identical to the
+# untranslated section ids even though they contain spaces, e.g.
+# {@area 压力板陷阱|3. Pressure Plate Trap|x} routes to id "3. Pressure Plate Trap".
+ROUTE_TAG_FIELDS = {"area"}
+# Machine tokens carry no whitespace: source codes (HFN2025, MD-BNR), URLs
+# (quickreference.html#bookref-quick,3,surprise,0), variable scale labels (Vdam x 2),
+# numeric ranges (12/14/15), style parameters (dnd-font;large). Prose always contains spaces.
+MACHINE_TOKEN = re.compile(r"^[A-Za-z0-9][A-Za-z0-9_./#,%?=&;-]*(?: x \d+)?$")
+# Dice-math expressions whose only word token is the proficiency bonus alias,
+# e.g. "+ PB" or "30 + 10 × PB". Pure machine math, never translatable prose.
+PB_FORMULA = re.compile(r"[+\-−\d\s,dD×xX*/().]*PB[+\-−\d\s,dD×xX*/().]*")
+# Matches a 5etools tag and captures its display text (pipe field 0). Used to
+# project a target string down to prose + localized display text before the
+# residual substring check, so English inside routing fields (pipe fields >= 1,
+# e.g. {@loader 战斗轮椅|collection/Sara Thompson; The Combat Wheelchair.json})
+# cannot be mistaken for untranslated prose.
+TAG_DISPLAY_ONLY = re.compile(r"\{@[^{}|]+\s([^|{}]*)(?:\|[^{}]*)*\}")
 
 
 def is_machine_tag_field(job) -> bool:
@@ -48,8 +84,17 @@ def is_machine_tag_field(job) -> bool:
     if not match:
         return False
     field = int(match.group("field"))
-    if field == 0 and match.group("tag") not in VARIABLE_TAGS:
+    tag = match.group("tag")
+    if field == 0 and tag == "link" and URL_TOKEN.fullmatch(job.en_str or ""):
+        return True
+    if field == 0 and tag in VARIABLE_TAGS:
+        # Variable formulas ("10 + PB", "1d6 − 1", "int 20") contain spaces/operators but
+        # are never translatable display text.
+        return True
+    if field == 0 and tag not in VARIABLE_TAGS:
         return False
+    if field >= 1 and tag in ROUTE_TAG_FIELDS:
+        return True
     return bool(MACHINE_TOKEN.fullmatch(job.en_str or ""))
 
 
@@ -172,12 +217,14 @@ def main() -> int:
 
     # Source codes (e.g. "TTNSP") are machine identifiers, never translatable text; the
     # analyser still emits tag-segment sub-jobs for them, so exclude them like MACHINE_LEAF.
+    # Matching is case-insensitive: in-text references use the lowercase form ("blaze|ar1")
+    # while _meta declares "Ar1".
     source_codes = set()
     for source_meta in json.loads(source.read_text(encoding="utf-8-sig")).get("_meta", {}).get("sources", []):
         for field in ("json", "abbreviation"):
             value = source_meta.get(field)
             if isinstance(value, str):
-                source_codes.add(value)
+                source_codes.add(value.lower())
 
     jobs = []
     residuals = []
@@ -198,10 +245,29 @@ def main() -> int:
             filename_jobs.append(item)
             continue
         if args.target and isinstance(job.en_str, str):
-            if job.en_str in source_codes:
+            if job.en_str.lower() in source_codes:
+                continue
+            if VARIABLE_TOKEN.match(job.en_str):
+                continue
+            if HEX_COLOR_TOKEN.match(job.en_str):
+                continue
+            # Free-standing dice-math expressions that mention the proficiency
+            # bonus (monster ac[].condition "+ PB", hp.special "30 + 10 × PB")
+            # stay byte-identical to the source: the renderer's dice tokenizer
+            # only understands the literal "PB" token, and the repo keeps such
+            # formulas untranslated. Same machine class as VARIABLE_TAGS math.
+            if PB_FORMULA.fullmatch(job.en_str):
+                continue
+            if MALFORMED_TAG_UID.search(job.uid or ""):
                 continue
             plain_path, plain_value = resolve_job_value(target_data, job.key_path)
             target_path, target_value = resolve_job_target(target_data, job.key_path)
+            if target_path is None and path_segments(job.key_path)[:1] == ["optionalFeatureTypes"]:
+                # The analyser drops the "_meta" prefix on jobs anchored under
+                # _meta.optionalFeatureTypes; retry once with the prefix restored.
+                meta_key_path = "/_meta/" + job.key_path.lstrip("/")
+                plain_path, plain_value = resolve_job_value(target_data, meta_key_path)
+                target_path, target_value = resolve_job_target(target_data, meta_key_path)
             if target_path is None:
                 unresolved_paths.append(item)
                 continue
@@ -210,7 +276,15 @@ def main() -> int:
             is_token_job = plain_path is None or not isinstance(plain_value, str)
             if is_token_job and is_machine_tag_field(job):
                 continue
-            untranslated = job.en_str == target_value or (job.need_translate and isinstance(target_value, str) and job.en_str in target_value)
+            untranslated = job.en_str == target_value or (
+                job.need_translate
+                and isinstance(target_value, str)
+                # Routing pipe fields (index >= 1) are machine anchors that stay
+                # byte-identical to filenames/source codes; English they contain
+                # must not count as untranslated display text when a tag's
+                # display (field 0) has already been localized.
+                and job.en_str in TAG_DISPLAY_ONLY.sub(lambda m: m.group(1), target_value)
+            )
             if untranslated and job.need_translate and not MACHINE_LEAF.search(job.key_path):
                 residuals.append({**item, "target_paths": [target_path]})
 

@@ -2,6 +2,7 @@ import importlib.util
 import json
 import subprocess
 import tempfile
+import types
 import unittest
 from pathlib import Path
 
@@ -34,6 +35,47 @@ class HelperTests(unittest.TestCase):
         path, value = jobs.resolve_job_target(target, "/feat[name=Silver-Soul]/entries[0]/spell[0]")
         self.assertEqual(path, "/feat/0/entries/0")
         self.assertEqual(value, "施展 {@spell 月华之光}")
+
+    def test_resolve_embedded_tag_path_digit_leading_tag(self):
+        target = {"feat": [{"ENG_name": "Silver Soul", "name": "银龙之魂", "entries": ["见 {@5etools 快速参考}"]}]}
+        path, value = jobs.resolve_job_target(target, "/feat[name=Silver-Soul]/entries[0]/5etools[0]")
+        self.assertEqual(path, "/feat/0/entries/0")
+        self.assertEqual(value, "见 {@5etools 快速参考}")
+
+    def test_machine_tag_field_accepts_digit_leading_tag_url(self):
+        job = types.SimpleNamespace(uid="/adventure[0]/data/entries[0].5etools[0].1", en_str="book.html#phb,9")
+        self.assertTrue(jobs.is_machine_tag_field(job))
+        job = types.SimpleNamespace(uid="/adventure[0]/data/entries[0].5etools[0].1", en_str="quickreference.html#bookref-quick,3,surprise,0")
+        self.assertTrue(jobs.is_machine_tag_field(job))
+
+    def test_machine_tag_field_accepts_area_route_id_with_spaces(self):
+        job = types.SimpleNamespace(uid="/adventure[0]/data/entries[0].area[0].1", en_str="3. Pressure Plate Trap")
+        self.assertTrue(jobs.is_machine_tag_field(job))
+
+    def test_machine_tag_field_still_rejects_prose_and_unknown_routes(self):
+        # Prose pipe fields of non-route tags stay translatable residuals when left English.
+        job = types.SimpleNamespace(uid="/feat[0]/entries[0].note[0].1", en_str="some untranslated prose")
+        self.assertFalse(jobs.is_machine_tag_field(job))
+        # Field 0 display text is never machine regardless of tag.
+        job = types.SimpleNamespace(uid="/feat[0]/entries[0].area[0].0", en_str="HFN2025")
+        self.assertFalse(jobs.is_machine_tag_field(job))
+
+    def test_machine_tag_field_accepts_variable_formula_with_spaces(self):
+        # Variable-tag field 0 formulas ("10 + PB") contain spaces but are machine values.
+        job = types.SimpleNamespace(uid="/monster[0]/action[0]/entries[0].dc[0].0", en_str="10 + PB")
+        self.assertTrue(jobs.is_machine_tag_field(job))
+        job = types.SimpleNamespace(uid="/monster[0]/action[0]/entries[0].damage[0].0", en_str="1d6 − 1")
+        self.assertTrue(jobs.is_machine_tag_field(job))
+
+    def test_machine_tag_field_accepts_ability_and_skillcheck_variables(self):
+        job = types.SimpleNamespace(uid="/fluff[0]/entries[1].ability[0].0", en_str="int 20")
+        self.assertTrue(jobs.is_machine_tag_field(job))
+        job = types.SimpleNamespace(uid="/fluff[0]/entries[1].skillCheck[0].0", en_str="arcana 8")
+        self.assertTrue(jobs.is_machine_tag_field(job))
+
+    def test_machine_tag_field_accepts_style_token_with_semicolon(self):
+        job = types.SimpleNamespace(uid="/bookData[0]/data[0]/entries[1].style[0].1", en_str="dnd-font;large")
+        self.assertTrue(jobs.is_machine_tag_field(job))
 
     def test_repair_restores_structure_and_scalars(self):
         source = {"$schema": "url", "meta": {"stamp": 1}, "items": [{"name": "English", "n": 2}]}
