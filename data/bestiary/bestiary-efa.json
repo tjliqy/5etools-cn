@@ -159,7 +159,7 @@
 			},
 			"passive": 18,
 			"resist": [
-				"毒素"
+				"poison"
 			],
 			"languages": [
 				"通用语",
@@ -196,7 +196,7 @@
 				},
 				{
 					"ENG_name": "Arcane Firearm",
-					"name": "奥术火器",
+					"name": "奥术枪械",
 					"entries": [
 						"{@atkr r} {@hit 7}，射程30/90尺。{@h}26（{@damage 4d10 + 4}）力场伤害。"
 					]
@@ -212,7 +212,7 @@
 				}
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -229,7 +229,7 @@
 				"RA"
 			],
 			"conditionInflict": [
-				"中毒"
+				"poisoned"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -338,7 +338,7 @@
 				}
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -361,14 +361,14 @@
 				"RA"
 			],
 			"conditionInflict": [
-				"倒地"
+				"prone"
 			],
 			"conditionInflictSpell": [
-				"隐形"
+				"invisible"
 			],
 			"savingThrowForcedSpell": [
-				"体质",
-				"敏捷"
+				"constitution",
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -449,7 +449,7 @@
 				},
 				{
 					"ENG_name": "Pummel",
-					"name": "揍击",
+					"name": "猛砸",
 					"entries": [
 						"{@atkr m} {@hit 9}，触及5尺。{@h}12（{@damage 2d6 + 5}）钝击伤害。"
 					]
@@ -475,7 +475,7 @@
 				"D"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -488,10 +488,10 @@
 				"MA"
 			],
 			"conditionInflict": [
-				"恐慌"
+				"frightened"
 			],
 			"savingThrowForced": [
-				"感知"
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -561,7 +561,7 @@
 					"ENG_name": "Pummel",
 					"name": "揍击",
 					"entries": [
-						"{@atkr m} {@hit 5}，触及5尺。{@h}5（{@damage 1d4 + 3}）钝击伤害。"
+						"{@atkr m} {@hit 5}，触及 5 尺。{@h}： 5（{@damage 1d4 + 3}）钝击伤害。"
 					]
 				}
 			],
@@ -575,7 +575,7 @@
 				}
 			],
 			"traitTags": [
-				"集群战术"
+				"Pack Tactics"
 			],
 			"senseTags": [
 				"D"
@@ -639,7 +639,7 @@
 			],
 			"passive": 13,
 			"resist": [
-				"心灵"
+				"psychic"
 			],
 			"languages": [
 				"通用语",
@@ -698,7 +698,7 @@
 				"U"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -719,12 +719,12 @@
 				"RA"
 			],
 			"savingThrowForced": [
-				"感知"
+				"wisdom"
 			],
 			"savingThrowForcedSpell": [
-				"体质",
-				"智力",
-				"感知"
+				"constitution",
+				"intelligence",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -777,11 +777,11 @@
 			],
 			"passive": 18,
 			"resist": [
-				"心灵"
+				"psychic"
 			],
 			"conditionImmune": [
-				"魅惑",
-				"恐慌"
+				"charmed",
+				"frightened"
 			],
 			"languages": [
 				"通用语",
@@ -835,7 +835,7 @@
 				"U"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -853,16 +853,16 @@
 				"RA"
 			],
 			"conditionInflict": [
-				"恐慌"
+				"frightened"
 			],
 			"conditionInflictSpell": [
-				"魅惑"
+				"charmed"
 			],
 			"savingThrowForced": [
-				"感知"
+				"wisdom"
 			],
 			"savingThrowForcedSpell": [
-				"感知"
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -958,7 +958,7 @@
 				}
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -1055,7 +1055,7 @@
 				}
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -1122,7 +1122,7 @@
 			},
 			"passive": 14,
 			"conditionImmune": [
-				"恐慌"
+				"frightened"
 			],
 			"languages": [
 				"通用语",
@@ -1189,7 +1189,7 @@
 				}
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -1208,14 +1208,14 @@
 				"THW"
 			],
 			"conditionInflict": [
-				"中毒"
+				"poisoned"
 			],
 			"conditionInflictSpell": [
-				"失能",
-				"昏迷"
+				"incapacitated",
+				"unconscious"
 			],
 			"savingThrowForcedSpell": [
-				"感知"
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -1257,11 +1257,11 @@
 			],
 			"passive": 10,
 			"immune": [
-				"毒素"
+				"poison"
 			],
 			"conditionImmune": [
-				"力竭",
-				"中毒"
+				"exhaustion",
+				"poisoned"
 			],
 			"languages": [
 				"心灵感应 1 里（仅对你生效）"
@@ -1408,14 +1408,14 @@
 				},
 				{
 					"ENG_name": "Radiant Burst",
-					"name": "光能爆",
+					"name": "圣光惩灭",
 					"entries": [
 						"{@atkr m,r} {@hit 5}，触及5尺或射程30尺。{@h}7（{@damage 2d6}）光耀伤害，并且目标直到医师的下个回合开始陷入{@condition 目盲|XPHB}状态。"
 					]
 				}
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -1432,7 +1432,7 @@
 				"RA"
 			],
 			"conditionInflict": [
-				"目盲"
+				"blinded"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -1561,13 +1561,13 @@
 				}
 			],
 			"traitTags": [
-				"魔法抗性"
+				"Magic Resistance"
 			],
 			"senseTags": [
 				"SD"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -1585,15 +1585,15 @@
 				"RCH"
 			],
 			"conditionInflict": [
-				"受擒",
-				"倒地",
-				"束缚"
+				"grappled",
+				"prone",
+				"restrained"
 			],
 			"savingThrowForced": [
-				"力量"
+				"strength"
 			],
 			"savingThrowForcedSpell": [
-				"体质"
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -1646,8 +1646,8 @@
 			],
 			"passive": 14,
 			"resist": [
-				"闪电",
-				"雷鸣"
+				"lightning",
+				"thunder"
 			],
 			"languages": [
 				"通用语",
@@ -1730,7 +1730,7 @@
 				"D"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -1751,11 +1751,11 @@
 				"RA"
 			],
 			"conditionInflict": [
-				"耳聋"
+				"deafened"
 			],
 			"savingThrowForcedSpell": [
-				"体质",
-				"力量"
+				"constitution",
+				"strength"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -1873,7 +1873,7 @@
 				"D"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -1891,14 +1891,14 @@
 				"MA"
 			],
 			"conditionInflict": [
-				"隐形",
-				"倒地"
+				"invisible",
+				"prone"
 			],
 			"savingThrowForced": [
-				"感知"
+				"wisdom"
 			],
 			"savingThrowForcedSpell": [
-				"感知"
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -2014,7 +2014,7 @@
 				}
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -2036,7 +2036,7 @@
 				"THW"
 			],
 			"savingThrowForced": [
-				"体质"
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -2143,7 +2143,7 @@
 				}
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -2275,7 +2275,7 @@
 				"D"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -2294,7 +2294,7 @@
 				"RA"
 			],
 			"conditionInflict": [
-				"隐形"
+				"invisible"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -2401,7 +2401,7 @@
 					"ENG_name": "Word of Stasis {@recharge 5}",
 					"name": "静滞律令{@recharge 5}",
 					"entries": [
-						"{@actSave con} {@dc 13}，以书记员60尺内可见一点为中心、半径20尺的{@variantrule 球状 [效应区域]|XPHB|球状}内的每名生物。{@actSaveFail} 目标直到书记员的下个回合开始陷入{@condition 失能|XPHB}状态。目标失能期间，其{@variantrule 速度|XPHB}变为0且无法增加。"
+						"{@actSave con} {@dc 13}，以书记员60尺内能看见的一点为中心，20尺半径的{@variantrule 球状 [效应区域]|XPHB|球状}内的每个生物。{@actSaveFail} 目标获得{@condition 失能|XPHB}状态，直到书记员的下一个回合开始。当目标处于{@condition 失能|XPHB}状态时，其{@variantrule 速度|XPHB}为0且无法增加。"
 					]
 				}
 			],
@@ -2409,7 +2409,7 @@
 				"D"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -2427,10 +2427,10 @@
 				"RA"
 			],
 			"conditionInflict": [
-				"失能"
+				"incapacitated"
 			],
 			"savingThrowForced": [
-				"体质"
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -2471,12 +2471,12 @@
 			],
 			"passive": 10,
 			"immune": [
-				"毒素"
+				"poison"
 			],
 			"conditionImmune": [
-				"魅惑",
-				"力竭",
-				"中毒"
+				"charmed",
+				"exhaustion",
+				"poisoned"
 			],
 			"languages": [
 				"理解你说的语言"
@@ -2510,7 +2510,7 @@
 			"reaction": [
 				{
 					"ENG_name": "Deflect Attack",
-					"name": "偏转攻击",
+					"name": "招架攻击",
 					"entries": [
 						"{@actTrigger} 防御者能看见的5尺内的一个生物对防御者以外的生物进行一次攻击检定。{@actResponse} 触发生物进行该攻击检定时具有{@variantrule 劣势|XPHB}。"
 					]
@@ -2632,7 +2632,7 @@
 				}
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -2652,13 +2652,13 @@
 				"MA"
 			],
 			"conditionInflict": [
-				"目盲"
+				"blinded"
 			],
 			"savingThrowForced": [
-				"体质"
+				"constitution"
 			],
 			"savingThrowForcedSpell": [
-				"敏捷"
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -2876,7 +2876,7 @@
 				"D"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -2893,7 +2893,7 @@
 				"RNG"
 			],
 			"conditionInflict": [
-				"隐形"
+				"invisible"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -2946,7 +2946,7 @@
 			],
 			"passive": 16,
 			"vulnerable": [
-				"光耀"
+				"radiant"
 			],
 			"languages": [
 				"通用语",
@@ -3011,14 +3011,14 @@
 				}
 			],
 			"traitTags": [
-				"妖精血统",
-				"日照敏感"
+				"Fey Ancestry",
+				"Sunlight Sensitivity"
 			],
 			"senseTags": [
 				"SD"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -3037,10 +3037,10 @@
 				"RA"
 			],
 			"conditionInflict": [
-				"目盲"
+				"blinded"
 			],
 			"savingThrowForced": [
-				"感知"
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -3168,10 +3168,10 @@
 				}
 			],
 			"traitTags": [
-				"集群战术"
+				"Pack Tactics"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -3196,12 +3196,12 @@
 				"RA"
 			],
 			"conditionInflictSpell": [
-				"魅惑"
+				"charmed"
 			],
 			"savingThrowForcedSpell": [
-				"魅力",
-				"敏捷",
-				"感知"
+				"charisma",
+				"dexterity",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -3255,7 +3255,7 @@
 			],
 			"passive": 13,
 			"resist": [
-				"毒素"
+				"poison"
 			],
 			"languages": [
 				"通用语",
@@ -3279,7 +3279,7 @@
 			"action": [
 				{
 					"ENG_name": "Stingblade",
-					"name": "毒刺剑",
+					"name": "刺刀",
 					"entries": [
 						"{@atkr m} {@hit 4}，触及5尺。{@h}5（{@damage 1d6 + 2}）穿刺伤害外加2（{@damage 1d4}）毒素伤害。"
 					]
@@ -3293,7 +3293,7 @@
 				}
 			],
 			"traitTags": [
-				"妖精血统"
+				"Fey Ancestry"
 			],
 			"senseTags": [
 				"SD"
@@ -3364,7 +3364,7 @@
 			],
 			"passive": 15,
 			"resist": [
-				"毒素"
+				"poison"
 			],
 			"languages": [
 				"通用语",
@@ -3429,7 +3429,7 @@
 				}
 			],
 			"traitTags": [
-				"妖精血统"
+				"Fey Ancestry"
 			],
 			"senseTags": [
 				"SD"
@@ -3453,14 +3453,14 @@
 				"MA"
 			],
 			"conditionInflict": [
-				"中毒"
+				"poisoned"
 			],
 			"conditionInflictSpell": [
-				"麻痹",
-				"中毒"
+				"paralyzed",
+				"poisoned"
 			],
 			"savingThrowForcedSpell": [
-				"感知"
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,

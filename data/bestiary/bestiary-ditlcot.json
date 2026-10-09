@@ -58,7 +58,7 @@
 			],
 			"passive": 14,
 			"conditionImmune": [
-				"石化"
+				"petrified"
 			],
 			"languages": [
 				"通用语",
@@ -137,15 +137,15 @@
 				}
 			],
 			"traitTags": [
-				"魔法抗性",
-				"日照敏感"
+				"Magic Resistance",
+				"Sunlight Sensitivity"
 			],
 			"senseTags": [
 				"SD",
 				"T"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -161,13 +161,13 @@
 				"MW"
 			],
 			"conditionInflict": [
-				"倒地"
+				"prone"
 			],
 			"savingThrowForced": [
-				"力量"
+				"strength"
 			],
 			"savingThrowForcedSpell": [
-				"敏捷"
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true,

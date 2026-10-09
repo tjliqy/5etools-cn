@@ -25,8 +25,8 @@
 				}
 			],
 			"traitTags": [
-				"天生武器",
-				"NPC种族"
+				"Natural Weapon",
+				"NPC Race"
 			],
 			"languageProficiencies": [
 				{
@@ -96,7 +96,7 @@
 				"max": 30
 			},
 			"traitTags": [
-				"天生武器"
+				"Natural Weapon"
 			],
 			"languageProficiencies": [
 				{
@@ -177,7 +177,7 @@
 				"fly": true
 			},
 			"traitTags": [
-				"天生武器"
+				"Natural Weapon"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -260,8 +260,8 @@
 				}
 			],
 			"resist": [
-				"暗蚀",
-				"光耀"
+				"necrotic",
+				"radiant"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -364,8 +364,8 @@
 			},
 			"darkvision": 60,
 			"resist": [
-				"暗蚀",
-				"光耀"
+				"necrotic",
+				"radiant"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -569,8 +569,8 @@
 				}
 			],
 			"resist": [
-				"暗蚀",
-				"光耀"
+				"necrotic",
+				"radiant"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -632,7 +632,7 @@
 					"name": "光辉掌者",
 					"type": "entries",
 					"entries": [
-						"你知晓戏法{@spell 光亮术}。在施展它时，魅力是你的施法属性。"
+						"你知晓戏法{@spell 光亮术}。在施展它时，魅力是你的关键施法属性。"
 					]
 				},
 				{
@@ -664,8 +664,8 @@
 			"speed": 30,
 			"darkvision": 60,
 			"resist": [
-				"暗蚀",
-				"光耀"
+				"necrotic",
+				"radiant"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -808,7 +808,7 @@
 				}
 			],
 			"resist": [
-				"暗蚀"
+				"necrotic"
 			],
 			"entries": [
 				{
@@ -901,7 +901,7 @@
 						}
 					},
 					"traitTags": [
-						"天生武器"
+						"Natural Weapon"
 					]
 				}
 			],
@@ -928,9 +928,9 @@
 			},
 			"darkvision": 60,
 			"traitTags": [
-				"修整强化",
-				"工具熟练",
-				"武器熟练"
+				"Improved Resting",
+				"Tool Proficiency",
+				"Weapon Proficiency"
 			],
 			"skillProficiencies": [
 				{
@@ -1058,8 +1058,8 @@
 			],
 			"speed": 30,
 			"traitTags": [
-				"修整强化",
-				"天生护甲"
+				"Improved Resting",
+				"Natural Armor"
 			],
 			"toolProficiencies": [
 				{
@@ -1067,10 +1067,10 @@
 				}
 			],
 			"resist": [
-				"毒素"
+				"poison"
 			],
 			"conditionImmune": [
-				"疾病"
+				"disease"
 			],
 			"entries": [
 				{
@@ -1339,8 +1339,8 @@
 			},
 			"darkvision": 60,
 			"traitTags": [
-				"怪物种族",
-				"强力构筑"
+				"Monstrous Race",
+				"Powerful Build"
 			],
 			"skillProficiencies": [
 				{
@@ -1387,7 +1387,7 @@
 					"name": "黑暗视觉",
 					"type": "entries",
 					"entries": [
-						"在微光光照下，你身边60尺内可以视为等同于明亮光照。而在黑暗中，该范围内可视为等同于微光光照。你无法在黑暗中分辨颜色，只能看到有灰度的黑白画面。"
+						"你在60尺范围内的微光光照下视物视为明亮光照，60尺黑暗下视物视为微光光照。你无法在黑暗中分辨颜色，只能看到灰色轮廓。"
 					]
 				},
 				{
@@ -1395,7 +1395,7 @@
 					"name": "长肢",
 					"type": "entries",
 					"entries": [
-						"当你在你的回合进行近战攻击时，该攻击的触及范围比正常远5尺。"
+						"当你在你的回合使用近战攻击时，你的触及范围比通常范围多5尺。"
 					]
 				},
 				{
@@ -1403,7 +1403,7 @@
 					"name": "强力构筑",
 					"type": "entries",
 					"entries": [
-						"在决定你的载重和你可推、拉、抬起的重量时，你视为体型大一级的生物。"
+						"在决定你的载重、和你可以推、拉及抬的重量时，你视作为体型大一级的生物。"
 					]
 				},
 				{
@@ -1452,7 +1452,7 @@
 			"speed": 30,
 			"darkvision": 60,
 			"traitTags": [
-				"强力构筑"
+				"Powerful Build"
 			],
 			"skillProficiencies": [
 				{
@@ -1561,8 +1561,8 @@
 			},
 			"darkvision": 60,
 			"traitTags": [
-				"怪物种族",
-				"强力构筑"
+				"Monstrous Race",
+				"Powerful Build"
 			],
 			"skillProficiencies": [
 				{
@@ -1601,7 +1601,7 @@
 					"name": "黑暗视觉",
 					"type": "entries",
 					"entries": [
-						"在微光光照下，你身边60尺内可以视为等同于明亮光照。而在黑暗中，该范围内可视为等同于微光光照。你无法在黑暗中分辨颜色，只能看到有灰度的黑白画面。"
+						"你在60尺范围内的微光光照下视物视为明亮光照，60尺黑暗下视物视为微光光照。你无法在黑暗中分辨颜色，只能看到灰色轮廓。"
 					]
 				},
 				{
@@ -1609,7 +1609,7 @@
 					"name": "长肢",
 					"type": "entries",
 					"entries": [
-						"当你在你的回合发动近战攻击时，你那次攻击的触及范围增加5尺。"
+						"当你在你的回合使用近战攻击时，你的触及范围比通常范围多5尺。"
 					]
 				},
 				{
@@ -1617,7 +1617,7 @@
 					"name": "强力构筑",
 					"type": "entries",
 					"entries": [
-						"在决定你的载重和你可以推、拉及抬起的重量时，你视为体型大一级的生物。"
+						"在决定你的载重、和你可以推、拉及抬的重量时，你视作为体型大一级的生物。"
 					]
 				},
 				{
@@ -1668,8 +1668,8 @@
 				}
 			],
 			"traitTags": [
-				"水陆两栖",
-				"NPC种族"
+				"Amphibious",
+				"NPC Race"
 			],
 			"languageProficiencies": [
 				{
@@ -1756,17 +1756,17 @@
 				"max": 100
 			},
 			"traitTags": [
-				"天生武器",
-				"强力构筑"
+				"Natural Weapon",
+				"Powerful Build"
 			],
 			"skillProficiencies": [
 				{
 					"choose": {
 						"from": [
-							"驯兽",
-							"医药",
-							"自然",
-							"求生"
+							"animal handling",
+							"medicine",
+							"nature",
+							"survival"
 						]
 					}
 				}
@@ -1935,17 +1935,17 @@
 			],
 			"speed": 40,
 			"traitTags": [
-				"天生武器",
-				"强力构筑"
+				"Natural Weapon",
+				"Powerful Build"
 			],
 			"skillProficiencies": [
 				{
 					"choose": {
 						"from": [
-							"驯兽",
-							"医药",
-							"自然",
-							"求生"
+							"animal handling",
+							"medicine",
+							"nature",
+							"survival"
 						]
 					}
 				}
@@ -2019,11 +2019,11 @@
 				{
 					"choose": {
 						"from": [
-							"欺瞒",
-							"洞悉",
-							"威吓",
-							"表演",
-							"游说"
+							"deception",
+							"insight",
+							"intimidation",
+							"performance",
+							"persuasion"
 						],
 						"count": 2
 					}
@@ -2103,10 +2103,10 @@
 				{
 					"choose": {
 						"from": [
-							"欺瞒",
-							"洞悉",
-							"威吓",
-							"游说"
+							"deception",
+							"insight",
+							"intimidation",
+							"persuasion"
 						],
 						"count": 2
 					}
@@ -2194,11 +2194,11 @@
 				{
 					"choose": {
 						"from": [
-							"欺瞒",
-							"洞悉",
-							"威吓",
-							"表演",
-							"游说"
+							"deception",
+							"insight",
+							"intimidation",
+							"performance",
+							"persuasion"
 						],
 						"count": 2
 					}
@@ -2395,7 +2395,7 @@
 			},
 			"darkvision": 120,
 			"traitTags": [
-				"魔法抗性"
+				"Magic Resistance"
 			],
 			"additionalSpells": [
 				{
@@ -2492,10 +2492,10 @@
 			},
 			"darkvision": 60,
 			"traitTags": [
-				"天生武器"
+				"Natural Weapon"
 			],
 			"resist": [
-				"暗蚀"
+				"necrotic"
 			],
 			"sizeEntry": {
 				"ENG_name": "Size:",
@@ -2586,7 +2586,7 @@
 			},
 			"darkvision": 60,
 			"traitTags": [
-				"天生武器"
+				"Natural Weapon"
 			],
 			"entries": [
 				{
@@ -2682,7 +2682,7 @@
 				"max": 80
 			},
 			"traitTags": [
-				"罕见种族"
+				"Uncommon Race"
 			],
 			"languageProficiencies": [
 				{
@@ -3016,7 +3016,7 @@
 								"damageType": "强酸"
 							},
 							"resist": [
-								"强酸"
+								"acid"
 							]
 						},
 						{
@@ -3025,7 +3025,7 @@
 								"damageType": "闪电"
 							},
 							"resist": [
-								"闪电"
+								"lightning"
 							]
 						},
 						{
@@ -3034,7 +3034,7 @@
 								"damageType": "火焰"
 							},
 							"resist": [
-								"火焰"
+								"fire"
 							]
 						},
 						{
@@ -3043,7 +3043,7 @@
 								"damageType": "闪电"
 							},
 							"resist": [
-								"闪电"
+								"lightning"
 							]
 						},
 						{
@@ -3052,7 +3052,7 @@
 								"damageType": "强酸"
 							},
 							"resist": [
-								"强酸"
+								"acid"
 							]
 						},
 						{
@@ -3061,7 +3061,7 @@
 								"damageType": "火焰"
 							},
 							"resist": [
-								"火焰"
+								"fire"
 							]
 						},
 						{
@@ -3070,7 +3070,7 @@
 								"damageType": "毒素"
 							},
 							"resist": [
-								"毒素"
+								"poison"
 							]
 						},
 						{
@@ -3079,7 +3079,7 @@
 								"damageType": "火焰"
 							},
 							"resist": [
-								"火焰"
+								"fire"
 							]
 						},
 						{
@@ -3088,7 +3088,7 @@
 								"damageType": "寒冷"
 							},
 							"resist": [
-								"寒冷"
+								"cold"
 							]
 						},
 						{
@@ -3097,7 +3097,7 @@
 								"damageType": "寒冷"
 							},
 							"resist": [
-								"寒冷"
+								"cold"
 							]
 						}
 					]
@@ -3252,7 +3252,7 @@
 								"color": "黑",
 								"damageType": "强酸",
 								"resist": [
-									"强酸"
+									"acid"
 								]
 							}
 						},
@@ -3261,7 +3261,7 @@
 								"color": "蓝",
 								"damageType": "闪电",
 								"resist": [
-									"闪电"
+									"lightning"
 								]
 							}
 						},
@@ -3270,7 +3270,7 @@
 								"color": "绿",
 								"damageType": "毒素",
 								"resist": [
-									"毒素"
+									"poison"
 								]
 							}
 						},
@@ -3279,7 +3279,7 @@
 								"color": "红",
 								"damageType": "火焰",
 								"resist": [
-									"火焰"
+									"fire"
 								]
 							}
 						},
@@ -3288,7 +3288,7 @@
 								"color": "白",
 								"damageType": "寒冷",
 								"resist": [
-									"寒冷"
+									"cold"
 								]
 							}
 						}
@@ -3450,7 +3450,7 @@
 								"damageType": "力场"
 							},
 							"resist": [
-								"力场"
+								"force"
 							]
 						},
 						{
@@ -3459,7 +3459,7 @@
 								"damageType": "光耀"
 							},
 							"resist": [
-								"光耀"
+								"radiant"
 							]
 						},
 						{
@@ -3468,7 +3468,7 @@
 								"damageType": "心灵"
 							},
 							"resist": [
-								"心灵"
+								"psychic"
 							]
 						},
 						{
@@ -3477,7 +3477,7 @@
 								"damageType": "雷鸣"
 							},
 							"resist": [
-								"雷鸣"
+								"thunder"
 							]
 						},
 						{
@@ -3486,7 +3486,7 @@
 								"damageType": "暗蚀"
 							},
 							"resist": [
-								"暗蚀"
+								"necrotic"
 							]
 						}
 					]
@@ -3664,7 +3664,7 @@
 								"damageType": "火焰"
 							},
 							"resist": [
-								"火焰"
+								"fire"
 							]
 						},
 						{
@@ -3673,7 +3673,7 @@
 								"damageType": "闪电"
 							},
 							"resist": [
-								"闪电"
+								"lightning"
 							]
 						},
 						{
@@ -3682,7 +3682,7 @@
 								"damageType": "强酸"
 							},
 							"resist": [
-								"强酸"
+								"acid"
 							]
 						},
 						{
@@ -3691,7 +3691,7 @@
 								"damageType": "火焰"
 							},
 							"resist": [
-								"火焰"
+								"fire"
 							]
 						},
 						{
@@ -3700,7 +3700,7 @@
 								"damageType": "寒冷"
 							},
 							"resist": [
-								"寒冷"
+								"cold"
 							]
 						}
 					]
@@ -3729,7 +3729,7 @@
 			},
 			"darkvision": 120,
 			"resist": [
-				"毒素"
+				"poison"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -3859,7 +3859,7 @@
 				}
 			],
 			"resist": [
-				"毒素"
+				"poison"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -3960,7 +3960,7 @@
 			"speed": 30,
 			"darkvision": 120,
 			"resist": [
-				"毒素"
+				"poison"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -4045,7 +4045,7 @@
 				}
 			],
 			"resist": [
-				"毒素"
+				"poison"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -4150,9 +4150,9 @@
 			},
 			"darkvision": 60,
 			"traitTags": [
-				"修整强化",
-				"工具熟练",
-				"武器熟练"
+				"Improved Resting",
+				"Tool Proficiency",
+				"Weapon Proficiency"
 			],
 			"skillProficiencies": [
 				{
@@ -4513,7 +4513,7 @@
 			},
 			"darkvision": 60,
 			"traitTags": [
-				"修整强化"
+				"Improved Resting"
 			],
 			"skillProficiencies": [
 				{
@@ -4610,15 +4610,15 @@
 			"speed": 30,
 			"darkvision": 60,
 			"traitTags": [
-				"修整强化"
+				"Improved Resting"
 			],
 			"skillProficiencies": [
 				{
 					"choose": {
 						"from": [
-							"洞悉",
-							"察觉",
-							"求生"
+							"insight",
+							"perception",
+							"survival"
 						]
 					}
 				}
@@ -5023,7 +5023,7 @@
 			},
 			"darkvision": 60,
 			"traitTags": [
-				"修整强化"
+				"Improved Resting"
 			],
 			"skillProficiencies": [
 				{
@@ -5496,7 +5496,7 @@
 				"max": 500
 			},
 			"traitTags": [
-				"强力构筑"
+				"Powerful Build"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -5593,7 +5593,7 @@
 				"max": 500
 			},
 			"traitTags": [
-				"强力构筑"
+				"Powerful Build"
 			],
 			"languageProficiencies": [
 				{
@@ -5659,7 +5659,7 @@
 					"name": "强力构筑",
 					"type": "entries",
 					"entries": [
-						"在决定你的载重和你可以推、拉及抬起的重量时，你视为体型大一级的生物。"
+						"在决定你的载重、和你可以推、拉及抬的重量时，你视作为体型大一级的生物。"
 					]
 				},
 				{
@@ -5718,7 +5718,7 @@
 			},
 			"lineage": null,
 			"resist": [
-				"火焰"
+				"fire"
 			],
 			"additionalSpells": [
 				{
@@ -5898,7 +5898,7 @@
 				"swim": true
 			},
 			"traitTags": [
-				"强力构筑"
+				"Powerful Build"
 			],
 			"weaponProficiencies": [
 				{
@@ -6008,7 +6008,7 @@
 			],
 			"speed": 30,
 			"traitTags": [
-				"武器熟练"
+				"Weapon Proficiency"
 			],
 			"skillProficiencies": [
 				{
@@ -6021,7 +6021,7 @@
 				}
 			],
 			"resist": [
-				"心灵"
+				"psychic"
 			],
 			"additionalSpells": [
 				{
@@ -6098,7 +6098,7 @@
 			],
 			"speed": 30,
 			"resist": [
-				"心灵"
+				"psychic"
 			],
 			"additionalSpells": [
 				{
@@ -6181,8 +6181,8 @@
 			],
 			"darkvision": 60,
 			"traitTags": [
-				"天生武器",
-				"NPC种族"
+				"Natural Weapon",
+				"NPC Race"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -6245,7 +6245,7 @@
 			},
 			"darkvision": 60,
 			"traitTags": [
-				"罕见种族"
+				"Uncommon Race"
 			],
 			"languageProficiencies": [
 				{
@@ -6482,7 +6482,7 @@
 			],
 			"darkvision": 120,
 			"traitTags": [
-				"NPC种族"
+				"NPC Race"
 			],
 			"languageProficiencies": [
 				{
@@ -6591,7 +6591,7 @@
 			],
 			"darkvision": 60,
 			"traitTags": [
-				"NPC种族"
+				"NPC Race"
 			],
 			"languageProficiencies": [
 				{
@@ -6831,7 +6831,7 @@
 			},
 			"darkvision": 60,
 			"traitTags": [
-				"天生护甲"
+				"Natural Armor"
 			],
 			"languageProficiencies": [
 				{
@@ -6840,8 +6840,8 @@
 				}
 			],
 			"resist": [
-				"火焰",
-				"心灵"
+				"fire",
+				"psychic"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -6936,7 +6936,7 @@
 			},
 			"darkvision": 60,
 			"traitTags": [
-				"怪物种族"
+				"Monstrous Race"
 			],
 			"languageProficiencies": [
 				{
@@ -6970,7 +6970,7 @@
 					"name": "黑暗视觉",
 					"type": "entries",
 					"entries": [
-						"在微光光照下，你身边60尺内可以视为等同于明亮光照。而在黑暗中，该范围内可视为等同于微光光照。你无法在黑暗中分辨颜色，只能看到有灰度的黑白画面。"
+						"你在60尺范围内的微光光照下视物视为明亮光照，60尺黑暗下视物视为微光光照。你无法在黑暗中分辨颜色，只能看到灰色轮廓。"
 					]
 				},
 				{
@@ -7076,7 +7076,7 @@
 			],
 			"speed": 30,
 			"traitTags": [
-				"强力构筑"
+				"Powerful Build"
 			],
 			"skillProficiencies": [
 				{
@@ -7084,7 +7084,7 @@
 				}
 			],
 			"resist": [
-				"寒冷"
+				"cold"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -7165,7 +7165,7 @@
 				"max": 100
 			},
 			"traitTags": [
-				"强力构筑"
+				"Powerful Build"
 			],
 			"skillProficiencies": [
 				{
@@ -7179,7 +7179,7 @@
 				}
 			],
 			"resist": [
-				"寒冷"
+				"cold"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -7223,7 +7223,7 @@
 					"name": "强力构筑",
 					"type": "entries",
 					"entries": [
-						"在决定你的载重和你可以推、拉及抬起的重量时，你视为体型大一级的生物。"
+						"在决定你的载重、和你可以推、拉及抬的重量时，你视作为体型大一级的生物。"
 					]
 				},
 				{
@@ -7263,7 +7263,7 @@
 			],
 			"speed": 35,
 			"traitTags": [
-				"强力构筑"
+				"Powerful Build"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -7578,7 +7578,7 @@
 			],
 			"blindsight": 30,
 			"traitTags": [
-				"NPC种族"
+				"NPC Race"
 			],
 			"languageProficiencies": [
 				{
@@ -7648,7 +7648,7 @@
 				"max": 50
 			},
 			"traitTags": [
-				"水陆两栖"
+				"Amphibious"
 			],
 			"skillProficiencies": [
 				{
@@ -7661,10 +7661,10 @@
 				}
 			],
 			"immune": [
-				"毒素"
+				"poison"
 			],
 			"conditionImmune": [
-				"中毒"
+				"poisoned"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -7849,7 +7849,7 @@
 			},
 			"darkvision": 60,
 			"traitTags": [
-				"罕见种族"
+				"Uncommon Race"
 			],
 			"skillProficiencies": [
 				{
@@ -7949,7 +7949,7 @@
 			},
 			"darkvision": 60,
 			"traitTags": [
-				"罕见种族"
+				"Uncommon Race"
 			],
 			"skillProficiencies": [
 				{
@@ -8543,7 +8543,7 @@
 			"speed": 30,
 			"darkvision": 60,
 			"traitTags": [
-				"NPC种族"
+				"NPC Race"
 			],
 			"languageProficiencies": [
 				{
@@ -8758,7 +8758,7 @@
 			},
 			"darkvision": 60,
 			"traitTags": [
-				"怪物种族"
+				"Monstrous Race"
 			],
 			"languageProficiencies": [
 				{
@@ -8805,7 +8805,7 @@
 					"name": "黑暗视觉",
 					"type": "entries",
 					"entries": [
-						"在微光光照下，你身边60尺内可以视为等同于明亮光照。而在黑暗中，该范围内可视为等同于微光光照。你无法在黑暗中分辨颜色，只能看到有灰度的黑白画面。"
+						"你在60尺范围内的微光光照下视物视为明亮光照，60尺黑暗下视物视为微光光照。你无法在黑暗中分辨颜色，只能看到灰色轮廓。"
 					]
 				},
 				{
@@ -8818,7 +8818,7 @@
 				},
 				{
 					"ENG_name": "Saving Face",
-					"name": "挽回面子",
+					"name": "挽回颜面",
 					"type": "entries",
 					"entries": [
 						"大地精因为害怕失去地位，小心翼翼地不在盟友面前显示虚弱。如果你在一次攻击检定中失手、属性检定或豁免检定中失败了，你可以获得掷骰加值，此次加值的数值等同于你30尺内能见的友方数目（最大加值为+5）。此特性在你完成一次短休或长休前无法再次使用。"
@@ -9234,10 +9234,10 @@
 			],
 			"speed": 30,
 			"traitTags": [
-				"技能熟练"
+				"Skill Proficiency"
 			],
 			"resist": [
-				"心灵"
+				"psychic"
 			],
 			"sizeEntry": {
 				"ENG_name": "Size:",
@@ -9274,7 +9274,7 @@
 				},
 				{
 					"ENG_name": "Severed from Dreams",
-					"name": "隔离梦境",
+					"name": "梦境隔绝",
 					"type": "entries",
 					"entries": [
 						"你不能成为{@spell 托梦术|XPHB}法术的目标。此外，当你完成一次{@variantrule 长休|XPHB}时，你获得一个自选技能的熟练项。该熟练项持续到你完成另一次{@variantrule 长休|XPHB}为止。"
@@ -9321,7 +9321,7 @@
 				}
 			],
 			"resist": [
-				"心灵"
+				"psychic"
 			],
 			"entries": [
 				{
@@ -9375,7 +9375,7 @@
 				},
 				{
 					"ENG_name": "Severed from Dreams",
-					"name": "隔离梦境",
+					"name": "梦境隔绝",
 					"type": "entries",
 					"entries": [
 						"离梦人也会睡眠，但他们不像其他生物那样连接到梦境位面。相反，他们的心灵在睡眠时会从他们异界精魂的记忆中汲取养分。因此，你对需要你做梦的法术和其他魔法效果免疫，比如{@spell 托梦术}，但对让你入睡的法术和其他魔法效果不免疫，比如{@spell 睡眠术}。"
@@ -9408,11 +9408,11 @@
 				{
 					"choose": {
 						"from": [
-							"洞悉",
-							"调查",
-							"巧手",
-							"隐匿",
-							"求生"
+							"insight",
+							"investigation",
+							"sleight of hand",
+							"stealth",
+							"survival"
 						]
 					}
 				}
@@ -9464,7 +9464,7 @@
 			],
 			"darkvision": 60,
 			"traitTags": [
-				"NPC种族"
+				"NPC Race"
 			],
 			"languageProficiencies": [
 				{
@@ -9601,10 +9601,10 @@
 				{
 					"choose": {
 						"from": [
-							"特技",
-							"欺瞒",
-							"巧手",
-							"隐匿"
+							"acrobatics",
+							"deception",
+							"sleight of hand",
+							"stealth"
 						],
 						"count": 2
 					}
@@ -9666,7 +9666,7 @@
 					"name": "语言",
 					"type": "entries",
 					"entries": [
-						"你可以读、写通用语和气族语，但你只能使用你的拟声特性来说话。"
+						"你可以读、写通用语和风族语，但你只能使用你的拟声特性来说话。"
 					]
 				}
 			],
@@ -9779,8 +9779,8 @@
 			"speed": 30,
 			"darkvision": 60,
 			"traitTags": [
-				"技能熟练",
-				"工具熟练"
+				"Skill Proficiency",
+				"Tool Proficiency"
 			],
 			"additionalSpells": [
 				{
@@ -9962,8 +9962,8 @@
 			],
 			"darkvision": 60,
 			"traitTags": [
-				"NPC种族",
-				"日照敏感"
+				"NPC Race",
+				"Sunlight Sensitivity"
 			],
 			"languageProficiencies": [
 				{
@@ -10026,11 +10026,11 @@
 				{
 					"choose": {
 						"from": [
-							"奥秘",
-							"调查",
-							"医药",
-							"巧手",
-							"求生"
+							"arcana",
+							"investigation",
+							"medicine",
+							"sleight of hand",
+							"survival"
 						]
 					}
 				}
@@ -10203,8 +10203,8 @@
 			},
 			"darkvision": 60,
 			"traitTags": [
-				"怪物种族",
-				"日照敏感"
+				"Monstrous Race",
+				"Sunlight Sensitivity"
 			],
 			"languageProficiencies": [
 				{
@@ -10238,7 +10238,7 @@
 					"name": "黑暗视觉",
 					"type": "entries",
 					"entries": [
-						"在微光光照下，你身边60尺内可以视为等同于明亮光照。而在黑暗中，该范围内可视为等同于微光光照。你无法在黑暗中分辨颜色，只能看到有灰度的黑白画面。"
+						"你在60尺范围内的微光光照下视物视为明亮光照，60尺黑暗下视物视为微光光照。你无法在黑暗中分辨颜色，只能看到灰色轮廓。"
 					]
 				},
 				{
@@ -10396,9 +10396,9 @@
 			},
 			"darkvision": 120,
 			"traitTags": [
-				"水陆两栖",
-				"NPC种族",
-				"日照敏感"
+				"Amphibious",
+				"NPC Race",
+				"Sunlight Sensitivity"
 			],
 			"languageProficiencies": [
 				{
@@ -10488,16 +10488,16 @@
 			},
 			"darkvision": 60,
 			"traitTags": [
-				"天生武器"
+				"Natural Weapon"
 			],
 			"skillProficiencies": [
 				{
 					"choose": {
 						"from": [
-							"运动",
-							"威吓",
-							"察觉",
-							"求生"
+							"athletics",
+							"intimidation",
+							"perception",
+							"survival"
 						]
 					}
 				}
@@ -10597,8 +10597,8 @@
 				}
 			],
 			"traitTags": [
-				"天生护甲",
-				"NPC种族"
+				"Natural Armor",
+				"NPC Race"
 			],
 			"languageProficiencies": [
 				{
@@ -10651,19 +10651,19 @@
 				"swim": true
 			},
 			"traitTags": [
-				"天生护甲",
-				"天生武器"
+				"Natural Armor",
+				"Natural Weapon"
 			],
 			"skillProficiencies": [
 				{
 					"choose": {
 						"from": [
-							"驯兽",
-							"医药",
-							"自然",
-							"察觉",
-							"隐匿",
-							"求生"
+							"animal handling",
+							"medicine",
+							"nature",
+							"perception",
+							"stealth",
+							"survival"
 						],
 						"count": 2
 					}
@@ -10759,18 +10759,18 @@
 				"max": 60
 			},
 			"traitTags": [
-				"天生护甲",
-				"天生武器"
+				"Natural Armor",
+				"Natural Weapon"
 			],
 			"skillProficiencies": [
 				{
 					"choose": {
 						"from": [
-							"驯兽",
-							"自然",
-							"察觉",
-							"隐匿",
-							"求生"
+							"animal handling",
+							"nature",
+							"perception",
+							"stealth",
+							"survival"
 						],
 						"count": 2
 					}
@@ -10895,8 +10895,8 @@
 				"max": 80
 			},
 			"traitTags": [
-				"水陆两栖",
-				"天生护甲"
+				"Amphibious",
+				"Natural Armor"
 			],
 			"skillProficiencies": [
 				{
@@ -10997,8 +10997,8 @@
 				{
 					"choose": {
 						"from": [
-							"欺瞒",
-							"表演"
+							"deception",
+							"performance"
 						]
 					}
 				}
@@ -11075,8 +11075,8 @@
 				"max": 450
 			},
 			"traitTags": [
-				"天生护甲",
-				"强力构筑"
+				"Natural Armor",
+				"Powerful Build"
 			],
 			"languageProficiencies": [
 				{
@@ -11187,15 +11187,15 @@
 			"speed": 30,
 			"darkvision": 60,
 			"traitTags": [
-				"天生武器"
+				"Natural Weapon"
 			],
 			"skillProficiencies": [
 				{
 					"choose": {
 						"from": [
-							"察觉",
-							"隐匿",
-							"生存"
+							"perception",
+							"stealth",
+							"survival"
 						]
 					}
 				}
@@ -11260,8 +11260,8 @@
 				"swim": 40
 			},
 			"traitTags": [
-				"水陆两栖",
-				"NPC种族"
+				"Amphibious",
+				"NPC Race"
 			],
 			"languageProficiencies": [
 				{
@@ -11321,7 +11321,7 @@
 				"max": 100
 			},
 			"traitTags": [
-				"水陆两栖"
+				"Amphibious"
 			],
 			"languageProficiencies": [
 				{
@@ -11417,14 +11417,14 @@
 				"max": 150
 			},
 			"traitTags": [
-				"天生武器"
+				"Natural Weapon"
 			],
 			"skillProficiencies": [
 				{
 					"choose": {
 						"from": [
-							"威吓",
-							"游说"
+							"intimidation",
+							"persuasion"
 						]
 					}
 				}
@@ -11575,7 +11575,7 @@
 			],
 			"speed": 30,
 			"traitTags": [
-				"天生武器"
+				"Natural Weapon"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -11639,7 +11639,7 @@
 				"max": 40
 			},
 			"traitTags": [
-				"天生武器"
+				"Natural Weapon"
 			],
 			"skillProficiencies": [
 				{
@@ -11746,7 +11746,7 @@
 				"max": 100
 			},
 			"traitTags": [
-				"天生武器"
+				"Natural Weapon"
 			],
 			"languageProficiencies": [
 				{
@@ -11760,10 +11760,10 @@
 				}
 			],
 			"immune": [
-				"毒素"
+				"poison"
 			],
 			"conditionImmune": [
-				"中毒"
+				"poisoned"
 			],
 			"entries": [
 				{
@@ -11857,7 +11857,7 @@
 			],
 			"darkvision": 60,
 			"traitTags": [
-				"NPC种族"
+				"NPC Race"
 			],
 			"languageProficiencies": [
 				{
@@ -11970,12 +11970,12 @@
 				{
 					"choose": {
 						"from": [
-							"驯兽",
-							"洞悉",
-							"威吓",
-							"医药",
-							"察觉",
-							"求生"
+							"animal handling",
+							"insight",
+							"intimidation",
+							"medicine",
+							"perception",
+							"survival"
 						],
 						"count": 2
 					}
@@ -12018,19 +12018,19 @@
 			},
 			"darkvision": 60,
 			"traitTags": [
-				"强力构筑"
+				"Powerful Build"
 			],
 			"skillProficiencies": [
 				{
 					"choose": {
 						"from": [
-							"驯兽",
-							"洞悉",
-							"威吓",
-							"医药",
-							"自然",
-							"察觉",
-							"求生"
+							"animal handling",
+							"insight",
+							"intimidation",
+							"medicine",
+							"nature",
+							"perception",
+							"survival"
 						],
 						"count": 2
 					}
@@ -12076,7 +12076,7 @@
 					"name": "黑暗视觉",
 					"type": "entries",
 					"entries": [
-						"在微光光照下，你身边60尺内可以视为等同于明亮光照。而在黑暗中，该范围内可视为等同于微光光照。你无法在黑暗中分辨颜色，只能看到有灰度的黑白画面。"
+						"你在60尺范围内的微光光照下视物视为明亮光照，60尺黑暗下视物视为微光光照。你无法在黑暗中分辨颜色，只能看到灰色轮廓。"
 					]
 				},
 				{
@@ -12100,7 +12100,7 @@
 					"name": "强力构筑",
 					"type": "entries",
 					"entries": [
-						"在决定你的载重和你可推、拉、抬起的重量时，你视为体型大一级的生物。"
+						"在决定你的载重、和你可以推、拉及抬的重量时，你视作为体型大一级的生物。"
 					]
 				},
 				{
@@ -12129,7 +12129,7 @@
 			"speed": 30,
 			"darkvision": 60,
 			"traitTags": [
-				"强力构筑"
+				"Powerful Build"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -12205,20 +12205,20 @@
 			},
 			"darkvision": 60,
 			"traitTags": [
-				"怪物种族",
-				"强力构筑"
+				"Monstrous Race",
+				"Powerful Build"
 			],
 			"skillProficiencies": [
 				{
 					"choose": {
 						"from": [
-							"驯兽",
-							"洞悉",
-							"威吓",
-							"医药",
-							"自然",
-							"察觉",
-							"求生"
+							"animal handling",
+							"insight",
+							"intimidation",
+							"medicine",
+							"nature",
+							"perception",
+							"survival"
 						],
 						"count": 2
 					}
@@ -12256,7 +12256,7 @@
 					"name": "黑暗视觉",
 					"type": "entries",
 					"entries": [
-						"在微光光照下，你身边60尺内可以视为等同于明亮光照。而在黑暗中，该范围内可视为等同于微光光照。你无法在黑暗中分辨颜色，只能看到有灰度的黑白画面。"
+						"你在60尺范围内的微光光照下视物视为明亮光照，60尺黑暗下视物视为微光光照。你无法在黑暗中分辨颜色，只能看到灰色轮廓。"
 					]
 				},
 				{
@@ -12264,7 +12264,7 @@
 					"name": "好斗",
 					"type": "entries",
 					"entries": [
-						"以一个附赠动作，你可以向你能看到或者听到的任意一个敌对生物移动最多相当于你速度的距离。你必须比开始移动时距离该敌人更近地结束这次移动。"
+						"以一个附赠动作，你可以向一个你能看到或听到的敌对生物移动最多等同于你速度的距离。这次移动结束时，你与该敌人的距离必须比移动开始时更近。"
 					]
 				},
 				{
@@ -12280,7 +12280,7 @@
 					"name": "强力构筑",
 					"type": "entries",
 					"entries": [
-						"在决定你的载重和你可以推、拉及抬起的重量时，你视为体型大一级的生物。"
+						"在决定你的载重、和你可以推、拉及抬的重量时，你视作为体型大一级的生物。"
 					]
 				},
 				{
@@ -12534,8 +12534,8 @@
 			"speed": 30,
 			"darkvision": 60,
 			"resist": [
-				"强酸",
-				"毒素"
+				"acid",
+				"poison"
 			],
 			"entries": [
 				{
@@ -12692,10 +12692,10 @@
 			],
 			"speed": 30,
 			"traitTags": [
-				"修整强化"
+				"Improved Resting"
 			],
 			"resist": [
-				"毒素"
+				"poison"
 			],
 			"entries": [
 				{
@@ -12759,7 +12759,7 @@
 			"speed": 30,
 			"darkvision": 60,
 			"resist": [
-				"寒冷"
+				"cold"
 			],
 			"additionalSpells": [
 				{
@@ -12864,8 +12864,8 @@
 				"max": 100
 			},
 			"traitTags": [
-				"魔法抗性",
-				"天生武器"
+				"Magic Resistance",
+				"Natural Weapon"
 			],
 			"skillProficiencies": [
 				{
@@ -12980,8 +12980,8 @@
 			],
 			"speed": 35,
 			"traitTags": [
-				"魔法抗性",
-				"天生武器"
+				"Magic Resistance",
+				"Natural Weapon"
 			],
 			"skillProficiencies": [
 				{
@@ -13068,10 +13068,10 @@
 			},
 			"darkvision": 60,
 			"traitTags": [
-				"水陆两栖",
-				"修整强化",
-				"工具熟练",
-				"武器熟练"
+				"Amphibious",
+				"Improved Resting",
+				"Tool Proficiency",
+				"Weapon Proficiency"
 			],
 			"skillProficiencies": [
 				{
@@ -13079,7 +13079,7 @@
 				}
 			],
 			"resist": [
-				"寒冷"
+				"cold"
 			],
 			"entries": [
 				{
@@ -13173,9 +13173,9 @@
 			},
 			"darkvision": 60,
 			"traitTags": [
-				"修整强化",
-				"工具熟练",
-				"武器熟练"
+				"Improved Resting",
+				"Tool Proficiency",
+				"Weapon Proficiency"
 			],
 			"skillProficiencies": [
 				{
@@ -13183,7 +13183,7 @@
 				}
 			],
 			"resist": [
-				"暗蚀"
+				"necrotic"
 			],
 			"entries": [
 				{
@@ -13268,10 +13268,10 @@
 				{
 					"choose": {
 						"from": [
-							"特技",
-							"运动",
-							"威吓",
-							"求生"
+							"acrobatics",
+							"athletics",
+							"intimidation",
+							"survival"
 						]
 					}
 				}
@@ -13510,7 +13510,7 @@
 					"name": "黑暗视觉",
 					"type": "entries",
 					"entries": [
-						"你在黑暗与昏暗条件下有着特别的视力。在微光光照下，你身边60尺内可以视为等同于明亮光照。而在黑暗中，该范围内可视为等同于微光光照。你无法在黑暗中分辨颜色，只能看到有灰度的黑白画面。"
+						"你在黑暗与昏暗条件下有着特别的视力。在60尺内的微光条件下你能视物如同光照条件，在黑暗条件下你能视物如同微光条件。你在黑暗中无法分辨颜色，只能识别灰度。"
 					]
 				},
 				{
@@ -13518,7 +13518,7 @@
 					"name": "化形",
 					"type": "entries",
 					"entries": [
-						"以一个附赠动作，你可以展现出更为野兽化的姿态。这个变形持续一分钟，直到你死亡，抑或你以一个附赠动作变回正常形态。当你化形时，你获得等同于你的角色等级+体质调整值（至少为1）的临时生命值。此外，你还会依据你的亚种获得下文所述的额外好处。",
+						"以一个附赠动作，你可以展现出更为野兽化的姿态。这个变形持续一分钟，直到你死亡，抑或你以一附赠动作变回正常形态。当你化形时，你获得等同于你的角色等级+体质调整值（至少为1）的临时生命值。此外你也会依据你的亚种获得下列的其他好处。",
 						"当你使用化形特性后，你不能在一次短休或长休结束前再次使用该特性。"
 					]
 				},
@@ -13553,10 +13553,10 @@
 				{
 					"choose": {
 						"from": [
-							"特技",
-							"运动",
-							"威吓",
-							"求生"
+							"acrobatics",
+							"athletics",
+							"intimidation",
+							"survival"
 						]
 					}
 				}
@@ -13732,17 +13732,17 @@
 			],
 			"darkvision": 60,
 			"traitTags": [
-				"水陆两栖",
-				"天生护甲",
-				"天生武器"
+				"Amphibious",
+				"Natural Armor",
+				"Natural Weapon"
 			],
 			"languageProficiencies": [
 				{
 					"common": true,
 					"choose": {
 						"from": [
-							"精灵语",
-							"其他"
+							"elvish",
+							"other"
 						],
 						"count": 1
 					}
@@ -13951,18 +13951,18 @@
 			],
 			"darkvision": 60,
 			"traitTags": [
-				"修整强化",
-				"NPC种族"
+				"Improved Resting",
+				"NPC Race"
 			],
 			"immune": [
-				"毒素"
+				"poison"
 			],
 			"vulnerable": [
-				"钝击"
+				"bludgeoning"
 			],
 			"conditionImmune": [
-				"力竭",
-				"中毒"
+				"exhaustion",
+				"poisoned"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -14028,7 +14028,7 @@
 			},
 			"darkvision": 60,
 			"traitTags": [
-				"天生武器"
+				"Natural Weapon"
 			],
 			"skillProficiencies": [
 				{
@@ -14133,7 +14133,7 @@
 			},
 			"darkvision": 60,
 			"traitTags": [
-				"天生武器"
+				"Natural Weapon"
 			],
 			"skillProficiencies": [
 				{
@@ -14194,7 +14194,7 @@
 				},
 				{
 					"ENG_name": "Cat's Talents",
-					"name": "猫之天性",
+					"name": "猫之天赋",
 					"type": "entries",
 					"entries": [
 						"你拥有{@skill 察觉}和{@skill 隐匿}技能的熟练项。"
@@ -14229,8 +14229,8 @@
 			"speed": 30,
 			"darkvision": 60,
 			"traitTags": [
-				"修整强化",
-				"天生护甲"
+				"Improved Resting",
+				"Natural Armor"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -14330,7 +14330,7 @@
 			},
 			"darkvision": 60,
 			"traitTags": [
-				"罕见种族"
+				"Uncommon Race"
 			],
 			"languageProficiencies": [
 				{
@@ -14339,7 +14339,7 @@
 				}
 			],
 			"resist": [
-				"火焰"
+				"fire"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -14654,7 +14654,7 @@
 					},
 					"darkvision": 120,
 					"resist": [
-						"毒素"
+						"poison"
 					],
 					"additionalSpells": [
 						{
@@ -14711,7 +14711,7 @@
 						}
 					},
 					"resist": [
-						"暗蚀"
+						"necrotic"
 					],
 					"additionalSpells": [
 						{
@@ -14768,7 +14768,7 @@
 						}
 					},
 					"resist": [
-						"火焰"
+						"fire"
 					],
 					"additionalSpells": [
 						{
@@ -14819,19 +14819,19 @@
 			],
 			"speed": 30,
 			"traitTags": [
-				"天生护甲",
-				"天生武器"
+				"Natural Armor",
+				"Natural Weapon"
 			],
 			"skillProficiencies": [
 				{
 					"choose": {
 						"from": [
-							"驯兽",
-							"医药",
-							"自然",
-							"察觉",
-							"隐匿",
-							"求生"
+							"animal handling",
+							"medicine",
+							"nature",
+							"perception",
+							"stealth",
+							"survival"
 						]
 					}
 				}
@@ -14923,8 +14923,8 @@
 				"max": 50
 			},
 			"traitTags": [
-				"天生护甲",
-				"天生武器"
+				"Natural Armor",
+				"Natural Weapon"
 			],
 			"skillProficiencies": [
 				{
@@ -15076,10 +15076,10 @@
 			},
 			"darkvision": 60,
 			"traitTags": [
-				"水陆两栖"
+				"Amphibious"
 			],
 			"resist": [
-				"寒冷"
+				"cold"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -15208,7 +15208,7 @@
 			},
 			"darkvision": 60,
 			"traitTags": [
-				"水陆两栖"
+				"Amphibious"
 			],
 			"languageProficiencies": [
 				{
@@ -15217,7 +15217,7 @@
 				}
 			],
 			"resist": [
-				"寒冷"
+				"cold"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -15348,9 +15348,9 @@
 			],
 			"darkvision": 60,
 			"traitTags": [
-				"天生护甲",
-				"NPC种族",
-				"日照敏感"
+				"Natural Armor",
+				"NPC Race",
+				"Sunlight Sensitivity"
 			],
 			"languageProficiencies": [
 				{
@@ -15441,7 +15441,7 @@
 				}
 			],
 			"resist": [
-				"暗蚀"
+				"necrotic"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -15535,19 +15535,19 @@
 				"max": 500
 			},
 			"traitTags": [
-				"技能加值骰",
-				"工具加值骰"
+				"Skill Bonus Dice",
+				"Tool Bonus Dice"
 			],
 			"skillProficiencies": [
 				{
 					"choose": {
 						"from": [
-							"奥秘",
-							"历史",
-							"调查",
-							"医药",
-							"表演",
-							"巧手"
+							"arcana",
+							"history",
+							"investigation",
+							"medicine",
+							"performance",
+							"sleight of hand"
 						]
 					}
 				}
@@ -15822,8 +15822,8 @@
 			],
 			"speed": 30,
 			"traitTags": [
-				"修整强化",
-				"天生护甲"
+				"Improved Resting",
+				"Natural Armor"
 			],
 			"skillProficiencies": [
 				{
@@ -15836,7 +15836,7 @@
 				}
 			],
 			"resist": [
-				"毒素"
+				"poison"
 			],
 			"sizeEntry": {
 				"ENG_name": "Size:",
@@ -15930,8 +15930,8 @@
 				"max": 30
 			},
 			"traitTags": [
-				"修整强化",
-				"天生护甲"
+				"Improved Resting",
+				"Natural Armor"
 			],
 			"skillProficiencies": [
 				{
@@ -15950,10 +15950,10 @@
 				}
 			],
 			"resist": [
-				"毒素"
+				"poison"
 			],
 			"conditionImmune": [
-				"疾病"
+				"disease"
 			],
 			"entries": [
 				{
@@ -16002,7 +16002,7 @@
 					"name": "哨兵式休息",
 					"type": "entries",
 					"entries": [
-						"当你进行长休时，你必须至少花费6小时处于不活动、静止的状态，以此代替睡眠。在这种状态下，你看上去毫无生气，但这并不会使你陷入{@condition 昏迷}状态，而你可以像平常一样看到和听到。"
+						"当你进行长时间的休息时，你必须至少花费六个小时处于不活动、静止的状态，而不是睡觉。在这种状态下，你看起来是静止的，但这并不使你处于{@condition 昏迷}状态，你可以像平常一样看到和听到。"
 					]
 				},
 				{
@@ -16015,7 +16015,7 @@
 							"type": "list",
 							"items": [
 								"你的护甲等级获得+1加值。",
-								"你只能穿上你具有熟练项的护甲。要穿上盾牌以外的护甲，你必须花1小时将它融入你的身体，在此期间你必须与该护甲保持接触。要脱下护甲，你同样必须花1小时将其移除。你在以此方式穿着或脱卸护甲时可以进行休息。",
+								"你仅能装备你具有熟练的护甲。为了穿着除盾牌外的护甲，你必须花费1个小时的时间将它组装进你的身体，在此期间你必须与该护甲保持接触。为了脱卸这件护甲，你同样要花费1小时来将其移除。你能在以此法穿着或脱卸护甲时进行休息。",
 								"只要你还活着，融入你身体的护甲就不能在违背你意愿的情况下被移除。"
 							]
 						}
@@ -16026,7 +16026,7 @@
 					"name": "专业设计",
 					"type": "entries",
 					"entries": [
-						"你选择一项技能和一种工具，获得其熟练项。"
+						"你选择一项技能和一种工具，获得其熟练。"
 					]
 				},
 				{
@@ -16055,10 +16055,10 @@
 			"speed": 30,
 			"darkvision": 60,
 			"traitTags": [
-				"魔法抗性"
+				"Magic Resistance"
 			],
 			"resist": [
-				"毒素"
+				"poison"
 			],
 			"additionalSpells": [
 				{
@@ -16165,8 +16165,8 @@
 			},
 			"darkvision": 60,
 			"traitTags": [
-				"魔法抗性",
-				"怪物种族"
+				"Magic Resistance",
+				"Monstrous Race"
 			],
 			"languageProficiencies": [
 				{
@@ -16176,10 +16176,10 @@
 				}
 			],
 			"immune": [
-				"毒素"
+				"poison"
 			],
 			"conditionImmune": [
-				"中毒"
+				"poisoned"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -16229,7 +16229,7 @@
 					"name": "黑暗视觉",
 					"type": "entries",
 					"entries": [
-						"在微光光照下，你身边60尺内可以视为等同于明亮光照。而在黑暗中，该范围内可视为等同于微光光照。你无法在黑暗中分辨颜色，只能看到有灰度的黑白画面。"
+						"你在60尺范围内的微光光照下视物视为明亮光照，60尺黑暗下视物视为微光光照。你无法在黑暗中分辨颜色，只能看到灰色轮廓。"
 					]
 				},
 				{
@@ -16292,14 +16292,14 @@
 			],
 			"darkvision": 60,
 			"traitTags": [
-				"修整强化",
-				"NPC种族"
+				"Improved Resting",
+				"NPC Race"
 			],
 			"immune": [
-				"毒素"
+				"poison"
 			],
 			"conditionImmune": [
-				"中毒"
+				"poisoned"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -16614,7 +16614,7 @@
 								"savingThrow": "Dexterity"
 							},
 							"resist": [
-								"强酸"
+								"acid"
 							]
 						},
 						{
@@ -16625,7 +16625,7 @@
 								"savingThrow": "Dexterity"
 							},
 							"resist": [
-								"闪电"
+								"lightning"
 							]
 						},
 						{
@@ -16636,7 +16636,7 @@
 								"savingThrow": "Dexterity"
 							},
 							"resist": [
-								"火焰"
+								"fire"
 							]
 						},
 						{
@@ -16647,7 +16647,7 @@
 								"savingThrow": "Dexterity"
 							},
 							"resist": [
-								"闪电"
+								"lightning"
 							]
 						},
 						{
@@ -16658,7 +16658,7 @@
 								"savingThrow": "Dexterity"
 							},
 							"resist": [
-								"强酸"
+								"acid"
 							]
 						},
 						{
@@ -16669,7 +16669,7 @@
 								"savingThrow": "Dexterity"
 							},
 							"resist": [
-								"火焰"
+								"fire"
 							]
 						},
 						{
@@ -16680,7 +16680,7 @@
 								"savingThrow": "Constitution"
 							},
 							"resist": [
-								"毒素"
+								"poison"
 							]
 						},
 						{
@@ -16691,7 +16691,7 @@
 								"savingThrow": "Dexterity"
 							},
 							"resist": [
-								"火焰"
+								"fire"
 							]
 						},
 						{
@@ -16702,7 +16702,7 @@
 								"savingThrow": "Constitution"
 							},
 							"resist": [
-								"寒冷"
+								"cold"
 							]
 						},
 						{
@@ -16713,7 +16713,7 @@
 								"savingThrow": "Constitution"
 							},
 							"resist": [
-								"寒冷"
+								"cold"
 							]
 						}
 					]
@@ -17209,7 +17209,7 @@
 			],
 			"darkvision": 120,
 			"traitTags": [
-				"日照敏感"
+				"Sunlight Sensitivity"
 			],
 			"languageProficiencies": [
 				{
@@ -17351,9 +17351,9 @@
 				}
 			],
 			"traitTags": [
-				"龙纹",
-				"技能加值骰",
-				"工具加值骰"
+				"Dragonmark",
+				"Skill Bonus Dice",
+				"Tool Bonus Dice"
 			],
 			"additionalSpells": [
 				{
@@ -17390,7 +17390,7 @@
 			"entries": [
 				{
 					"ENG_name": "Warder's Intuition",
-					"name": "守卫直觉",
+					"name": "御护直觉",
 					"type": "entries",
 					"entries": [
 						"当你进行智力（{@skill 调查}）检定或使用{@item 盗贼工具|PHB}进行属性检定时，你可以掷一个{@dice d4}并将掷骰结果添加到属性检定中。"
@@ -17398,7 +17398,7 @@
 				},
 				{
 					"ENG_name": "Wards and Seals",
-					"name": "警卫封印",
+					"name": "缄守封护",
 					"type": "entries",
 					"entries": [
 						"你能够通过此特性施放{@spell 警报术}和{@spell 法师护甲}法术。从3级起，你还能通过此特性施放{@spell 秘法锁}法术。一旦你通过此特性施放了前述法术中的任何一个，在完成一次长休前，你无法通过此特性再次施放那个法术。对你而言，这些法术的施法属性是智力，通过此特性施放这些法术时，无需材料成分。"
@@ -17515,7 +17515,7 @@
 			},
 			"darkvision": 120,
 			"traitTags": [
-				"日照敏感"
+				"Sunlight Sensitivity"
 			],
 			"weaponProficiencies": [
 				{
@@ -17812,8 +17812,8 @@
 				}
 			],
 			"traitTags": [
-				"龙纹",
-				"技能加值骰"
+				"Dragonmark",
+				"Skill Bonus Dice"
 			],
 			"additionalSpells": [
 				{
@@ -17858,7 +17858,7 @@
 			"entries": [
 				{
 					"ENG_name": "Cunning Intuition",
-					"name": "狡诈直觉",
+					"name": "狡黠直觉",
 					"type": "entries",
 					"entries": [
 						"当你进行魅力（{@skill 表演}）或敏捷（{@skill 隐匿}）检定时，你可以掷一个{@dice d4}并将掷骰结果添加到属性检定中。"
@@ -18013,7 +18013,7 @@
 				"weightMod": "1d4"
 			},
 			"traitTags": [
-				"水陆两栖"
+				"Amphibious"
 			],
 			"languageProficiencies": [
 				{
@@ -18088,7 +18088,7 @@
 				"weightMod": "1d4"
 			},
 			"resist": [
-				"暗蚀"
+				"necrotic"
 			],
 			"entries": [
 				{
@@ -18312,7 +18312,7 @@
 			],
 			"darkvision": 120,
 			"traitTags": [
-				"日照敏感"
+				"Sunlight Sensitivity"
 			],
 			"weaponProficiencies": [
 				{
@@ -18401,8 +18401,8 @@
 				}
 			],
 			"traitTags": [
-				"技能熟练",
-				"工具熟练"
+				"Skill Proficiency",
+				"Tool Proficiency"
 			],
 			"skillToolLanguageProficiencies": [
 				{
@@ -18539,7 +18539,7 @@
 			],
 			"darkvision": 60,
 			"resist": [
-				"火焰"
+				"fire"
 			],
 			"additionalSpells": [
 				{
@@ -18609,10 +18609,10 @@
 				}
 			],
 			"traitTags": [
-				"水陆两栖"
+				"Amphibious"
 			],
 			"resist": [
-				"强酸"
+				"acid"
 			],
 			"additionalSpells": [
 				{
@@ -18679,7 +18679,7 @@
 			"page": 16,
 			"speed": 35,
 			"resist": [
-				"闪电"
+				"lightning"
 			],
 			"additionalSpells": [
 				{
@@ -18802,7 +18802,7 @@
 			"raceSource": "MPMM",
 			"page": 17,
 			"resist": [
-				"火焰"
+				"fire"
 			],
 			"additionalSpells": [
 				{
@@ -18870,10 +18870,10 @@
 				"swim": true
 			},
 			"traitTags": [
-				"水陆两栖"
+				"Amphibious"
 			],
 			"resist": [
-				"强酸"
+				"acid"
 			],
 			"additionalSpells": [
 				{
@@ -18967,8 +18967,8 @@
 				"weightMod": "2d4"
 			},
 			"traitTags": [
-				"技能熟练",
-				"工具熟练"
+				"Skill Proficiency",
+				"Tool Proficiency"
 			],
 			"weaponProficiencies": [
 				{
@@ -19401,9 +19401,9 @@
 				}
 			],
 			"traitTags": [
-				"龙纹",
-				"技能加值骰",
-				"工具加值骰"
+				"Dragonmark",
+				"Skill Bonus Dice",
+				"Tool Bonus Dice"
 			],
 			"additionalSpells": [
 				{
@@ -19463,7 +19463,7 @@
 				},
 				{
 					"ENG_name": "Scribe's Insight",
-					"name": "文员领悟",
+					"name": "文员洞见",
 					"type": "entries",
 					"entries": [
 						"你知晓戏法{@spell 传讯术}。你还可以通过此特性施放{@spell 通晓语言}一次，并在完成短休或长休后恢复该施法能力。从3级开始，你可以通过此特性施放法术{@spell 魔嘴术}，并在完成长休后恢复该施法能力。智力是你施展这些法术的施法属性。"
@@ -19960,8 +19960,8 @@
 				}
 			],
 			"traitTags": [
-				"龙纹",
-				"技能加值骰"
+				"Dragonmark",
+				"Skill Bonus Dice"
 			],
 			"skillProficiencies": null,
 			"additionalSpells": [
@@ -20090,13 +20090,13 @@
 				}
 			],
 			"traitTags": [
-				"龙纹",
-				"技能加值骰",
-				"工具加值骰"
+				"Dragonmark",
+				"Skill Bonus Dice",
+				"Tool Bonus Dice"
 			],
 			"skillProficiencies": null,
 			"resist": [
-				"闪电"
+				"lightning"
 			],
 			"additionalSpells": [
 				{
@@ -20132,7 +20132,7 @@
 			"entries": [
 				{
 					"ENG_name": "Windwright's Intuition",
-					"name": "驭风者直觉",
+					"name": "风骑直觉",
 					"type": "entries",
 					"entries": [
 						"当你进行敏捷（{@skill 特技}）检定或任何涉及{@item 领航工具|PHB}的属性检定时，你可以投掷一枚{@dice d4}并将骰出的数值添加到该属性检定中。"
@@ -20519,8 +20519,8 @@
 				}
 			],
 			"traitTags": [
-				"龙纹",
-				"技能加值骰"
+				"Dragonmark",
+				"Skill Bonus Dice"
 			],
 			"skillProficiencies": null,
 			"languageProficiencies": [
@@ -20585,7 +20585,7 @@
 				},
 				{
 					"ENG_name": "Hunter's Intuition",
-					"name": "猎人直觉",
+					"name": "猎手直觉",
 					"type": "entries",
 					"entries": [
 						"当你进行感知（{@skill 察觉}）或感知（{@skill 求生}）检定时，你可以投掷一枚{@dice d4}并将骰值添加到该属性检定中。"
@@ -20596,7 +20596,7 @@
 				},
 				{
 					"ENG_name": "Finder's Magic",
-					"name": "寻者魔法",
+					"name": "探寻魔法",
 					"type": "entries",
 					"entries": [
 						"你可以通过此特性施放{@spell 猎人印记}法术。从3级开始，你还可以通过此特性施放{@spell 物件定位术}法术。每当你通过此特性施放其中一个法术后，在完成一次长休前都无法再次通过此特性施放该法术。这些法术的施法属性是感知。"
@@ -20796,9 +20796,9 @@
 				}
 			],
 			"traitTags": [
-				"龙纹",
-				"技能加值骰",
-				"工具加值骰"
+				"Dragonmark",
+				"Skill Bonus Dice",
+				"Tool Bonus Dice"
 			],
 			"additionalSpells": [
 				{
@@ -20841,7 +20841,7 @@
 			"entries": [
 				{
 					"ENG_name": "Medical Intuition",
-					"name": "医疗直觉",
+					"name": "医学直觉",
 					"type": "entries",
 					"entries": [
 						"当你进行感知（{@skill 医药}）检定或使用{@item 草药工具|phb}进行属性检定时，你可以投掷一枚{@dice d4}并将骰出的数值添加到属性检定中。"
@@ -20918,9 +20918,9 @@
 				}
 			],
 			"traitTags": [
-				"龙纹",
-				"技能加值骰",
-				"工具加值骰"
+				"Dragonmark",
+				"Skill Bonus Dice",
+				"Tool Bonus Dice"
 			],
 			"additionalSpells": [
 				{
@@ -21033,7 +21033,7 @@
 				}
 			],
 			"resist": [
-				"毒素"
+				"poison"
 			],
 			"entries": [
 				{
@@ -21204,8 +21204,8 @@
 				}
 			],
 			"traitTags": [
-				"龙纹",
-				"技能加值骰"
+				"Dragonmark",
+				"Skill Bonus Dice"
 			],
 			"additionalSpells": [
 				{
@@ -21341,9 +21341,9 @@
 				}
 			],
 			"traitTags": [
-				"龙纹",
-				"技能加值骰",
-				"工具加值骰"
+				"Dragonmark",
+				"Skill Bonus Dice",
+				"Tool Bonus Dice"
 			],
 			"toolProficiencies": [
 				{
@@ -21481,7 +21481,7 @@
 				}
 			],
 			"traitTags": [
-				"龙纹"
+				"Dragonmark"
 			],
 			"additionalSpells": [
 				{
@@ -21603,8 +21603,8 @@
 				}
 			],
 			"traitTags": [
-				"龙纹",
-				"技能加值骰"
+				"Dragonmark",
+				"Skill Bonus Dice"
 			],
 			"additionalSpells": [
 				{
@@ -21640,7 +21640,7 @@
 			"entries": [
 				{
 					"ENG_name": "Sentinel's Intuition",
-					"name": "守卫直觉",
+					"name": "哨戒直觉",
 					"type": "entries",
 					"entries": [
 						"当你进行感知（{@skill 洞悉}）或感知（{@skill 察觉}）检定时，你可以投掷一枚{@dice d4}骰子并将骰面数字添加到该属性检定中。"
@@ -21656,7 +21656,7 @@
 				},
 				{
 					"ENG_name": "Vigilant Guardian",
-					"name": "警醒护卫",
+					"name": "警戒哨卫",
 					"type": "entries",
 					"entries": [
 						"当你5尺内一个你能看见的生物被攻击检定命中时，你可以使用你的反应与该生物交换位置，并由你代替该生物承受此次攻击命中。一旦你使用了此特性，直到你完成一次长休前都无法再次使用。"
@@ -21782,8 +21782,8 @@
 			],
 			"darkvision": 60,
 			"traitTags": [
-				"龙纹",
-				"技能加值骰"
+				"Dragonmark",
+				"Skill Bonus Dice"
 			],
 			"languageProficiencies": [
 				{
@@ -21840,7 +21840,7 @@
 				},
 				{
 					"ENG_name": "Hunter's Intuition",
-					"name": "猎人直觉",
+					"name": "猎手直觉",
 					"type": "entries",
 					"entries": [
 						"当你进行感知（{@skill 察觉}）或感知（{@skill 求生}）检定时，你可以投掷一枚{@dice d4}并将骰值添加到该属性检定中。"
@@ -21848,7 +21848,7 @@
 				},
 				{
 					"ENG_name": "Finder's Magic",
-					"name": "寻者魔法",
+					"name": "探寻魔法",
 					"type": "entries",
 					"entries": [
 						"你可以通过此特性施放{@spell 猎人印记}法术。从3级开始，你还可以通过此特性施放{@spell 物件定位术}法术。每当你通过此特性施放其中一个法术后，在完成一次长休前都无法再次通过此特性施放该法术。这些法术的施法属性是感知。"
@@ -22003,8 +22003,8 @@
 				}
 			],
 			"traitTags": [
-				"技能熟练",
-				"工具熟练"
+				"Skill Proficiency",
+				"Tool Proficiency"
 			],
 			"skillToolLanguageProficiencies": [
 				{
@@ -22394,7 +22394,7 @@
 				}
 			],
 			"traitTags": [
-				"天生护甲"
+				"Natural Armor"
 			],
 			"skillProficiencies": [
 				{
@@ -22440,7 +22440,7 @@
 				}
 			],
 			"traitTags": [
-				"天生武器"
+				"Natural Weapon"
 			],
 			"skillProficiencies": [
 				{
@@ -22461,7 +22461,7 @@
 					"name": "化形特性",
 					"type": "entries",
 					"entries": [
-						"处于化形状态时，你可以使用你伸长的长牙作为附赠动作进行一次徒手打击。若用长牙命中，你可以造成{@damage 1d6} + 力量调整值的穿刺伤害，而非徒手打击通常的钝击伤害。"
+						"处于化形状态时，你可以使用你的长牙作为附赠动作进行一次徒手打击。若用长牙命中，你可以造成{@damage 1d6} + 力量调整值的穿刺伤害，而非徒手打击通常的钝击伤害。"
 					]
 				}
 			],
@@ -22539,7 +22539,7 @@
 					"name": "自然追踪者",
 					"type": "entries",
 					"entries": [
-						"你拥有{@skill 求生}技能的熟练项。"
+						"你在{@skill 求生}技能上具有熟练项。"
 					]
 				},
 				{
@@ -23188,7 +23188,7 @@
 				}
 			],
 			"traitTags": [
-				"罕见种族"
+				"Uncommon Race"
 			],
 			"additionalSpells": null,
 			"entries": [

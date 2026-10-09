@@ -211,7 +211,7 @@
 				"D"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -272,18 +272,18 @@
 			],
 			"passive": 6,
 			"immune": [
-				"毒素",
-				"心灵"
+				"poison",
+				"psychic"
 			],
 			"conditionImmune": [
-				"目盲",
-				"魅惑",
-				"耳聋",
-				"力竭",
-				"恐慌",
-				"麻痹",
-				"石化",
-				"中毒"
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
 			],
 			"cr": "1",
 			"trait": [
@@ -319,13 +319,13 @@
 				}
 			],
 			"traitTags": [
-				"魔力依赖"
+				"Antimagic Susceptibility"
 			],
 			"senseTags": [
 				"B"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"damageTags": [
 				"B"
@@ -334,7 +334,7 @@
 				"MW"
 			],
 			"savingThrowForced": [
-				"体质"
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluffImages": true,

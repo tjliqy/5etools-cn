@@ -113,7 +113,7 @@
 					"name": "异种魔法",
 					"type": "entries",
 					"entries": [
-						"你知晓一道由你从{@filter 术士法术列表|spells|level=0|class=术士}中选择的戏法。此外，从该法术列表中选择一个一环法术。你总是准备着该法术。你可以无需法术位施放该法术一次，并在完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}后恢复以此方式施放该法术的能力。你也可以使用你拥有的任何法术位来施放该法术。体质是你施放该法术的施法属性。"
+						"你从{@filter 从术士法术列表中选择的戏法|spells|level=0|class=术士}。此外，从该法术列表中选择一个一环法术。你总是准备着该法术。你可以无需法术位施放该法术一次，并在完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}后恢复以此方式施放该法术的能力。你也可以使用你拥有的任何法术位来施放该法术。体质是你施放该法术的施法属性。"
 					]
 				},
 				{
@@ -1231,7 +1231,7 @@
 				}
 			],
 			"traitTags": [
-				"速度"
+				"Speed"
 			],
 			"entries": [
 				"你获得以下增益。",
@@ -1472,7 +1472,7 @@
 				}
 			],
 			"immune": [
-				"光耀"
+				"radiant"
 			],
 			"entries": [
 				"你获得以下增益。",
@@ -2480,10 +2480,10 @@
 				}
 			],
 			"immune": [
-				"毒素"
+				"poison"
 			],
 			"conditionImmune": [
-				"中毒"
+				"poisoned"
 			],
 			"entries": [
 				"你获得以下增益。",
@@ -3078,7 +3078,7 @@
 				}
 			],
 			"traitTags": [
-				"速度"
+				"Speed"
 			],
 			"entries": [
 				"你获得以下增益。",
@@ -3168,7 +3168,7 @@
 				}
 			],
 			"conditionImmune": [
-				"恐慌"
+				"frightened"
 			],
 			"entries": [
 				"你获得以下增益。",
@@ -3268,8 +3268,8 @@
 				}
 			],
 			"resist": [
-				"闪电",
-				"雷鸣"
+				"lightning",
+				"thunder"
 			],
 			"entries": [
 				"你获得以下增益。",
@@ -3406,8 +3406,8 @@
 				}
 			],
 			"resist": [
-				"寒冷",
-				"暗蚀"
+				"cold",
+				"necrotic"
 			],
 			"entries": [
 				"你获得以下增益。",
@@ -5386,7 +5386,7 @@
 				}
 			],
 			"resist": [
-				"火焰"
+				"fire"
 			],
 			"entries": [
 				"你展现出象征着火巨人的炽烈战斗方式，使得你获得下列增益：",
@@ -6109,7 +6109,7 @@
 				}
 			],
 			"resist": [
-				"寒冷"
+				"cold"
 			],
 			"entries": [
 				"你展现出象征着霜巨人的冰冷力量，使得你获得下列增益：",
@@ -7667,8 +7667,8 @@
 				}
 			],
 			"resist": [
-				"寒冷",
-				"毒素"
+				"cold",
+				"poison"
 			],
 			"entries": [
 				"邪魔之血令你变得无比强大，为你解锁一些邪魔拥有的强大韧性。你获得下列增益：",
@@ -8014,11 +8014,11 @@
 				{
 					"choose": {
 						"from": [
-							"奥秘",
-							"历史",
-							"调查",
-							"自然",
-							"宗教"
+							"arcana",
+							"history",
+							"investigation",
+							"nature",
+							"religion"
 						]
 					}
 				}
@@ -10113,7 +10113,7 @@
 				}
 			],
 			"traitTags": [
-				"速度"
+				"Speed"
 			],
 			"additionalSpells": [
 				{
@@ -10634,7 +10634,7 @@
 				}
 			],
 			"resist": [
-				"闪电"
+				"lightning"
 			],
 			"additionalSpells": [
 				{
@@ -11106,7 +11106,7 @@
 				"飙速跑者|XPHB"
 			],
 			"traitTags": [
-				"速度"
+				"Speed"
 			],
 			"entries": [
 				"你十分灵敏而快速。你获得下列增益：",
@@ -11559,9 +11559,9 @@
 				{
 					"choose": {
 						"from": [
-							"洞悉",
-							"调查",
-							"察觉"
+							"insight",
+							"investigation",
+							"perception"
 						]
 					}
 				}
@@ -11875,7 +11875,7 @@
 				}
 			],
 			"traitTags": [
-				"伤害抗性"
+				"Damage Resistance"
 			],
 			"entries": [
 				"你可以从多元宇宙之中摄取能量，并能在宇宙中的极端环境中生存，还能穿梭于多元宇宙的无限界域之中。你获得下列增益：",
@@ -12177,24 +12177,24 @@
 				{
 					"choose": {
 						"from": [
-							"运动",
-							"特技",
-							"巧手",
-							"隐匿",
-							"奥秘",
-							"历史",
-							"调查",
-							"自然",
-							"宗教",
-							"驯兽",
-							"洞悉",
-							"医药",
-							"察觉",
-							"生存",
-							"欺瞒",
-							"威吓",
-							"表演",
-							"游说"
+							"athletics",
+							"acrobatics",
+							"sleight of hand",
+							"stealth",
+							"arcana",
+							"history",
+							"investigation",
+							"nature",
+							"religion",
+							"animal handling",
+							"insight",
+							"medicine",
+							"perception",
+							"survival",
+							"deception",
+							"intimidation",
+							"performance",
+							"persuasion"
 						]
 					}
 				}
@@ -12306,9 +12306,9 @@
 				{
 					"choose": {
 						"from": [
-							"洞悉",
-							"表演",
-							"游说"
+							"insight",
+							"performance",
+							"persuasion"
 						]
 					}
 				}
@@ -13777,24 +13777,24 @@
 				{
 					"choose": {
 						"from": [
-							"运动",
-							"特技",
-							"巧手",
-							"隐匿",
-							"奥秘",
-							"历史",
-							"调查",
-							"自然",
-							"宗教",
-							"驯兽",
-							"洞悉",
-							"医药",
-							"察觉",
-							"生存",
-							"欺瞒",
-							"威吓",
-							"表演",
-							"游说"
+							"athletics",
+							"acrobatics",
+							"sleight of hand",
+							"stealth",
+							"arcana",
+							"history",
+							"investigation",
+							"nature",
+							"religion",
+							"animal handling",
+							"insight",
+							"medicine",
+							"perception",
+							"survival",
+							"deception",
+							"intimidation",
+							"performance",
+							"persuasion"
 						]
 					}
 				}
@@ -14211,7 +14211,7 @@
 				}
 			],
 			"traitTags": [
-				"速度"
+				"Speed"
 			],
 			"entries": [
 				"你获得以下增益。",
@@ -14624,14 +14624,14 @@
 				}
 			],
 			"traitTags": [
-				"速度"
+				"Speed"
 			],
 			"skillProficiencies": [
 				{
 					"choose": {
 						"from": [
-							"特技",
-							"运动"
+							"acrobatics",
+							"athletics"
 						]
 					}
 				}
@@ -15636,16 +15636,16 @@
 				{
 					"choose": {
 						"from": [
-							"奥秘",
-							"欺瞒",
-							"历史",
-							"威吓",
-							"洞悉",
-							"调查",
-							"自然",
-							"宗教",
-							"察觉",
-							"游说"
+							"arcana",
+							"deception",
+							"history",
+							"intimidation",
+							"insight",
+							"investigation",
+							"nature",
+							"religion",
+							"perception",
+							"persuasion"
 						]
 					}
 				}
@@ -16181,7 +16181,7 @@
 			"page": 28,
 			"category": "O",
 			"traitTags": [
-				"速度"
+				"Speed"
 			],
 			"entries": [
 				"你获得以下增益。",

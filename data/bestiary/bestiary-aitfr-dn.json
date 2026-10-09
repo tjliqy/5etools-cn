@@ -46,7 +46,7 @@
 			],
 			"passive": 15,
 			"vulnerable": [
-				"毒素"
+				"poison"
 			],
 			"cr": "8",
 			"trait": [
@@ -90,14 +90,14 @@
 			],
 			"tokenCustom": true,
 			"traitTags": [
-				"不死坚韧"
+				"Undead Fortitude"
 			],
 			"senseTags": [
 				"B",
 				"D"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"damageTags": [
 				"B",
@@ -109,11 +109,11 @@
 				"RCH"
 			],
 			"conditionInflict": [
-				"受擒",
-				"束缚"
+				"grappled",
+				"restrained"
 			],
 			"savingThrowForced": [
-				"体质"
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -200,8 +200,8 @@
 			],
 			"tokenCustom": true,
 			"actionTags": [
-				"多重攻击",
-				"格挡"
+				"Multiattack",
+				"Parry"
 			],
 			"languageTags": [
 				"C",
@@ -272,19 +272,19 @@
 			"resist": [
 				{
 					"resist": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "来自非魔法攻击",
 					"cond": true
 				}
 			],
 			"immune": [
-				"毒素"
+				"poison"
 			],
 			"conditionImmune": [
-				"魅惑"
+				"charmed"
 			],
 			"languages": [
 				"通用语",
@@ -395,14 +395,14 @@
 				"长弓|phb"
 			],
 			"traitTags": [
-				"传奇抗性",
-				"日照敏感"
+				"Legendary Resistances",
+				"Sunlight Sensitivity"
 			],
 			"senseTags": [
 				"D"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -426,19 +426,19 @@
 				"RW"
 			],
 			"conditionInflict": [
-				"受擒",
-				"石化",
-				"束缚"
+				"grappled",
+				"petrified",
+				"restrained"
 			],
 			"conditionInflictLegendary": [
-				"中毒"
+				"poisoned"
 			],
 			"savingThrowForced": [
-				"体质"
+				"constitution"
 			],
 			"savingThrowForcedLegendary": [
-				"体质",
-				"敏捷"
+				"constitution",
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -480,14 +480,14 @@
 			],
 			"passive": 16,
 			"immune": [
-				"毒素"
+				"poison"
 			],
 			"vulnerable": [
-				"钝击"
+				"bludgeoning"
 			],
 			"conditionImmune": [
-				"力竭",
-				"中毒"
+				"exhaustion",
+				"poisoned"
 			],
 			"cr": "6",
 			"action": [
@@ -518,7 +518,7 @@
 				"D"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"damageTags": [
 				"B",
@@ -529,7 +529,7 @@
 				"MW"
 			],
 			"savingThrowForced": [
-				"敏捷"
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true

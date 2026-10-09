@@ -244,9 +244,9 @@
 			"resist": [
 				{
 					"resist": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "来自非魔法武器",
 					"cond": true
@@ -288,7 +288,7 @@
 				}
 			],
 			"traitTags": [
-				"日照敏感"
+				"Sunlight Sensitivity"
 			],
 			"senseTags": [
 				"SD"
@@ -302,11 +302,11 @@
 				"MW"
 			],
 			"conditionInflict": [
-				"倒地"
+				"prone"
 			],
 			"savingThrowForced": [
-				"体质",
-				"力量"
+				"constitution",
+				"strength"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -440,23 +440,23 @@
 			],
 			"passive": 10,
 			"immune": [
-				"火焰",
-				"毒素",
+				"fire",
+				"poison",
 				{
 					"immune": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "来自非魔法攻击",
 					"cond": true
 				}
 			],
 			"conditionImmune": [
-				"魅惑",
-				"恐慌",
-				"麻痹",
-				"中毒"
+				"charmed",
+				"frightened",
+				"paralyzed",
+				"poisoned"
 			],
 			"cr": "30",
 			"trait": [
@@ -529,28 +529,28 @@
 				}
 			],
 			"traitTags": [
-				"传奇抗性",
-				"魔法抗性",
-				"攻城怪物"
+				"Legendary Resistances",
+				"Magic Resistance",
+				"Siege Monster"
 			],
 			"senseTags": [
 				"B"
 			],
 			"actionTags": [
-				"骇人威仪",
-				"吞咽"
+				"Frightful Presence",
+				"Swallow"
 			],
 			"damageTags": [
 				"A"
 			],
 			"conditionInflict": [
-				"目盲",
-				"恐慌",
-				"束缚"
+				"blinded",
+				"frightened",
+				"restrained"
 			],
 			"savingThrowForced": [
-				"体质",
-				"感知"
+				"constitution",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -607,9 +607,9 @@
 				}
 			},
 			"actionTags": [
-				"骇人威仪",
-				"多重攻击",
-				"吞咽"
+				"Frightful Presence",
+				"Multiattack",
+				"Swallow"
 			],
 			"damageTags": [
 				"A",
@@ -623,15 +623,15 @@
 				"RCH"
 			],
 			"conditionInflict": [
-				"目盲",
-				"恐慌",
-				"受擒",
-				"束缚"
+				"blinded",
+				"frightened",
+				"grappled",
+				"restrained"
 			],
 			"savingThrowForced": [
-				"体质",
-				"敏捷",
-				"感知"
+				"constitution",
+				"dexterity",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -685,9 +685,9 @@
 				}
 			},
 			"actionTags": [
-				"骇人威仪",
-				"多重攻击",
-				"吞咽"
+				"Frightful Presence",
+				"Multiattack",
+				"Swallow"
 			],
 			"damageTags": [
 				"A",
@@ -699,16 +699,16 @@
 				"RCH"
 			],
 			"conditionInflict": [
-				"目盲",
-				"恐慌",
-				"受擒",
-				"倒地",
-				"束缚"
+				"blinded",
+				"frightened",
+				"grappled",
+				"prone",
+				"restrained"
 			],
 			"savingThrowForced": [
-				"体质",
-				"力量",
-				"感知"
+				"constitution",
+				"strength",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -769,15 +769,15 @@
 				"swim": 60
 			},
 			"traitTags": [
-				"屏息",
-				"传奇抗性",
-				"魔法抗性",
-				"攻城怪物"
+				"Hold Breath",
+				"Legendary Resistances",
+				"Magic Resistance",
+				"Siege Monster"
 			],
 			"actionTags": [
-				"骇人威仪",
-				"多重攻击",
-				"吞咽"
+				"Frightful Presence",
+				"Multiattack",
+				"Swallow"
 			],
 			"damageTags": [
 				"A",
@@ -789,10 +789,10 @@
 				"RCH"
 			],
 			"conditionInflict": [
-				"目盲",
-				"恐慌",
-				"受擒",
-				"束缚"
+				"blinded",
+				"frightened",
+				"grappled",
+				"restrained"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -879,9 +879,9 @@
 				}
 			},
 			"actionTags": [
-				"骇人威仪",
-				"多重攻击",
-				"吞咽"
+				"Frightful Presence",
+				"Multiattack",
+				"Swallow"
 			],
 			"damageTags": [
 				"A",
@@ -894,16 +894,16 @@
 				"RW"
 			],
 			"conditionInflict": [
-				"目盲",
-				"恐慌",
-				"受擒",
-				"倒地",
-				"束缚"
+				"blinded",
+				"frightened",
+				"grappled",
+				"prone",
+				"restrained"
 			],
 			"savingThrowForced": [
-				"体质",
-				"力量",
-				"感知"
+				"constitution",
+				"strength",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -943,9 +943,9 @@
 				}
 			},
 			"actionTags": [
-				"骇人威仪",
-				"多重攻击",
-				"吞咽"
+				"Frightful Presence",
+				"Multiattack",
+				"Swallow"
 			],
 			"damageTags": [
 				"A",
@@ -957,15 +957,15 @@
 				"RCH"
 			],
 			"conditionInflict": [
-				"目盲",
-				"恐慌",
-				"受擒",
-				"束缚"
+				"blinded",
+				"frightened",
+				"grappled",
+				"restrained"
 			],
 			"savingThrowForced": [
-				"体质",
-				"力量",
-				"感知"
+				"constitution",
+				"strength",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -1023,12 +1023,12 @@
 				"fly": 60
 			},
 			"resist": [
-				"光耀"
+				"radiant"
 			],
 			"actionTags": [
-				"骇人威仪",
-				"多重攻击",
-				"吞咽"
+				"Frightful Presence",
+				"Multiattack",
+				"Swallow"
 			],
 			"damageTags": [
 				"A",
@@ -1041,10 +1041,10 @@
 				"RCH"
 			],
 			"conditionInflict": [
-				"目盲",
-				"恐慌",
-				"受擒",
-				"束缚"
+				"blinded",
+				"frightened",
+				"grappled",
+				"restrained"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -1167,7 +1167,7 @@
 				}
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"damageTags": [
 				"I",
@@ -1179,10 +1179,10 @@
 				"RW"
 			],
 			"conditionInflict": [
-				"目盲"
+				"blinded"
 			],
 			"savingThrowForced": [
-				"体质"
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -1300,11 +1300,11 @@
 				}
 			],
 			"traitTags": [
-				"传奇抗性"
+				"Legendary Resistances"
 			],
 			"actionTags": [
-				"多重攻击",
-				"吞咽"
+				"Multiattack",
+				"Swallow"
 			],
 			"damageTags": [
 				"A",
@@ -1316,17 +1316,17 @@
 				"RCH"
 			],
 			"conditionInflict": [
-				"目盲",
-				"恐慌",
-				"受擒",
-				"倒地",
-				"束缚"
+				"blinded",
+				"frightened",
+				"grappled",
+				"prone",
+				"restrained"
 			],
 			"savingThrowForced": [
-				"体质",
-				"敏捷",
-				"力量",
-				"感知"
+				"constitution",
+				"dexterity",
+				"strength",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -1692,16 +1692,16 @@
 			"resist": [
 				{
 					"resist": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "来自非魔法攻击",
 					"cond": true
 				}
 			],
 			"immune": [
-				"火焰"
+				"fire"
 			],
 			"languages": [
 				"巨猫头鹰语",
@@ -1755,15 +1755,15 @@
 				}
 			],
 			"traitTags": [
-				"自爆",
-				"飞掠",
-				"敏锐感官"
+				"Death Burst",
+				"Flyby",
+				"Keen Senses"
 			],
 			"senseTags": [
 				"SD"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -1780,11 +1780,11 @@
 				"MW"
 			],
 			"conditionInflict": [
-				"受擒",
-				"束缚"
+				"grappled",
+				"restrained"
 			],
 			"savingThrowForced": [
-				"敏捷"
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true,

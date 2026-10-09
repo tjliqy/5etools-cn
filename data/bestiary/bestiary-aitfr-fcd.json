@@ -96,7 +96,7 @@
 				"长剑|phb"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C"
@@ -167,9 +167,9 @@
 				},
 				{
 					"resist": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "（来自石肤术）",
 					"preNote": "非魔法的",
@@ -338,7 +338,7 @@
 				"匕首|phb"
 			],
 			"traitTags": [
-				"传奇抗性"
+				"Legendary Resistances"
 			],
 			"languageTags": [
 				"C",
@@ -367,19 +367,19 @@
 				"THW"
 			],
 			"conditionInflictSpell": [
-				"目盲",
-				"耳聋",
-				"恐慌",
-				"失能",
-				"隐形",
-				"束缚"
+				"blinded",
+				"deafened",
+				"frightened",
+				"incapacitated",
+				"invisible",
+				"restrained"
 			],
 			"savingThrowForcedSpell": [
-				"魅力",
-				"体质",
-				"敏捷",
-				"智力",
-				"感知"
+				"charisma",
+				"constitution",
+				"dexterity",
+				"intelligence",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true

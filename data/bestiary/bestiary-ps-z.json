@@ -79,21 +79,21 @@
 			],
 			"passive": 19,
 			"resist": [
-				"光耀",
+				"radiant",
 				{
 					"resist": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "来自非魔法攻击",
 					"cond": true
 				}
 			],
 			"conditionImmune": [
-				"魅惑",
-				"力竭",
-				"恐慌"
+				"charmed",
+				"exhaustion",
+				"frightened"
 			],
 			"languages": [
 				"所有",
@@ -174,13 +174,13 @@
 				}
 			],
 			"traitTags": [
-				"魔法抗性"
+				"Magic Resistance"
 			],
 			"senseTags": [
 				"SD"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"TP",
@@ -205,8 +205,8 @@
 				"RCH"
 			],
 			"savingThrowForcedSpell": [
-				"体质",
-				"感知"
+				"constitution",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -375,12 +375,12 @@
 			],
 			"passive": 13,
 			"immune": [
-				"毒素"
+				"poison"
 			],
 			"conditionImmune": [
-				"魅惑",
-				"麻痹",
-				"中毒"
+				"charmed",
+				"paralyzed",
+				"poisoned"
 			],
 			"languages": [
 				"天界语",
@@ -494,16 +494,16 @@
 				}
 			],
 			"traitTags": [
-				"魔法抗性",
-				"魔法武器",
-				"猛扑"
+				"Magic Resistance",
+				"Magic Weapons",
+				"Pounce"
 			],
 			"senseTags": [
 				"D"
 			],
 			"actionTags": [
-				"多重攻击",
-				"传送术"
+				"Multiattack",
+				"Teleport"
 			],
 			"languageTags": [
 				"CE",
@@ -520,14 +520,14 @@
 				"MW"
 			],
 			"conditionInflict": [
-				"倒地"
+				"prone"
 			],
 			"savingThrowForced": [
-				"力量"
+				"strength"
 			],
 			"savingThrowForcedSpell": [
-				"魅力",
-				"敏捷"
+				"charisma",
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -828,11 +828,11 @@
 			],
 			"passive": 19,
 			"resist": [
-				"寒冷"
+				"cold"
 			],
 			"immune": [
-				"闪电",
-				"雷鸣"
+				"lightning",
+				"thunder"
 			],
 			"languages": [
 				"通用语"
@@ -899,14 +899,14 @@
 				"path": "bestiary/kraken.opus"
 			},
 			"traitTags": [
-				"水陆两栖"
+				"Amphibious"
 			],
 			"senseTags": [
 				"SD"
 			],
 			"actionTags": [
-				"多重攻击",
-				"触须"
+				"Multiattack",
+				"Tentacles"
 			],
 			"languageTags": [
 				"C"
@@ -925,11 +925,11 @@
 				"RCH"
 			],
 			"conditionInflict": [
-				"受擒",
-				"束缚"
+				"grappled",
+				"restrained"
 			],
 			"savingThrowForced": [
-				"敏捷"
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true,

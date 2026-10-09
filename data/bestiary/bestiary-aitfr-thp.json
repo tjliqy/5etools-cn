@@ -38,10 +38,10 @@
 			],
 			"passive": 17,
 			"vulnerable": [
-				"光耀"
+				"radiant"
 			],
 			"conditionImmune": [
-				"恐慌"
+				"frightened"
 			],
 			"cr": "12",
 			"trait": [
@@ -136,15 +136,15 @@
 			],
 			"tokenCustom": true,
 			"traitTags": [
-				"虚体移动",
-				"传奇抗性",
-				"日照敏感"
+				"Incorporeal Movement",
+				"Legendary Resistances",
+				"Sunlight Sensitivity"
 			],
 			"senseTags": [
 				"SD"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"damageTags": [
 				"N",
@@ -157,11 +157,11 @@
 				"MW"
 			],
 			"conditionInflict": [
-				"恐慌"
+				"frightened"
 			],
 			"savingThrowForced": [
-				"敏捷",
-				"感知"
+				"dexterity",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -315,17 +315,17 @@
 				"MW"
 			],
 			"conditionInflictSpell": [
-				"魅惑",
-				"恐慌",
-				"隐形",
-				"麻痹"
+				"charmed",
+				"frightened",
+				"invisible",
+				"paralyzed"
 			],
 			"savingThrowForced": [
-				"感知"
+				"wisdom"
 			],
 			"savingThrowForcedSpell": [
-				"敏捷",
-				"感知"
+				"dexterity",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -383,9 +383,9 @@
 			"resist": [
 				{
 					"resist": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "来自非魔法攻击",
 					"cond": true
@@ -464,13 +464,13 @@
 			],
 			"tokenCustom": true,
 			"traitTags": [
-				"变形生物"
+				"Shapechanger"
 			],
 			"senseTags": [
 				"SD"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"TP",
@@ -483,14 +483,14 @@
 				"MW"
 			],
 			"conditionInflict": [
-				"隐形"
+				"invisible"
 			],
 			"conditionInflictSpell": [
-				"失能"
+				"incapacitated"
 			],
 			"savingThrowForcedSpell": [
-				"魅力",
-				"感知"
+				"charisma",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true

@@ -24,16 +24,16 @@
 				"source": "MM"
 			},
 			"immune": [
-				"毒素",
-				"心灵"
+				"poison",
+				"psychic"
 			],
 			"conditionImmune": [
-				"魅惑",
-				"力竭",
-				"恐慌",
-				"麻痹",
-				"石化",
-				"中毒"
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
 			],
 			"hasToken": true,
 			"hasFluffImages": true
@@ -181,8 +181,8 @@
 				"B"
 			],
 			"conditionInflict": [
-				"受擒",
-				"束缚"
+				"grappled",
+				"restrained"
 			],
 			"hasToken": true,
 			"hasFluffImages": true
@@ -310,8 +310,8 @@
 				"source": "MM"
 			},
 			"immune": [
-				"毒素",
-				"心灵"
+				"poison",
+				"psychic"
 			],
 			"tokenCustom": true,
 			"hasToken": true
@@ -644,10 +644,10 @@
 				"source": "MM"
 			},
 			"immune": [
-				"毒素"
+				"poison"
 			],
 			"conditionImmune": [
-				"中毒"
+				"poisoned"
 			],
 			"hasToken": true
 		}

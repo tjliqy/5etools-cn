@@ -31,14 +31,14 @@
 				}
 			},
 			"immune": [
-				"毒素",
-				"心灵"
+				"poison",
+				"psychic"
 			],
 			"conditionImmune": [
-				"魅惑",
-				"恐慌",
-				"麻痹",
-				"中毒"
+				"charmed",
+				"frightened",
+				"paralyzed",
+				"poisoned"
 			],
 			"tokenCustom": true,
 			"hasToken": true,
@@ -168,9 +168,9 @@
 				"E"
 			],
 			"immune": [
-				"火焰",
-				"毒素",
-				"心灵"
+				"fire",
+				"poison",
+				"psychic"
 			],
 			"tokenCustom": true,
 			"hasToken": true,
@@ -204,9 +204,9 @@
 				"E"
 			],
 			"immune": [
-				"火焰",
-				"毒素",
-				"心灵"
+				"fire",
+				"poison",
+				"psychic"
 			],
 			"tokenCustom": true,
 			"hasToken": true,
@@ -250,7 +250,7 @@
 				"E"
 			],
 			"immune": [
-				"火焰"
+				"fire"
 			],
 			"tokenCustom": true,
 			"hasToken": true,
@@ -284,11 +284,11 @@
 				"E"
 			],
 			"resist": [
-				"寒冷"
+				"cold"
 			],
 			"immune": [
-				"火焰",
-				"闪电"
+				"fire",
+				"lightning"
 			],
 			"tokenCustom": true,
 			"hasToken": true
@@ -321,7 +321,7 @@
 				"E"
 			],
 			"immune": [
-				"火焰"
+				"fire"
 			],
 			"tokenCustom": true,
 			"hasToken": true,
@@ -355,7 +355,7 @@
 				"E"
 			],
 			"immune": [
-				"火焰"
+				"fire"
 			],
 			"tokenCustom": true,
 			"hasToken": true
@@ -413,7 +413,7 @@
 			},
 			"passive": 16,
 			"immune": [
-				"火焰"
+				"fire"
 			],
 			"languages": [
 				"通用语",
@@ -499,10 +499,10 @@
 			],
 			"tokenCustom": true,
 			"traitTags": [
-				"传奇抗性"
+				"Legendary Resistances"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -520,13 +520,13 @@
 				"AOE"
 			],
 			"conditionInflictSpell": [
-				"隐形"
+				"invisible"
 			],
 			"savingThrowForced": [
-				"敏捷"
+				"dexterity"
 			],
 			"savingThrowForcedSpell": [
-				"感知"
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -571,15 +571,15 @@
 			},
 			"passive": 16,
 			"immune": [
-				"毒素"
+				"poison"
 			],
 			"conditionImmune": [
-				"魅惑",
-				"力竭",
-				"恐慌",
-				"麻痹",
-				"石化",
-				"中毒"
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
 			],
 			"languages": [
 				"能理解其创造者的语言但无法说话"
@@ -614,7 +614,7 @@
 			],
 			"tokenCustom": true,
 			"traitTags": [
-				"非凡本质"
+				"Unusual Nature"
 			],
 			"languageTags": [
 				"CS"
@@ -628,10 +628,10 @@
 				"MW"
 			],
 			"conditionInflict": [
-				"受擒"
+				"grappled"
 			],
 			"savingThrowForced": [
-				"力量"
+				"strength"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -683,15 +683,15 @@
 			],
 			"passive": 16,
 			"immune": [
-				"毒素"
+				"poison"
 			],
 			"conditionImmune": [
-				"魅惑",
-				"力竭",
-				"恐慌",
-				"麻痹",
-				"石化",
-				"中毒"
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
 			],
 			"languages": [
 				"能理解其创造者的语言但无法说话"
@@ -731,8 +731,8 @@
 			],
 			"tokenCustom": true,
 			"traitTags": [
-				"飞掠",
-				"非凡本质"
+				"Flyby",
+				"Unusual Nature"
 			],
 			"senseTags": [
 				"D"
@@ -929,9 +929,9 @@
 			],
 			"tokenCustom": true,
 			"savingThrowForcedSpell": [
-				"体质",
-				"敏捷",
-				"智力"
+				"constitution",
+				"dexterity",
+				"intelligence"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -1074,7 +1074,7 @@
 			],
 			"passive": 13,
 			"immune": [
-				"心灵"
+				"psychic"
 			],
 			"languages": [
 				"深潜语",
@@ -1410,7 +1410,7 @@
 			],
 			"tokenCustom": true,
 			"savingThrowForcedSpell": [
-				"体质"
+				"constitution"
 			],
 			"hasToken": true
 		},
@@ -1512,13 +1512,13 @@
 			"wis": 10,
 			"cha": 10,
 			"immune": [
-				"毒素",
-				"心灵",
+				"poison",
+				"psychic",
 				{
 					"immune": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "非精金武器且非魔法攻击的",
 					"cond": true
@@ -1585,7 +1585,7 @@
 			],
 			"passive": 13,
 			"immune": [
-				"心灵"
+				"psychic"
 			],
 			"languages": [
 				"天界语",
@@ -1648,7 +1648,7 @@
 				"D"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -1670,17 +1670,17 @@
 				"MW"
 			],
 			"conditionInflict": [
-				"中毒"
+				"poisoned"
 			],
 			"conditionInflictSpell": [
-				"魅惑"
+				"charmed"
 			],
 			"savingThrowForced": [
-				"体质"
+				"constitution"
 			],
 			"savingThrowForcedSpell": [
-				"力量",
-				"感知"
+				"strength",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -1847,13 +1847,13 @@
 			],
 			"passive": 15,
 			"resist": [
-				"毒素"
+				"poison"
 			],
 			"immune": [
-				"心灵"
+				"psychic"
 			],
 			"conditionImmune": [
-				"魅惑"
+				"charmed"
 			],
 			"languages": [
 				"通用语",
@@ -1933,13 +1933,13 @@
 				}
 			],
 			"traitTags": [
-				"魔力依赖"
+				"Antimagic Susceptibility"
 			],
 			"senseTags": [
 				"D"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -1959,10 +1959,10 @@
 				"RW"
 			],
 			"conditionInflict": [
-				"倒地"
+				"prone"
 			],
 			"savingThrowForced": [
-				"敏捷"
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -2146,7 +2146,7 @@
 			],
 			"passive": 10,
 			"resist": [
-				"火焰"
+				"fire"
 			],
 			"languages": [
 				"深渊语",
@@ -2235,7 +2235,7 @@
 				"D"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"AB",
@@ -2258,18 +2258,18 @@
 				"THW"
 			],
 			"conditionInflict": [
-				"失能"
+				"incapacitated"
 			],
 			"conditionInflictSpell": [
-				"魅惑"
+				"charmed"
 			],
 			"savingThrowForced": [
-				"体质",
-				"感知"
+				"constitution",
+				"wisdom"
 			],
 			"savingThrowForcedSpell": [
-				"敏捷",
-				"感知"
+				"dexterity",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -2465,7 +2465,7 @@
 				"U"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -2491,14 +2491,14 @@
 				"MW"
 			],
 			"conditionInflictSpell": [
-				"目盲",
-				"耳聋"
+				"blinded",
+				"deafened"
 			],
 			"savingThrowForced": [
-				"敏捷"
+				"dexterity"
 			],
 			"savingThrowForcedSpell": [
-				"体质"
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true,

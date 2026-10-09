@@ -43,18 +43,18 @@
 			},
 			"passive": 14,
 			"immune": [
-				"强酸",
-				"毒素"
+				"acid",
+				"poison"
 			],
 			"conditionImmune": [
-				"目盲",
-				"魅惑",
-				"耳聋",
-				"力竭",
-				"恐慌",
-				"麻痹",
-				"石化",
-				"中毒"
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
 			],
 			"languages": [
 				"理解通用语以及两门其他语言，但不会说"
@@ -106,10 +106,10 @@
 				"奥秘"
 			],
 			"traitTags": [
-				"魔法抗性"
+				"Magic Resistance"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -126,7 +126,7 @@
 				"RCH"
 			],
 			"conditionInflict": [
-				"受擒"
+				"grappled"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -175,19 +175,19 @@
 			],
 			"passive": 9,
 			"resist": [
-				"力场"
+				"force"
 			],
 			"immune": [
-				"火焰",
-				"闪电"
+				"fire",
+				"lightning"
 			],
 			"conditionImmune": [
-				"魅惑",
-				"力竭",
-				"恐慌",
-				"麻痹",
-				"石化",
-				"中毒"
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
 			],
 			"languages": [
 				"理解通用语以及一门其他语言，但不会说"
@@ -238,13 +238,13 @@
 				"城市"
 			],
 			"traitTags": [
-				"魔法抗性"
+				"Magic Resistance"
 			],
 			"senseTags": [
 				"B"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -262,10 +262,10 @@
 				"RCH"
 			],
 			"conditionInflict": [
-				"倒地"
+				"prone"
 			],
 			"savingThrowForced": [
-				"力量"
+				"strength"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -323,8 +323,8 @@
 			],
 			"passive": 18,
 			"conditionImmune": [
-				"魅惑",
-				"恐慌"
+				"charmed",
+				"frightened"
 			],
 			"languages": [
 				"心灵感应 120 尺，理解通用语和深潜语但不能说话"
@@ -435,14 +435,14 @@
 				"心灵之鞭|VGM"
 			],
 			"traitTags": [
-				"魔法抗性"
+				"Magic Resistance"
 			],
 			"senseTags": [
 				"U"
 			],
 			"actionTags": [
-				"多重攻击",
-				"传送"
+				"Multiattack",
+				"Teleport"
 			],
 			"languageTags": [
 				"C",
@@ -467,12 +467,12 @@
 				"RCH"
 			],
 			"conditionInflictSpell": [
-				"魅惑",
-				"倒地"
+				"charmed",
+				"prone"
 			],
 			"savingThrowForcedSpell": [
-				"体质",
-				"感知"
+				"constitution",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -522,7 +522,7 @@
 			],
 			"passive": 15,
 			"conditionImmune": [
-				"魅惑"
+				"charmed"
 			],
 			"languages": [
 				"心灵感应 120 尺，理解通用语和深潜语但不能说话"
@@ -601,13 +601,13 @@
 			],
 			"tokenCustom": true,
 			"traitTags": [
-				"魔法抗性"
+				"Magic Resistance"
 			],
 			"senseTags": [
 				"U"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -628,10 +628,10 @@
 				"RA"
 			],
 			"conditionInflict": [
-				"魅惑"
+				"charmed"
 			],
 			"savingThrowForcedSpell": [
-				"感知"
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -679,18 +679,18 @@
 			},
 			"passive": 17,
 			"immune": [
-				"毒素",
-				"雷鸣"
+				"poison",
+				"thunder"
 			],
 			"conditionImmune": [
-				"目盲",
-				"魅惑",
-				"耳聋",
-				"力竭",
-				"恐慌",
-				"麻痹",
-				"石化",
-				"中毒"
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
 			],
 			"languages": [
 				"理解通用语以及两门其他语言，但不会说"
@@ -766,10 +766,10 @@
 				"奥秘"
 			],
 			"traitTags": [
-				"魔法抗性"
+				"Magic Resistance"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -792,7 +792,7 @@
 				"RA"
 			],
 			"savingThrowForcedSpell": [
-				"敏捷"
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -838,18 +838,18 @@
 			},
 			"passive": 16,
 			"immune": [
-				"毒素",
-				"心灵"
+				"poison",
+				"psychic"
 			],
 			"conditionImmune": [
-				"目盲",
-				"魅惑",
-				"耳聋",
-				"力竭",
-				"恐慌",
-				"麻痹",
-				"石化",
-				"中毒"
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
 			],
 			"languages": [
 				"理解通用语以及两门其他语言，但不会说"
@@ -916,10 +916,10 @@
 				"奥秘"
 			],
 			"traitTags": [
-				"魔法抗性"
+				"Magic Resistance"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -937,11 +937,11 @@
 				"RA"
 			],
 			"conditionInflictSpell": [
-				"魅惑",
-				"失能"
+				"charmed",
+				"incapacitated"
 			],
 			"savingThrowForcedSpell": [
-				"感知"
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,

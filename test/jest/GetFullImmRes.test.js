@@ -1,3 +1,4 @@
+import "../../node/locale/i18n.js";
 import "../../js/parser.js";
 import "../../js/utils.js";
 import "../../js/render.js";
@@ -13,8 +14,13 @@ import "../../js/utils-config.js";
 
 describe("Basic rendering", () => {
 	it("Should render flat resistances", () => {
-		expect(Parser.getFullImmRes(["acid"])).toBe("acid");
-		expect(Parser.getFullImmRes(["acid", "bludgeoning"])).toBe("acid, bludgeoning");
+		expect(Parser.getFullImmRes(["acid"])).toBe("强酸");
+		expect(Parser.getFullImmRes(["acid", "bludgeoning"])).toBe("强酸, 钝击");
+		expect(Parser.getFullImmRes(["强酸", "unknown"], {isPlainText: true})).toBe("强酸, unknown");
+		expect(Parser.getFullCondImm(["blinded", "魅惑"], {isPlainText: true})).toBe("目盲, 魅惑");
+		expect(Parser.getFullCondImm(["blinded"], {isEntry: true})).toBe("{@condition blinded||目盲}");
+		expect(Parser.getFullCondImm(["disease"], {isPlainText: true})).toBe("疾病");
+		expect(Parser.getFullCondImm(["disease"], {isEntry: true})).toBe("疾病");
 	});
 });
 
@@ -32,7 +38,7 @@ describe("Complex rendering", () => {
 					},
 				],
 			),
-		).toBe("acid, bludgeoning; cold");
+		).toBe("强酸, 钝击; 寒冷");
 
 		expect(
 			Parser.getFullImmRes(
@@ -47,7 +53,7 @@ describe("Complex rendering", () => {
 					},
 				],
 			),
-		).toBe("acid, bludgeoning; cold and fire");
+		).toBe("强酸, 钝击; 寒冷 和 火焰");
 
 		expect(
 			Parser.getFullImmRes(
@@ -63,7 +69,7 @@ describe("Complex rendering", () => {
 					},
 				],
 			),
-		).toBe("acid, bludgeoning; cold, fire, and force");
+		).toBe("强酸, 钝击; 寒冷, 火焰, 和 力场");
 
 		expect(
 			Parser.getFullImmRes(
@@ -79,7 +85,7 @@ describe("Complex rendering", () => {
 					},
 				],
 			),
-		).toBe("acid, bludgeoning; cold and fire from nonmagical attacks");
+		).toBe("强酸, 钝击; 寒冷 和 火焰 from nonmagical attacks");
 	});
 });
 
@@ -103,7 +109,7 @@ describe("Nested rendering", () => {
 					},
 				],
 			),
-		).toBe("While bloodied: acid, bludgeoning; cold from nonmagical attacks");
+		).toBe("While bloodied: 强酸, 钝击; 寒冷 from nonmagical attacks");
 	});
 });
 
@@ -158,6 +164,6 @@ describe(`"special" rendering`, () => {
 					},
 				],
 			),
-		).toBe("acid; damage of the type matching the animated breath's form (cold, fire, lightning, or poison)");
+		).toBe("强酸; damage of the type matching the animated breath's form (cold, fire, lightning, or poison)");
 	});
 });

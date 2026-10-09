@@ -1989,10 +1989,13 @@ Parser._getFullImmRes_isSimpleTerm = val => {
 
 Parser._getFullImmRes_getNextProp = obj => ["immune", "resist", "vulnerable", "conditionImmune"].find(prop => prop in obj) || null;
 
-Parser._getFullImmRes_getRenderedString = (str, {isPlainText = false, isEntry = false, isTitleCase = false, fnGetModString} = {}) => {
+Parser._getFullImmRes_getRenderedString = (str, {isPlainText = false, isEntry = false, isTitleCase = false, fnGetModString, mode} = {}) => {
+	const conditionCn = mode === "condition" ? Parser._parse_bToA(Parser.CONTITION_TO_EN, str) : null;
+	if (mode === "damageType") str = Parser.dmgTypeToCn(str);
+	if (conditionCn && conditionCn !== str) str = fnGetModString && !isPlainText && str !== "disease" ? `{@condition ${str}||${conditionCn}}` : conditionCn;
 	if (isTitleCase) str = str.toTitleCase();
 	if (isPlainText) return Renderer.stripTags(`${str}`);
-	if (fnGetModString) str = fnGetModString(str);
+	if (fnGetModString && !conditionCn) str = fnGetModString(str);
 	if (isEntry) return str;
 	return Renderer.get().render(`${str}`);
 };
@@ -2013,8 +2016,8 @@ Parser._getFullImmRes_getRenderedObject = (obj, {isPlainText = false, isEntry = 
 Parser._getFullImmRes_getRenderedArray = (values, {isPlainText = false, isEntry = false, isTitleCase = false, isGroup = false, mode} = {}) => {
 	if (isPlainText && isEntry) throw new Error(`Options "isPlainText" and "isEntry" are mutually exclusive!`);
 
-	if (mode === "damageType" && values.length === Parser.DMG_TYPES.length && CollectionUtil.deepEquals(Parser.DMG_TYPES, values)) {
-		return "all damage"[isTitleCase ? "toTitleCase" : "toString"]();
+	if (mode === "damageType" && values.length === Parser.DMG_TYPES.length && CollectionUtil.deepEquals(Parser.DMG_TYPES, values.map(it => Parser.dmgTypeToCn(it)))) {
+		return "所有伤害";
 	}
 
 	return values
@@ -2024,7 +2027,7 @@ Parser._getFullImmRes_getRenderedArray = (values, {isPlainText = false, isEntry 
 			const rendCur = isSimpleCur
 				? val.special
 					? Parser._getFullImmRes_getRenderedString(val.special, {isPlainText, isTitleCase: false})
-					: Parser._getFullImmRes_getRenderedString(val, {isPlainText, isEntry, isTitleCase, fnGetModString: mode === "condition" ? str => `{@condition ${str}}` : null})
+					: Parser._getFullImmRes_getRenderedString(val, {isPlainText, isEntry, isTitleCase, mode, fnGetModString: mode === "condition" ? str => `{@condition ${str}}` : null})
 				: Parser._getFullImmRes_getRenderedObject(val, {isPlainText, isEntry, isTitleCase, mode});
 
 			if (i === arr.length - 1) return rendCur;
@@ -4774,6 +4777,7 @@ Parser.CONTITION_TO_EN = {
 	"束缚": "restrained",
 	"震慑": "stunned",
 	"昏迷": "unconscious",
+	"疾病": "disease",
 };
 
 Parser.conditionToEn = function (condition) {
@@ -5294,9 +5298,28 @@ Parser.RECIPE_CATEGORY_TO_CN = {
 	"Dwarven": "矮人",
 	"Elixir/Ale": "灵药/麦酒",
 	"Elven": "精灵",
+	"Halfling": "半身人",
+	"Human": "人类",
+	"Uncommon Cuisine": "非凡美食",
+	"Sigil": "印记城",
+	"Lost in Realmspace": "迷失荒宇",
+	"Solamnia": "索兰尼亚",
+	"The Rock of Bral": "布拉岩",
+	"Ravenloft": "鸦阁",
+	"The Feywild": "妖精荒野",
+	"The Yawning Portal": "哈欠传送门",
+	"The Driftwood Tavern": "浮木酒馆",
+	"The Hearth": "炉边",
+	"The Hissing Stones": "嘶鸣之石",
+	"The Gilded Horseshoe": "镀金马蹄铁",
+	"The Pink Flumph Theater": "粉色呋噜怪剧院",
+	"The Moonstone Mask": "月石面具",
+	"The Low Lantern": "低灯笼",
+	"The Halfway Inn": "半途旅店",
+	"One-Eyed Jax": "独眼杰克斯",
 };
 Parser.recipeCategoryToCn = function (type) {
-	return Parser._parse_aToB(Parser.RECIPE_CATEGORY_TO_CN, type.toTitleCase());
+	return Parser._parse_aToB(Parser.RECIPE_CATEGORY_TO_CN, type);
 };
 
 Parser.ENCONTER_DIFFICULTY_TO_CN = {

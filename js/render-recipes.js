@@ -31,13 +31,13 @@ export class RenderRecipes {
 
 				${(ptMakes || ptServes) ? veT`<div class="ve-flex-v-center">${ptMakes || ptServes}${wrpSelScaleFactor}</div>` : ""}
 				${(ptMakes && ptServes) ? ptServes : ""}
-				${!(ptMakes || ptServes) && opts.selScaleFactor ? veT`<div class="ve-mb-2">Scale: ${opts.selScaleFactor}</div>` : ""}
+				${!(ptMakes || ptServes) && opts.selScaleFactor ? veT`<div class="ve-mb-2">份量倍数：${opts.selScaleFactor}</div>` : ""}
 
 				<div class="ve-rd-plaintext__wrp-sidebar ${ptMakes || ptServes || opts.selScaleFactor ? "ve-mt-1" : ""}">${Renderer.get().render(entriesMeta.entryIngredients, 0)}</div>
 
-				${entriesMeta.entryEquipment ? `<div class="ve-rd-plaintext__wrp-sidebar ve-mt-4"><div class="ve-flex-vh-center ve-bold ve-mb-1 ve-small-caps">Equipment</div><div>${Renderer.get().render(entriesMeta.entryEquipment)}</div></div>` : ""}
+				${entriesMeta.entryEquipment ? `<div class="ve-rd-plaintext__wrp-sidebar ve-mt-4"><div class="ve-flex-vh-center ve-bold ve-mb-1 ve-small-caps">器具</div><div>${Renderer.get().render(entriesMeta.entryEquipment)}</div></div>` : ""}
 
-				${entriesMeta.entryCooksNotes ? `<div class="ve-w-100 ve-flex-col ve-mt-4"><div class="ve-flex-vh-center ve-bold ve-mb-1 ve-small-caps">Cook's Notes</div><div class="ve-italic">${Renderer.get().render(entriesMeta.entryCooksNotes)}</div></div>` : ""}
+				${entriesMeta.entryCooksNotes ? `<div class="ve-w-100 ve-flex-col ve-mt-4"><div class="ve-flex-vh-center ve-bold ve-mb-1 ve-small-caps">厨师笔记</div><div class="ve-italic">${Renderer.get().render(entriesMeta.entryCooksNotes)}</div></div>` : ""}
 			</div>
 
 			<div class="ve-w-66 ve-pr-3 ve-pl-5 ve-rd-plaintext__wrp-primary">

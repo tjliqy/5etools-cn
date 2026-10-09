@@ -57,15 +57,15 @@
 			},
 			"passive": 19,
 			"resist": [
-				"寒冷",
-				"火焰",
-				"闪电"
+				"cold",
+				"fire",
+				"lightning"
 			],
 			"immune": [
-				"毒素"
+				"poison"
 			],
 			"conditionImmune": [
-				"中毒"
+				"poisoned"
 			],
 			"languages": [
 				"深渊语; 心灵感应 120 尺"
@@ -132,11 +132,11 @@
 				"位面, 无底深渊"
 			],
 			"traitTags": [
-				"魔法抗性"
+				"Magic Resistance"
 			],
 			"actionTags": [
-				"多重攻击",
-				"格挡"
+				"Multiattack",
+				"Parry"
 			],
 			"languageTags": [
 				"AB",
@@ -151,10 +151,10 @@
 				"RCH"
 			],
 			"conditionInflict": [
-				"麻痹"
+				"paralyzed"
 			],
 			"savingThrowForced": [
-				"感知"
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -203,14 +203,14 @@
 			},
 			"passive": 19,
 			"immune": [
-				"火焰",
-				"暗蚀",
-				"毒素"
+				"fire",
+				"necrotic",
+				"poison"
 			],
 			"conditionImmune": [
-				"魅惑",
-				"恐慌",
-				"中毒"
+				"charmed",
+				"frightened",
+				"poisoned"
 			],
 			"languages": [
 				"通用语",
@@ -284,11 +284,11 @@
 				"圣物"
 			],
 			"traitTags": [
-				"传奇抗性",
-				"魔法抗性"
+				"Legendary Resistances",
+				"Magic Resistance"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -308,7 +308,7 @@
 				"RCH"
 			],
 			"savingThrowForced": [
-				"体质"
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -358,15 +358,15 @@
 			},
 			"passive": 19,
 			"resist": [
-				"寒冷",
-				"火焰",
-				"闪电"
+				"cold",
+				"fire",
+				"lightning"
 			],
 			"immune": [
-				"毒素"
+				"poison"
 			],
 			"conditionImmune": [
-				"中毒"
+				"poisoned"
 			],
 			"languages": [
 				"深渊语; 心灵感应 120 尺"
@@ -445,11 +445,11 @@
 				"武备"
 			],
 			"traitTags": [
-				"魔法抗性",
-				"攻城怪物"
+				"Magic Resistance",
+				"Siege Monster"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"AB",
@@ -470,11 +470,11 @@
 				"RCH"
 			],
 			"conditionInflict": [
-				"倒地"
+				"prone"
 			],
 			"savingThrowForcedSpell": [
-				"体质",
-				"敏捷"
+				"constitution",
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -523,11 +523,11 @@
 			},
 			"passive": 20,
 			"immune": [
-				"火焰"
+				"fire"
 			],
 			"conditionImmune": [
-				"魅惑",
-				"恐慌"
+				"charmed",
+				"frightened"
 			],
 			"languages": [
 				"通用语",
@@ -637,11 +637,11 @@
 				"圣物"
 			],
 			"traitTags": [
-				"传奇抗性",
-				"魔法抗性"
+				"Legendary Resistances",
+				"Magic Resistance"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -665,18 +665,18 @@
 				"RA"
 			],
 			"conditionInflict": [
-				"恐慌",
-				"震慑"
+				"frightened",
+				"stunned"
 			],
 			"conditionInflictSpell": [
-				"隐形"
+				"invisible"
 			],
 			"savingThrowForced": [
-				"感知"
+				"wisdom"
 			],
 			"savingThrowForcedSpell": [
-				"敏捷",
-				"感知"
+				"dexterity",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -735,18 +735,18 @@
 			},
 			"passive": 21,
 			"resist": [
-				"寒冷",
-				"闪电"
+				"cold",
+				"lightning"
 			],
 			"immune": [
-				"暗蚀",
-				"毒素"
+				"necrotic",
+				"poison"
 			],
 			"conditionImmune": [
-				"魅惑",
-				"恐慌",
-				"麻痹",
-				"中毒"
+				"charmed",
+				"frightened",
+				"paralyzed",
+				"poisoned"
 			],
 			"languages": [
 				"所有"
@@ -890,10 +890,10 @@
 				"source": "AUD"
 			},
 			"traitTags": [
-				"传奇抗性"
+				"Legendary Resistances"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"XX"
@@ -922,15 +922,15 @@
 				"RA"
 			],
 			"conditionInflict": [
-				"麻痹"
+				"paralyzed"
 			],
 			"savingThrowForced": [
-				"体质"
+				"constitution"
 			],
 			"savingThrowForcedSpell": [
-				"体质",
-				"敏捷",
-				"感知"
+				"constitution",
+				"dexterity",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -1083,10 +1083,10 @@
 				}
 			],
 			"traitTags": [
-				"魔法抗性"
+				"Magic Resistance"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -1114,14 +1114,14 @@
 				"RA"
 			],
 			"conditionInflictSpell": [
-				"目盲",
-				"魅惑",
-				"失能"
+				"blinded",
+				"charmed",
+				"incapacitated"
 			],
 			"savingThrowForcedSpell": [
-				"体质",
-				"敏捷",
-				"感知"
+				"constitution",
+				"dexterity",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,

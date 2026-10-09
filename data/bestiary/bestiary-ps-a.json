@@ -252,7 +252,7 @@
 				}
 			},
 			"traitTags": [
-				"攻城怪物"
+				"Siege Monster"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -305,20 +305,20 @@
 			"resist": [
 				{
 					"resist": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "来自非魔法攻击",
 					"cond": true
 				}
 			],
 			"immune": [
-				"心灵"
+				"psychic"
 			],
 			"conditionImmune": [
-				"魅惑",
-				"恐慌"
+				"charmed",
+				"frightened"
 			],
 			"languages": [
 				"懂得通用语",
@@ -381,13 +381,13 @@
 				}
 			],
 			"traitTags": [
-				"魔法武器"
+				"Magic Weapons"
 			],
 			"senseTags": [
 				"U"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -448,8 +448,8 @@
 			},
 			"immune": null,
 			"actionTags": [
-				"多重攻击",
-				"吞咽"
+				"Multiattack",
+				"Swallow"
 			],
 			"damageTags": [
 				"A",
@@ -517,7 +517,7 @@
 				"swim": 30
 			},
 			"traitTags": [
-				"屏息"
+				"Hold Breath"
 			],
 			"hasToken": true
 		},
@@ -618,7 +618,7 @@
 				"D"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"damageTags": [
 				"I",
@@ -630,7 +630,7 @@
 				"RCH"
 			],
 			"savingThrowForced": [
-				"体质"
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -738,8 +738,8 @@
 				}
 			],
 			"traitTags": [
-				"敏锐感官",
-				"猛扑"
+				"Keen Senses",
+				"Pounce"
 			],
 			"damageTags": [
 				"I",
@@ -749,11 +749,11 @@
 				"MW"
 			],
 			"conditionInflict": [
-				"倒地"
+				"prone"
 			],
 			"savingThrowForced": [
-				"体质",
-				"力量"
+				"constitution",
+				"strength"
 			],
 			"hasToken": true,
 			"hasFluff": true,

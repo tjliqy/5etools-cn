@@ -1100,7 +1100,7 @@
 			"rarity": "very rare",
 			"wondrous": true,
 			"weight": 25,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d20}",
 			"charges": 20,
 			"entries": [
@@ -1240,7 +1240,7 @@
 			"source": "TCE",
 			"page": 119,
 			"resist": [
-				"强酸"
+				"acid"
 			],
 			"detail1": "绿",
 			"rarity": "very rare",
@@ -1466,10 +1466,10 @@
 			"page": 198,
 			"baseItem": "战锤|PHB",
 			"resist": [
-				"火焰"
+				"fire"
 			],
 			"conditionImmune": [
-				"力竭"
+				"exhaustion"
 			],
 			"rarity": "artifact",
 			"reqAttune": true,
@@ -1582,7 +1582,7 @@
 			],
 			"wondrous": true,
 			"weight": 3,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"focus": [
@@ -2162,7 +2162,7 @@
 					"fly": "走"
 				}
 			},
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6}",
 			"charges": 6,
 			"entries": [
@@ -2474,7 +2474,7 @@
 			"reqAttune": true,
 			"wondrous": true,
 			"weight": 1,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6}",
 			"charges": 6,
 			"entries": [
@@ -3407,11 +3407,11 @@
 			],
 			"baseItem": "板甲|phb",
 			"resist": [
-				"钝击"
+				"bludgeoning"
 			],
 			"vulnerable": [
-				"穿刺",
-				"挥砍"
+				"piercing",
+				"slashing"
 			],
 			"tier": "主要",
 			"rarity": "rare",
@@ -3449,11 +3449,11 @@
 			],
 			"baseItem": "板甲|phb",
 			"resist": [
-				"穿刺"
+				"piercing"
 			],
 			"vulnerable": [
-				"钝击",
-				"挥砍"
+				"bludgeoning",
+				"slashing"
 			],
 			"tier": "主要",
 			"rarity": "rare",
@@ -3494,11 +3494,11 @@
 			],
 			"baseItem": "板甲|phb",
 			"resist": [
-				"挥砍"
+				"slashing"
 			],
 			"vulnerable": [
-				"钝击",
-				"穿刺"
+				"bludgeoning",
+				"piercing"
 			],
 			"tier": "主要",
 			"rarity": "rare",
@@ -3690,8 +3690,8 @@
 				}
 			},
 			"conditionImmune": [
-				"魅惑",
-				"恐慌"
+				"charmed",
+				"frightened"
 			],
 			"rarity": "legendary",
 			"modifySpeed": {
@@ -3796,7 +3796,7 @@
 			],
 			"wondrous": true,
 			"weight": 3,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"focus": [
@@ -3838,7 +3838,7 @@
 			],
 			"wondrous": true,
 			"weight": 3,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"focus": [
@@ -3910,7 +3910,7 @@
 			],
 			"baseItem": "战斧|phb",
 			"immune": [
-				"毒素"
+				"poison"
 			],
 			"rarity": "artifact",
 			"reqAttune": true,
@@ -4026,10 +4026,10 @@
 			"page": 231,
 			"baseItem": "战斧|xphb",
 			"immune": [
-				"毒素"
+				"poison"
 			],
 			"resist": [
-				"火焰"
+				"fire"
 			],
 			"rarity": "artifact",
 			"reqAttune": true,
@@ -4173,7 +4173,7 @@
 			"page": 178,
 			"rarity": "uncommon",
 			"reqAttune": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -4229,7 +4229,7 @@
 			"dmgType": "S",
 			"dmg2": "1d10",
 			"bonusWeapon": "+3",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": 3,
 			"charges": 3,
 			"entries": [
@@ -4339,7 +4339,7 @@
 			"reqAttune": true,
 			"wondrous": true,
 			"bonusWeapon": "+3",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": 12,
 			"charges": 12,
 			"entries": [
@@ -4440,7 +4440,7 @@
 			"dmgType": "B",
 			"dmg2": "1d8",
 			"bonusWeapon": "+3",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": 12,
 			"charges": 12,
 			"entries": [
@@ -4876,7 +4876,7 @@
 			"rarity": "uncommon",
 			"wondrous": true,
 			"weight": 0.5,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"entries": [
 				"这种布袋有三种不同颜色的版本：灰色、铁锈色、棕褐色。布袋看起来空无一物，但把手伸进去会摸到一个小小的毛绒物件。",
 				"你能够以一个魔法动作取出布袋里的毛绒物件，并把它扔出至多20尺远。当物件落地时，投{@dice d8}，参考对应颜色布袋的表格决定物件变成的生物。相关生物的资料见《怪物图鉴》。该生物在次日黎明时分或者其生命值降至0时消失。",
@@ -4941,7 +4941,7 @@
 			"basicRules2024": true,
 			"rarity": "uncommon",
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"entries": [
 				"这种布袋由灰色布料制成。布袋看起来空无一物，但把手伸进去会摸到一个小小的毛绒物件。",
 				"你能够以一个{@action 魔法|XPHB}动作取出布袋里的毛绒物件，并把它扔出至多20尺远。当物件落地时，投骰子参考对应颜色布袋的表格决定物件变成的生物。相关生物的资料见{@book 怪物图鉴|XMM}。该生物在次日黎明时分或者其{@variantrule 生命值|XPHB}降至0时消失。",
@@ -5013,7 +5013,7 @@
 			"rarity": "uncommon",
 			"wondrous": true,
 			"weight": 0.5,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"entries": [
 				"这个由铁锈色布料制成的普通布袋看起来是空无一物，但把手伸进去会摸到一个小小的毛绒物件。",
 				"你能够以一个魔法动作取出布袋里的毛绒物件，并把它扔出至多20尺远。当物件落地时，投{@dice d8}，参考对应颜色布袋的表格决定物件变成的生物。相关生物的资料见《怪物图鉴》。该生物在次日黎明时分或者其生命值降至0时消失。",
@@ -5078,7 +5078,7 @@
 			"basicRules2024": true,
 			"rarity": "uncommon",
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"entries": [
 				"这种布袋由铁锈色的布料制成。布袋看起来空无一物，但把手伸进去会摸到一个小小的毛绒物件。",
 				"你能够以一个{@action 魔法|XPHB}动作取出布袋里的毛绒物件，并把它扔出至多20尺远。当物件落地时，投骰子参考对应颜色布袋的表格决定物件变成的生物。相关生物的资料见{@book 怪物图鉴|XMM}。该生物在次日黎明时分或者其{@variantrule 生命值|XPHB}降至0时消失。",
@@ -5149,7 +5149,7 @@
 			"rarity": "uncommon",
 			"wondrous": true,
 			"weight": 0.5,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"entries": [
 				"这个由棕褐色布料制成的普通布袋看起来是空无一物。然而，将手伸进袋子里会摸到一个小小的毛绒物件。",
 				"你能够以一个魔法动作取出布袋里的毛绒物件，并把它扔出至多20尺远。当物件落地时，投{@dice d8}，参考对应颜色布袋的表格决定物件变成的生物。相关生物的资料见《怪物图鉴》。该生物在次日黎明时分或者其生命值降至0时消失。",
@@ -5214,7 +5214,7 @@
 			"basicRules2024": true,
 			"rarity": "uncommon",
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"entries": [
 				"这种布袋由棕褐色的布料制成。布袋看起来空无一物，但把手伸进去会摸到一个小小的毛绒物件。",
 				"你能够以一个{@action 魔法|XPHB}动作取出布袋里的毛绒物件，并把它扔出至多20尺远。当物件落地时，投骰子参考对应颜色布袋的表格决定物件变成的生物。相关生物的资料见{@book 怪物图鉴|XMM}。该生物在次日黎明时分或者其{@variantrule 生命值|XPHB}降至0时消失。",
@@ -5276,7 +5276,7 @@
 			"page": 13,
 			"rarity": "legendary",
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"entries": [
 				"作为动作，你可以对距你30尺内的一名可见生物挥舞这张卡牌以吸取其生命力量。目标必须成功通过{@dc 17}的体质豁免检定否则受到{@damage 4d8}点暗蚀伤害。然后你恢复等于目标受到的暗蚀伤害数值的生命值。这一属性一经使用，直到次日黎明之前无法再次使用。"
 			],
@@ -6009,7 +6009,7 @@
 			"weight": 6,
 			"ac": 2,
 			"bonusAc": "+1",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -6317,7 +6317,7 @@
 			"rarity": "legendary",
 			"reqAttune": true,
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 3}",
 			"charges": 10,
 			"entries": [
@@ -6419,7 +6419,7 @@
 				}
 			],
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"focus": [
@@ -6452,7 +6452,7 @@
 			"page": 116,
 			"rarity": "rare",
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 1}",
 			"charges": 6,
 			"entries": [
@@ -6561,7 +6561,7 @@
 				"矮人腰带|XDMG"
 			],
 			"resist": [
-				"毒素"
+				"poison"
 			],
 			"tier": "主要",
 			"rarity": "rare",
@@ -6605,7 +6605,7 @@
 			"srd52": true,
 			"basicRules2024": true,
 			"resist": [
-				"毒素"
+				"poison"
 			],
 			"rarity": "rare",
 			"reqAttune": true,
@@ -7038,7 +7038,7 @@
 			"source": "WBtW",
 			"page": 208,
 			"resist": [
-				"强酸"
+				"acid"
 			],
 			"detail1": "滴酸",
 			"rarity": "rare",
@@ -7089,7 +7089,7 @@
 				"RoT"
 			],
 			"resist": [
-				"强酸"
+				"acid"
 			],
 			"rarity": "legendary",
 			"reqAttune": true,
@@ -7167,7 +7167,7 @@
 				"黑龙鳞甲|XDMG"
 			],
 			"resist": [
-				"强酸"
+				"acid"
 			],
 			"tier": "主要",
 			"rarity": "very rare",
@@ -7192,7 +7192,7 @@
 			"basicRules2024": true,
 			"baseItem": "鳞甲|xphb",
 			"resist": [
-				"强酸"
+				"acid"
 			],
 			"detail1": "黑",
 			"rarity": "very rare",
@@ -7545,7 +7545,7 @@
 			"bonusSpellAttack": "+2",
 			"bonusAc": "+2",
 			"bonusSavingThrow": "+2",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 2d8 + 4}",
 			"charges": 20,
 			"staff": true,
@@ -7979,7 +7979,7 @@
 			"reqAttune": true,
 			"wondrous": true,
 			"curse": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -8113,7 +8113,7 @@
 			"rarity": "rare",
 			"reqAttune": true,
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -8131,7 +8131,7 @@
 			"reqAttune": true,
 			"wondrous": true,
 			"tattoo": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": 10,
 			"charges": 10,
 			"entries": [
@@ -8331,7 +8331,7 @@
 			"source": "WBtW",
 			"page": 208,
 			"resist": [
-				"闪电"
+				"lightning"
 			],
 			"detail1": "噼啪作响的闪电",
 			"rarity": "rare",
@@ -8357,7 +8357,7 @@
 				"RoT"
 			],
 			"resist": [
-				"闪电"
+				"lightning"
 			],
 			"rarity": "legendary",
 			"reqAttune": true,
@@ -8434,7 +8434,7 @@
 				"蓝龙鳞甲|XDMG"
 			],
 			"resist": [
-				"闪电"
+				"lightning"
 			],
 			"tier": "主要",
 			"rarity": "very rare",
@@ -8458,7 +8458,7 @@
 			"basicRules2024": true,
 			"baseItem": "鳞甲|xphb",
 			"resist": [
-				"闪电"
+				"lightning"
 			],
 			"detail1": "蓝",
 			"rarity": "very rare",
@@ -9567,7 +9567,7 @@
 				"雪地之靴|XDMG"
 			],
 			"resist": [
-				"寒冷"
+				"cold"
 			],
 			"tier": "主要",
 			"rarity": "uncommon",
@@ -9603,7 +9603,7 @@
 				"DrDe-SD"
 			],
 			"resist": [
-				"寒冷"
+				"cold"
 			],
 			"rarity": "uncommon",
 			"reqAttune": true,
@@ -9655,7 +9655,7 @@
 			"page": 178,
 			"rarity": "uncommon",
 			"reqAttune": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -10044,7 +10044,7 @@
 				"黄铜龙鳞甲|XDMG"
 			],
 			"resist": [
-				"火焰"
+				"fire"
 			],
 			"tier": "主要",
 			"rarity": "very rare",
@@ -10068,7 +10068,7 @@
 			"basicRules2024": true,
 			"baseItem": "鳞甲|xphb",
 			"resist": [
-				"火焰"
+				"fire"
 			],
 			"detail1": "黄铜",
 			"rarity": "very rare",
@@ -10185,7 +10185,7 @@
 			"reqAttune": true,
 			"weight": 20,
 			"ac": 14,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d4}",
 			"charges": 4,
 			"entries": [
@@ -10376,7 +10376,7 @@
 				"青铜龙鳞甲|XDMG"
 			],
 			"resist": [
-				"闪电"
+				"lightning"
 			],
 			"tier": "主要",
 			"rarity": "very rare",
@@ -10400,7 +10400,7 @@
 			"basicRules2024": true,
 			"baseItem": "鳞甲|xphb",
 			"resist": [
-				"闪电"
+				"lightning"
 			],
 			"detail1": "青铜",
 			"rarity": "very rare",
@@ -10453,7 +10453,7 @@
 				"护盾胸针|XDMG"
 			],
 			"resist": [
-				"力场"
+				"force"
 			],
 			"tier": "主要",
 			"rarity": "uncommon",
@@ -10478,7 +10478,7 @@
 			"srd52": true,
 			"basicRules2024": true,
 			"resist": [
-				"力场"
+				"force"
 			],
 			"rarity": "uncommon",
 			"reqAttune": true,
@@ -10502,7 +10502,7 @@
 			"rarity": "rare",
 			"reqAttune": true,
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": 3,
 			"charges": 3,
 			"entries": [
@@ -11519,7 +11519,7 @@
 			"rarity": "uncommon",
 			"reqAttune": true,
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": 3,
 			"charges": 3,
 			"entries": [
@@ -11583,7 +11583,7 @@
 			"rarity": "very rare",
 			"reqAttune": true,
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -12494,7 +12494,7 @@
 			"rarity": "rare",
 			"reqAttune": true,
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": 3,
 			"charges": 3,
 			"entries": [
@@ -13156,7 +13156,7 @@
 				"节肢斗篷|XDMG"
 			],
 			"resist": [
-				"毒素"
+				"poison"
 			],
 			"tier": "主要",
 			"rarity": "very rare",
@@ -13199,7 +13199,7 @@
 			"srd52": true,
 			"basicRules2024": true,
 			"resist": [
-				"毒素"
+				"poison"
 			],
 			"rarity": "very rare",
 			"reqAttune": true,
@@ -13465,7 +13465,7 @@
 			"rarity": "legendary",
 			"reqAttune": true,
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -13724,7 +13724,7 @@
 			],
 			"rarity": "common",
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"charges": 1,
 			"entries": [
 				"这枚铜制的护符内有数个互相咬合的微小齿轮，其以机械境\u2014\u2014一个秩序至极，万物皆可被机械预测的位面\u2014\u2014的魔法所驱动。模糊的滴答声与呼呼的噪音从中传出。佩戴该护符期间，当你进行一次攻击检定时，你可以放弃掷骰并在d20的骰值上取10。该词条一经使用，直至次日黎明前都无法再次使用。",
@@ -13978,7 +13978,7 @@
 			"source": "TCE",
 			"page": 119,
 			"resist": [
-				"寒冷"
+				"cold"
 			],
 			"detail1": "蓝",
 			"rarity": "very rare",
@@ -13997,7 +13997,7 @@
 			"page": 13,
 			"rarity": "legendary",
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"entries": [
 				"以一个动作，你可以高举这张卡片，召唤一颗熊熊燃烧的陨石落到距你120尺内的可见地点。以那个点为中心，半径20尺范围内的每个生物都必须进行一次{@dc 17}的敏捷豁免。豁免失败的生物会受到{@damage 6d6}点钝击伤害和{@damage 6d6}点火焰伤害，豁免成功只受一半伤害。这一特性一经使用，直到次日黎明之前无法再次使用。"
 			],
@@ -14215,7 +14215,7 @@
 			"wondrous": true,
 			"sentient": true,
 			"weight": 15,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": 3,
 			"charges": 3,
 			"entries": [
@@ -14352,7 +14352,7 @@
 				"赤铜龙鳞甲|XDMG"
 			],
 			"resist": [
-				"强酸"
+				"acid"
 			],
 			"tier": "主要",
 			"rarity": "very rare",
@@ -14376,7 +14376,7 @@
 			"basicRules2024": true,
 			"baseItem": "鳞甲|xphb",
 			"resist": [
-				"强酸"
+				"acid"
 			],
 			"detail1": "赤铜",
 			"rarity": "very rare",
@@ -14628,7 +14628,7 @@
 			"rarity": "artifact",
 			"reqAttune": true,
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6}",
 			"charges": 6,
 			"entries": [
@@ -15105,7 +15105,7 @@
 					"fly": "走"
 				}
 			},
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6}",
 			"charges": 6,
 			"entries": [
@@ -15535,7 +15535,7 @@
 			],
 			"wondrous": true,
 			"weight": 3,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"focus": [
@@ -15585,7 +15585,7 @@
 			"rarity": "rare",
 			"reqAttune": true,
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d20}",
 			"charges": 36,
 			"entries": [
@@ -15687,7 +15687,7 @@
 			"rarity": "rare",
 			"reqAttune": true,
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6}",
 			"charges": 10,
 			"entries": [
@@ -15839,7 +15839,7 @@
 			"tier": "主要",
 			"rarity": "legendary",
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -15865,7 +15865,7 @@
 			"basicRules2024": true,
 			"rarity": "legendary",
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -16720,7 +16720,7 @@
 			"rarity": "very rare",
 			"reqAttune": true,
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6}",
 			"charges": 6,
 			"entries": [
@@ -17312,7 +17312,7 @@
 			"source": "BMT",
 			"page": 51,
 			"vulnerable": [
-				"火焰"
+				"fire"
 			],
 			"rarity": "legendary",
 			"wondrous": true,
@@ -19745,16 +19745,16 @@
 			"source": "BMT",
 			"page": 55,
 			"resist": [
-				"强酸",
-				"寒冷",
-				"火焰",
-				"力场",
-				"闪电",
-				"暗蚀",
-				"毒素",
-				"心灵",
-				"光耀",
-				"雷鸣"
+				"acid",
+				"cold",
+				"fire",
+				"force",
+				"lightning",
+				"necrotic",
+				"poison",
+				"psychic",
+				"radiant",
+				"thunder"
 			],
 			"rarity": "uncommon",
 			"wondrous": true,
@@ -20375,7 +20375,7 @@
 			"rarity": "artifact",
 			"reqAttune": true,
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d8}",
 			"charges": 8,
 			"entries": [
@@ -20476,7 +20476,7 @@
 			"rarity": "artifact",
 			"reqAttune": true,
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d8}",
 			"charges": 8,
 			"entries": [
@@ -20859,7 +20859,7 @@
 			"dmgType": "B",
 			"dmg2": "1d8",
 			"bonusWeapon": "+3",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 4}",
 			"charges": 20,
 			"staff": true,
@@ -21145,7 +21145,7 @@
 			"page": 178,
 			"rarity": "uncommon",
 			"reqAttune": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -21689,7 +21689,7 @@
 			"page": 13,
 			"rarity": "legendary",
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"entries": [
 				"作为动作，你可以对距你30尺内的一名可见生物挥舞这张卡牌。目标必须成功通过一次{@dc 17}的魅力豁免检定，否则它将消失，被传送到另一个存在位面的监狱中。1分钟后，目标重新出现在它离开的空间，如果该空间被占据，则出现在最近的未占据空间。这一属性一经使用，直到次日黎明之前无法再次使用。"
 			],
@@ -22043,7 +22043,7 @@
 			"dmg1": "1d6",
 			"dmgType": "B",
 			"dmg2": "1d8",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d10}",
 			"charges": 10,
 			"staff": true,
@@ -22330,7 +22330,7 @@
 			"page": 224,
 			"baseItem": "三叉戟|phb",
 			"resist": [
-				"寒冷"
+				"cold"
 			],
 			"rarity": "legendary",
 			"reqAttune": true,
@@ -22499,7 +22499,7 @@
 			],
 			"wondrous": true,
 			"weight": 3,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"focus": [
@@ -23020,7 +23020,7 @@
 			"page": 212,
 			"rarity": "common",
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d4 + 1}",
 			"charges": 5,
 			"entries": [
@@ -23044,7 +23044,7 @@
 			"reqAttune": true,
 			"wondrous": true,
 			"grantsLanguage": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d4}",
 			"charges": 4,
 			"entries": [
@@ -23279,7 +23279,7 @@
 			],
 			"baseItem": "链甲|phb",
 			"immune": [
-				"火焰"
+				"fire"
 			],
 			"tier": "主要",
 			"rarity": "legendary",
@@ -23364,7 +23364,7 @@
 			"dmgType": "B",
 			"dmg2": "1d8",
 			"bonusWeapon": "+1",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 4}",
 			"charges": 10,
 			"staff": true,
@@ -24281,7 +24281,7 @@
 			"dmg1": "1d6",
 			"dmgType": "B",
 			"dmg2": "1d8",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6}",
 			"charges": 6,
 			"staff": true,
@@ -24316,7 +24316,7 @@
 			"dmg1": "1d6",
 			"dmgType": "B",
 			"dmg2": "1d8",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6}",
 			"charges": 6,
 			"staff": true,
@@ -24351,7 +24351,7 @@
 			"dmg1": "1d6",
 			"dmgType": "B",
 			"dmg2": "1d8",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6}",
 			"charges": 6,
 			"staff": true,
@@ -24386,7 +24386,7 @@
 			"dmg1": "1d6",
 			"dmgType": "B",
 			"dmg2": "1d8",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6}",
 			"charges": 6,
 			"staff": true,
@@ -24421,7 +24421,7 @@
 			"dmg1": "1d6",
 			"dmgType": "B",
 			"dmg2": "1d8",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6}",
 			"charges": 6,
 			"staff": true,
@@ -24456,7 +24456,7 @@
 			"dmg1": "1d6",
 			"dmgType": "B",
 			"dmg2": "1d8",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6}",
 			"charges": 6,
 			"staff": true,
@@ -24491,7 +24491,7 @@
 			"dmg1": "1d6",
 			"dmgType": "B",
 			"dmg2": "1d8",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6}",
 			"charges": 6,
 			"staff": true,
@@ -24526,7 +24526,7 @@
 			"dmg1": "1d6",
 			"dmgType": "B",
 			"dmg2": "1d8",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6}",
 			"charges": 6,
 			"staff": true,
@@ -24561,7 +24561,7 @@
 			"dmg1": "1d6",
 			"dmgType": "B",
 			"dmg2": "1d8",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6}",
 			"charges": 6,
 			"staff": true,
@@ -24880,7 +24880,7 @@
 			"page": 13,
 			"rarity": "legendary",
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"entries": [
 				"作为动作，你可以对距你30尺内的一名可见生物挥舞这张卡牌，并尝试将其变成石头。目标必须成功通过一次{@dc 17}的体质豁免检定，否则它开始变成石头并获得{@condition 束缚}状态。受影响的目标必须在其下一回合结束时重新进行豁免检定。豁免成功时，目标身上的此效果结束。豁免失败时，目标获得{@condition 石化}状态（取代{@condition 束缚}状态），直到通过{@spell 高等复原术}法术或类似魔法将石化移除为止。这一属性一经使用，直到次日黎明之前无法再次使用。"
 			],
@@ -24894,10 +24894,10 @@
 			"page": 35,
 			"baseItem": "盾牌|PHB",
 			"resist": [
-				"毒素"
+				"poison"
 			],
 			"conditionImmune": [
-				"石化"
+				"petrified"
 			],
 			"rarity": "legendary",
 			"reqAttune": true,
@@ -25213,12 +25213,12 @@
 				"维克那法眼|XDMG"
 			],
 			"conditionImmune": [
-				"疾病"
+				"disease"
 			],
 			"rarity": "artifact",
 			"reqAttune": true,
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d4 + 4}",
 			"charges": 8,
 			"entries": [
@@ -25318,7 +25318,7 @@
 			"rarity": "artifact",
 			"reqAttune": true,
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d4 + 4}",
 			"charges": 8,
 			"entries": [
@@ -25500,7 +25500,7 @@
 			"rarity": "uncommon",
 			"reqAttune": true,
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": 3,
 			"charges": 3,
 			"entries": [
@@ -25531,7 +25531,7 @@
 			"rarity": "uncommon",
 			"reqAttune": true,
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": 3,
 			"charges": 3,
 			"entries": [
@@ -25773,7 +25773,7 @@
 				}
 			],
 			"weight": 1,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 1}",
 			"charges": 2,
 			"entries": [
@@ -25977,7 +25977,7 @@
 			"page": 13,
 			"rarity": "legendary",
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"entries": [
 				"作为附赠动作，你可以对距你30尺内的一名可见自愿生物挥舞这张卡牌，赋予该生物对未来的瞬间洞察。直到你的下一个回合开始，该生物在攻击检定、属性检定和豁免检定上具有优势。此外，其他生物在持续时间内对该目标的攻击检定具有劣势。这一属性一经使用，直到次日黎明之前无法再次使用。"
 			],
@@ -27284,7 +27284,7 @@
 			"source": "TCE",
 			"page": 119,
 			"resist": [
-				"火焰"
+				"fire"
 			],
 			"detail1": "红",
 			"rarity": "very rare",
@@ -27413,7 +27413,7 @@
 			"page": 13,
 			"rarity": "legendary",
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"entries": [
 				"你可以使用这张卡牌召唤一个魔鬼。这张卡牌与{@filter 一个挑战等级为8或更低的特定魔鬼|bestiary|source=|Challenge Rating=[&0;&8]|tag=魔鬼|miscellaneous=}同调。作为动作，你可以举起这张卡牌，召唤该魔鬼，它将出现在距你30尺内可见的未被占用空间内。魔鬼对你和你的同伴的初始态度为敌意。为魔鬼掷先攻，它拥有自己的回合。由DM决定该生物的数据卡。你在每个回合都可以对魔鬼发出口头命令（无需动作），只要你握住这张卡牌，魔鬼就会听从你的命令。否则，魔鬼将受DM控制并根据其本性行事，如果认为可以取胜，它可能会攻击你，或者试图引诱你进行邪恶行为以换取进一步的服务。1分钟后或当魔鬼的生命值降至0时，它将返回下层位面。这一属性一经使用，直到次日黎明之前无法再次使用。"
 			],
@@ -27815,7 +27815,7 @@
 			"page": 13,
 			"rarity": "legendary",
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"entries": [
 				"作为动作，你可以对距你30尺内的一名可见生物挥舞这张卡牌。目标必须成功通过一次{@dc 17}的感知豁免，否则在接下来的一分钟内，目标无法施法或激活魔法物品，在所有豁免检定上都有劣势，且其他生物对其造成的所有伤害都有抗性。这一属性一经使用，直到次日黎明之前无法再次使用。"
 			],
@@ -27827,7 +27827,7 @@
 			"source": "TCE",
 			"page": 119,
 			"resist": [
-				"力场"
+				"force"
 			],
 			"detail1": "白",
 			"rarity": "very rare",
@@ -28108,7 +28108,7 @@
 			],
 			"wondrous": true,
 			"weight": 3,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"focus": [
@@ -28145,7 +28145,7 @@
 			"rarity": "rare",
 			"reqAttune": true,
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": 3,
 			"charges": 3,
 			"entries": [
@@ -28467,7 +28467,7 @@
 			"page": 14,
 			"rarity": "legendary",
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"entries": [
 				"这张卡牌储存了一道6环法术（由DM选择）。作为动作，你可以挥舞这张卡牌并用其施放存储的法术（法术攻击加值+9，豁免{@dc 17}）。这一特性一经使用，直到次日黎明之前无法再次使用。"
 			],
@@ -28605,7 +28605,7 @@
 			"reqAttune": true,
 			"wondrous": true,
 			"weight": 1,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -28630,7 +28630,7 @@
 			"rarity": "rare",
 			"reqAttune": true,
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -28696,14 +28696,14 @@
 			"source": "TCE",
 			"page": 128,
 			"conditionImmune": [
-				"受擒",
-				"束缚"
+				"grappled",
+				"restrained"
 			],
 			"rarity": "very rare",
 			"reqAttune": true,
 			"wondrous": true,
 			"tattoo": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": 3,
 			"charges": 3,
 			"entries": [
@@ -29498,7 +29498,7 @@
 				"金龙鳞甲|XDMG"
 			],
 			"resist": [
-				"火焰"
+				"fire"
 			],
 			"tier": "主要",
 			"rarity": "very rare",
@@ -29522,7 +29522,7 @@
 			"basicRules2024": true,
 			"baseItem": "鳞甲|xphb",
 			"resist": [
-				"火焰"
+				"fire"
 			],
 			"detail1": "金",
 			"rarity": "very rare",
@@ -29775,7 +29775,7 @@
 			"page": 178,
 			"rarity": "uncommon",
 			"reqAttune": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -29988,10 +29988,10 @@
 			"page": 89,
 			"baseItem": "巨剑|phb",
 			"resist": [
-				"心灵"
+				"psychic"
 			],
 			"conditionImmune": [
-				"魅惑"
+				"charmed"
 			],
 			"rarity": "legendary",
 			"reqAttune": "由被具有心灵感应能力的生物",
@@ -30020,7 +30020,7 @@
 			"source": "WBtW",
 			"page": 208,
 			"resist": [
-				"毒素"
+				"poison"
 			],
 			"detail1": "释放绿色气体",
 			"rarity": "rare",
@@ -30058,7 +30058,7 @@
 				"RoT"
 			],
 			"resist": [
-				"毒素"
+				"poison"
 			],
 			"rarity": "legendary",
 			"reqAttune": true,
@@ -30135,7 +30135,7 @@
 				"绿龙鳞甲|XDMG"
 			],
 			"resist": [
-				"毒素"
+				"poison"
 			],
 			"tier": "主要",
 			"rarity": "very rare",
@@ -30159,7 +30159,7 @@
 			"basicRules2024": true,
 			"baseItem": "鳞甲|xphb",
 			"resist": [
-				"毒素"
+				"poison"
 			],
 			"detail1": "绿",
 			"rarity": "very rare",
@@ -30474,7 +30474,7 @@
 			"page": 178,
 			"rarity": "uncommon",
 			"reqAttune": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -30527,7 +30527,7 @@
 				}
 			],
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": 3,
 			"charges": 3,
 			"entries": [
@@ -30551,7 +30551,7 @@
 			"dmg1": "1d6",
 			"dmgType": "B",
 			"dmg2": "1d8",
-			"recharge": "黄昏",
+			"recharge": "dusk",
 			"rechargeAmount": "{@dice 1d6 + 4}",
 			"charges": 10,
 			"staff": true,
@@ -30731,7 +30731,7 @@
 			"page": 265,
 			"rarity": "uncommon",
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": 3,
 			"charges": 3,
 			"entries": [
@@ -30802,7 +30802,7 @@
 			"dmgType": "B",
 			"dmg2": "1d10",
 			"bonusWeapon": "+3",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -30838,7 +30838,7 @@
 				"str": 4
 			},
 			"bonusWeapon": "+1",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d4 + 1}",
 			"charges": 5,
 			"entries": [
@@ -30910,7 +30910,7 @@
 				"维克那魔掌|XDMG"
 			],
 			"conditionImmune": [
-				"疾病"
+				"disease"
 			],
 			"rarity": "artifact",
 			"reqAttune": true,
@@ -30920,7 +30920,7 @@
 					"str": 20
 				}
 			},
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d4 + 4}",
 			"charges": 8,
 			"entries": [
@@ -31024,7 +31024,7 @@
 					"str": 20
 				}
 			},
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d4 + 4}",
 			"charges": 8,
 			"entries": [
@@ -31568,7 +31568,7 @@
 			"page": 267,
 			"rarity": "common",
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": 3,
 			"charges": 3,
 			"entries": [
@@ -31591,7 +31591,7 @@
 			"tier": "次要",
 			"rarity": "common",
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": 3,
 			"charges": 3,
 			"entries": [
@@ -31606,7 +31606,7 @@
 			"rarity": "uncommon",
 			"reqAttune": true,
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": 3,
 			"charges": 3,
 			"entries": [
@@ -31721,7 +31721,7 @@
 			"dmg1": "2d6",
 			"dmgType": "S",
 			"bonusWeapon": "+1",
-			"recharge": "午夜",
+			"recharge": "midnight",
 			"rechargeAmount": "{@dice 1d4}",
 			"charges": 4,
 			"entries": [
@@ -31902,7 +31902,7 @@
 			],
 			"wondrous": true,
 			"weight": 3,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"focus": [
@@ -32036,7 +32036,7 @@
 				"光辉头盔|XDMG"
 			],
 			"resist": [
-				"火焰"
+				"fire"
 			],
 			"tier": "主要",
 			"rarity": "very rare",
@@ -32094,7 +32094,7 @@
 			"srd52": true,
 			"basicRules2024": true,
 			"resist": [
-				"火焰"
+				"fire"
 			],
 			"rarity": "very rare",
 			"reqAttune": true,
@@ -32238,7 +32238,7 @@
 				}
 			],
 			"wondrous": true,
-			"recharge": "特殊",
+			"recharge": "special",
 			"charges": 3,
 			"entries": [
 				"这款笨重的无眼头盔是专为{@creature 深狱炼魔}制造的，但它会魔法性的适配非炼魔佩戴者的头部大小。",
@@ -32308,7 +32308,7 @@
 			"rarity": "artifact",
 			"reqAttune": true,
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6}",
 			"charges": 6,
 			"entries": [
@@ -32468,7 +32468,7 @@
 			"rarity": "rare",
 			"reqAttune": true,
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -32496,7 +32496,7 @@
 			"rarity": "rare",
 			"reqAttune": true,
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -32523,7 +32523,7 @@
 			"rarity": "rare",
 			"reqAttune": true,
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -32922,7 +32922,7 @@
 			"dmgType": "S",
 			"dmg2": "1d10",
 			"bonusWeapon": "+3",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d4 + 1}",
 			"charges": 6,
 			"entries": [
@@ -33101,7 +33101,7 @@
 			"page": 269,
 			"rarity": "common",
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 4}",
 			"charges": 10,
 			"entries": [
@@ -33124,7 +33124,7 @@
 			"tier": "次要",
 			"rarity": "common",
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 4}",
 			"charges": 10,
 			"entries": [
@@ -33294,7 +33294,7 @@
 			"dmg1": "1d6",
 			"dmgType": "B",
 			"dmg2": "1d8",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d4}",
 			"charges": 4,
 			"staff": true,
@@ -33345,7 +33345,7 @@
 				}
 			],
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 4}",
 			"charges": 10,
 			"entries": [
@@ -33729,7 +33729,7 @@
 			"baseItem": "号角|xphb",
 			"rarity": "common",
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d4}",
 			"charges": 4,
 			"entries": [
@@ -33754,7 +33754,7 @@
 			"tier": "次要",
 			"rarity": "common",
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d4}",
 			"charges": 4,
 			"entries": [
@@ -34556,7 +34556,7 @@
 			"weight": 10,
 			"ac": 11,
 			"bonusAc": "+1",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -35506,7 +35506,7 @@
 			"page": 271,
 			"rarity": "common",
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": 3,
 			"charges": 3,
 			"entries": [
@@ -35534,7 +35534,7 @@
 			"rarity": "common",
 			"reqAttune": true,
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": 3,
 			"charges": 3,
 			"entries": [
@@ -37470,7 +37470,7 @@
 			"page": 224,
 			"baseItem": "战镐|phb",
 			"resist": [
-				"强酸"
+				"acid"
 			],
 			"rarity": "legendary",
 			"reqAttune": true,
@@ -37480,7 +37480,7 @@
 			"dmgType": "P",
 			"grantsLanguage": true,
 			"bonusWeapon": "+2",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -37572,7 +37572,7 @@
 			"page": 178,
 			"rarity": "uncommon",
 			"reqAttune": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -37924,7 +37924,7 @@
 			"page": 14,
 			"rarity": "legendary",
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"entries": [
 				"作为动作，你可以挥舞这张卡牌并用其施放{@spell 奥图迷舞}法术（豁免{@dc 17}），并且你在为维持{@status 专注}的体质豁免检定上具有优势。这一属性一经使用，直到次日黎明之前无法再次使用。"
 			],
@@ -38080,7 +38080,7 @@
 				"Vst|EGW"
 			],
 			"bonusAc": "+1",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": 3,
 			"charges": 3,
 			"entries": [
@@ -38444,7 +38444,7 @@
 			"page": 14,
 			"rarity": "legendary",
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "5",
 			"charges": 5,
 			"entries": [
@@ -38618,7 +38618,7 @@
 			"dmgType": "P",
 			"dmg2": "1d8",
 			"bonusWeapon": "+3",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 4}",
 			"charges": 10,
 			"entries": [
@@ -38842,7 +38842,7 @@
 			"page": 14,
 			"rarity": "legendary",
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"entries": [
 				"作为动作，你可以将这张卡牌投向距你60尺内地面上的一个未占据空间，同时说出命令语，随后卡牌会魔法性地变成一只{@creature 牌组守卫|BMT}（其数据卡参见{@book 第九章|BMT|8|牌组守卫}），持续最多1分钟或直到你再次用一个动作说出命令语，届时它会变回一张卡牌。牌组守卫遵循你的口头命令。如果你没有发布命令，它会采取{@action 回避}动作并移动以躲避危险。如果牌组守卫的生命值降至0，它会提前变回一张卡牌。这一属性一经使用，直到次日黎明之前无法再次使用。"
 			],
@@ -38865,7 +38865,7 @@
 			"dmg1": "1d4",
 			"dmgType": "B",
 			"bonusWeapon": "+3",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 4}",
 			"charges": 10,
 			"entries": [
@@ -38900,11 +38900,11 @@
 			"source": "ERLW",
 			"page": 278,
 			"resist": [
-				"强酸",
-				"毒素"
+				"acid",
+				"poison"
 			],
 			"conditionImmune": [
-				"中毒"
+				"poisoned"
 			],
 			"rarity": "very rare",
 			"reqAttune": true,
@@ -39603,7 +39603,7 @@
 			"page": 55,
 			"baseItem": "皮甲|phb",
 			"resist": [
-				"闪电"
+				"lightning"
 			],
 			"rarity": "rare",
 			"reqAttune": true,
@@ -39694,7 +39694,7 @@
 			],
 			"wondrous": true,
 			"weight": 3,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"focus": [
@@ -39728,7 +39728,7 @@
 			"source": "TCE",
 			"page": 129,
 			"resist": [
-				"暗蚀"
+				"necrotic"
 			],
 			"rarity": "very rare",
 			"reqAttune": true,
@@ -39807,7 +39807,7 @@
 			"source": "TCE",
 			"page": 119,
 			"resist": [
-				"闪电"
+				"lightning"
 			],
 			"detail1": "黄",
 			"rarity": "very rare",
@@ -40186,7 +40186,7 @@
 			"dmg1": "1d8",
 			"dmgType": "P",
 			"bonusWeapon": "+3",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d4 + 1}",
 			"charges": 8,
 			"entries": [
@@ -40384,7 +40384,7 @@
 				}
 			],
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -40451,12 +40451,12 @@
 			"source": "PotA",
 			"page": 223,
 			"resist": [
-				"心灵"
+				"psychic"
 			],
 			"rarity": "legendary",
 			"reqAttune": true,
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -41070,7 +41070,7 @@
 			"weaponCategory": "simple",
 			"dmg1": "1d6",
 			"dmgType": "B",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -41099,7 +41099,7 @@
 			],
 			"dmg1": "1d6",
 			"dmgType": "B",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -41158,8 +41158,8 @@
 			"page": 276,
 			"baseItem": "硬头锤|PHB",
 			"resist": [
-				"火焰",
-				"毒素"
+				"fire",
+				"poison"
 			],
 			"rarity": "artifact",
 			"reqAttune": true,
@@ -42039,7 +42039,7 @@
 			"dmg1": "1d6",
 			"dmgType": "B",
 			"dmg2": "1d8",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d4}",
 			"charges": 4,
 			"staff": true,
@@ -42084,7 +42084,7 @@
 			"source": "NF",
 			"rarity": "common",
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -42107,7 +42107,7 @@
 			"rarity": "uncommon",
 			"wondrous": true,
 			"weight": 1,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": 3,
 			"charges": 3,
 			"entries": [
@@ -42403,7 +42403,7 @@
 			"page": 224,
 			"baseItem": "战锤|phb",
 			"immune": [
-				"寒冷"
+				"cold"
 			],
 			"rarity": "legendary",
 			"reqAttune": true,
@@ -42604,7 +42604,7 @@
 			"reqAttune": true,
 			"wondrous": true,
 			"weight": 1,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -42636,7 +42636,7 @@
 			"reqAttune": true,
 			"wondrous": true,
 			"weight": 1,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d4}",
 			"charges": 5,
 			"entries": [
@@ -43094,7 +43094,7 @@
 			"page": 112,
 			"rarity": "uncommon",
 			"reqAttune": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d4}",
 			"charges": 4,
 			"entries": [
@@ -43124,7 +43124,7 @@
 			"source": "PaBTSO",
 			"page": 218,
 			"resist": [
-				"心灵"
+				"psychic"
 			],
 			"rarity": "very rare",
 			"reqAttune": true,
@@ -43273,7 +43273,7 @@
 			"source": "BGG",
 			"page": 114,
 			"resist": [
-				"寒冷"
+				"cold"
 			],
 			"rarity": "very rare",
 			"reqAttune": true,
@@ -43516,7 +43516,7 @@
 			"page": 179,
 			"rarity": "rare",
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d4}",
 			"charges": 4,
 			"entries": [
@@ -43630,14 +43630,14 @@
 			"source": "BMT",
 			"page": 14,
 			"resist": [
-				"钝击",
-				"力场",
-				"穿刺",
-				"挥砍"
+				"bludgeoning",
+				"force",
+				"piercing",
+				"slashing"
 			],
 			"rarity": "legendary",
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"entries": [
 				"作为动作，你可以触摸这张卡牌并说出命令语，在随后的1分钟内变成一只似狼的双足生物。在此期间，你获得对钝击、穿刺和挥砍伤害的抗性，且当你用武器或徒手打击命中目标时，目标会额外受到{@damage 1d6}点力场伤害。这一属性一经使用，直到次日黎明之前无法再次使用。"
 			],
@@ -44076,7 +44076,7 @@
 			"source": "EGW",
 			"page": 70,
 			"resist": [
-				"火焰"
+				"fire"
 			],
 			"rarity": "none",
 			"value": 10000,
@@ -44139,7 +44139,7 @@
 			"rarity": "rare",
 			"reqAttune": true,
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d10}",
 			"charges": 10,
 			"entries": [
@@ -44996,7 +44996,7 @@
 			"source": "TCE",
 			"page": 119,
 			"resist": [
-				"暗蚀"
+				"necrotic"
 			],
 			"detail1": "黑",
 			"rarity": "very rare",
@@ -45211,15 +45211,15 @@
 			"page": 14,
 			"baseItem": "硬头锤|PHB",
 			"immune": [
-				"强酸",
-				"寒冷",
-				"火焰",
-				"闪电",
-				"毒素"
+				"acid",
+				"cold",
+				"fire",
+				"lightning",
+				"poison"
 			],
 			"conditionImmune": [
-				"魅惑",
-				"恐慌"
+				"charmed",
+				"frightened"
 			],
 			"rarity": "legendary",
 			"reqAttune": true,
@@ -45228,7 +45228,7 @@
 			"dmg1": "1d6",
 			"dmgType": "B",
 			"bonusWeapon": "+3",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6}",
 			"charges": 6,
 			"entries": [
@@ -45323,7 +45323,7 @@
 			"dmg1": "1d6",
 			"dmgType": "B",
 			"bonusWeaponAttack": "+9",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6}",
 			"charges": 6,
 			"entries": [
@@ -46186,7 +46186,7 @@
 			"source": "SKT",
 			"page": 235,
 			"resist": [
-				"寒冷"
+				"cold"
 			],
 			"rarity": "rare",
 			"reqAttune": true,
@@ -46254,7 +46254,7 @@
 			"rarity": "artifact",
 			"reqAttune": true,
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d4 + 2}",
 			"charges": 6,
 			"entries": [
@@ -46483,7 +46483,7 @@
 			"reqAttune": true,
 			"wondrous": true,
 			"weight": 3,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d4 + 3}",
 			"charges": 7,
 			"entries": [
@@ -46564,7 +46564,7 @@
 			"reqAttune": true,
 			"wondrous": true,
 			"weight": 3,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d4 + 3}",
 			"charges": 7,
 			"entries": [
@@ -46697,7 +46697,7 @@
 			"wondrous": true,
 			"weight": 8,
 			"bonusSavingThrowConcentration": "+2",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": 3,
 			"charges": 3,
 			"entries": [
@@ -46772,7 +46772,7 @@
 			"source": "SKT",
 			"page": 235,
 			"conditionImmune": [
-				"石化"
+				"petrified"
 			],
 			"rarity": "rare",
 			"reqAttune": true,
@@ -46936,8 +46936,8 @@
 			"page": 224,
 			"baseItem": "巨斧|phb",
 			"conditionImmune": [
-				"恐慌",
-				"失能"
+				"frightened",
+				"incapacitated"
 			],
 			"rarity": "legendary",
 			"reqAttune": "由善良阵营的矮人、战士或圣武士",
@@ -47095,7 +47095,7 @@
 			"reqAttune": true,
 			"wondrous": true,
 			"bonusAc": "+1",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d4 + 4}",
 			"charges": 7,
 			"entries": [
@@ -47186,7 +47186,7 @@
 			"page": 178,
 			"rarity": "uncommon",
 			"reqAttune": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -48115,10 +48115,10 @@
 				"辟毒护符|XDMG"
 			],
 			"immune": [
-				"毒素"
+				"poison"
 			],
 			"conditionImmune": [
-				"中毒"
+				"poisoned"
 			],
 			"tier": "主要",
 			"rarity": "rare",
@@ -48139,7 +48139,7 @@
 			"srd52": true,
 			"basicRules2024": true,
 			"immune": [
-				"毒素"
+				"poison"
 			],
 			"rarity": "rare",
 			"reqAttune": true,
@@ -48262,7 +48262,7 @@
 			"source": "ToA",
 			"page": 144,
 			"resist": [
-				"毒素"
+				"poison"
 			],
 			"rarity": "unknown (magic)",
 			"reqAttune": "由施法者",
@@ -48507,7 +48507,7 @@
 			"rarity": "uncommon",
 			"wondrous": true,
 			"weight": 2,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -48530,7 +48530,7 @@
 			"basicRules2024": true,
 			"rarity": "uncommon",
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -48579,7 +48579,7 @@
 			"reqAttune": true,
 			"wondrous": true,
 			"weight": 2,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -48605,7 +48605,7 @@
 			"rarity": "uncommon",
 			"reqAttune": true,
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -48793,7 +48793,7 @@
 			],
 			"wondrous": true,
 			"weight": 3,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"focus": [
@@ -49098,7 +49098,7 @@
 			"source": "TCE",
 			"page": 119,
 			"resist": [
-				"毒素"
+				"poison"
 			],
 			"detail1": "紫",
 			"rarity": "very rare",
@@ -49623,7 +49623,7 @@
 				"强酸抗性药水|XDMG"
 			],
 			"resist": [
-				"强酸"
+				"acid"
 			],
 			"tier": "次要",
 			"rarity": "uncommon",
@@ -49648,7 +49648,7 @@
 				"WttHC"
 			],
 			"resist": [
-				"强酸"
+				"acid"
 			],
 			"rarity": "uncommon",
 			"weight": 0.5,
@@ -49984,7 +49984,7 @@
 				"寒冷抗性药水|XDMG"
 			],
 			"resist": [
-				"寒冷"
+				"cold"
 			],
 			"tier": "次要",
 			"rarity": "uncommon",
@@ -50006,7 +50006,7 @@
 			"srd52": true,
 			"basicRules2024": true,
 			"resist": [
-				"寒冷"
+				"cold"
 			],
 			"rarity": "uncommon",
 			"weight": 0.5,
@@ -50332,7 +50332,7 @@
 				"火焰抗性药水|XDMG"
 			],
 			"resist": [
-				"火焰"
+				"fire"
 			],
 			"tier": "次要",
 			"rarity": "uncommon",
@@ -50354,7 +50354,7 @@
 			"srd52": true,
 			"basicRules2024": true,
 			"resist": [
-				"火焰"
+				"fire"
 			],
 			"rarity": "uncommon",
 			"weight": 0.5,
@@ -50451,7 +50451,7 @@
 				"力场抗性药水|XDMG"
 			],
 			"resist": [
-				"力场"
+				"force"
 			],
 			"tier": "次要",
 			"rarity": "uncommon",
@@ -50473,7 +50473,7 @@
 			"srd52": true,
 			"basicRules2024": true,
 			"resist": [
-				"力场"
+				"force"
 			],
 			"rarity": "uncommon",
 			"weight": 0.5,
@@ -51162,19 +51162,19 @@
 				"坚不可摧药水|XDMG"
 			],
 			"resist": [
-				"强酸",
-				"钝击",
-				"寒冷",
-				"火焰",
-				"力场",
-				"闪电",
-				"暗蚀",
-				"穿刺",
-				"毒素",
-				"心灵",
-				"光耀",
-				"挥砍",
-				"雷鸣"
+				"acid",
+				"bludgeoning",
+				"cold",
+				"fire",
+				"force",
+				"lightning",
+				"necrotic",
+				"piercing",
+				"poison",
+				"psychic",
+				"radiant",
+				"slashing",
+				"thunder"
 			],
 			"tier": "次要",
 			"rarity": "rare",
@@ -51197,19 +51197,19 @@
 			"srd52": true,
 			"basicRules2024": true,
 			"resist": [
-				"强酸",
-				"钝击",
-				"寒冷",
-				"火焰",
-				"力场",
-				"闪电",
-				"暗蚀",
-				"穿刺",
-				"毒素",
-				"心灵",
-				"光耀",
-				"挥砍",
-				"雷鸣"
+				"acid",
+				"bludgeoning",
+				"cold",
+				"fire",
+				"force",
+				"lightning",
+				"necrotic",
+				"piercing",
+				"poison",
+				"psychic",
+				"radiant",
+				"slashing",
+				"thunder"
 			],
 			"rarity": "rare",
 			"weight": 0.5,
@@ -51242,7 +51242,7 @@
 				"闪电抗性药水|XDMG"
 			],
 			"resist": [
-				"闪电"
+				"lightning"
 			],
 			"tier": "次要",
 			"rarity": "uncommon",
@@ -51264,7 +51264,7 @@
 			"srd52": true,
 			"basicRules2024": true,
 			"resist": [
-				"闪电"
+				"lightning"
 			],
 			"rarity": "uncommon",
 			"weight": 0.5,
@@ -51478,7 +51478,7 @@
 				"暗蚀抗性药水|XDMG"
 			],
 			"resist": [
-				"暗蚀"
+				"necrotic"
 			],
 			"tier": "次要",
 			"rarity": "uncommon",
@@ -51503,7 +51503,7 @@
 				"HotB"
 			],
 			"resist": [
-				"暗蚀"
+				"necrotic"
 			],
 			"rarity": "uncommon",
 			"weight": 0.5,
@@ -51596,7 +51596,7 @@
 				"毒素抗性药水|XDMG"
 			],
 			"resist": [
-				"毒素"
+				"poison"
 			],
 			"tier": "次要",
 			"rarity": "uncommon",
@@ -51618,7 +51618,7 @@
 			"srd52": true,
 			"basicRules2024": true,
 			"resist": [
-				"毒素"
+				"poison"
 			],
 			"rarity": "uncommon",
 			"weight": 0.5,
@@ -51692,7 +51692,7 @@
 				"心灵抗性药水|XDMG"
 			],
 			"resist": [
-				"心灵"
+				"psychic"
 			],
 			"tier": "次要",
 			"rarity": "uncommon",
@@ -51714,7 +51714,7 @@
 			"srd52": true,
 			"basicRules2024": true,
 			"resist": [
-				"心灵"
+				"psychic"
 			],
 			"rarity": "uncommon",
 			"weight": 0.5,
@@ -51761,7 +51761,7 @@
 				"光耀抗性药水|XDMG"
 			],
 			"resist": [
-				"光耀"
+				"radiant"
 			],
 			"tier": "次要",
 			"rarity": "uncommon",
@@ -51783,7 +51783,7 @@
 			"srd52": true,
 			"basicRules2024": true,
 			"resist": [
-				"光耀"
+				"radiant"
 			],
 			"rarity": "uncommon",
 			"weight": 0.5,
@@ -52110,7 +52110,7 @@
 				"雷鸣抗性药水|XDMG"
 			],
 			"resist": [
-				"雷鸣"
+				"thunder"
 			],
 			"tier": "次要",
 			"rarity": "uncommon",
@@ -52132,7 +52132,7 @@
 			"srd52": true,
 			"basicRules2024": true,
 			"resist": [
-				"雷鸣"
+				"thunder"
 			],
 			"rarity": "uncommon",
 			"weight": 0.5,
@@ -52783,7 +52783,7 @@
 				}
 			],
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -52857,7 +52857,7 @@
 				}
 			],
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6}",
 			"charges": 6,
 			"entries": [
@@ -53035,7 +53035,7 @@
 			],
 			"wondrous": true,
 			"weight": 3,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"focus": [
@@ -53183,7 +53183,7 @@
 			"source": "TCE",
 			"page": 119,
 			"resist": [
-				"心灵"
+				"psychic"
 			],
 			"detail1": "银",
 			"rarity": "very rare",
@@ -53355,7 +53355,7 @@
 			"page": 14,
 			"rarity": "legendary",
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"entries": [
 				"作为动作，你可以举起这张卡片并魔法性地解除距你60尺内的所有陷阱（位于{@quickref 掩护||3||全身掩护}后的除外）。会被此特性解除的陷阱包括任何可能引发的，对你有害或对你构成妨碍的突发性意外效应，而其性质也正是其创作者的意图。如果陷阱是法术的效果，比如{@spell 警报术}，则该陷阱被压制10分钟而不是被解除。这一特性一经使用，直到次日黎明之前无法再次使用。"
 			],
@@ -53742,7 +53742,7 @@
 				}
 			],
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -53916,7 +53916,7 @@
 			"rarity": "artifact",
 			"reqAttune": true,
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 1}",
 			"charges": 6,
 			"entries": [
@@ -54232,7 +54232,7 @@
 			"source": "TCE",
 			"page": 119,
 			"resist": [
-				"光耀"
+				"radiant"
 			],
 			"detail1": "金",
 			"rarity": "very rare",
@@ -54266,7 +54266,7 @@
 			"page": 178,
 			"rarity": "uncommon",
 			"reqAttune": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -54518,7 +54518,7 @@
 			"source": "WBtW",
 			"page": 208,
 			"resist": [
-				"火焰"
+				"fire"
 			],
 			"detail1": "被火焰包围",
 			"rarity": "rare",
@@ -54544,7 +54544,7 @@
 				"RoT"
 			],
 			"resist": [
-				"火焰"
+				"fire"
 			],
 			"rarity": "legendary",
 			"reqAttune": true,
@@ -54621,7 +54621,7 @@
 				"红龙鳞甲|XDMG"
 			],
 			"resist": [
-				"火焰"
+				"fire"
 			],
 			"tier": "主要",
 			"rarity": "very rare",
@@ -54645,7 +54645,7 @@
 			"basicRules2024": true,
 			"baseItem": "鳞甲|xphb",
 			"resist": [
-				"火焰"
+				"fire"
 			],
 			"detail1": "红",
 			"rarity": "very rare",
@@ -54824,12 +54824,12 @@
 			"weight": 6,
 			"ac": 2,
 			"bonusAc": "+1",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d4}",
 			"charges": 4,
 			"entries": [
 				"当你持用这面盾牌时，你的{@variantrule 护甲等级|XPHB}获得+1加值。",
-				"该盾牌有4充能。当你持握它时，当一个距你5尺内的大型或更小生物以近战攻击命中你时，你可以采取一个{@variantrule 反应|XPHB}来消耗该盾牌的1充能并将攻击者直线推离至多15尺。该盾牌在拂晓时恢复{@dice 1d4}已消耗的充能。"
+				"该盾牌有4充能。当你持握它时，当一个距你5尺内的大型或更小生物以近战攻击命中你时，你可以采取一个{@variantrule 反应|XPHB}来消耗该盾牌的1充能并将攻击手直线推离至多15尺。该盾牌在拂晓时恢复{@dice 1d4}已消耗的充能。"
 			],
 			"classFeatures": [
 				"仿制魔法物品|奇械师|efa|2|efa"
@@ -55001,7 +55001,7 @@
 				"强酸抗性戒指|XDMG"
 			],
 			"resist": [
-				"强酸"
+				"acid"
 			],
 			"detail1": "珍珠",
 			"tier": "主要",
@@ -55025,7 +55025,7 @@
 				"DrDe-BtS"
 			],
 			"resist": [
-				"强酸"
+				"acid"
 			],
 			"detail1": "珍珠",
 			"rarity": "rare",
@@ -55045,7 +55045,7 @@
 				"命令元素戒指（气）|XDMG"
 			],
 			"resist": [
-				"闪电"
+				"lightning"
 			],
 			"tier": "主要",
 			"rarity": "legendary",
@@ -55055,7 +55055,7 @@
 					"fly": "走"
 				}
 			},
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d4 + 1}",
 			"charges": 5,
 			"entries": [
@@ -55133,7 +55133,7 @@
 			],
 			"tier": "主要",
 			"rarity": "rare",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -55170,7 +55170,7 @@
 			"srd52": true,
 			"basicRules2024": true,
 			"rarity": "rare",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -55233,7 +55233,7 @@
 				"寒冷抗性戒指|XDMG"
 			],
 			"resist": [
-				"寒冷"
+				"cold"
 			],
 			"detail1": "电气石",
 			"tier": "主要",
@@ -55254,7 +55254,7 @@
 			"srd52": true,
 			"basicRules2024": true,
 			"resist": [
-				"寒冷"
+				"cold"
 			],
 			"detail1": "电气石",
 			"rarity": "rare",
@@ -55356,12 +55356,12 @@
 				"命令元素戒指（土）|XDMG"
 			],
 			"resist": [
-				"强酸"
+				"acid"
 			],
 			"tier": "主要",
 			"rarity": "legendary",
 			"reqAttune": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d4 + 1}",
 			"charges": 5,
 			"entries": [
@@ -55403,7 +55403,7 @@
 			"srd52": true,
 			"basicRules2024": true,
 			"resist": [
-				"闪电"
+				"lightning"
 			],
 			"rarity": "legendary",
 			"reqAttune": true,
@@ -55413,7 +55413,7 @@
 					"fly": "走"
 				}
 			},
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d4 + 1}",
 			"charges": 5,
 			"entries": [
@@ -55501,12 +55501,12 @@
 			"srd52": true,
 			"basicRules2024": true,
 			"resist": [
-				"强酸"
+				"acid"
 			],
 			"rarity": "legendary",
 			"reqAttune": true,
 			"grantsLanguage": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d4 + 1}",
 			"charges": 5,
 			"entries": [
@@ -55591,15 +55591,15 @@
 			"srd52": true,
 			"basicRules2024": true,
 			"immune": [
-				"火焰"
+				"fire"
 			],
 			"resist": [
-				"火焰"
+				"fire"
 			],
 			"rarity": "legendary",
 			"reqAttune": true,
 			"grantsLanguage": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d4 + 1}",
 			"charges": 5,
 			"entries": [
@@ -55688,7 +55688,7 @@
 			"rarity": "legendary",
 			"reqAttune": true,
 			"grantsLanguage": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d4 + 1}",
 			"charges": 5,
 			"entries": [
@@ -55786,7 +55786,7 @@
 			"tier": "主要",
 			"rarity": "rare",
 			"reqAttune": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -55810,7 +55810,7 @@
 			],
 			"rarity": "rare",
 			"reqAttune": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -55885,15 +55885,15 @@
 				"命令元素戒指（火）|XDMG"
 			],
 			"immune": [
-				"火焰"
+				"fire"
 			],
 			"resist": [
-				"火焰"
+				"fire"
 			],
 			"tier": "主要",
 			"rarity": "legendary",
 			"reqAttune": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d4 + 1}",
 			"charges": 5,
 			"entries": [
@@ -55948,7 +55948,7 @@
 				"火焰抗性戒指|XDMG"
 			],
 			"resist": [
-				"火焰"
+				"fire"
 			],
 			"detail1": "石榴石",
 			"tier": "主要",
@@ -55969,7 +55969,7 @@
 			"srd52": true,
 			"basicRules2024": true,
 			"resist": [
-				"火焰"
+				"fire"
 			],
 			"detail1": "石榴石",
 			"rarity": "rare",
@@ -55994,7 +55994,7 @@
 				"力场抗性戒指|XDMG"
 			],
 			"resist": [
-				"力场"
+				"force"
 			],
 			"detail1": "蓝宝石",
 			"tier": "主要",
@@ -56015,7 +56015,7 @@
 			"srd52": true,
 			"basicRules2024": true,
 			"resist": [
-				"力场"
+				"force"
 			],
 			"detail1": "蓝宝石",
 			"rarity": "rare",
@@ -56205,7 +56205,7 @@
 				"闪电抗性戒指|XDMG"
 			],
 			"resist": [
-				"闪电"
+				"lightning"
 			],
 			"detail1": "黄水晶",
 			"tier": "主要",
@@ -56226,7 +56226,7 @@
 			"srd52": true,
 			"basicRules2024": true,
 			"resist": [
-				"闪电"
+				"lightning"
 			],
 			"detail1": "黄水晶",
 			"rarity": "rare",
@@ -56315,7 +56315,7 @@
 				"暗蚀抗性戒指|XDMG"
 			],
 			"resist": [
-				"暗蚀"
+				"necrotic"
 			],
 			"detail1": "黑玉",
 			"tier": "主要",
@@ -56336,7 +56336,7 @@
 			"srd52": true,
 			"basicRules2024": true,
 			"resist": [
-				"暗蚀"
+				"necrotic"
 			],
 			"detail1": "黑玉",
 			"rarity": "rare",
@@ -56356,7 +56356,7 @@
 			],
 			"rarity": "uncommon",
 			"reqAttune": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -56386,7 +56386,7 @@
 				"毒素抗性戒指|XDMG"
 			],
 			"resist": [
-				"毒素"
+				"poison"
 			],
 			"detail1": "紫水晶",
 			"tier": "主要",
@@ -56407,7 +56407,7 @@
 			"srd52": true,
 			"basicRules2024": true,
 			"resist": [
-				"毒素"
+				"poison"
 			],
 			"detail1": "紫水晶",
 			"rarity": "rare",
@@ -56500,7 +56500,7 @@
 				"心灵抗性戒指|XDMG"
 			],
 			"resist": [
-				"心灵"
+				"psychic"
 			],
 			"detail1": "玉石",
 			"tier": "主要",
@@ -56521,7 +56521,7 @@
 			"srd52": true,
 			"basicRules2024": true,
 			"resist": [
-				"心灵"
+				"psychic"
 			],
 			"detail1": "玉石",
 			"rarity": "rare",
@@ -56537,7 +56537,7 @@
 			"source": "BMT",
 			"page": 37,
 			"rarity": "uncommon",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d4 - 1}",
 			"charges": 3,
 			"entries": [
@@ -56558,7 +56558,7 @@
 				"光耀抗性戒指|XDMG"
 			],
 			"resist": [
-				"光耀"
+				"radiant"
 			],
 			"detail1": "黄玉",
 			"tier": "主要",
@@ -56579,7 +56579,7 @@
 			"srd52": true,
 			"basicRules2024": true,
 			"resist": [
-				"光耀"
+				"radiant"
 			],
 			"detail1": "黄玉",
 			"rarity": "rare",
@@ -56595,8 +56595,8 @@
 			"source": "CRCotN",
 			"page": 214,
 			"conditionImmune": [
-				"麻痹",
-				"束缚"
+				"paralyzed",
+				"restrained"
 			],
 			"rarity": "very rare",
 			"reqAttune": true,
@@ -56716,7 +56716,7 @@
 			"tier": "主要",
 			"rarity": "very rare",
 			"reqAttune": "在夜晚的户外",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6}",
 			"charges": 6,
 			"entries": [
@@ -56780,7 +56780,7 @@
 			"basicRules2024": true,
 			"rarity": "very rare",
 			"reqAttune": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6}",
 			"charges": 6,
 			"entries": [
@@ -57101,7 +57101,7 @@
 			"page": 219,
 			"rarity": "uncommon",
 			"reqAttune": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6}",
 			"charges": 6,
 			"entries": [
@@ -57127,7 +57127,7 @@
 			"tier": "主要",
 			"rarity": "rare",
 			"reqAttune": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -57152,7 +57152,7 @@
 			"basicRules2024": true,
 			"rarity": "rare",
 			"reqAttune": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -57238,7 +57238,7 @@
 				"雷鸣抗性戒指|XDMG"
 			],
 			"resist": [
-				"雷鸣"
+				"thunder"
 			],
 			"detail1": "尖晶石",
 			"tier": "主要",
@@ -57259,7 +57259,7 @@
 			"srd52": true,
 			"basicRules2024": true,
 			"resist": [
-				"雷鸣"
+				"thunder"
 			],
 			"detail1": "尖晶石",
 			"rarity": "rare",
@@ -57276,7 +57276,7 @@
 			"page": 269,
 			"rarity": "very rare",
 			"reqAttune": true,
-			"recharge": "长休",
+			"recharge": "restLong",
 			"rechargeAmount": 3,
 			"charges": 3,
 			"entries": [
@@ -57313,7 +57313,7 @@
 				"温暖戒指|XDMG"
 			],
 			"resist": [
-				"寒冷"
+				"cold"
 			],
 			"tier": "主要",
 			"rarity": "uncommon",
@@ -57335,7 +57335,7 @@
 			"srd52": true,
 			"basicRules2024": true,
 			"resist": [
-				"寒冷"
+				"cold"
 			],
 			"rarity": "uncommon",
 			"reqAttune": true,
@@ -57362,7 +57362,7 @@
 			"tier": "主要",
 			"rarity": "legendary",
 			"reqAttune": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d4 + 1}",
 			"charges": 5,
 			"entries": [
@@ -57464,13 +57464,13 @@
 				"SKT"
 			],
 			"immune": [
-				"寒冷"
+				"cold"
 			],
 			"rarity": "artifact",
 			"reqAttune": true,
 			"sentient": true,
 			"weight": 1,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": 12,
 			"charges": 12,
 			"entries": [
@@ -57616,7 +57616,7 @@
 			"page": 296,
 			"rarity": "common",
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": 1,
 			"charges": 1,
 			"entries": [
@@ -57772,7 +57772,7 @@
 			"rarity": "very rare",
 			"reqAttune": true,
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -57798,7 +57798,7 @@
 			"rarity": "very rare",
 			"reqAttune": true,
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -57912,7 +57912,7 @@
 				"TftYP-WPM"
 			],
 			"resist": [
-				"寒冷"
+				"cold"
 			],
 			"rarity": "rare",
 			"reqAttune": true,
@@ -58521,8 +58521,8 @@
 			"source": "BMT",
 			"page": 37,
 			"resist": [
-				"火焰",
-				"暗蚀"
+				"fire",
+				"necrotic"
 			],
 			"rarity": "very rare",
 			"reqAttune": "由施法者",
@@ -58780,7 +58780,7 @@
 				}
 			],
 			"weight": 2,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": 1,
 			"charges": 5,
 			"entries": [
@@ -58813,7 +58813,7 @@
 			"rarity": "legendary",
 			"reqAttune": true,
 			"weight": 2,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": 1,
 			"charges": 5,
 			"entries": [
@@ -58848,7 +58848,7 @@
 			"rarity": "uncommon",
 			"reqAttune": true,
 			"weight": 2,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": 3,
 			"charges": 3,
 			"entries": [
@@ -58965,7 +58965,7 @@
 			"dmgType": "B",
 			"dmg2": "1d8",
 			"bonusWeapon": "+3",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d4 + 3}",
 			"charges": 7,
 			"entries": [
@@ -59089,7 +59089,7 @@
 			"rarity": "rare",
 			"reqAttune": true,
 			"weight": 100,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 4}",
 			"charges": 10,
 			"entries": [
@@ -59112,7 +59112,7 @@
 			"page": 14,
 			"rarity": "legendary",
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"entries": [
 				"当你持用此卡牌时以武器攻击命中一个目标，你可以对该目标造成额外{@damage 6d6}点力场伤害。这一属性一经使用，直到次日黎明之前无法再次使用。"
 			],
@@ -59505,7 +59505,7 @@
 			"rarity": "artifact",
 			"reqAttune": true,
 			"bonusWeapon": "+2",
-			"recharge": "黄昏",
+			"recharge": "dusk",
 			"rechargeAmount": "{@dice 6d6}",
 			"charges": 66,
 			"entries": [
@@ -59596,7 +59596,7 @@
 				}
 			],
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": 3,
 			"charges": 3,
 			"focus": [
@@ -59625,7 +59625,7 @@
 			"page": 215,
 			"baseItem": "盾牌|PHB",
 			"resist": [
-				"心灵"
+				"psychic"
 			],
 			"rarity": "very rare",
 			"reqAttune": true,
@@ -59681,7 +59681,7 @@
 			"page": 15,
 			"rarity": "legendary",
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"entries": [
 				"作为动作，你可以挥舞这张卡牌并用其施放{@spell 解离术}（豁免{@dc 17}）。这一特性一经使用，直到次日黎明之前无法再次使用。"
 			],
@@ -60118,7 +60118,7 @@
 			"page": 15,
 			"rarity": "legendary",
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"entries": [
 				"作为动作，你可以挥舞这张卡牌并用其施放{@spell 异界探知}法术。当你以此方式施放法术时，你的问题将由卡牌上所描绘的神秘人物回答。这一属性一经使用，直到次日黎明之前无法再次使用。"
 			],
@@ -60138,7 +60138,7 @@
 			"page": 269,
 			"rarity": "rare",
 			"wondrous": true,
-			"recharge": "黄昏",
+			"recharge": "dusk",
 			"rechargeAmount": 3,
 			"charges": 3,
 			"entries": [
@@ -60444,7 +60444,7 @@
 			"source": "BGG",
 			"page": 116,
 			"resist": [
-				"暗蚀"
+				"necrotic"
 			],
 			"rarity": "very rare",
 			"reqAttune": true,
@@ -60476,8 +60476,8 @@
 			"page": 24,
 			"baseItem": "盾牌|PHB",
 			"resist": [
-				"心灵",
-				"雷鸣"
+				"psychic",
+				"thunder"
 			],
 			"rarity": "very rare",
 			"reqAttune": true,
@@ -61775,7 +61775,7 @@
 			"page": 178,
 			"rarity": "uncommon",
 			"reqAttune": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -62230,7 +62230,7 @@
 			"source": "SKT",
 			"page": 236,
 			"resist": [
-				"火焰"
+				"fire"
 			],
 			"rarity": "very rare",
 			"reqAttune": true,
@@ -62393,7 +62393,7 @@
 			"rarity": "legendary",
 			"reqAttune": true,
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6}",
 			"charges": 6,
 			"entries": [
@@ -62440,7 +62440,7 @@
 			"rarity": "legendary",
 			"reqAttune": true,
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6}",
 			"charges": 6,
 			"entries": [
@@ -62487,7 +62487,7 @@
 			"rarity": "legendary",
 			"reqAttune": true,
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6}",
 			"charges": 6,
 			"entries": [
@@ -62536,7 +62536,7 @@
 			"rarity": "legendary",
 			"reqAttune": true,
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6}",
 			"charges": 6,
 			"entries": [
@@ -62585,7 +62585,7 @@
 			"rarity": "legendary",
 			"reqAttune": true,
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6}",
 			"charges": 6,
 			"entries": [
@@ -62911,7 +62911,7 @@
 			"page": 116,
 			"baseItem": "盾牌|PHB",
 			"immune": [
-				"火焰"
+				"fire"
 			],
 			"rarity": "legendary",
 			"reqAttune": true,
@@ -63008,7 +63008,7 @@
 			"weight": 6,
 			"ac": 2,
 			"bonusAc": "+2",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": 3,
 			"charges": 3,
 			"entries": [
@@ -63116,7 +63116,7 @@
 			"source": "WDMM",
 			"page": 299,
 			"immune": [
-				"寒冷"
+				"cold"
 			],
 			"rarity": "very rare",
 			"reqAttune": true,
@@ -63228,7 +63228,7 @@
 			"reqAttune": true,
 			"wondrous": true,
 			"curse": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -63683,7 +63683,7 @@
 				"银龙鳞甲|XDMG"
 			],
 			"resist": [
-				"寒冷"
+				"cold"
 			],
 			"tier": "主要",
 			"rarity": "very rare",
@@ -63707,7 +63707,7 @@
 			"basicRules2024": true,
 			"baseItem": "鳞甲|xphb",
 			"resist": [
-				"寒冷"
+				"cold"
 			],
 			"detail1": "银",
 			"rarity": "very rare",
@@ -63864,7 +63864,7 @@
 				}
 			],
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -63933,7 +63933,7 @@
 			"page": 178,
 			"rarity": "uncommon",
 			"reqAttune": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -64020,7 +64020,7 @@
 			"page": 15,
 			"rarity": "legendary",
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"entries": [
 				"以一个动作，你可以挥舞这张卡牌，并使用它来施放一个6环的{@spell 死神灵魄|BMT}法术（法术攻击加值{@hit 9}，豁免{@dc 17}）。此属性一旦使用，直到下一个黎明前都无法再次使用。"
 			],
@@ -64039,9 +64039,9 @@
 			"source": "BMT",
 			"page": 38,
 			"resist": [
-				"寒冷",
-				"暗蚀",
-				"毒素"
+				"cold",
+				"necrotic",
+				"poison"
 			],
 			"rarity": "very rare",
 			"reqAttune": true,
@@ -66463,7 +66463,7 @@
 			"dmg1": "1d6",
 			"dmgType": "B",
 			"dmg2": "1d8",
-			"recharge": "黄昏",
+			"recharge": "dusk",
 			"rechargeAmount": "{@dice 1d6 + 4}",
 			"charges": 10,
 			"staff": true,
@@ -66513,7 +66513,7 @@
 			"dmg1": "1d6",
 			"dmgType": "B",
 			"dmg2": "1d8",
-			"recharge": "黄昏",
+			"recharge": "dusk",
 			"rechargeAmount": "{@dice 1d6 + 4}",
 			"charges": 10,
 			"staff": true,
@@ -66591,7 +66591,7 @@
 			"page": 38,
 			"rarity": "legendary",
 			"reqAttune": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6}",
 			"charges": 6,
 			"entries": [
@@ -66665,7 +66665,7 @@
 			"page": 306,
 			"rarity": "very rare",
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": 3,
 			"charges": 3,
 			"entries": [
@@ -66716,7 +66716,7 @@
 			"rarity": "artifact",
 			"reqAttune": true,
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6}",
 			"charges": 10,
 			"entries": [
@@ -67043,7 +67043,7 @@
 			"dmg1": "1d6",
 			"dmgType": "B",
 			"dmg2": "1d8",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 4}",
 			"charges": 10,
 			"staff": true,
@@ -67085,7 +67085,7 @@
 			"dmg1": "1d6",
 			"dmgType": "B",
 			"dmg2": "1d8",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 4}",
 			"charges": 10,
 			"staff": true,
@@ -67200,7 +67200,7 @@
 			"dmg1": "1d6",
 			"dmgType": "B",
 			"dmg2": "1d8",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d8 + 2}",
 			"charges": 10,
 			"staff": true,
@@ -67280,7 +67280,7 @@
 			"dmgType": "B",
 			"dmg2": "1d8",
 			"bonusAc": "+1",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 4}",
 			"charges": 10,
 			"staff": true,
@@ -67332,7 +67332,7 @@
 			"dmgType": "B",
 			"dmg2": "1d8",
 			"bonusAc": "+1",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 4}",
 			"charges": 10,
 			"staff": true,
@@ -67379,7 +67379,7 @@
 			"dmg1": "1d6",
 			"dmgType": "B",
 			"dmg2": "1d8",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 4}",
 			"charges": 10,
 			"staff": true,
@@ -67427,7 +67427,7 @@
 			"dmgType": "B",
 			"dmg2": "1d8",
 			"bonusWeapon": "+3",
-			"recharge": "特殊",
+			"recharge": "special",
 			"charges": 6,
 			"staff": true,
 			"entries": [
@@ -67458,7 +67458,7 @@
 				"火焰法杖|XDMG"
 			],
 			"resist": [
-				"火焰"
+				"fire"
 			],
 			"tier": "主要",
 			"rarity": "very rare",
@@ -67485,7 +67485,7 @@
 			"dmg1": "1d6",
 			"dmgType": "B",
 			"dmg2": "1d8",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 4}",
 			"charges": 10,
 			"staff": true,
@@ -67521,7 +67521,7 @@
 			"srd52": true,
 			"basicRules2024": true,
 			"resist": [
-				"火焰"
+				"fire"
 			],
 			"rarity": "very rare",
 			"reqAttune": "由德鲁伊、术士、魔契师或法师",
@@ -67550,7 +67550,7 @@
 			"dmg1": "1d6",
 			"dmgType": "B",
 			"dmg2": "1d8",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 4}",
 			"charges": 10,
 			"staff": true,
@@ -67636,7 +67636,7 @@
 			"dmg1": "1d6",
 			"dmgType": "B",
 			"dmg2": "1d8",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 4}",
 			"charges": 10,
 			"staff": true,
@@ -67676,7 +67676,7 @@
 			"dmg1": "1d6",
 			"dmgType": "B",
 			"dmg2": "1d8",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 4}",
 			"charges": 10,
 			"staff": true,
@@ -67704,7 +67704,7 @@
 				"冰霜法杖|XDMG"
 			],
 			"resist": [
-				"寒冷"
+				"cold"
 			],
 			"tier": "主要",
 			"rarity": "very rare",
@@ -67731,7 +67731,7 @@
 			"dmg1": "1d6",
 			"dmgType": "B",
 			"dmg2": "1d8",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 4}",
 			"charges": 10,
 			"staff": true,
@@ -67769,7 +67769,7 @@
 			"srd52": true,
 			"basicRules2024": true,
 			"resist": [
-				"寒冷"
+				"cold"
 			],
 			"rarity": "very rare",
 			"reqAttune": "由德鲁伊、术士、魔契师或法师",
@@ -67798,7 +67798,7 @@
 			"dmg1": "1d6",
 			"dmgType": "B",
 			"dmg2": "1d8",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 4}",
 			"charges": 10,
 			"staff": true,
@@ -67902,7 +67902,7 @@
 			"dmg1": "1d6",
 			"dmgType": "B",
 			"dmg2": "1d8",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 4}",
 			"charges": 10,
 			"staff": true,
@@ -67960,7 +67960,7 @@
 			"dmg1": "1d6",
 			"dmgType": "B",
 			"dmg2": "1d8",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 4}",
 			"charges": 10,
 			"staff": true,
@@ -68064,7 +68064,7 @@
 			"bonusSpellAttack": "+2",
 			"bonusAc": "+2",
 			"bonusSavingThrow": "+2",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 2d8 + 4}",
 			"charges": 20,
 			"staff": true,
@@ -68184,7 +68184,7 @@
 			"bonusSpellAttack": "+2",
 			"bonusAc": "+2",
 			"bonusSavingThrow": "+2",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 2d8 + 4}",
 			"charges": 20,
 			"staff": true,
@@ -68365,7 +68365,7 @@
 			"dmgType": "B",
 			"dmg2": "1d8",
 			"bonusWeapon": "+3",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 4}",
 			"charges": 10,
 			"staff": true,
@@ -68399,7 +68399,7 @@
 			"dmgType": "B",
 			"dmg2": "1d8",
 			"bonusWeapon": "+3",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 4}",
 			"charges": 10,
 			"staff": true,
@@ -68463,7 +68463,7 @@
 			"dmg1": "1d6",
 			"dmgType": "B",
 			"dmg2": "1d8",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 4}",
 			"charges": 10,
 			"staff": true,
@@ -68542,7 +68542,7 @@
 			"dmg1": "1d6",
 			"dmgType": "B",
 			"dmg2": "1d8",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 4}",
 			"charges": 10,
 			"staff": true,
@@ -68693,12 +68693,12 @@
 			"source": "ToA",
 			"page": 208,
 			"conditionImmune": [
-				"目盲",
-				"魅惑",
-				"耳聋",
-				"恐慌",
-				"石化",
-				"震慑"
+				"blinded",
+				"charmed",
+				"deafened",
+				"frightened",
+				"petrified",
+				"stunned"
 			],
 			"rarity": "artifact",
 			"reqAttune": "由术士、魔契师或法师",
@@ -68722,7 +68722,7 @@
 			"dmgType": "B",
 			"dmg2": "1d8",
 			"bonusWeapon": "+3",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d4 + 3}",
 			"charges": 7,
 			"staff": true,
@@ -68881,7 +68881,7 @@
 			"dmg2": "1d8",
 			"bonusWeapon": "+2",
 			"bonusSpellAttack": "+2",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 4d6 + 2}",
 			"charges": 50,
 			"staff": true,
@@ -69014,7 +69014,7 @@
 			"dmg2": "1d8",
 			"bonusWeapon": "+2",
 			"bonusSpellAttack": "+2",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 4d6 + 2}",
 			"charges": 50,
 			"staff": true,
@@ -69313,7 +69313,7 @@
 			"type": "M|XPHB",
 			"source": "AUD",
 			"resist": [
-				"暗蚀"
+				"necrotic"
 			],
 			"rarity": "legendary",
 			"reqAttune": true,
@@ -69407,7 +69407,7 @@
 			"dmg2": "1d8",
 			"bonusWeapon": "+2",
 			"bonusSpellAttack": "+2",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 4}",
 			"charges": 10,
 			"staff": true,
@@ -69489,7 +69489,7 @@
 			"dmg2": "1d8",
 			"bonusWeapon": "+2",
 			"bonusSpellAttack": "+2",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6}",
 			"charges": 6,
 			"staff": true,
@@ -69774,7 +69774,7 @@
 			"dmg1": "1d6",
 			"dmgType": "B",
 			"dmg2": "1d8",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"staff": true,
@@ -69819,7 +69819,7 @@
 			"dmg1": "1d6",
 			"dmgType": "B",
 			"dmg2": "1d8",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"staff": true,
@@ -69840,7 +69840,7 @@
 			"page": 15,
 			"rarity": "legendary",
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"entries": [
 				"作为附赠动作，你可以在举起这张卡牌期间说出命令语，使你在其后的10分钟内进行的所有豁免检定具有优势。这一属性一经使用，直到次日黎明之前无法再次使用。"
 			],
@@ -70138,8 +70138,8 @@
 				}
 			},
 			"conditionImmune": [
-				"魅惑",
-				"恐慌"
+				"charmed",
+				"frightened"
 			],
 			"rarity": "rare",
 			"bonusAc": "+1",
@@ -70289,7 +70289,7 @@
 			"reqAttune": true,
 			"wondrous": true,
 			"sentient": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -70469,9 +70469,9 @@
 			"page": 116,
 			"baseItem": "胸甲|PHB",
 			"resist": [
-				"钝击",
-				"穿刺",
-				"挥砍"
+				"bludgeoning",
+				"piercing",
+				"slashing"
 			],
 			"rarity": "legendary",
 			"reqAttune": true,
@@ -70555,7 +70555,7 @@
 			"rarity": "rare",
 			"reqAttune": true,
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 4}",
 			"charges": 10,
 			"entries": [
@@ -70655,8 +70655,8 @@
 			"source": "EGW",
 			"page": 273,
 			"resist": [
-				"闪电",
-				"雷鸣"
+				"lightning",
+				"thunder"
 			],
 			"rarity": "legendary",
 			"reqAttune": true,
@@ -70899,7 +70899,7 @@
 			"page": 15,
 			"rarity": "legendary",
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"entries": [
 				"作为动作，你可以挥舞这张卡牌并用其施放{@spell 阳炎射线}法术（豁免{@dc 17}），从卡牌正面投射光线。这一属性一经使用，直到次日黎明之前无法再次使用。"
 			],
@@ -71721,8 +71721,8 @@
 			"page": 226,
 			"baseItem": "长剑|phb",
 			"resist": [
-				"暗蚀",
-				"光耀"
+				"necrotic",
+				"radiant"
 			],
 			"rarity": "artifact",
 			"reqAttune": "由一名此剑认为值得的生物",
@@ -72310,7 +72310,7 @@
 			"page": 15,
 			"rarity": "legendary",
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"entries": [
 				"作为动作，你可以挥舞这张卡牌并瞄准距你120尺内的一个可见魔法物品。如果该物品不是神器，它的魔法属性将被抑制1分钟。这一特性一经使用，直到次日黎明之前无法再次使用。"
 			],
@@ -72479,7 +72479,7 @@
 			"dmg1": "1d8",
 			"dmgType": "S",
 			"dmg2": "1d10",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d4 + 2}",
 			"charges": 6,
 			"entries": [
@@ -72548,7 +72548,7 @@
 					"fly": 30
 				}
 			},
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": 8,
 			"charges": 8,
 			"entries": [
@@ -74118,7 +74118,7 @@
 			"page": 15,
 			"rarity": "legendary",
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"entries": [
 				"作为动作，你可以在持握这张卡牌期间说出命令语，使你在1分钟内在魅力（{@skill 威吓}或{@skill 游说}）检定上具有优势。此外，在特性生效期间，你可以用一个动作从这张卡牌施放{@spell 命令术}（豁免{@dc 17}）。这一特性一经使用，直到次日黎明之前无法再次使用。"
 			],
@@ -74137,7 +74137,7 @@
 			"source": "TCE",
 			"page": 119,
 			"resist": [
-				"雷鸣"
+				"thunder"
 			],
 			"detail1": "橙",
 			"rarity": "very rare",
@@ -74257,7 +74257,7 @@
 			"dmgType": "P",
 			"dmg2": "1d8",
 			"bonusWeapon": "+2",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -74409,7 +74409,7 @@
 			"page": 224,
 			"baseItem": "匕首|phb",
 			"resist": [
-				"火焰"
+				"fire"
 			],
 			"rarity": "legendary",
 			"reqAttune": true,
@@ -74499,7 +74499,7 @@
 			"dmgType": "S",
 			"dmg2": "1d10",
 			"bonusWeapon": "+2",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 4}",
 			"charges": 12,
 			"entries": [
@@ -75132,7 +75132,7 @@
 			"dmg1": "1d6",
 			"dmgType": "P",
 			"dmg2": "1d8",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -75177,7 +75177,7 @@
 			"dmg1": "1d8",
 			"dmgType": "P",
 			"dmg2": "1d10",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -77680,7 +77680,7 @@
 			"rarity": "rare",
 			"reqAttune": true,
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"entries": [
 				"这些金属结节是被制造出来针对终末战争战场上所使用的毒气的。当你与生风铁肺同调时，它们会取代你胸部的肺，而原来的肺将消失。铁肺允许你正常呼吸，即便在反魔法场中也是如此，且其呼吸功能不会被魔法压制。",
 				"没有受到反魔法场或其他任何压制魔法的效果时，铁肺还会允许你在任何环境（包括真空）中呼吸，同时你在对抗有害气体的豁免中具有优势，例如{@spell 死云术}法术、{@spell 臭云术}法术、吸入性毒素以及喷出气体的喷吐。",
@@ -77734,7 +77734,7 @@
 				}
 			},
 			"resist": [
-				"毒素"
+				"poison"
 			],
 			"attachedSpells": {
 				"daily": {
@@ -77751,7 +77751,7 @@
 			"source": "EGW",
 			"page": 273,
 			"conditionImmune": [
-				"疾病"
+				"disease"
 			],
 			"rarity": "legendary",
 			"reqAttune": true,
@@ -77995,7 +77995,7 @@
 			"page": 15,
 			"rarity": "legendary",
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"entries": [
 				"作为动作，你可以挥舞这张卡牌并尝试放逐距你120尺内可见的至多三个生物。如果目标来自与你所在的位面不同的存在位面，目标必须成功通过一次{@dc 17}的魅力豁免检定，否则将被放逐，返回到那个其他位面。这一属性一经使用，直到次日黎明之前无法再次使用。"
 			],
@@ -78080,7 +78080,7 @@
 			"dmg2": "1d8",
 			"bonusWeapon": "+1",
 			"bonusSpellAttack": "+1",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 4}",
 			"charges": 10,
 			"staff": true,
@@ -78267,8 +78267,8 @@
 				}
 			},
 			"conditionImmune": [
-				"魅惑",
-				"恐慌"
+				"charmed",
+				"frightened"
 			],
 			"rarity": "very rare",
 			"entries": [
@@ -78304,7 +78304,7 @@
 				}
 			],
 			"weight": 1,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 1}",
 			"charges": 7,
 			"entries": [
@@ -78352,7 +78352,7 @@
 			"rarity": "rare",
 			"reqAttune": true,
 			"weight": 1,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 1}",
 			"charges": 7,
 			"entries": [
@@ -78418,7 +78418,7 @@
 			"page": 319,
 			"rarity": "common",
 			"weight": 1,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": 3,
 			"charges": 3,
 			"entries": [
@@ -78453,7 +78453,7 @@
 			"tier": "次要",
 			"rarity": "common",
 			"weight": 1,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": 3,
 			"charges": 3,
 			"entries": [
@@ -78479,7 +78479,7 @@
 			"rarity": "rare",
 			"reqAttune": true,
 			"weight": 1,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 1}",
 			"charges": 7,
 			"entries": [
@@ -78502,7 +78502,7 @@
 			"rarity": "rare",
 			"reqAttune": true,
 			"weight": 1,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 1}",
 			"charges": 7,
 			"entries": [
@@ -78546,7 +78546,7 @@
 				}
 			],
 			"weight": 1,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 1}",
 			"charges": 7,
 			"entries": [
@@ -78573,7 +78573,7 @@
 					"spellcasting": true
 				}
 			],
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d4}",
 			"charges": 4,
 			"entries": [
@@ -78606,7 +78606,7 @@
 			"rarity": "rare",
 			"reqAttune": true,
 			"weight": 1,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 1}",
 			"charges": 7,
 			"entries": [
@@ -78651,7 +78651,7 @@
 			"rarity": "rare",
 			"reqAttune": true,
 			"weight": 1,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 1}",
 			"charges": 7,
 			"entries": [
@@ -78735,7 +78735,7 @@
 				}
 			],
 			"weight": 1,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 1}",
 			"charges": 7,
 			"entries": [
@@ -78770,7 +78770,7 @@
 				}
 			],
 			"weight": 1,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 1}",
 			"charges": 7,
 			"entries": [
@@ -78804,7 +78804,7 @@
 			"source": "AU",
 			"page": 125,
 			"rarity": "uncommon",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d4 + 1}",
 			"charges": 4,
 			"entries": [
@@ -78845,7 +78845,7 @@
 				}
 			],
 			"weight": 1,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 1}",
 			"charges": 7,
 			"entries": [
@@ -78883,7 +78883,7 @@
 				}
 			],
 			"weight": 1,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 1}",
 			"charges": 7,
 			"entries": [
@@ -78933,7 +78933,7 @@
 			"tier": "次要",
 			"rarity": "uncommon",
 			"weight": 1,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -78964,7 +78964,7 @@
 			"basicRules2024": true,
 			"rarity": "uncommon",
 			"weight": 1,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -79020,7 +79020,7 @@
 			"tier": "主要",
 			"rarity": "uncommon",
 			"weight": 1,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 1}",
 			"charges": 7,
 			"entries": [
@@ -79049,7 +79049,7 @@
 			"basicRules2024": true,
 			"rarity": "uncommon",
 			"weight": 1,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 1}",
 			"charges": 7,
 			"entries": [
@@ -79102,7 +79102,7 @@
 			"dmgType": "B",
 			"bonusWeapon": "+3",
 			"bonusAc": "+3",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d4 + 3}",
 			"charges": 7,
 			"entries": [
@@ -79221,7 +79221,7 @@
 			"dmgType": "B",
 			"bonusWeapon": "+3",
 			"bonusAc": "+3",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d4 + 3}",
 			"charges": 7,
 			"entries": [
@@ -79389,7 +79389,7 @@
 				}
 			],
 			"weight": 1,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 1}",
 			"charges": 7,
 			"entries": [
@@ -79417,7 +79417,7 @@
 				}
 			],
 			"weight": 1,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 1}",
 			"charges": 7,
 			"entries": [
@@ -79461,7 +79461,7 @@
 				}
 			],
 			"weight": 1,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 1}",
 			"charges": 7,
 			"entries": [
@@ -79496,7 +79496,7 @@
 				}
 			],
 			"weight": 1,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 1}",
 			"charges": 7,
 			"entries": [
@@ -79531,7 +79531,7 @@
 			"page": 321,
 			"rarity": "common",
 			"weight": 1,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 1}",
 			"charges": 7,
 			"entries": [
@@ -79566,7 +79566,7 @@
 			"tier": "次要",
 			"rarity": "common",
 			"weight": 1,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 1}",
 			"charges": 7,
 			"entries": [
@@ -79587,7 +79587,7 @@
 			"tier": "次要",
 			"rarity": "common",
 			"weight": 1,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": 3,
 			"charges": 3,
 			"entries": [
@@ -79623,7 +79623,7 @@
 			"tier": "次要",
 			"rarity": "uncommon",
 			"weight": 1,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -79651,7 +79651,7 @@
 			],
 			"rarity": "uncommon",
 			"weight": 1,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -79678,7 +79678,7 @@
 			"page": 125,
 			"rarity": "rare",
 			"reqAttune": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 1}",
 			"charges": 7,
 			"entries": [
@@ -79736,7 +79736,7 @@
 			"tier": "次要",
 			"rarity": "common",
 			"weight": 1,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": 3,
 			"charges": 3,
 			"entries": [
@@ -79752,7 +79752,7 @@
 			"source": "AU",
 			"page": 125,
 			"rarity": "rare",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d10}",
 			"charges": 10,
 			"entries": [
@@ -79776,7 +79776,7 @@
 			"rarity": "rare",
 			"reqAttune": true,
 			"weight": 1,
-			"recharge": "午夜",
+			"recharge": "midnight",
 			"rechargeAmount": "{@dice 1d6 + 1}",
 			"charges": 7,
 			"entries": [
@@ -79810,7 +79810,7 @@
 				}
 			],
 			"weight": 1,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 1}",
 			"charges": 7,
 			"entries": [
@@ -79845,7 +79845,7 @@
 				}
 			],
 			"weight": 1,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 1}",
 			"charges": 7,
 			"entries": [
@@ -79893,7 +79893,7 @@
 			"rarity": "rare",
 			"reqAttune": true,
 			"weight": 1,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 1}",
 			"charges": 7,
 			"entries": [
@@ -79941,7 +79941,7 @@
 				}
 			],
 			"weight": 1,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 1}",
 			"charges": 7,
 			"entries": [
@@ -80095,7 +80095,7 @@
 			"rarity": "rare",
 			"reqAttune": true,
 			"weight": 1,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6 + 1}",
 			"charges": 7,
 			"entries": [
@@ -80576,7 +80576,7 @@
 			"dmgType": "P",
 			"dmg2": "1d10",
 			"bonusWeapon": "+3",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -81216,7 +81216,7 @@
 			"source": "WBtW",
 			"page": 208,
 			"resist": [
-				"寒冷"
+				"cold"
 			],
 			"detail1": "被霜覆盖",
 			"rarity": "rare",
@@ -81233,7 +81233,7 @@
 			"source": "TftYP",
 			"page": 193,
 			"resist": [
-				"寒冷"
+				"cold"
 			],
 			"rarity": "unknown (magic)",
 			"entries": [
@@ -81256,7 +81256,7 @@
 				"RoT"
 			],
 			"resist": [
-				"寒冷"
+				"cold"
 			],
 			"rarity": "legendary",
 			"reqAttune": true,
@@ -81333,7 +81333,7 @@
 				"白龙鳞甲|XDMG"
 			],
 			"resist": [
-				"寒冷"
+				"cold"
 			],
 			"tier": "主要",
 			"rarity": "very rare",
@@ -81357,7 +81357,7 @@
 			"basicRules2024": true,
 			"baseItem": "鳞甲|xphb",
 			"resist": [
-				"寒冷"
+				"cold"
 			],
 			"detail1": "白",
 			"rarity": "very rare",
@@ -81450,11 +81450,11 @@
 				}
 			},
 			"resist": [
-				"强酸",
-				"寒冷",
-				"火焰",
-				"闪电",
-				"毒素"
+				"acid",
+				"cold",
+				"fire",
+				"lightning",
+				"poison"
 			],
 			"bonusWeapon": "+2"
 		},
@@ -81683,7 +81683,7 @@
 			"rarity": "rare",
 			"wondrous": true,
 			"value": 400000,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": 3,
 			"charges": 3,
 			"entries": [
@@ -81702,7 +81702,7 @@
 			"page": 224,
 			"baseItem": "矛|phb",
 			"resist": [
-				"闪电"
+				"lightning"
 			],
 			"rarity": "legendary",
 			"reqAttune": true,
@@ -81813,7 +81813,7 @@
 					"fly": 30
 				}
 			},
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d4}",
 			"charges": 4,
 			"entries": [
@@ -82063,7 +82063,7 @@
 				}
 			],
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
@@ -82316,7 +82316,7 @@
 			"bonusWeapon": "+3",
 			"bonusAc": "+2",
 			"bonusSavingThrow": "+2",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": 10,
 			"charges": 10,
 			"entries": [
@@ -82449,7 +82449,7 @@
 			"page": 237,
 			"rarity": "artifact",
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": 9,
 			"charges": 9,
 			"entries": [
@@ -83339,7 +83339,7 @@
 			"rarity": "uncommon",
 			"wondrous": true,
 			"weight": 0.5,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"items": [
 				"魔术袋，灰色",
 				"魔术袋，铁锈色",
@@ -83359,7 +83359,7 @@
 			],
 			"rarity": "uncommon",
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"items": [
 				"魔术袋，灰色|XDMG",
 				"魔术袋，铁锈色|XDMG",
@@ -84081,7 +84081,7 @@
 			"page": 258,
 			"rarity": "varies",
 			"reqAttune": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6}",
 			"charges": 6,
 			"items": [
@@ -84126,7 +84126,7 @@
 			"dmg1": "1d6",
 			"dmgType": "B",
 			"dmg2": "1d8",
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6}",
 			"charges": 6,
 			"staff": true,
@@ -84160,7 +84160,7 @@
 			"page": 258,
 			"rarity": "varies",
 			"reqAttune": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6}",
 			"charges": 6,
 			"items": [
@@ -84197,7 +84197,7 @@
 				"维克那法眼和魔掌|XDMG"
 			],
 			"conditionImmune": [
-				"疾病"
+				"disease"
 			],
 			"rarity": "artifact",
 			"reqAttune": true,
@@ -85301,7 +85301,7 @@
 			"property": [
 				"Vst|EGW"
 			],
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"entries": [
 				"三祈宝珠是分歧遗迹（见\"分歧遗迹\"侧边栏）。在古代，阿波西恩神使佩戴这个护身符作为他与三位主神的契约的象征：塞哈尼月亮编织者、阿瓦兰德拉变化使者和科雷隆大心。当宝珠被发现时，只有塞哈尼的力量在它的休眠心中脉动。其他两位神的力量等待着被英雄\u2014\u2014或英雄们\u2014\u2014重新唤醒，他们可以追随阿波西恩的足迹。"
 			],
@@ -85473,8 +85473,8 @@
 			"page": 276,
 			"baseItem": "硬头锤|PHB",
 			"resist": [
-				"火焰",
-				"毒素"
+				"fire",
+				"poison"
 			],
 			"rarity": "artifact",
 			"reqAttune": true,
@@ -86274,7 +86274,7 @@
 			"basicRules2024": true,
 			"rarity": "legendary",
 			"reqAttune": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d4 + 1}",
 			"charges": 5,
 			"items": [
@@ -86914,7 +86914,7 @@
 			"rarity": "legendary",
 			"reqAttune": true,
 			"wondrous": true,
-			"recharge": "拂晓",
+			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d6}",
 			"charges": 6,
 			"entries": [
@@ -87249,8 +87249,8 @@
 			"source": "EGW",
 			"page": 273,
 			"resist": [
-				"闪电",
-				"雷鸣"
+				"lightning",
+				"thunder"
 			],
 			"rarity": "legendary",
 			"reqAttune": true,

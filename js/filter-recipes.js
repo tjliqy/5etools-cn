@@ -2,13 +2,16 @@
 
 class PageFilterRecipes extends PageFilterBase {
 	static _DIET_TO_FULL = {
-		"V": "Vegan",
-		"C": "Vegetarian",
-		"X": "Omni",
+		"V": "纯素",
+		"C": "素食",
+		"X": "荤素皆可",
 	};
 	static _MISC_TAG_TO_FULL = {
-		"alcohol": "Contains Alcohol",
-		"feast": "Feast Dish",
+		"alcohol": "含酒精",
+		"feast": "宴会菜肴",
+	};
+	static _ALLERGEN_TO_CN = {
+		"sulphites": "亚硫酸盐", "milk": "乳制品", "gluten": "麸质", "eggs": "蛋类", "mustard": "芥末", "nuts": "坚果", "celery": "芹菜", "lupin": "羽扇豆", "fish": "鱼类", "soya": "大豆", "sesame": "芝麻", "crustaceans": "甲壳类", "molluscs": "软体动物", "peanuts": "花生",
 	};
 
 	constructor () {
@@ -37,13 +40,14 @@ class PageFilterRecipes extends PageFilterBase {
 		});
 		this._dietFilter = new Filter({
 			header: "Diet",
+			cnHeader: "饮食类型",
 			displayFn: PageFilterRecipes._dietToFull,
 			itemSortFn: SortUtil.ascSortLower,
 		});
 		this._allergensFilter = new Filter({
 			header: "Allergens",
 			cnHeader: "过敏原",
-			displayFn: StrUtil.toTitleCase.bind(StrUtil),
+			displayFn: it => PageFilterRecipes._ALLERGEN_TO_CN[it] || it,
 			itemSortFn: SortUtil.ascSortLower,
 		});
 		this._miscFilter = new Filter({

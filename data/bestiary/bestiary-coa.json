@@ -72,23 +72,23 @@
 			],
 			"passive": 20,
 			"resist": [
-				"寒冷",
+				"cold",
 				{
 					"resist": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "非银质武器且非魔法攻击的",
 					"cond": true
 				}
 			],
 			"immune": [
-				"火焰",
-				"毒素"
+				"fire",
+				"poison"
 			],
 			"conditionImmune": [
-				"中毒"
+				"poisoned"
 			],
 			"languages": [
 				"天界语",
@@ -166,14 +166,14 @@
 				"战锤|phb"
 			],
 			"traitTags": [
-				"魔鬼视界",
-				"魔法抗性"
+				"Devil's Sight",
+				"Magic Resistance"
 			],
 			"senseTags": [
 				"SD"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -193,7 +193,7 @@
 				"RW"
 			],
 			"savingThrowForced": [
-				"体质"
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluffImages": true
@@ -294,7 +294,7 @@
 				"短剑|phb"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -373,21 +373,21 @@
 			"resist": [
 				{
 					"resist": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "非银质武器且非魔法攻击的",
 					"cond": true
 				}
 			],
 			"immune": [
-				"寒冷",
-				"火焰",
-				"毒素"
+				"cold",
+				"fire",
+				"poison"
 			],
 			"conditionImmune": [
-				"中毒"
+				"poisoned"
 			],
 			"languages": [
 				"炼狱语",
@@ -448,14 +448,14 @@
 				}
 			],
 			"traitTags": [
-				"魔鬼视界",
-				"魔法抗性"
+				"Devil's Sight",
+				"Magic Resistance"
 			],
 			"senseTags": [
 				"SD"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"I",
@@ -472,7 +472,7 @@
 				"RCH"
 			],
 			"savingThrowForced": [
-				"体质"
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -529,13 +529,13 @@
 			],
 			"passive": 19,
 			"immune": [
-				"寒冷",
-				"火焰",
+				"cold",
+				"fire",
 				{
 					"immune": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "来自非魔法攻击",
 					"cond": true
@@ -592,7 +592,7 @@
 				"U"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -611,7 +611,7 @@
 				"MW"
 			],
 			"savingThrowForced": [
-				"体质"
+				"constitution"
 			],
 			"hasToken": true
 		},
@@ -665,21 +665,21 @@
 			],
 			"passive": 20,
 			"resist": [
-				"光耀",
+				"radiant",
 				{
 					"resist": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "来自非魔法攻击",
 					"cond": true
 				}
 			],
 			"conditionImmune": [
-				"魅惑",
-				"力竭",
-				"恐慌"
+				"charmed",
+				"exhaustion",
+				"frightened"
 			],
 			"languages": [
 				"所有",
@@ -738,13 +738,13 @@
 				"长弓|phb"
 			],
 			"traitTags": [
-				"魔法抗性"
+				"Magic Resistance"
 			],
 			"senseTags": [
 				"U"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"TP",
@@ -782,15 +782,15 @@
 				}
 			},
 			"immune": [
-				"寒冷",
-				"火焰",
-				"毒素",
-				"心灵",
+				"cold",
+				"fire",
+				"poison",
+				"psychic",
 				{
 					"immune": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "非精金武器且非魔法攻击的",
 					"cond": true
@@ -866,28 +866,28 @@
 			],
 			"passive": 29,
 			"resist": [
-				"寒冷"
+				"cold"
 			],
 			"immune": [
-				"火焰",
-				"毒素",
+				"fire",
+				"poison",
 				{
 					"immune": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "非银质武器且非魔法攻击的",
 					"cond": true
 				}
 			],
 			"conditionImmune": [
-				"目盲",
-				"魅惑",
-				"恐慌",
-				"麻痹",
-				"中毒",
-				"震慑"
+				"blinded",
+				"charmed",
+				"frightened",
+				"paralyzed",
+				"poisoned",
+				"stunned"
 			],
 			"languages": [
 				"所有",
@@ -1046,15 +1046,15 @@
 				"source": "CoA"
 			},
 			"traitTags": [
-				"传奇抗性",
-				"再生"
+				"Legendary Resistances",
+				"Regeneration"
 			],
 			"senseTags": [
 				"SD",
 				"U"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"TP",
@@ -1082,22 +1082,22 @@
 				"MW"
 			],
 			"conditionInflict": [
-				"震慑"
+				"stunned"
 			],
 			"conditionInflictSpell": [
-				"倒地"
+				"prone"
 			],
 			"savingThrowForced": [
-				"魅力",
-				"敏捷",
-				"智力",
-				"感知"
+				"charisma",
+				"dexterity",
+				"intelligence",
+				"wisdom"
 			],
 			"savingThrowForcedSpell": [
-				"魅力",
-				"体质",
-				"敏捷",
-				"感知"
+				"charisma",
+				"constitution",
+				"dexterity",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -1158,28 +1158,28 @@
 			],
 			"passive": 14,
 			"resist": [
-				"强酸",
-				"寒冷",
+				"acid",
+				"cold",
 				{
 					"resist": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "非银质武器且非魔法攻击的",
 					"cond": true
 				}
 			],
 			"immune": [
-				"火焰",
-				"毒素"
+				"fire",
+				"poison"
 			],
 			"vulnerable": [
-				"光耀"
+				"radiant"
 			],
 			"conditionImmune": [
-				"魅惑",
-				"中毒"
+				"charmed",
+				"poisoned"
 			],
 			"languages": [
 				"所有",
@@ -1229,7 +1229,7 @@
 				"SD"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"TP",
@@ -1246,8 +1246,8 @@
 				"MW"
 			],
 			"savingThrowForced": [
-				"体质",
-				"敏捷"
+				"constitution",
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluffImages": true
@@ -1383,15 +1383,15 @@
 			"tokenCredit": "sμ (smew)",
 			"tokenCustom": true,
 			"traitTags": [
-				"传奇抗性",
-				"蛛行术"
+				"Legendary Resistances",
+				"Spider Climb"
 			],
 			"senseTags": [
 				"B",
 				"D"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"damageTags": [
 				"S"
@@ -1401,7 +1401,7 @@
 				"RCH"
 			],
 			"savingThrowForced": [
-				"力量"
+				"strength"
 			],
 			"hasToken": true
 		},
@@ -1466,31 +1466,31 @@
 			],
 			"passive": 15,
 			"resist": [
-				"寒冷",
+				"cold",
 				{
 					"resist": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "非银质武器且非魔法攻击的",
 					"cond": true
 				}
 			],
 			"immune": [
-				"火焰",
-				"毒素"
+				"fire",
+				"poison"
 			],
 			"conditionImmune": [
-				"魅惑",
-				"恐慌",
-				"受擒",
-				"麻痹",
-				"石化",
-				"中毒",
-				"倒地",
-				"束缚",
-				"震慑"
+				"charmed",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"stunned"
 			],
 			"languages": [
 				"天界语",
@@ -1548,15 +1548,15 @@
 				}
 			],
 			"traitTags": [
-				"魔鬼视界",
-				"魔法抗性"
+				"Devil's Sight",
+				"Magic Resistance"
 			],
 			"senseTags": [
 				"B",
 				"SD"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"CE",
@@ -1572,7 +1572,7 @@
 				"MW"
 			],
 			"savingThrowForced": [
-				"体质"
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -1638,27 +1638,27 @@
 			],
 			"passive": 17,
 			"resist": [
-				"强酸",
-				"寒冷",
+				"acid",
+				"cold",
 				{
 					"resist": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "非银质武器且非魔法攻击的",
 					"cond": true
 				}
 			],
 			"immune": [
-				"火焰",
-				"毒素"
+				"fire",
+				"poison"
 			],
 			"conditionImmune": [
-				"魅惑",
-				"力竭",
-				"恐慌",
-				"中毒"
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned"
 			],
 			"languages": [
 				"所有",
@@ -1814,17 +1814,17 @@
 				"source": "CoA"
 			},
 			"traitTags": [
-				"魔鬼视界",
-				"传奇抗性",
-				"魔法抗性",
-				"再生"
+				"Devil's Sight",
+				"Legendary Resistances",
+				"Magic Resistance",
+				"Regeneration"
 			],
 			"senseTags": [
 				"SD",
 				"T"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"TP",
@@ -1848,21 +1848,21 @@
 				"RCH"
 			],
 			"conditionInflictSpell": [
-				"恐慌",
-				"失能",
-				"麻痹",
-				"震慑",
-				"昏迷"
+				"frightened",
+				"incapacitated",
+				"paralyzed",
+				"stunned",
+				"unconscious"
 			],
 			"savingThrowForced": [
-				"魅力",
-				"体质"
+				"charisma",
+				"constitution"
 			],
 			"savingThrowForcedSpell": [
-				"魅力",
-				"体质",
-				"智力",
-				"感知"
+				"charisma",
+				"constitution",
+				"intelligence",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -1911,13 +1911,13 @@
 			},
 			"passive": 12,
 			"resist": [
-				"暗蚀",
-				"毒素"
+				"necrotic",
+				"poison"
 			],
 			"conditionImmune": [
-				"力竭",
-				"恐慌",
-				"中毒"
+				"exhaustion",
+				"frightened",
+				"poisoned"
 			],
 			"languages": [
 				"天界语",
@@ -1961,8 +1961,8 @@
 				"巨剑|phb"
 			],
 			"actionTags": [
-				"多重攻击",
-				"格挡"
+				"Multiattack",
+				"Parry"
 			],
 			"languageTags": [
 				"C",
@@ -1979,10 +1979,10 @@
 				"MW"
 			],
 			"conditionInflict": [
-				"震慑"
+				"stunned"
 			],
 			"savingThrowForced": [
-				"魅力"
+				"charisma"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -2045,23 +2045,23 @@
 			],
 			"passive": 14,
 			"resist": [
-				"寒冷",
+				"cold",
 				{
 					"resist": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "非银质武器且非魔法攻击的",
 					"cond": true
 				}
 			],
 			"immune": [
-				"火焰",
-				"毒素"
+				"fire",
+				"poison"
 			],
 			"conditionImmune": [
-				"中毒"
+				"poisoned"
 			],
 			"languages": [
 				"通用语",
@@ -2179,14 +2179,14 @@
 				"巨剑|phb"
 			],
 			"traitTags": [
-				"传奇抗性",
-				"魔法抗性"
+				"Legendary Resistances",
+				"Magic Resistance"
 			],
 			"senseTags": [
 				"U"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -2211,22 +2211,22 @@
 				"RCH"
 			],
 			"conditionInflictSpell": [
-				"目盲",
-				"耳聋",
-				"隐形",
-				"麻痹",
-				"束缚"
+				"blinded",
+				"deafened",
+				"invisible",
+				"paralyzed",
+				"restrained"
 			],
 			"savingThrowForced": [
-				"体质",
-				"感知"
+				"constitution",
+				"wisdom"
 			],
 			"savingThrowForcedLegendary": [
-				"敏捷"
+				"dexterity"
 			],
 			"savingThrowForcedSpell": [
-				"敏捷",
-				"感知"
+				"dexterity",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -2291,24 +2291,24 @@
 			],
 			"passive": 24,
 			"resist": [
-				"寒冷",
+				"cold",
 				{
 					"resist": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "非银质武器且非魔法攻击的",
 					"cond": true
 				}
 			],
 			"immune": [
-				"火焰",
-				"毒素"
+				"fire",
+				"poison"
 			],
 			"conditionImmune": [
-				"魅惑",
-				"中毒"
+				"charmed",
+				"poisoned"
 			],
 			"languages": [
 				"天界语",
@@ -2433,16 +2433,16 @@
 				"酷刑三叉矛|CoA"
 			],
 			"traitTags": [
-				"魔鬼视界",
-				"传奇抗性",
-				"魔法抗性",
-				"再生"
+				"Devil's Sight",
+				"Legendary Resistances",
+				"Magic Resistance",
+				"Regeneration"
 			],
 			"senseTags": [
 				"SD"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -2463,13 +2463,13 @@
 				"RCH"
 			],
 			"savingThrowForced": [
-				"体质",
-				"敏捷",
-				"智力",
-				"感知"
+				"constitution",
+				"dexterity",
+				"intelligence",
+				"wisdom"
 			],
 			"savingThrowForcedLegendary": [
-				"体质"
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -2534,24 +2534,24 @@
 			],
 			"passive": 17,
 			"resist": [
-				"寒冷",
+				"cold",
 				{
 					"resist": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "非银质武器且非魔法攻击的",
 					"cond": true
 				}
 			],
 			"immune": [
-				"火焰",
-				"毒素"
+				"fire",
+				"poison"
 			],
 			"conditionImmune": [
-				"魅惑",
-				"中毒"
+				"charmed",
+				"poisoned"
 			],
 			"languages": [
 				"天界语",
@@ -2647,14 +2647,14 @@
 				}
 			],
 			"traitTags": [
-				"魔鬼视界",
-				"魔法抗性"
+				"Devil's Sight",
+				"Magic Resistance"
 			],
 			"senseTags": [
 				"SD"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -2672,11 +2672,11 @@
 				"RW"
 			],
 			"conditionInflict": [
-				"力竭"
+				"exhaustion"
 			],
 			"savingThrowForced": [
-				"智力",
-				"感知"
+				"intelligence",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluffImages": true
@@ -2740,23 +2740,23 @@
 			],
 			"passive": 13,
 			"resist": [
-				"寒冷",
+				"cold",
 				{
 					"resist": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "非银质武器且非魔法攻击的",
 					"cond": true
 				}
 			],
 			"immune": [
-				"火焰",
-				"毒素"
+				"fire",
+				"poison"
 			],
 			"conditionImmune": [
-				"中毒"
+				"poisoned"
 			],
 			"languages": [
 				"天界语",
@@ -2864,14 +2864,14 @@
 				}
 			],
 			"traitTags": [
-				"魔鬼视界",
-				"魔法抗性"
+				"Devil's Sight",
+				"Magic Resistance"
 			],
 			"senseTags": [
 				"SD"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -2892,8 +2892,8 @@
 				"RW"
 			],
 			"savingThrowForced": [
-				"体质",
-				"敏捷"
+				"constitution",
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluffImages": true
@@ -2957,24 +2957,24 @@
 			],
 			"passive": 21,
 			"resist": [
-				"寒冷",
+				"cold",
 				{
 					"resist": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "非银质武器且非魔法攻击的",
 					"cond": true
 				}
 			],
 			"immune": [
-				"火焰",
-				"毒素"
+				"fire",
+				"poison"
 			],
 			"conditionImmune": [
-				"魅惑",
-				"中毒"
+				"charmed",
+				"poisoned"
 			],
 			"languages": [
 				"天界语",
@@ -3079,14 +3079,14 @@
 				}
 			],
 			"traitTags": [
-				"魔鬼视界",
-				"魔法抗性"
+				"Devil's Sight",
+				"Magic Resistance"
 			],
 			"senseTags": [
 				"SD"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -3107,8 +3107,8 @@
 				"RCH"
 			],
 			"savingThrowForced": [
-				"体质",
-				"感知"
+				"constitution",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluffImages": true
@@ -3174,24 +3174,24 @@
 			],
 			"passive": 12,
 			"resist": [
-				"寒冷",
+				"cold",
 				{
 					"resist": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "非银质武器且非魔法攻击的",
 					"cond": true
 				}
 			],
 			"immune": [
-				"火焰",
-				"毒素"
+				"fire",
+				"poison"
 			],
 			"conditionImmune": [
-				"中毒",
-				"震慑"
+				"poisoned",
+				"stunned"
 			],
 			"languages": [
 				"所有",
@@ -3272,16 +3272,16 @@
 				}
 			],
 			"traitTags": [
-				"魔鬼视界",
-				"敏锐感官",
-				"魔法抗性"
+				"Devil's Sight",
+				"Keen Senses",
+				"Magic Resistance"
 			],
 			"senseTags": [
 				"B",
 				"SD"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"TP",
@@ -3304,13 +3304,13 @@
 				"RCH"
 			],
 			"conditionInflictSpell": [
-				"恐慌",
-				"麻痹",
-				"倒地"
+				"frightened",
+				"paralyzed",
+				"prone"
 			],
 			"savingThrowForcedSpell": [
-				"敏捷",
-				"感知"
+				"dexterity",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -3338,11 +3338,11 @@
 				"formula": "10d10 + 30"
 			},
 			"immune": [
-				"强酸",
-				"寒冷",
-				"火焰",
-				"闪电",
-				"挥砍"
+				"acid",
+				"cold",
+				"fire",
+				"lightning",
+				"slashing"
 			],
 			"tokenCredit": "Unknown",
 			"tokenCustom": true,
@@ -3393,29 +3393,29 @@
 			],
 			"passive": 8,
 			"resist": [
-				"寒冷",
-				"火焰",
-				"毒素",
+				"cold",
+				"fire",
+				"poison",
 				{
 					"resist": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "非银质武器且非魔法攻击的",
 					"cond": true
 				}
 			],
 			"immune": [
-				"强酸"
+				"acid"
 			],
 			"conditionImmune": [
-				"目盲",
-				"魅惑",
-				"耳聋",
-				"力竭",
-				"恐慌",
-				"倒地"
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"prone"
 			],
 			"languages": [
 				"心灵感应 120 尺"
@@ -3484,13 +3484,13 @@
 			"tokenCredit": "Rahzy",
 			"tokenCustom": true,
 			"traitTags": [
-				"传奇抗性"
+				"Legendary Resistances"
 			],
 			"senseTags": [
 				"B"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"TP"
@@ -3504,12 +3504,12 @@
 				"RW"
 			],
 			"conditionInflict": [
-				"倒地",
-				"束缚"
+				"prone",
+				"restrained"
 			],
 			"savingThrowForced": [
-				"体质",
-				"敏捷"
+				"constitution",
+				"dexterity"
 			],
 			"hasToken": true
 		},
@@ -3573,25 +3573,25 @@
 			],
 			"passive": 24,
 			"resist": [
-				"寒冷",
+				"cold",
 				{
 					"resist": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "非银质武器且非魔法攻击的",
 					"cond": true
 				}
 			],
 			"immune": [
-				"火焰",
-				"毒素"
+				"fire",
+				"poison"
 			],
 			"conditionImmune": [
-				"魅惑",
-				"恐慌",
-				"中毒"
+				"charmed",
+				"frightened",
+				"poisoned"
 			],
 			"languages": [
 				"天界语",
@@ -3714,16 +3714,16 @@
 				"铸铁塔|CoA"
 			],
 			"traitTags": [
-				"魔鬼视界",
-				"传奇抗性",
-				"魔法抗性",
-				"再生"
+				"Devil's Sight",
+				"Legendary Resistances",
+				"Magic Resistance",
+				"Regeneration"
 			],
 			"senseTags": [
 				"SD"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -3743,12 +3743,12 @@
 				"RCH"
 			],
 			"savingThrowForced": [
-				"体质",
-				"敏捷",
-				"感知"
+				"constitution",
+				"dexterity",
+				"wisdom"
 			],
 			"savingThrowForcedLegendary": [
-				"体质"
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -3803,12 +3803,12 @@
 			],
 			"passive": 15,
 			"resist": [
-				"火焰",
-				"毒素"
+				"fire",
+				"poison"
 			],
 			"conditionImmune": [
-				"魅惑",
-				"恐慌"
+				"charmed",
+				"frightened"
 			],
 			"cr": "9",
 			"trait": [
@@ -3863,8 +3863,8 @@
 				"SD"
 			],
 			"actionTags": [
-				"多重攻击",
-				"触须"
+				"Multiattack",
+				"Tentacles"
 			],
 			"damageTags": [
 				"N",
@@ -3929,26 +3929,26 @@
 			],
 			"passive": 13,
 			"resist": [
-				"强酸",
-				"闪电",
+				"acid",
+				"lightning",
 				{
 					"resist": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "来自非魔法攻击",
 					"cond": true
 				}
 			],
 			"immune": [
-				"寒冷",
-				"火焰",
-				"毒素"
+				"cold",
+				"fire",
+				"poison"
 			],
 			"conditionImmune": [
-				"魅惑",
-				"中毒"
+				"charmed",
+				"poisoned"
 			],
 			"languages": [
 				"通用语",
@@ -4037,14 +4037,14 @@
 			"tokenCredit": "Donggeon Son",
 			"tokenCustom": true,
 			"traitTags": [
-				"再生"
+				"Regeneration"
 			],
 			"senseTags": [
 				"B",
 				"SD"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -4071,20 +4071,20 @@
 				"MW"
 			],
 			"conditionInflictSpell": [
-				"目盲",
-				"魅惑",
-				"隐形",
-				"石化",
-				"束缚"
+				"blinded",
+				"charmed",
+				"invisible",
+				"petrified",
+				"restrained"
 			],
 			"savingThrowForced": [
-				"体质",
-				"敏捷"
+				"constitution",
+				"dexterity"
 			],
 			"savingThrowForcedSpell": [
-				"体质",
-				"敏捷",
-				"感知"
+				"constitution",
+				"dexterity",
+				"wisdom"
 			],
 			"hasToken": true
 		},
@@ -4136,23 +4136,23 @@
 			],
 			"passive": 10,
 			"immune": [
-				"火焰",
-				"毒素",
+				"fire",
+				"poison",
 				{
 					"immune": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "来自非魔法攻击",
 					"cond": true
 				}
 			],
 			"conditionImmune": [
-				"魅惑",
-				"恐慌",
-				"麻痹",
-				"中毒"
+				"charmed",
+				"frightened",
+				"paralyzed",
+				"poisoned"
 			],
 			"cr": "28",
 			"trait": [
@@ -4234,14 +4234,14 @@
 				}
 			],
 			"traitTags": [
-				"传奇抗性",
-				"魔法抗性"
+				"Legendary Resistances",
+				"Magic Resistance"
 			],
 			"senseTags": [
 				"B"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"damageTags": [
 				"F",
@@ -4303,22 +4303,22 @@
 			"resist": [
 				{
 					"resist": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "非银质武器且非魔法攻击的",
 					"cond": true
 				}
 			],
 			"immune": [
-				"寒冷",
-				"火焰",
-				"毒素"
+				"cold",
+				"fire",
+				"poison"
 			],
 			"conditionImmune": [
-				"魅惑",
-				"中毒"
+				"charmed",
+				"poisoned"
 			],
 			"languages": [
 				"蚁人"
@@ -4362,7 +4362,7 @@
 				"D"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"damageTags": [
 				"P",
@@ -4372,7 +4372,7 @@
 				"MW"
 			],
 			"savingThrowForced": [
-				"体质"
+				"constitution"
 			],
 			"hasToken": true
 		},
@@ -4438,22 +4438,22 @@
 			"resist": [
 				{
 					"resist": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "非银质武器且非魔法攻击的",
 					"cond": true
 				}
 			],
 			"immune": [
-				"寒冷",
-				"火焰",
-				"毒素"
+				"cold",
+				"fire",
+				"poison"
 			],
 			"conditionImmune": [
-				"魅惑",
-				"中毒"
+				"charmed",
+				"poisoned"
 			],
 			"languages": [
 				"天界语",
@@ -4561,15 +4561,15 @@
 				"source": "CoA"
 			},
 			"traitTags": [
-				"传奇抗性",
-				"魔法抗性",
-				"再生"
+				"Legendary Resistances",
+				"Magic Resistance",
+				"Regeneration"
 			],
 			"senseTags": [
 				"SD"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -4585,11 +4585,11 @@
 				"AOE"
 			],
 			"savingThrowForced": [
-				"敏捷",
-				"感知"
+				"dexterity",
+				"wisdom"
 			],
 			"savingThrowForcedLegendary": [
-				"体质"
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -4644,20 +4644,20 @@
 			],
 			"passive": 15,
 			"immune": [
-				"火焰",
+				"fire",
 				{
 					"immune": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "来自非魔法攻击",
 					"cond": true
 				}
 			],
 			"conditionImmune": [
-				"恐慌",
-				"麻痹"
+				"frightened",
+				"paralyzed"
 			],
 			"languages": [
 				"懂深渊语",
@@ -4737,16 +4737,16 @@
 				}
 			],
 			"traitTags": [
-				"传奇抗性",
-				"攻城怪物"
+				"Legendary Resistances",
+				"Siege Monster"
 			],
 			"senseTags": [
 				"B"
 			],
 			"actionTags": [
-				"多重攻击",
-				"吞咽",
-				"触须"
+				"Multiattack",
+				"Swallow",
+				"Tentacles"
 			],
 			"languageTags": [
 				"AB",
@@ -4767,11 +4767,11 @@
 				"RCH"
 			],
 			"conditionInflict": [
-				"倒地"
+				"prone"
 			],
 			"savingThrowForced": [
-				"体质",
-				"敏捷"
+				"constitution",
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluffImages": true
@@ -4787,15 +4787,15 @@
 				"source": "MM"
 			},
 			"immune": [
-				"寒冷",
-				"火焰",
-				"毒素",
-				"心灵",
+				"cold",
+				"fire",
+				"poison",
+				"psychic",
 				{
 					"immune": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "非精金武器且非魔法攻击的",
 					"cond": true
@@ -4866,26 +4866,26 @@
 			],
 			"passive": 25,
 			"resist": [
-				"寒冷",
-				"暗蚀",
-				"光耀",
+				"cold",
+				"necrotic",
+				"radiant",
 				{
 					"resist": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "非银质武器且非魔法攻击的",
 					"cond": true
 				}
 			],
 			"immune": [
-				"火焰",
-				"毒素"
+				"fire",
+				"poison"
 			],
 			"conditionImmune": [
-				"魅惑",
-				"中毒"
+				"charmed",
+				"poisoned"
 			],
 			"languages": [
 				"天界语",
@@ -5001,16 +5001,16 @@
 				"暗影之鞭|CoA"
 			],
 			"traitTags": [
-				"传奇抗性",
-				"魔法抗性",
-				"再生"
+				"Legendary Resistances",
+				"Magic Resistance",
+				"Regeneration"
 			],
 			"senseTags": [
 				"B",
 				"SD"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -5031,12 +5031,12 @@
 				"RCH"
 			],
 			"savingThrowForced": [
-				"魅力",
-				"体质",
-				"感知"
+				"charisma",
+				"constitution",
+				"wisdom"
 			],
 			"savingThrowForcedLegendary": [
-				"敏捷"
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -5088,27 +5088,27 @@
 			},
 			"passive": 20,
 			"resist": [
-				"火焰"
+				"fire"
 			],
 			"immune": [
-				"暗蚀",
-				"毒素",
-				"心灵",
+				"necrotic",
+				"poison",
+				"psychic",
 				{
 					"immune": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "来自非魔法攻击",
 					"cond": true
 				}
 			],
 			"conditionImmune": [
-				"目盲",
-				"魅惑",
-				"恐慌",
-				"中毒"
+				"blinded",
+				"charmed",
+				"frightened",
+				"poisoned"
 			],
 			"languages": [
 				"理解所有",
@@ -5206,7 +5206,7 @@
 				"source": "CoA"
 			},
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"TP",
@@ -5221,11 +5221,11 @@
 				"MW"
 			],
 			"savingThrowForced": [
-				"智力",
-				"感知"
+				"intelligence",
+				"wisdom"
 			],
 			"savingThrowForcedLegendary": [
-				"魅力"
+				"charisma"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -5307,7 +5307,7 @@
 			],
 			"passive": 12,
 			"conditionImmune": [
-				"中毒"
+				"poisoned"
 			],
 			"cr": "7",
 			"trait": [
@@ -5359,14 +5359,14 @@
 				}
 			],
 			"traitTags": [
-				"魔法抗性",
-				"集群战术"
+				"Magic Resistance",
+				"Pack Tactics"
 			],
 			"senseTags": [
 				"SD"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"damageTags": [
 				"P"
@@ -5430,9 +5430,9 @@
 			"resist": [
 				{
 					"resist": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "非银质武器且非魔法攻击的",
 					"cond": true
@@ -5442,7 +5442,7 @@
 				}
 			],
 			"immune": [
-				"火焰"
+				"fire"
 			],
 			"languages": [
 				"理解地狱语",
@@ -5489,14 +5489,14 @@
 				}
 			],
 			"traitTags": [
-				"魔鬼视界"
+				"Devil's Sight"
 			],
 			"senseTags": [
 				"B",
 				"D"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"I",
@@ -5511,7 +5511,7 @@
 				"MW"
 			],
 			"conditionInflict": [
-				"受擒"
+				"grappled"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -5535,7 +5535,7 @@
 				}
 			},
 			"immune": [
-				"寒冷"
+				"cold"
 			],
 			"tokenCredit": "Caverns of the Snow Witch",
 			"tokenCustom": true,
@@ -5591,21 +5591,21 @@
 			],
 			"passive": 21,
 			"resist": [
-				"光耀",
+				"radiant",
 				{
 					"resist": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "来自非魔法攻击",
 					"cond": true
 				}
 			],
 			"conditionImmune": [
-				"魅惑",
-				"力竭",
-				"恐慌"
+				"charmed",
+				"exhaustion",
+				"frightened"
 			],
 			"languages": [
 				"所有",
@@ -5673,13 +5673,13 @@
 				}
 			],
 			"traitTags": [
-				"魔法抗性"
+				"Magic Resistance"
 			],
 			"senseTags": [
 				"U"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"TP",
@@ -5695,7 +5695,7 @@
 				"MW"
 			],
 			"savingThrowForcedSpell": [
-				"感知"
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -5834,11 +5834,11 @@
 				"O"
 			],
 			"savingThrowForced": [
-				"感知"
+				"wisdom"
 			],
 			"savingThrowForcedSpell": [
-				"魅力",
-				"体质"
+				"charisma",
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -5936,27 +5936,27 @@
 			},
 			"passive": 17,
 			"resist": [
-				"火焰"
+				"fire"
 			],
 			"immune": [
-				"暗蚀",
-				"毒素",
-				"心灵",
+				"necrotic",
+				"poison",
+				"psychic",
 				{
 					"immune": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "来自非魔法攻击",
 					"cond": true
 				}
 			],
 			"conditionImmune": [
-				"目盲",
-				"魅惑",
-				"恐慌",
-				"中毒"
+				"blinded",
+				"charmed",
+				"frightened",
+				"poisoned"
 			],
 			"languages": [
 				"理解所有",
@@ -6019,7 +6019,7 @@
 				}
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"TP",
@@ -6033,7 +6033,7 @@
 				"MW"
 			],
 			"savingThrowForced": [
-				"智力"
+				"intelligence"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -6100,22 +6100,22 @@
 			"resist": [
 				{
 					"resist": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "非银质武器且非魔法攻击的",
 					"cond": true
 				}
 			],
 			"immune": [
-				"寒冷",
-				"火焰",
-				"毒素"
+				"cold",
+				"fire",
+				"poison"
 			],
 			"conditionImmune": [
-				"魅惑",
-				"中毒"
+				"charmed",
+				"poisoned"
 			],
 			"languages": [
 				"天界语",
@@ -6248,15 +6248,15 @@
 				"source": "CoA"
 			},
 			"traitTags": [
-				"魔鬼视界",
-				"传奇抗性",
-				"魔法抗性"
+				"Devil's Sight",
+				"Legendary Resistances",
+				"Magic Resistance"
 			],
 			"senseTags": [
 				"SD"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -6282,19 +6282,19 @@
 				"CUR"
 			],
 			"conditionInflict": [
-				"震慑"
+				"stunned"
 			],
 			"savingThrowForced": [
-				"魅力",
-				"敏捷",
-				"智力"
+				"charisma",
+				"dexterity",
+				"intelligence"
 			],
 			"savingThrowForcedLegendary": [
-				"敏捷"
+				"dexterity"
 			],
 			"savingThrowForcedSpell": [
-				"体质",
-				"敏捷"
+				"constitution",
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -6350,22 +6350,22 @@
 			],
 			"passive": 18,
 			"resist": [
-				"强酸",
-				"火焰",
-				"闪电",
+				"acid",
+				"fire",
+				"lightning",
 				{
 					"resist": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "来自非魔法攻击",
 					"cond": true
 				}
 			],
 			"conditionImmune": [
-				"恐慌",
-				"中毒"
+				"frightened",
+				"poisoned"
 			],
 			"languages": [
 				"通用语",
@@ -6438,15 +6438,15 @@
 				}
 			],
 			"traitTags": [
-				"魔法抗性"
+				"Magic Resistance"
 			],
 			"senseTags": [
 				"B",
 				"SD"
 			],
 			"actionTags": [
-				"吐息武器",
-				"多重攻击"
+				"Breath Weapon",
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -6464,10 +6464,10 @@
 				"RCH"
 			],
 			"conditionInflict": [
-				"倒地"
+				"prone"
 			],
 			"savingThrowForced": [
-				"体质"
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -6533,25 +6533,25 @@
 			],
 			"passive": 17,
 			"resist": [
-				"强酸",
-				"寒冷",
+				"acid",
+				"cold",
 				{
 					"resist": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "非银质武器且非魔法攻击的",
 					"cond": true
 				}
 			],
 			"immune": [
-				"火焰",
-				"毒素"
+				"fire",
+				"poison"
 			],
 			"conditionImmune": [
-				"魅惑",
-				"中毒"
+				"charmed",
+				"poisoned"
 			],
 			"languages": [
 				"天界语",
@@ -6666,17 +6666,17 @@
 				"source": "CoA"
 			},
 			"traitTags": [
-				"魔鬼视界",
-				"传奇抗性",
-				"魔法抗性",
-				"再生"
+				"Devil's Sight",
+				"Legendary Resistances",
+				"Magic Resistance",
+				"Regeneration"
 			],
 			"senseTags": [
 				"SD",
 				"U"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -6696,11 +6696,11 @@
 				"RCH"
 			],
 			"savingThrowForced": [
-				"体质",
-				"感知"
+				"constitution",
+				"wisdom"
 			],
 			"savingThrowForcedLegendary": [
-				"体质"
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -6762,27 +6762,27 @@
 			],
 			"passive": 19,
 			"resist": [
-				"强酸",
-				"寒冷",
+				"acid",
+				"cold",
 				{
 					"resist": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "非银质武器且非魔法攻击的",
 					"cond": true
 				}
 			],
 			"immune": [
-				"火焰",
-				"毒素"
+				"fire",
+				"poison"
 			],
 			"conditionImmune": [
-				"魅惑",
-				"力竭",
-				"恐慌",
-				"中毒"
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned"
 			],
 			"languages": [
 				"所有",
@@ -6937,17 +6937,17 @@
 				"source": "CoA"
 			},
 			"traitTags": [
-				"魔鬼视界",
-				"飞掠",
-				"传奇抗性",
-				"魔法抗性",
-				"再生"
+				"Devil's Sight",
+				"Flyby",
+				"Legendary Resistances",
+				"Magic Resistance",
+				"Regeneration"
 			],
 			"senseTags": [
 				"SD"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"TP",
@@ -6974,25 +6974,25 @@
 				"RCH"
 			],
 			"conditionInflictSpell": [
-				"魅惑",
-				"恐慌",
-				"失能",
-				"麻痹",
-				"震慑",
-				"昏迷"
+				"charmed",
+				"frightened",
+				"incapacitated",
+				"paralyzed",
+				"stunned",
+				"unconscious"
 			],
 			"savingThrowForced": [
-				"敏捷"
+				"dexterity"
 			],
 			"savingThrowForcedLegendary": [
-				"敏捷"
+				"dexterity"
 			],
 			"savingThrowForcedSpell": [
-				"魅力",
-				"体质",
-				"敏捷",
-				"智力",
-				"感知"
+				"charisma",
+				"constitution",
+				"dexterity",
+				"intelligence",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -7046,20 +7046,20 @@
 			],
 			"passive": 10,
 			"immune": [
-				"强酸",
-				"火焰",
+				"acid",
+				"fire",
 				{
 					"immune": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "来自非魔法攻击",
 					"cond": true
 				}
 			],
 			"conditionImmune": [
-				"石化"
+				"petrified"
 			],
 			"cr": "16",
 			"trait": [
@@ -7119,7 +7119,7 @@
 				"T"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"damageTags": [
 				"A",
@@ -7131,10 +7131,10 @@
 				"RW"
 			],
 			"conditionInflict": [
-				"受擒"
+				"grappled"
 			],
 			"savingThrowForced": [
-				"敏捷"
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -7188,25 +7188,25 @@
 			],
 			"passive": 14,
 			"resist": [
-				"火焰",
-				"毒素",
+				"fire",
+				"poison",
 				{
 					"resist": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "非银质武器且非魔法攻击的",
 					"cond": true
 				}
 			],
 			"immune": [
-				"心灵"
+				"psychic"
 			],
 			"conditionImmune": [
-				"目盲",
-				"魅惑",
-				"恐慌"
+				"blinded",
+				"charmed",
+				"frightened"
 			],
 			"cr": "11",
 			"action": [
@@ -7244,11 +7244,11 @@
 				"RCH"
 			],
 			"conditionInflict": [
-				"魅惑"
+				"charmed"
 			],
 			"savingThrowForced": [
-				"魅力",
-				"体质"
+				"charisma",
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -7308,23 +7308,23 @@
 			],
 			"passive": 14,
 			"resist": [
-				"寒冷",
+				"cold",
 				{
 					"resist": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "非银质武器且非魔法攻击的",
 					"cond": true
 				}
 			],
 			"immune": [
-				"火焰",
-				"毒素"
+				"fire",
+				"poison"
 			],
 			"conditionImmune": [
-				"中毒"
+				"poisoned"
 			],
 			"languages": [
 				"天界语",
@@ -7396,14 +7396,14 @@
 				}
 			],
 			"traitTags": [
-				"魔鬼视界",
-				"魔法抗性"
+				"Devil's Sight",
+				"Magic Resistance"
 			],
 			"senseTags": [
 				"SD"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -7420,10 +7420,10 @@
 				"RCH"
 			],
 			"conditionInflict": [
-				"失能"
+				"incapacitated"
 			],
 			"savingThrowForced": [
-				"敏捷"
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -7480,9 +7480,9 @@
 			"resist": [
 				{
 					"resist": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "来自非魔法攻击",
 					"cond": true
@@ -7569,7 +7569,7 @@
 				"长剑|phb"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"AB",
@@ -7593,12 +7593,12 @@
 				"MW"
 			],
 			"savingThrowForced": [
-				"魅力",
-				"体质"
+				"charisma",
+				"constitution"
 			],
 			"savingThrowForcedSpell": [
-				"魅力",
-				"感知"
+				"charisma",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -7692,24 +7692,24 @@
 			],
 			"passive": 23,
 			"resist": [
-				"寒冷",
+				"cold",
 				{
 					"resist": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "非银质武器且非魔法攻击的",
 					"cond": true
 				}
 			],
 			"immune": [
-				"火焰",
-				"毒素"
+				"fire",
+				"poison"
 			],
 			"conditionImmune": [
-				"魅惑",
-				"中毒"
+				"charmed",
+				"poisoned"
 			],
 			"languages": [
 				"天界语",
@@ -7773,14 +7773,14 @@
 				}
 			],
 			"traitTags": [
-				"魔鬼视界",
-				"魔法抗性"
+				"Devil's Sight",
+				"Magic Resistance"
 			],
 			"senseTags": [
 				"SD"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -7798,7 +7798,7 @@
 				"RCH"
 			],
 			"savingThrowForced": [
-				"敏捷"
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluffImages": true
@@ -7913,14 +7913,14 @@
 			],
 			"passive": 14,
 			"immune": [
-				"强酸",
-				"暗蚀",
-				"毒素"
+				"acid",
+				"necrotic",
+				"poison"
 			],
 			"conditionImmune": [
-				"魅惑",
-				"恐慌",
-				"中毒"
+				"charmed",
+				"frightened",
+				"poisoned"
 			],
 			"languages": [
 				"深渊语",
@@ -8027,14 +8027,14 @@
 				"长剑|phb"
 			],
 			"traitTags": [
-				"魔法抗性",
-				"复生"
+				"Magic Resistance",
+				"Rejuvenation"
 			],
 			"senseTags": [
 				"D"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"AB",
@@ -8060,22 +8060,22 @@
 				"MW"
 			],
 			"conditionInflictSpell": [
-				"目盲",
-				"耳聋",
-				"麻痹",
-				"中毒",
-				"倒地",
-				"震慑",
-				"昏迷"
+				"blinded",
+				"deafened",
+				"paralyzed",
+				"poisoned",
+				"prone",
+				"stunned",
+				"unconscious"
 			],
 			"savingThrowForced": [
-				"体质",
-				"敏捷"
+				"constitution",
+				"dexterity"
 			],
 			"savingThrowForcedSpell": [
-				"体质",
-				"敏捷",
-				"感知"
+				"constitution",
+				"dexterity",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -8135,23 +8135,23 @@
 			],
 			"passive": 21,
 			"resist": [
-				"寒冷",
-				"火焰",
-				"毒素",
+				"cold",
+				"fire",
+				"poison",
 				{
 					"resist": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "非银质武器且非魔法攻击的",
 					"cond": true
 				}
 			],
 			"conditionImmune": [
-				"目盲",
-				"魅惑",
-				"中毒"
+				"blinded",
+				"charmed",
+				"poisoned"
 			],
 			"cr": "12",
 			"trait": [
@@ -8200,7 +8200,7 @@
 				"SD"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"damageTags": [
 				"I",
@@ -8211,7 +8211,7 @@
 				"MW"
 			],
 			"conditionInflict": [
-				"受擒"
+				"grappled"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -8266,16 +8266,16 @@
 			"resist": [
 				{
 					"resist": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "非银质武器且非魔法攻击的",
 					"cond": true
 				}
 			],
 			"immune": [
-				"毒素"
+				"poison"
 			],
 			"languages": [
 				"宿主的语言"
@@ -8323,11 +8323,11 @@
 			"tokenCredit": "V-OneShot",
 			"tokenCustom": true,
 			"traitTags": [
-				"魔鬼视界",
-				"魔法抗性"
+				"Devil's Sight",
+				"Magic Resistance"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"damageTags": [
 				"I",
@@ -8396,12 +8396,12 @@
 				}
 			],
 			"immune": [
-				"寒冷",
-				"毒素"
+				"cold",
+				"poison"
 			],
 			"conditionImmune": [
-				"目盲",
-				"中毒"
+				"blinded",
+				"poisoned"
 			],
 			"languages": [
 				"龙语",
@@ -8499,15 +8499,15 @@
 				}
 			],
 			"traitTags": [
-				"水陆两栖"
+				"Amphibious"
 			],
 			"senseTags": [
 				"B"
 			],
 			"actionTags": [
-				"吐息武器",
-				"骇人威仪",
-				"多重攻击"
+				"Breath Weapon",
+				"Frightful Presence",
+				"Multiattack"
 			],
 			"languageTags": [
 				"DR",
@@ -8525,13 +8525,13 @@
 				"RCH"
 			],
 			"conditionInflict": [
-				"受擒",
-				"昏迷"
+				"grappled",
+				"unconscious"
 			],
 			"savingThrowForced": [
-				"体质",
-				"敏捷",
-				"感知"
+				"constitution",
+				"dexterity",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -8689,20 +8689,20 @@
 				"O"
 			],
 			"conditionInflictSpell": [
-				"目盲",
-				"魅惑",
-				"耳聋",
-				"麻痹",
-				"中毒",
-				"震慑"
+				"blinded",
+				"charmed",
+				"deafened",
+				"paralyzed",
+				"poisoned",
+				"stunned"
 			],
 			"savingThrowForced": [
-				"敏捷"
+				"dexterity"
 			],
 			"savingThrowForcedSpell": [
-				"魅力",
-				"体质",
-				"感知"
+				"charisma",
+				"constitution",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -8754,27 +8754,27 @@
 			},
 			"passive": 19,
 			"resist": [
-				"火焰"
+				"fire"
 			],
 			"immune": [
-				"暗蚀",
-				"毒素",
-				"心灵",
+				"necrotic",
+				"poison",
+				"psychic",
 				{
 					"immune": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "来自非魔法攻击",
 					"cond": true
 				}
 			],
 			"conditionImmune": [
-				"目盲",
-				"魅惑",
-				"恐慌",
-				"中毒"
+				"blinded",
+				"charmed",
+				"frightened",
+				"poisoned"
 			],
 			"languages": [
 				"理解所有",
@@ -8867,7 +8867,7 @@
 				}
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"TP",
@@ -8882,8 +8882,8 @@
 				"MW"
 			],
 			"savingThrowForced": [
-				"智力",
-				"感知"
+				"intelligence",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -8941,21 +8941,21 @@
 			"resist": [
 				{
 					"resist": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "来自非魔法攻击",
 					"cond": true
 				}
 			],
 			"immune": [
-				"暗蚀"
+				"necrotic"
 			],
 			"conditionImmune": [
-				"魅惑",
-				"力竭",
-				"麻痹"
+				"charmed",
+				"exhaustion",
+				"paralyzed"
 			],
 			"languages": [
 				"它生前知晓的语言"
@@ -9008,14 +9008,14 @@
 				}
 			],
 			"traitTags": [
-				"魔法抗性",
-				"再生"
+				"Magic Resistance",
+				"Regeneration"
 			],
 			"senseTags": [
 				"SD"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"LF"
@@ -9028,7 +9028,7 @@
 				"MW"
 			],
 			"savingThrowForced": [
-				"感知"
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -9084,29 +9084,29 @@
 			],
 			"passive": 10,
 			"resist": [
-				"强酸",
+				"acid",
 				{
 					"resist": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "来自非魔法攻击",
 					"cond": true
 				}
 			],
 			"immune": [
-				"毒素"
+				"poison"
 			],
 			"conditionImmune": [
-				"力竭",
-				"受擒",
-				"麻痹",
-				"石化",
-				"中毒",
-				"倒地",
-				"束缚",
-				"昏迷"
+				"exhaustion",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"unconscious"
 			],
 			"languages": [
 				"水族语",
@@ -9185,14 +9185,14 @@
 			"tokenCredit": "RussFairchild",
 			"tokenCustom": true,
 			"traitTags": [
-				"传奇抗性",
-				"魔法抗性"
+				"Legendary Resistances",
+				"Magic Resistance"
 			],
 			"senseTags": [
 				"D"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"AQ",
@@ -9206,10 +9206,10 @@
 				"RCH"
 			],
 			"conditionInflict": [
-				"束缚"
+				"restrained"
 			],
 			"savingThrowForced": [
-				"力量"
+				"strength"
 			],
 			"hasToken": true
 		},
@@ -9268,24 +9268,24 @@
 			],
 			"passive": 16,
 			"resist": [
-				"寒冷"
+				"cold"
 			],
 			"immune": [
-				"火焰",
-				"毒素",
+				"fire",
+				"poison",
 				{
 					"immune": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "非银质武器且非魔法攻击的",
 					"cond": true
 				}
 			],
 			"conditionImmune": [
-				"恐慌",
-				"中毒"
+				"frightened",
+				"poisoned"
 			],
 			"languages": [
 				"炼狱语",
@@ -9339,14 +9339,14 @@
 				}
 			],
 			"traitTags": [
-				"魔鬼视界",
-				"魔法抗性"
+				"Devil's Sight",
+				"Magic Resistance"
 			],
 			"senseTags": [
 				"SD"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"I",
@@ -9362,10 +9362,10 @@
 				"RCH"
 			],
 			"conditionInflict": [
-				"受擒"
+				"grappled"
 			],
 			"savingThrowForced": [
-				"感知"
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -9430,25 +9430,25 @@
 			],
 			"passive": 17,
 			"resist": [
-				"寒冷",
+				"cold",
 				{
 					"resist": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "非银质武器且非魔法攻击的",
 					"cond": true
 				}
 			],
 			"immune": [
-				"火焰",
-				"毒素",
-				"心灵"
+				"fire",
+				"poison",
+				"psychic"
 			],
 			"conditionImmune": [
-				"魅惑",
-				"中毒"
+				"charmed",
+				"poisoned"
 			],
 			"languages": [
 				"天界语",
@@ -9514,14 +9514,14 @@
 				}
 			],
 			"traitTags": [
-				"魔鬼视界",
-				"魔法抗性"
+				"Devil's Sight",
+				"Magic Resistance"
 			],
 			"senseTags": [
 				"SD"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -9540,7 +9540,7 @@
 				"RCH"
 			],
 			"savingThrowForced": [
-				"感知"
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluffImages": true
@@ -9600,28 +9600,28 @@
 			],
 			"passive": 26,
 			"resist": [
-				"寒冷",
-				"火焰",
-				"光耀",
+				"cold",
+				"fire",
+				"radiant",
 				{
 					"resist": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "非银质武器且非魔法攻击的",
 					"cond": true
 				}
 			],
 			"immune": [
-				"暗蚀",
-				"毒素"
+				"necrotic",
+				"poison"
 			],
 			"conditionImmune": [
-				"魅惑",
-				"力竭",
-				"恐慌",
-				"中毒"
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned"
 			],
 			"languages": [
 				"所有",
@@ -9749,17 +9749,17 @@
 				"长剑|phb"
 			],
 			"traitTags": [
-				"魔鬼视界",
-				"传奇抗性",
-				"魔法抗性",
-				"再生"
+				"Devil's Sight",
+				"Legendary Resistances",
+				"Magic Resistance",
+				"Regeneration"
 			],
 			"senseTags": [
 				"SD"
 			],
 			"actionTags": [
-				"多重攻击",
-				"传送术"
+				"Multiattack",
+				"Teleport"
 			],
 			"languageTags": [
 				"TP",
@@ -9787,22 +9787,22 @@
 				"RCH"
 			],
 			"conditionInflict": [
-				"中毒"
+				"poisoned"
 			],
 			"conditionInflictSpell": [
-				"隐形"
+				"invisible"
 			],
 			"savingThrowForced": [
-				"体质",
-				"感知"
+				"constitution",
+				"wisdom"
 			],
 			"savingThrowForcedLegendary": [
-				"感知"
+				"wisdom"
 			],
 			"savingThrowForcedSpell": [
-				"魅力",
-				"体质",
-				"敏捷"
+				"charisma",
+				"constitution",
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -9857,9 +9857,9 @@
 			"resist": [
 				{
 					"resist": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "来自非魔法攻击（来自石肤术）",
 					"cond": true
@@ -9969,10 +9969,10 @@
 				"匕首|phb"
 			],
 			"traitTags": [
-				"魔法抗性"
+				"Magic Resistance"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -10000,12 +10000,12 @@
 				"THW"
 			],
 			"savingThrowForced": [
-				"体质"
+				"constitution"
 			],
 			"savingThrowForcedSpell": [
-				"体质",
-				"敏捷",
-				"感知"
+				"constitution",
+				"dexterity",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,

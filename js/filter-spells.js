@@ -416,8 +416,8 @@ class PageFilterSpells extends PageFilterBase {
 		this._conditionFilter = new Filter({
 			cnHeader: "造成状态",
 			header: "Conditions Inflicted",
-			items: [...Parser.CONDITIONS],
-			displayFn: uid => uid.split("|")[0].toTitleCase(),
+			items: Parser.CONDITIONS.map(it => Parser.conditionToEn(it)),
+			displayFn: uid => Parser._parse_bToA(Parser.CONTITION_TO_EN, uid.split("|")[0]),
 		});
 		this._spellAttackFilter = new Filter({
 			cnHeader: "法术攻击",
@@ -509,6 +509,10 @@ class PageFilterSpells extends PageFilterBase {
 
 		// used for filtering
 		this._mutateForFilters_commonSources(s);
+		s._fConditionInflict = s.conditionInflict?.map(uid => {
+			const [condition, ...rest] = uid.split("|");
+			return [Parser.conditionToEn(condition), ...rest].join("|");
+		});
 		PageFilterSpells._mutMetaFilterObj(s);
 		s._fClasses = Renderer.spell.getCombinedClasses(s, "fromClassList").map(c => {
 			return this._getClassFilterItem({
@@ -596,7 +600,7 @@ class PageFilterSpells extends PageFilterBase {
 			this._variantClassFilter.addItem(c);
 		});
 		this._subSchoolFilter.addItem(s.subschools);
-		this._conditionFilter.addItem(s.conditionInflict);
+		this._conditionFilter.addItem(s._fConditionInflict);
 		this._affectsCreatureTypeFilter.addItem(s.affectsCreatureType);
 	}
 
@@ -647,7 +651,7 @@ class PageFilterSpells extends PageFilterBase {
 			s.school,
 			s.subschools,
 			s.damageInflict,
-			s.conditionInflict,
+			s._fConditionInflict,
 			s.spellAttack,
 			s.savingThrow,
 			s.abilityCheck,

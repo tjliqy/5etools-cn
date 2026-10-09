@@ -47,8 +47,8 @@
 			},
 			"passive": 14,
 			"conditionImmune": [
-				"魅惑",
-				"恐慌"
+				"charmed",
+				"frightened"
 			],
 			"languages": [
 				"天界语",
@@ -95,10 +95,10 @@
 				}
 			],
 			"traitTags": [
-				"魔法抗性"
+				"Magic Resistance"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -152,19 +152,19 @@
 			],
 			"passive": 8,
 			"resist": [
-				"强酸",
-				"寒冷",
-				"火焰"
+				"acid",
+				"cold",
+				"fire"
 			],
 			"conditionImmune": [
-				"目盲",
-				"魅惑",
-				"耳聋",
-				"力竭",
-				"恐慌",
-				"受擒",
-				"倒地",
-				"束缚"
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"prone",
+				"restrained"
 			],
 			"cr": "1/2",
 			"trait": [
@@ -193,7 +193,7 @@
 				}
 			],
 			"traitTags": [
-				"无定形"
+				"Amorphous"
 			],
 			"senseTags": [
 				"B"
@@ -281,7 +281,7 @@
 				}
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C"
@@ -291,11 +291,11 @@
 				"RA"
 			],
 			"conditionInflict": [
-				"魅惑",
-				"失能"
+				"charmed",
+				"incapacitated"
 			],
 			"savingThrowForced": [
-				"感知"
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -390,7 +390,7 @@
 				}
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -488,8 +488,8 @@
 				}
 			],
 			"traitTags": [
-				"水陆两栖",
-				"日照敏感"
+				"Amphibious",
+				"Sunlight Sensitivity"
 			],
 			"senseTags": [
 				"SD",
@@ -591,10 +591,10 @@
 				}
 			],
 			"traitTags": [
-				"屏息"
+				"Hold Breath"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -688,7 +688,7 @@
 				}
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C"
@@ -786,7 +786,7 @@
 				}
 			],
 			"actionTags": [
-				"格挡"
+				"Parry"
 			],
 			"languageTags": [
 				"C"
@@ -889,12 +889,12 @@
 				"RA"
 			],
 			"conditionInflict": [
-				"魅惑",
-				"失能",
-				"隐形"
+				"charmed",
+				"incapacitated",
+				"invisible"
 			],
 			"savingThrowForced": [
-				"魅力"
+				"charisma"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -977,7 +977,7 @@
 				}
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -1039,14 +1039,14 @@
 			],
 			"passive": 13,
 			"resist": [
-				"暗蚀"
+				"necrotic"
 			],
 			"immune": [
-				"毒素"
+				"poison"
 			],
 			"conditionImmune": [
-				"力竭",
-				"中毒"
+				"exhaustion",
+				"poisoned"
 			],
 			"languages": [
 				"通用语，外加另外一门语言"
@@ -1095,13 +1095,13 @@
 				}
 			],
 			"traitTags": [
-				"日照敏感"
+				"Sunlight Sensitivity"
 			],
 			"senseTags": [
 				"D"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -1117,7 +1117,7 @@
 				"RA"
 			],
 			"savingThrowForced": [
-				"体质"
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true,

@@ -166,15 +166,15 @@
 			],
 			"passive": 10,
 			"immune": [
-				"毒素",
-				"心灵"
+				"poison",
+				"psychic"
 			],
 			"conditionImmune": [
-				"魅惑",
-				"恐慌",
-				"麻痹",
-				"石化",
-				"中毒"
+				"charmed",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
 			],
 			"cr": "1/2",
 			"action": [
@@ -198,11 +198,11 @@
 				"MW"
 			],
 			"conditionInflict": [
-				"麻痹",
-				"中毒"
+				"paralyzed",
+				"poisoned"
 			],
 			"savingThrowForced": [
-				"体质"
+				"constitution"
 			],
 			"hasToken": true
 		},
@@ -343,7 +343,7 @@
 				"MW"
 			],
 			"savingThrowForcedSpell": [
-				"敏捷"
+				"dexterity"
 			],
 			"hasToken": true
 		},
@@ -484,7 +484,7 @@
 				"MW"
 			],
 			"savingThrowForcedSpell": [
-				"敏捷"
+				"dexterity"
 			],
 			"hasToken": true
 		},
@@ -535,21 +535,21 @@
 			"resist": [
 				{
 					"resist": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "非精金武器且非魔法攻击的",
 					"cond": true
 				}
 			],
 			"immune": [
-				"毒素"
+				"poison"
 			],
 			"conditionImmune": [
-				"力竭",
-				"石化",
-				"中毒"
+				"exhaustion",
+				"petrified",
+				"poisoned"
 			],
 			"languages": [
 				"土族语"
@@ -589,13 +589,13 @@
 			],
 			"tokenCustom": true,
 			"traitTags": [
-				"无定形"
+				"False Appearance"
 			],
 			"senseTags": [
 				"D"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"T"
@@ -652,7 +652,7 @@
 			],
 			"passive": 15,
 			"immune": [
-				"寒冷"
+				"cold"
 			],
 			"languages": [
 				"能理解炼狱语但无法说它"
@@ -692,14 +692,14 @@
 			],
 			"tokenCustom": true,
 			"traitTags": [
-				"敏锐感官",
-				"集群战术"
+				"Keen Senses",
+				"Pack Tactics"
 			],
 			"senseTags": [
 				"D"
 			],
 			"actionTags": [
-				"吐息武器"
+				"Breath Weapon"
 			],
 			"languageTags": [
 				"CS",
@@ -714,7 +714,7 @@
 				"MW"
 			],
 			"savingThrowForced": [
-				"敏捷"
+				"dexterity"
 			],
 			"hasToken": true
 		},
@@ -748,7 +748,7 @@
 				"walk": 30
 			},
 			"initiative": {
-				"advantageMode": "ADV"
+				"advantageMode": "adv"
 			},
 			"str": 16,
 			"dex": 14,

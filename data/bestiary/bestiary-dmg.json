@@ -47,16 +47,16 @@
 			],
 			"passive": 13,
 			"immune": [
-				"暗蚀",
-				"毒素"
+				"necrotic",
+				"poison"
 			],
 			"conditionImmune": [
-				"魅惑",
-				"恐慌",
-				"麻痹",
-				"石化",
-				"中毒",
-				"昏迷"
+				"charmed",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"unconscious"
 			],
 			"languages": [
 				"其召唤者所知的所有语言"
@@ -87,8 +87,8 @@
 				}
 			],
 			"traitTags": [
-				"虚体移动",
-				"免疫驱散"
+				"Incorporeal Movement",
+				"Turn Immunity"
 			],
 			"senseTags": [
 				"D",

@@ -50,11 +50,11 @@
 			],
 			"passive": 12,
 			"conditionImmune": [
-				"受擒",
-				"麻痹",
-				"石化",
-				"倒地",
-				"束缚"
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"prone",
+				"restrained"
 			],
 			"languages": [
 				"木族语; 心灵感应 120 尺"
@@ -119,13 +119,13 @@
 				"位面, 妖精荒野"
 			],
 			"traitTags": [
-				"魔法抗性"
+				"Magic Resistance"
 			],
 			"senseTags": [
 				"D"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"S",
@@ -141,10 +141,10 @@
 				"RA"
 			],
 			"conditionInflict": [
-				"倒地"
+				"prone"
 			],
 			"savingThrowForced": [
-				"敏捷"
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -192,13 +192,13 @@
 			],
 			"passive": 13,
 			"resist": [
-				"光耀"
+				"radiant"
 			],
 			"conditionImmune": [
-				"目盲",
-				"魅惑",
-				"耳聋",
-				"恐慌"
+				"blinded",
+				"charmed",
+				"deafened",
+				"frightened"
 			],
 			"languages": [
 				"木族语; 心灵感应 120 尺"
@@ -278,14 +278,14 @@
 				"位面, 妖精荒野"
 			],
 			"traitTags": [
-				"魔法抗性"
+				"Magic Resistance"
 			],
 			"senseTags": [
 				"D"
 			],
 			"actionTags": [
-				"多重攻击",
-				"传送"
+				"Multiattack",
+				"Teleport"
 			],
 			"languageTags": [
 				"S",
@@ -303,17 +303,17 @@
 				"RCH"
 			],
 			"conditionInflict": [
-				"受擒"
+				"grappled"
 			],
 			"conditionInflictSpell": [
-				"目盲",
-				"耳聋"
+				"blinded",
+				"deafened"
 			],
 			"savingThrowForced": [
-				"体质"
+				"constitution"
 			],
 			"savingThrowForcedSpell": [
-				"体质"
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -396,7 +396,7 @@
 				"奥秘"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -412,8 +412,8 @@
 				"RCH"
 			],
 			"conditionInflict": [
-				"倒地",
-				"昏迷"
+				"prone",
+				"unconscious"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -521,14 +521,14 @@
 				"个体"
 			],
 			"traitTags": [
-				"水陆两栖",
-				"拟声"
+				"Amphibious",
+				"Mimicry"
 			],
 			"senseTags": [
 				"SD"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"AQ",
@@ -546,10 +546,10 @@
 				"RA"
 			],
 			"conditionInflictSpell": [
-				"倒地"
+				"prone"
 			],
 			"savingThrowForcedSpell": [
-				"感知"
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -644,10 +644,10 @@
 				"个体"
 			],
 			"traitTags": [
-				"水陆两栖"
+				"Amphibious"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"AQ",
@@ -666,7 +666,7 @@
 				"RNG"
 			],
 			"savingThrowForced": [
-				"感知"
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -746,7 +746,7 @@
 				"个体"
 			],
 			"traitTags": [
-				"攻城怪物"
+				"Siege Monster"
 			],
 			"senseTags": [
 				"D"
@@ -762,7 +762,7 @@
 				"MA"
 			],
 			"savingThrowForced": [
-				"敏捷"
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -852,7 +852,7 @@
 				"D"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -950,7 +950,7 @@
 				"SD"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"GI"
@@ -966,10 +966,10 @@
 				"RCH"
 			],
 			"conditionInflict": [
-				"倒地"
+				"prone"
 			],
 			"savingThrowForced": [
-				"敏捷"
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true

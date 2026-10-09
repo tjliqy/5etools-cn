@@ -65,9 +65,9 @@
 				}
 			],
 			"damageResist": [
-				"寒冷",
-				"闪电",
-				"光耀"
+				"cold",
+				"lightning",
+				"radiant"
 			],
 			"miscTags": [
 				"HL",
@@ -238,13 +238,13 @@
 				}
 			],
 			"damageResist": [
-				"雷鸣"
+				"thunder"
 			],
 			"damageInflict": [
 				"thunder"
 			],
 			"conditionInflict": [
-				"耳聋"
+				"deafened"
 			],
 			"savingThrow": [
 				"constitution"
@@ -493,7 +493,7 @@
 				"necrotic"
 			],
 			"conditionInflict": [
-				"倒地"
+				"prone"
 			],
 			"savingThrow": [
 				"constitution"
@@ -800,7 +800,7 @@
 				"force"
 			],
 			"conditionInflict": [
-				"倒地"
+				"prone"
 			],
 			"savingThrow": [
 				"strength"
@@ -940,7 +940,7 @@
 				"thunder"
 			],
 			"conditionInflict": [
-				"倒地"
+				"prone"
 			],
 			"savingThrow": [
 				"dexterity"
@@ -1179,8 +1179,8 @@
 				"force"
 			],
 			"conditionInflict": [
-				"失能",
-				"中毒"
+				"incapacitated",
+				"poisoned"
 			],
 			"spellAttack": [
 				"R"

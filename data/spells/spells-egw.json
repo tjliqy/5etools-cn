@@ -47,7 +47,7 @@
 				"force"
 			],
 			"conditionInflict": [
-				"耳聋"
+				"deafened"
 			],
 			"savingThrow": [
 				"constitution"
@@ -328,7 +328,7 @@
 				}
 			],
 			"abilityCheck": [
-				"力量"
+				"strength"
 			],
 			"miscTags": [
 				"OBJ",
@@ -503,13 +503,13 @@
 				"force"
 			],
 			"conditionInflict": [
-				"束缚"
+				"restrained"
 			],
 			"savingThrow": [
 				"strength"
 			],
 			"abilityCheck": [
-				"力量"
+				"strength"
 			],
 			"miscTags": [
 				"OBJ",
@@ -595,9 +595,9 @@
 				"cold"
 			],
 			"conditionInflict": [
-				"震慑",
-				"倒地",
-				"目盲"
+				"stunned",
+				"prone",
+				"blinded"
 			],
 			"savingThrow": [
 				"wisdom",
@@ -659,7 +659,7 @@
 				"necrotic"
 			],
 			"conditionInflict": [
-				"倒地"
+				"prone"
 			],
 			"savingThrow": [
 				"constitution"

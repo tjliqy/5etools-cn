@@ -664,12 +664,12 @@
 								"wis": 17,
 								"cha": 16,
 								"immune": [
-									"毒素"
+									"poison"
 								],
 								"conditionImmune": [
-									"魅惑",
-									"麻痹",
-									"中毒"
+									"charmed",
+									"paralyzed",
+									"poisoned"
 								],
 								"senses": [
 									"黑暗视觉 60 尺"
@@ -802,12 +802,12 @@
 									"path": "bestiary/unicorn.opus"
 								},
 								"traitTags": [
-									"冲锋",
-									"魔法抗性",
-									"魔法武器"
+									"Charge",
+									"Magic Resistance",
+									"Magic Weapons"
 								],
 								"actionTags": [
-									"多重攻击"
+									"Multiattack"
 								]
 							}
 						},

@@ -123,11 +123,11 @@
 				}
 			],
 			"damageResist": [
-				"强酸",
-				"寒冷",
-				"火焰",
-				"闪电",
-				"雷鸣"
+				"acid",
+				"cold",
+				"fire",
+				"lightning",
+				"thunder"
 			],
 			"translator": "不全书"
 		},
@@ -241,7 +241,7 @@
 				"你和一个你接触的，对你友好或被你{@condition 魅惑}的野兽建立起一道心灵链接。若该野兽的智力不低于 4，则此法术失败。直到法术终结，只要你和该野兽相互处于彼此的视觉线内，此链接便处于活动状态。通过此链接，该野兽可以理解你以心灵感应传递的信息，而其也会以心灵感应向你传递其基本的情绪和意愿。只要此链接处于活动状态，该野兽在对你周围 5 尺，你能看见的任何生物所进行的攻击检定中获得优势。"
 			],
 			"conditionInflict": [
-				"魅惑"
+				"charmed"
 			],
 			"affectsCreatureType": [
 				"野兽"
@@ -312,14 +312,14 @@
 				"bludgeoning"
 			],
 			"conditionInflict": [
-				"束缚"
+				"restrained"
 			],
 			"savingThrow": [
 				"dexterity"
 			],
 			"abilityCheck": [
-				"力量",
-				"敏捷"
+				"strength",
+				"dexterity"
 			],
 			"miscTags": [
 				"DFT",
@@ -444,7 +444,7 @@
 				}
 			],
 			"conditionInflict": [
-				"昏迷"
+				"unconscious"
 			],
 			"miscTags": [
 				"SCT",
@@ -505,7 +505,7 @@
 				}
 			],
 			"conditionInflict": [
-				"恐慌"
+				"frightened"
 			],
 			"savingThrow": [
 				"wisdom"
@@ -845,7 +845,7 @@
 				}
 			],
 			"conditionInflict": [
-				"魅惑"
+				"charmed"
 			],
 			"savingThrow": [
 				"wisdom"
@@ -997,7 +997,7 @@
 				}
 			],
 			"conditionInflict": [
-				"倒地"
+				"prone"
 			],
 			"savingThrow": [
 				"strength"
@@ -1593,7 +1593,7 @@
 				"bludgeoning"
 			],
 			"conditionInflict": [
-				"倒地"
+				"prone"
 			],
 			"savingThrow": [
 				"dexterity"
@@ -2416,7 +2416,7 @@
 				"radiant"
 			],
 			"conditionInflict": [
-				"目盲"
+				"blinded"
 			],
 			"savingThrow": [
 				"constitution"
@@ -2552,14 +2552,14 @@
 				"poison"
 			],
 			"conditionInflict": [
-				"恐慌"
+				"frightened"
 			],
 			"savingThrow": [
 				"wisdom",
 				"intelligence"
 			],
 			"abilityCheck": [
-				"智力"
+				"intelligence"
 			],
 			"miscTags": [
 				"SGT",
@@ -2806,10 +2806,10 @@
 				}
 			],
 			"damageResist": [
-				"寒冷"
+				"cold"
 			],
 			"damageImmune": [
-				"火焰"
+				"fire"
 			],
 			"damageInflict": [
 				"fire"
@@ -2881,10 +2881,10 @@
 				}
 			],
 			"damageResist": [
-				"火焰"
+				"fire"
 			],
 			"damageImmune": [
-				"寒冷"
+				"cold"
 			],
 			"damageInflict": [
 				"cold"
@@ -2956,13 +2956,13 @@
 				}
 			],
 			"damageResist": [
-				"钝击",
-				"穿刺",
-				"挥砍"
+				"bludgeoning",
+				"piercing",
+				"slashing"
 			],
 			"conditionInflict": [
-				"倒地",
-				"震慑"
+				"prone",
+				"stunned"
 			],
 			"savingThrow": [
 				"dexterity"
@@ -3426,13 +3426,13 @@
 				"bludgeoning"
 			],
 			"conditionInflict": [
-				"束缚"
+				"restrained"
 			],
 			"savingThrow": [
 				"strength"
 			],
 			"abilityCheck": [
-				"力量"
+				"strength"
 			],
 			"miscTags": [
 				"SGT",
@@ -3621,8 +3621,8 @@
 				"在一年之间，每7天一次在相同的位置施展这个法术会让堡垒永久存在。"
 			],
 			"damageImmune": [
-				"毒素",
-				"心灵"
+				"poison",
+				"psychic"
 			],
 			"miscTags": [
 				"PIR",
@@ -3960,18 +3960,18 @@
 				"当你受到上述类型之一的伤害时，你可以用反应来得到对该种类型伤害的免疫，此举同样会免疫触发此效果的这次伤害。使用此反应后，上述抗性效果将消失，你获得对应伤害的免疫，持续直至你的下个回合结束（那时法术将提前终止）。"
 			],
 			"damageResist": [
-				"强酸",
-				"寒冷",
-				"火焰",
-				"闪电",
-				"雷鸣"
+				"acid",
+				"cold",
+				"fire",
+				"lightning",
+				"thunder"
 			],
 			"damageImmune": [
-				"强酸",
-				"寒冷",
-				"火焰",
-				"闪电",
-				"雷鸣"
+				"acid",
+				"cold",
+				"fire",
+				"lightning",
+				"thunder"
 			],
 			"translator": "不全书"
 		},
@@ -4012,7 +4012,7 @@
 				"psychic"
 			],
 			"conditionInflict": [
-				"震慑"
+				"stunned"
 			],
 			"savingThrow": [
 				"intelligence"
@@ -4083,7 +4083,7 @@
 				}
 			],
 			"conditionInflict": [
-				"目盲"
+				"blinded"
 			],
 			"savingThrow": [
 				"constitution"
@@ -4239,7 +4239,7 @@
 				"直到法术结束之前，你具有光耀伤害抗性。此外，当在你周围 10 尺内的生物用攻击命中你时，暗影会袭向那个生物，对它造成{@damage 2d8}点暗蚀伤害。"
 			],
 			"damageResist": [
-				"光耀"
+				"radiant"
 			],
 			"damageInflict": [
 				"necrotic"
@@ -4363,7 +4363,7 @@
 				"radiant"
 			],
 			"conditionInflict": [
-				"力竭"
+				"exhaustion"
 			],
 			"savingThrow": [
 				"constitution"
@@ -4511,13 +4511,13 @@
 				"在陷阱被触发之后，当没有生物被它{@condition 束缚}时，法术将会结束。"
 			],
 			"conditionInflict": [
-				"束缚"
+				"restrained"
 			],
 			"savingThrow": [
 				"dexterity"
 			],
 			"abilityCheck": [
-				"智力"
+				"intelligence"
 			],
 			"areaTags": [
 				"ST"
@@ -5144,7 +5144,7 @@
 				"force"
 			],
 			"conditionInflict": [
-				"力竭"
+				"exhaustion"
 			],
 			"savingThrow": [
 				"constitution"
@@ -5326,7 +5326,7 @@
 				"bludgeoning"
 			],
 			"conditionInflict": [
-				"倒地"
+				"prone"
 			],
 			"savingThrow": [
 				"dexterity"
@@ -5527,21 +5527,21 @@
 				}
 			],
 			"damageImmune": [
-				"毒素",
-				"心灵"
+				"poison",
+				"psychic"
 			],
 			"damageInflict": [
 				"bludgeoning"
 			],
 			"conditionInflict": [
-				"束缚"
+				"restrained"
 			],
 			"savingThrow": [
 				"strength",
 				"dexterity"
 			],
 			"abilityCheck": [
-				"力量"
+				"strength"
 			],
 			"miscTags": [
 				"SGT"
@@ -5672,7 +5672,7 @@
 				"radiant"
 			],
 			"conditionInflict": [
-				"目盲"
+				"blinded"
 			],
 			"spellAttack": [
 				"R"
@@ -5738,7 +5738,7 @@
 				"你在距离内你能看到的地表的一点上召唤出由舞动的沙子构成的墙体。你可以制造出的墙体长度至多为 30 尺，高度至多为 10 尺，厚度至多为 10 尺。其将在法术终结时消失。它能阻挡视觉线，但无法阻挡移动。处于墙体所在的空间内的生物{@condition 目盲}，在其中移动时，每移动 1 尺需要消耗 3 尺的移动力。"
 			],
 			"conditionInflict": [
-				"目盲"
+				"blinded"
 			],
 			"miscTags": [
 				"SGT"
@@ -5869,7 +5869,7 @@
 				}
 			],
 			"conditionInflict": [
-				"耳聋"
+				"deafened"
 			],
 			"miscTags": [
 				"DFT"
@@ -5929,8 +5929,8 @@
 				"当此法术终结时，水球会掉落在地，并熄灭其周围 30 尺范围内的所有非魔法火焰。任何被水球{@condition 束缚}的生物会在水球的落地点周围以{@condition 倒地}的状态出现。随后，这些水会消失。"
 			],
 			"conditionInflict": [
-				"倒地",
-				"束缚"
+				"prone",
+				"restrained"
 			],
 			"savingThrow": [
 				"strength"
@@ -5996,15 +5996,15 @@
 				"bludgeoning"
 			],
 			"conditionInflict": [
-				"束缚"
+				"restrained"
 			],
 			"savingThrow": [
 				"dexterity",
 				"strength"
 			],
 			"abilityCheck": [
-				"力量",
-				"敏捷"
+				"strength",
+				"dexterity"
 			],
 			"miscTags": [
 				"FMV",
@@ -6151,8 +6151,8 @@
 				"slashing"
 			],
 			"conditionInflict": [
-				"倒地",
-				"束缚"
+				"prone",
+				"restrained"
 			],
 			"spellAttack": [
 				"R"
@@ -6162,7 +6162,7 @@
 				"strength"
 			],
 			"abilityCheck": [
-				"力量"
+				"strength"
 			],
 			"miscTags": [
 				"DFT",

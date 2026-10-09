@@ -84,8 +84,8 @@
 				"D"
 			],
 			"actionTags": [
-				"多重攻击",
-				"触须"
+				"Multiattack",
+				"Tentacles"
 			],
 			"damageTags": [
 				"B",
@@ -96,8 +96,8 @@
 				"RCH"
 			],
 			"conditionInflict": [
-				"受擒",
-				"束缚"
+				"grappled",
+				"restrained"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -305,15 +305,15 @@
 				}
 			],
 			"traitTags": [
-				"敏锐感官",
-				"蛛行术"
+				"Keen Senses",
+				"Spider Climb"
 			],
 			"senseTags": [
 				"D"
 			],
 			"actionTags": [
-				"多重攻击",
-				"触须"
+				"Multiattack",
+				"Tentacles"
 			],
 			"languageTags": [
 				"AB",
@@ -337,14 +337,14 @@
 				"RCH"
 			],
 			"conditionInflict": [
-				"麻痹",
-				"中毒"
+				"paralyzed",
+				"poisoned"
 			],
 			"savingThrowForced": [
-				"体质"
+				"constitution"
 			],
 			"savingThrowForcedSpell": [
-				"感知"
+				"wisdom"
 			],
 			"hasToken": true
 		},
@@ -387,13 +387,13 @@
 			],
 			"passive": 10,
 			"resist": [
-				"钝击"
+				"bludgeoning"
 			],
 			"immune": [
-				"毒素"
+				"poison"
 			],
 			"conditionImmune": [
-				"中毒"
+				"poisoned"
 			],
 			"languages": [
 				"理解它生前所知的语言，但不会说"
@@ -425,8 +425,8 @@
 				}
 			],
 			"traitTags": [
-				"驱散抗性",
-				"不死坚韧"
+				"Turn Resistance",
+				"Undead Fortitude"
 			],
 			"senseTags": [
 				"D"
@@ -443,10 +443,10 @@
 				"MW"
 			],
 			"conditionInflict": [
-				"中毒"
+				"poisoned"
 			],
 			"savingThrowForced": [
-				"体质"
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -495,7 +495,7 @@
 			},
 			"cr": "4",
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"hasToken": true,
 			"hasFluff": true,

@@ -50,11 +50,11 @@
 			],
 			"passive": 10,
 			"immune": [
-				"火焰",
-				"毒素"
+				"fire",
+				"poison"
 			],
 			"conditionImmune": [
-				"中毒"
+				"poisoned"
 			],
 			"languages": [
 				"龙语",
@@ -95,14 +95,14 @@
 			],
 			"tokenCustom": true,
 			"traitTags": [
-				"自爆",
-				"非凡本质"
+				"Death Burst",
+				"Unusual Nature"
 			],
 			"senseTags": [
 				"D"
 			],
 			"actionTags": [
-				"吐息武器"
+				"Breath Weapon"
 			],
 			"languageTags": [
 				"DR",
@@ -117,8 +117,8 @@
 				"MW"
 			],
 			"savingThrowForced": [
-				"体质",
-				"敏捷"
+				"constitution",
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -210,8 +210,8 @@
 				"匕首|phb"
 			],
 			"traitTags": [
-				"集群战术",
-				"日照敏感"
+				"Pack Tactics",
+				"Sunlight Sensitivity"
 			],
 			"senseTags": [
 				"D"
@@ -232,7 +232,7 @@
 				"THW"
 			],
 			"savingThrowForced": [
-				"敏捷"
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -313,13 +313,13 @@
 				}
 			],
 			"traitTags": [
-				"水陆两栖"
+				"Amphibious"
 			],
 			"senseTags": [
 				"D"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"AB",
@@ -501,10 +501,10 @@
 			],
 			"passive": 8,
 			"conditionImmune": [
-				"目盲",
-				"魅惑",
-				"恐慌",
-				"麻痹"
+				"blinded",
+				"charmed",
+				"frightened",
+				"paralyzed"
 			],
 			"cr": "1",
 			"trait": [
@@ -533,14 +533,14 @@
 				}
 			],
 			"traitTags": [
-				"屏息",
-				"水下呼吸"
+				"Hold Breath",
+				"Water Breathing"
 			],
 			"senseTags": [
 				"B"
 			],
 			"actionTags": [
-				"触须"
+				"Tentacles"
 			],
 			"damageTags": [
 				"B"
@@ -633,7 +633,7 @@
 				"匕首|phb"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -721,7 +721,7 @@
 				"短剑|phb"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C"

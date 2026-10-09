@@ -210,10 +210,10 @@
 				"短棒|phb"
 			],
 			"traitTags": [
-				"屏息"
+				"Hold Breath"
 			],
 			"actionTags": [
-				"变形生物"
+				"Shapechanger"
 			],
 			"languageTags": [
 				"AQ",
@@ -236,14 +236,14 @@
 				"MW"
 			],
 			"conditionInflictSpell": [
-				"魅惑",
-				"麻痹",
-				"束缚"
+				"charmed",
+				"paralyzed",
+				"restrained"
 			],
 			"savingThrowForcedSpell": [
-				"体质",
-				"力量",
-				"感知"
+				"constitution",
+				"strength",
+				"wisdom"
 			],
 			"hasToken": true
 		},
@@ -333,7 +333,7 @@
 			],
 			"tokenCustom": true,
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"AQ",
@@ -392,7 +392,7 @@
 			},
 			"passive": 20,
 			"resist": [
-				"寒冷"
+				"cold"
 			],
 			"languages": [
 				"水族语",
@@ -577,11 +577,11 @@
 				"波涛|dmg"
 			],
 			"traitTags": [
-				"水陆两栖",
-				"传奇抗性"
+				"Amphibious",
+				"Legendary Resistances"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"AQ",
@@ -605,29 +605,29 @@
 				"RW"
 			],
 			"conditionInflict": [
-				"受擒"
+				"grappled"
 			],
 			"conditionInflictLegendary": [
-				"束缚"
+				"restrained"
 			],
 			"conditionInflictSpell": [
-				"魅惑",
-				"麻痹",
-				"倒地",
-				"束缚"
+				"charmed",
+				"paralyzed",
+				"prone",
+				"restrained"
 			],
 			"savingThrowForced": [
-				"体质"
+				"constitution"
 			],
 			"savingThrowForcedLegendary": [
-				"力量"
+				"strength"
 			],
 			"savingThrowForcedSpell": [
-				"魅力",
-				"体质",
-				"敏捷",
-				"力量",
-				"感知"
+				"charisma",
+				"constitution",
+				"dexterity",
+				"strength",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluffImages": true
@@ -685,9 +685,9 @@
 			},
 			"passive": 10,
 			"resist": [
-				"强酸",
-				"闪电",
-				"雷鸣"
+				"acid",
+				"lightning",
+				"thunder"
 			],
 			"languages": [
 				"水族语",
@@ -784,7 +784,7 @@
 				"匕首|phb"
 			],
 			"traitTags": [
-				"水陆两栖"
+				"Amphibious"
 			],
 			"languageTags": [
 				"AQ",
@@ -811,9 +811,9 @@
 				"THW"
 			],
 			"savingThrowForcedSpell": [
-				"敏捷",
-				"力量",
-				"感知"
+				"dexterity",
+				"strength",
+				"wisdom"
 			],
 			"hasToken": true
 		},
@@ -956,20 +956,20 @@
 			],
 			"passive": 14,
 			"immune": [
-				"闪电",
+				"lightning",
 				{
 					"immune": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "来自非魔法攻击",
 					"cond": true
 				}
 			],
 			"conditionImmune": [
-				"恐慌",
-				"麻痹"
+				"frightened",
+				"paralyzed"
 			],
 			"languages": [
 				"深渊语",
@@ -1028,15 +1028,15 @@
 				}
 			],
 			"traitTags": [
-				"水陆两栖"
+				"Amphibious"
 			],
 			"senseTags": [
 				"U"
 			],
 			"actionTags": [
-				"多重攻击",
-				"吞咽",
-				"触须"
+				"Multiattack",
+				"Swallow",
+				"Tentacles"
 			],
 			"languageTags": [
 				"AB",
@@ -1057,14 +1057,14 @@
 				"RCH"
 			],
 			"conditionInflict": [
-				"目盲",
-				"受擒",
-				"倒地",
-				"束缚"
+				"blinded",
+				"grappled",
+				"prone",
+				"restrained"
 			],
 			"savingThrowForced": [
-				"体质",
-				"敏捷"
+				"constitution",
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluffImages": true

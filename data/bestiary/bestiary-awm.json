@@ -64,8 +64,8 @@
 				"MW"
 			],
 			"conditionInflict": [
-				"受擒",
-				"束缚"
+				"grappled",
+				"restrained"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -136,10 +136,10 @@
 				}
 			],
 			"traitTags": [
-				"集群战术"
+				"Pack Tactics"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"damageTags": [
 				"P",
@@ -203,7 +203,7 @@
 			"familiar": true,
 			"tokenCustom": true,
 			"traitTags": [
-				"集群战术"
+				"Pack Tactics"
 			],
 			"damageTags": [
 				"P"
@@ -276,7 +276,7 @@
 			],
 			"tokenCustom": true,
 			"traitTags": [
-				"水陆两栖"
+				"Amphibious"
 			],
 			"damageTags": [
 				"P"
@@ -285,10 +285,10 @@
 				"MW"
 			],
 			"conditionInflict": [
-				"魅惑"
+				"charmed"
 			],
 			"savingThrowForced": [
-				"感知"
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -379,8 +379,8 @@
 			],
 			"tokenCustom": true,
 			"traitTags": [
-				"水陆两栖",
-				"拟声"
+				"Amphibious",
+				"Mimicry"
 			],
 			"damageTags": [
 				"S"
@@ -395,7 +395,7 @@
 				"MW"
 			],
 			"savingThrowForcedSpell": [
-				"感知"
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -520,7 +520,7 @@
 			"wis": 11,
 			"cha": 10,
 			"resist": [
-				"毒素"
+				"poison"
 			],
 			"cr": "1/4",
 			"trait": [
@@ -626,11 +626,11 @@
 				}
 			],
 			"traitTags": [
-				"掘道者"
+				"Tunneler"
 			],
 			"actionTags": [
-				"多重攻击",
-				"吞咽"
+				"Multiattack",
+				"Swallow"
 			],
 			"damageTags": [
 				"I",
@@ -716,8 +716,8 @@
 			],
 			"tokenCustom": true,
 			"actionTags": [
-				"多重攻击",
-				"触须"
+				"Multiattack",
+				"Tentacles"
 			],
 			"damageTags": [
 				"B",
@@ -729,7 +729,7 @@
 				"RCH"
 			],
 			"conditionInflict": [
-				"受擒"
+				"grappled"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -794,7 +794,7 @@
 				"巨棒|phb"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"damageTags": [
 				"B"
@@ -921,10 +921,10 @@
 			],
 			"tokenCustom": true,
 			"traitTags": [
-				"魔法武器"
+				"Magic Weapons"
 			],
 			"actionTags": [
-				"变形生物"
+				"Shapechanger"
 			],
 			"damageTags": [
 				"B",
@@ -941,11 +941,11 @@
 				"RCH"
 			],
 			"conditionInflict": [
-				"受擒",
-				"昏迷"
+				"grappled",
+				"unconscious"
 			],
 			"savingThrowForcedSpell": [
-				"感知"
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,

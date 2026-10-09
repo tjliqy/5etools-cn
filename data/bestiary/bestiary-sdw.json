@@ -177,14 +177,14 @@
 			],
 			"passive": 13,
 			"immune": [
-				"毒素"
+				"poison"
 			],
 			"vulnerable": [
-				"钝击"
+				"bludgeoning"
 			],
 			"conditionImmune": [
-				"力竭",
-				"中毒"
+				"exhaustion",
+				"poisoned"
 			],
 			"cr": "5",
 			"trait": [
@@ -272,7 +272,7 @@
 			],
 			"passive": 22,
 			"immune": [
-				"闪电"
+				"lightning"
 			],
 			"languages": [
 				"通用语",
@@ -465,19 +465,19 @@
 				"source": "MM"
 			},
 			"traitTags": [
-				"水陆两栖",
-				"传奇抗性",
-				"再生"
+				"Amphibious",
+				"Legendary Resistances",
+				"Regeneration"
 			],
 			"senseTags": [
 				"B",
 				"SD"
 			],
 			"actionTags": [
-				"吐息武器",
-				"骇人威仪",
-				"多重攻击",
-				"变形生物"
+				"Breath Weapon",
+				"Frightful Presence",
+				"Multiattack",
+				"Shapechanger"
 			],
 			"languageTags": [
 				"C",
@@ -506,31 +506,31 @@
 				"RCH"
 			],
 			"conditionInflict": [
-				"恐慌",
-				"倒地"
+				"frightened",
+				"prone"
 			],
 			"conditionInflictLegendary": [
-				"耳聋",
-				"倒地"
+				"deafened",
+				"prone"
 			],
 			"conditionInflictSpell": [
-				"魅惑",
-				"隐形",
-				"昏迷"
+				"charmed",
+				"invisible",
+				"unconscious"
 			],
 			"savingThrowForced": [
-				"敏捷",
-				"力量",
-				"感知"
+				"dexterity",
+				"strength",
+				"wisdom"
 			],
 			"savingThrowForcedLegendary": [
-				"体质",
-				"敏捷",
-				"力量"
+				"constitution",
+				"dexterity",
+				"strength"
 			],
 			"savingThrowForcedSpell": [
-				"敏捷",
-				"感知"
+				"dexterity",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -679,11 +679,11 @@
 				"MW"
 			],
 			"conditionInflictSpell": [
-				"失能"
+				"incapacitated"
 			],
 			"savingThrowForcedSpell": [
-				"魅力",
-				"敏捷"
+				"charisma",
+				"dexterity"
 			],
 			"hasToken": true
 		},
@@ -832,13 +832,13 @@
 				"MW"
 			],
 			"conditionInflictSpell": [
-				"隐形",
-				"昏迷"
+				"invisible",
+				"unconscious"
 			],
 			"savingThrowForcedSpell": [
-				"体质",
-				"敏捷",
-				"感知"
+				"constitution",
+				"dexterity",
+				"wisdom"
 			],
 			"hasToken": true
 		},
@@ -872,7 +872,7 @@
 				"walk": 30
 			},
 			"initiative": {
-				"advantageMode": "ADV"
+				"advantageMode": "adv"
 			},
 			"str": 18,
 			"dex": 14,

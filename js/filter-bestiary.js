@@ -1,6 +1,15 @@
 "use strict";
 
 class PageFilterBestiary extends PageFilterBase {
+	static _TRAIT_TAG_TO_CN = {
+		"Aggressive": "好斗", "Ambusher": "伏击", "Amorphous": "无定形", "Amphibious": "水陆两栖", "Antimagic Susceptibility": "反魔法易感", "Beast of Burden": "负重野兽", "Brute": "残暴", "Camouflage": "伪装", "Charge": "冲锋", "Damage Absorption": "伤害吸收", "Death Burst": "自爆", "Devil's Sight": "魔鬼视界", "Ethereal Sight": "以太视界", "False Appearance": "伪装形态", "Fey Ancestry": "精类血统", "Flyby": "飞掠", "Hold Breath": "屏息", "Illumination": "照明", "Immutable Form": "不变形态", "Incorporeal Movement": "虚体移动", "Keen Senses": "敏锐感官", "Legendary Resistances": "传奇抗性", "Light Sensitivity": "光照敏感", "Magic Resistance": "魔法抗性", "Magic Weapons": "魔法武器", "Mimicry": "拟声", "Pack Tactics": "集群战术", "Pounce": "猛扑", "Rampage": "横行", "Reckless": "鲁莽", "Regeneration": "再生", "Rejuvenation": "复生", "Shapechanger": "变形生物", "Siege Monster": "攻城怪物", "Sneak Attack": "偷袭", "Spider Climb": "蛛行", "Spell Immunity": "法术免疫", "Sunlight Sensitivity": "日照敏感", "Sure-Footed": "立足稳固", "Tree Stride": "林间穿行", "Tunneler": "掘道者", "Turn Immunity": "免疫驱散", "Turn Resistance": "抵抗驱散", "Undead Fortitude": "不死坚韧", "Unusual Nature": "异常本质", "Water Breathing": "水下呼吸", "Web Sense": "蛛网感知", "Web Walker": "蛛网行者",
+	};
+	static _TRAIT_TAG_CN_TO_EN = Object.fromEntries(Object.entries(this._TRAIT_TAG_TO_CN).map(([en, cn]) => [cn, en]));
+	static _getTraitTagKey (tag) { return this._TRAIT_TAG_CN_TO_EN[tag] || tag; }
+	static _getConditionKey (uid) {
+		const [condition, ...rest] = uid.split("|");
+		return [Parser.conditionToEn(condition), ...rest].join("|");
+	}
 	static _NEUT_ALIGNS = ["NX", "NY"];
 	static MISC_FILTER_SPELLCASTER = "施法者, ";
 	static _RE_SPELL_TAG = /{@spell ([^}]+)}/g;
@@ -41,8 +50,9 @@ class PageFilterBestiary extends PageFilterBase {
 	}
 
 	static _getDamageTagDisplayText (tag) { return Parser.dmgTypeToFull(tag).toTitleCase(); }
-	static _getConditionDisplayText (uid) { return uid.split("|")[0].toTitleCase(); }
-	static _getAbilitySaveDisplayText (abl) { return `${abl.uppercaseFirst()}豁免`; }
+	static _getConditionDisplayText (uid) { return Parser._parse_bToA(Parser.CONTITION_TO_EN, uid.split("|")[0]); }
+	static _getAbilitySaveDisplayText (abl) { return `${Parser.ATB_FULL_TO_CN[abl] || abl}豁免`; }
+	static _getAbilitySaveKey (abl) { return Parser._parse_bToA(Parser.ATB_FULL_TO_CN, abl); }
 	// endregion
 
 	/* -------------------------------------------- */
@@ -178,21 +188,21 @@ class PageFilterBestiary extends PageFilterBase {
 			cnHeader: "通过特性/动作造成状态",
 			displayFn: this.constructor._getConditionDisplayText,
 			displayFnMini: uid => `${this.constructor._getConditionDisplayText(uid)}状态（特性/动作）`,
-			items: [...Parser.CONDITIONS],
+			items: Parser.CONDITIONS.map(it => Parser.conditionToEn(it)),
 		});
 		this._conditionsInflictedFilterLegendary = new Filter({
 			header: "Conditions Inflicted by Lair Actions/Regional Effects",
 			cnHeader: "通过巢穴动作/区域效应造成状态",
 			displayFn: this.constructor._getConditionDisplayText,
 			displayFnMini: uid => `${this.constructor._getConditionDisplayText(uid)}状态（巢穴/区域）`,
-			items: [...Parser.CONDITIONS],
+			items: Parser.CONDITIONS.map(it => Parser.conditionToEn(it)),
 		});
 		this._conditionsInflictedFilterSpells = new Filter({
 			header: "Conditions Inflicted by Spells",
 			cnHeader: "通过法术造成状态",
 			displayFn: this.constructor._getConditionDisplayText,
-			displayFnMini: uid => `Inflicts ${this.constructor._getConditionDisplayText(uid)} (Spell)`,
-			items: [...Parser.CONDITIONS],
+			displayFnMini: uid => `${this.constructor._getConditionDisplayText(uid)}状态（法术）`,
+			items: Parser.CONDITIONS.map(it => Parser.conditionToEn(it)),
 		});
 		this._conditionsInflictedFilter = new MultiFilter({header: "Conditions Inflicted", cnHeader: "造成状态", filters: [this._conditionsInflictedFilterBase, this._conditionsInflictedFilterLegendary, this._conditionsInflictedFilterSpells]});
 		this._savingThrowForcedFilterBase = new Filter({
@@ -200,7 +210,7 @@ class PageFilterBestiary extends PageFilterBase {
 			cnHeader: "特性/动作需要的豁免检定",
 			displayFn: this.constructor._getAbilitySaveDisplayText,
 			displayFnMini: abl => `需要${this.constructor._getAbilitySaveDisplayText(abl)} (特性/动作)`,
-			items: Parser.ABIL_ABVS.map(abl => Parser.attAbvToFull(abl).toLowerCase()),
+			items: Object.keys(Parser.ATB_FULL_TO_CN),
 			itemSortFn: null,
 		});
 		this._savingThrowForcedFilterLegendary = new Filter({
@@ -208,7 +218,7 @@ class PageFilterBestiary extends PageFilterBase {
 			cnHeader: "通过巢穴动作/区域效应需要的豁免检定",
 			displayFn: this.constructor._getAbilitySaveDisplayText,
 			displayFnMini: abl => `需要${this.constructor._getAbilitySaveDisplayText(abl)} (巢穴动作/区域效应)`,
-			items: Parser.ABIL_ABVS.map(abl => Parser.attAbvToFull(abl).toLowerCase()),
+			items: Object.keys(Parser.ATB_FULL_TO_CN),
 			itemSortFn: null,
 		});
 		this._savingThrowForcedFilterSpells = new Filter({
@@ -216,7 +226,7 @@ class PageFilterBestiary extends PageFilterBase {
 			cnHeader: "法术需要的豁免检定",
 			displayFn: this.constructor._getAbilitySaveDisplayText,
 			displayFnMini: abl => `需要${this.constructor._getAbilitySaveDisplayText(abl)} (法术)`,
-			items: Parser.ABIL_ABVS.map(abl => Parser.attAbvToFull(abl).toLowerCase()),
+			items: Object.keys(Parser.ATB_FULL_TO_CN),
 			itemSortFn: null,
 		});
 		this._savingThrowForcedFilter = new MultiFilter({header: "Saving Throw Required", cnHeader: "需要豁免检定", filters: [this._savingThrowForcedFilterBase, this._savingThrowForcedFilterLegendary, this._savingThrowForcedFilterSpells]});
@@ -256,13 +266,22 @@ class PageFilterBestiary extends PageFilterBase {
 		this._traitFilter = new Filter({
 			header: "Traits",
 			cnHeader: "特质",
-			items: [
-				"好斗", "伏击", "无定形", "水陆两栖", "魔力依赖", "残暴", "冲锋", "伤害吸收", "自爆", "魔鬼视界", "拟形", "精类血统", "飞掠", "屏息", "照明", "不变形态", "虚体移动", "敏锐感官", "传奇抗性", "光照敏感", "魔法抗性", "魔法武器", "集群战术", "猛扑", "横行", "鲁莽", "再生", "复生", "变形生物", "攻城怪物", "偷袭", "蛛行", "日照敏感", "Sure-Footed", "掘道者", "免疫驱散", "抵抗驱散", "不死坚韧", "水下呼吸", "蛛网感知", "蛛网行者",
-			],
+			displayFn: it => this.constructor._TRAIT_TAG_TO_CN[it] || it,
+			items: Object.keys(this.constructor._TRAIT_TAG_TO_CN),
 		});
 		this._actionReactionFilter = new Filter({
 			header: "Actions & Reactions",
 			cnHeader: "动作 & 反应",
+			displayFn: it => ({
+				"Multiattack": "多重攻击",
+				"Breath Weapon": "吐息武器",
+				"Tentacles": "触须",
+				"Shapechanger": "变形生物",
+				"Parry": "招架",
+				"Swallow": "吞噬",
+				"Teleport": "传送",
+				"Frightful Presence": "恐怖威仪",
+			})[it] || it,
 			items: [
 				// "Frightful Presence", "Multiattack", "Parry", "Swallow", "Teleport", "Tentacles",
 			],
@@ -335,6 +354,13 @@ class PageFilterBestiary extends PageFilterBase {
 		}
 		FilterCommon.mutateForFilters_damageVulnResImmuneNonPlayer(mon);
 		FilterCommon.mutateForFilters_conditionImmuneNonPlayer(mon);
+		mon._fTraitTags = mon.traitTags?.map(tag => this._getTraitTagKey(tag));
+		mon._fConditionInflict = mon.conditionInflict?.map(uid => this._getConditionKey(uid));
+		mon._fConditionInflictLegendary = mon.conditionInflictLegendary?.map(uid => this._getConditionKey(uid));
+		mon._fConditionInflictSpell = mon.conditionInflictSpell?.map(uid => this._getConditionKey(uid));
+		mon._fSavingThrowForced = mon.savingThrowForced?.map(abl => this._getAbilitySaveKey(abl));
+		mon._fSavingThrowForcedLegendary = mon.savingThrowForcedLegendary?.map(abl => this._getAbilitySaveKey(abl));
+		mon._fSavingThrowForcedSpell = mon.savingThrowForcedSpell?.map(abl => this._getAbilitySaveKey(abl));
 		mon._fSave = mon.save ? Object.keys(mon.save) : [];
 		mon._fSkill = mon.skill ? Object.keys(mon.skill) : [];
 		mon._fPassive = typeof mon.passive === "number" ? mon.passive : null;
@@ -584,7 +610,7 @@ class PageFilterBestiary extends PageFilterBase {
 		this._tagFilter.addItem(mon._pTypes.tags);
 		this._sidekickTypeFilter.addItem(mon._pTypes.typeSidekick);
 		this._sidekickTagFilter.addItem(mon._pTypes.tagsSidekick);
-		this._traitFilter.addItem(mon.traitTags);
+		this._traitFilter.addItem(mon._fTraitTags);
 		this._actionReactionFilter.addItem(mon.actionTags);
 		this._environmentFilter.addItem(mon._fEnvironment);
 		this._vulnerableFilter.addItem(mon._fVuln);
@@ -599,12 +625,12 @@ class PageFilterBestiary extends PageFilterBase {
 		this._damageTypeFilterBase.addItem(mon.damageTags);
 		this._damageTypeFilterLegendary.addItem(mon.damageTagsLegendary);
 		this._damageTypeFilterSpells.addItem(mon.damageTagsSpell);
-		this._conditionsInflictedFilterBase.addItem(mon.conditionInflict);
-		this._conditionsInflictedFilterLegendary.addItem(mon.conditionInflictLegendary);
-		this._conditionsInflictedFilterSpells.addItem(mon.conditionInflictSpell);
-		this._savingThrowForcedFilterBase.addItem(mon.savingThrowForced);
-		this._savingThrowForcedFilterLegendary.addItem(mon.savingThrowForcedLegendary);
-		this._savingThrowForcedFilterSpells.addItem(mon.savingThrowForcedSpell);
+		this._conditionsInflictedFilterBase.addItem(mon._fConditionInflict);
+		this._conditionsInflictedFilterLegendary.addItem(mon._fConditionInflictLegendary);
+		this._conditionsInflictedFilterSpells.addItem(mon._fConditionInflictSpell);
+		this._savingThrowForcedFilterBase.addItem(mon._fSavingThrowForced);
+		this._savingThrowForcedFilterLegendary.addItem(mon._fSavingThrowForcedLegendary);
+		this._savingThrowForcedFilterSpells.addItem(mon._fSavingThrowForcedSpell);
 		this._dragonAgeFilter.addItem(mon.dragonAge);
 		this._dragonCastingColorFilter.addItem(mon.dragonCastingColor);
 		this._treasureFilter.addItem(mon.treasure);
@@ -674,7 +700,7 @@ class PageFilterBestiary extends PageFilterBase {
 				m._fImm,
 			],
 			m._fCondImm,
-			m.traitTags,
+			m._fTraitTags,
 			m.actionTags,
 			m._fMisc,
 			m.spellcastingTags,
@@ -701,14 +727,14 @@ class PageFilterBestiary extends PageFilterBase {
 				m.damageTagsSpell,
 			],
 			[
-				m.conditionInflict,
-				m.conditionInflictLegendary,
-				m.conditionInflictSpell,
+				m._fConditionInflict,
+				m._fConditionInflictLegendary,
+				m._fConditionInflictSpell,
 			],
 			[
-				m.savingThrowForced,
-				m.savingThrowForcedLegendary,
-				m.savingThrowForcedSpell,
+				m._fSavingThrowForced,
+				m._fSavingThrowForcedLegendary,
+				m._fSavingThrowForcedSpell,
 			],
 			m.dragonAge,
 			m.dragonCastingColor,

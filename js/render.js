@@ -15041,6 +15041,7 @@ Renderer.charoption = class {
 Renderer.recipe = class {
 	static _getEntryMetasTime (ent) {
 		if (!Object.keys(ent.time || {}).length) return null;
+		const timeLabels = {total: "总用时", preparation: "准备用时", cooking: "烹饪用时"};
 
 		return [
 			"total",
@@ -15065,10 +15066,10 @@ Renderer.recipe = class {
 				const suffix = MiscUtil.findCommonSuffix(ptsTime, {isRespectWordBoundaries: true});
 				const ptTime = ptsTime
 					.map(it => !suffix.length ? it : it.slice(0, -suffix.length))
-					.join(" to ");
+					.join("至");
 
 				return {
-					entryName: `{@b {@style ${prop.toTitleCase()} Time:|small-caps}}`,
+					entryName: `{@b {@style ${timeLabels[prop] || `${prop}用时`}：|small-caps}}`,
 					entryContent: `${ptTime}${suffix}`,
 				};
 			});
@@ -15077,10 +15078,10 @@ Renderer.recipe = class {
 	static getRecipeRenderableEntriesMeta (ent) {
 		return {
 			entryMakes: ent.makes
-				? `{@b {@style Makes|small-caps}} ${ent._scaleFactor ? `${ent._scaleFactor}× ` : ""}${ent.makes}`
+				? `{@b {@style 产量|small-caps}} ${ent._scaleFactor ? `${ent._scaleFactor}× ` : ""}${ent.makes}`
 				: null,
 			entryServes: ent.serves
-				? `{@b {@style Serves|small-caps}} ${ent.serves.min ?? ent.serves.exact}${ent.serves.min != null ? " to " : ""}${ent.serves.max ?? ""}${ent.serves.note ? ` ${ent.serves.note}` : ""}`
+				? `{@b {@style 份数|small-caps}} ${ent.serves.min ?? ent.serves.exact}${ent.serves.min != null ? " 至 " : ""}${ent.serves.max ?? ""}${ent.serves.note ? ` ${ent.serves.note}` : ""}`
 				: null,
 			entryMetasTime: Renderer.recipe._getEntryMetasTime(ent),
 			entryIngredients: {entries: ent._fullIngredients},
@@ -15117,9 +15118,9 @@ Renderer.recipe = class {
 
 				<div class="ve-rd-plaintext__wrp-sidebar ${ptMakes || ptServes ? "ve-mt-1" : ""}">${Renderer.get().render(entriesMeta.entryIngredients, 0)}</div>
 
-				${entriesMeta.entryEquipment ? `<div class="ve-rd-plaintext__wrp-sidebar ve-mt-4"><div class="ve-flex-vh-center ve-bold ve-mb-1 ve-small-caps">Equipment</div><div>${Renderer.get().render(entriesMeta.entryEquipment)}</div></div>` : ""}
+				${entriesMeta.entryEquipment ? `<div class="ve-rd-plaintext__wrp-sidebar ve-mt-4"><div class="ve-flex-vh-center ve-bold ve-mb-1 ve-small-caps">器具</div><div>${Renderer.get().render(entriesMeta.entryEquipment)}</div></div>` : ""}
 
-				${entriesMeta.entryCooksNotes ? `<div class="ve-w-100 ve-flex-col ve-mt-4"><div class="ve-flex-vh-center ve-bold ve-mb-1 ve-small-caps">Cook's Notes</div><div class="ve-italic">${Renderer.get().render(entriesMeta.entryCooksNotes)}</div></div>` : ""}
+				${entriesMeta.entryCooksNotes ? `<div class="ve-w-100 ve-flex-col ve-mt-4"><div class="ve-flex-vh-center ve-bold ve-mb-1 ve-small-caps">厨师笔记</div><div class="ve-italic">${Renderer.get().render(entriesMeta.entryCooksNotes)}</div></div>` : ""}
 			</div>
 
 			<div class="ve-pl-2 ve-flex-2 ve-rd-plaintext__wrp-primary ve-overflow-x-auto">
@@ -16035,7 +16036,8 @@ Renderer.generic = class {
 	static _summariseProfs_getEntry ({str, isShort, hoverTag}) {
 		if (!isShort && hoverTag) return `{@${hoverTag} ${str.toTitleCase()}}`;
 		const [name, , displayName] = str.split("|");
-		return (displayName || name).toTitleCase();
+		const text = displayName || name;
+		return hoverTag === "skill" ? Parser.enSkillToCn(text) : text.toTitleCase();
 	}
 
 	/* -------------------------------------------- */

@@ -174,7 +174,7 @@
 				}
 			],
 			"conditionInflict": [
-				"昏迷"
+				"unconscious"
 			],
 			"miscTags": [
 				"SCT",
@@ -411,7 +411,7 @@
 				}
 			],
 			"conditionInflict": [
-				"昏迷"
+				"unconscious"
 			],
 			"miscTags": [
 				"SCT",
@@ -531,7 +531,7 @@
 				"psychic"
 			],
 			"conditionInflict": [
-				"震慑"
+				"stunned"
 			],
 			"savingThrow": [
 				"intelligence"
@@ -595,7 +595,7 @@
 				"poison"
 			],
 			"conditionInflict": [
-				"中毒"
+				"poisoned"
 			],
 			"savingThrow": [
 				"constitution"
@@ -800,19 +800,19 @@
 				"若生物执行{@action 研究|XPHB}动作并成功进行一次对抗你的法术豁免DC的智力（{@skill 调查|XPHB}）检定，便可辨明其是否为幻象。如果生物识别了幻象的虚实，则其便能看穿幻影，并在结束其造成的{@condition 恐慌|XPHB}状态和对抗其吐息的豁免检定中具有{@variantrule 优势|XPHB}。"
 			],
 			"damageImmune": [
-				"强酸",
-				"钝击",
-				"寒冷",
-				"火焰",
-				"力场",
-				"闪电",
-				"暗蚀",
-				"穿刺",
-				"毒素",
-				"心灵",
-				"光耀",
-				"挥砍",
-				"雷鸣"
+				"acid",
+				"bludgeoning",
+				"cold",
+				"fire",
+				"force",
+				"lightning",
+				"necrotic",
+				"piercing",
+				"poison",
+				"psychic",
+				"radiant",
+				"slashing",
+				"thunder"
 			],
 			"damageInflict": [
 				"acid",
@@ -823,14 +823,14 @@
 				"poison"
 			],
 			"conditionInflict": [
-				"恐慌"
+				"frightened"
 			],
 			"savingThrow": [
 				"intelligence",
 				"wisdom"
 			],
 			"abilityCheck": [
-				"智力"
+				"intelligence"
 			],
 			"miscTags": [
 				"ADV",
@@ -931,19 +931,19 @@
 				"你{@variantrule 免疫|XPHB}所有伤害，直至法术结束。"
 			],
 			"damageImmune": [
-				"强酸",
-				"钝击",
-				"寒冷",
-				"火焰",
-				"力场",
-				"闪电",
-				"暗蚀",
-				"穿刺",
-				"毒素",
-				"心灵",
-				"光耀",
-				"挥砍",
-				"雷鸣"
+				"acid",
+				"bludgeoning",
+				"cold",
+				"fire",
+				"force",
+				"lightning",
+				"necrotic",
+				"piercing",
+				"poison",
+				"psychic",
+				"radiant",
+				"slashing",
+				"thunder"
 			]
 		},
 		{
@@ -988,18 +988,18 @@
 				"你将你触碰的一名自愿生物化作活着的钢铁。直至法术结束之前，目标的{@condition 力竭|XPHB}等级不会提升；目标具有对钝击、火焰、穿刺和挥砍伤害的{@variantrule 抗性|XPHB}；且{@variantrule 免疫|XPHB}毒素伤害以及{@condition 麻痹|XPHB}、{@condition 石化|XPHB}和{@condition 中毒|XPHB}状态。若目标在你施法时已经陷入{@condition 麻痹|XPHB}、{@condition 石化|XPHB}或{@condition 中毒|XPHB}，则其身上的这些状态立即结束。"
 			],
 			"damageResist": [
-				"钝击",
-				"火焰",
-				"穿刺",
-				"挥砍"
+				"bludgeoning",
+				"fire",
+				"piercing",
+				"slashing"
 			],
 			"damageImmune": [
-				"毒素"
+				"poison"
 			],
 			"conditionImmune": [
-				"麻痹",
-				"石化",
-				"中毒"
+				"paralyzed",
+				"petrified",
+				"poisoned"
 			],
 			"areaTags": [
 				"ST"
@@ -1049,7 +1049,7 @@
 				"thunder"
 			],
 			"conditionInflict": [
-				"耳聋"
+				"deafened"
 			],
 			"savingThrow": [
 				"constitution",
@@ -1237,7 +1237,7 @@
 				"force"
 			],
 			"conditionInflict": [
-				"魅惑"
+				"charmed"
 			],
 			"savingThrow": [
 				"constitution"
@@ -1534,8 +1534,8 @@
 				"psychic"
 			],
 			"conditionInflict": [
-				"魅惑",
-				"失能"
+				"charmed",
+				"incapacitated"
 			],
 			"savingThrow": [
 				"charisma"
@@ -1637,8 +1637,8 @@
 				"psychic"
 			],
 			"conditionInflict": [
-				"力竭",
-				"麻痹"
+				"exhaustion",
+				"paralyzed"
 			],
 			"savingThrow": [
 				"intelligence"
@@ -1685,7 +1685,7 @@
 				"psychic"
 			],
 			"conditionInflict": [
-				"耳聋"
+				"deafened"
 			],
 			"savingThrow": [
 				"constitution"
@@ -1734,7 +1734,7 @@
 				"该法术造成的{@condition 力竭|XPHB}等级会在法术结束时被移除。"
 			],
 			"conditionInflict": [
-				"力竭"
+				"exhaustion"
 			],
 			"savingThrow": [
 				"constitution"

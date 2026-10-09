@@ -28,8 +28,8 @@
 			},
 			"hp": 200,
 			"immune": [
-				"毒素",
-				"心灵"
+				"poison",
+				"psychic"
 			],
 			"entries": [
 				"这件物品最初看起来是一个重达500磅的大型密封铁桶。桶上有一个隐藏的机关，可以通过成功的{@dc 20}智力（{@skill 调查}）检定发现。释放机关会解锁桶一端的舱口，允许两个中型或更小的生物爬入内部。远端排列着十个处于绝对中立位置的杠杆，每个都可以向上或向下移动。当使用特定杠杆时，该装置会变形为类似巨型龙虾的形态。",
@@ -132,8 +132,8 @@
 			},
 			"hp": 200,
 			"immune": [
-				"毒素",
-				"心灵"
+				"poison",
+				"psychic"
 			],
 			"entries": [
 				"这件物品最初看起来是一个密封的铁制木桶，重达500磅。木桶有一个隐藏的开关，可以通过成功的{@dc 20}智力（{@skill 调查|XPHB}）检定发现。释放开关会解锁木桶一端的舱口，允许两个中型或更小的生物爬入内部。远端排列着十个操纵杆，每个都处于中立位置，可以上下移动。当使用特定操纵杆时，该装置会变形为类似一个巨大龙虾的外观。",
@@ -288,22 +288,22 @@
 			"wis": 0,
 			"cha": 0,
 			"immune": [
-				"毒素",
-				"心灵"
+				"poison",
+				"psychic"
 			],
 			"conditionImmune": [
-				"目盲",
-				"魅惑",
-				"耳聋",
-				"力竭",
-				"恐慌",
-				"失能",
-				"麻痹",
-				"石化",
-				"中毒",
-				"倒地",
-				"震慑",
-				"昏迷"
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"incapacitated",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"stunned",
+				"unconscious"
 			],
 			"hull": {
 				"ac": 15,
@@ -628,20 +628,20 @@
 				"mt": 20
 			},
 			"immune": [
-				"火焰",
-				"毒素",
-				"心灵"
+				"fire",
+				"poison",
+				"psychic"
 			],
 			"conditionImmune": [
-				"目盲",
-				"魅惑",
-				"耳聋",
-				"恐慌",
-				"麻痹",
-				"石化",
-				"中毒",
-				"震慑",
-				"昏迷"
+				"blinded",
+				"charmed",
+				"deafened",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"stunned",
+				"unconscious"
 			],
 			"trait": [
 				{
@@ -727,20 +727,20 @@
 				"mt": 10
 			},
 			"immune": [
-				"火焰",
-				"毒素",
-				"心灵"
+				"fire",
+				"poison",
+				"psychic"
 			],
 			"conditionImmune": [
-				"目盲",
-				"魅惑",
-				"耳聋",
-				"恐慌",
-				"麻痹",
-				"石化",
-				"中毒",
-				"震慑",
-				"昏迷"
+				"blinded",
+				"charmed",
+				"deafened",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"stunned",
+				"unconscious"
 			],
 			"trait": [
 				{
@@ -909,22 +909,22 @@
 			"wis": 0,
 			"cha": 0,
 			"immune": [
-				"毒素",
-				"心灵"
+				"poison",
+				"psychic"
 			],
 			"conditionImmune": [
-				"目盲",
-				"魅惑",
-				"耳聋",
-				"力竭",
-				"恐慌",
-				"失能",
-				"麻痹",
-				"石化",
-				"中毒",
-				"倒地",
-				"震慑",
-				"昏迷"
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"incapacitated",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"stunned",
+				"unconscious"
 			],
 			"hull": {
 				"ac": 15,
@@ -1193,22 +1193,22 @@
 			"wis": 0,
 			"cha": 0,
 			"immune": [
-				"毒素",
-				"心灵"
+				"poison",
+				"psychic"
 			],
 			"conditionImmune": [
-				"目盲",
-				"魅惑",
-				"耳聋",
-				"力竭",
-				"恐慌",
-				"失能",
-				"麻痹",
-				"石化",
-				"中毒",
-				"倒地",
-				"震慑",
-				"昏迷"
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"incapacitated",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"stunned",
+				"unconscious"
 			],
 			"hull": {
 				"ac": 15,
@@ -1486,22 +1486,22 @@
 			"wis": 0,
 			"cha": 0,
 			"immune": [
-				"毒素",
-				"心灵"
+				"poison",
+				"psychic"
 			],
 			"conditionImmune": [
-				"目盲",
-				"魅惑",
-				"耳聋",
-				"力竭",
-				"恐慌",
-				"失能",
-				"麻痹",
-				"石化",
-				"中毒",
-				"倒地",
-				"震慑",
-				"昏迷"
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"incapacitated",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"stunned",
+				"unconscious"
 			],
 			"hull": {
 				"ac": 15,
@@ -1625,7 +1625,7 @@
 							"ENG_name": "Lightning Blast (Requires Elemental Core)",
 							"name": "闪能爆（需元素核心）",
 							"entries": [
-								"{@atkr rw} {@hit 9}，射程 80/320 尺。{@h}22（{@damage 4d10}）闪电伤害。"
+								"{@atkr rw} {@hit 9} 命中，射程 80/320 尺 {@h}22（{@damage 4d10}）闪电伤害。"
 							]
 						}
 					]
@@ -1634,7 +1634,7 @@
 			"station": [
 				{
 					"ENG_name": "Helm",
-					"name": "舵台",
+					"name": "舵板",
 					"size": [
 						"S"
 					],
@@ -1785,7 +1785,7 @@
 			"station": [
 				{
 					"ENG_name": "Helm",
-					"name": "舵台",
+					"name": "舵板",
 					"size": [
 						"S"
 					],
@@ -1857,22 +1857,22 @@
 			"wis": 0,
 			"cha": 0,
 			"immune": [
-				"毒素",
-				"心灵"
+				"poison",
+				"psychic"
 			],
 			"conditionImmune": [
-				"目盲",
-				"魅惑",
-				"耳聋",
-				"力竭",
-				"恐慌",
-				"失能",
-				"麻痹",
-				"石化",
-				"中毒",
-				"倒地",
-				"震慑",
-				"昏迷"
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"incapacitated",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"stunned",
+				"unconscious"
 			],
 			"hull": {
 				"ac": 18,
@@ -2254,22 +2254,22 @@
 			"wis": 0,
 			"cha": 0,
 			"immune": [
-				"毒素",
-				"心灵"
+				"poison",
+				"psychic"
 			],
 			"conditionImmune": [
-				"目盲",
-				"魅惑",
-				"耳聋",
-				"力竭",
-				"恐慌",
-				"失能",
-				"麻痹",
-				"石化",
-				"中毒",
-				"倒地",
-				"震慑",
-				"昏迷"
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"incapacitated",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"stunned",
+				"unconscious"
 			],
 			"hull": {
 				"ac": 11,
@@ -2341,22 +2341,22 @@
 			"wis": 0,
 			"cha": 0,
 			"immune": [
-				"毒素",
-				"心灵"
+				"poison",
+				"psychic"
 			],
 			"conditionImmune": [
-				"目盲",
-				"魅惑",
-				"耳聋",
-				"力竭",
-				"恐慌",
-				"失能",
-				"麻痹",
-				"石化",
-				"中毒",
-				"倒地",
-				"震慑",
-				"昏迷"
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"incapacitated",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"stunned",
+				"unconscious"
 			],
 			"hull": {
 				"ac": 15,
@@ -2477,20 +2477,20 @@
 				"mt": 20
 			},
 			"immune": [
-				"火焰",
-				"毒素",
-				"心灵"
+				"fire",
+				"poison",
+				"psychic"
 			],
 			"conditionImmune": [
-				"目盲",
-				"魅惑",
-				"耳聋",
-				"恐慌",
-				"麻痹",
-				"石化",
-				"中毒",
-				"震慑",
-				"昏迷"
+				"blinded",
+				"charmed",
+				"deafened",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"stunned",
+				"unconscious"
 			],
 			"trait": [
 				{
@@ -3005,19 +3005,19 @@
 				"formula": "9d10 + 18"
 			},
 			"immune": [
-				"毒素",
-				"心灵"
+				"poison",
+				"psychic"
 			],
 			"conditionImmune": [
-				"目盲",
-				"魅惑",
-				"耳聋",
-				"力竭",
-				"恐慌",
-				"麻痹",
-				"石化",
-				"中毒",
-				"昏迷"
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"unconscious"
 			],
 			"trait": [
 				{
@@ -3206,7 +3206,7 @@
 			"station": [
 				{
 					"ENG_name": "Helm",
-					"name": "舵台",
+					"name": "舵板",
 					"size": [
 						"S"
 					],
@@ -3309,20 +3309,20 @@
 				"mt": 20
 			},
 			"immune": [
-				"火焰",
-				"毒素",
-				"心灵"
+				"fire",
+				"poison",
+				"psychic"
 			],
 			"conditionImmune": [
-				"目盲",
-				"魅惑",
-				"耳聋",
-				"恐慌",
-				"麻痹",
-				"石化",
-				"中毒",
-				"震慑",
-				"昏迷"
+				"blinded",
+				"charmed",
+				"deafened",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"stunned",
+				"unconscious"
 			],
 			"trait": [
 				{
@@ -3569,20 +3569,20 @@
 				"dt": 10
 			},
 			"immune": [
-				"火焰",
-				"毒素",
-				"心灵"
+				"fire",
+				"poison",
+				"psychic"
 			],
 			"conditionImmune": [
-				"目盲",
-				"魅惑",
-				"耳聋",
-				"恐慌",
-				"麻痹",
-				"石化",
-				"中毒",
-				"震慑",
-				"昏迷"
+				"blinded",
+				"charmed",
+				"deafened",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"stunned",
+				"unconscious"
 			],
 			"actionStation": [
 				{
@@ -3635,22 +3635,22 @@
 			"wis": 0,
 			"cha": 0,
 			"immune": [
-				"毒素",
-				"心灵"
+				"poison",
+				"psychic"
 			],
 			"conditionImmune": [
-				"目盲",
-				"魅惑",
-				"耳聋",
-				"力竭",
-				"恐慌",
-				"失能",
-				"麻痹",
-				"石化",
-				"中毒",
-				"倒地",
-				"震慑",
-				"昏迷"
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"incapacitated",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"stunned",
+				"unconscious"
 			],
 			"hull": {
 				"ac": 15,

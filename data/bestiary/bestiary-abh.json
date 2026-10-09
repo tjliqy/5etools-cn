@@ -44,17 +44,17 @@
 			],
 			"passive": 10,
 			"immune": [
-				"火焰",
-				"毒素"
+				"fire",
+				"poison"
 			],
 			"conditionImmune": [
-				"魅惑",
-				"耳聋",
-				"力竭",
-				"恐慌",
-				"麻痹",
-				"石化",
-				"中毒"
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
 			],
 			"languages": [
 				"理解通用语和炼狱语但不会说"
@@ -96,13 +96,13 @@
 				"城市"
 			],
 			"traitTags": [
-				"魔法抗性"
+				"Magic Resistance"
 			],
 			"senseTags": [
 				"D"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -117,7 +117,7 @@
 				"MA"
 			],
 			"savingThrowForced": [
-				"敏捷"
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -171,15 +171,15 @@
 			],
 			"passive": 13,
 			"resist": [
-				"寒冷"
+				"cold"
 			],
 			"immune": [
-				"火焰",
-				"毒素"
+				"fire",
+				"poison"
 			],
 			"conditionImmune": [
-				"魅惑",
-				"中毒"
+				"charmed",
+				"poisoned"
 			],
 			"languages": [
 				"通用语",
@@ -243,14 +243,14 @@
 				"位面, 九层地狱"
 			],
 			"traitTags": [
-				"魔鬼视界",
-				"魔法抗性"
+				"Devil's Sight",
+				"Magic Resistance"
 			],
 			"senseTags": [
 				"SD"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -267,11 +267,11 @@
 				"RA"
 			],
 			"conditionInflict": [
-				"魅惑",
-				"震慑"
+				"charmed",
+				"stunned"
 			],
 			"savingThrowForced": [
-				"魅力"
+				"charisma"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -328,14 +328,14 @@
 			],
 			"passive": 18,
 			"resist": [
-				"寒冷"
+				"cold"
 			],
 			"immune": [
-				"火焰",
-				"毒素"
+				"fire",
+				"poison"
 			],
 			"conditionImmune": [
-				"中毒"
+				"poisoned"
 			],
 			"languages": [
 				"炼狱语; 心灵感应 120 尺"
@@ -415,13 +415,13 @@
 				"位面, 九层地狱"
 			],
 			"traitTags": [
-				"魔法抗性"
+				"Magic Resistance"
 			],
 			"senseTags": [
 				"SD"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"I",
@@ -444,18 +444,18 @@
 				"RCH"
 			],
 			"conditionInflict": [
-				"震慑"
+				"stunned"
 			],
 			"conditionInflictSpell": [
-				"魅惑",
-				"失能"
+				"charmed",
+				"incapacitated"
 			],
 			"savingThrowForced": [
-				"体质",
-				"感知"
+				"constitution",
+				"wisdom"
 			],
 			"savingThrowForcedSpell": [
-				"感知"
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -515,12 +515,12 @@
 			],
 			"passive": 18,
 			"resist": [
-				"火焰",
-				"暗蚀",
-				"毒素"
+				"fire",
+				"necrotic",
+				"poison"
 			],
 			"conditionImmune": [
-				"中毒"
+				"poisoned"
 			],
 			"languages": [
 				"通用语",
@@ -692,14 +692,14 @@
 				"城市"
 			],
 			"traitTags": [
-				"魔鬼视界",
-				"传奇抗性"
+				"Devil's Sight",
+				"Legendary Resistances"
 			],
 			"senseTags": [
 				"SD"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -724,17 +724,17 @@
 				"MA"
 			],
 			"conditionInflict": [
-				"恐慌",
-				"受擒",
-				"麻痹"
+				"frightened",
+				"grappled",
+				"paralyzed"
 			],
 			"savingThrowForced": [
-				"魅力",
-				"体质"
+				"charisma",
+				"constitution"
 			],
 			"savingThrowForcedSpell": [
-				"敏捷",
-				"感知"
+				"dexterity",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -785,11 +785,11 @@
 			],
 			"passive": 20,
 			"resist": [
-				"暗蚀"
+				"necrotic"
 			],
 			"conditionImmune": [
-				"力竭",
-				"恐慌"
+				"exhaustion",
+				"frightened"
 			],
 			"languages": [
 				"通用语"
@@ -914,13 +914,13 @@
 			"tokenCredit": "ThePrisoner",
 			"tokenCustom": true,
 			"traitTags": [
-				"魔法抗性"
+				"Magic Resistance"
 			],
 			"senseTags": [
 				"SD"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C"
@@ -939,16 +939,16 @@
 				"MA"
 			],
 			"conditionInflict": [
-				"受擒"
+				"grappled"
 			],
 			"conditionInflictSpell": [
-				"魅惑"
+				"charmed"
 			],
 			"savingThrowForced": [
-				"体质"
+				"constitution"
 			],
 			"savingThrowForcedSpell": [
-				"感知"
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true

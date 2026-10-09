@@ -24,7 +24,7 @@ class PageFilterVehicles extends PageFilterBase {
 			filters: [this._vehicleTypeFilter, this._upgradeTypeFilter],
 		});
 		this._costFilter = FilterCommon.getCostFilter();
-		this._terrainFilter = new Filter({header: "Terrain", cnHeader: "地形", items: ["land", "sea", "air"], displayFn: StrUtil.uppercaseFirst});
+		this._terrainFilter = new Filter({header: "Terrain", cnHeader: "地形", items: ["大地", "海洋", "空气"], displayFn: StrUtil.uppercaseFirst});
 		this._speedFilter = new RangeFilter({header: "Speed", cnHeader: "速度"});
 		this._acFilter = new RangeFilter({header: "Armor Class", cnHeader: "护甲等级"});
 		this._hpFilter = new RangeFilter({header: "Hit Points", cnHeader: "生命值"});

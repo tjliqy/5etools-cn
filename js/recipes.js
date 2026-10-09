@@ -23,7 +23,7 @@ class RecipesSublistManager extends SublistManager {
 	async pGetSublistItem (itRaw, hash, {customHashId = null} = {}) {
 		const it = await Renderer.hover.pApplyCustomHashId(UrlUtil.getCurrentPage(), itRaw, customHashId);
 		const name = it._displayName || it.name;
-		const cellsText = [name, it.type || "\u2014"];
+		const cellsText = [name, it.type ? Parser.recipeCategoryToCn(it.type) : "\u2014"];
 
 		const ele = veT`<div class="ve-lst__row ve-lst__row--sublist ve-flex-col">
 			<a href="#${hash}" class="ve-lst__row-border ve-lst__row-inner">
@@ -92,7 +92,7 @@ class RecipesPage extends ListPage {
 
 		eleLi.innerHTML = `<a href="#${hash}" class="ve-lst__row-border ve-lst__row-inner">
 			<span class="ve-col-6 ve-bold ve-pl-0 ve-pr-1">${ent.name}</span>
-			<span class="ve-col-4 ve-px-1 ve-text-center">${ent.type || "\u2014"}</span>
+				<span class="ve-col-4 ve-px-1 ve-text-center">${ent.type ? Parser.recipeCategoryToCn(ent.type) : "\u2014"}</span>
 			<span class="ve-col-2 ve-text-center ${Parser.sourceJsonToSourceClassname(ent.source)} ve-pl-1 ve-pr-0" title="${Parser.sourceJsonToFull(ent.source)}">${source}</span>
 		</a>`;
 
@@ -121,13 +121,13 @@ class RecipesPage extends ListPage {
 		return listItem;
 	}
 
-	_tabTitleStats = "Recipe";
+	_tabTitleStats = "食谱";
 
 	_renderStats_doBuildStatsTab ({ent, scaleFactor = null}) {
 		if (scaleFactor != null) ent = Renderer.recipe.getScaledRecipe(ent, scaleFactor);
 
 		const selScaleFactor = veT`
-			<select title="Scale Recipe" class="ve-form-control ve-input-xs form-control--minimal ve-popwindow__hidden">
+			<select title="调整食谱份量" class="ve-form-control ve-input-xs form-control--minimal ve-popwindow__hidden">
 				${[0.5, 1, 2, 3, 4].map(it => `<option value="${it}" ${(scaleFactor || 1) === it ? "selected" : ""}>×${it}</option>`)}
 			</select>`
 			.vee.onn("change", () => {

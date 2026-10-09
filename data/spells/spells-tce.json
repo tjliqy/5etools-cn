@@ -186,7 +186,7 @@
 				"如果有一个生物受到任何伤害，则此法术在该生物上提前结束，该生物不会被传送。如果你受到任何伤害，则你和其他所有生物上的此法术会提前结束，你们都不会被传送。"
 			],
 			"conditionInflict": [
-				"昏迷"
+				"unconscious"
 			],
 			"miscTags": [
 				"PS",
@@ -320,7 +320,7 @@
 				}
 			],
 			"damageResist": [
-				"心灵"
+				"psychic"
 			],
 			"miscTags": [
 				"ADV",
@@ -1294,14 +1294,14 @@
 				}
 			],
 			"damageImmune": [
-				"火焰",
-				"毒素",
-				"光耀",
-				"暗蚀"
+				"fire",
+				"poison",
+				"radiant",
+				"necrotic"
 			],
 			"conditionImmune": [
-				"魅惑",
-				"中毒"
+				"charmed",
+				"poisoned"
 			],
 			"miscTags": [
 				"MAC"

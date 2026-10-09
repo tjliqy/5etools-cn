@@ -68,18 +68,6 @@ class PageFilterBackgrounds extends PageFilterBase {
 
 		bg._fPrereq = FilterCommon.getFilterValuesPrerequisite(bg.prerequisite);
 
-		bg.skillProficiencies = bg.skillProficiencies.map(skills => {
-			let res = {};
-			Object.keys(skills).map(skill => {
-				if (Parser.SKILL_TO_CN[skill]) {
-					res[Parser.SKILL_TO_CN[skill]] = skills[skill];
-				} else {
-					res[skill] = skills[skill];
-				}
-			});
-			return res;
-		});
-
 		const {summary: skillDisplay, collection: skills} = Renderer.generic.getSkillSummary({
 			skillProfs: bg.skillProficiencies,
 			skillToolLanguageProfs: bg.skillToolLanguageProficiencies,

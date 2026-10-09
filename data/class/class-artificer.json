@@ -1016,7 +1016,7 @@
 					"classFeature": "子职特性|奇械师|EFA|9|EFA",
 					"gainSubclassFeature": true
 				},
-				"魔法物品巧匠|奇械师|EFA|10|EFA",
+				"魔法物品熟稔|奇械师|EFA|10|EFA",
 				"储法物品|奇械师|EFA|11|EFA",
 				"属性值提升|奇械师|EFA|12|EFA",
 				"进阶奇械术|奇械师|EFA|14|EFA",
@@ -1387,7 +1387,7 @@
 				"炼金师|奇械师|EFA|炼金师|EFA|3|EFA",
 				"炼金术掌握|奇械师|EFA|炼金师|EFA|5|EFA",
 				"复原药剂|奇械师|EFA|炼金师|EFA|9|EFA",
-				"炼金专家|奇械师|EFA|炼金师|EFA|15|EFA"
+				"化学专家|奇械师|EFA|炼金师|EFA|15|EFA"
 			],
 			"hasFluffImages": true
 		},
@@ -1469,9 +1469,9 @@
 			],
 			"subclassFeatures": [
 				"魔炮师|奇械师|EFA|魔炮师|EFA|3|EFA",
-				"奥法火器|奇械师|EFA|魔炮师|EFA|5|EFA",
+				"奥术枪械|奇械师|EFA|魔炮师|EFA|5|EFA",
 				"高爆炮台|奇械师|EFA|魔炮师|EFA|9|EFA",
-				"要塞阵地|奇械师|EFA|魔炮师|EFA|15|EFA"
+				"坚固要塞|奇械师|EFA|魔炮师|EFA|15|EFA"
 			],
 			"hasFluffImages": true
 		},
@@ -2196,7 +2196,7 @@
 		},
 		{
 			"ENG_name": "Magic Item Adept",
-			"name": "魔法物品巧匠",
+			"name": "魔法物品熟稔",
 			"source": "EFA",
 			"page": 10,
 			"className": "奇械师",
@@ -3000,7 +3000,7 @@
 				},
 				{
 					"ENG_name": "Creating Additional Elixirs",
-					"name": "创造额外的灵药",
+					"name": "制造额外灵药",
 					"type": "entries",
 					"entries": [
 						"作为持有{@item 炼金工具|XPHB}时的一个{@action 魔法|XPHB}动作，你可以消耗一个法术位来制造另一瓶灵药。当你这样做时，你可以从实验性灵药表格中选择其效应而非随机掷骰。",
@@ -3110,7 +3110,7 @@
 		},
 		{
 			"ENG_name": "Chemical Mastery",
-			"name": "炼金专家",
+			"name": "化学专家",
 			"source": "EFA",
 			"page": 14,
 			"className": "奇械师",
@@ -3320,7 +3320,7 @@
 						},
 						{
 							"ENG_name": "Giant Stature",
-							"name": "伟岸身姿",
+							"name": "巨人体型",
 							"type": "item",
 							"entries": [
 								"作为{@variantrule 附赠动作|XPHB}，你变形并放大你的护甲，持续1分钟。在持续时间内，你的触及增加5尺，并且如果你小于大型，则你变为大型，连同你穿戴的任何物品。如果没有足够的空间让你增大体型，你的体型不会变化。你可以使用这个{@variantrule 附赠动作|XPHB}的次数等于你的智力调整值（至少一次）。当你完成一次{@variantrule 长休|XPHB}时，你恢复所有已使用的次数。"
@@ -3513,7 +3513,7 @@
 					"type": "entries",
 					"entries": [
 						"你的力场破坏器的伤害骰增加至{@damage 2d6}力场伤害。",
-						"此外，当你使用伟岸身姿时，你的触及增加10尺，你的体型可以增长至大型或巨型（由你选择），并且在持续时间内你在力量检定和力量豁免检定上具有{@variantrule 优势|XPHB}。"
+						"此外，当你使用巨人体型时，你的触及增加10尺，你的体型可以增长至大型或巨型（由你选择），并且在持续时间内你在力量检定和力量豁免检定上具有{@variantrule 优势|XPHB}。"
 					]
 				},
 				{
@@ -3668,7 +3668,7 @@
 		},
 		{
 			"ENG_name": "Arcane Firearm",
-			"name": "奥法火器",
+			"name": "奥术枪械",
 			"source": "EFA",
 			"page": 17,
 			"className": "奇械师",
@@ -3715,7 +3715,7 @@
 		},
 		{
 			"ENG_name": "Fortified Position",
-			"name": "要塞阵地",
+			"name": "坚固要塞",
 			"source": "EFA",
 			"page": 17,
 			"className": "奇械师",

@@ -321,7 +321,7 @@
 				}
 			],
 			"conditionInflict": [
-				"魅惑"
+				"charmed"
 			],
 			"savingThrow": [
 				"wisdom"
@@ -763,8 +763,8 @@
 				}
 			],
 			"conditionInflict": [
-				"恐慌",
-				"魅惑"
+				"frightened",
+				"charmed"
 			],
 			"savingThrow": [
 				"wisdom"
@@ -1122,7 +1122,7 @@
 				"受术生物身上的法术效应终止时，如果其没有死亡，其会被拉回原本的躯体，并脱离静止。"
 			],
 			"conditionInflict": [
-				"昏迷"
+				"unconscious"
 			],
 			"miscTags": [
 				"PRM",
@@ -1250,7 +1250,7 @@
 				"一道灵光自你身上发出并形成 30 尺半径的{@variantrule 光环 [效应区域]|XPHB|光环}区域。在灵光范围内时，你和你的盟友获得对暗蚀伤害的{@variantrule 抗性|XPHB}，{@variantrule 生命值|XPHB|生命值}上限也无法被降低。另外，{@variantrule 生命值|XPHB}为0的盟友在灵光范围内开始其回合时，恢复1点{@variantrule 生命值|XPHB|生命值}。"
 			],
 			"damageResist": [
-				"暗蚀"
+				"necrotic"
 			],
 			"miscTags": [
 				"HL"
@@ -1297,7 +1297,7 @@
 				"一道灵光自你身上发出并形成 30 尺半径的{@variantrule 光环 [效应区域]|XPHB|光环}区域。在灵光范围内时，你和你的盟友获得毒素伤害的{@variantrule 抗性|XPHB}，并且在为抵抗和结束下列状态所做的豁免时具有{@variantrule 优势|XPHB}：{@condition 目盲|XPHB}、{@condition 魅惑|XPHB}、{@condition 耳聋|XPHB}、{@condition 恐慌|XPHB}、{@condition 麻痹|XPHB}、{@condition 中毒|XPHB}或{@condition 震慑|XPHB}。"
 			],
 			"damageResist": [
-				"毒素"
+				"poison"
 			],
 			"miscTags": [
 				"ADV"
@@ -1391,7 +1391,7 @@
 				"被启蒙的目标在 30 日内处于{@condition 魅惑|XPHB}状态，或是直到你或你的盟友做出任何伤害它的举动。魅惑终止后，启蒙生物自行决定对你的态度。"
 			],
 			"conditionInflict": [
-				"魅惑"
+				"charmed"
 			],
 			"affectsCreatureType": [
 				"野兽",
@@ -1507,7 +1507,7 @@
 				"force"
 			],
 			"conditionInflict": [
-				"失能"
+				"incapacitated"
 			],
 			"miscTags": [
 				"AAD"
@@ -1566,7 +1566,7 @@
 				}
 			],
 			"conditionInflict": [
-				"失能"
+				"incapacitated"
 			],
 			"savingThrow": [
 				"charisma"
@@ -1934,7 +1934,7 @@
 				"force"
 			],
 			"conditionInflict": [
-				"受擒"
+				"grappled"
 			],
 			"spellAttack": [
 				"M"
@@ -2219,7 +2219,7 @@
 				"radiant"
 			],
 			"conditionInflict": [
-				"目盲"
+				"blinded"
 			],
 			"savingThrow": [
 				"constitution"
@@ -2280,8 +2280,8 @@
 				}
 			],
 			"conditionInflict": [
-				"目盲",
-				"耳聋"
+				"blinded",
+				"deafened"
 			],
 			"savingThrow": [
 				"constitution"
@@ -2676,7 +2676,7 @@
 				}
 			],
 			"conditionInflict": [
-				"魅惑"
+				"charmed"
 			],
 			"savingThrow": [
 				"wisdom"
@@ -2739,7 +2739,7 @@
 				}
 			],
 			"conditionInflict": [
-				"魅惑"
+				"charmed"
 			],
 			"savingThrow": [
 				"wisdom"
@@ -3256,7 +3256,7 @@
 				"你射出一道炫目的闪耀彩光。以你为源点的 15 尺{@variantrule 锥状 [效应区域]|XPHB|锥状}区域内的每名生物必须成功通过一次体质豁免，否则陷入{@condition 目盲|XPHB}状态，持续至你的下一回合结束。"
 			],
 			"conditionInflict": [
-				"目盲"
+				"blinded"
 			],
 			"savingThrow": [
 				"constitution"
@@ -3356,7 +3356,7 @@
 				}
 			],
 			"conditionInflict": [
-				"倒地"
+				"prone"
 			],
 			"savingThrow": [
 				"wisdom"
@@ -3604,7 +3604,7 @@
 				"法术持续期间，你能够以一个{@variantrule 附赠动作|XPHB}指向你的某个水平方向。随后，每个{@condition 魅惑|XPHB}目标在其下一回合里必须使用其所有的移动力，采取最安全的路线，尽可能的向该方向移动。在以此法移动后，目标可以重新豁免，豁免成功则结束其身上该法术的效应。"
 			],
 			"conditionInflict": [
-				"魅惑"
+				"charmed"
 			],
 			"savingThrow": [
 				"wisdom"
@@ -4041,7 +4041,7 @@
 				"cold"
 			],
 			"conditionInflict": [
-				"束缚"
+				"restrained"
 			],
 			"savingThrow": [
 				"dexterity"
@@ -4105,7 +4105,7 @@
 				"psychic"
 			],
 			"conditionInflict": [
-				"恐慌"
+				"frightened"
 			],
 			"miscTags": [
 				"SGT",
@@ -4381,7 +4381,7 @@
 				"necrotic"
 			],
 			"conditionInflict": [
-				"中毒"
+				"poisoned"
 			],
 			"savingThrow": [
 				"constitution"
@@ -4566,7 +4566,7 @@
 				"strength"
 			],
 			"abilityCheck": [
-				"力量"
+				"strength"
 			],
 			"miscTags": [
 				"FMV",
@@ -5129,7 +5129,7 @@
 				"在施法后，你在每个自己回合里必须用一个{@action 魔法|XPHB}动作维持对目标的控制，否则法术将终止。"
 			],
 			"conditionInflict": [
-				"魅惑"
+				"charmed"
 			],
 			"savingThrow": [
 				"wisdom"
@@ -5638,7 +5638,7 @@
 				"thunder"
 			],
 			"conditionInflict": [
-				"倒地"
+				"prone"
 			],
 			"savingThrow": [
 				"constitution"
@@ -5856,7 +5856,7 @@
 				"wisdom"
 			],
 			"abilityCheck": [
-				"智力"
+				"intelligence"
 			],
 			"miscTags": [
 				"SGT"
@@ -5949,7 +5949,7 @@
 				"如果一名生物想要分辨你是否易容，则必须使用一个{@action 研究|XPHB}动作研究你的外貌，并成功于一次对抗你法术豁免DC的智力（{@skill 调查|XPHB}）检定。"
 			],
 			"abilityCheck": [
-				"智力"
+				"intelligence"
 			],
 			"miscTags": [
 				"SGT"
@@ -6411,9 +6411,9 @@
 				}
 			],
 			"conditionInflict": [
-				"目盲",
-				"耳聋",
-				"震慑"
+				"blinded",
+				"deafened",
+				"stunned"
 			],
 			"savingThrow": [
 				"charisma"
@@ -6475,7 +6475,7 @@
 				}
 			],
 			"conditionInflict": [
-				"魅惑"
+				"charmed"
 			],
 			"savingThrow": [
 				"wisdom"
@@ -6543,7 +6543,7 @@
 				}
 			],
 			"conditionInflict": [
-				"魅惑"
+				"charmed"
 			],
 			"savingThrow": [
 				"wisdom"
@@ -6608,7 +6608,7 @@
 				}
 			],
 			"conditionInflict": [
-				"魅惑"
+				"charmed"
 			],
 			"savingThrow": [
 				"wisdom"
@@ -6928,14 +6928,14 @@
 				"bludgeoning"
 			],
 			"conditionInflict": [
-				"倒地"
+				"prone"
 			],
 			"savingThrow": [
 				"constitution",
 				"dexterity"
 			],
 			"abilityCheck": [
-				"力量"
+				"strength"
 			],
 			"miscTags": [
 				"DFT",
@@ -7333,13 +7333,13 @@
 				"piercing"
 			],
 			"conditionInflict": [
-				"束缚"
+				"restrained"
 			],
 			"savingThrow": [
 				"strength"
 			],
 			"abilityCheck": [
-				"力量"
+				"strength"
 			],
 			"translator": "不全书"
 		},
@@ -7384,13 +7384,13 @@
 				"在你施展法术时，该区域内的生物（除你之外）必须成功于一次力量豁免，否则陷入{@condition 束缚|XPHB}状态，直到法术终止。一名因此被{@condition 束缚|XPHB}的生物可以用其动作进行一次力量（{@skill 运动|XPHB}）检定对抗该法术的豁免DC。检定成功则成功摆脱缠绕在其身上的藤蔓并不再被其{@condition 束缚|XPHB}。"
 			],
 			"conditionInflict": [
-				"束缚"
+				"restrained"
 			],
 			"savingThrow": [
 				"strength"
 			],
 			"abilityCheck": [
-				"力量"
+				"strength"
 			],
 			"miscTags": [
 				"DFT"
@@ -7556,13 +7556,13 @@
 				"bludgeoning"
 			],
 			"conditionInflict": [
-				"束缚"
+				"restrained"
 			],
 			"savingThrow": [
 				"strength"
 			],
 			"abilityCheck": [
-				"力量"
+				"strength"
 			],
 			"miscTags": [
 				"DFT",
@@ -7681,8 +7681,8 @@
 				}
 			],
 			"conditionInflict": [
-				"恐慌",
-				"昏迷"
+				"frightened",
+				"unconscious"
 			],
 			"savingThrow": [
 				"wisdom"
@@ -7887,7 +7887,7 @@
 				"以此法被{@condition 恐慌|XPHB}的生物必须在自己回合中执行{@action 疾走|XPHB}动作，并以此寻找最安全的路线远离你，直至其无路可走为止。如果该生物结束其回合时位于一处使其视觉线中没有你的空间，则其可以再进行一次感知豁免，豁免成功则法术对该生物的效应终止。"
 			],
 			"conditionInflict": [
-				"恐慌"
+				"frightened"
 			],
 			"savingThrow": [
 				"wisdom"
@@ -7987,25 +7987,25 @@
 				"目标对除了心灵伤害外的所有伤害类型具有{@variantrule 抗性|XPHB}，也{@variantrule 免疫|XPHB}{@condition 中毒|XPHB}状态。"
 			],
 			"damageResist": [
-				"强酸",
-				"钝击",
-				"寒冷",
-				"火焰",
-				"力场",
-				"闪电",
-				"暗蚀",
-				"穿刺",
-				"毒素",
-				"光耀",
-				"挥砍",
-				"雷鸣"
+				"acid",
+				"bludgeoning",
+				"cold",
+				"fire",
+				"force",
+				"lightning",
+				"necrotic",
+				"piercing",
+				"poison",
+				"radiant",
+				"slashing",
+				"thunder"
 			],
 			"conditionImmune": [
-				"中毒"
+				"poisoned"
 			],
 			"conditionInflict": [
-				"目盲",
-				"失能"
+				"blinded",
+				"incapacitated"
 			],
 			"areaTags": [
 				"ST"
@@ -8414,8 +8414,8 @@
 				"此外，每当一名距你 5 尺内的生物以一次近战攻击命中你时，这个护盾将迸发出火焰。温暖护盾将对攻击者造成{@damage 2d8}点火焰伤害，冻寒护盾将对攻击者造成{@damage 2d8}点寒冷伤害。"
 			],
 			"damageResist": [
-				"寒冷",
-				"火焰"
+				"cold",
+				"fire"
 			],
 			"damageInflict": [
 				"cold",
@@ -8781,8 +8781,8 @@
 				"如果你为该法术维持的{@status 专注|XPHB}持续至法术最大持续时间，则该生物陷入的{@condition 石化|XPHB}状态将持续至被一道{@spell 高等复原术|XPHB}或类似的魔法移除为止。"
 			],
 			"conditionInflict": [
-				"石化",
-				"束缚"
+				"petrified",
+				"restrained"
 			],
 			"savingThrow": [
 				"constitution"
@@ -9122,13 +9122,13 @@
 				"此外，在你受到距你 60 尺内一名你可见的生物的伤害后，你可以立即用一个{@variantrule 反应|XPHB}，强迫其进行一次体质豁免。豁免失败者直到你的下个回合结束为止陷入{@condition 目盲|XPHB}状态。"
 			],
 			"damageResist": [
-				"光耀"
+				"radiant"
 			],
 			"damageInflict": [
 				"radiant"
 			],
 			"conditionInflict": [
-				"目盲"
+				"blinded"
 			],
 			"savingThrow": [
 				"constitution"
@@ -9190,8 +9190,8 @@
 				}
 			],
 			"conditionImmune": [
-				"麻痹",
-				"束缚"
+				"paralyzed",
+				"restrained"
 			],
 			"miscTags": [
 				"SCT"
@@ -9240,7 +9240,7 @@
 				"若目标受到伤害，或你进行一次攻击检定、造成伤害、迫使任何人进行一次豁免，则法术会提早结束。法术结束时，目标会知道他曾被你{@condition 魅惑|XPHB}。"
 			],
 			"conditionInflict": [
-				"魅惑"
+				"charmed"
 			],
 			"savingThrow": [
 				"wisdom"
@@ -9305,7 +9305,7 @@
 				}
 			],
 			"conditionImmune": [
-				"倒地"
+				"prone"
 			],
 			"miscTags": [
 				"ADV",
@@ -9424,7 +9424,7 @@
 				"psychic"
 			],
 			"conditionInflict": [
-				"魅惑"
+				"charmed"
 			],
 			"savingThrow": [
 				"wisdom"
@@ -9728,7 +9728,7 @@
 				"dexterity"
 			],
 			"abilityCheck": [
-				"感知"
+				"wisdom"
 			],
 			"areaTags": [
 				"S"
@@ -9835,7 +9835,7 @@
 				"bludgeoning"
 			],
 			"conditionInflict": [
-				"受擒"
+				"grappled"
 			],
 			"spellAttack": [
 				"M"
@@ -9894,7 +9894,7 @@
 				"油脂出现时，站在其范围内的每个生物必须成功通过一次敏捷豁免，否则陷入{@condition 倒地|XPHB}状态。进入该区域或在区域内结束其回合的生物也必须进行该敏捷豁免，豁免失败则陷入{@condition 倒地|XPHB}。"
 			],
 			"conditionInflict": [
-				"倒地"
+				"prone"
 			],
 			"savingThrow": [
 				"dexterity"
@@ -9946,7 +9946,7 @@
 				"触碰一名生物，该生物直到法术结束之前具有{@condition 隐形|XPHB}状态。"
 			],
 			"conditionInflict": [
-				"隐形"
+				"invisible"
 			],
 			"areaTags": [
 				"ST"
@@ -10522,28 +10522,28 @@
 				}
 			],
 			"damageResist": [
-				"强酸",
-				"寒冷",
-				"火焰",
-				"力场",
-				"闪电",
-				"暗蚀",
-				"毒素",
-				"心灵",
-				"光耀",
-				"雷鸣"
+				"acid",
+				"cold",
+				"fire",
+				"force",
+				"lightning",
+				"necrotic",
+				"poison",
+				"psychic",
+				"radiant",
+				"thunder"
 			],
 			"damageVulnerable": [
-				"强酸",
-				"寒冷",
-				"火焰",
-				"力场",
-				"闪电",
-				"暗蚀",
-				"毒素",
-				"心灵",
-				"光耀",
-				"雷鸣"
+				"acid",
+				"cold",
+				"fire",
+				"force",
+				"lightning",
+				"necrotic",
+				"poison",
+				"psychic",
+				"radiant",
+				"thunder"
 			],
 			"affectsCreatureType": [
 				"异怪",
@@ -10600,7 +10600,7 @@
 				"地形的触觉特征不会改变，所以进入这片区域的生物可能会看穿幻象。如果触觉区别不明显，一个仔细调查幻象的生物可以采取{@action 研究|XPHB}动作，尝试进行一次对抗法术豁免 DC 的智力（{@skill 调查|XPHB}）检定以识破之。对于一个识破了幻象本体的生物，幻象看起来就像是一层模糊的图像叠加在真实地形上。"
 			],
 			"abilityCheck": [
-				"智力"
+				"intelligence"
 			],
 			"areaTags": [
 				"C"
@@ -10697,7 +10697,7 @@
 				"法术终止时，目标将泛起一阵倦意使其{@condition 失能|XPHB}并且{@variantrule 速度|XPHB}为 0，持续至其下一回合结束。"
 			],
 			"conditionInflict": [
-				"失能"
+				"incapacitated"
 			],
 			"miscTags": [
 				"ADV",
@@ -10985,11 +10985,11 @@
 				"所有享用了大餐的生物都会获得几种增益，且这些增益将持续 24 小时。该生物具有对毒素伤害的{@variantrule 抗性|XPHB}，并对{@condition 恐慌|XPHB}和{@condition 中毒|XPHB}状态具有{@variantrule 免疫|XPHB}。其{@variantrule 生命值|XPHB|生命值}上限也将提高{@dice 2d10}点，并获得等量的 {@variantrule 生命值|XPHB}。"
 			],
 			"damageImmune": [
-				"毒素"
+				"poison"
 			],
 			"conditionImmune": [
-				"恐慌",
-				"中毒"
+				"frightened",
+				"poisoned"
 			],
 			"miscTags": [
 				"HL"
@@ -11050,7 +11050,7 @@
 				}
 			],
 			"conditionImmune": [
-				"恐慌"
+				"frightened"
 			],
 			"miscTags": [
 				"SCT",
@@ -11177,7 +11177,7 @@
 				}
 			],
 			"conditionInflict": [
-				"麻痹"
+				"paralyzed"
 			],
 			"savingThrow": [
 				"wisdom"
@@ -11245,7 +11245,7 @@
 				}
 			],
 			"conditionInflict": [
-				"麻痹"
+				"paralyzed"
 			],
 			"savingThrow": [
 				"wisdom"
@@ -11306,7 +11306,7 @@
 				"在持续期间，你散发出一个半径 30 尺的{@variantrule 光环 [效应区域]|XPHB|光环}。在灵光范围内，你选择的生物在所有豁免检定上具有{@variantrule 优势|XPHB}，且其他生物对它们进行的攻击检定具有{@variantrule 劣势|XPHB}。此外，当邪魔或亡灵以近战攻击检定命中受影响的生物时，攻击者必须成功通过一次体质豁免，否则将陷入{@condition 目盲|XPHB}状态，直至其下一回合结束。"
 			],
 			"conditionInflict": [
-				"目盲"
+				"blinded"
 			],
 			"savingThrow": [
 				"constitution"
@@ -11373,7 +11373,7 @@
 				"cold"
 			],
 			"conditionInflict": [
-				"目盲"
+				"blinded"
 			],
 			"savingThrow": [
 				"dexterity"
@@ -11496,8 +11496,8 @@
 				"如果受术生物受到任何伤害，或有其他生物用动作将其从恍惚中摇醒，则其身上的此效应将提前终止。"
 			],
 			"conditionInflict": [
-				"魅惑",
-				"失能"
+				"charmed",
+				"incapacitated"
 			],
 			"savingThrow": [
 				"wisdom"
@@ -11828,8 +11828,8 @@
 				}
 			],
 			"conditionInflict": [
-				"束缚",
-				"昏迷"
+				"restrained",
+				"unconscious"
 			],
 			"savingThrow": [
 				"wisdom"
@@ -12072,7 +12072,7 @@
 				}
 			],
 			"conditionInflict": [
-				"隐形"
+				"invisible"
 			],
 			"miscTags": [
 				"SCT"
@@ -12136,8 +12136,8 @@
 				"thunder"
 			],
 			"conditionInflict": [
-				"目盲",
-				"耳聋"
+				"blinded",
+				"deafened"
 			],
 			"savingThrow": [
 				"constitution"
@@ -13318,7 +13318,7 @@
 				}
 			],
 			"abilityCheck": [
-				"智力"
+				"intelligence"
 			],
 			"miscTags": [
 				"PRM",
@@ -13525,7 +13525,7 @@
 				}
 			],
 			"conditionInflict": [
-				"魅惑"
+				"charmed"
 			],
 			"savingThrow": [
 				"wisdom"
@@ -13583,7 +13583,7 @@
 				"法术终止时，目标将重新出现在它之前消失的位置。如果该位置被占据，则目标出现在最近的未占据位置。"
 			],
 			"abilityCheck": [
-				"智力"
+				"intelligence"
 			],
 			"miscTags": [
 				"SGT"
@@ -13639,7 +13639,7 @@
 				"force"
 			],
 			"conditionInflict": [
-				"倒地"
+				"prone"
 			],
 			"translator": "不全书"
 		},
@@ -13881,10 +13881,10 @@
 				"直到法术终止前，你所触碰的一个自愿生物对心灵伤害和{@condition 魅惑|XPHB}状态具有{@variantrule 免疫|XPHB}。目标也不会受到任何可以感知到其情绪、阵营或阅读其思想的效应影响，也无法被魔法侦测其位置，任何法术\u2014\u2014哪怕是{@spell 祈愿术|XPHB}\u2014\u2014都不能收集目标信息、远程监视之或控制其心智。"
 			],
 			"damageImmune": [
-				"心灵"
+				"psychic"
 			],
 			"conditionImmune": [
-				"魅惑"
+				"charmed"
 			],
 			"areaTags": [
 				"ST"
@@ -14074,7 +14074,7 @@
 				}
 			],
 			"abilityCheck": [
-				"智力"
+				"intelligence"
 			],
 			"translator": "不全书"
 		},
@@ -14204,7 +14204,7 @@
 				"你可以通过分身的眼睛视物，用分身的耳朵聆听，如同你处于它的位置一样。"
 			],
 			"conditionInflict": [
-				"隐形"
+				"invisible"
 			],
 			"miscTags": [
 				"SGT",
@@ -14307,8 +14307,8 @@
 				}
 			],
 			"conditionInflict": [
-				"魅惑",
-				"失能"
+				"charmed",
+				"incapacitated"
 			],
 			"savingThrow": [
 				"wisdom"
@@ -14845,7 +14845,7 @@
 				"constitution"
 			],
 			"abilityCheck": [
-				"力量"
+				"strength"
 			],
 			"areaTags": [
 				"S"
@@ -14896,19 +14896,19 @@
 				"以球体为目标施展一道{@spell 解离术|XPHB}可以摧毁球体而不伤害球内的任何事物。"
 			],
 			"damageImmune": [
-				"强酸",
-				"钝击",
-				"寒冷",
-				"火焰",
-				"力场",
-				"闪电",
-				"暗蚀",
-				"穿刺",
-				"毒素",
-				"心灵",
-				"光耀",
-				"挥砍",
-				"雷鸣"
+				"acid",
+				"bludgeoning",
+				"cold",
+				"fire",
+				"force",
+				"lightning",
+				"necrotic",
+				"piercing",
+				"poison",
+				"psychic",
+				"radiant",
+				"slashing",
+				"thunder"
 			],
 			"savingThrow": [
 				"dexterity"
@@ -14961,7 +14961,7 @@
 				"若豁免失败，目标将在法术持续时间内陷入{@condition 魅惑|XPHB}状态。处于{@condition 魅惑|XPHB}状态期间，目标会跳起滑稽的舞蹈，必须使用所有的移动力在原地跳舞，并且进行的敏捷豁免与攻击检定具有{@variantrule 劣势|XPHB}，且其他生物以该生物为目标发动的攻击检定具有{@variantrule 优势|XPHB}。在目标的每个自己的回合，其能够以一个动作尝试使自己镇定下来并重复豁免，豁免成功则其身上的法术终止。"
 			],
 			"conditionInflict": [
-				"魅惑"
+				"charmed"
 			],
 			"savingThrow": [
 				"wisdom"
@@ -15119,7 +15119,7 @@
 				"intelligence"
 			],
 			"abilityCheck": [
-				"智力"
+				"intelligence"
 			],
 			"miscTags": [
 				"SGT"
@@ -15742,7 +15742,7 @@
 				"被{@condition 震慑|XPHB}目标在每个其回合结束时进行一次体质豁免。豁免成功时其身上的此状态终止。"
 			],
 			"conditionInflict": [
-				"震慑"
+				"stunned"
 			],
 			"savingThrow": [
 				"constitution"
@@ -15992,9 +15992,9 @@
 				"poison"
 			],
 			"conditionInflict": [
-				"目盲",
-				"石化",
-				"束缚"
+				"blinded",
+				"petrified",
+				"restrained"
 			],
 			"savingThrow": [
 				"dexterity",
@@ -16101,9 +16101,9 @@
 				"poison"
 			],
 			"conditionInflict": [
-				"目盲",
-				"石化",
-				"束缚"
+				"blinded",
+				"petrified",
+				"restrained"
 			],
 			"savingThrow": [
 				"constitution",
@@ -16238,7 +16238,7 @@
 				"由于东西可以穿过幻象，任何与该幻象进行的物理互动都会暴露其幻觉本质。一名生物可以用一个{@action 研究|XPHB}动作进行一次对抗你法术豁免DC的成功智力（{@skill 调查|XPHB}）检定以看穿幻象。辨出幻象的生物可以看穿该影像，其产生的声响对该生物而言显得虚假。"
 			],
 			"abilityCheck": [
-				"智力"
+				"intelligence"
 			],
 			"hasFluffImages": true,
 			"translator": "不全书"
@@ -16289,7 +16289,7 @@
 				"由于东西可以穿过幻象，任何与该幻象进行的物理互动都会暴露其幻觉本质。一名生物可以用一个{@action 研究|XPHB}动作进行一次对抗你法术豁免DC的成功智力（{@skill 调查|XPHB}）检定以看穿幻象。辨出幻象的生物可以看穿该影像，其产生的声响对该生物而言显得虚假。"
 			],
 			"abilityCheck": [
-				"智力"
+				"intelligence"
 			],
 			"miscTags": [
 				"SGT",
@@ -16336,11 +16336,11 @@
 				"法术持续时间内，你触碰的一名自愿生物具有你选择的一种伤害类型的{@variantrule 抗性|XPHB}：强酸、寒冷、火焰、闪电、雷鸣。"
 			],
 			"damageResist": [
-				"强酸",
-				"寒冷",
-				"火焰",
-				"闪电",
-				"雷鸣"
+				"acid",
+				"cold",
+				"fire",
+				"lightning",
+				"thunder"
 			],
 			"areaTags": [
 				"ST"
@@ -16450,7 +16450,7 @@
 				"你触碰一名生物并结束其陷入的{@condition 中毒|XPHB}状态。在持续时间内，目标为避免陷入或结束{@condition 中毒|XPHB}状态所做的豁免具有{@variantrule 优势|XPHB}，且具有毒素伤害的{@variantrule 抗性|XPHB}。"
 			],
 			"damageResist": [
-				"毒素"
+				"poison"
 			],
 			"miscTags": [
 				"ADV"
@@ -16781,7 +16781,7 @@
 				"poison"
 			],
 			"conditionInflict": [
-				"中毒"
+				"poisoned"
 			],
 			"spellAttack": [
 				"R"
@@ -17644,7 +17644,7 @@
 				"charisma"
 			],
 			"abilityCheck": [
-				"智力"
+				"intelligence"
 			],
 			"miscTags": [
 				"SGT"
@@ -17743,8 +17743,8 @@
 				"你可以设置一个让该法术提前终止的条件。该条件由你自由设定，但必须是发生在目标周围 1 里范围内或能在目标周围 1 里范围内看到的事件。例如：\"1000 年以后\"或者\"当泰拉斯奎苏醒时\"。如果受术者受到任何伤害，则该法术立刻终止。"
 			],
 			"conditionInflict": [
-				"隐形",
-				"昏迷"
+				"invisible",
+				"unconscious"
 			],
 			"miscTags": [
 				"OBJ"
@@ -18203,10 +18203,10 @@
 				"在法术持续时间内，以施法距离内你指定的一点为中心半径 20 尺的{@variantrule 球状 [效应区域]|XPHB|球状}区域内将无法产生任何声音，且外界的声音也无法于该区域内传播。任何完全位于该{@variantrule 球状 [效应区域]|XPHB|球状}区域内的生物和物件都将{@variantrule 免疫|XPHB}雷鸣伤害，而完全位于该区域内的任何生物都将陷入{@condition 耳聋|XPHB}状态。此外，该区域内无法施展包含言语成分的法术。"
 			],
 			"damageImmune": [
-				"雷鸣"
+				"thunder"
 			],
 			"conditionInflict": [
-				"耳聋"
+				"deafened"
 			],
 			"miscTags": [
 				"OBJ"
@@ -18259,7 +18259,7 @@
 				"由于影像无法被碰到，任何与该影像进行的物理互动都会暴露其幻象的本质。一个生物使用{@action 研究|XPHB}动作调查影像时，它可以进行一次对抗法术豁免 DC 的智力（{@skill 调查|XPHB}）检定。辨出幻象的生物可以看破该影像，在该生物看来会透过影像看到其背后的事物。"
 			],
 			"abilityCheck": [
-				"智力"
+				"intelligence"
 			],
 			"miscTags": [
 				"UA"
@@ -18365,8 +18365,8 @@
 				"不需要睡眠的生物（例如精灵）或对{@condition 力竭|XPHB}状态具有{@variantrule 免疫|XPHB}的生物自动成功通过对抗此法术的豁免。"
 			],
 			"conditionInflict": [
-				"失能",
-				"昏迷"
+				"incapacitated",
+				"unconscious"
 			],
 			"savingThrow": [
 				"wisdom"
@@ -18418,7 +18418,7 @@
 				"该{@variantrule 柱状 [效应区域]|XPHB|柱状}区域的地面变成{@variantrule 困难地形|XPHB}。生物在一个回合内首次进入该{@variantrule 柱状 [效应区域]|XPHB|柱状}区域或在区域内开始其回合时，它必须成功通过一次敏捷豁免，否则将陷入{@condition 倒地|XPHB}状态并失去{@status 专注|XPHB}。"
 			],
 			"conditionInflict": [
-				"倒地"
+				"prone"
 			],
 			"savingThrow": [
 				"dexterity"
@@ -18878,7 +18878,7 @@
 				"piercing"
 			],
 			"abilityCheck": [
-				"感知"
+				"wisdom"
 			],
 			"miscTags": [
 				"DFT"
@@ -19067,7 +19067,7 @@
 				"psychic"
 			],
 			"conditionInflict": [
-				"震慑"
+				"stunned"
 			],
 			"savingThrow": [
 				"wisdom"
@@ -19244,7 +19244,7 @@
 				"如果一个生物在其回合开始时位于{@variantrule 球状 [效应区域]|XPHB|球状}区域内，则它必须成功通过一次体质豁免。否则将陷入{@condition 中毒|XPHB}状态直到其当前回合结束。因此而陷入{@condition 中毒|XPHB}状态期间，该生物无法执行动作或{@variantrule 附赠动作|XPHB}。"
 			],
 			"conditionInflict": [
-				"中毒"
+				"poisoned"
 			],
 			"savingThrow": [
 				"constitution"
@@ -19340,9 +19340,9 @@
 				"在法术结束前，你触碰的一个自愿生物获得对钝击、穿刺、挥砍伤害的{@variantrule 抗性|XPHB}。"
 			],
 			"damageResist": [
-				"钝击",
-				"穿刺",
-				"挥砍"
+				"bludgeoning",
+				"piercing",
+				"slashing"
 			],
 			"areaTags": [
 				"ST"
@@ -19429,7 +19429,7 @@
 				"thunder"
 			],
 			"conditionInflict": [
-				"耳聋"
+				"deafened"
 			],
 			"savingThrow": [
 				"constitution",
@@ -19489,7 +19489,7 @@
 				"目标必须成功通过一次感知豁免，否则在法术持续时间内陷入{@condition 魅惑|XPHB}状态，若你或你的盟友对其造成伤害此法术将提前结束。被{@condition 魅惑|XPHB}的生物会尽其所能地执行你所描述的行为。你所暗示的行为可能会在法术持续时间内始终一直进行，而如果你所暗示的活动可以用更短的时间完成，则此法术会在目标完成了你的要求后随即终止。"
 			],
 			"conditionInflict": [
-				"魅惑"
+				"charmed"
 			],
 			"savingThrow": [
 				"wisdom"
@@ -20085,7 +20085,7 @@
 				"radiant"
 			],
 			"conditionInflict": [
-				"目盲"
+				"blinded"
 			],
 			"savingThrow": [
 				"constitution"
@@ -20140,7 +20140,7 @@
 				"radiant"
 			],
 			"conditionInflict": [
-				"目盲"
+				"blinded"
 			],
 			"savingThrow": [
 				"constitution"
@@ -20471,8 +20471,8 @@
 				}
 			],
 			"conditionInflict": [
-				"失能",
-				"倒地"
+				"incapacitated",
+				"prone"
 			],
 			"savingThrow": [
 				"wisdom"
@@ -20544,7 +20544,7 @@
 				}
 			],
 			"conditionInflict": [
-				"束缚"
+				"restrained"
 			],
 			"savingThrow": [
 				"strength"
@@ -21136,7 +21136,7 @@
 				"thunder"
 			],
 			"conditionInflict": [
-				"倒地"
+				"prone"
 			],
 			"savingThrow": [
 				"strength"
@@ -21748,7 +21748,7 @@
 				"strength"
 			],
 			"abilityCheck": [
-				"力量"
+				"strength"
 			],
 			"areaTags": [
 				"W"
@@ -22497,13 +22497,13 @@
 				"fire"
 			],
 			"conditionInflict": [
-				"束缚"
+				"restrained"
 			],
 			"savingThrow": [
 				"dexterity"
 			],
 			"abilityCheck": [
-				"力量"
+				"strength"
 			],
 			"miscTags": [
 				"DFT",
@@ -22558,7 +22558,7 @@
 				"psychic"
 			],
 			"conditionInflict": [
-				"恐慌"
+				"frightened"
 			],
 			"savingThrow": [
 				"wisdom"
@@ -22609,7 +22609,7 @@
 				"如果法术终止时受术目标正以云雾形态飞行，则该目标将在 1 分钟内以每轮 60 尺的速度降落直至安全着陆。如果该生物降落 1 分钟后还没着陆，则在余下的距离中它将会如正常情况一样坠落。"
 			],
 			"conditionInflict": [
-				"震慑"
+				"stunned"
 			],
 			"areaTags": [
 				"MT"
@@ -22771,19 +22771,19 @@
 				"除了模仿其他法术外，施展祈愿术Wish以达成的任何其他目的都会使你的身躯承受极大的负担，令你变得无比虚弱。承受负担后，直到你完成{@variantrule 长休|XPHB}之前，你每次施展法术时都将受到一定伤害（伤害数值取决于你施展的法术的环阶，每环阶{@damage 1d10}点的暗蚀伤害），此伤害无法被任何方式减免。此外，你的力量属性值将变为3，持续{@dice 2d4}日。这段时间内，你每花一整日休息（不从事轻度活动以外的行为），恢复需要的日数就减少 2 日。最后，承受负担时，你将有{@chance 33|||无法再次施放！|能够再次施放}的概率永远也无法再次施展{@spell 祈愿术|XPHB}。"
 			],
 			"damageResist": [
-				"强酸",
-				"钝击",
-				"寒冷",
-				"火焰",
-				"力场",
-				"闪电",
-				"暗蚀",
-				"穿刺",
-				"毒素",
-				"心灵",
-				"光耀",
-				"挥砍",
-				"雷鸣"
+				"acid",
+				"bludgeoning",
+				"cold",
+				"fire",
+				"force",
+				"lightning",
+				"necrotic",
+				"piercing",
+				"poison",
+				"psychic",
+				"radiant",
+				"slashing",
+				"thunder"
 			],
 			"damageInflict": [
 				"necrotic"
@@ -23016,7 +23016,7 @@
 				"necrotic"
 			],
 			"conditionInflict": [
-				"恐慌"
+				"frightened"
 			],
 			"savingThrow": [
 				"wisdom"
@@ -23068,7 +23068,7 @@
 				"psychic"
 			],
 			"conditionInflict": [
-				"倒地"
+				"prone"
 			],
 			"savingThrow": [
 				"wisdom"

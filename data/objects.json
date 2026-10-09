@@ -22,9 +22,9 @@
 				"盲视 10 尺（此半径之外为盲区）"
 			],
 			"immune": [
-				"强酸",
-				"毒素",
-				"心灵"
+				"acid",
+				"poison",
+				"psychic"
 			],
 			"actionEntries": [
 				{
@@ -99,8 +99,8 @@
 			"ac": 15,
 			"hp": 50,
 			"immune": [
-				"毒素",
-				"心灵"
+				"poison",
+				"psychic"
 			],
 			"entries": [
 				"弩炮是一副发射重型弩矢的巨型十字弩。其攻击发射前必须先进行装填和瞄准作业。使用该武器时，进行装填、瞄准以及攻击发射三项作业需要分别花费一个动作。"
@@ -168,8 +168,8 @@
 			"ac": 15,
 			"hp": 100,
 			"immune": [
-				"毒素",
-				"心灵"
+				"poison",
+				"psychic"
 			],
 			"entries": [
 				"这个马车大小的装置外形被设计成类似龙的模样。它需要点燃并瞄准后才能发射。点燃它需要1个动作，瞄准需要1个动作，发射需要1个动作。当你发射它时，掷一个{@dice d20}。如果你掷出2或更高，则锅炉铁龙可以正常喷火。如果你掷出1，锅炉铁龙执行爆炸动作。"
@@ -210,8 +210,8 @@
 			"ac": 19,
 			"hp": 75,
 			"immune": [
-				"毒素",
-				"心灵"
+				"poison",
+				"psychic"
 			],
 			"entries": [
 				"火炮使用火药推动重型铁球，使其以毁灭性的速度从空中划过进行攻击。在没有火药设定的战役中，火炮可以设定为由聪明的侏儒或是工程法师所设计的奥法驱动设备。",
@@ -290,8 +290,8 @@
 				"30 尺盲视感官，该感官范围之外则视为目盲状态。"
 			],
 			"immune": [
-				"毒素",
-				"心灵"
+				"poison",
+				"psychic"
 			],
 			"actionEntries": [
 				{
@@ -400,8 +400,8 @@
 				"special": "5 × 你的奇械师等级（对炮台施放{@spell 修复术|XPHB}可为其恢复{@dice 2d6}点生命值）"
 			},
 			"immune": [
-				"毒素",
-				"心灵"
+				"poison",
+				"psychic"
 			],
 			"entries": [
 				"{@note 由{@subclassFeature 魔能炮台|奇械师|EFA|魔炮师|EFA|3}子职业特性创造。}"
@@ -470,25 +470,25 @@
 			"wis": 10,
 			"cha": 10,
 			"immune": [
-				"毒素",
-				"心灵"
+				"poison",
+				"psychic"
 			],
 			"conditionImmune": [
-				"目盲",
-				"魅惑",
-				"耳聋",
-				"力竭",
-				"恐慌",
-				"受擒",
-				"失能",
-				"隐形",
-				"麻痹",
-				"石化",
-				"中毒",
-				"倒地",
-				"束缚",
-				"震慑",
-				"昏迷"
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"incapacitated",
+				"invisible",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"stunned",
+				"unconscious"
 			],
 			"entries": [
 				"{@note 由{@subclassFeature 魔能炮台|奇械师|TCE|魔炮师|TCE|3}子职业特性所创造。}"
@@ -532,25 +532,25 @@
 			"wis": 10,
 			"cha": 10,
 			"immune": [
-				"毒素",
-				"心灵"
+				"poison",
+				"psychic"
 			],
 			"conditionImmune": [
-				"目盲",
-				"魅惑",
-				"耳聋",
-				"力竭",
-				"恐慌",
-				"受擒",
-				"失能",
-				"隐形",
-				"麻痹",
-				"石化",
-				"中毒",
-				"倒地",
-				"束缚",
-				"震慑",
-				"昏迷"
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"incapacitated",
+				"invisible",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"stunned",
+				"unconscious"
 			],
 			"entries": [
 				"{@note 由{@subclassFeature 魔能炮台|奇械师|TCE|魔炮师|TCE|3}子职业特性所创造。}"
@@ -594,25 +594,25 @@
 			"wis": 10,
 			"cha": 10,
 			"immune": [
-				"毒素",
-				"心灵"
+				"poison",
+				"psychic"
 			],
 			"conditionImmune": [
-				"目盲",
-				"魅惑",
-				"耳聋",
-				"力竭",
-				"恐慌",
-				"受擒",
-				"失能",
-				"隐形",
-				"麻痹",
-				"石化",
-				"中毒",
-				"倒地",
-				"束缚",
-				"震慑",
-				"昏迷"
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"incapacitated",
+				"invisible",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"stunned",
+				"unconscious"
 			],
 			"entries": [
 				"{@note 由{@subclassFeature 魔能炮台|奇械师|TCE|魔炮师|TCE|3}子职业特性所创造。}"
@@ -901,8 +901,8 @@
 			"ac": 15,
 			"hp": 100,
 			"immune": [
-				"毒素",
-				"心灵"
+				"poison",
+				"psychic"
 			],
 			"entries": [
 				"侏儒特快投递器是一种设计用来投掷生物而非投射物的弹射装置，能够将生物以高弧线抛出。侏儒特快投递器是与{@item 防止跌落背包|DSotDQ}（参见{@adventure \"冒险用品\"|DSotDQ|8|冒险用品}章节）共同设计，以加速运输。该装置可容纳一个中型或更小的生物。在使用前，侏儒特快投递器必须被装载和瞄准。装载侏儒特快投递器需要1个动作，瞄准需要1个动作，发射需要1个动作。",
@@ -934,15 +934,15 @@
 			"ac": 10,
 			"hp": 35,
 			"immune": [
-				"暗蚀",
-				"毒素",
-				"心灵"
+				"necrotic",
+				"poison",
+				"psychic"
 			],
 			"resist": [
-				"穿刺"
+				"piercing"
 			],
 			"vulnerable": [
-				"火焰"
+				"fire"
 			],
 			"entries": [
 				{
@@ -994,18 +994,18 @@
 			"ac": 13,
 			"hp": 4,
 			"immune": [
-				"强酸",
-				"钝击",
-				"寒冷",
-				"力场",
-				"闪电",
-				"暗蚀",
-				"穿刺",
-				"毒素",
-				"心灵",
-				"光耀",
-				"挥砍",
-				"雷鸣"
+				"acid",
+				"bludgeoning",
+				"cold",
+				"force",
+				"lightning",
+				"necrotic",
+				"piercing",
+				"poison",
+				"psychic",
+				"radiant",
+				"slashing",
+				"thunder"
 			],
 			"entries": [
 				{
@@ -1103,8 +1103,8 @@
 			"ac": 15,
 			"hp": 100,
 			"immune": [
-				"毒素",
-				"心灵"
+				"poison",
+				"psychic"
 			],
 			"entries": [
 				"投石机是一种以弧线抛射重型投石的弹道武器，其投出的石弹可以击中身处掩护的目标。投石机进行攻击前必须先进行装填和瞄准作业。装填该武器需要花费两个动作，瞄准需要花费两个动作，而发射则需要花费一个动作。",
@@ -1175,8 +1175,8 @@
 			"ac": 15,
 			"hp": 100,
 			"immune": [
-				"毒素",
-				"心灵"
+				"poison",
+				"psychic"
 			],
 			"entries": [
 				"攻城槌的底座是一个可移动的框架，一根粗圆木作为其主体，用铁链装架在两个带盖顶的横梁上。",
@@ -1250,8 +1250,8 @@
 			"ac": 15,
 			"hp": 200,
 			"immune": [
-				"毒素",
-				"心灵"
+				"poison",
+				"psychic"
 			],
 			"entries": [
 				"攻城塔是一个可移动的木制结构，其主体由梁架和墙身上的板条组成。大型木轮或滚轴允许士兵或负重牲畜推动或拉动塔楼。中型或更小的生物可以使用攻城塔到达高达40尺的城墙顶部。塔内的生物对来自塔外的攻击具有{@quickref 掩护||3||全身掩护}。"
@@ -1290,13 +1290,13 @@
 			"ac": 17,
 			"hp": 30,
 			"immune": [
-				"强酸",
-				"暗蚀",
-				"心灵"
+				"acid",
+				"necrotic",
+				"psychic"
 			],
 			"vulnerable": [
-				"火焰",
-				"光耀"
+				"fire",
+				"radiant"
 			],
 			"entries": [
 				"如果被摧毁，水泡伴随着远处叹息的合唱破裂。片刻之后，{@adventure 一个幽灵般的人物出现|JttRC|10|和平的记忆}。"
@@ -1354,8 +1354,8 @@
 			"ac": 19,
 			"hp": 20,
 			"immune": [
-				"毒素",
-				"心灵"
+				"poison",
+				"psychic"
 			],
 			"entries": [
 				"大锅的主体是一口吊挂起来的钢铁坩锅，以方便使之侧翻并倒出内里所装载物质。大锅一旦倒空，则必须重新装填物质进锅内，通常还需要对新加入物质进行加热才可再次使用。装填大锅需要花费三个动作，倾倒大锅需要花费一个动作。",
@@ -1423,8 +1423,8 @@
 			"wis": 3,
 			"cha": 10,
 			"immune": [
-				"毒素",
-				"心灵"
+				"poison",
+				"psychic"
 			],
 			"hasToken": true
 		},
@@ -1443,8 +1443,8 @@
 			"ac": 15,
 			"hp": 150,
 			"immune": [
-				"毒素",
-				"心灵"
+				"poison",
+				"psychic"
 			],
 			"entries": [
 				"配重投石机是一种以弧线投掷重载石弹的弹道武器，其投出的石弹可以击中身处掩护的目标。",
@@ -1518,8 +1518,8 @@
 				"burrow": 30
 			},
 			"immune": [
-				"毒素",
-				"心灵"
+				"poison",
+				"psychic"
 			],
 			"entries": [
 				"未成魔轿是一台蠕虫般的浩劫巨兽，这台尖啸的杰作由数以百计的，不知疲倦的{@creature 毒虫罗斯魔||毒虫罗斯魔}组成。它是一台独特的载具，既是{@creature 玛拉希克斯|BMT}的主要交通工具，也是邪魔宗主的巢穴。"

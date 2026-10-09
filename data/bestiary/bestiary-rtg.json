@@ -55,22 +55,22 @@
 			"resist": [
 				{
 					"resist": [
-						"钝击",
-						"穿刺",
-						"挥砍"
+						"bludgeoning",
+						"piercing",
+						"slashing"
 					],
 					"note": "非银质武器且非魔法攻击的",
 					"cond": true
 				}
 			],
 			"immune": [
-				"毒素"
+				"poison"
 			],
 			"vulnerable": [
-				"火焰"
+				"fire"
 			],
 			"conditionImmune": [
-				"中毒"
+				"poisoned"
 			],
 			"languages": [
 				"心灵感应 60 尺"
@@ -190,8 +190,8 @@
 				"硬头锤|phb"
 			],
 			"traitTags": [
-				"再生",
-				"树跃术"
+				"Regeneration",
+				"Tree Stride"
 			],
 			"senseTags": [
 				"D"
@@ -225,14 +225,14 @@
 				"MW"
 			],
 			"conditionInflictSpell": [
-				"失能"
+				"incapacitated"
 			],
 			"savingThrowForcedSpell": [
-				"魅力",
-				"体质",
-				"敏捷",
-				"智力",
-				"感知"
+				"charisma",
+				"constitution",
+				"dexterity",
+				"intelligence",
+				"wisdom"
 			],
 			"hasToken": true
 		},
@@ -281,19 +281,19 @@
 			],
 			"passive": 14,
 			"resist": [
-				"钝击",
-				"穿刺"
+				"bludgeoning",
+				"piercing"
 			],
 			"immune": [
-				"毒素"
+				"poison"
 			],
 			"vulnerable": [
-				"火焰"
+				"fire"
 			],
 			"conditionImmune": [
-				"魅惑",
-				"恐慌",
-				"中毒"
+				"charmed",
+				"frightened",
+				"poisoned"
 			],
 			"languages": [
 				"心灵感应 60 尺"
@@ -357,15 +357,15 @@
 				"短棒|phb"
 			],
 			"traitTags": [
-				"伪装",
-				"再生",
-				"树跃术"
+				"Camouflage",
+				"Regeneration",
+				"Tree Stride"
 			],
 			"senseTags": [
 				"D"
 			],
 			"actionTags": [
-				"多重攻击"
+				"Multiattack"
 			],
 			"languageTags": [
 				"TP"

@@ -25,38 +25,47 @@ class FilterCommon {
 
 	static getDamageVulnerableFilter () {
 		return this._getDamageResistVulnImmuneFilter({
-			header: "易伤Vulnerability",
-			headerShort: "易伤Vuln.",
+			header: "Vulnerability",
+			cnHeader: "伤害易伤",
+			headerShort: "易伤",
 		});
 	}
 
 	static getDamageResistFilter () {
 		return this._getDamageResistVulnImmuneFilter({
-			header: "抗性Resistance",
-			headerShort: "抗性Res.",
+			header: "Resistance",
+			cnHeader: "伤害抗性",
+			headerShort: "抗性",
 		});
 	}
 
 	static getDamageImmuneFilter () {
 		return this._getDamageResistVulnImmuneFilter({
-			header: "免疫Immunity",
-			headerShort: "免疫Imm.",
+			header: "Immunity",
+			cnHeader: "伤害免疫",
+			headerShort: "免疫",
 		});
 	}
 
 	static _getDamageResistVulnImmuneFilter (
 		{
 			header,
+			cnHeader,
 			headerShort,
 		},
 	) {
 		return new Filter({
-			header: header,
-			items: [...Parser.DMG_TYPES],
-			displayFnMini: str => `${headerShort} ${str.toTitleCase()}`,
-			displayFnTitle: str => `Damage ${header}: ${str.toTitleCase()}`,
-			displayFn: StrUtil.uppercaseFirst,
+			header,
+			cnHeader,
+			items: Parser.DMG_TYPES.map(it => Parser.dmgTypeToEn(it)),
+			displayFnMini: str => `${headerShort} ${this._getDamageDisplayText(str)}`,
+			displayFnTitle: str => `${cnHeader}: ${this._getDamageDisplayText(str)}`,
+			displayFn: str => this._getDamageDisplayText(str),
 		});
+	}
+
+	static _getDamageDisplayText (str) {
+		return Parser.dmgTypeToCn(str.replace(/ \(有条件的\)$/, "")) + (str.endsWith(" (有条件的)") ? " (有条件的)" : "");
 	}
 
 	/* -------------------------------------------- */
@@ -85,11 +94,17 @@ class FilterCommon {
 		return new Filter({
 			header: "Condition Immunity",
 			cnHeader: "状态免疫",
-			items: this._CONDS,
-			displayFnMini: str => `免疫 ${str.toTitleCase()}`,
-			displayFnTitle: str => `状态免疫: ${str.toTitleCase()}`,
-			displayFn: StrUtil.uppercaseFirst,
+		items: this._CONDS.map(it => Parser.conditionToEn(it)),
+		displayFnMini: str => `免疫 ${this._getConditionDisplayText(str)}`,
+		displayFnTitle: str => `状态免疫: ${this._getConditionDisplayText(str)}`,
+		displayFn: str => this._getConditionDisplayText(str),
 		});
+	}
+
+	static _getConditionDisplayText (str) {
+		const isConditional = str.endsWith(" (有条件的)");
+		const base = isConditional ? str.slice(0, -" (有条件的)".length) : str;
+		return Parser._parse_bToA(Parser.CONTITION_TO_EN, base) + (isConditional ? " (有条件的)" : "");
 	}
 
 	/* -------------------------------------------- */
@@ -126,30 +141,31 @@ class FilterCommon {
 		if (val.special) return out.push("Other");
 
 		if (typeof val !== "string") return;
-		out.push(isConditional ? `${val} (有条件的)` : val);
+		const normalized = key === "conditionImmune" ? Parser.conditionToEn(val) : Parser.dmgTypeToEn(val);
+		out.push(isConditional ? `${normalized} (有条件的)` : normalized);
 	}
 
 	/* -------------------------------------------- */
 
 	static mutateForFilters_damageVulnResImmunePlayer (ent) {
-		ent._fVuln = this._getAllImmResPlayer(ent.vulnerable);
-		ent._fRes = this._getAllImmResPlayer(ent.resist);
-		ent._fImm = this._getAllImmResPlayer(ent.immune);
+		ent._fVuln = this._getAllImmResPlayer(ent.vulnerable, "vulnerable");
+		ent._fRes = this._getAllImmResPlayer(ent.resist, "resist");
+		ent._fImm = this._getAllImmResPlayer(ent.immune, "immune");
 	}
 
 	static mutateForFilters_conditionImmunePlayer (ent) {
-		ent._fCondImm = this._getAllImmResPlayer(ent.conditionImmune);
+		ent._fCondImm = this._getAllImmResPlayer(ent.conditionImmune, "conditionImmune");
 	}
 
-	static _getAllImmResPlayer (val) {
+	static _getAllImmResPlayer (val, key) {
 		if (!val) return null;
 		const out = [];
 		for (const valSub of val) {
 			if (typeof valSub === "string") {
-				out.push(valSub);
+				out.push(key === "conditionImmune" ? Parser.conditionToEn(valSub) : Parser.dmgTypeToEn(valSub));
 				break;
 			}
-			valSub.choose?.from?.forEach(it => out.push(it));
+			valSub.choose?.from?.forEach(it => out.push(key === "conditionImmune" ? Parser.conditionToEn(it) : Parser.dmgTypeToEn(it)));
 		}
 		return out;
 	}
@@ -196,7 +212,11 @@ class FilterCommon {
 		return new Filter({
 			header: "Skill Proficiencies",
 			cnHeader: "技能熟练项",
-			displayFn: this._getNameSourceFilterDisplay.bind(this),
+			displayFn: str => {
+				const [name, sourceJson] = str.split("|");
+				const displayName = name === "any" || name === "anySkill" ? "任意技能" : Parser.enSkillToCn(name);
+				return `${displayName}${sourceJson ? ` (${Parser.sourceJsonToAbv(sourceJson)})` : ""}`;
+			},
 		});
 	}
 

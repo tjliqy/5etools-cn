@@ -1534,12 +1534,12 @@
 					{
 						"choose": {
 							"from": [
-								"驯兽",
-								"运动",
-								"威吓",
-								"自然",
-								"察觉",
-								"求生"
+								"animal handling",
+								"athletics",
+								"intimidation",
+								"nature",
+								"perception",
+								"survival"
 							]
 						}
 					}
@@ -2562,14 +2562,14 @@
 					{
 						"choose": {
 							"from": [
-								"奥秘",
-								"历史",
-								"洞悉",
-								"调查",
-								"医药",
-								"表演",
-								"游说",
-								"宗教"
+								"arcana",
+								"history",
+								"insight",
+								"investigation",
+								"medicine",
+								"performance",
+								"persuasion",
+								"religion"
 							],
 							"count": 2
 						}
@@ -2607,13 +2607,13 @@
 					{
 						"choose": {
 							"from": [
-								"特技",
-								"驯兽",
-								"运动",
-								"威吓",
-								"自然",
-								"察觉",
-								"求生"
+								"acrobatics",
+								"animal handling",
+								"athletics",
+								"intimidation",
+								"nature",
+								"perception",
+								"survival"
 							],
 							"count": 2
 						}
@@ -2818,12 +2818,12 @@
 					{
 						"choose": {
 							"from": [
-								"驯兽",
-								"运动",
-								"威吓",
-								"自然",
-								"察觉",
-								"求生"
+								"animal handling",
+								"athletics",
+								"intimidation",
+								"nature",
+								"perception",
+								"survival"
 							]
 						}
 					}
@@ -7809,7 +7809,7 @@
 		},
 		{
 			"ENG_name": "Chemical Mastery",
-			"name": "炼金专家",
+			"name": "化学专家",
 			"source": "EFA",
 			"className": "奇械师",
 			"classSource": "EFA",
@@ -7818,8 +7818,8 @@
 			"level": 15,
 			"entryData": {
 				"resist": [
-					"强酸",
-					"毒素"
+					"acid",
+					"poison"
 				]
 			},
 			"migrationVersion": 3
@@ -8210,10 +8210,10 @@
 					{
 						"choose": {
 							"from": [
-								"运动",
-								"特技",
-								"隐匿",
-								"求生"
+								"athletics",
+								"acrobatics",
+								"stealth",
+								"survival"
 							],
 							"count": 2
 						}
@@ -8738,10 +8738,10 @@
 					{
 						"choose": {
 							"from": [
-								"奥秘",
-								"历史",
-								"自然",
-								"宗教"
+								"arcana",
+								"history",
+								"nature",
+								"religion"
 							],
 							"count": 2
 						}
@@ -8946,9 +8946,9 @@
 					{
 						"choose": {
 							"from": [
-								"驯兽",
-								"自然",
-								"求生"
+								"animal handling",
+								"nature",
+								"survival"
 							]
 						}
 					}
@@ -9172,10 +9172,10 @@
 					{
 						"choose": {
 							"from": [
-								"驯兽",
-								"运动",
-								"自然",
-								"求生"
+								"animal handling",
+								"athletics",
+								"nature",
+								"survival"
 							]
 						}
 					}
@@ -9241,8 +9241,8 @@
 					{
 						"choose": {
 							"from": [
-								"威吓",
-								"游说"
+								"intimidation",
+								"persuasion"
 							]
 						}
 					}
@@ -9346,9 +9346,9 @@
 					{
 						"choose": {
 							"from": [
-								"洞悉",
-								"表演",
-								"游说"
+								"insight",
+								"performance",
+								"persuasion"
 							]
 						}
 					}
@@ -9475,7 +9475,7 @@
 			"level": 17,
 			"entryData": {
 				"immune": [
-					"火焰"
+					"fire"
 				]
 			},
 			"migrationVersion": 3
@@ -9569,11 +9569,11 @@
 			"level": 10,
 			"entryData": {
 				"immune": [
-					"毒素"
+					"poison"
 				],
 				"conditionImmune": [
-					"疾病",
-					"中毒"
+					"disease",
+					"poisoned"
 				]
 			},
 			"migrationVersion": 3
@@ -9656,10 +9656,10 @@
 			"level": 14,
 			"entryData": {
 				"conditionImmune": [
-					"目盲",
-					"耳聋",
-					"恐慌",
-					"中毒"
+					"blinded",
+					"deafened",
+					"frightened",
+					"poisoned"
 				]
 			},
 			"migrationVersion": 3
@@ -10109,11 +10109,11 @@
 					{
 						"choose": {
 							"from": [
-								"驯兽",
-								"洞悉",
-								"威吓",
-								"表演",
-								"游说"
+								"animal handling",
+								"insight",
+								"intimidation",
+								"performance",
+								"persuasion"
 							]
 						}
 					}
@@ -10167,7 +10167,7 @@
 						"ENG_name": "Psionic Energy Die",
 						"name": "灵能骰",
 						"type": "dicePool",
-						"recharge": "长休",
+						"recharge": "restLong",
 						"count": "2 * PB",
 						"number": 1,
 						"faces": "(6 + ((ceil((<$level$> + 2) / 6) - 1) * 2))"
@@ -10187,7 +10187,7 @@
 			"level": 10,
 			"entryData": {
 				"resist": [
-					"心灵"
+					"psychic"
 				]
 			},
 			"migrationVersion": 3
@@ -10327,8 +10327,8 @@
 					{
 						"choose": {
 							"from": [
-								"奥秘",
-								"自然"
+								"arcana",
+								"nature"
 							]
 						}
 					}
@@ -10441,11 +10441,11 @@
 					{
 						"choose": {
 							"from": [
-								"驯兽",
-								"历史",
-								"洞悉",
-								"表演",
-								"游说"
+								"animal handling",
+								"history",
+								"insight",
+								"performance",
+								"persuasion"
 							]
 						}
 					}
@@ -10467,10 +10467,10 @@
 					{
 						"choose": {
 							"from": [
-								"历史",
-								"洞悉",
-								"表演",
-								"游说"
+								"history",
+								"insight",
+								"performance",
+								"persuasion"
 							]
 						}
 					}
@@ -11238,9 +11238,9 @@
 					{
 						"choose": {
 							"from": [
-								"欺瞒",
-								"表演",
-								"游说"
+								"deception",
+								"performance",
+								"persuasion"
 							]
 						}
 					}
@@ -11515,7 +11515,7 @@
 						"ENG_name": "Psionic Energy Die",
 						"name": "灵能骰",
 						"type": "dicePool",
-						"recharge": "长休",
+						"recharge": "restLong",
 						"count": "2 * PB",
 						"number": 1,
 						"faces": "(6 + (ceil((<$level$> + 2) / 6) - 1) * 2)"
@@ -11931,8 +11931,8 @@
 			],
 			"entryData": {
 				"resist": [
-					"闪电",
-					"雷鸣"
+					"lightning",
+					"thunder"
 				]
 			},
 			"migrationVersion": 3
@@ -11948,8 +11948,8 @@
 			"level": 18,
 			"entryData": {
 				"immune": [
-					"闪电",
-					"雷鸣"
+					"lightning",
+					"thunder"
 				]
 			},
 			"migrationVersion": 3
@@ -12014,7 +12014,7 @@
 			"level": 10,
 			"entryData": {
 				"conditionImmune": [
-					"魅惑"
+					"charmed"
 				]
 			},
 			"migrationVersion": 3
@@ -12079,7 +12079,7 @@
 			"level": 10,
 			"entryData": {
 				"resist": [
-					"心灵"
+					"psychic"
 				]
 			},
 			"migrationVersion": 3
@@ -12146,7 +12146,7 @@
 			"level": 6,
 			"entryData": {
 				"resist": [
-					"寒冷"
+					"cold"
 				]
 			},
 			"migrationVersion": 3
@@ -12227,7 +12227,7 @@
 			],
 			"entryData": {
 				"resist": [
-					"暗蚀"
+					"necrotic"
 				]
 			},
 			"migrationVersion": 3
@@ -12243,7 +12243,7 @@
 			"level": 6,
 			"entryData": {
 				"resist": [
-					"光耀"
+					"radiant"
 				]
 			},
 			"migrationVersion": 3
@@ -12585,7 +12585,7 @@
 			"level": 10,
 			"entryData": {
 				"resist": [
-					"暗蚀"
+					"necrotic"
 				]
 			},
 			"migrationVersion": 3
@@ -12704,11 +12704,11 @@
 			"level": 15,
 			"entryData": {
 				"resist": [
-					"强酸",
-					"毒素"
+					"acid",
+					"poison"
 				],
 				"conditionImmune": [
-					"中毒"
+					"poisoned"
 				]
 			},
 			"migrationVersion": 3
@@ -16497,7 +16497,7 @@
 					}
 				],
 				"immune": [
-					"毒素"
+					"poison"
 				]
 			},
 			"ignoreSrdActivities": true,
@@ -17979,15 +17979,15 @@
 					{
 						"choose": {
 							"from": [
-								"特技",
-								"驯兽",
-								"运动",
-								"历史",
-								"洞悉",
-								"威吓",
-								"游说",
-								"察觉",
-								"求生"
+								"acrobatics",
+								"animal handling",
+								"athletics",
+								"history",
+								"insight",
+								"intimidation",
+								"persuasion",
+								"perception",
+								"survival"
 							]
 						}
 					}
@@ -18362,7 +18362,7 @@
 						"ENG_name": "Psionic Energy Die",
 						"name": "灵能骰",
 						"type": "dicePool",
-						"recharge": "长休",
+						"recharge": "restLong",
 						"count": "2 * PB",
 						"number": 1,
 						"faces": "(6 + ((ceil((<$level$> + 2) / 6) - 1) * 2))"
@@ -18708,7 +18708,7 @@
 			],
 			"entryData": {
 				"resist": [
-					"心灵"
+					"psychic"
 				]
 			},
 			"migrationVersion": 3
@@ -21949,9 +21949,9 @@
 					{
 						"choose": {
 							"from": [
-								"欺瞒",
-								"表演",
-								"游说"
+								"deception",
+								"performance",
+								"persuasion"
 							]
 						}
 					}
@@ -23362,7 +23362,7 @@
 						"ENG_name": "Psionic Energy Die",
 						"name": "灵能骰",
 						"type": "dicePool",
-						"recharge": "长休",
+						"recharge": "restLong",
 						"count": "2 * PB",
 						"number": 1,
 						"faces": "(6 + (ceil((<$level$> + 2) / 6) - 1) * 2)"
@@ -23811,7 +23811,7 @@
 					},
 					"check": {
 						"associated": [
-							"静默疗法"
+							"slt"
 						]
 					}
 				},
@@ -23825,7 +23825,7 @@
 					},
 					"check": {
 						"associated": [
-							"盗贼"
+							"thief"
 						],
 						"ability": "dex"
 					}
@@ -24330,7 +24330,7 @@
 			"level": 6,
 			"entryData": {
 				"resist": [
-					"心灵"
+					"psychic"
 				]
 			},
 			"migrationVersion": 3
@@ -26069,7 +26069,7 @@
 			],
 			"entryData": {
 				"resist": [
-					"光耀"
+					"radiant"
 				]
 			},
 			"migrationVersion": 3
@@ -26683,7 +26683,7 @@
 			],
 			"entryData": {
 				"resist": [
-					"心灵"
+					"psychic"
 				]
 			},
 			"migrationVersion": 3
