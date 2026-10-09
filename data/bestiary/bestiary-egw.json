@@ -92,7 +92,7 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"汲能兽进行三次攻击：一次使用其啃咬或心灵箭束，两次使用其爪击。"
+						"汲能兽进行三次攻击：一次使用其啃咬或念力矢，两次使用其爪击。"
 					]
 				},
 				{
@@ -111,7 +111,7 @@
 				},
 				{
 					"ENG_name": "Mind Bolt",
-					"name": "心灵箭束",
+					"name": "念力矢",
 					"entries": [
 						"{@atk rs} {@hit 8} 命中，范围120尺，单一生物。{@h}22（{@damage 4d10}）心灵伤害。"
 					]
@@ -436,7 +436,7 @@
 			"reaction": [
 				{
 					"ENG_name": "Reversal",
-					"name": "逆转",
+					"name": "逆流",
 					"entries": [
 						"当一个逆转怪能看到30尺内的生物恢复生命值时，逆转怪能将其恢复生命值降低为0，并且逆转怪对该生物造成13（{@damage 3d8}）力场伤害。"
 					]
@@ -991,7 +991,7 @@
 			"trait": [
 				{
 					"ENG_name": "Bladed Hide",
-					"name": "刃化皮肤",
+					"name": "刃皮",
 					"entries": [
 						"在其每个回合开始，野跃兽对任何正擒抱它的生物造成5（{@damage 2d4}）穿刺伤害。"
 					]
@@ -1009,12 +1009,12 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"刚鬃野跃兽进行两次攻击：一次使用其刃击，一次使用其爪击。"
+						"刚鬃野跃兽进行两次攻击：一次使用其利刃，一次使用其爪击。"
 					]
 				},
 				{
 					"ENG_name": "Blades",
-					"name": "刀刃",
+					"name": "利刃",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，触及5尺，单一目标。{@h}11 ({@damage 2d6 + 4}) 点挥砍伤害。"
 					]
@@ -1250,7 +1250,7 @@
 				},
 				{
 					"ENG_name": "Alluring Thrum {@recharge 5}",
-					"name": "迷人颤音 {@recharge 5}",
+					"name": "诱惑轻敲 {@recharge 5}",
 					"entries": [
 						"使者发出一阵可怖却具有诱惑性的蜂鸣。在使者20尺内的每个能听到它且非异怪生物都必须通过一次{@dc 14}的体质豁免，否则将被{@condition 魅惑}1分钟。生物可以在他的每个回合结束时重投豁免，成功则终止该效应。"
 					]
@@ -1531,14 +1531,14 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"蠕虫进行两次攻击：一次使用其尖刺触须，一次使用其啃咬。"
+						"蠕虫进行两次攻击：一次使用其尖刺触手，一次使用其啃咬。"
 					]
 				},
 				{
 					"ENG_name": "Barbed Tentacles",
 					"name": "尖刺触手",
 					"entries": [
-						"{@atk mw} {@hit 13} 命中，触及10尺，单一生物。{@h}25（{@damage 5d6 + 8}）穿刺伤害，且目标被{@condition 受擒}（逃脱{@dc 18}）。此擒抱结束前，目标被{@condition 束缚}。触须一次只能擒抱一个生物。"
+						"{@atk mw} {@hit 13} 命中，触及10尺，单一生物。{@h}25（{@damage 5d6 + 8}）穿刺伤害，且目标被{@condition 受擒}（逃脱{@dc 18}）。此擒抱结束前，目标被{@condition 束缚}。触手一次只能擒抱一个生物。"
 					]
 				},
 				{
@@ -1644,7 +1644,7 @@
 		},
 		{
 			"ENG_name": "Frost Giant Zombie",
-			"name": "霜巨人僵尸",
+			"name": "霜巨人丧尸",
 			"type": "undead",
 			"source": "EGW",
 			"page": 288,
@@ -1706,7 +1706,7 @@
 					"ENG_name": "Undead Fortitude",
 					"name": "不死坚韧",
 					"entries": [
-						"当伤害将僵尸的生命值降至0时，它必须进行一次DC为5+所受伤害值的体质豁免，除非该伤害是火焰、光耀或来自重击。豁免成功则僵尸的生命值降至1。"
+						"当伤害将丧尸的生命值降至0时，它必须进行一次DC为5+所受伤害值的体质豁免，除非该伤害是火焰、光耀或来自重击。豁免成功则丧尸的生命值降至1。"
 					]
 				}
 			],
@@ -1715,7 +1715,7 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"该僵尸进行两次武器攻击。"
+						"该丧尸进行两次武器攻击。"
 					]
 				},
 				{
@@ -1736,7 +1736,7 @@
 					"ENG_name": "Freezing Stare",
 					"name": "冰冷凝视",
 					"entries": [
-						"僵尸瞄准一个它在60尺内可以看到的生物。目标必须成功通过{@dc 17}的体质豁免，否则将受到35（{@damage 10d6}）寒冷伤害，并{@condition 麻痹}直到该生物的下回合结束。"
+						"丧尸瞄准一个它在60尺内可以看到的生物。目标必须成功通过{@dc 17}的体质豁免，否则将受到35（{@damage 10d6}）寒冷伤害，并{@condition 麻痹}直到该生物的下回合结束。"
 					]
 				}
 			],
@@ -2168,7 +2168,7 @@
 					"ENG_name": "Snatch",
 					"name": "抓举",
 					"entries": [
-						"{@atk mw} {@hit 9} 命中，触及5尺，一个中型或更小体型的生物。{@h}13（{@damage 2d6 + 6}）的挥砍伤害加上7（{@damage 2d6}）暗蚀伤害，且目标被{@condition 受擒}擒抱（逃脱{@dc 17}）。以此法被{@condition 受擒}擒抱时，目标被{@condition 束缚}束缚。"
+						"{@atk mw} {@hit 9} 命中，触及5尺，一个中型或更小体型的生物。{@h}13（{@damage 2d6 + 6}）的挥砍伤害加上7（{@damage 2d6}）暗蚀伤害，且目标被{@condition 受擒}（逃脱{@dc 17}）。以此法被{@condition 受擒}时，目标被{@condition 束缚}。"
 					]
 				},
 				{
@@ -2351,7 +2351,7 @@
 				},
 				{
 					"ac": 22,
-					"condition": "while in its shell"
+					"condition": "在壳中时"
 				}
 			],
 			"hp": {
@@ -2372,7 +2372,7 @@
 				"con": "+10"
 			},
 			"senses": [
-				"darkvision 60 ft"
+				"黑暗视觉 60 尺"
 			],
 			"passive": 10,
 			"immune": [
@@ -2412,7 +2412,7 @@
 				},
 				{
 					"ENG_name": "Shell Defense {@recharge 4}",
-					"name": "龟壳防御{@recharge 4}",
+					"name": "外壳防御{@recharge 4}",
 					"entries": [
 						"巨龟缩回壳内，陷入{@condition 倒地}状态，并获得+5 AC。当巨龟在其壳内时，它的速度为0且不能增加。巨龟可以用一个动作从它的壳里出来，这样它视为不再{@condition 倒地}。"
 					]
@@ -2542,7 +2542,7 @@
 					"ENG_name": "Undead Fortitude",
 					"name": "不死坚韧",
 					"entries": [
-						"当僵尸因受非光耀非重击伤害而使其生命值减至0时，它必须进行一次DC为5＋所受伤害值的体质豁免，豁免成功则生命值降至1。"
+						"当空骸丧尸因受非光耀非重击伤害而使其生命值减至0时，它必须进行一次DC为5＋所受伤害值的体质豁免，豁免成功则生命值降至1。"
 					]
 				}
 			],
@@ -2551,7 +2551,7 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"该僵尸进行两次爪击攻击。这两次攻击的每个攻击一次：若此次攻击将一个生物生命值降至0时，空壳僵尸可以立刻额外发动一次爪击攻击。"
+						"空骸丧尸进行两次爪击攻击。这两次攻击的每个攻击一次：若此次攻击将一个生物生命值降至0时，空骸丧尸可以立刻额外发动一次爪击攻击。"
 					]
 				},
 				{
@@ -2568,10 +2568,10 @@
 					"name": "空骸丧尸毒爆种",
 					"type": "variant",
 					"entries": [
-						"一些空壳僵尸因疾病与胆汁而变得臃肿，它们狂热的状态会驱使它们冲向其他活物，爆裂开来，传播那怖人的感染。一只空骸丧尸毒爆种获得以下额外动作选项：",
+						"一些空骸丧尸因疾病与胆汁而变得臃肿，它们狂热的状态会驱使它们冲向其他活物，爆裂开来，传播那怖人的感染。一只空骸丧尸毒爆种获得以下额外动作选项：",
 						{
 							"ENG_name": "Burst",
-							"name": "爆发",
+							"name": "猛毒爆裂",
 							"type": "entries",
 							"entries": [
 								"空骸丧尸爆裂开来并因此被摧毁。任何位于其5尺的生物都必须进行一次{@dc 12}的体质豁免，豁免失败者受到14（{@damage 4d6}）毒素伤害，豁免成功则伤害减半。一个被该伤害杀死的类人生物会在1分钟后复生为{@creature 空骸丧尸|EGW}。"
@@ -2798,7 +2798,7 @@
 		},
 		{
 			"ENG_name": "Merrow Shallowpriest",
-			"name": "迈罗人鱼浅海祭司",
+			"name": "梅洛浅海祭司",
 			"type": "monstrosity",
 			"source": "EGW",
 			"page": 294,
@@ -2846,7 +2846,7 @@
 					"name": "施法",
 					"type": "spellcasting",
 					"headerEntries": [
-						"迈罗人鱼是一名6级施法者。其施法属性为感知（法术豁免检定{@dc 13}，法术攻击{@hit 5}命中）。迈罗人鱼准备了以下德鲁伊法术："
+						"梅洛是一名6级施法者。其施法属性为感知（法术豁免检定{@dc 13}，法术攻击{@hit 5}命中）。梅洛准备了以下德鲁伊法术："
 					],
 					"spells": {
 						"0": {
@@ -2889,7 +2889,7 @@
 					"ENG_name": "Amphibious",
 					"name": "水陆两栖",
 					"entries": [
-						"迈罗人鱼可在水里和空气中呼吸。"
+						"梅洛可在水里和空气中呼吸。"
 					]
 				}
 			],
@@ -2898,14 +2898,14 @@
 					"ENG_name": "Harpoon",
 					"name": "鱼叉",
 					"entries": [
-						"{@atk mw,rw} {@hit 6} 命中，触及5尺或范围20/60尺，单一目标。{@h}11（{@damage 2d6 + 4}）穿刺伤害。如果目标为中型或更小体型的生物，则迈罗人鱼可将其拉近10尺。"
+						"{@atk mw,rw} {@hit 6} 命中，触及5尺或范围20/60尺，单一目标。{@h}11（{@damage 2d6 + 4}）穿刺伤害。如果目标为中型或更小体型的生物，则梅洛可将其拉近10尺。"
 					]
 				},
 				{
 					"ENG_name": "Lightning Bolt (3rd-Level Spell; Requires a Spell Slot)",
 					"name": "闪电束（3环法术；需要法术位）",
 					"entries": [
-						"迈罗人鱼射出一道100尺长、5尺宽的闪电。每一个处于该线型范围区域内的生物必须进行一次{@dc 13}的敏捷豁免，豁免失败则受到28（{@damage 8d6}）闪电伤害，豁免成功则伤害减半。"
+						"梅洛射出一道100尺长、5尺宽的闪电。每一个处于该线型范围区域内的生物必须进行一次{@dc 13}的敏捷豁免，豁免失败则受到28（{@damage 8d6}）闪电伤害，豁免成功则伤害减半。"
 					]
 				}
 			],
@@ -3172,7 +3172,7 @@
 					"ENG_name": "Shadow Stealth",
 					"name": "幽影隐匿",
 					"entries": [
-						"在微光光照或黑暗术环境中，邪蟾魔可以以一个附赠动作进行{@action 躲藏}躲藏动作。"
+						"在微光光照或黑暗环境中，邪蟾魔可以以一个附赠动作进行{@action 躲藏}动作。"
 					]
 				},
 				{
@@ -3188,12 +3188,12 @@
 					"ENG_name": "Bite",
 					"name": "啃咬",
 					"entries": [
-						"{@atk mw} {@hit 6} 命中，触及5尺，单一生物。{@h}13（{@damage 2d8 + 4}）穿刺伤害，并且该目标必须成功通过{@dc 15}的体质豁免否则陷入{@condition 中毒}1分钟。{@condition 中毒}生物可以在自己每轮结束时重复豁免鉴定，豁免成功则结束该效应对自身的影响。"
+						"{@atk mw} {@hit 6} 命中，触及5尺，单一生物。{@h}13（{@damage 2d8 + 4}）穿刺伤害，并且该目标必须成功通过{@dc 15}的体质豁免否则陷入{@condition 中毒}1分钟。{@condition 中毒}生物可以在自己每轮结束时重复豁免检定，豁免成功则结束该效应对自身的影响。"
 					]
 				},
 				{
 					"ENG_name": "Tongue Lash",
-					"name": "舌卷",
+					"name": "舌头鞭打",
 					"entries": [
 						"{@atk mw} {@hit 6} 命中，触及20尺，单一目标。{@h}10（{@damage 1d12 + 4}）钝击伤害。"
 					]
@@ -3295,7 +3295,7 @@
 		},
 		{
 			"ENG_name": "Oracs the Enduring",
-			"name": "奥法暂滞",
+			"name": "坚忍的奥拉克斯",
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "EGW",
@@ -3315,7 +3315,7 @@
 					"*": {
 						"mode": "replaceTxt",
 						"replace": "龙巫妖",
-						"with": "奥瑟",
+						"with": "奥拉克斯",
 						"flags": "i"
 					}
 				}
@@ -3334,7 +3334,7 @@
 		},
 		{
 			"ENG_name": "Parson Pellinost",
-			"name": "普莱德丝绸",
+			"name": "帕森·佩利诺斯特",
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "EGW",
@@ -3350,7 +3350,7 @@
 					"*": {
 						"mode": "replaceTxt",
 						"replace": "祭司",
-						"with": "Pellinost",
+						"with": "佩利诺斯特",
 						"flags": "i"
 					}
 				}
@@ -3361,7 +3361,7 @@
 					"name": "施法",
 					"type": "spellcasting",
 					"headerEntries": [
-						"佩里诺斯特是一名5级施法者。他的施法属性为感知（法术豁免{@dc 13}，法术攻击命中{@hit 5}）。佩里诺斯特准备了以下牧师法术："
+						"佩利诺斯特是一名5级施法者。他的施法属性为感知（法术豁免{@dc 13}，法术攻击命中{@hit 5}）。佩利诺斯特准备了以下牧师法术："
 					],
 					"spells": {
 						"0": {
@@ -3411,7 +3411,7 @@
 		},
 		{
 			"ENG_name": "Raegrin Mau",
-			"name": "瑞格林·毛",
+			"name": "瑞格林·茅",
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "EGW",
@@ -3554,7 +3554,7 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"魔契师进行两次攻击：一次是啃咬，另一次是使用其冥河之剑。"
+						"魔契师进行两次攻击：一次是啃咬，另一次是使用其幽冥之剑。"
 					]
 				},
 				{
@@ -3566,7 +3566,7 @@
 				},
 				{
 					"ENG_name": "Sword of Fathoms",
-					"name": "冥河之剑",
+					"name": "幽冥之剑",
 					"entries": [
 						"{@atk mw} {@hit 4} 命中，触及5尺，单一目标。{@h}7（{@damage 1d10 + 2}）挥砍伤害，并且如果目标是生物，它必须成功通过{@dc 13}的体质豁免否则开始窒息。该窒息生物将{@condition 失能}直到其下一回合结束，届时该效果在其身上结束。"
 					]
@@ -3582,13 +3582,13 @@
 			"variant": [
 				{
 					"ENG_name": "Rod of Retribution",
-					"name": "惩戒之杖",
+					"name": "复仇权杖",
 					"type": "variant",
 					"entries": [
-						"鲨华鱼人乌克托阿魔契师在利维坦领主眼中拥有非凡的潜力，除了乌克托阿典型的祝福\u2014\u2014幽冥之剑之外，他们还被授予{@item 惩戒之杖|egw}。一个鲨华鱼人乌克托阿魔契师握着这根权杖，会获得如下反应：",
+						"鲨华鱼人乌克托阿魔契师在利维坦领主眼中拥有非凡的潜力，除了乌克托阿典型的祝福\u2014\u2014幽冥之剑之外，他们还被授予{@item 复仇权杖|egw}。一个鲨华鱼人乌克托阿魔契师握着这根权杖，会获得如下反应：",
 						{
 							"ENG_name": "Retribution (3/Day)",
-							"name": "惩戒（3/日）",
+							"name": "复仇（3/日）",
 							"type": "entries",
 							"entries": [
 								"当魔契师可以看到的60英尺内的一个生物伤害到魔契师时，该生物必须进行{@dc 13}的敏捷豁免，豁免失败时受到11（{@damage 2d10}）闪电伤害，豁免成功则受到一半伤害。"
@@ -3649,7 +3649,7 @@
 			"_versions": [
 				{
 					"ENG_name": "Sahuagin Warlock of Uk'otoa (Rod of Retribution)",
-					"name": "鲨华鱼人乌克托阿魔契师（惩戒权杖）",
+					"name": "鲨华鱼人乌克托阿魔契师（复仇权杖）",
 					"source": "EGW",
 					"_mod": {
 						"trait": {
@@ -3658,7 +3658,7 @@
 								"ENG_name": "Special Equipment",
 								"name": "特殊装备",
 								"entries": [
-									"魔契师携带一把{@item 惩戒之杖|egw}。"
+									"魔契师携带一把{@item 复仇权杖|egw}。"
 								]
 							}
 						},
@@ -3666,7 +3666,7 @@
 							"mode": "appendArr",
 							"items": {
 								"ENG_name": "Retribution (3/Day)",
-								"name": "惩戒（3/日）",
+								"name": "复仇（3/日）",
 								"type": "entries",
 								"entries": [
 									"当魔契师可以看到的60英尺内的一个生物伤害到魔契师时，该生物必须进行{@dc 13}的敏捷豁免，豁免失败时受到11（{@damage 2d10}）闪电伤害，豁免成功则受到一半伤害。"
@@ -3779,7 +3779,7 @@
 					"ENG_name": "Amphibious",
 					"name": "水陆两栖",
 					"entries": [
-						"The sea fury can breathe air and water."
+						"海妖婆可以在空气和水中呼吸。"
 					]
 				},
 				{
@@ -3830,14 +3830,14 @@
 				},
 				{
 					"ENG_name": "Fearsome Apparition (Costs 2 Actions)",
-					"name": "恐怖幻影（消耗2个动作）",
+					"name": "惊惧幻影（消耗2个动作）",
 					"entries": [
-						"海妖婆召唤出她一位死去姐妹们的幻影，幻影出现在海妖婆30尺内它能看见的未占据空间。能够看见幻影的海妖婆的敌人必须成功通过{@dc 16}的感知豁免否则直到其在下一个海妖婆的回合{@condition 恐慌}结束消失之前陷入恐慌。"
+						"海妖婆召唤出她一位死去姐妹们的幻影，幻影出现在海妖婆30尺内它能看见的未占据空间。能够看见幻影的海妖婆的敌人必须成功通过{@dc 16}的感知豁免，否则直到幻影在海妖婆的下一回合结束消失之前陷入{@condition 恐慌}。"
 					]
 				},
 				{
 					"ENG_name": "Conjure Snakes (Costs 3 Actions)",
-					"name": "Conjure Snakes (Costs 3 Actions)",
+					"name": "召唤毒蛇（消耗3个动作）",
 					"entries": [
 						"海妖婆吐出一个{@creature 毒蛇群}，其和海妖婆占据同一空间，在自己的先攻顺序行动，并在海妖婆的指挥下攻击。海妖婆能最多同时控制三个集群。"
 					]
@@ -3959,7 +3959,7 @@
 					"ENG_name": "Shadow Stealth",
 					"name": "幽影隐匿",
 					"entries": [
-						"在微光光照或黑暗术下，影妖鬼可以以一个附赠动作进行{@action 躲藏}动作。"
+						"在微光光照或黑暗中，影妖鬼可以以一个附赠动作进行{@action 躲藏}动作。"
 					]
 				}
 			],
@@ -4050,7 +4050,7 @@
 		},
 		{
 			"ENG_name": "Sken Zabriss",
-			"name": "Sken Zabriss",
+			"name": "斯肯·扎布里斯",
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -4105,14 +4105,14 @@
 					"ENG_name": "Powerful Build",
 					"name": "强力构筑",
 					"entries": [
-						"在确定Sken的载重和她能推、拉或举起的重量时，应将其视为大一号的体型。"
+						"在确定斯肯的载重和她能推、拉或举起的重量时，应将其视为大一号的体型。"
 					]
 				},
 				{
 					"ENG_name": "Special Equipment",
 					"name": "特殊装备",
 					"entries": [
-						"斯肯·扎布里斯佩戴着一枚{@item 遮蔽戒指|EGW}。凭借它，她每天可以以自身为中心施放三次{@spell 云雾术}。云雾持续1分钟（无需{@status 专注}）。"
+						"斯肯·扎布里斯佩戴着一枚{@item 遮蔽之戒|EGW}。凭借它，她每天可以以自身为中心施放三次{@spell 云雾术}。云雾持续1分钟（无需{@status 专注}）。"
 					]
 				}
 			],
@@ -4153,7 +4153,7 @@
 		},
 		{
 			"ENG_name": "Skr'a S'orsk",
-			"name": "Skr'a S'orsk",
+			"name": "斯克拉·索斯克",
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "EGW",
@@ -4169,7 +4169,7 @@
 					"*": {
 						"mode": "replaceTxt",
 						"replace": "蜥蜴人",
-						"with": "Skr'a S'orsk"
+						"with": "斯克拉·索斯克"
 					}
 				}
 			},
@@ -4179,7 +4179,7 @@
 					"name": "施法（仅蜥蜴人形态）",
 					"type": "spellcasting",
 					"headerEntries": [
-						"斯克拉·索尔斯克（Skr'a S'orsk）是一名五级施法者。其施法属性为感知（法术豁免{@dc 12}，法术攻击命中{@hit 4}）。斯克拉·索尔斯克（Skr'a S'orsk）准备了以下德鲁伊法术："
+						"斯克拉·索斯克（Skr'a S'orsk）是一名五级施法者。其施法属性为感知（法术豁免{@dc 12}，法术攻击命中{@hit 4}）。斯克拉·索斯克（Skr'a S'orsk）准备了以下德鲁伊法术："
 					],
 					"spells": {
 						"0": {
@@ -4223,7 +4223,7 @@
 		},
 		{
 			"ENG_name": "Swarm of Undead Snakes",
-			"name": "亡灵斯芬克斯之谜集群",
+			"name": "亡灵蛇群",
 			"type": {
 				"type": "undead",
 				"swarmSize": "T"
@@ -4299,7 +4299,7 @@
 					"ENG_name": "Amphibious",
 					"name": "水陆两栖",
 					"entries": [
-						"The basilisk can breathe air and water."
+						"海蛇可以在空气和水中呼吸。"
 					]
 				},
 				{
@@ -4365,7 +4365,7 @@
 		},
 		{
 			"ENG_name": "Three Earrings",
-			"name": "Three Earrings",
+			"name": "三只耳环",
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "EGW",
@@ -4388,7 +4388,7 @@
 					"*": {
 						"mode": "replaceTxt",
 						"replace": "首领",
-						"with": "Three Earrings"
+						"with": "三只耳环"
 					}
 				}
 			},
@@ -4622,7 +4622,7 @@
 					"ENG_name": "Pincer",
 					"name": "钳击",
 					"entries": [
-						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) piercing damage plus 3 lightning damage."
+						"{@atk mw} {@hit 2} 命中，触及5尺，单一生物。{@h}2（{@damage 1d4}）穿刺伤害外加3点闪电伤害。"
 					]
 				}
 			],
