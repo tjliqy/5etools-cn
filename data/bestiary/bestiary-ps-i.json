@@ -632,12 +632,12 @@
 					"action": [
 						{
 							"mode": "replaceArr",
-							"replace": "喙啄（仅乌鸦形态或混合形态）",
+							"replace": "喙啄（仅渡鸦与半人形态）",
 							"items": {
 								"ENG_name": "Beak (Raven or Hybrid Form Only)",
-								"name": "喙啄（仅乌鸦形态或混合形态）",
+								"name": "喙啄（仅渡鸦与半人形态）",
 								"entries": [
-									"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}在乌鸦形态下造成1点穿刺伤害，或在混合形态下造成4（{@damage 1d4 + 2}）点穿刺伤害。"
+									"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}在渡鸦形态下造成1点穿刺伤害，或在半人形态下造成4（{@damage 1d4 + 2}）点穿刺伤害。"
 								]
 							}
 						}
