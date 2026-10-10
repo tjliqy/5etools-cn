@@ -573,6 +573,13 @@ export class CreatureBuilder extends BuilderBase {
 		// clean old language/sense formats
 		if (state.s.languages && !(state.s.languages instanceof Array)) state.s.languages = [state.s.languages];
 		if (state.s.senses && !(state.s.senses instanceof Array)) state.s.senses = [state.s.senses];
+		// Older editor entries used translated skill keys; keep the data schema's English keys.
+		if (state.s.skill) {
+			state.s.skill = Object.fromEntries(Object.entries(state.s.skill).map(([skill, value]) => [Parser.cnSkillToEn(skill) || skill, value]));
+		}
+		if (state.m.profSkill) {
+			state.m.profSkill = Object.fromEntries(Object.entries(state.m.profSkill).map(([skill, value]) => [Parser.cnSkillToEn(skill) || skill, value]));
+		}
 
 		this.__state = state.s;
 		this.__meta = state.m;
@@ -593,7 +600,7 @@ export class CreatureBuilder extends BuilderBase {
 			if (state.s.skill) {
 				const pb = this._getProfBonus();
 				Object.entries(state.s.skill).forEach(([prop, val]) => {
-					const abilProp = Parser.skillToAbilityAbv(prop);
+					const abilProp = Parser.enSkillToAbilityAbv(prop);
 					const abilMod = Parser.getAbilityModNumber(Renderer.monster.getSafeAbilityScore(this._state, abilProp, {defaultScore: 10}));
 
 					const expectedProf = abilMod + pb;
@@ -1918,7 +1925,7 @@ export class CreatureBuilder extends BuilderBase {
 		const [row, rowInner] = BuilderUi.getLabelledRowTuple("Skills", {isMarked: true});
 
 		const getRow = (name, prop) => {
-			const abilProp = Parser.skillToAbilityAbv(prop);
+			const abilProp = Parser.enSkillToAbilityAbv(prop);
 
 			const iptVal = veT`<input class="ve-form-control form-control--minimal ve-input-xs ve-mr-2 ve-text-center">`
 				.vee.onn("change", () => {
@@ -1986,12 +1993,12 @@ export class CreatureBuilder extends BuilderBase {
 
 			return veT`<div class="ve-flex-v-center ve-mb-2">
 			<span class="ve-mr-2 mkbru__sub-name--33">${name}</span>
-			<div class="ve-muted mkbru_mon__skill-attrib-label ve-mr-2 ve-help-subtle" title="This skill is affected by the creature's ${Parser.attAbvToFull((Parser.skillToAbilityAbv(prop)))} score">(${Parser.skillToAbilityAbv(prop).toUpperCase()})</div>
+			<div class="ve-muted mkbru_mon__skill-attrib-label ve-mr-2 ve-help-subtle" title="This skill is affected by the creature's ${Parser.attAbvToFull(abilProp)} score">(${abilProp.toUpperCase()})</div>
 			${iptVal}${btnProf}${btnExpert}
 			</div>`;
 		};
 
-		Object.keys(Parser.SKILL_TO_ATB_ABV).sort(SortUtil.ascSort).forEach(skill => getRow(skill.toTitleCase(), skill).vee.appendTo(rowInner));
+		Object.keys(Parser.SKILL_TO_CN).sort(SortUtil.ascSort).forEach(skill => getRow(Parser.enSkillToCn(skill), skill).vee.appendTo(rowInner));
 
 		return row;
 	}

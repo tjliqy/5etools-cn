@@ -126,6 +126,16 @@ export class SpellBuilder extends BuilderBase {
 		this._doResetProxies();
 
 		if (!state.s.uniqueId) state.s.uniqueId = CryptUtil.uid();
+		// Normalize values written by older localized editor controls.
+		const toEnglish = {
+			damageInflict: it => Parser.dmgTypeToEn(it),
+			conditionInflict: it => Parser.conditionToEn(it),
+			savingThrow: it => Parser._parse_bToA(Parser.ATB_FULL_TO_CN, it),
+			abilityCheck: it => Parser._parse_bToA(Parser.ATB_FULL_TO_CN, it),
+		};
+		Object.entries(toEnglish).forEach(([prop, convert]) => {
+			if (state.s[prop]) state.s[prop] = state.s[prop].map(convert);
+		});
 
 		this.__state = state.s;
 		this.__meta = state.m;
@@ -270,9 +280,9 @@ export class SpellBuilder extends BuilderBase {
 			cb,
 			this._state,
 			{
-				vals: MiscUtil.copy(Parser.DMG_TYPES),
+				vals: Parser.DMG_TYPES.map(it => Parser.dmgTypeToEn(it)),
 				nullable: true,
-				fnDisplay: StrUtil.uppercaseFirst,
+				fnDisplay: Parser.dmgTypeToCn,
 			},
 			"damageInflict",
 		).vee.appendTo(miscTab.wrpTab);
@@ -281,9 +291,9 @@ export class SpellBuilder extends BuilderBase {
 			cb,
 			this._state,
 			{
-				vals: MiscUtil.copy(Parser.CONDITIONS),
+				vals: Parser.CONDITIONS.map(it => Parser.conditionToEn(it)),
 				nullable: true,
-				fnDisplay: StrUtil.uppercaseFirst,
+				fnDisplay: it => Parser._parse_bToA(Parser.CONTITION_TO_EN, it),
 			},
 			"conditionInflict",
 		).vee.appendTo(miscTab.wrpTab);
@@ -303,9 +313,9 @@ export class SpellBuilder extends BuilderBase {
 			cb,
 			this._state,
 			{
-				vals: Object.values(Parser.ATB_ABV_TO_FULL).map(it => it.toLowerCase()),
+				vals: Object.keys(Parser.ATB_FULL_TO_CN),
 				nullable: true,
-				fnDisplay: StrUtil.uppercaseFirst,
+				fnDisplay: it => Parser.ATB_FULL_TO_CN[it],
 			},
 			"savingThrow",
 		).vee.appendTo(miscTab.wrpTab);
@@ -314,9 +324,9 @@ export class SpellBuilder extends BuilderBase {
 			cb,
 			this._state,
 			{
-				vals: Object.values(Parser.ATB_ABV_TO_FULL).map(it => it.toLowerCase()),
+				vals: Object.keys(Parser.ATB_FULL_TO_CN),
 				nullable: true,
-				fnDisplay: StrUtil.uppercaseFirst,
+				fnDisplay: it => Parser.ATB_FULL_TO_CN[it],
 			},
 			"abilityCheck",
 		).vee.appendTo(miscTab.wrpTab);
