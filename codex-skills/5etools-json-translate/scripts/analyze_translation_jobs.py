@@ -38,6 +38,13 @@ MACHINE_LEAF = re.compile(r"/(alId|colStyles(?:\[\d+\])?|summonedByClass|style|t
 # substituted verbatim by the site and must stay byte-identical.
 VARIABLE_TOKEN = re.compile(r"^<\$[^<$]+\$>$")
 
+# Renderer formulas mixing several variable placeholders with arithmetic, e.g.
+# class.preparedSpells "<$level$> + <$cha_mod$>", are evaluated verbatim by the
+# site and must stay byte-identical; single tokens are covered by VARIABLE_TOKEN.
+VARIABLE_FORMULA = re.compile(
+    r"^<\$[^<$]+\$>(?:\s*[+\-*/×÷]\s*(?:<\$[^<$]+\$>|\d+))*$"
+)
+
 # Foundry scene/map config values like "#ffffff" (foundrySceneRoot lights color) are
 # machine color codes substituted verbatim by the renderer; they must stay byte-identical
 # and are never translatable text.
@@ -220,11 +227,22 @@ def main() -> int:
     # Matching is case-insensitive: in-text references use the lowercase form ("blaze|ar1")
     # while _meta declares "Ar1".
     source_codes = set()
-    for source_meta in json.loads(source.read_text(encoding="utf-8-sig")).get("_meta", {}).get("sources", []):
+    source_meta_json = json.loads(source.read_text(encoding="utf-8-sig"))
+    for source_meta in source_meta_json.get("_meta", {}).get("sources", []):
         for field in ("json", "abbreviation"):
             value = source_meta.get(field)
             if isinstance(value, str):
                 source_codes.add(value.lower())
+    # Cross-file dependency source codes (_meta.dependencies values and
+    # _test.references) are machine routing identifiers for files that are not
+    # among this file's own _meta.sources; their bare form stays byte-identical
+    # in every pipe field exactly like a declared source code, so exempt it too.
+    for dep_values in source_meta_json.get("_meta", {}).get("dependencies", {}).values():
+        if isinstance(dep_values, list):
+            source_codes.update(str(v).lower() for v in dep_values if isinstance(v, str))
+    for ref in source_meta_json.get("_test", {}).get("references", []):
+        if isinstance(ref, str):
+            source_codes.add(ref.lower())
 
     jobs = []
     residuals = []
@@ -248,6 +266,8 @@ def main() -> int:
             if job.en_str.lower() in source_codes:
                 continue
             if VARIABLE_TOKEN.match(job.en_str):
+                continue
+            if VARIABLE_FORMULA.match(job.en_str):
                 continue
             if HEX_COLOR_TOKEN.match(job.en_str):
                 continue
@@ -276,6 +296,19 @@ def main() -> int:
             is_token_job = plain_path is None or not isinstance(plain_value, str)
             if is_token_job and is_machine_tag_field(job):
                 continue
+            if (
+                isinstance(target_value, str)
+                and any(job.en_str.lower() in sc for sc in source_codes if sc)
+            ):
+                # An English fragment may survive only as part of a source-code
+                # routing anchor (class name "Mesmer" inside "ADMesmer"), which
+                # must stay byte-identical in every pipe field it occupies.
+                stripped = target_value
+                for sc in source_codes:
+                    if sc:
+                        stripped = re.sub(re.escape(sc), "", stripped, flags=re.IGNORECASE)
+                if job.en_str.lower() not in stripped.lower():
+                    continue
             untranslated = job.en_str == target_value or (
                 job.need_translate
                 and isinstance(target_value, str)

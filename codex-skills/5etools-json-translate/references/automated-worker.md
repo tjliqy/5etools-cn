@@ -74,6 +74,8 @@ python3 <skill-dir>/scripts/homebrew_translation_queue.py complete \
 
 Completion rejects expired/replaced leases, changed sources, missing targets, commits outside the selected category, and incomplete validation. It marks the task `ready`; it does not alter the shared Chinese repository. A separate serial integration process runs `integrate-next` only when the shared repository has no non-generated uncommitted changes; generated index changes are ignored and preserved.
 
+Both worker preflight and serial integration require a fully clean repository-test baseline. Never pass `--allow-failing-baseline` in automation; that flag is reserved for explicit human diagnosis and must not be used to admit a task into `ready` or `merged`.
+
 ## Scheduler cycle
 
 A scheduler should run `sync`, then `reclaim-expired`, then start the configured number of workers. It may start workers concurrently because claims are atomic and each claim receives a separate Git worktree. Run one serial integration process for `ready` tasks. `integrate-next` refuses to operate when the shared Chinese repository has any uncommitted changes.

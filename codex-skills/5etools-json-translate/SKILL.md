@@ -40,7 +40,7 @@ Before editing, read all of:
 
 Also record `git status --short` and any pre-existing target diff in the target repository before editing (`HOMEBREW_ZH_ROOT`, defaulting to `/data/homebrew`, in homebrew mode). Those changes belong to the user; preserve them and apply the translation on top.
 
-In homebrew mode, capture the full-repository test baseline before editing as specified in the homebrew workflow reference.
+In homebrew mode, capture the full-repository test baseline before editing as specified in the homebrew workflow reference. The baseline must be fully clean; do not begin translation when any test command fails, and never use the diagnostic `--allow-failing-baseline` escape hatch in automated work.
 
 Also complete the homebrew workflow's third-party IP terminology gate before translating. When the resource involves another IP, internet research and source recording are mandatory; apply the resulting official or otherwise well-supported Chinese names during terminology lookup and translation.
 
@@ -159,7 +159,7 @@ When a failure is a missing hyperlink/entity reference caused by another English
 3. Present the concrete file list and ask whether the user wants those files translated next.
 4. Do not translate them, weaken the link, copy English into `data`, or suppress the test before the user answers.
 
-For unrelated baseline failures, report the command and concise evidence; do not broaden the edit.
+If the homebrew baseline is not clean, report the failing commands and stop before editing; do not broaden the task or accept the failures as an automated baseline.
 
 ## Handoff
 

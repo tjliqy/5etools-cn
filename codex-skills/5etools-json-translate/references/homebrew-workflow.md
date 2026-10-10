@@ -64,6 +64,8 @@ python3 <skill-dir>/scripts/run_homebrew_tests.py \
   --homebrew-dir "${HOMEBREW_ZH_ROOT:-/data/homebrew}"
 ```
 
+The baseline must be fully clean: every recorded test command must exit `0`, otherwise capture exits nonzero and translation work must not begin. `--allow-failing-baseline` exists only for explicit human diagnosis of a legacy failure; automated workers and integration must never use it.
+
 After translation, compare the selected target's schema result with the English source:
 
 ```bash
@@ -83,6 +85,6 @@ python3 <skill-dir>/scripts/run_homebrew_tests.py \
   --homebrew-dir "${HOMEBREW_ZH_ROOT:-/data/homebrew}"
 ```
 
-The comparison runs each test independently so one baseline failure cannot hide later results. Investigate every new or changed failure. Unchanged baseline failures are reportable but do not invalidate the selected target.
+The comparison runs each test independently and rejects a failing baseline before candidate tests run. Investigate every candidate failure; every command must remain green.
 
 `npm run build` rewrites `_generated/index-meta.json`, `index-props.json`, `index-sources.json`, and `index-timestamps.json`. Ignore these generated index changes: do not include them in the task output, review them, or revert them over user work.
