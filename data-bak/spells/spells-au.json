@@ -40,7 +40,8 @@
 				"dexterity"
 			],
 			"miscTags": [
-				"ADV"
+				"ADV",
+				"ALT"
 			],
 			"areaTags": [
 				"E"
@@ -170,7 +171,8 @@
 			],
 			"miscTags": [
 				"SCT",
-				"SGT"
+				"SGT",
+				"WLT"
 			],
 			"areaTags": [
 				"MT"
@@ -400,7 +402,8 @@
 			],
 			"miscTags": [
 				"SCT",
-				"TP"
+				"TP",
+				"WLT"
 			],
 			"areaTags": [
 				"S"
@@ -895,7 +898,7 @@
 					"type": "timed",
 					"duration": {
 						"type": "minute",
-						"amount": 1
+						"amount": 10
 					},
 					"concentration": true
 				}
@@ -972,6 +975,9 @@
 				"paralyzed",
 				"petrified",
 				"poisoned"
+			],
+			"miscTags": [
+				"WLT"
 			],
 			"areaTags": [
 				"ST"

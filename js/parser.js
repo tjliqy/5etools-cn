@@ -3534,6 +3534,7 @@ Parser.SRC_BQGT = "BQGT";
 Parser.SRC_CaBoMP = "CaBoMP";
 Parser.SRC_BQDD = "BQDD";
 Parser.SRC_RWG = "RWG";
+Parser.SRC_PL = "PL";
 
 Parser.SRC_PS_PREFIX = "PS";
 
@@ -3757,6 +3758,7 @@ Parser.SOURCE_JSON_TO_FULL[Parser.SRC_AATM] = `${Parser.AA_PREFIX}葬仪社`;
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_CaBoMP] = "钩针编织：百变图案集";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_BQDD] = "边陲之地任务：匕首危机！";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_RWG] = "红袍巫师的博弈";
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PL] = "拉莫迪亚计划";
 
 Parser.SOURCE_JSON_TO_ABV = {};
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHB] = "PHB'14";
@@ -3944,6 +3946,7 @@ Parser.SOURCE_JSON_TO_ABV[Parser.SRC_AATM] = "AATM";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_CaBoMP] = "CaBoMP";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_BQDD] = "BQDD";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_RWG] = "RWG";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PL] = "PL";
 
 Parser.SOURCE_JSON_TO_DATE = {};
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_PHB] = "2014-08-19";
@@ -4130,6 +4133,7 @@ Parser.SOURCE_JSON_TO_DATE[Parser.SRC_AATM] = "2023-10-17";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_CaBoMP] = "2026-03-31";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_BQDD] = "2026-05-28";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_RWG] = "2026-09-15";
+Parser.SOURCE_JSON_TO_DATE[Parser.SRC_PL] = "2026-10-13";
 
 // region Source categories
 Parser.SOURCES_ADVENTURES = new Set([
@@ -4235,6 +4239,7 @@ Parser.SOURCES_ADVENTURES = new Set([
 	Parser.SRC_AUD,
 	Parser.SRC_AWM,
 	Parser.SRC_RWG,
+	Parser.SRC_PL,
 ]);
 Parser.SOURCES_CORE_SUPPLEMENTS = new Set(Object.keys(Parser.SOURCE_JSON_TO_FULL).filter(it => !Parser.SOURCES_ADVENTURES.has(it)));
 Parser.SOURCES_NON_STANDARD_WOTC = new Set([
@@ -4285,6 +4290,7 @@ Parser.SOURCES_NON_STANDARD_WOTC = new Set([
 	Parser.SRC_HBTD,
 	Parser.SRC_BQGT,
 	Parser.SRC_RWG,
+	Parser.SRC_PL,
 ]);
 Parser.SOURCES_PARTNERED_WOTC = new Set([
 	/*
@@ -4425,6 +4431,7 @@ Parser.SOURCES_NON_FR = new Set([
 	Parser.SRC_LFL,
 	Parser.SRC_EFA,
 	Parser.SRC_FFotR,
+	Parser.SRC_PL,
 ]);
 
 // endregion
@@ -4600,6 +4607,7 @@ Parser.SOURCES_AVAILABLE_DOCS_ADVENTURE = {};
 	Parser.SRC_BQDD,
 	Parser.SRC_AUD,
 	Parser.SRC_RWG,
+	Parser.SRC_PL,
 ].forEach(src => {
 	Parser.SOURCES_AVAILABLE_DOCS_ADVENTURE[src] = src;
 	Parser.SOURCES_AVAILABLE_DOCS_ADVENTURE[src.toLowerCase()] = src;

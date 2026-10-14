@@ -1608,8 +1608,7 @@ globalThis.Renderer = class {
 	_renderAbilityGeneric (entry, textStack, meta, options) {
 		textStack[0] += `<div class="ve-rd__wrp-centered-ability">`;
 		if (entry.name) this._recursiveRender(entry.name, textStack, meta, {prefix: "<b>", suffix: "</b> = "});
-		// TODO(MIGRATION)
-		if (entry.entry ?? entry.text) this._recursiveRender(entry.entry ?? entry.text, textStack, meta);
+		if (entry.entry) this._recursiveRender(entry.entry ?? entry.text, textStack, meta);
 		textStack[0] += `${entry.attributes ? ` ${Parser.attrChooseToFull(entry.attributes)}` : ""}</div>`;
 	}
 
@@ -1791,29 +1790,25 @@ globalThis.Renderer = class {
 	};
 
 	_renderStatblockInline (entry, textStack, meta, options) {
-		// TODO(MIGRATION)
-		const statblockType = entry.statblockType ?? entry.dataType;
-		const statblockData = entry.statblockData ?? entry.data;
+		const fnGetRenderCompact = Renderer.hover.getFnRenderCompact(entry.statblockType);
 
-		const fnGetRenderCompact = Renderer.hover.getFnRenderCompact(statblockType);
-
-		const headerName = entry.displayName || statblockData?.name;
+		const headerName = entry.displayName || entry.statblockData?.name;
 		const headerStyle = entry.style;
 
-		const isFluff = statblockType?.includes("Fluff");
+		const isFluff = entry.statblockType?.includes("Fluff");
 
 		if (!fnGetRenderCompact) {
 			this._renderDataHeader(textStack, headerName, headerStyle, {isStats: !isFluff});
 			textStack[0] += `<tr>
 				<td colspan="6">
-					<i class="text-danger">无法渲染 &quot;${entry.type}&quot;：未知的数据块类型 &quot;${statblockType}&quot;！</i>
+					<i class="text-danger">无法渲染 &quot;${entry.type}&quot;：未知的数据块类型 &quot;${entry.statblockType}&quot;！</i>
 				</td>
 			</tr>`;
 			this._renderDataFooter(textStack);
 			return;
 		}
 
-		if (!statblockData) {
+		if (!entry.statblockData) {
 			this._renderDataHeader(textStack, headerName, headerStyle, {isStats: !isFluff});
 			textStack[0] += `<tr>
 				<td colspan="6">
@@ -1824,11 +1819,11 @@ globalThis.Renderer = class {
 			return;
 		}
 
-		const strategy = this._INLINE_STATBLOCK_STRATEGIES[statblockType];
+		const strategy = this._INLINE_STATBLOCK_STRATEGIES[entry.statblockType];
 
-		if (!strategy?.pFnPreProcess && !statblockData?._copy) {
+		if (!strategy?.pFnPreProcess && !entry.statblockData?._copy) {
 			this._renderDataHeader(textStack, headerName, headerStyle, {isStats: !isFluff, isCollapsed: entry.collapsed});
-			textStack[0] += fnGetRenderCompact(statblockData, {isEmbeddedEntity: true});
+			textStack[0] += fnGetRenderCompact(entry.statblockData, {isEmbeddedEntity: true});
 			this._renderDataFooter(textStack);
 			return;
 		}
@@ -1838,13 +1833,13 @@ globalThis.Renderer = class {
 		const id = CryptUtil.uid();
 		Renderer._cache.inlineStatblock[id] = {
 			pFn: async (ele) => {
-				const entLoaded = statblockData?._copy
+				const entLoaded = entry.statblockData?._copy
 					? (await DataUtil.pDoMetaMergeSingle(
-						statblockType,
-						{dependencies: {[statblockType]: entry.dependencies}},
-						statblockData,
+						entry.statblockType,
+						{dependencies: {[entry.statblockType]: entry.dependencies}},
+						entry.statblockData,
 					))
-					: statblockData;
+					: entry.statblockData;
 
 				const ent = entLoaded && strategy?.pFnPreProcess ? await strategy.pFnPreProcess(entLoaded) : entLoaded;
 
@@ -1870,20 +1865,17 @@ globalThis.Renderer = class {
 	}
 
 	_renderStatblock (entry, textStack, meta, options) {
-		const prop = entry.prop || Parser.getTagProps(entry.tag)[0];
-		const page = entry.prop || Renderer.tag.getPage(entry.tag, {isHover: true});
-		const source = Parser.getTagSource(entry.tag, entry.source);
-		const hash = entry.hash || (UrlUtil.URL_TO_HASH_BUILDER[page] ? UrlUtil.URL_TO_HASH_BUILDER[page]({...entry, source}) : null);
-		const tag = entry.tag || Parser.getPropTag(entry.prop);
-
-		const uid = prop ? DataUtil.proxy.getUid(prop, {...entry, source}, {isMaintainCase: true}) : "unknown|unknown";
-		const asTag = tag ? `{@${tag} ${uid}${entry.displayName ? `|${entry.displayName}` : ""}}` : null;
-
-		const isFluff = prop?.endsWith("Fluff");
-
-		const displayName = entry.displayName
-			|| (isFluff ? `${entry.name} (Info)` : entry.name)
-			|| entry.abbreviation;
+		const {
+			prop,
+			page,
+			source,
+			hash,
+			tag,
+			uid,
+			asTag,
+			isFluff,
+			displayName,
+		} = Renderer.utils.getStatblockEntryMeta(entry);
 
 		const fromPlugins = this._applyPlugins_useFirst(
 			"statblock_render",
@@ -2607,14 +2599,11 @@ globalThis.Renderer = class {
 		const additionalAttributes = pluginData.map(it => it.attributes).filter(Boolean);
 
 		if (this._isInternalLinksDisabled && entry.href.type === "internal") {
-			// TODO(MIGRATION)
-			textStack[0] += `<span class="ve-bold" ${isDisableEvents ? "" : this._renderLink_getHoverString(entry)} ${additionalAttributes.join(" ")}>${this.render(entry.entry ?? entry.text)}</span>`;
+			textStack[0] += `<span class="ve-bold" ${isDisableEvents ? "" : this._renderLink_getHoverString(entry)} ${additionalAttributes.join(" ")}>${this.render(entry.entry)}</span>`;
 		} else if (entry.href.hover?.isFauxPage) {
-			// TODO(MIGRATION)
-			textStack[0] += `<span class="ve-help ve-help--hover" ${isDisableEvents ? "" : this._renderLink_getHoverString(entry)} ${additionalAttributes.join(" ")}>${this.render(entry.entry ?? entry.text)}</span>`;
+			textStack[0] += `<span class="ve-help ve-help--hover" ${isDisableEvents ? "" : this._renderLink_getHoverString(entry)} ${additionalAttributes.join(" ")}>${this.render(entry.entry)}</span>`;
 		} else {
-			// TODO(MIGRATION)
-			textStack[0] += `<a href="${href.qq()}" ${entry.href.type === "internal" ? "" : `target="_blank" rel="noopener noreferrer"`} ${isDisableEvents ? "" : this._renderLink_getHoverString(entry)} ${additionalAttributes.join(" ")}>${this.render(entry.entry ?? entry.text)}</a>`;
+			textStack[0] += `<a href="${href.qq()}" ${entry.href.type === "internal" ? "" : `target="_blank" rel="noopener noreferrer"`} ${isDisableEvents ? "" : this._renderLink_getHoverString(entry)} ${additionalAttributes.join(" ")}>${this.render(entry.entry)}</a>`;
 		}
 	}
 
@@ -3578,6 +3567,35 @@ Renderer.utils = class {
 
 	/* -------------------------------------------- */
 
+	static getStatblockEntryMeta (entry) {
+		const prop = entry.prop || Parser.getTagProps(entry.tag)[0];
+		const tag = entry.tag || Parser.getPropTag(entry.prop);
+		const page = Renderer.tag.getPage(tag, {isHover: true}) || entry.prop;
+		const source = Parser.getTagSource(tag, entry.source);
+		const hash = entry.hash || UrlUtil.getHashBuilder(prop)?.({...entry, source});
+
+		const uid = prop ? DataUtil.proxy.getUid(prop, {...entry, source}, {isMaintainCase: true}) : "unknown|unknown";
+		const asTag = tag ? `{@${tag} ${uid}${entry.displayName ? `|${entry.displayName}` : ""}}` : null;
+
+		const isFluff = prop?.endsWith("Fluff");
+
+		const displayName = entry.displayName
+			|| (isFluff ? `${entry.name} (Info)` : entry.name)
+			|| entry.abbreviation;
+
+		return {
+			prop,
+			page,
+			source,
+			hash,
+			tag,
+			uid,
+			asTag,
+			isFluff,
+			displayName,
+		};
+	}
+
 	static embed = class {
 		static _isDisableFixedHeightInitial = false;
 
@@ -3723,7 +3741,6 @@ Renderer.utils = class {
 			</div>`;
 		}
 	};
-	// endregion
 
 	/* -------------------------------------------- */
 
@@ -5595,6 +5612,60 @@ Renderer.utils = class {
 			Renderer.utils.lazy.mutFinalizeEle(ele);
 		},
 	};
+
+	static preload = class {
+		static async _pMutPreloadInline (obj) {
+			if (obj.statblockData._copy) {
+				obj.statblockData = await DataUtil.pDoMetaMergeSingle(
+					obj.statblockType,
+					{dependencies: {[obj.statblockType]: obj.dependencies}},
+					obj.statblockData,
+				);
+			}
+
+			if (obj.statblockType === "item") {
+				await Renderer.item.pPopulatePropertyAndTypeReference();
+				Renderer.item.enhanceItem(obj.statblockData);
+			}
+
+			if (obj.displayName) obj.statblockData._displayName = obj.displayName;
+		}
+
+		static async _pMutPreload (data, {depth = 0} = {}) {
+			if (depth > 99) throw new Error(`Hit depth limit when attempting to preload entries! This suggests a cycle in the data.`);
+
+			const objsToProcess = [];
+
+			MiscUtil.getWalker({isNoModification: true, keyBlocklist: new Set(["statblockData"])}).walk(data, {object: obj => {
+				if (obj.type === "statblock" || (obj.type === "statblockInline" && obj.statblockData)) objsToProcess.push(obj);
+			}});
+
+			await objsToProcess.pSerialAwaitMap(async obj => {
+				if (obj.type === "statblock") {
+					const {prop, page, source, hash} = Renderer.utils.getStatblockEntryMeta(obj);
+					if (!page || !source || !hash) return;
+
+					const ent = await DataLoader.pCacheAndGet(page, source, hash);
+					if (!ent) return;
+
+					Object.assign(obj, {
+						type: "statblockInline",
+						statblockType: ent.__prop || prop,
+						statblockData: MiscUtil.copyFast(ent),
+					});
+				}
+
+				await this._pMutPreloadInline(obj);
+				await this._pMutPreload(obj.statblockData, {depth: depth + 1});
+			});
+		}
+
+		static async pGetPreloaded (data) {
+			const cpy = MiscUtil.copyFast(data);
+			await this._pMutPreload(cpy);
+			return cpy;
+		}
+	};
 };
 
 Renderer.tag = class {
@@ -6370,6 +6441,7 @@ Renderer.tag = class {
 		tagName = "classFeature";
 		defaultSource = Parser.SRC_PHB;
 		page = UrlUtil.PG_CLASSES;
+		pageHover = "classFeature";
 	};
 
 	static _TagPipedDisplayTextEight = class extends this._TagBaseAt {
@@ -6383,6 +6455,7 @@ Renderer.tag = class {
 		tagName = "subclassFeature";
 		defaultSource = Parser.SRC_PHB;
 		page = UrlUtil.PG_CLASSES;
+		pageHover = "subclassFeature";
 	};
 
 	static TagQuickref = class extends this._TagBaseAt {
@@ -15624,24 +15697,30 @@ Renderer.card = class {
 };
 
 Renderer.deck = class {
-	static getCompactRenderedString (ent) {
-		const lstCards = {
-			name: "卡牌",
-			entries: [
-				{
-					type: "list",
-					columns: 3,
-					items: ent.cards.map(card => `{@card ${card.name}|${card.set}|${card.source}}`),
-				},
-			],
+	static getDeckRenderableEntriesMeta (ent) {
+		return {
+			entryCards: {
+				name: "卡牌",
+				entries: [
+					{
+						type: "list",
+						columns: 3,
+						items: (ent.cards || []).map(card => `{@card ${card.name}|${card.set}|${card.source}}`),
+					},
+				],
+			},
 		};
+	}
+
+	static getCompactRenderedString (ent) {
+		const {entryCards} = this.getDeckRenderableEntriesMeta(ent);
 
 		return `
 			${Renderer.utils.getNameTr(ent)}
 			<tr><td colspan="6" class="ve-pb-2">
 			${Renderer.get().setFirstSection(true).render({type: "entries", entries: ent.entries}, 1)}
 			<hr class="ve-hr-3">
-			${Renderer.get().setFirstSection(true).render(lstCards, 1)}
+			${Renderer.get().setFirstSection(true).render(entryCards, 1)}
 			</td></tr>
 		`;
 	}
@@ -15810,11 +15889,19 @@ Renderer.bastion = class {
 };
 
 Renderer.skill = class {
+	static getSkillRenderableEntriesMeta (ent) {
+		return {
+			entryAbility: ent.ability ? `{@i Ability: ${Parser.attAbvToFull(ent.ability)}}` : null,
+		};
+	}
+
 	static getCompactRenderedString (ent) {
+		const {entryAbility} = this.getSkillRenderableEntriesMeta(ent);
+
 		return `
 			${Renderer.utils.getNameTr(ent)}
-			<tr><td colspan="6" class="pb-2">
-			${ent.ability ? `<p><i>技能: ${Parser.attAbvToFull(ent.ability)}</i></p>` : ""}
+			<tr><td colspan="6" class="ve-pb-2">
+			${entryAbility ? `<p>${Renderer.get().render(entryAbility)}</p>` : ""}
 			${Renderer.get().setFirstSection(true).render({type: "entries", entries: ent.entries})}
 			</td></tr>
 			${Renderer.utils.getPageTr(ent)}
@@ -15829,9 +15916,10 @@ Renderer.sense = class {
 };
 
 Renderer.itemProperty = class {
-	static getCompactRenderedString (ent) {
+	static getItemPropertyRenderableEntriesMeta (ent) {
 		const faux = {
-			name: ent.name || (ent.entries || ent.entriesTemplate)[0]?.name || "未知",
+			...ent,
+			name: ent.name || (ent.entries || ent.entriesTemplate || [])[0]?.name || "未知",
 			source: ent.source,
 		};
 
@@ -15857,7 +15945,14 @@ Renderer.itemProperty = class {
 			);
 		} else faux.entries = [];
 
-		return Renderer.generic.getCompactRenderedString(faux, {isSkipPageRow: true});
+		return {
+			entryFaux: faux,
+		};
+	}
+
+	static getCompactRenderedString (ent) {
+		const {entryFaux} = this.getItemPropertyRenderableEntriesMeta(ent);
+		return Renderer.generic.getCompactRenderedString(entryFaux, {isSkipPageRow: true});
 	}
 };
 

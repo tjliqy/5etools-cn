@@ -593,6 +593,8 @@ const PROPORDER_BACKGROUND = [
 	"languageProficiencies",
 	"toolProficiencies",
 	"weaponProficiencies",
+	"itemMasteries",
+	"itemMasteriesProgression",
 	"armorProficiencies",
 	"skillToolLanguageProficiencies",
 	"expertise",
@@ -721,6 +723,9 @@ const PROPORDER_CLASS = [
 	"optionalfeatureProgression",
 
 	new ObjectKey("startingProficiencies", {order: _PROPORDER_CLASS_PROFICIENCIES}),
+
+	"itemMasteries",
+	"itemMasteriesProgression",
 
 	new ObjectKey("startingEquipment", {
 		order: [
@@ -1228,6 +1233,8 @@ const PROPORDER_FEAT = [
 	"languageProficiencies",
 	"toolProficiencies",
 	"weaponProficiencies",
+	"itemMasteries",
+	"itemMasteriesProgression",
 	"armorProficiencies",
 	"skillToolLanguageProficiencies",
 	"savingThrowProficiencies",
@@ -1749,6 +1756,8 @@ const PROPORDER_OPTIONALFEATURE = [
 	"languageProficiencies",
 	"toolProficiencies",
 	"weaponProficiencies",
+	"itemMasteries",
+	"itemMasteriesProgression",
 	"armorProficiencies",
 	"skillToolLanguageProficiencies",
 	"expertise",
@@ -1896,6 +1905,8 @@ const PROPORDER_RACE_SUBRACE = [
 	"languageProficiencies",
 	"toolProficiencies",
 	"weaponProficiencies",
+	"itemMasteries",
+	"itemMasteriesProgression",
 	"armorProficiencies",
 	"skillToolLanguageProficiencies",
 	"expertise",
