@@ -8,6 +8,8 @@ const config = {
 	// utils-brew-impl-prerelease.js
 	"prerelease_content": ["预发布内容", "预发布内容", "prerelease content"],
 	"prerelease": ["预发布", "预发布", "prerelease"],
+	"homebrew_content": ["自制内容", "自制内容", "homebrew"],
+	"homebrew_contents": ["自制内容", "自制内容", "homebrews"],
 
 	// utils-brew-ui-manage.js
 	"load_all_partnered_content": ["加载所有合作内容", "加载所有合作内容", "Load All Partnered Content"],

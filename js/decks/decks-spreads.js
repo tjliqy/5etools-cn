@@ -80,12 +80,12 @@ export class DeckSpreads {
 		if (!card) {
 			return {
 				wrp: veT`<div class="ve-flex-v-center ve-stats ve-stats--book ve-p-2 ve-mb-2 ve-bg-solid ve-shadow-big ve-b-1p ve-bc-5p">
-					${Renderer.get().render(`{@note No card was available for position "${position.name}".}`)}
+					${Renderer.get().render(`{@note 位置“${position.name}”没有可用的卡牌。}`)}
 				</div>`,
 			};
 		}
 
-		const btnViewer = veT`<button class="ve-btn ve-btn-default ve-btn-xs" title="Open Card Viewer"><span class="glyphicon glyphicon-eye-open"></span></button>`
+		const btnViewer = veT`<button class="ve-btn ve-btn-default ve-btn-xs" title="打开卡牌查看器"><span class="glyphicon glyphicon-eye-open"></span></button>`
 			.vee.onn("click", async () => {
 				try {
 					btnViewer.vee.prop("disabled", true);
@@ -115,7 +115,7 @@ export class DeckSpreads {
 		Renderer.get().setPartPageExpandCollapseDisabled(false);
 
 		const wrpFront = veT`<div class="deck-spread__wrp-position-face ve-flex-col ve-stats ve-stats--book ve-p-2 ve-bg-solid ve-shadow-big ve-b-1p ve-bc-5p">
-			<h4 class="ve-mt-0 ve-mb-2 ve-text-center ve-dnd-font"><span class="ve-muted ve-small">Position${position.name ? ":" : ""}</span>${position.name ? ` &quot;<u>${position.name}</u>&quot;` : ""}</h4>
+			<h4 class="ve-mt-0 ve-mb-2 ve-text-center ve-dnd-font"><span class="ve-muted ve-small">位置${position.name ? "：" : ""}</span>${position.name ? ` &quot;<u>${position.name}</u>&quot;` : ""}</h4>
 			<div class="ve-flex-v-center">
 				${wrpFace}
 				<div class="ve-ml-2 decks__wrp-card-text ve-w-100">${ptText}</div>

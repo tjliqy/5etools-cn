@@ -112,7 +112,7 @@ export class EncounterBuilderComponent extends BaseComponent {
 		if (creatureGroup.getIsLocked()) return;
 
 		const creature = this._getReplacementEntityCreature({creatureGroup});
-		if (!creature) return JqueryUtil.doToast({content: "Could not find another creature worth the same amount of XP!", type: "warning"});
+		if (!creature) return JqueryUtil.doToast({content: "找不到经验值相同的其他生物！", type: "warning"});
 
 		this._doReplaceCreatureGroup({
 			creatureGroup,

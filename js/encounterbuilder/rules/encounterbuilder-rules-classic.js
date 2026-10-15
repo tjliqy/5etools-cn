@@ -20,24 +20,24 @@ class _EncounterBuilderUiHelp {
 		return {
 			type: "entries",
 			entries: [
-				`{@b Adjusted by a ${encounterSpendInfo.playerAdjustedSpendMult}× multiplier, based on a minimum challenge rating threshold of approximately ${`${encounterSpendInfo.crCutoff.toFixed(2)}`.replace(/[,.]?0+$/, "")}*&dagger;, and a party size of ${encounterSpendInfo.playerCount} players.}`,
+				`{@b 根据约 ${`${encounterSpendInfo.crCutoff.toFixed(2)}`.replace(/[,.]?0+$/, "")}*&dagger; 的最低挑战等级门槛，以及 ${encounterSpendInfo.playerCount} 名玩家的队伍人数，应用 ${encounterSpendInfo.playerAdjustedSpendMult}× 倍数进行调整。}`,
 				// `{@note * If the maximum challenge rating is two or less, there is no minimum threshold. Similarly, if less than a third of the party are level 5 or higher, there is no minimum threshold. Otherwise, for each creature in the encounter, the average CR of the encounter is calculated while excluding that creature. The highest of these averages is then halved to produce a minimum CR threshold. CRs less than this minimum are ignored for the purposes of calculating the final CR multiplier.}`,
-				`{@note * If the maximum challenge rating is two or less, there is no minimum threshold. Similarly, if less than a third of the party are level 5 or higher, there is no minimum threshold. Otherwise, for each creature in the encounter in lowest-to-highest CR order, the average CR of the encounter is calculated while excluding that creature. Then, if the removed creature's CR is more than one deviation less than  this average, the process repeats. Once the process halts, this threshold value (average minus one deviation) becomes the final CR cutoff.}`,
+				`{@note * 如果最高挑战等级不超过 2，则不设最低门槛。若队伍中达到 5 级的角色不足三分之一，也不设最低门槛。否则，按挑战等级从低到高依次排除遭遇中的生物，并计算其余生物的平均挑战等级。如果被排除生物的挑战等级比该平均值低超过一个标准差，则重复此过程。过程结束后，以平均值减去一个标准差作为最终的挑战等级门槛。}`,
 				`<hr>`,
 				{
 					type: "quote",
 					entries: [
-						`&dagger; [...] don't count any monsters whose challenge rating is significantly below the average challenge rating of the other monsters in the group [...]`,
+						`&dagger; […] 不计入挑战等级明显低于组内其他怪物平均挑战等级的怪物 […]`,
 					],
-					"by": `{@book ${Parser.sourceJsonToFull(Parser.SRC_DMG)}, page 82|DMG|3|4 Modify Total XP for Multiple Monsters}`,
+					"by": `{@book ${Parser.sourceJsonToFull(Parser.SRC_DMG)}，第 82 页|DMG|3|4 Modify Total XP for Multiple Monsters}`,
 				},
 				`<hr>`,
 				{
 					"type": "table",
-					"caption": "Encounter Multipliers",
+					"caption": "遭遇倍数",
 					"colLabels": [
-						"Number of Monsters",
-						"Multiplier",
+						"怪物数量",
+						"倍数",
 					],
 					"colStyles": [
 						"col-6 text-center",
@@ -65,7 +65,7 @@ class _EncounterBuilderUiHelp {
 							"×3",
 						],
 						[
-							"15 or more",
+							"15 或更多",
 							"×4",
 						],
 					],
@@ -75,9 +75,9 @@ class _EncounterBuilderUiHelp {
 						{
 							type: "quote",
 							entries: [
-								"If the party contains fewer than three characters, apply the next highest multiplier on the Encounter Multipliers table.",
+								"如果队伍少于三名角色，则使用遭遇倍数表中高一级的倍数。",
 							],
-							"by": `{@book ${Parser.sourceJsonToFull(Parser.SRC_DMG)}, page 83|DMG|3|Party Size}`,
+							"by": `{@book ${Parser.sourceJsonToFull(Parser.SRC_DMG)}，第 83 页|DMG|3|Party Size}`,
 						},
 					]
 					: partyMeta && partyMeta.cntPlayers >= 6
@@ -85,9 +85,9 @@ class _EncounterBuilderUiHelp {
 							{
 								type: "quote",
 								entries: [
-									"If the party contains six or more characters, use the next lowest multiplier on the table. Use a multiplier of 0.5 for a single monster.",
+									"如果队伍有六名或更多角色，则使用表中低一级的倍数。只有一只怪物时，使用 0.5 倍。",
 								],
-								"by": `{@book ${Parser.sourceJsonToFull(Parser.SRC_DMG)}, page 83|DMG|3|Party Size}`,
+								"by": `{@book ${Parser.sourceJsonToFull(Parser.SRC_DMG)}，第 83 页|DMG|3|Party Size}`,
 							},
 						]
 						: []
@@ -307,7 +307,7 @@ export class EncounterBuilderRulesClassic extends EncounterBuilderRulesBase {
 				Renderer.hover.updatePredefinedHover(infoHoverId, infoEntry);
 			}
 
-			dispXpAdjustedTotal.vee.html(`Adjusted XP <span class="ve-small ve-muted ve-ml-2" title="XP Multiplier">(×${encounterSpendInfo.playerAdjustedSpendMult})</span>: <b class="ve-ml-2">${encounterSpendInfo.adjustedSpend.toLocaleStringVe()}</b>`);
+			dispXpAdjustedTotal.vee.html(`调整后 XP <span class="ve-small ve-muted ve-ml-2" title="XP 倍数">(×${encounterSpendInfo.playerAdjustedSpendMult})</span>: <b class="ve-ml-2">${encounterSpendInfo.adjustedSpend.toLocaleStringVe()}</b>`);
 
 			dispXpAdjustedPerPlayer.vee.txt(
 				partyMeta?.cntPlayers
@@ -338,7 +338,7 @@ export class EncounterBuilderRulesClassic extends EncounterBuilderRulesBase {
 		return [
 			`${encounterXpInfo.baseSpend.toLocaleStringVe()} XP`,
 			encounterXpInfo.baseSpend !== encounterXpInfo.adjustedSpend
-				? `(<span class="ve-help" title="Adjusted Encounter XP">Enc</span>: ${encounterXpInfo.adjustedSpend.toLocaleStringVe()} XP)`
+				? `(<span class="ve-help" title="调整后遭遇 XP">遭遇</span>: ${encounterXpInfo.adjustedSpend.toLocaleStringVe()} XP)`
 				: "",
 		]
 			.filter(Boolean)

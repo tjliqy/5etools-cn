@@ -83,7 +83,7 @@ class InitiativeTrackerPlayerMessageHandlerPageV1 extends InitiativeTrackerPlaye
 
 	static initUnloadMessage () {
 		window.addEventListener("beforeunload", evt => {
-			const message = `The connection will be closed`;
+			const message = `连接将会关闭`;
 			(evt || window.event).message = message;
 			return message;
 		});
@@ -132,13 +132,13 @@ class InitTrackerPlayerViewV1 {
 			<div class="initp__initial row">
 				<div class="ve-col-12">
 					<p>
-						先攻追踪器玩家视图是一个P2P（即无服务器）系统，允许玩家连接到<a href="dmscreen.html">DM帷幕</a>的先攻追踪器。作为玩家，使用方法如下：
+						先攻追踪器玩家视图使用点对点连接，让玩家查看<a href="dmscreen.html">地下城主屏幕</a>中的先攻追踪器。玩家的操作步骤如下：
 					<ol>
-						<li>输入你的姓名到"玩家姓名"输入框。</li>
-						<li>粘贴DM提供的"服务端Token"到"服务端Token"输入框。</li>
-						<li>点击"连接"按钮。</li>
+						<li>在“玩家姓名”输入框中填写姓名。</li>
+						<li>将地下城主提供的服务端令牌粘贴到“服务端令牌”输入框。</li>
+						<li>点击“连接”。</li>
 					</ol>
-					<p>在短暂的延迟后，你应该能够连接到DM并看到先攻追踪器。 <i>请注意，此系统仍在实验阶段，你的体验可能会有所不同。</i></p>
+					<p>稍等片刻，即可连接到地下城主并查看先攻追踪器。<i>此功能仍处于实验阶段，实际体验可能有所不同。</i></p>
 				</div>
 			</div>
 
@@ -146,7 +146,7 @@ class InitTrackerPlayerViewV1 {
 
 			<div class="initp__initial row ve-w-100 ve-flex">
 				<div class="ve-col-5 ve-bold ve-mr-4">玩家姓名</div>
-				<div class="ve-col-5 ve-bold">服务端Token</div>
+				<div class="ve-col-5 ve-bold">服务端令牌</div>
 				<div class="ve-col-2 ve-text-center"></div>
 			</div>
 			<div class="initp__initial row ve-w-100 ve-flex ve-mb-4">
@@ -197,7 +197,7 @@ class InitiativeTrackerPlayerMessageHandlerPageV0 extends InitiativeTrackerPlaye
 
 		window.addEventListener("beforeunload", evt => {
 			if (this._clientData.client.isActive) {
-				const message = `The connection will be closed`;
+				const message = `连接将会关闭`;
 				(evt || window.event).message = message;
 				return message;
 			}
@@ -220,7 +220,7 @@ class InitTrackerPlayerViewV0 {
 
 		if (token) iptServerToken.vee.val(token);
 
-		const btnGenClientToken = veT`<button class="ve-btn ve-btn-xs ve-btn-primary">Generate Client Token</button>`
+		const btnGenClientToken = veT`<button class="ve-btn ve-btn-xs ve-btn-primary">生成客户端令牌</button>`
 			.vee.onn("click", () => dispWarning.remove());
 
 		const iptClientToken = veT`<input class="ve-form-control ve-code ve-copyable" readonly disabled>`.vee.disableSpellcheck();
@@ -238,21 +238,21 @@ class InitTrackerPlayerViewV0 {
 			<div class="initp__initial ve-flex">
 				<div class="ve-col-12">
 					<p>
-						先攻追踪器玩家视图是一个P2P（即无服务器）系统，允许玩家连接到DM的先攻追踪器。 作为玩家，使用方法如下：
+						先攻追踪器玩家视图使用点对点连接，让玩家查看地下城主的先攻追踪器。玩家的操作步骤如下：
 					<ol>
-						<li>粘贴DM提供的"服务器token"到"服务器Token"输入框，然后点击"生成客户端Token"按钮。</li>
-						<li>等待"客户端Token"输入框出现，复制其中的内容，然后发送给DM。</li>
+						<li>将地下城主提供的服务端令牌粘贴到“服务端令牌”输入框，然后点击“生成客户端令牌”。</li>
+						<li>等待“客户端令牌”显示，复制其中的内容并发送给地下城主。</li>
 					</ol>
-					<p>一旦DM接受了你的token，这个页面就会改变，显示DM的先攻追踪器中的战斗。</p>
+					<p>地下城主接受你的令牌后，此页面会显示先攻追踪器中的战斗。</p>
 				</div>
 			</div>
 
 			<hr class="initp__initial">
 
 			<div class="initp__initial ve-flex-h-center ve-w-100">
-				<div class="ve-col-5 ve-bold">服务端Token</div>
+				<div class="ve-col-5 ve-bold">服务端令牌</div>
 				<div class="ve-col-2 ve-text-center"></div>
-				<div class="ve-col-5 ve-bold">客户端Token</div>
+				<div class="ve-col-5 ve-bold">客户端令牌</div>
 			</div>
 			<div class="initp__initial ve-flex-h-center ve-w-100 flex ve-mb-4">
 				<div class="ve-col-5 ve-bold">${iptServerToken}</div>

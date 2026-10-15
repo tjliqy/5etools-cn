@@ -464,7 +464,7 @@ export class ItemTag extends ConverterTaggerInitializable {
 				// Disallow specific items
 				if (it.name === "Wave" && [Parser.SRC_DMG, Parser.SRC_XDMG].includes(it.source)) return false;
 				// Allow all non-specific-variant DMG items
-				if ([Parser.SRC_DMG, Parser.SRC_XDMG].includes(it.source) && !Renderer.item.isMundane(it) && it._category !== "Specific Variant") return true;
+				if ([Parser.SRC_DMG, Parser.SRC_XDMG].includes(it.source) && !["Specific Variant", "特殊变体"].includes(it._category)) return true;
 				// Allow "sufficiently complex name" items
 				if (it.name.split(" ").length > 2) return true;
 				// Allow basic weapons
@@ -473,7 +473,7 @@ export class ItemTag extends ConverterTaggerInitializable {
 			})
 			.sort((itemA, itemB) => {
 				// Prefer specific variants first, as they have longer names
-				const compType = Number(itemB._category === "Specific Variant") - Number(itemA._category === "Specific Variant");
+				const compType = Number(["Specific Variant", "特殊变体"].includes(itemB._category)) - Number(["Specific Variant", "特殊变体"].includes(itemA._category));
 				if (compType) return compType;
 				// Prefer names with more parts
 				const compTks = itemB.name.split(" ").length - itemA.name.split(" ").length;

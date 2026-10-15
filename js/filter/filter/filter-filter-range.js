@@ -344,7 +344,7 @@ export class RangeFilter extends FilterBase {
 		const isCapped = !cur.isMinVal || !cur.isMaxVal;
 
 		return {
-			summaryTitle: isRange ? `Hidden range` : isCapped ? `Hidden limit` : "",
+			summaryTitle: isRange ? `隐藏的范围` : isCapped ? `隐藏的边界` : "",
 			summary: isRange ? `${this._getDisplayText(cur.min)}-${this._getDisplayText(cur.max)}` : !cur.isMinVal ? `≥ ${this._getDisplayText(cur.min)}` : !cur.isMaxVal ? `≤ ${this._getDisplayText(cur.max)}` : "",
 		};
 	}

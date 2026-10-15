@@ -58,7 +58,7 @@ export class InitiativeTrackerSettingsImport extends BaseComponent {
 	/* -------------------------------------------- */
 
 	_pGetShowModalResults_renderFooter ({eleModalFooter, doClose}) {
-		const btnSave = veT`<button class="ve-btn ve-btn-primary ve-btn-sm ve-w-100">Save</button>`
+		const btnSave = veT`<button class="ve-btn ve-btn-primary ve-btn-sm ve-w-100">保存</button>`
 			.vee.onn("click", () => doClose(true));
 
 		veT(eleModalFooter)`<div class="ve-w-100 ve-py-3 ve-no-shrink">

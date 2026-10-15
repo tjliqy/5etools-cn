@@ -8,8 +8,8 @@ class EncountersPage extends TableListPage {
 			dataProps: ["encounter"],
 
 			bookViewOptions: {
-				nameSingular: "table",
-				namePlural: "tables",
+				nameSingular: "表格",
+				namePlural: "表格",
 				pageTitle: "遭遇书视图",
 			},
 		});

@@ -495,7 +495,7 @@ async function main () {
 	ut.patchLoadJson();
 
 	let total = 0;
-	console.log(`Generating SEO pages...`);
+	console.log(`正在生成搜索引擎页面…`);
 	await Promise.all(toGenerate.map(async meta => {
 		try {
 			fs.mkdirSync(`./${meta.page}`, { recursive: true });
@@ -540,15 +540,15 @@ async function main () {
 				break;
 			}
 
-			if (offset > 0) console.warn(`\tDeduplicated URL using suffix: ${path}`);
+			if (offset > 0) console.warn(`\t已使用后缀消除重复 URL：${path}`);
 
 			fs.writeFileSync(`./${path}`, html, "utf-8");
 
 			total++;
-			if (total % LOG_EVERY === 0) console.log(`Wrote ${total} files...`);
+			if (total % LOG_EVERY === 0) console.log(`已写入 ${total} 个文件…`);
 		});
 	}));
-	console.log(`Wrote ${total} files.`);
+	console.log(`已写入 ${total} 个文件。`);
 
 	let sitemapLinkCount = 0;
 	let sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n`;
@@ -582,7 +582,7 @@ async function main () {
 	sitemap += `</urlset>\n`;
 
 	fs.writeFileSync("./sitemap.xml", sitemap, "utf-8");
-	console.log(`Wrote ${sitemapLinkCount.toLocaleStringVe()} URL${sitemapLinkCount === 1 ? "" : "s"} to sitemap.xml`);
+	console.log(`已向 sitemap.xml 写入 ${sitemapLinkCount.toLocaleStringVe()} 个 URL`);
 
 	ut.unpatchLoadJson();
 }

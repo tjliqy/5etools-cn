@@ -67,7 +67,7 @@ const _doSaveMods = ({mods, json, file}) => {
 	while (!["y", "n", "quit"].includes(answer)) {
 		answer = rl.question(`Save file with ${mods} modification${mods === 1 ? "" : "s"}? [y/n/quit]`);
 		if (answer === "y") {
-			console.log(`Saving ${file}...`);
+			console.log(`正在保存 ${file}…`);
 			fs.writeFileSync(file, CleanUtil.getCleanJson(json), "utf-8");
 		} else if (answer === "quit") {
 			process.exit(1);
@@ -76,7 +76,7 @@ const _doSaveMods = ({mods, json, file}) => {
 };
 
 const main = ({isModificationMode = false} = {}) => {
-	console.log(`##### Checking for Missing Page Numbers #####`);
+	console.log(`##### 正在检查缺失的页码 #####`);
 
 	const FILE_MAP = {};
 	ut.listFiles({dir: `./data`, blocklistFilePrefixes: _BLOCKLIST_FILE_PREFIXES})
@@ -97,7 +97,7 @@ const main = ({isModificationMode = false} = {}) => {
 
 					if (entsNoPage.length && isModificationMode) {
 						console.log(`${file}:`);
-						console.log(`\t${entsNoPage.length} missing page number${entsNoPage.length === 1 ? "" : "s"}`);
+						console.log(`\t${entsNoPage.length} 个条目缺少页码`);
 					}
 
 					entsNoPage
@@ -126,7 +126,7 @@ const main = ({isModificationMode = false} = {}) => {
 
 					if (otherSourcesNoPageMetas.length && isModificationMode) {
 						console.log(`${file}:`);
-						console.log(`\t${otherSourcesNoPageMetas.length} otherSources entr${otherSourcesNoPageMetas.length === 1 ? "y" : "ies"} missing page numbers`);
+						console.log(`\t${otherSourcesNoPageMetas.length} 个 otherSources 条目缺少页码`);
 					}
 
 					otherSourcesNoPageMetas
@@ -153,11 +153,11 @@ const main = ({isModificationMode = false} = {}) => {
 
 	const filesWithMissingPages = Object.keys(FILE_MAP);
 	if (!filesWithMissingPages.length) {
-		console.log(`Page numbers are as expected.`);
+		console.log(`页码检查通过。`);
 		return true;
 	}
 
-	console.warn(`##### Files with Missing Page Numbers #####`);
+	console.warn(`##### 以下文件缺少页码 #####`);
 	filesWithMissingPages.forEach(f => {
 		console.warn(`${f}:`);
 		FILE_MAP[f].forEach(it => console.warn(`\t${it}`));

@@ -4,17 +4,17 @@ class RacesSublistManager extends SublistManager {
 	static _getRowTemplate () {
 		return [
 			new SublistCellTemplate({
-				name: "Name",
+				name: "名称",
 				css: "ve-bold ve-col-5 ve-pl-0 ve-pr-1",
 				colStyle: "",
 			}),
 			new SublistCellTemplate({
-				name: "Ability",
+				name: "属性",
 				css: "ve-col-5 ve-px-1",
 				colStyle: "",
 			}),
 			new SublistCellTemplate({
-				name: "Size",
+				name: "体型",
 				css: "ve-col-2 ve-text-center ve-pl-1 ve-pr-0",
 				colStyle: "text-center",
 			}),
@@ -77,9 +77,9 @@ class RacesPage extends ListPage {
 			dataProps: ["race"],
 
 			bookViewOptions: {
-				nameSingular: "species",
-				namePlural: "species",
-				pageTitle: "Species Book View",
+				nameSingular: "物种",
+				namePlural: "物种",
+				pageTitle: "种族书籍视图",
 			},
 
 			isPreviewable: true,

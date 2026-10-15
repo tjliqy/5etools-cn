@@ -12,7 +12,7 @@ window.addEventListener("load", async () => {
 		BookUtil.dispBook
 			.vee.empty()
 			.vee.html(`${Renderer.utils.getBorderTr()}
-			<tr><td colspan="6" class="initial-message initial-message--med">Select a section to begin</td></tr>
+			<tr><td colspan="6" class="initial-message initial-message--med">请选择章节以开始</td></tr>
 			${Renderer.utils.getBorderTr()}`);
 	}
 
@@ -32,7 +32,7 @@ async function onJsonLoad (data) {
 	BookUtil.baseDataUrl = "data/generated/";
 	BookUtil.bookIndex = reference;
 	BookUtil.referenceId = "bookref-quick";
-	BookUtil.typeTitle = "Quick Reference (5e/2014)";
+	BookUtil.typeTitle = "速查手册 (5e/2014)";
 	await BookUtil.pInit();
 
 	window.onhashchange = BookUtil.booksHashChange.bind(BookUtil);

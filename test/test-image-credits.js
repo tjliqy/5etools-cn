@@ -16,7 +16,7 @@ const getJoinedPaths = ({imagePathsNoCredits}) => {
 };
 
 async function main () {
-	console.log(`##### Validating adventure/book image credits #####`);
+	console.log(`##### 正在验证冒险／书籍图片署名 #####`);
 
 	const warnings = [];
 

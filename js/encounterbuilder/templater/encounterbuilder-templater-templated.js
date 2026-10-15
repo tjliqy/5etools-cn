@@ -17,10 +17,10 @@ export class EncounterbuilderTemplaterTemplated extends EncounterBuilderTemplate
 	}
 
 	getEncounterTemplateInfo () {
-		if (this._creatureGroupsLocked?.length) return new EncounterTemplateOptions({message: `Only the "Random" encounter type may be used with locked creatures! Unlock your creatures, or use the "Random" encounter type.`});
+		if (this._creatureGroupsLocked?.length) return new EncounterTemplateOptions({message: "锁定生物时只能使用随机遭遇类型！请解锁生物，或选择随机遭遇类型。"});
 
 		const resolvedEncounterShapes = this._getResolvedEncounterShapes();
-		if (!resolvedEncounterShapes.length) return new EncounterTemplateOptions({message: `Failed to generate encounter! You may need to add some players first.`});
+		if (!resolvedEncounterShapes.length) return new EncounterTemplateOptions({message: "无法生成遭遇！请先添加玩家。"});
 
 		const creatureSlotBundles = resolvedEncounterShapes
 			.flatMap(encounterShape => {

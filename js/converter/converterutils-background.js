@@ -26,7 +26,7 @@ export class EquipmentBreakdown {
 			blocklistSplits = [],
 		} = {},
 	) {
-		if (!bg.entries) return cbWarning(`No entries found on "${bg.name}"`);
+		if (!bg.entries) return cbWarning(`“${bg.name}”中没有找到条目`);
 
 		if (isSkipExisting && bg.startingEquipment) return;
 		delete bg.startingEquipment;
@@ -115,7 +115,7 @@ export class EquipmentBreakdown {
 				keyNoChoice: "b",
 			});
 
-			if (startingA.length !== 1 || startingB.length !== 1) return cbWarning(`"${bg.name}" Starting equipment requires manual conversion`);
+			if (startingA.length !== 1 || startingB.length !== 1) return cbWarning(`“${bg.name}”的起始装备需要手动转换`);
 
 			bg.startingEquipment = [
 				Object.assign(startingA[0], startingB[0]),
@@ -681,7 +681,7 @@ export class BackgroundSkillToolLanguageTag {
 					return "";
 				});
 
-			if (!Object.keys(predefined).length) return cbWarning(`(${bg.name}) Skills require manual tagging`);
+			if (!Object.keys(predefined).length) return cbWarning(`(${bg.name}) 技能需要手动标记`);
 
 			const choices = [];
 			mOneStaticOneChoice.groups.choices
@@ -830,14 +830,14 @@ export class BackgroundSkillToolLanguageTag {
 					out["anyMusicalInstrument"] = true;
 					break;
 				default:
-					cbWarning(`(${bg.name}) Tool proficiencies require manual tagging in "${entry}"`);
+					cbWarning(`(${bg.name}) “${entry}”中的工具熟练项需要手动标记`);
 			}
 			bg.toolProficiencies = [out];
 			return;
 		}
 
 		if (isSpecial) {
-			cbWarning(`(${bg.name}) Tool proficiencies require manual tagging in "${entry}"`);
+			cbWarning(`(${bg.name}) “${entry}”中的工具熟练项需要手动标记`);
 		}
 	}
 

@@ -138,7 +138,7 @@ Renderer.dice = class {
 				Renderer.dice._showBox();
 				Renderer.dice._iptRoll.vee.focus();
 			});
-		const eleHead = veT`<div class="head-roll"><span class="hdr-roll">Dice Roller</span><span class="ve-p-2 glyphicon glyphicon-remove"></span></div>`
+		const eleHead = veT`<div class="head-roll"><span class="hdr-roll">掷骰器</span><span class="ve-p-2 glyphicon glyphicon-remove"></span></div>`
 			.vee.onn("click", () => {
 				if (!Renderer.dice._panel) Renderer.dice._hideBox();
 			});
@@ -154,7 +154,7 @@ Renderer.dice = class {
 					strDice,
 					{
 						isUser: true,
-						name: "Anon",
+						name: "匿名用户",
 					},
 				);
 				iptRoll.vee.val("");
@@ -251,14 +251,14 @@ Renderer.dice = class {
 			const cpyRollData = MiscUtil.copyFast(rollData);
 			const menu = ContextUtil.getMenu([
 				new ContextUtil.Action(
-					"Choose Roll",
+					"选择掷骰",
 					null,
 					{isDisabled: true},
 				),
 				null,
 				...options.map(rollOption => {
 					return new ContextUtil.Action(
-						`Roll ${rollOption.replace(/#\$prompt_number[^$]*\$#/g, "(𝑛)")}`,
+						`掷骰 ${rollOption.replace(/#\$prompt_number[^$]*\$#/g, "(𝑛)")}`,
 						evt => {
 							shiftKey = shiftKey || evt.shiftKey;
 							ctrlKey = ctrlKey || (EventUtil.isCtrlMetaKey(evt));
@@ -314,8 +314,8 @@ Renderer.dice = class {
 				...sortedKeys
 					.map(it => {
 						const title = rollDataCpy.prompt.mode === "psi"
-							? `${it} point${it === "1" ? "" : "s"}`
-							: `${Parser.spLevelToFull(it)} level`;
+							? `${it} 点灵能点`
+							: `${Parser.spLevelToFull(it)}施法`;
 
 						return new ContextUtil.Action(
 							title,
@@ -328,7 +328,7 @@ Renderer.dice = class {
 									name = "";
 									return rollDataCpy;
 								} else {
-									name = rollDataCpy.prompt.mode === "psi" ? `${it} psi activation` : `${Parser.spLevelToFull(it)}-level cast`;
+									name = rollDataCpy.prompt.mode === "psi" ? `消耗 ${it} 点灵能点` : `以${Parser.spLevelToFull(it)}施法`;
 									rollDataCpy.toRoll += `+${fromScaling}`;
 									return rollDataCpy;
 								}
@@ -359,7 +359,7 @@ Renderer.dice = class {
 
 	static getEleUnknownTableRoll (total) { return veE({outer: Renderer.dice._pRollerClick_getMsgBug(total)}); }
 
-	static _pRollerClick_getMsgBug (total) { return `<span class="message">No result found matching roll ${total}?! <span class="ve-help-subtle" title="Bug!">🐛</span></span>`; }
+	static _pRollerClick_getMsgBug (total) { return `<span class="message">未找到与掷骰结果 ${total} 对应的内容！ <span class="ve-help-subtle" title="程序错误">🐛</span></span>`; }
 
 	static async pRollerClick (evtMock, ele, packed, name) {
 		ele = veE({ele});
@@ -461,7 +461,7 @@ Renderer.dice = class {
 		if (roll) return roll.vee.attr("data-rollbox-last-rolled-by-name");
 
 		const name = document.title.replace("- 5etools", "").trim();
-		return name === "DM Screen" ? "Dungeon Master" : name;
+		return ["DM Screen", "DM 帷幕"].includes(name) ? "地下城主" : name;
 	}
 
 	static _pRollerClick_getTdsFromTotal (ele, total) {
@@ -616,7 +616,7 @@ Renderer.dice = class {
 
 		const rollCount = Math.round(opts.rollCount || 1);
 		delete opts.rollCount;
-		if (rollCount <= 0) throw new Error(`Invalid roll count: ${rollCount} (must be a positive integer)`);
+		if (rollCount <= 0) throw new Error(`无效的投掷次数：${rollCount}（必须为正整数）`);
 
 		const wrpTree = Renderer.dice.lang.getTree3(entry.toRoll);
 		wrpTree.tree.successThresh = entry.successThresh;
@@ -627,7 +627,7 @@ Renderer.dice = class {
 
 		// arbitrarily return the result of the highest roll if we roll multiple times
 		const results = [];
-		if (rollCount > 1 && !opts.isHidden) Renderer.dice._showMessage(`Rolling twice...`, rolledBy);
+		if (rollCount > 1 && !opts.isHidden) Renderer.dice._showMessage(`掷骰两次……`, rolledBy);
 		for (let i = 0; i < rollCount; ++i) {
 			const result = await Renderer.dice._pHandleRoll2(wrpTree, rolledBy, opts);
 			if (result == null) return null;
@@ -651,7 +651,7 @@ Renderer.dice = class {
 			const userPb = await InputUiUtil.pGetUserNumber({
 				min: 0,
 				int: true,
-				title: "Enter Proficiency Bonus",
+				title: "输入熟练加值",
 				default: 2,
 				storageKey_default: "dice.playerProficiencyBonus",
 				isGlobal_default: true,
@@ -737,7 +737,7 @@ Renderer.dice = class {
 			const isColorSuccess = tree.isColorSuccessFail || !tree.chanceSuccessText;
 			const isColorFail = tree.isColorSuccessFail || !tree.chanceFailureText;
 			const totalPart = tree.successThresh != null
-				? `<span class="roll ${isThreshSuccess && isColorSuccess ? "roll-max" : !isThreshSuccess && isColorFail ? "roll-min" : ""}">${isThreshSuccess ? Renderer.get().render(tree.chanceSuccessText || "Success!") : Renderer.get().render(tree.chanceFailureText || "Failure")}</span>`
+				? `<span class="roll ${isThreshSuccess && isColorSuccess ? "roll-max" : !isThreshSuccess && isColorFail ? "roll-min" : ""}">${isThreshSuccess ? Renderer.get().render(tree.chanceSuccessText || "成功！") : Renderer.get().render(tree.chanceFailureText || "失败")}</span>`
 				: `<span class="roll ${allMax ? "roll-max" : allMin ? "roll-min" : ""}">${result}</span>`;
 
 			const ptTitle = [
@@ -758,7 +758,7 @@ Renderer.dice = class {
 			});
 
 			if (!opts.isHidden) {
-				const btnCopyToInput = veT`<button title="Copy to Input" class="ve-btn ve-btn-default ve-btn-xs ve-btn-copy-roll"><span class="glyphicon glyphicon-pencil"></span></button>`
+				const btnCopyToInput = veT`<button title="复制到输入框" class="ve-btn ve-btn-default ve-btn-xs ve-btn-copy-roll"><span class="glyphicon glyphicon-pencil"></span></button>`
 					.vee.onn("click", () => {
 						Renderer.dice._iptRoll
 							.vee.val(formula.replace(/\s+/g, ""))
@@ -785,7 +785,7 @@ Renderer.dice = class {
 			return result;
 		} else {
 			if (!opts.isHidden) {
-				eleOut.vee.appends(`<div class="out-roll-item">Invalid input! Try &quot;/help&quot;</div>`);
+				eleOut.vee.appends(`<div class="out-roll-item">输入无效！请尝试 &quot;/help&quot;</div>`);
 				Renderer.dice._scrollBottom();
 			}
 			return null;
@@ -795,9 +795,9 @@ Renderer.dice = class {
 	static _pHandleRoll2_manual (tree, rolledBy, opts) {
 		opts = opts || {};
 
-		if (!tree) return JqueryUtil.doToast({type: "danger", content: `Invalid roll input!`});
+		if (!tree) return JqueryUtil.doToast({type: "danger", content: `掷骰输入无效！`});
 
-		const title = (rolledBy.label || "").toTitleCase() || "Roll Dice";
+		const title = (rolledBy.label || "").toTitleCase() || "掷骰";
 		const dispDice = veT`<div class="ve-p-2 ve-bold ve-flex-vh-center rll__prompt-header">${tree.toString()}</div>`;
 		if (opts.isResultUsed) {
 			return InputUiUtil.pGetUserNumber({
@@ -823,7 +823,7 @@ Renderer.dice = class {
 	}
 
 	static _showInvalid () {
-		Renderer.dice._showMessage("Invalid input! Try &quot;/help&quot;", Renderer.dice.SYSTEM_USER);
+		Renderer.dice._showMessage("输入无效！请尝试 &quot;/help&quot;", Renderer.dice.SYSTEM_USER);
 	}
 
 	static _validCommands = new Set(["/c", "/cls", "/clear", "/iterroll"]);
@@ -837,50 +837,50 @@ Renderer.dice = class {
 		if (comOp === "/help" || comOp === "/h") {
 			Renderer.dice._showMessage(
 				`<ul class="rll__list">
-					<li>Keep highest; <span class="out-roll-item-code">4d6kh3</span></li>
-					<li>Drop lowest; <span class="out-roll-item-code">4d6dl1</span></li>
-					<li>Drop highest; <span class="out-roll-item-code">3d4dh1</span></li>
-					<li>Keep lowest; <span class="out-roll-item-code">3d4kl1</span></li>
+					<li>保留最高值： <span class="out-roll-item-code">4d6kh3</span></li>
+					<li>舍弃最低值： <span class="out-roll-item-code">4d6dl1</span></li>
+					<li>舍弃最高值： <span class="out-roll-item-code">3d4dh1</span></li>
+					<li>保留最低值： <span class="out-roll-item-code">3d4kl1</span></li>
 
-					<li>Reroll equal; <span class="out-roll-item-code">2d4r1</span></li>
-					<li>Reroll less; <span class="out-roll-item-code">2d4r&lt;2</span></li>
-					<li>Reroll less or equal; <span class="out-roll-item-code">2d4r&lt;=2</span></li>
-					<li>Reroll greater; <span class="out-roll-item-code">2d4r&gt;2</span></li>
-					<li>Reroll greater equal; <span class="out-roll-item-code">2d4r&gt;=3</span></li>
+					<li>重掷等于指定值的骰子： <span class="out-roll-item-code">2d4r1</span></li>
+					<li>重掷小于指定值的骰子： <span class="out-roll-item-code">2d4r&lt;2</span></li>
+					<li>重掷小于或等于指定值的骰子： <span class="out-roll-item-code">2d4r&lt;=2</span></li>
+					<li>重掷大于指定值的骰子： <span class="out-roll-item-code">2d4r&gt;2</span></li>
+					<li>重掷大于或等于指定值的骰子： <span class="out-roll-item-code">2d4r&gt;=3</span></li>
 
-					<li>Explode equal; <span class="out-roll-item-code">2d4x4</span></li>
-					<li>Explode less; <span class="out-roll-item-code">2d4x&lt;2</span></li>
-					<li>Explode less or equal; <span class="out-roll-item-code">2d4x&lt;=2</span></li>
-					<li>Explode greater; <span class="out-roll-item-code">2d4x&gt;2</span></li>
-					<li>Explode greater equal; <span class="out-roll-item-code">2d4x&gt;=3</span></li>
+					<li>等于指定值时爆骰： <span class="out-roll-item-code">2d4x4</span></li>
+					<li>小于指定值时爆骰： <span class="out-roll-item-code">2d4x&lt;2</span></li>
+					<li>小于或等于指定值时爆骰： <span class="out-roll-item-code">2d4x&lt;=2</span></li>
+					<li>大于指定值时爆骰： <span class="out-roll-item-code">2d4x&gt;2</span></li>
+					<li>大于或等于指定值时爆骰： <span class="out-roll-item-code">2d4x&gt;=3</span></li>
 
-					<li>Count Successes equal; <span class="out-roll-item-code">2d4cs=4</span></li>
-					<li>Count Successes less; <span class="out-roll-item-code">2d4cs&lt;2</span></li>
-					<li>Count Successes less or equal; <span class="out-roll-item-code">2d4cs&lt;=2</span></li>
-					<li>Count Successes greater; <span class="out-roll-item-code">2d4cs&gt;2</span></li>
-					<li>Count Successes greater equal; <span class="out-roll-item-code">2d4cs&gt;=3</span></li>
+					<li>统计等于指定值的成功次数： <span class="out-roll-item-code">2d4cs=4</span></li>
+					<li>统计小于指定值的成功次数： <span class="out-roll-item-code">2d4cs&lt;2</span></li>
+					<li>统计小于或等于指定值的成功次数： <span class="out-roll-item-code">2d4cs&lt;=2</span></li>
+					<li>统计大于指定值的成功次数： <span class="out-roll-item-code">2d4cs&gt;2</span></li>
+					<li>统计大于或等于指定值的成功次数： <span class="out-roll-item-code">2d4cs&gt;=3</span></li>
 
-					<li>Margin of Success; <span class="out-roll-item-code">2d4ms=4</span></li>
+					<li>成功差值： <span class="out-roll-item-code">2d4ms=4</span></li>
 
-					<li>Dice pools; <span class="out-roll-item-code">{2d8, 1d6}</span></li>
-					<li>Dice pools with modifiers; <span class="out-roll-item-code">{1d20+7, 10}kh1</span></li>
+					<li>骰池： <span class="out-roll-item-code">{2d8, 1d6}</span></li>
+					<li>带修正值的骰池： <span class="out-roll-item-code">{1d20+7, 10}kh1</span></li>
 
-					<li>Rounding; <span class="out-roll-item-code">floor(1.5)</span>, <span class="out-roll-item-code">ceil(1.5)</span>, <span class="out-roll-item-code">round(1.5)</span></li>
+					<li>取整： <span class="out-roll-item-code">floor(1.5)</span>, <span class="out-roll-item-code">ceil(1.5)</span>, <span class="out-roll-item-code">round(1.5)</span></li>
 
-					<li>Average; <span class="out-roll-item-code">avg(8d6)</span></li>
-					<li>Maximize dice; <span class="out-roll-item-code">dmax(8d6)</span></li>
-					<li>Minimize dice; <span class="out-roll-item-code">dmin(8d6)</span></li>
+					<li>平均值： <span class="out-roll-item-code">avg(8d6)</span></li>
+					<li>骰子取最大值： <span class="out-roll-item-code">dmax(8d6)</span></li>
+					<li>骰子取最小值： <span class="out-roll-item-code">dmin(8d6)</span></li>
 
-					<li>Other functions; <span class="out-roll-item-code">sign(1d6-3)</span>, <span class="out-roll-item-code">abs(1d6-3)</span>, ...etc.</li>
+					<li>其他函数： <span class="out-roll-item-code">sign(1d6-3)</span>, <span class="out-roll-item-code">abs(1d6-3)</span>, 等。</li>
 				</ul>
-				Up and down arrow keys cycle input history.<br>
-				Anything before a colon is treated as a label (<span class="out-roll-item-code">Fireball: 8d6</span>)<br>
-Use <span class="out-roll-item-code">/macro list</span> to list saved macros.<br>
-				Use <span class="out-roll-item-code">/macro add myName 1d2+3</span> to add (or update) a macro. Macro names should not contain spaces or hashes.<br>
-				Use <span class="out-roll-item-code">/macro remove myName</span> to remove a macro.<br>
-				Use <span class="out-roll-item-code">#myName</span> to roll a macro.<br>
-				Use <span class="out-roll-item-code">/iterroll roll count [target]</span> to roll multiple times, optionally against a target.
-				Use <span class="out-roll-item-code">/clear</span> to clear the roller.`,
+				按上下方向键浏览输入历史。<br>
+				冒号前的内容会作为标签 (<span class="out-roll-item-code">火球术: 8d6</span>)<br>
+使用 <span class="out-roll-item-code">/macro list</span> 列出已保存的宏。<br>
+				使用 <span class="out-roll-item-code">/macro add myName 1d2+3</span> 添加或更新宏。宏名称不能包含空格或井号。<br>
+				使用 <span class="out-roll-item-code">/macro remove myName</span> 删除宏。<br>
+				使用 <span class="out-roll-item-code">#myName</span> 掷宏。<br>
+				使用 <span class="out-roll-item-code">/iterroll roll count [target]</span> 进行多次掷骰，也可以指定目标值。
+				使用 <span class="out-roll-item-code">/clear</span> 清空掷骰器。`,
 				Renderer.dice.SYSTEM_USER,
 			);
 			return;
@@ -908,7 +908,7 @@ Use <span class="out-roll-item-code">/macro list</span> to list saved macros.<br
 							else {
 								Renderer.dice.storage[name] = macro;
 								await Renderer.dice._pSaveMacros();
-								Renderer.dice._showMessage(`Saved macro <span class="out-roll-item-code">#${name}</span>`, Renderer.dice.SYSTEM_USER);
+								Renderer.dice._showMessage(`已保存宏 <span class="out-roll-item-code">#${name}</span>`, Renderer.dice.SYSTEM_USER);
 							}
 						} else {
 							Renderer.dice._showInvalid();
@@ -920,9 +920,9 @@ Use <span class="out-roll-item-code">/macro list</span> to list saved macros.<br
 							if (Renderer.dice.storage[others[0]]) {
 								delete Renderer.dice.storage[others[0]];
 								await Renderer.dice._pSaveMacros();
-								Renderer.dice._showMessage(`Removed macro <span class="out-roll-item-code">#${others[0]}</span>`, Renderer.dice.SYSTEM_USER);
+								Renderer.dice._showMessage(`已删除宏 <span class="out-roll-item-code">#${others[0]}</span>`, Renderer.dice.SYSTEM_USER);
 							} else {
-								Renderer.dice._showMessage(`Macro <span class="out-roll-item-code">#${others[0]}</span> not found`, Renderer.dice.SYSTEM_USER);
+								Renderer.dice._showMessage(`宏 <span class="out-roll-item-code">#${others[0]}</span> 未找到`, Renderer.dice.SYSTEM_USER);
 							}
 						} else {
 							Renderer.dice._showInvalid();
@@ -957,7 +957,7 @@ Use <span class="out-roll-item-code">/macro list</span> to list saved macros.<br
 						await Renderer.dice.pRoll2(
 							exp,
 							{
-								name: "Anon",
+								name: "匿名用户",
 							},
 							{
 								target,
@@ -988,7 +988,7 @@ Use <span class="out-roll-item-code">/macro list</span> to list saved macros.<br
 			rolledBy.label = id;
 			const wrpTree = Renderer.dice.lang.getTree3(macro);
 			return Renderer.dice._pHandleRoll2(wrpTree, rolledBy, opts);
-		} else Renderer.dice._showMessage(`Macro <span class="out-roll-item-code">#${id}</span> not found`, Renderer.dice.SYSTEM_USER);
+		} else Renderer.dice._showMessage(`宏 <span class="out-roll-item-code">#${id}</span> 未找到`, Renderer.dice.SYSTEM_USER);
 	}
 
 	static addRoll ({rolledBy, html, ele}) {
@@ -1148,7 +1148,7 @@ Renderer.dice.lang = class {
 					break;
 				case ")":
 					self.parenCount--;
-					if (self.parenCount < 0) throw new Error(`Syntax error: closing <code>)</code> without opening <code>(</code>`);
+					if (self.parenCount < 0) throw new Error(`语法错误：<code>)</code> 没有对应的左括号 <code>(</code>`);
 					this._lex3_outputToken(self);
 					self.token = ")";
 					this._lex3_outputToken(self);
@@ -1161,7 +1161,7 @@ Renderer.dice.lang = class {
 					break;
 				case "}":
 					self.braceCount--;
-					if (self.parenCount < 0) throw new Error(`Syntax error: closing <code>}</code> without opening <code>(</code>`);
+					if (self.braceCount < 0) throw new Error(`语法错误：<code>}</code> 没有对应的左括号 <code>{</code>`);
 					this._lex3_outputToken(self);
 					self.token = "}";
 					this._lex3_outputToken(self);
@@ -1181,7 +1181,7 @@ Renderer.dice.lang = class {
 						if (self.mode === "text") this._lex3_outputToken(self);
 						self.token += c;
 						self.mode = "symbol";
-					} else throw new Error(`Syntax error: unexpected character <code>${c}</code>`);
+					} else throw new Error(`语法错误：意外的字符 <code>${c}</code>`);
 					break;
 				}
 			}
@@ -1252,9 +1252,9 @@ Renderer.dice.lang = class {
 			case "ms<=": self.tokenStack.push(Renderer.dice.tk.MARGIN_SUCCESS_LTEQ); break;
 			default: {
 				if (Renderer.dice.lang._M_NUMBER.test(self.token)) {
-					if (self.token.split(Parser._decimalSeparator).length > 2) throw new Error(`Syntax error: too many decimal separators <code>${self.token}</code>`);
+					if (self.token.split(Parser._decimalSeparator).length > 2) throw new Error(`语法错误：小数分隔符过多 <code>${self.token}</code>`);
 					self.tokenStack.push(Renderer.dice.tk.NUMBER(self.token));
-				} else throw new Error(`Syntax error: unexpected token <code>${self.token}</code>`);
+				} else throw new Error(`语法错误：意外的标记 <code>${self.token}</code>`);
 			}
 		}
 
@@ -1304,8 +1304,8 @@ Renderer.dice.lang = class {
 	static _parse3_expect (self, symbol) {
 		const accepted = this._parse3_accept(self, symbol);
 		if (accepted) return accepted;
-		if (self.sym) throw new Error(`Unexpected input: Expected <code>${symbol}</code> but found <code>${self.sym}</code>`);
-		else throw new Error(`Unexpected end of input: Expected <code>${symbol}</code>`);
+		if (self.sym) throw new Error(`输入错误：预期为 <code>${symbol}</code>，却遇到 <code>${self.sym}</code>`);
+		else throw new Error(`输入意外结束：预期为 <code>${symbol}</code>`);
 	}
 
 	static _parse3_factor (self, {isSilent = false} = {}) {
@@ -1413,8 +1413,8 @@ Renderer.dice.lang = class {
 		} else {
 			if (isSilent) return null;
 
-			if (self.sym) throw new Error(`Unexpected input: <code>${self.sym}</code>`);
-			else throw new Error(`Unexpected end of input`);
+			if (self.sym) throw new Error(`输入错误：意外的 <code>${self.sym}</code>`);
+			else throw new Error(`输入意外结束`);
 		}
 	}
 
@@ -1761,7 +1761,7 @@ Renderer.dice.parsed = class {
 						displayVals.push(...nuVals);
 					} while (tries-- > 0 && vals.length !== lastLen);
 
-					if (!~tries) JqueryUtil.doToast({type: "warning", content: `Stopped exploding after 999 additional rolls.`});
+					if (!~tries) JqueryUtil.doToast({type: "warning", content: `额外掷骰达到 999 次后已停止爆骰。`});
 
 					break;
 				}
@@ -2081,7 +2081,7 @@ Renderer.dice.parsed = class {
 			let tmp = numSym[fnName](Renderer.dice.util.getReducedMeta(meta));
 
 			while (view.length) {
-				if (Math.round(tmp) !== tmp) throw new Error(`Number of dice to roll (${tmp}) was not an integer!`);
+				if (Math.round(tmp) !== tmp) throw new Error(`骰子数量（${tmp}）必须为整数！`);
 
 				// Use the next symbol as our number of faces
 				//   e.g. the "3" in `2d3d5`
@@ -2090,7 +2090,7 @@ Renderer.dice.parsed = class {
 				//   e.g. the "20" in `(2d3kh1r1)d20` (parentheses for emphasis)
 				const facesSym = view.shift();
 				const faces = facesSym[fnName]();
-				if (Math.round(faces) !== faces) throw new Error(`Dice face count (${faces}) was not an integer!`);
+				if (Math.round(faces) !== faces) throw new Error(`骰子面数（${faces}）必须为整数！`);
 
 				const isLast = view.length === 0 || (view.length === 1 && view.last().isDiceModifierGroup);
 				tmp = this._invoke_handlePart(fnName, meta, view, tmp, faces, isLast);

@@ -623,10 +623,10 @@ globalThis.Renderer = class {
 			if (entry.title && !isDynamicViewer) textStack[0] += `<div class="ve-rd__image-title-inner">${this.render(entry.title)}</div>`;
 
 			if (isDynamicViewer) {
-				textStack[0] += `<button class="ve-btn ve-btn-xs ve-btn-default ve-rd__image-btn-viewer" onclick="RenderMap.pShowViewer(event, this)" data-rd-packed-map="${this._renderImage_getMapRegionData(entry)}" ${ptAdventureBookMeta} title="Open Dynamic Viewer (SHIFT to Open in New Window)"><span class="glyphicon glyphicon-picture"></span> ${Renderer.stripTags(entry.title) || "Dynamic Viewer"}</button>`;
+				textStack[0] += `<button class="ve-btn ve-btn-xs ve-btn-default ve-rd__image-btn-viewer" onclick="RenderMap.pShowViewer(event, this)" data-rd-packed-map="${this._renderImage_getMapRegionData(entry)}" ${ptAdventureBookMeta} title="打开交互地图查看器（按住 Shift 可在新窗口打开）"><span class="glyphicon glyphicon-picture"></span> ${Renderer.stripTags(entry.title) || "交互地图查看器"}</button>`;
 			}
 
-			if (entry.credit) textStack[0] += `<div class="ve-rd__image-credit ve-muted"><span class="glyphicon glyphicon-pencil" title="Art Credit"></span> ${this.render(entry.credit)}</div>`;
+			if (entry.credit) textStack[0] += `<div class="ve-rd__image-credit ve-muted"><span class="glyphicon glyphicon-pencil" title="插画署名"></span> ${this.render(entry.credit)}</div>`;
 
 			textStack[0] += `</div>`;
 		}
@@ -996,7 +996,7 @@ globalThis.Renderer = class {
 		const isDisplaySource = !!entry.source;
 		const isDisplayPage = Renderer.utils.isDisplayPage(entry.page);
 		if (!isDisplaySource && !isDisplayPage) return "";
-		return ` <span class="ve-rd__title-link ${isInset ? `ve-rd__title-link--inset` : ""}">${isDisplaySource ? `<span class="ve-help-subtle" title="${Parser.sourceJsonToFull(entry.source)}">${Parser.sourceJsonToAbv(entry.source)}</span> ` : ""}${isDisplayPage ? `<span title="Page ${entry.page}">p${entry.page}</span>` : ""}</span>`;
+		return ` <span class="ve-rd__title-link ${isInset ? `ve-rd__title-link--inset` : ""}">${isDisplaySource ? `<span class="ve-help-subtle" title="${Parser.sourceJsonToFull(entry.source)}">${Parser.sourceJsonToAbv(entry.source)}</span> ` : ""}${isDisplayPage ? `<span title="第 ${entry.page} 页">第 ${entry.page} 页</span>` : ""}</span>`;
 	}
 
 	_renderEntriesSubtypes (entry, textStack, meta, options, incDepth) {
@@ -1149,7 +1149,7 @@ globalThis.Renderer = class {
 
 		const ptText = `${pluginDataNamePrefix.join("")}${this.render({type: "inline", entries: [displayName]})}${isAddPeriod ? "." : ""}`;
 
-		return `<${headerTag} class="ve-rd__h ${headerClass}" ${this._getRenderedTitleIndexAttribute()} ${this._getEnumeratedTitleRel(entry.name)}> <span class="entry-title-inner ${!pagePart && entry.source ? `ve-help-subtle` : ""}"${!pagePart && entry.source ? ` title="Source: ${Parser.sourceJsonToFull(entry.source)}${entry.page ? `, p${entry.page}` : ""}"` : ""}>${ptText}</span>${partPageExpandCollapse}</${headerTag}> `;
+		return `<${headerTag} class="ve-rd__h ${headerClass}" ${this._getRenderedTitleIndexAttribute()} ${this._getEnumeratedTitleRel(entry.name)}> <span class="entry-title-inner ${!pagePart && entry.source ? `ve-help-subtle` : ""}"${!pagePart && entry.source ? ` title="来源：${Parser.sourceJsonToFull(entry.source)}${entry.page ? `，第 ${entry.page} 页` : ""}"` : ""}>${ptText}</span>${partPageExpandCollapse}</${headerTag}> `;
 	}
 
 	_renderEntriesSubtypes_renderPreReqText (entry, textStack, meta) {
@@ -1466,7 +1466,7 @@ globalThis.Renderer = class {
 			this._renderSpellcasting_getEntries_procPerDuration({entry, tempList, hidden, prop: "monthly", durationText: "/月"});
 			this._renderSpellcasting_getEntries_procPerDuration({entry, tempList, hidden, prop: "yearly", durationText: "/年"});
 
-			if (entry.ritual && !hidden.has("ritual")) tempList.items.push({type: "itemSpell", name: `Rituals:`, entry: this._renderSpellcasting_getRenderableList(entry.ritual).join(", ")});
+			if (entry.ritual && !hidden.has("ritual")) tempList.items.push({type: "itemSpell", name: `仪式：`, entry: this._renderSpellcasting_getRenderableList(entry.ritual).join(", ")});
 			tempList.items = tempList.items.filter(it => it.entry !== "");
 			if (tempList.items.length) toRender[0].entries.push(tempList);
 		}
@@ -1634,7 +1634,7 @@ globalThis.Renderer = class {
 	}
 
 	_renderBonusSpeed (entry, textStack, meta, options) {
-		textStack[0] += entry.value === 0 ? "\u2014" : `${entry.value < 0 ? "" : "+"}${entry.value} ft.`;
+		textStack[0] += entry.value === 0 ? "\u2014" : `${entry.value < 0 ? "" : "+"}${entry.value} 尺`;
 	}
 
 	_renderDice (entry, textStack, meta, options) {
@@ -1806,7 +1806,7 @@ globalThis.Renderer = class {
 			this._renderDataHeader(textStack, headerName, headerStyle, {isStats: !isFluff});
 			textStack[0] += `<tr>
 				<td colspan="6">
-					<i class="text-danger">Cannot render &quot;${entry.type}&quot;&mdash;unknown statblock type &quot;${statblockType}&quot;!</i>
+					<i class="text-danger">无法渲染 &quot;${entry.type}&quot;：未知的数据块类型 &quot;${statblockType}&quot;！</i>
 				</td>
 			</tr>`;
 			this._renderDataFooter(textStack);
@@ -1817,7 +1817,7 @@ globalThis.Renderer = class {
 			this._renderDataHeader(textStack, headerName, headerStyle, {isStats: !isFluff});
 			textStack[0] += `<tr>
 				<td colspan="6">
-					<i class="text-danger">Entry &quot;<i><code>${JSON.stringify(entry).qq()}</code></i> did not contain required &quot;statblockData&quot; key!</i>
+					<i class="text-danger">条目 &quot;<i><code>${JSON.stringify(entry).qq()}</code></i> 缺少必需的 &quot;statblockData&quot; 键！</i>
 				</td>
 			</tr>`;
 			this._renderDataFooter(textStack);
@@ -1896,7 +1896,7 @@ globalThis.Renderer = class {
 			this._renderDataHeader(textStack, displayName, entry.style, {isStats: !isFluff});
 			textStack[0] += `<tr>
 				<td colspan="6">
-					<i class="text-danger">Cannot load ${asTag ? `&quot;${asTag}&quot;` : displayName}! An unknown tag/prop, source, or hash was provided.</i>
+					<i class="text-danger">无法加载 ${asTag ? `&quot;${asTag}&quot;` : displayName}！指定的标签／属性、来源或哈希未知。</i>
 				</td>
 			</tr>`;
 			this._renderDataFooter(textStack);
@@ -1938,7 +1938,7 @@ globalThis.Renderer = class {
 			.join(" ");
 		textStack[0] += `<tr>
 			<td colspan="6" ${ptRdAttribs}>
-				<i>Loading &quot;${asTag ? `${Renderer.get().render(asTag)}` : `${displayName}`}&quot;...</i>
+				<i>正在加载“${asTag ? `${Renderer.get().render(asTag)}` : `${displayName}`}”……</i>
 				<style onload="Renderer.events.handleLoad_inlineStatblock(this)"></style>
 			</td>
 		</tr>`;
@@ -2005,14 +2005,14 @@ globalThis.Renderer = class {
 		textStack[0] += `<div class="ve-rd-homebrew__b"><div class="ve-rd-homebrew__wrp-notice"><span class="ve-rd-homebrew__disp-notice"></span>`;
 
 		if (entry.oldEntries) {
-			const hoverMeta = Renderer.hover.getInlineHover({type: "entries", name: "Homebrew", entries: entry.oldEntries});
+			const hoverMeta = Renderer.hover.getInlineHover({type: "entries", name: "自制内容", entries: entry.oldEntries});
 			let markerText;
 			if (entry.movedTo) {
-				markerText = "(See moved content)";
+				markerText = "（查看已移动的内容）";
 			} else if (entry.entries) {
-				markerText = "(See replaced content)";
+				markerText = "（查看被替换的内容）";
 			} else {
-				markerText = "(See removed content)";
+				markerText = "（查看已移除的内容）";
 			}
 			textStack[0] += `<span class="ve-rd-homebrew__disp-old-content" href="#${window.location.hash}" ${hoverMeta.html}>${markerText}</span>`;
 		}
@@ -2023,9 +2023,9 @@ globalThis.Renderer = class {
 			const len = entry.entries.length;
 			for (let i = 0; i < len; ++i) this._recursiveRender(entry.entries[i], textStack, meta, {prefix: "<p>", suffix: "</p>"});
 		} else if (entry.movedTo) {
-			textStack[0] += `<i>This content has been moved to ${entry.movedTo}.</i>`;
+			textStack[0] += `<i>此内容已移至 ${entry.movedTo}。</i>`;
 		} else {
-			textStack[0] += "<i>This content has been deleted.</i>";
+			textStack[0] += "<i>此内容已删除。</i>";
 		}
 
 		textStack[0] += `</div>`;
@@ -2036,8 +2036,8 @@ globalThis.Renderer = class {
 		textStack[0] += `
 			<div class="ve-flex-col h-100">
 				<div class="ve-flex no-shrink pt-1">
-					<button class="ve-btn ve-btn-default ve-btn-xs mb-1 mr-2" onclick="Renderer.events.handleClick_copyCode(event, this)">Copy Code</button>
-					<button class="ve-btn ve-btn-default ve-btn-xs mb-1 ${isWrapped ? "active" : ""}" onclick="Renderer.events.handleClick_toggleCodeWrap(event, this)">Word Wrap</button>
+					<button class="ve-btn ve-btn-default ve-btn-xs mb-1 mr-2" onclick="Renderer.events.handleClick_copyCode(event, this)">复制代码</button>
+					<button class="ve-btn ve-btn-default ve-btn-xs mb-1 ${isWrapped ? "active" : ""}" onclick="Renderer.events.handleClick_toggleCodeWrap(event, this)">自动换行</button>
 				</div>
 				<pre class="ve-h-100 ve-w-100 ve-mb-1 ${isWrapped ? "ve-rd__pre-wrap" : ""}">${entry.preformatted}</pre>
 			</div>
@@ -2430,7 +2430,7 @@ globalThis.Renderer = class {
 				const [displayText, footnoteText, optTitle] = Renderer.splitTagByPipe(text);
 				const hoverMeta = Renderer.hover.getInlineHover({
 					type: "entries",
-					name: optTitle ? optTitle.toTitleCase() : "Footnote",
+					name: optTitle ? optTitle.toTitleCase() : "脚注",
 					entries: [footnoteText, optTitle ? `{@note ${optTitle}}` : ""].filter(Boolean),
 				});
 				textStack[0] += `<span class="ve-help" ${hoverMeta.html}>`;
@@ -2443,18 +2443,18 @@ globalThis.Renderer = class {
 				const [newText, oldText] = Renderer.splitTagByPipe(text);
 				const tooltipEntries = [];
 				if (newText && oldText) {
-					tooltipEntries.push("{@b This is a homebrew addition, replacing the following:}");
+					tooltipEntries.push("{@b 这段自制内容替换了以下原文：}");
 				} else if (newText) {
-					tooltipEntries.push("{@b This is a homebrew addition.}");
+					tooltipEntries.push("{@b 这是一段新增的自制内容。}");
 				} else if (oldText) {
-					tooltipEntries.push("{@b The following text has been removed with this homebrew:}");
+					tooltipEntries.push("{@b 这段自制内容移除了以下原文：}");
 				}
 				if (oldText) {
 					tooltipEntries.push(oldText);
 				}
 				const hoverMeta = Renderer.hover.getInlineHover({
 					type: "entries",
-					name: "Homebrew Modifications",
+					name: "自制内容修改",
 					entries: tooltipEntries,
 				});
 				textStack[0] += `<span class="ve-rd-homebrew__disp-inline" ${hoverMeta.html}>`;
@@ -2493,12 +2493,12 @@ globalThis.Renderer = class {
 				const brewUtil = globalThis[brewUtilName];
 
 				if (!brewUtil) {
-					textStack[0] += `<span class="text-danger" title="Unknown loader mode &quot;${mode.qq()}&quot;!">${name}<span class="glyphicon glyphicon-alert ve-rd__loadbrew-icon ve-rd__loadbrew-icon"></span></span>`;
+					textStack[0] += `<span class="text-danger" title="未知加载模式 &quot;${mode.qq()}&quot;！">${name}<span class="glyphicon glyphicon-alert ve-rd__loadbrew-icon ve-rd__loadbrew-icon"></span></span>`;
 
 					break;
 				}
 
-				textStack[0] += `<span onclick="${brewUtilName}.pAddBrewFromLoaderTag(this)" data-rd-loader-path="${path.escapeQuotes()}" data-rd-loader-name="${name.escapeQuotes()}" class="ve-rd__wrp-loadbrew--ready" title="Click to install ${brewUtil.DISPLAY_NAME}">${name}<span class="glyphicon glyphicon-download-alt ve-rd__loadbrew-icon ve-rd__loadbrew-icon"></span></span>`;
+				textStack[0] += `<span onclick="${brewUtilName}.pAddBrewFromLoaderTag(this)" data-rd-loader-path="${path.escapeQuotes()}" data-rd-loader-name="${name.escapeQuotes()}" class="ve-rd__wrp-loadbrew--ready" title="点击安装${brewUtil.DISPLAY_NAME}">${name}<span class="glyphicon glyphicon-download-alt ve-rd__loadbrew-icon ve-rd__loadbrew-icon"></span></span>`;
 				break;
 			}
 
@@ -2823,7 +2823,7 @@ Renderer.applyAllProperties._WALKER = null;
 Renderer.attackTagToFull = function (tagStr, {isRoll = false} = {}) {
 	function renderTag (tags) {
 		const ptType = tags.includes("m") ? "近战" : tags.includes("r") ? "远程" : tags.includes("g") ? "魔法" : tags.includes("a") ? "范围" : "";
-		const ptMethod = tags.includes("w") ? "武器" : tags.includes("s") ? "法术" : tags.includes("p") ? "Power " : "";
+		const ptMethod = tags.includes("w") ? "武器" : tags.includes("s") ? "法术" : tags.includes("p") ? "异能" : "";
 		return `${ptType}${ptMethod}`;
 	}
 
@@ -3067,7 +3067,7 @@ Renderer.parseScaleDice = function (tag, text) {
 		toRoll: baseRoll,
 		displayText: displayText || addPerProgress,
 		prompt: {
-			entry: renderMode === "psi" ? "Spend Psi Points..." : "Cast at...",
+			entry: renderMode === "psi" ? "消耗灵能点……" : "以……环施法",
 			mode: renderMode,
 			options,
 		},
@@ -3446,7 +3446,7 @@ Renderer.utils = class {
 
 						${ent.source ? Parser.sourceJsonToMarkerHtml(ent.source, {isStatsName: true}) : ""}
 
-						${Renderer.utils.isDisplayPage(ent.page) ? ` ${tagPartSourceStart} class="ve-rd__stats-name-page ve-ml-1 ve-lst-is-exporting-image__no-wrap" title="Page ${ent.page}">p${ent.page}${tagPartSourceEnd}` : ""}
+						${Renderer.utils.isDisplayPage(ent.page) ? ` ${tagPartSourceStart} class="ve-rd__stats-name-page ve-ml-1 ve-lst-is-exporting-image__no-wrap" title="第 ${ent.page} 页">第 ${ent.page} 页${tagPartSourceEnd}` : ""}
 
 						${ptBrewSourceLink}
 					</div>
@@ -3458,7 +3458,7 @@ Renderer.utils = class {
 	static _getNameTr_getPtPrereleaseBrewSourceLink ({ent, brewUtil}) {
 		if (!brewUtil.hasSourceJson(ent.source) || !brewUtil.sourceJsonToSource(ent.source)?.url) return "";
 
-		return `<a href="${brewUtil.sourceJsonToSource(ent.source).url}" title="View ${brewUtil.DISPLAY_NAME.toTitleCase()} Source" class="ve-self-flex-center ve-ml-2 ve-muted ve-rd__stats-name-brew-link" target="_blank" rel="noopener noreferrer"><span class="	glyphicon glyphicon-share"></span></a>`;
+		return `<a href="${brewUtil.sourceJsonToSource(ent.source).url}" title="查看${brewUtil.DISPLAY_NAME.toTitleCase()}来源" class="ve-self-flex-center ve-ml-2 ve-muted ve-rd__stats-name-brew-link" target="_blank" rel="noopener noreferrer"><span class="	glyphicon glyphicon-share"></span></a>`;
 	}
 
 	static getBtnSendToFoundryHtml ({isMb = true} = {}) {
@@ -3482,7 +3482,7 @@ Renderer.utils = class {
 			isExcluded = isExcluded
 				|| dataProp === "item" ? Renderer.item.isExcluded(entity, {hash}) : ExcludeUtil.isExcluded(hash, dataProp, entity.source);
 		}
-		return isExcluded ? `<div class="ve-text-center text-danger"><b><i>Warning: This content has been <a href="blocklist.html">blocklisted</a>.</i></b></div>` : "";
+		return isExcluded ? `<div class="ve-text-center text-danger"><b><i>警告：此内容已加入<a href="blocklist.html">屏蔽列表</a>。</i></b></div>` : "";
 	}
 
 	static getSourceAndPageTrHtml (it) {
@@ -3544,9 +3544,9 @@ Renderer.utils = class {
 		const externalSourceText = Renderer.utils._getAltSourceHtmlOrText({ent, prop: "externalSources", introText: "外部来源于:", isText});
 
 		const srdText = ent.srd52
-			? `${isText ? "" : `the <span title="Systems Reference Document (5.2)">`}SRD 5.2.1${isText ? "" : `</span>`}${typeof ent.srd52 === "string" ? ` (as &quot;${ent.srd52}&quot;)` : ""}`
+			? `${isText ? "" : `<span title="系统参考文档（5.2 版）">`}SRD 5.2.1${isText ? "" : `</span>`}${typeof ent.srd52 === "string" ? `（名称为“${ent.srd52}”）` : ""}`
 			: ent.srd
-				? `${isText ? "" : `the <span title="Systems Reference Document (5.1)">`}SRD 5.1${isText ? "" : `</span>`}${typeof ent.srd === "string" ? ` (as &quot;${ent.srd}&quot;)` : ""}`
+				? `${isText ? "" : `<span title="系统参考文档（5.1 版）">`}SRD 5.1${isText ? "" : `</span>`}${typeof ent.srd === "string" ? `（名称为“${ent.srd}”）` : ""}`
 				: "";
 		const basicRulesText = ent.basicRules2024
 			? `基础规则 (5.5e/2024)${typeof ent.basicRules2024 === "string" ? ` (作为 &quot;${ent.basicRules2024}&quot;)` : ""}`
@@ -3650,10 +3650,10 @@ Renderer.utils = class {
 
 		static getHeaderExpandCollapseText ({isCollapsed, isStatic = false, isFixedHeightInitial = false}) {
 			if (isStatic) return "";
-			if (!isCollapsed && isFixedHeightInitial) return "Expand to Natural Height (SHIFT to Expand All)";
+			if (!isCollapsed && isFixedHeightInitial) return "展开至自然高度（按住 Shift 可展开全部）";
 			return isCollapsed
-				? "Expand (SHIFT to Expand All)"
-				: "Collapse (SHIFT to Collapse All)";
+				? "展开（按住 Shift 可展开全部）"
+				: "收起（按住 Shift 可收起全部）";
 		}
 
 		/**
@@ -3738,7 +3738,7 @@ Renderer.utils = class {
 			.join(". ");
 
 		return [
-			`alt="Token图${tokenName ? `: ${tokenName.qq()}` : ""}"`,
+			`alt="标记图${tokenName ? `：${tokenName.qq()}` : ""}"`,
 			ptTitle ? `title="${ptTitle}"` : "",
 		]
 			.filter(Boolean)
@@ -3850,7 +3850,7 @@ Renderer.utils = class {
 
 		if (!displayName || !source) return "";
 
-		return `${isPlainText ? "" : `<div>`}${displayName}; ${isPlainText ? "" : `<span title="${Parser.sourceJsonToFull(source)}">`}${Parser.sourceJsonToAbv(source)}${Renderer.utils.isDisplayPage(meta.page) ? ` p${meta.page}` : ""}${isPlainText ? "" : `</span></div>`}`;
+		return `${isPlainText ? "" : `<div>`}${displayName}; ${isPlainText ? "" : `<span title="${Parser.sourceJsonToFull(source)}">`}${Parser.sourceJsonToAbv(source)}${Renderer.utils.isDisplayPage(meta.page) ? ` 第 ${meta.page} 页` : ""}${isPlainText ? "" : `</span></div>`}`;
 	}
 
 	static async pHasFluffText (entity, prop) {
@@ -4328,19 +4328,19 @@ Renderer.utils = class {
 				);
 			if (isListMode) {
 				const shortNameRaw = isClassVisible ? this._getShortClassName(v.class.name) : null;
-				return `${isClassVisible ? `${shortNameRaw.slice(0, 4)}${isSubclassVisible ? "*" : "."}` : ""}${isLevelVisible ? ` Lvl ${v.level}` : ""}`;
+				return `${isClassVisible ? `${shortNameRaw.slice(0, 4)}${isSubclassVisible ? "*" : "."}` : ""}${isLevelVisible ? ` ${v.level}级` : ""}`;
 			}
 
 			let classPart = "";
 			if (isClassVisible && isSubclassVisible) classPart = ` ${v.class.name} (${v.subclass.name})`;
 			else if (isClassVisible) classPart = ` ${v.class.name}`;
-			else if (isSubclassVisible) classPart = ` &lt;remember to insert class name here&gt; (${v.subclass.name})`; // :^)
+			else if (isSubclassVisible) classPart = ` &lt;请在此处填入职业名称&gt; (${v.subclass.name})`; // :^)
 
 			const ptLevel = !isLevelVisible
 				? ""
 				: styleHint === "classic"
 					? `${Parser.getOrdinalForm(v.level)} 级`
-					: `Level ${v.level}+`;
+					: `${v.level}级以上`;
 
 			return [ptLevel, classPart].filter(Boolean).join(" ");
 		}
@@ -4350,7 +4350,7 @@ Renderer.utils = class {
 		}
 
 		static _getEntry_patron ({v, isListMode}) {
-			return isListMode ? `${Parser.prereqPatronToShort(v)}宗主` : `${v}宗主`;
+			return isListMode ? `${Parser.prereqPatronToShort(v)}宗主` : `${v === "Any" ? "任意" : v}宗主`;
 		}
 
 		static _getEntry_spell ({v, isListMode, keyOptions}) {
@@ -4365,8 +4365,8 @@ Renderer.utils = class {
 
 					const [text, suffix] = sp.split("#");
 					if (!suffix) return `{@spell ${sp}}`;
-					if (suffix === "c") return `{@spell ${text}} cantrip`;
-					if (suffix === "x") return "{@spell hex} spell or a warlock feature that curses";
+					if (suffix === "c") return `{@spell ${text}}戏法`;
+					if (suffix === "x") return "{@spell hex}法术或可施加诅咒的邪术师特性";
 					return sp;
 				})
 					.joinConjunct(", ", " 或 ");
@@ -4451,7 +4451,7 @@ Renderer.utils = class {
 		}
 
 		static _getEntry_itemProperty ({v, isListMode}) {
-			if (v == null) return isListMode ? "No Prop." : "No Other Properties";
+			if (v == null) return isListMode ? "无属性" : "无其他属性";
 
 			return isListMode
 				? v
@@ -4465,7 +4465,7 @@ Renderer.utils = class {
 						.filter(Boolean)
 						.map(it => it.name?.toTitleCase())
 						.joinConjunct(", ", " 和 ")
-					} Property`
+					}属性`
 				);
 		}
 
@@ -4583,8 +4583,8 @@ Renderer.utils = class {
 					switch (profType) {
 						case "armor": {
 							if (prof === "shield") {
-								if (isListMode) return styleHint === "classic" ? `Prof ${prof}` : `${prof.toTitleCase()} Trai.`;
-								return styleHint === "classic" ? `Proficiency with ${prof}s` : `${prof.toTitleCase()} Training`;
+								if (isListMode) return styleHint === "classic" ? "盾牌熟练项" : "盾牌受训";
+								return styleHint === "classic" ? "熟练使用盾牌" : "盾牌受训";
 							}
 
 							if (isListMode) return styleHint === "classic" ? `${Parser.ARMOR_FULL_TO_CN[prof] || prof.toTitleCase()}甲熟练项` : `${Parser.ARMOR_FULL_TO_CN[prof] || prof.toTitleCase()}甲受训`;
@@ -4597,10 +4597,10 @@ Renderer.utils = class {
 							return isListMode ? `熟练于${prof}武器` : `${prof.toTitleCase()}武器熟练项`;
 						}
 						case "skill": {
-							if (prof === true) return isListMode ? `Skill Proficiency` : `Proficiency in a skill`;
+							if (prof === true) return isListMode ? `技能熟练项` : `一项技能熟练项`;
 							return isListMode
 								? prof.map(skill => skill.toTitleCase()).join("+")
-								: `Proficiency in the ${prof.map(skill => `{@skill ${skill.toTitleCase()}}`).joinConjunct(", ", " and ")} skill${prof.length === 1 ? "" : "s"}`;
+								: `熟练于${prof.map(skill => `{@skill ${skill.toTitleCase()}}`).join("、")}`;
 						}
 						default: throw new Error(`Unhandled proficiency type: "${profType}"`);
 					}
@@ -4677,8 +4677,8 @@ Renderer.utils = class {
 
 		static _getEntry_psionics ({v, isListMode, keyOptions}) {
 			return isListMode
-				? "Psionics"
-				: "Psionic Talent feature or Wild Talent feat";
+				? "灵能"
+				: "灵能天赋特性或野性天赋专长";
 		}
 
 		static _getEntry_alignment ({v, isListMode}) {
@@ -4711,13 +4711,13 @@ Renderer.utils = class {
 		static _getEntry_group ({v, isListMode}) {
 			return isListMode
 				? v.map(it => it.toTitleCase()).join("/")
-				: `${v.map(it => it.toTitleCase()).joinConjunct(", ", " 或 ")} Group`;
+				: `${v.map(it => it.toTitleCase()).joinConjunct("、", "或")}群组`;
 		}
 	};
 
 	static getRepeatableEntry (ent) {
 		if (!ent.repeatable) return null;
-		return `{@b Repeatable:} ${ent.repeatableNote || (ent.repeatable ? "Yes" : "No")}`;
+		return `{@b 可重复选择：} ${ent.repeatableNote || (ent.repeatable ? "是" : "否")}`;
 	}
 
 	static getRepeatableHtml (ent, {isListMode = false} = {}) {
@@ -4862,7 +4862,7 @@ Renderer.utils = class {
 						fauxEntry.d20mod = mod;
 						if (tag === "@hit") fauxEntry.context = {type: "hit"};
 						if (tag === "@initiative") {
-							fauxEntry.name = "Initiative";
+							fauxEntry.name = "先攻";
 							fauxEntry.context = {type: "initiative"};
 						}
 						return fauxEntry;
@@ -4913,7 +4913,7 @@ Renderer.utils = class {
 				if (name) fauxEntry.name = name;
 				else {
 					if (tag === "@ability") fauxEntry.name = Parser.attAbvToFull(abil);
-					else if (tag === "@savingThrow") fauxEntry.name = `${Parser.attAbvToFull(abil)} save`;
+					else if (tag === "@savingThrow") fauxEntry.name = `${Parser.attAbvToFull(abil)}豁免`;
 				}
 
 				const rawScoreOrMod = rawScoreOrModParts.join(" ");
@@ -5197,7 +5197,7 @@ Renderer.utils = class {
 								out.subhashes = [
 									{key: VeCt.HASH_SCALED, value: targetCrNum},
 								];
-								out.linkText = displayText || `${name} (CR ${value})`;
+								out.linkText = displayText || `${name}（挑战等级 ${value}）`;
 								break;
 							}
 
@@ -5207,7 +5207,7 @@ Renderer.utils = class {
 								out.subhashes = [
 									{key: VeCt.HASH_SCALED_SPELL_SUMMON, value: scaledSpellNum},
 								];
-								out.linkText = displayText || `${name} (Spell Level ${value})`;
+				out.linkText = displayText || `${name}（法术环阶 ${value}）`;
 								break;
 							}
 
@@ -5217,7 +5217,7 @@ Renderer.utils = class {
 								out.subhashes = [
 									{key: VeCt.HASH_SCALED_CLASS_SUMMON, value: scaledClassNum},
 								];
-								out.linkText = displayText || `${name} (Class Level ${value})`;
+				out.linkText = displayText || `${name}（职业等级 ${value}）`;
 								break;
 							}
 						}
@@ -5319,10 +5319,10 @@ Renderer.utils = class {
 		switch (spl[0]) {
 			case "item": {
 				const path = spl.slice(1);
-				if (!path.length) return `{@i missing key path}`;
+				if (!path.length) return `{@i 缺少键路径}`;
 				return MiscUtil.get(ent, ...path);
 			}
-			default: return `{@i unknown template root: "${spl[0]}"}`;
+			default: return `{@i 未知的模板根节点：“${spl[0]}”}`;
 		}
 	}
 	// endregion
@@ -5532,11 +5532,11 @@ Renderer.utils = class {
 				if (!promises.length) return;
 
 				// region Sadly we cannot cancel or delay the print event, so, show a blocking alert
-				alert(`All content must be loaded prior to printing. Please cancel the print and wait a few moments for loading to complete!`);
+				alert(`打印前必须先加载全部内容。请取消打印，等待内容加载完成！`);
 
 				Promise.all(promises)
 					.then(() => {
-						JqueryUtil.doToast("Content loading complete!");
+						JqueryUtil.doToast("内容加载完成！");
 					});
 				// endregion
 			};
@@ -5784,7 +5784,7 @@ Renderer.tag = class {
 		tagName = "actSaveSuccess";
 		isStandalone = true;
 
-		_getStripped (tag, text) { return "Success:"; }
+		_getStripped (tag, text) { return "成功："; }
 	};
 
 	static TagActSaveFailure = class extends this._TagBaseAt {
@@ -5793,8 +5793,8 @@ Renderer.tag = class {
 
 		_getStripped (tag, text) {
 			const [ordinal] = Renderer.splitTagByPipe(text);
-			if (ordinal) return `${Parser.numberToText(ordinal, {isOrdinalForm: true}).toTitleCase()} Failure:`;
-			return "Failure:";
+			if (ordinal) return `第 ${ordinal} 次失败：`;
+			return "失败：";
 		}
 	};
 
@@ -5803,7 +5803,7 @@ Renderer.tag = class {
 
 		_getStripped (tag, text) {
 			const [amount] = Renderer.splitTagByPipe(text);
-			return `Failure by ${amount} or More:`;
+			return `失败差值达到 ${amount} 或更高：`;
 		}
 	};
 
@@ -5811,7 +5811,7 @@ Renderer.tag = class {
 		tagName = "actSaveSuccessOrFail";
 		isStandalone = true;
 
-		_getStripped (tag, text) { return "Failure or Success:"; }
+		_getStripped (tag, text) { return "失败或成功："; }
 	};
 
 	static TagActTrigger = class extends this._TagBaseAt {
@@ -5825,7 +5825,7 @@ Renderer.tag = class {
 		tagName = "actResponse";
 		isStandalone = true;
 
-		_getStripped (tag, text) { return `Response${text.includes("d") ? "\u2014" : ":"}`; }
+		_getStripped (tag, text) { return `反应${text.includes("d") ? "\u2014" : "："}`; }
 	};
 
 	static TagHitText = class extends this._TagBaseAt {
@@ -5839,14 +5839,14 @@ Renderer.tag = class {
 		tagName = "m";
 		isStandalone = true;
 
-		_getStripped (tag, text) { return "Miss: "; }
+		_getStripped (tag, text) { return "未命中："; }
 	};
 
 	static TagHitOrMissText = class extends this._TagBaseAt {
 		tagName = "hom";
 		isStandalone = true;
 
-		_getStripped (tag, text) { return "Hit or Miss: "; } // I guess they never miss
+		_getStripped (tag, text) { return "命中或未命中："; } // I guess they never miss
 	};
 
 	static TagAtk = class extends this._TagBaseAt {
@@ -5867,7 +5867,7 @@ Renderer.tag = class {
 
 		_getStripped (tag, text) {
 			const [displayText] = Renderer.splitTagByPipe(text);
-			return displayText || "your spell attack modifier";
+			return displayText || "你的法术攻击调整值";
 		}
 	};
 
@@ -5886,7 +5886,7 @@ Renderer.tag = class {
 
 		_getStripped (tag, text) {
 			const [displayText] = Renderer.splitTagByPipe(text);
-			return displayText || "your spell save DC";
+			return displayText || "你的法术豁免 DC";
 		}
 	};
 
@@ -5914,7 +5914,7 @@ Renderer.tag = class {
 					return `(充能 ${asNum}${asNum < 6 ? `\u20136` : ""})`;
 				}
 				case "@chance": {
-					return displayText || `${rollText} percent`;
+					return displayText || `${rollText}%`;
 				}
 				case "@ability": {
 					const [, rawScore] = rollText.split(" ").map(it => it.trim().toLowerCase()).filter(Boolean);
@@ -6412,7 +6412,7 @@ Renderer.tag = class {
 
 			const displayText = flags && flags.includes("x")
 				? compactText
-				: (I18nUtil.LANGUAGES_INDEX === "zh_CN"
+				: (["zh_CN", "zh-Hant"].includes(I18nUtil.LANGUAGES_INDEX)
 					? `区域${compactText}`
 					: `${flags && flags.includes("u") ? "A" : "a"}rea ${compactText}`);
 
@@ -6434,11 +6434,11 @@ Renderer.tag = class {
 		_getStripped (tag, text) {
 			const [newText, oldText] = Renderer.splitTagByPipe(text);
 			if (newText && oldText) {
-				return `${newText} [this is a homebrew addition, replacing the following: "${oldText}"]`;
+				return `${newText} [这段自制内容替换了以下原文：“${oldText}”]`;
 			} else if (newText) {
-				return `${newText} [this is a homebrew addition]`;
+				return `${newText} [这是一段新增的自制内容]`;
 			} else if (oldText) {
-				return `[the following text has been removed due to homebrew: ${oldText}]`;
+				return `[这段自制内容移除了以下原文：${oldText}]`;
 			} else throw new Error(`Homebrew tag had neither old nor new text!`);
 		}
 	};
@@ -6870,7 +6870,7 @@ Renderer.events = class {
 			}),
 			htmlNameExpanded: Renderer.get().render({
 				...fauxEntryBase,
-				entry: `<button class="ve-btn ve-btn-default ve-btn-xxs" title="Go to Page">
+				entry: `<button class="ve-btn ve-btn-default ve-btn-xxs" title="前往页面">
 					<span class="glyphicon glyphicon-modal-window"></span>
 				</button>`,
 			}),
@@ -6907,12 +6907,12 @@ Renderer.events = class {
 			.vee.removeClass("ve-flex-vh-center");
 
 		if (!toRender) {
-			tr.vee.html(`<td colspan="6"><i class="text-danger">Failed to load ${tag ? Renderer.get().render(`{@${tag} ${name}|${source}${displayName ? `|${displayName}` : ""}}`) : displayName || name}!</i></td>`);
+			tr.vee.html(`<td colspan="6"><i class="text-danger">加载失败：${tag ? Renderer.get().render(`{@${tag} ${name}|${source}${displayName ? `|${displayName}` : ""}}`) : displayName || name}!</i></td>`);
 			throw new Error(`Could not find tag: "${tag}" (page/prop: "${page}") hash: "${hash}"`);
 		}
 
 		const headerName = displayName
-			|| (name ?? toRender.name ?? (toRender.entries?.length ? toRender.entries?.[0]?.name : "(Unknown)"));
+			|| (name ?? toRender.name ?? (toRender.entries?.length ? toRender.entries?.[0]?.name : "（未知）"));
 
 		const {htmlNameCollapsed, htmlNameExpanded} = Renderer.events._handleLoad_inlineStatblock_getHtmlNames({
 			tag, uid, displayName,
@@ -7172,15 +7172,15 @@ Renderer.feat = class {
 
 		if (abilityObj.choose.weighted) {
 			const ptsWeight = abilityObj.choose.weighted.weights
-				.map((adj, i) => `${i === 0 ? "an" : "another"} ability score to ${adj > 0 ? "increase" : "decrease"} by ${Math.abs(adj)}`)
-				.joinConjunct(", ", " 和 ");
+				.map((adj, i) => `使${i === 0 ? "一项" : "另一项"}属性值${adj > 0 ? "提高" : "降低"} ${Math.abs(adj)} 点`)
+				.joinConjunct("、", "并");
 
 			if (abilityObj.choose.weighted.from.length === 6) {
-				return `选择 ${ptsWeight}个。`;
+				return `选择属性，${ptsWeight}。`;
 			}
 
 			const ptAbils = abilityObj.choose.weighted.from.map(abv => Parser.attAbvToFull(abv)).joinConjunct(", ", " 和 ");
-			return `从 ${ptAbils}选 ${ptsWeight}个。`;
+			return `从${ptAbils}中选择属性，${ptsWeight}。`;
 		}
 
 		if (abilityObj.choose.from.length === 6) {
@@ -7443,8 +7443,8 @@ Renderer.class = class {
 		styleHint ||= VetoolsConfig.get("styleSwitcher", "style");
 
 		return styleHint === "classic"
-			? `{@dice ${clsHd.number}d${clsHd.faces}||Hit die}`
-			: `{@dice ${clsHd.number}d${clsHd.faces}|${clsHd.number === 1 ? "" : clsHd.number}D${clsHd.faces}|Hit die}`;
+			? `{@dice ${clsHd.number}d${clsHd.faces}||生命骰}`
+			: `{@dice ${clsHd.number}d${clsHd.faces}|${clsHd.number === 1 ? "" : clsHd.number}D${clsHd.faces}|生命骰}`;
 	}
 
 	/**
@@ -7532,7 +7532,7 @@ Renderer.class = class {
 
 		const ptsOther = profsOther
 			.map(w => {
-				if (w.optional) return `<span class="ve-help ve-help--hover" title="Optional Proficiency">${Renderer.get().render(w.proficiency)}</span>`;
+				if (w.optional) return `<span class="ve-help ve-help--hover" title="可选熟练项">${Renderer.get().render(w.proficiency)}</span>`;
 				return Renderer.get().render(w);
 			});
 
@@ -8053,7 +8053,7 @@ class _RenderCompactSpellsImplBase extends _RenderCompactImplBase {
 		const fromClassListVariant = Renderer.spell.getCombinedClasses(ent, "fromClassListVariant");
 		if (fromClassListVariant.length) {
 			const [current, legacy] = Parser.spVariantClassesToCurrentAndLegacy(fromClassListVariant);
-			stack.push(`<div><span class="bold" title="&quot;Optional&quot; spells may be added to a campaign by the DM. &quot;Variant&quot; spells are generally available, but may be made available to a class by the DM.">可选/变体职业: </span>${Parser.spMainClassesToFull(current)}</div>`);
+			stack.push(`<div><span class="bold" title="DM 可以将可选法术加入战役。变体法术通常可用，也可以由 DM 决定开放给某个职业。">可选/变体职业: </span>${Parser.spMainClassesToFull(current)}</div>`);
 		}
 
 		return stack.join("");
@@ -8792,11 +8792,11 @@ Renderer.optionalfeature = class {
 
 	static getPreviouslyPrintedEntry (ent) {
 		if (!ent.previousVersion) return null;
-		return `{@i An earlier version of this ${ent.featureType.map(t => Parser.optFeatureTypeToFull(t)).join("/")} is available in }${Parser.sourceJsonToFull(ent.previousVersion.source)} {@i as {@optfeature ${ent.previousVersion.name}|${ent.previousVersion.source}}.}`;
+		return `{@i 此${ent.featureType.map(t => Parser.optFeatureTypeToFull(t)).join("／")}的早期版本见于}${Parser.sourceJsonToFull(ent.previousVersion.source)}{@i ，名称为{@optfeature ${ent.previousVersion.name}|${ent.previousVersion.source}}。}`;
 	}
 
 	static getTypeEntry (ent) {
-		return `{@note Type: ${Renderer.optionalfeature.getTypeText(ent)}}`;
+		return `{@note 类型：${Renderer.optionalfeature.getTypeText(ent)}}`;
 	}
 
 	static getCostEntry (ent) {
@@ -9395,7 +9395,7 @@ Renderer.race = class {
 		const pRollHeight = async () => {
 			const mResultHeight = await Renderer.dice.pRoll2(race.heightAndWeight.heightMod, {
 				isUser: false,
-				label: "Height Modifier",
+				label: "身高调整值",
 				name: race.name,
 			});
 			if (mResultHeight == null) return;
@@ -9406,7 +9406,7 @@ Renderer.race = class {
 			const weightModRaw = race.heightAndWeight.weightMod || "1";
 			const mResultWeightMod = isNaN(weightModRaw) ? await Renderer.dice.pRoll2(weightModRaw, {
 				isUser: false,
-				label: "Weight Modifier",
+				label: "体重调整值",
 				name: race.name,
 			}) : Number(weightModRaw);
 			if (mResultWeightMod == null) return;
@@ -9556,7 +9556,7 @@ Renderer.object = class {
 
 	static getObjectRenderableEntriesMeta (ent) {
 		return {
-			entrySize: `{@i ${ent.objectType !== "GEN" ? `${Renderer.utils.getRenderedSize(ent.size)} ${ent.creatureType ? Parser.monTypeToFullObj(ent.creatureType).asText : "物件"}` : `Variable size object`}}`,
+			entrySize: `{@i ${ent.objectType !== "GEN" ? `${Renderer.utils.getRenderedSize(ent.size)} ${ent.creatureType ? Parser.monTypeToFullObj(ent.creatureType).asText : "物件"}` : `体型可变的物件`}}`,
 
 			entryCreatureCapacity: ent.capCrew != null || ent.capPassenger != null
 				? `{@b 生物容量：} ${Renderer.vehicle.getShipCreatureCapacity(ent)}`
@@ -9917,7 +9917,7 @@ Renderer.cultboon = class {
 		if (ent.signatureSpells) {
 			benefits.items.push({
 				type: "item",
-				name: "Signature Spells:",
+				name: "招牌法术：",
 				entry: ent.signatureSpells ? ent.signatureSpells.entry : "无",
 			});
 		}
@@ -10132,7 +10132,7 @@ class _RenderCompactBestiaryImplBase {
 
 		return `<tr>
 			<th class="ve-text-left" colspan="${this._style === "classic" ? "2" : "1"}" ${titleAc}>${labelAc}</th>
-			${ptInitiative ? `<th class="ve-text-left" colspan="1" title="Initiative">先攻.</th>` : ""}
+			${ptInitiative ? `<th class="ve-text-left" colspan="1" title="先攻">先攻.</th>` : ""}
 			<th class="ve-text-left" colspan="2" ${titleHp}>${labelHp}</th>
 			<th class="ve-text-left" colspan="2">${I18nUtil.get("common.speed")}</th>
 			<th class="ve-text-left" colspan="2" ${titleCr}>${labelCr}</th>
@@ -10153,12 +10153,12 @@ class _RenderCompactBestiaryImplBase {
 			return `<td colspan="2">
 				${Renderer.monster.getChallengeRatingPart(mon, {styleHint: this._style})}
 				${opts.isShowScalers && !opts.isScaledCr && Parser.isValidCr(mon.cr ? (mon.cr.cr || mon.cr) : null) ? `
-				<button title="基于CR调整数据 (Highly Experimental; based on the &quot;Monster Statistics by Challenge Rating&quot; table in the Dungeon Master's Guide (2014), page 274)" class="mon__btn-scale-cr ve-btn ve-btn-xs ve-btn-default ve-print__hidden">
+				<button title="按挑战等级调整数据（高度实验性；依据《地下城主指南》2014 版第 274 页的‘按挑战等级划分的怪物数据’表）" class="mon__btn-scale-cr ve-btn ve-btn-xs ve-btn-default ve-print__hidden">
 					<span class="glyphicon glyphicon-signal"></span>
 				</button>
 				` : ""}
 				${opts.isScaledCr ? `
-				<button title="Reset CR Scaling" class="mon__btn-reset-cr ve-btn ve-btn-xs ve-btn-default ve-print__hidden">
+				<button title="重置挑战等级缩放" class="mon__btn-reset-cr ve-btn ve-btn-xs ve-btn-default ve-print__hidden">
 					<span class="glyphicon glyphicon-refresh"></span>
 				</button>
 				` : ""}
@@ -10202,7 +10202,7 @@ class _RenderCompactBestiaryImplBase {
 	}
 
 	_getCommonHtmlParts_tools ({mon, renderer}) {
-		return mon.tool ? `<p><b>Tools</b> ${Renderer.monster.getToolsString(renderer, mon, {styleHint: this._style})}</p>` : "";
+		return mon.tool ? `<p><b>工具</b> ${Renderer.monster.getToolsString(renderer, mon, {styleHint: this._style})}</p>` : "";
 	}
 
 	_getCommonHtmlParts_vulnerabilities ({mon}) {
@@ -10541,7 +10541,7 @@ class _RenderCompactBestiaryImplOne extends _RenderCompactBestiaryImplBase {
 	_getHtmlParts_immunities ({mon}) {
 		const pt = Renderer.monster.getImmunitiesCombinedPart(mon);
 		if (!pt) return "";
-		return `<p><b title="Immunities">免疫</b> ${pt}</p>`;
+		return `<p><b title="免疫">免疫</b> ${pt}</p>`;
 	}
 
 	_getHtmlParts_gear ({mon}) {
@@ -10765,7 +10765,7 @@ Renderer.monster = class {
 
 	static getSave (renderer, attr, mod) {
 		if (attr === "special") return renderer.render(mod);
-		return renderer.render(`<span>${attr.uppercaseFirst()} {@savingThrow ${attr} ${mod}}</span>`);
+		return renderer.render(`<span>${Parser.attAbvToFull(attr)} {@savingThrow ${attr} ${mod}}</span>`);
 	}
 
 	static dragonCasterVariant = class {
@@ -10857,7 +10857,7 @@ Renderer.monster = class {
 				黑: ["目盲术/耳聋术", "造水术/枯水术", "疫病虫群", "植物滋长"],
 				蓝: ["秘法眼", "造水术/枯水术", "高等幻影", "投影术"],
 				红: ["灾祸术", "支配人类", "灼热金属", "催眠图纹", "律令震慑", "暗示术"],
-				绿: ["隐形术", "mass 暗示术", "植物滋长", "动物交谈"],
+				绿: ["隐形术", "群体暗示术", "植物滋长", "动物交谈"],
 				青铜: ["野兽知觉", "操控水体", "侦测思想", "英雄宴", "动物交谈"],
 				赤铜: ["次级复原术", "地动术", "魅影之力", "塑石术"],
 				银: ["希望信标", "安定心神", "定身类人", "变形术", "传送术", "诚实之域"],
@@ -11163,7 +11163,7 @@ Renderer.monster = class {
 		const typeObj = Parser.monTypeToFullObj(mon.type);
 
 		return [
-			mon.level != null ? `${Parser.getOrdinalForm(mon.level)}-level` : "",
+			mon.level != null ? `${mon.level} 级` : "",
 			typeObj.asTextSidekick ? `${typeObj.asTextSidekick};` : "",
 			Renderer.utils.getRenderedSize(mon.size),
 			mon.sizeNote ? renderer.render(mon.sizeNote) : "",
@@ -11180,7 +11180,7 @@ Renderer.monster = class {
 
 	static _getInitiativePart_passive ({mon, initPassive}) {
 		if (!mon.initiative?.advantageMode) return initPassive;
-		const ptTitle = `This creature has ${mon.initiative?.advantageMode === "adv" ? "Advantage" : "Disadvantage"} on Initiative.`;
+		const ptTitle = `此生物的先攻检定具有${mon.initiative?.advantageMode === "adv" ? "优势" : "劣势"}。`;
 		return `<span title="${ptTitle.qq()}" class="ve-help-subtle">${initPassive}</span>`;
 	}
 
@@ -11265,10 +11265,10 @@ Renderer.monster = class {
 
 		const ptXps = [
 			ptXp != null ? `${ptXp} XP` : null,
-			ptXpMythic != null ? `${ptXpMythic} XP as a mythic encounter` : null,
+			ptXpMythic != null ? `${ptXpMythic} XP（神话遭遇）` : null,
 		]
 			.filter(Boolean)
-			.joinConjunct(", ", ", or ", true);
+			.joinConjunct("、", "或", true);
 
 		if (cr == null && !ptXps) return null;
 
@@ -11303,7 +11303,7 @@ Renderer.monster = class {
 			// TODO(ODND) speculative text; revise
 			: [
 				xpBase ? xpBase.toLocaleStringVe() : null,
-				Renderer.monster.hasMythicActions(mon) ? `${(xpBase * 2).toLocaleStringVe()} as a mythic encounter` : null,
+				Renderer.monster.hasMythicActions(mon) ? `${(xpBase * 2).toLocaleStringVe()}（神话遭遇）` : null,
 			]
 				.filter(Boolean);
 
@@ -11316,7 +11316,7 @@ Renderer.monster = class {
 
 		const ptParens = [
 			ptsXp.length ? `XP ${ptsXp.joinConjunct(", ", ", 或 ", true)}` : "",
-			ptPbVal ? `${isPlainText ? "PB" : `<span title="Proficiency Bonus">PB</span>`} ${ptPbVal}` : "",
+			ptPbVal ? `${isPlainText ? "PB" : `<span title="熟练加值">PB</span>`} ${ptPbVal}` : "",
 		]
 			.filter(Boolean)
 			.join("; ");
@@ -11423,8 +11423,8 @@ Renderer.monster = class {
 		if (isPlainText) return `${hp.average} (${hp.formula})`;
 
 		const maxVal = Renderer.monster._getFormulaMax(hp.formula);
-		const maxStr = maxVal ? `Maximum: ${maxVal}` : "";
-		return `${maxStr ? `<span title="${maxStr}" class="ve-help-subtle">` : ""}${hp.average}${maxStr ? "</span>" : ""} ${Renderer.get().render(`({@dice ${hp.formula}|${hp.formula}|Hit Points})`)}`;
+		const maxStr = maxVal ? `最大值：${maxVal}` : "";
+		return `${maxStr ? `<span title="${maxStr}" class="ve-help-subtle">` : ""}${hp.average}${maxStr ? "</span>" : ""} ${Renderer.get().render(`({@dice ${hp.formula}|${hp.formula}|生命值})`)}`;
 	}
 
 	static getRenderedResource (res, isPlainText) {
@@ -11433,7 +11433,7 @@ Renderer.monster = class {
 		if (isPlainText) return `${res.value} (${res.formula})`;
 
 		const maxVal = Renderer.monster._getFormulaMax(res.formula);
-		const maxStr = maxVal ? `Maximum: ${maxVal}` : "";
+		const maxStr = maxVal ? `最大值：${maxVal}` : "";
 		return `${maxStr ? `<span title="${maxStr}" class="ve-help-subtle">` : ""}${res.value}${maxStr ? "</span>" : ""} ${Renderer.get().render(`({@dice ${res.formula}|${res.formula}|${res.name}})`)}`;
 	}
 
@@ -11746,7 +11746,7 @@ Renderer.monster = class {
 								keys: Object.keys(it.oneOf),
 								isJoinWithOr: true,
 							});
-							return `plus one of the following: ${skillsHtmlOther}`;
+							return `另外从以下技能中选择一项：${skillsHtmlOther}`;
 						}
 						throw new Error(`Unhandled monster "other" skill properties!`);
 					}),
@@ -11773,7 +11773,7 @@ Renderer.monster = class {
 	};
 
 	static _TOOL_PROF_TO_SOURCE__ONE = {
-		"playing card set": {name: "Playing Cards"},
+		"playing card set": {name: "扑克牌"},
 	};
 
 	static getToolsString (renderer, mon, {styleHint = null} = {}) {
@@ -12356,8 +12356,8 @@ Renderer.item = class {
 		return renderedProperties.join(", ");
 	}
 
-	static _getPropertiesText_unusedDmg2 ({item, renderer}) { return `alt. ${Renderer.item._renderDamage(item.dmg2, {renderer})}`; }
-	static _getPropertiesText_unusedRange ({item, renderer}) { return `range ${item.range} ft.`; }
+	static _getPropertiesText_unusedDmg2 ({item, renderer}) { return `备用伤害：${Renderer.item._renderDamage(item.dmg2, {renderer})}`; }
+	static _getPropertiesText_unusedRange ({item, renderer}) { return `射程 ${item.range} 尺`; }
 
 	static _getPropertiesText_noProperties ({item, renderer}) {
 		const parts = [];
@@ -12416,23 +12416,23 @@ Renderer.item = class {
 		}
 
 		// mounts
-		if (item.speed != null) damageParts.push(`Speed: ${item.speed}`);
-		if (item.carryingCapacity) damageParts.push(`Carrying Capacity: ${item.carryingCapacity} lb.`);
+		if (item.speed != null) damageParts.push(`速度：${item.speed}`);
+		if (item.carryingCapacity) damageParts.push(`载重：${item.carryingCapacity} 磅`);
 
 		// vehicles
 		if (item.vehSpeed || item.capCargo || item.capPassenger || item.crew || item.crewMin || item.crewMax || item.vehAc || item.vehHp || item.vehDmgThresh || item.travelCost || item.shippingCost) {
-			const vehPartUpper = item.vehSpeed ? `Speed: ${Parser.numberToVulgar(item.vehSpeed)} mph` : null;
+			const vehPartUpper = item.vehSpeed ? `速度：${Parser.numberToVulgar(item.vehSpeed)} 英里／小时` : null;
 
-			const vehPartMiddle = item.capCargo || item.capPassenger ? `Carrying Capacity: ${[item.capCargo ? `${Parser.numberToFractional(item.capCargo)} ton${item.capCargo === 0 || item.capCargo > 1 ? "s" : ""} cargo` : null, item.capPassenger ? `${item.capPassenger} passenger${item.capPassenger === 1 ? "" : "s"}` : null].filter(Boolean).join(", ")}` : null;
+			const vehPartMiddle = item.capCargo || item.capPassenger ? `载重：${[item.capCargo ? `${Parser.numberToFractional(item.capCargo)} 吨货物` : null, item.capPassenger ? `${item.capPassenger} 名乘客` : null].filter(Boolean).join("、")}` : null;
 
 			const {travelCostFull, shippingCostFull} = Parser.itemVehicleCostsToFull(item);
 
 			// These may not be present in homebrew
 			const vehPartLower = [
-				item.crew ? `Crew ${item.crew}` : null,
-				item.crewMin && item.crewMax ? `Crew ${item.crewMin}-${item.crewMax}` : null,
+				item.crew ? `船员 ${item.crew} 人` : null,
+				item.crewMin && item.crewMax ? `船员 ${item.crewMin}—${item.crewMax} 人` : null,
 				item.vehAc ? `AC ${item.vehAc}` : null,
-				item.vehHp ? `HP ${item.vehHp}${item.vehDmgThresh ? `, Damage Threshold ${item.vehDmgThresh}` : ""}` : null,
+				item.vehHp ? `生命值 ${item.vehHp}${item.vehDmgThresh ? `，伤害阈值 ${item.vehDmgThresh}` : ""}` : null,
 			].filter(Boolean).join(", ");
 
 			damageParts.push([
@@ -12440,8 +12440,8 @@ Renderer.item = class {
 				vehPartMiddle,
 
 				// region ~~Dammit Mercer~~ Additional fields present in EGW
-				travelCostFull ? `Personal Travel Cost: ${travelCostFull} per mile per passenger` : null,
-				shippingCostFull ? `Shipping Cost: ${shippingCostFull} per 100 pounds per mile` : null,
+				travelCostFull ? `客运费用：每位乘客每英里 ${travelCostFull}` : null,
+				shippingCostFull ? `货运费用：每 100 磅货物每英里 ${shippingCostFull}` : null,
 				// endregion
 
 				vehPartLower,
@@ -12452,9 +12452,9 @@ Renderer.item = class {
 		if (item.barDimensions) {
 			damageParts.push(
 				[
-					item.barDimensions.l ? `${Parser.getInchesToFull(item.barDimensions.l, {isShort: true})} long` : "",
-					item.barDimensions.w ? `${Parser.getInchesToFull(item.barDimensions.w, {isShort: true})} wide` : "",
-					item.barDimensions.h ? `${Parser.getInchesToFull(item.barDimensions.h, {isShort: true})} thick` : "",
+					item.barDimensions.l ? `长 ${Parser.getInchesToFull(item.barDimensions.l, {isShort: true})}` : "",
+					item.barDimensions.w ? `宽 ${Parser.getInchesToFull(item.barDimensions.w, {isShort: true})}` : "",
+					item.barDimensions.h ? `厚 ${Parser.getInchesToFull(item.barDimensions.h, {isShort: true})}` : "",
 				]
 					.filter(Boolean)
 					.join(" × "),
@@ -12507,7 +12507,7 @@ Renderer.item = class {
 			entryTypeRarity: [typeRarity, ptAttunement].filter(Boolean).join(" "),
 			entrySubtype,
 			entryTier: item.tier
-				? `${item.tier} tier`[fnTransform]()
+				? `${{minor: "次要", major: "主要", other: "其他"}[item.tier] || item.tier}级`[fnTransform]()
 				: "",
 		};
 	}
@@ -12793,7 +12793,7 @@ Renderer.item = class {
 	/* -------------------------------------------- */
 
 	static getPropertyName (ent) {
-		return ent.name || (ent.entries || ent.entriesTemplate)[0]?.name || "Unknown";
+		return ent.name || (ent.entries || ent.entriesTemplate)[0]?.name || "未知";
 	}
 
 	static _propertyMap = {};
@@ -12828,7 +12828,7 @@ Renderer.item = class {
 		if (!isIgnoreMissing && !out) {
 			if (!this._ERRORS_LOGGED_MISSING_PROPERTY[uid]) {
 				this._ERRORS_LOGGED_MISSING_PROPERTY[uid] = true;
-				const msg = `Item property "${uid}" not found!`;
+				const msg = `找不到物品属性“${uid}”！`;
 				JqueryUtil.doToast({type: "danger", content: msg});
 				setTimeout(() => { throw new Error(msg); });
 			}
@@ -12847,7 +12847,7 @@ Renderer.item = class {
 		if (existing?.entries || existing?.entriesTemplate) return;
 
 		const cpy = existing || MiscUtil.copyFast(ent);
-		cpy.name = cpy.name || (cpy.entries || cpy.entriesTemplate)[0]?.name || "Unknown";
+		cpy.name = cpy.name || (cpy.entries || cpy.entriesTemplate)[0]?.name || "未知";
 
 		// Merge in data from existing version, if it exists
 		if (existing) {
@@ -12876,7 +12876,7 @@ Renderer.item = class {
 		if (!isIgnoreMissing && !out) {
 			if (!this._ERRORS_LOGGED_MISSING_TYPE[uid]) {
 				this._ERRORS_LOGGED_MISSING_TYPE[uid] = true;
-				const msg = `Item type "${uid}" not found!`;
+				const msg = `找不到物品类型“${uid}”！`;
 				JqueryUtil.doToast({type: "danger", content: msg});
 				setTimeout(() => { throw new Error(msg); });
 			}
@@ -13185,7 +13185,7 @@ Renderer.item = class {
 		delete specificVariant.hasFluff;
 		delete specificVariant.hasFluffImages;
 
-		specificVariant._category = "Specific Variant";
+		specificVariant._category = "特殊变体";
 		specificVariant.baseItem = DataUtil.proxy.getUid("item", baseItem);
 		Object.entries(inherits)
 			// Always apply "remove"s first
@@ -13932,11 +13932,11 @@ Renderer.psionic = class {
 		const costMin = mode.cost.min;
 		const costMax = mode.cost.max;
 		const costString = costMin === costMax ? costMin : `${costMin}-${costMax}`;
-		return `${costString} psi`;
+		return `${costString} 灵能点`;
 	}
 
 	static _enhanceMode_getModeTitleConcentration ({mode}) {
-		return `conc., ${mode.concentration.duration} ${mode.concentration.unit}.`;
+		return `专注，${mode.concentration.duration} ${Parser.spTimeUnitToFull(mode.concentration.unit)}`;
 	}
 
 	/* -------------------------------------------- */
@@ -14069,7 +14069,7 @@ Renderer.table = class {
 			colLabels: [
 				`{@dice ${tableRaw.diceExpression}}`,
 				colLabel1,
-				tableRaw.rollAttitude ? `Attitude` : null,
+				tableRaw.rollAttitude ? `态度` : null,
 			].filter(Boolean),
 			colStyles: [
 				"col-2 text-center",
@@ -14182,7 +14182,7 @@ Renderer.names = class {
 			group: ent,
 			tableRaw: ent,
 			fnGetNameCaption: this.getDisplayName.bind(this),
-			colLabel1: "Name",
+			colLabel1: "名称",
 		});
 
 		return `
@@ -14212,7 +14212,7 @@ Renderer.encounters = class {
 			group: ent,
 			tableRaw: ent,
 			fnGetNameCaption: this.getDisplayName.bind(this),
-			colLabel1: "Encounter",
+			colLabel1: "遭遇",
 		});
 
 		return `
@@ -14308,7 +14308,7 @@ Renderer.vehicle = class {
 						? `基于《${Parser.sourceJsonToAbv(Parser.SRC_DMG)}》p242 “特殊旅行步调”`
 						: `基于《${Parser.sourceJsonToAbv(Parser.SRC_XDMG)}》p39 “旅行步调”`
 					: null,
-				entryInitiative: ent.initiative ? `{@b Initiative} {@initiative ${ent.initiative}}` : null,
+				entryInitiative: ent.initiative ? `{@b 先攻} {@initiative ${ent.initiative}}` : null,
 
 				entriesOtherActions: entriesOtherActions.length ? entriesOtherActions : null,
 				entriesOtherOthers: entriesOtherOthers.length ? entriesOtherOthers : null,
@@ -14322,7 +14322,7 @@ Renderer.vehicle = class {
 				items: [
 					{
 						type: "item",
-						name: `Locomotion (${loc.mode})`,
+						name: `移动方式（${loc.mode}）`,
 						entries: loc.entries,
 					},
 				],
@@ -14457,7 +14457,7 @@ Renderer.vehicle = class {
 					if (!pace) return null;
 
 					const asNum = Parser.vulgarToNumber(pace);
-					return `{@tip ${isMulti && mode !== "walk" ? `${mode} ` : ""}${pace} mph|${asNum * 24}里每天}`;
+					return `{@tip ${isMulti && mode !== "walk" ? `${Parser.speedToCn(mode)} ` : ""}${pace} 英里／小时|每天 ${asNum * 24} 英里}`;
 				})
 				.filter(Boolean)
 				.join(", ");
@@ -14779,13 +14779,13 @@ Renderer.vehicle = class {
 			const dexMod = Parser.getAbilityModNumber(ent.dex);
 
 			const ptDtMt = [
-				ent.hp.dt != null ? `damage threshold ${ent.hp.dt}` : null,
-				ent.hp.mt != null ? `mishap threshold ${ent.hp.mt}` : null,
+				ent.hp.dt != null ? `伤害阈值 ${ent.hp.dt}` : null,
+				ent.hp.mt != null ? `事故阈值 ${ent.hp.mt}` : null,
 			]
 				.filter(Boolean)
 				.join(", ");
 
-			const ptAc = ent.ac ?? dexMod === 0 ? `19` : `${19 + dexMod} (19 while motionless)`;
+			const ptAc = ent.ac ?? dexMod === 0 ? `19` : `${19 + dexMod}（静止时为 19）`;
 
 			return {
 				entrySizeWeight: `{@i ${Parser.sizeAbvToFull(ent.size)}载具 (${ent.weight.toLocaleStringVe()}磅)}`,
@@ -14796,8 +14796,8 @@ Renderer.vehicle = class {
 				entrySpeed: `{@b 速度} ${ent.speed}尺`,
 				entrySpeedNote: `[{@b 旅行步调} ${Math.floor(ent.speed / 10)}英里/小时 (${Math.floor(ent.speed * 24 / 10)}英里/日)]`,
 				entrySpeedNoteTitle: VetoolsConfig.get("styleSwitcher", "style") === "classic"
-					? `基于《${Parser.sourceJsonToAbv(Parser.SRC_DMG)}》p242 “特殊旅行步调”`
-					: `基于《${Parser.sourceJsonToAbv(Parser.SRC_XDMG)}》p39 “旅行步调”`,
+					? `基于《${Parser.sourceJsonToAbv(Parser.SRC_DMG)}》第 242 页“特殊旅行步调”`
+					: `基于《${Parser.sourceJsonToAbv(Parser.SRC_XDMG)}》第 39 页“旅行步调”`,
 			};
 		}
 	};
@@ -14812,7 +14812,7 @@ Renderer.vehicle = class {
 		const ptActionStation = Renderer.monster.getCompactRenderedStringSection({
 			ent,
 			renderer,
-			title: "Action Stations",
+			title: "动作站",
 			key: "actionStation",
 			depth: 2,
 			styleHint: opts.styleHint,
@@ -14820,7 +14820,7 @@ Renderer.vehicle = class {
 		const ptReaction = Renderer.monster.getCompactRenderedStringSection({
 			ent,
 			renderer,
-			title: "Reactions",
+			title: "反应",
 			key: "reaction",
 			depth: 2,
 			styleHint: opts.styleHint,
@@ -14843,7 +14843,7 @@ Renderer.vehicle = class {
 	}
 
 	static getInfwarCreatureCapacity (veh) {
-		return `${veh.capCreature} Medium creatures`;
+		return `${veh.capCreature} 个中型生物`;
 	}
 
 	static pGetFluff (veh) {
@@ -14878,7 +14878,7 @@ Renderer.vehicleUpgrade = class {
 				? `{@i ${summary}}`
 				: null,
 			entryCost: ent.cost != null
-				? `{@b Cost:} ${Parser.itemValueToFullMultiCurrency({value: ent.cost}, {styleHint})}`
+				? `{@b 费用：} ${Parser.itemValueToFullMultiCurrency({value: ent.cost}, {styleHint})}`
 				: null,
 		};
 	}
@@ -15088,8 +15088,8 @@ Renderer.charoption = class {
 	}
 
 	static _OPTION_TYPE_ENTRIES = {
-		"RF:B": I18nUtil.LANGUAGES_INDEX === "zh_CN" ? `{@note 你可以用此特性来替换背景中的标准特性。}` : `{@note You may replace the standard feature of your background with this feature.}`,
-		"CS": I18nUtil.LANGUAGES_INDEX === "zh_CN" ? `{@note 参阅{@adventure 角色秘密|IDRotF|0|角色秘密}章节。}` : `{@note See the {@adventure Character Secrets|IDRotF|0|character secrets} section for more information.}`,
+		"RF:B": ["zh_CN", "zh-Hant"].includes(I18nUtil.LANGUAGES_INDEX) ? `{@note 你可以用此特性来替换背景中的标准特性。}` : `{@note You may replace the standard feature of your background with this feature.}`,
+		"CS": ["zh_CN", "zh-Hant"].includes(I18nUtil.LANGUAGES_INDEX) ? `{@note 参阅{@adventure 角色秘密|IDRotF|0|角色秘密}章节。}` : `{@note See the {@adventure Character Secrets|IDRotF|0|character secrets} section for more information.}`,
 	};
 
 	static getOptionTypePreText (ent) {
@@ -15425,7 +15425,7 @@ Renderer.recipe = class {
 				if (ixStart !== 0 || m[0].length !== pt.length) return m[0];
 
 				const originalValue = Renderer.applyProperties(m.last().tagAmount, objOriginal);
-				return `{@help ${m.last().tagAmount}|In the original recipe: ${originalValue}}`;
+				return `{@help ${m.last().tagAmount}|原配方中的用量：${originalValue}}`;
 			}))
 			.join("");
 	}
@@ -15528,7 +15528,7 @@ Renderer.crochetPattern = class {
 		${Renderer.utils.getNameTr(ent, {page: UrlUtil.PG_HOMECRAFTS})}
 
 		<tr><td colspan="6">
-			<i>Skill Level: ${renderer.render(entrySkillLevel)}.${entryDesignedBy ? ` Designed by ${renderer.render(entryDesignedBy)}.` : ""}</i></td>
+			<i>技能等级：${renderer.render(entrySkillLevel)}。${entryDesignedBy ? ` 设计者：${renderer.render(entryDesignedBy)}。` : ""}</i></td>
 		</td></tr>
 
 		<tr><td colspan="6">
@@ -15542,15 +15542,15 @@ Renderer.crochetPattern = class {
 
 				${ent.notions?.length ? `<div class="ve-rd-plaintext__wrp-sidebar ve-mt-4"><div class="ve-bold ve-mb-1 ve-small-caps">配件</div><div>${renderer.render({entries: ent.notions})}</div></div>` : ""}
 
-				${ent.gauge?.length ? `<div class="ve-rd-plaintext__wrp-sidebar ve-mt-4"><div class="ve-bold ve-mb-1 ve-small-caps">Gauge</div><div>${renderer.render({entries: ent.gauge})}</div></div>` : ""}
+				${ent.gauge?.length ? `<div class="ve-rd-plaintext__wrp-sidebar ve-mt-4"><div class="ve-bold ve-mb-1 ve-small-caps">计量</div><div>${renderer.render({entries: ent.gauge})}</div></div>` : ""}
 
-				${ent.stitches?.length ? `<div class="ve-rd-plaintext__wrp-sidebar ve-mt-4"><div class="ve-bold ve-mb-1 ve-small-caps">Special Stitches</div><div>${renderer.render({entries: ent.stitches})}</div></div>` : ""}
+				${ent.stitches?.length ? `<div class="ve-rd-plaintext__wrp-sidebar ve-mt-4"><div class="ve-bold ve-mb-1 ve-small-caps">特殊针法</div><div>${renderer.render({entries: ent.stitches})}</div></div>` : ""}
 
-				${ent.abbreviations?.length ? `<div class="ve-rd-plaintext__wrp-sidebar ve-mt-4"><div class="ve-bold ve-mb-1 ve-small-caps">Special Abbreviations</div><div>${renderer.render({entries: ent.abbreviations})}</div></div>` : ""}
+				${ent.abbreviations?.length ? `<div class="ve-rd-plaintext__wrp-sidebar ve-mt-4"><div class="ve-bold ve-mb-1 ve-small-caps">特殊缩写</div><div>${renderer.render({entries: ent.abbreviations})}</div></div>` : ""}
 
-				${ent.notes?.length ? `<div class="ve-rd-plaintext__wrp-sidebar ve-mt-4"><div class="ve-bold ve-mb-1 ve-small-caps">Notes</div><div>${renderer.render({entries: ent.notes})}</div></div>` : ""}
+				${ent.notes?.length ? `<div class="ve-rd-plaintext__wrp-sidebar ve-mt-4"><div class="ve-bold ve-mb-1 ve-small-caps">备注</div><div>${renderer.render({entries: ent.notes})}</div></div>` : ""}
 
-				${ent.finishing?.length ? `<div class="ve-rd-plaintext__wrp-sidebar ve-mt-4"><div class="ve-bold ve-mb-1 ve-small-caps">Finishing</div><div>${renderer.render({entries: ent.finishing})}</div></div>` : ""}
+				${ent.finishing?.length ? `<div class="ve-rd-plaintext__wrp-sidebar ve-mt-4"><div class="ve-bold ve-mb-1 ve-small-caps">收尾</div><div>${renderer.render({entries: ent.finishing})}</div></div>` : ""}
 			</div>
 
 			<div class="ve-pl-2 ve-flex-2 ve-rd-plaintext__wrp-primary ve-overflow-x-auto">
@@ -15592,13 +15592,15 @@ Renderer.card = class {
 	static getFullEntries (ent, {backCredit = null} = {}) {
 		const entries = [...ent.entries || []];
 		if (ent.suit && (ent.valueName || ent.value)) {
-			const suitAndValue = `${((ent.valueName || "") || Parser.numberToText(ent.value)).toTitleCase()} of ${ent.suit.toTitleCase()}`;
-			if (suitAndValue.toLowerCase() !== ent.name.toLowerCase()) entries.unshift(`{@i ${suitAndValue}}`);
+			const valueName = ((ent.valueName || "") || Parser.numberToText(ent.value)).toTitleCase();
+			const suitName = ent.suit.toTitleCase();
+			const suitAndValue = `${valueName} of ${suitName}`;
+			if (suitAndValue.toLowerCase() !== ent.name.toLowerCase()) entries.unshift(`{@i ${suitName}的${valueName}}`);
 		}
 
 		const ptCredits = [
-			ent.face?.credit ? `art credit: ${ent.face?.credit}` : null,
-			(backCredit || ent.back?.credit) ? `art credit (reverse): ${backCredit || ent.back?.credit}` : null,
+			ent.face?.credit ? `插画署名：${ent.face?.credit}` : null,
+			(backCredit || ent.back?.credit) ? `背面插画署名：${backCredit || ent.back?.credit}` : null,
 		]
 			.filter(Boolean)
 			.join(", ")
@@ -15624,7 +15626,7 @@ Renderer.card = class {
 Renderer.deck = class {
 	static getCompactRenderedString (ent) {
 		const lstCards = {
-			name: "Cards",
+			name: "卡牌",
 			entries: [
 				{
 					type: "list",
@@ -15752,8 +15754,8 @@ Renderer.facility = class {
 
 		const {cost, time} = costTimeInfo;
 
-		const ptTxt = `${cost} GP, ${time} days`;
-		const ptTipBasic = `${cost} GP and ${time} days to add`;
+		const ptTxt = `${cost} 金币，${time} 天`;
+		const ptTipBasic = `建造需要 ${cost} 金币和 ${time} 天`;
 
 		const spcPrev = Renderer.facility._SPACE_PROGRESSION[Renderer.facility._SPACE_PROGRESSION.indexOf(spc) - 1];
 		const costTimeInfoPrev = Renderer.facility._SPACE_TO_COST_TIME_BASIC[spcPrev];
@@ -15761,7 +15763,7 @@ Renderer.facility = class {
 
 		const {cost: costPrev, time: timePrev} = costTimeInfoPrev;
 
-		return `{@tip ${ptTxt}|${ptTipBasic}, or, ${cost - costPrev} GP and ${time - timePrev} days to expand from a ${spcPrev.toTitleCase()} facility}`;
+		return `{@tip ${ptTxt}|${ptTipBasic}；或花费 ${cost - costPrev} 金币和 ${time - timePrev} 天，从${{cramped: "狭小", roomy: "宽敞", vast: "广阔"}[spcPrev] || spcPrev}设施扩建}`;
 	}
 
 	/* -------------------------------------------- */
@@ -15829,7 +15831,7 @@ Renderer.sense = class {
 Renderer.itemProperty = class {
 	static getCompactRenderedString (ent) {
 		const faux = {
-			name: ent.name || (ent.entries || ent.entriesTemplate)[0]?.name || "Unknown",
+			name: ent.name || (ent.entries || ent.entriesTemplate)[0]?.name || "未知",
 			source: ent.source,
 		};
 
@@ -15986,15 +15988,15 @@ Renderer.generic = class {
 		],
 		groups: {
 			languagesStandard: {
-				name: "Standard Languages",
+				name: "标准语言",
 			},
 			languagesExotic: {
-				name: "Exotic Languages",
-				hint: "With your DM's permission, you can choose an exotic language.",
+				name: "异域语言",
+				hint: "经 DM 允许，你可以选择一种异域语言。",
 			},
 			languagesSecret: {
-				name: "Secret Languages",
-				hint: "With your DM's permission, you can choose a secret language.",
+				name: "秘密语言",
+				hint: "经 DM 允许，你可以选择一种秘密语言。",
 			},
 		},
 	};
@@ -16231,7 +16233,7 @@ Renderer.generic = class {
 					case "instant":
 						return `${I18nUtil.get("page.spells.instantaneous")}${ptCondition}`;
 					case "timed":
-						if (I18nUtil.LANGUAGES_INDEX === "zh_CN") {
+						if (["zh_CN", "zh-Hant"].includes(I18nUtil.LANGUAGES_INDEX)) {
 							return `${duration.concentration ? `{@status ${I18nUtil.get("page.spells.concentration")}${ptSrcStatus}}, ` : ""}${duration.concentration || duration.duration.upTo ? "至多" : ""}${duration.duration.amount} ${Parser.spTimeUnitToFull(duration.duration.type)}${ptCondition}`;
 						}
 						return `${duration.concentration ? `{@status ${I18nUtil.get("page.spells.concentration")}${ptSrcStatus}}, ` : ""}${duration.concentration ? "u" : duration.duration.upTo ? "U" : ""}${duration.concentration || duration.duration.upTo ? "p to " : ""}${duration.duration.amount} ${duration.duration.amount === 1 ? duration.duration.type : `${duration.duration.type}s`}${ptCondition}`;
@@ -16246,7 +16248,7 @@ Renderer.generic = class {
 			});
 
 		return {
-			entryDuration: `${outParts.joinConjunct(hasSubOr ? "; " : ", ", " or ")}${durations.length > 1 ? " (see below)" : ""}`,
+			entryDuration: `${outParts.joinConjunct(hasSubOr ? "；" : "、", "或")}${durations.length > 1 ? "（见下文）" : ""}`,
 		};
 	}
 
@@ -16355,27 +16357,27 @@ Renderer.hover = class {
 
 		Renderer.hover._contextMenu = ContextUtil.getMenu([
 			new ContextUtil.Action(
-				"Maximize All",
+				"全部展开",
 				() => {
 					veEm(`.ve-hoverborder[data-perm="true"]`).forEach(ele => ele.vee.attr("data-display-title", "false"));
 				},
 			),
 			new ContextUtil.Action(
-				"Minimize All",
+				"全部收起",
 				() => {
 					veEm(`.ve-hoverborder[data-perm="true"]`).forEach(ele => ele.vee.attr("data-display-title", "true"));
 				},
 			),
 			null,
 			new ContextUtil.Action(
-				"Close Others",
+				"关闭其他窗口",
 				() => {
 					const hoverId = Renderer.hover._contextMenuLastClicked?.hoverId;
 					Renderer.hover._doCloseAllWindows({hoverIdBlocklist: new Set([hoverId])});
 				},
 			),
 			new ContextUtil.Action(
-				"Close All",
+				"关闭全部窗口",
 				() => Renderer.hover._doCloseAllWindows(),
 			),
 		]);
@@ -17215,12 +17217,12 @@ Renderer.hover = class {
 		const brdEleTopRhs = veT`<div class="ve-flex ve-ml-auto ve-no-shrink"></div>`.vee.appendTo(brdrTop);
 
 		if (opts.pageUrl && !position.window._IS_POPOUT && !Renderer.get().isInternalLinksDisabled()) {
-			const btnGotoPage = veT`<a class="ve-hwin__top-border-icon glyphicon glyphicon-modal-window" title="Go to Page" href="${opts.pageUrl}"></a>`
+			const btnGotoPage = veT`<a class="ve-hwin__top-border-icon glyphicon glyphicon-modal-window" title="前往页面" href="${opts.pageUrl}"></a>`
 				.vee.appendTo(brdEleTopRhs);
 		}
 
 		if (!position.window._IS_POPOUT && !opts.isPopout) {
-			const btnPopout = veT`<span class="ve-hwin__top-border-icon glyphicon glyphicon-new-window hvr__popout" title="Open as Popup Window"></span>`
+			const btnPopout = veT`<span class="ve-hwin__top-border-icon glyphicon glyphicon-new-window hvr__popout" title="作为弹窗打开"></span>`
 				.vee.onn("click", evt => {
 					evt.stopPropagation();
 					return Renderer.hover._getShowWindow_pDoPopout({eleHov, position, fnsCleanup, hoverId, opts, hoverWindow, eleContent}, {evt});
@@ -17232,7 +17234,7 @@ Renderer.hover = class {
 			const btnPopout = veE({
 				tag: "span",
 				clazz: `ve-hwin__top-border-icon ve-hwin__top-border-icon--text`,
-				title: "Show Source Data",
+				title: "显示源数据",
 				txt: "{}",
 				click: evt => {
 					evt.stopPropagation();
@@ -17242,7 +17244,7 @@ Renderer.hover = class {
 						Renderer.hover.getHoverContent_statsCode(opts.sourceData),
 						Renderer.hover.getWindowPositionFromEvent(evt),
 						{
-							title: [opts.sourceData._displayName || opts.sourceData.name, "Source Data"].filter(Boolean).join(" \u2014 "),
+							title: [opts.sourceData._displayName || opts.sourceData.name, "源数据"].filter(Boolean).join(" \u2014 "),
 							isPermanent: true,
 							isBookContent: true,
 						},
@@ -17252,7 +17254,7 @@ Renderer.hover = class {
 			brdEleTopRhs.vee.appends(btnPopout);
 		}
 
-		const btnClose = veT`<span class="ve-hwin__top-border-icon glyphicon glyphicon-remove" title="Close (CTRL to Close All)"></span>`
+		const btnClose = veT`<span class="ve-hwin__top-border-icon glyphicon glyphicon-remove" title="关闭（按住 Ctrl 可关闭全部）"></span>`
 			.vee.onn("click", (evt) => {
 				evt.stopPropagation();
 
@@ -17638,7 +17640,7 @@ Renderer.hover = class {
 			isTitleCase = false,
 		} = {},
 	) {
-		if (isLowerCase && isTitleCase) throw new Error(`"isLowerCase" 和 "isTitleCase" are mutually exclusive!`);
+		if (isLowerCase && isTitleCase) throw new Error(`“isLowerCase”和“isTitleCase”不能同时启用！`);
 
 		const name = isLowerCase ? ent.name.toLowerCase() : isTitleCase ? ent.name.toTitleCase() : ent.name;
 
@@ -17875,7 +17877,7 @@ Renderer.hover = class {
 	static getHoverContent_statsCode (toRender, {isSkipClean = false, title = null} = {}) {
 		const cleanCopy = isSkipClean ? toRender : DataUtil.cleanJson(MiscUtil.copyFast(toRender));
 		return Renderer.hover.getHoverContent_miscCode(
-			title || [cleanCopy.name, "Source Data"].filter(Boolean).join(" \u2014 "),
+			title || [cleanCopy.name, "源数据"].filter(Boolean).join(" \u2014 "),
 			JSON.stringify(cleanCopy, null, "\t"),
 		);
 	}

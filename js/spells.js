@@ -4,32 +4,32 @@ class SpellsSublistManager extends SublistManager {
 	static _getRowTemplate () {
 		return [
 			new SublistCellTemplate({
-				name: "Name",
+				name: "名称",
 				css: "ve-bold ve-col-3-2 ve-pl-0 ve-pr-1",
 				colStyle: "",
 			}),
 			new SublistCellTemplate({
-				name: "Level",
+				name: "环阶",
 				css: "ve-capitalize ve-col-1-5 ve-px-1 ve-text-center",
 				colStyle: "text-center",
 			}),
 			new SublistCellTemplate({
-				name: "Time",
+				name: "施法时间",
 				css: "ve-col-1-8 ve-px-1 ve-text-center",
 				colStyle: "text-center",
 			}),
 			new SublistCellTemplate({
-				name: "School",
+				name: "学派",
 				css: "ve-capitalize ve-col-1-6 ve-px-1 ve-text-center",
 				colStyle: "text-center",
 			}),
 			new SublistCellTemplate({
-				name: "C.",
+				name: "专注",
 				css: "concentration--sublist ve-col-0-7 ve-px-1 ve-text-center",
 				colStyle: "text-center",
 			}),
 			new SublistCellTemplate({
-				name: "Range",
+				name: "距离",
 				css: "range ve-col-3-2 ve-pl-1 ve-pr-0 ve-text-right",
 				colStyle: "text-right",
 			}),
@@ -107,9 +107,9 @@ class SpellPageBookView extends ListPageBookView {
 
 	constructor (opts) {
 		super({
-			pageTitle: "Spells Book View",
-			nameSingular: "spell",
-			namePlural: "spells",
+			pageTitle: "法术书籍视图",
+			nameSingular: "法术",
+			namePlural: "法术",
 			propMarkdown: "spell",
 			...opts,
 		});
@@ -347,7 +347,7 @@ class SpellsPage extends ListPageMultiSource {
 				<span class="ve-col-1-5 ve-px-1 ve-text-center">${PageFilterSpells.getTblLevelStr(spell).qq()}</span>
 				<span class="ve-col-1-7 ve-px-1 ve-text-center">${time.qq()}</span>
 				<span class="ve-col-1-2 ve-px-1 ${schoolClassName.qq()} ve-text-center" title="${Parser.spSchoolAndSubschoolsAbvsToFull(spell.school, spell.subschools).qq()}" ${Parser.spSchoolAbvToStyle(spell.school) || ""}>${school.qq()}</span>
-				<span class="ve-col-0-6 ve-px-1 ve-text-center" title="Concentration">${concentration}</span>
+				<span class="ve-col-0-6 ve-px-1 ve-text-center" title="专注">${concentration}</span>
 				<span class="ve-col-2-4 ve-px-1 ve-text-right">${range.qq()}</span>
 				<span class="ve-col-1-7 ve-text-center ${Parser.sourceJsonToSourceClassname(spell.source).qq()} ve-pl-1 ve-pr-0" title="${`${Parser.sourceJsonToFull(spell.source)}${Renderer.utils.getSourceSubText(spell)}`.qq()}">${source.qq()}</span>
 			</a>`,

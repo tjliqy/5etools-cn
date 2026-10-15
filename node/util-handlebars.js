@@ -33,11 +33,11 @@ export class UtilHandlebars {
 		 * @link Source: http://doginthehat.com.au/2012/02/comparison-block-helper-for-handlebars-templates/
 		 */
 		Handlebars.registerHelper("compare", function (lvalue, rvalue, options) {
-			if (arguments.length < 3) throw new Error(`Handlebars Helper "compare" needs 2 parameters`);
+			if (arguments.length < 3) throw new Error(`Handlebars 辅助函数“compare”需要两个参数`);
 
 			const operator = options.hash.operator || "==";
 
-			if (!UtilHandlebars._COMPARE_OPERATORS[operator]) throw new Error(`Handlebars Helper "compare" unknown operator: "${operator}"`);
+			if (!UtilHandlebars._COMPARE_OPERATORS[operator]) throw new Error(`Handlebars 辅助函数“compare”的运算符未知：“${operator}”`);
 
 			if (UtilHandlebars._COMPARE_OPERATORS[operator](lvalue, rvalue)) return options.fn(this);
 			else return options.inverse(this);

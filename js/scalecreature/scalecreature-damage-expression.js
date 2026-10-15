@@ -60,10 +60,10 @@ export class ScaleCreatureDamageExpression {
 
 		toString () {
 			return [
-				`Original expression (approx): ${this.numDice}d${this.diceFaces} + ${this.modOut}`,
-				`Current formula: ${this.getDiceExpression()}`,
-				`Current average: ${ScaleCreatureUtils.getDiceExpressionAverage(this.getDiceExpression())}`,
-				`Target range: ${this.dprTargetMin}-${this.dprTargetMax}`,
+				`原始表达式（约）：${this.numDice}d${this.diceFaces} + ${this.modOut}`,
+				`当前公式：${this.getDiceExpression()}`,
+				`当前平均值：${ScaleCreatureUtils.getDiceExpressionAverage(this.getDiceExpression())}`,
+				`目标范围：${this.dprTargetMin}-${this.dprTargetMax}`,
 			]
 				.join("\n");
 		}

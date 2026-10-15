@@ -4,7 +4,7 @@ import "../js/utils.js";
 import "../js/utils-config.js";
 
 function handleFail () {
-	console.error("Tests failed!");
+	console.error("测试失败！");
 	process.exit(1);
 }
 
@@ -26,7 +26,7 @@ async function main () {
 }
 
 main()
-	.then(() => console.log("Tests complete."))
+	.then(() => console.log("测试完成。"))
 	.catch(e => {
 		console.error(e);
 		throw e;

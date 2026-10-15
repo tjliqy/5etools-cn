@@ -394,7 +394,7 @@ export class BookUtil {
 		const href = ~this.curRender.chapter
 			? this._getHrefShowAll(bookId)
 			: `#${UrlUtil.encodeForHash(bookId)}`;
-		const btnEntireBook = veT`<a href="${href}" class="ve-btn ve-btn-xs ve-btn-default ve-print__hidden ${~this.curRender.chapter ? "" : "ve-active"}" title="Warning: Slow">查看完整${Parser.getPropDisplayName(BookUtil.contentType)}</a>`;
+		const btnEntireBook = veT`<a href="${href}" class="ve-btn ve-btn-xs ve-btn-default ve-print__hidden ${~this.curRender.chapter ? "" : "ve-active"}" title="警告：加载可能较慢">查看完整${Parser.getPropDisplayName(BookUtil.contentType)}</a>`;
 
 		if (this._isNarrow == null) {
 			const saved = StorageUtil.syncGetForPage("narrowMode");
@@ -406,7 +406,7 @@ export class BookUtil {
 			btnToggleNarrow.vee.toggleClass("ve-active", this._isNarrow);
 			veEs(`#pagecontent`).vee.toggleClass(`bk__stats--narrow`, this._isNarrow);
 		};
-		const btnToggleNarrow = veT`<button class="ve-btn ve-btn-xs ve-btn-default" title="Toggle Narrow Reading Width"><span class="glyphicon glyphicon-resize-small"></span></button>`
+		const btnToggleNarrow = veT`<button class="ve-btn ve-btn-xs ve-btn-default" title="切换窄版阅读宽度"><span class="glyphicon glyphicon-resize-small"></span></button>`
 			.vee.onn("click", () => {
 				this._isNarrow = !this._isNarrow;
 				hdlNarrowUpdate();
@@ -547,7 +547,7 @@ export class BookUtil {
 
 				if (EventUtil.isCtrlMetaKey(evt)) {
 					window.location.href = url;
-					JqueryUtil.showCopiedEffect(ele, {text: "Moved to link!"});
+					JqueryUtil.showCopiedEffect(ele, {text: "已跳转到链接！"});
 					return;
 				}
 
@@ -558,7 +558,7 @@ export class BookUtil {
 				}
 
 				await MiscUtil.pCopyTextToClipboard(url);
-				JqueryUtil.showCopiedEffect(ele, {text: "Copied link!"});
+				JqueryUtil.showCopiedEffect(ele, {text: "链接已复制！"});
 			});
 	}
 
@@ -719,7 +719,7 @@ export class BookUtil {
 	static async _booksHashChange_pHandleFound ({fromIndex, homebrewData, bookId, hashParts, wrpContents, isNewBook}) {
 		document.title = `${fromIndex.name} - 5etools`;
 		veEs(`#page__title`).vee.html(this._booksHashChange_getCleanName(fromIndex));
-		veEs(`#page__subtitle`).vee.html("Browse content. Press <kbd>f</kbd> to find, and <kbd>g</kbd> to go to page.");
+		veEs(`#page__subtitle`).vee.html("浏览内容。按 <kbd>f</kbd> 查找，按 <kbd>g</kbd> 跳转到页面。");
 		await this._pLoadChapter(fromIndex, bookId, hashParts, homebrewData, wrpContents);
 		NavBar.highlightCurrentPage();
 		if (isNewBook) MiscUtil.scrollPageTop();
@@ -739,7 +739,7 @@ export class BookUtil {
 
 		wrpContents.vee.empty();
 		BookUtil.dispBook.vee.empty().vee.html(`<tr><th class="ve-tbl-border" colspan="6"></th></tr>
-			<tr><td colspan="6" class="initial-message initial-message--med book-loading-message">加载失败\u2014无法找到ID为"${bookId}"的${Parser.getArticle(BookUtil.contentType)} ${Parser.getPropDisplayName(BookUtil.contentType)}，可能你需要先从<a href="/managebrew.html" target="_blank">Homebrew</a>中获取。</td></tr><tr><th class="ve-tbl-border" colspan="6"></th></tr>`);
+			<tr><td colspan="6" class="initial-message initial-message--med book-loading-message">加载失败\u2014无法找到 ID 为“${bookId}”的${Parser.getPropDisplayName(BookUtil.contentType)}，可能需要先从<a href="/managebrew.html" target="_blank">自制内容</a>中获取。</td></tr><tr><th class="ve-tbl-border" colspan="6"></th></tr>`);
 
 		this._removeLoadingOverlay();
 
@@ -755,7 +755,7 @@ export class BookUtil {
 			Hist.replaceHistoryHash(nxtHash);
 			return BookUtil.booksHashChange();
 		} else {
-			JqueryUtil.doToast({type: "warning", content: `Could not find page ${pageTerm}!`});
+			JqueryUtil.doToast({type: "warning", content: `找不到第 ${pageTerm} 页！`});
 		}
 	}
 
@@ -817,19 +817,19 @@ export class BookUtil {
 			});
 
 		// region Mobile only "open find bar" buttons
-		const btnToTop = veT`<button class="ve-btn ve-btn-default ve-btn-sm ve-print__hidden ve-bbl-0" title="To Top"><span class="glyphicon glyphicon-arrow-up"></span></button>`
+		const btnToTop = veT`<button class="ve-btn ve-btn-default ve-btn-sm ve-print__hidden ve-bbl-0" title="回到顶部"><span class="glyphicon glyphicon-arrow-up"></span></button>`
 			.vee.onn("click", evt => {
 				evt.stopPropagation();
 				MiscUtil.scrollPageTop();
 			});
 
-		const btnOpenFind = veT`<button class="ve-btn ve-btn-default ve-btn-sm ve-print__hidden" title="Find"><kbd>f</kbd></button>`
+		const btnOpenFind = veT`<button class="ve-btn ve-btn-default ve-btn-sm ve-print__hidden" title="查找"><kbd>f</kbd></button>`
 			.vee.onn("click", evt => {
 				evt.stopPropagation();
 				BookUtil._showSearchBox(indexData, bookId, false);
 			});
 
-		const btnOpenGoto = veT`<button class="ve-btn ve-btn-default ve-btn-sm ve-print__hidden ve-bbr-0" title="Go to Page"><kbd>g</kbd></button>`
+		const btnOpenGoto = veT`<button class="ve-btn ve-btn-default ve-btn-sm ve-print__hidden ve-bbr-0" title="跳转到页面"><kbd>g</kbd></button>`
 			.vee.onn("click", evt => {
 				evt.stopPropagation();
 				BookUtil._showSearchBox(indexData, bookId, true);
@@ -856,12 +856,12 @@ export class BookUtil {
 				evt.stopPropagation();
 			});
 
-		const dispNoResults = veT`<div class="f-all-out ve-py-1 ve-btl-5p ve-btr-5p"><span class="ve-italic ve-dnd-font">No results found.</span></div>`
+		const dispNoResults = veT`<div class="f-all-out ve-py-1 ve-btl-5p ve-btr-5p"><span class="ve-italic ve-dnd-font">未找到结果。</span></div>`
 			.vee.hide();
 		const wrpResults = veT`<div class="f-all-out ve-bbl-5p ve-bbr-5p"></div>`
 			.vee.hide();
 
-		const iptSearch = veT`<input class="ve-form-control" placeholder="${isPageMode ? "Go to page number..." : "Find text..."}">`
+		const iptSearch = veT`<input class="ve-form-control" placeholder="${isPageMode ? "跳转到页码……" : "查找文字……"}">`
 			.vee.onn("keydown", (evt) => {
 				evt.stopPropagation();
 
@@ -884,7 +884,7 @@ export class BookUtil {
 				if (isPageMode) {
 					if (!/^\d+$/.exec(term)) {
 						return JqueryUtil.doToast({
-							content: `Please enter a valid page number.`,
+							content: `请输入有效页码。`,
 							type: "danger",
 						});
 					}
@@ -952,7 +952,7 @@ export class BookUtil {
 							link.vee.onn("click", () => lnkPreview.vee.trigger("click"));
 						} else {
 							if (foundEntryInfo.page) {
-								const ptPage = veT`<span>Page ${foundEntryInfo.page}</span>`;
+								const ptPage = veT`<span>第 ${foundEntryInfo.page} 页</span>`;
 								row.vee.appends(ptPage);
 							}
 						}
@@ -978,10 +978,10 @@ export class BookUtil {
 		BookUtil.curRender.lnksHeader = {};
 		BookUtil.curRender.wrpLnksHeader = {};
 
-		BookUtil.curRender.btnToggleExpandAll = veT`<span title="Expand All" class="ve-px-2 ve-bold ve-py-1p ve-no-select ve-clickable ve-no-select">${BookUtil.isDefaultExpandedContents ? `[\u2212]` : `[+]`}</span>`
+		BookUtil.curRender.btnToggleExpandAll = veT`<span title="全部展开" class="ve-px-2 ve-bold ve-py-1p ve-no-select ve-clickable ve-no-select">${BookUtil.isDefaultExpandedContents ? `[\u2212]` : `[+]`}</span>`
 			.vee.onn("click", () => {
 				const isExpanded = BookUtil.curRender.btnToggleExpandAll.vee.txt() !== `[+]`;
-				BookUtil.curRender.btnToggleExpandAll.vee.txt(isExpanded ? `[+]` : `[\u2212]`).vee.tooltip(isExpanded ? `Collapse All` : `Expand All`);
+				BookUtil.curRender.btnToggleExpandAll.vee.txt(isExpanded ? `[+]` : `[\u2212]`).vee.tooltip(isExpanded ? `全部折叠` : `全部展开`);
 
 				BookUtil.curRender.btnsToggleExpand.forEach(btn => {
 					if (!btn) return;

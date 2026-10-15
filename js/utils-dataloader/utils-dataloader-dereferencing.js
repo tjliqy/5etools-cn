@@ -49,7 +49,7 @@ export class DataLoaderDereferencerFacade {
 			loadspace = null,
 		} = {},
 	) {
-		if (page.toLowerCase().endsWith(".html")) throw new Error(`Could not dereference "${page}" content. Dereferencing is only supported for props!`);
+		if (page.toLowerCase().endsWith(".html")) throw new Error(`无法解析“${page}”的内容引用。仅支持按数据属性解析引用！`);
 
 		if (!entities || !entities.length) return {};
 

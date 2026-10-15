@@ -9,7 +9,7 @@ export class AreaTagger {
 	_getNewTag () {
 		let hexTag;
 		do {
-			if (this._maxTag >= 4095) throw new Error("Exhausted tags!");
+			if (this._maxTag >= 4095) throw new Error("标签编号已用尽！");
 			hexTag = this._maxTag.toString(16).padStart(3, "0");
 			this._maxTag++;
 		} while (this._existingTags.has(hexTag));

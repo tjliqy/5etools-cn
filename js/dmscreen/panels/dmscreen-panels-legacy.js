@@ -17,9 +17,9 @@ export class AdventureOrBookView {
 		this._titlePrev = veT`<div class="dm-book__controls-title ve-overflow-ellipsis ve-text-right"></div>`;
 		this._titleNext = veT`<div class="dm-book__controls-title ve-overflow-ellipsis"></div>`;
 
-		const btnPrev = veT`<button class="ve-btn ve-btn-xs ve-btn-default ve-mr-2" title="Previous Chapter"><span class="glyphicon glyphicon-chevron-left"></span></button>`
+		const btnPrev = veT`<button class="ve-btn ve-btn-xs ve-btn-default ve-mr-2" title="上一章"><span class="glyphicon glyphicon-chevron-left"></span></button>`
 			.vee.onn("click", () => this._handleButtonClick(-1));
-		const btnNext = veT`<button class="ve-btn ve-btn-xs ve-btn-default" title="Next Chapter"><span class="glyphicon glyphicon-chevron-right"></span></button>`
+		const btnNext = veT`<button class="ve-btn ve-btn-xs ve-btn-default" title="下一章"><span class="glyphicon glyphicon-chevron-right"></span></button>`
 			.vee.onn("click", () => this._handleButtonClick(1));
 
 		this._wrpContent = veT`<div class="ve-h-100"></div>`;

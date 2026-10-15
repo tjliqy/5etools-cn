@@ -18,7 +18,7 @@ export class UtilsEntityRace {
 		delete ent.ability;
 
 		if (ent.entries) {
-			ent.entries.push(`{@note This species has been migrated for use with 5.5e (2024) rules, as per the rules in the {@book Player's Handbook (2024)|XPHB|2|Backgrounds and Species from Older Books}.}`);
+			ent.entries.push(`{@note 根据{@book 玩家手册（2024）|XPHB|2|Backgrounds and Species from Older Books}中的规则，此种族已调整为适用于 5.5e（2024）规则。}`);
 		}
 
 		return true;

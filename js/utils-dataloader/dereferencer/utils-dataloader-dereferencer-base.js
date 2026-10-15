@@ -53,10 +53,10 @@ export class DataLoaderDereferencerBase {
 
 	/* -------------------------------------------- */
 
-	dereference ({ent, entriesWithoutRefs, toReplaceMeta, ixReplace}) { throw new Error("Unimplemented!"); }
+	dereference ({ent, entriesWithoutRefs, toReplaceMeta, ixReplace}) { throw new Error("尚未实现！"); }
 
 	_getCopyFromCache ({page, entriesWithoutRefs, refUnpacked, refHash}) {
-		if (page.toLowerCase().endsWith(".html")) throw new Error(`Could not dereference "${page}" content. Dereferencing is only supported for props!`);
+		if (page.toLowerCase().endsWith(".html")) throw new Error(`无法解析“${page}”的内容引用。仅支持按数据属性解析引用！`);
 
 		// Prefer content from our active load, where available
 		const out = entriesWithoutRefs[page]?.[refHash]

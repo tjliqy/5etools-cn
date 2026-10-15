@@ -116,8 +116,8 @@ export class FilterSnapshotManager extends BaseComponent {
 			isSilentSelection: false,
 			boxSnapshotDeck: await InputUiUtil.pGetUserEnum({
 				values: [...this._state.boxSnapshotDecks],
-				title: "Select Snapshot Deck",
-				fnDisplay: boxSnapshotDeck => boxSnapshotDeck.entity.manager_name || "(Unnamed)",
+				title: "选择快照集",
+				fnDisplay: boxSnapshotDeck => boxSnapshotDeck.entity.manager_name || "（未命名）",
 				isResolveItem: true,
 			}),
 		};
@@ -137,8 +137,8 @@ export class FilterSnapshotManager extends BaseComponent {
 			isSilentSelection: false,
 			boxSnapshot: await InputUiUtil.pGetUserEnum({
 				values: [...this._state.boxSnapshots],
-				title: "Select Snapshot",
-				fnDisplay: boxSnapshot => boxSnapshot.entity.manager_name || "(Unnamed)",
+				title: "选择快照",
+				fnDisplay: boxSnapshot => boxSnapshot.entity.manager_name || "（未命名）",
 				isResolveItem: true,
 			}),
 		};
@@ -196,7 +196,7 @@ export class FilterSnapshotManager extends BaseComponent {
 
 					this._state.boxSnapshotDeckDefaultId = boxSnapshotDeckInfo.id;
 
-					JqueryUtil.doToast("Took Snapshot and Set as Default!");
+					JqueryUtil.doToast("已创建快照并设为默认！");
 				},
 			),
 			null,
@@ -219,7 +219,7 @@ export class FilterSnapshotManager extends BaseComponent {
 
 		const filterSnapshots = filters
 			.flatMap(filter => filter.getSnapshots());
-		if (!filterSnapshots.length) return JqueryUtil.doToast({type: "warning", content: `All filters are default!`});
+		if (!filterSnapshots.length) return JqueryUtil.doToast({type: "warning", content: `所有筛选条件均为默认值！`});
 
 		const existingBoxSnapshot = this._getExistingSnapshot(
 			this._getNewBoxSnapshot({
@@ -230,16 +230,16 @@ export class FilterSnapshotManager extends BaseComponent {
 		if (
 			existingBoxSnapshot
 			&& !await InputUiUtil.pGetUserBoolean({
-				title: "Duplicate Snapshot",
-				htmlDescription: `<div><p>An existing snapshot &quot;${existingBoxSnapshot.entity.manager_name || "(Unnamed)"}&quot; contains the same filter values.</p><p>Are you sure you want to take this snapshot?</p></div>`,
-				textYes: "Yes",
-				textNo: "Cancel",
+				title: "重复的快照",
+				htmlDescription: `<div><p>已有快照“${existingBoxSnapshot.entity.manager_name || "（未命名）"}”包含相同的筛选值。</p><p>确定仍要创建此快照吗？</p></div>`,
+				textYes: "是",
+				textNo: "取消",
 			})
 		) return null;
 
 		const name = await InputUiUtil.pGetUserString({
-			title: "Snapshot Name",
-			default: nameDefault ? `${nameDefault} Snapshot` : "Snapshot",
+			title: "快照名称",
+			default: nameDefault ? `${nameDefault} 快照` : "快照",
 		});
 		if (!name?.length) return null;
 
@@ -251,8 +251,8 @@ export class FilterSnapshotManager extends BaseComponent {
 
 	async pHandleClick_createSnapshotDeck () {
 		const name = await InputUiUtil.pGetUserString({
-			title: "Snapshot Deck Name",
-			default: "Snapshot Deck",
+			title: "快照集名称",
+			default: "快照集",
 		});
 		if (!name?.length) return;
 
@@ -292,7 +292,7 @@ export class FilterSnapshotManager extends BaseComponent {
 		const snapshotDeck = this.getActiveSnapshotDeck();
 		if (snapshotDeck) return snapshotDeck;
 
-		const boxSnapshotDeckInfo = this.addBoxSnapshotDeck_({manager_name: "Default Deck"});
+		const boxSnapshotDeckInfo = this.addBoxSnapshotDeck_({manager_name: "默认快照集"});
 		this._state.boxSnapshotDeckDefaultId = boxSnapshotDeckInfo.id;
 
 		return boxSnapshotDeckInfo;

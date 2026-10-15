@@ -73,7 +73,7 @@ export class RaceTraitTag {
 								}
 
 								if (!found) {
-									cbWarning(`(${race.name}) Could not determine proficiency tags from "${str}"`);
+									cbWarning(`(${race.name}) 无法从“${str}”确定熟练项标签`);
 								}
 							}
 
@@ -216,7 +216,7 @@ export class RaceLanguageTag {
 			}
 
 			if (t0 === "choose" && t1 === "choose") {
-				return cbWarning(`(${race.name}) Two language "choose" tokens in a row!`);
+				return cbWarning(`(${race.name}) 连续出现两个语言“自选”标记！`);
 			}
 
 			if (t0 === "choose") {
@@ -244,7 +244,7 @@ export class RaceLanguageTag {
 				continue;
 			}
 
-			return cbWarning(`(${race.name}) Mismatched language token in: ${reducedTokensCleaned.join(" ")} (current output is ${sortedTokens.join(" ")})`);
+			return cbWarning(`(${race.name}) 语言标记不匹配：${reducedTokensCleaned.join(" ")}（当前输出：${sortedTokens.join(" ")}）`);
 		}
 
 		let out = {};
@@ -267,7 +267,7 @@ export class RaceLanguageTag {
 				}
 				default: {
 					const n = Parser.textToNumber(t);
-					if (isNaN(n)) return cbWarning(`(${race.name}) Could not parse language token "${t}" as number`);
+					if (isNaN(n)) return cbWarning(`(${race.name}) 无法将语言标记“${t}”解析为数字`);
 					lastNum = n;
 				}
 			}

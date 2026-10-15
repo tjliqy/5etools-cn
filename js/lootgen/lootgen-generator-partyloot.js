@@ -212,8 +212,8 @@ export class LootGenGeneratorPartyLoot extends LootGenGeneratorBase {
 			? this._state.pl_exactLevel
 			: this.constructor._PARTY_LOOT_LEVEL_RANGES[this._state.pl_charLevel];
 		const lootOutput = new this._ClsLootGenOutput({
-			type: `Party Loot: Level ${ptLevel}`,
-			name: I18nUtil.LANGUAGES_INDEX === "zh_CN" ? `队伍{@b 等级 ${ptLevel}}的魔法物品` : `Magic items for a {@b Level ${ptLevel}} Party`,
+			type: `队伍战利品：等级 ${ptLevel}`,
+			name: ["zh_CN", "zh-Hant"].includes(I18nUtil.LANGUAGES_INDEX) ? `队伍{@b 等级 ${ptLevel}}的魔法物品` : `Magic items for a {@b Level ${ptLevel}} Party`,
 			magicItemsByTable,
 			rendererWrapped: this._rendererWrapped,
 		});

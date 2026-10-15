@@ -237,9 +237,9 @@ export class ConverterUiBase extends BaseComponent {
 		if (!this._hasPageNumbers) return;
 
 		const getBtnIncrementDecrement = (dir) => {
-			const verb = ~dir ? "Increment" : "Decrement";
+			const verb = ~dir ? "增加" : "减少";
 			const iconClassName = ~dir ? "glyphicon-plus" : "glyphicon-minus";
-			return veT`<button class="ve-btn ve-btn-xs ve-btn-default" title="${verb} Page Number (SHIFT to ${verb} by 5)"><span class="glyphicon ${iconClassName}"></span></button>`
+			return veT`<button class="ve-btn ve-btn-xs ve-btn-default" title="${verb}页码（按住 Shift 可${verb} 5 页）"><span class="glyphicon ${iconClassName}"></span></button>`
 				.vee.onn("click", evt => this._state.page += dir * (evt.shiftKey ? 5 : 1));
 		};
 
@@ -249,7 +249,7 @@ export class ConverterUiBase extends BaseComponent {
 
 		const dispPage = veT`<div class="ve-mr-2 ve-help">页码</div>`;
 		const hkInputSeparator = () => {
-			dispPage.vee.tooltip(`Note that a line of the form "PAGE=&lt;page number&gt;" in the Input will set the page in the Output, ignoring any value set here. This is especially useful when parsing multiple inputs delimited by a separator (${this._ui.getInputSeparator()}).`);
+			dispPage.vee.tooltip(`输入内容中的“PAGE=&lt;页码&gt;”行会设置输出页码，并覆盖此处的值。解析由分隔符（${this._ui.getInputSeparator()}）分开的多段输入时尤其有用。`);
 		};
 		this._ui.addHookInputSeparator(hkInputSeparator)();
 		fnsCleanup.push(() => this._ui.removeHookInputSeparator(hkInputSeparator));
@@ -264,7 +264,7 @@ export class ConverterUiBase extends BaseComponent {
 				${getBtnIncrementDecrement(1)}
 			</div>
 
-			<label class="ve-flex-v-center" title="Add Page Number">
+			<label class="ve-flex-v-center" title="添加页码">
 				${cbAddPageNumber}
 			</label>
 		</div>`.vee.appendTo(wrpSettings);
@@ -339,11 +339,11 @@ export class ConverterUiBase extends BaseComponent {
 		const cbAddPageNumber = this._hasPageNumbers ? ComponentUiUtil.getCbBool(this, "isAddPageNumber") : null;
 
 		veT`<div class="ve-flex-col">
-			${this._titleCaseFields ? veT`<label class="ve-split-v-center ve-w-100" title="Should the entity's name be converted to title-case? Useful when pasting a name which is all-caps.">
+			${this._titleCaseFields ? veT`<label class="ve-split-v-center ve-w-100" title="是否将条目名称转换为标题大小写？粘贴全大写名称时很有用。">
 				<span class="ve-w-66 ve-no-shrink ve-mr-2 ve-flex-v-center">标题首字母大写</span>
 				${cbTitleCase}
 			</label>` : null}
-			${this._hasPageNumbers ? veT`<label class="ve-split-v-center ve-w-100" title="Should the output include the page field?">
+			${this._hasPageNumbers ? veT`<label class="ve-split-v-center ve-w-100" title="输出是否包含页码字段？">
 				<span class="ve-w-66 ve-no-shrink ve-mr-2 ve-flex-v-center">增加页码</span>
 				${cbAddPageNumber}
 			</label>` : null}
@@ -367,7 +367,7 @@ export class ConverterUiBase extends BaseComponent {
 		);
 
 		veT`<div class="ve-flex-col">
-			<label class="ve-split-v-center ve-w-100" title="Which game version the input text is intended to be used with.">
+			<label class="ve-split-v-center ve-w-100" title="输入文本适用的游戏版本。">
 				<span class="ve-w-66 ve-no-shrink ve-mr-2 ve-flex-v-center">版本</span>
 				${selStyleHint}
 			</label>

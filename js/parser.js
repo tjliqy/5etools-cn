@@ -33,9 +33,9 @@ Parser.attrChooseToFull = function (attList) {
 
 Parser.numberToText = function (number, {isOrdinalForm = false} = {}) {
 	if (number == null) throw new TypeError(`undefined or null object passed to parser`);
-	if (Math.abs(number) >= 100) return isOrdinalForm ? Parser.getOrdinalForm(number) : `${number}`;
+	if (Math.abs(number) >= 100) return isOrdinalForm ? `第${number}` : `${number}`;
 
-	return `${number < 0 ? "negative " : ""}${Parser.numberToText._getPositiveNumberAsText({number: Math.abs(number), isOrdinalForm})}`;
+	return `${number < 0 ? "负" : ""}${Parser.numberToText._getPositiveNumberAsText({number: Math.abs(number), isOrdinalForm})}`;
 };
 
 Parser.numberToText._getPositiveNumberAsText = ({number, isOrdinalForm}) => {
@@ -51,33 +51,33 @@ Parser.numberToText._getPositiveNumberAsText = ({number, isOrdinalForm}) => {
 
 	return preDotRaw === "0"
 		? strPostDot
-		: `${Parser.numberToText._getPositiveIntegerAsText({number: Math.trunc(number), isOrdinalForm})} and ${strPostDot}`;
+		: `${Parser.numberToText._getPositiveIntegerAsText({number: Math.trunc(number), isOrdinalForm})}又${strPostDot}`;
 };
 
 Parser.numberToText._getPostDot = ({postDotRaw}) => {
 	// See also: `Parser.numberToVulgar`
 	switch (postDotRaw) {
-		case "125": return {str: `one-eighth`, isPretty: true};
-		case "2": return {str: `one-fifth`, isPretty: true};
-		case "25": return {str: `one-quarter`, isPretty: true};
-		case "375": return {str: `three-eighths`, isPretty: true};
-		case "4": return {str: `two-fifths`, isPretty: true};
-		case "5": return {str: `one-half`, isPretty: true};
-		case "6": return {str: `three-fifths`, isPretty: true};
-		case "625": return {str: `five-eighths`, isPretty: true};
-		case "75": return {str: `three-quarters`, isPretty: true};
-		case "8": return {str: `four-fifths`, isPretty: true};
-		case "875": return {str: `seven-eighths`, isPretty: true};
+		case "125": return {str: `八分之一`, isPretty: true};
+		case "2": return {str: `五分之一`, isPretty: true};
+		case "25": return {str: `四分之一`, isPretty: true};
+		case "375": return {str: `八分之三`, isPretty: true};
+		case "4": return {str: `五分之二`, isPretty: true};
+		case "5": return {str: `二分之一`, isPretty: true};
+		case "6": return {str: `五分之三`, isPretty: true};
+		case "625": return {str: `八分之五`, isPretty: true};
+		case "75": return {str: `四分之三`, isPretty: true};
+		case "8": return {str: `五分之四`, isPretty: true};
+		case "875": return {str: `八分之七`, isPretty: true};
 
 		default: {
 			// Handle recursive
 			const asNum = Number(`0.${postDotRaw}`);
 
-			if (asNum.toFixed(2) === (1 / 3).toFixed(2)) return {str: `one-third`, isPretty: true};
-			if (asNum.toFixed(2) === (2 / 3).toFixed(2)) return {str: `two-thirds`, isPretty: true};
+			if (asNum.toFixed(2) === (1 / 3).toFixed(2)) return {str: `三分之一`, isPretty: true};
+			if (asNum.toFixed(2) === (2 / 3).toFixed(2)) return {str: `三分之二`, isPretty: true};
 
-			if (asNum.toFixed(2) === (1 / 6).toFixed(2)) return {str: `one-sixth`, isPretty: true};
-			if (asNum.toFixed(2) === (5 / 6).toFixed(2)) return {str: `five-sixths`, isPretty: true};
+			if (asNum.toFixed(2) === (1 / 6).toFixed(2)) return {str: `六分之一`, isPretty: true};
+			if (asNum.toFixed(2) === (5 / 6).toFixed(2)) return {str: `六分之五`, isPretty: true};
 
 			return {str: `${postDotRaw}`, isPretty: false};
 		}
@@ -116,22 +116,13 @@ Parser.numberToText._getPositiveIntegerAsText = ({number, isOrdinalForm}) => {
 		case 90: return Parser.numberToText._getOptionallyOrdinal({number, str: "九十", isOrdinalForm});
 		default: {
 			const str = String(number);
-			return `${Parser.numberToText._getPositiveIntegerAsText({number: Number(`${str[0]}0`)})}-${Parser.numberToText._getPositiveIntegerAsText({number: Number(str[1]), isOrdinalForm})}`;
+			const text = `${Parser.numberToText._getPositiveIntegerAsText({number: Number(`${str[0]}0`)})}${Parser.numberToText._getPositiveIntegerAsText({number: Number(str[1])})}`;
+			return isOrdinalForm ? `第${text}` : text;
 		}
 	}
 };
 
-Parser.numberToText._getOptionallyOrdinal = ({number, str, isOrdinalForm}) => {
-	if (!isOrdinalForm) return str;
-	switch (number) {
-		case 1: return "first";
-		case 2: return "second";
-		case 3: return "third";
-	}
-	if (str.endsWith("y")) return `${str.slice(0, -1)}ieth`;
-	if (str.endsWith("ve")) return `${str.slice(0, -2)}fth`;
-	return `${str}th`;
-};
+Parser.numberToText._getOptionallyOrdinal = ({number, str, isOrdinalForm}) => isOrdinalForm ? `第${str}` : str;
 
 Parser.textToNumber = function (str) {
 	str = str.trim().toLowerCase();
@@ -415,7 +406,7 @@ Parser.raceCreatureTypesToFull = function (creatureTypes) {
 			return [...it.choose]
 				.sort(SortUtil.ascSortLower)
 				.map(sub => Parser.monTypeToFullObj(sub).asText)
-				.joinConjunct(", ", " or ");
+				.joinConjunct("、", "或");
 		})
 		.joinConjunct(hasSubOptions ? "; " : ", ", " 和 ");
 };
@@ -424,7 +415,7 @@ Parser.crToXp = function (cr, {isDouble = false} = {}) {
 	if (cr != null && cr.xp) return (isDouble ? cr.xp * 2 : cr.xp).toLocaleStringVe();
 
 	const toConvert = cr ? (cr.cr || cr) : null;
-	if (toConvert === "Unknown" || toConvert == null || !Parser.XP_CHART_ALT[toConvert]) return "Unknown";
+	if (toConvert === "Unknown" || toConvert == null || !Parser.XP_CHART_ALT[toConvert]) return "未知";
 	// CR 0 creatures can be 0 or 10 XP, but 10 XP is used in almost every case.
 	//   Exceptions, such as MM's Frog and Sea Horse, have their XP set to 0 on the creature
 	if (toConvert === "0") return "10";
@@ -567,24 +558,24 @@ Parser.cnSkillToEn = function (skill) {
 };
 
 Parser.SKILL_TO_SHORT = {
-	"athletics": "ath",
-	"acrobatics": "acro",
-	"sleight of hand": "soh",
-	"stealth": "slth",
-	"arcana": "arc",
-	"history": "hist",
-	"investigation": "invn",
-	"nature": "natr",
-	"religion": "reli",
-	"animal handling": "hndl",
-	"insight": "ins",
-	"medicine": "med",
-	"perception": "perp",
-	"survival": "surv",
-	"deception": "decp",
-	"intimidation": "intm",
-	"performance": "perf",
-	"persuasion": "pers",
+	"athletics": "运动",
+	"acrobatics": "特技",
+	"sleight of hand": "巧手",
+	"stealth": "隐匿",
+	"arcana": "奥秘",
+	"history": "历史",
+	"investigation": "调查",
+	"nature": "自然",
+	"religion": "宗教",
+	"animal handling": "驯兽",
+	"insight": "洞悉",
+	"medicine": "医药",
+	"perception": "察觉",
+	"survival": "生存",
+	"deception": "欺瞒",
+	"intimidation": "威吓",
+	"performance": "表演",
+	"persuasion": "游说",
 };
 
 Parser.skillToShort = function (skill) {
@@ -1029,25 +1020,25 @@ Parser.itemWeightToFull = function (item, isShortForm) {
 		if (vulgarGlyph) return `${integerPart || ""}${vulgarGlyph} 磅${(item.weightNote ? ` ${item.weightNote}` : "")}`;
 
 		// Fall back on decimal pounds or ounces
-		return `${(item.weight < 1 ? item.weight * 16 : item.weight).toLocaleStringVe()} ${item.weight < 1 ? "oz" : "lb"}.${(item.weightNote ? ` ${item.weightNote}` : "")}`;
+		return `${(item.weight < 1 ? item.weight * 16 : item.weight).toLocaleStringVe()} ${item.weight < 1 ? "盎司" : "磅"}${(item.weightNote ? ` ${item.weightNote}` : "")}`;
 	}
 	if (item.weightMult) return isShortForm ? `×${item.weightMult}` : `基础重量 ×${item.weightMult}`;
 	return "";
 };
 
 Parser.ITEM_RECHARGE_TO_FULL = {
-	round: "Every Round",
-	restShort: "Short Rest",
-	restLong: "Long Rest",
-	dawn: "Dawn",
-	dusk: "Dusk",
-	midnight: "Midnight",
-	week: "Week",
-	month: "Month",
-	year: "Year",
-	decade: "Decade",
-	century: "Century",
-	special: "Special",
+	round: "每轮",
+	restShort: "短休后",
+	restLong: "长休后",
+	dawn: "黎明",
+	dusk: "黄昏",
+	midnight: "午夜",
+	week: "每周",
+	month: "每月",
+	year: "每年",
+	decade: "每十年",
+	century: "每世纪",
+	special: "特殊",
 };
 Parser.itemRechargeToFull = function (recharge) {
 	return Parser._parse_aToB(Parser.ITEM_RECHARGE_TO_FULL, recharge);
@@ -1210,13 +1201,13 @@ Parser.ITM_TYP__ODND_VEHICLE_LAND = "VEH|XPHB";
 Parser.ITM_TYP__ODND_WAND = "WD|XDMG";
 
 Parser.ITM_RARITY_TO_SHORT = {
-	"common": "Com.",
-	"uncommon": "Unc.",
-	"rare": "Rare",
-	"very rare": "V.Rare",
-	"legendary": "Leg.",
-	"artifact": "Art.",
-	"varies": "Var.",
+	"common": "常见",
+	"uncommon": "不常见",
+	"rare": "珍稀",
+	"very rare": "非常珍稀",
+	"legendary": "传说",
+	"artifact": "神器",
+	"varies": "多种",
 };
 Parser.itemRarityToShort = function (rarity) {
 	if (!rarity) return rarity;
@@ -1310,13 +1301,13 @@ Parser.skillProficienciesToFull = function (skillProficiencies, {styleHint = nul
 				}
 			}
 
-			const base = baseStack.joinConjunct(", ", " and ");
+			const base = baseStack.joinConjunct("、", "和");
 
-			if (baseStack.length && ptChoose.length) return `${base}; and ${ptChoose}`;
+			if (baseStack.length && ptChoose.length) return `${base}；以及${ptChoose}`;
 			else if (baseStack.length) return base;
 			else if (ptChoose.length) return ptChoose;
 		})
-		.join(` <i>or</i> `);
+		.join(` <i>或</i> `);
 };
 
 // sp-prefix functions are for parsing spell data, and shared with the roll20 script
@@ -1397,8 +1388,8 @@ Parser.getArticle = function (str) {
 	return "一个";
 };
 
-Parser.spLevelToFullLevelText = function (level, { isDash = false, isPluralCantrips = true } = {}) {
-	return `${Parser.spLevelToFull(level)}${(level === 0 ? (isPluralCantrips ? "s" : "") : `${isDash ? "-" : " "}`)}`;
+Parser.spLevelToFullLevelText = function (level) {
+	return level === 0 ? "戏法" : `${Parser.spLevelToFull(level)}法术`;
 };
 
 Parser.spLevelToSpellPoints = function (lvl) {
@@ -1438,7 +1429,7 @@ Parser.spLevelSchoolMetaToFull = function (level, school, meta, subschools) {
 };
 
 Parser.spTimeListToFull = function (times, isStripTags) {
-	return times.map(t => `${Parser.getTimeToFull(t)}${t.condition ? `, ${isStripTags ? Renderer.stripTags(t.condition) : Renderer.get().render(t.condition)}` : ""}`).join(" or ");
+	return times.map(t => `${Parser.getTimeToFull(t)}${t.condition ? `，${isStripTags ? Renderer.stripTags(t.condition) : Renderer.get().render(t.condition)}` : ""}`).join("或");
 };
 
 Parser.spTimeFullToUnit = function (timeFull) {
@@ -1600,7 +1591,7 @@ Parser.spRangeToShortHtml._renderPoint = function (range) {
 };
 Parser.spRangeToShortHtml._renderArea = function (range) {
 	const size = range.distance;
-	return `<span class="fas fa-fw ${Parser.spRangeTypeToIcon(Parser.RNG_SELF)} ve-help-subtle" title="Self"></span> ${size.amount}<span class="ve-small">-${Parser.getSingletonUnit(size.type, true)}</span> ${Parser.spRangeToShortHtml._getAreaStyleString(range)}`;
+	return `<span class="fas fa-fw ${Parser.spRangeTypeToIcon(Parser.RNG_SELF)} ve-help-subtle" title="自身"></span> ${size.amount}<span class="ve-small">-${Parser.getSingletonUnit(size.type, true)}</span> ${Parser.spRangeToShortHtml._getAreaStyleString(range)}`;
 };
 Parser.spRangeToShortHtml._getAreaStyleString = function (range) {
 	return `<span class="fas fa-fw ${Parser.spRangeTypeToIcon(range.type)} ve-help-subtle" title="${Parser.spRangeTypeToFull(range.type)}"></span>`;
@@ -1658,13 +1649,13 @@ Parser.getSingletonUnit = function (unit, isShort) {
 	if (!unit) return unit;
 	switch (unit) {
 		case Parser.UNT_INCHES:
-			return isShort ? "in." : "inch";
+			return "寸";
 		case Parser.UNT_FEET:
-			return isShort ? "ft." : "尺";
+			return "尺";
 		case Parser.UNT_YARDS:
-			return isShort ? "yd." : "码";
+			return "码";
 		case Parser.UNT_MILES:
-			return isShort ? "mi." : "里";
+			return "里";
 		default: {
 			const fromPrerelease = Parser._getSingletonUnit_prereleaseBrew({unit, isShort, brewUtil: PrereleaseUtil});
 			if (fromPrerelease) return fromPrerelease;
@@ -1683,13 +1674,13 @@ Parser._getSingletonUnit_prereleaseBrew = function ({unit, isShort, brewUtil}) {
 	if (fromBrew) return fromBrew;
 };
 
-Parser.getInchesToFull = function (inches, {isShort = false} = {}) {
+Parser.getInchesToFull = function (inches) {
 	const feet = Math.floor(inches / 12);
 	inches = inches % 12;
 
 	return [
-		feet ? `${feet} ${isShort ? `ft.` : !feet ? Parser.getSingletonUnit(Parser.UNT_FEET) : Parser.UNT_FEET}` : null,
-		inches ? `${Parser.numberToVulgar(inches)} ${isShort ? `in.` : !inches ? Parser.getSingletonUnit(Parser.UNT_INCHES) : Parser.UNT_INCHES}` : null,
+		feet ? `${feet} 尺` : null,
+		inches ? `${Parser.numberToVulgar(inches)} 寸` : null,
 	].filter(Boolean)
 		.join(" ");
 };
@@ -1703,14 +1694,14 @@ Parser.spComponentsToFull = function (comp, level, {isPlainText = false} = {}) {
 		const fnRender = isPlainText ? Renderer.stripTags.bind(Renderer) : Renderer.get().render.bind(Renderer.get());
 		out.push(`材料${comp.m !== true ? ` (${fnRender(comp.m.text != null ? comp.m.text : comp.m)})` : ""}`);
 	}
-	if (comp.r) out.push(`版税 (${level} gp)`);
+	if (comp.r) out.push(`版税（${level} 金币）`);
 	return out.join(", ") || "无";
 };
 
 Parser.SP_END_TYPE_TO_FULL = {
 	"dispel": "被解除",
-	"trigger": "triggered",
-	"discharge": "discharged",
+	"trigger": "触发",
+	"discharge": "耗尽",
 };
 Parser.spEndTypeToFull = function (type) {
 	return Parser._parse_aToB(Parser.SP_END_TYPE_TO_FULL, type);
@@ -1764,7 +1755,7 @@ Parser.spMainClassesToFull = function (fromClassList, {isTextOnly = false, isInc
 			const definedInSource = it.clsStub.definedInSource || it.clsStub.source;
 			const ptLink = Renderer.get().render(`{@class ${it.clsStub.name}|${it.clsStub.source}}`);
 			const ptSource = isIncludeSource ? ` (${Parser.sourceJsonToAbv(it.clsStub.source)})` : "";
-			const ptTitle = definedInSource === it.clsStub.source ? `Class source/spell list defined in: ${Parser.sourceJsonToFull(definedInSource)}.` : `Class source: ${Parser.sourceJsonToFull(it.clsStub.source)}. Spell list defined in: ${Parser.sourceJsonToFull(definedInSource)}.`;
+			const ptTitle = definedInSource === it.clsStub.source ? `职业来源及法术列表见于：${Parser.sourceJsonToFull(definedInSource)}。` : `职业来源：${Parser.sourceJsonToFull(it.clsStub.source)}。法术列表见于：${Parser.sourceJsonToFull(definedInSource)}。`;
 			return `<span title="${ptTitle.qq()}">${ptLink}${ptSource}</span>`;
 		})
 		.join(", ") || "";
@@ -1806,10 +1797,10 @@ Parser._spSubclassItem = function ({fromSubclass, isTextOnly = false, isIncludeS
 		return text;
 	}
 
-	const ptClass = `<span title="Source: ${Parser.sourceJsonToFull(c.source)}${c.definedInSource ? ` From a class spell list defined in: ${Parser.sourceJsonToFull(c.definedInSource)}` : ""}">${Renderer.get().render(`{@class ${c.name}|${c.source}}`)}</span>`;
+	const ptClass = `<span title="来源：${Parser.sourceJsonToFull(c.source)}${c.definedInSource ? ` 职业法术列表定义于：${Parser.sourceJsonToFull(c.definedInSource)}` : ""}">${Renderer.get().render(`{@class ${c.name}|${c.source}}`)}</span>`;
 	const ptSource = isIncludeSource ? ` (${Parser.sourceJsonToAbv(sc.source)})` : "";
 
-	return `<span class="ve-italic" title="Source: ${Parser.sourceJsonToFull(fromSubclass.subclass.source)}">${Renderer.get().render(`{@class ${c.name}|${c.source}|${text}|${sc.shortName}|${sc.source}}`)}</span>${isIncludeSource ? ptSource : ""} ${ptClass}`;
+	return `<span class="ve-italic" title="来源：${Parser.sourceJsonToFull(fromSubclass.subclass.source)}">${Renderer.get().render(`{@class ${c.name}|${c.source}|${text}|${sc.shortName}|${sc.source}}`)}</span>${isIncludeSource ? ptSource : ""} ${ptClass}`;
 };
 
 Parser.SPELL_ATTACK_TYPE_TO_FULL = {};
@@ -1869,10 +1860,10 @@ Parser.spMiscTagToFull = function (type) {
 };
 
 Parser.SP_CASTER_PROGRESSION_TO_FULL = {
-	full: "Full",
-	"1/2": "Half",
-	"1/3": "One-Third",
-	"pact": "Pact Magic",
+	full: "完整施法者",
+	"1/2": "半施法者",
+	"1/3": "三分之一施法者",
+	"pact": "魔契施法",
 };
 Parser.spCasterProgressionToFull = function (type) {
 	return Parser._parse_aToB(Parser.SP_CASTER_PROGRESSION_TO_FULL, type);
@@ -2288,50 +2279,50 @@ Parser.getExpandedEnvironments = function (env) {
 };
 
 Parser.ENVIRONMENT_DISPLAY_NAMES = {
-	[Parser.ENVIRONMENT__PLANAR_FEYWILD]: "Planar (Feywild)",
-	[Parser.ENVIRONMENT__PLANAR_SHADOWFELL]: "Planar (Shadowfell)",
+	[Parser.ENVIRONMENT__PLANAR_FEYWILD]: "位面（妖精荒野）",
+	[Parser.ENVIRONMENT__PLANAR_SHADOWFELL]: "位面（堕影冥界）",
 
-	[Parser.ENVIRONMENT__PLANAR_WATER]: "Planar (Elemental Plane of Water)",
-	[Parser.ENVIRONMENT__PLANAR_EARTH]: "Planar (Elemental Plane of Earth)",
-	[Parser.ENVIRONMENT__PLANAR_FIRE]: "Planar (Elemental Plane of Fire)",
-	[Parser.ENVIRONMENT__PLANAR_AIR]: "Planar (Elemental Plane of Air)",
+	[Parser.ENVIRONMENT__PLANAR_WATER]: "位面（水元素位面）",
+	[Parser.ENVIRONMENT__PLANAR_EARTH]: "位面（土元素位面）",
+	[Parser.ENVIRONMENT__PLANAR_FIRE]: "位面（火元素位面）",
+	[Parser.ENVIRONMENT__PLANAR_AIR]: "位面（气元素位面）",
 
-	[Parser.ENVIRONMENT__PLANAR_OOZE]: "Planar (Para-elemental Plane of Ooze)",
-	[Parser.ENVIRONMENT__PLANAR_MAGMA]: "Planar (Para-elemental Plane of Magma)",
-	[Parser.ENVIRONMENT__PLANAR_ASH]: "Planar (Para-elemental Plane of Ash)",
-	[Parser.ENVIRONMENT__PLANAR_ICE]: "Planar (Para-elemental Plane of Ice)",
+	[Parser.ENVIRONMENT__PLANAR_OOZE]: "位面（泥浆副元素位面）",
+	[Parser.ENVIRONMENT__PLANAR_MAGMA]: "位面（岩浆副元素位面）",
+	[Parser.ENVIRONMENT__PLANAR_ASH]: "位面（灰烬副元素位面）",
+	[Parser.ENVIRONMENT__PLANAR_ICE]: "位面（寒冰副元素位面）",
 
-	[Parser.ENVIRONMENT__PLANAR_ELEMENTAL_CHAOS]: "Planar (Elemental Chaos)",
+	[Parser.ENVIRONMENT__PLANAR_ELEMENTAL_CHAOS]: "位面（元素混沌）",
 
-	[Parser.ENVIRONMENT__PLANAR_ETHEREAL]: "Planar (Ethereal Plane)",
-	[Parser.ENVIRONMENT__PLANAR_ASTRAL]: "Planar (Astral Plane)",
+	[Parser.ENVIRONMENT__PLANAR_ETHEREAL]: "位面（以太位面）",
+	[Parser.ENVIRONMENT__PLANAR_ASTRAL]: "位面（星界）",
 
-	[Parser.ENVIRONMENT__PLANAR_ARBOREA]: "Planar (Arborea)",
-	[Parser.ENVIRONMENT__PLANAR_ARCADIA]: "Planar (Arcadia)",
-	[Parser.ENVIRONMENT__PLANAR_BEASTLANDS]: "Planar (Beastlands)",
-	[Parser.ENVIRONMENT__PLANAR_BYTOPIA]: "Planar (Bytopia)",
-	[Parser.ENVIRONMENT__PLANAR_ELYSIUM]: "Planar (Elysium)",
-	[Parser.ENVIRONMENT__PLANAR_MOUNT_CELESTIA]: "Planar (Mount Celestia)",
-	[Parser.ENVIRONMENT__PLANAR_YSGARD]: "Planar (Ysgard)",
+	[Parser.ENVIRONMENT__PLANAR_ARBOREA]: "位面（奔放之野）",
+	[Parser.ENVIRONMENT__PLANAR_ARCADIA]: "位面（世外桃源）",
+	[Parser.ENVIRONMENT__PLANAR_BEASTLANDS]: "位面（万兽荒野）",
+	[Parser.ENVIRONMENT__PLANAR_BYTOPIA]: "位面（双生乐园）",
+	[Parser.ENVIRONMENT__PLANAR_ELYSIUM]: "位面（极乐境）",
+	[Parser.ENVIRONMENT__PLANAR_MOUNT_CELESTIA]: "位面（七重天堂）",
+	[Parser.ENVIRONMENT__PLANAR_YSGARD]: "位面（约瑟园）",
 
-	[Parser.ENVIRONMENT__PLANAR_ABYSS]: "Planar (Abyss)",
-	[Parser.ENVIRONMENT__PLANAR_ACHERON]: "Planar (Acheron)",
-	[Parser.ENVIRONMENT__PLANAR_CARCERI]: "Planar (Carceri)",
-	[Parser.ENVIRONMENT__PLANAR_GEHENNA]: "Planar (Gehenna)",
-	[Parser.ENVIRONMENT__PLANAR_HADES]: "Planar (Hades)",
-	[Parser.ENVIRONMENT__PLANAR_NINE_HELLS]: "Planar (Nine Hells)",
-	[Parser.ENVIRONMENT__PLANAR_PANDEMONIUM]: "Planar (Pandemonium)",
+	[Parser.ENVIRONMENT__PLANAR_ABYSS]: "位面（无底深渊）",
+	[Parser.ENVIRONMENT__PLANAR_ACHERON]: "位面（修罗场）",
+	[Parser.ENVIRONMENT__PLANAR_CARCERI]: "位面（卡瑟利）",
+	[Parser.ENVIRONMENT__PLANAR_GEHENNA]: "位面（焦炎地狱）",
+	[Parser.ENVIRONMENT__PLANAR_HADES]: "位面（灰色荒野）",
+	[Parser.ENVIRONMENT__PLANAR_NINE_HELLS]: "位面（九层地狱）",
+	[Parser.ENVIRONMENT__PLANAR_PANDEMONIUM]: "位面（喧癫空隧）",
 
-	[Parser.ENVIRONMENT__PLANAR_LIMBO]: "Planar (Limbo)",
-	[Parser.ENVIRONMENT__PLANAR_MECHANUS]: "Planar (Mechanus)",
+	[Parser.ENVIRONMENT__PLANAR_LIMBO]: "位面（混沌海）",
+	[Parser.ENVIRONMENT__PLANAR_MECHANUS]: "位面（机械境）",
 
-	[Parser.ENVIRONMENT__PLANAR_OUTLANDS]: "Planar (Outlands)",
+	[Parser.ENVIRONMENT__PLANAR_OUTLANDS]: "位面（外域）",
 
-	[Parser.ENVIRONMENT__GROUP_PLANAR_TRANSITIVE]: "Planar (Transitive Planes)",
-	[Parser.ENVIRONMENT__GROUP_PLANAR_ELEMENTAL]: "Planar (Elemental Planes)",
-	[Parser.ENVIRONMENT__GROUP_PLANAR_INNER]: "Planar (Inner Planes)",
-	[Parser.ENVIRONMENT__GROUP_PLANAR_UPPER]: "Planar (Upper Planes)",
-	[Parser.ENVIRONMENT__GROUP_PLANAR_LOWER]: "Planar (Lower Planes)",
+	[Parser.ENVIRONMENT__GROUP_PLANAR_TRANSITIVE]: "位面（过渡位面）",
+	[Parser.ENVIRONMENT__GROUP_PLANAR_ELEMENTAL]: "位面（元素位面）",
+	[Parser.ENVIRONMENT__GROUP_PLANAR_INNER]: "位面（内层位面）",
+	[Parser.ENVIRONMENT__GROUP_PLANAR_UPPER]: "位面（上层位面）",
+	[Parser.ENVIRONMENT__GROUP_PLANAR_LOWER]: "位面（下层位面）",
 };
 
 Parser.getEnvironmentDisplayName = function (env) {
@@ -2353,11 +2344,11 @@ Parser.psiTypeToFull = type => Parser.psiTypeToMeta(type).full;
 
 Parser.psiTypeToMeta = type => {
 	let out = {};
-	if (type === Parser.PSI_ABV_TYPE_TALENT) out = {hasOrder: false, full: "Talent"};
-	else if (type === Parser.PSI_ABV_TYPE_DISCIPLINE) out = {hasOrder: true, full: "Discipline"};
+	if (type === Parser.PSI_ABV_TYPE_TALENT) out = {hasOrder: false, full: "灵能天赋"};
+	else if (type === Parser.PSI_ABV_TYPE_DISCIPLINE) out = {hasOrder: true, full: "灵能修行"};
 	else if (PrereleaseUtil.getMetaLookup("psionicTypes")?.[type]) out = MiscUtil.copyFast(PrereleaseUtil.getMetaLookup("psionicTypes")[type]);
 	else if (BrewUtil2.getMetaLookup("psionicTypes")?.[type]) out = MiscUtil.copyFast(BrewUtil2.getMetaLookup("psionicTypes")[type]);
-	out.full = out.full || "Unknown";
+	out.full = out.full || "未知";
 	out.short = out.short || out.full;
 	return out;
 };
@@ -2383,7 +2374,7 @@ Parser.prereqPactToFull = function (pact) {
 };
 
 Parser.prereqPatronToShort = function (patron) {
-	if (patron === "Any") return patron;
+	if (patron === "Any") return "任意";
 	const mThe = /^The (.*?)$/.exec(patron);
 	if (mThe) return mThe[1];
 	return patron;
@@ -2429,7 +2420,7 @@ Parser.OPT_FEATURE_TYPE_TO_FULL = {
 	"FS:P": "战斗风格，圣武士",
 	"FS:R": "战斗风格，游侠",
 	"PB": "魔契恩泽",
-	"OR": "Onomancy Resonant",
+	"OR": "真名术共鸣",
 	"RN": "符文骑士符文",
 	"AF": "炼金配方",
 	"TT": "旅者技艺",
@@ -2496,7 +2487,7 @@ Parser.alignmentListToFull = function (alignList) {
 		// filter out any nonexistent alignments, as we don't care about "alignment does not exist" if there are other alignments
 		return alignList
 			.filter(it => it.alignment === undefined || it.alignment != null)
-			.map(it => it.special != null || it.chance != null || it.note != null ? Parser.alignmentAbvToFull(it) : Parser.alignmentListToFull(it.alignment)).join(" or ");
+			.map(it => it.special != null || it.chance != null || it.note != null ? Parser.alignmentAbvToFull(it) : Parser.alignmentListToFull(it.alignment)).join("或");
 	}
 
 	// assume all single-length arrays can be simply parsed
@@ -2506,7 +2497,7 @@ Parser.alignmentListToFull = function (alignList) {
 		return alignList.map(a => Parser.alignmentAbvToFull(a)).join(" ");
 	}
 	if (alignList.length === 3) {
-		if (alignList.includes("NX") && alignList.includes("NY") && alignList.includes("N")) return "any neutral alignment";
+		if (alignList.includes("NX") && alignList.includes("NY") && alignList.includes("N")) return "任意中立阵营";
 	}
 	// longer arrays should have a custom mapping
 	if (alignList.length === 5) {
@@ -2528,7 +2519,7 @@ Parser.weightToFull = function (lbs, isSmallUnit) {
 	const tons = Math.floor(lbs / 2000);
 	lbs = lbs - (2000 * tons);
 	return [
-		tons ? `${tons}${isSmallUnit ? `<span class="ve-small ve-ml-1">` : " "}吨${tons === 1 ? "" : "s"}${isSmallUnit ? `</span>` : ""}` : null,
+		tons ? `${tons}${isSmallUnit ? `<span class="ve-small ve-ml-1">` : " "}吨${isSmallUnit ? `</span>` : ""}` : null,
 		lbs ? `${lbs}${isSmallUnit ? `<span class="ve-small ve-ml-1">` : " "}磅${isSmallUnit ? `</span>` : ""}` : null,
 	].filter(Boolean).join(", ");
 };
@@ -2959,22 +2950,22 @@ Parser.bookOrdinalToAbv = (ordinal, {isPreNoSuff = false, isPlainText = false} =
 
 Parser._bookOrdinalToAbv_getPt = ({ordinal, isPlainText = false}) => {
 	switch (ordinal.type) {
-		case "part": return `Part`;
-		case "chapter": return isPlainText ? `Ch.` : `<span title="Chapter">Ch.</span>`;
-		case "episode": return isPlainText ? `Ep.` : `<span title="Episode">Ep.</span>`;
-		case "appendix": return isPlainText ? `App.` : `<span title="Appendix">App.</span>`;
-		case "section": return isPlainText ? `Sec.` : `<span title="Section">Sec.</span>`;
-		case "level": return `Level`;
+		case "part": return `部分`;
+		case "chapter": return isPlainText ? `章` : `<span title="章节">章</span>`;
+		case "episode": return isPlainText ? `集` : `<span title="分集">集</span>`;
+		case "appendix": return isPlainText ? `附录` : `<span title="附录">附录</span>`;
+		case "section": return isPlainText ? `节` : `<span title="小节">节</span>`;
+		case "level": return `等级`;
 		default: throw new Error(`Unhandled ordinal type "${ordinal.type}"`);
 	}
 };
 
 Parser.IMAGE_TYPE_TO_FULL = {
-	"map": "Map",
-	"mapPlayer": "Map (Player)",
+	"map": "地图",
+	"mapPlayer": "玩家地图",
 };
 Parser.imageTypeToFull = function (imageType) {
-	return Parser._parse_aToB(Parser.IMAGE_TYPE_TO_FULL, imageType, "Other");
+	return Parser._parse_aToB(Parser.IMAGE_TYPE_TO_FULL, imageType, "其他");
 };
 
 Parser.nameToTokenName = function (name, {isUrlEncode = false} = {}) {
@@ -3185,8 +3176,8 @@ Parser.SZ_VARIES = "V";
 Parser.SIZE_ABVS = [Parser.SZ_TINY, Parser.SZ_SMALL, Parser.SZ_MEDIUM, Parser.SZ_LARGE, Parser.SZ_HUGE, Parser.SZ_GARGANTUAN, Parser.SZ_VARIES];
 
 Parser.SIZE_ABV_TO_FULL = {
-	[Parser.SZ_FINE]: "Fine",
-	[Parser.SZ_DIMINUTIVE]: "Diminutive",
+	[Parser.SZ_FINE]: "极微型",
+	[Parser.SZ_DIMINUTIVE]: "微小型",
 	[Parser.SZ_TINY]: "微型",
 	[Parser.SZ_SMALL]: "小型",
 	[Parser.SZ_MEDIUM]: "中型",
@@ -3198,16 +3189,16 @@ Parser.SIZE_ABV_TO_FULL = {
 };
 
 Parser.SIZE_ABV_TO_SHORT = {
-	[Parser.SZ_FINE]: "Fin.",
-	[Parser.SZ_DIMINUTIVE]: "Dmtv.",
-	[Parser.SZ_TINY]: "Tin.",
-	[Parser.SZ_SMALL]: "Sml.",
-	[Parser.SZ_MEDIUM]: "Med.",
-	[Parser.SZ_LARGE]: "Lrg.",
-	[Parser.SZ_HUGE]: "Hge.",
-	[Parser.SZ_GARGANTUAN]: "Grgn.",
-	[Parser.SZ_COLOSSAL]: "Clsl.",
-	[Parser.SZ_VARIES]: "Vars.",
+	[Parser.SZ_FINE]: "极微",
+	[Parser.SZ_DIMINUTIVE]: "微小",
+	[Parser.SZ_TINY]: "微",
+	[Parser.SZ_SMALL]: "小",
+	[Parser.SZ_MEDIUM]: "中",
+	[Parser.SZ_LARGE]: "大",
+	[Parser.SZ_HUGE]: "巨",
+	[Parser.SZ_GARGANTUAN]: "超巨",
+	[Parser.SZ_COLOSSAL]: "伟岸",
+	[Parser.SZ_VARIES]: "不定",
 };
 
 Parser.XP_CHART_ALT = {
@@ -4666,9 +4657,9 @@ Parser.PROP_TO_DISPLAY_NAME = {
 	"bookData": "书籍文本",
 	"makebrewCreatureTrait": "自制内容生成器生物特质",
 	"charoption": "其他角色创建选项",
-	"encounterShape": "Encounter Shape",
+	"encounterShape": "遭遇形状",
 	"crochetPattern": "手工艺品",
-	"renderdemo": "Renderer Sample",
+	"renderdemo": "渲染器示例",
 	
 	"bonus": "附赠动作",
 	"legendary": "传奇动作",
@@ -4886,12 +4877,12 @@ Parser.metric = class {
 // region Map grids
 
 Parser.MAP_GRID_TYPE_TO_FULL = {};
-Parser.MAP_GRID_TYPE_TO_FULL["none"] = "None";
-Parser.MAP_GRID_TYPE_TO_FULL["square"] = "Square";
-Parser.MAP_GRID_TYPE_TO_FULL["hexRowsOdd"] = "Hex Rows (Odd)";
-Parser.MAP_GRID_TYPE_TO_FULL["hexRowsEven"] = "Hex Rows (Even)";
-Parser.MAP_GRID_TYPE_TO_FULL["hexColsOdd"] = "Hex Columns (Odd)";
-Parser.MAP_GRID_TYPE_TO_FULL["hexColsEven"] = "Hex Columns (Even)";
+Parser.MAP_GRID_TYPE_TO_FULL["none"] = "无";
+Parser.MAP_GRID_TYPE_TO_FULL["square"] = "方格";
+Parser.MAP_GRID_TYPE_TO_FULL["hexRowsOdd"] = "六角格（奇数行偏移）";
+Parser.MAP_GRID_TYPE_TO_FULL["hexRowsEven"] = "六角格（偶数行偏移）";
+Parser.MAP_GRID_TYPE_TO_FULL["hexColsOdd"] = "六角格（奇数列偏移）";
+Parser.MAP_GRID_TYPE_TO_FULL["hexColsEven"] = "六角格（偶数列偏移）";
 
 Parser.mapGridTypeToFull = function (gridType) {
 	return Parser._parse_aToB(Parser.MAP_GRID_TYPE_TO_FULL, gridType);

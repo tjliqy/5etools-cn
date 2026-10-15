@@ -107,7 +107,7 @@ class NavBar {
 		this._addElement_li({keyPath: [NavBar._CAT_DUNGEON_MASTER], page: "objects.html", aText: "物件"});
 		this._addElement_li({keyPath: [NavBar._CAT_DUNGEON_MASTER], page: "trapshazards.html", aText: "陷阱 & 危害"});
 		this._addElement_divider({keyPath: [NavBar._CAT_DUNGEON_MASTER]});
-		this._addElement_li({keyPath: [NavBar._CAT_DUNGEON_MASTER], page: "crcalculator.html", aText: "CR 计算器 (5e/2014)"});
+		this._addElement_li({keyPath: [NavBar._CAT_DUNGEON_MASTER], page: "crcalculator.html", aText: "挑战等级计算器（5e/2014）"});
 		this._addElement_li({keyPath: [NavBar._CAT_DUNGEON_MASTER], page: "encountergen.html", aText: "遭遇生成器"});
 		this._addElement_li({keyPath: [NavBar._CAT_DUNGEON_MASTER], page: "lootgen.html", aText: "战利品生成器"});
 		this._addElement_divider({keyPath: [NavBar._CAT_DUNGEON_MASTER]});
@@ -167,7 +167,7 @@ class NavBar {
 		this._addElement_divider({keyPath: [NavBar._CAT_UTILITIES]});
 		this._addElement_li({keyPath: [NavBar._CAT_UTILITIES], page: "inittrackerplayerview.html", aText: "先攻追踪器:玩家视图"});
 		this._addElement_divider({keyPath: [NavBar._CAT_UTILITIES]});
-		this._addElement_li({keyPath: [NavBar._CAT_UTILITIES], page: "renderdemo.html", aText: "渲染器 Demo"});
+		this._addElement_li({keyPath: [NavBar._CAT_UTILITIES], page: "renderdemo.html", aText: "渲染器演示"});
 		this._addElement_li({keyPath: [NavBar._CAT_UTILITIES], page: "makebrew.html", aText: I18nUtil.get("page.makebrew.title")});
 		this._addElement_li({keyPath: [NavBar._CAT_UTILITIES], page: "makecards.html", aText: "RPG 卡片 JSON 生成器"});
 		this._addElement_li({keyPath: [NavBar._CAT_UTILITIES], page: "converter.html", aText: "文本转换器"});
@@ -198,7 +198,7 @@ class NavBar {
 				keyPath: [NavBar._CAT_SETTINGS],
 				html: "保存状态至文件",
 				click: async (evt) => NavBar.InteractionManager._pOnClick_button_saveStateFile(evt),
-				title: "Save any locally-stored data (loaded homebrew, active blocklists, DM Screen configuration,...) to a file.",
+				title: "将本地保存的数据（已加载的自制内容、启用的屏蔽列表、DM 帷幕配置等）保存到文件。",
 			},
 		);
 		this._addElement_button(
@@ -206,16 +206,16 @@ class NavBar {
 				keyPath: [NavBar._CAT_SETTINGS],
 				html: "从文件加载状态",
 				click: async (evt) => NavBar.InteractionManager._pOnClick_button_loadStateFile(evt),
-				title: "Load previously-saved data (loaded homebrew, active blocklists, DM Screen configuration,...) from a file.",
+				title: "从文件加载之前保存的数据（已加载的自制内容、启用的屏蔽列表、DM 帷幕配置等）。",
 			},
 		);
 		this._addElement_divider({keyPath: [NavBar._CAT_SETTINGS]});
 		this._addElement_button(
 			{
 				keyPath: [NavBar._CAT_SETTINGS],
-				html: "添加为 App",
+				html: "安装为应用",
 				click: async (evt) => NavBar.InteractionManager._pOnClick_button_addApp(evt),
-				title: "Add the site to your home screen. When used in conjunction with the Preload Offline Data option, this can create a functional offline copy of the site.",
+				title: "将网站添加到主屏幕。配合“预加载离线数据”使用，即可建立可用的离线站点副本。",
 			},
 		);
 		this._addElement_dropdown({keyPath: [NavBar._CAT_SETTINGS], category: NavBar._CAT_CACHE, isSide: true});
@@ -904,7 +904,7 @@ NavBar.InteractionManager = class {
 			globalThis.styleSwitcher.constructor.syncSetFromStorageDump(dump.syncStyle);
 			location.reload();
 		} catch (e) {
-			JqueryUtil.doToast({type: "danger", content: `Failed to load state! ${VeCt.STR_SEE_CONSOLE}`});
+			JqueryUtil.doToast({type: "danger", content: `加载状态失败！ ${VeCt.STR_SEE_CONSOLE}`});
 			throw e;
 		}
 	}
@@ -917,7 +917,7 @@ NavBar.InteractionManager = class {
 		//  - https://developer.mozilla.org/en-US/docs/Web/API/BeforeInstallPromptEvent
 		//  - https://developer.mozilla.org/en-US/docs/Web/API/Window/beforeinstallprompt_event
 		if (!NavBar._cachedInstallEvent) {
-			JqueryUtil.doToast({type: "warning", content: `Could not install app! Your browser may not support this feature.`});
+			JqueryUtil.doToast({type: "warning", content: `无法安装应用！你的浏览器可能不支持此功能。`});
 			return;
 		}
 
@@ -941,7 +941,7 @@ NavBar.InteractionManager = class {
 			if (isPersistent === false) {
 				JqueryUtil.doToast({
 					type: "warning",
-					content: "Non-persistent storage space detected. Your browser may automatically remove preloaded data if storage space runs low.",
+					content: "检测到非持久性存储空间。如果存储空间不足，浏览器可能自动删除预加载的数据。",
 				});
 			}
 
@@ -952,10 +952,10 @@ NavBar.InteractionManager = class {
 			if (availableBytes >= estimatedSizeBytes) return true;
 
 			return InputUiUtil.pGetUserBoolean({
-				title: "Insufficient Storage Space",
-				htmlDescription: `This preload requires a minimum of ${Parser.bytesToHumanReadable(estimatedSizeBytes)} of storage space, but your browser reports an estimate of ${Parser.bytesToHumanReadable(availableBytes)} available. Continue anyway?`,
-				textYes: "Continue",
-				textNo: "Cancel",
+				title: "存储空间不足",
+				htmlDescription: `预加载至少需要 ${Parser.bytesToHumanReadable(estimatedSizeBytes)} 存储空间，但浏览器估计仅剩 ${Parser.bytesToHumanReadable(availableBytes)} 可用。仍要继续吗？`,
+				textYes: "继续",
+				textNo: "取消",
 			});
 		} catch {
 			return true;
@@ -966,14 +966,14 @@ NavBar.InteractionManager = class {
 		evt.preventDefault();
 
 		if (globalThis.swCacheRoutes === undefined) {
-			JqueryUtil.doToast(`The loader was not yet available! Reload the page and try again. If this problem persists, your browser may not support preloading.`);
+			JqueryUtil.doToast(`加载器尚不可用！请刷新页面后重试。如果问题持续存在，你的浏览器可能不支持预加载。`);
 			return;
 		}
 
 		if (isRequireImages && globalThis.DEPLOYED_IMG_ROOT) {
 			JqueryUtil.doToast({
 				type: "danger",
-				content: `The "${evt.currentTarget.innerText.split("(")[0].trim()}" option is not currently supported on this site version. Try again some other time!`,
+				content: `当前站点版本尚不支持“${evt.currentTarget.innerText.split("(")[0].trim()}”选项。请稍后重试！`,
 			});
 			return;
 		}
@@ -987,7 +987,7 @@ NavBar.InteractionManager = class {
 		evt.preventDefault();
 
 		if (globalThis.swResetAll === undefined) {
-			JqueryUtil.doToast(`The loader was not yet available! Reload the page and try again. If this problem persists, your browser may not support preloading.`);
+			JqueryUtil.doToast(`加载器尚不可用！请刷新页面后重试。如果问题持续存在，你的浏览器可能不支持预加载。`);
 			return;
 		}
 

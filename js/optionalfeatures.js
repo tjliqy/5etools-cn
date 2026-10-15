@@ -12,22 +12,22 @@ class OptionalFeaturesSublistManager extends SublistManager {
 	static _getRowTemplate () {
 		return [
 			new SublistCellTemplate({
-				name: "Name",
+				name: "名称",
 				css: "ve-bold ve-col-4 ve-pl-0 ve-pr-1",
 				colStyle: "",
 			}),
 			new SublistCellTemplate({
-				name: "Type",
+				name: "类型",
 				css: "ve-col-2 ve-px-1 ve-text-center",
 				colStyle: "text-center",
 			}),
 			new SublistCellTemplate({
-				name: "Prerequisite",
+				name: "先决条件",
 				css: "ve-col-4-5 ve-px-1",
 				colStyle: "",
 			}),
 			new SublistCellTemplate({
-				name: "Level",
+				name: "等级",
 				css: "ve-col-1-5 ve-text-center ve-pl-1 ve-pr-0",
 				colStyle: "text-center",
 			}),
@@ -93,9 +93,9 @@ class OptionalFeaturesPage extends ListPage {
 			dataProps: ["optionalfeature"],
 
 			bookViewOptions: {
-				nameSingular: "optional feature",
-				namePlural: "optional features",
-				pageTitle: "Optional Features Book View",
+				nameSingular: "可选特性",
+				namePlural: "可选特性",
+				pageTitle: "可选特性书籍视图",
 			},
 
 			isPreviewable: true,

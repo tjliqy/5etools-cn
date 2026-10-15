@@ -52,9 +52,9 @@ export class LootGenGeneratorGemsArtObjects extends LootGenGeneratorBase {
 	}
 
 	async _goa_pDoHandleClickRollLoot () {
-		if (this._state.gao_targetGoldAmount <= 0) return JqueryUtil.doToast({content: "Please enter a target gold amount!", type: "warning"});
+		if (this._state.gao_targetGoldAmount <= 0) return JqueryUtil.doToast({content: "请输入目标金币数量！", type: "warning"});
 
-		if (!this._state.gao_isUseGems && !this._state.gao_isUseArtObjects) return JqueryUtil.doToast({content: `Please select at least one of "Include Gems" and/or "Include Art Objects"`, type: "warning"});
+		if (!this._state.gao_isUseGems && !this._state.gao_isUseArtObjects) return JqueryUtil.doToast({content: `请至少选择“包含宝石”或“包含艺术品”中的一项`, type: "warning"});
 
 		const typeMap = {};
 		[{prop: "gems", stateProp: "gao_isUseGems"}, {prop: "artObjects", stateProp: "gao_isUseArtObjects"}]
@@ -67,7 +67,7 @@ export class LootGenGeneratorGemsArtObjects extends LootGenGeneratorBase {
 			});
 
 		const types = Object.keys(typeMap).map(it => Number(it)).sort(SortUtil.ascSort).reverse();
-		if (this._state.gao_targetGoldAmount < types.last()) return JqueryUtil.doToast({content: `Could not generate any gems/art objects for a gold amount of ${this._state.gao_targetGoldAmount}! Please increase the target gold amount.`, type: "warning"});
+		if (this._state.gao_targetGoldAmount < types.last()) return JqueryUtil.doToast({content: `目标金额 ${this._state.gao_targetGoldAmount} 金币无法生成宝石或艺术品！请提高目标金额。`, type: "warning"});
 
 		// Map of <prop> -> <type> -> {<count>, <breakdown>}
 		const generated = {};

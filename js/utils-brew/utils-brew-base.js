@@ -354,7 +354,7 @@ export class BrewUtil2Base {
 					const json = await DataUtil.loadRawJSON(url);
 					return this._getBrewDoc({json, url, filename, isLocal: true});
 				} catch (e) {
-					JqueryUtil.doToast({type: "danger", content: `Failed to load local homebrew from URL "${url}"! ${VeCt.STR_SEE_CONSOLE}`});
+					JqueryUtil.doToast({type: "danger", content: `无法从网址“${url}”加载本地自制内容！ ${VeCt.STR_SEE_CONSOLE}`});
 					setTimeout(() => { throw e; });
 					return null;
 				}
@@ -411,7 +411,7 @@ export class BrewUtil2Base {
 		//   clear their storage/etc.
 		await this._storage.pSet(this._STORAGE_KEY_MIGRATION_VERSION, this._VERSION);
 
-		JqueryUtil.doToast(`Migrated ${this.DISPLAY_NAME} from version ${version} to version ${this._VERSION}!`);
+		JqueryUtil.doToast(`已将${this.DISPLAY_NAME}从版本 ${version} 迁移至 ${this._VERSION}！`);
 
 		return this._storage.pGet(this._STORAGE_KEY);
 	}
@@ -692,7 +692,7 @@ export class BrewUtil2Base {
 				sourceIndex,
 			};
 		} catch (e) {
-			JqueryUtil.doToast({content: `Failed to load ${this.DISPLAY_NAME} indexes! ${VeCt.STR_SEE_CONSOLE}`, type: "danger"});
+			JqueryUtil.doToast({content: `无法加载${this.DISPLAY_NAME}索引！ ${VeCt.STR_SEE_CONSOLE}`, type: "danger"});
 			setTimeout(() => { throw e; });
 			return null;
 		}
@@ -744,7 +744,7 @@ export class BrewUtil2Base {
 		try {
 			({brewDocs, unavailableSources} = await this._pAddBrewFromUrl({url, isLazy, isLoadReferences}));
 		} catch (e) {
-			JqueryUtil.doToast({type: "danger", content: `Failed to load ${this.DISPLAY_NAME} from URL "${url}"! ${VeCt.STR_SEE_CONSOLE}`});
+			JqueryUtil.doToast({type: "danger", content: `无法从网址“${url}”加载${this.DISPLAY_NAME}！ ${VeCt.STR_SEE_CONSOLE}`});
 			setTimeout(() => { throw e; });
 			return [];
 		}
@@ -799,7 +799,7 @@ export class BrewUtil2Base {
 			const lockToken = await this._LOCK.pLock();
 			({brewDocs, unavailableSources} = await this._pAddBrewsFromFiles({files, lockToken}));
 		} catch (e) {
-			JqueryUtil.doToast({type: "danger", content: `Failed to load ${this.DISPLAY_NAME} from file(s)! ${VeCt.STR_SEE_CONSOLE}`});
+			JqueryUtil.doToast({type: "danger", content: `无法从文件加载${this.DISPLAY_NAME}！ ${VeCt.STR_SEE_CONSOLE}`});
 			setTimeout(() => { throw e; });
 			return [];
 		} finally {
@@ -831,7 +831,7 @@ export class BrewUtil2Base {
 			const lockToken = await this._LOCK.pLock();
 			({brewDocs, unavailableSources} = await this._pAddBrewsLazyFinalize_({lockToken}));
 		} catch (e) {
-			JqueryUtil.doToast({type: "danger", content: `Failed to finalize ${this.DISPLAY_NAME_PLURAL}! ${VeCt.STR_SEE_CONSOLE}`});
+			JqueryUtil.doToast({type: "danger", content: `无法完成${this.DISPLAY_NAME_PLURAL}的处理！ ${VeCt.STR_SEE_CONSOLE}`});
 			setTimeout(() => { throw e; });
 			return [];
 		} finally {
@@ -979,11 +979,11 @@ export class BrewUtil2Base {
 
 		const brewInfos = combinedIndexes.filter(it => this._isMatchingCombinedIndexInfo(it));
 		if (!brewInfos.length) {
-			if (!isSilent) JqueryUtil.doToast({type: "warning", content: `Did not find any partnered ${this.DISPLAY_NAME} to load!`});
+			if (!isSilent) JqueryUtil.doToast({type: "warning", content: `未找到可加载的合作方${this.DISPLAY_NAME}！`});
 			return [];
 		}
 
-		if (!isSilent) JqueryUtil.doToast(`Found ${brewInfos.length} partnered ${brewInfos.length === 1 ? this.DISPLAY_NAME : this.DISPLAY_NAME_PLURAL}; loading...`);
+		if (!isSilent) JqueryUtil.doToast(`找到 ${brewInfos.length} 个合作方${this.DISPLAY_NAME}，正在加载……`);
 
 		await brewInfos
 			.pMap(brewInfo => this.pAddBrewFromUrl(brewInfo.urlDownload, {isLazy: true}));
@@ -993,8 +993,8 @@ export class BrewUtil2Base {
 		if (!isSilent) {
 			const numAdded = brewInfos.length + brewDocsAdded.length;
 
-			if (numAdded) JqueryUtil.doToast(`Loaded ${numAdded} partnered ${numAdded === 1 ? this.DISPLAY_NAME : this.DISPLAY_NAME_PLURAL}!`);
-			else JqueryUtil.doToast({type: "warning", content: `Did not load any partnered ${this.DISPLAY_NAME}!`});
+			if (numAdded) JqueryUtil.doToast(`已加载 ${numAdded} 个合作方${this.DISPLAY_NAME}！`);
+			else JqueryUtil.doToast({type: "warning", content: `未加载任何合作方${this.DISPLAY_NAME}！`});
 		}
 
 		return brewDocsAdded;
@@ -1012,7 +1012,7 @@ export class BrewUtil2Base {
 			{
 				json: CryptUtil.uid(),
 				abbreviation: "BLOCK",
-				full: `Content Blocklist`,
+				full: `内容屏蔽列表`,
 			},
 		];
 	}

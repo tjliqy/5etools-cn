@@ -97,7 +97,7 @@ export class ConverterFeatureBase extends ConverterBase {
 			(preAbilsMeta.score && !preAbilsMeta.abils.length)
 			|| (!preAbilsMeta.score && preAbilsMeta.abils.length)
 		) {
-			return options.cbWarning(`(${state.entity.name}) Prerequisite require manual conversion`);
+			return options.cbWarning(`(${state.entity.name}) 先决条件需要手动转换`);
 		}
 
 		const presDeduped = [];
@@ -560,7 +560,7 @@ export class ConverterFeatureBase extends ConverterBase {
 			return true;
 		}
 
-		options.cbWarning(`Ability Score Increase "${ent}" requires manual conversion!`);
+		options.cbWarning(`属性值提升“${ent}”需要手动转换！`);
 		return false;
 	}
 

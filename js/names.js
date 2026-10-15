@@ -8,9 +8,9 @@ class NamesPage extends TableListPage {
 			dataProps: ["name"],
 
 			bookViewOptions: {
-				nameSingular: "table",
-				namePlural: "tables",
-				pageTitle: "Names Book View",
+				nameSingular: "表格",
+				namePlural: "表格",
+				pageTitle: "名字书籍视图",
 			},
 		});
 	}

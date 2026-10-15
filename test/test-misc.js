@@ -16,11 +16,11 @@ async function main () {
 	const errorsCatIds = testCatIds();
 	if (errorsCatIds.length) {
 		anyErrors = true;
-		console.error(`Category ID errors:`);
+		console.error(`分类 ID 错误：`);
 		errorsCatIds.forEach(it => console.error(`\t${it}`));
 	}
 
-	if (!anyErrors) console.log("##### Misc Tests Passed #####");
+	if (!anyErrors) console.log("##### 杂项测试通过 #####");
 	return !anyErrors; // invert the result as this is what the test runner expects
 }
 

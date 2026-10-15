@@ -9,7 +9,7 @@ const _getCliFiles_getFilteredByFilter = ({jsonFiles, filter = null}) => {
 	switch (filter) {
 		case "partnered": return jsonFiles.filter(jsonFile => jsonFile.isPartnered());
 		case "sample": return jsonFiles.filter(jsonFile => jsonFile.isSampleFile());
-		default: throw new Error(`Unhandled filter "${filter}"`);
+		default: throw new Error(`未处理的筛选模式：“${filter}”`);
 	}
 };
 
@@ -53,15 +53,15 @@ export const getCliJsonFiles = (
 
 export const mutCommanderJsonFileOptions = ({command}) => {
 	return command
-		.option("--file <file...>", "Input files")
-		.option("--dir <dir...>", "Input directories")
+		.option("--file <file...>", "输入文件")
+		.option("--dir <dir...>", "输入目录")
 
 		.addOption(
-			new Option("--filter <filter>", "Filter to files matching the provided filter mode")
+			new Option("--filter <filter>", "按指定模式筛选文件")
 				.choices(_FILE_FILTER_CHOICES),
 		)
-		.option("--converted-by <name>", "Filter to files converted by the provided name")
-		.option("--author <name>", "Filter to files authored by the provided name")
+		.option("--converted-by <name>", "按转换者名称筛选文件")
+		.option("--author <name>", "按作者名称筛选文件")
 	;
 };
 

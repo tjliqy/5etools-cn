@@ -653,7 +653,7 @@ export class DamageResistanceImmunityVulnerabilityTag {
 		else delete obj[prop];
 
 		if (outer.length && !all.size) {
-			if (opts.cbMan) opts.cbMan(`Could not find damage types in string(s) ${outer.map(it => `"${it}"`).join(", ")}`);
+			if (opts.cbMan) opts.cbMan(`无法从以下文本中识别伤害类型：${outer.map(it => `"${it}"`).join("、")}`);
 		}
 	}
 
@@ -1040,7 +1040,7 @@ export class InstrumentBaseItemTag {
 
 		if (SourceUtil.isClassicSource(source)) {
 			if (!info[Parser.ITM_TYP__INSTRUMENT]) {
-				if (opts.cbWarning) opts.cbWarning(`(${ent.name}) Had likely instrument name "${instrumentName}", but no instrument with this name was available in classic sources!`);
+				if (opts.cbWarning) opts.cbWarning(`(${ent.name}) 可能包含乐器名称“${instrumentName}”，但经典规则来源中没有找到该乐器！`);
 				return;
 			}
 			ent.type ||= Parser.ITM_TYP__INSTRUMENT;
@@ -1049,7 +1049,7 @@ export class InstrumentBaseItemTag {
 		}
 
 		if (!info[Parser.ITM_TYP__ODND_INSTRUMENT]) {
-			if (opts.cbWarning) opts.cbWarning(`(${ent.name}) Had likely instrument name "${instrumentName}", but no instrument with this name was available in modern sources!`);
+			if (opts.cbWarning) opts.cbWarning(`(${ent.name}) 可能包含乐器名称“${instrumentName}”，但新版规则来源中没有找到该乐器！`);
 			return;
 		}
 		ent.type ||= Parser.ITM_TYP__ODND_INSTRUMENT;

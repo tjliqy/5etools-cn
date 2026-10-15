@@ -4,12 +4,12 @@ class ActionsSublistManager extends SublistManager {
 	static _getRowTemplate () {
 		return [
 			new SublistCellTemplate({
-				name: "Name",
+				name: "名称",
 				css: "ve-bold ve-col-8 ve-pl-0 ve-pr-1",
 				colStyle: "",
 			}),
 			new SublistCellTemplate({
-				name: "Time",
+				name: "时间",
 				css: "ve-text-center ve-col-4 ve-pl-1 ve-pr-0",
 				colStyle: "text-center",
 			}),
@@ -60,9 +60,9 @@ class ActionsPage extends ListPage {
 			dataProps: ["action"],
 
 			bookViewOptions: {
-				nameSingular: "action",
-				namePlural: "actions",
-				pageTitle: "Actions Book View",
+				nameSingular: "动作",
+				namePlural: "动作",
+				pageTitle: "动作书籍视图",
 			},
 
 			isPreviewable: true,

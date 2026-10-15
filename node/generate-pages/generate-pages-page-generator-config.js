@@ -208,8 +208,8 @@ class _PageGeneratorLangdemo extends PageGeneratorGeneric {
 	_isNoIndex = true;
 	_isExcludedFromSitemap = true;
 
-	_pageTitle = "RoLang Demo";
-	_navbarDescription = "Edit the input and context, and hit Run";
+	_pageTitle = "RoLang 演示";
+	_navbarDescription = "编辑输入内容和上下文，然后点击运行。";
 
 	_stylesheets = [
 		"langdemo",
@@ -304,8 +304,8 @@ class _PageGeneratorMakecards extends PageGeneratorGeneric {
 	_isNoIndex = true;
 	_isExcludedFromSitemap = true;
 
-	_pageTitle = "RPG Cards JSON Builder";
-	_navbarDescription = "Build and export card JSON data.";
+	_pageTitle = "RPG 卡片 JSON 构建器";
+	_navbarDescription = "创建并导出卡片 JSON 数据。";
 
 	_stylesheets = [
 		"makecards",
@@ -339,8 +339,8 @@ class _PageGeneratorPlutonium extends PageGeneratorGeneric {
 	_filename = "page/template-page-plutonium.hbs";
 	_page = "plutonium.html";
 
-	_pageTitle = "Plutonium Features";
-	_navbarDescription = "An overview of the 5etools integration for Foundry VTT.";
+	_pageTitle = "Plutonium 功能";
+	_navbarDescription = "了解 5etools 与 Foundry VTT 的集成功能。";
 
 	_stylesheets = [
 		"plutonium",
@@ -356,7 +356,7 @@ class _PageGeneratorPrivacyPolicy extends PageGeneratorGeneric {
 	_page = "privacy-policy.html";
 
 	_pageTitle = "隐私政策";
-	_navbarDescription = `Just click "Accept."`;
+	_navbarDescription = `点击“接受”即可。`;
 
 	_scripts = [
 		"privacy-policy.js",
@@ -369,8 +369,8 @@ class _PageGeneratorRenderdemo extends PageGeneratorGeneric {
 	_isNoIndex = true;
 	_isExcludedFromSitemap = true;
 
-	_pageTitle = "Renderer Demo";
-	_navbarDescription = "Edit the JSON on the left, and see the results on the right.";
+	_pageTitle = "渲染器演示";
+	_navbarDescription = "编辑左侧的 JSON，在右侧查看渲染结果。";
 
 	_stylesheets = [
 		"renderdemo",

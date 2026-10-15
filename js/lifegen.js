@@ -99,7 +99,7 @@ async function getPersonDetails (opts) {
 				return resultLast ? resultLast.result : "";
 			})();
 
-			out.unshift(`<i><b title="Generated using the random name tables found in Xanathar's Guide to Everything">名字:</b> ${resultFirst.result}${lastName ? ` ${lastName}` : ""}</i>`);
+			out.unshift(`<i><b title="使用《珊娜萨的万事指南》中的随机名字表生成">名字:</b> ${resultFirst.result}${lastName ? ` ${lastName}` : ""}</i>`);
 		}
 	}
 
@@ -124,9 +124,10 @@ async function getPersonDetails (opts) {
 			else return rollSuppRace().result;
 		})() : rollSuppRace().result;
 
-		out.unshift(`<i><b>种族：</b> ${race}</i>`);
+		out.unshift(`<i><b>种族：</b> ${{Orc: "兽人", Devil: "魔鬼"}[race] || race}</i>`);
 		const gender = opts.gender ? opts.gender : rollUnofficialGender().result;
-		out.unshift(`<i><b>性别：</b> ${gender}</i>`);
+		const genderDisplay = {Male: "男性", Female: "女性", Other: "其他"}[gender] || gender;
+		out.unshift(`<i><b>性别：</b> ${genderDisplay}</i>`);
 
 		await pAddName(race, gender);
 	} else if (opts.race) {
@@ -216,25 +217,25 @@ const PARENTS_TIEFLING = [
 const BIRTHPLACES = [
 	{min: 1, max: 50, result: "家"},
 	{min: 51, max: 55, result: "朋友家"},
-	{min: 56, max: 63, result: () => `医生或助产士的家${choose("医生", "助产士")}`, display: "Home of a healer or midwife"},
-	{min: 64, max: 65, result: () => `马车、手推车或货车${choose("马车", "手推车", "货车")}`, display: "Carriage, cart, or wagon"},
-	{min: 66, max: 68, result: () => `谷仓、棚屋或室外建筑${choose("谷仓", "棚屋", "室外建筑")}`, display: "Barn, shed, or other outbuilding"},
+	{min: 56, max: 63, result: () => `医生或助产士的家${choose("医生", "助产士")}`, display: "医生或助产士的家"},
+	{min: 64, max: 65, result: () => `马车、手推车或货车${choose("马车", "手推车", "货车")}`, display: "马车、手推车或货车"},
+	{min: 66, max: 68, result: () => `谷仓、棚屋或室外建筑${choose("谷仓", "棚屋", "室外建筑")}`, display: "谷仓、棚屋或其他附属建筑"},
 	{min: 69, max: 70, result: "洞穴"},
 	{min: 71, max: 72, result: "田野"},
 	{min: 73, max: 74, result: "森林"},
 	{min: 75, max: 77, result: "寺庙"},
 	{min: 78, result: "战场"},
-	{min: 79, max: 80, result: () => `小巷或街道${choose("小巷", "街道")}`, display: "Alley or street"},
-	{min: 81, max: 82, result: () => `妓院、酒馆或客栈${choose("妓院", "酒馆", "客栈")}`, display: "Brothel, tavern, or inn"},
-	{min: 83, max: 84, result: () => `城堡、要塞、塔楼或宫殿${choose("城堡", "要塞", "塔楼", "宫殿")}`, display: "Castle, keep, tower, or palace"},
-	{min: 85, result: () => `下水道或垃圾堆${choose("下水道", "垃圾堆")}`, display: "Sewer or rubbish heap"},
+	{min: 79, max: 80, result: () => `小巷或街道${choose("小巷", "街道")}`, display: "小巷或街道"},
+	{min: 81, max: 82, result: () => `妓院、酒馆或客栈${choose("妓院", "酒馆", "客栈")}`, display: "妓院、酒馆或客栈"},
+	{min: 83, max: 84, result: () => `城堡、要塞、塔楼或宫殿${choose("城堡", "要塞", "塔楼", "宫殿")}`, display: "城堡、要塞、塔楼或宫殿"},
+	{min: 85, result: () => `下水道或垃圾堆${choose("下水道", "垃圾堆")}`, display: "下水道或垃圾堆"},
 	{min: 86, max: 88, result: "在不同种族的人中"},
-	{min: 89, max: 91, result: () => `在船上${choose("帆船", "轮船")}`, display: "On board a boat or a ship"},
-	{min: 92, max: 93, result: () => `在监狱或秘密组织的总部${choose("监狱", "秘密组织的总部")}`, display: "In a prison or in the headquarters of a secret organization"},
+	{min: 89, max: 91, result: () => `在船上${choose("帆船", "轮船")}`, display: "在小船或大船上"},
+	{min: 92, max: 93, result: () => `在监狱或秘密组织的总部${choose("监狱", "秘密组织的总部")}`, display: "在监狱或秘密组织的总部"},
 	{min: 94, max: 95, result: "在智者的实验室里"},
 	{min: 96, result: "在妖精荒野"},
 	{min: 97, result: "在堕影冥界"},
-	{min: 98, result: () => `在星界位面或以太位面${choose("星界位面", "以太位面")}`, display: "On the Astral Plane or the Ethereal Plane"},
+	{min: 98, result: () => `在星界位面或以太位面${choose("星界位面", "以太位面")}`, display: "在星界位面或以太位面"},
 	{min: 99, result: "在你选择的内层位面"},
 	{min: 100, result: "在你选择的外层位面"},
 ];
@@ -258,22 +259,22 @@ function singleParentOrStep (parent) {
 }
 
 const FAMILY = [
-	{min: 1, result: () => `无。 ${absentBothParents()}`, display: "None"},
-	{min: 2, result: () => `福利机构，如庇护所。 ${absentBothParents()}`, display: "Institution, such as an asylum"},
-	{min: 3, result: () => `寺庙。 ${absentBothParents()}`, display: "Temple"},
-	{min: 4, max: 5, result: () => `孤儿院。 ${absentBothParents()}`, display: "Orphanage"},
-	{min: 6, max: 7, result: () => `监护人。 ${absentBothParents()}`, display: "Guardian"},
-	{min: 8, max: 15, result: () => `父亲或母亲的姑姑、叔叔，或者两者都有；或者是大家族，如部落或氏族 ${choose("叔叔", "姑姑", "叔叔和姑姑", "大家族，如部落或氏族")}. ${absentBothParents()}`, display: "Paternal or maternal aunt, uncle, or both; or extended family such as a tribe or clan"},
-	{min: 16, max: 25, result: () => `祖父母或外祖父母 ${choose("祖父", "祖母", "祖父和祖母")}. ${absentBothParents()}`, display: "Paternal or maternal grandparent(s)"},
-	{min: 26, max: 35, result: () => `寄养家庭（相同或不同种族） ${choose("相同种族", "不同种族")}. ${absentBothParents()}`, display: "Adoptive family (same or different race)"},
-	{min: 36, max: 55, result: () => singleParentOrStep("父亲"), display: "Single father or stepfather"},
-	{min: 56, max: 75, result: () => singleParentOrStep("母亲"), display: "Single mother or stepmother"},
+	{min: 1, result: () => `无。 ${absentBothParents()}`, display: "无"},
+	{min: 2, result: () => `福利机构，如庇护所。 ${absentBothParents()}`, display: "福利机构，例如收容所"},
+	{min: 3, result: () => `寺庙。 ${absentBothParents()}`, display: "神殿"},
+	{min: 4, max: 5, result: () => `孤儿院。 ${absentBothParents()}`, display: "孤儿院"},
+	{min: 6, max: 7, result: () => `监护人。 ${absentBothParents()}`, display: "监护人"},
+	{min: 8, max: 15, result: () => `父亲或母亲的姑姑、叔叔，或者两者都有；或者是大家族，如部落或氏族 ${choose("叔叔", "姑姑", "叔叔和姑姑", "大家族，如部落或氏族")}. ${absentBothParents()}`, display: "叔伯、姑姨或双方的大家族，例如部落或氏族"},
+	{min: 16, max: 25, result: () => `祖父母或外祖父母 ${choose("祖父", "祖母", "祖父和祖母")}. ${absentBothParents()}`, display: "祖父母或外祖父母"},
+	{min: 26, max: 35, result: () => `寄养家庭（相同或不同种族） ${choose("相同种族", "不同种族")}. ${absentBothParents()}`, display: "寄养家庭（同族或异族）"},
+	{min: 36, max: 55, result: () => singleParentOrStep("父亲"), display: "单身父亲或继父"},
+	{min: 56, max: 75, result: () => singleParentOrStep("母亲"), display: "单身母亲或继母"},
 	{min: 76, max: 100, result: "父亲和母亲"},
 ];
 
 const ABSENT_PARENT = [
-	{min: 1, result: () => `你的父母死了 (${rollSuppDeath().result.lowercaseFirst()}).`, display: "Your parent died (roll on the {@table Supplemental Tables; Cause of Death|XGE|Cause of Death} supplemental table)."},
-	{min: 2, result: () => `你的父母被监禁、奴役或以其他方式被带走 ${choose("监禁", "奴役", "以其他方式被带走")}.`, display: "Your parent was imprisoned, enslaved, or otherwise taken away."},
+	{min: 1, result: () => `你的父母死了 (${rollSuppDeath().result.lowercaseFirst()}).`, display: "你的父母去世了（在{@table Supplemental Tables; Cause of Death|XGE|死因}补充表上掷骰）。"},
+	{min: 2, result: () => `你的父母被监禁、奴役或以其他方式被带走 ${choose("监禁", "奴役", "以其他方式被带走")}.`, display: "你的父母被监禁、奴役或以其他方式带走。"},
 	{min: 3, result: "你的父母抛弃了你。"},
 	{min: 4, result: "你的父母失踪了，命运未知。"},
 ];
@@ -292,12 +293,12 @@ const CHILDHOOD_HOME = [
 	{min: 0, result: "在街上"},
 	{min: 1, max: 20, result: "破旧的棚屋"},
 	{min: 21, max: 30, result: "无永久居留权；你经常搬家"},
-	{min: 31, max: 40, result: () => `在野外的营地或村庄${choose("营地", "村庄")}`, display: "Encampment or village in the wilderness"},
+	{min: 31, max: 40, result: () => `在野外的营地或村庄${choose("营地", "村庄")}`, display: "荒野中的营地或村庄"},
 	{min: 41, max: 50, result: "位于破旧街区的公寓"},
 	{min: 51, max: 70, result: "小房子"},
 	{min: 71, max: 90, result: "大房子"},
 	{min: 91, max: 110, result: "高级公寓"},
-	{min: 111, result: () => `宫殿或城堡${choose("宫殿", "城堡")}`, display: "Palace or castle"},
+	{min: 111, result: () => `宫殿或城堡${choose("宫殿", "城堡")}`, display: "宫殿或城堡"},
 ];
 
 const CHILDHOOD_MEMORIES = [
@@ -342,144 +343,144 @@ function _lifeEvtPerson (title, personDetails) {
 }
 
 const LIFE_EVENTS = [
-	{min: 1, max: 10, result: "You suffered a tragedy. Roll on the Tragedies table.", pNextRoll: () => _pLifeEvtResult("Tragedy", rollEvtTragedy())},
-	{min: 11, max: 20, result: "You gained a bit of good fortune. Roll on the Boons table.", pNextRoll: () => _pLifeEvtResult("Boon", rollEvtBoon())},
-	{min: 21, max: 30, result: "You fell in love or got married. If you get this result more than once, you can choose to have a child instead. Work with your DM to determine the identity of your love interest.", pNextRoll: async () => _lifeEvtPerson(marriageIndex++ === 0 ? "Spouse" : "Spouse/Child", await getPersonDetails())},
-	{min: 31, max: 40, result: () => `You made an enemy of an adventurer. Roll a {@dice d6} ${fmtChoice(RNG(6))}. An odd number indicates you are to blame for the rift, and an even number indicates you are blameless. Use the supplemental tables and work with your DM to determine this hostile character's identity and the danger this enemy poses to you.`, display: "You made an enemy of an adventurer. Roll a {@dice d6}. An odd number indicates you are to blame for the rift, and an even number indicates you are blameless. Use the supplemental tables and work with your DM to determine this hostile character's identity and the danger this enemy poses to you.", pNextRoll: async () => _lifeEvtPerson("Enemy", await getPersonDetails({isAdventurer: true}))},
-	{min: 41, max: 50, result: "You made a friend of an adventurer. Use the supplemental tables and work with your DM to add more detail to this friendly character and establish how your friendship began.", pNextRoll: async () => _lifeEvtPerson("Friend", await getPersonDetails({isAdventurer: true}))},
-	{min: 51, max: 70, result: () => `You spent time working in a job related to your background. Start the game with an extra {@dice 2d6} ${fmtChoice(RNG(6) + RNG(6))} gp.`, display: "You spent time working in a job related to your background. Start the game with an extra {@dice 2d6} gp."},
-	{min: 71, max: 75, result: "You met someone important. Use the supplemental tables to determine this character's identity and how this individual feels about you. Work out additional details with your DM as needed to fit this character into your backstory.", pNextRoll: async () => _lifeEvtPerson("Meeting", await getPersonDetails())},
-	{min: 76, max: 80, result: "You went on an adventure. Roll on the Adventures table to see what happened to you. Work with your DM to determine the nature of the adventure and the creatures you encountered.", pNextRoll: () => _pLifeEvtResult("Adventure", rollEvtAdventure())},
-	{min: 81, max: 85, result: "You had a supernatural experience. Roll on the Supernatural Events table to find out what it was.", pNextRoll: () => _pLifeEvtResult("Supernatural Experience", rollEvtSupernatural())},
-	{min: 86, max: 90, result: "You fought in a battle. Roll on the War table to learn what happened to you. Work with your DM to come up with the reason for the battle and the factions involved. It might have been a small conflict between your community and a band of orcs, or it could have been a major battle in a larger war.", pNextRoll: () => _pLifeEvtResult("War", rollEvtWar())},
-	{min: 91, max: 95, result: "You committed a crime or were wrongly accused of doing so. Roll on the Crime table to determine the nature of the offense and on the Punishment table to see what became of you.", pNextRoll: () => _lifeEvtResultArr("Crime and Punishment", ["Crime", "Punishment"], rollEvtCrime(), rollEvtPunishment())},
-	{min: 96, max: 99, result: "You encountered something magical. Roll on the Arcane Matters table.", pNextRoll: () => _pLifeEvtResult("Arcane Matter", rollEvtArcaneMatter())},
-	{min: 100, result: "Something truly strange happened to you. Roll on the Weird Stuff table.", pNextRoll: () => _pLifeEvtResult("Weird Stuff", rollEvtWeird())},
+	{min: 1, max: 10, result: "你遭遇了一场悲剧。请在“悲剧”表上掷骰。", pNextRoll: () => _pLifeEvtResult("悲剧", rollEvtTragedy())},
+	{min: 11, max: 20, result: "你获得了一点好运。请在“恩惠”表上掷骰。", pNextRoll: () => _pLifeEvtResult("恩惠", rollEvtBoon())},
+	{min: 21, max: 30, result: "你坠入爱河或结了婚。如果多次掷出此结果，可以改为拥有一个孩子。与你的 DM 一起确定爱人的身份。", pNextRoll: async () => _lifeEvtPerson(marriageIndex++ === 0 ? "配偶" : "配偶／孩子", await getPersonDetails())},
+	{min: 31, max: 40, result: () => `你与一名冒险者结仇。掷 {@dice d6} ${fmtChoice(RNG(6))}：奇数表示裂痕由你造成，偶数表示你没有过错。使用补充表并与你的 DM 一起确定仇敌的身份及其对你的威胁。`, display: "你与一名冒险者结仇。掷 {@dice d6}：奇数表示裂痕由你造成，偶数表示你没有过错。使用补充表并与你的 DM 一起确定仇敌的身份及其对你的威胁。", pNextRoll: async () => _lifeEvtPerson("仇敌", await getPersonDetails({isAdventurer: true}))},
+	{min: 41, max: 50, result: "你与一名冒险者成为朋友。使用补充表并与你的 DM 一起补充其背景，确定友谊从何开始。", pNextRoll: async () => _lifeEvtPerson("朋友", await getPersonDetails({isAdventurer: true}))},
+	{min: 51, max: 70, result: () => `你曾从事与背景相关的工作。开始游戏时额外获得 {@dice 2d6} ${fmtChoice(RNG(6) + RNG(6))} 金币。`, display: "你曾从事与背景相关的工作。开始游戏时额外获得 {@dice 2d6} 金币。"},
+	{min: 71, max: 75, result: "你遇到了一位重要人物。使用补充表确定其身份和对你的态度，并视需要与你的 DM 一起将其融入背景故事。", pNextRoll: async () => _lifeEvtPerson("重要人物", await getPersonDetails())},
+	{min: 76, max: 80, result: "你踏上了一次冒险。请在“冒险”表上掷骰，看看发生了什么；与你的 DM 一起确定冒险的性质和遭遇的生物。", pNextRoll: () => _pLifeEvtResult("冒险", rollEvtAdventure())},
+	{min: 81, max: 85, result: "你经历了一次超自然事件。请在“超自然事件”表上掷骰，确定具体经历。", pNextRoll: () => _pLifeEvtResult("超自然事件", rollEvtSupernatural())},
+	{min: 86, max: 90, result: "你参加过一场战斗。请在“战争”表上掷骰，了解发生了什么。与你的 DM 一起确定战斗的起因和参战势力；这可能是你所在社区与兽人小队的小规模冲突，也可能是一场大战中的重要战役。", pNextRoll: () => _pLifeEvtResult("战争", rollEvtWar())},
+	{min: 91, max: 95, result: "你犯下罪行，或受到错误指控。请在“罪行”表上确定指控内容，再在“惩罚”表上确定结局。", pNextRoll: () => _lifeEvtResultArr("罪行与惩罚", ["罪行", "惩罚"], rollEvtCrime(), rollEvtPunishment())},
+	{min: 96, max: 99, result: "你遇到了一件魔法事件。请在“奥术事件”表上掷骰。", pNextRoll: () => _pLifeEvtResult("奥术事件", rollEvtArcaneMatter())},
+	{min: 100, result: "你遇到了一件真正离奇的事。请在“怪事”表上掷骰。", pNextRoll: () => _pLifeEvtResult("怪事", rollEvtWeird())},
 ];
 
 const LIFE_EVENTS_ADVENTURES = [
-	{min: 1, max: 10, result: () => `You nearly died. You have nasty scars on your body, and you are missing an ear, {@dice 1d3} ${fmtChoice(RNG(3))} fingers, or {@dice 1d4} ${fmtChoice(RNG(4))} toes.`, display: "You nearly died. You have nasty scars on your body, and you are missing an ear, {@dice 1d3} fingers, or {@dice 1d4} toes."},
-	{min: 11, max: 20, result: "You suffered a grievous injury. Although the wound healed, it still pains you from time to time."},
-	{min: 21, max: 30, result: "You were wounded, but in time you fully recovered."},
-	{min: 31, max: 40, result: "You contracted a disease while exploring a filthy warren. You recovered from the disease, but you have a persistent cough, pockmarks on your skin, or prematurely gray hair."},
-	{min: 41, max: 50, result: "You were poisoned by a trap or a monster. You recovered, but the next time you must make a saving throw against poison, you make the saving throw with disadvantage."},
-	{min: 51, max: 60, result: "You lost something of sentimental value to you during your adventure. Remove one trinket from your possessions."},
-	{min: 61, max: 70, result: "You were terribly frightened by something you encountered and ran away, abandoning your companions to their fate."},
-	{min: 71, max: 80, result: "You learned a great deal during your adventure. The next time you make an ability check or a saving throw, you have advantage on the roll."},
-	{min: 81, max: 90, result: () => `You found some treasure on your adventure. You have {@dice 2d6} ${fmtChoice(RNG(6) + RNG(6))} gp left from your share of it.`, display: "You found some treasure on your adventure. You have {@dice 2d6} gp left from your share of it."},
-	{min: 91, max: 99, result: () => `You found a considerable amount of treasure on your adventure. You have {@dice 1d20 + 50} ${fmtChoice(RNG(20) + 50)} gp left from your share of it.`, display: "You found a considerable amount of treasure on your adventure. You have {@dice 1d20 + 50} gp left from your share of it."},
-	{min: 100, result: "You came across a common magic item (of the DM's choice)."},
+	{min: 1, max: 10, result: () => `你险些丧命，身上留下可怕的伤疤，还失去了一只耳朵、{@dice 1d3} ${fmtChoice(RNG(3))} 根手指，或 {@dice 1d4} ${fmtChoice(RNG(4))} 根脚趾。`, display: "你险些丧命，身上留下可怕的伤疤，还失去了一只耳朵、{@dice 1d3} 根手指，或 {@dice 1d4} 根脚趾。"},
+	{min: 11, max: 20, result: "你受了重伤。伤口虽然愈合，却仍不时隐隐作痛。"},
+	{min: 21, max: 30, result: "你受了伤，但最终完全康复。"},
+	{min: 31, max: 40, result: "你在探索肮脏的巢穴时染上疾病。虽然痊愈，却留下持续咳嗽、皮肤麻点或头发早白等后遗症。"},
+	{min: 41, max: 50, result: "你曾被陷阱或怪物下毒。你已康复，但下一次对抗毒素的豁免检定具有劣势。"},
+	{min: 51, max: 60, result: "你在冒险中失去了一件有纪念意义的物品。从随身物品中移除一件饰品。"},
+	{min: 61, max: 70, result: "你被遭遇的事物吓坏了，丢下同伴逃跑，让他们独自面对命运。"},
+	{min: 71, max: 80, result: "你在冒险中获益良多。下一次进行属性检定或豁免检定时，你的掷骰具有优势。"},
+	{min: 81, max: 90, result: () => `你在冒险中发现了一些宝藏。分得的财宝中还剩 {@dice 2d6} ${fmtChoice(RNG(6) + RNG(6))} 金币。`, display: "你在冒险中发现了一些宝藏。分得的财宝中还剩 {@dice 2d6} 金币。"},
+	{min: 91, max: 99, result: () => `你在冒险中发现了大量宝藏。分得的财宝中还剩 {@dice 1d20 + 50} ${fmtChoice(RNG(20) + 50)} 金币。`, display: "你在冒险中发现了大量宝藏。分得的财宝中还剩 {@dice 1d20 + 50} 金币。"},
+	{min: 100, result: "你找到了一件普通魔法物品（由 DM 选择）。"},
 ];
 
 const LIFE_EVENTS_ARCANE_MATTERS = [
-	{min: 1, result: "You were charmed or frightened by a spell."},
-	{min: 2, result: "You were injured by the effect of a spell."},
-	{min: 3, result: "You witnessed a powerful spell being cast by a cleric, a druid, a sorcerer, a warlock, or a wizard."},
-	{min: 4, result: "You drank a potion (of the DM's choice)."},
-	{min: 5, result: "You found a spell scroll (of the DM's choice) and succeeded in casting the spell it contained."},
-	{min: 6, result: "You were affected by teleportation magic."},
-	{min: 7, result: "You turned invisible for a time."},
-	{min: 8, result: "You identified an illusion for what it was."},
-	{min: 9, result: "You saw a creature being conjured by magic."},
-	{min: 10, result: () => `Your fortune was read by a diviner. Roll twice on the Life Events table, but don't apply the results. Instead, the DM picks one event as a portent of your future (which might or might not come true). ${fmtChoice(GenUtil.getFromTable(LIFE_EVENTS, RNG(100)).display || GenUtil.getFromTable(LIFE_EVENTS, RNG(100)).result)} ${fmtChoice(GenUtil.getFromTable(LIFE_EVENTS, RNG(100)).display || GenUtil.getFromTable(LIFE_EVENTS, RNG(100)).result)}`, display: "Your fortune was read by a diviner. Roll twice on the Life Events table, but don't apply the results. Instead, the DM picks one event as a portent of your future (which might or might not come true)."},
+	{min: 1, result: "你受到法术魅惑或恐慌。"},
+	{min: 2, result: "你受到法术效果伤害。"},
+	{min: 3, result: "你亲眼见证了一位牧师、德鲁伊、术士、邪术师或法师施展强大法术。"},
+	{min: 4, result: "你喝下了一瓶药水（由 DM 选择）。"},
+	{min: 5, result: "你找到了一张法术卷轴（由 DM 选择），并成功施展了其中的法术。"},
+	{min: 6, result: "你受到了传送魔法的影响。"},
+	{min: 7, result: "你曾隐形一段时间。"},
+	{min: 8, result: "你识破了一处幻术。"},
+	{min: 9, result: "你看见一个生物被魔法召唤出来。"},
+	{min: 10, result: () => `一位预言者为你占卜了命运。在“人生事件”表上掷骰两次，但不立即应用结果。由 DM 从中选出一项作为你未来的预兆；它可能成真，也可能不会。 ${fmtChoice(GenUtil.getFromTable(LIFE_EVENTS, RNG(100)).display || GenUtil.getFromTable(LIFE_EVENTS, RNG(100)).result)} ${fmtChoice(GenUtil.getFromTable(LIFE_EVENTS, RNG(100)).display || GenUtil.getFromTable(LIFE_EVENTS, RNG(100)).result)}`, display: "一位预言者为你占卜了命运。在“人生事件”表上掷骰两次，但不立即应用结果。由 DM 从中选出一项作为你未来的预兆；它可能成真，也可能不会。"},
 ];
 
 const LIFE_EVENTS_BOONS = [
-	{min: 1, result: "A friendly wizard gave you a spell scroll containing one cantrip (of the DM's choice)."},
-	{min: 2, result: "You saved the life of a commoner, who now owes you a life debt. This individual accompanies you on your travels and performs mundane tasks for you, but will leave if neglected, abused, or imperiled. Determine details about this character by using the supplemental tables and working with your DM.", pNextRoll: async () => _lifeEvtPerson("Commoner", await getPersonDetails())},
-	{min: 3, result: "You found a {@item riding horse}."},
-	{min: 4, result: () => `You found some money. You have {@dice 1d20} ${fmtChoice(RNG(20))} gp in addition to your regular starting funds.`, display: "You found some money. You have {@dice 1d20} gp in addition to your regular starting funds."},
-	{min: 5, result: "A relative bequeathed you a simple weapon of your choice."},
-	{min: 6, result: () => `You found something interesting. You gain one additional trinket ${fmtChoice(rollTrinket())}.`, display: "You found something interesting. You gain one additional trinket."},
-	{min: 7, result: "You once performed a service for a local temple. The next time you visit the temple, you can receive healing up to your hit point maximum."},
-	{min: 8, result: "A friendly alchemist gifted you with a potion of healing or a flask of acid, as you choose."},
-	{min: 9, result: "You found a treasure map."},
-	{min: 10, result: () => `A distant relative left you a stipend that enables you to live at the comfortable lifestyle for {@dice 1d20} ${fmtChoice(RNG(20))} years. If you choose to live at a higher lifestyle, you reduce the price of the lifestyle by 2 gp during that time period.`, display: "A distant relative left you a stipend that enables you to live at the comfortable lifestyle for {@dice 1d20} years. If you choose to live at a higher lifestyle, you reduce the price of the lifestyle by 2 gp during that time period."},
+	{min: 1, result: "一位友善的法师送给你一张记载着一种戏法的法术卷轴（由 DM 选择）。"},
+	{min: 2, result: "你救了一位平民的命，对方因此欠你人情。这位平民陪你旅行并处理琐事，但若遭到忽视、虐待或置于险境，就会离开。使用补充表并与你的 DM 一起确定此人的详情。", pNextRoll: async () => _lifeEvtPerson("平民", await getPersonDetails())},
+	{min: 3, result: "你找到了一匹{@item riding horse|PHB|骑乘马}。"},
+	{min: 4, result: () => `你找到了一些钱。除正常的起始资金外，你还获得 {@dice 1d20} ${fmtChoice(RNG(20))} 金币。`, display: "你找到了一些钱。除正常的起始资金外，你还获得 {@dice 1d20} 金币。"},
+	{min: 5, result: "一位亲属留给你一件由你选择的简易武器。"},
+	{min: 6, result: () => `你找到了一件有趣的东西。额外获得一件饰品 ${fmtChoice(rollTrinket())}。`, display: "你找到了一件有趣的东西。额外获得一件饰品。"},
+	{min: 7, result: "你曾为当地神殿效劳。下次到访时，可以获得治疗，最多恢复至生命值上限。"},
+	{min: 8, result: "一位友善的炼金术师送你一瓶治疗药水或一瓶强酸，由你选择。"},
+	{min: 9, result: "你找到了一张藏宝图。"},
+	{min: 10, result: () => `一位远亲留给你一笔津贴，足以让你以舒适的生活方式生活 {@dice 1d20} ${fmtChoice(RNG(20))} 年。在此期间，如果选择更高档的生活方式，其费用减少 2 金币。`, display: "一位远亲留给你一笔津贴，足以让你以舒适的生活方式生活 {@dice 1d20} 年。在此期间，如果选择更高档的生活方式，其费用减少 2 金币。"},
 ];
 
 const LIFE_EVENTS_CRIME = [
-	{min: 1, result: "Murder"},
-	{min: 2, result: "Theft"},
-	{min: 3, result: "Burglary"},
-	{min: 4, result: "Assault"},
-	{min: 5, result: "Smuggling"},
-	{min: 6, result: "Kidnapping"},
-	{min: 7, result: "Extortion"},
-	{min: 8, result: "Counterfeiting"},
+	{min: 1, result: "谋杀"},
+	{min: 2, result: "盗窃"},
+	{min: 3, result: "入室盗窃"},
+	{min: 4, result: "袭击"},
+	{min: 5, result: "走私"},
+	{min: 6, result: "绑架"},
+	{min: 7, result: "勒索"},
+	{min: 8, result: "伪造货币"},
 ];
 
 const LIFE_EVENTS_PUNISHMENT = [
-	{min: 1, max: 3, result: "You did not commit the crime and were exonerated after being accused."},
-	{min: 4, max: 6, result: "You committed the crime or helped do so, but nonetheless the authorities found you not guilty."},
-	{min: 7, max: 8, result: "You were nearly caught in the act. You had to flee and are wanted in the community where the crime occurred."},
-	{min: 9, max: 12, result: () => `You were caught and convicted. You spent time in jail, chained to an oar, or performing hard labor. You served a sentence of {@dice 1d4} years ${fmtChoice(RNG(4))} or succeeded in escaping after that much time.`, display: "You were caught and convicted. You spent time in jail, chained to an oar, or performing hard labor. You served a sentence of {@dice 1d4} years or succeeded in escaping after that much time."},
+	{min: 1, max: 3, result: "你没有犯罪，在受到指控后获判无罪。"},
+	{min: 4, max: 6, result: "你犯下罪行或参与其中，但当局仍判你无罪。"},
+	{min: 7, max: 8, result: "你差点被当场抓获，被迫逃离，并在案发地遭到通缉。"},
+	{min: 9, max: 12, result: () => `你被捕并定罪，在监狱、划桨船或苦役场度过了一段时光。你服刑 {@dice 1d4} ${fmtChoice(RNG(4))} 年，或在同样长的时间后成功逃脱。`, display: "你被捕并定罪，在监狱、划桨船或苦役场度过了一段时光。你服刑 {@dice 1d4} 年，或在同样长的时间后成功逃脱。"},
 ];
 
 const LIFE_EVENTS_SUPERNATURAL = [
-	{min: 1, max: 5, result: () => `You were ensorcelled by a fey and enslaved for {@dice 1d6} ${fmtChoice(RNG(6))} years before you escaped.`, display: "You were ensorcelled by a fey and enslaved for {@dice 1d6} years before you escaped."},
-	{min: 6, max: 10, result: "You saw a demon and ran away before it could do anything to you."},
-	{min: 11, max: 15, result: () => `A devil tempted you. Make a DC 10 Wisdom saving throw. On a failed save, your alignment shifts one step toward evil (if it's not evil already), and you start the game with an additional {@dice 1d20 + 50} ${fmtChoice(RNG(20) + 50)} gp.`, display: "A devil tempted you. Make a DC 10 Wisdom saving throw. On a failed save, your alignment shifts one step toward evil (if it's not evil already), and you start the game with an additional {@dice 1d20 + 50} gp."},
-	{min: 16, max: 20, result: "You woke up one morning miles from your home, with no idea how you got there."},
-	{min: 21, max: 30, result: "You visited a holy site and felt the presence of the divine there."},
-	{min: 31, max: 40, result: "You witnessed a falling red star, a face appearing in the frost, or some other bizarre happening. You are certain that it was an omen of some sort."},
-	{min: 41, max: 50, result: "You escaped certain death and believe it was the intervention of a god that saved you."},
-	{min: 51, max: 60, result: "You witnessed a minor miracle."},
-	{min: 61, max: 70, result: "You explored an empty house and found it to be haunted."},
-	{min: 71, max: 75, result: () => { const p = RNG(6); return `You were briefly possessed. Roll a {@dice d6} to determine what type of creature possessed you: 1, celestial; 2, devil; 3, demon; 4, fey; 5, elemental; 6, undead ${fmtChoice(`${p}; ${["celestial", "devil", "demon", "fey", "elemental", "undead"][p - 1]}`)}.`; }, display: "You were briefly possessed. Roll a {@dice d6} to determine what type of creature possessed you: 1, celestial; 2, devil; 3, demon; 4, fey; 5, elemental; 6, undead."},
-	{min: 76, max: 80, result: "You saw a ghost."},
-	{min: 81, max: 85, result: "You saw a ghoul feeding on a corpse."},
-	{min: 86, max: 90, result: "A celestial or a fiend visited you in your dreams to give a warning of dangers to come."},
-	{min: 91, max: 95, result: () => `You briefly visited the Feywild or the Shadowfell ${choose("Feywild", "Shadowfell")}.`, "results": "You briefly visited the Feywild or the Shadowfell."},
-	{min: 96, max: 100, result: "You saw a portal that you believe leads to another plane of existence."},
+	{min: 1, max: 5, result: () => `你被一名妖精施法奴役了 {@dice 1d6} ${fmtChoice(RNG(6))} 年，之后才逃脱。`, display: "你被一名妖精施法奴役了 {@dice 1d6} 年，之后才逃脱。"},
+	{min: 6, max: 10, result: "你看见一只恶魔，在它伤害你之前逃走了。"},
+	{min: 11, max: 15, result: () => `一只魔鬼诱惑了你。进行一次 DC 10 的感知豁免检定。若失败，你的阵营向邪恶偏移一级（若尚非邪恶），并在开始游戏时额外获得 {@dice 1d20 + 50} ${fmtChoice(RNG(20) + 50)} 金币。`, display: "一只魔鬼诱惑了你。进行一次 DC 10 的感知豁免检定。若失败，你的阵营向邪恶偏移一级（若尚非邪恶），并在开始游戏时额外获得 {@dice 1d20 + 50} 金币。"},
+	{min: 16, max: 20, result: "一天早晨，你在离家数英里的地方醒来，完全不知道自己是怎么到那里的。"},
+	{min: 21, max: 30, result: "你到访了一处圣地，在那里感受到了神圣的存在。"},
+	{min: 31, max: 40, result: "你看见一颗坠落的红星、霜花中浮现的人脸，或其他离奇现象。你确信那是某种预兆。"},
+	{min: 41, max: 50, result: "你逃过了必死的命运，相信是神明的干预救了你。"},
+	{min: 51, max: 60, result: "你见证了一场小小的奇迹。"},
+	{min: 61, max: 70, result: "你探索了一栋空屋，发现里面闹鬼。"},
+	{min: 71, max: 75, result: () => { const p = RNG(6); return `你曾短暂地被附身。掷 {@dice d6} 确定附身生物的类型：1，天界生物；2，魔鬼；3，恶魔；4，妖精；5，元素生物；6，不死生物 ${fmtChoice(`${p}; ${["天界生物", "魔鬼", "恶魔", "妖精", "元素生物", "不死生物"][p - 1]}`)}.`; }, display: "你曾短暂地被附身。掷 {@dice d6} 确定附身生物的类型：1，天界生物；2，魔鬼；3，恶魔；4，妖精；5，元素生物；6，不死生物。"},
+	{min: 76, max: 80, result: "你看见了一个幽灵。"},
+	{min: 81, max: 85, result: "你看见一只食尸鬼啃食尸体。"},
+	{min: 86, max: 90, result: "一位天界生物或邪魔在梦中造访，警告你即将到来的危险。"},
+	{min: 91, max: 95, result: () => `你曾短暂造访妖精荒野或堕影冥界 ${choose("妖精荒野", "堕影冥界")}。`, "results": "你曾短暂造访妖精荒野或堕影冥界。"},
+	{min: 96, max: 100, result: "你看见一道传送门，相信它通往另一个位面。"},
 ];
 
 const LIFE_EVENTS_TRAGEDIES = [
-	{min: 1, max: 2, result: () => `A family member or a close friend died. Roll on the {@table Supplemental Tables; Cause of Death|XGE|Cause of Death} supplemental table to find out how.`, display: "A family member or a close friend died. Roll on the Cause of Death supplemental table to find out how.", pNextRoll: () => _pLifeEvtResult("Cause of Death", rollSuppDeath())},
-	{min: 3, result: "A friendship ended bitterly, and the other person is now hostile to you. The cause might have been a misunderstanding or something you or the former friend did."},
-	{min: 4, result: "You lost all your possessions in a disaster, and you had to rebuild your life."},
-	{min: 5, result: () => `You were imprisoned for a crime you didn't commit and spent {@dice 1d6} ${fmtChoice(RNG(6))} years at hard labor, in jail, or shackled to an oar in a slave galley.`, display: "You were imprisoned for a crime you didn't commit and spent {@dice 1d6} years at hard labor, in jail, or shackled to an oar in a slave galley."},
-	{min: 6, result: "War ravaged your home community, reducing everything to rubble and ruin. In the aftermath, you either helped your town rebuild or moved somewhere else."},
-	{min: 7, result: "A lover disappeared without a trace. You have been looking for that person ever since."},
-	{min: 8, result: "A terrible blight in your home community caused crops to fail, and many starved. You lost a sibling or some other family member."},
-	{min: 9, result: "You did something that brought terrible shame to you in the eyes of your family. You might have been involved in a scandal, dabbled in dark magic, or offended someone important. The attitude of your family members toward you becomes indifferent at best, though they might eventually forgive you."},
-	{min: 10, result: "For a reason you were never told, you were exiled from your community. You then either wandered in the wilderness for a time or promptly found a new place to live."},
-	{min: 11, result: () => `A romantic relationship ended. Roll a {@dice d6} ${fmtChoice(RNG(6))}. An odd number means it ended with bad feelings, while an even number means it ended amicably.`, display: "A romantic relationship ended. Roll a {@dice d6}. An odd number means it ended with bad feelings, while an even number means it ended amicably."},
-	{min: 12, result: () => `A current or prospective romantic partner of yours died. Roll on the {@table Supplemental Tables; Cause of Death|XGE|Cause of Death} supplemental table to find out how. If the result is murder, roll a {@dice d12}. On a 1, you were responsible, whether directly or indirectly.`, display: "A current or prospective romantic partner of yours died. Roll on the {@table Supplemental Tables; Cause of Death|XGE|Cause of Death} supplemental table to find out how. If the result is murder, roll a {@dice d12}. On a 1, you were responsible, whether directly or indirectly.", pNextRoll: () => _pLifeEvtResult("Cause of Death", (() => { const r = RNG(12); const p = GenUtil.getFromTable(SUPP_DEATH, r); return {result: `${p.result}${r === 2 && RNG(12) === 1 ? ` ${fmtChoice("you were responsible")}` : ""}`}; })())},
+	{min: 1, max: 2, result: () => `一位家人或密友去世。请在{@table Supplemental Tables; Cause of Death|XGE|死因}补充表上掷骰，确定死因。`, display: "一位家人或密友去世。请在“死因”补充表上掷骰，确定死因。", pNextRoll: () => _pLifeEvtResult("死因", rollSuppDeath())},
+	{min: 3, result: "一段友谊以痛苦告终，对方如今与你敌对。原因可能是一场误会，也可能是你或昔日好友做过的事。"},
+	{min: 4, result: "你在一场灾难中失去了所有财物，不得不重新开始生活。"},
+	{min: 5, result: () => `你因莫须有的罪名入狱，在苦役场、监狱或奴隶桨船上度过了 {@dice 1d6} ${fmtChoice(RNG(6))} 年。`, display: "你因莫须有的罪名入狱，在苦役场、监狱或奴隶桨船上度过了 {@dice 1d6} 年。"},
+	{min: 6, result: "战争摧毁了你的家乡，一切化为废墟。此后，你要么帮助重建家园，要么迁往别处。"},
+	{min: 7, result: "你的爱人消失得无影无踪。此后你一直在寻找对方。"},
+	{min: 8, result: "家乡遭遇严重枯萎病，农作物歉收，许多人饿死。你失去了一位兄弟姐妹或其他家人。"},
+	{min: 9, result: "你做了一件让家人深感羞耻的事：可能卷入丑闻、涉足黑暗魔法，或得罪了重要人物。家人对你至多保持冷淡，不过最终或许会原谅你。"},
+	{min: 10, result: "你因不明原因被社区放逐。此后你可能在荒野中流浪了一阵，也可能很快找到了新的住处。"},
+	{min: 11, result: () => `一段恋情结束了。掷 {@dice d6} ${fmtChoice(RNG(6))}：奇数表示分手时心存芥蒂，偶数表示和平分手。`, display: "一段恋情结束了。掷 {@dice d6}：奇数表示分手时心存芥蒂，偶数表示和平分手。"},
+	{min: 12, result: () => `你现在或未来可能成为伴侣的人去世了。请在{@table Supplemental Tables; Cause of Death|XGE|死因}补充表上掷骰，确定死因。如果结果是谋杀，再掷 {@dice d12}；若掷出 1，你对此负有直接或间接责任。`, display: "你现在或未来可能成为伴侣的人去世了。请在{@table Supplemental Tables; Cause of Death|XGE|死因}补充表上掷骰，确定死因。如果结果是谋杀，再掷 {@dice d12}；若掷出 1，你对此负有直接或间接责任。", pNextRoll: () => _pLifeEvtResult("死因", (() => { const r = RNG(12); const p = GenUtil.getFromTable(SUPP_DEATH, r); return {result: `${p.result}${r === 2 && RNG(12) === 1 ? ` ${fmtChoice("你对此负有责任")}` : ""}`}; })())},
 ];
 
 const LIFE_EVENTS_WAR = [
-	{min: 1, result: "You were knocked out and left for dead. You woke up hours later with no recollection of the battle."},
-	{min: 2, max: 3, result: "You were badly injured in the fight, and you still bear the awful scars of those wounds."},
-	{min: 4, result: "You ran away from the battle to save your life, but you still feel shame for your cowardice."},
-	{min: 5, max: 7, result: "You suffered only minor injuries, and the wounds all healed without leaving scars."},
-	{min: 8, max: 9, result: "You survived the battle, but you suffer from terrible nightmares in which you relive the experience."},
-	{min: 10, max: 11, result: "You escaped the battle unscathed, though many of your friends were injured or lost."},
-	{min: 12, result: "You acquitted yourself well in battle and are remembered as a hero. You might have received a medal for your bravery."},
+	{min: 1, result: "你被击昏，别人以为你已经死了。数小时后你醒来，却完全不记得那场战斗。"},
+	{min: 2, max: 3, result: "你在战斗中身受重伤，至今仍留有可怕的伤疤。"},
+	{min: 4, result: "你为了活命逃离战场，至今仍为自己的怯懦感到羞愧。"},
+	{min: 5, max: 7, result: "你只受了轻伤，伤口全部愈合，没有留下疤痕。"},
+	{min: 8, max: 9, result: "你从战斗中幸存，却常做噩梦，在梦中重历当时的经历。"},
+	{min: 10, max: 11, result: "你毫发无伤地离开战场，但许多朋友受伤或丧生。"},
+	{min: 12, result: "你在战斗中表现出色，被人们铭记为英雄。你可能因勇敢而获颁勋章。"},
 ];
 
 const LIFE_EVENTS_WEIRD_STUFF = [
-	{min: 1, result: () => `You were turned into a toad and remained in that form for {@dice 1d4} ${fmtChoice(RNG(4))} weeks.`, display: "You were turned into a toad and remained in that form for {@dice 1d4} weeks."},
-	{min: 2, result: "You were petrified and remained a stone statue for a time until someone freed you."},
-	{min: 3, result: () => `You were enslaved by a hag, a satyr, or some other being and lived in that creature's thrall for {@dice 1d6} ${fmtChoice(RNG(6))} years.`, display: "You were enslaved by a hag, a satyr, or some other being and lived in that creature’s thrall for {@dice 1d6} years."},
-	{min: 4, result: () => `A dragon held you as a prisoner for {@dice 1d4} ${fmtChoice(RNG(4))} months until adventurers killed it.`, display: "A dragon held you as a prisoner for {@dice 1d4} months until adventurers killed it."},
-	{min: 5, result: "You were taken captive by a race of evil humanoids such as drow, kuo-toa, or quaggoths. You lived as a slave in the Underdark until you escaped."},
-	{min: 6, result: "You served a powerful adventurer as a hireling. You have only recently left that service. Use the supplemental tables and work with your DM to determine the basic details about your former employer.", pNextRoll: async () => _lifeEvtPerson("Employer", await getPersonDetails({isAdventurer: true}))},
-	{min: 7, result: () => `You went insane for {@dice 1d6} ${fmtChoice(RNG(6))} years and recently regained your sanity. A tic or some other bit of odd behavior might linger.`, display: "You went insane for {@dice 1d6} years and recently regained your sanity. A tic or some other bit of odd behavior might linger."},
-	{min: 8, result: "A lover of yours was secretly a silver dragon."},
-	{min: 9, result: "You were captured by a cult and nearly sacrificed on an altar to the foul being the cultists served. You escaped, but you fear they will find you."},
-	{min: 10, result: () => `You met a demigod, an archdevil, an archfey, a demon lord, or a titan, ${choose("demigod", "archdevil", "archfey", "demon lord", "titan")} and you lived to tell the tale.`, display: "You met a demigod, an archdevil, an archfey, a demon lord, or a titan, and you lived to tell the tale."},
-	{min: 11, result: "You were swallowed by a giant fish and spent a month in its gullet before you escaped."},
-	{min: 12, result: () => `A powerful being granted you a wish, but you squandered it on something frivolous.`, display: "A powerful being granted you a wish, but you squandered it on something frivolous."},
+	{min: 1, result: () => `你被变成一只蟾蜍，并保持这个形态 {@dice 1d4} ${fmtChoice(RNG(4))} 周。`, display: "你被变成一只蟾蜍，并保持这个形态 {@dice 1d4} 周。"},
+	{min: 2, result: "你被石化成雕像，过了一段时间才有人将你解救。"},
+	{min: 3, result: () => `你被鬼婆、萨梯或其他生物奴役，在其控制下生活了 {@dice 1d6} ${fmtChoice(RNG(6))} 年。`, display: "你被鬼婆、萨梯或其他生物奴役，在其控制下生活了 {@dice 1d6} 年。"},
+	{min: 4, result: () => `一条龙囚禁了你 {@dice 1d4} ${fmtChoice(RNG(4))} 个月，直到冒险者杀死了它。`, display: "一条龙囚禁了你 {@dice 1d4} 个月，直到冒险者杀死了它。"},
+	{min: 5, result: "你被卓尔、寇涛鱼人或夸格斯等邪恶类人生物俘虏，在幽暗地域沦为奴隶，直到成功逃脱。"},
+	{min: 6, result: "你曾受雇于一名强大的冒险者，直到最近才离开。使用补充表并与你的 DM 一起确定前雇主的基本情况。", pNextRoll: async () => _lifeEvtPerson("雇主", await getPersonDetails({isAdventurer: true}))},
+	{min: 7, result: () => `你精神失常了 {@dice 1d6} ${fmtChoice(RNG(6))} 年，最近才恢复理智。你可能仍有抽搐或其他怪异举止。`, display: "你精神失常了 {@dice 1d6} 年，最近才恢复理智。你可能仍有抽搐或其他怪异举止。"},
+	{min: 8, result: "你的爱人其实是一条银龙。"},
+	{min: 9, result: "你曾被邪教俘虏，差点在祭坛上被献给他们侍奉的邪恶存在。你逃了出来，却担心他们会找到你。"},
+	{min: 10, result: () => `你遇见过一位半神、大魔鬼、大妖精、恶魔领主或泰坦——${choose("半神", "大魔鬼", "大妖精", "恶魔领主", "泰坦")}，而且活着讲述了这段经历。`, display: "你遇见过一位半神、大魔鬼、大妖精、恶魔领主或泰坦，而且活着讲述了这段经历。"},
+	{min: 11, result: "你被一条巨鱼吞下，在它的肚子里待了一个月才逃脱。"},
+	{min: 12, result: () => `一位强大的存在赐予你一个愿望，你却把它浪费在一件无关紧要的小事上。`, display: "一位强大的存在赐予你一个愿望，你却把它浪费在一件无关紧要的小事上。"},
 ];
 
 const SUPP_ALIGNMENT = [
-	{min: 1, max: 3, result: () => rollOnArray(["混乱邪恶", "混乱中立"]), display: "Chaotic evil (50%) or chaotic neutral (50%)"},
+	{min: 1, max: 3, result: () => rollOnArray(["混乱邪恶", "混乱中立"]), display: "混乱邪恶（50%）或混乱中立（50%）"},
 	{min: 4, max: 5, result: "守序邪恶"},
 	{min: 6, max: 8, result: "中立邪恶"},
 	{min: 9, max: 12, result: "绝对中立"},
 	{min: 13, max: 15, result: "中立善良"},
-	{min: 16, max: 17, result: () => rollOnArray(["守序善良", "中立善良"]), display: "Lawful good (50%) or lawful neutral (50%)"},
-	{min: 18, result: () => rollOnArray(["混乱善良", "混乱中立"]), display: "Chaotic good (50%) or chaotic neutral (50%)"},
+	{min: 16, max: 17, result: () => rollOnArray(["守序善良", "中立善良"]), display: "守序善良（50%）或中立善良（50%）"},
+	{min: 18, result: () => rollOnArray(["混乱善良", "混乱中立"]), display: "混乱善良（50%）或混乱中立（50%）"},
 ];
 
 const SUPP_DEATH = [
@@ -490,41 +491,41 @@ const SUPP_DEATH = [
 	{min: 5, result: "与阶级或职业无关的事故"},
 	{min: 6, max: 7, result: "自然死亡，例如疾病或衰老"},
 	{min: 8, result: "自杀"},
-	{min: 9, result: () => `因动物或自然灾害而死${choose("动物", "自然灾害")}`, display: "Torn apart by an animal or a natural disaster"},
+	{min: 9, result: () => `因动物或自然灾害而死${choose("动物", "自然灾害")}`, display: "死于动物袭击或自然灾害"},
 	{min: 10, result: () => "被怪物吞噬"},
-	{min: 11, result: () => `因犯罪被处决或折磨致死${choose("犯罪被处决", "折磨致死")}`, display: "Executed for a crime or tortured to death"},
+	{min: 11, result: () => `因犯罪被处决或折磨致死${choose("犯罪被处决", "折磨致死")}`, display: "因犯罪被处决或遭折磨致死"},
 	{min: 12, result: "奇异的事件，比如被陨石击中、被愤怒的神灵击倒，或者被孵化中的史拉蟾蛋杀死"},
 ];
 
 const SUPP_CLASS = [
-	{min: 1, max: 7, result: "Barbarian"},
-	{min: 8, max: 14, result: "Bard"},
-	{min: 15, max: 29, result: "Cleric"},
-	{min: 30, max: 36, result: "Druid"},
-	{min: 37, max: 52, result: "Fighter"},
-	{min: 53, max: 58, result: "Monk"},
-	{min: 59, max: 64, result: "Paladin"},
-	{min: 65, max: 70, result: "Ranger"},
-	{min: 71, max: 84, result: "Rogue"},
-	{min: 85, max: 89, result: "Sorcerer"},
-	{min: 90, max: 94, result: "Warlock"},
-	{min: 95, max: 100, result: "Wizard"},
+	{min: 1, max: 7, result: "野蛮人"},
+	{min: 8, max: 14, result: "吟游诗人"},
+	{min: 15, max: 29, result: "牧师"},
+	{min: 30, max: 36, result: "德鲁伊"},
+	{min: 37, max: 52, result: "战士"},
+	{min: 53, max: 58, result: "武僧"},
+	{min: 59, max: 64, result: "圣武士"},
+	{min: 65, max: 70, result: "游侠"},
+	{min: 71, max: 84, result: "游荡者"},
+	{min: 85, max: 89, result: "术士"},
+	{min: 90, max: 94, result: "邪术师"},
+	{min: 95, max: 100, result: "法师"},
 ];
 
 const SUPP_OCCUPATION = [
 	{min: 1, max: 5, result: "科研人员"},
-	{min: 6, max: 10, result: () => `冒险家(${rollSuppClass().result})`, display: "Adventurer (roll on the Class table)"},
+	{min: 6, max: 10, result: () => `冒险家(${rollSuppClass().result})`, display: "冒险者（在职业表上掷骰）"},
 	{min: 11, result: "贵族"},
-	{min: 12, max: 26, result: () => `工匠或公会成员 ${choose("工匠", "工会成员")}`, display: "Artisan or guild member"},
+	{min: 12, max: 26, result: () => `工匠或公会成员 ${choose("工匠", "工会成员")}`, display: "工匠或公会成员"},
 	{min: 27, max: 31, result: "罪犯"},
 	{min: 32, max: 36, result: "艺人"},
-	{min: 37, max: 38, result: () => `流浪者、隐士或难民${choose("流浪者", "隐士", "难民")}`, display: "Exile, hermit, or refugee"},
-	{min: 39, max: 43, result: () => `探险家或漫游者${choose("探险家", "漫游者")}`, display: "Explorer or wanderer"},
-	{min: 44, max: 55, result: () => `农民或牧民${choose("农民", "牧民")}`, display: "Farmer or herder"},
-	{min: 56, max: 60, result: () => `猎人或捕猎者${choose("猎人", "捕猎者")}`, display: "Hunter or trapper"},
+	{min: 37, max: 38, result: () => `流浪者、隐士或难民${choose("流浪者", "隐士", "难民")}`, display: "流放者、隐士或难民"},
+	{min: 39, max: 43, result: () => `探险家或漫游者${choose("探险家", "漫游者")}`, display: "探险家或漫游者"},
+	{min: 44, max: 55, result: () => `农民或牧民${choose("农民", "牧民")}`, display: "农民或牧民"},
+	{min: 56, max: 60, result: () => `猎人或捕猎者${choose("猎人", "捕猎者")}`, display: "猎人或捕猎者"},
 	{min: 61, max: 75, result: "工人"},
 	{min: 76, max: 80, result: "商人"},
-	{min: 81, max: 85, result: () => `政治家或官僚${choose("政治家", "官僚")}`, display: "Politician or bureaucrat"},
+	{min: 81, max: 85, result: () => `政治家或官僚${choose("政治家", "官僚")}`, display: "政治家或官僚"},
 	{min: 86, max: 90, result: "牧师"},
 	{min: 91, max: 95, result: "水手"},
 	{min: 96, max: 100, result: "士兵"},
@@ -537,10 +538,10 @@ const SUPP_RACE = [
 	{min: 61, max: 70, result: "矮人"},
 	{min: 71, max: 75, result: "龙裔"},
 	{min: 76, max: 80, result: "侏儒"},
-	{min: 81, max: 85, result: "Half-elf"},
-	{min: 86, max: 90, result: "Half-orc"},
+	{min: 81, max: 85, result: "半精灵"},
+	{min: 86, max: 90, result: "半兽人"},
 	{min: 91, max: 95, result: "提夫林"},
-	{min: 96, max: 100, result: "DM’s choice"},
+	{min: 96, max: 100, result: "由 DM 选择"},
 ];
 
 const SUPP_RELATIONSHIP = [
@@ -550,9 +551,9 @@ const SUPP_RELATIONSHIP = [
 ];
 
 const SUPP_STATUS = [
-	{min: 3, result: () => { return `Dead (${rollSuppDeath().result.lowercaseFirst()})`; }, display: "Dead (roll on the Cause of Death table)", "dead": true},
-	{min: 4, max: 5, result: () => `失踪或失联${choose("失踪", "失联")}`, display: "Missing or status unknown"},
-	{min: 6, max: 8, result: () => `活着，但由于受伤、经济困难或关系问题而状况不佳${choose("受伤", "经济困难", "关系问题")}`, display: "Alive, but doing poorly due to injury, financial trouble, or relationship difficulties"},
+	{min: 3, result: () => { return `已死亡（${rollSuppDeath().result}）`; }, display: "已死亡（在死因表上掷骰）", "dead": true},
+	{min: 4, max: 5, result: () => `失踪或失联${choose("失踪", "失联")}`, display: "失踪或下落不明"},
+	{min: 6, max: 8, result: () => `活着，但由于受伤、经济困难或关系问题而状况不佳${choose("受伤", "经济困难", "关系问题")}`, display: "活着，但因伤病、经济或关系问题而处境不佳"},
 	{min: 9, max: 12, result: "活得很好"},
 	{min: 13, max: 15, result: "活着并且非常成功"},
 	{min: 16, max: 17, result: "声名狼藉的活着"},
@@ -703,9 +704,9 @@ async function pSectParents () {
 	}
 
 	if (selRace === "Other") {
-		parents.vee.html(concatSentences(`<b>种族:</b> 其他 ${fmtChoice(`${race}; generated using the {@table Supplemental Tables; Race|XGE|Supplemental Race} table`, true)}`, knowParentsStr, parentage));
+		parents.vee.html(concatSentences(`<b>种族:</b> 其他 ${fmtChoice(`${race}；使用{@table Supplemental Tables; Race|XGE|种族}补充表生成`, true)}`, knowParentsStr, parentage));
 	} else {
-		parents.vee.html(concatSentences(`<b>种族:</b> ${race}${selRace === "Random" ? ` ${fmtChoice("generated using the {@table Supplemental Tables; Race|XGE|Supplemental Race} table", true)}` : ""}`, knowParentsStr, parentage));
+		parents.vee.html(concatSentences(`<b>种族:</b> ${race}${selRace === "Random" ? ` ${fmtChoice("使用{@table Supplemental Tables; Race|XGE|种族}补充表生成", true)}` : ""}`, knowParentsStr, parentage));
 	}
 
 	if (knowParents) {
@@ -734,7 +735,7 @@ function sectBirthplace () {
 	const rollBirth = RNG(100);
 	const birth = `<b>出生地:</b> ${GenUtil.getFromTable(BIRTHPLACES, rollBirth).result}`;
 
-	const strangeBirth = RNG(100) === 100 ? "A strange event coincided with your birth: the moon briefly turning red, all the milk within a mile spoiling, the water in the area freezing solid in midsummer, all the iron in the home rusting or turning to silver, or some other unusual event of your choice" : "";
+	const strangeBirth = RNG(100) === 100 ? "你出生时发生了一件怪事：月亮短暂变红，一英里内的牛奶全部变质，附近的水在盛夏结冰，家中所有铁器生锈或变成白银，或者发生了由你选择的其他异象" : "";
 	birthplace.vee.html(concatSentences(birth, strangeBirth));
 }
 
@@ -784,7 +785,7 @@ async function pSectSiblings () {
 				const siblingType = rollOnArray(["兄弟", "姐妹"]);
 				dispTitle.vee.html(`${getBirthOrder()}兄弟姐妹${fmtChoice(siblingType, true)}`);
 				dispDetails.vee.html(joinParaList(await getPersonDetails({
-					gender: siblingType === "兄弟" ? "男性" : "女性",
+					gender: siblingType === "兄弟" ? "Male" : "Female",
 					parentRaces: parentRaces,
 					isSibling: true,
 				})));
@@ -830,7 +831,7 @@ function sectFamily () {
 			const btnReroll = veT`<button class="ve-btn ve-btn-default ve-btn-xxs ve-print__hidden">重骰</button>`
 				.vee.onn("click", () => pDoRollAndDisplay());
 
-			const btnRemove = veT`<button class="ve-btn ve-btn-xxs ve-print__hidden ve-btn-danger" title="Delete"><span class="glyphicon glyphicon-trash"></span></button>`
+			const btnRemove = veT`<button class="ve-btn ve-btn-xxs ve-print__hidden ve-btn-danger" title="删除"><span class="glyphicon glyphicon-trash"></span></button>`
 				.vee.onn("click", () => wrpRes.remove());
 
 			const wrpRes = veT`<div class="life__output-wrp-border ve-p-3 ve-my-2">
@@ -901,7 +902,7 @@ async function pSectLifeEvents () {
 			const wrpNextRoll = veT`<div></div>`;
 
 			if (nextRoll.title) {
-				const btnReroll = veT`<button class="ve-btn ve-btn-default ve-btn-xxs ve-print__hidden">Reroll</button>`
+				const btnReroll = veT`<button class="ve-btn ve-btn-default ve-btn-xxs ve-print__hidden">重骰</button>`
 					.vee.onn("click", () => pRecurseNextRolls({lifeEvent, wrpOutput}));
 
 				veT`<div class="life__output-wrp-border ve-p-3 ve-my-2">

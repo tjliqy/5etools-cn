@@ -49,11 +49,11 @@ export class RenderableCollectionViewerCreatures extends RenderableCollectionGen
 			comp,
 			"isLocked",
 			{
-				html: `<button title="Lock Monster against Randomizing/Adjusting" class="ve-btn ve-btn-default ve-btn-xs"><span class="glyphicon glyphicon-lock"></span></button>`,
+				html: `<button title="锁定生物，防止随机替换或调整" class="ve-btn ve-btn-default ve-btn-xs"><span class="glyphicon glyphicon-lock"></span></button>`,
 			},
 		);
 
-		const btnDelete = veT`<button class="ve-btn ve-btn-danger ve-btn-xs" title="Delete"><span class="glyphicon glyphicon-trash"></span></button>`
+		const btnDelete = veT`<button class="ve-btn ve-btn-danger ve-btn-xs" title="删除"><span class="glyphicon glyphicon-trash"></span></button>`
 			.vee.onn("click", () => {
 				if (comp._state.isLocked) return;
 				this._utils.doDelete({entity});

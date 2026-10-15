@@ -94,19 +94,19 @@ export class OmnisearchUtilsUi {
 		eleModalInner.vee.appends(`
 			<p>支持以下搜索语法：</p>
 			<ul>
-				<li><code>source:&lt;abbreviation&gt;</code> where <code>&lt;abbreviation&gt;</code> is an abbreviated source/book name (&quot;PHB&quot;, &quot;MM&quot;, etc.)</li>
-				<li><code>page:&lt;number&gt;</code> or <code>page:&lt;rangeStart&gt;-&lt;rangeEnd&gt;</code></li>
+				<li><code>source:&lt;缩写&gt;</code>：<code>&lt;缩写&gt;</code> 为来源或书籍名称的缩写（如 &quot;PHB&quot;、&quot;MM&quot;）</li>
+				<li><code>page:&lt;页码&gt;</code> 或 <code>page:&lt;起始页&gt;-&lt;结束页&gt;</code></li>
 				<li>
-					<code>in:&lt;category&gt;</code> where <code>&lt;category&gt;</code> can be &quot;spell&quot;, &quot;item&quot;, &quot;bestiary&quot;, etc.
+					<code>in:&lt;类别&gt;</code>：<code>&lt;类别&gt;</code> 可使用 &quot;spell&quot;、&quot;item&quot;、&quot;bestiary&quot; 等类别代码。
 					<br>
-					The following short-hand <code>&lt;category&gt;</code> values are available:
+					可使用以下 <code>&lt;类别&gt;</code> 简写：
 				</li>
 				<ul>
 					${ptCategoriesShort}
 				</ul>
 			</ul>
 			${this._doShowHelp_getPtHotkeys({isIncludeHotkeys})}
-			<p>Syntax values may be inverted with a <code>!</code> prefix, for example <code>in:!bestiary</code>, or <code>page:!1-100</code>.</p>
+			<p>在值前加 <code>!</code> 可以反选，例如 <code>in:!bestiary</code> 或 <code>page:!1-100</code>。</p>
 		`);
 	}
 
@@ -114,22 +114,22 @@ export class OmnisearchUtilsUi {
 		if (!isIncludeHotkeys) return ``;
 
 		const keysInput = [
-			{keys: ["↵"], description: `Visit first result`},
-			{keys: ["CTRL", "↵"], description: `<span>${Renderer.get().render(`View results in {@5etools search|search.html} page`)}</span>`},
-			{keys: ["↓"], description: `Select first result`},
-			{keys: ["PgUp"], description: `View previous results page`},
-			{keys: ["PgDn"], description: `View next results page`},
+			{keys: ["↵"], description: `打开第一项结果`},
+			{keys: ["CTRL", "↵"], description: `<span>${Renderer.get().render(`在{@5etools 搜索页面|search.html}查看结果`)}</span>`},
+			{keys: ["↓"], description: `选中第一项结果`},
+			{keys: ["PgUp"], description: `查看上一页结果`},
+			{keys: ["PgDn"], description: `查看下一页结果`},
 		];
 
 		const keysResults = [
-			{keys: ["↑"], description: `Select previous result`},
-			{keys: ["↓"], description: `Select next result`},
-			{keys: ["←"], description: `Go to previous results page`},
-			{keys: ["→"], description: `Go to next results page`},
-			{keys: ["PgUp"], description: `Go to previous results page`},
-			{keys: ["PgDn"], description: `Go to next results page`},
-			{keys: ["Home"], description: `Go to first results page`},
-			{keys: ["End"], description: `Go to last results page`},
+			{keys: ["↑"], description: `选中上一项结果`},
+			{keys: ["↓"], description: `选中下一项结果`},
+			{keys: ["←"], description: `跳转到上一页结果`},
+			{keys: ["→"], description: `跳转到下一页结果`},
+			{keys: ["PgUp"], description: `跳转到上一页结果`},
+			{keys: ["PgDn"], description: `跳转到下一页结果`},
+			{keys: ["Home"], description: `跳转到第一页结果`},
+			{keys: ["End"], description: `跳转到最后一页结果`},
 		];
 
 		const getPtKeys = keys => {
@@ -145,10 +145,10 @@ export class OmnisearchUtilsUi {
 		};
 
 		return `<hr class="ve-hr-2">
-		<div class="ve-mb-1">The following hotkeys are available:</div>
-		<div class="ve-ml-2 ve-mb-1"><i>When search input is focused:</i></div>
+		<div class="ve-mb-1">可使用以下快捷键：</div>
+		<div class="ve-ml-2 ve-mb-1"><i>焦点位于搜索框时：</i></div>
 		<div class="ve-pl-80p ve-mb-2">${getPtKeys(keysInput)}</div>
-		<div class="ve-ml-2 ve-mb-1"><i>When result link is focused:</i></div>
+		<div class="ve-ml-2 ve-mb-1"><i>焦点位于结果链接时：</i></div>
 		<div class="ve-pl-80p ve-mb-2">${getPtKeys(keysResults)}</div>`;
 	}
 }

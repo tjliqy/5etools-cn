@@ -96,7 +96,7 @@ export class ManageBrewUi {
 		if (
 			!await InputUiUtil.pGetUserBoolean({
 				title: I18nUtil.get("page.manageprelease.load_partnered_content"),
-				htmlDescription: `<p>${I18nUtil.get("page.manageprelease.are_you_sure_you_want_to_load_all_partnered_content")}<br>${cntAvailable} partnered content source${cntAvailable === 1 ? "" : "s"} will be loaded.</p>`,
+				htmlDescription: `<p>${I18nUtil.get("page.manageprelease.are_you_sure_you_want_to_load_all_partnered_content")}<br>将加载 ${cntAvailable} 个第三方合作内容来源。</p>`,
 				textYes: I18nUtil.get("common.button.yes"),
 				textNo: I18nUtil.get("common.button.cancel"),
 			})
@@ -113,7 +113,7 @@ export class ManageBrewUi {
 				...brewDocsHomebrew,
 			);
 		} catch (e) {
-			JqueryUtil.doToast({type: "danger", content: `Failed to load partnered content! ${VeCt.STR_SEE_CONSOLE}`});
+			JqueryUtil.doToast({type: "danger", content: `加载合作内容失败！ ${VeCt.STR_SEE_CONSOLE}`});
 			throw e;
 		}
 
@@ -193,7 +193,7 @@ export class ManageBrewUi {
 	_getBtnDeleteAll (rdState) {
 		const brewUtilOther = this._brewUtil === PrereleaseUtil ? BrewUtil2 : PrereleaseUtil;
 
-		return veT`<button class="ve-btn ve-btn-danger" title="SHIFT to also delete all ${brewUtilOther.DISPLAY_NAME.toTitleCase()}">${I18nUtil.get("common.button.delete_all")}</button>`
+		return veT`<button class="ve-btn ve-btn-danger" title="按住 Shift 可同时删除所有${brewUtilOther.DISPLAY_NAME.toTitleCase()}">${I18nUtil.get("common.button.delete_all")}</button>`
 			.vee.addClass(this._isModal ? "ve-btn-xs" : "ve-btn-sm")
 			.vee.onn("click", async evt => {
 				if (!evt.shiftKey) {
@@ -225,15 +225,15 @@ export class ManageBrewUi {
 				const cachedHtml = btn.vee.html();
 
 				try {
-					btn.vee.txt(`Updating...`).vee.prop("disabled", true);
+					btn.vee.txt(`正在更新……`).vee.prop("disabled", true);
 					await this._pDoPullAll({rdState, isReload: true});
 				} catch (e) {
-					btn.vee.txt(`Failed!`);
+					btn.vee.txt(`更新失败！`);
 					setTimeout(() => btn.vee.html(cachedHtml).vee.prop("disabled", false), VeCt.DUR_INLINE_NOTIFY);
 					throw e;
 				}
 
-				btn.vee.txt(`Done!`);
+				btn.vee.txt(`完成！`);
 				setTimeout(() => btn.vee.html(cachedHtml).vee.prop("disabled", false), VeCt.DUR_INLINE_NOTIFY);
 			});
 		return btn;
@@ -255,7 +255,7 @@ export class ManageBrewUi {
 		try {
 			brewDocsUpdated = await this._brewUtil.pPullAllBrews({brews});
 		} catch (e) {
-			JqueryUtil.doToast({content: `Update failed! ${VeCt.STR_SEE_CONSOLE}`, type: "danger"});
+			JqueryUtil.doToast({content: `更新失败！ ${VeCt.STR_SEE_CONSOLE}`, type: "danger"});
 			throw e;
 		}
 		if (!brewDocsUpdated?.length) return JqueryUtil.doToast(`更新完成！没有${this._brewUtil.DISPLAY_NAME}被更新。`);
@@ -331,13 +331,13 @@ export class ManageBrewUi {
 		const btnPullAll = this._isModal ? null : this._getBtnPullAll(rdState);
 		const btnDeleteAll = this._isModal ? null : this._getBtnDeleteAll(rdState);
 
-		const btnSaveToUrl = veT`<button class="ve-btn ve-btn-default ve-btn-sm" title="Note that this does not include &quot;Editable&quot; or &quot;Local&quot; content.">${I18nUtil.get("common.button.export_list_as_url")}</button>`
+		const btnSaveToUrl = veT`<button class="ve-btn ve-btn-default ve-btn-sm" title="不包含“可编辑”或“本地”内容。">${I18nUtil.get("common.button.export_list_as_url")}</button>`
 			.vee.onn("click", async evt => {
 				await this.constructor.pOnClickBtnExportListAsUrl({ele: evt.currentTarget});
 			});
 
 		const btnSendToFoundry = ExtensionUtil.ACTIVE
-			? veT`<button class="ve-btn ve-btn-default ve-btn-sm" title="Send List to Foundry. Note that this does not include &quot;Editable&quot; or &quot;Local&quot; content."><span class="glyphicon glyphicon-send"></span></button>`
+			? veT`<button class="ve-btn ve-btn-default ve-btn-sm" title="将列表发送至 Foundry。不包含“可编辑”或“本地”内容。"><span class="glyphicon glyphicon-send"></span></button>`
 				.vee.onn("click", () => this._pOnClickBtnSendListToFoundry({rdState}))
 			: null;
 
@@ -414,7 +414,7 @@ export class ManageBrewUi {
 		const parsedUrl = this.constructor._getParsedCustomUrl(enteredUrl);
 		if (!parsedUrl) {
 			return JqueryUtil.doToast({
-				content: `The URL was not valid!`,
+				content: `网址无效！`,
 				type: "danger",
 			});
 		}
@@ -468,7 +468,7 @@ export class ManageBrewUi {
 			.map(brew => brew.head.url)
 			.filter(Boolean)
 			.unique();
-		if (!urls.length) return JqueryUtil.doToast({type: "warning", content: `No ${this._brewUtil.DISPLAY_NAME} URLs available to send!`});
+		if (!urls.length) return JqueryUtil.doToast({type: "warning", content: `没有可发送的${this._brewUtil.DISPLAY_NAME}网址！`});
 
 		ExtensionUtil.pDoSend({
 			type: "5etools.manageContent.urls",
@@ -540,7 +540,7 @@ export class ManageBrewUi {
 	get _LBL_LIST_VIEW_CONTENTS () { return I18nUtil.get("common.button.view_contents"); }
 	get _LBL_LIST_VIEW_JSON () { return I18nUtil.get("common.button.view_json"); }
 	get _LBL_LIST_DELETE () { return I18nUtil.get("common.button.delete"); }
-	get _LBL_LIST_MOVE_TO_EDITABLE () { return `Move to Editable ${this._brewUtil.DISPLAY_NAME.toTitleCase()} Document`; }
+	get _LBL_LIST_MOVE_TO_EDITABLE () { return `移至可编辑的${this._brewUtil.DISPLAY_NAME.toTitleCase()}文件`; }
 
 	_initListMassMenu ({rdState}) {
 		if (rdState.menuListMass) return;
@@ -551,7 +551,7 @@ export class ManageBrewUi {
 				.map(li => rdState.brews[li.getId()])
 				.filter(brew => fnFilter ? fnFilter(brew) : true);
 
-			if (!brews.length) JqueryUtil.doToast({content: `Please select some suitable ${this._brewUtil.DISPLAY_NAME_PLURAL} first!`, type: "warning"});
+			if (!brews.length) JqueryUtil.doToast({content: `请先选择合适的${this._brewUtil.DISPLAY_NAME_PLURAL}！`, type: "warning"});
 
 			return brews;
 		};
@@ -621,7 +621,7 @@ export class ManageBrewUi {
 				const btnConvertedBy = veE({
 					tag: "button",
 					clazz: `ve-btn ve-btn-xxs ve-btn-default ${!hasConverters ? "ve-disabled" : ""}`,
-					title: hasConverters ? `Converted by: ${brewSource.convertedBy.join(", ").qq()}` : "(No conversion credit given)",
+					title: hasConverters ? `转换者：${brewSource.convertedBy.join("、").qq()}` : "（未提供转换者署名）",
 					children: [
 						veE({tag: "span", clazz: "ve-mobile-sm__hidden", txt: "查看编辑"}),
 						veE({tag: "span", clazz: "ve-mobile-sm__visible", txt: "编辑", title: "查看编辑"}),
@@ -748,7 +748,7 @@ export class ManageBrewUi {
 		const btnOpenMenu = veE({
 			tag: "button",
 			clazz: `ve-btn ve-btn-default ve-btn-xs ve-w-24p`,
-			title: "Menu",
+			title: "菜单",
 			children: [
 				veE({
 					tag: "span",
@@ -782,10 +782,10 @@ export class ManageBrewUi {
 		});
 
 		const ptCategory = brew.head.isLocal
-			? {short: `Local`, title: `Local Document`}
+			? {short: `本地`, title: `本地文件`}
 			: brew.head.isEditable
-				? {short: `Editable`, title: `Editable Document`}
-				: {short: `Standard`, title: `Standard Document`};
+				? {short: `可编辑`, title: `可编辑文件`}
+				: {short: `标准`, title: `标准文件`};
 
 		const eleLi = veE({
 			tag: "div",
@@ -873,7 +873,7 @@ export class ManageBrewUi {
 			],
 			click: () => this._pRender_pDoPullBrew({rdState, brew}),
 		});
-		if (!this._brewUtil.isPullable(brew)) btnPull.vee.attr("disabled", true).vee.attr("title", `(Update disabled\u2014no URL available)`);
+		if (!this._brewUtil.isPullable(brew)) btnPull.vee.attr("disabled", true).vee.attr("title", `（无法更新：没有可用的网址）`);
 		return btnPull;
 	}
 
@@ -899,8 +899,8 @@ export class ManageBrewUi {
 
 		JqueryUtil.doToast(
 			isPull
-				? `${this._brewUtil.DISPLAY_NAME.uppercaseFirst()} updated!`
-				: `${this._brewUtil.DISPLAY_NAME.uppercaseFirst()} is already up-to-date.`,
+				? `${this._brewUtil.DISPLAY_NAME.uppercaseFirst()}已更新！`
+				: `${this._brewUtil.DISPLAY_NAME.uppercaseFirst()}已是最新版本。`,
 		);
 
 		if (!isPull) return;
@@ -934,7 +934,7 @@ export class ManageBrewUi {
 		const getSourceAsText = source => `[${(source.abbreviation || "").qq()}] ${(source.full || "").qq()}`;
 
 		const choices = await InputUiUtil.pGetUserMultipleChoice({
-			title: `Choose Sources`,
+			title: `选择来源`,
 			values: brew.body._meta.sources,
 			fnDisplay: getSourceAsText,
 			isResolveItems: true,
@@ -1065,11 +1065,10 @@ export class ManageBrewUi {
 
 	_pGetUserBoolean_isMoveBrewsToEditable ({brews}) {
 		return InputUiUtil.pGetUserBoolean({
-			title: `Move to Editable ${this._brewUtil.DISPLAY_NAME.toTitleCase()} Document`,
-			htmlDescription: `Moving ${brews.length === 1 ? `this ${this._brewUtil.DISPLAY_NAME}` : `these
-			${this._brewUtil.DISPLAY_NAME_PLURAL}`} to the editable document will prevent ${brews.length === 1 ? "it" : "them"} from being automatically updated in future.<br>Are you sure you want to move ${brews.length === 1 ? "it" : "them"}?`,
-			textYes: "Yes",
-			textNo: "Cancel",
+			title: `移至可编辑的${this._brewUtil.DISPLAY_NAME.toTitleCase()}文件`,
+			htmlDescription: `将这 ${brews.length} 个${this._brewUtil.DISPLAY_NAME}移至可编辑文件后，它们将不再自动更新。<br>确定要移动吗？`,
+			textYes: "是",
+			textNo: "取消",
 		});
 	}
 
@@ -1082,21 +1081,21 @@ export class ManageBrewUi {
 
 		await this._pRender_pBrewList(rdState);
 
-		JqueryUtil.doToast(`${`${brews.length === 1 ? this._brewUtil.DISPLAY_NAME : this._brewUtil.DISPLAY_NAME_PLURAL}`.uppercaseFirst()} moved to editable document!`);
+		JqueryUtil.doToast(`已将 ${brews.length} 个${this._brewUtil.DISPLAY_NAME}移至可编辑文件！`);
 	}
 
 	_pGetUserBoolean_isDeleteBrews ({brews}) {
 		if (!brews.some(brew => brew.head.isEditable)) return true;
 
 		const htmlDescription = brews.length === 1
-			? `This document contains all your locally-created or edited ${this._brewUtil.DISPLAY_NAME_PLURAL}.<br>Are you sure you want to delete it?`
-			: `One of the documents you are about to delete contains all your locally-created or edited ${this._brewUtil.DISPLAY_NAME_PLURAL}.<br>Are you sure you want to delete these documents?`;
+			? `此文件包含你在本地创建或编辑的全部${this._brewUtil.DISPLAY_NAME_PLURAL}。<br>确定要删除吗？`
+			: `即将删除的文件中有一个包含你在本地创建或编辑的全部${this._brewUtil.DISPLAY_NAME_PLURAL}。<br>确定要删除这些文件吗？`;
 
 		return InputUiUtil.pGetUserBoolean({
-			title: `Delete ${this._brewUtil.DISPLAY_NAME}`,
+			title: `删除${this._brewUtil.DISPLAY_NAME}`,
 			htmlDescription,
-			textYes: "Yes",
-			textNo: "Cancel",
+			textYes: "是",
+			textNo: "取消",
 		});
 	}
 

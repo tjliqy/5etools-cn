@@ -24,7 +24,7 @@ class PageFilterClassesBase extends PageFilterBase {
 			cnHeader: "杂项",
 			items: ["重制", "协力者", "传奇"],
 			deselFn: (it) => { return it === "重制" || it === "协力者"; },
-			displayFnMini: it => it === "重制" ? "Repr." : it,
+			displayFnMini: it => it === "重制" ? "重制" : it,
 			displayFnTitle: it => it === "重制" ? it : "",
 			isMiscFilter: true,
 		});

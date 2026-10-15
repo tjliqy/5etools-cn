@@ -52,7 +52,7 @@ export class RenderableCollectionFilterSnapshotBase extends RenderableCollection
 		comp._addHookBase("manager_loader_isExpanded", () => {
 			btnExpand
 				.vee.txt(comp._state.manager_loader_isExpanded ? `[\u2212]` : `[+]`)
-				.vee.tooltip(comp._state.manager_loader_isExpanded ? "Collapse" : "Expand");
+				.vee.tooltip(comp._state.manager_loader_isExpanded ? "收起" : "展开");
 		})();
 		return btnExpand;
 	}
@@ -108,7 +108,7 @@ export class RenderableCollectionFilterSnapshotBase extends RenderableCollection
 			[
 				...ptsFilter,
 				filtersDefault.length
-					? `<span class="ve-text-right ve-w-140p ve-no-shrink ve-mr-2 ve-bold ve-muted">Default:</span><span class="ve-muted">${filtersDefault.join(" | ")}</span>`
+					? `<span class="ve-text-right ve-w-140p ve-no-shrink ve-mr-2 ve-bold ve-muted">默认：</span><span class="ve-muted">${filtersDefault.join(" | ")}</span>`
 					: null,
 			],
 		);

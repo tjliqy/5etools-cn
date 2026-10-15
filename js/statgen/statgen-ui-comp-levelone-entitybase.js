@@ -20,7 +20,7 @@ export class StatGenUiRenderLevelOneEntityBase {
 	render () {
 		const wrp = veT`<div class="ve-flex"></div>`;
 		const wrpOuter = veT`<div class="ve-flex-col">
-			<div class="ve-my-1 ve-statgen-pb__header ve-statgen-pb__header--group ve-mr-3 ve-text-center ve-italic ve-small ve-help-subtle" title="Ability Score Changes from ${this._title}">${this._titleShort}</div>
+			<div class="ve-my-1 ve-statgen-pb__header ve-statgen-pb__header--group ve-mr-3 ve-text-center ve-italic ve-small ve-help-subtle" title="${this._title}带来的属性值变化">${this._titleShort}</div>
 
 			${wrp}
 		</div>`;
@@ -49,7 +49,7 @@ export class StatGenUiRenderLevelOneEntityBase {
 				isAllowNull: true,
 				fnDisplay: ix => {
 					const r = this._parent[this._propData][ix];
-					if (!r) return "(Unknown)";
+					if (!r) return "（未知）";
 					return `${r.name} ${r.source !== Parser.SRC_PHB ? `[${Parser.sourceJsonToAbv(r.source)}]` : ""}`;
 				},
 				asMeta: true,
@@ -69,7 +69,7 @@ export class StatGenUiRenderLevelOneEntityBase {
 		this._parent[this._propModalFilter].pageFilter.filterBox.on(FILTER_BOX_EVNT_VALCHANGE, () => doApplyFilterToSelEntity());
 		doApplyFilterToSelEntity();
 
-		const btnFilterForEntity = veT`<button class="ve-btn ve-btn-xs ve-btn-default ve-br-0 ve-pr-2" title="Filter for ${this._title}"><span class="glyphicon glyphicon-filter"></span> 筛选</button>`
+		const btnFilterForEntity = veT`<button class="ve-btn ve-btn-xs ve-btn-default ve-br-0 ve-pr-2" title="筛选${this._title}"><span class="glyphicon glyphicon-filter"></span> 筛选</button>`
 			.vee.onn("click", async () => {
 				const selected = await this._parent[this._propModalFilter].pGetUserSelection();
 				if (selected == null || !selected.length) return;
@@ -100,7 +100,7 @@ export class StatGenUiRenderLevelOneEntityBase {
 				asMeta: true,
 				fnDisplay: ixAbSet => {
 					const lst = this._pb_getAbilityList();
-					if (!lst?.[ixAbSet]) return "(Unknown)";
+					if (!lst?.[ixAbSet]) return "（未知）";
 					return Renderer.getAbilityData([lst[ixAbSet]]).asText;
 				},
 			},

@@ -138,7 +138,7 @@ class _PanelContentManager {
 
 export class PanelContentManager_InitiativeTracker extends _PanelContentManager {
 	static _PANEL_TYPE = PANEL_TYP_INITIATIVE_TRACKER;
-	static _TITLE = "Initiative Tracker";
+	static _TITLE = "先攻追踪器";
 
 	static _ = this._register();
 
@@ -149,7 +149,7 @@ export class PanelContentManager_InitiativeTracker extends _PanelContentManager 
 
 export class PanelContentManager_InitiativeTrackerCreatureViewer extends _PanelContentManager {
 	static _PANEL_TYPE = PANEL_TYP_INITIATIVE_TRACKER_CREATURE_VIEWER;
-	static _TITLE = "Creature Viewer";
+	static _TITLE = "生物查看器";
 	static _IS_STATELESS = true;
 
 	static _ = this._register();
@@ -161,7 +161,7 @@ export class PanelContentManager_InitiativeTrackerCreatureViewer extends _PanelC
 
 export class PanelContentManager_InitiativeTrackerPlayerViewV1 extends _PanelContentManager {
 	static _PANEL_TYPE = PANEL_TYP_INITIATIVE_TRACKER_PLAYER_V1;
-	static _TITLE = "Initiative Tracker";
+	static _TITLE = "先攻追踪器";
 	static _IS_STATELESS = true;
 
 	static _ = this._register();
@@ -173,7 +173,7 @@ export class PanelContentManager_InitiativeTrackerPlayerViewV1 extends _PanelCon
 
 export class PanelContentManager_InitiativeTrackerPlayerViewV0 extends _PanelContentManager {
 	static _PANEL_TYPE = PANEL_TYP_INITIATIVE_TRACKER_PLAYER_V0;
-	static _TITLE = "Initiative Tracker";
+	static _TITLE = "先攻追踪器";
 	static _IS_STATELESS = true;
 
 	static _ = this._register();
@@ -185,7 +185,7 @@ export class PanelContentManager_InitiativeTrackerPlayerViewV0 extends _PanelCon
 
 export class PanelContentManager_Counter extends _PanelContentManager {
 	static _PANEL_TYPE = PANEL_TYP_COUNTER;
-	static _TITLE = "Counter";
+	static _TITLE = "计数器";
 
 	static _ = this._register();
 
@@ -196,7 +196,7 @@ export class PanelContentManager_Counter extends _PanelContentManager {
 
 export class PanelContentManager_NoteBox extends _PanelContentManager {
 	static _PANEL_TYPE = PANEL_TYP_TEXTBOX;
-	static _TITLE = "Notes";
+	static _TITLE = "笔记";
 
 	static _ = this._register();
 
@@ -207,7 +207,7 @@ export class PanelContentManager_NoteBox extends _PanelContentManager {
 
 export class PanelContentManager_UnitConverter extends _PanelContentManager {
 	static _PANEL_TYPE = PANEL_TYP_UNIT_CONVERTER;
-	static _TITLE = "Unit Converter";
+	static _TITLE = "单位换算器";
 
 	static _ = this._register();
 
@@ -218,7 +218,7 @@ export class PanelContentManager_UnitConverter extends _PanelContentManager {
 
 export class PanelContentManager_MoneyConverter extends _PanelContentManager {
 	static _PANEL_TYPE = PANEL_TYP_MONEY_CONVERTER;
-	static _TITLE = "Coin Converter";
+	static _TITLE = "货币换算器";
 
 	static _ = this._register();
 
@@ -229,7 +229,7 @@ export class PanelContentManager_MoneyConverter extends _PanelContentManager {
 
 export class PanelContentManager_TimeTracker extends _PanelContentManager {
 	static _PANEL_TYPE = PANEL_TYP_TIME_TRACKER;
-	static _TITLE = "Time Tracker";
+	static _TITLE = "时间追踪器";
 
 	static _ = this._register();
 
@@ -240,7 +240,7 @@ export class PanelContentManager_TimeTracker extends _PanelContentManager {
 
 export class PanelContentManager_DynamicMap extends _PanelContentManager {
 	static _PANEL_TYPE = PANEL_TYP_ADVENTURE_DYNAMIC_MAP;
-	static _TITLE = "Map Viewer";
+	static _TITLE = "地图查看器";
 
 	static _ = this._register();
 
@@ -290,7 +290,7 @@ export class PanelContentManager_Twitch extends _PanelContentManager_EmbedBase {
 
 export class PanelContentManager_TwitchChat extends _PanelContentManager_EmbedBase {
 	static _PANEL_TYPE = PANEL_TYP_TWITCH_CHAT;
-	static _TITLE = "Twitch Chat";
+	static _TITLE = "Twitch 聊天";
 
 	static _ = this._register();
 

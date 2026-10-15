@@ -17,7 +17,7 @@ export class RenderRaces {
 			${entriesMeta.entryAttributes ? `<div class="ve-w-100 ve-py-1"></div>` : ""}
 			${renderer.render(entriesMeta.entryMain, 1)}
 			${ent.traitTags && (ent.traitTags.includes("NPC Race") || ent.traitTags.includes("NPC种族")) ? `<section class="ve-muted">
-				${renderer.render(`{@note Note: This race is listed in the {@i Dungeon Master's Guide} as an option for creating NPCs. It is not designed for use as a playable race.}`, 2)}
+				${renderer.render(`{@note 注意：此种族在{@i 地下城主指南}中列为创建非玩家角色的选项，并不适合作为玩家角色种族。}`, 2)}
 			 </section>` : ""}
 		</td></tr>
 

@@ -30,7 +30,7 @@ class PageFilterRaces extends PageFilterBase {
 		size ||= [Parser.SZ_VARIES];
 
 		return {
-			sizeText: size.map(sz => Parser.sizeAbvToFull(sz)).joinConjunct(", ", " or "),
+			sizeText: size.map(sz => Parser.sizeAbvToFull(sz)).joinConjunct("、", "或"),
 			sizeShortText: size.map(sz => Parser.sizeAbvToShort(sz)).join("/"),
 		};
 	}
@@ -47,10 +47,10 @@ class PageFilterRaces extends PageFilterBase {
 	constructor () {
 		super();
 
-		this._sizeFilter = new Filter({header: "体型Size", displayFn: Parser.sizeAbvToFull, itemSortFn: PageFilterRaces.filterAscSortSize});
+		this._sizeFilter = new Filter({header: "体型Size", cnHeader: "体型", displayFn: Parser.sizeAbvToFull, itemSortFn: PageFilterRaces.filterAscSortSize});
 		this._asiFilter = new AbilityScoreFilter({header: "Ability Scores (Including Subrace)", cnHeader: "属性加值 (包括亚种)"});
-		this._baseRaceFilter = new Filter({header: "基础种族Base Race"});
-		this._speedFilter = new Filter({header: "速度Speed", items: ["攀爬", "飞行", "游泳", "步行 (快)", "步行", "步行 (慢)"]});
+		this._baseRaceFilter = new Filter({header: "基础种族Base Race", cnHeader: "基础种族"});
+		this._speedFilter = new Filter({header: "速度Speed", cnHeader: "速度", items: ["攀爬", "飞行", "游泳", "步行 (快)", "步行", "步行 (慢)"]});
 		this._traitFilter = new Filter({
 			header: "Traits",
 			cnHeader: "特质",
@@ -129,6 +129,7 @@ class PageFilterRaces extends PageFilterBase {
 			header: "Miscellaneous",
 			cnHeader: "杂项",
 			items: ["基础种族", "关键种族", "Lineage", "修改副本", "重印", "传奇", "有图片", "有简介"],
+			displayFn: it => it === "Lineage" ? "血脉" : it,
 			isMiscFilter: true,
 			deselFn: PageFilterBase.defaultMiscellaneousDeselFn.bind(PageFilterBase),
 		});
@@ -260,7 +261,7 @@ class ModalFilterRaces extends ModalFilterBase {
 		opts = opts || {};
 		super({
 			...opts,
-			modalTitle: `Species`,
+			modalTitle: `物种`,
 			pageFilter: new PageFilterRaces(),
 			previewButtonHandler: new ListUiPreviewButtonHandlerStatsFluff({page: UrlUtil.PG_RACES}),
 		});
@@ -289,7 +290,7 @@ class ModalFilterRaces extends ModalFilterBase {
 		eleRow.className = "ve-px-0 ve-w-100 ve-flex-col ve-no-shrink";
 
 		const hash = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_RACES](race);
-		const ability = race.ability ? Renderer.getAbilityData(race.ability) : {asTextShort: "None"};
+		const ability = race.ability ? Renderer.getAbilityData(race.ability) : {asTextShort: "无"};
 		const size = (race.size || [Parser.SZ_VARIES]).map(sz => Parser.sizeAbvToFull(sz)).join("/");
 		const source = Parser.sourceJsonToAbv(race.source);
 
@@ -297,7 +298,7 @@ class ModalFilterRaces extends ModalFilterBase {
 			<div class="ve-col-0-5 ve-pl-0 ve-flex-vh-center">${this._isRadio ? `<input type="radio" name="radio" class="ve-no-events">` : `<input type="checkbox" class="ve-no-events">`}</div>
 
 			<div class="ve-col-0-5 ve-px-1 ve-flex-vh-center">
-				<div class="ve-ui-list__btn-inline ve-px-2 ve-no-select" title="Toggle Preview (SHIFT to Toggle Info Preview)">[+]</div>
+				<div class="ve-ui-list__btn-inline ve-px-2 ve-no-select" title="切换预览（按 Shift 切换信息预览）">[+]</div>
 			</div>
 
 			<div class="ve-col-4 ve-px-1 ${race._versionBase_isVersion ? "ve-italic" : ""} ${this._getNameStyle()}">${race._versionBase_isVersion ? `<span class="ve-px-3"></span>` : ""}${race.name}</div>

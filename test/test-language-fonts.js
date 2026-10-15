@@ -2,7 +2,7 @@ import fs from "fs";
 import * as ut from "../node/util.js";
 
 async function main () {
-	console.log(`##### Validating language fonts #####`);
+	console.log(`##### 正在验证语言字体 #####`);
 
 	const json = ut.readJson("./data/languages.json");
 	const errors = [];

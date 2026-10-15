@@ -62,7 +62,7 @@ export class EntityFileHandlerBase extends DataTesterBase {
 	 * @return void
 	 */
 	async _pDoTestEntity ({filePath, fileState, ent, prop, propPrefixed}) {
-		throw new Error("Unimplemented!");
+		throw new Error("尚未实现！");
 	}
 
 	/* -------------------------------------------- */

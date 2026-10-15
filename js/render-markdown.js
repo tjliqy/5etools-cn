@@ -413,13 +413,13 @@ class RendererMarkdown extends Renderer {
 	// region block
 	_renderAbilityDc (entry, textStack, meta, options) {
 		this._renderPrefix(entry, textStack, meta, options);
-		textStack[0] += `**${entry.name}豁免DC** = 8 + 你的熟练加值 + your ${Parser.attrChooseToFull(entry.attributes)}`;
+		textStack[0] += `**${entry.name}豁免 DC** = 8 + 你的熟练加值 + 你的${Parser.attrChooseToFull(entry.attributes)}`;
 		this._renderSuffix(entry, textStack, meta, options);
 	}
 
 	_renderAbilityAttackMod (entry, textStack, meta, options) {
 		this._renderPrefix(entry, textStack, meta, options);
-		textStack[0] += `**${entry.name}攻击加值** = 你的熟练加值 + your ${Parser.attrChooseToFull(entry.attributes)}`;
+		textStack[0] += `**${entry.name}攻击加值** = 你的熟练加值 + 你的${Parser.attrChooseToFull(entry.attributes)}`;
 		this._renderSuffix(entry, textStack, meta, options);
 	}
 
@@ -604,11 +604,11 @@ class RendererMarkdown extends Renderer {
 		if (entry.oldEntries) {
 			let markerText;
 			if (entry.movedTo) {
-				markerText = "*Homebrew:* The following content has been moved:";
+				markerText = "*自制内容：*以下内容已移动：";
 			} else if (entry.entries) {
-				markerText = "*Homebrew:* The following content has been replaced:";
+				markerText = "*自制内容：*以下内容已替换：";
 			} else {
-				markerText = "*Homebrew:* The following content has been removed:";
+				markerText = "*自制内容：*以下内容已移除：";
 			}
 
 			textStack[0] += `##### ${markerText}\n`;
@@ -617,12 +617,12 @@ class RendererMarkdown extends Renderer {
 
 		if (entry.entries) {
 			const len = entry.entries.length;
-			if (entry.oldEntries) textStack[0] += `*The replacement is as follows:*\n`;
+			if (entry.oldEntries) textStack[0] += `*替换后的内容如下：*\n`;
 			for (let i = 0; i < len; ++i) this._recursiveRender(entry.entries[i], textStack, meta, {suffix: "\n"});
 		} else if (entry.movedTo) {
-			textStack[0] += `*This content has been moved to ${entry.movedTo}.*\n`;
+			textStack[0] += `*此内容已移动至 ${entry.movedTo}。*\n`;
 		} else {
-			textStack[0] += "*This content has been deleted.*\n";
+			textStack[0] += "*此内容已删除。*\n";
 		}
 	}
 	// endregion
@@ -814,11 +814,11 @@ class RendererMarkdown extends Renderer {
 RendererMarkdown.utils = class {
 	static getPageText (it) {
 		const sourceSub = Renderer.utils.getSourceSubText(it);
-		const baseText = Renderer.utils.isDisplayPage(it.page) ? `**Source:** *${Parser.sourceJsonToAbv(it.source)}${sourceSub}*, page ${it.page}` : "";
-		const addSourceText = this._getPageText_getAltSourceText(it, "additionalSources", "Additional information from");
-		const otherSourceText = this._getPageText_getAltSourceText(it, "otherSources", "Also found in");
-		const referenceSourceText = this._getPageText_getAltSourceText(it, "referenceSources", "Referenced in");
-		const externalSourceText = this._getPageText_getAltSourceText(it, "externalSources", "External sources:");
+		const baseText = Renderer.utils.isDisplayPage(it.page) ? `**来源：** *${Parser.sourceJsonToAbv(it.source)}${sourceSub}*，第 ${it.page} 页` : "";
+		const addSourceText = this._getPageText_getAltSourceText(it, "additionalSources", "补充来源");
+		const otherSourceText = this._getPageText_getAltSourceText(it, "otherSources", "另见");
+		const referenceSourceText = this._getPageText_getAltSourceText(it, "referenceSources", "引用于");
+		const externalSourceText = this._getPageText_getAltSourceText(it, "externalSources", "外部来源：");
 
 		return `${[baseText, addSourceText, otherSourceText, referenceSourceText, externalSourceText].filter(it => it).join(". ")}${baseText && (addSourceText || otherSourceText || referenceSourceText || externalSourceText) ? "." : ""}`;
 	}
@@ -828,7 +828,7 @@ RendererMarkdown.utils = class {
 
 		return `${introText} ${it[prop].map(as => {
 			if (as.entry) return Renderer.get().render(as.entry);
-			else return `*${Parser.sourceJsonToAbv(as.source)}*${Renderer.utils.isDisplayPage(as.page) ? `, page ${as.page}` : ""}`;
+			else return `*${Parser.sourceJsonToAbv(as.source)}*${Renderer.utils.isDisplayPage(as.page) ? `，第 ${as.page} 页` : ""}`;
 		}).join("; ")}`;
 	}
 
@@ -1016,7 +1016,7 @@ class _RenderCompactMarkdownBestiaryImplBase {
 	_getCommonMdParts_sizeTypeAlignment ({mon, renderer, opts}) {
 		const monTypes = Parser.monTypeToFullObj(mon.type);
 		const sepTypeAlignment = monTypes.asText.includes(",") ? "; " : ", ";
-		return `>*${mon.level ? `${Parser.getOrdinalForm(mon.level)}-level ` : ""}${Renderer.utils.getRenderedSize(mon.size)} ${monTypes.asText}${mon.alignment ? `${sepTypeAlignment}${mon.alignmentPrefix ? RendererMarkdown.get().render(mon.alignmentPrefix) : ""}${Parser.alignmentListToFull(mon.alignment).toTitleCase()}` : ""}*`;
+		return `>*${mon.level ? `${mon.level} 级 ` : ""}${Renderer.utils.getRenderedSize(mon.size)} ${monTypes.asText}${mon.alignment ? `${sepTypeAlignment}${mon.alignmentPrefix ? RendererMarkdown.get().render(mon.alignmentPrefix) : ""}${Parser.alignmentListToFull(mon.alignment).toTitleCase()}` : ""}*`;
 	}
 
 	_getCommonMdParts_ac ({mon, renderer, opts}) {
@@ -1112,8 +1112,8 @@ class _RenderCompactMarkdownBestiaryImplBase {
 			: "";
 
 		const legendaryGroup = DataUtil.monster.getLegendaryGroup(mon);
-		const legendaryGroupLairPart = legendaryGroup?.lairActions ? `\n>### Lair Actions\n${RendererMarkdown.monster._getRenderedSection({prop: "lairaction", entries: legendaryGroup.lairActions, depth: -1, meta, prefix: ">"})}` : "";
-		const legendaryGroupRegionalPart = legendaryGroup?.regionalEffects ? `\n>### Regional Effects\n${RendererMarkdown.monster._getRenderedSection({prop: "regionaleffect", entries: legendaryGroup.regionalEffects, depth: -1, meta, prefix: ">"})}` : "";
+		const legendaryGroupLairPart = legendaryGroup?.lairActions ? `\n>### 巢穴动作\n${RendererMarkdown.monster._getRenderedSection({prop: "lairaction", entries: legendaryGroup.lairActions, depth: -1, meta, prefix: ">"})}` : "";
+		const legendaryGroupRegionalPart = legendaryGroup?.regionalEffects ? `\n>### 区域效应\n${RendererMarkdown.monster._getRenderedSection({prop: "regionaleffect", entries: legendaryGroup.regionalEffects, depth: -1, meta, prefix: ">"})}` : "";
 		const variantsPart = Renderer.monster.getRenderedVariants(mon, {renderer: RendererMarkdown.get()});
 
 		const footerPart = mon.footer ? `\n${RendererMarkdown.monster._getRenderedSectionEntries({sectionEntries: mon.footer, sectionDepth: 0, meta, prefix: ">"})}` : "";
@@ -1312,7 +1312,7 @@ RendererMarkdown.monster = class {
 	static getSkillsString (mon) {
 		function doSortMapJoinSkillKeys (obj, keys, joinWithOr) {
 			const toJoin = keys.sort(SortUtil.ascSort).map(s => `${Parser.enSkillToCn(s)} ${obj[s]}`);
-			return joinWithOr ? toJoin.joinConjunct(", ", " or ") : toJoin.join(", ");
+			return joinWithOr ? toJoin.joinConjunct("、", "或") : toJoin.join("、");
 		}
 
 		const skills = doSortMapJoinSkillKeys(mon.skill, Object.keys(mon.skill).filter(k => k !== "other" && k !== "special"));
@@ -1320,7 +1320,7 @@ RendererMarkdown.monster = class {
 		if (mon.skill.other || mon.skill.special) {
 			const others = mon.skill.other && mon.skill.other.map(it => {
 				if (it.oneOf) {
-					return `plus one of the following: ${doSortMapJoinSkillKeys(it.oneOf, Object.keys(it.oneOf), true)}`;
+					return `另外从以下技能中选择一项：${doSortMapJoinSkillKeys(it.oneOf, Object.keys(it.oneOf), true)}`;
 				}
 				throw new Error(`Unhandled monster "other" skill properties!`);
 			});
@@ -1924,7 +1924,7 @@ RendererMarkdown.vehicle = class {
 		const traitArray = Renderer.monster.getOrderedTraits(ent);
 
 		return [
-			ent.trait ? `### Traits` : null,
+			ent.trait ? `### 特性` : null,
 			...(traitArray || [])
 				.map(entry => renderer.render(entry, 2)),
 		];
@@ -1944,7 +1944,7 @@ RendererMarkdown.vehicle = class {
 			const entriesMetaSection = Renderer.vehicle.ship.getSectionHpEntriesMeta_({entry});
 
 			return [
-				`### Control: ${entry.name}`,
+				`### 操控：${entry.name}`,
 				entriesMetaSection.entryArmorClass ? renderer.render(entriesMetaSection.entryArmorClass) : null,
 				entriesMetaSection.entryHitPoints ? renderer.render(entriesMetaSection.entryHitPoints) : null,
 				RendererMarkdown.get().render({entries: entry.entries}),
@@ -1959,7 +1959,7 @@ RendererMarkdown.vehicle = class {
 			const entriesMetaSection = Renderer.vehicle.ship.getSectionHpEntriesMeta_({entry});
 
 			return [
-				`### ${entry.isControl ? `Control and ` : ""}Movement: ${entry.name}`,
+				`### ${entry.isControl ? "操控与移动" : "移动"}：${entry.name}`,
 				entriesMetaSection.entryArmorClass ? renderer.render(entriesMetaSection.entryArmorClass) : null,
 				entriesMetaSection.entryHitPoints ? renderer.render(entriesMetaSection.entryHitPoints) : null,
 				...(entry.locomotion || [])
@@ -1977,7 +1977,7 @@ RendererMarkdown.vehicle = class {
 			const entriesMetaSection = Renderer.vehicle.ship.getSectionHpEntriesMeta_({entry, isEach: !!entry.count});
 
 			return [
-				`### Weapons: ${entry.name}${entry.count ? ` (${entry.count})` : ""}`,
+				`### 武器：${entry.name}${entry.count ? `（${entry.count}）` : ""}`,
 				entriesMetaSection.entryArmorClass ? renderer.render(entriesMetaSection.entryArmorClass) : null,
 				entriesMetaSection.entryHitPoints ? renderer.render(entriesMetaSection.entryHitPoints) : null,
 				RendererMarkdown.get().render({entries: entry.entries}),
@@ -2019,11 +2019,11 @@ RendererMarkdown.vehicle = class {
 			entriesMeta.entryDamageResistances ? renderer.render(entriesMeta.entryDamageResistances) : null,
 			entriesMeta.entryDamageImmunities ? renderer.render(entriesMeta.entryDamageImmunities) : null,
 			entriesMeta.entryConditionImmunities ? renderer.render(entriesMeta.entryConditionImmunities) : null,
-			ent.action ? "### Actions" : null,
+			ent.action ? "### 动作" : null,
 			ent.action ? renderer.render({entries: ent.action}) : null,
 			...(entriesMetaShip.entriesOtherActions || [])
 				.map(entry => RendererMarkdown.vehicle.ship.getOtherSection_({entry})),
-			ent.hull ? "### Hull" : null,
+			ent.hull ? "### 船体" : null,
 			entriesMetaSectionHull?.entryArmorClass ? renderer.render(entriesMetaSectionHull.entryArmorClass) : null,
 			entriesMetaSectionHull?.entryHitPoints ? renderer.render(entriesMetaSectionHull.entryHitPoints) : null,
 			...this._getLinesRendered_traits({ent, renderer}),
@@ -2136,8 +2136,8 @@ RendererMarkdown.vehicle = class {
 			entriesMeta.entryDamageImmunities ? renderer.render(entriesMeta.entryDamageImmunities) : null,
 			entriesMeta.entryConditionImmunities ? renderer.render(entriesMeta.entryConditionImmunities) : null,
 			...this._getLinesRendered_traits({ent, renderer}),
-			RendererMarkdown.monster.getRenderedSection({arr: ent.actionStation, ent, prop: "actionStation", title: "Action Stations", meta: opts.meta}),
-			RendererMarkdown.monster.getRenderedSection({arr: reactionArray, ent, prop: "reaction", title: "Reactions", meta: opts.meta}),
+			RendererMarkdown.monster.getRenderedSection({arr: ent.actionStation, ent, prop: "actionStation", title: "动作站", meta: opts.meta}),
+			RendererMarkdown.monster.getRenderedSection({arr: reactionArray, ent, prop: "reaction", title: "反应", meta: opts.meta}),
 		]
 			.map(it => it != null ? it.trim() : it)
 			.filter(Boolean)
@@ -2214,33 +2214,33 @@ RendererMarkdown.crochetPattern = class {
 
 		const ptHead = RendererMarkdown.utils.withMetaDepth(0, opts, () => {
 			const entries = [
-				`{@i Skill Level: ${entrySkillLevel}.${entryDesignedBy ? ` Designed by ${entryDesignedBy}.` : ""}}`,
+				`{@i 技能水平：${entrySkillLevel}。${entryDesignedBy ? `设计者：${entryDesignedBy}。` : ""}}`,
 
-				entriesMeasurements?.length ? `#### Finished Measurements` : "",
+				entriesMeasurements?.length ? `#### 成品尺寸` : "",
 				...(entriesMeasurements || []),
 
-				ent.yarn?.length ? `#### Yarn` : "",
+				ent.yarn?.length ? `#### 线材` : "",
 				...(ent.yarn || []),
 
-				entriesHooks?.length ? `#### Hooks` : "",
+				entriesHooks?.length ? `#### 钩针` : "",
 				...(entriesHooks || []),
 
-				ent.notions?.length ? `#### Notions` : "",
+				ent.notions?.length ? `#### 配件` : "",
 				...(ent.notions || []),
 
-				ent.gauge?.length ? `#### Gauge` : "",
+				ent.gauge?.length ? `#### 计量` : "",
 				...(ent.gauge || []),
 
-				ent.stitches?.length ? `#### Special Stitches` : "",
+				ent.stitches?.length ? `#### 特殊针法` : "",
 				...(ent.stitches || []),
 
-				ent.abbreviations?.length ? `#### Special Abbreviations` : "",
+				ent.abbreviations?.length ? `#### 特殊缩写` : "",
 				...(ent.abbreviations || []),
 
-				ent.notes?.length ? `#### Notes` : "",
+				ent.notes?.length ? `#### 备注` : "",
 				...(ent.notes || []),
 
-				ent.finishing?.length ? `#### Finishing` : "",
+				ent.finishing?.length ? `#### 收尾` : "",
 				...(ent.finishing || []),
 			]
 				.filter(Boolean);
@@ -2417,7 +2417,7 @@ class MarkdownConverter {
 			if (line.mdType === "creature") {
 				buf[i] = {
 					type: "inset",
-					name: "(To convert creature stat blocks, please use the Text Converter utility)",
+					name: "（如需转换生物数据卡，请使用文本转换器）",
 					entries: line.lines.slice(1).map(it => it.slice(1).trim()),
 				};
 			}

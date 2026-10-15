@@ -58,11 +58,11 @@ export class MapNamer {
 	}
 
 	_getUnnamedMapName ({entry}) {
-		return `(Unnamed ${["map", "mapPlayer"].includes(entry.imageType) ? "Map" : "Image"} ${this._ixUnnamedMap++})`;
+		return `（未命名${["map", "mapPlayer"].includes(entry.imageType) ? "地图" : "图片"} ${this._ixUnnamedMap++}）`;
 	}
 
 	_getHeaderMapName ({parentEntryName}) {
-		const nameBase = `${parentEntryName}\u2013Map`;
+		const nameBase = `${parentEntryName}—地图`;
 
 		if (!this._ixsHeaderMaps[nameBase]) {
 			this._ixsHeaderMaps[nameBase] = 2;
@@ -111,7 +111,7 @@ export class CorpusMapImageExtractor {
 
 		// Add chapter name for importers, etc. (particularly, folder naming)
 		if (chapterInfo) {
-			mapEntry._chapterName = `${Parser.bookOrdinalToAbv(chapterInfo.ordinal, {isPlainText: true})}${chapterInfo.name || "(Unnamed Chapter)"}`;
+			mapEntry._chapterName = `${Parser.bookOrdinalToAbv(chapterInfo.ordinal, {isPlainText: true})}${chapterInfo.name || "（未命名章节）"}`;
 		}
 
 		// Add the last entry name, to be used later

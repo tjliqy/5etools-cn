@@ -209,7 +209,7 @@ export class FilterBase extends BaseComponent {
 
 				menu ||= ContextUtil.getMenu([
 					new ContextUtil.Action(
-						"Take Snapshot",
+						"创建快照",
 						async () => {
 							await this._snapshotManager.pHandleClick_takeSnapshot({
 								filters: [this],
@@ -218,7 +218,7 @@ export class FilterBase extends BaseComponent {
 						},
 					),
 					new ContextUtil.Action(
-						"Take Snapshot and Add to Default Deck",
+						"创建快照并加入默认快照组",
 						async () => {
 							await this._snapshotManager.pHandleClick_takeSnapshotToDefaultDeck({
 								filters: [this],
@@ -228,7 +228,7 @@ export class FilterBase extends BaseComponent {
 					),
 					null,
 					new ContextUtil.Action(
-						"Manage Snapshots",
+						"管理快照",
 						async () => {
 							await this._snapshotManager.pHandleClick_manageSnapshots({activeTab: "snapshots"});
 						},

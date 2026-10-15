@@ -1,3 +1,4 @@
+import "./locale/i18n.js";
 import "../js/parser.js";
 
 export const BLOCKLIST_SOURCES_CREDITS = new Set([

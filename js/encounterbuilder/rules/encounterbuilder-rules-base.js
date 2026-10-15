@@ -33,7 +33,7 @@ export class TierHtmlProviderBase {
 		switch (this._budgetMode) {
 			case BUDGET_MODE_XP: return "XP";
 			case BUDGET_MODE_CR: return "CR";
-			default: throw new Error(`Unhandled budget mode "${this._budgetMode}"!`);
+			default: throw new Error(`未处理的预算模式：“${this._budgetMode}”！`);
 		}
 	}
 
@@ -79,9 +79,9 @@ export class TierHtmlProviderBase {
 			const ptTierBudgetSpentPerCreature = cntMin
 				? partyMeta.getTierDisplayBudget(tier, {multiplier: ratioSpent / cntMin})
 				: 0;
-			return `<span class="ve-small ve-small-caps ve-split-v-center" title="${ptTierBudgetSpentPerCreature} ${unit} Per Creature (${ptTierBudgetSpent} ${unit} Total)">
+			return `<span class="ve-small ve-small-caps ve-split-v-center" title="每个生物 ${ptTierBudgetSpentPerCreature} ${unit}（总计 ${ptTierBudgetSpent} ${unit}）">
 				${this._getPtRatioSpentPct({ratioSpent})}
-				<span class="ve-muted">(${ptTierBudgetSpentPerCreature} ${unit} ea.)</span>
+				<span class="ve-muted">（每个 ${ptTierBudgetSpentPerCreature} ${unit}）</span>
 			</span>`;
 		}
 
@@ -97,9 +97,9 @@ export class TierHtmlProviderBase {
 		const ptTierBudgetSpentMax = cntMax
 			? partyMeta.getTierDisplayBudget(tier, {multiplier: ratioSpent})
 			: 0;
-		return `<span class="ve-small ve-small-caps ve-split-v-center" title="${ptTierBudgetSpentPerCreatureMin}\u2013${ptTierBudgetSpentPerCreatureMax} ${unit} Per Creature (${ptTierBudgetSpentMin}\u2013${ptTierBudgetSpentMax} ${unit} Total)">
+		return `<span class="ve-small ve-small-caps ve-split-v-center" title="每个生物 ${ptTierBudgetSpentPerCreatureMin}\u2013${ptTierBudgetSpentPerCreatureMax} ${unit}（总计 ${ptTierBudgetSpentMin}\u2013${ptTierBudgetSpentMax} ${unit}）">
 			${this._getPtRatioSpentPct({ratioSpent})}
-			<span class="ve-muted">(${ptTierBudgetSpentPerCreatureMin}\u2013${ptTierBudgetSpentPerCreatureMax} ${unit} ea.)</span>
+			<span class="ve-muted">（每个 ${ptTierBudgetSpentPerCreatureMin}\u2013${ptTierBudgetSpentPerCreatureMax} ${unit}）</span>
 		</span>`;
 	}
 }
@@ -311,13 +311,13 @@ export class EncounterBuilderRulesBase extends BaseComponent {
 			},
 		);
 
-		const btnGenerate = veT`<button class="ve-btn ve-btn-primary ve-h-34p" title="Generate Encounter"><span class="glyphicon glyphicon-play"></span></button>`
+		const btnGenerate = veT`<button class="ve-btn ve-btn-primary ve-h-34p" title="生成遭遇"><span class="glyphicon glyphicon-play"></span></button>`
 			.vee.onn("click", async () => {
 				if (
 					this._encounterShapesLookup.isCustomEncounterHash(this._state.shapeHashRandom)
 				) {
-					if (!this._comp.customShapeGroups?.length) return JqueryUtil.doToast({type: "warning", content: `Your custom encounter does not contain any creature groups! Please add a creature group first.`});
-					if (this._comp.customShapeGroups.map(({entity}) => entity.ratioPercentage).sum() !== 100) return JqueryUtil.doToast({type: "warning", content: `Your custom encounter has un-allocated budget! Please allocate the full budget first.`});
+					if (!this._comp.customShapeGroups?.length) return JqueryUtil.doToast({type: "warning", content: "自定义遭遇中没有生物组，请先添加生物组。"});
+					if (this._comp.customShapeGroups.map(({entity}) => entity.ratioPercentage).sum() !== 100) return JqueryUtil.doToast({type: "warning", content: "自定义遭遇仍有未分配的预算，请先分配全部预算。"});
 				}
 
 				await this._pDoGenerateRandomEncounter({
@@ -336,9 +336,9 @@ export class EncounterBuilderRulesBase extends BaseComponent {
 	_getRenderedWrpRandomAndAdjust_getBtnSendToFoundry () {
 		if (globalThis.IS_VTT || !ExtensionUtil.ACTIVE) return null;
 
-		return veT`<button title="Send to Foundry" class="ve-print__hidden ve-btn ve-btn-md ve-btn-default ve-ml-2"><span class="glyphicon glyphicon-send"></span></button>`
+		return veT`<button title="发送到 Foundry" class="ve-print__hidden ve-btn ve-btn-md ve-btn-default ve-ml-2"><span class="glyphicon glyphicon-send"></span></button>`
 			.vee.onn("click", async () => {
-				const encounterActorName = await InputUiUtil.pGetUserString({title: "Encounter Actor Name", isSkippable: true});
+				const encounterActorName = await InputUiUtil.pGetUserString({title: "遭遇角色名称", isSkippable: true});
 
 				await ExtensionUtil.pDoSend({
 					type: "5etools.encounterbuilder.encounter",
@@ -471,7 +471,7 @@ export class EncounterBuilderRulesBase extends BaseComponent {
 
 	/* -------------------------------------------- */
 
-	static _TITLE_TTK = "击杀时间（Time to Kill）:小队完成此遭遇的预估轮数（假设都是单目标伤害的情况）";
+	static _TITLE_TTK = "小队完成此遭遇的预估轮数（假设所有伤害均针对单一目标）";
 
 	_getTtkProvider ({partyMeta, styleHint}) {
 		const sharedOpts = {partyMeta, creatureGroups: this._comp.creatureGroups};
@@ -487,10 +487,10 @@ export class EncounterBuilderRulesBase extends BaseComponent {
 		styleHint ||= VetoolsConfig.get("styleSwitcher", "style");
 
 		const ptTtk = partyMeta.cntPlayers
-			? `${this._getTtkProvider({partyMeta, styleHint}).getApproxTurnsToKill().toFixed(2)} <span title="Rounds" class="ve-small-caps">rnd.</span>`
+			? `${this._getTtkProvider({partyMeta, styleHint}).getApproxTurnsToKill().toFixed(2)} <span title="轮数" class="ve-small-caps">轮</span>`
 			: `<span class="ve-muted">?</span>`;
 
-		return `<span class="ve-help" title="${this.constructor._TITLE_TTK}">TTK:</span> ${ptTtk}`;
+		return `<span class="ve-help" title="${this.constructor._TITLE_TTK}">预计轮数：</span> ${ptTtk}`;
 	}
 
 	/* -------------------------------------------- */

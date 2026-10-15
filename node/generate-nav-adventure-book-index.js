@@ -1,3 +1,4 @@
+import "./locale/i18n.js";
 import fs from "fs";
 import "../js/parser.js";
 import "../js/utils.js";
@@ -39,4 +40,4 @@ const out = _METAS.mergeMap(({file, prop}) => {
 });
 
 fs.writeFileSync("data/generated/gendata-nav-adventure-book-index.json", JSON.stringify(out), "utf8");
-console.log("Generated navbar adventure/book index.");
+console.log("已生成导航栏冒险／书籍索引。");

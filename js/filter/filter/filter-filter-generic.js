@@ -382,7 +382,7 @@ export class Filter extends FilterBase {
 			.join("");
 
 		const ptWithoutItems = entriesWithoutItems.length
-			? `<span class="ve-muted ve-italic ve-fltr__pill ve-fltr__pill--display-only" data-state="${PILL_STATES[PILL_STATE__IGNORE]}">And ${entriesWithoutItems.length} more item${entriesWithoutItems.length === 1 ? "" : "s"}.</span>`
+			? `<span class="ve-muted ve-italic ve-fltr__pill ve-fltr__pill--display-only" data-state="${PILL_STATES[PILL_STATE__IGNORE]}">另有 ${entriesWithoutItems.length} 项。</span>`
 			: "";
 
 		return [
@@ -692,7 +692,7 @@ export class Filter extends FilterBase {
 		});
 		this._compSearch._addHookBase("searchTermParent", () => {
 			const tooltipIgnoreSearch = this._compSearch._state.searchTermParent
-				? `SHIFT to Ignore Search`
+				? `按住 Shift 可忽略搜索条件`
 				: null;
 			btnAll.vee.tooltip(tooltipIgnoreSearch);
 			btnClear.vee.tooltip(tooltipIgnoreSearch);
@@ -730,7 +730,7 @@ export class Filter extends FilterBase {
 			tag: "button",
 			clazz: `ve-btn ve-btn-default ${opts.isMulti ? "ve-btn-xxs" : "ve-btn-xs"} ve-fltr__h-btn-logic--blue ve-fltr__h-btn-logic ve-w-100`,
 			click: () => this._meta.combineBlue = Filter._getNextCombineMode(this._meta.combineBlue),
-			title: `Blue match mode for this filter. "AND" requires all blues to match, "OR" requires at least one blue to match, "XOR" requires exactly one blue to match.`,
+			title: `此筛选器的蓝色条件组合方式：“AND”要求全部匹配，“OR”要求至少匹配一项，“XOR”要求恰好匹配一项。`,
 		});
 		const hookCombineBlue = () => veE({ele: btnCombineBlue, txt: `${this._meta.combineBlue}`.toUpperCase()});
 		this._addHook("meta", "combineBlue", hookCombineBlue);
@@ -740,7 +740,7 @@ export class Filter extends FilterBase {
 			tag: "button",
 			clazz: `ve-btn ve-btn-default ${opts.isMulti ? "ve-btn-xxs" : "ve-btn-xs"} ve-fltr__h-btn-logic--red ve-fltr__h-btn-logic ve-w-100`,
 			click: () => this._meta.combineRed = Filter._getNextCombineMode(this._meta.combineRed),
-			title: `Red match mode for this filter. "AND" requires all reds to match, "OR" requires at least one red to match, "XOR" requires exactly one red to match.`,
+			title: `此筛选器的红色条件组合方式：“AND”要求全部匹配，“OR”要求至少匹配一项，“XOR”要求恰好匹配一项。`,
 		});
 		const hookCombineRed = () => veE({ele: btnCombineRed, txt: `${this._meta.combineRed}`.toUpperCase()});
 		this._addHook("meta", "combineRed", hookCombineRed);
@@ -762,13 +762,13 @@ export class Filter extends FilterBase {
 
 			const htmlSummary = [
 				cur._totals.yes
-					? `<span class="ve-fltr__summary_item ve-fltr__summary_item--include" title="${cur._totals.yes} hidden &quot;required&quot; tags">${cur._totals.yes}</span>`
+					? `<span class="ve-fltr__summary_item ve-fltr__summary_item--include" title="${cur._totals.yes} 个已隐藏的“必须包含”标签">${cur._totals.yes}</span>`
 					: null,
 				cur._totals.yes && cur._totals.no
 					? `<span class="ve-fltr__summary_item_spacer"></span>`
 					: null,
 				cur._totals.no
-					? `<span class="ve-fltr__summary_item ve-fltr__summary_item--exclude" title="${cur._totals.no} hidden &quot;excluded&quot; tags">${cur._totals.no}</span>`
+					? `<span class="ve-fltr__summary_item ve-fltr__summary_item--exclude" title="${cur._totals.no} 个已隐藏的“排除”标签">${cur._totals.no}</span>`
 					: null,
 			].filter(Boolean).join("");
 			veE({ele: wrpSummary, html: htmlSummary}).vee.toggle(this._uiMeta.isHidden);
@@ -836,7 +836,7 @@ export class Filter extends FilterBase {
 						tag: "span",
 						clazz: "ve-fltr__summary_item ve-fltr__summary_item--include",
 						txt: stats.high,
-						title: `${stats.high} hidden "required" tag${stats.high === 1 ? "" : "s"}`,
+						title: `${stats.high} 个已隐藏的“必须包含”标签`,
 					}).vee.appendTo(wrpNestHeadSummary);
 				}
 
@@ -847,7 +847,7 @@ export class Filter extends FilterBase {
 						tag: "span",
 						clazz: "ve-fltr__summary_item ve-fltr__summary_item--exclude",
 						txt: stats.low,
-						title: `${stats.low} hidden "excluded" tag${stats.low === 1 ? "" : "s"}`,
+						title: `${stats.low} 个已隐藏的“排除”标签`,
 					}).vee.appendTo(wrpNestHeadSummary);
 				}
 			};

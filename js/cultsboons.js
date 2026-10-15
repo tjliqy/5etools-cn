@@ -4,17 +4,17 @@ class CultsBoonsSublistManager extends SublistManager {
 	static _getRowTemplate () {
 		return [
 			new SublistCellTemplate({
-				name: "Type",
+				name: "类型",
 				css: "ve-col-2 ve-text-center ve-pl-0 ve-pr-1",
 				colStyle: "text-center",
 			}),
 			new SublistCellTemplate({
-				name: "Subtype",
+				name: "子类型",
 				css: "ve-col-2 ve-px-1 ve-text-center",
 				colStyle: "text-center",
 			}),
 			new SublistCellTemplate({
-				name: "Name",
+				name: "名称",
 				css: "ve-bold ve-col-8 ve-pl-1 ve-pr-0",
 				colStyle: "",
 			}),
@@ -65,9 +65,9 @@ class CultsBoonsPage extends ListPage {
 			dataProps: ["cult", "boon"],
 
 			bookViewOptions: {
-				nameSingular: "cult/boon",
-				namePlural: "cults/boons",
-				pageTitle: "Cults and Boons Book View",
+				nameSingular: "邪教／恩泽",
+				namePlural: "邪教／恩泽",
+				pageTitle: "邪教与恩赐书籍视图",
 			},
 		});
 	}

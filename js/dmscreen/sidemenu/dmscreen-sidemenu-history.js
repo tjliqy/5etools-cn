@@ -88,14 +88,14 @@ export class DmScreenSidemenuHistory extends BaseComponent {
 
 		this._board.exiledPanels
 			.forEach((panel, i) => {
-				const btnRemove = veT`<div class="panel-history-control-remove-wrapper"><span class="panel-history-control-remove glyphicon glyphicon-remove" title="Remove"></span></div>`
+				const btnRemove = veT`<div class="panel-history-control-remove-wrapper"><span class="panel-history-control-remove glyphicon glyphicon-remove" title="移除"></span></div>`
 					.vee.onn("click", () => {
 						this._board.exiledPanels[i].destroy();
 						this._board.exiledPanels.splice(i, 1);
 						this.doUpdateRender();
 					});
 
-				const ctrlMove = veT`<div class="panel-history-control-middle" title="Move"></div>`;
+				const ctrlMove = veT`<div class="panel-history-control-middle" title="移动"></div>`;
 
 				const wrpHistItem = veT`<div class="sidemenu__history-item ve-no-shrink">
 					<div class="sidemenu__history-item-cover">

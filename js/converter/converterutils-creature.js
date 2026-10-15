@@ -238,13 +238,13 @@ export class AcConvert {
 							}
 							if (/^in .*? form$/i.test(fromLow)) {
 								// If there's an existing condition, flag a warning
-								if (cur.condition && cbMan) cbMan(fromLow, `AC requires manual checking: ${mon.name} ${mon.source} p${mon.page}`);
+								if (cur.condition && cbMan) cbMan(fromLow, `护甲等级需要手动检查：${mon.name} ${mon.source} 第 ${mon.page} 页`);
 								cur.condition = `${cur.condition ? `${cur.condition} ` : ""}${fromLow}`;
 
 								return;
 							}
 
-							if (cbMan) cbMan(fromLow, `AC requires manual checking: ${mon.name} ${mon.source} p${mon.page}`);
+							if (cbMan) cbMan(fromLow, `护甲等级需要手动检查：${mon.name} ${mon.source} 第 ${mon.page} 页`);
 							froms.push(fromLow);
 						}
 					}
@@ -1928,7 +1928,7 @@ export class SpellcastingTraitConvert {
 			entHeaderInputTaggedCapsWords
 				.replace(/{@spell [^}]+}( \([^)]+\))?/g, (...m) => {
 					if (!usagePath) {
-						cbMan(`Found spell in header with no usage info: ${m[0]}`);
+						cbMan(`表头中发现没有使用次数信息的法术：${m[0]}`);
 						return m[0];
 					}
 
@@ -1950,7 +1950,7 @@ export class SpellcastingTraitConvert {
 				const isWill = ptPost.toLowerCase().replace(/-/g, " ") === "at will";
 
 				if (!usagePath && !isWill) {
-					cbMan(`Found spell in header with no usage info: ${ptSpellsRaw}`);
+					cbMan(`表头中发现没有使用次数信息的法术：${ptSpellsRaw}`);
 					return m[0];
 				}
 

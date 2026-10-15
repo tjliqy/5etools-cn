@@ -66,9 +66,9 @@ class PageFilterEquipment extends PageFilterBase {
 		this._focusFilter = new Filter({header: "Spellcasting Focus", cnHeader: "法器", items: [...Parser.ITEM_SPELLCASTING_FOCUS_CLASSES], displayFn: it => Parser.CLASSES_TO_CN[it] ?? it});
 		this._damageTypeFilter = new Filter({header: "Weapon Damage Type", cnHeader: "武器伤害类型", displayFn: it => Parser.dmgTypeToFull(it).uppercaseFirst(), itemSortFn: (a, b) => SortUtil.ascSortLower(Parser.dmgTypeToFull(a.item), Parser.dmgTypeToFull(b.item))});
 		this._damageDiceFilter = new Filter({header: "Weapon Damage Dice", cnHeader: "武器伤害骰", items: ["1", "1d4", "1d6", "1d8", "1d10", "1d12", "2d6"], itemSortFn: (a, b) => PageFilterEquipment._sortDamageDice(a, b)});
-		this._acFilter = new RangeFilter({header: "Armor Class", cnHeader: "护甲类型", displayFn: it => it === 0 ? "None" : it});
-		this._rangeFilterNormal = new RangeFilter({header: "Normal", cnHeader: "正常", displayFn: it => it === 0 ? "None" : `${it} ft.`});
-		this._rangeFilterLong = new RangeFilter({header: "Long", cnHeader: "长", displayFn: it => it === 0 ? "None" : `${it} ft.`});
+		this._acFilter = new RangeFilter({header: "Armor Class", cnHeader: "护甲类型", displayFn: it => it === 0 ? "无" : it});
+		this._rangeFilterNormal = new RangeFilter({header: "Normal", cnHeader: "正常", displayFn: it => it === 0 ? "无" : `${it} 尺`});
+		this._rangeFilterLong = new RangeFilter({header: "Long", cnHeader: "长", displayFn: it => it === 0 ? "无" : `${it} 尺`});
 		this._rangeFilter = new MultiFilter({header: "Range", cnHeader: "范围", filters: [this._rangeFilterNormal, this._rangeFilterLong]});
 		this._miscFilter = new Filter({
 			header: "Miscellaneous",
@@ -322,7 +322,7 @@ class PageFilterItems extends PageFilterEquipment {
 	constructor (opts) {
 		super(opts);
 
-		this._tierFilter = new Filter({header: "Tier", cnHeader: "层级", items: ["none", "主要", "次要"], itemSortFn: null, displayFn: StrUtil.toTitleCase.bind(StrUtil)});
+		this._tierFilter = new Filter({header: "Tier", cnHeader: "层级", items: ["none", "主要", "次要"], itemSortFn: null, displayFn: it => it === "none" ? "无" : StrUtil.toTitleCase(it)});
 		this._attachedSpellsFilter = new SearchableFilter({header: "Attached Spells", cnHeader: "附加法术", displayFn: (it) => it.split("|")[0].toTitleCase(), itemSortFn: SortUtil.ascSortLower});
 		this._lootTableFilter = new Filter({
 			header: "Found On",
@@ -362,7 +362,7 @@ class PageFilterItems extends PageFilterEquipment {
 			isMiscFilter: true,
 			deselFn: PageFilterBase.defaultMiscellaneousDeselFn.bind(PageFilterBase),
 		});
-		this._baseSourceFilter = new SourceFilter({header: "Base Source", selFn: null});
+		this._baseSourceFilter = new SourceFilter({header: "Base Source", cnHeader: "基础来源", selFn: null});
 		this._baseItemFilter = new SearchableFilter({header: "Base Item", cnHeader: "基础物品", displayFn: this.constructor._getBaseItemDisplay.bind(this.constructor), itemSortFn: SortUtil.ascSortLower});
 		this._classFeaturesFilter = new Filter({
 			header: "Class Features",
@@ -385,7 +385,7 @@ class PageFilterItems extends PageFilterEquipment {
 		this._vulnerableFilter = FilterCommon.getDamageVulnerableFilter();
 		this._resistFilter = FilterCommon.getDamageResistFilter();
 		this._immuneFilter = FilterCommon.getDamageImmuneFilter();
-		this._defenseFilter = new MultiFilter({header: "Damage", filters: [this._vulnerableFilter, this._resistFilter, this._immuneFilter]});
+		this._defenseFilter = new MultiFilter({header: "Damage", cnHeader: "伤害", filters: [this._vulnerableFilter, this._resistFilter, this._immuneFilter]});
 		this._conditionImmuneFilter = FilterCommon.getConditionImmuneFilter();
 	}
 
@@ -586,7 +586,7 @@ class ModalFilterItems extends ModalFilterBase {
 		opts = opts || {};
 		super({
 			...opts,
-			modalTitle: `Item${opts.isRadio ? "" : "s"}`,
+			modalTitle: `物品`,
 			pageFilter: new PageFilterItems(opts?.pageFilterOpts),
 			previewButtonHandler: new ListUiPreviewButtonHandlerStatsFluff({page: UrlUtil.PG_ITEMS}),
 		});
@@ -630,7 +630,7 @@ class ModalFilterItems extends ModalFilterBase {
 			<div class="ve-col-0-5 ve-pl-0 ve-flex-vh-center">${this._isRadio ? `<input type="radio" name="radio" class="ve-no-events">` : `<input type="checkbox" class="ve-no-events">`}</div>
 
 			<div class="ve-col-0-5 ve-px-1 ve-flex-vh-center">
-				<div class="ve-ui-list__btn-inline ve-px-2 ve-no-select" title="Toggle Preview (SHIFT to Toggle Info Preview)">[+]</div>
+				<div class="ve-ui-list__btn-inline ve-px-2 ve-no-select" title="切换预览（按 Shift 切换信息预览）">[+]</div>
 			</div>
 
 			<div class="ve-col-5 ve-px-1 ${item._versionBase_isVersion ? "ve-italic" : ""} ${this._getNameStyle()}">${item._versionBase_isVersion ? `<span class="ve-px-3"></span>` : ""}${item.name}</div>

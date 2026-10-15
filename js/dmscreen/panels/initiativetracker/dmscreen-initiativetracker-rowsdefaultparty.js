@@ -54,7 +54,7 @@ class _RenderableCollectionRowDataDefaultParty extends RenderableCollectionRowDa
 }
 
 export class InitiativeTrackerRowDataViewDefaultParty extends InitiativeTrackerRowDataViewBase {
-	_TextHeaderLhs = "Player";
+	_TextHeaderLhs = "玩家";
 	_ClsRenderableCollectionRowData = _RenderableCollectionRowDataDefaultParty;
 
 	_render_getWrpHeaderRhs ({rdState}) {

@@ -24,7 +24,7 @@ export class StatGenUiRenderableCollectionPbRules extends RenderableCollectionGe
 		parentComp._addHookBase("pb_isCustom", hkIsCustom);
 		hkIsCustom();
 
-		const btnDelete = veT`<button class="ve-btn ve-btn-xxs ve-btn-danger" title="Delete"><span class="glyphicon glyphicon-trash"></span></button>`
+		const btnDelete = veT`<button class="ve-btn ve-btn-xxs ve-btn-danger" title="删除"><span class="glyphicon glyphicon-trash"></span></button>`
 			.vee.onn("click", () => {
 				if (parentComp.state.pb_rules.length === 1) return; // Never delete the final item
 				parentComp.state.pb_rules = parentComp.state.pb_rules.filter(it => it !== entity);

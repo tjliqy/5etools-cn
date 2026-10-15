@@ -35,7 +35,7 @@ const logGroup = ({name, lines}) => {
 };
 
 async function main () {
-	console.log(`##### Validating map grids #####`);
+	console.log(`##### 正在验证地图网格 #####`);
 
 	const warningsNoParent = [];
 	const warningsNoGrid = [];

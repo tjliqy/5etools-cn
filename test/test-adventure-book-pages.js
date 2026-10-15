@@ -49,7 +49,7 @@ function getErrorNoPages ({walker, filename, json, source}) {
 }
 
 async function main () {
-	console.log(`##### Validating adventure/book page numbers #####`);
+	console.log(`##### 正在验证冒险／书籍页码 #####`);
 
 	const walker = MiscUtil.getWalker({isNoModification: true, isBreakOnReturn: true});
 

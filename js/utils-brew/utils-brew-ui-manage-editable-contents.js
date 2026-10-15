@@ -106,7 +106,7 @@ export class ManageEditableBrewContentsUi extends BaseComponent {
 	/* -------------------------------------------- */
 
 	_getBtnDeleteSelected ({rdState}) {
-		return veT`<button class="ve-btn ve-btn-danger ve-btn-xs">Delete Selected</button>`
+		return veT`<button class="ve-btn ve-btn-danger ve-btn-xs">删除所选项</button>`
 			.vee.onn("click", () => this._handleClick_pButtonDeleteSelected({rdState}));
 	}
 
@@ -124,7 +124,7 @@ export class ManageEditableBrewContentsUi extends BaseComponent {
 
 		if (!listItemsSel.length) return;
 
-		if (!await InputUiUtil.pGetUserBoolean({title: "Delete Entities", htmlDescription: `Are you sure you want to delete the ${listItemsSel.length === 1 ? "selected entity" : `${listItemsSel.length} selected entities`}?`, textYes: "Yes", textNo: "Cancel"})) return;
+		if (!await InputUiUtil.pGetUserBoolean({title: "删除条目", htmlDescription: `确定要删除${listItemsSel.length === 1 ? "所选条目" : `所选的 ${listItemsSel.length} 个条目`}吗？`, textYes: "是", textNo: "取消"})) return;
 
 		this._isDirty = true;
 
@@ -150,10 +150,10 @@ export class ManageEditableBrewContentsUi extends BaseComponent {
 
 		if (
 			!await InputUiUtil.pGetUserBoolean({
-				title: "Delete Sources",
-				htmlDescription: `<div>Are you sure you want to delete the ${listItemsSel.length === 1 ? "selected source" : `${listItemsSel.length} selected sources`}?<br><b>This will delete all entities with ${listItemsSel.length === 1 ? "that source" : `these sources`}</b>.</div>`,
-				textYes: "Yes",
-				textNo: "Cancel",
+				title: "删除来源",
+				htmlDescription: `<div>确定要删除${listItemsSel.length === 1 ? "所选来源" : `所选的 ${listItemsSel.length} 个来源`}吗？<br><b>使用${listItemsSel.length === 1 ? "该来源" : `这些来源`}的所有条目也会被删除</b>。</div>`,
+				textYes: "是",
+				textNo: "取消",
 			})
 		) return;
 
@@ -350,7 +350,7 @@ export class ManageEditableBrewContentsUi extends BaseComponent {
 			.map(([prop, info]) => this._pRender_getMetaRowMeta({prop, info}));
 
 		veT(tabMeta.wrpTab)`
-			<div class="ve-pt-2"><i>Warning: deleting metadata may invalidate or otherwise corrupt homebrew which depends on it. Use with caution.</i></div>
+			<div class="ve-pt-2"><i>警告：删除元数据可能使依赖它的自制内容失效或损坏，请谨慎操作。</i></div>
 			<hr class="ve-hr-3">
 			${metasSections.map(({wrp}) => wrp)}
 		`;
@@ -364,7 +364,7 @@ export class ManageEditableBrewContentsUi extends BaseComponent {
 			.map(k => {
 				const btnDelete = this._isReadOnly
 					? null
-					: veT`<button class="ve-btn ve-btn-danger ve-btn-xs" title="Delete"><span class="glyphicon glyphicon-trash"></span></button>`
+					: veT`<button class="ve-btn ve-btn-danger ve-btn-xs" title="删除"><span class="glyphicon glyphicon-trash"></span></button>`
 						.vee.onn("click", () => {
 							this._isDirty = true;
 							MiscUtil.deleteObjectPath(this._brew.body._meta, prop, k);
@@ -471,7 +471,7 @@ export class ManageEditableBrewContentsUi extends BaseComponent {
 		};
 	}
 
-	static _NAME_UNKNOWN = "(Unknown)";
+	static _NAME_UNKNOWN = "（未知）";
 
 	static _getDisplayName ({brew, ent, prop}) {
 		switch (prop) {
@@ -525,40 +525,40 @@ export class ManageEditableBrewContentsUi extends BaseComponent {
 	/** These are props found in "_meta" sections of files */
 	static _PROP_INFOS_META = {
 		"spellDistanceUnits": {
-			displayName: "Spell Distance Units",
+			displayName: "法术距离单位",
 		},
 		"spellSchools": {
-			displayName: "Spell Schools",
+			displayName: "法术学派",
 			displayFn: (brew, propMeta, k) => brew.body._meta[propMeta][k].full || k,
 		},
 		"currencyConversions": {
-			displayName: "Currency Conversion Tables",
+			displayName: "货币换算表",
 			displayFn: (brew, propMeta, k) => `${k}: ${brew.body._meta[propMeta][k].map(it => `${it.coin}=${it.mult}`).join(", ")}`,
 		},
 		"skills": {
-			displayName: "Skills",
+			displayName: "技能",
 		},
 		"senses": {
-			displayName: "Senses",
+			displayName: "感官",
 		},
 		"featCategories": {
-			displayName: "Feat Categories",
+			displayName: "专长类别",
 			displayFn: (brew, propMeta, k) => brew.body._meta[propMeta][k] || k,
 		},
 		"optionalFeatureTypes": {
-			displayName: "Optional Feature Types",
+			displayName: "可选特性类型",
 			displayFn: (brew, propMeta, k) => brew.body._meta[propMeta][k] || k,
 		},
 		"vehicleUpgradeTypes": {
-			displayName: "Vehicle Upgrade Types",
+			displayName: "载具升级类型",
 			displayFn: (brew, propMeta, k) => brew.body._meta[propMeta][k] || k,
 		},
 		"charOption": {
-			displayName: "Character Creation Option Types",
+			displayName: "角色创建选项类型",
 			displayFn: (brew, propMeta, k) => brew.body._meta[propMeta][k] || k,
 		},
 		"psionicTypes": {
-			displayName: "Psionic Types",
+			displayName: "灵能类型",
 			displayFn: (brew, propMeta, k) => brew.body._meta[propMeta][k].full || k,
 		},
 	};

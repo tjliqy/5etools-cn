@@ -393,7 +393,7 @@ class BlocklistUi {
 			: null;
 		const btnExport = veT`<button class="ve-btn ve-btn-default ve-btn-xs">导出黑名单</button>`
 			.vee.onn("click", () => this._export());
-		const btnImport = veT`<button class="ve-btn ve-btn-default ve-btn-xs" title="SHIFT for Add Only">导入黑名单</button>`
+		const btnImport = veT`<button class="ve-btn ve-btn-default ve-btn-xs" title="按 Shift 仅添加条目">导入黑名单</button>`
 			.vee.onn("click", evt => this._pImport(evt));
 		const btnReset = veT`<button class="ve-btn ve-btn-danger ve-btn-xs">重置黑名单</button>`
 			.vee.onn("click", async () => {
@@ -576,7 +576,7 @@ class BlocklistUi {
 		const sourceFull = Parser.sourceJsonToFull(source);
 
 		const btnRemove = isAuto
-			? veT`<button class="ve-btn ve-btn-xxs ve-btn-danger" disabled title="This blocklist entry is automatically managed, and cannot be manually removed.">删除</button>`
+			? veT`<button class="ve-btn ve-btn-xxs ve-btn-danger" disabled title="此屏蔽条目由系统自动管理，无法手动删除。">删除</button>`
 			: veT`<button class="ve-btn ve-btn-xxs ve-btn-danger">删除</button>`
 				.vee.onn("click", () => {
 					this._remove(id, hash, category, source);
@@ -618,7 +618,7 @@ class BlocklistUi {
 			this._comp.source === "*"
 			&& category === "*"
 			&& hash === "*"
-			&& !await InputUiUtil.pGetUserBoolean({title: "Exclude All", htmlDescription: `This will exclude all content from all list pages. 你确定吗？`, textYes: "是的", textNo: "取消"})
+			&& !await InputUiUtil.pGetUserBoolean({title: "屏蔽全部", htmlDescription: "这会屏蔽所有列表页面中的全部内容，确定吗？", textYes: "是的", textNo: "取消"})
 		) return;
 
 		if (this._addExclude(displayName, hash, category, this._comp.source)) {

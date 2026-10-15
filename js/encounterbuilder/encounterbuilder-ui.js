@@ -21,10 +21,10 @@ class _RenderableCollectionCustomShapeGroups extends RenderableCollectionGeneric
 		// region Count
 		const iptCountMinMaxMin = ComponentUiUtil.getIptInt(comp, "countMinMaxMin", 0, {min: 0})
 			.vee.addClass("ve-text-center")
-			.vee.tooltip("Minimum Number of Creatures");
+			.vee.tooltip("最少生物数量");
 		const iptCountMinMaxMax = ComponentUiUtil.getIptInt(comp, "countMinMaxMax", 1, {min: 1})
 			.vee.addClass("ve-text-center")
-			.vee.tooltip("Maximum Number of Creatures");
+			.vee.tooltip("最多生物数量");
 
 		const hkCountMinMax = () => {
 			if (comp._state.countMinMaxMin <= comp._state.countMinMaxMax) return;
@@ -48,7 +48,7 @@ class _RenderableCollectionCustomShapeGroups extends RenderableCollectionGeneric
 		};
 		// endregion
 
-		const btnDelete = veT`<button class="ve-btn ve-btn-danger ve-btn-xxs" title="Delete"><span class="glyphicon glyphicon-trash"></span></button>`
+		const btnDelete = veT`<button class="ve-btn ve-btn-danger ve-btn-xxs" title="删除"><span class="glyphicon glyphicon-trash"></span></button>`
 			.vee.onn("click", () => {
 				this._utils.doDelete({entity});
 			});
@@ -285,7 +285,7 @@ export class EncounterBuilderUi extends BaseComponent {
 		if (!stgViewer) return;
 
 		const wrpRows = veT`<div class="ve-py-2 ve-overflow-y-auto ve-min-h-0 ve-flex-col ve-h-100"></div>`;
-		const dispEmpty = veT`<div class="ve-muted ve-italic ve-text-center ve-p-2">Add a creature to begin.</div>`;
+		const dispEmpty = veT`<div class="ve-muted ve-italic ve-text-center ve-p-2">添加生物以开始。</div>`;
 
 		const wrpOutput = veT`<div class="ecgen-viewer__wrp-output ve-relative">
 			${wrpRows}
@@ -411,10 +411,10 @@ export class EncounterBuilderUi extends BaseComponent {
 	}
 
 	_render_shapeCustom ({rdState, stgShapeCustom}) {
-		const btnAddGroup = veT`<button class="ve-btn ve-btn-xs ve-btn-default"><span class="glyphicon glyphicon-plus"></span> Add Creature Group</button>`
+		const btnAddGroup = veT`<button class="ve-btn ve-btn-xs ve-btn-default"><span class="glyphicon glyphicon-plus"></span> 添加生物组</button>`
 			.vee.onn("click", () => {
 				if (this._comp.customShapeGroups.length >= this.constructor._CUSTOM_GROUPS_CNT_MAX) {
-					JqueryUtil.doToast({type: "warning", content: "Maximum group limit reached! Please remove some existing groups first."});
+					JqueryUtil.doToast({type: "warning", content: "已达到生物组数量上限，请先移除已有生物组。"});
 					return;
 				}
 
@@ -424,22 +424,22 @@ export class EncounterBuilderUi extends BaseComponent {
 				];
 			});
 
-		const btnClearGroups = veT`<button class="ve-btn ve-btn-xs ve-btn-danger" title="Delete All Groups"><span class="glyphicon glyphicon-trash"></span></button>`
+		const btnClearGroups = veT`<button class="ve-btn ve-btn-xs ve-btn-danger" title="删除所有生物组"><span class="glyphicon glyphicon-trash"></span></button>`
 			.vee.onn("click", async () => {
 				if (
 					this._comp.customShapeGroups?.length
-					&& !await InputUiUtil.pGetUserBoolean({title: "Are you Sure?", htmlDescription: `Are you sure you want to creature delete ${this._comp.customShapeGroups.length} group${this._comp.customShapeGroups.length === 1 ? "" : "s"}?`})
+					&& !await InputUiUtil.pGetUserBoolean({title: "确认删除？", htmlDescription: `确定要删除 ${this._comp.customShapeGroups.length} 个生物组吗？`})
 				) return;
 
 				this._comp.customShapeGroups = [];
 			});
 
-		const btnExportCustomShapeGroups = veT`<button class="ve-btn ve-btn-xs ve-btn-default" title="Export Creature Group Configuration"><span class="glyphicon glyphicon-download"></span></button>`
+		const btnExportCustomShapeGroups = veT`<button class="ve-btn ve-btn-xs ve-btn-default" title="导出生物组配置"><span class="glyphicon glyphicon-download"></span></button>`
 			.vee.onn("click", () => {
 				DataUtil.userDownload(`custom-encounter-config`, this._getCustomShapeTemplate(), {fileType: "encounterbuilder-custom-shape-template"});
 			});
 
-		const btnImportCustomShapeGroups = veT`<button class="ve-btn ve-btn-xs ve-btn-default" title="Import Creature Group Configuration"><span class="glyphicon glyphicon-upload"></span></button>`
+		const btnImportCustomShapeGroups = veT`<button class="ve-btn ve-btn-xs ve-btn-default" title="导入生物组配置"><span class="glyphicon glyphicon-upload"></span></button>`
 			.vee.onn("click", async () => {
 				const {jsons, errors} = await InputUiUtil.pGetUserUploadJson({expectedFileTypes: ["encounterbuilder-custom-shape-template"]});
 
@@ -450,12 +450,12 @@ export class EncounterBuilderUi extends BaseComponent {
 				const [json] = jsons;
 
 				const cntSet = this._setCustomShapeGroupsFromShapeTemplate(json);
-				if (!cntSet) return JqueryUtil.doToast({content: `Failed to import creature groups! Please ensure the file contains a valid list of exported creature groups.`, type: "warning"});
+				if (!cntSet) return JqueryUtil.doToast({content: "导入生物组失败，请确认文件包含有效的已导出生物组列表。", type: "warning"});
 
-				JqueryUtil.doToast({content: `Imported ${cntSet} creature group${cntSet === 1 ? "" : "s"}!`});
+				JqueryUtil.doToast({content: `已导入 ${cntSet} 个生物组！`});
 			});
 
-		const btnAutoAllocate = veT`<button class="ve-btn ve-btn-xs ve-btn-default" title="Auto-Distribute Remaining Budget (SHIFT to Auto Distribute Entire Budget; CTRL to Auto Distribute Entire Budget by Number of Creature)"><span class="glyphicon glyphicon-equalizer"></span></button>`
+		const btnAutoAllocate = veT`<button class="ve-btn ve-btn-xs ve-btn-default" title="自动分配剩余预算（按 Shift 分配全部预算；按 Ctrl 根据生物数量分配全部预算）"><span class="glyphicon glyphicon-equalizer"></span></button>`
 			.vee.onn("click", evt => {
 				if (!this._comp.customShapeGroups?.length) return;
 
@@ -533,7 +533,7 @@ export class EncounterBuilderUi extends BaseComponent {
 				isComplete,
 			} = getUnspentInfo();
 			dispSpent
-				.vee.html(`<span class="ve-split-v-center ve-w-140p ve-no-shrink" title="The percentage of the encounter budget, for the currently-selected difficulty, allocated to encounter groups.">${htmlUnspentHeader}</span>`)
+				.vee.html(`<span class="ve-split-v-center ve-w-140p ve-no-shrink" title="当前所选难度下，分配给各生物组的遭遇预算百分比。">${htmlUnspentHeader}</span>`)
 				.vee.toggleClass("text-danger", !isComplete);
 
 			const renderedCustomShapeGroups = this._comp._getRenderedCollection({prop: "customShapeGroups"});
@@ -543,7 +543,7 @@ export class EncounterBuilderUi extends BaseComponent {
 
 		const wrpGroupsCustom = veT`<div class="ve-pb-2 ve-flex-col"></div>`;
 		const wrpGroupsCustomEmpty = veT`<div class="ve-pb-2 ve-flex-vh-center">
-			<i class="ve-muted ve-pt-2">Add a Custom Creature Group to begin.</i>
+			<i class="ve-muted ve-pt-2">添加自定义生物组以开始。</i>
 		</div>`;
 
 		const renderableCollectionCustomShapeGroups = new _RenderableCollectionCustomShapeGroups({
@@ -600,7 +600,7 @@ export class EncounterBuilderUi extends BaseComponent {
 
 		veT(stgShapeCustom)`
 			<div class="ve-split-v-center ve-my-2">
-				<h4 class="ve-my-0">Custom Encounter</h4>
+				<h4 class="ve-my-0">自定义遭遇</h4>
 				<div class="ve-flex-v-center">
 					<div class="ve-btn-group ve-flex-v-center ve-mr-2">
 						${btnAddGroup}
@@ -614,10 +614,10 @@ export class EncounterBuilderUi extends BaseComponent {
 			</div>
 
 			<div class="ve-w-100 ve-flex ve-bb-1p-trans ve-pb-1p">
-				<div class="ve-col-3 ve-no-shrink ve-small-caps ve-pr-1">Creatures</div>
+				<div class="ve-col-3 ve-no-shrink ve-small-caps ve-pr-1">生物数量</div>
 				<div class="ve-w-100 ve-small-caps ve-px-1 ve-split-v-center">
 					<div class="ve-flex-v-center">
-						<div class="ve-mr-2">Budget Allocation</div>
+						<div class="ve-mr-2">预算分配</div>
 						${btnAutoAllocate}
 					</div>
 					${dispSpent}

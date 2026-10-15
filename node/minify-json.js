@@ -11,4 +11,4 @@ function minifyFolder (folder) {
 }
 
 minifyFolder(`./data`);
-console.log("JSON minification complete.");
+console.log("JSON 压缩完成。");

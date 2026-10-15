@@ -12,9 +12,9 @@ function main () {
 	PAGE_GENERATORS
 		.forEach(generator => htmlFiles.delete(generator.getPage()));
 
-	if (!htmlFiles.size) return console.log(`All pages have generators!`);
+	if (!htmlFiles.size) return console.log(`所有页面都有生成器！`);
 
-	console.warn(`Pages did not have generators:\n${Array.from(htmlFiles).sort(SortUtil.ascSortLower).map(it => `\t${it}`).join("\n")}`);
+	console.warn(`以下页面没有生成器：\n${Array.from(htmlFiles).sort(SortUtil.ascSortLower).map(it => `\t${it}`).join("\n")}`);
 }
 
 main();

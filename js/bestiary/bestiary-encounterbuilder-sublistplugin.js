@@ -299,7 +299,7 @@ class EncounterBuilderLegacyStorageMigration {
 
 		await StorageUtil.pSet(this._STORAGE_KEY_LEGACY_ENCOUNTER_MIGRATION_VERSION, this._VERSION);
 
-		JqueryUtil.doToast(`Migrated active Bestiary encounter from version ${version} to version ${this._VERSION}!`);
+		JqueryUtil.doToast(`已将当前怪物图鉴遭遇从版本 ${version} 迁移至 ${this._VERSION}！`);
 
 		return true;
 	}
@@ -315,7 +315,7 @@ class EncounterBuilderLegacyStorageMigration {
 		await Object.entries(encounters.savedEncounters || {})
 			.pSerialAwaitMap(async ([id, enc]) => {
 				const legacyData = MiscUtil.copyFast(enc.data || {});
-				legacyData.name = enc.name || "(Unnamed encounter)";
+				legacyData.name = enc.name || "（未命名遭遇）";
 				legacyData.saveId = id;
 				legacyData.manager_isSaved = true;
 				await EncounterBuilderSublistPlugin.pMutLegacyData({exportedSublist: legacyData});
@@ -329,7 +329,7 @@ class EncounterBuilderLegacyStorageMigration {
 
 		await StorageUtil.pSet(this._STORAGE_KEY_LEGACY_SAVED_ENCOUNTER_MIGRATION_VERSION, this._VERSION);
 
-		JqueryUtil.doToast(`Migrated saved Bestiary encounters from version ${version} to version ${this._VERSION}!`);
+		JqueryUtil.doToast(`已将保存的怪物图鉴遭遇从版本 ${version} 迁移至 ${this._VERSION}！`);
 
 		return true;
 	}

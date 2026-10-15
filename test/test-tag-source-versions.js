@@ -101,7 +101,7 @@ const walkerStringHandler = ({stack}, str) => {
 
 class _TestTagSourcesEntities {
 	static run () {
-		console.log(`Checking entities...`);
+		console.log(`正在检查条目…`);
 		Uf.listJsonFiles("./data")
 			.forEach(fpath => {
 				if (
@@ -130,7 +130,7 @@ class _TestTagSourcesEntities {
 								if (!stack.length) return ent;
 								cntChanges += stack.length;
 
-								console.log(`Found tags with prior edition source in "${fpath}" for entity ${ent.name} (${srcJson})...\n${stack.map(it => `\t${it}`).join(`\n`)}`);
+								console.log(`在“${fpath}”的条目 ${ent.name}（${srcJson}）中发现使用旧版来源的标签…\n${stack.map(it => `\t${it}`).join(`\n`)}`);
 
 								return ent;
 							});
@@ -144,7 +144,7 @@ class _TestTagSourcesEntities {
 
 class _TestTagSourcesCorpus {
 	static run () {
-		console.log(`Checking corpora...`);
+		console.log(`正在检查语料…`);
 		[
 			{
 				fnameIndex: `adventures.json`,
@@ -169,7 +169,7 @@ class _TestTagSourcesCorpus {
 							.walk(json, {string: walkerStringHandler.bind(null, {stack})});
 						if (!stack.length) return;
 
-						console.log(`Found tags with prior edition source in "${fname}"...\n${stack.map(it => `\t${it}`).join(`\n`)}`);
+						console.log(`在“${fname}”中发现使用旧版来源的标签…\n${stack.map(it => `\t${it}`).join(`\n`)}`);
 
 						writeJsonSync(fpath, jsonOut, {isClean: true});
 					});

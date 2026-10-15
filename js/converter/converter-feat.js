@@ -84,7 +84,7 @@ export class ConverterFeat extends ConverterFeatureBase {
 			const categoryRaw = mFeatCategoryUnknown.groups.ptCategory.trim();
 			return {
 				category: categoryRaw,
-				categoryWarning: `Unknown feat category "${categoryRaw}"`,
+				categoryWarning: `未知专长类别“${categoryRaw}”`,
 				remaining: str.slice(mFeatCategoryUnknown[0].length).trim(),
 			};
 		}
@@ -108,7 +108,7 @@ export class ConverterFeat extends ConverterFeatureBase {
 			const categoryRaw = mFeatCategoryUnknown.groups.ptCategory.trim();
 			return {
 				category: categoryRaw,
-				categoryWarning: `Unknown feat category "${categoryRaw}"`,
+				categoryWarning: `未知专长类别“${categoryRaw}”`,
 				remaining: str.slice(mFeatCategoryUnknown[0].length).trim(),
 			};
 		}
@@ -124,7 +124,7 @@ export class ConverterFeat extends ConverterFeatureBase {
 		}
 
 		state.entity.category = categoryMeta.category;
-		if (categoryMeta.categoryWarning) options.cbWarning(`(${state.entity.name}) Category requires manual conversion`);
+		if (categoryMeta.categoryWarning) options.cbWarning(`(${state.entity.name}) 类别需要手动转换`);
 
 		let remaining = categoryMeta.remaining;
 		if (!remaining) return;

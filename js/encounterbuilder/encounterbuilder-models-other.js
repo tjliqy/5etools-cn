@@ -134,7 +134,7 @@ export class EncounterBuilderOptionalCandidateEncounter {
 
 	static failure (
 		{
-			message = "Failed to generate a valid encounter within the provided parameters! Try adjusting your filters, adding more players, or unlocking some creatures.",
+			message = "无法根据当前条件生成有效遭遇！请调整筛选条件、增加玩家人数，或解锁部分生物。",
 		} = {},
 	) {
 		return new this({message});

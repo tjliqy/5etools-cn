@@ -4,12 +4,12 @@ class ObjectsSublistManager extends SublistManager {
 	static _getRowTemplate () {
 		return [
 			new SublistCellTemplate({
-				name: "Name",
+				name: "名称",
 				css: "ve-bold ve-col-9 ve-pl-0 ve-pr-1",
 				colStyle: "",
 			}),
 			new SublistCellTemplate({
-				name: "Size",
+				name: "体型",
 				css: "ve-col-3 ve-pl-1 ve-pr-0 ve-text-center",
 				colStyle: "text-center",
 			}),
@@ -64,9 +64,9 @@ class ObjectsPage extends ListPage {
 			dataProps: ["object"],
 
 			bookViewOptions: {
-				nameSingular: "object",
-				namePlural: "objects",
-				pageTitle: "Objects Book View",
+				nameSingular: "物件",
+				namePlural: "物件",
+				pageTitle: "物件书籍视图",
 			},
 
 			listSyntax: new ListSyntaxObjects({fnGetDataList: () => this._dataList, pFnGetFluff}),

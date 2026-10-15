@@ -80,12 +80,12 @@ class BestiarySublistManager extends SublistManager {
 	static _getRowTemplate () {
 		return [
 			new SublistCellTemplate({
-				name: "Name",
+				name: "名称",
 				css: "ve-bold ve-col-5 ve-pl-0 ve-pr-1",
 				colStyle: "",
 			}),
 			new SublistCellTemplate({
-				name: "Type",
+				name: "类型",
 				css: "ve-col-3-8 ve-px-1",
 				colStyle: "",
 			}),
@@ -95,7 +95,7 @@ class BestiarySublistManager extends SublistManager {
 				colStyle: "text-center",
 			}),
 			new SublistCellTemplate({
-				name: "Number",
+				name: "数量",
 				css: "ve-col-2 ve-pl-1 ve-pr-0 ve-text-center",
 				colStyle: "text-center",
 			}),
@@ -125,7 +125,7 @@ class BestiarySublistManager extends SublistManager {
 			.vee.onn("mouseleave", evt => Renderer.hover.handleLinkMouseLeave(evt, hovStatblock));
 
 		// TODO(Future) run `pFnCleanup` before list item is destroyed
-		const hovToken = veT`<span class="ve-col-1-2 best-ecgen__visible ve-help ve-help--hover">Token</span>`;
+		const hovToken = veT`<span class="ve-col-1-2 best-ecgen__visible ve-help ve-help--hover">标记</span>`;
 		Renderer.monster.hover.bindTokenMouseover({mon, ele: hovToken});
 
 		// TODO(Future) run `pFnCleanup` before list item is destroyed
@@ -234,9 +234,9 @@ class BestiarySublistManager extends SublistManager {
 class BestiaryPageBookView extends ListPageBookView {
 	constructor (opts) {
 		super({
-			nameSingular: "creature",
-			namePlural: "creatures",
-			pageTitle: "Bestiary Printer View",
+			nameSingular: "生物",
+			namePlural: "生物",
+			pageTitle: "怪物图鉴打印视图",
 			...opts,
 		});
 	}
@@ -256,16 +256,16 @@ class BestiaryPageBookView extends ListPageBookView {
 			});
 		};
 
-		const btnDownloadMarkdown = veT`<button class="ve-btn ve-btn-default ve-btn-sm">Download as Markdown</button>`
+		const btnDownloadMarkdown = veT`<button class="ve-btn ve-btn-default ve-btn-sm">下载为 Markdown</button>`
 			.vee.onn("click", async () => DataUtil.userDownloadText("bestiary.md", await pGetAsMarkdown()));
 
-		const btnCopyMarkdown = veT`<button class="ve-btn ve-btn-default ve-btn-sm ve-px-2" title="Copy Markdown to Clipboard"><span class="glyphicon glyphicon-copy"></span></button>`
+		const btnCopyMarkdown = veT`<button class="ve-btn ve-btn-default ve-btn-sm ve-px-2" title="复制 Markdown 到剪贴板"><span class="glyphicon glyphicon-copy"></span></button>`
 			.vee.onn("click", async () => {
 				await MiscUtil.pCopyTextToClipboard(await pGetAsMarkdown());
 				JqueryUtil.showCopiedEffect(btnCopyMarkdown);
 			});
 
-		const btnDownloadMarkdownSettings = veT`<button class="ve-btn ve-btn-default ve-btn-sm ve-px-2" title="Markdown Settings"><span class="glyphicon glyphicon-cog"></span></button>`
+		const btnDownloadMarkdownSettings = veT`<button class="ve-btn ve-btn-default ve-btn-sm ve-px-2" title="Markdown 设置"><span class="glyphicon glyphicon-cog"></span></button>`
 			.vee.onn("click", async () => RendererMarkdown.pShowSettingsModal());
 
 		veT`<div class="ve-flex-v-center ve-btn-group ve-ml-2">
@@ -357,7 +357,7 @@ class BestiaryPage extends ListPageMultiSource {
 			},
 
 			tableViewOptions: {
-				title: "Bestiary",
+				title: "怪物图鉴",
 				colTransforms: {
 					name: UtilsTableview.COL_TRANSFORM_NAME,
 					source: UtilsTableview.COL_TRANSFORM_SOURCE,
@@ -582,7 +582,7 @@ class BestiaryPage extends ListPageMultiSource {
 		try {
 			sub = await this._pDoLoadSubHash_pScaler_({sub});
 		} catch (e) {
-			JqueryUtil.doToast({type: "danger", content: `Failed to set creature scaler state from URL! ${VeCt.STR_SEE_CONSOLE}`, isAutoHide: false});
+			JqueryUtil.doToast({type: "danger", content: `无法从网址设置生物缩放状态！ ${VeCt.STR_SEE_CONSOLE}`, isAutoHide: false});
 			setTimeout(() => { throw e; });
 		}
 		return sub;
@@ -592,7 +592,7 @@ class BestiaryPage extends ListPageMultiSource {
 		try {
 			sub = this._encounterBuilder.handleSubhash(sub);
 		} catch (e) {
-			JqueryUtil.doToast({type: "danger", content: `Failed to set encounter builder state from URL! ${VeCt.STR_SEE_CONSOLE}`, isAutoHide: false});
+			JqueryUtil.doToast({type: "danger", content: `无法从网址设置遭遇构建器状态！ ${VeCt.STR_SEE_CONSOLE}`, isAutoHide: false});
 			setTimeout(() => { throw e; });
 		}
 		return sub;
@@ -636,9 +636,9 @@ class BestiaryPage extends ListPageMultiSource {
 			.vee.onn("click", () => this._sublistManager.pHandleClick_download());
 		const btnLoadFromFile = veT`<button class="ve-btn ve-btn-default ve-btn-xs">从文件加载</button>`
 			.vee.onn("click", evt => this._sublistManager.pHandleClick_upload({isAdditive: evt.shiftKey}));
-		const btnCopyAsText = veT`<button class="ve-btn ve-btn-default ve-btn-xs ve-mr-2" title="SHIFT for Multi-Line Format">复制为文本</button>`
+		const btnCopyAsText = veT`<button class="ve-btn ve-btn-default ve-btn-xs ve-mr-2" title="按 Shift 使用多行格式">复制为文本</button>`
 			.vee.onn("click", (evt) => this._encounterBuilder.handleClickCopyAsText(evt));
-		const btnReset = veT`<button class="ve-btn ve-btn-danger ve-btn-xs" title="SHIFT to Reset Players">重置</button>`
+		const btnReset = veT`<button class="ve-btn ve-btn-danger ve-btn-xs" title="按 Shift 重置玩家">重置</button>`
 			.vee.onn("click", (evt) => this._sublistManager.pHandleClick_new(evt));
 
 		const btnBackToStatblocks = veT`<button class="ve-btn ve-btn-success ve-btn-xs">回到数据卡</button>`
@@ -829,7 +829,7 @@ class BestiaryPage extends ListPageMultiSource {
 	) {
 		Renderer.get().setFirstSection(true);
 
-		const btnScaleCr = !ScaleCreature.isCrInScaleRange(mon) ? null : veT`<button id="btn-scale-cr" title="Scale Creature By CR (Highly Experimental; based on the &quot;Monster Statistics by Challenge Rating&quot; table in the Dungeon Master's Guide (2014), page 274)" class="mon__btn-scale-cr ve-btn ve-btn-xs ve-btn-default ve-popwindow__hidden ve-print__hidden ve-lst-is-exporting-image__hidden"><span class="glyphicon glyphicon-signal"></span></button>`
+		const btnScaleCr = !ScaleCreature.isCrInScaleRange(mon) ? null : veT`<button id="btn-scale-cr" title="按挑战等级调整生物（高度实验性；基于《城主指南》2014 版第 274 页的“按挑战等级划分的怪物数据”表）" class="mon__btn-scale-cr ve-btn ve-btn-xs ve-btn-default ve-popwindow__hidden ve-print__hidden ve-lst-is-exporting-image__hidden"><span class="glyphicon glyphicon-signal"></span></button>`
 			.vee.onn("click", (evt) => {
 				evt.stopPropagation();
 				const win = (evt.view || {}).window;
@@ -846,7 +846,7 @@ class BestiaryPage extends ListPageMultiSource {
 				});
 			});
 
-		const btnResetScaleCr = !ScaleCreature.isCrInScaleRange(mon) ? null : veT`<button id="btn-reset-cr" title="Reset CR Scaling" class="mon__btn-reset-cr ve-btn ve-btn-xs ve-btn-default ve-popwindow__hidden ve-print__hidden ve-lst-is-exporting-image__hidden ve-ml-2"><span class="glyphicon glyphicon-refresh"></span></button>`
+		const btnResetScaleCr = !ScaleCreature.isCrInScaleRange(mon) ? null : veT`<button id="btn-reset-cr" title="重置挑战等级调整" class="mon__btn-reset-cr ve-btn ve-btn-xs ve-btn-default ve-popwindow__hidden ve-print__hidden ve-lst-is-exporting-image__hidden ve-ml-2"><span class="glyphicon glyphicon-refresh"></span></button>`
 			.vee.onn("click", () => Hist.setSubhash(VeCt.HASH_SCALED, null))
 			.vee.toggle(isScaledCr);
 

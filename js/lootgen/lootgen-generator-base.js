@@ -252,8 +252,8 @@ export class LootGenGeneratorBase extends BaseComponent {
 	_doHandleClickRollLoot_hoard_getAltChooseDisplayText ({typeAltChoose}) {
 		if (!typeAltChoose) return null;
 		return [
-			typeAltChoose.rarity,
-			typeAltChoose.tier,
+			typeAltChoose.rarity ? Parser.rarityToCN(typeAltChoose.rarity) : null,
+			typeAltChoose.tier ? ({minor: "次要", major: "主要", other: "其他"}[typeAltChoose.tier] || typeAltChoose.tier) : null,
 		]
 			.filter(Boolean)
 			.join(" ");

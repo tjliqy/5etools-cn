@@ -413,7 +413,7 @@ class TimeTrackerBase extends TimeTrackerComponent {
 			id: CryptUtil.uid(),
 			data: {
 				...TimeTrackerBase._DEFAULT_STATE__YEAR,
-				name: `Year of the ${Parser.numberToText(i + 1).uppercaseFirst()}s`,
+				name: `第 ${i + 1} 年`,
 				year: i,
 			},
 		};
@@ -425,7 +425,7 @@ class TimeTrackerBase extends TimeTrackerComponent {
 			id: CryptUtil.uid(),
 			data: {
 				...TimeTrackerBase._DEFAULT_STATE__ERA,
-				name: `${Parser.getOrdinalForm(i + 1)} Era`,
+				name: `第 ${i + 1} 纪元`,
 				abbreviation: `${symbol}E`,
 				startYear: i,
 				endYear: i,
@@ -444,7 +444,7 @@ class TimeTrackerBase extends TimeTrackerComponent {
 	}
 
 	static formatDateInfo (dayInfo, date, monthInfo, seasonInfos) {
-		return `${dayInfo.name || "[Nameless day]"} ${Parser.getOrdinalForm(date + 1)} ${monthInfo.name || "[Nameless month]"}${seasonInfos.length ? ` (${seasonInfos.map(it => it.name || "[Nameless season]").join("/")})` : ""}`;
+		return `${monthInfo.name || "[未命名月份]"}第 ${date + 1} 日${dayInfo.name ? `（${dayInfo.name}）` : ""}${seasonInfos.length ? `（${seasonInfos.map(it => it.name || "[未命名季节]").join("／")}）` : ""}`;
 	}
 
 	static formatYearInfo (year, yearInfos, eraInfos, abbreviate) {
@@ -522,9 +522,9 @@ class TimeTrackerBase extends TimeTrackerComponent {
 			return {ipt, propMax, mult: propMult ? timeInfo[propMult] : 1};
 		};
 
-		const metaHours = getIpt("Hours", "hoursPerDay", "hours", "secsPerHour");
-		const metaMinutes = getIpt("Minutes", "minutesPerHour", "minutes", "secsPerMinute");
-		const metaSeconds = getIpt("Seconds", "secsPerMinute", "seconds");
+		const metaHours = getIpt("小时", "hoursPerDay", "hours", "secsPerHour");
+		const metaMinutes = getIpt("分钟", "minutesPerHour", "minutes", "secsPerMinute");
+		const metaSeconds = getIpt("秒", "secsPerMinute", "seconds");
 		metas.push(metaHours, metaMinutes, metaSeconds);
 		const out = {iptHours: metaHours.ipt, iptMinutes: metaMinutes.ipt, iptSeconds: metaSeconds.ipt};
 		doUpdateTime();
@@ -550,14 +550,14 @@ class TimeTrackerBase extends TimeTrackerComponent {
 	}
 }
 TimeTrackerBase._DEFAULT_STATE__DAY = {
-	name: "Day",
+	name: "日",
 };
 TimeTrackerBase._DEFAULT_STATE__MONTH = {
-	name: "Month",
+	name: "月",
 	days: 30,
 };
 TimeTrackerBase._DEFAULT_STATE__EVENT = {
-	name: "Event",
+	name: "事件",
 	entries: [],
 	when: {
 		year: 0,
@@ -567,7 +567,7 @@ TimeTrackerBase._DEFAULT_STATE__EVENT = {
 	isHidden: false,
 };
 TimeTrackerBase._DEFAULT_STATE__ENCOUNTER = {
-	name: "Encounter",
+	name: "遭遇",
 	when: {
 		year: 0,
 		day: 0,
@@ -576,24 +576,24 @@ TimeTrackerBase._DEFAULT_STATE__ENCOUNTER = {
 	countUses: 0,
 };
 TimeTrackerBase._DEFAULT_STATE__SEASON = {
-	name: "Season",
+	name: "季节",
 	startDay: 0,
 	endDay: 0,
 	sunriseHour: 6,
 	sunsetHour: 22,
 };
 TimeTrackerBase._DEFAULT_STATE__YEAR = {
-	name: "Year",
+	name: "年",
 	year: 0,
 };
 TimeTrackerBase._DEFAULT_STATE__ERA = {
-	name: "Era",
+	name: "纪元",
 	abbreviation: "E",
 	startYear: 0,
 	endYear: 0,
 };
 TimeTrackerBase._DEFAULT_STATE__MOON = {
-	name: "Moon",
+	name: "月亮",
 	color: "#ffffff",
 	phaseOffset: 0,
 	period: 24,
@@ -1045,7 +1045,7 @@ class TimeTrackerRoot_Clock extends TimeTrackerComponent {
 							let name = event.name;
 							if (event.hasTime) {
 								const {hours, minutes, seconds} = TimeTrackerBase.getHoursMinutesSecondsFromSeconds(secsPerHour, secsPerMinute, event.timeOfDaySecs);
-								name = `${name} at ${TimeTrackerBase.getPaddedNum(hours, hoursPerDay)}:${TimeTrackerBase.getPaddedNum(minutes, minutesPerHour)}:${TimeTrackerBase.getPaddedNum(seconds, secsPerMinute)}`;
+								name = `${name}，时间 ${TimeTrackerBase.getPaddedNum(hours, hoursPerDay)}:${TimeTrackerBase.getPaddedNum(minutes, minutesPerHour)}:${TimeTrackerBase.getPaddedNum(seconds, secsPerMinute)}`;
 							}
 							const toShow = {
 								name,
@@ -1074,10 +1074,10 @@ class TimeTrackerRoot_Clock extends TimeTrackerComponent {
 						const hoverMeta = Renderer.hover.getMakePredefinedHover({type: "entries", entries: []}, {isBookContent: true});
 
 						const pDoUpdateMeta = async () => {
-							let name = encounter.displayName != null ? encounter.displayName : (encounter.name || "(Unnamed Encounter)");
+							let name = encounter.displayName != null ? encounter.displayName : (encounter.name || "（未命名遭遇）");
 							if (encounter.hasTime) {
 								const {hours, minutes, seconds} = TimeTrackerBase.getHoursMinutesSecondsFromSeconds(secsPerHour, secsPerMinute, encounter.timeOfDaySecs);
-								name = `${name} at ${TimeTrackerBase.getPaddedNum(hours, hoursPerDay)}:${TimeTrackerBase.getPaddedNum(minutes, minutesPerHour)}:${TimeTrackerBase.getPaddedNum(seconds, secsPerMinute)}`;
+								name = `${name}，时间 ${TimeTrackerBase.getPaddedNum(hours, hoursPerDay)}:${TimeTrackerBase.getPaddedNum(minutes, minutesPerHour)}:${TimeTrackerBase.getPaddedNum(seconds, secsPerMinute)}`;
 							}
 
 							const entityInfos = await ListUtil.pGetSublistEntities_fromHover({
@@ -1101,7 +1101,7 @@ class TimeTrackerRoot_Clock extends TimeTrackerComponent {
 							Renderer.hover.updatePredefinedHover(hoverMeta.id, toShow);
 						};
 
-						const dispEncounter = veT`<div class="dm-time__disp-clock-entry dm-time__disp-clock-entry--encounter ${encounter.countUses ? "dm-time__disp-clock-entry--used-encounter" : ""}" title="${encounter.countUses ? "(Encounter has been used)" : "Run Encounter (Add to Initiative Tracker)"}">*</div>`
+						const dispEncounter = veT`<div class="dm-time__disp-clock-entry dm-time__disp-clock-entry--encounter ${encounter.countUses ? "dm-time__disp-clock-entry--used-encounter" : ""}" title="${encounter.countUses ? "（遭遇已使用）" : "运行遭遇（添加到先攻追踪器）"}">*</div>`
 							.vee.onn("mouseover", async evt => {
 								await pDoUpdateMeta();
 								hoverMeta.mouseOver(evt, dispEncounter);
@@ -1431,7 +1431,7 @@ class TimeTrackerRoot_Clock_Weather extends TimeTrackerComponent {
 						const toShow = {
 							type: "entries",
 							entries: allEntries,
-							data: {hoverTitle: `Weather Effects`},
+							data: {hoverTitle: "天气效果"},
 						};
 						Renderer.hover.updatePredefinedHover(hoverMetaEnvEffects.id, toShow);
 						hoverMetaEnvEffects.mouseOver(evt, hovEnvEffects);
@@ -1634,7 +1634,7 @@ class TimeTrackerRoot_Clock_RandomWeather extends BaseComponent {
 		const btnOk = veT`<button class="ve-btn ve-btn-default">确认并随机生成天气</button>`
 			.vee.onn("click", () => {
 				if (!this._state.allowedTemperatures.length || !this._state.allowedPrecipitations.length || !this._state.allowedWindSpeeds.length) {
-					JqueryUtil.doToast({content: `Please select allowed values for all sections!`, type: "warning"});
+					JqueryUtil.doToast({content: "请为所有部分选择允许的值！", type: "warning"});
 				} else doClose(true);
 			});
 
@@ -1956,7 +1956,7 @@ class TimeTrackerRoot_Calendar extends TimeTrackerComponent {
 		const btnAddYear = veT`<button class="ve-btn ve-btn-xs ve-btn-default dm-time__btn-date-adjust" title="加一年(按住SHIFT加五年)">Y+</button>`
 			.vee.onn("click", evt => doModTime(getTimeInfo().secsPerYear * (evt.shiftKey ? 5 : 1)));
 
-		const iptYear = veT`<input class="ve-form-control form-control--minimal ve-text-center ve-input-xs dm-time__calendar-ipt-date dm-time__calendar-ipt-date--slashed-right" title="Year">`
+		const iptYear = veT`<input class="ve-form-control form-control--minimal ve-text-center ve-input-xs dm-time__calendar-ipt-date dm-time__calendar-ipt-date--slashed-right" title="年">`
 			.vee.onn("change", () => {
 				const {
 					secsPerYear,
@@ -1967,7 +1967,7 @@ class TimeTrackerRoot_Calendar extends TimeTrackerComponent {
 				const diffYears = nxt - year;
 				doModTime(diffYears * secsPerYear);
 			});
-		const iptMonth = veT`<input class="ve-form-control form-control--minimal ve-text-center ve-input-xs dm-time__calendar-ipt-date dm-time__calendar-ipt-date--slashed-left ${opts.isHideDays ? "" : "dm-time__calendar-ipt-date--slashed-right"}" title="Month">`
+		const iptMonth = veT`<input class="ve-form-control form-control--minimal ve-text-center ve-input-xs dm-time__calendar-ipt-date dm-time__calendar-ipt-date--slashed-left ${opts.isHideDays ? "" : "dm-time__calendar-ipt-date--slashed-right"}" title="月">`
 			.vee.onn("change", () => {
 				const {
 					month,
@@ -1979,7 +1979,7 @@ class TimeTrackerRoot_Calendar extends TimeTrackerComponent {
 				const diffMonths = nxt - month;
 				doModMonths(diffMonths);
 			});
-		const iptDay = opts.isHideDays ? null : veT`<input class="ve-form-control form-control--minimal ve-text-center ve-input-xs dm-time__calendar-ipt-date dm-time__calendar-ipt-date--slashed-left" title="Day">`
+		const iptDay = opts.isHideDays ? null : veT`<input class="ve-form-control form-control--minimal ve-text-center ve-input-xs dm-time__calendar-ipt-date dm-time__calendar-ipt-date--slashed-left" title="日">`
 			.vee.onn("change", () => {
 				const {
 					secsPerDay,
@@ -2069,7 +2069,7 @@ class TimeTrackerRoot_Calendar extends TimeTrackerComponent {
 
 			if (xPos === 0 && opts.hasRowLabels && i < daysInMonth) {
 				const weekNum = Math.floor(monthStartDayOfYear / daysPerWeek) + yPos;
-				veT`<div class="small ve-muted ve-small-caps ve-flex-vh-center" title="Week ${weekNum}">${weekNum}</div>`
+				veT`<div class="small ve-muted ve-small-caps ve-flex-vh-center" title="第 ${weekNum} 周">${weekNum}</div>`
 					.vee.css({
 						"grid-column-start": `${xPos + 1}`,
 						"grid-column-end": `${xPos + 2}`,
@@ -2098,7 +2098,7 @@ class TimeTrackerRoot_Calendar extends TimeTrackerComponent {
 							return TimeTrackerBase.getCvsMoon(m).vee.addClass("dm-time__calendar-moon-phase");
 						} else if (i === 1) {
 							const otherMoons = activeMoons.length - 1;
-							return `<div class="dm-time__calendar-moon-phase ve-muted" title="${otherMoons} additional moon${otherMoons === 1 ? "" : "s"} not shown"><span class="glyphicon glyphicon-plus"></span></div>`;
+							return `<div class="dm-time__calendar-moon-phase ve-muted" title="另有 ${otherMoons} 个月亮未显示"><span class="glyphicon glyphicon-plus"></span></div>`;
 						}
 					});
 
@@ -2107,8 +2107,8 @@ class TimeTrackerRoot_Calendar extends TimeTrackerComponent {
 
 				ele = veT`<div class="dm-time__disp-calendar-day ve-btn-xxs ve-m-1 ve-relative ${i === date && !opts.isHideDay ? "dm-time__disp-calendar-day--active" : ""}">
 					${i + 1}
-					${events.length ? `<div class="dm-time__disp-day-entry dm-time__disp-day-entry--event" title="Has Events">*</div>` : ""}
-					${encounters.length ? `<div class="dm-time__disp-day-entry dm-time__disp-day-entry--encounter" title="Has Encounters">*</div>` : ""}
+					${events.length ? `<div class="dm-time__disp-day-entry dm-time__disp-day-entry--event" title="有事件">*</div>` : ""}
+					${encounters.length ? `<div class="dm-time__disp-day-entry dm-time__disp-day-entry--encounter" title="有遭遇">*</div>` : ""}
 					${moonPart}
 				</div>`.vee.onn("click", (evt) => fnClickDay(evt, year, eventDay, moonDay));
 			}
@@ -2143,13 +2143,13 @@ class TimeTrackerRoot_Calendar extends TimeTrackerComponent {
 	_render_openDayModal (eventYear, eventDay, moonDay) {
 		const {getTimeInfo, getEvents, getEncounters, getMoonInfos} = this._parent;
 
-		const btnJumpToDay = veT`<button class="ve-btn ve-btn-xs ve-btn-default" title="Set the current date to this day. This will end Browse Mode, if it is currently active.">Go to Day</button>`
+		const btnJumpToDay = veT`<button class="ve-btn ve-btn-xs ve-btn-default" title="将当前日期设为这一天；若正在浏览模式中，将退出浏览模式。">跳转到此日</button>`
 			.vee.onn("click", () => {
 				this._render_doJumpToDay(eventYear, eventDay);
 				doClose();
 			});
 
-		const btnAddEvent = veT`<button class="ve-btn ve-btn-xs ve-btn-primary"><span class="glyphicon glyphicon-plus"></span> Add Event</button>`
+		const btnAddEvent = veT`<button class="ve-btn ve-btn-xs ve-btn-primary"><span class="glyphicon glyphicon-plus"></span> 添加事件</button>`
 			.vee.onn("click", () => {
 				const nxtPos = Object.keys(this._parent.get("events")).length;
 				const nuEvent = TimeTrackerBase.getGenericEvent(nxtPos, year, eventDay);
@@ -2157,7 +2157,7 @@ class TimeTrackerRoot_Calendar extends TimeTrackerComponent {
 				this._parent.set("events", {...this._parent.get("events"), [nuEvent.id]: nuEvent});
 			});
 
-		const btnAddEventAtTime = veT`<button class="ve-btn ve-btn-xs ve-btn-primary" title="SHIFT to Add at Current Time">At Time...</button>`
+		const btnAddEventAtTime = veT`<button class="ve-btn ve-btn-xs ve-btn-primary" title="按 Shift 在当前时间添加">指定时间...</button>`
 			.vee.onn("click", async evt => {
 				const chosenTimeInfo = await this._render_pGetEventTimeOfDay(eventYear, eventDay, evt.shiftKey);
 				if (chosenTimeInfo == null) return;
@@ -2174,10 +2174,10 @@ class TimeTrackerRoot_Calendar extends TimeTrackerComponent {
 			exportedSublist = MiscUtil.copy(exportedSublist);
 			exportedSublist.name = exportedSublist.name
 				|| await InputUiUtil.pGetUserString({
-					title: "Enter Encounter Name",
+					title: "输入遭遇名称",
 					default: await EncounterBuilderHelpers.pGetEncounterName(exportedSublist),
 				})
-				|| "(Unnamed encounter)";
+				|| "（未命名遭遇）";
 
 			nuEncounter.name = exportedSublist.name;
 			nuEncounter.data = exportedSublist;
@@ -2220,16 +2220,16 @@ class TimeTrackerRoot_Calendar extends TimeTrackerComponent {
 					isReferencable: true,
 				},
 
-				optsFromCurrent: {title: "SHIFT to Add at Current Time"},
-				optsFromSaved: {title: "SHIFT to Add at Current Time"},
-				optsFromFile: {title: "SHIFT to Add at Current Time"},
+				optsFromCurrent: {title: "按 Shift 在当前时间添加"},
+				optsFromSaved: {title: "按 Shift 在当前时间添加"},
+				optsFromFile: {title: "按 Shift 在当前时间添加"},
 			}),
 		]);
 
-		const btnAddEncounter = veT`<button class="ve-btn ve-btn-xs ve-btn-success"><span class="glyphicon glyphicon-plus"></span> Add Encounter</button>`
+		const btnAddEncounter = veT`<button class="ve-btn ve-btn-xs ve-btn-success"><span class="glyphicon glyphicon-plus"></span> 添加遭遇</button>`
 			.vee.onn("click", evt => ContextUtil.pOpenMenu(evt, menuEncounter));
 
-		const btnAddEncounterAtTime = veT`<button class="ve-btn ve-btn-xs ve-btn-success">At Time...</button>`
+		const btnAddEncounterAtTime = veT`<button class="ve-btn ve-btn-xs ve-btn-success">指定时间...</button>`
 			.vee.onn("click", evt => ContextUtil.pOpenMenu(evt, menuEncounterAtTime));
 
 		const {eleModalInner, doClose} = UiUtil.getShowModal({
@@ -2274,7 +2274,7 @@ class TimeTrackerRoot_Calendar extends TimeTrackerComponent {
 				this._tmpComps.push(comp);
 				comp.render(wrpEvents, this._parent, fnOpenCalendarPicker);
 			});
-			if (!todayEvents.length) wrpEvents.vee.appends(`<div class="ve-flex-vh-center ve-italic">(No events)</div>`);
+			if (!todayEvents.length) wrpEvents.vee.appends(`<div class="ve-flex-vh-center ve-italic">（暂无事件）</div>`);
 			if (this._eventToEdit) {
 				const toEdit = this._tmpComps.find(it => it._state.id === this._eventToEdit);
 				this._eventToEdit = null;
@@ -2305,10 +2305,10 @@ class TimeTrackerRoot_Calendar extends TimeTrackerComponent {
 					})
 					.vee.val(encounter.displayName == null ? encounter.name : encounter.displayName);
 
-				const btnRunEncounter = veT`<button class="ve-btn ve-btn-xs ve-btn-default ve-mr-2 ${encounter.countUses > 0 ? "disabled" : ""}" title="${encounter.countUses > 0 ? "(Encounter has been used)" : "Run Encounter (Add to Initiative Tracker)"}"><span class="glyphicon glyphicon-play"></span></button>`
+				const btnRunEncounter = veT`<button class="ve-btn ve-btn-xs ve-btn-default ve-mr-2 ${encounter.countUses > 0 ? "disabled" : ""}" title="${encounter.countUses > 0 ? "（遭遇已使用）" : "运行遭遇（添加到先攻追踪器）"}"><span class="glyphicon glyphicon-play"></span></button>`
 					.vee.onn("click", () => TimeTrackerRoot_Calendar.pDoRunEncounter(this._parent, encounter));
 
-				const btnResetUse = veT`<button class="ve-btn ve-btn-xs ve-btn-default ve-mr-2 ${encounter.countUses === 0 ? "disabled" : ""}" title="Reset Usage"><span class="glyphicon glyphicon-refresh"></span></button>`
+				const btnResetUse = veT`<button class="ve-btn ve-btn-xs ve-btn-default ve-mr-2 ${encounter.countUses === 0 ? "disabled" : ""}" title="重置使用次数"><span class="glyphicon glyphicon-refresh"></span></button>`
 					.vee.onn("click", () => {
 						if (encounter.countUses === 0) return;
 
@@ -2316,13 +2316,13 @@ class TimeTrackerRoot_Calendar extends TimeTrackerComponent {
 						this._parent.triggerMapUpdate("encounters");
 					});
 
-				const btnSendToFoundry = veT`<button title="Send to Foundry" class="ve-print__hidden ve-btn ve-btn-default ve-btn-xs ve-mr-2"><span class="glyphicon glyphicon-send"></span></button>`
+				const btnSendToFoundry = veT`<button title="发送到 Foundry" class="ve-print__hidden ve-btn ve-btn-default ve-btn-xs ve-mr-2"><span class="glyphicon glyphicon-send"></span></button>`
 					.vee.onn("click", async () => {
-						const encounterActorName = await InputUiUtil.pGetUserString({title: "Encounter Actor Name", isSkippable: true});
+						const encounterActorName = await InputUiUtil.pGetUserString({title: "遭遇角色名称", isSkippable: true});
 
 						const toLoad = await TimeTrackerRoot_Calendar._pGetDereferencedEncounter(encounter);
 
-						if (!toLoad) return JqueryUtil.doToast({content: "Could not find encounter data! Has the encounter been deleted?", type: "warning"});
+						if (!toLoad) return JqueryUtil.doToast({content: "找不到遭遇数据！该遭遇是否已被删除？", type: "warning"});
 
 						const {entityInfos} = await ListUtilBestiary.pGetLoadableSublist({exportedSublist: toLoad.data});
 
@@ -2339,11 +2339,11 @@ class TimeTrackerRoot_Calendar extends TimeTrackerComponent {
 						});
 					});
 
-				const btnSaveToFile = veT`<button class="ve-btn ve-btn-xs ve-btn-default ve-mr-3" title="Download Encounter File"><span class="glyphicon glyphicon-download"></span></button>`
+				const btnSaveToFile = veT`<button class="ve-btn ve-btn-xs ve-btn-default ve-mr-3" title="下载遭遇文件"><span class="glyphicon glyphicon-download"></span></button>`
 					.vee.onn("click", async () => {
 						const toSave = await TimeTrackerRoot_Calendar._pGetDereferencedEncounter(encounter);
 
-						if (!toSave) return JqueryUtil.doToast({content: "Could not find encounter data! Has the encounter been deleted?", type: "warning"});
+						if (!toSave) return JqueryUtil.doToast({content: "找不到遭遇数据！该遭遇是否已被删除？", type: "warning"});
 
 						DataUtil.userDownload("encounter", toSave.data, {fileType: "encounter"});
 					});
@@ -2379,10 +2379,10 @@ class TimeTrackerRoot_Calendar extends TimeTrackerComponent {
 					);
 				}
 
-				const btnMove = veT`<button class="ve-btn ve-btn-xs ve-btn-default ve-mr-2 ve-no-shrink"><span class="glyphicon glyphicon-move" title="Move Encounter"></span></button>`
+				const btnMove = veT`<button class="ve-btn ve-btn-xs ve-btn-default ve-mr-2 ve-no-shrink"><span class="glyphicon glyphicon-move" title="移动遭遇"></span></button>`
 					.vee.onn("click", () => {
 						this._render_openDayModal_openCalendarPicker({
-							title: "Choose Encounter Day",
+							title: "选择遭遇日期",
 							fnClick: (evt, eventYear, eventDay) => {
 								encounter.when = {
 									day: eventDay,
@@ -2394,7 +2394,7 @@ class TimeTrackerRoot_Calendar extends TimeTrackerComponent {
 						});
 					});
 
-				const btnDelete = veT`<button class="ve-btn ve-btn-xs ve-btn-danger" title="Delete Encounter"><span class="glyphicon glyphicon-trash"></span></button>`
+				const btnDelete = veT`<button class="ve-btn ve-btn-xs ve-btn-danger" title="删除遭遇"><span class="glyphicon glyphicon-trash"></span></button>`
 					.vee.onn("click", () => {
 						encounter.isDeleted = true;
 						this._parent.triggerMapUpdate("encounters");
@@ -2407,7 +2407,7 @@ class TimeTrackerRoot_Calendar extends TimeTrackerComponent {
 					${btnSendToFoundry}
 					${btnSaveToFile}
 					<label class="ve-flex-v-center ${timeInputs ? "ve-mr-2" : "ve-mr-3"}">
-						<div class="ve-mr-1 ve-no-wrap">Has Time?</div>
+						<div class="ve-mr-1 ve-no-wrap">有时间？</div>
 						${cbHasTime}
 					</label>
 					${timeInputs ? veT`<div class="ve-flex-v-center ve-mr-3">
@@ -2421,7 +2421,7 @@ class TimeTrackerRoot_Calendar extends TimeTrackerComponent {
 					${btnDelete}
 				</div>`.vee.appendTo(wrpEncounters);
 			});
-			if (!todayEncounters.length) wrpEncounters.vee.appends(`<div class="ve-flex-vh-center ve-italic">(No encounters)</div>`);
+			if (!todayEncounters.length) wrpEncounters.vee.appends(`<div class="ve-flex-vh-center ve-italic">（暂无遭遇）</div>`);
 
 			this._unlock("encounters");
 		};
@@ -2432,13 +2432,13 @@ class TimeTrackerRoot_Calendar extends TimeTrackerComponent {
 			${wrpMoons}
 			${hrMoons}
 			<div class="ve-split ve-flex-v-center ve-mb-1 ve-no-shrink">
-				<div class="ve-underline dm-time__day-entry-header">Events</div>
+				<div class="ve-underline dm-time__day-entry-header">事件</div>
 				<div class="ve-btn-group ve-flex">${btnAddEvent}${btnAddEventAtTime}</div>
 			</div>
 			${wrpEvents}
 			<hr class="ve-hr-2 ve-no-shrink">
 			<div class="ve-split ve-flex-v-center ve-mb-1 ve-no-shrink">
-				<div class="ve-underline dm-time__day-entry-header">Encounters</div>
+				<div class="ve-underline dm-time__day-entry-header">遭遇</div>
 				<div class="ve-btn-group ve-flex">${btnAddEncounter}${btnAddEncounterAtTime}</div>
 			</div>
 			${wrpEncounters}
@@ -2460,7 +2460,7 @@ class TimeTrackerRoot_Calendar extends TimeTrackerComponent {
 		return new Promise(resolve => {
 			class EventTimeModal extends BaseComponent {
 				render (eleParent) {
-					const selMode = ComponentUiUtil.getSelEnum(this, "mode", {values: ["Exact Time", "Time from Now"]}).vee.addClass("ve-mb-2");
+					const selMode = ComponentUiUtil.getSelEnum(this, "mode", {values: ["Exact Time", "Time from Now"], fnDisplay: val => val === "Exact Time" ? "指定时间" : "从现在起"}).vee.addClass("ve-mb-2");
 
 					const iptExHour = ComponentUiUtil.getIptInt(
 						this,
@@ -2537,11 +2537,11 @@ class TimeTrackerRoot_Calendar extends TimeTrackerComponent {
 
 					const wrpOffset = veT`<div class="ve-flex-vh-center">
 						${iptOffsetHour}
-						<div class="ve-mr-2 ve-no-wrap">hours,</div>
+						<div class="ve-mr-2 ve-no-wrap">小时，</div>
 						${iptOffsetMinutes}
-						<div class="ve-mr-2 ve-no-wrap">minutes, and</div>
+						<div class="ve-mr-2 ve-no-wrap">分钟，</div>
 						${iptOffsetSecs}
-						<div class="ve-mr-2 ve-no-wrap">seconds from now</div>
+						<div class="ve-mr-2 ve-no-wrap">秒后</div>
 					</div>`;
 
 					const hookMode = () => {
@@ -2551,7 +2551,7 @@ class TimeTrackerRoot_Calendar extends TimeTrackerComponent {
 					this._addHookBase("mode", hookMode);
 					hookMode();
 
-					const btnOk = veT`<button class="ve-btn ve-btn-default">Enter</button>`
+					const btnOk = veT`<button class="ve-btn ve-btn-default">确定</button>`
 						.vee.onn("click", () => doClose(true));
 
 					veT`<div class="ve-flex-col ve-h-100">
@@ -2580,7 +2580,7 @@ class TimeTrackerRoot_Calendar extends TimeTrackerComponent {
 			const md = new EventTimeModal();
 
 			const {eleModalInner, doClose} = UiUtil.getShowModal({
-				title: "Enter a Time",
+				title: "输入时间",
 				cbClose: (isDataEntered) => {
 					if (!isDataEntered) return resolve(null);
 
@@ -2730,8 +2730,8 @@ class TimeTrackerRoot_Calendar extends TimeTrackerComponent {
 			} else {
 				const ix = await InputUiUtil.pGetUserEnum({
 					default: 0,
-					title: "Choose a Tracker",
-					placeholder: "Select tracker",
+					title: "选择追踪器",
+					placeholder: "选择追踪器",
 				});
 				if (ix != null && ~ix) {
 					panelApp = panelApps[ix];
@@ -2741,17 +2741,17 @@ class TimeTrackerRoot_Calendar extends TimeTrackerComponent {
 			if (panelApp) {
 				const toLoad = await TimeTrackerRoot_Calendar._pGetDereferencedEncounter(encounter);
 
-				if (!toLoad) return JqueryUtil.doToast({content: "Could not find encounter data! Has the encounter been deleted?", type: "warning"});
+				if (!toLoad) return JqueryUtil.doToast({content: "找不到遭遇数据！该遭遇是否已被删除？", type: "warning"});
 
 				const {entityInfos, encounterInfo} = await ListUtilBestiary.pGetLoadableSublist({exportedSublist: toLoad.data});
 
 				try {
 					await panelApp.pDoLoadEncounter({entityInfos, encounterInfo});
 				} catch (e) {
-					JqueryUtil.doToast({type: "error", content: `Failed to add encounter! ${VeCt.STR_SEE_CONSOLE}`});
+					JqueryUtil.doToast({type: "error", content: `添加遭遇失败！${VeCt.STR_SEE_CONSOLE}`});
 					throw e;
 				}
-				JqueryUtil.doToast({type: "success", content: "Encounter added to Initiative Tracker."});
+				JqueryUtil.doToast({type: "success", content: "已将遭遇添加到先攻追踪器。"});
 				encounter.countUses += 1;
 				parent.triggerMapUpdate("encounters");
 			}
@@ -2798,7 +2798,7 @@ class TimeTrackerRoot_Settings extends TimeTrackerComponent {
 
 		const btnHideHooks = [];
 		const getBtnHide = (prop, ele, ...eles) => {
-			const btn = veT`<button class="ve-btn ve-btn-xs ve-btn-default" title="Hide Section"><span class="glyphicon glyphicon-eye-close"></span></button>`
+			const btn = veT`<button class="ve-btn ve-btn-xs ve-btn-default" title="隐藏此部分"><span class="glyphicon glyphicon-eye-close"></span></button>`
 				.vee.onn("click", () => this._parent.set(prop, !this._parent.get(prop)));
 			const hook = () => {
 				const isHidden = this._parent.get(prop);
@@ -2812,7 +2812,7 @@ class TimeTrackerRoot_Settings extends TimeTrackerComponent {
 		};
 
 		const getBtnReset = (...props) => {
-			return veT`<button class="ve-btn ve-btn-xs ve-btn-default ve-mr-2">Reset Section</button>`
+			return veT`<button class="ve-btn ve-btn-xs ve-btn-default ve-mr-2">重置此部分</button>`
 				.vee.onn("click", async () => {
 					if (!await InputUiUtil.pGetUserBoolean({title: "重置", htmlDescription: "你确定吗？", textYes: "是的", textNo: "取消"})) return;
 					props.forEach(prop => this._parent.set(prop, TimeTrackerBase._DEFAULT_STATE[prop]));
@@ -2820,8 +2820,8 @@ class TimeTrackerRoot_Settings extends TimeTrackerComponent {
 		};
 
 		const selWindUnits = veT`<select class="ve-form-control ve-input-xs">
-				<option value="mph">Miles per Hour</option>
-				<option value="kmph">Kilometres per Hour</option>
+				<option value="mph">英里／小时</option>
+				<option value="kmph">千米／小时</option>
 			</select>`
 			.vee.onn("change", () => this._parent.set("unitsWindSpeed", selWindUnits.vee.val()));
 		const hookWindUnits = () => selWindUnits.vee.val(this._parent.get("unitsWindSpeed"));
@@ -2831,82 +2831,82 @@ class TimeTrackerRoot_Settings extends TimeTrackerComponent {
 		const metaDays = this._render_getChildMeta_2({
 			prop: "days",
 			Cls: TimeTrackerRoot_Settings_Day,
-			name: "Day",
+			name: "日",
 			fnGetGeneric: TimeTrackerRoot.getGenericDay,
 		});
 
 		const metaMonths = this._render_getChildMeta_2({
 			prop: "months",
 			Cls: TimeTrackerRoot_Settings_Month,
-			name: "Month",
+			name: "月",
 			fnGetGeneric: TimeTrackerRoot.getGenericMonth,
 		});
 
 		const metaSeasons = this._render_getChildMeta_2({
 			prop: "seasons",
 			Cls: TimeTrackerRoot_Settings_Season,
-			name: "Season",
-			dispEmpty: veT`<div class="ve-flex-vh-center ve-my-1 ve-italic ve-w-100">(No seasons)</div>`,
+			name: "季节",
+			dispEmpty: veT`<div class="ve-flex-vh-center ve-my-1 ve-italic ve-w-100">（暂无季节）</div>`,
 			fnGetGeneric: TimeTrackerRoot.getGenericSeason,
 		});
 
 		const metaYears = this._render_getChildMeta_2({
 			prop: "years",
 			Cls: TimeTrackerRoot_Settings_Year,
-			name: "Year",
-			dispEmpty: veT`<div class="ve-flex-vh-center ve-my-1 ve-italic ve-w-100">(No named years)</div>`,
+			name: "年",
+			dispEmpty: veT`<div class="ve-flex-vh-center ve-my-1 ve-italic ve-w-100">（暂无命名年份）</div>`,
 			fnGetGeneric: TimeTrackerRoot.getGenericYear,
 		});
 
 		const metaEras = this._render_getChildMeta_2({
 			prop: "eras",
 			Cls: TimeTrackerRoot_Settings_Era,
-			name: "Era",
-			dispEmpty: veT`<div class="ve-flex-vh-center ve-my-1 ve-italic ve-w-100">(No eras)</div>`,
+			name: "纪元",
+			dispEmpty: veT`<div class="ve-flex-vh-center ve-my-1 ve-italic ve-w-100">（暂无纪元）</div>`,
 			fnGetGeneric: TimeTrackerRoot.getGenericEra,
 		});
 
 		const metaMoons = this._render_getChildMeta_2({
 			prop: "moons",
 			Cls: TimeTrackerRoot_Settings_Moon,
-			name: "Moon",
-			dispEmpty: veT`<div class="ve-flex-vh-center ve-my-1 ve-italic ve-w-100">(No moons)</div>`,
+			name: "月亮",
+			dispEmpty: veT`<div class="ve-flex-vh-center ve-my-1 ve-italic ve-w-100">（暂无月亮）</div>`,
 			fnGetGeneric: TimeTrackerRoot.getGenericMoon,
 		});
 
 		const sectClock = veT`<div class="ve-no-shrink ve-w-100 ve-mb-2">
-			<div class="ve-split-v-center ve-mb-2"><div class="ve-w-100">Hours per Day</div>${getIptTime("hoursPerDay")}</div>
-			<div class="ve-split-v-center ve-mb-2"><div class="ve-w-100">Minutes per Hour</div>${getIptTime("minutesPerHour")}</div>
-			<div class="ve-split-v-center"><div class="ve-w-100">Seconds per Minute</div>${getIptTime("secondsPerMinute")}</div>
+			<div class="ve-split-v-center ve-mb-2"><div class="ve-w-100">每天小时数</div>${getIptTime("hoursPerDay")}</div>
+			<div class="ve-split-v-center ve-mb-2"><div class="ve-w-100">每小时分钟数</div>${getIptTime("minutesPerHour")}</div>
+			<div class="ve-split-v-center"><div class="ve-w-100">每分钟秒数</div>${getIptTime("secondsPerMinute")}</div>
 		</div>`;
 		const btnResetClock = getBtnReset("hoursPerDay", "minutesPerHour", "secondsPerMinute");
 		const btnHideSectClock = getBtnHide("isClockSectionHidden", sectClock, btnResetClock);
-		const headClock = veT`<div class="ve-split-v-center ve-mb-2"><div class="ve-bold">Clock</div><div>${btnResetClock}${btnHideSectClock}</div></div>`;
+		const headClock = veT`<div class="ve-split-v-center ve-mb-2"><div class="ve-bold">时钟</div><div>${btnResetClock}${btnHideSectClock}</div></div>`;
 
 		const sectCalendar = veT`<div class="ve-no-shrink ve-w-100 ve-mb-2">
-			<label class="ve-split-v-center ve-mb-2"><div class="ve-w-100">Show Calendar Column Labels</div>${ComponentUiUtil.getCbBool(this._parent.component, "hasCalendarLabelsColumns")}</label>
-			<label class="ve-split-v-center ve-mb-2"><div class="ve-w-100">Show Calendar Row Labels</div>${ComponentUiUtil.getCbBool(this._parent.component, "hasCalendarLabelsRows")}</label>
+			<label class="ve-split-v-center ve-mb-2"><div class="ve-w-100">显示日历列标签</div>${ComponentUiUtil.getCbBool(this._parent.component, "hasCalendarLabelsColumns")}</label>
+			<label class="ve-split-v-center ve-mb-2"><div class="ve-w-100">显示日历行标签</div>${ComponentUiUtil.getCbBool(this._parent.component, "hasCalendarLabelsRows")}</label>
 		</div>`;
 		const btnResetCalendar = getBtnReset("hoursPerDay", "minutesPerHour", "secondsPerMinute");
 		const btnHideSectCalendar = getBtnHide("isCalendarSectionHidden", sectCalendar, btnResetCalendar);
-		const headCalendar = veT`<div class="ve-split-v-center ve-mb-2"><div class="ve-bold">Calendar</div><div>${btnResetCalendar}${btnHideSectCalendar}</div></div>`;
+		const headCalendar = veT`<div class="ve-split-v-center ve-mb-2"><div class="ve-bold">日历</div><div>${btnResetCalendar}${btnHideSectCalendar}</div></div>`;
 
 		const sectMechanics = veT`<div class="ve-no-shrink ve-w-100 ve-mb-2">
-			<div class="ve-split-v-center ve-mb-2"><div class="ve-w-100">Hours per Long rest</div>${getIptTime("hoursPerLongRest")}</div>
-			<div class="ve-split-v-center ve-mb-2"><div class="ve-w-100">Minutes per Short Rest</div>${getIptTime("minutesPerShortRest")}</div>
-			<div class="ve-split-v-center"><div class="ve-w-100">Seconds per Round</div>${getIptTime("secondsPerRound")}</div>
+			<div class="ve-split-v-center ve-mb-2"><div class="ve-w-100">每次长休小时数</div>${getIptTime("hoursPerLongRest")}</div>
+			<div class="ve-split-v-center ve-mb-2"><div class="ve-w-100">每次短休分钟数</div>${getIptTime("minutesPerShortRest")}</div>
+			<div class="ve-split-v-center"><div class="ve-w-100">每轮秒数</div>${getIptTime("secondsPerRound")}</div>
 		</div>`;
 		const btnResetMechanics = getBtnReset("hoursPerLongRest", "minutesPerShortRest", "secondsPerRound");
 		const btnHideSectMechanics = getBtnHide("isMechanicsSectionHidden", sectMechanics, btnResetMechanics);
-		const headMechanics = veT`<div class="ve-split-v-center ve-mb-2"><div class="ve-bold">Game Mechanics</div><div>${btnResetMechanics}${btnHideSectMechanics}</div></div>`;
+		const headMechanics = veT`<div class="ve-split-v-center ve-mb-2"><div class="ve-bold">游戏规则</div><div>${btnResetMechanics}${btnHideSectMechanics}</div></div>`;
 
 		const sectOffsets = veT`<div class="ve-no-shrink ve-w-100 ve-mb-2">
-			<div class="ve-split-v-center ve-mb-2"><div class="ve-w-100 ve-help" title="For example, to have the starting year be &quot;Year 900,&quot; enter &quot;899&quot;.">Year Offset</div>${getIptTime("offsetYears", {isAllowNegative: true})}</div>
-			<div class="ve-split-v-center"><div class="ve-w-100 ve-help" title="For example, to have the first year start on the third day of the week, enter &quot;2&quot;.">Year Start Weekday Offset</div>${getIptTime("offsetMonthStartDay")}</div>
+			<div class="ve-split-v-center ve-mb-2"><div class="ve-w-100 ve-help" title="例如，要将起始年份设为“900 年”，请输入“899”。">年份偏移</div>${getIptTime("offsetYears", {isAllowNegative: true})}</div>
+			<div class="ve-split-v-center"><div class="ve-w-100 ve-help" title="例如，要让第一年从一周的第三天开始，请输入“2”。">年初星期偏移</div>${getIptTime("offsetMonthStartDay")}</div>
 		</div>`;
 		const btnResetOffsets = getBtnReset("offsetYears", "offsetMonthStartDay");
 		const btnHideSectOffsetsHide = getBtnHide("isOffsetsSectionHidden", sectOffsets, btnResetOffsets);
-		const headOffsets = veT`<div class="ve-split-v-center ve-mb-2"><div class="ve-bold">Offsets</div><div>${btnResetOffsets}${btnHideSectOffsetsHide}</div></div>`;
+		const headOffsets = veT`<div class="ve-split-v-center ve-mb-2"><div class="ve-bold">偏移量</div><div>${btnResetOffsets}${btnHideSectOffsetsHide}</div></div>`;
 
 		const sectDays = veT`<div class="ve-no-shrink ve-w-100">
 			<div class="ve-split-v-center ve-w-100 ve-mb-1 ve-mt-1">
@@ -2916,69 +2916,69 @@ class TimeTrackerRoot_Settings extends TimeTrackerComponent {
 			${metaDays.wrpRows}
 		</div>`;
 		const btnHideSectDays = getBtnHide("isDaysSectionHidden", sectDays);
-		const headDays = veT`<div class="ve-split-v-center ve-mb-1"><div class="ve-bold">Days</div>${btnHideSectDays}</div>`;
+		const headDays = veT`<div class="ve-split-v-center ve-mb-1"><div class="ve-bold">天</div>${btnHideSectDays}</div>`;
 
 		const sectMonths = veT`<div class="ve-no-shrink ve-w-100">
 			<div class="ve-flex ve-w-100 ve-mb-1 ve-mt-1">
 				<div class="ve-w-100 ve-flex-v-center">名称</div>
-				<div class="ve-w-25 ve-no-shrink ve-text-center ve-mr-2">Days</div>
+				<div class="ve-w-25 ve-no-shrink ve-text-center ve-mr-2">天</div>
 				<div class="dm-time__spc-drag-header ve-no-shrink ve-mr-2"></div>
 				${metaMonths.btnAdd.vee.addClass("ve-no-shrink")}
 			</div>
 			${metaMonths.wrpRows}
 		</div>`;
 		const btnHideSectMonths = getBtnHide("isMonthsSectionHidden", sectMonths);
-		const headMonths = veT`<div class="ve-split-v-center ve-mb-1"><div class="ve-bold">Months</div>${btnHideSectMonths}</div>`;
+		const headMonths = veT`<div class="ve-split-v-center ve-mb-1"><div class="ve-bold">月</div>${btnHideSectMonths}</div>`;
 
 		const sectSeasons = veT`<div class="ve-no-shrink ve-w-100">
 			<div class="ve-flex ve-w-100 ve-mb-1 ve-mt-1">
 				<div class="ve-w-100 ve-flex-v-center">名称</div>
-				<div class="ve-w-15 ve-no-shrink ve-text-center ve-mr-2 ve-help-subtle" title="In hours. For example, to have the sun rise at 05:00, enter &quot;5&quot;.">Sunrise</div>
-				<div class="ve-w-15 ve-no-shrink ve-text-center ve-mr-2 ve-help-subtle" title="In hours. For example, to have the sun set at 22:00, enter &quot;22&quot;.">Sunset</div>
-				<div class="ve-w-15 ve-no-shrink ve-text-center ve-mr-2 ve-help-subtle" title="For example, to have a season start on the 1st day of the year, enter &quot;1&quot;.">Start</div>
-				<div class="ve-w-15 ve-no-shrink ve-text-center ve-mr-2 ve-help-subtle" title="For example, to have a season end on the 90th day of the year, enter &quot;90&quot;.">End</div>
+				<div class="ve-w-15 ve-no-shrink ve-text-center ve-mr-2 ve-help-subtle" title="单位为小时。例如，要让太阳在 05:00 升起，请输入“5”。">日出</div>
+				<div class="ve-w-15 ve-no-shrink ve-text-center ve-mr-2 ve-help-subtle" title="单位为小时。例如，要让太阳在 22:00 落下，请输入“22”。">日落</div>
+				<div class="ve-w-15 ve-no-shrink ve-text-center ve-mr-2 ve-help-subtle" title="例如，要让季节从一年的第 1 天开始，请输入“1”。">开始</div>
+				<div class="ve-w-15 ve-no-shrink ve-text-center ve-mr-2 ve-help-subtle" title="例如，要让季节在一年的第 90 天结束，请输入“90”。">结束</div>
 				${metaSeasons.btnAdd.vee.addClass("ve-no-shrink")}
 			</div>
 			${metaSeasons.wrpRows}
 		</div>`;
 		const btnHideSectSeasons = getBtnHide("isSeasonsSectionHidden", sectSeasons);
-		const headSeasons = veT`<div class="ve-split-v-center ve-mb-1"><div class="ve-bold">Seasons</div>${btnHideSectSeasons}</div>`;
+		const headSeasons = veT`<div class="ve-split-v-center ve-mb-1"><div class="ve-bold">季节</div>${btnHideSectSeasons}</div>`;
 
 		const sectYears = veT`<div class="ve-no-shrink ve-w-100">
 			<div class="ve-flex ve-w-100 ve-mb-1 ve-mt-1">
 				<div class="ve-w-100 ve-flex-v-center">名称</div>
-				<div class="ve-w-25 ve-no-shrink ve-text-center ve-mr-2">Year</div>
+				<div class="ve-w-25 ve-no-shrink ve-text-center ve-mr-2">年</div>
 				${metaYears.btnAdd.vee.addClass("ve-no-shrink")}
 			</div>
 			${metaYears.wrpRows}
 		</div>`;
 		const btnHideSectYears = getBtnHide("isYearsSectionHidden", sectYears);
-		const headYears = veT`<div class="ve-split-v-center ve-mb-1"><div class="ve-bold">Named Years</div>${btnHideSectYears}</div>`;
+		const headYears = veT`<div class="ve-split-v-center ve-mb-1"><div class="ve-bold">命名年份</div>${btnHideSectYears}</div>`;
 
 		const sectEras = veT`<div class="ve-no-shrink ve-w-100">
 			<div class="ve-flex ve-w-100 ve-mb-1 ve-mt-1">
 				<div class="ve-w-100 ve-flex-v-center">名称</div>
-				<div class="ve-w-15 ve-no-shrink ve-text-center ve-mr-2">Abbv.</div>
-				<div class="ve-w-15 ve-no-shrink ve-text-center ve-mr-2">Start</div>
-				<div class="ve-w-15 ve-no-shrink ve-text-center ve-mr-2">End</div>
+				<div class="ve-w-15 ve-no-shrink ve-text-center ve-mr-2">缩写</div>
+				<div class="ve-w-15 ve-no-shrink ve-text-center ve-mr-2">开始</div>
+				<div class="ve-w-15 ve-no-shrink ve-text-center ve-mr-2">结束</div>
 				${metaEras.btnAdd.vee.addClass("ve-no-shrink")}
 			</div>
 			${metaEras.wrpRows}
 		</div>`;
 		const btnHideSectEras = getBtnHide("isErasSectionHidden", sectEras);
-		const headEras = veT`<div class="ve-split-v-center ve-mb-1"><div class="ve-bold">Eras</div>${btnHideSectEras}</div>`;
+		const headEras = veT`<div class="ve-split-v-center ve-mb-1"><div class="ve-bold">纪元</div>${btnHideSectEras}</div>`;
 
 		const sectMoons = veT`<div class="ve-no-shrink ve-w-100">
 			<div class="ve-flex ve-w-100 ve-mb-1 ve-mt-1">
-				<div class="ve-w-100 ve-flex-v-center">Moon</div>
-				<div class="ve-w-25 ve-no-shrink ve-text-center ve-mr-2 ve-help-subtle" title="For example, to have a new moon appear on the third day of the first year, enter &quot;3&quot;.">Offset</div>
-				<div class="ve-w-25 ve-no-shrink ve-text-center ve-mr-2 ve-help-subtle" title="Measured in days. Multiples of eight are recommended, as there are eight distinct moon phases.">Period</div>
+				<div class="ve-w-100 ve-flex-v-center">月亮</div>
+				<div class="ve-w-25 ve-no-shrink ve-text-center ve-mr-2 ve-help-subtle" title="例如，要让新月出现在第一年的第 3 天，请输入“3”。">偏移量</div>
+				<div class="ve-w-25 ve-no-shrink ve-text-center ve-mr-2 ve-help-subtle" title="单位为天。月相有八种，建议使用 8 的倍数。">周期</div>
 				${metaMoons.btnAdd.vee.addClass("ve-no-shrink")}
 			</div>
 			${metaMoons.wrpRows}
 		</div>`;
 		const btnHideSectMoons = getBtnHide("isMoonsSectionHidden", sectMoons);
-		const headMoons = veT`<div class="ve-split-v-center ve-mb-1"><div class="ve-bold">Moons</div>${btnHideSectMoons}</div>`;
+		const headMoons = veT`<div class="ve-split-v-center ve-mb-1"><div class="ve-bold">月亮</div>${btnHideSectMoons}</div>`;
 
 		btnHideHooks.forEach(fn => fn());
 
@@ -2995,7 +2995,7 @@ class TimeTrackerRoot_Settings extends TimeTrackerComponent {
 			${headOffsets}
 			${sectOffsets}
 			<hr class="ve-hr-0 ve-mb-2">
-			<div class="ve-split-v-center"><div class="ve-w-100">Wind Speed Units</div>${selWindUnits}</div>
+			<div class="ve-split-v-center"><div class="ve-w-100">风速单位</div>${selWindUnits}</div>
 			<hr class="ve-hr-2">
 			${headDays}
 			${sectDays}
@@ -3066,7 +3066,7 @@ class TimeTrackerRoot_Settings extends TimeTrackerComponent {
 	}
 
 	_render_getBtnAddChild ({prop, name, fnGetGeneric}) {
-		return veT`<button class="ve-btn ve-btn-xs ve-btn-primary" title="Add ${name}"><span class="glyphicon glyphicon-plus"></span></button>`
+		return veT`<button class="ve-btn ve-btn-xs ve-btn-primary" title="添加${name}"><span class="glyphicon glyphicon-plus"></span></button>`
 			.vee.onn("click", () => {
 				const nxt = fnGetGeneric(this._parent.get(prop).length);
 				this._parent.set(prop, [...this._parent.get(prop), nxt]);
@@ -3094,7 +3094,7 @@ class TimeTrackerRoot_Settings_Day extends RenderableCollectionTimeTracker {
 
 		const padDrag = DragReorderUiUtil.getDragPadOpts(() => wrpRow, this._dragMeta);
 
-		const btnRemove = veT`<button class="ve-btn ve-btn-xs ve-btn-danger ve-no-shrink" title="Delete Day"><span class="glyphicon glyphicon-trash"></span></button>`
+		const btnRemove = veT`<button class="ve-btn ve-btn-xs ve-btn-danger ve-no-shrink" title="删除这一天"><span class="glyphicon glyphicon-trash"></span></button>`
 			.vee.onn("click", () => this._comp._state.days = this._comp._state.days.filter(it => it !== entity));
 
 		const wrpRow = veT`<div class="ve-flex ve-py-1 dm-time__row-delete">
@@ -3129,7 +3129,7 @@ class TimeTrackerRoot_Settings_Month extends RenderableCollectionTimeTracker {
 
 		const padDrag = DragReorderUiUtil.getDragPadOpts(() => wrpRow, this._dragMeta);
 
-		const btnRemove = veT`<button class="ve-btn ve-btn-xs ve-btn-danger ve-no-shrink" title="Delete Month"><span class="glyphicon glyphicon-trash"></span></button>`
+		const btnRemove = veT`<button class="ve-btn ve-btn-xs ve-btn-danger ve-no-shrink" title="删除月份"><span class="glyphicon glyphicon-trash"></span></button>`
 			.vee.onn("click", () => this._comp._state.months = this._comp._state.months.filter(it => it !== entity));
 
 		const wrpRow = veT`<div class="ve-flex ve-py-1 dm-time__row-delete">
@@ -3174,8 +3174,8 @@ class TimeTrackerRoot_Settings_Event extends TimeTrackerComponent {
 		</div>`;
 
 		const iptName = veT`<input class="ve-form-control ve-input-xs form-control--minimal ve-mr-2 ve-w-100">`
-			.vee.onn("change", () => this._state.name = iptName.vee.val().trim() || "(Unnamed event)");
-		const hookName = () => iptName.vee.val(this._state.name || "(Unnamed event)");
+			.vee.onn("change", () => this._state.name = iptName.vee.val().trim() || "（未命名事件）");
+		const hookName = () => iptName.vee.val(this._state.name || "（未命名事件）");
 		this._addHookBase("name", hookName);
 
 		const btnShowHide = veT`<button class="ve-btn ve-btn-xs ve-btn-default ve-mr-2 ve-no-shrink"><span class="glyphicon glyphicon-eye-close"></span></button>`
@@ -3186,7 +3186,7 @@ class TimeTrackerRoot_Settings_Event extends TimeTrackerComponent {
 		};
 		this._addHookBase("isHidden", hookShowHide);
 
-		const btnEdit = veT`<button class="ve-btn ve-btn-xs ve-btn-default ve-mr-2 ve-no-shrink"><span class="glyphicon glyphicon-pencil" title="Edit Event"></span></button>`
+		const btnEdit = veT`<button class="ve-btn ve-btn-xs ve-btn-default ve-mr-2 ve-no-shrink"><span class="glyphicon glyphicon-pencil" title="编辑事件"></span></button>`
 			.vee.onn("click", () => this.doOpenEditModal());
 
 		const cbHasTime = veT`<input type="checkbox">`
@@ -3219,10 +3219,10 @@ class TimeTrackerRoot_Settings_Event extends TimeTrackerComponent {
 			);
 		}
 
-		const btnMove = veT`<button class="ve-btn ve-btn-xs ve-btn-default ve-mr-2 ve-no-shrink"><span class="glyphicon glyphicon-move" title="Move Event"></span></button>`
+		const btnMove = veT`<button class="ve-btn ve-btn-xs ve-btn-default ve-mr-2 ve-no-shrink"><span class="glyphicon glyphicon-move" title="移动事件"></span></button>`
 			.vee.onn("click", () => {
 				fnOpenCalendarPicker({
-					title: "Choose Event Day",
+					title: "选择事件日期",
 					fnClick: (evt, eventYear, eventDay) => {
 						this._state.when = {
 							day: eventDay,
@@ -3233,7 +3233,7 @@ class TimeTrackerRoot_Settings_Event extends TimeTrackerComponent {
 				});
 			});
 
-		const btnRemove = veT`<button class="ve-btn ve-btn-xs ve-btn-danger ve-no-shrink" title="Delete Event"><span class="glyphicon glyphicon-trash"></span></button>`
+		const btnRemove = veT`<button class="ve-btn ve-btn-xs ve-btn-danger ve-no-shrink" title="删除事件"><span class="glyphicon glyphicon-trash"></span></button>`
 			.vee.onn("click", () => this._state.isDeleted = true);
 
 		hookEntries();
@@ -3246,7 +3246,7 @@ class TimeTrackerRoot_Settings_Event extends TimeTrackerComponent {
 				${btnShowHide}
 				${btnEdit}
 				<label class="ve-flex-v-center ${timeInputs ? "ve-mr-2" : "ve-mr-3"}">
-					<div class="ve-mr-1 ve-no-wrap">Has Time?</div>
+					<div class="ve-mr-1 ve-no-wrap">有时间？</div>
 					${cbHasTime}
 				</label>
 				${timeInputs ? veT`<div class="ve-flex-v-center ve-mr-3">
@@ -3270,7 +3270,7 @@ class TimeTrackerRoot_Settings_Event extends TimeTrackerComponent {
 		fauxComponent._state.entries = MiscUtil.copy(this._state.entries);
 
 		const {eleModalInner, doClose} = UiUtil.getShowModal({
-			title: "Edit Event",
+			title: "编辑事件",
 			overlayColor: overlayColor,
 			cbClose: (isDataEntered) => {
 				if (!isDataEntered) return;
@@ -3329,7 +3329,7 @@ class TimeTrackerRoot_Settings_Season extends RenderableCollectionTimeTracker {
 		const iptDaysStart = getIptDays("startDay");
 		const iptDaysEnd = getIptDays("endDay");
 
-		const btnRemove = veT`<button class="ve-btn ve-btn-xs ve-btn-danger ve-no-shrink" title="Delete Season"><span class="glyphicon glyphicon-trash"></span></button>`
+		const btnRemove = veT`<button class="ve-btn ve-btn-xs ve-btn-danger ve-no-shrink" title="删除季节"><span class="glyphicon glyphicon-trash"></span></button>`
 			.vee.onn("click", () => this._comp._state.seasons = this._comp._state.seasons.filter(it => it !== entity));
 
 		const wrpRow = veT`<div class="ve-flex ve-my-1">
@@ -3365,7 +3365,7 @@ class TimeTrackerRoot_Settings_Year extends RenderableCollectionTimeTracker {
 
 		const iptYear = ComponentUiUtil.getIptInt(comp, "year", 1, {ele: veT`<input class="ve-form-control ve-input-xs form-control--minimal ve-text-right ve-mr-2 ve-w-25 ve-no-shrink">`, offset: 1, min: 1});
 
-		const btnRemove = veT`<button class="ve-btn ve-btn-xs ve-btn-danger ve-no-shrink" title="Delete Year"><span class="glyphicon glyphicon-trash"></span></button>`
+		const btnRemove = veT`<button class="ve-btn ve-btn-xs ve-btn-danger ve-no-shrink" title="删除年份"><span class="glyphicon glyphicon-trash"></span></button>`
 			.vee.onn("click", () => this._comp._state.years = this._comp._state.years.filter(it => it !== entity));
 
 		const wrpRow = veT`<div class="ve-flex ve-my-1">
@@ -3401,7 +3401,7 @@ class TimeTrackerRoot_Settings_Era extends RenderableCollectionTimeTracker {
 		const iptYearsStart = getIptYears("startYear");
 		const iptYearsEnd = getIptYears("endYear");
 
-		const btnRemove = veT`<button class="ve-btn ve-btn-xs ve-btn-danger ve-no-shrink" title="Delete Year"><span class="glyphicon glyphicon-trash"></span></button>`
+		const btnRemove = veT`<button class="ve-btn ve-btn-xs ve-btn-danger ve-no-shrink" title="删除年份"><span class="glyphicon glyphicon-trash"></span></button>`
 			.vee.onn("click", () => this._comp._state.eras = this._comp._state.eras.filter(it => it !== entity));
 
 		const wrpRow = veT`<div class="ve-flex ve-my-1">
@@ -3433,11 +3433,11 @@ class TimeTrackerRoot_Settings_Moon extends RenderableCollectionTimeTracker {
 		});
 
 		const iptName = ComponentUiUtil.getIptStr(comp, "name", {ele: veT`<input class="ve-form-control ve-input-xs form-control--minimal ve-mr-2">`});
-		const iptColor = ComponentUiUtil.getIptColor(comp, "color", {ele: veT`<input class="ve-form-control ve-input-xs form-control--minimal ve-mr-2 ve-no-shrink dm-time__ipt-color-moon" type="color" title="Moon Color">`});
+		const iptColor = ComponentUiUtil.getIptColor(comp, "color", {ele: veT`<input class="ve-form-control ve-input-xs form-control--minimal ve-mr-2 ve-no-shrink dm-time__ipt-color-moon" type="color" title="月亮颜色">`});
 		const iptPhaseOffset = ComponentUiUtil.getIptInt(comp, "phaseOffset", 0, {ele: veT`<input class="ve-form-control ve-input-xs form-control--minimal ve-text-right ve-mr-2 ve-w-25 ve-no-shrink">`});
 		const iptPeriod = ComponentUiUtil.getIptInt(comp, "period", 1, {ele: veT`<input class="ve-form-control ve-input-xs form-control--minimal ve-text-right ve-mr-2 ve-w-25 ve-no-shrink">`, min: TimeTrackerBase._MIN_TIME, max: TimeTrackerBase._MAX_TIME});
 
-		const btnRemove = veT`<button class="ve-btn ve-btn-xs ve-btn-danger ve-no-shrink" title="Delete Moon"><span class="glyphicon glyphicon-trash"></span></button>`
+		const btnRemove = veT`<button class="ve-btn ve-btn-xs ve-btn-danger ve-no-shrink" title="删除月亮"><span class="glyphicon glyphicon-trash"></span></button>`
 			.vee.onn("click", () => this._comp._state.moons = this._comp._state.moons.filter(it => it !== entity));
 
 		const wrpRow = veT`<div class="ve-flex ve-my-1">

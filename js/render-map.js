@@ -37,7 +37,7 @@ export class RenderMap {
 			// Open in the top-right corner of the screen
 			Renderer.hover.getWindowPositionExact(document.body.clientWidth, 7, evt),
 			{
-				title: `Dynamic Map Viewer`,
+				title: `交互地图查看器`,
 				isPermanent: true,
 				isBookContent: true,
 				width: Math.min(Math.floor(document.body.clientWidth / 2), mapData.width),
@@ -119,7 +119,7 @@ export class RenderMap {
 		try {
 			out = await pLoad;
 		} catch (e) {
-			JqueryUtil.doToast({type: "danger", content: `Failed to load image! ${VeCt.STR_SEE_CONSOLE}`});
+			JqueryUtil.doToast({type: "danger", content: `图片加载失败！ ${VeCt.STR_SEE_CONSOLE}`});
 			setTimeout(() => { throw e; });
 		}
 		return out;
@@ -467,33 +467,33 @@ export class RenderMap {
 					.vee.onn(`contextmenu`, onContextMenuBody);
 			});
 
-		const btnZoomMinus = veT`<button class="ve-btn ve-btn-xs ve-btn-default"><span class="glyphicon glyphicon-zoom-out"></span> Zoom Out</button>`
+		const btnZoomMinus = veT`<button class="ve-btn ve-btn-xs ve-btn-default"><span class="glyphicon glyphicon-zoom-out"></span> 缩小</button>`
 			.vee.onn("click", () => zoomChange("out"));
 
-		const btnZoomPlus = veT`<button class="ve-btn ve-btn-xs ve-btn-default"><span class="glyphicon glyphicon-zoom-in"></span> Zoom In</button>`
+		const btnZoomPlus = veT`<button class="ve-btn ve-btn-xs ve-btn-default"><span class="glyphicon glyphicon-zoom-in"></span> 放大</button>`
 			.vee.onn("click", () => zoomChange("in"));
 
-		const btnZoomReset = veT`<button class="ve-btn ve-btn-xs ve-btn-default ve-mr-2"><span class="glyphicon glyphicon-search"></span> Reset Zoom</button>`
+		const btnZoomReset = veT`<button class="ve-btn ve-btn-xs ve-btn-default ve-mr-2"><span class="glyphicon glyphicon-search"></span> 重置缩放</button>`
 			.vee.onn("click", () => zoomChange("fill"));
 
-		const btnZoomFit = veT`<button class="ve-btn ve-btn-xs ve-btn-default"><span class="glyphicon glyphicon-search"></span> Zoom to Fit</button>`
+		const btnZoomFit = veT`<button class="ve-btn ve-btn-xs ve-btn-default"><span class="glyphicon glyphicon-search"></span> 适应窗口</button>`
 			.vee.onn("click", () => zoomChange("fit"));
 
-		const btnHelp = veT`<button class="ve-btn ve-btn-xs ve-btn-default ve-ml-auto ve-mr-4" title="Help"><span class="glyphicon glyphicon-info-sign"></span> Help</button>`
+		const btnHelp = veT`<button class="ve-btn ve-btn-xs ve-btn-default ve-ml-auto ve-mr-4" title="帮助"><span class="glyphicon glyphicon-info-sign"></span> 帮助</button>`
 			.vee.onn("click", evt => {
 				const {eleModalInner} = UiUtil.getShowModal({
-					title: "Help",
+					title: "帮助",
 					isMinHeight0: true,
 					window: evt.view?.window,
 				});
 
 				eleModalInner.vee.appends(`
-					<p><i>Use of the &quot;Open as Popup Window&quot; button in the window title bar is recommended.</i></p>
+					<p><i>建议使用窗口标题栏中的“作为弹窗打开”按钮。</i></p>
 					<ul>
-						<li>Left-click to open an area as a new window.</li>
-						<li><kbd>SHIFT</kbd>-left-click to jump to an area.</li>
-						<li>Right-click and drag to pan.</li>
-						<li><kbd>CTRL</kbd>-scroll to zoom.</li>
+						<li>左键点击可在新窗口中打开区域。</li>
+						<li><kbd>SHIFT</kbd> 并左键点击可跳转到区域。</li>
+						<li>按住鼠标右键拖动可平移。</li>
+						<li><kbd>CTRL</kbd> 并滚动鼠标滚轮可缩放。</li>
 					</ul>
 				`);
 			});

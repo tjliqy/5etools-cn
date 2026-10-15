@@ -158,7 +158,7 @@ export class ScaleClassSummonedCreature extends ScaleSummonedCreature {
 					const hdFormula = `${toClassLevel}d${hdSides}`;
 					if (!ptYourAbilMod) return hdFormula;
 
-					return `${intro} {@dice ${hdFormula}} Hit Dice`;
+					return `${intro} {@dice ${hdFormula}} 生命骰`;
 				})
 				// "(number of d8 Hit Dice equal to their caregiver's level)"
 				.replace(/number of d(?<hdSides>\d+)s? hit dice equal to (?:your (?:(?<className>[^(]*) )?|their caregiver's |their )level/i, (...m) => {
@@ -167,7 +167,7 @@ export class ScaleClassSummonedCreature extends ScaleSummonedCreature {
 					const hdFormula = `${toClassLevel}d${hdSides}`;
 					if (!ptYourAbilMod) return hdFormula;
 
-					return `{@dice ${hdFormula}} Hit Dice`;
+					return `{@dice ${hdFormula}} 生命骰`;
 				})
 			;
 		}

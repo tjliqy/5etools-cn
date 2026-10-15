@@ -2,13 +2,13 @@
 
 class PageFilterBackgrounds extends PageFilterBase {
 	static _TRAIT_DISPLAY_VALUES = {
-		"Armor Proficiency": "Armor Training",
+		"Armor Proficiency": "护甲训练",
 	};
 
 	constructor () {
 		super();
 
-		this._asiFilter = new AbilityScoreFilter({header: "Ability Scores"});
+		this._asiFilter = new AbilityScoreFilter({header: "Ability Scores", cnHeader: "属性值"});
 		this._skillFilter = FilterCommon.getSkillProficienciesFilter();
 		this._prereqFilter = new Filter({
 			header: "Prerequisite",
@@ -55,8 +55,8 @@ class PageFilterBackgrounds extends PageFilterBase {
 					.filter(([, v]) => v)
 					.map(([k, v]) => {
 						switch (k) {
-							case "any": return "(Any)";
-							case "anyFromCategory": return `(Any From Category)`;
+							case "any": return "（任意）";
+							case "anyFromCategory": return `（从类别中任选）`;
 							default: return I18nUtil.get(`page.backgrounds.${k.split("|")[0]}`, (k) => k.split(".").at(-1).replace("_", " ").toTitleCase());
 						}
 					});
@@ -161,7 +161,7 @@ class ModalFilterBackgrounds extends ModalFilterBase {
 		opts = opts || {};
 		super({
 			...opts,
-			modalTitle: `Background${opts.isRadio ? "" : "s"}`,
+			modalTitle: `背景`,
 			pageFilter: new PageFilterBackgrounds(),
 			previewButtonHandler: new ListUiPreviewButtonHandlerStatsFluff({page: UrlUtil.PG_BACKGROUNDS}),
 		});
@@ -171,8 +171,8 @@ class ModalFilterBackgrounds extends ModalFilterBase {
 		const btnMeta = [
 			{sort: "name", text: "名称", width: "3"},
 			{sort: "ability", text: "属性值", width: "4"},
-			{sort: "skills", text: "Skills", width: "4"},
-			{sort: "source", text: "Source", width: "1"},
+			{sort: "skills", text: "技能", width: "4"},
+			{sort: "source", text: "来源", width: "1"},
 		];
 		return ModalFilterBase._getFilterColumnHeaders(btnMeta);
 	}
@@ -196,7 +196,7 @@ class ModalFilterBackgrounds extends ModalFilterBase {
 			<div class="ve-col-0-5 ve-pl-0 ve-flex-vh-center">${this._isRadio ? `<input type="radio" name="radio" class="ve-no-events">` : `<input type="checkbox" class="ve-no-events">`}</div>
 
 			<div class="ve-col-0-5 ve-px-1 ve-flex-vh-center">
-				<div class="ve-ui-list__btn-inline ve-px-2 ve-no-select" title="Toggle Preview (SHIFT to Toggle Info Preview)">[+]</div>
+				<div class="ve-ui-list__btn-inline ve-px-2 ve-no-select" title="切换预览（按 Shift 切换信息预览）">[+]</div>
 			</div>
 
 			<div class="ve-col-3 ve-px-1 ${bg._versionBase_isVersion ? "ve-italic" : ""} ${this._getNameStyle()}">${bg._versionBase_isVersion ? `<span class="ve-px-3"></span>` : ""}${bg.name}</div>

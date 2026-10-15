@@ -80,7 +80,7 @@ export class LootGenGeneratorLootTables extends LootGenGeneratorBase {
 
 		veT`<div class="ve-flex-col ve-py-2 ve-px-3">
 			<label class="ve-split-v-center ve-mb-3">
-				<div class="ve-mr-2 ve-w-66 ve-no-shrink">Table</div>
+				<div class="ve-mr-2 ve-w-66 ve-no-shrink">表格</div>
 				${selTable}
 			</label>
 
@@ -100,8 +100,8 @@ export class LootGenGeneratorLootTables extends LootGenGeneratorBase {
 		const tblMeta = this._lt_tableMetas[ix];
 		if (!tblMeta) return "\u2014";
 
-		if (tblMeta.tier && tblMeta.rarity) return `Tier: ${this._lt_tableMetas[ix].tier}; Rarity: ${this._lt_tableMetas[ix].rarity}`;
-		if (tblMeta.theme && tblMeta.rarity) return `Theme: ${this._lt_tableMetas[ix].theme}; Rarity: ${this._lt_tableMetas[ix].rarity}`;
+		if (tblMeta.tier && tblMeta.rarity) return `层级：${tblMeta.tier}；稀有度：${Parser.rarityToCN(tblMeta.rarity)}`;
+		if (tblMeta.theme && tblMeta.rarity) return `主题：${tblMeta.theme}；稀有度：${Parser.rarityToCN(tblMeta.rarity)}`;
 
 		return tblMeta.tableEntry.caption;
 	}
@@ -117,10 +117,10 @@ export class LootGenGeneratorLootTables extends LootGenGeneratorBase {
 
 	async _lt_pDoHandleClickRollLoot ({isTest = false} = {}) {
 		const tableMeta = this._lt_tableMetas[this._state.lt_ixTable];
-		if (!tableMeta) return JqueryUtil.doToast({type: "warning", content: `Please select a table first!`});
+		if (!tableMeta) return JqueryUtil.doToast({type: "warning", content: `请先选择表格！`});
 
 		const lootOutput = new this._ClsLootGenOutput({
-			type: `Treasure Table Roll: ${this._lt_pDoHandleClickRollLoot_getTypePart({tableMeta})}`,
+			type: `战利品表掷骰：${this._lt_pDoHandleClickRollLoot_getTypePart({tableMeta})}`,
 			name: this._lt_pDoHandleClickRollLoot_getNamePart({tableMeta}),
 			magicItemsByTable: await this._lt_pDoHandleClickRollLoot_pGetMagicItemMetas({tableMeta, isTest}),
 			rendererWrapped: this._rendererWrapped,
@@ -139,9 +139,9 @@ export class LootGenGeneratorLootTables extends LootGenGeneratorBase {
 
 	_lt_pDoHandleClickRollLoot_getNamePart ({tableMeta}) {
 		switch (tableMeta.metaType) {
-			case LOOT_TABLES_TYPE__DMG_MAGIC_ITEMS: return `Rolled against {@b {@table ${tableMeta.tableEntry.caption}|${Parser.SRC_DMG}}}`;
-			case LOOT_TABLES_TYPE__XGE_FAUX: return `Rolled on the table for {@b ${tableMeta.tier} ${tableMeta.rarity}} items`;
-			case LOOT_TABLES_TYPE__XDMG_THEMES: return `Rolled on the table for {@b ${tableMeta.rarity} ${tableMeta.theme}}`;
+			case LOOT_TABLES_TYPE__DMG_MAGIC_ITEMS: return `在{@b {@table ${tableMeta.tableEntry.caption}|${Parser.SRC_DMG}}}上掷骰`;
+			case LOOT_TABLES_TYPE__XGE_FAUX: return `在{@b ${tableMeta.tier}${Parser.rarityToCN(tableMeta.rarity)}物品}表上掷骰`;
+			case LOOT_TABLES_TYPE__XDMG_THEMES: return `在{@b ${Parser.rarityToCN(tableMeta.rarity)}${tableMeta.theme}}表上掷骰`;
 			default: throw new Error(`Unhandled table meta-type "${tableMeta.metaType}"`);
 		}
 	}

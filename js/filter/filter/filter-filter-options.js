@@ -313,7 +313,7 @@ export class OptionsFilter extends FilterBase {
 			const cntNonDefault = Object.entries(this._defaultState).filter(([k, v]) => this._state[k] != null && this._state[k] !== v).length;
 
 			wrpSummary
-				.vee.tooltip(`${cntNonDefault} non-default option${cntNonDefault === 1 ? "" : "s"} selected`)
+				.vee.tooltip(`已选择 ${cntNonDefault} 个非默认选项`)
 				.vee.txt(cntNonDefault);
 		};
 		this._addHook("uiMeta", "isHidden", hkIsHidden);

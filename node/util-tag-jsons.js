@@ -24,7 +24,7 @@ function run (args) {
 		files = ut.listFiles({dir: args.dir || `./data`, blocklistFilePrefixes: TagJsons._BLOCKLIST_FILE_PREFIXES});
 		if (args.filePrefix) {
 			files = files.filter(f => f.startsWith(args.filePrefix));
-			if (!files.length) throw new Error(`No file with prefix "${args.filePrefix}" found!`);
+			if (!files.length) throw new Error(`未找到前缀为“${args.filePrefix}”的文件！`);
 		}
 	}
 
@@ -33,7 +33,7 @@ function run (args) {
 	const creatureList = getTaggableCreatureList(args.bestiaryFile);
 
 	files.forEach(file => {
-		console.log(`Tagging file "${file}"`);
+		console.log(`正在标记文件“${file}”`);
 		const json = ut.readJson(file);
 
 		if (json instanceof Array) return;

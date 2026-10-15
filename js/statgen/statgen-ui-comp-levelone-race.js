@@ -2,7 +2,7 @@ import {StatGenUiRenderLevelOneEntityBase} from "./statgen-ui-comp-levelone-enti
 
 export class StatGenUiRenderLevelOneRace extends StatGenUiRenderLevelOneEntityBase {
 	_title = I18nUtil.get("common.species");
-	_titleShort = "Species";
+	_titleShort = "种族";
 	_propIxEntity = "common_ixRace";
 	_propIxAbilityScoreSet = "common_ixAbilityScoreSetRace";
 	_propData = "_races";
@@ -60,7 +60,7 @@ export class StatGenUiRenderLevelOneRace extends StatGenUiRenderLevelOneEntityBa
 			this._parent,
 			"common_isShowTashasRules",
 			{
-				html: `<button class="ve-btn ve-btn-xxs ve-btn-default ve-small ve-p-0 ve-statgen-shared__btn-toggle-tashas-rules ve-flex-vh-center" title="Toggle &quot;Customizing Your Origin&quot; Section"><span class="glyphicon glyphicon-eye-open"></span></button>`,
+				html: `<button class="ve-btn ve-btn-xxs ve-btn-default ve-small ve-p-0 ve-statgen-shared__btn-toggle-tashas-rules ve-flex-vh-center" title="切换“自定义出身”部分"><span class="glyphicon glyphicon-eye-open"></span></button>`,
 			},
 		);
 
@@ -71,9 +71,9 @@ export class StatGenUiRenderLevelOneRace extends StatGenUiRenderLevelOneEntityBa
 			</label>
 
 			<div class="ve-flex">
-				<div class="ve-small ve-muted ve-italic ve-mr-1">${Renderer.get().render(`An {@variantrule Customizing Your Origin|TCE|optional rule}`)}</div>
+				<div class="ve-small ve-muted ve-italic ve-mr-1">${Renderer.get().render(`一项{@variantrule Customizing Your Origin|TCE|可选规则}`)}</div>
 				${btnToggleTashasPin}
-				<div class="ve-small ve-muted ve-italic ve-ml-1">${Renderer.get().render(`from Tasha's Cauldron of Everything, page 8.`)}</div>
+				<div class="ve-small ve-muted ve-italic ve-ml-1">${Renderer.get().render(`出自《塔莎的万事坩埚》第 8 页。`)}</div>
 			</div>
 		</div>`;
 		this._parent._addHookBase("common_isAllowTashasRules", () => {

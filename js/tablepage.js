@@ -2,7 +2,7 @@ class TablePageSublistManager extends SublistManager {
 	static _getRowTemplate () {
 		return [
 			new SublistCellTemplate({
-				name: "Name",
+				name: "名称",
 				css: "ve-bold ve-col-12 ve-px-0",
 				colStyle: "",
 			}),
@@ -45,7 +45,7 @@ class _GroupHeaderManager {
 
 		this._dispShowHide = veT`<div class="ve-lst__tgl-item-group ve-relative ve-top-n1p">[\u2212]</div>`;
 
-		this._btnHeader = veT`<div class="ve-lst__item-group-header ve-mt-3 ve-split-v-center ve-py-1 ve-no-select ve-clickable" title="SHIFT to Toggle All">
+		this._btnHeader = veT`<div class="ve-lst__item-group-header ve-mt-3 ve-split-v-center ve-py-1 ve-no-select ve-clickable" title="按住 Shift 切换所有分组">
 			<div class="ve-split-v-center ve-w-100 ve-min-w-0 ve-mr-2">
 				<div class="ve-bold">${ent.name}</div>
 				<div class="${Parser.sourceJsonToSourceClassname(ent.source)}" title="${Parser.sourceJsonToFull(ent.source).qq()}">${Parser.sourceJsonToAbv(ent.source).qq()}</div>
@@ -82,9 +82,9 @@ export class TableListPage extends ListPage {
 		super({
 			...opts,
 			bookViewOptions: opts.bookViewOptions ?? {
-				nameSingular: "table",
-				namePlural: "tables",
-				pageTitle: "Tables Book View",
+				nameSingular: "表格",
+				namePlural: "表格",
+				pageTitle: "表格书籍视图",
 			},
 		});
 
@@ -264,7 +264,7 @@ export class TableListPage extends ListPage {
 			});
 		const rendered = Renderer.get().render(entry);
 
-		const out = veT`<span> | Attitude ${rendered}</span>`;
+		const out = veT`<span> | 态度 ${rendered}</span>`;
 
 		out
 			.vee.findAll(`[data-tablepage-roller]`)
@@ -288,8 +288,8 @@ export class TableListPage extends ListPage {
 	}
 
 	static _roll_getAttitude (total) {
-		if (total <= 4) return "Hostile";
-		if (total <= 8) return "Indifferent";
-		return "Friendly";
+		if (total <= 4) return "敌对";
+		if (total <= 8) return "冷漠";
+		return "友善";
 	}
 }

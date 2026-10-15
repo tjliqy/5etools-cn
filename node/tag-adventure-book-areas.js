@@ -1,3 +1,4 @@
+import "./locale/i18n.js";
 import * as ut from "./util.js";
 import "../js/parser.js";
 import "../js/utils.js";
@@ -12,7 +13,7 @@ const program = mutCommanderJsonFileOptions({command: new Command()});
 program.parse(process.argv);
 const params = program.opts();
 
-console.log(`Running area tagging pass...`);
+console.log(`正在标记区域…`);
 
 getCliJsonFiles(
 	{
@@ -45,7 +46,7 @@ getCliJsonFiles(
 		const path = jsonFile.getFilePath();
 		const json = jsonFile.getContents();
 
-		console.log(`\tTagging "${path}"...`);
+		console.log(`\t正在标记“${path}”…`);
 
 		["adventureData", "bookData"]
 			.forEach(prop => {
@@ -56,7 +57,7 @@ getCliJsonFiles(
 
 		writeJsonSync(path, json, {isClean: true});
 
-		console.log(`\tTagged "${path}".`);
+		console.log(`\t已标记“${path}”。`);
 	});
 
-console.log(`Area tagging complete.`);
+console.log(`区域标记完成。`);

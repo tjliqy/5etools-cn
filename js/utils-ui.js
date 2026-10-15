@@ -379,7 +379,7 @@ class UiUtil {
 			const lines = text.split("\n").filter(it => it.trim());
 			const slice = lines.join(" \\ ").substring(0, 30);
 			JqueryUtil.doToast({
-				content: `Could not parse entries! Error was: ${e.message}<br>Text was: ${slice}${slice.length === 30 ? "..." : ""}`,
+				content: `无法解析条目！错误： ${e.message}<br>文本： ${slice}${slice.length === 30 ? "..." : ""}`,
 				type: "danger",
 			});
 			return lines;
@@ -1096,21 +1096,21 @@ class ListUiUtil {
 				reCommand: /^(?<command>name|stats|info|text)/,
 
 				name: {
-					help: `\`name:"query"\` (/query/ for regex; \`name:! ...\` to invert) to search by name.`,
+					help: `使用 \`name:"关键词"\` 按名称搜索；用 /表达式/ 进行正则搜索；加 \`name:!\` 反选。`,
 					fn: (listItem, searchTerm) => {
 						if (listItem.data._textCacheName == null) listItem.data._textCacheName = listItem.name.toLowerCase().trim();
 						return this._listSyntax_isTextMatch(listItem.data._textCacheName, searchTerm);
 					},
 				},
 				stats: {
-					help: `\`stats:"query"\` (/query/ for regex; \`stats:! ...\` to invert) to search within stat blocks.`,
+					help: `使用 \`stats:"关键词"\` 搜索数据卡；用 /表达式/ 进行正则搜索；加 \`stats:!\` 反选。`,
 					fn: (listItem, searchTerm) => {
 						if (listItem.data._textCacheStats == null) listItem.data._textCacheStats = this._getSearchCacheStats(this._dataList[listItem.getId()]);
 						return this._listSyntax_isTextMatch(listItem.data._textCacheStats, searchTerm);
 					},
 				},
 				info: {
-					help: `\`info:"query" (/query/ for regex; \`info:! ...\` to invert) to search within info.`,
+					help: `使用 \`info:"关键词"\` 搜索简介；用 /表达式/ 进行正则搜索；加 \`info:!\` 反选。`,
 					fn: async (listItem, searchTerm) => {
 						if (listItem.data._textCacheFluff == null) listItem.data._textCacheFluff = await this._pGetSearchCacheFluff(this._dataList[listItem.getId()]);
 						return this._listSyntax_isTextMatch(listItem.data._textCacheFluff, searchTerm);
@@ -1118,7 +1118,7 @@ class ListUiUtil {
 					isAsync: true,
 				},
 				text: {
-					help: `\`text:"query" (/query/ for regex; \`text:! ...\` to invert) to search within stat blocks plus info.`,
+					help: `使用 \`text:"关键词"\` 搜索数据卡与简介；用 /表达式/ 进行正则搜索；加 \`text:!\` 反选。`,
 					fn: async (listItem, searchTerm) => {
 						if (listItem.data._textCacheAll == null) {
 							const {textCacheStats, textCacheFluff, textCacheAll} = await this._pGetSearchCacheAll(this._dataList[listItem.getId()], {textCacheStats: listItem.data._textCacheStats, textCacheFluff: listItem.data._textCacheFluff});
@@ -1311,8 +1311,8 @@ class ListUiPreviewButtonHandlerBase {
 
 				if (nxtHtml === this.constructor.HTML_GLYPHICON_CONTRACT && list.visibleItems.length > 500) {
 					const isSure = await InputUiUtil.pGetUserBoolean({
-						title: "Are You Sure?",
-						htmlDescription: `You are about to expand ${list.visibleItems.length} rows. This may seriously degrade performance.<br>Are you sure you want to continue?`,
+						title: "确定要继续吗？",
+						htmlDescription: `即将展开 ${list.visibleItems.length} 行，这可能显著降低性能。<br>确定要继续吗？`,
 					});
 					if (!isSure) return;
 				}
@@ -1366,19 +1366,19 @@ globalThis.ListUiPreviewButtonHandlerStatsFluff = ListUiPreviewButtonHandlerStat
 class ProfUiUtil {
 	static _PROF_TO_FULL = {
 		"0": {
-			name: "No proficiency",
+			name: "无熟练",
 			mult: 0,
 		},
 		"1": {
-			name: "Proficiency",
+			name: "熟练",
 			mult: 1,
 		},
 		"2": {
-			name: "Expertise",
+			name: "专精",
 			mult: 2,
 		},
 		"3": {
-			name: "Half proficiency",
+			name: "半熟练",
 			mult: 0.5,
 		},
 	};
@@ -1894,7 +1894,7 @@ SearchUiUtil.NO_HOVER_CATEGORIES = new Set([
 // based on DM screen's AddMenuSearchTab
 class SearchWidget {
 	static getSearchNoResults () {
-		return `<div class="ve-ui-search__message"><i>No results.</i></div>`;
+		return `<div class="ve-ui-search__message"><i>没有结果。</i></div>`;
 	}
 
 	static getSearchLoading () {
@@ -1902,7 +1902,7 @@ class SearchWidget {
 	}
 
 	static getSearchEnter () {
-		return `<div class="ve-ui-search__message"><i>Enter a search.</i></div>`;
+		return `<div class="ve-ui-search__message"><i>请输入搜索内容。</i></div>`;
 	}
 
 	/**
@@ -2090,12 +2090,12 @@ class SearchWidget {
 	__getRow (r) {
 		return veT`<div class="ve-ui-search__row" tabindex="0">
 			<span>${r.doc.cn || r.doc.n}</span>
-			<span>${r.doc.s ? `<i title="${Parser.sourceJsonToFull(r.doc.s).qq()}">${Parser.sourceJsonToAbv(r.doc.s).qq()}${r.doc.p ? ` p${r.doc.p}` : ""}</i>` : ""}</span>
+			<span>${r.doc.s ? `<i title="${Parser.sourceJsonToFull(r.doc.s).qq()}">${Parser.sourceJsonToAbv(r.doc.s).qq()}${r.doc.p ? ` 第 ${r.doc.p} 页` : ""}</i>` : ""}</span>
 		</div>`;
 	}
 
 	static __getAllTitle () {
-		return "All Categories";
+		return "所有类别";
 	}
 
 	static __getCatOptionText (it) {
@@ -2194,7 +2194,7 @@ class SearchWidget {
 
 			if (resultCount > UiUtil.SEARCH_RESULTS_CAP) {
 				const diff = resultCount - UiUtil.SEARCH_RESULTS_CAP;
-				if (I18nUtil.LANGUAGES_INDEX === "zh_CN") {
+				if (["zh_CN", "zh-Hant"].includes(I18nUtil.LANGUAGES_INDEX)) {
 					this._wrpResults.vee.appends(`<div class="ve-ui-search__row ve-ui-search__row--readonly">...${diff}条结果被隐藏，请调整搜索条件。</div>`);
 				} else {
 					this._wrpResults.vee.appends(`<div class="ve-ui-search__row ve-ui-search__row--readonly">...${diff} more result${diff === 1 ? " was" : "s were"} hidden. Refine your search!</div>`);
@@ -2209,7 +2209,7 @@ class SearchWidget {
 	_render () {
 		if (this._rendered) return;
 
-		this._iptSearch = veT`<input class="ve-ui-search__ipt-search search ve-form-control" placeholder="Search...">`
+		this._iptSearch = veT`<input class="ve-ui-search__ipt-search search ve-form-control" placeholder="搜索...">`
 			.vee.disableSpellcheck();
 		this._wrpResults = veT`<div class="ve-ui-search__wrp-results"></div>`;
 
@@ -2314,7 +2314,7 @@ class SearchWidget {
 	static async pGetUserLegendaryGroupSearch () {
 		await SearchWidget.pLoadCustomIndex({
 			contentIndexName: "entity_LegendaryGroups",
-			errorName: "legendary groups",
+			errorName: "传奇动作组",
 			customIndexSubSpecs: [
 				new SearchWidget.CustomIndexSubSpec({
 					dataSource: `${Renderer.get().baseUrl}data/bestiary/legendarygroups.json`,
@@ -2326,7 +2326,7 @@ class SearchWidget {
 		});
 
 		return SearchWidget.pGetUserEntitySearch(
-			"Select Legendary Group",
+			"选择传奇生物组",
 			"entity_LegendaryGroups",
 			{
 				fnTransform: doc => {
@@ -2343,7 +2343,7 @@ class SearchWidget {
 		// FIXME convert to be more like spell/creature search instead of running custom indexes
 		await SearchWidget.pLoadCustomIndex({
 			contentIndexName: "entity_Feats",
-			errorName: "feats",
+			errorName: "专长",
 			customIndexSubSpecs: [
 				new SearchWidget.CustomIndexSubSpec({
 					dataSource: `${Renderer.get().baseUrl}data/feats.json`,
@@ -2355,7 +2355,7 @@ class SearchWidget {
 		});
 
 		return SearchWidget.pGetUserEntitySearch(
-			"Select Feat",
+			"选择专长",
 			"entity_Feats",
 			{
 				fnTransform: doc => {
@@ -2372,7 +2372,7 @@ class SearchWidget {
 		// FIXME convert to be more like spell/creature search instead of running custom indexes
 		await SearchWidget.pLoadCustomIndex({
 			contentIndexName: "entity_Backgrounds",
-			errorName: "backgrounds",
+			errorName: "背景",
 			customIndexSubSpecs: [
 				new SearchWidget.CustomIndexSubSpec({
 					dataSource: `${Renderer.get().baseUrl}data/backgrounds.json`,
@@ -2384,7 +2384,7 @@ class SearchWidget {
 		});
 
 		return SearchWidget.pGetUserEntitySearch(
-			"Select Background",
+			"选择背景",
 			"entity_Backgrounds",
 			{
 				fnTransform: doc => {
@@ -2404,7 +2404,7 @@ class SearchWidget {
 		};
 		await SearchWidget.pLoadCustomIndex({
 			contentIndexName: "entity_Races",
-			errorName: "species",
+			errorName: "物种",
 			customIndexSubSpecs: [
 				new SearchWidget.CustomIndexSubSpec({
 					dataSource,
@@ -2416,7 +2416,7 @@ class SearchWidget {
 		});
 
 		return SearchWidget.pGetUserEntitySearch(
-			"Select Species",
+			"选择种族",
 			"entity_Races",
 			{
 				fnTransform: doc => {
@@ -2433,7 +2433,7 @@ class SearchWidget {
 		// FIXME convert to be more like spell/creature search instead of running custom indexes
 		await SearchWidget.pLoadCustomIndex({
 			contentIndexName: "entity_OptionalFeatures",
-			errorName: "optional features",
+			errorName: "可选特性",
 			customIndexSubSpecs: [
 				new SearchWidget.CustomIndexSubSpec({
 					dataSource: `${Renderer.get().baseUrl}data/optionalfeatures.json`,
@@ -2445,7 +2445,7 @@ class SearchWidget {
 		});
 
 		return SearchWidget.pGetUserEntitySearch(
-			"Select Optional Feature",
+			"选择可选特性",
 			"entity_OptionalFeatures",
 			{
 				fnTransform: doc => {
@@ -2461,7 +2461,7 @@ class SearchWidget {
 	static async pGetUserAdventureSearch (opts) {
 		await SearchWidget.pLoadCustomIndex({
 			contentIndexName: "entity_Adventures",
-			errorName: "adventures",
+			errorName: "冒险模组",
 			customIndexSubSpecs: [
 				new SearchWidget.CustomIndexSubSpec({
 					dataSource: `${Renderer.get().baseUrl}data/adventures.json`,
@@ -2471,13 +2471,13 @@ class SearchWidget {
 				}),
 			],
 		});
-		return SearchWidget.pGetUserEntitySearch("Select Adventure", "entity_Adventures", opts);
+		return SearchWidget.pGetUserEntitySearch("选择冒险", "entity_Adventures", opts);
 	}
 
 	static async pGetUserBookSearch (opts) {
 		await SearchWidget.pLoadCustomIndex({
 			contentIndexName: "entity_Books",
-			errorName: "books",
+			errorName: "书籍",
 			customIndexSubSpecs: [
 				new SearchWidget.CustomIndexSubSpec({
 					dataSource: `${Renderer.get().baseUrl}data/books.json`,
@@ -2487,14 +2487,14 @@ class SearchWidget {
 				}),
 			],
 		});
-		return SearchWidget.pGetUserEntitySearch("Select Book", "entity_Books", opts);
+		return SearchWidget.pGetUserEntitySearch("选择书籍", "entity_Books", opts);
 	}
 
 	static async pGetUserAdventureBookSearch (opts) {
 		const contentIndexName = opts.contentIndexName || "entity_AdventuresBooks";
 		await SearchWidget.pLoadCustomIndex({
 			contentIndexName,
-			errorName: "adventures/books",
+			errorName: "冒险模组／书籍",
 			customIndexSubSpecs: [
 				new SearchWidget.CustomIndexSubSpec({
 					dataSource: `${Renderer.get().baseUrl}data/adventures.json`,
@@ -2512,7 +2512,7 @@ class SearchWidget {
 				}),
 			],
 		});
-		return SearchWidget.pGetUserEntitySearch("Select Adventure or Book", contentIndexName, opts);
+		return SearchWidget.pGetUserEntitySearch("选择冒险或书籍", contentIndexName, opts);
 	}
 
 	static async pGetUserCreatureSearch () {
@@ -2550,7 +2550,7 @@ class SearchWidget {
 
 		return SearchWidget.pLoadCustomIndex({
 			contentIndexName: indexName,
-			errorName: "items",
+			errorName: "物品",
 			customIndexSubSpecs: [
 				new SearchWidget.CustomIndexSubSpec({
 					dataSource,
@@ -2565,7 +2565,7 @@ class SearchWidget {
 	static async __pGetUserItemSearch (isBasicIndex) {
 		const indexName = isBasicIndex == null ? "entity_Items" : isBasicIndex ? "entity_ItemsBasic" : "entity_ItemsMagic";
 		return SearchWidget.pGetUserEntitySearch(
-			"Select Item",
+			"选择物品",
 			indexName,
 			{
 				fnTransform: doc => {
@@ -2650,7 +2650,7 @@ class SearchWidget {
 				SearchWidget.P_LOADING_INDICES[contentIndexName] = (SearchWidget.CONTENT_INDICES[contentIndexName] = await SearchWidget._pGetIndex(customIndexSubSpecs));
 				SearchWidget.P_LOADING_INDICES[contentIndexName] = null;
 			} catch (e) {
-				JqueryUtil.doToast({type: "danger", content: `Could not load ${errorName}! ${VeCt.STR_SEE_CONSOLE}`});
+				JqueryUtil.doToast({type: "danger", content: `无法加载 ${errorName}！ ${VeCt.STR_SEE_CONSOLE}`});
 				throw e;
 			} finally {
 				doClose();
@@ -2812,7 +2812,7 @@ class InputUiUtil {
 		}
 
 		const {eleModalInner, doClose, pGetResolved, doAutoResize: doAutoResizeModal} = await InputUiUtil._pGetShowModal({
-			title: title || "Choose",
+			title: title || "请选择",
 			isMinHeight0: true,
 		});
 
@@ -2820,7 +2820,7 @@ class InputUiUtil {
 
 		const btnSkip = !isSkippable
 			? null
-			: veT`<button class="ve-btn ve-btn-default ve-btn-sm ve-ml-3"><span class="glyphicon glyphicon-forward"></span><span>${textSkip || "Skip"}</span></button>`
+			: veT`<button class="ve-btn ve-btn-default ve-btn-sm ve-ml-3"><span class="glyphicon glyphicon-forward"></span><span>${textSkip || "跳过"}</span></button>`
 				.vee.onn("click", evt => {
 					evt.stopPropagation();
 					doClose(VeCt.SYM_UI_SKIP);
@@ -2969,7 +2969,7 @@ class InputUiUtil {
 		if (defaultVal !== undefined) iptNumber.vee.val(defaultVal);
 
 		const {eleModalInner, doClose, pGetResolved, doAutoResize: doAutoResizeModal} = await InputUiUtil._pGetShowModal({
-			title: opts.title || "Enter a Number",
+			title: opts.title || "输入数字",
 			isMinHeight0: true,
 		});
 
@@ -3027,7 +3027,7 @@ class InputUiUtil {
 	static async pGetUserEnum (opts) {
 		opts = opts || {};
 
-		const selEnum = veT`<select class="ve-form-control ve-mb-2"><option value="-1" disabled>${opts.placeholder || "Select..."}</option></select>`
+		const selEnum = veT`<select class="ve-form-control ve-mb-2"><option value="-1" disabled>${opts.placeholder || "请选择…"}</option></select>`
 			.vee.onn("keydown", async evt => {
 				evt.stopPropagation();
 				if (evt.key === "Enter") {
@@ -3047,7 +3047,7 @@ class InputUiUtil {
 		} else selEnum.selectedIndex = 0;
 
 		const {eleModalInner, doClose, pGetResolved, doAutoResize: doAutoResizeModal} = await InputUiUtil._pGetShowModal({
-			title: opts.title || "Select an Option",
+			title: opts.title || "选择选项",
 			isMinHeight0: true,
 		});
 
@@ -3120,11 +3120,11 @@ class InputUiUtil {
 
 		let title = opts.title;
 		if (!title) {
-			if (opts.count != null) title = `选择 ${Parser.numberToText(opts.count).uppercaseFirst()}个`;
-			else if (opts.min != null && opts.max != null) title = `Choose Between ${Parser.numberToText(opts.min).uppercaseFirst()} and ${Parser.numberToText(opts.max).uppercaseFirst()} Options`;
-			else if (opts.min != null) title = `Choose At Least ${Parser.numberToText(opts.min).uppercaseFirst()}`;
-			else if (opts.max != null) title = `Choose At Most ${Parser.numberToText(opts.max).uppercaseFirst()}`;
-			else title = `Choose Options`;
+			if (opts.count != null) title = `选择 ${opts.count} 项`;
+			else if (opts.min != null && opts.max != null) title = `选择 ${opts.min} 至 ${opts.max} 项`;
+			else if (opts.min != null) title = `至少选择 ${opts.min} 项`;
+			else if (opts.max != null) title = `最多选择 ${opts.max} 项`;
+			else title = `选择选项`;
 		}
 
 		const {ele: wrpList, iptSearch, propIsAcceptable, propPulse, rowMetas} = ComponentUiUtil.getMetaWrpMultipleChoice(comp, prop, opts);
@@ -3160,7 +3160,7 @@ class InputUiUtil {
 
 			const getIsAllSelected = () => rowMetasSelectable.every(({propIsActive}) => comp._state[propIsActive]);
 
-			const cbAll = veT`<input type="checkbox" title="Select All">`
+			const cbAll = veT`<input type="checkbox" title="全选">`
 				.vee.onn("click", () => {
 					const nxtIsActive = cbAll.vee.prop("checked");
 					comp._proxyAssignSimple(
@@ -3175,7 +3175,7 @@ class InputUiUtil {
 				cbAll
 					.vee.prop("checked", isAll)
 					.vee.prop("indeterminate", cntSelected > 0 && !isAll)
-					.vee.attr("title", isAll ? "Deselect All" : "Select All");
+					.vee.attr("title", isAll ? "取消全选" : "全选");
 			});
 			hkSelectAll();
 
@@ -3235,7 +3235,7 @@ class InputUiUtil {
 		const onclicks = [];
 
 		const {eleModalInner, doClose, pGetResolved, doAutoResize: doAutoResizeModal} = await InputUiUtil._pGetShowModal({
-			title: opts.title || "Select an Option",
+			title: opts.title || "选择选项",
 			isMinHeight0: true,
 		});
 
@@ -3338,7 +3338,7 @@ class InputUiUtil {
 		}
 
 		const {eleModalInner, doClose, pGetResolved, doAutoResize: doAutoResizeModal} = await InputUiUtil._pGetShowModal({
-			title: opts.title || "Enter Text",
+			title: opts.title || "输入文本",
 			isMinHeight0: true,
 			isWidth100: true,
 		});
@@ -3395,7 +3395,7 @@ class InputUiUtil {
 		if (opts.isCode) iptStr.vee.addClass("ve-code");
 
 		const {eleModalInner, doClose, pGetResolved, doAutoResize: doAutoResizeModal} = await InputUiUtil._pGetShowModal({
-			title: opts.title || "Enter Text",
+			title: opts.title || "输入文本",
 			isMinHeight0: true,
 		});
 
@@ -3435,7 +3435,7 @@ class InputUiUtil {
 		const iptRgb = veT`<input class="ve-form-control ve-mb-2" ${opts.default != null ? `value="${opts.default}"` : ""} type="color">`;
 
 		const {eleModalInner, doClose, pGetResolved, doAutoResize: doAutoResizeModal} = await InputUiUtil._pGetShowModal({
-			title: opts.title || "Choose Color",
+			title: opts.title || "选择颜色",
 			isMinHeight0: true,
 		});
 
@@ -3577,7 +3577,7 @@ class InputUiUtil {
 		})() : null;
 
 		const {eleModalInner, doClose, pGetResolved, doAutoResize: doAutoResizeModal} = await InputUiUtil._pGetShowModal({
-			title: opts.title || "Select Direction",
+			title: opts.title || "选择方向",
 			isMinHeight0: true,
 		});
 
@@ -3661,7 +3661,7 @@ class InputUiUtil {
 		};
 
 		const {eleModalInner, doClose, pGetResolved, doAutoResize: doAutoResizeModal} = await InputUiUtil._pGetShowModal({
-			title: opts.title || "Enter Dice",
+			title: opts.title || "输入骰式",
 			isMinHeight0: true,
 		});
 
@@ -3699,7 +3699,7 @@ class InputUiUtil {
 		let slider;
 
 		const {eleModalInner, doClose, pGetResolved, doAutoResize: doAutoResizeModal} = await InputUiUtil._pGetShowModal({
-			title: opts.title || "Select Challenge Rating",
+			title: opts.title || "选择挑战等级",
 			isMinHeight0: true,
 			cbClose: () => {
 				slider.destroy();
@@ -4396,13 +4396,13 @@ class _RenderableCollectionGenericRowsSyncAsyncUtils {
 
 	/* -------------------------------------------- */
 
-	getBtnDelete ({entity, title = "Delete", pFnGetIsConfirm = null}) {
+	getBtnDelete ({entity, title = "删除", pFnGetIsConfirm = null}) {
 		return veT`<button class="ve-btn ve-btn-xxs ve-btn-danger" title="${title.qq()}"><span class="glyphicon glyphicon-trash"></span></button>`
 			.vee.onn("click", async () => {
 				if (
 					pFnGetIsConfirm
 					&& await pFnGetIsConfirm()
-					&& !await InputUiUtil.pGetUserBoolean({title: "Delete", htmlDescription: "Are you sure?", textYes: "Yes", textNo: "Cancel"})
+					&& !await InputUiUtil.pGetUserBoolean({title: "删除", htmlDescription: "确定要删除吗？", textYes: "是", textNo: "取消"})
 				) return;
 
 				this.doDelete({entity});
@@ -5132,7 +5132,7 @@ class ComponentUiUtil {
 				return veT`<div class="ve-ui-ideco__wrp ${classNameSide} ve-no-events ve-flex-vh-center"><span class="glyphicon glyphicon-search"></span></div>`;
 			}
 			case "clear": {
-				return veT`<div class="ve-ui-ideco__wrp ${classNameSide} ve-flex-vh-center ve-clickable" title="Clear"><span class="glyphicon glyphicon-remove"></span></div>`
+				return veT`<div class="ve-ui-ideco__wrp ${classNameSide} ve-flex-vh-center ve-clickable" title="清空"><span class="glyphicon glyphicon-remove"></span></div>`
 					.vee.onn("click", () => {
 						ipt
 							.vee.val("")
@@ -5160,12 +5160,12 @@ class ComponentUiUtil {
 					ipt.focus();
 				};
 
-				const btnUp = veT`<button class="ve-btn ve-btn-default ve-ui-ideco__btn-ticker ve-p-0 ve-bold ve-no-select" title="Increase by 1 (SHIFT for 5)">+</button>`
+				const btnUp = veT`<button class="ve-btn ve-btn-default ve-ui-ideco__btn-ticker ve-p-0 ve-bold ve-no-select" title="增加 1（按 Shift 增加 5）">+</button>`
 					.vee.onn("click", evt => {
 						handleClick(evt.shiftKey ? 5 : 1);
 					});
 
-				const btnDown = veT`<button class="ve-btn ve-btn-default ve-ui-ideco__btn-ticker ve-p-0 ve-bold ve-no-select" title="Decrease by 1 (SHIFT for 5)">\u2212</button>`
+				const btnDown = veT`<button class="ve-btn ve-btn-default ve-ui-ideco__btn-ticker ve-p-0 ve-bold ve-no-select" title="减少 1（按 Shift 减少 5）">\u2212</button>`
 					.vee.onn("click", evt => {
 						handleClick(evt.shiftKey ? -5 : -1);
 					});
@@ -5252,7 +5252,7 @@ class ComponentUiUtil {
 			ele: ele,
 			tag: "button",
 			clazz: "ve-btn ve-btn-xs ve-btn-default",
-			txt: opts.text || "Toggle",
+			txt: opts.text || "切换",
 		}))
 			.vee.onn("click", () => component[stateProp][prop] = !component[stateProp][prop])
 			.vee.onn("contextmenu", evt => {
@@ -6427,7 +6427,7 @@ class ComponentUiUtil {
 
 				let hk;
 				const cb = isRequired
-					? veT`<input type="checkbox" disabled checked title="This option is required.">`
+					? veT`<input type="checkbox" disabled checked title="此选项为必选项。">`
 					: ComponentUiUtil.getCbBool(comp, propIsActive);
 
 				if (isRequired) comp._state[propIsActive] = true;

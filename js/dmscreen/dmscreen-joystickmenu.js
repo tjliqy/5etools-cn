@@ -517,7 +517,7 @@ export class DmScreenJoystickMenu extends DmScreenJoystickMenuBase {
 		const ctrlExpandDown = veT`<div class="panel-control-move ve-hidden panel-control-move--bg panel-control-move-bottom"></div>`;
 		const ctrlExpandLeft = veT`<div class="panel-control-move ve-hidden panel-control-move--bg panel-control-move-left"></div>`;
 		const ctrlBtnDone = veT`<div class="panel-control-move ve-hidden panel-control-move--bg panel-control-move-btn-done">
-			<div class="panel-control-move-icn-done glyphicon glyphicon-move ve-text-center" title="Stop Moving"></div>
+			<div class="panel-control-move-icn-done glyphicon glyphicon-move ve-text-center" title="停止移动"></div>
 		</div>`;
 		const ctrlBg = veT`<div class="panel-control-move ve-hidden panel-control-bg"></div>`;
 		this.ctrls = [ctrlMove, ctrlExpandUp, ctrlExpandRight, ctrlExpandDown, ctrlExpandLeft, ctrlBtnDone, ctrlBg];

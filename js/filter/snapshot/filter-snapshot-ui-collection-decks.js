@@ -17,7 +17,7 @@ class CollectionBoxSnapshotDecks extends RenderableCollectionGenericRows {
 	}
 
 	_populateRow ({comp, wrpRow, entity}) {
-		const iptName = ComponentUiUtil.getIptStr(comp, "_manager_name", {placeholder: "Name"});
+		const iptName = ComponentUiUtil.getIptStr(comp, "_manager_name", {placeholder: "名称"});
 
 		const btnDelete = this._utils.getBtnDelete({entity});
 
@@ -90,7 +90,7 @@ export class RenderableCollectionSnapshotDecks extends RenderableCollectionFilte
 
 		const btnToggleExpand = this.constructor._getBtnToggleExpand(comp, {isSibling: true});
 
-		const btnIsDefault = veT`<button class="ve-btn ve-btn-default ve-btn-xs ve-mr-1" title="Set as Default Filter State"><span class="glyphicon glyphicon-heart"></span></button>`
+		const btnIsDefault = veT`<button class="ve-btn ve-btn-default ve-btn-xs ve-mr-1" title="设为默认筛选状态"><span class="glyphicon glyphicon-heart"></span></button>`
 			.vee.onn("click", () => {
 				if (this._comp._state.boxSnapshotDeckDefaultId === entity.id) this._comp._state.boxSnapshotDeckDefaultId = null;
 				else this._comp._state.boxSnapshotDeckDefaultId = entity.id;
@@ -100,20 +100,20 @@ export class RenderableCollectionSnapshotDecks extends RenderableCollectionFilte
 		});
 		hkIsDefault();
 
-		const btnApply = veT`<button class="ve-btn ve-btn-xs ve-btn-primary" title="Apply as Filters"><span class="glyphicon glyphicon-ok"></span></button>`
+		const btnApply = veT`<button class="ve-btn ve-btn-xs ve-btn-primary" title="应用为筛选条件"><span class="glyphicon glyphicon-ok"></span></button>`
 			.vee.onn("click", async () => {
 				this._comp.doSetFiltersFromBoxSnapshotDeck_(entity.entity);
-				JqueryUtil.doToast("Applied Snapshot Deck as Filters!");
+				JqueryUtil.doToast("已将快照集应用为筛选条件！");
 			});
 
-		const iptName = ComponentUiUtil.getIptStr(comp, "manager_name", {placeholder: "Name"});
+		const iptName = ComponentUiUtil.getIptStr(comp, "manager_name", {placeholder: "名称"});
 
-		const btnAddSnapshot = veT`<button class="ve-btn ve-btn-default ve-btn-xs ve-mr-1" title="Add Snapshot"><span class="glyphicon glyphicon-plus"></span></button>`
+		const btnAddSnapshot = veT`<button class="ve-btn ve-btn-default ve-btn-xs ve-mr-1" title="添加快照"><span class="glyphicon glyphicon-plus"></span></button>`
 			.vee.onn("click", async () => {
 				await this._populateRow_onClick_pAddSnapshot({comp});
 			});
 
-		const btnDuplicate = veT`<button class="ve-btn ve-btn-default ve-btn-xs ve-mr-1" title="Duplicate"><span class="glyphicon glyphicon-duplicate"></span></button>`
+		const btnDuplicate = veT`<button class="ve-btn ve-btn-default ve-btn-xs ve-mr-1" title="复制"><span class="glyphicon glyphicon-duplicate"></span></button>`
 			.vee.onn("click", () => {
 				const cpy = MiscUtil.copyFast(entity.entity);
 
@@ -169,13 +169,13 @@ export class RenderableCollectionSnapshotDecks extends RenderableCollectionFilte
 			wrpRows: wrpRowsBoxSnapshotDecks,
 		});
 
-		const btnNoSnapshotsAdd = veT`<button class="ve-btn ve-btn-default ve-btn-xs">Add Snapshot</button>`
+		const btnNoSnapshotsAdd = veT`<button class="ve-btn ve-btn-default ve-btn-xs">添加快照</button>`
 			.vee.onn("click", async () => {
 				await this._populateRow_onClick_pAddSnapshot({comp});
 			});
 
 		const dispNoSnapshotDecks = veT`<div class="ve-pl-2 ve-py-1 ve-flex-v-center">
-			<i class="ve-muted ve-mr-2 ve-self-flex-end">This deck contains no snapshots.</i>
+			<i class="ve-muted ve-mr-2 ve-self-flex-end">此快照集尚无快照。</i>
 			${btnNoSnapshotsAdd}
 		</div>`;
 
@@ -193,7 +193,7 @@ export class RenderableCollectionSnapshotDecks extends RenderableCollectionFilte
 		const stgDetails = veT`<div class="ve-flex ve-relative ve-accordion__wrp-preview ve-w-100">
 			<div class="ve-vr-0 ve-absolute ve-accordion__vr-preview"></div>
 			<div class="ve-flex-col ve-py-3 ve-ml-4 ve-accordion__wrp-preview-inner ve-w-100 ve-min-w-0">
-				<h5 class="ve-mt-0 ve-mb-1 ve-pl-2">Snapshots</h5>
+				<h5 class="ve-mt-0 ve-mb-1 ve-pl-2">快照</h5>
 				${wrpRowsBoxSnapshotDecks}
 				${dispNoSnapshotDecks}
 				<hr class="ve-hr-3">
@@ -214,7 +214,7 @@ export class RenderableCollectionSnapshotDecks extends RenderableCollectionFilte
 	}
 
 	async _populateRow_onClick_pAddSnapshot ({comp}) {
-		if (!this._comp._state.boxSnapshots.length) return JqueryUtil.doToast({content: `No snapshots available! Please create one first.`, type: "warning"});
+		if (!this._comp._state.boxSnapshots.length) return JqueryUtil.doToast({content: `暂无快照，请先创建。`, type: "warning"});
 
 		const {boxSnapshot} = await this._comp.pGetUserBoxSnapshotInfo();
 		if (!boxSnapshot) return;
@@ -228,6 +228,6 @@ export class RenderableCollectionSnapshotDecks extends RenderableCollectionFilte
 		]
 			.unique(entityInfo => entityInfo.entity.boxSnapshotId);
 
-		JqueryUtil.doToast(`Added to Snapshot Deck!`);
+		JqueryUtil.doToast(`已添加到快照集！`);
 	}
 }

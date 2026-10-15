@@ -216,7 +216,7 @@ class MapsPage extends BaseComponent {
 		};
 		this._addHookBase(propDisplayChapter, hkBubbleUp);
 
-		const btnScrollTo = veT`<button class="ve-btn ve-btn-default ve-btn-xxs maps-menu__btn-chapter-scroll ve-no-shrink" title="Scroll To"><span class="glyphicon glyphicon-triangle-right"></span></button>`
+		const btnScrollTo = veT`<button class="ve-btn ve-btn-default ve-btn-xxs maps-menu__btn-chapter-scroll ve-no-shrink" title="滚动到此处"><span class="glyphicon glyphicon-triangle-right"></span></button>`
 			.vee.onn("click", () => {
 				if (!this._state[propDisplayChapter]) this._state[propDisplayChapter] = true;
 				wrpContent[0].scrollIntoView({block: "nearest", inline: "nearest"});
@@ -325,7 +325,7 @@ class MapsPage extends BaseComponent {
 		hkImageScale();
 
 		const dispNoneVisible = veT`<div class="ve-flex-vh-center ve-h-100 ve-w-100">
-			<div class="ve-flex ve-muted initial-message initial-message--med ve-italic maps__disp-message-initial ve-px-3">Select some sources to view from the sidebar</div>
+			<div class="ve-flex ve-muted initial-message initial-message--med ve-italic maps__disp-message-initial ve-px-3">请从侧边栏选择要查看的来源</div>
 		</div>`;
 		const hkAnyVisible = () => dispNoneVisible.vee.toggle(this._state.isAllChecked === false);
 		this._addHookBase("isAllChecked", hkAnyVisible);
@@ -340,7 +340,7 @@ class MapsPage extends BaseComponent {
 
 				<div class="ve-split-v-center ve-pl-2 ve-py-1">
 					${wrpIptSearch.vee.addClass("ve-mr-3")}
-					${cbIsAllChecked.vee.tooltip("Select All")}
+					${cbIsAllChecked.vee.tooltip("全选")}
 				</div>
 
 				<hr class="ve-hr-3">

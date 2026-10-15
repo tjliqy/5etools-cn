@@ -22,8 +22,8 @@ async function onJsonLoad (data) {
 
 	BookUtil.bookIndex = data?.adventure || [];
 
-	veEs(`#page__subtitle`).vee.txt(`Select an adventure from the list on the left`);
-	veEs(`.book-loading-message`).vee.txt(`Select an adventure to begin`);
+	veEs(`#page__subtitle`).vee.txt(`请从左侧列表选择一篇冒险`);
+	veEs(`.book-loading-message`).vee.txt(`请选择一篇冒险以开始`);
 
 	BookUtil.bookIndexPrerelease = (await PrereleaseUtil.pGetBrewProcessed())?.adventure || [];
 	BookUtil.bookIndexBrew = (await BrewUtil2.pGetBrewProcessed())?.adventure || [];

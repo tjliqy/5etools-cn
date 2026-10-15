@@ -24,7 +24,7 @@ class UtilsTableview {
 			Object.keys(colTransforms).mergeMap(k => ({[k]: true})),
 		);
 
-		const cbAll = veT`<input type="checkbox" title="Select All" checked>`
+		const cbAll = veT`<input type="checkbox" title="全选" checked>`
 			.vee.onn("click", () => {
 				const val = cbAll.vee.prop("indeterminate") ? false : cbAll.vee.prop("checked");
 

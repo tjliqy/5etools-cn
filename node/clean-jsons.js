@@ -11,14 +11,14 @@ import "../js/render.js";
  * @param {?Set<string>} [pathsIgnore]
  */
 function cleanFolder (folder, {isFast = false, pathsIgnore = null} = {}) {
-	console.log(`Cleaning directory ${folder}...`);
+	console.log(`正在清理目录 ${folder}…`);
 	const files = ut.listFiles({
 		dir: folder,
 	});
 	files
 		.filter(file => file.endsWith(".json") && (pathsIgnore == null || !pathsIgnore.has(file)))
 		.forEach(file => {
-			console.log(`\tCleaning ${file}...`);
+			console.log(`\t正在清理 ${file}…`);
 			fs.writeFileSync(file, CleanUtil.getCleanJson(ut.readJson(file), {isFast}), "utf-8");
 		});
 }
@@ -26,4 +26,4 @@ function cleanFolder (folder, {isFast = false, pathsIgnore = null} = {}) {
 cleanFolder(`./data`);
 cleanFolder(`./homebrew`, {isFast: true, pathsIgnore: new Set(["homebrew/index.json"])});
 cleanFolder(`./prerelease`, {isFast: true, pathsIgnore: new Set(["prerelease/index.json"])});
-console.log("Cleaning complete.");
+console.log("清理完成。");

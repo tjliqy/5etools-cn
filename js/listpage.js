@@ -219,7 +219,7 @@ class SublistManager {
 	_getContextActionRemove () {
 		return this._isSublistItemsCountable
 			? new ContextUtil.Action(
-				"Remove",
+				"移除",
 				async (evt, {userData}) => {
 					const {selection} = userData;
 					await Promise.all(selection.map(item => this.pDoSublistRemove({entity: item.data.entity, doFinalize: false})));
@@ -227,7 +227,7 @@ class SublistManager {
 				},
 			)
 			: new ContextUtil.Action(
-				"Unpin",
+				"取消固定",
 				async (evt, {userData}) => {
 					const {selection} = userData;
 					for (const item of selection) {
@@ -241,7 +241,7 @@ class SublistManager {
 	_initContextMenu () {
 		const subActions = [
 			new ContextUtil.Action(
-				"Popout",
+				"弹出窗口",
 				(evt, {userData}) => {
 					const {ele, selection} = userData;
 					const entities = selection.map(listItem => ({entity: listItem.data.entity, hash: listItem.data.hash}));
@@ -257,19 +257,19 @@ class SublistManager {
 			new ContextUtil.Action(
 				"在列表上掷骰",
 				(evt) => this._rollSubListed({evt}),
-				{title: "SHIFT to Skip Animation"},
+				{title: "按 Shift 跳过动画"},
 			),
 			null,
 			new ContextUtil.Action(
 				"发送到DM帷幕",
 				(evt) => this._pDoSendSublistToDmScreen({evt}),
-				{title: "A DM Screen panel will be created for each entry. SHIFT to use tabs."},
+				{title: "每个条目都会创建一个 DM 帷幕面板；按 Shift 改用标签页。"},
 			),
 			ExtensionUtil.ACTIVE
 				? new ContextUtil.Action(
 					"发送到Foundry",
 					() => this._pDoSendSublistToFoundry(),
-					{title: "A Rivet import will be run for each entry."},
+					{title: "每个条目都会执行一次 Rivet 导入。"},
 				)
 				: undefined,
 			null,
@@ -646,7 +646,7 @@ class SublistManager {
 	async pDoSublistAdd ({entity, doFinalize = false, addCount = 1, initialData = null} = {}) {
 		if (entity == null) {
 			return JqueryUtil.doToast({
-				content: "Please first view something from the list.",
+				content: "请先从列表中选择一个条目查看。",
 				type: "danger",
 			});
 		}
@@ -689,7 +689,7 @@ class SublistManager {
 	async pDoSublistSetCount ({entity, doFinalize = false, count, initialData = null}) {
 		if (entity == null) {
 			return JqueryUtil.doToast({
-				content: "Please first view something from the list.",
+				content: "请先从列表中选择一个条目查看。",
 				type: "danger",
 			});
 		}
@@ -832,9 +832,9 @@ class SublistManager {
 					isTabs: evt.shiftKey,
 				},
 			);
-			JqueryUtil.doToast(`${len} pin${len === 1 ? "" : "s"} will be loaded into the DM Screen on your next visit.`);
+			JqueryUtil.doToast(`下次访问 DM 帷幕时将加载 ${len} 个已收藏条目。`);
 		} catch (e) {
-			JqueryUtil.doToast(`Failed! ${VeCt.STR_SEE_CONSOLE}`);
+			JqueryUtil.doToast(`失败！ ${VeCt.STR_SEE_CONSOLE}`);
 			setTimeout(() => { throw e; });
 		}
 	}
@@ -850,7 +850,7 @@ class SublistManager {
 			await ExtensionUtil._doSend("entity", {page, entity});
 		}
 
-		JqueryUtil.doToast(`Attempted to send ${len} item${len === 1 ? "" : "s"} to Foundry.`);
+		JqueryUtil.doToast(`已尝试向 Foundry 发送 ${len} 个条目。`);
 	}
 
 	static async pDeserializeExportedSublistItem (serialItem) {
@@ -870,7 +870,7 @@ class SublistManager {
 
 		if (this._listSub.items.length <= 1) {
 			return JqueryUtil.doToast({
-				content: "Not enough entries to roll!",
+				content: "列表中的条目不足，无法掷骰！",
 				type: "danger",
 			});
 		}
@@ -1005,7 +1005,7 @@ class ListPageSettingsManager extends ListPageStateManager {
 			.addEventListener(
 				"click",
 				() => {
-					const btnReset = veT`<button class="ve-btn ve-btn-default ve-btn-xs" title="Reset"><span class="glyphicon glyphicon-refresh"></span></button>`
+					const btnReset = veT`<button class="ve-btn ve-btn-default ve-btn-xs" title="重置"><span class="glyphicon glyphicon-refresh"></span></button>`
 						.vee.onn("click", () => {
 							this._proxyAssignSimple("state", this._getDefaultState(), true);
 							this._pPersistState()
@@ -1497,7 +1497,7 @@ class ListPage {
 	}
 
 	_renderListShowHide ({wrpContent, wrpList, btnReset}) {
-		const btnHideSearch = veT`<button class="ve-btn ve-btn-default" title="Hide Search Bar and Entry List">隐藏</button>`;
+		const btnHideSearch = veT`<button class="ve-btn ve-btn-default" title="隐藏搜索栏和条目列表">隐藏</button>`;
 		btnReset.vee.before(btnHideSearch);
 
 		const btnShowSearch = veT`<button class="ve-btn ve-btn-block ve-btn-default ve-btn-xs" type="button">查看列表</button>`;
@@ -1537,7 +1537,7 @@ class ListPage {
 		btn ||= this._getOrTabRightButton(`link-export`, `glyphicon-magnet`);
 		btn.vee.addClass("ve-btn-copy-effect")
 			.vee.onn("click", evt => this._pHandleClick_doCopyFilterLink(evt, {btn, isAllowNonExtension: true}))
-			.vee.tooltip("复制筛选链接 (SHIFT adds list; CTRL copies @filter tag)");
+			.vee.tooltip("复制筛选链接（按住 Shift 包含列表；按住 Ctrl 复制 @filter 标签）");
 	}
 
 	_bindLinkEngSiteButton ({btn} = {}) {
@@ -1586,7 +1586,7 @@ class ListPage {
 			Renderer.hover.getHoverContent_statsCode(this._lastRender.entity),
 			Renderer.hover.getWindowPositionFromEvent(evt),
 			{
-				title: `${this._lastRender.entity.name} \u2014 Source Data`,
+				title: `${this._lastRender.entity.name} \u2014 源数据`,
 				isPermanent: true,
 				isBookContent: true,
 			},
@@ -1670,7 +1670,7 @@ class ListPage {
 		},
 	) {
 		const helpText = [];
-		if (isBindFindHotkey) helpText.push(`Hotkey: f.`);
+		if (isBindFindHotkey) helpText.push("快捷键：f。");
 
 		const list = new List({iptSearch, wrpList, syntax, helpText, ...optsList});
 
@@ -1702,7 +1702,7 @@ class ListPage {
 				btnClear
 					.vee.toggleClass("ve-no-events", !hasText)
 					.vee.toggleClass("ve-clickable", hasText)
-					.vee.tooltip(hasText ? "Clear" : null)
+					.vee.tooltip(hasText ? "清空" : null)
 					.vee.html(`<span class="glyphicon ${hasText ? `glyphicon-remove` : `glyphicon-search`}"></span>`);
 			});
 		};
@@ -1868,7 +1868,7 @@ class ListPage {
 
 		this._contextMenuList = ContextUtil.getMenu([
 			new ContextUtil.Action(
-				"Popout",
+				"弹出窗口",
 				async (evt, {userData}) => {
 					const {ele, selection} = userData;
 					await this._handleGenericContextMenuClick_pDoMassPopout(evt, ele, selection);
@@ -1892,14 +1892,14 @@ class ListPage {
 
 		return this._sublistManager.isSublistItemsCountable
 			? new ContextUtil.Action(
-				"Add",
+				"添加",
 				async () => {
 					await this._sublistManager.pHandleClick_btnAddAll({entities: getEntities()});
 					this._updateSelected();
 				},
 			)
 			: new ContextUtil.Action(
-				"Pin",
+				"固定",
 				async () => {
 					await this._sublistManager.pHandleClick_btnPinAll({entities: getEntities()});
 					this._updateSelected();
@@ -1909,7 +1909,7 @@ class ListPage {
 
 	_getContextActionBlocklist () {
 		return new ContextUtil.Action(
-			"Blocklist",
+			"加入屏蔽列表",
 			async (evt, {userData}) => {
 				const {ele, selection} = userData;
 				await this._handleGenericContextMenuClick_pDoMassBlocklist(evt, ele, selection);
@@ -2242,7 +2242,7 @@ class ListPage {
 		try {
 			sub = this._filterBox.setFromSubHashes(sub);
 		} catch (e) {
-			JqueryUtil.doToast({type: "danger", content: `Failed to set filter state from URL! ${VeCt.STR_SEE_CONSOLE}`, isAutoHide: false});
+			JqueryUtil.doToast({type: "danger", content: `无法从网址设置筛选器状态！ ${VeCt.STR_SEE_CONSOLE}`, isAutoHide: false});
 			setTimeout(() => { throw e; });
 		}
 
@@ -2255,7 +2255,7 @@ class ListPage {
 		try {
 			sub = await this._sublistManager.pSetFromSubHashes(sub, this._pPreloadSublistSources.bind(this));
 		} catch (e) {
-			JqueryUtil.doToast({type: "danger", content: `Failed to set sublist state from URL! ${VeCt.STR_SEE_CONSOLE}`, isAutoHide: false});
+			JqueryUtil.doToast({type: "danger", content: `无法从网址设置收藏列表状态！ ${VeCt.STR_SEE_CONSOLE}`, isAutoHide: false});
 			setTimeout(() => { throw e; });
 		}
 
@@ -2268,7 +2268,7 @@ class ListPage {
 		try {
 			sub = await this._bookView.pHandleSub(sub);
 		} catch (e) {
-			JqueryUtil.doToast({type: "danger", content: `Failed to set book view state from URL! ${VeCt.STR_SEE_CONSOLE}`, isAutoHide: false});
+			JqueryUtil.doToast({type: "danger", content: `无法从网址设置书籍视图状态！ ${VeCt.STR_SEE_CONSOLE}`, isAutoHide: false});
 			setTimeout(() => { throw e; });
 		}
 
@@ -2497,7 +2497,7 @@ class ListPage {
 		const hoverWindow = Renderer.hover.getShowWindow(
 			veT`<div class="ve-flex-col">
 				<div class="ve-split-v-center ve-mb-2 ve-px-2 ve-mt-2">
-					<i class="ve-mr-2">Optionally resize <kbd title="(The width of)">&harr;</kbd> the window, then Copy or Save.</i>
+					<i class="ve-mr-2">可按需调整 <kbd title="宽度">&harr;</kbd>窗口大小，然后复制或保存。</i>
 					<div class="ve-flex-v-center">
 						${btnToggleDayTheme}
 						<div class="ve-btn-group ve-ml-2">
@@ -2514,7 +2514,7 @@ class ListPage {
 				evt,
 			),
 			{
-				title: `Image Export - ${ent.name}`,
+				title: `导出图片 — ${ent.name}`,
 				isPermanent: true,
 				isBookContent: Renderer.hover.isBookContentStyledPage(page),
 				isResizeOnlyWidth: true,
@@ -2856,7 +2856,7 @@ class ListPageBookView extends BookModeViewBase {
 		this._fnsCleanupCompRender.push(() => this._comp._removeHookBase("isRenderCopies", hkIsRenderCopies));
 
 		return veT`<label class="ve-flex-vh-center ve-ml-3">
-			<span class="ve-mr-2 ve-help" title="If enabled, each copy of a listed ${this._nameSingular} will be displayed separately. This may be preferable when printing handouts.">显示重复项</span>
+			<span class="ve-mr-2 ve-help" title="启用后，列表中每个重复的${this._nameSingular}都会单独显示，打印讲义时可能更方便。">显示重复项</span>
 			${cbIsRenderCopies}
 		</label>`;
 	}

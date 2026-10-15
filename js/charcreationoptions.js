@@ -4,12 +4,12 @@ class CharCreationOptionsSublistManager extends SublistManager {
 	static _getRowTemplate () {
 		return [
 			new SublistCellTemplate({
-				name: "Type",
+				name: "类型",
 				css: "ve-col-5 ve-text-center ve-pl-0 ve-pr-1",
 				colStyle: "text-center",
 			}),
 			new SublistCellTemplate({
-				name: "Name",
+				name: "名称",
 				css: "ve-bold ve-col-7 ve-pl-1 ve-pr-0",
 				colStyle: "",
 			}),
@@ -62,9 +62,9 @@ class CharCreationOptionsPage extends ListPage {
 			dataProps: ["charoption"],
 
 			bookViewOptions: {
-				nameSingular: "character creation option",
-				namePlural: "character creation options",
-				pageTitle: "Character Creation Options Book View",
+				nameSingular: "角色创建选项",
+				namePlural: "角色创建选项",
+				pageTitle: "角色创建选项书籍视图",
 			},
 		});
 	}

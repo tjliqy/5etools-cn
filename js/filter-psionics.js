@@ -13,10 +13,12 @@ class PageFilterPsionics extends PageFilterBase {
 	constructor () {
 		super({sourceFilterOpts: {deselFn: () => false}});
 
-		this._typeFilter = new Filter({header: "Type", items: [Parser.PSI_ABV_TYPE_TALENT, Parser.PSI_ABV_TYPE_DISCIPLINE], displayFn: Parser.psiTypeToFull, itemSortFn: PageFilterPsionics._sortFilterTypes});
+		this._typeFilter = new Filter({header: "Type", cnHeader: "类型", items: [Parser.PSI_ABV_TYPE_TALENT, Parser.PSI_ABV_TYPE_DISCIPLINE], displayFn: Parser.psiTypeToFull, itemSortFn: PageFilterPsionics._sortFilterTypes});
 		this._orderFilter = new Filter({
 			header: "Order",
+			cnHeader: "修行法门",
 			items: [Parser.PSI_ORDER_NONE],
+			displayFn: order => order === Parser.PSI_ORDER_NONE ? "无" : order,
 		});
 	}
 

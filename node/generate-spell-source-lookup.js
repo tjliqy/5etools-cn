@@ -1,3 +1,4 @@
+import "./locale/i18n.js";
 // TODO this replaces `generate-subclass-lookup.js` in effect
 // TODO make a system for generating the same data on homebrew docs
 
@@ -25,7 +26,7 @@ async function pMain () {
 
 	ut.unpatchLoadJson();
 
-	console.log("Regenerated spell source lookup.");
+	console.log("已重新生成法术来源检索表。");
 }
 
 export default pMain();

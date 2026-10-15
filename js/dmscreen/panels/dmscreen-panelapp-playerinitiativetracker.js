@@ -25,7 +25,7 @@ export class InitiativeTrackerPlayerV1 extends DmScreenPanelAppBase {
 		view.setElements(eleMeta, eleHead, eleRows);
 
 		let ui;
-		const btnConnectRemote = veT`<button class="ve-btn ve-btn-primary ve-mb-2 ve-min-w-200p" title="Connect to a tracker outside of this browser tab.">Connect to Remote Tracker</button>`
+		const btnConnectRemote = veT`<button class="ve-btn ve-btn-primary ve-mb-2 ve-min-w-200p" title="连接此浏览器标签页之外的追踪器。">连接远程追踪器</button>`
 			.vee.onn("click", async () => {
 				btnConnectRemote.vee.detach();
 				btnConnectLocal.vee.detach();
@@ -36,9 +36,9 @@ export class InitiativeTrackerPlayerV1 extends DmScreenPanelAppBase {
 				const iptServerToken = veT`<input class="ve-form-control ve-input-sm ve-code">`
 					.vee.onn("change", () => iptServerToken.vee.removeClass("form-control--error"))
 					.vee.disableSpellcheck();
-				const btnGenConnect = veT`<button class="ve-btn ve-btn-primary ve-btn-xs ve-mr-2">Connect</button>`;
+				const btnGenConnect = veT`<button class="ve-btn ve-btn-primary ve-btn-xs ve-mr-2">连接</button>`;
 
-				const btnCancel = veT`<button class="ve-btn ve-btn-default ve-btn-xs">Back</button>`
+				const btnCancel = veT`<button class="ve-btn ve-btn-default ve-btn-xs">返回</button>`
 					.vee.onn("click", () => {
 						// restore original state
 						wrpClient.remove();
@@ -47,12 +47,12 @@ export class InitiativeTrackerPlayerV1 extends DmScreenPanelAppBase {
 
 				const wrpClient = veT`<div class="ve-flex-col ve-w-100">
 					<div class="ve-flex-vh-center ve-px-4 ve-mb-2">
-						<span style="min-width: fit-content;" class="ve-mr-2">Player Name</span>
+						<span style="min-width: fit-content;" class="ve-mr-2">玩家名称</span>
 						${iptPlayerName}
 					</div>
 
 					<div class="ve-flex-vh-center ve-px-4 ve-mb-2">
-						<span style="min-width: fit-content;" class="ve-mr-2">Server Token</span>
+						<span style="min-width: fit-content;" class="ve-mr-2">服务端令牌</span>
 						${iptServerToken}
 					</div>
 
@@ -73,26 +73,26 @@ export class InitiativeTrackerPlayerV1 extends DmScreenPanelAppBase {
 						InitiativeTrackerPlayerMessageHandlerScreenV1.initUnloadMessage();
 					} catch (e) {
 						btnGenConnect.vee.attr("disabled", false);
-						JqueryUtil.doToast({content: `Failed to connect. ${VeCt.STR_SEE_CONSOLE}`, type: "danger"});
+						JqueryUtil.doToast({content: `连接失败。 ${VeCt.STR_SEE_CONSOLE}`, type: "danger"});
 						setTimeout(() => { throw e; });
 					}
 				});
 			});
 
-		const btnConnectLocal = veT`<button class="ve-btn ve-btn-primary ve-min-w-200p">Connect to Local Tracker</button>`
+		const btnConnectLocal = veT`<button class="ve-btn ve-btn-primary ve-min-w-200p">连接本地追踪器</button>`
 			.vee.onn("click", async () => {
 				const panelApps = DmScreenUtil.getPanelApps({board, type: PANEL_TYP_INITIATIVE_TRACKER});
 
-				if (!panelApps.length) return JqueryUtil.doToast({content: "No local trackers detected!", type: "warning"});
+				if (!panelApps.length) return JqueryUtil.doToast({content: "未检测到本地追踪器！", type: "warning"});
 
 				if (panelApps.length === 1) {
 					try {
 						const token = await panelApps[0].pDoConnectLocalV1();
-						ui = new InitiativeTrackerPlayerUiV1(view, "Local", token);
+						ui = new InitiativeTrackerPlayerUiV1(view, "本地", token);
 						await ui.pInit();
 						InitiativeTrackerPlayerMessageHandlerScreenV1.initUnloadMessage();
 					} catch (e) {
-						JqueryUtil.doToast({content: `Failed to connect. ${VeCt.STR_SEE_CONSOLE}`, type: "danger"});
+						JqueryUtil.doToast({content: `连接失败。 ${VeCt.STR_SEE_CONSOLE}`, type: "danger"});
 						setTimeout(() => { throw e; });
 					}
 					return;
@@ -102,12 +102,12 @@ export class InitiativeTrackerPlayerV1 extends DmScreenPanelAppBase {
 				btnConnectLocal.vee.detach();
 
 				const selTracker = veT`<select class="ve-form-control ve-input-xs ve-mr-1">
-					<option value="-1" disabled>Select a local tracker</option>
+					<option value="-1" disabled>选择本地追踪器</option>
 				</select>`.vee.onn("change", () => selTracker.vee.removeClass("form-control--error"));
 				panelApps.forEach((panelApp, i) => selTracker.vee.appends(`<option value="${i}">${panelApp.getSummary()}</option>`));
 				selTracker.vee.val("-1");
 
-				const btnOk = veT`<button class="ve-btn ve-btn-primary ve-btn-xs">OK</button>`
+				const btnOk = veT`<button class="ve-btn ve-btn-primary ve-btn-xs">确定</button>`
 					.vee.onn("click", async () => {
 						if (selTracker.vee.val() == null) return selTracker.vee.addClass("form-control--error");
 
@@ -115,11 +115,11 @@ export class InitiativeTrackerPlayerV1 extends DmScreenPanelAppBase {
 
 						try {
 							const token = await panelApps[Number(selTracker.vee.val())].pDoConnectLocalV1();
-							ui = new InitiativeTrackerPlayerUiV1(view, "Local", token);
+							ui = new InitiativeTrackerPlayerUiV1(view, "本地", token);
 							await ui.pInit();
 							InitiativeTrackerPlayerMessageHandlerScreenV1.initUnloadMessage();
 						} catch (e) {
-							JqueryUtil.doToast({content: `Failed to connect. ${VeCt.STR_SEE_CONSOLE}`, type: "danger"});
+							JqueryUtil.doToast({content: `连接失败。 ${VeCt.STR_SEE_CONSOLE}`, type: "danger"});
 							// restore original state
 							btnCancel.remove();
 							wrpSel.remove();
@@ -133,7 +133,7 @@ export class InitiativeTrackerPlayerV1 extends DmScreenPanelAppBase {
 						${btnOk}
 					</div>`.vee.appendTo(view.wrpInitial);
 
-				const btnCancel = veT`<button class="ve-btn ve-btn-default ve-btn-xs">Back</button>`
+				const btnCancel = veT`<button class="ve-btn ve-btn-default ve-btn-xs">返回</button>`
 					.vee.onn("click", () => {
 						// restore original state
 						btnCancel.remove();
@@ -174,7 +174,7 @@ class InitiativeTrackerPlayerMessageHandlerScreenV1 extends InitiativeTrackerPla
 
 	static initUnloadMessage () {
 		window.addEventListener("beforeunload", evt => {
-			const message = `The connection will be closed`;
+			const message = `连接将被关闭`;
 			(evt || window.event).message = message;
 			return message;
 		});
@@ -200,16 +200,16 @@ export class InitiativeTrackerPlayerV0 extends DmScreenPanelAppBase {
 		const view = new InitiativeTrackerPlayerMessageHandlerScreenV0();
 		view.setElements(eleMeta, eleHead, eleRows);
 
-		const btnConnectRemote = veT`<button class="ve-btn ve-btn-primary ve-mb-2 ve-min-w-200p" title="Connect to a tracker outside of this browser tab.">Connect to Remote Tracker</button>`
+		const btnConnectRemote = veT`<button class="ve-btn ve-btn-primary ve-mb-2 ve-min-w-200p" title="连接此浏览器标签页之外的追踪器。">连接远程追踪器</button>`
 			.vee.onn("click", () => {
 				btnConnectRemote.vee.detach();
 				btnConnectLocal.vee.detach();
 
 				const iptServerToken = veT`<input class="ve-form-control ve-input-sm ve-code">`.vee.disableSpellcheck();
-				const btnGenClientToken = veT`<button class="ve-btn ve-btn-primary ve-btn-xs">Generate Client Token</button>`;
+				const btnGenClientToken = veT`<button class="ve-btn ve-btn-primary ve-btn-xs">生成客户端令牌</button>`;
 				const iptClientToken = veT`<input class="ve-form-control ve-input-sm ve-code ve-copyable">`.vee.disableSpellcheck();
 
-				const btnCancel = veT`<button class="ve-btn ve-btn-default ve-btn-xs">Back</button>`
+				const btnCancel = veT`<button class="ve-btn ve-btn-default ve-btn-xs">返回</button>`
 					.vee.onn("click", () => {
 						// restore original state
 						wrpClient.remove();
@@ -218,7 +218,7 @@ export class InitiativeTrackerPlayerV0 extends DmScreenPanelAppBase {
 
 				const wrpClient = veT`<div class="ve-flex-col ve-w-100">
 					<div class="ve-flex-vh-center ve-px-4 ve-mb-2">
-						<span style="min-width: fit-content;" class="ve-mr-2">Server Token</span>
+						<span style="min-width: fit-content;" class="ve-mr-2">服务端令牌</span>
 						${iptServerToken}
 					</div>
 
@@ -227,7 +227,7 @@ export class InitiativeTrackerPlayerV0 extends DmScreenPanelAppBase {
 					</div>
 
 					<div class="ve-flex-vh-center ve-px-4 ve-mb-2">
-						<span style="min-width: fit-content;" class="ve-mr-2">Client Token</span>
+						<span style="min-width: fit-content;" class="ve-mr-2">客户端令牌</span>
 						${iptClientToken}
 					</div>
 
@@ -240,12 +240,12 @@ export class InitiativeTrackerPlayerV0 extends DmScreenPanelAppBase {
 				ui.init();
 			});
 
-		const btnConnectLocal = veT`<button class="ve-btn ve-btn-primary ve-min-w-200p" title="Connect to a tracker in this browser tab.">Connect to Local Tracker</button>`
+		const btnConnectLocal = veT`<button class="ve-btn ve-btn-primary ve-min-w-200p" title="连接此浏览器标签页中的追踪器。">连接本地追踪器</button>`
 			.vee.onn("click", async () => {
 				const panelApps = DmScreenUtil.getPanelApps({board, type: PANEL_TYP_INITIATIVE_TRACKER});
 
 				if (!panelApps.length) {
-					JqueryUtil.doToast({content: "No local trackers detected!", type: "warning"});
+					JqueryUtil.doToast({content: "未检测到本地追踪器！", type: "warning"});
 					return;
 				}
 
@@ -258,13 +258,13 @@ export class InitiativeTrackerPlayerV0 extends DmScreenPanelAppBase {
 				btnConnectLocal.vee.detach();
 
 				const selTracker = veT`<select class="ve-form-control ve-input-xs ve-mr-1">
-					<option value="-1" disabled>Select a local tracker</option>
+					<option value="-1" disabled>选择本地追踪器</option>
 				</select>`
 					.vee.onn("change", () => selTracker.vee.removeClass("error-background"));
 				panelApps.forEach((panelApp, i) => selTracker.vee.appends(`<option value="${i}">${panelApp.getSummary()}</option>`));
 				selTracker.vee.val("-1");
 
-				const btnOk = veT`<button class="ve-btn ve-btn-primary ve-btn-xs">OK</button>`
+				const btnOk = veT`<button class="ve-btn ve-btn-primary ve-btn-xs">确定</button>`
 					.vee.onn("click", async () => {
 						if (selTracker.vee.val() === "-1") return selTracker.vee.addClass("error-background");
 
@@ -281,7 +281,7 @@ export class InitiativeTrackerPlayerV0 extends DmScreenPanelAppBase {
 					${btnOk}
 				</div>`.vee.appendTo(view.wrpInitial);
 
-				const btnCancel = veT`<button class="ve-btn ve-btn-default ve-btn-xs">Back</button>`
+				const btnCancel = veT`<button class="ve-btn ve-btn-default ve-btn-xs">返回</button>`
 					.vee.onn("click", () => {
 						// restore original state
 						btnCancel.remove();
@@ -319,7 +319,7 @@ class InitiativeTrackerPlayerMessageHandlerScreenV0 extends InitiativeTrackerPla
 		window.addEventListener("beforeunload", evt => {
 			if (!this._clientData.client.isActive) return;
 
-			const message = `The connection will be closed`;
+			const message = `连接将被关闭`;
 			(evt || window.event).message = message;
 			return message;
 		});

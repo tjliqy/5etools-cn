@@ -60,7 +60,7 @@ function waitUntil (
 }
 
 const offlineAlert = async (url) => {
-	console.log(`Fetch failure. We are offline, and cannot access URL "${url}"`);
+	console.log(`获取失败：当前处于离线状态，无法访问 URL“${url}”。`);
 	const clients = await self.clients.matchAll({type: "window"});
 	let payload = "generic";
 	if (/\.(?:png|gif|webm|jpg|webp|jpeg|svg)$/m.test(url)) payload = "image";
@@ -86,7 +86,7 @@ const resetAll = async () => {
 		const cacheExpiration = new CacheExpiration(cacheName, {maxEntries: 1});
 		await cacheExpiration.delete();
 
-		console.log(`deleted cache "${cacheName}"`);
+		console.log(`已删除缓存“${cacheName}”`);
 	}
 
 	await self.registration.unregister();
@@ -103,7 +103,7 @@ addEventListener("message", (event) => {
 		}
 
 		case "RESET": {
-			console.log("Resetting...");
+			console.log("正在重置…");
 			event.waitUntil(resetAll());
 			break;
 		}
@@ -147,7 +147,7 @@ class RevisionCacheFirst extends Strategy {
 				}
 
 				case "CANCEL_CACHE_ROUTES": {
-					console.log("Aborting cache!");
+					console.log("正在中止缓存！");
 					this.cacheRoutesAbortController?.abort();
 					this.cacheRoutesAbortController = null;
 					break;
@@ -171,14 +171,14 @@ class RevisionCacheFirst extends Strategy {
 		 */
 		const cacheKey = createCacheKey({url, revision: runtimeManifest.get(url)}).cacheKey;
 
-		console.log(`Trying to resolve URL "${url}" with key "${cacheKey}"`);
+		console.log(`正在使用键“${cacheKey}”解析 URL“${url}”`);
 
 		const cacheResponse = await handler.cacheMatch(cacheKey);
 		// undefined is returned if we don't have a cache response for the key
 		if (cacheResponse !== undefined) return cacheResponse;
 
 		// we need to fetch the request from the network and store it with revision for next time
-		console.log(`Fetching URL "${url}" over the network for RevisionFirstCache`);
+		console.log(`正在通过网络为优先按版本的缓存获取 URL“${url}”`);
 		try {
 			const fetchResponse = await handler.fetch(request, this.constructor._FETCH_OPTIONS_VET);
 			// no await because it can happen later
@@ -214,7 +214,7 @@ class RevisionCacheFirst extends Strategy {
 					// this will happen if a revision is updated or a file is no longer included in the glob
 					if (!validCacheKeys.has(key)) {
 						// we can save space by deleting this element--it wouldn't be served because the revision is wrong
-						console.log(`Deleting key "${key}" from the cache because its revision does not match`);
+						console.log(`缓存键“${key}”的版本不匹配，正在删除`);
 						await cache.delete(key);
 					}
 				}),
@@ -253,17 +253,17 @@ class RevisionCacheFirst extends Strategy {
 			currentCacheKeys = new Set((await cache.keys()).map(request => request.url));
 		} catch (e) {
 			isTooManyKeys = true;
-			console.error("Failed to load cache keys due to error; falling back on per-request check...", e);
+			console.error("无法加载缓存键，改为逐个请求检查…", e);
 		}
 		const validCacheKeys = Array.from(runtimeManifest).map(([url, revision]) => createCacheKey({url, revision}).cacheKey);
-		console.log(`Found ${validCacheKeys.length} valid cache keys`);
+		console.log(`找到 ${validCacheKeys.length} 个有效缓存键`);
 
 		const routeRegex = data.payload.routeRegex;
 		/**
 		 * These are the keys which have not been cached yet AND match the regex for routes
 		 */
 		const routesToCache = validCacheKeys.filter((key) => (isTooManyKeys || !currentCacheKeys.has(key)) && routeRegex.test(key));
-		console.log(`Found ${routesToCache.length} routes to cache`);
+		console.log(`找到 ${routesToCache.length} 条待缓存路由`);
 
 		const fetchTotal = routesToCache.length;
 		let fetched = 0;
@@ -304,14 +304,14 @@ class RevisionCacheFirst extends Strategy {
 				// (See above)
 				const keysForUrl = isTooManyKeys ? await cache.keys(url) : null;
 				if (isTooManyKeys && keysForUrl.length) {
-					console.log(`Skipping ${cleanUrl} (too many keys and already in cache)`);
+					console.log(`跳过 ${cleanUrl}（缓存键过多，且已存在于缓存中）`);
 					fetched++;
 					postProgress({frozenFetched: fetched});
 					continue;
 				}
 
 				const response = await fetch(cleanUrl, {...this.constructor._FETCH_OPTIONS_VET, signal});
-				if (!response.ok) throw new Error(`Failed to preload "${cleanUrl}": HTTP ${response.status}`);
+				if (!response.ok) throw new Error(`预加载“${cleanUrl}”失败：HTTP ${response.status}`);
 				if (signal.aborted) return;
 				// this await could be omitted to further speed up fetching at risk of failure during error
 				await cache.put(url, response);
@@ -409,7 +409,7 @@ addEventListener("activate", event => {
 			if (!/\d+\.\d+\.\d+/.test(cacheName)) continue;
 
 			await caches.delete(cacheName);
-			console.log(`Deleted legacy cache "${cacheName}"`);
+			console.log(`已删除旧缓存“${cacheName}”`);
 		}
 	})());
 });

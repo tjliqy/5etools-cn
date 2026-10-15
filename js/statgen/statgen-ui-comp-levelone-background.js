@@ -2,7 +2,7 @@ import {StatGenUiRenderLevelOneEntityBase} from "./statgen-ui-comp-levelone-enti
 
 export class StatGenUiRenderLevelOneBackground extends StatGenUiRenderLevelOneEntityBase {
 	_title = I18nUtil.get("common.background");
-	_titleShort = "Backg.";
+	_titleShort = "背景";
 	_propIxEntity = "common_ixBackground";
 	_propIxAbilityScoreSet = "common_ixAbilityScoreSetBackground";
 	_propData = "_backgrounds";

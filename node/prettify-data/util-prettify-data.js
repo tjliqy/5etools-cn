@@ -8,7 +8,7 @@ import {PropOrder} from "../../js/utils-proporder.js";
 const _logUnhandledProps = ({unhandledKeys}) => {
 	if (!Object.keys(unhandledKeys).length) return;
 
-	console.warn(`Unhandled keys:`);
+	console.warn(`未处理的键：`);
 	Object.keys(unhandledKeys)
 		.forEach(prop => console.warn(`\t${prop}`));
 };
@@ -31,7 +31,7 @@ export const prettifyFile = (file, {unhandledKeys = null, isNoSortRootArrays = f
 	const isLogUnhandledProps = unhandledKeys == null;
 	unhandledKeys ||= {};
 
-	console.log(`\tPrettifying ${file}...`);
+	console.log(`\t正在格式化 ${file}…`);
 	const json = ut.readJson(file);
 	const filename = path.posix.basename(file);
 	const {json: jsonPrettified, isModified} = getPrettified(

@@ -7,7 +7,7 @@ import fs from "fs";
 const _IS_FIX = false;
 
 async function main () {
-	console.log(`##### Validating image paths #####`);
+	console.log(`##### 正在验证图片路径 #####`);
 
 	const walker = MiscUtil.getWalker({isNoModification: true});
 
@@ -37,7 +37,7 @@ async function main () {
 
 					fs.mkdirSync(pathOutFull.split("/").slice(0, -1).join("/"), {recursive: true});
 					fs.copyFileSync(pathInFull, pathOutFull);
-					console.log(`Copied file: "${pathInFull}" -> "${pathOutFull}"`);
+					console.log(`已复制文件：“${pathInFull}” → “${pathOutFull}”`);
 
 					obj.href.path = pathOut;
 				},
@@ -68,7 +68,7 @@ async function main () {
 				return;
 			}
 
-			throw new Error("Unimplemented!");
+			throw new Error("尚未实现！");
 		});
 
 	if (errors.length) {

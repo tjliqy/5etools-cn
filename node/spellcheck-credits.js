@@ -1,3 +1,4 @@
+import "./locale/i18n.js";
 import {loadConfig, spellCheckDocument} from "cspell-lib";
 import {readJsonSync, writeJsonSync} from "5etools-utils/lib/UtilFs.js";
 import "../js/parser.js";
@@ -30,7 +31,7 @@ const getJson = () => {
 				});
 		});
 
-	console.log(`Found ${jsonCredits.length} "Credits" entries...`);
+	console.log(`找到 ${jsonCredits.length} 个“Credits”条目…`);
 	return jsonCredits;
 };
 
@@ -61,7 +62,7 @@ const pMain = async () => {
 			console.log(`${_CHAR_RED}${issue.text}${_CHAR_RESET}\t-- ${_CHAR_DIM}${issue.line.text.trim()}${_CHAR_RESET}`);
 			spellingErrors.push(issue.text);
 			if (issue.suggestions?.length) {
-				console.log(`\tSuggestions: ${_CHAR_YELLOW}${issue.suggestions.join(", ")}${_CHAR_RESET}`);
+				console.log(`\t建议：${_CHAR_YELLOW}${issue.suggestions.join(", ")}${_CHAR_RESET}`);
 			}
 		});
 
@@ -69,7 +70,7 @@ const pMain = async () => {
 	spellingErrors
 		.sort(SortUtil.ascSortLower);
 	fs.writeFileSync(filenameOut, spellingErrors.join("\n"), "utf-8");
-	console.log(`Found ${result.issues.length}; wrote words to "${filenameOut}".`);
+	console.log(`发现 ${result.issues.length} 个问题；已将词语写入“${filenameOut}”。`);
 };
 
 await pMain();

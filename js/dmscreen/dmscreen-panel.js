@@ -18,7 +18,7 @@ import {adventureLoader, bookLoader, RuleLoader} from "./dmscreen-corpusloader.j
 import {AdventureOrBookView} from "./panels/dmscreen-panels-legacy.js";
 import {Panzoom} from "../utils-ui/utils-ui-panzoom.js";
 
-const _TITLE_LOADING = "Loading...";
+const _TITLE_LOADING = "加载中...";
 
 export class Panel {
 	constructor (board, x, y, width = 1, height = 1, title = "") {
@@ -171,7 +171,7 @@ export class Panel {
 		return panel;
 	}
 
-	static _getEleLoading (message = "Loading") {
+	static _getEleLoading (message = "加载中") {
 		return veT`<div class="panel-content-wrapper-inner"><div class="ve-ui-search__message loading-spinner"><i>${message}...</i></div></div>`;
 	}
 
@@ -206,7 +206,7 @@ export class Panel {
 		).then(ent => {
 			if (!ent) {
 				setTimeout(() => { throw new Error(`Failed to load entity: "${hash}" (${source}) from ${page}`); });
-				return this.doPopulate_Error({message: `Failed to load <code>${hash}</code> from page <code>${page}</code>! (Content does not exist.)`}, title);
+				return this.doPopulate_Error({message: `无法从页面 <code>${page}</code> 加载 <code>${hash}</code>！该内容不存在。`}, title);
 			}
 
 			const fn = Renderer.hover.getFnRenderCompact(page);
@@ -451,13 +451,13 @@ export class Panel {
 			panelType: PANEL_TYP_ROLLBOX,
 			contentMeta: null,
 			eleContent: veT`<div class="panel-content-wrapper-inner"></div>`.vee.appends(Renderer.dice.getRoller().vee.addClass("rollbox-panel")),
-			title: title || "Dice Roller",
+			title: title || "骰子投掷器",
 			tabCanRename: true,
 			tabRenamed: !!title,
 		});
 	}
 
-	doPopulate_Image (url, title = "Image") {
+	doPopulate_Image (url, title = "图片") {
 		const meta = {u: url};
 		const wrpPanel = veT`<div class="panel-content-wrapper-inner"></div>`;
 		const wrpImage = veT`<div class="panel-content-wrapper-img"></div>`.vee.appendTo(wrpPanel);
@@ -510,7 +510,7 @@ export class Panel {
 		evt.stopPropagation();
 
 		const page = await InputUiUtil.pGetUserEnum({
-			title: "Select Page",
+			title: "选择页面",
 			values: Object.keys(UrlUtil.SUBLIST_PAGES)
 				.sort((a, b) => SortUtil.ascSortLower(UrlUtil.pageToDisplayPage(a), UrlUtil.pageToDisplayPage(b))),
 			fnDisplay: page => UrlUtil.pageToDisplayPage(page),
@@ -518,7 +518,7 @@ export class Panel {
 		});
 		if (!page) return;
 
-		const pFnConfirmPanels = () => InputUiUtil.pGetUserBoolean({title: "Add as Panels", htmlDescription: "Adding entries one-per-panel may resize your DM Screen<br>Are you sure you want to add as panels?", textYes: "Yes", textNo: "Cancel"});
+		const pFnConfirmPanels = () => InputUiUtil.pGetUserBoolean({title: "添加为面板", htmlDescription: "每个条目添加为独立面板可能会调整 DM 帷幕的布局。<br>确定添加为面板吗？", textYes: "是", textNo: "取消"});
 
 		await ListUtilEntity.pDoUserInputLoadSublist({
 			page,
@@ -532,30 +532,30 @@ export class Panel {
 			},
 
 			optsFromCurrent: {
-				renamer: name => `${name} (One per Panel)`,
+				renamer: name => `${name}（每项一个面板）`,
 				pFnConfirm: pFnConfirmPanels,
 			},
 			optsFromSaved: {
-				renamer: name => `${name} (One per Panel)`,
+				renamer: name => `${name}（每项一个面板）`,
 				pFnConfirm: pFnConfirmPanels,
 			},
 			optsFromFile: {
-				renamer: name => `${name} (One per Panel)`,
+				renamer: name => `${name}（每项一个面板）`,
 				pFnConfirm: pFnConfirmPanels,
 			},
 
 			altGenerators: [
 				{
 					fromCurrent: {
-						renamer: name => `${name} (Stacked Tabs)`,
+					renamer: name => `${name}（堆叠标签页）`,
 						otherOpts: {isTabs: true},
 					},
 					fromSaved: {
-						renamer: name => `${name} (Stacked Tabs)`,
+					renamer: name => `${name}（堆叠标签页）`,
 						otherOpts: {isTabs: true},
 					},
 					fromFile: {
-						renamer: name => `${name} (Stacked Tabs)`,
+					renamer: name => `${name}（堆叠标签页）`,
 						otherOpts: {isTabs: true},
 					},
 				},
@@ -815,7 +815,7 @@ export class Panel {
 	_doRenderControls_getBtnOpenInNewTab () {
 		if (!PANEL_TYPS__HAS_PAGE.includes(this.type)) return null;
 
-		return veT`<div class="panel-control-icon glyphicon glyphicon-modal-window" title="Open in New Tab"></div>`
+		return veT`<div class="panel-control-icon glyphicon glyphicon-modal-window" title="在新标签页中打开"></div>`
 			.vee.onn("click", () => {
 				if (!this.contentMeta) return;
 				window.open(this._doRenderControls_getBtnOpenInNewTab_getUrl(), "_blank");
@@ -825,12 +825,12 @@ export class Panel {
 	_doRenderControls () {
 		const btnNewTab = this._doRenderControls_getBtnOpenInNewTab();
 
-		const btnMove = veT`<div class="panel-control-icon glyphicon glyphicon-move" title="Move"></div>`
+		const btnMove = veT`<div class="panel-control-icon glyphicon glyphicon-move" title="移动"></div>`
 			.vee.onn("click", () => {
 				this.setMoveModeActive(!this.getIsMoveModeActive());
 			});
 
-		const btnClose = veT`<div class="panel-control-icon glyphicon glyphicon-remove" title="Close"></div>`
+		const btnClose = veT`<div class="panel-control-icon glyphicon glyphicon-remove" title="关闭"></div>`
 			.vee.onn("click", () => {
 				this.getReplacementPanel();
 			});
@@ -925,7 +925,7 @@ export class Panel {
 			this.pnl = pnl;
 			this._wrpPnlControls = veT`<div class="panel-control-bar"></div>`.vee.appendTo(pnl);
 			this.pnlTitle = veT`<div class="panel-control-bar panel-control-title"></div>`.vee.appendTo(pnl).vee.onn("click", () => this.pnlTitle.vee.toggleClass("panel-control-title--bumped"));
-			this.pnlAddTab = veT`<div class="panel-control-bar panel-control-addtab"><div class="panel-control-icon glyphicon glyphicon-plus" title="Add Tab"></div></div>`
+			this.pnlAddTab = veT`<div class="panel-control-bar panel-control-addtab"><div class="panel-control-icon glyphicon glyphicon-plus" title="添加标签页"></div></div>`
 				.vee.onn("click", async () => {
 					this.setIsTabs(true);
 					this.setDirty(true);
@@ -968,7 +968,7 @@ export class Panel {
 				const curr = wrpTabsInner.scrollLeft;
 				wrpTabsInner.scrollLeft = Math.max(0, curr + delta);
 			}).vee.appendTo(wrpTabs);
-			const btnTabAdd = veT`<button class="ve-btn ve-btn-default content-tab" title="Add Tab"><span class="glyphicon glyphicon-plus"></span></button>`
+			const btnTabAdd = veT`<button class="ve-btn ve-btn-default content-tab" title="添加标签页"><span class="glyphicon glyphicon-plus"></span></button>`
 				.vee.onn("click", () => pOpenAddMenu())
 				.vee.appendTo(wrpTabsInner);
 			this.pnlWrpTabs = wrpTabs;
@@ -1117,11 +1117,11 @@ export class Panel {
 	}
 
 	_getBtnSelTab (ix, title) {
-		title = title || "[Untitled]";
+		title = title || "[未命名]";
 
 		const doCloseTabWithConfirmation = async () => {
 			if (this.board.getCompSettings().getIsConfirmOnPanelTabClose()) {
-				if (!await InputUiUtil.pGetUserBoolean({title: "Close Tab", htmlDescription: `Are you sure you want to close tab "${this.tabDatas[ix].title}"?`, textYes: "Yes", textNo: "Cancel"})) return;
+				if (!await InputUiUtil.pGetUserBoolean({title: "关闭标签页", htmlDescription: `确定关闭标签页“${this.tabDatas[ix].title}”吗？`, textYes: "是", textNo: "取消"})) return;
 			}
 			this.doCloseTab(ix);
 		};
@@ -1149,7 +1149,7 @@ export class Panel {
 				if (!this.tabDatas[ix].tabCanRename) return;
 
 				const existingTitle = this.getTabTitle(ix) || "";
-				const nuTitle = await InputUiUtil.pGetUserString({default: existingTitle, title: "Rename Tab"});
+				const nuTitle = await InputUiUtil.pGetUserString({default: existingTitle, title: "重命名标签页"});
 				if (nuTitle && nuTitle.trim()) {
 					this.setTabTitle(ix, nuTitle);
 				}
@@ -1163,7 +1163,7 @@ export class Panel {
 	}
 
 	getActiveTabTitle () {
-		return this.getTabTitle(this.tabIndex) || "[Untitled]";
+		return this.getTabTitle(this.tabIndex) || "[未命名]";
 	}
 
 	setTabTitle (ix, nuTitle) {

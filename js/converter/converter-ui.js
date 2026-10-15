@@ -28,12 +28,12 @@ class _ConverterUiSettings extends BaseComponent {
 		);
 
 		veT`<div class="ve-flex-col ve-mt-3">
-			<label class="ve-split-v-center ve-w-100 ve-mb-2" title="A separator used to mark the end of one to-be-converted entity (creature, spell, etc.) so that multiple entities can be converted in one run. If left blank, the entire input text will be parsed as one entity.">
+			<label class="ve-split-v-center ve-w-100 ve-mb-2" title="用于标记一个待转换条目（生物、法术等）的结束，以便一次转换多个条目。留空时，整段输入会作为一个条目解析。">
 				<span class="ve-w-66 ve-no-shrink ve-mr-2 ve-flex-v-center">输入分隔符</span>
 				${iptInputSeparator}
 			</label>
 
-			<label class="ve-split-v-center ve-w-100" title="Sets output order when using the &quot;Parse and Add&quot; button, or parsing multiple blocks of text using a separator.">
+			<label class="ve-split-v-center ve-w-100" title="使用“转换并添加”按钮，或通过分隔符解析多段文本时，设置输出顺序。">
 				<span class="ve-w-66 ve-no-shrink ve-mr-2 ve-flex-v-center">&quot;转换并添加&quot; 行为</span>
 				${selAppendPrependMode}
 			</label>
@@ -142,15 +142,15 @@ export class ConverterUi extends BaseComponent {
 			.vee.onn("click", async evt => {
 				const metaCurr = this._getCurrentEntities();
 
-				if (!metaCurr?.entities?.length) return JqueryUtil.doToast({content: "Nothing to preview!", type: "warning"});
-				if (metaCurr.error) return JqueryUtil.doToast({content: `Current output was not valid JSON!`, type: "danger"});
+				if (!metaCurr?.entities?.length) return JqueryUtil.doToast({content: "没有可预览的内容！", type: "warning"});
+				if (metaCurr.error) return JqueryUtil.doToast({content: `当前输出不是有效的 JSON！`, type: "danger"});
 
 				const entries = !this.activeConverter.prop
 					? metaCurr.entities.flat()
 					: metaCurr.entities
 						.map(ent => {
 							// Handle nameless/sourceless entities (e.g. tables)
-							if (!ent.name) ent.name = "(Unnamed)";
+							if (!ent.name) ent.name = "（未命名）";
 							if (!ent.source) ent.source = VeCt.STR_GENERIC;
 
 							return {
@@ -167,7 +167,7 @@ export class ConverterUi extends BaseComponent {
 						entries,
 					});
 				} catch (e) {
-					JqueryUtil.doToast({type: "danger", content: `Could not render preview! ${VeCt.STR_SEE_CONSOLE}`});
+					JqueryUtil.doToast({type: "danger", content: `无法渲染预览！ ${VeCt.STR_SEE_CONSOLE}`});
 					throw e;
 				}
 
@@ -180,7 +180,7 @@ export class ConverterUi extends BaseComponent {
 					content,
 					Renderer.hover.getWindowPositionFromEvent(evt),
 					{
-						title: "Preview",
+						title: "预览",
 						isPermanent: true,
 						cbClose: () => {
 							hovWindowPreview = null;
@@ -192,15 +192,15 @@ export class ConverterUi extends BaseComponent {
 		const btnSaveLocal = veEs(`#btn-save-local`).vee.onn("click", async () => {
 			const metaCurr = this._getCurrentEntities();
 
-			if (!metaCurr?.entities?.length) return JqueryUtil.doToast({content: "Nothing to save!", type: "warning"});
-			if (metaCurr.error) return JqueryUtil.doToast({content: `Current output was not valid JSON!`, type: "danger"});
+			if (!metaCurr?.entities?.length) return JqueryUtil.doToast({content: "没有可保存的内容！", type: "warning"});
+			if (metaCurr.error) return JqueryUtil.doToast({content: `当前输出不是有效的 JSON！`, type: "danger"});
 
 			const prop = this.activeConverter.prop;
 
-			const invalidSources = metaCurr.entities.map(it => !it.source || !BrewUtil2.hasSourceJson(it.source) ? (it.name || it.caption || "(Unnamed)").trim() : false).filter(Boolean);
+			const invalidSources = metaCurr.entities.map(it => !it.source || !BrewUtil2.hasSourceJson(it.source) ? (it.name || it.caption || "（未命名）").trim() : false).filter(Boolean);
 			if (invalidSources.length) {
 				JqueryUtil.doToast({
-					content: `One or more entries have missing or unknown sources: ${invalidSources.join(", ")}`,
+					content: `以下条目缺少来源或来源未知：${invalidSources.join("、")}`,
 					type: "danger",
 				});
 				return;
@@ -212,7 +212,7 @@ export class ConverterUi extends BaseComponent {
 				.map(ent => ent.source);
 			if (uneditableSources.length) {
 				JqueryUtil.doToast({
-					content: `One or more entries have sources which belong to non-btn-enable-edit homebrew: ${uneditableSources.join(", ")}`,
+					content: `以下来源不属于可编辑的自制内容：${uneditableSources.join("、")}`,
 					type: "danger",
 				});
 				return;
@@ -239,13 +239,13 @@ export class ConverterUi extends BaseComponent {
 			if (dupes.length) {
 				JqueryUtil.doToast({
 					type: "warning",
-					content: `Ignored ${dupes.length} duplicate entr${dupes.length === 1 ? "y" : "ies"}`,
+					content: `已忽略 ${dupes.length} 个重复条目`,
 				});
 			}
 
 			if (!dedupedEntries.length) {
 				return JqueryUtil.doToast({
-					content: "Nothing to save!",
+					content: "没有可保存的内容！",
 					type: "warning",
 				});
 			}
@@ -270,7 +270,7 @@ export class ConverterUi extends BaseComponent {
 			const willOverwrite = overwriteMeta.map(it => it.isOverwrite).filter(Boolean);
 			if (
 				willOverwrite.length
-				&& !await InputUiUtil.pGetUserBoolean({title: "Overwrite Entries", htmlDescription: `This will overwrite ${willOverwrite.length} entr${willOverwrite.length === 1 ? "y" : "ies"}. 你确定吗？`, textYes: "Yes", textNo: "Cancel"})
+				&& !await InputUiUtil.pGetUserBoolean({title: "覆盖条目", htmlDescription: `这将覆盖 ${willOverwrite.length} 个条目。确定要继续吗？`, textYes: "是", textNo: "取消"})
 			) {
 				return;
 			}
@@ -285,7 +285,7 @@ export class ConverterUi extends BaseComponent {
 
 			JqueryUtil.doToast({
 				type: "success",
-				content: `Saved!`,
+				content: `已保存！`,
 			});
 		});
 
@@ -296,10 +296,10 @@ export class ConverterUi extends BaseComponent {
 		veEs(`#btn-output-download`).vee.onn("click", () => {
 			const metaCurr = this._getCurrentEntities();
 
-			if (!metaCurr?.entities?.length) return JqueryUtil.doToast({content: "Nothing to download!", type: "warning"});
+			if (!metaCurr?.entities?.length) return JqueryUtil.doToast({content: "没有可下载的内容！", type: "warning"});
 			if (metaCurr.error) {
 				JqueryUtil.doToast({
-					content: `Current output was not valid JSON. Downloading as <span class="ve-code">.txt</span> instead.`,
+					content: `当前输出不是有效的 JSON，将改为下载 <span class="ve-code">.txt</span> 文件。`,
 					type: "warning",
 				});
 				DataUtil.userDownloadText(`converter-output.txt`, metaCurr.text);
@@ -316,7 +316,7 @@ export class ConverterUi extends BaseComponent {
 			const output = this._outText;
 			if (!output || !output.trim()) {
 				return JqueryUtil.doToast({
-					content: "Nothing to copy!",
+					content: "没有可复制的内容！",
 					type: "danger",
 				});
 			}
@@ -335,7 +335,7 @@ export class ConverterUi extends BaseComponent {
 				await pToRun();
 			} catch (x) {
 				const splitStack = x.stack.split("\n");
-				const atPos = splitStack.length > 1 ? splitStack[1].trim() : "(Unknown location)";
+				const atPos = splitStack.length > 1 ? splitStack[1].trim() : "（未知位置）";
 				this._meta.errors = [...this._meta.errors, `${x.message} ${atPos}`];
 				setTimeout(() => { throw x; });
 			}
@@ -353,7 +353,7 @@ export class ConverterUi extends BaseComponent {
 					? this.inText.split(this._state.inputSeparator)
 					: [this.inText]).map(it => it.trim()).filter(Boolean);
 				if (!chunks.length) {
-					this._meta.warnings = [...this._meta.warnings, "No input!"];
+					this._meta.warnings = [...this._meta.warnings, "没有输入内容！"];
 					return;
 				}
 
@@ -400,7 +400,7 @@ export class ConverterUi extends BaseComponent {
 		const stgWarnings = veEs(`#disp-warnings`);
 
 		const getRow = ({prefix, text, prop}) => {
-			const btnClose = veT`<button class="ve-btn ve-btn-danger ve-btn-xs ve-w-24p" title="Dismiss ${prefix} (SHIFT to Dismiss All)">×</button>`
+			const btnClose = veT`<button class="ve-btn ve-btn-danger ve-btn-xs ve-w-24p" title="关闭${prefix}（按 Shift 关闭全部）">×</button>`
 				.vee.onn("click", evt => {
 					if (evt.shiftKey) {
 						this._meta[prop] = [];

@@ -4,7 +4,7 @@ import * as ut from "../node/util.js";
 import {BLOCKLIST_SOURCES_CREDITS} from "../node/consts-credits.js";
 
 async function main () {
-	console.log(`##### Validating adventure/book credits #####`);
+	console.log(`##### 正在验证冒险／书籍署名 #####`);
 
 	const cnt = [
 		{filename: "adventures.json", prop: "adventure"},
@@ -20,12 +20,12 @@ async function main () {
 				});
 			if (!noCredits.length) return 0;
 
-			console.error(`\nMissing "Credits" chapters in "${filename}":\n${noCredits.map(meta => `\t${meta.id}`).join("\n")}`);
+			console.error(`\n“${filename}”中缺少“署名”章节：\n${noCredits.map(meta => `\t${meta.id}`).join("\n")}`);
 			return noCredits.length;
 		})
 		.sum();
 
-	if (!cnt) console.log("Credits are as expected.");
+	if (!cnt) console.log("署名检查通过。");
 
 	return true;
 }

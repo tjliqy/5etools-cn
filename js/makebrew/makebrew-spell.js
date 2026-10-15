@@ -230,7 +230,7 @@ export class SpellBuilder extends BuilderBase {
 			{
 				nullable: true,
 				fnGetHeader: state => {
-					if (this._meta.styleHint === "classic") return "At Higher Levels";
+					if (this._meta.styleHint === "classic") return "升环施法";
 					return state.level === 0 ? "戏法升环" : "升环施法";
 				},
 				fnPostProcess: BuilderUi.fnPostProcessDice,
@@ -415,7 +415,7 @@ export class SpellBuilder extends BuilderBase {
 			<div class="ve-flex-v-center ve-mb-2"><span class="ve-mr-2 mkbru__sub-name--33">页码</span>${iptPage}</div>
 			${wrpBtnRemove}
 		</div>`;
-		this.constructor.getBtnRemoveRow(doUpdateState, otherSourceRows, out, wrp, "Other Source").vee.appendTo(wrpBtnRemove);
+		this.constructor.getBtnRemoveRow(doUpdateState, otherSourceRows, out, wrp, "其他来源").vee.appendTo(wrpBtnRemove);
 
 		out.wrp = wrp;
 		otherSourceRows.push(out);
@@ -486,7 +486,7 @@ export class SpellBuilder extends BuilderBase {
 			</div>
 			${wrpBtnRemove}
 		</div>`;
-		this.getBtnRemoveRow(doUpdateState, timeRows, out, wrp, "Time", {isProtectLast: true}).vee.appendTo(wrpBtnRemove);
+		this.getBtnRemoveRow(doUpdateState, timeRows, out, wrp, "施法时间", {isProtectLast: true}).vee.appendTo(wrpBtnRemove);
 
 		out.wrp = wrp;
 		timeRows.push(out);
@@ -773,7 +773,7 @@ export class SpellBuilder extends BuilderBase {
 		// ENDS
 		const endRows = [];
 		const wrpEndRows = veT`<div class="ve-flex-col"></div>`;
-		const btnAddEnd = veT`<button class="ve-btn ve-btn-xs ve-btn-default">Add &quot;Until&quot; Clause</button>`
+		const btnAddEnd = veT`<button class="ve-btn ve-btn-xs ve-btn-default">添加“直到”条件</button>`
 			.vee.onn("click", () => {
 				SpellBuilder.__getDurationInput__getDurationRow__getEndRow(doUpdateState, endRows, "dispel").wrp.vee.appendTo(wrpEndRows);
 				doUpdateState();
@@ -793,7 +793,7 @@ export class SpellBuilder extends BuilderBase {
 			${stageEnds}
 			${wrpBtnRemove}
 		</div>`;
-		this.getBtnRemoveRow(doUpdateState, durationRows, out, wrp, "Duration", {isProtectLast: true}).vee.appendTo(wrpBtnRemove);
+		this.getBtnRemoveRow(doUpdateState, durationRows, out, wrp, "持续时间", {isProtectLast: true}).vee.appendTo(wrpBtnRemove);
 
 		out.wrp = wrp;
 		durationRows.push(out);
@@ -807,7 +807,7 @@ export class SpellBuilder extends BuilderBase {
 
 		const ixInitialEnd = end ? keys.indexOf(end) : "0";
 		const selEndType = veT`<select class="ve-form-control ve-input-xs ve-mr-2">
-			${keys.map((it, i) => `<option value="${i}">Until ${Parser.spEndTypeToFull(it)}</option>`).join("")}
+			${keys.map((it, i) => `<option value="${i}">直到${Parser.spEndTypeToFull(it)}</option>`).join("")}
 		</select>`.vee.val(ixInitialEnd).vee.onn("change", () => doUpdateState());
 
 		const out = {getEnd};
@@ -817,7 +817,7 @@ export class SpellBuilder extends BuilderBase {
 			<div class="mkbru__sub-name--33 ve-mr-2"></div>
 			<div class="ve-mb-2 ve-flex-v-center ve-w-100">${selEndType}${wrpBtnRemove}</div>
 		</div>`;
-		this.getBtnRemoveRow(doUpdateState, endRows, out, wrp, "Until Clause", {isExtraSmall: true}).vee.appendTo(wrpBtnRemove);
+		this.getBtnRemoveRow(doUpdateState, endRows, out, wrp, "直到条件", {isExtraSmall: true}).vee.appendTo(wrpBtnRemove);
 
 		out.wrp = wrp;
 		endRows.push(out);
@@ -826,11 +826,11 @@ export class SpellBuilder extends BuilderBase {
 
 	__getClassesInputs (cb) {
 		const DEFAULT_CLASS = this._meta.styleHint === SITE_STYLE__CLASSIC
-			? {name: "Wizard", source: Parser.SRC_PHB}
-			: {name: "Wizard", source: Parser.SRC_XPHB};
+			? {name: "法师", source: Parser.SRC_PHB}
+			: {name: "法师", source: Parser.SRC_XPHB};
 		const DEFAULT_SUBCLASS = this._meta.styleHint === SITE_STYLE__CLASSIC
-			? {name: "Evocation", shortName: "Evocation", source: Parser.SRC_PHB}
-			: {name: "Evoker", shortName: "Evoker", source: Parser.SRC_XPHB};
+			? {name: "塑能学派", shortName: "塑能", source: Parser.SRC_PHB}
+			: {name: "塑能师", shortName: "塑能师", source: Parser.SRC_XPHB};
 
 		const [rowCls, rowInnerCls] = BuilderUi.getLabelledRowTuple("职业", {isMarked: true});
 		const [rowSc, rowInnerSc] = BuilderUi.getLabelledRowTuple("子职", {isMarked: true});
@@ -904,7 +904,7 @@ export class SpellBuilder extends BuilderBase {
 			<div class="ve-flex-v-center ve-mb-2"><span class="ve-mr-2 mkbru__sub-name--33">职业来源</span>${compSelSource.getWrp()}</div>
 			${wrpBtnRemove}
 		</div>`;
-		this.constructor.getBtnRemoveRow(doUpdateState, classRows, out, wrp, "Class").vee.appendTo(wrpBtnRemove);
+		this.constructor.getBtnRemoveRow(doUpdateState, classRows, out, wrp, "职业").vee.appendTo(wrpBtnRemove);
 
 		out.wrp = wrp;
 		classRows.push(out);
@@ -954,15 +954,15 @@ export class SpellBuilder extends BuilderBase {
 
 		const wrpBtnRemove = veT`<div class="ve-text-right ve-mb-2"></div>`;
 		const wrp = veT`<div class="ve-flex-col mkbru__wrp-rows">
-			<div class="ve-flex-v-center ve-mb-2"><span class="ve-mr-2 mkbru__sub-name--33">Class Name</span>${iptClass}</div>
-			<div class="ve-flex-v-center ve-mb-2"><span class="ve-mr-2 mkbru__sub-name--33">Class Source</span>${compSelSourceClass.getWrp()}</div>
-			<div class="ve-flex-v-center ve-mb-2"><span class="ve-mr-2 mkbru__sub-name--33">Subclass Name</span>${iptSubclass}</div>
-			<div class="ve-flex-v-center ve-mb-2"><span class="ve-mr-2 mkbru__sub-name--33">Subclass Short Name</span>${iptSubclassShort}</div>
-			<div class="ve-flex-v-center ve-mb-2"><span class="ve-mr-2 mkbru__sub-name--33">Subclass Source</span>${compSelSourceSubclass.getWrp()}</div>
-			<div class="ve-flex-v-center ve-mb-2"><span class="ve-mr-2 mkbru__sub-name--33 ve-help" title="For example, for a Circle of the Coast Land Druid, enter &quot;Coast&quot;">Sub-Subclass Name</span>${iptSubSubclass}</div>
+			<div class="ve-flex-v-center ve-mb-2"><span class="ve-mr-2 mkbru__sub-name--33">职业名称</span>${iptClass}</div>
+			<div class="ve-flex-v-center ve-mb-2"><span class="ve-mr-2 mkbru__sub-name--33">职业来源</span>${compSelSourceClass.getWrp()}</div>
+			<div class="ve-flex-v-center ve-mb-2"><span class="ve-mr-2 mkbru__sub-name--33">子职业名称</span>${iptSubclass}</div>
+			<div class="ve-flex-v-center ve-mb-2"><span class="ve-mr-2 mkbru__sub-name--33">子职业简称</span>${iptSubclassShort}</div>
+			<div class="ve-flex-v-center ve-mb-2"><span class="ve-mr-2 mkbru__sub-name--33">子职业来源</span>${compSelSourceSubclass.getWrp()}</div>
+			<div class="ve-flex-v-center ve-mb-2"><span class="ve-mr-2 mkbru__sub-name--33 ve-help" title="例如，海岸结社的大地德鲁伊应填写“海岸”。">子职业分支名称</span>${iptSubSubclass}</div>
 			${wrpBtnRemove}
 		</div>`;
-		this.constructor.getBtnRemoveRow(doUpdateState, subclassRows, out, wrp, "Subclass").vee.appendTo(wrpBtnRemove);
+		this.constructor.getBtnRemoveRow(doUpdateState, subclassRows, out, wrp, "子职").vee.appendTo(wrpBtnRemove);
 
 		out.wrp = wrp;
 		subclassRows.push(out);
@@ -1038,7 +1038,7 @@ export class SpellBuilder extends BuilderBase {
 			<div class="ve-flex-v-center ve-mb-2"><span class="ve-mr-2 mkbru__sub-name--33 ve-help" title="例如“精灵”的基础来源是“${Parser.SRC_PHB}”。">基础来源</span>${compSelSourceBase.getWrp()}</div>
 			${wrpBtnRemove}
 		</div>`;
-		this.constructor.getBtnRemoveRow(doUpdateState, raceRows, out, wrp, "Species").vee.appendTo(wrpBtnRemove);
+		this.constructor.getBtnRemoveRow(doUpdateState, raceRows, out, wrp, "物种").vee.appendTo(wrpBtnRemove);
 
 		out.wrp = wrp;
 		raceRows.push(out);
@@ -1315,7 +1315,7 @@ export class SpellBuilder extends BuilderBase {
 			entries: [
 				{
 					type: "code",
-					name: `Data`,
+					name: `数据`,
 					preformatted: JSON.stringify(DataUtil.cleanJson(MiscUtil.copy(this._state)), null, "\t"),
 				},
 			],

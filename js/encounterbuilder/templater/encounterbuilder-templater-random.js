@@ -16,7 +16,7 @@ export class EncounterBuilderTemplaterRandom extends EncounterBuilderTemplaterBa
 		const cntMin = Math.max(1, cntLockedCreatures);
 		const cntMax = this._getMaxCreatureCount({cntMin, cntLockedCreatures});
 
-		if (cntMin > cntMax) return new EncounterTemplateOptions({message: "Too many locked creatures! Unlock some, or add more players."});
+		if (cntMin > cntMax) return new EncounterTemplateOptions({message: "锁定的生物过多！请解锁部分生物，或增加玩家人数。"});
 
 		const {encounterSizeInfosBase, encounterSizeInfosAdditional} = new EncounterSizer({
 			partyMeta: this._partyMeta,

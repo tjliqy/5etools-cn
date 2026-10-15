@@ -197,7 +197,7 @@ export class StatGenUiCompAsi extends BaseComponent {
 				fnsCleanupEnt.push(unhookIxGroup);
 				veT`<div class="ve-flex-col ve-mb-2">
 					<div class="ve-flex-v-center ve-mb-2">
-						<div class="ve-mr-2">Feat Set:</div>
+						<div class="ve-mr-2">专长组：</div>
 						${selGroup.vee.addClass("ve-max-w-200p")}
 					</div>
 				</div>`.vee.appendTo(wrpRows);
@@ -263,7 +263,7 @@ export class StatGenUiCompAsi extends BaseComponent {
 					hkIxFeat();
 
 					const row = veT`<div class="ve-flex-v-end ve-py-3 ve-px-1 ve-statgen-asi__row">
-						<div class="ve-btn-group"><div class="ve-w-100p ve-text-center">${Parser.featCategoryToFull(featSet.anyFromCategory.category)} Feat</div></div>
+						<div class="ve-btn-group"><div class="ve-w-100p ve-text-center">${Parser.featCategoryToFull(featSet.anyFromCategory.category)}专长</div></div>
 						<div class="ve-vr-4"></div>
 						${stgFeat}
 					</div>`.vee.appendTo(wrpRowsInner);
@@ -296,7 +296,7 @@ export class StatGenUiCompAsi extends BaseComponent {
 		if (featStatic && propIxFeat) throw new Error(`Cannot combine static feat and feat property!`);
 		if (featStatic == null && propIxFeat == null) throw new Error(`Either a static feat or a feat property must be specified!`);
 
-		const btnChooseFeat = featStatic ? null : veT`<button class="ve-btn ve-btn-xxs ve-btn-default ve-mr-2" title="Choose a Feat"><span class="glyphicon glyphicon-search"></span></button>`
+		const btnChooseFeat = featStatic ? null : veT`<button class="ve-btn ve-btn-xxs ve-btn-default ve-mr-2" title="选择专长"><span class="glyphicon glyphicon-search"></span></button>`
 			.vee.onn("click", async () => {
 				const selecteds = await this._parent.modalFilterFeats.pGetUserSelection({
 					filterExpression: filterExpression ?? "category=", // TODO(Future) hack; revise as required
@@ -429,7 +429,7 @@ export class StatGenUiCompAsi extends BaseComponent {
 					} else if (abilitySet.choose && abilitySet.choose.weighted) {
 						// TODO(Future) unsupported, for now
 						stgFeatChooseAsiFrom.vee.empty().vee.hide();
-						stgFeatChooseAsiWeighted.vee.show().vee.html(`<i class="ve-muted">The selected ability score format is currently unsupported. Please check back later!</i>`);
+						stgFeatChooseAsiWeighted.vee.show().vee.html(`<i class="ve-muted">当前暂不支持所选的属性值格式，请稍后再试！</i>`);
 					} else {
 						stgFeatChooseAsiFrom.vee.empty().vee.hide();
 						stgFeatChooseAsiWeighted.vee.empty().vee.hide();

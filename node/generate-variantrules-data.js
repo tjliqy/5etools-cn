@@ -38,7 +38,7 @@ class GenVariantrules {
 
 		const toSave = JSON.stringify({variantrule: output.variantrule});
 		fs.writeFileSync(`./data/generated/gendata-variantrules.json`, toSave, "utf-8");
-		console.log("Regenerated variant rules data.");
+		console.log("已重新生成变体规则数据。");
 	}
 
 	_addBookAndAdventureData (output) {

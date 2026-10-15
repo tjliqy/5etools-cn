@@ -33,7 +33,7 @@ export class DataLoaderCache {
 		if (ent.adventure) return this._set_getPartition_fromSource(SourceUtil.getEntitySource(ent.adventure));
 		if (ent.book) return this._set_getPartition_fromSource(SourceUtil.getEntitySource(ent.book));
 
-		if (ent.__prop !== "item" || ent._category !== "Specific Variant") return this._set_getPartition_fromSource(SourceUtil.getEntitySource(ent));
+		if (ent.__prop !== "item" || !["Specific Variant", "特殊变体"].includes(ent._category)) return this._set_getPartition_fromSource(SourceUtil.getEntitySource(ent));
 
 		// "Specific Variant" items have a dual source. For the purposes of partitioning:
 		//   - only items with both `baseitem` source and `magicvariant` source both "site" sources

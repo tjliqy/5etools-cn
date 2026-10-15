@@ -65,7 +65,7 @@ export class ModalFilterBase {
 
 		const ovlLoading = veT`<div class="ve-w-100 ve-h-100 ve-flex-vh-center"><i class="ve-dnd-font ve-muted">加载中...</i></div>`.vee.appendTo(wrp);
 
-		const iptSearch = (opts.iptSearch || veT`<input class="ve-form-control ve-lst__search ve-lst__search--no-border-h ve-h-100" type="search" placeholder="Search...">`).vee.disableSpellcheck();
+		const iptSearch = (opts.iptSearch || veT`<input class="ve-form-control ve-lst__search ve-lst__search--no-border-h ve-h-100" type="search" placeholder="搜索...">`).vee.disableSpellcheck();
 		const btnReset = opts.btnReset || veT`<button class="ve-btn ve-btn-default">重置</button>`;
 		const dispNumVisible = veT`<div class="ve-lst__wrp-search-visible ve-no-events ve-flex-vh-center"></div>`;
 
@@ -81,7 +81,7 @@ export class ModalFilterBase {
 
 		const wrpFormHeaders = veT`<div class="ve-input-group ve-input-group--bottom ve-flex ve-no-shrink"></div>`;
 		const cbSelAll = opts.isBuildUi || opts.isNoSelect || this._isRadio ? null : veT`<input type="checkbox">`;
-		const btnSendAllToRight = opts.isBuildUi ? veT`<button class="ve-btn ve-btn-xxs ve-btn-default ve-col-1" title="Add All"><span class="glyphicon glyphicon-arrow-right"></span></button>` : null;
+		const btnSendAllToRight = opts.isBuildUi ? veT`<button class="ve-btn ve-btn-xxs ve-btn-default ve-col-1" title="全部添加"><span class="glyphicon glyphicon-arrow-right"></span></button>` : null;
 
 		if (!opts.isBuildUi && !opts.isNoSelect) {
 			if (this._isRadio) wrpFormHeaders.vee.appends(`<label class="ve-btn ve-btn-default ve-btn-xs ve-col-0-5 ve-flex-vh-center" disabled></label>`);

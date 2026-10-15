@@ -296,7 +296,7 @@ export class DmScreenSideMenu extends BaseComponent {
 					<div>你确定吗?</div>
 				</div>`;
 
-				if (!await InputUiUtil.pGetUserBoolean({title: isAll ? "Reset All" : "重置存档槽位", eleDescription, textYes: "确定", textNo: "取消"})) return;
+				if (!await InputUiUtil.pGetUserBoolean({title: isAll ? "重置全部" : "重置存档槽位", eleDescription, textYes: "确定", textNo: "取消"})) return;
 
 				if (!isAll) {
 					this._board.doReset({isRetainWidthHeight: comp._state.isRetainWidthHeight});
@@ -349,8 +349,8 @@ export class DmScreenSideMenu extends BaseComponent {
 				</div>`
 					.vee.appendTo(eleModalFooter);
 
-				const iptWidth = veT`<input class="ve-form-control form-control--minimal ve-input-xs ve-text-center ve-mr-1" type="number" value="${this._board.width}" title="Width">`;
-				const iptHeight = veT`<input class="ve-form-control form-control--minimal ve-input-xs ve-text-center ve-mr-1" type="number" value="${this._board.height}" title="Height">`;
+				const iptWidth = veT`<input class="ve-form-control form-control--minimal ve-input-xs ve-text-center ve-mr-1" type="number" value="${this._board.width}" title="宽度">`;
+				const iptHeight = veT`<input class="ve-form-control form-control--minimal ve-input-xs ve-text-center ve-mr-1" type="number" value="${this._board.height}" title="高度">`;
 
 				const btnSetDim = veT`<button class="ve-btn ve-btn-default ve-ml-auto ve-btn-xs">设置槽位</div>`
 					.vee.onn("click", async () => {
@@ -358,7 +358,7 @@ export class DmScreenSideMenu extends BaseComponent {
 						const h = Number(iptHeight.vee.val());
 
 						if (w > 10 || h > 10) {
-							if (!await InputUiUtil.pGetUserBoolean({title: "Too Many Panels", htmlDescription: "That's a lot of panels. Are you sure?", textYes: "Yes", textNo: "Cancel"})) return;
+							if (!await InputUiUtil.pGetUserBoolean({title: "面板过多", htmlDescription: "面板数量较多，确定要继续吗？", textYes: "是", textNo: "取消"})) return;
 						}
 
 						this._board.setDimensions(w, h);
@@ -368,10 +368,10 @@ export class DmScreenSideMenu extends BaseComponent {
 					<div class="ve-w-66 ve-no-shrink ve-flex-v-center">槽位</div>
 					<div class="ve-flex-v-center">
 						${iptWidth}
-						<div title="Width">宽</div>
+						<div title="宽度">宽</div>
 						<div class="ve-mx-1 ve-muted">×</div>
 						${iptHeight}
-						<div title="Height">高</div>
+						<div title="高度">高</div>
 					</div>
 				</div>`
 					.vee.appendTo(eleModalInner);
@@ -418,7 +418,7 @@ export class DmScreenSideMenu extends BaseComponent {
 				veT`<hr class="ve-hr-3">`.vee.appendTo(eleModalInner);
 
 				veT`<label class="ve-py-1 ve-w-100 ve-split-v-center">
-					<span class="ve-w-66 ve-no-shrink ve-flex-v-center">Preserve Embeds on Save Slot Change</span>
+					<span class="ve-w-66 ve-no-shrink ve-flex-v-center">切换存档位时保留嵌入内容</span>
 					${ComponentUiUtil.getCbBool(compSettings, "isPreserveEmbedsOnSaveSlotChange")}
 				</label>`
 					.vee.appendTo(eleModalInner);

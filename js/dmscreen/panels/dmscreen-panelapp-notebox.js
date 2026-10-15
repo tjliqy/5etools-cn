@@ -62,7 +62,7 @@ export class NoteBox extends DmScreenPanelAppBase {
 			const str = beltStack.join("");
 			await Renderer.dice.pRoll2(str.replace(`[[`, "").replace(`]]`, ""), {
 				isUser: false,
-				name: "DM Screen",
+				name: "DM 帷幕",
 			});
 			return;
 		}
@@ -100,7 +100,7 @@ export class NoteBox extends DmScreenPanelAppBase {
 	}
 
 	_getPanelElement (board, state) {
-		this._iptText = veT`<textarea class="panel-content-textarea" placeholder="支持文本内掷骰和内容标签(将光标置于标签内，按下 CTRL+q 组合键激活嵌入的功能及内容。):\n • 文本内掷骰,  [[1d20+2]]\n • 内容标签 (和渲染器Demo中的一样), {@creature 地精}, {@spell 火球术}\n • 链接标签, {@link https://5e.kiwee.top}">${state.x || ""}</textarea>`
+		this._iptText = veT`<textarea class="panel-content-textarea" placeholder="支持文本内掷骰和内容标签(将光标置于标签内，按下 CTRL+q 组合键激活嵌入的功能及内容。):\n • 文本内掷骰,  [[1d20+2]]\n • 内容标签 (和渲染器演示中的一样), {@creature 地精}, {@spell 火球术}\n • 链接标签, {@link https://5e.kiwee.top}">${state.x || ""}</textarea>`
 			.vee.onn("keydown", async evt => {
 				const key = EventUtil.getKeyIgnoreCapsLock(evt);
 

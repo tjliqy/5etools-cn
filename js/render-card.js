@@ -339,21 +339,21 @@ class RendererCard extends Renderer {
 
 	// region embedded entities
 	_renderStatblockInline (entry, textStack, meta, options) {
-		textStack[0] += `text | (Inline stat block rendering within cards is not supported.)\n`;
+		textStack[0] += `text | （卡片暂不支持内嵌数据卡。）\n`;
 	}
 
 	_renderStatblock (entry, textStack, meta, options) {
-		textStack[0] += `text | (Inline stat block rendering within cards is not supported.)\n`;
+		textStack[0] += `text | （卡片暂不支持内嵌数据卡。）\n`;
 	}
 	// endregion
 
 	// region images
 	_renderImage (entry, textStack, meta, options) {
-		textStack[0] += `text | (Image rendering within cards is not supported.)\n`;
+		textStack[0] += `text | （卡片暂不支持渲染图片。）\n`;
 	}
 
 	_renderGallery (entry, textStack, meta, options) {
-		textStack[0] += `text | (Image gallery rendering within cards is not supported.)\n`;
+		textStack[0] += `text | （卡片暂不支持渲染图片画廊。）\n`;
 	}
 	// endregion
 
@@ -381,13 +381,13 @@ class RendererCard extends Renderer {
 
 	// region homebrew
 	_renderHomebrew (entry, textStack, meta, options) {
-		textStack[0] += `text | (Homebrew rendering within cards is not supported.)\n`;
+		textStack[0] += `text | （卡片暂不支持渲染自制内容。）\n`;
 	}
 	// endregion
 
 	// region misc
 	_renderCode (entry, textStack, meta, options) {
-		textStack[0] += `text | (Code rendering within cards is not supported.)`;
+		textStack[0] += `text | （卡片暂不支持渲染代码。）`;
 	}
 
 	_renderHr (entry, textStack, meta, options) {

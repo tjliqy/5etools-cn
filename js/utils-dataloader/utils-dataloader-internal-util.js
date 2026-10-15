@@ -43,11 +43,11 @@ export class DataLoaderInternalUtil {
 			.join("; ");
 
 		const ptDiagnostics = globalThis.DataLoader.getDiagnosticsSummary(diagnostics);
-		const msgStart = `Failed to load references for ${cntMissingRefs} entr${cntMissingRefs === 1 ? "y" : "ies"}!`;
+		const msgStart = `无法加载 ${cntMissingRefs} 个条目的引用！`;
 
 		JqueryUtil.doToast({
 			type: "danger",
-			content: `${msgStart} Reference types and values were: ${[notificationRefs, ptDiagnostics].join(" ")}`,
+			content: `${msgStart} 引用类型与值： ${[notificationRefs, ptDiagnostics].join(" ")}`,
 			isAutoHide: false,
 		});
 
@@ -59,6 +59,6 @@ export class DataLoaderInternalUtil {
 			.filter(Boolean)
 			.join("\n");
 
-		setTimeout(() => { throw new Error(`${msgStart}\nReference types and values were:\n${cnslRefs}`); });
+		setTimeout(() => { throw new Error(`${msgStart}\n引用类型与值：\n${cnslRefs}`); });
 	}
 }

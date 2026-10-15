@@ -47,7 +47,7 @@ export class FontManager {
 		return {
 			errors: results
 				.map(({status, reason}, i) => status === "rejected"
-					? {message: `Font "${fontMetas[i].fontId}" failed to load!`, reason}
+					? {message: `字体“${fontMetas[i].fontId}”加载失败！`, reason}
 					: null)
 				.filter(Boolean),
 		};

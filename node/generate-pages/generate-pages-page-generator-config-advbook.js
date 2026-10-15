@@ -10,7 +10,7 @@ class _PageGeneratorAdventure extends PageGeneratorAdventureBookBase {
 	_navbarTitle = "冒险详情";
 	_navbarDescription = "加载中...";
 	_scriptIdentAdvBook = "adventure";
-	_advBookPlaceholder = `Did you ever hear the tragedy of Darth Plagueis The Wise? I thought not. It's not a story the Jedi would tell you. It's a Sith legend. Darth Plagueis was a Dark Lord of the Sith, so powerful and so wise he could use the Force to influence the midichlorians to create life… He had such a knowledge of the dark side that he could even keep the ones he cared about from dying. The dark side of the Force is a pathway to many abilities some consider to be unnatural. He became so powerful… the only thing he was afraid of was losing his power, which eventually, of course, he did. Unfortunately, he taught his apprentice everything he knew, then his apprentice killed him in his sleep. Ironic. He could save others from death, but not himself.`;
+	_advBookPlaceholder = `冒险内容加载中……`;
 }
 
 class _PageGeneratorBook extends PageGeneratorAdventureBookBase {
@@ -29,9 +29,9 @@ class _PageGeneratorQuickref extends PageGeneratorAdventureBookBase {
 
 	_pageTitle = "快速参照 (5e/2014)";
 	_navbarTitle = "快速参照 (5e/2014)";
-	_navbarDescriptionHtml = "Browse content. Press <kbd>f</kbd> to find, and <kbd>g</kbd> to go to page.";
+	_navbarDescriptionHtml = "浏览内容。按 <kbd>f</kbd> 查找，按 <kbd>g</kbd> 跳转到页面。";
 	_scriptIdentAdvBook = "quickreference";
-	_advBookPlaceholder = `Trans rights are human rights.`;
+	_advBookPlaceholder = ``;
 }
 
 class _PageGeneratorAdventures extends PageGeneratorAdventuresBooksBase {

@@ -169,7 +169,7 @@ export class LegendaryGroupBuilder extends BuilderBase {
 			entries: [
 				{
 					type: "code",
-					name: `Data`,
+					name: `数据`,
 					preformatted: JSON.stringify(DataUtil.cleanJson(MiscUtil.copy(this._state)), null, "\t"),
 				},
 			],

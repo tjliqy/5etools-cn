@@ -87,7 +87,7 @@ class PageFilterBestiary extends PageFilterBase {
 			isLabelled: true,
 			labelSortFn: SortUtil.ascSortCr,
 			labels: [...Parser.CRS, "Unknown", "\u2014"],
-			labelDisplayFn: it => it === "\u2014" ? "None" : it,
+			labelDisplayFn: it => it === "\u2014" ? "无" : it === "Unknown" ? "未知" : it,
 		});
 		this._sizeFilter = new Filter({
 			header: "Size",
@@ -104,13 +104,13 @@ class PageFilterBestiary extends PageFilterBase {
 			displayFn: Parser.sizeAbvToFull,
 			itemSortFn: null,
 		});
-		this._speedFilter = new RangeFilter({header: "Speed", cnHeader: "速度", min: 30, max: 30, suffix: " ft"});
+		this._speedFilter = new RangeFilter({header: "Speed", cnHeader: "速度", min: 30, max: 30, suffix: " 尺"});
 		this._speedTypeFilter = new Filter({header: "Speed Type", cnHeader: "速度类型", items: [...Parser.SPEED_MODES, "hover"], displayFn: it => Parser.SPEED_TO_CN[it] || StrUtil.uppercaseFirst(it)});
-		this._speedFilterWalk = new RangeFilter({header: "Walk", cnHeader: "步行", min: 30, max: 30, suffix: " ft"});
-		this._speedFilterBurrow = new RangeFilter({header: "Burrow", cnHeader: "掘穴", min: 30, max: 30, suffix: " ft"});
-		this._speedFilterClimb = new RangeFilter({header: "Climb", cnHeader: "攀爬", min: 30, max: 30, suffix: " ft"});
-		this._speedFilterFly = new RangeFilter({header: "Fly", cnHeader: "飞行", min: 30, max: 30, suffix: " ft"});
-		this._speedFilterSwim = new RangeFilter({header: "Swim", cnHeader: "游泳", min: 30, max: 30, suffix: " ft"});
+		this._speedFilterWalk = new RangeFilter({header: "Walk", cnHeader: "步行", min: 30, max: 30, suffix: " 尺"});
+		this._speedFilterBurrow = new RangeFilter({header: "Burrow", cnHeader: "掘穴", min: 30, max: 30, suffix: " 尺"});
+		this._speedFilterClimb = new RangeFilter({header: "Climb", cnHeader: "攀爬", min: 30, max: 30, suffix: " 尺"});
+		this._speedFilterFly = new RangeFilter({header: "Fly", cnHeader: "飞行", min: 30, max: 30, suffix: " 尺"});
+		this._speedFilterSwim = new RangeFilter({header: "Swim", cnHeader: "游泳", min: 30, max: 30, suffix: " 尺"});
 		this._speedsFilter = new MultiFilter({
 			header: "Speeds",
 			cnHeader: "速度",
@@ -157,7 +157,7 @@ class PageFilterBestiary extends PageFilterBase {
 		this._languageFilter = new Filter({
 			header: "Languages",
 			cnHeader: "语言",
-			displayFn: (k) => Parser.monLanguageTagToFull(k).toTitleCase(),
+			displayFn: (k) => k === "None" ? "无" : Parser.monLanguageTagToFull(k).toTitleCase(),
 			umbrellaItems: ["X", "XX"],
 			umbrellaExcludes: ["CS"],
 		});
@@ -254,7 +254,7 @@ class PageFilterBestiary extends PageFilterBase {
 		this._environmentFilter = new Filter({
 			header: "Environment",
 			cnHeader: "环境",
-			headerDisplayName: styleHint === "classic" ? "Environment" : "Habitat",
+			headerDisplayName: styleHint === "classic" ? "环境" : "栖息地",
 			items: [...Parser.ENVIRONMENTS],
 			displayFn: Parser.getEnvironmentDisplayName,
 		});
@@ -771,7 +771,7 @@ class ModalFilterBestiary extends ModalFilterBase {
 		opts = opts || {};
 		super({
 			...opts,
-			modalTitle: `Creature${opts.isRadio ? "" : "s"}`,
+			modalTitle: `生物`,
 			pageFilter: new PageFilterBestiary(),
 			fnSort: PageFilterBestiary.sortMonsters,
 			previewButtonHandler: new ListUiPreviewButtonHandlerStatsFluff({page: UrlUtil.PG_BESTIARY}),
@@ -783,7 +783,7 @@ class ModalFilterBestiary extends ModalFilterBase {
 			{sort: "name", text: "名称", width: "4"},
 			{sort: "type", text: "类型", width: "4"},
 			{sort: "cr", text: "CR", width: "2"},
-			{sort: "source", text: "Source", width: "1"},
+			{sort: "source", text: "来源", width: "1"},
 		];
 		return ModalFilterBase._getFilterColumnHeaders(btnMeta);
 	}
@@ -812,7 +812,7 @@ class ModalFilterBestiary extends ModalFilterBase {
 			<div class="ve-col-0-5 ve-pl-0 ve-flex-vh-center">${this._isRadio ? `<input type="radio" name="radio" class="ve-no-events">` : `<input type="checkbox" class="ve-no-events">`}</div>
 
 			<div class="ve-col-0-5 ve-px-1 ve-flex-vh-center">
-				<div class="ve-ui-list__btn-inline ve-px-2 ve-no-select" title="Toggle Preview (SHIFT to Toggle Info Preview)">[+]</div>
+				<div class="ve-ui-list__btn-inline ve-px-2 ve-no-select" title="切换预览（按 Shift 切换信息预览）">[+]</div>
 			</div>
 
 			<div class="ve-col-4 ve-px-1 ${mon._versionBase_isVersion ? "ve-italic" : ""} ${this._getNameStyle()}">${mon._versionBase_isVersion ? `<span class="ve-px-3"></span>` : ""}${mon.name}</div>

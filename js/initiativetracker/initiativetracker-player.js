@@ -20,7 +20,7 @@ export class InitiativeTrackerPlayerUiV1 {
 			);
 		} catch (e) {
 			JqueryUtil.doToast({
-				content: `Failed to create client! Are you sure the token was valid? (See the log for more details.)`,
+				content: `创建客户端失败！请检查令牌是否有效（详情见日志）。`,
 				type: "danger",
 			});
 			throw e;
@@ -56,7 +56,7 @@ export class InitiativeTrackerPlayerUiV0 {
 						function (err) {
 							if (!this.isClosed) {
 								JqueryUtil.doToast({
-									content: `Server error:\n${err ? err.message || err : "(Unknown error)"}`,
+									content: `服务器错误：\n${err ? err.message || err : "（未知错误）"}`,
 									type: "danger",
 								});
 							}
@@ -67,7 +67,7 @@ export class InitiativeTrackerPlayerUiV0 {
 						this._iptServerToken.vee.attr("disabled", false);
 						this._btnGenClientToken.vee.attr("disabled", false);
 						JqueryUtil.doToast({
-							content: `Failed to create client. Are you sure the token was valid?`,
+							content: `创建客户端失败，请检查令牌是否有效。`,
 							type: "warning",
 						});
 					} else {
@@ -90,7 +90,7 @@ export class InitiativeTrackerPlayerUiV0 {
 					}
 				} catch (e) {
 					JqueryUtil.doToast({
-						content: `Failed to create client! Are you sure the token was valid? (See the log for more details.)`,
+						content: `创建客户端失败！请检查令牌是否有效（详情见日志）。`,
 						type: "danger",
 					});
 					setTimeout(() => { throw e; });
@@ -230,7 +230,7 @@ export class InitiativeTrackerPlayerMessageHandlerV1 {
 	_getRenderedStatsCellInner ({cell}) {
 		const {isUnknown, value, type} = cell.entity;
 
-		if (isUnknown) return `<span class="ve-muted ve-italic" title="This value is hidden!">?</span>`;
+		if (isUnknown) return `<span class="ve-muted ve-italic" title="此数值已隐藏！">?</span>`;
 
 		if (type) {
 			switch (type) {
@@ -238,7 +238,7 @@ export class InitiativeTrackerPlayerMessageHandlerV1 {
 
 				default: {
 					setTimeout(() => { throw new Error(`Unknown type "${type}"!`); });
-					return `<span title="Bug!">🐛</span>`;
+					return `<span title="程序错误！">🐛</span>`;
 				}
 			}
 		}
@@ -252,7 +252,7 @@ export class InitiativeTrackerPlayerMessageHandlerV1 {
 
 			default: {
 				setTimeout(() => { throw new Error(`Unhandled value "${value}"!`); });
-				return `<span title="Bug!">🐛</span>`;
+				return `<span title="程序错误！">🐛</span>`;
 			}
 		}
 	}
@@ -264,7 +264,7 @@ export class InitiativeTrackerPlayerMessageHandlerV1 {
 			imageHref: InitiativeTrackerUtil.getImageOrTokenHref({imageHref, tokenUrl}),
 		});
 
-		const ele = veT`<img src="${tokenUrl}" class="ve-w-24p ve-w-24p" alt="Token图">`
+		const ele = veT`<img src="${tokenUrl}" class="ve-w-24p ve-w-24p" alt="标记图">`
 			.vee.onn("mouseover", evt => hoverMeta.mouseOver(evt, ele))
 			.vee.onn("mousemove", evt => hoverMeta.mouseMove(evt, ele))
 			.vee.onn("mouseleave", evt => hoverMeta.mouseLeave(evt, ele));

@@ -134,7 +134,7 @@ export class EncounterBuilderUiBestiary extends EncounterBuilderUi {
 
 	_showBuilder () {
 		this._cachedTitle = this._cachedTitle || document.title;
-		document.title = "Encounter Builder - 5etools";
+		document.title = "遭遇构建器 - 5etools";
 		document.body.classList.add("best__ecgen-active");
 		this._bestiaryPage.doDeselectAll();
 		this._sublistManager.doSublistDeselectAll();
@@ -209,7 +209,7 @@ export class EncounterBuilderUiBestiary extends EncounterBuilderUi {
 
 		if (targetCr == null) {
 			JqueryUtil.doToast({
-				content: `"${iptCr.vee.val()}" is not a valid Challenge Rating! Please enter a valid CR (0-30).`,
+				content: `“${iptCr.vee.val()}”不是有效的挑战等级！请输入 0 至 30 之间的有效挑战等级。`,
 				type: "danger",
 			});
 			iptCr.vee.val(Parser.numberToCr(scaledTo ?? baseCrNum));

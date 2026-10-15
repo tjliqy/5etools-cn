@@ -7,7 +7,7 @@ class DamageTagger {
 		if (str === "less" || str === "more") return;
 		if (str === "all" || str === "one" || str === "a") Parser.DMG_TYPES.forEach(it => set.add(it));
 		else if (Parser.DMG_TYPES.includes(str)) set.add(str);
-		else options.cbWarning(`Unknown damage type "${str}"`);
+		else options.cbWarning(`未知伤害类型“${str}”`);
 	}
 }
 
@@ -283,7 +283,7 @@ export class ScalingLevelDiceTagger {
 		this._WALKER_BOR.walk(sp.entries, handlers);
 		if (label) return label;
 
-		options.cbWarning(`${sp.name ? `(${sp.name}) ` : ""}Could not create scalingLevelDice label!`);
+		options.cbWarning(`${sp.name ? `(${sp.name}) ` : ""}无法创建 scalingLevelDice 标签！`);
 		return "NO_LABEL";
 	}
 
@@ -299,7 +299,7 @@ export class ScalingLevelDiceTagger {
 		});
 
 		if ((rolls.length === 4 && strEntries.includes("one die")) || rolls.length === 5) {
-			if (rolls.length === 5 && rolls[0] !== rolls[1]) options.cbWarning(`${sp.name ? `(${sp.name}) ` : ""}scalingLevelDice rolls may require manual checking\u2014mismatched roll number of rolls!`);
+			if (rolls.length === 5 && rolls[0] !== rolls[1]) options.cbWarning(`${sp.name ? `(${sp.name}) ` : ""}scalingLevelDice 掷骰结果可能需要人工检查：掷骰数量不匹配！`);
 
 			sp.scalingLevelDice = {
 				label: this._getLabel({sp, options}),
@@ -330,7 +330,7 @@ export class ScalingLevelDiceTagger {
 
 			if (rollsFirstLine.length >= 1 && rollsSecondLine.length >= 3) {
 				if (rollsFirstLine.length > 1 || rollsSecondLine.length > 3) {
-					options.cbWarning(`${sp.name ? `(${sp.name}) ` : ""}scalingLevelDice rolls may require manual checking\u2014too many dice parts!`);
+					options.cbWarning(`${sp.name ? `(${sp.name}) ` : ""}scalingLevelDice 掷骰结果可能需要人工检查：骰子部分过多！`);
 				}
 
 				const label = this._getLabel({sp, options});

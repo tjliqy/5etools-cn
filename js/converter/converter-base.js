@@ -4,7 +4,7 @@ import {VetoolsConfig} from "../utils-config/utils-config-config.js";
 export class ConverterBase {
 	static _getValidOptions (options) {
 		options = options || {};
-		if (!options.cbWarning || !options.cbOutput) throw new Error(`Missing required callback options!`);
+		if (!options.cbWarning || !options.cbOutput) throw new Error(`缺少必需的回调选项！`);
 		options.styleHint ||= VetoolsConfig.get("styleSwitcher", "style");
 		return options;
 	}

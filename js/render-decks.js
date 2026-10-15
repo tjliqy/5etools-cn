@@ -4,17 +4,17 @@ class RenderDecks {
 	static SETTINGS = {
 		cardLayout: new SettingsUtil.EnumSetting({
 			type: "enum",
-			name: "Card Layout",
-			help: `The layout to use when displaying cards in a deck.`,
+			name: "卡牌布局",
+			help: `牌组中卡牌的显示布局。`,
 			defaultVal: "list",
 			enumVals: [
 				{
 					value: "list",
-					name: "List",
+					name: "列表",
 				},
 				{
 					value: "grid",
-					name: "Grid",
+					name: "网格",
 				},
 			],
 		}),
@@ -45,19 +45,19 @@ class RenderDecks {
 			.map((card, ixCard) => {
 				const ptText = this.getCardTextHtml({card});
 
-				const btnMarkDrawn = veT`<button class="ve-btn ve-btn-default ve-btn-xs" title="Mark Card as Drawn"><i class="fas fa-fw fa-cards"></i></button>`
+				const btnMarkDrawn = veT`<button class="ve-btn ve-btn-default ve-btn-xs" title="标记为已抽取"><i class="fas fa-fw fa-cards"></i></button>`
 					.vee.onn("click", async evt => {
 						evt.stopPropagation();
 						await cardStateManager.pDrawCard(ent, card);
 					});
 
-				const btnReplace = veT`<button class="ve-btn ve-btn-default ve-btn-xs" title="Return Card to Deck"><i class="fas fa-arrow-rotate-left"></i></button>`
+				const btnReplace = veT`<button class="ve-btn ve-btn-default ve-btn-xs" title="放回牌组"><i class="fas fa-arrow-rotate-left"></i></button>`
 					.vee.onn("click", async evt => {
 						evt.stopPropagation();
 						await cardStateManager.pReplaceCard(ent, card);
 					});
 
-				const btnViewer = veT`<button class="ve-btn ve-btn-default ve-btn-xs" title="Open Card Viewer"><span class="glyphicon glyphicon-eye-open"></span></button>`
+				const btnViewer = veT`<button class="ve-btn ve-btn-default ve-btn-xs" title="打开卡牌查看器"><span class="glyphicon glyphicon-eye-open"></span></button>`
 					.vee.onn("click", async evt => {
 						evt.stopPropagation();
 						try {
@@ -87,7 +87,7 @@ class RenderDecks {
 					btnMarkDrawn.vee.prop("disabled", isDrawn);
 					btnReplace.vee.prop("disabled", !isDrawn);
 					wrpFace.vee.toggleClass("decks__wrp-card-face--drawn", isDrawn);
-					imgFace.vee.tooltip(isDrawn ? `${title} (Drawn)` : title);
+					imgFace.vee.tooltip(isDrawn ? `${title}（已抽取）` : title);
 				});
 				fnsCleanup.push(() => cardStateManager.removeHookBase(propCardDrawn, hkCardDrawn));
 				hkCardDrawn();
@@ -229,7 +229,7 @@ class RenderDecks {
 		Renderer.dice.bindOnclickListener(wrpInfo);
 
 		const btnFlip = imgBack
-			? veT`<button class="ve-btn ve-btn-default ve-btn-xs ve-px-3" title="Flip Card"><i class="fas fa-rotate"></i> Flip</button>`
+			? veT`<button class="ve-btn ve-btn-default ve-btn-xs ve-px-3" title="翻转卡牌"><i class="fas fa-rotate"></i> 翻转</button>`
 				.vee.onn("click", evt => {
 					evt.stopPropagation();
 					wrpCardFlip.classList.toggle("decks-draw__wrp-card-flip--flipped");

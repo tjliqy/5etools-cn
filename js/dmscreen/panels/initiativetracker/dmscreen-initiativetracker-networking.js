@@ -110,13 +110,13 @@ export class InitiativeTrackerNetworking {
 				Promise.race([pConnected, pTimeout])
 					.then(didConnect => {
 						if (!didConnect) {
-							JqueryUtil.doToast({content: `Connecting to "${connection.label.escapeQuotes()}" has taken more than 5 seconds! The connection may need to be re-attempted.`, type: "warning"});
+							JqueryUtil.doToast({content: `连接“${connection.label.escapeQuotes()}”已超过 5 秒，可能需要重试。`, type: "warning"});
 						}
 					});
 			});
 
 			window.addEventListener("beforeunload", evt => {
-				const message = `The connection will be closed`;
+				const message = `连接将被关闭`;
 				(evt || window.event).message = message;
 				return message;
 			});
@@ -131,7 +131,7 @@ export class InitiativeTrackerNetworking {
 			if (opts.fnDispServerStoppedState) opts.fnDispServerStoppedState();
 			if (opts.btnStartServer) opts.btnStartServer.vee.prop("disabled", false);
 			this._p2pMetaV1.serverPeer = null;
-			JqueryUtil.doToast({content: `Failed to start server! ${VeCt.STR_SEE_CONSOLE}`, type: "danger"});
+			JqueryUtil.doToast({content: `启动服务器失败！ ${VeCt.STR_SEE_CONSOLE}`, type: "danger"});
 			setTimeout(() => { throw e; });
 		}
 
@@ -179,7 +179,7 @@ export class InitiativeTrackerNetworking {
 				showConnected();
 			});
 
-		const btnGetToken = veT`<button class="ve-btn ve-btn-default" disabled><span class="glyphicon glyphicon-copy"></span> 复制 Token</button>`.vee.appendTo(wrpHelp)
+		const btnGetToken = veT`<button class="ve-btn ve-btn-default" disabled><span class="glyphicon glyphicon-copy"></span> 复制令牌</button>`.vee.appendTo(wrpHelp)
 			.vee.onn("click", async () => {
 				await MiscUtil.pCopyTextToClipboard(this._p2pMetaV1.serverPeer.token);
 				JqueryUtil.showCopiedEffect(btnGetToken);
@@ -203,7 +203,7 @@ export class InitiativeTrackerNetworking {
 				先攻追踪器玩家视图是一个P2P系统，允许玩家连接到DM的先攻追踪器。玩家应该使用<a href="inittrackerplayerview.html">先攻追踪器玩家视图</a>页面连接到DM的实例。作为DM，使用方法如下：
 				<ol>
 					<li>启动服务器。</li>
-					<li>复制你的链接/Token并与玩家分享。</li>
+					<li>复制链接或令牌并与玩家分享。</li>
 					<li>等待他们连接！</li>
 				</ol>
 				</p>
@@ -221,7 +221,7 @@ export class InitiativeTrackerNetworking {
 
 			let stack = `<div class="ve-w-100"><h5>已连接的客户端：</h5><ul>`;
 			this._p2pMetaV1.serverPeer.getActiveConnections()
-				.map(it => it.label || "(Unknown)")
+				.map(it => it.label || "（未知）")
 				.sort(SortUtil.ascSortLower)
 				.forEach(it => stack += `<li>${it.escapeQuotes()}</li>`);
 			stack += "</ul></div>";
@@ -241,7 +241,7 @@ export class InitiativeTrackerNetworking {
 		if (!this.isClosed) {
 			// TODO: this could be better at handling `err.error == "RTCError: User-Initiated Abort, reason=Close called"`
 			JqueryUtil.doToast({
-				content: `Server error:\n${err ? (err.message || err.error || err) : "(Unknown error)"}`,
+				content: `服务器错误：\n${err ? (err.message || err.error || err) : "（未知错误）"}`,
 				type: "danger",
 			});
 		}
@@ -253,7 +253,7 @@ export class InitiativeTrackerNetworking {
 			.filter(it => !it.isActive);
 		if (targetRows.every(it => it.isActive)) {
 			return JqueryUtil.doToast({
-				content: "No rows require Server Token generation!",
+				content: "没有需要生成服务端令牌的行！",
 				type: "warning",
 			});
 		}
@@ -341,24 +341,24 @@ export class InitiativeTrackerNetworking {
 		const wrpHelp = UiUtil.getAddModalRow(eleModalInner, "div");
 		const btnAltAddPlayer = veT`<button class="ve-btn ve-btn-primary ve-btn-text-insert">添加玩家</button>`.vee.onn("click", () => btnAddClient.vee.trigger("click"));
 		const btnAltGenAll = veT`<button class="ve-btn ve-btn-primary ve-btn-text-insert">生成全部</button>`.vee.onn("click", () => btnGenServerTokens.vee.trigger("click"));
-		const btnAltCopyAll = veT`<button class="ve-btn ve-btn-primary ve-btn-text-insert">复制服务端Tokens</button>`.vee.onn("click", () => btnCopyServers.vee.trigger("click"));
+		const btnAltCopyAll = veT`<button class="ve-btn ve-btn-primary ve-btn-text-insert">复制服务端令牌</button>`.vee.onn("click", () => btnCopyServers.vee.trigger("click"));
 		veT`<div class="ve-flex ve-w-100">
 			<div class="ve-col-12">
 				<p>
-				先攻追踪器玩家视图是一个P2P（即无服务器）系统，允许玩家连接到DM的先攻追踪器。玩家应该使用<a href="inittrackerplayerview.html">先攻追踪器玩家视图</a>页面连接到DM的实例。作为DM，使用方法如下：
+				先攻追踪器玩家视图使用点对点连接，让玩家连接到地下城主的先攻追踪器。玩家应在<a href="inittrackerplayerview.html">先攻追踪器玩家视图</a>页面建立连接。地下城主的操作步骤如下：
 				<ol>
 						<li>添加所需数量的玩家("${btnAltAddPlayer}")，并输入玩家姓名（最好唯一）。</li>
-						<li>点击"${btnAltGenAll},"来为每个玩家生成"服务端token"。 你可以点击"${btnAltCopyAll}" 来将他们一起复制，或者点击"服务端Token"的值来一个一个复制。将这些Token发给你的玩家。每个玩家需要将他们的Token粘贴到<a href="inittrackerplayerview.html">先攻追踪器玩家视图</a>并按照其中的说明进行操作。</li>
+						<li>点击“${btnAltGenAll}”为每位玩家生成服务端令牌。点击“${btnAltCopyAll}”可一次复制所有令牌，也可以逐个点击“服务端令牌”的值来复制。将令牌发给对应玩家，让他们粘贴到<a href="inittrackerplayerview.html">先攻追踪器玩家视图</a>页面并按照说明操作。</li>
 						<li>
-							获得每位玩家的"客户端token"，然后对于每个Token:
+							获取每位玩家的客户端令牌，然后对每个令牌执行以下操作：
 							<ol type="a">
-								<li>点击"批量接受客户端"按钮, 并粘贴包含多个客户端token的文本。 <b>这将尝试在任何文本中查找token, 并忽略其他所有内容。</b> 粘贴聊天记录日志（例如包含用户名和时间戳的混合token）是一般的用法。</li>
-								<li>将每个token粘贴到相应的"客户端Token"字段中, 并点击"接受客户端"。 一个token可以通过前几个字符中的玩家名来识别。</li>
+								<li>点击“批量接受客户端”，粘贴包含多个客户端令牌的文本。<b>系统会从文本中提取令牌并忽略其他内容。</b>可以直接粘贴包含用户名和时间戳的聊天记录。</li>
+								<li>也可以将令牌逐个粘贴到对应的“客户端令牌”字段，再点击“接受客户端”。令牌开头的几个字符包含玩家姓名，可用于辨认。</li>
 							</ol>
 						</li>
 					</ol>
 				</p>
-				<p>一旦玩家的客户端被"接受"，它将从DM的先攻追踪器接收更新。 <i>请注意，这个系统是高度实验性的。你的体验可能会有所不同。</i></p>
+					<p>接受玩家客户端后，玩家便会收到地下城主先攻追踪器的更新。<i>此功能仍处于实验阶段，实际体验可能有所不同。</i></p>
 			</div>
 		</div>`.vee.appendTo(wrpHelp);
 
@@ -366,16 +366,16 @@ export class InitiativeTrackerNetworking {
 
 		const wrpTop = UiUtil.getAddModalRow(eleModalInner, "div");
 
-		const btnAddClient = veT`<button class="ve-btn ve-btn-xs ve-btn-primary" title="Add Client">${I18nUtil.get("page.dmscreen.add_player")}</button>`.vee.onn("click", () => addClientRow());
+		const btnAddClient = veT`<button class="ve-btn ve-btn-xs ve-btn-primary" title="添加客户端">${I18nUtil.get("page.dmscreen.add_player")}</button>`.vee.onn("click", () => addClientRow());
 
-		const btnCopyServers = veT`<button class="ve-btn ve-btn-xs ve-btn-primary" title="复制所有未使用的服务器token">复制服务端Tokens</button>`
+		const btnCopyServers = veT`<button class="ve-btn ve-btn-xs ve-btn-primary" title="复制所有未使用的服务端令牌">复制服务端令牌</button>`
 			.vee.onn("click", async () => {
 				const targetRows = this._p2pMetaV0.rows
 					.filter(row => !row.isStub)
 					.filter(it => !it.isDeleted && !it.iptTokenClient.vee.attr("disabled"));
 				if (!targetRows.length) {
 					JqueryUtil.doToast({
-						content: `No free server tokens to copy. Generate some!`,
+						content: "没有可复制的空闲服务端令牌，请先生成。",
 						type: "warning",
 					});
 				} else {
@@ -384,14 +384,14 @@ export class InitiativeTrackerNetworking {
 				}
 			});
 
-		const btnAcceptClients = veT`<button class="ve-btn ve-btn-xs ve-btn-primary" title="可以粘贴包含客户端token的文本">批量接受客户端</button>`
+		const btnAcceptClients = veT`<button class="ve-btn ve-btn-xs ve-btn-primary" title="可以粘贴包含客户端令牌的文本">批量接受客户端</button>`
 			.vee.onn("click", () => {
 				const {eleModalInner, doClose} = UiUtil.getShowModal({title: "批量接受客户端"});
 
 				const iptText = veT`<textarea class="ve-form-control dm-init-pl__textarea ve-block ve-mb-2"></textarea>`
 					.vee.onn("keydown", () => iptText.vee.removeClass("error-background"));
 
-				const btnAccept = veT`<button class="ve-btn ve-btn-xs ve-btn-primary ve-block ve-text-center" title="Add Client">批量接受客户端</button>`
+				const btnAccept = veT`<button class="ve-btn ve-btn-xs ve-btn-primary ve-block ve-text-center" title="添加客户端">批量接受客户端</button>`
 					.vee.onn("click", async () => {
 						iptText.vee.removeClass("error-background");
 						const txt = iptText.vee.val();
@@ -411,7 +411,7 @@ export class InitiativeTrackerNetworking {
 					});
 
 				veT`<div>
-					<p>Paste text containing one or more client tokens, and click "Accept Multiple Clients"</p>
+					<p>粘贴包含一个或多个客户端令牌的文本，然后点击“批量接受客户端”。</p>
 					${iptText}
 					<div class="ve-flex-vh-center">${btnAccept}</div>
 				</div>`.vee.appendTo(eleModalInner);
@@ -425,7 +425,7 @@ export class InitiativeTrackerNetworking {
 						${btnAddClient}
 					</div>
 					<div class="ve-flex-inline-v-center ve-mr-2">
-						<span class="ve-mr-1">复制所有未使用的服务器token:</span>
+						<span class="ve-mr-1">复制所有未使用的服务端令牌：</span>
 						${btnCopyServers}
 					</div>
 					<div class="ve-flex-inline-v-center ve-mr-2">
@@ -443,9 +443,9 @@ export class InitiativeTrackerNetworking {
 
 		veT`<div class="ve-flex ve-w-100">
 			<div class="ve-col-2 ve-bold">玩家名字</div>
-			<div class="ve-col-3-5 ve-bold">服务端Token</div>
+			<div class="ve-col-3-5 ve-bold">服务端令牌</div>
 			<div class="ve-col-1 ve-text-center">${btnGenServerTokens}</div>
-			<div class="ve-col-3-5 ve-bold">客户端Token</div>
+			<div class="ve-col-3-5 ve-bold">客户端令牌</div>
 		</div>`
 			.vee.appendTo(UiUtil.getAddModalRow(eleModalInner, "div"));
 
@@ -482,7 +482,7 @@ export class InitiativeTrackerNetworking {
 					JqueryUtil.showCopiedEffect(iptTokenServer);
 				}).vee.disableSpellcheck();
 
-			const btnGenServerToken = veT`<button class="ve-btn ve-btn-xs ve-btn-primary" title="生成服务端Token">生成</button>`
+			const btnGenServerToken = veT`<button class="ve-btn ve-btn-xs ve-btn-primary" title="生成服务端令牌">生成</button>`
 				.vee.onn("click", () => this._playerWindowV0_pGetServerTokens({rowMetas: [rowMeta]}));
 
 			const iptTokenClient = veT`<input class="ve-form-control ve-input-sm ve-code" disabled>`
@@ -491,7 +491,7 @@ export class InitiativeTrackerNetworking {
 					if (evt.key === "Enter") btnAcceptClientToken.vee.trigger("click");
 				}).vee.disableSpellcheck();
 
-			const btnAcceptClientToken = veT`<button class="ve-btn ve-btn-xs ve-btn-primary" title="接受客户端Token" disabled>接受客户端</button>`
+			const btnAcceptClientToken = veT`<button class="ve-btn ve-btn-xs ve-btn-primary" title="接受客户端令牌" disabled>接受客户端</button>`
 				.vee.onn("click", async () => {
 					const token = iptTokenClient.vee.val();
 					if (PeerUtilV0.isValidToken(token)) {
@@ -503,7 +503,7 @@ export class InitiativeTrackerNetworking {
 							doUpdateExternalStates();
 						} catch (e) {
 							JqueryUtil.doToast({
-								content: `Failed to accept client token! Are you sure it was valid? (See the log for more details.)`,
+								content: "接受客户端令牌失败！请确认令牌有效；详情见日志。",
 								type: "danger",
 							});
 							setTimeout(() => { throw e; });

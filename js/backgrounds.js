@@ -4,17 +4,17 @@ class BackgroundSublistManager extends SublistManager {
 	static _getRowTemplate () {
 		return [
 			new SublistCellTemplate({
-				name: "Name",
+				name: "名称",
 				css: "ve-bold ve-col-3 ve-pl-0 ve-pr-1",
 				colStyle: "",
 			}),
 			new SublistCellTemplate({
-				name: "Ability",
+				name: "属性",
 				css: "ve-col-5 ve-px-1",
 				colStyle: "",
 			}),
 			new SublistCellTemplate({
-				name: "Skills",
+				name: "技能",
 				css: "ve-col-4 ve-pl-1 ve-pr-0",
 				colStyle: "",
 			}),
@@ -71,9 +71,9 @@ class BackgroundPage extends ListPage {
 			pageFilter,
 
 			bookViewOptions: {
-				nameSingular: "background",
-				namePlural: "backgrounds",
-				pageTitle: "Backgrounds Book View",
+				nameSingular: "背景",
+				namePlural: "背景",
+				pageTitle: "背景书籍视图",
 			},
 
 			dataProps: ["background"],

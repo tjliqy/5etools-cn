@@ -62,7 +62,7 @@ class _RenderableCollectionRowDataActive extends RenderableCollectionRowDataBase
 
 				if (evt.shiftKey) return comp._state.customName = null;
 
-				const customName = await InputUiUtil.pGetUserString({title: "Enter Name"});
+				const customName = await InputUiUtil.pGetUserString({title: "输入名称"});
 				if (customName == null || !customName.trim()) return;
 				comp._state.customName = customName;
 			});

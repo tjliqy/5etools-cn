@@ -1,3 +1,4 @@
+import "./locale/i18n.js";
 import fs from "fs";
 import sharp from "sharp";
 import * as ut from "./util.js";
@@ -10,7 +11,7 @@ const _SZ_THUMBNAIL_PX = 320;
 
 async function getFileInput ({pathName, ext}) {
 	// See: https://github.com/lovell/sharp/issues/806
-	if (ext === "bmp") throw new Error(`Generating thumbnails from .bmp is not supported!`);
+	if (ext === "bmp") throw new Error(`不支持从 .bmp 文件生成缩略图！`);
 	return sharp(pathName, {limitInputPixels: false});
 }
 
@@ -67,7 +68,7 @@ async function pMain () {
 				});
 		});
 
-	console.log(`Generating thumbnails for ${tasksGenThumbnail.length} map${tasksGenThumbnail.length === 1 ? "" : "s"}...`);
+	console.log(`正在为 ${tasksGenThumbnail.length} 张地图生成缩略图…`);
 
 	tasksGenThumbnail.map(({thumbPath}) => {
 		const thumbDir = ["img", ...thumbPath.split("/").slice(0, -1)].join("/");
@@ -82,13 +83,13 @@ async function pMain () {
 				const extInput = imgPath.toLowerCase().split(".").last();
 				await webpFile({pathInput: `img/${imgPath}`, pathOutput: `img/${thumbPath}`, extInput});
 				cnt++;
-				if ((cnt % 25) === 0) console.log(`Generated ${cnt}...`);
+				if ((cnt % 25) === 0) console.log(`已生成 ${cnt} 张…`);
 			}
 		});
 	await Promise.all(workers);
-	console.log(`Generated ${cnt} thumbnails!`);
+	console.log(`已生成 ${cnt} 张缩略图！`);
 }
 
 pMain()
-	.then(() => console.log("Regenerated map thumbnails."))
+	.then(() => console.log("已重新生成地图缩略图。"))
 	.catch(e => { throw e; });

@@ -231,7 +231,7 @@ class ModalFilterFeats extends ModalFilterBase {
 			<div class="ve-col-0-5 ve-pl-0 ve-flex-vh-center">${this._isRadio ? `<input type="radio" name="radio" class="ve-no-events">` : `<input type="checkbox" class="ve-no-events">`}</div>
 
 			<div class="ve-col-0-5 ve-px-1 ve-flex-vh-center">
-				<div class="ve-ui-list__btn-inline ve-px-2 ve-no-select" title="Toggle Preview (SHIFT to Toggle Info Preview)">[+]</div>
+				<div class="ve-ui-list__btn-inline ve-px-2 ve-no-select" title="切换预览（按 Shift 切换信息预览）">[+]</div>
 			</div>
 
 			<div class="ve-col-3-5 ve-px-1 ${feat._versionBase_isVersion ? "ve-italic" : ""} ${this._getNameStyle()}">${feat._versionBase_isVersion ? `<span class="ve-px-3"></span>` : ""}${feat.name}</div>

@@ -170,7 +170,7 @@ export class MoneyConverter extends DmScreenPanelAppBase {
 				.vee.val(currency == null ? `${DEFAULT_CURRENCY}` : currency)
 				.vee.appendTo(eleRow)
 				.vee.onn("change", doUpdate);
-			const btnRemove = veT`<button class="ve-btn ve-btn-sm ve-btn-danger" title="Remove Row"><span class="glyphicon glyphicon-trash"></span></button>`
+			const btnRemove = veT`<button class="ve-btn ve-btn-sm ve-btn-danger" title="删除此行"><span class="glyphicon glyphicon-trash"></span></button>`
 				.vee.appendTo(eleRow)
 				.vee.onn("click", () => {
 					eleRow.remove();

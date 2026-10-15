@@ -30,15 +30,15 @@ export class StatGenUtilAdditionalFeats {
 					const out = [];
 
 					if (featSet.any) {
-						out.push(`选择任意一个${featSet.any > 1 ? ` ${Parser.numberToText(featSet.any)}` : ""}`);
+						out.push(`任选 ${featSet.any} 个专长`);
 					}
 
 					if (featSet.anyFromCategory) {
 						const cnt = featSet.anyFromCategory.count || 1;
-						if (I18nUtil.LANGUAGES_INDEX === "zh_CN") {
-							out.push(`选择任意${Parser.featCategoryToFull(featSet.anyFromCategory.category)}${cnt > 1 ? ` ${Parser.numberToText(featSet.any)}个` : ""}`);
+						if (["zh_CN", "zh-Hant"].includes(I18nUtil.LANGUAGES_INDEX)) {
+							out.push(`任选 ${cnt} 个${Parser.featCategoryToFull(featSet.anyFromCategory.category)}专长`);
 						} else {
-							out.push(`Choose any ${Parser.featCategoryToFull(featSet.anyFromCategory.category)}${cnt > 1 ? ` ${Parser.numberToText(featSet.any)}` : ""}`);
+							out.push(`Choose any ${Parser.featCategoryToFull(featSet.anyFromCategory.category)}${cnt > 1 ? ` ${Parser.numberToText(cnt)}` : ""}`);
 						}
 					}
 

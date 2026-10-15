@@ -4,6 +4,7 @@ class VariantClassFilter extends Filter {
 	constructor (opts) {
 		super({
 			header: "Optional/Variant Class",
+			cnHeader: "可选／变体职业",
 			nests: {},
 			groupFn: it => it.group,
 			...opts,
@@ -52,7 +53,7 @@ class MultiFilterClasses extends MultiFilter {
 				isInverted: true,
 				stateName: "meta",
 				stateProp: "_meta",
-				title: `If "Optional/Variant Class" spell lists should be treated as part of the "Class" filter.`,
+				title: `是否将“可选／变体职业”法术列表纳入“职业”筛选。`,
 			},
 		);
 
@@ -389,10 +390,10 @@ class PageFilterSpells extends PageFilterBase {
 			items: [...PageFilterSpells._META_FILTER_BASE_ITEMS, "Ritual", "传奇", "重印", "有图片", "有Token"],
 			itemSortFn: PageFilterSpells.sortMetaFilter,
 			isMiscFilter: true,
-			displayFn: it => Parser.spMiscTagToFull(it),
+			displayFn: it => it === "Ritual" ? "仪式" : Parser.spMiscTagToFull(it),
 			deselFn: PageFilterBase.defaultMiscellaneousDeselFn.bind(PageFilterBase),
 		});
-		this._groupFilter = new Filter({header: "Group"});
+		this._groupFilter = new Filter({header: "Group", cnHeader: "分组"});
 		this._schoolFilter = new Filter({
 			header: "School",
 			cnHeader: "学派",
@@ -677,7 +678,7 @@ class ModalFilterSpells extends ModalFilterBase {
 		opts = opts || {};
 		super({
 			...opts,
-			modalTitle: `Spell${opts.isRadio ? "" : "s"}`,
+			modalTitle: `法术`,
 			pageFilter: new PageFilterSpells(),
 			fnSort: PageFilterSpells.sortSpells,
 			previewButtonHandler: new ListUiPreviewButtonHandlerStatsFluff({page: UrlUtil.PG_SPELLS}),
@@ -728,14 +729,14 @@ class ModalFilterSpells extends ModalFilterBase {
 			<div class="ve-col-0-5 ve-pl-0 ve-flex-vh-center">${this._isRadio ? `<input type="radio" name="radio" class="ve-no-events">` : `<input type="checkbox" class="ve-no-events">`}</div>
 
 			<div class="ve-col-0-5 ve-px-1 ve-flex-vh-center">
-				<div class="ve-ui-list__btn-inline ve-px-2 ve-no-select" title="Toggle Preview (SHIFT to Toggle Info Preview)">[+]</div>
+				<div class="ve-ui-list__btn-inline ve-px-2 ve-no-select" title="切换预览（按 Shift 切换信息预览）">[+]</div>
 			</div>
 
 			<div class="ve-col-3 ve-px-1 ${spell._versionBase_isVersion ? "ve-italic" : ""} ${this._getNameStyle()}">${spell._versionBase_isVersion ? `<span class="ve-px-3"></span>` : ""}${spell.name}</div>
 			<div class="ve-col-1-5 ve-px-1 ve-text-center">${levelText}</div>
 			<div class="ve-col-2 ve-px-1 ve-text-center">${time}</div>
 			<div class="ve-col-1 ve-px-1 ${schoolClassName} ve-text-center" title="${Parser.spSchoolAndSubschoolsAbvsToFull(spell.school, spell.subschools)}" ${Parser.spSchoolAbvToStyle(spell.school)}>${school}</div>
-			<div class="ve-col-0-5 ve-px-1 ve-text-center" title="Concentration">${concentration}</div>
+			<div class="ve-col-0-5 ve-px-1 ve-text-center" title="专注">${concentration}</div>
 			<div class="ve-col-2 ve-px-1 ve-text-right">${range}</div>
 			<div class="ve-col-1 ve-pl-1 ve-pr-0 ve-flex-h-center ${Parser.sourceJsonToSourceClassname(spell.source)}" title="${Parser.sourceJsonToFull(spell.source)}">${source}${Parser.sourceJsonToMarkerHtml(spell.source, {isList: true})}</div>
 		</div>`;

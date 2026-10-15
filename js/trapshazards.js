@@ -4,12 +4,12 @@ class TrapsHazardsSublistManager extends SublistManager {
 	static _getRowTemplate () {
 		return [
 			new SublistCellTemplate({
-				name: "Type",
+				name: "类型",
 				css: "ve-col-4 ve-text-center ve-pl-0 ve-pr-1",
 				colStyle: "text-center",
 			}),
 			new SublistCellTemplate({
-				name: "Name",
+				name: "名称",
 				css: "ve-bold ve-col-8 ve-pl-1 ve-pr-0",
 				colStyle: "",
 			}),
@@ -63,9 +63,9 @@ class TrapsHazardsPage extends ListPage {
 			dataProps: ["trap", "hazard"],
 
 			bookViewOptions: {
-				nameSingular: "trap/hazard",
-				namePlural: "traps/hazards",
-				pageTitle: "Traps and Hazards Book View",
+				nameSingular: "陷阱／险情",
+				namePlural: "陷阱／险情",
+				pageTitle: "陷阱与危害书籍视图",
 			},
 
 			listSyntax: new ListSyntaxTrapsHazards({fnGetDataList: () => this._dataList}),

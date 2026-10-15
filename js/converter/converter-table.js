@@ -16,7 +16,7 @@ export class ConverterTable extends ConverterBase {
 	static doParseHtml (inText, options) {
 		options = this._getValidOptions(options);
 
-		if (!inText || !inText.trim()) return options.cbWarning("No input!");
+		if (!inText || !inText.trim()) return options.cbWarning("没有输入内容！");
 		inText = this._getCleanInput(inText, options);
 
 		const wrpInput = veT`<div>${inText}</div>`;
@@ -67,7 +67,7 @@ export class ConverterTable extends ConverterBase {
 		const eleTableHead = eleTable.vee.find(`thead`);
 		if (eleTableHead) {
 			const elesHeaderRow = eleTableHead.vee.findAll(`tr`);
-			if (elesHeaderRow.length !== 1) options.cbWarning(`Table header had ${elesHeaderRow.length} rows!`);
+			if (elesHeaderRow.length !== 1) options.cbWarning(`表格表头有 ${elesHeaderRow.length} 行！`);
 			elesHeaderRow.forEach((eleHeaderRow, i) => {
 				// use first tr as column headers
 				if (!i) {
@@ -125,7 +125,7 @@ export class ConverterTable extends ConverterBase {
 	 * @param options.isTitleCase Whether title-case fields should be title-cased in this entity.
 	 */
 	static doParseMarkdown (inText, options) {
-		if (!inText || !inText.trim()) return options.cbWarning("No input!");
+		if (!inText || !inText.trim()) return options.cbWarning("没有输入内容！");
 		inText = this._getCleanInput(inText, options);
 
 		const lines = inText.replace(/\r\n/g, "\n").replace(/\r/g, "\n").split(/\n/g);

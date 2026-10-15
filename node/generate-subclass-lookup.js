@@ -1,3 +1,4 @@
+import "./locale/i18n.js";
 import fs from "fs";
 import "../js/parser.js";
 import "../js/utils.js";
@@ -12,4 +13,4 @@ Object.values(classIndex).forEach(f => {
 	});
 });
 fs.writeFileSync(`./data/generated/gendata-subclass-lookup.json`, CleanUtil.getCleanJson(out, {isMinify: true}));
-console.log("Regenerated subclass lookup.");
+console.log("已重新生成子职检索表。");

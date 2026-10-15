@@ -20,7 +20,7 @@ globalThis.URL_PROXY = "https://gh-proxy.org/";
 
 globalThis.VeCt = class {
 	static STR_NONE = "无";
-	static STR_SEE_CONSOLE = "See the console (CTRL+SHIFT+J) for details.";
+	static STR_SEE_CONSOLE = "详情请查看控制台（Ctrl+Shift+J）。";
 
 	static HASH_SCALED = "scaled";
 	static HASH_SCALED_SPELL_SUMMON = "scaledspellsummon";
@@ -571,7 +571,7 @@ globalThis.SourceUtil = class {
 		{group: "supplement-alt", displayName: "扩展包"},
 		{group: "organized-play", displayName: "团体游戏"},
 		{group: "prerelease", displayName: "预发布"},
-		{group: "homebrew", displayName: "Homebrew"},
+		{group: "homebrew", displayName: "自制内容"},
 		{group: "screen", displayName: "帷幕"},
 		{group: "recipe", displayName: "食谱"},
 		{group: "homecraft", displayName: "手工艺品"},
@@ -1044,7 +1044,7 @@ globalThis.JqueryUtil = class {
 						veE({
 							tag: "button",
 							clazz: "ve-btn toast__btn-close",
-							title: "Close (CTRL to Close All)",
+							title: "关闭（按住 Ctrl 可关闭全部）",
 							children: [
 								veE({
 									tag: "span",
@@ -1966,7 +1966,7 @@ globalThis.MiscUtil = class {
 		if (typeof ClipboardItem === "undefined") {
 			JqueryUtil.doToast({
 				type: "danger",
-				content: `Could not access clipboard! If you are on Firefox, visit <code>about:config</code> and enable </code><code>dom.events.asyncClipboard.clipboardItem</code>.`,
+				content: `无法访问剪贴板！如果使用 Firefox，请访问 <code>about:config</code> 并启用 <code>dom.events.asyncClipboard.clipboardItem</code>。`,
 				isAutoHide: false,
 			});
 			return;
@@ -1979,11 +1979,11 @@ globalThis.MiscUtil = class {
 			return true;
 		} catch (e) {
 			if (e.message.includes("Document is not focused")) {
-				JqueryUtil.doToast({type: "danger", content: `Please focus the window first!`});
+				JqueryUtil.doToast({type: "danger", content: `请先将焦点切换到此窗口！`});
 				return false;
 			}
 
-			JqueryUtil.doToast({type: "danger", content: `Failed to copy! ${VeCt.STR_SEE_CONSOLE}`});
+			JqueryUtil.doToast({type: "danger", content: `复制失败！ ${VeCt.STR_SEE_CONSOLE}`});
 			throw e;
 		}
 	}
@@ -2828,7 +2828,7 @@ globalThis.MiscUtil = class {
 			const reader = new FileReader();
 			reader.onload = () => resolve(reader.result);
 			reader.onerror = () => reject(reader.error);
-			reader.onabort = () => reject(new Error("Read aborted"));
+			reader.onabort = () => reject(new Error("读取已中止"));
 			reader.readAsDataURL(blob);
 		});
 	}
@@ -4261,7 +4261,7 @@ UrlUtil.PG_TO_NAME[UrlUtil.PG_QUICKREF] = "快速参考 (5e/2014)";
 UrlUtil.PG_TO_NAME[UrlUtil.PG_MANAGE_BREW] = "管理自制内容";
 UrlUtil.PG_TO_NAME[UrlUtil.PG_MANAGE_PRERELEASE] = "管理预发布内容";
 UrlUtil.PG_TO_NAME[UrlUtil.PG_MAKE_BREW] = "自制内容编辑器";
-UrlUtil.PG_TO_NAME[UrlUtil.PG_DEMO_RENDER] = "渲染器Demo";
+UrlUtil.PG_TO_NAME[UrlUtil.PG_DEMO_RENDER] = "渲染器演示";
 UrlUtil.PG_TO_NAME[UrlUtil.PG_TABLES] = "表格";
 UrlUtil.PG_TO_NAME[UrlUtil.PG_VEHICLES] = "载具";
 // UrlUtil.PG_TO_NAME[UrlUtil.PG_CHARACTERS] = "";
@@ -4271,7 +4271,7 @@ UrlUtil.PG_TO_NAME[UrlUtil.PG_STATGEN] = "属性生成器";
 UrlUtil.PG_TO_NAME[UrlUtil.PG_LIFEGEN] = "这是你的人生";
 UrlUtil.PG_TO_NAME[UrlUtil.PG_NAMES] = "名字";
 UrlUtil.PG_TO_NAME[UrlUtil.PG_DM_SCREEN] = "DM帷幕";
-UrlUtil.PG_TO_NAME[UrlUtil.PG_CR_CALCULATOR] = "CR 计算器";
+UrlUtil.PG_TO_NAME[UrlUtil.PG_CR_CALCULATOR] = "挑战等级计算器";
 UrlUtil.PG_TO_NAME[UrlUtil.PG_ENCOUNTERGEN] = "遭遇生成器";
 UrlUtil.PG_TO_NAME[UrlUtil.PG_LOOTGEN] = "战利品生成器";
 UrlUtil.PG_TO_NAME[UrlUtil.PG_TEXT_CONVERTER] = "文本转换器";
@@ -5007,7 +5007,7 @@ globalThis.DataUtil = class {
 			return new this._OptionalJsonResponse({
 				url,
 				status: 429,
-				error: `Request was limited`,
+				error: `请求受到限制`,
 			});
 		}
 
@@ -5050,7 +5050,7 @@ globalThis.DataUtil = class {
 							new this._OptionalJsonResponse({
 								url,
 								status: request.status,
-								error: `Error during JSON request: ${getRequestDetails()}`,
+								error: `JSON 请求出错： ${getRequestDetails()}`,
 							}),
 						);
 					}
@@ -5071,7 +5071,7 @@ globalThis.DataUtil = class {
 						new this._OptionalJsonResponse({
 							url,
 							status: request.status,
-							error: `Could not parse JSON from ${url}: ${e.message}`,
+							error: `无法解析来自 ${url} 的 JSON： ${e.message}`,
 						}),
 					);
 				}
@@ -5086,7 +5086,7 @@ globalThis.DataUtil = class {
 					new this._OptionalJsonResponse({
 						url,
 						status: request.status,
-						error: `Network error during JSON request: ${getRequestDetails()}`,
+						error: `请求 JSON 时发生网络错误：${getRequestDetails()}`,
 					}),
 				);
 			});
@@ -5384,7 +5384,7 @@ globalThis.DataUtil = class {
 		if (!errors) return;
 		errors.forEach(err => {
 			JqueryUtil.doToast({
-				content: `Could not load file "${err.filename}": <code>${err.message}</code>. ${VeCt.STR_SEE_CONSOLE}`,
+				content: `无法加载文件“${err.filename}”： <code>${err.message}</code>. ${VeCt.STR_SEE_CONSOLE}`,
 				type: "danger",
 			});
 		});
@@ -5921,20 +5921,21 @@ globalThis.DataUtil = class {
 				this._doEnsureArray({obj: modInfo, prop: "senses"});
 				copyTo.senses = copyTo.senses || [];
 				modInfo.senses.forEach(sense => {
+					const typeDisplay = ({blindsight: "盲视", darkvision: "黑暗视觉", tremorsense: "震颤感知", truesight: "真实视觉"})[sense.type] || sense.type;
 					let found = false;
 					for (let i = 0; i < copyTo.senses.length; ++i) {
-						const m = new RegExp(`${sense.type} (\\d+)`, "i").exec(copyTo.senses[i]);
+						const m = new RegExp(`(?:${sense.type}|${typeDisplay}) (\\d+)`, "i").exec(copyTo.senses[i]);
 						if (m) {
 							found = true;
 							// if the creature already has a greater sense of this type, do nothing
 							if (Number(m[1]) < sense.range) {
-								copyTo.senses[i] = `${sense.type} ${sense.range} ft.`;
+								copyTo.senses[i] = `${typeDisplay} ${sense.range} 尺`;
 							}
 							break;
 						}
 					}
 
-					if (!found) copyTo.senses.push(`${sense.type} ${sense.range} ft.`);
+					if (!found) copyTo.senses.push(`${typeDisplay} ${sense.range} 尺`);
 				});
 			}
 
@@ -6275,7 +6276,7 @@ globalThis.DataUtil = class {
 
 				if (isExternalApplicationKeepCopy) copyTo.__copy = MiscUtil.copyFast(copyFrom);
 
-				const msgPtFailed = `Failed to apply _copy to "${copyTo.name}" ("${copyTo.source}").`;
+				const msgPtFailed = `无法对“${copyTo.name}”（“${copyTo.source}”）应用 _copy。`;
 
 				const copyMeta = copyTo._copy || {};
 
@@ -6294,7 +6295,7 @@ globalThis.DataUtil = class {
 								.find(({name, source}) => name.toLowerCase().trim() === templateName && source.toLowerCase().trim() === templateSource);
 
 							if (!template) {
-								templateErrors.push(`Could not find traits to apply with name "${templateName}" and source "${templateSource}"`);
+								templateErrors.push(`找不到名称为“${templateName}”、来源为“${templateSource}”的待应用特质`);
 								return null;
 							}
 
@@ -6420,19 +6421,19 @@ globalThis.DataUtil = class {
 			static _ResolverName = class extends this._ResolverBase {
 				mode = "name";
 				_getResolved ({ent, detail}) { return ent.name; }
-				_getDisplayText ({detail}) { return "(name)"; }
+				_getDisplayText ({detail}) { return "（名称）"; }
 			};
 
 			static _ResolverShortName = class extends this._ResolverBase {
 				mode = "short_name";
 				_getResolved ({ent, detail}) { return Renderer.monster.getShortName(ent); }
-				_getDisplayText ({detail}) { return "(short name)"; }
+				_getDisplayText ({detail}) { return "（简称）"; }
 			};
 
 			static _ResolverTitleShortName = class extends this._ResolverBase {
 				mode = "title_short_name";
 				_getResolved ({ent, detail}) { return Renderer.monster.getShortName(ent, {isTitleCase: true}); }
-				_getDisplayText ({detail}) { return "(short title name)"; }
+				_getDisplayText ({detail}) { return "（标题式简称）"; }
 			};
 
 			/** @abstract */
@@ -6450,7 +6451,7 @@ globalThis.DataUtil = class {
 
 			static _ResolverSpellDc = class extends this._ResolverDc {
 				mode = "spell_dc";
-				_getDisplayText ({detail}) { return `(${detail.toUpperCase()} spellcasting DC)`; }
+				_getDisplayText ({detail}) { return `（${detail.toUpperCase()} 施法豁免 DC）`; }
 			};
 
 			static _ResolverToHit = class extends this._ResolverAbilityScore {
@@ -6472,7 +6473,7 @@ globalThis.DataUtil = class {
 					return total === 0 ? "" : total > 0 ? ` + ${total}` : ` - ${Math.abs(total)}`;
 				}
 
-				_getDisplayText ({detail}) { return `(${detail.toUpperCase()} damage modifier)`; }
+				_getDisplayText ({detail}) { return `（${detail.toUpperCase()} 伤害调整值）`; }
 			};
 
 			static _ResolverDamageAvg = class extends this._ResolverBase {
@@ -7308,7 +7309,7 @@ globalThis.DataUtil = class {
 			rawRaceData = MiscUtil.copyFast(rawRaceData);
 			(rawRaceData.subrace || []).forEach(sr => {
 				const r = rawRaceData.race.find(it => it.name === sr.raceName && it.source === sr.raceSource);
-				if (!r) return JqueryUtil.doToast({content: `Failed to find race "${sr.raceName}" (${sr.raceSource})`, type: "danger"});
+				if (!r) return JqueryUtil.doToast({content: `找不到种族“${sr.raceName}”（${sr.raceSource}）`, type: "danger"});
 				const cpySr = MiscUtil.copyFast(sr);
 				delete cpySr.raceName;
 				delete cpySr.raceSource;
@@ -7348,7 +7349,7 @@ globalThis.DataUtil = class {
 			(brew.subrace || []).forEach(sr => {
 				const rSite = rawSite.race.find(it => it.name === sr.raceName && it.source === sr.raceSource);
 				const rBrew = (brew.race || []).find(it => it.name === sr.raceName && it.source === sr.raceSource);
-				if (!rSite && !rBrew) return JqueryUtil.doToast({content: `Failed to find race "${sr.raceName}" (${sr.raceSource})`, type: "danger"});
+				if (!rSite && !rBrew) return JqueryUtil.doToast({content: `找不到种族“${sr.raceName}”（${sr.raceSource}）`, type: "danger"});
 				const rTgt = rSite || rBrew;
 				const cpySr = MiscUtil.copyFast(sr);
 				delete cpySr.raceName;
@@ -9218,7 +9219,7 @@ class BookModeViewBase {
 	}
 
 	_getBtnWindowClose () {
-		return veT`<button class="ve-btn ve-btn-xs ve-btn-danger ve-br-0 ve-bt-0 ve-btl-0 ve-btr-0 ve-bbr-0 ve-bbl-0 ve-h-20p" title="Close"><span class="glyphicon glyphicon-remove"></span></button>`
+		return veT`<button class="ve-btn ve-btn-xs ve-btn-danger ve-br-0 ve-bt-0 ve-btl-0 ve-btr-0 ve-bbr-0 ve-bbl-0 ve-h-20p" title="关闭"><span class="glyphicon glyphicon-remove"></span></button>`
 			.vee.onn("click", () => this.setStateClosed());
 	}
 
@@ -9258,7 +9259,7 @@ class BookModeViewBase {
 		onChangeSelColumns();
 
 		const wrpPrint = veT`<div class="ve-w-100 ve-flex">
-			<div class="ve-flex-vh-center"><div class="ve-mr-2 ve-no-wrap ve-help-subtle" title="Applied when printing the page.">打印列数：</div>${selColumns}</div>
+			<div class="ve-flex-vh-center"><div class="ve-mr-2 ve-no-wrap ve-help-subtle" title="打印页面时应用。">打印列数：</div>${selColumns}</div>
 		</div>`.vee.appendTo(wrp);
 
 		return {wrp, wrpPrint};
@@ -9387,7 +9388,7 @@ globalThis.ExcludeUtil = class {
 			this._doBuildCache();
 		} catch (e) {
 			JqueryUtil.doToast({
-				content: "Error when loading content blocklist! Purged blocklist data. (See the log for more information.)",
+				content: "加载内容屏蔽列表时出错，已清除屏蔽列表数据。（详情见日志。）",
 				type: "danger",
 			});
 			try {
@@ -9522,7 +9523,7 @@ globalThis.ExcludeUtil = class {
 	}
 
 	static isAllContentExcluded (list) { return (!list.length && ExcludeUtil._excludeCount) || (list.length > 0 && list.length === ExcludeUtil._excludeCount); }
-	static getAllContentBlocklistedHtml () { return `<div class="initial-message initial-message--med">(All content <a href="blocklist.html">blocklisted</a>)</div>`; }
+	static getAllContentBlocklistedHtml () { return `<div class="initial-message initial-message--med">（所有内容均已加入<a href="blocklist.html">屏蔽列表</a>）</div>`; }
 
 	static async _pSave () {
 		return StorageUtil.pSet(VeCt.STORAGE_EXCLUDES, ExcludeUtil._excludes);
@@ -9679,8 +9680,7 @@ globalThis.DatetimeUtil = class {
 	static _MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 	static getDateStr ({date, isShort = false, isPad = false} = {}) {
-		const month = DatetimeUtil._MONTHS[date.getMonth()];
-		return `${isShort ? month.substring(0, 3) : month} ${isPad && date.getDate() < 10 ? "\u00A0" : ""}${Parser.getOrdinalForm(date.getDate())}, ${date.getFullYear()}`;
+		return `${date.getFullYear()}年${date.getMonth() + 1}月${isPad ? `${date.getDate()}`.padStart(2, "0") : date.getDate()}日`;
 	}
 
 	/* -------------------------------------------- */
@@ -9689,8 +9689,7 @@ globalThis.DatetimeUtil = class {
 
 	static getDatetimeStr ({date, isPlainText = false} = {}) {
 		date = date ?? new Date();
-		const monthName = DatetimeUtil._MONTHS[date.getMonth()];
-		return `${date.getDate()} ${!isPlainText ? `<span title="${monthName}">` : ""}${monthName.substring(0, 3)}.${!isPlainText ? `</span>` : ""} ${date.getFullYear()}, ${DatetimeUtil._getPad2(date.getHours())}:${DatetimeUtil._getPad2(date.getMinutes())}:${DatetimeUtil._getPad2(date.getSeconds())}`;
+		return `${date.getFullYear()}年${date.getMonth() + 1}月${date.getDate()}日 ${DatetimeUtil._getPad2(date.getHours())}:${DatetimeUtil._getPad2(date.getMinutes())}:${DatetimeUtil._getPad2(date.getSeconds())}`;
 	}
 
 	/* -------------------------------------------- */
@@ -9701,9 +9700,7 @@ globalThis.DatetimeUtil = class {
 	static _SECS_PER_MINUTE = 60;
 
 	static getIntervalStr (millis) {
-		if (millis < 0 || isNaN(millis)) return "(Unknown interval)";
-
-		const s = number => (number !== 1) ? "s" : "";
+		if (millis < 0 || isNaN(millis)) return "（未知时长）";
 
 		const stack = [];
 
@@ -9711,32 +9708,32 @@ globalThis.DatetimeUtil = class {
 
 		const numYears = Math.floor(numSecs / DatetimeUtil._SECS_PER_YEAR);
 		if (numYears) {
-			stack.push(`${numYears} year${s(numYears)}`);
+			stack.push(`${numYears} 年`);
 			numSecs = numSecs - (numYears * DatetimeUtil._SECS_PER_YEAR);
 		}
 
 		const numDays = Math.floor(numSecs / DatetimeUtil._SECS_PER_DAY);
 		if (numDays) {
-			stack.push(`${numDays} day${s(numDays)}`);
+			stack.push(`${numDays} 天`);
 			numSecs = numSecs - (numDays * DatetimeUtil._SECS_PER_DAY);
 		}
 
 		const numHours = Math.floor(numSecs / DatetimeUtil._SECS_PER_HOUR);
 		if (numHours) {
-			stack.push(`${numHours} hour${s(numHours)}`);
+			stack.push(`${numHours} 小时`);
 			numSecs = numSecs - (numHours * DatetimeUtil._SECS_PER_HOUR);
 		}
 
 		const numMinutes = Math.floor(numSecs / DatetimeUtil._SECS_PER_MINUTE);
 		if (numMinutes) {
-			stack.push(`${numMinutes} minute${s(numMinutes)}`);
+			stack.push(`${numMinutes} 分钟`);
 			numSecs = numSecs - (numMinutes * DatetimeUtil._SECS_PER_MINUTE);
 		}
 
-		if (numSecs) stack.push(`${numSecs} second${s(numSecs)}`);
-		else if (!stack.length) stack.push("less than a second"); // avoid adding this if there's already info
+		if (numSecs) stack.push(`${numSecs} 秒`);
+		else if (!stack.length) stack.push("不到 1 秒"); // avoid adding this if there's already info
 
-		return stack.join(", ");
+		return stack.join(" ");
 	}
 };
 
@@ -9846,7 +9843,7 @@ if (!globalThis.IS_VTT && typeof window !== "undefined") {
 					const tgt = wrp.vee.closest(".cancer__anchor")?.vee.find(".cancer__disp-cancer");
 					if (tgt) {
 						anyFound = true;
-						tgt.vee.css({display: "flex"}).vee.txt("Advertisements");
+						tgt.vee.css({display: "flex"}).vee.txt("广告");
 						clearInterval(iv);
 					}
 				}, 250);

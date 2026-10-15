@@ -7,7 +7,7 @@ export class EncounterBuilderPartyCustomAdvanced extends EncounterBuilderPartyBa
 	static PARTY_ID = "customAdvanced";
 
 	partyId = this.constructor.PARTY_ID;
-	displayName = "Advanced";
+	displayName = "高级";
 
 	/* -------------------------------------------- */
 
@@ -88,10 +88,10 @@ export class EncounterBuilderPartyCustomAdvanced extends EncounterBuilderPartyBa
 	}
 
 	render ({stgGroup}) {
-		const btnAddPlayers = veT`<button class="ve-btn ve-btn-primary ve-btn-xs"><span class="glyphicon glyphicon-plus"></span> Add Player</button>`
+		const btnAddPlayers = veT`<button class="ve-btn ve-btn-primary ve-btn-xs"><span class="glyphicon glyphicon-plus"></span> 添加玩家</button>`
 			.vee.onn("click", () => this._doAddPlayer());
 
-		const btnAddAdvancedCol = veT`<button class="ve-btn ve-btn-primary ve-btn-xxs ecgen-player__btn-inline ve-h-ipt-xs ve-bl-0 ve-bb-0 ve-bbl-0 ve-bbr-0 ve-btl-0 ve-ml-n1" title="Add Column" tabindex="-1"><span class="glyphicon glyphicon-list-alt"></span></button>`
+		const btnAddAdvancedCol = veT`<button class="ve-btn ve-btn-primary ve-btn-xxs ecgen-player__btn-inline ve-h-ipt-xs ve-bl-0 ve-bb-0 ve-bbl-0 ve-btl-0 ve-ml-n1" title="添加列" tabindex="-1"><span class="glyphicon glyphicon-list-alt"></span></button>`
 			.vee.onn("click", () => this._doAddColExtraAdvanced());
 
 		const wrpHeaders = veT`<div class="ve-flex"></div>`;
@@ -101,8 +101,8 @@ export class EncounterBuilderPartyCustomAdvanced extends EncounterBuilderPartyBa
 
 		const stg = veT`<div class="ve-overflow-x-auto ve-flex-col">
 			<div class="ve-flex-h-center ve-mb-2 ve-bb-1p ve-small-caps ve-self-flex-start">
-				<div class="ve-w-100p ve-mr-1 ve-h-ipt-xs ve-no-shrink">Name</div>
-				<div class="ve-w-40p ve-text-center ve-mr-1 ve-h-ipt-xs ve-no-shrink">Level</div>
+				<div class="ve-w-100p ve-mr-1 ve-h-ipt-xs ve-no-shrink">姓名</div>
+				<div class="ve-w-40p ve-text-center ve-mr-1 ve-h-ipt-xs ve-no-shrink">等级</div>
 				${wrpHeaders}
 				${btnAddAdvancedCol}
 			</div>
@@ -118,7 +118,7 @@ export class EncounterBuilderPartyCustomAdvanced extends EncounterBuilderPartyBa
 
 			<div class="row">
 				<div class="ve-w-100">
-					${this._rendererWrapped.er(`{@note Additional columns will be imported into the DM Screen.}`)}
+					${this._rendererWrapped.er(`{@note 附加列会导入 DM 帷幕。}`)}
 				</div>
 			</div>
 		</div>`

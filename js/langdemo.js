@@ -53,11 +53,11 @@ class LangDemoUi {
 		};
 
 		const addContextRow = (name, value) => {
-			const iptName = veT`<input class="ve-form-control form-control--minimal ve-input-xs ve-mr-2 ve-code" placeholder="Identifier">`
+			const iptName = veT`<input class="ve-form-control form-control--minimal ve-input-xs ve-mr-2 ve-code" placeholder="标识符">`
 				.vee.onn("change", () => saveContext())
 				.vee.val(name);
 
-			const iptVal = veT`<input class="ve-form-control form-control--minimal ve-input-xs ve-mr-2 ve-code" type="number" placeholder="Value">`
+			const iptVal = veT`<input class="ve-form-control form-control--minimal ve-input-xs ve-mr-2 ve-code" type="number" placeholder="值">`
 				.vee.onn("change", () => saveContext())
 				.vee.val(value);
 
@@ -77,7 +77,7 @@ class LangDemoUi {
 		};
 
 		LangDemoUi._wrpContext = veEs(`#wrp_context`);
-		const btnAdd = veT`<button class="ve-btn ve-btn-xs ve-btn-default">Add Context</button>`
+		const btnAdd = veT`<button class="ve-btn ve-btn-xs ve-btn-default">添加上下文</button>`
 			.vee.onn("click", () => addContextRow());
 		veT`<div class="ve-mb-2 ve-flex-v-center">${btnAdd}</div>`.vee.appendTo(LangDemoUi._wrpContext);
 
@@ -88,8 +88,8 @@ class LangDemoUi {
 	}
 
 	static _handleInvalidMessage (msg) {
-		if (msg) JqueryUtil.doToast({content: `Invalid \u2014 ${msg}`, type: "danger"});
-		else JqueryUtil.doToast({content: `Valid!`, type: "success"});
+		if (msg) JqueryUtil.doToast({content: `无效：${msg}`, type: "danger"});
+		else JqueryUtil.doToast({content: "有效！", type: "success"});
 	}
 
 	static async pRun () {
@@ -116,7 +116,7 @@ class LangDemoUi {
 		const ctx = LangDemoUi._metasContext
 			.mergeMap(it => ({[it.iptName.vee.val().trim()]: Number(it.iptVal.vee.val()) || 0}));
 		const result = await parsed.pEvl(ctx, LangDemoUi.RESOLVER);
-		if (result.isCancelled) dispOutResult.vee.txt("Cancelled!");
+		if (result.isCancelled) dispOutResult.vee.txt("已取消！");
 		else dispOutResult.vee.txt(result.val == null ? `(null)` : result.val);
 	}
 }
@@ -125,7 +125,7 @@ LangDemoUi._wrpContext = null;
 LangDemoUi._metasContext = [];
 LangDemoUi._SAMPLES = [
 	{
-		name: "Empty",
+		name: "空白",
 		code: `
 
 
@@ -133,23 +133,23 @@ LangDemoUi._SAMPLES = [
 `,
 	},
 	{
-		name: "Number",
+		name: "数字",
 		code: `1`,
 	},
 	{
-		name: "Sum",
+		name: "求和",
 		code: `1 + 1`,
 	},
 	{
-		name: "Multiplication",
+		name: "乘法",
 		code: `2 * 3`,
 	},
 	{
-		name: "Exponent",
-		code: `3^3^2  # Should equal 19683`,
+		name: "指数",
+		code: `3^3^2  # 结果应为 19683`,
 	},
 	{
-		name: "If-elif-else",
+		name: "如果／否则如果／否则",
 		code: `if r == 20: 1
 elif r > 1:
   2
@@ -158,60 +158,60 @@ else:
 4`,
 	},
 	{
-		name: "If-elif",
+		name: "如果／否则如果",
 		code: `if r == 20: 1
 elif r > 1:
   2`,
 	},
 	{
-		name: "If-else",
+		name: "如果／否则",
 		code: `if r == 20: 1
 else:
   2`,
 	},
 	{
-		name: "If",
+		name: "如果",
 		code: `if r == 20: 1`,
 	},
 	{
-		name: "If (trailing return)",
+		name: "如果（后续返回值）",
 		code: `if r == 20: 1
 2`,
 	},
 	{
-		name: "Condition Negation",
+		name: "条件取反",
 		code: `if not r: 2`,
 	},
 	{
-		name: "Parentheses",
-		code: `(2 + 3) * 4  # Should equal 20`,
+		name: "括号",
+		code: `(2 + 3) * 4  # 结果应为 20`,
 	},
 	{
-		name: "Dynamic Int",
+		name: "动态整数",
 		code: `if @user_int > 10: 2`,
 	},
 	{
-		name: "Labelled Dynamic Int",
-		code: `if (@user_int|Enter: a /*+-^,!= (Number)) > 10: 2`,
+		name: "带标签的动态整数",
+		code: `if (@user_int|请输入数字 /*+-^,!=（数字）) > 10: 2`,
 	},
 	{
-		name: "Selectable Dynamic Int",
-		code: `if (@user_int|| 1 = One Apple| 2 = Two Bananas |3|4|11=11 Oranges) > 10: 2`,
+		name: "可选择的动态整数",
+		code: `if (@user_int|| 1 = 一个苹果| 2 = 两根香蕉 |3|4|11=11 个橙子) > 10: 2`,
 	},
 	{
-		name: "Dynamic Bool",
+		name: "动态布尔值",
 		code: `if not @user_bool: 3`,
 	},
 	{
-		name: "Labelled Dynamic Bool",
+		name: "带标签的动态布尔值",
 		code: `if not (@user_bool|Choose: /*+-^,!= (Yes\\No)): 4`,
 	},
 	{
-		name: "Custom Buttons Dynamic Bool",
+		name: "自定义按钮的动态布尔值",
 		code: `if (@user_bool||Good | Evil): 2`,
 	},
 	{
-		name: "Selectable Dynamic Bool",
+		name: "可选择的动态布尔值",
 		code: `if not (@user_bool|Pick| true = Good| false = Evil |true|false|true=Lawful): 2`,
 	},
 ];
@@ -220,7 +220,7 @@ LangDemoUi.RESOLVER = class {
 
 	static get = (path) => {
 		const out = Math.round(Math.random() * 50);
-		JqueryUtil.doToast(`Randomized ${path} as ${out}`);
+		JqueryUtil.doToast(`已将 ${path} 随机设为 ${out}`);
 		return out;
 	};
 };

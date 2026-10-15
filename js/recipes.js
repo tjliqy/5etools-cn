@@ -8,12 +8,12 @@ class RecipesSublistManager extends SublistManager {
 	static _getRowTemplate () {
 		return [
 			new SublistCellTemplate({
-				name: "Name",
+				name: "名称",
 				css: "ve-bold ve-col-9 ve-pl-0 ve-pr-1",
 				colStyle: "",
 			}),
 			new SublistCellTemplate({
-				name: "Type",
+				name: "类型",
 				css: "ve-col-3 ve-text-center ve-pl-1 ve-pr-0",
 				colStyle: "text-center",
 			}),
@@ -72,9 +72,9 @@ class RecipesPage extends ListPage {
 			dataProps: ["recipe"],
 
 			bookViewOptions: {
-				nameSingular: "recipe",
-				namePlural: "recipes",
-				pageTitle: "Recipes Book View",
+				nameSingular: "配方",
+				namePlural: "配方",
+				pageTitle: "配方书籍视图",
 			},
 
 			listSyntax: new ListSyntaxRecipes({fnGetDataList: () => this._dataList, pFnGetFluff}),
@@ -160,7 +160,7 @@ class RecipesPage extends ListPage {
 		try {
 			sub = await this._pDoLoadSubHash_pScaler_({sub});
 		} catch (e) {
-			JqueryUtil.doToast({type: "danger", content: `Failed to set recipe scaler state from URL! ${VeCt.STR_SEE_CONSOLE}`, isAutoHide: false});
+			JqueryUtil.doToast({type: "danger", content: `无法从网址设置配方缩放状态！ ${VeCt.STR_SEE_CONSOLE}`, isAutoHide: false});
 			setTimeout(() => { throw e; });
 		}
 		return sub;

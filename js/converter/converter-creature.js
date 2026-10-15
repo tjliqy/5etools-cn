@@ -203,7 +203,7 @@ export class ConverterCreature extends ConverterBase {
 	static doParseText (inText, options) {
 		options = this._getValidOptions(options);
 
-		if (!inText || !inText.trim()) return options.cbWarning("No input!");
+		if (!inText || !inText.trim()) return options.cbWarning("没有输入内容！");
 		const toConvert = this._getLinesToConvert({inText, options});
 
 		const stats = {};
@@ -1470,7 +1470,7 @@ export class ConverterCreature extends ConverterBase {
 
 		const isInlineLegendaryActionItem = (line) => /^-\s*\*\*\*?[^*]+/gi.test(line.trim());
 
-		if (!inText || !inText.trim()) return options.cbWarning("No input!");
+		if (!inText || !inText.trim()) return options.cbWarning("没有输入内容！");
 		const toConvert = this._getCleanInput(inText, options).split("\n");
 		let stats = null;
 
@@ -1869,7 +1869,7 @@ export class ConverterCreature extends ConverterBase {
 		Renderer.monster.CHILD_PROPS_EXTENDED
 			.filter(prop => stats[prop])
 			.forEach(prop => {
-				stats[prop].forEach(it => RechargeConvert.tryConvertRecharge(it, () => {}, () => options.cbWarning(`${stats.name ? `(${stats.name}) ` : ""}Manual recharge tagging required for ${prop} "${it.name}"`)));
+				stats[prop].forEach(it => RechargeConvert.tryConvertRecharge(it, () => {}, () => options.cbWarning(`${stats.name ? `(${stats.name}) ` : ""}${prop}“${it.name}”的充能标记需要手动处理`)));
 			});
 		this._doFilterAddSpellcasting(stats, "trait", isMarkdown, options);
 		this._doFilterAddSpellcasting(stats, "action", isMarkdown, options);
@@ -1883,7 +1883,7 @@ export class ConverterCreature extends ConverterBase {
 			cbErr: (ac) => options.cbWarning(`${stats.name ? `(${stats.name})` : ""}转换AC "${ac}"失败`),
 			styleHint: options.styleHint,
 		});
-		TagCreatureSubEntryInto.tryRun(stats, (atk) => options.cbWarning(`${stats.name ? `(${stats.name}) ` : ""}Manual attack tagging required for "${atk}"`));
+		TagCreatureSubEntryInto.tryRun(stats, (atk) => options.cbWarning(`${stats.name ? `(${stats.name}) ` : ""}攻击“${atk}”的标记需要手动处理`));
 		TagHit.tryTagHits(stats);
 		TagDc.tryTagDcs(stats);
 		TagCondition.tryTagConditions(stats, {isTagInflicted: true, styleHint: options.styleHint, blocklistNames: subEntryNameBlocklist});
@@ -1897,7 +1897,7 @@ export class ConverterCreature extends ConverterBase {
 		TagCondition.tryTagConditionsRegionalsLairs(
 			stats,
 			{
-				cbMan: (legendaryGroup) => options.cbWarning(`${stats.name ? `(${stats.name}) ` : ""}Legendary group "${legendaryGroup.name} :: ${legendaryGroup.source}" could not be found during condition tagging`),
+				cbMan: (legendaryGroup) => options.cbWarning(`${stats.name ? `(${stats.name}) ` : ""}标记状态时找不到传奇动作组“${legendaryGroup.name} :: ${legendaryGroup.source}”`),
 				isTagInflicted: true,
 			},
 		);
@@ -1984,7 +1984,7 @@ export class ConverterCreature extends ConverterBase {
 							if (typeof itmLast !== "string") return;
 
 							if (itmLast.endsWith(":")) {
-								options.cbWarning(`${stats.name ? `(${stats.name}) ` : ""}Final array string "${itmLast}" ended with ":"`);
+								options.cbWarning(`${stats.name ? `(${stats.name}) ` : ""}数组末项“${itmLast}”以冒号结尾`);
 							}
 						}});
 					});
@@ -2334,7 +2334,7 @@ export class ConverterCreature extends ConverterBase {
 		const pts = text.split(/; ?/);
 
 		if (pts.length > 2) {
-			options.cbWarning(`${stats.name ? `(${stats.name}) ` : ""}Immunities "${text}" requires manual conversion`);
+			options.cbWarning(`${stats.name ? `(${stats.name}) ` : ""}免疫项“${text}”需要手动转换`);
 			return;
 		}
 
@@ -2623,13 +2623,13 @@ export class ConverterCreature extends ConverterBase {
 	}
 
 	// region SHARED HOMEBREW PARSING FUNCTIONS /////////////////////////////////////////////////////////////////////////
-	static _RE_BREW_RESOURCE_SOULS = /^Souls (?<value>\d+) \((?<formula>[^)]+)\)$/;
+	static _RE_BREW_RESOURCE_SOULS = /^(?:Souls|灵魂) (?<value>\d+) \((?<formula>[^)]+)\)$/;
 
 	static _brew_setResourceSouls (stats, meta, options) {
 		const m = this._RE_BREW_RESOURCE_SOULS.exec(meta.curLine);
 		(stats.resource = stats.resource || [])
 			.push({
-				name: "Souls",
+				name: "灵魂",
 				value: Number(m.groups.value),
 				formula: m.groups.formula,
 			});

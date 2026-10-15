@@ -13,7 +13,7 @@ class TablesSublistManager extends SublistManager {
 	static _getRowTemplate () {
 		return [
 			new SublistCellTemplate({
-				name: "Name",
+				name: "名称",
 				css: "ve-bold ve-col-12 ve-px-0",
 				colStyle: "",
 			}),
@@ -66,9 +66,9 @@ class TablesPage extends ListPage {
 			dataProps: ["table", "tableGroup"],
 
 			bookViewOptions: {
-				nameSingular: "table",
-				namePlural: "tables",
-				pageTitle: "Tables Book View",
+				nameSingular: "表格",
+				namePlural: "表格",
+				pageTitle: "表格书籍视图",
 			},
 
 			isPreviewable: true,
@@ -81,7 +81,7 @@ class TablesPage extends ListPage {
 		return {
 			other: [
 				{
-					name: "Copy as CSV",
+					name: "复制为 CSV",
 					pFn: () => this._pCopyRenderedAsCsv(),
 				},
 			],

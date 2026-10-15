@@ -68,7 +68,7 @@ export class ConfigUi {
 
 		ui.render(eleModalInner);
 
-		const btnClose = veT`<button class="ve-btn ve-btn-default ve-btn-sm ve-ml-auto">Close</button>`
+		const btnClose = veT`<button class="ve-btn ve-btn-default ve-btn-sm ve-ml-auto">关闭</button>`
 			.vee.onn("click", () => doClose());
 
 		veT`<div class="ve-py-1 ve-w-100 ve-flex-v-center">

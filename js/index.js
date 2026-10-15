@@ -90,7 +90,7 @@ class IndexPage {
 			.forEach(lnk => lnk.vee.attr("href", `${lnk.vee.attr("href")}?v=${VERSION_NUMBER}_${Date.now()}`));
 
 		window.__cmp2 = () => {
-			alert("This only works on a live version of the site!");
+			alert("此功能只能在正式部署的网站上使用！");
 		};
 	}
 

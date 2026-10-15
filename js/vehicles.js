@@ -4,12 +4,12 @@ class VehiclesSublistManager extends SublistManager {
 	static _getRowTemplate () {
 		return [
 			new SublistCellTemplate({
-				name: "Type",
+				name: "类型",
 				css: "ve-col-8 ve-pl-0 ve-pr-1 ve-text-center",
 				colStyle: "text-center",
 			}),
 			new SublistCellTemplate({
-				name: "Name",
+				name: "名称",
 				css: "ve-bold ve-col-4 ve-pl-1 ve-pr-0",
 				colStyle: "",
 			}),
@@ -68,9 +68,9 @@ class VehiclesPage extends ListPage {
 			dataProps: ["vehicle", "vehicleUpgrade"],
 
 			bookViewOptions: {
-				nameSingular: "vehicle",
-				namePlural: "vehicles",
-				pageTitle: "Vehicles Book View",
+				nameSingular: "载具",
+				namePlural: "载具",
+				pageTitle: "载具书籍视图",
 			},
 
 			listSyntax: new ListSyntaxVehicles({fnGetDataList: () => this._dataList, pFnGetFluff}),

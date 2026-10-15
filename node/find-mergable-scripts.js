@@ -36,7 +36,7 @@ out.sort((a, b) => SortUtil.ascSort(b.total, a.total))
 	.forEach(it => {
 		if (it.total > numFiles / 2 && it.total < numFiles) {
 			const notSeenIn = Object.keys(FILE_TO_JS_FILES).filter(k => !FILE_TO_JS_FILES[k].includes(it.file));
-			console.log(`${it.total}/${numFiles} ${it.file} -- missing from:`);
+			console.log(`${it.total}/${numFiles} ${it.file} -- 以下文件中缺失：`);
 			notSeenIn.forEach(it => console.log(`\t${it}`));
 		} else {
 			console.log(`${it.total}/${numFiles} ${it.file}`);

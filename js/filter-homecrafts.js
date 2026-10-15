@@ -27,6 +27,7 @@ class PageFilterHomeCrafts extends PageFilterBase {
 
 		this._typeFilter = new Filter({
 			header: "Type",
+			cnHeader: "类型",
 			items: ["crochetPattern"],
 			displayFn: it => Parser.getPropDisplayName(it),
 		});
@@ -43,8 +44,8 @@ class PageFilterHomeCrafts extends PageFilterBase {
 			displayFn: it => Parser.crochetPatternSkilLevelToFull(it),
 			itemSortFn: PageFilterHomeCrafts._ascSortSkillLevelFilter.bind(PageFilterHomeCrafts),
 		});
-		this._sizeFilterWidth = new RangeFilter({header: "Width", min: 1, max: 10, suffix: " in."});
-		this._sizeFilterHeight = new RangeFilter({header: "Height", min: 1, max: 10, suffix: " in."});
+		this._sizeFilterWidth = new RangeFilter({header: "Width", cnHeader: "宽度", min: 1, max: 10, suffix: " 英寸"});
+		this._sizeFilterHeight = new RangeFilter({header: "Height", cnHeader: "高度", min: 1, max: 10, suffix: " 英寸"});
 		this._sizesFilter = new MultiFilter({
 			header: "Sizes",
 			cnHeader: "尺寸",

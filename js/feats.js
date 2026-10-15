@@ -79,9 +79,9 @@ class FeatsPage extends ListPage {
 			dataProps: ["feat"],
 
 			bookViewOptions: {
-				nameSingular: "feat",
-				namePlural: "feats",
-				pageTitle: "Feats Book View",
+				nameSingular: "专长",
+				namePlural: "专长",
+				pageTitle: "专长书籍视图",
 			},
 
 			isPreviewable: true,

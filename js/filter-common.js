@@ -17,7 +17,7 @@ class FilterCommon {
 				...[...new Array(9)].map((_, i) => 100_000 * (i + 1)),
 				...[...new Array(10)].map((_, i) => 1_000_000 * (i + 1)),
 			],
-			labelDisplayFn: it => !it ? "None" : Parser.getDisplayCurrency(CurrencyUtil.doSimplifyCoins({cp: it})),
+			labelDisplayFn: it => !it ? "无" : Parser.getDisplayCurrency(CurrencyUtil.doSimplifyCoins({cp: it})),
 		});
 	}
 

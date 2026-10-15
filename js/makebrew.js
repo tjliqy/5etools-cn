@@ -188,7 +188,7 @@ class PageUi extends ProxyBase {
 			.map(it => it.json);
 
 		this._selSource = veT`<select class="ve-form-control ve-input-xs ve-br-0 ve-w-120p ve-text-clip-ellipsis">
-			<option disabled>Select</option>
+			<option disabled>请选择</option>
 			${this._allSources.map(srcJson => `<option value="${srcJson.qq()}">${Parser.sourceJsonToFull(srcJson).qq()}</option>`)}
 		</select>`
 			.vee.onn("change", async () => {
@@ -215,7 +215,7 @@ class PageUi extends ProxyBase {
 				this.__setStageSource();
 			});
 
-		const btnSourceAdd = veT`<button class="ve-btn ve-btn-default ve-btn-xs" title="Add New Source"><span class="glyphicon glyphicon-plus"></span></button>`
+		const btnSourceAdd = veT`<button class="ve-btn ve-btn-default ve-btn-xs" title="添加新来源"><span class="glyphicon glyphicon-plus"></span></button>`
 			.vee.onn("click", () => {
 				this._doRebuildStageSource({mode: "add"});
 				this.__setStageSource();
@@ -237,7 +237,7 @@ class PageUi extends ProxyBase {
 	}
 
 	_initHeader_new ({wrpSettingsBtm}) {
-		const btnNew = veT`<button class="ve-btn ve-btn-xs ve-btn-default" title="SHIFT to reset additional state (such as whether or not certain attributes are auto-calculated)">新增</button>`
+		const btnNew = veT`<button class="ve-btn ve-btn-xs ve-btn-default" title="按住 Shift 可同时重置附加状态（例如属性是否自动计算）">新增</button>`
 			.vee.onn("click", async (evt) => {
 				if (!await InputUiUtil.pGetUserBoolean({title: "此操作将重置编辑器", htmlDescription: "你确定吗？", textYes: "确定", textNo: "取消"})) return;
 				this._getActiveBuilderInstance().reset({isResetAllMeta: !!evt.shiftKey});
@@ -257,7 +257,7 @@ class PageUi extends ProxyBase {
 	}
 
 	_initHeader_existing ({wrpSettingsBtm}) {
-		const btnEditExisting = veT`<button class="ve-btn ve-btn-xs ve-btn-default" title="Hotkey: o">编辑已存在内容</button>`
+		const btnEditExisting = veT`<button class="ve-btn ve-btn-xs ve-btn-default" title="快捷键：o">编辑已存在内容</button>`
 			.vee.onn("click", () => this._getActiveBuilderInstance().pHandleClickEditExisting())
 			.vee.appendTo(wrpSettingsBtm);
 

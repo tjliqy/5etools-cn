@@ -96,7 +96,7 @@ class InitiativeTrackerComponent extends BaseComponent {
 			.map(({entity}) => entity.name)
 			.filter(name => name && name.trim());
 
-		return `${this._state.rows.length} creature${this._state.rows.length === 1 ? "" : "s"} ${names.length ? `(${names.slice(0, 3).join(", ")}${names.length > 3 ? "..." : ""})` : ""}`;
+		return `${this._state.rows.length} 个生物${names.length ? `（${names.slice(0, 3).join("、")}${names.length > 3 ? "……" : ""}）` : ""}`;
 	}
 
 	async pDoLoadEncounter ({entityInfos, encounterInfo}) {
@@ -354,11 +354,11 @@ class InitiativeTrackerComponent extends BaseComponent {
 				this._proxyAssignSimple("state", stateNxt);
 			});
 
-		const btnSendToFoundry = veT`<button title="Send to Foundry" class="ve-print__hidden ve-btn ve-btn-default ve-btn-xs dm-init-lockable"><span class="glyphicon glyphicon-send"></span></button>`
+		const btnSendToFoundry = veT`<button title="发送到 Foundry" class="ve-print__hidden ve-btn ve-btn-default ve-btn-xs dm-init-lockable"><span class="glyphicon glyphicon-send"></span></button>`
 			.vee.onn("click", async () => {
 				if (this._state.isLocked) return;
 
-				const encounterActorName = await InputUiUtil.pGetUserString({title: "Encounter Actor Name", isSkippable: true});
+				const encounterActorName = await InputUiUtil.pGetUserString({title: "遭遇角色名称", isSkippable: true});
 
 				const creatureMetasSerial = await Object.values(
 					this._state.rows
@@ -566,27 +566,27 @@ class InitiativeTrackerComponent extends BaseComponent {
 
 		if (nxtState.isOverwriteStatsCols) {
 			const userVal = await InputUiUtil.pGetUserGenericButton({
-				title: "Overwrite Additional Columns",
+				title: "覆盖附加列",
 				buttons: [
 					new InputUiUtil.GenericButtonInfo({
-						text: "Yes",
+						text: "是",
 						clazzIcon: "glyphicon glyphicon-ok",
 						value: "yes",
 					}),
 					new InputUiUtil.GenericButtonInfo({
-						text: "No",
+						text: "否",
 						clazzIcon: "glyphicon glyphicon-remove",
 						isPrimary: true,
 						value: "no",
 					}),
 					new InputUiUtil.GenericButtonInfo({
-						text: "Cancel",
+						text: "取消",
 						clazzIcon: "glyphicon glyphicon-stop",
 						isSmall: true,
 						value: "cancel",
 					}),
 				],
-				htmlDescription: `<p>The encounter you are trying to load contains additional column data from the Encounter Builder's "Advanced" mode.<br>Do you want to overwrite your existing additional columns with columns from the encounter?</p>`,
+				htmlDescription: "<p>要加载的遭遇包含遭遇构筑器“高级”模式中的附加列数据。<br>是否用该遭遇中的列覆盖现有附加列？</p>",
 			});
 
 			switch (userVal) {

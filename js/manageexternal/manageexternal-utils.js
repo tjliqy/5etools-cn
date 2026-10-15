@@ -29,7 +29,7 @@ export class ManageExternalUtils {
 			const sources = sourcesObj[meta.hashKey];
 			if (!sources?.length) continue;
 
-			JqueryUtil.doToast(`Loading ${meta.brewUtil.DISPLAY_NAME}...`);
+			JqueryUtil.doToast(`正在加载${meta.brewUtil.DISPLAY_NAME}……`);
 
 			const urlInfoResults = await Promise.allSettled(sources.map(async source => ({
 				url: await meta.brewUtil.pGetSourceUrl(source),
@@ -40,7 +40,7 @@ export class ManageExternalUtils {
 				.segregate(result => result.status === "fulfilled" && result.value.url != null)
 				.map(arr => arr.map(result => result.value));
 			urlInfosNotFound
-				.forEach(({source}) => errors.push(`Could not find URL for ${meta.brewUtil.DISPLAY_NAME} source "${source}"`));
+				.forEach(({source}) => errors.push(`找不到${meta.brewUtil.DISPLAY_NAME}来源“${source}”的网址`));
 
 			await Promise.allSettled(urlInfosFound.map(async urlInfo => {
 				await meta.brewUtil.pAddBrewFromUrl(urlInfo.url, {isLazy: true});
@@ -51,7 +51,7 @@ export class ManageExternalUtils {
 
 		if (errors.length) {
 			// eslint-disable-next-line no-console
-			console.error(`Failed to add external content:\n${errors.map(it => `\t${it}`).join("\n")}`);
+			console.error(`添加外部内容失败：\n${errors.map(it => `\t${it}`).join("\n")}`);
 		}
 
 		if (cntLoaded) {

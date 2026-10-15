@@ -3,7 +3,7 @@ import "../js/utils.js";
 import * as ut from "../node/util.js";
 
 async function main () {
-	console.log(`##### Validating adventure/book contents #####`);
+	console.log(`##### 正在验证冒险／书籍内容 #####`);
 
 	const errors = [];
 

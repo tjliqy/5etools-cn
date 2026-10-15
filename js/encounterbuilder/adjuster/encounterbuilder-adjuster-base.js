@@ -29,12 +29,12 @@ export class EncounterBuilderAdjusterBase {
 	 */
 	async pGetAdjustedEncounter ({creatureGroups}) {
 		if (!creatureGroups.length) {
-			JqueryUtil.doToast({content: `The current encounter contained no creatures! Please add some first.`, type: "warning"});
+			JqueryUtil.doToast({content: "当前遭遇中没有生物，请先添加生物。", type: "warning"});
 			return null;
 		}
 
 		if (creatureGroups.every(creatureGroup => creatureGroup.getIsLocked())) {
-			JqueryUtil.doToast({content: `The current encounter contained only locked creatures! Please unlock or add some other creatures some first.`, type: "warning"});
+			JqueryUtil.doToast({content: "当前遭遇中只有已锁定的生物，请先解锁或添加其他生物。", type: "warning"});
 			return null;
 		}
 
@@ -45,7 +45,7 @@ export class EncounterBuilderAdjusterBase {
 			.filter(creatureGroup => !creatureGroup.getIsLocked() && creatureGroup.getCrNumber() != null);
 
 		if (!creatureGroupsAdjustable.length) {
-			JqueryUtil.doToast({content: `The current encounter contained only locked creatures, or creatures without XP values! Please unlock or add some other creatures some first.`, type: "warning"});
+			JqueryUtil.doToast({content: "当前遭遇中只有已锁定或没有经验值的生物，请先解锁或添加其他生物。", type: "warning"});
 			return null;
 		}
 
@@ -53,7 +53,7 @@ export class EncounterBuilderAdjusterBase {
 			.forEach(creatureGroup => creatureGroup.setCount(1));
 
 		if (this._partyMeta.getEncounterSpendInfo(creatureGroups).adjustedSpend > this._budgetMax) {
-			JqueryUtil.doToast({content: `Could not adjust the current encounter, try removing some creatures!`, type: "danger"});
+			JqueryUtil.doToast({content: "无法调整当前遭遇，请尝试移除一些生物！", type: "danger"});
 			return null;
 		}
 

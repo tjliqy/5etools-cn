@@ -262,7 +262,7 @@ export class MultiFilter extends FilterBase {
 
 			const numActive = this._filters.map(it => it.getValues()[it.header]._isActive).filter(Boolean).length;
 			if (numActive) {
-				veE({ele: wrpSummary, title: `${numActive} hidden active filter${numActive === 1 ? "" : "s"}`, txt: `(${numActive})`});
+				veE({ele: wrpSummary, title: `${numActive} 个已隐藏但仍启用的筛选条件`, txt: `(${numActive})`});
 			}
 		};
 		this._addHook("uiMeta", "isHidden", hkIsHidden);
@@ -280,10 +280,10 @@ export class MultiFilter extends FilterBase {
 			clazz: `ve-btn ve-btn-default ve-btn-xxs ve-italic ve-w-70p`,
 			click: () => this._state.mode = this._state.mode === "and" ? "or" : "and",
 			contextmenu: () => this._state.mode = this._state.mode === "and" ? "or" : "and",
-			title: `"Group AND" requires all filters in this group to match. "Group OR" required any filter in this group to match.`,
+			title: `“组内且”要求本组所有筛选条件均匹配；“组内或”只需其中一项匹配。`,
 		});
 
-		const hookAndOr = () => btnAndOr.innerText = `Group ${this._state.mode.toUpperCase()}`;
+		const hookAndOr = () => btnAndOr.innerText = this._state.mode === "and" ? "组内且" : "组内或";
 		this._addHook("state", "mode", hookAndOr);
 		hookAndOr();
 

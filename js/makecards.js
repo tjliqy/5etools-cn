@@ -61,11 +61,11 @@ class MakeCards extends BaseComponent {
 					});
 			});
 
-		veT(wrpConfig)`<h5 class="ve-split-v-center"><div>New Card Defaults</div>${btnResetDefaults}</h5>
+		veT(wrpConfig)`<h5 class="ve-split-v-center"><div>新卡牌默认设置</div>${btnResetDefaults}</h5>
 		<div class="ve-flex-v-center ve-bold">
 			<div class="ve-col-4 ve-text-center ve-pr-2">类型</div>
-			<div class="ve-col-4 ve-text-center ve-p-2">Color</div>
-			<div class="ve-col-4 ve-text-center ve-pl-2">Icon</div>
+			<div class="ve-col-4 ve-text-center ve-p-2">颜色</div>
+			<div class="ve-col-4 ve-text-center ve-pl-2">图标</div>
 		</div>`;
 
 		const getColorIconConfigRow = (entityType) => {
@@ -100,12 +100,12 @@ class MakeCards extends BaseComponent {
 		// region Search bar/add button
 		const menuSearch = ContextUtil.getMenu(this._render_getContextMenuOptions());
 
-		const iptSearch = veT`<input type="search" class="ve-form-control ve-mr-2" placeholder="Search cards...">`;
+		const iptSearch = veT`<input type="search" class="ve-form-control ve-mr-2" placeholder="搜索卡牌...">`;
 		const btnAdd = veT`<button class="ve-btn ve-btn-primary ve-mr-2"><span class="glyphicon glyphicon-plus"></span> 添加</button>`
 			.vee.onn("click", evt => ContextUtil.pOpenMenu(evt, menuSearch));
 		const btnReset = veT`<button class="ve-btn ve-btn-danger ve-mr-2"><span class="glyphicon glyphicon-trash"></span> 重置</button>`
 			.vee.onn("click", async () => {
-				if (!await InputUiUtil.pGetUserBoolean({title: "Reset", htmlDescription: "你确定吗？", textYes: "是的", textNo: "取消"})) return;
+				if (!await InputUiUtil.pGetUserBoolean({title: "重置", htmlDescription: "你确定吗？", textYes: "是的", textNo: "取消"})) return;
 				this._list.removeAllItems();
 				this._list.update();
 				this._doSaveStateDebounced();
@@ -133,7 +133,7 @@ class MakeCards extends BaseComponent {
 		const getSelCards = () => {
 			const out = this._list.visibleItems.filter(it => it.data.cbSel.vee.prop("checked"));
 			if (!out.length) {
-				JqueryUtil.doToast({content: "Please select some cards first!", type: "warning"});
+				JqueryUtil.doToast({content: "请先选择卡牌！", type: "warning"});
 				return null;
 			}
 			return out;
@@ -141,7 +141,7 @@ class MakeCards extends BaseComponent {
 
 		const menuMass = ContextUtil.getMenu([
 			new ContextUtil.Action(
-				"Set Color",
+				"设置颜色",
 				async () => {
 					const sel = getSelCards();
 					if (!sel) return;
@@ -150,7 +150,7 @@ class MakeCards extends BaseComponent {
 				},
 			),
 			new ContextUtil.Action(
-				"Set Icon",
+				"设置图标",
 				async () => {
 					const sel = getSelCards();
 					if (!sel) return;
@@ -159,7 +159,7 @@ class MakeCards extends BaseComponent {
 				},
 			),
 			new ContextUtil.Action(
-				"Remove",
+				"移除",
 				async () => {
 					const sel = getSelCards();
 					if (!sel) return;
@@ -170,14 +170,14 @@ class MakeCards extends BaseComponent {
 			),
 		]);
 
-		const btnMass = veT`<button class="ve-btn ve-btn-xs ve-btn-default" title="Carry out actions on selected cards">Mass...</button>`
+		const btnMass = veT`<button class="ve-btn ve-btn-xs ve-btn-default" title="对所选卡牌执行操作">批量操作...</button>`
 			.vee.onn("click", evt => ContextUtil.pOpenMenu(evt, menuMass));
 		veT`<div class="ve-w-100 ve-no-shrink ve-flex-v-center ve-mb-2">${btnMass}</div>`.vee.appendTo(wrpContainer);
 		// endregion
 
 		// region Main content
 		// Headers
-		const cbSelAll = veT`<input type="checkbox" title="Select All">`
+		const cbSelAll = veT`<input type="checkbox" title="全选">`
 			.vee.onn("click", () => {
 				const isSel = cbSelAll.vee.prop("checked");
 				this._list.visibleItems.forEach(it => it.data.cbSel.vee.prop("checked", isSel));
@@ -212,7 +212,7 @@ class MakeCards extends BaseComponent {
 
 	_render_getContextMenuOptionsSearch () {
 		return Object.entries(MakeCards._AVAILABLE_TYPES).map(([entityType, it]) => new ContextUtil.Action(
-			`Search for ${it.searchTitle}`,
+			`搜索${it.searchTitle}`,
 			async () => {
 				const fromSearch = await it.pFnSearch();
 				if (!fromSearch) return;
@@ -234,7 +234,7 @@ class MakeCards extends BaseComponent {
 
 	_render_getContextMenuOptionsFilter () {
 		return Object.entries(MakeCards._AVAILABLE_TYPES).map(([entityType, type]) => new ContextUtil.Action(
-			`Filter for ${type.searchTitle}`,
+			`筛选${type.searchTitle}`,
 			async () => {
 				const modalFilter = (() => {
 					switch (entityType) {
@@ -266,13 +266,13 @@ class MakeCards extends BaseComponent {
 
 	_render_getContextMenuOptionsSublist () {
 		return Object.entries(MakeCards._AVAILABLE_TYPES).map(([entityType, type]) => new ContextUtil.Action(
-			`Load from ${type.pageTitle}${type.isPageTitleSkipSuffix ? "" : " Page"} Pinned List`,
+			`从${type.pageTitle}收藏列表加载`,
 			async () => {
 				const storageKey = StorageUtil.getPageKey("sublist", type.page);
 				const pinnedList = await StorageUtil.pGet(storageKey);
 
 				if (!(pinnedList && pinnedList.items && pinnedList.items.length)) {
-					return JqueryUtil.doToast({content: "Nothing to add! Please visit the page and add/pin some data first.", type: "warning"});
+					return JqueryUtil.doToast({content: "没有可添加的内容！请先在对应页面添加或固定数据。", type: "warning"});
 				}
 
 				const listItems = await Promise.all(pinnedList.items.map(it => {
@@ -340,7 +340,7 @@ class MakeCards extends BaseComponent {
 			})
 			.vee.val(cardMeta.count);
 
-		const btnCopy = veT`<button class="ve-btn ve-btn-default ve-btn-xs ve-mr-2" title="Copy JSON (SHIFT to view JSON)"><span class="glyphicon glyphicon-copy"></span></button>`
+		const btnCopy = veT`<button class="ve-btn ve-btn-default ve-btn-xs ve-mr-2" title="复制 JSON（按 Shift 查看 JSON）"><span class="glyphicon glyphicon-copy"></span></button>`
 			.vee.onn("click", async evt => {
 				const entityMeta = MakeCards._AVAILABLE_TYPES[listItem.values.entityType];
 				const toCopy = {
@@ -358,17 +358,17 @@ class MakeCards extends BaseComponent {
 						Renderer.hover.getHoverContent_statsCode(toCopy),
 						Renderer.hover.getWindowPositionFromEvent(evt),
 						{
-							title: `Card Data \u2014 ${listItem.name}`,
+							title: `卡牌数据 \u2014 ${listItem.name}`,
 							isPermanent: true,
 							isBookContent: true,
 						},
 					);
 				} else {
 					await MiscUtil.pCopyTextToClipboard(JSON.stringify(toCopy, null, 2));
-					JqueryUtil.showCopiedEffect(btnCopy, {text: "Copied JSON!"});
+					JqueryUtil.showCopiedEffect(btnCopy, {text: "已复制 JSON！"});
 				}
 			});
-		const btnDelete = veT`<button class="ve-btn ve-btn-danger ve-btn-xs" title="Remove"><span class="glyphicon glyphicon-trash"></span></button>`
+		const btnDelete = veT`<button class="ve-btn ve-btn-danger ve-btn-xs" title="移除"><span class="glyphicon glyphicon-trash"></span></button>`
 			.vee.onn("click", () => {
 				this._list.removeItemById(uid);
 				this._list.update();
@@ -451,35 +451,35 @@ class MakeCards extends BaseComponent {
 		return [
 			this._ct_subtitle(Renderer.monster.getTypeAlignmentPart(mon, {renderer})),
 			this._ct_rule(),
-			this._ct_property("Armor class", this._ct_htmlToText(Parser.acToFull(mon.ac))),
-			this._ct_property("Hit points", this._ct_htmlToText(Renderer.monster.getRenderedHp(mon.hp))),
+			this._ct_property("护甲等级", this._ct_htmlToText(Parser.acToFull(mon.ac))),
+			this._ct_property("生命值", this._ct_htmlToText(Renderer.monster.getRenderedHp(mon.hp))),
 			...(mon.resource || []).map(res => this._ct_property(res.name, this._ct_htmlToText(Renderer.monster.getRenderedResource(res)))),
-			this._ct_property("Speed", this._ct_htmlToText(Parser.getSpeedString(mon))),
+			this._ct_property("速度", this._ct_htmlToText(Parser.getSpeedString(mon))),
 			this._ct_rule(),
 			this._ct_dndstats(...Parser.ABIL_ABVS.map(it => mon[it])),
 			this._ct_rule(),
-			mon.save ? this._ct_property("Saving Throws", this._ct_htmlToText(Renderer.monster.getSavesPart(mon))) : null,
-			mon.skill ? this._ct_property("Skills", this._ct_htmlToText(Renderer.monster.getSkillsString(Renderer.get(), mon))) : null,
-			mon.tool ? this._ct_property("Skills", this._ct_htmlToText(Renderer.monster.getToolsString(Renderer.get(), mon))) : null,
-			mon.vulnerable ? this._ct_property("Damage Vulnerabilities", this._ct_htmlToText(Parser.getFullImmRes(mon.vulnerable))) : null,
-			mon.resist ? this._ct_property("Damage Resistances", this._ct_htmlToText(Parser.getFullImmRes(mon.resist))) : null,
-			mon.immune ? this._ct_property("Damage Immunities", this._ct_htmlToText(Parser.getFullImmRes(mon.immune))) : null,
-			mon.conditionImmune ? this._ct_property("Condition Immunities", this._ct_htmlToText(Parser.getFullCondImm(mon.conditionImmune))) : null,
-			this._ct_property("Senses", this._ct_htmlToText(Renderer.monster.getSensesPart(mon, {isForcePassive: true}))),
-			this._ct_property("Languages", this._ct_htmlToText(Renderer.monster.getRenderedLanguages(mon.languages))),
-			this._ct_property("Challenge", this._ct_htmlToText(Renderer.monster.getChallengeRatingPart(mon))),
+			mon.save ? this._ct_property("豁免检定", this._ct_htmlToText(Renderer.monster.getSavesPart(mon))) : null,
+			mon.skill ? this._ct_property("技能", this._ct_htmlToText(Renderer.monster.getSkillsString(Renderer.get(), mon))) : null,
+			mon.tool ? this._ct_property("技能", this._ct_htmlToText(Renderer.monster.getToolsString(Renderer.get(), mon))) : null,
+			mon.vulnerable ? this._ct_property("伤害易伤", this._ct_htmlToText(Parser.getFullImmRes(mon.vulnerable))) : null,
+			mon.resist ? this._ct_property("伤害抗性", this._ct_htmlToText(Parser.getFullImmRes(mon.resist))) : null,
+			mon.immune ? this._ct_property("伤害免疫", this._ct_htmlToText(Parser.getFullImmRes(mon.immune))) : null,
+			mon.conditionImmune ? this._ct_property("状态免疫", this._ct_htmlToText(Parser.getFullCondImm(mon.conditionImmune))) : null,
+			this._ct_property("感官", this._ct_htmlToText(Renderer.monster.getSensesPart(mon, {isForcePassive: true}))),
+			this._ct_property("语言", this._ct_htmlToText(Renderer.monster.getRenderedLanguages(mon.languages))),
+			this._ct_property("挑战等级", this._ct_htmlToText(Renderer.monster.getChallengeRatingPart(mon))),
 			this._ct_rule(),
 			...(entsTrait?.length ? this._ct_renderEntries(entsTrait, 2) : []),
-			entsAction?.length ? this._ct_section("Actions") : null,
+			entsAction?.length ? this._ct_section("动作") : null,
 			...(entsAction?.length ? this._ct_renderEntries(entsAction, 2) : []),
-			entsBonusAction?.length ? this._ct_section("Bonus Actions") : null,
+			entsBonusAction?.length ? this._ct_section("附赠动作") : null,
 			...(entsBonusAction?.length ? this._ct_renderEntries(entsBonusAction, 2) : []),
-			entsReaction?.length ? this._ct_section("Reactions") : null,
+			entsReaction?.length ? this._ct_section("反应") : null,
 			...(entsReaction?.length ? this._ct_renderEntries(entsReaction, 2) : []),
-			entsLegendaryAction?.length ? this._ct_section("Legendary Actions") : null,
+			entsLegendaryAction?.length ? this._ct_section("传奇动作") : null,
 			entsLegendaryAction?.length ? this._ct_text(this._ct_htmlToText(Renderer.monster.getLegendaryActionIntro(mon, {renderer}))) : null,
 			...(entsLegendaryAction?.length ? this._ct_renderEntries(entsLegendaryAction, 2) : []),
-			entsMythicAction?.length ? this._ct_section("Mythic Actions") : null,
+			entsMythicAction?.length ? this._ct_section("神话动作") : null,
 			entsMythicAction ? this._ct_text(this._ct_htmlToText(Renderer.monster.getSectionIntro(mon, {renderer, prop: "mythic"}))) : null,
 			...(entsMythicAction?.length ? this._ct_renderEntries(entsMythicAction, 2) : []),
 		].filter(Boolean);
@@ -492,7 +492,7 @@ class MakeCards extends BaseComponent {
 				: sp.entriesHigherLevel;
 
 			return [
-				this._ct_section("At higher levels"),
+				this._ct_section("以更高环阶施法"),
 				...this._ct_renderEntries(ents, 2),
 			];
 		})() : null;
@@ -500,10 +500,10 @@ class MakeCards extends BaseComponent {
 		return [
 			this._ct_subtitle(Parser.spLevelSchoolMetaToFull(sp.level, sp.school, sp.meta, sp.subschools)),
 			this._ct_rule(),
-			this._ct_property("Casting Time", Parser.spTimeListToFull(sp.time, sp.meta)),
-			this._ct_property("Range", Parser.spRangeToFull(sp.range)),
-			this._ct_property("Components", Parser.spComponentsToFull(sp.components, sp.level, {isPlainText: true})),
-			this._ct_property("Duration", Parser.spDurationToFull(sp.duration, {isPlainText: true})),
+			this._ct_property("施法时间", Parser.spTimeListToFull(sp.time, sp.meta)),
+			this._ct_property("距离", Parser.spRangeToFull(sp.range)),
+			this._ct_property("成分", Parser.spComponentsToFull(sp.components, sp.level, {isPlainText: true})),
+			this._ct_property("持续时间", Parser.spDurationToFull(sp.duration, {isPlainText: true})),
 			this._ct_rule(),
 			...this._ct_renderEntries(sp.entries, 2),
 			...(higherLevel || []),
@@ -532,13 +532,13 @@ class MakeCards extends BaseComponent {
 
 		return [
 			typeRarityHtml ? this._ct_htmlToText(this._ct_subtitle(typeRarityHtml)) : null,
-			ptDamageCt ? this._ct_property(ptDamageCt.startsWith("AC") ? "Armor Class" : "Damage", ptDamageCt) : null,
-			ptPropertiesCt ? this._ct_property("Properties", ptPropertiesCt.uppercaseFirst()) : null,
-			ptMastery ? this._ct_property("Mastery", ptMastery) : null,
-			subTypeHtml ? this._ct_property("Type", subTypeHtml) : null,
-			tierHtml ? this._ct_property("Tier", tierHtml) : null,
-			ptWeight ? this._ct_property("Weight", ptWeight) : null,
-			ptValue ? this._ct_property("Value", ptValue) : null,
+			ptDamageCt ? this._ct_property(ptDamageCt.startsWith("AC") ? "护甲等级" : "伤害", ptDamageCt) : null,
+			ptPropertiesCt ? this._ct_property("属性", ptPropertiesCt.uppercaseFirst()) : null,
+			ptMastery ? this._ct_property("精通", ptMastery) : null,
+			subTypeHtml ? this._ct_property("类型", subTypeHtml) : null,
+			tierHtml ? this._ct_property("层级", tierHtml) : null,
+			ptWeight ? this._ct_property("重量", ptWeight) : null,
+			ptValue ? this._ct_property("价格", ptValue) : null,
 			itemEntries.length ? this._ct_rule() : null,
 			...this._ct_renderEntries(itemEntries, 2),
 			item.charges ? this._ct_boxes(item.charges) : null,
@@ -570,7 +570,7 @@ class MakeCards extends BaseComponent {
 		Renderer.feat.initFullEntries(feat);
 		return [
 			(prerequisite && prerequisite !== "\u2014") ? this._ct_property("类型/先决条件", prerequisite) : null,
-			(ptRepeatable && ptRepeatable !== "\u2014") ? this._ct_property("Repeatable", ptRepeatable) : null,
+			(ptRepeatable && ptRepeatable !== "\u2014") ? this._ct_property("可重复", ptRepeatable) : null,
 			(prerequisite || ptRepeatable) ? this._ct_rule() : null,
 			...this._ct_renderEntries(feat._fullEntries || feat.entries, 2),
 		].filter(Boolean);
@@ -664,7 +664,7 @@ class MakeCards extends BaseComponent {
 				.vee.onn("click", () => doClose(true));
 
 			const {eleModalInner, doClose} = UiUtil.getShowModal({
-				title: "Select Icon",
+				title: "选择图标",
 				cbClose: (isDataEntered) => {
 					if (!isDataEntered) return resolve(null);
 					if (!comp._state.selectedIcon) return resolve(null);
@@ -744,8 +744,8 @@ MakeCards._ICON_DEFAULT = "perspective-dice-six-faces-random";
 MakeCards._STORAGE_KEY = "cardState";
 MakeCards._AVAILABLE_TYPES = {
 	creature: {
-		searchTitle: "Creature",
-		pageTitle: "Bestiary",
+		searchTitle: "生物",
+		pageTitle: "怪物图鉴",
 		isPageTitleSkipSuffix: true,
 		page: UrlUtil.PG_BESTIARY,
 		colorDefault: "#008000",
@@ -754,13 +754,13 @@ MakeCards._AVAILABLE_TYPES = {
 		fnGetContents: MakeCards._getCardContents_creature.bind(MakeCards),
 		fnGetTags: (mon) => {
 			const types = Parser.monTypeToFullObj(mon.type);
-			const cr = mon.cr == null ? "unknown CR" : `CR ${(mon.cr.cr || mon.cr)}`;
-			return ["creature", Parser.sourceJsonToAbv(mon.source), ...types.types, cr, Renderer.utils.getRenderedSize(mon.size)];
+			const cr = mon.cr == null ? "挑战等级未知" : `挑战等级 ${(mon.cr.cr || mon.cr)}`;
+			return ["生物", Parser.sourceJsonToAbv(mon.source), ...types.types, cr, Renderer.utils.getRenderedSize(mon.size)];
 		},
 	},
 	item: {
-		searchTitle: "Item",
-		pageTitle: "Items",
+		searchTitle: "物品",
+		pageTitle: "物品",
 		page: UrlUtil.PG_ITEMS,
 		colorDefault: "#696969",
 		iconDefault: "crossed-swords",
@@ -768,12 +768,12 @@ MakeCards._AVAILABLE_TYPES = {
 		fnGetContents: MakeCards._getCardContents_item.bind(MakeCards),
 		fnGetTags: (item) => {
 			const {textTypes} = Renderer.item.getRenderableTypeEntriesMeta(item);
-			return ["item", Parser.sourceJsonToAbv(item.source), ...textTypes];
+			return ["物品", Parser.sourceJsonToAbv(item.source), ...textTypes];
 		},
 	},
 	spell: {
-		searchTitle: "Spell",
-		pageTitle: "Spells",
+		searchTitle: "法术",
+		pageTitle: "法术",
 		page: UrlUtil.PG_SPELLS,
 		colorDefault: "#4a6898",
 		iconDefault: "magic-swirl",
@@ -781,7 +781,7 @@ MakeCards._AVAILABLE_TYPES = {
 		fnGetContents: MakeCards._getCardContents_spell.bind(MakeCards),
 		fnGetTags: (spell) => {
 			const out = [
-				"spell",
+				"法术",
 				Parser.sourceJsonToAbv(spell.source),
 				Parser.spLevelToFullLevelText(spell.level),
 				Parser.spSchoolAbvToFull(spell.school),
@@ -796,57 +796,57 @@ MakeCards._AVAILABLE_TYPES = {
 				const [currentOptional] = Parser.spVariantClassesToCurrentAndLegacy(fromOptionalClassList);
 				currentOptional.forEach(it => out.push(it.name));
 			}
-			if (spell.duration.filter(d => d.concentration).length) out.push("concentration");
-			if (spell.meta?.ritual) out.push("ritual");
+			if (spell.duration.filter(d => d.concentration).length) out.push("专注");
+			if (spell.meta?.ritual) out.push("仪式");
 			return out;
 		},
 	},
 	race: {
-		searchTitle: "Species",
-		pageTitle: "Species",
+		searchTitle: "种族",
+		pageTitle: "种族",
 		page: UrlUtil.PG_RACES,
 		colorDefault: "#a7894b",
 		iconDefault: "family-tree",
 		pFnSearch: SearchWidget.pGetUserRaceSearch,
 		fnGetContents: MakeCards._getCardContents_race.bind(MakeCards),
 		fnGetTags: (race) => {
-			return ["race", Parser.sourceJsonToAbv(race.source)];
+			return ["种族", Parser.sourceJsonToAbv(race.source)];
 		},
 	},
 	background: {
-		searchTitle: "Background",
-		pageTitle: "Backgrounds",
+		searchTitle: "背景",
+		pageTitle: "背景",
 		page: UrlUtil.PG_BACKGROUNDS,
 		colorDefault: "#a74b8d",
 		iconDefault: "farmer",
 		pFnSearch: SearchWidget.pGetUserBackgroundSearch,
 		fnGetContents: MakeCards._getCardContents_background.bind(MakeCards),
 		fnGetTags: (bg) => {
-			return ["background", Parser.sourceJsonToAbv(bg.source)];
+			return ["背景", Parser.sourceJsonToAbv(bg.source)];
 		},
 	},
 	feat: {
-		searchTitle: "Feat",
-		pageTitle: "Feats",
+		searchTitle: "专长",
+		pageTitle: "专长",
 		page: UrlUtil.PG_FEATS,
 		colorDefault: "#aca300",
 		iconDefault: "mighty-force",
 		pFnSearch: SearchWidget.pGetUserFeatSearch,
 		fnGetContents: MakeCards._getCardContents_feat.bind(MakeCards),
 		fnGetTags: (feat) => {
-			return ["feat", Parser.sourceJsonToAbv(feat.source)];
+			return ["专长", Parser.sourceJsonToAbv(feat.source)];
 		},
 	},
 	optionalfeature: {
-		searchTitle: "Option/Feature",
-		pageTitle: "Options/Features",
+		searchTitle: "选项／特性",
+		pageTitle: "选项／特性",
 		page: UrlUtil.PG_OPT_FEATURES,
 		colorDefault: "#8c6a00",
 		iconDefault: "checkbox-tree",
 		pFnSearch: SearchWidget.pGetUserOptionalFeatureSearch,
 		fnGetContents: MakeCards._getCardContents_optionalfeature.bind(MakeCards),
 		fnGetTags: (optfeat) => {
-			return ["optional feature", Parser.sourceJsonToAbv(optfeat.source)];
+			return ["可选特性", Parser.sourceJsonToAbv(optfeat.source)];
 		},
 	},
 	// TODO add more entities
@@ -938,38 +938,38 @@ MakeCards.utils = class {
 		if (itemTypeAbv === Parser.ITM_TYP_ABV__LIGHT_ARMOR || itemTypeAbv === Parser.ITM_TYP_ABV__MEDIUM_ARMOR || itemTypeAbv === Parser.ITM_TYP_ABV__HEAVY_ARMOR) {
 			if (item.resist) {
 				Renderer.item._initFullEntries(item);
-				item._fullEntries.push(`Resistance to ${item.resist} damage.`);
+				item._fullEntries.push(`对${Parser.dmgTypeToCn(item.resist)}伤害具有抗性。`);
 			}
 			if (item.stealth) {
 				Renderer.item._initFullEntries(item);
-				item._fullEntries.push("Disadvantage on Stealth (Dexterity) checks.");
+				item._fullEntries.push("进行敏捷（隐匿）检定时具有劣势。");
 			}
 			if (itemTypeAbv === Parser.ITM_TYP_ABV__HEAVY_ARMOR && item.strength) {
 				Renderer.item._initFullEntries(item);
-				item._fullEntries.push(`Speed reduced by 10 feet if Strength score less than ${item.strength}.`);
+				item._fullEntries.push(`若力量值低于 ${item.strength}，速度降低 10 尺。`);
 			}
 		} else if (item.resist) {
 			if (itemTypeAbv === Parser.ITM_TYP_ABV__POTION) {
 				Renderer.item._initFullEntries(item);
-				item._fullEntries.push(`Resistance to ${item.resist} damage for 1 hour.`);
+				item._fullEntries.push(`在 1 小时内对${Parser.dmgTypeToCn(item.resist)}伤害具有抗性。`);
 			}
 			if (itemTypeAbv === Parser.ITM_TYP_ABV__RING) {
 				Renderer.item._initFullEntries(item);
-				item._fullEntries.push(`Resistance to ${item.resist} damage.`);
+				item._fullEntries.push(`对${Parser.dmgTypeToCn(item.resist)}伤害具有抗性。`);
 			}
 		}
 		if (itemTypeAbv === Parser.ITM_TYP_ABV__SPELLCASTING_FOCUS) {
 			if (item.scfType === "arcane") {
 				Renderer.item._initFullEntries(item);
-				item._fullEntries.push("A sorcerer, warlock, or wizard can use this item as a spellcasting focus.");
+				item._fullEntries.push("术士、邪术师或法师可以将此物品用作施法法器。");
 			}
 			if (item.scfType === "druid") {
 				Renderer.item._initFullEntries(item);
-				item._fullEntries.push("A druid can use this item as a spellcasting focus.");
+				item._fullEntries.push("德鲁伊可以将此物品用作施法法器。");
 			}
 			if (item.scfType === "holy") {
 				Renderer.item._initFullEntries(item);
-				item._fullEntries.push("A cleric or paladin can use this item as a spellcasting focus.");
+				item._fullEntries.push("牧师或圣武士可以将此物品用作施法法器。");
 			}
 		}
 	}

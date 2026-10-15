@@ -29,7 +29,7 @@ class ListUiPreviewButtonHandlerRenderDemo extends ListUiPreviewButtonHandlerBas
 export class ModalFilterRenderDemo extends ModalFilterBase {
 	constructor ({allData}) {
 		super({
-			modalTitle: "Entry Samples",
+			modalTitle: "条目示例",
 			isRadio: true,
 			allData,
 			pageFilter: new PageFilterRenderDemo(),
@@ -39,14 +39,14 @@ export class ModalFilterRenderDemo extends ModalFilterBase {
 
 	_getColumnHeaders () {
 		return ModalFilterBase._getFilterColumnHeaders([
-			{sort: "name", text: "Name", width: "9"},
-			{sort: "source", text: "Source", width: "2"},
+			{sort: "name", text: "名称", width: "9"},
+			{sort: "source", text: "来源", width: "2"},
 		]);
 	}
 
 	_getListItem (pageFilter, ent, id) {
 		const cbSel = veT`<input type="radio" name="renderdemo-sample" class="ve-no-events">`;
-		const btnShowHidePreview = veT`<div class="ve-ui-list__btn-inline ve-px-2 ve-no-select" title="Toggle Preview">[+]</div>`;
+		const btnShowHidePreview = veT`<div class="ve-ui-list__btn-inline ve-px-2 ve-no-select" title="切换预览">[+]</div>`;
 
 		const ele = veT`<div class="ve-px-0 ve-w-100 ve-flex-col ve-no-shrink">
 			<div class="ve-w-100 ve-flex-vh-center ve-lst__row-border veapp__list-row ve-no-select ve-lst__wrp-cells">

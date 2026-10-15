@@ -4,7 +4,7 @@ class DecksSublistManager extends SublistManager {
 	static _getRowTemplate () {
 		return [
 			new SublistCellTemplate({
-				name: "Name",
+				name: "名称",
 				css: "ve-bold ve-col-12 ve-px-0",
 				colStyle: "",
 			}),
@@ -110,9 +110,9 @@ class DecksPage extends ListPage {
 
 			// TODO(Future) implement e.g. custom `ClsBookView` to allow more useful deck printing
 			bookViewOptions: {
-				nameSingular: "deck",
-				namePlural: "decks",
-				pageTitle: "Decks Book View",
+				nameSingular: "牌组",
+				namePlural: "牌组",
+				pageTitle: "牌组书籍视图",
 			},
 
 			listSyntax: new ListSyntaxDecks({fnGetDataList: () => this._dataList}),
@@ -221,7 +221,7 @@ class DecksPage extends ListPage {
 				await DeckSpreads.pRevealSpread({rowMetas, isSkipAnimation, abortSignal: abortController.signal});
 			};
 
-			const btnRedraw = veT`<button class="ve-btn ve-btn-primary ve-btn-sm ve-no-shrink" title="Draw Spread (CTRL to Skip Animation)">抽卡</button>`
+			const btnRedraw = veT`<button class="ve-btn ve-btn-primary ve-btn-sm ve-no-shrink" title="抽取牌阵（按 Ctrl 跳过动画）">抽卡</button>`
 				.vee.onn("click", evt => pDoRender({isSkipAnimation: EventUtil.isCtrlMetaKey(evt)}));
 
 			comp._addHookBase("ixSpread", () => pDoRender());
@@ -258,7 +258,7 @@ class DecksPage extends ListPage {
 				if (!card._isReplacement || evt.shiftKey) await this._compCardState.pDrawCard(ent, card);
 
 				if (EventUtil.isCtrlMetaKey(evt)) {
-					const eleChat = veT`<span>Drew card: ${Renderer.get().render(`{@card ${card.name}|${card.set}|${card.source}}`)}</span>`;
+					const eleChat = veT`<span>抽取卡牌： ${Renderer.get().render(`{@card ${card.name}|${card.set}|${card.source}}`)}</span>`;
 
 					Renderer.dice.addRoll({
 						rolledBy: {

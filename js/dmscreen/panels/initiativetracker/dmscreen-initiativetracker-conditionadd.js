@@ -4,7 +4,7 @@ import {InitiativeTrackerConditionUtil} from "./dmscreen-initiativetracker-condi
 
 class _UtilConditionsCustomView {
 	static getBtnCondition ({comp, cbSubmit, cbClick}) {
-		const btn = veT`<button class="ve-btn ve-btn-default ve-btn-xs dm-init-cond__btn-cond ve-text-clip-ellipsis ve-mx-1" title="Add the &quot;${comp._state.name.qq()}&quot; condition. SHIFT to add with &quot;Unlimited&quot; duration; CTRL to add with 1-turn duration; SHIFT+CTRL to add with 10-turn duration."></button>`
+		const btn = veT`<button class="ve-btn ve-btn-default ve-btn-xs dm-init-cond__btn-cond ve-text-clip-ellipsis ve-mx-1" title="添加“${comp._state.name.qq()}”状态。按 Shift 添加无限持续时间；按 Ctrl 添加 1 轮；同时按 Shift 和 Ctrl 添加 10 轮。"></button>`
 			.vee.onn("click", evt => {
 				cbClick({
 					name: comp._state.name,
@@ -104,7 +104,7 @@ export class InitiativeTrackerConditionAdd extends BaseComponent {
 	}
 
 	_render_getBtnEditCustom ({rdState}) {
-		return veT`<button class="ve-btn ve-btn-default ve-btn-xs" title="Manage Custom Conditions"><span class="glyphicon glyphicon-cog"></span></button>`
+		return veT`<button class="ve-btn ve-btn-default ve-btn-xs" title="管理自定义状态"><span class="glyphicon glyphicon-cog"></span></button>`
 			.vee.onn("click", async () => {
 				const compEdit = new InitiativeTrackerConditionCustomEdit({conditionsCustom: MiscUtil.copyFast(this._state.conditionsCustom)});
 				await compEdit.pGetShowModalResults();

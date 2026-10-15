@@ -49,12 +49,12 @@ export class FilterSnapshotUiTabSnapshots {
 
 		const {menuMass} = this._pRender_stgControls_menuMass({selectClickHandler});
 
-		const btnMass = veT`<button class="ve-btn ve-btn-primary ve-btn-xs ve-mr-2">Mass...</button>`
+		const btnMass = veT`<button class="ve-btn ve-btn-primary ve-btn-xs ve-mr-2">批量操作...</button>`
 			.vee.onn("click", async evt => {
 				await ContextUtil.pOpenMenu(evt, menuMass);
 			});
 
-		const btnTakeSnapshot = veT`<button class="ve-btn ve-btn-primary ve-btn-xs ve-mr-2">Take Snapshot</button>`
+		const btnTakeSnapshot = veT`<button class="ve-btn ve-btn-primary ve-btn-xs ve-mr-2">创建快照</button>`
 			.vee.onn("click", async () => {
 				await this._compManager.pHandleClick_takeSnapshot();
 			});
@@ -71,12 +71,12 @@ export class FilterSnapshotUiTabSnapshots {
 		const getValidAddToDeckInitial = () => {
 			const selectedSnapshotIds = selectClickHandler.getSelectedIds();
 			if (!selectedSnapshotIds.length) {
-				JqueryUtil.doToast({content: `Please select some snapshots first!`, type: "warning"});
+				JqueryUtil.doToast({content: `请先选择快照！`, type: "warning"});
 				return {isValid: false, selectedSnapshotIds};
 			}
 
 			if (!this._compManager._state.boxSnapshotDecks.length) {
-				JqueryUtil.doToast({content: `No snapshot decks available! Please create one first.`, type: "warning"});
+				JqueryUtil.doToast({content: `暂无快照集，请先创建。`, type: "warning"});
 				return {isValid: false, selectedSnapshotIds};
 			}
 
@@ -101,26 +101,26 @@ export class FilterSnapshotUiTabSnapshots {
 
 			this._compManager._triggerCollectionUpdate("boxSnapshotDecks");
 
-			JqueryUtil.doToast(`Added ${selectedSnapshotIds.length} Snapshot${selectedSnapshotIds.length === 1 ? "" : "s"} to Snapshot Deck!`);
+			JqueryUtil.doToast(`已将 ${selectedSnapshotIds.length} 个快照添加到快照集！`);
 
 			selectClickHandler.setCheckboxes({isChecked: false});
 		};
 
 		const menuMass = ContextUtil.getMenu([
 			new ContextUtil.Action(
-				"Add to Active Snapshot Deck",
+				"添加到当前快照集",
 				async () => {
 					const {isValid, selectedSnapshotIds} = getValidAddToDeckInitial();
 					if (!isValid) return;
 
 					const boxSnapshotDeck = this._compManager.getActiveSnapshotDeck();
-					if (!boxSnapshotDeck) return JqueryUtil.doToast({content: `No active snapshot deck! Please active one first.`, type: "warning"});
+					if (!boxSnapshotDeck) return JqueryUtil.doToast({content: `没有当前快照集，请先激活一个快照集。`, type: "warning"});
 
 					addSelectedSnapshotsToDeck({boxSnapshotDeck, selectedSnapshotIds});
 				},
 			),
 			new ContextUtil.Action(
-				"Add to Snapshot Deck...",
+				"添加到快照集...",
 				async () => {
 					const {isValid, selectedSnapshotIds} = getValidAddToDeckInitial();
 					if (!isValid) return;
@@ -132,12 +132,12 @@ export class FilterSnapshotUiTabSnapshots {
 				},
 			),
 			new ContextUtil.Action(
-				"Delete",
+				"删除",
 				async () => {
 					const selectedSnapshotIds = selectClickHandler.getSelectedIds();
-					if (!selectedSnapshotIds.length) return JqueryUtil.doToast({content: `Please select some snapshots first!`, type: "warning"});
+					if (!selectedSnapshotIds.length) return JqueryUtil.doToast({content: `请先选择快照！`, type: "warning"});
 
-					if (!await InputUiUtil.pGetUserBoolean({title: "Delete Snapshots", htmlDescription: `This will delete ${selectedSnapshotIds.length} snapshot${selectedSnapshotIds.length === 1 ? "" : "s"}. 你确定吗？`, textYes: "Yes", textNo: "Cancel"})) return;
+					if (!await InputUiUtil.pGetUserBoolean({title: "删除快照", htmlDescription: `即将删除 ${selectedSnapshotIds.length} 个快照，确定吗？`, textYes: "是", textNo: "取消"})) return;
 
 					const toDelete = new Set(selectedSnapshotIds);
 
@@ -154,13 +154,13 @@ export class FilterSnapshotUiTabSnapshots {
 	_pRender_stgNoRows () {
 		const stgNoRows = FilterSnapshotUiTabUtils.getStgNoRows();
 
-		const btnAddSnapshotNoRows = veT`<button class="ve-btn ve-btn-primary">Take Snapshot</button>`
+		const btnAddSnapshotNoRows = veT`<button class="ve-btn ve-btn-primary">创建快照</button>`
 			.vee.onn("click", async () => {
 				await this._compManager.pHandleClick_takeSnapshot();
 			});
 
 		veT(stgNoRows)`<div class="ve-flex-col">
-			<div class="ve-mb-2 ve-muted"><i>No Snapshots.</i></div>
+			<div class="ve-mb-2 ve-muted"><i>暂无快照。</i></div>
 			${btnAddSnapshotNoRows}
 		</div>`;
 

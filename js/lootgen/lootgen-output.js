@@ -67,7 +67,7 @@ export class LootGenOutput {
 		this._wrp = veT`<div class="ve-flex-col ve-bg-solid ve-shadow-big ve-b-1p ve-bc-5p ve-py-3 ve-px-2 ve-my-2 ve-mr-1">
 			${dispTitle}
 			${elesParts.length ? veT`<ul>${elesParts}</ul>` : null}
-			${!elesParts.length ? `<div class="ve-muted ve-help-subtle ve-italic" title="${TOOLTIP_NOTHING.qq()}">(No loot!)</div>` : null}
+			${!elesParts.length ? `<div class="ve-muted ve-help-subtle ve-italic" title="${TOOLTIP_NOTHING.qq()}">（没有战利品！）</div>` : null}
 		</div>`
 			.vee.prependTo(eleParent);
 
@@ -91,7 +91,7 @@ export class LootGenOutput {
 		const toSend = await this._pGetFoundryForm();
 		if (isTemp) toSend.isTemp = isTemp;
 		if (toSend.currency || toSend.entityInfos) return ExtensionUtil.pDoSend({type: "5etools.lootgen.loot", data: toSend});
-		JqueryUtil.doToast({content: `Nothing to send!`, type: "warning"});
+		JqueryUtil.doToast({content: `没有可发送的内容！`, type: "warning"});
 	}
 
 	async _pDoSaveAsJson () {
@@ -212,7 +212,7 @@ export class LootGenOutput {
 			this._artObjects?.length ? this._artObjects.map(it => it.type * it.count * 100).sum() : 0,
 		].sum();
 
-		if (I18nUtil.LANGUAGES_INDEX === "zh_CN") {
+		if (["zh_CN", "zh-Hant"].includes(I18nUtil.LANGUAGES_INDEX)) {
 			return veT`<li class="ve-italic ve-muted">总计价值${(totalValue / 100).toLocaleStringVe()} ${LootGenUtils.getCoinageLabel("gp")}的货币、艺术品和/或宝石，如下：</li>`;
 		}
 		return veT`<li class="ve-italic ve-muted">A total of ${(totalValue / 100).toLocaleStringVe()} ${LootGenUtils.getCoinageLabel("gp")} worth of coins, art objects, and/or gems, as follows:</li>`;
@@ -239,7 +239,7 @@ export class LootGenOutput {
 		if (!this._dragonMundaneItems) return null;
 
 		return veT`
-			<li>${this._dragonMundaneItems.count} ${I18nUtil.LANGUAGES_INDEX === "zh_CN" ? "个普通物品" : `mundane item${this._dragonMundaneItems.count !== 1 ? "s" : ""}`}:</li>
+			<li>${this._dragonMundaneItems.count} ${["zh_CN", "zh-Hant"].includes(I18nUtil.LANGUAGES_INDEX) ? "个普通物品" : `mundane item${this._dragonMundaneItems.count !== 1 ? "s" : ""}`}:</li>
 			<ul>
 				${this._dragonMundaneItems.breakdown.map(it => `<li>${it}</li>`).join("")}
 			</ul>
@@ -282,7 +282,7 @@ export class LootGenOutput {
 						.sort(([rarityA], [rarityB]) => SortUtil.ascSortItemRarity(rarityB, rarityA))
 						.map(([rarity, lootItems]) => {
 							return veT`
-								<li>${rarity.toTitleCase()} items (×${lootItems.length}):</li>
+								<li>${Parser.rarityToCN(rarity) || rarity}物品（×${lootItems.length}）：</li>
 								<ul>${lootItems.map(it => it.getRender())}</ul>
 							`;
 						})
@@ -291,7 +291,7 @@ export class LootGenOutput {
 					if (!ulsByRarity.length) return null;
 
 					return veT`
-						<li>${magicItems.tier.toTitleCase()} items:</li>
+						<li>${{other: "其他", minor: "次要", major: "主要"}[magicItems.tier] || magicItems.tier}物品：</li>
 						<ul>
 							${ulsByRarity}
 						</ul>

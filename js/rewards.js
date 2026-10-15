@@ -4,12 +4,12 @@ class RewardsSublistManager extends SublistManager {
 	static _getRowTemplate () {
 		return [
 			new SublistCellTemplate({
-				name: "Type",
+				name: "类型",
 				css: "ve-col-2 ve-pl-0 ve-pr-1 ve-text-center",
 				colStyle: "text-center",
 			}),
 			new SublistCellTemplate({
-				name: "Name",
+				name: "名称",
 				css: "ve-bold ve-col-10 ve-pl-1 ve-pr-0",
 				colStyle: "",
 			}),
@@ -61,9 +61,9 @@ class RewardsPage extends ListPage {
 			dataProps: ["reward"],
 
 			bookViewOptions: {
-				nameSingular: "reward",
-				namePlural: "rewards",
-				pageTitle: "Rewards Book View",
+				nameSingular: "奖励",
+				namePlural: "奖励",
+				pageTitle: "奖励书籍视图",
 			},
 
 			isPreviewable: true,

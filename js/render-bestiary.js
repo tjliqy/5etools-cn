@@ -381,7 +381,7 @@ class _RenderBestiaryImplBase {
 	/* -------------------------------------------- */
 
 	_getTdChallenge (mon, opts) {
-		const ptLabel = `<strong ${this._style === "classic" ? "" : `title="Challenge Rating"`}>${this._style !== "classic" ? "CR" : I18nUtil.get("common.challenge")}</strong>`;
+		const ptLabel = `<strong ${this._style === "classic" ? "" : `title="挑战等级"`}>${this._style !== "classic" ? "CR" : I18nUtil.get("common.challenge")}</strong>`;
 
 		if (Parser.crToNumber(mon.cr) >= VeCt.CR_UNKNOWN && this._style === "classic") return `<td colspan="3">${ptLabel} <span>\u2014</span></td>`;
 
@@ -431,7 +431,7 @@ class _RenderBestiaryImplClassic extends _RenderBestiaryImplBase {
 	/* ----- */
 
 	_getHtmlParts_initiative ({mon}) {
-		return mon.initiative ? `<tr><td colspan="6"><strong>Initiative</strong> ${Renderer.monster.getInitiativePart(mon)}</td></tr>` : "";
+		return mon.initiative ? `<tr><td colspan="6"><strong>先攻</strong> ${Renderer.monster.getInitiativePart(mon)}</td></tr>` : "";
 	}
 
 	_getHtmlParts_savingThrows ({mon}) {

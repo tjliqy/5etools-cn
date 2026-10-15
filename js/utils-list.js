@@ -99,12 +99,12 @@ class ListUtil {
 }
 
 class ListUtilEntity {
-	static _getString_action_currentPinned_name ({page}) { return `From Current ${UrlUtil.pageToDisplayPage(page)} Pinned List`; }
-	static _getString_action_savedPinned_name ({page}) { return `From Saved ${UrlUtil.pageToDisplayPage(page)} Pinned List`; }
-	static _getString_action_file_name ({page}) { return `From ${UrlUtil.pageToDisplayPage(page)} Pinned List File`; }
+	static _getString_action_currentPinned_name ({page}) { return `从当前${UrlUtil.pageToDisplayPage(page)}收藏列表导入`; }
+	static _getString_action_savedPinned_name ({page}) { return `从保存的${UrlUtil.pageToDisplayPage(page)}收藏列表导入`; }
+	static _getString_action_file_name ({page}) { return `从${UrlUtil.pageToDisplayPage(page)}收藏列表文件导入`; }
 
-	static _getString_action_currentPinned_msg_noSaved ({page}) { return `No saved list! Please first go to the ${UrlUtil.pageToDisplayPage(page)} page and create one.`; }
-	static _getString_action_savedPinned_msg_noSaved ({page}) { return `No saved lists were found! Go to the ${UrlUtil.pageToDisplayPage(page)} page and create some first.`; }
+	static _getString_action_currentPinned_msg_noSaved ({page}) { return `没有已保存的列表！请先前往${UrlUtil.pageToDisplayPage(page)}页面创建列表。`; }
+	static _getString_action_savedPinned_msg_noSaved ({page}) { return `未找到已保存的列表！请先前往${UrlUtil.pageToDisplayPage(page)}页面创建列表。`; }
 
 	static async _pGetLoadableSublist_getAdditionalState ({exportedSublist}) { return {}; }
 
@@ -497,7 +497,7 @@ class SaveManager extends BaseComponent {
 		const wrpIsReference = !this._isReferencable
 			? null
 			: veT`<label class="ve-flex-v-center ve-mr-2">
-				<div class="ve-mr-1 ve-help" title="Turning this on will make a copy of the list as it currently exists, allowing the original to be modified or deleted without affecting the copy. Leaving this off will instead keep a reference to the list, so any change to the list will be reflected in applications which make use of it.">创建副本</div>
+				<div class="ve-mr-1 ve-help" title="启用后会复制当前列表，原列表日后的修改或删除不会影响此副本。关闭时只保留列表引用，原列表的改动也会反映到使用它的应用中。">创建副本</div>
 				${ComponentUiUtil.getCbBool(this, "isLoadAsCopy")}
 			</label>`;
 
@@ -665,7 +665,7 @@ class SaveManager extends BaseComponent {
 		const isWarnUnsaved = this._isWarnUnsavedChanges(exportedSublist);
 		if (
 			isWarnUnsaved
-			&& !await InputUiUtil.pGetUserBoolean({title: "Discard Unsaved Changes", htmlDescription: `You have unsaved changes.<br>Are you sure you want to create a new list, discarding these changes?`, textYes: "Yes", textNo: "Cancel"})
+			&& !await InputUiUtil.pGetUserBoolean({title: "放弃未保存的更改", htmlDescription: "您有未保存的更改。<br>确定放弃这些更改并创建新列表吗？", textYes: "是", textNo: "取消"})
 		) return false;
 
 		// (If the list has never been saved, just let the user dupe it)
@@ -870,7 +870,7 @@ SaveManager._RenderableCollectionSaves_Load = class extends RenderableCollection
 
 					wrpPreviewInner
 						.vee.empty()
-						.vee.html(lis ? `<ul class="ve-my-0" onclick="event.stopPropagation()">${lis}</ul>` : Renderer.get().render(`{@note This list is empty.}`));
+						.vee.html(lis ? `<ul class="ve-my-0" onclick="event.stopPropagation()">${lis}</ul>` : Renderer.get().render(`{@note 此列表为空。}`));
 				});
 		};
 		comp._addHookBase("manager_loader_isExpanded", hkIsExpanded);
@@ -963,7 +963,7 @@ SaveManager._RenderableCollectionSaves_Summary = class extends RenderableCollect
 
 		const iptName = ComponentUiUtil.getIptStr(comp, "name", {placeholder: "(未命名列表)"});
 
-		const dispCount = veT`<div class="ve-absolute ve-right-0 ve-z-index-1 ve-no-events ve-flex-vh-center ve-muted ve-pr-2 ve-small" title="Number of Pinned List Items"></div>`;
+		const dispCount = veT`<div class="ve-absolute ve-right-0 ve-z-index-1 ve-no-events ve-flex-vh-center ve-muted ve-pr-2 ve-small" title="固定列表中的条目数量"></div>`;
 
 		const btnNew = veT`<button class="ve-btn ve-btn-5et ve-btn-xs ve-btn-default" title="新建固定列表"><span class="glyphicon glyphicon-file"></span></button>`
 			.vee.onn("click", evt => this._cbOnNew(evt));

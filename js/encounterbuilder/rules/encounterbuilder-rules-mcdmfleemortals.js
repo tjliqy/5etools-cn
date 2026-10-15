@@ -8,11 +8,11 @@ import {TIER_EASY, TIER_HARD} from "../consts/encounterbuilder-consts-classic.js
 class _TierHtmlProviderMcdmFleeMortals extends TierHtmlProviderBase {
 	_budgetMode = BUDGET_MODE_CR;
 	_tierTitles = {
-		trivial: "Trivial encounters require barely any effort on the part of the characters\u2014like a group of 20th-level heroes taking on a handful of crawling claws or goblins. The characters are guaranteed to survive the fight and won't spend many resources. These encounters can be fun to occasionally throw into your game, but for many groups, the novelty disappears quickly. Too many trivial encounters can feel like a waste of time.",
-		easy: "Unless the characters have already depleted many of their resources and hit points, easy encounters won't threaten their lives. Easy encounters are great for adventures that don't give the characters much time to rest or for times when you want the heroes to feel like superheroes.",
-		standard: "Standard encounters are the most common for many adventuring groups. These battles deplete significant resources and hit points. While character death is uncommon in standard encounters, it isn't impossible, especially if a player makes a poor tactical choice or just finds the dice are against them.",
-		hard: "Hard encounters are typically climactic encounters with bosses and their minions\u2014or anything else that puts the characters' lives in peril. Hard encounters are winnable, but the characters need all their resources, wits, and luck to survive.",
-		extreme: "Extreme encounters are ones where the characters will likely not survive if they try to fight to the bitter end. Such encounters rarely or never appear in most campaigns\u2014though if the characters are level 17 or higher, they can typically survive (or come back to life after) such encounters.",
+		trivial: "微不足道的遭遇几乎不费角色力气，例如一队 20 级英雄对付几只爬行之爪或地精。角色一定能活下来，也几乎不会消耗资源。偶尔加入这类遭遇可以增添趣味，但过多就会让人觉得浪费时间。",
+		easy: "除非角色已经消耗了大量资源和生命值，简单遭遇通常不会危及生命。这类遭遇适合难以让角色休息的冒险，也适合让英雄展现强大实力。",
+		standard: "标准遭遇是许多冒险队伍最常遇到的战斗。它会消耗不少资源和生命值。角色在此类遭遇中较少死亡，但糟糕的战术选择或不利的骰运仍可能造成伤亡。",
+		hard: "困难遭遇通常是与首领及其爪牙的决战，或其他危及角色生命的战斗。角色有机会获胜，但需要充分利用资源、智慧和运气。",
+		extreme: "在极端遭遇中，若角色战斗到底，很可能无法生还。这类遭遇在多数战役里很少出现；但 17 级及以上的角色通常有机会幸存，或在战后复活。",
 	};
 }
 
@@ -24,7 +24,7 @@ class _TierHtmlProviderMcdmFleeMortals extends TierHtmlProviderBase {
 //     majority of edge-cases.
 export class EncounterBuilderRulesMcdmFleeMortals extends EncounterBuilderRulesBase {
 	rulesId = "mcdmFleeMortals";
-	displayName = "MCDM 'Flee, Mortals!'";
+	displayName = "MCDM《逃吧，凡人！》";
 	_tierHtmlProvider = new _TierHtmlProviderMcdmFleeMortals();
 
 	_budgetMode = BUDGET_MODE_CR;
@@ -47,7 +47,7 @@ export class EncounterBuilderRulesMcdmFleeMortals extends EncounterBuilderRulesB
 
 	_render_settingsRules ({stgSettingsRules}) {
 		const wrpSettingsRules = veT`<div class="ve-flex-col">
-			<div class="ve-flex ve-mb-2">${this._rendererWrapped.er(`{@note Based on the encounter building rules on page 16 of {@link MCDM|https://www.mcdmproductions.com}'s {@book Flee, Mortals!|FleeMortals|0|Encounter Building}}`)}</div>
+			<div class="ve-flex ve-mb-2">${this._rendererWrapped.er(`{@note 基于 {@link MCDM|https://www.mcdmproductions.com} 的 {@book 逃吧，凡人！|FleeMortals|0|Encounter Building} 第 16 页的遭遇构建规则。}`)}</div>
 		</div>`
 			.vee.appendTo(stgSettingsRules);
 
@@ -121,9 +121,9 @@ export class EncounterBuilderRulesMcdmFleeMortals extends EncounterBuilderRulesB
 			dispTtk
 				.vee.html(this._getTtkHtml({partyMeta}));
 
-			dispPointsEncounter.vee.html(`Encounter Points: ${TIER_TO_ENCOUNTER_POINTS[tier] || "?"}`);
+			dispPointsEncounter.vee.html(`遭遇点数：${TIER_TO_ENCOUNTER_POINTS[tier] || "?"}`);
 
-			dispExpEncounter.vee.html(`Encounter XP: ${this._getEncounterXp() ? this._getEncounterXp().toLocaleStringVe() : "?"} XP`);
+			dispExpEncounter.vee.html(`遭遇经验值：${this._getEncounterXp() ? this._getEncounterXp().toLocaleStringVe() : "?"} XP`);
 			dispExpToLevel.vee.html(this._getRenderedExpToLevel({partyMeta}));
 		})();
 
@@ -134,7 +134,7 @@ export class EncounterBuilderRulesMcdmFleeMortals extends EncounterBuilderRulesB
 			${dispTtk}
 			<hr class="ve-hr-2">
 			${dispPointsEncounter}
-			<div class="ve-muted"><span class="ve-help-subtle" title="Daily encounter points budget. To give the characters a good but survivable challenge, fill each adventuring day with encounters that total 6 to 8 points over the course of the day.">每日XP:</span> 6-8</div>
+			<div class="ve-muted"><span class="ve-help-subtle" title="每日遭遇点数预算。为角色安排有挑战性但仍可存活的冒险日时，全天遭遇点数合计宜为 6 至 8 点。">每日XP:</span> 6-8</div>
 			<div class="ve-my-2">
 			${dispExpEncounter}
 			${dispExpToLevel}
@@ -233,7 +233,7 @@ export class EncounterBuilderRulesMcdmFleeMortals extends EncounterBuilderRulesB
 			.getEncounterPartyMeta()
 			.getEncounterSpendInfo(this._comp.creatureGroups);
 
-		return `<span title="Total Encounter CR">${Parser.numberToVulgar(encounterXpInfo.baseSpend)} CR</span> (${this._getEncounterXp().toLocaleStringVe()} XP)`;
+		return `<span title="遭遇总挑战等级">${Parser.numberToVulgar(encounterXpInfo.baseSpend)} CR</span> (${this._getEncounterXp().toLocaleStringVe()} XP)`;
 	}
 
 	/* -------------------------------------------- */

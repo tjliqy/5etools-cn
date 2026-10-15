@@ -27,7 +27,7 @@ export class RenderDemoPage extends BaseComponent {
 
 		this._dispErrors
 			.vee.show()
-			.vee.html(`Invalid JSON:<br><span class="ve-code">${msg}</span>`);
+			.vee.html(`JSON 无效：<br><span class="ve-code">${msg}</span>`);
 		this._eleOut.vee.hide();
 	}
 
@@ -138,7 +138,7 @@ export class RenderDemoPage extends BaseComponent {
 		const RENDER_MODE_DISPLAY = {
 			html: "HTML",
 			md: "Markdown",
-			cards: "RPG Cards",
+			cards: "RPG 卡片",
 		};
 
 		const selRenderer = ComponentUiUtil.getSelEnum(this, "renderer", {
@@ -178,13 +178,13 @@ export class RenderDemoPage extends BaseComponent {
 			.observe(this._editor.container);
 
 		this._modalFilterSamples = new ModalFilterRenderDemo({allData: this._data});
-		const btnLoadSample = veT`<button class="ve-btn ve-btn-default ve-btn-xs">Load Sample</button>`
+		const btnLoadSample = veT`<button class="ve-btn ve-btn-default ve-btn-xs">加载示例</button>`
 			.vee.onn("click", () => this._pDoLoadSample());
-		const btnReset = veT`<button class="ve-btn ve-btn-default ve-btn-xs" title="Reset" aria-label="Reset"><span class="glyphicon glyphicon-repeat"></span></button>`
+		const btnReset = veT`<button class="ve-btn ve-btn-default ve-btn-xs" title="重置" aria-label="重置"><span class="glyphicon glyphicon-repeat"></span></button>`
 			.vee.onn("click", () => this._doReset());
 
 		const dispSampleName = veT`<span class="ve-muted ve-italic ve-ml-2 ve-flex-v-center"></span>`;
-		this._addHookBase("hashSample", () => dispSampleName.vee.txt(`Last loaded: "${this._getSelectedSample().name}"`))();
+		this._addHookBase("hashSample", () => dispSampleName.vee.txt(`最近加载：“${this._getSelectedSample().name}”`))();
 
 		veT`<div class="ve-flex-v-center">
 			<div class="ve-btn-group ve-flex-v-center">${btnLoadSample}${btnReset}</div>

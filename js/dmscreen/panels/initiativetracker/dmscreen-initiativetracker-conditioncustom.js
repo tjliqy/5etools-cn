@@ -20,7 +20,7 @@ class _RenderableCollectionConditionsCustomEdit extends RenderableCollectionGene
 
 		const iptTurns = ComponentUiUtil.getIptInt(comp, "turns", null, {isAllowNull: true, fallbackOnNaN: null})
 			.vee.addClass("ve-mr-2")
-			.vee.placeholder("Unlimited");
+			.vee.placeholder("无限");
 
 		const btnDelete = this._utils.getBtnDelete({entity});
 
@@ -59,13 +59,13 @@ export class InitiativeTrackerConditionCustomEdit extends BaseComponent {
 		const rdState = new this.constructor._RenderState();
 
 		const {eleModalInner, eleModalFooter, doClose, pGetResolved} = UiUtil.getShowModal({
-			title: "Manage Custom Conditions",
+			title: "管理自定义状态",
 			isHeaderBorder: true,
 			hasFooter: true,
 		});
 		rdState.cbDoClose = doClose;
 
-		const btnAdd = veT`<button class="ve-btn ve-btn-default ve-btn-xs ve-bb-0 ve-bbr-0 ve-bbl-0" title="Add"><span class="glyphicon glyphicon-plus"></span></button>`
+		const btnAdd = veT`<button class="ve-btn ve-btn-default ve-btn-xs ve-bb-0 ve-bbr-0 ve-bbl-0" title="添加"><span class="glyphicon glyphicon-plus"></span></button>`
 			.vee.onn("click", () => {
 				this._state.conditionsCustom = [...this._state.conditionsCustom, InitiativeTrackerConditionUtil.getNewRowState()];
 			});
@@ -79,8 +79,8 @@ export class InitiativeTrackerConditionCustomEdit extends BaseComponent {
 			<div class="ve-flex-col ve-mt-2 ve-h-100 ve-min-h-0">
 				<div class="ve-flex-vh-center ve-w-100 ve-mb-2 ve-bb-1p-trans">
 					<div class="ve-col-5">名称</div>
-					<div class="ve-col-2">Color</div>
-					<div class="ve-col-4">Turns</div>
+					<div class="ve-col-2">颜色</div>
+					<div class="ve-col-4">轮数</div>
 					<div class="ve-col-1 ve-flex-v-center ve-flex-h-right">${btnAdd}</div>
 				</div>
 

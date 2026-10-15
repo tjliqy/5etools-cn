@@ -259,11 +259,11 @@ export class StatGenUi extends BaseComponent {
 
 		const iptTabMetas = this._isLevelUp
 			? [
-				new TabUiUtil.TabMeta({name: "Existing", icon: this._isFvttMode ? `fas fa-fw fa-user` : `far fa-fw fa-user`, hasBorder: true}),
+				new TabUiUtil.TabMeta({name: "现有角色", icon: this._isFvttMode ? `fas fa-fw fa-user` : `far fa-fw fa-user`, hasBorder: true}),
 				...this._tabMetasAdditional || [],
 			]
 			: [
-				this._isFvttMode ? new TabUiUtil.TabMeta({name: "Select...", icon: this._isFvttMode ? `fas fa-fw fa-square` : `far fa-fw fa-square`, hasBorder: true, isNoPadding: this._isFvttMode}) : null,
+				this._isFvttMode ? new TabUiUtil.TabMeta({name: "选择...", icon: this._isFvttMode ? `fas fa-fw fa-square` : `far fa-fw fa-square`, hasBorder: true, isNoPadding: this._isFvttMode}) : null,
 				new TabUiUtil.TabMeta({name: "掷骰", icon: this._isFvttMode ? `fas fa-fw fa-dice` : `far fa-fw fa-dice`, hasBorder: true, isNoPadding: this._isFvttMode}),
 				new TabUiUtil.TabMeta({name: "标准数组", icon: this._isFvttMode ? `fas fa-fw fa-signal` : `far fa-fw fa-signal-bars`, hasBorder: true, isNoPadding: this._isFvttMode}),
 				new TabUiUtil.TabMeta({name: "购点", icon: this._isFvttMode ? `fas fa-fw fa-chart-bar` : `far fa-fw fa-chart-bar`, hasBorder: true, isNoPadding: this._isFvttMode}),
@@ -286,7 +286,7 @@ export class StatGenUi extends BaseComponent {
 				)
 					.vee.addClass("ve-max-w-200p");
 				veT`<div class="ve-flex-v-center ve-statgen-shared__wrp-header">
-					<div class="ve-mr-2"><b>Mode</b></div>
+					<div class="ve-mr-2"><b>模式</b></div>
 					${selMode}
 				</div>`
 					.vee.appendTo(parent);
@@ -347,7 +347,7 @@ export class StatGenUi extends BaseComponent {
 			});
 
 		const wrpRolled = veT`<div class="ve-flex-v-center ve-mr-auto ve-statgen-rolled__wrp-results ve-py-1"></div>`;
-		const wrpTotal = veT`<div class="ve-muted ve-small ve-italic ve-text-right ve-pr-1 ve-help-subtle" title="The sum total of the above rolls."></div>`;
+		const wrpTotal = veT`<div class="ve-muted ve-small ve-italic ve-text-right ve-pr-1 ve-help-subtle" title="以上掷骰结果的总和。"></div>`;
 		const wrpRolledOuter = veT`<div class="ve-flex-col">
 			<div class="ve-flex-v-center ve-mb-1"><div class="ve-mr-2">=</div>${wrpRolled}</div>
 			${wrpTotal}
@@ -565,7 +565,7 @@ export class StatGenUi extends BaseComponent {
 			new ContextUtil.Action(
 				"从代码导入",
 				async () => {
-					const raw = await InputUiUtil.pGetUserString({title: "Enter Code", isCode: true});
+					const raw = await InputUiUtil.pGetUserString({title: "输入代码", isCode: true});
 					if (raw == null) return;
 					const parsed = this._deserialize_pb_rules(raw);
 					if (parsed == null) return;
@@ -579,12 +579,12 @@ export class StatGenUi extends BaseComponent {
 							pb_isCustom: true,
 						},
 					);
-					JqueryUtil.doToast("Imported!");
+					JqueryUtil.doToast("已导入！");
 				},
 			),
 		]);
 
-		const btnContext = veT`<button class="ve-btn ve-btn-default ve-btn-xs" title="Menu"><span class="glyphicon glyphicon-option-vertical"></span></button>`
+		const btnContext = veT`<button class="ve-btn ve-btn-default ve-btn-xs" title="菜单"><span class="glyphicon glyphicon-option-vertical"></span></button>`
 			.vee.onn("click", evt => ContextUtil.pOpenMenu(evt, menuCustom));
 
 		const stgCustomCostControls = veT`<div class="ve-flex-col ve-mb-auto ve-ml-2 ve-mobile-sm__ml-0 ve-mobile-sm__mt-3">
@@ -665,14 +665,14 @@ export class StatGenUi extends BaseComponent {
 		return JSON.stringify(out);
 	}
 
-	static _DESERIALIZE_MSG_INVALID = "Code was not valid!";
+	static _DESERIALIZE_MSG_INVALID = "代码无效！";
 
 	_deserialize_pb_rules (raw) {
 		let json;
 		try {
 			json = JSON.parse(raw);
 		} catch (e) {
-			JqueryUtil.doToast({type: "danger", content: `Failed to decode JSON! ${e.message}`});
+			JqueryUtil.doToast({type: "danger", content: `无法解析 JSON！ ${e.message}`});
 			return null;
 		}
 
@@ -906,7 +906,7 @@ export class StatGenUi extends BaseComponent {
 		const wrpAsi = this._render_getWrpAsi();
 
 		stgNone = veT`<div class="ve-flex-col ve-w-100 ve-h-100">
-			<div class="ve-flex-v-center"><i>Please select a mode.</i></div>
+			<div class="ve-flex-v-center"><i>请选择模式。</i></div>
 		</div>`;
 
 		stgMain = veT`<div class="ve-flex-col ve-w-100 ve-h-100">
@@ -949,7 +949,7 @@ export class StatGenUi extends BaseComponent {
 
 						<div class="ve-flex-col ve-mr-3">
 							<div class="ve-my-1 ve-statgen-pb__header"></div>
-							<div class="ve-my-1 ve-statgen-pb__header ve-flex-vh-center" title="Modifier">调整值</div>
+							<div class="ve-my-1 ve-statgen-pb__header ve-flex-vh-center" title="调整值">调整值</div>
 							${metasTotalAndMod.map(it => it.wrpIptMod)}
 						</div>
 					</div>
@@ -1015,22 +1015,22 @@ export class StatGenUi extends BaseComponent {
 						</div>
 
 						<div class="ve-flex-col ve-mr-3">
-							<div class="ve-my-1 ve-bold ve-statgen-pb__header ve-flex-vh-center" title="Current">Curr.</div>
+							<div class="ve-my-1 ve-bold ve-statgen-pb__header ve-flex-vh-center" title="当前值">当前</div>
 							${wrpsExisting}
 						</div>
 
 						<div class="ve-flex-col ve-mr-3">
-							<div class="ve-my-1 ve-statgen-pb__header ve-flex-vh-center ve-help ve-muted" title="Input any additional/custom bonuses here">User</div>
+							<div class="ve-my-1 ve-statgen-pb__header ve-flex-vh-center ve-help ve-muted" title="在此输入其他或自定义加值">自定</div>
 							${wrpsUser}
 						</div>
 
 						<div class="ve-flex-col ve-mr-3">
-							<div class="ve-my-1 ve-statgen-pb__header ve-flex-vh-center">Total</div>
+							<div class="ve-my-1 ve-statgen-pb__header ve-flex-vh-center">总计</div>
 							${metasTotalAndMod.map(it => it.wrpIptTotal)}
 						</div>
 
 						<div class="ve-flex-col ve-mr-3">
-							<div class="ve-my-1 ve-statgen-pb__header ve-flex-vh-center" title="Modifier">Mod.</div>
+							<div class="ve-my-1 ve-statgen-pb__header ve-flex-vh-center" title="调整值">调整</div>
 							${metasTotalAndMod.map(it => it.wrpIptMod)}
 						</div>
 					</div>
@@ -1087,7 +1087,7 @@ export class StatGenUi extends BaseComponent {
 				iptTotal
 					.vee.val(totalScore)
 					.vee.toggleClass("form-control--error", isOverLimit)
-					.vee.tooltip(isOverLimit ? `In general, you can't increase an ability score above 20.` : "");
+					.vee.tooltip(isOverLimit ? `通常情况下，属性值不能超过 20。` : "");
 				iptMod.vee.val(Parser.getAbilityModifier(totalScore));
 
 				this._state[exportedStateProp] = totalScore;

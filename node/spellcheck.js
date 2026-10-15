@@ -1,3 +1,4 @@
+import "./locale/i18n.js";
 import {Command, Option} from "commander";
 import {loadConfig, spellCheckDocument} from "cspell-lib";
 import {pathToFileURL} from "url";
@@ -20,17 +21,17 @@ const _TRUST_AS_TO_PATH = {
 	"credits": "spellcheck/credits-names.txt",
 };
 const program = new Command()
-	.option("--fast", `If only changed files should be spellchecked`)
-	.option("--file [file]", `Path to a file (e.g. "./data/my-file.json")`)
-	.option("--dir [dir]", `Root directory (e.g. "./other/dir/")`)
-	.option("--only-artists", `Only spellcheck image and token credits`)
-	.option("--only-credits", `Only spellcheck adventure/book credits`)
-	.option("--trust", `Add unknown words to a local trust list`)
-	.option("--succinct", `Limit logging`)
+	.option("--fast", `仅检查已修改文件的拼写`)
+	.option("--file [file]", `文件路径（例如“./data/my-file.json”）`)
+	.option("--dir [dir]", `根目录（例如“./other/dir/”）`)
+	.option("--only-artists", `仅检查图片与标记图署名`)
+	.option("--only-credits", `仅检查冒险／书籍署名`)
+	.option("--trust", `将未知词语加入本地可信列表`)
+	.option("--succinct", `减少输出内容`)
 	.addOption(
 		new Option(
 			"--trust-as <target>",
-			`Trust target: ${Object.keys(_TRUST_AS_TO_PATH).join("|")}`,
+			`可信词表目标：${Object.keys(_TRUST_AS_TO_PATH).join("|")}`,
 		)
 			.choices(Object.keys(_TRUST_AS_TO_PATH))
 			.default("dnd"),
@@ -116,7 +117,7 @@ const pMain = async () => {
 
 	const files = await pGetFileList();
 	if (!files.length) {
-		console.error(`No files found!`);
+		console.error(`未找到文件！`);
 		return;
 	}
 
@@ -153,7 +154,7 @@ const pMain = async () => {
 				console.log(`${file}:${ptLineNumber}:${ptLineChar} --\t${_CHAR_RED}${issue.text}${_CHAR_RESET}\t-- ${_CHAR_DIM}${issue.line.text.trim()}${_CHAR_RESET}`);
 				if (params.trust) unknownWords.add(issue.text);
 				if (issue.suggestions?.length) {
-					console.log(`\tSuggestions: ${_CHAR_YELLOW}${issue.suggestions.join(", ")}${_CHAR_RESET}`);
+					console.log(`\t建议：${_CHAR_YELLOW}${issue.suggestions.join(", ")}${_CHAR_RESET}`);
 				}
 			});
 
@@ -180,12 +181,12 @@ const pMain = async () => {
 		.filter(it => !wordsExistingSet.has(it.toLowerCase()));
 
 	if (!toAdd.length) {
-		console.log(`No new words to trust in "${pathWords}".`);
+		console.log(`“${pathWords}”中没有需要新增的可信词语。`);
 		return;
 	}
 
 	fs.writeFileSync(pathWords, [...wordsExisting, ...toAdd].sort(SortUtil.ascSortLower).join("\n"), "utf-8");
-	console.log(`Added ${toAdd.length} words to "${pathWords}".`);
+	console.log(`已向“${pathWords}”添加 ${toAdd.length} 个词语。`);
 };
 
 await pMain();

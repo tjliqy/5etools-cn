@@ -70,7 +70,7 @@ export class UtilSearchIndex {
 			for (const filename of loadedFiles) {
 				const filePath = `./data/${indexMeta.dir}/${filename}`;
 				const contents = ut.readJson(filePath);
-				if (doLogging) console.log(`\tindexing ${filePath}`);
+				if (doLogging) console.log(`\t正在建立索引：${filePath}`);
 				const entities = Omnidexer.getProperty(contents, indexMeta.listProp) || [];
 				const entityLocators = this._getEntityLocators({entities, indexMeta});
 				const optsNxt = {
@@ -98,7 +98,7 @@ export class UtilSearchIndex {
 			const entities = Omnidexer.getProperty(data, indexMeta.listProp) || [];
 			const entityLocators = this._getEntityLocators({entities, indexMeta});
 
-			if (doLogging) console.log(`\tindexing ${filePath}`);
+			if (doLogging) console.log(`\t正在建立索引：${filePath}`);
 			Object.values(data)
 				.filter(it => it instanceof Array)
 				.forEach(it => it.sort((a, b) => UtilSearchIndex._sortSources(SourceUtil.getEntitySource(a), SourceUtil.getEntitySource(b)) || SortUtil.ascSortLower(a.name || MiscUtil.get(a, "inherits", "name") || "", b.name || MiscUtil.get(b, "inherits", "name") || "")));
@@ -144,7 +144,7 @@ export class UtilSearchIndex {
 				if (ti.postLoad) ti.postLoad(data);
 
 				for (const [prop, fn] of Object.entries(ti.additionalIndexes)) {
-					if (doLogging) console.log(`\tIndexing ${filename} (additional; "${prop}")`);
+					if (doLogging) console.log(`\t正在建立附加索引：${filename}（${prop}）`);
 					const extra = await fn(indexer, data);
 					extra.forEach(add => indexer.pushToIndex(add));
 				}

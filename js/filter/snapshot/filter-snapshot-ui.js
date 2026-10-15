@@ -66,8 +66,8 @@ export class FilterSnapshotUi extends BaseComponent {
 		});
 
 		const iptTabMetas = [
-			new TabUiUtil.TabMeta({name: "Snapshot Decks", hasBorder: true}),
-			new TabUiUtil.TabMeta({name: "Snapshots", hasBorder: true}),
+			new TabUiUtil.TabMeta({name: "快照集", hasBorder: true}),
+			new TabUiUtil.TabMeta({name: "快照", hasBorder: true}),
 
 			new TabUiUtil.TabMeta({
 				type: "buttons",
@@ -75,7 +75,7 @@ export class FilterSnapshotUi extends BaseComponent {
 				buttons: [
 					{
 						html: `<span class="glyphicon glyphicon-download"></span>`,
-						title: "Save to File",
+						title: "保存到文件",
 						pFnClick: () => {
 							DataUtil.userDownload(
 								"filter-snapshot",
@@ -86,7 +86,7 @@ export class FilterSnapshotUi extends BaseComponent {
 					},
 					{
 						html: `<span class="glyphicon glyphicon-upload"></span>`,
-						title: "Load from File",
+						title: "从文件加载",
 						pFnClick: async () => {
 							const {jsons, errors} = await InputUiUtil.pGetUserUploadJson({expectedFileTypes: [this._getFileType()]});
 
@@ -104,7 +104,7 @@ export class FilterSnapshotUi extends BaseComponent {
 				buttons: [
 					{
 						html: `<span class="glyphicon glyphicon-info-sign"></span>`,
-						title: "Help",
+						title: "帮助",
 						type: "default",
 						pFnClick: async () => {
 							await this._pOnClick_doShowHelp();
@@ -135,15 +135,15 @@ export class FilterSnapshotUi extends BaseComponent {
 
 	_pOnClick_doShowHelp () {
 		const {eleModalInner} = UiUtil.getShowModal({
-			title: "Help",
+			title: "帮助",
 			isMinHeight0: true,
 		});
 
 		eleModalInner.vee.appends(`
-			<p>Customize how your filters default upon hitting &quot;Reset&quot;.</p>
-			<p>Save your current filter(s) by taking a <b>Snapshot</b>.</p>
-			<p>Use your snapshots to create a <b>Snapshot Deck</b>.</p>
-			<p>Make a snapshot deck your default &quot;Reset&quot; state by toggling the <span class="glyphicon glyphicon-heart" aria-label="&quot;Make Default&quot; button"></span>.</p>
+			<p>自定义点击“重置”后筛选器的默认状态。</p>
+			<p>创建<b>快照</b>以保存当前筛选条件。</p>
+			<p>使用快照创建<b>快照集</b>。</p>
+			<p>点击 <span class="glyphicon glyphicon-heart" aria-label="设为默认按钮"></span>，将快照集设为默认的“重置”状态。</p>
 		`);
 	}
 

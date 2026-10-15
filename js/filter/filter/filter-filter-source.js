@@ -55,10 +55,10 @@ export class SourceFilter extends Filter {
 		const group = SourceUtil.getFilterGroup(item);
 		switch (group) {
 			case SourceUtil.FILTER_GROUP_STANDARD: return `<span class="glyphicon glyphicon-book"></span>`;
-			case SourceUtil.FILTER_GROUP_NON_STANDARD: return `<span title="(Other)" class="glyphicon glyphicon-file"></span>`;
-			case SourceUtil.FILTER_GROUP_PARTNERED: return `<span title="(Partnered)" class="glyphicon glyphicon-star-empty"></span>`;
-			case SourceUtil.FILTER_GROUP_PRERELEASE: return `<span title="(Prerelease)" class="glyphicon glyphicon-wrench"></span>`;
-			case SourceUtil.FILTER_GROUP_HOMEBREW: return `<span title="(Homebrew)" class="glyphicon glyphicon-glass"></span>`;
+			case SourceUtil.FILTER_GROUP_NON_STANDARD: return `<span title="（其他）" class="glyphicon glyphicon-file"></span>`;
+			case SourceUtil.FILTER_GROUP_PARTNERED: return `<span title="（合作内容）" class="glyphicon glyphicon-star-empty"></span>`;
+			case SourceUtil.FILTER_GROUP_PRERELEASE: return `<span title="（预发布）" class="glyphicon glyphicon-wrench"></span>`;
+			case SourceUtil.FILTER_GROUP_HOMEBREW: return `<span title="（自制内容）" class="glyphicon glyphicon-glass"></span>`;
 			default: throw new Error(`Unhandled source filter group "${group}"`);
 		}
 	}
@@ -112,13 +112,13 @@ export class SourceFilter extends Filter {
 		this._proxyAssignSimple("state", nxtState, true);
 	}
 
-	static _TITLE_CONTEXT_SOURCE_SET = `SHIFT to add to existing selection; CTRL to exclude others.`;
+	static _TITLE_CONTEXT_SOURCE_SET = `按住 Shift 可加入现有选择；按住 Ctrl 可排除其他来源。`;
 
 	_getHeaderControls_addExtraStateBtns (opts, wrpStateBtnsOuter) {
 		const btnSupplements = veE({
 			tag: "button",
 			clazz: `ve-btn ve-btn-default ve-w-100 ${opts.isMulti ? "ve-btn-xxs" : "ve-btn-xs"}`,
-			title: `SHIFT to add to existing selection; CTRL to include UA/etc.`,
+			title: `按住 Shift 可加入现有选择；按住 Ctrl 可包含 UA 等内容。`,
 			html: `核心/资源`,
 			click: evt => this._doSetPinsSupplements({isIncludeUnofficial: EventUtil.isCtrlMetaKey(evt), isAdditive: evt.shiftKey}),
 		});
@@ -126,7 +126,7 @@ export class SourceFilter extends Filter {
 		const btnAdventures = veE({
 			tag: "button",
 			clazz: `ve-btn ve-btn-default ve-w-100 ${opts.isMulti ? "ve-btn-xxs" : "ve-btn-xs"}`,
-			title: `SHIFT to add to existing selection; CTRL to include UA`,
+			title: `按住 Shift 可加入现有选择；按住 Ctrl 可包含 UA。`,
 			html: `冒险`,
 			click: evt => this._doSetPinsAdventures({isIncludeUnofficial: EventUtil.isCtrlMetaKey(evt), isAdditive: evt.shiftKey}),
 		});
@@ -134,7 +134,7 @@ export class SourceFilter extends Filter {
 		const btnPartnered = veE({
 			tag: "button",
 			clazz: `ve-btn ve-btn-default ve-w-100 ${opts.isMulti ? "ve-btn-xxs" : "ve-btn-xs"}`,
-			title: `SHIFT to add to existing selection`,
+			title: `按住 Shift 可加入现有选择`,
 			html: `合作`,
 			click: evt => this._doSetPinsPartnered({isAdditive: evt.shiftKey}),
 		});
@@ -142,7 +142,7 @@ export class SourceFilter extends Filter {
 		const btnHomebrew = veE({
 			tag: "button",
 			clazz: `ve-btn ve-btn-default ve-w-100 ${opts.isMulti ? "ve-btn-xxs" : "ve-btn-xs"}`,
-			title: `SHIFT to add to existing selection`,
+			title: `按住 Shift 可加入现有选择`,
 			html: `自制内容`,
 			click: evt => this._doSetPinsHomebrew({isAdditive: evt.shiftKey}),
 		});
@@ -196,18 +196,18 @@ export class SourceFilter extends Filter {
 			new ContextUtil.Action(
 				`选择 5e/2014 资源`,
 				(evt) => this._doSetPinsClassic({isAdditive: evt.shiftKey, isExclusive: EventUtil.isCtrlMetaKey(evt)}),
-				{title: `Select sources published from 2014 to 2024. ${this.constructor._TITLE_CONTEXT_SOURCE_SET}`},
+				{title: `选择 2014 至 2024 年发布的来源。 ${this.constructor._TITLE_CONTEXT_SOURCE_SET}`},
 			),
 			new ContextUtil.Action(
 				`选择 5.5e/2024 资源`,
 				(evt) => this._doSetPinsOne({isAdditive: evt.shiftKey, isExclusive: EventUtil.isCtrlMetaKey(evt)}),
-				{title: `Select sources published from 2024 onwards. ${this.constructor._TITLE_CONTEXT_SOURCE_SET}`},
+				{title: `选择自 2024 年起发布的来源。 ${this.constructor._TITLE_CONTEXT_SOURCE_SET}`},
 			),
 			null,
 			new ContextUtil.Action(
 				`选择“寻常”资源`,
 				(evt) => this._doSetPinsVanilla({isAdditive: evt.shiftKey, isExclusive: EventUtil.isCtrlMetaKey(evt)}),
-				{title: `Select a baseline set of sources suitable for any campaign. ${this.constructor._TITLE_CONTEXT_SOURCE_SET}`},
+				{title: `选择适用于任何战役的基础来源集。 ${this.constructor._TITLE_CONTEXT_SOURCE_SET}`},
 			),
 			new ContextUtil.Action(
 				"选择所有非UA资源",
@@ -218,7 +218,7 @@ export class SourceFilter extends Filter {
 			new ContextUtil.Action(
 				"选择SRD资源",
 				(evt) => this._doSetPinsSrd({isAdditive: evt.shiftKey, isExclusive: EventUtil.isCtrlMetaKey(evt)}),
-				{title: `Select System Reference Document Sources. ${this.constructor._TITLE_CONTEXT_SOURCE_SET}`},
+				{title: `选择系统参考文档的来源。 ${this.constructor._TITLE_CONTEXT_SOURCE_SET}`},
 			),
 			new ContextUtil.Action(
 				"选择基础规则资源",
@@ -703,9 +703,9 @@ SourceFilter._DEFAULT_UI_META = {
 	pillDisplayMode: SourceFilter._PILL_DISPLAY_MODE__AS_NAMES,
 };
 SourceFilter._PILL_DISPLAY_MODE_LABELS = {
-	[SourceFilter._PILL_DISPLAY_MODE__AS_NAMES]: "As Names",
-	[SourceFilter._PILL_DISPLAY_MODE__AS_ABVS]: "As Abbreviations",
-	[SourceFilter._PILL_DISPLAY_MODE__AS_BOTH]: "As Names Plus Abbreviations",
+	[SourceFilter._PILL_DISPLAY_MODE__AS_NAMES]: "显示名称",
+	[SourceFilter._PILL_DISPLAY_MODE__AS_ABVS]: "显示缩写",
+	[SourceFilter._PILL_DISPLAY_MODE__AS_BOTH]: "显示名称和缩写",
 };
 SourceFilter._SRD_SOURCES = null;
 SourceFilter._BASIC_RULES_SOURCES = null;

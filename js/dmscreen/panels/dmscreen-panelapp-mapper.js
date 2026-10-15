@@ -58,7 +58,7 @@ export class DmMapper extends DmScreenPanelAppBase {
 		menu.doClose();
 
 		const {eleModalInner, doClose} = UiUtil.getShowModal({
-			title: `Select Map\u2014${chosenDoc.n}`,
+			title: `选择地图\u2014${chosenDoc.n}`,
 			isWidth100: true,
 			isHeight100: true,
 			isUncappedHeight: true,
@@ -91,7 +91,7 @@ export class DmMapper extends DmScreenPanelAppBase {
 						if (obj.title) {
 							out.name = Renderer.stripTags(obj.title);
 						} else {
-							out.name = `${(adventureBookPack[prop].contents[ixChap] || {}).name || "(Unknown)"}, Map ${cntChapImages + 1}`;
+							out.name = `${(adventureBookPack[prop].contents[ixChap] || {}).name || "（未知）"}，地图 ${cntChapImages + 1}`;
 						}
 
 						cntChapImages++;
@@ -110,7 +110,7 @@ export class DmMapper extends DmScreenPanelAppBase {
 		if (!mapDatas.length) {
 			eleModalInner
 				.vee.empty()
-				.vee.appends(`<div class="ve-flex-vh-center ve-w-100 ve-h-100"><span class="ve-dnd-font">Adventure did not contain any valid maps!</span></div>`);
+				.vee.appends(`<div class="ve-flex-vh-center ve-w-100 ve-h-100"><span class="ve-dnd-font">该冒险没有有效地图！</span></div>`);
 			return;
 		}
 

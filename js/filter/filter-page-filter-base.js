@@ -70,7 +70,7 @@ export class PageFilterBase {
 	// region Helpers
 	static _getClassFilterItem ({className, classSource, isVariantClass, definedInSource}) {
 		const nm = className.split("(")[0].trim();
-		const variantSuffix = isVariantClass ? ` [${definedInSource ? Parser.sourceJsonToAbv(definedInSource) : "Unknown"}]` : "";
+		const variantSuffix = isVariantClass ? ` [${definedInSource ? Parser.sourceJsonToAbv(definedInSource) : "未知"}]` : "";
 		const sourceSuffix = (
 			SourceUtil.isNonstandardSource(classSource || Parser.SRC_PHB)
 			|| (typeof PrereleaseUtil !== "undefined" && PrereleaseUtil.hasSourceJson(classSource || Parser.SRC_PHB))
@@ -85,7 +85,7 @@ export class PageFilterBase {
 		};
 
 		if (isVariantClass) {
-			opts.nest = definedInSource ? Parser.sourceJsonToFull(definedInSource) : "Unknown";
+			opts.nest = definedInSource ? Parser.sourceJsonToFull(definedInSource) : "未知";
 			opts.equivalentClassName = `${nm}${sourceSuffix}`;
 			opts.definedInSource = definedInSource;
 		}

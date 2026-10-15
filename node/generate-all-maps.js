@@ -1,3 +1,4 @@
+import "./locale/i18n.js";
 import fs from "fs";
 import * as ut from "./util.js";
 
@@ -7,7 +8,7 @@ import {MapsUtil} from "../js/maps-util.js";
 
 const out = {};
 
-console.log("Updating maps...");
+console.log("正在更新地图…");
 
 [
 	{
@@ -22,7 +23,7 @@ console.log("Updating maps...");
 	},
 ].forEach(({prop, index, dir}) => {
 	ut.readJson(index)[prop].forEach(head => {
-		console.log(`\tGenerating map data for ${head.id}`);
+		console.log(`\t正在生成 ${head.id} 的地图数据`);
 		const body = ut.readJson(`${dir}/${prop}-${head.id.toLowerCase()}.json`)[`${prop}Data`]
 			.find(corpusData => corpusData.id === head.id).data;
 		const imageData = MapsUtil.getImageData({prop, head, body});
@@ -31,4 +32,4 @@ console.log("Updating maps...");
 });
 
 fs.writeFileSync("data/generated/gendata-maps.json", JSON.stringify(out), "utf8");
-console.log("Updated maps.");
+console.log("已更新地图。");

@@ -23,8 +23,8 @@ export class BrewUtil2_ extends BrewUtil2Base {
 	PAGE_MANAGE = UrlUtil.PG_MANAGE_BREW;
 	URL_REPO_DEFAULT = VeCt.URL_BREW;
 	URL_REPO_ROOT_DEFAULT = VeCt.URL_ROOT_BREW;
-	DISPLAY_NAME = "homebrew";
-	DISPLAY_NAME_PLURAL = "homebrews";
+	DISPLAY_NAME = I18nUtil.get("page.manageprelease.homebrew_content");
+	DISPLAY_NAME_PLURAL = I18nUtil.get("page.manageprelease.homebrew_contents");
 	DEFAULT_AUTHOR = "";
 	STYLE_BTN = "ve-btn-info";
 	IS_PREFER_DATE_ADDED = true;

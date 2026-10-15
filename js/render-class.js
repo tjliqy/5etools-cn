@@ -69,7 +69,7 @@ class _RenderClassesSidebarImplBase {
 	}
 
 	_getCommonElements_authors ({comp, cls}) {
-		return `${cls.authors ? `<tr><th class="ve-text-left" colspan="6">By ${cls.authors.join(", ")}</th></tr>` : ""}`;
+		return `${cls.authors ? `<tr><th class="ve-text-left" colspan="6">作者：${cls.authors.join(", ")}</th></tr>` : ""}`;
 	}
 
 	/* ----- */
@@ -140,7 +140,7 @@ class _RenderClassesSidebarImplBase {
 		const {multiclassing: mc} = cls;
 
 		const htmlMCcPrereqPreText = mc.requirements || mc.requirementsSpecial
-			? `<div>To qualify for a new class, you must meet the ${mc.requirementsSpecial ? "" : "ability score "}prerequisites for both your current class and your new one.</div>`
+			? `<div>要获得新职业的资格，你必须同时满足当前职业和新职业的${mc.requirementsSpecial ? "" : "属性值"}先决条件。</div>`
 			: "";
 
 		const ptMcPrereq = cls.primaryAbility
@@ -150,7 +150,7 @@ class _RenderClassesSidebarImplBase {
 		const ptMcPrereqSpecial = mc.requirementsSpecial
 			? `<div>
 				${htmlMCcPrereqPreText}
-				<b>${htmlMCcPrereqPreText ? "Other " : ""}先决条件:</b> ${renderer.render(mc.requirementsSpecial || "")}
+				<b>${htmlMCcPrereqPreText ? "其他" : ""}先决条件：</b> ${renderer.render(mc.requirementsSpecial || "")}
 			</div>`
 			: "";
 

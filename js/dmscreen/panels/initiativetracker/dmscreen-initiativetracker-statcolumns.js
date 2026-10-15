@@ -445,11 +445,11 @@ class InitiativeTrackerStatColumn_Image extends _InitiativeTrackerStatColumnBase
 
 	getRendered ({comp, mon, networking = null}) {
 		const ele = veT`<div class="ve-mr-3p ve-flex-vh-center ve-w-40p">
-			<img src="${comp._state.tokenUrl}" class="ve-w-30p ve-h-30p" alt="Token图">
+			<img src="${comp._state.tokenUrl}" class="ve-w-30p ve-h-30p" alt="标记图">
 		</div>`;
 
 		if (networking != null) {
-			ele.vee.tooltip("Click to Show to Connected Players");
+			ele.vee.tooltip("点击后向已连接的玩家显示");
 
 			ele
 				.vee.onn("click", () => {

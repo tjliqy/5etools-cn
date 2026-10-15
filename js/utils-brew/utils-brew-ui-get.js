@@ -147,12 +147,12 @@ export class GetBrewUi {
 									new Set(),
 								);
 
-							const dispToggleExpand = veT`<span class="ve-mr-2" title="SHIFT-Click to Toggle All">[+]</span>`;
+							const dispToggleExpand = veT`<span class="ve-mr-2" title="按住 Shift 点击可切换全部展开状态">[+]</span>`;
 
 							const dispHeader = veT`<div class="ve-w-100 ve-py-1 ve-bb-1p-trans ve-flex-v-center">
 								${dispToggleExpand}
 								<b class="ve-mr-1">${propName.qq()}</b>
-								<span class="ve-muted" title="Note that duplicate/unwanted names are not displayed in the list below.">(${metas.length})</span>
+								<span class="ve-muted" title="下方列表不显示重复或不需要的名称。">(${metas.length})</span>
 							</div>`
 								.vee.onn("click", evt => {
 									evt.stopPropagation();
@@ -170,7 +170,7 @@ export class GetBrewUi {
 							const htmlLis = metasFilt
 								.map(meta => {
 									return `<div class="ve-w-100 ve-pr-1p ve-py-1p ve-flex ve-relative">
-										<span class="ve-no-shrink">${meta.name.qq()}</span>${meta.page ? `<span class="ve-w-100 ve-min-w-0 ve-relative ve-top-n3p ve-mx-1 ve-bb-1p manbrew-get-preview__sep-page"></span><span class="ve-no-shrink ve-muted ve-small-caps" title="Page ${meta.page}">p${meta.page}</span>` : ""}
+										<span class="ve-no-shrink">${meta.name.qq()}</span>${meta.page ? `<span class="ve-w-100 ve-min-w-0 ve-relative ve-top-n3p ve-mx-1 ve-bb-1p manbrew-get-preview__sep-page"></span><span class="ve-no-shrink ve-muted ve-small-caps" title="第 ${meta.page} 页">第 ${meta.page} 页</span>` : ""}
 									</div>`;
 								})
 								.join("");
@@ -321,7 +321,7 @@ export class GetBrewUi {
 
 		rdState.pageFilter = new this.constructor._PageFilterGetBrew({brewUtil: this._brewUtil});
 
-		const btnAddSelected = veT`<button class="ve-btn ${this._brewUtil.STYLE_BTN} ve-btn-sm ve-col-0-5 ve-text-center" disabled title="Add Selected"><span class="glyphicon glyphicon-save"></button>`;
+		const btnAddSelected = veT`<button class="ve-btn ${this._brewUtil.STYLE_BTN} ve-btn-sm ve-col-0-5 ve-text-center" disabled title="添加所选项"><span class="glyphicon glyphicon-save"></button>`;
 
 		const wrpRows = veT`<div class="list ve-smooth-scroll ve-max-h-unset"><div class="ve-lst__row ve-flex-col"><div class="ve-lst__wrp-cells ve-lst__row-border ve-lst__row-inner ve-flex ve-w-100"><i>加载中...</i></div></div></div>`;
 
@@ -491,7 +491,7 @@ export class GetBrewUi {
 							children: [
 								veE({
 									tag: "a",
-									txt: `View Raw`,
+									txt: `查看原始数据`,
 								})
 									.vee.attr("href", brewInfo.urlDownload)
 									.vee.attr("target", "_blank")
@@ -557,9 +557,9 @@ export class GetBrewUi {
 	async _pHandleClick_btnAddSelected ({rdState}) {
 		const listItems = rdState.list.items.filter(it => it.data.cbSel.checked);
 
-		if (!listItems.length) return JqueryUtil.doToast({type: "warning", content: `Please select some ${this._brewUtil.DISPLAY_NAME_PLURAL} first!`});
+		if (!listItems.length) return JqueryUtil.doToast({type: "warning", content: `请先选择一些${this._brewUtil.DISPLAY_NAME_PLURAL}！`});
 
-		if (listItems.length > 25 && !await InputUiUtil.pGetUserBoolean({title: "你确定吗？", htmlDescription: `<div>You are about to load ${listItems.length} ${this._brewUtil.DISPLAY_NAME} files.<br>Loading large quantities of ${this._brewUtil.DISPLAY_NAME_PLURAL} can lead to performance and stability issues.</div>`, textYes: "Continue"})) return;
+		if (listItems.length > 25 && !await InputUiUtil.pGetUserBoolean({title: "你确定吗？", htmlDescription: `<div>即将加载 ${listItems.length} 个${this._brewUtil.DISPLAY_NAME}文件。<br>一次加载大量${this._brewUtil.DISPLAY_NAME_PLURAL}可能导致性能或稳定性问题。</div>`, textYes: "继续"})) return;
 
 		rdState.cbAll.checked = false;
 		rdState.list.items.forEach(item => {
@@ -574,7 +574,7 @@ export class GetBrewUi {
 	}
 
 	async _pHandleClick_btnGetRemote ({evt, btn, url, isLazy}) {
-		if (!(url || "").trim()) return JqueryUtil.doToast({type: "danger", content: `${this._brewUtil.DISPLAY_NAME.uppercaseFirst()} had no download URL!`});
+		if (!(url || "").trim()) return JqueryUtil.doToast({type: "danger", content: `${this._brewUtil.DISPLAY_NAME}没有可用的下载网址！`});
 
 		if (evt) {
 			evt.stopPropagation();
@@ -582,10 +582,10 @@ export class GetBrewUi {
 		}
 
 		const cachedHtml = btn.vee.html();
-		btn.vee.txt("Loading...").vee.attr("disabled", true);
+		btn.vee.txt("正在加载……").vee.attr("disabled", true);
 		const brewsAdded = await this._brewUtil.pAddBrewFromUrl(url, {isLazy});
 		this._brewsLoaded.push(...brewsAdded);
-		btn.vee.txt("Done!");
+		btn.vee.txt("完成！");
 		setTimeout(() => btn.vee.html(cachedHtml).vee.attr("disabled", false), VeCt.DUR_INLINE_NOTIFY);
 	}
 

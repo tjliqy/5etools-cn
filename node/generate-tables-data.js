@@ -1,3 +1,4 @@
+import "./locale/i18n.js";
 import fs from "fs";
 import "../js/parser.js";
 import "../js/utils.js";
@@ -82,7 +83,7 @@ class GenTables {
 
 		const toSave = JSON.stringify(genState.getOutput());
 		fs.writeFileSync(`./data/generated/gendata-tables.json`, toSave, "utf-8");
-		console.log("Regenerated table data.");
+		console.log("已重新生成表格数据。");
 	}
 
 	_addBookAndAdventureData (genState) {

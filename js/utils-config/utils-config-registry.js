@@ -11,7 +11,7 @@ const settingsGroupStyleSwitcher = new ConfigSettingsGroup({
 			class extends ConfigSettingExternal {
 				_configId = "theme";
 				_name = I18nUtil.get("common.preferences.theme");
-				_help = "The color theme to be applied.";
+				_help = "应用的颜色主题。";
 				_isRowLabel = true;
 
 				_getEleExternal () { return StyleSwitcher.getSelStyle(); }
@@ -19,8 +19,8 @@ const settingsGroupStyleSwitcher = new ConfigSettingsGroup({
 		)(),
 		new ConfigSettingEnum({
 			configId: "style",
-			name: `<span>${I18nUtil.get("common.preferences.style")} <span class="ve-small">(see also: <a href="https://2014.5e.tools" rel="noopener noreferrer" target="_blank">2014.5e.tools</a>)</span></span>`,
-			help: `The styling to be applied when rendering specific information (stat blocks, etc.). Does not affect what content is available, only how it is displayed. See also: https://2014.5e.tools.`,
+			name: `<span>${I18nUtil.get("common.preferences.style")} <span class="ve-small">（另见：<a href="https://2014.5e.tools" rel="noopener noreferrer" target="_blank">2014.5e.tools</a>）</span></span>`,
+			help: `渲染资料卡等内容时使用的样式。它只影响显示方式，不改变可用内容。另见：https://2014.5e.tools。`,
 			isRowLabel: true,
 			isReloadRequired: true,
 			default: SITE_STYLE__ONE,
@@ -44,7 +44,7 @@ const settingsGroupStyleSwitcher = new ConfigSettingsGroup({
 			class extends ConfigSettingExternal {
 				_configId = "isWideMode";
 				_name = I18nUtil.get("common.preferences.wide_mode");
-				_help = "This feature is unsupported. Expect bugs.";
+				_help = "此功能尚未正式支持，可能出现问题。";
 				_isRowLabel = true;
 
 				_getEleExternal () { return StyleSwitcher.getCbWide(); }
@@ -55,12 +55,12 @@ const settingsGroupStyleSwitcher = new ConfigSettingsGroup({
 
 const settingsGroupUi = new ConfigSettingsGroup({
 	groupId: "ui",
-	name: "UI",
+	name: "界面",
 	configSettings: [
 		new ConfigSettingBoolean({
 			configId: "isNotifyUpdates",
-			name: `Show Notification on Update`,
-			help: `If a notification should be shown when a background content update completes, prompting the user to reload and/or view the changelog.`,
+			name: `内容更新后显示通知`,
+			help: `后台内容更新完成后是否显示通知，提示重新加载或查看更新日志。`,
 			isRowLabel: true,
 			default: true,
 		}),
@@ -75,7 +75,7 @@ const _MARKDOWN_TAG_RENDER_MODES = {
 
 const settingsGroupMarkdown = new ConfigSettingsGroup({
 	groupId: "markdown",
-	name: "Markdown",
+	name: "Markdown 导出",
 	configSettings: [
 		new ConfigSettingEnum({
 			configId: "tagRenderMode",

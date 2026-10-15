@@ -10,7 +10,7 @@ export class ScaleSpellSummonedCreature extends ScaleSummonedCreature {
 
 		const state = new ScaleSpellSummonedCreature._State({});
 
-		mon._displayName = `${mon.name} (${Parser.getOrdinalForm(toSpellLevel)}-Level Spell)`;
+		mon._displayName = `${mon.name}（${toSpellLevel} 环法术）`;
 
 		this._scale_ac(mon, toSpellLevel, state);
 		this._scale_hp(mon, toSpellLevel, state);
@@ -100,7 +100,7 @@ export class ScaleSpellSummonedCreature extends ScaleSummonedCreature {
 					const hdFormula = `${toSpellLevel}d${hdSides}`;
 					if (!ptYourAbilMod) return hdFormula;
 
-					return `${intro} {@dice ${hdFormula}} Hit Dice`;
+					return `${intro} {@dice ${hdFormula}} 生命骰`;
 				})
 			;
 		}
@@ -127,7 +127,7 @@ export class ScaleSpellSummonedCreature extends ScaleSummonedCreature {
 							const count = Math.floor(toSpellLevel / 2);
 
 							return [
-								Parser.numberToText(count),
+								String(count),
 								ptName,
 								`attack${count === 1 ? "" : "s"}`,
 							]

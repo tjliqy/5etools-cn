@@ -16,7 +16,7 @@ class PageFilterBastions extends PageFilterBase {
 			cnHeader: "等级",
 			isLabelled: true,
 			labels: ["\u2014", ...Array.from({length: 20}, (_, i) => i + 1)],
-			labelDisplayFn: n => n === "\u2014" ? "None" : n,
+			labelDisplayFn: n => n === "\u2014" ? "无" : n,
 		});
 		this._prereqFilter = new Filter({
 			header: "Prerequisite",
@@ -45,7 +45,7 @@ class PageFilterBastions extends PageFilterBase {
 		this._miscFilter = new Filter({
 			header: "Miscellaneous",
 			cnHeader: "杂项",
-			items: ["有图片", "Has Info"],
+			items: ["有图片", "有简介"],
 			isMiscFilter: true,
 			deselFn: PageFilterBase.defaultMiscellaneousDeselFn.bind(PageFilterBase),
 		});

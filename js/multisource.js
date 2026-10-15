@@ -61,7 +61,7 @@ class ListPageMultiSource extends ListPage {
 		if (!sourcesUnknown.length) return;
 
 		JqueryUtil.doToast({
-			content: `Could not load content from the following pinned list source${sourcesUnknown.length === 1 ? "" : "s"}: ${sourcesUnknown.map(it => `"${it}"`).join(", ")}. You may need to load ${sourcesUnknown.length === 1 ? "it" : "them"} as homebrew first.`,
+			content: `无法加载以下置顶列表来源的内容：${sourcesUnknown.map(it => `"${it}"`).join("、")}。可能需要先将其作为自制内容加载。`,
 			type: "danger",
 			isAutoHide: false,
 		});

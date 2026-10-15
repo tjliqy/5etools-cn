@@ -1,6 +1,6 @@
 export class InitiativeTrackerRoller {
 	static _getRollName (name) {
-		return `Initiative Tracker${name ? ` \u2014 ${name}` : ""}`;
+		return `先攻追踪器${name ? ` \u2014 ${name}` : ""}`;
 	}
 
 	async pGetRollInitiative ({mon, name, initiativeModifier}) {
@@ -10,7 +10,7 @@ export class InitiativeTrackerRoller {
 		return Renderer.dice.pRoll2(`1d20${UiUtil.intToBonus(initiativeModifier)}`, {
 			isUser: false,
 			name: this.constructor._getRollName(name ?? mon?.name),
-			label: "Initiative",
+			label: "先攻",
 		}, {isResultUsed: true});
 	}
 
@@ -21,7 +21,7 @@ export class InitiativeTrackerRoller {
 			return Renderer.dice.pRoll2(mon.hp.formula, {
 				isUser: false,
 				name: this.constructor._getRollName(mon?.name),
-				label: "HP",
+				label: "生命值",
 			}, {isResultUsed: true});
 		}
 

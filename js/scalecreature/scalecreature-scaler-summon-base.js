@@ -2,11 +2,11 @@
 export class ScaleSummonedCreature {
 	static _mutSimpleSpecialAcItem (acItem) {
 		// Try to convert to "from" AC
-		const mSimpleNatural = /^(\d+) \(natural armor\)$/i.exec(acItem.special);
+		const mSimpleNatural = /^(\d+)\s*[（(](?:natural armor|天生护甲)[）)]$/i.exec(acItem.special);
 		if (mSimpleNatural) {
 			delete acItem.special;
 			acItem.ac = Number(mSimpleNatural[1]);
-			acItem.from = ["natural armor"];
+			acItem.from = ["天生护甲"];
 		}
 	}
 

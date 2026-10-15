@@ -292,14 +292,14 @@ export class ConverterSpell extends ConverterBase {
 
 			// TODO further handling of non-school text (see e.g. Deep Magic series)
 			if (trailing) {
-				options.cbWarning(`${stats.name ? `(${stats.name}) ` : ""}Level/school/ritual trailing part "${trailing}" requires manual conversion`);
+				options.cbWarning(`${stats.name ? `(${stats.name}) ` : ""}环阶、学派或仪式信息中的尾部内容“${trailing}”需要手动转换`);
 			}
 
 			this._tryConvertSchool(stats, {cbMan: options.cbWarning});
 			return;
 		}
 
-		options.cbWarning(`${stats.name ? `(${stats.name}) ` : ""}Level/school/ritual part "${rawLine}" requires manual conversion`);
+		options.cbWarning(`${stats.name ? `(${stats.name}) ` : ""}环阶、学派或仪式信息“${rawLine}”需要手动转换`);
 	}
 
 	static _setCleanLevelSchoolRitual_trailingClassGroup ({stats, options, trailing}) {
@@ -482,7 +482,7 @@ export class ConverterSpell extends ConverterBase {
 				const mNumber = /^(?<count>[一二三四五六七八九十]+|\d+)?(?<rest>.*?)$/.exec(str);
 
 				if (!mNumber) {
-					options.cbWarning(`${stats.name ? `(${stats.name}) ` : ""}Casting time part "${str}" requires manual conversion`);
+					options.cbWarning(`${stats.name ? `(${stats.name}) ` : ""}施法时间片段“${str}”需要手动转换`);
 					return str;
 				}
 
@@ -669,7 +669,7 @@ export class ConverterSpell extends ConverterBase {
 					case "warlocks": tgt.push({"name": "Warlock", "source": srcPhb}); break;
 					case "wizard":
 					case "wizards": tgt.push({"name": "Wizard", "source": srcPhb}); break;
-					default: options.cbWarning(`${stats.name ? `(${stats.name}) ` : ""}Class "${lowerPt}" requires manual conversion`); break;
+					default: options.cbWarning(`${stats.name ? `(${stats.name}) ` : ""}职业“${lowerPt}”需要手动转换`); break;
 				}
 			});
 

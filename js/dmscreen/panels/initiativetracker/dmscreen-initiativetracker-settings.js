@@ -144,7 +144,7 @@ export class InitiativeTrackerSettings extends BaseComponent {
 	}
 
 	_pGetShowModalResults_renderSection_wounds ({eleModalInner}) {
-		UiUtil.getAddModalRowCb2({wrp: eleModalInner, comp: this, prop: "isInvertWoundDirection", text: "Track Hit Points as Damage", title: `For example, by default a creature might have "100/100" hit points when at full HP. When tracking damage, this would instead be displayed as "0/100" when the creature is at full HP.`});
+		UiUtil.getAddModalRowCb2({wrp: eleModalInner, comp: this, prop: "isInvertWoundDirection", text: "以伤害值追踪生命值", title: `例如，生物满血时通常显示为“100/100”；改为追踪伤害后，满血时显示为“0/100”。`});
 	}
 
 	_pGetShowModalResults_renderSection_playerView ({eleModalInner}) {
@@ -182,7 +182,7 @@ export class InitiativeTrackerSettings extends BaseComponent {
 				}),
 		);
 
-		const btnAddRow = veT`<button class="ve-btn ve-btn-default ve-btn-xs ve-bb-0 ve-bbr-0 ve-bbl-0" title="Add"><span class="glyphicon glyphicon-plus"></span></button>`
+		const btnAddRow = veT`<button class="ve-btn ve-btn-default ve-btn-xs ve-bb-0 ve-bbr-0 ve-bbl-0" title="添加"><span class="glyphicon glyphicon-plus"></span></button>`
 			.vee.onn("click", evt => ContextUtil.pOpenMenu(evt, menuAddStatsCol));
 
 		const wrpTblStatsHead = veT`<div class="ve-flex-vh-center ve-w-100 ve-mb-2 ve-bb-1p-trans">
@@ -216,7 +216,7 @@ export class InitiativeTrackerSettings extends BaseComponent {
 	/* -------------------------------------------- */
 
 	_pGetShowModalResults_renderFooter ({eleModalFooter, doClose}) {
-		const btnSave = veT`<button class="ve-btn ve-btn-primary ve-btn-sm ve-w-100">Save</button>`
+		const btnSave = veT`<button class="ve-btn ve-btn-primary ve-btn-sm ve-w-100">保存</button>`
 			.vee.onn("click", () => doClose(true));
 
 		veT(eleModalFooter)`<div class="ve-w-100 ve-py-3 ve-no-shrink">

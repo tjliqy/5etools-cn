@@ -4,6 +4,42 @@ import {CrScalerBase} from "./scalecreature-scaler-cr-base.js";
 import {VetoolsConfig} from "../../utils-config/utils-config-config.js";
 
 export class CrScalerArmorClass extends CrScalerBase {
+	static _ARMOR_NAMES_TO_CN = {
+		"ring mail": "环甲",
+		"chain mail": "链甲",
+		"splint armor": "板条甲",
+		"plate armor": "板甲",
+		"hide armor": "兽皮甲",
+		"chain shirt": "链甲衫",
+		"scale mail": "鳞甲",
+		"breastplate": "胸甲",
+		"half plate armor": "半身板甲",
+		"padded armor": "布甲",
+		"leather armor": "皮甲",
+		"studded leather armor": "镶钉皮甲",
+		"shield": "盾牌",
+	};
+
+	static _localizeItemTag (tag, name, source = "", display = "") {
+		if (display) return tag;
+		const parts = /^(\+\d+\s+)?(.+?)(\s+\+\d+)?$/.exec(name);
+		const baseName = parts[2].toLowerCase();
+		const translated = this._ARMOR_NAMES_TO_CN[baseName];
+		if (!translated) return tag;
+		const displayName = `${parts[1] || ""}${translated}${parts[3] || ""}`;
+		return `{@item ${name}|${source}|${displayName}}`;
+	}
+
+	static _localizeAcItem (acItem) {
+		if (!acItem?.from) return acItem;
+		acItem.from = acItem.from.map(from => {
+			if (typeof from !== "string") return from;
+			if (from === "natural armor") return "天生护甲";
+			return from.replace(/\{@item ([^|}]+)(?:\|([^|}]*))?(?:\|([^}]*))?\}/g, (...m) => this._localizeItemTag(m[0], m[1], m[2], m[3]));
+		});
+		return acItem;
+	}
+
 	static _AC_CR_RANGES = {
 		"13": [-1, 3],
 		"14": [4, 4],
@@ -151,7 +187,7 @@ export class CrScalerArmorClass extends CrScalerBase {
 
 		// if the DPR calculations didn't already adjust DEX, we can adjust it here
 		// otherwise, respect the changes made in the DPR calculations, and find a combination of AC factors to meet the desired number
-		this._mon.ac = this._mon.ac.map(acItem => this._getAdjustedAcItem({acItem}));
+		this._mon.ac = this._mon.ac.map(acItem => this.constructor._localizeAcItem(this._getAdjustedAcItem({acItem})));
 	}
 
 	/** Update an existing AC to use our new DEX score, if we have one. */

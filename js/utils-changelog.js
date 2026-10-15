@@ -60,7 +60,7 @@ class UtilsChangelog {
 
 			const isLast = i === changelog.length - 1;
 
-			const titlePart = it.title ? `, &quot;<span ${it.titleAlt ? `class="ve-help" title="AKA &quot;${it.titleAlt.escapeQuotes()}&quot; Edition"` : ""}>${it.title.escapeQuotes()}</span>&quot; Edition` : "";
+			const titlePart = it.title ? `，“<span ${it.titleAlt ? `class="ve-help" title="又称“${it.titleAlt.escapeQuotes()}”版本"` : ""}>${it.title.escapeQuotes()}</span>”版本` : "";
 			wrp.prepend(veT`<div class="ve-flex-col" id="v${it.ver}">
 				<div class="ve-split-v-center">
 					<h${hLevel} class="ve-bold">v${isLast ? `<a href="${UtilsChangelog._RELEASE_URL}" rel="noopener noreferrer">` : ""}${it.ver}${isLast ? `</a>` : ""}${titlePart}</h${hLevel}>

@@ -25,9 +25,9 @@ export class RuleLoader {
 class _CorpusLoaderBase {
 	static _NOT_FOUND = {
 		type: "section",
-		name: "(Missing Content)",
+		name: "（内容缺失）",
 		entries: [
-			"The content you attempted to load could not be found. Is it homebrew, and not currently loaded?",
+			"找不到您尝试加载的内容。它是否为尚未加载的自制内容？",
 		],
 	};
 

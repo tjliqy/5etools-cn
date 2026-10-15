@@ -69,7 +69,7 @@ class _CreatureBuilder_SpellMetaInputRendererFrequency extends _CreatureBuilder_
 	_getPtChargesItem ({out}) {
 		if (this._meta.type !== "charges") return null;
 
-		const iptChargesItem = veT`<input class="ve-form-control form-control--minimal ve-input-xs ve-ml-2 ve-mr-2 ve-max-w-100p" placeholder="Item UID">`
+		const iptChargesItem = veT`<input class="ve-form-control form-control--minimal ve-input-xs ve-ml-2 ve-mr-2 ve-max-w-100p" placeholder="物品 UID">`
 			.vee.val(this._data ? this._meta.chargesItem : "")
 			.vee.onn("change", () => {
 				this._doUpdateState();
@@ -127,7 +127,7 @@ class _CreatureBuilder_SpellMetaInputRendererLevel extends _CreatureBuilder_Spel
 		<div class="ve-italic">${Parser.spLevelToFull(this._meta.level)}环法术</div>
 		<div class="ve-flex-v-center ve-muted small ve-ml-auto"><span>(</span>${iptSlots}<span class="ve-mr-2">法术位</span></div>
 		<div class="mkbru_mon__spell-header-divider ve-mr-2"></div>
-		<label class="ve-flex-v-center ve-muted small"><span class="ve-mr-1">Warlock?</span>${cbWarlock}<span>)</span></label>
+		<label class="ve-flex-v-center ve-muted small"><span class="ve-mr-1">邪术师？</span>${cbWarlock}<span>)</span></label>
 		</div>`;
 		out.getKeyPath = () => ["spells", `${this._meta.level}`, "spells"];
 		out.getAdditionalData = () => {
@@ -354,7 +354,7 @@ export class CreatureBuilder extends BuilderBase {
 			const crDefault = creature.cr.cr || creature.cr;
 
 			const scaleTo = await InputUiUtil.pGetUserScaleCr({
-				title: "At Challenge Rating...",
+				title: "挑战等级为……",
 				default: crDefault,
 			});
 
@@ -366,7 +366,7 @@ export class CreatureBuilder extends BuilderBase {
 		} else if (creature.summonedBySpellLevel && !opts.isForce) {
 			const fauxSel = Renderer.monster.getSelSummonSpellLevel(creature);
 			const values = [...fauxSel.options].map(it => it.value === "-1" ? "\u2014" : Number(it.value));
-			const scaleTo = await InputUiUtil.pGetUserEnum({values: values, title: "At Spell Level...", default: values[0], isResolveItem: true});
+			const scaleTo = await InputUiUtil.pGetUserEnum({values: values, title: "法术环阶为……", default: values[0], isResolveItem: true});
 
 			if (scaleTo != null) {
 				const scaled = await ScaleSpellSummonedCreature.scale(creature, scaleTo);
@@ -376,7 +376,7 @@ export class CreatureBuilder extends BuilderBase {
 		} else if ((creature.summonedByClass || creature.summonedScaleByPlayerLevel) && !opts.isForce) {
 			const fauxSel = Renderer.monster.getSelSummonClassLevel(creature);
 			const values = [...fauxSel.options].map(it => it.value === "-1" ? "\u2014" : Number(it.value));
-			const scaleTo = await InputUiUtil.pGetUserEnum({values: values, title: creature.summonedByClass ? `At Class Level...` : `At Player Level...`, default: values[0], isResolveItem: true});
+			const scaleTo = await InputUiUtil.pGetUserEnum({values: values, title: creature.summonedByClass ? `职业等级为……` : `玩家等级为……`, default: values[0], isResolveItem: true});
 
 			if (scaleTo != null) {
 				const scaled = await ScaleClassSummonedCreature.scale(creature, scaleTo);
@@ -483,25 +483,25 @@ export class CreatureBuilder extends BuilderBase {
 					if (SourceUtil.isClassicSource(item.source)) {
 						const ptAtk = `${itemTypeAbv === Parser.ITM_TYP_ABV__MELEE_WEAPON ? "m" : "r"}w${itemTypeAbv === Parser.ITM_TYP_ABV__MELEE_WEAPON && item.range ? `,rw` : ""}`;
 						const ptRange = item.range
-							? `${itemTypeAbv === Parser.ITM_TYP_ABV__MELEE_WEAPON ? `reach 5 ft. or ` : ""}range ${item.range} ft.`
-							: "reach 5 ft.";
+							? `${itemTypeAbv === Parser.ITM_TYP_ABV__MELEE_WEAPON ? "触及 5 尺或" : ""}射程 ${item.range} 尺`
+							: "触及 5 尺";
 
 						return {
 							name,
 							_nameAction: item.name,
 							entries: [
-								`{@atk ${ptAtk}} {@hit <$to_hit__${abil}$>} to hit, ${ptRange}, one target. {@h}<$damage_avg__(size_mult*${dmgAvg})+${abil}$> ({@damage <$size_mult__${mDice.groups.count}$>d${mDice.groups.face}<$damage_mod__${abil}$>}) ${Parser.dmgTypeToFull(item.dmgType)} damage.`,
+								`{@atk ${ptAtk}} {@hit <$to_hit__${abil}$>} 命中，${ptRange}，一个目标。{@h}<$damage_avg__(size_mult*${dmgAvg})+${abil}$>（{@damage <$size_mult__${mDice.groups.count}$>d${mDice.groups.face}<$damage_mod__${abil}$>}）${Parser.dmgTypeToFull(item.dmgType)}伤害。`,
 							],
 							entriesFinesse: isFinesse ? [
-								`{@atk ${ptAtk}} {@hit <$to_hit__dex$>} to hit, ${ptRange}, one target. {@h}<$damage_avg__(size_mult*${dmgAvg})+dex$> ({@damage <$size_mult__${mDice.groups.count}$>d${mDice.groups.face}<$damage_mod__dex$>}) ${Parser.dmgTypeToFull(item.dmgType)} damage.`,
+								`{@atk ${ptAtk}} {@hit <$to_hit__dex$>} 命中，${ptRange}，一个目标。{@h}<$damage_avg__(size_mult*${dmgAvg})+dex$>（{@damage <$size_mult__${mDice.groups.count}$>d${mDice.groups.face}<$damage_mod__dex$>}）${Parser.dmgTypeToFull(item.dmgType)}伤害。`,
 							] : null,
 						};
 					}
 
 					const ptAtk = `${itemTypeAbv === Parser.ITM_TYP_ABV__MELEE_WEAPON ? "m" : "r"}w${itemTypeAbv === Parser.ITM_TYP_ABV__MELEE_WEAPON && item.range ? `,rw` : ""}`;
 					const ptRange = item.range
-						? `${itemTypeAbv === Parser.ITM_TYP_ABV__MELEE_WEAPON ? `reach 5 ft. or ` : ""}range ${item.range} ft.`
-						: "reach 5 ft.";
+						? `${itemTypeAbv === Parser.ITM_TYP_ABV__MELEE_WEAPON ? "触及 5 尺或" : ""}射程 ${item.range} 尺`
+						: "触及 5 尺";
 
 					return {
 						name,
@@ -789,7 +789,7 @@ export class CreatureBuilder extends BuilderBase {
 			cb,
 			this._state,
 			{
-				title: "If specified, this will override the default number (3) of legendary actions available for the creature.",
+				title: "填写后将覆盖此生物默认可用的传奇动作次数（3 次）。",
 				placeholder: "如果空着则为3",
 			},
 			"legendaryActions",
@@ -799,7 +799,7 @@ export class CreatureBuilder extends BuilderBase {
 			cb,
 			this._state,
 			{
-				title: "If specified, this will override the default number (3) of legendary actions available for the creature when in its lair.",
+				title: "填写后将覆盖此生物在巢穴中默认可用的传奇动作次数（3 次）。",
 			},
 			"legendaryActionsLair",
 		).vee.appendTo(abilTab.wrpTab);
@@ -808,7 +808,7 @@ export class CreatureBuilder extends BuilderBase {
 			cb,
 			this._state,
 			{
-				title: "If selected, the legendary action intro text for this creature will be formatted as though the creature's name is a proper noun (e.g. 'Tiamat can take...' vs 'The dragon can take...').",
+				title: "勾选后，传奇动作引言会将生物名称视为专有名词（如“提亚马特可以……”）。",
 			},
 			"isNamedCreature",
 		).vee.appendTo(abilTab.wrpTab);
@@ -817,7 +817,7 @@ export class CreatureBuilder extends BuilderBase {
 			cb,
 			this._state,
 			{
-				title: "If specified, this custom legendary action intro text will override the default.",
+				title: "填写后将使用自定义传奇动作引言替代默认内容。",
 				placeholder: "如果空着则为通用介绍",
 			},
 			"legendaryHeader",
@@ -844,13 +844,13 @@ export class CreatureBuilder extends BuilderBase {
 			this._state,
 			{
 				shortName: "组别",
-				title: "The family this creature belongs to, e.g. 'Modrons' in the case of a Duodrone.",
+				title: "此生物所属的族群。例如双序魔属于 Modron 族群。",
 			},
 			"group",
 		).vee.appendTo(miscTab.wrpTab);
 		this.__getSoundClipInput(cb).vee.appendTo(miscTab.wrpTab);
 		BuilderUi.getStateIptEnum(
-			"Dragon Casting Color",
+			"龙类施法颜色",
 			cb,
 			this._state,
 			{
@@ -861,15 +861,15 @@ export class CreatureBuilder extends BuilderBase {
 			},
 			"dragonCastingColor",
 		).vee.appendTo(miscTab.wrpTab);
-		BuilderUi.getStateIptBoolean("NPC", cb, this._state, {title: "If selected, this creature will be filtered out from the Bestiary list by default."}, "isNpc").vee.appendTo(miscTab.wrpTab);
-		BuilderUi.getStateIptBoolean("常见", cb, this._state, {title: "If selected, this creature will be included when filtering for 'Familiar' in the Bestiary."}, "familiar").vee.appendTo(miscTab.wrpTab);
+		BuilderUi.getStateIptBoolean("NPC", cb, this._state, {title: "勾选后，怪物图鉴列表会默认筛除此生物。"}, "isNpc").vee.appendTo(miscTab.wrpTab);
+		BuilderUi.getStateIptBoolean("常见", cb, this._state, {title: "勾选后，筛选怪物图鉴中的“魔宠”时会包含此生物。"}, "familiar").vee.appendTo(miscTab.wrpTab);
 		BuilderUi.getStateIptStringArray(
 			"搜索别名",
 			cb,
 			this._state,
 			{
 				shortName: "别名",
-				title: "Alternate names for this creature, e.g. 'Illithid' as an alternative for 'Mind Flayer,' which can be searched in the Bestiary.",
+				title: "此生物的别名，例如夺心魔也称灵吸怪；可在怪物图鉴中使用别名搜索。",
 			},
 			"alias",
 		).vee.appendTo(miscTab.wrpTab);
@@ -921,7 +921,7 @@ export class CreatureBuilder extends BuilderBase {
 
 		const wrpBtnRemove = veT`<div class="ve-flex"></div>`;
 		const wrp = veT`<div class="ve-flex-v-center mkbru__wrp-rows--removable ve-mb-2">${selSize}${wrpBtnRemove}</div>`;
-		this.constructor.getBtnRemoveRow(setState, sizeRows, out, wrp, "Size", {isProtectLast: true}).vee.appendTo(wrpBtnRemove).vee.addClass("ve-ml-2");
+		this.constructor.getBtnRemoveRow(setState, sizeRows, out, wrp, "体型", {isProtectLast: true}).vee.appendTo(wrpBtnRemove).vee.addClass("ve-ml-2");
 
 		out.wrp = wrp;
 		sizeRows.push(out);
@@ -1042,7 +1042,7 @@ export class CreatureBuilder extends BuilderBase {
 		// endregion
 
 		// region NOTE CONTROLS
-		const iptNote = veT`<input class="ve-form-control ve-input-xs form-control--minimal" placeholder="Note">`
+		const iptNote = veT`<input class="ve-form-control ve-input-xs form-control--minimal" placeholder="备注">`
 			.vee.val(initial.note || "")
 			.vee.onn("change", () => {
 				setState();
@@ -1089,7 +1089,7 @@ export class CreatureBuilder extends BuilderBase {
 			return selType.vee.val();
 		};
 
-		const btnRemove = veT`<button class="ve-btn ve-btn-xs ve-btn-danger" title="Remove Row"><span class="glyphicon glyphicon-trash"></span></button>`
+		const btnRemove = veT`<button class="ve-btn ve-btn-xs ve-btn-danger" title="删除行"><span class="glyphicon glyphicon-trash"></span></button>`
 			.vee.onn("click", () => {
 				chooseTypeRows.splice(chooseTypeRows.indexOf(out), 1);
 				wrp.vee.empty().remove();
@@ -1111,23 +1111,23 @@ export class CreatureBuilder extends BuilderBase {
 	}
 
 	__getTypeInput__getTagRow (tag, tagRows, setState) {
-		const iptPrefix = veT`<input class="ve-form-control ve-input-xs form-control--minimal ve-mr-2" placeholder="Prefix">`
+		const iptPrefix = veT`<input class="ve-form-control ve-input-xs form-control--minimal ve-mr-2" placeholder="前缀">`
 			.vee.onn("change", () => {
 				iptTag.vee.removeClass("form-control--error");
 				if (iptTag.vee.val().trim().length || !iptPrefix.vee.val().trim().length) setState();
 				else iptTag.vee.addClass("form-control--error");
 			});
 		if (tag && tag.prefix) iptPrefix.vee.val(tag.prefix);
-		const iptTag = veT`<input class="ve-form-control ve-input-xs form-control--minimal ve-mr-2" placeholder="Tag (lowercase)">`
+		const iptTag = veT`<input class="ve-form-control ve-input-xs form-control--minimal ve-mr-2" placeholder="标签（小写）">`
 			.vee.onn("change", () => {
 				iptTag.vee.removeClass("form-control--error");
 				setState();
 			});
 		if (tag) iptTag.vee.val(tag.tag || tag);
-		const btnAddGeneric = veT`<button class="ve-btn ve-btn-xs ve-btn-default ve-mr-2">Add Tag...</button>`
+		const btnAddGeneric = veT`<button class="ve-btn ve-btn-xs ve-btn-default ve-mr-2">添加标签...</button>`
 			.vee.onn("click", async () => {
 				const tag = await InputUiUtil.pGetUserString({
-					title: "Enter a Tag",
+					title: "输入标签",
 					autocomplete: this._bestiaryTypeTags,
 				});
 
@@ -1136,7 +1136,7 @@ export class CreatureBuilder extends BuilderBase {
 					setState();
 				}
 			});
-		const btnRemove = veT`<button class="ve-btn ve-btn-xs ve-btn-danger" title="Remove Row"><span class="glyphicon glyphicon-trash"></span></button>`
+		const btnRemove = veT`<button class="ve-btn ve-btn-xs ve-btn-danger" title="删除行"><span class="glyphicon glyphicon-trash"></span></button>`
 			.vee.onn("click", () => {
 				tagRows.splice(tagRows.indexOf(out), 1);
 				wrp.vee.empty().remove();
@@ -1201,7 +1201,7 @@ export class CreatureBuilder extends BuilderBase {
 		const cbFullName = veT`<input type="checkbox">`
 			.vee.onn("change", () => setState(1))
 			.vee.prop("checked", this._state.shortName === true);
-		const stageMatchesName = veT`<label class="ve-flex-v-center"><div class="ve-mr-2">Enabled</div>${cbFullName}</label>`
+		const stageMatchesName = veT`<label class="ve-flex-v-center"><div class="ve-mr-2">启用</div>${cbFullName}</label>`
 			.vee.toggle(initialMode === "1")
 			.vee.appendTo(rowInner);
 
@@ -1341,7 +1341,7 @@ export class CreatureBuilder extends BuilderBase {
 		const stageSpecial = veT`<div>${iptSpecial}</div>`.vee.toggle(initialMode === "2");
 		initialMode === "2" && alignment && iptSpecial.vee.val(alignment.special);
 
-		const btnRemove = veT`<button class="ve-btn ve-btn-xs ve-btn-danger mkbru__btn-rm-row ve-mb-2" title="Remove Alignment"><span class="glyphicon glyphicon-trash"></span></button>`
+		const btnRemove = veT`<button class="ve-btn ve-btn-xs ve-btn-danger mkbru__btn-rm-row ve-mb-2" title="删除阵营"><span class="glyphicon glyphicon-trash"></span></button>`
 			.vee.onn("click", () => {
 				alignmentRows.splice(alignmentRows.indexOf(out), 1);
 				wrp.vee.empty().remove();
@@ -1489,7 +1489,7 @@ export class CreatureBuilder extends BuilderBase {
 		</div>`.vee.toggle(initialMode === "1");
 
 		// REMOVE CONTROLS
-		const btnRemove = veT`<button class="ve-btn ve-btn-xs ve-btn-danger mkbru__btn-rm-row ve-mb-2" title="Remove AC Source"><span class="glyphicon glyphicon-trash"></span></button>`
+		const btnRemove = veT`<button class="ve-btn ve-btn-xs ve-btn-danger mkbru__btn-rm-row ve-mb-2" title="删除护甲等级来源"><span class="glyphicon glyphicon-trash"></span></button>`
 			.vee.onn("click", () => {
 				acRows.splice(acRows.indexOf(out), 1);
 				wrp.vee.empty().remove();
@@ -1547,7 +1547,7 @@ export class CreatureBuilder extends BuilderBase {
 				searchWidget.doFocus();
 			});
 
-		const btnRemove = veT`<button class="ve-btn ve-btn-xs ve-btn-danger mkbru__btn-rm-row--nested-1 ve-ml-2" title="Remove AC Feature/Item"><span class="glyphicon glyphicon-trash"></span></button>`
+		const btnRemove = veT`<button class="ve-btn ve-btn-xs ve-btn-danger mkbru__btn-rm-row--nested-1 ve-ml-2" title="删除护甲等级特性／物品"><span class="glyphicon glyphicon-trash"></span></button>`
 			.vee.onn("click", () => {
 				fromRows.splice(fromRows.indexOf(outFrom), 1);
 				wrpFrom.vee.empty().remove();
@@ -1685,7 +1685,7 @@ export class CreatureBuilder extends BuilderBase {
 				doUpdateState();
 			});
 
-		const btnAutoSimpleAverage = veT`<button class="ve-btn ve-btn-xs ve-btn-default ${this._meta.autoCalc.hpAverageSimple ? "ve-active" : ""}" title="Auto-calculate"><span class="glyphicon glyphicon-refresh"></span></button>`
+		const btnAutoSimpleAverage = veT`<button class="ve-btn ve-btn-xs ve-btn-default ${this._meta.autoCalc.hpAverageSimple ? "ve-active" : ""}" title="自动计算"><span class="glyphicon glyphicon-refresh"></span></button>`
 			.vee.onn("click", () => {
 				if (this._meta.autoCalc.hpAverageSimple) {
 					this._meta.autoCalc.hpAverageSimple = false;
@@ -1738,7 +1738,7 @@ export class CreatureBuilder extends BuilderBase {
 				doUpdateState();
 			});
 
-		const btnAutoComplexAverage = veT`<button class="ve-btn ve-btn-xs ve-btn-default ${this._meta.autoCalc.hpAverageComplex ? "ve-active" : ""}" title="Auto-calculate from Formula"><span class="glyphicon glyphicon-refresh"></span></button>`
+		const btnAutoComplexAverage = veT`<button class="ve-btn ve-btn-xs ve-btn-default ${this._meta.autoCalc.hpAverageComplex ? "ve-active" : ""}" title="根据公式自动计算"><span class="glyphicon glyphicon-refresh"></span></button>`
 			.vee.onn("click", () => {
 				if (this._meta.autoCalc.hpAverageComplex) {
 					this._meta.autoCalc.hpAverageComplex = false;
@@ -1892,7 +1892,7 @@ export class CreatureBuilder extends BuilderBase {
 				cb();
 			};
 
-			const btnProf = veT`<button class="ve-btn ve-btn-xs ve-btn-default" title="Is Proficient">熟练</button>`
+			const btnProf = veT`<button class="ve-btn ve-btn-xs ve-btn-default" title="拥有熟练项">熟练</button>`
 				.vee.onn("click", () => {
 					if (this._meta.profSave[prop]) {
 						delete this._meta.profSave[prop];
@@ -1978,11 +1978,11 @@ export class CreatureBuilder extends BuilderBase {
 				}
 			};
 
-			const btnProf = veT`<button class="ve-btn ve-btn-xs ve-btn-default" title="Is Proficient">熟练</button>`
+			const btnProf = veT`<button class="ve-btn ve-btn-xs ve-btn-default" title="拥有熟练项">熟练</button>`
 				.vee.onn("click", () => _handleButtonPress());
 			if (this._meta.profSkill[prop] === 1) btnProf.vee.addClass("ve-active");
 
-			const btnExpert = veT`<button class="ve-btn ve-btn-xs ve-btn-default ve-ml-2" title="Has Expertise">专精</button>`
+			const btnExpert = veT`<button class="ve-btn ve-btn-xs ve-btn-default ve-ml-2" title="拥有专精">专精</button>`
 				.vee.onn("click", () => _handleButtonPress(true));
 			if (this._meta.profSkill[prop] === 2) btnExpert.vee.addClass("ve-active");
 
@@ -1997,7 +1997,7 @@ export class CreatureBuilder extends BuilderBase {
 
 			return veT`<div class="ve-flex-v-center ve-mb-2">
 			<span class="ve-mr-2 mkbru__sub-name--33">${name}</span>
-			<div class="ve-muted mkbru_mon__skill-attrib-label ve-mr-2 ve-help-subtle" title="This skill is affected by the creature's ${Parser.attAbvToFull(abilProp)} score">(${abilProp.toUpperCase()})</div>
+			<div class="ve-muted mkbru_mon__skill-attrib-label ve-mr-2 ve-help-subtle" title="此技能受生物的${Parser.attAbvToFull(abilProp)}属性值影响">(${abilProp.toUpperCase()})</div>
 			${iptVal}${btnProf}${btnExpert}
 			</div>`;
 		};
@@ -2053,9 +2053,9 @@ export class CreatureBuilder extends BuilderBase {
 			{
 				values: ["implicit", "basic", "custom"],
 				fnDisplay: it => ({
-					implicit: "Implicit",
-					basic: "Basic Initiative",
-					custom: "Custom Initiative",
+					implicit: "默认",
+					basic: "基础先攻",
+					custom: "自定义先攻",
 				})[it],
 			},
 		);
@@ -2065,8 +2065,8 @@ export class CreatureBuilder extends BuilderBase {
 			{
 				values: [1, 2],
 				isAllowNull: true,
-				displayNullAs: "None",
-				fnDisplay: it => it === 1 ? "Proficient" : "Expertise",
+				displayNullAs: "无",
+				fnDisplay: it => it === 1 ? "熟练" : "专精",
 			},
 		);
 
@@ -2076,8 +2076,8 @@ export class CreatureBuilder extends BuilderBase {
 			{
 				values: ["adv", "dis"],
 				isAllowNull: true,
-				displayNullAs: "None",
-				fnDisplay: it => it === "adv" ? "Advantage" : "Disadvantage",
+				displayNullAs: "无",
+				fnDisplay: it => it === "adv" ? "优势" : "劣势",
 			},
 		);
 
@@ -2085,15 +2085,15 @@ export class CreatureBuilder extends BuilderBase {
 		const selAdvantageModeCustom = getSelAdvantageMode();
 
 		const stgBasic = veT`<div class="ve-flex-col ve-mt-2">
-			<div class="ve-flex-v-center ve-mb-2"><span class="ve-mr-2 mkbru__sub-name--33">Proficiency</span>${selProficiency}</div>
-			<div class="ve-flex-v-center"><span class="ve-mr-2 mkbru__sub-name--33">Advantage Mode</span>${selAdvantageModeBasic}</div>
+			<div class="ve-flex-v-center ve-mb-2"><span class="ve-mr-2 mkbru__sub-name--33">熟练</span>${selProficiency}</div>
+			<div class="ve-flex-v-center"><span class="ve-mr-2 mkbru__sub-name--33">优势模式</span>${selAdvantageModeBasic}</div>
 		</div>`
 			.vee.toggle(comp._state.mode === "basic");
 
 		const iptInitiative = ComponentUiUtil.getIptInt(comp, "initiative", 0, {isAllowNull: true});
 		const stgCustom = veT`<div class="ve-flex-col ve-mt-2">
-			<div class="ve-flex-v-center ve-mb-2"><span class="ve-mr-2 mkbru__sub-name--33">Initiative</span>${iptInitiative}</div>
-			<div class="ve-flex-v-center"><span class="ve-mr-2 mkbru__sub-name--33">Advantage Mode</span>${selAdvantageModeCustom}</div>
+			<div class="ve-flex-v-center ve-mb-2"><span class="ve-mr-2 mkbru__sub-name--33">先攻</span>${iptInitiative}</div>
+			<div class="ve-flex-v-center"><span class="ve-mr-2 mkbru__sub-name--33">优势模式</span>${selAdvantageModeCustom}</div>
 		</div>`
 			.vee.toggle(comp._state.mode === "custom");
 
@@ -2301,7 +2301,7 @@ export class CreatureBuilder extends BuilderBase {
 			.vee.onn("change", () => doUpdateState());
 		const iptNotePost = veT`<input class="ve-form-control ve-input-xs form-control--minimal ve-mr-2" placeholder="后缀">`
 			.vee.onn("change", () => doUpdateState());
-		const btnRemove = veT`<button class="ve-btn ve-btn-xs ve-btn-danger mkbru__btn-rm-row" title="Remove ${shortName} Group"><span class="glyphicon glyphicon-trash"></span></button>`
+		const btnRemove = veT`<button class="ve-btn ve-btn-xs ve-btn-danger mkbru__btn-rm-row" title="删除${shortName}组"><span class="glyphicon glyphicon-trash"></span></button>`
 			.vee.onn("click", () => {
 				groups.splice(groups.indexOf(out), 1);
 				ele.remove();
@@ -2332,7 +2332,7 @@ export class CreatureBuilder extends BuilderBase {
 	}
 
 	static __getDefensesInput__getNodeItem (shortName, children, doUpdateState, type, value) {
-		const btnRemove = veT`<button class="ve-btn ve-btn-xxs ve-btn-danger" title="Remove ${shortName} Entry"><span class="glyphicon glyphicon-trash"></span></button>`
+		const btnRemove = veT`<button class="ve-btn ve-btn-xxs ve-btn-danger" title="删除${shortName}条目"><span class="glyphicon glyphicon-trash"></span></button>`
 			.vee.onn("click", () => {
 				children.splice(children.indexOf(out), 1);
 				ele.remove();
@@ -2594,7 +2594,7 @@ export class CreatureBuilder extends BuilderBase {
 				cb();
 			});
 
-		const btnAuto = veT`<button class="ve-btn ve-btn-xs ve-btn-default ${this._meta.autoCalc.proficiency ? "ve-active" : ""}" title="Auto-calculate from Challenge Rating (DMG'14 p. 274)"><span class="glyphicon glyphicon-refresh"></span></button>`
+		const btnAuto = veT`<button class="ve-btn ve-btn-xs ve-btn-default ${this._meta.autoCalc.proficiency ? "ve-active" : ""}" title="根据挑战等级自动计算（《地下城主指南》2014 版第 274 页）"><span class="glyphicon glyphicon-refresh"></span></button>`
 			.vee.onn("click", () => {
 				if (this._meta.autoCalc.proficiency) {
 					this._meta.autoCalc.proficiency = false;
@@ -2809,7 +2809,8 @@ export class CreatureBuilder extends BuilderBase {
 			.vee.onn("change", () => doUpdateState());
 		if (trait && trait.footerEntries) iptFooter.vee.val(UiUtil.getEntriesAsText(trait.footerEntries));
 
-		const selDisplayAs = veT`<select class="ve-form-control ve-input-xs ve-mr-2">${Renderer.monster.CHILD_PROPS__SPELLCASTING_DISPLAY_AS.map(prop => `<option value="${prop}">${prop.uppercaseFirst()}</option>`).join("")}</select>`
+		const displayAsLabels = {trait: "特质", action: "动作", bonus: "附赠动作", reaction: "反应", legendary: "传奇动作", mythic: "神话动作"};
+		const selDisplayAs = veT`<select class="ve-form-control ve-input-xs ve-mr-2">${Renderer.monster.CHILD_PROPS__SPELLCASTING_DISPLAY_AS.map(prop => `<option value="${prop}">${displayAsLabels[prop] || prop}</option>`).join("")}</select>`
 			.vee.onn("change", () => doUpdateState());
 		if (trait) selDisplayAs.vee.val(trait.displayAs || "trait");
 
@@ -2829,7 +2830,7 @@ export class CreatureBuilder extends BuilderBase {
 			_getDefaultState () { return { hidden: [] }; }
 		}();
 		const stgHidden = veT`<div class="ve-flex-col ve-mb-2">
-			<div class="ve-flex-v-center ve-mb-2"><span class="ve-mr-2 mkbru__sub-name--33">Hidden</span>${compHidden.renderInputHidden()}</div>
+			<div class="ve-flex-v-center ve-mb-2"><span class="ve-mr-2 mkbru__sub-name--33">隐藏</span>${compHidden.renderInputHidden()}</div>
 		</div>`
 			.vee.toggle(!!trait?.hidden?.length);
 		if (trait?.hidden?.length) {
@@ -2837,7 +2838,7 @@ export class CreatureBuilder extends BuilderBase {
 		}
 		compHidden._addHookAll("state", () => doUpdateState());
 
-		const btnToggleHide = veT`<button class="ve-btn ve-btn-xs ve-btn-default" title="Hide spells of a given type. This is often used when spells are presented as part of the header text.">Hide...</button>`
+		const btnToggleHide = veT`<button class="ve-btn ve-btn-xs ve-btn-default" title="隐藏指定类型的法术。法术显示在标题文字中时通常会用到此功能。">隐藏...</button>`
 			.vee.onn("click", () => {
 				btnToggleHide.vee.toggleClass("ve-active");
 				stgHidden.vee.toggle(btnToggleHide.vee.hasClass("ve-active"));
@@ -2849,13 +2850,13 @@ export class CreatureBuilder extends BuilderBase {
 		const wrpSubRows = veT`<div class="ve-flex-col"></div>`;
 		const wrpSubRowsOuter = veT`<div class="ve-flex-col">${iptHeader}${wrpSubRows}${iptFooter}</div>`;
 
-		const btnRemove = veT`<button class="ve-btn ve-btn-xs ve-btn-danger" title="Remove Trait"><span class="glyphicon glyphicon-trash"></span></button>`
+		const btnRemove = veT`<button class="ve-btn ve-btn-xs ve-btn-danger" title="删除特质"><span class="glyphicon glyphicon-trash"></span></button>`
 			.vee.onn("click", async () => {
 				const currState = getState();
 				if (currState) {
 					delete currState.name; // ignore name key
 					if ((currState.headerEntries || currState.footerEntries || Object.keys(currState).some(it => it !== "headerEntries" && it !== "footerEntries"))) {
-						if (!await InputUiUtil.pGetUserBoolean({title: "Remove Trait", htmlDescription: "你确定吗？", textYes: "是的", textNo: "取消"})) return;
+						if (!await InputUiUtil.pGetUserBoolean({title: "删除特质", htmlDescription: "你确定吗？", textYes: "是的", textNo: "取消"})) return;
 					}
 				}
 
@@ -2866,7 +2867,7 @@ export class CreatureBuilder extends BuilderBase {
 
 		const ele = veT`<div class="ve-flex-col mkbru__wrp-rows">
 		${wrpControls}
-		<div class="ve-flex-v-center ve-mb-2"><span class="ve-mr-2 mkbru__sub-name--33">Display As</span>${selDisplayAs}${btnToggleHide}</div>
+		<div class="ve-flex-v-center ve-mb-2"><span class="ve-mr-2 mkbru__sub-name--33">显示为</span>${selDisplayAs}${btnToggleHide}</div>
 		${stgHidden}
 		${wrpSubRowsOuter}
 		<div class="ve-text-right ve-mb-2">${btnRemove}</div>
@@ -2945,7 +2946,7 @@ export class CreatureBuilder extends BuilderBase {
 				}
 			});
 
-		const btnRemove = veT`<button class="ve-btn ve-btn-xxs ve-btn-danger" title="Remove Spell Group"><span class="glyphicon glyphicon-trash"></span></button>`
+		const btnRemove = veT`<button class="ve-btn ve-btn-xxs ve-btn-danger" title="删除法术组"><span class="glyphicon glyphicon-trash"></span></button>`
 			.vee.onn("click", () => {
 				spellRows.splice(spellRows.indexOf(out), 1);
 				ele.vee.empty().remove();
@@ -2994,7 +2995,7 @@ export class CreatureBuilder extends BuilderBase {
 			})
 			.vee.hide();
 
-		const btnToggleEdit = veT`<button class="ve-btn ve-btn-xxs ve-btn-default ve-mr-2" title="Toggle Edit Mode"><span class="glyphicon glyphicon-pencil"></span></button>`
+		const btnToggleEdit = veT`<button class="ve-btn ve-btn-xxs ve-btn-default ve-mr-2" title="切换编辑模式"><span class="glyphicon glyphicon-pencil"></span></button>`
 			.vee.onn("click", () => {
 				btnToggleEdit.vee.toggleClass("ve-active");
 				iptSpell.vee.toggle(btnToggleEdit.vee.hasClass("ve-active"));
@@ -3003,7 +3004,7 @@ export class CreatureBuilder extends BuilderBase {
 
 		const wrpRender = veT`<div class="ve-mr-2">${getHtml()}</div>`;
 
-		const btnRemove = veT`<button class="ve-btn ve-btn-xxs ve-btn-danger" title="Remove Spell"><span class="glyphicon glyphicon-trash"></span></button>`
+		const btnRemove = veT`<button class="ve-btn ve-btn-xxs ve-btn-danger" title="删除法术"><span class="glyphicon glyphicon-trash"></span></button>`
 			.vee.onn("click", () => {
 				rowItems.splice(rowItems.indexOf(out), 1);
 				ele.vee.empty().remove();
@@ -3052,7 +3053,7 @@ export class CreatureBuilder extends BuilderBase {
 								},
 							);
 							const {eleModalInner, doClose} = UiUtil.getShowModal({
-								title: "Select a Trait",
+								title: "选择特质",
 								cbClose: (isDataEntered) => {
 									searchWidget.getWrpSearch().vee.detach();
 									if (!isDataEntered) return resolve(null);
@@ -3107,8 +3108,8 @@ export class CreatureBuilder extends BuilderBase {
 									.vee.onn("change", () => stageBonusDamage.vee.toggle(cbBonusDamage.vee.prop("checked")));
 
 								const iptMeleeRange = veT`<input class="ve-form-control form-control--minimal ve-input-xs" value="5">`;
-								const iptMeleeDamDiceCount = veT`<input class="ve-form-control form-control--minimal ve-input-xs ve-mr-2 mkbru_mon__ipt-attack-dice" placeholder="Number of Dice" min="1" value="1">`;
-								const iptMeleeDamDiceNum = veT`<input class="ve-form-control form-control--minimal ve-input-xs ve-mr-2 mkbru_mon__ipt-attack-dice" placeholder="Dice Type" value="6">`;
+								const iptMeleeDamDiceCount = veT`<input class="ve-form-control form-control--minimal ve-input-xs ve-mr-2 mkbru_mon__ipt-attack-dice" placeholder="骰子数量" min="1" value="1">`;
+								const iptMeleeDamDiceNum = veT`<input class="ve-form-control form-control--minimal ve-input-xs ve-mr-2 mkbru_mon__ipt-attack-dice" placeholder="骰子类型" value="6">`;
 								const iptMeleeDamBonus = veT`<input class="ve-form-control form-control--minimal ve-input-xs ve-mr-2" placeholder="+X (额外伤害)">`;
 								const iptMeleeDamType = veT`<input class="ve-form-control form-control--minimal ve-input-xs" placeholder="近战伤害类型">`
 									.vee.disableSpellcheck()
@@ -3121,8 +3122,8 @@ export class CreatureBuilder extends BuilderBase {
 
 								const iptRangedShort = veT`<input class="ve-form-control form-control--minimal ve-input-xs ve-mr-2">`;
 								const iptRangedLong = veT`<input class="ve-form-control form-control--minimal ve-input-xs">`;
-								const iptRangedDamDiceCount = veT`<input class="ve-form-control form-control--minimal ve-input-xs ve-mr-2 mkbru_mon__ipt-attack-dice" placeholder="Number of Dice" min="1" value="1">`;
-								const iptRangedDamDiceNum = veT`<input class="ve-form-control form-control--minimal ve-input-xs ve-mr-2 mkbru_mon__ipt-attack-dice" placeholder="Dice Type" value="6">`;
+								const iptRangedDamDiceCount = veT`<input class="ve-form-control form-control--minimal ve-input-xs ve-mr-2 mkbru_mon__ipt-attack-dice" placeholder="骰子数量" min="1" value="1">`;
+								const iptRangedDamDiceNum = veT`<input class="ve-form-control form-control--minimal ve-input-xs ve-mr-2 mkbru_mon__ipt-attack-dice" placeholder="骰子类型" value="6">`;
 								const iptRangedDamBonus = veT`<input class="ve-form-control form-control--minimal ve-input-xs ve-mr-2" placeholder="+X (额外伤害)">`;
 								const iptRangedDamType = veT`<input class="ve-form-control form-control--minimal ve-input-xs" placeholder="远程伤害类型">`
 									.vee.typeahead(Parser.DMG_TYPES);
@@ -3135,8 +3136,8 @@ export class CreatureBuilder extends BuilderBase {
 								<div class="ve-flex-v-center ve-mb-2">${iptRangedDamDiceCount}<span class="ve-mr-2">d</span>${iptRangedDamDiceNum}${iptRangedDamBonus}${iptRangedDamType}</div>
 								</div>`.vee.hide();
 
-								const iptVersatileDamDiceCount = veT`<input class="ve-form-control form-control--minimal ve-input-xs ve-mr-2 mkbru_mon__ipt-attack-dice" placeholder="Number of Dice" min="1" value="1">`;
-								const iptVersatileDamDiceNum = veT`<input class="ve-form-control form-control--minimal ve-input-xs ve-mr-2 mkbru_mon__ipt-attack-dice" placeholder="Dice Type" value="8">`;
+								const iptVersatileDamDiceCount = veT`<input class="ve-form-control form-control--minimal ve-input-xs ve-mr-2 mkbru_mon__ipt-attack-dice" placeholder="骰子数量" min="1" value="1">`;
+								const iptVersatileDamDiceNum = veT`<input class="ve-form-control form-control--minimal ve-input-xs ve-mr-2 mkbru_mon__ipt-attack-dice" placeholder="骰子类型" value="8">`;
 								const iptVersatileDamBonus = veT`<input class="ve-form-control form-control--minimal ve-input-xs ve-mr-2" placeholder="+X (额外伤害)">`;
 								const iptVersatileDamType = veT`<input class="ve-form-control form-control--minimal ve-input-xs" placeholder="两用伤害类型">`
 									.vee.typeahead(Parser.DMG_TYPES);
@@ -3145,8 +3146,8 @@ export class CreatureBuilder extends BuilderBase {
 								<div class="ve-flex-v-center ve-mb-2">${iptVersatileDamDiceCount}<span class="ve-mr-2">d</span>${iptVersatileDamDiceNum}${iptVersatileDamBonus}${iptVersatileDamType}</div>
 								</div>`.vee.hide();
 
-								const iptBonusDamDiceCount = veT`<input class="ve-form-control form-control--minimal ve-input-xs ve-mr-2 mkbru_mon__ipt-attack-dice" placeholder="Number of Dice" min="1" value="1">`;
-								const iptBonusDamDiceNum = veT`<input class="ve-form-control form-control--minimal ve-input-xs ve-mr-2 mkbru_mon__ipt-attack-dice" placeholder="Dice Type" value="6">`;
+								const iptBonusDamDiceCount = veT`<input class="ve-form-control form-control--minimal ve-input-xs ve-mr-2 mkbru_mon__ipt-attack-dice" placeholder="骰子数量" min="1" value="1">`;
+								const iptBonusDamDiceNum = veT`<input class="ve-form-control form-control--minimal ve-input-xs ve-mr-2 mkbru_mon__ipt-attack-dice" placeholder="骰子类型" value="6">`;
 								const iptBonusDamBonus = veT`<input class="ve-form-control form-control--minimal ve-input-xs ve-mr-2" placeholder="+X (额外伤害)">`;
 								const iptBonusDamType = veT`<input class="ve-form-control form-control--minimal ve-input-xs" placeholder="额外伤害类型">`
 									.vee.typeahead(Parser.DMG_TYPES);
@@ -3164,7 +3165,7 @@ export class CreatureBuilder extends BuilderBase {
 
 								const btnReset = veT`<button class="ve-btn ve-btn-sm ve-btn-danger">重置</button>`
 									.vee.onn("click", async () => {
-										if (!await InputUiUtil.pGetUserBoolean({title: "Reset", htmlDescription: "你确定吗？", textYes: "是的", textNo: "取消"})) return;
+										if (!await InputUiUtil.pGetUserBoolean({title: "重置", htmlDescription: "你确定吗？", textYes: "是的", textNo: "取消"})) return;
 
 										setState({
 											iptName: "",
@@ -3238,8 +3239,8 @@ export class CreatureBuilder extends BuilderBase {
 											: ` ${val.toTitleCase()}`;
 									};
 									const ptDamage = [
-										cbMelee.vee.prop("checked") ? `${getDamageDicePt(iptMeleeDamDiceCount, iptMeleeDamDiceNum, iptMeleeDamBonus)}${getDamageTypePt(iptMeleeDamType)}伤害${cbRanged.vee.prop("checked") ? ` in melee` : ""}` : null,
-										cbRanged.vee.prop("checked") ? `${getDamageDicePt(iptRangedDamDiceCount, iptRangedDamDiceNum, iptRangedDamBonus)}${getDamageTypePt(iptRangedDamType)}伤害${cbMelee.vee.prop("checked") ? ` at range` : ""}` : null,
+										cbMelee.vee.prop("checked") ? `${getDamageDicePt(iptMeleeDamDiceCount, iptMeleeDamDiceNum, iptMeleeDamBonus)}${getDamageTypePt(iptMeleeDamType)}伤害${cbRanged.vee.prop("checked") ? "（近战）" : ""}` : null,
+										cbRanged.vee.prop("checked") ? `${getDamageDicePt(iptRangedDamDiceCount, iptRangedDamDiceNum, iptRangedDamBonus)}${getDamageTypePt(iptRangedDamType)}伤害${cbMelee.vee.prop("checked") ? "（远程）" : ""}` : null,
 										cbVersatile.vee.prop("checked") ? `如果使用双手攻击则为${getDamageDicePt(iptVersatileDamDiceCount, iptVersatileDamDiceNum, iptVersatileDamBonus)}${getDamageTypePt(iptVersatileDamType)}伤害` : null,
 									].filter(Boolean).join(", 或 ");
 									const ptDamageFull = cbBonusDamage.vee.prop("checked") ? `${ptDamage}, 加上 ${getDamageDicePt(iptBonusDamDiceCount, iptBonusDamDiceNum, iptBonusDamBonus, true)}${getDamageTypePt(iptBonusDamType)}伤害` : ptDamage;
@@ -3354,7 +3355,7 @@ export class CreatureBuilder extends BuilderBase {
 									},
 								);
 								const {eleModalInner, doClose} = UiUtil.getShowModal({
-									title: "Select an Action",
+									title: "选择动作",
 									cbClose: (isDataEntered) => {
 										searchWidget.getWrpSearch().vee.detach();
 										if (!isDataEntered) return resolve(null);
@@ -3499,11 +3500,11 @@ export class CreatureBuilder extends BuilderBase {
 
 		if (entry && entry.entries) iptEntries.vee.val(UiUtil.getEntriesAsText(entry.entries));
 
-		const btnRemove = veT`<button class="ve-btn ve-btn-xs ve-btn-danger ve-mb-2" title="Remove ${options.shortName}"><span class="glyphicon glyphicon-trash"></span></button>`
+		const btnRemove = veT`<button class="ve-btn ve-btn-xs ve-btn-danger ve-mb-2" title="删除${options.shortName}"><span class="glyphicon glyphicon-trash"></span></button>`
 			.vee.onn("click", async () => {
 				const currState = getState();
 				if (currState && currState.entries) {
-					if (!await InputUiUtil.pGetUserBoolean({title: `Remove ${options.shortName}`, htmlDescription: "你确定吗？", textYes: "是的", textNo: "取消"})) return;
+					if (!await InputUiUtil.pGetUserBoolean({title: `删除${options.shortName}`, htmlDescription: "你确定吗？", textYes: "是的", textNo: "取消"})) return;
 				}
 				entryRows.splice(entryRows.indexOf(out), 1);
 				ele.vee.empty().remove();
@@ -3522,7 +3523,7 @@ export class CreatureBuilder extends BuilderBase {
 				return out;
 			};
 
-			const selVariantSource = veT`<select class="ve-form-control ve-input-xs"><option value="">(Same as creature)</option></select>`
+			const selVariantSource = veT`<select class="ve-form-control ve-input-xs"><option value="">（与生物相同）</option></select>`
 				.vee.onn("change", () => doUpdateState());
 			this._ui.allSources.forEach(srcJson => selVariantSource.vee.appends(`<option value="${srcJson.escapeQuotes()}">${Parser.sourceJsonToFull(srcJson).escapeQuotes()}</option>`));
 
@@ -3658,16 +3659,16 @@ export class CreatureBuilder extends BuilderBase {
 			return compRow._state.uid;
 		};
 
-		const iptUid = ComponentUiUtil.getIptStr(compRow, "uid", {placeholder: "Item UID"});
+		const iptUid = ComponentUiUtil.getIptStr(compRow, "uid", {placeholder: "物品 UID"});
 		const iptQuantity = ComponentUiUtil.getIptNumber(compRow, "quantity", 1);
-		const iptDisplayName = ComponentUiUtil.getIptStr(compRow, "displayName", {placeholder: "Display Name"});
+		const iptDisplayName = ComponentUiUtil.getIptStr(compRow, "displayName", {placeholder: "显示名称"});
 
 		compRow._addHookAll("state", () => {
 			doUpdateState();
 		});
 
 		// REMOVE CONTROLS
-		const btnRemove = veT`<button class="ve-btn ve-btn-xs ve-btn-danger mkbru__btn-rm-row ve-mb-2" title="Remove AC Source"><span class="glyphicon glyphicon-trash"></span></button>`
+		const btnRemove = veT`<button class="ve-btn ve-btn-xs ve-btn-danger mkbru__btn-rm-row ve-mb-2" title="删除护甲等级来源"><span class="glyphicon glyphicon-trash"></span></button>`
 			.vee.onn("click", () => {
 				rowMetas.splice(rowMetas.indexOf(out), 1);
 				wrp.vee.empty().remove();
@@ -3759,7 +3760,7 @@ export class CreatureBuilder extends BuilderBase {
 		});
 
 		// REMOVE CONTROLS
-		const btnRemove = veT`<button class="ve-btn ve-btn-xs ve-btn-danger mkbru__btn-rm-row ve-mb-2" title="Remove AC Source"><span class="glyphicon glyphicon-trash"></span></button>`
+		const btnRemove = veT`<button class="ve-btn ve-btn-xs ve-btn-danger mkbru__btn-rm-row ve-mb-2" title="删除护甲等级来源"><span class="glyphicon glyphicon-trash"></span></button>`
 			.vee.onn("click", () => {
 				rowMetas.splice(rowMetas.indexOf(out), 1);
 				wrp.vee.empty().remove();
@@ -3816,9 +3817,9 @@ export class CreatureBuilder extends BuilderBase {
 			cb();
 		};
 
-		const btnPreview = veT`<button class="ve-btn ve-btn-xs ve-btn-default" title="Preview Token"><span class="glyphicon glyphicon-fullscreen"></span></button>`
+		const btnPreview = veT`<button class="ve-btn ve-btn-xs ve-btn-default" title="预览标记"><span class="glyphicon glyphicon-fullscreen"></span></button>`
 			.vee.onn("click", (evt) => {
-				if (!Renderer.monster.hasToken(this._state)) return JqueryUtil.doToast({content: "Please set a token first!", type: "warning"});
+				if (!Renderer.monster.hasToken(this._state)) return JqueryUtil.doToast({content: "请先设置标记！", type: "warning"});
 
 				Renderer.hover.getShowWindow(
 					Renderer.hover.getHoverContent_generic(
@@ -3834,7 +3835,7 @@ export class CreatureBuilder extends BuilderBase {
 					Renderer.hover.getWindowPositionFromEvent(evt),
 					{
 						isPermanent: true,
-						title: "Token Preview",
+						title: "标记预览",
 						isBookContent: true,
 					},
 				);
@@ -3904,7 +3905,7 @@ export class CreatureBuilder extends BuilderBase {
 			.vee.val(this._state.tokenHref?.path || "");
 
 		const stgInternalUrl = veT`<div class="ve-flex-col ve-mb-2">
-			<div class="ve-flex-v-center"><span class="ve-mr-2 mkbru__sub-name--25">Path</span>${iptInternalPath}</div>
+			<div class="ve-flex-v-center"><span class="ve-mr-2 mkbru__sub-name--25">路径</span>${iptInternalPath}</div>
 		</div>`
 			.vee.toggle(initialMode === "2");
 		// endregion
@@ -4075,7 +4076,7 @@ export class CreatureBuilder extends BuilderBase {
 			entries: [
 				{
 					type: "code",
-					name: `Data`,
+					name: `数据`,
 					preformatted: JSON.stringify(DataUtil.cleanJson(MiscUtil.copy(this._state)), null, "\t"),
 				},
 			],

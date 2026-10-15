@@ -145,7 +145,7 @@ export class BuilderUi {
 		initialState.forEach(string => BuilderUi._getStateIptStringArray_getRow(doUpdateState, stringRows, string).wrp.vee.appendTo(wrpRows));
 
 		const wrpBtnAdd = veT`<div></div>`.vee.appendTo(rowInner);
-		veT`<button class="ve-btn ve-btn-xs ve-btn-default">Add ${options.shortName}</button>`
+		veT`<button class="ve-btn ve-btn-xs ve-btn-default">添加${options.shortName}</button>`
 			.vee.appendTo(wrpBtnAdd)
 			.vee.onn("click", () => {
 				BuilderUi._getStateIptStringArray_getRow(doUpdateState, stringRows).wrp.vee.appendTo(wrpRows);
@@ -169,7 +169,7 @@ export class BuilderUi {
 			.vee.onn("change", () => doUpdateState());
 		if (initialString && initialString.trim()) iptString.vee.val(initialString);
 
-		const btnRemove = veT`<button class="ve-btn ve-btn-xs ve-btn-danger" title="Remove Row"><span class="glyphicon glyphicon-trash"></span></button>`
+		const btnRemove = veT`<button class="ve-btn ve-btn-xs ve-btn-danger" title="删除行"><span class="glyphicon glyphicon-trash"></span></button>`
 			.vee.onn("click", () => {
 				stringRows.splice(stringRows.indexOf(out), 1);
 				wrp.vee.empty().remove();
@@ -313,7 +313,7 @@ export class BuilderUi {
 	}
 
 	static getUpButton (cbUpdate, rows, myRow) {
-		return veT`<button class="ve-btn ve-btn-xs ve-btn-default mkbru__btn-up-row ve-ml-2" title="Move Up"><span class="glyphicon glyphicon-arrow-up"></span></button>`
+		return veT`<button class="ve-btn ve-btn-xs ve-btn-default mkbru__btn-up-row ve-ml-2" title="上移"><span class="glyphicon glyphicon-arrow-up"></span></button>`
 			.vee.onn("click", () => {
 				const ix = rows.indexOf(myRow);
 				const cache = rows[ix - 1];
@@ -324,7 +324,7 @@ export class BuilderUi {
 	}
 
 	static getDownButton (cbUpdate, rows, myRow) {
-		return veT`<button class="ve-btn ve-btn-xs ve-btn-default mkbru__btn-down-row ve-ml-2" title="Move Down"><span class="glyphicon glyphicon-arrow-down"></span></button>`
+		return veT`<button class="ve-btn ve-btn-xs ve-btn-default mkbru__btn-down-row ve-ml-2" title="下移"><span class="glyphicon glyphicon-arrow-down"></span></button>`
 			.vee.onn("click", () => {
 				const ix = rows.indexOf(myRow);
 				const cache = rows[ix + 1];

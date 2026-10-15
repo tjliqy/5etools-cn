@@ -50,7 +50,7 @@ class _TestTokenImagesBase {
 	 * @abstract
 	 */
 	_getFileInfos () {
-		throw new Error("Unimplemented!");
+		throw new Error("尚未实现！");
 	}
 
 	_processFileInfos ({fileInfos}) {
@@ -164,16 +164,16 @@ class _TestTokenImagesBase {
 			.sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()))
 			.forEach((img) => console.warn(img));
 
-		if (Object.keys(this._expectedFromHashToken).length) console.warn(`Declared in ${this._NAME} data but not found:`);
+		if (Object.keys(this._expectedFromHashToken).length) console.warn(`已在 ${this._NAME} 数据中声明但未找到：`);
 		Object.keys(this._expectedFromHashToken).forEach(img => console.warn(`[MISMATCH] ${img}`));
 
-		if (!this._expected.size && !Object.keys(this._expectedFromHashToken).length) console.log("Tokens are as expected.");
+		if (!this._expected.size && !Object.keys(this._expectedFromHashToken).length) console.log("标记图检查通过。");
 
 		return isError;
 	}
 
 	run () {
-		console.log(`##### Reconciling tokens against ${this._NAME} data #####`);
+		console.log(`##### 正在核对 ${this._NAME} 数据的标记图 #####`);
 
 		const fileInfos = this._getFileInfos();
 		this._processFileInfos({fileInfos});
@@ -255,7 +255,7 @@ class _TestAdventureBookImages {
 
 	static run () {
 		if (!["img/adventure", "img/book"].every(dir => fs.existsSync(dir))) {
-			console.log("##### Adventure/book image corpus unavailable; skipping image reconciliation #####");
+			console.log("##### 冒险／书籍图片语料不可用，跳过图片核对 #####");
 			return false;
 		}
 
@@ -323,16 +323,16 @@ class _TestAdventureBookImages {
 			});
 
 		if (pathsMissing.length) {
-			console.log(`Missing Images (${pathsMissing.length}):\n${pathsMissing.map(it => `\t${it}`).join("\n")}`);
+			console.log(`缺失图片（${pathsMissing.length}）：\n${pathsMissing.map(it => `\t${it}`).join("\n")}`);
 			return true;
 		}
 
 		if (pathsUnused.size) {
-			console.log(`Unused Images (${pathsUnused.size}):\n${[...pathsUnused].sort(SortUtil.ascSortLower).map(it => `\t${it}`).join("\n")}`);
+			console.log(`未使用图片（${pathsUnused.size}）：\n${[...pathsUnused].sort(SortUtil.ascSortLower).map(it => `\t${it}`).join("\n")}`);
 			return true;
 		}
 
-		console.log(`##### Missing Image Test Passed #####`);
+		console.log(`##### 缺失图片测试通过 #####`);
 		return false;
 	}
 }

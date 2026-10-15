@@ -206,7 +206,7 @@ export class FilterBox extends ProxyBase {
 
 		if (this._wrpFormTop || this._btnToggleSummaryHidden) {
 			if (!this._btnToggleSummaryHidden) {
-				this._btnToggleSummaryHidden = veT`<button class="ve-btn ve-btn-default ${this._isCompact ? "ve-p-2" : ""}" title="Toggle Filter Summary"><span class="glyphicon glyphicon-resize-small"></span></button>`
+				this._btnToggleSummaryHidden = veT`<button class="ve-btn ve-btn-default ${this._isCompact ? "ve-p-2" : ""}" title="切换筛选摘要显示"><span class="glyphicon glyphicon-resize-small"></span></button>`
 					.vee.prependTo(this._wrpFormTop);
 			} else if (!this._btnToggleSummaryHidden.vee.parent()) {
 				this._btnToggleSummaryHidden.vee.prependTo(this._wrpFormTop);
@@ -307,11 +307,11 @@ export class FilterBox extends ProxyBase {
 			tag: "button",
 			clazz: `ve-btn ve-btn-xs ve-btn-default`,
 			click: () => this._meta.modeCombineFilters = FilterBox._COMBINE_MODES.getNext(this._meta.modeCombineFilters),
-			title: `"AND" requires every filter to match. "OR" requires any filter to match. "Custom" allows you to specify a combination (every "AND" filter must match; only one "OR" filter must match) .`,
+			title: `“且”要求所有筛选条件均匹配；“或”只需其中一项匹配；“自定义”可分别指定各筛选条件的组合方式。`,
 		}).vee.appendTo(wrpBtnCombineFilters);
 
 		const hook = () => {
-			btnCombineFiltersAs.innerText = this._meta.modeCombineFilters === "custom" ? this._meta.modeCombineFilters.uppercaseFirst() : this._meta.modeCombineFilters.toUpperCase();
+			btnCombineFiltersAs.innerText = ({and: "且", or: "或", custom: "自定义"})[this._meta.modeCombineFilters];
 			if (this._meta.modeCombineFilters === "custom") wrpBtnCombineFilters.vee.appends(btnCombineFilterSettings);
 			else btnCombineFilterSettings.vee.detach();
 			this._doSaveStateThrottled();
@@ -366,7 +366,7 @@ export class FilterBox extends ProxyBase {
 
 		UiUtil.addModalSep(eleModalInner);
 
-		UiUtil.getAddModalRowHeader(eleModalInner, "概览隐藏筛选器...", {helpText: "The summary is the small red and blue button panel which appear below the search bar."});
+		UiUtil.getAddModalRowHeader(eleModalInner, "概览隐藏筛选器...", {helpText: "概览是搜索栏下方由红色和蓝色按钮组成的小面板。"});
 		this._filters.forEach(f => UiUtil.getAddModalRowCb(eleModalInner, f.header, this._minisHidden, f.header));
 
 		UiUtil.addModalSep(eleModalInner);
@@ -382,14 +382,14 @@ export class FilterBox extends ProxyBase {
 	}
 
 	async _pOpenCombineAsModal () {
-		const {eleModalInner} = await UiUtil.pGetShowModal({title: "Filter Combination Logic"});
+		const {eleModalInner} = await UiUtil.pGetShowModal({title: "筛选条件组合逻辑"});
 		const btnReset = veT`<button class="ve-btn ve-btn-xs ve-btn-default">重置</button>`
 			.vee.onn("click", () => {
 				Object.keys(this._combineAs).forEach(k => this._combineAs[k] = "and");
 				sels.forEach(sel => sel.vee.val("0"));
 			});
-		UiUtil.getAddModalRowHeader(eleModalInner, "Combine filters as...", {eleRhs: btnReset});
-		const sels = this._filters.map(f => UiUtil.getAddModalRowSel(eleModalInner, f.header, this._combineAs, f.header, ["and", "or"], {fnDisplay: (it) => it.toUpperCase()}));
+		UiUtil.getAddModalRowHeader(eleModalInner, "筛选条件组合方式...", {eleRhs: btnReset});
+		const sels = this._filters.map(f => UiUtil.getAddModalRowSel(eleModalInner, f.header, this._combineAs, f.header, ["and", "or"], {fnDisplay: (it) => it === "and" ? "且" : "或"}));
 	}
 
 	getValues ({nxtStateOuter = null} = {}) {

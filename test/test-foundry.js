@@ -78,7 +78,7 @@ class _FileHandlerBase {
 	 * @abstract
 	 * @return void
 	 */
-	async pHandleFile ({foundryData, foundryPath, originalDatas}) { throw new Error("Unimplemented!"); }
+	async pHandleFile ({foundryData, foundryPath, originalDatas}) { throw new Error("尚未实现！"); }
 }
 
 class _FileHandlerInit extends _FileHandlerBase {

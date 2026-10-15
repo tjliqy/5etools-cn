@@ -34,7 +34,7 @@ class PageFilterTables extends PageFilterBase {
 		this._mutateForFilters_commonSources(it);
 		this._mutateForFilters_commonMisc(it);
 
-		if (it.isNameGenerator) it._fMisc.push("Name Generator");
+		if (it.isNameGenerator) it._fMisc.push("姓名生成器");
 	}
 
 	addToFilters (it, isExcluded) {

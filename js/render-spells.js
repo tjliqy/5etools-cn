@@ -6,75 +6,75 @@ export class RenderSpellsSettings {
 	static SETTINGS = {
 		isDisplayGroups: new SettingsUtil.Setting({
 			type: "boolean",
-			name: "Spell Sources: Show Groups",
-			help: `Whether or not "Groups" should be shown for a spell.`,
+			name: "法术来源：显示群组",
+			help: `是否在法术详情中显示“群组”。`,
 			defaultVal: true,
 		}),
 
 		isDisplayClasses: new SettingsUtil.Setting({
 			type: "boolean",
-			name: "Spell Sources: Show Classes",
-			help: `Whether or not "Classes" should be shown for a spell.`,
+			name: "法术来源：显示职业",
+			help: `是否在法术详情中显示“职业”。`,
 			defaultVal: true,
 		}),
 		isDisplayClassesLegacy: new SettingsUtil.Setting({
 			type: "boolean",
-			name: "Spell Sources: Show Classes (Legacy)",
-			help: `Whether or not "Classes (legacy)" should be shown for a spell.`,
+			name: "法术来源：显示职业（旧版）",
+			help: `是否在法术详情中显示“职业（旧版）”。`,
 			defaultVal: false,
 		}),
 
 		isDisplaySubclasses: new SettingsUtil.Setting({
 			type: "boolean",
-			name: "Spell Sources: Show Subclasses",
-			help: `Whether or not "Subclasses" should be shown for a spell.`,
+			name: "法术来源：显示子职业",
+			help: `是否在法术详情中显示“子职业”。`,
 			defaultVal: true,
 		}),
 		isDisplaySubclassesLegacy: new SettingsUtil.Setting({
 			type: "boolean",
-			name: "Spell Sources: Show Subclasses (Legacy)",
-			help: `Whether or not "Subclasses (legacy)" should be shown for a spell.`,
+			name: "法术来源：显示子职业（旧版）",
+			help: `是否在法术详情中显示“子职业（旧版）”。`,
 			defaultVal: false,
 		}),
 
 		isDisplayVariantClasses: new SettingsUtil.Setting({
 			type: "boolean",
-			name: "Spell Sources: Show Optional/Variant Classes",
-			help: `Whether or not "Optional/Variant Classes" should be shown for a spell.`,
+			name: "法术来源：显示可选／变体职业",
+			help: `是否在法术详情中显示“可选／变体职业”。`,
 			defaultVal: true,
 		}),
 		isDisplayVariantClassesLegacy: new SettingsUtil.Setting({
 			type: "boolean",
-			name: "Spell Sources: Show Optional/Variant Classes (Legacy)",
-			help: `Whether or not "Optional/Variant Classes (legacy)" should be shown for a spell.`,
+			name: "法术来源：显示可选／变体职业（旧版）",
+			help: `是否在法术详情中显示“可选／变体职业（旧版）”。`,
 			defaultVal: false,
 		}),
 
 		isDisplayRaces: new SettingsUtil.Setting({
 			type: "boolean",
-			name: "Spell Sources: Show Species",
-			help: `Whether or not "Species" should be shown for a spell.`,
+			name: "法术来源：显示种族",
+			help: `是否在法术详情中显示“种族”。`,
 			defaultVal: true,
 		}),
 
 		isDisplayBackgrounds: new SettingsUtil.Setting({
 			type: "boolean",
-			name: "Spell Sources: Show Backgrounds",
-			help: `Whether or not "Backgrounds" should be shown for a spell.`,
+			name: "法术来源：显示背景",
+			help: `是否在法术详情中显示“背景”。`,
 			defaultVal: true,
 		}),
 
 		isDisplayFeats: new SettingsUtil.Setting({
 			type: "boolean",
-			name: "Spell Sources: Show Feats",
-			help: `Whether or not "Feats" should be shown for a spell.`,
+			name: "法术来源：显示专长",
+			help: `是否在法术详情中显示“专长”。`,
 			defaultVal: true,
 		}),
 
 		isDisplayOptionalfeatures: new SettingsUtil.Setting({
 			type: "boolean",
-			name: "Spell Sources: Other Options/Features",
-			help: `Whether or not "Other Options/Features" should be shown for a spell.`,
+			name: "法术来源：其他选项／特性",
+			help: `是否在法术详情中显示“其他选项／特性”。`,
 			defaultVal: true,
 		}),
 	};
@@ -161,7 +161,7 @@ class _RenderSpellsImplBase extends RenderPageImplBase {
 
 		const stackFroms = [];
 
-		if (settings.isDisplayGroups) this._mutStackPtSpellSource({ent, stackFroms, renderer, title: "Groups", propSpell: "groups"});
+		if (settings.isDisplayGroups) this._mutStackPtSpellSource({ent, stackFroms, renderer, title: "群组", propSpell: "groups"});
 
 		const fromClassList = Renderer.spell.getCombinedClasses(ent, "fromClassList");
 		if (fromClassList.length) {
@@ -189,10 +189,10 @@ class _RenderSpellsImplBase extends RenderPageImplBase {
 		if (fromClassListVariant.length) {
 			const [current, legacy] = Parser.spVariantClassesToCurrentAndLegacy(fromClassListVariant);
 			if (settings.isDisplayVariantClasses && current.length) {
-				stackFroms.push(`<div><span class="ve-bold" title="&quot;Optional&quot; spells may be added to a campaign by the DM. &quot;Variant&quot; spells are generally available, but may be made available to a class by the DM.">可选/变体职业: </span>${Parser.spMainClassesToFull(current)}</div>`);
+				stackFroms.push(`<div><span class="ve-bold" title="DM 可以将可选法术加入战役。变体法术通常可用，也可以由 DM 决定开放给某个职业。">可选/变体职业: </span>${Parser.spMainClassesToFull(current)}</div>`);
 			}
 			if (settings.isDisplayVariantClassesLegacy && legacy.length) {
-				stackFroms.push(`<div class="ve-muted"><span class="ve-bold" title="&quot;Optional&quot; spells may be added to a campaign by the DM. &quot;Variant&quot; spells are generally available, but may be made available to a class by the DM.">可选/变体职业 (传奇): </span>${Parser.spMainClassesToFull(legacy)}</div>`);
+				stackFroms.push(`<div class="ve-muted"><span class="ve-bold" title="DM 可以将可选法术加入战役。变体法术通常可用，也可以由 DM 决定开放给某个职业。">可选/变体职业 (传奇): </span>${Parser.spMainClassesToFull(legacy)}</div>`);
 			}
 		}
 
@@ -206,7 +206,7 @@ class _RenderSpellsImplBase extends RenderPageImplBase {
 			&& fromClassList?.some(it => it.name === "Wizard" && it?.source === Parser.SRC_PHB)
 		) {
 			stackFroms.push(`<section class="ve-muted ve-mt-2">`);
-			renderer.recursiveRender(`{@italic Note: Both the {@class fighter||Fighter (Eldritch Knight)|eldritch knight} and the {@class rogue||Rogue (Arcane Trickster)|arcane trickster} spell lists include all {@class Wizard} spells. Spells of 5th level or higher may be cast with the aid of a spell scroll or similar.}`, stackFroms, {depth: 2});
+			renderer.recursiveRender(`{@italic 注：{@class fighter||战士（奥法骑士）|eldritch knight}和{@class rogue||游荡者（诡术师）|arcane trickster}的法术列表均包含所有{@class Wizard||法师}法术。借助法术卷轴等物品，还可以施放五环或更高环阶的法术。}`, stackFroms, {depth: 2});
 			stackFroms.push(`</section>`);
 		}
 
@@ -219,7 +219,7 @@ class _RenderSpellsImplBase extends RenderPageImplBase {
 
 		const ptFroms = froms
 			.map(it => {
-				const pt = tag ? renderer.render(`{@${tag} ${it.name}|${it.source}}`) : `<span class="ve-help-subtle" title="Source: ${(Parser.sourceJsonToFull(it.source)).qq()}">${it.name}</span>`;
+				const pt = tag ? renderer.render(`{@${tag} ${it.name}|${it.source}}`) : `<span class="ve-help-subtle" title="来源：${(Parser.sourceJsonToFull(it.source)).qq()}">${it.name}</span>`;
 				return `${SourceUtil.isNonstandardSource(it.source) ? `<span class="ve-muted">` : ``}${pt}${SourceUtil.isNonstandardSource(it.source) ? `</span>` : ``}`;
 			})
 			.join(", ");

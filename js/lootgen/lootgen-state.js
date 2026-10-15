@@ -22,7 +22,7 @@ export class LootgenStateManager extends BaseComponent {
 		if (Parser.COIN_ABVS.every(it => this._state[this.getPropsCoins(it).propIsAllowed])) return coins;
 
 		if (Parser.COIN_ABVS.every(it => !this._state[this.getPropsCoins(it).propIsAllowed])) {
-			JqueryUtil.doToast({content: "All currencies are disabled! Generated currency has been discarded.", type: "warning"});
+			JqueryUtil.doToast({content: "所有货币均已停用！生成的货币已被舍弃。", type: "warning"});
 			return {};
 		}
 

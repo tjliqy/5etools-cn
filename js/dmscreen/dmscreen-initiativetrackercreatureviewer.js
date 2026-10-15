@@ -88,7 +88,7 @@ class InitiativeTrackerCreatureViewerComponent extends BaseComponent {
 
 	_render_getStgNoTrackerAvailable () {
 		const stg = veT`<div class="ve-flex-vh-center ve-w-100 ve-h-100 ve-min-h-0">
-			<div class="ve-dnd-font ve-italic ve-small-caps ve-muted">No Initiative Tracker available.</div>
+			<div class="ve-dnd-font ve-italic ve-small-caps ve-muted">没有可用的先攻追踪器。</div>
 		</div>`;
 
 		const hkIsVisible = () => stg.vee.toggle(!this._state.isActive && !this._state.cntPanelsAvailable);
@@ -100,7 +100,7 @@ class InitiativeTrackerCreatureViewerComponent extends BaseComponent {
 	}
 
 	_render_getStgConnect () {
-		const btnConnectConnect = veT`<button class="ve-btn ve-btn-primary ve-min-w-200p">Connect to Tracker</button>`
+		const btnConnectConnect = veT`<button class="ve-btn ve-btn-primary ve-min-w-200p">连接先攻追踪器</button>`
 			.vee.onn("click", async () => {
 				const panelApps = DmScreenUtil.getPanelApps({board: this._board, type: PANEL_TYP_INITIATIVE_TRACKER});
 
@@ -109,16 +109,16 @@ class InitiativeTrackerCreatureViewerComponent extends BaseComponent {
 				const {eleModalInner, doClose, pGetResolved} = UiUtil.getShowModal({
 					isMinHeight0: true,
 					isHeaderBorder: true,
-					title: "Select Tracker",
+					title: "选择追踪器",
 				});
 
 				const selTracker = veT`<select class="ve-form-control ve-input-xs ve-mb-2">
-					<option value="-1" disabled>Select tracker</option>
+					<option value="-1" disabled>选择追踪器</option>
 					${panelApps.map((panelApp, i) => `<option value="${i}">${panelApp.getSummary()}</option>`).join("")}
 				</select>`
 					.vee.onn("change", () => selTracker.vee.removeClass("error-background"));
 
-				const BtnConnectSubmit = veT`<button class="ve-btn ve-btn-primary ve-btn-xs">Connect</button>`
+				const BtnConnectSubmit = veT`<button class="ve-btn ve-btn-primary ve-btn-xs">连接</button>`
 					.vee.onn("click", () => {
 						const ix = Number(selTracker.vee.val());
 						if (!~ix) {
@@ -171,7 +171,7 @@ class InitiativeTrackerCreatureViewerComponent extends BaseComponent {
 				})
 				: null;
 
-			if (!mon) return dispCreature.innerHTML = `<div class="ve-dnd-font ve-italic ve-small-caps ve-muted ve-flex-vh-center ve-w-100 ve-h-100">No active creature.</div>`;
+			if (!mon) return dispCreature.innerHTML = `<div class="ve-dnd-font ve-italic ve-small-caps ve-muted ve-flex-vh-center ve-w-100 ve-h-100">没有当前生物。</div>`;
 
 			dispCreature.innerHTML = `<table class="ve-w-100 ve-stats"><tbody>${Renderer.monster.getCompactRenderedString(mon, {isShowScalers: false})}</tbody></table>`;
 		};

@@ -161,7 +161,7 @@ class OmnisearchUi {
 		const btnHelp = veE({
 			tag: "button",
 			clazz: "ve-btn ve-btn-default ve-btn-xs ve-ml-2",
-			title: "Help",
+			title: "帮助",
 			html: `<span class="glyphicon glyphicon-info-sign"></span>`,
 			click: () => OmnisearchUtilsUi.doShowHelp({isIncludeHotkeys: true}),
 		});
@@ -414,7 +414,7 @@ class OmnisearchUi {
 		rdState.wrpSearchResults.vee.empty();
 
 		if (!results.length) {
-			rdState.wrpSearchResults.vee.appends(`<div class="ve-muted"><i>No results found.</i></div>`);
+			rdState.wrpSearchResults.vee.appends(`<div class="ve-muted"><i>未找到结果。</i></div>`);
 			rdState.wrpSearchOutput.vee.show();
 			return {rowMetas: [], results, ixPage};
 		}
@@ -442,7 +442,7 @@ class OmnisearchUi {
 					sourceFull,
 				} = UtilsOmnisearch.getUnpackedSearchResult(resultDoc);
 
-				const ptPageInner = page ? `p${page}` : "";
+				const ptPageInner = page ? `第 ${page} 页` : "";
 				const adventureBookSourceHref = SourceUtil.getAdventureBookSourceHref(source, page);
 				const ptPage = ptPageInner && adventureBookSourceHref
 					? `<a href="${adventureBookSourceHref}">${ptPageInner}</a>`
@@ -501,7 +501,7 @@ class OmnisearchUi {
 
 		return veT`<div class="omni__wrp-paginate">
 			${elePagePrev}
-			<span class="paginate-count">Page ${ixPage + 1}/${this._getNumPages({results})} (${results.length} results)</span>
+			<span class="paginate-count">第 ${ixPage + 1}/${this._getNumPages({results})} 页（共 ${results.length} 条结果）</span>
 			${elePageNext}
 		</div>`;
 	}

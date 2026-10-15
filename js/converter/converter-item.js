@@ -136,7 +136,7 @@ export class ConverterItem extends ConverterBase {
 		if (stats.entries) {
 			EntryCoalesceEntryLists.mutCoalesce(stats, "entries", {styleHint: options.styleHint});
 
-			if (/is a (tiny|small|medium|large|huge|gargantuan) object/i.test(JSON.stringify(stats.entries))) options.cbWarning(`${stats.name ? `(${stats.name}) ` : ""}Item may be an object!`);
+			if (/is a (tiny|small|medium|large|huge|gargantuan) object/i.test(JSON.stringify(stats.entries))) options.cbWarning(`${stats.name ? `(${stats.name}) ` : ""}物品可能是一个物件！`);
 			if (/是一个(微|小|重|大|巨大?|超巨)[型形]物件/i.test(JSON.stringify(stats.entries))) options.cbWarning(`${stats.name ? `(${stats.name}) ` : ""}物品可能是一个物件!`);
 		}
 		this._doItemPostProcess_addTags(stats, options);
@@ -147,17 +147,17 @@ export class ConverterItem extends ConverterBase {
 		const manName = stats.name ? `(${stats.name}) ` : "";
 		TagJsons.mutTagObject(stats, {keySet: new Set(["entries"]), isOptimistic: true, styleHint: options.styleHint});
 		ChargeTag.tryRun(stats);
-		RechargeTypeTag.tryRun(stats, {cbMan: () => options.cbWarning(`${manName}Recharge type may require manual conversion`)});
-		RechargeAmountTag.tryRun(stats, {cbMan: () => options.cbWarning(`${manName}Recharge amount requires manual conversion`)});
+		RechargeTypeTag.tryRun(stats, {cbMan: () => options.cbWarning(`${manName}充能类型可能需要手动转换`)});
+		RechargeAmountTag.tryRun(stats, {cbMan: () => options.cbWarning(`${manName}充能次数需要手动转换`)});
 		ItemMiscTag.tryRun(stats);
 		BonusTag.tryRun(stats);
 		ItemOtherTagsTag.tryRun(stats);
 		ItemSpellcastingFocusTag.tryRun(stats);
-		DamageResistanceTag.tryRun(stats, {cbMan: () => options.cbWarning(`${manName}Damage resistance tagging requires manual conversion`)});
-		DamageImmunityTag.tryRun(stats, {cbMan: () => options.cbWarning(`${manName}Damage immunity tagging requires manual conversion`)});
-		DamageVulnerabilityTag.tryRun(stats, {cbMan: () => options.cbWarning(`${manName}Damage vulnerability tagging requires manual conversion`)});
-		ConditionImmunityTag.tryRun(stats, {cbMan: () => options.cbWarning(`${manName}Condition immunity tagging requires manual conversion`)});
-		ReqAttuneTagTag.tryRun(stats, {cbMan: () => options.cbWarning(`${manName}Attunement requirement tagging requires manual conversion`)});
+		DamageResistanceTag.tryRun(stats, {cbMan: () => options.cbWarning(`${manName}伤害抗性标记需要手动转换`)});
+		DamageImmunityTag.tryRun(stats, {cbMan: () => options.cbWarning(`${manName}伤害免疫标记需要手动转换`)});
+		DamageVulnerabilityTag.tryRun(stats, {cbMan: () => options.cbWarning(`${manName}伤害易伤标记需要手动转换`)});
+		ConditionImmunityTag.tryRun(stats, {cbMan: () => options.cbWarning(`${manName}状态免疫标记需要手动转换`)});
+		ReqAttuneTagTag.tryRun(stats, {cbMan: () => options.cbWarning(`${manName}同调要求标记需要手动转换`)});
 		AttachedSpellTag.tryRun(stats);
 		AttachedSpellChargesTag.tryRun(stats);
 		LightTag.tryRun(stats);
@@ -716,7 +716,7 @@ export class ConverterItem extends ConverterBase {
 			const fromText = Parser.textToNumber(m[1]);
 			if (!isNaN(fromText)) stats.weight = fromText;
 
-			if (!stats.weight) options.cbWarning(`${stats.name ? `(${stats.name}) ` : ""}Weight "${m[1]}" requires manual conversion`);
+			if (!stats.weight) options.cbWarning(`${stats.name ? `(${stats.name}) ` : ""}重量“${m[1]}”需要手动转换`);
 		});
 
 		strEntries.replace(/重量?为?\s?([\u4e00-\u9fa50-9,]+)\s?(英?磅|吨)/, (...m) => {

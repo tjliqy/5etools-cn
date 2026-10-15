@@ -99,8 +99,8 @@ class StatGenPage {
 						type: "danger",
 						pFnClick: async () => {
 							if (!await InputUiUtil.pGetUserBoolean({
-								title: "Reset All",
-								htmlDescription: `<div>This will reset all inputs in all tabs.<br>你确定吗？</div>`,
+								title: "重置所有",
+								htmlDescription: `<div>这将重置所有选项卡中的全部输入。<br>你确定吗？</div>`,
 							})) return;
 
 							this._statGenUi.doResetAll();
@@ -207,7 +207,7 @@ class StatGenPage {
 			this._statGenUi.setStateFrom(saved, true);
 			return true;
 		} catch (e) {
-			JqueryUtil.doToast({type: "danger", content: `Failed to load state from URL!`});
+			JqueryUtil.doToast({type: "danger", content: `无法从网址加载状态！`});
 			setTimeout(() => { throw e; });
 			return false;
 		}

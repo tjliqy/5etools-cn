@@ -35,7 +35,7 @@ export class LootGenGeneratorDragonHoard extends LootGenGeneratorBase {
 			</label>
 
 			<label class="ve-split-v-center ve-mb-3">
-				<div class="ve-mr-2 ve-w-66 ve-no-shrink" title="If selected, random magic items (of a matching rarity and tier) will be preferred over rolling on the standard ${Parser.sourceJsonToAbv(Parser.SRC_DMG).qq()} &quot;Magic Items Table [A-I]&quot; when generating magic items.">${I18nUtil.get("page.lootgen.prefer_random_magic_items")}</div>
+				<div class="ve-mr-2 ve-w-66 ve-no-shrink" title="启用后，生成魔法物品时会优先选择稀有度和层级相符的随机物品，而非在 ${Parser.sourceJsonToAbv(Parser.SRC_DMG).qq()} 的“魔法物品表 A–I”上掷骰。">${I18nUtil.get("page.lootgen.prefer_random_magic_items")}</div>
 				${cbIsPreferRandomMagicItems}
 			</label>
 
@@ -69,7 +69,7 @@ export class LootGenGeneratorDragonHoard extends LootGenGeneratorBase {
 		});
 
 		const lootOutput = new this._ClsLootGenOutput({
-			type: `Dragon Hoard: ${this._state.dh_dragonAge}`,
+			type: `龙族宝库：${this._state.dh_dragonAge}`,
 			name: `${this._state.dh_dragonAge} ${I18nUtil.get("page.lootgen.dragon_hoard")}`,
 			coins,
 			gems,

@@ -103,7 +103,7 @@ export class EncounterBuilderCreatureGroupBase {
 	}
 
 	_getRenderedRowElements_getBtnShuffle ({encounterBuilderComp, creatureGroup}) {
-		return veT`<button title="Randomize Monster" class="ve-btn ve-btn-default ve-btn-xs"><span class="glyphicon glyphicon-random"></span></button>`
+		return veT`<button title="随机替换生物" class="ve-btn ve-btn-default ve-btn-xs"><span class="glyphicon glyphicon-random"></span></button>`
 			.vee.onn("click", () => encounterBuilderComp.doShuffleCreatureGroup({creatureGroup}));
 	}
 
@@ -248,7 +248,7 @@ export class EncounterBuilderCreatureGroupEntityCreature extends EncounterBuilde
 			if (!hoverMetaToken || hoverMetaToken?.hashCreature !== hashCreature) {
 				if (hoverMetaToken) hoverMetaToken.pFnCleanup().then(null);
 
-				const hovToken = veT`<span class="glyphicon glyphicon glyphicon-record ve-top-0" title="Hover to View Token"></span>`
+				const hovToken = veT`<span class="glyphicon glyphicon glyphicon-record ve-top-0" title="悬停查看标记"></span>`
 					.vee.appendTo(wrpHovToken.vee.empty());
 
 				hoverMetaToken = Renderer.monster.hover.bindTokenMouseover({mon: comp._state.creature, ele: hovToken});
@@ -258,7 +258,7 @@ export class EncounterBuilderCreatureGroupEntityCreature extends EncounterBuilde
 			if (!hoverMetaImage || hoverMetaImage?.hashCreature !== hashCreature) {
 				if (hoverMetaImage) hoverMetaImage.pFnCleanup().then(null);
 
-				const hovImage = veT`<span class="glyphicon glyphicon-picture ve-top-0" title="Hover to View Image"></span>`
+				const hovImage = veT`<span class="glyphicon glyphicon-picture ve-top-0" title="悬停查看图片"></span>`
 					.vee.appendTo(wrpHovImage.vee.empty());
 
 				hoverMetaImage = Renderer.monster.hover.bindFluffImageMouseover({mon: comp._state.creature, ele: hovImage});
@@ -318,7 +318,7 @@ export class EncounterBuilderCreatureGroupEntityCreature extends EncounterBuilde
 
 			if (targetCrClean == null) {
 				JqueryUtil.doToast({
-					content: `"${targetCr}" is not a valid Challenge Rating! Please enter a valid CR (0-30).`,
+					content: `"${targetCr}" 不是有效的挑战等级！请输入 0–30 之间的有效挑战等级。`,
 					type: "danger",
 				});
 
@@ -372,7 +372,7 @@ export class EncounterBuilderCreatureGroupEntityCreature extends EncounterBuilde
 				pScalingCr = null;
 			});
 
-		const btnResetCr = veT`<button title="Reset CR" class="ve-btn ve-btn-default ve-btn-xs ve-w-24p"><span class="glyphicon glyphicon-refresh"></span></button>`
+		const btnResetCr = veT`<button title="重置挑战等级" class="ve-btn ve-btn-default ve-btn-xs ve-w-24p"><span class="glyphicon glyphicon-refresh"></span></button>`
 			.vee.onn("click", async () => {
 				try {
 					await pScalingCr;

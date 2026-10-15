@@ -73,9 +73,9 @@ class DeitiesPage extends ListPage {
 			dataProps: ["deity"],
 
 			bookViewOptions: {
-				nameSingular: "deity",
-				namePlural: "deities",
-				pageTitle: "Deities Book View",
+				nameSingular: "神祇",
+				namePlural: "神祇",
+				pageTitle: "神祇书籍视图",
 			},
 
 			listSyntax: new ListSyntaxDeities({fnGetDataList: () => this._dataList}),

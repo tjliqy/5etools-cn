@@ -311,7 +311,7 @@ export class InitiativeTrackerMonsterAdd extends BaseComponent {
 
 				if (resultCount > this.constructor._RESULTS_MAX_DISPLAY) {
 					const diff = resultCount - this.constructor._RESULTS_MAX_DISPLAY;
-					if (I18nUtil.LANGUAGES_INDEX === "zh_CN") {
+					if (["zh_CN", "zh-Hant"].includes(I18nUtil.LANGUAGES_INDEX)) {
 						wrpResults.vee.appends(`<div class="ve-ui-search__row ve-ui-search__row--readonly">...${diff}条结果被隐藏，请调整搜索条件。</div>`);
 					} else {
 						wrpResults.vee.appends(`<div class="ve-ui-search__row ve-ui-search__row--readonly">...${diff} more result${diff === 1 ? " was" : "s were"} hidden. Refine your search!</div>`);
@@ -359,7 +359,7 @@ export class InitiativeTrackerMonsterAdd extends BaseComponent {
 			<div class="ve-ui-search__row ve-flex-v-center" tabindex="0">
 				<span>${res.doc.cn}</span>
 				<div class="ve-flex-vh-center">
-					<span class="ve-mr-2">${res.doc.s ? `<i title="${Parser.sourceJsonToFull(res.doc.s).qq()}">${Parser.sourceJsonToAbv(res.doc.s).qq()}${res.doc.p ? ` p${res.doc.p}` : ""}</i>` : ""}</span>
+					<span class="ve-mr-2">${res.doc.s ? `<i title="${Parser.sourceJsonToFull(res.doc.s).qq()}">${Parser.sourceJsonToAbv(res.doc.s).qq()}${res.doc.p ? ` 第 ${res.doc.p} 页` : ""}</i>` : ""}</span>
 					${btnCustomize}
 				</div>
 			</div>

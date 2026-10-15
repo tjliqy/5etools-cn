@@ -136,7 +136,7 @@ class Ro_Lexer {
 							if (token.startsWith("@") || token.startsWith("(@")) this._tokenStack.push(Ro_Token.DYNAMIC(token, l));
 							else if (Ro_Lexer._M_IDENT.test(token)) this._tokenStack.push(Ro_Token.IDENTIFIER(token, l));
 							else if (Ro_Lexer._M_NUMBER.test(token)) this._tokenStack.push(Ro_Token.NUMBER(token, l));
-							else throw new Error(`Syntax error: unexpected token <code>${token}</code> (line <code>${l}</code>)`);
+							else throw new Error(`语法错误：第 <code>${l}</code> 行出现意外的标记 <code>${token}</code>`);
 						}
 					}
 				}
@@ -176,7 +176,7 @@ class Ro_Lexer {
 								[...new Array(dedentCount)].forEach(() => this._tokenStack.push(Ro_Token.DEDENT._(l)));
 							} else {
 								// we broke the loop without finding an indent partner; this is a syntax error
-								throw new Error(`Syntax error: no matching indent found for line <code>${l}</code>`);
+								throw new Error(`语法错误：第 <code>${l}</code> 行找不到对应的缩进`);
 							}
 						}
 					} else {
@@ -240,7 +240,7 @@ class Ro_Lexer {
 					} else if (opts.isDynamicsOnly) token += c;
 					else {
 						parenCount--;
-						if (parenCount < 0) throw new Error(`Syntax error: closing <code>)</code> without opening <code>(</code> in line <code>${l}</code>`);
+						if (parenCount < 0) throw new Error(`语法错误：第 <code>${l}</code> 行的 <code>)</code> 没有对应的 <code>(</code>`);
 						outputToken();
 						token = ")";
 						outputToken();
@@ -262,7 +262,7 @@ class Ro_Lexer {
 					else if (opts.isDynamicsOnly) token += c;
 					else {
 						braceCount--;
-						if (braceCount < 0) throw new Error(`Syntax error: closing <code>}</code> without opening <code>{</code> in line <code>${l}</code>`);
+						if (braceCount < 0) throw new Error(`语法错误：第 <code>${l}</code> 行的 <code>}</code> 没有对应的 <code>{</code>`);
 						outputToken();
 						token = "}";
 						outputToken();
@@ -285,7 +285,7 @@ class Ro_Lexer {
 							if (mode === "text") outputToken();
 							token += c;
 							mode = "symbol";
-						} else throw new Error(`Syntax error: unexpected character <code>${c}</code> in line <code>${l}</code>`);
+						} else throw new Error(`语法错误：第 <code>${l}</code> 行出现意外的字符 <code>${c}</code>`);
 					}
 					break;
 				}
@@ -344,8 +344,8 @@ class Ro_Parser {
 	_expect (symbol) {
 		const accepted = this._accept(symbol);
 		if (accepted) return accepted;
-		if (this._sym) throw new Error(`Unexpected input: Expected <code>${symbol}</code> but found <code>${this._sym}</code> (line <code>${this._sym.line}</code>)`);
-		else throw new Error(`Unexpected end of input: Expected <code>${symbol}</code>`);
+		if (this._sym) throw new Error(`输入错误：第 <code>${this._sym.line}</code> 行预期为 <code>${symbol}</code>，却遇到 <code>${this._sym}</code>`);
+		else throw new Error(`输入意外结束：预期为 <code>${symbol}</code>`);
 	}
 
 	_factor () {
@@ -357,8 +357,8 @@ class Ro_Parser {
 			this._expect(Ro_Token.PAREN_CLOSE);
 			return new Ro_Parser._Factor(exp, {hasParens: true});
 		} else {
-			if (this._sym) throw new Error(`Unexpected input: <code>${this._sym}</code> (line <code>${this._sym.line}</code>)`);
-			else throw new Error(`Unexpected end of input (line <code>${this._sym.line}</code>)`);
+			if (this._sym) throw new Error(`输入错误：第 <code>${this._sym.line}</code> 行出现意外的 <code>${this._sym}</code>`);
+			else throw new Error(`输入意外结束`);
 		}
 	}
 
@@ -451,7 +451,7 @@ class Ro_Parser {
 					children.push(this._statement());
 				}
 			}
-		} else throw new Error(`Syntax error: <code>${this._sym}</code> (line <code>${this._sym.line}</code>)`);
+		} else throw new Error(`语法错误：第 <code>${this._sym.line}</code> 行出现 <code>${this._sym}</code>`);
 
 		return new Ro_Parser._Statement(children);
 	}
@@ -912,7 +912,7 @@ class Ro_Lang {
 	static pResolveDynamic (token, resolver, opts) {
 		opts = opts || {};
 
-		const getInvalidMessage = (type) => `Unknown property: <code>${type}</code> (line <code>${token.line}</code>)`;
+		const getInvalidMessage = (type) => `未知属性：<code>${type}</code>（第 <code>${token.line}</code> 行）`;
 
 		const clean = token.value.replace(/^\(?@(.*?)\)?$/, "$1");
 		const [type, ...labelParts] = clean.split("|").map(it => it.trim());
@@ -952,11 +952,11 @@ class Ro_Lang {
 				const spl = it.split("=").map(it => it.trim());
 
 				const asNum = Number(spl[0]);
-				if (isNaN(asNum)) throw new Error(`Syntax error: Option <code>${spl[0]}</code> was not a number (line <code>${token.line}</code>)`);
+				if (isNaN(asNum)) throw new Error(`语法错误：第 <code>${token.line}</code> 行的选项 <code>${spl[0]}</code> 不是数字`);
 
 				if (spl.length === 1) return {label: asNum, val: asNum};
 				else if (spl.length === 2) return {label: spl[1], val: asNum};
-				else throw new Error(`Syntax error: option <code>${it}</code> was not formatted correctly (line ${token.line})`);
+				else throw new Error(`语法错误：第 ${token.line} 行的选项 <code>${it}</code> 格式不正确`);
 			});
 
 			if (opts.isValidateOnly) return;
@@ -1007,11 +1007,11 @@ class Ro_Lang {
 				const spl = it.split("=").map(it => it.trim());
 
 				const asBool = UiUtil.strToBool(spl[0], null);
-				if (asBool == null) throw new Error(`Syntax error: Option <code>${spl[0]}</code> was not a boolean (line <code>${token.line}</code>`);
+				if (asBool == null) throw new Error(`语法错误：第 <code>${token.line}</code> 行的选项 <code>${spl[0]}</code> 不是布尔值`);
 
 				if (spl.length === 1) return {label: asBool, val: asBool};
 				else if (spl.length === 2) return {label: spl[1], val: asBool};
-				else throw new Error(`Syntax error: option <code>${it}</code> was not formatted correctly (line ${token.line})`);
+				else throw new Error(`语法错误：第 ${token.line} 行的选项 <code>${it}</code> 格式不正确`);
 			});
 
 			if (opts.isValidateOnly) return;

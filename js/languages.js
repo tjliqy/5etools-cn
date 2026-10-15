@@ -4,17 +4,17 @@ class LanguagesSublistManager extends SublistManager {
 	static _getRowTemplate () {
 		return [
 			new SublistCellTemplate({
-				name: "Name",
+				name: "名称",
 				css: "ve-bold ve-col-8 ve-pl-1 ve-pr-0",
 				colStyle: "",
 			}),
 			new SublistCellTemplate({
-				name: "Type",
+				name: "类型",
 				css: "ve-col-2 ve-px-1 ve-text-center",
 				colStyle: "text-center",
 			}),
 			new SublistCellTemplate({
-				name: "Script",
+				name: "文字",
 				css: "ve-col-2 ve-text-center ve-pl-1 ve-pr-0",
 				colStyle: "text-center",
 			}),
@@ -71,9 +71,9 @@ class LanguagesPage extends ListPage {
 			dataProps: ["language"],
 
 			bookViewOptions: {
-				nameSingular: "language",
-				namePlural: "languages",
-				pageTitle: "Languages Book View",
+				nameSingular: "语言",
+				namePlural: "语言",
+				pageTitle: "语言书籍视图",
 			},
 		});
 	}
@@ -138,7 +138,7 @@ class LanguagesPage extends ListPage {
 					const allFonts = [...ent.fonts || [], ...ent._fonts || []];
 
 					if (!allFonts || !allFonts.length) {
-						td.vee.appends("<i>No fonts available.</i>");
+						td.vee.appends("<i>没有可用的字体。</i>");
 						return;
 					}
 
@@ -173,7 +173,7 @@ class LanguagesPage extends ListPage {
 						saveTextDebounced(val);
 					};
 
-					const DEFAULT_TEXT = "The big quick brown flumph jumped over the lazy dire xorn";
+					const DEFAULT_TEXT = "敏捷的褶伞怪跳过了懒惰的恐爪异怪";
 
 					const iptSample = veT`<textarea class="ve-form-control ve-w-100 ve-mr-2 ve-resize-vertical font-ui ve-mb-2" style="height: 110px">${DEFAULT_TEXT}</textarea>`
 						.vee.onn("keyup", () => updateText())

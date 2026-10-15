@@ -4,12 +4,12 @@ class VariantRulesSublistManager extends SublistManager {
 	static _getRowTemplate () {
 		return [
 			new SublistCellTemplate({
-				name: "Name",
+				name: "名称",
 				css: "ve-bold ve-col-10 ve-pl-0 ve-pr-1",
 				colStyle: "",
 			}),
 			new SublistCellTemplate({
-				name: "Type",
+				name: "类型",
 				css: "ve-col-3 ve-text-center ve-pl-1 ve-pr-0",
 				colStyle: "text-center",
 			}),
@@ -59,9 +59,9 @@ class VariantRulesPage extends ListPage {
 			dataProps: ["variantrule"],
 
 			bookViewOptions: {
-				nameSingular: "variant rule",
-				namePlural: "variant rules",
-				pageTitle: "Variant Rules Book View",
+				nameSingular: "变体规则",
+				namePlural: "变体规则",
+				pageTitle: "可选规则书籍视图",
 			},
 		});
 	}
@@ -129,7 +129,7 @@ class VariantRulesPage extends ListPage {
 		try {
 			sub = await this._pDoLoadSubHash_pTitleIndex_({sub});
 		} catch (e) {
-			JqueryUtil.doToast({type: "danger", content: `Failed to set creature scaler state from URL! ${VeCt.STR_SEE_CONSOLE}`, isAutoHide: false});
+			JqueryUtil.doToast({type: "danger", content: `无法从网址设置生物缩放状态！ ${VeCt.STR_SEE_CONSOLE}`, isAutoHide: false});
 			setTimeout(() => { throw e; });
 		}
 		return sub;

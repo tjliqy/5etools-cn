@@ -55,11 +55,11 @@ export class EncounterBuilderHelpers {
 			page: UrlUtil.PG_BESTIARY,
 		});
 
-		if (!expandedList?.length) return "(Unnamed Encounter)";
+		if (!expandedList?.length) return "（未命名遭遇）";
 
 		const {count, entity: {name}} = expandedList
 			.sort((a, b) => SortUtil.ascSort(b.count, a.count) || SortUtil.ascSort(b.entity.name, a.entity.name))[0];
 
-		return `Encounter with ${name}${count > 1 ? ` ×${count}` : ""}`;
+		return `与${name}的遭遇${count > 1 ? ` ×${count}` : ""}`;
 	}
 }

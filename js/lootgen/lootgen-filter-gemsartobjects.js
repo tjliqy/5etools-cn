@@ -3,7 +3,9 @@ class PageFilterGemsArtObjects extends PageFilterBase {
 		super();
 		this._miscFilter = new Filter({
 			header: "Miscellaneous",
+			cnHeader: "杂项",
 			items: ["Reprinted"],
+			displayFn: it => it === "Reprinted" ? "重印" : it,
 			isMiscFilter: true,
 			deselFn: PageFilterBase.defaultMiscellaneousDeselFn.bind(PageFilterBase),
 		});
@@ -47,15 +49,15 @@ export class ModalFilterGemsArtObjects extends ModalFilterBase {
 		opts = opts || {};
 		super({
 			...opts,
-			modalTitle: `Gem${opts.isRadio ? "" : "s"}/Art Object${opts.isRadio ? "" : "s"}`,
+			modalTitle: `宝石／艺术品`,
 			pageFilter: new PageFilterGemsArtObjects(),
 		});
 	}
 
 	_getColumnHeaders () {
 		const btnMeta = [
-			{sort: "name", text: "Name", width: "9"},
-			{sort: "source", text: "Source", width: "2"},
+			{sort: "name", text: "名称", width: "9"},
+			{sort: "source", text: "来源", width: "2"},
 		];
 		return ModalFilterBase._getFilterColumnHeaders(btnMeta);
 	}

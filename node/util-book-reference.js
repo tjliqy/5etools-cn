@@ -20,7 +20,7 @@ const UtilBookReference = {
 					"派系",
 				];
 			default:
-				throw new Error(`No sections defined for book id ${refId}`);
+				throw new Error(`书籍 ID ${refId} 未定义章节`);
 		}
 	},
 

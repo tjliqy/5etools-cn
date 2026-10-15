@@ -295,8 +295,8 @@ export class LootGenUi extends BaseComponent {
 						const isMundane = Renderer.item.isMundane({rarity});
 
 						const caption = tier === "other"
-							? `Other ${isMundane ? "mundane" : "magic"} items of ${rarity} rarity`
-							: `${tier.toTitleCase()}-tier ${isMundane ? "mundane" : "magic"} items of ${rarity} rarity`;
+							? `其他${isMundane ? "普通" : "魔法"}物品（${Parser.rarityToCN(rarity)}）`
+							: `${{minor: "次要", major: "主要"}[tier] || tier}${isMundane ? "普通" : "魔法"}物品（${Parser.rarityToCN(rarity)}）`;
 
 						return {
 							metaType: LOOT_TABLES_TYPE__XGE_FAUX,
@@ -309,7 +309,7 @@ export class LootGenUi extends BaseComponent {
 								caption,
 								colLabels: [
 									`d${items.length}`,
-									"Item",
+									"物品",
 								],
 								colStyles: [
 									"col-2 text-center",
@@ -376,7 +376,7 @@ export class LootGenUi extends BaseComponent {
 					buttons: [
 						{
 							html: `<span class="glyphicon glyphicon-option-vertical"></span>`,
-							title: "Options",
+							title: "选项",
 							type: "default",
 							pFnClick: null, // This is assigned later
 						},
@@ -420,45 +420,45 @@ export class LootGenUi extends BaseComponent {
 	_render_tabOptions ({tabMeta}) {
 		const menuOthers = ContextUtil.getMenu([
 			new ContextUtil.Action(
-				"Set Random Item Filters",
+				"设置随机物品筛选条件",
 				() => {
 					this._modalFilterItems.handleHiddenOpenButtonClick();
 				},
 				{
-					title: `Set the filtering parameters used to determine which items can be randomly rolled for some results. Note that this does not, for example, remove these items from standard loot tables.`,
+					title: `设置某些结果随机掷出物品时使用的筛选条件。此设置不会从标准战利品表中移除物品。`,
 					fnActionAlt: async (evt) => {
 						this._modalFilterItems.handleHiddenResetButtonClick(evt);
-						JqueryUtil.doToast(`Reset${evt.shiftKey ? " all" : ""}!`);
+						JqueryUtil.doToast(`已重置${evt.shiftKey ? "全部条件" : ""}！`);
 					},
 					textAlt: `<span class="glyphicon glyphicon-refresh"></span>`,
 					titleAlt: FILTER_BOX_TITLE_BTN_RESET,
 				},
 			),
 			new ContextUtil.Action(
-				"Set Random Spell Filters",
+				"设置随机法术筛选条件",
 				() => {
 					this._modalFilterSpells.handleHiddenOpenButtonClick();
 				},
 				{
-					title: `Set the filtering parameters used to determine which spells can be randomly rolled for some results.`,
+					title: `设置某些结果随机掷出法术时使用的筛选条件。`,
 					fnActionAlt: async (evt) => {
 						this._modalFilterSpells.handleHiddenResetButtonClick(evt);
-						JqueryUtil.doToast(`Reset${evt.shiftKey ? " all" : ""}!`);
+						JqueryUtil.doToast(`已重置${evt.shiftKey ? "全部条件" : ""}！`);
 					},
 					textAlt: `<span class="glyphicon glyphicon-refresh"></span>`,
 					titleAlt: FILTER_BOX_TITLE_BTN_RESET,
 				},
 			),
 			new ContextUtil.Action(
-				"Set Random Gems/Art Objects Filters",
+				"设置随机宝石与艺术品筛选条件",
 				() => {
 					this._modalFilterGemsArtObjects.handleHiddenOpenButtonClick();
 				},
 				{
-					title: `Set the filtering parameters used to determine which gems and art objects can be randomly rolled for some results.`,
+					title: `设置某些结果随机掷出宝石与艺术品时使用的筛选条件。`,
 					fnActionAlt: async (evt) => {
 						this._modalFilterGemsArtObjects.handleHiddenResetButtonClick(evt);
-						JqueryUtil.doToast(`Reset${evt.shiftKey ? " all" : ""}!`);
+						JqueryUtil.doToast(`已重置${evt.shiftKey ? "全部条件" : ""}！`);
 					},
 					textAlt: `<span class="glyphicon glyphicon-refresh"></span>`,
 					titleAlt: FILTER_BOX_TITLE_BTN_RESET,
@@ -500,7 +500,7 @@ export class LootGenUi extends BaseComponent {
 			});
 
 		veT(eleModalInner)`
-			<div class="ve-mb-1" title="Disabled currencies will be converted to equivalent amounts of another currency.">Allowed Currencies:</div>
+			<div class="ve-mb-1" title="未启用的货币将换算为其他货币的等值数量。">允许的货币：</div>
 			<div class="ve-pl-4 ve-flex-col">
 				${rowsCurrency}
 			</div>

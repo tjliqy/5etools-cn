@@ -139,16 +139,16 @@ export class RenderableCollectionSaveSlotStatesManager extends RenderableCollect
 			const cntPanels = getCntPanelsNonEmpty();
 			dispCntPanels
 				.vee.html(`<i class="fas fa-fw fa-window ve-mr-1"></i><span class="ve-text-center ve-w-20p">${cntPanels}</span>`)
-				.vee.tooltip(`${cntPanels} Active Panel${cntPanels === 1 ? "" : "s"}`);
+				.vee.tooltip(`${cntPanels} 个启用的面板`);
 		})();
 
 		const iptNameShort = ComponentUiUtil.getIptStr(comp, "ns")
 			.vee.addClass("ve-w-24p")
 			.vee.placeholder(entity.id)
-			.vee.tooltip("A short name, shown in the sidebar.");
+			.vee.tooltip("显示在侧边栏中的简称。");
 
 		const iptName = ComponentUiUtil.getIptStr(comp, "n")
-			.vee.tooltip("A longer name, show in tooltips and lists.");
+			.vee.tooltip("显示在提示和列表中的完整名称。");
 
 		const btnSetActive = veT`<button class="ve-btn ve-btn-default ve-btn-xs">激活</button>`
 			.vee.onn("click", async () => {

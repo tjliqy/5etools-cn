@@ -19,7 +19,7 @@ class _LootGenMagicItemSpellUtils {
 
 		const dispSpell = veT`<div class="ve-no-wrap"></div>`;
 		comp._addHookBase("spell", () => {
-			if (!comp._state.spell) return dispSpell.vee.html(`<span class="ve-help-subtle" title="${TOOLTIP_NOTHING.qq()}">(no spell)</span>`);
+			if (!comp._state.spell) return dispSpell.vee.html(`<span class="ve-help-subtle" title="${TOOLTIP_NOTHING.qq()}">（无法术）</span>`);
 			dispSpell.vee.html(rendererWrapped.er(`{@spell ${comp._state.spell.name}|${comp._state.spell.source}}`));
 		})();
 
@@ -32,7 +32,7 @@ class _LootGenMagicItemSpellUtils {
 			}
 
 			dispFilter
-				.vee.html(`${rendererWrapped.er(`{@filter see all ${Parser.spLevelToFullLevelText(comp._state.spellLevel, {isDash: true})} spells|spells|level=${comp._state.spellLevel}}`)}`)
+				.vee.html(`${rendererWrapped.er(`{@filter 查看所有${Parser.spLevelToFullLevelText(comp._state.spellLevel)}|spells|level=${comp._state.spellLevel}}`)}`)
 				.vee.show();
 		})();
 
@@ -193,14 +193,14 @@ export class LootGenMagicItem extends BaseComponent {
 			const subItems = dataManager.getDataItemsFilteredMatching(row.choose.fromMatching);
 			const ptAdditionalText = Object.entries(row.choose.fromMatching)
 				.sort(([kA], [kB]) => SortUtil.ascSortLower(kA, kB))
-				.map(([k, v]) => `${k.toTitleCase()}: ${v.toTitleCase()}`)
+				.map(([k, v]) => k === "rarity" ? `稀有度：${Parser.rarityToCN(v)}` : `${k}：${v}`)
 				.join(", ");
 
 			const item = RollerUtil.rollOnArray(subItems);
 
 			const baseEntry = item
 				? `{@item ${DataUtil.proxy.getUidPacked("item", item, "item", {isMaintainCase: true})}}`
-				: `<span class="ve-help-subtle" title="${TOOLTIP_NOTHING.qq()}">(No item)</span>`;
+				: `<span class="ve-help-subtle" title="${TOOLTIP_NOTHING.qq()}">（没有物品）</span>`;
 
 			return new LootGenMagicItemSubItems({
 				dataManager,
@@ -289,7 +289,7 @@ export class LootGenMagicItem extends BaseComponent {
 	) {
 		baseEntry = baseEntry || item
 			? `{@item ${DataUtil.proxy.getUidPacked("item", item, "item", {isMaintainCase: true})}}`
-			: `<span class="ve-help-subtle" title="${TOOLTIP_NOTHING.qq()}">(no item)</span>`;
+			: `<span class="ve-help-subtle" title="${TOOLTIP_NOTHING.qq()}">（没有物品）</span>`;
 
 		if (item?.spellScrollLevel != null) {
 			return new LootGenMagicItemSpellScroll({
@@ -471,7 +471,7 @@ export class LootGenMagicItem extends BaseComponent {
 
 		const isAltModeDefault = this._fnGetIsPreferAltChoose?.();
 		const title = this._itemsAltChoose
-			? isAltModeDefault ? `SHIFT to roll on Magic Item Table ${this._magicItemTable.type}` : `SHIFT to roll ${Parser.getArticle(this._itemsAltChooseDisplayText)} ${this._itemsAltChooseDisplayText} item`
+			? isAltModeDefault ? `按住 Shift 可在魔法物品表 ${this._magicItemTable.type} 上掷骰` : `按住 Shift 可随机选择一件${this._itemsAltChooseDisplayText}物品`
 			: null;
 		return veT`<span class="ve-roller render-roller" ${title ? `title="${title}"` : ""}>[${I18nUtil.get("common.button.reroll")}]</span>`
 			.vee.onn("mousedown", evt => evt.preventDefault())
@@ -508,7 +508,7 @@ export class LootGenMagicItem extends BaseComponent {
 
 	_getRender_getDispRoll ({prop = "roll", propAdditionalText = "rollAdditionalText"} = {}) {
 		const dispRoll = veT`<div class="ve-muted"></div>`;
-		const hkRoll = () => dispRoll.vee.txt(this._state.isItemsAltChooseRoll ? `(${this._itemsAltChooseDisplayText} item)` : `(Rolled ${this._state[prop]}${this._state[propAdditionalText] || ""})`);
+		const hkRoll = () => dispRoll.vee.txt(this._state.isItemsAltChooseRoll ? `（${this._itemsAltChooseDisplayText}物品）` : `（掷骰结果：${this._state[prop]}${this._state[propAdditionalText] || ""}）`);
 		this._addHookBase(prop, hkRoll);
 		hkRoll();
 		return dispRoll;

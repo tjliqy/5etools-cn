@@ -115,7 +115,7 @@ export class ScaleCreature {
 
 		Renderer.monster.updateParsed(mon);
 
-		mon._displayName = `${mon.name} (CR ${crOutStr})`;
+		mon._displayName = `${mon.name}（挑战等级 ${crOutStr}）`;
 		mon._scaledCr = crOutNumber;
 		mon._isScaledCr = true;
 		mon._originalCr = mon._originalCr || crIn;
@@ -321,7 +321,7 @@ export class ScaleCreature {
 					if (anyChange) {
 						if (primaryInLevel == null) primaryInLevel = level;
 						if (primaryOutLevel == null) primaryOutLevel = outLevel;
-						return `${Parser.getArticle(outLevel)} ${Parser.spLevelToFull(outLevel)}-level`;
+						return `${outLevel} 级`;
 					} else return m[0];
 				});
 
@@ -410,7 +410,7 @@ export class ScaleCreature {
 						slots,
 						lower: 1,
 						spells: [
-							`A selection of ${maxSpellLevel === 1 ? `{@filter 1st-level warlock spells|spells|level=${1}|class=warlock}.` : `{@filter 1st- to ${Parser.spLevelToFull(maxSpellLevel)}-level warlock spells|spells|level=${[...new Array(maxSpellLevel)].map((_, i) => i + 1).join(";")}|class=warlock}.`}  Examples include: ${spellsKnown.sort(SortUtil.ascSortLower).map(it => `{@spell ${it}}`).joinConjunct(", ", " and ")}`,
+							`若干${maxSpellLevel === 1 ? `{@filter 1 环邪术师法术|spells|level=${1}|class=warlock}` : `{@filter 1 至 ${maxSpellLevel} 环邪术师法术|spells|level=${[...new Array(maxSpellLevel)].map((_, i) => i + 1).join(";")}|class=warlock}`}。例如：${spellsKnown.sort(SortUtil.ascSortLower).map(it => `{@spell ${it}}`).joinConjunct("、", "和")}`,
 						],
 					};
 				} else {
@@ -445,14 +445,14 @@ export class ScaleCreature {
 								spells[i] = {
 									slots,
 									spells: [
-										`A selection of {@filter ${Parser.spLevelToFull(i)}-level ${spellsFromClass} spells|spells|level=${i}|class=${spellsFromClass}}. Examples include: ${examples.sort(SortUtil.ascSortLower).map(it => `{@spell ${it}}`).joinConjunct(", ", " and ")}`,
+										`若干{@filter ${i} 环${Parser.CLASSES_TO_CN[spellsFromClass.toTitleCase()] || spellsFromClass}法术|spells|level=${i}|class=${spellsFromClass}}。例如：${examples.sort(SortUtil.ascSortLower).map(it => `{@spell ${it}}`).joinConjunct("、", "和")}`,
 									],
 								};
 							} else {
 								spells[i] = {
 									slots,
 									spells: [
-										`A selection of {@filter ${Parser.spLevelToFull(i)}-level spells|spells|level=${i}}`,
+										`若干{@filter ${i} 环法术|spells|level=${i}}`,
 									],
 								};
 							}

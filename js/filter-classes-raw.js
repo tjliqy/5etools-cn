@@ -38,7 +38,7 @@ export class ModalFilterClasses extends ModalFilterBase {
 		opts = opts || {};
 
 		super({
-			modalTitle: "Class and Subclass",
+			modalTitle: "职业与子职",
 			pageFilter: new PageFilterClassesRaw(),
 			fnSort: ModalFilterClasses.fnSort,
 			...opts,
@@ -463,7 +463,7 @@ export class ModalFilterClasses extends ModalFilterBase {
 			cls.subclasses = cls.subclasses || [];
 
 			cls.subclasses.forEach(sc => {
-				sc.name = sc.name || "(Unnamed subclass)";
+				sc.name = sc.name || "（未命名子职）";
 				sc.source = sc.source || cls.source;
 				sc.className = sc.className || cls.name;
 				sc.classSource = sc.classSource || cls.source || Parser.SRC_PHB;

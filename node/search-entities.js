@@ -9,18 +9,18 @@ process.chdir(repoRoot);
 
 const program = new Command()
 	.name("search-entities")
-	.description("Search the site's global entity index and print each result's JSON source file.")
-	.argument("<query...>", "Search text; supports the site's in:, source:, and page: filters")
-	.addOption(new Option("-l, --limit <number>", "Maximum number of results").default(20).argParser(Number))
-	.option("--json", "Output machine-readable JSON")
-	.option("--files-only", "Print unique JSON source file paths only")
+	.description("搜索站点的全局条目索引，并输出结果对应的 JSON 源文件。")
+	.argument("<query...>", "搜索文本；支持站点的 in:、source: 和 page: 筛选条件")
+	.addOption(new Option("-l, --limit <number>", "最多返回的结果数量").default(20).argParser(Number))
+	.option("--json", "输出机器可读的 JSON")
+	.option("--files-only", "仅输出去重后的 JSON 源文件路径")
 ;
 
 program.parse();
 const params = program.opts();
 const query = program.args.join(" ").trim();
 
-if (!Number.isInteger(params.limit) || params.limit < 1) program.error("--limit must be a positive integer");
+if (!Number.isInteger(params.limit) || params.limit < 1) program.error("--limit 必须是正整数");
 
 const loadBrowserLibrary = (file) => vm.runInThisContext(fs.readFileSync(file, "utf8"), {filename: file});
 
@@ -182,7 +182,7 @@ const output = results
 	});
 
 if (!output.length) {
-	console.error(`No matching entities found for "${query}".`);
+	console.error(`未找到与“${query}”匹配的条目。`);
 	process.exitCode = 1;
 } else if (params.filesOnly) {
 	console.log([...new Set(output.flatMap(it => [it.file, it.englishFile]))].join("\n"));

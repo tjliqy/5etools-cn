@@ -33,8 +33,8 @@ const FILE_BLOCKLIST = new Set([
 ]);
 
 const program = mutCommanderJsonFileOptions({command: new Command()})
-	.option("--no-sort", `If arrays in the root should not be sorted`)
-	.option("--dry", `If this should be a dry-run`)
+	.option("--no-sort", `不对根层级数组排序`)
+	.option("--dry", `仅预览，不写入文件`)
 ;
 
 program.parse(process.argv);
@@ -57,9 +57,9 @@ getCliJsonFiles(
 	.forEach(file => prettifyFile(file, {unhandledKeys, isNoSortRootArrays: !params.sort, isDryRun: params.dry}));
 
 if (Object.keys(unhandledKeys).length) {
-	console.warn(`Unhandled keys:`);
+	console.warn(`未处理的键：`);
 	Object.keys(unhandledKeys)
 		.forEach(prop => console.warn(`\t${prop}`));
 }
 
-console.log("Prettifying complete.");
+console.log("格式化完成。");

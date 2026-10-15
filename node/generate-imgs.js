@@ -1,3 +1,4 @@
+import "./locale/i18n.js";
 /**
  * Rename bestiary fluff images to match the source they originate from.
  *
@@ -16,14 +17,14 @@ function getTokenUrl (ent, name, mediaDir) {
 		return `./img/${mediaDir}/${ent.token.source}/${Parser.nameToTokenName(ent.token.name)}.webp`;
 	}
 	if (ent.tokenHref) {
-		throw new Error(`Could not process ent.token!`);
+		throw new Error(`无法处理 ent.token！`);
 		// return Renderer.utils.getEntryMediaUrl(ent, "tokenHref", "img");
 	}
 	return `./img/${mediaDir}/${ent.source}/${Parser.nameToTokenName(name)}.webp`;
 }
 
 function cleanBestiaryFluffImages () {
-	console.log(`##### Generating bestiary cn tokens #####`);
+	console.log(`##### 正在生成怪物中文标记图 #####`);
 
 	// read all the image dirs and track which images are actually in use
 	const _ALL_IMAGE_PATHS = new Set();
@@ -82,7 +83,7 @@ function cleanBestiaryFluffImages () {
 		}
 	});
 
-	console.log(`Done!`);
+	console.log(`完成！`);
 }
 
 cleanBestiaryFluffImages();

@@ -68,10 +68,10 @@ if (!shouldRegenerate()) {
 		fileDate.setDate(fileDate.getDate() + i);
 		const filename = `urls-${formatDate(fileDate)}.txt`;
 		fs.writeFileSync(path.join(OUTPUT_DIR, filename), chunk.join("\n") + "\n", "utf-8");
-		console.log(`Wrote ${chunk.length} URLs to urls/${filename}`);
+		console.log(`已将 ${chunk.length} 个 URL 写入 urls/${filename}`);
 	}
 
-	console.log(`Total: ${urls.length} URLs in ${totalFiles} file(s)`);
+	console.log(`总计：${totalFiles} 个文件，共 ${urls.length} 个 URL`);
 }
 
 // 提交当日 URL 到百度

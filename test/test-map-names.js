@@ -61,7 +61,7 @@ const getFauxJsonVehicleFluff = ({jsonFile}) => {
 async function main () {
 	await pInitConsoleOut();
 
-	console.log(`##### Validating map names #####`);
+	console.log(`##### 正在验证地图名称 #####`);
 
 	const warnings = [];
 
@@ -115,7 +115,7 @@ async function main () {
 		.forEach(jsonFile => {
 			getCorpora({jsonFile})
 				.forEach(({head, corpusType, body}) => {
-					console.log(`\tValidating ${corpusType} "${head.id}"...`);
+					console.log(`\t正在验证 ${corpusType}“${head.id}”…`);
 
 					const {availableMaps} = new CorpusMapImageExtractor().getMutMapMeta({head, body, corpusType});
 

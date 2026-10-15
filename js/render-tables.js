@@ -15,13 +15,13 @@ class RenderTables {
 		switch (it.parentEntity.prop) {
 			case "class": {
 				return `<tr><td colspan="6">
-						${Renderer.get().render(`{@note ${it.__prop === "table" ? `This table is` : "These tables are"} from the {@class ${unpacked.name}|${unpacked.source}} class.}`)}
+						${Renderer.get().render(`{@note ${it.__prop === "table" ? "此表格" : "这些表格"}来自{@class ${unpacked.name}|${unpacked.source}}职业。}`)}
 					</td></tr>`;
 			}
 
 			case "subclass": {
 				return `<tr><td colspan="6">
-						${Renderer.get().render(`{@note ${it.__prop === "table" ? `This table is` : "These tables are"} from the {@class ${unpacked.className}|${unpacked.classSource}|${unpacked.name}|${unpacked.shortName}|${unpacked.source}} <span title="Source: ${Parser.sourceJsonToFull(unpacked.classSource)}">${unpacked.className}</span> subclass.}`)}
+						${Renderer.get().render(`{@note ${it.__prop === "table" ? "此表格" : "这些表格"}来自{@class ${unpacked.className}|${unpacked.classSource}|${unpacked.name}|${unpacked.shortName}|${unpacked.source}} <span title="来源：${Parser.sourceJsonToFull(unpacked.classSource)}">${unpacked.className}</span>子职。}`)}
 					</td></tr>`;
 			}
 
@@ -29,7 +29,7 @@ class RenderTables {
 				const displayName = Parser.getPropDisplayName(it.parentEntity.prop);
 
 				return `<tr><td colspan="6">
-						${Renderer.get().render(`{@note ${it.__prop === "table" ? `This table is` : "These tables are"} from the {@${tag} ${unpacked.name}|${unpacked.source}} ${displayName.toLowerCase()}.}`)}
+						${Renderer.get().render(`{@note ${it.__prop === "table" ? "此表格" : "这些表格"}来自{@${tag} ${unpacked.name}|${unpacked.source}}${displayName}。}`)}
 					</td></tr>`;
 			}
 		}

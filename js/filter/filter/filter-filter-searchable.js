@@ -87,7 +87,7 @@ export class SearchableFilter extends Filter {
 			this._compSearch,
 			"search",
 			{
-				html: `<input class="ve-form-control form-control--minimal ve-input-xs" placeholder="Search...">`,
+				html: `<input class="ve-form-control form-control--minimal ve-input-xs" placeholder="搜索...">`,
 			},
 		);
 

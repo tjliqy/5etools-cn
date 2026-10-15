@@ -4,28 +4,28 @@ class BastionsSublistManager extends SublistManager {
 	static _getRowTemplate () {
 		return [
 			new SublistCellTemplate({
-				name: "Type",
+				name: "类型",
 				css: "ve-col-2 ve-pl-0 ve-pr-1 ve-text-center",
 				colStyle: "text-center",
 			}),
 			new SublistCellTemplate({
-				name: "Name",
+				name: "名称",
 				css: "ve-bold ve-col-3 ve-px-1",
 			}),
 			new SublistCellTemplate({
-				name: "Level",
+				name: "等级",
 				css: "ve-col-2 ve-px-1 ve-text-center",
 				colStyle: "text-center",
 			}),
 			new SublistCellTemplate({
-				name: "Prerequisite",
+				name: "先决条件",
 				css: "ve-col-5 ve-pl-1 ve-pr-0",
 			}),
 		];
 	}
 
 	pGetSublistItem (ent, hash) {
-		const facilityType = (ent.facilityType || "Unknown").toTitleCase();
+		const facilityType = (ent.facilityType || "未知").toTitleCase();
 
 		const cellsText = [
 			facilityType,
@@ -76,13 +76,13 @@ class BastionsPage extends ListPage {
 			dataProps: ["facility"],
 
 			bookViewOptions: {
-				nameSingular: "facility",
-				namePlural: "facilities",
-				pageTitle: "Facilities Book View",
+				nameSingular: "据点设施",
+				namePlural: "据点设施",
+				pageTitle: "设施书籍视图",
 			},
 
 			tableViewOptions: {
-				title: "Facilities",
+				title: "设施",
 				colTransforms: {
 					name: UtilsTableview.COL_TRANSFORM_NAME,
 					source: UtilsTableview.COL_TRANSFORM_SOURCE,

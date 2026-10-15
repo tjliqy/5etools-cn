@@ -1,7 +1,7 @@
 import { Workbox } from "workbox-window/Workbox.mjs";
 
 // throwing an uncaught error ends execution of this script.
-if (!navigator?.serviceWorker) throw new Error("no serviceWorker in navigator, no sw will be injected");
+if (!navigator?.serviceWorker) throw new Error("浏览器不支持 Service Worker，无法注入离线服务脚本");
 
 const throttle = (func, delay) => {
 	let timeout = null;
@@ -31,7 +31,7 @@ const pDoWaitForServiceWorkerActivation = sw => {
 const fetchError = {
 	"generic": throttle(() => {
 		JqueryUtil.doToast({
-			content: `Failed to fetch some generic content\u2014you are offline and have not viewed this content before. Pages may not load correctly.`,
+			content: `部分通用内容加载失败：当前处于离线状态，且之前未浏览过这些内容。页面可能无法正常显示。`,
 			type: "warning",
 			autoHideTime: 2_500 /* 2.5 seconds */,
 		});
@@ -39,7 +39,7 @@ const fetchError = {
 
 	"json": throttle(() => {
 		JqueryUtil.doToast({
-			content: `Failed to fetch data\u2014you are offline and have not viewed this content before. This page may not load correctly.`,
+			content: `数据加载失败：当前处于离线状态，且之前未浏览过这些数据。此页面可能无法正常显示。`,
 			type: "danger",
 			autoHideTime: 9_000 /* 9 seconds */,
 		});
@@ -47,7 +47,7 @@ const fetchError = {
 
 	"image": throttle(() => {
 		JqueryUtil.doToast({
-			content: `Failed to fetch images\u2014you are offline and have not viewed this content before. Images may not display correctly.`,
+			content: `无法获取图片：您目前处于离线状态，且此前未浏览过这些内容。图片可能无法正常显示。`,
 			type: "info",
 			autoHideTime: 5_000 /* 5 seconds */,
 		});
@@ -59,13 +59,13 @@ const wb = new Workbox("sw.js");
 wb.addEventListener("waiting", ({sw}) => {
 	if (!VetoolsConfig.get("ui", "isNotifyUpdates")) return;
 
-	const btnUpdate = veT`<button class="ve-btn ve-btn-primary ve-btn-xs ve-ml-2 ve-w-140p">Update and Reload</button>`
+	const btnUpdate = veT`<button class="ve-btn ve-btn-primary ve-btn-xs ve-ml-2 ve-w-140p">更新并重新加载</button>`
 		.vee.onn("click", async evt => {
 			evt.stopPropagation();
 
 			btnUpdate
 				.vee.prop("disabled", true)
-				.vee.txt("Updating...")
+				.vee.txt("正在更新……")
 				.vee.addClass("ve-text-center");
 
 			const pActivated = pDoWaitForServiceWorkerActivation(sw);
@@ -75,13 +75,13 @@ wb.addEventListener("waiting", ({sw}) => {
 			window.location.reload();
 		});
 
-	const lnk = veT`<a href="${Renderer.get().baseUrl}changelog.html" class="alert-link">changelog</a>`
+	const lnk = veT`<a href="${Renderer.get().baseUrl}changelog.html" class="alert-link">更新日志</a>`
 		.vee.onn("click", evt => {
 			evt.stopPropagation();
 		});
 
 	JqueryUtil.doToast({
-		content: veT`<div>An update to ${window.location.hostname} is ready. See the ${lnk} for more info. ${btnUpdate}</div>`,
+		content: veT`<div>${window.location.hostname} 的更新已就绪。详情请查看${lnk}。${btnUpdate}</div>`,
 		type: "info",
 		isAutoHide: false,
 	});
@@ -101,7 +101,7 @@ const swCacheRoutes = (routeRegex) => {
 		type: "CACHE_ROUTES",
 		payload: { routeRegex },
 	});
-	JqueryUtil.doToast({content: "Starting preload...", autoHideTime: 500});
+	JqueryUtil.doToast({content: "开始预加载……", autoHideTime: 500});
 };
 
 /**
@@ -111,7 +111,7 @@ const swCancelCacheRoutes = () => {
 	wb.messageSW({type: "CANCEL_CACHE_ROUTES"});
 	setTimeout(() => {
 		removeDownloadBar();
-		JqueryUtil.doToast("Preload was canceled. Some data may have been preloaded.");
+		JqueryUtil.doToast("预加载已取消。部分数据可能已经预加载。");
 	}, 1000);
 };
 
@@ -120,7 +120,7 @@ const swCancelCacheRoutes = () => {
  */
 const swResetAll = () => {
 	wb.messageSW({type: "RESET"});
-	JqueryUtil.doToast({content: "Resetting..."});
+	JqueryUtil.doToast({content: "正在重置……"});
 };
 
 // icky global but no bundler, so no other good choice
@@ -189,7 +189,7 @@ const updateDownloadBar = (msg) => {
 
 			downloadBar.wrapBar.addClass("page__wrp-download-bar--error");
 			downloadBar.displayProgress.addClass("page__disp-download-progress-bar--error");
-			downloadBar.displayPercent.txt("Error!");
+			downloadBar.displayPercent.txt("错误！");
 
 			setTimeout(() => {
 				removeDownloadBar();
@@ -198,8 +198,8 @@ const updateDownloadBar = (msg) => {
 						type: "warning",
 						autoHideTime: 15_000,
 						content: msg.payload.isQuotaExceeded
-							? `Storage quota exceeded. You may have to reset preloaded data \u2014 or choose a smaller preload \u2014 then try again.`
-							: `An error occurred while preloading. You may have gone offline, or the server may not be responding. Please try again. ${VeCt.STR_SEE_CONSOLE}`,
+							? `存储空间不足。请重置已预加载的数据，或选择较小的预加载范围后重试。`
+							: `预加载时发生错误。您可能已离线，或服务器没有响应。请重试。${VeCt.STR_SEE_CONSOLE}`,
 					},
 				);
 			}, 2_000);
@@ -212,7 +212,7 @@ const updateDownloadBar = (msg) => {
  */
 const finishedDownload = () => {
 	removeDownloadBar();
-	JqueryUtil.doToast({type: "success", content: "Preload complete! The preloaded content is now ready for offline use."});
+	JqueryUtil.doToast({type: "success", content: "预加载完成！现在可以离线使用已预加载的内容。"});
 };
 
 wb.addEventListener("message", event => {

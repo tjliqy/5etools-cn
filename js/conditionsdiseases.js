@@ -4,12 +4,12 @@ class ConditionsDiseasesSublistManager extends SublistManager {
 	static _getRowTemplate () {
 		return [
 			new SublistCellTemplate({
-				name: "Type",
+				name: "类型",
 				css: "ve-col-2 ve-pl-0 ve-pr-1 ve-text-center",
 				colStyle: "text-center",
 			}),
 			new SublistCellTemplate({
-				name: "Name",
+				name: "名称",
 				css: "ve-bold ve-col-10 ve-pl-1 ve-pr-0",
 				colStyle: "",
 			}),
@@ -61,9 +61,9 @@ class ConditionsDiseasesPage extends ListPage {
 			dataProps: ["condition", "disease", "status"],
 
 			bookViewOptions: {
-				nameSingular: "condition/disease",
-				namePlural: "conditions/diseases",
-				pageTitle: "Conditions and Diseases Book View",
+				nameSingular: "状态／疾病",
+				namePlural: "状态／疾病",
+				pageTitle: "状态与疾病书籍视图",
 			},
 
 			isPreviewable: true,

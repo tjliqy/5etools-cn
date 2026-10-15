@@ -54,12 +54,12 @@ export class FilterSnapshotUiTabSnapshotDecks {
 
 		const {menuMass} = this._pRender_stgControls_menuMass({selectClickHandler});
 
-		const btnMass = veT`<button class="ve-btn ve-btn-primary ve-btn-xs ve-mr-2">Mass...</button>`
+		const btnMass = veT`<button class="ve-btn ve-btn-primary ve-btn-xs ve-mr-2">批量操作...</button>`
 			.vee.onn("click", async evt => {
 				await ContextUtil.pOpenMenu(evt, menuMass);
 			});
 
-		const btnCreateSnapshotDeck = veT`<button class="ve-btn ve-btn-primary ve-btn-xs ve-mr-2">Create Snapshot Deck</button>`
+		const btnCreateSnapshotDeck = veT`<button class="ve-btn ve-btn-primary ve-btn-xs ve-mr-2">创建快照集</button>`
 			.vee.onn("click", async () => {
 				await this._compManager.pHandleClick_createSnapshotDeck();
 			});
@@ -75,12 +75,12 @@ export class FilterSnapshotUiTabSnapshotDecks {
 	_pRender_stgControls_menuMass ({selectClickHandler}) {
 		const menuMass = ContextUtil.getMenu([
 			new ContextUtil.Action(
-				"Delete",
+				"删除",
 				async () => {
 					const selectedSnapshotDeckIds = selectClickHandler.getSelectedIds();
-					if (!selectedSnapshotDeckIds.length) return JqueryUtil.doToast({content: `Please select some snapshot decks first!`, type: "warning"});
+					if (!selectedSnapshotDeckIds.length) return JqueryUtil.doToast({content: `请先选择快照集！`, type: "warning"});
 
-					if (!await InputUiUtil.pGetUserBoolean({title: "Delete Snapshot Decks", htmlDescription: `This will delete ${selectedSnapshotDeckIds.length} snapshot deck${selectedSnapshotDeckIds.length === 1 ? "" : "s"}. 你确定吗？`, textYes: "Yes", textNo: "Cancel"})) return;
+					if (!await InputUiUtil.pGetUserBoolean({title: "删除快照集", htmlDescription: `即将删除 ${selectedSnapshotDeckIds.length} 个快照集，确定吗？`, textYes: "是", textNo: "取消"})) return;
 
 					const toDelete = new Set(selectedSnapshotDeckIds);
 
@@ -97,13 +97,13 @@ export class FilterSnapshotUiTabSnapshotDecks {
 	_pRender_stgNoRows () {
 		const stgNoRows = FilterSnapshotUiTabUtils.getStgNoRows();
 
-		const btnAddSnapshotDeckNoRows = veT`<button class="ve-btn ve-btn-primary">Create Snapshot Deck</button>`
+		const btnAddSnapshotDeckNoRows = veT`<button class="ve-btn ve-btn-primary">创建快照集</button>`
 			.vee.onn("click", async () => {
 				await this._compManager.pHandleClick_createSnapshotDeck();
 			});
 
 		veT(stgNoRows)`<div class="ve-flex-col">
-			<div class="ve-mb-2 ve-muted"><i>No Snapshot Decks.</i></div>
+			<div class="ve-mb-2 ve-muted"><i>暂无快照集。</i></div>
 			${btnAddSnapshotDeckNoRows}
 		</div>`;
 

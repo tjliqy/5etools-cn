@@ -47,7 +47,7 @@ export class RenderableCollectionSnapshots extends RenderableCollectionFilterSna
 
 		const btnToggleExpand = this.constructor._getBtnToggleExpand(comp, {isSibling: true});
 
-		const iptName = ComponentUiUtil.getIptStr(comp, "manager_name", {placeholder: "Name"});
+		const iptName = ComponentUiUtil.getIptStr(comp, "manager_name", {placeholder: "名称"});
 
 		// On updating name, find all decks in which this snapshot is used, and update the transient name
 		comp._addHookBase("manager_name", () => {
@@ -72,15 +72,15 @@ export class RenderableCollectionSnapshots extends RenderableCollectionFilterSna
 
 		const btnDelete = this._utils.getBtnDelete({entity});
 
-		const btnApply = veT`<button class="ve-btn ve-btn-xs ve-btn-primary" title="Apply as Filters"><span class="glyphicon glyphicon-ok"></span></button>`
+		const btnApply = veT`<button class="ve-btn ve-btn-xs ve-btn-primary" title="应用为筛选条件"><span class="glyphicon glyphicon-ok"></span></button>`
 			.vee.onn("click", async () => {
 				this._comp.doSetFiltersFromBoxSnapshot_(entity.entity);
-				JqueryUtil.doToast("Applied Snapshot as Filters!");
+				JqueryUtil.doToast("已将快照应用为筛选条件！");
 			});
 
-		const btnAddToDeck = veT`<button class="ve-btn ve-btn-xs ve-btn-default ve-mr-2">Add to Snapshot Deck</button>`
+		const btnAddToDeck = veT`<button class="ve-btn ve-btn-xs ve-btn-default ve-mr-2">添加到快照集</button>`
 			.vee.onn("click", async () => {
-				if (!this._comp._state.boxSnapshotDecks.length) return JqueryUtil.doToast({content: `No snapshot decks available! Please create one first.`, type: "warning"});
+				if (!this._comp._state.boxSnapshotDecks.length) return JqueryUtil.doToast({content: `暂无快照集，请先创建。`, type: "warning"});
 
 				const {boxSnapshotDeck} = await this._comp.pGetUserBoxSnapshotDeckInfo();
 				if (!boxSnapshotDeck) return;
@@ -96,7 +96,7 @@ export class RenderableCollectionSnapshots extends RenderableCollectionFilterSna
 
 				this._comp._triggerCollectionUpdate("boxSnapshotDecks");
 
-				JqueryUtil.doToast(`Added to Snapshot Deck!`);
+				JqueryUtil.doToast(`已添加到快照集！`);
 			});
 
 		const stgHeader = veT`<div class="ve-flex-v-center ve-w-100 ve-py-1 ve-lst__row ve-lst__row-border ve-lst__row-inner">
@@ -122,7 +122,7 @@ export class RenderableCollectionSnapshots extends RenderableCollectionFilterSna
 			wrpDisplayState.vee.html(this._getSnapshotsDisplayState({snapshots: comp._state.filterSnapshots}));
 		})();
 
-		const btnClearDefaults = veT`<button class="ve-btn ve-btn-xs ve-btn-default" title="Remove any defaulted filters from the snapshot. This allows a snapshot to more easily combine with other snapshots in a snapshot deck.">Remove &quot;Default&quot;</button>`
+		const btnClearDefaults = veT`<button class="ve-btn ve-btn-xs ve-btn-default" title="从快照中移除默认筛选条件，便于与快照集中的其他快照组合。">移除“默认值”</button>`
 			.vee.onn("click", () => {
 				const headersDefault = new Set(this._getSnapshotsDefaultFilterHeaders({snapshots: comp._state.filterSnapshots}));
 

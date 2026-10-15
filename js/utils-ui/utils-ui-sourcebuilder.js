@@ -33,7 +33,7 @@ export class SourceUiUtil {
 			if (val.length && val.length < 6) {
 				iptJson
 					.vee.addClass("form-control--warning")
-					.vee.tooltip("JSON source identifiers are expected to be ≥ 6 characters.");
+					.vee.tooltip("JSON 来源标识符应不少于 6 个字符。");
 			}
 		};
 		const iptName = veT`<input class="ve-form-control ve-ui-source__ipt-named">`
@@ -85,7 +85,7 @@ export class SourceUiUtil {
 			.vee.onn("keydown", evt => { if (evt.key === "Escape") iptConverters.vee.blur(); });
 		if (options.source) iptConverters.vee.val((options.source.convertedBy || []).join(", "));
 
-		const btnOk = veT`<button class="ve-btn ve-btn-primary">OK</button>`
+		const btnOk = veT`<button class="ve-btn ve-btn-primary">确定</button>`
 			.vee.onn("click", async () => {
 				let incomplete = false;
 				[iptName, iptAbv, iptJson].forEach(ipt => {
@@ -97,7 +97,7 @@ export class SourceUiUtil {
 				const jsonVal = iptJson.vee.val().trim();
 				if (!isEditMode && BrewUtil2.hasSourceJson(jsonVal)) {
 					iptJson.vee.addClass("form-control--error");
-					JqueryUtil.doToast({content: `The JSON identifier "${jsonVal}" already exists!`, type: "danger"});
+					JqueryUtil.doToast({content: `JSON 标识符“${jsonVal}”已存在！`, type: "danger"});
 					return;
 				}
 
@@ -128,7 +128,7 @@ export class SourceUiUtil {
 			: veT`<button class="ve-btn ve-btn-default ve-ml-2">取消</button>`
 				.vee.onn("click", () => options.cbCancel());
 
-		const btnUseExisting = veT`<button class="ve-btn ve-btn-default">Use an Existing Source</button>`
+		const btnUseExisting = veT`<button class="ve-btn ve-btn-default">使用现有来源</button>`
 			.vee.onn("click", () => {
 				stgInitial.vee.hide();
 				stgExisting.vee.show();
@@ -177,19 +177,19 @@ export class SourceUiUtil {
 			</div></div>
 			<div class="ve-text-center ve-mb-2">${btnOk}${btnCancel}</div>
 
-			${!isEditMode && BrewUtil2.getMetaLookup("sources")?.length ? veT`<div class="ve-flex-vh-center ve-mb-3 ve-mt-3"><span class="ve-ui-source__divider"></span>or<span class="ve-ui-source__divider"></span></div>
+			${!isEditMode && BrewUtil2.getMetaLookup("sources")?.length ? veT`<div class="ve-flex-vh-center ve-mb-3 ve-mt-3"><span class="ve-ui-source__divider"></span>或<span class="ve-ui-source__divider"></span></div>
 			<div class="ve-flex-vh-center">${btnUseExisting}</div>` : ""}
 		</div></div>`
 			.vee.appendTo(options.eleParent);
 
 		const selExisting = veT`<select class="ve-form-control ve-input-sm">
-			<option disabled>Select</option>
+			<option disabled>请选择</option>
 			${(BrewUtil2.getMetaLookup("sources") || []).sort((a, b) => SortUtil.ascSortLower(a.full, b.full)).map(s => `<option value="${s.json.escapeQuotes()}">${s.full.escapeQuotes()}</option>`)}
 		</select>`
 			.vee.onn("change", () => selExisting.vee.removeClass("form-control--error"));
 		selExisting.selectedIndex = 0;
 
-		const btnConfirmExisting = veT`<button class="ve-btn ve-btn-default ve-btn-sm">Confirm</button>`
+		const btnConfirmExisting = veT`<button class="ve-btn ve-btn-default ve-btn-sm">确认</button>`
 			.vee.onn("click", async () => {
 				if (selExisting.selectedIndex === 0) {
 					selExisting.vee.addClass("form-control--error");
@@ -206,7 +206,7 @@ export class SourceUiUtil {
 				stgInitial.vee.show();
 			});
 
-		const btnBackExisting = veT`<button class="ve-btn ve-btn-default ve-btn-sm ve-mr-2">Back</button>`
+		const btnBackExisting = veT`<button class="ve-btn ve-btn-default ve-btn-sm ve-mr-2">返回</button>`
 			.vee.onn("click", () => {
 				selExisting.selectedIndex = 0;
 				stgExisting.vee.hide();
@@ -214,7 +214,7 @@ export class SourceUiUtil {
 			});
 
 		const stgExisting = veT`<div class="ve-h-100 ve-w-100 ve-flex-vh-center ve-hidden"><div>
-			<h3 class="ve-text-center">Select a Homebrew Source</h3>
+			<h3 class="ve-text-center">选择自制内容来源</h3>
 			<div class="ve-mb-2"><div class="ve-col-12 ve-flex-vh-center">${selExisting}</div></div>
 			<div class="ve-col-12 ve-flex-vh-center">${btnBackExisting}${btnConfirmExisting}</div>
 		</div></div>`

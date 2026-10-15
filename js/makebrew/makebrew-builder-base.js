@@ -23,19 +23,19 @@ class _ManageExistingEntitiesUi extends BaseComponent {
 	_getMassContextMenu () {
 		return ContextUtil.getMenu([
 			new ContextUtil.Action(
-				"Download JSON",
+				"下载 JSON",
 				async () => {
 					await this._parent.pDoHandleClickDownloadJson({uniqueIds: this._getSelectedUniqueIds()});
 				},
 			),
 			new ContextUtil.Action(
-				"Download Markdown",
+				"下载 Markdown",
 				async () => {
 					await this._parent.pDoHandleClickDownloadMarkdown({uniqueIds: this._getSelectedUniqueIds()});
 				},
 			),
 			new ContextUtil.Action(
-				"Delete",
+				"删除",
 				async () => {
 					const uniqueIds = this._getSelectedUniqueIds();
 					await this._parent.pHandleClick_deleteUniqueIds(uniqueIds, {isConfirm: true});
@@ -48,21 +48,21 @@ class _ManageExistingEntitiesUi extends BaseComponent {
 
 	render ({wrp}) {
 		let menuMass;
-		const btnMass = veT`<button class="ve-btn ve-btn-default ve-bbl-0 ve-self-flex-stretch">Mass...</button>`
+		const btnMass = veT`<button class="ve-btn ve-btn-default ve-bbl-0 ve-self-flex-stretch">批量操作...</button>`
 			.vee.onn("click", async evt => {
 				menuMass ||= this._getMassContextMenu();
 				await ContextUtil.pOpenMenu(evt, menuMass);
 			});
 
-		const btnReset = veT`<button class="ve-btn ve-btn-default">Reset</button>`;
+		const btnReset = veT`<button class="ve-btn ve-btn-default">重置</button>`;
 
 		const cbAll = veT`<input type="checkbox">`;
 		const wrpRows = veT`<div class="list ve-flex-col ve-w-100 ve-max-h-unset"></div>`;
-		const iptSearch = veT`<input type="search" class="search ve-form-control ve-w-100 ve-lst__search ve-lst__search--no-border-h" placeholder="Search entities...">`;
+		const iptSearch = veT`<input type="search" class="search ve-form-control ve-w-100 ve-lst__search ve-lst__search--no-border-h" placeholder="搜索条目...">`;
 		const disp = veT`<div class="ve-lst__wrp-search-visible ve-no-events ve-flex-vh-center"></div>`;
 		const wrpBtnsSort = veT`<div class="filtertools ve-input-group ve-input-group--bottom ve-flex ve-no-shrink">
 			<label class="ve-btn ve-btn-default ve-btn-xs ve-col-1 ve-pl-1 ve-pr-0 ve-flex-vh-center">${cbAll}</label>
-			<button class="ve-col-9-5 sort ve-btn ve-btn-default ve-btn-xs" data-sort="name">Name</button>
+			<button class="ve-col-9-5 sort ve-btn ve-btn-default ve-btn-xs" data-sort="name">名称</button>
 			<button class="ve-col-1-5 ve-btn ve-btn-default ve-btn-xs ve-grow" disabled>&nbsp;</button>
 		</div>`;
 
@@ -103,7 +103,7 @@ class _ManageExistingEntitiesUi extends BaseComponent {
 	}
 
 	_addListItem ({ent}) {
-		const btnEdit = veT`<button class="ve-btn ve-btn-xs ve-btn-default" title="Edit"><span class="glyphicon glyphicon-pencil"></span></button>`
+		const btnEdit = veT`<button class="ve-btn ve-btn-xs ve-btn-default" title="编辑"><span class="glyphicon glyphicon-pencil"></span></button>`
 			.vee.onn("click", async evt => {
 				evt.stopPropagation();
 				await this._parent.pHandleClick_editUniqueId(ent.uniqueId, {isConfirmOnUnsaved: true});
@@ -111,14 +111,14 @@ class _ManageExistingEntitiesUi extends BaseComponent {
 			});
 
 		let menu;
-		const btnContextMenu = veT`<button class="ve-btn ve-btn-xs ve-btn-default" title="More Options"><span class="glyphicon glyphicon-option-vertical"></span></button>`
+		const btnContextMenu = veT`<button class="ve-btn ve-btn-xs ve-btn-default" title="更多选项"><span class="glyphicon glyphicon-option-vertical"></span></button>`
 			.vee.onn("click", async evt => {
 				evt.stopPropagation();
 				menu ||= this._getListItemContextMenu({ent});
 				await ContextUtil.pOpenMenu(evt, menu);
 			});
 
-		const btnDelete = veT`<button class="ve-btn ve-btn-xs ve-btn-danger" title="Delete"><span class="glyphicon glyphicon-trash"></span></button>`
+		const btnDelete = veT`<button class="ve-btn ve-btn-xs ve-btn-danger" title="删除"><span class="glyphicon glyphicon-trash"></span></button>`
 			.vee.onn("click", async evt => {
 				evt.stopPropagation();
 				await this._parent.pHandleClick_deleteUniqueId(ent.uniqueId, {isConfirm: true});
@@ -158,7 +158,7 @@ class _ManageExistingEntitiesUi extends BaseComponent {
 	_getListItemContextMenu ({ent}) {
 		return ContextUtil.getMenu([
 			new ContextUtil.Action(
-				"Duplicate",
+				"复制",
 				async () => {
 					const entNxt = await this._parent.pHandleClick_duplicateUniqueId(ent.uniqueId);
 					this._addListItem({ent: entNxt});
@@ -167,26 +167,26 @@ class _ManageExistingEntitiesUi extends BaseComponent {
 			),
 			null,
 			new ContextUtil.Action(
-				"View JSON",
+				"查看 JSON",
 				async (evt) => {
 					await this._parent.pHandleClick_viewJsonUniqueId(evt, ent.uniqueId);
 				},
 			),
 			new ContextUtil.Action(
-				"Download JSON",
+				"下载 JSON",
 				async () => {
 					await this._parent.pHandleClick_downloadJsonUniqueId(ent.uniqueId);
 				},
 			),
 			null,
 			new ContextUtil.Action(
-				"View Markdown",
+				"查看 Markdown",
 				async (evt) => {
 					await this._parent.pHandleClick_viewMarkdownUniqueId(evt, ent.uniqueId);
 				},
 			),
 			new ContextUtil.Action(
-				"Download Markdown",
+				"下载 Markdown",
 				async () => {
 					await this._parent.pHandleClick_downloadMarkdownUniqueId(ent.uniqueId);
 				},
@@ -250,8 +250,8 @@ export class BuilderBase extends ProxyBase {
 	}
 
 	_doBindHeaderElements () {
-		this._addHook("meta", "isModified", () => this._btnHeaderSave.vee.txt(this._meta.isModified ? "Save *" : "Saved"))();
-		this._addHook("meta", "nameOriginal", () => this._dispHeaderName.vee.txt(`Editing "${this._meta.nameOriginal || "?"}"`))();
+		this._addHook("meta", "isModified", () => this._btnHeaderSave.vee.txt(this._meta.isModified ? "保存 *" : "已保存"))();
+		this._addHook("meta", "nameOriginal", () => this._dispHeaderName.vee.txt(`正在编辑“${this._meta.nameOriginal || "?"}”`))();
 	}
 
 	set ui (ui) { this._ui = ui; }
@@ -383,7 +383,7 @@ export class BuilderBase extends ProxyBase {
 			Renderer.hover.getHoverContent_statsCode(this._state),
 			Renderer.hover.getWindowPositionFromEvent(evt),
 			{
-				title: `${this._state.name} \u2014 Source Data`,
+				title: `${this._state.name} \u2014 源数据`,
 				isPermanent: true,
 				isBookContent: true,
 			},
@@ -436,7 +436,7 @@ export class BuilderBase extends ProxyBase {
 
 		if (
 			isConfirm
-			&& !await InputUiUtil.pGetUserBoolean({title: `Delete ${uniqueIds.length === 1 ? "" : `${uniqueIds.length} `}Entit${uniqueIds.length === 1 ? "y" : "ies"}`, htmlDescription: `Are you sure?`, textYes: "Yes", textNo: "Cancel"})
+			&& !await InputUiUtil.pGetUserBoolean({title: `删除 ${uniqueIds.length} 个条目`, htmlDescription: `确定要删除吗？`, textYes: "是", textNo: "取消"})
 		) return;
 
 		if (uniqueIds.includes(this._state.uniqueId)) this.reset();
@@ -463,12 +463,12 @@ export class BuilderBase extends ProxyBase {
 		if (
 			isConfirmOnUnsaved
 			&& this._meta.isModified
-			&& !await InputUiUtil.pGetUserBoolean({title: "Discard Unsaved Changes", htmlDescription: "You have unsaved changes. Are you sure?", textYes: "Yes", textNo: "Cancel"})
+			&& !await InputUiUtil.pGetUserBoolean({title: "放弃未保存的更改", htmlDescription: "你有未保存的更改。确定要放弃吗？", textYes: "是", textNo: "取消"})
 		) return;
 
 		const entEditable = await BrewUtil2.pGetEditableBrewEntity(this._prop, uniqueId);
 		if (entEditable._copy) {
-			JqueryUtil.doToast({type: "warning", content: veT`<span>You are attempting to edit a <code>_copy</code>! Saving your changes will overwrite the <code>_copy</code> with a resolved version of the entity.</span>`});
+			JqueryUtil.doToast({type: "warning", content: veT`<span>你正在编辑 <code>_copy</code> 条目！保存后，<code>_copy</code> 将被解析后的条目覆盖。</span>`});
 			await DataUtil[this._prop]?.pMergeCopy([], entEditable, {isSkipMetaMergeCache: true});
 		}
 		this.setStateFromLoaded({
@@ -586,7 +586,7 @@ export class BuilderBase extends ProxyBase {
 	static getBtnRemoveRow (doUpdateState, rowArr, row, wrpRow, title, opts) {
 		opts = opts || {};
 
-		return veT`<button class="ve-btn ${opts.isExtraSmall ? "ve-btn-xxs" : "ve-btn-xs"} ve-btn-danger ${opts.isProtectLast ? "mkbru__btn-rm-row" : ""}" title="Remove ${title}"><span class="glyphicon glyphicon-trash"></span></button>`
+		return veT`<button class="ve-btn ${opts.isExtraSmall ? "ve-btn-xxs" : "ve-btn-xs"} ve-btn-danger ${opts.isProtectLast ? "mkbru__btn-rm-row" : ""}" title="删除${title}"><span class="glyphicon glyphicon-trash"></span></button>`
 			.vee.onn("click", () => {
 				rowArr.splice(rowArr.indexOf(row), 1);
 				wrpRow.vee.empty().remove();
@@ -630,7 +630,7 @@ export class BuilderBase extends ProxyBase {
 
 		const btnAddImage = veT`<button class="ve-btn ve-btn-xs ve-btn-default">新增图片</button>`
 			.vee.onn("click", async () => {
-				const url = await InputUiUtil.pGetUserString({title: "Enter a URL"});
+				const url = await InputUiUtil.pGetUserString({title: "输入网址"});
 				if (!url) return;
 				this.constructor.__getFluffInput__getImageRow(doUpdateState, doUpdateOrder, rowOptions, imageRows, {href: {url: url}}).ele.vee.appendTo(wrpRows);
 				doUpdateState();
@@ -694,23 +694,23 @@ export class BuilderBase extends ProxyBase {
 			if (image.altText) iptAltText.vee.val(image.altText);
 		}
 
-		const btnPreview = veT`<button class="ve-btn ve-btn-xs ve-btn-default ve-mr-2" title="Preview Image"><span class="glyphicon glyphicon-fullscreen"></span></button>`
+		const btnPreview = veT`<button class="ve-btn ve-btn-xs ve-btn-default ve-mr-2" title="预览图片"><span class="glyphicon glyphicon-fullscreen"></span></button>`
 			.vee.onn("click", (evt) => {
 				const toRender = getState();
-				if (!toRender) return JqueryUtil.doToast({content: "Please enter an image URL", type: "warning"});
+				if (!toRender) return JqueryUtil.doToast({content: "请输入图片网址", type: "warning"});
 
 				Renderer.hover.getShowWindow(
 					Renderer.hover.getHoverContent_generic(toRender, {isBookContent: true}),
 					Renderer.hover.getWindowPositionFromEvent(evt),
 					{
 						isPermanent: true,
-						title: "Image Preview",
+						title: "图片预览",
 						isBookContent: true,
 					},
 				);
 			});
 
-		const btnRemove = veT`<button class="ve-btn ve-btn-xs ve-btn-danger" title="Remove Image"><span class="glyphicon glyphicon-trash"></span></button>`
+		const btnRemove = veT`<button class="ve-btn ve-btn-xs ve-btn-danger" title="删除图片"><span class="glyphicon glyphicon-trash"></span></button>`
 			.vee.onn("click", () => {
 				imageRows.splice(imageRows.indexOf(out), 1);
 				out.ele.vee.empty().remove();
@@ -728,15 +728,15 @@ export class BuilderBase extends ProxyBase {
 					${iptUrl}${btnPreview}
 				</label>
 				<label class="ve-flex-v-center ve-mb-2">
-					<span class="ve-w-60p ve-no-shrink ve-mr-2 ve-text-right">Title</span>
+					<span class="ve-w-60p ve-no-shrink ve-mr-2 ve-text-right">标题</span>
 					${iptTitle}
 				</label>
 				<label class="ve-flex-v-center ve-mb-2">
-					<span class="ve-w-60p ve-no-shrink ve-mr-2 ve-text-right">Credit</span>
+					<span class="ve-w-60p ve-no-shrink ve-mr-2 ve-text-right">署名</span>
 					${iptCredit}
 				</label>
 				<label class="ve-flex-v-center">
-					<span class="ve-w-60p ve-no-shrink ve-mr-2 ve-text-right">Alt Text</span>
+					<span class="ve-w-60p ve-no-shrink ve-mr-2 ve-text-right">替代文字</span>
 					${iptAltText}
 				</label>
 			</div>
@@ -771,7 +771,7 @@ export class BuilderBase extends ProxyBase {
 			this._isLastRenderInputFail = false;
 		} catch (e) {
 			if (!this._isLastRenderInputFail) {
-				JqueryUtil.doToast({type: "danger", content: `Could not load homebrew, it contained errors! ${VeCt.STR_SEE_CONSOLE}`});
+				JqueryUtil.doToast({type: "danger", content: `自制内容包含错误，无法加载！ ${VeCt.STR_SEE_CONSOLE}`});
 				setTimeout(() => { throw e; });
 			}
 			const tmp = this._isLastRenderInputFail;

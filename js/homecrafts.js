@@ -4,16 +4,16 @@ class HomeCraftsSublistManager extends SublistManager {
 	static _getRowTemplate () {
 		return [
 			new SublistCellTemplate({
-				name: "Type",
+				name: "类型",
 				css: "ve-col-2 ve-pl-0 ve-pr-1 ve-text-center",
 				colStyle: "text-center",
 			}),
 			new SublistCellTemplate({
-				name: "Name",
+				name: "名称",
 				css: "ve-bold ve-col-7 ve-px-1",
 			}),
 			new SublistCellTemplate({
-				name: "Category",
+				name: "分类",
 				css: "ve-col-3 ve-pl-1 ve-pr-0 ve-text-center",
 				colStyle: "text-center",
 			}),
@@ -23,7 +23,7 @@ class HomeCraftsSublistManager extends SublistManager {
 	pGetSublistItem (ent, hash) {
 		const type = Parser.getPropDisplayName(ent.__prop);
 		const typeShort = PageFilterHomeCrafts.getTypeAbbreviation(ent.__prop);
-		const category = (ent.patternType || "Unknown").toTitleCase();
+		const category = (ent.patternType || "未知").toTitleCase();
 
 		const cellsText = [
 			new SublistCell({text: typeShort, title: type}),
@@ -73,9 +73,9 @@ class HomeCraftsPage extends ListPage {
 			dataProps: ["crochetPattern"],
 
 			bookViewOptions: {
-				nameSingular: "crochet pattern",
-				namePlural: "crochet patterns",
-				pageTitle: "Crochet Patterns Book View",
+				nameSingular: "钩织图样",
+				namePlural: "钩织图样",
+				pageTitle: "钩织图样书籍视图",
 			},
 		});
 	}
@@ -90,7 +90,7 @@ class HomeCraftsPage extends ListPage {
 		const source = Parser.sourceJsonToAbv(ent.source);
 		const type = Parser.getPropDisplayName(ent.__prop);
 		const typeShort = PageFilterHomeCrafts.getTypeAbbreviation(ent.__prop);
-		const category = (ent.patternType || "Unknown").toTitleCase();
+		const category = (ent.patternType || "未知").toTitleCase();
 
 		eleLi.innerHTML = `<a href="#${hash}" class="ve-lst__row-border ve-lst__row-inner">
 			<span class="ve-col-1-5 ve-pl-0 ve-pr-1 ve-text-center" title="${type.qq()}">${typeShort}</span>

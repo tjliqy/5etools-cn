@@ -119,7 +119,7 @@ export class AbilityScoreFilter extends FilterBase {
 
 			const htmlSummary = [
 				cur._totals?.yes
-					? `<span class="ve-fltr__summary_item ve-fltr__summary_item--include" title="${cur._totals.yes} hidden &quot;required&quot; tags">${cur._totals.yes}</span>`
+					? `<span class="ve-fltr__summary_item ve-fltr__summary_item--include" title="${cur._totals.yes} 个已隐藏的“必须包含”标签">${cur._totals.yes}</span>`
 					: null,
 			].filter(Boolean).join("");
 			veE({ele: wrpSummary, html: htmlSummary}).vee.toggle(this._uiMeta.isHidden);
@@ -238,7 +238,7 @@ export class AbilityScoreFilter extends FilterBase {
 			tag: "div",
 			clazz: `ve-fltr__mini-pill ${this._filterBox.isMinisHidden(this.header) ? "ve-hidden" : ""}`,
 			txt: item.getMiniPillDisplayText(),
-			title: `Filter: ${this._getHeaderDisplayName()}`,
+			title: `筛选器：${this._getHeaderDisplayName()}`,
 			click: () => {
 				this._state[item.uid] = PILL_STATE__IGNORE;
 				this._filterBox.fireChangeEvent();

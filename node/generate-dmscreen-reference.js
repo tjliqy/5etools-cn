@@ -1,3 +1,4 @@
+import "./locale/i18n.js";
 import "../js/parser.js";
 import "../js/utils.js";
 import * as utB from "./util-book-reference.js";
@@ -76,4 +77,4 @@ function flattenReferenceIndex (ref, skipHeaders) {
 }
 
 writeJsonSync("data/generated/bookref-dmscreen-index.json", flattenReferenceIndex(index.reference), {isClean: true, isMinify: true});
-console.log("Updated DM Screen references.");
+console.log("已更新 DM 帷幕参考资料。");

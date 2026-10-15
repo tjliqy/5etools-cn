@@ -134,7 +134,7 @@ class UtilClassesPage {
 							&& cpy.source !== ent.source
 							&& cpy.entries
 						) {
-							cpy.entries.unshift(`{@note The following information is from ${Parser.sourceJsonToFull(cpy.source)}${Renderer.utils.isDisplayPage(cpy.page) ? `, page ${cpy.page}` : ""}.}`);
+							cpy.entries.unshift(`{@note 以下信息来自${Parser.sourceJsonToFull(cpy.source)}${Renderer.utils.isDisplayPage(cpy.page) ? `第 ${cpy.page} 页` : ""}。}`);
 						}
 
 						stack += renderer.render(cpy);
@@ -287,7 +287,7 @@ class ClassesPage extends MixinComponentGlobalState(MixinBaseComponent(MixinProx
 	}
 
 	static getBtnTitleSubclass (sc) {
-		const titlePartReprint = sc.isReprinted ? " (this subclass has been reprinted in a more recent source)" : "";
+		const titlePartReprint = sc.isReprinted ? "（此子职已在较新的资料中重新出版）" : "";
 		const sourcePart = Renderer.utils.getSourceAndPageText(sc);
 		return `${sc.name}; 来源: ${sourcePart}${titlePartReprint}`;
 	}
@@ -410,7 +410,7 @@ class ClassesPage extends MixinComponentGlobalState(MixinBaseComponent(MixinProx
 
 		this._list.init();
 
-		veEs(`.initial-message`).vee.txt(`Select a class from the list to view it here`);
+		veEs(`.initial-message`).vee.txt(`从列表中选择职业以在此查看`);
 
 		// Silently prepare our initial state
 		await this._pSetClassFromHash(Hist.initialLoad);
@@ -533,7 +533,7 @@ class ClassesPage extends MixinComponentGlobalState(MixinBaseComponent(MixinProx
 			const cls = this._dataList.find(c => (c.name.toLowerCase() === sc.className.toLowerCase() || c.ENG_name.toLowerCase() === sc.className.toLowerCase()) && c.source.toLowerCase() === (sc.classSource || Parser.SRC_PHB).toLowerCase());
 			if (!cls) {
 				JqueryUtil.doToast({
-					content: `Could not add subclass; could not find class with name: ${sc.className} and source ${sc.classSource || Parser.SRC_PHB}`,
+					content: `无法添加子职业：找不到名称为 ${sc.className}、来源为 ${sc.classSource || Parser.SRC_PHB} 的职业。`,
 					type: "danger",
 				});
 				return;
@@ -617,7 +617,7 @@ class ClassesPage extends MixinComponentGlobalState(MixinBaseComponent(MixinProx
 			if (target._ !== ixToLoad) {
 				Hist.lastLoadedId = ixToLoad;
 				const cls = this._dataList[ixToLoad];
-				document.title = `${cls ? cls.name : "Classes"} - 5etools`;
+				document.title = `${cls ? cls.name : "职业"} - 5etools`;
 				this._updateSelected();
 				target._ = ixToLoad;
 			} else {
@@ -626,7 +626,7 @@ class ClassesPage extends MixinComponentGlobalState(MixinBaseComponent(MixinProx
 		} else {
 			// This should never occur (failed loads should pick the first list item), but attempt to handle it semi-gracefully
 			this._pgContent.vee.empty().vee.appends(ClassesPage._render_getTrNoContent());
-			JqueryUtil.doToast({content: "Could not find the class to load!", type: "error"});
+			JqueryUtil.doToast({content: "找不到要加载的职业！", type: "error"});
 		}
 	}
 
@@ -868,7 +868,7 @@ class ClassesPage extends MixinComponentGlobalState(MixinBaseComponent(MixinProx
 				const href = `${window.location.href.split("#")[0]}#${this._getHashState({state: curState})}`;
 
 				await MiscUtil.pCopyTextToClipboard(href);
-				JqueryUtil.showCopiedEffect(eleTarget, {text: "Copied link!"});
+				JqueryUtil.showCopiedEffect(eleTarget, {text: "已复制链接！"});
 			});
 	}
 
@@ -1713,8 +1713,8 @@ class ClassesPage extends MixinComponentGlobalState(MixinBaseComponent(MixinProx
 
 		const filterSets = [
 			{name: "查看默认", subHashes: [], isClearSources: false},
-			{name: "查看 Standard Plus Partnered", subHashes: [], isClearSources: false, sourceCategories: [SourceUtil.FILTER_GROUP_STANDARD, SourceUtil.FILTER_GROUP_PARTNERED]},
-			{name: "查看 Standard Plus Homebrew", subHashes: [], isClearSources: false, sourceCategories: [SourceUtil.FILTER_GROUP_STANDARD, SourceUtil.FILTER_GROUP_HOMEBREW]},
+			{name: "查看标准及合作内容", subHashes: [], isClearSources: false, sourceCategories: [SourceUtil.FILTER_GROUP_STANDARD, SourceUtil.FILTER_GROUP_PARTNERED]},
+			{name: "查看标准及自制内容", subHashes: [], isClearSources: false, sourceCategories: [SourceUtil.FILTER_GROUP_STANDARD, SourceUtil.FILTER_GROUP_HOMEBREW]},
 			{name: "查看最新", subHashes: [], isClearSources: true},
 			{name: "查看全部", subHashes: ["flstmiscellaneous:reprinted=0"], isClearSources: true},
 		];
@@ -1789,7 +1789,7 @@ class ClassesPage extends MixinComponentGlobalState(MixinBaseComponent(MixinProx
 
 		const btnShuffle = veT`<button title="随便选一个?" class="ve-btn ve-btn-xs ve-btn-default ve-flex-1"><span class="glyphicon glyphicon-random"></span></button>`
 			.vee.onn("click", () => {
-				if (!this._listSubclass.visibleItems.length) return JqueryUtil.doToast({content: "No subclasses to choose from!", type: "warning"});
+				if (!this._listSubclass.visibleItems.length) return JqueryUtil.doToast({content: "没有可选择的子职！", type: "warning"});
 
 				const doDeselAll = () => this._listSubclass.items.filter(it => it.values.stateKey).forEach(it => this._state[it.values.stateKey] = false);
 
@@ -2208,7 +2208,7 @@ class ClassesPage extends MixinComponentGlobalState(MixinBaseComponent(MixinProx
 				if (this._state.isViewActiveScComp) await this._subclassComparisonView.pOpen();
 				else {
 					this._subclassComparisonView.teardown();
-					document.title = `${cls ? cls.name : "Classes"} - 5etools`;
+					document.title = `${cls ? cls.name : "职业"} - 5etools`;
 				}
 			} finally {
 				this._unlock("sc-comparison");
@@ -2231,7 +2231,7 @@ class ClassesPage extends MixinComponentGlobalState(MixinBaseComponent(MixinProx
 				if (this._state.isViewActiveBook) await this._classBookView.pOpen();
 				else {
 					this._classBookView.teardown();
-					document.title = `${cls ? cls.name : "Classes"} - 5etools`;
+					document.title = `${cls ? cls.name : "职业"} - 5etools`;
 				}
 			} finally {
 				this._unlock("view-book");
@@ -2392,10 +2392,10 @@ class ClassesPage extends MixinComponentGlobalState(MixinBaseComponent(MixinProx
 
 				const isEditionMismatch = cls.edition && sc.edition && cls.edition !== sc.edition;
 				const ptMismatchedEdition = isFirstFeature && isEditionMismatch
-					? Renderer.get().render(`{@note This subclass is from a different game edition. For a given subclass feature, you may gain that feature at a different level from the one specified in the subclass feature.}`)
+					? Renderer.get().render(`{@note 此子职来自另一个游戏版本。你可能在与该子职特性注明的等级不同的等级获得该特性。}`)
 					: "";
 				const ptDate = isFirstFeature && SourceUtil.isNonstandardSource(sc.source) && Parser.sourceJsonToDate(sc.source)
-					? Renderer.get().render(`{@note This subclass was published on ${DatetimeUtil.getDateStr({date: new Date(Parser.sourceJsonToDate(sc.source))})}.}`)
+					? Renderer.get().render(`{@note 此子职发布于 ${DatetimeUtil.getDateStr({date: new Date(Parser.sourceJsonToDate(sc.source))})}。}`)
 					: "";
 				const ptSources = isFirstFeature && sc.otherSources ? `{@note {@b 子职业 来源:} ${Renderer.utils.getSourceAndPageHtml(sc)}}` : "";
 				const ptReprinted = isFirstFeature && sc.reprintedAs ? `{@note ${Renderer.utils.getReprintedAsHtml(sc)}.}` : "";
@@ -2489,7 +2489,7 @@ ClassesPage._DEFAULT_STATE = {
 
 ClassesPage.SubclassComparisonBookView = class extends BookModeViewBase {
 	_stateKey = "isViewActiveScComp";
-	_pageTitle = "Subclass Comparison";
+	_pageTitle = "子职对比";
 	_isColumns = false;
 
 	constructor ({classPage, pageFilter, listSubclass}) {
@@ -2509,7 +2509,7 @@ ClassesPage.SubclassComparisonBookView = class extends BookModeViewBase {
 	_getWindowHeaderLhs () {
 		const out = super._getWindowHeaderLhs();
 
-		const btnSelectSubclasses = veT`<button class="ve-btn ve-btn-xs ve-btn-default ve-bl-0 ve-bt-0 ve-btl-0 ve-btr-0 ve-bbr-0 ve-bbl-0 ve-h-20p" title="Select Subclasses"><span class="glyphicon glyphicon-th-list"></span></button>`
+		const btnSelectSubclasses = veT`<button class="ve-btn ve-btn-xs ve-btn-default ve-bl-0 ve-bt-0 ve-btl-0 ve-btr-0 ve-bbr-0 ve-bbl-0 ve-h-20p" title="选择子职"><span class="glyphicon glyphicon-th-list"></span></button>`
 			.vee.onn("click", async () => {
 				const {eleModal, doClose} = UiUtil.getShowModal({
 					isEmpty: true,
@@ -2539,9 +2539,9 @@ ClassesPage.SubclassComparisonBookView = class extends BookModeViewBase {
 	_getSelectSubclassesMeta ({cbOnSave = null, isCloseButton = true} = {}) {
 		const wrpRows = veT`<div class="ve-flex-col ve-min-h-0"></div>`;
 
-		const btnAdjustFilters = veT`<span class="ve-clickable ve-help ve-no-select" title="Click Here!">adjust your filters</span>`
+		const btnAdjustFilters = veT`<span class="ve-clickable ve-help ve-no-select" title="点击这里！">调整筛选条件</span>`
 			.vee.onn("click", () => this._classPage.filterBox.show());
-		const dispNoneAvailable = veT`<div class="ve-small ve-muted ve-italic">No subclasses are available. Please ${btnAdjustFilters} first.</div>`;
+		const dispNoneAvailable = veT`<div class="ve-small ve-muted ve-italic">没有可用的子职。请先${btnAdjustFilters}。</div>`;
 
 		const stg = veT`<div class="ve-flex-col">
 			<div class="ve-mb-2 initial-message initial-message--med">请选择一些子职：</div>
@@ -2576,12 +2576,12 @@ ClassesPage.SubclassComparisonBookView = class extends BookModeViewBase {
 			});
 
 			const subclassStateItemsVisiblePrev = subclassStateItems.filter(li => this._parent.get(li.values.stateKey));
-			const btnSave = veT`<button class="ve-btn ve-btn-default ve-mr-2" data-i18n="common.button.save">Save</button>`
+			const btnSave = veT`<button class="ve-btn ve-btn-default ve-mr-2" data-i18n="common.button.save">保存</button>`
 				.vee.onn("click", async () => {
 					const nxtState = {isViewActiveScComp: false};
 
 					const rowMetasFilt = rowMetas.filter(it => it.cb.vee.prop("checked"));
-					if (!rowMetasFilt.length && !subclassStateItemsVisiblePrev.length) return JqueryUtil.doToast({type: "warning", content: `Please select some subclasses first!`});
+					if (!rowMetasFilt.length && !subclassStateItemsVisiblePrev.length) return JqueryUtil.doToast({type: "warning", content: "请先选择子职！"});
 
 					rowMetas
 						.forEach(meta => {
@@ -2603,7 +2603,7 @@ ClassesPage.SubclassComparisonBookView = class extends BookModeViewBase {
 				});
 
 			const btnClose = isCloseButton
-				? veT`<button class="ve-btn ve-btn-default">Close</button>`
+				? veT`<button class="ve-btn ve-btn-default">关闭</button>`
 					.vee.onn("click", () => {
 						this.setStateClosed();
 					})
@@ -2665,7 +2665,7 @@ ClassesPage.SubclassComparisonBookView = class extends BookModeViewBase {
 
 			if (isAnyFeature) {
 				renderStack.push(`<div class="ve-flex-vh-center ve-sticky cls-bkmv__wrp-level ve-br-1p ve-bt-1p ve-bb-1p ve-btr-5p ve-bbr-5p ve-mr-2 ve-ml-n2">
-					<span class="cls-bkmv__disp-level ve-no-shrink ve-small-caps">Level ${lvl}</span>
+					<span class="cls-bkmv__disp-level ve-no-shrink ve-small-caps">等级 ${lvl}</span>
 				</div>`);
 			}
 
@@ -2758,7 +2758,7 @@ ClassesPage.SubclassComparisonBookView = class extends BookModeViewBase {
 
 ClassesPage.ClassBookView = class extends BookModeViewBase {
 	_stateKey = "isViewActiveBook";
-	_pageTitle = "Book View";
+	_pageTitle = "书籍视图";
 	_isColumns = false;
 
 	constructor ({classPage, pageFilter}) {

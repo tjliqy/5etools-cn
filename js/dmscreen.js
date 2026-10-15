@@ -537,7 +537,7 @@ class Board {
 		const cntNxtSlotStates = Object.keys(state.sls || {}).length + cntAdditional;
 
 		if ((this.constructor._MAX_SAVE_SLOTS - cntNxtSlotStates) < 0) {
-			if (isNotify) JqueryUtil.doToast({type: "warning", content: `Too many save slots! Try deleting some first.`});
+			if (isNotify) JqueryUtil.doToast({type: "warning", content: `存档位过多！请先删除一些。`});
 			return false;
 		}
 
@@ -674,10 +674,10 @@ class Board {
 		}
 
 		const valUser = await InputUiUtil.pGetUserBoolean({
-			title: "Load Legacy State",
-			htmlDescription: `<div>You are attempting to load a legacy state file, containing a single save slot.<br>Would you like to add the save slot to your current screen, or overwrite all save slots with this single save?</div>`,
-			textYes: "Add As Save Slot",
-			textNo: "Overwrite Existing Save Slots",
+			title: "加载旧版状态",
+			htmlDescription: `<div>你正在加载仅包含一个存档位的旧版状态文件。<br>要将该存档添加到当前屏幕，还是用它覆盖所有现有存档位？</div>`,
+			textYes: "添加为存档位",
+			textNo: "覆盖现有存档位",
 		});
 		if (valUser == null) return {state: null, isCombined: false};
 
@@ -817,7 +817,7 @@ class Board {
 			toLoad = await StorageUtil.pGet(VeCt.STORAGE_DMSCREEN);
 		} catch (e) {
 			JqueryUtil.doToast({
-				content: `Error when loading DM screen! Purged saved data. ${VeCt.STR_SEE_CONSOLE}`,
+				content: `加载 DM 帷幕时发生错误，已清除保存的数据。 ${VeCt.STR_SEE_CONSOLE}`,
 				type: "danger",
 			});
 			await StorageUtil.pRemove(VeCt.STORAGE_DMSCREEN);
@@ -838,7 +838,7 @@ class Board {
 		const {eleModalInner, doClose, pGetResolved} = UiUtil.getShowModal({
 			isMinHeight0: true,
 			isHeaderBorder: true,
-			title: "Failed to Load",
+			title: "加载失败",
 			isPermanent: true,
 		});
 
@@ -846,35 +846,35 @@ class Board {
 			DataUtil.userDownload(`dm-screen`, toLoad, {fileType: "dm-screen"});
 		};
 
-		const btnDownload = veT`<button class="ve-btn ve-btn-sm ve-btn-primary ve-mr-2">Download Save</button>`
+		const btnDownload = veT`<button class="ve-btn ve-btn-sm ve-btn-primary ve-mr-2">下载存档</button>`
 			.vee.onn("click", () => handleClickDownload());
 
 		const handleClickPurge = async () => {
-			if (!await InputUiUtil.pGetUserBoolean({title: "Purge", htmlDescription: "你确定吗？", textYes: "是的", textNo: "取消"})) return;
+			if (!await InputUiUtil.pGetUserBoolean({title: "清除存档", htmlDescription: "确定要清除存档吗？", textYes: "是", textNo: "取消"})) return;
 			await StorageUtil.pRemove(VeCt.STORAGE_DMSCREEN);
 			doClose(true);
 		};
 
-		const btnPurge = veT`<button class="ve-btn ve-btn-sm ve-btn-danger">Purge and Continue</button>`
+		const btnPurge = veT`<button class="ve-btn ve-btn-sm ve-btn-danger">清除存档并继续</button>`
 			.vee.onn("click", () => handleClickPurge());
 
-		const txtDownload = veT`<b class="ve-clickable">download a backup of your save</b>`
+		const txtDownload = veT`<b class="ve-clickable">下载存档备份</b>`
 			.vee.onn("click", () => handleClickDownload());
-		const txtPurge = veT`<span class="ve-clickable text-danger">purge the save</span>`
+		const txtPurge = veT`<span class="ve-clickable text-danger">清除存档</span>`
 			.vee.onn("click", () => handleClickPurge());
 
 		veT(eleModalInner)`
 			<div class="ve-py-2 ve-w-100 ve-h-100">
 				<div class="ve-mb-2">
-					<b>Failed to load saved DM Screen.</b> ${VeCt.STR_SEE_CONSOLE}
+					<b>无法加载已保存的 DM 帷幕。</b> ${VeCt.STR_SEE_CONSOLE}
 				</div>
 
 				<div class="ve-mb-2">
-					Please ${txtDownload}, then ${txtPurge} if you wish to continue.
+					如需继续，请先${txtDownload}，然后${txtPurge}。
 				</div>
 
 				<div class="ve-mb-4">
-					If you suspect this is the <span class="ve-help" title="Spoiler: it always is">result of a bug</span>, or need help recovering lost data, drop past our <a href="https://discord.gg/5etools" target="_blank" rel="noopener noreferrer">Discord</a>.
+					如果您认为这是<span class="ve-help" title="确实如此">程序错误</span>所致，或需要帮助恢复丢失的数据，请访问我们的 <a href="https://discord.gg/5etools" target="_blank" rel="noopener noreferrer">Discord</a>。
 				</div>
 
 				<div class="ve-flex-h-right ve-flex-v-center">
@@ -948,7 +948,7 @@ class Board {
 		if (this.isAlertOnNav) return;
 		this.isAlertOnNav = true;
 		window.addEventListener("beforeunload", evt => {
-			const message = `Temporary data and connections will be lost.`;
+			const message = `临时数据和连接将会丢失。`;
 			(evt || window.event).message = message;
 			return message;
 		});
@@ -968,7 +968,7 @@ class Board {
 		},
 	) {
 		if (!entities?.length) {
-			return JqueryUtil.doToast({type: "warning", content: `Nothing to add!`});
+			return JqueryUtil.doToast({type: "warning", content: `没有可添加的内容！`});
 		}
 
 		if (panel) {
@@ -1174,11 +1174,11 @@ class AddMenuVideoTab extends AddMenuTab {
 	pRender () {
 		if (this.eleTab) return;
 
-		const iptUrlYT = veT`<input class="ve-form-control" placeholder="Paste YouTube URL">`
+		const iptUrlYT = veT`<input class="ve-form-control" placeholder="粘贴 YouTube 链接">`
 			.vee.onn("keydown", evt => {
 				if (evt.key === "Enter") btnAddYT.vee.trigger("click");
 			});
-		const btnAddYT = veT`<button class="ve-btn ve-btn-primary ve-btn-sm">Embed</button>`
+		const btnAddYT = veT`<button class="ve-btn ve-btn-primary ve-btn-sm">嵌入</button>`
 			.vee.onn("click", async () => {
 				let url;
 				try {
@@ -1186,7 +1186,7 @@ class AddMenuVideoTab extends AddMenuTab {
 				} catch (e) {
 					setTimeout(() => { throw e; });
 					JqueryUtil.doToast({
-						content: `Please enter a valid URL!`,
+						content: `请输入有效的网址！`,
 						type: "danger",
 					});
 					return;
@@ -1194,7 +1194,7 @@ class AddMenuVideoTab extends AddMenuTab {
 
 				if (!url.searchParams.get("v")) {
 					JqueryUtil.doToast({
-						content: `Please enter a YouTube URL with a "v=..." parameter!`,
+						content: `请输入包含“v=...”参数的 YouTube 网址！`,
 						type: "danger",
 					});
 					return;
@@ -1216,18 +1216,18 @@ class AddMenuVideoTab extends AddMenuTab {
 		const getTwitchUrlRegexMatch = (url) => {
 			return /https?:\/\/(?:www\.)?twitch\.tv\/(?<channel>.*?)(?:\?.*$|$)/.exec(url);
 		};
-		const iptUrlTwitch = veT`<input class="ve-form-control" placeholder="Paste Twitch URL">`
+		const iptUrlTwitch = veT`<input class="ve-form-control" placeholder="粘贴 Twitch 链接">`
 			.vee.onn("keydown", evt => {
 				if (evt.key === "Enter") btnAddTwitch.vee.trigger("click");
 			});
-		const btnAddTwitch = veT`<button class="ve-btn ve-btn-primary ve-btn-sm">Embed</button>`
+		const btnAddTwitch = veT`<button class="ve-btn ve-btn-primary ve-btn-sm">嵌入</button>`
 			.vee.onn("click", async () => {
 				const url = iptUrlTwitch.vee.val().trim();
 
 				const mTwitchUrl = getTwitchUrlRegexMatch(url);
 				if (!url || !mTwitchUrl) {
 					JqueryUtil.doToast({
-						content: `Please enter a URL of the form: "https://www.twitch.tv/XXXXXX"`,
+						content: `请输入格式为“https://www.twitch.tv/XXXXXX”的网址！`,
 						type: "danger",
 					});
 					return;
@@ -1240,14 +1240,14 @@ class AddMenuVideoTab extends AddMenuTab {
 				this.menu.doClose();
 			});
 
-		const btnAddTwitchChat = veT`<button class="ve-btn ve-btn-primary ve-btn-sm">Embed Chat</button>`
+		const btnAddTwitchChat = veT`<button class="ve-btn ve-btn-primary ve-btn-sm">嵌入聊天</button>`
 			.vee.onn("click", async () => {
 				const url = iptUrlTwitch.vee.val().trim();
 
 				const mTwitchUrl = getTwitchUrlRegexMatch(url);
 				if (!url || !mTwitchUrl) {
 					JqueryUtil.doToast({
-						content: `Please enter a URL of the form: "https://www.twitch.tv/XXXXXX"`,
+						content: `请输入格式为“https://www.twitch.tv/XXXXXX”的网址！`,
 						type: "danger",
 					});
 					return;
@@ -1260,17 +1260,17 @@ class AddMenuVideoTab extends AddMenuTab {
 				this.menu.doClose();
 			});
 
-		const iptUrlGeneric = veT`<input class="ve-form-control" placeholder="Paste any URL">`
+		const iptUrlGeneric = veT`<input class="ve-form-control" placeholder="粘贴任意链接">`
 			.vee.onn("keydown", evt => {
 				if (evt.key === "Enter") iptUrlGeneric.vee.trigger("click");
 			});
-		const btnAddGeneric = veT`<button class="ve-btn ve-btn-primary ve-btn-sm">Embed</button>`
+		const btnAddGeneric = veT`<button class="ve-btn ve-btn-primary ve-btn-sm">嵌入</button>`
 			.vee.onn("click", async () => {
 				const url = iptUrlGeneric.vee.val().trim();
 
 				if (!url) {
 					JqueryUtil.doToast({
-						content: `Please enter a URL!`,
+						content: `请输入网址！`,
 						type: "danger",
 					});
 					return;
@@ -1303,7 +1303,7 @@ class AddMenuImageTab extends AddMenuTab {
 
 			// region Imgur
 			const wrpImgur = veT`<div class="ve-ui-modal__row"></div>`.vee.appendTo(eleTab);
-			veT`<span>Imgur (Anonymous Upload) <i class="ve-muted">(accepts <a href="https://help.imgur.com/hc/en-us/articles/26511665959579-What-files-can-I-upload-Is-there-a-size-limit" target="_blank" rel="noopener noreferrer">imgur-friendly formats</a>)</i></span>`.vee.appendTo(wrpImgur);
+			veT`<span>Imgur（匿名上传） <i class="ve-muted">（支持<a href="https://help.imgur.com/hc/en-us/articles/26511665959579-What-files-can-I-upload-Is-there-a-size-limit" target="_blank" rel="noopener noreferrer">Imgur 支持的格式</a>）</i></span>`.vee.appendTo(wrpImgur);
 			const iptFile = veT`<input type="file" class="hidden">`
 				.vee.onn("change", (evt) => {
 					const input = evt.target;
@@ -1330,7 +1330,7 @@ class AddMenuImageTab extends AddMenuTab {
 							data = await response.json();
 						} catch (error) {
 							JqueryUtil.doToast({
-								content: `Failed to upload: ${error.message || "Unknown error"}`,
+								content: `上传失败： ${error.message || "未知错误"}`,
 								type: "danger",
 							});
 
@@ -1338,7 +1338,7 @@ class AddMenuImageTab extends AddMenuTab {
 						}
 
 						if (!response || !response.ok) {
-							throw new Error(data?.data?.error || "Unknown error");
+							throw new Error(data?.data?.error || "未知错误");
 						}
 
 						this.menu.pnl.doPopulate_Image(data.data.link, ix);
@@ -1352,7 +1352,7 @@ class AddMenuImageTab extends AddMenuTab {
 					this.menu.doClose();
 				})
 				.vee.appendTo(eleTab);
-			const btnAdd = veT`<button class="ve-btn ve-btn-primary ve-btn-sm">Upload</button>`
+			const btnAdd = veT`<button class="ve-btn ve-btn-primary ve-btn-sm">上传</button>`
 				.vee.appendTo(wrpImgur)
 				.vee.onn("click", () => {
 					iptFile.trigger("click");
@@ -1361,12 +1361,12 @@ class AddMenuImageTab extends AddMenuTab {
 
 			// region URL
 			const wrpUtl = veT`<div class="ve-ui-modal__row"></div>`.vee.appendTo(eleTab);
-			const iptUrl = veT`<input class="ve-form-control" placeholder="Paste image URL">`
+			const iptUrl = veT`<input class="ve-form-control" placeholder="粘贴图片链接">`
 				.vee.onn("keydown", (e) => {
 					if (e.key === "Enter") btnAddUrl.trigger("click");
 				})
 				.vee.appendTo(wrpUtl);
-			const btnAddUrl = veT`<button class="ve-btn ve-btn-primary ve-btn-sm">Add</button>`.vee.appendTo(wrpUtl);
+			const btnAddUrl = veT`<button class="ve-btn ve-btn-primary ve-btn-sm">添加</button>`.vee.appendTo(wrpUtl);
 			btnAddUrl.vee.onn("click", () => {
 				let url = iptUrl.val().trim();
 				if (url) {
@@ -1375,7 +1375,7 @@ class AddMenuImageTab extends AddMenuTab {
 					this.menu.doClose();
 				} else {
 					JqueryUtil.doToast({
-						content: `Please enter a URL!`,
+						content: `请输入网址！`,
 						type: "danger",
 					});
 				}
@@ -1409,15 +1409,15 @@ class AddMenuSpecialTab extends AddMenuTab {
 		if (!this.eleTab) {
 			const eleTab = veT`<div class="ve-ui-search__wrp-output underline-tabs ve-overflow-y-auto ve-pr-1" id="${this.tabId}"></div>`;
 
-			const wrpRoller = veT`<div class="ve-ui-modal__row"><span>Dice Roller <i class="ve-muted">(pins the existing dice roller to a panel)</i></span></div>`.vee.appendTo(eleTab);
-			const btnRoller = veT`<button class="ve-btn ve-btn-primary ve-btn-sm">Pin</button>`.vee.appendTo(wrpRoller);
+			const wrpRoller = veT`<div class="ve-ui-modal__row"><span>骰子投掷器 <i class="ve-muted">（将现有投掷器固定到面板）</i></span></div>`.vee.appendTo(eleTab);
+			const btnRoller = veT`<button class="ve-btn ve-btn-primary ve-btn-sm">固定</button>`.vee.appendTo(wrpRoller);
 			btnRoller.vee.onn("click", () => {
 				Renderer.dice.bindDmScreenPanel(this.menu.pnl);
 				this.menu.doClose();
 			});
 			veT`<hr class="ve-hr-2">`.vee.appendTo(eleTab);
 
-			const btnTracker = veT`<button class="ve-btn ve-btn-primary ve-btn-sm">Add</button>`
+			const btnTracker = veT`<button class="ve-btn ve-btn-primary ve-btn-sm">添加</button>`
 				.vee.onn("click", async () => {
 					const pcm = new PanelContentManager_InitiativeTracker({board: this._board, panel: this.menu.pnl});
 					await pcm.pDoPopulate();
@@ -1425,11 +1425,11 @@ class AddMenuSpecialTab extends AddMenuTab {
 				});
 
 			veT`<div class="ve-ui-modal__row">
-			<span>Initiative Tracker</span>
+			<span>先攻追踪器</span>
 			${btnTracker}
 			</div>`.vee.appendTo(eleTab);
 
-			const btnTrackerCreatureViewer = veT`<button class="ve-btn ve-btn-primary ve-btn-sm">Add</button>`
+			const btnTrackerCreatureViewer = veT`<button class="ve-btn ve-btn-primary ve-btn-sm">添加</button>`
 				.vee.onn("click", async () => {
 					const pcm = new PanelContentManager_InitiativeTrackerCreatureViewer({board: this._board, panel: this.menu.pnl});
 					await pcm.pDoPopulate();
@@ -1437,11 +1437,11 @@ class AddMenuSpecialTab extends AddMenuTab {
 				});
 
 			veT`<div class="ve-ui-modal__row">
-			<span>Initiative Tracker Creature Viewer</span>
+			<span>先攻追踪器生物查看器</span>
 			${btnTrackerCreatureViewer}
 			</div>`.vee.appendTo(eleTab);
 
-			const btnPlayerTrackerV1 = veT`<button class="ve-btn ve-btn-primary ve-btn-sm">Add</button>`
+			const btnPlayerTrackerV1 = veT`<button class="ve-btn ve-btn-primary ve-btn-sm">添加</button>`
 				.vee.onn("click", async () => {
 					const pcm = new PanelContentManager_InitiativeTrackerPlayerViewV1({board: this._board, panel: this.menu.pnl});
 					await pcm.pDoPopulate();
@@ -1449,11 +1449,11 @@ class AddMenuSpecialTab extends AddMenuTab {
 				});
 
 			veT`<div class="ve-ui-modal__row">
-			<span>Initiative Tracker Player View (Standard)</span>
+			<span>先攻追踪器玩家视图（标准版）</span>
 			${btnPlayerTrackerV1}
 			</div>`.vee.appendTo(eleTab);
 
-			const btnPlayerTrackerV0 = veT`<button class="ve-btn ve-btn-primary ve-btn-sm">Add</button>`
+			const btnPlayerTrackerV0 = veT`<button class="ve-btn ve-btn-primary ve-btn-sm">添加</button>`
 				.vee.onn("click", async () => {
 					const pcm = new PanelContentManager_InitiativeTrackerPlayerViewV0({board: this._board, panel: this.menu.pnl});
 					await pcm.pDoPopulate();
@@ -1461,32 +1461,32 @@ class AddMenuSpecialTab extends AddMenuTab {
 				});
 
 			veT`<div class="ve-ui-modal__row">
-			<span>Initiative Tracker Player View (Manual/Legacy)</span>
+			<span>先攻追踪器玩家视图（手动／旧版）</span>
 			${btnPlayerTrackerV0}
 			</div>`.vee.appendTo(eleTab);
 
 			veT`<hr class="ve-hr-2">`.vee.appendTo(eleTab);
 
-			const btnSublist = veT`<button class="ve-btn ve-btn-primary ve-btn-sm">Add</button>`
+			const btnSublist = veT`<button class="ve-btn ve-btn-primary ve-btn-sm">添加</button>`
 				.vee.onn("click", async evt => {
 					await this.menu.pnl.pDoMassPopulate_Entities(evt);
 					this.menu.doClose();
 				});
 
 			veT`<div class="ve-ui-modal__row">
-			<span title="Including, but not limited to, a Bestiary Encounter.">Pinned List Entries</span>
+			<span title="包括但不限于怪物图鉴中的遭遇。">固定列表条目</span>
 			${btnSublist}
 			</div>`.vee.appendTo(eleTab);
 
 			veT`<hr class="ve-hr-2">`.vee.appendTo(eleTab);
 
-			const btnSwitchToEmbedTag = veT`<button class="ve-btn ve-btn-default ve-btn-xxs">embed</button>`
+			const btnSwitchToEmbedTag = veT`<button class="ve-btn ve-btn-default ve-btn-xxs">嵌入</button>`
 				.vee.onn("click", async () => {
-					await this.menu.pSetActiveTab(this.menu.getTab({label: "Embed"}));
+					await this.menu.pSetActiveTab(this.menu.getTab({label: "内嵌"}));
 				});
 
-			const wrpText = veT`<div class="ve-ui-modal__row"><span>Basic Text Box <i class="ve-muted">(for a feature-rich editor, ${btnSwitchToEmbedTag} a Google Doc or similar)</i></span></div>`.vee.appendTo(eleTab);
-			const btnText = veT`<button class="ve-btn ve-btn-primary ve-btn-sm">Add</button>`.vee.appendTo(wrpText);
+			const wrpText = veT`<div class="ve-ui-modal__row"><span>基础文本框 <i class="ve-muted">（如需更丰富的编辑功能，可${btnSwitchToEmbedTag} Google 文档等）</i></span></div>`.vee.appendTo(eleTab);
+			const btnText = veT`<button class="ve-btn ve-btn-primary ve-btn-sm">添加</button>`.vee.appendTo(wrpText);
 			btnText.vee.onn("click", async () => {
 				const pcm = new PanelContentManager_NoteBox({board: this._board, panel: this.menu.pnl});
 				await pcm.pDoPopulate();
@@ -1494,24 +1494,24 @@ class AddMenuSpecialTab extends AddMenuTab {
 			});
 			veT`<hr class="ve-hr-2">`.vee.appendTo(eleTab);
 
-			const wrpUnitConverter = veT`<div class="ve-ui-modal__row"><span>Unit Converter</span></div>`.vee.appendTo(eleTab);
-			const btnUnitConverter = veT`<button class="ve-btn ve-btn-primary ve-btn-sm">Add</button>`.vee.appendTo(wrpUnitConverter);
+			const wrpUnitConverter = veT`<div class="ve-ui-modal__row"><span>单位换算器</span></div>`.vee.appendTo(eleTab);
+			const btnUnitConverter = veT`<button class="ve-btn ve-btn-primary ve-btn-sm">添加</button>`.vee.appendTo(wrpUnitConverter);
 			btnUnitConverter.vee.onn("click", async () => {
 				const pcm = new PanelContentManager_UnitConverter({board: this._board, panel: this.menu.pnl});
 				await pcm.pDoPopulate();
 				this.menu.doClose();
 			});
 
-			const wrpMoneyConverter = veT`<div class="ve-ui-modal__row"><span>Coin Converter</span></div>`.vee.appendTo(eleTab);
-			const btnMoneyConverter = veT`<button class="ve-btn ve-btn-primary ve-btn-sm">Add</button>`.vee.appendTo(wrpMoneyConverter);
+			const wrpMoneyConverter = veT`<div class="ve-ui-modal__row"><span>货币换算器</span></div>`.vee.appendTo(eleTab);
+			const btnMoneyConverter = veT`<button class="ve-btn ve-btn-primary ve-btn-sm">添加</button>`.vee.appendTo(wrpMoneyConverter);
 			btnMoneyConverter.vee.onn("click", async () => {
 				const pcm = new PanelContentManager_MoneyConverter({board: this._board, panel: this.menu.pnl});
 				await pcm.pDoPopulate();
 				this.menu.doClose();
 			});
 
-			const wrpCounter = veT`<div class="ve-ui-modal__row"><span>Counter</span></div>`.vee.appendTo(eleTab);
-			const btnCounter = veT`<button class="ve-btn ve-btn-primary ve-btn-sm">Add</button>`.vee.appendTo(wrpCounter);
+			const wrpCounter = veT`<div class="ve-ui-modal__row"><span>计数器</span></div>`.vee.appendTo(eleTab);
+			const btnCounter = veT`<button class="ve-btn ve-btn-primary ve-btn-sm">添加</button>`.vee.appendTo(wrpCounter);
 			btnCounter.vee.onn("click", async () => {
 				const pcm = new PanelContentManager_Counter({board: this._board, panel: this.menu.pnl});
 				await pcm.pDoPopulate();
@@ -1520,8 +1520,8 @@ class AddMenuSpecialTab extends AddMenuTab {
 
 			veT`<hr class="ve-hr-2">`.vee.appendTo(eleTab);
 
-			const wrpTimeTracker = veT`<div class="ve-ui-modal__row"><span>In-Game Clock/Calendar</span></div>`.vee.appendTo(eleTab);
-			const btnTimeTracker = veT`<button class="ve-btn ve-btn-primary ve-btn-sm">Add</button>`.vee.appendTo(wrpTimeTracker);
+			const wrpTimeTracker = veT`<div class="ve-ui-modal__row"><span>游戏时钟／日历</span></div>`.vee.appendTo(eleTab);
+			const btnTimeTracker = veT`<button class="ve-btn ve-btn-primary ve-btn-sm">添加</button>`.vee.appendTo(wrpTimeTracker);
 			btnTimeTracker.vee.onn("click", async () => {
 				const pcm = new PanelContentManager_TimeTracker({board: this._board, panel: this.menu.pnl});
 				await pcm.pDoPopulate();
@@ -1530,8 +1530,8 @@ class AddMenuSpecialTab extends AddMenuTab {
 
 			veT`<hr class="ve-hr-2">`.vee.appendTo(eleTab);
 
-			const wrpBlank = veT`<div class="ve-ui-modal__row"><span class="ve-help" title="For those who don't like plus signs.">Blank Space</span></div>`.vee.appendTo(eleTab);
-			veT`<button class="ve-btn ve-btn-primary ve-btn-sm">Add</button>`
+			const wrpBlank = veT`<div class="ve-ui-modal__row"><span class="ve-help" title="给不喜欢加号的人。">空白区域</span></div>`.vee.appendTo(eleTab);
+			veT`<button class="ve-btn ve-btn-primary ve-btn-sm">添加</button>`
 				.vee.onn("click", () => {
 					this.menu.pnl.doPopulate_Blank();
 					this.menu.doClose();
@@ -1614,7 +1614,7 @@ class AddMenuSearchTab extends AddMenuTab {
 			case "content": return veT`
 				<div class="ve-ui-search__row" tabindex="0">
 					<span><span class="ve-muted">${r.doc.cf}</span> ${r.doc.cn}</span>
-					<span>${r.doc.s ? `<i title="${Parser.sourceJsonToFull(r.doc.s).qq()}">${Parser.sourceJsonToAbv(r.doc.s).qq()}${r.doc.p ? ` p${r.doc.p}` : ""}</i>` : ""}</span>
+					<span>${r.doc.s ? `<i title="${Parser.sourceJsonToFull(r.doc.s).qq()}">${Parser.sourceJsonToAbv(r.doc.s).qq()}${r.doc.p ? ` 第 ${r.doc.p} 页` : ""}</i>` : ""}</span>
 				</div>
 			`;
 			case "rule": return veT`
@@ -1759,7 +1759,7 @@ class AddMenuSearchTab extends AddMenuTab {
 
 				if (resultCount > UiUtil.SEARCH_RESULTS_CAP) {
 					const diff = resultCount - UiUtil.SEARCH_RESULTS_CAP;
-					this.wrpResults.vee.appends(`<div class="ve-ui-search__row ve-ui-search__row--readonly">...${diff} more result${diff === 1 ? " was" : "s were"} hidden. Refine your search!</div>`);
+					this.wrpResults.vee.appends(`<div class="ve-ui-search__row ve-ui-search__row--readonly">...${diff} 条结果被隐藏，请调整搜索条件。</div>`);
 				}
 			} else {
 				if (!searchTerm.trim()) this.showMsgIpt();
@@ -1784,7 +1784,7 @@ class AddMenuSearchTab extends AddMenuTab {
 				await this._pDoSearch();
 			});
 
-			const iptSearch = veT`<input class="ve-ui-search__ipt-search search ve-form-control" placeholder="Search...">`
+			const iptSearch = veT`<input class="ve-ui-search__ipt-search search ve-form-control" placeholder="搜索...">`
 				.vee.disableSpellcheck()
 				.vee.appendTo(wrpCtrls);
 			const wrpResults = veT`<div class="ve-ui-search__wrp-results"></div>`.vee.appendTo(eleTab);
@@ -1817,8 +1817,8 @@ window.addEventListener("load", () => {
 	Renderer.hover.bindDmScreen(window.DM_SCREEN);
 	window.DM_SCREEN.pInitialise()
 		.catch(err => {
-			JqueryUtil.doToast({content: `Failed to load with error "${err.message}". ${VeCt.STR_SEE_CONSOLE}`, type: "danger"});
-			veEs(`.dm-screen-loading .initial-message`)?.vee.txt("Failed!");
+			JqueryUtil.doToast({content: `加载失败：${err.message}。 ${VeCt.STR_SEE_CONSOLE}`, type: "danger"});
+			veEs(`.dm-screen-loading .initial-message`)?.vee.txt("加载失败！");
 			setTimeout(() => { throw err; });
 		});
 });

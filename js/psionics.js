@@ -4,17 +4,17 @@ class PsionicsSublistManager extends SublistManager {
 	static _getRowTemplate () {
 		return [
 			new SublistCellTemplate({
-				name: "Name",
+				name: "名称",
 				css: "ve-bold ve-col-6 ve-pl-0 ve-pr-1",
 				colStyle: "",
 			}),
 			new SublistCellTemplate({
-				name: "Type",
+				name: "类型",
 				css: "ve-col-3 ve-px-1 ve-text-center",
 				colStyle: "text-center",
 			}),
 			new SublistCellTemplate({
-				name: "Order",
+				name: "派系",
 				css: "ve-col-3 ve-text-center ve-pl-1 ve-pr-0",
 				colStyle: "text-center",
 			}),
@@ -75,19 +75,19 @@ class PsionicsPage extends ListPage {
 			dataProps: ["psionic"],
 
 			bookViewOptions: {
-				nameSingular: "psionic",
-				namePlural: "psionics",
-				pageTitle: "Psionics Book View",
+				nameSingular: "灵能",
+				namePlural: "灵能",
+				pageTitle: "灵能书籍视图",
 				fnPartition: ent => ent.type === "T" ? 0 : 1,
 			},
 
 			tableViewOptions: {
-				title: "Psionics",
+				title: "灵能",
 				colTransforms: {
 					name: UtilsTableview.COL_TRANSFORM_NAME,
 					source: UtilsTableview.COL_TRANSFORM_SOURCE,
 					page: UtilsTableview.COL_TRANSFORM_PAGE,
-					_text: {name: "Text", transform: (it) => Renderer.psionic.getBodyHtml(it), flex: 3},
+					_text: {name: "文本", transform: (it) => Renderer.psionic.getBodyHtml(it), flex: 3},
 				},
 			},
 

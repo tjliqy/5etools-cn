@@ -30,22 +30,22 @@ class ItemsSublistManager extends SublistManager {
 	static _getRowTemplate () {
 		return [
 			new SublistCellTemplate({
-				name: "Name",
+				name: "名称",
 				css: "ve-bold ve-col-6 ve-pl-0 ve-pr-1",
 				colStyle: "",
 			}),
 			new SublistCellTemplate({
-				name: "Weight",
+				name: "重量",
 				css: "ve-text-center ve-col-2 ve-px-1",
 				colStyle: "text-center",
 			}),
 			new SublistCellTemplate({
-				name: "Cost",
+				name: "费用",
 				css: "ve-text-center ve-col-2 ve-px-1",
 				colStyle: "text-center",
 			}),
 			new SublistCellTemplate({
-				name: "Number",
+				name: "数量",
 				css: "ve-text-center ve-col-2 ve-pl-1 ve-pr-0",
 				colStyle: "text-center",
 			}),
@@ -164,12 +164,12 @@ class ItemsSublistManager extends SublistManager {
 				.vee.txt(Parser.itemValueToFullMultiCurrency({value, currencyConversion: this._sublistCurrencyConversion}, {styleHint: this._styleHint}))
 				.vee.off("click")
 				.vee.onn("click", async () => {
-					const values = ["(Default)", ...[...availConversions].sort(SortUtil.ascSortLower)];
+					const values = ["（默认）", ...[...availConversions].sort(SortUtil.ascSortLower)];
 					const userSel = await InputUiUtil.pGetUserEnum({
 						values,
 						isResolveItem: true,
 						default: this._sublistCurrencyConversion,
-						title: "Select Currency Conversion Table",
+						title: "选择货币换算表",
 						fnDisplay: it => it === null ? values[0] : it,
 					});
 					if (userSel == null) return;
@@ -188,8 +188,12 @@ class ItemsSublistManager extends SublistManager {
 					values: this.constructor._TOTAL_VALUE_MODES,
 					isResolveItem: true,
 					default: this.constructor._TOTAL_VALUE_MODES.indexOf(this._sublistCurrencyDisplayMode),
-					title: "Select Display Mode",
-					fnDisplay: it => it === null ? this.constructor._TOTAL_VALUE_MODES[0] : it,
+					title: "选择显示方式",
+					fnDisplay: it => ({
+						[this.constructor._TOTAL_VALUE_MODE_EXACT_COINAGE]: "原始币种",
+						[this.constructor._TOTAL_VALUE_MODE_LOWEST_COMMON]: "最小通用币种",
+						[this.constructor._TOTAL_VALUE_MODE_GOLD]: "金币",
+					})[it === null ? this.constructor._TOTAL_VALUE_MODES[0] : it],
 				});
 				if (userSel == null) return;
 				this._sublistCurrencyDisplayMode = userSel === this.constructor._TOTAL_VALUE_MODES[0] ? null : userSel;
@@ -241,22 +245,22 @@ class ItemsPage extends ListPage {
 			isLazyLoadingItems: true,
 
 			bookViewOptions: {
-				nameSingular: "item",
-				namePlural: "items",
-				pageTitle: "Items Book View",
+				nameSingular: "物品",
+				namePlural: "物品",
+				pageTitle: "物品书籍视图",
 				propMarkdown: "item",
 				isSublistItemsCountable: true,
 			},
 
 			tableViewOptions: {
-				title: "Items",
+				title: "物品",
 				colTransforms: {
 					name: UtilsTableview.COL_TRANSFORM_NAME,
 					source: UtilsTableview.COL_TRANSFORM_SOURCE,
 					page: UtilsTableview.COL_TRANSFORM_PAGE,
-					rarity: {name: "Rarity"},
+					rarity: {name: "稀有度"},
 					_type: {
-						name: "Type",
+						name: "类型",
 						transform: (item, additionalData, {styleHint}) => {
 							const {
 								entryType,
@@ -266,13 +270,13 @@ class ItemsPage extends ListPage {
 							return [Renderer.get().render(entryType), Renderer.get().render(entrySubtype)].filter(Boolean).join(", ");
 						},
 					},
-					_attunement: {name: "Attunement", transform: it => it._attunement ? it._attunement.slice(1, it._attunement.length - 1) : ""},
-					_damage: {name: "Damage", transform: it => Renderer.item.getRenderedDamageAndProperties(it)[0]},
-					_properties: {name: "Properties", transform: it => Renderer.item.getRenderedDamageAndProperties(it)[1]},
-					_mastery: {name: "Mastery", transform: it => Renderer.item.getRenderedMastery(it)},
-					_weight: {name: "Weight", transform: it => Parser.itemWeightToFull(it)},
-					_value: {name: "Value", transform: it => Parser.itemValueToFullMultiCurrency(it, {styleHint: this._styleHint})},
-					_entries: {name: "Text", transform: (it) => Renderer.item.getRenderedEntries(it, {isCompact: true}), flex: 3},
+					_attunement: {name: "同调", transform: it => it._attunement ? it._attunement.slice(1, it._attunement.length - 1) : ""},
+					_damage: {name: "伤害", transform: it => Renderer.item.getRenderedDamageAndProperties(it)[0]},
+					_properties: {name: "属性", transform: it => Renderer.item.getRenderedDamageAndProperties(it)[1]},
+					_mastery: {name: "武器精通", transform: it => Renderer.item.getRenderedMastery(it)},
+					_weight: {name: "重量", transform: it => Parser.itemWeightToFull(it)},
+					_value: {name: "价值", transform: it => Parser.itemValueToFullMultiCurrency(it, {styleHint: this._styleHint})},
+					_entries: {name: "文本", transform: (it) => Renderer.item.getRenderedEntries(it, {isCompact: true}), flex: 3},
 				},
 			},
 			propEntryData: "item",

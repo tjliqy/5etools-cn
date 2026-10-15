@@ -7,7 +7,7 @@
 import fs from "fs";
 
 function cleanBestiaryFluffImages () {
-	console.log(`##### Cleaning bestiary fluff images #####`);
+	console.log(`##### 正在清理怪物简介图片 #####`);
 
 	// read all the image dirs and track which images are actually in use
 	const _ALL_IMAGE_PATHS = new Set();
@@ -43,9 +43,9 @@ function cleanBestiaryFluffImages () {
 	});
 
 	if (_ALL_IMAGE_PATHS.size) {
-		console.error(`The following images were unused:`);
+		console.error(`以下图片未被使用：`);
 		_ALL_IMAGE_PATHS.forEach(it => console.error(it));
-		throw new Error(`Could not clean bestiary fluff!`);
+		throw new Error(`无法清理怪物简介图片！`);
 	}
 
 	// a value of "true" in the mapping represents "map to the shortest available name in the array"
@@ -87,11 +87,11 @@ function cleanBestiaryFluffImages () {
 		.filter(([img, metas]) => !MAP_TO_SHORTEST[img] && !MAP_TO_VALUE[img] && metas.length > 1);
 
 	if (multipleNames.length) {
-		console.error(`The following images could be mapped to multiple names:`);
+		console.error(`以下图片可能对应多个名称：`);
 		multipleNames.forEach(([img, metas]) => {
 			console.error(`\t${`${img}\t`.padEnd(55, " ")} ${metas.map(m => m.name).join(", ")}`);
 		});
-		throw new Error(`Could not clean bestiary fluff!`);
+		throw new Error(`无法清理怪物简介图片！`);
 	}
 
 	// handle any special renames first
@@ -102,7 +102,7 @@ function cleanBestiaryFluffImages () {
 			const pathParts = img.split("/");
 			const namePart = pathParts.pop();
 			const spl = namePart.split(".");
-			if (spl.length > 2) throw new Error(`Could not extract extension from name "${namePart}"`);
+			if (spl.length > 2) throw new Error(`无法从名称“${namePart}”提取扩展名`);
 			const nuPath = [...pathParts, `${cleanShortName}.${spl[1]}`].join("/");
 			fs.renameSync(`./img/${img}`, `./img/${nuPath}`);
 
@@ -140,7 +140,7 @@ function cleanBestiaryFluffImages () {
 					const pathParts = it.href.path.split("/");
 					const namePart = pathParts.pop();
 					const spl = namePart.split(".");
-					if (spl.length > 2) throw new Error(`Could not extract extension from name "${namePart}"`);
+					if (spl.length > 2) throw new Error(`无法从名称“${namePart}”提取扩展名`);
 					const nuPath = [...pathParts, `${cleanName}${i > 0 ? ` ${`${i}`.padStart(3, "0")}` : ""}.${spl[1]}`].join("/");
 					fs.renameSync(`img/${it.href.path}`, `img/${nuPath}`);
 					it.href.path = nuPath;
@@ -155,7 +155,7 @@ function cleanBestiaryFluffImages () {
 	// write JSON files
 	Object.values(ixFluff).forEach(meta => fs.writeFileSync(meta.path, CleanUtil.getCleanJson(meta.json), "utf-8"));
 
-	console.log(`Done!`);
+	console.log(`完成！`);
 }
 
 cleanBestiaryFluffImages();

@@ -50,7 +50,7 @@ export async function onRequest (context) {
 	}
 
 	if (!res) {
-		return new Response("Failed to load image from all upstreams.", {
+		return new Response("所有上游来源的图片均加载失败。", {
 			status: 502,
 			headers: {
 				"Content-Type": "text/plain; charset=utf-8",

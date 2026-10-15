@@ -1,3 +1,4 @@
+import "./locale/i18n.js";
 import fs from "fs";
 import "../js/parser.js";
 import "../js/utils.js";
@@ -35,7 +36,7 @@ function getProbeTarget (imgEntry, {localBrewDir = null, localBrewDirImg = null,
 		}
 
 		if (!isAllowExternal) { // Local files are not truly "external"
-			console.warn(`Skipping "external" image (URL was "${imgEntry.href.url}"); run with the "--allow-external" option if you wish to probe external URLs.`);
+			console.warn(`跳过外部图片（URL：“${imgEntry.href.url}”）；如需检测外部 URL，请使用 --allow-external 选项。`);
 			return null;
 		}
 
@@ -45,7 +46,7 @@ function getProbeTarget (imgEntry, {localBrewDir = null, localBrewDirImg = null,
 		};
 	}
 
-	throw new Error(`Unhandled image href.type "${imgEntry.href.type}"!`);
+	throw new Error(`未处理的图片 href.type：“${imgEntry.href.type}”！`);
 }
 
 function getImageEntries (imageEntries, obj) {
@@ -67,7 +68,7 @@ async function pMutImageDimensions (imgEntry, {localBrewDir = null, localBrewDir
 		imgEntry.width = dimensions.width;
 		imgEntry.height = dimensions.height;
 	} catch (e) {
-		console.error(`Failed to set dimensions for ${location} -- ${e.message}`);
+		console.error(`无法设置 ${location} 的尺寸：${e.message}`);
 	}
 }
 
@@ -125,7 +126,7 @@ async function main (
 			},
 		},
 	);
-	console.log(`Running on ${allFiles.length} JSON file${allFiles.length === 1 ? "" : "s"}...`);
+	console.log(`正在处理 ${allFiles.length} 个 JSON 文件…`);
 
 	const imageEntries = [];
 	allFiles.forEach(jsonFile => {
@@ -151,13 +152,13 @@ async function main (
 	allFiles.forEach(jsonFile => fs.writeFileSync(jsonFile.getFilePath(), CleanUtil.getCleanJson(jsonFile.getContents()), "utf-8"));
 
 	const tEnd = Date.now();
-	console.log(`Completed in ${((tEnd - tStart) / 1000).toFixed(2)}s.`);
+	console.log(`已完成，耗时 ${((tEnd - tStart) / 1000).toFixed(2)} 秒。`);
 }
 
 const program = mutCommanderJsonFileOptions({command: new Command()})
-	.option("--allow-external", "Allow external URLs to be probed.")
-	.option("--local-brew-dir <localBrewDir>", "Use local homebrew directory for relevant URLs.")
-	.option("--local-brew-dir-img <localBrewDirImg>", "Use local homebrew-img directory for relevant URLs.")
+	.option("--allow-external", "允许检测外部 URL。")
+	.option("--local-brew-dir <localBrewDir>", "使用本地自制内容目录查找相关 URL。")
+	.option("--local-brew-dir-img <localBrewDirImg>", "使用本地自制内容图片目录查找相关 URL。")
 ;
 
 program.parse(process.argv);
