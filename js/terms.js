@@ -3,7 +3,7 @@ import {OmnisearchBacking} from "./omnisearch/omnisearch-backing.js";
 import {OmnisearchUtilsUi} from "./omnisearch/omnisearch-utils-ui.js";
 
 class TermsPage {
-	static _TERMS_DATA_URL = "docs/terms-20260922-142718.json";
+	static _TERMS_DATA_URL = "docs/terms-20261015-105551.json";
 	static _TERMS_CACHE_NAME = "5etools-terms-v1";
 	static _BUQUANSHU_API_URL = "https://5echmsearch.kagangtuya.top/api/search";
 	static _BUQUANSHU_SITE_URL = "https://5echm.kagangtuya.top/";
