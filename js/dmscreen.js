@@ -1213,6 +1213,38 @@ class AddMenuVideoTab extends AddMenuTab {
 				this.menu.doClose();
 			});
 
+		const iptUrlBilibili = veT`<input class="ve-form-control" placeholder="粘贴 BiliBili 链接">`
+			.vee.onn("keydown", evt => {
+				if (evt.key === "Enter") btnAddBilibili.vee.trigger("click");
+			});
+		const btnAddBilibili = veT`<button class="ve-btn ve-btn-primary ve-btn-sm">嵌入</button>`
+			.vee.onn("click", async () => {
+				let url;
+				try {
+					url = new URL(iptUrlBilibili.vee.val().trim());
+				} catch (e) {
+					JqueryUtil.doToast({content: "请输入有效的 BiliBili 视频网址！", type: "danger"});
+					return;
+				}
+
+				const videoId = /^\/video\/(BV[0-9A-Za-z]{10}|av\d+)\/?$/.exec(url.pathname)?.[1];
+				if (!(["www.bilibili.com", "m.bilibili.com", "bilibili.com"].includes(url.hostname.toLowerCase()) && ["http:", "https:"].includes(url.protocol) && videoId)) {
+					JqueryUtil.doToast({content: "请输入 BiliBili 视频网址（如 https://www.bilibili.com/video/BV...）！", type: "danger"});
+					return;
+				}
+
+				const embedUrl = new URL("https://player.bilibili.com/player.html");
+				embedUrl.searchParams.set(/^av/i.test(videoId) ? "aid" : "bvid", /^av/i.test(videoId) ? videoId.slice(2) : videoId);
+				const page = url.searchParams.get("p");
+				if (page && /^[1-9]\d*$/.test(page)) embedUrl.searchParams.set("p", page);
+
+				const pcm = new PanelContentManager_GenericEmbed({board: this._board, panel: this.menu.pnl});
+				await pcm.pDoPopulate({state: {u: embedUrl.href}});
+
+				iptUrlBilibili.vee.val("");
+				this.menu.doClose();
+			});
+
 		const getTwitchUrlRegexMatch = (url) => {
 			return /https?:\/\/(?:www\.)?twitch\.tv\/(?<channel>.*?)(?:\?.*$|$)/.exec(url);
 		};
@@ -1285,6 +1317,7 @@ class AddMenuVideoTab extends AddMenuTab {
 
 		this.eleTab = veT`<div class="ve-ui-search__wrp-output underline-tabs" id="${this.tabId}">
 			<div class="ve-ui-modal__row">${iptUrlYT}${btnAddYT}</div>
+			<div class="ve-ui-modal__row">${iptUrlBilibili}${btnAddBilibili}</div>
 			<div class="ve-ui-modal__row">${iptUrlTwitch}${btnAddTwitch}${btnAddTwitchChat}</div>
 			<div class="ve-ui-modal__row">${iptUrlGeneric}${btnAddGeneric}</div>
 		</div>`;
