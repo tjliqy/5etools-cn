@@ -9,7 +9,7 @@
 	"monster": [
 		{
 			"ENG_name": "Fiendish Icon",
-			"name": "恶魔图腾",
+			"name": "邪魔雕像",
 			"type": "construct",
 			"source": "ABH",
 			"page": 14,
@@ -65,7 +65,7 @@
 					"ENG_name": "Magic Resistance",
 					"name": "魔法抗性",
 					"entries": [
-						"该图标在对抗法术和其他魔法效果的豁免上具有{@variantrule 优势|XPHB}。"
+						"雕像对抗法术和其他魔法效应时进行的豁免检定具有{@variantrule 优势|XPHB}。"
 					]
 				}
 			],
@@ -74,7 +74,7 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"圣像发动两次猛击攻击并使用炽焰爆发。"
+						"雕像发动两次猛击攻击并使用炽热爆发。"
 					]
 				},
 				{
@@ -86,9 +86,9 @@
 				},
 				{
 					"ENG_name": "Fiery Eruption",
-					"name": "炽热喷发",
+					"name": "炽热爆发",
 					"entries": [
-						"{@actSave dex} {@dc 11}，位于圣徽发出的5尺{@variantrule 光环 [效应区域]|XPHB|光环}范围内的每个生物。{@actSaveFail} 7（{@damage 2d6}）火焰伤害。"
+						"{@actSave dex} {@dc 11}，位于源自雕像的5尺{@variantrule 光环 [效应区域]|XPHB|光环}范围内的每个生物。{@actSaveFail} 7（{@damage 2d6}）火焰伤害。"
 					]
 				}
 			],
@@ -125,7 +125,7 @@
 		},
 		{
 			"ENG_name": "Harvester Devil",
-			"name": "收割者魔鬼",
+			"name": "收割魔",
 			"type": {
 				"type": "fiend",
 				"tags": [
@@ -189,7 +189,7 @@
 			"trait": [
 				{
 					"ENG_name": "Diabolic Ward",
-					"name": "恶魔护符",
+					"name": "魔鬼守御",
 					"entries": [
 						"针对该魔鬼的攻击检定具有{@variantrule 劣势|XPHB}。如果该魔鬼进行攻击检定，此特性将受到抑制直到其下一回合开始。"
 					]
@@ -214,26 +214,26 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"该魔鬼进行两次攻击，使用地狱之刃或困惑射线以任意组合。"
+						"该魔鬼进行两次攻击，使用狱火利刃或迷惘射线以任意组合。"
 					]
 				},
 				{
 					"ENG_name": "Infernal Blade",
-					"name": "地狱之刃",
+					"name": "狱火利刃",
 					"entries": [
 						"{@atkr m} {@hit 5}，触及5尺。{@h}6（{@damage 1d6 + 3}）挥砍伤害和7（{@damage 2d6}）火焰伤害。"
 					]
 				},
 				{
 					"ENG_name": "Confounding Ray",
-					"name": "迷惑射线",
+					"name": "迷惘射线",
 					"entries": [
 						"{@atkr r} {@hit 5}，范围120尺。{@h}13（{@damage 2d12}）心灵伤害。如果目标是生物，在魔鬼的下个回合开始前，它不能进行{@action 借机攻击|XPHB|借机攻击}。"
 					]
 				},
 				{
 					"ENG_name": "Compelling Contract (1/Day)",
-					"name": "强制契约（1/白昼）",
+					"name": "强辩契约（1/日）",
 					"entries": [
 						"{@actSave cha} {@dc 14}，魔鬼30尺内的一个生物。{@actSaveFail} 目标获得{@condition 魅惑|XPHB}状态。当处于{@condition 魅惑|XPHB}状态时，它获得{@condition 震慑|XPHB}状态，但目标可以说话。如果目标同意魔鬼的契约，此效果结束。否则，每当目标受到伤害时以及在其每个回合结束时重复豁免，成功则自身结束此效果。1分钟后，它自动成功。"
 					]
@@ -279,7 +279,7 @@
 		},
 		{
 			"ENG_name": "Speaker Devil",
-			"name": "魔鬼代言人",
+			"name": "宣令魔",
 			"type": {
 				"type": "fiend",
 				"tags": [
@@ -384,12 +384,12 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"该魔鬼进行两次雷鸣戟攻击。"
+						"该魔鬼进行两次雷霆长戟攻击。"
 					]
 				},
 				{
 					"ENG_name": "Thundering Halberd",
-					"name": "雷鸣戟",
+					"name": "雷霆长戟",
 					"entries": [
 						"{@atkr m} {@hit 9}，触及10尺。{@h}16（{@damage 2d10 + 5}）挥砍伤害外加14（{@damage 4d6}）雷鸣伤害。"
 					]
@@ -398,14 +398,14 @@
 			"bonus": [
 				{
 					"ENG_name": "Utterance of Pain",
-					"name": "痛苦之语",
+					"name": "苦痛咒言",
 					"entries": [
 						"{@actSave wis} {@dc 18}，魔鬼周围20尺{@variantrule 光环 [效应区域]|XPHB|光环}内的每个生物。{@actSaveFail} 目标获得{@condition 震慑|XPHB}状态直到魔鬼的下个回合结束。"
 					]
 				},
 				{
 					"ENG_name": "Utterance of Unmaking",
-					"name": "毁灭真言",
+					"name": "蹂躏咒言",
 					"entries": [
 						"{@actSave con} {@dc 18}，魔鬼周围20尺{@variantrule 光环 [效应区域]|XPHB|光环}内的每个生物。{@actSaveFail} 22（{@damage 4d10}）力场伤害。{@actSaveSuccess} 一半伤害。"
 					]
@@ -574,7 +574,7 @@
 					"name": "雾隐遁行",
 					"entries": [
 						"若吸血鬼在其休眠地之外{@variantrule 生命值|XPHB}降至 0，其立即使用变形动作变为雾气（无需动作）。若此时其无法使用变形，则其被摧毁。",
-						"若吸血鬼处于迷雾形态且具有 0 {@variantrule 生命值|XPHB}生命值时，其无法变回其吸血鬼形态，且必须在 2 小时内返回其休眠地，否则亦会被摧毁。一旦返回其休眠地，其变回吸血鬼形态并陷入{@condition 麻痹|XPHB}麻痹状态直至其恢复任意{@variantrule 生命值|XPHB}生命值，吸血鬼在此地停留 1 小时后恢复 1 {@variantrule 生命值|XPHB|生命值}。"
+						"若吸血鬼处于迷雾形态且具有 0 {@variantrule 生命值|XPHB}生命值时，其无法变回其吸血鬼形态，且必须在 2 小时内返回其休眠地，否则亦会被摧毁。一旦返回其休眠地，其变回吸血鬼形态并陷入{@condition 麻痹|XPHB}状态直至其恢复任意{@variantrule 生命值|XPHB}生命值，吸血鬼在此地停留 1 小时后恢复 1 {@variantrule 生命值|XPHB|生命值}。"
 					]
 				},
 				{
@@ -588,7 +588,7 @@
 							"items": [
 								{
 									"ENG_name": "Forbiddance",
-									"name": "禁制术",
+									"name": "禁入",
 									"type": "itemSub",
 									"entries": [
 										"吸血鬼未得到一位居住者的邀请时无法进入相应的民宅。"
@@ -628,12 +628,12 @@
 					"ENG_name": "Multiattack (Vampire Form Only)",
 					"name": "多重攻击（仅吸血鬼形态）",
 					"entries": [
-						"该吸血鬼发动两次地狱火爪抓攻击并使用啃咬。"
+						"该吸血鬼发动两次狱炎利爪攻击并使用啃咬。"
 					]
 				},
 				{
 					"ENG_name": "Hellfire Claw (Vampire Form Only)",
-					"name": "地狱火爪抓（仅限吸血鬼形态）",
+					"name": "狱炎利爪（仅吸血鬼形态）",
 					"entries": [
 						"{@atkr m} {@hit 9}，触及5尺。{@h}13（{@damage 2d8 + 4}）挥砍伤害外加10（{@damage 3d6}）火焰伤害。如果目标是中型或更小的生物，它会被其中一只爪子施加{@condition 受擒|XPHB}状态（逃脱{@dc 17}）。"
 					]
@@ -652,7 +652,7 @@
 					"name": "变形",
 					"entries": [
 						"如果该吸血鬼不在阳光或流水中，它会变形为一个微型小魔鬼（{@variantrule 速度|XPHB} 20尺，{@variantrule 飞行速度|XPHB} 40尺），或一个中型雾团（{@variantrule 速度|XPHB} 5尺，{@variantrule 飞行速度|XPHB} 20尺[悬浮]），或变回其吸血鬼形态。它所穿戴的任何物品都会随之变形。",
-						"在小魔鬼形态下，该吸血鬼的具体数值，除了体型和{@variantrule 速度|XPHB}，保持不变。",
+						"在小魔鬼形态下，该吸血鬼的游戏数据除体型和{@variantrule 速度|XPHB}外保持不变。",
 						"处于迷雾形态期间，吸血鬼无法执行任何动作，亦无法说话或操纵物件。迷雾没有重量且可以进入并停留在某个生物所处的空间。迷雾可以穿过空气能通过的空间，但无法穿过液体。除了其因日照受到的伤害外，迷雾具有对所有伤害的{@variantrule 抗性|XPHB}。"
 					]
 				}
@@ -661,9 +661,9 @@
 			"legendary": [
 				{
 					"ENG_name": "Hellfire Strike",
-					"name": "地狱火打击",
+					"name": "狱炎打击",
 					"entries": [
-						"该吸血鬼移动至多其{@variantrule 速度|XPHB}的一半，并发动一次地狱火爪抓攻击。"
+						"该吸血鬼移动至多其{@variantrule 速度|XPHB}的一半，并发动一次狱炎利爪攻击。"
 					]
 				},
 				{
@@ -742,7 +742,7 @@
 		},
 		{
 			"ENG_name": "Vampire Warden",
-			"name": "吸血鬼看守",
+			"name": "吸血鬼卫士",
 			"type": "undead",
 			"source": "ABH",
 			"page": 20,
@@ -798,7 +798,7 @@
 			"spellcasting": [
 				{
 					"ENG_name": "Guardian's Command",
-					"name": "守护者命令",
+					"name": "卫士号令",
 					"type": "spellcasting",
 					"headerEntries": [
 						"该吸血鬼施放{@spell 强迫术|XPHB}，无需法术成分并使用魅力作为施法属性（法术豁免{@dc 15}）。"
@@ -832,7 +832,7 @@
 							"items": [
 								{
 									"ENG_name": "Forbiddance",
-									"name": "禁制术",
+									"name": "禁入",
 									"type": "itemSub",
 									"entries": [
 										"吸血鬼未得到一位居住者的邀请时无法进入相应的民宅。"
@@ -864,7 +864,7 @@
 								},
 								{
 									"ENG_name": "Immobile Restoration",
-									"name": "静止恢复",
+									"name": "屹立复苏",
 									"type": "itemSub",
 									"entries": [
 										"若吸血鬼在其未处于{@condition 石化|XPHB}状态时{@variantrule 生命值|XPHB}降至0，其立即变为石头并恢复50 {@variantrule 生命值|XPHB}。同时陷入{@condition 石化|XPHB}状态，持续1小时。"
@@ -880,14 +880,14 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"该吸血鬼发动两次爪抓攻击，并使用啃咬或守护者的命令术。"
+						"该吸血鬼发动两次爪击攻击，并使用啃咬或卫士号令。"
 					]
 				},
 				{
 					"ENG_name": "Claw",
 					"name": "爪击",
 					"entries": [
-						"{@atkr m} {@hit 9}，触及5尺。{@h}14（{@damage 2d8 + 5}）挥砍伤害外加7（{@damage 2d6}）暗蚀伤害。如果目标是大型或更小的生物，它被其中一只爪子获得{@condition 受擒|XPHB}状态（逃脱{@dc 16}）。"
+						"{@atkr m} {@hit 9}，触及5尺。{@h}14（{@damage 2d8 + 5}）挥砍伤害外加7（{@damage 2d6}）暗蚀伤害。如果目标是大型或更小的生物，它会被其中一只爪子施加{@condition 受擒|XPHB}状态（逃脱{@dc 16}）。"
 					]
 				},
 				{
@@ -901,7 +901,7 @@
 			"reaction": [
 				{
 					"ENG_name": "Resilient Flesh",
-					"name": "坚韧血肉",
+					"name": "血肉韧化",
 					"entries": [
 						"{@actTrigger} 吸血鬼被一个它能看见的攻击者的近战攻击骰命中。{@actResponse} 吸血鬼将该攻击对其造成的伤害减少11（{@dice 2d6 + 4}）。"
 					]

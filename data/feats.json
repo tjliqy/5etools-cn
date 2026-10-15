@@ -1398,7 +1398,7 @@
 				},
 				{
 					"ENG_name": "Sanguine Feast",
-					"name": "血宴",
+					"name": "血腥饕宴",
 					"type": "entries",
 					"entries": [
 						"每回合一次，当你以攻击检定命中一名处于{@status 浴血|XPHB}的非构装或非亡灵生物时，你可以消耗并投掷一枚{@variantrule 生命值骰|XPHB|生命值骰}，并恢复等于骰值+你体质调整值的{@variantrule 生命值|XPHB}。",
@@ -2492,7 +2492,7 @@
 					"name": "百毒不侵",
 					"type": "entries",
 					"entries": [
-						"你具有对{@variantrule 免疫|XPHB} 和 {@condition 中毒|XPHB} 状态的免疫。"
+						"你具有对毒素伤害和{@condition 中毒|XPHB}状态的{@variantrule 免疫|XPHB}。"
 					]
 				},
 				{
@@ -3174,7 +3174,7 @@
 				"你获得以下增益。",
 				{
 					"ENG_name": "Fearless",
-					"name": "无畏",
+					"name": "无所畏惧",
 					"type": "entries",
 					"entries": [
 						"你具有对{@condition 恐慌|XPHB}状态的{@variantrule 免疫|XPHB}。"
@@ -3185,7 +3185,7 @@
 					"name": "逃吧，蠢货！",
 					"type": "entries",
 					"entries": [
-						"当一名陷入{@condition 恐慌|XPHB}状态的生物在你60尺内开始其回合时，只要你可以看见该生物且其未身处{@variantrule 掩护|XPHB|全身掩护}之后，你就能够以{@variantrule 反应|XPHB}加剧其恐惧，后面。若你如此做，该生物必须成功通过一次感知豁免（DC为8加你的魅力调整值加你的{@variantrule 熟练|XPHB|熟练加值}），否则需要消耗其回合以可用的最快方式移动远离你。此增益一经使用，直至完成{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}你都无法再次使用。"
+						"当一名陷入{@condition 恐慌|XPHB}状态的生物在你60尺内开始其回合时，只要你可以看见该生物且其未身处{@variantrule 掩护|XPHB|全身掩护}之后，你就能够以{@variantrule 反应|XPHB}加剧其恐惧。若你如此做，该生物必须成功通过一次感知豁免（DC为8加你的魅力调整值加你的{@variantrule 熟练|XPHB|熟练加值}），否则需要消耗其回合以可用的最快方式移动远离你。此增益一经使用，直至完成{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}你都无法再次使用。"
 					]
 				},
 				{
@@ -3381,7 +3381,7 @@
 		},
 		{
 			"ENG_name": "Boon of the Soul Drinker",
-			"name": "饮魂汲魄之恩惠",
+			"name": "汲魂饮魄之恩惠",
 			"source": "FRHoF",
 			"page": 43,
 			"category": "EB",
@@ -3708,7 +3708,7 @@
 		},
 		{
 			"ENG_name": "Child of the Sun",
-			"name": "太阳之子",
+			"name": "骄阳之子",
 			"source": "LFL",
 			"category": "O",
 			"additionalSpells": [
@@ -3791,7 +3791,7 @@
 					"name": "雾起",
 					"type": "entries",
 					"entries": [
-						"你总是准备了{@spell 云雾术|XPHB}法术。你可以无需法术位施放它，并且你必须完成一次{@variantrule 长休|XPHB}才能再次以此方式施放它。你也可以使用你拥有的适当等级的法术位来施放它。你施放该法术的施法属性是由此专长提升的属性。"
+						"你始终准备着法术{@spell 云雾术|XPHB}。你可以无需法术位施放它，并且你必须完成一次{@variantrule 长休|XPHB}才能再次以此方式施放它。你也可以使用你拥有的适当等级的法术位来施放它。你施放该法术的施法属性是由此专长提升的属性。"
 					]
 				},
 				{
@@ -5793,7 +5793,7 @@
 					"name": "惊惶打击",
 					"type": "entries",
 					"entries": [
-						"当你以攻击检定命中一名生物时，你能够尝试令目标惊惶失措。目标必须成功通过一次感知豁免（DC为8加你以此专长提升的属性的调整值加你的{@variantrule 熟练|XPHB|熟练加值}）否则其豁免具有{@variantrule 劣势|XPHB}持续至你的下个回合结束。",
+						"当你以攻击检定命中一名生物时，你能够尝试令目标惊惶失措。目标必须成功通过一次感知豁免（DC为8加你以此专长提升的属性的调整值加你的{@variantrule 熟练|XPHB|熟练加值}）否则其进行的豁免检定具有{@variantrule 劣势|XPHB}，持续至你的下个回合结束。",
 						"你能够使用此增益的次数等于你的{@variantrule 熟练|XPHB|熟练加值}，当你完成{@variantrule 长休|XPHB}时重获所有已消耗的使用次数。"
 					]
 				}
@@ -8259,7 +8259,7 @@
 		},
 		{
 			"ENG_name": "Light Bringer",
-			"name": "光照使者",
+			"name": "光明使者",
 			"source": "ABH",
 			"page": 10,
 			"category": "G",
@@ -8317,7 +8317,7 @@
 					"name": "日耀之辉",
 					"type": "entries",
 					"entries": [
-						"当你施放{@spell 光亮术|XPHB}时，你可以让该法术的光照成为阳光。一旦你使用了此好处，直到你完成一次{@variantrule 长休|XPHB}前，你无法再次使用它。"
+						"当你施放{@spell 光亮术|XPHB}时，你可以让该法术的光照成为阳光。此增益一经使用，直至完成{@variantrule 长休|XPHB}你都无法再次使用。"
 					]
 				},
 				{
@@ -8548,7 +8548,7 @@
 					"name": "执旗者",
 					"type": "entries",
 					"entries": [
-						"以一个{@variantrule 附赠动作|XPHB}，，选择至多三名位于你60尺内能看见你的生物。每名{@variantrule 速度|XPHB}不为0的目标均能够立即以{@variantrule 反应|XPHB}起立并结束{@condition 倒地|XPHB}状态。此外，你增强目标的信念，持续1分钟或在你陷入{@condition 失能|XPHB}状态时提前结束。信念增强期间，目标无法被附身或是获得{@condition 魅惑|XPHB}或{@condition 恐慌|XPHB}状态；若目标已被附身、{@condition 魅惑|XPHB}或{@condition 恐慌|XPHB}，则目标对抗相关效应的任意新豁免检定具有{@variantrule 优势|XPHB}。",
+						"以一个{@variantrule 附赠动作|XPHB}，选择至多三名位于你60尺内能看见你的生物。每名{@variantrule 速度|XPHB}不为0的目标均能够立即以{@variantrule 反应|XPHB}起立并结束{@condition 倒地|XPHB}状态。此外，你增强目标的信念，持续1分钟或在你陷入{@condition 失能|XPHB}状态时提前结束。信念增强期间，目标无法被附身或是获得{@condition 魅惑|XPHB}或{@condition 恐慌|XPHB}状态；若目标已被附身、{@condition 魅惑|XPHB}或{@condition 恐慌|XPHB}，则目标对抗相关效应的任意新豁免检定具有{@variantrule 优势|XPHB}。",
 						"此增益一经使用，直至完成{@variantrule 长休|XPHB}你都无法再次使用。"
 					]
 				}
@@ -11343,7 +11343,7 @@
 					"name": "迷锁守护",
 					"type": "entries",
 					"entries": [
-						"如果一个法术攻击命中你或你在对抗一个法术的豁免检定中失败，你可以采取一个{@variantrule 反应|XPHB}反应在密斯特拉之触魔法表格上掷骰以创造一个魔法效应。如果一个效应需要豁免检定，其DC等于8加上由该专长提升的属性调整值和你的{@variantrule 熟练|XPHB|熟练加值}熟练加值。",
+						"若法术攻击命中你或你对抗法术的豁免检定失败，你能够以{@variantrule 反应|XPHB}投掷迷锁触碰魔法表来创造一个魔法效应。若效应需求豁免，其DC为8加你以此专长提升的属性的调整值加你的{@variantrule 熟练|XPHB|熟练加值}。",
 						"你能够使用此增益的次数等于你的{@variantrule 熟练|XPHB|熟练加值}，当你完成{@variantrule 长休|XPHB}时重获所有已消耗的使用次数。",
 						{
 							"type": "table",
@@ -11901,7 +11901,7 @@
 						},
 						{
 							"ENG_name": "Portal Sense",
-							"name": "传送门感知",
+							"name": "侦测传送门",
 							"type": "item",
 							"entries": [
 								"你始终知道上一次使用的位面传送门位于你何方，但你与那个传送门必须处于同一存在位面上。不仅如此，以一个动作，你可以侦测到30尺内的任何对你来说未处于{@quickref 掩护||3||全身掩护}的传送门的位置。一旦你使用了侦测传送门动作，直到你完成一次长休前你都无法再次使用这一动作。"
@@ -12364,7 +12364,7 @@
 				"你获得以下增益。",
 				{
 					"ENG_name": "Necrosis",
-					"name": "腐坏",
+					"name": "疽腐蚀骨",
 					"type": "entries",
 					"entries": [
 						"当你进行造成暗蚀伤害的伤害掷骰时，你能令受到此伤害的一名生物陷入{@condition 中毒|XPHB}状态，直至你的下个回合开始。此增益一经使用，直至完成{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}前，你都无法再次使用。"
@@ -13561,7 +13561,7 @@
 		},
 		{
 			"ENG_name": "Shadowmoor Hexer",
-			"name": "影沼咒术师",
+			"name": "影原咒者",
 			"source": "LFL",
 			"category": "O",
 			"additionalSpells": [
@@ -13591,7 +13591,7 @@
 					"name": "脆弱诅咒",
 					"type": "entries",
 					"entries": [
-						"你总是准备了{@spell 脆弱诅咒|XPHB}法术。智力、感知或魅力是你的该法术的施法属性（选择此专长时选择）。你可以无需法术位施放它一次，并且当你完成一次{@variantrule 长休|XPHB}时恢复以此方式施放它的能力。你也可以使用你拥有的任何法术位施放该法术。"
+						"你始终准备着法术{@spell 脆弱诅咒|XPHB}。智力、感知或魅力是你的该法术的施法属性（选择此专长时选择）。你可以无需法术位施放它一次，并且当你完成一次{@variantrule 长休|XPHB}时恢复以此方式施放它的能力。你也可以使用你拥有的任何法术位施放该法术。"
 					]
 				},
 				{
@@ -13599,7 +13599,7 @@
 					"name": "诅咒魔法",
 					"type": "entries",
 					"entries": [
-						"当你被一个你用{@spell 脆弱诅咒|XPHB}诅咒的生物用攻击检定命中时，该生物受到等同于你{@variantrule 熟练|XPHB|熟练加值}的心灵伤害。一个生物每回合只会受到此伤害一次。"
+						"当一名被你以{@spell 脆弱诅咒|XPHB}诅咒的生物以攻击检定命中你时，该生物受到等同于你{@variantrule 熟练|XPHB|熟练加值}的心灵伤害。一个生物每回合只会受到此伤害一次。"
 					]
 				}
 			],
@@ -15998,7 +15998,7 @@
 			"page": 8,
 			"category": "O",
 			"entries": [
-				"当一名位于你60尺内可见的盟友消耗{@variantrule 英雄激励|XPHB}时，若你没有英雄激励，则你获得{@variantrule 英雄激励|XPHB}。你可使用此增益的次数等同于等于你的{@variantrule 熟练|XPHB|熟练加值}，在完成{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}后你重获所有已消耗的使用次数。"
+				"当一名位于你60尺内可见的盟友消耗{@variantrule 英雄激励|XPHB}时，若你没有英雄激励，则你获得{@variantrule 英雄激励|XPHB}。你可使用此增益的次数等同于你的{@variantrule 熟练|XPHB|熟练加值}，在完成{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}后你重获所有已消耗的使用次数。"
 			],
 			"translator": "不全书"
 		},
@@ -16241,7 +16241,7 @@
 					"name": "惑控之仪",
 					"type": "entries",
 					"entries": [
-						"你始终准备着{@spell 魅惑类人|XPHB}。你可以无需法术位地施展该法术一次，你必须完成{@variantrule 长休|XPHB}后才能再次以此法施展该法术。你也能够以你拥有的合适环阶的法术位施展这些法术。该法术的施法属性是你以此专长提升的属性。"
+						"你始终准备着{@spell 魅惑类人|XPHB}。你可以无需法术位地施展该法术一次，你必须完成{@variantrule 长休|XPHB}后才能再次以此法施展该法术。你也能够以你拥有的合适环阶的法术位施展该法术。该法术的施法属性是你以此专长提升的属性。"
 					]
 				},
 				{
@@ -16324,7 +16324,7 @@
 		},
 		{
 			"ENG_name": "Vampire Hunter",
-			"name": "血族猎人",
+			"name": "吸血鬼猎人",
 			"source": "ABH",
 			"page": 8,
 			"category": "O",
@@ -16387,7 +16387,7 @@
 				"你获得以下增益。",
 				{
 					"ENG_name": "Vampire Magic",
-					"name": "血族魔法",
+					"name": "吸血鬼魔法",
 					"type": "entries",
 					"entries": [
 						"选择一道惑控或幻术学派的一环法术，你始终准备着你所选择的这道法术与{@spell 蛛行术|XPHB}。你可以无需法术位地施展每道法术各一次，但当你以此方式施展{@spell 蛛行术|XPHB}时，你必须以你自身为目标。你必须完成{@variantrule 长休|XPHB}后才能再次以此方式施展这些法术。你也能够以你拥有的合适环阶的法术位施展这些法术。这些法术的施法属性是你以此专长提升的属性。"
@@ -16398,7 +16398,7 @@
 		},
 		{
 			"ENG_name": "Vampire's Plaything",
-			"name": "血族玩物",
+			"name": "吸血鬼玩物",
 			"source": "ABH",
 			"page": 9,
 			"category": "O",
@@ -16422,7 +16422,7 @@
 				},
 				{
 					"ENG_name": "Vampiric Connection",
-					"name": "血裔连结",
+					"name": "血族链接",
 					"type": "entries",
 					"entries": [
 						"由DM决定你曾经的吸血鬼主人的命运。若你与你曾经的吸血鬼主人身处同一存在位面，该吸血鬼可以与你进行心灵感应沟通，并且你可以选择允许该吸血鬼通过你的感官进行感知。"
@@ -16879,7 +16879,7 @@
 				"你获得以下增益。",
 				{
 					"ENG_name": "Retaliate",
-					"name": "反击",
+					"name": "以血还血",
 					"type": "entries",
 					"entries": [
 						"位于你5尺内生物以近战攻击命中你后，你可以立即对该生物发动一次{@action 借机攻击|XPHB}。"

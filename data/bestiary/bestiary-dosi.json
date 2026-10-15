@@ -240,7 +240,7 @@
 		},
 		{
 			"ENG_name": "Merrow Extortionist",
-			"name": "迈罗人鱼敲诈者",
+			"name": "梅洛敲诈者",
 			"type": "monstrosity",
 			"source": "DoSI",
 			"page": 0,
@@ -301,7 +301,7 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"迈罗人鱼进行两次撕裂攻击。"
+						"梅洛进行两次撕裂攻击。"
 					]
 				},
 				{
@@ -754,10 +754,10 @@
 					"trait": [
 						{
 							"mode": "replaceArr",
-							"replace": "无定形",
+							"replace": "拟形",
 							"items": {
 								"ENG_name": "False Appearance",
-								"name": "无定形",
+								"name": "拟形",
 								"type": "entries",
 								"entries": [
 									"如果紫腐菌在战斗开始时保持静止，它在先攻检定上具有优势。此外，如果一个生物没有观察到紫腐菌移动或行动，该生物必须成功通过一个{@dc 18}智力（{@skill 调查}）检定才能辨别出紫腐菌并非普通蕈类。"

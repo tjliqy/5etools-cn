@@ -9,7 +9,7 @@
 	"monster": [
 		{
 			"ENG_name": "Incarnation of Transience",
-			"name": "短暂化身",
+			"name": "瞬息之化身",
 			"type": "fey",
 			"group": [
 				"自然化身"
@@ -63,7 +63,7 @@
 			"trait": [
 				{
 					"ENG_name": "Ephemeral Movement",
-					"name": "转瞬即逝移动",
+					"name": "瞬息移动",
 					"entries": [
 						"化身可以穿过其他生物和物件，如同它们是{@variantrule 困难地形|XPHB}，且它的移动不会引发{@action 借机攻击|XPHB|借机攻击}。如果它在物件内结束回合，则受到5（{@damage 1d10}）力场伤害。"
 					]
@@ -81,7 +81,7 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"该化身进行三次攻击，使用啃咬或瘴气团进行任意组合。"
+						"该化身进行三次攻击，使用啃咬或瘴气雾霭进行任意组合。"
 					]
 				},
 				{
@@ -93,16 +93,16 @@
 				},
 				{
 					"ENG_name": "Miasmic Globule",
-					"name": "瘴气球体",
+					"name": "瘴气雾霭",
 					"entries": [
-						"{@atkr r} {@hit 8}，射程60/120尺。{@h}15（{@damage 6d4}）强酸伤害，且目标的{@variantrule 速度|XPHB}速度缩小10尺直到化身的下个回合结束。"
+						"{@atkr r} {@hit 8}，射程60/120尺。{@h}15（{@damage 6d4}）强酸伤害，且目标的{@variantrule 速度|XPHB}减少10尺，直到化身的下个回合结束。"
 					]
 				},
 				{
 					"ENG_name": "Spectral Stampede",
-					"name": "灵体间谍奔腾",
+					"name": "无影疾奔",
 					"entries": [
-						"化身沿直线移动至多80尺。每个其进入空间的生物成为以下效果的目标一次。{@actSave dex} {@dc 16}。{@actSaveFail} 18（{@damage 4d8}）力场伤害。如果目标是化身体型或更小，则获得{@condition 倒地|XPHB}状态。{@actSaveSuccess} 仅伤害减半。"
+						"化身沿直线移动至多80尺。化身进入其空间的每个生物成为以下效果的目标一次。{@actSave dex} {@dc 16}。{@actSaveFail} 18（{@damage 4d8}）力场伤害。如果目标是化身体型或更小，则获得{@condition 倒地|XPHB}状态。{@actSaveSuccess} 仅伤害减半。"
 					]
 				}
 			],
@@ -152,7 +152,7 @@
 		},
 		{
 			"ENG_name": "Incarnation of Vibrance",
-			"name": "生机化身",
+			"name": "活力之化身",
 			"type": "fey",
 			"group": [
 				"自然化身"
@@ -240,21 +240,21 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"化身进行二次藤蔓攻击并使用光耀爆裂。若可用，它可以用一次施法来施放{@spell 目盲术/耳聋术|XPHB}以替代一次藤蔓攻击。"
+						"化身进行两次藤蔓攻击并使用一次光耀爆裂。若{@spell 目盲术/耳聋术|XPHB}可用，它可以将其中一次藤蔓攻击替换为使用施法来施放该法术。"
 					]
 				},
 				{
 					"ENG_name": "Vine",
 					"name": "藤蔓",
 					"entries": [
-						"{@atkr m} {@hit 9}，触及20尺。{@h}18（{@damage 3d8 + 5}）钝击伤害。如果目标是化身的体型或更小，它会因其中一条藤蔓而获得{@condition 受擒|XPHB}状态（逃脱{@dc 15}）。"
+						"{@atkr m} {@hit 9}，触及20尺。{@h}18（{@damage 3d8 + 5}）钝击伤害。如果目标的体型不大于化身，它会因两根藤蔓中的其中一根而获得{@condition 受擒|XPHB}状态（逃脱{@dc 15}）。"
 					]
 				},
 				{
 					"ENG_name": "Radiant Blast",
 					"name": "光耀爆裂",
 					"entries": [
-						"{@actSave con} {@dc 17}，化身选择的20尺{@variantrule 光环 [效应区域]|XPHB|光环}效应区域内的每个生物。{@actSaveFail} 该生物受到14（{@damage 2d8 + 5}）光耀伤害。{@actSaveSuccess} 伤害减半。"
+						"{@actSave con} {@dc 17}，源自化身的20尺{@variantrule 光环 [效应区域]|XPHB|光环}效应区域内由化身选择的每个生物。{@actSaveFail} 该生物受到14（{@damage 2d8 + 5}）光耀伤害。{@actSaveSuccess} 伤害减半。"
 					]
 				}
 			],
@@ -362,12 +362,12 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"巨人进行二次攻击，使用石剑或巨石的任意组合。"
+						"巨人进行两次攻击，使用石剑或巨石的任意组合。"
 					]
 				},
 				{
 					"ENG_name": "Stone Sword",
-					"name": "岩石剑",
+					"name": "石剑",
 					"entries": [
 						"{@atkr m} {@hit 8}，触及15尺。{@h}21（{@damage 3d10 + 5}）挥砍伤害。"
 					]
@@ -383,7 +383,7 @@
 			"bonus": [
 				{
 					"ENG_name": "Name Sleep {@recharge 5}",
-					"name": "命名睡眠 {@recharge 5}",
+					"name": "得名之眠 {@recharge 5}",
 					"entries": [
 						"巨人陷入深沉的恢复性沉睡。巨人获得20{@variantrule 临时生命值|XPHB}并具有{@condition 昏迷|XPHB}状态，直到它受到伤害或它的下一个回合结束。巨人在1分钟内进行属性检定和豁免检定时具有{@variantrule 优势|XPHB}。"
 					]
@@ -421,7 +421,7 @@
 		},
 		{
 			"ENG_name": "Merrow Doublespeaker",
-			"name": "迈罗人鱼双舌者",
+			"name": "梅洛巧言者",
 			"type": "monstrosity",
 			"source": "LFL",
 			"size": [
@@ -471,7 +471,7 @@
 					"name": "施法",
 					"type": "spellcasting",
 					"headerEntries": [
-						"迈罗人鱼施展以下法术之一，无需材质成分并使用魅力作为施法属性（法术豁免{@dc 13}）："
+						"梅洛施展以下法术之一，无需材料成分并使用魅力作为施法属性（法术豁免{@dc 13}）："
 					],
 					"will": [
 						"{@spell 命令术|XPHB}",
@@ -494,7 +494,7 @@
 					"ENG_name": "Mimicry",
 					"name": "拟声",
 					"entries": [
-						"迈罗人鱼可以模仿声音和动物声响。听到模仿的生物可以通过一次成功的{@dc 15}感知（{@skill 洞悉|XPHB}）检定来分辨出它们是模仿的。"
+						"梅洛可以模仿声音和动物叫声。听到模仿声音的生物可以通过一次成功的{@dc 15}感知（{@skill 洞悉|XPHB}）检定来分辨出它们是模仿的。"
 					]
 				}
 			],
@@ -503,12 +503,12 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"迈罗人鱼进行三次脊刺扫尾攻击。它可以将其中的一次攻击替换为使用施法来施放{@spell 命令术|XPHB}。"
+						"梅洛进行三次尾刺攻击。它可以将其中的一次攻击替换为使用施法来施放{@spell 命令术|XPHB}。"
 					]
 				},
 				{
 					"ENG_name": "Spined Tail",
-					"name": "尖刺扫尾",
+					"name": "尾刺",
 					"entries": [
 						"{@atkr m,r} {@hit 6}，触及5尺或射程20/60尺。{@h}14（{@damage 3d6 + 4}）穿刺伤害。"
 					]
@@ -557,7 +557,7 @@
 		},
 		{
 			"ENG_name": "Merrow Haranguer",
-			"name": "迈罗人鱼斥候",
+			"name": "梅洛演说家",
 			"type": "monstrosity",
 			"source": "LFL",
 			"size": [
@@ -612,28 +612,28 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"迈罗人鱼进行三次攻击，使用珊瑚节杖和中毒长弓以任意组合方式。"
+						"梅洛进行三次攻击，使用珊瑚权杖或剧毒长弓进行任意组合。"
 					]
 				},
 				{
 					"ENG_name": "Coral Scepter",
-					"name": "珊瑚节杖",
+					"name": "珊瑚权杖",
 					"entries": [
 						"{@atkr m} {@hit 7}，触及5尺。{@h}14（{@damage 2d10 + 4}）钝击伤害。"
 					]
 				},
 				{
 					"ENG_name": "Poisoned Longbow",
-					"name": "中毒长弓",
+					"name": "剧毒长弓",
 					"entries": [
-						"{@atkr r} {@hit 7}，射程150/600尺。{@h}8（{@damage 1d8 + 4}）穿刺伤害加7（{@damage 2d6}）毒素伤害。"
+						"{@atkr r} {@hit 7}，射程150/600尺。{@h}8（{@damage 1d8 + 4}）穿刺伤害外加7（{@damage 2d6}）毒素伤害。"
 					]
 				},
 				{
 					"ENG_name": "Invective",
-					"name": "谩骂",
+					"name": "恶毒谩骂",
 					"entries": [
-						"{@actSave wis} {@dc 15}，迈罗人鱼60尺内能看见的最多三个生物。{@actSaveFail} 14（{@damage 4d6}）心灵伤害，且该生物在迈罗人鱼的下个回合结束前其下一次攻击检定具有{@variantrule 劣势|XPHB}。{@actSaveSuccess} 仅伤害减半。"
+						"{@actSave wis} {@dc 15}，梅洛60尺内能看见的至多三个生物。{@actSaveFail} 14（{@damage 4d6}）心灵伤害，且该生物在梅洛的下个回合结束前，其下一次攻击检定具有{@variantrule 劣势|XPHB}。{@actSaveSuccess} 仅伤害减半。"
 					]
 				}
 			],
@@ -674,7 +674,7 @@
 		},
 		{
 			"ENG_name": "Noggle Ransacker",
-			"name": "诺格尔掠夺者",
+			"name": "诺格劫掠者",
 			"type": "fey",
 			"source": "LFL",
 			"size": [
@@ -717,14 +717,14 @@
 					"ENG_name": "Siege Monster",
 					"name": "攻城怪物",
 					"entries": [
-						"诺格尔对物件和建筑造成双倍伤害。"
+						"诺格对物件和建筑物造成双倍伤害。"
 					]
 				}
 			],
 			"action": [
 				{
 					"ENG_name": "Sabotaging Swipe",
-					"name": "破坏挥击",
+					"name": "扰乱横扫",
 					"entries": [
 						"{@atkr m} {@hit 4}，触及5尺。{@h}6（{@damage 1d8 + 2}）挥砍伤害。如果目标穿着护甲，则受到以下效果。{@actSave dex} {@dc 12}。{@actSaveFail} 护甲提供的AC受到-1减值。目标可以消耗一个动作来从其护甲上移除该减值。"
 					]
@@ -735,7 +735,7 @@
 					"ENG_name": "Nimble Escape",
 					"name": "迅捷逃逸",
 					"entries": [
-						"诺格尔掠夺者可以执行{@action 撤离|XPHB}或{@action 躲藏|XPHB}动作。"
+						"诺格劫掠者可以执行{@action 撤离|XPHB}或{@action 躲藏|XPHB}动作。"
 					]
 				}
 			],
@@ -770,7 +770,7 @@
 		},
 		{
 			"ENG_name": "Noggle Wild Mage",
-			"name": "诺格狂野魔法师",
+			"name": "诺格狂野巫师",
 			"type": "fey",
 			"source": "LFL",
 			"size": [
@@ -814,7 +814,7 @@
 					"ENG_name": "Bloodied Wild Magic",
 					"name": "浴血狂野魔法",
 					"entries": [
-						"当{@status 浴血|XPHB}时，诺格尔的{@variantrule 飞行速度|XPHB}为30尺，并且它可以选择其造成的任何伤害为力场伤害。"
+						"在{@status 浴血|XPHB}期间，诺格获得30尺{@variantrule 飞行速度|XPHB}，且其可以选择将其造成的任何伤害的类型转变为力场伤害。"
 					]
 				}
 			],
@@ -823,21 +823,21 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"诺格尔进行两次攻击，以任意组合使用诺格尔棍或迷惑射线。"
+						"诺格进行两次攻击，使用诺格之棍或迷惑射线进行任意组合。"
 					]
 				},
 				{
 					"ENG_name": "Noggling Stick",
-					"name": "诺格林棍",
+					"name": "诺格之棍",
 					"entries": [
-						"{@atkr m} {@hit 5}，触及5尺。{@h}5（{@damage 1d4 + 3}）钝击伤害加2（{@damage 1d4}）心灵伤害。"
+						"{@atkr m} {@hit 5}，触及5尺。{@h}5（{@damage 1d4 + 3}）钝击伤害外加2（{@damage 1d4}）心灵伤害。"
 					]
 				},
 				{
 					"ENG_name": "Befuddling Ray",
 					"name": "迷惑射线",
 					"entries": [
-						"{@atkr r} {@hit 5}，射程60尺 {@h}6（{@damage 1d6 + 3}）心灵伤害，且目标在诺格尔的下个回合结束前从下一次豁免检定中减去{@dice 1d4}。"
+						"{@atkr r} {@hit 5}，射程60尺。{@h}6（{@damage 1d6 + 3}）心灵伤害，且在诺格的下个回合结束前，目标从其下一次豁免检定中减去{@dice 1d4}。"
 					]
 				}
 			],
@@ -871,7 +871,7 @@
 		},
 		{
 			"ENG_name": "Shadowmoor Giant",
-			"name": "影沼巨人",
+			"name": "影原巨人",
 			"type": "giant",
 			"source": "LFL",
 			"size": [
@@ -933,7 +933,7 @@
 				},
 				{
 					"ENG_name": "Wild Magic Cataclysm {@recharge 5}",
-					"name": "狂野魔法灾变{@recharge 5}",
+					"name": "狂野魔法灾厄{@recharge 5}",
 					"entries": [
 						"{@actSave dex} {@dc 15}，位于120尺内一点为中心、半径20尺的{@variantrule 球状 [效应区域]|XPHB|球状}效应区域内的每个生物。{@actSaveFail} 28（{@damage 8d6}）伤害（掷{@dice 1d4}以确定伤害类型：1\u2014强酸；2\u2014火焰；3\u2014闪电；4\u2014雷鸣）。{@actSaveSuccess} 伤害减半。"
 					]

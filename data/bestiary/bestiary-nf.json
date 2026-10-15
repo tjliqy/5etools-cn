@@ -10,7 +10,7 @@
 	"monster": [
 		{
 			"ENG_name": "Caldron Magen",
-			"name": "大锅魔像",
+			"name": "釜魔卫",
 			"type": "construct",
 			"source": "NF",
 			"size": [
@@ -65,14 +65,14 @@
 					"ENG_name": "Disintegration",
 					"name": "解体",
 					"entries": [
-						"如果魔像死亡，它会化为灰尘，只留下它穿戴或携带的物品。"
+						"如果魔卫死亡，它会解离为尘埃，留下它穿戴或携带的所有物品。"
 					]
 				},
 				{
 					"ENG_name": "Magic Resistance",
 					"name": "魔法抗性",
 					"entries": [
-						"魔像在对抗法术和其他魔法效果的豁免检定上具有{@variantrule 优势|XPHB}。"
+						"魔卫在对抗法术和其他魔法效应的豁免检定上具有{@variantrule 优势|XPHB}。"
 					]
 				}
 			],
@@ -81,19 +81,19 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"魔像进行两次攻击，使用延伸拳击或强酸唾液的任意组合。"
+						"魔卫使用伸延重拳或酸蚀飞涎发动共计两次攻击。"
 					]
 				},
 				{
 					"ENG_name": "Extended Fist",
-					"name": "延伸拳击",
+					"name": "伸延重拳",
 					"entries": [
-						"{@atkr m} {@hit 6}，触及15尺。{@h}8（{@damage 1d8 + 4}）钝击伤害加5（{@damage 1d10}）强酸伤害。如果目标是中型或更小的生物，它被其中一只拳头获得{@condition 受擒|XPHB}状态（逃脱{@dc 14}）。"
+						"{@atkr m} {@hit 6}，触及15尺。{@h}8（{@damage 1d8 + 4}）钝击伤害加5（{@damage 1d10}）强酸伤害。如果目标是中型或更小的生物，它因魔卫的两只拳头之一而陷入{@condition 受擒|XPHB}状态（逃脱{@dc 14}）。"
 					]
 				},
 				{
 					"ENG_name": "Acid Spittle",
-					"name": "强酸唾沫",
+					"name": "酸蚀飞涎",
 					"entries": [
 						"{@atkr r} {@hit 6}，范围60尺。{@h}13（{@damage 2d8 + 4}）强酸伤害。"
 					]
@@ -134,7 +134,7 @@
 		},
 		{
 			"ENG_name": "Eldritch Eddy",
-			"name": "诡秘漩涡",
+			"name": "魔能涡旋",
 			"type": "construct",
 			"source": "NF",
 			"size": [
@@ -198,7 +198,7 @@
 					"ENG_name": "Magic Resistance",
 					"name": "魔法抗性",
 					"entries": [
-						"该涡流在对抗法术和其他魔法效果的豁免上具有{@variantrule 优势|XPHB}。"
+						"魔能涡旋在对抗法术和其他魔法效应的豁免检定上具有{@variantrule 优势|XPHB}。"
 					]
 				}
 			],
@@ -207,14 +207,14 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"涡旋发动两次攻击，使用灼热挥击或奥能箭的任意组合。"
+						"魔能涡旋使用灼烧横扫或奥法箭发动共计两次攻击。"
 					]
 				},
 				{
 					"ENG_name": "Searing Swipe",
-					"name": "灼热挥击",
+					"name": "灼烧横扫",
 					"entries": [
-						"{@atkr m} {@hit 6}，触及10尺。{@h}13（{@damage 3d6 + 3}）火焰或闪电伤害（艾迪的选择）。"
+						"{@atkr m} {@hit 6}，触及10尺。{@h}13（{@damage 3d6 + 3}）火焰或闪电伤害（由涡旋选择）。"
 					]
 				},
 				{
@@ -228,9 +228,9 @@
 			"reaction": [
 				{
 					"ENG_name": "Eldritch Overload",
-					"name": "诡术过载",
+					"name": "魔能过载",
 					"entries": [
-						"{@actTrigger} 漩涡受到伤害。{@actResponse d}{@actSave str} {@dc 14}，漩涡选择的5尺{@variantrule 光环 [效应区域]|XPHB|光环}范围内的每个生物。{@actSaveFail} 7（{@damage 2d6}）力场伤害，且目标获得{@condition 倒地|XPHB}状态。"
+						"{@actTrigger} 魔能涡旋受到伤害。{@actResponse d}{@actSave str} {@dc 14}，源自涡旋的5尺{@variantrule 光环 [效应区域]|XPHB|光环}内由涡旋选择的每个生物。{@actSaveFail} 7（{@damage 2d6}）力场伤害，且目标获得{@condition 倒地|XPHB}状态。"
 					]
 				}
 			],
@@ -273,7 +273,7 @@
 		},
 		{
 			"ENG_name": "Phaerimm Elder",
-			"name": "费林姆长老",
+			"name": "费林古葵",
 			"type": "aberration",
 			"source": "NF",
 			"size": [
@@ -336,7 +336,7 @@
 					"name": "施法",
 					"type": "spellcasting",
 					"headerEntries": [
-						"法瑞姆施放下列法术之一，无需法术成分并使用魅力作为施法属性（法术豁免 {@dc 17}）："
+						"费林古葵施放下列法术之一，无需法术成分并使用魅力作为施法属性（法术豁免 {@dc 17}）："
 					],
 					"will": [
 						"{@spell 命令术|XPHB}（3环版本）",
@@ -360,7 +360,7 @@
 					"name": "护身魔法（3/日）",
 					"type": "spellcasting",
 					"headerEntries": [
-						"法瑞姆在法术触发时使用与施法相同的施法属性施放{@spell 法术反制|XPHB}或{@spell 护盾术|XPHB}。"
+						"费林古葵在法术触发时使用与施法相同的施法属性施放{@spell 法术反制|XPHB}或{@spell 护盾术|XPHB}。"
 					],
 					"daily": {
 						"3": [
@@ -380,7 +380,7 @@
 					"ENG_name": "Magic Resistance",
 					"name": "魔法抗性",
 					"entries": [
-						"法瑞姆在对抗法术和其他魔法效应的豁免检定中具有{@variantrule 优势|XPHB}。"
+						"费林古葵在对抗法术和其他魔法效应的豁免检定中具有{@variantrule 优势|XPHB}。"
 					]
 				}
 			],
@@ -389,28 +389,28 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"法瑞姆进行三次心灵鞭笞攻击。它可以将其中的一次攻击替换为（A）一次恶毒毒刺攻击，或（B）使用施法能力施放{@spell 命令术|XPHB}（3级版本）。"
+						"费林古葵发动三次心灵之鞭攻击。它可以将其中的一次攻击替换为（A）一次邪恶毒刺攻击，或（B）使用施法能力施放{@spell 命令术|XPHB}（3环版本）。"
 					]
 				},
 				{
 					"ENG_name": "Mind Lash",
 					"name": "心灵之鞭",
 					"entries": [
-						"{@atkr m,r} {@hit 9}, 触及10尺或范围120尺。{@h}32（{@damage 6d8 + 4}）心灵伤害。"
+						"{@atkr m,r} {@hit 9}，触及10尺或范围120尺。{@h}32（{@damage 6d8 + 4}）心灵伤害。"
 					]
 				},
 				{
 					"ENG_name": "Vicious Stinger",
-					"name": "恶毒毒刺",
+					"name": "邪恶毒刺",
 					"entries": [
-						"{@atkr m} {@hit 9}，触及5尺。{@h}11（{@damage 2d6 + 4}）穿刺伤害加26（{@damage 4d12}）毒药伤害，且目标的{@variantrule 速度|XPHB}缩小至0尺直到法瑞姆的下个回合开始。"
+						"{@atkr m} {@hit 9}，触及5尺。{@h}11（{@damage 2d6 + 4}）穿刺伤害加26（{@damage 4d12}）毒素伤害，且目标的{@variantrule 速度|XPHB}降至0尺，直到费林古葵的下个回合开始。"
 					]
 				},
 				{
 					"ENG_name": "Siphon Magic {@recharge 5}",
-					"name": "虹吸魔法 {@recharge 5}",
+					"name": "魔力汲取 {@recharge 5}",
 					"entries": [
-						"该弗米蚁族生物专注于一个它10尺内能看见的魔法物品。当它这样做时，弗米蚁族生物会吸取该魔法物品的所有充能。无论是否吸取到充能，该弗米蚁族生物都能在那天额外施放一次{@spell 鹰眼术|XPHB}、{@spell 指使术|XPHB}、{@spell 高等幻影|XPHB}和{@spell 海市蜃楼|XPHB}。"
+						"费林古葵专注于其10尺内一件可见的魔法物品。当它这样做时，费林古葵会吸取该魔法物品的所有充能。无论是否吸取到充能，费林古葵当天都能额外施放一次{@spell 鹰眼术|XPHB}、{@spell 指使术|XPHB}、{@spell 高等幻影|XPHB}和{@spell 海市蜃楼|XPHB}。"
 					]
 				}
 			],
@@ -419,7 +419,7 @@
 					"ENG_name": "Teleport",
 					"name": "传送",
 					"entries": [
-						"法瑞姆传送至多30尺到一个它能看见的未占据空间。"
+						"费林古葵传送至多30尺到一个它能看见的未占据空间。"
 					]
 				}
 			],
@@ -480,7 +480,7 @@
 		},
 		{
 			"ENG_name": "Phaerimm Scout",
-			"name": "费林姆斥候",
+			"name": "费林潜葵",
 			"type": "aberration",
 			"source": "NF",
 			"size": [
@@ -534,7 +534,7 @@
 					"name": "施法",
 					"type": "spellcasting",
 					"headerEntries": [
-						"法瑞姆施放下列法术之一，无需法术成分并使用魅力作为施法属性（法术豁免 {@dc 13}）："
+						"费林潜葵施放下列法术之一，无需法术成分并使用魅力作为施法属性（法术豁免 {@dc 13}）："
 					],
 					"will": [
 						"{@spell 侦测魔法|XPHB}",
@@ -555,7 +555,7 @@
 					"ENG_name": "Magic Resistance",
 					"name": "魔法抗性",
 					"entries": [
-						"法瑞姆在对抗法术和其他魔法效应的豁免检定中具有{@variantrule 优势|XPHB}。"
+						"费林潜葵在对抗法术和其他魔法效应的豁免检定中具有{@variantrule 优势|XPHB}。"
 					]
 				}
 			],
@@ -564,7 +564,7 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"费林魔使用毒刺或心灵扭曲射线以任意组合进行两次攻击。"
+						"费林潜葵使用尾刺或扭心射线发动共计两次攻击。"
 					]
 				},
 				{
@@ -576,9 +576,9 @@
 				},
 				{
 					"ENG_name": "Mindwarp Ray",
-					"name": "心灵扭曲射线",
+					"name": "扭心射线",
 					"entries": [
-						"{@atkr r} {@hit 5}, 范围 120 尺。{@h}6 ({@damage 1d6 + 3}) 心灵伤害，且目标获得{@condition 魅惑|XPHB}状态直到法瑞姆的下个回合开始。"
+						"{@atkr r} {@hit 5}，范围120尺。{@h}6（{@damage 1d6 + 3}）心灵伤害，且目标获得{@condition 魅惑|XPHB}状态直到费林潜葵的下个回合开始。"
 					]
 				}
 			],
@@ -587,7 +587,7 @@
 					"ENG_name": "Uncanny Dodge",
 					"name": "直觉闪避",
 					"entries": [
-						"{@actTrigger} 法瑞姆被一次攻击骰命中。{@actResponse} 法瑞姆将该攻击造成的伤害减半（向下取整）。"
+						"{@actTrigger} 费林潜葵被一次攻击骰命中。{@actResponse} 费林潜葵将该攻击造成的伤害减半（向下取整）。"
 					]
 				}
 			],
@@ -638,7 +638,7 @@
 		},
 		{
 			"ENG_name": "Terran Magen",
-			"name": "土灵魔像",
+			"name": "地魔卫",
 			"type": "construct",
 			"source": "NF",
 			"size": [
@@ -702,7 +702,7 @@
 					"name": "施法",
 					"type": "spellcasting",
 					"headerEntries": [
-						"魔像施展以下法术之一，无需材料成分并使用感知作为施法属性（法术豁免 {@dc 15}）："
+						"魔卫施展以下法术之一，无需材料成分并使用感知作为施法属性（法术豁免 {@dc 15}）："
 					],
 					"will": [
 						"{@spell 法师之手|XPHB}",
@@ -725,14 +725,14 @@
 					"ENG_name": "Disintegration",
 					"name": "解体",
 					"entries": [
-						"如果魔像死亡，它会化为灰尘，只留下它穿戴或携带的物品。"
+						"如果魔卫死亡，它会解离为尘埃，留下它穿戴或携带的所有物品。"
 					]
 				},
 				{
 					"ENG_name": "Magic Resistance",
 					"name": "魔法抗性",
 					"entries": [
-						"魔像在对抗法术和其他魔法效果的豁免检定上具有{@variantrule 优势|XPHB}。"
+						"魔卫在对抗法术和其他魔法效应的豁免检定上具有{@variantrule 优势|XPHB}。"
 					]
 				}
 			],
@@ -741,19 +741,19 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"魔像发动两次攻击，使用锤击或雷鸣轰击任意组合。"
+						"魔卫使用锤击重拳或雷霆音爆发动共计两次攻击。"
 					]
 				},
 				{
 					"ENG_name": "Hammer Fist",
-					"name": "锤击拳击",
+					"name": "锤击重拳",
 					"entries": [
 						"{@atkr m} {@hit 6}，触及5尺。{@h}16（{@damage 3d8 + 3}）钝击伤害外加13（{@damage 3d8}）力场伤害。"
 					]
 				},
 				{
 					"ENG_name": "Thunderous Boom",
-					"name": "雷鸣轰响",
+					"name": "雷霆音爆",
 					"entries": [
 						"{@atkr r} {@hit 7}，范围 60 尺。{@h}28（{@damage 8d6}）雷鸣伤害。"
 					]
@@ -800,7 +800,7 @@
 		},
 		{
 			"ENG_name": "Virvos Magen",
-			"name": "维尔沃斯魔像",
+			"name": "绘魔卫",
 			"type": "construct",
 			"source": "NF",
 			"size": [
@@ -861,7 +861,7 @@
 					"name": "施法",
 					"type": "spellcasting",
 					"headerEntries": [
-						"魔像施展以下法术之一，无需材料成分并使用魅力作为施法属性（法术豁免 {@dc 14}）："
+						"魔卫施展以下法术之一，无需材料成分并使用魅力作为施法属性（法术豁免 {@dc 14}）："
 					],
 					"will": [
 						"{@spell 舞光术|XPHB}",
@@ -882,14 +882,14 @@
 					"ENG_name": "Disintegration",
 					"name": "解体",
 					"entries": [
-						"如果魔像死亡，它会化为灰尘，只留下它穿戴或携带的物品。"
+						"如果魔卫死亡，它会解离为尘埃，留下它穿戴或携带的所有物品。"
 					]
 				},
 				{
 					"ENG_name": "Magic Resistance",
 					"name": "魔法抗性",
 					"entries": [
-						"魔像在对抗法术和其他魔法效果的豁免检定上具有{@variantrule 优势|XPHB}。"
+						"魔卫在对抗法术和其他魔法效应的豁免检定上具有{@variantrule 优势|XPHB}。"
 					]
 				}
 			],
@@ -898,14 +898,14 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"魔像进行两次心灵冲击攻击。"
+						"魔卫发动两次心能爆攻击。"
 					]
 				},
 				{
 					"ENG_name": "Psychic Blast",
 					"name": "心灵震爆",
 					"entries": [
-						"{@atkr m,r} {@hit 6}，触及5尺或范围60尺{@h}21（{@damage 6d6}）心灵伤害。"
+						"{@atkr m,r} {@hit 6}，触及5尺或范围60尺。{@h}21（{@damage 6d6}）心灵伤害。"
 					]
 				}
 			],

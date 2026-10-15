@@ -123,7 +123,7 @@
 					"ENG_name": "Pounce",
 					"name": "猛扑",
 					"entries": [
-						"红龙移动至多等于其{@variantrule 速度|XPHB}一半的距离，并发动一次撕裂攻击。"
+						"该龙移动至多等于其{@variantrule 速度|XPHB}一半的距离，并发动一次撕裂攻击。"
 					]
 				},
 				{
@@ -186,7 +186,7 @@
 		},
 		{
 			"ENG_name": "Adult Spirit Dragon",
-			"name": "成年精魄龙",
+			"name": "成年灵龙",
 			"type": "dragon",
 			"source": "FRAiF",
 			"page": 278,
@@ -279,7 +279,7 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"该龙进行三次撕裂攻击。它可以消耗一次攻击来使用（A）时间扭曲吐息或（B）施法以施放{@spell 雷鸣波|XPHB}。"
+						"该龙进行三次撕裂攻击。它可以消耗一次攻击来使用（A）时光裂曲吐息或（B）施法以施放{@spell 雷鸣波|XPHB}。"
 					]
 				},
 				{
@@ -291,14 +291,14 @@
 				},
 				{
 					"ENG_name": "Ruinous Breath {@recharge 5}",
-					"name": "毁灭性的吐息 {@recharge 5}",
+					"name": "崩灭吐息{@recharge 5}",
 					"entries": [
 						"{@actSave con} {@dc 18}，60尺{@variantrule 锥状 [效应区域]|XPHB|锥状}效应区域内的每个生物。{@actSaveFail} 63（{@damage 14d8}）暗蚀伤害。{@actSaveSuccess} 伤害减半。"
 					]
 				},
 				{
 					"ENG_name": "Time-Warping Breath",
-					"name": "时间扭曲吐息",
+					"name": "时光裂曲吐息",
 					"entries": [
 						"{@actSave wis} {@dc 18}，每个当前未受此吐息影响的60尺{@variantrule 锥状 [效应区域]|XPHB|锥状}内的生物。{@actSaveFail} 目标的{@variantrule 速度|XPHB}减半，它不能使用反应，并且在它的回合中只能执行一个动作或一个{@variantrule 附赠动作|XPHB}，不能同时执行两者。它在每个自己回合结束时重复豁免，成功则终止自身效应。1分钟后，它自动成功。"
 					]
@@ -310,19 +310,19 @@
 					"ENG_name": "Pounce",
 					"name": "猛扑",
 					"entries": [
-						"红龙移动至多等于其{@variantrule 速度|XPHB}一半的距离，并发动一次撕裂攻击。"
+						"该龙移动至多等于其{@variantrule 速度|XPHB}一半的距离，并发动一次撕裂攻击。"
 					]
 				},
 				{
 					"ENG_name": "Shattering Wave",
-					"name": "碎浪",
+					"name": "粉碎声浪",
 					"entries": [
 						"龙使用施法来施放{@spell 雷鸣波|XPHB}。"
 					]
 				},
 				{
 					"ENG_name": "Unearth Ruins",
-					"name": "遗迹",
+					"name": "掘起残迹",
 					"entries": [
 						"这条龙魔法般地升起破碎的古代遗迹，形成一个以它120尺内能看见的一点为中心，半径20尺、高60尺的{@variantrule 柱状 [效应区域]|XPHB|柱状}。{@variantrule 柱状 [效应区域]|XPHB|柱状}内的地面变为{@variantrule 困难地形|XPHB}。每个在{@variantrule 柱状 [效应区域]|XPHB|柱状}出现时位于其中的生物受到以下效果。{@actSave str} {@dc 18}。{@actSaveFail} 5（{@damage 2d4}）钝击伤害，且目标获得{@condition 倒地|XPHB}状态。{@actSaveSuccessOrFail} 这条龙在它的下个回合开始前不能再次使用此动作。"
 					]
@@ -339,7 +339,7 @@
 			"treasure": [
 				"任何"
 			],
-			"dragonCastingColor": "精魄",
+			"dragonCastingColor": "灵",
 			"dragonAge": "成年",
 			"traitTags": [
 				"Legendary Resistances"
@@ -501,7 +501,7 @@
 					"ENG_name": "Pounce",
 					"name": "猛扑",
 					"entries": [
-						"红龙移动至多等于其{@variantrule 速度|XPHB}一半的距离，并发动一次撕裂攻击。"
+						"该龙移动至多等于其{@variantrule 速度|XPHB}一半的距离，并发动一次撕裂攻击。"
 					]
 				},
 				{
@@ -564,7 +564,7 @@
 		},
 		{
 			"ENG_name": "Ancient Spirit Dragon",
-			"name": "远古精魄龙",
+			"name": "远古灵龙",
 			"type": "dragon",
 			"source": "FRAiF",
 			"page": 279,
@@ -655,7 +655,7 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"该龙发动三次撕裂攻击。它可以消耗一次攻击来使用（A）时间扭曲吐息或（B）施法以施放{@spell 雷鸣波|XPHB}（2环版本）。"
+						"该龙发动三次撕裂攻击。它可以消耗一次攻击来使用（A）时光裂曲吐息或（B）施法以施放{@spell 雷鸣波|XPHB}（2环版本）。"
 					]
 				},
 				{
@@ -667,14 +667,14 @@
 				},
 				{
 					"ENG_name": "Ruinous Breath {@recharge 5}",
-					"name": "毁灭性的吐息 {@recharge 5}",
+					"name": "崩灭吐息{@recharge 5}",
 					"entries": [
 						"{@actSave con} {@dc 22}，90尺{@variantrule 锥状 [效应区域]|XPHB|锥状}效应区域内的每个生物。{@actSaveFail} 72（{@damage 16d8}）暗蚀伤害。{@actSaveSuccess} 伤害减半。"
 					]
 				},
 				{
 					"ENG_name": "Time-Warping Breath",
-					"name": "时间扭曲吐息",
+					"name": "时光裂曲吐息",
 					"entries": [
 						"{@actSave wis} {@dc 22}，每个当前未受此吐息影响的90尺{@variantrule 锥状 [效应区域]|XPHB|锥状}内的生物。{@actSaveFail} 目标的{@variantrule 速度|XPHB}减半，它不能使用反应，并且在它的回合中只能执行一个动作或一个{@variantrule 附赠动作|XPHB}，不能同时执行两者。它在每个自己回合结束时重复豁免，成功则终止自身效应。1分钟后，它自动成功。"
 					]
@@ -686,19 +686,19 @@
 					"ENG_name": "Pounce",
 					"name": "猛扑",
 					"entries": [
-						"红龙移动至多等于其{@variantrule 速度|XPHB}一半的距离，并发动一次撕裂攻击。"
+						"该龙移动至多等于其{@variantrule 速度|XPHB}一半的距离，并发动一次撕裂攻击。"
 					]
 				},
 				{
 					"ENG_name": "Shattering Wave",
-					"name": "碎浪",
+					"name": "粉碎声浪",
 					"entries": [
 						"龙使用施法来施放{@spell 雷鸣波|XPHB}（2环版本）。"
 					]
 				},
 				{
 					"ENG_name": "Unearth Ruins",
-					"name": "遗迹",
+					"name": "掘起残迹",
 					"entries": [
 						"这条龙魔法般地在其能看见的120尺内一点升起破碎的古代遗迹，形成一个半径20尺、60尺高的{@variantrule 柱状 [效应区域]|XPHB|柱状}。{@variantrule 柱状 [效应区域]|XPHB|柱状}内的地面变为{@variantrule 困难地形|XPHB}。当{@variantrule 柱状 [效应区域]|XPHB|柱状}出现时，其中的每个生物都会受到以下效果。{@actSave str} {@dc 22}。{@actSaveFail} 13（{@damage 3d8}）钝击伤害，且目标获得{@condition 倒地|XPHB}状态。{@actSaveSuccessOrFail} 这条龙在其下一回合开始前无法再次使用此动作。"
 					]
@@ -712,7 +712,7 @@
 			"environment": [
 				"任何"
 			],
-			"dragonCastingColor": "精魄",
+			"dragonCastingColor": "灵",
 			"dragonAge": "远古",
 			"traitTags": [
 				"Legendary Resistances"
@@ -767,7 +767,7 @@
 		},
 		{
 			"ENG_name": "Aranea",
-			"name": "阿拉尼亚",
+			"name": "变形蛛",
 			"type": "monstrosity",
 			"source": "FRAiF",
 			"page": 250,
@@ -818,7 +818,7 @@
 					"name": "施法",
 					"type": "spellcasting",
 					"headerEntries": [
-						"蛛化精灵施放下列法术之一，无需材质成分并使用魅力作为施法属性（法术豁免 {@dc 12}）："
+						"变形蛛施放下列法术之一，无需材质成分并使用魅力作为施法属性（法术豁免 {@dc 12}）："
 					],
 					"will": [
 						"{@spell 交友术|XPHB}",
@@ -836,16 +836,16 @@
 			"trait": [
 				{
 					"ENG_name": "Spider Climb (Hybrid or Spider Form Only)",
-					"name": "蛛行术（仅限混种或蜘蛛形态）",
+					"name": "蛛行（仅限混种或蜘蛛形态）",
 					"entries": [
-						"蛛化精灵可以攀爬困难表面，包括沿着天花板，而无需进行属性检定。"
+						"变形蛛可以攀爬困难表面，包括沿着天花板，而无需进行属性检定。"
 					]
 				},
 				{
 					"ENG_name": "Web Walker",
 					"name": "蛛网行者",
 					"entries": [
-						"蛛化精灵忽略由蛛网造成的移动限制，并且它知道在同一蛛网中任何其他生物的位置。"
+						"变形蛛忽略由蛛网造成的移动限制，并且它知道在同一蛛网中任何其他生物的位置。"
 					]
 				}
 			],
@@ -854,7 +854,7 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"蛛化精灵进行两次攻击，以任意组合使用啃咬、猛击或投石索。"
+						"变形蛛进行两次攻击，以任意组合使用啃咬、猛击或投石索。"
 					]
 				},
 				{
@@ -934,7 +934,7 @@
 		},
 		{
 			"ENG_name": "Beast of Malar",
-			"name": "玛拉之兽",
+			"name": "犸拉之兽",
 			"type": "monstrosity",
 			"source": "FRAiF",
 			"page": 251,
@@ -1005,16 +1005,16 @@
 				},
 				{
 					"ENG_name": "Divine Immortality",
-					"name": "神圣不朽",
+					"name": "不朽神性",
 					"entries": [
-						"如果该野兽死亡，其身体会溶解成黑色粘液，并在{@dice 1d10}天后获得一个新身体，在玛拉选择的地点以所有{@variantrule 生命值|XPHB}复活。"
+						"如果该野兽死亡，其身体会溶解成黑色粘液，并在{@dice 1d10}天后获得一个新身体，在犸拉选择的地点以所有{@variantrule 生命值|XPHB}复活。"
 					]
 				},
 				{
 					"ENG_name": "Legendary Resistance (3/Day)",
 					"name": "传奇抗性 (3/日)",
 					"entries": [
-						"如果害兽憎恶豁免失败，它可以选择改为豁免成功。"
+						"如果犸拉之兽豁免失败，它可以选择改为豁免成功。"
 					]
 				},
 				{
@@ -1058,7 +1058,7 @@
 			"bonus": [
 				{
 					"ENG_name": "Recuperative Shape-Shift",
-					"name": "恢复性变形",
+					"name": "复苏变形",
 					"entries": [
 						"该野兽变形为它的陆地形态、海洋形态或天空形态，并恢复9（{@dice 2d8}）{@variantrule 生命值|XPHB}。它在每种形态下的游戏数据都相同，除非另有说明。它所穿戴或携带的任何装备都不会被转化。"
 					]
@@ -1218,7 +1218,7 @@
 				},
 				{
 					"ENG_name": "Wishes",
-					"name": "许愿",
+					"name": "祈愿",
 					"entries": [
 						"碧哈·巴比尔知晓{@spell 祈愿术|XPHB}法术，但只能为以她能理解的方式表达愿望的非巨灵生物施放。如果碧哈·巴比尔为某个生物施放该法术，她不会承受该法术的任何压力。当碧哈·巴比尔施放该法术三次后，她在365天内无法再次施放。"
 					]
@@ -1229,12 +1229,12 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"碧哈·巴比尔进行两次水手爆发攻击。她可以用一次尾击攻击替换其中一次攻击。"
+						"碧哈·巴比尔进行两次海能爆发攻击。她可以用一次尾击攻击替换其中一次攻击。"
 					]
 				},
 				{
 					"ENG_name": "Marine Burst",
-					"name": "水手爆发",
+					"name": "海能爆发",
 					"entries": [
 						"{@atkr m,r} {@hit 10}，触及5尺或射程60尺。{@h}17（{@damage 2d10 + 6}）寒冷伤害。"
 					]
@@ -1250,7 +1250,7 @@
 			"bonus": [
 				{
 					"ENG_name": "Fluid Form",
-					"name": "流体形态",
+					"name": "流形之躯",
 					"entries": [
 						"碧哈·巴比尔变形为一种类似中型或更小的野兽或类人生物的形态，同时保留她的游戏数据（除了她的体型），或变回她真正的水巨灵形态。"
 					]
@@ -1259,14 +1259,14 @@
 			"legendary": [
 				{
 					"ENG_name": "Misty Burst",
-					"name": "雾蒙蒙爆发",
+					"name": "海雾爆发",
 					"entries": [
-						"碧哈·巴比尔传送至她自身30尺内一个可见的未占据空间，并进行一次水手爆发攻击。"
+						"碧哈·巴比尔传送至她自身30尺内一个可见的未占据空间，并进行一次海能爆发攻击。"
 					]
 				},
 				{
 					"ENG_name": "Whirlpool",
-					"name": "漩涡",
+					"name": "湍流漩涡",
 					"entries": [
 						"{@actSave str} {@dc 18}，碧哈·巴比尔周围30尺{@variantrule 光环 [效应区域]|XPHB|光环}范围内的每个生物。{@actSaveFail} 10（{@damage 3d6}）力场伤害，且目标被直线拉向碧哈·巴比尔15尺。{@actSaveSuccess} 仅受一半伤害。{@actSaveSuccessOrFail} 碧哈·巴比尔直到她的下个回合开始前无法再次使用此动作。"
 					]
@@ -1395,7 +1395,7 @@
 			"trait": [
 				{
 					"ENG_name": "Determined Survivor",
-					"name": "坚定的生还者",
+					"name": "志存决意",
 					"entries": [
 						"该邪教徒在它每个回合开始时，如果处于{@status 浴血|XPHB}状态且至少有1{@variantrule 生命值|XPHB|生命值}，则恢复10{@variantrule 生命值|XPHB}。"
 					]
@@ -1406,19 +1406,19 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"邪教徒进行三次攻击，使用铁手套或压迫爆发的任意组合。如果可用，它可以替换一次攻击为使用施法来施放{@spell 支配类人|XPHB}。"
+						"邪教徒进行三次攻击，使用铁拳或强压爆破的任意组合。如果可用，它可以替换一次攻击为使用施法来施放{@spell 支配类人|XPHB}。"
 					]
 				},
 				{
 					"ENG_name": "Gauntlet",
-					"name": "挑战",
+					"name": "铁拳",
 					"entries": [
 						"{@atkr m} {@hit 8}，触及5尺。{@h}17（{@damage 3d8 + 4}）钝击伤害。"
 					]
 				},
 				{
 					"ENG_name": "Oppressive Burst",
-					"name": "压迫爆发",
+					"name": "强压爆破",
 					"entries": [
 						"{@atkr r} {@hit 8}，射程120尺 {@h}16（{@damage 2d10 + 5}）心灵伤害，且目标在邪教徒的下个回合开始前不能使用反应。"
 					]
@@ -1429,7 +1429,7 @@
 					"ENG_name": "Counterattack",
 					"name": "反制攻击",
 					"entries": [
-						"{@actTrigger} 邪教徒被一次攻击检定命中。{@actResponse} 邪教徒对触发生物进行一次铁拳或压迫爆发攻击。"
+						"{@actTrigger} 邪教徒被一次攻击检定命中。{@actResponse} 邪教徒对触发生物进行一次铁拳或强压爆破攻击。"
 					]
 				}
 			],
@@ -1545,7 +1545,7 @@
 			"trait": [
 				{
 					"ENG_name": "Blood-Soaked Resolve",
-					"name": "染血之地决心",
+					"name": "血戮决意",
 					"entries": [
 						"当{@status 浴血|XPHB}时，该邪教徒在豁免检定上具有{@variantrule 优势|XPHB}。"
 					]
@@ -1556,12 +1556,12 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"邪教徒进行三次诅咒之刃攻击。它可以将其中的一次攻击替换为一次施法。"
+						"邪教徒进行三次受诅魔刃攻击。它可以将其中的一次攻击替换为一次施法。"
 					]
 				},
 				{
 					"ENG_name": "Cursed Blade",
-					"name": "诅咒之刃",
+					"name": "受诅魔刃",
 					"entries": [
 						"{@atkr m,r} {@hit 7}（如果目标没有全部{@variantrule 生命值|XPHB}则具有{@variantrule 优势|XPHB}），触及5尺或射程20/80尺。{@h}14（{@damage 3d6 + 4}）挥砍伤害。{@hom}该刃在远程攻击后立即魔法般地返回邪教徒手中。"
 					]
@@ -1691,7 +1691,7 @@
 			"trait": [
 				{
 					"ENG_name": "Nearer to the Dead",
-					"name": "更接近死亡",
+					"name": "濒亡决意",
 					"entries": [
 						"当{@status 浴血|XPHB}时，该邪教徒对{@condition 恐慌|XPHB}和{@condition 中毒|XPHB}状态具有{@variantrule 免疫|XPHB}。"
 					]
@@ -1702,7 +1702,7 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"邪教徒进行三次暗能爆裂攻击。"
+						"邪教徒进行三次死寂爆破攻击。"
 					]
 				},
 				{
@@ -1751,7 +1751,7 @@
 		},
 		{
 			"ENG_name": "Dead Three Scion",
-			"name": "死亡三神之门徒",
+			"name": "死亡三神门徒",
 			"type": "humanoid",
 			"source": "FRAiF",
 			"page": 256,
@@ -1812,7 +1812,7 @@
 					"name": "施法",
 					"type": "spellcasting",
 					"headerEntries": [
-						"该后裔施放下列法术之一，无需材料成分并使用魅力作为施法属性（法术豁免{@dc 20}）："
+						"门徒施放下列法术之一，无需材料成分并使用魅力作为施法属性（法术豁免{@dc 20}）："
 					],
 					"will": [
 						"{@spell 侦测思想|XPHB}",
@@ -1834,10 +1834,10 @@
 				},
 				{
 					"ENG_name": "Command",
-					"name": "命令术",
+					"name": "号令",
 					"type": "spellcasting",
 					"headerEntries": [
-						"后裔施放{@spell 命令术|XPHB}（2环版本），使用与施法相同的施法属性。后裔在其下一回合开始前不能再次使用此动作。"
+						"门徒施放{@spell 命令术|XPHB}（2环版本），使用与施法相同的施法属性。门徒在其下一回合开始前不能再次使用此动作。"
 					],
 					"legendary": {
 						"1": [
@@ -1854,7 +1854,7 @@
 			"trait": [
 				{
 					"ENG_name": "Culling Aura",
-					"name": "肃清光环",
+					"name": "残害灵光",
 					"entries": [
 						"{@actSave con} {@dc 20}，在门徒回合结束时，每个在30尺{@variantrule 光环 [效应区域]|XPHB|光环}效应区域内处于{@status 浴血|XPHB}状态的生物。{@actSaveFail} 目标在门徒的下个回合开始前无法恢复{@variantrule 生命值|XPHB}。"
 					]
@@ -1863,14 +1863,14 @@
 					"ENG_name": "Legendary Resistance (3/Day)",
 					"name": "传奇抗性 (3/日)",
 					"entries": [
-						"神嗣豁免失败时，可以将其改为豁免成功。"
+						"门徒豁免失败时，可以将其改为豁免成功。"
 					]
 				},
 				{
 					"ENG_name": "Magic Resistance",
 					"name": "魔法抗性",
 					"entries": [
-						"该后裔在对抗法术和其他魔法效应的豁免检定中具有{@variantrule 优势|XPHB}。"
+						"门徒在对抗法术和其他魔法效应的豁免检定中具有{@variantrule 优势|XPHB}。"
 					]
 				}
 			],
@@ -1879,7 +1879,7 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"该后裔进行两次攻击，以任意组合使用死亡之触或心灵破碎飞矢。"
+						"门徒使用死神之触或裂心束发动共计两次攻击。"
 					]
 				},
 				{
@@ -1891,9 +1891,9 @@
 				},
 				{
 					"ENG_name": "Mindwrack Bolt",
-					"name": "心灵折磨弩矢",
+					"name": "裂心束",
 					"entries": [
-						"{@atkr r} {@hit 12}，射程120尺 {@h}21（{@damage 6d6}）心灵伤害，且目标获得{@condition 中毒|XPHB}状态直到后裔的下个回合开始。"
+						"{@atkr r} {@hit 12}，射程120尺 {@h}21（{@damage 6d6}）心灵伤害，且目标获得{@condition 中毒|XPHB}状态直到门徒的下个回合开始。"
 					]
 				}
 			],
@@ -1902,7 +1902,7 @@
 					"ENG_name": "Attack",
 					"name": "攻击",
 					"entries": [
-						"后裔发动一次死亡之触或心灵折磨飞矢攻击。"
+						"门徒发动一次死神之触或裂心束攻击。"
 					]
 				}
 			],
@@ -2073,7 +2073,7 @@
 		},
 		{
 			"ENG_name": "Domestic Wonder",
-			"name": "家庭奇观",
+			"name": "家用型奇具",
 			"type": "construct",
 			"source": "FRAiF",
 			"page": 245,
@@ -2110,16 +2110,16 @@
 			"trait": [
 				{
 					"ENG_name": "Mechanical Determination",
-					"name": "机械决定论",
+					"name": "机械坚韧",
 					"entries": [
-						"如果伤害将奇物减少到0{@variantrule 生命值|XPHB}，它需要进行一次体质豁免检定，DC为5加上受到的伤害，除非伤害是闪电或来自{@variantrule 重击|XPHB}。豁免成功时，奇物将降至1{@variantrule 生命值|XPHB|生命值}。"
+						"如果伤害将奇具减少到0{@variantrule 生命值|XPHB}，它需要进行一次体质豁免检定，DC为5加上受到的伤害，除非伤害是闪电或来自{@variantrule 重击|XPHB}。豁免成功时，奇具将降至1{@variantrule 生命值|XPHB|生命值}。"
 					]
 				},
 				{
 					"ENG_name": "Wind-Up Operation",
-					"name": "风势操作",
+					"name": "上弦操作",
 					"entries": [
-						"该奇观具有{@condition 昏迷|XPHB}状态，直到另一个生物用奇观的独特钥匙为其上弦1分钟。一旦上弦，奇观会运作10天，或者直到一个生物用其钥匙接触奇观作为{@action 操作|XPHB}动作来停用它，之后该奇观具有{@condition 昏迷|XPHB}状态直到再次上弦。"
+						"该奇具具有{@condition 昏迷|XPHB}状态，直到另一个生物用奇具的独特钥匙为其上弦1分钟。一旦上弦，奇具会运作10天，或者直到一个生物用其钥匙接触奇具作为{@action 操作|XPHB}动作来停用它，之后该奇具具有{@condition 昏迷|XPHB}状态直到再次上弦。"
 					]
 				}
 			],
@@ -2130,7 +2130,7 @@
 		},
 		{
 			"ENG_name": "Drow Elite Warrior of Lolth",
-			"name": "罗丝的卓尔精英武者",
+			"name": "罗丝卓尔精英武者",
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -2193,7 +2193,7 @@
 			"spellcasting": [
 				{
 					"ENG_name": "Underdark Magic (3/Day)",
-					"name": "幽暗地域魔法（3/白昼）",
+					"name": "幽域魔法（3/日）",
 					"type": "spellcasting",
 					"headerEntries": [
 						"卓尔施放{@spell 黑暗术|XPHB}、{@spell 妖火|XPHB}或{@spell 浮空术|XPHB}（仅限自身），无需材质成分并使用魅力作为施法属性（法术豁免{@dc 12}）。"
@@ -2217,7 +2217,7 @@
 					"ENG_name": "Fey Ancestry",
 					"name": "妖精血统",
 					"entries": [
-						"卓尔在避免或结束{@condition 魅惑|XPHB}状态的豁免检定中具有{@variantrule 优势|XPHB}，且魔法无法使卓尔陷入睡眠。"
+						"罗丝卓尔在进行避免或结束{@condition 魅惑|XPHB}状态的豁免时具有{@variantrule 优势|XPHB}，魔法也无法使其陷入睡眠。"
 					]
 				},
 				{
@@ -2233,7 +2233,7 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"卓尔进行两次攻击，使用短剑或卓尔手弩以任何组合"
+						"罗丝卓尔精英武者进行两次攻击，使用短剑或卓尔手弩的任意组合。"
 					]
 				},
 				{
@@ -2303,7 +2303,7 @@
 		},
 		{
 			"ENG_name": "Drow Mage of Lolth",
-			"name": "罗丝的卓尔魔法师",
+			"name": "罗丝卓尔魔法师",
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -2388,7 +2388,7 @@
 				},
 				{
 					"ENG_name": "Underdark Magic (3/Day)",
-					"name": "幽暗地域魔法（3/白昼）",
+					"name": "幽域魔法（3/日）",
 					"type": "spellcasting",
 					"headerEntries": [
 						"卓尔施放{@spell 妖火|XPHB}或{@spell 迷踪步|XPHB}，无需材质成分，并使用与施法相同的施法属性。"
@@ -2411,7 +2411,7 @@
 					"ENG_name": "Fey Ancestry",
 					"name": "妖精血统",
 					"entries": [
-						"卓尔在避免或结束{@condition 魅惑|XPHB}状态的豁免检定中具有{@variantrule 优势|XPHB}，且魔法无法使卓尔陷入睡眠。"
+						"罗丝卓尔在进行避免或结束{@condition 魅惑|XPHB}状态的豁免时具有{@variantrule 优势|XPHB}，魔法也无法使其陷入睡眠。"
 					]
 				},
 				{
@@ -2432,7 +2432,7 @@
 				},
 				{
 					"ENG_name": "Abyssal Burst",
-					"name": "深渊语爆发",
+					"name": "深渊爆发",
 					"entries": [
 						"{@atkr m,r} {@hit 6}，触及5尺或射程120尺。{@h}21（{@damage 4d8 + 3}）毒素伤害。"
 					]
@@ -2480,7 +2480,7 @@
 		},
 		{
 			"ENG_name": "Drow of Lolth",
-			"name": "罗丝的卓尔",
+			"name": "罗丝卓尔",
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -2559,7 +2559,7 @@
 					"ENG_name": "Fey Ancestry",
 					"name": "妖精血统",
 					"entries": [
-						"卓尔在避免或结束{@condition 魅惑|XPHB}状态的豁免检定中具有{@variantrule 优势|XPHB}，且魔法无法使卓尔陷入睡眠。"
+						"罗丝卓尔在进行避免或结束{@condition 魅惑|XPHB}状态的豁免时具有{@variantrule 优势|XPHB}，魔法也无法使其陷入睡眠。"
 					]
 				},
 				{
@@ -2714,7 +2714,7 @@
 				},
 				{
 					"ENG_name": "Lolth's Blessing (3/Day)",
-					"name": "罗丝的祝福（3/白昼）",
+					"name": "罗丝赐福（3/日）",
 					"type": "spellcasting",
 					"headerEntries": [
 						"卓尔施放{@spell 疗伤术|XPHB}、{@spell 黑暗术|XPHB}、{@spell 解除魔法|XPHB}或{@spell 次等复原术|XPHB}，使用与施法相同的施法属性。"
@@ -2739,7 +2739,7 @@
 					"ENG_name": "Fey Ancestry",
 					"name": "妖精血统",
 					"entries": [
-						"卓尔在避免或结束{@condition 魅惑|XPHB}状态的豁免检定中具有{@variantrule 优势|XPHB}，且魔法无法使卓尔陷入睡眠。"
+						"罗丝卓尔在进行避免或结束{@condition 魅惑|XPHB}状态的豁免时具有{@variantrule 优势|XPHB}，魔法也无法使其陷入睡眠。"
 					]
 				},
 				{
@@ -2755,7 +2755,7 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"卓尔进行三次刑鞭攻击。"
+						"卓尔发动三次鞭笞攻击。"
 					]
 				},
 				{
@@ -2767,7 +2767,7 @@
 				},
 				{
 					"ENG_name": "Spider Vortex {@recharge 5}",
-					"name": "蜘蛛涡流 {@recharge 5}",
+					"name": "蛛罗缚狱 {@recharge 5}",
 					"entries": [
 						"{@actSave con} {@dc 15}，每个在卓尔20尺{@variantrule 光环 [效应区域]|XPHB|光环}内的仇敌。{@actSaveFail} 33（{@damage 6d10}）穿刺伤害，且目标获得{@condition 束缚|XPHB}状态直到卓尔的下个回合开始。{@actSaveSuccess} 仅伤害减半。"
 					]
@@ -2819,7 +2819,7 @@
 		},
 		{
 			"ENG_name": "Flying Wonder",
-			"name": "飞行奇观",
+			"name": "飞空型奇具",
 			"type": "construct",
 			"source": "FRAiF",
 			"page": 246,
@@ -2864,16 +2864,16 @@
 			"trait": [
 				{
 					"ENG_name": "Increased Carrying Capacity",
-					"name": "提升载重",
+					"name": "载重提升",
 					"entries": [
-						"该奇物最多可载重100磅。"
+						"该奇具最多可载重100磅。"
 					]
 				},
 				{
 					"ENG_name": "Wind-Up Operation",
-					"name": "风势操作",
+					"name": "上弦操作",
 					"entries": [
-						"该奇观具有{@condition 昏迷|XPHB}状态，直到另一个生物用奇观的独特钥匙为其上弦1分钟。一旦上弦，奇观会运作24小时，或直到一个生物用其钥匙触碰奇观作为{@action 操作|XPHB}动作来停用它，之后该奇观具有{@condition 昏迷|XPHB}状态，直到再次上弦。"
+						"该奇具具有{@condition 昏迷|XPHB}状态，直到另一个生物用奇具的独特钥匙为其上弦1分钟。一旦上弦，奇具会运作24小时，或直到一个生物用其钥匙触碰奇具作为{@action 操作|XPHB}动作来停用它，之后该奇具具有{@condition 昏迷|XPHB}状态，直到再次上弦。"
 					]
 				}
 			],
@@ -2882,14 +2882,14 @@
 					"ENG_name": "Chime",
 					"name": "鸣钟",
 					"entries": [
-						"奇物发出一阵欢快、有节奏的鸣叫声。奇物选择其60尺内可见的一个盟友。直到奇物下个回合开始前，目标在使用乐器或修补工具进行下一次属性检定时具有{@variantrule 优势|XPHB}。"
+						"奇具发出一阵欢快、有节奏的鸣叫声。奇具选择其60尺内可见的一个盟友。直到奇具下个回合开始前，目标在使用乐器或修补工具进行下一次属性检定时具有{@variantrule 优势|XPHB}。"
 					]
 				},
 				{
 					"ENG_name": "Sprint",
 					"name": "冲刺",
 					"entries": [
-						"飞行奇观采取{@action 疾走|XPHB}动作。"
+						"飞空型奇具执行{@action 疾走|XPHB}动作。"
 					]
 				}
 			],
@@ -2907,7 +2907,7 @@
 		},
 		{
 			"ENG_name": "Karas Chembryl",
-			"name": "卡拉斯·切姆布里尔",
+			"name": "卡拉丝·彻伯瑞",
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -2983,7 +2983,7 @@
 					"name": "施法",
 					"type": "spellcasting",
 					"headerEntries": [
-						"卡拉斯施展下列法术之一，无需材料成分并使用智力作为施法属性（法术豁免 {@dc 15}，法术攻击命中 {@hit 7}）："
+						"卡拉丝施展下列法术之一，无需材料成分并使用智力作为施法属性（法术豁免 {@dc 15}，法术攻击命中 {@hit 7}）："
 					],
 					"will": [
 						"{@spell 交友术|XPHB}",
@@ -3008,14 +3008,14 @@
 					"ENG_name": "Evasion",
 					"name": "反射闪避",
 					"entries": [
-						"如果卡拉斯受到一个允许她进行敏捷豁免检定以仅承受一半伤害的效果影响，那么若豁免成功，卡拉斯将不受任何伤害；若豁免失败，则仅承受一半伤害。当她处于{@condition 失能|XPHB}状态时，无法使用此特质。"
+						"如果卡拉丝受到一个允许她进行敏捷豁免检定以仅承受一半伤害的效果影响，那么若豁免成功，卡拉丝将不受任何伤害；若豁免失败，则仅承受一半伤害。当她处于{@condition 失能|XPHB}状态时，无法使用此特质。"
 					]
 				},
 				{
 					"ENG_name": "Legendary Resistance (3/Day or 4/Day in Lair)",
-					"name": "传奇抗性（3/天或巢穴中4/日）",
+					"name": "传奇抗性（3/日，或巢穴内4/日）",
 					"entries": [
-						"如果卡拉斯在一次豁免检定中失败，她可以选择改为成功。"
+						"如果卡拉丝在一次豁免检定中失败，她可以选择改为成功。"
 					]
 				}
 			],
@@ -3024,21 +3024,21 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"卡拉斯使用恐惧匕首或暴君之刃进行两次攻击，攻击方式可以任意组合。"
+						"卡拉丝使用恐惧匕首或暴君之刃进行两次攻击，攻击方式可以任意组合。"
 					]
 				},
 				{
 					"ENG_name": "Dread Dagger",
 					"name": "恐惧匕首",
 					"entries": [
-						"{@atkr m,r} {@hit 8}，触及5尺或射程20/60尺。{@h}10（{@damage 2d4 + 5}）穿刺伤害加4（{@damage 1d8}）暗蚀伤害。{@hom}匕首在远程攻击后立即魔法般地返回卡拉斯手中。"
+						"{@atkr m,r} {@hit 8}，触及5尺或射程20/60尺。{@h}10（{@damage 2d4 + 5}）穿刺伤害加4（{@damage 1d8}）暗蚀伤害。{@hom}匕首在远程攻击后立即魔法般地返回卡拉丝手中。"
 					]
 				},
 				{
 					"ENG_name": "Tyrant's Blade",
 					"name": "暴君之刃",
 					"entries": [
-						"{@atkr m} {@hit 8}，触及5尺。{@h}8（{@damage 1d6 + 5}）挥砍伤害，且目标获得{@condition 恐慌|XPHB}状态直到卡拉斯的下个回合开始。如果目标已经处于{@condition 恐慌|XPHB}状态，则改为受到10（{@damage 3d6}）心灵伤害。"
+						"{@atkr m} {@hit 8}，触及5尺。{@h}8（{@damage 1d6 + 5}）挥砍伤害，且目标获得{@condition 恐慌|XPHB}状态直到卡拉丝的下个回合开始。如果目标已经处于{@condition 恐慌|XPHB}状态，则改为受到10（{@damage 3d6}）心灵伤害。"
 					]
 				}
 			],
@@ -3047,7 +3047,7 @@
 					"ENG_name": "Withdraw",
 					"name": "撤步",
 					"entries": [
-						"卡拉斯移动至多一半的{@variantrule 速度|XPHB}且不会引发{@action 借机攻击|XPHB}动作，并执行{@action 躲藏|XPHB}动作。"
+						"卡拉丝移动至多一半的{@variantrule 速度|XPHB}且不会引发{@action 借机攻击|XPHB}动作，并执行{@action 躲藏|XPHB}动作。"
 					]
 				}
 			],
@@ -3055,7 +3055,7 @@
 			"legendary": [
 				{
 					"ENG_name": "Harrow",
-					"name": "哈罗",
+					"name": "蹂躏",
 					"entries": [
 						"{@actSave wis} {@dc 15}，卡拉丝90尺内她能看见的一个生物。{@actSaveFail} 10（{@damage 3d6}）心灵伤害，且目标获得{@condition 恐慌|XPHB}状态持续1分钟。当处于{@condition 恐慌|XPHB}状态时，目标的{@variantrule 速度|XPHB}为0尺，并在其每个回合结束时重复豁免，成功则终止效应。{@actSaveSuccessOrFail} 卡拉丝直到她的下个回合开始前不能再次使用此动作。"
 					]
@@ -3064,13 +3064,13 @@
 					"ENG_name": "Stealth Attack",
 					"name": "无声袭击",
 					"entries": [
-						"卡拉斯进行一次恐惧匕首攻击并使用撤步。"
+						"卡拉丝发动一次恐惧匕首攻击并使用撤步。"
 					]
 				}
 			],
 			"legendaryGroup": {
 				"ENG_name": "Karas Chembryl",
-				"name": "卡拉斯·切姆布里尔",
+				"name": "卡拉丝·彻伯瑞",
 				"source": "FRAiF"
 			},
 			"traitTags": [
@@ -3400,7 +3400,7 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"该秘偶进行三次攻击，使用弯刀或时械弩进行任意组合。"
+						"该秘偶使用弯刀或机关弩发动共计三次攻击。"
 					]
 				},
 				{
@@ -3412,7 +3412,7 @@
 				},
 				{
 					"ENG_name": "Clockwork Crossbow",
-					"name": "发条弩",
+					"name": "机关弩",
 					"entries": [
 						"{@atkr r} {@hit 6}，射程 80/320 尺。{@h}8（{@damage 1d8 + 4}）穿刺伤害。"
 					]
@@ -3460,7 +3460,7 @@
 		},
 		{
 			"ENG_name": "Nimblewright Hulk",
-			"name": "秘偶巨怪",
+			"name": "秘偶巨擎",
 			"type": "construct",
 			"source": "FRAiF",
 			"page": 267,
@@ -3537,12 +3537,12 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"秘偶进行四次攻击，以任意组合使用止步猛击或光耀射线。"
+						"秘偶使用逮捕猛击或光束发动共计四次攻击。"
 					]
 				},
 				{
 					"ENG_name": "Halting Slam",
-					"name": "阻滞猛击",
+					"name": "逮捕猛击",
 					"entries": [
 						"{@atkr m} {@hit 7}，触及10尺。{@h}15（{@damage 2d10 + 4}）钝击伤害，且目标{@variantrule 速度|XPHB}缩小至0直到其下一回合结束。"
 					]
@@ -3587,7 +3587,7 @@
 		},
 		{
 			"ENG_name": "Nimblewright Steed",
-			"name": "秘偶坐骑",
+			"name": "秘偶座驾",
 			"type": "construct",
 			"source": "FRAiF",
 			"page": 267,
@@ -3659,9 +3659,9 @@
 			"bonus": [
 				{
 					"ENG_name": "Nimble Movement",
-					"name": "迅捷移动",
+					"name": "灵巧步法",
 					"entries": [
-						"秘偶坐骑采取{@action 撤离|XPHB}动作。"
+						"秘偶座驾执行{@action 撤离|XPHB}动作。"
 					]
 				}
 			],
@@ -3691,7 +3691,7 @@
 		},
 		{
 			"ENG_name": "Phaerimm Agent",
-			"name": "费林魔葵特工",
+			"name": "费林游葵",
 			"type": "aberration",
 			"source": "FRAiF",
 			"page": 269,
@@ -3754,7 +3754,7 @@
 					"name": "施法",
 					"type": "spellcasting",
 					"headerEntries": [
-						"法瑞恩施展以下一个法术，无需法术成分并使用魅力作为施法属性（法术豁免 {@dc 15}）："
+						"费林游葵施展以下一个法术，无需法术成分并使用魅力作为施法属性（法术豁免 {@dc 15}）："
 					],
 					"will": [
 						"{@spell 侦测魔法|XPHB}",
@@ -3776,7 +3776,7 @@
 					"name": "护身魔法（3/日）",
 					"type": "spellcasting",
 					"headerEntries": [
-						"法瑞姆在法术触发时使用与施法相同的施法属性施放{@spell 法术反制|XPHB}或{@spell 护盾术|XPHB}。"
+						"费林游葵在法术触发时使用与施法相同的施法属性施放{@spell 法术反制|XPHB}或{@spell 护盾术|XPHB}。"
 					],
 					"daily": {
 						"3": [
@@ -3796,7 +3796,7 @@
 					"ENG_name": "Magic Resistance",
 					"name": "魔法抗性",
 					"entries": [
-						"法瑞姆在对抗法术和其他魔法效应的豁免检定中具有{@variantrule 优势|XPHB}。"
+						"费林游葵在对抗法术和其他魔法效应的豁免检定中具有{@variantrule 优势|XPHB}。"
 					]
 				}
 			],
@@ -3805,21 +3805,21 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"费林姆进行三次攻击，以任意组合使用恐惧毒刺或心智扭曲射线。"
+						"费林游葵进行三次攻击，以任意组合使用恐怖毒刺或扭心射线。"
 					]
 				},
 				{
 					"ENG_name": "Dread Stinger",
-					"name": "恐惧毒刺",
+					"name": "恐怖毒刺",
 					"entries": [
 						"{@atkr m} {@hit 7}，触及5尺。{@h}7（{@damage 1d6 + 4}）穿刺伤害加13（{@damage 2d12}）毒素伤害。"
 					]
 				},
 				{
 					"ENG_name": "Mindwarp Ray",
-					"name": "心灵扭曲射线",
+					"name": "扭心射线",
 					"entries": [
-						"{@atkr r} {@hit 7}，射程 120 尺 {@h}13（{@damage 2d8 + 4}）心灵伤害，且目标获得{@condition 魅惑|XPHB}状态直到法瑞姆的下个回合开始。"
+						"{@atkr r} {@hit 7}，射程 120 尺 {@h}13（{@damage 2d8 + 4}）心灵伤害，且目标获得{@condition 魅惑|XPHB}状态直到费林游葵的下个回合开始。"
 					]
 				}
 			],
@@ -3828,7 +3828,7 @@
 					"ENG_name": "Teleport",
 					"name": "传送",
 					"entries": [
-						"法瑞姆传送至多30尺到一个它能看见的未占据空间。"
+						"费林游葵传送至多30尺到一个它能看见的未占据空间。"
 					]
 				}
 			],
@@ -3885,7 +3885,7 @@
 		},
 		{
 			"ENG_name": "Phaerimm Hatchling",
-			"name": "费林魔葵幼体",
+			"name": "费林幼葵",
 			"type": "aberration",
 			"source": "FRAiF",
 			"page": 268,
@@ -3940,7 +3940,7 @@
 					"name": "施法",
 					"type": "spellcasting",
 					"headerEntries": [
-						"法瑞姆施放下列法术之一，无需法术成分并使用魅力作为施法属性（法术豁免 {@dc 12}）："
+						"费林幼葵施展下列法术之一，无需法术成分并使用魅力作为施法属性（法术豁免 {@dc 12}）："
 					],
 					"will": [
 						"{@spell 侦测思想|XPHB}",
@@ -3955,7 +3955,7 @@
 					"ENG_name": "Magic Resistance",
 					"name": "魔法抗性",
 					"entries": [
-						"法瑞姆在对抗法术和其他魔法效应的豁免检定中具有{@variantrule 优势|XPHB}。"
+						"费林幼葵在对抗法术和其他魔法效应的豁免检定中具有{@variantrule 优势|XPHB}。"
 					]
 				}
 			],
@@ -3964,7 +3964,7 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"法瑞姆进行二记刺针攻击。"
+						"费林幼葵发动两次尾刺攻击。"
 					]
 				},
 				{
@@ -4064,7 +4064,7 @@
 			"trait": [
 				{
 					"ENG_name": "Misty Slithering",
-					"name": "雾蒙蒙滑行",
+					"name": "迷雾蛇行",
 					"entries": [
 						"该蛇可以穿过窄至1英寸的空间而无需消耗额外移动力。"
 					]
@@ -4128,7 +4128,7 @@
 		},
 		{
 			"ENG_name": "Queen Forfallen",
-			"name": "福法伦女王",
+			"name": "堕落女王",
 			"type": "construct",
 			"isNpc": true,
 			"isNamedCreature": true,
@@ -4194,14 +4194,14 @@
 					"ENG_name": "Inspiring Presence",
 					"name": "鼓舞之仪",
 					"entries": [
-						"弗法伦选择的生物（不包括她自己）在她30尺范围内的{@variantrule 光环 [效应区域]|XPHB|光环}中，在攻击检定上具有{@variantrule 优势|XPHB}。如果她处于{@condition 失能|XPHB}状态，则无法使用此特质。"
+						"堕落女王选择的生物（不包括她自己）在她30尺范围内的{@variantrule 光环 [效应区域]|XPHB|光环}中，在攻击检定上具有{@variantrule 优势|XPHB}。如果她处于{@condition 失能|XPHB}状态，则无法使用此特质。"
 					]
 				},
 				{
 					"ENG_name": "Magic Resistance",
 					"name": "魔法抗性",
 					"entries": [
-						"Forfallen 在对抗法术和其他魔法效应的豁免检定中具有{@variantrule 优势|XPHB}。"
+						"堕落女王在对抗法术和其他魔法效应的豁免检定中具有{@variantrule 优势|XPHB}。"
 					]
 				}
 			],
@@ -4210,7 +4210,7 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"堕亡者进行三次攻击，使用巨斧或手斧以任何组合。"
+						"堕落女王使用巨斧或手斧发动共计三次攻击。"
 					]
 				},
 				{
@@ -4231,9 +4231,9 @@
 			"bonus": [
 				{
 					"ENG_name": "Rust's Grip",
-					"name": "锈色之握",
+					"name": "锈蚀之握",
 					"entries": [
-						"{@actSave con} {@dc 16}，一个福法伦在20尺内能看见的生物。如果目标有{@condition 中毒|XPHB}状态，则在此豁免上具有{@variantrule 劣势|XPHB}。{@actSaveFail 1} 目标获得{@condition 束缚|XPHB}状态，如果仍然处于{@condition 束缚|XPHB}状态，则在其下一回合结束时重复豁免，成功则终止自身效应。{@actSaveFail 2} 目标获得{@condition 石化|XPHB}状态而非{@condition 束缚|XPHB}状态，变成一个生锈的铁雕像。"
+						"{@actSave con} {@dc 16}，一个堕落女王在20尺内能看见的生物。如果目标有{@condition 中毒|XPHB}状态，则在此豁免上具有{@variantrule 劣势|XPHB}。{@actSaveFail 1} 目标获得{@condition 束缚|XPHB}状态，如果仍然处于{@condition 束缚|XPHB}状态，则在其下一回合结束时重复豁免，成功则终止自身效应。{@actSaveFail 2} 目标获得{@condition 石化|XPHB}状态而非{@condition 束缚|XPHB}状态，变成一个生锈的铁雕像。"
 					]
 				}
 			],
@@ -4269,7 +4269,7 @@
 		},
 		{
 			"ENG_name": "Rusted Behemoth",
-			"name": "锈蚀巨兽",
+			"name": "锈蚀贝希摩斯",
 			"type": "construct",
 			"source": "FRAiF",
 			"page": 272,
@@ -4317,7 +4317,7 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"锈蚀怪发动三次攻击，使用猛击或锈蚀铅球投掷以任何组合。"
+						"锈蚀贝希摩斯使用猛击或锈球投掷发动共计三次攻击。"
 					]
 				},
 				{
@@ -4329,7 +4329,7 @@
 				},
 				{
 					"ENG_name": "Rusted Shot Put",
-					"name": "生锈铅球",
+					"name": "锈球投掷",
 					"entries": [
 						"{@atkr r} {@hit 10}，射程 60/240 尺。{@h}15（{@damage 2d8 + 6}）钝击伤害，且目标获得{@condition 中毒|XPHB}状态直到其下一回合结束。"
 					]
@@ -4338,9 +4338,9 @@
 			"reaction": [
 				{
 					"ENG_name": "Rust-Riddled Hide",
-					"name": "锈色斑驳的躲藏",
+					"name": "锈蚀表皮",
 					"entries": [
-						"{@actTrigger} 生锈者被一次造成钝击、穿刺或挥砍伤害的攻击检定命中。{@actResponse d}{@actSave con} {@dc 16}，生锈者选择的5尺{@variantrule 光环 [效应区域]|XPHB|光环}内的每个生物。{@actSaveFail} 目标获得{@condition 中毒|XPHB}状态直到目标的下个回合结束。"
+						"{@actTrigger} 锈蚀者被一次造成钝击、穿刺或挥砍伤害的攻击检定命中。{@actResponse d}{@actSave con} {@dc 16}，锈蚀者选择的5尺{@variantrule 光环 [效应区域]|XPHB|光环}内的每个生物。{@actSaveFail} 目标获得{@condition 中毒|XPHB}状态直到目标的下个回合结束。"
 					]
 				}
 			],
@@ -4432,7 +4432,7 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"锈蚀怪进行两次攻击，使用巨剑或标枪以任何组合。"
+						"锈蚀狂战士使用巨剑或标枪发动共计两次攻击。"
 					]
 				},
 				{
@@ -4482,7 +4482,7 @@
 		},
 		{
 			"ENG_name": "Rusted Wyrm",
-			"name": "锈蚀巨龙",
+			"name": "锈蚀蛟龙",
 			"type": "construct",
 			"source": "FRAiF",
 			"page": 273,
@@ -4536,7 +4536,7 @@
 					"ENG_name": "Legendary Resistance (3/Day)",
 					"name": "传奇抗性 (3/日)",
 					"entries": [
-						"如果锈蚀泰坦在一次豁免检定中失败，它可以选择改为成功。"
+						"如果锈蚀蛟龙在一次豁免检定中失败，它可以选择改为成功。"
 					]
 				}
 			],
@@ -4545,7 +4545,7 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"该锈蚀怪物进行两次啃咬攻击。"
+						"锈蚀蛟龙发动两次啃咬攻击。"
 					]
 				},
 				{
@@ -4566,9 +4566,9 @@
 			"bonus": [
 				{
 					"ENG_name": "Encasing Rust",
-					"name": "锈色包覆",
+					"name": "包裹锈蚀",
 					"entries": [
-						"{@actSave con} {@dc 19}，一个在锈蚀者20尺内的生物。{@actSaveFail} 14（{@damage 4d6}）毒素伤害，且目标获得{@condition 中毒|XPHB}状态直到其下一回合结束。当{@condition 中毒|XPHB}时，目标获得{@condition 麻痹|XPHB}状态。"
+						"{@actSave con} {@dc 19}，一个在锈蚀蛟龙20尺内的生物。{@actSaveFail} 14（{@damage 4d6}）毒素伤害，且目标获得{@condition 中毒|XPHB}状态直到其下一回合结束。当{@condition 中毒|XPHB}时，目标获得{@condition 麻痹|XPHB}状态。"
 					]
 				}
 			],
@@ -4616,7 +4616,7 @@
 		},
 		{
 			"ENG_name": "Sammaster (Dracolich Form)",
-			"name": "萨玛斯特（龙巫妖形态）",
+			"name": "萨马斯特（龙巫妖形态）",
 			"type": "undead",
 			"isNpc": true,
 			"isNamedCreature": true,
@@ -4690,7 +4690,7 @@
 					"name": "施法",
 					"type": "spellcasting",
 					"headerEntries": [
-						"萨玛斯特施展下列法术之一，无需材料成分并使用智力作为施法属性（法术豁免 {@dc 21}，法术攻击命中 {@hit 13}）："
+						"萨马斯特施展下列法术之一，无需材料成分并使用智力作为施法属性（法术豁免 {@dc 21}，法术攻击命中 {@hit 13}）："
 					],
 					"will": [
 						"{@spell 枯萎术|XPHB}",
@@ -4719,28 +4719,28 @@
 					"ENG_name": "Legendary Resistance (3/Day)",
 					"name": "传奇抗性 (3/日)",
 					"entries": [
-						"如果萨玛斯特在一次豁免检定中失败，他可以选择改为成功。"
+						"如果萨马斯特在一次豁免检定中失败，他可以选择改为成功。"
 					]
 				},
 				{
 					"ENG_name": "Life Suppression",
 					"name": "生机抑止",
 					"entries": [
-						"萨马斯60尺内的生物无法恢复{@variantrule 生命值|XPHB}。"
+						"萨马斯特60尺内的生物无法恢复{@variantrule 生命值|XPHB}。"
 					]
 				},
 				{
 					"ENG_name": "Magic Resistance",
 					"name": "魔法抗性",
 					"entries": [
-						"萨马斯在对抗法术和其他魔法效应的豁免检定中具有{@variantrule 优势|XPHB}。"
+						"萨马斯特在对抗法术和其他魔法效应的豁免检定中具有{@variantrule 优势|XPHB}。"
 					]
 				},
 				{
 					"ENG_name": "Soul Gem",
 					"name": "灵魂宝石",
 					"entries": [
-						"萨玛斯特拥有一颗魔法灵魂宝石作为他的龙巫妖心脏。该宝石在他被削减至0{@variantrule 生命值|XPHB}前无法被破坏或移除。如果萨玛斯特被削减至0{@variantrule 生命值|XPHB}，他的龙巫妖形态会化为尘埃。经过{@dice 1d10}天后，他会在其灵魂宝石5尺内的一个未占据空间出现（只要宝石仍然存在），使用萨玛斯特（巫妖形态）数据卡。该宝石是一个微型物件，具有AC 20；HP 50；以及{@variantrule 免疫|XPHB}强酸、暗蚀、毒素和心灵伤害。该宝石在每个回合结束时恢复所有{@variantrule 生命值|XPHB}，但如果被削减至0{@variantrule 生命值|XPHB}则会化为尘埃。"
+						"萨马斯特拥有一颗魔法灵魂宝石作为他的龙巫妖心脏。该宝石在他被削减至0{@variantrule 生命值|XPHB}前无法被破坏或移除。如果萨马斯特被削减至0{@variantrule 生命值|XPHB}，他的龙巫妖形态会化为尘埃。经过{@dice 1d10}天后，他会在其灵魂宝石5尺内的一个未占据空间出现（只要宝石仍然存在），使用萨马斯特（巫妖形态）数据卡。该宝石是一个微型物件，具有AC 20；HP 50；以及{@variantrule 免疫|XPHB}强酸、暗蚀、毒素和心灵伤害。该宝石在每个回合结束时恢复所有{@variantrule 生命值|XPHB}，但如果被削减至0{@variantrule 生命值|XPHB}则会化为尘埃。"
 					]
 				}
 			],
@@ -4749,7 +4749,7 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"萨玛斯特进行三次撕裂攻击。他可以用一次施法来施放{@spell 枯萎术|XPHB}或{@spell 致病射线|XPHB}（6环版本）来替代一次攻击。"
+						"萨马斯特进行三次撕裂攻击。他可以用一次施法来施放{@spell 枯萎术|XPHB}或{@spell 致病射线|XPHB}（6环版本）来替代一次攻击。"
 					]
 				},
 				{
@@ -4761,7 +4761,7 @@
 				},
 				{
 					"ENG_name": "Corroding Breath {@recharge 5}",
-					"name": "腐蚀吐息 {@recharge 5}",
+					"name": "蚀灭吐息 {@recharge 5}",
 					"entries": [
 						"{@actSave con} {@dc 20}，90尺{@variantrule 锥状 [效应区域]|XPHB|锥状}效应区域内的每个生物。{@actSaveFail} 52（{@damage 8d12}）强酸或暗蚀伤害（萨马斯特的选择）。{@actSaveSuccess} 伤害减半。"
 					]
@@ -4772,21 +4772,21 @@
 					"ENG_name": "Pounce",
 					"name": "猛扑",
 					"entries": [
-						"萨玛斯特移动至多他{@variantrule 速度|XPHB}的一半，并且他进行一次撕裂攻击。"
+						"萨马斯特移动至多等于其{@variantrule 速度|XPHB}一半的距离，并发动一次撕裂攻击。"
 					]
 				},
 				{
 					"ENG_name": "Sickening Ray",
 					"name": "灾疫射线",
 					"entries": [
-						"萨玛斯特使用施法来施放{@spell 致病射线|XPHB}（6环版本）。"
+						"萨马斯特使用施法来施放{@spell 致病射线|XPHB}（6环版本）。"
 					]
 				},
 				{
 					"ENG_name": "Terrifying Presence",
 					"name": "骇惧威仪",
 					"entries": [
-						"{@actSave wis} {@dc 21}，萨玛斯特周围20尺{@variantrule 光环 [效应区域]|XPHB|光环}范围内的每个生物。{@actSaveFail} 13（{@damage 2d12}）心灵伤害，且目标获得{@condition 恐慌|XPHB}状态直到其下一回合结束。{@actSaveSuccessOrFail} 萨玛斯特直到其下一回合开始前无法再次使用此动作。"
+						"{@actSave wis} {@dc 21}，萨马斯特周围20尺{@variantrule 光环 [效应区域]|XPHB|光环}范围内的每个生物。{@actSaveFail} 13（{@damage 2d12}）心灵伤害，且目标获得{@condition 恐慌|XPHB}状态直到其下一回合结束。{@actSaveSuccessOrFail} 萨马斯特直到其下一回合开始前无法再次使用此动作。"
 					]
 				}
 			],
@@ -4845,7 +4845,7 @@
 		},
 		{
 			"ENG_name": "Sammaster (Lich Form)",
-			"name": "萨玛斯特（巫妖形态）",
+			"name": "萨马斯特（巫妖形态）",
 			"type": {
 				"type": "undead",
 				"tags": [
@@ -4926,7 +4926,7 @@
 					"name": "施法",
 					"type": "spellcasting",
 					"headerEntries": [
-						"萨玛斯特施展下列法术之一，无需材料成分并使用智力作为施法属性（法术豁免{@dc 21}）："
+						"萨马斯特施展下列法术之一，无需材料成分并使用智力作为施法属性（法术豁免{@dc 21}）："
 					],
 					"will": [
 						"{@spell 寒冰锥|XPHB}",
@@ -4955,7 +4955,7 @@
 					"name": "护身魔法",
 					"type": "spellcasting",
 					"headerEntries": [
-						"萨玛斯特使用与施法相同的施法属性，在法术触发时施放{@spell 法术反制|XPHB}或{@spell 护盾术|XPHB}作为响应。"
+						"萨马斯特使用与施法相同的施法属性，在法术触发时施放{@spell 法术反制|XPHB}或{@spell 护盾术|XPHB}作为响应。"
 					],
 					"will": [
 						"{@spell 法术反制|XPHB}",
@@ -4973,28 +4973,28 @@
 					"ENG_name": "Legendary Resistance (3/Day)",
 					"name": "传奇抗性 (3/日)",
 					"entries": [
-						"如果萨玛斯特在一次豁免检定中失败，他可以选择改为成功。"
+						"如果萨马斯特在一次豁免检定中失败，他可以选择改为成功。"
 					]
 				},
 				{
 					"ENG_name": "Life Suppression",
 					"name": "生机抑止",
 					"entries": [
-						"萨马斯60尺内的生物无法恢复{@variantrule 生命值|XPHB}。"
+						"萨马斯特60尺内的生物无法恢复{@variantrule 生命值|XPHB}。"
 					]
 				},
 				{
 					"ENG_name": "Magic Resistance",
 					"name": "魔法抗性",
 					"entries": [
-						"萨马斯在对抗法术和其他魔法效应的豁免检定中具有{@variantrule 优势|XPHB}。"
+						"萨马斯特在对抗法术和其他魔法效应的豁免检定中具有{@variantrule 优势|XPHB}。"
 					]
 				},
 				{
 					"ENG_name": "Soul Gem",
 					"name": "灵魂宝石",
 					"entries": [
-						"如果萨玛斯特的{@variantrule 生命值|XPHB}被降至0而其魔法灵魂宝石依然存在，他的巫妖形态将化为尘埃。经过{@dice 1d10}天后，他会在其灵魂宝石所在空间显现，使用萨玛斯特（龙巫妖形态）数据卡。该宝石为微型物件，具有AC 20；HP 50；并对强酸、暗蚀、毒素和心灵伤害具有{@variantrule 免疫|XPHB}。该宝石在每个回合结束时恢复所有{@variantrule 生命值|XPHB}，但如果被降至0{@variantrule 生命值|XPHB}则会化为尘埃。如果宝石被摧毁，萨玛斯特可以通过完成一个8小时仪式来创造新的宝石，仪式需使用一枚价值1000+GP的宝石（仪式会消耗该宝石），并消耗5000GP。"
+						"如果萨马斯特的{@variantrule 生命值|XPHB}被降至0而其魔法灵魂宝石依然存在，他的巫妖形态将化为尘埃。经过{@dice 1d10}天后，他会在其灵魂宝石所在空间显现，使用萨马斯特（龙巫妖形态）数据卡。该宝石为微型物件，具有AC 20；HP 50；并对强酸、暗蚀、毒素和心灵伤害具有{@variantrule 免疫|XPHB}。该宝石在每个回合结束时恢复所有{@variantrule 生命值|XPHB}，但如果被降至0{@variantrule 生命值|XPHB}则会化为尘埃。如果宝石被摧毁，萨马斯特可以通过完成一个8小时仪式来创造新的宝石，仪式需使用一枚价值1000+GP的宝石（仪式会消耗该宝石），并消耗5000GP。"
 					]
 				}
 			],
@@ -5003,12 +5003,12 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"萨玛斯特进行三次攻击，以任意组合使用腐蚀爆发或麻痹触击。他可以用一次施法替换两次攻击。"
+						"萨马斯特进行三次攻击，以任意组合使用蚀灭迸裂或麻痹触击。他可以用一次施法替换两次攻击。"
 					]
 				},
 				{
 					"ENG_name": "Corrosive Burst",
-					"name": "腐蚀爆发",
+					"name": "蚀灭迸裂",
 					"entries": [
 						"{@atkr m,r} {@hit 13}，触及5尺或射程120尺{@h}38（{@damage 5d12 + 6}）强酸或暗蚀伤害（萨马斯特的选择）。"
 					]
@@ -5017,7 +5017,7 @@
 					"ENG_name": "Paralyzing Touch",
 					"name": "麻痹之触",
 					"entries": [
-						"{@atkr m} {@hit 13}，触及5尺。{@h}16（{@damage 3d6 + 6}）寒冷伤害，且目标获得{@condition 麻痹|XPHB}状态直到萨马斯塔的下个回合开始。"
+						"{@atkr m} {@hit 13}，触及5尺。{@h}16（{@damage 3d6 + 6}）寒冷伤害，且目标获得{@condition 麻痹|XPHB}状态直到萨马斯特的下个回合开始。"
 					]
 				}
 			],
@@ -5026,21 +5026,21 @@
 					"ENG_name": "Deathly Teleport",
 					"name": "蚀命传送",
 					"entries": [
-						"萨玛斯特传送至多60尺至一个他能看见的未占据空间，每个在他离开空间10尺内的生物受到19（{@damage 3d12}）暗蚀伤害。"
+						"萨马斯特传送至多60尺至一个他能看见的未占据空间，每个在他离开空间10尺内的生物受到19（{@damage 3d12}）暗蚀伤害。"
 					]
 				},
 				{
 					"ENG_name": "Dissolve",
-					"name": "溶解",
+					"name": "溶毁",
 					"entries": [
-						"萨玛斯特进行一次腐蚀爆发攻击。"
+						"萨马斯特进行一次蚀灭迸裂攻击。"
 					]
 				},
 				{
 					"ENG_name": "Terrifying Presence",
 					"name": "骇惧威仪",
 					"entries": [
-						"{@actSave wis} {@dc 21}，萨玛斯特周围20尺{@variantrule 光环 [效应区域]|XPHB|光环}范围内的每个生物。{@actSaveFail} 13（{@damage 2d12}）心灵伤害，且目标获得{@condition 恐慌|XPHB}状态直到其下一回合结束。{@actSaveSuccessOrFail} 萨玛斯特直到其下一回合开始前无法再次使用此动作。"
+						"{@actSave wis} {@dc 21}，萨马斯特周围20尺{@variantrule 光环 [效应区域]|XPHB|光环}范围内的每个生物。{@actSaveFail} 13（{@damage 2d12}）心灵伤害，且目标获得{@condition 恐慌|XPHB}状态直到其下一回合结束。{@actSaveSuccessOrFail} 萨马斯特直到其下一回合开始前无法再次使用此动作。"
 					]
 				}
 			],
@@ -5099,7 +5099,7 @@
 		},
 		{
 			"ENG_name": "Spirit Dragon Wyrmling",
-			"name": "精魄龙雏龙",
+			"name": "灵龙雏龙",
 			"type": "dragon",
 			"source": "FRAiF",
 			"page": 277,
@@ -5161,14 +5161,14 @@
 				},
 				{
 					"ENG_name": "Ruinous Breath {@recharge 5}",
-					"name": "毁灭性的吐息 {@recharge 5}",
+					"name": "崩灭吐息{@recharge 5}",
 					"entries": [
 						"{@actSave con} {@dc 12}，15尺{@variantrule 锥状 [效应区域]|XPHB|锥状}范围内的每个生物。{@actSaveFail} 13（{@damage 3d8}）暗蚀伤害。{@actSaveSuccess} 伤害减半。"
 					]
 				},
 				{
 					"ENG_name": "Time-Warping Breath",
-					"name": "时间扭曲吐息",
+					"name": "时光裂曲吐息",
 					"entries": [
 						"{@actSave wis} {@dc 12}，每个当前未受此吐息影响的15尺{@variantrule 锥状 [效应区域]|XPHB|锥状}内的生物。{@actSaveFail} 目标的{@variantrule 速度|XPHB}减半，它不能使用反应，并且在它的回合中只能执行一个动作或一个{@variantrule 附赠动作|XPHB}，不能同时执行两者。它在每个自己回合结束时重复豁免，成功则终止自身效应。1分钟后，它自动成功。"
 					]
@@ -5185,7 +5185,7 @@
 			"treasure": [
 				"任何"
 			],
-			"dragonCastingColor": "精魄",
+			"dragonCastingColor": "灵",
 			"dragonAge": "雏龙",
 			"tokenCredit": "Sandara",
 			"tokenCustom": true,
@@ -5281,14 +5281,14 @@
 			"trait": [
 				{
 					"ENG_name": "Explosive Core",
-					"name": "爆炸核心",
+					"name": "易爆核心",
 					"entries": [
 						"当孢子受到火焰伤害时，在源自孢子的5尺{@variantrule 光环 [效应区域]|XPHB|光环}内的每个生物受到7（{@damage 2d6}）火焰伤害。"
 					]
 				},
 				{
 					"ENG_name": "Rolling Mass",
-					"name": "滚动团块",
+					"name": "翻滚巨物",
 					"entries": [
 						"孢子不需要消耗额外移动力来穿过{@variantrule 困难地形|XPHB}。"
 					]
@@ -5311,7 +5311,7 @@
 				},
 				{
 					"ENG_name": "Consume",
-					"name": "消耗",
+					"name": "吞噬",
 					"entries": [
 						"{@actSave str} {@dc 18}，5尺内一个大型或更小的生物。{@actSaveFail} 目标被拉入孢子的空间并获得{@condition 受擒|XPHB}状态（逃脱{@dc 16}）。直到擒抱结束，目标获得{@condition 目盲|XPHB}和{@condition 束缚|XPHB}状态，并在孢子的每个回合开始时受到17（{@damage 5d6}）强酸伤害。当孢子移动时，{@condition 受擒|XPHB}的目标随之移动，不消耗额外移动力。孢子可以同时{@condition 受擒|XPHB}一个大型生物或最多九个中型或更小的生物。"
 					]
@@ -5521,7 +5521,7 @@
 		},
 		{
 			"ENG_name": "Valindra Shadowmantle",
-			"name": "瓦琳朵拉·暗影斗篷",
+			"name": "瓦琳德拉·影帷",
 			"type": {
 				"type": "undead",
 				"tags": [
@@ -5605,7 +5605,7 @@
 					"name": "施法",
 					"type": "spellcasting",
 					"headerEntries": [
-						"瓦琳朵拉施展以下法术之一，使用智力作为施法属性（法术豁免 {@dc 20}）："
+						"瓦琳德拉施展以下法术之一，使用智力作为施法属性（法术豁免 {@dc 20}）："
 					],
 					"will": [
 						"{@spell 侦测魔法|XPHB}",
@@ -5634,10 +5634,10 @@
 				},
 				{
 					"ENG_name": "Illusory Disguise",
-					"name": "幻象伪装",
+					"name": "变貌幻象",
 					"type": "spellcasting",
 					"headerEntries": [
-						"瓦琳朵拉施放{@spell 易容术|XPHB}，使用与施法相同的施法属性。该法术持续到瓦琳朵拉的生命值降至30{@variantrule 生命值|XPHB}或更少，或使用她的生命撕裂凝视传奇动作为止。用于辨别她真实外貌的智力（{@skill 调查|XPHB}）检定以{@variantrule 劣势|XPHB}进行。"
+						"瓦琳德拉施放{@spell 易容术|XPHB}，使用与施法相同的施法属性。该法术持续到瓦琳德拉的生命值降至30{@variantrule 生命值|XPHB}或更少，或使用她的裂命凝视传奇动作为止。用于辨别她真实外貌的智力（{@skill 调查|XPHB}）检定以{@variantrule 劣势|XPHB}进行。"
 					],
 					"will": [
 						"{@spell 易容术|XPHB}"
@@ -5653,7 +5653,7 @@
 					"name": "护身魔法",
 					"type": "spellcasting",
 					"headerEntries": [
-						"瓦琳朵拉在法术触发时使用与施法相同的施法属性施放{@spell 法术反制|XPHB}或{@spell 护盾术|XPHB}作为回应。"
+						"瓦琳德拉在法术触发时使用与施法相同的施法属性施放{@spell 法术反制|XPHB}或{@spell 护盾术|XPHB}作为回应。"
 					],
 					"will": [
 						"{@spell 法术反制|XPHB}",
@@ -5669,16 +5669,16 @@
 			"trait": [
 				{
 					"ENG_name": "Legendary Resistance (4/Day or 5/Day in Lair)",
-					"name": "传奇抗性（4/日或5/日在巢穴）",
+					"name": "传奇抗性（4/日，或巢穴内5/日）",
 					"entries": [
-						"如果瓦琳朵拉豁免失败，可以将其改为豁免成功。"
+						"如果瓦琳德拉豁免失败，可以将其改为豁免成功。"
 					]
 				},
 				{
 					"ENG_name": "Spirit Gem",
-					"name": "精魄宝石",
+					"name": "命魂宝石",
 					"entries": [
-						"如果被摧毁，只要她的精魄宝石完好，瓦琳朵拉会在{@dice 1d10}天后重新形成，并恢复所有{@variantrule 生命值|XPHB}。新的躯体会出现在她巢穴内的一个未占据空间中。"
+						"如果被摧毁，只要她的命魂宝石完好，瓦琳德拉会在{@dice 1d10}天后重新形成，并恢复所有{@variantrule 生命值|XPHB}。新的躯体会出现在她巢穴内的一个未占据空间中。"
 					]
 				}
 			],
@@ -5687,7 +5687,7 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"瓦琳朵拉进行三次攻击，以任意组合使用魔能迸裂或麻痹触击。她可以替换两次攻击以使用施法来施放{@spell 闪电束|XPHB}（5环版本）。"
+						"瓦琳德拉进行三次攻击，以任意组合使用魔能迸裂或麻痹触击。她可以替换两次攻击以使用施法来施放{@spell 闪电束|XPHB}（5环版本）。"
 					]
 				},
 				{
@@ -5701,14 +5701,14 @@
 					"ENG_name": "Paralyzing Touch",
 					"name": "麻痹之触",
 					"entries": [
-						"{@atkr m} {@hit 12}，触及5尺。{@h}14（{@damage 2d8 + 5}）寒冷伤害，且目标获得{@condition 麻痹|XPHB}状态直到瓦琳朵拉的下个回合开始。"
+						"{@atkr m} {@hit 12}，触及5尺。{@h}14（{@damage 2d8 + 5}）寒冷伤害，且目标获得{@condition 麻痹|XPHB}状态直到瓦琳德拉的下个回合开始。"
 					]
 				},
 				{
 					"ENG_name": "Deathly Grasp {@recharge 5}",
-					"name": "致命攫取 {@recharge 5}",
+					"name": "死亡之攫 {@recharge 5}",
 					"entries": [
-						"{@actSave dex} {@dc 20}，位于瓦琳朵拉30尺{@variantrule 光环 [效应区域]|XPHB|光环}内的每个生物。{@actSaveFail 1} 39（{@damage 6d12}）力场伤害且目标获得{@condition 束缚|XPHB}状态，并在其每个回合结束时重复豁免，成功则自身终止效应。1分钟后，自动成功。后续失败：39（{@damage 6d12}）暗蚀伤害，且瓦琳朵拉获得20{@variantrule 临时生命值|XPHB}。"
+						"{@actSave dex} {@dc 20}，位于瓦琳德拉30尺{@variantrule 光环 [效应区域]|XPHB|光环}内的每个生物。{@actSaveFail 1} 39（{@damage 6d12}）力场伤害且目标获得{@condition 束缚|XPHB}状态，并在其每个回合结束时重复豁免，成功则自身终止效应。1分钟后，自动成功。后续失败：39（{@damage 6d12}）暗蚀伤害，且瓦琳德拉获得20{@variantrule 临时生命值|XPHB}。"
 					]
 				}
 			],
@@ -5718,21 +5718,21 @@
 					"ENG_name": "Disrupt Life",
 					"name": "扰乱生命",
 					"entries": [
-						"{@actSave con} {@dc 20}，在瓦琳朵拉周围20尺{@variantrule 光环 [效应区域]|XPHB|光环}范围内每个非不死生物。{@actSaveFail} 21（{@damage 6d6}）暗蚀伤害。{@actSaveSuccess} 伤害减半。{@actSaveSuccessOrFail} 瓦琳朵拉直到她的下个回合开始前无法再次使用此动作。"
+						"{@actSave con} {@dc 20}，在瓦琳德拉周围20尺{@variantrule 光环 [效应区域]|XPHB|光环}范围内每个非不死生物。{@actSaveFail} 21（{@damage 6d6}）暗蚀伤害。{@actSaveSuccess} 伤害减半。{@actSaveSuccessOrFail} 瓦琳德拉直到她的下个回合开始前无法再次使用此动作。"
 					]
 				},
 				{
 					"ENG_name": "Eldritch Jaunt",
-					"name": "诡术跃迁",
+					"name": "魔能瞬步",
 					"entries": [
-						"瓦琳朵拉进行一次魔能迸裂攻击。在攻击之前或之后，瓦琳朵拉可以传送至多20尺至一个她能看见的未占据空间。"
+						"瓦琳德拉进行一次魔能迸裂攻击。在攻击之前或之后，瓦琳德拉可以传送至多20尺至一个她能看见的未占据空间。"
 					]
 				},
 				{
 					"ENG_name": "Life-Rending Gaze",
-					"name": "生命撕裂凝视",
+					"name": "裂命凝视",
 					"entries": [
-						"{@actSave wis} {@dc 20}，一个瓦琳朵拉30尺内能看见的生物。{@actSaveFail} 22（{@damage 4d10}）暗蚀伤害，且目标获得{@condition 恐慌|XPHB}状态直到其下一回合结束。{@actSaveSuccess} 仅伤害减半。"
+						"{@actSave wis} {@dc 20}，一个瓦琳德拉30尺内能看见的生物。{@actSaveFail} 22（{@damage 4d10}）暗蚀伤害，且目标获得{@condition 恐慌|XPHB}状态直到其下一回合结束。{@actSaveSuccess} 仅伤害减半。"
 					]
 				}
 			],
@@ -5790,7 +5790,7 @@
 		},
 		{
 			"ENG_name": "Werewyvern",
-			"name": "狼翼龙",
+			"name": "飞龙人",
 			"type": {
 				"type": "dragon",
 				"tags": [
@@ -5843,7 +5843,7 @@
 			"passive": 14,
 			"languages": [
 				"通用语",
-				"龙族血脉（飞龙形态下无法说话）"
+				"龙语（飞龙形态下无法说话）"
 			],
 			"cr": "8",
 			"gear": [
@@ -5857,7 +5857,7 @@
 					"ENG_name": "Flyby (Wyvern or Hybrid Form Only)",
 					"name": "飞掠（仅限飞龙或混合形态）",
 					"entries": [
-						"该狼翼龙飞离仇敌的触及范围时不会引发{@action 借机攻击|XPHB}动作。"
+						"飞龙人飞离敌人的触及范围时不会引发{@action 借机攻击|XPHB}动作。"
 					]
 				}
 			],
@@ -5866,7 +5866,7 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"翼龙人进行三次攻击，以任意组合使用标枪或撕裂。它可以将其中的一次攻击替换为一次毒刺攻击。"
+						"飞龙人使用标枪或撕裂发动共计三次攻击，其可以将其中一次攻击替换为发动一次刺针攻击。"
 					]
 				},
 				{
@@ -5887,7 +5887,7 @@
 					"ENG_name": "Stinger (Wyvern or Hybrid Form Only)",
 					"name": "刺针（仅限飞龙或混合形态）",
 					"entries": [
-						"{@atkr m} {@hit 7}，触及5尺。{@h}7（{@damage 1d6 + 4}）穿刺伤害加16（{@damage 3d10}）毒素伤害，且目标获得{@condition 中毒|XPHB}状态直到翼龙人的下一回合开始。如果目标是类人生物，它将受到以下效果影响。{@actSave con} {@dc 16}。{@actSaveFail} 目标被诅咒。如果被诅咒的目标生命值降至0{@variantrule 生命值|XPHB}，则它反而变成一只受DM控制的翼龙人并拥有20{@variantrule 生命值|XPHB}。{@actSaveSuccess} 目标在24小时内免疫此翼龙人的诅咒。"
+						"{@atkr m} {@hit 7}，触及5尺。{@h}7（{@damage 1d6 + 4}）穿刺伤害加16（{@damage 3d10}）毒素伤害，且目标获得{@condition 中毒|XPHB}状态直到飞龙人的下一回合开始。如果目标是类人生物，它将受到以下效果影响。{@actSave con} {@dc 16}。{@actSaveFail} 目标被诅咒。如果被诅咒的目标生命值降至0{@variantrule 生命值|XPHB}，则它反而变成一只受DM控制的飞龙人并拥有20{@variantrule 生命值|XPHB}。{@actSaveSuccess} 目标在24小时内免疫此飞龙人的诅咒。"
 					]
 				}
 			],
@@ -5896,7 +5896,7 @@
 					"ENG_name": "Shape-Shift",
 					"name": "变形",
 					"entries": [
-						"飞龙裔变形为一个中型飞龙-类人生物混生体或大型飞龙，或变回其真实的类人生物形态。除了体型外，它的游戏数据在每种形态下都相同。它所穿戴或携带的任何装备都不会被转化。"
+						"飞龙人变形为类人与飞龙的混合形态（中型），或飞龙形态（大型），或变回其真实的类人形态。除体型以外，其各形态下游戏数据均相同。它所穿戴或携带的任何装备都不会被转化。"
 					]
 				}
 			],
@@ -6024,7 +6024,7 @@
 					"ENG_name": "Nightmare Breath {@recharge 5}",
 					"name": "噩梦吐息{@recharge 5}",
 					"entries": [
-						"{@actSave wis} {@dc 14}，30尺{@variantrule 锥状 [效应区域]|XPHB|锥状}效应区域内的每个生物。{@actSaveFail} 22（{@damage 4d10}）心灵伤害，且目标获得{@condition 恐慌|XPHB}恐慌状态直到龙的下个回合结束。{@actSaveSuccess} 仅伤害减半。"
+						"{@actSave wis} {@dc 14}，30尺{@variantrule 锥状 [效应区域]|XPHB|锥状}效应区域内的每个生物。{@actSaveFail} 22（{@damage 4d10}）心灵伤害，且目标获得{@condition 恐慌|XPHB}状态直到龙的下个回合结束。{@actSaveSuccess} 仅伤害减半。"
 					]
 				}
 			],
@@ -6070,7 +6070,7 @@
 		},
 		{
 			"ENG_name": "Young Spirit Dragon",
-			"name": "青年精魄龙",
+			"name": "青年灵龙",
 			"type": "dragon",
 			"source": "FRAiF",
 			"page": 277,
@@ -6128,7 +6128,7 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"该龙进行三次撕裂攻击。它可以用一次时间扭曲吐息替换一次攻击。"
+						"该龙进行三次撕裂攻击。它可以用一次时光裂曲吐息替换一次攻击。"
 					]
 				},
 				{
@@ -6140,14 +6140,14 @@
 				},
 				{
 					"ENG_name": "Ruinous Breath {@recharge 5}",
-					"name": "毁灭性的吐息 {@recharge 5}",
+					"name": "崩灭吐息{@recharge 5}",
 					"entries": [
 						"{@actSave con} {@dc 15}，30尺{@variantrule 锥状 [效应区域]|XPHB|锥状}效应区域内的每个生物。{@actSaveFail} 36（{@damage 8d8}）暗蚀伤害。{@actSaveSuccess} 伤害减半。"
 					]
 				},
 				{
 					"ENG_name": "Time-Warping Breath",
-					"name": "时间扭曲吐息",
+					"name": "时光裂曲吐息",
 					"entries": [
 						"{@actSave wis} {@dc 15}，每个当前未受此吐息影响的30尺{@variantrule 锥状 [效应区域]|XPHB|锥状}内的生物。{@actSaveFail} 目标的{@variantrule 速度|XPHB}减半，它不能使用反应，并且在它的回合中只能执行一个动作或一个{@variantrule 附赠动作|XPHB}，不能同时执行两者。它在每个自己回合结束时重复豁免，成功则终止自身效应。1分钟后，它自动成功。"
 					]
@@ -6164,7 +6164,7 @@
 			"treasure": [
 				"任何"
 			],
-			"dragonCastingColor": "精魄",
+			"dragonCastingColor": "灵",
 			"dragonAge": "青年",
 			"senseTags": [
 				"B",
@@ -6197,7 +6197,7 @@
 		},
 		{
 			"ENG_name": "Zhentilar Paladin of Bane",
-			"name": "班恩的散塔林会圣武士",
+			"name": "散提拉军班恩圣武士",
 			"type": "humanoid",
 			"source": "FRAiF",
 			"page": 285,
@@ -6248,7 +6248,7 @@
 					"name": "施法",
 					"type": "spellcasting",
 					"headerEntries": [
-						"散塔林会成员施展以下法术之一，使用魅力作为施法属性（法术豁免 {@dc 13}）："
+						"散提拉军班恩圣武士施展以下法术之一，使用魅力作为施法属性（法术豁免 {@dc 13}）："
 					],
 					"daily": {
 						"1e": [
@@ -6265,7 +6265,7 @@
 					"ENG_name": "Aura of Dread",
 					"name": "畏惧灵光",
 					"entries": [
-						"在源自散塔林会成员的10尺{@variantrule 光环 [效应区域]|XPHB|光环}内的生物，其速度在该{@variantrule 光环 [效应区域]|XPHB|光环}中被减半。散塔林会成员可以指定不受此光环影响的生物。"
+						"在源自散提拉军班恩圣武士的10尺{@variantrule 光环 [效应区域]|XPHB|光环}内的生物，其速度在该{@variantrule 光环 [效应区域]|XPHB|光环}中被减半。散提拉军班恩圣武士可以指定不受此光环影响的生物。"
 					]
 				}
 			],
@@ -6274,19 +6274,19 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"散塔林会成员进行三次攻击，以任意组合使用厄运之刃或压迫射线。它可以将其中的一次攻击替换为一次施法。"
+						"散提拉军班恩圣武士使用毁灭魔剑或威压射线发动共计三次攻击。它可以将其中一次攻击替换为使用一次施法。"
 					]
 				},
 				{
 					"ENG_name": "Dooming Blade",
-					"name": "厄兆刃",
+					"name": "毁灭魔剑",
 					"entries": [
 						"{@atkr m} {@hit 5}，触及5尺。{@h}7（{@damage 1d8 + 3}）钝击伤害外加7（{@damage 2d6}）暗蚀伤害。"
 					]
 				},
 				{
 					"ENG_name": "Oppressive Ray",
-					"name": "压迫射线",
+					"name": "威压射线",
 					"entries": [
 						"{@atkr r} {@hit 5}，射程 90 尺。{@h}16（{@damage 3d10}）心灵伤害。"
 					]
@@ -6329,7 +6329,7 @@
 		},
 		{
 			"ENG_name": "Zhentilar Soldier",
-			"name": "散塔林会士兵",
+			"name": "散提拉军士兵",
 			"type": "humanoid",
 			"source": "FRAiF",
 			"page": 285,
@@ -6380,7 +6380,7 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"散塔林会成员进行两次攻击，以任意组合使用短剑或手铳。它可以替换一次攻击为使用敲击术。"
+						"散提拉军士兵使用短剑或手铳发动共计两次攻击。其可以将其中一次攻击替换为使用一次击倒。"
 					]
 				},
 				{
@@ -6401,7 +6401,7 @@
 					"ENG_name": "Knock Down",
 					"name": "击倒",
 					"entries": [
-						"{@actSave str} {@dc 12}，该散塔林会成员能看见的5尺内的一个生物。{@actSaveFail} 4（{@damage 1d4 + 2}）钝击伤害。如果目标是中型或更小的生物，它将处于{@condition 倒地|XPHB}状态。"
+						"{@actSave str} {@dc 12}，该散提拉军士兵能看见的5尺内的一个生物。{@actSaveFail} 4（{@damage 1d4 + 2}）钝击伤害。如果目标是中型或更小的生物，它将处于{@condition 倒地|XPHB}状态。"
 					]
 				}
 			],
@@ -6560,9 +6560,9 @@
 			"trait": [
 				{
 					"ENG_name": "Chardalyn Sense",
-					"name": "查达林感知",
+					"name": "查达林通感",
 					"entries": [
-						"Zlan能感知到100英里内任何接触查达林碎片者的情绪。"
+						"兹兰能感知到100英里内任何接触查达林碎片者的情绪。"
 					]
 				},
 				{
@@ -6581,7 +6581,7 @@
 				},
 				{
 					"ENG_name": "Next of the Seven (6/Year)",
-					"name": "七之次席（6次/年）",
+					"name": "七骸再铸（6/年）",
 					"entries": [
 						"如果兹兰在至少4英寸长的一块查达林碎片100英里内死亡，它会在{@dice 1d10}天内从该查达林碎片中重塑，恢复所有{@variantrule 生命值|XPHB}。新身体出现在最靠近查达林碎片的未占据空间中，身体中的另一个巫妖意识会夺取对身体的心灵控制。"
 					]
@@ -6592,7 +6592,7 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"兹兰进行三次攻击，以任意组合使用猛击或迷惑飞矢。它可以用一次施法替换两次攻击。"
+						"兹兰使用猛击或迷惑箭发动共计三次攻击。它可以用一次施法替换两次攻击。"
 					]
 				},
 				{
@@ -6604,7 +6604,7 @@
 				},
 				{
 					"ENG_name": "Bewildering Bolt",
-					"name": "迷乱弩矢",
+					"name": "迷惑箭",
 					"entries": [
 						"{@atkr r} {@hit 11}，射程120尺{@h}27（{@damage 4d10 + 5}）心灵伤害，且目标获得{@condition 魅惑|XPHB}状态直到其下一回合结束。"
 					]
@@ -6615,12 +6615,12 @@
 					"ENG_name": "Retaliation",
 					"name": "报偿",
 					"entries": [
-						"兹兰发动一次猛击或迷惑飞矢攻击。"
+						"兹兰发动一次猛击或迷惑箭攻击。"
 					]
 				},
 				{
 					"ENG_name": "Stoke Paranoia",
-					"name": "煽动被害妄想",
+					"name": "煽动猜疑",
 					"entries": [
 						"{@actSave wis} {@dc 19}，兹兰30尺内能看见的一个生物（如果目标持有或穿戴查达林则带有{@variantrule 劣势|XPHB}）。{@actSaveFail} 27（{@damage 6d8}）心灵伤害且目标获得{@condition 魅惑|XPHB}状态持续1分钟或直到兹兰死亡。当处于{@condition 魅惑|XPHB}状态时，目标不会作为任何生物的盟友行动。{@actSaveSuccess} 仅伤害减半。{@actSaveSuccessOrFail} 兹兰直到其下个回合开始前不能再次使用此动作。"
 					]

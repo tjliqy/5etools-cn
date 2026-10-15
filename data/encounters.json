@@ -1104,7 +1104,7 @@
 						{
 							"min": 84,
 							"max": 84,
-							"result": "{@dice 1d4} {@creature 食人魔||食人魔} 或 {@dice 1d4} {@creature 迈罗人鱼}"
+							"result": "{@dice 1d4} {@creature 食人魔||食人魔} 或 {@dice 1d4} {@creature 梅洛}"
 						},
 						{
 							"min": 85,
@@ -1144,7 +1144,7 @@
 						{
 							"min": 93,
 							"max": 94,
-							"result": "1 {@creature 鲨华女祭司}与{@dice 1d3} {@creature 迈罗人鱼}和{@dice 2d6} {@creature 鲨华鱼人}"
+							"result": "1 {@creature 鲨华女祭司}与{@dice 1d3} {@creature 梅洛}和{@dice 2d6} {@creature 鲨华鱼人}"
 						},
 						{
 							"min": 95,
@@ -1276,7 +1276,7 @@
 						{
 							"min": 66,
 							"max": 70,
-							"result": "{@dice 1d4 + 3} {@creature 迈罗人鱼}"
+							"result": "{@dice 1d4 + 3} {@creature 梅洛}"
 						},
 						{
 							"min": 71,
@@ -4327,7 +4327,7 @@
 						{
 							"min": 11,
 							"max": 11,
-							"result": "一个{@item 机巧奇具|FRAiF}（家用）追逐逃跑的宠物。"
+							"result": "一个{@item 机巧奇具|FRAiF}（家用型）追逐逃跑的宠物。"
 						},
 						{
 							"min": 12,
@@ -4352,12 +4352,12 @@
 						{
 							"min": 16,
 							"max": 16,
-							"result": "一个{@item 机巧奇具|FRAiF}（飞行）迷失了方向，掉落在队伍的路径上。"
+							"result": "一个{@item 机巧奇具|FRAiF}（飞空型）迷失了方向，掉落在队伍的路径上。"
 						},
 						{
 							"min": 17,
 							"max": 17,
-							"result": "一名使用{@item 机巧奇具|FRAiF}（机动性）的{@creature 魔法师|XMM}正在与商人交易稀有法术材料。"
+							"result": "一名使用{@item 机巧奇具|FRAiF}（移动型）的{@creature 魔法师|XMM}正在与商人交易稀有法术材料。"
 						},
 						{
 							"min": 18,
@@ -4367,7 +4367,7 @@
 						{
 							"min": 19,
 							"max": 19,
-							"result": "德扬·卡亚指导六名有抱负的发明家学习最新的{@item 机巧奇具|FRAiF|机巧奇具}。"
+							"result": "德莉安·卡亚指导六名有抱负的发明家学习最新的{@item 机巧奇具|FRAiF|机巧奇具}。"
 						},
 						{
 							"min": 20,
@@ -4424,7 +4424,7 @@
 						{
 							"min": 9,
 							"max": 9,
-							"result": "一个由{@book 摩安多的|FRAiF|2|莫安德尔，腐朽之神}腐败所创造的{@creature 蔓生怪|XMM}会攻击它看到的任何活物。"
+							"result": "一个由{@book 摩安多的|FRAiF|2|摩安多，腐朽之神}腐败所创造的{@creature 蔓生怪|XMM}会攻击它看到的任何活物。"
 						},
 						{
 							"min": 10,
@@ -4449,7 +4449,7 @@
 						{
 							"min": 14,
 							"max": 14,
-							"result": "古老的地下墓穴现在是一个{@creature 食尸鬼|XMM|食尸鬼们}和{@dice 2d6}个{@creature 妖鬼坟语者|XMM}的居所。"
+							"result": "古老的地下墓穴现在是一个{@creature 妖鬼坟语者|XMM}和{@dice 2d6}个{@creature 食尸鬼|XMM|食尸鬼们}的居所。"
 						},
 						{
 							"min": 15,
@@ -4665,7 +4665,7 @@
 						{
 							"min": 3,
 							"max": 3,
-							"result": "怪影杀手之光在黑夜中闪烁，来自被雪掩埋的巨人语定居点废墟。"
+							"result": "怪异的光在黑夜中闪烁，来自被雪掩埋的巨人定居点废墟。"
 						},
 						{
 							"min": 4,
@@ -7481,7 +7481,7 @@
 						{
 							"min": 52,
 							"max": 54,
-							"result": "2只{@creature 迈罗人鱼}"
+							"result": "2只{@creature 梅洛}"
 						},
 						{
 							"min": 55,
@@ -7598,7 +7598,7 @@
 						{
 							"min": 48,
 							"max": 49,
-							"result": "{@dice 2d4} 个{@creature 迈罗人鱼}"
+							"result": "{@dice 2d4} 个{@creature 梅洛}"
 						},
 						{
 							"min": 50,
@@ -7735,7 +7735,7 @@
 						{
 							"min": 51,
 							"max": 53,
-							"result": "{@dice 3d6} 个{@creature 迈罗人鱼}"
+							"result": "{@dice 3d6} 个{@creature 梅洛}"
 						},
 						{
 							"min": 54,
@@ -7789,12 +7789,12 @@
 						{
 							"min": 9,
 							"max": 16,
-							"result": "1 {@creature 单元冢} 变得叛逆，寻求多元宇宙的意义"
+							"result": "1 只离群的{@creature 单元冢}，正在寻找多元宇宙的意义"
 						},
 						{
 							"min": 17,
 							"max": 24,
-							"result": "{@dice 1d6} {@creature 日光萤集群|MPP|日光蝇群}*"
+							"result": "{@dice 1d6} {@creature 日光萤集群|MPP|日光萤集群}*"
 						},
 						{
 							"min": 25,
@@ -7804,7 +7804,7 @@
 						{
 							"min": 32,
 							"max": 38,
-							"result": "1 个{@creature 吱语颅鼠集群|MPP|吱语颅鼠集群}。* 掷一个骰子。如果数字是偶数，这些颅骨鼠开设了一家小店。如果数字是奇数，这些颅骨鼠不仅开设了一家小店，还是骗子。"
+							"result": "1 个{@creature 吱语颅鼠集群|MPP|吱语颅鼠集群}。* 掷一颗骰子。如果结果为偶数，这些吱语颅鼠开设了一家微型商店。如果结果为奇数，这些吱语颅鼠也开设了一家微型商店，但会骗钱。"
 						},
 						{
 							"min": 39,
@@ -7814,7 +7814,7 @@
 						{
 							"min": 47,
 							"max": 55,
-							"result": "{@dice 1d4} {@creature 屠悯会·嗜血猎手|MPP|屠悯会·嗜血猎手}* 追踪一位位面罪犯"
+							"result": "{@dice 1d4} {@creature 屠悯会·嗜血猎手|MPP|屠悯会·嗜血猎手}* 正在追捕一位位面逃犯"
 						},
 						{
 							"min": 56,
@@ -7824,7 +7824,7 @@
 						{
 							"min": 63,
 							"max": 72,
-							"result": "一个类似裂缝的传送门，连接到一个随机的位面"
+							"result": "一个连接着某个随机位面的裂缝状传送门"
 						},
 						{
 							"min": 73,
@@ -7844,12 +7844,12 @@
 						{
 							"min": 91,
 							"max": 97,
-							"result": "角色们几小时前经过的一个地方"
+							"result": "角色们几个小时前曾路过的一个地点"
 						},
 						{
 							"min": 98,
 							"max": 100,
-							"result": "1个混乱的{@creature 至高天}寻求同伴去执行一项伟大的任务"
+							"result": "1 个混乱阵营的{@creature 至高天}，正在寻找同伴以进行一场大远征"
 						}
 					]
 				},
@@ -7860,12 +7860,12 @@
 						{
 							"min": 1,
 							"max": 7,
-							"result": "{@dice 1d6} {@creature 诡脸飞首|MPP|瓦尔古伊尔的倒影}*"
+							"result": "{@dice 1d6} {@creature 诡脸飞首|MPP|诡脸飞首}*"
 						},
 						{
 							"min": 8,
 							"max": 16,
-							"result": "1 {@creature 夜鬼婆} 出售 {@dice 2d6} {@creature 幼虫魔|DMG|幼虫魔们}（见{@book 城主指南|DMG}）"
+							"result": "1 {@creature 夜鬼婆} 出售 {@dice 2d6} {@creature 幼虫魔|DMG|幼虫魔}（见{@book 城主指南|DMG}）"
 						},
 						{
 							"min": 17,
@@ -7875,12 +7875,12 @@
 						{
 							"min": 24,
 							"max": 31,
-							"result": "一股由{@dice 3d10} {@creature 大地精||大地精}和1个{@creature 大地精}{@creature 督军|MPMM}组成的势力"
+							"result": "一支由{@dice 3d10} {@creature 大地精||大地精}和1位{@creature 大地精}{@creature 督军|MPMM|军阀}组成的军队"
 						},
 						{
 							"min": 32,
 							"max": 38,
-							"result": "1 {@creature 鬣狗人·耶诺古毒牙} 和 {@dice 2d6} {@creature 鬣狗人||鬣狗人们}"
+							"result": "1 {@creature 鬣狗人·耶诺古毒牙} 和 {@dice 2d6} {@creature 鬣狗人||鬣狗人}"
 						},
 						{
 							"min": 39,
@@ -7890,17 +7890,17 @@
 						{
 							"min": 48,
 							"max": 53,
-							"result": "1 {@creature 暗织蛛|MPP}* 从其阴暗的巢穴中召唤"
+							"result": "1 {@creature 暗织蛛|MPP}* 从其暗影巢穴中发出呼唤"
 						},
 						{
 							"min": 54,
 							"max": 63,
-							"result": "一个通往低层位面的传送门，低语着邪恶的承诺"
+							"result": "一个低语着邪恶昭示的通往下层位面的传送门"
 						},
 						{
 							"min": 64,
 							"max": 69,
-							"result": "1 {@creature 煞托魔|MPP}* 寻找它失去的囚犯"
+							"result": "1 {@creature 煞托魔|MPP}* 正在寻找其走失的囚犯"
 						},
 						{
 							"min": 70,
@@ -7915,17 +7915,17 @@
 						{
 							"min": 85,
 							"max": 91,
-							"result": "1 位在邪恶行走要塞中的{@creature 巫妖}"
+							"result": "1 位在不祥的移动要塞中的{@creature 巫妖}"
 						},
 						{
 							"min": 92,
 							"max": 98,
-							"result": "血战战场，1 {@creature 六臂蛇魔}将军带领恶魔对抗1 {@creature 冰魔}将军及其恶魔"
+							"result": "一处血战战场，1 {@creature 六臂蛇魔}将军率领恶魔对抗1 {@creature 冰魔}将军及其魔鬼"
 						},
 						{
 							"min": 99,
 							"max": 100,
-							"result": "1 {@creature 贝纳罗斯魔|MPP}* 持有一件邪恶的魔法物品"
+							"result": "1 {@creature 贝纳罗斯魔|MPP}* 持有一件不祥的魔法物品"
 						}
 					]
 				},
@@ -7956,12 +7956,12 @@
 						{
 							"min": 29,
 							"max": 35,
-							"result": "{@dice 1d4} {@creature 獒首神使|MPP|獒首神使},* 每个都带有一只{@creature 獒犬}追踪犬"
+							"result": "{@dice 1d4} {@creature 獒首神使|MPP|獒首神使}*，每个都带着一只用于追踪的{@creature 獒犬}"
 						},
 						{
 							"min": 36,
 							"max": 41,
-							"result": "一群友好的觉醒{@creature 蝙蝠群}"
+							"result": "一个友善的、受启蒙的{@creature 蝙蝠群}"
 						},
 						{
 							"min": 42,
@@ -7971,12 +7971,12 @@
 						{
 							"min": 49,
 							"max": 56,
-							"result": "1个{@creature 德鲁伊}正在研究一个由数千颗坦桑石水晶制成的静止魔法动物雕塑"
+							"result": "1个{@creature 德鲁伊}正在研究一个由数千颗坦桑石水晶制成的惰性魔法动物雕塑"
 						},
 						{
 							"min": 57,
 							"max": 63,
-							"result": "1 个由仙人掌、珊瑚或蘑菇组成的{@creature 树人}"
+							"result": "1 个由仙人球、珊瑚或蘑菇组成的{@creature 树人}"
 						},
 						{
 							"min": 64,
@@ -7996,12 +7996,12 @@
 						{
 							"min": 88,
 							"max": 95,
-							"result": "1 {@creature 位面显化|MPP|位面显化（天族形态）}"
+							"result": "1 {@creature 位面显化|MPP|位面显化（天界形态）}"
 						},
 						{
 							"min": 96,
 							"max": 100,
-							"result": "1 {@creature 炽天神侍} 被派来赋予一个角色一个{@book 祝福|DMG|7|祝福}（见{@book 城主指南|DMG}）"
+							"result": "1 位{@creature 炽天神侍}被派来赐予一名角色{@book 祝福|DMG|7|祝福}（见{@book 城主指南|DMG}）"
 						}
 					]
 				},
@@ -8012,12 +8012,12 @@
 						{
 							"min": 1,
 							"max": 6,
-							"result": "一位守护通往危险位面的门户的{@creature 卫戍神使|MPP}*"
+							"result": "1 位{@creature 卫戍神使|MPP}*，守卫着通往某个危险位面的传送门"
 						},
 						{
 							"min": 7,
 							"max": 13,
-							"result": "1 {@creature 小魔鬼} 声称代表一位大恶魔"
+							"result": "1 {@creature 小魔鬼}，声称在代表某只大魔鬼讲话"
 						},
 						{
 							"min": 14,
@@ -8032,12 +8032,12 @@
 						{
 							"min": 30,
 							"max": 36,
-							"result": "1 {@creature 呋噜} {@book 祈并者|MPP|0|祈并者} 对学习位面感到兴奋"
+							"result": "1 {@creature 呋噜} {@book 祈并者|MPP|0|祈并者} 对了解其他位面感到兴奋"
 						},
 						{
 							"min": 37,
 							"max": 42,
-							"result": "1 {@creature 十次魔冢|MPP}* 和 {@dice 2d6} {@creature 四元冢||四元冢} 正在返回机械境"
+							"result": "1 {@creature 十次魔冢|MPP}* 和 {@dice 2d6} {@creature 四元冢||四元冢} 正在返回机械境的路上"
 						},
 						{
 							"min": 43,
@@ -8047,17 +8047,17 @@
 						{
 							"min": 49,
 							"max": 54,
-							"result": "1 {@creature 女面斯芬克斯} 守护着秘密感知"
+							"result": "1 {@creature 女面斯芬克斯} 守护着秘密知识"
 						},
 						{
 							"min": 55,
 							"max": 61,
-							"result": "{@dice 1d6} {@creature 骑士||骑士} 在跨越位面的任务中"
+							"result": "{@dice 1d6} {@creature 骑士||骑士} 正在进行一场跨越位面的远征"
 						},
 						{
 							"min": 62,
 							"max": 69,
-							"result": "1个{@creature 九次魔冢|MPP}* 在一个看起来像巨大魔冢的行走要塞中"
+							"result": "1个{@creature 九次魔冢|MPP}* 在一个看上去像巨型魔冢的移动要塞中"
 						},
 						{
 							"min": 70,
@@ -8067,7 +8067,7 @@
 						{
 							"min": 77,
 							"max": 84,
-							"result": "1 {@creature 心灵之眼·造物魔匠|MPP}* 测试一项新发明"
+							"result": "1 {@creature 心灵之眼·造物魔匠|MPP}* 正在测试一项新发明"
 						},
 						{
 							"min": 85,
@@ -8077,12 +8077,12 @@
 						{
 							"min": 91,
 							"max": 97,
-							"result": "1 {@creature 深狱炼魔} 声称代表一位大恶魔"
+							"result": "1 {@creature 深狱炼魔}，声称在代表某只大魔鬼讲话"
 						},
 						{
 							"min": 98,
 							"max": 100,
-							"result": "1个{@creature 六次魔冢|MPP}* 带领着数百个低级魔冢的行进"
+							"result": "1 个{@creature 六次魔冢|MPP}* 正率领着一支由数百个低级魔冢组成的大军"
 						}
 					]
 				},
@@ -8103,12 +8103,12 @@
 						{
 							"min": 16,
 							"max": 22,
-							"result": "{@dice 1d4} 正在尝试越来越大胆专长的{@creature 感觉团·缪斯乐师|MPP|感觉团·缪斯乐师}*"
+							"result": "{@dice 1d4} {@creature 感觉团·缪斯乐师|MPP|感觉团·缪斯乐师}* 正在着手越来越大胆的技艺"
 						},
 						{
 							"min": 23,
 							"max": 31,
-							"result": "1 {@creature 烟魔蝠} 携带着大法师对手之间的挑战"
+							"result": "1 {@creature 烟魔蝠} 在大法师对手之间传递挑战"
 						},
 						{
 							"min": 32,
@@ -8118,7 +8118,7 @@
 						{
 							"min": 39,
 							"max": 46,
-							"result": "{@dice 2d12} {@creature 平民} {@book 祈并者|MPP|0|祈并者} 逃离 {@dice 1d4} {@creature 法拉斯特魔|MPP|法拉斯特魔}* 和 1 {@creature 克努巴尔魔|MPP}*"
+							"result": "{@dice 2d12} {@creature 平民} {@book 祈并者|MPP|0|祈并者} 正在躲避 {@dice 1d4} {@creature 法拉斯特魔|MPP|法拉斯特魔}* 和 1 {@creature 克努巴尔魔|MPP}*"
 						},
 						{
 							"min": 47,
@@ -8153,12 +8153,12 @@
 						{
 							"min": 93,
 							"max": 98,
-							"result": "1个自称是著名位面探险家Morte的{@creature 燃焰之颅}"
+							"result": "1 个自称是著名位面探险家莫提的{@creature 燃焰之颅}"
 						},
 						{
 							"min": 99,
 							"max": 100,
-							"result": "1 {@creature 远古时光龙|MPP}* (50%的几率时间龙来自过去，50%的几率它来自未来)"
+							"result": "1 {@creature 远古时光龙|MPP}*（该时光龙有50%概率来自过去，50%概率来自未来）"
 						}
 					]
 				}
@@ -10946,7 +10946,7 @@
 						{
 							"min": 11,
 							"max": 11,
-							"result": "带敌意的{@creature 迈罗人鱼}（沿岸区）或者{@creature 鲨华鱼人}（深水区）巡逻队"
+							"result": "带敌意的{@creature 梅洛}（沿岸区）或者{@creature 鲨华鱼人}（深水区）巡逻队"
 						},
 						{
 							"min": 12,
@@ -11066,7 +11066,7 @@
 						{
 							"min": 51,
 							"max": 55,
-							"result": "1 {@creature 迈罗人鱼}"
+							"result": "1 {@creature 梅洛}"
 						},
 						{
 							"min": 56,
@@ -11213,7 +11213,7 @@
 						{
 							"min": 71,
 							"max": 75,
-							"result": "{@dice 1d10} {@creature 迈罗人鱼}"
+							"result": "{@dice 1d10} {@creature 梅洛}"
 						},
 						{
 							"min": 76,
