@@ -108,11 +108,11 @@ class QueueIntegrationTests(unittest.TestCase):
         for claim in (first, second):
             subprocess.run(["git", "-C", str(self.repo), "worktree", "remove", "--force", claim["worktree"]], check=True)
 
-    def test_claim_prioritizes_untranslated_homebrew_dependencies(self):
+    def test_claim_waits_for_untranslated_homebrew_dependencies(self):
         files = {
             "A; Main.json": {"sources": [{"json": "Main"}], "dependencies": {"item": ["Dep", "Official", "Done"]}},
-            "B; Dep.json": {"sources": [{"json": "Dep"}]},
-            "C; Other.json": {"sources": [{"json": "Other"}]},
+            "Z; Dep.json": {"sources": [{"json": "Dep"}]},
+            "B; Other.json": {"sources": [{"json": "Other"}]},
             "D; Done.json": {"sources": [{"json": "Done"}]},
         }
         for name, meta in files.items():
@@ -120,22 +120,33 @@ class QueueIntegrationTests(unittest.TestCase):
         generated = self.source / "_generated"
         generated.mkdir()
         (generated / "index-sources.json").write_text(json.dumps({
-            "Main": "collection/A; Main.json", "Dep": "collection/B; Dep.json",
-            "Other": "collection/C; Other.json", "Done": "collection/D; Done.json",
+            "Main": "collection/A; Main.json", "Dep": "collection/Z; Dep.json",
+            "Other": "collection/B; Other.json", "Done": "collection/D; Done.json",
         }), encoding="utf-8")
         target_generated = self.repo / "_generated"
         target_generated.mkdir()
         (target_generated / "index-sources.json").write_text(json.dumps({"Done": "collection/D; Done.json"}), encoding="utf-8")
         self._queue("sync")
         first = self._queue("claim", "--worker-id", "worker-a")
-        self.assertEqual(first["source"], str(self.source / "collection/A; Main.json"))
+        self.assertEqual(first["source"], str(self.source / "collection/Z; Dep.json"))
         with sqlite3.connect(self.database) as connection:
             priorities = dict(connection.execute("SELECT source_path, priority FROM tasks"))
-        self.assertGreater(priorities["collection/B; Dep.json"], priorities["collection/C; Other.json"])
+        self.assertGreater(priorities["collection/Z; Dep.json"], priorities["collection/B; Other.json"])
         self.assertEqual(priorities["collection/D; Done.json"], 0)
+        with sqlite3.connect(self.database) as connection:
+            connection.execute("UPDATE tasks SET status = 'ready' WHERE source_path = 'collection/Z; Dep.json'")
         second = self._queue("claim", "--worker-id", "worker-b")
-        self.assertEqual(second["source"], str(self.source / "collection/B; Dep.json"))
-        for claim in (first, second):
+        self.assertEqual(second["source"], str(self.source / "collection/B; Other.json"))
+        third = self._queue("claim", "--worker-id", "worker-c")
+        self.assertEqual(third["source"], str(self.source / "collection/D; Done.json"))
+        waiting = self._queue("claim", "--worker-id", "worker-waiting", expected=3)
+        self.assertEqual(waiting["status"], "waiting_dependencies")
+        self.assertEqual(waiting["sources"], ["collection/A; Main.json"])
+        with sqlite3.connect(self.database) as connection:
+            connection.execute("UPDATE tasks SET status = 'merged' WHERE source_path = 'collection/Z; Dep.json'")
+        fourth = self._queue("claim", "--worker-id", "worker-d")
+        self.assertEqual(fourth["source"], str(self.source / "collection/A; Main.json"))
+        for claim in (first, second, third, fourth):
             subprocess.run(["git", "-C", str(self.repo), "worktree", "remove", "--force", claim["worktree"]], check=True)
 
     def test_sync_routes_large_sources_to_chunk_planning(self):

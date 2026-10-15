@@ -137,6 +137,13 @@ def is_machine_tag_field(job) -> bool:
         # Variable formulas ("10 + PB", "1d6 − 1", "int 20") contain spaces/operators but
         # are never translatable display text.
         return True
+    if field == 0 and tag == "itemProperty" and MACHINE_TOKEN.fullmatch(job.en_str or ""):
+        # itemProperty tags address entities by abbreviation in pipe field 0
+        # ({@itemProperty GC:VSS-Re|ValdaGunslinger|弹容}); the renderer resolves
+        # them via DataUtil.itemProperty.unpackUid into an abbreviation index, so
+        # field 0 is a machine routing key that stays byte-identical English across
+        # the localized repo (200+ tags in data/ and homebrew keep Latin keys).
+        return True
     if field == 0 and tag not in VARIABLE_TAGS:
         return False
     if field >= 1 and tag in ROUTE_TAG_FIELDS:

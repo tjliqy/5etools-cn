@@ -174,13 +174,14 @@ def homebrew_identity(path: Path) -> set[str]:
     return {item["json"] for item in sources if isinstance(item, dict) and isinstance(item.get("json"), str)}
 
 
-def prioritize_untranslated_dependencies(
-    connection: sqlite3.Connection, source: Path, source_root: Path, target_repo: Path,
+def unfinished_dependencies(
+    connection: sqlite3.Connection, source_path: str, source_root: Path, target_repo: Path,
 ) -> list[str]:
-    """Move queued homebrew dependencies ahead of other claimable work."""
+    """Return queued parent paths which must be integrated before this source."""
+    source = source_root / source_path
     try:
-        meta = json.loads(source.read_text(encoding="utf-8-sig")).get("_meta", {})
-        dependencies = meta.get("dependencies", {})
+        data = json.loads(source.read_text(encoding="utf-8-sig"))
+        dependencies = data.get("_meta", {}).get("dependencies", {})
         english_index = json.loads((source_root / "_generated/index-sources.json").read_text(encoding="utf-8"))
     except (OSError, UnicodeError, json.JSONDecodeError, AttributeError):
         return []
@@ -192,41 +193,32 @@ def prioritize_untranslated_dependencies(
         translated_index = {}
     if not isinstance(translated_index, dict):
         translated_index = {}
-
-    sources = {code for values in dependencies.values() if isinstance(values, list)
-               for code in values if isinstance(code, str)}
-    paths = {english_index[code] for code in sources
-             if isinstance(english_index.get(code), str) and code not in translated_index}
-    paths.discard(source.relative_to(source_root).as_posix())
+    codes = {code for values in dependencies.values() if isinstance(values, list)
+             for code in values if isinstance(code, str) and code not in translated_index}
+    paths = {english_index[code] for code in codes if isinstance(english_index.get(code), str)}
+    paths.discard(source_path)
     if not paths:
         return []
-    connection.execute("BEGIN IMMEDIATE")
-    try:
-        top = connection.execute(
-            "SELECT MAX(priority) AS top FROM tasks WHERE status IN ('pending', 'failed')"
-        ).fetchone()["top"] or 0
-        raised = []
-        for path in sorted(paths):
-            row = connection.execute(
-                "SELECT priority, status FROM tasks WHERE source_path = ?", (path,)
-            ).fetchone()
-            if row is None or row["status"] not in {"pending", "failed"}:
-                continue
-            top = max(top, row["priority"]) + 1
-            connection.execute(
-                "UPDATE tasks SET priority = ?, retry_after = NULL, updated_at = ? WHERE source_path = ?",
-                (top, stamp(), path),
-            )
-            event(connection, path, "priority_changed", {
-                "mode": "dependency", "priority_before": row["priority"], "priority_after": top,
-                "requested_by": source.relative_to(source_root).as_posix(),
-            })
-            raised.append(path)
-        connection.execute("COMMIT")
-        return raised
-    except Exception:
-        connection.execute("ROLLBACK")
-        raise
+    rows = connection.execute(
+        f"SELECT source_path, status FROM tasks WHERE source_path IN ({','.join('?' for _ in paths)})",
+        sorted(paths),
+    ).fetchall()
+    return sorted(row["source_path"] for row in rows if row["status"] != "merged")
+
+
+def raise_dependency_priorities(connection: sqlite3.Connection, child: str, parents: list[str]) -> None:
+    top = connection.execute("SELECT MAX(priority) AS top FROM tasks").fetchone()["top"] or 0
+    for path in parents:
+        row = connection.execute("SELECT status, priority FROM tasks WHERE source_path = ?", (path,)).fetchone()
+        if row is None or row["status"] not in {"pending", "failed", "needs_chunking", "chunked"}:
+            continue
+        top += 1
+        connection.execute("UPDATE tasks SET priority = ?, retry_after = NULL, updated_at = ? WHERE source_path = ?",
+                           (top, stamp(), path))
+        event(connection, path, "priority_changed", {
+            "mode": "dependency", "priority_before": row["priority"], "priority_after": top,
+            "requested_by": child,
+        })
 
 
 def find_existing_target(source: Path, source_relative: str, target_root: Path) -> str | None:
@@ -463,15 +455,28 @@ def command_claim(args) -> int:
     connection = connect(args.database)
     current = stamp()
     connection.execute("BEGIN IMMEDIATE")
-    row = connection.execute(
-        """SELECT * FROM tasks
-           WHERE status = 'pending'
-              OR (status = 'failed' AND worktree_path IS NULL AND attempts < ? AND (retry_after IS NULL OR retry_after <= ?))
-           ORDER BY priority DESC, attempts ASC, source_path ASC LIMIT 1""",
-        (args.max_attempts, current),
-    ).fetchone()
+    eligible_sql = """SELECT * FROM tasks
+       WHERE status = 'pending'
+          OR (status = 'failed' AND worktree_path IS NULL AND attempts < ? AND (retry_after IS NULL OR retry_after <= ?))
+       ORDER BY priority DESC, attempts ASC, source_path ASC"""
+    row = None
+    skipped = set()
+    while True:
+        candidates = connection.execute(eligible_sql, (args.max_attempts, current)).fetchall()
+        candidate = next((item for item in candidates if item["source_path"] not in skipped), None)
+        if candidate is None:
+            break
+        parents = unfinished_dependencies(connection, candidate["source_path"], source_root, target_repo)
+        if parents:
+            raise_dependency_priorities(connection, candidate["source_path"], parents)
+            skipped.add(candidate["source_path"])
+            continue
+        row = candidate
+        break
     if row is None:
         connection.execute("COMMIT")
+        if skipped:
+            return emit({"ok": True, "status": "waiting_dependencies", "sources": sorted(skipped)}, 3)
         return emit({"ok": True, "status": "empty", "message": "EMPTY_QUEUE"}, 3)
     lease_id = uuid.uuid4().hex
     branch = f"auto-translate/{lease_id[:12]}"
@@ -493,7 +498,6 @@ def command_claim(args) -> int:
     if not source.is_file() or hash_file(source) != row["source_hash"]:
         release_failed_claim(connection, row["source_path"], lease_id, "source missing or changed after sync")
         return emit({"ok": False, "error": "source missing or changed; run sync"}, 2)
-    prioritize_untranslated_dependencies(connection, source, source_root, target_repo)
     if not args.no_worktree:
         try:
             if worktree.exists():

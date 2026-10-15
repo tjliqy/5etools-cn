@@ -78,7 +78,7 @@ Both worker preflight and serial integration require a fully clean repository-te
 
 ## Priority control
 
-`claim` orders eligible tasks by `priority DESC, attempts ASC, source_path ASC`. After claiming a file, the coordinator checks its `_meta.dependencies` Source codes against the English `_generated/index-sources.json`. It raises queued dependency files missing from the Chinese source index above other claimable work, so later claims pick them first. The current worker still translates only its own claimed file.
+`claim` orders eligible tasks by `priority DESC, attempts ASC, source_path ASC`. Before leasing a file, the coordinator checks its `_meta.dependencies` Source codes against the English `_generated/index-sources.json`. If a referenced queued parent is absent from the Chinese index and has not reached `merged`, it raises the parent's priority and skips the child. The child becomes claimable after serial integration of the parent. Chunk planning and chunk claims use the same gate.
 
 To raise one file above the rest of the queue manually, run:
 
@@ -99,4 +99,4 @@ After an integration succeeds (including recovery of an integration already pres
 
 If `npm run build` normalizes only the selected target JSON during serial integration, the coordinator amends that normalization into the candidate commit and then subjects the resulting file to the structure, schema, and full repository-test gates. Any build change to another non-generated file remains a hard integration failure. The merge result reports whether normalization was absorbed in `build_target_absorbed`.
 
-By default `sync` routes source files larger than 250,000 bytes to `needs_chunking`, so ordinary workers cannot accidentally lease them. The scheduler should create their parent plans with `homebrew_translation_chunks.py plan`. Override `--chunk-threshold-bytes` only as an explicit deployment choice; use `0` to disable automatic routing.
+By default `sync` routes source files larger than 250,000 bytes to `needs_chunking`, so ordinary workers cannot accidentally lease them. The `homebrew-translation-worker` skill dispatches these tasks to `homebrew_translation_chunks.py plan` and raises the resulting parent's priority so later worker invocations claim its chunks first. Override `--chunk-threshold-bytes` only as an explicit deployment choice; use `0` to disable automatic routing.

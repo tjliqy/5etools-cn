@@ -192,6 +192,12 @@ def command_plan(args) -> int:
         return emit({"ok": False, "error": "queued source hash is stale; run sync first"}, 2)
     if task["status"] not in {"pending", "failed", "blocked", "needs_chunking"}:
         return emit({"ok": False, "error": f"task status cannot be chunked: {task['status']}"}, 2)
+    parents = queue.unfinished_dependencies(connection, source_path, source_root, target_repo)
+    if parents:
+        connection.execute("BEGIN IMMEDIATE")
+        queue.raise_dependency_priorities(connection, source_path, parents)
+        connection.execute("COMMIT")
+        return emit({"ok": True, "status": "waiting_dependencies", "dependencies": parents}, 3)
     if connection.execute("SELECT 1 FROM translation_parents WHERE source_path = ?", (source_path,)).fetchone():
         return emit({"ok": False, "error": "chunk plan already exists"}, 2)
     chunks = build_chunks(data, args.max_chunk_chars)
@@ -337,6 +343,11 @@ def command_claim_chunk(args) -> int:
     if parent is None or parent["status"] != "translating":
         connection.execute("ROLLBACK")
         return emit({"ok": False, "error": "active parent task not found"}, 2)
+    parents = queue.unfinished_dependencies(connection, args.source_path, args.source_root.resolve(), args.target_repo.resolve())
+    if parents:
+        queue.raise_dependency_priorities(connection, args.source_path, parents)
+        connection.execute("COMMIT")
+        return emit({"ok": True, "status": "waiting_dependencies", "dependencies": parents}, 3)
     source = args.source_root.resolve() / args.source_path
     if not source.is_file() or queue.hash_file(source) != parent["source_hash"]:
         connection.execute("ROLLBACK")

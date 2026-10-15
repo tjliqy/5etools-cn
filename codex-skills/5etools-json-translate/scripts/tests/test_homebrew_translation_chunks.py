@@ -64,6 +64,30 @@ class ChunkTranslationTests(unittest.TestCase):
         )
         return plan
 
+    def test_chunk_plan_and_claim_wait_for_parent_integration(self):
+        parent_relative = "adventure/B; Parent.json"
+        (self.source / parent_relative).write_text(json.dumps({"_meta": {"sources": [{"json": "Parent"}]}}), encoding="utf-8")
+        data = json.loads(self.source_file.read_text(encoding="utf-8"))
+        data["_meta"]["dependencies"] = {"adventure": ["Parent"]}
+        self.source_file.write_text(json.dumps(data), encoding="utf-8")
+        generated = self.source / "_generated"
+        generated.mkdir()
+        (generated / "index-sources.json").write_text(json.dumps({"Parent": parent_relative}), encoding="utf-8")
+        self._run(QUEUE, "sync")
+        waiting = self._run(CHUNKS, "plan", "--source-path", self.relative, expected=3)
+        self.assertEqual(waiting["dependencies"], [parent_relative])
+        with sqlite3.connect(self.database) as connection:
+            connection.execute("UPDATE tasks SET status = 'merged' WHERE source_path = ?", (parent_relative,))
+        self._run(CHUNKS, "plan", "--source-path", self.relative)
+        with sqlite3.connect(self.database) as connection:
+            connection.execute("UPDATE tasks SET status = 'ready' WHERE source_path = ?", (parent_relative,))
+        waiting = self._run(CHUNKS, "claim-chunk", "--source-path", self.relative, "--worker-id", "worker-a", expected=3)
+        self.assertEqual(waiting["dependencies"], [parent_relative])
+        with sqlite3.connect(self.database) as connection:
+            connection.execute("UPDATE tasks SET status = 'merged' WHERE source_path = ?", (parent_relative,))
+        claim = self._run(CHUNKS, "claim-chunk", "--source-path", self.relative, "--worker-id", "worker-a")
+        self.assertEqual(claim["status"], "leased")
+
     def _complete_claim(self, claim, chinese="海王"):
         worktree = Path(claim["worktree"])
         target = worktree / "adventure" / "A; 大型冒险.json"
