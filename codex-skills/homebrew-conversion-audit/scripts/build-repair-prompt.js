@@ -59,13 +59,13 @@ export function buildRepairPrompt (
 			});
 
 		default:
-			throw new Error(`No repair prompt builder implemented for entity kind "${entityKind}"`);
+			throw new Error(`未实现此条目类型的修复提示构建器："${entityKind}"`);
 	}
 }
 
 function _switchValidate ({entityKind, rawText}) {
-	if (!entityKind) throw new Error(`Missing "entityKind"`);
-	if (!rawText?.trim()) throw new Error(`Missing "rawText"`);
+	if (!entityKind) throw new Error(`缺少“entityKind”`);
+	if (!rawText?.trim()) throw new Error(`缺少“rawText”`);
 }
 
 function _buildMonsterRepairPrompt ({rawText, initialJson, warnings, validation}) {
@@ -145,5 +145,5 @@ function _buildGenericRepairPrompt ({entityKind, rawText, initialJson, warnings,
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
-	throw new Error(`This script is a library wrapper. Import and call buildRepairPrompt() from another script.`);
+	throw new Error(`此脚本是库封装。请从其他脚本导入并调用 buildRepairPrompt()。`);
 }

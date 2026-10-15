@@ -33,7 +33,7 @@ function _assertUserAdventureMetadata ({entities, published, storyline, version}
 
 	if (!missing.length) return;
 
-	throw new Error(`Missing required user-supplied adventure metadata: ${missing.join(", ")}. Ask the user what values to use before building the final JSON.`);
+	throw new Error(`缺少用户提供的冒险元数据：${missing.join(", ")}。请先询问用户所需的值，再构建最终 JSON。`);
 }
 
 async function _readJsonFile (filePath) {
@@ -429,18 +429,18 @@ async function _tryLoadValidatedLlmResult (
 
 async function _main () {
 	const inputPath = _getArgValue("--input");
-	if (!inputPath) throw new Error(`Missing --input <path>`);
+	if (!inputPath) throw new Error(`缺少 --input <路径>`);
 
 	const entityPlanPath = _getArgValue("--entity-plan");
-	if (!entityPlanPath) throw new Error(`Missing --entity-plan <path>`);
+	if (!entityPlanPath) throw new Error(`缺少 --entity-plan <路径>`);
 
 	const outputPath = _getArgValue("--output");
-	if (!outputPath) throw new Error(`Missing --output <path>`);
+	if (!outputPath) throw new Error(`缺少 --output <路径>`);
 
 	const formatHint = _getArgValue("--format");
 	const defaultKind = _getArgValue("--kind") || "adventureDocument";
 	const source = _getArgValue("--source");
-	if (!source) throw new Error(`Missing --source <json/source id>`);
+	if (!source) throw new Error(`缺少 --source <JSON/来源 ID>`);
 
 	const pageRaw = _getArgValue("--page");
 	const page = pageRaw ? Number(pageRaw) : 0;
@@ -585,7 +585,7 @@ async function _main () {
 			});
 
 			if (!accepted && _REQUIRED_CONVERTED_KINDS.has(entity.kind)) {
-				throw new Error(`Required embedded ${entity.kind} "${entity.title}" was not converted. Repair it and rerun with --llm-result-dir/--repair-dir before building the final collection.`);
+				throw new Error(`必需的嵌入条目 ${entity.kind}“${entity.title}”未转换。请修复后使用 --llm-result-dir 或 --repair-dir 重新运行，再构建最终合集。`);
 			}
 			continue;
 		}
@@ -595,7 +595,7 @@ async function _main () {
 			role: entity.role,
 			title: entity.title,
 			status: "skipped",
-			reason: "No handler implemented for this entity kind yet",
+			reason: "尚未实现此条目类型的处理器",
 			startBlockIndex: entity.startBlockIndex ?? null,
 			endBlockIndex: entity.endBlockIndex ?? null,
 		});

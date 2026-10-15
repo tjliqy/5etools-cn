@@ -8,12 +8,11 @@ function _getArgValue (flag) {
 }
 
 function _printUsage () {
-	process.stdout.write(`Usage:
+	process.stdout.write(`用法：
   node scripts/publish-homebrew-cli.js --input <path> --homebrew-dir <path> --author <name> --title <name>
 
-Publishes a validated homebrew JSON file into a 5etools project homebrew/
-directory using the filename format "Author; Title.json", then adds that
-filename to homebrew/index.json.
+将已验证的自制内容 JSON 发布到 5etools 项目的 homebrew/ 目录，
+文件名采用“作者; 标题.json”格式，并写入 homebrew/index.json。
 `);
 }
 
@@ -36,8 +35,8 @@ function _getPublishedFilename ({author, title}) {
 	const authorClean = _sanitizeFilePart(author);
 	const titleClean = _sanitizeFilePart(title);
 
-	if (!authorClean) throw new Error(`Expected non-empty --author`);
-	if (!titleClean) throw new Error(`Expected non-empty --title`);
+	if (!authorClean) throw new Error(`--author 不能为空`);
+	if (!titleClean) throw new Error(`--title 不能为空`);
 
 	return `${authorClean}; ${titleClean}.json`;
 }
@@ -65,10 +64,10 @@ async function _main () {
 	}
 
 	const input = _getArgValue("--input");
-	if (!input) throw new Error(`Missing --input <path>`);
+	if (!input) throw new Error(`缺少 --input <path>`);
 
 	const homebrewDir = _getArgValue("--homebrew-dir");
-	if (!homebrewDir) throw new Error(`Missing --homebrew-dir <path>`);
+	if (!homebrewDir) throw new Error(`缺少 --homebrew-dir <path>`);
 
 	const author = _getArgValue("--author");
 	const title = _getArgValue("--title");

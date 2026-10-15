@@ -68,43 +68,44 @@ export function generateReport (
 
 export function renderReportMarkdown (report) {
 	const lines = [
-		"# Conversion Report",
+		"# 转换报告",
 		"",
-		`Input: ${report.input.source_file || "(inline input)"}`,
-		`Format: ${report.input.format || "(unknown)"}`,
-		`Entity kind: ${report.entity.kind || "(unknown)"}`,
-		`Entity title: ${report.entity.title || "(untitled)"}`,
-		`Converter mode: ${report.entity.mode || "(unknown)"}`,
-		`Validation passed: ${report.validation.ok ? "yes" : "no"}`,
-		`LLM fallback used: ${report.llm.used ? "yes" : "no"}`,
+		`输入：${report.input.source_file || "（行内输入）"}`,
+		`格式：${report.input.format || "（未知）"}`,
+		`条目类型：${report.entity.kind || "（未知）"}`,
+		`条目标题：${report.entity.title || "（无标题）"}`,
+		`转换模式：${report.entity.mode || "（未知）"}`,
+		`验证通过：${report.validation.ok ? "是" : "否"}`,
+		`使用 LLM 兜底：${report.llm.used ? "是" : "否"}`,
 		"",
-		"## Summary",
-		`- Errors: ${report.validation.summary.errorCount}`,
-		`- Warnings: ${report.validation.summary.warnCount}`,
-		`- Infos: ${report.validation.summary.infoCount}`,
-		`- Converter warnings: ${report.converter.warningCount}`,
+		"## 摘要",
+		`- 错误：${report.validation.summary.errorCount}`,
+		`- 警告：${report.validation.summary.warnCount}`,
+		`- 信息：${report.validation.summary.infoCount}`,
+		`- 转换器警告：${report.converter.warningCount}`,
 	];
 
 	if (report.converter.error?.message) {
-		lines.push(`- Converter crash: ${report.converter.error.message}`);
+		lines.push(`- 转换器崩溃：${report.converter.error.message}`);
 	}
 
 	if (report.validation.issues?.length) {
-		lines.push("", "## Issues");
+		lines.push("", "## 问题");
 		report.validation.issues.forEach(issue => {
 			const fieldPart = issue.field ? ` (${issue.field})` : "";
-			lines.push(`- [${issue.severity}] ${issue.code}${fieldPart}: ${issue.message}`);
+			const severity = {error: "错误", warn: "警告", info: "信息"}[issue.severity] || issue.severity;
+			lines.push(`- [${severity}] ${issue.code}${fieldPart}: ${issue.message}`);
 		});
 	}
 
 	if (report.llm.used) {
 		lines.push("", "## LLM");
-		lines.push(`- Confidence: ${report.llm.confidence ?? "(unknown)"}`);
-		lines.push(`- Patched fields: ${report.llm.patchedFields?.length ? report.llm.patchedFields.join(", ") : "(none recorded)"}`);
+		lines.push(`- 置信度：${report.llm.confidence ?? "（未知）"}`);
+		lines.push(`- 修补字段：${report.llm.patchedFields?.length ? report.llm.patchedFields.join(", ") : "（无记录）"}`);
 	}
 
 	if (report.llm.manualReview?.length) {
-		lines.push("", "## Manual Review");
+		lines.push("", "## 人工复核");
 		report.llm.manualReview.forEach(note => lines.push(`- ${note}`));
 	}
 
@@ -112,5 +113,5 @@ export function renderReportMarkdown (report) {
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
-	throw new Error(`This script is a library wrapper. Import and call generateReport() from another script.`);
+	throw new Error(`此脚本是库封装。请从其他脚本导入并调用 generateReport()。`);
 }

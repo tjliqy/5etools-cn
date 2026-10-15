@@ -28,7 +28,7 @@ function _assertUserMetadata ({published, storyline, version}) {
 
 	if (!missing.length) return;
 
-	throw new Error(`Missing required user-supplied adventure metadata: ${missing.join(", ")}. Ask the user what values to use before building the final JSON.`);
+	throw new Error(`缺少用户提供的冒险元数据：${missing.join(", ")}。请先询问用户所需的值，再构建最终 JSON。`);
 }
 
 async function _mkdirpForFile (filePath) {
@@ -181,7 +181,7 @@ async function _convertEmbeddedEntities ({entities, source, page, mode, styleHin
 				endBlockIndex: entity.endBlockIndex ?? null,
 				report: audit.report,
 			});
-			throw new Error(`Required embedded ${entity.kind} "${entity.title}" was not converted. The adventure collection was not built.`);
+			throw new Error(`必需的嵌入条目 ${entity.kind}“${entity.title}”未转换，因此未构建冒险合集。`);
 		}
 
 		const finalJson = _finalizeEntityJson({
@@ -213,14 +213,14 @@ async function _convertEmbeddedEntities ({entities, source, page, mode, styleHin
 
 async function _main () {
 	const inputPath = _getArgValue("--input");
-	if (!inputPath) throw new Error(`Missing --input <path>`);
+	if (!inputPath) throw new Error(`缺少 --input <路径>`);
 
 	const outputPath = _getArgValue("--output");
-	if (!outputPath) throw new Error(`Missing --output <path>`);
+	if (!outputPath) throw new Error(`缺少 --output <路径>`);
 
 	const formatHint = _getArgValue("--format");
 	const source = _getArgValue("--source");
-	if (!source) throw new Error(`Missing --source <json/source id>`);
+	if (!source) throw new Error(`缺少 --source <JSON/来源 ID>`);
 
 	const name = _getArgValue("--name");
 	const engName = _getArgValue("--eng-name") || "";

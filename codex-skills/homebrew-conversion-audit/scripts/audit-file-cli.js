@@ -25,7 +25,7 @@ function _pickEntity ({entities, entityIndexRaw, entityRole, entityKind}) {
 
 	if (entityIndexRaw != null) {
 		const entity = entities[Number(entityIndexRaw)];
-		if (!entity) throw new Error(`No entity at index ${entityIndexRaw}`);
+		if (!entity) throw new Error(`索引处没有条目：${entityIndexRaw}`);
 		return entity;
 	}
 
@@ -43,7 +43,7 @@ function _pickEntity ({entities, entityIndexRaw, entityRole, entityKind}) {
 
 async function _main () {
 	const inputPath = _getArgValue("--input");
-	if (!inputPath) throw new Error(`Missing --input <path>`);
+	if (!inputPath) throw new Error(`缺少 --input <路径>`);
 
 	const formatHint = _getArgValue("--format");
 	const defaultKind = _getArgValue("--kind") || "monster";
@@ -89,7 +89,7 @@ async function _main () {
 		defaultKind,
 		entityPlan,
 	});
-	if (!entities.length) throw new Error(`No entities were extracted from input`);
+	if (!entities.length) throw new Error(`未从输入中提取到条目`);
 
 	const entity = _pickEntity({
 		entities,
@@ -97,7 +97,7 @@ async function _main () {
 		entityRole,
 		entityKind: entityKindFilter,
 	});
-	if (!entity) throw new Error(`No matching entity found`);
+	if (!entity) throw new Error(`未找到匹配的条目`);
 
 	const audit = await runEntityAudit({
 		entityKind: entity.kind,

@@ -8,11 +8,11 @@ function _getArgValue (flag) {
 }
 
 function _printUsage () {
-	process.stdout.write(`Usage:
+	process.stdout.write(`用法：
   node scripts/validate-homebrew-json-cli.js --file <path> [--homebrew-dir /data/homebrew]
 
-Runs the homebrew JSON schema validator with Chinese 5etools schema extensions
-applied at runtime. This does not edit the installed 5etools-utils schemas.
+使用运行时加载的中文 5etools 架构扩展验证自制内容 JSON。
+此操作不会修改已安装的 5etools-utils 架构。
 `);
 }
 
@@ -23,7 +23,7 @@ async function _main () {
 	}
 
 	const file = _getArgValue("--file");
-	if (!file) throw new Error(`Missing --file <path>`);
+	if (!file) throw new Error(`缺少 --file <path>`);
 
 	const homebrewDir = _getArgValue("--homebrew-dir") || "/data/homebrew";
 	const shimPath = path.join(path.dirname(process.argv[1]), "validate-homebrew-json-shim.mjs");
@@ -43,7 +43,7 @@ async function _main () {
 		child.on("error", reject);
 		child.on("exit", code => {
 			if (code === 0) return resolve();
-			reject(new Error(`Homebrew JSON validation failed with exit code ${code}`));
+			reject(new Error(`自制内容 JSON 验证失败，退出状态码为 ${code}`));
 		});
 	});
 }

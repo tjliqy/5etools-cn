@@ -29,11 +29,11 @@ export function validateEntity (
 	const issues = [];
 
 	if (!json || typeof json !== "object" || Array.isArray(json)) {
-		issues.push(_issue({code: "INVALID_JSON", severity: "error", message: "Entity result is missing or not an object"}));
+		issues.push(_issue({code: "INVALID_JSON", severity: "error", message: "条目结果缺失或不是对象"}));
 		return _buildValidation({issues, context, entityKind});
 	}
 
-	if (!json.name) issues.push(_issue({code: "MISSING_NAME", severity: "error", field: "name", message: "Entity is missing name"}));
+	if (!json.name) issues.push(_issue({code: "MISSING_NAME", severity: "error", field: "name", message: "条目缺少名称"}));
 
 	for (const warning of warnings) {
 		if (_HIGH_RISK_WARNING_PATTERNS.some(re => re.test(warning))) {
@@ -53,7 +53,7 @@ export function validateEntity (
 
 function _validateMonster ({json, rawText, issues}) {
 	["type", "ac", "hp", "speed", "cr"].forEach(field => {
-		if (json[field] == null) issues.push(_issue({code: `MISSING_${field.toUpperCase()}`, severity: "error", field, message: `Monster is missing ${field}`}));
+		if (json[field] == null) issues.push(_issue({code: `MISSING_${field.toUpperCase()}`, severity: "error", field, message: `生物缺少 ${field}`}));
 	});
 
 	const abilityFields = ["str", "dex", "con", "int", "wis", "cha"];
@@ -64,7 +64,7 @@ function _validateMonster ({json, rawText, issues}) {
 			issues.push(_issue({
 				code: "INCOMPLETE_ABILITIES",
 				severity: "error",
-				message: `Monster has only ${presentAbilityCount} populated ability scores`,
+				message: `生物仅填写了 ${presentAbilityCount} 项属性值`,
 			}));
 		}
 	}
@@ -74,7 +74,7 @@ function _validateMonster ({json, rawText, issues}) {
 			issues.push(_issue({
 				code: "MISSING_TRAIT_OR_ACTION_SECTION",
 				severity: "error",
-				message: "Raw text suggests trait/action sections exist, but parsed output is missing them",
+				message: "原文包含特质或动作章节，但解析结果中缺少这些章节",
 			}));
 		}
 	}
@@ -84,7 +84,7 @@ function _validateMonster ({json, rawText, issues}) {
 			code: "MISSING_LEGENDARY_SECTION",
 			severity: "error",
 			field: "legendary",
-			message: "Raw text suggests legendary actions exist, but parsed output is missing them",
+			message: "原文包含传奇动作，但解析结果中缺少传奇动作",
 		}));
 	}
 
@@ -96,7 +96,7 @@ function _validateMonster ({json, rawText, issues}) {
 						code: "EMPTY_SECTION_ENTRY",
 						severity: "error",
 						field: `${section}[${ix}]`,
-						message: `${section}[${ix}] has no usable entries`,
+						message: `${section}[${ix}] 没有可用条目`,
 					}));
 				}
 			});
@@ -107,7 +107,7 @@ function _validateMonster ({json, rawText, issues}) {
 			code: "MISSING_LANGUAGES",
 			severity: "warn",
 			field: "languages",
-			message: "Raw text suggests languages exist, but output is missing languages",
+			message: "原文包含语言信息，但结果中缺少语言",
 		}));
 	}
 
@@ -116,14 +116,14 @@ function _validateMonster ({json, rawText, issues}) {
 			code: "MISSING_PASSIVE",
 			severity: "warn",
 			field: "passive",
-			message: "Raw text likely includes passive perception, but output is missing passive",
+			message: "原文可能包含被动察觉，但结果中缺少 passive",
 		}));
 	}
 }
 
 function _validateSpell ({json, rawText, issues}) {
 	["level", "school", "time", "range", "duration", "entries"].forEach(field => {
-		if (json[field] == null) issues.push(_issue({code: `MISSING_${field.toUpperCase()}`, severity: "error", field, message: `Spell is missing ${field}`}));
+		if (json[field] == null) issues.push(_issue({code: `MISSING_${field.toUpperCase()}`, severity: "error", field, message: `法术缺少 ${field}`}));
 	});
 
 	if (json.level != null && !Number.isInteger(json.level)) {
@@ -131,7 +131,7 @@ function _validateSpell ({json, rawText, issues}) {
 			code: "INVALID_LEVEL",
 			severity: "error",
 			field: "level",
-			message: "Spell level should be an integer",
+			message: "法术环阶应为整数",
 		}));
 	}
 
@@ -140,7 +140,7 @@ function _validateSpell ({json, rawText, issues}) {
 			code: "EMPTY_ENTRIES",
 			severity: "error",
 			field: "entries",
-			message: "Spell entries must contain usable content",
+			message: "法术条目必须包含可用内容",
 		}));
 	}
 
@@ -149,7 +149,7 @@ function _validateSpell ({json, rawText, issues}) {
 			code: "MISSING_HIGHER_LEVEL_SECTION",
 			severity: "warn",
 			field: "entriesHigherLevel",
-			message: "Raw text suggests higher-level text exists, but output is missing it",
+			message: "原文包含升环施法内容，但结果中缺少该内容",
 		}));
 	}
 
@@ -158,7 +158,7 @@ function _validateSpell ({json, rawText, issues}) {
 			code: "MISSING_COMPONENTS",
 			severity: "warn",
 			field: "components",
-			message: "Raw text suggests components exist, but output is missing them",
+			message: "原文包含施法成分，但结果中缺少该字段",
 		}));
 	}
 }
@@ -169,7 +169,7 @@ function _validateItem ({json, rawText, issues}) {
 			code: "MISSING_ENTRIES",
 			severity: "error",
 			field: "entries",
-			message: "Item is missing entries",
+			message: "物品缺少条目内容",
 		}));
 	}
 
@@ -185,7 +185,7 @@ function _validateItem ({json, rawText, issues}) {
 		issues.push(_issue({
 			code: "MISSING_CLASSIFICATION",
 			severity: "warn",
-			message: "Item is missing obvious type/rarity/wondrous classification",
+			message: "物品缺少明确的类别、稀有度或奇物分类",
 		}));
 	}
 
@@ -194,7 +194,7 @@ function _validateItem ({json, rawText, issues}) {
 			code: "MISSING_ATTUNEMENT",
 			severity: "warn",
 			field: "reqAttune",
-			message: "Raw text suggests attunement is required, but output is missing reqAttune",
+			message: "原文说明需要同调，但结果中缺少 reqAttune",
 		}));
 	}
 }
@@ -229,5 +229,5 @@ function _buildValidation ({issues, context = {}, entityKind = null}) {
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
-	throw new Error(`This script is a library wrapper. Import and call validateEntity() from another script.`);
+	throw new Error(`此脚本是库封装。请从其他脚本导入并调用 validateEntity()。`);
 }

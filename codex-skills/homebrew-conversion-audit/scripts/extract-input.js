@@ -28,7 +28,7 @@ export async function extractInput (
 
 	if (rawText != null) return _extractFromString({rawText, format, inputPath});
 
-	if (!inputPath) throw new Error(`Expected either "inputPath" or "rawText"`);
+	if (!inputPath) throw new Error(`需要“inputPath”或“rawText”`);
 
 	if (_TEXTUAL_FORMATS.has(format)) {
 		const text = await fs.readFile(inputPath, "utf8");
@@ -39,15 +39,15 @@ export async function extractInput (
 		return _extractRich({inputPath, format});
 	}
 
-	throw new Error(`Unsupported input format "${format}"`);
+	throw new Error(`不支持的输入格式："${format}"`);
 }
 
 async function _extractRich ({inputPath, format}) {
 	switch (format) {
 		case "docx": return _extractDocx({inputPath, format});
-		case "doc": throw new Error(`DOC extraction is not implemented yet. Convert the file to DOCX or plain text first.`);
-		case "pdf": throw new Error(`PDF extraction is not implemented in this environment. Install a PDF text extractor or convert the PDF to raw text/DOCX first.`);
-		default: throw new Error(`Unsupported rich input format "${format}"`);
+		case "doc": throw new Error(`尚未实现 DOC 提取。请先将文件转为 DOCX 或纯文本。`);
+		case "pdf": throw new Error(`当前环境未实现 PDF 提取。请安装 PDF 文本提取工具，或先将文件转为纯文本／DOCX。`);
+		default: throw new Error(`不支持的富文本输入格式："${format}"`);
 	}
 }
 
@@ -145,7 +145,7 @@ async function _extractDocx ({inputPath, format}) {
 	const {stdout: documentXml} = await _pExecFile("unzip", ["-p", inputPath, "word/document.xml"], {maxBuffer: 10_000_000});
 	const stylesXml = await _pTryReadZipEntry({inputPath, zipEntry: "word/styles.xml"});
 
-	if (!documentXml?.trim()) throw new Error(`Could not extract DOCX document.xml from "${inputPath}"`);
+	if (!documentXml?.trim()) throw new Error(`无法从 DOCX 提取 document.xml："${inputPath}"`);
 
 	const styleMap = _parseDocxStyles(stylesXml || "");
 	const blocks = _parseDocxDocument({documentXml, styleMap});

@@ -244,8 +244,8 @@ export function buildAdventureFromBlocks (
 		engName = "",
 	} = {},
 ) {
-	if (!Array.isArray(blocks) || !blocks.length) throw new Error(`Expected non-empty "blocks" array`);
-	if (!source) throw new Error(`Expected "source"`);
+	if (!Array.isArray(blocks) || !blocks.length) throw new Error(`“blocks”必须是非空数组`);
+	if (!source) throw new Error(`缺少“source”`);
 
 	const {title, level} = _getTopMatter(blocks);
 	const tree = _buildTreeFromBlocks(blocks);
@@ -278,5 +278,5 @@ export function buildAdventureFromBlocks (
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
-	throw new Error(`This script is a library wrapper. Import and call buildAdventureFromBlocks() from another script.`);
+	throw new Error(`此脚本是库封装。请从其他脚本导入并调用 buildAdventureFromBlocks()。`);
 }

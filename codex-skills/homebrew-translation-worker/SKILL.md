@@ -9,6 +9,8 @@ Act as one queue worker. Do not choose a file manually and do not process more t
 
 Locate the installed `5etools-json-translate` skill and read its `SKILL.md` plus `references/automated-worker.md`. Run its `scripts/homebrew_translation_queue.py claim --worker-id <stable-run-id>`. If it returns `EMPTY_QUEUE`, report that outcome and stop successfully.
 
+After a successful claim, the queue coordinator reads `_meta.dependencies` in the claimed English JSON. For dependency Source codes present in the English `_generated/index-sources.json` but absent from the Chinese index, it raises the corresponding queued files to the top priority. Continue translating only the claimed file; subsequent workers receive the prioritized dependencies.
+
 If the scheduler supplies a chunk lease, or the source has been placed in `chunked` state, read and follow `5etools-json-translate/references/chunked-worker.md` instead of claiming a normal task. Never turn a normal lease into ad-hoc chunks inside a worker.
 
 For a successful lease:

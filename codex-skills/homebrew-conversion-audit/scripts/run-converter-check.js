@@ -24,8 +24,8 @@ export async function runConverterCheck (
 		converterRunner,
 	},
 ) {
-	if (!entityKind) throw new Error(`Missing "entityKind"`);
-	if (!rawText?.trim()) throw new Error(`Missing "rawText"`);
+	if (!entityKind) throw new Error(`缺少“entityKind”`);
+	if (!rawText?.trim()) throw new Error(`缺少“rawText”`);
 	const warnings = [];
 	let initialJson = null;
 	let error = null;
@@ -54,7 +54,7 @@ export async function runConverterCheck (
 			message: e?.message || String(e),
 			stack: e?.stack || null,
 		};
-		warnings.push(`Converter crashed: ${error.message}`);
+		warnings.push(`转换器崩溃：${error.message}`);
 	}
 
 	const fallbackJson = _tryRunChineseFallback({
@@ -128,10 +128,10 @@ async function _runBuiltinConverter ({entityKind, rawText, mode, source, page, s
 			return runItemConverter({rawText, mode, source, page, styleHint, inputMeta});
 
 		default:
-			throw new Error(`Missing "converterRunner" for entity kind "${entityKind}"`);
+			throw new Error(`条目类型缺少“converterRunner”："${entityKind}"`);
 	}
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
-	throw new Error(`This script is an adapter layer. Import and call runConverterCheck() from another script.`);
+	throw new Error(`此脚本是适配层。请从其他脚本导入并调用 runConverterCheck()。`);
 }

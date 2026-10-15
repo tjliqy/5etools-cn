@@ -117,5 +117,5 @@ export async function runEntityAudit (
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
-	throw new Error(`This script is a library wrapper. Import and call runEntityAudit() from another script.`);
+	throw new Error(`此脚本是库封装。请从其他脚本导入并调用 runEntityAudit()。`);
 }

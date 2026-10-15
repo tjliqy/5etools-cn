@@ -174,6 +174,61 @@ def homebrew_identity(path: Path) -> set[str]:
     return {item["json"] for item in sources if isinstance(item, dict) and isinstance(item.get("json"), str)}
 
 
+def prioritize_untranslated_dependencies(
+    connection: sqlite3.Connection, source: Path, source_root: Path, target_repo: Path,
+) -> list[str]:
+    """Move queued homebrew dependencies ahead of other claimable work."""
+    try:
+        meta = json.loads(source.read_text(encoding="utf-8-sig")).get("_meta", {})
+        dependencies = meta.get("dependencies", {})
+        english_index = json.loads((source_root / "_generated/index-sources.json").read_text(encoding="utf-8"))
+    except (OSError, UnicodeError, json.JSONDecodeError, AttributeError):
+        return []
+    if not isinstance(dependencies, dict) or not isinstance(english_index, dict):
+        return []
+    try:
+        translated_index = json.loads((target_repo / "_generated/index-sources.json").read_text(encoding="utf-8"))
+    except (OSError, UnicodeError, json.JSONDecodeError):
+        translated_index = {}
+    if not isinstance(translated_index, dict):
+        translated_index = {}
+
+    sources = {code for values in dependencies.values() if isinstance(values, list)
+               for code in values if isinstance(code, str)}
+    paths = {english_index[code] for code in sources
+             if isinstance(english_index.get(code), str) and code not in translated_index}
+    paths.discard(source.relative_to(source_root).as_posix())
+    if not paths:
+        return []
+    connection.execute("BEGIN IMMEDIATE")
+    try:
+        top = connection.execute(
+            "SELECT MAX(priority) AS top FROM tasks WHERE status IN ('pending', 'failed')"
+        ).fetchone()["top"] or 0
+        raised = []
+        for path in sorted(paths):
+            row = connection.execute(
+                "SELECT priority, status FROM tasks WHERE source_path = ?", (path,)
+            ).fetchone()
+            if row is None or row["status"] not in {"pending", "failed"}:
+                continue
+            top = max(top, row["priority"]) + 1
+            connection.execute(
+                "UPDATE tasks SET priority = ?, retry_after = NULL, updated_at = ? WHERE source_path = ?",
+                (top, stamp(), path),
+            )
+            event(connection, path, "priority_changed", {
+                "mode": "dependency", "priority_before": row["priority"], "priority_after": top,
+                "requested_by": source.relative_to(source_root).as_posix(),
+            })
+            raised.append(path)
+        connection.execute("COMMIT")
+        return raised
+    except Exception:
+        connection.execute("ROLLBACK")
+        raise
+
+
 def find_existing_target(source: Path, source_relative: str, target_root: Path) -> str | None:
     directory = target_root / Path(source_relative).parent
     identities = homebrew_identity(source)
@@ -318,6 +373,70 @@ def command_sync(args) -> int:
     return emit({"ok": True, "source_root": str(root), "inserted": inserted, "changed": changed, "unchanged": unchanged, "total_seen": len(seen)})
 
 
+def command_set_priority(args) -> int:
+    """Raise or adjust one task's queue priority; claim order is priority DESC."""
+    query = args.source.strip()
+    connection = connect(args.database)
+    connection.execute("BEGIN IMMEDIATE")
+    try:
+        rows = connection.execute("SELECT source_path, status, priority, retry_after FROM tasks").fetchall()
+        match = None
+        for candidates in (
+            [row for row in rows if row["source_path"] == query],
+            [row for row in rows if row["source_path"].endswith("/" + query)],
+            [row for row in rows if query in row["source_path"]],
+        ):
+            if not candidates:
+                continue
+            if len(candidates) > 1:
+                connection.execute("ROLLBACK")
+                return emit({
+                    "ok": False,
+                    "error": "source matches multiple tasks",
+                    "candidates": [row["source_path"] for row in candidates],
+                }, 2)
+            match = candidates[0]
+            break
+        if match is None:
+            connection.execute("ROLLBACK")
+            return emit({"ok": False, "error": "no task matches source", "source": query}, 2)
+        if match["status"] in {"merged", "obsolete"}:
+            connection.execute("ROLLBACK")
+            return emit({
+                "ok": False,
+                "error": f"task is {match['status']}; priority cannot affect it",
+                "source_path": match["source_path"],
+            }, 2)
+        if args.reset:
+            mode, priority_after = "reset", 0
+        elif args.to is not None:
+            mode, priority_after = "set", args.to
+        elif args.raise_by is not None:
+            mode, priority_after = "raise", match["priority"] + args.raise_by
+        else:
+            top = connection.execute(
+                "SELECT MAX(priority) AS top FROM tasks WHERE status IN ('pending', 'failed')"
+            ).fetchone()["top"] or 0
+            mode, priority_after = "top", top + 1
+        detail = {"mode": mode, "priority_before": match["priority"], "priority_after": priority_after}
+        if mode == "top" and match["status"] == "failed" and match["retry_after"] and match["retry_after"] > stamp():
+            connection.execute("UPDATE tasks SET retry_after = NULL WHERE source_path = ?", (match["source_path"],))
+            detail["retry_after_cleared"] = True
+        connection.execute(
+            "UPDATE tasks SET priority = ?, updated_at = ? WHERE source_path = ?",
+            (priority_after, stamp(), match["source_path"]),
+        )
+        event(connection, match["source_path"], "priority_changed", detail)
+        connection.execute("COMMIT")
+    except Exception:
+        connection.execute("ROLLBACK")
+        raise
+    payload = {"ok": True, "source_path": match["source_path"], "status": match["status"], **detail}
+    if match["status"] not in {"pending", "failed"}:
+        payload["note"] = f"status is {match['status']}; priority applies once the task returns to pending or failed"
+    return emit(payload)
+
+
 def release_failed_claim(connection: sqlite3.Connection, source_path: str, lease_id: str, error: str) -> None:
     connection.execute("BEGIN IMMEDIATE")
     connection.execute(
@@ -374,6 +493,7 @@ def command_claim(args) -> int:
     if not source.is_file() or hash_file(source) != row["source_hash"]:
         release_failed_claim(connection, row["source_path"], lease_id, "source missing or changed after sync")
         return emit({"ok": False, "error": "source missing or changed; run sync"}, 2)
+    prioritize_untranslated_dependencies(connection, source, source_root, target_repo)
     if not args.no_worktree:
         try:
             if worktree.exists():
@@ -940,6 +1060,14 @@ def build_parser() -> argparse.ArgumentParser:
     sync = sub.add_parser("sync")
     sync.add_argument("--chunk-threshold-bytes", type=int, default=250000)
     sync.set_defaults(func=command_sync)
+
+    priority = sub.add_parser("set-priority", help="Raise one task above the queue or adjust its priority")
+    priority.add_argument("--source", required=True, help="exact source_path, unique suffix, or unique substring")
+    priority_mode = priority.add_mutually_exclusive_group()
+    priority_mode.add_argument("--to", type=int, help="absolute priority; higher is claimed sooner")
+    priority_mode.add_argument("--raise-by", type=int, help="relative adjustment; negative lowers")
+    priority_mode.add_argument("--reset", action="store_true", help="restore the default priority 0")
+    priority.set_defaults(func=command_set_priority)
 
     claim = sub.add_parser("claim")
     claim.add_argument("--worker-id", required=True)

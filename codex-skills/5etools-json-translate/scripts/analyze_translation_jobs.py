@@ -41,7 +41,19 @@ def stable_token(value) -> str:
 # break Foundry import semantics. foundryEffects change leaves (key/value like
 # "system.attributes.senses.truesight"/"@attributes.senses.blindsight") are
 # Foundry data-path/formula tokens with the same verbatim-substitution semantics.
-MACHINE_LEAF = re.compile(r"/(alId|colStyles(?:\[\d+\])?|summonedByClass|style|type/tags(?:\[\d+\])?|spellcasting(?:\[\d+\])?/ability|featureType(?:\[\d+\])?|page|(?:skill|save)/[a-z]+|midiProperties/[A-Za-z0-9_]+|healing/bonus|flags(?:/[A-Za-z0-9_.%-]+|\[\d+\])+|foundryEffects(?:\[[^\]]*\])?/changes(?:\[\d+\])?/(?:key|mode|value|priority)|activities(?:\[[^\]]*\])?/roll\.formula)$")
+# Feat-level foundryActivities carry the same semantics: save DC formulas
+# ("8 + @prof + max(...)"), target.affects count formulas
+# ("1 + @flags.ll.leadership.mod"), check.associated skill enums ("itm"), and
+# consumption target data-paths ("currency.gp"). additionalSpells choose
+# strings ("level=0|class=alternate sorcerer (llasorc)") are filter syntax.
+# LLAW-style foundry feature sections nest the same activity data directly
+# under "activities" (no foundryActivities wrapper): range value formulas
+# ("30 * @scale.warlord.tactical-superiority"), save/dc.formula
+# ("@flags.ll.exploit.dc"), target.affects count ("@flags.ll.leadership.mod"),
+# intra-feature activity.id cross-references ("LLAWActivityZeAD"), and
+# summon profiles cr ("floor(@classes.warlord.levels / 3)") are all
+# Foundry-evaluated machine values.
+MACHINE_LEAF = re.compile(r"/(alId|colStyles(?:\[\d+\])?|summonedByClass|style|type/tags(?:\[\d+\])?|spellcasting(?:\[\d+\])?/ability|featureType(?:\[\d+\])?|page|(?:skill|save)/[a-z]+|midiProperties/[A-Za-z0-9_]+|healing/bonus|flags(?:/[A-Za-z0-9_.%-]+|\[\d+\])+|foundryEffects(?:\[[^\]]*\])?/changes(?:\[\d+\])?/(?:key|mode|value|priority)|activities(?:\[[^\]]*\])?/roll\.formula|foundryActivities(?:\[[^\]]*\])?/save/dc\.formula|foundryActivities(?:\[[^\]]*\])?/target\.affects/count|foundryActivities(?:\[[^\]]*\])?/check\.associated(?:\[\d+\])?|foundryActivities(?:\[[^\]]*\])?/consumption/targets(?:\[\d+\])?/target|additionalSpells(?:\[[^\]]*\])?/(?:known|innate|prepared)/_\[\d+\]/choose|resources(?:\[[^\]]*\])?/count|activities(?:\[[^\]]*\])?/settings/(?:minimumAC|tempFormula)|activities(?:\[[^\]]*\])?/(?:range/value|save/dc\.formula|target\.affects/count|activity\.id)|activities(?:\[[^\]]*\])?/(?:summon/)?profiles(?:\[\d+\])?/cr)$")
 
 # Renderer variable placeholders like "<$cha_mod$>" (item charge counts) are
 # substituted verbatim by the site and must stay byte-identical.
@@ -98,6 +110,12 @@ MACHINE_TOKEN = re.compile(r"^[A-Za-z0-9][A-Za-z0-9_./#,%?=&;:-]*(?: x \d+)?$")
 # Dice-math expressions whose only word token is the proficiency bonus alias,
 # e.g. "+ PB" or "30 + 10 × PB". Pure machine math, never translatable prose.
 PB_FORMULA = re.compile(r"[+\-−\d\s,dD×xX*/().]*PB[+\-−\d\s,dD×xX*/().]*")
+# Foundry/plutonium @-variable formulas surfaced in item display fields, e.g.
+# dmg1 "1d10 + @srd5e.userchar.pb" or bonusWeaponAttack "3 + @srd5e.userchar.pb",
+# are substituted verbatim by the renderer/Foundry and stay byte-identical.
+AT_VARIABLE_FORMULA = re.compile(
+    r"^(?:[0-9]+|d[0-9]+)[0-9a-zA-Z_+\-*/().\s]*@[a-zA-Z_][a-zA-Z0-9_.]*[0-9a-zA-Z_+\-*/().\s]*$"
+)
 # Matches a 5etools tag and captures its display text (pipe field 0). Used to
 # project a target string down to prose + localized display text before the
 # residual substring check, so English inside routing fields (pipe fields >= 1,
@@ -286,6 +304,11 @@ def main() -> int:
         if args.target and isinstance(job.en_str, str):
             if job.en_str.lower() in source_codes:
                 continue
+            # A tag tokenizer artifact appends the closing bracket to a source
+            # code ("@creature[名称|LLVessel]" emits sub-job "LLVessel]"); the
+            # bracket-stripped token is still a machine routing code.
+            if job.en_str.lower().rstrip("]") in source_codes:
+                continue
             if VARIABLE_TOKEN.match(job.en_str):
                 continue
             if VARIABLE_FORMULA.match(job.en_str) or VARIABLE_FORMULA_FUNCTION.match(job.en_str):
@@ -298,6 +321,8 @@ def main() -> int:
             # only understands the literal "PB" token, and the repo keeps such
             # formulas untranslated. Same machine class as VARIABLE_TAGS math.
             if PB_FORMULA.fullmatch(job.en_str):
+                continue
+            if AT_VARIABLE_FORMULA.fullmatch(job.en_str):
                 continue
             if MALFORMED_TAG_UID.search(job.uid or ""):
                 continue

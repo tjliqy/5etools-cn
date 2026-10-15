@@ -68,7 +68,7 @@ export function prepareEntityBundle (
 		maxBlockPreviewChars = 220,
 	} = {},
 ) {
-	if (!document?.blocks?.length) throw new Error(`Expected document.blocks`);
+	if (!document?.blocks?.length) throw new Error(`缺少 document.blocks`);
 
 	const blocks = document.blocks.map((block, index) => {
 		const summarized = _summarizeBlock(block, index);
@@ -111,5 +111,5 @@ export function prepareEntityBundle (
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
-	throw new Error(`This script is a library wrapper. Import and call prepareEntityBundle() from another script.`);
+	throw new Error(`此脚本是库封装。请从其他脚本导入并调用 prepareEntityBundle()。`);
 }

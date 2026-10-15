@@ -76,6 +76,19 @@ Completion rejects expired/replaced leases, changed sources, missing targets, co
 
 Both worker preflight and serial integration require a fully clean repository-test baseline. Never pass `--allow-failing-baseline` in automation; that flag is reserved for explicit human diagnosis and must not be used to admit a task into `ready` or `merged`.
 
+## Priority control
+
+`claim` orders eligible tasks by `priority DESC, attempts ASC, source_path ASC`. After claiming a file, the coordinator checks its `_meta.dependencies` Source codes against the English `_generated/index-sources.json`. It raises queued dependency files missing from the Chinese source index above other claimable work, so later claims pick them first. The current worker still translates only its own claimed file.
+
+To raise one file above the rest of the queue manually, run:
+
+```bash
+python3 <skill-dir>/scripts/homebrew_translation_queue.py set-priority \
+  --source "collection/<作者>; <资源名>.json"
+```
+
+`--source` accepts the exact relative path, a unique path suffix, or a unique substring; an ambiguous or unknown match is rejected with the candidate list. Without a mode flag the command raises the task above every currently claimable (`pending`/`failed`) task, and when that task is waiting out a `failed` retry timer it also clears `retry_after` so the very next claim can take it. `--to N` sets an absolute value, `--raise-by N` adjusts relatively (negative lowers), and `--reset` restores the default `0`. Finished (`merged`/`obsolete`) tasks are refused. Every change records a `priority_changed` event, and priorities survive `sync` re-queues, retries, and source changes.
+
 ## Scheduler cycle
 
 A scheduler should run `sync`, then `reclaim-expired`, then start the configured number of workers. It may start workers concurrently because claims are atomic and each claim receives a separate Git worktree. Run one serial integration process for `ready` tasks. `integrate-next` refuses to operate when the shared Chinese repository has any uncommitted changes.

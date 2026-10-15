@@ -23,7 +23,7 @@ function _guessTitle ({document, rawText}) {
 	if (heading) return heading.text.trim();
 
 	const firstParagraph = rawText.split(/\n+/).map(it => it.trim()).find(Boolean);
-	return firstParagraph || "(untitled entity)";
+	return firstParagraph || "（未命名条目）";
 }
 
 function _sliceBlocksByRange (blocks, startBlockIndex, endBlockIndex) {
@@ -47,7 +47,7 @@ function _toPlanEntity ({document, entity}) {
 	return {
 		kind: entity.kind || "unknown",
 		role: entity.role || "embedded",
-		title: entity.title || _cleanText(blocks.find(it => it?.type === "heading")?.text) || "(untitled entity)",
+		title: entity.title || _cleanText(blocks.find(it => it?.type === "heading")?.text) || "（未命名条目）",
 		blocks,
 		raw_text: rawText,
 		startBlockIndex,
@@ -277,7 +277,7 @@ function _detectPackedMonstersInParagraph ({block, blockIndex}) {
 		const preceding = lines[start - 1] || "";
 		const title = preceding && !/[.:。]$/.test(preceding) && _cleanText(preceding).length <= 40
 			? _cleanText(preceding)
-			: _getChineseTitlePart(lines[start]) || "(untitled monster)";
+			: _getChineseTitlePart(lines[start]) || "（未命名生物）";
 		const rawText = lines.slice(start, end + 1).join("\n");
 
 		return {
@@ -379,7 +379,7 @@ export function splitEntities (
 			{
 				kind: "json",
 				role: "document",
-				title: document.source_file || "(json input)",
+				title: document.source_file || "（JSON 输入）",
 				blocks: document.blocks,
 				raw_text: JSON.stringify(document.blocks[0].json, null, "\t"),
 			},
@@ -414,5 +414,5 @@ export function splitEntities (
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
-	throw new Error(`This script is a library wrapper. Import and call splitEntities() from another script.`);
+	throw new Error(`此脚本是库封装。请从其他脚本导入并调用 splitEntities()。`);
 }
