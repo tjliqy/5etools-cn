@@ -5,9 +5,13 @@ window.addEventListener("load", async () => {
 	]);
 	ExcludeUtil.pInitialise().then(null); // don't await, as this is only used for search
 
-	const changelog = await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/changelog.json`);
+	const [changelog, cnChangelog] = await Promise.all([
+		DataUtil.loadJSON(`${Renderer.get().baseUrl}data/changelog.json`),
+		DataUtil.loadJSON(`${Renderer.get().baseUrl}data/changelog-cn.json`),
+	]);
 	const wrp = veEs(`#pagecontent`).vee.empty();
 	UtilsChangelog.renderChangelog(changelog, wrp);
+	UtilsChangelog.renderChangelog(cnChangelog, wrp);
 
 	window.dispatchEvent(new Event("toolsLoaded"));
 });

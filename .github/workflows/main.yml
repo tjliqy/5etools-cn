@@ -29,6 +29,11 @@ jobs:
 
          -  uses: actions/checkout@master
 
+         -  name: Validate Chinese Release Version
+            env:
+               RELEASE_TAG: ${{ startsWith(github.ref, 'refs/tags/') && github.ref_name || '' }}
+            run: node node/check-release-version.js "$RELEASE_TAG"
+
          -  name: Generate Release Notes
             run: bash ./.github/generate-release-notes.sh ${{ github.ref_name }} | tee RELEASE_NOTES.md
 
@@ -64,6 +69,11 @@ jobs:
               node-version: 'lts/*'
 
          -  uses: actions/checkout@master
+
+         -  name: Validate Chinese Release Version
+            env:
+               RELEASE_TAG: ${{ startsWith(github.ref, 'refs/tags/') && github.ref_name || '' }}
+            run: node node/check-release-version.js "$RELEASE_TAG"
 
          # See: https://stackoverflow.com/a/58178121
          -  name: Set Env

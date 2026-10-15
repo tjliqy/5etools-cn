@@ -50,6 +50,11 @@ jobs:
          -  name: Checkout
             uses: actions/checkout@master
 
+         -  name: Validate Chinese Release Version
+            env:
+               RELEASE_TAG: ${{ startsWith(github.ref, 'refs/tags/') && github.ref_name || '' }}
+            run: node node/check-release-version.js "$RELEASE_TAG"
+
          -  name: Set Deployed Flag and Image Root
             run: |
                bash ./.github/set-deployed-flag.sh ${{ github.ref_name }}

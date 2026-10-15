@@ -8,6 +8,7 @@
 	"private": true,
 	"scripts": {
 		"version-bump": "npm version -m \"chore(version): bump\"",
+		"check:release-version": "node node/check-release-version.js",
 		"gen": "node node/generate-all.js",
 		"gen:search-index": "node node/generate-search-index.js",
 		"search:entity": "node node/search-entities.js",

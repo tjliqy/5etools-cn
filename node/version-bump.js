@@ -13,8 +13,13 @@ const VERSION_REPLACE_REGEXP = new RegExp(`${VERSION_MARKER_START.escapeRegexp()
 
 async function main () {
 	const version = JSON.parse(fs.readFileSync("package.json", "utf-8")).version;
-	const versionReplaceString = `${VERSION_MARKER_START}"${version}"${VERSION_MARKER_END}`;
-	console.log("正在将文件中的版本号替换为 ", version, "：", FILES_TO_REPLACE_VERSION_IN);
+	const cnVersion = JSON.parse(fs.readFileSync("cn-version.json", "utf-8"));
+	if (cnVersion.upstreamVersion !== version || !Number.isInteger(cnVersion.revision) || cnVersion.revision < 1) {
+		throw new Error("cn-version.json 的英文版本必须与 package.json 一致，且 revision 必须是正整数。");
+	}
+	const releaseVersion = `${version}-cn.${cnVersion.revision}`;
+	const versionReplaceString = `${VERSION_MARKER_START}"${releaseVersion}"${VERSION_MARKER_END}`;
+	console.log("正在将文件中的版本号替换为 ", releaseVersion, "：", FILES_TO_REPLACE_VERSION_IN);
 
 	for (const fileName of FILES_TO_REPLACE_VERSION_IN) {
 		let fileContents = fs.readFileSync(fileName, "utf8");

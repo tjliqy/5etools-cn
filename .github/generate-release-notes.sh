@@ -12,11 +12,17 @@ version=$1
 # Release version number without "v" prefix to match the format of changelog.json.
 version_number="${version#v}"
 
-# This parses the JSON blob for this specific version from changelog.json.
+# Chinese releases have their own changelog; upstream releases keep the original one.
+changelog_file="data/changelog.json"
+if [[ "$version_number" == *-cn.* ]]; then
+    changelog_file="data/changelog-cn.json"
+fi
+
+# This parses the JSON blob for this specific version.
 changelog="$(
     jq --arg version "$version_number" --compact-output \
     '.[] | select(.ver == $version)'                    \
-    data/changelog.json
+    "$changelog_file"
 )"
 
 if [[ -z "$changelog" ]]; then
