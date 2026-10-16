@@ -139,6 +139,9 @@ class _ListSearch {
 }
 
 export class List {
+	static _ENGLISH_NAME_COLUMN_WIDTH = 22;
+	static _NAME_COLLATOR = new Intl.Collator("zh-CN-u-co-pinyin", {numeric: true, sensitivity: "base"});
+
 	static _DEFAULTS = {
 		searchTerm: "",
 		sortBy: "name",
@@ -508,7 +511,15 @@ export class List {
 			//   is specific functionality that requires it.
 			sortDir: this._sortDir,
 		};
-		if (this._fnSort) items.sort((a, b) => this._fnSort(a, b, opts));
+		const isNameColumnSort = opts.sortBy === "name"
+			&& this._wrpList.previousElementSibling?.querySelector('[data-sort="name"]');
+		if (this._fnSort) items.sort((a, b) => {
+			if (isNameColumnSort) {
+				const byName = this.constructor._NAME_COLLATOR.compare(a.name, b.name);
+				if (byName) return byName;
+			}
+			return this._fnSort(a, b, opts);
+		});
 		if (this._sortDir === "desc") items.reverse();
 
 		return items;
@@ -521,14 +532,78 @@ export class List {
 
 	_doRender () {
 		const len = this._sortedItems.length;
+		this._doRenderEnglishNameColumn();
 
 		this._wrpList.innerHTML = "";
 		const frag = document.createDocumentFragment();
-		for (let i = 0; i < len; ++i) frag.appendChild(this._sortedItems[i].ele);
+		for (let i = 0; i < len; ++i) {
+			const item = this._sortedItems[i];
+			this._doRenderEnglishNameCell(item);
+			frag.appendChild(item.ele);
+		}
 		this._wrpList.appendChild(frag);
 
 		this._isDirty = false;
 		this._trigger("updated");
+	}
+
+	_doRenderEnglishNameColumn () {
+		const header = this._wrpList.previousElementSibling;
+		if (!header?.id?.startsWith("filtertools")) return;
+		const name = header.querySelector('[data-sort="name"]');
+		if (!name || header.querySelector(".ve-lst__header-eng-name")) return;
+		if (this.constructor._getNameColumnWidth(name) == null) return;
+
+		this.constructor._scaleColumnsForEnglishName(name.parentElement);
+		const english = document.createElement("button");
+		english.type = "button";
+		english.className = `${name.className.replace(/\bve-col-\d+(?:-\d+)?\b/g, "").replace(/\bsort\b/g, "")} ve-lst__header-eng-name`;
+		english.textContent = "英文名";
+		this.constructor._setNameColumnWidth(english, this.constructor._ENGLISH_NAME_COLUMN_WIDTH);
+		name.after(english);
+	}
+
+	_doRenderEnglishNameCell (item) {
+		const header = this._wrpList.previousElementSibling;
+		if (!header?.querySelector(".ve-lst__header-eng-name")) return;
+		const row = item.ele.querySelector("a.ve-lst__row-inner");
+		const name = [...(row?.querySelectorAll(".ve-bold") || [])].find(ele => this.constructor._getNameColumnWidth(ele) != null);
+		if (!name || row.querySelector(".ve-lst__cell-eng-name")) return;
+		this.constructor._scaleColumnsForEnglishName(name.parentElement);
+		const english = document.createElement("span");
+		english.className = `${name.className.replace(/\bve-col-\d+(?:-\d+)?\b/g, "").replace(/\bve-bold\b/g, "")} ve-lst__cell-eng-name`;
+		english.textContent = item.values.ENG_name || "";
+		english.title = english.textContent;
+		this.constructor._setNameColumnWidth(english, this.constructor._ENGLISH_NAME_COLUMN_WIDTH);
+		english.style.minWidth = "0";
+		english.style.overflowWrap = "anywhere";
+		english.style.whiteSpace = "normal";
+		name.after(english);
+	}
+
+	static _getNameColumnWidth (ele) {
+		const match = [...ele.classList].join(" ").match(/\bve-col-(\d+)(?:-(\d+))?\b/);
+		return match ? (Number(match[1]) + Number(match[2] || 0) / 10) / 12 * 100 : null;
+	}
+
+	static _setNameColumnWidth (ele, width) {
+		ele.style.setProperty("width", `${width}%`, "important");
+		ele.style.setProperty("flex", `0 0 ${width}%`, "important");
+	}
+
+	static _scaleColumnsForEnglishName (parent) {
+		const columns = [...parent.children]
+			// Bestiary's encounter-builder controls are hidden in the normal list and
+			// have no matching header column.
+			.filter(ele => !ele.classList.contains("best-ecgen__visible"))
+			.map(ele => ({ele, width: this._getNameColumnWidth(ele)}))
+			.filter(({width}) => width != null);
+		const totalWidth = columns.reduce((total, {width}) => total + width, 0);
+		const factor = Math.min(1, (100 - this._ENGLISH_NAME_COLUMN_WIDTH) / totalWidth);
+		for (const {ele, width} of columns) {
+			this._setNameColumnWidth(ele, width * factor);
+			ele.style.minWidth = "0";
+		}
 	}
 
 	search (searchTerm) {

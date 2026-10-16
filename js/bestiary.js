@@ -484,7 +484,6 @@ class BestiaryPage extends ListPageMultiSource {
 		const source = Parser.sourceJsonToAbv(mon.source);
 		const type = _BestiaryUtil.getListDisplayType(mon);
 		const cr = mon._pCr;
-		const translator = mon.translator || "机翻";
 
 		const eleLi = veE({
 			tag: "div",
@@ -502,7 +501,6 @@ class BestiaryPage extends ListPageMultiSource {
 						veE({tag: "span", clazz: `best-ecgen__name ve-bold ve-col-4-2 ve-pl-0 ve-pr-1`, txt: mon.name}),
 						veE({tag: "span", clazz: `ve-col-4-1 ve-px-1`, txt: type}),
 						veE({tag: "span", clazz: `ve-col-1-7 ve-px-1 ve-text-center`, txt: cr}),
-						veE({tag: "span", clazz: `ve-col-1-7 ve-px-1 ve-text-center`, txt: translator}),
 						veE({
 							tag: "span",
 							clazz: `ve-col-2 ve-text-center ${Parser.sourceJsonToSourceClassname(mon.source)} ve-pl-1 ve-pr-0`,

@@ -920,7 +920,7 @@ class ClassesPage extends MixinComponentGlobalState(MixinBaseComponent(MixinProx
 		const source = Parser.sourceJsonToAbv(cls.source);
 
 		const lnk = veT`<a href="#${hash}" class="ve-lst__row-border ve-lst__row-inner">
-			<span class="ve-bold ve-col-8 ve-pl-0 ve-pr-1">${cls.name} ${cls.ENG_name ? `${cls.ENG_name}` : ""}</span>
+			<span class="ve-bold ve-col-8 ve-pl-0 ve-pr-1">${cls.name}</span>
 			<span class="ve-col-4 ve-pl-0 ve-pr-1 ve-text-center ${Parser.sourceJsonToSourceClassname(cls.source)} ve-pr-0" title="${Parser.sourceJsonToFull(cls.source).qq()}">${source.qq()}</span>
 		</a>`;
 

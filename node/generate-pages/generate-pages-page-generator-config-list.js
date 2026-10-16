@@ -74,7 +74,6 @@ class _PageGeneratorListBestiary extends PageGeneratorListBase {
 		HtmlGeneratorListButtons.getBtn({width: "4-2", sortIdent: "name", text: "名称"}),
 		HtmlGeneratorListButtons.getBtn({width: "4-1", sortIdent: "type", text: "类型"}),
 		HtmlGeneratorListButtons.getBtn({width: "1-7", sortIdent: "cr", text: "CR"}),
-		HtmlGeneratorListButtons.getBtn({width: "1-7", sortIdent: "translate", text: "翻译"}),
 		HtmlGeneratorListButtons.getBtnSource(),
 	];
 
