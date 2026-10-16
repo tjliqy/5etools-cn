@@ -135,6 +135,22 @@ class _PageGeneratorConverter extends PageGeneratorGeneric {
 	];
 }
 
+class _PageGeneratorAiGenerator extends PageGeneratorGeneric {
+	_filename = "page/template-page-ai-generator.hbs";
+	_page = "ai-generator.html";
+	_isNoIndex = true;
+	_isExcludedFromSitemap = true;
+
+	_pageTitle = "AI 辅助生成";
+	_pageDescription = "使用 AI 将创意和文本整理为 5etools 怪物、物品 JSON。";
+	_pageKeywords = "AI,JSON,怪物,物品,生成器";
+	_navbarDescription = "通过对话生成并校验怪物与物品 JSON。";
+
+	_stylesheets = ["ai-generator"];
+	_scriptsRenderAdditional = ["render-markdown.js", "render-bbcode.js"];
+	_scriptsModules = ["ai-generator.js"];
+}
+
 class _PageGeneratorCrcalculator extends PageGeneratorGeneric {
 	_filename = "page/template-page-crcalculator.hbs";
 	_page = "crcalculator.html";
@@ -459,6 +475,7 @@ export const PAGE_GENERATORS = 	[
 	new _PageGeneratorAiGuide(),
 	new _PageGeneratorChangelog(),
 	new _PageGeneratorConverter(),
+	new _PageGeneratorAiGenerator(),
 	new _PageGeneratorCrcalculator(),
 	new _PageGeneratorIndex(),
 	new _PageGeneratorInittrackerplayerview(),

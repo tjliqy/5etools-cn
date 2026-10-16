@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+{{> "head" }}
+
+<body>
+{{> "overlayNoise" }}
+<div class="viewport-wrapper">
+	{{> "adLeaderboard" }}
+	{{> "navbar" }}
+	<main class="ai-gen ve-flex-col">
+		<header class="ai-gen__header">
+			<div class="ai-gen__header-actions">
+				<div class="ai-gen__source-picker"><span>来源</span><div class="ve-flex-v-center ve-input-group ve-btn-group"><select id="ai-gen-source" class="ve-form-control"></select><button id="ai-gen-source-edit" class="ve-btn ve-btn-default ve-btn-xs" type="button" title="编辑当前来源"><span class="glyphicon glyphicon-pencil"></span></button></div><button id="ai-gen-source-add" class="ve-btn ve-btn-default ve-btn-xs" type="button" title="新增来源"><span class="glyphicon glyphicon-plus"></span></button></div>
+				<div class="ve-btn-group"><button class="ve-btn ve-btn-default" id="ai-gen-sessions" type="button" aria-controls="ai-gen-sessions-sidebar" aria-expanded="false"><span class="glyphicon glyphicon-list"></span> 会话</button><button class="ve-btn ve-btn-default" id="ai-gen-settings">接口设置</button></div>
+			</div>
+		</header>
+		<div class="ai-gen__shell" id="ai-gen-shell">
+			<aside class="ai-gen__sessions-sidebar" id="ai-gen-sessions-sidebar" aria-label="会话列表">
+				<div class="ai-gen__sessions-header"><h2 class="ve-my-0">会话</h2><button class="ve-btn ve-btn-default ve-btn-xs" id="ai-gen-sessions-close" type="button" title="收起会话列表" aria-label="收起会话列表"><span class="glyphicon glyphicon-chevron-left"></span></button></div>
+				<button class="ve-btn ve-btn-primary ai-gen__session-new" id="ai-gen-session-new" type="button"><span class="glyphicon glyphicon-plus"></span> 新建会话</button>
+				<div class="ai-gen__session-file-actions"><button class="ve-btn ve-btn-default ve-btn-xs" id="ai-gen-session-export" type="button">导出会话</button><button class="ve-btn ve-btn-default ve-btn-xs" id="ai-gen-session-import" type="button">导入会话</button><input id="ai-gen-session-import-file" type="file" accept=".json,application/json" hidden></div>
+				<div id="ai-gen-sessions-list" class="ai-gen__sessions-list"></div>
+			</aside>
+			<div class="ai-gen__content">
+			<div class="ai-gen__workspace">
+			<section class="ai-gen__chat" aria-label="对话">
+				<div class="ai-gen__messages" id="ai-gen-messages" aria-live="polite"></div>
+				<form class="ai-gen__composer" id="ai-gen-form">
+					<textarea id="ai-gen-input" class="ve-form-control" rows="4" title="描述一个创意或粘贴较短的文本，生成 5etools 怪物与物品 JSON。暂不支持长篇冒险模组；单次输入上限为 16000 字符。" placeholder="例如：设计一只受到诅咒后变得强大的地精……" required></textarea>
+					<div class="ai-gen__composer-footer"><span id="ai-gen-status" class="ve-muted">请先配置 OpenAI 兼容接口</span><button class="ve-btn ve-btn-primary" id="ai-gen-send" type="submit">发送</button></div>
+				</form>
+			</section>
+			<section class="ai-gen__result" aria-label="生成结果">
+				<div class="ai-gen__result-header">
+				<div class="ve-btn-group"><button class="ve-btn ve-btn-default" data-tab="preview">预览</button><button class="ve-btn ve-btn-default ve-active" data-tab="json">JSON</button></div>
+					<div class="ve-btn-group"><button class="ve-btn ve-btn-default" id="ai-gen-copy">复制</button><button class="ve-btn ve-btn-default" id="ai-gen-download">下载</button></div>
+				</div>
+				<div id="ai-gen-preview" class="ai-gen__preview ve-hidden"><p class="ve-muted">生成的内容会显示在这里。</p></div>
+				<textarea id="ai-gen-json" class="ai-gen__json" spellcheck="false" aria-label="JSON"></textarea>
+				<div id="ai-gen-validation" class="ai-gen__validation"></div>
+			</section>
+		</div>
+			</div>
+		</div>
+		<div id="ai-gen-settings-panel" class="ai-gen__settings-panel ve-hidden" role="dialog" aria-modal="true" aria-labelledby="ai-gen-settings-title">
+			<form id="ai-gen-settings-form" class="ai-gen__settings">
+				<h2 id="ai-gen-settings-title" class="ve-my-0">OpenAI 兼容接口设置</h2>
+				<label>接口地址（可填写服务根地址或完整 chat/completions 地址）<input id="ai-gen-base-url" class="ve-form-control" type="url" placeholder="https://api.openai.com/v1" required></label>
+				<label>模型<input id="ai-gen-model" class="ve-form-control" autocomplete="off" placeholder="模型名称" required></label>
+				<label>API Key<input id="ai-gen-api-key" class="ve-form-control" type="password" autocomplete="new-password" required></label>
+				<p class="ai-gen__settings-note ve-muted">设置保存在当前浏览器中；请求由浏览器直接发送到你填写的接口。</p>
+				<div id="ai-gen-test-status" class="ve-muted" aria-live="polite"></div>
+				<div class="ve-flex-v-center ve-btn-group"><button class="ve-btn ve-btn-default" type="button" id="ai-gen-test">测试连接</button><button class="ve-btn ve-btn-primary" type="submit">保存设置</button><button class="ve-btn ve-btn-default" type="button" id="ai-gen-settings-cancel">取消</button></div>
+			</form>
+		</div>
+	</main>
+</div>
+{{> "footer" }}
+{{> "adFooter" }}
+{{> "scripts" }}
+</body>
+</html>

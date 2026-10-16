@@ -171,6 +171,7 @@ class NavBar {
 		this._addElement_li({keyPath: [NavBar._CAT_UTILITIES], page: "makebrew.html", aText: I18nUtil.get("page.makebrew.title")});
 		this._addElement_li({keyPath: [NavBar._CAT_UTILITIES], page: "makecards.html", aText: "RPG 卡片 JSON 生成器"});
 		this._addElement_li({keyPath: [NavBar._CAT_UTILITIES], page: "converter.html", aText: "文本转换器"});
+		this._addElement_li({keyPath: [NavBar._CAT_UTILITIES], page: "ai-generator.html", aText: "AI 辅助生成（实验功能）"});
 		this._addElement_divider({keyPath: [NavBar._CAT_UTILITIES]});
 		this._addElement_li({keyPath: [NavBar._CAT_UTILITIES], page: "plutonium.html", aText: "Plutonium (Foundry Module) 功能"});
 		this._addElement_divider({keyPath: [NavBar._CAT_UTILITIES]});
