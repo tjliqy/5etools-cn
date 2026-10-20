@@ -4149,6 +4149,7 @@ UrlUtil.URL_TO_ENG_HASH_BUILDER[UrlUtil.PG_LANGUAGES] = UrlUtil.URL_TO_ENG_HASH_
 UrlUtil.URL_TO_ENG_HASH_BUILDER[UrlUtil.PG_CHAR_CREATION_OPTIONS] = UrlUtil.URL_TO_ENG_HASH_GENERIC;
 UrlUtil.URL_TO_ENG_HASH_BUILDER[UrlUtil.PG_RECIPES] = (it) => `${UrlUtil.encodeArrayForHash(it.ENG_name, it.source)}${it._scaleFactor ? `${HASH_PART_SEP}${VeCt.HASH_SCALED}${HASH_SUB_KV_SEP}${it._scaleFactor}` : ""}`;
 UrlUtil.URL_TO_ENG_HASH_BUILDER[UrlUtil.PG_DECKS] = UrlUtil.URL_TO_ENG_HASH_GENERIC;
+UrlUtil.URL_TO_ENG_HASH_BUILDER[UrlUtil.PG_BASTIONS] = UrlUtil.URL_TO_ENG_HASH_GENERIC;
 UrlUtil.URL_TO_ENG_HASH_BUILDER[UrlUtil.PG_CLASS_SUBCLASS_FEATURES] = (it) => (it.__prop === "subclassFeature" || it.subclassSource) ? UrlUtil.URL_TO_ENG_HASH_BUILDER["subclassFeature"](it) : UrlUtil.URL_TO_ENG_HASH_BUILDER["classFeature"](it);
 UrlUtil.URL_TO_ENG_HASH_BUILDER[UrlUtil.PG_CREATURE_FEATURES] = UrlUtil.URL_TO_ENG_HASH_GENERIC;
 UrlUtil.URL_TO_ENG_HASH_BUILDER[UrlUtil.PG_VEHICLE_FEATURES] = UrlUtil.URL_TO_ENG_HASH_GENERIC;
@@ -4199,6 +4200,7 @@ UrlUtil.URL_TO_ENG_HASH_BUILDER["language"] = UrlUtil.URL_TO_ENG_HASH_BUILDER[Ur
 UrlUtil.URL_TO_ENG_HASH_BUILDER["charoption"] = UrlUtil.URL_TO_ENG_HASH_BUILDER[UrlUtil.PG_CHAR_CREATION_OPTIONS];
 UrlUtil.URL_TO_ENG_HASH_BUILDER["recipe"] = UrlUtil.URL_TO_ENG_HASH_BUILDER[UrlUtil.PG_RECIPES];
 UrlUtil.URL_TO_ENG_HASH_BUILDER["deck"] = UrlUtil.URL_TO_ENG_HASH_BUILDER[UrlUtil.PG_DECKS];
+UrlUtil.URL_TO_ENG_HASH_BUILDER["facility"] = UrlUtil.URL_TO_ENG_HASH_BUILDER[UrlUtil.PG_BASTIONS];
 
 UrlUtil.URL_TO_ENG_HASH_BUILDER["subclass"] = it => {
 	return Hist.util.getCleanHash(

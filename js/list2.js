@@ -554,12 +554,13 @@ export class List {
 		if (!name || header.querySelector(".ve-lst__header-eng-name")) return;
 		if (this.constructor._getNameColumnWidth(name) == null) return;
 
-		this.constructor._scaleColumnsForEnglishName(name.parentElement);
+		const widthSubPx = [...header.children].some(ele => ele.classList.contains("ve-w-30p")) ? 30 : 0;
+		this.constructor._scaleColumnsForEnglishName(name.parentElement, {widthSubPx});
 		const english = document.createElement("button");
 		english.type = "button";
 		english.className = `${name.className.replace(/\bve-col-\d+(?:-\d+)?\b/g, "").replace(/\bsort\b/g, "")} ve-lst__header-eng-name`;
 		english.textContent = "英文名";
-		this.constructor._setNameColumnWidth(english, this.constructor._ENGLISH_NAME_COLUMN_WIDTH);
+		this.constructor._setNameColumnWidth(english, this.constructor._ENGLISH_NAME_COLUMN_WIDTH, {widthSubPx});
 		name.after(english);
 	}
 
@@ -586,12 +587,15 @@ export class List {
 		return match ? (Number(match[1]) + Number(match[2] || 0) / 10) / 12 * 100 : null;
 	}
 
-	static _setNameColumnWidth (ele, width) {
-		ele.style.setProperty("width", `${width}%`, "important");
-		ele.style.setProperty("flex", `0 0 ${width}%`, "important");
+	static _setNameColumnWidth (ele, width, {widthSubPx = 0} = {}) {
+		const widthCss = widthSubPx
+			? `calc(${width}% - ${width * widthSubPx / 100}px)`
+			: `${width}%`;
+		ele.style.setProperty("width", widthCss, "important");
+		ele.style.setProperty("flex", `0 0 ${widthCss}`, "important");
 	}
 
-	static _scaleColumnsForEnglishName (parent) {
+	static _scaleColumnsForEnglishName (parent, {widthSubPx = 0} = {}) {
 		const columns = [...parent.children]
 			// Bestiary's encounter-builder controls are hidden in the normal list and
 			// have no matching header column.
@@ -601,7 +605,7 @@ export class List {
 		const totalWidth = columns.reduce((total, {width}) => total + width, 0);
 		const factor = Math.min(1, (100 - this._ENGLISH_NAME_COLUMN_WIDTH) / totalWidth);
 		for (const {ele, width} of columns) {
-			this._setNameColumnWidth(ele, width * factor);
+			this._setNameColumnWidth(ele, width * factor, {widthSubPx});
 			ele.style.minWidth = "0";
 		}
 	}

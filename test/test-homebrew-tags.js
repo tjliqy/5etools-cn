@@ -1,4 +1,5 @@
 import fs from "fs";
+import "../node/locale/i18n.js";
 import "../js/parser.js";
 import "../js/utils.js";
 import {Worker} from "node:worker_threads";

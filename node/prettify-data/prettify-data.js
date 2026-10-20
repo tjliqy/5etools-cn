@@ -11,6 +11,7 @@ const FILE_BLOCKLIST = new Set([
 	"data/makecards.json",
 	"data/sources.json",
 	"data/changelog.json",
+	"data/changelog-cn.json",
 
 	"data/adventure/index.json",
 	"data/adventure/fluff-index.json",

@@ -53,7 +53,25 @@ def stable_token(value) -> str:
 # intra-feature activity.id cross-references ("LLAWActivityZeAD"), and
 # summon profiles cr ("floor(@classes.warlord.levels / 3)") are all
 # Foundry-evaluated machine values.
-MACHINE_LEAF = re.compile(r"/(alId|colStyles(?:\[\d+\])?|summonedByClass|style|type/tags(?:\[\d+\])?|spellcasting(?:\[\d+\])?/ability|featureType(?:\[\d+\])?|page|(?:skill|save)/[a-z]+|midiProperties/[A-Za-z0-9_]+|healing/bonus|flags(?:/[A-Za-z0-9_.%-]+|\[\d+\])+|foundryEffects(?:\[[^\]]*\])?/changes(?:\[\d+\])?/(?:key|mode|value|priority)|activities(?:\[[^\]]*\])?/roll\.formula|foundryActivities(?:\[[^\]]*\])?/save/dc\.formula|foundryActivities(?:\[[^\]]*\])?/target\.affects/count|foundryActivities(?:\[[^\]]*\])?/check\.associated(?:\[\d+\])?|foundryActivities(?:\[[^\]]*\])?/consumption/targets(?:\[\d+\])?/target|additionalSpells(?:\[[^\]]*\])?/(?:known|innate|prepared)/_\[\d+\]/choose|resources(?:\[[^\]]*\])?/count|activities(?:\[[^\]]*\])?/settings/(?:minimumAC|tempFormula)|activities(?:\[[^\]]*\])?/(?:range/value|save/dc\.formula|target\.affects/count|activity\.id)|activities(?:\[[^\]]*\])?/(?:summon/)?profiles(?:\[\d+\])?/cr)$")
+# LLExploits-style feat-level foundryActivities add five more of the same
+# semantics: roll.formula exploit-dice strings ("d@flags.ll.exploit.faces",
+# "(3 * @scaling)d@flags.ll.exploit.faces + @abilities.wis.mod"), check
+# DC formulas ("@flags.ll.exploit.dc"), duration unit enums ("miunte" —
+# upstream typo for minute), summon profile creature uuids
+# ("@creature[Mercenary (Brute)"), and target affects type enums
+# ("creatureOrObject").
+# FoxfireVamp-style spells carry custom three-letter school codes ("BLO",
+# "ANI", "OBL", "PRE", "CEL", "AUS", "OBF", "DOM", "PRO") beyond the official
+# one/two-letter set; school is always a routing enum and stays byte-identical
+# (official short codes already pass the ≤2-char analyser length rule).
+# foundryClassFeature entryData resources faces leaves are Foundry scale
+# formulas ("(@scale.demi-dragon.fabled-resistance-dice)") with the same
+# verbatim-substitution semantics as activities roll.formula.
+# Book-level author metadata ("book.author": "grzart"), entries by-credits
+# ("by": "Arcee"), and monster fluff font arrays (Jin-Gitaxias phonetic
+# speech "či'n-gütx" rendered in a fantasy font) are identity/decoration
+# content that stays verbatim.
+MACHINE_LEAF = re.compile(r"/(alId|colStyles(?:\[\d+\])?|summonedByClass|style|type/tags(?:\[\d+\])?|spellcasting(?:\[\d+\])?/ability|featureType(?:\[\d+\])?|page|(?:skill|save)/[a-z]+|midiProperties/[A-Za-z0-9_]+|healing/bonus|flags(?:/[A-Za-z0-9_.%-]+|\[\d+\])+|foundryEffects(?:\[[^\]]*\])?/changes(?:\[\d+\])?/(?:key|mode|value|priority)|activities(?:\[[^\]]*\])?/roll\.formula|foundryActivities(?:\[[^\]]*\])?/save/dc\.formula|foundryActivities(?:\[[^\]]*\])?/target\.affects/count|foundryActivities(?:\[[^\]]*\])?/check\.associated(?:\[\d+\])?|foundryActivities(?:\[[^\]]*\])?/consumption/targets(?:\[\d+\])?/target|additionalSpells(?:\[[^\]]*\])?/(?:known|innate|prepared)/_\[\d+\]/choose|resources(?:\[[^\]]*\])?/count|activities(?:\[[^\]]*\])?/settings/(?:minimumAC|tempFormula)|activities(?:\[[^\]]*\])?/(?:range/value|save/dc\.formula|target\.affects/count|activity\.id)|activities(?:\[[^\]]*\])?/(?:summon/)?profiles(?:\[\d+\])?/cr|foundryActivities(?:\[[^\]]*\])?/roll\.formula|foundryActivities(?:\[[^\]]*\])?/check/dc\.formula|foundryActivities(?:\[[^\]]*\])?/duration/units|foundryActivities(?:\[[^\]]*\])?/(?:summon/)?profiles(?:\[\d+\])?/uuid|foundryActivities(?:\[[^\]]*\])?/target/affects\.type|spell(?:\[[^\]]*\])?/school|foundryClassFeature(?:\[[^\]]*\])?/entryData/resources(?:\[[^\]]*\])?/faces|book(?:\[[^\]]*\])?/author|adventure(?:\[[^\]]*\])?/author|by|fluff(?:\[[^\]]*\])?/entries(?:\[[^\]]*\])?/font(?:\[\d+\])?|foundryImg(?:\[[^\]]*\])?|_copy(?:\[[^\]]*\])?/_mod/inherits\.valueExpression/value|_copy(?:\[[^\]]*\])?/_mod/items(?:\[\d+\])?/replace|items\[name=Example-[^\]]*\]/entr(?:y|ies)(?:\[\d+\])?|items\[name=[^\]]*(?:Playtesters?|Credits?|Artists?|Illustrators?|Authors?|Editors?|Cartographers?|Designers?|Developers?|Proofreaders?|Typesetters?|Consultants?|Playtest)[^\]]*\]/entries(?:\[\d+\])?|fontFamily|citation(?:\[[^\]]*\])?/name)$")
 
 # Renderer variable placeholders like "<$cha_mod$>" (item charge counts) are
 # substituted verbatim by the site and must stay byte-identical.
@@ -116,6 +134,17 @@ PB_FORMULA = re.compile(r"[+\-−\d\s,dD×xX*/().]*PB[+\-−\d\s,dD×xX*/().]*")
 AT_VARIABLE_FORMULA = re.compile(
     r"^(?:[0-9]+|d[0-9]+)[0-9a-zA-Z_+\-*/().\s]*@[a-zA-Z_][a-zA-Z0-9_.]*[0-9a-zA-Z_+\-*/().\s]*$"
 )
+# Foundry active-effect/versions handlebar templates ("{{damageType}}" in
+# monster _versions._abstract._mod damage defenses) are substituted by Foundry
+# at import time and stay byte-identical.
+FOUNDRY_TEMPLATE = re.compile(r"^\{\{[A-Za-z0-9_.-]+\}\}$")
+# Pure-Latin author bylines ("by Justice Arman") in bookData/adventureData
+# front matter are credit identity strings kept verbatim.
+BYLINE_TOKEN = re.compile(r"^by [A-Z][A-Za-z .''-]+$")
+# Constructed-language puzzle/vocabulary tokens ("thrimsan", "kauravi") are
+# all-lowercase invented words; translating them would break letter/order
+# based puzzles, and real English terms in lists are capitalized.
+CONLANG_TOKEN = re.compile(r"^[a-z][a-z'-]{4,}$")
 # Matches a 5etools tag and captures its display text (pipe field 0). Used to
 # project a target string down to prose + localized display text before the
 # residual substring check, so English inside routing fields (pipe fields >= 1,
@@ -133,6 +162,13 @@ def is_machine_tag_field(job) -> bool:
     tag = match.group("tag")
     if field == 0 and tag == "link" and URL_TOKEN.fullmatch(job.en_str or ""):
         return True
+    if field == 0 and tag == "link" and (job.en_str or "").strip() and not any(ch.isspace() for ch in job.en_str):
+        # {@link display|url} field 0 without whitespace is a proper noun /
+        # username / site anchor ("Wyldraven", "RanXi", "MobiusFlip",
+        # "r/UnearthedArcana", "u/FragSauce's") in credits sections; artist and
+        # author identity strings stay verbatim like multi-word credit names
+        # that the prose heuristic already skips.
+        return True
     if field == 0 and tag in VARIABLE_TAGS:
         # Variable formulas ("10 + PB", "1d6 − 1", "int 20") contain spaces/operators but
         # are never translatable display text.
@@ -143,6 +179,11 @@ def is_machine_tag_field(job) -> bool:
         # them via DataUtil.itemProperty.unpackUid into an abbreviation index, so
         # field 0 is a machine routing key that stays byte-identical English across
         # the localized repo (200+ tags in data/ and homebrew keep Latin keys).
+        return True
+    if field == 0 and tag == "i" and (job.en_str or "").strip() and not any(ch.isspace() for ch in job.en_str) and job.en_str.isascii():
+        # {@i Bubblegumshoe}-style single Latin tokens in italics are product
+        # names / foreign terms ({@i o-bakemono}) kept verbatim; translatable
+        # italic prose always contains spaces or CJK.
         return True
     if field == 0 and tag not in VARIABLE_TAGS:
         return False
@@ -183,13 +224,17 @@ def resolve_job_value(root, key_path: str):
         if indexed_named:
             # analyser emits index-anchored row-cell selectors as e.g. "rows[0][name=X]" ->
             # selector "0][name=X]": index the row, then select the named cell within it.
+            # A trailing ";index=N" disambiguates duplicate row-cell names and is a
+            # positional hint, not a field on the cell dict.
             index = int(indexed_named.group(1))
             if not isinstance(current, list) or index >= len(current):
                 return None, None
             row = current[index]
             if not isinstance(row, list):
                 return None, None
-            expected = dict(part.split("=", 1) for part in indexed_named.group(2).split(";") if "=" in part)
+            name_parts = [p for p in indexed_named.group(2).split(";") if "=" in p and not p.startswith("index=")]
+            explicit_cell_index = next((int(p.split("=", 1)[1]) for p in indexed_named.group(2).split(";") if p.startswith("index=")), None)
+            expected = dict(part.split("=", 1) for part in name_parts)
             matches = []
             for cell_index, cell in enumerate(row):
                 if not isinstance(cell, dict):
@@ -199,10 +244,14 @@ def resolve_job_value(root, key_path: str):
                     for field, value in expected.items()
                 ):
                     matches.append(cell_index)
-            if len(matches) != 1:
+            if explicit_cell_index is not None and explicit_cell_index in matches:
+                cell_pick = explicit_cell_index
+            elif len(matches) == 1:
+                cell_pick = matches[0]
+            else:
                 return None, None
-            current = row[matches[0]]
-            resolved += f"/{index}/{matches[0]}"
+            current = row[cell_pick]
+            resolved += f"/{index}/{cell_pick}"
             continue
         if not isinstance(current, list):
             return None, None
@@ -229,6 +278,35 @@ def resolve_job_value(root, key_path: str):
                 index = int(explicit_index)
             elif len(candidates) == 1:
                 index = candidates[0]
+            elif len(candidates) > 1 and "source" in expected:
+                # Duplicate names (e.g. "Stokkvari" gallery + statblock): prefer the
+                # candidate that also matches an expected "source" field when present.
+                source_cands = [i for i in candidates if expected["source"] in {stable_token(current[i].get("source"))}]
+                if len(source_cands) == 1:
+                    index = source_cands[0]
+                else:
+                    return None, None
+            elif len(candidates) > 1:
+                # Duplicate names without a source hint: prefer the candidate under
+                # which the NEXT path segment's key exists (e.g. the gallery with
+                # "images" rather than a sibling statblock without them).
+                remaining = path_segments(key_path)
+                next_raw = remaining[remaining.index(raw) + 1] if remaining.index(raw) + 1 < len(remaining) else None
+                next_key = re.match(r"[^\[\]]+", next_raw).group(0) if next_raw else None
+                if next_key:
+                    key_cands = [i for i in candidates
+                                 if isinstance(current[i], dict) and next_key in current[i]]
+                    if len(key_cands) == 1:
+                        index = key_cands[0]
+                    elif key_cands and next_key == "name":
+                        # Leaf .name on duplicate-named nodes: the name values
+                        # coincide by definition, so any candidate satisfies the
+                        # substring check; pick the first.
+                        index = key_cands[0]
+                    else:
+                        return None, None
+                else:
+                    return None, None
             else:
                 return None, None
         if index >= len(current):
@@ -330,6 +408,12 @@ def main() -> int:
             if PB_FORMULA.fullmatch(job.en_str):
                 continue
             if AT_VARIABLE_FORMULA.fullmatch(job.en_str):
+                continue
+            if FOUNDRY_TEMPLATE.fullmatch(job.en_str):
+                continue
+            if BYLINE_TOKEN.fullmatch(job.en_str):
+                continue
+            if CONLANG_TOKEN.fullmatch(job.en_str):
                 continue
             if MALFORMED_TAG_UID.search(job.uid or ""):
                 continue

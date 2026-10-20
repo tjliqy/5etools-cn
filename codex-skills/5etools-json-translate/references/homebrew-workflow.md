@@ -77,6 +77,16 @@ python3 <skill-dir>/scripts/compare_homebrew_schema.py \
 
 This per-file comparison uses the environment-compatible schema-fetch shim and supports Chinese `ENG_name` extensions. The target must either pass outright or introduce no schema-error signature beyond the English source. Existing source-schema incompatibilities are baseline evidence, not permission to add new target errors.
 
+Then validate the selected target's entity references against the 5etools data and all homebrew files. Use the homebrew test wrapper; it runs the lower-level tag checker for the selected file with the required additional-file and dependency settings. This catches stale or misspelled names in links and structured references (including `optionalfeature` and `subclassFeature`) that JSON parsing and schema validation cannot detect:
+
+```bash
+node test/test-homebrew-tags.js \
+  --file "${HOMEBREW_ZH_ROOT:-/data/homebrew}/path/to/target.json" \
+  --homebrew-root "${HOMEBREW_ZH_ROOT:-/data/homebrew}"
+```
+
+Run this from `/data/5etools-mirror-2.github.io`. A nonzero exit is a blocking validation failure. Inspect every missing-link report and fix references whose entity exists under another localized name or source. If a required entity has no Chinese target counterpart, follow the [missing-link boundary](../SKILL.md#missing-link-boundary): map the dependency to its English source and expected Chinese target, then ask before expanding translation scope. Do not suppress a failure or treat similarity suggestions as a successful match.
+
 Then run `npm run build` in `HOMEBREW_ZH_ROOT`, the structure gate, and compare the remaining non-Schema repository test scripts with the baseline:
 
 ```bash
