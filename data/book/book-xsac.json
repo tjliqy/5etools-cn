@@ -44,15 +44,15 @@
 							"type": "section",
 							"id": "003",
 							"entries": [
-								"关于如何解释规则的官方裁决在此{@i 贤者谏言合集}中做出。地下城主负责裁决游戏并决定是否在游戏中使用官方裁决。DM对规则问题始终拥有最终决定权。",
-								"D&D团队或海岸巫师公司其他成员的公开声明并非官方规则；它们只是建议。",
+								"关于如何解释规则的官方裁决在此{@i 贤者谏言合集}中做出。DM负责裁量游戏，并决定是否在游戏中采用官方裁决。DM对规则问题始终拥有最终决定权。",
+								"D&D团队或威世智其他任何人的公开声明都不是官方裁决：它们只是建议。",
 								{
 									"ENG_name": "Compiled Answers",
 									"name": "回答汇总",
 									"type": "entries",
 									"id": "004",
 									"entries": [
-										"这里汇编了与当前规则状态相关的贤者建议答案。"
+										"这里汇编了与当前规则状态相关的贤者谏言回答。"
 									]
 								},
 								{
@@ -67,14 +67,14 @@
 											"entries": [
 												{
 													"ENG_name": "Why even have Sage Advice when a DM can just make a ruling?",
-													"name": "既然DM可以直接做出裁决，为什么还要有《圣贤谏言》呢？",
+													"name": "既然DM可以直接做出裁决，为什么还要有《贤者谏言》呢？",
 													"type": "entries",
 													"id": "007",
 													"entries": [
 														"规则是使D&D成为游戏而非即兴讲故事的重要组成部分。游戏规则旨在帮助组织甚至激发D&D战役的行动。规则是一种工具，我们希望这些工具尽可能有效。无论这些工具有多好，它们都需要一群玩家来赋予它们生命，并需要DM来指导它们的使用。",
 														"DM是关键。在D&D的战役中可能会发生许多意想不到的事情，没有一套规则能够合理地应对所有意外情况。如果规则试图这样做，游戏会变得难以操作。另一种选择是让规则严格限制角色能做的事情，但这与D&D的开放性背道而驰。我们在第五版中采取的方向是建立一个DM可以在此基础上构建的规则基础，并且我们推崇DM作为规则涉及内容与未涉及内容之间的桥梁。",
 														"在典型的D&D游戏中，DM会做出许多规则决定\u2014\u2014有些几乎不引人注意，有些则相当明显。玩家也解释规则，整个团队保持游戏的运行。然而，有时一个规则的设计意图不明确，或者一个规则似乎与另一个规则相矛盾。",
-														"处理这些情况正是《圣贤谏言》的用武之地。它并非要取代DM的裁决权。正如规则本身一样，这份FAQ旨在为DM和玩家提供工具，让他们能够根据自己的喜好调整游戏。",
+														"处理这些情况正是《贤者谏言》的用武之地。它并非要取代DM的裁决权。正如规则本身一样，这份FAQ旨在为DM和玩家提供工具，让他们能够根据自己的喜好调整游戏。",
 														"我们通常会从一到三个不同的角度来处理规则问题。"
 													]
 												},
@@ -152,7 +152,7 @@
 													"type": "entries",
 													"id": "010",
 													"entries": [
-														"在属性检定或豁免检定中掷出1点不是自动失败。在攻击骰中掷出1点是自动未命中。"
+														"在属性检定或豁免检定中掷出1点不是自动失败。在攻击检定中掷出1则是自动失手。"
 													]
 												}
 											]
@@ -177,11 +177,11 @@
 											"entries": [
 												{
 													"ENG_name": "If I'm hidden and a creature with Blindsight or Truesight sees me, am I still hidden?",
-													"name": "如果我处于隐蔽状态，而一个拥有盲视或真实视觉的生物发现了我，我是否仍然保持隐蔽？",
+													"name": "如果我处于躲藏下，而一个拥有盲视或真实视觉的生物发现了我，我是否仍然保持躲藏？",
 													"type": "entries",
 													"id": "014",
 													"entries": [
-														"否。处于隐蔽状态是一种游戏状态，它会赋予你{@condition 隐形|XPHB}状态。如果一个生物发现了你，你将不再隐蔽并失去该状态，如{@action 躲藏|XPHB}动作所述（参见{@book 玩家手册附录C|XPHB|10}）。"
+														"否。处于躲藏下是一种游戏状态，它会赋予你{@condition 隐形|XPHB}状态。如果一个生物发现了你，你将不再处于躲藏并失去该状态，如{@action 躲藏|XPHB}动作中所述（参见{@book 玩家手册附录C|XPHB|10}）。"
 													]
 												},
 												{
@@ -213,7 +213,7 @@
 												},
 												{
 													"ENG_name": "Are extradimensional spaces, such as a demiplane or the space created by Rope Trick, considered to be on a different plane of existence?",
-													"name": "异次元空间（例如半位面或绳之诡术创造的空间）是否被视为存在于不同的存在位面？",
+													"name": "异次元空间（例如半位面或魔绳术创造的空间）是否被视为存在于不同的存在位面？",
 													"type": "entries",
 													"id": "018",
 													"entries": [
@@ -235,7 +235,7 @@
 													"type": "entries",
 													"id": "01a",
 													"entries": [
-														"法术{@spell 高等复原术|XPHB}可以缩小{@condition 力竭|XPHB}状态。"
+														"法术{@spell 高等复原术|XPHB}可以降低{@condition 力竭|XPHB}等级。"
 													]
 												},
 												{
@@ -249,11 +249,11 @@
 												},
 												{
 													"ENG_name": "The Frightened condition says \"while the source of its fear is within line of sight.\" Does that mean you have Disadvantage on attack rolls and ability checks even if the source is imperceptible but you have a clear line to its space?",
-													"name": "恐惧状态描述为\"当恐惧源在视线范围内时\"。这是否意味着即使恐惧源不可察觉，但只要你有清晰的视线到达其位置，你在攻击检定和属性检定上就会有劣势？",
+													"name": "恐慌状态描述为\"当恐惧源在视线内时\"。这是否意味着即使恐惧源不可察觉，但只要你有清晰的视线到达其位置，你在攻击检定和属性检定上就会有劣势？",
 													"type": "entries",
 													"id": "01c",
 													"entries": [
-														"不。如果你看不见某物，那它就不在你的视野范围内。说到\"视野范围\"，游戏使用的是这个英语术语的普通含义，在规则中没有特殊含义。"
+														"不。如果你看不见某物，那它就不在你的视线内。说到\"视线\"，游戏使用的是这个英文术语的普通含义，在规则中没有特殊含义。"
 													]
 												}
 											]
@@ -278,7 +278,7 @@
 											"entries": [
 												{
 													"ENG_name": "Can you delay your turn and take it later in the round?",
-													"name": "你可以推迟你的回合并在稍后的轮次中进行吗？",
+													"name": "你可以推迟你的回合，在本轮稍后的时间点进行吗？",
 													"type": "entries",
 													"id": "020",
 													"entries": [
@@ -287,11 +287,11 @@
 												},
 												{
 													"ENG_name": "I have a readied action. Can I stop readying to take an Opportunity Attack? Or does the Ready action take a full-round commitment?",
-													"name": "我有一个准备动作。我能停止准备来发动借机攻击吗？还是说准备动作需要一整轮的承诺？",
+													"name": "我有一个预备好的动作。我可以停止预备来发动借机攻击吗？还是说预备动作需要一整轮的承诺？",
 													"type": "entries",
 													"id": "021",
 													"entries": [
-														"将{@action 预备|XPHB}动作视为一种预备动作而非承诺。通过采取{@action 预备|XPHB}动作，你让你的角色能够在特定境况下使用一个量身定制的{@variantrule 反应|XPHB}。然而，你并不一定要采取这个预备的{@variantrule 反应|XPHB}。随着战斗的进行，你可以决定采取这个预备的{@variantrule 反应|XPHB}\u2014\u2014或者，如果计划有变，你可以采取任何其他你可能拥有的{@variantrule 反应|XPHB}，比如一次{@action 借机攻击|XPHB}。",
+														"将{@action 预备|XPHB}动作视为一种蓄势待发的动作而非承诺。通过采取{@action 预备|XPHB}动作，你让你的角色能够在特定境况下使用一个量身定制的{@variantrule 反应|XPHB}。然而，你并不一定要采取这个预备的{@variantrule 反应|XPHB}。随着战斗的进行，你可以决定采取这个预备的{@variantrule 反应|XPHB}\u2014\u2014或者，如果计划有变，你可以采取任何其他你可能拥有的{@variantrule 反应|XPHB}，比如一次{@action 借机攻击|XPHB}。",
 														"但请记住你只有一个{@variantrule 反应|XPHB}。发动一次{@action 借机攻击|XPHB}意味着你将无法执行那个准备好的{@variantrule 反应|XPHB}，所以请谨慎选择你要执行的{@variantrule 反应|XPHB}。"
 													]
 												},
@@ -319,30 +319,30 @@
 													"type": "entries",
 													"id": "024",
 													"entries": [
-														"你可以穿过敌人的空间，仅当该敌人（A）具有{@condition 失能|XPHB}状态，（B）是微型生物，或（C）体型至少比你大或小二个等级。{@condition 倒地|XPHB}状态不会覆盖此规则。"
+														"只有当该敌人（A）具有{@condition 失能|XPHB}状态、（B）是微型生物，或（C）体型至少比你大两级或小两级时，你才能穿过该敌人的空间。{@condition 倒地|XPHB}状态不会覆盖这一规则。"
 													]
 												},
 												{
 													"ENG_name": "Does travel pace apply to movement in combat or just when traveling?",
-													"name": "旅行速度适用于战斗中的移动还是仅适用于旅行时？",
+													"name": "旅行步调适用于战斗中的移动还是仅适用于旅行时？",
 													"type": "entries",
 													"id": "025",
 													"entries": [
-														"旅行速度规则不适用于战斗。"
+														"旅行步调规则不适用于战斗。"
 													]
 												},
 												{
 													"ENG_name": "If you have a feature like Cunning Action or Step of the Wind, can you take the Dash action more than once on your turn?",
-													"name": "如果你有像狡猾行动或风行步伐这样的特性，你可以在你的回合中多次采取冲刺行动吗？",
+													"name": "如果你有像灵巧动作或疾步如风这样的特性，你可以在你的回合中多次执行疾走动作吗？",
 													"type": "entries",
 													"id": "026",
 													"entries": [
-														"如果你能将{@action 疾走|XPHB}动作作为附赠动作执行，规则中没有任何内容阻止你同时用你的常规动作也执行{@action 疾走|XPHB}动作。当你使用像{@classFeature 动作如潮|战士|XPHB|2|XPHB}这样的特性时，同样的原则也适用；你可以用你的两个动作都来执行{@action 疾走|XPHB}动作。"
+														"如果你能将{@action 疾走|XPHB}动作作为附赠动作执行，规则中没有任何内容阻止你也用常规动作执行{@action 疾走|XPHB}动作。当你使用像{@classFeature 动作如潮|战士|XPHB|2|XPHB}这样的特性时，同样的原则也适用；你可以把两个动作都用来执行{@action 疾走|XPHB}动作。"
 													]
 												},
 												{
 													"ENG_name": "My Rogue/Wizard can get a Bonus Action to Dash by using Cunning Action, and I can cast Expeditious Retreat on myself to get a Bonus Action to Dash. Do I get two Bonus Actions to Dash?",
-													"name": "我的游荡者/法师可以通过使用灵巧动作获得一个冲刺的附赠动作，我也可以对自己施放迅捷撤退来获得一个冲刺的附赠动作。这样我能获得两个冲刺的附赠动作吗？",
+													"name": "我的游荡者/法师可以通过使用灵巧动作获得一个疾走的附赠动作，我也可以对自己施放脚底抹油来获得一个疾走的附赠动作。这样我能获得两个疾走的附赠动作吗？",
 													"type": "entries",
 													"id": "027",
 													"entries": [
@@ -351,7 +351,7 @@
 												},
 												{
 													"ENG_name": "If you use the Help action to distract a foe, do you have to stay within 5 feet of it for the action to work?",
-													"name": "如果你使用帮助动作来分散敌人的注意力，你必须保持在它5尺范围内才能使动作生效吗？",
+													"name": "如果你使用协助动作来分散敌人的注意力，你必须保持在它5尺范围内才能使动作生效吗？",
 													"type": "entries",
 													"id": "028",
 													"entries": [
@@ -360,43 +360,43 @@
 												},
 												{
 													"ENG_name": "If I'm hidden and become unhidden when I shoot an arrow at a target, does hiding again require an action?",
-													"name": "如果我处于隐匿状态并在向目标射箭时暴露，再次隐匿是否需要消耗一个动作？",
+													"name": "如果我处于躲藏中，并在向目标射箭时暴露，再次躲藏是否需要消耗一个动作？",
 													"type": "entries",
 													"id": "029",
 													"entries": [
-														"没有特殊能力时，在战斗中躲藏需要消耗{@action 躲藏|XPHB}动作。"
+														"没有特殊能力时，在战斗中躲藏需要执行{@action 躲藏|XPHB}动作。"
 													]
 												},
 												{
 													"ENG_name": "If I use the Ready action to deal damage to someone who's moving, do I deny the target the rest of its movement?",
-													"name": "如果我使用准备动作对正在移动的某人造成伤害，我是否剥夺了目标的剩余移动能力？",
+													"name": "如果我使用预备动作对正在移动的某人造成伤害，我是否剥夺了目标的剩余移动能力？",
 													"type": "entries",
 													"id": "02a",
 													"entries": [
-														"对移动中的目标造成伤害不会阻拦其移动力，除非该伤害附带有停止移动的属性。像{@feat 哨兵|XPHB}专长这样的能力会赋予你这种属性。将移动中的生物降至0{@variantrule 生命值|XPHB}通常也是阻止它的有效方式！"
+														"对移动中的目标造成伤害并不会阻止其移动，除非该伤害附带能使其停止移动的能力。像{@feat 哨兵|XPHB}专长这样的东西就能赋予你这种能力。将移动中的生物降至0{@variantrule 生命值|XPHB}通常也是阻止它的有效方式！"
 													]
 												},
 												{
 													"ENG_name": "Can you use the Ready action to take the Attack action on someone else's turn and then combine the Charger feat with it?",
-													"name": "你能使用准备动作在他人的回合进行攻击动作，然后将其与冲锋手专长结合吗？",
+													"name": "你能使用预备动作在他人的回合进行攻击动作，然后将其与冲锋手专长结合吗？",
 													"type": "entries",
 													"id": "02b",
 													"entries": [
-														"不能。当你采取{@action 预备|XPHB}动作时，你可以移动至多{@variantrule 速度|XPHB}的距离或采取一个定义好的动作作为你的{@variantrule 反应|XPHB}。{@feat 冲锋手|XPHB}专长的冲锋攻击增益依赖于在同一回合内既移动又采取{@action 攻击|XPHB}动作。"
+														"不能。当你采取{@action 预备|XPHB}动作时，你可以移动至多{@variantrule 速度|XPHB}的距离，或采取一个设定好的动作作为你的{@variantrule 反应|XPHB}。{@feat 冲锋手|XPHB}专长的冲锋攻击增益依赖于在同一回合内既移动又采取{@action 攻击|XPHB}动作。"
 													]
 												},
 												{
 													"ENG_name": "For readying a spell or another action, does the target have to be in range?",
-													"name": "准备一个法术或其他动作时，目标是否必须在范围内？",
+													"name": "预备一个法术或其他动作时，目标是否必须在范围内？",
 													"type": "entries",
 													"id": "02c",
 													"entries": [
-														"你的目标必须在你采取预备动作时处于范围内，而不是在你第一次采取{@action 预备|XPHB}动作预备它时。"
+														"你的目标必须在你执行预备好的动作时处于范围内，而不是在你最初采取{@action 预备|XPHB}动作进行预备时。"
 													]
 												},
 												{
 													"ENG_name": "How does readying a spell work? Do you lose your spell slot if the trigger never occurs?",
-													"name": "准备法术是如何工作的？如果触发条件从未出现，您会失去法术位吗？",
+													"name": "预备法术是如何运作的？如果触发条件从未出现，你会失去法术位吗？",
 													"type": "entries",
 													"id": "02d",
 													"entries": [
@@ -405,25 +405,25 @@
 												},
 												{
 													"ENG_name": "Can a readied action occur during an enemy's triggering action, such as between its first and second attacks when it uses Multiattack?",
-													"name": "准备的动作是否可以在敌人的触发动作期间发生，比如在使用多重攻击时它的第一次和第二次攻击之间？",
+													"name": "预备好的动作是否可以在敌人的触发动作期间发生，比如在使用多重攻击时它的第一次和第二次攻击之间？",
 													"type": "entries",
 													"id": "02e",
 													"entries": [
-														"准备的动作在触发条件满足后立即发生。如果您将触发条件定义为一次攻击，那么您的动作将在那次攻击之后发生。"
+														"预备好的动作在触发条件满足后立即发生。如果你将触发条件定义为一次攻击，你的动作将在那次攻击之后发生。"
 													]
 												},
 												{
 													"ENG_name": "How does a Reach weapon work with Opportunity Attack?",
-													"name": "触及武器如何借机攻击生效？",
+													"name": "触及武器与借机攻击是如何互动的？",
 													"type": "entries",
 													"id": "02f",
 													"entries": [
-														"当你可见的一个生物移动超出你的触及范围时会触发{@action 借机攻击|XPHB}。如果你想用一把{@itemProperty R|XPHB|触及}武器（如{@item 长柄刀|XPHB}或{@item 长戟|XPHB}）进行{@action 借机攻击|XPHB}，可以在生物离开该武器的触及范围时发动。例如，如果你手持{@item 长戟|XPHB}，一个紧邻你的生物移动5尺不会触发{@action 借机攻击|XPHB}。如果该生物尝试再移动5尺\u2014\u2014离开你的10尺触及范围\u2014\u2014就会触发{@action 借机攻击|XPHB}。"
+														"当一个你能看见的生物移出你的触及范围时，会触发{@action 借机攻击|XPHB}。如果你想用一把{@itemProperty R|XPHB|触及}武器（如{@item 长柄刀|XPHB}或{@item 长戟|XPHB}）进行{@action 借机攻击|XPHB}，可以在生物离开该武器的触及范围时发动。例如，如果你手持{@item 长戟|XPHB}，一个紧邻你的生物移动5尺不会触发{@action 借机攻击|XPHB}。如果该生物尝试再移动5尺\u2014\u2014离开你的10尺触及范围\u2014\u2014就会触发{@action 借机攻击|XPHB}。"
 													]
 												},
 												{
 													"ENG_name": "Can a Blinded creature make an Opportunity Attack?",
-													"name": "失明的生物能否发动借机攻击？",
+													"name": "目盲的生物能否发动借机攻击？",
 													"type": "entries",
 													"id": "030",
 													"entries": [
@@ -473,7 +473,7 @@
 													"type": "entries",
 													"id": "035",
 													"entries": [
-														"如果你的目标和另一个生物之间有你，那么你的目标将获得{@variantrule 掩护|XPHB|半身掩护}。"
+														"如果有另一个生物位于你和你的目标之间，你的目标将获得{@variantrule 掩护|XPHB|半身掩护}。"
 													]
 												},
 												{
@@ -487,7 +487,7 @@
 												},
 												{
 													"ENG_name": "A dragon uses a breath weapon against me. I succeed on the save, and I have Resistance to the damage. Do I take only one-quarter of the damage?",
-													"name": "一条龙对我使用了喷吐武器。我通过了豁免检定，并且对该伤害具有抗性。那么我是否只受到四分之一的伤害？",
+													"name": "一条龙对我使用了吐息武器。我通过了豁免检定，并且对该伤害具有抗性。那么我是否只受到四分之一的伤害？",
 													"type": "entries",
 													"id": "037",
 													"entries": [
@@ -500,7 +500,7 @@
 													"type": "entries",
 													"id": "038",
 													"entries": [
-														"如果你用近战攻击将一个生物的生命值降至0{@variantrule 生命值|XPHB}，你可以使该生物昏迷。该近战攻击不仅限于武器。即使是近战法术攻击也可以用来使生物昏迷。"
+														"如果你用一次近战攻击将一个生物的{@variantrule 生命值|XPHB}降至0，你可以将该生物击晕。该近战攻击并不限于武器。即使是近战法术攻击也可以用来将生物击晕。"
 													]
 												},
 												{
@@ -543,30 +543,30 @@
 											"entries": [
 												{
 													"ENG_name": "Would a temporary stat bump fulfill a multiclass prerequisite, or does the base score have to meet the requirement?",
-													"name": "临时的属性提升能否满足职业转换的先决条件，还是必须基础属性达到要求？",
+													"name": "临时的属性提升可以满足兼职的先决条件吗，还是必须由基础属性值满足要求？",
 													"type": "entries",
 													"id": "03e",
 													"entries": [
-														"必须满足基础属性得分，而非临时得分，以满足兼职的先决条件。"
+														"必须由你的基础属性值，而非临时提升的属性值，来满足兼职的先决条件。"
 													]
 												},
 												{
 													"ENG_name": "When multiclassing, do you get the cantrips from all your classes?",
-													"name": "当你多职业时，你能否从所有职业中获得戏法？",
+													"name": "兼职时，我可以从所有职业中获得戏法吗？",
 													"type": "entries",
 													"id": "03f",
 													"entries": [
-														"如果您的任何职业赋予了您戏法，您将获得它们全部。"
+														"如果你的任何一个职业赋予你戏法，你将获得全部这些戏法。"
 													]
 												},
 												{
 													"ENG_name": "Do you gain proficiency in more saving throws when multiclassing?",
-													"name": "当你多职业时，是否会获得更多豁免检定的熟练度？",
+													"name": "兼职时会获得更多豁免检定的熟练吗？",
 													"type": "entries",
 													"id": "040",
 													"entries": [
 														"当你通过兼职获得一个新职业的等级时，你只会获得该职业介绍中\"作为兼职角色\"部分列出的特性。这不包括豁免检定。",
-														"然而，如果一个职业通过其特性之一授予额外的熟练或训练，你也会获得这些，无论该职业是否是第一个。例如，如果你在{@class 牧师|XPHB}升级并选择{@classFeature 保护者|牧师|XPHB|1|XPHB}特性的{@classFeature 圣职|牧师|XPHB|1|XPHB}选项，你将获得军用武器的熟练和重甲的训练；如果你是{@class 游侠|XPHB|幽域追踪者游侠|幽域追踪者|XPHB}并获得{@subclassFeature 钢铁意志|游侠|XPHB|幽域追踪者|XPHB|7}特性，你将获得感知豁免的熟练\u2014\u2014即使{@class 牧师|XPHB}或{@class 游侠|XPHB}分别不是你的第一个职业。"
+														"然而，如果一个职业通过其特性之一授予额外的熟练或受训，你也会获得这些，无论该职业是否为你的第一个职业。例如，如果你在{@class 牧师|XPHB}中获得等级并选择{@classFeature 圣职|牧师|XPHB|1|XPHB}特性的{@classFeature 保护者|牧师|XPHB|1|XPHB}选项，你将获得军用武器的熟练与重甲的受训；如果你是{@class 游侠|XPHB|幽域追踪者游侠|幽域追踪者|XPHB}并获得{@subclassFeature 钢铁意志|游侠|XPHB|幽域追踪者|XPHB|7}特性，你将获得感知豁免的熟练\u2014\u2014即使{@class 牧师|XPHB}或{@class 游侠|XPHB}分别不是你的第一个职业。"
 													]
 												},
 												{
@@ -589,11 +589,11 @@
 												},
 												{
 													"ENG_name": "A Wizard multiclasses into a Sorcerer with the Wild Magic Sorcery subclass. Do spells cast from their spellbook trigger Wild Magic Surge if they are on the Sorcerer spell list, or do they have to gain them from Sorcerer to trigger?",
-													"name": "一名法师使用狂野魔法术士子职业兼职成为术士。如果他们从法术书中施放的法术属于术士法术列表，是否会触发狂野魔法涌动？还是必须通过术士职业获得这些法术才能触发？",
+													"name": "一名法师兼职成为狂野术法子职业的术士。如果从法术书中施放的法术也在术士法术列表上，会触发狂野魔法浪涌吗？还是必须通过术士职业获得这些法术才能触发？",
 													"type": "entries",
 													"id": "043",
 													"entries": [
-														"从兼职规则中：\"{@book 你准备的每个法术都与你的一个职业相关联。|XPHB|2|施法|1}\" 这条规则意味着只有作为你{@class 术士|XPHB}职业特性一部分准备的法术才会触发{@table 狂野魔法浪涌|XPHB}。"
+														"兼职规则中写道：\"{@book 你准备的每个法术都与你的一个职业相关联。|XPHB|2|施法|1}\" 这条规则意味着只有作为你{@class 术士|XPHB}职业特性一部分准备的法术才会触发{@table 狂野魔法浪涌|XPHB}。"
 													]
 												}
 											]
@@ -647,7 +647,7 @@
 													"type": "entries",
 													"id": "04a",
 													"entries": [
-														"如果你使用野蛮人的{@classFeature 鲁莽攻击|野蛮人|XPHB|2|XPHB}，所有攻击检定对你具有{@variantrule 优势|XPHB}直到你的下个回合开始。"
+														"如果你使用野蛮人的{@classFeature 鲁莽攻击|野蛮人|XPHB|2|XPHB}，所有对你的攻击检定都将具有{@variantrule 优势|XPHB}，直到你的下个回合开始。"
 													]
 												}
 											]
@@ -666,7 +666,7 @@
 											"entries": [
 												{
 													"ENG_name": "Do the benefits from Bardic Inspiration and the Guidance spell stack? Can they be applied to the same roll?",
-													"name": "吟游诗人的激励和神导术的增益效果可以叠加吗？它们可以应用于同一个掷骰吗？",
+													"name": "吟游诗人激励和神导术的增益可以叠加吗？它们可以应用于同一次掷骰吗？",
 													"type": "entries",
 													"id": "04d",
 													"entries": [
@@ -675,11 +675,11 @@
 												},
 												{
 													"ENG_name": "If used on a damage roll, does a College of Lore Bard's Cutting Words apply to any kind of damage roll including an auto-hit spell like Magic Missile?",
-													"name": "如果用于伤害掷骰，博学学院吟游诗人的\"尖刻言辞\"是否适用于任何类型的伤害掷骰，包括像魔法飞弹这样的自动命中法术？",
+													"name": "如果用于伤害掷骰，逸闻学院吟游诗人的语出惊人是否适用于任何类型的伤害掷骰，包括像魔法飞弹这样的自动命中法术？",
 													"type": "entries",
 													"id": "04e",
 													"entries": [
-														"你可以使用{@subclassFeature 语出惊人|吟游诗人|XPHB|逸闻|XPHB|3}来缩小任何需要进行伤害掷骰的效应造成的伤害（包括{@spell 魔法飞弹|XPHB}），即使该伤害掷骰之前没有进行攻击检定。"
+														"你可以使用{@subclassFeature 语出惊人|吟游诗人|XPHB|逸闻|XPHB|3}来减少任何需要进行伤害掷骰的效应所造成的伤害（包括{@spell 魔法飞弹|XPHB}），即使该伤害掷骰之前没有进行攻击检定。"
 													]
 												},
 												{
@@ -690,12 +690,12 @@
 													"entries": [
 														"一名{@class 吟游诗人|XPHB}可以使用任何记录有吟游诗人法术的{@item 法术卷轴|XDMG}。这包括吟游诗人通过其{@classFeature 魔法奥秘|吟游诗人|XPHB|10|XPHB}特性准备的任何法术。",
 														"然而，这并不意味着吟游诗人可以使用{@item 法术卷轴|XDMG}来施放{@class 牧师|XPHB}、{@class 德鲁伊|XPHB}和{@class 法师|XPHB}法术列表中的任何法术（这些法术列表包含在{@classFeature 魔法奥秘|吟游诗人|XPHB|10|XPHB}中）。对于牧师、德鲁伊和法师列表独有的法术，吟游诗人必须通过{@classFeature 魔法奥秘|吟游诗人|XPHB|10|XPHB}准备该法术，才能将其视为吟游诗人法术。",
-														"例如，如果一位吟游诗人拥有一张{@item 法术卷轴|XDMG}的{@spell 灵体卫士|XPHB}（牧师法术列表中的一个法术），那么该吟游诗人只有在通过{@classFeature 魔法奥秘|吟游诗人|XPHB|10|XPHB}准备了{@spell 灵体卫士|XPHB}的情况下才能使用该卷轴。否则，该卷轴对他们来说是无法识别的。"
+														"例如，如果一位吟游诗人拥有一张记载着{@spell 灵体卫士|XPHB}（牧师法术列表中的一个法术）的{@item 法术卷轴|XDMG}，那么该吟游诗人只有在通过{@classFeature 魔法奥秘|吟游诗人|XPHB|10|XPHB}准备了{@spell 灵体卫士|XPHB}的情况下才能使用该卷轴。否则，该卷轴对他们来说是无法识别的。"
 													]
 												},
 												{
 													"ENG_name": "For the College of Valor, does using Combat Inspiration's Offense feature mean that the Bardic Inspiration die counts as a damage die for purposes of Critical Hits?",
-													"name": "对于勇气学院的吟游诗人来说，使用战斗激励的进攻特性是否意味着吟游诗人的激励骰在重击时被视为伤害骰？",
+													"name": "对于勇气学院的吟游诗人来说，使用战斗激励的进攻特性是否意味着吟游诗人激励骰在计算重击时被视为伤害骰？",
 													"type": "entries",
 													"id": "050",
 													"entries": [
@@ -718,11 +718,11 @@
 											"entries": [
 												{
 													"ENG_name": "Can a bound and gagged Druid simply use Wild Shape to get out? It's hard to capture someone who can turn into a mouse at will.",
-													"name": "一个被捆绑并塞住嘴的德鲁伊能直接使用野性形态逃脱吗？很难抓住一个能随意变成老鼠的人。",
+													"name": "一个被捆绑并塞住嘴的德鲁伊能直接使用荒野形态逃脱吗？很难抓住一个能随意变成老鼠的人。",
 													"type": "entries",
 													"id": "053",
 													"entries": [
-														"变形为不同的体型可以是一种有效的逃脱方式，具体取决于牵绊或限制的性质；例如，{@item 镣铐|XPHB}仅对小型或中等生物有效，因此变形为微型动物将使{@class 德鲁伊|XPHB}能够轻松挣脱束缚。",
+														"变形为不同的体型可以是一种有效的逃脱方式，具体取决于束缚或禁锢的性质；例如，{@item 镣铐|XPHB}仅对小型或中等生物有效，因此变形为微型动物将使{@class 德鲁伊|XPHB}能够轻松挣脱束缚。",
 														"然而，生物改变体型不会自动结束{@condition 受擒|XPHB}或{@condition 束缚|XPHB}状态，除非这导致该生物不再满足效应的体型要求（如果有）。例如，{@creature 巨蟹|XMM|巨蟹的}的爪击只能擒抱中等或更小的目标；如果一个被{@creature 巨蟹|XMM}擒抱的{@class 德鲁伊|XPHB}变形成大型动物，该德鲁伊将不再处于受擒状态。"
 													]
 												}
@@ -742,7 +742,7 @@
 											"entries": [
 												{
 													"ENG_name": "If my Battle Master Fighter provokes an Opportunity Attack and it misses, can I use Riposte?",
-													"name": "如果我的战斗大师战士引发了借机攻击但未命中，我是否可以使用反击？",
+													"name": "如果我的战斗大师战士引发了借机攻击且其未命中，我可以使用反击吗？",
 													"type": "entries",
 													"id": "056",
 													"entries": [
@@ -755,7 +755,7 @@
 													"type": "entries",
 													"id": "057",
 													"entries": [
-														"不能。{@optfeature 缴械攻击|XPHB}会迫使一个生物放下它所持有的物件。穿戴中的{@item 盾牌|XPHB|盾牌}不仅仅是手持的。"
+														"不能。{@optfeature 缴械攻击|XPHB}会迫使一个生物掉落它所持有的物件。已穿戴的{@item 盾牌|XPHB|盾牌}不仅仅是持握的。"
 													]
 												}
 											]
@@ -783,11 +783,11 @@
 												},
 												{
 													"ENG_name": "Can a Warrior of the Open Hand Monk's Open Hand Technique push a Large or larger creature or give it the Prone condition?",
-													"name": "一位散打宗武僧的散打技巧能否推动大型或更大的生物或使其陷入倒地状态？",
+													"name": "一位散打武者武僧的散打技巧能否推动大型或更大的生物或使其陷入倒地状态？",
 													"type": "entries",
 													"id": "05b",
 													"entries": [
-														"散打技巧（{@subclassFeature 散打技巧|武僧|XPHB|散打|XPHB|3|XPHB}）有意忽略了生物体型。武僧（{@class 武僧|XPHB|武僧的}）的能量为许多非凡效应提供动力！如果一个特性受到生物体型的限制，该特性会明确说明。"
+														"{@subclassFeature 散打技巧|武僧|XPHB|散打|XPHB|3|XPHB}有意忽略生物体型。{@class 武僧|XPHB|武僧}的能量能产生许多非凡效应！如果一个特性受到生物体型的限制，该特性会明确说明。"
 													]
 												}
 											]
@@ -806,7 +806,7 @@
 											"entries": [
 												{
 													"ENG_name": "Would the Divine Sense feature of a Paladin's Channel Divinity register an Aasimar or a Tiefling due to their heritage?",
-													"name": "圣武士的圣洁感知特性是否会因为阿斯莫或提夫林的血统而触发？",
+													"name": "圣武士的神圣感知特性是否会因为阿斯莫或提夫林的血统而触发？",
 													"type": "entries",
 													"id": "05e",
 													"entries": [
@@ -829,7 +829,7 @@
 											"entries": [
 												{
 													"ENG_name": "Can a Rogue use Sneak Attack more than once per round?",
-													"name": "游荡者每轮可以使用偷袭多次吗？",
+													"name": "游荡者每轮可以多次使用偷袭吗？",
 													"type": "entries",
 													"id": "061",
 													"entries": [
@@ -839,29 +839,29 @@
 												},
 												{
 													"ENG_name": "Does Uncanny Dodge work automatically against every attack a Rogue gets hit by? Spell attacks too?",
-													"name": "游荡者的神奇闪避是否会自动作用于其受到的所有攻击？法术攻击也包括在内吗？",
+													"name": "游荡者的直觉闪避是否会自动作用于其受到的每一次攻击？法术攻击也包括在内吗？",
 													"type": "entries",
 													"id": "062",
 													"entries": [
-														"一次{@classFeature 直觉闪避|游荡者|XPHB|5|XPHB}的使用仅能作用于一次攻击，因为它会消耗你的{@variantrule 反应|XPHB}，并且仅在你能够看见攻击手时生效。它可以作用于所有类型的攻击，包括法术攻击，但对于通过豁免检定而非攻击检定来造成伤害的法术或其他效应（例如{@spell 火球术|XPHB}）则无效。"
+														"一次{@classFeature 直觉闪避|游荡者|XPHB|5|XPHB}的使用仅能作用于一次攻击，因为它会消耗你的{@variantrule 反应|XPHB}，并且仅在你能够看见攻击者时生效。它可以作用于所有类型的攻击，包括法术攻击，但对于通过豁免检定而非攻击检定来造成伤害的法术或其他效应（例如{@spell 火球术|XPHB}）则无效。"
 													]
 												},
 												{
 													"ENG_name": "Can a Rogue use Evasion if they are surprised?",
-													"name": "游荡者在被突袭时能使用规避能力吗？",
+													"name": "游荡者在被突袭时能使用反射闪避吗？",
 													"type": "entries",
 													"id": "063",
 													"entries": [
-														"是的。在战斗开始时处于{@status 突袭|XPHB}状态的生物会在{@variantrule 先攻|XPHB}掷骰上具有{@variantrule 劣势|XPHB}。{@class 游荡者|XPHB}只要不处于{@condition 失能|XPHB}状态就能使用{@classFeature 反射闪避|游荡者|XPHB|7|XPHB}。"
+														"是的。在战斗开始时处于{@status 突袭|XPHB}状态的生物会在{@variantrule 先攻|XPHB}检定上具有{@variantrule 劣势|XPHB}。{@class 游荡者|XPHB}只要不处于{@condition 失能|XPHB}状态就能使用{@classFeature 反射闪避|游荡者|XPHB|7|XPHB}。"
 													]
 												},
 												{
 													"ENG_name": "Can the Rogue's Reliable Talent feature be used in conjunction with other features, like the Champion's Remarkable Athlete feature or the Bard's Jack of All Trades feature?",
-													"name": "游荡者的可靠才能特性是否可以与其他特性结合使用，比如勇士的非凡运动员特性或吟游诗人的万事通特性？",
+													"name": "游荡者的可靠才能特性是否可以与其他特性结合使用，比如勇士的运动健将特性或吟游诗人的万事通特性？",
 													"type": "entries",
 													"id": "064",
 													"entries": [
-														"{@classFeature 可靠才能|游荡者|XPHB|7|XPHB}可以与其他特性结合使用，只要进行的属性检定同时满足两个特性的要求。例如，{@classFeature 可靠才能|游荡者|XPHB|7|XPHB}仅适用于使用你的技能或工具熟练项进行的检定，而{@classFeature 万事通|吟游诗人|XPHB|2|XPHB}适用于使用你缺乏技能熟练的检定；因此，符合{@classFeature 可靠才能|游荡者|XPHB|7|XPHB}要求的检定不符合{@classFeature 万事通|吟游诗人|XPHB|2|XPHB}的要求，反之亦然。然而，勇士的{@subclassFeature 运动健将|战士|XPHB|勇士|XPHB|3|XPHB}特性在所有力量（{@skill 运动|XPHB}）检定上给予{@variantrule 优势|XPHB}，这与{@classFeature 可靠才能|游荡者|XPHB|7|XPHB|可靠才能的}的要求并不冲突。因此，如果一个角色拥有{@skill 运动|XPHB}技能的熟练项，并且同时拥有{@classFeature 可靠才能|游荡者|XPHB|7|XPHB}和{@subclassFeature 运动健将|战士|XPHB|勇士|XPHB|3|XPHB}特性，该角色在进行力量（{@skill 运动|XPHB}）检定时可以同时使用这两个特性。"
+														"{@classFeature 可靠才能|游荡者|XPHB|7|XPHB}可以与其他特性结合使用，只要进行的属性检定同时满足两个特性的要求。例如，{@classFeature 可靠才能|游荡者|XPHB|7|XPHB}仅适用于使用你的技能或工具熟练项进行的检定，而{@classFeature 万事通|吟游诗人|XPHB|2|XPHB}适用于使用你不具备熟练项的技能进行的检定；因此，符合{@classFeature 可靠才能|游荡者|XPHB|7|XPHB}要求的检定不符合{@classFeature 万事通|吟游诗人|XPHB|2|XPHB}的要求，反之亦然。然而，勇士的{@subclassFeature 运动健将|战士|XPHB|勇士|XPHB|3|XPHB}特性在所有力量（{@skill 运动|XPHB}）检定上给予{@variantrule 优势|XPHB}，这与{@classFeature 可靠才能|游荡者|XPHB|7|XPHB|可靠才能的}的要求并不冲突。因此，如果一个角色拥有{@skill 运动|XPHB}技能的熟练项，并且同时拥有{@classFeature 可靠才能|游荡者|XPHB|7|XPHB}和{@subclassFeature 运动健将|战士|XPHB|勇士|XPHB|3|XPHB}特性，该角色在进行力量（{@skill 运动|XPHB}）检定时可以同时使用这两个特性。"
 													]
 												}
 											]
@@ -880,16 +880,16 @@
 											"entries": [
 												{
 													"ENG_name": "Metamagic rules state you can't use multiple Metamagic options on a single spell. Can you use one option multiple times?",
-													"name": "变体魔法规则规定你不能在单个法术上使用多种变体魔法选项。你能多次使用一个选项吗？",
+													"name": "超魔法规则规定你不能在单个法术上使用多种超魔法选项。你能多次使用同一个选项吗？",
 													"type": "entries",
 													"id": "067",
 													"entries": [
-														"一名{@class 术士|XPHB}可以在施放一个法术时使用一次{@filter 超魔法选项|optionalfeatures|feature type=mm}，但不能多次使用同一个选项。例如，术士不能通过花费2点{@classFeature 魔力泉涌|术士|XPHB|2|XPHB|术法点}在{@optfeature 延效法术|XPHB}上来使法术的持续时间延长四倍。"
+														"一名{@class 术士|XPHB}在一次施法中只能使用一种{@filter 超魔法选项|optionalfeatures|feature type=mm}一次，而不能将同一选项使用多次。例如，术士不能通过在{@optfeature 延效法术|XPHB}上花费2点{@classFeature 魔力泉涌|术士|XPHB|2|XPHB|术法点}来使一个法术的持续时间变为四倍。"
 													]
 												},
 												{
 													"ENG_name": "In Draconic Sorcery, Elemental Affinity improves one damage roll of a spell, not multiple rolls. So with Scorching Ray, I don't add my Charisma modifier to each ray that hits?",
-													"name": "在龙族魔法中，元素亲和只提升一个法术伤害骰，而非多个。那么对于灼热射线，我是否不需要为每道命中射线添加魅力调整值？",
+													"name": "在龙族术法中，元素亲和只增益一个法术的伤害掷骰，而非多个。那么对于灼热射线，我是否不需要为每道命中的射线添加魅力调整值？",
 													"type": "entries",
 													"id": "068",
 													"entries": [
@@ -902,21 +902,21 @@
 													"type": "entries",
 													"id": "069",
 													"entries": [
-														"术士的{@optfeature 强效法术|XPHB}可以影响{@spell 灼热射线|XPHB}的多条射线，但需遵守特性的骰子限制。例如，如果你用该法术创造三条射线，并且你有+3的魅力调整值，你可以为每条射线重投一个伤害骰子，或者为一条射线重投两个伤害骰子，为另一条射线重投一个伤害骰子。"
+														"术士的{@optfeature 强效法术|XPHB}可以影响{@spell 灼热射线|XPHB}的多条射线，但需遵守特性的骰子限制。例如，如果你用该法术创造三条射线，并且你有+3的魅力调整值，你可以为每条射线重投一个伤害骰，或者为一条射线重投两个伤害骰，为另一条射线重投一个伤害骰。"
 													]
 												},
 												{
 													"ENG_name": "Does Quickened Spell allow a Sorcerer to cast two spells a round of level 1+?",
-													"name": "迅捷施法是否允许术士在一轮内施放两个1环或更高级别的法术？",
+													"name": "瞬发法术是否允许术士在一轮内施放两个1环或更高级别的法术？",
 													"type": "entries",
 													"id": "06a",
 													"entries": [
-														"不，{@class 术士|XPHB}必须遵循每回合使用一个法术位施放一个法术的规则。参见{@book 玩家手册第7章|XPHB|7|每回合仅能施展一道消耗法术位的法术}。"
+														"不，{@class 术士|XPHB}必须遵循每回合只能用一个法术位施放一个法术的规则。参见{@book 玩家手册第7章|XPHB|7|每回合仅能施放一个消耗法术位的法术}。"
 													]
 												},
 												{
 													"ENG_name": "Can my Sorcerer use Twinned Spell on a spell duplicated by the casting of a Wish spell?",
-													"name": "我的术士能否对通过许愿术复制的法术使用孪生法术？",
+													"name": "我的术士能否对通过祈愿术复制的法术使用孪生法术？",
 													"type": "entries",
 													"id": "06b",
 													"entries": [
@@ -925,7 +925,7 @@
 												},
 												{
 													"ENG_name": "In Wild Magic Sorcery, does the Wild Magic Surge effect replace the effect of the spell that triggered it, or do both effects happen?",
-													"name": "在狂野魔法术士中，狂野魔法涌动效果是取代触发它的法术效果，还是两者效果同时发生？",
+													"name": "在狂野术法中，狂野魔法浪涌效果是取代触发它的法术效果，还是两者效果同时发生？",
 													"type": "entries",
 													"id": "06c",
 													"entries": [
@@ -948,13 +948,13 @@
 											"entries": [
 												{
 													"ENG_name": "If a Warlock uses Pact of the Blade to bond with a magic weapon, does that weapon have to be a Melee weapon, and can the Warlock change the weapon's form?",
-													"name": "如果魔契师使用刀锋契约与一件魔法武器绑定，那件武器必须是近战武器吗？魔契师可以改变武器的形态吗？",
+													"name": "如果魔契师使用刃之魔契与一件魔法武器绑定，那件武器必须是近战武器吗？魔契师可以改变武器的形态吗？",
 													"type": "entries",
 													"id": "06f",
 													"entries": [
-														"{@class 魔契师|XPHB|魔契师的}的{@optfeature 刃之魔契|XPHB}特性允许你凭空创造一把近战武器。每当你这样做时，你可以从{@book 玩家手册|XPHB}中的{@table 武器|XPHB}表格中选择近战武器选项来决定武器的形态。例如，你可以创造一把{@item 巨斧|XPHB}，然后再次使用该特性创造一把{@item 标枪|XPHB}，这将导致{@item 巨斧|XPHB}消失。",
-														"你也可以使用{@optfeature 刃之魔契|XPHB}与一件魔化武器绑定，将其变为你的契约武器。这件魔化武器不必是近战武器，因此你可以用该特性绑定一件{@item +1 长弓|XDMG}。然而，你不能用该特性改变魔化武器的形态。例如，如果你绑定了一件{@item 淬毒匕首|XDMG}，你不能将其变形为{@item 巨锤|XPHB}；它始终是{@item 匕首|XPHB}。",
-														"该特性允许召唤一把近战武器，但我们允许在魔法武器方面有更多的灵活性。我们不希望这一特性的狭窄焦点让{@class 魔契师|XPHB}在战役中出现各种魔法武器时感到不满。这种灵活性是否超出了特性的近战主题？当然可以，但如果这样做有可能增加玩家的快乐，我们愿意偶尔弯曲设计概念。"
+														"{@class 魔契师|XPHB|魔契师}的{@optfeature 刃之魔契|XPHB}特性允许你凭空创造一把近战武器。每当你这样做时，你可以从{@book 玩家手册|XPHB}中的{@table 武器|XPHB}表格中选择近战武器选项来决定武器的形态。例如，你可以创造一把{@item 巨斧|XPHB}，然后再次使用该特性创造一把{@item 标枪|XPHB}，这将导致{@item 巨斧|XPHB}消失。",
+														"你也可以使用{@optfeature 刃之魔契|XPHB}与一件魔法武器绑定，将其变为你的契约武器。这件魔法武器不必是近战武器，因此你可以用该特性绑定一件{@item +1 长弓|XDMG}。然而，你不能用该特性改变魔法武器的形态。例如，如果你绑定了一件{@item 淬毒匕首|XDMG}，你不能将其变形为{@item 巨锤|XPHB}；它始终是{@item 匕首|XPHB}。",
+														"该特性允许召唤出一把近战武器，但对于魔法武器，我们允许更多的灵活性。我们不希望这一特性狭窄的定位让{@class 魔契师|XPHB}在战役中出现各种魔法武器时感到不快。这种灵活性是否超出了该特性的近战主题？确实如此，但如果这样做很可能增加玩家的乐趣，我们愿意偶尔变通一下设计理念。"
 													]
 												},
 												{
@@ -968,7 +968,7 @@
 												},
 												{
 													"ENG_name": "Does the Awakened Mind feature of a Warlock with a Great Old One Patron allow two-way telepathic communication?",
-													"name": "拥有上古之宗主宰的魔契师的觉醒心智特性是否允许双向的心灵感应交流？",
+													"name": "拥有旧日支配者宗主的魔契师的唤醒心灵特性是否允许双向心灵感应交流？",
 													"type": "entries",
 													"id": "071",
 													"entries": [
@@ -991,16 +991,16 @@
 											"entries": [
 												{
 													"ENG_name": "Is an Abjurer's Arcane Ward healed only when the ward has 0 Hit Points?",
-													"name": "防护法师的奥术守御是否仅在守御生命值为0时才会恢复？",
+													"name": "防护师的奥术守御是否仅在守御生命值为0时才会恢复？",
 													"type": "entries",
 													"id": "074",
 													"entries": [
-														"该守御会在{@class 法师|XPHB|防护师|防护师|XPHB}使用法术位施展防护系法术时恢复{@variantrule 生命值|XPHB}，而不仅是在守御{@variantrule 生命值|XPHB}为0时。如同正常的治疗一样，守御恢复的{@variantrule 生命值|XPHB}不能超过其{@variantrule 生命值|XPHB|生命值}上限：法师等级的两倍加上法师的智力调整值。"
+														"该守御会在{@class 法师|XPHB|防护师|防护师|XPHB}使用法术位施放防护系法术时恢复{@variantrule 生命值|XPHB}，而不仅是在守御{@variantrule 生命值|XPHB}为0时。如同正常的治疗一样，守御恢复的{@variantrule 生命值|XPHB}不能超过其{@variantrule 生命值|XPHB|生命值}上限：法师等级的两倍加上法师的智力调整值。"
 													]
 												},
 												{
 													"ENG_name": "Does casting Alarm as a Ritual heal Arcane Ward?",
-													"name": "将警报术作为仪式施放是否会治疗奥术守御？",
+													"name": "将警报术作为仪式施放是否能为奥术守御恢复生命值？",
 													"type": "entries",
 													"id": "075",
 													"entries": [
@@ -1009,7 +1009,7 @@
 												},
 												{
 													"ENG_name": "How does Arcane Ward interact with Temporary Hit Points that an Abjurer might have?",
-													"name": "奥术守御如何与防护法师可能拥有的临时生命值互动？",
+													"name": "奥术守御如何与防护师可能拥有的临时生命值互动？",
 													"type": "entries",
 													"id": "076",
 													"entries": [
@@ -1023,7 +1023,7 @@
 																	"name": "抗性与易伤",
 																	"type": "item",
 																	"entries": [
-																		"如果该{@class 法师|XPHB}职业拥有任何{@variantrule 抗性|XPHB|抗性}抗性或{@variantrule 易伤|XPHB|易伤}易伤，这些效果会被应用于伤害的全部数值。"
+																		"如果该{@class 法师|XPHB}拥有任何{@variantrule 抗性|XPHB|抗性}或{@variantrule 易伤|XPHB|易伤}，它们会被应用于伤害总值。"
 																	]
 																},
 																{
@@ -1031,7 +1031,7 @@
 																	"name": "奥术守御",
 																	"type": "item",
 																	"entries": [
-																		"护盾会先承受伤害。"
+																		"守御会先承受伤害。"
 																	]
 																},
 																{
@@ -1039,7 +1039,7 @@
 																	"name": "伤害免疫",
 																	"type": "item",
 																	"entries": [
-																		"法师拥有的任何伤害{@variantrule 免疫|XPHB|免疫}会在护盾降至0{@variantrule 生命值|XPHB}时应用于剩余伤害。"
+																		"法师拥有的任何伤害{@variantrule 免疫|XPHB|免疫}会在守御降至0{@variantrule 生命值|XPHB}时应用于剩余伤害。"
 																	]
 																},
 																{
@@ -1068,7 +1068,7 @@
 													"type": "entries",
 													"id": "077",
 													"entries": [
-														"{@subclassFeature 亦真亦幻|法师|XPHB|幻术师|XPHB|14|XPHB} 旨在使每个幻术法术中的一个幻象物体变为真实。"
+														"{@subclassFeature 亦真亦幻|法师|XPHB|幻术师|XPHB|14|XPHB}旨在使每个幻术法术中的一个幻象物件变为真实。"
 													]
 												},
 												{
@@ -1140,7 +1140,7 @@
 											"entries": [
 												{
 													"ENG_name": "Does the Halfling's Naturally Stealthy trait allow them to hide while observed?",
-													"name": "半身人的「天生隐匿」特性是否允许他们在被观察时隐藏？",
+													"name": "半身人的「天生善匿」特质是否允许他们在被观察时躲藏？",
 													"type": "entries",
 													"id": "081",
 													"entries": [
@@ -1152,7 +1152,7 @@
 																"你必须处于所有敌人的视线之外。"
 															]
 														},
-														"{@race 半身人|XPHB|半身人}的「天生善匿」特质允许你在被比你至少大一个体型的生物遮挡时绕过这些标准。然而，你仍然必须像往常一样在进行{@action 躲藏|XPHB}动作时进行一次敏捷（{@skill 隐匿|XPHB}）检定，因此并不能保证成功。"
+														"{@race 半身人|XPHB|半身人}的「天生善匿」特质允许你在被比你至少大一个体型的生物遮挡时无视这些条件。然而，你仍然必须像正常执行{@action 躲藏|XPHB}动作时那样进行一次敏捷（{@skill 隐匿|XPHB}）检定，因此并不能保证成功。"
 													]
 												}
 											]
@@ -1208,7 +1208,7 @@
 													"entries": [
 														"可以，但仅限于受控坐骑。",
 														"当坐骑移动时，你也会随之移动。因此，如果坐骑朝目标直线移动10尺，你也会朝目标直线移动10尺。然而，你仍然必须在此移动后立即执行{@action 攻击|XPHB}动作以获得{@feat 冲锋手|XPHB|冲锋攻击}的增益。这在受控坐骑上是可行的，因为受控坐骑会在你的回合移动。",
-														"反之，如果你骑乘的是一个独立坐骑，则不能使用{@feat 冲锋手|XPHB|冲锋攻击}，因为独立坐骑会在单独的回合移动，而你在该移动后无法立即采取{@action 攻击|XPHB}动作。"
+														"反之，如果你骑乘的是自主坐骑，则无法使用{@feat 冲锋手|XPHB|冲锋攻击}，因为自主坐骑会在单独的回合移动，而你在该移动后无法立即执行{@action 攻击|XPHB}动作。"
 													]
 												}
 											]
@@ -1227,7 +1227,7 @@
 											"entries": [
 												{
 													"ENG_name": "Does Crossbow Expert let you fire a Hand Crossbow and then fire it again as a Bonus Action?",
-													"name": "强弩专家是否允许你使用手弩射击，然后作为附加动作再次射击？",
+													"name": "强弩专家是否允许你用手弩射击，然后以附赠动作再次射击？",
 													"type": "entries",
 													"id": "08b",
 													"entries": [
@@ -1296,7 +1296,7 @@
 											"entries": [
 												{
 													"ENG_name": "If you use Great Weapon Fighting with a spell like Divine Smite or Hex, do you get to treat any 1 or 2 you roll for the additional damage as a 3?",
-													"name": "如果你将巨武器战斗用于诸如神圣打击或灾祸术之类的法术，你是否可以将额外伤害掷出的1或2视为3？",
+													"name": "如果你将巨武器战斗与至圣斩或脆弱诅咒之类的法术一起使用，你能将额外伤害掷出的1或2视为3吗？",
 													"type": "entries",
 													"id": "094",
 													"entries": [
@@ -1319,7 +1319,7 @@
 											"entries": [
 												{
 													"ENG_name": "If you're a spellcaster, can you pick your own class when you gain the Magic Initiate feat?",
-													"name": "如果你是施法者，当你获得魔法入门专长时，你可以选择自己的职业吗？",
+													"name": "如果你是施法者，当你获得魔法学徒专长时，你可以选择自己的职业吗？",
 													"type": "entries",
 													"id": "097",
 													"entries": [
@@ -1342,12 +1342,12 @@
 											"entries": [
 												{
 													"ENG_name": "Can I add my Strength modifier to the damage of the bonus attack that Polearm Master gives me?",
-													"name": "我可以将我的力量调整值加到长兵器大师给我的额外攻击的伤害上吗？",
+													"name": "我可以将我的力量调整值加到长柄武器大师给予我的附赠攻击的伤害上吗？",
 													"type": "entries",
 													"id": "09a",
 													"entries": [
-														"是的。对于该专长的额外攻击，你可以将你的能力调整值加到攻击骰上，就像你使用该武器进行攻击时一样，如果命中，你可以将相同的能力调整值加到伤害骰上，这对于武器伤害骰来说是正常的。",
-														"一个特定的规则，例如{@itemProperty L|XPHB|轻型}属性，可能会通过告诉你不将你的属性调整值加到伤害上来打破通用规则。{@feat 长柄武器大师|XPHB}没有这样的规则。"
+														"是的。对于该专长的附赠攻击，你可以像使用该武器进行攻击时那样，将属性调整值加到攻击检定上；如果命中，你再将相同的属性调整值加到伤害掷骰上，这与正常的武器伤害掷骰相同。",
+														"特定规则，例如{@itemProperty L|XPHB|轻型}属性，可能会通过告知你不将属性调整值加到伤害掷骰上来打破通用规则。{@feat 长柄武器大师|XPHB}没有这样的规则。"
 													]
 												}
 											]
@@ -1370,7 +1370,7 @@
 													"type": "entries",
 													"id": "09d",
 													"entries": [
-														"否。{@feat 凶蛮打手|XPHB}的增益仅适用于武器伤害骰子的掷骰，不适用于特性或其他属性可能授予的任何额外伤害。"
+														"否。{@feat 凶蛮打手|XPHB}的增益仅适用于武器伤害骰的掷骰，不适用于特性或其他能力可能给予的任何额外伤害。"
 													]
 												}
 											]
@@ -1395,11 +1395,11 @@
 											"entries": [
 												{
 													"ENG_name": "Does Heavy armor reduce Dexterity saving throws or ability checks other than Stealth?",
-													"name": "重甲是否会降低敏捷豁免或除潜行外的属性检定？",
+													"name": "重甲是否会降低敏捷豁免检定或除隐匿外的属性检定？",
 													"type": "entries",
 													"id": "0a1",
 													"entries": [
-														"如果你接受过相关训练，重甲不会影响敏捷豁免或除{@skill 隐匿|XPHB}外的属性检定。"
+														"如果你受过相应的训练，重甲不会影响敏捷豁免检定或除{@skill 隐匿|XPHB}外的属性检定。"
 													]
 												},
 												{
@@ -1408,7 +1408,7 @@
 													"type": "entries",
 													"id": "0a2",
 													"entries": [
-														"用{@item 盾牌|XPHB}进行攻击不会使你失去护盾的AC加值。"
+														"用{@item 盾牌|XPHB}进行攻击不会使你失去盾牌的AC加值。"
 													]
 												}
 											]
@@ -1444,7 +1444,7 @@
 												},
 												{
 													"ENG_name": "Can a spellcaster cast spells off-target to minimize damage to party members from a spell like Shatter?",
-													"name": "施法者是否可以故意偏离目标施法，以减少像粉碎术这样的法术对队友造成的伤害？",
+													"name": "施法者是否可以故意偏离目标施法，以减少像粉碎音波这样的法术对队友造成的伤害？",
 													"type": "entries",
 													"id": "0a7",
 													"entries": [
@@ -1476,7 +1476,7 @@
 													"id": "0aa",
 													"entries": [
 														"不行。你的施法特性明确规定了你可以更改准备法术列表的时间点以及可以更改的法术数量。",
-														"例如，如果你是一名{@class 牧师|XPHB}，你可以在完成一次{@variantrule 长休|XPHB}后改变你的准备法术列表。你不能在休息结束时准备一些法术，然后后文再准备更多。"
+														"例如，如果你是一名{@class 牧师|XPHB}，你可以在完成一次{@variantrule 长休|XPHB}后改变你的准备法术列表。你不能在休息结束时准备一些法术，之后再准备更多法术。"
 													]
 												}
 											]
@@ -1495,7 +1495,7 @@
 											"entries": [
 												{
 													"ENG_name": "Is a touch range spell considered a melee attack for purposes of subduing foes rather than killing?",
-													"name": "触击范围的法术是否被视为近战攻击，用于制服敌人而非杀死的目的？",
+													"name": "触碰范围的法术是否被视为近战攻击，用于制伏敌人而非杀死他们？",
 													"type": "entries",
 													"id": "0ad",
 													"entries": [
@@ -1517,7 +1517,7 @@
 													"type": "entries",
 													"id": "0af",
 													"entries": [
-														"尽管这些法术的持续时间都是瞬时，但你需要依次选择目标并解决攻击，而不是同时进行。如果你愿意，可以在进行任何攻击检定之前声明所有目标，但你仍然需要为每次攻击检定（以及伤害，如果适用）分别掷骰。"
+														"尽管这些法术的持续时间都是立即，但你需要依次选择目标并结算攻击，而不是同时进行。如果你愿意，可以在进行任何攻击检定之前声明所有目标，但你仍然需要为每次攻击检定（以及伤害，如果适用）分别掷骰。"
 													]
 												},
 												{
@@ -1527,8 +1527,8 @@
 													"id": "0b0",
 													"entries": [
 														"不能。如{@book 玩家手册|XPHB}所述，在战斗中，除了移动外，你可以在自己的回合执行一个动作。你可以从所有人都可用的选项中选择你的动作\u2014\u2014例如{@action 攻击|XPHB}、{@action 疾走|XPHB}和{@action 魔法|XPHB}\u2014\u2014或者从你的职业或其他来源获得的特殊动作中选择。",
-														"在你的回合施法时，你需要采取{@action 魔法|XPHB}动作。这样做意味着你没有采取{@action 攻击|XPHB}动作或其他任何动作。确实有许多法术，例如{@spell 火焰箭|XPHB}和{@spell 冷冻射线|XPHB}，涉及发动攻击检定，但如果不先施放提供该攻击的法术，你就无法进行这样的攻击。换句话说，仅仅因为某件事涉及攻击检定并不意味着使用了{@action 攻击|XPHB}动作。",
-														"延伸来说，{@classFeature 额外攻击|战士|XPHB|5|XPHB}特性（由多个职业赋予，包括{@class 战士|XPHB}和{@class 圣武士|XPHB}）不允许你施放额外的攻击法术。该特性特别依赖于{@action 攻击|XPHB}动作，而非{@action 魔法|XPHB}动作或其他任何动作。",
+														"在你的回合施法时，你需要执行{@action 魔法|XPHB}动作。这样做意味着你没有执行{@action 攻击|XPHB}动作或任何其他动作。确实有许多法术，例如{@spell 火焰箭|XPHB}和{@spell 冷冻射线|XPHB}，涉及进行攻击检定，但如果不先施放提供该攻击的法术，你就无法进行这样的攻击。换句话说，仅仅因为某件事涉及攻击检定并不意味着使用了{@action 攻击|XPHB}动作。",
+														"延伸来说，{@classFeature 额外攻击|战士|XPHB|5|XPHB}特性（由多个职业赋予，包括{@class 战士|XPHB}和{@class 圣武士|XPHB}）不允许你施放额外的攻击法术。该特性明确依赖于{@action 攻击|XPHB}动作，而非{@action 魔法|XPHB}动作或其他任何动作。",
 														"总之，要发动法术攻击，你必须先施放一个法术或使用一个能产生法术效果的特性。一个游戏特性（例如{@classFeature 额外攻击|战士|XPHB|5|XPHB}）允许你发动攻击，但除非特别说明，否则不会让你施放法术。"
 													]
 												},
@@ -1543,11 +1543,11 @@
 												},
 												{
 													"ENG_name": "Some spells (like Guiding Bolt) target a creature. Some others (like Fire Bolt) target objects too. Does this mean that I can't attack the door with Guiding Bolt?",
-													"name": "有些法术（例如光导箭）以生物为目标。其他一些法术（例如火焰箭）也可以以物体为目标。这是否意味着我无法使用光导箭攻击门？",
+													"name": "有些法术（例如光导箭）以生物为目标。其他一些法术（例如火焰箭）也可以以物件为目标。这是否意味着我无法使用光导箭攻击门？",
 													"type": "entries",
 													"id": "0b2",
 													"entries": [
-														"法术中的目标指定（生物、物体或其他东西）是有意为之的。"
+														"法术中的目标条件（生物、物件或其他）是有意设置的。"
 													]
 												}
 											]
@@ -1566,12 +1566,12 @@
 											"entries": [
 												{
 													"ENG_name": "What level is a spell if you cast it without a spell slot?",
-													"name": "如果您不使用法术位施放法术，它的等级是多少？",
+													"name": "如果不使用法术位施放一个法术，该法术是几环？",
 													"type": "entries",
 													"id": "0b5",
 													"entries": [
 														"除非文本另有说明，否则不使用法术位施放的法术将以最低可能环阶施放，即其描述中显示的环阶。",
-														"这种规则的例外情况通常可以在怪物数据块中找到。一个拥有施法动作的怪物可能会列出带有\"（环阶#版本）\"括号的法术。这意味着该法术仍然不使用法术位施放，但其效果等同于使用指定环阶法术位施放的该法术版本。"
+														"这种规则的例外情况通常可以在怪物数据卡中找到。一个拥有施法动作的怪物可能会列出带有\"（环阶#版本）\"括号的法术。这意味着该法术仍然不使用法术位施放，但其效果等同于使用指定环阶法术位施放的该法术版本。"
 													]
 												}
 											]
@@ -1590,12 +1590,12 @@
 											"entries": [
 												{
 													"ENG_name": "Is there a limit on the number of spells you can cast on your turn?",
-													"name": "您在您的回合上施放的法术数量有限制吗？",
+													"name": "你在自己的回合施放的法术数量有限制吗？",
 													"type": "entries",
 													"id": "0b8",
 													"entries": [
-														"没有规则规定您在您的回合上只能施放X个法术，但存在一些实际限制。主要的限制因素是您的动作。许多法术需要消耗一个动作来施放，除非有特性说明，否则您在您的回合上只有一个动作。您还必须遵守在您的回合上只能消耗一个法术位来施放一个法术的规则。",
-														"因此，举例来说，如果您使用法术位以{@variantrule 附赠动作|XPHB}施放{@spell 治愈真言|XPHB}，您还可以使用{@action 魔法|XPHB}动作施放{@spell 恶言相加|XPHB}\u2014\u2014一个不需要法术位的戏法。"
+														"没有规则规定你在自己的回合只能施放X个法术，但存在一些实际限制。主要的限制因素是你的动作。许多法术需要消耗一个动作来施放，除非有特性说明，否则你在自己的回合只有一个动作。你还必须遵守在自己的回合只能消耗一个法术位来施放一个法术的规则。",
+														"因此，举例来说，如果你用{@variantrule 附赠动作|XPHB}消耗法术位施放{@spell 治愈真言|XPHB}，你还可以执行{@action 魔法|XPHB}动作施放{@spell 恶言相加|XPHB}\u2014\u2014一个不需要法术位的戏法。"
 													]
 												},
 												{
@@ -1604,12 +1604,12 @@
 													"type": "entries",
 													"id": "0b9",
 													"entries": [
-														"是，但你必须遵守在自己的回合只能消耗一个法术位施放一个法术的规则。例如，如果你用一个法术位施放{@spell 火球术|XPHB}并采取{@action 魔法|XPHB}动作，而敌人施放了{@spell 法术反制|XPHB}，你就不能再消耗一个法术位对该敌人施放{@spell 法术反制|XPHB}。"
+														"可以，但你必须遵守在自己的回合只能消耗一个法术位施放一个法术的规则。例如，如果你执行{@action 魔法|XPHB}动作、用一个法术位施放{@spell 火球术|XPHB}，而敌人施放了{@spell 法术反制|XPHB}，你就不能再消耗一个法术位对该敌人施放{@spell 法术反制|XPHB}。"
 													]
 												},
 												{
 													"ENG_name": "Does casting a spell as a Ritual require Concentration if the spell doesn't normally require it?",
-													"name": "如果一个法术通常不需要专注，那么以仪式施法方式施展该法术时是否需要专注？",
+													"name": "如果一个法术通常不需要专注，那么以仪式方式施放该法术时是否需要专注？",
 													"type": "entries",
 													"id": "0ba",
 													"entries": [
@@ -1636,26 +1636,26 @@
 													"type": "entries",
 													"id": "0bd",
 													"entries": [
-														"法术不会消耗其{@book 材质|XPHB|7|材料（M）}成分，除非其描述中说明会消耗。例如，{@spell 鉴定术|XPHB}法术所需的珍珠不会被消耗，而当你施放{@spell 死者复活|XPHB}法术时所需的钻石则会被消耗。"
+														"法术不会消耗其{@book 材料|XPHB|7|材料（M）}成分，除非其描述中说明会消耗。例如，{@spell 鉴定术|XPHB}法术所需的珍珠不会被消耗，而当你施放{@spell 死者复活|XPHB}法术时所需的钻石则会被消耗。"
 													]
 												},
 												{
 													"ENG_name": "If a spell's Material components are consumed, can a Spellcasting Focus still be used in place of the consumed component?",
-													"name": "如果一个法术的材料成分被消耗，施法法器还能否替代被消耗的成分？",
+													"name": "如果一个法术的材料成分被消耗，法器还能否替代被消耗的成分？",
 													"type": "entries",
 													"id": "0be",
 													"entries": [
-														"不能。{@variantrule 法器|XPHB}只能用于替代{@book 材质|XPHB|7|材料（M）}成分，前提是该成分在法术描述中没有注明消耗且未被消耗。"
+														"不能。{@variantrule 法器|XPHB}只能用于替代{@book 材料|XPHB|7|材料（M）}成分，前提是该成分在法术描述中没有注明价值且不会被消耗。"
 													]
 												},
 												{
 													"ENG_name": "What's the amount of interaction needed to use a Spellcasting Focus? Does it have to be included in the Somatic component?",
-													"name": "使用施法法器需要多少互动？它必须包含在姿势成分中吗？",
+													"name": "使用法器需要多少互动？它必须包含在姿势成分中吗？",
 													"type": "entries",
 													"id": "0bf",
 													"entries": [
-														"如果一个法术需要{@book 材质|XPHB|7|材料（M）}成分，施法者必须有一只手空闲以获取或持有它们，但这可以是同一只用于执行{@book 姿势|XPHB|7|姿势（S）}成分的手（如果有的话）。后一条规则同样适用于使用{@variantrule 法器|XPHB}法器，施法者必须持有它，除非其描述另有说明。",
-														"例如，一名{@class 牧师|XPHB}使用一面{@item 纹章|XPHB}在{@item 盾牌|XPHB}上作为其{@item 圣徽|XPHB}。在战斗时，这名{@class 牧师|XPHB}喜欢一手挥舞{@item 硬头锤|XPHB}，另一手持着饰有纹章的{@item 盾牌|XPHB}。当施放需要{@book 材质|XPHB|7|材料（M）}成分的{@class 牧师|XPHB}法术时，这名{@class 牧师|XPHB}必须手持{@item 盾牌|XPHB}。如果该法术，例如{@spell 援助术|XPHB}，还需要{@book 姿势|XPHB|7|姿势（S）}成分，{@class 牧师|XPHB}可以用持有{@item 盾牌|XPHB}的手来执行{@book 姿势|XPHB|7|姿势（S）}成分，从而让{@class 牧师|XPHB}能继续挥舞{@item 硬头锤|XPHB}。然而，如果这名{@class 牧师|XPHB}稍后要施放{@spell 疗伤术|XPHB}\u2014\u2014该法术具有{@book 姿势|XPHB|7|姿势（S）}成分但没有{@book 材质|XPHB|7|材料（M）}成分\u2014\u2014他们就需要卸下{@item 盾牌|XPHB}或{@item 硬头锤|XPHB}来空出一只手进行{@book 姿势|XPHB|7|姿势（S）}成分。"
+														"如果一个法术需要{@book 材料|XPHB|7|材料（M）}成分，施法者必须有一只手空闲以获取或持有它们，但这可以是同一只用于执行{@book 姿势|XPHB|7|姿势（S）}成分的手（如果有的话）。后一条规则同样适用于使用{@variantrule 法器|XPHB}的情况，施法者必须持有它，除非其描述另有说明。",
+														"例如，一名{@class 牧师|XPHB}将{@item 盾牌|XPHB}上的一面{@item 纹章|XPHB}作为其{@item 圣徽|XPHB}。在战斗时，这名{@class 牧师|XPHB}喜欢一手挥舞{@item 硬头锤|XPHB}，另一手持着饰有纹章的{@item 盾牌|XPHB}。当施放需要{@book 材料|XPHB|7|材料（M）}成分的{@class 牧师|XPHB}法术时，这名{@class 牧师|XPHB}必须手持{@item 盾牌|XPHB}。如果该法术，例如{@spell 援助术|XPHB}，还需要{@book 姿势|XPHB|7|姿势（S）}成分，{@class 牧师|XPHB}可以用持有{@item 盾牌|XPHB}的手来执行{@book 姿势|XPHB|7|姿势（S）}成分，从而让{@class 牧师|XPHB}能继续挥舞{@item 硬头锤|XPHB}。然而，如果这名{@class 牧师|XPHB}稍后要施放{@spell 疗伤术|XPHB}\u2014\u2014该法术具有{@book 姿势|XPHB|7|姿势（S）}成分但没有{@book 材料|XPHB|7|材料（M）}成分\u2014\u2014他们就需要卸下{@item 盾牌|XPHB}或{@item 硬头锤|XPHB}来空出一只手满足{@book 姿势|XPHB|7|姿势（S）}成分。"
 													]
 												}
 											]
@@ -1674,16 +1674,16 @@
 											"entries": [
 												{
 													"ENG_name": "If you're concentrating on a spell, do you need to maintain line of sight with the spell's target or the spell's effect?",
-													"name": "如果您在集中精神施放一个法术，您是否需要保持与法术目标或法术效果的视线联系？",
+													"name": "如果你正在对一个法术维持专注，你是否需要保持与法术目标或法术效果之间的视线连通？",
 													"type": "entries",
 													"id": "0c2",
 													"entries": [
-														"您不需要保持视线或在范围内来维持对法术的{@status 专注|XPHB}专注，除非法术描述或其他游戏特性另有说明。"
+														"你不需要处于视线范围内或施法距离内来维持对一个法术的{@status 专注|XPHB}，除非法术描述或其他游戏特性另有说明。"
 													]
 												},
 												{
 													"ENG_name": "If I have 10 Temporary Hit Points and I take 30 damage from an attack while concentrating on a spell, what is the DC of the Constitution save to maintain my Concentration?",
-													"name": "如果我有10点临时生命值，并且在专注一个法术时受到30点攻击伤害，那么维持专注的体质豁免DC是多少？",
+													"name": "如果我有10点临时生命值，并且在专注于一个法术时从一次攻击中受到30点伤害，那么维持专注的体质豁免DC是多少？",
 													"type": "entries",
 													"id": "0c3",
 													"entries": [
@@ -1697,7 +1697,7 @@
 													"type": "entries",
 													"id": "0c4",
 													"entries": [
-														"你可以解散一个非瞬时的法术。更多信息请参阅{@book 持续时间|XPHB|7|持续时间}部分和{@book 玩家手册第7章|XPHB|7}。"
+														"你可以解散一个非立即的法术。更多信息请参阅{@book 玩家手册第7章|XPHB|7}的{@book 持续时间|XPHB|7|持续时间}一节。"
 													]
 												}
 											]
@@ -1716,7 +1716,7 @@
 											"entries": [
 												{
 													"ENG_name": "Does casting Animate Objects during a Time Stop spell end the Time Stop?",
-													"name": "在时间停止法术期间施放活化物体是否会结束时间停止？",
+													"name": "在时间停止法术期间施放活化物件是否会结束时间停止？",
 													"type": "entries",
 													"id": "0c7",
 													"entries": [
@@ -1725,7 +1725,7 @@
 												},
 												{
 													"ENG_name": "Can you extend the duration of Armor of Agathys by gaining more Temporary Hit Points?",
-													"name": "你能通过获得更多临时生命值来延长阿迦纳萨护甲的持续时间吗？",
+													"name": "你能通过获得更多临时生命值来延长黯冰狱铠的持续时间吗？",
 													"type": "entries",
 													"id": "0c8",
 													"entries": [
@@ -1734,16 +1734,16 @@
 												},
 												{
 													"ENG_name": "How does Barkskin work with Shields, cover, and other modifiers to AC?",
-													"name": "树肤术如何与盾牌、掩蔽和其他AC加值相互作用？",
+													"name": "树肤术如何与盾牌、掩护和其他AC调整值相互作用？",
 													"type": "entries",
 													"id": "0c9",
 													"entries": [
-														"{@spell 树肤术|XPHB}的目标如果其{@variantrule 护甲等级|XPHB}低于17，则其护甲等级变为17。这意味着目标有效地忽略了对其护甲等级的任何加值\\u2014\\u2014包括任何护甲、{@item 盾牌|XPHB}或半身掩护\\u2014\\u2014除非其护甲等级高于17。例如，如果你是{@spell 树肤术|XPHB}法术的目标，并且你的护甲等级通常是14，那么在法术效果下你的护甲等级是17；然而，如果你的护甲等级通常是16并且你拥有{@variantrule 掩护|XPHB|半身掩护}，那么你的护甲等级是18，此时{@spell 树肤术|XPHB|树肤术的}的效果就不相关了。"
+														"{@spell 树肤术|XPHB}的目标如果其{@variantrule 护甲等级|XPHB}低于17，则其护甲等级变为17。这意味着目标有效地忽略了对其护甲等级的任何调整值\\u2014\\u2014包括任何护甲、{@item 盾牌|XPHB}或半身掩护\\u2014\\u2014除非其护甲等级高于17。例如，如果你是{@spell 树肤术|XPHB}法术的目标，并且你的护甲等级通常是14，那么在法术效果下你的护甲等级是17；然而，如果你的护甲等级通常是16并且你拥有{@variantrule 掩护|XPHB|半身掩护}，那么你的护甲等级是18，此时{@spell 树肤术|XPHB|树肤术的}的效果就不相关了。"
 													]
 												},
 												{
 													"ENG_name": "Is the Chill Touch spell intended as a way of foiling Regeneration?",
-													"name": "冷冻射线法术的设计初衷是为了克制再生能力吗？",
+													"name": "颤栗之触法术的设计初衷是为了克制再生能力吗？",
 													"type": "entries",
 													"id": "0ca",
 													"entries": [
@@ -1752,54 +1752,54 @@
 												},
 												{
 													"ENG_name": "Using 5-foot squares, does Cloud of Daggers affect a single square?",
-													"name": "使用5英尺方格时，匕首之云是否只影响单个方格？",
+													"name": "使用5尺方格时，匕首之云是否只影响单个方格？",
 													"type": "entries",
 													"id": "0cb",
 													"entries": [
-														"{@spell 匕首之云|XPHB}（5英尺{@variantrule 立方 [效应区域]|XPHB|立方}）可以影响网格上的多个方格，除非DM规定效应必须对齐网格。有多种方式可以放置该{@variantrule 立方 [效应区域]|XPHB|立方}。"
+														"{@spell 匕首之云|XPHB}（5尺{@variantrule 立方 [效应区域]|XPHB|立方}）可以影响网格上的多个方格，除非DM规定效应必须对齐网格。有多种方式可以放置该{@variantrule 立方 [效应区域]|XPHB|立方}。"
 													]
 												},
 												{
 													"ENG_name": "Can a creature under the effect of Compelled Duel teleport more than 30 feet away from the caster?",
-													"name": "受强制决斗效果影响的生物能否传送到距离施法者30英尺以外的地方？",
+													"name": "受强令对决效果影响的生物能否传送到距离施法者30尺以外的地方？",
 													"type": "entries",
 													"id": "0cc",
 													"entries": [
-														"不能。你不能通过任何方式（包括传送）移动到距离施放{@spell 强令对决|XPHB}的施法者30英尺以外的地方。"
+														"不能。你不能通过任何方式（包括传送）移动到距离施放{@spell 强令对决|XPHB}的施法者30尺以外的地方。"
 													]
 												},
 												{
 													"ENG_name": "If the damage from Disintegrate reduces an Orc to 0 Hit Points, can Relentless Endurance prevent the Orc from turning to ash?",
-													"name": "如果解离术的伤害将兽人的生命值降至0，不屈韧性能否阻止该兽人化为灰烬？",
+													"name": "如果解离术的伤害将兽人的生命值降至0，坚韧不域能否阻止该兽人化为灰烬？",
 													"type": "entries",
 													"id": "0cd",
 													"entries": [
-														"是的。{@spell 解离术|XPHB}法术仅在该法术的伤害使你生命值降至0{@variantrule 生命值|XPHB}时才会将你化为粉尘。如果你是{@race 兽人|XPHB}，坚韧不屈可以在法术将你解离前将0点生命值变为1点。"
+														"是的。{@spell 解离术|XPHB}法术仅在该法术的伤害使你的{@variantrule 生命值|XPHB}降至0时才会将你化为粉尘。如果你是{@race 兽人|XPHB}，坚韧不屈可以在法术将你解离前将0点生命值变为1点。"
 													]
 												},
 												{
 													"ENG_name": "Can you use Dispel Magic to dispel a magical effect like a Druid's Wild Shape?",
-													"name": "你能使用解除魔法来解除像德鲁伊的野性形态这样的魔法效果吗？",
+													"name": "你能使用解除魔法来解除像德鲁伊的荒野形态这样的魔法效果吗？",
 													"type": "entries",
 													"id": "0ce",
 													"entries": [
-														"{@spell 解除魔法|XPHB} 有一个特定的目的：解除其他法术。它对非由法术创造的魔法效应无效，除非文本另有说明（尽管DM总是可以做出例外）。"
+														"{@spell 解除魔法|XPHB}有一个特定的目的：解除其他法术。它对非由法术创造的魔法效应无效，除非文本另有说明（尽管DM总是可以做出例外）。"
 													]
 												},
 												{
 													"ENG_name": "Can you use Dispel Magic on the creations of a spell like Animate Dead or affect those creations with Antimagic Field?",
-													"name": "你能对诸如操纵死尸这类法术的造物使用解除魔法吗？或者用反魔法力场影响这些造物？",
+													"name": "你能对诸如活化死尸这类法术的造物使用解除魔法吗？或者用反魔法场影响这些造物？",
 													"type": "entries",
 													"id": "0cf",
 													"entries": [
 														"每当你疑惑一个法术的效应能否被解除或暂停时，你需要回答一个问题：该法术的持续时间是否为立即？如果答复是肯定的，那就没有可解除或暂停的内容。原因如下：立即法术的效应由魔法产生，但效应并不由魔法维持。魔法在一瞬间闪耀后随即消失。例如，立即法术{@spell 活化死尸|XPHB}利用魔法能量将一具尸体或一堆骨头转化为亡灵生物。那股死灵魔法存在一瞬便消逝无踪。生成的生物如今无需魔法协助即可存在。对该生物施放{@spell 解除魔法|XPHB}无法终结其对生命的嘲讽，且亡灵可安然步入{@spell 反魔法场|XPHB}而不受负面影响。",
-														"另一个范例：{@spell 疗伤术|XPHB}会立即恢复一个生物的{@variantrule 生命值|XPHB}。由于该法术的持续时间为立即，这种恢复效果无法在后文被解除。而且你不会因为踏入{@spell 反魔法场|XPHB}而突然失去{@variantrule 生命值|XPHB}！",
+														"另一个范例：{@spell 疗伤术|XPHB}会立即恢复一个生物的{@variantrule 生命值|XPHB}。由于该法术的持续时间为立即，这种恢复效果无法在之后被解除。而且你不会因为踏入{@spell 反魔法场|XPHB}而突然失去{@variantrule 生命值|XPHB}！",
 														"相比之下，诸如{@spell 咒唤林地卫士|XPHB}这类法术具有非立即的持续时间，这意味着其效应可以被{@spell 解除魔法|XPHB}终止，并在{@spell 反魔法场|XPHB}内暂时消失。"
 													]
 												},
 												{
 													"ENG_name": "Can you take a Ready action to ready Dispel Magic to stop another spell from taking effect?",
-													"name": "你可以使用准备动作来准备解除魔法以阻止另一个法术生效吗？",
+													"name": "你可以使用预备动作来预备解除魔法以阻止另一个法术生效吗？",
 													"type": "entries",
 													"id": "0d0",
 													"entries": [
@@ -1813,7 +1813,7 @@
 													"type": "entries",
 													"id": "0d1",
 													"entries": [
-														"是，{@spell 解除魔法|XPHB}可以破除{@spell 法术无效结界|XPHB}创造的屏障，但无法破除屏障内已生效的任何魔法效应。"
+														"可以，{@spell 解除魔法|XPHB}可以破除{@spell 法术无效结界|XPHB}创造的屏障，但无法破除屏障内已生效的任何魔法效应。"
 													]
 												},
 												{
@@ -1827,16 +1827,16 @@
 												},
 												{
 													"ENG_name": "Can the familiar you conjure with the Find Familiar spell use the Help action to grant you Advantage on your attack roll?",
-													"name": "你通过《寻找魔宠》法术召唤的魔宠能否使用协助动作来为你的攻击检定提供优势？",
+													"name": "你通过寻获魔宠法术召唤的魔宠能否使用协助动作来为你的攻击检定提供优势？",
 													"type": "entries",
 													"id": "0d3",
 													"entries": [
-														"魔宠不能攻击，但它可以采取非{@action 攻击|XPHB}动作，包括{@action 协助|XPHB}。"
+														"魔宠不能攻击，但它可以执行非{@action 攻击|XPHB}动作，包括{@action 协助|XPHB}。"
 													]
 												},
 												{
 													"ENG_name": "Does the familiar of Find Familiar count as an ally for the purposes of Sneak Attack?",
-													"name": "就偷袭而言，魔宠法术的魔宠是否算作盟友？",
+													"name": "就偷袭而言，寻获魔宠法术召唤的魔宠是否算作盟友？",
 													"type": "entries",
 													"id": "0d4",
 													"entries": [
@@ -1899,7 +1899,7 @@
 												},
 												{
 													"ENG_name": "Can an object created with Minor Illusion move? For example, a wall sliding down a corridor?",
-													"name": "使用次级幻影创造的物体可以移动吗？例如一堵沿着走廊滑动的墙？",
+													"name": "使用次级幻象创造的物件可以移动吗？例如一堵沿着走廊滑动的墙？",
 													"type": "entries",
 													"id": "0db",
 													"entries": [
@@ -1908,11 +1908,11 @@
 												},
 												{
 													"ENG_name": "Could Minor Illusion create a fog cloud? If so, would shooting an arrow through it cancel the illusion?",
-													"name": "次级幻影能否创造一团雾云？如果可以，射箭穿过它会取消幻影吗？",
+													"name": "次级幻象能否创造一团雾云？如果可以，射箭穿过它会消除这个幻象吗？",
 													"type": "entries",
 													"id": "0dc",
 													"entries": [
-														"由{@spell 次级幻象|XPHB}创造的幻象物件应是类似圆凳或岩的物体，而非大气效应。"
+														"由{@spell 次级幻象|XPHB}创造的幻象物件应是类似圆凳或岩石的物件，而非大气效应。"
 													]
 												},
 												{
@@ -1921,7 +1921,7 @@
 													"type": "entries",
 													"id": "0dd",
 													"entries": [
-														"{@spell 异界誓缚|XPHB} 不会召唤生物。它尝试束缚一个在法术范围内的生物。"
+														"{@spell 异界誓缚|XPHB}不会召唤生物。它尝试束缚一个在法术范围内的生物。"
 													]
 												},
 												{
@@ -1930,7 +1930,7 @@
 													"type": "entries",
 													"id": "0de",
 													"entries": [
-														"你在受{@spell 变形术|XPHB}影响变形时不能施法，但该法术中没有任何内容阻止你在变形前{@status 专注|XPHB|专注于}于已施放的法术。"
+														"你在受{@spell 变形术|XPHB}影响变形时不能施法，但该法术中没有任何内容阻止你{@status 专注|XPHB|专注于}你在变形前已施放的法术。"
 													]
 												},
 												{
@@ -1939,7 +1939,7 @@
 													"type": "entries",
 													"id": "0df",
 													"entries": [
-														"是的。除非法术另有说明，否则对于愿意的生物和不愿意的生物，其效果没有区别。"
+														"是的。除非法术另有说明，否则其对自愿生物的效应与对非自愿生物的效应没有任何区别。"
 													]
 												},
 												{
@@ -1948,7 +1948,7 @@
 													"type": "entries",
 													"id": "0e0",
 													"entries": [
-														"当该生物恢复其真身时，任何剩余伤害将受到该形态的伤害{@variantrule 抗性|XPHB|抗性}（如果有的话）的影响。"
+														"当该生物变回其真实形态时，任何剩余的伤害都会套用该形态的伤害{@variantrule 抗性|XPHB|抗性}去计算（如果有的话）。"
 													]
 												},
 												{
@@ -1957,12 +1957,12 @@
 													"type": "entries",
 													"id": "0e1",
 													"entries": [
-														"{@spell 变形术|XPHB}仅将目标的角色卡或资料卡替换为选民形态的资料卡。其他效应，例如其他法术，仍然存在。"
+														"{@spell 变形术|XPHB}只会将目标的角色卡或数据卡替换为所选形态的数据卡。其他效应，例如其他法术，仍然存在。"
 													]
 												},
 												{
 													"ENG_name": "What kinds of things count as \"nonmagical trinkets\" for Prestidigitation?",
-													"name": "哪些物品可以算作「魔法伎俩」中的\"非魔法小物件\"？",
+													"name": "哪些东西可以算作魔法伎俩中的\"非魔法饰品\"？",
 													"type": "entries",
 													"id": "0e2",
 													"entries": [
@@ -1975,12 +1975,12 @@
 													"type": "entries",
 													"id": "0e3",
 													"entries": [
-														"无。{@spell 庇护术|XPHB}法术仅在受保护的生物进行攻击检定、施放法术或造成伤害时结束。{@variantrule 徒手打击|XPHB}的擒抱和推撞选项均不涉及这些行为。"
+														"不会。{@spell 庇护术|XPHB}法术仅在受保护的生物进行攻击检定、施放法术或造成伤害时结束。{@variantrule 徒手打击|XPHB}的擒抱和推撞选项均不涉及这些行为。"
 													]
 												},
 												{
 													"ENG_name": "If I cast Shillelagh on my Quarterstaff and have the Polearm Master feat, does the bonus attack use a d4 or a d8 for damage?",
-													"name": "如果我对我的长棍施展橡棍术并拥有长柄武器大师专长，额外攻击的伤害骰是d4还是d8？",
+													"name": "如果我对我的长棍施放橡棍术并拥有长柄武器大师专长，附赠攻击的伤害骰是d4还是d8？",
 													"type": "entries",
 													"id": "0e4",
 													"entries": [
@@ -1998,7 +1998,7 @@
 												},
 												{
 													"ENG_name": "Is the sentence of suggestion in the Suggestion spell the Verbal component, or is the Verbal component separate?",
-													"name": "《暗示术》法术中的暗示语句是法术的言语成分，还是言语成分是单独的部分？",
+													"name": "暗示术法术中的暗示语句是法术的言语成分，还是说言语成分是分开的？",
 													"type": "entries",
 													"id": "0e6",
 													"entries": [
@@ -2007,20 +2007,20 @@
 												},
 												{
 													"ENG_name": "If you are affecting a target with Telekinesis and an ally put you inside Otiluke's Resilient Sphere, can you continue affecting the target or other targets with the existing Telekinesis spell?",
-													"name": "如果你正在用心灵遥控影响一个目标，而一位盟友将你放入奥图路克弹力法球中，你能否继续用现有的心灵遥控法术影响该目标或其他目标？",
+													"name": "如果你正在用心灵遥控影响一个目标，而一位盟友将你放入欧提路克弹力法球中，你能否继续用现有的心灵遥控法术影响该目标或其他目标？",
 													"type": "entries",
 													"id": "0e7",
 													"entries": [
-														"你可以维持对已经受到影响的目标的心灵遥控控制，但无法影响新的目标。该法球提供的{@variantrule 掩护|XPHB|全身掩护}会阻止你瞄准法球外的任何目标。"
+														"你可以维持你对已受影响目标的心灵遥控掌控，但无法影响新的目标。该法球提供的{@variantrule 掩护|XPHB|全身掩护}会阻止你瞄准法球外的任何目标。"
 													]
 												},
 												{
 													"ENG_name": "Can you use True Strike with Extra Attack, Opportunity Attack, Sneak Attack, and other weapon attack options?",
-													"name": "你能将克敌机先与额外攻击、借机攻击、偷袭以及其他武器攻击选项一起使用吗？",
+													"name": "你能将克敌先击与额外攻击、借机攻击、偷袭以及其他武器攻击选项一起使用吗？",
 													"type": "entries",
 													"id": "0e8",
 													"entries": [
-														"{@spell 克敌先击|XPHB}不能与{@classFeature 额外攻击|战士|XPHB|5|XPHB}或其他需要{@action 攻击|XPHB}动作的特性一起使用。与其他施法时间为一个动作的法术一样，施放{@spell 克敌先击|XPHB}需要你采取{@action 魔法|XPHB}动作，而不是{@action 攻击|XPHB}动作。同样地，除非有特殊特性允许你这样做，否则你在进行{@action 借机攻击|XPHB}时不能施放{@spell 克敌先击|XPHB}。",
+														"{@spell 克敌先击|XPHB}不能与{@classFeature 额外攻击|战士|XPHB|5|XPHB}或其他需要{@action 攻击|XPHB}动作的特性一起使用。与其他施法时间为一个动作的法术一样，施放{@spell 克敌先击|XPHB}需要你执行{@action 魔法|XPHB}动作，而不是{@action 攻击|XPHB}动作。同样地，除非有特殊特性允许你这样做，否则你在进行{@action 借机攻击|XPHB}时不能施放{@spell 克敌先击|XPHB}。",
 														"然而，作为{@spell 克敌先击|XPHB}一部分的攻击可以与{@classFeature 偷袭|游荡者|XPHB|1|XPHB}一起使用，只要它满足该特性的正常要求。例如，如果你拥有{@classFeature 偷袭|游荡者|XPHB|1|XPHB}特性并使用{@spell 克敌先击|XPHB}配合一把{@itemProperty F|XPHB|灵巧}武器，当你在攻击检定上拥有{@variantrule 优势|XPHB}并命中时，你可以对攻击目标造成{@classFeature 偷袭|游荡者|XPHB|1|XPHB}伤害。"
 													]
 												},
@@ -2039,7 +2039,7 @@
 													"type": "entries",
 													"id": "0ea",
 													"entries": [
-														"如果你施放{@spell 祈愿术|XPHB}来复制一个0-8环的法术，则不会产生减益效应。然而，如果你做了除复制0-8环法术之外的任何东西，你将承受该法术最后一段描述的压力。一旦该压力影响你，就有{@chance 33}的几率使你无法再次施放{@spell 祈愿术|XPHB}。"
+														"如果你施放{@spell 祈愿术|XPHB}来复制一个0-8环的法术，则不会产生减益效应。然而，如果你做了除复制0-8环法术之外的任何事情，你将承受该法术最后一段描述的压力。一旦该压力影响你，就有{@chance 33}的几率使你无法再次施放{@spell 祈愿术|XPHB}。"
 													]
 												}
 											]
@@ -2068,8 +2068,8 @@
 													"type": "entries",
 													"id": "0ee",
 													"entries": [
-														"当进行{@action 借机攻击|XPHB}时，怪物可以使用其资料卡中列出的任何单一近战攻击。怪物也可以选择按照{@variantrule 徒手打击|XPHB}的正常规则，以{@action 借机攻击|XPHB}的形式进行一次{@variantrule 徒手打击|XPHB}。",
-														"一个不包含近战攻击掷骰的动作（例如吐息武器效应）不能被选为{@action 借机攻击|XPHB}。此外，怪物在使用{@action 借机攻击|XPHB}时不能使用其多重攻击，因为多重攻击的使用明确基于采取{@action 攻击|XPHB}动作，而{@action 借机攻击|XPHB}需要消耗一个{@variantrule 反应|XPHB}。"
+														"当进行{@action 借机攻击|XPHB}时，怪物可以使用其数据卡中列出的任何单一近战攻击。怪物也可以选择按照{@variantrule 徒手打击|XPHB}的正常规则，以{@action 借机攻击|XPHB}的形式进行一次{@variantrule 徒手打击|XPHB}。",
+														"一个不包含近战攻击检定的动作（例如吐息武器效应）不能被选为{@action 借机攻击|XPHB}。此外，怪物在使用{@action 借机攻击|XPHB}时不能使用其多重攻击，因为多重攻击的使用明确以执行{@action 攻击|XPHB}动作为前提，而{@action 借机攻击|XPHB}占用一个{@variantrule 反应|XPHB}。"
 													]
 												},
 												{
@@ -2078,7 +2078,7 @@
 													"type": "entries",
 													"id": "0ef",
 													"entries": [
-														"《{@book 玩家手册|XPHB}》的语言表并未列出D&D多元宇宙中的所有语言。《{@book 怪物图鉴|XMM}》提到了其他语言，包括魔冢语、沙华鱼人语和史拉蟾语。"
+														"《{@book 玩家手册|XPHB}》的语言表并未列出D&D多元宇宙中的所有语言。《{@book 怪物图鉴|XMM}》提到了其他语言，包括魔冢语、鲨华语和史拉蟾语。"
 													]
 												},
 												{
@@ -2092,47 +2092,47 @@
 												},
 												{
 													"ENG_name": "Does a creature with Magic Resistance have Advantage on saving throws against Channel Divinity abilities, such as Turn the Faithless?",
-													"name": "具有魔法抗性的生物是否在对抗诸如『驱逐不洁』等引导神力能力时，豁免检定具有优势？",
+													"name": "具有魔法抗性的生物是否在对抗诸如驱散无信者等引导神力能力时，豁免检定具有优势？",
 													"type": "entries",
 													"id": "0f1",
 													"entries": [
-														"引导神力创造魔法效应（如《{@class 牧师|XPHB}》和《{@class 圣武士|XPHB}》所述）。魔法抗性适用。"
+														"引导神力创造魔法效应（如{@class 牧师|XPHB}和{@class 圣武士|XPHB}的描述中所述）。魔法抗性适用。"
 													]
 												},
 												{
 													"ENG_name": "If a Shadow rolls a Critical Hit, does it reduce the target's Strength by 2d4, as well as dealing the extra Necrotic damage?",
-													"name": "如果幽影骰出重击，它除了造成额外的黯蚀伤害外，是否还会使目标的力量降低2d4？",
+													"name": "如果幽影骰出重击，它除了造成额外的暗蚀伤害外，是否还会使目标的力量降低2d4？",
 													"type": "entries",
 													"id": "0f2",
 													"entries": [
-														"不会。一个{@variantrule 重击|XPHB}让你掷骰伤害骰子两次。造成伤害的效应是指减少目标的{@variantrule 生命值|XPHB}。{@creature 幽影|XMM|幽影的}力量减少不是伤害，因为它对目标的{@variantrule 生命值|XPHB}没有效果。"
+														"不会。一次{@variantrule 重击|XPHB}让你将伤害骰投掷两次。造成伤害的效应是指减少目标的{@variantrule 生命值|XPHB}的效应。{@creature 幽影|XMM|幽影的}力量降低不算伤害，因为它对目标的{@variantrule 生命值|XPHB}没有影响。"
 													]
 												},
 												{
 													"ENG_name": "Is a Vampire affected by Hold Person or Calm Emotions?",
-													"name": "吸血鬼会受到人类定身术或情绪平静的影响吗？",
+													"name": "吸血鬼会受到定身类人或安定心神的影响吗？",
 													"type": "entries",
 													"id": "0f3",
 													"entries": [
-														"许多法术不仅影响任何生物，还仅影响法术中指定的特定类型。{@spell 定身类人|XPHB}和{@spell 安定心神|XPHB}仅对类人生物有效，而{@creature 吸血鬼|XMM}不是类人生物。"
+														"许多法术并非影响所有生物，而是只影响法术中指定的特定类型。{@spell 定身类人|XPHB}和{@spell 安定心神|XPHB}仅对类人生物有效，而{@creature 吸血鬼|XMM}不是类人生物。"
 													]
 												},
 												{
 													"ENG_name": "Can a creature that burrows grapple a target and drag them into the ground by burrowing?",
-													"name": "一个生物在挖掘时能否通过摔跤抓住目标并将它们拖入地下？",
+													"name": "一个能掘穴的生物能否擒抱目标并通过掘穴将目标拖入地下？",
 													"type": "entries",
 													"id": "0f4",
 													"entries": [
-														"不能。一个挖掘的生物只有在具备留下隧道的能力时才能拖动另一个生物。例如，一个{@creature 紫虫|XMM}具有掘道者特质，因此它可以将一个{@condition 受擒|XPHB}的生物拖入它在挖掘时创造的隧道中。相反，一个{@creature 土元素|XMM}无法将生物拖入地下。"
+														"不能。一个掘穴的生物只有在具备留下隧道的能力时才能拖动另一个生物。例如，一个{@creature 紫虫|XMM}具有掘道者特质，因此它可以将一个{@condition 受擒|XPHB}的生物拖入它在掘穴时创造的隧道中。相反，一个{@creature 土元素|XMM}无法将生物拖入地下。"
 													]
 												},
 												{
 													"ENG_name": "Can a Hydra use Reactive Heads to make multiple Opportunity Attacks against one creature at the same time when it provokes?",
-													"name": "当九头蛇引发借机攻击时，它能否同时对同一个生物使用反应头部进行多次借机攻击？",
+													"name": "当多头蛇引发借机攻击时，它能否同时对同一个生物使用多头反应进行多次借机攻击？",
 													"type": "entries",
 													"id": "0f5",
 													"entries": [
-														"是的。出于这个原因，我们建议当你准备从一只{@creature 多头蛇|XMM}身边{@action 撤离|XPHB}时使用撤离动作。"
+														"是的。出于这个原因，我们建议你在尝试远离{@creature 多头蛇|XMM}时执行{@action 撤离|XPHB}动作。"
 													]
 												}
 											]
@@ -2161,16 +2161,16 @@
 													"type": "entries",
 													"id": "0f9",
 													"entries": [
-														"设定DC的方式与不使用魔法物品施放法术时相同（DC等于8加上你的施法能力调整值加上你的{@table 熟练加值|XPHB}）。如果你没有施法能力，该物品的施法能力调整值为{@hit 0}，你的{@table 熟练加值|XPHB}仍然适用。"
+														"设定DC的方式与不使用魔法物品施放法术时相同（DC等于8加上你的施法属性调整值加上你的{@table 熟练加值|XPHB}）。如果你没有施法属性，该物品的施法属性调整值视为{@hit 0}，你的{@table 熟练加值|XPHB}仍然适用。"
 													]
 												},
 												{
 													"ENG_name": "Can potions be administered to Unconscious characters?",
-													"name": "可以为昏迷的角色使用药水吗？",
+													"name": "可以为昏迷的角色喂下药水吗？",
 													"type": "entries",
 													"id": "0fa",
 													"entries": [
-														"可以，你可以用一个{@variantrule 附赠动作|XPHB}为其他人使用药水。"
+														"可以，你可以用一个{@variantrule 附赠动作|XPHB}把药水喂给其他人。"
 													]
 												},
 												{
@@ -2179,7 +2179,7 @@
 													"type": "entries",
 													"id": "0fb",
 													"entries": [
-														"药水的效应需要{@status 专注|XPHB}仅当其描述中如此说明或它复制的法术需要{@status 专注|XPHB}。"
+														"只有在其描述中说明需要专注，或它复制的法术需要{@status 专注|XPHB}时，药水的效应才需要{@status 专注|XPHB}。"
 													]
 												},
 												{
@@ -2190,7 +2190,7 @@
 													"entries": [
 														"关于卷轴的规则适用于通用卷轴，包括{@item 守护卷轴|XDMG}，它允许你在识字的情况下尝试激活一个法术。关于{@item 法术卷轴|XDMG}的规则则特定于该类卷轴，并引入了一个额外要求：卷轴上的法术必须在你职业的法术列表上才能阅读该卷轴。",
 														"一个{@item 法术卷轴|XDMG}可以有多种命名方式：{@item 法术卷轴|XDMG}、{@item 法术卷轴|XDMG|X卷轴}（其中X是法术的名称）或{@item 法术卷轴|XDMG|X法术卷轴}（其中X同样是法术的名称）。无论其名称如何显示，{@item 法术卷轴|XDMG}都遵循相同的规则。",
-														"要满足{@item 法术卷轴|XDMG|法术卷轴}的要求，卷轴上的法术必须在你职业所使用的法术列表上。这里有两个示例。如果你是{@class 牧师|XPHB}，该法术必须在{@class 牧师|XPHB}法术列表上；如果你是拥有{@class 战士|XPHB|奥法骑士|奥法骑士|XPHB}子职的{@class 战士|XPHB}，该法术必须在{@class 法师|XPHB}法术列表上，因为这是你子职所使用的法术列表。"
+														"要满足{@item 法术卷轴|XDMG|法术卷轴}的要求，卷轴上的法术必须在你职业所使用的法术列表上。这里有两个示例。如果你是{@class 牧师|XPHB}，该法术必须在{@class 牧师|XPHB}法术列表上；如果你是拥有{@class 战士|XPHB|奥法骑士|奥法骑士|XPHB}子职业的{@class 战士|XPHB}，该法术必须在{@class 法师|XPHB}法术列表上，因为这是你子职业所使用的法术列表。"
 													]
 												},
 												{
@@ -2199,7 +2199,7 @@
 													"type": "entries",
 													"id": "0fd",
 													"entries": [
-														"是的。一般来说，加值可以叠加，除非文本明确说明不能（如同一个法术的效应）。例如，你不能从多个{@item 防护戒指|XDMG}中获得增益，因为文本说明你不能同时同调多个相同的物品。"
+														"是的。一般来说，加值可以叠加，除非文本明确说明不能（如同一个法术的效应）。例如，你不能同时从多枚{@item 防护戒指|XDMG}中获益，因为你不能同时同调同一物品的多个副本。"
 													]
 												},
 												{
@@ -2208,7 +2208,7 @@
 													"type": "entries",
 													"id": "0fe",
 													"entries": [
-														"魔法远程武器发动的攻击即使弹药是非魔法的也属于魔法攻击。"
+														"即使弹药是非魔法的，以魔法远程武器发动的攻击依旧是魔法性的。"
 													]
 												},
 												{
@@ -2222,20 +2222,20 @@
 												},
 												{
 													"ENG_name": "Can a Sphere of Annihilation enter a Leomund's Tiny Hut?",
-													"name": "一个湮灭法球可以进入李欧蒙的小屋吗？",
+													"name": "一个湮灭法球可以进入李欧蒙小屋吗？",
 													"type": "entries",
 													"id": "100",
 													"entries": [
-														"是的。湮灭球会摧毁圆顶。"
+														"是的。湮灭法球会摧毁小屋的穹顶。"
 													]
 												},
 												{
 													"ENG_name": "Can you gain the magical bonus of a +2 Shield if you are holding the Shield without taking an action to don it?",
-													"name": "如果你持握着一面+2盾牌但没有花费动作装备它，你能获得它的魔法加值吗？",
+													"name": "如果你只是持握着一面+2盾牌而没有使用动作着装它，你能获得它的魔法加值吗？",
 													"type": "entries",
 													"id": "101",
 													"entries": [
-														"不能。你必须装备{@item 盾牌|XPHB}才能获得它的好处。"
+														"不能。你必须着装{@item 盾牌|XPHB}才能获得它的增益。"
 													]
 												}
 											]
