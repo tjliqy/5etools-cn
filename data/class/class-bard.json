@@ -1984,7 +1984,7 @@
 			"subclassFeatures": [
 				"精魂学院|吟游诗人|XPHB|精魂|RHW|3|RHW",
 				"超能通灵|吟游诗人|XPHB|精魂|RHW|6|RHW",
-				"神秘连接|吟游诗人|XPHB|精魂|RHW|14|RHW"
+				"非凡联结|吟游诗人|XPHB|精魂|RHW|14|RHW"
 			],
 			"hasFluffImages": true
 		}
@@ -3944,7 +3944,7 @@
 							"type": "table",
 							"caption": "彼岸之魂",
 							"colLabels": [
-								"诗人激励骰结果",
+								"诗人激励骰",
 								"精魂与释放效果"
 							],
 							"colStyles": [
@@ -3966,7 +3966,7 @@
 								],
 								[
 									"4",
-									"叛逆者 Renegade。目标立即执行其{@variantrule 反应|XPHB}传送至30尺范围内一处其可见的未占据空间。"
+									"叛逆者 Renegade。目标可以立即执行其{@variantrule 反应|XPHB}传送至多30尺至一处其可见的未占据空间。"
 								],
 								[
 									"5",
@@ -4040,7 +4040,7 @@
 		},
 		{
 			"ENG_name": "Mystical Connection",
-			"name": "神秘连接",
+			"name": "非凡联结",
 			"source": "RHW",
 			"page": 18,
 			"className": "吟游诗人",
@@ -4050,7 +4050,7 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"你获得了对所召唤精魂的精通。每当你为{@subclassFeature 彼岸之魂|吟游诗人|XPHB|精魂|RHW|3|RHW|彼岸之魂表格}掷骰时，你可以掷两次骰子，并选择施加两种效应中的一种。如果你两次掷出的数值相同，你可以改为选择表格上的任意效应。"
+				"你熟练掌控了你所召唤出来的精魂。每当你在{@subclassFeature 彼岸之魂|吟游诗人|XPHB|精魂|RHW|3|RHW|彼岸之魂表}掷骰时，你都可以投掷两次，并选择使用两次中的其中一种效应。若你两次掷骰投出了相同的数字，你可以直接选择表格上的任意一个效应。"
 			]
 		},
 		{

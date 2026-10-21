@@ -11997,7 +11997,7 @@
 		},
 		{
 			"ENG_name": "Haunted One",
-			"name": "噩梦缠身",
+			"name": "噩梦缠身者",
 			"source": "RHW",
 			"page": 26,
 			"edition": "one",
@@ -12062,7 +12062,7 @@
 					"a": [
 						{
 							"equipmentType": "setGaming",
-							"displayName": "赌具（同上所选）"
+							"displayName": "赌具（同上）"
 						},
 						"撬棍|xphb",
 						{
@@ -12072,7 +12072,7 @@
 						"镜子|xphb",
 						{
 							"item": "燃油|xphb",
-							"displayName": "燃油（2瓶）"
+							"displayName": "燃油（2扁瓶）"
 						},
 						"信号笛|xphb",
 						"火绒盒|xphb",
@@ -12121,13 +12121,13 @@
 							"ENG_name": "Tool Proficiencies:",
 							"name": "工具熟练：",
 							"type": "item",
-							"entry": "自选一套{@item 赌具|XPHB}"
+							"entry": "选择一种{@item 赌具|XPHB}"
 						},
 						{
 							"ENG_name": "Equipment:",
 							"name": "装备：",
 							"type": "item",
-							"entry": "选择A或B：(A) {@item 赌具|XPHB}（同上），{@item 撬棍|XPHB}，{@item 圣水|XPHB}（1 {@item 扁瓶|XPHB}），{@item 镜子|XPHB}，{@item 燃油|XPHB}（2 {@item 扁瓶|XPHB|小瓶}），{@item 信号笛|XPHB}，{@item 火绒盒|XPHB}，{@item 旅行服装|XPHB}，5 {@item 火把|XPHB|火把}，{@item 水袋|XPHB}，以及14 GP；或 (B) 50 GP"
+							"entry": "选择A或B：（A）{@item 赌具|XPHB}（同上），{@item 撬棍|XPHB}，{@item 圣水|XPHB}（1 {@item 扁瓶|XPHB}），{@item 镜子|XPHB}，{@item 燃油|XPHB}（2 {@item 扁瓶|XPHB}），{@item 信号笛|XPHB}，{@item 火绒盒|XPHB}，{@item 旅行服装|XPHB}，5 {@item 火把|XPHB|火把}，{@item 水袋|XPHB}，以及14 GP；或（B）50 GP"
 						}
 					]
 				}
@@ -12137,7 +12137,7 @@
 		},
 		{
 			"ENG_name": "Haunted One",
-			"name": "噩梦缠身",
+			"name": "噩梦缠身者",
 			"source": "VRGR",
 			"page": 34,
 			"otherSources": [
@@ -12147,7 +12147,7 @@
 				}
 			],
 			"reprintedAs": [
-				"噩梦缠身|RHW"
+				"噩梦缠身者|RHW"
 			],
 			"skillProficiencies": [
 				{
@@ -15994,7 +15994,7 @@
 							"ENG_name": "Equipment:",
 							"name": "装备：",
 							"type": "item",
-							"entry": "选择A或B：（A）{@item 易容工具|XPHB}、{@item 镣铐|XPHB}、{@item 铲子|XPHB}、{@item 旅行服装|XPHB}、3个{@item 小瓶|XPHB|小瓶}和16GP；或（B）50GP"
+							"entry": "选择A或B：（A）{@item 易容工具|XPHB}、{@item 镣铐|XPHB}、{@item 铲子|XPHB}、{@item 旅行服装|XPHB}、3个{@item 小瓶|XPHB|小瓶}以及16GP；或（B）50GP"
 						}
 					]
 				}
@@ -18450,7 +18450,7 @@
 							"ENG_name": "Equipment:",
 							"name": "装备：",
 							"type": "item",
-							"entry": "选择A或B：（A）{@item 工匠工具|XPHB}（同上），{@item 油灯|XPHB}，{@item 燃油|XPHB}（5个扁瓶），{@item 小包|XPHB}，{@item 绳索|XPHB}，{@item 火绒盒|XPHB}，{@item 旅行服装|XPHB}，以及30GP；或（B）50GP"
+							"entry": "选择A或B：（A）{@item 工匠工具|XPHB}（同上），{@item 油灯|XPHB}，{@item 燃油|XPHB}（5扁瓶），{@item 小包|XPHB}，{@item 绳索|XPHB}，{@item 火绒盒|XPHB}，{@item 旅行服装|XPHB}，以及30GP；或（B）50GP"
 						}
 					]
 				}
@@ -26378,7 +26378,7 @@
 		},
 		{
 			"ENG_name": "Spirit Medium",
-			"name": "灵媒",
+			"name": "降灵师",
 			"source": "RHW",
 			"page": 27,
 			"edition": "one",
@@ -26441,7 +26441,7 @@
 						"匕首|xphb",
 						{
 							"equipmentType": "setGaming",
-							"displayName": "赌具（同上所选）"
+							"displayName": "赌具（同上）"
 						},
 						"篮子|xphb",
 						"铃铛|xphb",
@@ -26490,13 +26490,13 @@
 							"ENG_name": "Skill Proficiencies:",
 							"name": "技能熟练项：",
 							"type": "item",
-							"entry": "{@skill 洞悉|XPHB} 和 {@skill 宗教|XPHB}"
+							"entry": "{@skill 洞悉|XPHB}和{@skill 宗教|XPHB}"
 						},
 						{
 							"ENG_name": "Tool Proficiencies:",
 							"name": "工具熟练：",
 							"type": "item",
-							"entry": "自选一套{@item 赌具|XPHB}"
+							"entry": "选择一种{@item 赌具|XPHB}"
 						},
 						{
 							"ENG_name": "Equipment:",

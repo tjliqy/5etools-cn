@@ -7981,11 +7981,11 @@
 		},
 		{
 			"ENG_name": "Reanimated Companion",
-			"name": "再起伴兵",
+			"name": "苏生伴兵",
 			"source": "RHW",
 			"className": "奇械师",
 			"classSource": "EFA",
-			"subclassShortName": "掘坟人",
+			"subclassShortName": "苏生师",
 			"subclassSource": "RHW",
 			"level": 3,
 			"activities": [
@@ -8023,7 +8023,7 @@
 					},
 					"profiles": [
 						{
-							"uuid": "@creature[再起伴兵|RHW]"
+							"uuid": "@creature[苏生伴兵|RHW]"
 						}
 					],
 					"bonuses": {
@@ -8097,7 +8097,7 @@
 						}
 					],
 					"descriptionEntries": [
-						"{@subclassFeature 强化苏生|奇械师|EFA|掘坟人|RHW|9}"
+						"{@subclassFeature 强化苏生|奇械师|EFA|苏生师|RHW|9}"
 					]
 				}
 			],
@@ -8109,7 +8109,7 @@
 			"source": "RHW",
 			"className": "奇械师",
 			"classSource": "EFA",
-			"subclassShortName": "掘坟人",
+			"subclassShortName": "苏生师",
 			"subclassSource": "RHW",
 			"level": 15,
 			"activities": [
@@ -24082,7 +24082,7 @@
 		},
 		{
 			"ENG_name": "Umbral Form",
-			"name": "影灵形态",
+			"name": "幽冥形态",
 			"source": "RHW",
 			"className": "术士",
 			"classSource": "XPHB",
@@ -24092,7 +24092,7 @@
 			"activities": [
 				{
 					"ENG_name": "Innate Sorcery with Umbral Form",
-					"name": "先天术法：影灵形态",
+					"name": "先天术法：幽冥形态",
 					"type": "utility",
 					"img": "icons/magic/control/silhouette-hold-change-blue.webp",
 					"activation": {
@@ -24162,7 +24162,7 @@
 			"effects": [
 				{
 					"ENG_name": "Innate Sorcery (Umbral Form)",
-					"name": "先天术法（影灵形态）",
+					"name": "先天术法（幽冥形态）",
 					"disabled": true,
 					"transfer": true,
 					"duration": {
@@ -24237,7 +24237,7 @@
 					],
 					"descriptionEntries": [
 						"{@classFeature 先天术法|术士|XPHB|1}",
-						"{@subclassFeature 影灵形态|术士|XPHB|幽影|RHW|18}"
+						"{@subclassFeature 幽冥形态|术士|XPHB|幽影|RHW|18}"
 					],
 					"showIcon": 2
 				}

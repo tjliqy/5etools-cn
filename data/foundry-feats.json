@@ -1609,12 +1609,12 @@
 		},
 		{
 			"ENG_name": "Echoing Soul",
-			"name": "灵魂回荡",
+			"name": "灵魂回响",
 			"source": "RHW",
 			"activities": [
 				{
 					"ENG_name": "Intrusive Echos",
-					"name": "侵扰回响",
+					"name": "回响之袭",
 					"type": "save",
 					"activation": {
 						"type": "special",
@@ -1650,7 +1650,7 @@
 			"effects": [
 				{
 					"ENG_name": "Intrusive Echoes (Incapacitated)",
-					"name": "侵扰回响（失能）",
+					"name": "回响之袭（失能）",
 					"foundryId": "echoingSoul",
 					"disabled": true,
 					"transfer": true,
@@ -2323,7 +2323,7 @@
 			"activities": [
 				{
 					"ENG_name": "Message (Spirit Whispers)",
-					"name": "传讯术（灵语低语）",
+					"name": "传讯术（精魂低语）",
 					"type": "cast",
 					"activation": {
 						"type": "action"
@@ -2338,7 +2338,7 @@
 				},
 				{
 					"ENG_name": "Augury (Spirit Whispers)",
-					"name": "卜筮术（灵语）",
+					"name": "卜筮术（精魂低语）",
 					"type": "cast",
 					"activation": {
 						"type": "action"
@@ -2410,7 +2410,7 @@
 				},
 				{
 					"ENG_name": "Voices from Beyond",
-					"name": "悠远之声",
+					"name": "彼岸之声",
 					"type": "save",
 					"activation": {
 						"type": "special",
@@ -2446,7 +2446,7 @@
 			"effects": [
 				{
 					"ENG_name": "Voices from Beyond (Deafened)",
-					"name": "悠远之声（耳聋）",
+					"name": "彼岸之声（耳聋）",
 					"foundryId": "gatheredWhispers",
 					"disabled": true,
 					"transfer": true,
@@ -2819,7 +2819,7 @@
 			"activities": [
 				{
 					"ENG_name": "Mage Hand (Grasping Shadow)",
-					"name": "法师之手（攫影）",
+					"name": "法师之手（攫取之影）",
 					"type": "cast",
 					"activation": {
 						"type": "action"
@@ -3129,7 +3129,7 @@
 				},
 				{
 					"ENG_name": "Poisoned Roots",
-					"name": "已被毒害的根源",
+					"name": "毒害根源",
 					"type": "save",
 					"activation": {
 						"type": "shortRest",
@@ -3968,12 +3968,12 @@
 		},
 		{
 			"ENG_name": "Second Skin",
-			"name": "第二形态",
+			"name": "第二面目",
 			"source": "RHW",
 			"activities": [
 				{
 					"ENG_name": "Alter Self (Second Skin)",
-					"name": "变身术（第二形态）",
+					"name": "变身术（第二面目）",
 					"type": "cast",
 					"activation": {
 						"type": "action"
@@ -4382,7 +4382,7 @@
 			"activities": [
 				{
 					"ENG_name": "Sustained Symbiosis (Smallest HD)",
-					"name": "持续共生（最小生命骰）",
+					"name": "恒久共生（最小生命骰）",
 					"type": "utility",
 					"img": "systems/dnd5e/icons/svg/dice/d4.svg",
 					"activation": {
@@ -4415,7 +4415,7 @@
 				},
 				{
 					"ENG_name": "Sustained Symbiosis (Largest HD)",
-					"name": "持续共生（最大生命骰）",
+					"name": "恒久共生（最大生命骰）",
 					"type": "utility",
 					"img": "systems/dnd5e/icons/svg/dice/d12.svg",
 					"activation": {
@@ -4715,12 +4715,12 @@
 		},
 		{
 			"ENG_name": "Touch of Death",
-			"name": "往生咒",
+			"name": "死亡之触",
 			"source": "RHW",
 			"activities": [
 				{
 					"ENG_name": "Chill Touch (Death Touch)",
-					"name": "死亡之触 (Death Touch)",
+					"name": "颤栗之触（触死之亡）",
 					"type": "cast",
 					"activation": {
 						"type": "action"
@@ -5065,7 +5065,7 @@
 		},
 		{
 			"ENG_name": "Watchers",
-			"name": "守望",
+			"name": "监视者",
 			"source": "RHW",
 			"activities": [
 				{

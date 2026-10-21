@@ -1562,8 +1562,8 @@
 		},
 		{
 			"ENG_name": "Reanimator",
-			"name": "掘坟人",
-			"shortName": "掘坟人",
+			"name": "苏生师",
+			"shortName": "苏生师",
 			"source": "RHW",
 			"className": "奇械师",
 			"classSource": "EFA",
@@ -1596,11 +1596,11 @@
 				}
 			],
 			"subclassFeatures": [
-				"掘坟人|奇械师|EFA|掘坟人|RHW|3|RHW",
-				"怪异改造|奇械师|EFA|掘坟人|RHW|5|RHW",
-				"强化苏生|奇械师|EFA|掘坟人|RHW|9|RHW",
-				"骇惧改造|奇械师|EFA|掘坟人|RHW|9|RHW",
-				"精纯苏生|奇械师|EFA|掘坟人|RHW|15|RHW"
+				"苏生师|奇械师|EFA|苏生师|RHW|3|RHW",
+				"怪异改造|奇械师|EFA|苏生师|RHW|5|RHW",
+				"强化苏生|奇械师|EFA|苏生师|RHW|9|RHW",
+				"骇惧改造|奇械师|EFA|苏生师|RHW|9|RHW",
+				"精纯苏生|奇械师|EFA|苏生师|RHW|15|RHW"
 			],
 			"hasFluffImages": true
 		}
@@ -4236,52 +4236,52 @@
 		},
 		{
 			"ENG_name": "Reanimated Companion",
-			"name": "再起伴兵",
+			"name": "苏生伴兵",
 			"source": "RHW",
 			"page": 15,
 			"className": "奇械师",
 			"classSource": "EFA",
-			"subclassShortName": "掘坟人",
+			"subclassShortName": "苏生师",
 			"subclassSource": "RHW",
 			"level": 3,
 			"entries": [
-				"你能够以一个{@action 魔法|XPHB}动作，使用{@item 修补工具|XPHB}或你具有熟练的其他种类的{@item 工匠工具|XPHB}，通过亡灵法术与科学的力量创造一名{@creature 再起伴兵|RHW}（数据卡见下）。伴兵显现于你5尺的未占据空间中。伴兵的外观由你决定，但你的选择不会改变其游戏数据。",
-				"伴阳对你和你的盟友是{@variantrule 友好【态度】|XPHB|友好}且服从你的命令。它会持续存在直到你完成一次{@variantrule 长休|XPHB}或你使用{@action 魔法|XPHB}动作提前解散它，届时它会无害地化为一堆内脏。如果你死亡，它会立即降至0{@variantrule 生命值|XPHB}并死亡（触发其自爆特质）。",
-				"一旦你创造了一个伴兵，在完成一次{@variantrule 长休|XPHB}或消耗一个法术位来创造一个之前，你不能再这样做。你一次只能拥有一个伴兵，且在你的伴兵存在时不能创造另一个。",
+				"你能够以一个{@action 魔法|XPHB}动作，使用{@item 修补工具|XPHB}或你具有熟练的其他种类的{@item 工匠工具|XPHB}，通过亡灵法术与科学的力量创造一名{@creature 苏生伴兵|RHW}（数据卡见下）。伴兵显现于你5尺的未占据空间中。伴兵的外观由你决定，但你的选择不会改变其游戏数据。",
+				"伴兵对你和你的盟友{@variantrule 友好【态度】|XPHB|友好}并服从于你。伴兵存在持续至你完成一次{@variantrule 长休|XPHB}，或在你执行{@action 魔法|XPHB}动作令其解散时提前结束。此时伴兵无害地坍塌为一堆内脏。若你死亡，则伴兵立即降至0{@variantrule 生命值|XPHB}并死亡（触发其自爆特质）。",
+				"一旦你创造了一名伴兵，你无法再次创造伴兵直至你完成一次{@variantrule 长休|XPHB}或你消耗一个法术位来创造伴兵。你同时只能拥有一名伴兵，伴兵存在期间你无法创造伴兵。",
 				{
 					"ENG_name": "The Companion in Combat",
 					"name": "战斗中的伴兵",
 					"type": "entries",
 					"entries": [
-						"战斗中，伴阳在你的回合行动。它可以自行移动并使用其{@variantrule 反应|XPHB}，但除非你使用一个{@variantrule 附赠动作|XPHB}命令它执行动作，否则它只能采取{@action 回避|XPHB}动作。如果你处于{@condition 失能|XPHB}状态，伴阳会自行行动且不受限于{@action 回避|XPHB}动作。"
+						"在战斗中，伴兵在你的回合内行动。其可以移动并自行执行{@variantrule 反应|XPHB}，但除非你以{@variantrule 附赠动作|XPHB}命令其执行动作，否则其唯一可用的动作是{@action 回避|XPHB}动作。若你陷入{@condition 失能|XPHB}状态，则伴兵会自行行动且不再限制于{@action 回避|XPHB}动作。"
 					]
 				}
 			]
 		},
 		{
 			"ENG_name": "Reanimator",
-			"name": "掘坟人",
+			"name": "苏生师",
 			"source": "RHW",
 			"page": 15,
 			"className": "奇械师",
 			"classSource": "EFA",
-			"subclassShortName": "掘坟人",
+			"subclassShortName": "苏生师",
 			"subclassSource": "RHW",
 			"level": 3,
 			"entries": [
-				"{@i 损伤管制尸体并唤起死者}",
+				"{@i 复生亡者，重组尸骸}",
 				"苏生师无视自然法则，只为追求那些骇人听闻的实验。这些阴森的奇械师将来自不同尸体的残骸缝合成仆从，以污秽而禁忌的魔法强化生者，并将死灵术转化为一种令人战栗的科学。",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "苏生师法术|奇械师|EFA|掘坟人|RHW|3|RHW"
+					"subclassFeature": "苏生师法术|奇械师|EFA|苏生师|RHW|3|RHW"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "苏生师技艺|奇械师|EFA|掘坟人|RHW|3|RHW"
+					"subclassFeature": "苏生师技艺|奇械师|EFA|苏生师|RHW|3|RHW"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "再起伴兵|奇械师|EFA|掘坟人|RHW|3|RHW"
+					"subclassFeature": "苏生伴兵|奇械师|EFA|苏生师|RHW|3|RHW"
 				}
 			]
 		},
@@ -4292,7 +4292,7 @@
 			"page": 15,
 			"className": "奇械师",
 			"classSource": "EFA",
-			"subclassShortName": "掘坟人",
+			"subclassShortName": "苏生师",
 			"subclassSource": "RHW",
 			"level": 3,
 			"entries": [
@@ -4340,7 +4340,7 @@
 			"page": 15,
 			"className": "奇械师",
 			"classSource": "EFA",
-			"subclassShortName": "掘坟人",
+			"subclassShortName": "苏生师",
 			"subclassSource": "RHW",
 			"level": 3,
 			"entries": [
@@ -4371,15 +4371,15 @@
 			"page": 16,
 			"className": "奇械师",
 			"classSource": "EFA",
-			"subclassShortName": "掘坟人",
+			"subclassShortName": "苏生师",
 			"subclassSource": "RHW",
 			"level": 5,
 			"header": 2,
 			"entries": [
-				"每当你创造一名{@creature 再起伴兵|RHW}时，你选择以下选项之一令其获得之。你在创造伴兵时进行选择。",
+				"每当你创造一名{@creature 苏生伴兵|RHW}时，你选择以下选项之一令其获得之。你在创造伴兵时进行选择。",
 				{
 					"ENG_name": "Arcane Conduit",
-					"name": "奥法挪移",
+					"name": "魔导",
 					"type": "entries",
 					"entries": [
 						"你可以如同身处伴兵所在的空间一样施展法术，但你仍需使用你自己的感官。每回合一次，每当你施展一道塑能或死灵学派的奇械师法术并造成伤害时，若伴兵位于你120尺内，则你将你的智力调整值加入该法术的其中一枚伤害骰。"
@@ -4387,7 +4387,7 @@
 				},
 				{
 					"ENG_name": "Ferocity",
-					"name": "狂怒",
+					"name": "凶残",
 					"type": "entries",
 					"entries": [
 						"伴兵恐怖横扫动作的伤害骰增加至{@dice 1d6}。"
@@ -4402,12 +4402,12 @@
 			"page": 16,
 			"className": "奇械师",
 			"classSource": "EFA",
-			"subclassShortName": "掘坟人",
+			"subclassShortName": "苏生师",
 			"subclassSource": "RHW",
 			"level": 9,
 			"header": 2,
 			"entries": [
-				"你的{@creature 再起伴兵|RHW|复生同伴的}自爆伤害增加至{@dice 4d4}。你的同伴造成的暗蚀伤害无视{@spell 抵抗术|XPHB}。"
+				"你的{@creature 苏生伴兵|RHW|苏生伴兵的}自爆伤害增加至{@dice 4d4}。你的伴兵造成的暗蚀伤害无视{@spell 抵抗术|XPHB}。"
 			]
 		},
 		{
@@ -4417,12 +4417,12 @@
 			"page": 16,
 			"className": "奇械师",
 			"classSource": "EFA",
-			"subclassShortName": "掘坟人",
+			"subclassShortName": "苏生师",
 			"subclassSource": "RHW",
 			"level": 9,
 			"header": 2,
 			"entries": [
-				"你尝试进一步改造你的伴兵。每当你创造一名{@creature 再起伴兵|RHW}时，伴兵可以获得两个（而非一个）怪异改造选项。此外，你选择怪异改造选项时也可以从以下选项中选择。",
+				"你尝试进一步改造你的伴兵。每当你创造一名{@creature 苏生伴兵|RHW}时，伴兵可以获得两个（而非一个）怪异改造选项。此外，你选择怪异改造选项时也可以从以下选项中选择。",
 				{
 					"ENG_name": "Bloated",
 					"name": "肿胀",
@@ -4456,7 +4456,7 @@
 			"page": 16,
 			"className": "奇械师",
 			"classSource": "EFA",
-			"subclassShortName": "掘坟人",
+			"subclassShortName": "苏生师",
 			"subclassSource": "RHW",
 			"level": 15,
 			"header": 2,
@@ -4475,7 +4475,7 @@
 					"name": "性命流转",
 					"type": "entries",
 					"entries": [
-						"你可以汲取你{@creature 再起伴兵|RHW}体内的活化魔法以强化自身。当你或你的伴兵受到伤害时，你能够以{@variantrule 反应|XPHB}恢复等于你伴兵当前{@variantrule 生命值|XPHB}的{@variantrule 生命值|XPHB}。伴兵随后立即降至0{@variantrule 生命值|XPHB}并死亡（触发其自爆特质）。"
+						"你可以汲取你{@creature 苏生伴兵|RHW}体内的活化魔法以强化自身。当你或你的伴兵受到伤害时，你能够以{@variantrule 反应|XPHB}恢复等于你伴兵当前{@variantrule 生命值|XPHB}的{@variantrule 生命值|XPHB}。伴兵随后立即降至0{@variantrule 生命值|XPHB}并死亡（触发其自爆特质）。"
 					]
 				},
 				{
@@ -4483,7 +4483,7 @@
 					"name": "卓越改造",
 					"type": "entries",
 					"entries": [
-						"每当你创造{@creature 再起伴兵|RHW}时，其现在可以获得三个怪异改造选项。"
+						"每当你创造{@creature 苏生伴兵|RHW}时，其现在可以获得三个怪异改造选项。"
 					]
 				}
 			]

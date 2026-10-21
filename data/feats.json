@@ -52,7 +52,7 @@
 					"name": "血肉扭曲",
 					"type": "entries",
 					"entries": [
-						"在你进行一次{@variantrule D20 检定|XPHB}检定且{@dice d20}掷出1后，你感染的异常力量立即爆发，扭曲你对血肉的控制，你立即进行一次体质豁免（DC为13加你的{@variantrule 熟练|XPHB|熟练加值}）。豁免失败则陷入{@condition 震慑|XPHB}状态，持续至你的下个回合结束。"
+						"在你进行一次{@variantrule D20 检定|XPHB}且{@dice d20}掷出1后，你感染的异常力量立即爆发，扭曲你对血肉的控制，你立即进行一次体质豁免（DC为13加你的{@variantrule 熟练|XPHB|熟练加值}）。豁免失败则陷入{@condition 震慑|XPHB}状态，持续至你的下个回合结束。"
 					]
 				}
 			],
@@ -5109,7 +5109,7 @@
 		},
 		{
 			"ENG_name": "Echoing Soul",
-			"name": "灵魂回荡",
+			"name": "灵魂回响",
 			"source": "RHW",
 			"page": 33,
 			"category": "DG",
@@ -5139,7 +5139,7 @@
 				"你能感受到来自过去或是另一个生命的回响。你获得以下特性。",
 				{
 					"ENG_name": "Channeled Prowess",
-					"name": "通灵能力",
+					"name": "通灵之力",
 					"type": "entries",
 					"entries": [
 						"你获得两项你选择技能的熟练。",
@@ -5156,7 +5156,7 @@
 				},
 				{
 					"ENG_name": "Intrusive Echoes",
-					"name": "恼人回音",
+					"name": "回响之袭",
 					"type": "entries",
 					"entries": [
 						"在你进行一次{@variantrule D20 检定|XPHB}且{@dice d20}掷出1后，你灵魂中另一世的记忆和感受涌上心头，几乎将你吞噬，你立即进行一次体质豁免（DC为13加你的{@variantrule 熟练|XPHB|熟练加值}）。豁免失败则陷入{@condition 失能|XPHB}状态，持续至你的下个回合结束。{@condition 失能|XPHB}期间，你的{@variantrule 速度|XPHB}减半。"
@@ -6181,10 +6181,10 @@
 				"只有你能听见的精魂低语困扰着你。你获得以下特性。",
 				{
 					"ENG_name": "Spirit Whispers",
-					"name": "灵魂低语",
+					"name": "精魂低语",
 					"type": "entries",
 					"entries": [
-						"你习得戏法{@spell 传讯术|XPHB}，你能无需材料成分地施展该法术。此外，你始终准备着法术{@spell 卜筮术|XPHB}。你可以无需法术位且无需法术成分地施展该法术，你必须完成{@variantrule 长休|XPHB}才能再次以此法施展之。你也能够以你拥有的任意环阶的法术位施展该法术。",
+						"你习得法术{@spell 传讯术|XPHB}，你能无需材料成分地施展该法术。此外，你始终准备着法术{@spell 卜筮术|XPHB}。你可以无需法术位且无需法术成分地施展该法术，你必须完成{@variantrule 长休|XPHB}才能再次以此法施展之。你也能够以你拥有的任意环阶的法术位施展该法术。",
 						"你该增益的施法属性是智力、感知或魅力。（在你选取该专长时选择）"
 					]
 				},
@@ -6198,7 +6198,7 @@
 				},
 				{
 					"ENG_name": "Voices from Beyond",
-					"name": "悠远之声",
+					"name": "彼岸之声",
 					"type": "entries",
 					"entries": [
 						"在你进行一次{@variantrule D20 检定|XPHB}且{@dice d20}掷出1后，你耳畔萦绕的声音变得异常刺耳，你立即进行一次感知豁免（DC为13加你的{@variantrule 熟练|XPHB|熟练加值}）。豁免失败则陷入{@condition 耳聋|XPHB}状态，持续至你的下个回合结束。{@condition 耳聋|XPHB}期间，你的属性和攻击检定具有{@variantrule 劣势|XPHB}。"
@@ -8490,7 +8490,7 @@
 							"caption": "阴影意志",
 							"colLabels": [
 								"1d8",
-								"行为"
+								"行动"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -11088,7 +11088,7 @@
 				},
 				{
 					"ENG_name": "Poisoned Roots",
-					"name": "已被毒害的根源",
+					"name": "毒害根源",
 					"type": "entries",
 					"entries": [
 						"当你完成{@variantrule 长休|XPHB}时，你半径10里的世界变为吸取你生命的虹吸器。每当你在该区域完成{@variantrule 短休|XPHB}时，你进行一次体质豁免（DC为13加你的{@variantrule 熟练|XPHB|熟练加值}）。豁免失败则你不会因此次休息获得增益。"
@@ -13258,7 +13258,7 @@
 		},
 		{
 			"ENG_name": "Second Skin",
-			"name": "第二形态",
+			"name": "第二面目",
 			"source": "RHW",
 			"page": 34,
 			"category": "DG",
@@ -13296,7 +13296,7 @@
 					"name": "后备形貌",
 					"type": "entries",
 					"entries": [
-						"你始终准备着法术{@spell 变身术|XPHB}。你可以无需法术位且无需法术成分地施展该法术，你必须完成{@variantrule 长休|XPHB}才能再次以此法施展之。你也能够以你拥有的合适环阶的法术位施展该法术。你该法术的施法属性是智力、感知或魅力。（在你选取该专长时选择）",
+						"你始终准备着法术{@spell 变身术|XPHB}。你可以无需法术位且无需法术成分地施展该法术，你必须完成{@variantrule 长休|XPHB}才能再次以此法施展之。你也能够以你拥有的任意合适环阶的法术位施展该法术。你该法术的施法属性是智力、感知或魅力。（在你选取该专长时选择）",
 						"当你以该特性无需法术位的施展{@spell 变身术|XPHB}时，该法术无需{@status 专注|XPHB}。"
 					]
 				},
@@ -13309,10 +13309,10 @@
 						"在你经历催化后，在你的下个回合开始时，你进行一次魅力豁免（DC为13加你的{@variantrule 熟练|XPHB|熟练加值}）。豁免失败则你立即使用后备形貌来无需法术位地施展{@spell 变身术|XPHB}。若你已经消耗了该特性的使用权，则你改为陷入{@condition 震慑|XPHB}状态持续至你的下个回合开始。",
 						{
 							"type": "table",
-							"caption": "变化因素",
+							"caption": "改变催化",
 							"colLabels": [
 								"1d6",
-								"因素"
+								"催化"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -13333,7 +13333,7 @@
 								],
 								[
 									"4",
-									"听到某个特定的旋律"
+									"听见特定的旋律"
 								],
 								[
 									"5",
@@ -15553,7 +15553,7 @@
 					"name": "杯弓蛇影",
 					"type": "entries",
 					"entries": [
-						"每当你进行{@variantrule 先攻|XPHB}时，若{@dice d20}骰值不超过9，你能够重新投掷D20。你必须使用新的结果。"
+						"每当你进行{@variantrule 先攻|XPHB}掷骰时，若{@dice d20}骰值不超过9，你能够重新投掷D20。你必须使用新的结果。"
 					]
 				},
 				{
@@ -15659,7 +15659,7 @@
 				"有第二个存在寄宿在你的体内，它为你提供知识和援助，但也在推进自己的计划。你获得以下特性。",
 				{
 					"ENG_name": "Entwined Existence",
-					"name": "交织存在",
+					"name": "交缠存在",
 					"type": "entries",
 					"entries": [
 						"共生体无法被指定为目标。若你死亡，你的共生体也会死亡。若你重获生命，你的共生体也复活。"
@@ -15679,7 +15679,7 @@
 					"type": "entries",
 					"entries": [
 						"当你的豁免检定失败时，你能以{@variantrule 反应|XPHB}消耗一枚你的生命骰。投掷该生命骰并将骰值加入豁免检定中，这可能使之改为成功。",
-						"你可以使用此增益的次数等同于你的{@variantrule 熟练|XPHB|熟练加值}；在完成{@variantrule 长休|XPHB}后，你重获所有已消耗的使用次数。"
+						"你能使用此特性的次数等于你的{@variantrule 熟练|XPHB|熟练加值}，你在完成{@variantrule 长休|XPHB}时重获所有已消耗的使用次数。"
 					]
 				},
 				{
@@ -16004,7 +16004,7 @@
 		},
 		{
 			"ENG_name": "Touch of Death",
-			"name": "往生咒",
+			"name": "死亡之触",
 			"source": "RHW",
 			"page": 35,
 			"category": "DG",
@@ -16035,10 +16035,10 @@
 				"死亡之力蕴你体内，稍有挑衅便会爆发。你获得以下特性。",
 				{
 					"ENG_name": "Death Touch",
-					"name": "死亡之触",
+					"name": "触死之亡",
 					"type": "entries",
 					"entries": [
-						"你习得法术{@spell 颤栗之触|XPHB}，你能无需法术成分地施展该法术。你以该法术造成的暗蚀伤害无视{@variantrule 抗性|XPHB}。你该法术的施法属性是智力、感知或魅力。（在你选取该专长时选择）"
+						"你习得法术{@spell 颤栗之触|XPHB}，你能无需法术成分地施展该法术。你以该法术造成的暗蚀伤害忽视{@variantrule 抗性|XPHB}。你该法术的施法属性是智力、感知或魅力。（在你选取该专长时选择）"
 					]
 				},
 				{
@@ -16645,7 +16645,7 @@
 		},
 		{
 			"ENG_name": "Watchers",
-			"name": "守望",
+			"name": "监视者",
 			"source": "RHW",
 			"page": 35,
 			"category": "DG",
@@ -16681,10 +16681,10 @@
 				"某个非自然存在始终监视着你，它化作乱窜的害兽或是其他诡异生物出现。你获得以下特性。",
 				{
 					"ENG_name": "Borrowed Eyes",
-					"name": "借目",
+					"name": "借目而视",
 					"type": "entries",
 					"entries": [
-						"你始终准备着法术{@spell 野兽感官|XPHB}和{@spell 动物交谈|XPHB}。你可以无需法术位地施展每道法术，你必须完成{@variantrule 长休|XPHB}才能再次以此法施展之。你也能够以你拥有的合适环阶的法术位施展这些法术。"
+						"你始终准备着法术{@spell 野兽感官|XPHB}和{@spell 动物交谈|XPHB}。你可以无需法术位地施展每道法术，你必须完成{@variantrule 长休|XPHB}才能再次以此法施展之。你也能够以你拥有的任意合适环阶的法术位施展这些法术。"
 					]
 				},
 				{

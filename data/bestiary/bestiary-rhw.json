@@ -9,7 +9,7 @@
 	"monster": [
 		{
 			"ENG_name": "Aberrant Death's Head",
-			"name": "畸变死亡之颅",
+			"name": "异怪死亡之颅",
 			"type": "undead",
 			"source": "RHW",
 			"page": 243,
@@ -66,14 +66,14 @@
 					"ENG_name": "Flyby",
 					"name": "飞掠",
 					"entries": [
-						"死亡之颅飞离敌人的触及范围时不会引发{@action 借机攻击|XPHB}。"
+						"死亡之颅飞行离开敌人的触及范围时不会引发{@action 借机攻击|XPHB}。"
 					]
 				}
 			],
 			"action": [
 				{
 					"ENG_name": "Brain-Rending Bite",
-					"name": "脑髓撕咬",
+					"name": "裂脑啃咬",
 					"entries": [
 						"{@atkr m} {@hit 3}，触及 5 尺。{@h}3（{@damage 1d4 + 1}）穿刺伤害外加 3（{@damage 1d6}）心灵伤害，并且目标获得{@condition 恐慌|XPHB}状态，直到死亡之颅的下个回合开始。"
 					]
@@ -242,7 +242,7 @@
 				},
 				{
 					"ENG_name": "Touch of Death {@recharge}",
-					"name": "往生咒{@recharge}",
+					"name": "死亡之触{@recharge}",
 					"entries": [
 						"安卡霍特普触碰5尺内的一个生物。如果该生物有80{@variantrule 生命值|XPHB}或更少，它会死亡。否则，它将受到52（{@damage 8d12}）点暗蚀伤害。"
 					]
@@ -615,7 +615,7 @@
 					"ENG_name": "Podling Link",
 					"name": "荚苗链接",
 					"entries": [
-						"该植物可以看见并与其10英里内的任何荚囊人进行心灵感应交流。当该植物死亡时，它的荚囊人也会死亡。"
+						"该植物可以看见并与其10英里内的任何荚苗进行心灵感应交流。当该植物死亡时，它的荚苗也会死亡。"
 					]
 				},
 				{
@@ -631,7 +631,7 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"该植物进行三次藤蔓攻击。它可以用一次诱捕荚来替换其中一次攻击。"
+						"该植物进行三次藤蔓攻击。它可以用一次诱捕荚囊来替换其中一次攻击。"
 					]
 				},
 				{
@@ -643,9 +643,9 @@
 				},
 				{
 					"ENG_name": "Entrapping Pod",
-					"name": "诱捕荚",
+					"name": "诱捕荚囊",
 					"entries": [
-						"{@actSave str} {@dc 15}，一个被该植物擒抱的大型或更小体型生物。{@actSaveFail} 目标被拉入植物的空间，不再处于{@condition 受擒|XPHB}状态，并被困在植物的豆荚中。被困期间，目标处于{@condition 目盲|XPHB}和{@condition 麻痹|XPHB}状态，并且对于豆荚外的攻击和其他效果拥有{@variantrule 掩护|XPHB|全身掩护}。经过{@dice 2d4}小时后，被困目标死亡，如果它是一个类人生物，一个与其相似的夺躯者豆丁将从豆荚中出现。",
+						"{@actSave str} {@dc 15}，一个被该植物擒抱的大型或更小体型生物。{@actSaveFail} 目标被拉入植物的空间，不再处于{@condition 受擒|XPHB}状态，并被困在植物的荚囊中。被困期间，目标处于{@condition 目盲|XPHB}和{@condition 麻痹|XPHB}状态，并且对于荚囊外的攻击和其他效果拥有{@variantrule 掩护|XPHB|全身掩护}。经过{@dice 2d4}小时后，被困目标死亡，如果它是一个类人生物，一个与其相似的捕体荚苗将从荚囊中出现。",
 						"荚囊外且在植物5尺内的一个生物可以执行一个动作，进行一次{@dc 14}力量（{@skill 运动|XPHB}）检定。检定成功时，目标被从荚囊中移除，落在植物5尺内的一个空间，并获得{@condition 倒地|XPHB}状态。如果植物死亡，被困目标不再处于{@condition 目盲|XPHB}或{@condition 麻痹|XPHB}状态，并且可以使用5尺移动力从荚囊中逃脱，逃脱时处于{@condition 倒地|XPHB}状态。"
 					]
 				}
@@ -653,9 +653,9 @@
 			"reaction": [
 				{
 					"ENG_name": "Transfer Harm",
-					"name": "转移重伤术",
+					"name": "伤害转嫁",
 					"entries": [
-						"{@actTrigger} 当幼荚体位于该植物5尺范围内时，一次攻击检定命中该植物。{@actResponse} 该植物将那次攻击造成的伤害减半，而幼荚体承受另一半伤害。"
+						"{@actTrigger} 当荚苗位于该植物5尺范围内时，一次攻击检定命中该植物。{@actResponse} 该植物将那次攻击造成的伤害减半，而荚苗承受另一半伤害。"
 					]
 				}
 			],
@@ -702,7 +702,7 @@
 		},
 		{
 			"ENG_name": "Bodytaker Podling",
-			"name": "夺躯者豆丁",
+			"name": "捕体荚苗",
 			"type": "plant",
 			"source": "RHW",
 			"page": 236,
@@ -748,9 +748,9 @@
 			"trait": [
 				{
 					"ENG_name": "Semblance of Life",
-					"name": "生命的假象",
+					"name": "生命拟态",
 					"entries": [
-						"荚囊体是被捕体植物消化生物的一个物理复制体。荚囊体在进行魅力（{@skill 欺瞒|XPHB}）检定以伪装成被消化生物时具有{@variantrule 优势|XPHB}。荚囊体死亡时会融化成浆状物。"
+						"荚苗是被捕体植物消化的生物的物理复制体。荚苗为冒充被消化生物而进行的魅力（{@skill 欺瞒|XPHB}）检定具有{@variantrule 优势|XPHB}。荚苗死亡时会融化成一滩浆液。"
 					]
 				}
 			],
@@ -867,7 +867,7 @@
 			"bonus": [
 				{
 					"ENG_name": "Unraveling Flesh (1/Day)",
-					"name": "解离血肉（1/天）",
+					"name": "解体血肉（1/天）",
 					"entries": [
 						"{@actSave wis} {@dc 11}，每个在30尺内能看见无骨者的生物。{@actSaveFail} 目标获得{@condition 恐慌|XPHB}状态。{@actSaveSuccessOrFail} 无骨者移动至多其{@variantrule 速度|XPHB}距离，且不会引发{@action 借机攻击|XPHB|借机攻击}。"
 					]
@@ -981,14 +981,14 @@
 					"ENG_name": "Detect Intelligence",
 					"name": "侦测智能",
 					"entries": [
-						"这个大脑可以魔法般地感知到自身300尺范围内任何智力属性为3或更高的生物的位置，无论中间是否有障碍物。"
+						"无论其间是否有障碍物阻隔，缸中之脑能魔法性地感知300尺内任何智力值为3或更高的生物位置。"
 					]
 				},
 				{
 					"ENG_name": "Magic Resistance",
 					"name": "魔法抗性",
 					"entries": [
-						"这个大脑在对抗法术和其他魔法效果的豁免检定上具有{@variantrule 优势|XPHB}。"
+						"缸中之脑对抗法术和其他魔法效应时进行的豁免检定具有{@variantrule 优势|XPHB}。"
 					]
 				}
 			],
@@ -997,12 +997,12 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"大脑进行两次干扰爆发攻击。"
+						"缸中之脑发动两次阻扰爆发攻击。"
 					]
 				},
 				{
 					"ENG_name": "Disrupting Burst",
-					"name": "干扰爆发",
+					"name": "阻扰爆发",
 					"entries": [
 						"{@atkr m,r} {@hit 6}，触及 5 尺或射程 120 尺。{@h}11 ({@damage 2d6 + 4}) 心灵伤害。目标直到其下一回合结束前不能执行反应，并且直到其下一回合结束前，在维持{@status 专注|XPHB}的豁免检定上具有{@variantrule 劣势|XPHB}。"
 					]
@@ -1011,7 +1011,7 @@
 					"ENG_name": "Mind Blast {@recharge 5}",
 					"name": "心灵震爆 {@recharge 5}",
 					"entries": [
-						"{@actSave int} {@dc 14}，60尺{@variantrule 锥状 [效应区域]|XPHB|锥状}区域内的每个生物。{@actSaveFail} 14（{@damage 4d6}）心灵伤害，且目标获得{@condition 失能|XPHB}状态，持续到脑罐的下个回合结束。{@actSaveSuccess} 仅受到一半伤害。"
+						"{@actSave int} {@dc 14}，60尺{@variantrule 锥状 [效应区域]|XPHB|锥状}区域内的每个生物。{@actSaveFail} 14（{@damage 4d6}）心灵伤害，且目标获得{@condition 失能|XPHB}状态，持续到缸中之脑的下个回合结束。{@actSaveSuccess} 仅受到一半伤害。"
 					]
 				}
 			],
@@ -1101,7 +1101,7 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"尸隐虫进行两次触须攻击和一次刺针攻击。"
+						"尸隐虫发动两次触须攻击和一次尾刺攻击。"
 					]
 				},
 				{
@@ -1114,9 +1114,9 @@
 				},
 				{
 					"ENG_name": "Stinger",
-					"name": "刺针",
+					"name": "尾刺",
 					"entries": [
-						"{@atkr m} {@hit 5}（如果尸隐虫附着在目标身上，则具有{@variantrule 优势|XPHB}），触及5尺。{@h}7（{@damage 2d6}）毒素伤害，并且目标受到以下效果影响。{@actSave con} {@dc 13}。{@actSaveFail} 目标获得{@condition 中毒|XPHB}状态。当以此方式处于{@condition 中毒|XPHB}状态时，目标体内会寄生一只尸隐虫幼虫。如果24小时后目标仍以此方式处于{@condition 中毒|XPHB}状态，则效果结束，幼虫将变为一只完全成熟的尸隐虫，从目标胸腔中破体而出并杀死目标。"
+						"{@atkr m} {@hit 5}（如果尸隐虫附着在目标身上，则具有{@variantrule 优势|XPHB}），触及5尺。{@h}7（{@damage 2d6}）毒素伤害，并且目标受到以下效果影响。{@actSave con} {@dc 13}。{@actSaveFail} 目标获得{@condition 中毒|XPHB}状态。当以此方式处于{@condition 中毒|XPHB}状态时，目标体内会被植入一只尸隐虫幼体。如果24小时后目标仍以此方式处于{@condition 中毒|XPHB}状态，则效果结束，幼体将成长为一只完全成熟的尸隐虫，从目标的胸腔中破肚而出并将其杀死。"
 					]
 				}
 			],
@@ -1212,9 +1212,9 @@
 				},
 				{
 					"ENG_name": "Soul Swap {@recharge 5}",
-					"name": "灵魂互换{@recharge 5}",
+					"name": "换魂{@recharge 5}",
 					"entries": [
-						"{@actSave cha} {@dc 11}，目标是换身魔偶15尺内能看见的、被其银针诅咒的一个人形生物。{@actSaveFail} 换身魔偶占据目标的身体，而目标的灵魂则进入换身魔偶的身体并获得持续1小时的{@condition 昏迷|XPHB}状态。在占据另一具身体期间，换身魔偶和目标保留各自的阵营、人格、智力、感知和魅力属性值以及已知语言。除此之外，它们将采用另一生物的游戏数据，但目标无法使用此灵魂交换动作。",
+						"{@actSave cha} {@dc 11}，换身魔偶15尺内一名被其银针诅咒的可见类人生物。{@actSaveFail} 换身魔偶附身目标的身体，而目标则附身换身魔偶的身体，并陷入{@condition 昏迷|XPHB}状态1小时。附身于彼此身体期间，换身魔偶与目标保留各自的阵营、性格、智力、感知与魅力属性及已知语言。除此之外，双方使用对方的游戏数据，但目标无法使用换魂动作。",
 						"如果目标（在换身魔偶的身体内）用其银针对换身魔偶（在目标原来的身体内）造成伤害，则附身状态解除。如果任一身体被摧毁，换身魔偶和目标都会死亡。"
 					]
 				}
@@ -1738,7 +1738,7 @@
 					"ENG_name": "Flyby",
 					"name": "飞掠",
 					"entries": [
-						"死亡之颅飞离敌人的触及范围时不会引发{@action 借机攻击|XPHB}。"
+						"死亡之颅飞行离开敌人的触及范围时不会引发{@action 借机攻击|XPHB}。"
 					]
 				}
 			],
@@ -1772,7 +1772,7 @@
 		},
 		{
 			"ENG_name": "Death's Head Tree",
-			"name": "死颅之树",
+			"name": "死颅巨树",
 			"type": "plant",
 			"source": "RHW",
 			"page": 243,
@@ -1817,16 +1817,16 @@
 			"trait": [
 				{
 					"ENG_name": "Overhanging Branches",
-					"name": "悬垂的树枝",
+					"name": "垂枝",
 					"entries": [
 						"这棵树的盟友可以自愿在树的空间结束移动。位于树的空间内的盟友获得{@variantrule 掩护|XPHB|半身掩护}。"
 					]
 				},
 				{
 					"ENG_name": "Unholy Regrowth",
-					"name": "亵渎再生",
+					"name": "邪秽再生",
 					"entries": [
-						"如果这棵树死亡，除非它被一个处于{@spell 祝福术|XPHB}法术效果下的生物使用能造成挥砍伤害的武器杀死，否则在365天后，同一地点周围会再生出{@dice 2d6}棵死颅之树。"
+						"如果这棵树死亡，除非它被一个处于{@spell 祝福术|XPHB}法术效果下的生物使用能造成挥砍伤害的武器杀死，否则在365天后，同一地点周围会再生出{@dice 2d6}棵死颅巨树。"
 					]
 				}
 			],
@@ -1847,9 +1847,9 @@
 				},
 				{
 					"ENG_name": "Exploding Head",
-					"name": "爆裂头部",
+					"name": "自爆头颅",
 					"entries": [
-						"{@actSave dex} {@dc 14}，以死亡之首树120尺内一个它能看见的点为中心，10尺半径的{@variantrule 球状 [效应区域]|XPHB|球状}内的每个生物。{@actSaveFail} 10（{@damage 3d6}）暗蚀伤害，并且该生物获得{@condition 中毒|XPHB}状态，直到死亡之首树的下一回合开始。{@actSaveSuccess} 仅受一半伤害。"
+						"{@actSave dex} {@dc 14}，以死颅巨树120尺内一个它能看见的点为中心，10尺半径的{@variantrule 球状 [效应区域]|XPHB|球状}内的每个生物。{@actSaveFail} 10（{@damage 3d6}）暗蚀伤害，并且该生物获得{@condition 中毒|XPHB}状态，直到死颅巨树的下一回合开始。{@actSaveSuccess} 仅受一半伤害。"
 					]
 				}
 			],
@@ -1950,14 +1950,14 @@
 			"trait": [
 				{
 					"ENG_name": "Mounted Adept",
-					"name": "骑战大师",
+					"name": "骑乘老手",
 					"entries": [
 						"当骑乘且未处于{@condition 失能|XPHB}状态时，杜拉罕及其坐骑在敏捷豁免检定上具有{@variantrule 优势|XPHB}，并且杜拉罕可以迫使一次以它的坐骑为目标的攻击改为以杜拉罕为目标。"
 					]
 				},
 				{
 					"ENG_name": "Terrorizer",
-					"name": "恐怖使者",
+					"name": "驭惧者",
 					"entries": [
 						"杜拉罕对处于{@condition 恐慌|XPHB}状态的目标进行攻击检定时具有{@variantrule 优势|XPHB}。"
 					]
@@ -1968,12 +1968,12 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"杜拉罕进行两次攻击，以任意组合使用斩首之刃或烈焰颅骨，并使用无头悲号。"
+						"杜拉罕使用斩首刃或烈焰颅骨发动共计两次攻击，并使用无头悲号。"
 					]
 				},
 				{
 					"ENG_name": "Beheading Blade",
-					"name": "斩首之刃",
+					"name": "斩首刃",
 					"entries": [
 						"{@atkr m} {@hit 8}，触及 5 尺。{@h}9 ({@damage 1d10 + 4}) 挥砍伤害外加 11 ({@damage 2d10}) 暗蚀伤害。如果目标因这次攻击{@variantrule 生命值|XPHB}降至 0，则其死亡且头颅被斩下。该头颅在目标尸体的位置或最近的未被占据空间处升起，成为一个死亡之颅。该头颅受杜拉罕控制。杜拉罕一次最多能控制七个头颅。"
 					]
@@ -2325,26 +2325,26 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"古老者进行两次安抚触须攻击并使用心灵穿刺。"
+						"古老者发动两次催眠触须攻击并使用心灵戳刺。"
 					]
 				},
 				{
 					"ENG_name": "Soothing Tentacle",
-					"name": "安抚触须",
+					"name": "催眠触须",
 					"entries": [
 						"{@atkr m} {@hit 10}，触及10尺。{@h}14（{@damage 2d8 + 5}）心灵伤害，并且目标获得{@condition 魅惑|XPHB}状态，直到古老者的下一回合开始。"
 					]
 				},
 				{
 					"ENG_name": "Mind-Scouring Spores {@recharge}",
-					"name": "心灵冲刷孢子 {@recharge}",
+					"name": "蚀心孢子 {@recharge}",
 					"entries": [
 						"{@actSave int} {@dc 18}，古老者周围20尺{@variantrule 光环 [效应区域]|XPHB|光环}范围内的每个生物。{@actSaveFail} 55 ({@damage 10d10})心灵伤害。持续1分钟，每当目标进行{@action 魔法|XPHB}动作时，受到10 ({@damage 3d6})心灵伤害。{@actSaveSuccess} 仅受到一半伤害。"
 					]
 				},
 				{
 					"ENG_name": "Psychic Skewer",
-					"name": "心灵穿刺",
+					"name": "心灵戳刺",
 					"entries": [
 						"{@actSave wis} {@dc 18}，60尺内一个生物。{@actSaveFail} 22（{@damage 4d10}）心灵伤害。如果目标处于{@condition 魅惑|XPHB}状态，则其获得1级{@condition 力竭|XPHB}，并且在{@condition 魅惑|XPHB}期间处于{@condition 震慑|XPHB}状态。"
 					]
@@ -2505,7 +2505,7 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"艾丝进行三次攻击，可以任意组合使用猎人之刃或火炎箭。"
+						"艾丝使用猎人之刃或烈焰箭矢发动共计三次攻击。"
 					]
 				},
 				{
@@ -2517,7 +2517,7 @@
 				},
 				{
 					"ENG_name": "Fiery Bolt",
-					"name": "火炎箭",
+					"name": "烈焰箭矢",
 					"entries": [
 						"{@atkr r} {@hit 7}，射程 120 尺。{@h}19 ({@damage 3d10 + 3}) 火焰伤害。"
 					]
@@ -2533,15 +2533,15 @@
 				},
 				{
 					"ENG_name": "Curse of the All-Seeing Eye (1/Day)",
-					"name": "全见者之眼的诅咒（1/天）",
+					"name": "全视之眼诅咒（1/天）",
 					"entries": [
-						"艾丝选择一个伤害类型。{@actSave wis} {@dc 15}，艾丝30尺内一个她能看见的目标。{@actSaveFail} 目标被诅咒。直到诅咒结束，目标对所选伤害类型具有{@variantrule 易伤|XPHB}。如果艾丝再次使用此动作，诅咒提前结束。",
+						"艾丝选择一个伤害类型。{@actSave wis} {@dc 15}，艾丝30尺内一个她能看见的目标。{@actSaveFail} 目标被诅咒。直到诅咒结束，目标对所选伤害类型具有{@variantrule 易伤|XPHB}。如果艾丝再次使用该附赠动作，诅咒提前结束。",
 						"如果目标在诅咒结束前{@variantrule 生命值|XPHB}降至0点，艾丝可以在之后的回合使用一个{@variantrule 附赠动作|XPHB}诅咒一个新的生物。"
 					]
 				},
 				{
 					"ENG_name": "Inspiring Rally",
-					"name": "鼓舞人心的重整旗鼓",
+					"name": "激励集结",
 					"entries": [
 						"艾丝选择60尺内至多六名盟友。每个能听到她的目标可以消耗一个{@variantrule 反应|XPHB}来移动至多其{@variantrule 速度|XPHB}的距离，且不会引发{@action 借机攻击|XPHB|借机攻击}。"
 					]
@@ -2654,7 +2654,7 @@
 				},
 				{
 					"ENG_name": "Whirling Form",
-					"name": "回旋形态",
+					"name": "盘旋形态",
 					"entries": [
 						"缢语鬼可以进入一个生物的空间并在那里停下。"
 					]
@@ -2665,19 +2665,19 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"缢语鬼进行两次旋转刀刃攻击。"
+						"缢语鬼发动两次回旋利刃攻击。"
 					]
 				},
 				{
 					"ENG_name": "Whirling Blades",
-					"name": "旋转刀刃",
+					"name": "回旋利刃",
 					"entries": [
 						"{@atkr m,r} {@hit 6}，触及5尺或射程60尺。{@h}13（{@damage 3d6 + 3}）挥砍伤害外加7（{@damage 3d4}）暗蚀伤害。"
 					]
 				},
 				{
 					"ENG_name": "Howling Wind {@recharge 5}",
-					"name": "呼啸狂风 {@recharge 5}",
+					"name": "呼啸厉风 {@recharge 5}",
 					"entries": [
 						"{@actSave con} {@dc 15}，位于30尺{@variantrule 锥状 [效应区域]|XPHB|锥状}范围内的所有生物。{@actSaveFail} 18（{@damage 4d8}）雷鸣伤害，并且目标获得{@condition 恐慌|XPHB}状态，持续1分钟。以此方式{@condition 恐慌|XPHB}时，该生物获得{@condition 耳聋|XPHB}状态，被迫与缢语鬼一同尖啸，并且不能施放具有言语成分的法术。目标在其每回合结束时重复此豁免检定，成功则自身身上的该效果结束。{@actSaveSuccess} 仅受到一半伤害。"
 					]
@@ -2726,7 +2726,7 @@
 		},
 		{
 			"ENG_name": "Gennifer Weathermay-Foxgrove",
-			"name": "珍妮弗·韦瑟梅-福克斯格罗夫",
+			"name": "珍妮弗·威瑟梅-狐林",
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -2801,7 +2801,7 @@
 				},
 				{
 					"ENG_name": "Occult Aid (2/Day)",
-					"name": "神秘援助（2/天）",
+					"name": "秘术援助（2/天）",
 					"type": "spellcasting",
 					"headerEntries": [
 						"珍妮弗施放{@spell 治愈真言|XPHB}，使用与施法相同的施法属性。"
@@ -2821,9 +2821,9 @@
 			"trait": [
 				{
 					"ENG_name": "Suppressed Lycanthropy",
-					"name": "被压制的兽化",
+					"name": "受控兽化症",
 					"entries": [
-						"如果{@variantrule 生命值|XPHB}降至0点，珍妮弗将屈服于狼人症。她的数据将被替换为狼人数据块中的数据，但她保留其阵营、人格、智力、感知和魅力属性值、熟练项以及已知语言。随后，她将立即以混种形态复活，并恢复所有{@variantrule 生命值|XPHB}。"
+						"如果{@variantrule 生命值|XPHB}降至0点，珍妮弗会兽化症发作。她的数据卡替换为狼人，但其阵营、个性、智力、感知和魅力和掌握的语言保持不变。她会立即以混合形态复活，并具有全部{@variantrule 生命值|XPHB}。"
 					]
 				}
 			],
@@ -2832,26 +2832,26 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"珍妮弗进行两次攻击，使用受祝福的匕首或光耀精魄进行任意组合。"
+						"珍妮弗使用受祝匕首或闪耀幽火发动两次攻击。"
 					]
 				},
 				{
 					"ENG_name": "Blessed Dagger",
-					"name": "受祝福的匕首",
+					"name": "受祝匕首",
 					"entries": [
 						"{@atkr m,r} {@hit 4}，触及5尺或射程20/60尺。{@h}4（{@damage 1d4 + 2}）穿刺伤害外加9（{@damage 2d8}）光耀伤害。"
 					]
 				},
 				{
 					"ENG_name": "Radiant Wisp",
-					"name": "光耀精魄",
+					"name": "闪耀幽火",
 					"entries": [
 						"{@atkr r} {@hit 5}，射程60尺。{@h}14（{@damage 2d10 + 3}）点光耀伤害。"
 					]
 				},
 				{
 					"ENG_name": "Esoteric Ward {@recharge}",
-					"name": "秘法护盾 {@recharge}",
+					"name": "秘法结界{@recharge}",
 					"entries": [
 						"{@actSave con} {@dc 13}，以珍妮弗为源点15尺{@variantrule 光环 [效应区域]|XPHB|光环}范围内的每个生物。{@actSaveFail} 18 ({@damage 4d8}) 光耀伤害。如果目标是亡灵生物，则其获得{@condition 震慑|XPHB}状态直到其下一回合结束。"
 					]
@@ -2893,7 +2893,7 @@
 		},
 		{
 			"ENG_name": "Greater Star Spawn Emissary",
-			"name": "强化星之子使者",
+			"name": "高等星之子使者",
 			"type": "aberration",
 			"group": [
 				"星之子使者"
@@ -2966,9 +2966,9 @@
 			"trait": [
 				{
 					"ENG_name": "Aberrant Restoration",
-					"name": "畸变复原",
+					"name": "异怪复苏",
 					"entries": [
-						"如果被摧毁，使者在1天后，在距离其被摧毁时300尺范围内的一只喋喋不休的巨口怪所在的空间，以全部{@variantrule 生命值|XPHB}复活；该巨口怪被摧毁。"
+						"如果星之子使者被摧毁，则其会在1天后，于任意一只位于其被摧毁之地300尺范围内的呓语之口所在的空间，以全部{@variantrule 生命值|XPHB}复活；该呓语之口随即被摧毁。"
 					]
 				},
 				{
@@ -2984,19 +2984,19 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"使徒发动两次攻击，以任意组合使用鞭囊或凝结结节。如果可用，它可以将其中的一次攻击替换为异界胆汁。"
+						"星之子使者使用巨颚横扫或腐液囊肿发动共计两次攻击。其可以将其中一次攻击替换为使用怪异胆汁（若可用）。"
 					]
 				},
 				{
 					"ENG_name": "Lashing Maw",
-					"name": "鞭囊",
+					"name": "巨颚横扫",
 					"entries": [
 						"{@atkr m} {@hit 14}，触及15尺，{@h}33（{@damage 4d12 + 7}）穿刺伤害外加18（{@damage 4d8}）强酸伤害。"
 					]
 				},
 				{
 					"ENG_name": "Coagulated Nodule",
-					"name": "凝结结节",
+					"name": "腐液囊肿",
 					"entries": [
 						"{@atkr r} {@hit 15}，射程 120 尺。{@h}44 ({@damage 8d8 + 8}) 强酸伤害。"
 					]
@@ -3005,7 +3005,7 @@
 					"ENG_name": "Unearthly Bile {@recharge 5}",
 					"name": "怪异胆汁{@recharge 5}",
 					"entries": [
-						"{@actSave dex} {@dc 23}，以该使徒可见的120尺内一点为中心，半径30尺的{@variantrule 球状 [效应区域]|XPHB|球状}内的每个生物。{@actSaveFail} 54 ({@damage 12d8}) 强酸伤害，并且一个呓语怪出现在目标30尺内一个未被占据的空间。这些呓语怪在使徒的同一{@variantrule 先攻|XPHB}计数后立即行动。每个呓语怪会战斗至被摧毁。{@actSaveSuccess} 仅受一半伤害。"
+						"{@actSave dex} {@dc 23}，以该星之子使者可见的120尺内一点为中心，半径30尺的{@variantrule 球状 [效应区域]|XPHB|球状}内的每个生物。{@actSaveFail} 54 ({@damage 12d8}) 强酸伤害，并且一只呓语之口出现在目标30尺内一个未被占据的空间。这些呓语之口在星之子使者的同一{@variantrule 先攻|XPHB}计数后立即行动。每只呓语之口会战斗至被摧毁。{@actSaveSuccess} 仅受一半伤害。"
 					]
 				}
 			],
@@ -3013,16 +3013,16 @@
 			"legendary": [
 				{
 					"ENG_name": "Forced Mutations",
-					"name": "强制突变",
+					"name": "强制畸变",
 					"entries": [
-						"{@actSave cha} {@dc 23}，使徒30尺内至多两个它能看见的生物。{@actSaveFail} 目标获得{@condition 麻痹|XPHB}状态，直到其下一回合结束。{@actSaveSuccessOrFail} 使徒在其下一回合开始前不能再次使用此动作。"
+						"{@actSave cha} {@dc 23}，星之子使者30尺内至多两个它能看见的生物。{@actSaveFail} 目标获得{@condition 麻痹|XPHB}状态，直到其下一回合结束。{@actSaveSuccessOrFail} 星之子使者在其下一回合开始前不能再次使用此动作。"
 					]
 				},
 				{
 					"ENG_name": "Teleporting Lash",
-					"name": "传送鞭笞",
+					"name": "传送颚咬",
 					"entries": [
-						"使徒可以传送至多30尺至一个它能看见的未被占据空间，并发动一次鞭囊攻击。"
+						"星之子使者可以传送至多30尺至一个它能看见的未被占据空间，并发动一次巨颚横扫攻击。"
 					]
 				}
 			],
@@ -3113,14 +3113,14 @@
 					"ENG_name": "Magic Resistance",
 					"name": "魔法抗性",
 					"entries": [
-						"诡灵什卡在对抗法术和其他魔法效果的豁免检定上具有{@variantrule 优势|XPHB}。"
+						"小法妖对抗法术和其他魔法效应时进行的豁免检定具有{@variantrule 优势|XPHB}。"
 					]
 				}
 			],
 			"action": [
 				{
 					"ENG_name": "Bite (Individual Form Only)",
-					"name": "啃咬（仅限个体形态）",
+					"name": "啃咬（仅个体形态）",
 					"entries": [
 						"{@atkr m} {@hit 4}，触及 5 尺。{@h}5 ({@damage 1d6 + 2}) 穿刺伤害外加 7 ({@damage 2d6}) 力场伤害。"
 					]
@@ -3131,7 +3131,7 @@
 					"ENG_name": "Magic Allergy (Individual Form Only; 1/Day)",
 					"name": "魔法敏感（仅限个体形态；1/天）",
 					"entries": [
-						"{@actTrigger} 一个距离诡灵什卡30尺内的生物施放法术。{@actResponse} 诡灵什卡恢复15点{@variantrule 生命值|XPHB}，然后变成一个{@creature 小法妖集群|RHW|中型集群的微型生物}。"
+						"{@actTrigger} 一个距离小法妖30尺内的生物施放法术。{@actResponse} 小法妖恢复15点{@variantrule 生命值|XPHB}，然后变成一个{@creature 小法妖集群|RHW|中型集群的微型生物}。"
 					]
 				}
 			],
@@ -3164,7 +3164,7 @@
 		},
 		{
 			"ENG_name": "Gug",
-			"name": "古格",
+			"name": "古革巨兽",
 			"type": "aberration",
 			"source": "RHW",
 			"page": 250,
@@ -3215,7 +3215,7 @@
 					"ENG_name": "Pack Tactics",
 					"name": "集群战术",
 					"entries": [
-						"如果古格的至少一名盟友在目标生物5尺内，且该盟友未处于{@condition 失能|XPHB}状态，则古格对该生物的攻击检定具有{@variantrule 优势|XPHB}。"
+						"如果古革巨兽的至少一名盟友在目标生物5尺内，且该盟友未处于{@condition 失能|XPHB}状态，则古革巨兽对该生物的攻击检定具有{@variantrule 优势|XPHB}。"
 					]
 				}
 			],
@@ -3224,22 +3224,22 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"古格发动两次爪击并使用咀嚼。"
+						"古革巨兽发动两次爪击并使用咀嚼。"
 					]
 				},
 				{
 					"ENG_name": "Claw",
 					"name": "爪击",
 					"entries": [
-						"{@atkr m} {@hit 10}，触及10尺。{@h}22（{@damage 3d10 + 6}）挥砍伤害。如果目标是中型或更小的生物，它将因其中一只爪子而陷入{@condition 受擒|XPHB}状态（逃脱DC {@dc 16}）。"
+						"{@atkr m} {@hit 10}，触及10尺。{@h}22（{@damage 3d10 + 6}）挥砍伤害。如果目标是中型或更小的生物，它将因其中一只爪子而陷入{@condition 受擒|XPHB}状态（逃脱{@dc 16}）。"
 					]
 				},
 				{
 					"ENG_name": "Chew",
 					"name": "咀嚼",
 					"entries": [
-						"{@actSave dex} {@dc 18}，针对被古格{@condition 受擒|XPHB}的两个或更少的中型或更小体型生物。{@actSaveFail} 古格将目标放入口中咀嚼。被咀嚼的生物不再处于{@condition 受擒|XPHB}状态，而是获得{@condition 束缚|XPHB}状态。当以这种方式被{@condition 束缚|XPHB}时，目标对并非源自古格的攻击和其他效果具有{@variantrule 掩护|XPHB|半身掩护}，并且在古格的每个回合开始时受到10（{@damage 3d6}）穿刺伤害。一个古格一次最多可以在其口中容纳四个生物。",
-						"在古格口中的生物可以执行一个动作进行{@dc 16}力量（{@skill 运动|XPHB}）检定。若检定成功，目标不再处于{@condition 束缚|XPHB}状态，并移动至古格5尺内一个未被占据的空间。如果古格死亡，目标不再处于{@condition 束缚|XPHB}状态，并可以使用5尺移动从古格体内逃脱，逃脱时处于{@condition 倒地|XPHB}状态。"
+						"{@actSave dex} {@dc 18}，针对被古革巨兽{@condition 受擒|XPHB}的两个或更少的中型或更小体型生物。{@actSaveFail} 古革巨兽将目标放入口中咀嚼。被咀嚼的生物不再处于{@condition 受擒|XPHB}状态，而是获得{@condition 束缚|XPHB}状态。当以这种方式被{@condition 束缚|XPHB}时，目标对并非源自古革巨兽的攻击和其他效果具有{@variantrule 掩护|XPHB|半身掩护}，并且在古革巨兽的每个回合开始时受到10（{@damage 3d6}）穿刺伤害。一个古革巨兽一次最多可以在其口中容纳四个生物。",
+						"在古革巨兽口中的生物可以执行一个动作进行{@dc 16}力量（{@skill 运动|XPHB}）检定。若检定成功，目标不再处于{@condition 束缚|XPHB}状态，并移动至古革巨兽5尺内一个未被占据的空间。如果古革巨兽死亡，目标不再处于{@condition 束缚|XPHB}状态，并可以使用5尺移动从古革巨兽体内逃脱，逃脱时处于{@condition 倒地|XPHB}状态。"
 					]
 				}
 			],
@@ -3318,7 +3318,7 @@
 						},
 						{
 							"number": 50,
-							"condition": "（仅限凶暴狼形态）"
+							"condition": "（仅限恐狼形态）"
 						}
 					]
 				}
@@ -3427,7 +3427,7 @@
 					"ENG_name": "Shape-Shift",
 					"name": "变形",
 					"entries": [
-						"哈肯变形为一个大型凶暴狼-人形混合体或一只大型凶暴狼，或者他变回其真实的人形形态。除了体型外，他在每种形态下的游戏数据都相同。他所穿戴或携带的任何装备都不会被转化。"
+						"哈肯变形为一个大型恐狼-人形混合体或一只大型恐狼，或者他变回其真实的人形形态。除了体型外，他在每种形态下的游戏数据都相同。他所穿戴或携带的任何装备都不会被转化。"
 					]
 				}
 			],
@@ -3450,7 +3450,7 @@
 					"ENG_name": "Surprise Bite",
 					"name": "突袭啃咬",
 					"entries": [
-						"哈肯使用变形能力转变为他的混种形态或凶暴狼形态，然后进行一次啃咬攻击。哈肯在他的下一回合开始前不能再次使用此动作。"
+						"哈肯使用变形能力转变为他的混种形态或恐狼形态，然后进行一次啃咬攻击。哈肯在他的下一回合开始前不能再次使用此动作。"
 					]
 				}
 			],
@@ -3848,7 +3848,7 @@
 					"name": "施法",
 					"type": "spellcasting",
 					"headerEntries": [
-						"心焰审判官施展下列法术之一，无需法术成分，并使用魅力作为施法属性（法术豁免{@dc 16}）："
+						"审判官施展下列法术之一，无需法术成分，并使用魅力作为施法属性（法术豁免{@dc 16}）："
 					],
 					"will": [
 						"{@spell 侦测魔法|XPHB}",
@@ -3872,7 +3872,7 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"审判官进行三次镀银长剑攻击或使用三次心灵之火。如果可用，它可以消耗一次施法来施放{@spell 定身怪物|XPHB}，以取代一次攻击或一次心灵之火的使用。"
+						"审判官进行三次镀银长剑攻击或者使用三次心火。其可以将其中一次攻击或者一次心火使用次数替换为施法以施展{@spell 定身怪物|XPHB}（若可用）。"
 					]
 				},
 				{
@@ -3884,16 +3884,16 @@
 				},
 				{
 					"ENG_name": "Inquisitor's Command {@recharge 5}",
-					"name": "审判官命令 {@recharge 5}",
+					"name": "审判官指令{@recharge 5}",
 					"entries": [
 						"{@actSave wis} {@dc 16}，审判官选择其60尺内能看见的每个生物。{@actSaveFail} 目标获得{@condition 魅惑|XPHB}状态，持续至审判官的下个回合开始。在{@condition 魅惑|XPHB}目标的回合，审判官可以心灵感应控制目标的移动，并使其执行{@action 攻击|XPHB}动作（审判官选择目标）、{@action 疾走|XPHB}动作或不执行任何动作。"
 					]
 				},
 				{
 					"ENG_name": "Mind Fire",
-					"name": "心灵之火",
+					"name": "心火",
 					"entries": [
-						"{@actSave int} {@dc 16}，心焰审判官120尺内一个他能看见的生物。{@actSaveFail} 9（{@damage 1d8 + 5}）心灵伤害，并且目标获得{@condition 震慑|XPHB}状态直到心焰审判官的下个回合开始。"
+						"{@actSave int} {@dc 16}，审判官120尺内一个他能看见的生物。{@actSaveFail} 9（{@damage 1d8 + 5}）心灵伤害，并且目标获得{@condition 震慑|XPHB}状态直到审判官的下个回合开始。"
 					]
 				}
 			],
@@ -4035,7 +4035,7 @@
 					"ENG_name": "Metabolic Control",
 					"name": "代谢控制",
 					"entries": [
-						"在它的每个回合开始时，如果审判官至少有1点{@variantrule 生命值|XPHB|生命值}，它会恢复10点{@variantrule 生命值|XPHB}，并且可以结束自身的一个状态。"
+						"在审判官的每个回合开始时，如果审判官至少有1点{@variantrule 生命值|XPHB|生命值}，它会恢复10点{@variantrule 生命值|XPHB}，并且可以结束自身的一个状态。"
 					]
 				}
 			],
@@ -4184,12 +4184,12 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"审判官进行三次力场刃攻击。如果可用，它可以消耗一次施法来施放{@spell 欧提路克弹力法球|XPHB}或{@spell 心灵遥控|XPHB}，以取代其中一次攻击。"
+						"审判官进行三次力场剑刃攻击。如果可用，它可以消耗一次施法来施放{@spell 欧提路克弹力法球|XPHB}或{@spell 心灵遥控|XPHB}，以取代其中一次攻击。"
 					]
 				},
 				{
 					"ENG_name": "Force Blade",
-					"name": "力场刃",
+					"name": "力场剑刃",
 					"entries": [
 						"{@atkr m,r} {@hit 7}，触及5尺或射程120尺。{@h}22（{@damage 4d8 + 4}）力场伤害。如果目标是大型或更小的生物，它将被击退至多10尺，远离审判官。"
 					]
@@ -4200,7 +4200,7 @@
 					"ENG_name": "Implode {@recharge 4}",
 					"name": "坍缩 {@recharge 4}",
 					"entries": [
-						"{@actSave dex} {@dc 15}，以典籍审判官120尺内可见一点为中心，20尺半径的{@variantrule 球状 [效应区域]|XPHB|球状}内的每个生物。{@actSaveFail} 27（{@damage 6d8}）点力场伤害，且目标获得{@condition 倒地|XPHB}状态并被直线拉向{@variantrule 球状 [效应区域]|XPHB|球状}中心最多20尺。{@actSaveSuccess} 仅受一半伤害。"
+						"{@actSave dex} {@dc 15}，以审判官120尺内可见一点为中心，20尺半径的{@variantrule 球状 [效应区域]|XPHB|球状}内的每个生物。{@actSaveFail} 27（{@damage 6d8}）点力场伤害，且目标获得{@condition 倒地|XPHB}状态并被直线拉向{@variantrule 球状 [效应区域]|XPHB|球状}中心最多20尺。{@actSaveSuccess} 仅受一半伤害。"
 					]
 				}
 			],
@@ -4501,7 +4501,7 @@
 					"ENG_name": "Toxic Touch",
 					"name": "剧毒之触",
 					"entries": [
-						"{@atkr m} {@hit 7}，触及 5 尺。{@h}8 ({@damage 1d8 + 4}) 毒素伤害。被此伤害降至 0 {@variantrule 生命值|XPHB} 的类人生物，除非被复活或其躯体被摧毁，否则将在 24 小时后作为受伊凡娜控制的藤蔓枯萎怪起身。"
+						"{@atkr m} {@hit 7}，触及 5 尺。{@h}8 ({@damage 1d8 + 4}) 毒素伤害。被此伤害降至 0 {@variantrule 生命值|XPHB} 的类人生物，除非被复活或其躯体被摧毁，否则将在 24 小时后作为受伊凡娜控制的枯藤怪起身。"
 					]
 				},
 				{
@@ -4673,7 +4673,7 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"僵尸发动三次猛击并使用一次吸收精气。"
+						"僵尸发动三次猛击攻击然后使用吸食精气。"
 					]
 				},
 				{
@@ -4685,16 +4685,16 @@
 				},
 				{
 					"ENG_name": "Consume Energy",
-					"name": "吸收精气",
+					"name": "吸食精气",
 					"entries": [
-						"{@actSave con} {@dc 16}，僵尸能看见的30尺内一个生物。{@actSaveFail} 18 ({@damage 4d8}) 暗蚀伤害。{@actSaveSuccess} 一半伤害。{@actSaveSuccessOrFail} 僵尸恢复等同于所受暗蚀伤害的{@variantrule 生命值|XPHB}，僵尸的{@variantrule 飞行速度|XPHB}增加至20尺直到其下个回合结束，并且它可以执行其饥渴步伐{@variantrule 附赠动作|XPHB}。一个被此伤害降至0{@variantrule 生命值|XPHB}的人形生物，在僵尸的回合结束时，会作为一个受僵尸控制的妖鬼站起。如果这个妖鬼用其吸取生命动作杀死了一个人形生物，该妖鬼将在5天后转变为一个独立的僵尸。"
+						"{@actSave con} {@dc 16}，僵尸能看见的30尺内一个生物。{@actSaveFail} 18 ({@damage 4d8}) 暗蚀伤害。{@actSaveSuccess} 一半伤害。{@actSaveSuccessOrFail} 僵尸恢复等同于所受暗蚀伤害的{@variantrule 生命值|XPHB}，僵尸的{@variantrule 飞行速度|XPHB}增加至20尺直到其下个回合结束，并且它可以执行其饥渴奔行{@variantrule 附赠动作|XPHB}。一个被此伤害降至0{@variantrule 生命值|XPHB}的类人生物，在僵尸的回合结束时，会作为一个受僵尸控制的尸妖站起。如果这个尸妖用其吸取生命动作杀死了一个类人生物，该尸妖将在5天后转变为一个独立的僵尸。"
 					]
 				}
 			],
 			"bonus": [
 				{
 					"ENG_name": "Hungering Stride (Requires Consume Energy)",
-					"name": "饥渴步伐（需要吸收精气）",
+					"name": "饥渴奔行（需求吸食精气）",
 					"entries": [
 						"僵尸采取{@action 疾走|XPHB}动作。"
 					]
@@ -4738,7 +4738,7 @@
 		},
 		{
 			"ENG_name": "Laurie Weathermay-Foxgrove",
-			"name": "劳里·韦瑟梅-福克斯格罗夫",
+			"name": "劳莉·威瑟梅-狐林",
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -4786,7 +4786,7 @@
 				"链甲|xphb",
 				{
 					"item": "+1 长剑|xdmg",
-					"displayName": "戈萨默 (+1 长剑)"
+					"displayName": "轻丝（+1 长剑）"
 				}
 			],
 			"action": [
@@ -4794,12 +4794,12 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"劳里进行两次攻击，可以任意组合使用戈萨默或轻弩。"
+						"劳莉使用轻丝或轻弩发动共计两次攻击。"
 					]
 				},
 				{
 					"ENG_name": "Gossamer",
-					"name": "戈萨默",
+					"name": "轻丝",
 					"entries": [
 						"{@atkr m} {@hit 6}，触及5尺。{@h}8（{@damage 1d8 + 4}）挥砍伤害外加3（{@damage 1d6}）光耀伤害。"
 					]
@@ -4815,9 +4815,9 @@
 			"reaction": [
 				{
 					"ENG_name": "Deflect Blow",
-					"name": "卸力",
+					"name": "偏转攻击",
 					"entries": [
-						"{@actTrigger} 一次攻击检定命中了劳里或她5尺内能看见的一个生物。{@actResponse} 该次触发攻击的伤害减少5（{@dice 1d10}）。"
+						"{@actTrigger} 劳莉或一名她5尺内可见的生物被攻击检定命中。{@actResponse} 该次触发攻击的伤害减少5（{@dice 1d10}）。"
 					]
 				}
 			],
@@ -4844,7 +4844,7 @@
 		},
 		{
 			"ENG_name": "Lesser Star Spawn Emissary",
-			"name": "弱化星之子使者",
+			"name": "次等星之子使者",
 			"type": "aberration",
 			"group": [
 				"星之子使者"
@@ -4929,21 +4929,21 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"使徒进行三次攻击，以任意组合使用鞭囊或血肉反转。"
+						"星之子使者使用巨颚横扫或血肉翻转发动共计三次攻击。"
 					]
 				},
 				{
 					"ENG_name": "Lashing Maw",
-					"name": "鞭囊",
+					"name": "巨颚横扫",
 					"entries": [
 						"{@atkr m} {@hit 11}，触及15尺。{@h}16（{@damage 2d10 + 5}）穿刺伤害外加13（{@damage 3d8}）强酸伤害。"
 					]
 				},
 				{
 					"ENG_name": "Invert Flesh",
-					"name": "血肉反转",
+					"name": "血肉翻转",
 					"entries": [
-						"{@actSave con} {@dc 21}，使徒120尺内一个它能看见的生物。{@actSaveFail} 29 ({@damage 4d10 + 7}) 力场伤害。"
+						"{@actSave con} {@dc 21}，星之子使者120尺内一个它能看见的生物。{@actSaveFail} 29 ({@damage 4d10 + 7}) 力场伤害。"
 					]
 				}
 			],
@@ -4952,7 +4952,7 @@
 					"ENG_name": "Shape-Shift",
 					"name": "变形",
 					"entries": [
-						"星之使徒变形为一个小型或中型生物，或恢复其真实形态。除了体型外，它在每种形态下的游戏数据都相同。它所穿戴或携带的任何装备都不会被转化。"
+						"星之子使者变形为一小型或中型生物，或是变回其真实形态。除体型外，其各形态下游戏数据均相同。星之子使者着装或携带的任何装备都不会随之变化。"
 					]
 				}
 			],
@@ -4960,23 +4960,23 @@
 			"legendary": [
 				{
 					"ENG_name": "Teleporting Lash",
-					"name": "传送鞭笞",
+					"name": "传送颚咬",
 					"entries": [
-						"使徒传送至一个它可见的未被占据空间，距离最多30尺，并进行一次鞭囊攻击。"
+						"星之子使者传送至多30尺至一处其可见的未占据空间并发动一次巨颚横扫攻击。"
 					]
 				},
 				{
 					"ENG_name": "Twist",
-					"name": "转折点",
+					"name": "搅碎",
 					"entries": [
-						"使徒使用了血肉反转。"
+						"星之子使者使用血肉翻转。"
 					]
 				},
 				{
 					"ENG_name": "Warp Body",
-					"name": "扭曲身体",
+					"name": "血肉畸变",
 					"entries": [
-						"{@actSave con} {@dc 21}，使徒30尺内一个它能看见的生物。{@actSaveFail} 27（{@damage 6d8}）力场伤害，并且目标获得{@condition 震慑|XPHB}状态，直到其下个回合开始。{@actSaveSuccessOrFail} 使徒直到其下个回合开始前不能再次使用此动作。"
+						"{@actSave con} {@dc 21}，星之子使者30尺内一个它能看见的生物。{@actSaveFail} 27（{@damage 6d8}）力场伤害，并且目标获得{@condition 震慑|XPHB}状态，直到其下个回合开始。{@actSaveSuccessOrFail} 星之子使者直到其下个回合开始前不能再次使用此动作。"
 					]
 				}
 			],
@@ -5263,11 +5263,11 @@
 					"walk": [
 						{
 							"number": 40,
-							"condition": "(仅限混合形态)"
+							"condition": "(仅混合形态)"
 						},
 						{
 							"number": 50,
-							"condition": "（仅限凶暴狼形态）"
+							"condition": "（仅恐狼形态）"
 						}
 					]
 				}
@@ -5318,26 +5318,26 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"凶咒狼人发动两次攻击，使用太刀或撕裂进行任意组合。它可以用一次啃咬攻击替换其中一次攻击。"
+						"凶咒狼人使用长剑或撕裂发动共计两次攻击，其可以将其中一次攻击替换为啃咬。"
 					]
 				},
 				{
 					"ENG_name": "Bite (Dire Wolf or Hybrid Form Only)",
-					"name": "啃咬（仅限恐狼形态或者半人形态）",
+					"name": "啃咬（仅恐狼或混合形态）",
 					"entries": [
 						"{@atkr m} {@hit 12}，触及5尺。{@h}16（{@damage 2d8 + 7}）穿刺伤害外加14（{@damage 4d6}）暗蚀伤害。如果目标是类人生物，它将受到以下效果影响。{@actSave con} {@dc 18}。{@actSaveFail} 目标被诅咒。如果被诅咒的目标{@variantrule 生命值|XPHB}降至0，它将变为一只由DM控制的狼人，并拥有10{@variantrule 生命值|XPHB}。在此凶咒狼人死亡之前，诅咒无法被移除。{@actSaveSuccess} 目标在24小时内免疫此凶咒狼人的诅咒。"
 					]
 				},
 				{
 					"ENG_name": "Longsword (Humanoid or Hybrid Form Only)",
-					"name": "长剑（仅限类人或混种形态）",
+					"name": "长剑（仅类人或混合形态）",
 					"entries": [
 						"{@atkr m} {@hit 12}，触及5尺。{@h}18（{@damage 2d10 + 7}）挥砍伤害外加3（{@damage 1d6}）暗蚀伤害。"
 					]
 				},
 				{
 					"ENG_name": "Rend (Dire Wolf or Hybrid Form Only)",
-					"name": "撕裂（仅限恐狼或混种形态）",
+					"name": "撕裂（仅恐狼或混合形态）",
 					"entries": [
 						"{@atkr m} {@hit 12}，触及5尺。{@h}16（{@damage 2d8 + 7}）挥砍伤害。如果目标是中型或更小的生物，它将陷入{@condition 倒地|XPHB}状态。"
 					]
@@ -5348,23 +5348,23 @@
 					"ENG_name": "Shape-Shift",
 					"name": "变形",
 					"entries": [
-						"凶咒狼人变形为大型凶暴狼-人形混合体或大型凶暴狼，或变回其真实的人形形态。除了体型外，它在每种形态下的游戏数据都相同。它所穿戴或携带的任何装备都不会被转化。"
+						"凶咒狼人变形为类人与恐狼的混合形态（大型），或恐狼形态（大型），或变回其真实的类人形态。除体型以外，其各形态下游戏数据均相同。凶咒狼人着装或携带的任何装备都不会随之变化。"
 					]
 				}
 			],
 			"legendary": [
 				{
 					"ENG_name": "Mauling Charge",
-					"name": "猛击冲锋",
+					"name": "猛扑冲锋",
 					"entries": [
-						"凶咒狼人移动至多其{@variantrule 速度|XPHB}的一半距离且不引发{@action 借机攻击|XPHB|借机攻击}，并发动一次太刀或撕裂攻击。"
+						"凶咒狼人移动至多其{@variantrule 速度|XPHB}的一半距离且不引发{@action 借机攻击|XPHB|借机攻击}，并发动一次长剑或撕裂攻击。"
 					]
 				},
 				{
 					"ENG_name": "Surprise Bite",
-					"name": "突袭啃咬",
+					"name": "奇袭啃咬",
 					"entries": [
-						"凶咒狼人使用变形，转变为它的混种形态或恐狼形态，然后进行一次啃咬攻击。凶咒狼人在其下一回合开始前不能再次使用此动作。"
+						"凶咒狼人使用变形，转变为它的混合形态或恐狼形态，然后进行一次啃咬攻击。凶咒狼人在其下一回合开始前不能再次使用此动作。"
 					]
 				}
 			],
@@ -5526,7 +5526,7 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"伊娃夫人进行三次攻击，使用诅咒匕首或光焰进行任意组合。"
+						"伊娃夫人使用诅咒匕首或光耀之焰发动共计三次攻击。"
 					]
 				},
 				{
@@ -5538,14 +5538,14 @@
 				},
 				{
 					"ENG_name": "Radiant Flame",
-					"name": "光焰",
+					"name": "光耀之焰",
 					"entries": [
 						"{@atkr r} {@hit 9}，射程 60 尺。{@h}21 ({@damage 3d10 + 5}) 光耀伤害，且目标获得{@condition 目盲|XPHB}状态，持续至伊娃夫人的下一回合开始。"
 					]
 				},
 				{
 					"ENG_name": "Apocalyptic Visions {@recharge 5}",
-					"name": "末日幻象 {@recharge 5}",
+					"name": "天启之视 {@recharge 5}",
 					"entries": [
 						"{@actSave wis} {@dc 17}，以伊娃夫人120尺内能看见的一点为中心，20尺半径的{@variantrule 球状 [效应区域]|XPHB|球状}内的每个生物。{@actSaveFail} 24（{@damage 7d6}）暗蚀伤害外加24（{@damage 7d6}）心灵伤害，并且目标获得{@condition 恐慌|XPHB}状态，持续到伊娃夫人的下一回合开始。{@actSaveSuccess} 仅受到一半伤害。"
 					]
@@ -5601,7 +5601,7 @@
 		},
 		{
 			"ENG_name": "Mi-Go",
-			"name": "米-戈",
+			"name": "米·戈",
 			"type": "aberration",
 			"source": "RHW",
 			"page": 254,
@@ -5664,7 +5664,7 @@
 					"name": "施法",
 					"type": "spellcasting",
 					"headerEntries": [
-						"米-戈施展以下法术之一，无需法术成分并使用智力作为施法属性（法术豁免{@dc 17}）："
+						"米·戈施展以下法术之一，无需法术成分并使用智力作为施法属性（法术豁免{@dc 17}）："
 					],
 					"daily": {
 						"1e": [
@@ -5681,15 +5681,15 @@
 					"ENG_name": "Magic Resistance",
 					"name": "魔法抗性",
 					"entries": [
-						"米-戈对抗法术和其他魔法效应时进行的豁免检定具有{@variantrule 优势|XPHB}。"
+						"米·戈对抗法术和其他魔法效应时进行的豁免检定具有{@variantrule 优势|XPHB}。"
 					]
 				},
 				{
 					"ENG_name": "Silver Canister",
 					"name": "银罐",
 					"entries": [
-						"米-戈拥有一个银罐。当持有或携带此罐时，米-戈可以使用其提取大脑动作。",
-						"该容器罐具有AC 15，HP 40，并对所有伤害具有{@variantrule 抗性|XPHB}。如果生命值降至0{@variantrule 生命值|XPHB}，容器罐会破裂。如果容器罐破裂，其内部的任何大脑都会被摧毁。米-戈可以在7天后制造一个新的容器罐。"
+						"米·戈拥有一个银罐。携带或持握这个银罐期间，该米·戈可以使用其采脑动作。",
+						"银罐具有AC 15，HP 40，并对所有伤害具有{@variantrule 抗性|XPHB}。银罐在降至0{@variantrule 生命值|XPHB}时破损。一旦银罐破损，其中的任何大脑都将被摧毁。米·戈能在7天后再制造一个银罐。"
 					]
 				}
 			],
@@ -5698,28 +5698,28 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"米-戈进行两次钳击。如果可用，它可以将其中的一次攻击替换为使用致盲射线。"
+						"米·戈进行两次钳击。其可以将其中一次攻击替换为使用恍惚射线（若可用）。"
 					]
 				},
 				{
 					"ENG_name": "Pincer",
 					"name": "钳击",
 					"entries": [
-						"{@atkr m} {@hit 9}，触及5尺，{@h}23（{@damage 4d8 + 5}）挥砍伤害外加16（{@damage 3d10}）强酸伤害。如果目标是中型或更小的生物，它将被两只钳子中的一只施加{@condition 受擒|XPHB}状态（逃脱DC {@dc 15}）。"
+						"{@atkr m} {@hit 9}，触及5尺，{@h}23（{@damage 4d8 + 5}）挥砍伤害外加16（{@damage 3d10}）强酸伤害。如果目标是中型或更小的生物，它将被两只钳子中的一只施加{@condition 受擒|XPHB}状态（逃脱{@dc 15}）。"
 					]
 				},
 				{
 					"ENG_name": "Dazing Ray {@recharge 4}",
-					"name": "眩晕射线{@recharge 4}",
+					"name": "恍惚射线{@recharge 4}",
 					"entries": [
-						"{@actSave dex} {@dc 17}，米-戈60尺内一个它能看见的生物。{@actSaveFail} 22（{@damage 4d10}）闪电伤害加上10（{@damage 3d6}）力场伤害，并且目标获得{@condition 震慑|XPHB}状态直到米-戈的下个回合结束。"
+						"{@actSave dex} {@dc 17}，米·戈60尺内一个它能看见的生物。{@actSaveFail} 22（{@damage 4d10}）闪电伤害加上10（{@damage 3d6}）力场伤害，并且目标获得{@condition 震慑|XPHB}状态直到米·戈的下个回合结束。"
 					]
 				},
 				{
 					"ENG_name": "Extract Brain (Requires Silver Canister)",
-					"name": "采脑（需要银罐）",
+					"name": "采脑（需银罐）",
 					"entries": [
-						"{@actSave con} {@dc 17}，一个被米-戈{@condition 受擒|XPHB}或处于{@condition 震慑|XPHB}状态的生物。{@actSaveFail} 77（{@damage 14d10}）穿刺伤害。{@actSaveSuccess} 一半伤害。{@actSaveSuccessOrFail} 如果此伤害将目标的生命值降至0{@variantrule 生命值|XPHB}，米-戈会杀死它，取出其大脑，并将其大脑放入它的银罐中。"
+						"{@actSave con} {@dc 17}，一个被米·戈{@condition 受擒|XPHB}或处于{@condition 震慑|XPHB}状态的生物。{@actSaveFail} 77（{@damage 14d10}）穿刺伤害。{@actSaveSuccess} 一半伤害。{@actSaveSuccessOrFail} 如果此伤害将目标的生命值降至0{@variantrule 生命值|XPHB}，米·戈会杀死它，取出其大脑，并将其大脑放入它的银罐中。"
 					]
 				}
 			],
@@ -5779,7 +5779,7 @@
 		},
 		{
 			"ENG_name": "Mist Horror",
-			"name": "迷雾恐惧",
+			"name": "惊怖迷雾",
 			"type": "undead",
 			"source": "RHW",
 			"page": 255,
@@ -5842,7 +5842,7 @@
 					"name": "施法",
 					"type": "spellcasting",
 					"headerEntries": [
-						"迷雾恐惧施展以下法术之一，无需法术成分，并使用魅力作为施法属性（法术豁免{@dc 13}）："
+						"惊怖迷雾施展以下法术之一，无需法术成分，并使用魅力作为施法属性（法术豁免{@dc 13}）："
 					],
 					"will": [
 						"{@spell 云雾术|XPHB}"
@@ -5861,14 +5861,14 @@
 					"ENG_name": "Air Form",
 					"name": "空气形态",
 					"entries": [
-						"迷雾恐惧可以进入一个敌人的空间并在那里停下。它可以穿过窄至1英寸的空间而无需为此消耗额外移动力。"
+						"惊怖迷雾可以进入一个敌人的空间并在那里停下。它可以穿过窄至1英寸的空间而无需为此消耗额外移动力。"
 					]
 				},
 				{
 					"ENG_name": "One with the Mists",
-					"name": "与雾同行",
+					"name": "融入迷雾",
 					"entries": [
-						"当迷雾恐惧处于雾或薄雾中时，它具有{@condition 隐形|XPHB}状态。当迷雾恐惧处于雾或薄雾区域之外时，它具有{@condition 失能|XPHB}状态。"
+						"当惊怖迷雾处于雾或薄雾中时，它具有{@condition 隐形|XPHB}状态。当惊怖迷雾处于雾或薄雾区域之外时，它具有{@condition 失能|XPHB}状态。"
 					]
 				}
 			],
@@ -5877,12 +5877,12 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"迷雾恐惧发动两次心灵撕裂攻击。若可用，它可以替换一次攻击，使用施法能力来施放{@spell 命令术|XPHB}。"
+						"惊怖迷雾发动两次撕裂心智攻击。其可以将其中一次攻击替换为使用施法来施展{@spell 命令术|XPHB}（若可用）。"
 					]
 				},
 				{
 					"ENG_name": "Mind Rend",
-					"name": "心灵撕裂",
+					"name": "撕裂心智",
 					"entries": [
 						"{@atkr m} {@hit 5}，触及5尺。{@h}8（{@damage 1d10 + 3}）心灵伤害。"
 					]
@@ -5891,9 +5891,9 @@
 			"bonus": [
 				{
 					"ENG_name": "Instill Dread {@recharge 4}",
-					"name": "灌输恐惧 {@recharge 4}",
+					"name": "滴注恐惧 {@recharge 4}",
 					"entries": [
-						"{@actSave wis} {@dc 13}，迷雾恐惧所在空间内的每个生物。{@actSaveFail} 目标获得{@condition 恐慌|XPHB}状态，直到迷雾恐惧的下个回合开始。"
+						"{@actSave wis} {@dc 13}，惊怖迷雾所在空间内的每个生物。{@actSaveFail} 目标获得{@condition 恐慌|XPHB}状态，直到惊怖迷雾的下个回合开始。"
 					]
 				}
 			],
@@ -6029,7 +6029,7 @@
 					"ENG_name": "Mist Walker",
 					"name": "迷雾行者",
 					"entries": [
-						"迷雾行者可以安全地穿越迷雾，到达一个它知道名称的特定领域。迷雾行者仍然无法穿越被黑暗领主意志所封闭的领域边界。"
+						"漫游者能够安全穿行于迷雾之中，抵达一个其已知晓名字的特定领域。漫游者依然无法强行越过被黑暗领主意愿所封锁的领域边界。"
 					]
 				}
 			],
@@ -6038,12 +6038,12 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"漫游者进行两次圣光惩灭攻击。如果可用，它可以替换一次攻击为使用施法来施放{@spell 心灵尖刺|XPHB}。"
+						"漫游者发动两次耀光爆裂攻击。其可以将其中一次攻击替换为使用施法动作施展{@spell 心灵尖刺|XPHB}（若可用）。"
 					]
 				},
 				{
 					"ENG_name": "Radiant Burst",
-					"name": "圣光惩灭",
+					"name": "耀光爆裂",
 					"entries": [
 						"{@atkr m,r} {@hit 5}，触及5尺或射程60尺。{@h}14（{@damage 2d10 + 3}）点光耀伤害。"
 					]
@@ -6214,7 +6214,7 @@
 			"bonus": [
 				{
 					"ENG_name": "Violent Leap",
-					"name": "狂暴跳跃",
+					"name": "暴力飞跃",
 					"entries": [
 						"该怪物花费10尺移动力，跳向40尺内一个包含一个或多个中型或更小生物的空间。{@actSave dex} {@dc 18}，位于怪物目标空间内的每个生物。{@actSaveFail} 14 ({@damage 4d6}) 钝击伤害，并且目标获得{@condition 倒地|XPHB}状态。{@actSaveSuccessOrFail} 目标移动到最近的未被占据的空间。"
 					]
@@ -6566,14 +6566,14 @@
 				},
 				{
 					"ENG_name": "Reborn by Blood",
-					"name": "鲜血重生者",
+					"name": "血染复生",
 					"entries": [
-						"如果被摧毁，死灵脓液会在其选择的、曾被其血傀儡动作附身过的生物最近的一个未被占据空间内，于{@dice 1d10}天后以全部{@variantrule 生命值|XPHB}复活。如果被摧毁的死灵脓液的遗骸处于受{@spell 圣居|XPHB}法术影响的容器内，或者其所有先前的血傀儡目标均已死亡，则此特性不会生效。"
+						"如果被摧毁，死灵脓液会在其选择的、曾被其血傀动作附身过的生物最近的一个未被占据空间内，于{@dice 1d10}天后以全部{@variantrule 生命值|XPHB}复活。如果被摧毁的死灵脓液的遗骸处于受{@spell 圣居|XPHB}法术影响的容器内，或者其所有先前的血傀目标均已死亡，则此特性不会生效。"
 					]
 				},
 				{
 					"ENG_name": "Spider Climb",
-					"name": "蛛行术",
+					"name": "蛛行",
 					"entries": [
 						"死灵脓液可以攀爬困难表面，包括天花板，而无需进行属性检定。"
 					]
@@ -6584,22 +6584,22 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"死灵脓液发动两次暗能爆裂攻击。"
+						"死灵脓液发动两次暗能爆发攻击。"
 					]
 				},
 				{
 					"ENG_name": "Necrotic Burst",
-					"name": "暗能爆裂",
+					"name": "暗能爆发",
 					"entries": [
 						"{@atkr m,r} {@hit 6}，触及5尺或射程120尺。{@h}12（{@damage 2d8 + 3}）力场伤害外加11（{@damage 2d10}）暗蚀伤害，且目标获得{@condition 中毒|XPHB}状态，直至死灵脓液的下个回合开始。处于{@condition 中毒|XPHB}状态时，目标无法恢复{@variantrule 生命值|XPHB}。"
 					]
 				},
 				{
 					"ENG_name": "Blood Puppeteering {@recharge}",
-					"name": "血傀儡{@recharge}",
+					"name": "血傀{@recharge}",
 					"entries": [
 						"{@actSave con} {@dc 15}，5尺内一个{@status 浴血|XPHB}的生物。构装体和亡灵自动通过此豁免。{@actSaveFail} 目标被死灵脓液附身；死灵脓液消失，目标获得{@condition 失能|XPHB}状态并失去对其身体的控制。死灵脓液现在控制目标的身体，但目标保留意识。死灵脓液无法成为任何攻击、法术或其他效果的目标，除非该效果专门针对亡灵。死灵脓液的游戏数据保持不变，但它使用被附身目标的{@variantrule 速度|XPHB}以及力量、敏捷和体质属性值。",
-						"附身持续到目标生命值降至0{@variantrule 生命值|XPHB}或死灵脓液以一个{@variantrule 附赠动作|XPHB}离开为止。当附身结束时，死灵脓液出现在目标5尺内一个未被占据的空间，并且目标在24小时内对该死灵脓液的血傀儡效果免疫。{@actSaveSuccess} 目标在24小时内对该死灵脓液的血傀儡效果免疫。"
+						"附身持续到目标生命值降至0{@variantrule 生命值|XPHB}或死灵脓液以一个{@variantrule 附赠动作|XPHB}离开为止。当附身结束时，死灵脓液出现在目标5尺内一个未被占据的空间，并且目标在24小时内对该死灵脓液的血傀免疫。{@actSaveSuccess} 目标在24小时内对该死灵脓液的血傀免疫。"
 					]
 				}
 			],
@@ -6644,7 +6644,7 @@
 		},
 		{
 			"ENG_name": "Nightgaunt",
-			"name": "夜影魇卫",
+			"name": "夜魇",
 			"type": "aberration",
 			"source": "RHW",
 			"page": 259,
@@ -6702,7 +6702,7 @@
 					"ENG_name": "Flyby",
 					"name": "飞掠",
 					"entries": [
-						"夜影魇卫飞离敌人的触及范围时不会引发{@action 借机攻击|XPHB}。"
+						"夜魇飞行离开敌人的触及范围时不会引发{@action 借机攻击|XPHB}。"
 					]
 				}
 			],
@@ -6711,7 +6711,7 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"夜影魇卫进行两次攻击，可使用爪击或野蛮人进行任意组合。它可以消耗一次升腾来替换其中一次攻击。"
+						"夜魇使用爪击或尾刺发动共计两次攻击。其可以将其中一次攻击替换为使用一次飞升。"
 					]
 				},
 				{
@@ -6723,25 +6723,25 @@
 				},
 				{
 					"ENG_name": "Barb",
-					"name": "野蛮人",
+					"name": "尾刺",
 					"entries": [
 						"{@atkr r} {@hit 8}，射程60尺。{@h}21（{@damage 6d6}）穿刺伤害，且目标获得{@condition 中毒|XPHB}状态，持续到其下一回合结束。"
 					]
 				},
 				{
 					"ENG_name": "Ascend",
-					"name": "升腾",
+					"name": "飞升",
 					"entries": [
-						"夜影魇卫沿直线向上飞行，移动距离最多为其{@variantrule 飞行速度|XPHB}。如果夜影魇卫正擒抱着一个生物，它会忽略携带该生物所需的额外移动消耗。"
+						"夜魇向上方直线飞行升空，移动至多等于其{@variantrule 飞行速度|XPHB}的距离。若其正擒抱一名生物，则其无视携带该生物的额外移动消耗。"
 					]
 				}
 			],
 			"bonus": [
 				{
 					"ENG_name": "Tickle",
-					"name": "挠痒",
+					"name": "瘙痒",
 					"entries": [
-						"{@actSave wis} {@dc 16}，一个被夜影魇卫{@condition 受擒|XPHB}的生物。{@actSaveFail} 目标获得{@condition 失能|XPHB}状态，直到夜影魇卫的下个回合开始。"
+						"{@actSave wis} {@dc 16}，一个被夜魇{@condition 受擒|XPHB}的生物。{@actSaveFail} 目标获得{@condition 失能|XPHB}状态，直到夜魇的下个回合开始。"
 					]
 				}
 			],
@@ -6844,14 +6844,14 @@
 					"ENG_name": "Flyby",
 					"name": "飞掠",
 					"entries": [
-						"死亡之颅飞离敌人的触及范围时不会引发{@action 借机攻击|XPHB}。"
+						"死亡之颅飞行离开敌人的触及范围时不会引发{@action 借机攻击|XPHB}。"
 					]
 				}
 			],
 			"action": [
 				{
 					"ENG_name": "Petrifying Bite",
-					"name": "石化啄咬",
+					"name": "石化啃咬",
 					"entries": [
 						"{@atkr m} {@hit 3}，触及 5 尺。{@h}3 ({@damage 1d4 + 1}) 穿刺伤害外加 3 ({@damage 1d6}) 暗蚀伤害。如果目标是生物，它将受到以下效应影响。{@actSave con} {@dc 11}。{@actSaveFail 1} 目标获得{@condition 束缚|XPHB}状态，如果它仍然处于{@condition 束缚|XPHB}状态，则在其下一回合结束时重复豁免检定，成功则自身结束该效应。{@actSaveFail 2} 目标获得{@condition 石化|XPHB}状态而非{@condition 束缚|XPHB}状态，持续10分钟，之后该效应对目标结束。"
 					]
@@ -6935,49 +6935,49 @@
 					"ENG_name": "Tattoo of Osybus",
 					"name": "奥西巴斯刺青",
 					"entries": [
-						"如果伤害将奥西布斯祭司的{@variantrule 生命值|XPHB}降至0，它会获得一个随机的恩惠。投掷{@dice 1d6}来决定祭司获得的恩惠。祭司在其下一回合开始时复活，拥有其一半的{@variantrule 生命值|XPHB}，并且其生物类型变为不死生物。"
+						"如果伤害将奥西巴斯祭司的{@variantrule 生命值|XPHB}降至0，它会获得一个随机的恩惠。投掷{@dice 1d6}来决定祭司获得的恩惠。祭司在其下一回合开始时复活，拥有其一半的{@variantrule 生命值|XPHB}，并且其生物类型变为不死生物。"
 					]
 				},
 				{
 					"ENG_name": "1: Dread Boon",
-					"name": "1: 恐惧恩赐",
+					"name": "1: 恐惧恩惠",
 					"entries": [
 						"一股恐惧光环充满以祭司为中心15尺的{@variantrule 光环 [效应区域]|XPHB|光环}。{@actSave wis} {@dc 15}，每个非不死生物在其回合开始时位于该{@variantrule 光环 [效应区域]|XPHB|光环}内。{@actSaveFail} 目标获得{@condition 恐慌|XPHB}状态，直到其下一回合开始。"
 					]
 				},
 				{
 					"ENG_name": "2: Ectoplasmic Boon",
-					"name": "2：异质恩赐",
+					"name": "2: 异质恩惠",
 					"entries": [
-						"粘性灵质会减慢15尺{@variantrule 光环 [效应区域]|XPHB|光环}范围内源自奥西布斯祭司的生物。{@actSave str} {@dc 15}，每个在该{@variantrule 光环 [效应区域]|XPHB|光环}内开始其回合的生物。{@actSaveFail} 目标的{@variantrule 速度|XPHB}减少10尺，直到其下一回合开始。"
+						"异质黏液令源自祭司的15尺{@variantrule 光环 [效应区域]|XPHB|光环}区域变得迟缓。{@actSave str} {@dc 15}，每个在该{@variantrule 光环 [效应区域]|XPHB|光环}内开始其回合的生物。{@actSaveFail} 目标的{@variantrule 速度|XPHB}减少10尺，直到其下一回合开始。"
 					]
 				},
 				{
 					"ENG_name": "3: Vampiric Boon",
-					"name": "3: 吸血恩赐",
+					"name": "3: 汲血恩惠",
 					"entries": [
-						"当祭司对生物造成暗蚀伤害时，祭司获得等同于该伤害数值的{@variantrule 临时生命值|XPHB}。"
+						"祭司对一名生物造成暗蚀伤害时，会获得等同于该伤害数值的{@variantrule 临时生命值|XPHB}。"
 					]
 				},
 				{
 					"ENG_name": "4: Blazing Boon",
-					"name": "4：爆燃恩惠",
+					"name": "4: 爆燃恩惠",
 					"entries": [
 						"该祭司拥有30尺的{@variantrule 飞行速度|XPHB}，并对火焰伤害具有{@variantrule 免疫|XPHB}。"
 					]
 				},
 				{
 					"ENG_name": "5: Spectral Boon",
-					"name": "5: 灵体化恩赐",
+					"name": "5: 灵体恩惠",
 					"entries": [
-						"该祭司对钝击、穿刺和挥砍伤害具有{@variantrule 抗性|XPHB}，并对光耀伤害具有{@variantrule 易伤|XPHB}。此外，该祭司可以穿过其他生物和物件，如同它们是{@variantrule 困难地形|XPHB}。如果它在回合结束时处于一个物件内部，则受到5（{@damage 1d10}）点力场伤害。"
+						"该祭司对钝击、穿刺和挥砍伤害具有{@variantrule 抗性|XPHB}，并对光耀伤害具有{@variantrule 易伤|XPHB}。此外，该祭司可以如同穿过{@variantrule 困难地形|XPHB}一样移动穿过生物和物件。如果它在回合结束时处于一个物件内部，则受到5（{@damage 1d10}）点力场伤害。"
 					]
 				},
 				{
 					"ENG_name": "6: Deathly Boon",
-					"name": "6：致命恩惠",
+					"name": "6: 死亡恩惠",
 					"entries": [
-						"当奥西布斯祭司以此恩赐复活时，以祭司为中心30尺{@variantrule 光环 [效应区域]|XPHB|光环}范围内所有小型或中型类人生物的尸体将作为骷髅起身，并受祭司控制。此外，在祭司的每个回合结束时，以祭司为中心5尺{@variantrule 光环 [效应区域]|XPHB|光环}范围内的每个非不死生物受到5（{@damage 1d10}）点暗蚀伤害。",
+						"当奥西巴斯祭司以此恩惠复活时，以祭司为中心30尺{@variantrule 光环 [效应区域]|XPHB|光环}范围内所有小型或中型类人生物的尸体将作为骷髅起身，并受祭司控制。此外，在祭司的每个回合结束时，以祭司为中心5尺{@variantrule 光环 [效应区域]|XPHB|光环}范围内的每个非不死生物受到5（{@damage 1d10}）点暗蚀伤害。",
 						"如果祭司获得一个它已经拥有的恩赐，或者祭司的奥西巴斯刺青被摧毁，则祭司死亡且此特质失效。只有当祭司的{@variantrule 生命值|XPHB}为0时，在一个回合内受到15点或更多伤害，刺青才会被摧毁。"
 					]
 				}
@@ -6994,7 +6994,7 @@
 					"ENG_name": "Soul Blade",
 					"name": "魂刃",
 					"entries": [
-						"{@atkr m} {@hit 7}，触及5尺。{@h}9（{@damage 2d4 + 4}）穿刺伤害。如果目标是生物，则其获得{@condition 麻痹|XPHB}状态，直到该祭司的下个回合开始。如果此伤害将一个中型或更小的生物的{@variantrule 生命值|XPHB}降至0，该生物死亡，其灵魂会被困在该祭司身体上的一个灵魂纹身中。若该祭司死亡，则灵魂获得自由。"
+						"{@atkr m} {@hit 7}，触及5尺。{@h}9（{@damage 2d4 + 4}）穿刺伤害。如果目标是生物，则其获得{@condition 麻痹|XPHB}状态，直到该祭司的下个回合开始。如果此伤害将一个中型或更小的生物的{@variantrule 生命值|XPHB}降至0，该生物死亡，其灵魂会被困在该祭司身体上的一个灵魂刺青中。若该祭司死亡，则灵魂获得自由。"
 					]
 				},
 				{
@@ -7290,7 +7290,7 @@
 		},
 		{
 			"ENG_name": "Reanimated Companion",
-			"name": "再起伴兵",
+			"name": "苏生伴兵",
 			"type": "undead",
 			"source": "RHW",
 			"page": 15,
@@ -7350,7 +7350,7 @@
 					"ENG_name": "Lightning Absorption",
 					"name": "闪电吸收",
 					"entries": [
-						"每当伴阳受到闪电伤害时，它会恢复等同于该闪电伤害{@variantrule 生命值|XPHB}的数值。"
+						"每当伴兵受到闪电伤害时，它会恢复等同于该闪电伤害{@variantrule 生命值|XPHB}的数值。"
 					]
 				}
 			],
@@ -7443,14 +7443,14 @@
 					"ENG_name": "Regeneration",
 					"name": "再生",
 					"entries": [
-						"巨像在其每个回合开始时恢复10点{@variantrule 生命值|XPHB}。如果巨像受到光耀伤害或来自{@variantrule 重击|XPHB}的伤害，此特性在其下一个回合不生效。只有当巨像在其回合开始时生命值为0点{@variantrule 生命值|XPHB}且无法再生时，它才会死亡。"
+						"主宰在其每个回合开始时恢复10点{@variantrule 生命值|XPHB}。若主宰受到光耀伤害或来自{@variantrule 重击|XPHB}的伤害，则该特质在其下一回合开始时无法生效。主宰只有以0{@variantrule 生命值|XPHB}开始其回合且无法再生时，才会死亡。"
 					]
 				},
 				{
 					"ENG_name": "Siege Monster",
 					"name": "攻城怪物",
 					"entries": [
-						"岩石战车对物件和建筑造成双倍伤害。"
+						"主宰对物件和建筑造成双倍伤害。"
 					]
 				}
 			],
@@ -7459,37 +7459,37 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"巨像进行两次攻击，以任意组合使用处刑者之刃或碾压岩石。"
+						"主宰使用处刑巨刃或毁伤之石发动共计两次攻击。"
 					]
 				},
 				{
 					"ENG_name": "Executioner's Blade",
-					"name": "处刑者之刃",
+					"name": "处刑巨刃",
 					"entries": [
-						"{@atkr m} {@hit 10}，触及10尺。{@h}19 ({@damage 3d8 + 6}) 挥砍伤害，并且目标的{@variantrule 速度|XPHB}降低10尺，直到巨像的下个回合结束。"
+						"{@atkr m} {@hit 10}，触及10尺。{@h}19 ({@damage 3d8 + 6}) 挥砍伤害，并且目标的{@variantrule 速度|XPHB}降低10尺，直到主宰的下个回合结束。"
 					]
 				},
 				{
 					"ENG_name": "Crushing Stone",
-					"name": "碾压岩石",
+					"name": "毁伤之石",
 					"entries": [
-						"{@atkr r} {@hit 10}，射程60尺。{@h}13（{@damage 2d6 + 6}）钝击伤害，且目标获得{@condition 失能|XPHB}状态，持续到该巨像的下个回合开始。"
+						"{@atkr r} {@hit 10}，射程60尺。{@h}13（{@damage 2d6 + 6}）钝击伤害，且目标获得{@condition 失能|XPHB}状态，持续到主宰的下个回合开始。"
 					]
 				}
 			],
 			"legendary": [
 				{
 					"ENG_name": "Implacable Advance",
-					"name": "所向无前",
+					"name": "无情推进",
 					"entries": [
-						"碾压者移动至多其{@variantrule 速度|XPHB}的一半，无视{@variantrule 困难地形|XPHB}。在其路径上的每个生物受到以下效果。{@actSave str} {@dc 18}。{@actSaveFail} 7 ({@damage 2d6}) 钝击伤害，且目标获得{@condition 倒地|XPHB}状态。{@actSaveSuccessOrFail} 碾压者在其下一回合开始前不能再次使用此动作。"
+						"主宰移动至多其{@variantrule 速度|XPHB}的一半，忽视{@variantrule 困难地形|XPHB}。其路径上的每个生物遭受以下效果。{@actSave str} {@dc 18}。{@actSaveFail} 7 ({@damage 2d6}) 钝击伤害，且目标陷入{@condition 倒地|XPHB}状态。{@actSaveSuccessOrFail} 主宰直至其下个回合开始都无法再执行此动作。"
 					]
 				},
 				{
 					"ENG_name": "Sweeping Blade",
-					"name": "横扫之刃",
+					"name": "扫荡斩",
 					"entries": [
-						"{@actSave dex} {@dc 18}，15尺{@variantrule 锥状 [效应区域]|XPHB|锥状}范围内的每个生物。{@actSaveFail} 11（{@damage 1d10 + 6}）挥砍伤害，并且目标被直线拉向巨像最多10尺。"
+						"{@actSave dex} {@dc 18}，15尺{@variantrule 锥状 [效应区域]|XPHB|锥状}范围内的每个生物。{@actSaveFail} 11（{@damage 1d10 + 6}）挥砍伤害，并且目标被主宰直线拉近至多10尺。"
 					]
 				}
 			],
@@ -7537,7 +7537,7 @@
 		},
 		{
 			"ENG_name": "Relentless Nightmare",
-			"name": "坚韧梦魇",
+			"name": "无情梦魇",
 			"type": "fiend",
 			"group": [
 				"无情杀手"
@@ -7598,9 +7598,9 @@
 				},
 				{
 					"ENG_name": "Nightmarish Restoration",
-					"name": "梦魇复苏",
+					"name": "噩梦复原",
 					"entries": [
-						"如果梦魇死亡，它的身体会化为迷雾消失，并在{@dice 1d10}天后获得一个新的身体，在最近一个被其猎魂者之矛诅咒的{@condition 昏迷|XPHB}生物旁未被占据的空间中，以全部{@variantrule 生命值|XPHB}复活。如果没有以这种方式被诅咒的目标剩余，此特性不生效。"
+						"如果梦魇死亡，它的躯体将化为雾气消失，并在{@dice 1d10}天后获得一个新躯体，在最近一个被其作祟之矛诅咒而处于{@condition 昏迷|XPHB}状态的生物旁的未占据空间，以全部{@variantrule 生命值|XPHB}复活。如果不存在以此方式被诅咒的目标，则该特质不生效。"
 					]
 				}
 			],
@@ -7609,14 +7609,14 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"梦魇发动两次猎魂者之矛攻击。它可以消耗一次攻击来使用疲惫凝视。"
+						"梦魇发动两次作祟之矛攻击。其可以用一次疲惫凝视替换其中一次攻击。"
 					]
 				},
 				{
 					"ENG_name": "Haunter's Spear",
-					"name": "猎魂者之矛",
+					"name": "作祟之矛",
 					"entries": [
-						"{@atk m,r} +9，触及10尺或射程60尺。{@h}14（{@damage 2d8 + 5}）穿刺伤害外加10（{@damage 3d6}）心灵伤害。此外，如果目标尚未被诅咒，则会被梦魇诅咒。在此诅咒结束前，完成一次{@variantrule 长休|XPHB}不会降低目标的{@condition 力竭|XPHB}等级。"
+						"{@atk m,r} +9，触及10尺或射程60尺。{@h}14（{@damage 2d8 + 5}）穿刺伤害外加10（{@damage 3d6}）心灵伤害。此外，如果目标尚未被该梦魇诅咒，则目标会被其诅咒。直到此诅咒结束为止，完成一次{@variantrule 长休|XPHB}不会降低目标的{@condition 力竭|XPHB}等级。"
 					]
 				},
 				{
@@ -7630,16 +7630,16 @@
 			"legendary": [
 				{
 					"ENG_name": "Dreamwalk",
-					"name": "梦游",
+					"name": "梦境行走",
 					"entries": [
-						"梦魇传送到一个它能看见的生物5尺内未被占据的空间，然后发动一次猎魂者之矛攻击。"
+						"梦魇传送至一名其可见生物5尺内的未占据空间，然后发动一次作祟之矛攻击。"
 					]
 				},
 				{
 					"ENG_name": "Narcotize",
-					"name": "麻醉",
+					"name": "迷醉",
 					"entries": [
-						"梦魇以它120尺内一个它能看见的、被其猎魂者之矛诅咒的生物为目标。该目标受到7（{@damage 2d6}）心灵伤害，并获得{@condition 昏迷|XPHB}状态，持续1小时，直到它受到伤害，或直到它5尺内的一个生物用一个动作唤醒它。"
+						"梦魇指定一名120尺内其可见且被其作祟之矛诅咒的生物。该目标受到7（{@damage 2d6}）心灵伤害，并陷入{@condition 昏迷|XPHB}状态，持续1小时，直到它受到伤害，或直到它5尺内的一个生物用一个动作唤醒它。"
 					]
 				}
 			],
@@ -7749,12 +7749,12 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"撕裂者进行两次撕裂者之刃攻击。"
+						"撕裂者发动两次斩杀刀攻击。"
 					]
 				},
 				{
 					"ENG_name": "Slasher's Knife",
-					"name": "撕裂者之刃",
+					"name": "斩杀刀",
 					"entries": [
 						"{@atkr m,r} {@hit 7}，触及5尺或射程30/60尺。{@h}9（{@damage 2d4 + 4}）挥砍伤害外加21（{@damage 6d6}）暗蚀伤害。"
 					]
@@ -7763,16 +7763,16 @@
 			"legendary": [
 				{
 					"ENG_name": "Homing Knife",
-					"name": "追踪刀",
+					"name": "索命之刃",
 					"entries": [
-						"{@actSave dex} {@dc 15}，目标为撕裂者在过去24小时内用其撕裂者之刃攻击命中过的一个120尺内的生物。{@actSaveFail} 11（{@damage 2d6 + 4}）挥砍伤害。"
+						"{@actSave dex} {@dc 15}，目标为撕裂者在过去24小时内用其斩杀刀攻击命中过的一个120尺内的生物。{@actSaveFail} 11（{@damage 2d6 + 4}）挥砍伤害。"
 					]
 				},
 				{
 					"ENG_name": "Vanishing Strike",
-					"name": "消失打击",
+					"name": "消逝一击",
 					"entries": [
-						"撕裂者进行一次撕裂者之刃攻击，然后传送至30尺内一个它能看见的未被占据空间。撕裂者在它的下个回合开始前不能再次使用此动作。"
+						"撕裂者发动一次斩杀刀攻击，然后传送至多30尺至一处其可见的未占据空间。撕裂者直至其下个回合开始都无法再执行此动作。"
 					]
 				}
 			],
@@ -7812,7 +7812,7 @@
 		},
 		{
 			"ENG_name": "Rudolph van Richten",
-			"name": "鲁道夫范里希滕",
+			"name": "鲁道夫·范·里希滕",
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -7882,12 +7882,12 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"鲁道夫进行三次攻击，使用银剑手杖或手弩以任意组合方式。"
+						"鲁道夫使用银质剑杖或手弩发动共计三次攻击。"
 					]
 				},
 				{
 					"ENG_name": "Silver Sword Cane",
-					"name": "银剑手杖",
+					"name": "银质剑杖",
 					"entries": [
 						"{@atkr m} {@hit 5}，触及5尺。{@h}5（{@damage 1d6 + 2}）挥砍伤害外加5（{@damage 2d4}）光耀伤害。重击{@h}目标获得{@condition 中毒|XPHB}状态，直至其完成一次{@variantrule 长休|XPHB}。目标在每个小时结束时进行一次{@dc 15}的体质豁免检定，成功则结束该效果。"
 					]
@@ -7910,7 +7910,7 @@
 			"bonus": [
 				{
 					"ENG_name": "Occult Aid (2/Day)",
-					"name": "神秘援助（2/天）",
+					"name": "秘术援助（2/天）",
 					"entries": [
 						"鲁道夫施放{@spell 疗伤术|XPHB}、{@spell 驱逐善恶|XPHB}或{@spell 庇护术|XPHB}，使用感知作为施法属性（法术豁免{@dc 15}）。"
 					]
@@ -8274,9 +8274,9 @@
 				},
 				{
 					"ENG_name": "Susceptible to Charm",
-					"name": "易受魅惑",
+					"name": "魅惑易感",
 					"entries": [
-						"修格斯在避免或结束{@condition 魅惑|XPHB}状态的豁免检定上具有{@variantrule 劣势|XPHB}。"
+						"修格斯在为对抗或结束{@condition 魅惑|XPHB}状态进行的豁免具有{@variantrule 劣势|XPHB}。"
 					]
 				}
 			],
@@ -8285,7 +8285,7 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"修格斯进行三次伪足攻击。如果可用，它可以将其中的一次攻击替换为使用吸力爆发。"
+						"修格斯发动三次伪足攻击。其可以将其中一次攻击替换为使用爆投（若可用）。"
 					]
 				},
 				{
@@ -8297,9 +8297,9 @@
 				},
 				{
 					"ENG_name": "Suction Burst {@recharge 4}",
-					"name": "吸力爆发 {@recharge 4}",
+					"name": "爆投 {@recharge 4}",
 					"entries": [
-						"{@actSave str} {@dc 18}，一个被修格斯{@condition 受擒|XPHB}的生物。{@actSaveFail} 22（{@damage 4d10}）雷鸣伤害，且目标被击退，远离修格斯。目标不再处于{@condition 受擒|XPHB}状态，被直线推开至多30尺远离修格斯，并且获得{@condition 耳聋|XPHB}和{@condition 震慑|XPHB}状态，持续到其下一回合结束。{@actSaveSuccess} 仅受到一半伤害。"
+						"{@actSave str} {@dc 18}，一个正受擒于该修格斯的生物。{@actSaveFail} 22（{@damage 4d10}）雷鸣伤害，且目标被该修格斯丢开。目标不再处于{@condition 受擒|XPHB}状态，但被修格斯推开至多30尺，并陷入{@condition 耳聋|XPHB}与{@condition 震慑|XPHB}状态，直至其下一回合结束。{@actSaveSuccess} 仅受到一半伤害。"
 					]
 				}
 			],
@@ -8421,12 +8421,12 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"该骷髅发动两次吸血长剑攻击。它可以用一次盾击替换其中一次攻击。"
+						"骷髅发动两次饮血长剑攻击。其可以将其中一次攻击替换为使用盾击。"
 					]
 				},
 				{
 					"ENG_name": "Vampiric Longsword",
-					"name": "吸血长剑",
+					"name": "饮血长剑",
 					"entries": [
 						"{@atkr m} {@hit 5}，触及5尺。{@h}7（{@damage 1d8 + 3}）挥砍伤害外加7（{@damage 2d6}）暗蚀伤害。目标的{@variantrule 生命值|XPHB|生命值}上限减少等同于所受暗蚀伤害的数值。"
 					]
@@ -8846,9 +8846,9 @@
 			"trait": [
 				{
 					"ENG_name": "Stirge Telepathy",
-					"name": "蚊蝠感应",
+					"name": "蚊蝠心灵感应",
 					"entries": [
-						"蚊蝠怪可以魔法地控制120尺内的蚊蝠，使用一种特殊的传心术。"
+						"蚊蝠怪可以使用一种特殊的心灵感应，魔法性地控制其120尺内的蚊蝠。"
 					]
 				}
 			],
@@ -8878,7 +8878,7 @@
 			"bonus": [
 				{
 					"ENG_name": "Protective Swarm {@recharge}",
-					"name": "防护集群 {@recharge}",
+					"name": "护体虫群 {@recharge}",
 					"entries": [
 						"蚊蝠怪召唤出一群嗜血蚊群，形成一个以自身为原点、半径10尺的{@variantrule 光环 [效应区域]|XPHB|光环}，持续1分钟或直到蚊蝠怪对其的{@status 专注|XPHB}结束。每当集群进入一个生物的空间，或一个生物进入集群或在其中结束其回合，该生物将受到以下效果影响（一个生物每回合只进行此豁免一次，蚊蝠怪和蚊蝠不受影响）。{@actSave con} {@dc 13}。{@actSaveFail} 3 ({@damage 1d6}) 暗蚀伤害，并且目标获得{@condition 中毒|XPHB}状态，直到其下一回合结束。"
 					]
@@ -8982,7 +8982,7 @@
 					"ENG_name": "Magic Resistance",
 					"name": "魔法抗性",
 					"entries": [
-						"诡灵什卡在对抗法术和其他魔法效果的豁免检定上具有{@variantrule 优势|XPHB}。"
+						"小法妖对抗法术和其他魔法效应时进行的豁免检定具有{@variantrule 优势|XPHB}。"
 					]
 				},
 				{
@@ -8996,7 +8996,7 @@
 			"action": [
 				{
 					"ENG_name": "Swarming Bites (Swarm Form Only)",
-					"name": "集群啃咬（仅限集群形态）",
+					"name": "聚群啃咬（仅集群形态）",
 					"entries": [
 						"{@atkr m} {@hit 4}，触及 5 尺。{@h}12 ({@damage 3d6 + 2}) 穿刺伤害，如果集群处于{@status 浴血|XPHB}状态则为 9 ({@damage 3d4 + 2}) 穿刺伤害，外加 7 ({@damage 2d6}) 力场伤害。如果目标同调了任何魔法物品，则其对一件物品的{@variantrule 同调|XPHB}（由 DM 选择）结束。"
 					]
@@ -9031,7 +9031,7 @@
 		},
 		{
 			"ENG_name": "Swarm of Infesting Insects",
-			"name": "侵扰昆虫集群",
+			"name": "染疫虫群",
 			"type": {
 				"type": "beast",
 				"swarmSize": "T"
@@ -9094,7 +9094,7 @@
 			"action": [
 				{
 					"ENG_name": "Infestation",
-					"name": "虫群孳生",
+					"name": "感染",
 					"entries": [
 						"{@atkr m} {@hit 4}，触及5尺。{@h}12（{@damage 4d4 + 2}）毒素伤害，若集群处于{@status 浴血|XPHB}状态，则造成7（{@damage 2d4 + 2}）毒素伤害，且目标获得{@condition 中毒|XPHB}状态。若目标以此方式保持{@condition 中毒|XPHB}状态超过1小时，则受到以下效果影响。{@actSave con} {@dc 11}。{@actSaveFail} 投掷{@dice 1d6}：结果为1-2时，目标获得{@condition 目盲|XPHB}状态；结果为3-4时，目标的{@variantrule 生命值|XPHB|生命值}上限减少5（{@dice 1d10}）；结果为5-6时，目标获得1级{@condition 力竭|XPHB}。此效果持续至{@condition 中毒|XPHB}状态结束。{@actSaveSuccess} {@condition 中毒|XPHB}状态结束。"
 					]
@@ -9131,7 +9131,7 @@
 		},
 		{
 			"ENG_name": "Swarm of Ravenous Insects",
-			"name": "饿鸦虫群集群",
+			"name": "饥噬虫群",
 			"type": {
 				"type": "beast",
 				"swarmSize": "T"
@@ -9185,7 +9185,7 @@
 			"trait": [
 				{
 					"ENG_name": "Skeletonize",
-					"name": "白骨化",
+					"name": "蚀骨",
 					"entries": [
 						"如果该集群在其回合开始时与一具大型或更小的尸体处于同一空间，则该尸体会被摧毁，只留下其穿戴或携带的物品。"
 					]
@@ -9201,7 +9201,7 @@
 			"action": [
 				{
 					"ENG_name": "Ravenous Bites",
-					"name": "群聚噬咬",
+					"name": "贪婪啃噬",
 					"entries": [
 						"{@atkr m} {@hit 4}，触及5尺。{@h}20（{@damage 4d8 + 2}）穿刺伤害，若集群处于{@status 浴血|XPHB}状态则造成11（{@damage 2d8 + 2}）穿刺伤害，且目标获得{@condition 中毒|XPHB}状态1分钟，因为昆虫钻入其体内。若法术或效果为目标恢复了{@variantrule 生命值|XPHB}，则该状态提前结束。处于{@condition 中毒|XPHB}状态时，目标在其每回合开始时受到4（{@damage 1d8}）穿刺伤害。生物若因此伤害生命值降至0{@variantrule 生命值|XPHB}，则死亡。"
 					]
@@ -9291,14 +9291,14 @@
 					"ENG_name": "Swarm",
 					"name": "集群",
 					"entries": [
-						"该集群可以占据其他生物的空间，反之亦然，并且它可以穿过任何足以让一个微小肉块通过的开口。该集群无法恢复{@variantrule 生命值|XPHB}或获得{@variantrule 临时生命值|XPHB}。"
+						"该集群可以占据其他生物的空间，反之亦然，并且它可以穿过任何足够一个微型肉块通过的开口。该集群无法恢复{@variantrule 生命值|XPHB}或获得{@variantrule 临时生命值|XPHB}。"
 					]
 				}
 			],
 			"action": [
 				{
 					"ENG_name": "Rotten Flesh",
-					"name": "腐烂血肉",
+					"name": "腐肉攻击",
 					"entries": [
 						"{@atkr m} {@hit 4}，触及 5 尺。{@h}9（{@damage 2d6 + 2}）暗蚀伤害，若该集群处于{@status 浴血|XPHB}状态，则造成5（{@damage 1d6 + 2}）暗蚀伤害，且目标获得{@condition 中毒|XPHB}状态直至其下一回合结束。"
 					]
@@ -9381,9 +9381,9 @@
 			"trait": [
 				{
 					"ENG_name": "Incomprehensible Form",
-					"name": "不可名状形态",
+					"name": "不可直视其形貌",
 					"entries": [
-						"针对该恐怖存在的攻击检定具有{@variantrule 劣势|XPHB}。当该恐怖存在处于{@condition 失能|XPHB}状态时，此特性被压制。"
+						"对不可名状之恐怖进行的攻击检定具有{@variantrule 劣势|XPHB}。不可名状之恐怖失能期间该特质失效。"
 					]
 				},
 				{
@@ -9395,9 +9395,9 @@
 				},
 				{
 					"ENG_name": "Terrifying Aura",
-					"name": "恐怖灵光",
+					"name": "惊怖灵光",
 					"entries": [
-						"当该恐怖存在未处于{@condition 失能|XPHB}状态时，它会散发出一个15尺范围的{@variantrule 光环 [效应区域]|XPHB|光环}。任何在灵光范围内开始其回合的敌人必须进行一次{@actSave wis} {@dc 15}豁免。{@actSaveFail} 目标获得{@condition 恐慌|XPHB}状态，直到其下一回合开始。当以此方式处于{@condition 恐慌|XPHB}状态时，目标同时获得{@condition 麻痹|XPHB}状态。{@actSaveSuccess} 目标在24小时内免疫此恐怖存在的灵光。"
+						"只要未陷入{@condition 失能|XPHB}状态，不可名状之恐怖便会辐射出一道覆盖15尺{@variantrule 光环 [效应区域]|XPHB|光环}区域的灵光。任何在该灵光内开始回合的敌人必须进行一次{@actSave wis} {@dc 15}豁免。{@actSaveFail} 目标获得{@condition 恐慌|XPHB}状态，直至其下一回合结束。以此方式陷入{@condition 恐慌|XPHB}状态期间，目标还会获得{@condition 麻痹|XPHB}状态。{@actSaveSuccess} 目标在24小时内免疫此不可名状之恐怖的灵光。"
 					]
 				}
 			],
@@ -9406,23 +9406,23 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"该恐怖存在进行三次幻象攻击。"
+						"不可名状之恐怖发动三次幻惑侵袭攻击。"
 					]
 				},
 				{
 					"ENG_name": "Phantasmic Assault",
-					"name": "幻象攻击",
+					"name": "幻惑侵袭",
 					"entries": [
-						"{@atkr m,r} {@hit 8}，触及5尺或射程60尺。{@h}14 ({@damage 4d6}) 寒冷、暗蚀、毒素或心灵伤害（恐怖造物选择）。"
+						"{@atkr m,r} {@hit 8}，触及5尺或射程60尺。{@h}14 ({@damage 4d6}) 寒冷、暗蚀、毒素或心灵伤害（由不可名状之恐怖选择）。"
 					]
 				}
 			],
 			"reaction": [
 				{
 					"ENG_name": "Warp Mind",
-					"name": "扭曲心智",
+					"name": "精神摧折",
 					"entries": [
-						"{@actTrigger} 恐怖生物120尺内一个它能看见的生物，必须进行{@action 研究|XPHB}动作或进行一次体质豁免检定以维持{@status 专注|XPHB}。{@actResponse d}{@actSave wis} {@dc 15}，触发此能力的生物。{@actSaveFail} 7 ({@damage 2d6})心灵伤害，且目标获得{@condition 震慑|XPHB}状态，持续到其下一回合结束。"
+						"{@actTrigger} 单一120尺内该不可名状之恐怖可见的生物执行{@action 研究|XPHB}动作，或进行一次用以维持{@status 专注|XPHB}的体质豁免。{@actResponse} {@actSave wis} {@dc 15}，该触发生物。{@actSaveFail} 7 ({@damage 2d6})心灵伤害，且目标获得{@condition 震慑|XPHB}状态，持续到其下一回合结束。"
 					]
 				}
 			],
@@ -9459,7 +9459,7 @@
 		},
 		{
 			"ENG_name": "Vampire Mind Flayer",
-			"name": "吸血鬼夺心魔",
+			"name": "夺心魔吸血鬼",
 			"type": "undead",
 			"source": "RHW",
 			"page": 276,
@@ -9520,7 +9520,7 @@
 			"trait": [
 				{
 					"ENG_name": "Spider Climb",
-					"name": "蛛行术",
+					"name": "蛛行",
 					"entries": [
 						"夺心魔吸血鬼可以攀爬困难表面，包括天花板，而无需进行属性检定。"
 					]
@@ -9557,7 +9557,7 @@
 				},
 				{
 					"ENG_name": "Drink Sapience",
-					"name": "汲取智慧",
+					"name": "汲取理智",
 					"entries": [
 						"{@actSave wis} {@dc 15}，目标为夺心魔{@condition 受擒|XPHB}的一个生物。{@actSaveFail} 21（{@damage 6d6}）心灵伤害，并且该生物获得1级{@condition 力竭|XPHB}。目标的{@variantrule 生命值|XPHB|生命值}上限减少的数值等于所受的心灵伤害，并且夺心魔恢复等量的{@variantrule 生命值|XPHB}。"
 					]
@@ -9617,7 +9617,7 @@
 		},
 		{
 			"ENG_name": "Vampire Nosferatu",
-			"name": "吸血鬼诺斯费拉图",
+			"name": "诺斯费拉图吸血鬼",
 			"type": "undead",
 			"source": "RHW",
 			"page": 275,
@@ -9695,7 +9695,7 @@
 				},
 				{
 					"ENG_name": "Spider Climb",
-					"name": "蛛行术",
+					"name": "蛛行",
 					"entries": [
 						"诺斯费拉图可以攀爬困难表面，包括天花板，而无需进行属性检定。"
 					]
@@ -9732,7 +9732,7 @@
 				},
 				{
 					"ENG_name": "Blood Spew {@recharge 5}",
-					"name": "鲜血喷吐 {@recharge 5}",
+					"name": "喷吐毒血 {@recharge 5}",
 					"entries": [
 						"{@actSave con} {@dc 16}，15尺{@variantrule 锥状 [效应区域]|XPHB|锥状}范围内的每个生物。{@actSaveFail} 27（{@damage 6d8}）暗蚀伤害，并且该生物在1分钟内无法恢复{@variantrule 生命值|XPHB}。{@actSaveSuccess} 仅受到一半伤害。"
 					]
@@ -9741,7 +9741,7 @@
 			"reaction": [
 				{
 					"ENG_name": "Bloodthirsty Slash",
-					"name": "嗜血挥砍",
+					"name": "嗜血斩击",
 					"entries": [
 						"{@actTrigger} 诺斯费拉图40尺内一个它能看见的{@status 浴血|XPHB}生物受到伤害。{@actResponse} 诺斯费拉图移动至多等同于其{@variantrule 速度|XPHB}的距离且不引发{@action 借机攻击|XPHB|借机攻击}，并对触发此动作的生物发动一次爪击攻击。"
 					]
@@ -10205,7 +10205,7 @@
 		},
 		{
 			"ENG_name": "Waxwork",
-			"name": "蜡像",
+			"name": "活蜡像",
 			"type": "construct",
 			"source": "RHW",
 			"page": 277,
@@ -10268,9 +10268,9 @@
 			"trait": [
 				{
 					"ENG_name": "Meltable",
-					"name": "可熔化",
+					"name": "易熔",
 					"entries": [
-						"如果蜡像受到火焰伤害，直到其下个回合结束，它的{@variantrule 速度|XPHB}减少20尺，并且它在豁免检定上具有{@variantrule 劣势|XPHB}。"
+						"如果活蜡像受到火焰伤害，直到其下个回合结束，它的{@variantrule 速度|XPHB}减少20尺，并且它在豁免检定上具有{@variantrule 劣势|XPHB}。"
 					]
 				}
 			],
@@ -10279,7 +10279,7 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"蜡像进行两次雕刻刀攻击。"
+						"活蜡像进行两次雕刻刀攻击。"
 					]
 				},
 				{
@@ -10291,7 +10291,7 @@
 				},
 				{
 					"ENG_name": "Wax Lob",
-					"name": "蜡块",
+					"name": "抛掷蜡块",
 					"entries": [
 						"{@atkr r} {@hit 5}，射程 20/60 尺。{@h}8 ({@damage 2d4 + 3}) 钝击伤害，并且目标的{@variantrule 速度|XPHB}在它的下个回合结束前减少 10 尺。"
 					]
@@ -10302,7 +10302,7 @@
 					"ENG_name": "Shape-Shift",
 					"name": "变形",
 					"entries": [
-						"蜡像变形为与其体型相同的人形生物，或恢复其真实形态。它在每种形态下的游戏数据相同。它所穿戴或携带的任何装备都不会被转化。"
+						"活蜡像变形为一个与其体型相同的类人生物，或者恢复其真实形态。除体型外，其所有形态下的游戏数据皆保持不变。其所穿戴或携带的任何装备都不会随之变形。"
 					]
 				}
 			],
@@ -10399,12 +10399,12 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"鸦人发动两次攻击，可使用抓挠或短弓进行任意组合。它可以将其中的一次攻击替换为一次喙击。"
+						"鸦人使用抓挠或短弓发动共计两次攻击。其可以将其中一次攻击替换为喙啄。"
 					]
 				},
 				{
 					"ENG_name": "Beak (Raven or Hybrid Form Only)",
-					"name": "喙啄（仅渡鸦与半人形态）",
+					"name": "喙啄（仅渡鸦或混合形态）",
 					"entries": [
 						"{@atkr m} {@hit 4}，触及5尺。{@h}11（{@damage 2d8 + 2}）穿刺伤害。如果目标是类人生物，它将受到以下效果影响。{@actSave con} {@dc 10}。{@actSaveFail} 目标被诅咒。如果被诅咒的目标{@variantrule 生命值|XPHB}降至0，它将变为一个由DM控制的鸦人，并拥有10点{@variantrule 生命值|XPHB}。{@actSaveSuccess} 目标在24小时内免疫此鸦人的诅咒。"
 					]
@@ -10418,7 +10418,7 @@
 				},
 				{
 					"ENG_name": "Shortbow (Humanoid or Hybrid Form Only)",
-					"name": "短弓（仅类人与半人形态）",
+					"name": "短弓（仅类人与混合形态）",
 					"entries": [
 						"{@atkr r} {@hit 4}，射程 80/320 尺。{@h}9 ({@damage 2d6 + 2}) 穿刺伤害。"
 					]
@@ -10429,7 +10429,7 @@
 					"ENG_name": "Shape-Shift",
 					"name": "变形",
 					"entries": [
-						"鸦人可以变形为中型鸦人-类人生物混种或小型乌鸦，或恢复其真实的类人生物形态。除了体型外，它在每种形态下的游戏数据都相同。它所穿戴或携带的任何装备都不会被转化。"
+						"鸦人变形为类人与渡鸦的混合形态（中型），或渡鸦形态（小型），或变回其真实的类人形态。除体型外，其各形态下游戏数据均相同。其穿戴或携带的任何装备均不会随之变形。"
 					]
 				}
 			],
@@ -10670,7 +10670,7 @@
 		},
 		{
 			"ENG_name": "Yithian",
-			"name": "伊提安",
+			"name": "伊斯人",
 			"type": "aberration",
 			"source": "RHW",
 			"page": 281,
@@ -10726,7 +10726,7 @@
 					"name": "诡秘魔法（2/天）",
 					"type": "spellcasting",
 					"headerEntries": [
-						"伊提安施展{@spell 鹰眼术|XPHB}、{@spell 篡改记忆|XPHB}、{@spell 魅影杀手|XPHB}或植物传送，无需法术成分，并使用智力作为施法属性（法术豁免{@dc 18}）。"
+						"伊斯人施展{@spell 鹰眼术|XPHB}、{@spell 篡改记忆|XPHB}、{@spell 魅影杀手|XPHB}或木遁术，无需法术成分，并使用智力作为施法属性（法术豁免{@dc 18}）。"
 					],
 					"daily": {
 						"2": [
@@ -10752,9 +10752,9 @@
 				},
 				{
 					"ENG_name": "Shielded Mind",
-					"name": "屏蔽心灵",
+					"name": "心灵防护",
 					"entries": [
-						"伊提安的思想无法被任何手段读取，其他生物只有在它允许的情况下才能与其进行心灵感应交流。"
+						"伊斯人的思想无法被任何手段读取，其他生物只有在它允许的情况下才能与其进行心灵感应交流。"
 					]
 				}
 			],
@@ -10763,7 +10763,7 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"伊提安进行三次钳击。它可以将其中的一次攻击替换为使用上级。"
+						"伊斯人进行三次钳击攻击。其可以将其中一次攻击替换为使用嘬。"
 					]
 				},
 				{
@@ -10775,19 +10775,19 @@
 				},
 				{
 					"ENG_name": "Sup",
-					"name": "上级",
+					"name": "嘬",
 					"entries": [
-						"{@actSave int} {@dc 18}，对10尺内一个处于{@condition 受擒|XPHB}、{@condition 失能|XPHB}或{@condition 束缚|XPHB}状态的生物。{@actSaveFail} 15（{@damage 3d6 + 5}）心灵伤害。目标的{@variantrule 生命值|XPHB}上限减少等同于所受伤害的数值，且伊提安恢复等同于该数值的{@variantrule 生命值|XPHB}。"
+						"{@actSave int} {@dc 18}，对10尺内一个处于{@condition 受擒|XPHB}、{@condition 失能|XPHB}或{@condition 束缚|XPHB}状态的生物。{@actSaveFail} 15（{@damage 3d6 + 5}）心灵伤害。目标的{@variantrule 生命值|XPHB}上限减少等同于所受伤害的数值，且伊斯人恢复等同于该数值的{@variantrule 生命值|XPHB}。"
 					]
 				}
 			],
 			"bonus": [
 				{
 					"ENG_name": "Mind Swap {@recharge}",
-					"name": "心灵交换 {@recharge}",
+					"name": "心灵互换{@recharge}",
 					"entries": [
-						"{@actSave int} {@dc 18}，一个伊提安5尺内能看见的类人生物。{@actSaveFail} 目标被伊提安附身；伊提安消失，目标获得{@condition 失能|XPHB}状态并失去对其身体的控制。伊提安现在控制着这具身体；目标对伊提安的行动毫无察觉。任何攻击、法术或其他效果都无法以伊提安为目标。伊提安的游戏数据保持不变，但它使用被附身目标的{@variantrule 速度|XPHB}以及力量、敏捷和体质的调整值。它知晓目标所知的一切。",
-						"占据持续到该躯体{@variantrule 生命值|XPHB}降至0点或伊提安以一个{@variantrule 附赠动作|XPHB}离开为止。当占据结束时，伊提安返回其躯体，该躯体出现在目标5尺范围内。目标因异星记忆而{@condition 震慑|XPHB}1分钟，并且在24小时内对该伊提安的心灵交换免疫。{@actSaveSuccess} 目标在24小时内对心灵交换免疫。"
+						"{@actSave int} {@dc 18}，一个伊斯人5尺内能看见的类人生物。{@actSaveFail} 目标被伊斯人附身；伊斯人消失，目标获得{@condition 失能|XPHB}状态并失去对其身体的控制。伊斯人现在控制着这具身体；目标对伊斯人的行动毫无察觉。任何攻击、法术或其他效果都无法以伊斯人为目标。伊斯人的游戏数据保持不变，但它使用被附身目标的{@variantrule 速度|XPHB}以及力量、敏捷和体质的调整值。伊斯人还会知晓目标所知的一切。",
+						"附身持续至该躯体{@variantrule 生命值|XPHB}降至0点，或在伊斯人以{@variantrule 附赠动作|XPHB}解除附身时结束。附身结束时，伊斯人会返回其躯体，并出现在目标5尺内一处未占据空间。目标将因异星记忆而{@condition 震慑|XPHB}1分钟，且在24小时内免疫此伊斯人的心灵互换。{@actSaveSuccess} 目标在24小时内免疫此伊斯人的心灵互换。"
 					]
 				}
 			],
@@ -10905,7 +10905,7 @@
 					"ENG_name": "Deathly Stench",
 					"name": "死亡恶臭",
 					"entries": [
-						"{@actSave con} {@dc 14}，任何在僵尸10尺{@variantrule 光环 [效应区域]|XPHB|光环}范围内开始其回合的生物。{@actSaveFail} 9（{@damage 2d8}）毒素伤害，且目标获得{@condition 中毒|XPHB}状态直到其下个回合开始。"
+						"{@actSave con} {@dc 14}，任何在丧尸10尺{@variantrule 光环 [效应区域]|XPHB|光环}区域内开始其回合的生物。{@actSaveFail} 9（{@damage 2d8}）毒素伤害，且目标获得{@condition 中毒|XPHB}状态直到其下个回合开始。"
 					]
 				},
 				{
@@ -10935,7 +10935,7 @@
 					"ENG_name": "Flesh Entomb {@recharge 5}",
 					"name": "死肉埋葬{@recharge 5}",
 					"entries": [
-						"{@actSave str} {@dc 16}，僵尸能看见的30尺内的一个生物。{@actSaveFail} 16 ({@damage 3d10}) 钝击伤害。如果目标是大型或更小的生物，它将被埋葬在一堆死肉中。被埋葬时，目标处于{@condition 束缚|XPHB}状态，对来自死肉堆外的攻击和其他效果具有{@variantrule 掩护|XPHB|全身掩护}，并在其每个回合开始时受到10 ({@damage 3d6}) 暗蚀伤害。",
+						"{@actSave str} {@dc 16}，丧尸30尺内其可见的一个生物。{@actSaveFail} 16 ({@damage 3d10}) 钝击伤害。如果目标是大型或更小的生物，它将被埋葬在一堆死肉中。被埋葬时，目标处于{@condition 束缚|XPHB}状态，对来自死肉堆外的攻击和其他效果具有{@variantrule 掩护|XPHB|全身掩护}，并在其每个回合开始时受到10 ({@damage 3d6}) 暗蚀伤害。",
 						"如果死肉被摧毁（AC 10；HP 25；对暗蚀、毒素和心灵伤害具有{@variantrule 免疫|XPHB}），目标可以被释放。"
 					]
 				}
@@ -11043,7 +11043,7 @@
 					"ENG_name": "Viral Aura",
 					"name": "病毒灵光",
 					"entries": [
-						"{@actSave con} {@dc 12}，任何在僵尸10尺范围内的{@variantrule 光环 [效应区域]|XPHB|光环}内开始其回合的生物。{@actSaveFail} 目标获得{@condition 中毒|XPHB}状态，直到其下一回合开始。处于{@condition 中毒|XPHB}状态时，目标无法恢复{@variantrule 生命值|XPHB}。{@actSaveSuccess} 该生物在24小时内免疫此僵尸的病毒灵光。"
+						"{@actSave con} {@dc 12}，任何在源自丧尸的10尺{@variantrule 光环 [效应区域]|XPHB|光环}区域内开始其回合的生物。{@actSaveFail} 目标获得{@condition 中毒|XPHB}状态，直到其下一回合开始。处于{@condition 中毒|XPHB}状态时，目标无法恢复{@variantrule 生命值|XPHB}。{@actSaveSuccess} 该生物在24小时内免疫此丧尸的病毒灵光。"
 					]
 				}
 			],
@@ -11066,7 +11066,7 @@
 					"ENG_name": "Virulent Miasma (1/Day)",
 					"name": "毒性瘴气（1/日）",
 					"entries": [
-						"{@actSave con} {@dc 12}，僵尸瘟疫传播者30尺{@variantrule 光环 [效应区域]|XPHB|光环}内的每个生物。{@actSaveFail} 14 ({@damage 4d6}) 毒素伤害。{@actSaveSuccess} 伤害减半。{@actSaveSuccessOrFail} 如果此伤害将目标的{@variantrule 生命值|XPHB}降至0，则其死亡并在1分钟后以僵尸形态复活。"
+						"{@actSave con} {@dc 12}，丧尸瘟疫传播者30尺{@variantrule 光环 [效应区域]|XPHB|光环}内的每个生物。{@actSaveFail} 14 ({@damage 4d6}) 毒素伤害。{@actSaveSuccess} 伤害减半。{@actSaveSuccessOrFail} 如果此伤害将目标的{@variantrule 生命值|XPHB}降至0，则其死亡并在一分钟后变成一只丧尸。"
 					]
 				}
 			],

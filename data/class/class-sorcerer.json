@@ -2293,7 +2293,7 @@
 				"幽影术法|术士|XPHB|幽影|RHW|3|RHW",
 				"凶兆之兽|术士|XPHB|幽影|RHW|6|RHW",
 				"幽影漫步|术士|XPHB|幽影|RHW|14|RHW",
-				"影灵形态|术士|XPHB|幽影|RHW|18|RHW"
+				"幽冥形态|术士|XPHB|幽影|RHW|18|RHW"
 			],
 			"hasFluffImages": true
 		}
@@ -5224,7 +5224,7 @@
 				},
 				{
 					"ENG_name": "Strength of the Grave",
-					"name": "终焉之力",
+					"name": "坟冢之力",
 					"type": "entries",
 					"entries": [
 						"若你的{@variantrule 生命值|XPHB}将要降至0且不会立即死亡，则你可以进行一次魅力豁免（{@dc 5}加上该次所受伤害）。若豁免成功，则你的{@variantrule 生命值|XPHB}转而变为等同于你的魅力调整值加上你的术士等级的数值。你成功于该豁免之后，直至你完成一次{@variantrule 长休|XPHB}为止不可再次使用此增益。"
@@ -5243,7 +5243,7 @@
 			"subclassSource": "RHW",
 			"level": 3,
 			"entries": [
-				"{@i 掌控末日与黑暗术}",
+				"{@i 掌控末日与黑暗之力}",
 				"你的天生魔法源自堕影冥界（或其他充斥超自然黑暗的领域）那缥缈莫测的力量。你的血脉或许能够追溯至栖居于那些地方的存在；又或者，你曾暴露于幽影龙那不祥的能量之下并被其改变。你所掌握的幽影魔法使你能够驱使黑暗、亡者与灾厄。",
 				{
 					"type": "refSubclassFeature",
@@ -5332,7 +5332,7 @@
 		},
 		{
 			"ENG_name": "Umbral Form",
-			"name": "影灵形态",
+			"name": "幽冥形态",
 			"source": "RHW",
 			"page": 24,
 			"className": "术士",
@@ -5361,7 +5361,7 @@
 					"name": "幽影坚韧",
 					"type": "entries",
 					"entries": [
-						"你对所有伤害具有{@variantrule 抗性|XPHB}，除了力场且光耀伤害。"
+						"你具有对除力场、光耀外所有类型伤害的{@variantrule 抗性|XPHB}。"
 					]
 				}
 			]

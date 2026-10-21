@@ -4311,7 +4311,7 @@
 				"有些游荡者能够穿行于生与死之间的帷幕，引导敌人步入坟墓，并如幽灵般悄无声息地游走于世间。在这样的追寻中，游荡者或许会发现自己与死亡本身建立起一种神秘的联系。他们会逐渐浸淫于负能量之中，使自己的攻击浸染致命的死亡之力，并从已逝的灵魂那里窃取知识。各大盗贼公会极为器重这类游荡者，将其视作最高效的情报搜集者与间谍。",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "墓穴惊嚎|游荡者|XPHB|鬼魅|RHW|3|RHW"
+					"subclassFeature": "墓冢哀嚎|游荡者|XPHB|鬼魅|RHW|3|RHW"
 				},
 				{
 					"type": "refSubclassFeature",
@@ -4321,7 +4321,7 @@
 		},
 		{
 			"ENG_name": "Wails from the Grave",
-			"name": "墓穴惊嚎",
+			"name": "墓冢哀嚎",
 			"source": "RHW",
 			"page": 21,
 			"className": "游荡者",
@@ -4367,14 +4367,14 @@
 					"name": "使用灵魂饰品",
 					"type": "entries",
 					"entries": [
-						"你能以下列方式使用魂器：",
+						"你能以下列方式使用你的灵魂饰品：",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
 							"items": [
 								{
 									"ENG_name": "Death's Knell",
-									"name": "死亡丧钟",
+									"name": "丧钟",
 									"type": "item",
 									"entry": "当你在自己回合里造成偷袭伤害时，你可以摧毁一件灵魂饰品，并立即使用墓冢哀嚎，且不消耗该特性的使用次数。"
 								},
