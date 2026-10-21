@@ -62,7 +62,7 @@ function listFiles (opts) {
 
 			if (isDirectory(path)) {
 				if (opts.blocklistDirPrefixes != null && opts.blocklistDirPrefixes.some(it => file.startsWith(it))) return false;
-				if (opts.blocklistDirs != null && opts.blocklistDirs.has(path)) return false;
+				if (opts.blocklistDirs != null && opts.blocklistDirs.has(file)) return false;
 				return opts.allowlistDirs ? opts.allowlistDirs.includes(path) : true;
 			}
 
