@@ -78,7 +78,7 @@ def stable_token(value) -> str:
 # ability codes ("prc"), activities consumption.targets value formulas
 # ("-@flags.ll.exploit.number"), and dot-form save.dc.formula
 # ("8 + @prof + @flags.ll.leadership.mod").
-MACHINE_LEAF = re.compile(r"/(alId|colStyles(?:\[\d+\])?|summonedByClass|style|type/tags(?:\[\d+\])?|spellcasting(?:\[\d+\])?/ability|featureType(?:\[\d+\])?|page|(?:skill|save)/[a-z]+|midiProperties/[A-Za-z0-9_]+|healing/bonus|flags(?:/[A-Za-z0-9_.%-]+|\[\d+\])+|foundryEffects(?:\[[^\]]*\])?/changes(?:\[\d+\])?/(?:key|mode|value|priority)|activities(?:\[[^\]]*\])?/roll\.formula|foundryActivities(?:\[[^\]]*\])?/save/dc\.formula|foundryActivities(?:\[[^\]]*\])?/target\.affects/count|foundryActivities(?:\[[^\]]*\])?/check\.associated(?:\[\d+\])?|foundryActivities(?:\[[^\]]*\])?/consumption/targets(?:\[\d+\])?/target|additionalSpells(?:\[[^\]]*\])?/(?:known|innate|prepared)/_\[\d+\]/choose|resources(?:\[[^\]]*\])?/count|activities(?:\[[^\]]*\])?/settings/(?:minimumAC|tempFormula)|activities(?:\[[^\]]*\])?/(?:range/value|save/dc\.formula|target\.affects/count|activity\.id)|foundryActivities(?:\[[^\]]*\])?/activity\.id|(?:foundryActivities|activities)(?:\[[^\]]*\])?/effects(?:\[\d+\])?/riders\.(?:activity|effect)(?:\[\d+\])?|activities(?:\[[^\]]*\])?/check\.associated(?:\[\d+\])?|activities(?:\[[^\]]*\])?/consumption\.targets(?:\[\d+\])?/value|activities(?:\[[^\]]*\])?/save\.dc\.formula|activities(?:\[[^\]]*\])?/(?:summon/)?profiles(?:\[\d+\])?/cr|foundryActivities(?:\[[^\]]*\])?/roll\.formula|foundryActivities(?:\[[^\]]*\])?/check/dc\.formula|foundryActivities(?:\[[^\]]*\])?/duration/units|foundryActivities(?:\[[^\]]*\])?/(?:summon/)?profiles(?:\[\d+\])?/uuid|foundryActivities(?:\[[^\]]*\])?/target/affects\.type|spell(?:\[[^\]]*\])?/school|foundryClassFeature(?:\[[^\]]*\])?/entryData/resources(?:\[[^\]]*\])?/faces|book(?:\[[^\]]*\])?/author|adventure(?:\[[^\]]*\])?/author|by|fluff(?:\[[^\]]*\])?/entries(?:\[[^\]]*\])?/font(?:\[\d+\])?|foundryImg(?:\[[^\]]*\])?|_copy(?:\[[^\]]*\])?/_mod/inherits\.valueExpression/value|_copy(?:\[[^\]]*\])?/_mod/items(?:\[\d+\])?/replace|items\[name=Example-[^\]]*\]/entr(?:y|ies)(?:\[\d+\])?|items\[name=[^\]]*(?:Playtesters?|Credits?|Artists?|Illustrators?|Authors?|Editors?|Cartographers?|Designers?|Developers?|Proofreaders?|Typesetters?|Consultants?|Playtest)[^\]]*\]/entries(?:\[\d+\])?|fontFamily|citation(?:\[[^\]]*\])?/name)$")
+MACHINE_LEAF = re.compile(r"/(alId|colStyles(?:\[\d+\])?|summonedByClass|style|type/tags(?:\[\d+\])?|spellcasting(?:\[\d+\])?/ability|featureType(?:\[\d+\])?|page|(?:skill|save)/[a-z]+|midiProperties/[A-Za-z0-9_]+|healing/bonus|flags(?:/[A-Za-z0-9_.%-]+|\[\d+\])+|foundryEffects(?:\[[^\]]*\])?/changes(?:\[\d+\])?/(?:key|mode|value|priority)|activities(?:\[[^\]]*\])?/roll\.formula|foundryActivities(?:\[[^\]]*\])?/save/dc\.formula|foundryActivities(?:\[[^\]]*\])?/target\.affects/count|foundryActivities(?:\[[^\]]*\])?/check\.associated(?:\[\d+\])?|foundryActivities(?:\[[^\]]*\])?/consumption/targets(?:\[\d+\])?/target|additionalSpells(?:\[[^\]]*\])?/(?:known|innate|prepared)/_\[\d+\]/choose|resources(?:\[[^\]]*\])?/count|activities(?:\[[^\]]*\])?/settings/(?:minimumAC|tempFormula)|activities(?:\[[^\]]*\])?/(?:range/value|save/dc\.formula|target\.affects/count|activity\.id)|foundryActivities(?:\[[^\]]*\])?/activity\.id|(?:foundryActivities|activities)(?:\[[^\]]*\])?/effects(?:\[\d+\])?/riders\.(?:activity|effect)(?:\[\d+\])?|activities(?:\[[^\]]*\])?/check\.associated(?:\[\d+\])?|activities(?:\[[^\]]*\])?/consumption\.targets(?:\[\d+\])?/value|activities(?:\[[^\]]*\])?/save\.dc\.formula|activities(?:\[[^\]]*\])?/(?:summon/)?profiles(?:\[\d+\])?/cr|foundryActivities(?:\[[^\]]*\])?/roll\.formula|foundryActivities(?:\[[^\]]*\])?/check/dc\.formula|foundryActivities(?:\[[^\]]*\])?/duration/units|foundryActivities(?:\[[^\]]*\])?/(?:summon/)?profiles(?:\[\d+\])?/uuid|foundryActivities(?:\[[^\]]*\])?/target/affects\.type|spell(?:\[[^\]]*\])?/school|spell(?:\[[^\]]*\])?/subschools(?:\[\d+\])?|foundryClassFeature(?:\[[^\]]*\])?/entryData/resources(?:\[[^\]]*\])?/faces|book(?:\[[^\]]*\])?/author|adventure(?:\[[^\]]*\])?/author|by|fluff(?:\[[^\]]*\])?/entries(?:\[[^\]]*\])?/font(?:\[\d+\])?|foundryImg(?:\[[^\]]*\])?|_copy(?:\[[^\]]*\])?/_mod/inherits\.valueExpression/value|_copy(?:\[[^\]]*\])?/_mod/items(?:\[\d+\])?/replace|items\[name=Example-[^\]]*\]/entr(?:y|ies)(?:\[\d+\])?|items\[name=[^\]]*(?:Playtesters?|Credits?|Artists?|Illustrators?|Authors?|Editors?|Cartographers?|Designers?|Developers?|Proofreaders?|Typesetters?|Consultants?|Playtest)[^\]]*\]/entries(?:\[\d+\])?|fontFamily|citation(?:\[[^\]]*\])?/name)$")
 
 # Renderer variable placeholders like "<$cha_mod$>" (item charge counts) are
 # substituted verbatim by the site and must stay byte-identical.
@@ -152,6 +152,11 @@ BYLINE_TOKEN = re.compile(r"^by [A-Z][A-Za-z .''-]+$")
 # all-lowercase invented words; translating them would break letter/order
 # based puzzles, and real English terms in lists are capitalized.
 CONLANG_TOKEN = re.compile(r"^[a-z][a-z'-]{4,}$")
+# Pure currency amounts ("25 sp", "1,200 gp"). The upstream
+# need_translate_str fullmatch exemption only covers "N gp"; sp/cp/ep/pp
+# price cells are the same machine-literal class and the zh repositories
+# keep every currency code Latin.
+CURRENCY_FULL = re.compile(r"^\d{1,3}(?:,\d{3})*\s+(?:gp|sp|cp|ep|pp)$")
 # Matches a 5etools tag and captures its display text (pipe field 0). Used to
 # project a target string down to prose + localized display text before the
 # residual substring check, so English inside routing fields (pipe fields >= 1,
@@ -421,6 +426,8 @@ def main() -> int:
             if BYLINE_TOKEN.fullmatch(job.en_str):
                 continue
             if CONLANG_TOKEN.fullmatch(job.en_str):
+                continue
+            if CURRENCY_FULL.fullmatch(job.en_str):
                 continue
             if MALFORMED_TAG_UID.search(job.uid or ""):
                 continue

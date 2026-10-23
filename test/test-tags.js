@@ -1042,6 +1042,7 @@ async function main () {
 			dataTesters,
 			{
 				fnIsIgnoredFile: filePath => filePath.endsWith("changelog.json")
+					|| filePath.endsWith("changelog-cn.json")
 					|| filePath.includes("/generated/")
 					|| filePath.endsWith("converter.json"),
 			},

@@ -1906,7 +1906,7 @@
 					"ENG_name": "Light Crossbow",
 					"name": "轻弩",
 					"entries": [
-						"{@atk rw} 命中{@hit 4}，射程 80/320尺，单一目标。{@h}6（{@damage 1d8 + 2}）的穿刺伤害。"
+						"{@atk rw} 命中{@hit 4}，射程80/320尺，单一目标。{@h}6（{@damage 1d8 + 2}）点穿刺伤害。"
 					]
 				}
 			],
@@ -3000,7 +3000,7 @@
 					"ENG_name": "Claws (Vampire Form Only)",
 					"name": "爪击（仅吸血鬼形态）",
 					"entries": [
-						"{@atk mw} 命中{@hit 8}，触及5尺，单一目标。{@h}10（{@damage 2d4 + 5}）挥砍伤害。"
+						"{@atk mw} 命中{@hit 8}，触及5尺，单一目标。{@h}10（{@damage 2d4 + 5}）点挥砍伤害。"
 					]
 				},
 				{
@@ -5452,7 +5452,7 @@
 			"action": [
 				{
 					"ENG_name": "Force Blade",
-					"name": "力场刃",
+					"name": "力场剑刃",
 					"entries": [
 						"{@atk ms} 命中{@hit 6}，触及5尺，单一目标。{@h}26（{@damage 4d12}）力场伤害，除非该活化法术在{@dice d20}攻击骰上掷出18或更高，则该次攻击视为一次重击，造成78（{@damage 12d12}）点力场伤害。"
 					]

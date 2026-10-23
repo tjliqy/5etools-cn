@@ -49,7 +49,7 @@
 									"种族：默认情况下，{@race 人类} 假定使用玩家手册，{@race 鸟羽人|EEPC} 可以通过竖线添加来源，{@race 鸟羽人|EEPC|还可以再用一条竖线添加可选的链接文本}。也支持背景设定 {@raceFluff 人类}。",
 									"魔能祈唤与其他可选特性：{@optfeature 苦痛魔爆} 默认视为 PHB，{@optfeature 月之仪态|xge} 可以用竖线添加来源，{@optfeature 月之仪态|xge|还可以再用一条竖线添加可选的链接文本}。",
 									"职业：默认情况下，{@class 战士} 假定使用 PHB，{@class 奇械师|tce} 可以通过管道符添加来源，{@class 战士|phb|再用一条竖线添加可选的链接文本} 通过另一个管道符添加可选链接文本，{@class 战士|phb|已添加子职业|奥法骑士} 通过另一个管道符添加子职业，{@class 战士|phb|以及添加的职业特性|奥法骑士|phb|2-0} 通过另一个管道符添加职业特性（第一个数字是等级索引（0-19），第二个数字是特性索引（0-n））。背景设定 {@classFluff 战士} 也受支持。",
-									"子职：{@subclass 狂战士|野蛮人}、{@subclass 狂战士|野蛮人}、{@subclass 先祖守卫|野蛮人||XGE}、{@subclass 魔炮师|奇械师|TCE|TCE}。职业与子职来源默认为《玩家手册》。背景设定 {@subclassFluff 先祖守卫|野蛮人||XGE} 同样支持。",
+									"子职：{@subclass 狂战士|野蛮人}、{@subclass 狂战士|野蛮人}、{@subclass 先祖守卫|野蛮人||XGE}、{@subclass 魔炮师|奇械师|TCE|TCE}。职业与子职来源默认为《玩家手册》。背景设定 {@subclassFluff 先祖守卫|野蛮人||XGE|先祖守卫} 同样支持。",
 									"职业特性：{@classFeature 狂暴|野蛮人||1}、{@classFeature 物品注法|奇械师|TCE|2}、{@classFeature 原初学识|野蛮人||3|TCE}、{@classFeature 狂暴|野蛮人||1||可选的显示文本}。职业来源默认视为 PHB。职业特性来源默认与职业来源相同。",
 									"子职业特性：{@subclassFeature 狂战士道途|野蛮人||狂战士||3}、{@subclassFeature 炼金师|奇械师|TCE|炼金师|TCE|3}、{@subclassFeature 战狂道途|野蛮人||战狂|SCAG|3}、{@subclassFeature 受祝击|牧师||生命||8|TCE}、{@subclassFeature 狂战士道途|野蛮人||狂战士||3||可选的显示文本}。职业来源默认视为 PHB。子职业来源默认视为 PHB。子职业特性来源默认与子职业来源相同。",
 									"状态：{@condition 震慑} 默认视为 PHB，{@condition 震慑|PHB} 可以用竖线添加来源（虽然这从来没什么用处），{@condition 震慑|PHB|还可以再用一条竖线添加可选的链接文本}。",
