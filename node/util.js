@@ -115,9 +115,9 @@ class PatchLoadJson {
 				.get(
 					url,
 					resp => {
-						let stack = "";
-						resp.on("data", chunk => stack += chunk);
-						resp.on("end", () => resolve(JSON.parse(stack)));
+						const chunks = [];
+						resp.on("data", chunk => chunks.push(chunk));
+						resp.on("end", () => resolve(JSON.parse(Buffer.concat(chunks).toString("utf8"))));
 					},
 				)
 				.on("error", err => reject(err));
