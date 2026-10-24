@@ -1854,6 +1854,8 @@ Parser.SP_MISC_TAG_TO_FULL = {
 	"ADV": "提供优势",
 	"PIR": "重复施法使效用永久",
 	"BO": "点燃物品",
+	"WLT": "Targets Willing Creatures",
+	"ALT": "Targets Allies",
 };
 Parser.spMiscTagToFull = function (type) {
 	return Parser._parse_aToB(Parser.SP_MISC_TAG_TO_FULL, type);
@@ -3533,6 +3535,7 @@ Parser.SRC_HBTD = "HBTD";
 Parser.SRC_BQGT = "BQGT";
 Parser.SRC_CaBoMP = "CaBoMP";
 Parser.SRC_BQDD = "BQDD";
+Parser.SRC_SoS = "SoS";
 Parser.SRC_RWG = "RWG";
 Parser.SRC_PL = "PL";
 
@@ -3757,6 +3760,7 @@ Parser.SOURCE_JSON_TO_FULL[Parser.SRC_MisMV1] = `${Parser.MisMVX_PREFIX}卷一`;
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_AATM] = `${Parser.AA_PREFIX}葬仪社`;
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_CaBoMP] = "钩针编织：百变图案集";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_BQDD] = "边陲之地任务：匕首危机！";
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_SoS] = "Shadows of Sithicus";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_RWG] = "红袍巫师的博弈";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PL] = "拉莫迪亚计划";
 
@@ -3945,6 +3949,7 @@ Parser.SOURCE_JSON_TO_ABV[Parser.SRC_MisMV1] = "MisMV1";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_AATM] = "AATM";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_CaBoMP] = "CaBoMP";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_BQDD] = "BQDD";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_SoS] = "SoS";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_RWG] = "RWG";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PL] = "PL";
 
@@ -4132,6 +4137,7 @@ Parser.SOURCE_JSON_TO_DATE[Parser.SRC_MisMV1] = "2023-05-03";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_AATM] = "2023-10-17";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_CaBoMP] = "2026-03-31";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_BQDD] = "2026-05-28";
+Parser.SOURCE_JSON_TO_DATE[Parser.SRC_SoS] = "2026-05-29";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_RWG] = "2026-09-15";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_PL] = "2026-10-13";
 
@@ -4238,6 +4244,7 @@ Parser.SOURCES_ADVENTURES = new Set([
 	Parser.SRC_FFotR,
 	Parser.SRC_AUD,
 	Parser.SRC_AWM,
+	Parser.SRC_SoS,
 	Parser.SRC_RWG,
 	Parser.SRC_PL,
 ]);
@@ -4289,6 +4296,7 @@ Parser.SOURCES_NON_STANDARD_WOTC = new Set([
 	Parser.SRC_ScoEE,
 	Parser.SRC_HBTD,
 	Parser.SRC_BQGT,
+	Parser.SRC_SoS,
 	Parser.SRC_RWG,
 	Parser.SRC_PL,
 ]);
@@ -4491,6 +4499,7 @@ Parser.SOURCES_AVAILABLE_DOCS_BOOK = {};
 	Parser.SRC_RHW,
 	Parser.SRC_XSCREEN_RHW,
 	Parser.SRC_AU,
+	Parser.SRC_PL,
 ].forEach(src => {
 	Parser.SOURCES_AVAILABLE_DOCS_BOOK[src] = src;
 	Parser.SOURCES_AVAILABLE_DOCS_BOOK[src.toLowerCase()] = src;
@@ -4607,7 +4616,7 @@ Parser.SOURCES_AVAILABLE_DOCS_ADVENTURE = {};
 	Parser.SRC_BQDD,
 	Parser.SRC_AUD,
 	Parser.SRC_RWG,
-	Parser.SRC_PL,
+	Parser.SRC_SoS,
 ].forEach(src => {
 	Parser.SOURCES_AVAILABLE_DOCS_ADVENTURE[src] = src;
 	Parser.SOURCES_AVAILABLE_DOCS_ADVENTURE[src.toLowerCase()] = src;
@@ -4647,6 +4656,7 @@ Parser.TAG_TO_PROPS = {
 	"table": ["table", "tableGroup"],
 	"vehupgrade": ["vehicleUpgrade"],
 	"item": ["item", "baseitem", "itemGroup", "magicvariant"],
+	"legroup": ["legendaryGroup"],
 };
 Parser.getTagProps = function (tag) {
 	if (Parser.TAG_TO_PROPS[tag]) return Parser.TAG_TO_PROPS[tag];
@@ -4654,6 +4664,7 @@ Parser.getTagProps = function (tag) {
 };
 
 Parser.PROP_TO_DISPLAY_NAME = {
+	"monster": "怪物",
 	"variantrule": "术语汇编",
 	"optionalfeature": "职业能力选项",
 	"magicvariant": "魔法物品变体",
@@ -4695,7 +4706,6 @@ Parser.PROP_TO_DISPLAY_NAME = {
 	"itemTypeAdditionalEntries": "物品类型附加条目",
 	"language": "语言",
 	"legendaryGroup": "传奇组",
-	"monster": "怪物",
 	"object": "物件",
 	"psionic": "灵能",
 	"race": "种族",

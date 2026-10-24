@@ -741,7 +741,7 @@ export class BookUtil {
 
 		wrpContents.vee.empty();
 		BookUtil.dispBook.vee.empty().vee.html(`<tr><th class="ve-tbl-border" colspan="6"></th></tr>
-			<tr><td colspan="6" class="initial-message initial-message--med book-loading-message">加载失败\u2014无法找到 ID 为“${bookId}”的${Parser.getPropDisplayName(BookUtil.contentType)}，可能需要先从<a href="/managebrew.html" target="_blank">自制内容</a>中获取。</td></tr><tr><th class="ve-tbl-border" colspan="6"></th></tr>`);
+			<tr><td colspan="6" class="initial-message initial-message--med book-loading-message">加载失败\u2014无法找到 ID 为“${bookId.qq()}”的${Parser.getPropDisplayName(BookUtil.contentType)}，可能需要先从<a href="/managebrew.html" target="_blank">自制内容</a>中获取。</td></tr><tr><th class="ve-tbl-border" colspan="6"></th></tr>`);
 
 		this._removeLoadingOverlay();
 
