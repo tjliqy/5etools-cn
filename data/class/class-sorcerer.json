@@ -3276,7 +3276,7 @@
 			"subclassSource": "DSotDQ",
 			"level": 1,
 			"entries": [
-				"在许多世界中，月亮都是受人崇拜、具有魔法的天体。在克莱恩Krynn，魔法之神与世界中的三个月亮相关联。在托瑞尔Toril世界，女神塞伦涅Selne利用月之光辉来打击黑暗。在艾伯伦Eberron，研究巨龙预言Draconic Prophecy的学者们破解了世界中十二个月亮盈缺的古老秘密。",
+				"在许多世界中，月亮都是受人崇拜、具有魔法的天体。在克莱恩Krynn，魔法之神与世界中的三个月亮相关联。在托瑞尔Toril世界，女神塞伦涅Selûne利用月之光辉来打击黑暗。在艾伯伦Eberron，研究巨龙预言Draconic Prophecy的学者们破解了世界中十二个月亮盈缺的古老秘密。",
 				"你或是你族系中的某人，曾暴露在你们世界月亮的集中魔力之下，使得你被灌注了月之魔法。或许你的祖先参与了一个与日蚀或月蚀有关的德鲁伊仪式，又或许一个神秘的月之碎片坠落在你的身边。无论你如何获得了魔法，你在施放术士法术时，会清晰显示出你与月亮的联系或许是你的瞳孔会发出与你们世界中的月亮同色的光芒，使得你们世界中月相的灵体显现环绕着你，又或是一些其他的效果。",
 				{
 					"type": "refSubclassFeature",
@@ -3337,13 +3337,13 @@
 							"{@spell 魅影驹}"
 						],
 						[
-							"7th",
+							"7环",
 							"{@spell 防死结界}",
 							"{@spell 困惑术}",
 							"{@spell 幻景}"
 						],
 						[
-							"9th",
+							"9环",
 							"{@spell 拉瑞心灵联结}",
 							"{@spell 定身怪物}",
 							"{@spell 假象术}"
@@ -3392,7 +3392,7 @@
 							"name": "满月",
 							"type": "item",
 							"entries": [
-								"{@filter 防护和预言法术|spells|class=术士|school=A;D}"
+								"{@filter 防护与预言法术|spells|class=术士|school=A;D}"
 							]
 						},
 						{
@@ -3400,7 +3400,7 @@
 							"name": "朔月",
 							"type": "item",
 							"entries": [
-								"{@filter 魅惑和死灵法术|spells|class=术士|school=E;N}"
+								"{@filter 惑控与死灵法术|spells|class=术士|school=E;N}"
 							]
 						},
 						{
@@ -3408,7 +3408,7 @@
 							"name": "新月",
 							"type": "item",
 							"entries": [
-								"{@filter 幻象和变化法术|spells|class=术士|school=I;T}"
+								"{@filter 幻术与变化法术|spells|class=术士|school=I;T}"
 							]
 						}
 					]
