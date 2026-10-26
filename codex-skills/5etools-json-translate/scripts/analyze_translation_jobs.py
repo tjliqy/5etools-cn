@@ -168,15 +168,30 @@ BYLINE_TOKEN = re.compile(r"^by [A-Z][A-Za-z .''-]+$")
 CREDIT_ARTWORK = re.compile(
     r"^[A-Za-z0-9][A-Za-z0-9 '\()!,;&+\-]* by [A-Za-z0-9][A-Za-z0-9 '\()\-]*$"
 )
+# Credit identity lines pairing a real-world artist name with a social-media
+# handle ("Alexander Cloos {@b @varguyart}", bookData credits lists) and the
+# bare handle tokens the tag tokenizer emits from them ("@varguyart") are
+# identity strings kept verbatim — the handle-bearing companion of
+# CREDIT_ARTWORK above; names may carry non-ASCII letters ("Almir Gusić").
+CREDIT_HANDLE_LINE = re.compile(r"^[^\W\d_][\w .'&()!\-,]* \{@b @\w+\}$")
+HANDLE_TOKEN = re.compile(r"^@\w+$")
 # Constructed-language puzzle/vocabulary tokens ("thrimsan", "kauravi") are
 # all-lowercase invented words; translating them would break letter/order
 # based puzzles, and real English terms in lists are capitalized.
 CONLANG_TOKEN = re.compile(r"^[a-z][a-z'-]{4,}$")
-# Pure currency amounts ("25 sp", "1,200 gp"). The upstream
+# Pure currency amounts ("25 sp", "1,200 gp", "3000 GF"). The upstream
 # need_translate_str fullmatch exemption only covers "N gp"; sp/cp/ep/pp
 # price cells are the same machine-literal class and the zh repositories
-# keep every currency code Latin.
-CURRENCY_FULL = re.compile(r"^\d{1,3}(?:,\d{3})*\s+(?:gp|sp|cp|ep|pp)$")
+# keep every currency code Latin. Homebrew custom coin codes declared in
+# _meta.currencyConversions ("7 GF", "3 CB" ObojimaCurrency gf/cb) belong to
+# the same class and stay Latin in either case.
+CURRENCY_FULL = re.compile(r"^\d{1,4}(?:,\d{3})*\s+(?i:gp|sp|cp|ep|pp|gf|cb)$")
+# Invented measure codes a book defines verbatim in its own table footnotes
+# ("8 oph" travel speed = mph, "1 obe" = mile, Obojima) are definition-bearing
+# unit codes the zh target keeps Latin next to the translated footnote
+# ("1 oph 等于 1 英里/小时"); translating them would orphan the footnote
+# definition.
+UNIT_CODE = re.compile(r"^\d+(?:\.\d+)?\s+(?:oph|obe)$")
 # Bare dice-progression ladders ("d6 → d8 → d10 → d12" Song of Rest healing
 # dice, "d4 ~ d6 ~ d8 ~ d10 ~ d12" damage growth) are pure dice notation the
 # renderer shows verbatim; they carry no translatable prose (only dN tokens
@@ -570,9 +585,15 @@ def main() -> int:
                 continue
             if CREDIT_ARTWORK.fullmatch(job.en_str):
                 continue
+            if CREDIT_HANDLE_LINE.fullmatch(job.en_str):
+                continue
+            if HANDLE_TOKEN.fullmatch(job.en_str):
+                continue
             if CONLANG_TOKEN.fullmatch(job.en_str):
                 continue
             if CURRENCY_FULL.fullmatch(job.en_str):
+                continue
+            if UNIT_CODE.fullmatch(job.en_str):
                 continue
             if DICE_LADDER.fullmatch(job.en_str):
                 continue
