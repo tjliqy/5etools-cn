@@ -84,7 +84,13 @@ def stable_token(value) -> str:
 # sometimes embed a damage-type word in the math ("1d4 + 1 necrotic + 1d4 + 1",
 # BA Duality Blade) and every zh repository keeps dmg1/dmg2 byte-identical
 # Latin dice math, so the whole leaf stays machine.
-MACHINE_LEAF = re.compile(r"/(alId|colStyles(?:\[\d+\])?|summonedByClass|style|type/tags(?:\[\d+\])?|spellcasting(?:\[\d+\])?/ability|featureType(?:\[\d+\])?|page|dmg[12]|(?:skill|save)/[a-z]+|midiProperties/[A-Za-z0-9_]+|healing/bonus|flags(?:/[A-Za-z0-9_.%-]+|\[\d+\])+|foundryEffects(?:\[[^\]]*\])?/changes(?:\[\d+\])?/(?:key|mode|value|priority)|activities(?:\[[^\]]*\])?/roll\.formula|foundryActivities(?:\[[^\]]*\])?/save/dc\.formula|foundryActivities(?:\[[^\]]*\])?/target\.affects/count|foundryActivities(?:\[[^\]]*\])?/check\.associated(?:\[\d+\])?|foundryActivities(?:\[[^\]]*\])?/consumption/targets(?:\[\d+\])?/target|additionalSpells(?:\[[^\]]*\])?/(?:known|innate|prepared)/_\[\d+\]/choose|resources(?:\[[^\]]*\])?/count|activities(?:\[[^\]]*\])?/settings/(?:minimumAC|tempFormula)|activities(?:\[[^\]]*\])?/(?:range/value|save/dc\.formula|target\.affects/count|activity\.id)|foundryActivities(?:\[[^\]]*\])?/activity\.id|(?:foundryActivities|activities)(?:\[[^\]]*\])?/effects(?:\[\d+\])?/riders\.(?:activity|effect)(?:\[\d+\])?|activities(?:\[[^\]]*\])?/check\.associated(?:\[\d+\])?|activities(?:\[[^\]]*\])?/consumption\.targets(?:\[\d+\])?/value|activities(?:\[[^\]]*\])?/save\.dc\.formula|activities(?:\[[^\]]*\])?/(?:summon/)?profiles(?:\[\d+\])?/cr|foundryActivities(?:\[[^\]]*\])?/roll\.formula|foundryActivities(?:\[[^\]]*\])?/check/dc\.formula|foundryActivities(?:\[[^\]]*\])?/duration/units|foundryActivities(?:\[[^\]]*\])?/(?:summon/)?profiles(?:\[\d+\])?/uuid|foundryActivities(?:\[[^\]]*\])?/target/affects\.type|spell(?:\[[^\]]*\])?/school|spell(?:\[[^\]]*\])?/subschools(?:\[\d+\])?|foundryClassFeature(?:\[[^\]]*\])?/entryData/resources(?:\[[^\]]*\])?/faces|book(?:\[[^\]]*\])?/author|adventure(?:\[[^\]]*\])?/author|by|fluff(?:\[[^\]]*\])?/entries(?:\[[^\]]*\])?/font(?:\[\d+\])?|foundryImg(?:\[[^\]]*\])?|_copy(?:\[[^\]]*\])?/_mod/inherits\.valueExpression/value|_copy(?:\[[^\]]*\])?/_mod/items(?:\[\d+\])?/replace|items\[name=Example-[^\]]*\]/entr(?:y|ies)(?:\[\d+\])?|items\[name=[^\]]*(?:Playtesters?|Credits?|Artists?|Illustrators?|Authors?|Editors?|Cartographers?|Designers?|Developers?|Proofreaders?|Typesetters?|Consultants?|Playtest)[^\]]*\]/entries(?:\[\d+\])?|fontFamily|itemProperty(?:\[[^\]]*\])?/template|citation(?:\[[^\]]*\])?/name)$")
+# itemTypeAdditionalEntries appliesTo ("EXPMH" = itemType abbreviation EXP +
+# source MH), vehicleUpgrade upgradeType ({"MH:VU"} keys of _meta
+# .vehicleUpgradeTypes; zh main repo keeps "IWM:W" Latin), and magicvariant
+# inherits weight/valueExpression ("[[baseItem.value]]*10" interpolation
+# templates; zh main repo 具装 keeps them byte-identical) are entity-routing
+# codes / renderer math, all kept Latin in every zh repository.
+MACHINE_LEAF = re.compile(r"/(alId|colStyles(?:\[\d+\])?|summonedByClass|style|type/tags(?:\[\d+\])?|spellcasting(?:\[\d+\])?/ability|featureType(?:\[\d+\])?|page|dmg[12]|(?:skill|save)/[a-z]+|midiProperties/[A-Za-z0-9_]+|healing/bonus|flags(?:/[A-Za-z0-9_.%-]+|\[\d+\])+|foundryEffects(?:\[[^\]]*\])?/changes(?:\[\d+\])?/(?:key|mode|value|priority)|activities(?:\[[^\]]*\])?/roll\.formula|foundryActivities(?:\[[^\]]*\])?/save/dc\.formula|foundryActivities(?:\[[^\]]*\])?/target\.affects/count|foundryActivities(?:\[[^\]]*\])?/check\.associated(?:\[\d+\])?|foundryActivities(?:\[[^\]]*\])?/consumption/targets(?:\[\d+\])?/target|additionalSpells(?:\[[^\]]*\])?/(?:known|innate|prepared)/_\[\d+\]/choose|resources(?:\[[^\]]*\])?/count|activities(?:\[[^\]]*\])?/settings/(?:minimumAC|tempFormula)|activities(?:\[[^\]]*\])?/(?:range/value|save/dc\.formula|target\.affects/count|activity\.id)|foundryActivities(?:\[[^\]]*\])?/activity\.id|(?:foundryActivities|activities)(?:\[[^\]]*\])?/effects(?:\[\d+\])?/riders\.(?:activity|effect)(?:\[\d+\])?|activities(?:\[[^\]]*\])?/check\.associated(?:\[\d+\])?|activities(?:\[[^\]]*\])?/consumption\.targets(?:\[\d+\])?/value|activities(?:\[[^\]]*\])?/save\.dc\.formula|activities(?:\[[^\]]*\])?/(?:summon/)?profiles(?:\[\d+\])?/cr|foundryActivities(?:\[[^\]]*\])?/roll\.formula|foundryActivities(?:\[[^\]]*\])?/check/dc\.formula|foundryActivities(?:\[[^\]]*\])?/duration/units|foundryActivities(?:\[[^\]]*\])?/(?:summon/)?profiles(?:\[\d+\])?/uuid|foundryActivities(?:\[[^\]]*\])?/target/affects\.type|spell(?:\[[^\]]*\])?/school|spell(?:\[[^\]]*\])?/subschools(?:\[\d+\])?|foundryClassFeature(?:\[[^\]]*\])?/entryData/resources(?:\[[^\]]*\])?/faces|book(?:\[[^\]]*\])?/author|adventure(?:\[[^\]]*\])?/author|by|fluff(?:\[[^\]]*\])?/entries(?:\[[^\]]*\])?/font(?:\[\d+\])?|foundryImg(?:\[[^\]]*\])?|_copy(?:\[[^\]]*\])?/_mod/inherits\.valueExpression/value|_copy(?:\[[^\]]*\])?/_mod/items(?:\[\d+\])?/replace|items\[name=Example-[^\]]*\]/entr(?:y|ies)(?:\[\d+\])?|items\[name=[^\]]*(?:Playtesters?|Credits?|Artists?|Illustrators?|Authors?|Editors?|Cartographers?|Designers?|Developers?|Proofreaders?|Typesetters?|Consultants?|Playtest)[^\]]*\]/entries(?:\[\d+\])?|fontFamily|itemProperty(?:\[[^\]]*\])?/template|citation(?:\[[^\]]*\])?/name|appliesTo|upgradeType(?:\[\d+\])?|inherits/(?:weight|value)Expression)$")
 
 # Renderer variable placeholders like "<$cha_mod$>" (item charge counts) are
 # substituted verbatim by the site and must stay byte-identical.
@@ -154,6 +160,14 @@ FOUNDRY_TEMPLATE = re.compile(r"^\{\{[A-Za-z0-9_.-]+\}\}$")
 # Pure-Latin author bylines ("by Justice Arman") in bookData/adventureData
 # front matter are credit identity strings kept verbatim.
 BYLINE_TOKEN = re.compile(r"^by [A-Z][A-Za-z .''-]+$")
+# All-ASCII artwork credit lines "<Artwork title> by <Artist>" (bookData
+# interior-art lists, "The Dresden Files - Your Story by Javier Charro") are
+# external real-world artwork and artist identity strings kept verbatim, the
+# "<Title> by <Name>" companion of BYLINE_TOKEN above; artists are often
+# lowercase handles ("lhs", "JakeMurray"), so no case constraint is possible.
+CREDIT_ARTWORK = re.compile(
+    r"^[A-Za-z0-9][A-Za-z0-9 '\()!,;&+\-]* by [A-Za-z0-9][A-Za-z0-9 '\()\-]*$"
+)
 # Constructed-language puzzle/vocabulary tokens ("thrimsan", "kauravi") are
 # all-lowercase invented words; translating them would break letter/order
 # based puzzles, and real English terms in lists are capitalized.
@@ -221,6 +235,21 @@ def is_machine_tag_field(job) -> bool:
         # {@atk m,rw} pipe field 0 is a comma-separated attack-mode enum
         # (melee/ranged weapon codes) resolved by the renderer as machine keys;
         # the repo keeps these Latin codes verbatim in all attack entries.
+        return True
+    if field == 0 and tag == "code" and MACHINE_TOKEN.fullmatch(job.en_str or ""):
+        # {@code Control-Alt-H}-style single Latin tokens in code tags are
+        # literal machine content (keystrokes, commands, file names) the
+        # renderer shows verbatim; code display text is never translated.
+        return True
+    if (
+        field == 0
+        and tag == "b"
+        and (job.en_str or "").isupper()
+        and MACHINE_TOKEN.fullmatch(job.en_str or "")
+    ):
+        # {@b UAMM}-style all-caps single tokens in bold are source-code /
+        # rules abbreviations (UAMM, DC, AC) kept Latin in zh prose even when
+        # the code is only referenced in text and absent from _meta sources.
         return True
     if field == 0 and tag == "i" and (job.en_str or "").strip() and not any(ch.isspace() for ch in job.en_str) and job.en_str.isascii():
         # {@i Bubblegumshoe}-style single Latin tokens in italics are product
@@ -538,6 +567,8 @@ def main() -> int:
             if FOUNDRY_TEMPLATE.fullmatch(job.en_str):
                 continue
             if BYLINE_TOKEN.fullmatch(job.en_str):
+                continue
+            if CREDIT_ARTWORK.fullmatch(job.en_str):
                 continue
             if CONLANG_TOKEN.fullmatch(job.en_str):
                 continue
