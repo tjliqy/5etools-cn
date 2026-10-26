@@ -9,6 +9,7 @@ import json
 import re
 import sys
 from pathlib import Path
+from urllib.parse import urlparse
 
 TRANSLATOR_ROOT = Path("/data/5e-translator")
 sys.path.insert(0, str(TRANSLATOR_ROOT))
@@ -78,7 +79,12 @@ def stable_token(value) -> str:
 # ability codes ("prc"), activities consumption.targets value formulas
 # ("-@flags.ll.exploit.number"), and dot-form save.dc.formula
 # ("8 + @prof + @flags.ll.leadership.mod").
-MACHINE_LEAF = re.compile(r"/(alId|colStyles(?:\[\d+\])?|summonedByClass|style|type/tags(?:\[\d+\])?|spellcasting(?:\[\d+\])?/ability|featureType(?:\[\d+\])?|page|(?:skill|save)/[a-z]+|midiProperties/[A-Za-z0-9_]+|healing/bonus|flags(?:/[A-Za-z0-9_.%-]+|\[\d+\])+|foundryEffects(?:\[[^\]]*\])?/changes(?:\[\d+\])?/(?:key|mode|value|priority)|activities(?:\[[^\]]*\])?/roll\.formula|foundryActivities(?:\[[^\]]*\])?/save/dc\.formula|foundryActivities(?:\[[^\]]*\])?/target\.affects/count|foundryActivities(?:\[[^\]]*\])?/check\.associated(?:\[\d+\])?|foundryActivities(?:\[[^\]]*\])?/consumption/targets(?:\[\d+\])?/target|additionalSpells(?:\[[^\]]*\])?/(?:known|innate|prepared)/_\[\d+\]/choose|resources(?:\[[^\]]*\])?/count|activities(?:\[[^\]]*\])?/settings/(?:minimumAC|tempFormula)|activities(?:\[[^\]]*\])?/(?:range/value|save/dc\.formula|target\.affects/count|activity\.id)|foundryActivities(?:\[[^\]]*\])?/activity\.id|(?:foundryActivities|activities)(?:\[[^\]]*\])?/effects(?:\[\d+\])?/riders\.(?:activity|effect)(?:\[\d+\])?|activities(?:\[[^\]]*\])?/check\.associated(?:\[\d+\])?|activities(?:\[[^\]]*\])?/consumption\.targets(?:\[\d+\])?/value|activities(?:\[[^\]]*\])?/save\.dc\.formula|activities(?:\[[^\]]*\])?/(?:summon/)?profiles(?:\[\d+\])?/cr|foundryActivities(?:\[[^\]]*\])?/roll\.formula|foundryActivities(?:\[[^\]]*\])?/check/dc\.formula|foundryActivities(?:\[[^\]]*\])?/duration/units|foundryActivities(?:\[[^\]]*\])?/(?:summon/)?profiles(?:\[\d+\])?/uuid|foundryActivities(?:\[[^\]]*\])?/target/affects\.type|spell(?:\[[^\]]*\])?/school|spell(?:\[[^\]]*\])?/subschools(?:\[\d+\])?|foundryClassFeature(?:\[[^\]]*\])?/entryData/resources(?:\[[^\]]*\])?/faces|book(?:\[[^\]]*\])?/author|adventure(?:\[[^\]]*\])?/author|by|fluff(?:\[[^\]]*\])?/entries(?:\[[^\]]*\])?/font(?:\[\d+\])?|foundryImg(?:\[[^\]]*\])?|_copy(?:\[[^\]]*\])?/_mod/inherits\.valueExpression/value|_copy(?:\[[^\]]*\])?/_mod/items(?:\[\d+\])?/replace|items\[name=Example-[^\]]*\]/entr(?:y|ies)(?:\[\d+\])?|items\[name=[^\]]*(?:Playtesters?|Credits?|Artists?|Illustrators?|Authors?|Editors?|Cartographers?|Designers?|Developers?|Proofreaders?|Typesetters?|Consultants?|Playtest)[^\]]*\]/entries(?:\[\d+\])?|fontFamily|citation(?:\[[^\]]*\])?/name)$")
+# item dmg1/dmg2 are damage-formula fields the renderer feeds verbatim into
+# one {@damage ...} tag and Foundry import parses as a formula; authors
+# sometimes embed a damage-type word in the math ("1d4 + 1 necrotic + 1d4 + 1",
+# BA Duality Blade) and every zh repository keeps dmg1/dmg2 byte-identical
+# Latin dice math, so the whole leaf stays machine.
+MACHINE_LEAF = re.compile(r"/(alId|colStyles(?:\[\d+\])?|summonedByClass|style|type/tags(?:\[\d+\])?|spellcasting(?:\[\d+\])?/ability|featureType(?:\[\d+\])?|page|dmg[12]|(?:skill|save)/[a-z]+|midiProperties/[A-Za-z0-9_]+|healing/bonus|flags(?:/[A-Za-z0-9_.%-]+|\[\d+\])+|foundryEffects(?:\[[^\]]*\])?/changes(?:\[\d+\])?/(?:key|mode|value|priority)|activities(?:\[[^\]]*\])?/roll\.formula|foundryActivities(?:\[[^\]]*\])?/save/dc\.formula|foundryActivities(?:\[[^\]]*\])?/target\.affects/count|foundryActivities(?:\[[^\]]*\])?/check\.associated(?:\[\d+\])?|foundryActivities(?:\[[^\]]*\])?/consumption/targets(?:\[\d+\])?/target|additionalSpells(?:\[[^\]]*\])?/(?:known|innate|prepared)/_\[\d+\]/choose|resources(?:\[[^\]]*\])?/count|activities(?:\[[^\]]*\])?/settings/(?:minimumAC|tempFormula)|activities(?:\[[^\]]*\])?/(?:range/value|save/dc\.formula|target\.affects/count|activity\.id)|foundryActivities(?:\[[^\]]*\])?/activity\.id|(?:foundryActivities|activities)(?:\[[^\]]*\])?/effects(?:\[\d+\])?/riders\.(?:activity|effect)(?:\[\d+\])?|activities(?:\[[^\]]*\])?/check\.associated(?:\[\d+\])?|activities(?:\[[^\]]*\])?/consumption\.targets(?:\[\d+\])?/value|activities(?:\[[^\]]*\])?/save\.dc\.formula|activities(?:\[[^\]]*\])?/(?:summon/)?profiles(?:\[\d+\])?/cr|foundryActivities(?:\[[^\]]*\])?/roll\.formula|foundryActivities(?:\[[^\]]*\])?/check/dc\.formula|foundryActivities(?:\[[^\]]*\])?/duration/units|foundryActivities(?:\[[^\]]*\])?/(?:summon/)?profiles(?:\[\d+\])?/uuid|foundryActivities(?:\[[^\]]*\])?/target/affects\.type|spell(?:\[[^\]]*\])?/school|spell(?:\[[^\]]*\])?/subschools(?:\[\d+\])?|foundryClassFeature(?:\[[^\]]*\])?/entryData/resources(?:\[[^\]]*\])?/faces|book(?:\[[^\]]*\])?/author|adventure(?:\[[^\]]*\])?/author|by|fluff(?:\[[^\]]*\])?/entries(?:\[[^\]]*\])?/font(?:\[\d+\])?|foundryImg(?:\[[^\]]*\])?|_copy(?:\[[^\]]*\])?/_mod/inherits\.valueExpression/value|_copy(?:\[[^\]]*\])?/_mod/items(?:\[\d+\])?/replace|items\[name=Example-[^\]]*\]/entr(?:y|ies)(?:\[\d+\])?|items\[name=[^\]]*(?:Playtesters?|Credits?|Artists?|Illustrators?|Authors?|Editors?|Cartographers?|Designers?|Developers?|Proofreaders?|Typesetters?|Consultants?|Playtest)[^\]]*\]/entries(?:\[\d+\])?|fontFamily|itemProperty(?:\[[^\]]*\])?/template|citation(?:\[[^\]]*\])?/name)$")
 
 # Renderer variable placeholders like "<$cha_mod$>" (item charge counts) are
 # substituted verbatim by the site and must stay byte-identical.
@@ -157,6 +163,25 @@ CONLANG_TOKEN = re.compile(r"^[a-z][a-z'-]{4,}$")
 # price cells are the same machine-literal class and the zh repositories
 # keep every currency code Latin.
 CURRENCY_FULL = re.compile(r"^\d{1,3}(?:,\d{3})*\s+(?:gp|sp|cp|ep|pp)$")
+# Bare dice-progression ladders ("d6 → d8 → d10 → d12" Song of Rest healing
+# dice, "d4 ~ d6 ~ d8 ~ d10 ~ d12" damage growth) are pure dice notation the
+# renderer shows verbatim; they carry no translatable prose (only dN tokens
+# joined by →/~ separators) and the zh repositories keep them byte-identical.
+DICE_LADDER = re.compile(r"^d\d+(?:\s*[→~]\s*d\d+)+$")
+# Entity-lookup tags whose pipe field 1 routes to another file's source code;
+# display field 0 is then the entity's name *in that external file*, not free
+# prose. Whitelisted to entity tags so style/link/variable tags never match.
+# ({@subclass Name|Class|Source} carries the class in pipe field 1, so
+# subclass stays off the whitelist; its route is not a plain source code.)
+EXTERNAL_ENTITY_TAG = re.compile(
+    r"\{@(?P<tag>creature|spell|item|baseitem|background|race|class|"
+    r"feat|optfeature|book|adventure|deity|vehicle|object|trap|hazard|disease|"
+    r"condition|status|sense|action|cult|reward|variantrule|charoption|psionic|"
+    r"table|skill) (?P<display>[^{}|]+)\|(?P<route>[^{}|]+)"
+)
+# Short alphabetic source codes ("SaF", "WDH", "XGE") used as entity-tag pipe
+# field 1; excludes URLs, paths, and free-text routing fields.
+SOURCE_CODE_ROUTE = re.compile(r"[A-Za-z][A-Za-z0-9_-]{0,15}")
 # Matches a 5etools tag and captures its display text (pipe field 0). Used to
 # project a target string down to prose + localized display text before the
 # residual substring check, so English inside routing fields (pipe fields >= 1,
@@ -192,6 +217,11 @@ def is_machine_tag_field(job) -> bool:
         # field 0 is a machine routing key that stays byte-identical English across
         # the localized repo (200+ tags in data/ and homebrew keep Latin keys).
         return True
+    if field == 0 and tag == "atk" and MACHINE_TOKEN.fullmatch(job.en_str or ""):
+        # {@atk m,rw} pipe field 0 is a comma-separated attack-mode enum
+        # (melee/ranged weapon codes) resolved by the renderer as machine keys;
+        # the repo keeps these Latin codes verbatim in all attack entries.
+        return True
     if field == 0 and tag == "i" and (job.en_str or "").strip() and not any(ch.isspace() for ch in job.en_str) and job.en_str.isascii():
         # {@i Bubblegumshoe}-style single Latin tokens in italics are product
         # names / foreign terms ({@i o-bakemono}) kept verbatim; translatable
@@ -202,6 +232,49 @@ def is_machine_tag_field(job) -> bool:
     if field >= 1 and tag in ROUTE_TAG_FIELDS:
         return True
     return bool(MACHINE_TOKEN.fullmatch(job.en_str or ""))
+
+
+def is_brand_domain_link(job, target_value) -> bool:
+    """True for a {@link Display|url} field-0 job whose display text repeats
+    the link target's own domain brand ("Gaming Paper" ↔ gamingpaper.com).
+
+    The display is then the site's proper name, which has no Chinese form;
+    zh prose keeps such brand names verbatim ({@link Gaming Paper|
+    https://gamingpaper.com/} in Arcadia Issue 8, whose surrounding sentence
+    also keeps "Gaming Paper" untranslated).
+    """
+    match = TAG_FIELD_UID.search(job.uid or "")
+    if not match or match.group("tag") != "link" or int(match.group("field")) != 0:
+        return False
+    display = (job.en_str or "").strip()
+    if not display or not display.isascii():
+        return False
+    brand = re.sub(r"[^a-z0-9]", "", display.lower())
+    if not brand:
+        return False
+    for tag_match in re.finditer(r"\{@link ([^{}|]+)\|([^{}|]+)", target_value or ""):
+        if tag_match.group(1).strip() != display:
+            continue
+        raw_url = tag_match.group(2).strip()
+        host = urlparse(raw_url if "://" in raw_url else "//" + raw_url).hostname or ""
+        labels = [label for label in host.split(".") if label]
+        # The brand may sit in the registrable label or a subdomain.
+        if any(
+            re.sub(r"[^a-z0-9]", "", label.lower()) == brand for label in labels[:-1]
+        ):
+            return True
+    return False
+
+
+def iter_json_strings(node):
+    if isinstance(node, str):
+        yield node
+    elif isinstance(node, list):
+        for value in node:
+            yield from iter_json_strings(value)
+    elif isinstance(node, dict):
+        for value in node.values():
+            yield from iter_json_strings(value)
 
 
 def path_segments(key_path: str):
@@ -297,7 +370,25 @@ def resolve_job_value(root, key_path: str):
                 if len(source_cands) == 1:
                     index = source_cands[0]
                 else:
-                    return None, None
+                    # The analyser appends a qualifier for every id/name/source/page
+                    # field present on the source entry, so the selector's field set
+                    # identifies the entry exactly even among same-named siblings:
+                    # e.g. of two "Dragon Type" features the page-bearing one emits
+                    # "name=...;source=...;page=19" while its page-less sibling
+                    # emits "name=...;source=...". When the name+source filter
+                    # leaves several candidates, prefer the unique one whose own
+                    # qualifier field set equals the selector's (page/id present on
+                    # the item iff present in the selector).
+                    selector_fields = set(expected)
+                    exact_cands = [
+                        i for i in source_cands
+                        if ("page" in selector_fields) == (current[i].get("page") is not None)
+                        and ("id" in selector_fields) == (current[i].get("id") is not None)
+                    ]
+                    if len(exact_cands) == 1:
+                        index = exact_cands[0]
+                    else:
+                        return None, None
             elif len(candidates) > 1:
                 # Duplicate names without a source hint: prefer the candidate under
                 # which the NEXT path segment's key exists (e.g. the gallery with
@@ -369,6 +460,10 @@ def main() -> int:
             value = source_meta.get(field)
             if isinstance(value, str):
                 source_codes.add(value.lower())
+    # Snapshot of only the file's OWN source codes (before dependencies and
+    # test references are merged in), used to recognize entity tags that
+    # route to another file.
+    own_source_codes = set(source_codes)
     # Cross-file dependency source codes (_meta.dependencies values and
     # _test.references) are machine routing identifiers for files that are not
     # among this file's own _meta.sources; their bare form stays byte-identical
@@ -379,6 +474,25 @@ def main() -> int:
     for ref in source_meta_json.get("_test", {}).get("references", []):
         if isinstance(ref, str):
             source_codes.add(ref.lower())
+
+    # Entity tags routing to a source outside this file's own _meta.sources
+    # name entities the renderer must resolve from that other file. When the
+    # localized corpus holds no Chinese name for the display text (job-level
+    # known_translation is None) the external file is untranslated — e.g.
+    # MCDM's "Strongholds & Followers" (source code SaF) referenced from
+    # Arcadia Issue 8 as {@creature Princip|SaF} — so the entity has no
+    # canonical Chinese name anywhere: the zh translation keeps the English
+    # surface byte-identical (tag displays, retained statblock names) instead
+    # of inventing a name the entity link cannot resolve to.
+    external_entity_displays = set()
+    for text in iter_json_strings(source_meta_json):
+        for tag_match in EXTERNAL_ENTITY_TAG.finditer(text):
+            route = tag_match.group("route").split("|")[0].strip()
+            if route.lower() in own_source_codes:
+                continue
+            if not SOURCE_CODE_ROUTE.fullmatch(route):
+                continue
+            external_entity_displays.add(tag_match.group("display").strip())
 
     jobs = []
     residuals = []
@@ -429,6 +543,8 @@ def main() -> int:
                 continue
             if CURRENCY_FULL.fullmatch(job.en_str):
                 continue
+            if DICE_LADDER.fullmatch(job.en_str):
+                continue
             if MALFORMED_TAG_UID.search(job.uid or ""):
                 continue
             plain_path, plain_value = resolve_job_value(target_data, job.key_path)
@@ -446,6 +562,25 @@ def main() -> int:
             # job resolves directly. Only token jobs may be machine-excluded.
             is_token_job = plain_path is None or not isinstance(plain_value, str)
             if is_token_job and is_machine_tag_field(job):
+                continue
+            if (
+                item["known_translation"] is None
+                and isinstance(job.en_str, str)
+                and job.en_str.isascii()
+                and job.en_str.strip() in external_entity_displays
+            ):
+                # Retained external-source entity name (see
+                # external_entity_displays above): the referenced entity has
+                # no Chinese name in any localized repository, so the English
+                # surface in the target is a deliberate retention.
+                continue
+            if (
+                is_token_job
+                and item["known_translation"] is None
+                and is_brand_domain_link(job, target_value)
+            ):
+                # {@link Display|url} whose display repeats the target site's
+                # own domain brand is a site proper name kept verbatim.
                 continue
             if (
                 isinstance(target_value, str)
