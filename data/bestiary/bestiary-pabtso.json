@@ -4652,9 +4652,21 @@
 						"replace": "狂热者",
 						"with": "沙尔菲",
 						"flags": "i"
-					}
+					},
+					"_": [
+						{
+							"mode": "addSkills",
+							"skills": {
+								"performance": 1
+							}
+						}
+					]
 				}
 			},
+			"alignment": [
+				"C",
+				"E"
+			],
 			"hasToken": true,
 			"hasFluffImages": true
 		},

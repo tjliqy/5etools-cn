@@ -15,9 +15,9 @@ class BooksList extends AdventuresBooksList {
 			rowBuilderFn: (bk) => {
 				return `
 					<span class="ve-col-1-3 ve-text-center">${AdventuresBooksList._getGroupHtml(bk)}</span>
-					<span class="ve-col-3-3 ve-bold">${bk.name}</span>
+					<span class="ve-col-4-3 ve-bold">${bk.name}</span>
 					<span class="ve-col-1-3 ve-text-center">${bk.translator || "机翻"}</span>
-					<span class="ve-grow ve-text-center ve-code">${AdventuresBooksList._getDateStr(bk)}</span>
+					<span class="ve-grow ve-text-center ve-code ve-no-wrap">${AdventuresBooksList._getDateStr(bk)}</span>
 				`;
 			},
 		});

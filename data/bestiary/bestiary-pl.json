@@ -1,0 +1,1783 @@
+{
+	"monster": [
+		{
+			"ENG_name": "Adam",
+			"name": "亚当",
+			"type": "construct",
+			"isNamedCreature": true,
+			"source": "PL",
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				18
+			],
+			"hp": {
+				"average": 161,
+				"formula": "19d8 + 76"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"initiative": {
+				"proficiency": 1
+			},
+			"str": 22,
+			"dex": 16,
+			"con": 19,
+			"int": 14,
+			"wis": 10,
+			"cha": 5,
+			"save": {
+				"str": "+10",
+				"dex": "+7"
+			},
+			"skill": {
+				"acrobatics": "+7",
+				"athletics": "+14"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 10,
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"immune": [
+				"lightning",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"languages": [
+				"通用语"
+			],
+			"cr": "12",
+			"trait": [
+				{
+					"ENG_name": "Bloodied Fury",
+					"name": "浴血狂怒",
+					"entries": [
+						"处于{@status 浴血|XPHB}状态时，亚当的攻击检定具有{@variantrule 优势|XPHB}。"
+					]
+				},
+				{
+					"ENG_name": "Immutable Form",
+					"name": "不变形态",
+					"entries": [
+						"亚当无法变形。"
+					]
+				},
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"亚当对抗法术和其他魔法效应时进行的豁免检定具有{@variantrule 优势|XPHB}。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"亚当发动两次猛击攻击，并使用碾碎或投掷。"
+					]
+				},
+				{
+					"ENG_name": "Slam",
+					"name": "猛击",
+					"entries": [
+						"{@atkr m} {@hit 10}，触及5尺。{@h}13（{@damage 2d6 + 6}）钝击伤害外加7（{@damage 2d6}）闪电伤害。如果目标是中型或更小的生物，它将被其中一只手施加{@condition 受擒|XPHB}状态（逃脱{@dc 18}）。"
+					]
+				},
+				{
+					"ENG_name": "Crush",
+					"name": "碾压",
+					"entries": [
+						"{@actSave str} {@dc 18}，被亚当{@condition 受擒|XPHB}的一名生物。{@actSaveFail} 13（{@damage 2d6 + 6}）钝击伤害外加7（{@damage 2d6}）闪电伤害，且目标陷入{@condition 束缚|XPHB}状态。{@condition 束缚|XPHB}期间，目标正在窒息。"
+					]
+				},
+				{
+					"ENG_name": "Throw",
+					"name": "投掷",
+					"entries": [
+						"亚当将一名被自己{@condition 受擒|XPHB}的生物投掷到30尺内一处其可见、不在空中的空间。{@actSave dex} {@dc 18}，被投掷的生物及落点空间内的每名生物。{@actSaveFail} 13（{@damage 2d6 + 6}）钝击伤害，且目标陷入{@condition 倒地|XPHB}状态。{@actSaveSuccess} 仅半伤。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Violent Leap",
+					"name": "暴力飞跃",
+					"entries": [
+						"亚当消耗10尺移动力，跳向40尺内一处含有一名或多名中型或更小生物的空间。{@actSave dex} {@dc 18}，亚当落点空间内的每名生物。{@actSaveFail} 14（{@damage 4d6}）钝击伤害，且目标陷入{@condition 倒地|XPHB}状态。{@actSaveSuccessOrFail} 目标被移至最近的未占据空间。"
+					]
+				}
+			],
+			"traitTags": [
+				"Immutable Form",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"L"
+			],
+			"miscTags": [
+				"MA"
+			],
+			"conditionInflict": [
+				"grappled",
+				"prone",
+				"restrained"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"strength"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "CEO Viktra Mordenheim",
+			"name": "CEO 维克特拉·莫登海姆",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"shortName": "维克特拉",
+			"isNamedCreature": true,
+			"source": "PL",
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"average": 123,
+				"formula": "19d8 + 38"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 16,
+			"con": 15,
+			"int": 21,
+			"wis": 10,
+			"cha": 10,
+			"save": {
+				"con": "+5",
+				"cha": "+3"
+			},
+			"skill": {
+				"arcana": "+8",
+				"investigation": "+8",
+				"medicine": "+6"
+			},
+			"passive": 10,
+			"languages": [
+				"通用语",
+				"龙语",
+				"矮人语",
+				"精灵语",
+				"地精语",
+				"半身人语"
+			],
+			"cr": "7",
+			"gear": [
+				"镶钉皮甲|xphb"
+			],
+			"spellcasting": [
+				{
+					"ENG_name": "Activate Constructs (1/Day)",
+					"name": "激活构装（1/天）",
+					"type": "spellcasting",
+					"headerEntries": [
+						"维克特拉施展{@spell 活化物件|XPHB}，使用智力作为施法属性。"
+					],
+					"daily": {
+						"1": [
+							"{@spell 活化物件|XPHB}"
+						]
+					},
+					"ability": "int",
+					"displayAs": "bonus",
+					"hidden": [
+						"daily"
+					]
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Bolster Inventions",
+					"name": "强化造物",
+					"entries": [
+						"在维克特拉的每个回合结束时，每个位于以她为源点、半径5尺的{@variantrule 光环 [效应区域]|XPHB|光环}内的构装体盟友获得5点{@variantrule 临时生命值|XPHB}。如果维克特拉处于{@condition 失能|XPHB}状态，此特性不生效。"
+					]
+				},
+				{
+					"ENG_name": "Darklord Restoration",
+					"name": "黑暗领主复生",
+					"entries": [
+						"维克特拉死亡时，会在{@dice 1d10}周后于莫登海姆动力公司某处复活，并恢复全部{@variantrule 生命值|XPHB}。"
+					]
+				},
+				{
+					"ENG_name": "Legendary Resistance (3/Day, or 4/Day in Domain)",
+					"name": "传奇抗性（3/日，领域内4/日）",
+					"entries": [
+						"维克特拉豁免检定失败时，可以将其改为成功。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"维克特拉进行两次避雷针攻击。她可以用一次注射器攻击替换其中一次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Lightning Rod",
+					"name": "避雷针",
+					"entries": [
+						"{@atkr m,r} {@hit 6}，触及5尺或射程90尺。{@h}12（{@damage 2d8 + 3}）闪电伤害，且目标在其下一回合开始前不能进行反应。"
+					]
+				},
+				{
+					"ENG_name": "Syringe",
+					"name": "注射器",
+					"entries": [
+						"{@actSave con} {@dc 16}，维克特拉能看见的5尺内的一个生物。{@actSaveFail} 目标获得{@condition 中毒|XPHB}状态，持续1分钟。当以此方式{@condition 中毒|XPHB}时，目标遭受以下效果之一（维克特拉选择）。目标在其每回合结束时重复进行豁免，成功则结束其自身的效果。1分钟后目标自动成功：",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"ENG_name": "Corrosive Serum",
+									"name": "腐蚀血清",
+									"type": "item",
+									"entries": [
+										"目标在其每回合开始时受到10（{@damage 4d4}）强酸伤害，并且其{@variantrule 速度|XPHB}减少10尺。"
+									]
+								},
+								{
+									"ENG_name": "Deadly Serum",
+									"name": "致命血清",
+									"type": "item",
+									"entries": [
+										"目标在其每个回合开始时受到11（{@damage 2d10}）暗蚀伤害，并且它无法恢复{@variantrule 生命值|XPHB}。"
+									]
+								},
+								{
+									"ENG_name": "Mind-Altering Serum",
+									"name": "迷心血清",
+									"type": "item",
+									"entries": [
+										"目标在其每个回合开始时受到10（{@damage 3d6}）心灵伤害，且其维持{@status 专注|XPHB}的豁免检定具有{@variantrule 劣势|XPHB}。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"legendary": [
+				{
+					"ENG_name": "Shocking Prod",
+					"name": "电击棒",
+					"entries": [
+						"维克特拉移动至多其{@variantrule 速度|XPHB}一半的距离，并进行一次避雷针攻击。直至其下个回合开始，维克特拉无法再执行此动作。"
+					]
+				},
+				{
+					"ENG_name": "Static Explosion",
+					"name": "静电爆发",
+					"entries": [
+						"{@actSave dex} {@dc 16}，以维克特拉90尺内可见的一点为中心、10尺半径{@variantrule 球状 [效应区域]|XPHB|球状}内的每名生物。{@actSaveFail} 5（{@damage 2d4}）闪电伤害。{@actSaveSuccess} 半伤。"
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"D",
+				"DR",
+				"E",
+				"GO",
+				"H"
+			],
+			"damageTags": [
+				"A",
+				"L",
+				"N",
+				"Y"
+			],
+			"damageTagsSpell": [
+				"B",
+				"P",
+				"S"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"AOE",
+				"MA",
+				"RA"
+			],
+			"conditionInflict": [
+				"incapacitated",
+				"poisoned"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Created",
+			"name": "被造者",
+			"type": "construct",
+			"source": "PL",
+			"size": [
+				"S",
+				"M"
+			],
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				9
+			],
+			"hp": {
+				"average": 127,
+				"formula": "15d8 + 60"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 19,
+			"dex": 9,
+			"con": 18,
+			"int": 6,
+			"wis": 10,
+			"cha": 5,
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 10,
+			"immune": [
+				"lightning",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"languages": [
+				"通用语"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"ENG_name": "Berserk",
+					"name": "狂怒",
+					"entries": [
+						"每当被造者以{@status 浴血|XPHB}状态开始其回合，投{@dice 1d6}。掷出6时，被造者陷入狂暴。狂暴期间，被造者在其每个回合攻击其可见的最近生物。若没有足够近、可移动并攻击的生物，被造者转而攻击一个物件。被造者一经狂暴，便持续狂暴直至被摧毁或不再处于{@status 浴血|XPHB}状态。",
+						"被造者的创造者若在狂暴的被造者60尺内，可以执行一个动作进行{@dc 15}魅力（{@skill 游说|XPHB}）检定以尝试安抚它；被造者必须能听见其创造者。若该检定成功，被造者停止狂暴，直至其下个回合开始\u2014\u2014届时若其仍处于{@status 浴血|XPHB}状态，便重新开始为狂暴特质掷骰。"
+					]
+				},
+				{
+					"ENG_name": "Immutable Form",
+					"name": "不变形态",
+					"entries": [
+						"被造者无法变形。"
+					]
+				},
+				{
+					"ENG_name": "Lightning Absorption",
+					"name": "闪电吸收",
+					"entries": [
+						"每当被造者受到闪电伤害，其恢复等同于所受闪电伤害数值的{@variantrule 生命值|XPHB}。"
+					]
+				},
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"被造者对抗法术和其他魔法效应时进行的豁免检定具有{@variantrule 优势|XPHB}。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"被造者发动两次猛击攻击。"
+					]
+				},
+				{
+					"ENG_name": "Slam",
+					"name": "猛击",
+					"entries": [
+						"{@atkr m} {@hit 7}，触及5尺。{@h}13（{@damage 2d8 + 4}）钝击伤害外加4（{@damage 1d8}）闪电伤害。"
+					]
+				},
+				{
+					"ENG_name": "Malfunction {@recharge}",
+					"name": "故障 {@recharge}",
+					"entries": [
+						"被造者随机产生以下效应之一（投{@dice 1d4}）：",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"ENG_name": "1: Insect Hive",
+									"name": "1：虫巢",
+									"type": "item",
+									"entries": [
+										"{@actSave con} {@dc 15}，10尺内的每名生物。{@actSaveFail} 该生物受到13（{@damage 3d8}）毒素伤害，并陷入{@condition 中毒|XPHB}状态，直至其下个回合开始。"
+									]
+								},
+								{
+									"ENG_name": "2: Melting Plastic",
+									"name": "2：熔融塑料",
+									"type": "item",
+									"entries": [
+										"{@actSave dex} {@dc 15}，15尺{@variantrule 锥状 [效应区域]|XPHB|锥状}内的每名生物。{@actSaveFail} 13（{@damage 3d8}）火焰伤害。直至目标下个回合结束，其{@variantrule 速度|XPHB}减半；其无法执行反应；并且其在其回合内只能执行动作或{@variantrule 附赠动作|XPHB}之一，不能两者兼取。{@actSaveSuccess} 仅半伤"
+									]
+								},
+								{
+									"ENG_name": "3: Electrical Discharge",
+									"name": "3：放电",
+									"type": "item",
+									"entries": [
+										"{@actSave dex} {@dc 15}，10尺内的每名生物。{@actSaveFail} 18（{@damage 4d8}）闪电伤害。{@actSaveSuccess} 半伤"
+									]
+								},
+								{
+									"ENG_name": "4: Haywire",
+									"name": "4：失控",
+									"type": "item",
+									"entries": [
+										"被造者发动两次猛击攻击并陷入狂暴。持续1分钟内，其每轮都为狂暴特质掷骰，无论其是否处于{@status 浴血|XPHB}状态。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"environment": [
+				"城市"
+			],
+			"treasure": [
+				"器具"
+			],
+			"traitTags": [
+				"Damage Absorption",
+				"Immutable Form",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"I",
+				"L"
+			],
+			"miscTags": [
+				"AOE",
+				"MA"
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Echo",
+			"name": "回声",
+			"type": "construct",
+			"source": "PL",
+			"size": [
+				"S",
+				"M"
+			],
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 22,
+				"formula": "4d8 + 4"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 13,
+			"int": 10,
+			"wis": 10,
+			"cha": 5,
+			"skill": {
+				"athletics": "+4",
+				"perception": "+2"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 12,
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"languages": [
+				"通用语，外加另外一门语言"
+			],
+			"cr": "1/2",
+			"gear": [
+				"短棒|xphb"
+			],
+			"trait": [
+				{
+					"ENG_name": "Immutable Form",
+					"name": "不变形态",
+					"entries": [
+						"回声无法变形。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"回声发动两次短棒攻击。"
+					]
+				},
+				{
+					"ENG_name": "Club",
+					"name": "短棒",
+					"entries": [
+						"{@atkr m} {@hit 4}，触及5尺。{@h}4（{@damage 1d4 + 2}）钝击伤害。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Automated Self-Preservation",
+					"name": "自动自我保护",
+					"entries": [
+						"回声执行疾走或撤离动作。"
+					]
+				}
+			],
+			"environment": [
+				"城市"
+			],
+			"tokenCredit": "Games Workshop",
+			"tokenCustom": true,
+			"traitTags": [
+				"Immutable Form"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MA",
+				"MLW"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Empty Echo",
+			"name": "空壳回声",
+			"type": "construct",
+			"source": "PL",
+			"size": [
+				"S",
+				"M"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 22,
+				"formula": "4d8 + 4"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 13,
+			"int": 2,
+			"wis": 6,
+			"cha": 5,
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 8,
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"ENG_name": "Immutable Form",
+					"name": "不变形态",
+					"entries": [
+						"回声无法变形。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Slam",
+					"name": "猛击",
+					"entries": [
+						"{@atkr m} {@hit 4}，触及5尺。{@h}6（{@damage 1d8 + 2}）钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Static Scream {@recharge}",
+					"name": "静电尖啸 {@recharge}",
+					"entries": [
+						"{@actSave con} {@dc 11}，30尺内回声所选择的每名生物。{@actSaveFail} 5（{@damage 2d4}）雷鸣伤害，且该生物陷入{@condition 耳聋|XPHB}状态，直至回声的下个回合开始。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Automated Self-Preservation",
+					"name": "自动自我保护",
+					"entries": [
+						"回声执行疾走或撤离动作。"
+					]
+				}
+			],
+			"environment": [
+				"城市"
+			],
+			"tokenCredit": "Games Workshop",
+			"tokenCustom": true,
+			"traitTags": [
+				"Immutable Form"
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"B",
+				"T"
+			],
+			"miscTags": [
+				"MA"
+			],
+			"conditionInflict": [
+				"deafened"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Gerta von Aubrecker",
+			"name": "格尔塔·冯·奥布雷克",
+			"type": "monstrosity",
+			"isNamedCreature": true,
+			"source": "PL",
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"average": 84,
+				"formula": "13d8 + 26"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 9,
+			"dex": 14,
+			"con": 14,
+			"int": 17,
+			"wis": 12,
+			"cha": 11,
+			"save": {
+				"int": "+6",
+				"wis": "+4"
+			},
+			"skill": {
+				"perception": "+4"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 14,
+			"immune": [
+				"cold"
+			],
+			"conditionImmune": [
+				"exhaustion"
+			],
+			"languages": [
+				"通用语"
+			],
+			"cr": "5",
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"格尔塔发动三次冷冻枪攻击。"
+					]
+				},
+				{
+					"ENG_name": "Cryogun",
+					"name": "冷冻枪",
+					"entries": [
+						"{@atkr m,r} {@hit 6}，触及5尺或射程60尺。{@h}16（{@damage 3d8 + 3}）寒冷伤害。"
+					]
+				},
+				{
+					"ENG_name": "Cryocannon {@recharge 5}",
+					"name": "冷冻炮 {@recharge 5}",
+					"entries": [
+						"{@actSave con} {@dc 14}，60尺{@variantrule 锥状 [效应区域]|XPHB|锥状}内的每名生物。{@actSaveFail} 36（{@damage 8d8}）寒冷伤害。{@actSaveSuccess} 半伤。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Camouflage Generator",
+					"name": "迷彩发生器",
+					"entries": [
+						"身处{@variantrule 微光光照|XPHB}或{@variantrule 黑暗|XPHB}中时，格尔塔执行躲藏动作。"
+					]
+				}
+			],
+			"tokenCredit": "Filippo Ubertino",
+			"tokenCustom": true,
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"C"
+			],
+			"miscTags": [
+				"MA",
+				"RA"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Hendrik von Aubrecker",
+			"name": "亨德里克·冯·奥布雷克",
+			"type": "monstrosity",
+			"isNamedCreature": true,
+			"source": "PL",
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"average": 65,
+				"formula": "10d8 + 20"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 10,
+			"dex": 18,
+			"con": 15,
+			"int": 14,
+			"wis": 12,
+			"cha": 9,
+			"save": {
+				"con": "+4"
+			},
+			"skill": {
+				"acrobatics": "+6",
+				"perception": "+3"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 13,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion"
+			],
+			"languages": [
+				"通用语"
+			],
+			"cr": "3",
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"亨德里克发动两次猛击攻击，并使用麻木针刺。"
+					]
+				},
+				{
+					"ENG_name": "Slam",
+					"name": "猛击",
+					"entries": [
+						"{@atkr m} {@hit 6}，触及5尺。{@h}8（{@damage 1d8 + 4}）钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Numbing Needle",
+					"name": "麻木针刺",
+					"entries": [
+						"{@actSave con} {@dc 14}，5尺内的单一生物。{@actSaveFail} 7（{@damage 2d6}）毒素伤害。直至目标下个回合结束，其{@variantrule 速度|XPHB}减半；其无法执行反应；并且其在其回合内只能执行动作或{@variantrule 附赠动作|XPHB}之一，不能两者兼取。{@actSaveSuccess} 仅半伤。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Parry",
+					"name": "格挡",
+					"entries": [
+						"{@actTrigger} 亨德里克被一次近战攻击检定命中。{@actResponse} 亨德里克对抗那次攻击的AC提高2，可能令该次攻击改为失手。"
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"I"
+			],
+			"miscTags": [
+				"MA"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "K-Nine",
+			"name": "K-Nine",
+			"type": "construct",
+			"source": "PL",
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"average": 22,
+				"formula": "3d10 + 6"
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 17,
+			"dex": 15,
+			"con": 15,
+			"int": 3,
+			"wis": 12,
+			"cha": 7,
+			"skill": {
+				"perception": "+5",
+				"stealth": "+4"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 15,
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"ENG_name": "Immutable Form",
+					"name": "不变形态",
+					"entries": [
+						"K-Nine无法变形。"
+					]
+				},
+				{
+					"ENG_name": "Pack Tactics",
+					"name": "集群战术",
+					"entries": [
+						"若K-Nine的至少一名盟友在距某生物5尺内，且该盟友不具有{@condition 失能|XPHB}状态，则K-Nine对该生物的攻击检定具有{@variantrule 优势|XPHB}。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atkr m} {@hit 5}，触及 5 尺。{@h}8（{@damage 1d10 + 3}）穿刺伤害。若目标生物体型不超过大型，则其陷入{@condition 倒地|XPHB}状态。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "X-Ray Scanning",
+					"name": "X光扫描",
+					"entries": [
+						"K-Nine获得60尺的盲视。此盲视可无视由至多1尺厚的石材、1寸厚的普通金属，或3尺厚的木头或泥土所提供的{@variantrule 掩护|XPHB|全身掩护}。更厚的物质或薄铅板依然能如常阻挡该盲视。此增益持续1分钟，或直至K-Nine陷入{@condition 目盲|XPHB}状态。"
+					]
+				}
+			],
+			"environment": [
+				"城市"
+			],
+			"traitTags": [
+				"Immutable Form",
+				"Pack Tactics"
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MA"
+			],
+			"conditionInflict": [
+				"blinded",
+				"prone"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Lamordian Evangelist",
+			"name": "拉莫迪亚布道者",
+			"type": "humanoid",
+			"source": "PL",
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 11,
+					"from": [
+						"{@item 盾牌|XPHB}（对应金属标语牌）"
+					]
+				}
+			],
+			"hp": {
+				"average": 9,
+				"formula": "2d8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 9,
+			"con": 10,
+			"int": 11,
+			"wis": 9,
+			"cha": 13,
+			"save": {
+				"cha": "+3"
+			},
+			"skill": {
+				"persuasion": "+3",
+				"religion": "+2"
+			},
+			"passive": 9,
+			"languages": [
+				"通用语"
+			],
+			"cr": {
+				"cr": "无",
+				"xp": 0
+			},
+			"pbNote": "+2",
+			"gear": [
+				"长棍|xphb",
+				{
+					"item": "盾牌|xphb",
+					"displayName": "盾牌（对应金属标语牌；已计入AC）"
+				}
+			],
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"布道者施展以下一道法术，使用魅力作为施法属性："
+					],
+					"will": [
+						"{@spell 神导术|XPHB}"
+					],
+					"daily": {
+						"2": [
+							"{@spell 疗伤术|XPHB}"
+						]
+					},
+					"ability": "cha",
+					"displayAs": "action"
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Quarterstaff",
+					"name": "长棍",
+					"entries": [
+						"{@atkr m} {@hit 3}，触及5尺。{@h}4（{@damage 1d6 + 1}）钝击伤害，如果双手持用则为5（{@damage 1d8 + 1}）钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Feedback Loop",
+					"name": "反馈回路",
+					"entries": [
+						"{@actSave con} {@dc 11}，60尺内的单一生物。{@actSaveFail} 4（{@damage 1d8}）雷鸣伤害，且目标陷入{@condition 耳聋|XPHB}状态，直至其下个回合结束。"
+					]
+				}
+			],
+			"tokenCredit": "Kojima Productions",
+			"tokenCustom": true,
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"T"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MA",
+				"MLW"
+			],
+			"conditionInflict": [
+				"deafened"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Lamordian Infiltrator",
+			"name": "拉莫迪亚渗透者",
+			"type": "humanoid",
+			"source": "PL",
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"{@item 皮甲|XPHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 9,
+				"formula": "2d6 + 2"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 8,
+			"dex": 13,
+			"con": 12,
+			"int": 11,
+			"wis": 12,
+			"cha": 9,
+			"save": {
+				"dex": "+3"
+			},
+			"skill": {
+				"sleight of hand": "+3",
+				"stealth": "+3"
+			},
+			"passive": 11,
+			"languages": [
+				"通用语"
+			],
+			"cr": {
+				"cr": "无",
+				"xp": 0
+			},
+			"pbNote": "+2",
+			"gear": [
+				"匕首|xphb",
+				"皮甲|xphb"
+			],
+			"action": [
+				{
+					"ENG_name": "Dagger",
+					"name": "匕首",
+					"entries": [
+						"{@atkr m,r} {@hit 3}，触及5尺或射程20/60尺。{@h}3（{@damage 1d4 + 1}）穿刺伤害。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Disengage",
+					"name": "撤离",
+					"entries": [
+						"渗透者执行{@action 撤离|XPHB}动作。"
+					]
+				}
+			],
+			"tokenCredit": "Ben Rayne",
+			"tokenCustom": true,
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MA",
+				"MLW",
+				"RA",
+				"THW"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Lamordian Mercenary",
+			"name": "拉莫迪亚雇佣兵",
+			"type": "humanoid",
+			"source": "PL",
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item 链甲|XPHB}（对应防弹背心）"
+					]
+				}
+			],
+			"hp": {
+				"average": 11,
+				"formula": "2d8 + 2"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 13,
+			"dex": 10,
+			"con": 12,
+			"int": 8,
+			"wis": 11,
+			"cha": 9,
+			"save": {
+				"str": "+3"
+			},
+			"skill": {
+				"athletics": "+3"
+			},
+			"passive": 10,
+			"languages": [
+				"通用语"
+			],
+			"cr": {
+				"cr": "无",
+				"xp": 0
+			},
+			"pbNote": "+2",
+			"gear": [
+				{
+					"item": "链甲|xphb",
+					"displayName": "链甲（对应防弹背心）"
+				},
+				{
+					"item": "巨棒|xphb",
+					"displayName": "巨棒（对应金属棒球棍）"
+				},
+				"手枪|xphb"
+			],
+			"action": [
+				{
+					"ENG_name": "Greatclub",
+					"name": "巨棒",
+					"entries": [
+						"{@atkr m} {@hit 3}, 触及 5 尺。{@h}5 ({@damage 1d8 + 1}) 钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Pistol",
+					"name": "手枪",
+					"entries": [
+						"{@atkr r} {@hit 2}，射程30/90尺。{@h}5（{@damage 1d10}）穿刺伤害。"
+					]
+				}
+			],
+			"tokenCredit": "Ironhead Studio",
+			"tokenCustom": true,
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MA",
+				"MLW",
+				"RA",
+				"RNG"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Lamordian Technician",
+			"name": "拉莫迪亚技术员",
+			"type": "humanoid",
+			"source": "PL",
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				10
+			],
+			"hp": {
+				"average": 7,
+				"formula": "2d8 - 2"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 8,
+			"dex": 10,
+			"con": 9,
+			"int": 13,
+			"wis": 11,
+			"cha": 12,
+			"save": {
+				"int": "+3"
+			},
+			"skill": {
+				"arcana": "+3",
+				"history": "+3"
+			},
+			"passive": 10,
+			"languages": [
+				"通用语"
+			],
+			"cr": {
+				"cr": "无",
+				"xp": 0
+			},
+			"pbNote": "+2",
+			"gear": [
+				{
+					"item": "修补工具|xphb",
+					"displayName": "修补工具（对应工程师工具箱）"
+				}
+			],
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"技术员施展以下一道法术，使用智力作为施法属性（法术豁免{@dc 11}）："
+					],
+					"will": [
+						"{@spell 次级幻象|XPHB}"
+					],
+					"daily": {
+						"2e": [
+							"{@spell 燃烧之手|XPHB}",
+							"{@spell 油腻术|XPHB}"
+						]
+					},
+					"ability": "int",
+					"displayAs": "action"
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Static Arc",
+					"name": "静电电弧",
+					"entries": [
+						"{@atkr m,r} {@hit 3}，触及5尺或射程120尺。{@h}5（{@damage 1d10}）闪电伤害。"
+					]
+				}
+			],
+			"tokenCredit": "Yiva Ljungqvist",
+			"tokenCustom": true,
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"L"
+			],
+			"damageTagsSpell": [
+				"F"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MA",
+				"RA"
+			],
+			"conditionInflictSpell": [
+				"prone"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Rudolph von Aubrecker",
+			"name": "鲁道夫·冯·奥布雷克",
+			"type": "monstrosity",
+			"isNamedCreature": true,
+			"source": "PL",
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"average": 112,
+				"formula": "15d8 + 45"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"initiative": {
+				"proficiency": 1
+			},
+			"str": 11,
+			"dex": 16,
+			"con": 17,
+			"int": 19,
+			"wis": 14,
+			"cha": 15,
+			"save": {
+				"int": "+7",
+				"cha": "+5"
+			},
+			"skill": {
+				"perception": "+8",
+				"performance": "+5"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 16,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"paralyzed"
+			],
+			"languages": [
+				"通用语"
+			],
+			"cr": "6",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"鲁道夫施展以下一道法术，无需法术成分并使用智力作为施法属性（法术豁免{@dc 15}）："
+					],
+					"will": [
+						"{@spell 侦测思想|XPHB}",
+						"{@spell 心灵尖刺|XPHB}"
+					],
+					"daily": {
+						"1": [
+							"{@spell 命令术|XPHB}"
+						]
+					},
+					"ability": "int",
+					"displayAs": "action"
+				},
+				{
+					"ENG_name": "Forcefield Generator",
+					"name": "力场发生器",
+					"type": "spellcasting",
+					"headerEntries": [
+						"鲁道夫响应该法术的触发条件施展{@spell 护盾术|XPHB}，无需法术成分，并使用与施法动作相同的施法属性。"
+					],
+					"will": [
+						"{@spell 护盾术|XPHB}"
+					],
+					"ability": "int",
+					"displayAs": "reaction",
+					"hidden": [
+						"will"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"鲁道夫发动一次电击枪攻击，并使用施法施展{@spell 命令术|XPHB}或{@spell 心灵尖刺|XPHB}。"
+					]
+				},
+				{
+					"ENG_name": "Taser",
+					"name": "电击枪",
+					"entries": [
+						"{@atkr m} {@hit 6}，触及5尺。{@h}14（{@damage 4d6}）闪电伤害，且目标陷入{@condition 麻痹|XPHB}状态，直至鲁道夫的下个回合开始。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "X-Ray Scanning",
+					"name": "X光扫描",
+					"entries": [
+						"鲁道夫获得60尺的盲视。此盲视可无视由至多1尺厚的石材、1寸厚的普通金属，或3尺厚的木头或泥土所提供的{@variantrule 掩护|XPHB|全身掩护}。更厚的物质或薄铅板依然能如常阻挡该盲视。此增益持续1分钟，或直至鲁道夫陷入{@condition 目盲|XPHB}状态。"
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"L"
+			],
+			"damageTagsSpell": [
+				"Y"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MA"
+			],
+			"conditionInflict": [
+				"blinded",
+				"paralyzed"
+			],
+			"conditionInflictSpell": [
+				"prone"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Shattered Echo",
+			"name": "破碎回声",
+			"type": "construct",
+			"source": "PL",
+			"size": [
+				"S",
+				"M"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 60,
+				"formula": "8d8 + 24"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"initiative": {
+				"proficiency": 1
+			},
+			"str": 18,
+			"dex": 15,
+			"con": 16,
+			"int": 8,
+			"wis": 10,
+			"cha": 6,
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 10,
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"languages": [
+				"通用语，外加另外一门语言"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"ENG_name": "Immutable Form",
+					"name": "不变形态",
+					"entries": [
+						"回声无法变形。"
+					]
+				},
+				{
+					"ENG_name": "Mimicry",
+					"name": "拟声",
+					"entries": [
+						"回声能模仿声音。听到该声音的生物只有在{@dc 10}感知（{@skill 洞悉|XPHB}）检定成功时，才能分辨出那是模仿。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"回声发动两次猛击攻击。"
+					]
+				},
+				{
+					"ENG_name": "Slam",
+					"name": "猛击",
+					"entries": [
+						"{@atkr m} {@hit 6}，触及 5 尺。{@h}15（{@damage 2d10 + 4}）钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Unearthly Scream {@recharge}",
+					"name": "怪谲尖嚎 {@recharge}",
+					"entries": [
+						"{@actSave con} {@dc 13}，30尺内回声所选择的每名生物。{@actSaveFail} 9（{@damage 2d8}）雷鸣伤害，且该生物陷入{@condition 耳聋|XPHB}状态，直至回声的下个回合开始。处于{@condition 耳聋|XPHB}状态期间，该生物同时陷入{@condition 恐慌|XPHB}状态。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Automated Self-Preservation",
+					"name": "自动自我保护",
+					"entries": [
+						"回声执行疾走或撤离动作。"
+					]
+				}
+			],
+			"environment": [
+				"城市"
+			],
+			"traitTags": [
+				"Immutable Form",
+				"Mimicry"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"B",
+				"T"
+			],
+			"miscTags": [
+				"MA"
+			],
+			"conditionInflict": [
+				"deafened",
+				"frightened"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		}
+	]
+}

@@ -207,12 +207,12 @@
 					"ENG_name": "Darklord Restoration",
 					"name": "黑暗领主复苏",
 					"entries": [
-						"如果安卡霍特普死亡，他会在哈拉基尔的某处，于{@dice 1d10}周内恢复其所有的{@variantrule 生命值|XPHB}。"
+						"如果安卡霍特普死亡，他会在哈拉吉尔的某处，于{@dice 1d10}周内恢复其所有的{@variantrule 生命值|XPHB}。"
 					]
 				},
 				{
 					"ENG_name": "Legendary Resistance (3/Day, or 4/Day in Domain)",
-					"name": "传奇抗性（3次/天，或在领域内4次/天）",
+					"name": "传奇抗性（3/日，领域内4/日）",
 					"entries": [
 						"如果安卡霍特普豁免检定失败，他可以选择改为成功。"
 					]
@@ -325,7 +325,7 @@
 		},
 		{
 			"ENG_name": "Azalin Rex",
-			"name": "阿扎林·雷克斯",
+			"name": "亚扎林·雷克斯",
 			"type": {
 				"type": "undead",
 				"tags": [
@@ -405,7 +405,7 @@
 					"name": "施法",
 					"type": "spellcasting",
 					"headerEntries": [
-						"阿扎林·雷克斯施展下列法术之一，无需法术成分，并使用智力作为施法关键属性（法术豁免{@dc 20}）："
+						"亚扎林·雷克斯施展下列法术之一，无需法术成分，并使用智力作为施法关键属性（法术豁免{@dc 20}）："
 					],
 					"will": [
 						"{@spell 侦测魔法|XPHB}",
@@ -438,7 +438,7 @@
 					"name": "汲取法术",
 					"type": "spellcasting",
 					"headerEntries": [
-						"阿扎林在法术触发时施放{@spell 法术反制|XPHB}，使用与施法相同的法术施放能力。如果目标生物对抗此{@spell 法术反制|XPHB}的豁免检定失败，阿扎林将窃取触发法术的知识。在1小时内或直到阿扎林再次使用此{@variantrule 反应|XPHB}，阿扎林可以施放该法术一次，使用与施法相同的法术施放能力。"
+						"亚扎林在法术触发时施放{@spell 法术反制|XPHB}，使用与施法相同的法术施放能力。如果目标生物对抗此{@spell 法术反制|XPHB}的豁免检定失败，亚扎林将窃取触发法术的知识。在1小时内或直到亚扎林再次使用此{@variantrule 反应|XPHB}，亚扎林可以施放该法术一次，使用与施法相同的法术施放能力。"
 					],
 					"will": [
 						"{@spell 法术反制|XPHB}"
@@ -455,14 +455,14 @@
 					"ENG_name": "Darklord Restoration",
 					"name": "黑暗领主复苏",
 					"entries": [
-						"如果阿扎林死亡而他的灵魂罐保持完好，他会在{@dice 2d10}天后，在距离其灵魂罐最近的未被占据空间内，以全部{@variantrule 生命值|XPHB}复活。如果阿扎林的灵魂罐被摧毁，他则会在{@dice 4d10}天后，在达克农的阿弗纳斯城堡中复活。"
+						"如果亚扎林死亡而他的灵魂罐保持完好，他会在{@dice 2d10}天后，在距离其灵魂罐最近的未被占据空间内，以全部{@variantrule 生命值|XPHB}复活。如果亚扎林的灵魂罐被摧毁，他则会在{@dice 4d10}天后，在达克农的禽绝堡中复活。"
 					]
 				},
 				{
 					"ENG_name": "Legendary Resistance (4/Day, or 5/Day in Domain)",
 					"name": "传奇抗性（4/天，或在领域中为5/天）",
 					"entries": [
-						"如果阿扎林豁免检定失败，他可以选择改为成功。"
+						"如果亚扎林豁免检定失败，他可以选择改为成功。"
 					]
 				}
 			],
@@ -471,7 +471,7 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"阿扎林进行三次攻击，使用魔能迸裂或麻痹之触，组合方式任意。"
+						"亚扎林进行三次攻击，使用魔能迸裂或麻痹之触，组合方式任意。"
 					]
 				},
 				{
@@ -485,7 +485,7 @@
 					"ENG_name": "Paralyzing Touch",
 					"name": "麻痹之触",
 					"entries": [
-						"{@atkr m} {@hit 12}，触及5尺。{@h}15（{@damage 3d6 + 5}）寒冷伤害，且目标获得{@condition 麻痹|XPHB}状态，持续至阿扎林的下个回合开始。"
+						"{@atkr m} {@hit 12}，触及5尺。{@h}15（{@damage 3d6 + 5}）寒冷伤害，且目标获得{@condition 麻痹|XPHB}状态，持续至亚扎林的下个回合开始。"
 					]
 				}
 			],
@@ -494,20 +494,20 @@
 					"ENG_name": "Eldritch Teleport",
 					"name": "诡秘传送",
 					"entries": [
-						"阿扎林传送至一个他可见的、未被占据的、至多60尺外的空间，并发动一次魔能迸裂或麻痹之触攻击。"
+						"亚扎林传送至一个他可见的、未被占据的、至多60尺外的空间，并发动一次魔能迸裂或麻痹之触攻击。"
 					]
 				},
 				{
 					"ENG_name": "Forbidden Knowledge",
 					"name": "禁忌学识",
 					"entries": [
-						"{@actSave int} {@dc 20}，对阿扎林60尺内能看见的至多三个生物。{@actSaveFail} 28（{@damage 8d6}）心灵伤害，且目标获得{@condition 震慑|XPHB}状态，持续到阿扎林的下个回合结束。{@actSaveSuccess} 仅造成一半伤害。{@actSaveSuccessOrFail} 阿扎林在他的下个回合开始前不能再次使用此动作。"
+						"{@actSave int} {@dc 20}，对亚扎林60尺内能看见的至多三个生物。{@actSaveFail} 28（{@damage 8d6}）心灵伤害，且目标获得{@condition 震慑|XPHB}状态，持续到亚扎林的下个回合结束。{@actSaveSuccess} 仅造成一半伤害。{@actSaveSuccessOrFail} 亚扎林在他的下个回合开始前不能再次使用此动作。"
 					]
 				}
 			],
 			"legendaryGroup": {
 				"ENG_name": "Azalin Rex",
-				"name": "阿扎林·雷克斯",
+				"name": "亚扎林·雷克斯",
 				"source": "RHW"
 			},
 			"traitTags": [
@@ -795,6 +795,9 @@
 			"type": "undead",
 			"source": "RHW",
 			"page": 238,
+			"referenceSources": [
+				"SoS"
+			],
 			"size": [
 				"M"
 			],
@@ -1335,7 +1338,7 @@
 				},
 				{
 					"ENG_name": "Legendary Resistance (3/Day, or 4/Day in Domain)",
-					"name": "传奇抗性（3次/天，或在领域内4次/天）",
+					"name": "传奇抗性（3/日，领域内4/日）",
 					"entries": [
 						"如果查库娜在豁免检定中失败，她可以选择改为成功。"
 					]
@@ -1693,6 +1696,9 @@
 			"type": "undead",
 			"source": "RHW",
 			"page": 242,
+			"referenceSources": [
+				"SoS"
+			],
 			"size": [
 				"T"
 			],
@@ -1776,6 +1782,9 @@
 			"type": "plant",
 			"source": "RHW",
 			"page": 243,
+			"referenceSources": [
+				"SoS"
+			],
 			"size": [
 				"H"
 			],
@@ -2120,7 +2129,7 @@
 				},
 				{
 					"ENG_name": "Legendary Resistance (3/Day, or 4/Day in Domain)",
-					"name": "传奇抗性（3次/天，或在领域内4次/天）",
+					"name": "传奇抗性（3/日，领域内4/日）",
 					"entries": [
 						"如果乌黯祸主豁免检定失败，它可以选择改为成功。"
 					]
@@ -3372,14 +3381,14 @@
 				},
 				{
 					"ENG_name": "Darklord Restoration",
-					"name": "黑暗领主恢复",
+					"name": "黑暗领主复生",
 					"entries": [
 						"如果哈肯死亡，他会在卡塔卡斯的某个地方于{@dice 1d10}周后复活，并恢复其全部的{@variantrule 生命值|XPHB}。"
 					]
 				},
 				{
 					"ENG_name": "Legendary Resistance (3/Day, or 4/Day in Domain)",
-					"name": "传奇抗性（3次/天，或在领域内4次/天）",
+					"name": "传奇抗性（3/日，领域内4/日）",
 					"entries": [
 						"如果哈肯豁免检定失败，他可以选择改为成功。"
 					]
@@ -3625,14 +3634,14 @@
 			"trait": [
 				{
 					"ENG_name": "Darklord Restoration",
-					"name": "黑暗领主恢复",
+					"name": "黑暗领主复生",
 					"entries": [
 						"如果哈兹里克死亡，他会在哈兹兰某处以所有{@variantrule 生命值|XPHB}在{@dice 1d10}周内复活。"
 					]
 				},
 				{
 					"ENG_name": "Legendary Resistance (3/Day, or 4/Day in Domain)",
-					"name": "传奇抗性（3次/天，或在领域内4次/天）",
+					"name": "传奇抗性（3/日，领域内4/日）",
 					"entries": [
 						"如果哈兹里克豁免检定失败，他可以选择改为成功。"
 					]
@@ -5025,7 +5034,7 @@
 		},
 		{
 			"ENG_name": "Lord Soth of Sithicus",
-			"name": "西斯提库斯的索思爵士",
+			"name": "席斯库斯的索思爵士",
 			"type": "undead",
 			"isNamedCreature": true,
 			"source": "RHW",
@@ -5088,7 +5097,7 @@
 					"name": "威严魔法（3/天）",
 					"type": "spellcasting",
 					"headerEntries": [
-						"索斯爵士施展{@spell 解除魔法|XPHB}、{@spell 定身类人|XPHB}或{@spell 放逐术|XPHB}（5环版本），使用魅力作为施法属性（法术豁免{@dc 19}）。"
+						"索思爵士施展{@spell 解除魔法|XPHB}、{@spell 定身类人|XPHB}或{@spell 放逐术|XPHB}（5环版本），使用魅力作为施法属性（法术豁免{@dc 19}）。"
 					],
 					"daily": {
 						"3": [
@@ -5109,28 +5118,28 @@
 					"ENG_name": "Darklord Restoration",
 					"name": "黑暗领主复苏",
 					"entries": [
-						"如果西瑟库斯的索斯爵士死亡，他会在西瑟库斯的某处，于{@dice 1d10}周内恢复所有{@variantrule 生命值|XPHB}并复活。"
+						"如果席斯库斯的索思爵士死亡，他会在席斯库斯的某处，于{@dice 1d10}周内恢复所有{@variantrule 生命值|XPHB}并复活。"
 					]
 				},
 				{
 					"ENG_name": "Legendary Resistance (3/Day, or 4/Day in Domain)",
-					"name": "传奇抗性（3次/天，或在领域内4次/天）",
+					"name": "传奇抗性（3/日，领域内4/日）",
 					"entries": [
-						"如果索斯领主豁免检定失败，他可以选择改为成功。"
+						"如果索思爵士豁免检定失败，他可以选择改为成功。"
 					]
 				},
 				{
 					"ENG_name": "Magic Resistance",
 					"name": "魔法抗性",
 					"entries": [
-						"西瑟库斯的索斯爵士在对抗法术和其他魔法效果的豁免检定上具有{@variantrule 优势|XPHB}。"
+						"席斯库斯的索思爵士在对抗法术和其他魔法效果的豁免检定上具有{@variantrule 优势|XPHB}。"
 					]
 				},
 				{
 					"ENG_name": "Marshal Undead",
 					"name": "不死统帅",
 					"entries": [
-						"由索斯爵士选择的、位于他自身60尺范围内的{@variantrule 光环 [效应区域]|XPHB|光环}内的不死生物（不包括他自己）在攻击检定和豁免检定上具有{@variantrule 优势|XPHB}。如果索斯爵士处于{@condition 失能|XPHB}状态，则无法使用此特性。"
+						"由索思爵士选择的、位于他自身60尺范围内的{@variantrule 光环 [效应区域]|XPHB|光环}内的不死生物（不包括他自己）在攻击检定和豁免检定上具有{@variantrule 优势|XPHB}。如果索思爵士处于{@condition 失能|XPHB}状态，则无法使用此特性。"
 					]
 				}
 			],
@@ -5139,7 +5148,7 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"索斯爵士进行三次遗忘者烙印攻击。"
+						"索思爵士进行三次遗忘者烙印攻击。"
 					]
 				},
 				{
@@ -5153,14 +5162,14 @@
 					"ENG_name": "Cataclysmic Fire {@recharge 5}",
 					"name": "灾变业火 {@recharge 5}",
 					"entries": [
-						"{@actSave dex} {@dc 19}，以索斯领主120尺内能看见的一点为中心，20尺半径的{@variantrule 球状 [效应区域]|XPHB|球状}内的每个生物。{@actSaveFail} 24 ({@damage 7d6}) 火焰伤害外加 24 ({@damage 7d6}) 暗蚀伤害。{@actSaveSuccess} 一半伤害。"
+						"{@actSave dex} {@dc 19}，以索思爵士120尺内能看见的一点为中心，20尺半径的{@variantrule 球状 [效应区域]|XPHB|球状}内的每个生物。{@actSaveFail} 24 ({@damage 7d6}) 火焰伤害外加 24 ({@damage 7d6}) 暗蚀伤害。{@actSaveSuccess} 一半伤害。"
 					]
 				},
 				{
 					"ENG_name": "Face of Death (1/Day)",
 					"name": "死亡之面（1/天）",
 					"entries": [
-						"{@actSave cha} {@dc 19}，西瑟库斯的索斯爵士周围60尺{@variantrule 光环 [效应区域]|XPHB|光环}范围内的每个生物。{@actSaveFail} 22 ({@damage 4d10}) 心灵伤害，并且该生物获得{@condition 恐慌|XPHB}状态。{@actSaveSuccess} 仅受到一半伤害。{@actSaveSuccessOrFail} 如果此伤害将目标的生命值降至0{@variantrule 生命值|XPHB}，则目标死亡。"
+						"{@actSave cha} {@dc 19}，席斯库斯的索思爵士周围60尺{@variantrule 光环 [效应区域]|XPHB|光环}范围内的每个生物。{@actSaveFail} 22 ({@damage 4d10}) 心灵伤害，并且该生物获得{@condition 恐慌|XPHB}状态。{@actSaveSuccess} 仅受到一半伤害。{@actSaveSuccessOrFail} 如果此伤害将目标的生命值降至0{@variantrule 生命值|XPHB}，则目标死亡。"
 					]
 				}
 			],
@@ -5169,20 +5178,20 @@
 					"ENG_name": "Punish",
 					"name": "惩罚",
 					"entries": [
-						"索斯勋爵移动至多一半的{@variantrule 速度|XPHB}，并发动一次遗忘者烙印攻击。"
+						"索思爵士移动至多一半的{@variantrule 速度|XPHB}，并发动一次遗忘者烙印攻击。"
 					]
 				},
 				{
 					"ENG_name": "Soth's Command",
 					"name": "索斯的命令",
 					"entries": [
-						"西瑟库斯的索斯勋爵施放{@spell 命令术|XPHB}（3环版本），使用与统御魔法相同的施法属性。索斯勋爵在他的下一回合开始前不能再次使用此动作。"
+						"席斯库斯的索思爵士施放{@spell 命令术|XPHB}（3环版本），使用与统御魔法相同的施法属性。索思爵士在他的下一回合开始前不能再次使用此动作。"
 					]
 				}
 			],
 			"legendaryGroup": {
 				"ENG_name": "Lord Soth of Sithicus",
-				"name": "西斯提库斯的索思爵士",
+				"name": "席斯库斯的索思爵士",
 				"source": "RHW"
 			},
 			"traitTags": [
@@ -6383,7 +6392,7 @@
 				},
 				{
 					"ENG_name": "Legendary Resistance (3/Day, or 4/Day in Domain)",
-					"name": "传奇抗性（3次/天，或在领域内4次/天）",
+					"name": "传奇抗性（3/日，领域内4/日）",
 					"entries": [
 						"如果洛琳达豁免检定失败，她可以选择改为成功。"
 					]
@@ -6892,6 +6901,9 @@
 			"type": "humanoid",
 			"source": "RHW",
 			"page": 261,
+			"referenceSources": [
+				"SoS"
+			],
 			"size": [
 				"S",
 				"M"
@@ -7178,7 +7190,7 @@
 				},
 				{
 					"ENG_name": "Legendary Resistance (3/Day, or 4/Day in Domain)",
-					"name": "传奇抗性（3次/天，或在领域内4次/天）",
+					"name": "传奇抗性（3/日，领域内4/日）",
 					"entries": [
 						"如果拉米亚豁免检定失败，她可以选择改为成功。"
 					]
@@ -7359,7 +7371,7 @@
 					"ENG_name": "Dreadful Swipe",
 					"name": "恐怖挥击",
 					"entries": [
-						"{@atkr m} {@hitYourSpellAttack}，触及5尺。{@h}{@dice 1d4}加上你的智力调整值的黯蚀伤害，并且目标在其下一回合开始前不能进行{@action 借机攻击|XPHB|Opportunity Attacks}。"
+						"{@atkr m} {@hitYourSpellAttack}，触及5尺。{@h}{@dice 1d4}加上你的智力调整值的黯蚀伤害，并且目标在其下一回合开始前不能进行{@action 借机攻击|XPHB|借机攻击}。"
 					]
 				}
 			],
@@ -8065,7 +8077,7 @@
 					"ENG_name": "Darklord Restoration",
 					"name": "黑暗领主复苏",
 					"entries": [
-						"如果赛德拉死亡，她会在德蒙特利厄的某处，于{@dice 1d10}周后以全部{@variantrule 生命值|XPHB}复活。"
+						"如果赛德拉死亡，她会在德蒙利尔的某处，于{@dice 1d10}周后以全部{@variantrule 生命值|XPHB}复活。"
 					]
 				},
 				{
@@ -8084,7 +8096,7 @@
 				},
 				{
 					"ENG_name": "Legendary Resistance (3/Day, or 4/Day in Domain)",
-					"name": "传奇抗性（3次/天，或在领域内4次/天）",
+					"name": "传奇抗性（3/日，领域内4/日）",
 					"entries": [
 						"如果赛德拉豁免检定失败，她可以选择改为成功。"
 					]
@@ -8621,7 +8633,7 @@
 				},
 				{
 					"ENG_name": "Legendary Resistance (3/Day, or 4/Day in Domain)",
-					"name": "传奇抗性（3次/天，或在领域内4次/天）",
+					"name": "传奇抗性（3/日，领域内4/日）",
 					"entries": [
 						"当施特拉德豁免失败时，他可以选择将其改为豁免成功。"
 					]
@@ -8796,6 +8808,9 @@
 			"type": "monstrosity",
 			"source": "RHW",
 			"page": 270,
+			"referenceSources": [
+				"SoS"
+			],
 			"size": [
 				"M"
 			],
@@ -9038,6 +9053,9 @@
 			},
 			"source": "RHW",
 			"page": 271,
+			"referenceSources": [
+				"SoS"
+			],
 			"size": [
 				"M"
 			],
@@ -9242,6 +9260,9 @@
 			],
 			"source": "RHW",
 			"page": 282,
+			"referenceSources": [
+				"SoS"
+			],
 			"size": [
 				"M"
 			],
@@ -9463,6 +9484,9 @@
 			"type": "undead",
 			"source": "RHW",
 			"page": 276,
+			"referenceSources": [
+				"SoS"
+			],
 			"size": [
 				"M"
 			],
@@ -9868,23 +9892,23 @@
 			"trait": [
 				{
 					"ENG_name": "Bolster Inventions",
-					"name": "鼓舞发明物",
+					"name": "强化造物",
 					"entries": [
 						"在维克特拉的每个回合结束时，每个位于以她为源点、半径5尺的{@variantrule 光环 [效应区域]|XPHB|光环}内的构装体盟友获得5点{@variantrule 临时生命值|XPHB}。如果维克特拉处于{@condition 失能|XPHB}状态，此特性不生效。"
 					]
 				},
 				{
 					"ENG_name": "Darklord Restoration",
-					"name": "黑暗领主恢复",
+					"name": "黑暗领主复生",
 					"entries": [
 						"如果维克特拉死亡，她会在拉莫迪亚的某处，于{@dice 1d10}周后以全部{@variantrule 生命值|XPHB}复活。"
 					]
 				},
 				{
 					"ENG_name": "Legendary Resistance (3/Day, or 4/Day in Domain)",
-					"name": "传奇抗性（3次/天，或在领域内4次/天）",
+					"name": "传奇抗性（3/日，领域内4/日）",
 					"entries": [
-						"如果维克特拉·莫登海姆豁免检定失败，她可以选择改为成功。"
+						"维克特拉豁免检定失败时，可以将其改为成功。"
 					]
 				}
 			],
@@ -9914,7 +9938,7 @@
 							"items": [
 								{
 									"ENG_name": "Corrosive Serum",
-									"name": "腐蚀性血清",
+									"name": "腐蚀血清",
 									"type": "item",
 									"entries": [
 										"目标在其每回合开始时受到10（{@damage 4d4}）强酸伤害，并且其{@variantrule 速度|XPHB}减少10尺。"
@@ -9930,10 +9954,10 @@
 								},
 								{
 									"ENG_name": "Mind-Altering Serum",
-									"name": "心智改变血清",
+									"name": "迷心血清",
 									"type": "item",
 									"entries": [
-										"目标在其每回合开始时受到10（{@damage 3d6}）心灵伤害，并且它在维持{@status 专注|XPHB}的豁免检定上具有{@variantrule 劣势|XPHB}。"
+										"目标在其每个回合开始时受到10（{@damage 3d6}）心灵伤害，且其维持{@status 专注|XPHB}的豁免检定具有{@variantrule 劣势|XPHB}。"
 									]
 								}
 							]
@@ -9953,16 +9977,16 @@
 			"legendary": [
 				{
 					"ENG_name": "Shocking Prod",
-					"name": "电击刺棒",
+					"name": "电击棒",
 					"entries": [
-						"维克特拉移动至多一半她的{@variantrule 速度|XPHB}并进行一次避雷针攻击。维克特拉直到她的下一回合开始前不能再次使用此动作。"
+						"维克特拉移动至多其{@variantrule 速度|XPHB}一半的距离，并进行一次避雷针攻击。直至其下个回合开始，维克特拉无法再执行此动作。"
 					]
 				},
 				{
 					"ENG_name": "Static Explosion",
-					"name": "静电爆炸",
+					"name": "静电爆发",
 					"entries": [
-						"{@actSave dex} {@dc 16}，以维克特拉90尺内能看见的一点为中心，半径10尺的{@variantrule 球状 [效应区域]|XPHB|球状}内的每个生物。{@actSaveFail} 5（{@damage 2d4}）闪电伤害。{@actSaveSuccess} 一半伤害。"
+						"{@actSave dex} {@dc 16}，以维克特拉90尺内可见的一点为中心、10尺半径{@variantrule 球状 [效应区域]|XPHB|球状}内的每名生物。{@actSaveFail} 5（{@damage 2d4}）闪电伤害。{@actSaveSuccess} 半伤。"
 					]
 				}
 			],
@@ -10086,14 +10110,14 @@
 			"trait": [
 				{
 					"ENG_name": "Darklord Restoration",
-					"name": "黑暗领主恢复",
+					"name": "黑暗领主复生",
 					"entries": [
-						"如果弗拉德斯卡死亡，她会在法尔科维亚的某处，于{@dice 1d10}周后以全部{@variantrule 生命值|XPHB}复活。"
+						"如果弗拉德斯卡死亡，她会在法尔科夫尼亚的某处，于{@dice 1d10}周后以全部{@variantrule 生命值|XPHB}复活。"
 					]
 				},
 				{
 					"ENG_name": "Legendary Resistance (3/Day, or 4/Day in Domain)",
-					"name": "传奇抗性（3次/天，或在领域内4次/天）",
+					"name": "传奇抗性（3/日，领域内4/日）",
 					"entries": [
 						"如果弗拉德斯卡豁免检定失败，她可以选择改为成功。"
 					]
@@ -10345,6 +10369,9 @@
 			},
 			"source": "RHW",
 			"page": 280,
+			"referenceSources": [
+				"SoS"
+			],
 			"size": [
 				"S",
 				"M"
@@ -10555,7 +10582,7 @@
 				},
 				{
 					"ENG_name": "Legendary Resistance (3/Day, or 4/Day in Domain)",
-					"name": "传奇抗性（3次/天，或在领域内4次/天）",
+					"name": "传奇抗性（3/日，领域内4/日）",
 					"entries": [
 						"如果威尔弗雷德豁免检定失败，他可以选择改为成功。"
 					]
@@ -10854,6 +10881,9 @@
 			],
 			"source": "RHW",
 			"page": 283,
+			"referenceSources": [
+				"SoS"
+			],
 			"size": [
 				"H"
 			],

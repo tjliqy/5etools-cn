@@ -2960,6 +2960,14 @@
 			"className": "野蛮人",
 			"classSource": "XPHB",
 			"level": 11,
+			"system": {
+				"uses.recovery": [
+					{
+						"period": "sr",
+						"type": "recoverAll"
+					}
+				]
+			},
 			"activities": [
 				{
 					"type": "save",

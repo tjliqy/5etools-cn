@@ -14658,7 +14658,7 @@
 							"depth": 1
 						},
 						{
-							"header": "阿扎林·雷克斯",
+							"header": "亚扎林·雷克斯",
 							"depth": 1
 						},
 						{
@@ -14843,13 +14843,13 @@
 							"header": "暗影之地冒险",
 							"depth": 1
 						},
-						"西斯提库斯",
+						"席斯库斯",
 						{
 							"header": "领域特性",
 							"depth": 1
 						},
 						{
-							"header": "西斯提库斯的地点",
+							"header": "席斯库斯的地点",
 							"depth": 1
 						},
 						{
@@ -14857,7 +14857,7 @@
 							"depth": 1
 						},
 						{
-							"header": "西斯提库斯冒险",
+							"header": "席斯库斯冒险",
 							"depth": 1
 						},
 						"坦帕斯特",
@@ -16501,6 +16501,279 @@
 				{
 					"ENG_name": "Credits",
 					"name": "创作人员"
+				}
+			],
+			"translator": "机翻"
+		},
+		{
+			"ENG_name": "Project_Lamordia",
+			"name": "拉莫迪亚计划",
+			"id": "PL",
+			"source": "PL",
+			"group": "supplement-alt",
+			"cover": {
+				"type": "internal",
+				"path": "covers/PL.webp"
+			},
+			"published": "2026-10-13",
+			"author": "威世智RPG团队",
+			"contents": [
+				{
+					"ENG_name": "ReadME",
+					"name": "ReadME",
+					"headers": [
+						"使用拉莫迪亚计划",
+						"使用本设定",
+						"术语"
+					]
+				},
+				{
+					"ENG_name": "Character Options",
+					"name": "角色选项",
+					"headers": [
+						"背景",
+						{
+							"header": "身败名裂的神经调校师",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "人造心智",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "变异通勤者",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "重构逃亡者",
+							"depth": 1,
+							"statblock": true
+						},
+						"种族",
+						{
+							"header": "重生者",
+							"source": "RHW",
+							"depth": 1,
+							"statblock": true
+						},
+						"feats",
+						{
+							"header": "异变内构",
+							"source": "RHW",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "灵魂回响",
+							"source": "RHW",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "汇灵低语",
+							"source": "RHW",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "共生存在",
+							"source": "RHW",
+							"depth": 1,
+							"statblock": true
+						},
+						"拉莫迪亚生还者",
+						{
+							"header": "拉莫迪亚布道者",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "拉莫迪亚渗透者",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "拉莫迪亚雇佣兵",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "拉莫迪亚技术员",
+							"depth": 1,
+							"statblock": true
+						}
+					]
+				},
+				{
+					"ENG_name": "Mordenheim Kinetics Primer",
+					"name": "莫登海姆动力入门",
+					"headers": [
+						"莫登海姆动力公司",
+						"博士",
+						"科技延寿",
+						"迷失雾中",
+						"设施之外"
+					]
+				},
+				{
+					"ENG_name": "Personnel Directory",
+					"name": "人员名录",
+					"headers": [
+						"维克特拉·莫登海姆",
+						"亚当",
+						"格尔塔·冯·奥布雷克",
+						"亨德里克·冯·奥布雷克",
+						"鲁道夫·冯·奥布雷克"
+					]
+				},
+				{
+					"ENG_name": "Adventures",
+					"name": "冒险",
+					"headers": [
+						"预备",
+						"串联冒险",
+						"圣坛",
+						{
+							"header": "S1：电梯厅",
+							"depth": 1
+						},
+						{
+							"header": "S2：大堂",
+							"depth": 1
+						},
+						{
+							"header": "S3：夹层办公室",
+							"depth": 1
+						},
+						{
+							"header": "S4：中庭",
+							"depth": 1
+						},
+						{
+							"header": "S5：亚当的圣所",
+							"depth": 1
+						},
+						"深地冻结",
+						{
+							"header": "D1：低温休眠舱储存区",
+							"depth": 1
+						},
+						{
+							"header": "D2：走廊",
+							"depth": 1
+						},
+						{
+							"header": "D3：手术示教室",
+							"depth": 1
+						},
+						{
+							"header": "D4：低温休眠舱研究室",
+							"depth": 1
+						},
+						{
+							"header": "D5：低温发生器机房",
+							"depth": 1
+						},
+						"神经调校",
+						{
+							"header": "N1：明亮走廊",
+							"depth": 1
+						},
+						{
+							"header": "N2：校准室",
+							"depth": 1
+						},
+						{
+							"header": "N3：本体感觉测试",
+							"depth": 1
+						},
+						{
+							"header": "N4：货梯",
+							"depth": 1
+						},
+						{
+							"header": "N5：神经扫描亭",
+							"depth": 1
+						},
+						{
+							"header": "N6：走廊",
+							"depth": 1
+						},
+						{
+							"header": "N7：神经印记数据库",
+							"depth": 1
+						},
+						"其他冒险"
+					]
+				},
+				{
+					"ENG_name": "Creature Database",
+					"name": "生物数据库",
+					"headers": [
+						"动力造物",
+						"怪物图鉴",
+						{
+							"header": "亚当",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "CEO 维克特拉·莫登海姆",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "被造者",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "空壳回声",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "回声",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "破碎回声",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "K-Nine",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "格尔塔·冯·奥布雷克",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "亨德里克·冯·奥布雷克",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "鲁道夫·冯·奥布雷克",
+							"depth": 1,
+							"statblock": true
+						}
+					]
+				},
+				{
+					"ENG_name": "Credits",
+					"name": "创作人员",
+					"headers": [
+						"Project_Lamordia",
+						"D&D 组织"
+					]
 				}
 			],
 			"translator": "机翻"

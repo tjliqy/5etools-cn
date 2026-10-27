@@ -11,7 +11,7 @@
 ### 背景与现状
 `sync_from_cn()`（app/cli/sync_from_cn.py L381-608）没有只读模式，分类逻辑内联在函数里：
 
-- 分类循环 L414-438：missing（`sql_id is None or tag_sync_required`）/ matching（`cn_str == manual`）/ auto_keep（`manual == en_str` 或 `_differs_only_by_quote_style`）/ auto_modify（`_differs_only_inside_tags`）/ 其余为 conflict；
+- 分类循环：missing（`sql_id is None or tag_sync_required`）/ matching（`cn_str == manual`）/ auto_keep（仅 `_differs_only_by_quote_style`）/ auto_modify（`_differs_only_inside_tags`）/ 其余为 conflict；文件值等于英文原文也进入普通 `conflict`，等待用户抉择；
 - 自动与人工决策交织在 L446-491，随后 L571 `apply_sync_batch` 写库。
 
 外部要预演只能复刻这套逻辑并 import 私有函数（`_differs_only_by_quote_style`、`_differs_only_inside_tags`），与实现存在漂移风险（本次预演即靠复刻，CLI 若改动预演就会失真）。

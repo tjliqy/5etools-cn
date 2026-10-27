@@ -1,5 +1,5 @@
 @use "vars/vars";
-@use "vars/vars-night";
+@use "vars/vars--night";
 
 @layer vetools {
 	.pg-terms__ {
@@ -131,13 +131,13 @@
 		}
 
 		&panel {
-			border-color: vars-night.$rgb-border-grey--night;
-			background: vars-night.$rgb-bg--night;
+			border-color: vars--night.$rgb-border-grey--night;
+			background: vars--night.$rgb-bg--night;
 		}
 
 		&term,
 		&result {
-			border-color: vars-night.$rgb-border-grey--night;
+			border-color: vars--night.$rgb-border-grey--night;
 		}
 
 		&badge {

@@ -5798,7 +5798,8 @@
 				"EFA",
 				"FRAiF",
 				"LFL",
-				"RHW"
+				"RHW",
+				"SoS"
 			],
 			"size": [
 				"M"
@@ -7797,7 +7798,8 @@
 			"source": "XMM",
 			"page": 25,
 			"referenceSources": [
-				"FRAiF"
+				"FRAiF",
+				"SoS"
 			],
 			"size": [
 				"M"
@@ -8501,7 +8503,8 @@
 				"ABH",
 				"EFA",
 				"FFotR",
-				"FRAiF"
+				"FRAiF",
+				"SoS"
 			],
 			"size": [
 				"S",
@@ -13305,7 +13308,7 @@
 					"ENG_name": "Bite",
 					"name": "啃咬",
 					"entries": [
-						"{@atkr m}：  {@hit 4}，触及 5 尺。{@h}： 4（ {@damage 1d4 + 2} ）钝击伤害。"
+						"{@atkr m} {@hit 4}，触及5尺。{@h}4（{@damage 1d4 + 2}）钝击伤害。"
 					]
 				}
 			],
@@ -15257,7 +15260,8 @@
 				"HotB",
 				"LFL",
 				"NF",
-				"RHW"
+				"RHW",
+				"SoS"
 			],
 			"size": [
 				"S",
@@ -16108,7 +16112,8 @@
 				"FRAiF",
 				"FRHoF",
 				"RHW",
-				"ScoEE"
+				"ScoEE",
+				"SoS"
 			],
 			"size": [
 				"S",
@@ -16921,7 +16926,8 @@
 				"EFA",
 				"FRAiF",
 				"RHW",
-				"RWG"
+				"RWG",
+				"SoS"
 			],
 			"size": [
 				"S",
@@ -19898,7 +19904,8 @@
 				"DrDe-TFV",
 				"EFA",
 				"FRAiF",
-				"RHW"
+				"RHW",
+				"SoS"
 			],
 			"size": [
 				"S",
@@ -24250,7 +24257,8 @@
 				"DrDe",
 				"DrDe-TWoO",
 				"FRAiF",
-				"RHW"
+				"RHW",
+				"SoS"
 			],
 			"size": [
 				"M"
@@ -24711,7 +24719,8 @@
 				"DrDe",
 				"DrDe-TWoO",
 				"FRAiF",
-				"RHW"
+				"RHW",
+				"SoS"
 			],
 			"size": [
 				"M"
@@ -25911,7 +25920,7 @@
 			"cha": 3,
 			"skill": {
 				"perception": "+2",
-				"stealth": "+4"
+				"stealth": "+3"
 			},
 			"senses": [
 				"黑暗视觉 30 尺"
@@ -31867,7 +31876,8 @@
 				"FRHoF",
 				"HotB",
 				"NF",
-				"RHW"
+				"RHW",
+				"SoS"
 			],
 			"size": [
 				"S",
@@ -32505,7 +32515,8 @@
 			"referenceSources": [
 				"EFA",
 				"FRAiF",
-				"RHW"
+				"RHW",
+				"SoS"
 			],
 			"size": [
 				"M"
@@ -33514,7 +33525,8 @@
 			"basicRules2024": true,
 			"referenceSources": [
 				"EFA",
-				"FRAiF"
+				"FRAiF",
+				"SoS"
 			],
 			"size": [
 				"M"
@@ -35769,7 +35781,7 @@
 					"ENG_name": "Slam (Human or Hybrid Form Only)",
 					"name": "猛击（仅人类或混合形态）",
 					"entries": [
-						"{@atkr m}：  {@hit 4}，触及 5 尺。{@h}： 4（ {@damage 1d4 + 2} ）钝击伤害。"
+						"{@atkr m} {@hit 4}，触及5尺。{@h}4（{@damage 1d4 + 2}）钝击伤害。"
 					]
 				},
 				{
@@ -38622,7 +38634,8 @@
 				"EFA",
 				"FRAiF",
 				"NF",
-				"RWG"
+				"RWG",
+				"SoS"
 			],
 			"size": [
 				"S",
@@ -41886,7 +41899,7 @@
 					"ENG_name": "Hooves",
 					"name": "蹄击",
 					"entries": [
-						"{@atkr m}：  {@hit 4}，触及 5 尺。{@h}： 4（ {@damage 1d4 + 2} ）钝击伤害。"
+						"{@atkr m} {@hit 4}，触及5尺。{@h}4（{@damage 1d4 + 2}）钝击伤害。"
 					]
 				}
 			],
@@ -43335,7 +43348,8 @@
 				"HotB",
 				"LFL",
 				"NF",
-				"RHW"
+				"RHW",
+				"SoS"
 			],
 			"size": [
 				"S",
@@ -44181,7 +44195,8 @@
 				"DrDe-TWoO",
 				"HBTD",
 				"HotB",
-				"RHW"
+				"RHW",
+				"SoS"
 			],
 			"size": [
 				"L"
@@ -45429,7 +45444,8 @@
 			"referenceSources": [
 				"EFA",
 				"FRAiF",
-				"FRHoF"
+				"FRHoF",
+				"SoS"
 			],
 			"size": [
 				"M"
@@ -45541,7 +45557,8 @@
 			"basicRules2024": true,
 			"referenceSources": [
 				"FRAiF",
-				"FRHoF"
+				"FRHoF",
+				"SoS"
 			],
 			"size": [
 				"L"
@@ -47331,7 +47348,7 @@
 					"ENG_name": "Hooves",
 					"name": "蹄击",
 					"entries": [
-						"{@atkr m}：  {@hit 4}，触及 5 尺。{@h}： 4（ {@damage 1d4 + 2} ）钝击伤害。"
+						"{@atkr m} {@hit 4}，触及5尺。{@h}4（{@damage 1d4 + 2}）钝击伤害。"
 					]
 				}
 			],
@@ -52051,7 +52068,8 @@
 				"FRAiF",
 				"FRHoF",
 				"HBTD",
-				"RHW"
+				"RHW",
+				"SoS"
 			],
 			"size": [
 				"M"
@@ -53735,7 +53753,8 @@
 				"DrDe-TWoO",
 				"FRAiF",
 				"HBTD",
-				"RHW"
+				"RHW",
+				"SoS"
 			],
 			"size": [
 				"M"
@@ -55116,7 +55135,8 @@
 				"FRHoF",
 				"LFL",
 				"NF",
-				"RHW"
+				"RHW",
+				"SoS"
 			],
 			"size": [
 				"S",
@@ -57169,7 +57189,8 @@
 			"source": "XMM",
 			"page": 299,
 			"referenceSources": [
-				"FRAiF"
+				"FRAiF",
+				"SoS"
 			],
 			"size": [
 				"M"
@@ -57914,7 +57935,8 @@
 				"DrDe-BtS",
 				"EFA",
 				"FRAiF",
-				"RWG"
+				"RWG",
+				"SoS"
 			],
 			"size": [
 				"S",
@@ -58876,7 +58898,8 @@
 			"basicRules2024": true,
 			"referenceSources": [
 				"FRAiF",
-				"RHW"
+				"RHW",
+				"SoS"
 			],
 			"size": [
 				"H"
@@ -59822,7 +59845,8 @@
 			"basicRules2024": true,
 			"referenceSources": [
 				"EFA",
-				"RHW"
+				"RHW",
+				"SoS"
 			],
 			"size": [
 				"S",
@@ -62938,7 +62962,8 @@
 			"basicRules2024": true,
 			"referenceSources": [
 				"FRAiF",
-				"RHW"
+				"RHW",
+				"SoS"
 			],
 			"size": [
 				"M"
@@ -63475,7 +63500,8 @@
 			"referenceSources": [
 				"FRAiF",
 				"FRHoF",
-				"RHW"
+				"RHW",
+				"SoS"
 			],
 			"size": [
 				"M"

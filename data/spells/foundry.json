@@ -4919,7 +4919,8 @@
 					"ENG_name": "Explosion",
 					"name": "爆炸",
 					"type": "save",
-					"description": "弥漫区域内除原始目标外的每个生物进行一次敏捷豁免，豁免失败则受到[[/damage average]]伤害，豁免成功则伤害减半。如果初始伤害将原始目标的生命值降至0，则这些豁免检定具有劣势。",
+					"foundryId": "detonate",
+					"description": "弥漫区域内除原始目标外的每个生物进行一次敏捷豁免，豁免失败则受到[[/damage average]]伤害，豁免成功则只受到一半伤害。如果初始伤害将原始目标的生命值降至0，则这些豁免检定具有劣势。",
 					"activation": {
 						"type": "special"
 					},

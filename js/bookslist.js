@@ -40,6 +40,7 @@ export class AdventuresBooksList {
 		b = dataList[b.getId()];
 
 		if (o.sortBy === "name") return this._sortAdventuresBooks_byName(a, b, o);
+		if (o.sortBy === "ENG_name") return SortUtil.ascSort(a.ENG_name || "", b.ENG_name || "");
 		if (o.sortBy === "storyline") return this._sortAdventuresBooks_orFallback(SortUtil.ascSort, "storyline", a, b, o);
 		if (o.sortBy === "level") return this._sortAdventuresBooks_orFallback(SortUtil.ascSort, "_startLevel", a, b, o);
 		if (o.sortBy === "group") return SortUtil.ascSortSourceGroup(a, b) || this._sortAdventuresBooks_byPublished(a, b, o);

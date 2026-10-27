@@ -465,6 +465,10 @@
 					}
 				]
 			},
+			"itemMasteries": true,
+			"itemMasteriesProgression": {
+				"1": 2
+			},
 			"startingEquipment": {
 				"additionalFromBackground": true,
 				"defaultData": [
@@ -615,11 +619,11 @@
 				{
 					"title": "每环法术位",
 					"colLabels": [
-						"{@filter 1st|spells|level=1|class=圣武士}",
-						"{@filter 2nd|spells|level=2|class=圣武士}",
-						"{@filter 3rd|spells|level=3|class=圣武士}",
-						"{@filter 4th|spells|level=4|class=圣武士}",
-						"{@filter 5th|spells|level=5|class=圣武士}"
+						"{@filter 1|spells|level=1|class=圣武士}",
+						"{@filter 2|spells|level=2|class=圣武士}",
+						"{@filter 3|spells|level=3|class=圣武士}",
+						"{@filter 4|spells|level=4|class=圣武士}",
+						"{@filter 5|spells|level=5|class=圣武士}"
 					],
 					"rowsSpellProgression": [
 						[
@@ -2663,7 +2667,7 @@
 							"{@spell 疯狂冠冕}, {@spell 黑暗术}"
 						],
 						[
-							"9th",
+							"9环",
 							"{@spell 活化死尸}, {@spell 降咒}"
 						],
 						[
@@ -2828,7 +2832,7 @@
 							"{@spell 月华之光}, {@spell 迷踪步}"
 						],
 						[
-							"9th",
+							"9环",
 							"{@spell 植物滋长}, {@spell 防护能量}"
 						],
 						[
@@ -3074,7 +3078,7 @@
 							"{@spell 次等复原术}, {@spell 诚实之域}"
 						],
 						[
-							"9th",
+							"9环",
 							"{@spell 希望信标}, {@spell 解除魔法}"
 						],
 						[
@@ -3368,7 +3372,7 @@
 							"{@spell 定身类人}, {@spell 迷踪步}"
 						],
 						[
-							"9th",
+							"9环",
 							"{@spell 加速术}, {@spell 防护能量}"
 						],
 						[
@@ -3624,7 +3628,7 @@
 							"{@spell 守护之链}, {@spell 诚实之域}"
 						],
 						[
-							"9th",
+							"9环",
 							"{@spell 活力灵光}, {@spell 灵体卫士}"
 						],
 						[
@@ -3882,7 +3886,7 @@
 							"{@spell 强化属性}, {@spell 魔化武器}"
 						],
 						[
-							"9th",
+							"9环",
 							"{@spell 加速术}, {@spell 防护能量}"
 						],
 						[
@@ -4163,7 +4167,7 @@
 							"{@spell 月华之光}, {@spell 识破隐形}"
 						],
 						[
-							"9th",
+							"9环",
 							"{@spell 法术反制}, {@spell 回避侦测}"
 						],
 						[
@@ -4436,7 +4440,7 @@
 							"{@spell 定身类人}, {@spell 灵体武器}"
 						],
 						[
-							"9th",
+							"9环",
 							"{@spell 降咒}, {@spell 恐惧术}"
 						],
 						[
@@ -4654,7 +4658,7 @@
 							"{@spell 安定心神}, {@spell 定身类人}"
 						],
 						[
-							"9th",
+							"9环",
 							"{@spell 法术反制}, {@spell 催眠图纹}"
 						],
 						[

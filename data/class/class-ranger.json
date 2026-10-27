@@ -567,6 +567,10 @@
 					}
 				]
 			},
+			"itemMasteries": true,
+			"itemMasteriesProgression": {
+				"1": 2
+			},
 			"startingEquipment": {
 				"additionalFromBackground": true,
 				"defaultData": [
@@ -785,11 +789,11 @@
 				{
 					"title": "每环法术位",
 					"colLabels": [
-						"{@filter 1st|spells|level=1|class=游侠}",
-						"{@filter 2nd|spells|level=2|class=游侠}",
-						"{@filter 3rd|spells|level=3|class=游侠}",
-						"{@filter 4th|spells|level=4|class=游侠}",
-						"{@filter 5th|spells|level=5|class=游侠}"
+						"{@filter 1|spells|level=1|class=游侠}",
+						"{@filter 2|spells|level=2|class=游侠}",
+						"{@filter 3|spells|level=3|class=游侠}",
+						"{@filter 4|spells|level=4|class=游侠}",
+						"{@filter 5|spells|level=5|class=游侠}"
 					],
 					"rowsSpellProgression": [
 						[
@@ -1887,7 +1891,7 @@
 							"{@spell 野兽感官}"
 						],
 						[
-							"9th",
+							"9环",
 							"{@spell 植物交谈}"
 						],
 						[
@@ -3392,7 +3396,7 @@
 							"{@spell 迷踪步}"
 						],
 						[
-							"9th",
+							"9环",
 							"{@spell 解除魔法}"
 						],
 						[
@@ -3636,7 +3640,7 @@
 							"{@spell 蛛网术}"
 						],
 						[
-							"9th",
+							"9环",
 							"{@spell 气化形体}"
 						],
 						[
@@ -3785,7 +3789,7 @@
 							"{@spell 魔绳术}"
 						],
 						[
-							"9th",
+							"9环",
 							"{@spell 恐惧术}"
 						],
 						[
@@ -3938,7 +3942,7 @@
 							"{@spell 迷踪步}"
 						],
 						[
-							"9th",
+							"9环",
 							"{@spell 加速术}"
 						],
 						[
@@ -4092,7 +4096,7 @@
 							"{@spell 诚实之域}"
 						],
 						[
-							"9th",
+							"9环",
 							"{@spell 防护法阵}"
 						],
 						[
@@ -4730,23 +4734,23 @@
 					],
 					"rows": [
 						[
-							"3环",
+							"3",
 							"{@spell 魅惑类人|XPHB}"
 						],
 						[
-							"5环",
+							"5",
 							"{@spell 迷踪步|XPHB}"
 						],
 						[
-							"9th",
+							"9",
 							"{@spell 妖精召唤术|XPHB}"
 						],
 						[
-							"13th",
+							"13",
 							"{@spell 任意门|XPHB}"
 						],
 						[
-							"17th",
+							"17",
 							"{@spell 假象术|XPHB}"
 						]
 					]

@@ -377,6 +377,12 @@
 					}
 				]
 			},
+			"itemMasteries": true,
+			"itemMasteriesProgression": {
+				"1": 2,
+				"4": 3,
+				"10": 4
+			},
 			"startingEquipment": {
 				"additionalFromBackground": true,
 				"defaultData": [
@@ -3189,6 +3195,7 @@
 				"如果你灵光的效应需要生物进行豁免，其豁免DC等同于 8+你的熟练加值+你的体质调整值。",
 				{
 					"type": "options",
+					"count": 1,
 					"entries": [
 						{
 							"type": "refSubclassFeature",
@@ -3263,6 +3270,7 @@
 				"在6级时，不论你是否散发着灵光，风暴都能为你带来增益。这一增益效果基于你在 风暴灵光Storm Aura 特性中所选择的环境类型。",
 				{
 					"type": "options",
+					"count": 1,
 					"entries": [
 						{
 							"type": "refSubclassFeature",
@@ -3352,6 +3360,7 @@
 				"在14级时，你能引导的风暴之力变得更加强大，足以打击你的敌人。你获得基于你在 风暴灵光Storm Aura 特性中所选择的环境类型的增益。",
 				{
 					"type": "options",
+					"count": 1,
 					"entries": [
 						{
 							"type": "refSubclassFeature",

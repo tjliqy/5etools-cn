@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 import re
 import sys
 from pathlib import Path
@@ -175,6 +176,17 @@ CREDIT_ARTWORK = re.compile(
 # CREDIT_ARTWORK above; names may carry non-ASCII letters ("Almir Gusić").
 CREDIT_HANDLE_LINE = re.compile(r"^[^\W\d_][\w .'&()!\-,]* \{@b @\w+\}$")
 HANDLE_TOKEN = re.compile(r"^@\w+$")
+# Bare real-world person-name credit lines ("Martin Grip", "Martin Grip,
+# Mattias Johnsson Haake", "Brandon Bowling, John Marron, John-Michael
+# Warkentin" — bookData credits item entries) are identity strings kept
+# verbatim, the bare-name companion of CREDIT_HANDLE_LINE above; every
+# comma-separated item is all-capitalized tokens (hyphenated compounds
+# allowed), and the "/items[" key-path gate keeps ordinary Titlecase prose
+# outside credits lists in scope for translation.
+CREDIT_NAME_LINE = re.compile(
+    r"^[A-Z][\w'.-]*(?:[ -][A-Z][\w'.-]*)*"
+    r"(?:, ?[A-Z][\w'.-]*(?:[ -][A-Z][\w'.-]*)*)*$"
+)
 # Constructed-language puzzle/vocabulary tokens ("thrimsan", "kauravi") are
 # all-lowercase invented words; translating them would break letter/order
 # based puzzles, and real English terms in lists are capitalized.
@@ -217,6 +229,87 @@ SOURCE_CODE_ROUTE = re.compile(r"[A-Za-z][A-Za-z0-9_-]{0,15}")
 # e.g. {@loader 战斗轮椅|collection/Sara Thompson; The Combat Wheelchair.json})
 # cannot be mistaken for untranslated prose.
 TAG_DISPLAY_ONLY = re.compile(r"\{@[^{}|]+\s([^|{}]*)(?:\|[^{}]*)*\}")
+
+# Bare spell-array routing keys: classSpells/subclassSpells string entries and
+# additionalSpells known/innate/prepared list leaves carry pipe-free spell names
+# that the renderer resolves against the complete spell corpus by exact name.
+# When the author referenced a spell that no repository defines (RCG
+# "mantle of heroism"/"anti-life aura" — absent from data-bak, the English
+# homebrew root, and every localized file), the key is a dead link mirroring a
+# source defect: translating it would point the renderer at a Chinese-named
+# spell that does not exist, so the zh target keeps it byte-identical to the
+# source, the same deliberate-retention rule as external_entity_displays below.
+SPELL_ARRAY_TAIL = re.compile(r"/(?:sub)?classSpells(?:\[\d+\])?(?:/\d+(?:\[\d+\])?)*$")
+ADDITIONAL_SPELLS_HEAD = re.compile(
+    r"/additionalSpells\[\d+\]/(?:known|innate|prepared)(?P<rest>(?:/[\d\[\]]+)+)?$"
+)
+
+_spell_absence_cache: dict[str, bool] = {}
+
+
+def is_bare_spell_routing_key(key_path: str | None, en_str: str | None) -> bool:
+    """True for pipe-free spell-name leaves of spell routing arrays."""
+    if not key_path or not isinstance(en_str, str) or not en_str.strip():
+        return False
+    if "|" in en_str or "{" in en_str or "}" in en_str:
+        return False
+    if SPELL_ARRAY_TAIL.search(key_path):
+        return True
+    head = ADDITIONAL_SPELLS_HEAD.search(key_path)
+    return bool(head and head.group("rest") is not None)
+
+
+def spell_absent_from_all_corpora(key: str) -> bool:
+    """True when no corpus defines a spell under this name.
+
+    Probes quoted definition fields ("name" for English repositories,
+    "ENG_name" for localized ones) so mere references ({@spell ...} tags,
+    classSpells entries in other files) never count as definitions. A hit on
+    any entity kind named identically keeps the answer conservative (the
+    caller then does not exempt the job, and it stays visible as a residual).
+    Scans lazily per distinct key and only over text directories (~0.5 GB
+    total across both homebrew roots), skipping binary/asset directories.
+    """
+    if key in _spell_absence_cache:
+        return _spell_absence_cache[key]
+    definition = re.compile(
+        r'"(?:name|ENG_name)"\s*:\s*"' + re.escape(key.strip()) + r'"',
+        re.IGNORECASE,
+    )
+    roots: list[Path] = []
+    for env_key, default in (
+        ("HOMEBREW_EN_ROOT", "/data/homebrew-en"),
+        ("HOMEBREW_ZH_SPELL_CORPUS_ROOT", "/data/homebrew"),
+    ):
+        base = Path(os.environ.get(env_key) or default)
+        if base.is_dir():
+            roots.extend(
+                child
+                for child in sorted(base.iterdir())
+                if child.is_dir()
+                and child.name
+                not in {"_img", "node_modules", "_generated", "_doc", "_font", ".git"}
+            )
+    for extra in (
+        Path("/data/5etools-mirror-2.github.io/data-bak/spells"),
+        Path("/data/5etools-mirror-2.github.io/data/spells"),
+    ):
+        if extra.is_dir():
+            roots.append(extra)
+    absent = True
+    for root in roots:
+        for path in root.rglob("*.json"):
+            try:
+                text = path.read_text(encoding="utf-8", errors="ignore")
+            except OSError:
+                continue
+            if definition.search(text):
+                absent = False
+                break
+        if not absent:
+            break
+    _spell_absence_cache[key] = absent
+    return absent
 
 
 def is_machine_tag_field(job) -> bool:
@@ -276,6 +369,52 @@ def is_machine_tag_field(job) -> bool:
     if field >= 1 and tag in ROUTE_TAG_FIELDS:
         return True
     return bool(MACHINE_TOKEN.fullmatch(job.en_str or ""))
+
+
+# Variable-substitution tokens injected by the site's dynamic-table rendering
+# (Vmod/Vdam/VDC/VDist scale with hunt level), compact rarity/attunement codes
+# defined by an in-file translated legend (U/V/L/R, Opt/Req+/Reqs/U-R*), and
+# pure dice/currency composites ("{@dice 4d6} x 50 gp", "2 ({@b {@dice 1d4}})",
+# "4,900 gp + 400 pp") — the surrounding tables are translated; these cells are
+# machine-substituted or intentionally keep Latin units/codes.
+_TABLE_VALUE_TOKEN = re.compile(
+    r"^(?:V[A-Za-z]{1,6}(?:[+\-]\d+)?|V\dP\d|APL|Att|E\+V|U|V|L|R|C|Req|Reqs|Req\+|Req, C|Opt|Opt\+|U-R\*|—, C|XP\*|XP\{@sup \*\})$"
+)
+_RETAINED_SPECIES_NAMES = {
+    # Pseudo-Latin binomials italicised in the source prose ({@i Veritae
+    # mucoformus}); scientific-style species names stay verbatim.
+    "Veritae mucoformus",
+    "Amanita rotgut",
+    "Noradreno mucorales",
+    "Psilocybin kwikitrippiae",
+}
+# Personal/shop names deliberately kept in Latin in the book's own Chinese
+# prose (L'Arsène appears verbatim inside translated sentences).
+_RETAINED_LATIN_NAMES = {"L'Arsène"}
+
+
+def is_retained_species_name(en_str) -> bool:
+    s = (en_str or "").strip()
+    return s in _RETAINED_SPECIES_NAMES or s in _RETAINED_LATIN_NAMES
+
+
+def is_table_value_cell(en_str) -> bool:
+    s = (en_str or "").strip()
+    if not s:
+        return False
+    if _TABLE_VALUE_TOKEN.fullmatch(s):
+        return True
+    stripped = re.sub(r"\{@(?:dice|damage|b|hit)\s[^{}]*\}", " ", s)
+    stripped = re.sub(r"\{[^{}]*\}", " ", stripped)
+    units = r"(?:gp|sp|cp|ep|pp|lbs?\.?)"
+    return bool(
+        re.fullmatch(
+            rf"[\d\s()+—–\-,./x%*×dDhXxPp]*(?:\d[\d,]*\s*{units}(?:\s*[+/,]\s*[\d\s,]+{units})*)?[\d\s()+—–\-,./x%*×dDhXxPp]*",
+            stripped,
+            re.IGNORECASE,
+        )
+        and re.search(r"\d", stripped)
+    )
 
 
 def is_brand_domain_link(job, target_value) -> bool:
@@ -587,6 +726,8 @@ def main() -> int:
                 continue
             if CREDIT_HANDLE_LINE.fullmatch(job.en_str):
                 continue
+            if CREDIT_NAME_LINE.fullmatch(job.en_str) and "items[" in (job.key_path or ""):
+                continue
             if HANDLE_TOKEN.fullmatch(job.en_str):
                 continue
             if CONLANG_TOKEN.fullmatch(job.en_str):
@@ -675,6 +816,22 @@ def main() -> int:
                 and job.en_str in projected_value
             )
             if untranslated and job.need_translate and not MACHINE_LEAF.search(job.key_path):
+                if is_table_value_cell(job.en_str) or is_retained_species_name(job.en_str):
+                    # Homebrew dynamic-table value cells (variable-substitution
+                    # tokens, legend-defined compact codes, dice/currency
+                    # composites) and retained pseudo-Latin species names are
+                    # deliberate keeps, not untranslated display prose.
+                    continue
+                if (
+                    item["known_translation"] is None
+                    and is_bare_spell_routing_key(job.key_path, job.en_str)
+                    and spell_absent_from_all_corpora(job.en_str)
+                ):
+                    # Author-referenced dead spell link (see
+                    # spell_absent_from_all_corpora): no corpus defines the
+                    # spell, so the English routing key is a deliberate
+                    # source-defect mirror, not untranslated display prose.
+                    continue
                 residuals.append({**item, "target_paths": [target_path]})
 
     report = {

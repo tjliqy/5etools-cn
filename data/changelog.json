@@ -3155,9 +3155,9 @@
 		"txt": "- Added ALT-click to list page \"Export as Image\" buttons to force exporting in \"Day Mode\" theme\n- Split entity \"Also found in...\" information into \"Also found int...\" and \"Referenced in...\" to differentiate between an entity being defined (i.e., the entire statblock is present) versus referenced (i.e., a bold creature name in the text). This allows the \"Include References\" filter option to remain useful, while providing better information about where an entity was published.\n- Added \"Referenced in...\" information for items and spells\n- Reworked DM Screen \"Paste image URL\" embed to improve panning behaviour, and allow holding middle-mouse to zoom _[and to remove jQuery!]_\n- Fixed DM Screen Initiative Tracker layout shift when toggling player visibility of a row\n- (Brew) Added title/credit/alt-text inputs to Homebrew Builder fluff images\n- (Brew) Added support for `displayName` in monster gear\n- (Foundry) Added user-agent-based notification when browsing to a page using the Foundry standalone app, warning against using the app, and providing a \"Back\" button to return to Foundry\n- (Fixed typos/added tags)"
 	},
 	{
-		"ver": "2.24.2.1",
-		"date": "2026-02-12",
-		"txt": "- 《风骸岛之龙》模组精翻（感谢 果园ID：武御提供的译本）\n- 调整网站整体视觉"
+		"ver": "2.24.3",
+		"date": "2026-02-15",
+		"txt": "- Added lazy-loading to list page \"Images\" tabs\n- Tweaked sort order of Omnisearch results, such that searching an exact adventure/book source abbreviation shows that adventure/book higher in the rankings\n- Improved initial load performance of Omnisearch _[by about 20% on my machine]_\n- Fixed non-partnered content appearing in default Omnisearch index\n- Fixed crash when up-arrow-ing in Dice Roller input\n- Fixed filter \"Include References\" sources failing to populate\n- Fixed DM Screen Initiative Tracker crash when changing round on an empty tracker\n- Fixed Dynamic Map Viewer new-window popout zoom level failing to match internal zoom level, resulting in offset in region click areas \n- (Brew) Moved artisan's tools to `\"baseitem\"`, such that they may benefit from `\"magicvariant\"`s\n- (Fixed typos/added tags)"
 	},
 	{
 		"ver": "2.25.0",
@@ -3169,11 +3169,6 @@
 		"ver": "2.25.1",
 		"date": "2026-03-03",
 		"txt": "- Added \"Keep Current Width/Height\" option to DM Screen reset confirmation dialog\n- Fixed crash when adding creatures to the DM Screen Initiative Tracker\n- Fixed Bestiary Encounter Builder crash when hovering statblock/token hoverables\n- Fixed Items page crash when hovering attunement item requirement\n- (Added new \"5.5e\" branding to various labels)\n- (Fixed typos/added tags)"
-	},
-	{
-		"ver": "2.25.2",
-		"date": "2026-03-08",
-		"txt": "- Added cascading generation of spell scroll spells to nested Loot Generator results (i.e., when rolling a result with multiple possible sub-items, which then rolls a spell scroll item, which *then* rolls a spell scroll)\n- Fixed rendering of spell-scaling creatures in hover windows\n- Fixed filter crash when changes were made prior to opening the filter modal (i.e., when clicking \"active filter item\" display pills)\n- (Brew) Fixed non-selected clobbering when selecting a subset of homebrew in the Homebrew Manager to \"Mass...\" -> \"Update\"\n- (Brew) Parallelized test-homebrew-tags runner\n- (Fixed typos/added tags)"
 	},
 	{
 		"ver": "2.25.2",
@@ -3309,6 +3304,7 @@
 		"ver": "2.36.0",
 		"date": "2026-09-21",
 		"title": "Red Paint",
+		"titleAlt": "5.5th Gear",
 		"txt": "- Added tokens for _Arcana Unleashed_ and _Arcana Unleashed: Deadfall_ content\n- Improved performance of initial list-page renders (most notably on the Items page)\n- Improved performance of list-page searches\n- (Brew) Added handling for `_meta.source`-less \"blocklist\" files (i.e., a bare blocklist export will be treated as a valid homebrew file, despite not being one)\n- (Brew) Fixed un-named `_copy` entities showing `\"(Unknown)\"` as name in \"View Contents\" list\n- (Brew) Improved Creature Text Converter tagging of multiple inflicted conditions\n- (Fixed typos/added tags)"
 	},
 	{
@@ -3321,5 +3317,17 @@
 		"date": "2026-10-08",
 		"title": "Delicious Leftovers",
 		"txt": "- Added _Red Wizards' Gambit_ content _[for now; this may be moved out and marked as \"partnered\" depending on volume of seasonal adventure releases]_\n- Added _Heroes' Feast: Legends of the Table_ content (thanks @ Lyra)\n- Added page numbers to _Arcana Unleashed_/_Arcana Unleashed: Deadfall_ content (thanks @ Lyra)\n- Added latest _Player's Handbook ('24)_ errata\n- Added \"Enable Light Theme on Copy/Save\" button to \"Export as Image\" list page modal, allowing the functionality to be used on mobile\n- Fixed Bestiary page \"Equipment\" filter showing junk source text\n- Fixed DM Screen Dynamic Map Viewer crashing with infinite-recursion error\n- Fixed \"Table View\" crash when opened with no entities pinned\n- Fixed various minor print styling issues\n- (Brew) Added `entries` support to JSON prettifier\n- (Brew) Added \"Initiative\" section to Creature Homebrew Builder\n- (Brew) Added support for more `@*Fluff` tags\n- (Brew) Reworked Renderer Demo page to support multiple samples; improve error handling\n- (Brew) Fixed Creature Homebrew Builder generating 5e-style attacks when in 5.5e mode\n- (Fixed typos/added tags)"
+	},
+	{
+		"ver": "2.38.0",
+		"date": "2026-10-14",
+		"title": "Laboratory Maniac",
+		"txt": "- Added _Project_Lamordia_ content\n- Added Markdown export support for embedded statblocks to Adventure/Book pages\n- (Brew) Added schema validation to Renderer Demo input (thanks @ Lyra for the prototype)\n- (Brew) Improved Species Text Converter `\"resist\"` handling\n- (Brew) Fixed Text Converter and Renderer Demo \"white flash\" on initial load\n- (Brew) Fixed JSON prettifier attempting to run on blocklisted directories\n- (Fixed typos/added tags)"
+	},
+	{
+		"ver": "2.39.0",
+		"date": "2026-10-24",
+		"title": "Message in a Bottle",
+		"txt": "- Added _Shadows of Sithicus_ content\n- Added Dynamic Map Viewer support; tokens to _Project_Lamordia_\n- Added flyout hover window to Omnisearch results when navigating by keyboard, on sufficiently wide screens\n- Added \"Targets Willing Creatures\" and \"Targets Allies\" filters to Spells page\n- Fixed Optional Features page \"Prerequisite\" failing to apply spells filter, and improved rendering of spell choice filter items\n- (Brew) Added keyboard shortcut for Renderer Demo \"Format\" button\n- (Brew) Added \"JSON (All)\" button to Homebrew Builder, which downloads a JSON containing all entity types for the currently-active source (rather than the old \"JSON [(Mode)]\" button, which downloads for currently-selected source _and active mode_ only)\n- (Brew) Fixed crash when attempting to render legendary group embeds\n- (Fixed typos/added tags)"
 	}
 ]

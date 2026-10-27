@@ -805,15 +805,15 @@
 				{
 					"title": "每环法术位",
 					"colLabels": [
-						"{@filter 1st|spells|level=1|class=德鲁伊}",
-						"{@filter 2nd|spells|level=2|class=德鲁伊}",
-						"{@filter 3rd|spells|level=3|class=德鲁伊}",
-						"{@filter 4th|spells|level=4|class=德鲁伊}",
-						"{@filter 5th|spells|level=5|class=德鲁伊}",
-						"{@filter 6th|spells|level=6|class=德鲁伊}",
-						"{@filter 7th|spells|level=7|class=德鲁伊}",
-						"{@filter 8th|spells|level=8|class=德鲁伊}",
-						"{@filter 9th|spells|level=9|class=德鲁伊}"
+						"{@filter 1|spells|level=1|class=德鲁伊}",
+						"{@filter 2|spells|level=2|class=德鲁伊}",
+						"{@filter 3|spells|level=3|class=德鲁伊}",
+						"{@filter 4|spells|level=4|class=德鲁伊}",
+						"{@filter 5|spells|level=5|class=德鲁伊}",
+						"{@filter 6|spells|level=6|class=德鲁伊}",
+						"{@filter 7|spells|level=7|class=德鲁伊}",
+						"{@filter 8|spells|level=8|class=德鲁伊}",
+						"{@filter 9|spells|level=9|class=德鲁伊}"
 					],
 					"rowsSpellProgression": [
 						[
@@ -3041,7 +3041,7 @@
 							"{@spell 行动自如}, {@spell 冰风暴}"
 						],
 						[
-							"9th",
+							"9环",
 							"{@spell 问道自然}, {@spell 寒冰锥}"
 						]
 					]
@@ -3071,7 +3071,7 @@
 							"{@spell 操控水体}, {@spell 行动自如}"
 						],
 						[
-							"9th",
+							"9环",
 							"{@spell 咒唤元素}, {@spell 探知术}"
 						]
 					]
@@ -3101,7 +3101,7 @@
 							"{@spell 枯萎术}, {@spell 幻景}"
 						],
 						[
-							"9th",
+							"9环",
 							"{@spell 疫病虫群}, {@spell 石墙术}"
 						]
 					]
@@ -3131,7 +3131,7 @@
 							"{@spell 预言术}, {@spell 行动自如}"
 						],
 						[
-							"9th",
+							"9环",
 							"{@spell 问道自然}, {@spell 树跃术}"
 						]
 					]
@@ -3161,7 +3161,7 @@
 							"{@spell 预言术}, {@spell 行动自如}"
 						],
 						[
-							"9th",
+							"9环",
 							"{@spell 托梦术}, {@spell 疫病虫群}"
 						]
 					]
@@ -3191,7 +3191,7 @@
 							"{@spell 塑石术}, {@spell 石肤术}"
 						],
 						[
-							"9th",
+							"9环",
 							"{@spell 穿墙术}, {@spell 石墙术}"
 						]
 					]
@@ -3221,7 +3221,7 @@
 							"{@spell 行动自如}, {@spell 生物定位术}"
 						],
 						[
-							"9th",
+							"9环",
 							"{@spell 疫病虫群}, {@spell 探知术}"
 						]
 					]
@@ -3251,7 +3251,7 @@
 							"{@spell 高等隐形术}, {@spell 塑石术}"
 						],
 						[
-							"9th",
+							"9环",
 							"{@spell 死云术}, {@spell 疫病虫群}"
 						]
 					]
@@ -3397,7 +3397,7 @@
 							"\u2014"
 						],
 						[
-							"9th",
+							"9环",
 							"{@filter 3|bestiary|challenge rating=[&0;&3]|type=beast|miscellaneous=!swarm}",
 							"\u2014"
 						],
@@ -3565,7 +3565,7 @@
 							"{@spell 枯萎术}, {@spell 困惑术}"
 						],
 						[
-							"9th",
+							"9环",
 							"{@spell 死云术}, {@spell 疫病术}"
 						]
 					]
@@ -3993,7 +3993,7 @@
 							"{@spell 生命灵光}, {@spell 火焰护盾}"
 						],
 						[
-							"9th",
+							"9环",
 							"{@spell 焰击术}, {@spell 群体疗伤术}"
 						]
 					]
@@ -4509,19 +4509,19 @@
 					],
 					"rows": [
 						[
-							"3环",
+							"3",
 							"{@spell 朦胧术|XPHB}, {@spell 燃烧之手|XPHB}, {@spell 火焰箭|XPHB}"
 						],
 						[
-							"5环",
+							"5",
 							"{@spell 火球术|XPHB}"
 						],
 						[
-							"7th",
+							"7",
 							"{@spell 枯萎术|XPHB}"
 						],
 						[
-							"9th",
+							"9",
 							"{@spell 石墙术|XPHB}"
 						]
 					]
@@ -4539,19 +4539,19 @@
 					],
 					"rows": [
 						[
-							"3环",
+							"3",
 							"{@spell 云雾术|XPHB}, {@spell 定身类人|XPHB}, {@spell 冷冻射线|XPHB}"
 						],
 						[
-							"5环",
+							"5",
 							"{@spell 雪雨暴|XPHB}"
 						],
 						[
-							"7th",
+							"7",
 							"{@spell 冰风暴|XPHB}"
 						],
 						[
-							"9th",
+							"9",
 							"{@spell 寒冰锥|XPHB}"
 						]
 					]
@@ -4569,19 +4569,19 @@
 					],
 					"rows": [
 						[
-							"3环",
+							"3",
 							"{@spell 迷踪步|XPHB}, {@spell 电爪|XPHB}, {@spell 睡眠术|XPHB}"
 						],
 						[
-							"5环",
+							"5",
 							"{@spell 闪电束|XPHB}"
 						],
 						[
-							"7th",
+							"7",
 							"{@spell 行动自如|XPHB}"
 						],
 						[
-							"9th",
+							"9",
 							"{@spell 树跃术|XPHB}"
 						]
 					]
@@ -4599,19 +4599,19 @@
 					],
 					"rows": [
 						[
-							"3环",
+							"3",
 							"{@spell 酸液飞溅|XPHB}, {@spell 致病射线|XPHB}, {@spell 蛛网术|XPHB}"
 						],
 						[
-							"5环",
+							"5",
 							"{@spell 臭云术|XPHB}"
 						],
 						[
-							"7th",
+							"7",
 							"{@spell 变形术|XPHB}"
 						],
 						[
-							"9th",
+							"9",
 							"{@spell 疫病虫群|XPHB}"
 						]
 					]

@@ -534,6 +534,10 @@
 					}
 				]
 			},
+			"itemMasteries": true,
+			"itemMasteriesProgression": {
+				"1": 2
+			},
 			"startingEquipment": {
 				"additionalFromBackground": true,
 				"defaultData": [
@@ -1823,10 +1827,10 @@
 						}
 					],
 					"colLabels": [
-						"{@filter 1环|spells|level=1|subclass=游荡者: 诡术师}",
-						"{@filter 2环|spells|level=2|subclass=游荡者: 诡术师}",
-						"{@filter 3环|spells|level=3|subclass=游荡者: 诡术师}",
-						"{@filter 4环|spells|level=4|subclass=游荡者: 诡术师}"
+						"{@filter 1|spells|level=1|subclass=游荡者: 诡术师}",
+						"{@filter 2|spells|level=2|subclass=游荡者: 诡术师}",
+						"{@filter 3|spells|level=3|subclass=游荡者: 诡术师}",
+						"{@filter 4|spells|level=4|subclass=游荡者: 诡术师}"
 					],
 					"rowsSpellProgression": [
 						[

@@ -285,6 +285,13 @@
 					}
 				]
 			},
+			"itemMasteries": true,
+			"itemMasteriesProgression": {
+				"1": 3,
+				"4": 4,
+				"10": 5,
+				"16": 6
+			},
 			"startingEquipment": {
 				"additionalFromBackground": true,
 				"defaultData": [
@@ -1634,10 +1641,10 @@
 						}
 					],
 					"colLabels": [
-						"{@filter 1st|spells|level=1|subclass=战士;奥法骑士}",
-						"{@filter 2nd|spells|level=2|subclass=战士;奥法骑士}",
-						"{@filter 3rd|spells|level=3|subclass=战士;奥法骑士}",
-						"{@filter 4th|spells|level=4|subclass=战士;奥法骑士}"
+						"{@filter 1|spells|level=1|subclass=战士;奥法骑士}",
+						"{@filter 2|spells|level=2|subclass=战士;奥法骑士}",
+						"{@filter 3|spells|level=3|subclass=战士;奥法骑士}",
+						"{@filter 4|spells|level=4|subclass=战士;奥法骑士}"
 					],
 					"rowsSpellProgression": [
 						[

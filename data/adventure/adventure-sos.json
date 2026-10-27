@@ -1,0 +1,2422 @@
+{
+	"adventureData": [
+		{
+			"id": "SoS",
+			"source": "SoS",
+			"data": [
+				{
+					"ENG_name": "Introduction: Shadows of Sithicus",
+					"name": "导言：席斯库斯之影",
+					"type": "section",
+					"id": "000",
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "adventure/SoS/000-00-001.party-faces-mist.webp"
+							},
+							"width": 1700,
+							"height": 1100,
+							"credit": "Pauline Voss"
+						},
+						"欢迎来到《{@i 席斯库斯之影}》，这是恐怖季的游玩系列之一，也是D&D Encounters计划的组成部分。",
+						"D&D Encounters是一个季节性的组织化游玩微型战役，世界各地的人们在同一时段内共同参与一系列每周冒险。虽然许多人是在游戏店内参与，但你可以在任何地方加入并共享这份激情，甚至可以按自己的节奏与自己的队伍一同游玩。",
+						"本冒险从3级开始，角色将在赛季结束前升至4级和5级。更多信息请参见《{@area 墓穴苏醒|003|x}》中的\"{@area 本赛季的角色|005|x}\"侧栏。",
+						{
+							"ENG_name": "Season of Horror Schedule",
+							"name": "恐怖季日程",
+							"type": "section",
+							"id": "001",
+							"entries": [
+								"本系列分为两大板块\u2014\u2014其一是为多桌游玩设计的庆典活动；其二是每周场次，以轻松小体量的游玩为主，便于穿插进各种日程安排。",
+								"如果你想与全球社群同步游玩，恐怖季D&D Encounters游玩依照以下日程进行：",
+								{
+									"type": "list",
+									"style": "list-no-bullets",
+									"items": [
+										"2026年6月5日至14日：D&D Encounters庆典活动；《{@area 墓穴苏醒|003|x}》为赛季盛大开局。",
+										"2026年6月10日至7月12日：D&D Encounters每周游玩；在连续四周里，每周体验一部全新的微型冒险。"
+									]
+								},
+								"各地区的游玩日期可能因市场而异。详情请咨询当地游戏店。"
+							]
+						},
+						{
+							"ENG_name": "Dungeon Masters Actual Play Series",
+							"name": "《Dungeon Masters》跑团实录系列",
+							"type": "section",
+							"id": "002",
+							"entries": [
+								"除了参与本冒险系列之外，我们还有一部与D&D Encounters赛季联动的线上跑团实录节目！其中第一季战役《黑玫瑰之烬》很适合在游玩前观看，但并非享受这些冒险的必要条件。快去看看{@link Dungeon Masters|https://www.dungeonsanddragons.com/dungeon-masters-ravenloft/}吧！"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Grave Awakenings",
+					"name": "墓穴苏醒",
+					"type": "section",
+					"id": "003",
+					"entries": [
+						"{@i 一场为3级角色设计的冒险，背景设定于席斯库斯领域。}",
+						"《{@i 墓穴苏醒}》是一场D&D Encounters庆典冒险，作为恐怖季开场的事件游玩体验，其设计用于填满三小时的游戏时段。",
+						{
+							"ENG_name": "D&D Celebration Event Overview",
+							"name": "D&D庆典活动概览",
+							"type": "section",
+							"id": "004",
+							"entries": [
+								"本冒险是多组同玩活动的组成部分，设计供最多四组同时进行，每组五名玩家和一名DM。活动也可以由少于四组进行，每组玩家可多于或少于五人，但可能需要相应调整冒险内容。",
+								"由一人担任活动协调员，负责计时、管理组间互动、记录各组的成败，并注明这些结果如何改变活动的各项要素。本冒险的{@area 附录A|043|x}是活动协调员的指南。若只有一桌进行游戏，或没有活动协调员，DM也可以使用附录A来管理活动的互动环节。",
+								{
+									"ENG_name": "Characters for This Season",
+									"name": "本赛季的角色",
+									"type": "inset",
+									"id": "005",
+									"entries": [
+										"在庆典活动中，玩家应使用{@book 玩家手册|XPHB}和{@book 鸦阁魔域：魔障深藏|RHW}创建3级角色。以下附加准则适用于这些角色：",
+										{
+											"type": "list",
+											"items": [
+												"属性值使用《{@i 玩家手册}》{@book 第二章|XPHB|2|生成你的数值}中详述的标准数列或购点法选项生成。",
+												"角色在1级之后每升一级，其生命值上限便依照《{@i 玩家手册}》{@book 第二章|XPHB|2|第二章：创建角色}中的{@table 修改生命值和生命值骰; 职业固定生命值表|XPHB|职业固定生命值表}相应提高。",
+												"角色以常规起始装备开局，并可额外从{@book 城主指南|XDMG}的{@book 第七章|XDMG|7}中选择一件任意普通魔法物品。或者，他们也可以改为选择《{@i 玩家手册}》中的一瓶{@item 治疗药水|XDMG}。"
+											]
+										},
+										"完成《{@i 墓穴苏醒}》后，角色升至4级。完成第2周遭遇{@adventure 达肯的死亡|SoS|3}后，角色升至5级。每周场次之间，角色可获得一次长休。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Key Plot Points",
+							"name": "关键剧情节点",
+							"type": "section",
+							"id": "006",
+							"entries": [
+								"以下信息对冒险故事至关重要：",
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"ENG_name": "Inza in Sithicus",
+											"name": "席斯库斯的因扎",
+											"type": "item",
+											"entry": "角色们从各自的世界被卷入迷雾，出现在恐惧领域席斯库斯的废墟之城哈尔-塞伦\u2014\u2014索思爵士的家园。一位名叫因扎的巫婆主动接近角色，告诉他们某种东西唤醒了索思爵士的怒火，使这个领域中的精魂变得致命。"
+										},
+										{
+											"ENG_name": "Danger in the Cemetery",
+											"name": "墓园之险",
+											"type": "item",
+											"entry": "一切反常活动的中心是镇郊的一座大型墓园。唤醒精魂的东西正潜伏在那里。角色抵达墓园后立即遭到敌对精魂的攻击。解决掉这些精魂后，角色得知有无辜者被抓住拖进了坟墓，需要救援。"
+										},
+										{
+											"ENG_name": "Grave Encounters",
+											"name": "墓中遭遇",
+											"type": "item",
+											"entry": "在角色从坟墓中救人时，照亮墓园这一区域的六盏提灯被熄灭。角色必须在抵挡{@creature 鸦人|RHW|鸦人}的同时重新点亮提灯。在角色重新点亮提灯、救出其余无辜者后，实体化的亡灵敌人发起攻击。"
+										},
+										{
+											"ENG_name": "Final Rest",
+											"name": "最终安息",
+											"type": "item",
+											"entry": "一名目击者透露，曾看到人们被黑暗阴影拖进陵墓。大门被魔法封印，但可以通过团队协作破解这道魔法。大门开启时，一团巨大的{@creature 丧尸肉团|RHW}现身并发起攻击。冒险结束时，无辜者获救，但四道阴影之形飞入迷雾深处，预示着更多冒险！"
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Preparation",
+							"name": "预备",
+							"type": "section",
+							"id": "007",
+							"entries": [
+								"在开始冒险之前，请按照以下步骤进行准备：",
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"ENG_name": "Step 1",
+											"name": "第一步",
+											"type": "item",
+											"entry": "阅读{@area 冒险背景|008|x}一节。"
+										},
+										{
+											"ENG_name": "Step 2",
+											"name": "第二步",
+											"type": "item",
+											"entry": "通读{@area 开始冒险|009|x}一节以及全部遭遇。"
+										},
+										{
+											"ENG_name": "Step 3",
+											"name": "第三步",
+											"type": "item",
+											"entry": "查阅下方列出的怪物数据块。标有*的怪物出自{@book 鸦阁魔域：魔障深藏|RHW}。"
+										}
+									]
+								},
+								{
+									"type": "list",
+									"style": "list-no-bullets",
+									"columns": 2,
+									"items": [
+										"{@creature 无骨者|RHW}*",
+										"{@creature 食尸鬼|XMM}",
+										"{@creature 幽影|XMM}",
+										"{@creature 丧尸断肢集群|RHW}*",
+										"{@creature 尸妖|XMM}",
+										"{@creature 妖鬼|XMM}",
+										"{@creature 食人魔僵尸|XMM}",
+										"{@creature 恶灵|XMM}",
+										"{@creature 鸦人|RHW}*",
+										"{@creature 丧尸肉团|RHW}*"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Adventure Background",
+							"name": "冒险背景",
+							"type": "section",
+							"id": "008",
+							"entries": [
+								"{@book 索思爵士|RHW|2|索思爵士}是恐惧领域{@book 席斯库斯|RHW|2|席斯库斯}的黑暗领主。他在自己的城堡中阴郁沉思，被往昔折磨，被不断提醒其失败的精魂纠缠。近来，索思的怒火被唤醒，席斯库斯随之恶化。虽然他的怒火已被平息，但领域所受的余波仍让危险势力四处游荡，席斯库斯的未来依然岌岌可危。",
+								"巫婆因扎·库尔切维奇意识到席斯库斯可能面临的命运。曾有其他冒险者前来对抗索思的怒火，但他们不久前已经离开。如今，她需要另一批冒险者来使席斯库斯免受索思所作所为的余波冲击。",
+								"因扎并不知道，索思与席斯库斯的剧变只是一场更大危机的一部分。强大的势力企图利用索思的怒火及其后果，将动荡散播到其他恐惧领域，威胁着其中的所有居民。"
+							]
+						},
+						{
+							"ENG_name": "Beginning the Adventure",
+							"name": "开始冒险",
+							"type": "section",
+							"id": "009",
+							"entries": [
+								"冒险开始时，由活动协调员（若适用，则由DM）向全体活动参与者朗读以下文本：",
+								{
+									"type": "insetReadaloud",
+									"id": "00a",
+									"entries": [
+										"你们沿着一条熟悉的道路行进，天朗气清\u2014\u2014随后阴影袭来。乌云遮蔽太阳，薄霭随即在你们四周合拢。短短几次心跳之间，浓雾中你们已什么都看不见了。又过了一会儿，或者更久，迷雾散去。你们已身处另一个世界，站在一群同样茫然的人影中间。",
+										"一座阴郁的废墟之城环绕着你们。荒废倾颓的建筑俯瞰着矮小的屋舍与帐篷。一位高挑的女子从旧教堂的阴影中大步走出，她有着乌黑的秀发、碧绿的双眼，身披灰色长袍。",
+										"\"他们说，最需要帮助的时候，英雄总会出现。而你们就在眼前。我是因扎，哈尔-塞伦弱小无辜者的守护者，我们需要英雄。这片领域的黑暗主宰索思爵士曾勃然大怒，整个领域几乎毁于一场灾变般的剧变。怒火虽已平息，其行径的余波仍在，蛰伏已久的东西也已苏醒。我需要你们在此收拾残局，让阴影重归安眠。\""
+									]
+								},
+								"因扎（中型{@creature 死亡邪教徒|XMM}）担忧席斯库斯剧烈动荡的余波，她如实讲述了困扰这个领域的种种危险。",
+								"活动协调员或DM可以使用以下要点来引导因扎与角色之间的对话：",
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"ENG_name": "Sithicus and Soth's Rage",
+											"name": "席斯库斯与索思之怒",
+											"type": "item",
+											"entry": "这片土地名为席斯库斯，由一位名为索思爵士的可怖人物统治。索思的怒火近来一度失控，几乎导致整个领域崩溃。这惊扰了古老的精魂，令此地的居民深受其害。"
+										},
+										{
+											"ENG_name": "Shadow Spirits",
+											"name": "阴影精魂",
+											"type": "item",
+											"entry": "这个领域一直遍布四处游荡的阴影精魂。这些精魂平时只是令人不安，并无危险。然而近来，哈尔-塞伦城中的阴影变得凶暴而狂躁。"
+										},
+										{
+											"ENG_name": "Har-Thelen Cemetery",
+											"name": "哈尔-塞伦墓园",
+											"type": "item",
+											"entry": "精魂活动的中心就是哈尔-塞伦墓园。据说无辜的平民被困在墓园中，需要有人前去救援。"
+										},
+										{
+											"ENG_name": "Widespread Danger",
+											"name": "四处危险",
+											"type": "item",
+											"entry": "每组角色应前往墓园的不同区域，调查那里的动静并救援遇险之人。"
+										}
+									]
+								},
+								"此时，各桌DM接管自己的小组，继续冒险。每组前往墓园的不同区域，但各组使用的地图相同。",
+								"获得活动协调员的放行指示后，开始\"{@area 遭遇1：从阴影中来|013|x}\"。"
+							]
+						},
+						{
+							"ENG_name": "The Har-Thelen Cemetery",
+							"name": "哈尔-塞伦墓园",
+							"type": "section",
+							"id": "00b",
+							"entries": [
+								"这座墓园是阴影精魂的聚集地，而它们正是席斯库斯的众多威胁之一。在索思爵士之乱的影响下，这些精魂令墓园变成了致命之地。",
+								{
+									"type": "gallery",
+									"images": [
+										{
+											"type": "image",
+											"id": "0a8",
+											"href": {
+												"type": "internal",
+												"path": "adventure/SoS/001-map-01-001.grave-awakenings-dm.webp"
+											},
+											"hrefThumbnail": {
+												"type": "internal",
+												"path": "adventure/SoS/thumbnail/001-map-01-001.grave-awakenings-dm.webp"
+											},
+											"width": 4096,
+											"height": 3012,
+											"imageType": "map",
+											"grid": {
+												"type": "square",
+												"size": 271,
+												"offsetX": 31,
+												"offsetY": 31,
+												"scale": 2
+											},
+											"title": "地图：墓穴苏醒",
+											"credit": "Jared Blando",
+											"mapRegions": [
+												{
+													"area": "01b",
+													"points": [
+														[
+															2141,
+															1064
+														],
+														[
+															2141,
+															1252
+														],
+														[
+															2390,
+															1252
+														],
+														[
+															2390,
+															1064
+														]
+													]
+												},
+												{
+													"area": "01b",
+													"points": [
+														[
+															3669,
+															1389
+														],
+														[
+															3669,
+															1631
+														],
+														[
+															3835,
+															1631
+														],
+														[
+															3835,
+															1389
+														]
+													]
+												},
+												{
+													"area": "01b",
+													"points": [
+														[
+															1356,
+															26
+														],
+														[
+															1356,
+															287
+														],
+														[
+															1525,
+															287
+														],
+														[
+															1525,
+															26
+														]
+													]
+												},
+												{
+													"area": "04e",
+													"points": [
+														[
+															1656,
+															664
+														],
+														[
+															1656,
+															968
+														],
+														[
+															1910,
+															968
+														],
+														[
+															1910,
+															664
+														]
+													]
+												},
+												{
+													"area": "04f",
+													"points": [
+														[
+															1228,
+															554
+														],
+														[
+															1228,
+															1100
+														],
+														[
+															1511,
+															1100
+														],
+														[
+															1511,
+															554
+														]
+													]
+												},
+												{
+													"area": "046",
+													"points": [
+														[
+															37,
+															2047
+														],
+														[
+															37,
+															2464
+														],
+														[
+															420,
+															2464
+														],
+														[
+															420,
+															2047
+														]
+													]
+												},
+												{
+													"area": "046",
+													"points": [
+														[
+															1367,
+															2576
+														],
+														[
+															1367,
+															3011
+														],
+														[
+															1643,
+															3011
+														],
+														[
+															1643,
+															2576
+														]
+													]
+												},
+												{
+													"area": "046",
+													"points": [
+														[
+															164,
+															558
+														],
+														[
+															164,
+															835
+														],
+														[
+															544,
+															835
+														],
+														[
+															544,
+															558
+														]
+													]
+												}
+											]
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "adventure/SoS/002-map-01-001.grave-awakenings-player.webp"
+											},
+											"width": 4096,
+											"height": 3012,
+											"imageType": "mapPlayer",
+											"grid": {
+												"type": "square",
+												"size": 271,
+												"offsetX": 31,
+												"offsetY": 31,
+												"scale": 2
+											},
+											"title": "玩家版本",
+											"credit": "Jared Blando",
+											"mapParent": {
+												"id": "0a8"
+											}
+										}
+									]
+								},
+								{
+									"ENG_name": "Har-Thelen Cemetery Features",
+									"name": "哈尔-塞伦墓园特征",
+									"type": "entries",
+									"id": "00c",
+									"entries": [
+										"墓园具有以下特征。",
+										{
+											"ENG_name": "Light",
+											"name": "光线",
+											"type": "entries",
+											"id": "00d",
+											"entries": [
+												"墓园各处灯柱上悬挂的四盏油灯，以及陵墓上安装的两盏油灯，使该区域处于{@variantrule 明亮光照|XPHB|明亮光照}。当这些提灯被熄灭时（见{@area 遭遇2：坟墓之忧|01a|x}），整个区域将陷入完全的{@variantrule 黑暗|XPHB}，直到角色重新点亮提灯。"
+											]
+										},
+										{
+											"ENG_name": "Graves",
+											"name": "坟墓",
+											"type": "entries",
+											"id": "00e",
+											"entries": [
+												"冒险开始时，所有坟墓都填满松土。角色或怪物将坟墓掏空后，它会变成一个10尺深的坑。墓碑过于低矮，无法提供掩护。"
+											]
+										},
+										{
+											"ENG_name": "Sarcophagi",
+											"name": "石棺",
+											"type": "entries",
+											"id": "00f",
+											"entries": [
+												"每具石棺深5尺，盖着沉重的棺盖，需要花费一个动作并成功通过{@dc 15}力量（{@skill 运动|XPHB}）检定才能移开。棺盖移开后，石棺内的东西便暴露出来。"
+											]
+										},
+										{
+											"ENG_name": "Mausoleum",
+											"name": "陵墓",
+											"type": "entries",
+											"id": "010",
+											"entries": [
+												"陵墓高10尺，由石头建成。陵墓的双扇大门附有魔法，不解开谜题便无法打开。在解开谜题前试图开门的生物会触发有害的魔法效果（如{@area 遭遇4：陵墓之门|033|x}所述）。陵墓内部的描述见{@area 遭遇5：最终的恐怖|038|x}。"
+											]
+										},
+										{
+											"ENG_name": "Fences",
+											"name": "围栏",
+											"type": "entries",
+											"id": "011",
+											"entries": [
+												"围栏高3尺。有围栏的格子属于{@variantrule 困难地形|XPHB}。"
+											]
+										},
+										{
+											"ENG_name": "Statues and Lampposts",
+											"name": "雕像与灯柱",
+											"type": "entries",
+											"id": "012",
+											"entries": [
+												"雕像与灯柱高10尺，可以攀爬（无需属性检定）。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Encounter 1: From the Shadows",
+									"name": "遭遇1：从阴影中来",
+									"type": "entries",
+									"id": "013",
+									"entries": [
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "adventure/SoS/003-01-001.from-the-shadows.webp"
+											},
+											"width": 1750,
+											"height": 1126,
+											"credit": "Aaron J. Riley"
+										},
+										"当角色抵达墓园时，阅读或转述以下文本：",
+										{
+											"type": "insetReadaloud",
+											"id": "014",
+											"entries": [
+												"六盏提灯照亮着阴郁墓园的这一区域。两名吓坏了的镇民躺在一座大型雕像的底座旁，尖叫呼救。"
+											]
+										},
+										"角色从{@adventure 地图上标记为A|SoS|1|地图：墓穴苏醒}的格子开始。四只{@creature 幽影|XMM|幽影}和三只{@creature 恶灵|XMM|恶灵}分别藏匿于地图上标记为B和C的区域。亡灵敌人立即攻击角色。",
+										{
+											"ENG_name": "Townsfolk",
+											"name": "镇民",
+											"type": "entries",
+											"id": "015",
+											"entries": [
+												"两名镇民因恐惧而僵在原地，寸步不移，直到角色击败幽影和恶灵。在获救之前，这两人对角色的问题或指令只会报以惊恐的尖叫。"
+											]
+										},
+										{
+											"ENG_name": "Spotting the Enemies",
+											"name": "发现敌人",
+											"type": "entries",
+											"id": "016",
+											"entries": [
+												"被动察觉为13或更高的角色会在亡灵敌人发动攻击前察觉到它们的潜伏。任何没有察觉到亡灵的生物都会陷入{@status 突袭|XPHB|突袭}状态。"
+											]
+										},
+										{
+											"ENG_name": "Concluding the Encounter",
+											"name": "结束遭遇",
+											"type": "entries",
+											"id": "017",
+											"entries": [
+												"获救后，两人中年纪较大的米莉丝（中型{@creature 平民|XMM}，当地的人类炼金师）告诉角色，就在他们抵达前片刻，其他精魂把四名仍活着的镇民拖进了坟墓。如果角色抓紧时间，也许还能救出这些无辜的人。但她不确定具体是哪几座坟，只知道就在墓园的这一片区域。",
+												{
+													"ENG_name": "Treasure",
+													"name": "宝藏",
+													"type": "entries",
+													"id": "018",
+													"entries": [
+														"米莉丝随身带着两瓶{@item 高等治疗药水|XDMG|高等治疗药水}、一瓶{@item 英勇药水|XDMG}和50 GP，她把这些都送给角色，以感谢他们的救命之恩。"
+													]
+												},
+												{
+													"ENG_name": "Moving On",
+													"name": "继续前进",
+													"type": "entries",
+													"id": "019",
+													"entries": [
+														"当角色准备搜查坟墓寻找幸存者时，与活动协调员确认能否继续。获得放行指示后，开始下一个遭遇。"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Encounter 2: Grave Concerns",
+									"name": "遭遇2：坟墓之忧",
+									"type": "entries",
+									"id": "01a",
+									"entries": [
+										"角色需要成功辨别出哪几座坟墓中埋着四名活着的受害者。",
+										{
+											"ENG_name": "Checking Graves",
+											"name": "检查坟墓",
+											"type": "entries",
+											"id": "01b",
+											"entries": [
+												"告诉玩家，没有任何一座坟墓显示出明显埋有受害者的迹象，并询问他们打算如何找到失踪的无辜者。让每位玩家都有机会回答。一次成功的{@dc 12}检定可以锁定一座正确的坟墓。他们可以使用你认为合理的任何方法，下表列出了他们可能采用的属性检定或方法：",
+												{
+													"type": "list",
+													"items": [
+														"力量（{@skill 运动|XPHB}）",
+														"智力（{@skill 调查|XPHB}）",
+														"智力（{@skill 自然|XPHB}）",
+														"感知（{@skill 察觉|XPHB}）",
+														"感知（{@skill 求生|XPHB}）",
+														"有助于定位的魔法"
+													]
+												},
+												"检定成功时，角色在其中一座坟墓中找到一名受害者，并可将其救出（无需动作）。请记录下两次成功之前的每次检定失败，因为它们在本遭遇后文中很重要：救援剩余两名受害者的时限会因失败次数而缩短（最多计四次失败）。"
+											]
+										},
+										{
+											"ENG_name": "Raven Interruption",
+											"name": "渡鸦来袭",
+											"type": "entries",
+											"id": "01c",
+											"entries": [
+												"角色救出第二名受害者后，阅读或转述以下文本：",
+												{
+													"type": "insetReadaloud",
+													"id": "01d",
+													"entries": [
+														"当你们搜寻剩余的受害者时，三只大得离谱的渡鸦俯冲进墓园。它们发出愤怒的嘶叫，扑向照亮这片区域的六盏提灯，使四周陷入黑暗。随后，渡鸦将注意力转向了你们。"
+													]
+												},
+												{
+													"type": "image",
+													"href": {
+														"type": "internal",
+														"path": "adventure/SoS/004-01-002.raven-interruption.webp"
+													},
+													"width": 850,
+													"height": 1668,
+													"credit": "Rowan Holloway"
+												},
+												"三只{@creature 鸦人|RHW|鸦人}飞入墓园，熄灭了这片阴郁区域周围悬挂的六盏提灯。",
+												{
+													"ENG_name": "Character Locations",
+													"name": "角色位置",
+													"type": "entries",
+													"id": "01e",
+													"entries": [
+														"埋有受害者的坟墓在地图上标记为{@adventure G1\u2013G4|SoS|1|地图：墓穴苏醒}。渡鸦发起攻击时，将找到前两名受害者的角色放在对应的坟墓旁。其余角色则随机放在其他坟墓旁，除非其玩家已详细说明所在位置。",
+														"灯光熄灭时正在搜寻剩余两名受害者的角色，可以通过成功的{@dc 12}{@skill 察觉|XPHB}检定从远处发现正确的坟墓，但仍须移动到坟墓处才能救出受害者。"
+													]
+												},
+												{
+													"ENG_name": "Darkness Effects",
+													"name": "黑暗效应",
+													"type": "entries",
+													"id": "01f",
+													"entries": [
+														"提灯熄灭时，整个区域被魔法{@variantrule 黑暗|XPHB}笼罩。在一张地图上至少三盏提灯被重新点亮之前，以下遭遇效果持续生效：",
+														{
+															"type": "list",
+															"items": [
+																"地图上的一切都被魔法黑暗笼罩，非魔法或魔法光源都无法照亮。",
+																"鸦人不受黑暗影响。",
+																"生物为寻找剩余受害者而进行的检定具有{@variantrule 劣势|XPHB}。",
+																"{@creature 鸦人|RHW|鸦人}对所有伤害具有{@variantrule 抗性|XPHB}。",
+																"成功通过{@dc 10}智力（{@skill 奥秘|XPHB}）检定的角色（无需动作）能辨认出黑暗的效果，并知道这些效果只有在提灯重新点亮后才会结束。如果没有角色主动要求检定，请在战斗第二轮后要求角色进行此项检定。"
+															]
+														}
+													]
+												},
+												{
+													"ENG_name": "Relighting Lanterns",
+													"name": "重新点亮提灯",
+													"type": "entries",
+													"id": "020",
+													"entries": [
+														"重新点亮提灯的方法有多种：",
+														{
+															"type": "list",
+															"items": [
+																"角色可以通过成功的{@dc 10}力量（{@skill 运动|XPHB}）或敏捷（{@skill 特技|XPHB}）检定爬上灯柱，然后用常规手段点亮提灯，例如使用{@item 火绒盒|XPHB}。",
+																"角色可以施展能生火或造成火焰伤害的戏法或法术。",
+																"角色可以将点燃的物体（如箭矢或浸油布条）射入或掷入提灯，这需要进行一次成功的攻击检定。每盏提灯的AC为10。",
+																"角色也可以使用你认为合理的任何其他方法。"
+															]
+														},
+														"第三盏提灯点亮时，{@variantrule 黑暗|XPHB}结束，该区域变为{@variantrule 微光光照|XPHB|微光光照}，上述黑暗效应随之终止。当六盏提灯全部点亮，或各桌各自点亮至少三盏提灯时，该区域恢复为{@variantrule 明亮光照|XPHB|明亮光照}，鸦人对所有伤害具有{@variantrule 易伤|XPHB}。"
+													]
+												},
+												{
+													"ENG_name": "Continuing the Search",
+													"name": "继续搜救",
+													"type": "entries",
+													"id": "021",
+													"entries": [
+														"如果救援不及时，剩余两名受害者就会死亡。提灯熄灭后，你们这组角色拥有的轮数等于6减去本组检定失败的次数（最多计4次）。在指定轮数结束时，所有尚未找到的受害者都会死亡。请记下死亡人数，因为每有一名受害者死亡，下一个遭遇中就会出现更多敌人。",
+														{
+															"ENG_name": "Lycanthropy",
+															"name": "兽化",
+															"type": "inset",
+															"id": "022",
+															"entries": [
+																"如果角色变成了{@creature 鸦人|RHW}，请发给该玩家鸦人讲义（见下文）。他们可以按照所提供的规则继续扮演自己的角色。每组只有一名角色会染上兽化症诅咒。同组中本应染上兽化症诅咒的其他角色在本遭遇中免疫此诅咒。"
+															]
+														},
+														{
+															"type": "image",
+															"href": {
+																"type": "internal",
+																"path": "adventure/SoS/005-01-003.wereraven-lycanthropy-handout.webp"
+															},
+															"width": 1700,
+															"height": 1688
+														},
+														{
+															"type": "insetReadaloud",
+															"id": "023",
+															"entries": [
+																"你染上了兽化症诅咒。在本次活动余下的时间以及本次D&D Encounters赛季的随后四周里，你可以用附赠动作化身鸦人的混合形态，持续1分钟。完成一次短休或长休后，你恢复此能力的使用。在此混合形态下，你获得以下能力：",
+																{
+																	"type": "list",
+																	"style": "list-hang-notitle",
+																	"items": [
+																		{
+																			"ENG_name": "Fly",
+																			"name": "飞行",
+																			"type": "item",
+																			"entry": "你可以用附赠动作长出一对翅膀。在1分钟内，你的飞行速度为50尺。"
+																		},
+																		{
+																			"ENG_name": "Beak",
+																			"name": "喙啄",
+																			"type": "item",
+																			"entry": "你获得一次鸟喙攻击，{@atkr m} {@hit 6}，触及5尺。{@h}13（{@damage 2d8 + 4}）穿刺伤害。此攻击不会传播诅咒。"
+																		},
+																		{
+																			"ENG_name": "Dark Urges",
+																			"name": "黑暗冲动",
+																			"type": "item",
+																			"entry": "处于混合形态时，在你的每回合开始时，你必须通过{@dc 10}感知豁免。豁免失败时，你必须用你的动作对最近的生物发动一次鸟喙攻击。一旦你成功通过此豁免，在下次用附赠动作化身混合形态之前，你无须再进行此豁免。"
+																		}
+																	]
+																}
+															]
+														}
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "Concluding the Encounter",
+											"name": "结束遭遇",
+											"type": "entries",
+											"id": "024",
+											"entries": [
+												"当角色击败鸦人、重新点亮所有提灯并救出剩余的受害者（或受害者死亡）时，本遭遇结束。",
+												{
+													"ENG_name": "Treasure",
+													"name": "宝藏",
+													"type": "entries",
+													"id": "025",
+													"entries": [
+														"角色搜查的最后一座坟墓中藏有250 GP和一把{@item +1 短剑|XDMG}。这把魔法剑被锻造成天使之翼的形状。",
+														"告知活动协调员你们已完成本遭遇，然后告知受害者死亡人数，因为这会影响下一个遭遇。获得放行指示后，开始下一个遭遇。"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Encounter 3: In Pieces",
+									"name": "遭遇3：支离破碎",
+									"type": "entries",
+									"id": "026",
+									"entries": [
+										"给角色一分钟时间喘息、查看获救的镇民、治疗自己等等。一分钟后，阅读或转述以下文本：",
+										{
+											"type": "insetReadaloud",
+											"id": "027",
+											"entries": [
+												"一些坟墓随着泥土飞溅而炸开，一些石棺的棺盖滑落。亡灵生物现身而出，身边爬行着成堆的死肢。"
+											]
+										},
+										"每组将面对不同的挑战，详见下文。你负责在任何NPC或角色死亡时告知活动协调员，因为一旦累计死亡人数达到四人，就会对所有桌产生影响。",
+										{
+											"ENG_name": "Table 1",
+											"name": "第1桌",
+											"type": "entries",
+											"id": "028",
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "029",
+													"entries": [
+														"一具咯咯怪笑的亡灵身躯朝你们狂奔而来，身后跟着成群的断肢，它们在一堆腐肉中爬行蠕动。"
+													]
+												},
+												"一名{@creature 尸妖|XMM}和三群{@creature 丧尸断肢集群|RHW|丧尸断肢集群}从坟墓中出现并发起攻击。你们这桌在前一遭遇中每有一名受害者死亡，就额外增加一群{@creature 丧尸断肢集群|RHW}。如果所有桌合计有四名或更多受害者死亡，则改为增加一名{@creature 尸妖|XMM}。"
+											]
+										},
+										{
+											"ENG_name": "Table 2",
+											"name": "第2桌",
+											"type": "entries",
+											"id": "02a",
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "02b",
+													"entries": [
+														"三具枯瘦的身影朝你们冲来，怀里抱着成捆蠕动着的断肢，朝你们的方向掷来。这些可怖的残肢聚成一堆又抓又挠的死亡之山，向你们涌来。"
+													]
+												},
+												"三只{@creature 食尸鬼|XMM|食尸鬼}和三群{@creature 丧尸断肢集群|RHW|丧尸断肢集群}从坟墓中出现并发起攻击。你们这桌在前一遭遇中每有一名受害者死亡，就额外增加一群{@creature 丧尸断肢集群|RHW}。如果所有桌合计有四名或更多受害者死亡，则改为增加一只{@creature 妖鬼|XMM}。"
+											]
+										},
+										{
+											"ENG_name": "Table 3",
+											"name": "第3桌",
+											"type": "entries",
+											"id": "02c",
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "02d",
+													"entries": [
+														"两具巨大的腐烂身躯朝你们蹒跚走来。成堆的腐臭断肢在其身后窸窣爬行，全都盯着你们。"
+													]
+												},
+												"两只{@creature 食人魔僵尸|XMM|食人魔僵尸}和两群{@creature 丧尸断肢集群|RHW|丧尸断肢集群}从坟墓中出现并发起攻击。你们这桌在前一遭遇中每有一名受害者死亡，就额外增加一群{@creature 丧尸断肢集群|RHW}。如果所有桌合计有四名或更多受害者死亡，则改为增加一只{@creature 食人魔僵尸|XMM}。"
+											]
+										},
+										{
+											"ENG_name": "Table 4",
+											"name": "第4桌",
+											"type": "entries",
+											"id": "02e",
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "02f",
+													"entries": [
+														"三具尸体空荡荡的表皮像巨大的腐虫一样朝你们蜿蜒而来。其后，一堆断落腐烂的残肢朝你们涌来。"
+													]
+												},
+												"三只{@creature 无骨者|RHW}和三群{@creature 丧尸断肢集群|RHW|丧尸断肢集群}从坟墓中出现并发起攻击。你们这桌在前一遭遇中每有一名受害者死亡，就额外增加一群{@creature 丧尸断肢集群|RHW}。如果所有桌合计有四名或更多受害者死亡，则改为增加两只{@creature 无骨者|RHW}。"
+											]
+										},
+										{
+											"ENG_name": "Random Events",
+											"name": "随机事件",
+											"type": "entries",
+											"id": "030",
+											"entries": [
+												"当第一组击败他们的敌人时，活动协调员走到那桌，让一名玩家掷{@dice 1d6}，并对照下方的随机事件表确定发生哪个随机事件。这会为该桌的战斗增加更多敌人，并触发一个影响其他组的事件。",
+												{
+													"type": "table",
+													"caption": "随机事件",
+													"colLabels": [
+														"1d6",
+														"名称",
+														"概述"
+													],
+													"colStyles": [
+														"col-2 text-center",
+														"col-2 text-center",
+														"col-8"
+													],
+													"rows": [
+														[
+															"1",
+															"唧喧骚动",
+															"该组必须与两群{@creature 染疫虫群|RHW|染疫虫群}战斗。其他组的角色获得{@variantrule 英雄激励|XPHB}。"
+														],
+														[
+															"2",
+															"绝望哭嚎",
+															"该组必须与两只{@creature 鸟妖|XMM|鸟妖}战斗。其他组的角色获得{@spell 祝福术|XPHB}的效果，直至本遭遇结束。"
+														],
+														[
+															"3",
+															"恐惧奥术师",
+															"该组必须与一名{@creature 魔法学徒|XMM}战斗。其他组的敌人陷入{@condition 震慑|XPHB}状态，直至其下回合结束。"
+														],
+														[
+															"4",
+															"饥饿的游荡者",
+															"该组必须与一只{@creature 妖鬼|XMM}和一只{@creature 食尸鬼|XMM}战斗。其他组的角色获得10点{@variantrule 临时生命值|XPHB}。"
+														],
+														[
+															"5",
+															"月相异象",
+															"该组必须与一只{@creature 鹿鹰|XMM}战斗。其他组的角色进行的下一次{@variantrule D20 检定|XPHB|D20 检定}具有{@variantrule 优势|XPHB}。"
+														],
+														[
+															"6",
+															"蚊蝠集群",
+															"该组必须与一群{@creature 蚊蝠集群|XMM}战斗。其他组的角色回复{@dice 2d8}点生命值。"
+														]
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "Concluding the Encounter",
+											"name": "结束遭遇",
+											"type": "entries",
+											"id": "031",
+											"entries": [
+												"当最后一组击败敌人且随机事件的后果演绎完毕后，本遭遇结束。此时请告知活动协调员。",
+												{
+													"ENG_name": "Treasure",
+													"name": "宝藏",
+													"type": "entries",
+													"id": "032",
+													"entries": [
+														"每组的敌人随身携带着三瓶{@item 高等治疗药水|XDMG|高等治疗药水}和100 GP的各种硬币。",
+														"所有组都应完成本遭遇后，任何一组才可继续。获得活动协调员的放行指示后，开始下一个遭遇。"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Encounter 4: The Mausoleum Door",
+									"name": "遭遇4：陵墓之门",
+									"type": "entries",
+									"id": "033",
+									"entries": [
+										"当所有组都准备好继续时，你或活动协调员应阅读或转述以下文本：",
+										{
+											"type": "insetReadaloud",
+											"id": "034",
+											"entries": [
+												"你们喘息未定，一名年轻女子跑向你们这组。她惊慌的声音发着颤。\"黑暗的影子抓走了我的弟弟和妹妹，像鬼魂一样把他们拖进了陵墓的墙里。求求你们救救他们！\"",
+												"陵墓的双扇大门散发着黑暗能量，在门面上凝成符文与文字。一个低语声在你们脑海中嘶声道：\"他的名字在领域中回荡。他的怒火激荡回响，令他的力量倍增。\"一个个符文随之愈发明亮。"
+											]
+										},
+										{
+											"ENG_name": "The Door Puzzle",
+											"name": "大门谜题",
+											"type": "entries",
+											"id": "035",
+											"entries": [
+												"大门被封印，无法用常规手段打开。要想在不受到伤害、不危及门内无辜者性命的情况下打开大门，角色必须触碰各自大门上正确的符号：也就是那个重复出现的符号。每组会拿到四张陵墓大门讲义中的一张（如果活动少于四组，则可能拿到多张）。",
+												"每张讲义的内容都相同，只是各自重复的字母不同。这些重复的字母分别是S、O、T和H。要解开谜题，角色必须找到自己讲义（或多张讲义）中重复的字母，并与其他桌互通信息。如果各桌正确报出字母，玩家们应能意识到它们可以拼出SOTH。触碰大门上重复的符号后，所有大门开启，最终遭遇随之开始。",
+												{
+													"ENG_name": "Incorrect Answers",
+													"name": "错误答案",
+													"type": "entries",
+													"id": "036",
+													"entries": [
+														"如果角色触碰的字母或符号不是那个重复的符号，不洁的能量便会从大门中涌出，每名角色受到2（{@damage 1d4}）点暗蚀伤害。此外，陵墓内部传出的尖叫声表明无辜者也受到了伤害。陵墓内的每名受害者有10点生命值。当受害者的生命值降至0时，即告死亡。如果所有组的两名受害者都死亡，大门将自动打开。",
+														{
+															"type": "gallery",
+															"images": [
+																{
+																	"type": "image",
+																	"href": {
+																		"type": "internal",
+																		"path": "adventure/SoS/006-01-004.mausoleum-door-1-handout.webp"
+																	},
+																	"width": 850,
+																	"height": 1023,
+																	"title": "大门1"
+																},
+																{
+																	"type": "image",
+																	"href": {
+																		"type": "internal",
+																		"path": "adventure/SoS/008-01-005.mausoleum-door-2-handout.webp"
+																	},
+																	"width": 850,
+																	"height": 1023,
+																	"title": "大门2"
+																},
+																{
+																	"type": "image",
+																	"href": {
+																		"type": "internal",
+																		"path": "adventure/SoS/007-01-006.mausoleum-door-3-handout.webp"
+																	},
+																	"width": 850,
+																	"height": 1023,
+																	"title": "大门3"
+																},
+																{
+																	"type": "image",
+																	"href": {
+																		"type": "internal",
+																		"path": "adventure/SoS/009-01-007.mausoleum-door-4-handout.webp"
+																	},
+																	"width": 850,
+																	"height": 1023,
+																	"title": "大门4"
+																}
+															]
+														}
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "Concluding the Encounter",
+											"name": "结束遭遇",
+											"type": "entries",
+											"id": "037",
+											"entries": [
+												"当各组分别触碰自己重复的符号并打开大门，或所有组的两名受害者都死亡时，本遭遇结束。获得活动协调员的放行指示后，开始下一个遭遇。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Encounter 5: A Final Horror",
+									"name": "遭遇5：最终的恐怖",
+									"type": "entries",
+									"id": "038",
+									"entries": [
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "adventure/SoS/010-01-009.a-final-horror.webp"
+											},
+											"width": 1700,
+											"height": 1110,
+											"credit": "Hinchel Or"
+										},
+										"当陵墓大门打开时，阅读或转述以下文本：",
+										{
+											"type": "insetReadaloud",
+											"id": "039",
+											"entries": [
+												"陵墓的大门开启，伴随着一阵哀凄空灵的钟声。大门起初缓缓磨动，随即一团由扭动的丧尸与腐烂血肉融合而成的巨物涌进墓园，堵住了陵墓的开口。",
+												"先前你们听到的声音再次响起。\"这是索思怒火的最终产物。将它一举扑灭吧。\""
+											]
+										},
+										"大门打开后，一团{@creature 丧尸肉团|RHW}从石造建筑中翻滚而出并发起攻击。站在门前格子中的任何生物都会被推后5尺，但不会受到其他负面影响。",
+										{
+											"ENG_name": "Table Interaction",
+											"name": "桌间互动",
+											"type": "entries",
+											"id": "03a",
+											"entries": [
+												"为协助活动协调员掌控本遭遇，请在丧尸肉团进入{@status 浴血|XPHB}状态时报告，并在其被击败后再次报告。本遭遇非常困难，但角色们拥有一些优势：",
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"ENG_name": "Deathly Stench",
+															"name": "死亡恶臭",
+															"type": "item",
+															"entry": "在各桌的丧尸肉团进入{@status 浴血|XPHB}状态之前，丧尸肉团的死亡恶臭特性不会生效。"
+														},
+														{
+															"ENG_name": "Undead Fortitude",
+															"name": "不死坚韧",
+															"type": "item",
+															"entry": "对各组中最后残留的那团丧尸肉团而言，其不死坚韧特性不起作用\u2014\u2014如果只有一组，则该特性完全不生效。"
+														},
+														{
+															"ENG_name": "Unearthly Benefits",
+															"name": "非尘之利",
+															"type": "item",
+															"entry": "第一组击败他们的丧尸肉团后，其他组获得以下优势：其桌上的丧尸肉团无法充能其死肉埋葬攻击，且角色对抗它进行的豁免具有{@variantrule 优势|XPHB}。"
+														}
+													]
+												}
+											]
+										},
+										{
+											"ENG_name": "The Mausoleum",
+											"name": "陵墓",
+											"type": "entries",
+											"id": "03b",
+											"entries": [
+												"由于亡灵的骚动，陵墓内部一片狼藉。安葬于此的尸骸都被压入了丧尸肉团之中。"
+											]
+										},
+										{
+											"ENG_name": "The Victims",
+											"name": "受害者",
+											"type": "entries",
+											"id": "03c",
+											"entries": [
+												"两名活着的受害者被丧尸肉团巨大的身躯困在陵墓之中。"
+											]
+										},
+										{
+											"ENG_name": "Concluding the Encounter",
+											"name": "结束遭遇",
+											"type": "entries",
+											"id": "03d",
+											"entries": [
+												"当各组击败各自的丧尸肉团后，本遭遇结束。",
+												{
+													"ENG_name": "Treasure",
+													"name": "宝藏",
+													"type": "entries",
+													"id": "03e",
+													"entries": [
+														"丧尸肉团的残骸中散落着几件首饰，总价值100 GP。"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Conclusion",
+									"name": "结局",
+									"type": "entries",
+									"id": "03f",
+									"entries": [
+										"每组完成本遭遇后，你或活动协调员应阅读或转述以下文本：",
+										{
+											"type": "insetReadaloud",
+											"id": "040",
+											"entries": [
+												"那团可怖的丧尸血肉静止下来时，你们看到一道阴影从中升起，化作一只巨大的渡鸦，飞入迷雾深处。",
+												"因扎走近，在战斗结束后将你们唤到一起。\"你们的英勇与本领没有辜负期望。哈尔-塞伦的人们欠你们一份人情。我担心我们的考验尚未结束。我目睹四只影渡鸦没入迷雾。它们无疑是在此地制造祸端的那个东西的仆从。还会有其他领域在它们的阴谋下受苦。如果你们愿意\u2014\u2014也想找到回家的路\u2014\u2014就帮我解决这些麻烦。\""
+											]
+										},
+										"因扎逐一询问每名角色是否愿意追猎那四只渡鸦之影。对于同意相助的角色，因扎会以一道先在其掌心上方发光随即隐去的魔法印记相赠，赋予他们{@i 因扎的祝福}（见下文）。她还会送给每组一件{@item 法力再生珍珠|XDMG}，以助其旅途。"
+									]
+								},
+								{
+									"ENG_name": "Ongoing Effect",
+									"name": "持续效应",
+									"type": "entries",
+									"id": "041",
+									"entries": [
+										{
+											"ENG_name": "Inza's Blessing",
+											"name": "因扎的祝福",
+											"type": "entries",
+											"id": "042",
+											"entries": [
+												"{@i 巫婆因扎的印记赋予你完成使命的力量。}",
+												"你可以用附赠动作使用此祝福，回复{@dice 2d4 + 2}点生命值。在恐怖季期间，此祝福每场次可使用一次。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Appendix A: Event Coordinator Guide",
+							"name": "附录A：活动协调员指南",
+							"type": "section",
+							"id": "043",
+							"entries": [
+								"本文档提供了如何带领多组进行本活动的说明。如果没有活动协调员但有多组参加，DM们应依照本文档协调配合。",
+								{
+									"ENG_name": "Beginning the Adventure",
+									"name": "开始冒险",
+									"type": "entries",
+									"id": "044",
+									"entries": [
+										"向全体活动参与者朗读以下文本。若没有活动协调员，可由一名DM向所有人朗读，或由各桌DM分别向自己这桌朗读：",
+										{
+											"type": "insetReadaloud",
+											"id": "045",
+											"entries": [
+												"你们沿着一条熟悉的道路行进，天朗气清\u2014\u2014随后阴影袭来。乌云遮蔽太阳，薄霭随即在你们四周合拢。短短几次心跳之间，浓雾中你们已什么都看不见了。又过了一会儿，或者更久，迷雾散去。你们已身处另一个世界，站在一群同样茫然的人影中间。",
+												"一座阴郁的废墟之城环绕着你们。荒废倾颓的建筑俯瞰着矮小的屋舍与帐篷。一位高挑的女子从旧教堂的阴影中大步走出，她有着乌黑的秀发、碧绿的双眼，身披灰色长袍。",
+												"\"他们说，最需要帮助的时候，英雄总会出现。而你们就在眼前。我是因扎，哈尔-塞伦弱小无辜者的守护者，我们需要英雄。这片领域的黑暗主宰索思爵士已背弃了他的职责，大地正在与这里的居民为敌。\""
+											]
+										},
+										"利用冒险中的信息解答玩家可能提出的任何问题。然后开始\"{@area 遭遇1：从阴影中来|013|x}\"。"
+									]
+								},
+								{
+									"ENG_name": "Encounter 1",
+									"name": "遭遇1",
+									"type": "entries",
+									"id": "046",
+									"entries": [
+										"记录所有组的进度。如果最后一组未能在45分钟内完成，剩余的敌人将崩解消散。最后一组完成后，指示各DM开始\"{@area 遭遇2：坟墓之忧|01a|x}\"。"
+									]
+								},
+								{
+									"ENG_name": "Encounter 2",
+									"name": "遭遇2",
+									"type": "entries",
+									"id": "047",
+									"entries": [
+										"留意各桌何时点亮前三盏提灯，并请DM在受害者死亡时随时报告，以统计死亡人数。如果所有组合计有四名受害者死亡，各组在第三个遭遇中将与更难对付的怪物战斗。",
+										{
+											"type": "entries",
+											"id": "048",
+											"entries": [
+												{
+													"ENG_name": "Curse of Lycanthropy",
+													"name": "兽化诅咒",
+													"type": "entries",
+													"id": "049",
+													"entries": [
+														"如果有角色染上鸦人的兽化症诅咒，请发给该玩家{@area 鸦人讲义|023|x}。记住，每组只有第一位玩家会染上诅咒。"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Encounter 3",
+									"name": "遭遇3",
+									"type": "entries",
+									"id": "04a",
+									"entries": [
+										"第三个遭遇开始时，告知各DM在第二个遭遇中所有组合计是否有四名受害者死亡。",
+										{
+											"type": "entries",
+											"id": "04b",
+											"entries": [
+												{
+													"ENG_name": "Random Event",
+													"name": "随机事件",
+													"type": "entries",
+													"id": "04c",
+													"entries": [
+														"当第一桌击败敌人时，走到那桌让一名玩家掷{@dice 1d6}，对照冒险中的{@area 随机事件表|030|x}确定发生哪个随机事件。告诉该桌DM有哪些新怪物加入其战斗，再告知其他DM他们的队伍获得何种增益。"
+													]
+												},
+												{
+													"ENG_name": "Ending the Encounter",
+													"name": "结束遭遇",
+													"type": "entries",
+													"id": "04d",
+													"entries": [
+														"记录各组的进度。如果最后一组未能在45分钟内完成，剩余的敌人将崩解消散。最后一组完成后，指示各DM开始\"{@area 遭遇4：陵墓之门|033|x}\"。"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Encounter 4",
+									"name": "遭遇 4",
+									"type": "entries",
+									"id": "04e",
+									"entries": [
+										"分发四张陵墓大门讲义。若有四组，每组一张。若有三组，其中一组拿两张。若有两组，每组两张。若只有一组，该组拿全部四张。",
+										"协调各桌解谜并完成推进所需的步骤。如果有桌解谜进展缓慢，鼓励他们互相分享信息，包括比对讲义。",
+										"当正确的步骤完成、大门开启后，告知各DM继续进行\"{@area 遭遇5：最终的恐怖|038|x}\"。"
+									]
+								},
+								{
+									"ENG_name": "Encounter 5",
+									"name": "遭遇5",
+									"type": "entries",
+									"id": "04f",
+									"entries": [
+										"记录各组的进度，包括各桌的丧尸肉团何时进入{@status 浴血|XPHB}状态以及何时被击败。请记住以下事项：",
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"ENG_name": "Deathly Stench",
+													"name": "死亡恶臭",
+													"type": "item",
+													"entry": "在各桌的丧尸肉团进入{@status 浴血|XPHB}状态之前，丧尸肉团的死亡恶臭特性不会生效。"
+												},
+												{
+													"ENG_name": "Undead Fortitude",
+													"name": "不死坚韧",
+													"type": "item",
+													"entry": "对各组中最后残留的那团丧尸肉团而言，其不死坚韧特性不起作用\u2014\u2014如果只有一组，则该特性完全不生效。"
+												},
+												{
+													"ENG_name": "Unearthly Benefits",
+													"name": "非尘之利",
+													"type": "item",
+													"entry": "第一组击败他们的丧尸肉团后，其他组获得以下优势：其桌上的丧尸肉团无法充能其死肉埋葬攻击，且角色对抗它进行的豁免具有{@variantrule 优势|XPHB}。"
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"id": "050",
+											"entries": [
+												{
+													"ENG_name": "Conclusion",
+													"name": "结局",
+													"type": "entries",
+													"id": "051",
+													"entries": [
+														"各桌DM可自行为自己的小组主持冒险结局，但你应在需要时随时解答问题。"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Terror in Tepest",
+					"name": "坦帕斯特的恐怖",
+					"type": "section",
+					"id": "052",
+					"entries": [
+						"{@i 一场为4级角色设计的冒险，背景设定于坦帕斯特领域。}",
+						"这是恐怖季D&D Encounters的第1周冒险，设计用于填满一次90分钟的游戏时段。",
+						{
+							"ENG_name": "Adventure Background",
+							"name": "冒险背景",
+							"type": "section",
+							"id": "053",
+							"entries": [
+								"恐惧领域{@book 坦帕斯特|RHW|2|坦帕斯特}的凯勒村以南，坐落着燕麦沼村。这里的农民与工匠敬奉主母，过着田园诗般的生活。然而随着丰收节的临近，他们的筹备工作被一片混乱打断\u2014\u2014那是从{@book 席斯库斯|RHW|2|席斯库斯}逃出的第一只影渡鸦散播的乱象。",
+								"一位名叫布尔拉的德鲁伊被这只渡鸦腐化，她借助那份力量造出了一棵{@creature 死颅之树|RHW}。她企图杀害更多无辜村民，但角色及时赶到，挫败了她的计划。"
+							]
+						},
+						{
+							"ENG_name": "Beginning the Adventure",
+							"name": "开始冒险",
+							"type": "section",
+							"id": "054",
+							"entries": [
+								"阅读或展示以下内容：",
+								{
+									"type": "insetReadaloud",
+									"id": "055",
+									"entries": [
+										"迷雾合拢之际，因扎对你们说道。\"我已用水占和掷骨占卜过，如今窥得了影渡鸦的去向。沿着眼前的路走下去，就能找到第一只。祝你们好运！\""
+									]
+								},
+								"在本次D&D Encounters赛季的每部冒险中，因扎都扮演着任务发布者的角色。她并不清楚角色们最终会到达何处，但她知道迷雾之外就潜藏着一只影渡鸦。"
+							]
+						},
+						{
+							"ENG_name": "Encounter 1: Full Bellies",
+							"name": "遭遇1：饱餐一顿",
+							"type": "section",
+							"id": "056",
+							"entries": [
+								"阅读或展示以下内容：",
+								{
+									"type": "insetReadaloud",
+									"id": "057",
+									"entries": [
+										"迷雾散去，眼前是一片田园风光。时值黄昏，一座小村庄静卧在你们面前。村民们端着堆满食物的餐盘，朝村中广场的餐桌走去。",
+										"一位年轻女子看见你们，微笑着招呼起来，她草黄色的头发拢在红色头巾下。\"啊，大家快看。是旅人！来得正好，跟我们一起吃饭吧。我叫薇薇安娜，大家都叫我薇薇。坐！吃！\""
+									]
+								},
+								"薇薇把角色们招呼到其中一张餐桌旁落座，晚餐随即端了上来。用餐期间，她和其他村民询问角色们的情况，也回答他们的问题。以下内容可用于引导对话：",
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"ENG_name": "Oatmarsh",
+											"name": "燕麦沼村",
+											"type": "item",
+											"entry": "坦帕斯特领域里的这座淳朴农耕村庄自给自足，和这一带的许多小村庄一样。"
+										},
+										{
+											"ENG_name": "Feast",
+											"name": "盛宴",
+											"type": "item",
+											"entry": "此时正值丰收节，一场为期一周、感恩自然馈赠的庆典。每晚都有盛宴，这一周的最后以仪式性焚烧一尊象征饥荒的塑像作结。这项仪式能让来年冬天远离饥饿。"
+										}
+									]
+								},
+								{
+									"ENG_name": "Concluding the Encounter",
+									"name": "结束遭遇",
+									"type": "entries",
+									"id": "058",
+									"entries": [
+										"盛宴结束时，薇薇告诉角色，村里派了几名村民去准备仪式场地，那里离村子约一小时路程。他们本该回来了。她请角色前去查看那些村民的情况。",
+										{
+											"ENG_name": "Treasure",
+											"name": "宝藏",
+											"type": "entries",
+											"id": "059",
+											"entries": [
+												"薇薇出价总共50 GP请角色完成这项委托。她相信角色诚实可靠，当场预付了酬金。",
+												{
+													"ENG_name": "Adding Details",
+													"name": "补充细节",
+													"type": "inset",
+													"id": "05a",
+													"entries": [
+														"在本冒险及D&D Encounters的其他冒险中，许多细节留给DM自行补充。可以使用{@book 鸦阁魔域：魔障深藏|RHW}中有关恐惧领域的信息来增添故事要素。",
+														"此外，每部冒险的战斗遭遇都使用《{@i 鸦阁魔域：魔障深藏地图包}》中的地图。"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Encounter 2: Rough Hands",
+							"name": "遭遇2：粗暴之手",
+							"type": "section",
+							"id": "05b",
+							"entries": [
+								"当角色抵达节庆场地时，阅读或转述以下文本：",
+								{
+									"type": "insetReadaloud",
+									"id": "05c",
+									"entries": [
+										"在薇薇描述的场地上，一名大地精站在一座破败的农舍前，五名熊地精在近旁待命。地面血迹遍布。不远处，一圈矮石墙围着一棵模样怪异的树，一簇微弱的篝火照亮了它。",
+										"大地精推开农舍的门，屋内没有丝毫有人居住的痕迹。"
+									]
+								},
+								"名叫格里芙的{@creature 大地精长官|XMM}和她的五名{@creature 警卫|XMM|熊地精警卫}是受德鲁伊布尔拉召唤而来，布尔拉告诉他们可以搬进这片食物丰足、怪物稀少的地区。他们抵达后发现了血迹，但这并不是他们干的。",
+								{
+									"type": "image",
+									"id": "0a9",
+									"href": {
+										"type": "internal",
+										"path": "adventure/SoS/011-map-02-001.terror-in-tepest.webp"
+									},
+									"width": 4096,
+									"height": 3012,
+									"imageType": "map",
+									"grid": {
+										"type": "square",
+										"size": 271,
+										"offsetX": 31,
+										"offsetY": 31,
+										"scale": 2
+									},
+									"title": "地图：坦帕斯特的恐怖",
+									"credit": "Marco Bernardini"
+								},
+								{
+									"ENG_name": "Fight or Talk?",
+									"name": "战斗还是交谈？",
+									"type": "entries",
+									"id": "05d",
+									"entries": [
+										"敌人以{@variantrule 敌对【态度】|XPHB|敌对}开始本遭遇。格里芙见到角色后，喝令他们离开，因为这片地区如今归她所有。如果角色发起攻击或迟迟不走，格里芙和她的熊地精盟友就会动手。",
+										"如果角色采取{@action 影响|XPHB}动作，并通过{@dc 15}魅力（{@skill 欺瞒|XPHB}、{@skill 威吓|XPHB}或{@skill 游说|XPHB}）检定，格里芙和她的同伴会转为{@variantrule 冷漠【态度】|XPHB|冷漠}。但他们仍拒绝离开。他们声称这片地区是一个精灵给他们的，那精灵说这里已被原先的居民抛弃（这是个谎言）。",
+										"如果角色再次采取{@action 影响|XPHB}动作，并通过{@dc 10}魅力（{@skill 欺瞒|XPHB}、{@skill 威吓|XPHB}或{@skill 游说|XPHB}）检定，便可以说服格里芙和熊地精们和平离开这片地区。",
+										"格里芙如实否认与失踪村民有任何牵连。几个小时前他们到达时，血迹就已经在那里了。"
+									]
+								},
+								{
+									"ENG_name": "Concluding the Encounter",
+									"name": "结束遭遇",
+									"type": "entries",
+									"id": "05e",
+									"entries": [
+										"角色打发走或击败格里芙和熊地精后，会听到怪树那边传来的动静。当他们上前查看时，开始\"遭遇3：死亡之颅\"。",
+										{
+											"ENG_name": "Treasure",
+											"name": "宝藏",
+											"type": "entries",
+											"id": "05f",
+											"entries": [
+												"格里芙随身带着100 GP、两瓶{@item 高等治疗药水|XDMG|高等治疗药水}，以及一卷{@spell 隐形术|XPHB}的{@item 法术卷轴（二环）|XDMG|法术卷轴}。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Encounter 3: Death Heads",
+							"name": "遭遇3：死亡之颅",
+							"type": "section",
+							"id": "060",
+							"entries": [
+								"当角色接近那株植物时，阅读或转述以下文本：",
+								{
+									"type": "insetReadaloud",
+									"id": "061",
+									"entries": [
+										"眼前的巨大形体看起来像一棵长成（或被塑成）枯瘦怒容人形的树。大而圆的果实挂满枝头，隐没在翻腾的阴影之中。"
+									]
+								},
+								"当角色踏入矮石墙围起的区域时，布尔拉（中型{@creature 德鲁伊|XMM}，一位青铜色皮肤、绿发蓬乱的精灵）出现在{@creature 死颅之树|RHW}脚下。这棵树是她用影渡鸦赋予的力量造出的。八颗{@creature 死亡之颅|RHW|死亡之颅}裹在腐化的阴影中，像狰狞的饰物一样挂在树上。",
+								{
+									"ENG_name": "Losing Your Head",
+									"name": "丢了脑袋",
+									"type": "entries",
+									"id": "062",
+									"entries": [
+										"被死亡之颅打到生命值降为0的角色，自己的头颅会被换成那颗将他打{@condition 昏迷|XPHB|昏迷}的头颅。在\"丢了脑袋\"表上掷骰，决定角色的新模样。这一变化是永久的，但不会改变角色的能力。",
+										{
+											"type": "table",
+											"caption": "丢了脑袋",
+											"colLabels": [
+												"1d10",
+												"新脑袋",
+												"其他特征"
+											],
+											"colStyles": [
+												"col-2 text-center",
+												"col-5",
+												"col-5"
+											],
+											"rows": [
+												[
+													"1",
+													"巨蜥的头",
+													"独眼"
+												],
+												[
+													"2",
+													"卓尔精灵的头",
+													"叉状舌头"
+												],
+												[
+													"3",
+													"永远皱着眉的老矮人的头",
+													"总是汗津津的"
+												],
+												[
+													"4",
+													"斑马的头",
+													"大得出奇"
+												],
+												[
+													"5",
+													"猫的头",
+													"干瘪枯瘦"
+												],
+												[
+													"6",
+													"蛇的头",
+													"金牙"
+												],
+												[
+													"7",
+													"食尸鬼的头",
+													"小得出奇"
+												],
+												[
+													"8",
+													"长着五官的南瓜",
+													"总是眨眼"
+												],
+												[
+													"9",
+													"鹰的头",
+													"反光的双眼"
+												],
+												[
+													"10",
+													"巨魔的头",
+													"扭动的头发"
+												]
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Conclusion",
+									"name": "结局",
+									"type": "entries",
+									"id": "063",
+									"entries": [
+										"敌人被击败后，阅读或转述以下文本：",
+										{
+											"type": "insetReadaloud",
+											"id": "064",
+											"entries": [
+												"一道黑暗阴影从被击败的敌人身上升起。它化作一只硕大的黑渡鸦，但还没等它飞走，便随着一声刺耳的鸦叫消散于无形。迷雾在你们四周合拢时，金光与财宝的微芒映入你们的眼帘。"
+											]
+										},
+										{
+											"ENG_name": "Treasure",
+											"name": "宝藏",
+											"type": "entries",
+											"id": "065",
+											"entries": [
+												"角色在布尔拉身上和死颅之树的残骸中找到一批财宝，包括200 GP、一只装有10发{@item +1 弹药|XDMG}的{@item 艾罗娜的箭袋|XDMG}，以及一件{@item 精灵斗篷|XDMG}。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Ongoing Effect",
+									"name": "持续效应",
+									"type": "entries",
+									"id": "066",
+									"entries": [
+										"请为受影响的角色记录以下持续效应，以用于余下的每周场次。",
+										{
+											"ENG_name": "Lost Your Head",
+											"name": "丢了脑袋",
+											"type": "entries",
+											"id": "067",
+											"entries": [
+												"你的头如今变成了那颗把你打{@condition 昏迷|XPHB|昏迷}的死亡之颅的模样。这可能会影响你与其他生物的交往，由DM裁定。"
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Death in Darkon",
+					"name": "达肯的死亡",
+					"type": "section",
+					"id": "068",
+					"entries": [
+						"{@i 一场为4级角色设计的冒险，背景设定于达肯领域。}",
+						"这是D&D Encounters的第2周冒险，设计用于填满一次90分钟的游戏时段。",
+						{
+							"ENG_name": "Adventure Background",
+							"name": "冒险背景",
+							"type": "section",
+							"id": "069",
+							"entries": [
+								"在恐惧领域{@book 达肯|RHW|2|达肯}内部，活动着一支名为卡加特的秘密警察部队。卡加特成员对直属上级的命令无条件服从。在玛提拉湾城下的一座要塞里，其中一位上级经历了一场可怕的蜕变。",
+								"乔卡斯特·特鲁布曾是一名野心勃勃的卡加特特工。第二只影渡鸦将心甘情愿的特鲁布变成了夺心魔吸血鬼。如今，特鲁布打着卡加特行动的幌子，命其爪牙大肆掳掠无辜者，将他们变成吸血鬼。"
+							]
+						},
+						{
+							"ENG_name": "Beginning the Adventure",
+							"name": "开始冒险",
+							"type": "section",
+							"id": "06a",
+							"entries": [
+								"阅读或展示以下内容：",
+								{
+									"type": "insetReadaloud",
+									"id": "06b",
+									"entries": [
+										"因扎再次把你们送入迷雾，去追踪第二只影渡鸦。然而这次你们没有出现在道路上，而是落入了一条地下暗河冰冷的河水里。所幸一座木码头让你们得以爬上岸。一道梯子通向一处高台，高台尽头是一扇木门。你们的冒险就从那里开始！"
+									]
+								},
+								"角色从地图上的A区域开始。门没有上锁，也没有陷阱。他们开门时，开始\"{@area 遭遇1：不速之客|06c|x}\"。",
+								{
+									"type": "gallery",
+									"images": [
+										{
+											"type": "image",
+											"id": "0aa",
+											"href": {
+												"type": "internal",
+												"path": "adventure/SoS/012-map-03-001.death-in-darkon-dm.webp"
+											},
+											"width": 4096,
+											"height": 3012,
+											"imageType": "map",
+											"grid": {
+												"type": "square",
+												"size": 271,
+												"offsetX": 31,
+												"offsetY": 31,
+												"scale": 2
+											},
+											"title": "地图：达肯的死亡",
+											"credit": "Jared Blando"
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "adventure/SoS/013-map-03-001.death-in-darkon-player.webp"
+											},
+											"width": 4096,
+											"height": 3012,
+											"imageType": "mapPlayer",
+											"grid": {
+												"type": "square",
+												"size": 271,
+												"offsetX": 31,
+												"offsetY": 31,
+												"scale": 2
+											},
+											"title": "玩家版本",
+											"credit": "Jared Blando",
+											"mapParent": {
+												"id": "0aa"
+											}
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Encounter 1: Unwelcome Party",
+							"name": "遭遇1：不速之客",
+							"type": "section",
+							"id": "06c",
+							"entries": [
+								"阅读或展示以下内容：",
+								{
+									"type": "insetReadaloud",
+									"id": "06d",
+									"entries": [
+										"一张长桌横贯这座粗凿石室的中央。两名相貌相同的人类按着两个挣扎的侏儒，一名面色苍白的精灵冷笑着。\"再挣扎就杀了他们。\"四名手持硬头锤的矮人一边从锡杯里喝酒，一边围观。"
+									]
+								},
+								"头目是精灵扬迪（{@creature 血仆|XMM}），特鲁布的第一个受害者，至今死心塌地效忠于主人。那对双胞胎人类是里万和雷戈（{@creature 匪帮队长|XMM|匪帮队长}），扬迪的左右手。四名矮人是米拉、纳尔、奥卡和普蕾塔（{@creature 打手|XMM|打手}），卡加特里的底层成员。",
+								{
+									"ENG_name": "Battle",
+									"name": "战斗",
+									"type": "entries",
+									"id": "06e",
+									"entries": [
+										"扬迪发现了角色，命令爪牙们发起攻击，随后自己也加入战团。她和双胞胎血战至死，但矮人们只要头目一死就会投降。"
+									]
+								},
+								{
+									"ENG_name": "Concluding the Encounter",
+									"name": "结束遭遇",
+									"type": "entries",
+									"id": "06f",
+									"entries": [
+										"那两个侏儒是本娜和科特兰，一对被卡加特成员掳走的夫妇，将被放入石棺充作仪式的一部分。审问他们或任何投降的矮人，可以得知以下信息：",
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												"{@b 侏儒}。侏儒们听到特鲁布提过\"把侏儒带去地下墓穴\"。",
+												"{@b 矮人}。矮人们刚加入卡加特，对其内部布局一无所知。他们只知道头目名叫特鲁布，是她命令他们抓人去做实验。"
+											]
+										},
+										{
+											"ENG_name": "Treasure",
+											"name": "宝藏",
+											"type": "entries",
+											"id": "070",
+											"entries": [
+												"扬迪随身带着两瓶{@item 加速药水|XDMG|加速药水}，尽管她并不知道那是什么。一名矮人偷了一卷{@spell 防死结界|XPHB}的{@item 法术卷轴（四环）|XDMG|法术卷轴}，本打算拿去卖掉。这伙人还带着价值200 GP的硬币和首饰。"
+											]
+										},
+										{
+											"ENG_name": "Continuing",
+											"name": "继续",
+											"type": "entries",
+											"id": "071",
+											"entries": [
+												"西侧的门已被砖封死，唯一的前进通道是北门。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Encounter 2: Unpleasant Rest",
+							"name": "遭遇2：不得安宁",
+							"type": "section",
+							"id": "072",
+							"entries": [
+								"当角色穿过北门继续前进时，阅读或转述以下文本：",
+								{
+									"type": "insetReadaloud",
+									"id": "073",
+									"entries": [
+										"走廊两侧排满壁龛，每个壁龛里都放着一具石棺。细细的阴影卷须从每具石棺中伸出，向西再向南延伸，最后沿一段楼梯向上。"
+									]
+								},
+								"每具石棺里都装着一具尸体，唯有标有X的四具除外（见{@adventure 地图：达肯的死亡|SoS|3|地图：达肯的死亡}）。这四具石棺里躺着活人，其生命力正被缓缓抽走。这四具石棺还上了锁，设有陷阱。",
+								{
+									"ENG_name": "Opening a Trapped Sarcophagus",
+									"name": "开启陷阱石棺",
+									"type": "entries",
+									"id": "074",
+									"entries": [
+										"石棺可以通过成功的{@dc 15}敏捷（{@skill 巧手|XPHB}）检定或{@dc 20}力量（{@skill 运动|XPHB}）检定打开。如果未先拆除陷阱，尝试检定的角色将受到7（{@damage 2d6}）点力场伤害。",
+										"要拆除陷阱，角色必须通过{@dc 15}智力（{@skill 奥秘|XPHB}）检定，以正确的魔法咒语将陷阱的能量压制一分钟。检定失败者将受到7（{@damage 2d6}）点力场伤害。",
+										"石棺中的受害者都是普通人，无法提供任何关于这里正在发生什么的信息。",
+										"如果角色未能救出全部四名被困者，下一个遭遇中敌人变成血仆所需的时间减半。"
+									]
+								},
+								{
+									"ENG_name": "Concluding the Encounter",
+									"name": "结束遭遇",
+									"type": "entries",
+									"id": "075",
+									"entries": [
+										"角色可以沿着阴影缕线穿过这片区域，前往下一个遭遇。",
+										{
+											"ENG_name": "Treasure",
+											"name": "宝藏",
+											"type": "entries",
+											"id": "076",
+											"entries": [
+												"角色救出的第一名受害者送给他们一枚{@item 防护戒指|XDMG}和一只价值50 GP的手镯。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Encounter 3: Unhappy Surprise",
+							"name": "遭遇3：不幸的惊变",
+							"type": "section",
+							"id": "077",
+							"entries": [
+								"阅读或展示以下内容：",
+								{
+									"type": "insetReadaloud",
+									"id": "078",
+									"entries": [
+										"楼梯顶端是一间以四座雕像为主的房间。阴影缕线伸向雕像，让每座雕像都裹在翻腾的阴影之中。房间四角、各座雕像的后面，各站着一名恍若被催眠的人类。"
+									]
+								},
+								"这四名人类（{@creature 打手|XMM|打手}）正在被转化为受特鲁布操控的{@creature 血仆|XMM}。除非角色杀死这些打手、杀死特鲁布，或切断石棺与雕像之间的连接，否则每8轮就会有一名打手变成血仆（如果角色在上一遭遇中救援失败，则改为每4轮）。人类一旦变成血仆，就会在特鲁布的命令下攻击角色。",
+								"特鲁布（{@creature 夺心魔吸血鬼|RHW}）就在东侧那扇未上锁、无陷阱的门后。她一听到主厅里有任何动静，就会出现并发起攻击。如果第二个遭遇中有不止一具石棺被弄失效，她也会察觉不对。",
+								{
+									"ENG_name": "Zone of Psychic Pain",
+									"name": "心灵痛苦区域",
+									"type": "entries",
+									"id": "079",
+									"entries": [
+										"雕像之间的10尺见方区域回荡着心灵能量。进入该区域或在其中开始回合的生物，必须通过{@dc 10}智力豁免。豁免失败者受到7（{@damage 2d6}）点心灵伤害，被猛抛到北面走廊尽头，额外受到3（{@damage 1d6}）点钝击伤害，并陷入{@condition 倒地|XPHB}状态。以此方式受到心灵伤害的角色，前额还会被烙上亚扎林印记（见\"{@area 持续效应|07c|x}\"）。",
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "adventure/SoS/014-03-001.unhappy-surprise.webp"
+											},
+											"width": 850,
+											"height": 2123,
+											"credit": "David Astruga"
+										}
+									]
+								},
+								{
+									"ENG_name": "Conclusion",
+									"name": "结局",
+									"type": "entries",
+									"id": "07a",
+									"entries": [
+										"如果角色击败特鲁布，残余的阴影碎缕会凝聚成一只影渡鸦，它愤怒地嘶叫一声，随即消散。角色可以搜查建筑群的其余部分寻找财宝，但其余再无值得注意之处。角色离开要塞时，迷雾再次将他们卷走。",
+										{
+											"ENG_name": "Treasure",
+											"name": "宝藏",
+											"type": "entries",
+											"id": "07b",
+											"entries": [
+												"搜遍要塞其余部分，总共可以找到价值200 GP的硬币和宝石，以及一套{@item +1 护甲|XDMG|+1 护甲（轻型或重型）}。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Ongoing Effect",
+									"name": "持续效应",
+									"type": "entries",
+									"id": "07c",
+									"entries": [
+										"请为受影响的角色记录以下持续效应，以用于余下的每周场次。",
+										{
+											"ENG_name": "Symbol of Azalin",
+											"name": "亚扎林印记",
+											"type": "entries",
+											"id": "07d",
+											"entries": [
+												"你被烙上了亚扎林的印记：一枚干枯的头骨。你的先攻检定具有{@variantrule 优势|XPHB}，但体质豁免具有{@variantrule 劣势|XPHB}。"
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Blood in Borca",
+					"name": "博卡的血色",
+					"type": "section",
+					"id": "07e",
+					"entries": [
+						"{@i 一场为5级角色设计的冒险，背景设定于博卡领域。}",
+						"这是D&D Encounters的第3周冒险，设计用于填满一次90分钟的游戏时段。",
+						{
+							"ENG_name": "Adventure Background",
+							"name": "冒险背景",
+							"type": "section",
+							"id": "07f",
+							"entries": [
+								"{@book 博卡|RHW|2|博卡}是一个充斥着阴谋与背叛的恐惧领域。贵族家族为了攫取权力结成临时同盟，转而又会为了一丝一毫的更多利益出卖盟友。",
+								"诺布利斯科夫与欧赞尼克两大家族就缔结了这样一纸同盟，而这同盟即将因第三只影渡鸦而破裂，角色们恰好身处这场冲突的漩涡中心。",
+								{
+									"ENG_name": "Borca Intrigue",
+									"name": "博卡权谋",
+									"type": "inset",
+									"id": "080",
+									"entries": [
+										"诺布利斯科夫与欧赞尼克两大家族固然维持着互利的生意伙伴关系，但正如博卡的大多数家族一样，暗中算计从未停歇，人人都想压对方一头。你可以利用以下细节，为阿弗里与安西洛这对机会主义者的关系增添更多深度。",
+										"诺布利斯科夫家族的财富来自向盲信的主顾兜售\"神效\"灵药、操办招摇撞骗的通灵会，总之是竭尽所能利用超自然知识牟利。他们内部还藏着更深的秘密\u2014\u2014家族中许多人信奉奥西巴斯教团，一个不惜一切代价寻求逃离迷雾的邪恶教团。",
+										"欧赞尼克家族凭借冶金与奇械工艺在博卡维持着受人尊敬的地位。他们为出价最高者效力，打造出的奇妙机械常被用于可怕的目的。他们最可靠的客户是法尔科夫尼亚的黑暗领主弗拉德斯卡·德拉科夫将军\u2014\u2014她用欧赞尼克的造物对抗围困她的丧尸大军，也用来镇压自己的子民。"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Beginning the Adventure",
+							"name": "开始冒险",
+							"type": "section",
+							"id": "081",
+							"entries": [
+								"阅读或展示以下内容：",
+								{
+									"type": "insetReadaloud",
+									"id": "082",
+									"entries": [
+										"因扎把你们送入迷雾，去追猎第三只影渡鸦，这一次你们出现在一片被雨水浸透的土地上。一条道路蜿蜒穿过松林，远处一座四周绝壁环绕的陡峭山顶上，矗立着一座城堡。",
+										"前方的路上，一辆马车被咆哮的狼群围住，三具护卫的尸体横陈在更大一群狼的尸骸之间。一名身着号衣的护卫三记快刀劈翻三头野兽，最后一匹狼却跃起撕开了他的喉咙。马车里传出惊慌的呼喊。"
+									]
+								},
+								"这一幕结束后，路上只剩一匹{@creature 狼|XMM}，且它只剩1点生命值。角色若出手干预，可以轻松干掉这匹狼，救下马车上的乘客：一位名叫阿弗里·欧赞尼克的人类{@creature 贵族|XMM}。",
+								"如果角色消灭了狼，他便从马车中走出，向角色们说道：",
+								{
+									"type": "insetReadaloud",
+									"id": "083",
+									"entries": [
+										"\"多谢相救！我从没见过这么多狼。我本以为四名护卫足矣，但显然此地的危险比人们告诉我的更甚。我是阿弗里·欧赞尼克，倘若诸位愿意赏光听我说几句，我还有事相求。\""
+									]
+								},
+								"阿弗里告诉角色，他要前往朋友兼生意伙伴安西洛·诺布利斯科夫的宅邸，出席一场为他举办的晚宴。他出价总共100 GP雇角色充当护卫。他不觉得会有麻烦，但在博卡，再怎么小心也不为过。",
+								"当角色与阿弗里抵达城堡时，阅读或转述以下文本：",
+								{
+									"type": "insetReadaloud",
+									"id": "084",
+									"entries": [
+										"马车驶至城堡门前，一支迎候队伍早已等候在那里。一名衣着笔挺的年轻人类从一队卫兵中走出，挥手致意。\"那就是安西洛。\"阿弗里说。",
+										"随后你们注意到笼罩着安西洛的阴影。他脸上浮起一抹恶毒的笑。阴影从他身上奔涌而出，吞没了你们的马车。世界陷入黑暗，你们的意识随之中断。"
+									]
+								},
+								"角色陷入{@condition 昏迷|XPHB|昏迷}状态，被带进安西洛的城堡。开始\"遭遇1：快速修复\"。"
+							]
+						},
+						{
+							"ENG_name": "Encounter 1: Quick Fix",
+							"name": "遭遇1：快速修复",
+							"type": "section",
+							"id": "085",
+							"entries": [
+								"阅读或展示以下内容：",
+								{
+									"type": "insetReadaloud",
+									"id": "086",
+									"entries": [
+										"你们在一间屋子里恢复知觉，屋里管道蒸汽腾腾，墙壁上排列着巨大的阀门，一只机械蜘蛛趴在地板上。南面一扇上锁的门是唯一的出口。除了你们这队人和阿弗里，这里再无他人。",
+										"一个讥讽的声音在房间里回荡，仿佛是从管道里传来的。\"多谢你的耐心等候，阿弗里。现在，你可以做我请你来要做的事了。用你在金属与魔法上的造艺修好我的宠物。动作快些，你或许还能活着被赎回家族。我额外加了点动力。\""
+									]
+								},
+								"安西洛话音刚落，一名{@creature 火矮人烈炎术师|XMM}出现在房间中央，攻击离它最近的生物。但它不会伤害阿弗里。",
+								{
+									"type": "image",
+									"id": "0ab",
+									"href": {
+										"type": "internal",
+										"path": "adventure/SoS/015-map-04-001.blood-in-borca.webp"
+									},
+									"width": 2841,
+									"height": 4096,
+									"imageType": "map",
+									"grid": {
+										"type": "square",
+										"size": 184,
+										"offsetX": 23,
+										"offsetY": 22
+									},
+									"title": "地图：博卡的血色",
+									"credit": "Marco Bernardini"
+								},
+								{
+									"ENG_name": "Fixing the Spider",
+									"name": "修理蜘蛛",
+									"type": "entries",
+									"id": "087",
+									"entries": [
+										"机械蜘蛛可以由相邻生物花费一个动作使用{@item 修补工具|XPHB}并成功通过{@dc 20}智力（{@skill 奥秘|XPHB}或{@skill 调查|XPHB}）检定来修理。阿弗里（中型{@creature 贵族|XMM}）在先攻计数0行动。轮到他时，他的检定自动成功。",
+										"要完全修好蜘蛛，总共需要五次检定成功。角色也可以尝试检定，但若检定结果为15或更低，就会抵消此前的一次成功，并需要额外再补一次成功。",
+										"蜘蛛修好后，火矮人烈炎术师会被吸进蜘蛛体内充当动力源，再也无法攻击。"
+									]
+								},
+								{
+									"ENG_name": "Concluding the Encounter",
+									"name": "结束遭遇",
+									"type": "entries",
+									"id": "088",
+									"entries": [
+										"南门是离开这间屋子的唯一途径。角色可以采取{@action 操作|XPHB}动作并成功通过{@dc 10}敏捷（{@skill 巧手|XPHB}）检定来撬锁。如果角色撬不开门，阿弗里可以代劳。",
+										{
+											"ENG_name": "Treasure",
+											"name": "宝藏",
+											"type": "entries",
+											"id": "089",
+											"entries": [
+												"搜查房间的话，角色可以找到价值100 GP的机械零件和一卷{@spell 火球术|XPHB}的{@item 法术卷轴（三环）|XDMG|法术卷轴}。机械蜘蛛可视为受角色控制的{@creature 活化盔甲|XMM}。可惜的是，它在第一次造成或受到伤害时就会散架。"
+											]
+										},
+										{
+											"ENG_name": "Continuing",
+											"name": "继续",
+											"type": "entries",
+											"id": "08a",
+											"entries": [
+												"角色离开房间时，开始下一个遭遇。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Encounter 2: Slow Burn",
+							"name": "遭遇2：文火慢熬",
+							"type": "section",
+							"id": "08b",
+							"entries": [
+								"阅读或展示以下内容：",
+								{
+									"type": "insetReadaloud",
+									"id": "08c",
+									"entries": [
+										"这间实验室里摆满了奥术器材。安西洛站在通往南面的门边，两名身着长袍的邪教徒和四名持械仆从挡在你们与他之间。阴影化作奥术纹身在他的皮肤上流转。\"多谢诸位帮忙。现在，你们可以死了。\""
+									]
+								},
+								"安西洛（中型{@creature 奥西巴斯祭司|RHW}）指挥着两名{@creature 邪教狂信者|XMM|邪教狂信者}和四名{@creature 间谍|XMM|间谍}。只有间谍会投降，且前提是安西洛和狂信者已被击败。如果角色杀了安西洛，将获得\"双人作伴\"持续效应（{@area 见下文|091|x}）。",
+								{
+									"ENG_name": "Arcane Mishaps",
+									"name": "奥术灾变",
+									"type": "entries",
+									"id": "08d",
+									"entries": [
+										"每轮结束时，房间东北角和西北角的一只水槽会释放出一股电流。这些水槽10尺内的任何生物必须通过{@dc 15}体质豁免。豁免失败者受到10（{@damage 3d6}）点闪电伤害，成功则伤害减半。"
+									]
+								},
+								{
+									"ENG_name": "Conclusion",
+									"name": "结局",
+									"type": "entries",
+									"id": "08e",
+									"entries": [
+										"敌人被击败后，安西洛身上的阴影纹身凝聚成一只影渡鸦，随即爆散成一团魔法微光，消散于空中。角色从南门离开时，会出现在城堡下方的一面崖壁上。迷雾迅速合拢，将他们卷向最后的冒险。",
+										{
+											"ENG_name": "Treasure",
+											"name": "宝藏",
+											"type": "entries",
+											"id": "08f",
+											"entries": [
+												"在房间的器材之中，角色可以找到200 GP、两瓶{@item 山丘巨人之力药水|XDMG|山丘巨人之力药水}和一根{@item +1 战法师魔杖|XDMG}。如果阿弗里还活着，他还会额外拿出200 GP和一副{@item 防御护腕|XDMG}。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Ongoing Effect",
+									"name": "持续效应",
+									"type": "entries",
+									"id": "090",
+									"entries": [
+										"如适用，请为相关角色记录以下持续效应，以用于余下的每周场次。",
+										{
+											"ENG_name": "Two's Company",
+											"name": "双人作伴",
+											"type": "entries",
+											"id": "091",
+											"entries": [
+												"你杀死了奥西巴斯祭司，如今你的躯体中栖居着奥西巴斯的精魂。她暴戾而偏狭，这会影响你的性情。你在涉及亡灵与迷雾的智力属性检定上具有{@variantrule 优势|XPHB}。"
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Victory in Valachan",
+					"name": "沃拉昆的胜利",
+					"type": "section",
+					"id": "092",
+					"entries": [
+						"{@i 一场为5级角色设计的冒险，背景设定于沃拉昆领域。}",
+						"这是D&D Encounters的第4周冒险，设计用于填满一次90分钟的游戏时段。",
+						{
+							"ENG_name": "Adventure Background",
+							"name": "冒险背景",
+							"type": "section",
+							"id": "093",
+							"entries": [
+								"恐惧领域{@book 沃拉昆|RHW|2|沃拉昆}只奉行一条法则：猎杀，或被猎杀。这里的人们在恐惧中苟活，从一处庇护所奔逃到另一处，身后始终紧随着以弱者为食的掠食者。角色们被卷入一场求生竞逐\u2014\u2014最后一只渡鸦之影已经附身于一头真正可怕的掠食者。"
+							]
+						},
+						{
+							"ENG_name": "Beginning the Adventure",
+							"name": "开始冒险",
+							"type": "section",
+							"id": "094",
+							"entries": [
+								"阅读或展示以下内容：",
+								{
+									"type": "insetReadaloud",
+									"id": "095",
+									"entries": [
+										"因扎把你们送入迷雾，去追猎第四只、也是最后一只影渡鸦，这一次迎接你们的是丛林景象。片刻安宁之后，二十来个惊恐的人沿着丛林小径从你们身边奔逃而过。",
+										"\"快跑！\"奔逃的人群中有一人喊道。\"不跑就没命！\""
+									]
+								},
+								"角色从地图上小径的南段开始。",
+								{
+									"type": "image",
+									"id": "0ac",
+									"href": {
+										"type": "internal",
+										"path": "adventure/SoS/016-map-05-001.victory-in-valachan.webp"
+									},
+									"width": 4096,
+									"height": 3012,
+									"imageType": "map",
+									"grid": {
+										"type": "square",
+										"size": 271,
+										"offsetX": 31,
+										"offsetY": 31,
+										"scale": 2
+									},
+									"title": "地图：沃拉昆的胜利",
+									"credit": "Jared Blando"
+								}
+							]
+						},
+						{
+							"ENG_name": "Encounter 1: Run!",
+							"name": "遭遇1：快跑！",
+							"type": "section",
+							"id": "096",
+							"entries": [
+								"角色作出反应后，阅读或转述以下文本：",
+								{
+									"type": "insetReadaloud",
+									"id": "097",
+									"entries": [
+										"在你们前方，惊恐的人群在崎岖不平的小径上奔逃。突然，什么东西从茂密的丛林中窜出，将一名奔跑的人拽倒，拖进了树丛。紧接着又一人遭殃。\"妈妈！爸爸！\"年纪稍小的奔跑者中有一个喊道。她停下脚步，向枝叶间张望。随后她也被拖了进去。呼救的尖叫声在林间回荡。然后，一切归于寂静。"
+									]
+								},
+								"这一家三口是三名中型人类{@creature 平民|XMM|平民}：十几岁的女儿薇诺塔、母亲帕拉和父亲博兹特。除非角色出手干预，否则他们会被怪物杀害：六只{@creature 相位蜘蛛|XMM|相位蜘蛛}。",
+								{
+									"ENG_name": "The Unnatural Wonders",
+									"name": "诡谲之地",
+									"type": "entries",
+									"id": "098",
+									"entries": [
+										"在沃拉昆，这片土地本身就危机四伏。以下地形效应成立：",
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												"{@b 地形}。小径之外的所有地形均为{@variantrule 困难地形|XPHB}。",
+												"{@b 缠缚}。角色第一次进入与树干相邻的格子时，树木会试图将其缠住。该角色必须通过{@dc 13}力量豁免，否则陷入{@condition 受擒|XPHB}状态（逃脱{@dc 13}）。那棵树一旦受到任何伤害，就会失去活性，放开所有被{@condition 受擒|XPHB}的角色。",
+												"{@b 蛛网}。对蜘蛛以外的生物而言，结网区域的效果如同被{@spell 蛛网术|XPHB}覆盖。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Concluding the Encounter",
+									"name": "结束遭遇",
+									"type": "entries",
+									"id": "099",
+									"entries": [
+										"如果角色出手干预并吸引住蜘蛛的注意力，这一家三口就会获救。为表感谢，他们会献上财宝并提供情报。",
+										{
+											"ENG_name": "Treasure",
+											"name": "宝藏",
+											"type": "entries",
+											"id": "09a",
+											"entries": [
+												"这一家人送给角色们总价值300 GP的首饰和三瓶{@item 高等治疗药水|XDMG|高等治疗药水}。"
+											]
+										},
+										{
+											"ENG_name": "Continuing",
+											"name": "继续",
+											"type": "entries",
+											"id": "09b",
+											"entries": [
+												"获救的一家人告诉角色，一个巨大的蝙蝠状阴影已经追了他们好几个小时。它还沿途控制了各种掠食者，变得更加危险。",
+												"这家人告诉角色，如果他们守在这条小径上，那道阴影及其操纵的掠食者很快就会循着他们的气味追来。角色或许可以设下埋伏，打追兵一个措手不及。奔逃的人里没有战士，但角色显然是了不起的英雄，说不定能击败敌人！",
+												{
+													"ENG_name": "Ambush",
+													"name": "伏击",
+													"type": "entries",
+													"id": "09c",
+													"entries": [
+														"要想隐蔽并设下埋伏，角色必须全部采取{@action 躲藏|XPHB}动作，并通过一次团队{@dc 15}敏捷（{@skill 隐匿|XPHB}）检定。角色也可以改用智力（{@skill 自然|XPHB}）检定，凭借对这片奇异动植物群的了解融入其中。如果队伍检定成功，下一个遭遇中的敌人将陷入{@status 突袭|XPHB}状态。"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Encounter 2: Ambush?",
+							"name": "遭遇2：埋伏？",
+							"type": "section",
+							"id": "09d",
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "adventure/SoS/017-05-001.ambush.webp"
+									},
+									"width": 1700,
+									"height": 1114,
+									"credit": "Jarel Threat"
+								},
+								"角色隐蔽完毕后，阅读或转述以下文本：",
+								{
+									"type": "insetReadaloud",
+									"id": "09e",
+									"entries": [
+										"一只巨大的双足恐龙咆哮着撞破丛林。它身后飞着一个由阴影构成的带翼生物。它形似蚊蝠与人的结合体，口器四处探动，仿佛在嗅探空气。"
+									]
+								},
+								"最后的影渡鸦已化身为{@creature 蚊蝠怪|RHW}，并用魔法控制了一头{@creature 霸王龙|XMM}。",
+								{
+									"ENG_name": "Help from Friends",
+									"name": "朋友的帮助",
+									"type": "entries",
+									"id": "09f",
+									"entries": [
+										"如果角色救下了全家人，这一家三口会藏身丛林枝叶间，在先攻计数1时向敌人投掷石块。他们每人的攻击检定为{@hit 2}，命中时造成2（{@damage 1d4}）点钝击伤害。在得到指示时，他们也可以用动作以其他方式协助角色，但会尽量避开危险。"
+									]
+								},
+								{
+									"ENG_name": "T-Rex Taming",
+									"name": "驯服霸王龙",
+									"type": "entries",
+									"id": "0a0",
+									"entries": [
+										"蚊蝠怪被击败后，霸王龙便从魔法控制中解脱。它仍是一台杀戮机器，但角色可以尝试采取{@action 影响|XPHB}动作，并通过{@dc 20}感知（{@skill 驯兽|XPHB}）检定，引开霸王龙或诱使其离开这片区域。"
+									]
+								},
+								{
+									"ENG_name": "Conclusion",
+									"name": "结局",
+									"type": "entries",
+									"id": "0a1",
+									"entries": [
+										"两个敌人都被击败或赶走后，角色可以搜查残骸并找到财宝。获救的奔跑者们向角色道谢，随后迷雾最后一次涌来。",
+										{
+											"type": "insetReadaloud",
+											"id": "0a2",
+											"entries": [
+												"阴影生物消散开来，只留下一具外表寻常的死渡鸦。尸身腐烂、沉入泥土，仿佛百年光阴在短短数秒间流逝。",
+												"随后迷雾再次将你们吞没，因扎走上前来。\"你们已击败了最后的阴影，眼下一切安好。如果你们愿意，我可以送你们回家。否则，你们将返回席斯库斯。\""
+											]
+										},
+										{
+											"ENG_name": "Treasure",
+											"name": "宝藏",
+											"type": "entries",
+											"id": "0a3",
+											"entries": [
+												"角色找到了价值300 GP的硬币和宝石。因扎送给角色一件{@item 节肢斗篷|XDMG}和一枚{@item 自由行动戒指|XDMG}。",
+												"因扎还提出再赐予一份祝福。如果角色接受，便获得{@i 因扎的终末祝福}，详见下文。"
+											]
+										}
+									]
+								},
+								{
+									"ENG_name": "Ongoing Effect",
+									"name": "持续效应",
+									"type": "entries",
+									"id": "0a4",
+									"entries": [
+										"角色可以获得最后一个持续效应。如果角色已拥有\"因扎的祝福\"，则此效应将其取代。",
+										{
+											"ENG_name": "Inza's Final Blessing",
+											"name": "因扎的终末祝福",
+											"type": "entries",
+											"id": "0a5",
+											"entries": [
+												"你可以用附赠动作使用此祝福，回复{@dice 4d4 + 4}点生命值。完成一次长休后，你恢复此能力的使用。此外，任何针对因扎的攻击都具有{@variantrule 劣势|XPHB}，而你在对抗因扎法术或能力的豁免上也具有{@variantrule 劣势|XPHB}。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Continue Your Adventures",
+							"name": "继续你的冒险",
+							"type": "section",
+							"id": "0a6",
+							"entries": [
+								"本次D&D Encounters游玩场次到此告一段落，但乐趣不必就此止步！{@book 鸦阁魔域：魔障深藏|RHW}中还有更多已经拟好大纲的冒险点子，只需稍加准备，就能让你的队伍继续在恐惧诸领域间来一场毛骨悚然的旅程。以下是那本书里几个适合继续游玩的章节：",
+								{
+									"type": "list",
+									"items": [
+										"《{@book 苦难群岛|RHW|2|苦难群岛}》，一场设定于{@book 拉莫迪亚|RHW|2|拉莫迪亚}的5级冒险\u2014\u2014那是一个奉行无道德科学的冰寒领域。",
+										"《{@book 致命薰衣草|RHW|2|致命薰衣草}》，一场设定于{@book 博卡|RHW|2|博卡}的5级冒险，角色可以故地重游。",
+										"《{@book 鲜血藤蔓坊|RHW|2|鲜血藤蔓坊}》，一场设定于传奇领域{@book 巴洛维亚|RHW|2|巴洛维亚}的6级冒险\u2014\u2014那是{@book 施特拉德·冯·扎洛维奇|RHW|2|施特拉德·冯·扎洛维奇}的家园。"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Credits",
+					"name": "制作组",
+					"type": "section",
+					"id": "0a7",
+					"entries": [
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"columns": 2,
+							"items": [
+								{
+									"ENG_name": "Project Lead:",
+									"name": "项目负责人：",
+									"type": "item",
+									"entry": "Chris Tulach"
+								},
+								{
+									"ENG_name": "Designer:",
+									"name": "设计师：",
+									"type": "item",
+									"entry": "Shawn Merwin"
+								},
+								{
+									"ENG_name": "Editor:",
+									"name": "编辑：",
+									"type": "item",
+									"entry": "Sadie Lowry"
+								},
+								{
+									"ENG_name": "Graphic Designer:",
+									"name": "平面设计师：",
+									"type": "item",
+									"entry": "Rich Lescouflair"
+								},
+								{
+									"ENG_name": "Cover Illustrator:",
+									"name": "封面插画师：",
+									"type": "item",
+									"entry": "Pauline Voss"
+								},
+								{
+									"ENG_name": "Interior Illustrators:",
+									"name": "内页插画师：",
+									"type": "item",
+									"entry": "Rowan Holloway, Valera Lutfullina, Ivan Shavrin, Hinchel Or"
+								},
+								{
+									"ENG_name": "Cartographers:",
+									"name": "制图师：",
+									"type": "item",
+									"entry": "Jared Blando, Marco Bernardini"
+								},
+								{
+									"ENG_name": "Consultant:",
+									"name": "顾问：",
+									"type": "item",
+									"entry": "Shawn Banerjee"
+								},
+								{
+									"ENG_name": "Producer:",
+									"name": "出品人：",
+									"type": "item",
+									"entry": "Bill Benham"
+								},
+								{
+									"ENG_name": "D&D Beyond Digital Publishing:",
+									"name": "D&D Beyond数字出版：",
+									"type": "item",
+									"entry": "Randy Balisalisa, Bailey Vaughan, Janelle Bawayan, Lauren Erwin, Giuliana Funkhouser, Cameron R. Powell"
+								}
+							]
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "adventure/SoS/018-06-001.dark-fantasy.webp"
+							},
+							"width": 850,
+							"height": 1162,
+							"credit": "Ivan Shavrin"
+						}
+					]
+				}
+			]
+		}
+	]
+}

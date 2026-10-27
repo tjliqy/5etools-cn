@@ -1790,7 +1790,8 @@
 					"ENG_name": "First Command Word",
 					"name": "第一命令语",
 					"type": "save",
-					"description": "消耗1充能。一个你在[[lookup @range.value activity=7XzQQwSvt8sLkYgk]]尺内可以看见的生物必须成功通过一次[[/save format=long activity=7XzQQwSvt8sLkYgk]]，否则陷入&Reference[Incapacitated apply=false]状态，持续1分钟。",
+					"foundryId": "bellowsOfStrangu",
+					"description": "消耗1充能。一个你在[[lookup @range.value activity=bellowsOfStrangu]]尺内可以看见的生物必须成功通过一次[[/save format=long activity=bellowsOfStrangu]]豁免，否则将获得&Reference[Incapacitated apply=false]状态，持续1分钟。",
 					"activation": {
 						"type": "action"
 					},
@@ -1838,7 +1839,8 @@
 					"ENG_name": "Second Command Word",
 					"name": "第二命令语",
 					"type": "save",
-					"description": "消耗3点充能。[[lookup @target.template.size activity=sMmORTMiEdb6K8XK]]尺[[lookup @target.template.type capitalize activity=sMmORTMiEdb6K8XK]]内的每个生物必须成功通过一个[[/save format=long activity=sMmORTMiEdb6K8XK]]，否则将获得&Reference[Incapacitated apply=false]状态，持续1分钟。",
+					"foundryId": "bellowsOfStrang1",
+					"description": "消耗3充能。位于[[lookup @target.template.size activity=bellowsOfStrang1]]尺[[lookup @target.template.type capitalize activity=bellowsOfStrang1]]内的每个生物必须成功通过一次[[/save format=long activity=bellowsOfStrang1]]，否则将获得&Reference[Incapacitated apply=false]状态，持续1分钟。",
 					"activation": {
 						"type": "action"
 					},
@@ -6294,7 +6296,8 @@
 					"ENG_name": "Dissuading Aura",
 					"name": "劝阻灵光",
 					"type": "utility",
-					"description": "创造一个[[lookup @target.template.size activity=sfhYAB3hkwYoFsOy]]尺的劝阻灵光散发并放置其模板。每当符合条件的生物必须对该灵光进行豁免检定时，使用{@b 劝阻灵光豁免}。",
+					"foundryId": "dissuader",
+					"description": "创造一个[[lookup @target.template.size activity=dissuader]]尺的劝阻灵光散发并放置其模板。每当符合条件的生物必须对该灵光进行豁免检定时，使用{@b 劝阻灵光豁免}。",
 					"activation": {
 						"type": "action"
 					},
@@ -6369,7 +6372,8 @@
 					"ENG_name": "Repel",
 					"name": "击退",
 					"type": "save",
-					"description": "创造[[lookup @target.template.size activity=KvHAPfJlexViNI2O]]尺的辐射区域，并为你选择的区域内每个生物进行一次[[/save format=long activity=KvHAPfJlexViNI2O]]检定。使每个检定失败的生物沿直线远离你移动至多30尺。",
+					"foundryId": "dissuader1",
+					"description": "创建一个[[lookup @target.template.size activity=dissuader1]]尺的辐射区域，并为你选择的区域内每个生物进行一次[[/save format=long activity=dissuader1]]。使每个豁免失败的生物沿直线远离你移动最多30尺。",
 					"activation": {
 						"type": "reaction",
 						"condition": "当一个生物进入你周围5尺内的空间时。"

@@ -793,15 +793,15 @@
 				{
 					"title": "每环法术位",
 					"colLabels": [
-						"{@filter 1st|spells|level=1|class=牧师}",
-						"{@filter 2nd|spells|level=2|class=牧师}",
-						"{@filter 3rd|spells|level=3|class=牧师}",
-						"{@filter 4th|spells|level=4|class=牧师}",
-						"{@filter 5th|spells|level=5|class=牧师}",
-						"{@filter 6th|spells|level=6|class=牧师}",
-						"{@filter 7th|spells|level=7|class=牧师}",
-						"{@filter 8th|spells|level=8|class=牧师}",
-						"{@filter 9th|spells|level=9|class=牧师}"
+						"{@filter 1|spells|level=1|class=牧师}",
+						"{@filter 2|spells|level=2|class=牧师}",
+						"{@filter 3|spells|level=3|class=牧师}",
+						"{@filter 4|spells|level=4|class=牧师}",
+						"{@filter 5|spells|level=5|class=牧师}",
+						"{@filter 6|spells|level=6|class=牧师}",
+						"{@filter 7|spells|level=7|class=牧师}",
+						"{@filter 8|spells|level=8|class=牧师}",
+						"{@filter 9|spells|level=9|class=牧师}"
 					],
 					"rowsSpellProgression": [
 						[
@@ -3939,7 +3939,7 @@
 							"{@spell 枯萎术}, {@spell 防死结界}"
 						],
 						[
-							"9th",
+							"9环",
 							"{@spell 防活物护罩}, {@spell 死云术}"
 						]
 					]
@@ -4108,7 +4108,7 @@
 							"{@spell 秘法眼}, {@spell 困惑术}"
 						],
 						[
-							"9th",
+							"9环",
 							"{@spell 通晓传奇}, {@spell 探知术}"
 						]
 					]
@@ -4294,7 +4294,7 @@
 							"{@spell 防死结界}, {@spell 信仰守卫}"
 						],
 						[
-							"9th",
+							"9环",
 							"{@spell 群体疗伤术}, {@spell 死者复活}"
 						]
 					]
@@ -4475,7 +4475,7 @@
 							"{@spell 信仰守卫}, {@spell 火墙术}"
 						],
 						[
-							"9th",
+							"9环",
 							"{@spell 焰击术}, {@spell 探知术}"
 						]
 					]
@@ -4645,7 +4645,7 @@
 							"{@spell 支配野兽}, {@spell 擒抱藤}"
 						],
 						[
-							"9th",
+							"9环",
 							"{@spell 疫病虫群}, {@spell 树跃术}"
 						]
 					]
@@ -4814,7 +4814,7 @@
 							"{@spell 操控水体}, {@spell 冰风暴}"
 						],
 						[
-							"9th",
+							"9环",
 							"{@spell 湮灭波}, {@spell 疫病虫群}"
 						]
 					]
@@ -4984,7 +4984,7 @@
 							"{@spell 任意门}, {@spell 变形术}"
 						],
 						[
-							"9th",
+							"9环",
 							"{@spell 支配类人}, {@spell 篡改记忆}"
 						]
 					]
@@ -5140,7 +5140,7 @@
 							"{@spell 行动自如}, {@spell 石肤术}"
 						],
 						[
-							"9th",
+							"9环",
 							"{@spell 焰击术}, {@spell 定身怪物}"
 						]
 					]
@@ -5318,7 +5318,7 @@
 							"{@spell 防死结界}, {@spell 任意门}"
 						],
 						[
-							"9th",
+							"9环",
 							"{@spell 支配类人}, {@spell 篡改记忆}"
 						]
 					]
@@ -5505,7 +5505,7 @@
 							"{@spell 生命灵光}, {@spell 信仰守卫}"
 						],
 						[
-							"9th",
+							"9环",
 							"{@spell 原力法阵}, {@spell 群体疗伤术}"
 						]
 					]
@@ -5680,7 +5680,7 @@
 							"{@spell 支配野兽}, {@spell 石肤术}"
 						],
 						[
-							"9th",
+							"9环",
 							"{@spell 湮灭波}, {@spell 疫病虫群}"
 						]
 					]
@@ -5854,7 +5854,7 @@
 							"{@spell 火焰护盾||火焰护盾（仅温暖护盾）}, {@spell 行动自如}"
 						],
 						[
-							"9th",
+							"9环",
 							"{@spell 湮灭波}, {@spell 焰击术}"
 						]
 					]
@@ -6027,7 +6027,7 @@
 							"{@spell 秘法眼}, {@spell 李欧蒙秘藏箱}"
 						],
 						[
-							"9th",
+							"9环",
 							"{@spell 异界誓缚}, {@spell 传送法阵}"
 						]
 					]
@@ -6221,7 +6221,7 @@
 							"{@spell 强迫术}, {@spell 生物定位术}"
 						],
 						[
-							"9th",
+							"9环",
 							"{@spell 通神术}, {@spell 支配类人}"
 						]
 					]
@@ -6482,7 +6482,7 @@
 									"{@spell 净化灵光}, {@spell 欧提路克弹力法球}"
 								],
 								[
-									"9th",
+									"9环",
 									"{@spell 高等复原术}, {@spell 拉瑞心灵联结}"
 								]
 							]
@@ -6712,7 +6712,7 @@
 									"{@spell 生命灵光}, {@spell 高等隐形术}"
 								],
 								[
-									"9th",
+									"9环",
 									"{@spell 原力法阵}, {@spell 假象术}"
 								]
 							]
@@ -6917,7 +6917,7 @@
 							"{@spell 鬼斧神工}, {@spell 火墙术}"
 						],
 						[
-							"9th",
+							"9环",
 							"{@spell 活化物件}, {@spell 造物术}"
 						]
 					]
@@ -7101,7 +7101,7 @@
 							"{@spell 枯萎术}, {@spell 防死结界}"
 						],
 						[
-							"9th",
+							"9环",
 							"{@spell 防活物护罩}, {@spell 死者复活}"
 						]
 					]
