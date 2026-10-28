@@ -14,7 +14,17 @@ python3 <skill-dir>/scripts/homebrew_translation_chunks.py plan \
 
 Planning changes the ordinary task to `chunked`, creates one persistent parent worktree, divides top-level array entries into JSON-pointer scopes, and inventories repeated `name` fields as pending parent-level terms. It does not alter the English source.
 
-Resolve the initial terminology inventory before finalization. Each decision increments the glossary version:
+## First terminology pass: chunk-level entity extraction
+
+Before locking any initial glossary terms or translating chunk content, run one dedicated extraction round over the planned chunks. Start one read-only subagent per chunk (or process the chunks in bounded batches if there are more chunks than available agent capacity). Give each subagent only its chunk's exact JSON-pointer scope, the relevant English source content and context, applicable user references, and read-only terminology/entity lookup access.
+
+Each subagent's sole task is to find entity names in its assigned chunk and propose Chinese renderings. Include proper names and named entities such as people, places, creatures/monsters, organizations, skills, spells, items, and other named game entities. Capture the English form, entity type/sense, stable JSON pointer(s), proposed Chinese form, and concise supporting evidence or uncertainty. Do not ask these subagents to translate prose, edit the target, modify the glossary, lock terms, or make decisions across chunks. They must report candidates only; they must not infer a file-wide decision from their chunk alone.
+
+The main agent owns the terminology decision. Merge proposals by English form and sense, inspect their source contexts and evidence, query the reference corpus for ambiguous or conflicting forms, and resolve cross-chunk disagreements centrally. Keep distinct senses separate where an English form genuinely names different entity types; do not paper over conflicting proper-name translations as contextual senses. Record unresolved uncertainty rather than silently choosing a weak candidate. Only after this adjudication should the main agent add or lock terms in the parent glossary. If subagents disagree, the main agent records the selected form and the evidence/priority that controls it; the glossary must have one binding form for each `English + sense` before dependent chunks are translated.
+
+This extraction round is terminology-only and does not count as a chunk translation or alter any target file. The ordinary chunk workers still translate only their leased JSON pointers and must report actual glossary usage and any new proposals under the existing chunk-result contract.
+
+Resolve the initial terminology inventory before finalization. Each main-agent glossary decision increments the glossary version:
 
 ```bash
 python3 <skill-dir>/scripts/homebrew_translation_chunks.py set-term \

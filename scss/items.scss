@@ -7,6 +7,21 @@
 		min-height: 100px;
 	}
 
+	.list--stats > .ve-lst__row > .ve-lst__row-inner > * {
+		white-space: nowrap;
+	}
+
+	.list--stats > .ve-lst__row > .ve-lst__row-inner {
+		content-visibility: visible;
+		contain-intrinsic-block-size: auto;
+	}
+
+	.ve-itm__col-source {
+		flex: 1 1 0%;
+		min-width: 0;
+		overflow: hidden;
+	}
+
 	.list.subitems {
 		min-height: initial;
 	}

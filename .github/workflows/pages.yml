@@ -45,7 +45,7 @@ jobs:
 
          - uses: actions/setup-node@v4
            with:
-              node-version: 'lts/*'
+              node-version: '24'
 
          -  name: Checkout
             uses: actions/checkout@master

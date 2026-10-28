@@ -10,7 +10,7 @@ export class ListRowRendererItems {
 					<span class="ve-col-4-5 ve-px-1"></span>
 					<span class="ve-col-1-5 ve-px-1 ve-text-center"></span>
 					<span class="ve-col-1-5 ve-px-1 ve-text-center"></span>
-					<span class="ve-col-1 ve-text-center ve-pl-1 ve-pr-0"></span>
+					<span class="ve-itm__col-source ve-text-center ve-pl-1 ve-pr-0"></span>
 				</a>
 			</div>`;
 		}
@@ -26,7 +26,7 @@ export class ListRowRendererItems {
 					<span class="ve-col-1-5 ve-text-center"></span>
 					<span class="ve-col-0-6 ve-text-center"></span>
 					<span class="ve-col-1-4 ve-text-center"></span>
-					<span class="ve-col-1 ve-text-center ve-pr-0"></span>
+					<span class="ve-itm__col-source ve-text-center ve-pr-0"></span>
 				</a>
 			</div>`;
 		}
