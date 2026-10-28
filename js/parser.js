@@ -2103,6 +2103,7 @@ Parser.monMiscTagToFull = function (tag) {
 };
 
 Parser.WEAPON_CATEGORY_TO_FULL = {
+	"advanced": "高级",
 	"martial": "军用",
 	"simple": "简易",
 };
