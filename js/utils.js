@@ -47,7 +47,7 @@ globalThis.VeCt = class {
 	static DUR_DEBOUNCE_SAVE = 100;
 
 	static PG_NONE = "NO_PAGE";
-	static STR_GENERIC = "无来源";
+	static STR_GENERIC = "Generic";
 
 	static SYM_UI_SKIP = Symbol("uiSkip");
 
