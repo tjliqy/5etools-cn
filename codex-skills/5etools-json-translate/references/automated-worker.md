@@ -42,7 +42,7 @@ If work cannot finish, call `fail` with a concise actionable reason. Use `--bloc
 
 If a completed worktree survives an expired lease and `reclaim-expired` has not taken ownership, the same worker identity may recover it with `resume-lease`. The command atomically checks the worker identity, source hash, worktree branch, and claimed-base ancestry. Never edit the database or revive a lease after it has been reclaimed.
 
-Files too large for one bounded worker invocation should be put into coordinator-managed chunk mode as described in [chunked-worker.md](chunked-worker.md). Do not physically split the source JSON and do not mark size alone as a permanent block.
+Files too large for one bounded worker invocation should be put into coordinator-managed chunk mode as described in [chunked-worker.md](chunked-worker.md). The queue blocks ordinary claims and new chunk plans while planned chunk work remains unfinished. Chunk workers use isolated worktrees and may process distinct chunks concurrently; completion is serialized by the chunk coordinator. Do not physically split the source JSON and do not mark size alone as a permanent block.
 
 ## Commit and completion
 

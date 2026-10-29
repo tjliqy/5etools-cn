@@ -1,4 +1,4 @@
 interface:
   display_name: "Homebrew 翻译 Worker"
   short_description: "领取并翻译一个隔离的 homebrew JSON 任务"
-  default_prompt: "Use $homebrew-translation-worker to finalize a completed chunked parent, plan one oversized homebrew source, translate one queued chunk, or translate one queued file, following its priority order."
+  default_prompt: "Use $homebrew-translation-worker to finalize a completed chunked parent, plan and build its initial glossary, translate one queued chunk, or translate one queued file, following its priority order."

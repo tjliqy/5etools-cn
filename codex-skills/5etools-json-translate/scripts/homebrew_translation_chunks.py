@@ -41,6 +41,9 @@ def connect(database: Path) -> sqlite3.Connection:
             base_commit TEXT NOT NULL,
             checkpoint_commit TEXT NOT NULL,
             target_path TEXT,
+            glossary_initialized INTEGER NOT NULL DEFAULT 0,
+            glossary_owner TEXT,
+            glossary_lease_expires_at TEXT,
             created_at TEXT NOT NULL,
             updated_at TEXT NOT NULL,
             FOREIGN KEY(source_path) REFERENCES tasks(source_path)
@@ -57,6 +60,9 @@ def connect(database: Path) -> sqlite3.Connection:
             lease_expires_at TEXT,
             lease_started_at TEXT,
             lease_hard_expires_at TEXT,
+            checkpoint_commit TEXT,
+            worktree_path TEXT,
+            branch TEXT,
             glossary_version INTEGER,
             commit_sha TEXT,
             report_json TEXT,
@@ -112,7 +118,68 @@ def connect(database: Path) -> sqlite3.Connection:
     for name in ("lease_started_at", "lease_hard_expires_at"):
         if name not in chunk_columns:
             connection.execute(f"ALTER TABLE translation_chunks ADD COLUMN {name} TEXT")
+    for name in ("checkpoint_commit", "worktree_path", "branch"):
+        if name not in chunk_columns:
+            connection.execute(f"ALTER TABLE translation_chunks ADD COLUMN {name} TEXT")
+    parent_columns = {row[1] for row in connection.execute("PRAGMA table_info(translation_parents)")}
+    if "glossary_initialized" not in parent_columns:
+        connection.execute("ALTER TABLE translation_parents ADD COLUMN glossary_initialized INTEGER NOT NULL DEFAULT 0")
+    if "glossary_owner" not in parent_columns:
+        connection.execute("ALTER TABLE translation_parents ADD COLUMN glossary_owner TEXT")
+    if "glossary_lease_expires_at" not in parent_columns:
+        connection.execute("ALTER TABLE translation_parents ADD COLUMN glossary_lease_expires_at TEXT")
     return connection
+
+
+def glossary_file(database: Path, source_path: str) -> Path:
+    key = hashlib.sha256(source_path.encode("utf-8")).hexdigest()[:16]
+    return database.resolve().parent / "glossaries" / f"{key}.md"
+
+
+def write_glossary(connection: sqlite3.Connection, database: Path, source_path: str) -> Path:
+    path = glossary_file(database, source_path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    connection.execute("BEGIN IMMEDIATE")
+    try:
+        parent = connection.execute(
+            "SELECT glossary_version, glossary_initialized FROM translation_parents WHERE source_path = ?",
+            (source_path,),
+        ).fetchone()
+        owner = connection.execute("SELECT glossary_owner FROM translation_parents WHERE source_path = ?", (source_path,)).fetchone()["glossary_owner"]
+        lines = [f"# Homebrew glossary: `{source_path}`", "", f"Version: {parent['glossary_version']}",
+                 f"Initial inventory: {'ready' if parent['glossary_initialized'] else 'in progress'}",
+                 f"Glossary edit: {'reserved by ' + owner if owner else 'open'}", "",
+                 "| English | Sense | Chinese | Status | Evidence |", "|---|---|---|---|---|"]
+        for term in connection.execute(
+            "SELECT english, sense, chinese, status, evidence_json FROM translation_terms WHERE source_path = ? ORDER BY sense, english",
+            (source_path,),
+        ):
+            evidence = ", ".join(json.loads(term["evidence_json"] or "[]"))
+            cells = [term["english"], term["sense"], term["chinese"] or "", term["status"], evidence]
+            lines.append("| " + " | ".join(value.replace("|", "\\|").replace("\n", " ") for value in cells) + " |")
+        proposals = connection.execute(
+            "SELECT chunk_id, english, sense, chinese, reason FROM translation_term_proposals WHERE source_path = ? AND status = 'pending' ORDER BY chunk_id, english, sense",
+            (source_path,),
+        ).fetchall()
+        if proposals:
+            lines += ["", "## Unresolved proposals", "", "| Chunk | English | Sense | Proposed Chinese | Reason |", "|---|---|---|---|---|"]
+            for proposal in proposals:
+                values = [proposal["chunk_id"], proposal["english"], proposal["sense"], proposal["chinese"], proposal["reason"] or ""]
+                lines.append("| " + " | ".join(value.replace("|", "\\|").replace("\n", " ") for value in values) + " |")
+        allowances = connection.execute(
+            "SELECT chinese, rationale FROM translation_term_collision_allowances WHERE source_path = ? ORDER BY chinese",
+            (source_path,),
+        ).fetchall()
+        if allowances:
+            lines += ["", "## Approved Chinese-form collisions", ""]
+            lines.extend(f"- `{row['chinese']}`: {row['rationale']}" for row in allowances)
+        path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+        connection.execute("COMMIT")
+        return path
+    except Exception:
+        if connection.in_transaction:
+            connection.execute("ROLLBACK")
+        raise
 
 
 def pointer_escape(value: str) -> str:
@@ -185,34 +252,50 @@ def command_plan(args) -> int:
         return emit({"ok": False, "error": "source root must be a JSON object"}, 2)
     source_hash = queue.hash_file(source)
     connection = connect(args.database)
+    connection.execute("BEGIN IMMEDIATE")
     task = connection.execute("SELECT * FROM tasks WHERE source_path = ?", (source_path,)).fetchone()
     if task is None:
+        connection.execute("ROLLBACK")
         return emit({"ok": False, "error": "source is not in the queue; run sync first"}, 2)
     if task["source_hash"] != source_hash:
+        connection.execute("ROLLBACK")
         return emit({"ok": False, "error": "queued source hash is stale; run sync first"}, 2)
     if task["status"] not in {"pending", "failed", "blocked", "needs_chunking"}:
+        connection.execute("ROLLBACK")
         return emit({"ok": False, "error": f"task status cannot be chunked: {task['status']}"}, 2)
+    active = connection.execute(
+        """SELECT p.source_path FROM translation_parents p
+           WHERE p.status = 'translating' AND EXISTS (
+             SELECT 1 FROM translation_chunks c WHERE c.source_path = p.source_path AND c.status != 'complete')
+           ORDER BY p.source_path LIMIT 1"""
+    ).fetchone()
+    if active:
+        connection.execute("ROLLBACK")
+        return emit({"ok": True, "status": "waiting_chunked_parent", "source_path": active["source_path"]}, 3)
     parents = queue.unfinished_dependencies(connection, source_path, source_root, target_repo)
     if parents:
-        connection.execute("BEGIN IMMEDIATE")
         queue.raise_dependency_priorities(connection, source_path, parents)
         connection.execute("COMMIT")
         return emit({"ok": True, "status": "waiting_dependencies", "dependencies": parents}, 3)
     if connection.execute("SELECT 1 FROM translation_parents WHERE source_path = ?", (source_path,)).fetchone():
+        connection.execute("ROLLBACK")
         return emit({"ok": False, "error": "chunk plan already exists"}, 2)
     chunks = build_chunks(data, args.max_chunk_chars)
     parent_id = hashlib.sha256(f"{source_path}\0{source_hash}".encode()).hexdigest()[:12]
     branch = f"auto-translate-parent/{parent_id}"
     worktree = args.worktree_root.resolve() / f"parent-{parent_id}"
     if worktree.exists():
+        connection.execute("ROLLBACK")
         return emit({"ok": False, "error": f"worktree already exists: {worktree}"}, 2)
-    args.worktree_root.resolve().mkdir(parents=True, exist_ok=True)
-    git(target_repo, "worktree", "add", "-b", branch, str(worktree), args.base_ref)
     try:
+        args.worktree_root.resolve().mkdir(parents=True, exist_ok=True)
+        git(target_repo, "worktree", "add", "-b", branch, str(worktree), args.base_ref)
+        shared_modules = target_repo / "node_modules"
+        if shared_modules.is_dir() and not (worktree / "node_modules").exists():
+            (worktree / "node_modules").symlink_to(shared_modules, target_is_directory=True)
         base = git(worktree, "rev-parse", "HEAD")
         initial_target = queue.find_existing_target(source, source_path, worktree)
         stamp = now()
-        connection.execute("BEGIN IMMEDIATE")
         connection.execute(
             """INSERT INTO translation_parents
                (source_path, source_hash, status, worktree_path, branch, base_commit,
@@ -246,31 +329,48 @@ def command_plan(args) -> int:
         })
         connection.execute("COMMIT")
     except Exception:
-        connection.execute("ROLLBACK")
+        if connection.in_transaction:
+            connection.execute("ROLLBACK")
         queue.cleanup_worktree(target_repo, str(worktree), branch)
         raise
     return emit({
         "ok": True, "source_path": source_path, "source_hash": source_hash,
         "status": "chunked", "chunks": len(chunks), "pending_terms": len(terms),
         "worktree": str(worktree), "branch": branch,
+        "glossary_file": str(write_glossary(connection, args.database, source_path)),
+        "terminology_ready": False,
     })
 
 
 def command_set_term(args) -> int:
     connection = connect(args.database)
+    connection.execute("BEGIN IMMEDIATE")
     parent = connection.execute("SELECT * FROM translation_parents WHERE source_path = ?", (args.source_path,)).fetchone()
     if parent is None:
+        connection.execute("ROLLBACK")
         return emit({"ok": False, "error": "parent task not found"}, 2)
-    connection.execute("BEGIN IMMEDIATE")
+    if (not args.worker_id or parent["glossary_owner"] != args.worker_id or not parent["glossary_lease_expires_at"]
+            or parent["glossary_lease_expires_at"] <= now()):
+        connection.execute("ROLLBACK")
+        return emit({"ok": False, "error": "glossary reservation is missing, owned by another worker, or expired"}, 2)
     version = parent["glossary_version"] + 1
+    existing = connection.execute(
+        "SELECT evidence_json FROM translation_terms WHERE source_path = ? AND english = ? AND sense = ?",
+        (args.source_path, args.english, args.sense),
+    ).fetchone()
+    evidence = json.loads(existing["evidence_json"] or "[]") if existing else []
+    for item in args.evidence:
+        if item not in evidence:
+            evidence.append(item)
     connection.execute(
         """INSERT INTO translation_terms
            (source_path, english, sense, chinese, status, version, evidence_json, updated_at)
-           VALUES (?, ?, ?, ?, ?, ?, '[]', ?)
+           VALUES (?, ?, ?, ?, ?, ?, ?, ?)
            ON CONFLICT(source_path, english, sense) DO UPDATE SET
              chinese = excluded.chinese, status = excluded.status,
-             version = excluded.version, updated_at = excluded.updated_at""",
-        (args.source_path, args.english, args.sense, args.chinese, args.status, version, now()),
+             version = excluded.version, evidence_json = excluded.evidence_json, updated_at = excluded.updated_at""",
+        (args.source_path, args.english, args.sense, args.chinese, args.status, version,
+         json.dumps(evidence, ensure_ascii=False), now()),
     )
     connection.execute(
         "UPDATE translation_parents SET glossary_version = ?, updated_at = ? WHERE source_path = ?",
@@ -313,7 +413,79 @@ def command_set_term(args) -> int:
                     (now(), args.source_path, chunk["chunk_id"]),
                 )
     connection.execute("COMMIT")
-    return emit({"ok": True, "source_path": args.source_path, "glossary_version": version})
+    path = write_glossary(connection, args.database, args.source_path)
+    return emit({"ok": True, "source_path": args.source_path, "glossary_version": version, "glossary_file": str(path)})
+
+
+def command_lock_glossary(args) -> int:
+    connection = connect(args.database)
+    connection.execute("BEGIN IMMEDIATE")
+    parent = connection.execute("SELECT * FROM translation_parents WHERE source_path = ?", (args.source_path,)).fetchone()
+    if parent is None or parent["status"] != "translating":
+        connection.execute("ROLLBACK")
+        return emit({"ok": False, "error": "active parent task not found"}, 2)
+    if (not args.worker_id or parent["glossary_owner"] != args.worker_id or not parent["glossary_lease_expires_at"]
+            or parent["glossary_lease_expires_at"] <= now()):
+        connection.execute("ROLLBACK")
+        return emit({"ok": False, "error": "glossary reservation is missing or expired"}, 2)
+    pending_terms = connection.execute(
+        "SELECT COUNT(*) FROM translation_terms WHERE source_path = ? AND status = 'pending'", (args.source_path,),
+    ).fetchone()[0]
+    pending_proposals = connection.execute(
+        "SELECT COUNT(*) FROM translation_term_proposals WHERE source_path = ? AND status = 'pending'", (args.source_path,),
+    ).fetchone()[0]
+    if pending_terms or pending_proposals:
+        connection.execute("ROLLBACK")
+        return emit({"ok": False, "error": "glossary has unresolved entries", "pending_terms": pending_terms,
+                     "pending_proposals": pending_proposals}, 2)
+    connection.execute(
+        "UPDATE translation_parents SET glossary_initialized = 1, glossary_owner = NULL, glossary_lease_expires_at = NULL, updated_at = ? WHERE source_path = ?",
+        (now(), args.source_path),
+    )
+    connection.execute("COMMIT")
+    path = write_glossary(connection, args.database, args.source_path)
+    return emit({"ok": True, "source_path": args.source_path, "terminology_ready": True, "glossary_file": str(path)})
+
+
+def command_start_inventory(args) -> int:
+    connection = connect(args.database)
+    connection.execute("BEGIN IMMEDIATE")
+    parent = connection.execute("SELECT * FROM translation_parents WHERE source_path = ?", (args.source_path,)).fetchone()
+    if parent is None or parent["status"] != "translating":
+        connection.execute("ROLLBACK")
+        return emit({"ok": False, "error": "active parent task not found"}, 2)
+    current = now()
+    if parent["glossary_owner"] and parent["glossary_owner"] != args.worker_id and parent["glossary_lease_expires_at"] > current:
+        connection.execute("COMMIT")
+        return emit({"ok": True, "status": "waiting_glossary", "owner": parent["glossary_owner"],
+                     "lease_expires_at": parent["glossary_lease_expires_at"]}, 3)
+    active_lease = connection.execute(
+        "SELECT chunk_id, lease_expires_at FROM translation_chunks WHERE source_path = ? AND status = 'leased' LIMIT 1",
+        (args.source_path,),
+    ).fetchone()
+    if active_lease:
+        connection.execute("COMMIT")
+        return emit({"ok": True, "status": "waiting_active_chunk", "chunk_id": active_lease["chunk_id"],
+                     "lease_expires_at": active_lease["lease_expires_at"]}, 3)
+    expires = (dt.datetime.now(dt.timezone.utc) + dt.timedelta(minutes=args.lease_minutes)).replace(microsecond=0).isoformat()
+    connection.execute(
+        "UPDATE translation_parents SET glossary_owner = ?, glossary_lease_expires_at = ?, updated_at = ? WHERE source_path = ?",
+        (args.worker_id, expires, current, args.source_path),
+    )
+    connection.execute("COMMIT")
+    return emit({"ok": True, "status": "update" if parent["glossary_initialized"] else "inventory", "worker_id": args.worker_id,
+                 "lease_expires_at": expires, "glossary_file": str(write_glossary(connection, args.database, args.source_path))})
+
+
+def command_release_inventory(args) -> int:
+    connection = connect(args.database)
+    released = connection.execute(
+        "UPDATE translation_parents SET glossary_owner = NULL, glossary_lease_expires_at = NULL, updated_at = ? WHERE source_path = ? AND glossary_owner = ?",
+        (now(), args.source_path, args.worker_id),
+    )
+    if released.rowcount != 1:
+        return emit({"ok": False, "error": "glossary inventory lease not owned by this worker"}, 2)
+    return emit({"ok": True, "status": "released", "source_path": args.source_path})
 
 
 def glossary_payload(connection: sqlite3.Connection, source_path: str) -> list[dict]:
@@ -327,13 +499,20 @@ def command_allow_collision(args) -> int:
     connection = connect(args.database)
     if not args.rationale.strip():
         return emit({"ok": False, "error": "a non-empty rationale is required"}, 2)
+    connection.execute("BEGIN IMMEDIATE")
+    parent = connection.execute("SELECT * FROM translation_parents WHERE source_path = ?", (args.source_path,)).fetchone()
+    if not parent or not args.worker_id or parent["glossary_owner"] != args.worker_id or not parent["glossary_lease_expires_at"] or parent["glossary_lease_expires_at"] <= now():
+        connection.execute("ROLLBACK")
+        return emit({"ok": False, "error": "glossary reservation is missing or expired"}, 2)
     connection.execute(
         """INSERT INTO translation_term_collision_allowances (source_path, chinese, rationale, updated_at)
            VALUES (?, ?, ?, ?) ON CONFLICT(source_path, chinese) DO UPDATE SET
            rationale = excluded.rationale, updated_at = excluded.updated_at""",
         (args.source_path, args.chinese, args.rationale.strip(), now()),
     )
-    return emit({"ok": True, "source_path": args.source_path, "chinese": args.chinese})
+    connection.execute("COMMIT")
+    return emit({"ok": True, "source_path": args.source_path, "chinese": args.chinese,
+                 "glossary_file": str(write_glossary(connection, args.database, args.source_path))})
 
 
 def command_claim_chunk(args) -> int:
@@ -343,21 +522,42 @@ def command_claim_chunk(args) -> int:
     if parent is None or parent["status"] != "translating":
         connection.execute("ROLLBACK")
         return emit({"ok": False, "error": "active parent task not found"}, 2)
+    if not parent["glossary_initialized"]:
+        connection.execute("ROLLBACK")
+        return emit({"ok": True, "status": "waiting_glossary", "message": "INITIAL_GLOSSARY_NOT_LOCKED"}, 3)
+    if parent["glossary_owner"]:
+        connection.execute("ROLLBACK")
+        return emit({"ok": True, "status": "waiting_glossary", "message": "GLOSSARY_EDIT_IN_PROGRESS",
+                     "owner": parent["glossary_owner"], "lease_expires_at": parent["glossary_lease_expires_at"]}, 3)
     parents = queue.unfinished_dependencies(connection, args.source_path, args.source_root.resolve(), args.target_repo.resolve())
     if parents:
         queue.raise_dependency_priorities(connection, args.source_path, parents)
         connection.execute("COMMIT")
         return emit({"ok": True, "status": "waiting_dependencies", "dependencies": parents}, 3)
+    legacy_active = connection.execute(
+        "SELECT chunk_id, lease_expires_at FROM translation_chunks WHERE source_path = ? AND status = 'leased' AND worktree_path IS NULL LIMIT 1",
+        (args.source_path,),
+    ).fetchone()
+    if legacy_active:
+        connection.execute("ROLLBACK")
+        return emit({"ok": True, "status": "waiting_legacy_chunk", "chunk_id": legacy_active["chunk_id"],
+                     "lease_expires_at": legacy_active["lease_expires_at"]}, 3)
     source = args.source_root.resolve() / args.source_path
     if not source.is_file() or queue.hash_file(source) != parent["source_hash"]:
         connection.execute("ROLLBACK")
         return emit({"ok": False, "error": "source changed during chunked translation"}, 2)
-    active = connection.execute(
-        "SELECT chunk_id FROM translation_chunks WHERE source_path = ? AND status = 'leased'", (args.source_path,),
-    ).fetchone()
-    if active:
+    if parent["target_path"] is None and connection.execute(
+        "SELECT 1 FROM translation_chunks WHERE source_path = ? AND status = 'leased' LIMIT 1", (args.source_path,),
+    ).fetchone():
         connection.execute("ROLLBACK")
-        return emit({"ok": False, "error": f"chunk already leased: {active['chunk_id']}"}, 2)
+        return emit({"ok": True, "status": "waiting_bootstrap", "message": "FIRST_CHUNK_MUST_BOOTSTRAP_TARGET"}, 3)
+    pending_proposals = connection.execute(
+        "SELECT COUNT(*) FROM translation_term_proposals WHERE source_path = ? AND status = 'pending'", (args.source_path,),
+    ).fetchone()[0]
+    if pending_proposals:
+        connection.execute("ROLLBACK")
+        return emit({"ok": True, "status": "waiting_glossary", "message": "TERM_PROPOSALS_REQUIRE_ADJUDICATION",
+                     "pending_proposals": pending_proposals}, 3)
     chunk = connection.execute(
         """SELECT * FROM translation_chunks WHERE source_path = ? AND status IN ('pending', 'failed', 'stale')
            ORDER BY CASE status WHEN 'stale' THEN 0 ELSE 1 END, ordinal LIMIT 1""", (args.source_path,),
@@ -366,19 +566,46 @@ def command_claim_chunk(args) -> int:
         connection.execute("COMMIT")
         return emit({"ok": True, "status": "empty", "message": "NO_PENDING_CHUNK"}, 3)
     lease_id = uuid.uuid4().hex
+    parent_key = hashlib.sha256(args.source_path.encode("utf-8")).hexdigest()[:10]
+    parent_worktree = Path(parent["worktree_path"])
+    target_path = parent["target_path"]
+    shared_bootstrap = False
+    if target_path is None:
+        try:
+            target_path = queue.find_existing_target(source, args.source_path, parent_worktree)
+        except Exception as exc:
+            connection.execute("ROLLBACK")
+            return emit({"ok": False, "error": str(exc)}, 2)
+        shared_bootstrap = target_path is not None
+    chunk_worktree = None if shared_bootstrap else args.worktree_root.resolve() / f"chunk-{parent_key}-{chunk['chunk_id']}-{lease_id[:8]}"
+    chunk_branch = None if shared_bootstrap else f"auto-translate/chunk-{parent_key}-{chunk['chunk_id']}-{lease_id[:8]}"
     current_time = dt.datetime.now(dt.timezone.utc).replace(microsecond=0)
     expires = current_time + dt.timedelta(minutes=args.lease_minutes)
     hard_expires = current_time + dt.timedelta(hours=args.max_lease_hours)
     connection.execute(
         """UPDATE translation_chunks SET status = 'leased', worker_id = ?, lease_id = ?,
            lease_expires_at = ?, lease_started_at = ?, lease_hard_expires_at = ?,
-           glossary_version = ?, last_error = NULL, updated_at = ?
+           checkpoint_commit = ?, worktree_path = ?, branch = ?, glossary_version = ?, last_error = NULL, updated_at = ?
            WHERE source_path = ? AND chunk_id = ?""",
         (args.worker_id, lease_id, expires.isoformat(), current_time.isoformat(), hard_expires.isoformat(),
-         parent["glossary_version"], now(),
+         parent["checkpoint_commit"], str(chunk_worktree) if chunk_worktree else None, chunk_branch, parent["glossary_version"], now(),
          args.source_path, chunk["chunk_id"]),
     )
     connection.execute("COMMIT")
+    if not shared_bootstrap:
+        try:
+            args.worktree_root.resolve().mkdir(parents=True, exist_ok=True)
+            git(parent_worktree, "worktree", "add", "-b", chunk_branch, str(chunk_worktree), parent["checkpoint_commit"])
+            shared_modules = parent_worktree / "node_modules"
+            if shared_modules.is_dir() and not (chunk_worktree / "node_modules").exists():
+                (chunk_worktree / "node_modules").symlink_to(shared_modules, target_is_directory=True)
+        except Exception as exc:
+            queue.cleanup_worktree(parent_worktree, str(chunk_worktree), chunk_branch)
+            connection.execute(
+                "UPDATE translation_chunks SET status = 'failed', lease_id = NULL, lease_expires_at = NULL, last_error = ?, updated_at = ? WHERE lease_id = ?",
+                (str(exc), now(), lease_id),
+            )
+            return emit({"ok": False, "error": str(exc)}, 2)
     return emit({
         "ok": True, "status": "leased", "source_path": args.source_path,
         "source": str(args.source_root.resolve() / args.source_path),
@@ -386,9 +613,10 @@ def command_claim_chunk(args) -> int:
         "pointers": json.loads(chunk["pointers_json"]), "char_count": chunk["char_count"],
         "lease_id": lease_id, "lease_expires_at": expires.isoformat(),
         "lease_hard_expires_at": hard_expires.isoformat(),
-        "worktree": parent["worktree_path"], "target": parent["target_path"],
+        "worktree": str(parent_worktree if shared_bootstrap else chunk_worktree), "target": target_path,
         "checkpoint_commit": parent["checkpoint_commit"],
         "glossary_version": parent["glossary_version"],
+        "glossary_file": str(write_glossary(connection, args.database, args.source_path)),
         "glossary": glossary_payload(connection, args.source_path),
     })
 
@@ -437,13 +665,14 @@ def command_resume_chunk(args) -> int:
     errors = []
     if not source.is_file() or queue.hash_file(source) != parent["source_hash"]:
         errors.append("source is missing or changed")
-    worktree = Path(parent["worktree_path"])
+    worktree = Path(chunk["worktree_path"] or parent["worktree_path"])
+    checkpoint_commit = chunk["checkpoint_commit"] or parent["checkpoint_commit"]
     if not worktree.is_dir():
-        errors.append("parent worktree is missing")
-    elif git(worktree, "rev-parse", "HEAD") != parent["checkpoint_commit"]:
+        errors.append("chunk worktree is missing")
+    elif git(worktree, "rev-parse", "HEAD") != checkpoint_commit:
         # A completed but unregistered chunk commit is also recoverable.
         if subprocess.run(
-            ["git", "-C", str(worktree), "merge-base", "--is-ancestor", parent["checkpoint_commit"], "HEAD"],
+            ["git", "-C", str(worktree), "merge-base", "--is-ancestor", checkpoint_commit, "HEAD"],
             stdout=subprocess.PIPE, stderr=subprocess.PIPE,
         ).returncode:
             errors.append("worktree HEAD does not descend from the recorded checkpoint")
@@ -462,12 +691,14 @@ def command_resume_chunk(args) -> int:
     return emit({
         "ok": True, "status": "leased", "lease_id": args.lease_id,
         "lease_expires_at": expires.isoformat(), "lease_hard_expires_at": hard_expires.isoformat(),
+        "worktree": str(worktree), "checkpoint_commit": chunk["checkpoint_commit"],
     })
 
 
 def command_fail_chunk(args) -> int:
     connection = connect(args.database)
     connection.execute("BEGIN IMMEDIATE")
+    chunk = connection.execute("SELECT worktree_path, branch FROM translation_chunks WHERE lease_id = ? AND status = 'leased'", (args.lease_id,)).fetchone()
     updated = connection.execute(
         """UPDATE translation_chunks SET status = 'failed', lease_id = NULL, lease_expires_at = NULL,
            last_error = ?, updated_at = ? WHERE lease_id = ? AND status = 'leased'""",
@@ -477,6 +708,8 @@ def command_fail_chunk(args) -> int:
         connection.execute("ROLLBACK")
         return emit({"ok": False, "error": "chunk lease not found"}, 2)
     connection.execute("COMMIT")
+    if chunk:
+        queue.cleanup_worktree(args.target_repo.resolve(), chunk["worktree_path"], chunk["branch"])
     return emit({"ok": True, "status": "failed", "lease_id": args.lease_id})
 
 
@@ -484,7 +717,7 @@ def command_reclaim_chunks(args) -> int:
     connection = connect(args.database)
     connection.execute("BEGIN IMMEDIATE")
     rows = connection.execute(
-        "SELECT source_path, chunk_id, lease_id FROM translation_chunks WHERE status = 'leased' AND lease_expires_at <= ?",
+        "SELECT source_path, chunk_id, lease_id, worktree_path, branch FROM translation_chunks WHERE status = 'leased' AND lease_expires_at <= ?",
         (now(),),
     ).fetchall()
     for row in rows:
@@ -495,6 +728,10 @@ def command_reclaim_chunks(args) -> int:
             (now(), row["source_path"], row["chunk_id"], row["lease_id"]),
         )
     connection.execute("COMMIT")
+    for row in rows:
+        parent = connection.execute("SELECT worktree_path FROM translation_parents WHERE source_path = ?", (row["source_path"],)).fetchone()
+        if parent:
+            queue.cleanup_worktree(Path(parent["worktree_path"]), row["worktree_path"], row["branch"])
     return emit({"ok": True, "reclaimed": len(rows), "chunks": [dict(row) for row in rows]})
 
 
@@ -560,11 +797,14 @@ def command_complete_chunk(args) -> int:
         return emit({"ok": False, "error": "active chunk lease not found"}, 2)
     parent = connection.execute("SELECT * FROM translation_parents WHERE source_path = ?", (chunk["source_path"],)).fetchone()
     errors = []
+    source_data = json.loads((args.source_root.resolve() / chunk["source_path"]).read_text(encoding="utf-8-sig"))
     if report.get("review", {}).get("result") != "PASS":
         errors.append("review.result must be PASS")
     if report.get("glossary_version") != parent["glossary_version"]:
         errors.append("chunk must use the current glossary version")
-    worktree = Path(parent["worktree_path"])
+    legacy_shared_worktree = not chunk["worktree_path"]
+    worktree = Path(chunk["worktree_path"] or parent["worktree_path"])
+    checkpoint_commit = chunk["checkpoint_commit"] or parent["checkpoint_commit"]
     commit = report.get("commit_sha", "")
     target_path = report.get("target") or parent["target_path"]
     target = (worktree / target_path).resolve() if target_path else None
@@ -581,16 +821,17 @@ def command_complete_chunk(args) -> int:
         errors.append("commit_sha must be the parent worktree HEAD")
     else:
         parents = git(worktree, "rev-list", "--parents", "-n", "1", commit).split()
-        if len(parents) != 2 or parents[1] != parent["checkpoint_commit"]:
+        if len(parents) != 2 or parents[1] != checkpoint_commit:
             errors.append("chunk must produce exactly one commit on the previous checkpoint")
         entries = queue.commit_paths(worktree, commit)
         if not target_path:
             errors.append("target is required")
         elif any(entry[0] not in {"A", "M", "R100"} or target_path not in entry[1:] for entry in entries):
             errors.append("chunk commit must contain only the selected target JSON")
-        elif parent["target_path"]:
+        else:
             try:
-                before = json.loads(git(worktree, "show", f"{parent['checkpoint_commit']}:{parent['target_path']}") or "null")
+                before = (json.loads(git(worktree, "show", f"{checkpoint_commit}:{parent['target_path']}") or "null")
+                          if parent["target_path"] else source_data)
                 after = json.loads((worktree / target_path).read_text(encoding="utf-8-sig"))
                 changed = json_diff_paths(before, after)
                 allowed = json.loads(chunk["pointers_json"])
@@ -601,7 +842,6 @@ def command_complete_chunk(args) -> int:
                 errors.append(f"could not verify chunk JSON scope: {exc}")
     usage = report.get("term_usage", [])
     usage_keys = {(item.get("english"), item.get("sense")) for item in usage}
-    source_data = json.loads((args.source_root.resolve() / chunk["source_path"]).read_text(encoding="utf-8-sig"))
     chunk_pointers = json.loads(chunk["pointers_json"])
     scoped_text = "\n".join(
         json.dumps(pointer_value(source_data, pointer), ensure_ascii=False) for pointer in chunk_pointers
@@ -628,16 +868,56 @@ def command_complete_chunk(args) -> int:
     if errors:
         return emit({"ok": False, "errors": errors}, 2)
     connection.execute("BEGIN IMMEDIATE")
+    latest_parent = connection.execute("SELECT * FROM translation_parents WHERE source_path = ?", (chunk["source_path"],)).fetchone()
+    if report.get("glossary_version") != latest_parent["glossary_version"]:
+        connection.execute("ROLLBACK")
+        return emit({"ok": False, "errors": ["glossary changed while this chunk was in progress; fail and reclaim it using the current glossary"]}, 2)
+    parent_worktree = Path(latest_parent["worktree_path"])
+    if legacy_shared_worktree and git(parent_worktree, "rev-parse", "HEAD") == commit:
+        pass
+    else:
+        cherry_pick = subprocess.run(
+            ["git", "-C", str(parent_worktree), "-c", "user.email=homebrew-worker@example.invalid",
+             "-c", "user.name=Homebrew Translation Worker", "cherry-pick", "--no-edit", commit],
+            text=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+        )
+        if cherry_pick.returncode:
+            subprocess.run(["git", "-C", str(parent_worktree), "cherry-pick", "--abort"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+            connection.execute("ROLLBACK")
+            return emit({"ok": False, "errors": ["chunk commit conflicts with a concurrently completed chunk; fail and retry this chunk on the latest checkpoint"]}, 2)
+    merged_commit = git(parent_worktree, "rev-parse", "HEAD")
+    merged_entries = queue.commit_paths(parent_worktree, merged_commit)
+    merged_paths = json.loads(chunk["pointers_json"])
+    merged_errors = []
+    if any(entry[0] not in {"A", "M", "R100"} or target_path not in entry[1:] for entry in merged_entries):
+        merged_errors.append("merged chunk commit contains paths outside the selected target JSON")
+    else:
+        try:
+            merged_before = (json.loads(git(parent_worktree, "show", f"{latest_parent['checkpoint_commit']}:{target_path}") or "null")
+                             if latest_parent["target_path"] else source_data)
+            merged_after = json.loads((parent_worktree / target_path).read_text(encoding="utf-8-sig"))
+            outside = sorted(path for path in json_diff_paths(merged_before, merged_after)
+                             if not pointer_is_allowed(path, merged_paths))
+            if outside:
+                merged_errors.append("rebased chunk changed paths outside its scope: " + ", ".join(outside[:10]))
+        except (OSError, json.JSONDecodeError, RuntimeError) as exc:
+            merged_errors.append(f"could not verify rebased chunk scope: {exc}")
+    if merged_errors:
+        subprocess.run(["git", "-C", str(parent_worktree), "reset", "--hard", latest_parent["checkpoint_commit"]], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        connection.execute("ROLLBACK")
+        return emit({"ok": False, "errors": merged_errors}, 2)
     connection.execute(
         """UPDATE translation_parents SET checkpoint_commit = ?, target_path = ?, updated_at = ?
            WHERE source_path = ?""",
-        (commit, report.get("target") or parent["target_path"], now(), chunk["source_path"]),
+        (merged_commit, target_path, now(), chunk["source_path"]),
     )
+    report["worker_commit_sha"] = commit
+    report["commit_sha"] = merged_commit
     connection.execute(
         """UPDATE translation_chunks SET status = 'complete', commit_sha = ?, report_json = ?,
-           lease_id = NULL, lease_expires_at = NULL, updated_at = ?
+           lease_id = NULL, lease_expires_at = NULL, worktree_path = NULL, branch = NULL, updated_at = ?
            WHERE source_path = ? AND chunk_id = ?""",
-        (commit, json.dumps(report, ensure_ascii=False), now(), chunk["source_path"], chunk["chunk_id"]),
+        (merged_commit, json.dumps(report, ensure_ascii=False), now(), chunk["source_path"], chunk["chunk_id"]),
     )
     connection.execute("DELETE FROM translation_term_usage WHERE source_path = ? AND chunk_id = ?", (chunk["source_path"], chunk["chunk_id"]))
     for item in usage:
@@ -657,7 +937,10 @@ def command_complete_chunk(args) -> int:
              proposal["chinese"], proposal.get("reason"), now()),
         )
     connection.execute("COMMIT")
-    return emit({"ok": True, "status": "complete", "source_path": chunk["source_path"], "chunk_id": chunk["chunk_id"], "commit_sha": commit})
+    cleanup_errors = queue.cleanup_worktree(args.target_repo.resolve(), str(worktree), chunk["branch"])
+    glossary = write_glossary(connection, args.database, chunk["source_path"])
+    return emit({"ok": True, "status": "complete", "source_path": chunk["source_path"], "chunk_id": chunk["chunk_id"],
+                 "commit_sha": merged_commit, "glossary_file": str(glossary), "cleanup_errors": cleanup_errors})
 
 
 def terminology_errors(connection: sqlite3.Connection, source_path: str) -> list[str]:
@@ -677,6 +960,9 @@ def terminology_errors(connection: sqlite3.Connection, source_path: str) -> list
     ).fetchone()[0]
     if pending_terms:
         errors.append(f"unresolved glossary terms: {pending_terms}")
+    parent = connection.execute("SELECT glossary_initialized FROM translation_parents WHERE source_path = ?", (source_path,)).fetchone()
+    if parent is None or not parent["glossary_initialized"]:
+        errors.append("initial glossary inventory has not been locked")
     variants = connection.execute(
         """SELECT english, sense, COUNT(DISTINCT chinese) AS variants
            FROM translation_term_usage WHERE source_path = ? GROUP BY english, sense
@@ -716,6 +1002,12 @@ def command_finalize(args) -> int:
     errors = terminology_errors(connection, args.source_path)
     if report.get("terminology", {}).get("result") != "PASS":
         errors.append("terminology.result must be PASS")
+    expected_chunks = {row["chunk_id"] for row in connection.execute(
+        "SELECT chunk_id FROM translation_chunks WHERE source_path = ? AND status = 'complete'", (args.source_path,),
+    )}
+    reviewed_chunks = set(report.get("global_terminology_review", {}).get("chunks_reviewed", []))
+    if report.get("global_terminology_review", {}).get("result") != "PASS" or reviewed_chunks != expected_chunks:
+        errors.append("global_terminology_review must PASS and list every completed chunk")
     errors.extend(queue.require_report(report))
     if report.get("source_hash") != parent["source_hash"]:
         errors.append("report source_hash does not match the parent source")
@@ -776,7 +1068,10 @@ def command_status(args) -> int:
     pending_proposals = connection.execute(
         "SELECT COUNT(*) FROM translation_term_proposals WHERE source_path = ? AND status = 'pending'", (args.source_path,),
     ).fetchone()[0]
-    return emit({"ok": True, "parent": dict(parent), "chunks": counts, "pending_terms": pending_terms, "pending_proposals": pending_proposals})
+    glossary = write_glossary(connection, args.database, args.source_path)
+    return emit({"ok": True, "parent": dict(parent), "chunks": counts, "pending_terms": pending_terms,
+                 "pending_proposals": pending_proposals, "terminology_ready": bool(parent["glossary_initialized"]),
+                 "glossary_file": str(glossary)})
 
 
 def command_abort_parent(args) -> int:
@@ -795,6 +1090,7 @@ def command_abort_parent(args) -> int:
     cleanup_errors = queue.cleanup_worktree(args.target_repo.resolve(), parent["worktree_path"], parent["branch"])
     if cleanup_errors:
         return emit({"ok": False, "error": "parent worktree cleanup failed", "cleanup_errors": cleanup_errors}, 2)
+    glossary_file(args.database, args.source_path).unlink(missing_ok=True)
     connection.execute("BEGIN IMMEDIATE")
     connection.execute("DELETE FROM translation_term_usage WHERE source_path = ?", (args.source_path,))
     connection.execute("DELETE FROM translation_term_proposals WHERE source_path = ?", (args.source_path,))
@@ -832,12 +1128,28 @@ def parser() -> argparse.ArgumentParser:
     set_term.add_argument("--english", required=True)
     set_term.add_argument("--sense", required=True)
     set_term.add_argument("--chinese", required=True)
-    set_term.add_argument("--status", choices=("locked", "contextual"), default="locked")
+    set_term.add_argument("--status", choices=("pending", "locked", "contextual"), default="locked")
+    set_term.add_argument("--evidence", action="append", default=[], help="supporting evidence or adjudication rationale; repeatable")
+    set_term.add_argument("--worker-id", help="required while writing the initial inventory")
     set_term.set_defaults(func=command_set_term)
+    lock_glossary = commands.add_parser("lock-glossary")
+    lock_glossary.add_argument("--source-path", required=True)
+    lock_glossary.add_argument("--worker-id", required=True)
+    lock_glossary.set_defaults(func=command_lock_glossary)
+    start_inventory = commands.add_parser("start-inventory")
+    start_inventory.add_argument("--source-path", required=True)
+    start_inventory.add_argument("--worker-id", required=True)
+    start_inventory.add_argument("--lease-minutes", type=int, default=720)
+    start_inventory.set_defaults(func=command_start_inventory)
+    release_inventory = commands.add_parser("release-inventory")
+    release_inventory.add_argument("--source-path", required=True)
+    release_inventory.add_argument("--worker-id", required=True)
+    release_inventory.set_defaults(func=command_release_inventory)
     allow_collision = commands.add_parser("allow-collision")
     allow_collision.add_argument("--source-path", required=True)
     allow_collision.add_argument("--chinese", required=True)
     allow_collision.add_argument("--rationale", required=True)
+    allow_collision.add_argument("--worker-id", required=True)
     allow_collision.set_defaults(func=command_allow_collision)
     claim = commands.add_parser("claim-chunk")
     claim.add_argument("--source-path", required=True)

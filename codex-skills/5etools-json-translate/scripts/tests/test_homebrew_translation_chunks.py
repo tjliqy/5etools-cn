@@ -35,7 +35,7 @@ class ChunkTranslationTests(unittest.TestCase):
                 {"name": "Sea King", "entries": ["The Sea King waits."]},
                 {"name": "Sea King", "entries": ["The Sea King returns."]},
             ],
-        }), encoding="utf-8")
+        }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         self._run(QUEUE, "sync")
 
     def tearDown(self):
@@ -55,13 +55,16 @@ class ChunkTranslationTests(unittest.TestCase):
         self.assertEqual(completed.returncode, expected, completed.stdout + completed.stderr)
         return json.loads(completed.stdout)
 
-    def _plan_and_lock_term(self):
-        plan = self._run(CHUNKS, "plan", "--source-path", self.relative, "--max-chunk-chars", "60")
+    def _plan_and_lock_term(self, max_chars=60):
+        plan = self._run(CHUNKS, "plan", "--source-path", self.relative, "--max-chunk-chars", str(max_chars))
         self.assertGreater(plan["chunks"], 1)
+        self.assertTrue(Path(plan["glossary_file"]).is_file())
+        self._run(CHUNKS, "start-inventory", "--source-path", self.relative, "--worker-id", "main")
         self._run(
             CHUNKS, "set-term", "--source-path", self.relative,
-            "--english", "Sea King", "--sense", "adventure", "--chinese", "海王",
+            "--english", "Sea King", "--sense", "adventure", "--chinese", "海王", "--worker-id", "main",
         )
+        self._run(CHUNKS, "lock-glossary", "--source-path", self.relative, "--worker-id", "main")
         return plan
 
     def test_chunk_plan_and_claim_wait_for_parent_integration(self):
@@ -79,6 +82,10 @@ class ChunkTranslationTests(unittest.TestCase):
         with sqlite3.connect(self.database) as connection:
             connection.execute("UPDATE tasks SET status = 'merged' WHERE source_path = ?", (parent_relative,))
         self._run(CHUNKS, "plan", "--source-path", self.relative)
+        self._run(CHUNKS, "start-inventory", "--source-path", self.relative, "--worker-id", "main")
+        self._run(CHUNKS, "set-term", "--source-path", self.relative,
+                  "--english", "Sea King", "--sense", "adventure", "--chinese", "海王", "--worker-id", "main")
+        self._run(CHUNKS, "lock-glossary", "--source-path", self.relative, "--worker-id", "main")
         with sqlite3.connect(self.database) as connection:
             connection.execute("UPDATE tasks SET status = 'ready' WHERE source_path = ?", (parent_relative,))
         waiting = self._run(CHUNKS, "claim-chunk", "--source-path", self.relative, "--worker-id", "worker-a", expected=3)
@@ -90,7 +97,7 @@ class ChunkTranslationTests(unittest.TestCase):
 
     def _complete_claim(self, claim, chinese="海王"):
         worktree = Path(claim["worktree"])
-        target = worktree / "adventure" / "A; 大型冒险.json"
+        target = worktree / (claim.get("target") or "adventure/A; 大型冒险.json")
         if not target.exists():
             target.parent.mkdir(parents=True, exist_ok=True)
             target.write_bytes(self.source_file.read_bytes())
@@ -103,7 +110,7 @@ class ChunkTranslationTests(unittest.TestCase):
             if pointer == "/adventure/1":
                 data["adventure"][1]["name"] = chinese
                 usage_paths.append("/adventure/1/name")
-        target.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
+        target.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         subprocess.run(["git", "-C", str(worktree), "add", target.relative_to(worktree).as_posix()], check=True)
         subprocess.run([
             "git", "-C", str(worktree), "-c", "user.email=test@example.invalid", "-c", "user.name=Test",
@@ -135,6 +142,76 @@ class ChunkTranslationTests(unittest.TestCase):
                 break
             self._run(CHUNKS, "complete-chunk", "--lease-id", claim["lease_id"], "--result", str(report))
 
+    def test_chunks_can_be_leased_concurrently_after_target_bootstrap(self):
+        plan = self._plan_and_lock_term()
+        first = self._run(CHUNKS, "claim-chunk", "--source-path", self.relative, "--worker-id", "worker-bootstrap")
+        report = self._complete_claim(first)
+        self._run(CHUNKS, "complete-chunk", "--lease-id", first["lease_id"], "--result", str(report))
+        second = self._run(CHUNKS, "claim-chunk", "--source-path", self.relative, "--worker-id", "worker-2")
+        third = self._run(CHUNKS, "claim-chunk", "--source-path", self.relative, "--worker-id", "worker-3")
+        self.assertNotEqual(second["chunk_id"], third["chunk_id"])
+        self.assertNotEqual(second["worktree"], third["worktree"])
+        report_second = self._complete_claim(second)
+        report_third = self._complete_claim(third)
+        self._run(CHUNKS, "complete-chunk", "--lease-id", second["lease_id"], "--result", str(report_second))
+        self._run(CHUNKS, "complete-chunk", "--lease-id", third["lease_id"], "--result", str(report_third))
+
+    def test_untracked_bootstrap_target_is_reused_for_first_chunk(self):
+        plan = self._plan_and_lock_term()
+        target = Path(plan["worktree"]) / "adventure" / "A; 大型冒险.json"
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_bytes(self.source_file.read_bytes())
+        claim = self._run(CHUNKS, "claim-chunk", "--source-path", self.relative, "--worker-id", "legacy-bootstrap")
+        self.assertEqual(claim["worktree"], plan["worktree"])
+        self.assertEqual(claim["target"], "adventure/A; 大型冒险.json")
+        report = self._complete_claim(claim)
+        self._run(CHUNKS, "complete-chunk", "--lease-id", claim["lease_id"], "--result", str(report))
+
+    def test_initial_glossary_gate_and_cross_chunk_variants_are_rejected(self):
+        self._run(CHUNKS, "plan", "--source-path", self.relative, "--max-chunk-chars", "60")
+        waiting = self._run(CHUNKS, "claim-chunk", "--source-path", self.relative, "--worker-id", "worker-a", expected=3)
+        self.assertEqual(waiting["status"], "waiting_glossary")
+        self._run(CHUNKS, "start-inventory", "--source-path", self.relative, "--worker-id", "main")
+        another_owner = self._run(CHUNKS, "start-inventory", "--source-path", self.relative, "--worker-id", "other", expected=3)
+        self.assertEqual(another_owner["status"], "waiting_glossary")
+        self._run(CHUNKS, "set-term", "--source-path", self.relative,
+                  "--english", "Sea King", "--sense", "adventure", "--chinese", "海王", "--status", "contextual", "--worker-id", "main")
+        self._run(CHUNKS, "lock-glossary", "--source-path", self.relative, "--worker-id", "main")
+        while True:
+            claim = self._run(CHUNKS, "claim-chunk", "--source-path", self.relative, "--worker-id", "worker-a")
+            if "/adventure/0" in claim["pointers"]:
+                first = claim
+                break
+            report = self._complete_claim(claim)
+            self._run(CHUNKS, "complete-chunk", "--lease-id", claim["lease_id"], "--result", str(report))
+        report_first = self._complete_claim(first, "海王")
+        self._run(CHUNKS, "complete-chunk", "--lease-id", first["lease_id"], "--result", str(report_first))
+        while True:
+            claim = self._run(CHUNKS, "claim-chunk", "--source-path", self.relative, "--worker-id", "worker-b")
+            if "/adventure/1" in claim["pointers"]:
+                report_second = self._complete_claim(claim, "海之王")
+                self._run(CHUNKS, "complete-chunk", "--lease-id", claim["lease_id"], "--result", str(report_second))
+                break
+            report = self._complete_claim(claim)
+            self._run(CHUNKS, "complete-chunk", "--lease-id", claim["lease_id"], "--result", str(report))
+        audit = self._run(CHUNKS, "audit-terminology", "--source-path", self.relative, expected=2)
+        self.assertTrue(any("inconsistent term: Sea King (adventure)" in error for error in audit["errors"]))
+
+    def test_unfinished_chunks_block_ordinary_claims_and_new_plans(self):
+        self._plan_and_lock_term()
+        self._run(CHUNKS, "start-inventory", "--source-path", self.relative, "--worker-id", "editor")
+        glossary_lease = self._run(CHUNKS, "claim-chunk", "--source-path", self.relative,
+                                   "--worker-id", "translation-worker", expected=3)
+        self.assertEqual(glossary_lease["status"], "waiting_glossary")
+        self._run(CHUNKS, "release-inventory", "--source-path", self.relative, "--worker-id", "editor")
+        ordinary = self._run(QUEUE, "claim", "--worker-id", "ordinary-worker", expected=3)
+        self.assertEqual(ordinary["status"], "waiting_chunked")
+        other_relative = "adventure/B; Other Large.json"
+        (self.source / other_relative).write_text(self.source_file.read_text(encoding="utf-8"), encoding="utf-8")
+        self._run(QUEUE, "sync")
+        planned = self._run(CHUNKS, "plan", "--source-path", other_relative, expected=3)
+        self.assertEqual(planned["status"], "waiting_chunked_parent")
+
     def test_abort_parent_removes_checkpoints_and_requeues_for_planning(self):
         plan = self._plan_and_lock_term()
         result = self._run(
@@ -162,6 +239,7 @@ class ChunkTranslationTests(unittest.TestCase):
             "analyser": {"jobs": 2, "actionable": 2, "residual": 0, "unresolved_paths": 0},
             "review": {"rounds": 1, "result": "PASS"},
             "terminology": {"result": "PASS"},
+            "global_terminology_review": {"result": "PASS", "chunks_reviewed": [f"chunk-{i:04d}" for i in range(1, plan["chunks"] + 1)]},
             "validation": {key: "PASS" for key in ("json", "structure", "schema", "build", "tests")},
         }
         report_path = self.root / "final.json"

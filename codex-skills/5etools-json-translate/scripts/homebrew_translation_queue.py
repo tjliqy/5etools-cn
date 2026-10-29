@@ -238,7 +238,7 @@ def cleanup_worktree(target_repo: Path, worktree_path: str | None, branch: str |
         result = run_git(target_repo, "worktree", "remove", "--force", worktree_path)
         if result.returncode:
             errors.append(result.stderr.strip() or result.stdout.strip())
-    if branch and branch.startswith(("auto-translate/", "auto-integrate/")):
+    if branch and branch.startswith(("auto-translate/", "auto-translate-parent/", "auto-integrate/")):
         result = run_git(target_repo, "branch", "-D", branch)
         if result.returncode and "not found" not in result.stderr:
             errors.append(result.stderr.strip() or result.stdout.strip())
@@ -260,6 +260,13 @@ def cleanup_excess_worktrees(
                AND status IN ('leased', 'ready', 'integrating', 'chunked', 'reclaiming', 'failing')"""
         )
     }
+    if connection.execute("SELECT 1 FROM sqlite_master WHERE type = 'table' AND name = 'translation_chunks'").fetchone():
+        active_paths.update(
+            Path(row["worktree_path"]).resolve()
+            for row in connection.execute(
+                "SELECT worktree_path FROM translation_chunks WHERE status = 'leased' AND worktree_path IS NOT NULL"
+            )
+        )
     result = run_git(target_repo, "worktree", "list", "--porcelain")
     if result.returncode:
         return {"removed": [], "errors": [result.stderr.strip() or result.stdout.strip()]}
@@ -273,7 +280,7 @@ def cleanup_excess_worktrees(
         branch_ref = fields.get("branch", "")
         branch_prefix = "refs/heads/"
         branch = branch_ref[len(branch_prefix):] if branch_ref.startswith(branch_prefix) else branch_ref
-        if not path_text or not branch.startswith(("auto-translate/", "auto-integrate/")):
+        if not path_text or not branch.startswith(("auto-translate/", "auto-translate-parent/", "auto-integrate/")):
             continue
         path = Path(path_text).resolve()
         try:
@@ -455,6 +462,17 @@ def command_claim(args) -> int:
     connection = connect(args.database)
     current = stamp()
     connection.execute("BEGIN IMMEDIATE")
+    if connection.execute("SELECT 1 FROM sqlite_master WHERE type = 'table' AND name = 'translation_parents'").fetchone():
+        unfinished = connection.execute(
+            """SELECT p.source_path FROM translation_parents p
+               WHERE p.status = 'translating' AND EXISTS (
+                 SELECT 1 FROM translation_chunks c WHERE c.source_path = p.source_path AND c.status != 'complete')
+               ORDER BY p.source_path"""
+        ).fetchall()
+        if unfinished:
+            connection.execute("COMMIT")
+            return emit({"ok": True, "status": "waiting_chunked", "sources": [row["source_path"] for row in unfinished],
+                         "message": "UNFINISHED_CHUNKS_BLOCK_NEW_FILES"}, 3)
     eligible_sql = """SELECT * FROM tasks
        WHERE status = 'pending'
           OR (status = 'failed' AND worktree_path IS NULL AND attempts < ? AND (retry_after IS NULL OR retry_after <= ?))
