@@ -1388,8 +1388,8 @@ Parser.getArticle = function (str) {
 	return "一个";
 };
 
-Parser.spLevelToFullLevelText = function (level) {
-	return level === 0 ? "戏法" : `${Parser.spLevelToFull(level)}法术`;
+Parser.spLevelToFullLevelText = function (level, { isDash = false, isPluralCantrips = true, is2letters = false} = {}) {
+	return level === 0 ? "戏法" : `${Parser.spLevelToFull(level)}${is2letters?"":'法术'}`;
 };
 
 Parser.spLevelToSpellPoints = function (lvl) {

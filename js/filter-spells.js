@@ -367,7 +367,7 @@ class PageFilterSpells extends PageFilterBase {
 			items: [
 				0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
 			],
-			displayFn: (lvl) => Parser.spLevelToFullLevelText(lvl, {isPluralCantrips: false}),
+			displayFn: (lvl) => Parser.spLevelToFullLevelText(lvl, {isPluralCantrips: false, is2letters: true}),
 		});
 		this._variantClassFilter = new VariantClassFilter();
 		this._classAndSubclassFilter = new MultiFilterClasses({
