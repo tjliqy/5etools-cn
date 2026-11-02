@@ -62,6 +62,8 @@ export class InitiativeTrackerSettings extends BaseComponent {
 		"isRollGroups",
 		"isRerollInitiativeEachRound",
 		"isInvertWoundDirection",
+		"importIsAddPlayers",
+		"importIsAppend",
 		"playerInitShowExactPlayerHp",
 		"playerInitShowExactMonsterHp",
 		"playerInitHideNewMonster",
@@ -125,6 +127,8 @@ export class InitiativeTrackerSettings extends BaseComponent {
 		UiUtil.addModalSep(eleModalInner);
 		this._pGetShowModalResults_renderSection_wounds({eleModalInner});
 		UiUtil.addModalSep(eleModalInner);
+		this._pGetShowModalResults_renderSection_import({eleModalInner});
+		UiUtil.addModalSep(eleModalInner);
 		this._pGetShowModalResults_renderSection_playerView({eleModalInner});
 		UiUtil.addModalSep(eleModalInner);
 		this._pGetShowModalResults_renderSection_additionalCols({eleModalInner});
@@ -138,13 +142,18 @@ export class InitiativeTrackerSettings extends BaseComponent {
 
 	_pGetShowModalResults_renderSection_isRolls ({eleModalInner}) {
 		UiUtil.getAddModalRowCb2({wrp: eleModalInner, comp: this, prop: "isRollInit", text: "掷先攻骰"});
-		UiUtil.getAddModalRowCb2({wrp: eleModalInner, comp: this, prop: "isRollHp", text: "掷生命值骰"});
+		UiUtil.getAddModalRowCb2({wrp: eleModalInner, comp: this, prop: "isRollHp", text: "掷生物生命值骰"});
 		UiUtil.getAddModalRowCb2({wrp: eleModalInner, comp: this, prop: "isRollGroups", text: "一组生物一起掷骰"});
 		UiUtil.getAddModalRowCb2({wrp: eleModalInner, comp: this, prop: "isRerollInitiativeEachRound", text: "每轮重新掷先攻骰"});
 	}
 
 	_pGetShowModalResults_renderSection_wounds ({eleModalInner}) {
 		UiUtil.getAddModalRowCb2({wrp: eleModalInner, comp: this, prop: "isInvertWoundDirection", text: "以伤害值追踪生命值", title: `例如，生物满血时通常显示为“100/100”；改为追踪伤害后，满血时显示为“0/100”。`});
+	}
+
+	_pGetShowModalResults_renderSection_import ({eleModalInner}) {
+		UiUtil.getAddModalRowCb2({wrp: eleModalInner, comp: this, prop: "importIsAddPlayers", text: "导入遭遇：增加玩家"});
+		UiUtil.getAddModalRowCb2({wrp: eleModalInner, comp: this, prop: "importIsAppend", text: "导入遭遇：Add to existing tracker state"});
 	}
 
 	_pGetShowModalResults_renderSection_playerView ({eleModalInner}) {

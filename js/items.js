@@ -248,7 +248,6 @@ class ItemsPage extends ListPage {
 				nameSingular: "物品",
 				namePlural: "物品",
 				pageTitle: "物品书籍视图",
-				propMarkdown: "item",
 				isSublistItemsCountable: true,
 			},
 

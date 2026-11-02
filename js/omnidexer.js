@@ -155,8 +155,6 @@ class Omnidexer {
 
 		const {arbiter, index, options} = state;
 
-		if (name) name = name.toAscii();
-
 		let obj = {};
 		obj.n = ent.ENG_name ?? name;
 		obj.cn = name;

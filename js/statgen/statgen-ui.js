@@ -651,8 +651,8 @@ export class StatGenUi extends BaseComponent {
 			<hr class="ve-hr-4 ve-mb-2">
 
 			<label class="ve-flex-v-center">
-				<div class="ve-mr-2">自定规则</div>
 				${ComponentUiUtil.getCbBool(this, "pb_isCustom")}
+				<div class="ve-ml-2">自定义规则</div>
 			</label>
 		</div>`;
 	}

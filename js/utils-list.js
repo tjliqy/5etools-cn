@@ -497,8 +497,8 @@ class SaveManager extends BaseComponent {
 		const wrpIsReference = !this._isReferencable
 			? null
 			: veT`<label class="ve-flex-v-center ve-mr-2">
-				<div class="ve-mr-1 ve-help" title="启用后会复制当前列表，原列表日后的修改或删除不会影响此副本。关闭时只保留列表引用，原列表的改动也会反映到使用它的应用中。">创建副本</div>
 				${ComponentUiUtil.getCbBool(this, "isLoadAsCopy")}
+				<div class="ve-ml-1 ve-help" title="启用后会复制当前列表，原列表日后的修改或删除不会影响此副本。关闭时只保留列表引用，原列表的改动也会反映到使用它的应用中。">创建副本</div>
 			</label>`;
 
 		const btnExportAll = veT`<button class="ve-btn ve-btn-default ve-btn-xs" title="导出所有列表到文件">全部导出</button>`

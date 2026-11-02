@@ -2407,8 +2407,8 @@ class TimeTrackerRoot_Calendar extends TimeTrackerComponent {
 					${btnSendToFoundry}
 					${btnSaveToFile}
 					<label class="ve-flex-v-center ${timeInputs ? "ve-mr-2" : "ve-mr-3"}">
-						<div class="ve-mr-1 ve-no-wrap">有时间？</div>
 						${cbHasTime}
+						<div class="ve-ml-1 ve-no-wrap">有时间？</div>
 					</label>
 					${timeInputs ? veT`<div class="ve-flex-v-center ve-mr-3">
 						${timeInputs.iptHours}
@@ -3246,8 +3246,8 @@ class TimeTrackerRoot_Settings_Event extends TimeTrackerComponent {
 				${btnShowHide}
 				${btnEdit}
 				<label class="ve-flex-v-center ${timeInputs ? "ve-mr-2" : "ve-mr-3"}">
-					<div class="ve-mr-1 ve-no-wrap">有时间？</div>
 					${cbHasTime}
+					<div class="ve-ml-1 ve-no-wrap">有时间？</div>
 				</label>
 				${timeInputs ? veT`<div class="ve-flex-v-center ve-mr-3">
 					${timeInputs.iptHours}

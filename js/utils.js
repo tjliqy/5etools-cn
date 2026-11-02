@@ -2,7 +2,7 @@
 
 // in deployment, `IS_DEPLOYED = "<version number>";` should be set below.
 globalThis.IS_DEPLOYED = undefined;
-globalThis.VERSION_NUMBER = /* 5ETOOLS_VERSION__OPEN */"2.39.0-cn.2"/* 5ETOOLS_VERSION__CLOSE */;
+globalThis.VERSION_NUMBER = /* 5ETOOLS_VERSION__OPEN */"2.39.1-cn.1"/* 5ETOOLS_VERSION__CLOSE */;
 globalThis.DEPLOYED_IMG_ROOT = "/img/";
 // for the roll20 script to set
 globalThis.IS_VTT = false;
@@ -204,6 +204,11 @@ String.prototype.last = String.prototype.last || function () {
 
 String.prototype.escapeRegexp = String.prototype.escapeRegexp || function () {
 	return this.replace(/[-/\\^$*+?.()|[\]{}]/g, "\\$&");
+};
+
+String.prototype.matchAllSafe = String.prototype.matchAllSafe || function (re) {
+	if (re.global) return [...this.matchAll(re)];
+	return [this.match(re)].filter(Boolean);
 };
 
 String.prototype.toUrlified = String.prototype.toUrlified || function () {
@@ -3490,7 +3495,27 @@ globalThis.ContextUtil = class {
 
 // LIST AND SEARCH =====================================================================================================
 globalThis.SearchUtil = class {
-	static removeStemmer (elasticSearch) {
+	static _initSearchIndex_getFnFold () {
+		const fnExisting = elasticlunr.Pipeline.getRegisteredFunction("vetoolsFoldAscii");
+		if (fnExisting) return fnExisting;
+
+		const fnFold = token => token.toAscii();
+		elasticlunr.Pipeline.registerFunction(fnFold, "vetoolsFoldAscii");
+		return fnFold;
+	}
+
+	static initSearchIndex (elasticSearch, {isRemoveStemmer = true} = {}) {
+		const fnFold = this._initSearchIndex_getFnFold();
+
+		// (enhanced) `elasticlunr` pipeline; this is applied to both indexing and search:
+		//   - folding (e.g. `the firé` -> `the fire`)
+		//   - trimming (e.g. `the fire.` -> `the fire`)
+		//   - stop-word filtering (e.g. `the fire` -> `fire`)
+		//   - (stemming (e.g. `running` -> `run`))
+		if (!elasticSearch.pipeline.get().includes(fnFold)) elasticSearch.pipeline.before(elasticlunr.trimmer, fnFold);
+
+		if (!isRemoveStemmer) return;
+
 		const stemmer = elasticlunr.Pipeline.getRegisteredFunction("stemmer");
 		elasticSearch.pipeline.remove(stemmer);
 	}
@@ -4720,11 +4745,11 @@ globalThis.SortUtil = class {
 	}
 
 	static ascSortClass (a, b) {
-		return SortUtil.ascSortDateString(Parser.sourceJsonToDate(b.source), Parser.sourceJsonToDate(a.source)) || SortUtil.ascSortLower(a.name, b.name) || SortUtil.ascSortLower(a.source, b.source);
+		return SortUtil.ascSortDateString(Parser.sourceJsonToDate(b.source || ""), Parser.sourceJsonToDate(a.source || "")) || SortUtil.ascSortLower(a.name, b.name) || SortUtil.ascSortLower(a.source, b.source);
 	}
 
 	static ascSortSubclass (a, b) {
-		return SortUtil.ascSortDateString(Parser.sourceJsonToDate(b.source), Parser.sourceJsonToDate(a.source)) || SortUtil.ascSortLower(a.name, b.name);
+		return SortUtil.ascSortDateString(Parser.sourceJsonToDate(b.source || ""), Parser.sourceJsonToDate(a.source || "")) || SortUtil.ascSortLower(a.name, b.name);
 	}
 
 	static ascSortDeity (a, b) {
@@ -7415,10 +7440,12 @@ globalThis.DataUtil = class {
 				raceName: race.name,
 				raceSource: race.source,
 				_raceSubraceName: race._subraceName,
-				_raceBaseName: race._baseName,
-				_raceBaseSource: race._baseSource,
+				_raceBaseName: race._baseName || race._versionBase_name,
+				_raceBaseSource: race._baseSource || race._versionBase_source,
 				srd: !!(race.srd || race._baseSrd),
+				srd52: !!race.srd52,
 				basicRules: !!race.basicRules,
+				basicRules2024: !!race.basicRules2024,
 				page: entry.page ?? race.page,
 				...MiscUtil.copyFast(entry),
 				__prop: "raceFeature",
@@ -9228,7 +9255,7 @@ class BookModeViewBase {
 	}
 
 	_getBtnWindowClose () {
-		return veT`<button class="ve-btn ve-btn-xs ve-btn-danger ve-br-0 ve-bt-0 ve-btl-0 ve-btr-0 ve-bbr-0 ve-bbl-0 ve-h-20p" title="关闭"><span class="glyphicon glyphicon-remove"></span></button>`
+		return veT`<button class="ve-btn ve-btn-xs ve-btn-danger ve-b-0 ve-bc-0 ve-h-20p" title="关闭"><span class="glyphicon glyphicon-remove"></span></button>`
 			.vee.onn("click", () => this.setStateClosed());
 	}
 
@@ -9255,7 +9282,7 @@ class BookModeViewBase {
 			StorageUtil.syncSetForPage(BookModeViewBase._BOOK_VIEW_COLUMNS_K, val);
 		};
 
-		const selColumns = veT`<select class="ve-form-control ve-input-sm">
+		const selColumns = veT`<select class="ve-form-control ve-input-xs">
 			<option value="2">两列 (同书中样式)</option>
 			<option value="1">单列</option>
 			<option value="3">三列</option>
@@ -9268,7 +9295,7 @@ class BookModeViewBase {
 		onChangeSelColumns();
 
 		const wrpPrint = veT`<div class="ve-w-100 ve-flex">
-			<div class="ve-flex-vh-center"><div class="ve-mr-2 ve-no-wrap ve-help-subtle" title="打印页面时应用。">打印列数：</div>${selColumns}</div>
+			<label class="ve-flex-vh-center"><span class="ve-mr-2 ve-no-wrap ve-help-subtle" title="打印页面时应用。">打印列数：</span>${selColumns}</label>
 		</div>`.vee.appendTo(wrp);
 
 		return {wrp, wrpPrint};

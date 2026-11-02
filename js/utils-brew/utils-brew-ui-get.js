@@ -91,8 +91,8 @@ export class GetBrewUi {
 			this._miscFilter = new Filter({
 				header: "Miscellaneous",
 				cnHeader: "杂项",
-				items: ["合作方", "范例"],
-				deselFn: it => it === "范例",
+				items: ["Loaded", "合作方", "范例"],
+				deselFn: it => ["Loaded", "范例"].includes(it),
 			});
 		}
 
@@ -101,6 +101,7 @@ export class GetBrewUi {
 			if (brewInfo._brewAuthor && brewInfo._brewAuthor.toLowerCase().startsWith("sample -")) brewInfo._fMisc.push("范例");
 			if (brewInfo.sources?.some(ab => ab.startsWith(Parser.SRC_UA_ONE_PREFIX))) brewInfo._fMisc.push("One D&D");
 			if (brewInfo._brewIsPartnered) brewInfo._fMisc.push("合作方");
+			if (brewInfo._brewIsLoaded) brewInfo._fMisc.push("Loaded");
 		}
 
 		addToFilters (it, isExcluded) {
@@ -202,6 +203,9 @@ export class GetBrewUi {
 
 					veT`<div class="ve-flex-col ve-w-100">${propMetas.map(meta => meta.wrp)}</div>`
 						.vee.appendTo(elePreviewWrpInner);
+
+					veT`<div class="ve-flex ve-w-100 ve-mt-2"><a href="${entity.urlDownload}" rel="noopener noreferrer" target="_blank">View Raw<a/></div>`
+						.vee.appendTo(elePreviewWrpInner);
 				});
 		}
 
@@ -274,6 +278,7 @@ export class GetBrewUi {
 			case "added": return this.constructor._sortUrlList_orFallback(a, b, SortUtil.ascSort, "_brewAdded");
 			case "modified": return this.constructor._sortUrlList_orFallback(a, b, SortUtil.ascSort, "_brewModified");
 			case "published": return this.constructor._sortUrlList_orFallback(a, b, SortUtil.ascSort, "_brewPublished");
+			case "loaded": return this.constructor._sortUrlList_orFallback(a, b, SortUtil.ascSort, "_brewIsLoaded");
 			default: throw new Error(`No sort order defined for property "${o.sortBy}"`);
 		}
 	}
@@ -297,6 +302,19 @@ export class GetBrewUi {
 
 	_isMatchingIndexInfo (info) {
 		return true;
+	}
+
+	_mutBrewInfoLoaded (brewInfo) {
+		brewInfo._brewIsLoaded = !!brewInfo.sources?.length && brewInfo.sources.every(src => this._brewUtil.hasSourceJson(src));
+	}
+
+	_doRefreshLoaded (rdState) {
+		this._dataList.forEach(brewInfo => {
+			this._mutBrewInfoLoaded(brewInfo);
+			rdState.pageFilter.mutateAndAddToFilters(brewInfo);
+		});
+		rdState.list.items.forEach(li => li.data.dispLoaded.vee.toggleClass("ve-hidden", !this._dataList[li.getId()]._brewIsLoaded));
+		this._handleFilterChange(rdState);
 	}
 
 	async pHandlePreCloseModal ({rdState}) {
@@ -357,7 +375,7 @@ export class GetBrewUi {
 			<button class="ve-col-1-2 sort ve-btn ve-btn-default ve-btn-xs" data-sort="category">分类</button>
 			<button class="ve-col-1-2 sort ve-btn ve-btn-default ve-btn-xs" data-sort="modified">修改时间</button>
 			${btnSortAddedPublished}
-			<button class="sort ve-col-1 ve-btn ve-btn-default ve-btn-xs ve-grow" disabled>来源</button>
+			<button class="sort ve-col-1 ve-btn ve-btn-default ve-btn-xs ve-grow" data-sort="loaded" title="Loaded"><span class="glyphicon glyphicon-saved"></span></button>
 		</div>`;
 
 		veT(wrp)`
@@ -396,6 +414,7 @@ export class GetBrewUi {
 		SortUtil.initBtnSortHandlers(wrpSort, rdState.list);
 
 		this._dataList.forEach((brewInfo, ix) => {
+			this._mutBrewInfoLoaded(brewInfo);
 			const {listItem} = this._pRender_getUrlRowMeta(rdState, brewInfo, ix);
 			rdState.list.addItem(listItem);
 		});
@@ -452,10 +471,13 @@ export class GetBrewUi {
 
 		const btnAdd = veE({
 			tag: "span",
-			clazz: `ve-col-3-5 ve-bold manbrew__load_from_url ve-pl-0 ve-clickable`,
+			clazz: `ve-col-3-8 ve-bold manbrew__load_from_url ve-pl-0 ve-clickable`,
 			txt: brewInfo._brewName,
-			click: evt => this._pHandleClick_btnGetRemote({evt, btn: btnAdd, url: brewInfo.urlDownload}),
+			click: evt => this._pHandleClick_btnGetRemote({evt, rdState, btn: btnAdd, url: brewInfo.urlDownload}),
 		});
+
+		const dispLoaded = veT`<span class="glyphicon glyphicon-ok" title="Loaded"></span>`
+			.vee.toggleClass("ve-hidden", !brewInfo._brewIsLoaded);
 
 		const btnShowHidePreview = veT`<span class="ve-col-0-5 ve-px-0 ve-flex-vh-center ve-lst__btn-toggle-expand ve-self-flex-stretch ve-no-select">[+]</span>`;
 
@@ -485,19 +507,7 @@ export class GetBrewUi {
 						veE({tag: "span", clazz: "ve-col-1-2 ve-text-center ve-mobile-sm__text-clip-ellipsis", txt: brewInfo._brewPropDisplayName, title: brewInfo._brewPropDisplayName}),
 						veE({tag: "span", clazz: "ve-col-1-2 ve-text-center ve-code", txt: timestampModified}),
 						veE({tag: "span", clazz: "ve-col-1-2 ve-text-center ve-code", txt: timestampAddedPublished}),
-						veE({
-							tag: "span",
-							clazz: "manbrew__source ve-text-center ve-pr-0 ve-grow",
-							children: [
-								veE({
-									tag: "a",
-									txt: `查看原始数据`,
-								})
-									.vee.attr("href", brewInfo.urlDownload)
-									.vee.attr("target", "_blank")
-									.vee.attr("rel", "noopener noreferrer"),
-							],
-						}),
+						veE({tag: "span", clazz: "ve-col-0-5 ve-text-center", children: [dispLoaded]}),
 					],
 				}),
 				dispExpandedOuter,
@@ -521,7 +531,8 @@ export class GetBrewUi {
 				btnAdd,
 				cbSel,
 				btnShowHidePreview,
-				pFnDoDownload: ({isLazy = false} = {}) => this._pHandleClick_btnGetRemote({btn: btnAdd, url: brewInfo.urlDownload, isLazy}),
+				dispLoaded,
+				pFnDoDownload: ({isLazy = false} = {}) => this._pHandleClick_btnGetRemote({rdState, btn: btnAdd, url: brewInfo.urlDownload, isLazy}),
 			},
 		});
 
@@ -570,10 +581,11 @@ export class GetBrewUi {
 		await Promise.allSettled(listItems.map(it => it.data.pFnDoDownload({isLazy: true})));
 		const lazyDepsAdded = await this._brewUtil.pAddBrewsLazyFinalize();
 		this._brewsLoaded.push(...lazyDepsAdded);
+		this._doRefreshLoaded(rdState);
 		JqueryUtil.doToast(`已选择的${this._brewUtil.DISPLAY_NAME}资源加载完成`);
 	}
 
-	async _pHandleClick_btnGetRemote ({evt, btn, url, isLazy}) {
+	async _pHandleClick_btnGetRemote ({evt, rdState, btn, url, isLazy}) {
 		if (!(url || "").trim()) return JqueryUtil.doToast({type: "danger", content: `${this._brewUtil.DISPLAY_NAME}没有可用的下载网址！`});
 
 		if (evt) {
@@ -585,6 +597,7 @@ export class GetBrewUi {
 		btn.vee.txt("正在加载……").vee.attr("disabled", true);
 		const brewsAdded = await this._brewUtil.pAddBrewFromUrl(url, {isLazy});
 		this._brewsLoaded.push(...brewsAdded);
+		if (!isLazy) this._doRefreshLoaded(rdState);
 		btn.vee.txt("完成！");
 		setTimeout(() => btn.vee.html(cachedHtml).vee.attr("disabled", false), VeCt.DUR_INLINE_NOTIFY);
 	}

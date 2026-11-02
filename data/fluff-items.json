@@ -47,11 +47,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/FRHoF/Adventurer's Ring.webp"
+						"path": "items/DMG/+1 Ammunition.webp"
 					},
-					"width": 413,
-					"height": 622,
-					"credit": "Polar Engine"
+					"width": 818,
+					"height": 1000
 				}
 			]
 		},
@@ -64,11 +63,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/BGG/Adze of Annam.webp"
+						"path": "items/XDMG/+1 Ammunition.webp"
 					},
-					"width": 817,
-					"height": 1000,
-					"credit": "Isabel Gibney"
+					"width": 818,
+					"height": 1000
 				}
 			]
 		},
@@ -81,11 +79,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/MOT/Akmon, Hammer of Purphoros.webp"
+						"path": "items/DMG/+1 Armor.webp"
 					},
-					"width": 1000,
-					"height": 949,
-					"credit": "Yeong-Hao Han"
+					"width": 555,
+					"height": 1000
 				}
 			]
 		},
@@ -98,9 +95,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Alchemy Jug.webp"
+						"path": "items/XDMG/+1 Armor.webp"
 					},
-					"width": 778,
+					"width": 555,
 					"height": 1000
 				}
 			]
@@ -114,9 +111,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Alchemy Jug.webp"
+						"path": "items/DMG/Rod of the Pact Keeper.webp"
 					},
-					"width": 778,
+					"width": 699,
 					"height": 1000
 				}
 			]
@@ -130,7 +127,7 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Ammunition of Slaying.webp"
+						"path": "items/XDMG/Rod of the Pact Keeper.webp"
 					},
 					"width": 1000,
 					"height": 986,
@@ -147,10 +144,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Amulet of Health.webp"
+						"path": "items/DMG/+1 Shield.webp"
 					},
-					"width": 433,
-					"height": 1133
+					"width": 256,
+					"height": 256
 				}
 			]
 		},
@@ -163,10 +160,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Amulet of Health.webp"
+						"path": "items/XDMG/+1 Shield.webp"
 					},
-					"width": 433,
-					"height": 1133
+					"width": 256,
+					"height": 256
 				}
 			]
 		},
@@ -174,31 +171,32 @@
 			"ENG_name": "Amulet of Proof against Detection and Location",
 			"name": "反侦护符",
 			"source": "DMG",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/DMG/Amulet of Proof against Detection and Location.webp"
-					},
-					"width": 299,
-					"height": 775
-				}
-			]
+			"_copy": {
+				"name": "Wand of the War Mage",
+				"source": "DMG"
+			}
 		},
 		{
 			"ENG_name": "Amulet of Proof against Detection and Location",
 			"name": "反侦护符",
 			"source": "XDMG",
+			"_copy": {
+				"name": "Wand of the War Mage",
+				"source": "XDMG"
+			}
+		},
+		{
+			"name": "+1 Weapon",
+			"source": "DMG",
 			"images": [
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Amulet of Proof against Detection and Location.webp"
+						"path": "items/DMG/+1 Weapon.webp"
 					},
-					"width": 299,
-					"height": 775
+					"width": 320,
+					"height": 1000
 				}
 			]
 		},
@@ -211,11 +209,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/EGW/Amulet of the Drunkard.webp"
+						"path": "items/XDMG/+1 Weapon.webp"
 					},
-					"width": 475,
-					"height": 1000,
-					"credit": "Olga Drebas"
+					"width": 320,
+					"height": 1000
 				}
 			]
 		},
@@ -228,11 +225,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/CoA/Amulet of the Inferno.webp"
+						"path": "items/XDMG/Wraps of Unarmed Power.webp"
 					},
-					"width": 706,
-					"height": 399,
-					"credit": "Aaron Sims"
+					"width": 872,
+					"height": 1000
 				}
 			]
 		},
@@ -245,10 +241,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Amulet of the Planes.webp"
+						"path": "items/DMG/+2 Ammunition.webp"
 					},
-					"width": 637,
-					"height": 1000
+					"width": 1000,
+					"height": 964
 				}
 			]
 		},
@@ -261,10 +257,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Amulet of the Planes.webp"
+						"path": "items/XDMG/+2 Ammunition.webp"
 					},
-					"width": 637,
-					"height": 1000
+					"width": 1000,
+					"height": 964
 				}
 			]
 		},
@@ -277,10 +273,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Animated Shield.webp"
+						"path": "items/DMG/+2 Armor.webp"
 					},
-					"width": 566,
-					"height": 850
+					"width": 783,
+					"height": 1000
 				}
 			]
 		},
@@ -293,10 +289,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Animated Shield.webp"
+						"path": "items/XDMG/+2 Armor.webp"
 					},
-					"width": 566,
-					"height": 850
+					"width": 783,
+					"height": 1000
 				}
 			]
 		},
@@ -319,11 +315,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Apparatus of Kwalish.webp"
+						"path": "items/DMG/+2 Rod of the Pact Keeper.webp"
 					},
 					"width": 1000,
-					"height": 631,
-					"credit": "Aaron Hübrich"
+					"height": 926
 				}
 			]
 		},
@@ -336,10 +331,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Apparatus of Kwalish.webp"
+						"path": "items/XDMG/+2 Rod of the Pact Keeper.webp"
 					},
 					"width": 1000,
-					"height": 631
+					"height": 926
 				}
 			]
 		},
@@ -362,10 +357,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/ERLW/Armblade.webp"
+						"path": "items/XDMG/+2 Shield.webp"
 					},
-					"width": 801,
-					"height": 594
+					"width": 670,
+					"height": 1000
 				}
 			]
 		},
@@ -378,7 +373,7 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Armor of Cold Resistance.webp"
+						"path": "items/DMG/+2 Weapon.webp"
 					},
 					"width": 850,
 					"height": 1165,
@@ -396,7 +391,7 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Armor of Cold Resistance.webp"
+						"path": "items/XDMG/+2 Weapon.webp"
 					},
 					"width": 850,
 					"height": 1165,
@@ -414,10 +409,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/BMT/Armor of Fungal Spores.webp"
+						"path": "items/XDMG/+2 Wraps of Unarmed Power.webp"
 					},
-					"width": 838,
-					"height": 1000
+					"width": 1000,
+					"height": 792
 				}
 			]
 		},
@@ -430,9 +425,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Armor of Invulnerability.webp"
+						"path": "items/DMG/+3 Ammunition.webp"
 					},
-					"width": 732,
+					"width": 784,
 					"height": 1000
 				}
 			]
@@ -446,9 +441,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Armor of Invulnerability.webp"
+						"path": "items/XDMG/+3 Ammunition.webp"
 					},
-					"width": 732,
+					"width": 784,
 					"height": 1000
 				}
 			]
@@ -462,10 +457,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Armor of Resistance.webp"
+						"path": "items/DMG/+3 Rod of the Pact Keeper.webp"
 					},
-					"width": 776,
-					"height": 850
+					"width": 674,
+					"height": 1000
 				}
 			]
 		},
@@ -478,10 +473,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Armor of Resistance.webp"
+						"path": "items/XDMG/+3 Rod of the Pact Keeper.webp"
 					},
-					"width": 776,
-					"height": 850
+					"width": 674,
+					"height": 1000
 				}
 			]
 		},
@@ -494,9 +489,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/BMT/Armor of the Fallen.webp"
+						"path": "items/DMG/+3 Shield.webp"
 					},
-					"width": 694,
+					"width": 1000,
 					"height": 1000
 				}
 			]
@@ -510,10 +505,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Arrow of Slaying.webp"
+						"path": "items/XDMG/+3 Shield.webp"
 					},
 					"width": 1000,
-					"height": 986
+					"height": 1000
 				}
 			]
 		},
@@ -536,11 +531,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/TCE/Atlas of Endless Horizons.webp"
+						"path": "items/DMG/+3 Weapon.webp"
 					},
-					"width": 852,
-					"height": 1000,
-					"credit": "Andrew Mar"
+					"width": 792,
+					"height": 1000
 				}
 			]
 		},
@@ -556,11 +550,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/FRHoF/Axe Beak.webp"
+						"path": "items/XDMG/+3 Weapon.webp"
 					},
-					"width": 740,
-					"height": 805,
-					"credit": "Polar Engine"
+					"width": 792,
+					"height": 1000
 				}
 			]
 		},
@@ -573,10 +566,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/IDRotF/Axe Beak.webp"
+						"path": "items/XDMG/+3 Wraps of Unarmed Power.webp"
 					},
-					"width": 850,
-					"height": 942
+					"width": 1000,
+					"height": 497
 				}
 			]
 		},
@@ -589,9 +582,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Axe of the Dwarvish Lords.webp"
+						"path": "items/DMG/Adamantine Armor.webp"
 					},
-					"width": 530,
+					"width": 718,
 					"height": 1000
 				}
 			]
@@ -605,9 +598,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Axe of the Dwarvish Lords.webp"
+						"path": "items/XDMG/Adamantine Armor.webp"
 					},
-					"width": 530,
+					"width": 718,
 					"height": 1000
 				}
 			]
@@ -621,11 +614,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/GGR/Azorius Guild Signet.webp"
+						"path": "items/XDMG/Adamantine Weapon.webp"
 					},
-					"width": 640,
-					"height": 462,
-					"credit": "Raoul Vitale"
+					"width": 935,
+					"height": 1000
 				}
 			]
 		},
@@ -638,11 +630,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/GGR/Azorius Keyrune.webp"
+						"path": "items/FRHoF/Adventurer's Ring.webp"
 					},
-					"width": 620,
-					"height": 453,
-					"credit": "Daniel Ljunggren"
+					"width": 413,
+					"height": 622,
+					"credit": "Polar Engine"
 				}
 			]
 		},
@@ -655,10 +647,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Baba Yagas Dancing Broom.webp"
+						"path": "items/BGG/Adze of Annam.webp"
 					},
-					"width": 942,
-					"height": 1000
+					"width": 817,
+					"height": 1000,
+					"credit": "Isabel Gibney"
 				}
 			]
 		},
@@ -671,11 +664,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/TCE/Baba Yaga's Mortar and Pestle.webp"
+						"path": "items/MOT/Akmon, Hammer of Purphoros.webp"
 					},
-					"width": 800,
-					"height": 1045,
-					"credit": "Irina Nordsol"
+					"width": 1000,
+					"height": 949,
+					"credit": "Yeong-Hao Han"
 				}
 			]
 		},
@@ -688,10 +681,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/WDH/Badge of the Watch.webp"
+						"path": "items/DMG/Alchemy Jug.webp"
 					},
-					"width": 791,
-					"height": 1086
+					"width": 778,
+					"height": 1000
 				}
 			]
 		},
@@ -704,10 +697,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Bag of Beans.webp"
+						"path": "items/XDMG/Alchemy Jug.webp"
 					},
-					"width": 315,
-					"height": 315
+					"width": 778,
+					"height": 1000
 				}
 			]
 		},
@@ -720,10 +713,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Bag of Beans.webp"
+						"path": "items/XDMG/Ammunition of Slaying.webp"
 					},
 					"width": 1000,
-					"height": 788
+					"height": 986,
+					"title": "Ammunition of Slaying (Arrow)"
 				}
 			]
 		},
@@ -736,10 +730,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Bag of Devouring.webp"
+						"path": "items/DMG/Amulet of Health.webp"
 					},
-					"width": 585,
-					"height": 877
+					"width": 433,
+					"height": 1133
 				}
 			]
 		},
@@ -752,10 +746,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Bag of Devouring.webp"
+						"path": "items/XDMG/Amulet of Health.webp"
 					},
-					"width": 585,
-					"height": 877
+					"width": 433,
+					"height": 1133
 				}
 			]
 		},
@@ -768,10 +762,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Bag of Holding.webp"
+						"path": "items/DMG/Amulet of Proof against Detection and Location.webp"
 					},
-					"width": 560,
-					"height": 1000
+					"width": 299,
+					"height": 775
 				}
 			]
 		},
@@ -784,10 +778,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Bag of Holding.webp"
+						"path": "items/XDMG/Amulet of Proof against Detection and Location.webp"
 					},
-					"width": 560,
-					"height": 1000
+					"width": 299,
+					"height": 775
 				}
 			]
 		},
@@ -800,11 +794,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Bag of Tricks.webp"
+						"path": "items/EGW/Amulet of the Drunkard.webp"
 					},
-					"width": 315,
-					"height": 315,
-					"credit": "Conceptopolis"
+					"width": 475,
+					"height": 1000,
+					"credit": "Olga Drebas"
 				}
 			]
 		},
@@ -817,10 +811,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Bag of Tricks.webp"
+						"path": "items/CoA/Amulet of the Inferno.webp"
 					},
-					"width": 1000,
-					"height": 852
+					"width": 706,
+					"height": 399,
+					"credit": "Aaron Sims"
 				}
 			]
 		},
@@ -863,11 +858,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "decks/BMT/Deck of Many Things/03-balance.webp"
+						"path": "items/DMG/Amulet of the Planes.webp"
 					},
-					"width": 850,
-					"height": 1552,
-					"credit": "Francesca Resta"
+					"width": 637,
+					"height": 1000
 				}
 			]
 		},
@@ -900,9 +894,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/BGDIA/Battle Standard of Infernal Power.webp"
+						"path": "items/XDMG/Amulet of the Planes.webp"
 					},
-					"width": 800,
+					"width": 637,
 					"height": 1000
 				}
 			]
@@ -916,11 +910,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XPHB/Battleaxe.webp"
+						"path": "items/DMG/Animated Shield.webp"
 					},
-					"width": 237,
-					"height": 437,
-					"credit": "Polar Engine"
+					"width": 566,
+					"height": 850
 				}
 			]
 		},
@@ -933,10 +926,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Belt of Dwarvenkind.webp"
+						"path": "items/XDMG/Animated Shield.webp"
 					},
-					"width": 1024,
-					"height": 1024
+					"width": 566,
+					"height": 850
 				}
 			]
 		},
@@ -949,10 +942,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Belt of Dwarvenkind.webp"
+						"path": "items/DMG/Apparatus of Kwalish.webp"
 					},
-					"width": 1024,
-					"height": 1024
+					"width": 1000,
+					"height": 631,
+					"credit": "Aaron Hübrich"
 				}
 			]
 		},
@@ -965,10 +959,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Belt of Giant Strength (Fire).webp"
+						"path": "items/XDMG/Apparatus of Kwalish.webp"
 					},
-					"width": 724,
-					"height": 467
+					"width": 1000,
+					"height": 631
 				}
 			]
 		},
@@ -981,10 +975,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Belt of Giant Strength.webp"
+						"path": "items/ERLW/Armblade.webp"
 					},
-					"width": 604,
-					"height": 850
+					"width": 801,
+					"height": 594
 				}
 			]
 		},
@@ -997,10 +991,12 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Belt of Giant Strength.webp"
+						"path": "items/DMG/Armor of Cold Resistance.webp"
 					},
-					"width": 604,
-					"height": 850
+					"width": 850,
+					"height": 1165,
+					"title": "Armor of resistance (Leather Armor), Armor of invulnerability (Plate Armor)",
+					"credit": "Conceptopolis"
 				}
 			]
 		},
@@ -1013,10 +1009,12 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Belt of Stone Giant Strength.webp"
+						"path": "items/XDMG/Armor of Cold Resistance.webp"
 					},
-					"width": 1024,
-					"height": 1024
+					"width": 850,
+					"height": 1165,
+					"title": "Armor of resistance (Leather Armor), Armor of invulnerability (Plate Armor)",
+					"credit": "Conceptopolis"
 				}
 			]
 		},
@@ -1029,10 +1027,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Belt of Giant Strength (Stone).webp"
+						"path": "items/BMT/Armor of Fungal Spores.webp"
 					},
-					"width": 1024,
-					"height": 1024
+					"width": 838,
+					"height": 1000
 				}
 			]
 		},
@@ -1045,10 +1043,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Belt of Storm Giant Strength.webp"
+						"path": "items/XDMG/Armor of Gleaming.webp"
 					},
-					"width": 604,
-					"height": 850
+					"width": 963,
+					"height": 1000
 				}
 			]
 		},
@@ -1061,7 +1059,7 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Berserker Axe.webp"
+						"path": "items/DMG/Armor of Invulnerability.webp"
 					},
 					"width": 541,
 					"height": 900,
@@ -1078,7 +1076,7 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Berserker Axe.webp"
+						"path": "items/XDMG/Armor of Invulnerability.webp"
 					},
 					"width": 541,
 					"height": 900,
@@ -1095,11 +1093,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/BGG/Bigbys Beneficent Bracelet.webp"
+						"path": "items/DMG/Armor of Resistance.webp"
 					},
-					"width": 680,
-					"height": 1000,
-					"credit": "Isabel Gibney"
+					"width": 776,
+					"height": 850
 				}
 			]
 		},
@@ -1122,10 +1119,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Blackrazor.webp"
+						"path": "items/XDMG/Armor of Resistance.webp"
 					},
-					"width": 794,
-					"height": 1000
+					"width": 776,
+					"height": 850
 				}
 			]
 		},
@@ -1138,9 +1135,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Blackrazor.webp"
+						"path": "items/BMT/Armor of the Fallen.webp"
 					},
-					"width": 669,
+					"width": 694,
 					"height": 1000
 				}
 			]
@@ -1154,7 +1151,7 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/AU/Blood Amulet.webp"
+						"path": "items/DMG/Armor of Vulnerability.webp"
 					},
 					"width": 850,
 					"height": 1198,
@@ -1172,9 +1169,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/CoS/Blood Spear.webp"
+						"path": "items/XDMG/Armor of Vulnerability.webp"
 					},
-					"width": 675,
+					"width": 776,
 					"height": 1000
 				}
 			]
@@ -1188,7 +1185,7 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/AU/Flowering Blossom Rod.webp"
+						"path": "items/DMG/Arrow of Slaying.webp"
 					},
 					"width": 850,
 					"height": 1063,
@@ -1206,11 +1203,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XPHB/Blowgun.webp"
+						"path": "items/DMG/Arrow-Catching Shield.webp"
 					},
-					"width": 591,
-					"height": 234,
-					"credit": "Polar Engine"
+					"width": 508,
+					"height": 1000
 				}
 			]
 		},
@@ -1233,10 +1229,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Book of Exalted Deeds.webp"
+						"path": "items/XDMG/Arrow-Catching Shield.webp"
 					},
-					"width": 1000,
-					"height": 811
+					"width": 508,
+					"height": 1000
 				}
 			]
 		},
@@ -1249,10 +1245,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Book of Exalted Deeds.webp"
+						"path": "items/TCE/Atlas of Endless Horizons.webp"
 					},
-					"width": 1000,
-					"height": 811
+					"width": 852,
+					"height": 1000,
+					"credit": "Andrew Mar"
 				}
 			]
 		},
@@ -1265,11 +1262,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Book of Vile Darkness.webp"
+						"path": "items/FRHoF/Axe Beak.webp"
 					},
-					"width": 760,
-					"height": 1000,
-					"credit": "Conceptopolis"
+					"width": 740,
+					"height": 805,
+					"credit": "Polar Engine"
 				}
 			]
 		},
@@ -1282,10 +1279,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Book of Vile Darkness.webp"
+						"path": "items/IDRotF/Axe Beak.webp"
 					},
-					"width": 764,
-					"height": 1000
+					"width": 850,
+					"height": 942
 				}
 			]
 		},
@@ -1308,11 +1305,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Boots of Elvenkind.webp"
+						"path": "items/DMG/Axe of the Dwarvish Lords.webp"
 					},
-					"width": 850,
-					"height": 645,
-					"credit": "Conceptopolis"
+					"width": 530,
+					"height": 1000
 				}
 			]
 		},
@@ -1325,10 +1321,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Boots of Elvenkind.webp"
+						"path": "items/XDMG/Axe of the Dwarvish Lords.webp"
 					},
-					"width": 850,
-					"height": 645
+					"width": 530,
+					"height": 1000
 				}
 			]
 		},
@@ -1341,10 +1337,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Boots of Speed.webp"
+						"path": "items/GGR/Azorius Guild Signet.webp"
 					},
-					"width": 753,
-					"height": 850
+					"width": 640,
+					"height": 462,
+					"credit": "Raoul Vitale"
 				}
 			]
 		},
@@ -1357,10 +1354,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Boots of Speed.webp"
+						"path": "items/GGR/Azorius Keyrune.webp"
 					},
-					"width": 753,
-					"height": 850
+					"width": 620,
+					"height": 453,
+					"credit": "Daniel Ljunggren"
 				}
 			]
 		},
@@ -1373,10 +1371,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Boots of Striding and Springing.webp"
+						"path": "items/XDMG/Baba Yagas Dancing Broom.webp"
 					},
-					"width": 1000,
-					"height": 845
+					"width": 942,
+					"height": 1000
 				}
 			]
 		},
@@ -1389,10 +1387,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Boots of Striding and Springing.webp"
+						"path": "items/TCE/Baba Yaga's Mortar and Pestle.webp"
 					},
-					"width": 1000,
-					"height": 845
+					"width": 800,
+					"height": 1045,
+					"credit": "Irina Nordsol"
 				}
 			]
 		},
@@ -1405,10 +1404,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Boots of the Winterlands.webp"
+						"path": "items/WDH/Badge of the Watch.webp"
 					},
-					"width": 1024,
-					"height": 1024
+					"width": 791,
+					"height": 1086
 				}
 			]
 		},
@@ -1421,10 +1420,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Boots of the Winterlands.webp"
+						"path": "items/DMG/Bag of Beans.webp"
 					},
-					"width": 1024,
-					"height": 1024
+					"width": 1000,
+					"height": 788
 				}
 			]
 		},
@@ -1437,11 +1436,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/GGR/Boros Guild Signet.webp"
+						"path": "items/XDMG/Bag of Beans.webp"
 					},
-					"width": 640,
-					"height": 468,
-					"credit": "Mike Sass"
+					"width": 1000,
+					"height": 788
 				}
 			]
 		},
@@ -1454,11 +1452,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/GGR/Boros Keyrune.webp"
+						"path": "items/DMG/Bag of Devouring.webp"
 					},
-					"width": 640,
-					"height": 468,
-					"credit": "Daniel Ljunggren"
+					"width": 585,
+					"height": 877
 				}
 			]
 		},
@@ -1471,10 +1468,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/BMT/Bow of Melodies.webp"
+						"path": "items/XDMG/Bag of Devouring.webp"
 					},
-					"width": 593,
-					"height": 1000
+					"width": 585,
+					"height": 877
 				}
 			]
 		},
@@ -1487,9 +1484,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Bowl of Commanding Water Elementals.webp"
+						"path": "items/DMG/Bag of Holding.webp"
 					},
-					"width": 941,
+					"width": 560,
 					"height": 1000
 				}
 			]
@@ -1503,9 +1500,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Bowl of Commanding Water Elementals.webp"
+						"path": "items/XDMG/Bag of Holding.webp"
 					},
-					"width": 941,
+					"width": 560,
 					"height": 1000
 				}
 			]
@@ -1519,10 +1516,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Bracers of Archery.webp"
+						"path": "items/DMG/Bag of Tricks.webp"
 					},
-					"width": 850,
-					"height": 822
+					"width": 315,
+					"height": 315,
+					"credit": "Conceptopolis"
 				}
 			]
 		},
@@ -1535,10 +1533,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Bracers of Archery.webp"
+						"path": "items/XDMG/Bag of Tricks.webp"
 					},
-					"width": 850,
-					"height": 822
+					"width": 1000,
+					"height": 852
 				}
 			]
 		},
@@ -1551,10 +1549,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Bracers of Defense.webp"
+						"path": "decks/BMT/Deck of Many Things/03-balance.webp"
 					},
-					"width": 721,
-					"height": 753
+					"width": 850,
+					"height": 1552,
+					"credit": "Francesca Resta"
 				}
 			]
 		},
@@ -1567,10 +1566,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Bracers of Defense.webp"
+						"path": "items/BGDIA/Battle Standard of Infernal Power.webp"
 					},
-					"width": 721,
-					"height": 753
+					"width": 800,
+					"height": 1000
 				}
 			]
 		},
@@ -1593,9 +1592,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Brazier of Commanding Fire Elementals.webp"
+						"path": "items/DMG/Bead of Force.webp"
 					},
-					"width": 506,
+					"width": 891,
 					"height": 1000
 				}
 			]
@@ -1609,9 +1608,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Brazier of Commanding Fire Elementals.webp"
+						"path": "items/XDMG/Bead of Force.webp"
 					},
-					"width": 506,
+					"width": 891,
 					"height": 1000
 				}
 			]
@@ -1625,11 +1624,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XPHB/Breastplate.webp"
+						"path": "items/XDMG/Bead of Nourishment.webp"
 					},
-					"width": 323,
-					"height": 309,
-					"credit": "Polar Engine"
+					"width": 573,
+					"height": 1000
 				}
 			]
 		},
@@ -1645,11 +1643,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/FRHoF/Bright Fungal Cloak.webp"
+						"path": "items/XDMG/Bead of Refreshment.webp"
 					},
-					"width": 497,
-					"height": 743,
-					"credit": "Polar Engine"
+					"width": 696,
+					"height": 1000
 				}
 			]
 		},
@@ -1672,7 +1669,7 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Brooch of Shielding.webp"
+						"path": "items/DMG/Belt of Dwarvenkind.webp"
 					},
 					"width": 1024,
 					"height": 1024
@@ -1688,7 +1685,7 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Brooch of Shielding.webp"
+						"path": "items/XDMG/Belt of Dwarvenkind.webp"
 					},
 					"width": 1024,
 					"height": 1024
@@ -1704,10 +1701,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Broom of Flying.webp"
+						"path": "items/XDMG/Belt of Giant Strength (Fire).webp"
 					},
 					"width": 724,
-					"height": 1000
+					"height": 467
 				}
 			]
 		},
@@ -1720,10 +1717,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Broom of Flying.webp"
+						"path": "items/DMG/Belt of Frost Giant Strength.webp"
 					},
-					"width": 724,
-					"height": 1000
+					"width": 1000,
+					"height": 809
 				}
 			]
 		},
@@ -1746,11 +1743,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/EGW/Butcher's Bib.webp"
+						"path": "items/XDMG/Belt of Frost Giant Strength.webp"
 					},
-					"width": 520,
-					"height": 1000,
-					"credit": "Olga Drebas"
+					"width": 1000,
+					"height": 809
 				}
 			]
 		},
@@ -1763,10 +1759,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/FRAiF/Calimemnon Crystal.webp"
+						"path": "items/DMG/Belt of Giant Strength.webp"
 					},
-					"width": 1000,
-					"height": 994
+					"width": 604,
+					"height": 850
 				}
 			]
 		},
@@ -1779,9 +1775,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Candle of Invocation.webp"
+						"path": "items/XDMG/Belt of Giant Strength.webp"
 					},
-					"width": 299,
+					"width": 604,
 					"height": 850
 				}
 			]
@@ -1795,10 +1791,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Candle of Invocation.webp"
+						"path": "items/DMG/Belt of Hill Giant Strength.webp"
 					},
-					"width": 299,
-					"height": 850
+					"width": 1000,
+					"height": 640
 				}
 			]
 		},
@@ -1811,10 +1807,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/WttHC/Cap of Vanishing.webp"
+						"path": "items/XDMG/Belt of Hill Giant Strength.webp"
 					},
-					"width": 823,
-					"height": 999
+					"width": 1000,
+					"height": 640
 				}
 			]
 		},
@@ -1827,10 +1823,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Cape of the Mountebank.webp"
+						"path": "items/DMG/Belt of Stone Giant Strength.webp"
 					},
-					"width": 659,
-					"height": 1000
+					"width": 1024,
+					"height": 1024
 				}
 			]
 		},
@@ -1843,10 +1839,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Cape of the Mountebank.webp"
+						"path": "items/XDMG/Belt of Giant Strength (Stone).webp"
 					},
-					"width": 659,
-					"height": 1000
+					"width": 1024,
+					"height": 1024
 				}
 			]
 		},
@@ -1859,10 +1855,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Carpet of Flying.webp"
+						"path": "items/DMG/Belt of Storm Giant Strength.webp"
 					},
-					"width": 1000,
-					"height": 733
+					"width": 604,
+					"height": 850
 				}
 			]
 		},
@@ -1875,11 +1871,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/AI/cartographers-map-case.webp"
+						"path": "items/DMG/Berserker Axe.webp"
 					},
-					"width": 1164,
-					"height": 1000,
-					"credit": "Chris Walton"
+					"width": 541,
+					"height": 900,
+					"title": "Berserker axe (Battleaxe)"
 				}
 			]
 		},
@@ -1892,11 +1888,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/TCE/Cauldron of Rebirth.webp"
+						"path": "items/XDMG/Berserker Axe.webp"
 					},
-					"width": 677,
-					"height": 1000,
-					"credit": "Zuzanna Wužyk"
+					"width": 541,
+					"height": 900,
+					"title": "Berserker axe (Battleaxe)"
 				}
 			]
 		},
@@ -1909,10 +1905,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Cauldron of Rebirth.webp"
+						"path": "items/BGG/Bigbys Beneficent Bracelet.webp"
 					},
-					"width": 690,
-					"height": 1000
+					"width": 680,
+					"height": 1000,
+					"credit": "Isabel Gibney"
 				}
 			]
 		},
@@ -1925,9 +1922,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Censer of Controlling Air Elementals.webp"
+						"path": "items/DMG/Blackrazor.webp"
 					},
-					"width": 797,
+					"width": 794,
 					"height": 1000
 				}
 			]
@@ -1941,9 +1938,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Censer of Controlling Air Elementals.webp"
+						"path": "items/XDMG/Blackrazor.webp"
 					},
-					"width": 797,
+					"width": 669,
 					"height": 1000
 				}
 			]
@@ -1957,11 +1954,12 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XPHB/Chain Mail.webp"
+						"path": "items/AU/Blood Amulet.webp"
 					},
-					"width": 397,
-					"height": 472,
-					"credit": "Polar Engine"
+					"width": 850,
+					"height": 1198,
+					"title": "{@item Blood Amulet|AU}",
+					"credit": "Swatches Studio"
 				}
 			]
 		},
@@ -1974,11 +1972,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XPHB/Chain Shirt.webp"
+						"path": "items/CoS/Blood Spear.webp"
 					},
-					"width": 329,
-					"height": 371,
-					"credit": "Polar Engine"
+					"width": 675,
+					"height": 1000
 				}
 			]
 		},
@@ -1991,10 +1988,12 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Charlatans Die.webp"
+						"path": "items/AU/Flowering Blossom Rod.webp"
 					},
-					"width": 804,
-					"height": 1000
+					"width": 850,
+					"height": 1063,
+					"title": "Flowering Blossom Rod",
+					"credit": "Swatches Studio"
 				}
 			]
 		},
@@ -2017,59 +2016,60 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/VEoR/Chime of Exile.webp"
+						"path": "items/XPHB/Blowgun.webp"
 					},
-					"width": 507,
+					"width": 591,
+					"height": 234,
+					"credit": "Polar Engine"
+				}
+			]
+		},
+		{
+			"ENG_name": "Chime of Opening",
+			"name": "开门钟琴",
+			"source": "DMG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/DMG/Book of Exalted Deeds.webp"
+					},
+					"width": 1000,
+					"height": 811
+				}
+			]
+		},
+		{
+			"ENG_name": "Chime of Opening",
+			"name": "开门钟琴",
+			"source": "XDMG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/XDMG/Book of Exalted Deeds.webp"
+					},
+					"width": 1000,
+					"height": 811
+				}
+			]
+		},
+		{
+			"ENG_name": "Circlet of Blasting",
+			"name": "爆裂头饰",
+			"source": "DMG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/DMG/Book of Vile Darkness.webp"
+					},
+					"width": 760,
 					"height": 1000,
-					"credit": "Irina Nordsol"
-				}
-			]
-		},
-		{
-			"ENG_name": "Chime of Opening",
-			"name": "开门钟琴",
-			"source": "DMG",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/DMG/Chime of Opening.webp"
-					},
-					"width": 829,
-					"height": 1000
-				}
-			]
-		},
-		{
-			"ENG_name": "Chime of Opening",
-			"name": "开门钟琴",
-			"source": "XDMG",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/XDMG/Chime of Opening.webp"
-					},
-					"width": 829,
-					"height": 1000
-				}
-			]
-		},
-		{
-			"ENG_name": "Circlet of Blasting",
-			"name": "爆裂头饰",
-			"source": "DMG",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/DMG/Circlet of Blasting.webp"
-					},
-					"width": 1000,
-					"height": 1000
+					"credit": "Conceptopolis"
 				}
 			]
 		},
@@ -2082,9 +2082,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Circlet of Blasting.webp"
+						"path": "items/XDMG/Book of Vile Darkness.webp"
 					},
-					"width": 1000,
+					"width": 764,
 					"height": 1000
 				}
 			]
@@ -2108,10 +2108,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/WttHC/Cloak of Billowing (Stranger Things).webp"
+						"path": "items/DMG/Boots of Elvenkind.webp"
 					},
-					"width": 797,
-					"height": 999
+					"width": 850,
+					"height": 645,
+					"credit": "Conceptopolis"
 				}
 			]
 		},
@@ -2124,10 +2125,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Cloak of Billowing.webp"
+						"path": "items/XDMG/Boots of Elvenkind.webp"
 					},
-					"width": 567,
-					"height": 1000
+					"width": 850,
+					"height": 645
 				}
 			]
 		},
@@ -2140,10 +2141,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Cloak of Displacement.webp"
+						"path": "items/XDMG/Boots of False Tracks.webp"
 					},
-					"width": 619,
-					"height": 1000
+					"width": 1000,
+					"height": 805
 				}
 			]
 		},
@@ -2156,9 +2157,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Cloak of Displacement.webp"
+						"path": "items/DMG/Boots of Levitation.webp"
 					},
-					"width": 619,
+					"width": 488,
 					"height": 1000
 				}
 			]
@@ -2172,9 +2173,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Cloak of Elvenkind.webp"
+						"path": "items/XDMG/Boots of Levitation.webp"
 					},
-					"width": 437,
+					"width": 488,
 					"height": 1000
 				}
 			]
@@ -2188,10 +2189,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Cloak of Elvenkind.webp"
+						"path": "items/DMG/Boots of Speed.webp"
 					},
-					"width": 437,
-					"height": 1000
+					"width": 753,
+					"height": 850
 				}
 			]
 		},
@@ -2204,10 +2205,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Cloak of Invisibility.webp"
+						"path": "items/XDMG/Boots of Speed.webp"
 					},
-					"width": 685,
-					"height": 685
+					"width": 753,
+					"height": 850
 				}
 			]
 		},
@@ -2220,10 +2221,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Cloak of Many Fashions.webp"
+						"path": "items/DMG/Boots of Striding and Springing.webp"
 					},
-					"width": 850,
-					"height": 1151
+					"width": 1000,
+					"height": 845
 				}
 			]
 		},
@@ -2236,11 +2237,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XGE/Cloak of Many Fashions.webp"
+						"path": "items/XDMG/Boots of Striding and Springing.webp"
 					},
-					"width": 850,
-					"height": 1151,
-					"credit": "Brian Valeza"
+					"width": 1000,
+					"height": 845
 				}
 			]
 		},
@@ -2253,10 +2253,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Cloak of Protection.webp"
+						"path": "items/DMG/Boots of the Winterlands.webp"
 					},
-					"width": 444,
-					"height": 850
+					"width": 1024,
+					"height": 1024
 				}
 			]
 		},
@@ -2269,10 +2269,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Cloak of Protection.webp"
+						"path": "items/XDMG/Boots of the Winterlands.webp"
 					},
-					"width": 444,
-					"height": 850
+					"width": 1024,
+					"height": 1024
 				}
 			]
 		},
@@ -2285,10 +2285,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Cloak of the Manta Ray.webp"
+						"path": "items/GGR/Boros Guild Signet.webp"
 					},
-					"width": 363,
-					"height": 1000
+					"width": 640,
+					"height": 468,
+					"credit": "Mike Sass"
 				}
 			]
 		},
@@ -2301,10 +2302,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Cloak of the Manta Ray.webp"
+						"path": "items/GGR/Boros Keyrune.webp"
 					},
-					"width": 363,
-					"height": 1000
+					"width": 640,
+					"height": 468,
+					"credit": "Daniel Ljunggren"
 				}
 			]
 		},
@@ -2317,11 +2319,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XPHB/Club.webp"
+						"path": "items/BMT/Bow of Melodies.webp"
 					},
-					"width": 107,
-					"height": 561,
-					"credit": "Polar Engine"
+					"width": 593,
+					"height": 1000
 				}
 			]
 		},
@@ -2334,11 +2335,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/AI/coin-of-decisionry.webp"
+						"path": "items/DMG/Bowl of Commanding Water Elementals.webp"
 					},
-					"width": 1218,
-					"height": 1000,
-					"credit": "Chris Walton"
+					"width": 941,
+					"height": 1000
 				}
 			]
 		},
@@ -2351,11 +2351,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "decks/BMT/Deck of Many Things/12-comet.webp"
+						"path": "items/XDMG/Bowl of Commanding Water Elementals.webp"
 					},
-					"width": 850,
-					"height": 1552,
-					"credit": "Vallez Gax"
+					"width": 941,
+					"height": 1000
 				}
 			]
 		},
@@ -2368,10 +2367,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/SKT/Conch of Teleportation.webp"
+						"path": "items/DMG/Bracers of Archery.webp"
 					},
-					"width": 785,
-					"height": 1000
+					"width": 850,
+					"height": 822
 				}
 			]
 		},
@@ -2394,7 +2393,7 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/AU/Conjurer's Canopy.webp"
+						"path": "items/XDMG/Bracers of Archery.webp"
 					},
 					"width": 1700,
 					"height": 1125,
@@ -2412,11 +2411,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/KftGV/Constantoris Portrait.webp"
+						"path": "items/DMG/Bracers of Defense.webp"
 					},
-					"width": 788,
-					"height": 1000,
-					"credit": "Nikki Dawes"
+					"width": 721,
+					"height": 753
 				}
 			]
 		},
@@ -2429,10 +2427,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/PHB/Copper (cp).webp"
+						"path": "items/XDMG/Bracers of Defense.webp"
 					},
-					"width": 200,
-					"height": 200
+					"width": 721,
+					"height": 753
 				}
 			]
 		},
@@ -2458,11 +2456,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/FRHoF/Covered Wagon.webp"
+						"path": "items/DMG/Brazier of Commanding Fire Elementals.webp"
 					},
-					"width": 1700,
-					"height": 1427,
-					"credit": "Polar Engine"
+					"width": 506,
+					"height": 1000
 				}
 			]
 		},
@@ -2475,11 +2472,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/TCE/Crook of Rao.webp"
+						"path": "items/XDMG/Brazier of Commanding Fire Elementals.webp"
 					},
-					"width": 582,
-					"height": 1000,
-					"credit": "Robson Michel"
+					"width": 506,
+					"height": 1000
 				}
 			]
 		},
@@ -2492,10 +2488,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/FRAiF/Crown of Horns.webp"
+						"path": "items/XPHB/Breastplate.webp"
 					},
-					"width": 1000,
-					"height": 588
+					"width": 323,
+					"height": 309,
+					"credit": "Polar Engine"
 				}
 			]
 		},
@@ -2508,11 +2505,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/VEoR/Crown of Lies.webp"
+						"path": "items/FRHoF/Bright Fungal Cloak.webp"
 					},
-					"width": 1000,
-					"height": 919,
-					"credit": "Lauren Walsh"
+					"width": 497,
+					"height": 743,
+					"credit": "Polar Engine"
 				}
 			]
 		},
@@ -2559,11 +2556,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/TCE/Crystalline Chronicle.webp"
+						"path": "items/XDMG/Brooch of Shielding.webp"
 					},
-					"width": 765,
-					"height": 1000,
-					"credit": "Irina Nordsol"
+					"width": 1024,
+					"height": 1024
 				}
 			]
 		},
@@ -2576,9 +2572,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Cube of Force.webp"
+						"path": "items/DMG/Broom of Flying.webp"
 					},
-					"width": 998,
+					"width": 724,
 					"height": 1000
 				}
 			]
@@ -2592,9 +2588,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Cube of Force.webp"
+						"path": "items/XDMG/Broom of Flying.webp"
 					},
-					"width": 998,
+					"width": 724,
 					"height": 1000
 				}
 			]
@@ -2608,10 +2604,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Cube of Summoning.webp"
+						"path": "items/EGW/Butcher's Bib.webp"
 					},
-					"width": 819,
-					"height": 1000
+					"width": 520,
+					"height": 1000,
+					"credit": "Olga Drebas"
 				}
 			]
 		},
@@ -2624,10 +2621,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Cubic Gate.webp"
+						"path": "items/FRAiF/Calimemnon Crystal.webp"
 					},
 					"width": 1000,
-					"height": 915
+					"height": 994
 				}
 			]
 		},
@@ -2640,10 +2637,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Cubic Gate.webp"
+						"path": "items/DMG/Candle of Invocation.webp"
 					},
-					"width": 1000,
-					"height": 915
+					"width": 299,
+					"height": 850
 				}
 			]
 		},
@@ -2656,10 +2653,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Daern's Instant Fortress.webp"
+						"path": "items/XDMG/Candle of Invocation.webp"
 					},
-					"width": 644,
-					"height": 1000
+					"width": 299,
+					"height": 850
 				}
 			]
 		},
@@ -2672,9 +2669,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Daerns Instant Fortress.webp"
+						"path": "items/XDMG/Candle of the Deep.webp"
 					},
-					"width": 644,
+					"width": 914,
 					"height": 1000
 				}
 			]
@@ -2688,11 +2685,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XPHB/Dagger.webp"
+						"path": "items/WttHC/Cap of Vanishing.webp"
 					},
-					"width": 114,
-					"height": 452,
-					"credit": "Polar Engine"
+					"width": 823,
+					"height": 999
 				}
 			]
 		},
@@ -2705,9 +2701,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Dagger of Venom.webp"
+						"path": "items/DMG/Cape of the Mountebank.webp"
 					},
-					"width": 835,
+					"width": 659,
 					"height": 1000
 				}
 			]
@@ -2721,9 +2717,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Dagger of Venom.webp"
+						"path": "items/XDMG/Cape of the Mountebank.webp"
 					},
-					"width": 835,
+					"width": 659,
 					"height": 1000
 				}
 			]
@@ -2737,7 +2733,7 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Dancing Sword.webp"
+						"path": "items/DMG/Carpet of Flying.webp"
 					},
 					"width": 850,
 					"height": 444,
@@ -2754,7 +2750,7 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Dancing Sword.webp"
+						"path": "items/XDMG/Carpet of Flying.webp"
 					},
 					"width": 850,
 					"height": 444,
@@ -2818,10 +2814,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/QftIS/Daouds Wondrous Lanthorn.webp"
+						"path": "items/AI/cartographers-map-case.webp"
 					},
-					"width": 824,
-					"height": 1000
+					"width": 1164,
+					"height": 1000,
+					"credit": "Chris Walton"
 				}
 			]
 		},
@@ -2834,10 +2831,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Dark Shard Amulet.webp"
+						"path": "items/XDMG/Cast-Off Armor.webp"
 					},
-					"width": 652,
-					"height": 1000
+					"width": 1000,
+					"height": 925
 				}
 			]
 		},
@@ -2850,11 +2847,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XPHB/Dart.webp"
+						"path": "items/TCE/Cauldron of Rebirth.webp"
 					},
-					"width": 322,
-					"height": 192,
-					"credit": "Polar Engine"
+					"width": 677,
+					"height": 1000,
+					"credit": "Zuzanna Wužyk"
 				}
 			]
 		},
@@ -2867,9 +2864,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/OotA/Dawnbringer.webp"
+						"path": "items/XDMG/Cauldron of Rebirth.webp"
 					},
-					"width": 674,
+					"width": 690,
 					"height": 1000
 				}
 			]
@@ -2883,9 +2880,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Decanter of Endless Water.webp"
+						"path": "items/DMG/Censer of Controlling Air Elementals.webp"
 					},
-					"width": 900,
+					"width": 797,
 					"height": 1000
 				}
 			]
@@ -2899,9 +2896,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Decanter of Endless Water.webp"
+						"path": "items/XDMG/Censer of Controlling Air Elementals.webp"
 					},
-					"width": 900,
+					"width": 797,
 					"height": 1000
 				}
 			]
@@ -2915,10 +2912,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/BMT/Deck of Dimensions.webp"
+						"path": "items/XPHB/Chain Mail.webp"
 					},
-					"width": 695,
-					"height": 1000
+					"width": 397,
+					"height": 472,
+					"credit": "Polar Engine"
 				}
 			]
 		},
@@ -2947,10 +2945,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Deck of Many Things.webp"
+						"path": "items/XPHB/Chain Shirt.webp"
 					},
-					"width": 229,
-					"height": 315
+					"width": 329,
+					"height": 371,
+					"credit": "Polar Engine"
 				}
 			]
 		},
@@ -2963,9 +2962,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Deck of Many Things.webp"
+						"path": "items/XDMG/Charlatans Die.webp"
 					},
-					"width": 426,
+					"width": 804,
 					"height": 1000
 				}
 			]
@@ -2979,10 +2978,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/BMT/Deck of Wonder.webp"
+						"path": "items/VEoR/Chime of Exile.webp"
 					},
-					"width": 1000,
-					"height": 668
+					"width": 507,
+					"height": 1000,
+					"credit": "Irina Nordsol"
 				}
 			]
 		},
@@ -2995,7 +2995,7 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Defender.webp"
+						"path": "items/DMG/Chime of Opening.webp"
 					},
 					"width": 297,
 					"height": 1000,
@@ -3012,7 +3012,7 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Defender.webp"
+						"path": "items/XDMG/Chime of Opening.webp"
 					},
 					"width": 297,
 					"height": 1000,
@@ -3029,11 +3029,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/MOT/Dekella, Bident of Thassa.webp"
+						"path": "items/DMG/Circlet of Blasting.webp"
 					},
 					"width": 1000,
-					"height": 738,
-					"credit": "Yeong-Hao Han"
+					"height": 1000
 				}
 			]
 		},
@@ -3046,7 +3045,7 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Demon Armor.webp"
+						"path": "items/XDMG/Circlet of Blasting.webp"
 					},
 					"width": 458,
 					"height": 1000,
@@ -3063,7 +3062,7 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Demon Armor.webp"
+						"path": "items/DMG/Cloak of Arachnida.webp"
 					},
 					"width": 458,
 					"height": 1000,
@@ -3080,10 +3079,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DitLCoT/Demon Skin.webp"
+						"path": "items/XDMG/Cloak of Arachnida.webp"
 					},
-					"width": 1000,
-					"height": 903
+					"width": 782,
+					"height": 1000
 				}
 			]
 		},
@@ -3096,11 +3095,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/TCE/Demonomicon of Iggwilv.webp"
+						"path": "items/WttHC/Cloak of Billowing (Stranger Things).webp"
 					},
-					"width": 831,
-					"height": 1000,
-					"credit": "David Sladek"
+					"width": 797,
+					"height": 999
 				}
 			]
 		},
@@ -3116,11 +3114,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/FRHoF/Desert Clothing.webp"
+						"path": "items/XDMG/Cloak of Billowing.webp"
 					},
-					"width": 1700,
-					"height": 1544,
-					"credit": "Polar Engine"
+					"width": 567,
+					"height": 1000
 				}
 			]
 		},
@@ -3136,11 +3133,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/FRHoF/Devil Mask.webp"
+						"path": "items/DMG/Cloak of Displacement.webp"
 					},
-					"width": 850,
-					"height": 945,
-					"credit": "Polar Engine"
+					"width": 619,
+					"height": 1000
 				}
 			]
 		},
@@ -3153,11 +3149,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/TCE/Devotee's Censer.webp"
+						"path": "items/XDMG/Cloak of Displacement.webp"
 					},
-					"width": 792,
-					"height": 1000,
-					"credit": "Irina Nordsol"
+					"width": 619,
+					"height": 1000
 				}
 			]
 		},
@@ -3170,9 +3165,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Dimensional Shackles.webp"
+						"path": "items/DMG/Cloak of Elvenkind.webp"
 					},
-					"width": 708,
+					"width": 437,
 					"height": 1000
 				}
 			]
@@ -3186,9 +3181,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Dimensional Shackles.webp"
+						"path": "items/XDMG/Cloak of Elvenkind.webp"
 					},
-					"width": 708,
+					"width": 437,
 					"height": 1000
 				}
 			]
@@ -3202,11 +3197,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/GGR/Dimir Guild Signet.webp"
+						"path": "items/DMG/Cloak of Invisibility.webp"
 					},
-					"width": 640,
-					"height": 458,
-					"credit": "Raoul Vitale"
+					"width": 685,
+					"height": 685
 				}
 			]
 		},
@@ -3219,11 +3213,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/GGR/Dimir Keyrune.webp"
+						"path": "items/XDMG/Cloak of Many Fashions.webp"
 					},
-					"width": 640,
-					"height": 468,
-					"credit": "Daniel Ljunggren"
+					"width": 850,
+					"height": 1151
 				}
 			]
 		},
@@ -3236,7 +3229,7 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "adventure/VEoR/070-04-004.docent.webp"
+						"path": "items/XGE/Cloak of Many Fashions.webp"
 					},
 					"width": 850,
 					"height": 1338,
@@ -3254,11 +3247,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/AI/documancy-satchel.webp"
+						"path": "items/DMG/Cloak of Protection.webp"
 					},
-					"width": 934,
-					"height": 1000,
-					"credit": "Chris Walton"
+					"width": 444,
+					"height": 850
 				}
 			]
 		},
@@ -3271,11 +3263,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "decks/BMT/Deck of Many Things/17-donjon.webp"
+						"path": "items/XDMG/Cloak of Protection.webp"
 					},
-					"width": 850,
-					"height": 1552,
-					"credit": "Jim Zaccaria"
+					"width": 444,
+					"height": 850
 				}
 			]
 		},
@@ -3306,10 +3297,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/RoT/Draakhorn.webp"
+						"path": "items/XDMG/Cloak of the Bat.webp"
 					},
-					"width": 1700,
-					"height": 1325
+					"width": 867,
+					"height": 1000
 				}
 			]
 		},
@@ -3322,9 +3313,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Dragon Scale Mail.webp"
+						"path": "items/DMG/Cloak of the Manta Ray.webp"
 					},
-					"width": 878,
+					"width": 363,
 					"height": 1000
 				}
 			]
@@ -3338,9 +3329,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Dragon Scale Mail.webp"
+						"path": "items/XDMG/Cloak of the Manta Ray.webp"
 					},
-					"width": 878,
+					"width": 363,
 					"height": 1000
 				}
 			]
@@ -3354,7 +3345,7 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Dragon Slayer.webp"
+						"path": "items/XPHB/Club.webp"
 					},
 					"width": 751,
 					"height": 1000,
@@ -3371,9 +3362,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Dragon Slayer.webp"
+						"path": "items/AI/coin-of-decisionry.webp"
 					},
-					"width": 751,
+					"width": 1218,
 					"height": 1000,
 					"title": "屠龙者（巨剑）"
 				}
@@ -3388,7 +3379,7 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/FTD/Dragonlance.webp"
+						"path": "decks/BMT/Deck of Many Things/12-comet.webp"
 					},
 					"width": 1700,
 					"height": 1123,
@@ -3406,10 +3397,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/WDH/Dragonstaff of Ahghairon.webp"
+						"path": "items/SKT/Conch of Teleportation.webp"
 					},
-					"width": 440,
-					"height": 600
+					"width": 785,
+					"height": 1000
 				}
 			]
 		},
@@ -3422,10 +3413,12 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/RoT/Dragontooth Dagger.webp"
+						"path": "items/AU/Conjurer's Canopy.webp"
 					},
 					"width": 1700,
-					"height": 1365
+					"height": 1125,
+					"title": "A mage protects his companion with a {@item Conjurer's Canopy|AU}.",
+					"credit": "Swatches Studio"
 				}
 			]
 		},
@@ -3438,10 +3431,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/WttHC/Dread Helm (Stranger Things).webp"
+						"path": "items/KftGV/Constantoris Portrait.webp"
 					},
-					"width": 851,
-					"height": 1000
+					"width": 788,
+					"height": 1000,
+					"credit": "Nikki Dawes"
 				}
 			]
 		},
@@ -3454,10 +3448,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Dread Helm.webp"
+						"path": "items/PHB/Copper (cp).webp"
 					},
-					"width": 850,
-					"height": 1254
+					"width": 200,
+					"height": 200
 				}
 			]
 		},
@@ -3470,11 +3464,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XGE/Dread Helm.webp"
+						"path": "items/FRHoF/Covered Wagon.webp"
 					},
-					"width": 850,
-					"height": 1254,
-					"credit": "Daarken"
+					"width": 1700,
+					"height": 1427,
+					"credit": "Polar Engine"
 				}
 			]
 		},
@@ -3487,10 +3481,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Driftglobe.webp"
+						"path": "items/TCE/Crook of Rao.webp"
 					},
-					"width": 1000,
-					"height": 1000
+					"width": 582,
+					"height": 1000,
+					"credit": "Robson Michel"
 				}
 			]
 		},
@@ -3503,10 +3498,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Driftglobe.webp"
+						"path": "items/FRAiF/Crown of Horns.webp"
 					},
 					"width": 1000,
-					"height": 1000
+					"height": 588
 				}
 			]
 		},
@@ -3519,10 +3514,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/PotA/Drown.webp"
+						"path": "items/VEoR/Crown of Lies.webp"
 					},
-					"width": 138,
-					"height": 850
+					"width": 1000,
+					"height": 919,
+					"credit": "Lauren Walsh"
 				}
 			]
 		},
@@ -3535,75 +3531,77 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/EGW/Duskcrusher.webp"
+						"path": "items/BMT/Crown of Whirling Comets.webp"
 					},
-					"width": 582,
+					"width": 1000,
+					"height": 984
+				}
+			]
+		},
+		{
+			"ENG_name": "Dust of Disappearance",
+			"name": "无踪粉",
+			"source": "DMG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/DMG/Crystal Ball.webp"
+					},
+					"width": 933,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Dust of Disappearance",
+			"name": "无踪粉",
+			"source": "XDMG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/XDMG/Crystal Ball.webp"
+					},
+					"width": 933,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Dust of Sneezing and Choking",
+			"name": "喷嚏粉",
+			"source": "DMG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/AUD/Crystal Ball of Ominous Portent.webp"
+					},
+					"width": 850,
+					"height": 837,
+					"title": "Crystal Ball of Ominous Portent",
+					"credit": "Wade Acuff"
+				}
+			]
+		},
+		{
+			"ENG_name": "Dust of Sneezing and Choking",
+			"name": "喷嚏粉",
+			"source": "XDMG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/TCE/Crystalline Chronicle.webp"
+					},
+					"width": 765,
 					"height": 1000,
-					"credit": "Olga Drebas"
-				}
-			]
-		},
-		{
-			"ENG_name": "Dust of Disappearance",
-			"name": "无踪粉",
-			"source": "DMG",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/DMG/Dust of Disappearance.webp"
-					},
-					"width": 529,
-					"height": 1000
-				}
-			]
-		},
-		{
-			"ENG_name": "Dust of Disappearance",
-			"name": "无踪粉",
-			"source": "XDMG",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/XDMG/Dust of Disappearance.webp"
-					},
-					"width": 529,
-					"height": 1000
-				}
-			]
-		},
-		{
-			"ENG_name": "Dust of Sneezing and Choking",
-			"name": "喷嚏粉",
-			"source": "DMG",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/DMG/Dust of Sneezing and Choking.webp"
-					},
-					"width": 647,
-					"height": 1000
-				}
-			]
-		},
-		{
-			"ENG_name": "Dust of Sneezing and Choking",
-			"name": "喷嚏粉",
-			"source": "XDMG",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/XDMG/Dust of Sneezing and Choking.webp"
-					},
-					"width": 647,
-					"height": 1000
+					"credit": "Irina Nordsol"
 				}
 			]
 		},
@@ -3616,9 +3614,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Dwarven Plate.webp"
+						"path": "items/DMG/Cube of Force.webp"
 					},
-					"width": 683,
+					"width": 998,
 					"height": 1000
 				}
 			]
@@ -3632,9 +3630,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Dwarven Plate.webp"
+						"path": "items/XDMG/Cube of Force.webp"
 					},
-					"width": 683,
+					"width": 998,
 					"height": 1000
 				}
 			]
@@ -3648,10 +3646,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Dwarven Thrower.webp"
+						"path": "items/XDMG/Cube of Summoning.webp"
 					},
-					"width": 1024,
-					"height": 1024
+					"width": 819,
+					"height": 1000
 				}
 			]
 		},
@@ -3664,10 +3662,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Dwarven Thrower.webp"
+						"path": "items/DMG/Cubic Gate.webp"
 					},
-					"width": 1024,
-					"height": 1024
+					"width": 1000,
+					"height": 915
 				}
 			]
 		},
@@ -3680,11 +3678,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/CRCotN/Earring of Message.webp"
+						"path": "items/XDMG/Cubic Gate.webp"
 					},
-					"width": 608,
-					"height": 850,
-					"credit": "CoupleOfKooks"
+					"width": 1000,
+					"height": 915
 				}
 			]
 		},
@@ -3697,9 +3694,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/RHW/Ebonbane.webp"
+						"path": "items/DMG/Daern's Instant Fortress.webp"
 					},
-					"width": 374,
+					"width": 644,
 					"height": 1000
 				}
 			]
@@ -3713,9 +3710,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Efreeti Bottle.webp"
+						"path": "items/XDMG/Daerns Instant Fortress.webp"
 					},
-					"width": 390,
+					"width": 644,
 					"height": 1000
 				}
 			]
@@ -3729,10 +3726,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Efreeti Bottle.webp"
+						"path": "items/XPHB/Dagger.webp"
 					},
-					"width": 390,
-					"height": 1000
+					"width": 114,
+					"height": 452,
+					"credit": "Polar Engine"
 				}
 			]
 		},
@@ -3745,9 +3743,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Efreeti Chain.webp"
+						"path": "items/DMG/Dagger of Venom.webp"
 					},
-					"width": 604,
+					"width": 835,
 					"height": 1000
 				}
 			]
@@ -3761,9 +3759,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Efreeti Chain.webp"
+						"path": "items/XDMG/Dagger of Venom.webp"
 					},
-					"width": 604,
+					"width": 835,
 					"height": 1000
 				}
 			]
@@ -3777,10 +3775,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/PHB/Electrum (ep).webp"
+						"path": "items/DMG/Dancing Sword.webp"
 					},
-					"width": 184,
-					"height": 184
+					"width": 850,
+					"height": 444,
+					"title": "Dancing Sword (Longsword)"
 				}
 			]
 		},
@@ -3793,10 +3792,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Elemental Gem.webp"
+						"path": "items/XDMG/Dancing Sword.webp"
 					},
-					"width": 1024,
-					"height": 1024
+					"width": 850,
+					"height": 444,
+					"title": "Dancing Sword (Longsword)"
 				}
 			]
 		},
@@ -3809,10 +3809,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Elemental Gem.webp"
+						"path": "items/EGW/Danoth's Visor.webp"
 					},
-					"width": 1024,
-					"height": 1024
+					"width": 1000,
+					"height": 318,
+					"credit": "Irina Nordsol"
 				}
 			]
 		},
@@ -3825,10 +3826,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Elemental Gem (Blue Sapphire).webp"
+						"path": "items/QftIS/Daouds Wondrous Lanthorn.webp"
 					},
-					"width": 329,
-					"height": 493
+					"width": 824,
+					"height": 1000
 				}
 			]
 		},
@@ -3841,10 +3842,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Elemental Gem (Emerald).webp"
+						"path": "items/XDMG/Dark Shard Amulet.webp"
 					},
-					"width": 331,
-					"height": 477
+					"width": 652,
+					"height": 1000
 				}
 			]
 		},
@@ -3857,10 +3858,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Elemental Gem (Red Corundum).webp"
+						"path": "items/XPHB/Dart.webp"
 					},
-					"width": 321,
-					"height": 474
+					"width": 322,
+					"height": 192,
+					"credit": "Polar Engine"
 				}
 			]
 		},
@@ -3873,10 +3875,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Elemental Gem (Yellow Diamond).webp"
+						"path": "items/OotA/Dawnbringer.webp"
 					},
-					"width": 338,
-					"height": 526
+					"width": 674,
+					"height": 1000
 				}
 			]
 		},
@@ -3889,9 +3891,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Elven Chain.webp"
+						"path": "items/DMG/Decanter of Endless Water.webp"
 					},
-					"width": 821,
+					"width": 900,
 					"height": 1000
 				}
 			]
@@ -3905,9 +3907,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Elven Chain.webp"
+						"path": "items/XDMG/Decanter of Endless Water.webp"
 					},
-					"width": 821,
+					"width": 900,
 					"height": 1000
 				}
 			]
@@ -3921,7 +3923,7 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/AU/Ensorcelled Missive.webp"
+						"path": "items/BMT/Deck of Dimensions.webp"
 					},
 					"width": 850,
 					"height": 2162,
@@ -3939,11 +3941,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/MOT/Ephixis, Bow of Nylea.webp"
+						"path": "items/DMG/Deck of Illusions.webp"
 					},
-					"width": 1000,
-					"height": 1058,
-					"credit": "Yeong-Hao Han"
+					"width": 883,
+					"height": 1000
 				}
 			]
 		},
@@ -3956,11 +3957,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "decks/BMT/Deck of Many Things/22-euryale.webp"
+						"path": "items/XDMG/Deck of Illusions.webp"
 					},
-					"width": 850,
-					"height": 1552,
-					"credit": "Tinnel Lovitt"
+					"width": 883,
+					"height": 1000
 				}
 			]
 		},
@@ -3973,58 +3973,58 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/BMT/Euryales Aegis.webp"
+						"path": "items/BMT/Deck of Many More Things.webp"
+					},
+					"width": 607,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Eversmoking Bottle",
+			"name": "无尽烟壶",
+			"source": "DMG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/DMG/Deck of Many Things.webp"
+					},
+					"width": 229,
+					"height": 315
+				}
+			]
+		},
+		{
+			"ENG_name": "Eversmoking Bottle",
+			"name": "无尽烟壶",
+			"source": "XDMG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/XDMG/Deck of Many Things.webp"
+					},
+					"width": 426,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Eye and Hand of Vecna",
+			"name": "维克那法眼和魔掌",
+			"source": "DMG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/BMT/Deck of Wonder.webp"
 					},
 					"width": 1000,
-					"height": 999
-				}
-			]
-		},
-		{
-			"ENG_name": "Eversmoking Bottle",
-			"name": "无尽烟壶",
-			"source": "DMG",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/DMG/Eversmoking Bottle.webp"
-					},
-					"width": 565,
-					"height": 1000
-				}
-			]
-		},
-		{
-			"ENG_name": "Eversmoking Bottle",
-			"name": "无尽烟壶",
-			"source": "XDMG",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/XDMG/Eversmoking Bottle.webp"
-					},
-					"width": 565,
-					"height": 1000
-				}
-			]
-		},
-		{
-			"ENG_name": "Eye and Hand of Vecna",
-			"name": "维克那法眼和魔掌",
-			"source": "DMG",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/DMG/Eye and Hand of Vecna.webp"
-					},
-					"width": 654,
-					"height": 850
+					"height": 668
 				}
 			]
 		},
@@ -4037,10 +4037,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Eye and Hand of Vecna.webp"
+						"path": "items/DMG/Defender.webp"
 					},
-					"width": 850,
-					"height": 941
+					"width": 297,
+					"height": 1000,
+					"title": "Defender (Greatsword)"
 				}
 			]
 		},
@@ -4073,10 +4074,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Eyes of Charming.webp"
+						"path": "items/XDMG/Defender.webp"
 					},
-					"width": 1000,
-					"height": 860
+					"width": 297,
+					"height": 1000,
+					"title": "Defender (Greatsword)"
 				}
 			]
 		},
@@ -4089,10 +4091,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Eyes of Charming.webp"
+						"path": "items/MOT/Dekella, Bident of Thassa.webp"
 					},
 					"width": 1000,
-					"height": 860
+					"height": 738,
+					"credit": "Yeong-Hao Han"
 				}
 			]
 		},
@@ -4105,10 +4108,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Eyes of the Eagle.webp"
+						"path": "items/DMG/Demon Armor.webp"
 					},
-					"width": 850,
-					"height": 725
+					"width": 458,
+					"height": 1000,
+					"title": "Demon Armor (Plate Armor)"
 				}
 			]
 		},
@@ -4121,10 +4125,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Eyes of the Eagle.webp"
+						"path": "items/XDMG/Demon Armor.webp"
 					},
-					"width": 850,
-					"height": 725
+					"width": 458,
+					"height": 1000,
+					"title": "Demon Armor (Plate Armor)"
 				}
 			]
 		},
@@ -4137,11 +4142,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/TCE/Far Realm Shard.webp"
+						"path": "items/DitLCoT/Demon Skin.webp"
 					},
-					"width": 547,
-					"height": 926,
-					"credit": "Christopher Burdett"
+					"width": 1000,
+					"height": 903
 				}
 			]
 		},
@@ -4154,11 +4158,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DSotDQ/Fargab.webp"
+						"path": "items/TCE/Demonomicon of Iggwilv.webp"
 					},
-					"width": 850,
-					"height": 986,
-					"credit": "Kent Davis"
+					"width": 831,
+					"height": 1000,
+					"credit": "David Sladek"
 				}
 			]
 		},
@@ -4171,10 +4175,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/BMT/Fate Dealers Deck.webp"
+						"path": "items/XDMG/Demonomicon of Iggwilv.webp"
 					},
-					"width": 729,
-					"height": 1000
+					"width": 1000,
+					"height": 752
 				}
 			]
 		},
@@ -4187,11 +4191,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "decks/BMT/Deck of Many Things/08-fates.webp"
+						"path": "items/FRHoF/Desert Clothing.webp"
 					},
-					"width": 850,
-					"height": 1552,
-					"credit": "Tinnel Lovitt"
+					"width": 1700,
+					"height": 1544,
+					"credit": "Polar Engine"
 				}
 			]
 		},
@@ -4204,11 +4208,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/TCE/Feywild Shard.webp"
+						"path": "items/FRHoF/Devil Mask.webp"
 					},
-					"width": 507,
-					"height": 955,
-					"credit": "Christopher Burdett"
+					"width": 850,
+					"height": 945,
+					"credit": "Polar Engine"
 				}
 			]
 		},
@@ -4221,93 +4225,95 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/WBtW/Feywild Trinket.webp"
+						"path": "items/TCE/Devotee's Censer.webp"
+					},
+					"width": 792,
+					"height": 1000,
+					"credit": "Irina Nordsol"
+				}
+			]
+		},
+		{
+			"ENG_name": "Figurine of Wondrous Power",
+			"name": "异能塑像",
+			"source": "DMG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/DMG/Dimensional Shackles.webp"
+					},
+					"width": 708,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Figurine of Wondrous Power",
+			"name": "异能塑像",
+			"source": "XDMG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/XDMG/Dimensional Shackles.webp"
+					},
+					"width": 708,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Figurine of Wondrous Power, Ebony Fly",
+			"name": "异能塑像，黑檀苍蝇",
+			"source": "DMG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/GGR/Dimir Guild Signet.webp"
+					},
+					"width": 640,
+					"height": 458,
+					"credit": "Raoul Vitale"
+				}
+			]
+		},
+		{
+			"ENG_name": "Figurine of Wondrous Power, Ebony Fly",
+			"name": "异能塑像，黑檀苍蝇",
+			"source": "XDMG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/GGR/Dimir Keyrune.webp"
+					},
+					"width": 640,
+					"height": 468,
+					"credit": "Daniel Ljunggren"
+				}
+			]
+		},
+		{
+			"ENG_name": "Figurine of Wondrous Power, Golden Lions",
+			"name": "异能塑像，黄金狮子",
+			"source": "DMG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "adventure/VEoR/070-04-004.docent.webp"
 					},
 					"width": 850,
-					"height": 1085,
-					"credit": "Claudio Pozas"
-				}
-			]
-		},
-		{
-			"ENG_name": "Figurine of Wondrous Power",
-			"name": "异能塑像",
-			"source": "DMG",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/DMG/Figurine of Wondrous Power.webp"
-					},
-					"width": 1700,
-					"height": 904,
-					"credit": "Conceptopolis"
-				}
-			]
-		},
-		{
-			"ENG_name": "Figurine of Wondrous Power",
-			"name": "异能塑像",
-			"source": "XDMG",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/XDMG/Figurine of Wondrous Power.webp"
-					},
-					"width": 1700,
-					"height": 904,
-					"credit": "Conceptopolis"
-				}
-			]
-		},
-		{
-			"ENG_name": "Figurine of Wondrous Power, Ebony Fly",
-			"name": "异能塑像，黑檀苍蝇",
-			"source": "DMG",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/DMG/Figurine of Wondrous Power (Ebony Fly).webp"
-					},
-					"width": 1000,
-					"height": 792
-				}
-			]
-		},
-		{
-			"ENG_name": "Figurine of Wondrous Power, Ebony Fly",
-			"name": "异能塑像，黑檀苍蝇",
-			"source": "XDMG",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/XDMG/Figurine of Wondrous Power (Ebony Fly).webp"
-					},
-					"width": 1000,
-					"height": 792
-				}
-			]
-		},
-		{
-			"ENG_name": "Figurine of Wondrous Power, Golden Lions",
-			"name": "异能塑像，黄金狮子",
-			"source": "DMG",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/DMG/Figurine of Wondrous Power (Golden Lions).webp"
-					},
-					"width": 1000,
-					"height": 663
+					"height": 1338,
+					"title": "A Docent",
+					"credit": "CoupleofKooks"
 				}
 			]
 		},
@@ -4320,10 +4326,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Figurine of Wondrous Power (Golden Lions).webp"
+						"path": "items/AI/documancy-satchel.webp"
 					},
-					"width": 1000,
-					"height": 663
+					"width": 934,
+					"height": 1000,
+					"credit": "Chris Walton"
 				}
 			]
 		},
@@ -4336,10 +4343,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Figurine of Wondrous Power (Ivory Goats).webp"
+						"path": "decks/BMT/Deck of Many Things/17-donjon.webp"
 					},
-					"width": 511,
-					"height": 1000
+					"width": 850,
+					"height": 1552,
+					"credit": "Jim Zaccaria"
 				}
 			]
 		},
@@ -4352,10 +4360,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Figurine of Wondrous Power (Ivory Goats).webp"
+						"path": "items/RoT/Draakhorn.webp"
 					},
-					"width": 511,
-					"height": 1000
+					"width": 1700,
+					"height": 1325
 				}
 			]
 		},
@@ -4368,9 +4376,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Figurine of Wondrous Power (Marble Elephant).webp"
+						"path": "items/DMG/Dragon Scale Mail.webp"
 					},
-					"width": 886,
+					"width": 878,
 					"height": 1000
 				}
 			]
@@ -4384,9 +4392,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Figurine of Wondrous Power (Marble Elephant).webp"
+						"path": "items/XDMG/Dragon Scale Mail.webp"
 					},
-					"width": 886,
+					"width": 878,
 					"height": 1000
 				}
 			]
@@ -4400,10 +4408,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Figurine of Wondrous Power (Obsidian Steed).webp"
+						"path": "items/DMG/Dragon Slayer.webp"
 					},
-					"width": 880,
-					"height": 1000
+					"width": 751,
+					"height": 1000,
+					"title": "Dragon Slayer (Greatsword)"
 				}
 			]
 		},
@@ -4416,10 +4425,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Figurine of Wondrous Power (Obsidian Steed).webp"
+						"path": "items/XDMG/Dragon Slayer.webp"
 					},
-					"width": 880,
-					"height": 1000
+					"width": 751,
+					"height": 1000,
+					"title": "Dragon Slayer (Greatsword)"
 				}
 			]
 		},
@@ -4432,10 +4442,12 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Figurine of Wondrous Power (Serpentine Owl).webp"
+						"path": "items/FTD/Dragonlance.webp"
 					},
-					"width": 613,
-					"height": 1000
+					"width": 1700,
+					"height": 1123,
+					"title": "By Paladine's might, a dragonlance is restored",
+					"credit": "Irina Nordsol"
 				}
 			]
 		},
@@ -4448,10 +4460,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Figurine of Wondrous Power (Serpentine Owl).webp"
+						"path": "items/WDH/Dragonstaff of Ahghairon.webp"
 					},
-					"width": 613,
-					"height": 1000
+					"width": 440,
+					"height": 600
 				}
 			]
 		},
@@ -4464,11 +4476,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/AAG/Fish Suit.webp"
+						"path": "items/RoT/Dragontooth Dagger.webp"
 					},
-					"width": 850,
-					"height": 924,
-					"credit": "Olga Drebas"
+					"width": 1700,
+					"height": 1365
 				}
 			]
 		},
@@ -4481,11 +4492,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XPHB/Flail.webp"
+						"path": "items/WttHC/Dread Helm (Stranger Things).webp"
 					},
-					"width": 323,
-					"height": 284,
-					"credit": "Polar Engine"
+					"width": 851,
+					"height": 1000
 				}
 			]
 		},
@@ -4498,7 +4508,7 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Flame Tongue.webp"
+						"path": "items/XDMG/Dread Helm.webp"
 					},
 					"width": 692,
 					"height": 1000,
@@ -4515,7 +4525,7 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Flame Tongue.webp"
+						"path": "items/XGE/Dread Helm.webp"
 					},
 					"width": 692,
 					"height": 1000,
@@ -4532,11 +4542,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "decks/BMT/Deck of Many Things/20-flames.webp"
+						"path": "items/DMG/Driftglobe.webp"
 					},
-					"width": 850,
-					"height": 1552,
-					"credit": "Harry Conway"
+					"width": 1000,
+					"height": 1000
 				}
 			]
 		},
@@ -4559,11 +4568,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/MOT/Flying Chariot.webp"
+						"path": "items/XDMG/Driftglobe.webp"
 					},
-					"width": 1500,
-					"height": 1098,
-					"credit": "Ryan Alexander Lee"
+					"width": 1000,
+					"height": 1000
 				}
 			]
 		},
@@ -4579,11 +4587,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/FRHoF/Flying Snake.webp"
+						"path": "items/PotA/Drown.webp"
 					},
-					"width": 850,
-					"height": 955,
-					"credit": "Polar Engine"
+					"width": 138,
+					"height": 850
 				}
 			]
 		},
@@ -4596,10 +4603,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Folding Boat.webp"
+						"path": "items/EGW/Duskcrusher.webp"
 					},
-					"width": 850,
-					"height": 406
+					"width": 582,
+					"height": 1000,
+					"credit": "Olga Drebas"
 				}
 			]
 		},
@@ -4612,10 +4620,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Folding Boat.webp"
+						"path": "items/DMG/Dust of Disappearance.webp"
 					},
-					"width": 850,
-					"height": 406
+					"width": 529,
+					"height": 1000
 				}
 			]
 		},
@@ -4628,11 +4636,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "decks/BMT/Deck of Many Things/01-fool.webp"
+						"path": "items/XDMG/Dust of Disappearance.webp"
 					},
-					"width": 850,
-					"height": 1552,
-					"credit": "Harry Conway"
+					"width": 529,
+					"height": 1000
 				}
 			]
 		},
@@ -4645,7 +4652,7 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Frost Brand.webp"
+						"path": "items/DMG/Dust of Dryness.webp"
 					},
 					"width": 541,
 					"height": 1000,
@@ -4662,7 +4669,7 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Frost Brand.webp"
+						"path": "items/XDMG/Dust of Dryness.webp"
 					},
 					"width": 541,
 					"height": 1000,
@@ -4679,11 +4686,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/TCE/Fulminating Treatise.webp"
+						"path": "items/DMG/Dust of Sneezing and Choking.webp"
 					},
-					"width": 898,
-					"height": 1000,
-					"credit": "Kieran Yanner"
+					"width": 647,
+					"height": 1000
 				}
 			]
 		},
@@ -4699,11 +4705,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/FRHoF/Garb of Light and Shadow.webp"
+						"path": "items/XDMG/Dust of Sneezing and Choking.webp"
 					},
-					"width": 850,
-					"height": 735,
-					"credit": "Polar Engine"
+					"width": 647,
+					"height": 1000
 				}
 			]
 		},
@@ -4716,11 +4721,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Gauntlets of Ogre Power.webp"
+						"path": "items/DMG/Dwarven Plate.webp"
 					},
-					"width": 850,
-					"height": 742,
-					"credit": "Conceptopolis"
+					"width": 683,
+					"height": 1000
 				}
 			]
 		},
@@ -4733,10 +4737,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Gauntlets of Ogre Power.webp"
+						"path": "items/XDMG/Dwarven Plate.webp"
 					},
-					"width": 850,
-					"height": 742
+					"width": 683,
+					"height": 1000
 				}
 			]
 		},
@@ -4749,11 +4753,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "decks/BMT/Deck of Many Things/05-gem.webp"
+						"path": "items/DMG/Dwarven Thrower.webp"
 					},
-					"width": 850,
-					"height": 1552,
-					"credit": "Tinnel Lovitt"
+					"width": 1024,
+					"height": 1024
 				}
 			]
 		},
@@ -4766,10 +4769,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Gem of Brightness.webp"
+						"path": "items/XDMG/Dwarven Thrower.webp"
 					},
-					"width": 315,
-					"height": 315
+					"width": 1024,
+					"height": 1024
 				}
 			]
 		},
@@ -4782,25 +4785,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Gem of Brightness.webp"
+						"path": "items/XDMG/Ear Horn of Hearing.webp"
 					},
-					"width": 1000,
-					"height": 834
-				}
-			]
-		},
-		{
-			"ENG_name": "Gem of Seeing",
-			"name": "真视宝石",
-			"source": "DMG",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/DMG/Gem of Seeing.webp"
-					},
-					"width": 302,
+					"width": 697,
 					"height": 1000
 				}
 			]
@@ -4808,15 +4795,32 @@
 		{
 			"ENG_name": "Gem of Seeing",
 			"name": "真视宝石",
+			"source": "DMG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/CRCotN/Earring of Message.webp"
+					},
+					"width": 608,
+					"height": 850,
+					"credit": "CoupleOfKooks"
+				}
+			]
+		},
+		{
+			"ENG_name": "Gem of Seeing",
+			"name": "真视宝石",
 			"source": "XDMG",
 			"images": [
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Gem of Seeing.webp"
+						"path": "items/RHW/Ebonbane.webp"
 					},
-					"width": 302,
+					"width": 374,
 					"height": 1000
 				}
 			]
@@ -4833,11 +4837,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/FRHoF/Genie Robe.webp"
+						"path": "items/DMG/Efreeti Bottle.webp"
 					},
-					"width": 1700,
-					"height": 1028,
-					"credit": "Polar Engine"
+					"width": 390,
+					"height": 1000
 				}
 			]
 		},
@@ -4850,9 +4853,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/ToA/Ghost Lantern.webp"
+						"path": "items/XDMG/Efreeti Bottle.webp"
 					},
-					"width": 615,
+					"width": 390,
 					"height": 1000
 				}
 			]
@@ -4866,10 +4869,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Giant Slayer.webp"
+						"path": "items/DMG/Efreeti Chain.webp"
 					},
-					"width": 1024,
-					"height": 1024
+					"width": 604,
+					"height": 1000
 				}
 			]
 		},
@@ -4882,10 +4885,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Giant Slayer.webp"
+						"path": "items/XDMG/Efreeti Chain.webp"
 					},
-					"width": 1024,
-					"height": 1024
+					"width": 604,
+					"height": 1000
 				}
 			]
 		},
@@ -4898,11 +4901,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XPHB/Glaive.webp"
+						"path": "items/PHB/Electrum (ep).webp"
 					},
-					"width": 98,
-					"height": 1002,
-					"credit": "Polar Engine"
+					"width": 184,
+					"height": 184
 				}
 			]
 		},
@@ -4915,10 +4917,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Gloves of Missile Snaring.webp"
+						"path": "items/DMG/Elemental Gem.webp"
 					},
-					"width": 978,
-					"height": 1000
+					"width": 1024,
+					"height": 1024
 				}
 			]
 		},
@@ -4931,10 +4933,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Gloves of Missile Snaring.webp"
+						"path": "items/XDMG/Elemental Gem.webp"
 					},
-					"width": 978,
-					"height": 1000
+					"width": 1024,
+					"height": 1024
 				}
 			]
 		},
@@ -4947,10 +4949,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Gloves of Thievery.webp"
+						"path": "items/XDMG/Elemental Gem (Blue Sapphire).webp"
 					},
-					"width": 744,
-					"height": 918
+					"width": 329,
+					"height": 493
 				}
 			]
 		},
@@ -4979,10 +4981,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Goggles of Night.webp"
+						"path": "items/XDMG/Elemental Gem (Emerald).webp"
 					},
-					"width": 1024,
-					"height": 1024
+					"width": 331,
+					"height": 477
 				}
 			]
 		},
@@ -4995,10 +4997,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/PHB/Gold (gp).webp"
+						"path": "items/XDMG/Elemental Gem (Red Corundum).webp"
 					},
-					"width": 212,
-					"height": 212
+					"width": 321,
+					"height": 474
 				}
 			]
 		},
@@ -5021,11 +5023,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/GGR/Golgari Guild Signet.webp"
+						"path": "items/XDMG/Elemental Gem (Yellow Diamond).webp"
 					},
-					"width": 640,
-					"height": 461,
-					"credit": "Greg Hildebrandt"
+					"width": 338,
+					"height": 526
 				}
 			]
 		},
@@ -5038,11 +5039,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/GGR/Golgari Keyrune.webp"
+						"path": "items/DMG/Elixir of Health.webp"
 					},
-					"width": 315,
-					"height": 230,
-					"credit": "Daniel Ljunggren"
+					"width": 438,
+					"height": 1000
 				}
 			]
 		},
@@ -5055,11 +5055,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XPHB/Greataxe.webp"
+						"path": "items/XDMG/Elixir of Health.webp"
 					},
-					"width": 242,
-					"height": 628,
-					"credit": "Polar Engine"
+					"width": 438,
+					"height": 1000
 				}
 			]
 		},
@@ -5072,11 +5071,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XPHB/Greatclub.webp"
+						"path": "items/DMG/Elven Chain.webp"
 					},
-					"width": 686,
-					"height": 492,
-					"credit": "Polar Engine"
+					"width": 821,
+					"height": 1000
 				}
 			]
 		},
@@ -5089,10 +5087,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/MTF/Greater Silver Sword.webp"
+						"path": "items/XDMG/Elven Chain.webp"
 					},
-					"width": 1000,
-					"height": 1003
+					"width": 821,
+					"height": 1000
 				}
 			]
 		},
@@ -5105,11 +5103,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XPHB/Greatsword.webp"
+						"path": "items/XDMG/Enduring Spellbook.webp"
 					},
-					"width": 169,
-					"height": 899,
-					"credit": "Polar Engine"
+					"width": 628,
+					"height": 1000
 				}
 			]
 		},
@@ -5132,11 +5129,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/EGW/Grimoire Infinitus.webp"
+						"path": "items/XDMG/Energy Bow.webp"
 					},
-					"width": 1000,
-					"height": 948,
-					"credit": "Irina Nordsol"
+					"width": 683,
+					"height": 1000
 				}
 			]
 		},
@@ -5179,11 +5175,12 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/EGW/Grovelthrash.webp"
+						"path": "items/AU/Ensorcelled Missive.webp"
 					},
-					"width": 475,
-					"height": 997,
-					"credit": "Irina Nordsol"
+					"width": 850,
+					"height": 2162,
+					"title": "A writer seals a letter written on an {@item Ensorcelled Missive|AU}.",
+					"credit": "Julie Dillon"
 				}
 			]
 		},
@@ -5226,11 +5223,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/GGR/Gruul Guild Signet.webp"
+						"path": "items/XDMG/Enspelled Armor.webp"
 					},
-					"width": 640,
-					"height": 498,
-					"credit": "Efrem Palacios"
+					"width": 928,
+					"height": 1000
 				}
 			]
 		},
@@ -5243,11 +5239,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/GGR/Gruul Keyrune.webp"
+						"path": "items/XDMG/Enspelled Staff.webp"
 					},
-					"width": 640,
-					"height": 468,
-					"credit": "Daniel Ljunggren"
+					"width": 605,
+					"height": 1000
 				}
 			]
 		},
@@ -5260,9 +5255,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/CoS/Gulthias Staff.webp"
+						"path": "items/XDMG/Enspelled Weapon.webp"
 					},
-					"width": 675,
+					"width": 644,
 					"height": 1000
 				}
 			]
@@ -5276,10 +5271,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Hag Eye.webp"
+						"path": "items/MOT/Ephixis, Bow of Nylea.webp"
 					},
-					"width": 716,
-					"height": 1000
+					"width": 1000,
+					"height": 1058,
+					"credit": "Yeong-Hao Han"
 				}
 			]
 		},
@@ -5292,11 +5288,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XPHB/Halberd.webp"
+						"path": "decks/BMT/Deck of Many Things/22-euryale.webp"
 					},
-					"width": 199,
-					"height": 980,
-					"credit": "Polar Engine"
+					"width": 850,
+					"height": 1552,
+					"credit": "Tinnel Lovitt"
 				}
 			]
 		},
@@ -5309,11 +5305,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XPHB/Half Plate Armor.webp"
+						"path": "items/BMT/Euryales Aegis.webp"
 					},
-					"width": 315,
-					"height": 392,
-					"credit": "Polar Engine"
+					"width": 1000,
+					"height": 999
 				}
 			]
 		},
@@ -5326,9 +5321,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/BMT/Hammer of Runic Focus.webp"
+						"path": "items/DMG/Eversmoking Bottle.webp"
 					},
-					"width": 573,
+					"width": 565,
 					"height": 1000
 				}
 			]
@@ -5342,9 +5337,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Hammer of Thunderbolts.webp"
+						"path": "items/XDMG/Eversmoking Bottle.webp"
 					},
-					"width": 640,
+					"width": 565,
 					"height": 1000
 				}
 			]
@@ -5358,10 +5353,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Hammer of Thunderbolts.webp"
+						"path": "items/XDMG/Executioner's Axe.webp"
 					},
-					"width": 640,
-					"height": 1000
+					"width": 1000,
+					"height": 956
 				}
 			]
 		},
@@ -5374,11 +5369,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/JttRC/Hammock of Worlds.webp"
+						"path": "items/DMG/Eye and Hand of Vecna.webp"
 					},
-					"width": 896,
-					"height": 1000,
-					"credit": "Olga Drebas"
+					"width": 654,
+					"height": 850
 				}
 			]
 		},
@@ -5391,11 +5385,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XPHB/Hand Crossbow.webp"
+						"path": "items/XDMG/Eye and Hand of Vecna.webp"
 					},
-					"width": 393,
-					"height": 180,
-					"credit": "Polar Engine"
+					"width": 850,
+					"height": 941
 				}
 			]
 		},
@@ -5434,7 +5427,7 @@
 					"height": 449,
 					"credit": "Polar Engine"
 				}
-			]
+			}
 		},
 		{
 			"ENG_name": "Harper Pin",
@@ -5445,10 +5438,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/FRAiF/Harper Pin.webp"
+						"path": "items/DMG/Eyes of Charming.webp"
 					},
-					"width": 810,
-					"height": 1000
+					"width": 1000,
+					"height": 860
 				}
 			]
 		},
@@ -5461,10 +5454,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Hat of Disguise.webp"
+						"path": "items/XDMG/Eyes of Charming.webp"
 					},
-					"width": 602,
-					"height": 709
+					"width": 1000,
+					"height": 860
 				}
 			]
 		},
@@ -5477,10 +5470,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Hat of Vermin.webp"
+						"path": "items/DMG/Eyes of Minute Seeing.webp"
 					},
-					"width": 769,
-					"height": 826
+					"width": 791,
+					"height": 1000
 				}
 			]
 		},
@@ -5493,9 +5486,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Hat of Wizardry.webp"
+						"path": "items/XDMG/Eyes of Minute Seeing.webp"
 					},
-					"width": 382,
+					"width": 791,
 					"height": 1000
 				}
 			]
@@ -5509,10 +5502,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Headband of Intellect.webp"
+						"path": "items/DMG/Eyes of the Eagle.webp"
 					},
-					"width": 495,
-					"height": 850
+					"width": 850,
+					"height": 725
 				}
 			]
 		},
@@ -5525,10 +5518,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Headband of Intellect.webp"
+						"path": "items/XDMG/Eyes of the Eagle.webp"
 					},
-					"width": 495,
-					"height": 850
+					"width": 850,
+					"height": 725
 				}
 			]
 		},
@@ -5541,10 +5534,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/PHB/Healer's Kit.webp"
+						"path": "items/TCE/Far Realm Shard.webp"
 					},
-					"width": 260,
-					"height": 221
+					"width": 547,
+					"height": 926,
+					"credit": "Christopher Burdett"
 				}
 			]
 		},
@@ -5557,11 +5551,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XPHB/Heavy Crossbow.webp"
+						"path": "items/DSotDQ/Fargab.webp"
 					},
-					"width": 550,
-					"height": 354,
-					"credit": "Polar Engine"
+					"width": 850,
+					"height": 986,
+					"credit": "Kent Davis"
 				}
 			]
 		},
@@ -5574,10 +5568,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/BGDIA/Hellfire Weapon.webp"
+						"path": "items/BMT/Fate Dealers Deck.webp"
 					},
-					"width": 1500,
-					"height": 337
+					"width": 729,
+					"height": 1000
 				}
 			]
 		},
@@ -5590,10 +5584,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Helm of Brilliance.webp"
+						"path": "decks/BMT/Deck of Many Things/08-fates.webp"
 					},
-					"width": 795,
-					"height": 1000
+					"width": 850,
+					"height": 1552,
+					"credit": "Tinnel Lovitt"
 				}
 			]
 		},
@@ -5606,10 +5601,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Helm of Brilliance.webp"
+						"path": "items/TCE/Feywild Shard.webp"
 					},
-					"width": 795,
-					"height": 1000
+					"width": 507,
+					"height": 955,
+					"credit": "Christopher Burdett"
 				}
 			]
 		},
@@ -5622,10 +5618,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Helm of Comprehending Languages.webp"
+						"path": "items/WBtW/Feywild Trinket.webp"
 					},
-					"width": 600,
-					"height": 850
+					"width": 850,
+					"height": 1085,
+					"credit": "Claudio Pozas"
 				}
 			]
 		},
@@ -5638,10 +5635,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Helm of Comprehending Languages.webp"
+						"path": "items/DMG/Figurine of Wondrous Power.webp"
 					},
-					"width": 600,
-					"height": 850
+					"width": 1700,
+					"height": 904,
+					"credit": "Conceptopolis"
 				}
 			]
 		},
@@ -5654,10 +5652,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/BGDIA/Helm of Devil Command.webp"
+						"path": "items/XDMG/Figurine of Wondrous Power.webp"
 					},
-					"width": 878,
-					"height": 1000
+					"width": 1700,
+					"height": 904,
+					"credit": "Conceptopolis"
 				}
 			]
 		},
@@ -5670,9 +5669,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/HAT-LMI/Helm of Disjunction.webp"
+						"path": "items/DMG/Figurine of Wondrous Power, Bronze Griffon.webp"
 					},
-					"width": 722,
+					"width": 917,
 					"height": 1000
 				}
 			]
@@ -5686,11 +5685,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/BGG/Helm of Perfect Potential.webp"
+						"path": "items/XDMG/Figurine of Wondrous Power, Bronze Griffon.webp"
 					},
-					"width": 680,
-					"height": 1000,
-					"credit": "Isabel Gibney"
+					"width": 917,
+					"height": 1000
 				}
 			]
 		},
@@ -5703,10 +5701,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Helm of Telepathy.webp"
+						"path": "items/DMG/Figurine of Wondrous Power (Ebony Fly).webp"
 					},
-					"width": 867,
-					"height": 1000
+					"width": 1000,
+					"height": 792
 				}
 			]
 		},
@@ -5719,10 +5717,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Helm of Telepathy.webp"
+						"path": "items/XDMG/Figurine of Wondrous Power (Ebony Fly).webp"
 					},
-					"width": 867,
-					"height": 1000
+					"width": 1000,
+					"height": 792
 				}
 			]
 		},
@@ -5735,10 +5733,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Helm of Teleportation.webp"
+						"path": "items/DMG/Figurine of Wondrous Power (Golden Lions).webp"
 					},
-					"width": 755,
-					"height": 850
+					"width": 1000,
+					"height": 663
 				}
 			]
 		},
@@ -5751,10 +5749,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Helm of Teleportation.webp"
+						"path": "items/XDMG/Figurine of Wondrous Power (Golden Lions).webp"
 					},
-					"width": 755,
-					"height": 850
+					"width": 1000,
+					"height": 663
 				}
 			]
 		},
@@ -5767,9 +5765,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Heward's Handy Haversack.webp"
+						"path": "items/DMG/Figurine of Wondrous Power (Ivory Goats).webp"
 					},
-					"width": 771,
+					"width": 511,
 					"height": 1000
 				}
 			]
@@ -5783,9 +5781,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Hewards Handy Haversack.webp"
+						"path": "items/XDMG/Figurine of Wondrous Power (Ivory Goats).webp"
 					},
-					"width": 771,
+					"width": 511,
 					"height": 1000
 				}
 			]
@@ -5799,11 +5797,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XPHB/Hide Armor.webp"
+						"path": "items/DMG/Figurine of Wondrous Power (Marble Elephant).webp"
 					},
-					"width": 347,
-					"height": 507,
-					"credit": "Polar Engine"
+					"width": 886,
+					"height": 1000
 				}
 			]
 		},
@@ -5816,9 +5813,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/HAT-LMI/Hither-Thither Staff.webp"
+						"path": "items/XDMG/Figurine of Wondrous Power (Marble Elephant).webp"
 					},
-					"width": 758,
+					"width": 886,
 					"height": 1000
 				}
 			]
@@ -5832,10 +5829,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/WttHC/Hollys Handy Haversack.webp"
+						"path": "items/DMG/Figurine of Wondrous Power (Obsidian Steed).webp"
 					},
-					"width": 871,
-					"height": 999
+					"width": 880,
+					"height": 1000
 				}
 			]
 		},
@@ -5848,7 +5845,7 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Holy Avenger.webp"
+						"path": "items/XDMG/Figurine of Wondrous Power (Obsidian Steed).webp"
 					},
 					"width": 624,
 					"height": 1000,
@@ -5865,7 +5862,7 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Holy Avenger.webp"
+						"path": "items/DMG/Figurine of Wondrous Power, Onyx Dog.webp"
 					},
 					"width": 624,
 					"height": 1000,
@@ -5882,7 +5879,7 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/CoS/Holy Symbol of Ravenkind.webp"
+						"path": "items/XDMG/Figurine of Wondrous Power, Onyx Dog.webp"
 					},
 					"width": 767,
 					"height": 1000
@@ -5898,11 +5895,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DSotDQ/Hoopak.webp"
+						"path": "items/DMG/Figurine of Wondrous Power (Serpentine Owl).webp"
 					},
-					"width": 850,
-					"height": 1164,
-					"credit": "Crystal Sully"
+					"width": 613,
+					"height": 1000
 				}
 			]
 		},
@@ -5915,9 +5911,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/HAT-LMI/Horn of Beckoning Death.webp"
+						"path": "items/XDMG/Figurine of Wondrous Power (Serpentine Owl).webp"
 					},
-					"width": 860,
+					"width": 613,
 					"height": 1000
 				}
 			]
@@ -5931,9 +5927,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Horn of Blasting.webp"
+						"path": "items/DMG/Figurine of Wondrous Power, Silver Raven.webp"
 					},
-					"width": 859,
+					"width": 700,
 					"height": 1000
 				}
 			]
@@ -5947,9 +5943,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Horn of Blasting.webp"
+						"path": "items/XDMG/Figurine of Wondrous Power, Silver Raven.webp"
 					},
-					"width": 859,
+					"width": 700,
 					"height": 1000
 				}
 			]
@@ -5963,10 +5959,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Horn of Valhalla.webp"
+						"path": "items/AAG/Fish Suit.webp"
 					},
-					"width": 1000,
-					"height": 797
+					"width": 850,
+					"height": 924,
+					"credit": "Olga Drebas"
 				}
 			]
 		},
@@ -5979,10 +5976,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Horn of Valhalla.webp"
+						"path": "items/XPHB/Flail.webp"
 					},
-					"width": 1000,
-					"height": 797
+					"width": 323,
+					"height": 284,
+					"credit": "Polar Engine"
 				}
 			]
 		},
@@ -6035,10 +6033,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/IDRotF/Icewind Dale Trinket.webp"
+						"path": "items/DMG/Flame Tongue.webp"
 					},
-					"width": 1700,
-					"height": 1075
+					"width": 692,
+					"height": 1000,
+					"title": "Flame Tongue (Longsword)"
 				}
 			]
 		},
@@ -6051,10 +6050,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/CoS/Icon of Ravenloft.webp"
+						"path": "items/XDMG/Flame Tongue.webp"
 					},
-					"width": 601,
-					"height": 1000
+					"width": 692,
+					"height": 1000,
+					"title": "Flame Tongue (Longsword)"
 				}
 			]
 		},
@@ -6067,21 +6067,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/WBtW/Iggwilvs Cauldron.webp"
+						"path": "decks/BMT/Deck of Many Things/20-flames.webp"
 					},
 					"width": 850,
-					"height": 1053,
-					"credit": "Olga Drebas"
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/WBtW/Iggwilvs Cauldron (Iron).webp"
-					},
-					"width": 850,
-					"height": 1053,
-					"credit": "Olga Drebas"
+					"height": 1552,
+					"credit": "Harry Conway"
 				}
 			]
 		},
@@ -6094,10 +6084,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DitLCoT/Iggwilvs Horn.webp"
+						"path": "items/MOT/Flying Chariot.webp"
 					},
-					"width": 1000,
-					"height": 747
+					"width": 1500,
+					"height": 1098,
+					"credit": "Ryan Alexander Lee"
 				}
 			]
 		},
@@ -6110,11 +6101,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/GGR/Illusionist's Bracers.webp"
+						"path": "items/FRHoF/Flying Snake.webp"
 					},
-					"width": 620,
-					"height": 400,
-					"credit": "Svetlin Velinov"
+					"width": 850,
+					"height": 955,
+					"credit": "Polar Engine"
 				}
 			]
 		},
@@ -6127,10 +6118,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Immovable Rod.webp"
+						"path": "items/DMG/Folding Boat.webp"
 					},
 					"width": 850,
-					"height": 1000
+					"height": 406
 				}
 			]
 		},
@@ -6143,10 +6134,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Immovable Rod.webp"
+						"path": "items/XDMG/Folding Boat.webp"
 					},
 					"width": 850,
-					"height": 1000
+					"height": 406
 				}
 			]
 		},
@@ -6159,11 +6150,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/EGW/Infiltrator's Key.webp"
+						"path": "decks/BMT/Deck of Many Things/01-fool.webp"
 					},
-					"width": 885,
-					"height": 834,
-					"credit": "Irina Nordsol"
+					"width": 850,
+					"height": 1552,
+					"credit": "Harry Conway"
 				}
 			]
 		},
@@ -6206,10 +6197,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Instrument of Illusions.webp"
+						"path": "items/DMG/Frost Brand.webp"
 					},
-					"width": 772,
-					"height": 1000
+					"width": 541,
+					"height": 1000,
+					"title": "Frost Brand (Scimitar)"
 				}
 			]
 		},
@@ -6222,10 +6214,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Instrument of the Bards.webp"
+						"path": "items/XDMG/Frost Brand.webp"
 					},
-					"width": 514,
-					"height": 1000
+					"width": 541,
+					"height": 1000,
+					"title": "Frost Brand (Scimitar)"
 				}
 			]
 		},
@@ -6238,10 +6231,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Instrument of the Bards, Anstruth Harp.webp"
+						"path": "items/TCE/Fulminating Treatise.webp"
 					},
-					"width": 514,
-					"height": 1000
+					"width": 898,
+					"height": 1000,
+					"credit": "Kieran Yanner"
 				}
 			]
 		},
@@ -6254,10 +6248,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Anstruth Harp.webp"
+						"path": "items/FRHoF/Garb of Light and Shadow.webp"
 					},
-					"width": 514,
-					"height": 1000
+					"width": 850,
+					"height": 735,
+					"credit": "Polar Engine"
 				}
 			]
 		},
@@ -6270,10 +6265,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Instrument of the Bards, Canaith Mandolin.webp"
+						"path": "items/DMG/Gauntlets of Ogre Power.webp"
 					},
-					"width": 474,
-					"height": 1000,
+					"width": 850,
+					"height": 742,
 					"credit": "Conceptopolis"
 				}
 			]
@@ -6287,10 +6282,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Canaith Mandolin.webp"
+						"path": "items/XDMG/Gauntlets of Ogre Power.webp"
 					},
-					"width": 474,
-					"height": 1000
+					"width": 850,
+					"height": 742
 				}
 			]
 		},
@@ -6303,10 +6298,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Instrument of the Bards, Cli Lyre.webp"
+						"path": "items/DMG/Gem of Brightness.webp"
 					},
-					"width": 525,
-					"height": 1000
+					"width": 315,
+					"height": 315
 				}
 			]
 		},
@@ -6319,10 +6314,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Cli Lyre.webp"
+						"path": "items/XDMG/Gem of Brightness.webp"
 					},
-					"width": 525,
-					"height": 1000
+					"width": 1000,
+					"height": 834
 				}
 			]
 		},
@@ -6335,10 +6330,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Instrument of the Bards, Doss Lute.webp"
+						"path": "items/DMG/Gem of Seeing.webp"
 					},
-					"width": 1000,
-					"height": 586
+					"width": 302,
+					"height": 1000
 				}
 			]
 		},
@@ -6351,10 +6346,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Doss Lute.webp"
+						"path": "items/XDMG/Gem of Seeing.webp"
 					},
-					"width": 1000,
-					"height": 586
+					"width": 302,
+					"height": 1000
 				}
 			]
 		},
@@ -6367,9 +6362,25 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Instrument of the Bards, Fochlucan Bandore.webp"
+						"path": "items/FRHoF/Genie Robe.webp"
 					},
-					"width": 468,
+					"width": 1700,
+					"height": 1028,
+					"credit": "Polar Engine"
+				}
+			]
+		},
+		{
+			"name": "Ghost Lantern",
+			"source": "ToA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/ToA/Ghost Lantern.webp"
+					},
+					"width": 615,
 					"height": 1000
 				}
 			]
@@ -6383,10 +6394,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Fochlucan Bandore.webp"
+						"path": "items/XDMG/Giant Slayer.webp"
 					},
-					"width": 468,
-					"height": 1000
+					"width": 1024,
+					"height": 1024
 				}
 			]
 		},
@@ -6399,9 +6410,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Instrument of the Bards, Mac-Fuirmidh Cittern.webp"
+						"path": "items/DMG/Glamoured Studded Leather.webp"
 					},
-					"width": 671,
+					"width": 912,
 					"height": 1000
 				}
 			]
@@ -6415,9 +6426,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Mac-Fuirmidh Cittern.webp"
+						"path": "items/XDMG/Glamoured Studded Leather.webp"
 					},
-					"width": 671,
+					"width": 912,
 					"height": 1000
 				}
 			]
@@ -6431,9 +6442,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Instrument of the Bards, Ollamh Harp.webp"
+						"path": "items/DMG/Gloves of Missile Snaring.webp"
 					},
-					"width": 687,
+					"width": 978,
 					"height": 1000
 				}
 			]
@@ -6447,9 +6458,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Ollamh Harp.webp"
+						"path": "items/XDMG/Gloves of Missile Snaring.webp"
 					},
-					"width": 687,
+					"width": 978,
 					"height": 1000
 				}
 			]
@@ -6463,10 +6474,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Ioun Stone.webp"
+						"path": "items/DMG/Gloves of Swimming and Climbing.webp"
 					},
-					"width": 1700,
-					"height": 627
+					"width": 859,
+					"height": 1000
 				}
 			]
 		},
@@ -6479,10 +6490,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Ioun Stone.webp"
+						"path": "items/XDMG/Gloves of Swimming and Climbing.webp"
 					},
-					"width": 1700,
-					"height": 627
+					"width": 859,
+					"height": 1000
 				}
 			]
 		},
@@ -6775,10 +6786,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Iron Bands of Bilarro.webp"
+						"path": "items/XDMG/Mariners Armor.webp"
 					},
-					"width": 988,
-					"height": 1000
+					"width": 488,
+					"height": 1084,
+					"title": "Mariner's armor (Leather Armor)"
 				}
 			]
 		},
@@ -6791,9 +6803,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Iron Bands of Bilarro.webp"
+						"path": "items/ToA/Mask of the Beast.webp"
 					},
-					"width": 988,
+					"width": 827,
 					"height": 1000
 				}
 			]
@@ -6807,10 +6819,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Iron Flask.webp"
+						"path": "items/RoT/Mask of the Dragon Queen.webp"
 					},
-					"width": 931,
-					"height": 1000
+					"width": 850,
+					"height": 1681
 				}
 			]
 		},
@@ -6823,10 +6835,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Iron Flask.webp"
+						"path": "items/MOT/Mastix, Whip of Erebos.webp"
 					},
-					"width": 931,
-					"height": 1000
+					"width": 1000,
+					"height": 1000,
+					"credit": "Yeong-Hao Han"
 				}
 			]
 		},
@@ -6839,10 +6852,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/PotA/Ironfang.webp"
+						"path": "items/BGDIA/Matalotok.webp"
 					},
-					"width": 463,
-					"height": 850
+					"width": 903,
+					"height": 1000
 				}
 			]
 		},
@@ -6855,11 +6868,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/GGR/Izzet Guild Signet.webp"
+						"path": "items/XPHB/Maul.webp"
 					},
-					"width": 640,
-					"height": 461,
-					"credit": "Raoul Vitale"
+					"width": 651,
+					"height": 184,
+					"credit": "Polar Engine"
 				}
 			]
 		},
@@ -6872,11 +6885,12 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/GGR/Izzet Keyrune.webp"
+						"path": "items/FRAiF/Mechanical Wonder.webp"
 					},
-					"width": 620,
-					"height": 453,
-					"credit": "Daniel Ljunggren"
+					"width": 850,
+					"height": 908,
+					"title": "Domestic Wonder",
+					"credit": "Polar Engine"
 				}
 			]
 		},
@@ -6889,11 +6903,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XPHB/Javelin.webp"
+						"path": "items/CRCotN/Medal of the Maze.webp"
 					},
-					"width": 28,
-					"height": 1203,
-					"credit": "Polar Engine"
+					"width": 695,
+					"height": 850,
+					"credit": "CoupleOfKooks"
 				}
 			]
 		},
@@ -6906,10 +6920,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Javelin of Lightning.webp"
+						"path": "items/DMG/Medallion of Thoughts.webp"
 					},
-					"width": 1000,
-					"height": 968
+					"width": 430,
+					"height": 850
 				}
 			]
 		},
@@ -6922,10 +6936,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Javelin of Lightning.webp"
+						"path": "items/XDMG/Medallion of Thoughts.webp"
 					},
-					"width": 1000,
-					"height": 968
+					"width": 430,
+					"height": 850
 				}
 			]
 		},
@@ -6938,11 +6952,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "decks/BMT/Deck of Many Things/14-jester.webp"
+						"path": "items/TCE/Mighty Servant of Leuk-o.webp"
 					},
-					"width": 850,
-					"height": 1552,
-					"credit": "Harry Conway"
+					"width": 915,
+					"height": 1000,
+					"credit": "David Sladek"
 				}
 			]
 		},
@@ -6955,10 +6969,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/BMT/Jesters Mask.webp"
+						"path": "items/SatO/Mimir.webp"
 					},
-					"width": 501,
-					"height": 1000
+					"width": 772,
+					"height": 1000,
+					"credit": "CoupleOfKooks"
 				}
 			]
 		},
@@ -6971,11 +6986,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/CRCotN/Jewel of Three Prayers.webp"
+						"path": "items/PaBTSO/Mind Crystal.webp"
 					},
-					"width": 1750,
-					"height": 1110,
-					"credit": "CoupleOfKooks"
+					"width": 1000,
+					"height": 542
 				}
 			]
 		},
@@ -7018,11 +7032,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DSotDQ/Kagonesti Forest Shroud.webp"
+						"path": "items/PaBTSO/Mindguard Crown.webp"
 					},
-					"width": 850,
-					"height": 1020,
-					"credit": "Caio E Santos"
+					"width": 1000,
+					"height": 819
 				}
 			]
 		},
@@ -7035,10 +7048,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Keoghtom's Ointment.webp"
+						"path": "items/DMG/Mirror of Life Trapping.webp"
 					},
-					"width": 1000,
-					"height": 888
+					"width": 446,
+					"height": 1000
 				}
 			]
 		},
@@ -7051,10 +7064,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Keoghtoms Ointment.webp"
+						"path": "items/XDMG/Mirror of Life Trapping.webp"
 					},
-					"width": 1000,
-					"height": 888
+					"width": 446,
+					"height": 1000
 				}
 			]
 		},
@@ -7067,11 +7080,41 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "decks/BMT/Deck of Many Things/02-key.webp"
+						"path": "items/DMG/Mithral Armor.webp"
 					},
-					"width": 850,
-					"height": 1552,
-					"credit": "Tinnel Lovitt"
+					"width": 602,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"name": "Mithral Armor",
+			"source": "XDMG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/XDMG/Mithral Armor.webp"
+					},
+					"width": 602,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"name": "Mizzium Apparatus",
+			"source": "GGR",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/GGR/Mizzium Apparatus.webp"
+					},
+					"width": 315,
+					"height": 223,
+					"credit": "Terese Nielsen"
 				}
 			]
 		},
@@ -7084,11 +7127,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/MOT/Khrusor, Spear of Heliod.webp"
+						"path": "items/FRHoF/Monster Camouflage.webp"
 					},
-					"width": 1000,
-					"height": 800,
-					"credit": "Yeong-Hao Han"
+					"width": 650,
+					"height": 979,
+					"credit": "Polar Engine"
 				}
 			]
 		},
@@ -7101,11 +7144,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "decks/BMT/Deck of Many Things/09-knight.webp"
+						"path": "items/GGR/Moodmark Paint.webp"
 					},
-					"width": 850,
-					"height": 1552,
-					"credit": "Vallez Gax"
+					"width": 315,
+					"height": 230,
+					"credit": "Scott Murphy"
 				}
 			]
 		},
@@ -7118,11 +7161,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XPHB/Lamp.webp"
+						"path": "decks/BMT/Deck of Many Things/11-moon.webp"
 					},
-					"width": 268,
-					"height": 576,
-					"credit": "Polar Engine"
+					"width": 850,
+					"height": 1552,
+					"credit": "Vallez Gax"
 				}
 			]
 		},
@@ -7135,11 +7178,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XPHB/Lance.webp"
+						"path": "items/XDMG/Moon-Touched Sword.webp"
 					},
-					"width": 932,
-					"height": 208,
-					"credit": "Polar Engine"
+					"width": 850,
+					"height": 226,
+					"title": "Moon-Touched Sword (Rapier)"
 				}
 			]
 		},
@@ -7152,10 +7195,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Lantern of Revealing.webp"
+						"path": "items/DMG/Moonblade.webp"
 					},
-					"width": 611,
-					"height": 1000
+					"width": 1000,
+					"height": 517,
+					"title": "Moonblade (Longsword)"
 				}
 			]
 		},
@@ -7168,10 +7212,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Lantern of Revealing.webp"
+						"path": "items/XDMG/Moonblade.webp"
 					},
-					"width": 611,
-					"height": 1000
+					"width": 1000,
+					"height": 517,
+					"title": "Moonblade (Longsword)"
 				}
 			]
 		},
@@ -7184,11 +7229,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/EGW/Lash of Shadows.webp"
+						"path": "items/XPHB/Morningstar.webp"
 					},
-					"width": 779,
-					"height": 869,
-					"credit": "Irina Nordsol"
+					"width": 136,
+					"height": 449,
+					"credit": "Polar Engine"
 				}
 			]
 		},
@@ -7231,11 +7276,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XPHB/Leather Armor.webp"
+						"path": "items/PaBTSO/Mudslick Tower.webp"
 					},
-					"width": 343,
-					"height": 372,
-					"credit": "Polar Engine"
+					"width": 779,
+					"height": 1000
 				}
 			]
 		},
@@ -7258,10 +7302,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XPHB/Light Crossbow.webp"
+						"path": "items/FRHoF/Musical Instrument.webp"
 					},
-					"width": 600,
-					"height": 330,
+					"width": 850,
+					"height": 599,
+					"title": "Left to Right: Yarting, Bandore, Cittern",
 					"credit": "Polar Engine"
 				}
 			]
@@ -7275,10 +7320,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XPHB/Light Hammer.webp"
+						"path": "items/XPHB/Musket.webp"
 					},
-					"width": 198,
-					"height": 537,
+					"width": 1072,
+					"height": 174,
 					"credit": "Polar Engine"
 				}
 			]
@@ -7292,11 +7337,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/AI/living-loot-satchel.webp"
+						"path": "items/XDMG/Mystery Key.webp"
 					},
-					"width": 904,
-					"height": 1000,
-					"credit": "Chris Walton"
+					"width": 586,
+					"height": 1000
 				}
 			]
 		},
@@ -7312,11 +7356,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/FRHoF/Locking Spellbook.webp"
+						"path": "items/DSotDQ/Narycrash.webp"
 					},
-					"width": 810,
-					"height": 546,
-					"credit": "Polar Engine"
+					"width": 850,
+					"height": 936,
+					"credit": "Kent Davis"
 				}
 			]
 		},
@@ -7329,11 +7373,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XPHB/Longbow.webp"
+						"path": "items/TCE/Nature's Mantle.webp"
 					},
-					"width": 136,
-					"height": 956,
-					"credit": "Polar Engine"
+					"width": 698,
+					"height": 1000,
+					"credit": "Brian Valeza"
 				}
 			]
 		},
@@ -7346,11 +7390,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XPHB/Longsword.webp"
+						"path": "items/XDMG/Natures Mantle.webp"
 					},
-					"width": 665,
-					"height": 135,
-					"credit": "Polar Engine"
+					"width": 698,
+					"height": 1000
 				}
 			]
 		},
@@ -7363,10 +7406,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/WDH/Lord's Ensemble.webp"
+						"path": "items/DMG/Necklace of Adaptation.webp"
 					},
-					"width": 791,
-					"height": 1000
+					"width": 624,
+					"height": 850
 				}
 			]
 		},
@@ -7379,11 +7422,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/TCE/Luba's Tarokka of Souls.webp"
+						"path": "items/XDMG/Necklace of Adaptation.webp"
 					},
-					"width": 955,
-					"height": 1000,
-					"credit": "Claudio Pozas"
+					"width": 624,
+					"height": 850
 				}
 			]
 		},
@@ -7396,7 +7438,7 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Luck Blade.webp"
+						"path": "items/DMG/Necklace of Fireballs.webp"
 					},
 					"width": 767,
 					"height": 1000,
@@ -7413,7 +7455,7 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Luck Blade.webp"
+						"path": "items/XDMG/Necklace of Fireballs.webp"
 					},
 					"width": 767,
 					"height": 1000,
@@ -7430,9 +7472,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/PaBTSO/Luminous War Pick.webp"
+						"path": "items/DMG/Necklace of Prayer Beads.webp"
 					},
-					"width": 525,
+					"width": 731,
 					"height": 1000
 				}
 			]
@@ -7446,11 +7488,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/EGW/Luxon Beacon.webp"
+						"path": "items/XDMG/Necklace of Prayer Beads.webp"
 					},
-					"width": 1000,
-					"height": 803,
-					"credit": "Olga Drebas"
+					"width": 731,
+					"height": 1000
 				}
 			]
 		},
@@ -7463,11 +7504,12 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XPHB/Mace.webp"
+						"path": "items/AU/Necklace of the Beastly Familiar.webp"
 					},
-					"width": 135,
-					"height": 556,
-					"credit": "Polar Engine"
+					"width": 1700,
+					"height": 1100,
+					"title": "{@item Necklace of the Beastly Familiar|AU}",
+					"credit": "Swatches Studio"
 				}
 			]
 		},
@@ -7480,10 +7522,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Mace of Disruption.webp"
+						"path": "items/AU/Necklace of the Beastly Familiar (Giant Octopus).webp"
 					},
-					"width": 315,
-					"height": 315
+					"width": 659,
+					"height": 1000,
+					"credit": "Swatches Studio"
 				}
 			]
 		},
@@ -7496,58 +7539,62 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Mace of Disruption.webp"
+						"path": "items/AU/Necklace of the Beastly Familiar (Giant Scorpion).webp"
+					},
+					"width": 828,
+					"height": 1000,
+					"credit": "Swatches Studio"
+				}
+			]
+		},
+		{
+			"ENG_name": "Mace of Smiting",
+			"name": "打击之锤",
+			"source": "DMG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/AU/Necklace of the Beastly Familiar (Hippopotamus).webp"
+					},
+					"width": 911,
+					"height": 1000,
+					"credit": "Swatches Studio"
+				}
+			]
+		},
+		{
+			"ENG_name": "Mace of Smiting",
+			"name": "打击之锤",
+			"source": "XDMG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/AU/Necklace of the Beastly Familiar (Mammoth).webp"
+					},
+					"width": 907,
+					"height": 1000,
+					"credit": "Swatches Studio"
+				}
+			]
+		},
+		{
+			"ENG_name": "Mace of Terror",
+			"name": "恐惧之锤",
+			"source": "DMG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/AU/Necklace of the Beastly Familiar (Tyrannosaurus Rex).webp"
 					},
 					"width": 1000,
-					"height": 1000
-				}
-			]
-		},
-		{
-			"ENG_name": "Mace of Smiting",
-			"name": "打击之锤",
-			"source": "DMG",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/DMG/Mace of Smiting.webp"
-					},
-					"width": 674,
-					"height": 1022
-				}
-			]
-		},
-		{
-			"ENG_name": "Mace of Smiting",
-			"name": "打击之锤",
-			"source": "XDMG",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/XDMG/Mace of Smiting.webp"
-					},
-					"width": 674,
-					"height": 1022
-				}
-			]
-		},
-		{
-			"ENG_name": "Mace of Terror",
-			"name": "恐惧之锤",
-			"source": "DMG",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/DMG/Mace of Terror.webp"
-					},
-					"width": 576,
-					"height": 1000
+					"height": 898,
+					"credit": "Swatches Studio"
 				}
 			]
 		},
@@ -7560,9 +7607,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Mace of Terror.webp"
+						"path": "items/VRGR/Nepenthe.webp"
 					},
-					"width": 576,
+					"width": 639,
 					"height": 1000
 				}
 			]
@@ -7576,11 +7623,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/EGW/Mace of the Black Crown.webp"
+						"path": "items/XPHB/Net.webp"
 					},
-					"width": 230,
-					"height": 1000,
-					"credit": "Irina Nordsol"
+					"width": 850,
+					"height": 809,
+					"credit": "Polar Engine"
 				}
 			]
 		},
@@ -7623,10 +7670,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Mantle of Spell Resistance.webp"
+						"path": "items/DMG/Nine Lives Stealer.webp"
 					},
-					"width": 850,
-					"height": 826
+					"width": 1700,
+					"height": 394,
+					"title": "Nine Lives Stealer (Greatsword)"
 				}
 			]
 		},
@@ -7639,10 +7687,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Mantle of Spell Resistance.webp"
+						"path": "items/XDMG/Nine Lives Stealer.webp"
 					},
-					"width": 850,
-					"height": 826
+					"width": 1700,
+					"height": 394,
+					"title": "Nine Lives Stealer (Greatsword)"
 				}
 			]
 		},
@@ -7655,10 +7704,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Manual of Bodily Health.webp"
+						"path": "items/DMG/Nolzur's Marvelous Pigments.webp"
 					},
 					"width": 1000,
-					"height": 1000
+					"height": 930
 				}
 			]
 		},
@@ -7671,10 +7720,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Manual of Bodily Health.webp"
+						"path": "items/XDMG/Nolzurs Marvelous Pigments.webp"
 					},
 					"width": 1000,
-					"height": 1000
+					"height": 930
 				}
 			]
 		},
@@ -7687,10 +7736,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Manual of Clay Golems.webp"
+						"path": "items/DMG/Oathbow.webp"
 					},
-					"width": 789,
-					"height": 850
+					"width": 1000,
+					"height": 999
 				}
 			]
 		},
@@ -7703,10 +7752,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Manual of Clay Golems.webp"
+						"path": "items/XDMG/Oathbow.webp"
 					},
-					"width": 789,
-					"height": 850
+					"width": 1000,
+					"height": 999
 				}
 			]
 		},
@@ -7719,10 +7768,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Manual of Flesh Golems.webp"
+						"path": "items/DMG/Oil of Etherealness.webp"
 					},
-					"width": 850,
-					"height": 471
+					"width": 879,
+					"height": 1000
 				}
 			]
 		},
@@ -7735,10 +7784,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Manual of Flesh Golems.webp"
+						"path": "items/XDMG/Oil of Etherealness.webp"
 					},
-					"width": 850,
-					"height": 471
+					"width": 879,
+					"height": 1000
 				}
 			]
 		},
@@ -7751,10 +7800,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Manual of Golems.webp"
+						"path": "items/DMG/Oil of Sharpness.webp"
 					},
-					"width": 850,
-					"height": 618
+					"width": 1000,
+					"height": 981
 				}
 			]
 		},
@@ -7767,10 +7816,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Manual of Golems.webp"
+						"path": "items/XDMG/Oil of Sharpness.webp"
 					},
-					"width": 850,
-					"height": 618
+					"width": 1000,
+					"height": 981
 				}
 			]
 		},
@@ -7783,10 +7832,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Manual of Iron Golems.webp"
+						"path": "items/DMG/Oil of Slipperiness.webp"
 					},
-					"width": 850,
-					"height": 535
+					"width": 556,
+					"height": 1000
 				}
 			]
 		},
@@ -7799,10 +7848,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Manual of Iron Golems.webp"
+						"path": "items/XDMG/Oil of Slipperiness.webp"
 					},
-					"width": 850,
-					"height": 535
+					"width": 556,
+					"height": 1000
 				}
 			]
 		},
@@ -7815,9 +7864,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Manual of Quickness of Action.webp"
+						"path": "items/XDMG/Orb of Direction.webp"
 					},
-					"width": 1000,
+					"width": 769,
 					"height": 1000
 				}
 			]
@@ -7831,10 +7880,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Manual of Quickness of Action.webp"
+						"path": "items/XGE/Orb of Direction.webp"
 					},
-					"width": 1000,
-					"height": 1000
+					"width": 850,
+					"height": 1081,
+					"credit": "Irina Nordsol"
 				}
 			]
 		},
@@ -7847,10 +7897,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Manual of Stone Golems.webp"
+						"path": "items/DMG/Orb of Dragonkind.webp"
 					},
-					"width": 850,
-					"height": 618
+					"width": 315,
+					"height": 315
 				}
 			]
 		},
@@ -7863,10 +7913,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Manual of Stone Golems.webp"
+						"path": "items/XDMG/Orb of Dragonkind.webp"
 					},
-					"width": 850,
-					"height": 618
+					"width": 1000,
+					"height": 654
 				}
 			]
 		},
@@ -7879,7 +7929,7 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Mariners Armor.webp"
+						"path": "items/XDMG/Orb of Time.webp"
 					},
 					"width": 488,
 					"height": 1084,
@@ -7896,10 +7946,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/ToA/Mask of the Beast.webp"
+						"path": "items/CM/Orcus Figurine.webp"
 					},
-					"width": 827,
-					"height": 1000
+					"width": 850,
+					"height": 1544,
+					"credit": "Christopher Burdett"
 				}
 			]
 		},
@@ -7912,10 +7963,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/RoT/Mask of the Dragon Queen.webp"
+						"path": "items/WBtW/Ornithopter of Flying.webp"
 					},
 					"width": 850,
-					"height": 1681
+					"height": 1133,
+					"credit": "Matt Stewart"
 				}
 			]
 		},
@@ -7928,7 +7980,7 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/AUD/Masqueraders Brooch.webp"
+						"path": "items/AI/Orrery of the Wanderer.webp"
 					},
 					"width": 850,
 					"height": 866,
@@ -7946,11 +7998,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/MOT/Mastix, Whip of Erebos.webp"
+						"path": "items/GGR/Orzhov Guild Signet.webp"
 					},
-					"width": 1000,
-					"height": 1000,
-					"credit": "Yeong-Hao Han"
+					"width": 640,
+					"height": 461,
+					"credit": "Martina Pilcerova"
 				}
 			]
 		},
@@ -7963,10 +8015,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/BGDIA/Matalotok.webp"
+						"path": "items/GGR/Orzhov Keyrune.webp"
 					},
-					"width": 903,
-					"height": 1000
+					"width": 600,
+					"height": 439,
+					"credit": "Daniel Ljunggren"
 				}
 			]
 		},
@@ -7979,10 +8032,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XPHB/Maul.webp"
+						"path": "items/XPHB/Padded Armor.webp"
 					},
-					"width": 651,
-					"height": 184,
+					"width": 358,
+					"height": 393,
 					"credit": "Polar Engine"
 				}
 			]
@@ -7999,7 +8052,7 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/FRAiF/Mechanical Wonder.webp"
+						"path": "items/WDH/Paper Bird.webp"
 					},
 					"width": 850,
 					"height": 908,
@@ -8057,11 +8110,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/CRCotN/Medal of the Maze.webp"
+						"path": "items/GGR/Pariah's Shield.webp"
 					},
-					"width": 695,
-					"height": 850,
-					"credit": "CoupleOfKooks"
+					"width": 417,
+					"height": 305,
+					"credit": "Doug Chaffee"
 				}
 			]
 		},
@@ -8074,10 +8127,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Medallion of Thoughts.webp"
+						"path": "items/DMG/Pearl of Power.webp"
 					},
-					"width": 430,
-					"height": 850
+					"width": 767,
+					"height": 1000
 				}
 			]
 		},
@@ -8090,10 +8143,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Medallion of Thoughts.webp"
+						"path": "items/XDMG/Pearl of Power.webp"
 					},
-					"width": 430,
-					"height": 850
+					"width": 767,
+					"height": 1000
 				}
 			]
 		},
@@ -8106,11 +8159,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/TCE/Mighty Servant of Leuk-o.webp"
+						"path": "items/GGR/Peregrine Mask.webp"
 					},
-					"width": 915,
-					"height": 1000,
-					"credit": "David Sladek"
+					"width": 616,
+					"height": 452,
+					"credit": "Edward P. Beard, Jr."
 				}
 			]
 		},
@@ -8123,11 +8176,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/SatO/Mimir.webp"
+						"path": "items/XDMG/Perfume of Bewitching.webp"
 					},
-					"width": 772,
-					"height": 1000,
-					"credit": "CoupleOfKooks"
+					"width": 635,
+					"height": 1000
 				}
 			]
 		},
@@ -8140,10 +8192,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/PaBTSO/Mind Crystal.webp"
+						"path": "items/DMG/Periapt of Health.webp"
 					},
-					"width": 1000,
-					"height": 542
+					"width": 368,
+					"height": 1000
 				}
 			]
 		},
@@ -8226,10 +8278,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/PaBTSO/Mindguard Crown.webp"
+						"path": "items/XDMG/Periapt of Health.webp"
 					},
-					"width": 1000,
-					"height": 819
+					"width": 368,
+					"height": 1000
 				}
 			]
 		},
@@ -8242,9 +8294,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Mirror of Life Trapping.webp"
+						"path": "items/DMG/Periapt of Proof against Poison.webp"
 					},
-					"width": 446,
+					"width": 899,
 					"height": 1000
 				}
 			]
@@ -8258,9 +8310,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Mirror of Life Trapping.webp"
+						"path": "items/XDMG/Periapt of Proof against Poison.webp"
 					},
-					"width": 446,
+					"width": 899,
 					"height": 1000
 				}
 			]
@@ -8274,11 +8326,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/GGR/Mizzium Apparatus.webp"
+						"path": "items/XDMG/Periapt of Wound Closure.webp"
 					},
-					"width": 315,
-					"height": 223,
-					"credit": "Terese Nielsen"
+					"width": 686,
+					"height": 1000
 				}
 			]
 		},
@@ -8294,11 +8345,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/FRHoF/Monster Camouflage.webp"
+						"path": "items/DMG/Philter of Love.webp"
 					},
-					"width": 650,
-					"height": 979,
-					"credit": "Polar Engine"
+					"width": 712,
+					"height": 1000
 				}
 			]
 		},
@@ -8311,11 +8361,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/GGR/Moodmark Paint.webp"
+						"path": "items/XDMG/Philter of Love.webp"
 					},
-					"width": 315,
-					"height": 230,
-					"credit": "Scott Murphy"
+					"width": 712,
+					"height": 1000
 				}
 			]
 		},
@@ -8328,11 +8377,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "decks/BMT/Deck of Many Things/11-moon.webp"
+						"path": "items/XPHB/Pike.webp"
 					},
-					"width": 850,
-					"height": 1552,
-					"credit": "Vallez Gax"
+					"width": 114,
+					"height": 1090,
+					"credit": "Polar Engine"
 				}
 			]
 		},
@@ -8345,7 +8394,7 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Moon-Touched Sword.webp"
+						"path": "items/XDMG/Pipe of Smoke Monsters.webp"
 					},
 					"width": 850,
 					"height": 226,
@@ -8362,7 +8411,7 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Moonblade.webp"
+						"path": "items/XGE/Pipe of Smoke Monsters.webp"
 					},
 					"width": 1000,
 					"height": 517,
@@ -8379,7 +8428,7 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Moonblade.webp"
+						"path": "items/DMG/Pipes of Haunting.webp"
 					},
 					"width": 1000,
 					"height": 517,
@@ -8396,11 +8445,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XPHB/Morningstar.webp"
+						"path": "items/XDMG/Pipes of Haunting.webp"
 					},
-					"width": 136,
-					"height": 449,
-					"credit": "Polar Engine"
+					"width": 824,
+					"height": 1000
 				}
 			]
 		},
@@ -8413,10 +8461,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/PaBTSO/Mudslick Tower.webp"
+						"path": "items/WttHC/Pipes of Pestilence.webp"
 					},
-					"width": 779,
-					"height": 1000
+					"width": 999,
+					"height": 952
 				}
 			]
 		},
@@ -8432,7 +8480,7 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/FRHoF/Musical Instrument.webp"
+						"path": "items/DMG/Pipes of the Sewers.webp"
 					},
 					"width": 850,
 					"height": 599,
@@ -8450,11 +8498,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XPHB/Musket.webp"
+						"path": "items/XDMG/Pipes of the Sewers.webp"
 					},
-					"width": 1072,
-					"height": 174,
-					"credit": "Polar Engine"
+					"width": 1000,
+					"height": 887
 				}
 			]
 		},
@@ -8467,11 +8514,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DSotDQ/Narycrash.webp"
+						"path": "items/XPHB/Pistol.webp"
 					},
-					"width": 850,
-					"height": 936,
-					"credit": "Kent Davis"
+					"width": 440,
+					"height": 145,
+					"credit": "Polar Engine"
 				}
 			]
 		},
@@ -8484,11 +8531,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/TCE/Nature's Mantle.webp"
+						"path": "items/OotA/Piwafwi (Cloak of Elvenkind).webp"
 					},
-					"width": 698,
-					"height": 1000,
-					"credit": "Brian Valeza"
+					"width": 700,
+					"height": 1000
 				}
 			]
 		},
@@ -8501,10 +8547,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Natures Mantle.webp"
+						"path": "items/XPHB/Plate Armor.webp"
 					},
-					"width": 698,
-					"height": 1000
+					"width": 439,
+					"height": 1078,
+					"credit": "Polar Engine"
 				}
 			]
 		},
@@ -8517,10 +8564,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Necklace of Adaptation.webp"
+						"path": "items/DMG/Plate Armor of Etherealness.webp"
 					},
-					"width": 624,
-					"height": 850
+					"width": 774,
+					"height": 1000
 				}
 			]
 		},
@@ -8533,10 +8580,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Necklace of Adaptation.webp"
+						"path": "items/XDMG/Plate Armor of Etherealness.webp"
 					},
-					"width": 624,
-					"height": 850
+					"width": 774,
+					"height": 1000
 				}
 			]
 		},
@@ -8549,10 +8596,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Necklace of Fireballs.webp"
+						"path": "items/PHB/Platinum (pp).webp"
 					},
-					"width": 630,
-					"height": 1000
+					"width": 209,
+					"height": 209
 				}
 			]
 		},
@@ -8565,10 +8612,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Necklace of Fireballs.webp"
+						"path": "items/WttHC/Poison Soaked Kukri.webp"
 					},
-					"width": 630,
-					"height": 1000
+					"width": 1000,
+					"height": 967
 				}
 			]
 		},
@@ -8581,9 +8628,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Necklace of Prayer Beads.webp"
+						"path": "items/XDMG/Pole of Angling.webp"
 					},
-					"width": 731,
+					"width": 743,
 					"height": 1000
 				}
 			]
@@ -8597,10 +8644,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Necklace of Prayer Beads.webp"
+						"path": "items/XDMG/Pole of Collapsing.webp"
 					},
-					"width": 731,
-					"height": 1000
+					"width": 414,
+					"height": 999
 				}
 			]
 		},
@@ -8613,7 +8660,7 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/AU/Necklace of the Beastly Familiar.webp"
+						"path": "items/XGE/Pole of Collapsing.webp"
 					},
 					"width": 1700,
 					"height": 1100,
@@ -8691,10 +8738,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/VRGR/Nepenthe.webp"
+						"path": "items/SatO/Portal Compass.webp"
 					},
-					"width": 639,
-					"height": 1000
+					"width": 782,
+					"height": 1000,
+					"credit": "CoupleOfKooks"
 				}
 			]
 		},
@@ -8707,11 +8755,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XPHB/Net.webp"
+						"path": "items/XDMG/Pot of Awakening.webp"
 					},
-					"width": 850,
-					"height": 809,
-					"credit": "Polar Engine"
+					"width": 893,
+					"height": 1000
 				}
 			]
 		},
@@ -8724,7 +8771,7 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Nine Lives Stealer.webp"
+						"path": "items/DMG/Potion of Animal Friendship.webp"
 					},
 					"width": 1700,
 					"height": 394,
@@ -8741,7 +8788,7 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Nine Lives Stealer.webp"
+						"path": "items/XDMG/Potion of Animal Friendship.webp"
 					},
 					"width": 1700,
 					"height": 394,
@@ -8758,10 +8805,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Nolzur's Marvelous Pigments.webp"
+						"path": "items/DMG/Potion of Clairvoyance.webp"
 					},
-					"width": 1000,
-					"height": 930
+					"width": 586,
+					"height": 1000
 				}
 			]
 		},
@@ -8774,10 +8821,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Nolzurs Marvelous Pigments.webp"
+						"path": "items/XDMG/Potion of Clairvoyance.webp"
 					},
-					"width": 1000,
-					"height": 930
+					"width": 586,
+					"height": 1000
 				}
 			]
 		},
@@ -8790,10 +8837,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Oathbow.webp"
+						"path": "items/XDMG/Potion of Climbing.webp"
 					},
-					"width": 1000,
-					"height": 999
+					"width": 490,
+					"height": 778,
+					"credit": "Conceptopolis"
 				}
 			]
 		},
@@ -8806,10 +8854,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Oathbow.webp"
+						"path": "items/DMG/Potion of Cloud Giant Strength.webp"
 					},
-					"width": 1000,
-					"height": 999
+					"width": 727,
+					"height": 1000
 				}
 			]
 		},
@@ -8822,11 +8870,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/AI/occultant-abacus.webp"
+						"path": "items/XDMG/Potion of Cloud Giant Strength.webp"
 					},
-					"width": 858,
-					"height": 1000,
-					"credit": "Chris Walton"
+					"width": 727,
+					"height": 1000
 				}
 			]
 		},
@@ -8849,9 +8896,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Orb of Direction.webp"
+						"path": "items/XDMG/Potion of Comprehension.webp"
 					},
-					"width": 769,
+					"width": 611,
 					"height": 1000
 				}
 			]
@@ -8865,11 +8912,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XGE/Orb of Direction.webp"
+						"path": "items/DMG/Potion of Diminution.webp"
 					},
-					"width": 850,
-					"height": 1081,
-					"credit": "Irina Nordsol"
+					"width": 1000,
+					"height": 722
 				}
 			]
 		},
@@ -8882,10 +8928,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Orb of Dragonkind.webp"
+						"path": "items/XDMG/Potion of Diminution.webp"
 					},
-					"width": 315,
-					"height": 315
+					"width": 1000,
+					"height": 722
 				}
 			]
 		},
@@ -8898,10 +8944,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Orb of Dragonkind.webp"
+						"path": "items/XDMG/Potion of Fire Breath.webp"
 					},
-					"width": 1000,
-					"height": 654
+					"width": 444,
+					"height": 734,
+					"credit": "Conceptopolis"
 				}
 			]
 		},
@@ -8914,11 +8961,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/CM/Orcus Figurine.webp"
+						"path": "items/DMG/Potion of Flying.webp"
 					},
-					"width": 850,
-					"height": 1544,
-					"credit": "Christopher Burdett"
+					"width": 511,
+					"height": 1000
 				}
 			]
 		},
@@ -8931,11 +8977,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/WBtW/Ornithopter of Flying.webp"
+						"path": "items/XDMG/Potion of Flying.webp"
 					},
-					"width": 850,
-					"height": 1133,
-					"credit": "Matt Stewart"
+					"width": 511,
+					"height": 1000
 				}
 			]
 		},
@@ -8948,11 +8993,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/AI/Orrery of the Wanderer.webp"
+						"path": "items/DMG/Potion of Frost Giant Strength.webp"
 					},
-					"width": 792,
-					"height": 1000,
-					"credit": "Nicholas Kay"
+					"width": 1000,
+					"height": 722
 				}
 			]
 		},
@@ -8965,11 +9009,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/GGR/Orzhov Guild Signet.webp"
+						"path": "items/XDMG/Potion of Frost Giant Strength.webp"
 					},
-					"width": 640,
-					"height": 461,
-					"credit": "Martina Pilcerova"
+					"width": 1000,
+					"height": 722
 				}
 			]
 		},
@@ -8982,11 +9025,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/GGR/Orzhov Keyrune.webp"
+						"path": "items/DMG/Potion of Gaseous Form.webp"
 					},
-					"width": 600,
-					"height": 439,
-					"credit": "Daniel Ljunggren"
+					"width": 699,
+					"height": 1000
 				}
 			]
 		},
@@ -8999,11 +9041,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XPHB/Padded Armor.webp"
+						"path": "items/XDMG/Potion of Gaseous Form.webp"
 					},
-					"width": 358,
-					"height": 393,
-					"credit": "Polar Engine"
+					"width": 699,
+					"height": 1000
 				}
 			]
 		},
@@ -9016,9 +9057,9 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/WDH/Paper Bird.webp"
+						"path": "items/DMG/Potion of Giant Strength.webp"
 					},
-					"width": 791,
+					"width": 539,
 					"height": 1000
 				}
 			]
@@ -9042,11 +9083,11 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/GGR/Pariah's Shield.webp"
+						"path": "items/XDMG/Potion of Greater Healing.webp"
 					},
-					"width": 417,
-					"height": 305,
-					"credit": "Doug Chaffee"
+					"width": 850,
+					"height": 1027,
+					"credit": "CoupleOfKooks"
 				}
 			]
 		},
@@ -9059,411 +9100,49 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/GGR/Peregrine Mask.webp"
-					},
-					"width": 616,
-					"height": 452,
-					"credit": "Edward P. Beard, Jr."
-				}
-			]
-		},
-		{
-			"ENG_name": "Periapt of Health",
-			"name": "保健护符",
-			"source": "DMG",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/DMG/Periapt of Health.webp"
-					},
-					"width": 368,
-					"height": 1000
-				}
-			]
-		},
-		{
-			"ENG_name": "Periapt of Health",
-			"name": "保健护符",
-			"source": "XDMG",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/XDMG/Periapt of Health.webp"
-					},
-					"width": 368,
-					"height": 1000
-				}
-			]
-		},
-		{
-			"ENG_name": "Periapt of Wound Closure",
-			"name": "愈合护符",
-			"source": "DMG",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/DMG/Periapt of Wound Closure.webp"
-					},
-					"width": 686,
-					"height": 1000
-				}
-			]
-		},
-		{
-			"ENG_name": "Periapt of Wound Closure",
-			"name": "愈合护符",
-			"source": "XDMG",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/XDMG/Periapt of Wound Closure.webp"
-					},
-					"width": 686,
-					"height": 1000
-				}
-			]
-		},
-		{
-			"ENG_name": "Pike",
-			"name": "长矛",
-			"source": "XPHB",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/XPHB/Pike.webp"
-					},
-					"width": 114,
-					"height": 1090,
-					"credit": "Polar Engine"
-				}
-			]
-		},
-		{
-			"ENG_name": "Pipe of Smoke Monsters",
-			"name": "怪物烟斗",
-			"source": "XDMG",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/XDMG/Pipe of Smoke Monsters.webp"
-					},
-					"width": 882,
-					"height": 1000
-				}
-			]
-		},
-		{
-			"ENG_name": "Pipe of Smoke Monsters",
-			"name": "怪物烟斗",
-			"source": "XGE",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/XGE/Pipe of Smoke Monsters.webp"
-					},
-					"width": 850,
-					"height": 964,
-					"credit": "David René Christensen"
-				}
-			]
-		},
-		{
-			"ENG_name": "Pipes of Haunting",
-			"name": "颤栗乐笙",
-			"source": "DMG",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/DMG/Pipes of Haunting.webp"
-					},
-					"width": 824,
-					"height": 1000
-				}
-			]
-		},
-		{
-			"ENG_name": "Pipes of Haunting",
-			"name": "颤栗乐笙",
-			"source": "XDMG",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/XDMG/Pipes of Haunting.webp"
-					},
-					"width": 824,
-					"height": 1000
-				}
-			]
-		},
-		{
-			"ENG_name": "Pipes of Pestilence",
-			"name": "瘟疫乐笙",
-			"source": "WttHC",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/WttHC/Pipes of Pestilence.webp"
-					},
-					"width": 999,
-					"height": 952
-				}
-			]
-		},
-		{
-			"ENG_name": "Pipes of the Sewers",
-			"name": "唤鼠乐笙",
-			"source": "DMG",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/DMG/Pipes of the Sewers.webp"
-					},
-					"width": 1000,
-					"height": 887
-				}
-			]
-		},
-		{
-			"ENG_name": "Pipes of the Sewers",
-			"name": "唤鼠乐笙",
-			"source": "XDMG",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/XDMG/Pipes of the Sewers.webp"
-					},
-					"width": 1000,
-					"height": 887
-				}
-			]
-		},
-		{
-			"ENG_name": "Pistol",
-			"name": "手枪",
-			"source": "XPHB",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/XPHB/Pistol.webp"
-					},
-					"width": 440,
-					"height": 145,
-					"credit": "Polar Engine"
-				}
-			]
-		},
-		{
-			"ENG_name": "Piwafwi (Cloak of Elvenkind)",
-			"name": "魔斗篷（精灵斗篷）",
-			"source": "OotA",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/OotA/Piwafwi (Cloak of Elvenkind).webp"
-					},
-					"width": 700,
-					"height": 1000
-				}
-			]
-		},
-		{
-			"ENG_name": "Plate Armor",
-			"name": "板甲",
-			"source": "XPHB",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/XPHB/Plate Armor.webp"
-					},
-					"width": 439,
-					"height": 1078,
-					"credit": "Polar Engine"
-				}
-			]
-		},
-		{
-			"ENG_name": "Platinum (pp)",
-			"name": "铂金币(pp)",
-			"source": "PHB",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/PHB/Platinum (pp).webp"
-					},
-					"width": 209,
-					"height": 209
-				}
-			]
-		},
-		{
-			"ENG_name": "Poison Soaked Kukri",
-			"name": "浸毒廓尔喀刀",
-			"source": "WttHC",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/WttHC/Poison Soaked Kukri.webp"
-					},
-					"width": 1000,
-					"height": 967
-				}
-			]
-		},
-		{
-			"ENG_name": "Pole of Collapsing",
-			"name": "压缩之杆",
-			"source": "XDMG",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/XDMG/Pole of Collapsing.webp"
-					},
-					"width": 414,
-					"height": 999
-				}
-			]
-		},
-		{
-			"ENG_name": "Pole of Collapsing",
-			"name": "压缩之杆",
-			"source": "XGE",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/XGE/Pole of Collapsing.webp"
-					},
-					"width": 850,
-					"height": 2044,
-					"credit": "Paul Scott Canavan"
-				}
-			]
-		},
-		{
-			"ENG_name": "Portal Compass",
-			"name": "传送门罗盘",
-			"source": "SatO",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/SatO/Portal Compass.webp"
-					},
-					"width": 782,
-					"height": 1000,
-					"credit": "CoupleOfKooks"
-				}
-			]
-		},
-		{
-			"ENG_name": "Potion of Climbing",
-			"name": "攀爬药水",
-			"source": "XDMG",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/XDMG/Potion of Climbing.webp"
-					},
-					"width": 490,
-					"height": 778,
-					"credit": "Conceptopolis"
-				}
-			]
-		},
-		{
-			"ENG_name": "Potion of Fire Breath",
-			"name": "火焰吐息药水",
-			"source": "XDMG",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/XDMG/Potion of Fire Breath.webp"
-					},
-					"width": 444,
-					"height": 734,
-					"credit": "Conceptopolis"
-				}
-			]
-		},
-		{
-			"ENG_name": "Potion of Greater Healing",
-			"name": "高等治疗药水",
-			"source": "XDMG",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/XDMG/Potion of Greater Healing.webp"
-					},
-					"width": 850,
-					"height": 1027,
-					"credit": "CoupleOfKooks"
-				}
-			]
-		},
-		{
-			"ENG_name": "Potion of Greater Invisibility",
-			"name": "高等隐形药水",
-			"source": "XDMG",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
 						"path": "items/XDMG/Potion of Greater Invisibility.webp"
 					},
-					"width": 353,
+					"width": 394,
 					"height": 1000
 				}
 			]
 		},
 		{
-			"ENG_name": "Potion of Healing",
-			"name": "治疗药水",
+			"ENG_name": "Periapt of Health",
+			"name": "保健护符",
+			"source": "DMG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/DMG/Potion of Growth.webp"
+					},
+					"width": 791,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Periapt of Health",
+			"name": "保健护符",
 			"source": "XDMG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/XDMG/Potion of Growth.webp"
+					},
+					"width": 791,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Periapt of Wound Closure",
+			"name": "愈合护符",
+			"source": "DMG",
 			"images": [
 				{
 					"type": "image",
@@ -9478,9 +9157,73 @@
 			]
 		},
 		{
-			"ENG_name": "Potion of Invisibility",
-			"name": "隐形药水",
+			"ENG_name": "Periapt of Wound Closure",
+			"name": "愈合护符",
 			"source": "XDMG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/DMG/Potion of Heroism.webp"
+					},
+					"width": 810,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Pike",
+			"name": "长矛",
+			"source": "XPHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/XDMG/Potion of Heroism.webp"
+					},
+					"width": 810,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Pipe of Smoke Monsters",
+			"name": "怪物烟斗",
+			"source": "XDMG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/DMG/Potion of Hill Giant Strength.webp"
+					},
+					"width": 693,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Pipe of Smoke Monsters",
+			"name": "怪物烟斗",
+			"source": "XGE",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/XDMG/Potion of Hill Giant Strength.webp"
+					},
+					"width": 693,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Pipes of Haunting",
+			"name": "颤栗乐笙",
+			"source": "DMG",
 			"images": [
 				{
 					"type": "image",
@@ -9494,9 +9237,137 @@
 			]
 		},
 		{
-			"ENG_name": "Potion of Polychromy",
-			"name": "彩绘药水",
-			"source": "DitLCoT",
+			"ENG_name": "Pipes of Haunting",
+			"name": "颤栗乐笙",
+			"source": "XDMG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/DMG/Potion of Invulnerability.webp"
+					},
+					"width": 773,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Pipes of Pestilence",
+			"name": "瘟疫乐笙",
+			"source": "WttHC",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/XDMG/Potion of Invulnerability.webp"
+					},
+					"width": 773,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Pipes of the Sewers",
+			"name": "唤鼠乐笙",
+			"source": "DMG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/DMG/Potion of Longevity.webp"
+					},
+					"width": 582,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Pipes of the Sewers",
+			"name": "唤鼠乐笙",
+			"source": "XDMG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/XDMG/Potion of Longevity.webp"
+					},
+					"width": 582,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Pistol",
+			"name": "手枪",
+			"source": "XPHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/DMG/Potion of Mind Reading.webp"
+					},
+					"width": 582,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Piwafwi (Cloak of Elvenkind)",
+			"name": "魔斗篷（精灵斗篷）",
+			"source": "OotA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/XDMG/Potion of Mind Reading.webp"
+					},
+					"width": 582,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Plate Armor",
+			"name": "板甲",
+			"source": "XPHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/DMG/Potion of Poison.webp"
+					},
+					"width": 569,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Platinum (pp)",
+			"name": "铂金币(pp)",
+			"source": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/XDMG/Potion of Poison.webp"
+					},
+					"width": 569,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Poison Soaked Kukri",
+			"name": "浸毒廓尔喀刀",
+			"source": "WttHC",
 			"images": [
 				{
 					"type": "image",
@@ -9510,8 +9381,8 @@
 			]
 		},
 		{
-			"ENG_name": "Potion of Pugilism",
-			"name": "重拳药水",
+			"ENG_name": "Pole of Collapsing",
+			"name": "压缩之杆",
 			"source": "XDMG",
 			"images": [
 				{
@@ -9526,8 +9397,104 @@
 			]
 		},
 		{
-			"ENG_name": "Potion of Storm Giant Strength",
-			"name": "风暴巨人之力药水",
+			"ENG_name": "Pole of Collapsing",
+			"name": "压缩之杆",
+			"source": "XGE",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/DMG/Potion of Resistance.webp"
+					},
+					"width": 450,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Portal Compass",
+			"name": "传送门罗盘",
+			"source": "SatO",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/XDMG/Potion of Resistance.webp"
+					},
+					"width": 450,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Potion of Climbing",
+			"name": "攀爬药水",
+			"source": "XDMG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/DMG/Potion of Speed.webp"
+					},
+					"width": 616,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Potion of Fire Breath",
+			"name": "火焰吐息药水",
+			"source": "XDMG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/XDMG/Potion of Speed.webp"
+					},
+					"width": 616,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Potion of Greater Healing",
+			"name": "高等治疗药水",
+			"source": "XDMG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/DMG/Potion of Stone Giant Strength.webp"
+					},
+					"width": 288,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Potion of Greater Invisibility",
+			"name": "高等隐形药水",
+			"source": "XDMG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/XDMG/Potion of Stone Giant Strength.webp"
+					},
+					"width": 288,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Potion of Healing",
+			"name": "治疗药水",
 			"source": "XDMG",
 			"images": [
 				{
@@ -9539,6 +9506,70 @@
 					"width": 540,
 					"height": 1003,
 					"credit": "Conceptopolis"
+				}
+			]
+		},
+		{
+			"ENG_name": "Potion of Invisibility",
+			"name": "隐形药水",
+			"source": "XDMG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/DMG/Potion of Superior Healing.webp"
+					},
+					"width": 580,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Potion of Polychromy",
+			"name": "彩绘药水",
+			"source": "DitLCoT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/XDMG/Potion of Superior Healing.webp"
+					},
+					"width": 580,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Potion of Pugilism",
+			"name": "重拳药水",
+			"source": "XDMG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/DMG/Potion of Supreme Healing.webp"
+					},
+					"width": 550,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Potion of Storm Giant Strength",
+			"name": "风暴巨人之力药水",
+			"source": "XDMG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/XDMG/Potion of Supreme Healing.webp"
+					},
+					"width": 550,
+					"height": 1000
 				}
 			]
 		},
@@ -9570,8 +9601,8 @@
 						"type": "internal",
 						"path": "items/DMG/Potion of Water Breathing.webp"
 					},
-					"width": 539,
-					"height": 850,
+					"width": 639,
+					"height": 1000,
 					"credit": "CoupleOfKooks"
 				}
 			]
@@ -9788,6 +9819,15 @@
 					"height": 966,
 					"title": "夸尔羽符（鞭子、锚、鸟、天鹅船、扇、古树）",
 					"credit": "Conceptopolis"
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/DMG/Quaal's Feather Token 1.webp"
+					},
+					"width": 953,
+					"height": 1000
 				}
 			]
 		},
@@ -9806,6 +9846,15 @@
 					"height": 966,
 					"title": "夸尔羽符（鞭子、锚、鸟、天鹅船、扇、古树）",
 					"credit": "Conceptopolis"
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/XDMG/Quaal's Feather Token.webp"
+					},
+					"width": 953,
+					"height": 1000
 				}
 			]
 		},
@@ -10567,6 +10616,21 @@
 			]
 		},
 		{
+			"name": "Ring of Resistance",
+			"source": "DMG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/DMG/Ring of Resistance.webp"
+					},
+					"width": 832,
+					"height": 1024
+				}
+			]
+		},
+		{
 			"ENG_name": "Ring of Resistance",
 			"name": "抗性戒指",
 			"source": "DMG",
@@ -10575,7 +10639,7 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Ring of Resistance.webp"
+						"path": "items/XDMG/Ring of Resistance.webp"
 					},
 					"width": 832,
 					"height": 1024
@@ -10801,8 +10865,8 @@
 						"type": "internal",
 						"path": "items/DMG/Ring of Warmth.webp"
 					},
-					"width": 850,
-					"height": 1179
+					"width": 723,
+					"height": 1000
 				}
 			]
 		},
@@ -11524,8 +11588,8 @@
 						"type": "internal",
 						"path": "items/XDMG/Scimitar of Speed.webp"
 					},
-					"width": 1225,
-					"height": 924
+					"width": 804,
+					"height": 1000
 				}
 			]
 		},
@@ -11781,10 +11845,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/DMG/Sending Stones.webp"
+						"path": "items/DMG/Sentinel Shield.webp"
 					},
-					"width": 315,
-					"height": 315
+					"width": 932,
+					"height": 1000
 				}
 			]
 		},
@@ -11797,10 +11861,10 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/XDMG/Sending Stones.webp"
+						"path": "items/XDMG/Sentinel Shield.webp"
 					},
-					"width": 1000,
-					"height": 617
+					"width": 932,
+					"height": 1000
 				}
 			]
 		},
@@ -14499,8 +14563,8 @@
 						"type": "internal",
 						"path": "items/DMG/Wand of Magic Missiles.webp"
 					},
-					"width": 800,
-					"height": 450,
+					"width": 730,
+					"height": 505,
 					"credit": "Conceptopolis"
 				}
 			]
@@ -15037,8 +15101,8 @@
 						"type": "internal",
 						"path": "items/DMG/Winged Boots.webp"
 					},
-					"width": 777,
-					"height": 600,
+					"width": 1000,
+					"height": 746,
 					"credit": "Conceptopolis"
 				}
 			]

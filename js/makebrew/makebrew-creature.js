@@ -59,8 +59,8 @@ class _CreatureBuilder_SpellMetaInputRendererFrequency extends _CreatureBuilder_
 		out.ele = veT`<div class="ve-flex mkbru_mon__spell-header-wrp ve-mr-4">
 		${iptFreq}
 		${this._getPtChargesItem({out})}
-		<span class="ve-mr-2 ve-italic">${this._meta.rowFreqUnit}</span>
-		<label class="ve-flex-v-baseline ve-muted small ve-ml-auto"><span class="ve-mr-1">(Each? </span>${cbEach}<span>)</span></label>
+		<span class="ve-mr-2">${this._meta.rowFreqUnit}</span>
+		<label class="ve-flex-v-baseline">${cbEach}<span class="ve-ml-1">Each</span></label>
 		</div>`;
 
 		out.getKeyPath = () => [this._meta.type, `${UiUtil.strToInt(iptFreq.vee.val(), 1, {fallbackOnNaN: 1, min: 1, max: VeCt.SPELL_USES_MAX})}${cbEach.vee.prop("checked") ? "e" : ""}`];
@@ -127,7 +127,7 @@ class _CreatureBuilder_SpellMetaInputRendererLevel extends _CreatureBuilder_Spel
 		<div class="ve-italic">${Parser.spLevelToFull(this._meta.level)}环法术</div>
 		<div class="ve-flex-v-center ve-muted small ve-ml-auto"><span>(</span>${iptSlots}<span class="ve-mr-2">法术位</span></div>
 		<div class="mkbru_mon__spell-header-divider ve-mr-2"></div>
-		<label class="ve-flex-v-center ve-muted small"><span class="ve-mr-1">邪术师？</span>${cbWarlock}<span>)</span></label>
+		<label class="ve-flex-v-center ve-muted small">${cbWarlock}<span class="ve-ml-1">邪术师？</span><span>)</span></label>
 		</div>`;
 		out.getKeyPath = () => ["spells", `${this._meta.level}`, "spells"];
 		out.getAdditionalData = () => {
@@ -460,7 +460,7 @@ export class CreatureBuilder extends BuilderBase {
 			this.addField("cn");
 			this.setRef("id");
 		});
-		SearchUtil.removeStemmer(this._indexedTraits);
+		SearchUtil.initSearchIndex(this._indexedTraits);
 		this._jsonCreatureTraits.forEach((it, i) => this._indexedTraits.addDoc({
 			n: it.name,
 			id: i,
@@ -525,7 +525,7 @@ export class CreatureBuilder extends BuilderBase {
 			this.addField("cn");
 			this.setRef("id");
 		});
-		SearchUtil.removeStemmer(this._indexedActions);
+		SearchUtil.initSearchIndex(this._indexedActions);
 		this._jsonCreatureActions.forEach((it, i) => this._indexedActions.addDoc({
 			n: it.name,
 			id: i,
@@ -1100,8 +1100,8 @@ export class CreatureBuilder extends BuilderBase {
 			${selType}
 			${iptTypeCustom}
 			<label class="ve-flex-v-center ve-mr-2">
-				<span class="ve-mr-2">自定义</span>
 				${cbIsCustomType}
+				<span class="ve-ml-2">自定义</span>
 			</label>
 			${btnRemove}
 		</div>`;
@@ -1201,7 +1201,7 @@ export class CreatureBuilder extends BuilderBase {
 		const cbFullName = veT`<input type="checkbox">`
 			.vee.onn("change", () => setState(1))
 			.vee.prop("checked", this._state.shortName === true);
-		const stageMatchesName = veT`<label class="ve-flex-v-center"><div class="ve-mr-2">启用</div>${cbFullName}</label>`
+		const stageMatchesName = veT`<label class="ve-flex-v-center">${cbFullName}<div class="ve-ml-2">启用</div></label>`
 			.vee.toggle(initialMode === "1")
 			.vee.appendTo(rowInner);
 
@@ -3314,13 +3314,13 @@ export class CreatureBuilder extends BuilderBase {
 								veT`<div class="ve-flex-col">
 								<div class="ve-flex-v-center ve-mb-2">
 									${iptName}
-									<label class="ve-flex-v-center ve-mr-2"><span class="ve-mr-2">近</span>${cbMelee}</label>
-									<label class="ve-flex-v-center"><span class="ve-mr-2">远</span>${cbRanged}</label>
+									<label class="ve-flex-v-center ve-mr-2">${cbMelee}<span class="ve-ml-2">近</span></label>
+									<label class="ve-flex-v-center">${cbRanged}<span class="ve-ml-2">远</span></label>
 								</div>
 								<div class="ve-flex-v-center">
-									<label class="ve-flex-v-center ve-mr-2"><span class="ve-mr-2">灵巧</span>${cbFinesse}</label>
-									<label class="ve-flex-v-center ve-mr-2"><span class="ve-mr-2">两用</span>${cbVersatile}</label>
-									<label class="ve-flex-v-center"><span class="ve-mr-2">额外伤害</span>${cbBonusDamage}</label>
+									<label class="ve-flex-v-center ve-mr-2">${cbFinesse}<span class="ve-ml-2">灵巧</span></label>
+									<label class="ve-flex-v-center ve-mr-2">${cbVersatile}<span class="ve-ml-2">两用</span></label>
+									<label class="ve-flex-v-center">${cbBonusDamage}<span class="ve-ml-2">额外伤害</span></label>
 								</div>
 								${stageMelee}
 								${stageRanged}

@@ -294,7 +294,7 @@ class Board {
 				this.addField("h");
 				this.setRef("id");
 			});
-			SearchUtil.removeStemmer(this.availRules.ALL);
+			SearchUtil.initSearchIndex(this.availRules.ALL);
 
 			data.data.forEach(d => {
 				d.n = data._meta.name[d.b];
@@ -377,7 +377,7 @@ class Board {
 			this.addField("o");
 			this.setRef("id");
 		});
-		SearchUtil.removeStemmer(indexStorage.ALL);
+		SearchUtil.initSearchIndex(indexStorage.ALL);
 
 		let bookOrAdventureId = 0;
 		const handleAdventureOrBook = (adventureOrBook, isBrew) => {
@@ -394,7 +394,7 @@ class Board {
 				this.addField("o");
 				this.setRef("id");
 			});
-			SearchUtil.removeStemmer(indexStorage[adventureOrBook.id]);
+			SearchUtil.initSearchIndex(indexStorage[adventureOrBook.id]);
 
 			adventureOrBook.contents.forEach((chap, i) => {
 				const chapDoc = {

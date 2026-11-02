@@ -122,7 +122,14 @@
 					},
 					"effects": [
 						{
-							"foundryId": "arcanePropulsion"
+							"foundryId": "arcanePropulsion",
+							"riders": {
+								"effect": [
+									{
+										"foundryId": "arPropulsionRide"
+									}
+								]
+							}
 						}
 					]
 				}
@@ -1825,7 +1832,14 @@
 					},
 					"effects": [
 						{
-							"foundryId": "enhancedArcaneFo"
+							"foundryId": "enhancedArcaneFo",
+							"riders": {
+								"effect": [
+									{
+										"foundryId": "arcaneFocusRide1"
+									}
+								]
+							}
 						}
 					]
 				},
@@ -1841,7 +1855,14 @@
 					},
 					"effects": [
 						{
-							"foundryId": "enhancedArcaneF2"
+							"foundryId": "enhancedArcaneF2",
+							"riders": {
+								"effect": [
+									{
+										"foundryId": "arcaneFocusRide2"
+									}
+								]
+							}
 						}
 					]
 				}
@@ -5043,7 +5064,14 @@
 					},
 					"effects": [
 						{
-							"foundryId": "arResistanceAcid"
+							"foundryId": "arResistanceAcid",
+							"riders": {
+								"effect": [
+									{
+										"foundryId": "arRiderAcid"
+									}
+								]
+							}
 						}
 					]
 				},
@@ -5059,7 +5087,14 @@
 					},
 					"effects": [
 						{
-							"foundryId": "arResistanceCold"
+							"foundryId": "arResistanceCold",
+							"riders": {
+								"effect": [
+									{
+										"foundryId": "arRiderCold"
+									}
+								]
+							}
 						}
 					]
 				},
@@ -5075,7 +5110,14 @@
 					},
 					"effects": [
 						{
-							"foundryId": "arResistanceFire"
+							"foundryId": "arResistanceFire",
+							"riders": {
+								"effect": [
+									{
+										"foundryId": "arRiderFire"
+									}
+								]
+							}
 						}
 					]
 				},
@@ -5091,7 +5133,14 @@
 					},
 					"effects": [
 						{
-							"foundryId": "arResistanceForc"
+							"foundryId": "arResistanceForc",
+							"riders": {
+								"effect": [
+									{
+										"foundryId": "arRiderForce"
+									}
+								]
+							}
 						}
 					]
 				},
@@ -5107,7 +5156,14 @@
 					},
 					"effects": [
 						{
-							"foundryId": "arResistanceLigh"
+							"foundryId": "arResistanceLigh",
+							"riders": {
+								"effect": [
+									{
+										"foundryId": "arRiderLightning"
+									}
+								]
+							}
 						}
 					]
 				},
@@ -5123,7 +5179,14 @@
 					},
 					"effects": [
 						{
-							"foundryId": "arResistanceNecr"
+							"foundryId": "arResistanceNecr",
+							"riders": {
+								"effect": [
+									{
+										"foundryId": "arRiderNecrotic"
+									}
+								]
+							}
 						}
 					]
 				},
@@ -5139,7 +5202,14 @@
 					},
 					"effects": [
 						{
-							"foundryId": "arResistancePois"
+							"foundryId": "arResistancePois",
+							"riders": {
+								"effect": [
+									{
+										"foundryId": "arRiderPoison"
+									}
+								]
+							}
 						}
 					]
 				},
@@ -5155,7 +5225,14 @@
 					},
 					"effects": [
 						{
-							"foundryId": "arResistancePsyc"
+							"foundryId": "arResistancePsyc",
+							"riders": {
+								"effect": [
+									{
+										"foundryId": "arRiderPsychic"
+									}
+								]
+							}
 						}
 					]
 				},
@@ -5171,7 +5248,14 @@
 					},
 					"effects": [
 						{
-							"foundryId": "arResistanceRadi"
+							"foundryId": "arResistanceRadi",
+							"riders": {
+								"effect": [
+									{
+										"foundryId": "arRiderRadiant"
+									}
+								]
+							}
 						}
 					]
 				},
@@ -5187,7 +5271,14 @@
 					},
 					"effects": [
 						{
-							"foundryId": "arResistanceThun"
+							"foundryId": "arResistanceThun",
+							"riders": {
+								"effect": [
+									{
+										"foundryId": "arRiderThunder"
+									}
+								]
+							}
 						}
 					]
 				}

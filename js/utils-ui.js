@@ -1825,7 +1825,7 @@ class SearchUiUtil {
 			this.addField("s");
 			this.setRef("id");
 		});
-		SearchUtil.removeStemmer(availContent.ALL);
+		SearchUtil.initSearchIndex(availContent.ALL);
 
 		// Add main site index
 		let ixMax = 0;
@@ -1840,7 +1840,7 @@ class SearchUiUtil {
 					this.addField("s");
 					this.setRef("id");
 				});
-				SearchUtil.removeStemmer(availContent[doc.cf]);
+				SearchUtil.initSearchIndex(availContent[doc.cf]);
 			}
 		};
 
@@ -2665,6 +2665,7 @@ class SearchWidget {
 			this.addField("s");
 			this.setRef("id");
 		});
+		SearchUtil.initSearchIndex(index, {isRemoveStemmer: false});
 
 		let id = 0;
 		for (const subSpec of customIndexSubSpecs) {
