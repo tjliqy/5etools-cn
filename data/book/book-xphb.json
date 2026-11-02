@@ -9619,7 +9619,7 @@
 											"type": "row",
 											"style": "row-indent-first",
 											"row": [
-												"{@item 滑膛枪|XPHB}",
+												"{@item 火铳|XPHB}",
 												"{@dice 1d12} 穿刺",
 												"{@itemProperty A|XPHB|弹药}（射程 40/120；子弹），{@itemProperty LD|XPHB|装填}, {@itemProperty 2H|XPHB|双手}",
 												"{@itemMastery 缓速}",
@@ -10891,7 +10891,7 @@
 															"ENG_name": "Craft",
 															"name": "制造",
 															"type": "item",
-															"entry": "{@item 滑膛枪|XPHB}, {@item 手枪|XPHB}, {@item 铃铛|XPHB}, {@item 牛眼提灯|XPHB}, {@item 扁瓶|XPHB}, {@item 附盖提灯|XPHB}, {@item 捕猎陷阱|XPHB|猎人陷阱}, {@item 锁|XPHB}, {@item 镣铐|XPHB}, {@item 镜子|XPHB}, {@item 铲子|XPHB}, {@item 信号笛|XPHB}, {@item 火绒盒|XPHB}"
+															"entry": "{@item 火铳|XPHB}, {@item 手枪|XPHB}, {@item 铃铛|XPHB}, {@item 牛眼提灯|XPHB}, {@item 扁瓶|XPHB}, {@item 附盖提灯|XPHB}, {@item 捕猎陷阱|XPHB|猎人陷阱}, {@item 锁|XPHB}, {@item 镣铐|XPHB}, {@item 镜子|XPHB}, {@item 铲子|XPHB}, {@item 信号笛|XPHB}, {@item 火绒盒|XPHB}"
 														}
 													]
 												}
@@ -20207,6 +20207,29 @@
 									"width": 850,
 									"height": 610,
 									"title": "异画封面：世间至乐莫过于与挚友分享故事。在Wylie Beckert笔下这幅宁静祥和的画作中，英雄们驻足歇息，与一头金龙共品香茗、互诉传奇。"
+								}
+							]
+						},
+						{
+							"ENG_name": "5et-cn translator",
+							"name": "5et汉化",
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"name": "翻译&校对",
+									"type": "item",
+									"entry": "威世智慧汉化组"
+								},
+								{
+									"name": "成员名单",
+									"type": "item",
+									"entry": "Amethyst Dragonlord（可以这很方），Balduo，Dongfeng&Death，kong，PAX-12（PAX-(13-1)），Writena，冰原上的咸喵，柴猫（猫柴），刺猬永念（萧永念），独咕剑，鬼斯通，落雨，南村辉，怕辣精灵，契（契），闪星，水，小光头，雪，中立神马，子虚子"
+								},
+								{
+									"name": "特别鸣谢",
+									"type": "item",
+									"entry": "Lobo-duo船长&小心，Cookie"
 								}
 							]
 						}
