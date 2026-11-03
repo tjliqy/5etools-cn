@@ -2453,7 +2453,7 @@
 		},
 		{
 			"ENG_name": "Scavenger",
-			"name": "拾荒者",
+			"name": "清道夫",
 			"source": "BGDIA",
 			"page": 219,
 			"vehicleType": "INFWAR",
@@ -2497,21 +2497,21 @@
 					"ENG_name": "Crushing Wheels",
 					"name": "粉碎之轮",
 					"entries": [
-						"拾荒者可以穿过任何大型或更小生物的空间。当它这样做时，该生物必须成功通过{@dc 12}的敏捷豁免检定，否则受到16（{@damage 3d10}）点钝击伤害并被击倒{@condition 倒地}。如果该生物已经处于{@condition 倒地}状态，则额外受到16（{@damage 3d10}）点钝击伤害。此特性每回合对特定生物只能使用一次。"
+						"清道夫可以穿过任何大型或更小生物的空间。当它这样做时，该生物必须成功通过{@dc 12}的敏捷豁免检定，否则受到16（{@damage 3d10}）点钝击伤害并被击倒{@condition 倒地}。如果该生物已经处于{@condition 倒地}状态，则额外受到16（{@damage 3d10}）点钝击伤害。此特性每回合对特定生物只能使用一次。"
 					]
 				},
 				{
 					"ENG_name": "Magic Weapons",
 					"name": "魔法武器",
 					"entries": [
-						"拾荒者的武器攻击是魔法攻击。"
+						"清道夫的武器攻击是魔法攻击。"
 					]
 				},
 				{
 					"ENG_name": "Prone Deficiency",
 					"name": "倒地缺陷",
 					"entries": [
-						"如果拾荒者翻滚并陷入{@condition 倒地}状态，它将无法自行恢复并保持{@condition 失能}状态，直到被翻转回直立位置。"
+						"如果清道夫翻滚并陷入{@condition 倒地}状态，它将无法自行恢复并保持{@condition 失能}状态，直到被翻转回直立位置。"
 					]
 				}
 			],
@@ -2520,7 +2520,7 @@
 					"ENG_name": "Helm (Requires 1 Crew and Grants Three-Quarters Cover)",
 					"name": "驾驶室（需要1名成员并提供四分之三掩护）",
 					"entries": [
-						"驾驶并操控拾荒者。"
+						"驾驶并操控清道夫。"
 					]
 				},
 				{

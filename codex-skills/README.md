@@ -5,10 +5,12 @@
 当前 skill：
 - `homebrew-conversion-audit`
 - `5etools-json-translate`：按单个 `data-bak` JSON 的 Git diff 增量更新对应的 `data` 中文 JSON，并执行构建与数据测试。
+- `5etools-credits-writer`：将用户明确指定的贡献者记录追加到 `/data/5e-translator` 的 credits 表，并回查确认。
 
 对应路径：
 - [homebrew-conversion-audit/SKILL.md](/data/5etools-mirror-2.github.io/codex-skills/homebrew-conversion-audit/SKILL.md:1)
 - [5etools-json-translate/SKILL.md](/data/5etools-mirror-2.github.io/codex-skills/5etools-json-translate/SKILL.md:1)
+- [5etools-credits-writer/SKILL.md](/data/5etools-mirror-2.github.io/codex-skills/5etools-credits-writer/SKILL.md:1)
 
 ## 这是什么
 

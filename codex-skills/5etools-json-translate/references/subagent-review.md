@@ -15,6 +15,7 @@ Provide:
 - the current target diff, with the cumulative task translation changes distinguished from that baseline;
 - all user-supplied reference paths;
 - `references/localization-rules.md`;
+- `references/text-polishing.md`, including the domain and content-function classification used for changed strings;
 - for a bestiary source, `references/bestiary-xmm-style.md` and the XMM lookup command;
 - the terminology lookup command in `scripts/lookup_reference.py`.
 
@@ -46,14 +47,17 @@ Report findings against the following criteria:
 3. inconsistent repeated translations inside the same target;
 4. mistranslated 5etools tags, display text, source suffixes, `ENG_name`, numbers, dice, distances, target counts, timing, recharge/usage counts, damage types, conditions, or action economy;
 5. for `data-bak/bestiary/`, disagreement with repeated mechanically equivalent XMM usage, excluding obvious XMM copy, numeric, or duplication errors;
-6. untranslated English that should be Chinese, or Chinese applied to a machine identifier that should remain unchanged.
-7. ASCII straight quotes used as quotation punctuation in newly translated or revised Chinese natural-language text; require `“……”`, with nested quotations written as `‘……’`, while leaving JSON syntax and literal machine content unchanged.
+6. untranslated English that should be Chinese, or Chinese applied to a machine identifier that should remain unchanged;
+7. ASCII straight quotes used as quotation punctuation in newly translated or revised Chinese natural-language text; require `“……”`, with nested quotations written as `‘……’`, while leaving JSON syntax and literal machine content unchanged. Exception: when the selected 5et-mode source is under `data-bak/adventure/`, skip this typography check because deployment normalizes quotation marks.
+8. whether each applied polish category fits the entity, JSON path, and English content function, and whether the wording follows that category without introducing information or a style-only rewrite unsupported by the source.
 
 Require full-phrase terminology queries for material names and rules terms. A lookup hit is evidence, not proof: the reviewer must account for category, source, conflict flags, user references, and local context.
 
 For every analyser `cn_str`/known translation used in the target, verify that the containing sentence or object, field semantics, entity category, tags, and mechanics support that sense. Explicitly check common homographs and overloaded terms; identical English strings do not require identical Chinese when their meanings differ. Report a contextually wrong known translation even if the analyser marks the job `need_translate: false`.
 
-Do not report subjective stylistic preferences without reference or terminology evidence. Do not ask for changes outside the English semantic delta.
+Do not report subjective stylistic preferences without reference or terminology evidence. Report polish issues only when the assigned category conflicts with the text's identifiable function or the wording creates a concrete ambiguity, meaning drift, or violation of the category instructions. Do not ask for changes outside the English semantic delta.
+
+Before returning `PASS`, make a second semantic pass over every changed prose string. Compare the source and target clause by clause for subject/action, purpose, cause, location, timing, quantity and unit, degree, uncertainty, and resulting state. Preserve distinctions such as a passive score versus an ability check; include all concrete source details even when they appear incidental. Then read the changed Chinese without the English beside it and check for concrete fluency problems, including redundant category pairings (such as translating `sheep and goats` as “羊和山羊”), repeated meanings, and unnatural collocations. Report all evidence-backed semantic issues and concrete Chinese-language problems in the same review round rather than deferring easily verifiable findings to a later pass; do not report mere style preferences.
 
 ## Required response
 

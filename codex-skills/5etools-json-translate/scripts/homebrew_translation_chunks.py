@@ -878,7 +878,7 @@ def command_complete_chunk(args) -> int:
     else:
         cherry_pick = subprocess.run(
             ["git", "-C", str(parent_worktree), "-c", "user.email=homebrew-worker@example.invalid",
-             "-c", "user.name=Homebrew Translation Worker", "cherry-pick", "--no-edit", commit],
+             "-c", "user.name=Homebrew Translation Worker", "cherry-pick", "--no-edit", "--allow-empty", commit],
             text=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
         )
         if cherry_pick.returncode:

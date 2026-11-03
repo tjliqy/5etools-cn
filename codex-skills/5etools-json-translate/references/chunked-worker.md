@@ -54,7 +54,7 @@ python3 <skill-dir>/scripts/homebrew_translation_chunks.py claim-chunk \
 
 The result contains the exact JSON pointers, previous checkpoint commit, current glossary version, complete glossary, persistent glossary file path, isolated chunk worktree, and source hash. Read the glossary file before translating. Start the chunk coordinator's `keepalive` sidecar immediately. An expired but unreclaimed lease may be recovered only by the recorded worker with `resume-chunk`.
 
-Translate only the returned pointers. On the first chunk, a missing target may be structurally bootstrapped from the complete source, but only the leased pointers may receive translated content. Later chunk commits are mechanically checked against their pointer scope. Produce exactly one commit directly on the returned checkpoint and modify only the selected target JSON.
+Translate only the returned pointers. On the first chunk, a missing target may be structurally bootstrapped from the complete source, but only the leased pointers may receive translated content. After drafting, classify each newly translated string by entity/domain and content function, then apply the matching instructions in `references/text-polishing.md`; do not polish established text outside the lease. Later chunk commits are mechanically checked against their pointer scope. Produce exactly one commit directly on the returned checkpoint and modify only the selected target JSON.
 
 Every chunk result must include:
 

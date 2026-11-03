@@ -244,7 +244,27 @@ ADDITIONAL_SPELLS_HEAD = re.compile(
     r"/additionalSpells\[\d+\]/(?:known|innate|prepared)(?P<rest>(?:/[\d\[\]]+)+)?$"
 )
 
+# Entity routing fields whose pipe-free value names another file's entity:
+# feat/subclass prerequisite race keys, spell fromSubclass subclass name and
+# shortName, monster/item attachedSpells entries, and background
+# startingEquipment item keys ("ink bottle|phb" -> probe "ink bottle"). When no
+# corpus defines an entity under that exact name the key is a dead link
+# mirroring a source defect (author referenced WarriorsCodex/ABYSS subclasses,
+# a misspelled spell, or a nonexistent item): translating it would point the
+# renderer at a Chinese-named entity that does not exist, so the zh target
+# keeps it byte-identical to the source — the same deliberate-retention rule
+# as bare spell routing keys above.
+ROUTING_MIRROR_PATH = re.compile(
+    r"/(?:"
+    r"prerequisite\[\d+\]/race(?:\[\d+\]|\[name=[^\]]+\])?/name"
+    r"|classes/fromSubclass\[\d+\]/subclass(?:\[(?:\d+|name=[^\]]+)\])?/(?:name|shortName)"
+    r"|attachedSpells\[\d+\]"
+    r"|startingEquipment\[\d+\]/_.*/item"
+    r")$"
+)
+
 _spell_absence_cache: dict[str, bool] = {}
+_entity_absence_cache: dict[tuple[str, str], bool] = {}
 
 
 def is_bare_spell_routing_key(key_path: str | None, en_str: str | None) -> bool:
@@ -310,6 +330,96 @@ def spell_absent_from_all_corpora(key: str) -> bool:
             break
     _spell_absence_cache[key] = absent
     return absent
+
+
+def entity_name_absent(key: str, exclude: Path | None, localized_only: bool = False) -> bool:
+    """True when no corpus entity of any kind is defined under this exact name.
+
+    Probes quoted definition fields ("name" for English repositories,
+    "ENG_name" for localized ones). With ``localized_only`` the probe covers
+    only the localized trees (zh homebrew root + zh main data): "absent" then
+    means no canonical Chinese name exists anywhere, so an English routing key
+    is a deliberate retention whether the referenced entity is a dead link
+    (source defect, absent from every corpus) or an external untranslated
+    dependency (defined only in English files). The match is exact (no
+    whitespace stripping): a routing key with a trailing space ("Boundary ")
+    must name an entity verbatim to be considered live. Conservative: a hit on
+    any entity kind keeps the job visible as a residual. ``exclude`` (the
+    analyzed source file) is skipped so its own back-references never count.
+    """
+    if not key:
+        return False
+    cache_key = (key, str(exclude.resolve()) if exclude else "", str(localized_only))
+    if cache_key in _entity_absence_cache:
+        return _entity_absence_cache[cache_key]
+    definition = re.compile(
+        r'"(?:name|ENG_name)"\s*:\s*"' + re.escape(key) + r'"',
+        re.IGNORECASE,
+    )
+    roots: list[Path] = []
+    if not localized_only:
+        base = Path(os.environ.get("HOMEBREW_EN_ROOT") or "/data/homebrew-en")
+        if base.is_dir():
+            roots.extend(
+                child
+                for child in sorted(base.iterdir())
+                if child.is_dir()
+                and child.name
+                not in {"_img", "node_modules", "_generated", "_doc", "_font", ".git"}
+            )
+        extra_en = Path("/data/5etools-mirror-2.github.io/data-bak")
+        if extra_en.is_dir():
+            roots.append(extra_en)
+    base_zh = Path(os.environ.get("HOMEBREW_ZH_SPELL_CORPUS_ROOT") or "/data/homebrew")
+    if base_zh.is_dir():
+        roots.extend(
+            child
+            for child in sorted(base_zh.iterdir())
+            if child.is_dir()
+            and child.name
+            not in {"_img", "node_modules", "_generated", "_doc", "_font", ".git"}
+        )
+    extra_zh = Path("/data/5etools-mirror-2.github.io/data")
+    if extra_zh.is_dir():
+        roots.append(extra_zh)
+    absent = True
+    for root in roots:
+        for path in root.rglob("*.json"):
+            if exclude is not None:
+                try:
+                    if path.resolve() == exclude.resolve():
+                        continue
+                except OSError:
+                    pass
+            try:
+                text = path.read_text(encoding="utf-8", errors="ignore")
+            except OSError:
+                continue
+            if definition.search(text):
+                absent = False
+                break
+        if not absent:
+            break
+    _entity_absence_cache[cache_key] = absent
+    return absent
+
+
+def routing_mirror_key(job, source: Path | None) -> str | None:
+    """The dead-reference routing key a mirror-exempt job carries, if any."""
+    key_path = job.key_path or ""
+    if not isinstance(job.en_str, str) or not job.en_str.strip():
+        return None
+    if ROUTING_MIRROR_PATH.search(key_path):
+        # Path-anchored routing fields first: their uids may carry a pseudo
+        # tag-field suffix (".attachedSpells[1].0") that is not a real tag.
+        return job.en_str.split("|", 1)[0]
+    uid_field = TAG_FIELD_UID.search(job.uid or "")
+    if uid_field and uid_field.group("tag") == "spell" and int(uid_field.group("field")) == 0:
+        # {@spell key||中文显示} field 0 is the routing name when a later pipe
+        # field carries the display text; a key naming no spell anywhere is a
+        # source-defect mirror (misspelled "blindness/deafeness").
+        return job.en_str.split("|", 1)[0]
+    return None
 
 
 def is_machine_tag_field(job) -> bool:
@@ -677,6 +787,21 @@ def main() -> int:
                 continue
             external_entity_displays.add(tag_match.group("display").strip())
 
+    # {@link Display|https://site.example/...} whose display repeats the linked
+    # site's own domain label is a site proper name kept verbatim ("CritterDB"
+    # for critterdb.com); a container name repeating the same single token is
+    # the same brand, not untranslated prose.
+    link_brand_tokens = set()
+    for text in iter_json_strings(source_meta_json):
+        for link_match in re.finditer(r"\{@link\s([^{}|]*)\|([^{}|]+)\}", text):
+            try:
+                host = urlparse(link_match.group(2).strip()).hostname or ""
+            except ValueError:
+                continue
+            labels = host.lower().split(".")
+            if len(labels) == 2 and labels[0] not in {"www", "en", "zh"}:
+                link_brand_tokens.add(labels[0])
+
     jobs = []
     residuals = []
     filename_jobs = []
@@ -831,6 +956,29 @@ def main() -> int:
                     # spell_absent_from_all_corpora): no corpus defines the
                     # spell, so the English routing key is a deliberate
                     # source-defect mirror, not untranslated display prose.
+                    continue
+                mirror_key = routing_mirror_key(job, source)
+                if (
+                    mirror_key is not None
+                    and item["known_translation"] is None
+                    and entity_name_absent(mirror_key, source, localized_only=True)
+                ):
+                    # Dead or external-untranslated entity-reference routing
+                    # mirror (see entity_name_absent and ROUTING_MIRROR_PATH):
+                    # no localized corpus provides a canonical Chinese name
+                    # for the referenced race/subclass/spell/item, so the
+                    # English key is a deliberate retention, not untranslated
+                    # display prose.
+                    continue
+                if (
+                    isinstance(job.en_str, str)
+                    and job.en_str
+                    and not any(ch.isspace() for ch in job.en_str)
+                    and job.en_str.lower() in link_brand_tokens
+                ):
+                    # Single token equal to a linked site's own domain label is
+                    # the site's brand name kept verbatim (see
+                    # link_brand_tokens).
                     continue
                 residuals.append({**item, "target_paths": [target_path]})
 
