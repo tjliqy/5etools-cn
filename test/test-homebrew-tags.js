@@ -29,7 +29,12 @@ const getTargetFiles = () => {
 		},
 	);
 
-	return jsonFiles.map(jsonFile => jsonFile.getFilePath());
+	return jsonFiles
+		.map(jsonFile => jsonFile.getFilePath())
+		.filter(filePath => {
+			const pathSegments = filePath.split(/[\\/]/);
+			return !pathSegments.some(segment => ["node_modules", ".vscode"].includes(segment));
+		});
 };
 
 const doWriteReport = ({runInfosFailed}) => {
