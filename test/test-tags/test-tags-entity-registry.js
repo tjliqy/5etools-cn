@@ -85,6 +85,19 @@ export class TagTestUrlLookup {
 				? PrereleaseUtil
 				: BrewUtil2;
 			await brewUtil.pAddBrewFromUrl(this._fileAdditional, {isLoadReferences: true});
+
+			// Subclasses can depend on a prerelease class even when the file itself is brew.
+			// Load those classes before building the class/subclass index below.
+			if (brewUtil !== PrereleaseUtil) {
+				const classSources = [...new Set((contents.subclass || [])
+					.map(subclass => subclass.classSource)
+					.filter(source => source && /^(?:UA|XUA)/i.test(source)))];
+				for (const source of classSources) {
+					if (await PrereleaseUtil.pGetBrewBySource(source)) continue;
+					const url = await PrereleaseUtil.pGetSourceUrl(source);
+					if (url) await PrereleaseUtil.pAddBrewFromUrl(url, {isLoadReferences: true});
+				}
+			}
 		}
 
 		const primaryIndex = Omnidexer.decompressIndex(await utS.UtilSearchIndex.pGetIndex({doLogging: false, noFilter: true}));

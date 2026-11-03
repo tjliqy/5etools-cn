@@ -395,6 +395,7 @@ class TableDiceTest extends DataTesterBase {
 
 class AreaCheck extends DataTesterBase {
 	_headerMap = null;
+	_headerMapAll = null;
 	_errorSet = new Set();
 	_fileMatcherValid = /\/(adventure-|book-).*\.json/;
 
@@ -426,7 +427,7 @@ class AreaCheck extends DataTesterBase {
 	_checkStringAreaSupported (str) {
 		str.replace(/{@area ([^}]*)}/g, (m0, m1) => {
 			const [, areaId] = m1.split("|");
-			if (!this._headerMap[areaId]) {
+			if (!(this._headerMapAll || this._headerMap)[areaId]) {
 				this._errorSet.add(m0);
 			}
 			return m0;
@@ -466,14 +467,37 @@ class AreaCheck extends DataTesterBase {
 		if (!contents || typeof contents !== "object") return this._handleObject_areaNotSupported({file, obj: contents, reason: "root was not an object"});
 		if (contents instanceof Array) return this._handleObject_areaNotSupported({file, obj: contents, reason: "root was not an object"});
 
+		const corpusEntries = Object.entries(contents)
+			.filter(([prop, val]) => propsValid.has(prop) && val instanceof Array)
+			.flatMap(([prop, val]) => val.map((subVal, i) => ({prop, subVal, i})));
+		this._headerMapAll = corpusEntries.reduce((acc, {subVal}) => {
+			const headerMap = Renderer.adventureBook.getEntryIdLookup(subVal.data, {isSilent: true});
+			Object.assign(acc, headerMap);
+			return acc;
+		}, {});
+
 		Object.entries(contents)
 			.forEach(([prop, val]) => {
 				if (propsValid.has(prop)) {
 					return val
 						.forEach((subVal, i) => this._handleArray_areaSupported({file, obj: subVal.data, corpusPath: `${prop}[${i}]`}));
 				}
+				if (isNonSiteData && corpusEntries.length) {
+					this._errorSet = new Set();
+					ObjectWalker.walk({
+						obj: val,
+						filePath: file,
+						primitiveHandlers: {string: this._checkStringAreaSupported.bind(this)},
+					});
+					if (this._errorSet.size) {
+						this._addMessage(`Areas not found in ${file} property "${prop}"! See below:\n`);
+						[...this._errorSet].sort(SortUtil.ascSortLower).forEach(area => this._addMessage(`\t${area}\n`));
+					}
+					return;
+				}
 				return this._handleObject_areaNotSupported({file, obj: val, reason: `parent property was "${prop}"`});
 			});
+		this._headerMapAll = null;
 	}
 }
 
@@ -589,6 +613,13 @@ class DuplicateEntityCheck extends DataTesterBase {
 			case "subclass": {
 				if (name != null && source != null) {
 					const key = `${source} :: ${ent.classSource} :: ${ent.className} :: ${name}`;
+					(positions[key] = positions[key] || []).push(keyIx);
+				}
+				break;
+			}
+			case "foundryMonsterAction": {
+				if (name != null && source != null) {
+					const key = `${source} :: ${ent.monsterSource} :: ${ent.monsterName} :: ${name}`;
 					(positions[key] = positions[key] || []).push(keyIx);
 				}
 				break;

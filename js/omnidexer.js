@@ -797,7 +797,11 @@ class IndexableFileOptFeatures_Other extends IndexableFile {
 			isHover: true,
 			include: (it) => {
 				// Any optional features that don't have a known type (i.e. are custom homebrew types) get lumped into here
-				return it.featureType.includes("OTH") || it.featureType.some(it => !Parser.OPT_FEATURE_TYPE_TO_FULL[it]);
+				// TT and RP are known optional feature types, but do not have dedicated index categories.
+				return it.featureType.includes("OTH")
+					|| it.featureType.includes("TT")
+					|| it.featureType.includes("RP")
+					|| it.featureType.some(it => !Parser.OPT_FEATURE_TYPE_TO_FULL[it]);
 			},
 		});
 	}

@@ -5485,6 +5485,9 @@ globalThis.DataUtil = class {
 				if (SourceUtil.isSiteSource(source)) return data;
 				return DataUtil._pLoadByMeta_pGetPrereleaseBrew(source);
 			}
+			case "itemType": {
+				return DataUtil._pLoadByMeta_pGetPrereleaseBrew(source);
+			}
 			case "race":
 			case "subrace": {
 				// FIXME(Future) this should really `loadRawJSON`, but this breaks existing brew.

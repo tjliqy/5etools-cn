@@ -2006,7 +2006,7 @@ globalThis.Renderer = class {
 			} else {
 				markerText = "（查看已移除的内容）";
 			}
-			textStack[0] += `<span class="ve-rd-homebrew__disp-old-content" href="#${window.location.hash}" ${hoverMeta.html}>${markerText}</span>`;
+			textStack[0] += `<span class="ve-rd-homebrew__disp-old-content" href="#${typeof window === "undefined" ? "" : window.location.hash}" ${hoverMeta.html}>${markerText}</span>`;
 		}
 
 		textStack[0] += `</div>`;

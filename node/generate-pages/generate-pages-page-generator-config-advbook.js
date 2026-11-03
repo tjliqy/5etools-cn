@@ -68,7 +68,7 @@ class _PageGeneratorBooks extends PageGeneratorAdventuresBooksBase {
 
 	_btnsList = [
 		HtmlGeneratorListButtons.getBtn({width: "1-3", sortIdent: "group", text: "类型"}),
-		HtmlGeneratorListButtons.getBtn({width: "7-3", sortIdent: "name", text: "名称"}),
+		HtmlGeneratorListButtons.getBtn({width: "4-3", sortIdent: "name", text: "名称"}),
 		HtmlGeneratorListButtons.getBtn({width: "1-3", sortIdent: "translator", text: "翻译"}),
 		HtmlGeneratorListButtons.getBtn({sortIdent: "published", text: "出版时间"}),
 	];
