@@ -1,6 +1,7 @@
 {
 	"_meta": {
 		"internalCopies": [
+			"class",
 			"subclass"
 		]
 	},
@@ -1011,6 +1012,22 @@
 			"subclassTitle": "武僧子职",
 			"hasFluff": true,
 			"hasFluffImages": true
+		},
+		{
+			"name": "Monk",
+			"source": "WoW",
+			"reskinOf": [
+				"Monk|XPHB"
+			],
+			"_copy": {
+				"name": "Monk",
+				"source": "XPHB"
+			},
+			"includeSubclassesFrom": [
+				"Monk|XPHB"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
 		}
 	],
 	"subclass": [
@@ -1250,6 +1267,9 @@
 			"className": "武僧",
 			"classSource": "PHB",
 			"page": 33,
+			"reprintedAs": [
+				"Mystic Brews|Monk|WoW|WoW"
+			],
 			"edition": "classic",
 			"subclassFeatures": [
 				"醉拳宗|武僧||醉拳|XGE|3",
@@ -1952,6 +1972,50 @@
 			],
 			"hasFluff": true,
 			"hasFluffImages": true
+		},
+		{
+			"name": "Warrior of Mercy",
+			"shortName": "Mercy",
+			"source": "WoW",
+			"className": "Monk",
+			"classSource": "WoW",
+			"_copy": {
+				"name": "Warrior of Mercy",
+				"source": "XPHB",
+				"shortName": "Mercy",
+				"className": "Monk",
+				"classSource": "XPHB"
+			}
+		},
+		{
+			"name": "Warrior of Mystic Brews",
+			"shortName": "Mystic Brews",
+			"source": "WoW",
+			"className": "Monk",
+			"classSource": "WoW",
+			"edition": "one",
+			"subclassFeatures": [
+				"Warrior of Mystic Brews|Monk|WoW|Mystic Brews|WoW|3",
+				"Tipsy Sway|Monk|WoW|Mystic Brews|WoW|6",
+				"Mystic Brew|Monk|WoW|Mystic Brews|WoW|6",
+				"Wizened Brewer|Monk|WoW|Mystic Brews|WoW|11",
+				"Master Brewer|Monk|WoW|Mystic Brews|WoW|17",
+				"Intoxicated Frenzy|Monk|WoW|Mystic Brews|WoW|17"
+			]
+		},
+		{
+			"name": "Warrior of the Open Hand",
+			"shortName": "Open Hand",
+			"source": "WoW",
+			"className": "Monk",
+			"classSource": "WoW",
+			"_copy": {
+				"name": "Warrior of the Open Hand",
+				"source": "XPHB",
+				"shortName": "Open Hand",
+				"className": "Monk",
+				"classSource": "XPHB"
+			}
 		}
 	],
 	"classFeature": [

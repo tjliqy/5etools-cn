@@ -1149,9 +1149,7 @@ class _RenderCompactMarkdownBestiaryImplBase {
 	}
 
 	_getCommonMdParts_sizeTypeAlignment ({mon, renderer, opts}) {
-		const monTypes = Parser.monTypeToFullObj(mon.type);
-		const sepTypeAlignment = monTypes.asText.includes(",") ? "; " : ", ";
-		return `>*${mon.level ? `${mon.level} 级 ` : ""}${Renderer.utils.getRenderedSize(mon.size)} ${monTypes.asText}${mon.alignment ? `${sepTypeAlignment}${mon.alignmentPrefix ? RendererMarkdown.get().render(mon.alignmentPrefix) : ""}${Parser.alignmentListToFull(mon.alignment).toTitleCase()}` : ""}*`;
+		return `>*${Renderer.monster.getTypeAlignmentPart(mon, {renderer})}*`;
 	}
 
 	_getCommonMdParts_ac ({mon, renderer, opts}) {
@@ -1167,7 +1165,7 @@ class _RenderCompactMarkdownBestiaryImplBase {
 				.map(res => `\n>- **${res.name}** ${Renderer.monster.getRenderedResource(res, true)}`)
 				.join("")
 			: "";
-		return `>- **生命值** ${mon.hp == null ? "\u2014" : Renderer.monster.getRenderedHp(mon.hp, {isPlainText: true})}${resourcePart}`;
+		return `>- **${mon.hp?.isTemporary ? "临时生命值" : "生命值"}** ${mon.hp == null ? "\u2014" : Renderer.monster.getRenderedHp(mon.hp, {isPlainText: true})}${resourcePart}`;
 	}
 
 	_getCommonMdParts_speedInitiative ({mon, renderer, opts}) {

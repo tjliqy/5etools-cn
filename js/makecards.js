@@ -452,7 +452,7 @@ class MakeCards extends BaseComponent {
 			this._ct_subtitle(Renderer.monster.getTypeAlignmentPart(mon, {renderer})),
 			this._ct_rule(),
 			this._ct_property("护甲等级", this._ct_htmlToText(Parser.acToFull(mon.ac))),
-			this._ct_property("生命值", this._ct_htmlToText(Renderer.monster.getRenderedHp(mon.hp))),
+			this._ct_property(mon.hp?.isTemporary ? "临时生命值" : "生命值", this._ct_htmlToText(Renderer.monster.getRenderedHp(mon.hp))),
 			...(mon.resource || []).map(res => this._ct_property(res.name, this._ct_htmlToText(Renderer.monster.getRenderedResource(res)))),
 			this._ct_property("速度", this._ct_htmlToText(Parser.getSpeedString(mon))),
 			this._ct_rule(),

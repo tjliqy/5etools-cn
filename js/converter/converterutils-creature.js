@@ -1811,6 +1811,7 @@ export class SpellcastingTraitConvert {
 				line = line.replace(/[,，]\s*\*/g, ",*"); // put asterisks on the correct side of commas
 
 				const entFaux = {entries: [line]};
+
 				const propPathUsage = this.getMutUsagePropPath({entry: entFaux, prop});
 				if (propPathUsage) {
 					line = entFaux.entries[0];
@@ -1996,11 +1997,14 @@ export class SpellcastingTraitConvert {
 		{re: /(?<cnt>\d+)\/week(?<ptEach> each)?/i, prop: "weekly"},
 		{re: /(?<cnt>\d+)\/month(?<ptEach> each)?/i, prop: "monthly"},
 		{re: /(?<cnt>\d+)\/year(?<ptEach> each)?/i, prop: "yearly"},
+		{re: /(?<cnt>\d+) charges?(?<ptEach> each)?/i, prop: "charges"},
 		{re: /(?<ptEach>每项)?(?<cnt>\d+)\/休息?/i, prop: "rest"},
 		{re: /(?<ptEach>每项)?(?<cnt>\d+)\/[日天]/i, prop: "daily"},
 		{re: /(?<ptEach>每项)?(?<cnt>\d+)\/(?:周|星期)/i, prop: "weekly"},
 		{re: /(?<ptEach>每项)?(?<cnt>\d+)\/月/i, prop: "monthly"},
 		{re: /(?<ptEach>每项)?(?<cnt>\d+)\/年/i, prop: "yearly"},
+		{re: /(?<ptEach>每项)?(?<cnt>\d+)\/充能/i, prop: "charges"},
+
 	];
 
 	static _USES_RE_INFOS_ENTRY = this._USES_RE_INFOS_NAME

@@ -1,6 +1,7 @@
 {
 	"_meta": {
 		"internalCopies": [
+			"class",
 			"subclass",
 			"subclassFeature"
 		]
@@ -815,6 +816,22 @@
 				"魔能掌控|魔契师|XPHB|20"
 			],
 			"subclassTitle": "魔契师子职",
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Warlock",
+			"source": "WoW",
+			"reskinOf": [
+				"Warlock|XPHB"
+			],
+			"_copy": {
+				"name": "Warlock",
+				"source": "XPHB"
+			},
+			"includeSubclassesFrom": [
+				"Warlock|XPHB"
+			],
 			"hasFluff": true,
 			"hasFluffImages": true
 		}
@@ -2001,6 +2018,34 @@
 			],
 			"hasFluff": true,
 			"hasFluffImages": true
+		},
+		{
+			"name": "Fiend Patron",
+			"shortName": "Fiend",
+			"source": "WoW",
+			"className": "Warlock",
+			"classSource": "WoW",
+			"_copy": {
+				"name": "Fiend Patron",
+				"source": "XPHB",
+				"shortName": "Fiend",
+				"className": "Warlock",
+				"classSource": "XPHB"
+			}
+		},
+		{
+			"name": "Great Old One Patron",
+			"shortName": "Great Old One",
+			"source": "WoW",
+			"className": "Warlock",
+			"classSource": "WoW",
+			"_copy": {
+				"name": "Great Old One Patron",
+				"source": "XPHB",
+				"shortName": "Great Old One",
+				"className": "Warlock",
+				"classSource": "XPHB"
+			}
 		}
 	],
 	"classFeature": [

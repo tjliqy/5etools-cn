@@ -43,6 +43,7 @@ export class SourceFilter extends Filter {
 		const valA = BrewUtil2.hasSourceJson(a.item) ? 2 : (SourceUtil.isNonstandardSource(a.item) || PrereleaseUtil.hasSourceJson(a.item)) ? 1 : 0;
 		const valB = BrewUtil2.hasSourceJson(b.item) ? 2 : (SourceUtil.isNonstandardSource(b.item) || PrereleaseUtil.hasSourceJson(b.item)) ? 1 : 0;
 		return SortUtil.ascSort(valA, valB)
+			|| SortUtil.ascSortLower(Parser.sourceJsonToAbv(a.item), Parser.sourceJsonToAbv(b.item))
 			|| SourceFilter._SORT_ITEMS(a, b);
 	}
 
@@ -112,39 +113,39 @@ export class SourceFilter extends Filter {
 		this._proxyAssignSimple("state", nxtState, true);
 	}
 
-	static _TITLE_CONTEXT_SOURCE_SET = `按住 Shift 可加入现有选择；按住 Ctrl 可排除其他来源。`;
+	static _TITLE_CONTEXT_SOURCE_SET = `按住 Shift 可加入现有选择；按住 ALT 进行相交；按住 CTRL 可排除其他来源。`;
 
 	_getHeaderControls_addExtraStateBtns (opts, wrpStateBtnsOuter) {
 		const btnSupplements = veE({
 			tag: "button",
 			clazz: `ve-btn ve-btn-default ve-w-100 ${opts.isMulti ? "ve-btn-xxs" : "ve-btn-xs"}`,
-			title: `按住 Shift 可加入现有选择；按住 Ctrl 可包含 UA 等内容。`,
+			title: `按住 Shift 可加入现有选择；按住 ALT 进行相交；按住 Ctrl 可包含 UA 等内容。`,
 			html: `核心/资源`,
-			click: evt => this._doSetPinsSupplements({isIncludeUnofficial: EventUtil.isCtrlMetaKey(evt), isAdditive: evt.shiftKey}),
+			click: evt => this._doSetPinsSupplements({isIncludeUnofficial: EventUtil.isCtrlMetaKey(evt), isAdditive: evt.shiftKey, isIntersection: EventUtil.isAltOptionKey(evt)}),
 		});
 
 		const btnAdventures = veE({
 			tag: "button",
 			clazz: `ve-btn ve-btn-default ve-w-100 ${opts.isMulti ? "ve-btn-xxs" : "ve-btn-xs"}`,
-			title: `按住 Shift 可加入现有选择；按住 Ctrl 可包含 UA。`,
+			title: `按住 Shift 可加入现有选择；按住 ALT 进行相交；按住 Ctrl 可包含 UA。`,
 			html: `冒险`,
-			click: evt => this._doSetPinsAdventures({isIncludeUnofficial: EventUtil.isCtrlMetaKey(evt), isAdditive: evt.shiftKey}),
+			click: evt => this._doSetPinsAdventures({isIncludeUnofficial: EventUtil.isCtrlMetaKey(evt), isAdditive: evt.shiftKey, isIntersection: EventUtil.isAltOptionKey(evt)}),
 		});
 
 		const btnPartnered = veE({
 			tag: "button",
 			clazz: `ve-btn ve-btn-default ve-w-100 ${opts.isMulti ? "ve-btn-xxs" : "ve-btn-xs"}`,
-			title: `按住 Shift 可加入现有选择`,
+			title: `按住 Shift 可加入现有选择; 按住 ALT 进行相交；`,
 			html: `合作`,
-			click: evt => this._doSetPinsPartnered({isAdditive: evt.shiftKey}),
+			click: evt => this._doSetPinsPartnered({isAdditive: evt.shiftKey, isIntersection: EventUtil.isAltOptionKey(evt)}),
 		});
 
 		const btnHomebrew = veE({
 			tag: "button",
 			clazz: `ve-btn ve-btn-default ve-w-100 ${opts.isMulti ? "ve-btn-xxs" : "ve-btn-xs"}`,
-			title: `按住 Shift 可加入现有选择`,
+			title: `按住 Shift 可加入现有选择; 按住 ALT 进行相交`,
 			html: `自制内容`,
-			click: evt => this._doSetPinsHomebrew({isAdditive: evt.shiftKey}),
+			click: evt => this._doSetPinsHomebrew({isAdditive: evt.shiftKey, isIntersection: EventUtil.isAltOptionKey(evt)}),
 		});
 
 		const hkIsButtonsActive = () => {
@@ -169,60 +170,60 @@ export class SourceFilter extends Filter {
 		const menu = ContextUtil.getMenu([
 			new ContextUtil.Action(
 				"选择所有标准资源",
-				(evt) => this._doSetPinsStandard({isAdditive: evt.shiftKey, isExclusive: EventUtil.isCtrlMetaKey(evt)}),
+				(evt) => this._doSetPinsStandard({isAdditive: evt.shiftKey, isIntersection: EventUtil.isAltOptionKey(evt), isExclusive: EventUtil.isCtrlMetaKey(evt)}),
 				{title: this.constructor._TITLE_CONTEXT_SOURCE_SET},
 			),
 			new ContextUtil.Action(
 				"选择所有合作资源",
-				(evt) => this._doSetPinsPartnered({isAdditive: evt.shiftKey, isExclusive: EventUtil.isCtrlMetaKey(evt)}),
+				(evt) => this._doSetPinsPartnered({isAdditive: evt.shiftKey, isIntersection: EventUtil.isAltOptionKey(evt), isExclusive: EventUtil.isCtrlMetaKey(evt)}),
 				{title: this.constructor._TITLE_CONTEXT_SOURCE_SET},
 			),
 			new ContextUtil.Action(
 				"选择所有非标准资源",
-				(evt) => this._doSetPinsNonStandard({isAdditive: evt.shiftKey, isExclusive: EventUtil.isCtrlMetaKey(evt)}),
+				(evt) => this._doSetPinsNonStandard({isAdditive: evt.shiftKey, isIntersection: EventUtil.isAltOptionKey(evt), isExclusive: EventUtil.isCtrlMetaKey(evt)}),
 				{title: this.constructor._TITLE_CONTEXT_SOURCE_SET},
 			),
 			new ContextUtil.Action(
 				"选择所有预发布资源",
-				(evt) => this._doSetPinsPrerelease({isAdditive: evt.shiftKey, isExclusive: EventUtil.isCtrlMetaKey(evt)}),
+				(evt) => this._doSetPinsPrerelease({isAdditive: evt.shiftKey, isIntersection: EventUtil.isAltOptionKey(evt), isExclusive: EventUtil.isCtrlMetaKey(evt)}),
 				{title: this.constructor._TITLE_CONTEXT_SOURCE_SET},
 			),
 			new ContextUtil.Action(
 				"选择所有自制资源",
-				(evt) => this._doSetPinsHomebrew({isAdditive: evt.shiftKey, isExclusive: EventUtil.isCtrlMetaKey(evt)}),
+				(evt) => this._doSetPinsHomebrew({isAdditive: evt.shiftKey, isIntersection: EventUtil.isAltOptionKey(evt), isExclusive: EventUtil.isCtrlMetaKey(evt)}),
 				{title: this.constructor._TITLE_CONTEXT_SOURCE_SET},
 			),
 			null,
 			new ContextUtil.Action(
 				`选择 5e/2014 资源`,
-				(evt) => this._doSetPinsClassic({isAdditive: evt.shiftKey, isExclusive: EventUtil.isCtrlMetaKey(evt)}),
+				(evt) => this._doSetPinsClassic({isAdditive: evt.shiftKey, isIntersection: EventUtil.isAltOptionKey(evt), isExclusive: EventUtil.isCtrlMetaKey(evt)}),
 				{title: `选择 2014 至 2024 年发布的来源。 ${this.constructor._TITLE_CONTEXT_SOURCE_SET}`},
 			),
 			new ContextUtil.Action(
 				`选择 5.5e/2024 资源`,
-				(evt) => this._doSetPinsOne({isAdditive: evt.shiftKey, isExclusive: EventUtil.isCtrlMetaKey(evt)}),
+				(evt) => this._doSetPinsOne({isAdditive: evt.shiftKey, isIntersection: EventUtil.isAltOptionKey(evt), isExclusive: EventUtil.isCtrlMetaKey(evt)}),
 				{title: `选择自 2024 年起发布的来源。 ${this.constructor._TITLE_CONTEXT_SOURCE_SET}`},
 			),
 			null,
 			new ContextUtil.Action(
 				`选择“寻常”资源`,
-				(evt) => this._doSetPinsVanilla({isAdditive: evt.shiftKey, isExclusive: EventUtil.isCtrlMetaKey(evt)}),
+				(evt) => this._doSetPinsVanilla({isAdditive: evt.shiftKey, isIntersection: EventUtil.isAltOptionKey(evt), isExclusive: EventUtil.isCtrlMetaKey(evt)}),
 				{title: `选择适用于任何战役的基础来源集。 ${this.constructor._TITLE_CONTEXT_SOURCE_SET}`},
 			),
 			new ContextUtil.Action(
 				"选择所有非UA资源",
-				(evt) => this._doSetPinsNonUa({isAdditive: evt.shiftKey, isExclusive: EventUtil.isCtrlMetaKey(evt)}),
+				(evt) => this._doSetPinsNonUa({isAdditive: evt.shiftKey, isIntersection: EventUtil.isAltOptionKey(evt), isExclusive: EventUtil.isCtrlMetaKey(evt)}),
 				{title: this.constructor._TITLE_CONTEXT_SOURCE_SET},
 			),
 			null,
 			new ContextUtil.Action(
 				"选择SRD资源",
-				(evt) => this._doSetPinsSrd({isAdditive: evt.shiftKey, isExclusive: EventUtil.isCtrlMetaKey(evt)}),
+				(evt) => this._doSetPinsSrd({isAdditive: evt.shiftKey, isIntersection: EventUtil.isAltOptionKey(evt), isExclusive: EventUtil.isCtrlMetaKey(evt)}),
 				{title: `选择系统参考文档的来源。 ${this.constructor._TITLE_CONTEXT_SOURCE_SET}`},
 			),
 			new ContextUtil.Action(
 				"选择基础规则资源",
-				(evt) => this._doSetPinsBasicRules({isAdditive: evt.shiftKey, isExclusive: EventUtil.isCtrlMetaKey(evt)}),
+				(evt) => this._doSetPinsBasicRules({isAdditive: evt.shiftKey, isIntersection: EventUtil.isAltOptionKey(evt), isExclusive: EventUtil.isCtrlMetaKey(evt)}),
 				{title: this.constructor._TITLE_CONTEXT_SOURCE_SET},
 			),
 			null,
@@ -274,71 +275,71 @@ export class SourceFilter extends Filter {
 		return PILL_STATE__IGNORE;
 	}
 
-	_doSetPinsStandard ({isAdditive = false, isExclusive = false} = {}) {
-		Object.keys(this._state)
-			.forEach(k => this._state[k] = SourceUtil.getFilterGroup(k) === SourceUtil.FILTER_GROUP_STANDARD ? PILL_STATE__YES : this._doSetPins_getKeyStateDefault({k, isAdditive, isExclusive}));
-	}
-
-	_doSetPinsPartnered ({isAdditive = false, isExclusive = false} = {}) {
+	_doSetPins ({fnIsMatch, isAdditive = false, isExclusive = false, isIntersection = false} = {}) {
 		this._proxyAssignSimple(
 			"state",
 			Object.keys(this._state)
-				.mergeMap(k => ({[k]: SourceUtil.getFilterGroup(k) === SourceUtil.FILTER_GROUP_PARTNERED ? PILL_STATE__YES : this._doSetPins_getKeyStateDefault({k, isAdditive, isExclusive})})),
+				.mergeMap(k => {
+					const isMatch = fnIsMatch(k);
+
+					if (isIntersection) {
+						if (isMatch && this._state[k] === PILL_STATE__YES) return {[k]: PILL_STATE__YES};
+						return {[k]: this._doSetPins_getKeyStateDefault({k, isAdditive, isExclusive})};
+					}
+
+					return {[k]: isMatch ? PILL_STATE__YES : this._doSetPins_getKeyStateDefault({k, isAdditive, isExclusive})};
+				}),
 		);
 	}
 
-	_doSetPinsNonStandard ({isAdditive = false, isExclusive = false} = {}) {
-		Object.keys(this._state).forEach(k => this._state[k] = SourceUtil.getFilterGroup(k) === SourceUtil.FILTER_GROUP_NON_STANDARD ? PILL_STATE__YES : this._doSetPins_getKeyStateDefault({k, isAdditive, isExclusive}));
+	_doSetPinsStandard (opts) {
+		this._doSetPins({...opts, fnIsMatch: k => SourceUtil.getFilterGroup(k) === SourceUtil.FILTER_GROUP_STANDARD});
 	}
 
-	_doSetPinsPrerelease ({isAdditive = false, isExclusive = false} = {}) {
-		Object.keys(this._state).forEach(k => this._state[k] = SourceUtil.getFilterGroup(k) === SourceUtil.FILTER_GROUP_PRERELEASE ? PILL_STATE__YES : this._doSetPins_getKeyStateDefault({k, isAdditive, isExclusive}));
+	_doSetPinsPartnered (opts) {
+		this._doSetPins({...opts, fnIsMatch: k => SourceUtil.getFilterGroup(k) === SourceUtil.FILTER_GROUP_PARTNERED});
 	}
 
-	_doSetPinsSupplements ({isIncludeUnofficial = false, isAdditive = false} = {}) {
-		this._proxyAssignSimple(
-			"state",
-			Object.keys(this._state)
-				.mergeMap(k => ({[k]: SourceUtil.isCoreOrSupplement(k) && (isIncludeUnofficial || !SourceUtil.isNonstandardSource(k)) ? PILL_STATE__YES : isAdditive ? this._state[k] : PILL_STATE__IGNORE})),
-		);
+	_doSetPinsNonStandard (opts) {
+		this._doSetPins({...opts, fnIsMatch: k => SourceUtil.getFilterGroup(k) === SourceUtil.FILTER_GROUP_NON_STANDARD});
 	}
 
-	_doSetPinsAdventures ({isIncludeUnofficial = false, isAdditive = false} = {}) {
-		this._proxyAssignSimple(
-			"state",
-			Object.keys(this._state)
-				.mergeMap(k => ({[k]: SourceUtil.isAdventure(k) && (isIncludeUnofficial || !SourceUtil.isNonstandardSource(k)) ? PILL_STATE__YES : isAdditive ? this._state[k] : PILL_STATE__IGNORE})),
-		);
+	_doSetPinsPrerelease (opts) {
+		this._doSetPins({...opts, fnIsMatch: k => SourceUtil.getFilterGroup(k) === SourceUtil.FILTER_GROUP_PRERELEASE});
 	}
 
-	_doSetPinsHomebrew ({isAdditive = false, isExclusive = false} = {}) {
-		this._proxyAssignSimple(
-			"state",
-			Object.keys(this._state)
-				.mergeMap(k => ({[k]: SourceUtil.getFilterGroup(k) === SourceUtil.FILTER_GROUP_HOMEBREW ? PILL_STATE__YES : this._doSetPins_getKeyStateDefault({k, isAdditive, isExclusive})})),
-		);
+	_doSetPinsSupplements ({isIncludeUnofficial = false, ...opts} = {}) {
+		this._doSetPins({...opts, fnIsMatch: k => SourceUtil.isCoreOrSupplement(k) && (isIncludeUnofficial || !SourceUtil.isNonstandardSource(k))});
 	}
 
-	_doSetPinsClassic ({isAdditive = false, isExclusive = false} = {}) {
-		Object.keys(this._state).forEach(k => this._state[k] = SourceUtil.isClassicSource(k) ? PILL_STATE__YES : this._doSetPins_getKeyStateDefault({k, isAdditive, isExclusive}));
+	_doSetPinsAdventures ({isIncludeUnofficial = false, ...opts} = {}) {
+		this._doSetPins({...opts, fnIsMatch: k => SourceUtil.isAdventure(k) && (isIncludeUnofficial || !SourceUtil.isNonstandardSource(k))});
 	}
 
-	_doSetPinsOne ({isAdditive = false, isExclusive = false} = {}) {
-		Object.keys(this._state).forEach(k => this._state[k] = !SourceUtil.isClassicSource(k) ? PILL_STATE__YES : this._doSetPins_getKeyStateDefault({k, isAdditive, isExclusive}));
+	_doSetPinsHomebrew (opts) {
+		this._doSetPins({...opts, fnIsMatch: k => SourceUtil.getFilterGroup(k) === SourceUtil.FILTER_GROUP_HOMEBREW});
 	}
 
-	_doSetPinsVanilla ({isAdditive = false, isExclusive = false} = {}) {
-		Object.keys(this._state).forEach(k => this._state[k] = Parser.SOURCES_VANILLA.has(k) ? PILL_STATE__YES : this._doSetPins_getKeyStateDefault({k, isAdditive, isExclusive}));
+	_doSetPinsClassic (opts) {
+		this._doSetPins({...opts, fnIsMatch: k => SourceUtil.isClassicSource(k)});
 	}
 
-	_doSetPinsNonUa ({isAdditive = false, isExclusive = false} = {}) {
-		Object.keys(this._state).forEach(k => this._state[k] = !SourceUtil.isPrereleaseSource(k) ? PILL_STATE__YES : this._doSetPins_getKeyStateDefault({k, isAdditive, isExclusive}));
+	_doSetPinsOne (opts) {
+		this._doSetPins({...opts, fnIsMatch: k => !SourceUtil.isClassicSource(k)});
 	}
 
-	_doSetPinsSrd ({isAdditive = false, isExclusive = false} = {}) {
+	_doSetPinsVanilla (opts) {
+		this._doSetPins({...opts, fnIsMatch: k => Parser.SOURCES_VANILLA.has(k)});
+	}
+
+	_doSetPinsNonUa (opts) {
+		this._doSetPins({...opts, fnIsMatch: k => !SourceUtil.isPrereleaseSource(k)});
+	}
+
+	_doSetPinsSrd (opts) {
 		SourceFilter._SRD_SOURCES = SourceFilter._SRD_SOURCES || new Set([Parser.SRC_PHB, Parser.SRC_MM, Parser.SRC_DMG, Parser.SRC_XPHB, Parser.SRC_XDMG, Parser.SRC_XMM]);
 
-		Object.keys(this._state).forEach(k => this._state[k] = SourceFilter._SRD_SOURCES.has(k) ? PILL_STATE__YES : this._doSetPins_getKeyStateDefault({k, isAdditive, isExclusive}));
+		this._doSetPins({...opts, fnIsMatch: k => SourceFilter._SRD_SOURCES.has(k)});
 
 		const srdFilter = this._filterBox.filters.find(it => it.isSrdFilter);
 		if (srdFilter) {
@@ -360,10 +361,10 @@ export class SourceFilter extends Filter {
 		}
 	}
 
-	_doSetPinsBasicRules ({isAdditive = false, isExclusive = false} = {}) {
+	_doSetPinsBasicRules (opts) {
 		SourceFilter._BASIC_RULES_SOURCES = SourceFilter._BASIC_RULES_SOURCES || new Set([Parser.SRC_PHB, Parser.SRC_MM, Parser.SRC_DMG, Parser.SRC_XPHB, Parser.SRC_XDMG, Parser.SRC_XMM]);
 
-		Object.keys(this._state).forEach(k => this._state[k] = SourceFilter._BASIC_RULES_SOURCES.has(k) ? PILL_STATE__YES : this._doSetPins_getKeyStateDefault({k, isAdditive, isExclusive}));
+		this._doSetPins({...opts, fnIsMatch: k => SourceFilter._BASIC_RULES_SOURCES.has(k)});
 
 		const basicRulesFilter = this._filterBox.filters.find(it => it.isBasicRulesFilter);
 		if (basicRulesFilter) {

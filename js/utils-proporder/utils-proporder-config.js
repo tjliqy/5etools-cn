@@ -5,7 +5,9 @@ import {getGenericMetadataPropOrder, PROPORDER_ENTRY_DATA_OBJECT} from "./utils-
 import {EntryPropOrder} from "./utils-proporder-config-entries.js";
 import {getAbilityArrayKey, getClassRequirementsObjectKey, getClassTableGroupsArrayKey, getExternalSourcesArrayKey, getSkillSaveObjectKey, getVehiclePartArrayKey} from "./utils-proporder-config-util.js";
 
-const getFluffObjectKey = () => (
+const _ascSortFileProps = (a, b) => SortUtil.ascSort(_PROPORDER_ROOT_PROP_TO_INDEX[a], _PROPORDER_ROOT_PROP_TO_INDEX[b]);
+
+const _getFluffObjectKey = () => (
 	new ObjectKey(
 		"fluff",
 		{
@@ -29,7 +31,7 @@ const getFluffObjectKey = () => (
 	)
 );
 
-const getFoundryGeneric = ({propsMatchAdditional = [], isFeature = false} = {}) => {
+const _getFoundryGeneric = ({propsMatchAdditional = [], isFeature = false} = {}) => {
 	const proporder = [
 		...getGenericMetadataPropOrder({propsPostSourceAdditional: propsMatchAdditional}),
 
@@ -116,7 +118,7 @@ const PROPORDER_META = [
 
 	"dependencies",
 	"includes",
-	"internalCopies",
+	new ArrayKey("internalCopies", {fnSort: _ascSortFileProps}),
 
 	"otherSources",
 	new ArrayKey("referenceSources", {fnSort: SortUtil.ascSortLower}),
@@ -144,8 +146,8 @@ const PROPORDER_TEST = [
 
 	"additionalImageSources",
 ];
-const PROPORDER_FOUNDRY_GENERIC = getFoundryGeneric();
-const PROPORDER_FOUNDRY_GENERIC_FEATURE = getFoundryGeneric({isFeature: true});
+const PROPORDER_FOUNDRY_GENERIC = _getFoundryGeneric();
+const PROPORDER_FOUNDRY_GENERIC_FEATURE = _getFoundryGeneric({isFeature: true});
 const PROPORDER_MONSTER = [
 	...getGenericMetadataPropOrder({
 		propsPostNameAdditional: [
@@ -175,6 +177,7 @@ const PROPORDER_MONSTER = [
 	"size",
 	"sizeNote",
 	"type",
+	"typeNote",
 	"alignment",
 	"alignmentPrefix",
 
@@ -301,7 +304,7 @@ const PROPORDER_MONSTER = [
 	"hasFluff",
 	"hasFluffImages",
 
-	getFluffObjectKey(),
+	_getFluffObjectKey(),
 
 	...PROPORDER_FOUNDRY_DATA_INLINE,
 
@@ -375,7 +378,7 @@ const PROPORDER_FOUNDRY_MONSTER = [
 
 	"migrationVersion",
 ];
-const PROPORDER_FOUNDRY_MONSTER_SUB_ENTITY = getFoundryGeneric({propsMatchAdditional: ["monsterName", "monsterSource"]});
+const PROPORDER_FOUNDRY_MONSTER_SUB_ENTITY = _getFoundryGeneric({propsMatchAdditional: ["monsterName", "monsterSource"]});
 const PROPORDER_GENERIC_FLUFF = [
 	...getGenericMetadataPropOrder({propsPostNameAdditional: ["alias", "preserveName"]}),
 
@@ -467,7 +470,7 @@ const PROPORDER_SPELL = [
 	"hasFluff",
 	"hasFluffImages",
 
-	getFluffObjectKey(),
+	_getFluffObjectKey(),
 
 	...PROPORDER_FOUNDRY_DATA_INLINE,
 
@@ -501,7 +504,7 @@ const PROPORDER_ACTION = [
 
 	"seeAlsoAction",
 
-	getFluffObjectKey(),
+	_getFluffObjectKey(),
 
 	...PROPORDER_FOUNDRY_DATA_INLINE,
 ];
@@ -615,7 +618,7 @@ const PROPORDER_BACKGROUND = [
 	"hasFluff",
 	"hasFluffImages",
 
-	getFluffObjectKey(),
+	_getFluffObjectKey(),
 
 	...PROPORDER_FOUNDRY_DATA_INLINE,
 ];
@@ -624,7 +627,7 @@ const PROPORDER_BACKGROUND__COPY_MOD = [
 	"_",
 	...PROPORDER_BACKGROUND,
 ];
-const PROPORDER_FOUNDRY_BACKGROUND_FEATURE = getFoundryGeneric({
+const PROPORDER_FOUNDRY_BACKGROUND_FEATURE = _getFoundryGeneric({
 	propsMatchAdditional: [
 		"backgroundName",
 		"backgroundSource",
@@ -696,6 +699,7 @@ const PROPORDER_CLASS = [
 	"edition",
 
 	"isSidekick",
+	"isHero",
 	"classGroup",
 
 	ObjectKey.getCopyKey({fnGetModOrder: () => PROPORDER_CLASS__COPY_MOD}),
@@ -750,12 +754,13 @@ const PROPORDER_CLASS = [
 
 	"classFeatures",
 
+	"includeSubclassesFrom",
 	"subclassTitle",
 
 	"hasFluff",
 	"hasFluffImages",
 
-	getFluffObjectKey(),
+	_getFluffObjectKey(),
 
 	...PROPORDER_FOUNDRY_DATA_INLINE,
 
@@ -848,7 +853,7 @@ const PROPORDER_SUBCLASS = [
 	"hasFluff",
 	"hasFluffImages",
 
-	getFluffObjectKey(),
+	_getFluffObjectKey(),
 
 	...PROPORDER_FOUNDRY_DATA_INLINE,
 
@@ -943,7 +948,7 @@ const PROPORDER_CLASS_FEATURE = [
 
 	EntryPropOrder.getArrayKey("entries"),
 
-	getFluffObjectKey(),
+	_getFluffObjectKey(),
 
 	...PROPORDER_FOUNDRY_DATA_INLINE,
 ];
@@ -988,7 +993,7 @@ const PROPORDER_SUBCLASS_FEATURE = [
 
 	EntryPropOrder.getArrayKey("entries"),
 
-	getFluffObjectKey(),
+	_getFluffObjectKey(),
 
 	...PROPORDER_FOUNDRY_DATA_INLINE,
 ];
@@ -1086,7 +1091,7 @@ const PROPORDER_LANGUAGE = [
 	"hasFluff",
 	"hasFluffImages",
 
-	getFluffObjectKey(),
+	_getFluffObjectKey(),
 
 	...PROPORDER_FOUNDRY_DATA_INLINE,
 ];
@@ -1122,7 +1127,7 @@ const PROPORDER_CONDITION = [
 	"hasFluff",
 	"hasFluffImages",
 
-	getFluffObjectKey(),
+	_getFluffObjectKey(),
 
 	...PROPORDER_FOUNDRY_DATA_INLINE,
 ];
@@ -1138,7 +1143,7 @@ const PROPORDER_DISEASE = [
 	"hasFluff",
 	"hasFluffImages",
 
-	getFluffObjectKey(),
+	_getFluffObjectKey(),
 
 	...PROPORDER_FOUNDRY_DATA_INLINE,
 ];
@@ -1152,7 +1157,7 @@ const PROPORDER_STATUS = [
 	"hasFluff",
 	"hasFluffImages",
 
-	getFluffObjectKey(),
+	_getFluffObjectKey(),
 
 	...PROPORDER_FOUNDRY_DATA_INLINE,
 ];
@@ -1170,7 +1175,7 @@ const PROPORDER_CULT = [
 	"hasFluff",
 	"hasFluffImages",
 
-	getFluffObjectKey(),
+	_getFluffObjectKey(),
 
 	...PROPORDER_FOUNDRY_DATA_INLINE,
 ];
@@ -1190,7 +1195,7 @@ const PROPORDER_BOON = [
 	"hasFluff",
 	"hasFluffImages",
 
-	getFluffObjectKey(),
+	_getFluffObjectKey(),
 
 	...PROPORDER_FOUNDRY_DATA_INLINE,
 ];
@@ -1234,7 +1239,7 @@ const PROPORDER_DEITY = [
 
 	EntryPropOrder.getArrayKey("entries"),
 
-	getFluffObjectKey(),
+	_getFluffObjectKey(),
 
 	...PROPORDER_FOUNDRY_DATA_INLINE,
 ];
@@ -1287,7 +1292,7 @@ const PROPORDER_FEAT = [
 	"hasFluff",
 	"hasFluffImages",
 
-	getFluffObjectKey(),
+	_getFluffObjectKey(),
 
 	...PROPORDER_FOUNDRY_DATA_INLINE,
 
@@ -1376,7 +1381,7 @@ const PROPORDER_VEHICLE = [
 	"hasFluff",
 	"hasFluffImages",
 
-	getFluffObjectKey(),
+	_getFluffObjectKey(),
 
 	...PROPORDER_FOUNDRY_DATA_INLINE,
 ];
@@ -1592,7 +1597,7 @@ const PROPORDER_ITEM = [
 	"hasFluff",
 	"hasFluffImages",
 
-	getFluffObjectKey(),
+	_getFluffObjectKey(),
 
 	...PROPORDER_FOUNDRY_DATA_INLINE,
 ];
@@ -1626,7 +1631,7 @@ const PROPORDER_MAGICVARIANT = [
 	"hasFluff",
 	"hasFluffImages",
 
-	getFluffObjectKey(),
+	_getFluffObjectKey(),
 
 	...PROPORDER_FOUNDRY_DATA_INLINE,
 ];
@@ -1765,7 +1770,7 @@ const PROPORDER_OBJECT = [
 	"hasFluff",
 	"hasFluffImages",
 
-	getFluffObjectKey(),
+	_getFluffObjectKey(),
 
 	...PROPORDER_FOUNDRY_DATA_INLINE,
 ];
@@ -1811,7 +1816,7 @@ const PROPORDER_OPTIONALFEATURE = [
 	"hasFluff",
 	"hasFluffImages",
 
-	getFluffObjectKey(),
+	_getFluffObjectKey(),
 
 	...PROPORDER_FOUNDRY_DATA_INLINE,
 ];
@@ -1857,11 +1862,11 @@ const PROPORDER_PSIONIC = [
 		},
 	),
 
-	getFluffObjectKey(),
+	_getFluffObjectKey(),
 
 	...PROPORDER_FOUNDRY_DATA_INLINE,
 ];
-const PROPORDER_FOUNDRY_PSIONIC_DISCIPLINE_ACTIVE = getFoundryGeneric({
+const PROPORDER_FOUNDRY_PSIONIC_DISCIPLINE_ACTIVE = _getFoundryGeneric({
 	propsMatchAdditional: [
 		"psionicName",
 		"psionicSource",
@@ -1885,7 +1890,7 @@ const PROPORDER_REWARD = [
 	"hasFluff",
 	"hasFluffImages",
 
-	getFluffObjectKey(),
+	_getFluffObjectKey(),
 
 	...PROPORDER_FOUNDRY_DATA_INLINE,
 ];
@@ -1897,7 +1902,7 @@ const PROPORDER_VARIANTRULE = [
 	"type",
 	EntryPropOrder.getArrayKey("entries"),
 
-	getFluffObjectKey(),
+	_getFluffObjectKey(),
 
 	...PROPORDER_FOUNDRY_DATA_INLINE,
 ];
@@ -1963,7 +1968,7 @@ const PROPORDER_RACE_SUBRACE = [
 	"hasFluff",
 	"hasFluffImages",
 
-	getFluffObjectKey(),
+	_getFluffObjectKey(),
 
 	...PROPORDER_FOUNDRY_DATA_INLINE,
 
@@ -1997,7 +2002,7 @@ const PROPORDER_SUBRACE = [
 
 	...PROPORDER_RACE_SUBRACE,
 ];
-const PROPORDER_FOUNDRY_RACE_FEATURE = getFoundryGeneric({
+const PROPORDER_FOUNDRY_RACE_FEATURE = _getFoundryGeneric({
 	propsMatchAdditional: [
 		"raceName",
 		"raceSource",
@@ -2062,7 +2067,7 @@ const PROPORDER_TRAP = [
 	"hasFluff",
 	"hasFluffImages",
 
-	getFluffObjectKey(),
+	_getFluffObjectKey(),
 
 	...PROPORDER_FOUNDRY_DATA_INLINE,
 ];
@@ -2078,7 +2083,7 @@ const PROPORDER_HAZARD = [
 	"hasFluff",
 	"hasFluffImages",
 
-	getFluffObjectKey(),
+	_getFluffObjectKey(),
 
 	...PROPORDER_FOUNDRY_DATA_INLINE,
 ];
@@ -2116,7 +2121,7 @@ const PROPORDER_RECIPE = [
 	"hasFluff",
 	"hasFluffImages",
 
-	getFluffObjectKey(),
+	_getFluffObjectKey(),
 
 	...PROPORDER_FOUNDRY_DATA_INLINE,
 ];
@@ -2168,7 +2173,7 @@ const PROPORDER_CROCHET_PATTERN = [
 	"hasFluff",
 	"hasFluffImages",
 
-	getFluffObjectKey(),
+	_getFluffObjectKey(),
 
 	...PROPORDER_FOUNDRY_DATA_INLINE,
 ];
@@ -2184,7 +2189,7 @@ const PROPORDER_CHAROPTION = [
 	"hasFluff",
 	"hasFluffImages",
 
-	getFluffObjectKey(),
+	_getFluffObjectKey(),
 
 	...PROPORDER_FOUNDRY_DATA_INLINE,
 ];
@@ -2323,7 +2328,7 @@ const PROPORDER_FACILITY = [
 	"hasFluff",
 	"hasFluffImages",
 
-	getFluffObjectKey(),
+	_getFluffObjectKey(),
 ];
 
 const PROPORDER_CONVERTER_SAMPLE = [
@@ -2652,3 +2657,8 @@ export const PROPORDER_ROOT = [
 	new IgnoredKey("data"),
 	// endregion
 ];
+
+const _PROPORDER_ROOT_PROP_TO_INDEX = Object.fromEntries(
+	PROPORDER_ROOT
+		.map((keyInfo, ix) => [typeof keyInfo === "string" ? keyInfo : keyInfo.key, ix]),
+);

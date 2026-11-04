@@ -2,7 +2,7 @@
 
 // in deployment, `IS_DEPLOYED = "<version number>";` should be set below.
 globalThis.IS_DEPLOYED = undefined;
-globalThis.VERSION_NUMBER = /* 5ETOOLS_VERSION__OPEN */"2.39.1-cn.1"/* 5ETOOLS_VERSION__CLOSE */;
+globalThis.VERSION_NUMBER = /* 5ETOOLS_VERSION__OPEN */"2.40.0"/* 5ETOOLS_VERSION__CLOSE */;
 globalThis.DEPLOYED_IMG_ROOT = "/img/";
 // for the roll20 script to set
 globalThis.IS_VTT = false;
@@ -4782,13 +4782,19 @@ globalThis.MultiSourceUtil = class {
 		switch (prop) {
 			case "class":
 			case "classFluff":
-				return (ent.ENG_name || ent.name || "").toLowerCase().split(" ").at(-1);
+				return this._getClassIndexKey(ent.ENG_name || ent.name);
 			case "subclass":
 			case "subclassFluff":
-				return (ent.className || "").toLowerCase().split(" ").at(-1);
+				return this._getClassIndexKey(ent.className);
 			default:
 				return ent.source;
 		}
+	}
+
+	static _getClassIndexKey (name) {
+		name = (name || "").toLowerCase();
+		if (name.endsWith(" sidekick")) return "sidekick";
+		return name.replace(/\s+/g, "");
 	}
 
 	static isEntityIndexKeyMatch (indexKey, prop, ent) {

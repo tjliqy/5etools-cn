@@ -1,6 +1,7 @@
 {
 	"_meta": {
 		"internalCopies": [
+			"class",
 			"subclass"
 		]
 	},
@@ -807,6 +808,22 @@
 				}
 			],
 			"subclassTitle": "圣武士子职",
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Paladin",
+			"source": "WoW",
+			"reskinOf": [
+				"Paladin|XPHB"
+			],
+			"_copy": {
+				"name": "Paladin",
+				"source": "XPHB"
+			},
+			"includeSubclassesFrom": [
+				"Paladin|XPHB"
+			],
 			"hasFluff": true,
 			"hasFluffImages": true
 		}
@@ -1688,6 +1705,75 @@
 				"巨灵贵胄|圣武士|XPHB|巨灵贵族|FRHoF|20|FRHoF"
 			],
 			"hasFluffImages": true
+		},
+		{
+			"name": "Oath of Devotion",
+			"shortName": "Devotion",
+			"source": "WoW",
+			"className": "Paladin",
+			"classSource": "WoW",
+			"_copy": {
+				"name": "Oath of Devotion",
+				"source": "XPHB",
+				"shortName": "Devotion",
+				"className": "Paladin",
+				"classSource": "XPHB"
+			}
+		},
+		{
+			"name": "Oath of the Holy",
+			"shortName": "Holy",
+			"source": "WoW",
+			"className": "Paladin",
+			"classSource": "WoW",
+			"edition": "one",
+			"additionalSpells": [
+				{
+					"ability": "cha",
+					"prepared": {
+						"3": [
+							"cure wounds|xphb",
+							"healing word|xphb"
+						],
+						"5": [
+							"lesser restoration|xphb",
+							"prayer of healing|xphb"
+						],
+						"9": [
+							"dispel magic|xphb",
+							"mass healing word|xphb"
+						],
+						"13": [
+							"aura of life|xphb",
+							"death ward|xphb"
+						],
+						"17": [
+							"greater restoration|xphb",
+							"mass cure wounds|xphb"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Oath of the Holy|Paladin|WoW|Holy|WoW|3",
+				"Lightbringer's Aura|Paladin|WoW|Holy|WoW|7",
+				"Infusion of Light|Paladin|WoW|Holy|WoW|15",
+				"Holy Deliverance|Paladin|WoW|Holy|WoW|20"
+			]
+		},
+		{
+			"name": "Oath of Vengeance",
+			"shortName": "Vengeance",
+			"source": "WoW",
+			"className": "Paladin",
+			"classSource": "WoW",
+			"_copy": {
+				"name": "Oath of Vengeance",
+				"source": "XPHB",
+				"shortName": "Vengeance",
+				"className": "Paladin",
+				"classSource": "XPHB"
+			}
 		}
 	],
 	"classFeature": [

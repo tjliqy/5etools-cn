@@ -214,8 +214,9 @@ class _RenderBestiaryImplBase {
 	/* ----- */
 
 	_getCommonHtmlParts_hitPoints ({mon, isInlinedToken}) {
-		const label = this._style === "classic" ? I18nUtil.get("common.hit_points") : "HP";
-		const ptTitle = this._style === "classic" ? "" : `title="${I18nUtil.get("common.hit_points")}"`;
+		const labelFull = mon.hp?.isTemporary ? "临时生命值" : "生命值";
+		const label = this._style === "classic" ? labelFull : mon.hp?.isTemporary ? "临时HP" : "HP";
+		const ptTitle = this._style === "classic" ? "" : `title="${labelFull}"`;
 		const rendered = mon.hp == null ? "\u2014" : Renderer.monster.getRenderedHp(mon.hp);
 		return `<tr><td colspan="6"><div ${isInlinedToken ? `class="ve-stats__wrp-avoid-token"` : ""}><strong ${ptTitle}>${label}</strong> ${rendered}</div></td></tr>`;
 	}

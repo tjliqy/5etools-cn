@@ -496,7 +496,7 @@ class PageFilterSpells extends PageFilterBase {
 		this._affectsCreatureTypeFilter = new Filter({
 			cnHeader: "受术种族",
 			header: "Affects Creature Types",
-			items: Parser.MON_TYPES.map(mon => Parser.MON_TYPE_TO_PLURAL[mon] || mon),
+			items: Parser.MON_TYPES_STANDARD.map(mon => Parser.MON_TYPE_TO_PLURAL[mon] || mon),
 			displayFn: StrUtil.toTitleCase.bind(StrUtil),
 		});
 	}
@@ -562,7 +562,7 @@ class PageFilterSpells extends PageFilterBase {
 		if (s.range.type === "line" && !s._fAreaTags.includes("L")) s._fAreaTags.push("L");
 		if (s.range.type === "emanation" && !s._fAreaTags.includes("E")) s._fAreaTags.push("E");
 
-		s._fAffectsCreatureType = s.affectsCreatureType || [...Parser.MON_TYPES];
+		s._fAffectsCreatureType = s.affectsCreatureType || [...Parser.MON_TYPES_STANDARD];
 	}
 
 	static unmutateForFilters (s) {

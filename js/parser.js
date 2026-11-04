@@ -584,6 +584,7 @@ Parser.skillToShort = function (skill) {
 
 Parser.LANGUAGES_STANDARD = [
 	"Common",
+	"Common Sign Language",
 	"Dwarvish",
 	"Elvish",
 	"Giant",
@@ -2216,6 +2217,7 @@ Parser.ENVIRONMENT__PLANAR_LIMBO = "planar, limbo";
 Parser.ENVIRONMENT__PLANAR_MECHANUS = "planar, mechanus";
 Parser.ENVIRONMENT__PLANAR_OUTLANDS = "planar, outlands";
 
+Parser.ENVIRONMENT__PLANAR_EMERALD_DREAM = "planar, emerald dream";
 Parser.ENVIRONMENT__PLANAR_TWISTING_NETHER = "planar, twisting nether";
 
 Parser.ENVIRONMENT__GROUP_PLANAR = "planar";
@@ -2323,6 +2325,7 @@ Parser.ENVIRONMENT_DISPLAY_NAMES = {
 
 	[Parser.ENVIRONMENT__PLANAR_OUTLANDS]: "位面（外域）",
 
+	[Parser.ENVIRONMENT__PLANAR_EMERALD_DREAM]: "位面 （翡翠梦境）",
 	[Parser.ENVIRONMENT__PLANAR_TWISTING_NETHER]: "位面（扭曲虚空）",
 
 	[Parser.ENVIRONMENT__GROUP_PLANAR_TRANSITIVE]: "位面（过渡位面）",
@@ -3151,6 +3154,10 @@ Parser.TP_MONSTROSITY = "monstrosity";
 Parser.TP_OOZE = "ooze";
 Parser.TP_PLANT = "plant";
 Parser.TP_UNDEAD = "undead";
+Parser.TP_VEHICLE = "vehicle";
+Parser.TP_SPECIAL = "special";
+Parser.MON_TYPES = [Parser.TP_ABERRATION, Parser.TP_BEAST, Parser.TP_CELESTIAL, Parser.TP_CONSTRUCT, Parser.TP_DRAGON, Parser.TP_ELEMENTAL, Parser.TP_FEY, Parser.TP_FIEND, Parser.TP_GIANT, Parser.TP_HUMANOID, Parser.TP_MONSTROSITY, Parser.TP_OOZE, Parser.TP_PLANT, Parser.TP_UNDEAD, Parser.TP_VEHICLE, Parser.TP_SPECIAL];
+Parser.MON_TYPES_STANDARD = Parser.MON_TYPES.filter(it => ![Parser.TP_VEHICLE, Parser.TP_SPECIAL].includes(it));
 Parser.MON_TYPE_TO_PLURAL = {};
 Parser.MON_TYPE_TO_PLURAL[Parser.TP_ABERRATION] = "异怪";
 Parser.MON_TYPE_TO_PLURAL[Parser.TP_BEAST] = "野兽";
@@ -3168,6 +3175,8 @@ Parser.MON_TYPE_TO_PLURAL[Parser.TP_PLANT] = "植物";
 Parser.MON_TYPE_TO_PLURAL[Parser.TP_UNDEAD] = "亡灵";
 Parser.MON_EN_TYPES = [Parser.TP_ABERRATION, Parser.TP_BEAST, Parser.TP_CELESTIAL, Parser.TP_CONSTRUCT, Parser.TP_DRAGON, Parser.TP_ELEMENTAL, Parser.TP_FEY, Parser.TP_FIEND, Parser.TP_GIANT, Parser.TP_HUMANOID, Parser.TP_MONSTROSITY, Parser.TP_OOZE, Parser.TP_PLANT, Parser.TP_UNDEAD];
 Parser.MON_TYPES = Parser.MON_EN_TYPES.map(it => Parser.MON_TYPE_TO_PLURAL[it] || it);
+Parser.MON_TYPE_TO_PLURAL[Parser.TP_VEHICLE] = "载具";
+Parser.MON_TYPE_TO_PLURAL[Parser.TP_SPECIAL] = "特殊";
 
 Parser.SZ_FINE = "F";
 Parser.SZ_DIMINUTIVE = "D";
@@ -3543,6 +3552,8 @@ Parser.SRC_BQDD = "BQDD";
 Parser.SRC_SoS = "SoS";
 Parser.SRC_RWG = "RWG";
 Parser.SRC_PL = "PL";
+Parser.SRC_WoW = "WoW";
+Parser.SRC_ICC = "ICC";
 
 Parser.SRC_PS_PREFIX = "PS";
 
@@ -3768,6 +3779,8 @@ Parser.SOURCE_JSON_TO_FULL[Parser.SRC_BQDD] = "边陲之地任务：匕首危机
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_SoS] = "席斯库斯之影";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_RWG] = "红袍巫师的博弈";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PL] = "拉莫迪亚计划";
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_WoW] = "D&D：魔兽世界";
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_ICC] = "魔兽世界：冰冠堡垒";
 
 Parser.SOURCE_JSON_TO_ABV = {};
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHB] = "PHB'14";
@@ -3957,6 +3970,8 @@ Parser.SOURCE_JSON_TO_ABV[Parser.SRC_BQDD] = "BQDD";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_SoS] = "SoS";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_RWG] = "RWG";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PL] = "PL";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_WoW] = "WoW";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_ICC] = "ICC";
 
 Parser.SOURCE_JSON_TO_DATE = {};
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_PHB] = "2014-08-19";
@@ -4145,6 +4160,8 @@ Parser.SOURCE_JSON_TO_DATE[Parser.SRC_BQDD] = "2026-05-28";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_SoS] = "2026-05-29";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_RWG] = "2026-09-15";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_PL] = "2026-10-13";
+Parser.SOURCE_JSON_TO_DATE[Parser.SRC_WoW] = "2026-11-17";
+Parser.SOURCE_JSON_TO_DATE[Parser.SRC_ICC] = "2026-11-17";
 
 // region Source categories
 Parser.SOURCES_ADVENTURES = new Set([
@@ -4252,6 +4269,7 @@ Parser.SOURCES_ADVENTURES = new Set([
 	Parser.SRC_SoS,
 	Parser.SRC_RWG,
 	Parser.SRC_PL,
+	Parser.SRC_ICC,
 ]);
 Parser.SOURCES_CORE_SUPPLEMENTS = new Set(Object.keys(Parser.SOURCE_JSON_TO_FULL).filter(it => !Parser.SOURCES_ADVENTURES.has(it)));
 Parser.SOURCES_NON_STANDARD_WOTC = new Set([
@@ -4445,6 +4463,8 @@ Parser.SOURCES_NON_FR = new Set([
 	Parser.SRC_EFA,
 	Parser.SRC_FFotR,
 	Parser.SRC_PL,
+	Parser.SRC_WoW,
+	Parser.SRC_ICC,
 ]);
 
 // endregion
@@ -4505,6 +4525,7 @@ Parser.SOURCES_AVAILABLE_DOCS_BOOK = {};
 	Parser.SRC_XSCREEN_RHW,
 	Parser.SRC_AU,
 	Parser.SRC_PL,
+	Parser.SRC_WoW,
 ].forEach(src => {
 	Parser.SOURCES_AVAILABLE_DOCS_BOOK[src] = src;
 	Parser.SOURCES_AVAILABLE_DOCS_BOOK[src.toLowerCase()] = src;
@@ -4622,6 +4643,7 @@ Parser.SOURCES_AVAILABLE_DOCS_ADVENTURE = {};
 	Parser.SRC_AUD,
 	Parser.SRC_RWG,
 	Parser.SRC_SoS,
+	Parser.SRC_ICC,
 ].forEach(src => {
 	Parser.SOURCES_AVAILABLE_DOCS_ADVENTURE[src] = src;
 	Parser.SOURCES_AVAILABLE_DOCS_ADVENTURE[src.toLowerCase()] = src;

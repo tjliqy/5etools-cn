@@ -1,6 +1,7 @@
 {
 	"_meta": {
 		"internalCopies": [
+			"class",
 			"subclass"
 		]
 	},
@@ -914,6 +915,22 @@
 			"subclassTitle": "游荡者子职",
 			"hasFluff": true,
 			"hasFluffImages": true
+		},
+		{
+			"name": "Rogue",
+			"source": "WoW",
+			"reskinOf": [
+				"Rogue|XPHB"
+			],
+			"_copy": {
+				"name": "Rogue",
+				"source": "XPHB"
+			},
+			"includeSubclassesFrom": [
+				"Rogue|XPHB"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
 		}
 	],
 	"subclass": [
@@ -1506,6 +1523,9 @@
 					"source": "SCAG",
 					"page": 135
 				}
+			],
+			"reprintedAs": [
+				"Swashbuckler|Rogue|WoW|WoW"
 			],
 			"edition": "classic",
 			"subclassFeatures": [
@@ -2181,6 +2201,48 @@
 				"死亡之友|游荡者|XPHB|鬼魅|RHW|17|RHW"
 			],
 			"hasFluffImages": true
+		},
+		{
+			"name": "Assassin",
+			"shortName": "Assassin",
+			"source": "WoW",
+			"className": "Rogue",
+			"classSource": "WoW",
+			"_copy": {
+				"name": "Assassin",
+				"source": "XPHB",
+				"shortName": "Assassin",
+				"className": "Rogue",
+				"classSource": "XPHB"
+			}
+		},
+		{
+			"name": "Soulknife",
+			"shortName": "Soulknife",
+			"source": "WoW",
+			"className": "Rogue",
+			"classSource": "WoW",
+			"_copy": {
+				"name": "Soulknife",
+				"source": "XPHB",
+				"shortName": "Soulknife",
+				"className": "Rogue",
+				"classSource": "XPHB"
+			}
+		},
+		{
+			"name": "Swashbuckler",
+			"shortName": "Swashbuckler",
+			"source": "WoW",
+			"className": "Rogue",
+			"classSource": "WoW",
+			"edition": "one",
+			"subclassFeatures": [
+				"Swashbuckler|Rogue|WoW|Swashbuckler|WoW|3",
+				"Panache|Rogue|WoW|Swashbuckler|WoW|9",
+				"Dashing Strikes|Rogue|WoW|Swashbuckler|WoW|13",
+				"Master Duelist|Rogue|WoW|Swashbuckler|WoW|17"
+			]
 		}
 	],
 	"classFeature": [

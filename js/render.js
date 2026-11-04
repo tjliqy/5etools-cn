@@ -4510,7 +4510,7 @@ Renderer.utils = class {
 					return `${raceName}${it.subrace != null ? ` (${it.subrace})` : ""}`;
 				}
 			});
-			return isListMode ? parts.join("/") : parts.joinConjunct(", ", " 或 ");
+			return isListMode ? parts.join("/") : `${parts.joinConjunct(", ", " 或 ")}${styleHint === "one" ? " 种族" : ""}`;
 		}
 
 		static _getEntry_background ({v, isListMode, keyOptions, styleHint}) {
@@ -4596,6 +4596,26 @@ Renderer.utils = class {
 		}
 
 		static _getEntry_proficiency ({v, isListMode, keyOptions, styleHint}) {
+			if (!isListMode && v.length > 1 && v.every(obj => Object.keys(obj).length === 1)) {
+				for (const prop of ["weapon", "weaponGroup", "skill", "tool"]) {
+					if (
+						!v.every(obj => (
+							["skill", "tool"].includes(prop)
+								? (obj[prop] instanceof Array && obj[prop].length === 1)
+								: typeof obj[prop] === "string"
+						))
+					) continue;
+
+					switch (prop) {
+						case "weapon": return `Proficiency with a ${v.map(obj => obj[prop]).joinConjunct(", ", " or ")} weapon`;
+						case "weaponGroup": return `${v.map(obj => obj[prop].toTitleCase()).joinConjunct(", ", " or ")} Weapon Proficiency`;
+						case "skill": return `Proficiency in the ${v.map(obj => `{@skill ${obj[prop][0].toTitleCase()}}`).joinConjunct(", ", " or ")} skill`;
+						case "tool": return `Proficiency with ${v.map(obj => obj[prop][0].toTitleCase()).joinConjunct(", ", " or ")}`;
+						default: throw new Error("Unimplemented!");
+					}
+				}
+			}
+
 			const parts = v.map(obj => {
 				return Object.entries(obj).map(([profType, prof]) => {
 					switch (profType) {
@@ -4619,6 +4639,12 @@ Renderer.utils = class {
 							return isListMode
 								? prof.map(skill => skill.toTitleCase()).join("+")
 								: `熟练于${prof.map(skill => `{@skill ${skill.toTitleCase()}}`).join("、")}`;
+						}
+						case "tool": {
+							if (prof === true) return isListMode ? "工具熟练项" : "熟练于一个工具";
+							return isListMode
+								? prof.map(tool => tool.toTitleCase()).join("+")
+								: `熟练于${prof.map(tool => tool.toTitleCase()).joinConjunct(", ", " and ")}`;
 						}
 						default: throw new Error(`Unhandled proficiency type: "${profType}"`);
 					}
@@ -10195,8 +10221,9 @@ class _RenderCompactBestiaryImplBase {
 		const labelAc = this._style !== "classic" ? "AC" : I18nUtil.get("common.armor_class");
 		const titleAc = this._style !== "classic" ? `title="${I18nUtil.get("common.armor_class")}"` : "";
 
-		const labelHp = this._style !== "classic" ? "HP" : I18nUtil.get("common.hit_points");
-		const titleHp = this._style !== "classic" ? `title="${I18nUtil.get("common.hit_points")}"` : "";
+		const labelHpFull = mon.hp?.isTemporary ? "临时生命值" : "生命值";
+		const labelHp = mon.hp?.isTemporary ? "临时HP" : (this._style === "classic" ? labelHpFull : "HP");
+		const titleHp = (this._style === "classic" && !mon.hp?.isTemporary) ? "" : `title="${labelHpFull}"`;
 
 		const labelCr = isShowSpellLevelScaler ? I18nUtil.get("common.spell_level") : isShowClassLevelScaler ? (classLevelScalerClass ? "职业等级" : "等级") : (this._style !== "classic" ? "CR" : I18nUtil.get("common.challenge"));
 		const titleCr = isShowSpellLevelScaler ? "" : isShowClassLevelScaler ? "" : (this._style !== "classic" ? `title="${I18nUtil.get("common.challenge_rating")}"` : "");
@@ -11235,6 +11262,12 @@ Renderer.monster = class {
 		renderer ||= Renderer.get();
 
 		const typeObj = Parser.monTypeToFullObj(mon.type);
+		const ptType = [
+			mon.type?.typeHidden ? "" : typeObj.asText,
+			mon.typeNote ? renderer.render(mon.typeNote) : "",
+		]
+			.filter(Boolean)
+			.join(" ");
 
 		return [
 			mon.level != null ? `${mon.level} 级` : "",
@@ -11242,11 +11275,11 @@ Renderer.monster = class {
 			Renderer.utils.getRenderedSize(mon.size),
 			mon.sizeNote ? renderer.render(mon.sizeNote) : "",
 			[
-				typeObj.asText,
+				ptType,
 				mon.alignment ? `${mon.alignmentPrefix ? renderer.render(mon.alignmentPrefix) : ""}${Parser.alignmentListToFull(mon.alignment).toTitleCase()}` : "",
 			]
 				.filter(Boolean)
-				.join(typeObj.asText.includes(",") ? "; " : ", "),
+				.join(ptType.includes(",") ? "; " : ", "),
 		]
 			.filter(Boolean)
 			.join(" ");
@@ -16028,6 +16061,7 @@ Renderer.generic = class {
 		"artisan's tools",
 		"gaming set",
 		"musical instrument",
+		"vehicles",
 	]);
 	static FEATURE__TOOLS_ALL = [
 		"artisan's tools",
@@ -16047,13 +16081,14 @@ Renderer.generic = class {
 		"navigator's tools",
 		"thieves' tools",
 		"poisoner's kit",
+		"vehicles",
 		"vehicles (land)",
 		"vehicles (water)",
 		"vehicles (air)",
 		"vehicles (space)",
 	];
 
-	static _FEATURE__LANGUAGES_ALL = Parser.LANGUAGES_ALL.map(it => it.toLowerCase());
+	static _FEATURE__LANGUAGES_ALL = [...Parser.LANGUAGES_ALL, "Other"].map(it => it.toLowerCase());
 	static _FEATURE__LANGUAGES_STANDARD__CHOICE_OBJ = {
 		from: [
 			...Parser.LANGUAGES_STANDARD
@@ -16097,7 +16132,7 @@ Renderer.generic = class {
 
 	// region Should mirror the schema
 	static _SKILL_TOOL_LANGUAGE_KEYS__SKILL_ANY = new Set(["anySkill"]);
-	static _SKILL_TOOL_LANGUAGE_KEYS__TOOL_ANY = new Set(["anyTool", "anyArtisansTool"]);
+	static _SKILL_TOOL_LANGUAGE_KEYS__TOOL_ANY = new Set(["anyTool", "anyArtisansTool", "anyGamingSet", "anyMusicalInstrument"]);
 	static _SKILL_TOOL_LANGUAGE_KEYS__LANGAUGE_ANY = new Set(["anyLanguage", "anyStandardLanguage", "anyExoticLanguage", "anyRareLanguage"]);
 	// endregion
 
@@ -17983,6 +18018,7 @@ Renderer.hover = class {
 			case UrlUtil.PG_QUICKREF: return Renderer.hover.getGenericCompactRenderedString.bind(Renderer.hover);
 			case UrlUtil.PG_CLASSES: return Renderer.class.getCompactRenderedString.bind(Renderer.class);
 			case UrlUtil.PG_SPELLS: return Renderer.spell.getCompactRenderedString.bind(Renderer.spell);
+			case "itemGroup":
 			case UrlUtil.PG_ITEMS: return Renderer.item.getCompactRenderedString.bind(Renderer.item);
 			case UrlUtil.PG_BESTIARY: return it => Renderer.monster.getCompactRenderedString(it, {isShowScalers: !isStatic, isScaledCr: it._originalCr != null, isScaledSpellSummon: it._isScaledSpellSummon, isScaledClassSummon: it._isScaledClassSummon});
 			case UrlUtil.PG_CONDITIONS_DISEASES: return Renderer.conditionDisease.getCompactRenderedString.bind(Renderer.conditionDisease);
@@ -18029,6 +18065,7 @@ Renderer.hover = class {
 
 	static getFnRenderCompact (page, {isStatic = false} = {}) {
 		const fn = this._getFnRenderCompact({page, isStatic});
+		if (!fn) return null;
 		return (...args) => Renderer.get().withSetRenderHeaderIndex(false, () => fn(...args));
 	}
 
