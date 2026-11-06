@@ -2917,14 +2917,7 @@
 									"白",
 									"寒冷"
 								]
-							}
-						},
-						"5": {
-							"daily": {
-								"1": [
-									"prayer of healing|xphb"
-								]
-							}
+							]
 						}
 					]
 				},
@@ -3085,7 +3078,16 @@
 							"resist": [
 								"cold"
 							]
-						}
+							},
+							{
+								"_variables": {
+									"color": "白",
+									"damageType": "寒冷"
+								},
+								"resist": [
+									"cold"
+								]
+							}
 					]
 				}
 			]
@@ -3126,16 +3128,14 @@
 								]
 							}
 						},
-						{
-							"_variables": {
-								"color": "白",
-								"damageType": "寒冷"
-							},
-							"resist": [
-								"cold"
-							]
-						}
-					},
+							"5": {
+								"daily": {
+									"1": [
+										"invisibility"
+									]
+								}
+							}
+						},
 					"ability": {
 						"choose": [
 							"int",
