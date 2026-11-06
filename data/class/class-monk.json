@@ -2000,6 +2000,23 @@
 			"source": "WoW",
 			"className": "武僧",
 			"classSource": "WoW",
+			"_copy": {
+				"name": "Warrior of Mystic Brews",
+				"source": "WoW",
+				"shortName": "Mystic Brews",
+				"className": "Monk",
+				"classSource": "XPHB",
+				"_preserve": {
+					"*": true
+				}
+			}
+		},
+		{
+			"name": "Warrior of Mystic Brews",
+			"shortName": "Mystic Brews",
+			"source": "WoW",
+			"className": "Monk",
+			"classSource": "XPHB",
 			"edition": "one",
 			"subclassFeatures": [
 				"秘酿武者|武僧|WoW|秘酿|WoW|3",

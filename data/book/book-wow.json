@@ -13089,7 +13089,7 @@
 													"id": "52e",
 													"href": {
 														"type": "internal",
-														"path": "book/WoW/091-06-029.map-azjol-nerub-player.webp"
+														"path": "book/WoW/thumbnail/090-06-029.map-azjol-nerub.webp"
 													},
 													"width": 1700,
 													"height": 2301,
@@ -13672,6 +13672,19 @@
 													"角色听到海底之下做梦的上古之神的低语。他们必须通过{@dc 19}的感知豁免，否则受{@condition 震慑|XPHB}状态直到其下个回合结束。在此表上再掷一次。"
 												]
 											]
+										},
+										{
+											"type": "inset",
+											"name": "About the Deadmines",
+											"id": "44f",
+											"entries": [
+												"The Deadmines dungeon has been part of {@i World of Warcraft} from the launch of the game, and its story has roots in the very first Warcraft game. In its original version and as presented here, it is the lair of the Defias Brotherhood under that group's original leader, {@creature Edwin VanCleef|WoW}. During the Cataclysm, the dungeon's story advanced: Edwin VanCleef was slain, but his young daughter took his place and adopted his mission of revenge\u2014fueled still further by watching her father die at the hands of adventurers. (Vanessa VanCleef uses the same stat block as her father.)",
+												"Besides the VanCleef family, some other personnel changes took place in the Deadmines:",
+												"{@b Glubtok}, a two-headed ogre mage (Large {@creature Mage Apprentice|XMM} with the Giant creature type), took over Rhahk'Zor's role as foreman.",
+												"{@b Helix Gearbreaker} took over for Sneed in the Mast Room. Instead of a shredder, Helix ({@creature Goblin Boss|XMM}) is guarded by a hobgoblin called the Lumbering Oaf (use the {@creature Bugbear Stalker|XMM} stat block).",
+												"{@b Foe Reaper 5000} now keeps watch over the Goblin Foundry. An improved version of the earlier prototypes, this one uses the {@creature Scarecrow|XMM} stat block and is aided by molten slags ({@creature Magmin|XMM|Magmins}).",
+												"{@b \"Captain\" Cookie} has usurped the position of Captain Greenskin, though the worgen Admiral Ripsnarl ({@creature Werewolf|XMM}) commands the Juggernaut."
+											]
 										}
 									]
 								},
@@ -13766,6 +13779,19 @@
 													"tag": "creature",
 													"source": "WoW",
 													"style": "narrow"
+												},
+												{
+													"type": "insetReadaloud",
+													"id": "453",
+													"entries": [
+														{
+															"type": "quote",
+															"entries": [
+																"Remember your first time in the Deadmines? I remember it like it was tomorrow."
+															],
+															"by": "Chromie"
+														}
+													]
 												}
 											]
 										},
@@ -13850,6 +13876,19 @@
 													"tag": "creature",
 													"source": "WoW",
 													"style": "narrow"
+												},
+												{
+													"type": "insetReadaloud",
+													"id": "457",
+													"entries": [
+														{
+															"type": "quote",
+															"entries": [
+																"It's fun to watch Cookie, knowing what's in store for the humble murloc."
+															],
+															"by": "Chromie"
+														}
+													]
 												}
 											]
 										},
@@ -13978,18 +14017,18 @@
 												},
 												{
 													"type": "image",
-													"id": "532",
+													"id": "534",
 													"href": {
 														"type": "internal",
-														"path": "book/WoW/101-06-031.map-deadmines-player.webp"
+														"path": "book/WoW/104-06-032.map-dire-maul-player.webp"
 													},
 													"width": 1700,
-													"height": 1090,
+													"height": 2328,
 													"imageType": "mapPlayer",
 													"title": "玩家版本",
 													"credit": "Damien Mammoliti",
 													"mapParent": {
-														"id": "531"
+														"id": "533"
 													}
 												}
 											]
@@ -14274,6 +14313,62 @@
 													"埃德温·范克里夫：{@item 速度之靴|XDMG}"
 												]
 											]
+										},
+										{
+											"type": "entries",
+											"name": "Ogre Tribute",
+											"id": "474",
+											"entries": [
+												"Ogre tradition holds that any ogre who slays {@creature King Gordok|WoW} in a one-on-one battle becomes the new King Gordok. If at least one character is disguised as an ogre, killing King Gordok in such a duel makes them the king.",
+												{
+													"type": "entries",
+													"name": "Duel of Honor",
+													"id": "475",
+													"entries": [
+														"A solo fight against King Gordok is a death sentence for most characters. You can make the fight easier by not using his Legendary Actions. However, the goal of a solo fight is to survive until someone realizes that King Gordok cheats by letting {@creature Cho'Rush the Observer|WoW} secretly heal him (see the Adviser's Aid Bonus Action in his stat block). Revealing this causes the ogre audience to roar for the whole party to join the fight and kill the \"cheater king.\""
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Aftermath",
+													"id": "476",
+													"entries": [
+														"If Cho'Rush survives, he declares the winner the new king. Without his declaration, the ogres all brawl to become the new king. To hail the new king, the surviving ogres bestow tribute or grant {@book Blessings|XDMG|2|Blessings} and {@book Charms|XDMG|2|Charms} (see the Dungeon Master's Guide) with shamanic magic:",
+														{
+															"type": "list",
+															"style": "list-hang-notitle",
+															"items": [
+																{
+																	"type": "item",
+																	"name": "Guard Fengus:",
+																	"entry": "{@dice 3d10 × 10,000} CP"
+																},
+																{
+																	"type": "item",
+																	"name": "Guard Mol'dar:",
+																	"entry": "{@reward Charm of Vitality|XDMG}"
+																},
+																{
+																	"type": "item",
+																	"name": "Guard Slip'kik:",
+																	"entry": "{@reward Charm of Clairvoyance|WoW} (functions as a {@item Potion of Clairvoyance|XDMG})"
+																},
+																{
+																	"type": "item",
+																	"name": "Stomper Kreeg:",
+																	"entry": "Strong rum worth {@dice 8d6 × 100} GP"
+																},
+																{
+																	"type": "item",
+																	"name": "Captain Kromcrush:",
+																	"entry": "{@reward Blessing of Valhalla|WoW} that summons {@creature Ogre|XMM|Ogres} instead of {@creature Berserker|XMM|Berserkers}"
+																}
+															]
+														},
+														"{@b Cho'Rush the Observer}: Unread {@item Tome of Leadership and Influence|XDMG} pilfered from the elves"
+													]
+												}
+											]
 										}
 									]
 								},
@@ -14302,6 +14397,7 @@
 														}
 													}
 												},
+												"A craven {@creature Fel Imp|WoW} who knows every inch of Dire Maul, Pusillin has a Crescent Key, which opens any door in the Capital Gardens.",
 												{
 													"ENG_name": "Foreman Rhahk'Zor",
 													"name": "工头拉克佐",
@@ -14311,8 +14407,9 @@
 													"style": "narrow"
 												},
 												{
-													"type": "insetReadaloud",
-													"id": "453",
+													"type": "entries",
+													"name": "Ritual of J'eevee (1/Day)",
+													"id": "47a",
 													"entries": [
 														{
 															"type": "quote",
@@ -14343,6 +14440,8 @@
 														}
 													}
 												},
+												"Zevrim is a {@creature Felsworn Satyr|WoW} and the second-in-command of the Wildspawn satyr cult. He has a secret deal with the Crimson Ring to sacrifice gladiators who lose their bouts but survive. His blood rites have whipped the elemental Hydrospawn into a murderous frenzy.",
+												"Zevrim hates living in Alzzin's shadow; he tries to impress the Burning Legion in hopes of a promotion.",
 												{
 													"ENG_name": "Sneed's Shredder",
 													"name": "斯尼德的伐木机",
@@ -14419,7 +14518,8 @@
 															"by": "克罗米"
 														}
 													]
-												}
+												},
+												"Old Ironbark is a Friendly {@creature Ancient of War|WoW} that has the {@condition Petrified|XPHB} condition. If freed, he helps the characters defeat Alzzin the Wildshaper. Attempts to end the Petrified condition on him (such as with a {@spell Greater Restoration|XPHB} spell) fail unless Zevrim Thornhoof is slain first."
 											]
 										},
 										{
@@ -14588,6 +14688,14 @@
 														"厄运之槌的正门已被砸开。食人魔哨兵向聚集在破碎广场的无赖们强收过路费，拒不缴纳者会被碾碎。食人魔们避开通往扭木区的侧道，因为一头处于{@condition 石化|XPHB}状态的{@creature 战争古树|WoW}挡住了去路。该状态结束后它就会移动。"
 													]
 												},
+												"Tendris Warpwood ({@creature Ancient of War|WoW}) was an unquestioning defender of Eldre'Thalas, his heart inexorably entwined with the fate of the city. Just as fel magic corrupted his prince, so too did it infect the ancient's spirit."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Illyanna Ravenoak",
+											"id": "482",
+											"entries": [
 												{
 													"ENG_name": "Broken Commons",
 													"name": "破碎广场",
@@ -14650,7 +14758,14 @@
 													"entries": [
 														"从南面坡道进入此区域的角色必须穿过\"海德斯泡\"（{@creature 水巨灵|XMM}）的水池\u2014\u2014那是一头强大的水元素。泽夫里姆·荆蹄（见\"{@area 扭木区人物|47b|x}\"）及其卫兵（{@creature 末日守卫|WoW|末日守卫}）在池上方的阁楼主持血祭。与海德斯泡的战斗开始后一轮，他们便加入战团。"
 													]
-												},
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Prince Tortheldrin",
+											"id": "486",
+											"entries": [
 												{
 													"ENG_name": "Conservatory (Outdoors)",
 													"name": "温室（室外）",
@@ -14670,7 +14785,25 @@
 													]
 												}
 											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Gordok Commons Characters",
+									"id": "487",
+									"entries": [
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "bestiary/WoW/King Gordok.webp"
+											},
+											"width": 673,
+											"height": 923,
+											"credit": "Christopher Moeller"
 										},
+										"The upper echelons of Gordrunni society have turned Dire Maul's north wing into their den. The creatures here are listed in the order they're most likely encountered.",
 										{
 											"ENG_name": "West Wing: Capital Gardens",
 											"name": "西翼：首都花园",
@@ -14687,6 +14820,8 @@
 														"伊莫尔塔监狱的力场穹顶由本翼区的五座尖塔发生器维持。更多信息见\"{@area 伊莫尔塔|483|x}\"；它们在地图上以亮蓝色水晶表示。"
 													]
 												},
+												"Kromcrush is the captain of the guard. He got his position by sweet-talking {@creature King Gordok|WoW}, not through any exceptional skill. Kromcrush and his lieutenants use the {@creature Berserker Commander|XMM} stat block, but as ogres, their size is Large and their creature type is Giant.",
+												"Kromcrush has four lieutenants:",
 												{
 													"ENG_name": "Capital Gardens",
 													"name": "首都花园",
@@ -14695,7 +14830,14 @@
 													"entries": [
 														"首都花园的庭院是一片虬结的石化树林，渗着邪能汁液。花园西侧的坡道向下通向坦德里丝·扭木（见\"{@area 首都花园人物|481|x}\"），它与两名{@creature 树人|XMM|树人}盟友（没有活化树木动作）看守着伊莫尔塔监狱的大门（地图上标为 D）。大厅西北角的阶梯（地图上标为 E）通向上层精灵庭院。"
 													]
-												},
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Knot Thimblejack",
+											"id": "489",
+											"entries": [
 												{
 													"ENG_name": "Court of the Highborne",
 													"name": "上层精灵庭院",
@@ -14705,6 +14847,14 @@
 														"被{@creature 托塞德林王子|WoW|托塞德林王子}屠戮者的亡灵形骸，以{@creature 邪灵|XMM|怨灵}和{@creature 还魂鬼山|XMM|墓园复仇者}的形态在上层精灵庭院徘徊，无尽重复着生前的举动。{@creature 伊琳娜·暗木|WoW}和她的巨熊菲拉（见\"{@area 首都花园人物|482|x}\"）受诅咒守卫这座露台。她发起攻击时，此区域所有剩余亡灵都会参战。"
 													]
 												},
+												"Knot Thimblejack ({@creature Goblin Minion|XMM}) is a tailor who made costumes for gladiators in the Maul, specializing in ogre suits. He was snatched in the night by ogres for his disrespect and thrown in irons. A character can take the {@action Utilize|XPHB} action to try to pick the lock using {@item Thieves' Tools|XPHB}, doing so with a successful {@dc 25} Dexterity ({@skill Sleight of Hand|XPHB}) check; alternatively, stealing the key from Guard Slip'kik's pocket requires a successful {@dc 15} Dexterity ({@skill Sleight of Hand|XPHB}) check. If the characters save Knot, he gives them a magic cap. It functions as a {@item Hat of Disguise|XDMG} that allows the wearer to appear as an ogre."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Cho'Rush the Observer",
+											"id": "48a",
+											"entries": [
 												{
 													"ENG_name": "Prison of Immol'thar",
 													"name": "伊莫尔塔监狱",
@@ -14762,7 +14912,26 @@
 											]
 										}
 									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Onyxia's Lair",
+							"id": "491",
+							"entries": [
+								"{@i For Level 17\u201320 Characters • Dragonflights}",
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/WoW/109-06-019.onyxia.webp"
+									},
+									"width": 850,
+									"height": 1388,
+									"credit": "Alex Stone"
 								},
+								"A jagged stone edifice looms in the southern wilds of Dustwallow Marsh. Near enough to threaten Theramore and spy on Orgrimmar, Onyxia, daughter of Deathwing, spins her schemes from the seething depths of her volcanic lair. The regent of Stormwind and the Warchief of the Horde will both pay handsomely for Onyxia's head.",
 								{
 									"ENG_name": "Sample Encounters",
 									"name": "遭遇示例",
@@ -15204,9 +15373,10 @@
 											"entries": [
 												{
 													"type": "image",
+													"id": "537",
 													"href": {
 														"type": "internal",
-														"path": "bestiary/WoW/Immolthar.webp"
+														"path": "book/WoW/113-06-034.map-scarlet-monastery.webp"
 													},
 													"width": 850,
 													"height": 1019,
@@ -16306,9 +16476,10 @@
 												},
 												{
 													"type": "image",
+													"id": "539",
 													"href": {
 														"type": "internal",
-														"path": "bestiary/WoW/Scarlet Commander Mograine.webp"
+														"path": "book/WoW/119-06-035.map-shadowfang-keep.webp"
 													},
 													"width": 1000,
 													"height": 984,

@@ -1733,6 +1733,23 @@
 			"source": "WoW",
 			"className": "圣骑士",
 			"classSource": "WoW",
+			"_copy": {
+				"name": "Oath of the Holy",
+				"source": "WoW",
+				"shortName": "Holy",
+				"className": "Paladin",
+				"classSource": "XPHB",
+				"_preserve": {
+					"*": true
+				}
+			}
+		},
+		{
+			"name": "Oath of the Holy",
+			"shortName": "Holy",
+			"source": "WoW",
+			"className": "Paladin",
+			"classSource": "XPHB",
 			"edition": "one",
 			"additionalSpells": [
 				{

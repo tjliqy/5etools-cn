@@ -2246,6 +2246,23 @@
 			"source": "WoW",
 			"className": "潜行者",
 			"classSource": "WoW",
+			"_copy": {
+				"name": "Swashbuckler",
+				"source": "WoW",
+				"shortName": "Swashbuckler",
+				"className": "Rogue",
+				"classSource": "XPHB",
+				"_preserve": {
+					"*": true
+				}
+			}
+		},
+		{
+			"name": "Swashbuckler",
+			"shortName": "Swashbuckler",
+			"source": "WoW",
+			"className": "Rogue",
+			"classSource": "XPHB",
 			"edition": "one",
 			"subclassFeatures": [
 				"剑客|潜行者|WoW|剑客|WoW|3",

@@ -3012,6 +3012,83 @@
 			],
 			"hasFluff": true,
 			"hasFluffImages": true
+		},
+		{
+			"name": "Discipline Domain",
+			"shortName": "Discipline",
+			"source": "WoW",
+			"className": "Cleric",
+			"classSource": "XPHB",
+			"edition": "one",
+			"additionalSpells": [
+				{
+					"ability": "wis",
+					"prepared": {
+						"3": [
+							"arcane vigor|xphb",
+							"guiding bolt|xphb",
+							"magic weapon|xphb",
+							"shield of faith|xphb"
+						],
+						"5": [
+							"prayer of mending|wow",
+							"protection from energy|xphb"
+						],
+						"7": [
+							"guardian of faith|xphb",
+							"stoneskin|xphb"
+						],
+						"9": [
+							"circle of power|xphb",
+							"destructive wave|xphb"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Discipline Domain|Cleric|XPHB|Discipline|WoW|3",
+				"Luminous Barrier|Cleric|XPHB|Discipline|WoW|6",
+				"Ultimate Penitence|Cleric|XPHB|Discipline|WoW|17"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Shadow Domain",
+			"shortName": "Shadow",
+			"source": "WoW",
+			"className": "Cleric",
+			"classSource": "XPHB",
+			"edition": "one",
+			"additionalSpells": [
+				{
+					"ability": "wis",
+					"prepared": {
+						"3": [
+							"crown of madness|xphb",
+							"dissonant whispers|xphb",
+							"mind spike|xphb",
+							"shadow word: pain|wow"
+						],
+						"5": [
+							"summon undead|xphb",
+							"vampiric touch|xphb"
+						],
+						"7": [
+							"evard's black tentacles|xphb",
+							"psychic horror|wow"
+						],
+						"9": [
+							"dominate person|xphb",
+							"void eruption|wow"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Shadow Domain|Cleric|XPHB|Shadow|WoW|3",
+				"Dispersion|Cleric|XPHB|Shadow|WoW|6",
+				"Vampiric Embrace|Cleric|XPHB|Shadow|WoW|17"
+			]
 		}
 	],
 	"classFeature": [

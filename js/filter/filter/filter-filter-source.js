@@ -40,8 +40,8 @@ export class SourceFilter extends Filter {
 	}
 
 	static _SORT_ITEMS_MINI (a, b) {
-		const valA = BrewUtil2.hasSourceJson(a.item) ? 2 : (SourceUtil.isNonstandardSource(a.item) || PrereleaseUtil.hasSourceJson(a.item)) ? 1 : 0;
-		const valB = BrewUtil2.hasSourceJson(b.item) ? 2 : (SourceUtil.isNonstandardSource(b.item) || PrereleaseUtil.hasSourceJson(b.item)) ? 1 : 0;
+		const valA = SourceUtil.getFilterGroup(a.item);
+		const valB = SourceUtil.getFilterGroup(b.item);
 		return SortUtil.ascSort(valA, valB)
 			|| SortUtil.ascSortLower(Parser.sourceJsonToAbv(a.item), Parser.sourceJsonToAbv(b.item))
 			|| SourceFilter._SORT_ITEMS(a, b);
@@ -56,6 +56,7 @@ export class SourceFilter extends Filter {
 		const group = SourceUtil.getFilterGroup(item);
 		switch (group) {
 			case SourceUtil.FILTER_GROUP_STANDARD: return `<span class="glyphicon glyphicon-book"></span>`;
+			case SourceUtil.FILTER_GROUP_UNIVERSES_BEYOND: return `<span title="（超越宇宙）" class="glyphicon glyphicon-globe"></span>`;
 			case SourceUtil.FILTER_GROUP_NON_STANDARD: return `<span title="（其他）" class="glyphicon glyphicon-file"></span>`;
 			case SourceUtil.FILTER_GROUP_PARTNERED: return `<span title="（合作内容）" class="glyphicon glyphicon-star-empty"></span>`;
 			case SourceUtil.FILTER_GROUP_PRERELEASE: return `<span title="（预发布）" class="glyphicon glyphicon-wrench"></span>`;
@@ -179,6 +180,11 @@ export class SourceFilter extends Filter {
 				{title: this.constructor._TITLE_CONTEXT_SOURCE_SET},
 			),
 			new ContextUtil.Action(
+				"选择所有 超越宇宙 资源",
+				(evt) => this._doSetPinsUniversesBeyond({isAdditive: evt.shiftKey, isIntersection: EventUtil.isAltOptionKey(evt), isExclusive: EventUtil.isCtrlMetaKey(evt)}),
+				{title: this.constructor._TITLE_CONTEXT_SOURCE_SET},
+			),
+			new ContextUtil.Action(
 				"选择所有非标准资源",
 				(evt) => this._doSetPinsNonStandard({isAdditive: evt.shiftKey, isIntersection: EventUtil.isAltOptionKey(evt), isExclusive: EventUtil.isCtrlMetaKey(evt)}),
 				{title: this.constructor._TITLE_CONTEXT_SOURCE_SET},
@@ -298,6 +304,10 @@ export class SourceFilter extends Filter {
 
 	_doSetPinsPartnered (opts) {
 		this._doSetPins({...opts, fnIsMatch: k => SourceUtil.getFilterGroup(k) === SourceUtil.FILTER_GROUP_PARTNERED});
+	}
+
+	_doSetPinsUniversesBeyond (opts) {
+		this._doSetPins({...opts, fnIsMatch: k => SourceUtil.getFilterGroup(k) === SourceUtil.FILTER_GROUP_UNIVERSES_BEYOND});
 	}
 
 	_doSetPinsNonStandard (opts) {

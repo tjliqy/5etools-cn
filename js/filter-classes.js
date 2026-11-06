@@ -23,7 +23,7 @@ class PageFilterClassesBase extends PageFilterBase {
 			header: "Miscellaneous",
 			cnHeader: "杂项",
 			items: ["重制", "协力者", "传奇"],
-			deselFn: (it) => { return it === "重制" || it === "协力者"; },
+			deselFn: (it) => { return ["重制", "协力者", "换皮"].includes(it); },
 			displayFnMini: it => it === "重制" ? "重制" : it,
 			displayFnTitle: it => it === "重制" ? it : "",
 			isMiscFilter: true,
@@ -71,6 +71,11 @@ class PageFilterClassesBase extends PageFilterBase {
 			sc.shortName = sc.shortName || sc.name; // ensure shortName
 
 			this._mutateForFilters_commonMisc(sc);
+
+			// Retain subclasses when blue-misc-filtering classes
+			if (cls.isHero) sc._fMisc.push("英雄职业");
+			if (this.isReskin(cls) && !sc._fMisc.includes("换皮")) sc._fMisc.push("Reskin");
+
 			this._mutateForFilters_commonSources(sc);
 		});
 
@@ -87,6 +92,7 @@ class PageFilterClassesBase extends PageFilterBase {
 		cls._fPrimaryAbility = this._mutateForFilters_getFilterPrimaryAbility(cls);
 
 		if (cls.isSidekick) cls._fMisc.push("协力者");
+		if (cls.isHero) cls._fMisc.push("英雄职业");
 	}
 
 	_addEntrySourcesToFilter (entry) { this._addEntrySourcesToFilter_walk(entry); }

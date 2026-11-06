@@ -1207,6 +1207,72 @@
 				"神之狂暴|野蛮人|XPHB|狂热者|XPHB|14"
 			],
 			"hasFluffImages": true
+		},
+		{
+			"name": "Path of the Elements",
+			"shortName": "Elements",
+			"source": "WoW",
+			"className": "Barbarian",
+			"classSource": "XPHB",
+			"edition": "one",
+			"additionalSpells": [
+				{
+					"ability": "wis",
+					"resourceName": "Rage",
+					"known": {
+						"6": [
+							"elementalism|xphb#c"
+						]
+					},
+					"innate": {
+						"6": {
+							"resource": {
+								"1": [
+									"daylight|xphb",
+									"water walk|xphb",
+									"wind wall|xphb"
+								]
+							}
+						}
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Path of the Elements|Barbarian|XPHB|Elements|WoW|3",
+				"Echo of the Elements|Barbarian|XPHB|Elements|WoW|6",
+				"Primordial Bond|Barbarian|XPHB|Elements|WoW|10",
+				"Elemental Overload|Barbarian|XPHB|Elements|WoW|14"
+			]
+		},
+		{
+			"name": "Path of the Spiritual Guardian",
+			"shortName": "Spiritual Guardian",
+			"source": "WoW",
+			"className": "Barbarian",
+			"classSource": "XPHB",
+			"edition": "one",
+			"additionalSpells": [
+				{
+					"ability": "wis",
+					"innate": {
+						"10": {
+							"rest": {
+								"1": [
+									"augury|xphb",
+									"clairvoyance|xphb"
+								]
+							}
+						}
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Path of the Spiritual Guardian|Barbarian|XPHB|Spiritual Guardian|WoW|3",
+				"Spirit Shield|Barbarian|XPHB|Spiritual Guardian|WoW|6",
+				"Consult the Spirits|Barbarian|XPHB|Spiritual Guardian|WoW|10",
+				"Spirits' Fury|Barbarian|XPHB|Spiritual Guardian|WoW|14"
+			],
+			"hasFluffImages": true
 		}
 	],
 	"classFeature": [

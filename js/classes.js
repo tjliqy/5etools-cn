@@ -1586,7 +1586,7 @@ class ClassesPage extends MixinComponentGlobalState(MixinBaseComponent(MixinProx
 		this._listSubclass.on("updated", () => {
 			dispCount.vee.off("click");
 
-			if (this._listSubclass.visibleItems.length) {
+			if (this._listSubclass.visibleItems.some(it => !it.values.isAlwaysVisible)) {
 				const cntNotShown = this._listSubclass.items.length - this._listSubclass.visibleItems.length;
 				dispCount
 					.vee.html(cntNotShown ? `<i class="ve-clickable" title="修改筛选条件来查看">(${cntNotShown}个未显示)</i>` : "")
@@ -1714,6 +1714,7 @@ class ClassesPage extends MixinComponentGlobalState(MixinBaseComponent(MixinProx
 		const filterSets = [
 			{name: "查看默认", subHashes: [], isClearSources: false},
 			{name: "查看标准及合作内容", subHashes: [], isClearSources: false, sourceCategories: [SourceUtil.FILTER_GROUP_STANDARD, SourceUtil.FILTER_GROUP_PARTNERED]},
+			{name: "查看标准及超越宇宙资源", subHashes: [], isClearSources: false, sourceCategories: [SourceUtil.FILTER_GROUP_STANDARD, SourceUtil.FILTER_GROUP_UNIVERSES_BEYOND]},
 			{name: "查看标准及自制内容", subHashes: [], isClearSources: false, sourceCategories: [SourceUtil.FILTER_GROUP_STANDARD, SourceUtil.FILTER_GROUP_HOMEBREW]},
 			{name: "查看最新", subHashes: [], isClearSources: true},
 			{name: "查看全部", subHashes: ["flstmiscellaneous:reprinted=0"], isClearSources: true},
@@ -1730,6 +1731,7 @@ class ClassesPage extends MixinComponentGlobalState(MixinBaseComponent(MixinProx
 				const toExclude = [
 					SourceUtil.FILTER_GROUP_STANDARD,
 					SourceUtil.FILTER_GROUP_PARTNERED,
+					SourceUtil.FILTER_GROUP_UNIVERSES_BEYOND,
 					SourceUtil.FILTER_GROUP_NON_STANDARD,
 					SourceUtil.FILTER_GROUP_PRERELEASE,
 					SourceUtil.FILTER_GROUP_HOMEBREW,
