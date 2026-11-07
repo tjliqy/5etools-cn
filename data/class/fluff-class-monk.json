@@ -94,7 +94,7 @@
 									"type": "table",
 									"caption": "修道院",
 									"colLabels": [
-										"{@dice d6}",
+										"{@dice D6}",
 										"修道院"
 									],
 									"colStyles": [
@@ -171,7 +171,7 @@
 									"type": "table",
 									"caption": "图标",
 									"colLabels": [
-										"{@dice d6}",
+										"{@dice D6}",
 										"图标"
 									],
 									"colStyles": [
@@ -247,7 +247,7 @@
 									"type": "table",
 									"caption": "大师",
 									"colLabels": [
-										"{@dice d6}",
+										"{@dice D6}",
 										"大师"
 									],
 									"colStyles": [
@@ -362,16 +362,18 @@
 			]
 		},
 		{
-			"name": "Monk",
+			"ENG_name": "Monk",
+			"name": "武僧",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Monk",
+					"name": "武僧",
 					"type": "section",
-					"name": "Monk",
 					"entries": [
-						"When pandaren were subjugated by mogu millennia ago, the monks among them nurtured hope. While the mogu rulers banned weapons among their subjects, pandaren monks cultivated techniques of unarmed combat based on harnessing and focusing their innate spiritual energy. Finally, the monks and their disciples revolted against their masters and threw off the yoke of oppression.",
-						"Monks are masters of bare-handed combat, most widely known for their fearsome jabs and flying kicks, though monks don't limit themselves to a single method of combat. Some monks revel in the intoxicating effect of absorbing blow after blow while their companions press the attack. Other monks call on the restorative power of Pandaria's magical mists to return the sick and wounded to health.",
-						"Monks seek spiritual balance in life and in combat, and they rarely pick a fight without just cause. They find power through serenity and inner peace\u2014then express their power through artful combat techniques and powers that mend life. Perhaps most surprisingly, some monks are also adept at producing powerful brews they consume in battle."
+						"数千年前熊猫人受魔古奴役时，他们中的武僧孕育着希望。魔古统治者禁止属民持有武器，熊猫人武僧便修习基于引导和凝聚先天灵气的徒手战技。最终，武僧及其弟子起义反抗主人，挣脱了压迫的枷锁。",
+						"武僧是徒手格斗的大师，最负盛名的是其可畏的刺拳与飞踢，但武僧并不拘泥于单一的战斗方式。有些武僧陶醉于承受接连打击的酣醉之感，同时由同伴猛攻不止。另一些武僧则呼唤潘达利亚魔法迷雾的恢复之力，令伤病者重获健康。",
+						"武僧在生活与战斗中追求心灵的平衡，极少无故寻衅。他们从宁静与内在的平和中汲取力量\u2014\u2014再以精妙的战技与疗愈生命之力表达这份力量。而最令人称奇的或许是，一些武僧还精于酿造在战斗中饮用的烈酒。"
 					]
 				}
 			],
@@ -384,7 +386,7 @@
 					},
 					"width": 1700,
 					"height": 2407,
-					"title": "Chen Stormstout, a Pandaren Monk",
+					"title": "熊猫人武僧陈·风暴烈酒",
 					"credit": "Wei Wang, Blizzard Artist"
 				},
 				{

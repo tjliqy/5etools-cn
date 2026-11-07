@@ -106,7 +106,7 @@
 									"type": "table",
 									"caption": "珍贵物品",
 									"colLabels": [
-										"{@dice d6}",
+										"{@dice D6}",
 										"珍贵物品"
 									],
 									"colStyles": [
@@ -182,7 +182,7 @@
 									"type": "table",
 									"caption": "引导形",
 									"colLabels": [
-										"{@dice d6}",
+										"{@dice D6}",
 										"引导形"
 									],
 									"colStyles": [
@@ -259,7 +259,7 @@
 									"type": "table",
 									"caption": "导师",
 									"colLabels": [
-										"{@dice d6}",
+										"{@dice D6}",
 										"导师"
 									],
 									"colStyles": [
@@ -1501,15 +1501,17 @@
 			]
 		},
 		{
-			"name": "Druid",
+			"ENG_name": "Druid",
+			"name": "德鲁伊",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Druid",
+					"name": "德鲁伊",
 					"type": "section",
-					"name": "Druid",
 					"entries": [
-						"The first druids learned the secrets of nature magic from the demigod Cenarius, who tutored the yaungol (ancestors of the tauren) and then the night elves in druidic ways.",
-						"Druids harness the vast powers of nature to preserve balance and protect life. They unleash nature's raw energy against their enemies, raining celestial fury on them from a distance, binding them with enchanted vines, or ensnaring them in unrelenting cyclones. Druids are also accomplished shape-shifters, choosing different beast forms to fill a variety of roles in and out of combat."
+						"最初的德鲁伊师从半神塞纳留斯学习自然魔法的奥秘\u2014\u2014塞纳留斯先教导了野牛人（牛头人的先祖），随后又教导了暗夜精灵修习德鲁伊之道。",
+						"德鲁伊驾驭自然的浩瀚之力以维护平衡、守护生命。他们向敌人释放自然的原初能量：自远方倾泻天怒、以附魔藤蔓束缚、或用无情的旋风困住对手。德鲁伊也是娴熟的变形者，选择不同的野兽形态在战斗内外扮演多样的角色。"
 					]
 				}
 			],
@@ -1522,7 +1524,7 @@
 					},
 					"width": 1700,
 					"height": 2433,
-					"title": "Night Elf Druid",
+					"title": "暗夜精灵德鲁伊",
 					"credit": "James Ryman, Blizzard Artist"
 				},
 				{

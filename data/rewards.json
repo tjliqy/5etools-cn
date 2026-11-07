@@ -69,6 +69,29 @@
 			]
 		},
 		{
+			"ENG_name": "Argent Dawn Charm",
+			"name": "银色黎明护符",
+			"type": "Charm",
+			"source": "WoW",
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"limited": {
+								"1": [
+									"治愈真言|xphb"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@i 先决条件：在银色黎明声望 10+}",
+				"如果你在圣光之愿礼拜堂或银色黎明其他圣所中度过一次{@variantrule 长休|XPHB}，你获得一枚持续 7 天或直到你使用它的{@book 护符|XDMG|2|护咒}。该护符允许你施展一次{@spell 治愈真言|XPHB}。"
+			]
+		},
+		{
 			"ENG_name": "Athreos's Devotee",
 			"name": "雅睿欧斯的信众",
 			"type": "Piety Trait",
@@ -195,6 +218,26 @@
 			]
 		},
 		{
+			"ENG_name": "Blessing of Argent Fortitude",
+			"name": "银色坚韧祝福",
+			"type": "Blessing",
+			"source": "WoW",
+			"entries": [
+				"{@i 先决条件：在银色黎明声望 25+}",
+				"你获得银色坚韧祝福。这道祝福使你对{@condition 中毒|XPHB}状态和毒素伤害免疫。若你在银色黎明的声望值跌破 25，你将失去这道祝福。"
+			]
+		},
+		{
+			"ENG_name": "Blessing of Argent Will",
+			"name": "银色意志祝福",
+			"type": "Blessing",
+			"source": "WoW",
+			"entries": [
+				"{@i 先决条件：在银色黎明声望 3+}",
+				"你获得银色意志祝福。这道{@book 祝福|XDMG|2|祝福}使你为避免或结束由邪魔或亡灵造成的{@condition 魅惑|XPHB}状态而进行的豁免检定具有{@variantrule 优势|XPHB}。若你在银色黎明的声望值跌破 3，你将失去这道祝福。"
+			]
+		},
+		{
 			"ENG_name": "Blessing of Bloody Might",
 			"name": "血腥伟力祝福",
 			"type": "Blessing",
@@ -312,6 +355,71 @@
 			]
 		},
 		{
+			"ENG_name": "Blessing of the Aquatic Companion",
+			"name": "水栖宠物祝福",
+			"type": "Blessing",
+			"source": "WoW",
+			"entries": [
+				"当你拥有一只忠诚值为 10 或更高的水栖宠物时，你具有水栖宠物祝福，它给予你等同于你速度的游泳速度。"
+			]
+		},
+		{
+			"ENG_name": "Blessing of the Beast Companion",
+			"name": "野兽宠物祝福",
+			"type": "Blessing",
+			"source": "WoW",
+			"entries": [
+				"当你拥有一只忠诚值为 10 或更高的野兽宠物时，你具有野兽宠物祝福，它使你在{@skill 驯兽|XPHB}和{@skill 求生|XPHB}上具有熟练项和{@variantrule 专精|XPHB}。"
+			]
+		},
+		{
+			"ENG_name": "Blessing of the Dragonkin Companion",
+			"name": "龙类宠物祝福",
+			"type": "Blessing",
+			"source": "WoW",
+			"entries": [
+				"当你拥有一只忠诚值为 10 或更高的龙类宠物时，你具有龙类宠物祝福，它使你为避免或结束{@condition 恐慌|XPHB}状态而进行的豁免检定具有{@variantrule 优势|XPHB}。"
+			]
+		},
+		{
+			"ENG_name": "Blessing of the Earthen Ring",
+			"name": "大地之环祝福",
+			"type": "Blessing",
+			"source": "WoW",
+			"entries": [
+				"{@i 先决条件：在大地之环声望 25+}",
+				"你获得大地之环祝福。这道{@book 祝福|XDMG|2|祝福}使你可以采取{@action 魔法|XPHB}动作，召唤一名{@creature 气元素|XMM}、一名{@creature 土元素|XMM}、一名{@creature 火元素|XMM}或一名{@creature 水元素|XMM}。元素出现在距你 30 尺内你选择的一处未被占据的空间，服从你的命令，并在你的先攻计数后紧接你行动。该元素在 1 小时后、死亡时，或你以附赠动作将其遣散时消失。在下一个黎明到来之前，你不能再次使用这道祝福。若你在大地之环的声望值跌破 25，你将失去这道祝福。"
+			]
+		},
+		{
+			"ENG_name": "Blessing of the Elemental Companion",
+			"name": "元素宠物祝福",
+			"type": "Blessing",
+			"source": "WoW",
+			"entries": [
+				"当你拥有一只忠诚值为 10 或更高的元素宠物时，你具有元素宠物祝福，它使你为避免或结束{@condition 力竭|XPHB}状态而进行的豁免检定具有{@variantrule 优势|XPHB}。"
+			]
+		},
+		{
+			"ENG_name": "Blessing of the Farseer",
+			"name": "先知祝福",
+			"type": "Blessing",
+			"source": "WoW",
+			"entries": [
+				"{@i 先决条件：在大地之环声望 50+}",
+				"你获得先知祝福。这道祝福给予你一件与你自选的一种元素位面联结的{@item 命令元素戒指|XDMG}的收益。当你完成{@variantrule 长休|XPHB}时，你可以更改它所联结的位面。若你在大地之环的声望值跌破 50，你将失去这道祝福。"
+			]
+		},
+		{
+			"ENG_name": "Blessing of the Flying Companion",
+			"name": "飞行宠物祝福",
+			"type": "Blessing",
+			"source": "WoW",
+			"entries": [
+				"当你拥有一只忠诚值为 10 或更高的飞行宠物时，你具有飞行宠物祝福，它使你的速度提高 5 尺。"
+			]
+		},
+		{
 			"ENG_name": "Blessing of the Frostmaiden",
 			"name": "冰霜少女的祝福",
 			"type": "Blessing",
@@ -332,6 +440,15 @@
 			],
 			"entries": [
 				"你的双眼变得像冰一样寒冷。你获得对寒冷伤害的免疫。此外，你可以施放一次{@spell 寒冰锥}（豁免{@dc 15}）。当你完成一次长休以后，你会重新获得施放此法术的能力。"
+			]
+		},
+		{
+			"ENG_name": "Blessing of the Humanoid Companion",
+			"name": "人形宠物祝福",
+			"type": "Blessing",
+			"source": "WoW",
+			"entries": [
+				"当你拥有一名忠诚值为 10 或更高的人形宠物时，你具有人形宠物祝福，它使你在{@skill 游说|XPHB}技能上具有熟练项和{@variantrule 专精|XPHB}。"
 			]
 		},
 		{
@@ -363,6 +480,24 @@
 			]
 		},
 		{
+			"ENG_name": "Blessing of the Magic Companion",
+			"name": "魔法宠物祝福",
+			"type": "Blessing",
+			"source": "WoW",
+			"entries": [
+				"当你拥有一只忠诚值为 10 或更高的魔法宠物时，你具有魔法宠物祝福，它使你在{@skill 奥秘|XPHB}技能上具有熟练项和{@variantrule 专精|XPHB}。"
+			]
+		},
+		{
+			"ENG_name": "Blessing of the Mechanical Companion",
+			"name": "机械宠物祝福",
+			"type": "Blessing",
+			"source": "WoW",
+			"entries": [
+				"当你拥有一只忠诚值为 10 或更高的机械宠物时，你具有机械宠物祝福，它使你可以在每次受心灵伤害时掷{@dice 1d4}，将所受伤害减少掷出的数值。"
+			]
+		},
+		{
 			"ENG_name": "Blessing of the Morninglord",
 			"name": "晨曦之主的祝福",
 			"type": "Blessing",
@@ -373,6 +508,29 @@
 			]
 		},
 		{
+			"ENG_name": "Blessing of the Proto-Whelp",
+			"name": "原始雏龙祝福",
+			"type": "Blessing",
+			"source": "WoW",
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									"寻获魔宠|xphb"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@i 先决条件：瓦德拉肯联军声望 10+}",
+				"你获得原始雏龙祝福。这道{@book 祝福|XDMG|2|祝福}允许你施展不带材料成分的{@spell 寻获魔宠|XPHB}。以此方式施展该法术时，你的魔宠是一只赤红原始雏龙（{@creature 伪龙|XMM}）。一旦你以此方式施展该法术，你必须完成一次长休才能再次如此做。若你在瓦德拉肯联军的声望值跌破 10，你将失去这道祝福，你的原始雏龙魔宠也会消失。"
+			]
+		},
+		{
 			"ENG_name": "Blessing of the Solipsistic Mind",
 			"name": "唯我之识的祝福",
 			"type": "Blessing",
@@ -380,6 +538,44 @@
 			"page": 177,
 			"entries": [
 				"通过深入注视你自己的思想，你可以从这本古老典籍中获悉深奥的真理。你可以用一个动作集中内心思想。持续 1 小时。当你内心集中时，你不能执行反应。在此期间，当你进行智力检定、感知检定、智力豁免检定或感知豁免检定时，你可以额外掷骰一个 {@dice d8}，并将骰值添加到属性检定或豁免检定中。当你完成长休时，你可以再次使用集中你内心思想的能力。"
+			]
+		},
+		{
+			"ENG_name": "Blessing of the Undead Companion",
+			"name": "亡灵宠物祝福",
+			"type": "Blessing",
+			"source": "WoW",
+			"entries": [
+				"当你拥有一只忠诚值为 10 或更高的亡灵宠物时，你具有亡灵宠物祝福，它使你的{@variantrule 死亡豁免检定|XPHB|死亡豁免检定}具有{@variantrule 优势|XPHB}。"
+			]
+		},
+		{
+			"ENG_name": "Blessing of the Wylderdrake",
+			"name": "野生幼龙祝福",
+			"type": "Blessing",
+			"source": "WoW",
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"will": [
+								"寻获坐骑|xphb#4"
+							]
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@i 先决条件：在瓦德拉肯联军声望 25+}",
+				"你获得野生幼龙祝福。这道{@book 祝福|XDMG|2|祝福}允许你施展{@spell 寻获坐骑|XPHB}（4 环版本）。该法术召唤的{@creature 异界坐骑|XPHB}是一头悬崖野生幼龙，其生物类型为巨龙，以异界猛击造成力场伤害，并以下述特性代替{@book 玩家手册|XPHB}中所示的附赠动作选项：",
+				{
+					"ENG_name": "Flyby",
+					"name": "飞掠",
+					"type": "entries",
+					"entries": [
+						"坐骑飞出敌人触及范围时，不会引发{@action 借机攻击|XPHB}。"
+					]
+				}
 			]
 		},
 		{
@@ -435,6 +631,15 @@
 			],
 			"entries": [
 				"该祝福使你获得召唤精魂武士的力量，其效应等同于你吹响一件{@item 瓦尔哈拉号角，白银||瓦尔哈拉银号角}。你使用一次该祝福后，必须经过7日之后才能再次启用其效应。"
+			]
+		},
+		{
+			"ENG_name": "Blessing of Valhalla",
+			"name": "瓦尔哈拉祝福",
+			"type": "Blessing",
+			"source": "WoW",
+			"entries": [
+				"这道祝福的功能如同{@reward 瓦尔哈拉祝福|XDMG}，但它召唤的是{@creature 食人魔|XMM|食人魔}而非{@creature 狂战士|XMM|狂战士}。"
 			]
 		},
 		{
@@ -1117,6 +1322,29 @@
 			]
 		},
 		{
+			"ENG_name": "Charm of An'she",
+			"name": "安希护符",
+			"type": "Charm",
+			"source": "WoW",
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"limited": {
+								"3": [
+									"野兽召唤术|xphb#3"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@i 先决条件：在雷霆崖声望 25+}",
+				"你可以在代表雷霆崖的领袖执行任务之前，向他们请求安希护符。这枚{@book 护符|XDMG|2|护咒}允许你施展{@spell 野兽召唤术|XPHB}（3 环版本）。使用三次后，护符便从你身上消失；若你完成或放弃任务，它也会消失。一旦你请求过护符，在你在雷霆崖的声望值提高之前，你不能再次请求。"
+			]
+		},
+		{
 			"ENG_name": "Charm of Animal Conjuring",
 			"name": "兽群咒唤护咒",
 			"type": "Charm",
@@ -1247,6 +1475,15 @@
 			"entries": [
 				"{@note 这个护咒可以由生活在冰风谷或其他寒冷地区的{@creature 怯蕴阿灵|ToA}通过使用它们的魔法赠礼能力来赐予。}",
 				"这个护咒有3次充能。作为一个动作，你可以消耗1个充能来施放{@spell 造粮术}法术，无需任何成分。一旦所有的充能都消耗完毕，这个护咒就会从你身上消失。"
+			]
+		},
+		{
+			"ENG_name": "Charm of Clairvoyance",
+			"name": "千里眼护符",
+			"type": "Charm",
+			"source": "WoW",
+			"entries": [
+				"这枚护符的功能如同一瓶{@item 鹰眼术药水|XDMG}。"
 			]
 		},
 		{
@@ -1419,6 +1656,30 @@
 			"page": 215,
 			"entries": [
 				"当你获得这个护咒时，除非你已经有了尾巴，你会长出一条短而发育不良的尾巴。当你进行属性检定、攻击检定或豁免检定时，你可以使用此护咒在检定中获得优势。一旦使用九次，你的护咒会从你身上消失，你的残余尾巴也会随之消失。"
+			]
+		},
+		{
+			"ENG_name": "Charm of Draenor",
+			"name": "德拉诺护符",
+			"type": "Charm",
+			"source": "WoW",
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"limited": {
+								"1": [
+									"咒唤微元素群|xphb"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@i 先决条件：在所属阵营声望 25+}",
+				"如果你花 7 天时间研究铁炉堡的探险者大厅或银月城的圣物学会（或 DM 认可的其他重要探险者协会或圣物学会设施）中的遗物，并在那里完成一次{@variantrule 长休|XPHB}，你获得一枚持续 7 天或直到你使用它的{@book 护符|XDMG|2|护咒}。只要你还持有护符，就不能以此特性再获得另一枚。",
+				"持有这枚护咒期间，你通晓德莱尼语和兽人语。你可以消耗护咒来施展{@spell 咒唤微元素群|XPHB}。"
 			]
 		},
 		{
@@ -1742,6 +2003,30 @@
 			]
 		},
 		{
+			"ENG_name": "Charm of Pandaria",
+			"name": "潘达利亚护符",
+			"type": "Charm",
+			"source": "WoW",
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"limited": {
+								"1": [
+									"气化形体|xphb"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@i 先决条件：在所属阵营声望 25+}",
+				"如果你花 7 天时间研究铁炉堡的探险者大厅或银月城的圣物学会（或 DM 认可的其他重要探险者协会或圣物学会设施）中的遗物，并在那里完成一次{@variantrule 长休|XPHB}，你获得一枚持续 7 天或直到你使用它的{@book 护符|XDMG|2|护咒}。只要你还持有护符，就不能以此特性再获得另一枚。",
+				"持有这枚护咒期间，你通晓熊猫人语。你可以消耗护咒对自身施展{@spell 气化形体|XPHB}。效果持续 1 小时，或直到你以一个附赠动作终止。"
+			]
+		},
+		{
 			"ENG_name": "Charm of Purplemancy",
 			"name": "紫法护咒",
 			"type": "Charm",
@@ -1871,6 +2156,17 @@
 			]
 		},
 		{
+			"ENG_name": "Charm of Terror",
+			"name": "恐惧护符",
+			"type": "Charm",
+			"source": "WoW",
+			"entries": [
+				"{@i 先决条件：在暗爪营声望 25+}",
+				"你可以在代表暗爪营的领袖执行任务之前，向他们请求一枚{@book 护符|XDMG|2|护咒}。你获得恐惧护符，它持续至你使用三次，或你完成或放弃任务为止。你可以以{@action 魔法|XPHB}动作释放一股恐怖波纹。距你 30 尺内你选择的每个生物必须通过{@dc 15}感知豁免，否则受{@condition 恐慌|XPHB}状态 1 分钟。受恐慌的生物必须将其回合用于尽量远离你移动，且不能进行{@action opportunity attack|XPHB|借机攻击}。其动作只能是{@action 疾走|XPHB}动作，或试图摆脱阻止其移动的效应。若它无处可去，该生物可以采取{@action 回避|XPHB}动作。在每个自身回合结束时，该生物重复豁免，成功则对自己结束该效应。",
+				"一旦你请求过这枚护符，在你在暗爪营的声望值提高之前，你不能再次请求。"
+			]
+		},
+		{
 			"ENG_name": "Charm of the Adamant",
 			"name": "坚心护咒",
 			"type": "Charm",
@@ -1878,6 +2174,29 @@
 			"page": 215,
 			"entries": [
 				"这个护咒有九发充能。你可以使用一个动作从护咒中消耗一发充能来获得 30 点临时生命值。在接下来的一个小时里，你的眼睛变成了完全黑暗的空洞，你不能被{@condition 魅惑}或{@condition 恐慌}。一旦所有充能都用完了，这个护咒就会从你身上消失。"
+			]
+		},
+		{
+			"ENG_name": "Charm of the Banshee",
+			"name": "女妖护符",
+			"type": "Charm",
+			"source": "WoW",
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"limited": {
+								"3": [
+									"亡灵召唤术|xphb"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@i 先决条件：在幽暗城声望 25+}",
+				"你可以在代表幽暗城的领袖执行任务之前，向他们请求女妖护符。这枚{@book 护符|XDMG|2|护咒}允许你施展{@spell 亡灵召唤术|XPHB}。使用三次后，护符便从你身上消失；若你完成或放弃任务，它也会消失。一旦你请求过护符，在你在幽暗城的声望值提高之前，你不能再次请求。"
 			]
 		},
 		{
@@ -1909,6 +2228,30 @@
 					]
 				},
 				"一旦你使用了任一效应，魅惑便会消失。"
+			]
+		},
+		{
+			"ENG_name": "Charm of the Burning Legion",
+			"name": "燃烧军团护符",
+			"type": "Charm",
+			"source": "WoW",
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"limited": {
+								"1": [
+									"火焰之雨|wow#4"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@i 先决条件：在所属阵营声望 25+}",
+				"如果你花 7 天时间研究铁炉堡的探险者大厅或银月城的圣物学会（或 DM 认可的其他重要探险者协会或圣物学会设施）中的遗物，并在那里完成一次{@variantrule 长休|XPHB}，你获得一枚持续 7 天或直到你使用它的{@book 护符|XDMG|2|护咒}。只要你还持有护符，就不能以此特性再获得另一枚。",
+				"持有这枚护咒期间，你通晓艾瑞达语。你可以消耗护咒来施展{@spell 火焰之雨|WoW}（4 环版本）。"
 			]
 		},
 		{
@@ -1961,6 +2304,29 @@
 			],
 			"entries": [
 				"你可以施放{@spell 欧提路克弹力法球}，无需法术成分且使用你的智力、感知或魅力作为施法属性（由你选择）。当使用了3次之后，该护咒从你身上消失。"
+			]
+		},
+		{
+			"ENG_name": "Charm of the Earthen Ring",
+			"name": "大地之环护符",
+			"type": "Charm",
+			"source": "WoW",
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"limited": {
+								"3": [
+									"元素召唤术|xphb"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@i 先决条件：大地之环声望 10+}",
+				"此外，如果你在大地之环的一处圣所中度过{@variantrule 长休|XPHB}，你获得大地之环护符，它允许你施展{@spell 元素召唤术|XPHB}。这枚{@book 护符|XDMG|2|护咒}在使用三次后、经过 7 天后，或你在大地之环的声望值跌破 10 后从你身上消失。"
 			]
 		},
 		{
@@ -2072,6 +2438,30 @@
 			]
 		},
 		{
+			"ENG_name": "Charm of the Highborne",
+			"name": "上层精灵护符",
+			"type": "Charm",
+			"source": "WoW",
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"limited": {
+								"1": [
+									"魅惑怪物|xphb"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@i 先决条件：在所属阵营声望 25+}",
+				"如果你花 7 天时间研究铁炉堡的探险者大厅或银月城的圣物学会（或 DM 认可的其他重要探险者协会或圣物学会设施）中的遗物，并在那里完成一次{@variantrule 长休|XPHB}，你获得一枚持续 7 天或直到你使用它的{@book 护符|XDMG|2|护咒}。只要你还持有护符，就不能以此特性再获得另一枚。",
+				"持有这枚护咒期间，你通晓萨拉斯语。你可以消耗护咒来施展{@spell 魅惑怪物|XPHB}。"
+			]
+		},
+		{
 			"ENG_name": "Charm of the Ice Troll",
 			"name": "冰巨魔护咒",
 			"type": "Charm",
@@ -2156,7 +2546,7 @@
 			],
 			"entries": [
 				"{@note 这种护咒可以由生活在沙漠中的{@creature 怯蕴阿灵|CM}使用其\"魔法赠礼\"动作赐予。}",
-				"这一护咒能让你以一个动作施展{@spell 幻景}法术（豁免{@dc 15}）。一旦你使用了它，护咒便会从你身上消失。"
+				"这一护咒能让你以一个动作施展{@spell 幻景}法术（豁免{@dc 15}）。一旦使用，护咒便会从你身上消失。"
 			]
 		},
 		{
@@ -2167,6 +2557,30 @@
 			"page": 62,
 			"entries": [
 				"以一个动作，你许下一个小小愿望。当你这么做时，你创造出一道五环及以下法术的效应。该法术作为动作的一部分而生效且无需法术成分。你的智力，感知，或魅力是该法术的施法属性（由你选择）。一旦你使用该护咒之后，该护咒从你身上消失。"
+			]
+		},
+		{
+			"ENG_name": "Charm of the Old Gods",
+			"name": "上古之神护符",
+			"type": "Charm",
+			"source": "WoW",
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"limited": {
+								"1": [
+									"异怪召唤术|xphb"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@i 先决条件：在所属阵营声望 25+}",
+				"如果你花 7 天时间研究铁炉堡的探险者大厅或银月城的圣物学会（或 DM 认可的其他重要探险者协会或圣物学会设施）中的遗物，并在那里完成一次{@variantrule 长休|XPHB}，你获得一枚持续 7 天或直到你使用它的{@book 护符|XDMG|2|护咒}。只要你还持有护符，就不能以此特性再获得另一枚。",
+				"持有这枚护咒期间，你通晓沙斯亚尔语。你可以消耗护咒来施展{@spell 异怪召唤术|XPHB}。"
 			]
 		},
 		{
@@ -2431,6 +2845,17 @@
 			]
 		},
 		{
+			"ENG_name": "Charm of the Titan-Forged",
+			"name": "泰坦造物护符",
+			"type": "Charm",
+			"source": "WoW",
+			"entries": [
+				"{@i 先决条件：在所属阵营声望 25+}",
+				"如果你花 7 天时间研究铁炉堡的探险者大厅或银月城的圣物学会（或 DM 认可的其他重要探险者协会或圣物学会设施）中的遗物，并在那里完成一次{@variantrule 长休|XPHB}，你获得一枚持续 7 天或直到你使用它的{@book 护符|XDMG|2|护咒}。只要你还持有护符，就不能以此特性再获得另一枚。",
+				"持有这枚护咒期间，你通晓泰坦语。你可以消耗护咒，在 1 分钟内获得对所有伤害的抗性，你的血肉呈现出矿物般的外观。"
+			]
+		},
+		{
 			"ENG_name": "Charm of the Traveler's Haven",
 			"name": "旅者港湾护咒",
 			"type": "Charm",
@@ -2485,7 +2910,31 @@
 			"page": 212,
 			"entries": [
 				"{@note 这种护咒可以由生活在沙漠中的{@creature 怯蕴阿灵|CM}使用其\"魔法赠礼\"动作赐予。}",
-				"这个护咒能让你创造1加仑新鲜的水，它会装入你拥有的一个或更多容器之中。在10天内，你能每天使用它三次，在之后它会消失。"
+				"这个护咒能让你创造最多1加仑的淡水，这些水会装满你身上带着的一个或多个空容器。你可以在10天内每天这样做三次，之后护咒便会从你身上消失。"
+			]
+		},
+		{
+			"ENG_name": "Charm of the Zandalari",
+			"name": "赞达拉护符",
+			"type": "Charm",
+			"source": "WoW",
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"limited": {
+								"1": [
+									"野兽召唤术|xphb#4"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@i 先决条件：在所属阵营声望 25+}",
+				"如果你花 7 天时间研究铁炉堡的探险者大厅或银月城的圣物学会（或 DM 认可的其他重要探险者协会或圣物学会设施）中的遗物，并在那里完成一次{@variantrule 长休|XPHB}，你获得一枚持续 7 天或直到你使用它的{@book 护符|XDMG|2|护咒}。只要你还持有护符，就不能以此特性再获得另一枚。",
+				"持有这枚护咒期间，你通晓赞达拉语。你可以消耗护咒来施展{@spell 野兽召唤术|XPHB}（4 环版本）。召唤出的{@creature 野兽灵魄|XPHB}形似一位罗阿。"
 			]
 		},
 		{
@@ -2621,6 +3070,30 @@
 			]
 		},
 		{
+			"ENG_name": "Clockwerk Charm",
+			"name": "发条护符",
+			"type": "Charm",
+			"source": "WoW",
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"limited": {
+								"1": [
+									"构装召唤术|xphb"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@i 先决条件：在比尔吉沃特财团声望 25+}",
+				"你可以在代表比尔吉沃特财团的领袖执行任务之前，向他们请求发条护符。这枚{@book 护符|XDMG|2|护咒}允许你施展{@spell 构装召唤术|XPHB}法术（仅金属），该法术持续 1 小时且不需要{@status 专注|XPHB}。被召唤的{@creature 构装灵魄|XPHB}形似一个机械地精。当它降至 0 生命值或法术结束时，被召唤的精魄爆炸成一团半径 10 尺的火球{@variantrule 球状 [效应区域]|XPHB|球状}。球体中的生物进行{@dc 13}敏捷豁免，失败者受{@damage 2d6}点火焰伤害，成功者仅受一半伤害。",
+				"这枚护符持续至你使用一次，或你完成或放弃任务为止。一旦你请求过这枚护符，在你在比尔吉沃特财团的声望值提高之前，你不能再次请求。"
+			]
+		},
+		{
 			"ENG_name": "Dark Gift of Dahlver-Nar, He of the Many Teeth",
 			"name": "达文-纳之牙的黑暗赠礼",
 			"type": "Charm",
@@ -2655,12 +3128,12 @@
 		},
 		{
 			"ENG_name": "Dark Gift of Fekre, Queen of Poxes",
-			"name": "Fekre的黑暗赠礼，瘟疫女王",
+			"name": "菲克雷的黑暗赠礼，瘟疫女王",
 			"type": "Charm",
 			"source": "CoS",
 			"page": 191,
 			"entries": [
-				"Fekre的礼物是传播疾病的力量。这个黑暗赠礼允许其受益者作为动作施放{@spell 疫病术}法术。使用三次后，这个黑暗赠礼就会消失。",
+				"菲克雷的礼物是传播疾病的力量。这个黑暗赠礼允许其受益者作为动作施放{@spell 疫病术}法术。使用三次后，这个黑暗赠礼就会消失。",
 				"该黑暗赠礼的受益人散发着污秽之气。"
 			]
 		},
@@ -2704,7 +3177,7 @@
 			"source": "CoS",
 			"page": 192,
 			"entries": [
-				"Savnok的礼物是保护心智的力量。这个黑暗赠礼以施放在受益者身上的{@spell 心灵屏障}法术的形式出现。这个法术的持续时间延长为1年，之后这个黑暗赠礼就会消失。",
+				"萨夫诺克的礼物是保护心智的力量。这个黑暗赠礼以施放在受益者身上的{@spell 心灵屏障}法术的形式出现。这个法术的持续时间延长为1年，之后这个黑暗赠礼就会消失。",
 				"受益人的眼睛在接受此黑暗赠礼时融化消失，留下仍能视物的空洞眼窝。"
 			]
 		},
@@ -2737,7 +3210,7 @@
 			"source": "CoS",
 			"page": 192,
 			"entries": [
-				"Sykane的赠礼是复活最近去世之人的力量。这个黑暗赠礼允许其受益者作为一个动作施展{@spell 死者复活}法术。使用三次后，这个黑暗赠礼就会消失。",
+				"西卡尼的赠礼是复活最近去世之人的力量。这个黑暗赠礼允许其受益者作为一个动作施展{@spell 死者复活}法术。使用三次后，这个黑暗赠礼就会消失。",
 				"一旦获得该黑暗赠礼，受益人的眼睛就会发出病态的黄色光芒，直到该黑暗赠礼消失。受益人还会获得以下缺点：\"如果我帮助了某人，我期望得到回报。\""
 			]
 		},
@@ -2754,12 +3227,12 @@
 		},
 		{
 			"ENG_name": "Dark Gift of Vaund the Evasive",
-			"name": "逃避者Vaund的黑暗赠礼",
+			"name": "逃避者沃恩德的黑暗赠礼",
 			"type": "Charm",
 			"source": "CoS",
 			"page": 193,
 			"entries": [
-				"Vaund的赠礼是逃避的力量。这个黑暗赠礼赋予其受益者一个{@item 反侦护符}和一个{@item 反射闪避戒指}的好处。这些好处持续10天，之后这个黑暗赠礼就会消失。",
+				"沃恩德的赠礼是逃避的力量。这个黑暗赠礼赋予其受益者一个{@item 反侦护符}和一个{@item 反射闪避戒指}的好处。这些好处持续10天，之后这个黑暗赠礼就会消失。",
 				"该黑暗赠礼的受益人变得焦躁不安，并且获得以下缺点：\"我无法对任何向我提出的问题给出直接答复。\""
 			]
 		},
@@ -2792,7 +3265,7 @@
 			"source": "CoS",
 			"page": 192,
 			"entries": [
-				"赞特拉斯的赠礼是来自强大存在感和人格魅力的力量。这个黑暗赠礼使受益者的Charisma（魅力）增加4点，最高不超过22。",
+				"赞特拉斯的赠礼是来自强大存在感和人格魅力的力量。这个黑暗赠礼使受益者的魅力增加4点，最高不超过22。",
 				"该黑暗赠礼的受益人获得以下缺点：\"我不会拒绝任何要求。\""
 			]
 		},
@@ -2805,6 +3278,27 @@
 			"entries": [
 				"兹林哈拉的礼物是创造闪电的力量。这份黑暗赠礼允许其受益者作为一个动作施放{@spell 闪电束}法术。使用三次后，这份黑暗赠礼就会消失。",
 				"一旦接受此黑暗赠礼，受益人的一侧面部就会下垂并失去所有感觉。"
+			]
+		},
+		{
+			"ENG_name": "Darkspear Tribe Charm",
+			"name": "暗矛部落护符",
+			"type": "Charm",
+			"source": "WoW",
+			"entries": [
+				"{@i 先决条件：暗矛部落声望 10+}",
+				"在一次短休中，你可以向巨魔崇敬的洛阿献祭以获得一枚护符。休息结束时，进行一次{@dc 15}智力（{@skill 宗教|XPHB}）检定。检定成功时，你获得一枚{@book 护符|XDMG|2|护咒}，允许你以附赠动作获得以下药水之一的收益（在获得护符时选择）：{@item 化兽为友药水|XDMG}、{@item 攀爬药水|XDMG}、{@item 通晓药水|XDMG}、{@item 火焰吐息药水|XDMG}、{@item 山丘巨人之力药水|XDMG|巨人之力药水}（山丘）、{@item 成长药水|XDMG}、{@item 高等治疗药水|XDMG|治疗药水}（高等）、{@item 法力药水（高等）|WoW|法力药水}（高等）、{@item 重拳药水|XDMG}、{@item 抗性药水|XDMG}（伤害类型由你选择）或{@item 水下呼吸药水|XDMG}。",
+				"该护咒在你使用后、再次使用此特性时，或你的暗矛部落声望值跌破 10 时从你身上消失。一旦以此方式获得护咒，在你暗矛部落的声望值提高之前不能再获得另一枚。",
+				{
+					"ENG_name": "Revered",
+					"name": "崇敬",
+					"type": "entries",
+					"entries": [
+						"{@i 先决条件：暗矛部落声望 25+}",
+						"当你向洛阿请求护符时，你可以为你的护符额外选择以下药水效果之一：{@item 鹰眼术药水|XDMG}、{@item 缩小药水|XDMG}、{@item 气化形体药水|XDMG}、{@item 火巨人之力药水|XDMG|巨人之力药水}（火焰）、{@item 强效治疗药水|XDMG|治疗药水}（强效）、{@item 法力药水（强效）|WoW|法力药水}（强效）、{@item 英勇药水|XDMG}、{@item 隐形药水|XDMG}、{@item 坚不可摧药水|XDMG}或{@item 读心药水|XDMG}。",
+						"如果你选择了上述选项之一，当你的暗矛部落声望值跌破 25 时，该护咒从你身上消失。"
+					]
+				}
 			]
 		},
 		{
@@ -3180,7 +3674,7 @@
 					"name": "缺陷",
 					"type": "entries",
 					"entries": [
-						"You have disadvantage on Wisdom checks."
+						"你进行感知检定时具有劣势。"
 					]
 				}
 			]
@@ -3454,6 +3948,15 @@
 			"entries": [
 				"{@i 虔信值10+赫利欧德特质}",
 				"您可以使用此特性施放{@spell 昼明术}。一旦你以此方式施放该法术，直至完成一次长休前你无法再次使用此能力。感知是此法术的施法属性。"
+			]
+		},
+		{
+			"ENG_name": "Hellscream's Warsong",
+			"name": "地狱咆哮的战歌",
+			"type": "Blessing",
+			"source": "ICC",
+			"entries": [
+				"每当你掷伤害骰时，你可以重掷任意一颗掷出 1 或 2 的骰子，但必须使用新的结果。该祝福持续到阿尔萨斯被击败为止。"
 			]
 		},
 		{
@@ -4807,6 +5310,26 @@
 			]
 		},
 		{
+			"ENG_name": "Sight of the Earth-Warder",
+			"name": "大地守护者之视",
+			"type": "Blessing",
+			"source": "WoW",
+			"entries": [
+				"{@i 先决条件：在黑卫营声望 10+}",
+				"你获得大地守护者之视。这道{@book 祝福|XDMG|2|祝福}使你的先攻检定和感知（{@skill 察觉|XPHB}）检定具有{@variantrule 优势|XPHB}。若你在黑卫营的声望值跌破 10，你将失去这道祝福。"
+			]
+		},
+		{
+			"ENG_name": "Silvermoon City Charm",
+			"name": "银月城护符",
+			"type": "Charm",
+			"source": "WoW",
+			"entries": [
+				"{@i 先决条件：在银月城声望 25+}",
+				"你可以在代表银月城的领袖执行任务之前，向他们请求一枚{@book 护符|XDMG|2|护咒}。你获得一枚复制以下魔杖之一效果的护符：{@item 定身魔杖|XDMG}、{@item 搜敌魔杖|XDMG}、{@item 恐惧魔杖|XDMG}、{@item 火球魔杖|XDMG}、{@item 闪电束魔杖|XDMG}、{@item 魔法飞弹魔杖|XDMG}、{@item 麻痹魔杖|XDMG}、{@item 变形魔杖|XDMG}或{@item 蛛网魔杖|XDMG}。护符不会恢复充能。若你耗光其充能、完成或放弃任务，或在银月城的声望值跌破 25，它便从你身上消失。一旦你请求过护符，在你在银月城的声望值提高之前，你不能再次请求。"
+			]
+		},
+		{
 			"ENG_name": "Simic Charm",
 			"name": "析米克护符",
 			"type": "Charm",
@@ -4879,6 +5402,25 @@
 						]
 					}
 				}
+			]
+		},
+		{
+			"ENG_name": "Strength of Wrynn",
+			"name": "乌瑞恩之力",
+			"type": "Blessing",
+			"source": "ICC",
+			"entries": [
+				"每当你掷伤害骰时，你可以重掷任意一颗掷出 1 或 2 的骰子，但必须使用新的结果。该祝福持续到阿尔萨斯被击败为止。"
+			]
+		},
+		{
+			"ENG_name": "Strike of the Earth-Warder",
+			"name": "大地守护者之击",
+			"type": "Blessing",
+			"source": "WoW",
+			"entries": [
+				"{@i 先决条件：在暗爪营声望 10+}",
+				"你获得大地守护者之击。这道{@book 祝福|XDMG|2|祝福}强化你的徒手打击：你以之进行的攻击检定和伤害检定获得 +1 加值，且你{@variantrule 擒抱|XPHB|擒抱}与{@variantrule 徒手打击|XPHB|推撞}选项的豁免 DC 提高 1。若你在暗爪营的声望值跌破 10，你将失去这道祝福。"
 			]
 		},
 		{
@@ -5083,6 +5625,16 @@
 			"page": 227,
 			"entries": [
 				"你每小时增加1英尺的身高，并按比例变重，直到你的身高变为21英尺，体重达到7,700磅。当你身高9英尺时，你的力量会变为19，除非它已经高于19。之后你的身高每增加3英尺，你的力量就增加1，最高为23。你所穿的盔甲和衣服以及你所携带的武器都会神奇地增加尺寸以配合你的生长。如果你成为{@spell 高等复原术}法术或类似魔法的目标，这个效应就会从你身上消失，你会立即缩回到正常大小，同时你身上的任何铠甲、衣服和武器也会缩回原本大小。"
+			]
+		},
+		{
+			"ENG_name": "Wildguard Blessing",
+			"name": "野卫祝福",
+			"type": "Blessing",
+			"source": "WoW",
+			"entries": [
+				"{@i 先决条件：在塞纳里奥议会声望 25+}",
+				"你获得野卫祝福。这道{@book 祝福|XDMG|2|祝福}使你对抗法术的豁免检定具有{@variantrule 优势|XPHB}。若你在塞纳里奥议会的声望值跌破 25，你将失去这道祝福。"
 			]
 		},
 		{

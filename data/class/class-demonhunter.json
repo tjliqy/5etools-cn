@@ -14,207 +14,219 @@
 	},
 	"class": [
 		{
-			"name": "Demon Hunter",
+			"ENG_name": "Demon Hunter",
+			"name": "恶魔猎手",
 			"alias": [
-				"Ranger"
+				"游侠"
 			],
 			"source": "WoW",
 			"reskinOf": [
-				"Ranger|XPHB"
+				"游侠|XPHB"
 			],
 			"isHero": true,
 			"_copy": {
-				"name": "Ranger",
+				"ENG_name": "Ranger",
+				"name": "游侠",
 				"source": "XPHB"
 			},
 			"classFeatures": [
-				"Spellcasting|Demon Hunter|WoW|1",
-				"Favored Enemy|Ranger|XPHB|1",
-				"Weapon Mastery|Ranger|XPHB|1",
-				"Deft Explorer|Demon Hunter|WoW|2",
-				"Fighting Style|Demon Hunter|WoW|2",
+				"施法|恶魔猎手|WoW|1",
+				"宿敌|游侠|XPHB|1",
+				"武器精通|游侠|XPHB|1",
+				"熟练探险家|恶魔猎手|WoW|2",
+				"战斗风格|恶魔猎手|WoW|2",
 				{
-					"classFeature": "Demon Hunter Subclass|Demon Hunter|WoW|3",
+					"classFeature": "恶魔猎手子职|恶魔猎手|WoW|3",
 					"gainSubclassFeature": true
 				},
-				"Ability Score Improvement|Ranger|XPHB|4",
-				"Extra Attack|Ranger|XPHB|5",
-				"Roving|Ranger|XPHB|6",
+				"属性值提升|游侠|XPHB|4",
+				"额外攻击|游侠|XPHB|5",
+				"越野|游侠|XPHB|6",
 				{
-					"classFeature": "Subclass Feature|Ranger|XPHB|7",
+					"classFeature": "子职特性|游侠|XPHB|7",
 					"gainSubclassFeature": true
 				},
-				"Ability Score Improvement|Ranger|XPHB|8",
-				"Expertise|Ranger|XPHB|9",
-				"Tireless|Ranger|XPHB|10",
+				"属性值提升|游侠|XPHB|8",
+				"专精|游侠|XPHB|9",
+				"不知疲倦|游侠|XPHB|10",
 				{
-					"classFeature": "Subclass Feature|Ranger|XPHB|11",
+					"classFeature": "子职特性|游侠|XPHB|11",
 					"gainSubclassFeature": true
 				},
-				"Ability Score Improvement|Ranger|XPHB|12",
-				"Relentless Hunter|Ranger|XPHB|13",
-				"Nature's Veil|Ranger|XPHB|14",
+				"属性值提升|游侠|XPHB|12",
+				"永恒追猎|游侠|XPHB|13",
+				"自然面纱|游侠|XPHB|14",
 				{
-					"classFeature": "Subclass Feature|Ranger|XPHB|15",
+					"classFeature": "子职特性|游侠|XPHB|15",
 					"gainSubclassFeature": true
 				},
-				"Ability Score Improvement|Ranger|XPHB|16",
-				"Precise Hunter|Ranger|XPHB|17",
-				"Improved Spectral Sight|Demon Hunter|WoW|18",
-				"Epic Boon|Ranger|XPHB|19",
-				"Foe Slayer|Ranger|XPHB|20"
+				"属性值提升|游侠|XPHB|16",
+				"致命猎杀|游侠|XPHB|17",
+				"强化幽灵视觉|恶魔猎手|WoW|18",
+				"传奇恩惠|游侠|XPHB|19",
+				"屠灭众敌|游侠|XPHB|20"
 			],
 			"includeSubclassesFrom": [
-				"Ranger|XPHB"
+				"游侠|XPHB"
 			],
-			"subclassTitle": "Demon Hunter Subclass",
+			"subclassTitle": "恶魔猎手子职",
 			"hasFluff": true,
 			"hasFluffImages": true
 		}
 	],
 	"subclass": [
 		{
-			"name": "Demon Hunter",
-			"shortName": "Demon Hunter",
+			"ENG_name": "Demon Hunter",
+			"name": "恶魔猎手",
+			"shortName": "恶魔猎手",
 			"source": "WoW",
-			"className": "Demon Hunter",
+			"className": "恶魔猎手",
 			"classSource": "WoW",
 			"edition": "one",
 			"additionalSpells": [
 				{
-					"name": "Devourer",
+					"ENG_name": "Devourer",
+					"name": "吞噬者",
 					"ability": "wis",
 					"prepared": {
 						"3": [
-							"throw glaive|wow",
-							"consume soul|wow"
+							"掷刃|wow",
+							"吞噬灵魂|wow"
 						],
 						"5": [
-							"sigil of flame|wow",
-							"misty step|xphb"
+							"烈焰咒符|wow",
+							"迷踪步|xphb"
 						],
 						"9": [
-							"metamorphosis|wow",
-							"soul reap|wow"
+							"恶魔变形|wow",
+							"灵魂收割|wow"
 						],
 						"13": [
-							"chaos nova|wow",
-							"collapsing star|wow"
+							"混沌新星|wow",
+							"坍缩之星|wow"
 						],
 						"17": [
-							"destructive wave|xphb",
-							"steel wind strike|xphb"
+							"湮灭波|xphb",
+							"钢风斩|xphb"
 						]
 					}
 				},
 				{
-					"name": "Havoc",
+					"ENG_name": "Havoc",
+					"name": "浩劫",
 					"ability": "wis",
 					"prepared": {
 						"3": [
-							"throw glaive|wow",
-							"fel rush|wow"
+							"掷刃|wow",
+							"邪能冲刺|wow"
 						],
 						"5": [
-							"sigil of flame|wow",
-							"eye beam|wow"
+							"烈焰咒符|wow",
+							"眼棱|wow"
 						],
 						"9": [
-							"metamorphosis|wow",
-							"blink|xphb"
+							"恶魔变形|wow",
+							"闪现术|xphb"
 						],
 						"13": [
-							"chaos nova|wow",
-							"fire shield|xphb"
+							"混沌新星|wow",
+							"火焰护盾|xphb"
 						],
 						"17": [
-							"destructive wave|xphb",
-							"conjure volley|xphb"
+							"湮灭波|xphb",
+							"万箭齐发|xphb"
 						]
 					}
 				},
 				{
-					"name": "Vengeance",
+					"ENG_name": "Vengeance",
+					"name": "复仇",
 					"ability": "wis",
 					"prepared": {
 						"3": [
-							"throw glaive|wow",
-							"infernal strike|wow"
+							"掷刃|wow",
+							"地狱火撞击|wow"
 						],
 						"5": [
-							"sigil of flame|wow",
-							"fiery brand|wow"
+							"烈焰咒符|wow",
+							"烈火烙印|wow"
 						],
 						"9": [
-							"metamorphosis|wow",
-							"demon spikes|wow"
+							"恶魔变形|wow",
+							"恶魔尖刺|wow"
 						],
 						"13": [
-							"chaos nova|wow",
-							"banishment|xphb"
+							"混沌新星|wow",
+							"放逐术|xphb"
 						],
 						"17": [
-							"destructive wave|xphb",
-							"sigil of chains|wow"
+							"湮灭波|xphb",
+							"锁链咒符|wow"
 						]
 					}
 				}
 			],
 			"subclassFeatures": [
-				"Demon Hunter|Demon Hunter|WoW|Demon Hunter|WoW|3",
-				"Torment|Demon Hunter|WoW|Demon Hunter|WoW|7",
-				"Illidari Knowledge|Demon Hunter|WoW|Demon Hunter|WoW|11",
-				"Soul Shatter|Demon Hunter|WoW|Demon Hunter|WoW|15"
+				"恶魔猎手|恶魔猎手|WoW|恶魔猎手|WoW|3",
+				"折磨|恶魔猎手|WoW|恶魔猎手|WoW|7",
+				"伊利达雷学识|恶魔猎手|WoW|恶魔猎手|WoW|11",
+				"灵魂破碎|恶魔猎手|WoW|恶魔猎手|WoW|15"
 			]
 		}
 	],
 	"classFeature": [
 		{
-			"name": "Spellcasting",
+			"ENG_name": "Spellcasting",
+			"name": "施法",
 			"source": "WoW",
-			"className": "Demon Hunter",
+			"className": "恶魔猎手",
 			"classSource": "WoW",
 			"level": 1,
 			"entries": [
-				"You have learned to channel the magical essence of nature to cast spells. See {@book chapter 7|XPHB|7} for the rules on spellcasting. The information below details how you use those rules with Ranger spells, which appear in the {@filter Ranger spell list|spells|class=Ranger} later in the class's description.",
+				"你学会运用自然世界的魔法本源进行施法。施法规则见{@book 第七章|XPHB|7}。下文将详述如何将这些规则应用于游侠法术，游侠法术详见本章后文职业描述中的{@filter 游侠法术列表|spells|class=游侠}。",
 				{
 					"type": "entries",
 					"entries": [
 						{
+							"ENG_name": "Spell Slots",
+							"name": "法术位",
 							"type": "entries",
-							"name": "Spell Slots",
 							"entries": [
-								"The Ranger Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a {@variantrule Long Rest|XPHB}."
+								"游侠特性表显示了你可用于施展一环及以上法术的法术位数量。当你完成{@variantrule 长休|XPHB}时，你重获所有已消耗的法术位。"
 							]
 						},
 						{
+							"ENG_name": "Prepared Spells of Level 1+",
+							"name": "1环及以上的准备法术",
 							"type": "entries",
-							"name": "Prepared Spells of Level 1+",
 							"entries": [
-								"You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose two {@filter level 1 Ranger spells|spells|class=Ranger|level=1}. {@spell Cure Wounds|XPHB} and {@spell Ensnaring Strike|XPHB} are recommended.",
-								"The number of spells on your list increases as you gain Ranger levels, as shown in the Prepared Spells column of the Ranger Features table. Whenever that number increases, choose additional Ranger spells until the number of spells on your list matches the number in the Ranger Features table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 5 Ranger, your list of prepared spells can include six Ranger spells of level 1 or 2 in any combination.",
-								"If another Ranger feature gives you spells that you always have prepared, those spells don't count against the number of spells you can prepare with this feature, but those spells otherwise count as Ranger spells for you."
+								"你准备可供你以此特性施展的一环及更高环阶的法术列表。最初，选择两道{@filter 1环游侠法术|spells|class=游侠|level=1}。推荐选择{@spell 疗伤术|XPHB}和{@spell 诱捕打击|XPHB}。",
+								"已准备法术数量会随你游侠等级的提升而增加，如游侠特性表中的准备法术一列所示。每当这一列的数字增加时，从游侠法术列表中选择额外法术准备，直至已准备法术的数量与表格中的数字一致。你所选择法术的环阶必须是你所拥有法术位对应的环阶。例如，如果你是一名5级游侠，则你的准备法术列表能包括六道一环或二环的游侠法术，随意组合。",
+								"如果游侠的其他特性给了你始终准备着的法术，这些法术不计入你以此法准备的法术数量，但这些法术对你而言都视为游侠法术。"
 							]
 						},
 						{
+							"ENG_name": "Changing Your Prepared Spells",
+							"name": "改变你的准备法术",
 							"type": "entries",
-							"name": "Changing Your Prepared Spells",
 							"entries": [
-								"Whenever you finish a {@variantrule Long Rest|XPHB}, you can replace one spell on your list with another Ranger spell for which you have spell slots."
+								"每当你完成一次{@variantrule 长休|XPHB}时，你可以将你准备列表上的一道法术替换为其他游侠法术，新替换的法术必须是你拥有法术位的法术。"
 							]
 						},
 						{
+							"ENG_name": "Spellcasting Ability",
+							"name": "施法属性",
 							"type": "entries",
-							"name": "Spellcasting Ability",
 							"entries": [
-								"Wisdom is your spellcasting ability for your Ranger spells."
+								"感知是你游侠法术的施法属性。"
 							]
 						},
 						{
+							"ENG_name": "Spellcasting Focus",
+							"name": "法器",
 							"type": "entries",
-							"name": "Spellcasting Focus",
 							"entries": [
-								"You can use an {@item Arcane Focus|XPHB} (not a {@item Druidic Focus|XPHB}) as a {@variantrule Spellcasting Focus|XPHB} for your Ranger spells."
+								"你可以使用{@item 奥术法器|XPHB}（而非{@item 德鲁伊法器|XPHB}）作为你游侠法术的{@variantrule 法器|XPHB}。"
 							]
 						}
 					]
@@ -222,28 +234,31 @@
 			]
 		},
 		{
-			"name": "Deft Explorer",
+			"ENG_name": "Deft Explorer",
+			"name": "熟练探险家",
 			"source": "WoW",
-			"className": "Demon Hunter",
+			"className": "恶魔猎手",
 			"classSource": "WoW",
 			"level": 2,
 			"entries": [
-				"Thanks to your travels, you gain the following benefits.",
+				"得益于你的旅行经历，你获得以下增益。",
 				{
 					"type": "entries",
 					"entries": [
 						{
+							"ENG_name": "Expertise",
+							"name": "专精",
 							"type": "entries",
-							"name": "Expertise",
 							"entries": [
-								"Choose one of your skill proficiencies with which you lack {@variantrule Expertise|XPHB}. You gain {@variantrule Expertise|XPHB} in that skill."
+								"选择一项你熟练但不具备{@variantrule 专精|XPHB}的技能。你在那个技能上获得{@variantrule 专精|XPHB}。"
 							]
 						},
 						{
+							"ENG_name": "Languages",
+							"name": "语言",
 							"type": "entries",
-							"name": "Languages",
 							"entries": [
-								"When you choose languages for the {@classFeature Deft Explorer|Ranger|XPHB|2|XPHB} class feature, choose from the {@book language tables in chapter 2|WoW|2|Languages}. Eredun and Nathrezim are recommended."
+								"当你在{@classFeature 熟练探险家|游侠|XPHB|2|XPHB}职业特性中选择语言时，请从{@book 第二章的语言表|WoW|2|语言}中选择。推荐艾瑞达语和纳斯雷兹姆语。"
 							]
 						}
 					]
@@ -251,95 +266,100 @@
 			]
 		},
 		{
-			"name": "Fighting Style",
+			"ENG_name": "Fighting Style",
+			"name": "战斗风格",
 			"source": "WoW",
-			"className": "Demon Hunter",
+			"className": "恶魔猎手",
 			"classSource": "WoW",
 			"level": 2,
 			"entries": [
-				"As a Demon Hunter, you can choose a {@filter Fighting Style feat|feats|category=FS}, the {@feat Druidic Warrior|XPHB} option in the {@book Player's Handbook|XPHB}, or the {@feat Void Warrior|WoW} option below.",
+				"作为恶魔猎手，你可以选择一项{@filter 战斗风格专长|feats|category=FS}、《{@book 玩家手册|XPHB}》中的{@feat 德鲁伊教战士|XPHB}选项，或下文的{@feat 虚空战士|WoW}选项。",
 				{
 					"type": "entries",
 					"entries": [
 						{
 							"type": "refFeat",
-							"feat": "Druidic Warrior|XPHB"
+							"feat": "德鲁伊教战士|XPHB"
 						}
 					]
 				},
 				{
 					"type": "refFeat",
-					"feat": "Void Warrior|WoW"
+					"feat": "虚空战士|WoW"
 				}
 			]
 		},
 		{
-			"name": "Demon Hunter Subclass",
+			"ENG_name": "Demon Hunter Subclass",
+			"name": "恶魔猎手子职",
 			"source": "WoW",
-			"className": "Demon Hunter",
+			"className": "恶魔猎手",
 			"classSource": "WoW",
 			"level": 3,
 			"entries": [
-				"You gain a Demon Hunter subclass of your choice. A subclass is a specialization that grants you features at certain Demon Hunter levels. For the rest of your career, you gain each of your subclass's features that are of your Demon Hunter level or lower."
+				"你获得一个自选的恶魔猎手子职。子职是一种专精方向，在特定恶魔猎手等级给予你特性。在余下的生涯中，你获得子职中所有等级不高于你恶魔猎手等级的特性。"
 			]
 		},
 		{
-			"name": "Improved Spectral Sight",
+			"ENG_name": "Improved Spectral Sight",
+			"name": "强化幽灵视觉",
 			"source": "WoW",
-			"className": "Demon Hunter",
+			"className": "恶魔猎手",
 			"classSource": "WoW",
 			"level": 18,
 			"entries": [
-				"This feature replaces the Ranger's {@classFeature Feral Senses|Ranger|XPHB|18|XPHB} feature.",
-				"You have {@sense Truesight|XPHB} with a range of 30 feet."
+				"此特性取代游侠的{@classFeature 野性感官|游侠|XPHB|18|XPHB}特性。",
+				"你具有 30 尺{@sense 真实视觉|XPHB}。"
 			]
 		}
 	],
 	"subclassFeature": [
 		{
-			"name": "Demon Hunter",
+			"ENG_name": "Demon Hunter",
+			"name": "恶魔猎手",
 			"source": "WoW",
-			"className": "Demon Hunter",
+			"className": "恶魔猎手",
 			"classSource": "WoW",
-			"subclassShortName": "Demon Hunter",
+			"subclassShortName": "恶魔猎手",
 			"subclassSource": "WoW",
 			"level": 3,
 			"entries": [
-				"{@i Embrace the Magic of Demons to Fight Fire with Fire}",
-				"Most Demon Hunters joined Illidan on Outland as he marshaled his forces to battle the Burning Legion. You might have followed a different path, inspired by Illidan rather than directly trained by him, but the result is the same: You have embraced the magic of the Burning Legion with the singular goal of defeating it on Azeroth and every other world.",
+				"{@i 拥抱恶魔的魔法，以火攻火}",
+				"大多数恶魔猎手当年在外域投效伊利丹，追随他集结大军对抗燃烧军团。你或许走了另一条路\u2014\u2014受伊利丹感召而非亲承其教导\u2014\u2014但结果相同：你已接纳燃烧军团的魔法，只为一个目标：在艾泽拉斯和每一个世界上击败它。",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Demon Hunter Spells|Demon Hunter|WoW|Demon Hunter|WoW|3"
+					"subclassFeature": "恶魔猎手法术|恶魔猎手|WoW|恶魔猎手|WoW|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Soul Fragments|Demon Hunter|WoW|Demon Hunter|WoW|3"
+					"subclassFeature": "灵魂碎片|恶魔猎手|WoW|恶魔猎手|WoW|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Spectral Sight|Demon Hunter|WoW|Demon Hunter|WoW|3"
+					"subclassFeature": "幽灵视觉|恶魔猎手|WoW|恶魔猎手|WoW|3"
 				}
 			]
 		},
 		{
-			"name": "Demon Hunter Spells",
+			"ENG_name": "Demon Hunter Spells",
+			"name": "恶魔猎手法术",
 			"source": "WoW",
-			"className": "Demon Hunter",
+			"className": "恶魔猎手",
 			"classSource": "WoW",
-			"subclassShortName": "Demon Hunter",
+			"subclassShortName": "恶魔猎手",
 			"subclassSource": "WoW",
 			"level": 3,
 			"entries": [
-				"When you reach a Ranger level specified in the Demon Hunter Spells table, you thereafter always have the spell in the Spells (All) column prepared. You also have the additional spells listed in one other column of your choice.",
+				"当你达到恶魔猎手法术表中列出的游侠等级后，你始终准备好\"法术（全部）\"栏中的法术。你还拥有另外一栏（由你选择）中列出的额外法术。",
 				{
 					"type": "table",
-					"caption": "Demon Hunter Spells",
+					"caption": "恶魔猎手法术",
 					"colLabels": [
-						"Ranger Level",
-						"Spells (All)",
-						"Spells (Devourer)",
-						"Spells (Havoc)",
-						"Spells (Vengeance)"
+						"游侠等级",
+						"法术（全部）",
+						"法术（吞噬者）",
+						"法术（浩劫）",
+						"法术（复仇）"
 					],
 					"colStyles": [
 						"col-1-2 text-center",
@@ -351,227 +371,244 @@
 					"rows": [
 						[
 							"3",
-							"{@spell Throw Glaive|WoW}",
-							"{@spell Consume Soul|WoW}",
-							"{@spell Fel Rush|WoW}",
-							"{@spell Infernal Strike|WoW}"
+							"{@spell 掷刃|WoW|掷刃}",
+							"{@spell 吞噬灵魂|WoW|吞噬灵魂}",
+							"{@spell 邪能冲刺|WoW|邪能冲刺}",
+							"{@spell 地狱火撞击|WoW|地狱火撞击}"
 						],
 						[
 							"5",
-							"{@spell Sigil of Flame|WoW}",
-							"{@spell Misty Step|XPHB}",
-							"{@spell Eye Beam|WoW}",
-							"{@spell Fiery Brand|WoW}"
+							"{@spell 烈焰咒符|WoW|烈焰咒符}",
+							"{@spell 迷踪步|XPHB}",
+							"{@spell 眼棱|WoW|眼棱}",
+							"{@spell 烈火烙印|WoW|烈火烙印}"
 						],
 						[
 							"9",
-							"{@spell Metamorphosis|WoW}",
-							"{@spell Soul Reap|WoW}",
-							"{@spell Blink|XPHB}",
-							"{@spell Demon Spikes|WoW}"
+							"{@spell 恶魔变形|WoW|恶魔变形}",
+							"{@spell 灵魂收割|WoW|灵魂收割}",
+							"{@spell 闪现术|XPHB}",
+							"{@spell 恶魔尖刺|WoW|恶魔尖刺}"
 						],
 						[
 							"13",
-							"{@spell Chaos Nova|WoW}",
-							"{@spell Collapsing Star|WoW}",
-							"{@spell Fire Shield|XPHB}",
-							"{@spell Banishment|XPHB}"
+							"{@spell 混沌新星|WoW|混沌新星}",
+							"{@spell 坍缩之星|WoW|坍缩之星}",
+							"{@spell 火焰护盾|XPHB}",
+							"{@spell 放逐术|XPHB}"
 						],
 						[
 							"17",
-							"{@spell Destructive Wave|XPHB}",
-							"{@spell Steel Wind Strike|XPHB}",
-							"{@spell Conjure Volley|XPHB}",
-							"{@spell Sigil of Chains|WoW}"
+							"{@spell 湮灭波|XPHB}",
+							"{@spell 钢风斩|XPHB}",
+							"{@spell 万箭齐发|XPHB}",
+							"{@spell 锁链咒符|WoW|锁链咒符}"
 						]
 					]
 				}
 			]
 		},
 		{
-			"name": "Double Jump",
+			"ENG_name": "Double Jump",
+			"name": "二段跳",
 			"source": "WoW",
-			"className": "Demon Hunter",
+			"className": "恶魔猎手",
 			"classSource": "WoW",
-			"subclassShortName": "Demon Hunter",
+			"subclassShortName": "恶魔猎手",
 			"subclassSource": "WoW",
 			"level": 3,
 			"consumes": {
-				"name": "Soul Fragment"
+				"ENG_name": "Soul Fragment",
+				"name": "灵魂碎片"
 			},
 			"entries": [
-				"You can expend one soul fragment to cast {@spell Feather Fall|XPHB} or {@spell Jump|XPHB} without expending a spell slot."
+				"你可以消耗一枚灵魂碎片，施展{@spell 羽落术|XPHB}或{@spell 跳跃术|XPHB}而不消耗法术位。"
 			]
 		},
 		{
-			"name": "Soul Cleave",
+			"ENG_name": "Soul Cleave",
+			"name": "灵魂裂解",
 			"source": "WoW",
-			"className": "Demon Hunter",
+			"className": "恶魔猎手",
 			"classSource": "WoW",
-			"subclassShortName": "Demon Hunter",
+			"subclassShortName": "恶魔猎手",
 			"subclassSource": "WoW",
 			"level": 3,
 			"consumes": {
-				"name": "Soul Fragment"
+				"ENG_name": "Soul Fragment",
+				"name": "灵魂碎片"
 			},
 			"entries": [
-				"Once on each of your turns, when you take the {@action Attack|XPHB} action, you can expend one soul fragment and replace one of your attacks with a whirlwind of soul energy. Each creature in a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from you makes a Dexterity saving throw. On a failed save, a creature takes Psychic damage equal to {@damage 1d12} plus your Wisdom modifier, and you regain {@variantrule Hit Points|XPHB} equal to your Wisdom modifier."
+				"你的每回合一次，当你采取{@action 攻击|XPHB}动作时，你可以消耗一枚灵魂碎片，将其中一次攻击替换为一道灵魂能量旋风。以你为中心 10 尺{@variantrule 光环 [效应区域]|XPHB|光环}内的每个生物进行敏捷豁免。豁免失败的生物受{@damage 1d12}加你的感知调整值点心灵伤害，你回复等同于你感知调整值的{@variantrule 生命值|XPHB}。"
 			]
 		},
 		{
-			"name": "Soul Fragments",
+			"ENG_name": "Soul Fragments",
+			"name": "灵魂碎片",
 			"source": "WoW",
-			"className": "Demon Hunter",
+			"className": "恶魔猎手",
 			"classSource": "WoW",
-			"subclassShortName": "Demon Hunter",
+			"subclassShortName": "恶魔猎手",
 			"subclassSource": "WoW",
 			"level": 3,
 			"entries": [
-				"You harvest the energy of souls to fuel some of your special powers. Whenever you finish a {@variantrule Long Rest|XPHB}, you gain a number of soul fragments equal to your Wisdom modifier (minimum of one fragment); each soul fragment is a Tiny object in the form of a crystal. These fragments last until you finish another {@variantrule Long Rest|XPHB}, at which point they disintegrate. If you ever move more than 30 feet from a fragment, the fragment immediately teleports to you, appearing somewhere on your person.",
-				"If a soul fragment effect requires a saving throw, the DC equals your Ranger spell save DC.",
-				"The number of soul fragments you gain when you finish a {@variantrule Long Rest|XPHB} increases when you reach Ranger levels 13 (Wisdom modifier plus one soul fragment) and 17 (Wisdom modifier plus two soul fragments).",
+				"你收割灵魂的能量，为你的一些特殊能力供能。每当你完成{@variantrule 长休|XPHB}后，你获得等同于你感知调整值（至少一枚）的灵魂碎片；每枚灵魂碎片是一个晶体形态的微型物体。这些碎片持续到你完成下一次{@variantrule 长休|XPHB}，届时它们崩解消散。如果你与某枚碎片的距离超过 30 尺，该碎片立即传送到你身上，出现在你衣物的某处。",
+				"灵魂碎片效应若需豁免检定，其 DC 等于你的游侠法术豁免 DC。",
+				"当你达到游侠 13 级（感知调整值加一枚灵魂碎片）和 17 级（感知调整值加两枚灵魂碎片）时，你完成{@variantrule 长休|XPHB}后获得的灵魂碎片数量增加。",
 				{
+					"ENG_name": "Using Soul Fragments",
+					"name": "使用灵魂碎片",
 					"type": "entries",
-					"name": "Using Soul Fragments",
 					"entries": [
-						"You can use soul fragments in the following ways:",
+						"你可以通过以下方式使用灵魂碎片：",
 						{
 							"type": "options",
 							"style": "list-hang-notitle",
 							"entries": [
 								{
 									"type": "refSubclassFeature",
-									"subclassFeature": "Double Jump|Demon Hunter|WoW|Demon Hunter|WoW|3"
+									"subclassFeature": "二段跳|恶魔猎手|WoW|恶魔猎手|WoW|3"
 								},
 								{
 									"type": "refSubclassFeature",
-									"subclassFeature": "Soul Cleave|Demon Hunter|WoW|Demon Hunter|WoW|3"
+									"subclassFeature": "灵魂裂解|恶魔猎手|WoW|恶魔猎手|WoW|3"
 								}
 							]
 						}
 					]
 				},
 				{
+					"ENG_name": "Regaining Soul Fragments",
+					"name": "回复灵魂碎片",
 					"type": "entries",
-					"name": "Regaining Soul Fragments",
 					"entries": [
-						"When an enemy you can see within 30 feet of you dies, you can take a {@variantrule Reaction|XPHB} to regain one expended soul fragment."
+						"当你 30 尺内一个可见敌人死亡时，你可以以一个{@variantrule 反应|XPHB}恢复一枚已消耗的灵魂碎片。"
 					]
 				}
 			]
 		},
 		{
-			"name": "Spectral Sight",
+			"ENG_name": "Spectral Sight",
+			"name": "幽灵视觉",
 			"source": "WoW",
-			"className": "Demon Hunter",
+			"className": "恶魔猎手",
 			"classSource": "WoW",
-			"subclassShortName": "Demon Hunter",
+			"subclassShortName": "恶魔猎手",
 			"subclassSource": "WoW",
 			"level": 3,
 			"entries": [
-				"You have {@sense Blindsight|XPHB} with a range of 10 feet."
+				"你获得 10 尺距离的{@sense 盲视|XPHB}。"
 			]
 		},
 		{
-			"name": "Torment",
+			"ENG_name": "Torment",
+			"name": "折磨",
 			"source": "WoW",
-			"className": "Demon Hunter",
+			"className": "恶魔猎手",
 			"classSource": "WoW",
-			"subclassShortName": "Demon Hunter",
+			"subclassShortName": "恶魔猎手",
 			"subclassSource": "WoW",
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"A creature marked by your {@spell Hunter's Mark|XPHB} spell has {@variantrule Disadvantage|XPHB} on attack rolls against targets other than you.",
-				"Additionally, once per turn when you hit a creature marked by your {@spell Hunter's Mark|XPHB} with an attack roll with a weapon or a Ranger spell, you can impose one of the following effects on the target (your choice):",
+				"被你的{@spell 猎人印记|XPHB}法术标记的生物，对非你目标的攻击检定具有{@variantrule 劣势|XPHB}。",
+				"此外，每回合一次，当你以武器或游侠法术的攻击检定命中一个被你的{@spell 猎人印记|XPHB}标记的生物时，你可以对目标施加以下效应之一（由你选择）：",
 				{
 					"type": "list",
 					"style": "list-hang-notitle",
 					"items": [
 						{
+							"ENG_name": "Aura of Pain",
+							"name": "痛苦灵光",
 							"type": "item",
-							"name": "Aura of Pain",
-							"entry": "The target subtracts {@dice 1d4} from the next saving throw it makes before the end of your next turn."
+							"entry": "在你的下个回合结束前，目标下次进行豁免检定时，从掷骰结果中减去{@dice 1d4}。"
 						},
 						{
+							"ENG_name": "Chaos Strike",
+							"name": "混沌打击",
 							"type": "item",
-							"name": "Chaos Strike",
-							"entry": "The target takes an extra {@damage 1d8} Fire damage."
+							"entry": "目标额外受{@damage 1d8}点火焰伤害。"
 						}
 					]
 				}
 			]
 		},
 		{
-			"name": "Disrupt",
+			"ENG_name": "Disrupt",
+			"name": "扰乱",
 			"source": "WoW",
-			"className": "Demon Hunter",
+			"className": "恶魔猎手",
 			"classSource": "WoW",
-			"subclassShortName": "Demon Hunter",
+			"subclassShortName": "恶魔猎手",
 			"subclassSource": "WoW",
 			"level": 11,
 			"consumes": {
-				"name": "Soul Fragment",
+				"ENG_name": "Soul Fragment",
+				"name": "灵魂碎片",
 				"amount": 2
 			},
 			"entries": [
-				"You can expend two soul fragments to cast {@spell Counterspell|XPHB} in response to that spell's trigger, using your spellcasting ability."
+				"你可以消耗两枚灵魂碎片，响应该法术的触发时机施展{@spell 法术反制|XPHB}，使用你的施法属性。"
 			]
 		},
 		{
-			"name": "Warglaive Mastery",
+			"ENG_name": "Warglaive Mastery",
+			"name": "战刃精通",
 			"source": "WoW",
-			"className": "Demon Hunter",
+			"className": "恶魔猎手",
 			"classSource": "WoW",
-			"subclassShortName": "Demon Hunter",
+			"subclassShortName": "恶魔猎手",
 			"subclassSource": "WoW",
 			"level": 11,
 			"consumes": {
-				"name": "Soul Fragment"
+				"ENG_name": "Soul Fragment",
+				"name": "灵魂碎片"
 			},
 			"entries": [
-				"As a {@variantrule Bonus Action|XPHB}, you can expend one soul fragment to cast {@spell Throw Glaive|WoW} without expending a spell slot."
+				"以一个{@variantrule 附赠动作|XPHB}，你可以消耗一枚灵魂碎片，施展{@spell 掷刃|WoW}而不消耗法术位。"
 			]
 		},
 		{
-			"name": "Illidari Knowledge",
+			"ENG_name": "Illidari Knowledge",
+			"name": "伊利达雷学识",
 			"source": "WoW",
-			"className": "Demon Hunter",
+			"className": "恶魔猎手",
 			"classSource": "WoW",
-			"subclassShortName": "Demon Hunter",
+			"subclassShortName": "恶魔猎手",
 			"subclassSource": "WoW",
 			"level": 11,
 			"header": 2,
 			"entries": [
-				"You gain new mastery over souls, granting you new ways to use soul fragments:",
+				"你对灵魂有了新的掌控，获得使用灵魂碎片的新方式：",
 				{
 					"type": "options",
 					"style": "list-hang-notitle",
 					"entries": [
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Disrupt|Demon Hunter|WoW|Demon Hunter|WoW|11"
+							"subclassFeature": "扰乱|恶魔猎手|WoW|恶魔猎手|WoW|11"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Warglaive Mastery|Demon Hunter|WoW|Demon Hunter|WoW|11"
+							"subclassFeature": "战刃精通|恶魔猎手|WoW|恶魔猎手|WoW|11"
 						}
 					]
 				}
 			]
 		},
 		{
-			"name": "Soul Shatter",
+			"ENG_name": "Soul Shatter",
+			"name": "灵魂破碎",
 			"source": "WoW",
-			"className": "Demon Hunter",
+			"className": "恶魔猎手",
 			"classSource": "WoW",
-			"subclassShortName": "Demon Hunter",
+			"subclassShortName": "恶魔猎手",
 			"subclassSource": "WoW",
 			"level": 15,
 			"header": 2,
 			"entries": [
-				"Your mastery of fel magic reaches new heights. When you use the {@subclassFeature Soul Cleave|Demon Hunter|WoW|Demon Hunter|WoW|3|WoW} option of {@subclassFeature Soul Fragments|Demon Hunter|WoW|Demon Hunter|WoW|3|WoW}, the damage increases to {@damage 2d12} plus your Wisdom modifier.",
-				"In addition, when you roll {@variantrule Initiative|XPHB}, you regain one soul fragment if you have none."
+				"你对邪能魔法的掌控更上层楼。当你使用{@subclassFeature 灵魂碎片|恶魔猎手|WoW|恶魔猎手|WoW|3|WoW}的{@subclassFeature 灵魂裂解|恶魔猎手|WoW|恶魔猎手|WoW|3|WoW}选项时，伤害提高到{@damage 2d12}加你的感知调整值。",
+				"此外，当你掷{@variantrule 先攻|XPHB}时，如果你没有灵魂碎片，则恢复一枚。"
 			]
 		}
 	]

@@ -1693,7 +1693,7 @@
 							"depth": 1
 						},
 						{
-							"header": "魔法师",
+							"header": "法师",
 							"depth": 1
 						},
 						{
@@ -2831,7 +2831,7 @@
 							"statblock": true
 						},
 						{
-							"header": "纯血原体蛇人",
+							"header": "纯血蛇人",
 							"depth": 1,
 							"statblock": true
 						},
@@ -3474,7 +3474,7 @@
 					"name": "阿芒凯怪物图鉴",
 					"headers": [
 						{
-							"header": "成年阿蒙克赫特龙",
+							"header": "成年阿芒凯龙",
 							"depth": 1
 						},
 						{
@@ -3482,31 +3482,31 @@
 							"depth": 1
 						},
 						{
-							"header": "阿蒙克赫特幼龙",
+							"header": "阿芒凯幼龙",
 							"depth": 1
 						},
 						{
-							"header": "阿蒙克特多头蛇",
+							"header": "阿芒凯多头蛇",
 							"depth": 1
 						},
 						{
-							"header": "阿蒙克赫特木乃伊",
+							"header": "阿芒凯木乃伊",
 							"depth": 1
 						},
 						{
-							"header": "阿蒙克特木乃伊领主",
+							"header": "阿芒凯木乃伊领主",
 							"depth": 1
 						},
 						{
-							"header": "阿蒙克赫特斯芬克斯",
+							"header": "阿芒凯斯芬克斯",
 							"depth": 1
 						},
 						{
-							"header": "远古阿蒙克赫特龙",
+							"header": "远古阿芒凯龙",
 							"depth": 1
 						},
 						{
-							"header": "阿蒙克赫特的天使",
+							"header": "阿芒凯的天使",
 							"depth": 1
 						},
 						{
@@ -3566,7 +3566,7 @@
 							"depth": 1
 						},
 						{
-							"header": "青年阿蒙克赫特龙",
+							"header": "青年阿芒凯龙",
 							"depth": 1
 						}
 					]
@@ -9283,7 +9283,7 @@
 		},
 		{
 			"ENG_name": "Monstrous Compendium Volume 4: Eldraine Creatures",
-			"name": "怪物手册第四卷：艾尔德林生物",
+			"name": "怪物手册第四卷：艾卓生物",
 			"id": "MCV4EC",
 			"source": "MCV4EC",
 			"group": "supplement-alt",
@@ -9296,9 +9296,9 @@
 			"contents": [
 				{
 					"ENG_name": "Monstrous Compendium Vol. Four: Eldraine Creatures",
-					"name": "怪物大全第四卷：艾尔德拉因生物",
+					"name": "怪物大全第四卷：艾卓生物",
 					"headers": [
-						"关于艾尔德拉因"
+						"关于艾卓"
 					]
 				},
 				{
@@ -12842,7 +12842,7 @@
 							"depth": 1
 						},
 						{
-							"header": "半羊人们",
+							"header": "Satyrs",
 							"depth": 1
 						},
 						{
@@ -16773,6 +16773,1809 @@
 					"headers": [
 						"拉莫迪亚计划",
 						"D&D 组织"
+					]
+				}
+			],
+			"translator": "机翻"
+		},
+		{
+			"ENG_name": "World of Warcraft",
+			"name": "魔兽世界",
+			"id": "WoW",
+			"source": "WoW",
+			"group": "setting",
+			"cover": {
+				"type": "internal",
+				"path": "covers/WoW.webp"
+			},
+			"published": "2026-11-17",
+			"author": "威世智RPG团队",
+			"contents": [
+				{
+					"ENG_name": "Introduction: Worlds Collide",
+					"name": "引言：世界交汇",
+					"headers": [
+						"什么是龙与地下城？",
+						"什么是《魔兽世界》？",
+						"本书内容",
+						"创建角色",
+						{
+							"header": "1：选择职业",
+							"depth": 1
+						},
+						{
+							"header": "2：决定起源",
+							"depth": 1
+						},
+						{
+							"header": "3：决定属性值",
+							"depth": 1
+						},
+						{
+							"header": "4：选择阵营",
+							"depth": 1
+						},
+						{
+							"header": "5：填写细节",
+							"depth": 1
+						}
+					]
+				},
+				{
+					"ENG_name": "Character Classes",
+					"name": "角色职业",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 1
+					},
+					"headers": [
+						"《魔兽世界》的职业",
+						"死亡骑士",
+						{
+							"header": "死亡骑士",
+							"depth": 1,
+							"statblock": true,
+							"tag": "class",
+							"uid": "死亡骑士|WoW"
+						},
+						{
+							"header": "黑锋之誓",
+							"depth": 1,
+							"statblock": true,
+							"tag": "subclass",
+							"uid": "黑锋|死亡骑士|WoW|WoW"
+						},
+						{
+							"header": "白骨风暴",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "寒冰锁链",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "枯萎凋零",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "死亡之握",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "霜之镰",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "吸血打击",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "无情寒冬",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "符文打击",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "天灾打击",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "吸血鬼之血",
+							"depth": 1,
+							"statblock": true
+						},
+						"恶魔猎手",
+						{
+							"header": "恶魔猎手",
+							"depth": 1,
+							"statblock": true,
+							"tag": "class",
+							"uid": "恶魔猎手|WoW"
+						},
+						{
+							"header": "恶魔猎手",
+							"depth": 1,
+							"statblock": true,
+							"tag": "subclass",
+							"uid": "恶魔猎手|恶魔猎手|WoW|WoW"
+						},
+						{
+							"header": "虚空战士",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "混沌新星",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "坍缩之星",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "吞噬灵魂",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "恶魔尖刺",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "眼棱",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "邪能冲刺",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "烈火烙印",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "地狱火撞击",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "恶魔变形",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "锁链咒符",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "烈焰咒符",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "灵魂收割",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "掷刃",
+							"depth": 1,
+							"statblock": true
+						},
+						"德鲁伊",
+						{
+							"header": "德鲁伊",
+							"depth": 1,
+							"statblock": true,
+							"tag": "class",
+							"uid": "德鲁伊|WoW"
+						},
+						{
+							"header": "星辰结社",
+							"depth": 1,
+							"statblock": true,
+							"tag": "subclass",
+							"uid": "星辰|德鲁伊|WoW|WoW"
+						},
+						{
+							"header": "月亮结社",
+							"depth": 1,
+							"statblock": true,
+							"tag": "subclass",
+							"uid": "月亮|德鲁伊|WoW|WoW"
+						},
+						{
+							"header": "大地结社",
+							"depth": 1,
+							"statblock": true,
+							"tag": "subclass",
+							"uid": "大地|德鲁伊|WoW|WoW"
+						},
+						{
+							"header": "猫形态",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "熊形态",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "野性潜行",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "激活",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "月火术",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "回春术",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "乌索克之吼",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "星落术",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "宁静",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "生命之树",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "狂怒",
+							"depth": 1,
+							"statblock": true
+						},
+						"塑能师",
+						{
+							"header": "塑能师",
+							"depth": 1,
+							"statblock": true,
+							"tag": "class",
+							"uid": "唤魔师|WoW"
+						},
+						{
+							"header": "龙族术法",
+							"depth": 1,
+							"statblock": true,
+							"tag": "subclass",
+							"uid": "龙族血脉|唤魔师|WoW|WoW"
+						},
+						{
+							"header": "蔚蓝打击",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "蔚蓝横扫",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "灼痛之鳞",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "万世龙息",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "梦境吐息",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "梦境飞行",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "黑檀之力",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "余烬风暴",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "翡翠之花",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "喷发",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "肆虐",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "活焰",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "拯救",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "碎裂之星",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "时间膨胀",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "剧变",
+							"depth": 1,
+							"statblock": true
+						},
+						"猎人",
+						{
+							"header": "猎人",
+							"depth": 1,
+							"statblock": true,
+							"tag": "class",
+							"uid": "猎人|WoW"
+						},
+						{
+							"header": "驯兽师",
+							"depth": 1,
+							"statblock": true,
+							"tag": "subclass",
+							"uid": "驯兽师|猎人|WoW|WoW"
+						},
+						{
+							"header": "猎人",
+							"depth": 1,
+							"statblock": true,
+							"tag": "subclass",
+							"uid": "猎人|猎人|WoW|WoW"
+						},
+						{
+							"header": "爆炸陷阱",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "冰冻陷阱",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "毒蛇钉刺",
+							"depth": 1,
+							"statblock": true
+						},
+						"法师",
+						{
+							"header": "法师",
+							"depth": 1,
+							"statblock": true,
+							"tag": "class",
+							"uid": "法师|WoW"
+						},
+						{
+							"header": "塑能师",
+							"depth": 1,
+							"statblock": true,
+							"tag": "subclass",
+							"uid": "塑能师|法师|WoW|WoW"
+						},
+						{
+							"header": "节能施法",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "寒冰指",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "炽热连击",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "灼热焚烧",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "冰枪连射",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "冰霜新星",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "群体变形术",
+							"depth": 1,
+							"statblock": true
+						},
+						"武僧",
+						{
+							"header": "武僧",
+							"depth": 1,
+							"statblock": true,
+							"tag": "class",
+							"uid": "武僧|WoW"
+						},
+						{
+							"header": "命流武者",
+							"depth": 1,
+							"statblock": true,
+							"tag": "subclass",
+							"uid": "命流|武僧|WoW|WoW"
+						},
+						{
+							"header": "散打武者",
+							"depth": 1,
+							"statblock": true,
+							"tag": "subclass",
+							"uid": "散打|武僧|WoW|WoW"
+						},
+						{
+							"header": "秘酿武者",
+							"depth": 1,
+							"statblock": true,
+							"tag": "subclass",
+							"uid": "秘酿|武僧|WoW|WoW"
+						},
+						{
+							"header": "迷离酒仙",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "氤氲之雾",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "怒雷破",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "醉步摇摆",
+							"depth": 1,
+							"statblock": true
+						},
+						"圣骑士",
+						{
+							"header": "圣骑士",
+							"depth": 1,
+							"statblock": true,
+							"tag": "class",
+							"uid": "圣骑士|WoW"
+						},
+						{
+							"header": "奉献之誓",
+							"depth": 1,
+							"statblock": true,
+							"tag": "subclass",
+							"uid": "奉献|圣骑士|WoW|WoW"
+						},
+						{
+							"header": "复仇之誓",
+							"depth": 1,
+							"statblock": true,
+							"tag": "subclass",
+							"uid": "复仇|圣骑士|WoW|WoW"
+						},
+						{
+							"header": "神圣之誓",
+							"depth": 1,
+							"statblock": true,
+							"tag": "subclass",
+							"uid": "神圣|圣骑士|WoW|WoW"
+						},
+						{
+							"header": "奉献",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "圣盾术",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "引导祈祷",
+							"depth": 1,
+							"statblock": true
+						},
+						"牧师",
+						{
+							"header": "牧师",
+							"depth": 1,
+							"statblock": true,
+							"tag": "class",
+							"uid": "牧师|WoW"
+						},
+						{
+							"header": "生命领域",
+							"depth": 1,
+							"statblock": true,
+							"tag": "subclass",
+							"uid": "生命|牧师|WoW|WoW"
+						},
+						{
+							"header": "戒律领域",
+							"depth": 1,
+							"statblock": true,
+							"tag": "subclass",
+							"uid": "戒律|牧师|WoW|WoW"
+						},
+						{
+							"header": "暗影领域",
+							"depth": 1,
+							"statblock": true,
+							"tag": "subclass",
+							"uid": "暗影|牧师|WoW|WoW"
+						},
+						{
+							"header": "神圣化身",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "神圣新星",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "恢复祷言",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "灵魔恐惧",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "暗言术：痛",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "虚空爆发",
+							"depth": 1,
+							"statblock": true
+						},
+						"潜行者",
+						{
+							"header": "潜行者",
+							"depth": 1,
+							"statblock": true,
+							"tag": "class",
+							"uid": "潜行者|WoW"
+						},
+						{
+							"header": "刺客",
+							"depth": 1,
+							"statblock": true,
+							"tag": "subclass",
+							"uid": "刺客|潜行者|WoW|WoW"
+						},
+						{
+							"header": "魂刃",
+							"depth": 1,
+							"statblock": true,
+							"tag": "subclass",
+							"uid": "魂刃|潜行者|WoW|WoW"
+						},
+						{
+							"header": "剑客",
+							"depth": 1,
+							"statblock": true,
+							"tag": "subclass",
+							"uid": "剑客|潜行者|WoW|WoW"
+						},
+						"萨满祭司",
+						{
+							"header": "萨满祭司",
+							"depth": 1,
+							"statblock": true,
+							"tag": "class",
+							"uid": "萨满祭司|WoW"
+						},
+						{
+							"header": "世界树道途",
+							"depth": 1,
+							"statblock": true,
+							"tag": "subclass",
+							"uid": "世界树|萨满祭司|WoW|WoW"
+						},
+						{
+							"header": "元素道途",
+							"depth": 1,
+							"statblock": true,
+							"tag": "subclass",
+							"uid": "元素|萨满祭司|WoW|WoW"
+						},
+						{
+							"header": "灵体卫士道途",
+							"depth": 1,
+							"statblock": true,
+							"tag": "subclass",
+							"uid": "灵体卫士|萨满祭司|WoW|WoW"
+						},
+						"术士",
+						{
+							"header": "术士",
+							"depth": 1,
+							"statblock": true,
+							"tag": "class",
+							"uid": "术士|WoW"
+						},
+						{
+							"header": "旧日支配者宗主",
+							"depth": 1,
+							"statblock": true,
+							"tag": "subclass",
+							"uid": "旧日支配者|术士|WoW|WoW"
+						},
+						{
+							"header": "邪魔宗主",
+							"depth": 1,
+							"statblock": true,
+							"tag": "subclass",
+							"uid": "邪魔|术士|WoW|WoW"
+						},
+						{
+							"header": "虚空召唤",
+							"depth": 1,
+							"statblock": true,
+							"tag": "optfeature",
+							"uid": "虚空召唤|WoW"
+						},
+						{
+							"header": "腐蚀诅咒",
+							"depth": 1,
+							"statblock": true,
+							"tag": "optfeature",
+							"uid": "腐蚀诅咒|WoW"
+						},
+						{
+							"header": "弃子仆从",
+							"depth": 1,
+							"statblock": true,
+							"tag": "optfeature",
+							"uid": "弃子仆从|WoW"
+						},
+						{
+							"header": "生命通道",
+							"depth": 1,
+							"statblock": true,
+							"tag": "optfeature",
+							"uid": "生命通道|WoW"
+						},
+						{
+							"header": "军团召唤",
+							"depth": 1,
+							"statblock": true,
+							"tag": "optfeature",
+							"uid": "军团召唤|WoW"
+						},
+						{
+							"header": "恶魔学识大师",
+							"depth": 1,
+							"statblock": true,
+							"tag": "optfeature",
+							"uid": "恶魔学识大师|WoW"
+						},
+						{
+							"header": "军团契约",
+							"depth": 1,
+							"statblock": true,
+							"tag": "optfeature",
+							"uid": "军团契约|WoW"
+						},
+						{
+							"header": "痛苦诅咒",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "古尔丹之手",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "火焰之雨",
+							"depth": 1,
+							"statblock": true
+						},
+						"战士",
+						{
+							"header": "战士",
+							"depth": 1,
+							"statblock": true,
+							"tag": "class",
+							"uid": "战士|WoW"
+						},
+						{
+							"header": "战斗大师",
+							"depth": 1,
+							"statblock": true,
+							"tag": "subclass",
+							"uid": "战斗大师|战士|WoW|WoW"
+						},
+						{
+							"header": "勇士",
+							"depth": 1,
+							"statblock": true,
+							"tag": "subclass",
+							"uid": "勇士|战士|WoW|WoW"
+						},
+						{
+							"header": "战斗怒吼",
+							"depth": 1,
+							"statblock": true,
+							"tag": "optfeature",
+							"uid": "战斗怒吼|WoW"
+						},
+						{
+							"header": "挫志怒吼",
+							"depth": 1,
+							"statblock": true,
+							"tag": "optfeature",
+							"uid": "挫志怒吼|WoW"
+						},
+						{
+							"header": "英勇飞跃",
+							"depth": 1,
+							"statblock": true,
+							"tag": "optfeature",
+							"uid": "英勇飞跃|WoW"
+						},
+						{
+							"header": "致死打击",
+							"depth": 1,
+							"statblock": true,
+							"tag": "optfeature",
+							"uid": "致死打击|WoW"
+						},
+						{
+							"header": "守护战技",
+							"depth": 1,
+							"statblock": true,
+							"tag": "optfeature",
+							"uid": "守护战技|WoW"
+						}
+					]
+				},
+				{
+					"ENG_name": "Character Origins",
+					"name": "角色起源",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 2
+					},
+					"headers": [
+						"语言",
+						"龙希尔",
+						{
+							"header": "龙希尔",
+							"depth": 1,
+							"statblock": true
+						},
+						"德莱尼",
+						{
+							"header": "德莱尼",
+							"depth": 1,
+							"statblock": true
+						},
+						"矮人",
+						{
+							"header": "矮人",
+							"depth": 1,
+							"statblock": true
+						},
+						"土灵",
+						{
+							"header": "土灵",
+							"depth": 1,
+							"statblock": true
+						},
+						"精灵",
+						{
+							"header": "精灵",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "奥术脉冲",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "熵能之拥",
+							"depth": 1,
+							"statblock": true
+						},
+						"被遗忘者",
+						{
+							"header": "被遗忘者",
+							"depth": 1,
+							"statblock": true
+						},
+						"侏儒",
+						{
+							"header": "侏儒",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "机械侏儒",
+							"depth": 1,
+							"statblock": true
+						},
+						"地精",
+						{
+							"header": "地精",
+							"depth": 1,
+							"statblock": true
+						},
+						"哈拉尼尔",
+						{
+							"header": "哈拉尼尔",
+							"depth": 1,
+							"statblock": true
+						},
+						"人类",
+						{
+							"header": "人类",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "阿拉希传承",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "海洋之子",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "求生意志",
+							"depth": 1,
+							"statblock": true
+						},
+						"兽人",
+						{
+							"header": "兽人",
+							"depth": 1,
+							"statblock": true
+						},
+						"熊猫人",
+						{
+							"header": "熊猫人",
+							"depth": 1,
+							"statblock": true
+						},
+						"牛头人",
+						{
+							"header": "牛头人",
+							"depth": 1,
+							"statblock": true
+						},
+						"巨魔",
+						{
+							"header": "巨魔",
+							"depth": 1,
+							"statblock": true
+						},
+						"狐人",
+						{
+							"header": "狐人",
+							"depth": 1,
+							"statblock": true
+						},
+						"狼人",
+						{
+							"header": "狼人",
+							"depth": 1,
+							"statblock": true
+						}
+					]
+				},
+				{
+					"ENG_name": "Professions and Gear",
+					"name": "专业与装备",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 3
+					},
+					"headers": [
+						"专业与制作",
+						{
+							"header": "铭文行家",
+							"depth": 1,
+							"statblock": true
+						},
+						"坐骑与载具",
+						{
+							"header": "机械陆行鸟",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "熊猫人龙龟",
+							"depth": 1,
+							"statblock": true
+						},
+						"行侣生物",
+						{
+							"header": "水栖宠物祝福",
+							"depth": 1,
+							"statblock": true,
+							"tag": "reward",
+							"uid": "水栖宠物祝福|WoW"
+						},
+						{
+							"header": "野兽宠物祝福",
+							"depth": 1,
+							"statblock": true,
+							"tag": "reward",
+							"uid": "野兽宠物祝福|WoW"
+						},
+						{
+							"header": "龙类宠物祝福",
+							"depth": 1,
+							"statblock": true,
+							"tag": "reward",
+							"uid": "龙类宠物祝福|WoW"
+						},
+						{
+							"header": "元素宠物祝福",
+							"depth": 1,
+							"statblock": true,
+							"tag": "reward",
+							"uid": "元素宠物祝福|WoW"
+						},
+						{
+							"header": "飞行宠物祝福",
+							"depth": 1,
+							"statblock": true,
+							"tag": "reward",
+							"uid": "飞行宠物祝福|WoW"
+						},
+						{
+							"header": "人形宠物祝福",
+							"depth": 1,
+							"statblock": true,
+							"tag": "reward",
+							"uid": "人形宠物祝福|WoW"
+						},
+						{
+							"header": "魔法宠物祝福",
+							"depth": 1,
+							"statblock": true,
+							"tag": "reward",
+							"uid": "魔法宠物祝福|WoW"
+						},
+						{
+							"header": "机械宠物祝福",
+							"depth": 1,
+							"statblock": true,
+							"tag": "reward",
+							"uid": "机械宠物祝福|WoW"
+						},
+						{
+							"header": "亡灵宠物祝福",
+							"depth": 1,
+							"statblock": true,
+							"tag": "reward",
+							"uid": "亡灵宠物祝福|WoW"
+						},
+						"魔法物品",
+						{
+							"header": "灰烬使者",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "阿维亚娜之羽",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "食人魔王之冠",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "迪菲亚皮甲",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "毁灭之锤",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "实验型地精喷气背包",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "奇妙雕像（镶宝石黑豹）",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "泰坦合剂",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "霜之哀伤",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "地精起搏线",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "炉石",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "统御头盔",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "审判护甲",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "网巢生命法杖",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "诺格弗格药剂",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "点金石",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "法力药水",
+							"depth": 1,
+							"statblock": true,
+							"tag": "item",
+							"uid": "法力药水|WoW"
+						},
+						{
+							"header": "恢复药水",
+							"depth": 1,
+							"statblock": true,
+							"tag": "item",
+							"uid": "恢复药水|WoW"
+						},
+						{
+							"header": "睡行者之杖",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "影牙",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "萨拉迈恩",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "光影法杖",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "萨弗拉斯，拉格纳罗斯之手",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "巨魔之血药剂",
+							"depth": 1,
+							"statblock": true,
+							"tag": "item",
+							"uid": "巨魔之血药剂|WoW"
+						},
+						{
+							"header": "埃辛诺斯双刃",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "维斯拉克，亡者之瞳",
+							"depth": 1,
+							"statblock": true
+						}
+					]
+				},
+				{
+					"ENG_name": "Factions and Renown",
+					"name": "阵营与声望",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 4
+					},
+					"headers": [
+						"初始声望",
+						"通用声望福利",
+						"联盟",
+						{
+							"header": "大地守护者之视",
+							"depth": 1,
+							"statblock": true,
+							"tag": "reward",
+							"uid": "大地守护者之视|WoW"
+						},
+						"部落",
+						{
+							"header": "发条护符",
+							"depth": 1,
+							"statblock": true,
+							"tag": "reward",
+							"uid": "发条护符|WoW"
+						},
+						{
+							"header": "大地守护者之击",
+							"depth": 1,
+							"statblock": true,
+							"tag": "reward",
+							"uid": "大地守护者之击|WoW"
+						},
+						{
+							"header": "恐惧护符",
+							"depth": 1,
+							"statblock": true,
+							"tag": "reward",
+							"uid": "恐惧护符|WoW"
+						},
+						{
+							"header": "银月城护符",
+							"depth": 1,
+							"statblock": true,
+							"tag": "reward",
+							"uid": "银月城护符|WoW"
+						},
+						{
+							"header": "安希护符",
+							"depth": 1,
+							"statblock": true,
+							"tag": "reward",
+							"uid": "安希护符|WoW"
+						},
+						{
+							"header": "女妖护符",
+							"depth": 1,
+							"statblock": true,
+							"tag": "reward",
+							"uid": "女妖护符|WoW"
+						},
+						"银色黎明",
+						{
+							"header": "银色意志祝福",
+							"depth": 1,
+							"statblock": true,
+							"tag": "reward",
+							"uid": "银色意志祝福|WoW"
+						},
+						{
+							"header": "银色黎明护符",
+							"depth": 1,
+							"statblock": true,
+							"tag": "reward",
+							"uid": "银色黎明护符|WoW"
+						},
+						{
+							"header": "银色坚韧祝福",
+							"depth": 1,
+							"statblock": true,
+							"tag": "reward",
+							"uid": "银色坚韧祝福|WoW"
+						},
+						"塞纳里奥议会",
+						{
+							"header": "野卫祝福",
+							"depth": 1,
+							"statblock": true,
+							"tag": "reward",
+							"uid": "野卫祝福|WoW"
+						},
+						"大地之环",
+						{
+							"header": "大地之环祝福",
+							"depth": 1,
+							"statblock": true,
+							"tag": "reward",
+							"uid": "大地之环祝福|WoW"
+						},
+						{
+							"header": "先知祝福",
+							"depth": 1,
+							"statblock": true,
+							"tag": "reward",
+							"uid": "先知祝福|WoW"
+						},
+						"探险者协会与圣物学会",
+						"肯瑞托",
+						"Steamwheedle Cartel",
+						"瓦德拉肯联军",
+						{
+							"header": "野生幼龙祝福",
+							"depth": 1,
+							"statblock": true,
+							"tag": "reward",
+							"uid": "野生幼龙祝福|WoW"
+						}
+					]
+				},
+				{
+					"ENG_name": "The World of Warcraft",
+					"name": "魔兽世界",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 5
+					},
+					"headers": [
+						"宇宙之力",
+						"艾泽拉斯世界",
+						"艾泽拉斯之外"
+					]
+				},
+				{
+					"ENG_name": "Adventures in Azeroth",
+					"name": "艾泽拉斯的冒险",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 6
+					},
+					"headers": [
+						"改编艾泽拉斯",
+						"艾泽拉斯的冲突",
+						"地城指南",
+						"艾卓-尼鲁布",
+						{
+							"header": "守门人克里克希尔",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "哈多诺克斯",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "阿努巴拉克",
+							"depth": 1,
+							"statblock": true
+						},
+						"黑暗深渊",
+						{
+							"header": "加穆-拉",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "萨雷维斯女士",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "格里哈斯特",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "暮光领主克尔里斯",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "阿库麦尔",
+							"depth": 1,
+							"statblock": true
+						},
+						"死亡矿井",
+						{
+							"header": "工头拉克佐",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "斯尼德的伐木机",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "吉尔尼德",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "绿皮船长",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "埃德温·范克里夫",
+							"depth": 1,
+							"statblock": true
+						},
+						"厄运之槌",
+						{
+							"header": "荒野变形者奥兹恩",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "伊琳娜·暗木",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "伊莫尔塔",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "托塞德林王子",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "观察者克鲁什",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "戈多克大王",
+							"depth": 1,
+							"statblock": true
+						},
+						"奥妮克希亚的巢穴",
+						"血色修道院",
+						{
+							"header": "血法师萨尔诺斯",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "驯犬者洛克西",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "奥法师杜安",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "血色勇士赫罗德",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "血色指挥官莫格莱尼",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "大检察官萨莉·怀特迈恩",
+							"depth": 1,
+							"statblock": true
+						},
+						"影牙城堡",
+						{
+							"header": "阿什伯利男爵",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "席瓦莱恩男爵",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "指挥官斯普林瓦尔",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "斯普林瓦尔的幽灵",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "瓦尔登领主",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "高弗雷勋爵",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "灌脓巨怪",
+							"depth": 1,
+							"statblock": true
+						}
+					]
+				},
+				{
+					"ENG_name": "Bestiary of Azeroth",
+					"name": "艾泽拉斯怪物图鉴",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 7
+					},
+					"headers": [
+						"艾泽拉斯的生物",
+						"憎恶",
+						{
+							"header": "憎恶",
+							"depth": 1,
+							"statblock": true
+						},
+						"奥蕾莉亚·风行者",
+						{
+							"header": "奥蕾莉亚·风行者",
+							"depth": 1,
+							"statblock": true
+						},
+						"战争古树",
+						{
+							"header": "战争古树",
+							"depth": 1,
+							"statblock": true
+						},
+						"安度因·乌瑞恩",
+						{
+							"header": "安度因·乌瑞恩",
+							"depth": 1,
+							"statblock": true
+						},
+						"黑龙军团",
+						{
+							"header": "黑龙军团雏龙",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "黑龙军团幼龙",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "黑龙军团巨龙",
+							"depth": 1,
+							"statblock": true
+						},
+						"蓝龙军团",
+						{
+							"header": "蓝龙军团雏龙",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "蓝龙军团幼龙",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "蓝龙军团巨龙",
+							"depth": 1,
+							"statblock": true
+						},
+						"青铜龙军团",
+						{
+							"header": "青铜龙军团雏龙",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "青铜龙军团幼龙",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "青铜龙军团巨龙",
+							"depth": 1,
+							"statblock": true
+						},
+						"末日守卫",
+						{
+							"header": "末日守卫",
+							"depth": 1,
+							"statblock": true
+						},
+						"邪能小鬼",
+						{
+							"header": "邪能小鬼",
+							"depth": 1,
+							"statblock": true
+						},
+						"恶魔卫士",
+						{
+							"header": "恶魔卫士",
+							"depth": 1,
+							"statblock": true
+						},
+						"地狱猎犬",
+						{
+							"header": "地狱猎犬",
+							"depth": 1,
+							"statblock": true
+						},
+						"熊怪",
+						{
+							"header": "熊怪图腾师",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "熊怪乌萨",
+							"depth": 1,
+							"statblock": true
+						},
+						"绿龙军团",
+						{
+							"header": "绿龙军团雏龙",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "绿龙军团幼龙",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "绿龙军团巨龙",
+							"depth": 1,
+							"statblock": true
+						},
+						"伊利丹·怒风",
+						{
+							"header": "伊利丹·怒风",
+							"depth": 1,
+							"statblock": true
+						},
+						"地狱火",
+						{
+							"header": "地狱火",
+							"depth": 1,
+							"statblock": true
+						},
+						"吉安娜·普罗德摩尔",
+						{
+							"header": "吉安娜·普罗德摩尔",
+							"depth": 1,
+							"statblock": true
+						},
+						"巫妖王阿尔萨斯",
+						{
+							"header": "巫妖王阿尔萨斯",
+							"depth": 1,
+							"statblock": true
+						},
+						"枭兽",
+						{
+							"header": "枭兽",
+							"depth": 1,
+							"statblock": true
+						},
+						"鱼人",
+						{
+							"header": "鱼人搜掠者",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "鱼人神谕者",
+							"depth": 1,
+							"statblock": true
+						},
+						"纳迦",
+						{
+							"header": "纳迦迈拉斯卫",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "纳迦海妖",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "纳迦塞壬",
+							"depth": 1,
+							"statblock": true
+						},
+						"蛛魔",
+						{
+							"header": "蛛魔战士",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "蛛魔毒师",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "蛛魔地穴恶魔",
+							"depth": 1,
+							"statblock": true
+						},
+						"恩拉基",
+						{
+							"header": "恩拉基无面者",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "恩拉基无面将军",
+							"depth": 1,
+							"statblock": true
+						},
+						"深渊领主",
+						{
+							"header": "深渊领主",
+							"depth": 1,
+							"statblock": true
+						},
+						"野猪人",
+						{
+							"header": "野猪人荆棘编织者",
+							"depth": 1,
+							"statblock": true
+						},
+						"拉格纳罗斯",
+						{
+							"header": "拉格纳罗斯",
+							"depth": 1,
+							"statblock": true
+						},
+						"红龙军团",
+						{
+							"header": "红龙军团雏龙",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "红龙军团幼龙",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "红龙军团巨龙",
+							"depth": 1,
+							"statblock": true
+						},
+						"Satyrs",
+						{
+							"header": "邪誓萨特",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "潜行萨特",
+							"depth": 1,
+							"statblock": true
+						},
+						"破坏魔",
+						{
+							"header": "破坏魔",
+							"depth": 1,
+							"statblock": true
+						},
+						"希尔瓦娜斯·风行者",
+						{
+							"header": "希尔瓦娜斯·风行者",
+							"depth": 1,
+							"statblock": true
+						},
+						"萨尔",
+						{
+							"header": "萨尔",
+							"depth": 1,
+							"statblock": true
+						},
+						"虚空行者",
+						{
+							"header": "虚空行者",
+							"depth": 1,
+							"statblock": true
+						},
+						{
+							"header": "虚空召唤者",
+							"depth": 1,
+							"statblock": true
+						}
+					]
+				},
+				{
+					"ENG_name": "Credits",
+					"name": "创作人员",
+					"headers": [
+						"魔兽世界",
+						"D&D工作室团队"
 					]
 				}
 			],

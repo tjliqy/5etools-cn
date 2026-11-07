@@ -1014,17 +1014,19 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Monk",
+			"ENG_name": "Monk",
+			"name": "武僧",
 			"source": "WoW",
 			"reskinOf": [
-				"Monk|XPHB"
+				"武僧|XPHB"
 			],
 			"_copy": {
-				"name": "Monk",
+				"ENG_name": "Monk",
+				"name": "武僧",
 				"source": "XPHB"
 			},
 			"includeSubclassesFrom": [
-				"Monk|XPHB"
+				"武僧|XPHB"
 			],
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -1268,7 +1270,7 @@
 			"classSource": "PHB",
 			"page": 33,
 			"reprintedAs": [
-				"Mystic Brews|Monk|WoW|WoW"
+				"秘酿|武僧|WoW|WoW"
 			],
 			"edition": "classic",
 			"subclassFeatures": [
@@ -1974,46 +1976,51 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Warrior of Mercy",
-			"shortName": "Mercy",
+			"ENG_name": "Warrior of Mercy",
+			"name": "命流武者",
+			"shortName": "命流",
 			"source": "WoW",
-			"className": "Monk",
+			"className": "武僧",
 			"classSource": "WoW",
 			"_copy": {
-				"name": "Warrior of Mercy",
+				"ENG_name": "Warrior of Mercy",
+				"name": "命流武者",
 				"source": "XPHB",
-				"shortName": "Mercy",
-				"className": "Monk",
+				"shortName": "命流",
+				"className": "武僧",
 				"classSource": "XPHB"
 			}
 		},
 		{
-			"name": "Warrior of Mystic Brews",
-			"shortName": "Mystic Brews",
+			"ENG_name": "Warrior of Mystic Brews",
+			"name": "秘酿武者",
+			"shortName": "秘酿",
 			"source": "WoW",
-			"className": "Monk",
+			"className": "武僧",
 			"classSource": "WoW",
 			"edition": "one",
 			"subclassFeatures": [
-				"Warrior of Mystic Brews|Monk|WoW|Mystic Brews|WoW|3",
-				"Tipsy Sway|Monk|WoW|Mystic Brews|WoW|6",
-				"Mystic Brew|Monk|WoW|Mystic Brews|WoW|6",
-				"Wizened Brewer|Monk|WoW|Mystic Brews|WoW|11",
-				"Master Brewer|Monk|WoW|Mystic Brews|WoW|17",
-				"Intoxicated Frenzy|Monk|WoW|Mystic Brews|WoW|17"
+				"秘酿武者|武僧|WoW|秘酿|WoW|3",
+				"酣醉若狂|武僧|WoW|秘酿|WoW|6",
+				"秘酿|武僧|WoW|秘酿|WoW|6",
+				"老练酒师|武僧|WoW|秘酿|WoW|11",
+				"酿酒大师|武僧|WoW|秘酿|WoW|17",
+				"酣醉若狂|武僧|WoW|秘酿|WoW|17"
 			]
 		},
 		{
-			"name": "Warrior of the Open Hand",
-			"shortName": "Open Hand",
+			"ENG_name": "Warrior of the Open Hand",
+			"name": "散打武者",
+			"shortName": "散打",
 			"source": "WoW",
-			"className": "Monk",
+			"className": "武僧",
 			"classSource": "WoW",
 			"_copy": {
-				"name": "Warrior of the Open Hand",
+				"ENG_name": "Warrior of the Open Hand",
+				"name": "散打武者",
 				"source": "XPHB",
-				"shortName": "Open Hand",
-				"className": "Monk",
+				"shortName": "散打",
+				"className": "武僧",
 				"classSource": "XPHB"
 			}
 		}
@@ -4288,7 +4295,7 @@
 		},
 		{
 			"ENG_name": "Leap to Your Feet",
-			"name": "鲤鱼打挺",
+			"name": "翻身而起",
 			"source": "XGE",
 			"page": 34,
 			"className": "武僧",
@@ -4336,7 +4343,7 @@
 					"entries": [
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "鲤鱼打挺|武僧|PHB|醉拳|XGE|6"
+							"subclassFeature": "翻身而起|武僧|PHB|醉拳|XGE|6"
 						},
 						{
 							"type": "refSubclassFeature",
@@ -4625,6 +4632,246 @@
 			"entries": [
 				"从17级起，你的身躯被永久包覆在魔法性的耀眼灵光之中。你发散出30尺的明亮光照和额外30尺的微光光照。你可以以一个附赠动作将这一光照熄灭或将其恢复。",
 				"光照未被熄灭的情况下，如果有生物对你发动近战攻击并击中了你，你可以用你的反应对那个生物造成 5+你的感知调整值 点的光耀伤害。"
+			]
+		},
+		{
+			"ENG_name": "Bonus Proficiencies",
+			"name": "附赠熟练",
+			"source": "WoW",
+			"className": "武僧",
+			"classSource": "WoW",
+			"subclassShortName": "秘酿",
+			"subclassSource": "WoW",
+			"level": 3,
+			"entries": [
+				"你获得{@skill 表演|XPHB}技能的熟练项；若你已拥有，则改为从武僧 1 级可选技能中选择一项获得熟练项。如果你尚无{@item 酿酒工具|XPHB}熟练项，你还获得它。"
+			]
+		},
+		{
+			"ENG_name": "Drunken Technique",
+			"name": "醉拳技巧",
+			"source": "WoW",
+			"className": "武僧",
+			"classSource": "WoW",
+			"subclassShortName": "秘酿",
+			"subclassSource": "WoW",
+			"level": 3,
+			"entries": [
+				"你移动时身法迅疾、辗转腾挪。每当你使用{@classFeature 坚强防御|武僧|XPHB|2|XPHB}消耗一点{@classFeature 武僧武功|武僧|XPHB|2|XPHB|Focus Point}，你的{@variantrule 速度|XPHB}提高 10 尺直到当前回合结束，且你可以在该{@variantrule 附赠动作|XPHB}之后立即进行一次{@variantrule 徒手打击|XPHB}。"
+			]
+		},
+		{
+			"ENG_name": "Warrior of Mystic Brews",
+			"name": "秘酿武者",
+			"source": "WoW",
+			"className": "武僧",
+			"classSource": "WoW",
+			"subclassShortName": "秘酿",
+			"subclassSource": "WoW",
+			"level": 3,
+			"entries": [
+				"{@i 饮下秘酿，惑乱强敌}",
+				"秘酿武者的动作带着醉汉般的抽动与不可捉摸。他们看似踉跄的步伐之下，掩藏着精心编排的格挡、招架、进击、攻杀与撤退之舞。秘酿武者常出没于酒馆与客栈，打探消息或监视潜在的威胁。这些武者饮用强化武艺的魔法酿造物。",
+				"秘酿武者常常乐于扮丑逗乐困顿之人，或挫一挫傲慢之徒的锐气，但在战斗中，这些武僧却是令人抓狂的精湛对手。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "附赠熟练|武僧|WoW|秘酿|WoW|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "醉拳技巧|武僧|WoW|秘酿|WoW|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Enhancing a Magical Beverage",
+			"name": "强化魔法饮品",
+			"source": "WoW",
+			"className": "武僧",
+			"classSource": "WoW",
+			"subclassShortName": "秘酿",
+			"subclassSource": "WoW",
+			"level": 6,
+			"consumes": {
+				"ENG_name": "Focus Point",
+				"name": "功力"
+			},
+			"entries": [
+				"当你酿造魔法饮品时，你可以消耗 1 点{@classFeature 武僧武功|武僧|XPHB|2|XPHB|Focus Point}，将其收益的持续时间延长为 8 小时。"
+			]
+		},
+		{
+			"ENG_name": "Leap to Your Feet",
+			"name": "翻身而起",
+			"source": "WoW",
+			"className": "武僧",
+			"classSource": "WoW",
+			"subclassShortName": "秘酿",
+			"subclassSource": "WoW",
+			"level": 6,
+			"entries": [
+				"当你处于{@condition 倒地|XPHB}状态时，你可以只消耗 5 尺移动来起身。"
+			]
+		},
+		{
+			"ENG_name": "Redirect Attack",
+			"name": "借力打力",
+			"source": "WoW",
+			"className": "武僧",
+			"classSource": "WoW",
+			"subclassShortName": "秘酿",
+			"subclassSource": "WoW",
+			"level": 6,
+			"consumes": {
+				"ENG_name": "Focus Point",
+				"name": "功力"
+			},
+			"entries": [
+				"当一个敌人以近战攻击检定错过你时，你可以以一个{@variantrule 反应|XPHB}并消耗 1 点{@classFeature 武僧武功|武僧|XPHB|2|XPHB|Focus Point}，使该攻击转而命中你 5 尺内一个由你选择、除攻击者以外的可见生物。"
+			]
+		},
+		{
+			"ENG_name": "Mystic Brew",
+			"name": "秘酿",
+			"source": "WoW",
+			"className": "武僧",
+			"classSource": "WoW",
+			"subclassShortName": "秘酿",
+			"subclassSource": "WoW",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"每当你手持{@item 酿酒工具|XPHB}完成{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}后，你可以用该工具魔法地酿出一瓶魔法饮品，从以下选项中选择：肉桂龙、天堂之灵或清爽浸饮。一品脱饮品出现在你手持或携带的瓶子或水壶中；否则饮品洒落在地并随即消失。当你完成{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}时若尚有剩余，饮品随之消失。",
+				{
+					"ENG_name": "Drinking a Magical Beverage",
+					"name": "饮用魔法饮品",
+					"type": "entries",
+					"entries": [
+						"只有你能获得饮用该饮品的收益。你必须饮完整整一品脱才能获得其收益。你可以花 1 分钟饮用。随后你获得该饮品的收益，持续 1 小时或直到你饮用另一瓶魔法饮品，如下所述：",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"ENG_name": "Cinnamon Dragon",
+									"name": "肉桂龙",
+									"type": "item",
+									"entry": "你可以采取{@action 魔法|XPHB}动作，呼出 30 尺{@variantrule 锥状 [效应区域]|XPHB|锥状}的毒焰。{@variantrule 锥状 [效应区域]|XPHB|锥状}内的每个生物进行敏捷豁免（{@dc 8}加你的感知调整值与{@variantrule 熟练|XPHB|熟练加值}）。豁免失败的生物受等同于你{@classFeature 武艺|武僧|XPHB|1|XPHB}骰四次掷骰的火焰伤害，并受{@condition 中毒|XPHB}状态直到其下个回合结束。豁免成功则仅受一半伤害。"
+								},
+								{
+									"ENG_name": "Heavenly Spirit",
+									"name": "天堂之灵",
+									"type": "item",
+									"entry": "你对以下伤害类型中的两种（由你选择）获得{@variantrule 抗性|XPHB}：寒冷、黯蚀、心灵或光耀伤害。"
+								},
+								{
+									"ENG_name": "Refreshing Dip",
+									"name": "清爽浸饮",
+									"type": "item",
+									"entry": "你拥有一池与你的{@classFeature 武艺|武僧|XPHB|1|XPHB}骰同类型的骰子。骰子数量上限等于你的感知调整值加你武僧等级的一半（向下取整）。每当你回复{@variantrule 生命值|XPHB}时，你可以从此池中消耗并掷一颗骰子，额外回复等同于掷骰数值的{@variantrule 生命值|XPHB}。"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "强化魔法饮品|武僧|WoW|秘酿|WoW|6"
+				}
+			]
+		},
+		{
+			"ENG_name": "Tipsy Sway",
+			"name": "酣醉若狂",
+			"source": "WoW",
+			"className": "武僧",
+			"classSource": "WoW",
+			"subclassShortName": "秘酿",
+			"subclassSource": "WoW",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你能以突发而摇摆的方式移动。你获得以下收益。",
+				{
+					"type": "options",
+					"style": "list-hang-notitle",
+					"entries": [
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "翻身而起|武僧|WoW|秘酿|WoW|6"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "借力打力|武僧|WoW|秘酿|WoW|6"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Wizened Brewer",
+			"name": "老练酒师",
+			"source": "WoW",
+			"className": "武僧",
+			"classSource": "WoW",
+			"subclassShortName": "秘酿",
+			"subclassSource": "WoW",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"你掌握了更复杂的风味。以下饮品加入你的{@subclassFeature 秘酿|武僧|WoW|秘酿|WoW|6|WoW}选项：",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Blue Lightning",
+							"name": "蓝色闪电",
+							"type": "item",
+							"entry": "每当你采取的{@variantrule 反应|XPHB}并非{@action 借机攻击|XPHB}或施展法术时，你可以作为该{@variantrule 反应|XPHB}的一部分进行一次{@variantrule 徒手打击|XPHB}。"
+						},
+						{
+							"ENG_name": "Drunkard's Luck",
+							"name": "醉汉机运",
+							"type": "item",
+							"entry": "如果你尚未拥有{@variantrule 英雄激励|XPHB}，则获得它。此外，当你进行一次没有它的属性检定或豁免检定时，你可以给予自己{@variantrule 英雄激励|XPHB}。"
+						},
+						{
+							"ENG_name": "Stumbling Monk",
+							"name": "踉跄武僧",
+							"type": "item",
+							"entry": "当你采取{@classFeature 坚强防御|武僧|XPHB|2|XPHB}以外的{@variantrule 附赠动作|XPHB}时，你可以在该{@variantrule 附赠动作|XPHB}之后立即使用{@classFeature 坚强防御|武僧|XPHB|2|XPHB}。"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Intoxicated Frenzy",
+			"name": "酣醉若狂",
+			"source": "WoW",
+			"className": "武僧",
+			"classSource": "WoW",
+			"subclassShortName": "秘酿",
+			"subclassSource": "WoW",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"在你使用{@classFeature 坚强防御|武僧|XPHB|2|XPHB}后立即，你可以移动至多等同于你{@variantrule 速度|XPHB}的距离。在此移动期间，每当你进入某生物 5 尺内的空间，你可以对它进行一次{@variantrule 徒手打击|XPHB}。此外，当你以此特性赋予的{@variantrule 徒手打击|XPHB}命中一个生物时，该生物必须通过敏捷豁免，否则受{@condition 倒地|XPHB}状态。一个生物每回合只能被此特性赋予的{@variantrule 徒手打击|XPHB}指定一次。"
+			]
+		},
+		{
+			"ENG_name": "Master Brewer",
+			"name": "酿酒大师",
+			"source": "WoW",
+			"className": "武僧",
+			"classSource": "WoW",
+			"subclassShortName": "秘酿",
+			"subclassSource": "WoW",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"当你使用{@subclassFeature 秘酿|武僧|WoW|秘酿|WoW|6|WoW}特性酿造魔法饮品时，你可以选择两个不同选项并酿出一瓶魔法饮品。饮用该饮品在持续时间内同时提供两个选项的效果。"
 			]
 		},
 		{

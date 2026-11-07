@@ -762,6 +762,45 @@
 			"translator": "不全书"
 		},
 		{
+			"ENG_name": "Arathi Heritage",
+			"name": "阿拉希传承",
+			"source": "WoW",
+			"page": 85,
+			"category": "O",
+			"prerequisite": [
+				{
+					"campaign": [
+						"魔兽世界"
+					],
+					"race": [
+						{
+							"ENG_name": "human",
+							"name": "人类"
+						}
+					]
+				}
+			],
+			"entries": [
+				"作为阿拉索人类与奎尔萨拉斯高等精灵的后裔，你获得以下收益。",
+				{
+					"ENG_name": "Fey Ancestry",
+					"name": "妖精血统",
+					"type": "entries",
+					"entries": [
+						"你为避免或结束{@condition 魅惑|XPHB}状态而进行的豁免检定具有{@variantrule 优势|XPHB}。"
+					]
+				},
+				{
+					"ENG_name": "Lethargy Resilience",
+					"name": "昏睡抗力",
+					"type": "entries",
+					"entries": [
+						"当你为避免或结束{@condition 昏迷|XPHB}状态的豁免检定失败时，你可以改为成功。一旦你使用了这个特性，直到你完成{@dice 1d4}次{@variantrule 长休|XPHB|长休}前，你无法再次使用。"
+					]
+				}
+			]
+		},
+		{
 			"ENG_name": "Arcane Artist",
 			"name": "奥法艺术家",
 			"source": "AU",
@@ -3712,6 +3751,48 @@
 			"translator": "不全书"
 		},
 		{
+			"ENG_name": "Child of the Sea",
+			"name": "海洋之子",
+			"source": "WoW",
+			"page": 85,
+			"category": "O",
+			"prerequisite": [
+				{
+					"campaign": [
+						"魔兽世界"
+					],
+					"race": [
+						{
+							"ENG_name": "human",
+							"name": "人类"
+						}
+					]
+				}
+			],
+			"traitTags": [
+				"Speed"
+			],
+			"entries": [
+				"作为一名库尔提拉斯人，你获得以下收益。",
+				{
+					"ENG_name": "Lasting Breath",
+					"name": "持久之息",
+					"type": "entries",
+					"entries": [
+						"你可以屏息的分钟数等于 2 加你的体质调整值（至少 1 分钟）。"
+					]
+				},
+				{
+					"ENG_name": "Ocean Born",
+					"name": "生于大海",
+					"type": "entries",
+					"entries": [
+						"你获得{@variantrule 游泳速度|XPHB}（等同于你的{@variantrule 速度|XPHB}）。"
+					]
+				}
+			]
+		},
+		{
 			"ENG_name": "Child of the Sun",
 			"name": "骄阳之子",
 			"source": "LFL",
@@ -3757,6 +3838,42 @@
 				}
 			],
 			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Clearcasting",
+			"name": "节能施法",
+			"source": "WoW",
+			"page": 40,
+			"category": "G",
+			"prerequisite": [
+				{
+					"level": 4
+				}
+			],
+			"ability": [
+				{
+					"int": 1
+				}
+			],
+			"entries": [
+				"你获得以下增益。",
+				{
+					"ENG_name": "Clearcasting",
+					"name": "节能施法",
+					"type": "entries",
+					"entries": [
+						"当你以法术的攻击检定造成{@variantrule 重击|XPHB}时，你可以采取{@variantrule 反应|XPHB}施展一个{@filter 施法时间为一个动作的戏法|spells|level=0|cast time=action}。"
+					]
+				},
+				{
+					"ENG_name": "Force Adept",
+					"name": "力场行家",
+					"type": "entries",
+					"entries": [
+						"当你为自己施展的造成力场伤害的法术掷伤害时，你可以将伤害骰上的每个 1 视为 2。"
+					]
+				}
+			]
 		},
 		{
 			"ENG_name": "Cloying Mists",
@@ -5332,6 +5449,45 @@
 			"hasFluffImages": true
 		},
 		{
+			"ENG_name": "Elusive Brawler",
+			"name": "迷离酒仙",
+			"source": "WoW",
+			"page": 45,
+			"category": "G",
+			"prerequisite": [
+				{
+					"level": 4,
+					"ability": [
+						{
+							"dex": 13,
+							"wis": 13
+						}
+					]
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"dex",
+							"wis"
+						]
+					}
+				}
+			],
+			"entries": [
+				"你获得以下增益。",
+				{
+					"ENG_name": "Reactive Dodge",
+					"name": "反应闪避",
+					"type": "entries",
+					"entries": [
+						"当你受到伤害时，你可以用{@variantrule 反应|XPHB}采取{@action 回避|XPHB}动作。"
+					]
+				}
+			]
+		},
+		{
 			"ENG_name": "Elven Accuracy",
 			"name": "精灵之准",
 			"source": "XGE",
@@ -5635,6 +5791,47 @@
 				}
 			],
 			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Enveloping Mist",
+			"name": "氤氲之雾",
+			"source": "WoW",
+			"page": 45,
+			"category": "G",
+			"prerequisite": [
+				{
+					"level": 4,
+					"ability": [
+						{
+							"dex": 13,
+							"wis": 13
+						}
+					]
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"dex",
+							"wis"
+						]
+					}
+				}
+			],
+			"entries": [
+				"你获得以下增益。",
+				{
+					"ENG_name": "Enveloping Mist",
+					"name": "氤氲之雾",
+					"type": "entries",
+					"entries": [
+						"当你施展法术或使用特性为某生物恢复{@variantrule 生命值|XPHB}时，该生物被一团治疗之雾包裹。掷一枚来自治疗它的特性中的骰子，并将掷出的数值记为该生物的生命茧值。",
+						"在该生物下个回合开始前，若它被攻击检定命中，你可以采取{@variantrule 反应|XPHB}，使其受到的该次攻击伤害减少等同于其生命茧值的数值，随后雾气消散。",
+						"在该生物下个回合开始时，若雾气仍在持续，该生物获得等同于其生命茧值的{@variantrule 临时生命值|XPHB}。"
+					]
+				}
+			]
 		},
 		{
 			"ENG_name": "Evocation Adept",
@@ -6058,6 +6255,89 @@
 				"每当你升级并达到获得属性值提升特性的等级时，你可以来自此专长的战斗风格替换为战士职业中的另一项你未习得的战斗风格。"
 			],
 			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Fingers of Frost",
+			"name": "寒冰指",
+			"source": "WoW",
+			"page": 40,
+			"category": "G",
+			"prerequisite": [
+				{
+					"level": 4
+				}
+			],
+			"ability": [
+				{
+					"int": 1
+				}
+			],
+			"entries": [
+				"你获得以下增益。",
+				{
+					"ENG_name": "Cold Mastery",
+					"name": "冰霜精通",
+					"type": "entries",
+					"entries": [
+						"你施展的法术无视对寒冷伤害的{@variantrule 抗性|XPHB}。"
+					]
+				},
+				{
+					"ENG_name": "Frostbite",
+					"name": "霜噬",
+					"type": "entries",
+					"entries": [
+						"当你对具有{@condition 束缚|XPHB}状态的生物造成寒冷伤害时，该生物受到额外寒冷伤害。为决定额外伤害的数值，掷数量等同于你{@variantrule 熟练|XPHB|熟练加值}的 d4 并求和。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Fists of Fury",
+			"name": "怒雷破",
+			"source": "WoW",
+			"page": 45,
+			"category": "G",
+			"prerequisite": [
+				{
+					"level": 4,
+					"ability": [
+						{
+							"dex": 13,
+							"wis": 13
+						}
+					]
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"dex",
+							"wis"
+						]
+					}
+				}
+			],
+			"entries": [
+				"你获得以下增益。",
+				{
+					"ENG_name": "Clean Hits",
+					"name": "精准打击",
+					"type": "entries",
+					"entries": [
+						"当你以{@variantrule 徒手打击|XPHB}或具有{@itemProperty L|XPHB|轻型}属性的武器攻击并掷伤害时，你可以将伤害骰上的每个 1 视为 2。"
+					]
+				},
+				{
+					"ENG_name": "Combo Strikes",
+					"name": "连击打击",
+					"type": "entries",
+					"entries": [
+						"当你以{@variantrule 徒手打击|XPHB}对某生物造成伤害时，你在同一回合内此前每以近战攻击检定命中该生物一次，该次伤害检定便获得 +1 加值。"
+					]
+				}
+			]
 		},
 		{
 			"ENG_name": "Flames of Phlegethos",
@@ -7568,6 +7848,42 @@
 			"translator": "不全书"
 		},
 		{
+			"ENG_name": "Hot Streak",
+			"name": "炽热连击",
+			"source": "WoW",
+			"page": 41,
+			"category": "G",
+			"prerequisite": [
+				{
+					"level": 4
+				}
+			],
+			"ability": [
+				{
+					"int": 1
+				}
+			],
+			"entries": [
+				"你获得以下增益。",
+				{
+					"ENG_name": "Fire Mastery",
+					"name": "火元素掌控",
+					"type": "entries",
+					"entries": [
+						"你施展的法术无视对火焰伤害的{@variantrule 抗性|XPHB}。"
+					]
+				},
+				{
+					"ENG_name": "Ignite",
+					"name": "点燃",
+					"type": "entries",
+					"entries": [
+						"当你施展的法术对某生物造成火焰伤害时，目标开始{@hazard 燃烧|XPHB}。当你对已在燃烧的生物造成火焰伤害时，火焰愈发猛烈，燃烧伤害提高{@damage 1d4}。"
+					]
+				}
+			]
+		},
+		{
 			"ENG_name": "Illusion Adept",
 			"name": "幻术专家",
 			"source": "AU",
@@ -7893,6 +8209,107 @@
 			],
 			"hasFluffImages": true,
 			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Inscription Adept",
+			"name": "铭文行家",
+			"source": "WoW",
+			"page": 101,
+			"category": "G",
+			"prerequisite": [
+				{
+					"level": 4,
+					"proficiency": [
+						{
+							"tool": [
+								"calligrapher's supplies"
+							]
+						},
+						{
+							"tool": [
+								"cartographer's tools"
+							]
+						},
+						{
+							"tool": [
+								"painter's supplies"
+							]
+						}
+					]
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						]
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": "inherit",
+					"prepared": {
+						"5": {
+							"daily": {
+								"1": [
+									"守卫刻文|xphb"
+								]
+							}
+						},
+						"13": {
+							"daily": {
+								"1": [
+									"徽记术|xphb"
+								]
+							}
+						},
+						"_": {
+							"daily": {
+								"1": [
+									"迷幻手稿|xphb"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"你对铭文的精通让你能够以书写的魔法复现某些法术的效果。你获得以下收益。",
+				{
+					"ENG_name": "Inscription Magic",
+					"name": "铭文魔法",
+					"type": "entries",
+					"entries": [
+						"你习得{@spell 迷幻手稿|XPHB}法术且始终让它处于已准备状态。你可以不消耗法术位施展它一次，并在完成{@variantrule 长休|XPHB}后恢复以此方式施展它的能力。你也可以使用你拥有的任意适当环阶的法术位施展该法术。你可以用等值的草药学资源代替该法术指定的材料成分。该法术的施法属性为本专长所提升的属性。",
+						"当你在铭文上达到更高的熟练等级时，你会习得更高环阶的法术，并能以同样的方式施展它们，如表所示。"
+					]
+				},
+				{
+					"type": "table",
+					"colLabels": [
+						"熟练",
+						"法术"
+					],
+					"colStyles": [
+						"col-6",
+						"col-6"
+					],
+					"rows": [
+						[
+							"熟练（+3）",
+							"{@spell 守卫刻文|XPHB}"
+						],
+						[
+							"工匠（+5）",
+							"{@spell 徽记术|XPHB}"
+						]
+					]
+				}
+			]
 		},
 		{
 			"ENG_name": "Inspiring Leader",
@@ -14749,6 +15166,53 @@
 			"translator": "不全书"
 		},
 		{
+			"ENG_name": "Stagger and Sway",
+			"name": "醉步摇摆",
+			"source": "WoW",
+			"page": 45,
+			"category": "G",
+			"prerequisite": [
+				{
+					"level": 4,
+					"ability": [
+						{
+							"dex": 13,
+							"wis": 13
+						}
+					]
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"dex",
+							"wis"
+						]
+					}
+				}
+			],
+			"entries": [
+				"你获得以下增益。",
+				{
+					"ENG_name": "Defer Damage",
+					"name": "延后伤害",
+					"type": "entries",
+					"entries": [
+						"当你受到伤害时，将其减少你的敏捷调整值（至少 1 点）。随后将一枚{@dice d6}加入你的延迟反应池。在你的回合结束时，将延迟反应池中的所有骰子移除并掷骰。你受到等同于掷骰总值的力场伤害。"
+					]
+				},
+				{
+					"ENG_name": "Purify",
+					"name": "净化",
+					"type": "entries",
+					"entries": [
+						"以一个{@variantrule 附赠动作|XPHB}，你可以从你的延迟反应池中移除数量等同于你感知调整值的骰子。"
+					]
+				}
+			]
+		},
+		{
 			"ENG_name": "Street Justice",
 			"name": "街头正义",
 			"source": "FRHoF",
@@ -16528,6 +16992,37 @@
 			"translator": "不全书"
 		},
 		{
+			"ENG_name": "Void Warrior",
+			"name": "虚空战士",
+			"source": "WoW",
+			"page": 18,
+			"category": "FS:R",
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "Demon Hunter Fighting Style",
+						"entrySummary": "特殊"
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": "wis",
+					"known": {
+						"_": [
+							{
+								"choose": "level=0|class=魔契师",
+								"count": 2
+							}
+						]
+					}
+				}
+			],
+			"entries": [
+				"你习得两个自选的{@filter 术士戏法|spells|level=0|class=warlock}。推荐选择{@spell 颤栗之触|XPHB}和{@spell 心灵之楔|XPHB}。所选戏法对你而言视为游侠法术，且你的施法属性为感知。每当你获得游侠等级时，你都可以将其中一个戏法替换为另一个术士戏法。"
+			]
+		},
+		{
 			"ENG_name": "War Caster",
 			"name": "战地施法者",
 			"source": "PHB",
@@ -16804,6 +17299,29 @@
 			],
 			"hasFluffImages": true,
 			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Will to Survive",
+			"name": "求生意志",
+			"source": "WoW",
+			"page": 85,
+			"category": "O",
+			"prerequisite": [
+				{
+					"campaign": [
+						"魔兽世界"
+					],
+					"race": [
+						{
+							"ENG_name": "human",
+							"name": "人类"
+						}
+					]
+				}
+			],
+			"entries": [
+				"当你具有{@condition 失能|XPHB}状态但没有{@condition 昏迷|XPHB}状态时，你可以汲取暴风城或激流堡的骄傲传承，在你的回合中忽略{@condition 失能|XPHB}状态。若你如此做，你获得 1 级{@condition 力竭|XPHB}。"
+			]
 		},
 		{
 			"ENG_name": "Wood Elf Magic",

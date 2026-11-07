@@ -1,15 +1,17 @@
 {
 	"classFluff": [
 		{
-			"name": "Shaman",
+			"ENG_name": "Shaman",
+			"name": "萨满祭司",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Shaman",
+					"name": "萨满祭司",
 					"type": "section",
-					"name": "Shaman",
 					"entries": [
-						"Shaman are spiritual adepts who commune with the elemental forces of the world and channel their power. These elemental forces are chaotic and, left to their own devices, would rage against each other in unending primal fury. A shaman's call is to bring balance to this chaos, acting as a moderator among air, earth, fire, and water. A shaman's magic focuses the elements to support the shaman's allies or punish those who threaten them.",
-						"Shaman are fierce warriors who wield their elemental magic as totems placed on the ground or auras that surround the shaman, rather than traditional spellcasting."
+						"萨满祭司是与世界元素之力沟通并引导其力量的灵性行者。这些元素之力混沌无序，若放任自流，便会在无尽的原初狂怒中彼此肆虐。萨满的天命就是为这混沌带来平衡，在风、土、火、水之间充当调停者。萨满的魔法凝聚元素，以支援盟友或惩治威胁者。",
+						"萨满是凶猛的战士，他们以插于地面的图腾或环绕自身的灵光来施展元素魔法，而非传统的施法方式。"
 					]
 				}
 			],
@@ -22,7 +24,7 @@
 					},
 					"width": 1700,
 					"height": 2549,
-					"title": "Vol'jin, a Troll Shadow Hunter Who Wields Shamanic Magic",
+					"title": "沃金，一位运用萨满魔法的巨魔暗影猎手",
 					"credit": "Raymond Swanland, Blizzard Artist"
 				},
 				{
@@ -39,10 +41,11 @@
 	],
 	"subclassFluff": [
 		{
-			"name": "Path of the Spiritual Guardian",
-			"shortName": "Spiritual Guardian",
+			"ENG_name": "Path of the Spiritual Guardian",
+			"name": "灵体卫士道途",
+			"shortName": "灵体卫士",
 			"source": "WoW",
-			"className": "Shaman",
+			"className": "萨满祭司",
 			"classSource": "WoW",
 			"images": [
 				{
@@ -53,7 +56,7 @@
 					},
 					"width": 850,
 					"height": 1671,
-					"title": "Thrall, an Orc Shaman",
+					"title": "萨尔，一位兽人萨满祭司",
 					"credit": "Alex Horley-Orlandelli"
 				}
 			]

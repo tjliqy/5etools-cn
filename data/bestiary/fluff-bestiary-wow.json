@@ -6,31 +6,35 @@
 	},
 	"monsterFluff": [
 		{
-			"name": "Abomination",
+			"ENG_name": "Abomination",
+			"name": "憎恶",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Abomination",
+					"name": "憎恶",
 					"type": "section",
-					"name": "Abomination",
 					"entries": [
-						"{@i Unholy Combination of Stitched Dead Flesh}",
+						"{@i 缝合死肉拼成的邪恶造物}",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
 							"items": [
 								{
+									"ENG_name": "Habitat:",
+									"name": "栖息地：",
 									"type": "item",
-									"name": "Habitat:",
-									"entry": "Any"
+									"entry": "任意"
 								},
 								{
+									"ENG_name": "Treasure:",
+									"name": "宝藏：",
 									"type": "item",
-									"name": "Treasure:",
-									"entry": "Arcana"
+									"entry": "奥秘"
 								}
 							]
 						},
-						"Abominations are flesh constructs made from the reanimated body parts of mutilated corpses. Held together by loose stitching and pieces of metal and bone, they reek of death and disease, dangling entrails and dripping fluids from open wounds as they bound relentlessly forward, cleavers in hand. Though their lolling heads and gaping mouths appear almost joyful, they are driven by little more than their desire to carve through and consume flesh, whether it belongs to the living or the dead."
+						"憎恶是由残损尸体的肢体经亡灵法术重新拼合而成的血肉构装体。它们靠松散的缝合线以及金属与骨片连缀成身，散发着死亡与疫病的恶臭；当它们手擎切肉刀不知疲倦地向前奔突时，内脏悬荡于外，创口脓液淋漓。它们那耷拉的脑袋和张大的嘴几乎透着几分欢欣，但驱使它们的，不过是对切割血肉、吞吃血肉的渴望\u2014\u2014无论那血肉属于生者还是死者。"
 					]
 				}
 			],
@@ -48,14 +52,16 @@
 			]
 		},
 		{
-			"name": "Aku'mai",
+			"ENG_name": "Aku'mai",
+			"name": "阿库麦尔",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Aku'mai",
+					"name": "阿库麦尔",
 					"type": "section",
-					"name": "Aku'mai",
 					"entries": [
-						"This three-headed ancient evil carries within it a seed of the {@book Old Gods'|WoW|6|Old Gods} power. {@creature Lady Sarevess|WoW} believes it is the spawn of N'Zoth and a key to opening his nightmare realm of Ny'alotha. Aku'mai is feared by all for its relentless savagery and insatiable hunger\u2014but the wise fear it because all who look on it hear the whispers of the Old Gods."
+						"这头生有三个头颅的远古邪物体内，孕育着一粒{@book 上古之神的|WoW|6|上古之神}的力量种子。{@creature 萨雷维斯女士|WoW}相信它是恩佐斯的后裔，是开启他那梦魇之国尼奥罗萨的钥匙。所有生灵都惧怕阿库麦尔，惧怕它的无尽凶残与饕餮之欲\u2014\u2014而智者惧怕它，是因为凡是目睹它的人，都会听见上古之神的低语。"
 					]
 				}
 			],
@@ -72,17 +78,19 @@
 			]
 		},
 		{
-			"name": "Alleria Windrunner",
+			"ENG_name": "Alleria Windrunner",
+			"name": "奥蕾莉亚·风行者",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Alleria Windrunner",
+					"name": "奥蕾莉亚·风行者",
 					"type": "section",
-					"name": "Alleria Windrunner",
 					"entries": [
-						"{@i Void-Infused Elf Who Guides Her Kin}",
-						"The eldest Windrunner sister, Alleria is a light in the darkness for her people\u2014or perhaps she is darkness within the light. The Alliance knows her best as a hero of the Second War, venerated alongside her peers with a towering statue in Stormwind City's Valley of Heroes. Like them, she was thought to have died in Outland.",
-						"Alleria and her husband, the human paladin Turalyon, became warriors of the Light and journeyed deep into the Twisting Nether to fight the {@book Burning Legion|WoW|6|Burning Legion} on far-flung worlds. In this time, Alleria dabbled in forbidden magic, and gained the power of the Void. She returned to Azeroth after forty years away, though the time dilation of the Twisting Nether made it like a thousand years of war to her. Though she was feared by the Army of Light, she was admitted into the Alliance and trained a cohort of elves to welcome shadow into their own bodies and become void elves like her.",
-						"Though still at odds with her husband, Alleria has tried to rebuild her bond with her estranged son, Arator, and her former homeland of Quel'Thalas. More than anything, she craves connection, as her desire for enough power to protect those she loves inevitably drives them away. She swears she can remain in control of her Void powers, but those close to her fear that her control will fail."
+						"{@i 虚空浸染的精灵，其族之引路人}",
+						"身为风行者家的长姐，奥蕾莉亚于她的族人而言，是黑暗中的一线光明\u2014\u2014又或许，她是光明中的一抹黑暗。联盟最熟悉她第二次战争英雄的身份：她与同侪一道，在暴风城英雄谷中享有巍峨雕像，受人敬仰。与他们一样，人们曾以为她已死在外域。",
+						"奥蕾莉亚与她的丈夫\u2014\u2014人类圣骑士图拉扬\u2014\u2014成为圣光的战士，深入扭曲虚空，在遥远的世界里征伐{@book 燃烧军团|WoW|6|Burning Legion}。在此期间，奥蕾莉亚涉足了禁忌魔法，得到了虚空之力。阔别四十年后，她重返艾泽拉斯，而扭曲虚空的时间膨胀，让她恍如又打了一千年的仗。尽管光明军团畏惧她，她仍被接纳进联盟，还训练了一批精灵，引导他们接纳暗影入体，成为像她一样的虚空精灵。",
+						"尽管仍与丈夫不睦，奥蕾莉亚一直试图修复与疏远的儿子阿拉托尔、与故国奎尔萨拉斯之间的纽带。她最渴望的莫过于情感的联结，可她对\"足以守护所爱之人的力量\"的渴求，又总会不可避免地将他们推远。她发誓自己能一直掌控虚空之力，但身边亲近的人都担心，这份掌控终有崩塌的一天。"
 					]
 				}
 			],
@@ -100,55 +108,62 @@
 			]
 		},
 		{
-			"name": "Alzzin the Wildshaper",
+			"ENG_name": "Alzzin the Wildshaper",
+			"name": "荒野变形者奥兹恩",
 			"source": "WoW",
 			"_copy": {
-				"name": "Felsworn Satyr",
+				"ENG_name": "Felsworn Satyr",
+				"name": "邪誓萨特",
 				"source": "WoW"
 			},
 			"entries": [
 				{
+					"ENG_name": "Alzzin the Wildshaper",
+					"name": "荒野变形者奥兹恩",
 					"type": "section",
-					"name": "Alzzin the Wildshaper",
 					"entries": [
 						{
 							"type": "quote",
 							"entries": [
-								"O Felvine, as the Fruit of Fertility you gave this verdant land life. Now, drain it dry, and gift its power unto me!"
+								"哦，邪藤，你身负丰饶之果之名，曾赋予这片苍翠大地生机。现在，把它吸干，将它的力量献给我吧！"
 							]
 						},
-						"Alzzin was once a night elf druid but now leads the Wildspawn cult. Before he was corrupted into a satyr millennia ago, he obsessed over the work of a Highborn named Millicent Serene, who created the Fruit of Fertility, a conduit to the Emerald Dream that turned Feralas into the lush jungle that it is today. Millicent died in the War of the Ancients, and Alzzin's obsession shifted to her crowning achievement\u2014namely, corrupting it into the Felvine, which drains the life from Feralas and empowers him."
+						"奥兹恩曾是暗夜精灵德鲁伊，如今统领着野苗邪教。数千年前，在他被腐化为萨特之前，便已对一位名叫米莉森特·宁的上层精灵的造物痴迷不已\u2014\u2014她创造了丰饶之果，一条通往翡翠梦境的导管，将菲拉斯化作了今日这片繁茂的丛林。米莉森特死于上古之战，奥兹恩的痴迷也随之转向了她毕生的最高成就\u2014\u2014确切地说，是将它腐化成了邪藤。如今，邪藤正抽干菲拉斯的生机，为他输送力量。"
 					]
 				}
 			]
 		},
 		{
-			"name": "Ancient of War",
+			"ENG_name": "Ancient of War",
+			"name": "战争古树",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Ancient of War",
+					"name": "战争古树",
 					"type": "section",
-					"name": "Ancient of War",
 					"entries": [
-						"{@i Protector of Nature in Tree Form}",
+						"{@i 化身树木形态的自然守护者}",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
 							"items": [
 								{
+									"ENG_name": "Habitat:",
+									"name": "栖息地：",
 									"type": "item",
-									"name": "Habitat:",
-									"entry": "Forest"
+									"entry": "森林"
 								},
 								{
+									"ENG_name": "Treasure:",
+									"name": "宝藏：",
 									"type": "item",
-									"name": "Treasure:",
-									"entry": "Relics"
+									"entry": "圣物"
 								}
 							]
 						},
-						"Ancients of War are protectors of nature and guardians of life that take the form of giant sentient trees. Though they can appear to be ordinary trees when motionless, they hold deep wisdom, cultivated over lives that last for thousands of years and preserved through memories that are as long as their roots are deep. Ancients can sense disturbances in the world through their roots and provide power and protection to those who would keep the world and its natural places safe.",
-						"Ancients of War bear bark like iron scarred with the marks of ten thousand years of battles. They patrol the deep forests of Kalimdor with their night elf allies and lead the charge against those who would defile their domain."
+						"战争古树是自然的护卫、生命的守望者，以巨大的有知觉树木形态存在。静止不动时，它们与寻常树木别无二致，但其内里蕴着深邃的智慧\u2014\u2014那是数千年生命沉淀而成，又借着记忆代代保存，那些记忆与它们的根系一样源远流长。古树能通过根系感知世间的动荡，并向守护世界及其自然之地的人们送上力量与庇护。",
+						"战争古树的树皮坚如铁铸，刻满了万年鏖战的伤痕。它们与暗夜精灵盟友一同巡视卡利姆多的幽深森林，并率领冲锋，讨伐一切亵渎其领地之徒。"
 					]
 				}
 			],
@@ -166,17 +181,19 @@
 			]
 		},
 		{
-			"name": "Anduin Wrynn",
+			"ENG_name": "Anduin Wrynn",
+			"name": "安度因·乌瑞恩",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Anduin Wrynn",
+					"name": "安度因·乌瑞恩",
 					"type": "section",
-					"name": "Anduin Wrynn",
 					"entries": [
-						"{@i King of Stormwind and Commander of the Alliance}",
-						"Anduin Wrynn is the king of Stormwind. Beloved by his people, the Young Lion has been the target of assassination, manipulation, and kidnapping attempts all his life, yet it never stopped his kind heart from seeking peace between the Alliance and its foes.",
-						"His bold and martial father, King Varian Wrynn, died horribly at the hands of the {@book Burning Legion|WoW|6|Burning Legion}, testing tender Anduin's mettle when he took the throne in the midst of a demonic invasion. Now that the existential threat of the Legion has been defeated, the old tensions between the Alliance and the Horde have reignited. Anduin must ask himself: Can he still lead his people peacefully when friends and foes alike clamor for war? Can he be true to his own heart, when his allies long for him to be his father?",
-						"This stat block and character description represents Anduin as the king of Stormwind, as he appears in {@i Battle for Azeroth} and beyond."
+						"{@i 暴风城国王与联盟统帅}",
+						"安度因·乌瑞恩是暴风城的国王。这位\"幼狮\"深受人民爱戴，却一生屡遭暗杀、操纵与绑架的图谋，而这些从未阻止他那颗仁善之心在联盟与其敌人之间寻求和平。",
+						"他那位果敢尚武的父亲瓦里安·乌瑞恩国王惨死于{@book 燃烧军团|WoW|6|Burning Legion}之手；在恶魔入侵的烽火中继位的温柔安度因，就此经受了磨砺。如今军团这一存亡大患已被击溃，联盟与部落之间的旧怨重又燃起。安度因必须扪心自问：当友人与敌人都同样叫嚣开战时，他还能引领人民走和平之路吗？当盟友盼着他成为父亲那样的人时，他还能忠于自己的本心吗？",
+						"此数据卡与人物描述呈现的是身为暴风城国王的安度因，对应其在{@i 争霸艾泽拉斯}及其后续作品中的形象。"
 					]
 				}
 			],
@@ -194,20 +211,22 @@
 			]
 		},
 		{
-			"name": "Anub'arak",
+			"ENG_name": "Anub'arak",
+			"name": "阿努巴拉克",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Anub'arak",
+					"name": "阿努巴拉克",
 					"type": "section",
-					"name": "Anub'arak",
 					"entries": [
 						{
 							"type": "quote",
 							"entries": [
-								"I was king of this empire once, long ago. In life I stood as champion. In death I returned as conqueror. Now I protect the kingdom once more. Ironic, yes?"
+								"很久以前，我曾是这个帝国的王。生前，我是它的冠军；死后，我以征服者之姿归来。如今，我再次守护这个王国。很讽刺，对吧？"
 							]
 						},
-						"The Traitor King of the nerubians, Anub'arak, fought tirelessly against the Scourge until his death. Now, the prideful king is a lapdog of the {@creature Lich King Arthas|WoW|Lich King}, guarding Azjol-Nerub from Alliance and Horde forces that would use it as a passage into Icecrown, as he once did. Anub'arak throws himself recklessly into every fight, perhaps hoping to die and finally be free of the Lich King's domination."
+						"蛛魔的叛徒之王阿努巴拉克，生前不知疲倦地抗击天灾军团，直到战死。如今，这位高傲的国王成了{@creature 巫妖王阿尔萨斯|WoW}的走狗，守卫着艾卓-尼鲁布，防备联盟与部落的军队故技重施\u2014\u2014像他当年那样，将这里当作通往冰冠的通道。阿努巴拉克在每场战斗中都悍不畏死地舍身猛扑，或许是盼着自己就此战死，好彻底摆脱巫妖王的统御。"
 					]
 				}
 			],
@@ -225,20 +244,22 @@
 			]
 		},
 		{
-			"name": "Arcanist Doan",
+			"ENG_name": "Arcanist Doan",
+			"name": "奥法师杜安",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Arcanist Doan",
+					"name": "奥法师杜安",
 					"type": "section",
-					"name": "Arcanist Doan",
 					"entries": [
 						{
 							"type": "quote",
 							"entries": [
-								"You will not defile this archive's mysteries!"
+								"你们休想玷污这间档案室中的奥秘！"
 							]
 						},
-						"Doan was a renowned scholar of purifying magic, particularly cleansing flame. These days, he stews in the monastery's library, mistrusted by the Crusade's leaders and longing to prove himself."
+						"杜安曾是声名远扬的净化魔法学者，尤精于洁净之火。如今，他闷坐于修道院的图书馆中，既不受十字军领袖们的信任，又渴望证明自己。"
 					]
 				}
 			],
@@ -251,26 +272,28 @@
 					},
 					"width": 1000,
 					"height": 969,
-					"title": "Arcanist Doan",
+					"title": "奥法师杜安",
 					"credit": "Matt Stewart"
 				}
 			]
 		},
 		{
-			"name": "Baron Ashbury",
+			"ENG_name": "Baron Ashbury",
+			"name": "阿什伯利男爵",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Baron Ashbury",
+					"name": "阿什伯利男爵",
 					"type": "section",
-					"name": "Baron Ashbury",
 					"entries": [
 						{
 							"type": "quote",
 							"entries": [
-								"Tally ho! The hunt begins!"
+								"出发！狩猎开始啦！"
 							]
 						},
-						"A noble of Gilneas and a patriot who betrayed his king, Baron Ashbury was raised as an undead Forsaken when {@creature Sylvanas Windrunner|WoW|Sylvanas Windrunner's} army attacked his homeland. Now an enemy of both the worgen of Gilneas and the Forsaken, he serves the only master left to him: {@creature Lord Godfrey|WoW}."
+						"阿什伯利男爵是吉尔尼斯的贵族，也是个背叛了君王的\"爱国者\"。当{@creature 希尔瓦娜斯·风行者|WoW}的大军进攻他的故乡时，他被复活为不死之身，沦为被遗忘者。如今，他既是吉尔尼斯狼人的死敌，也是被遗忘者的死敌，只效力于此生仅剩的主子：{@creature 高弗雷勋爵|WoW}。"
 					]
 				}
 			],
@@ -283,65 +306,71 @@
 					},
 					"width": 1000,
 					"height": 940,
-					"title": "Baron Ashbury",
+					"title": "阿什伯利男爵",
 					"credit": "Steve Prescott"
 				}
 			]
 		},
 		{
-			"name": "Baron Silverlaine",
+			"ENG_name": "Baron Silverlaine",
+			"name": "席瓦莱恩男爵",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Baron Silverlaine",
+					"name": "席瓦莱恩男爵",
 					"type": "section",
-					"name": "Baron Silverlaine",
 					"entries": [
 						{
 							"type": "quote",
 							"entries": [
-								"Leave this accursed place at once!"
+								"马上离开这个受诅咒之地！"
 							]
 						},
-						"Baron Silverlaine was master of Shadowfang Keep before it fell to Arugal's feral worgen. His cursed spirit calls on the beasts that slaughtered him to punish trespassers. He is bound to the stones of the keep and has no loyalty to {@creature Lord Godfrey|WoW|Godfrey} or any of the keep's masters."
+						"在影牙城堡落入阿鲁高麾下狂野狼人之手以前，席瓦莱恩男爵一直是城堡的主人。他那受诅咒的亡灵驱使着当年屠戮他的野兽，惩治擅入者。他被缚于城堡的砖石之间，对{@creature 高弗雷勋爵|WoW}以及城堡的历任主人都毫无忠心。"
 					]
 				}
 			]
 		},
 		{
-			"name": "Black Dragonflight",
+			"ENG_name": "Black Dragonflight",
+			"name": "黑龙军团",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Black Dragonflight",
+					"name": "黑龙军团",
 					"type": "section",
-					"name": "Black Dragonflight",
 					"entries": [
-						"{@i Warders of the Earth Corrupted to Evil}",
+						"{@i 堕入邪恶的大地守望者}",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
 							"items": [
 								{
+									"ENG_name": "Habitat:",
+									"name": "栖息地：",
 									"type": "item",
-									"name": "Habitat:",
-									"entry": "Mountain, Swamp"
+									"entry": "山地、沼泽"
 								},
 								{
+									"ENG_name": "Treasure:",
+									"name": "宝藏：",
 									"type": "item",
-									"name": "Treasure:",
-									"entry": "Any"
+									"entry": "任意"
 								}
 							]
 						},
-						"The black dragonflight has power over earth and flame and was charged in ancient times with protecting the deep places of the earth. This flight was corrupted by the whispers of the Old Gods imprisoned beneath the earth and fell to evil. The dragons now lair in sweltering, desolate places such as Blackrock Mountain and Dustwallow Marsh, ruled by the children of Deathwing that revel in mortal suffering. The corrupted black dragons are the enemies of every other dragonflight, especially the noble red dragonflight.",
+						"黑龙军团执掌大地与烈焰之力，远古时代曾受命守护大地的幽深之处。这个龙军团被囚于地底的上古之神的低语所腐蚀，堕入了邪恶。如今，这些巨龙盘踞在黑石山、尘泥沼泽等酷热荒芜之地，受以凡人苦难为乐的死亡之翼子嗣统治。堕落的黑龙是其他所有龙军团的仇敌，尤以高贵的红龙军团为甚。",
 						{
 							"type": "insetReadaloud",
 							"entries": [
 								{
 									"type": "quote",
 									"entries": [
-										"Who would have thought someone named Deathwing would bring about so much destruction?"
+										"谁能想到一个名叫\"死亡之翼\"的家伙，竟能带来这么多破坏呢？"
 									],
-									"by": "Chromie"
+									"by": "克罗米"
 								}
 							]
 						}
@@ -350,10 +379,12 @@
 			]
 		},
 		{
-			"name": "Black Dragonflight Dragon (Gargantuan)",
+			"ENG_name": "Black Dragonflight Dragon (Gargantuan)",
+			"name": "黑龙军团巨龙",
 			"source": "WoW",
 			"_copy": {
-				"name": "Black Dragonflight",
+				"ENG_name": "Black Dragonflight",
+				"name": "黑龙军团",
 				"source": "WoW",
 				"_mod": {
 					"entries": {
@@ -362,7 +393,7 @@
 							{
 								"type": "entries",
 								"entries": [
-									"Fully matured black dragonflight dragons terrorize the lands of Azeroth from the skies and manipulate society by shape-shifting into humanoid disguises. A black dragon wearing a mortal visage usually has jet-black hair and red eyes."
+									"完全成熟的黑龙军团巨龙让艾泽拉斯的大地笼罩在恐怖之中，并化为人形伪装操纵社会。披着凡人化身的黑龙通常有一头乌黑的头发和一双猩红的眼睛。"
 								]
 							}
 						]
@@ -383,10 +414,12 @@
 			]
 		},
 		{
-			"name": "Black Dragonflight Drake",
+			"ENG_name": "Black Dragonflight Drake",
+			"name": "黑龙军团幼龙",
 			"source": "WoW",
 			"_copy": {
-				"name": "Black Dragonflight",
+				"ENG_name": "Black Dragonflight",
+				"name": "黑龙军团",
 				"source": "WoW",
 				"_mod": {
 					"entries": {
@@ -395,7 +428,7 @@
 							{
 								"type": "entries",
 								"entries": [
-									"Black dragonflight drakes use their magic to heat objects made of earth or stone. They can momentarily melt stone into magma and reshape it before it cools. These drakes delight in stalking and disorienting prey."
+									"黑龙军团幼龙运用魔法加热土石所造之物。它们能瞬间把石头熔成岩浆，并在其冷却前重新塑形。这些幼龙乐于潜行跟踪、迷惑猎物。"
 								]
 							}
 						]
@@ -416,10 +449,12 @@
 			]
 		},
 		{
-			"name": "Black Dragonflight Whelp",
+			"ENG_name": "Black Dragonflight Whelp",
+			"name": "黑龙军团雏龙",
 			"source": "WoW",
 			"_copy": {
-				"name": "Black Dragonflight",
+				"ENG_name": "Black Dragonflight",
+				"name": "黑龙军团",
 				"source": "WoW",
 				"_mod": {
 					"entries": {
@@ -428,7 +463,7 @@
 							{
 								"type": "entries",
 								"entries": [
-									"Black dragonflight whelps are murderous little creatures that dwell near volcanoes, hot springs, and geysers. They smother prey in their magma breath and pick the meat from the globs of scalding lava."
+									"黑龙军团雏龙是栖居在火山、温泉与间歇泉附近的凶残小生物。它们以岩浆吐息闷毙猎物，再从滚烫的熔岩团中剔食血肉。"
 								]
 							}
 						]
@@ -449,59 +484,67 @@
 			]
 		},
 		{
-			"name": "Bloodmage Thalnos",
+			"ENG_name": "Bloodmage Thalnos",
+			"name": "血法师萨尔诺斯",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Bloodmage Thalnos",
+					"name": "血法师萨尔诺斯",
 					"type": "section",
-					"name": "Bloodmage Thalnos",
 					"entries": [
 						{
 							"type": "quote",
 							"entries": [
-								"We hunger for vengeance."
+								"我们渴求复仇。"
 							]
 						},
-						"Thalnos earned repute in the Scarlet Crusade for the brutal, lustrating tortures he inflicted on new recruits. The sadistic mage contracted the plague of undeath but kept his mind. Now he is tormented by his fellow crusaders, who wish to wipe him out even though he craves their blessings."
+						"萨尔诺斯在血色十字军中素有\"名望\"，皆因他对新兵施以残酷的净化刑罚。这个以虐人为乐的法师染上了亡灵瘟疫，却保住了心智。如今他反受十字军同僚的折磨\u2014\u2014他们一心要将他除之而后快，尽管他仍渴求他们的祝福。"
 					]
 				}
 			]
 		},
 		{
-			"name": "Blue Dragonflight",
+			"ENG_name": "Blue Dragonflight",
+			"name": "蓝龙军团",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Blue Dragonflight",
+					"name": "蓝龙军团",
 					"type": "section",
-					"name": "Blue Dragonflight",
 					"entries": [
-						"{@i Protectors of Ancient Magic}",
+						"{@i 远古魔法的守护者}",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
 							"items": [
 								{
+									"ENG_name": "Habitat:",
+									"name": "栖息地：",
 									"type": "item",
-									"name": "Habitat:",
-									"entry": "Arctic"
+									"entry": "极地"
 								},
 								{
+									"ENG_name": "Treasure:",
+									"name": "宝藏：",
 									"type": "item",
-									"name": "Treasure:",
-									"entry": "Any"
+									"entry": "任意"
 								}
 							]
 						},
-						"The blue dragonflight was devastated by the evil Deathwing and his black dragonflight. Now led by Kalecgos, the Steward of Magic, the blue dragonflight is enjoying a resurgence, and these dragons' magical powers are awesome to behold. Their freezing breath and gargantuan claws have been the death of many foolish intruders in Azeroth's mountains and arctic regions."
+						"蓝龙军团曾被邪恶的死亡之翼及其黑龙军团摧残殆尽。如今在魔法守护者卡雷苟斯的率领下，蓝龙军团正迎来复兴，这些巨龙的魔法之力令人叹为观止。在艾泽拉斯的群山与极地，它们的冰寒吐息与巨型利爪已葬送了无数愚蠢的闯入者。"
 					]
 				}
 			]
 		},
 		{
-			"name": "Blue Dragonflight Dragon (Gargantuan)",
+			"ENG_name": "Blue Dragonflight Dragon (Gargantuan)",
+			"name": "蓝龙军团巨龙",
 			"source": "WoW",
 			"_copy": {
-				"name": "Blue Dragonflight",
+				"ENG_name": "Blue Dragonflight",
+				"name": "蓝龙军团",
 				"source": "WoW",
 				"_mod": {
 					"entries": {
@@ -510,7 +553,7 @@
 							{
 								"type": "entries",
 								"entries": [
-									"Blue dragonflight dragons view themselves as stewards of the arcane, and they disdain mortals who misuse their gifts. Noble blue dragons take the role of sagely mentors to mortal mages\u2014for example, Kalecgos long worked with the Kirin Tor in a mortal visage. Cruel and jealous blue dragons such as Cyanigosa try to dominate and punish mortals for their misuse of magic."
+									"蓝龙军团巨龙视自己为奥术的管家，蔑视滥用其恩赐的凡人。高贵的蓝龙会充当凡人法师的睿智导师\u2014\u2014例如卡雷苟斯曾长期以凡人化身与肯瑞托共事。而残忍善妒的蓝龙（如希亚尼戈萨）则试图支配并惩罚滥用魔法的凡人。"
 								]
 							}
 						]
@@ -531,10 +574,12 @@
 			]
 		},
 		{
-			"name": "Blue Dragonflight Drake",
+			"ENG_name": "Blue Dragonflight Drake",
+			"name": "蓝龙军团幼龙",
 			"source": "WoW",
 			"_copy": {
-				"name": "Blue Dragonflight",
+				"ENG_name": "Blue Dragonflight",
+				"name": "蓝龙军团",
 				"source": "WoW",
 				"_mod": {
 					"entries": {
@@ -543,7 +588,7 @@
 							{
 								"type": "entries",
 								"entries": [
-									"Members of the blue dragonflight are devoted students of the arcane arts. Blue dragonflight drakes learn to create and dispel magical effects, protecting their secrets from prying mages."
+									"蓝龙军团的成员是奥术的虔心学子。蓝龙军团幼龙学习创造和驱散魔法效应，保护自己的秘密不被好事的法师窥探。"
 								]
 							}
 						]
@@ -564,10 +609,12 @@
 			]
 		},
 		{
-			"name": "Blue Dragonflight Whelp",
+			"ENG_name": "Blue Dragonflight Whelp",
+			"name": "蓝龙军团雏龙",
 			"source": "WoW",
 			"_copy": {
-				"name": "Blue Dragonflight",
+				"ENG_name": "Blue Dragonflight",
+				"name": "蓝龙军团",
 				"source": "WoW",
 				"_mod": {
 					"entries": {
@@ -576,7 +623,7 @@
 							{
 								"type": "entries",
 								"entries": [
-									"Blue dragonflight whelps display uncanny intelligence for their age. Rather than attacking an ice fisher, a blue whelp might ask to pool their knowledge, striking a deal to share the fish they catch."
+									"蓝龙军团雏龙在其年龄段表现出惊人的智力。蓝雏龙不会袭击冰面垂钓者，反而可能提议交流知识，达成分享渔获的交易。"
 								]
 							}
 						]
@@ -597,41 +644,47 @@
 			]
 		},
 		{
-			"name": "Bronze Dragonflight",
+			"ENG_name": "Bronze Dragonflight",
+			"name": "青铜龙军团",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Bronze Dragonflight",
+					"name": "青铜龙军团",
 					"type": "section",
-					"name": "Bronze Dragonflight",
 					"entries": [
-						"{@i Guardians of Time}",
+						"{@i 时光的守护者}",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
 							"items": [
 								{
+									"ENG_name": "Habitat:",
+									"name": "栖息地：",
 									"type": "item",
-									"name": "Habitat:",
-									"entry": "Desert"
+									"entry": "荒漠"
 								},
 								{
+									"ENG_name": "Treasure:",
+									"name": "宝藏：",
 									"type": "item",
-									"name": "Treasure:",
-									"entry": "Any"
+									"entry": "任意"
 								}
 							]
 						},
-						"Ruled by Nozdormu the Timeless One, the bronze dragonflight guards the timeways of Azeroth. These stoic guardians maintain the delicate balance of past, present, and future, and they can facilitate time travel by opening time portals. The people of Azeroth often see bronze dragons as cold and unfeeling, since the dragons prefer not to interfere in mortal affairs.",
-						"Bronze dragons' enemies, the infinite dragonflight, are led by Murozond, a version of Nozdormu from an alternate timeline that seeks to \"perfect\" the timeline by altering key moments in history. Infinite dragonflight dragons use the same statistics as bronze dragonflight dragons."
+						"青铜龙军团由永恒者诺兹多姆统治，守卫着艾泽拉斯的时光之途。这些坚忍的守护者维系着过去、现在与未来之间微妙的平衡，还能开启时光之门，助人穿越时间。由于青铜龙不愿插手凡人事务，艾泽拉斯的民众常视其为冷漠无情。",
+						"青铜龙的宿敌永恒龙军团由穆罗佐德统领\u2014\u2014他是来自另一条时间线的诺兹多姆，妄图通过篡改历史上的关键时刻来\"完善\"时间线。永恒龙军团的巨龙使用与青铜龙军团巨龙相同的数据。"
 					]
 				}
 			]
 		},
 		{
-			"name": "Bronze Dragonflight Dragon (Gargantuan)",
+			"ENG_name": "Bronze Dragonflight Dragon (Gargantuan)",
+			"name": "青铜龙军团巨龙",
 			"source": "WoW",
 			"_copy": {
-				"name": "Bronze Dragonflight",
+				"ENG_name": "Bronze Dragonflight",
+				"name": "青铜龙军团",
 				"source": "WoW",
 				"_mod": {
 					"entries": {
@@ -640,7 +693,7 @@
 							{
 								"type": "entries",
 								"entries": [
-									"Mature bronze dragons task themselves with maintaining the one true timeline of Azeroth. They keep close to humanoid civilizations, watching for travelers from other timelines or those who seek to alter the timeways."
+									"成熟的青铜龙以维护艾泽拉斯唯一的真实时间线为己任。它们贴近类人文明生活，警惕来自其他时间线的旅人，或企图篡改时光之路的人。"
 								]
 							}
 						]
@@ -661,10 +714,12 @@
 			]
 		},
 		{
-			"name": "Bronze Dragonflight Drake",
+			"ENG_name": "Bronze Dragonflight Drake",
+			"name": "青铜龙军团幼龙",
 			"source": "WoW",
 			"_copy": {
-				"name": "Bronze Dragonflight",
+				"ENG_name": "Bronze Dragonflight",
+				"name": "青铜龙军团",
 				"source": "WoW",
 				"_mod": {
 					"entries": {
@@ -673,7 +728,7 @@
 							{
 								"type": "entries",
 								"entries": [
-									"Many a villain has tried to bend a bronze dragonflight drake to their will, hoping to take advantage of the creature's prophetic magic while the drake is still young. Such opportunists quickly learn the error of their ways when the bronze drake shreds and sears their skin with its red-hot sand breath."
+									"不少反派企图驯服青铜龙军团幼龙为己所用，想趁其年幼榨取其预知魔法。这些投机者很快就会领教自己的错误\u2014\u2014青铜幼龙会用灼热的沙焰吐息撕碎并灼烂他们的皮肤。"
 								]
 							}
 						]
@@ -694,10 +749,12 @@
 			]
 		},
 		{
-			"name": "Bronze Dragonflight Whelp",
+			"ENG_name": "Bronze Dragonflight Whelp",
+			"name": "青铜龙军团雏龙",
 			"source": "WoW",
 			"_copy": {
-				"name": "Bronze Dragonflight",
+				"ENG_name": "Bronze Dragonflight",
+				"name": "青铜龙军团",
 				"source": "WoW",
 				"_mod": {
 					"entries": {
@@ -706,7 +763,7 @@
 							{
 								"type": "entries",
 								"entries": [
-									"Bronze dragonflight whelps are patient. They stand still for hours on end in the middle of the desert, waiting for prey to pass before striking out with maw or claw. Many travelers mistake these whelps for statues."
+									"青铜龙军团雏龙极有耐心。它们能在大漠中央一动不动站上数小时，等猎物经过时再以巨口或利爪出击。许多旅人会把雏龙误认成雕像。"
 								]
 							}
 						]
@@ -727,69 +784,75 @@
 			]
 		},
 		{
-			"name": "Captain Greenskin",
+			"ENG_name": "Captain Greenskin",
+			"name": "绿皮船长",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Captain Greenskin",
+					"name": "绿皮船长",
 					"type": "section",
-					"name": "Captain Greenskin",
 					"entries": [
 						{
 							"type": "quote",
 							"entries": [
-								"Avast, ye swabs! Repel the invaders!"
+								"站住，你们这群臭水手！把入侵者打下去！"
 							]
 						},
-						"The Juggernaut's captain is a disgraced buccaneer called Greenskin. He doesn't trust Sneed and Gilnid but doesn't mind captaining the ship they're building.",
-						"Captain Greenskin's first mate is Mister Smite, a tauren {@creature Warrior Veteran|XMM}. His cook is Cookie, a {@creature Murloc Oracle|WoW}."
+						"强袭战舰的船长是个身败名裂的海盗，人称\"绿皮\"。他不信任斯尼德和吉尔尼德，但也不介意给他们正在建造的那艘船当船长。",
+						"绿皮船长的大副是斯迈特先生，一位牛头人{@creature 历战武者|XMM}。船上的厨子是曲奇，一条{@creature 鱼人神谕者|WoW}。"
 					]
 				}
 			]
 		},
 		{
-			"name": "Cho'Rush the Observer",
+			"ENG_name": "Cho'Rush the Observer",
+			"name": "观察者克鲁什",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Cho'Rush the Observer",
+					"name": "观察者克鲁什",
 					"type": "section",
-					"name": "Cho'Rush the Observer",
 					"entries": [
 						{
 							"type": "quote",
 							"entries": [
-								"What, we cheat? (Yeah, huh huh, we cheat.) Hush!"
+								"什么，我们作弊？（对，呃呵，我们作弊来着。）嘘！"
 							]
 						},
-						"The two-headed ogre mage Cho'Rush doesn't usually take sides, but when Ulrok was rising to power, it was clear nobody could challenge him. Cho'Rush ingratiated himself to Ulrok by healing him in the bloodbath that made him king. As a reward, the new King Gordok awarded Cho'Rush the position of chief adviser.",
-						"If revealed as a cheat (see \"{@book Ogre Tribute|WoW|6|Ogre Tribute}\" above), Cho'Rush abandons all pretense and fights openly."
+						"双头食人魔法师克鲁什素来不轻易选边站，可当乌尔洛克崛起夺权时，谁都看得出来，已无人能撄其锋。在那场助乌尔洛克登上王位的血战中，克鲁什靠为他疗伤来大献殷勤。作为犒赏，新登基的戈多克大王授予了克鲁什首席顾问之职。",
+						"一旦作弊行为被揭穿（见前文的\"{@book 食人魔贡品|WoW|6|Ogre Tribute}\"），克鲁什便会抛开一切伪装，公然开战。"
 					]
 				}
 			]
 		},
 		{
-			"name": "Commander Springvale",
+			"ENG_name": "Commander Springvale",
+			"name": "指挥官斯普林瓦尔",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Commander Springvale",
+					"name": "指挥官斯普林瓦尔",
 					"type": "section",
-					"name": "Commander Springvale",
 					"entries": [
 						{
 							"type": "quote",
 							"entries": [
-								"Intruders in the keep! To arms!"
+								"城堡里有入侵者！拿起武器！"
 							]
 						},
-						"Commander Springvale unquestioningly served Baron Silverlaine in the old days. Springvale died on the walls defending his liege lord and patrols them still, unaware that his castle is overrun and his allies are now rotten, shambling corpses.",
+						"昔日，指挥官斯普林瓦尔对席瓦莱恩男爵唯命是从。他为保卫君主战死在城墙上，至今仍在墙头巡逻\u2014\u2014浑然不知城堡早已易主，昔日的同袍如今已成了腐烂蹒跚的行尸。",
 						{
 							"type": "insetReadaloud",
 							"entries": [
 								{
 									"type": "quote",
 									"entries": [
-										"I tend to believe that restless spirits and all other beings deserve a nice, long rest."
+										"我一向觉得，不得安宁的亡灵和所有其他生物一样，都该享受一场美好而漫长的长休。"
 									],
-									"by": "Chromie"
+									"by": "克罗米"
 								}
 							]
 						}
@@ -798,32 +861,36 @@
 			]
 		},
 		{
-			"name": "Doomguard",
+			"ENG_name": "Doomguard",
+			"name": "末日守卫",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Doomguard",
+					"name": "末日守卫",
 					"type": "section",
-					"name": "Doomguard",
 					"entries": [
-						"{@i Brutal Destroyer from the Burning Legion}",
+						"{@i 来自燃烧军团的残暴毁灭者}",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
 							"items": [
 								{
+									"ENG_name": "Habitat:",
+									"name": "栖息地：",
 									"type": "item",
-									"name": "Habitat:",
-									"entry": "Planar (Twisting Nether)"
+									"entry": "位面（扭曲虚空）"
 								},
 								{
+									"ENG_name": "Treasure:",
+									"name": "宝藏：",
 									"type": "item",
-									"name": "Treasure:",
-									"entry": "Individual"
+									"entry": "个体"
 								}
 							]
 						},
-						"Powerful and deliberate, doomguard are winged demons of the {@book Burning Legion|WoW|6|Burning Legion} known across the cosmos for their brutality. Also called ered'ruin, doomguard are devoted to their {@creature Pit Lord|WoW} masters and revel in the destruction of worlds.",
-						"Doomguard sport furry, cloven-hoofed legs and formidable horns. Soaring through the skies, they swoop down to ram into foes or shake the earth with thunderous stomps."
+						"末日守卫强大而沉稳，是{@book 燃烧军团|WoW|6|Burning Legion}的有翼恶魔，残暴之名遍传宇宙。它们又称埃雷杜因，对{@creature 深渊领主|WoW}主人们死心塌地，并以毁灭诸界为乐。",
+						"末日守卫长着毛茸茸的分趾蹄腿和令人生畏的巨角。它们翱翔于天际，时而俯冲撞向敌人，时而以雷霆般的踏击撼动大地。"
 					]
 				}
 			],
@@ -841,20 +908,22 @@
 			]
 		},
 		{
-			"name": "Edwin VanCleef",
+			"ENG_name": "Edwin VanCleef",
+			"name": "埃德温·范克里夫",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Edwin VanCleef",
+					"name": "埃德温·范克里夫",
 					"type": "section",
-					"name": "Edwin VanCleef",
 					"entries": [
 						{
 							"type": "quote",
 							"entries": [
-								"Lapdogs, all of you!"
+								"你们这群哈巴狗！"
 							]
 						},
-						"Edwin VanCleef's sinister charisma was honed by Matthias Shaw, the head of Stormwind Intelligence (SI:7). VanCleef refused this calling, though, for the humble trade of a guild organizer, to better the lives of the common folk. If his cunning hadn't been polluted by vengeance, he could have truly changed the world for the better."
+						"埃德温·范克里夫那阴鸷的魅力，出自马蒂亚斯·肖的亲手磨砺\u2014\u2014此人执掌暴风城情报机关（SI:7）。然而范克里夫谢绝了这份天职，甘居工会组织者的平凡行当，只为让平民百姓过上更好的日子。若非他的才智被复仇所毒化，他本可真正让这个世界变得更美好。"
 					]
 				}
 			],
@@ -872,41 +941,45 @@
 			]
 		},
 		{
-			"name": "Fel Imp",
+			"ENG_name": "Fel Imp",
+			"name": "邪能小鬼",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Fel Imp",
+					"name": "邪能小鬼",
 					"type": "section",
-					"name": "Fel Imp",
 					"entries": [
-						"{@i Gleeful Demon of Fel Flames}",
+						"{@i 欢跃于邪能烈焰的恶魔}",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
 							"items": [
 								{
+									"ENG_name": "Habitat:",
+									"name": "栖息地：",
 									"type": "item",
-									"name": "Habitat:",
-									"entry": "Planar (Twisting Nether)"
+									"entry": "位面（扭曲虚空）"
 								},
 								{
+									"ENG_name": "Treasure:",
+									"name": "宝藏：",
 									"type": "item",
-									"name": "Treasure:",
-									"entry": "Individual"
+									"entry": "个体"
 								}
 							]
 						},
-						"Fel imps are mischievous demons that cackle with glee while immolating their foes in fel flames. They are the weakest forces of the {@book Burning Legion|WoW|6|Burning Legion}, but their small size leads enemies to underestimate the power of their firebolts.",
-						"Fel imps are the easiest demons for Warlocks to bind and control, making them common familiars for those who make pacts with the Burning Legion.",
+						"邪能小鬼是顽劣的恶魔，一边用邪能烈焰将敌人焚烧殆尽，一边幸灾乐祸地咯咯怪笑。它们是{@book 燃烧军团|WoW|6|Burning Legion}中最弱小的战力，但矮小的身形常令敌人低估其火球的威力。",
+						"邪能小鬼最易被术士束缚与操控，因此常成为与燃烧军团立契之人的魔宠。",
 						{
 							"type": "insetReadaloud",
 							"entries": [
 								{
 									"type": "quote",
 									"entries": [
-										"Through all time and space, there's more power hidden in the smallest things than you will ever know."
+										"纵观古往今来、浩瀚寰宇，最微小的事物里藏着的力量，远比你所能知晓的多得多。"
 									],
-									"by": "Chromie"
+									"by": "克罗米"
 								}
 							]
 						}
@@ -927,31 +1000,35 @@
 			]
 		},
 		{
-			"name": "Felguard",
+			"ENG_name": "Felguard",
+			"name": "恶魔卫士",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Felguard",
+					"name": "恶魔卫士",
 					"type": "section",
-					"name": "Felguard",
 					"entries": [
-						"{@i Foot Soldier of the Burning Legion}",
+						"{@i 燃烧军团的步卒}",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
 							"items": [
 								{
+									"ENG_name": "Habitat:",
+									"name": "栖息地：",
 									"type": "item",
-									"name": "Habitat:",
-									"entry": "Planar (Twisting Nether)"
+									"entry": "位面（扭曲虚空）"
 								},
 								{
+									"ENG_name": "Treasure:",
+									"name": "宝藏：",
 									"type": "item",
-									"name": "Treasure:",
-									"entry": "Individual"
+									"entry": "个体"
 								}
 							]
 						},
-						"Conscripted from the demonic mo'arg species, felguard serve as the {@book Burning Legion's|WoW|6|Burning Legion} rank-and-file soldiers. They are fearless and unwaveringly loyal to Sargeras's godlike will."
+						"恶魔卫士自恶魔莫阿格一族中征募而来，在{@book 燃烧军团|WoW|6|Burning Legion}中充当普通一兵。它们无所畏惧，对萨格拉斯如神明般的意志忠贞不渝。"
 					]
 				}
 			],
@@ -969,41 +1046,45 @@
 			]
 		},
 		{
-			"name": "Felhound",
+			"ENG_name": "Felhound",
+			"name": "地狱猎犬",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Felhound",
+					"name": "地狱猎犬",
 					"type": "section",
-					"name": "Felhound",
 					"entries": [
-						"{@i Demonic Hound with a Nose for Magic}",
+						"{@i 嗅探魔法的恶魔猎犬}",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
 							"items": [
 								{
+									"ENG_name": "Habitat:",
+									"name": "栖息地：",
 									"type": "item",
-									"name": "Habitat:",
-									"entry": "Planar (Twisting Nether)"
+									"entry": "位面（扭曲虚空）"
 								},
 								{
+									"ENG_name": "Treasure:",
+									"name": "宝藏：",
 									"type": "item",
-									"name": "Treasure:",
-									"entry": "None"
+									"entry": "无"
 								}
 							]
 						},
-						"Felhounds are demonic canines used by pit lords to sniff out sources of magic. Unlike most demons, which are born of corrupted mortals, felhounds are shaped from raw fel energy.",
-						"Felhounds feed on magic, and they are fond of draining the energies of hapless wizards with the grasping tentacles on their back, then ripping the wizards' bodies to shreds.",
+						"地狱猎犬是深渊领主用来嗅出魔法源头的恶魔犬类。与大多数由堕落凡人化生的恶魔不同，地狱猎犬由纯粹的邪能塑造而成。",
+						"地狱猎犬以魔法为食，最爱用背上攫取猎物的触手吸干倒霉法师的精力，再把法师的躯体撕成碎片。",
 						{
 							"type": "insetReadaloud",
 							"entries": [
 								{
 									"type": "quote",
 									"entries": [
-										"No! Bad doggie... hound... fel... thing! Get your tentacles off my codex!"
+										"不好！坏狗狗......猎犬......邪能......那什么玩意儿！把你的触手从我的法典上拿开！"
 									],
-									"by": "Chromie"
+									"by": "克罗米"
 								}
 							]
 						}
@@ -1024,10 +1105,12 @@
 			]
 		},
 		{
-			"name": "Felsworn Satyr",
+			"ENG_name": "Felsworn Satyr",
+			"name": "邪誓萨特",
 			"source": "WoW",
 			"_copy": {
-				"name": "Satyrs",
+				"ENG_name": "Satyrs",
+				"name": "萨特",
 				"source": "WoW",
 				"_mod": {
 					"entries": {
@@ -1036,7 +1119,7 @@
 							{
 								"type": "entries",
 								"entries": [
-									"Felsworn satyrs wield the fiery power of the Burning Legion as its devoted agents. They are fierce enemies of night elves, using their magic to devastate night elf communities."
+									"邪誓萨特作为燃烧军团忠实的代理人，挥洒其炽烈之力。他们是暗夜精灵的死敌，用魔法摧折暗夜精灵的聚落。"
 								]
 							}
 						]
@@ -1052,35 +1135,39 @@
 					},
 					"width": 1000,
 					"height": 776,
-					"title": "Alzzin the Wildshaper",
+					"title": "荒野变形者奥兹恩",
 					"credit": "Ralph Horsley"
 				}
 			]
 		},
 		{
-			"name": "Foreman Rhahk'Zor",
+			"ENG_name": "Foreman Rhahk'Zor",
+			"name": "工头拉克佐",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Foreman Rhahk'Zor",
+					"name": "工头拉克佐",
 					"type": "section",
-					"name": "Foreman Rhahk'Zor",
 					"entries": [
 						{
 							"type": "quote",
 							"entries": [
-								"VanCleef pay big for your heads!"
+								"范克里夫出大价钱买你们的人头！"
 							]
 						},
-						"Foreman Rhahk'Zor is a brutish ogre grappler who betrayed his kin in the Deadmines when VanCleef arrived. He cares only about wealth and power and will sacrifice anyone to ensure his own survival."
+						"工头拉克佐是个残暴的食人魔搏击手，范克里夫一来，他便背叛了死亡矿井中的同胞。他眼里只有财富与权势，为保全自己可以牺牲任何人。"
 					]
 				}
 			]
 		},
 		{
-			"name": "Furbolg Totemic",
+			"ENG_name": "Furbolg Totemic",
+			"name": "熊怪图腾师",
 			"source": "WoW",
 			"_copy": {
-				"name": "Furbolgs",
+				"ENG_name": "Furbolgs",
+				"name": "熊怪",
 				"source": "WoW",
 				"_mod": {
 					"entries": {
@@ -1089,7 +1176,7 @@
 							{
 								"type": "entries",
 								"entries": [
-									"Furbolg totemics are shaman who use totems for healing and offense."
+									"熊怪图腾师是使用图腾进行治疗与攻击的萨满。"
 								]
 							}
 						]
@@ -1110,10 +1197,12 @@
 			]
 		},
 		{
-			"name": "Furbolg Ursa",
+			"ENG_name": "Furbolg Ursa",
+			"name": "熊怪乌萨",
 			"source": "WoW",
 			"_copy": {
-				"name": "Furbolgs",
+				"ENG_name": "Furbolgs",
+				"name": "熊怪",
 				"source": "WoW",
 				"_mod": {
 					"entries": {
@@ -1122,7 +1211,7 @@
 							{
 								"type": "entries",
 								"entries": [
-									"Ursas are warrior leaders in furbolg tribes, larger than their kin and empowered by elemental magic."
+									"乌萨是熊怪部族的战士领袖，比同族更为高大，并受元素魔法强化。"
 								]
 							}
 						]
@@ -1131,125 +1220,139 @@
 			}
 		},
 		{
-			"name": "Furbolgs",
+			"ENG_name": "Furbolgs",
+			"name": "熊怪",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Furbolgs",
+					"name": "熊怪",
 					"type": "section",
-					"name": "Furbolgs",
 					"entries": [
-						"{@i Bearlike People of Secluded Woodlands}",
+						"{@i 隐居林莽的熊形民族}",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
 							"items": [
 								{
+									"ENG_name": "Habitat:",
+									"name": "栖息地：",
 									"type": "item",
-									"name": "Habitat:",
-									"entry": "Forest"
+									"entry": "森林"
 								},
 								{
+									"ENG_name": "Treasure:",
+									"name": "宝藏：",
 									"type": "item",
-									"name": "Treasure:",
-									"entry": "Individual"
+									"entry": "个体"
 								}
 							]
 						},
-						"Bearlike furbolgs live in family groups across northern Kalimdor, Northrend, and several island regions. They fought alongside night elves and tauren against the {@book Burning Legion|WoW|6|Burning Legion} in the War of the Ancients, though they prefer to live separate from other peoples. Furbolg traditions involve shamanic control of the elements. Some furbolgs have been corrupted and fallen under the sway of the Burning Legion, the Old Gods, or the Primalists. (Use the {@creature Cultist|XMM} stat blocks from the {@book Monster Manual|XMM} for these furbolgs.)"
+						"熊形的熊怪以家庭为单位，聚居在卡利姆多北部、诺森德及若干岛屿地区。上古之战中，他们曾与暗夜精灵和牛头人并肩对抗{@book 燃烧军团|WoW|6|Burning Legion}，不过他们更愿与其他种族分居两安。熊怪的传统包含萨满式的元素统御。有些熊怪已被腐蚀，落入燃烧军团、上古之神或原始派的掌控。（这类熊怪请使用{@book 怪物图鉴|XMM}中的{@creature 邪教徒|XMM}数据卡。）"
 					]
 				}
 			]
 		},
 		{
-			"name": "Gelihast",
+			"ENG_name": "Gelihast",
+			"name": "格里哈斯特",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Gelihast",
+					"name": "格里哈斯特",
 					"type": "section",
-					"name": "Gelihast",
 					"entries": [
 						{
 							"type": "quote",
 							"entries": [
-								"Mrr? Mrr! Mrrrglglglgl!!"
+								"呣噜？呣噜！呣噜格咯咯咯咯！！"
 							]
 						},
-						"The {@book Old God|WoW|6|Old Gods} called, and Gelihast answered, forcing his way into Blackfathom Deeps and slaughtering nearly a dozen surprised Twilight's Hammer cultists. Impressed by his brutality, the cult allowed him to stay, and he built his own shrine to offer sacrifices to the ominous presence in the temple ruins.",
-						"Gelihast's Blindlight murlocs think they control this cave, unaware that the Twilight's Hammer tolerates them only so long as they deter invaders."
+						"{@book 上古之神|WoW|6|上古之神}发出了呼唤，而格里哈斯特应声而至：他硬闯黑暗深渊，屠杀了十来名措手不及的暮光之锤信徒。教团折服于他的凶残，准他留下，他便自立祭坛，向神庙废墟中那不祥的存在献上祭品。",
+						"格里哈斯特手下的盲光鱼人自以为掌控着这座洞穴，殊不知暮光之锤容忍他们，只因他们能阻退来犯者。"
 					]
 				}
 			]
 		},
 		{
-			"name": "Ghamoo-Ra",
+			"ENG_name": "Ghamoo-Ra",
+			"name": "加穆-拉",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Ghamoo-Ra",
+					"name": "加穆-拉",
 					"type": "section",
-					"name": "Ghamoo-Ra",
 					"entries": [
 						{
 							"type": "quote",
 							"entries": [
-								"Grrrooooooooakk!"
+								"咕噜哦哦哦哦哦哦呱！"
 							]
 						},
-						"When the Twilight's Hammer cult took over Blackfathom, its followers tormented a snapjaw for years until it became vicious. Naming the beast Ghamoo-Ra, the cultists trained it to defend their shrine. If attacked from beyond its island, it pursues its attackers to the edge of the Pool of Ask'ar area, then retreats into the water and takes a Short Rest."
+						"暮光之锤教团占据黑暗深渊后，信徒们虐待一头巨颚龟多年，直到它变得凶残暴戾。信徒们给这头巨兽取名加穆-拉，将它训练成祭坛的守卫。若有人从它所在的岛外攻击它，它会追击来犯者到阿斯卡之池区域的边缘，随后退入水中，进行一次短休。"
 					]
 				}
 			]
 		},
 		{
-			"name": "Gilnid",
+			"ENG_name": "Gilnid",
+			"name": "吉尔尼德",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Gilnid",
+					"name": "吉尔尼德",
 					"type": "section",
-					"name": "Gilnid",
 					"entries": [
 						{
 							"type": "quote",
 							"entries": [
-								"Anyone want a break? Too bad! Back to work, oafs!"
+								"有人想歇会儿？想得美！都给我回去干活，蠢货们！"
 							]
 						},
-						"Gilnid was renowned in Booty Bay for his unusually large size and for making mechanical bodyguards. He was exiled after his machines went haywire and slaughtered their charges. The Defias found him and paid him well to arm the Juggernaut; Gilnid is using the money to fund his pet project, a harvest golem called the Foe Reaper 4000. Early prototypes of the Foe Reaper guard the foundry. Gilnid is a coward who taunts his foes from behind his reapers."
+						"吉尔尼德在藏宝海湾名声在外：一是他块头大得异乎寻常，二是他会打造机械保镖。后来他的机器失灵，屠杀了它们本该守护的主人，他也因此遭放逐。迪菲亚兄弟会找到了他，重金请他为强袭战舰装配武器；吉尔尼德便把这笔钱投进自己的心头项目\u2014\u2014一台名为\"敌人收割者4000\"的收割魔像。敌人收割者的早期原型守卫着铸造厂。吉尔尼德是个懦夫，只敢躲在他的收割者后面叫阵。"
 					]
 				}
 			]
 		},
 		{
-			"name": "Green Dragonflight",
+			"ENG_name": "Green Dragonflight",
+			"name": "绿龙军团",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Green Dragonflight",
+					"name": "绿龙军团",
 					"type": "section",
-					"name": "Green Dragonflight",
 					"entries": [
-						"{@i Graceful Protectors of Life and Nature}",
+						"{@i 生命与自然的优雅守护者}",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
 							"items": [
 								{
+									"ENG_name": "Habitat:",
+									"name": "栖息地：",
 									"type": "item",
-									"name": "Habitat:",
-									"entry": "Forest, Planar (Emerald Dream)"
+									"entry": "森林、位面（翡翠梦境）"
 								},
 								{
+									"ENG_name": "Treasure:",
+									"name": "宝藏：",
 									"type": "item",
-									"name": "Treasure:",
-									"entry": "Any"
+									"entry": "任意"
 								}
 							]
 						},
-						"Green dragons serve nature and uphold the balance between mortal creatures and the ever-evolving world. The green dragonflight, originally ruled by the dreaming Aspect Ysera, holds a special love for the night elves and their druids. Though most green dragons live in the mystical dimension known as the Emerald Dream, some roam ancient forests where the veil between Azeroth and the Dream is thin.",
-						"This connection makes green dragons susceptible to the corrupting evil of the Emerald Nightmare. A Nightmare-corrupted green dragon has blackened scales pushed apart by pulsing red veins. Its stat block has the following changes:",
+						"绿龙侍奉自然，维系着凡间生灵与不断演化的世界之间的平衡。绿龙军团最初由沉眠的守护巨龙伊瑟拉统治，对暗夜精灵及其德鲁伊情有独钟。虽然大多数绿龙栖息在名为翡翠梦境的神秘位面，也有一些绿龙游荡在古老森林中\u2014\u2014在那里，艾泽拉斯与梦境之间的屏障最为稀薄。",
+						"这份联结也使绿龙容易受翡翠梦魇邪恶之力的腐蚀。被梦魇腐蚀的绿龙鳞片焦黑，贲张的赤红脉络将鳞片撑得四分五裂。它的数据卡有以下变化：",
 						{
 							"type": "list",
 							"items": [
-								"It has Resistance to Necrotic damage instead of Acid damage.",
-								"Its Emerald Gas Breath action deals Necrotic damage instead of Acid damage (but still deals Poison damage)."
+								"它具有的是对黯蚀伤害的抗性，而非酸蚀伤害。",
+								"它的\"翡翠气体吐息\"动作造成的是黯蚀伤害而非酸蚀伤害（但仍然造成毒素伤害）。"
 							]
 						},
 						{
@@ -1258,9 +1361,9 @@
 								{
 									"type": "quote",
 									"entries": [
-										"Spending time with the green dragonflight always makes me sleepy."
+										"每次和绿龙军团待在一起，我总犯困。"
 									],
-									"by": "Chromie"
+									"by": "克罗米"
 								}
 							]
 						}
@@ -1269,10 +1372,12 @@
 			]
 		},
 		{
-			"name": "Green Dragonflight Dragon (Gargantuan)",
+			"ENG_name": "Green Dragonflight Dragon (Gargantuan)",
+			"name": "绿龙军团巨龙",
 			"source": "WoW",
 			"_copy": {
-				"name": "Green Dragonflight",
+				"ENG_name": "Green Dragonflight",
+				"name": "绿龙军团",
 				"source": "WoW",
 				"_mod": {
 					"entries": {
@@ -1281,7 +1386,7 @@
 							{
 								"type": "entries",
 								"entries": [
-									"The mightiest of the green dragonflight battle the minions of the Old Gods and shape-shift into mortal visage forms to ally with humanoids. This battle against the Old Gods puts green dragons at risk for corruption by the Emerald Nightmare, which was created by one of the Old Gods' greatest champions."
+									"绿龙军团中最强大者与上古之神的爪牙作战，并化为凡人化身与类人生物结盟。这场对抗上古之神的战争使绿龙时刻面临被翡翠梦魇腐化的危险\u2014\u2014那梦魇正是上古之神最伟大的勇士之一所造。"
 								]
 							}
 						]
@@ -1302,10 +1407,12 @@
 			]
 		},
 		{
-			"name": "Green Dragonflight Drake",
+			"ENG_name": "Green Dragonflight Drake",
+			"name": "绿龙军团幼龙",
 			"source": "WoW",
 			"_copy": {
-				"name": "Green Dragonflight",
+				"ENG_name": "Green Dragonflight",
+				"name": "绿龙军团",
 				"source": "WoW",
 				"_mod": {
 					"entries": {
@@ -1314,7 +1421,7 @@
 							{
 								"type": "entries",
 								"entries": [
-									"Emerging from the Emerald Dream, green dragonflight drakes are wise enough to take action in Azeroth. They often ally with older dragons, night elf druids, and ancients of lore to eliminate evil cults and invading demons with nature magic."
+									"自翡翠梦境而出的绿龙军团幼龙已睿智到能在艾泽拉斯采取行动。它们常与年长的巨龙、暗夜精灵德鲁伊和知识先祖结盟，以自然魔法扫除邪恶教团与入侵恶魔。"
 								]
 							}
 						]
@@ -1335,10 +1442,12 @@
 			]
 		},
 		{
-			"name": "Green Dragonflight Whelp",
+			"ENG_name": "Green Dragonflight Whelp",
+			"name": "绿龙军团雏龙",
 			"source": "WoW",
 			"_copy": {
-				"name": "Green Dragonflight",
+				"ENG_name": "Green Dragonflight",
+				"name": "绿龙军团",
 				"source": "WoW",
 				"_mod": {
 					"entries": {
@@ -1347,7 +1456,7 @@
 							{
 								"type": "entries",
 								"entries": [
-									"Members of the green dragonflight raise their whelps in the Emerald Dream whenever possible. There, a whelp learns to appreciate and spread the beauty of nature in all its forms by observing cycles of birth and death."
+									"绿龙军团尽可能在翡翠梦境中养育雏龙。在那里，雏龙通过观察生与死的轮回，学会欣赏并传扬自然万象之美。"
 								]
 							}
 						]
@@ -1368,21 +1477,23 @@
 			]
 		},
 		{
-			"name": "Hadronox",
+			"ENG_name": "Hadronox",
+			"name": "哈多诺克斯",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Hadronox",
+					"name": "哈多诺克斯",
 					"type": "section",
-					"name": "Hadronox",
 					"entries": [
 						{
 							"type": "quote",
 							"entries": [
-								"SKREEEEEE!"
+								"嘶嘎嘎嘎\u2014\u2014！"
 							]
 						},
-						"During the fall of Azjol-Nerub, nerubian viziers released a single spider that would one day grow to challenge the unyielding forces of the {@creature Lich King Arthas|WoW|Lich King}. Hadronox was instilled with a desire to avenge the fallen and reclaim its home from any that dare threaten it.",
-						"{@creature Anub'arak|WoW|Anub'arak's} minions fight relentlessly (but fruitlessly) to drive Hadronox from their realm. When the characters breach the Gilded Gate, these minions turn to fight the characters. Hadronox temporarily acts as the characters' ally against Anub'arak's minions\u2014but only for a moment. Hadronox craves the taste of fresh flesh and eagerly fights the characters as soon as the nerubians are destroyed."
+						"艾卓-尼鲁布陷落之际，蛛魔的维齐尔们放出了一只蜘蛛；终有一日，它将成长到足以挑战{@creature 巫妖王阿尔萨斯|WoW}那不屈大军的地步。哈多诺克斯被注入了为阵亡者复仇的渴望，以及从任何胆敢威胁家园者手中夺回家园的执念。",
+						"{@creature 阿努巴拉克|WoW}的仆从们不知疲倦（却徒劳无功）地想把哈多诺克斯逐出他们的国度。当角色们攻破鎏金之门时，这些仆从便转而与角色们交战。哈多诺克斯会暂时与角色们联手，共同对付阿努巴拉克的仆从\u2014\u2014但仅止一时。哈多诺克斯嗜好新鲜血肉的滋味，蛛魔一被消灭，它便急不可耐地扑向角色们。"
 					]
 				}
 			],
@@ -1400,20 +1511,22 @@
 			]
 		},
 		{
-			"name": "High Inquisitor Sally Whitemane",
+			"ENG_name": "High Inquisitor Sally Whitemane",
+			"name": "大检察官萨莉·怀特迈恩",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "High Inquisitor Sally Whitemane",
+					"name": "大检察官萨莉·怀特迈恩",
 					"type": "section",
-					"name": "High Inquisitor Sally Whitemane",
 					"entries": [
 						{
 							"type": "quote",
 							"entries": [
-								"The Light has spoken, for it has found you wanting."
+								"圣光已然降示，它判定你们有所欠缺。"
 							]
 						},
-						"Sally Whitemane was young when the plague of undeath swept through Lordaeron, and she was forced to raise a blade against her family\u2014mother, father, brothers, sisters\u2014as they turned into the Lich King's mindless pawns. She doesn't hold the ideals of the Crusade, but she swore to support her childhood friend Renault Mograine's quest to destroy undead at any cost."
+						"亡灵瘟疫席卷洛丹伦时，萨莉·怀特迈恩还年轻，她被迫举剑挥向自己的家人\u2014\u2014母亲、父亲、兄弟、姐妹\u2014\u2014因为他们都已沦为巫妖王失去心智的棋子。她并不信奉十字军的理念，却立誓支持青梅竹马的雷诺·莫格莱尼：不惜一切代价，消灭亡灵。"
 					]
 				}
 			],
@@ -1430,35 +1543,39 @@
 			]
 		},
 		{
-			"name": "Houndmaster Loksey",
+			"ENG_name": "Houndmaster Loksey",
+			"name": "驯犬者洛克西",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Houndmaster Loksey",
+					"name": "驯犬者洛克西",
 					"type": "section",
-					"name": "Houndmaster Loksey",
 					"entries": [
 						{
 							"type": "quote",
 							"entries": [
-								"Release the hounds!"
+								"放狗！"
 							]
 						},
-						"Loksey has loved dogs since he was a child, but the fanatical crusade convinced him it was right to send them into war to die. He thinks only purging the unclean can wash the canine blood from his hands."
+						"洛克西自幼爱狗，但狂热的十字军运动说服了他，让他相信把狗送上战场送死并无不对。他认为，唯有肃清不洁者，才能洗净沾在自己手上的狗血。"
 					]
 				}
 			]
 		},
 		{
-			"name": "Illidan Stormrage",
+			"ENG_name": "Illidan Stormrage",
+			"name": "伊利丹·怒风",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Illidan Stormrage",
+					"name": "伊利丹·怒风",
 					"type": "section",
-					"name": "Illidan Stormrage",
 					"entries": [
-						"{@i First of the Demon Hunters}",
-						"Illidan Stormrage is the first demon hunter and bears a demon hunter's sinister wings, curling horns, and fel-green eyes. Originally a powerful night elf mage, he was dubbed \"The Betrayer\" for aiding the {@book Burning Legion|WoW|6|Burning Legion} during the War of the Ancients and was imprisoned for ten thousand years by his twin brother, Archdruid Malfurion Stormrage.",
-						"Unknown to his brother or his beloved, Tyrande Whisperwind, Illidan sought the Legion's power to wield it against them and save his people. Now free from his imprisonment, he has fled into the Twisting Nether to evade his pursuers. There, he trains other elves as demon hunters and leads raids against the Burning Legion across the cosmos, but he trusts no living soul, mortal or demonic."
+						"{@i 初代恶魔猎手}",
+						"伊利丹·怒风是第一位恶魔猎手，身负恶魔猎手那不祥的魔翼、卷曲的犄角与邪能绿的魔眼。他原本是一位强大的暗夜精灵法师，却因在上古之战中援助{@book 燃烧军团|WoW|6|Burning Legion}而被称为\"背叛者\"，并被孪生兄弟、大德鲁伊玛法里奥·怒风囚禁了一万年。",
+						"他的兄弟和他的挚爱泰兰德·语风都无从知晓：伊利丹谋取军团之力，正是为了以其制军、拯救族人。如今他已摆脱囚禁，为躲避追兵遁入扭曲虚空。他在那里将其他精灵训练成恶魔猎手，统领突袭，在宇宙各处打击燃烧军团，但他不相信任何活着的灵魂\u2014\u2014无论凡人还是恶魔。"
 					]
 				}
 			],
@@ -1476,40 +1593,44 @@
 			]
 		},
 		{
-			"name": "Illyanna Ravenoak",
+			"ENG_name": "Illyanna Ravenoak",
+			"name": "伊琳娜·暗木",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Illyanna Ravenoak",
+					"name": "伊琳娜·暗木",
 					"type": "section",
-					"name": "Illyanna Ravenoak",
 					"entries": [
 						{
 							"type": "quote",
 							"entries": [
-								"Flee... please! My will is not my own! It is the prince!"
+								"快逃......求你们！我的意志已不属于自己！是王子操控了我！"
 							]
 						},
-						"Illyanna Ravenoak and her animal companion Ferra were Prince Tortheldrin's most valued hunters until Illyanna refused the order to massacre her kin. As punishment, the prince executed Illyanna and used fel magic to bind her spirit to her corpse, condemning her to patrol his realm as an undead guard.",
-						"Illyanna's bear Ferra uses the {@creature Primeval Owlbear|XMM} stat block but has the Undead creature type."
+						"伊琳娜·暗木与她的动物伙伴费拉，曾是托塞德林王子最器重的猎手，直到伊利安娜抗命，拒绝屠戮自己的族人。作为惩罚，王子处死了伊利安娜，又用邪能魔法把她的灵魂缚回尸身，罚她以亡灵守卫之身，永世巡视他的领地。",
+						"伊利安娜的熊费拉使用{@creature 原初枭熊|XMM}的数据卡，但生物类型为不死生物。"
 					]
 				}
 			]
 		},
 		{
-			"name": "Immol'thar",
+			"ENG_name": "Immol'thar",
+			"name": "伊莫尔塔",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Immol'thar",
+					"name": "伊莫尔塔",
 					"type": "section",
-					"name": "Immol'thar",
 					"entries": [
 						{
 							"type": "quote",
 							"entries": [
-								"Guorrrr... GUORRRR!"
+								"咕噢......咕噢噢噢！！"
 							]
 						},
-						"Immol'thar is a void terror conjured from the Twisting Nether. The creature's fel blood generates vast amounts of magic, which the Shen'dralar siphon hourly."
+						"伊莫尔塔是一头从扭曲虚空召唤而来的虚空恐魔。这头生物的邪能之血会生出海量魔法，辛德拉精灵每小时都来抽取一次。"
 					]
 				}
 			],
@@ -1527,41 +1648,45 @@
 			]
 		},
 		{
-			"name": "Infernal",
+			"ENG_name": "Infernal",
+			"name": "地狱火",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Infernal",
+					"name": "地狱火",
 					"type": "section",
-					"name": "Infernal",
 					"entries": [
-						"{@i Mindless Construct of Flame and Fury}",
+						"{@i 烈焰与暴怒凝成的无智造物}",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
 							"items": [
 								{
+									"ENG_name": "Habitat:",
+									"name": "栖息地：",
 									"type": "item",
-									"name": "Habitat:",
-									"entry": "Planar (Twisting Nether)"
+									"entry": "位面（扭曲虚空）"
 								},
 								{
+									"ENG_name": "Treasure:",
+									"name": "宝藏：",
 									"type": "item",
-									"name": "Treasure:",
-									"entry": "None"
+									"entry": "无"
 								}
 							]
 						},
-						"Infernals are crafted by mighty demons and summoned by warlocks' magic. Falling to the earth as yellow-green, molten meteorites, infernals exist only to destroy every living thing in their path. Infernals have destroyed entire cities before their energies dissipated back into the Twisting Nether.",
+						"地狱火由强大的恶魔打造，经术士的魔法召唤而至。它们化作黄绿色的熔岩陨星坠落大地，存在的意义唯有毁灭沿途的一切生灵。在能量散逸回扭曲虚空之前，地狱火曾毁灭过一座座整城。",
 						{
 							"type": "insetReadaloud",
 							"entries": [
 								{
 									"type": "quote",
 									"entries": [
-										"Burning rocks that fall from space: super cool!",
-										"Fel burning rocks that crash to the ground: super not cool!"
+										"从天而降的燃烧陨石：超级酷！",
+										"坠地砸落的邪能燃烧陨石：超级不酷！"
 									],
-									"by": "Chromie"
+									"by": "克罗米"
 								}
 							]
 						}
@@ -1582,16 +1707,18 @@
 			]
 		},
 		{
-			"name": "Jaina Proudmoore",
+			"ENG_name": "Jaina Proudmoore",
+			"name": "吉安娜·普罗德摩尔",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Jaina Proudmoore",
+					"name": "吉安娜·普罗德摩尔",
 					"type": "section",
-					"name": "Jaina Proudmoore",
 					"entries": [
-						"{@i The Most Powerful Archmage Alive}",
-						"Jaina Proudmoore's people called her the Daughter of the Sea. She left behind her life in the nautical kingdom of Kul Tiras to study under the greatest archmages of the age in Dalaran. After the Third War, she became a legendary archmage of the {@book Kirin Tor|WoW|4|Kirin Tor} but has been forced to guard her heart, lest she suffer the pain of betrayal once more.",
-						"Jaina's hopes for peace died during the Cataclysm, when the bloodthirsty new Warchief of the Horde, Garrosh Hellscream, bombed her city of Theramore into oblivion. The Horde was no longer to be trusted, despite her friendship with {@creature Thrall|WoW}. From this nadir, she must discover who she truly is: the icy-hearted archmage she has been forced to become or the hopeful person she once was."
+						"{@i 当世最强的大法师}",
+						"吉安娜·普罗德摩尔的族人唤她作\"海洋之女\"。她舍弃了在航海王国库尔提拉斯的生活，前往达拉然，师从当代最伟大的几位大法师。第三次战争后，她成为{@book 肯瑞托|WoW|4|肯瑞托}的传奇大法师，却不得不把心扉紧锁，以免再受一次背叛之痛。",
+						"吉安娜对和平的期冀，在\"大地的裂变\"之际破灭\u2014\u2014嗜血的新任部落大酋长加尔鲁什·地狱咆哮，将她的城市塞拉摩炸成了齑粉。尽管她与{@creature 萨尔|WoW}交情匪浅，部落却再难取信于她。从这个谷底出发，她必须弄清自己究竟是谁：是被迫蜕变而成的心冷如冰的大法师，还是曾经那个满怀希望的自己。"
 					]
 				}
 			],
@@ -1604,36 +1731,38 @@
 					},
 					"width": 850,
 					"height": 2416,
-					"title": "Jaina Proudmoore",
+					"title": "吉安娜·普罗德摩尔",
 					"credit": "Alex Horley-Orlandelli"
 				}
 			]
 		},
 		{
-			"name": "King Gordok",
+			"ENG_name": "King Gordok",
+			"name": "戈多克大王",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "King Gordok",
+					"name": "戈多克大王",
 					"type": "section",
-					"name": "King Gordok",
 					"entries": [
 						{
 							"type": "quote",
 							"entries": [
-								"You challenge me, scrubs? I stay da king FOREVER!"
+								"就凭你们这群废物也敢挑战俺？俺永远是大王，永-远-都-是！"
 							]
 						},
-						"To rule the Gordok ogres, one must simply proclaim oneself king, then destroy all who disagree. A devious Gordrunni warlord called Ulrok convinced a dozen of his people's strongest warriors to challenge the king at the same time. The wild melee left most of the contestants dead or wounded, and Ulrok's blade easily cut down the survivors and the battle-weary king. To this day, Gordrunni ogres speak in hushed tones about the \"Day of Da Blood.\"",
-						"Gordok is so feared that he rarely faces any challenges, but he keeps his skills sharp as an undefeated champion of the Maul. He never picks a fight he doesn't think he can win\u2014and cheats by having his vizier Cho'Rush discreetly heal him from afar.",
+						"想统治戈多克食人魔，只需自立为王，再把不服的人统统灭掉。一个狡诈的戈杜尼军阀乌尔洛克，说动了十几名族中最强的战士，让他们同时向大王发起挑战。那场混战过后，大多数挑战者非死即伤，乌尔洛克的利刃轻松结果了幸存者与久战疲惫的大王。时至今日，戈杜尼食人魔提起那个\"血光之日\"，仍要压低声音。",
+						"戈多克威名太盛，几乎无人再来挑战，但他身为槌斗场的不败冠军，身手从未生疏。他从不打没把握的仗\u2014\u2014而且还会作弊：让他的维齐尔克鲁什在远处悄悄为他疗伤。",
 						{
 							"type": "insetReadaloud",
 							"entries": [
 								{
 									"type": "quote",
 									"entries": [
-										"All these King Gordoks... or is it Kings Gordok? Anyway, I think all big ogres would benefit from spending some time small."
+										"一代又一代的戈多克大王......还是该说戈多克的大王们？总之啊，我觉得所有大块头食人魔都该去当一阵子小个子，保准有好处。"
 									],
-									"by": "Chromie"
+									"by": "克罗米"
 								}
 							]
 						}
@@ -1654,20 +1783,22 @@
 			]
 		},
 		{
-			"name": "Krik'thir the Gatewatcher",
+			"ENG_name": "Krik'thir the Gatewatcher",
+			"name": "守门人克里克希尔",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Krik'thir the Gatewatcher",
+					"name": "守门人克里克希尔",
 					"type": "section",
-					"name": "Krik'thir the Gatewatcher",
 					"entries": [
 						{
 							"type": "quote",
 							"entries": [
-								"This kingdom belongs to the Scourge. Only the dead may enter!"
+								"这个王国属于天灾军团。唯有死者方可进入！"
 							]
 						},
-						"When the Scourge first came to Northrend, Krik'thir was in charge of defending the gates of Azjol-Nerub. He fell in battle against the Scourge forces, and he was raised to undeath. He still holds the key that grants access to the lower reaches of the ancient city, but now he guards it for the Scourge."
+						"天灾军团初临诺森德时，克里克希尔负责镇守艾卓-尼鲁布的大门。他在抗击天灾大军的战斗中阵亡，随后被复活为不死之身。他手中仍握着通往这座古城下层的钥匙，只是如今，他是替天灾军团看守它。"
 					]
 				}
 			],
@@ -1680,42 +1811,46 @@
 					},
 					"width": 850,
 					"height": 1069,
-					"title": "Krik'thir the Gatewatcher",
+					"title": "守门人克里克希尔",
 					"credit": "Joseph LaCroix"
 				}
 			]
 		},
 		{
-			"name": "Lady Sarevess",
+			"ENG_name": "Lady Sarevess",
+			"name": "萨雷维斯女士",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Lady Sarevess",
+					"name": "萨雷维斯女士",
 					"type": "section",
-					"name": "Lady Sarevess",
 					"entries": [
 						{
 							"type": "quote",
 							"entries": [
-								"Armed and unbound? My servants have failed, then. No matter, a lively death will please my masters greatly!"
+								"全副武装，还挣脱了束缚？这么说，我的仆从们失手了。无妨，一场热闹的死亡，正合我主人们的欢心！"
 							]
 						},
-						"Lady Sarevess is a self-proclaimed student of Queen Azshara, who created the naga long ago through a pact with the {@book Old God|WoW|6|Old Gods} N'Zoth. Lady Sarevess is obsessed with re-creating Queen Azshara's communion with the Old Gods. Sarevess disdains the Twilight's Hammer but lends them her strength and the might of her naga warriors so she can plunder the cultists' arcane lore."
+						"萨雷维斯女士自诩艾萨拉女王的门生\u2014\u2014很久以前，女王与{@book 上古之神|WoW|6|上古之神}恩佐斯立契，创造了纳迦。萨雷维斯女士痴迷于重现艾萨拉女王与上古之神的交融共感。她鄙夷暮光之锤，却仍向他们出借自己的力量与麾下纳迦战士的威势，好趁机掠夺信徒们的奥术学识。"
 					]
 				}
 			]
 		},
 		{
-			"name": "Lich King Arthas",
+			"ENG_name": "Lich King Arthas",
+			"name": "巫妖王阿尔萨斯",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Lich King Arthas",
+					"name": "巫妖王阿尔萨斯",
 					"type": "section",
-					"name": "Lich King Arthas",
 					"entries": [
-						"{@i Heir to the Frozen Throne}",
-						"The day Arthas was born, the forests of Lordaeron whispered his name. Under strict tutelage, the beloved prince bloomed into a mighty paladin, but pride festered in his noble heart. He thought himself capable of singlehandedly protecting Lordaeron from threat. Yet when he was outmatched, he discarded his allies and sought power at any cost.",
-						"That power came to him in {@item Frostmourne|WoW}, the cursed blade of Ner'zhul the Lich King. He took the blade to end the Cult of the Damned that spread an plague of undeath across his land, but he became the Lich King's pawn. In the end, he engulfed his homeland in the plague he sought to save it from, and in time he even donned the {@item Helm of Domination|WoW}, which contained the Lich King's spirit.",
-						"With Arthas's body and soul merged with the will of the Lich King, it's unclear whether a trace of his former self remains. He seems utterly remorseless, but it's possible some trace of the paladin he used to be is still capable of mercy."
+						"{@i 冰封王座的继承者}",
+						"阿尔萨斯降生那一日，洛丹伦的森林便低声念出了他的名字。在严师的督导下，这位深受爱戴的王子成长为强大的圣骑士，可骄傲已在他高贵的心中溃烂生根。他自认为凭一己之力便能护洛丹伦周全；然而一旦强敌压过他一头，他便抛弃盟友，不惜一切代价去追逐力量。",
+						"这份力量借{@item 霜之哀伤|WoW}来到他手中\u2014\u2014那是巫妖王耐奥祖的诅咒之刃。他执起此剑，本为铲除在他国土上散播亡灵瘟疫的诅咒神教，结果自己却沦为巫妖王的棋子。最终，他亲手将瘟疫倾覆在故土之上\u2014\u2014那正是他本想使家园幸免于难的瘟疫。时日既久，他更戴上了{@item 统御头盔|WoW}，其中封存着巫妖王的灵魂。",
+						"阿尔萨斯的肉体与灵魂皆已与巫妖王的意志融为一体，昔日的那缕本我是否尚存，已无从知晓。他看上去全无悔意，但或许，那位圣骑士残存下的一丝痕迹，仍存有几分慈悲的可能。"
 					]
 				}
 			],
@@ -1738,27 +1873,29 @@
 					},
 					"width": 1700,
 					"height": 1017,
-					"title": "Arthas on the Frozen Throne",
+					"title": "冰封王座上的阿尔萨斯",
 					"credit": "Wei Wang"
 				}
 			]
 		},
 		{
-			"name": "Lord Godfrey",
+			"ENG_name": "Lord Godfrey",
+			"name": "高弗雷勋爵",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Lord Godfrey",
+					"name": "高弗雷勋爵",
 					"type": "section",
-					"name": "Lord Godfrey",
 					"entries": [
 						{
 							"type": "quote",
 							"entries": [
-								"Reduced to ashes... Soon nothing will be left of Gilneas or the worgen taint."
+								"化为灰烬吧......很快，吉尔尼斯与狼人之垢都将不复存在。"
 							]
 						},
-						"Lord Vincent Godfrey of {@book Gilneas|WoW|4|Gilneas Renown Perks} saw the worgen curse ravage his kingdom. All his life, he had positioned himself to be the true power behind the Gilnean throne, but he broke when he learned that King Genn Greymane had become a worgen. Godfrey threw his life's work away to spite Greymane. Godfrey and his toady, {@creature Baron Ashbury|WoW}, tried to trade Greymane to the Forsaken in exchange for peace. His attempt failed, and he took his own life on the rocks of the Gilnean coast rather than live in a kingdom of wolves.",
-						"The Val'kyr found his shattered corpse and raised him as a Forsaken, though he didn't swear allegiance to {@creature Sylvanas Windrunner|WoW|Sylvanas} and managed to temporarily incapacitate her when he ransacked Pyrewood Village and conquered the keep overlooking it. Now, hated by both the Alliance and the Horde, he lurks within Shadowfang Keep, hatching a scheme that will allow him to emerge the one true victor in the war for Gilneas."
+						"{@book 吉尔尼斯|WoW|4|吉尔尼斯声望福利}的文森特·高弗雷勋爵，亲眼目睹狼人诅咒蹂躏他的王国。他终其一生都在经营，想成为吉尔尼斯王座背后真正的掌权者，可当他得知吉恩·格雷迈恩国王已沦为狼人时，他彻底崩溃了。高弗雷为了泄愤格雷迈恩，将毕生心血弃如敝屣。高弗雷与他的马屁精{@creature 阿什伯利男爵|WoW}企图把格雷迈恩出卖给被遗忘者，换取和平。图谋失败后，他宁死不愿活在群狼治下的王国，便在吉尔尼斯海岸的礁石上了结了自己。",
+						"华尔琪找到了他摔得支离破碎的尸体，将他复活为被遗忘者，但他并未宣誓效忠{@creature 希尔瓦娜斯·风行者|WoW}，还在洗劫焚木村、攻陷俯瞰村庄的城堡时，一度将她重创。如今，联盟与部落双方都对他恨之入骨，他潜藏在影牙城堡中，密谋着一步棋，好让自己成为吉尔尼斯之战唯一的真正赢家。"
 					]
 				}
 			],
@@ -1776,20 +1913,22 @@
 			]
 		},
 		{
-			"name": "Lord Walden",
+			"ENG_name": "Lord Walden",
+			"name": "瓦尔登领主",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Lord Walden",
+					"name": "瓦尔登领主",
 					"type": "section",
-					"name": "Lord Walden",
 					"entries": [
 						{
 							"type": "quote",
 							"entries": [
-								"Missing pages, broken equipment, tainted samples! How does someone work in these conditions?"
+								"书页缺失、设备破损、样本污染！这种条件叫人怎么工作？"
 							]
 						},
-						"The arrogant Lord Walden, {@creature Lord Godfrey|WoW|Godfrey's} right-hand man, vowed to pay any price, including death, to serve his compatriot and keep his power. He has adopted the vile alchemy of the Forsaken with aplomb."
+						"傲慢的瓦尔登领主是{@creature 高弗雷勋爵|WoW}的左膀右臂，他立誓不惜任何代价\u2014\u2014包括死亡\u2014\u2014也要辅佐同僚，保住权柄。被遗忘者那套邪恶的炼金术，他已玩得得心应手。"
 					]
 				}
 			],
@@ -1802,43 +1941,48 @@
 					},
 					"width": 1000,
 					"height": 1000,
-					"title": "Lord Walden",
+					"title": "瓦尔登领主",
 					"credit": "Michael Ivan"
 				}
 			]
 		},
 		{
-			"name": "Moonkin",
+			"ENG_name": "Moonkin",
+			"name": "枭兽",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Moonkin",
+					"name": "枭兽",
 					"type": "section",
-					"name": "Moonkin",
 					"entries": [
-						"{@i Moon-Blessed Guardian of Sacred Nature}",
+						"{@i 蒙受月恩的圣洁自然守护者}",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
 							"items": [
 								{
+									"ENG_name": "Habitat:",
+									"name": "栖息地：",
 									"type": "item",
-									"name": "Habitat:",
-									"entry": "Forest"
+									"entry": "森林"
 								},
 								{
+									"ENG_name": "Treasure:",
+									"name": "宝藏：",
 									"type": "item",
-									"name": "Treasure:",
-									"entry": "None"
+									"entry": "无"
 								}
 							]
 						},
-						"Moonkin, which resemble an antlered cross between a bear and a large owl, are believed by many to have been made by the moon goddess Elune to guard her sanctuaries. Moonkin often work alongside night elves and the green dragonflight to purify moonwells, defend against corrupted furbolgs, and halt deforestation. Moonkin are generally peaceful, but they lash out when nature is unbalanced by evil magic.",
-						"Moonkin carry the blessing of Elune, giving them a deep connection to the moon. Through Elune's blessing, they share the grace and beauty of their druidic magic with those they encounter and can call on Elune's power to strike those who act contrary to her purpose.",
+						"枭兽形似熊与大型猫头鹰的结合体，头生鹿角。许多人相信，它们是月神艾露恩的造物，受造以守护她的圣所。枭兽常与暗夜精灵及绿龙军团携手，净化月亮井、抵御堕落的熊怪、制止滥伐森林。枭兽大都性情平和，可一旦邪恶魔法打破了自然的平衡，它们便会奋起攻击。",
+						"枭兽身负艾露恩的祝福，与月亮有着深厚的联结。借由艾露恩的祝福，它们与相遇之人分享德鲁伊法术的优雅与美妙，并能唤来艾露恩之力，惩击那些违背她旨意行事之徒。",
 						{
+							"ENG_name": "Wildkin",
+							"name": "野性枭兽",
 							"type": "inset",
-							"name": "Wildkin",
 							"entries": [
-								"Wildkin are a lesser form of moonkin, less infused with Elune's magic and more like wild beasts than druidic protectors. Use the {@creature Primeval Owlbear|XMM} stat block in the {@book Monster Manual|XMM} for ordinary wildkin."
+								"野性枭兽是枭兽的低等形态，体内浸染的艾露恩魔法较少，与其说是德鲁伊守护者，不如说更像野兽。普通的野性枭兽请使用{@book 怪物图鉴|XMM}中的{@creature 原初枭熊|XMM}数据卡。"
 							]
 						}
 					]
@@ -1853,16 +1997,18 @@
 					},
 					"width": 386,
 					"height": 1000,
-					"title": "Moonkin",
+					"title": "枭兽",
 					"credit": "Aron Elekes"
 				}
 			]
 		},
 		{
-			"name": "Murloc Forager",
+			"ENG_name": "Murloc Forager",
+			"name": "鱼人搜掠者",
 			"source": "WoW",
 			"_copy": {
-				"name": "Murlocs",
+				"ENG_name": "Murlocs",
+				"name": "鱼人",
 				"source": "WoW",
 				"_mod": {
 					"entries": {
@@ -1871,7 +2017,7 @@
 							{
 								"type": "entries",
 								"entries": [
-									"Murloc foragers live near the edges of bodies of water, spending most of their time searching for food in the mud and shallow waters. Of all murlocs, foragers are the most likely to be found outside of a group, and they often serve as an early warning system to their community, drawing would-be attackers to the water's edge for their fellow murlocs to ambush."
+									"鱼人搜掠者生活在水体的边缘地带，大部分时间在泥沼与浅水中觅食。在所有鱼人中，搜掠者最常单独行动，它们往往充当聚落的预警系统，把图谋不轨者引到水边，让同伴伏击。"
 								]
 							}
 						]
@@ -1892,10 +2038,12 @@
 			]
 		},
 		{
-			"name": "Murloc Oracle",
+			"ENG_name": "Murloc Oracle",
+			"name": "鱼人神谕者",
 			"source": "WoW",
 			"_copy": {
-				"name": "Murlocs",
+				"ENG_name": "Murlocs",
+				"name": "鱼人",
 				"source": "WoW",
 				"_mod": {
 					"entries": {
@@ -1904,7 +2052,7 @@
 							{
 								"type": "entries",
 								"entries": [
-									"Oracles lead groups of other murlocs, using magic to defend and heal their allies. Murloc oracles are more willing than other murlocs to attempt communication with those who don't speak Nerglish."
+									"神谕者率领其他鱼人，用魔法守卫并治疗同伴。鱼人神谕者比其他鱼人更愿意尝试与不会说纳格利什语者交流。"
 								]
 							}
 						]
@@ -1913,43 +2061,47 @@
 			}
 		},
 		{
-			"name": "Murlocs",
+			"ENG_name": "Murlocs",
+			"name": "鱼人",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Murlocs",
+					"name": "鱼人",
 					"type": "section",
-					"name": "Murlocs",
 					"entries": [
-						"{@i Amphibious People of Coastal Waters}",
+						"{@i 栖于沿岸水域的两栖民族}",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
 							"items": [
 								{
+									"ENG_name": "Habitat:",
+									"name": "栖息地：",
 									"type": "item",
-									"name": "Habitat:",
-									"entry": "Coastal"
+									"entry": "海岸"
 								},
 								{
+									"ENG_name": "Treasure:",
+									"name": "宝藏：",
 									"type": "item",
-									"name": "Treasure:",
-									"entry": "Individual"
+									"entry": "个体"
 								}
 							]
 						},
-						"Since murlocs emerged from the oceans of Azeroth, these amphibious, piscine raiders have been steadily moving inland, forming communities along the banks of freshwater lakes and rivers. Murloc communities are close knit and insular, defending against conquest with simple weapons and elemental magic.",
-						"Murlocs were once forced to serve the naga as disposable workers and warriors, and their emergence onto land might be driven by a desire to avoid that fate.",
-						"Though some dismiss murlocs as pawns in larger conflicts, and very few understand the murlocs' primary language, Nerglish, murlocs are strategic fighters who use their ability to breathe, maneuver, and fight in both air and water to their advantage. Murlocs are also willing to sacrifice for one another, using sheer numbers to make up for their individual weakness.",
-						"In addition to the stat blocks presented here, any of the Humanoid stat blocks in the {@book Monster Manual|XMM} can be murlocs. For murlocs, add a Swim Speed equal to the creature's Speed plus 10 feet and the Amphibious trait from the stat blocks here. See the \"{@book Furbolgs, Murlocs, and Quilboar|WoW|7|Furbolgs, Murlocs, and Quilboar}\" sidebar for suggestions on other Humanoid stat blocks to use for murloc NPCs.",
+						"自鱼人从艾泽拉斯的海洋中现身以来，这些两栖的鱼类劫掠者便持续向内陆推进，在淡水湖泊与河流沿岸结成聚落。鱼人聚落紧密团结而又固守排外，以简陋的武器和元素魔法抵御征服。",
+						"鱼人曾被迫充当纳迦用完即弃的苦工与炮灰，他们登上陆地，或许正是为了摆脱那种命运。",
+						"尽管有人将鱼人贬作大棋局中的棋子，通晓鱼人主要语言纳格利什语者也寥寥无几，但鱼人是讲究战略的斗士，善于发挥在空气与水中都能呼吸、机动、作战的优势克敌制胜。鱼人也甘愿为彼此牺牲，以绝对的数量弥补个体的孱弱。",
+						"除本书所载数据卡外，{@book 怪物图鉴|XMM}中的任何类人生物数据卡皆可用作鱼人。若用作鱼人，需为其加上等同于该生物速度加10尺的游泳速度，以及本节数据卡中的\"两栖\"特性。关于还有哪些类人生物数据卡适合用作鱼人NPC，请参阅\"{@book 熊怪、鱼人与野猪人|WoW|7|Furbolgs, Murlocs, and Quilboar}\"边栏。",
 						{
 							"type": "insetReadaloud",
 							"entries": [
 								{
 									"type": "quote",
 									"entries": [
-										"Nozdormu says I have the memory of a murloc, which is why I always write things down."
+										"诺兹多姆说，我长着一条鱼人的记性，正因如此，我总要把事情写下来。"
 									],
-									"by": "Chromie"
+									"by": "克罗米"
 								}
 							]
 						}
@@ -1958,41 +2110,45 @@
 			]
 		},
 		{
-			"name": "N'raqi",
+			"ENG_name": "N'raqi",
+			"name": "恩拉基",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "N'raqi",
+					"name": "恩拉基",
 					"type": "section",
-					"name": "N'raqi",
 					"entries": [
-						"{@i Faceless Emissaries of the Old Gods}",
+						"{@i 上古之神的无面使者}",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
 							"items": [
 								{
+									"ENG_name": "Habitat:",
+									"name": "栖息地：",
 									"type": "item",
-									"name": "Habitat:",
-									"entry": "Any"
+									"entry": "任意"
 								},
 								{
+									"ENG_name": "Treasure:",
+									"name": "宝藏：",
 									"type": "item",
-									"name": "Treasure:",
-									"entry": "Individual"
+									"entry": "个体"
 								}
 							]
 						},
-						"After the Old Gods embedded themselves deep within Azeroth, their inky essence slowly seeped from their bodies, eventually coalescing into the n'raqi. Also called the Faceless, n'raqi dwell in shadows and cast eldritch spells in the dread tongue of Shath'Yar from tentacle-draped mouths. They are unflinchingly loyal heralds of the cosmic evils to whom they owe their existence. Whether they are marshalling the Old Gods' followers into armies, aiding cults, or doing the Old Gods' personal bidding, n'raqi are intelligent, dangerous, and powerful.",
-						"Lesser n'raqi called k'thir lurk in the shadows, often disguised as humans, and manipulate mortals' minds. These n'raqi use the {@creature Mind Flayer|XMM} stat block from the {@book Monster Manual|XMM}, and they speak Shath'Yar.",
+						"上古之神将自身深深楔入艾泽拉斯之后，它们墨黑的精髓便缓缓渗出躯体，最终凝聚成了恩拉基。恩拉基又称无面者，栖身暗影之中，以垂满触角的口中吐出的沙斯亚尔这一可怖语言，施放诡异的法术。它们是宇宙邪魔忠实不渝的先驱\u2014\u2014它们的存生正拜这些邪魔所赐。无论是将上古之神的信徒整编成军、襄助邪教，还是亲奉上古之神的差遣，恩拉基都聪慧、危险而强大。",
+						"名为克提尔的低等恩拉基潜伏在暗影里，常乔装成人类，操弄凡人的心智。这类恩拉基使用{@book 怪物图鉴|XMM}中的{@creature 夺心魔|XMM}数据卡，它们说沙斯亚尔语。",
 						{
 							"type": "insetReadaloud",
 							"entries": [
 								{
 									"type": "quote",
 									"entries": [
-										"I've seen both a past and a possible future with the Old Gods in charge and faceless ones everywhere. That was enough for me."
+										"我见过上古之神主宰的一段过去，也见过它们可能君临的未来\u2014\u2014放眼望去，尽是无面者。对我来说，这就够了。"
 									],
-									"by": "Chromie"
+									"by": "克罗米"
 								}
 							]
 						}
@@ -2001,10 +2157,12 @@
 			]
 		},
 		{
-			"name": "N'raqi Faceless General",
+			"ENG_name": "N'raqi Faceless General",
+			"name": "恩拉基无面将军",
 			"source": "WoW",
 			"_copy": {
-				"name": "N'raqi",
+				"ENG_name": "N'raqi",
+				"name": "恩拉基",
 				"source": "WoW",
 				"_mod": {
 					"entries": {
@@ -2013,8 +2171,8 @@
 							{
 								"type": "entries",
 								"entries": [
-									"Faceless generals, also called C'Thraxxi, lead the Old Gods' armies and defend their strongholds. Each C'Thrax has a deep well of magical ability, which it deploys to rip through the minds of those who get in its way, often leaving nothing more than drained husks in its wake. Even death is not a final end for these harbingers of doom; cultists have often tried, sometimes successfully, to awaken long-dead C'Thraxxi through sinister rituals and offerings of blood.",
-									"A faceless general's hulking form is covered in chitinous plates. Both its arms end in heavy pincers, and crablike legs sprout from its back, almost resembling wings. Each individual C'Thrax has its own unique characteristics, often reflective of the particular Old God it serves. For example, the Fury of N'Zoth has many eyes on its head and upper body, much like the Old God N'Zoth, while Warbringer Yenajz, drawn to Kul Tiras by the corruption of the Tidesages, has a mantle of teeth around its head that suggests the maw of C'Thun."
+									"无面将军，又称克萨拉克西，统领上古之神的军队并守卫其要塞。每一位克萨拉克都有一口深不可测的魔力之井，用以撕裂挡道者的心智，往往只留下一具具被抽干的空壳。死亡也非这些末日先驱的终点；信徒们屡屡尝试\u2014\u2014有时成功\u2014\u2014通过邪恶仪式与血祭唤醒死去已久的克萨拉克西。",
+									"无面将军魁伟的躯体覆着几丁质甲板。双臂末端是沉重的钳爪，背生蟹足，状若双翼。每一位克萨拉克都有自己独有的特征，往往映照其侍奉的上古之神。例如\"恩佐斯之怒\"的头颅与上身生着许多眼睛，酷似上古之神恩佐斯；而被潮汐祭司的腐化引至库尔提拉斯的\"战争使者耶纳杰\"，头周一圈齿冠宛如克苏恩的巨口。"
 								]
 							}
 						]
@@ -2023,10 +2181,12 @@
 			}
 		},
 		{
-			"name": "N'raqi Faceless One",
+			"ENG_name": "N'raqi Faceless One",
+			"name": "恩拉基无面者",
 			"source": "WoW",
 			"_copy": {
-				"name": "N'raqi",
+				"ENG_name": "N'raqi",
+				"name": "恩拉基",
 				"source": "WoW",
 				"_mod": {
 					"entries": {
@@ -2035,7 +2195,7 @@
 							{
 								"type": "entries",
 								"entries": [
-									"The most common n'raqi, faceless ones telepathically communicate with nearby creatures. Whispering into the minds of those around them, they become like gods to the weak minded and invaluable tools to those blessed with otherworldly insight. They attack both through their minds and with the strength of their two pseudopods, one of which is always much larger and more fully formed than the other."
+									"无面者是最常见的恩拉基，能与附近生物心灵沟通。它们向周围心智低语，对弱者而言如神明般可畏，对身怀异界洞见者则是无价的工具。它们既以心灵攻击，也以两条伪足的力量进击\u2014\u2014其中一条总是比另一条大得多、也成形得多。"
 								]
 							}
 						]
@@ -2051,46 +2211,52 @@
 					},
 					"width": 1000,
 					"height": 690,
-					"title": "N'raqi Faceless One",
+					"title": "恩拉基无面者",
 					"credit": "Matthew Mckeown"
 				}
 			]
 		},
 		{
-			"name": "Naga",
+			"ENG_name": "Naga",
+			"name": "纳迦",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Naga",
+					"name": "纳迦",
 					"type": "section",
-					"name": "Naga",
 					"entries": [
-						"{@i Sinister Serpentine Servants of the Old Gods}",
+						"{@i 上古之神的阴险蛇形仆从}",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
 							"items": [
 								{
+									"ENG_name": "Habitat:",
+									"name": "栖息地：",
 									"type": "item",
-									"name": "Habitat:",
-									"entry": "Coastal, Underwater"
+									"entry": "海岸、水下"
 								},
 								{
+									"ENG_name": "Treasure:",
+									"name": "宝藏：",
 									"type": "item",
-									"name": "Treasure:",
-									"entry": "Individual"
+									"entry": "个体"
 								}
 							]
 						},
-						"The naga were once night elves, Highborne followers of Queen Azshara. After the War of the Ancients, Queen Azshara pledged herself and her followers to the Old God N'Zoth, who transformed them into aquatic minions. The naga vaguely resemble to their elven forms, with humanoid arms and torsos and long, snaky tails. Male naga have snakelike heads, while female naga have humanlike heads but often have four or more arms."
+						"纳迦曾是暗夜精灵，是艾萨拉女王治下的上层精灵。上古之战后，艾萨拉女王携追随者投效上古之神恩佐斯，被其化作了水中的仆从。纳迦仍依稀保有精灵的形貌：人形的手臂与躯干，配上长长的蛇尾。雄性纳迦长着蛇一样的头颅，雌性纳迦的头则近似人形，却往往生有四条乃至更多的手臂。"
 					]
 				}
 			]
 		},
 		{
-			"name": "Naga Myrmidon",
+			"ENG_name": "Naga Myrmidon",
+			"name": "纳迦迈拉斯卫",
 			"source": "WoW",
 			"_copy": {
-				"name": "Naga",
+				"ENG_name": "Naga",
+				"name": "纳迦",
 				"source": "WoW",
 				"_mod": {
 					"entries": {
@@ -2099,7 +2265,7 @@
 							{
 								"type": "entries",
 								"entries": [
-									"Myrmidons are hulking male naga who serve as front-line warriors in battles against the naga's enemies. They wield tridents with attached ropes that allow them to pull foes into melee range."
+									"迈拉斯卫是雄性纳迦中的魁梧者，在对抗纳迦之敌的战斗中充当前线战士。他们挥舞系着绳索的三叉戟，能把敌人拖入近战距离。"
 								]
 							}
 						]
@@ -2120,10 +2286,12 @@
 			]
 		},
 		{
-			"name": "Naga Sea Witch",
+			"ENG_name": "Naga Sea Witch",
+			"name": "纳迦海妖",
 			"source": "WoW",
 			"_copy": {
-				"name": "Naga",
+				"ENG_name": "Naga",
+				"name": "纳迦",
 				"source": "WoW",
 				"_mod": {
 					"entries": {
@@ -2132,7 +2300,7 @@
 							{
 								"type": "entries",
 								"entries": [
-									"Sea witches are female naga who wield the magic of stormy seas."
+									"海妖是驾驭风暴海洋魔法的雌性纳迦。"
 								]
 							}
 						]
@@ -2141,10 +2309,12 @@
 			}
 		},
 		{
-			"name": "Naga Siren",
+			"ENG_name": "Naga Siren",
+			"name": "纳迦塞壬",
 			"source": "WoW",
 			"_copy": {
-				"name": "Naga",
+				"ENG_name": "Naga",
+				"name": "纳迦",
 				"source": "WoW",
 				"_mod": {
 					"entries": {
@@ -2153,7 +2323,7 @@
 							{
 								"type": "entries",
 								"entries": [
-									"Sirens are among the most powerful naga spellcasters, channeling the cold of the marine depths into mighty frost magic."
+									"塞壬是最强大的纳迦施法者之一，将海洋深处的寒冷引导为强大的冰霜魔法。"
 								]
 							}
 						]
@@ -2169,16 +2339,18 @@
 					},
 					"width": 1000,
 					"height": 947,
-					"title": "Naga Siren",
+					"title": "纳迦塞壬",
 					"credit": "Jesper Ejsing"
 				}
 			]
 		},
 		{
-			"name": "Nerubian Crypt Fiend",
+			"ENG_name": "Nerubian Crypt Fiend",
+			"name": "蛛魔地穴恶魔",
 			"source": "WoW",
 			"_copy": {
-				"name": "Nerubians",
+				"ENG_name": "Nerubians",
+				"name": "蛛魔",
 				"source": "WoW",
 				"_mod": {
 					"entries": {
@@ -2187,7 +2359,7 @@
 							{
 								"type": "entries",
 								"entries": [
-									"Though the Lich King couldn't infect the nerubians with his plague of undeath, he raised many dead nerubians using necromancy, turning them into crypt fiends. Crypt fiends wear the remnants of the cloth that they were mummified in and rake at their foes with their powerful claws. Crypt fiends use their webs to incapacitate their enemies, whose life force is sapped by the powerful necrotic energy in the webs' strands."
+									"尽管巫妖王无法用亡灵瘟疫感染蛛魔，他用死灵术复活了许多死去的蛛魔，将它们变成地穴恶魔。地穴恶魔身上还缠着木乃伊裹布的残片，以强有力的利爪耙击敌人。地穴恶魔用蛛网瘫痪敌人，蛛丝中强大的黯蚀能量会吸干被困者的生命力。"
 								]
 							}
 						]
@@ -2208,10 +2380,12 @@
 			]
 		},
 		{
-			"name": "Nerubian Venomancer",
+			"ENG_name": "Nerubian Venomancer",
+			"name": "蛛魔毒师",
 			"source": "WoW",
 			"_copy": {
-				"name": "Nerubians",
+				"ENG_name": "Nerubians",
+				"name": "蛛魔",
 				"source": "WoW",
 				"_mod": {
 					"entries": {
@@ -2220,7 +2394,7 @@
 							{
 								"type": "entries",
 								"entries": [
-									"Nerubian venomancers use their lethal toxin as one of their primary weapons. Venomancers' mastery of poison extends to their webbing, which is toxic to those held within its grasp. Venomancers are quick to assault non-nerubians, driven by their rancor over their lost and scattered kingdom."
+									"蛛魔毒师将致命毒素用作主要武器之一。毒师对毒的掌握延伸到蛛网上\u2014\u2014被网困住者也会中毒。出于对王国沦丧流离的怨愤，毒师会毫不迟疑地袭击非蛛魔者。"
 								]
 							}
 						]
@@ -2229,10 +2403,12 @@
 			}
 		},
 		{
-			"name": "Nerubian Warrior",
+			"ENG_name": "Nerubian Warrior",
+			"name": "蛛魔战士",
 			"source": "WoW",
 			"_copy": {
-				"name": "Nerubians",
+				"ENG_name": "Nerubians",
+				"name": "蛛魔",
 				"source": "WoW",
 				"_mod": {
 					"entries": {
@@ -2241,8 +2417,8 @@
 							{
 								"type": "entries",
 								"entries": [
-									"Nerubian warriors use their arachnid limbs to quickly scurry across the ground and climb onto walls and ceilings, maintaining their balance even in treacherous terrain. When attacking, they use the two arms on their humanoid torso to claw at their enemies, and these warriors often rely on their webbing to encase or restrict their foes, leaving them motionless and helpless.",
-									"The few nerubians who survived the Scourge have organized a rebellion called the Azjol-anak to retake Azjol-Nerub. Their bitterness over the loss of their kingdom has made many distrustful of anyone who isn't nerubian, and they attack whoever they come across without restraint or warning."
+									"蛛魔战士以节肢在地面上疾行，攀上墙壁与天花板，即使在险峻地形也能保持平衡。攻击时，它们用类人躯干上的双臂撕扯敌人；这些战士还常依靠蛛网困缚或限制对手，令其动弹不得。",
+									"在天灾中幸存的少数蛛魔组织了一个名为\"艾卓-阿纳克\"的反抗军，以夺回艾卓-尼鲁布。失去王国的苦恨使许多蛛魔不信任任何非蛛魔者，他们会毫无节制、不加警告地攻击遭遇的任何人。"
 								]
 							}
 						]
@@ -2251,41 +2427,45 @@
 			}
 		},
 		{
-			"name": "Nerubians",
+			"ENG_name": "Nerubians",
+			"name": "蛛魔",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Nerubians",
+					"name": "蛛魔",
 					"type": "section",
-					"name": "Nerubians",
 					"entries": [
-						"{@i Spiderlike Heirs of an Ancient Realm}",
+						"{@i 古老国度的蛛形继承者}",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
 							"items": [
 								{
+									"ENG_name": "Habitat:",
+									"name": "栖息地：",
 									"type": "item",
-									"name": "Habitat:",
-									"entry": "Any"
+									"entry": "任意"
 								},
 								{
+									"ENG_name": "Treasure:",
+									"name": "宝藏：",
 									"type": "item",
-									"name": "Treasure:",
-									"entry": "Arcana"
+									"entry": "奥秘"
 								}
 							]
 						},
-						"Nerubians are intelligent humanoid spiders whose once-powerful kingdom was decimated by {@book the Scourge|WoW|6|The Scourge}, leaving them either scattered across the world or turned to undead in the service of the Lich King. The nerubians evolved from the aqir, the Old Gods' insectile servitors, after the aqir's rule was overthrown by trolls. Then early nerubians founded great kingdoms: Azj-Kahet, deep within the sunken continent of Khaz Algar, and Azjol-Nerub, which extended beneath the surface of Northrend.",
-						"The nerubians of Azjol-Nerub lived in peace for thousands of years until the Lich King Ner'zhul and the Scourge conquered Northrend. The nerubians bravely resisted the Lich King's armies, resisting his plague of undeath and psychic Domination powers and holding the line against the Scourge's relentless advance, but Azjol-Nerub eventually fell to the Lich King's power. Most nerubians were either destroyed or killed and then raised into undeath, becoming crypt fiends. Those who survived remain scattered in small groups that have vowed to one day defeat the Scourge and retake their lost underground realm.",
+						"蛛魔是有智慧的类人蜘蛛，他们一度强盛的王国被{@book 天灾军团|WoW|6|天灾军团}屠戮得十不存一，族人要么流散世界各地，要么被转化为不死生物，供巫妖王驱使。蛛魔由亚基虫族\u2014\u2014上古之神的昆虫仆从\u2014\u2014演化而来，那是在亚基人的统治被巨魔推翻之后。此后，早期蛛魔建立了伟大的王国：其一是深藏于沉没大陆卡兹阿加腹地的阿兹-卡赫特，其二是延伸在诺森德地表之下的艾卓-尼鲁布。",
+						"艾卓-尼鲁布的蛛魔安宁地生活了数千年，直到巫妖王耐奥祖与天灾军团征服诺森德。蛛魔英勇抗击巫妖王的大军，抵御他的亡灵瘟疫与精神支配之力，死守防线，挡住天灾军团的步步紧逼，但艾卓-尼鲁布终究陷落于巫妖王之力。大多数蛛魔要么被赶尽杀绝，要么被杀后复活为不死生物，沦为地穴恶魔。幸存者散作一个个小群体，立誓终有一日击溃天灾军团，夺回他们失去的地下国度。",
 						{
 							"type": "insetReadaloud",
 							"entries": [
 								{
 									"type": "quote",
 									"entries": [
-										"Can I just say I'm glad you survived the... oh, wait. That hasn't happened yet."
+										"我能说一句吗\u2014\u2014真高兴你从那场......哦，等等。那件事还没发生呢。"
 									],
-									"by": "Chromie"
+									"by": "克罗米"
 								}
 							]
 						}
@@ -2294,31 +2474,35 @@
 			]
 		},
 		{
-			"name": "Pit Lord",
+			"ENG_name": "Pit Lord",
+			"name": "深渊领主",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Pit Lord",
+					"name": "深渊领主",
 					"type": "section",
-					"name": "Pit Lord",
 					"entries": [
-						"{@i Hulking General of the Burning Legion}",
+						"{@i 燃烧军团的庞然统帅}",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
 							"items": [
 								{
+									"ENG_name": "Habitat:",
+									"name": "栖息地：",
 									"type": "item",
-									"name": "Habitat:",
-									"entry": "Planar (Twisting Nether)"
+									"entry": "位面（扭曲虚空）"
 								},
 								{
+									"ENG_name": "Treasure:",
+									"name": "宝藏：",
 									"type": "item",
-									"name": "Treasure:",
-									"entry": "Individual"
+									"entry": "个体"
 								}
 							]
 						},
-						"The pit lords who fanatically serve Mannoroth the Destructor are some of the most cruel, barbarous butchers to ever roam the trackless wastes of the Great Dark Beyond. Also called annihilan, these hulking demons love only to kill and bring sorrow to living creatures. Pit lords will stop at nothing to uphold the will of the {@book Burning Legion|WoW|6|Burning Legion}."
+						"狂热效命于毁灭者玛诺洛斯的深渊领主们，是在深暗领域的茫茫虚域中横行的最残酷、最野蛮的屠夫。这些巨魔般的恶魔又称安尼希兰，所爱唯有杀戮，唯以令生灵悲苦为乐。为贯彻{@book 燃烧军团|WoW|6|Burning Legion}的意志，深渊领主无所不用其极。"
 					]
 				}
 			],
@@ -2336,75 +2520,85 @@
 			]
 		},
 		{
-			"name": "Prince Tortheldrin",
+			"ENG_name": "Prince Tortheldrin",
+			"name": "托塞德林王子",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Prince Tortheldrin",
+					"name": "托塞德林王子",
 					"type": "section",
-					"name": "Prince Tortheldrin",
 					"entries": [
 						{
 							"type": "quote",
 							"entries": [
-								"For ten thousand years I have ruled this kingdom. Is it not still glorious? Is it not still a jewel of our empire?"
+								"一万年来，我一直统治着这个王国。它难道不依旧辉煌？难道不依旧是我们帝国的明珠？"
 							]
 						},
-						"Prince Tortheldrin presents a genteel facade to his guests. Confident in his near invulnerability, the Highborne fears no threats and dismisses even accusations of mass murder as twaddle. He whiles away his days telling tales to his Shen'dralar sycophants but is eager for new sagas. Thus, he treats adventurers who display even a modicum of sophistication as honored guests.",
-						"When Immol'thar is slain, Tortheldrin's Demonic Invincibility trait ends, and he flies into a rage, murdering anyone in his path. When he dies, his body is reborn as a horned, winged demon. Unlike a true demon, he is permanently destroyed when killed in this form."
+						"托塞德林王子在宾客面前总是一副温文尔雅的做派。这位上层精灵自信自己近乎刀枪不入，对任何威胁都无所畏惧，甚至把大屠杀的指控也斥作无稽之谈。他整日给辛德拉的阿谀之徒讲故事消磨光阴，却渴盼新的传奇。因此，但凡冒险者显出哪怕一丁点教养，他都奉为上宾。",
+						"一旦伊莫尔塔被杀死，托塞德林的\"恶魔无敌\"特性便告终止，他会陷入狂怒，杀死挡路的任何人。他死时，肉身会重生为长角带翼的恶魔。与真正的恶魔不同，他若在此形态下被杀，便是彻底的湮灭。"
 					]
 				}
 			]
 		},
 		{
-			"name": "Pustulant Monstrosity",
+			"ENG_name": "Pustulant Monstrosity",
+			"name": "灌脓巨怪",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Pustulant Monstrosity",
+					"name": "灌脓巨怪",
 					"type": "section",
-					"name": "Pustulant Monstrosity",
 					"entries": [
-						"Pustulent monstrosities are powerful zombies found throughout Shadowfang Keep, and in particular alongside Lord Godfrey in his chamber. They are shambling hulks covered with oozing pustules filled with deadly toxin."
+						"灌脓巨怪是出没于影牙城堡各处的强大丧尸，在高弗雷勋爵的居室里尤为多见，常随侍他左右。它们是蹒跚而行的庞然巨躯，浑身布满渗脓的水疱，脓液中饱含致命毒素。"
 					]
 				}
 			]
 		},
 		{
-			"name": "Quilboar",
+			"ENG_name": "Quilboar",
+			"name": "野猪人",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Quilboar",
+					"name": "野猪人",
 					"type": "section",
-					"name": "Quilboar",
 					"entries": [
-						"{@i Boar-Like People with Protective Spines}",
+						"{@i 背生护棘的猪形民族}",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
 							"items": [
 								{
+									"ENG_name": "Habitat:",
+									"name": "栖息地：",
 									"type": "item",
-									"name": "Habitat:",
-									"entry": "Desert, Hill"
+									"entry": "荒漠、丘陵"
 								},
 								{
+									"ENG_name": "Treasure:",
+									"name": "宝藏：",
 									"type": "item",
-									"name": "Treasure:",
-									"entry": "Individual"
+									"entry": "个体"
 								}
 							]
 						},
-						"Believed to be the mortal descendants of the demigod Agamaggan, a mighty boar felled during the War of the Ancients, quilboar resemble humanoid boars with a row of razor-sharp spines down their backs. They often make their homes among the large patches of thorn-covered vines on Azeroth that are believed to have been grown from Agamaggan's blood, though they have attacked nearby creatures and communities to expand their territory. Quilboar are fearless and aggressive.",
-						"The Razorfen is the mightiest quilboar tribe, and its expansion across the Barrens has driven countless smaller clans into Durotar, Mulgore, and beyond, forcing them into conflict with the Horde. The Death's Head tribe, seeking supremacy over not just the Horde but their own kin, allied with {@book the Scourge|WoW|6|The Scourge} and willingly gave themselves to undeath.",
-						"See the \"{@book Furbolgs, Murlocs, and Quilboar|WoW|7|Furbolgs, Murlocs, and Quilboar}\" sidebar in \"{@book Murlocs|WoW|7|Murlocs}\" in this chapter for suggestions on other Humanoid stat blocks to use for quilboar NPCs."
+						"人们相信，野猪人是半神阿迦玛甘的凡人后裔\u2014\u2014那头强大的巨猪陨落于上古之战。野猪人形似人形野猪，脊背纵生一列剃刀般锋利的棘刺。他们常栖身于艾泽拉斯上大片覆满荆棘藤蔓之地，据信那些藤蔓由阿迦玛甘的鲜血生长而成；不过，为扩张领地，他们也曾袭击周边的生物与聚落。野猪人无所畏惧，生性好斗。",
+						"剃刀沼泽是最强大的野猪人部落，它在贫瘠之地的扩张，将无数较小的氏族驱入杜隆塔尔、莫高雷乃至更远之地，迫使这些氏族与部落兵戎相见。死亡之头氏族不满足于只凌驾部落，更想压倒同族，于是与{@book 天灾军团|WoW|6|天灾军团}结盟，心甘情愿地投身不死。",
+						"关于还有哪些类人生物数据卡适合用作野猪人NPC，请参阅本章\"{@book 鱼人|WoW|7|Murlocs}\"一节的\"{@book 熊怪、鱼人与野猪人|WoW|7|Furbolgs, Murlocs, and Quilboar}\"边栏。"
 					]
 				}
 			]
 		},
 		{
-			"name": "Quilboar Thornweaver",
+			"ENG_name": "Quilboar Thornweaver",
+			"name": "野猪人荆棘编织者",
 			"source": "WoW",
 			"_copy": {
-				"name": "Quilboar",
+				"ENG_name": "Quilboar",
+				"name": "野猪人",
 				"source": "WoW",
 				"_mod": {
 					"entries": {
@@ -2413,7 +2607,7 @@
 							{
 								"type": "entries",
 								"entries": [
-									"Quilboar thornweavers bear thorns they believe grew from the body of their demigod progenitor Agamaggan. Their magic uses those thorns, calling on the spirits of nature to protect their territory."
+									"野猪人荆棘编织者身负荆棘\u2014\u2014他们相信这些荆棘生长自半神始祖阿迦玛甘的躯体。他们的魔法运用这些荆棘，召唤自然之灵守卫领地。"
 								]
 							}
 						]
@@ -2434,39 +2628,44 @@
 			]
 		},
 		{
-			"name": "Ragnaros",
+			"ENG_name": "Ragnaros",
+			"name": "拉格纳罗斯",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Ragnaros",
+					"name": "拉格纳罗斯",
 					"type": "section",
-					"name": "Ragnaros",
 					"entries": [
-						"{@i The Firelord, Elemental Ruler of the Firelands}",
-						"Ragnaros is the most infamous of the four great elemental lords (see {@book chapter 6|WoW|6}). Like the other elemental lords, Ragnaros warred against the Old Gods when they first came to Azeroth but eventually succumbed to their corrupting influence and became one of their mightiest servants. The titan keepers imprisoned Ragnaros on the Elemental Plane, but after millennia of rulership over his fiery prison, he was summoned back to Azeroth.",
-						"The Dark Iron dwarves accidentally called Ragnaros forth in a last-ditch effort to win a war against the other dwarven clans. Ragnaros's volcanic reemergence devastated the land for miles around and created the ashen peak of Blackrock Mountain, which now looms over Stormwind and Ironforge. The Firelord is pyroclastic devastation incarnate. He sees all mortals as insects and can't be reasoned with or bewitched. Ragnaros's worshippers include flamewakers (use the {@creature Salamander|XMM} stat block in the {@book Monster Manual|XMM}) and the Dark Iron clan.",
+						"{@i 火焰之王，火焰之地的元素主宰}",
+						"拉格纳罗斯是四大元素领主中最臭名昭著的一位（见{@book 第六章|WoW|6}）。与其他元素领主一样，拉格纳罗斯在上古之神初临艾泽拉斯时曾与之交战，但终究屈服于它们的腐蚀，沦为它们最强大的仆从之一。泰坦守护者们将他囚入元素位面；他在那座烈焰囚笼中君临数千年后，被召唤回了艾泽拉斯。",
+						"黑铁矮人在与其他矮人氏族交战的最后一搏中，失手将拉格纳罗斯召唤了出来。拉格纳罗斯如火山般重现于世，方圆数英里的土地尽成焦土，更造就了黑石山这座灰烬之峰\u2014\u2014如今，它高踞于暴风城与铁炉堡之侧。这位火焰之王，便是火山毁灭之灾的化身。他将一切凡人视作虫豸，无法与之讲理，也无法加以蛊惑。拉格纳罗斯的信徒包括烈焰行者（使用{@book 怪物图鉴|XMM}中的{@creature 火蜥蜴|XMM}数据卡）与黑铁氏族。",
 						{
+							"ENG_name": "Ragnaros's Lair",
+							"name": "拉格纳罗斯的巢穴",
 							"type": "entries",
-							"name": "Ragnaros's Lair",
 							"entries": [
-								"Ragnaros transforms any place he dwells into an echo of the Plane of Fire. Rock melts into pools and streams of lava, flames dance through the air, and toxic smoke bursts from vents in the ground.",
-								"The region surrounding Ragnaros's lair is scarred and scorched, creating the following effects:",
+								"拉格纳罗斯会将任何栖身之处化作火元素位面的回响。岩石熔作岩浆的池沼与溪流，火焰在空中曼舞，毒烟自地面的裂口中喷涌而出。",
+								"拉格纳罗斯的巢穴周边区域遍布灼痕焦土，产生以下效应：",
 								{
 									"type": "list",
 									"style": "list-hang-notitle",
 									"items": [
 										{
+											"ENG_name": "Extreme Heat",
+											"name": "极度高温",
 											"type": "item",
-											"name": "Extreme Heat",
-											"entry": "Temperatures within 1 mile of the lair are comparable to a scorching desert, subjecting creatures to {@hazard extreme heat|XDMG} (see the {@book Dungeon Master's Guide|XDMG})."
+											"entry": "巢穴周围1英里内的温度堪比灼热沙漠，使生物遭受{@hazard 极度高温|XDMG}（见{@book 城主指南|XDMG}）。"
 										},
 										{
+											"ENG_name": "Sulfurous Vapors",
+											"name": "硫磺蒸气",
 											"type": "item",
-											"name": "Sulfurous Vapors",
-											"entry": "Toxic gases seep up from the ground within 1 mile of the lair. A creature that finishes a {@variantrule Long Rest|XPHB} in that area must succeed on a {@dc 15} Constitution saving throw or have the {@condition Poisoned|XPHB} condition for 1 hour."
+											"entry": "巢穴周围1英里内，毒气自地面渗出。在该区域完成{@variantrule 长休|XPHB}的生物，必须通过一次{@dc 15}的体质豁免，否则将陷入{@condition 中毒|XPHB}状态，持续1小时。"
 										}
 									]
 								},
-								"These effects are permanent scars left on the terrain by Ragnaros's presence."
+								"这些效应，是拉格纳罗斯的存在烙在地貌上的永久伤痕。"
 							]
 						},
 						{
@@ -2475,9 +2674,9 @@
 								{
 									"type": "quote",
 									"entries": [
-										"Didn't we meet fighting Ragnaros's forces on Mount Hyjal? Was that the first time we met? Or will it be the last?"
+										"我们是不是在海加尔山并肩血战拉格纳罗斯的大军时认识的？那是我们头一回见面？还是说......会是最后一回呢？"
 									],
-									"by": "Chromie"
+									"by": "克罗米"
 								}
 							]
 						}
@@ -2498,41 +2697,47 @@
 			]
 		},
 		{
-			"name": "Red Dragonflight",
+			"ENG_name": "Red Dragonflight",
+			"name": "红龙军团",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Red Dragonflight",
+					"name": "红龙军团",
 					"type": "section",
-					"name": "Red Dragonflight",
 					"entries": [
-						"{@i Noble Dragons Charged with Protecting Life}",
+						"{@i 受命守护生命的高贵巨龙}",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
 							"items": [
 								{
+									"ENG_name": "Habitat:",
+									"name": "栖息地：",
 									"type": "item",
-									"name": "Habitat:",
-									"entry": "Any"
+									"entry": "任意"
 								},
 								{
+									"ENG_name": "Treasure:",
+									"name": "宝藏：",
 									"type": "item",
-									"name": "Treasure:",
-									"entry": "Any"
+									"entry": "任意"
 								}
 							]
 						},
-						"The red dragonflight, ruled by Alexstrasza the Life-Binder, is noble and honorable. Dragons of this flight consider themselves the protectors of life. They often protect sacred areas and items, seeking to keep them from lesser beings. Their mission is to destroy existential threats to life, and they have aided in wars against the Old Gods, the {@book Burning Legion|WoW|6|Burning Legion}, the Lich King, and the black dragon aspect Deathwing\u2014their most hated enemy.",
-						"Red dragons are likely to be allies to heroes of both the Alliance and the Horde, though some red dragons have been turned to evil by the Old Gods' corrupting whispers."
+						"红龙军团由生命的缚誓者阿莱克丝塔萨统治，高贵而重荣耀。这一军团的巨龙自视为生命的守护者。他们常护卫神圣的地域与器物，使其免入低等生物之手。他们的使命是摧毁危及生命存续的威胁，曾助战讨伐上古之神、{@book 燃烧军团|WoW|6|Burning Legion}、巫妖王，以及黑龙军团守护巨龙死亡之翼\u2014\u2014那正是他们最切齿痛恨的仇敌。",
+						"红龙多半愿意成为联盟与部落双方英雄的盟友，尽管也有少数红龙被上古之神的腐蚀低语引入了邪途。"
 					]
 				}
 			]
 		},
 		{
-			"name": "Red Dragonflight Dragon (Gargantuan)",
+			"ENG_name": "Red Dragonflight Dragon (Gargantuan)",
+			"name": "红龙军团巨龙",
 			"source": "WoW",
 			"_copy": {
-				"name": "Red Dragonflight",
+				"ENG_name": "Red Dragonflight",
+				"name": "红龙军团",
 				"source": "WoW",
 				"_mod": {
 					"entries": {
@@ -2541,7 +2746,7 @@
 							{
 								"type": "entries",
 								"entries": [
-									"Members of the red dragonflight are considered the most noble dragons of Azeroth, sworn to protect all life. But their benevolence should never be misunderstood as weakness; they are capable of terrible destruction, outweighed only by the life-giving power that suffuses their fiery breath."
+									"红龙军团被视为艾泽拉斯最高贵的巨龙，立誓守护一切生命。但绝不要把他们的仁善误解为软弱；他们能造成可怕的毁灭，只是那份毁灭仍不敌其烈焰吐息中充盈的赋生之力。"
 								]
 							}
 						]
@@ -2562,10 +2767,12 @@
 			]
 		},
 		{
-			"name": "Red Dragonflight Drake",
+			"ENG_name": "Red Dragonflight Drake",
+			"name": "红龙军团幼龙",
 			"source": "WoW",
 			"_copy": {
-				"name": "Red Dragonflight",
+				"ENG_name": "Red Dragonflight",
+				"name": "红龙军团",
 				"source": "WoW",
 				"_mod": {
 					"entries": {
@@ -2574,7 +2781,7 @@
 							{
 								"type": "entries",
 								"entries": [
-									"Red dragonflight drakes heal tainted lands across Azeroth. By breathing streams of blazing fire across the terrain, these drakes incinerate withered plant life and bring growth from the ashes. When need is greatest, these drakes allow mortal heroes to ride and fight on their backs."
+									"红龙军团幼龙治愈艾泽拉斯各地受污染的土地。这些幼龙向地形喷吐灼热的烈焰洪流，焚尽枯萎的植物，让新生从灰烬中成长。在最紧要的关头，它们会允许凡人英雄骑在背上作战。"
 								]
 							}
 						]
@@ -2595,10 +2802,12 @@
 			]
 		},
 		{
-			"name": "Red Dragonflight Whelp",
+			"ENG_name": "Red Dragonflight Whelp",
+			"name": "红龙军团雏龙",
 			"source": "WoW",
 			"_copy": {
-				"name": "Red Dragonflight",
+				"ENG_name": "Red Dragonflight",
+				"name": "红龙军团",
 				"source": "WoW",
 				"_mod": {
 					"entries": {
@@ -2607,7 +2816,7 @@
 							{
 								"type": "entries",
 								"entries": [
-									"Although red dragonflight whelps are small, their fiery breath is mighty. These creatures' sense of justice leads them to take on larger foes in the name of good. Red dragonflight whelps almost never flee from a fight, for their pride hasn't yet been tempered by the wisdom of age."
+									"红龙军团雏龙虽小，炽烈的吐息却威力惊人。这些生物的正义感驱使它们以善之名挑战更强大的敌人。红龙军团雏龙几乎从不临阵脱逃，因为它们的骄傲尚未被岁月的智慧打磨。"
 								]
 							}
 						]
@@ -2628,69 +2837,77 @@
 			]
 		},
 		{
-			"name": "Satyrs",
+			"ENG_name": "Satyrs",
+			"name": "萨特",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Satyrs",
+					"name": "萨特",
 					"type": "section",
-					"name": "Satyrs",
 					"entries": [
-						"{@i Ancient Elves Corrupted by Fel Forces}",
+						"{@i 被邪能腐化的远古精灵}",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
 							"items": [
 								{
+									"ENG_name": "Habitat:",
+									"name": "栖息地：",
 									"type": "item",
-									"name": "Habitat:",
-									"entry": "Forest"
+									"entry": "森林"
 								},
 								{
+									"ENG_name": "Treasure:",
+									"name": "宝藏：",
 									"type": "item",
-									"name": "Treasure:",
-									"entry": "Arcana"
+									"entry": "奥秘"
 								}
 							]
 						},
-						"The first satyr was a Highborne night elf named Xavius, a servant of Sargeras during the War of the Ancients. As punishment for Xavius's failures, Sargeras destroyed the elf and remade him in a demonic form, with goatlike horns and hooves, shaggy fur, and brutal claws. Xavius's curse spread through his allies and followers, and these satyrs now live in sects with varying allegiances. They loathe their night elf kin above all else, and most of them remain devoted servants of the {@book Burning Legion|WoW|6|Burning Legion}. A few, though, have followed Xavius's example and turned to the worship of the Old Gods."
+						"第一位萨特是名叫萨维斯的上层精灵暗夜精灵，在上古之战期间充当萨格拉斯的仆从。作为对萨维斯失职的惩罚，萨格拉斯毁灭了这个精灵，将他重塑为恶魔之躯：山羊般的角与蹄、蓬乱的兽毛，还有残虐的利爪。萨维斯的诅咒在他的盟友与追随者间蔓延开来，这些萨特如今分居各派，效忠各异。他们对暗夜精灵同胞的憎恨甚于一切，其中大多数仍是{@book 燃烧军团|WoW|6|Burning Legion}虔敬的仆从。不过，也有少数萨特效仿萨维斯，转而崇拜上古之神。"
 					]
 				}
 			]
 		},
 		{
-			"name": "Scarlet Champion Herod",
+			"ENG_name": "Scarlet Champion Herod",
+			"name": "血色勇士赫罗德",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Scarlet Champion Herod",
+					"name": "血色勇士赫罗德",
 					"type": "section",
-					"name": "Scarlet Champion Herod",
 					"entries": [
 						{
 							"type": "quote",
 							"entries": [
-								"Ah, I've been waiting for a real challenge."
+								"啊，我一直在等一场真正的挑战。"
 							]
 						},
-						"Herod is a charming bully who became a dazzling gladiator. The Scarlet Commander keeps him in the monastery to inspire the troops, since his tendency to cleave indiscriminately can make him a liability to his allies in combat."
+						"赫罗德是个讨人喜欢的恶霸，后来成了光芒四射的角斗士。血色指挥官把他留在修道院里激励士气；只是他动辄不分敌我地横劈竖砍，在战斗中也可能拖累自己人。"
 					]
 				}
 			]
 		},
 		{
-			"name": "Scarlet Commander Mograine",
+			"ENG_name": "Scarlet Commander Mograine",
+			"name": "血色指挥官莫格莱尼",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Scarlet Commander Mograine",
+					"name": "血色指挥官莫格莱尼",
 					"type": "section",
-					"name": "Scarlet Commander Mograine",
 					"entries": [
 						{
 							"type": "quote",
 							"entries": [
-								"I am the son of the Ashbringer, and we are all children of the Light! It is the one true path to victory!"
+								"我是灰烬使者的儿子，我们都是圣光之子！这才是通往胜利的唯一正道！"
 							]
 						},
-						"Renault Mograine murdered his father in cold blood on the battlefield. He was manipulated into doing so by the dreadlord Balnazzar, but that doesn't dilute his sin. Renault is haunted but zealous, and he's oblivious that his Crusade is a sham puppeted by a demon."
+						"雷诺·莫格莱尼在战场上冷血弑父。他是遭恐惧魔王巴纳扎尔操纵才行此悖逆之举，但这洗不淡他的罪孽。雷诺备受煎熬，却又狂热无比，全然不知他效命的十字军不过是恶魔提线的空壳。"
 					]
 				}
 			],
@@ -2703,16 +2920,18 @@
 					},
 					"width": 1000,
 					"height": 984,
-					"title": "Scarlet Commander Mograine",
+					"title": "血色指挥官莫格莱尼",
 					"credit": "Alex Horley-Orlandelli"
 				}
 			]
 		},
 		{
-			"name": "Shadowstalker Satyr",
+			"ENG_name": "Shadowstalker Satyr",
+			"name": "潜行萨特",
 			"source": "WoW",
 			"_copy": {
-				"name": "Satyrs",
+				"ENG_name": "Satyrs",
+				"name": "萨特",
 				"source": "WoW",
 				"_mod": {
 					"entries": {
@@ -2721,7 +2940,7 @@
 							{
 								"type": "entries",
 								"entries": [
-									"Shadowstalkers are satyrs who wield the subtle magic of the Void, using that power to lurk in the darkness and strike enemies from hiding."
+									"潜行萨特是驾驭虚空精妙魔法的萨特，以那种力量潜藏于黑暗，从隐蔽处袭击敌人。"
 								]
 							}
 						]
@@ -2742,40 +2961,44 @@
 			]
 		},
 		{
-			"name": "Shivarra",
+			"ENG_name": "Shivarra",
+			"name": "破坏魔",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Shivarra",
+					"name": "破坏魔",
 					"type": "section",
-					"name": "Shivarra",
 					"entries": [
-						"{@i Towering Priest of the Burning Legion}",
+						"{@i 燃烧军团的高大祭司}",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
 							"items": [
 								{
+									"ENG_name": "Habitat:",
+									"name": "栖息地：",
 									"type": "item",
-									"name": "Habitat:",
-									"entry": "Planar (Twisting Nether)"
+									"entry": "位面（扭曲虚空）"
 								},
 								{
+									"ENG_name": "Treasure:",
+									"name": "宝藏：",
 									"type": "item",
-									"name": "Treasure:",
-									"entry": "Individual"
+									"entry": "个体"
 								}
 							]
 						},
-						"Devout and exceedingly charismatic, shivarra are demonic priests who shared the news of Sargeras's dread and powerful vision. They are the driving heart of the {@book Burning Crusade|WoW|6|Burning Legion}.",
+						"破坏魔虔诚笃信且魅力超凡，是将萨格拉斯那可怖而强大的愿景传告四方的恶魔祭司。她们是{@book 燃烧军团|WoW|6|Burning Legion}的中流砥柱。",
 						{
 							"type": "insetReadaloud",
 							"entries": [
 								{
 									"type": "quote",
 									"entries": [
-										"Bigger isn't always better, and I don't know that six arms are any better than two. Sometimes they're just nastier."
+										"块头大未必就更好，我也说不准六条胳膊是不是真比两条强。有时候啊，只是更凶罢了。"
 									],
-									"by": "Chromie"
+									"by": "克罗米"
 								}
 							]
 						}
@@ -2791,49 +3014,55 @@
 					},
 					"width": 733,
 					"height": 1000,
-					"title": "Shivarra",
+					"title": "破坏魔",
 					"credit": "Glenn Rane"
 				}
 			]
 		},
 		{
-			"name": "Sneed's Shredder",
+			"ENG_name": "Sneed's Shredder",
+			"name": "斯尼德的伐木机",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Sneed's Shredder",
+					"name": "斯尼德的伐木机",
 					"type": "section",
-					"name": "Sneed's Shredder",
 					"entries": [
 						{
 							"type": "quote",
 							"entries": [
-								"I made this beauty to cut down Ashenvale old growths, but there ain't no reason why she can't fell you, too!"
+								"俺造这台宝贝，本是用来砍灰谷原始老林的，可没道理它不能把你们也一并放倒！"
 							]
 						},
-						"Sneed ({@creature Goblin Boss|XMM}) was a logging engineer for the Venture Co. in Stranglethorn when {@creature Edwin VanCleef|WoW} hired him to build his Juggernaut. Sneed runs the Mast Room from his bipedal, tree-felling shredder."
+						"斯尼德（{@creature 地精头目|XMM}）原本是风险投资公司在荆棘谷的伐木工程师，{@creature 埃德温·范克里夫|WoW}雇他来建造自己的强袭战舰。斯尼德坐在他那台双足伐木机里，坐镇掌管桅杆室。"
 					]
 				}
 			]
 		},
 		{
-			"name": "Springvale's Specter",
+			"ENG_name": "Springvale's Specter",
+			"name": "斯普林瓦尔的幽灵",
 			"source": "WoW",
 			"_copy": {
-				"name": "Commander Springvale",
+				"ENG_name": "Commander Springvale",
+				"name": "指挥官斯普林瓦尔",
 				"source": "WoW"
 			}
 		},
 		{
-			"name": "Sylvanas Windrunner",
+			"ENG_name": "Sylvanas Windrunner",
+			"name": "希尔瓦娜斯·风行者",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Sylvanas Windrunner",
+					"name": "希尔瓦娜斯·风行者",
 					"type": "section",
-					"name": "Sylvanas Windrunner",
 					"entries": [
-						"{@i Vengeful Banshee}",
-						"The thirst for vengeance festers within the shadowy heart of Sylvanas Windrunner, the Banshee Queen. Her hatred is first for the {@creature Lich King Arthas|WoW|Lich King, Arthas Menethil}, who slew her and bound her soul into eternal servitude, then for {@book the Scourge|WoW|6|The Scourge} who slaughtered her people. And last, for all the living.",
-						"The Dark Lady of the Forsaken has committed terrible atrocities in the name of revenge. Her cruelty grew after the Lich King's demise, as she fell further into nihilistic despair. Hundreds of thousands of people died on her orders and were raised as her undead soldiers. Ultimately, she repented and accepted judgment for her evils and now dwells within the Shadowlands, freeing souls as eternal penance."
+						"{@i 复仇的女妖}",
+						"复仇的渴求，在女妖之王希尔瓦娜斯·风行者阴暗的心底溃烂化脓。她最恨{@creature 巫妖王阿尔萨斯|WoW}\u2014\u2014他杀死了她，又将她的灵魂缚为永世的奴仆；其次恨屠戮她子民的{@book 天灾军团|WoW|6|天灾军团}。而最后，她恨一切生者。",
+						"这位被遗忘者的黑暗女王，以复仇之名犯下了骇人的暴行。巫妖王败亡后，她愈发沉入虚无的绝望，残暴也愈演愈烈。数十万人死于她的一道道号令，又被复活为她的不死战士。最终，她幡然悔悟，为自己的罪愆接受审判，如今栖身暗影界，以解放亡魂作为永恒的赎罪。"
 					]
 				}
 			],
@@ -2851,25 +3080,27 @@
 			]
 		},
 		{
-			"name": "Thrall",
+			"ENG_name": "Thrall",
+			"name": "萨尔",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Thrall",
+					"name": "萨尔",
 					"type": "section",
-					"name": "Thrall",
 					"entries": [
-						"{@i Liberator of the Orcs and Guardian of the Elements}",
-						"The first orc to be born on Azeroth after the Horde invaded through the Dark Portal, Thrall was an orphan of the First War and grew up in an orc internment camp. His hard life has made him stern but kind. As a leader and a shaman, he teaches his people to pursue coexistence over conflict, with both the other peoples of Azeroth and the wild elements that govern the world.",
-						"After many battles, Thrall retired to Outland to live a simple life away from war. In time, Thrall's old friends reminded him of his duty to his people, and he joined the Horde Council. He wields Dra'gora, an axe he forged in his seclusion\u2014for even then, he knew he would one day return to defend his people.",
+						"{@i 兽人的解放者与元素的守护者}",
+						"萨尔是部落穿过黑暗之门入侵之后，第一个在艾泽拉斯出生的兽人。他是第一次战争的孤儿，在兽人收容营中长大。坎坷的岁月把他磨砺得不苟言笑，却不失仁厚。身为领袖与萨满祭司，他教导族人以共处取代争斗\u2014\u2014既与艾泽拉斯的其他种族共处，也与统御这个世界的狂野元素共处。",
+						"历经无数战事，萨尔归隐外域，想过远离烽火的简单日子。渐渐地，故友们唤醒了他对族人的责任，他加入了部落议会。他手持\"德拉戈拉\"\u2014\u2014那柄他在隐居时亲手锻造的战斧\u2014\u2014因为即便在那时，他也知道自己终有一日会归来，守护族人。",
 						{
 							"type": "insetReadaloud",
 							"entries": [
 								{
 									"type": "quote",
 									"entries": [
-										"Thrall is a great example of how you can't let other people define you."
+										"萨尔就是个绝佳的例子：你可不能让别人来定义你自己。"
 									],
-									"by": "Chromie"
+									"by": "克罗米"
 								}
 							]
 						}
@@ -2890,29 +3121,33 @@
 			]
 		},
 		{
-			"name": "Twilight Lord Kelris",
+			"ENG_name": "Twilight Lord Kelris",
+			"name": "暮光领主克尔里斯",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Twilight Lord Kelris",
+					"name": "暮光领主克尔里斯",
 					"type": "section",
-					"name": "Twilight Lord Kelris",
 					"entries": [
 						{
 							"type": "quote",
 							"entries": [
-								"Who dares disturb my meditation? I could all but hear the fathomless dreams of Aku'mai."
+								"何人敢扰我的冥想？我几乎就要听见阿库麦尔那深不可测的梦了。"
 							]
 						},
-						"An orc shaman-turned-warlock named Kelris Doomfang found a three-headed monster in Blackfathom Deeps, Aku'mai, while fleeing justice. He became convinced it was a herald of the {@book Old Gods'|WoW|6|Old Gods} return to Azeroth and was determined to control it. Kelris gathered a sect of the Twilight's Hammer to the depths, and he supervises the monster's growth, feeding it his own subjects to satisfy its wild hunger."
+						"一位由萨满祭司堕落为术士的兽人\u2014\u2014克尔里斯·末日之牙\u2014\u2014在逃避制裁的途中，于黑暗深渊发现了一头三首怪物：阿库麦尔。他深信这怪物是{@book 上古之神的|WoW|6|上古之神}重返艾泽拉斯的先兆，并铁了心要驾驭它。克尔里斯召集了暮光之锤的一支教派潜入深渊，监督着这头怪物的生长，还把自己的信徒喂给它，以满足它狂野的饥渴。"
 					]
 				}
 			]
 		},
 		{
-			"name": "Voidcaller",
+			"ENG_name": "Voidcaller",
+			"name": "虚空召唤者",
 			"source": "WoW",
 			"_copy": {
-				"name": "Voidwalkers",
+				"ENG_name": "Voidwalkers",
+				"name": "虚空行者",
 				"source": "WoW",
 				"_mod": {
 					"entries": {
@@ -2921,7 +3156,7 @@
 							{
 								"type": "entries",
 								"entries": [
-									"Voidcallers are magic-wielding voidwalkers that appear to be draped in rotting cloth. From their shoulders hang two lanterns, which are said to bridge the realm of the living and that of the dead and sometimes attract wayward ghosts. The lanterns hang from a glowing crystalline structure that hovers over and around the voidcaller's shadowy form."
+									"虚空召唤者是施展魔法的虚空行者，形似披着腐烂布匹。双肩挂着两盏灯笼\u2014\u2014据说它们连接着生者与死者的界域，有时会引来迷途的幽灵。灯笼悬于一个发光的晶体结构上，那结构漂浮环绕在虚空行者阴影般的形体之上。"
 								]
 							}
 						]
@@ -2930,10 +3165,12 @@
 			}
 		},
 		{
-			"name": "Voidwalker",
+			"ENG_name": "Voidwalker",
+			"name": "虚空行者",
 			"source": "WoW",
 			"_copy": {
-				"name": "Voidwalkers",
+				"ENG_name": "Voidwalkers",
+				"name": "虚空行者们",
 				"source": "WoW",
 				"_mod": {
 					"entries": {
@@ -2942,7 +3179,7 @@
 							{
 								"type": "entries",
 								"entries": [
-									"Warlocks highly prize ordinary voidwalkers as servants because of their ability to both attract and withstand enemy attacks."
+									"魔契师极其看重普通的虚空行者仆从，因为它们既能吸引又能承受敌人的攻击。"
 								]
 							}
 						]
@@ -2963,31 +3200,35 @@
 			]
 		},
 		{
-			"name": "Voidwalkers",
+			"ENG_name": "Voidwalkers",
+			"name": "虚空行者们",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Voidwalkers",
+					"name": "虚空行者",
 					"type": "section",
-					"name": "Voidwalkers",
 					"entries": [
-						"{@i Creatures of Incarnate Void}",
+						"{@i 虚空的化身之物}",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
 							"items": [
 								{
+									"ENG_name": "Habitat:",
+									"name": "栖息地：",
 									"type": "item",
-									"name": "Habitat:",
-									"entry": "Planar (Twisting Nether)"
+									"entry": "位面（扭曲虚空）"
 								},
 								{
+									"ENG_name": "Treasure:",
+									"name": "宝藏：",
 									"type": "item",
-									"name": "Treasure:",
-									"entry": "None"
+									"entry": "无"
 								}
 							]
 						},
-						"Voidwalkers are creatures of the Void, hulking figures made of pure shadow in hues of black, purple, and blue with glowing violet eyes. They are often adorned with bracers or pauldrons."
+						"虚空行者是虚空造物，是由纯粹暗影凝成的庞然身影，呈黑、紫、蓝诸色，眼中燃着灼灼紫辉。它们身上常配着护腕或肩甲。"
 					]
 				}
 			]

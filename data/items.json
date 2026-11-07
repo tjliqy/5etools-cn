@@ -243,6 +243,7 @@
 			"lootTables": [
 				"魔法物品表F"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -265,6 +266,7 @@
 				"当持握这根权杖时，你的{@filter 魔契师法术|spells|class=魔契师}的法术攻击检定和豁免DC获得 +1 加值。",
 				"此外，持握这根权杖期间，你能够以一个{@action 魔法|XPHB}动作恢复一个法术位。该词条一经使用，你在完成一次{@variantrule 长休|XPHB}后都无法再次使用。"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -305,6 +307,7 @@
 			"lootTables": [
 				"魔法物品表F"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -334,6 +337,7 @@
 				"奥秘 - 非普通|XDMG",
 				"圣物 - 非普通|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -353,6 +357,7 @@
 			"lootTables": [
 				"武备 - 非普通|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -608,6 +613,7 @@
 			"lootTables": [
 				"魔法物品表G"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -633,6 +639,7 @@
 			"lootTables": [
 				"奥秘 - 珍稀|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -664,6 +671,7 @@
 			"lootTables": [
 				"魔法物品表G"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -693,6 +701,7 @@
 				"奥秘 - 珍稀|XDMG",
 				"圣物 - 珍稀|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -712,6 +721,7 @@
 			"lootTables": [
 				"武备 - 珍稀|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -963,6 +973,7 @@
 			"lootTables": [
 				"魔法物品表H"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -988,6 +999,7 @@
 			"lootTables": [
 				"奥秘 - 极珍稀|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -1019,6 +1031,7 @@
 			"lootTables": [
 				"魔法物品表H"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -1045,6 +1058,7 @@
 				"奥秘 - 极珍稀|XDMG",
 				"圣物 - 极珍稀|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -1061,6 +1075,7 @@
 			"lootTables": [
 				"武备 - 极珍稀|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -1862,7 +1877,7 @@
 		},
 		{
 			"ENG_name": "Alchemy Jug (Blue)",
-			"name": "蓝色水壶",
+			"name": "炼金壶（蓝色）",
 			"source": "CM",
 			"page": 144,
 			"rarity": "uncommon",
@@ -1929,7 +1944,7 @@
 		},
 		{
 			"ENG_name": "Alchemy Jug (Orange)",
-			"name": "橙色水壶",
+			"name": "炼金壶（橙色）",
 			"source": "CM",
 			"page": 144,
 			"rarity": "uncommon",
@@ -3547,6 +3562,7 @@
 			"lootTables": [
 				"魔法物品表G"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -3573,6 +3589,7 @@
 			"lootTables": [
 				"武备 - 珍稀|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -3704,6 +3721,646 @@
 				"你在AC上获得+1加值，并且你不会陷入{@condition 魅惑}或{@condition 恐慌}。此外，你所选择的30尺内的每一个生物在为避免陷入{@condition 魅惑}或{@condition 恐慌}，或者结束这些状态所做的豁免检定中具有优势。",
 				"当你受到使饰物觉醒的宝库主龙的吐息武器的伤害类型的伤害时，你可以用你的反应来免受这次伤害，并且你恢复等同于你原本应受的伤害数值的生命值。一旦这项特性被使用，直到下一个黎明之前它不能被再次使用。",
 				"当你佩戴此饰物时，你获得等同于步行速度的飞行速度，并且可以悬浮。当你以这种速度飞行时，你的背后出现幽灵般的龙翼。"
+			]
+		},
+		{
+			"ENG_name": "Ashbringer",
+			"name": "灰烬使者",
+			"type": "M|XPHB",
+			"source": "WoW",
+			"page": 106,
+			"baseItem": "巨剑|xphb",
+			"rarity": "artifact",
+			"reqAttune": "由圣武士",
+			"reqAttuneTags": [
+				{
+					"class": "圣武士"
+				}
+			],
+			"sentient": true,
+			"weight": 6,
+			"weaponCategory": "martial",
+			"property": [
+				"H|XPHB",
+				"2H|XPHB"
+			],
+			"mastery": [
+				"擦掠|XPHB"
+			],
+			"dmg1": "2d6",
+			"dmgType": "S",
+			"bonusWeapon": "+3",
+			"entries": [
+				"灰烬使者浸染圣光，由麦格尼·铜须国王在铁炉堡的大铁砧上锻成，曾是骑士莫格莱尼家族的骄傲与荣光。但当叛逆的雷诺·莫格莱尼用这把剑弑父之后，它遭到腐化。这把剑被天灾军团夺走，直到雷诺的兄弟达里安·莫格莱尼背叛巫妖王，将武器送交提里奥·弗丁\u2014这一英勇之举净化了灰烬使者，使其恢复本来的形态。",
+				{
+					"ENG_name": "Magic Weapon",
+					"name": "魔化武器",
+					"type": "entries",
+					"entries": [
+						"你用这把魔法武器进行的攻击检定和伤害检定获得 +3 加值。命中时，它额外造成{@damage 1d10}点火焰伤害；若目标为亡灵，则额外造成{@damage 3d10}点火焰伤害。"
+					]
+				},
+				{
+					"ENG_name": "Changing States",
+					"name": "形态转换",
+					"type": "entries",
+					"entries": [
+						"初次遇到灰烬使者时，它可能处于{@item 灰烬使者（真形态）|WoW|真形态}或{@item 腐化的灰烬使者|WoW|腐化形态}。由 DM 裁定：若持用者以之犯下穷凶极恶之举，灰烬使者会转为腐化形态；若持用者以之成就传奇功业，它会转为真形态。灰烬使者当前的状态会给予你以下收益之一："
+					]
+				},
+				{
+					"ENG_name": "Steal Life (Corrupted State Only)",
+					"name": "窃取生命（仅腐化形态）",
+					"type": "entries",
+					"entries": [
+						"每当你以灰烬使者将某生物的生命值降至 0 {@variantrule 生命值|XPHB}时，你获得 20 点{@variantrule 临时生命值|XPHB}。"
+					]
+				},
+				{
+					"ENG_name": "Wake of Ashes (True State Only)",
+					"name": "灰烬觉醒（仅真形态）",
+					"type": "entries",
+					"entries": [
+						"每当你以灰烬使者将某生物的{@variantrule 生命值|XPHB}降至 0 时，你可以使其尸体爆成一团阴燃的灰烬。以该目标为中心 10 尺{@variantrule 光环 [效应区域]|XPHB|光环}内你选择的每个生物必须通过{@dc 18}体质豁免，否则受{@condition 目盲|XPHB}状态直到其下个回合结束。"
+					]
+				},
+				{
+					"ENG_name": "Sentience",
+					"name": "智能",
+					"type": "entries",
+					"entries": [
+						"灰烬使者是一把有智力的武器，智力 14，感知 17，魅力 17。它在真形态下为守序善良，在腐化形态下为守序邪恶。它拥有听觉和 120 尺的{@sense 黑暗视觉|XPHB}。",
+						"这把武器以心灵感应与持用者沟通，会说通用语和矮人语。"
+					]
+				},
+				{
+					"ENG_name": "Personality",
+					"name": "个性",
+					"type": "entries",
+					"entries": [
+						"灰烬使者的声音听起来像微弱而断续的低语。在真形态下，灰烬使者力求侍奉圣光之力，将不洁之物化为灰烬。在腐化形态下，它想动摇众生对圣光的信仰，毁灭正义之士。若持用者不认同灰烬使者当前状态的目标，冲突便会产生。"
+					]
+				},
+				{
+					"ENG_name": "Random Properties",
+					"name": "随机词条",
+					"type": "entries",
+					"entries": [
+						"灰烬使者具有以下随机属性：",
+						{
+							"type": "list",
+							"items": [
+								"1项{@table 神器词条; 次要增益词条|XDMG|次要增益}词条",
+								"1项{@table 神器词条; 主要增益词条|XDMG|主要增益}词条",
+								"1项{@table 神器词条; 次要减益词条|XDMG|次要减益}词条"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Destroying Ashbringer",
+					"name": "摧毁灰烬使者",
+					"type": "entries",
+					"entries": [
+						"只有其创造者麦格尼·铜须能摧毁灰烬使者。当他将此剑击在大铁砧上时，武器便会碎裂。"
+					]
+				}
+			],
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Ashbringer (True State)",
+			"name": "灰烬使者（真形态）",
+			"source": "WoW",
+			"_copy": {
+				"ENG_name": "Ashbringer",
+				"name": "灰烬使者",
+				"source": "WoW",
+				"_mod": {
+					"entries": [
+						{
+							"mode": "removeArr",
+							"names": [
+								"窃取生命（仅腐化形态）"
+							]
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "智能",
+							"items": {
+								"ENG_name": "Sentience",
+								"name": "智能",
+								"type": "entries",
+								"entries": [
+									"灰烬使者是一件具有智能的武器，智力为14、感知为17、魅力为17。在真形态下，其阵营为守序善良。它具有听觉和120尺范围的{@sense 黑暗视觉|XPHB}。",
+									"这把武器以心灵感应与持用者沟通，会说通用语和矮人语。"
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "个性",
+							"items": {
+								"ENG_name": "Personality",
+								"name": "个性",
+								"type": "entries",
+								"entries": [
+									"灰烬使者的声音听起来如同微弱而断续的低语。在真形态下，灰烬使者寻求侍奉圣光的力量，并将不洁之物化为灰烬。若持有者与灰烬使者当前形态的目标不一致，便会产生冲突。"
+								]
+							}
+						}
+					]
+				},
+				"_preserve": {
+					"page": true,
+					"hasFluffImages": true
+				}
+			}
+		},
+		{
+			"ENG_name": "Ashen Band of Courage",
+			"name": "勇气之灰烬指环",
+			"type": "RG|XDMG",
+			"source": "ICC",
+			"page": 71,
+			"rarity": "uncommon",
+			"reqAttune": "由拥有灰烬审判军声望值 3+ 的角色",
+			"entries": [
+				"这枚金属指环缀有五颗闪亮的水晶，形似野兽的利爪。指环内侧印着忏悔者欧姆斯的锻印\u2014\u2014一个风格化的字母 O。",
+				"佩戴这枚指环时，你为避免或结束{@condition 魅惑|XPHB}和{@condition 恐慌|XPHB}状态而进行的豁免检定具有{@variantrule 优势|XPHB}。"
+			]
+		},
+		{
+			"ENG_name": "Ashen Band of Destruction",
+			"name": "毁灭之灰烬指环",
+			"type": "RG|XDMG",
+			"source": "ICC",
+			"page": 71,
+			"rarity": "uncommon",
+			"reqAttune": "由拥有灰烬审判军声望值 3+ 的角色",
+			"bonusSpellAttack": "+1",
+			"bonusSpellSaveDc": "+1",
+			"entries": [
+				"这枚厚重的金属指环饰有骷髅图案，两颗透亮的蓝色宝石充当双眼。指环内侧印着忏悔者欧姆斯的锻印\u2014\u2014一个风格化的字母 O。",
+				"佩戴这枚指环时，你的法术攻击检定获得 +1 加值，且你的法术豁免 DC 提升 1。"
+			]
+		},
+		{
+			"ENG_name": "Ashen Band of Endless Courage",
+			"name": "永恒勇气之灰烬指环",
+			"source": "ICC",
+			"_copy": {
+				"ENG_name": "Ashen Band of Courage",
+				"name": "勇气之灰烬指环",
+				"source": "ICC",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": {
+							"regex": "^佩戴这枚指环时，"
+						},
+						"items": "佩戴这枚指环时，你具有对{@condition 魅惑|XPHB}和{@condition 恐慌|XPHB}状态的{@variantrule 免疫|XPHB}，且你的{@variantrule 护甲等级|XPHB}获得 +1 加值。此外，你的豁免检定获得 +1 加值。"
+					}
+				},
+				"_preserve": {
+					"page": true
+				}
+			},
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"rarity": "legendary",
+			"reqAttune": "由拥有灰烬审判军声望值 50+ 的角色",
+			"bonusAc": "+1",
+			"bonusSavingThrow": "+1"
+		},
+		{
+			"ENG_name": "Ashen Band of Endless Destruction",
+			"name": "永恒毁灭之灰烬指环",
+			"source": "ICC",
+			"_copy": {
+				"ENG_name": "Ashen Band of Destruction",
+				"name": "毁灭之灰烬指环",
+				"source": "ICC",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": {
+							"regex": "^佩戴这枚指环时，"
+						},
+						"items": "佩戴这枚指环时，你的法术攻击检定获得 +3 加值，你的法术豁免 DC 提升 3，且你施展法术时在伤害骰上掷出的每个 1 都可视为 2。此外，你的施法属性提升 2（上限为 30）。你还可以为自己施展的每个法术的一次伤害掷骰附加 +3 加值。"
+					}
+				},
+				"_preserve": {
+					"page": true
+				}
+			},
+			"rarity": "legendary",
+			"reqAttune": "由拥有灰烬审判军声望值 50+ 的角色",
+			"ability": {
+				"choose": [
+					{
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						],
+						"count": 1,
+						"amount": 2
+					}
+				]
+			},
+			"bonusSpellAttack": "+3",
+			"bonusSpellDamage": "+3",
+			"bonusSpellSaveDc": "+3"
+		},
+		{
+			"ENG_name": "Ashen Band of Endless Might",
+			"name": "永恒力量之灰烬指环",
+			"source": "ICC",
+			"_copy": {
+				"ENG_name": "Ashen Band of Might",
+				"name": "力量之灰烬指环",
+				"source": "ICC",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": {
+							"regex": "^佩戴这枚指环时，"
+						},
+						"items": "佩戴这枚指环时，你的近战武器攻击伤害掷骰获得 +1 加值，且你在近战武器的伤害骰上掷出的每个 1 都可视为 2。此外，你的力量为 25。若你在没有此属性时力量已为 25 或更高，则此属性不产生效果。"
+					}
+				},
+				"_preserve": {
+					"page": true
+				}
+			},
+			"rarity": "legendary",
+			"reqAttune": "由拥有灰烬审判军声望值 50+ 的角色",
+			"ability": {
+				"static": {
+					"str": 25
+				}
+			}
+		},
+		{
+			"ENG_name": "Ashen Band of Endless Vengeance",
+			"name": "永恒复仇之灰烬指环",
+			"source": "ICC",
+			"_copy": {
+				"ENG_name": "Ashen Band of Vengeance",
+				"name": "复仇之灰烬指环",
+				"source": "ICC",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": {
+							"regex": "^佩戴这枚指环时，"
+						},
+						"items": "佩戴这枚指环时，你进行远程武器攻击检定时无视{@variantrule 掩护|XPHB|半身掩护}，你的远程武器伤害掷骰获得 +2 加值，且以远程武器在长射程进行攻击不会使你的攻击检定具有{@variantrule 劣势|XPHB}。此外，你进行远程攻击检定时无视{@variantrule 掩护|XPHB|四分之三掩护}，你的远程武器攻击的最大射程翻倍。你在远程武器的伤害骰上掷出的每个 1 或 2 都可视为 3。"
+					}
+				},
+				"_preserve": {
+					"page": true
+				}
+			},
+			"rarity": "legendary",
+			"reqAttune": "由拥有灰烬审判军声望值 50+ 的角色"
+		},
+		{
+			"ENG_name": "Ashen Band of Endless Wisdom",
+			"name": "永恒智慧之灰烬指环",
+			"source": "ICC",
+			"_copy": {
+				"ENG_name": "Ashen Band of Wisdom",
+				"name": "智慧之灰烬指环",
+				"source": "ICC",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": {
+							"regex": "^佩戴这枚指环时，"
+						},
+						"items": "佩戴这枚指环时，你在为回复自己或其他生物{@variantrule 生命值|XPHB}而掷的骰上掷出的每个 1 都可视为 2。此外，每当你创造的效应为某个生物回复{@variantrule 生命值|XPHB}时，你可以选择距该生物 30 尺内的另一个生物，令其也回复该数量一半的{@variantrule 生命值|XPHB}（向下取整）。当你施展一个施法距离为触碰且无需攻击检定的法术时，你可以将该法术的施法距离提升至 30 尺。你的施法属性也提升 2（上限为 30）。"
+					}
+				},
+				"_preserve": {
+					"page": true
+				}
+			},
+			"rarity": "legendary",
+			"reqAttune": "由拥有灰烬审判军声望值 50+ 的角色",
+			"ability": {
+				"choose": [
+					{
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						],
+						"count": 1,
+						"amount": 2
+					}
+				]
+			}
+		},
+		{
+			"ENG_name": "Ashen Band of Greater Courage",
+			"name": "汹涌勇气之灰烬指环",
+			"source": "ICC",
+			"_copy": {
+				"ENG_name": "Ashen Band of Courage",
+				"name": "勇气之灰烬指环",
+				"source": "ICC",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": {
+							"regex": "^佩戴这枚指环时，"
+						},
+						"items": "佩戴这枚指环时，你为避免或结束{@condition 魅惑|XPHB}和{@condition 恐慌|XPHB}状态而进行的豁免检定具有{@variantrule 优势|XPHB}。此外，你的{@variantrule 护甲等级|XPHB}获得 +1 加值。"
+					}
+				},
+				"_preserve": {
+					"page": true
+				}
+			},
+			"rarity": "rare",
+			"reqAttune": "由拥有灰烬审判军声望值 10+ 的角色",
+			"bonusAc": "+1"
+		},
+		{
+			"ENG_name": "Ashen Band of Greater Destruction",
+			"name": "汹涌毁灭之灰烬指环",
+			"source": "ICC",
+			"_copy": {
+				"ENG_name": "Ashen Band of Destruction",
+				"name": "毁灭之灰烬指环",
+				"source": "ICC",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": {
+							"regex": "^佩戴这枚指环时，"
+						},
+						"items": "佩戴这枚指环时，你的法术攻击检定获得 +2 加值，你的法术豁免 DC 提升 2。"
+					}
+				},
+				"_preserve": {
+					"page": true
+				}
+			},
+			"rarity": "rare",
+			"reqAttune": "由拥有灰烬审判军声望值 10+ 的角色",
+			"bonusSpellAttack": "+2",
+			"bonusSpellSaveDc": "+2"
+		},
+		{
+			"ENG_name": "Ashen Band of Greater Might",
+			"name": "汹涌力量之灰烬指环",
+			"source": "ICC",
+			"_copy": {
+				"ENG_name": "Ashen Band of Might",
+				"name": "力量之灰烬指环",
+				"source": "ICC",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": {
+							"regex": "^佩戴这枚指环时，"
+						},
+						"items": "佩戴这枚指环时，你的近战武器攻击伤害掷骰获得 +1 加值。此外，你的力量为 19。若你在没有此属性时力量已为 19 或更高，则此属性不产生效果。"
+					}
+				},
+				"_preserve": {
+					"page": true
+				}
+			},
+			"rarity": "rare",
+			"reqAttune": "由拥有灰烬审判军声望值 10+ 的角色",
+			"ability": {
+				"static": {
+					"str": 19
+				}
+			}
+		},
+		{
+			"ENG_name": "Ashen Band of Greater Vengeance",
+			"name": "汹涌复仇之灰烬指环",
+			"source": "ICC",
+			"_copy": {
+				"ENG_name": "Ashen Band of Vengeance",
+				"name": "复仇之灰烬指环",
+				"source": "ICC",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": {
+							"regex": "^佩戴这枚指环时，"
+						},
+						"items": "佩戴这枚指环时，你进行远程武器攻击检定时无视{@variantrule 掩护|XPHB|半身掩护}，你的远程武器伤害掷骰获得 +2 加值。此外，以远程武器在长射程进行攻击不会使你的攻击检定具有{@variantrule 劣势|XPHB}。"
+					}
+				},
+				"_preserve": {
+					"page": true
+				}
+			},
+			"rarity": "rare",
+			"reqAttune": "由拥有灰烬审判军声望值 10+ 的角色"
+		},
+		{
+			"ENG_name": "Ashen Band of Greater Wisdom",
+			"name": "汹涌智慧之灰烬指环",
+			"source": "ICC",
+			"_copy": {
+				"ENG_name": "Ashen Band of Wisdom",
+				"name": "智慧之灰烬指环",
+				"source": "ICC",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": {
+							"regex": "^佩戴这枚指环时，"
+						},
+						"items": "佩戴这枚指环时，你在为回复自己或其他生物{@variantrule 生命值|XPHB}而掷的骰上掷出的每个 1 都可视为 2。此外，每当你创造的效应为某个生物回复{@variantrule 生命值|XPHB}时，你可以选择距该生物 30 尺内的另一个生物，令其也回复该数量一半的{@variantrule 生命值|XPHB}（向下取整）。"
+					}
+				},
+				"_preserve": {
+					"page": true
+				}
+			},
+			"rarity": "rare",
+			"reqAttune": "由拥有灰烬审判军声望值 10+ 的角色"
+		},
+		{
+			"ENG_name": "Ashen Band of Might",
+			"name": "力量之灰烬指环",
+			"type": "RG|XDMG",
+			"source": "ICC",
+			"page": 71,
+			"rarity": "uncommon",
+			"reqAttune": "由拥有灰烬审判军声望值 3+ 的角色",
+			"bonusWeaponDamage": "+1",
+			"entries": [
+				"这枚金属指环饰有风格化的头盔图案，紫色宝石构成护鼻与冠饰。指环内侧印着忏悔者欧姆斯的锻印\u2014\u2014一个风格化的字母 O。",
+				"佩戴这枚指环时，你的近战武器攻击伤害掷骰获得 +1 加值。"
+			]
+		},
+		{
+			"ENG_name": "Ashen Band of Unmatched Courage",
+			"name": "无上勇气之灰烬指环",
+			"source": "ICC",
+			"_copy": {
+				"ENG_name": "Ashen Band of Courage",
+				"name": "勇气之灰烬指环",
+				"source": "ICC",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": {
+							"regex": "^佩戴这枚指环时，"
+						},
+						"items": "佩戴这枚指环时，你为避免或结束{@condition 魅惑|XPHB}和{@condition 恐慌|XPHB}状态而进行的豁免检定具有{@variantrule 优势|XPHB}，且你的{@variantrule 护甲等级|XPHB}获得 +1 加值。此外，你的豁免检定获得 +1 加值。"
+					}
+				},
+				"_preserve": {
+					"page": true
+				}
+			},
+			"rarity": "very rare",
+			"reqAttune": "由拥有灰烬审判军声望值 25+ 的角色",
+			"bonusAc": "+1",
+			"bonusSavingThrow": "+1"
+		},
+		{
+			"ENG_name": "Ashen Band of Unmatched Destruction",
+			"name": "无上毁灭之灰烬指环",
+			"source": "ICC",
+			"_copy": {
+				"ENG_name": "Ashen Band of Destruction",
+				"name": "毁灭之灰烬指环",
+				"source": "ICC",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": {
+							"regex": "^佩戴这枚指环时，"
+						},
+						"items": "佩戴这枚指环时，你的法术攻击检定获得 +3 加值，你的法术豁免 DC 提升 3。此外，你施展法术时在伤害骰上掷出的每个 1 都可视为 2。"
+					}
+				},
+				"_preserve": {
+					"page": true
+				}
+			},
+			"rarity": "very rare",
+			"reqAttune": "由拥有灰烬审判军声望值 25+ 的角色",
+			"bonusSpellAttack": "+3",
+			"bonusSpellSaveDc": "+3"
+		},
+		{
+			"ENG_name": "Ashen Band of Unmatched Might",
+			"name": "无上力量之灰烬指环",
+			"source": "ICC",
+			"_copy": {
+				"ENG_name": "Ashen Band of Might",
+				"name": "力量之灰烬指环",
+				"source": "ICC",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": {
+							"regex": "^佩戴这枚指环时，"
+						},
+						"items": "佩戴这枚指环时，你的近战武器攻击伤害掷骰获得 +1 加值，且你在近战武器的伤害骰上掷出的每个 1 都可视为 2。此外，你的力量为 21。若你在没有此属性时力量已为 21 或更高，则此属性不产生效果。"
+					}
+				},
+				"_preserve": {
+					"page": true
+				}
+			},
+			"rarity": "very rare",
+			"reqAttune": "由拥有灰烬审判军声望值 25+ 的角色",
+			"ability": {
+				"static": {
+					"str": 21
+				}
+			}
+		},
+		{
+			"ENG_name": "Ashen Band of Unmatched Vengeance",
+			"name": "无上复仇之灰烬指环",
+			"source": "ICC",
+			"_copy": {
+				"ENG_name": "Ashen Band of Vengeance",
+				"name": "复仇之灰烬指环",
+				"source": "ICC",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": {
+							"regex": "^佩戴这枚指环时，"
+						},
+						"items": "佩戴这枚指环时，你进行远程武器攻击检定时无视{@variantrule 掩护|XPHB|半身掩护}，你的远程武器伤害掷骰获得 +2 加值，且以远程武器在长射程进行攻击不会使你的攻击检定具有{@variantrule 劣势|XPHB}。此外，你进行远程攻击检定时无视{@variantrule 掩护|XPHB|四分之三掩护}，你的远程武器攻击的最大射程翻倍。"
+					}
+				},
+				"_preserve": {
+					"page": true
+				}
+			},
+			"rarity": "very rare",
+			"reqAttune": "由拥有灰烬审判军声望值 25+ 的角色"
+		},
+		{
+			"ENG_name": "Ashen Band of Unmatched Wisdom",
+			"name": "无上智慧之灰烬指环",
+			"source": "ICC",
+			"_copy": {
+				"ENG_name": "Ashen Band of Wisdom",
+				"name": "智慧之灰烬指环",
+				"source": "ICC",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": {
+							"regex": "^佩戴这枚指环时，"
+						},
+						"items": "佩戴这枚指环时，你在为回复自己或其他生物{@variantrule 生命值|XPHB}而掷的骰上掷出的每个 1 都可视为 2。此外，每当你创造的效应为某个生物回复{@variantrule 生命值|XPHB}时，你可以选择距该生物 30 尺内的另一个生物，令其也回复该数量一半的{@variantrule 生命值|XPHB}（向下取整）。当你施展一个施法距离为触碰且无需攻击检定的法术时，你可以将该法术的施法距离提升至 30 尺。"
+					}
+				},
+				"_preserve": {
+					"page": true
+				}
+			},
+			"rarity": "very rare",
+			"reqAttune": "由拥有灰烬审判军声望值 25+ 的角色"
+		},
+		{
+			"ENG_name": "Ashen Band of Vengeance",
+			"name": "复仇之灰烬指环",
+			"type": "RG|XDMG",
+			"source": "ICC",
+			"page": 72,
+			"rarity": "uncommon",
+			"reqAttune": "由拥有灰烬审判军声望值 3+ 的角色",
+			"bonusWeaponDamage": "+2",
+			"entries": [
+				"这枚金属指环饰有风格化的头盔图案，深蓝色宝石构成护鼻与冠饰。指环内侧印着忏悔者欧姆斯的锻印\u2014\u2014一个风格化的字母 O。",
+				"佩戴这枚指环时，你进行远程武器攻击检定时无视{@variantrule 掩护|XPHB|半身掩护}，你的远程武器伤害掷骰获得 +2 加值。"
+			]
+		},
+		{
+			"ENG_name": "Ashen Band of Wisdom",
+			"name": "智慧之灰烬指环",
+			"type": "RG|XDMG",
+			"source": "ICC",
+			"page": 72,
+			"rarity": "uncommon",
+			"reqAttune": "由拥有灰烬审判军声望值 3+ 的角色",
+			"entries": [
+				"这枚金属指环饰有椭圆图案，形似一只眼睛，中央镶着一颗莹亮的绿松石。指环内侧印着忏悔者欧姆斯的锻印\u2014\u2014一个风格化的字母 O。",
+				"佩戴这枚指环时，你在为回复自己或其他生物{@variantrule 生命值|XPHB}而掷的骰上掷出的每个 1 都可视为 2。"
 			]
 		},
 		{
@@ -3866,6 +4523,19 @@
 				"回返真言"
 			],
 			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Aviana's Feather",
+			"name": "阿维亚娜之羽",
+			"source": "WoW",
+			"page": 107,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"在与这片金色羽毛同调期间，你可以采取{@action 魔法|XPHB}动作，让背后生出一对发光的金色羽翼。羽翼使你获得 80 尺的{@variantrule 飞行速度|XPHB}，且当你飞离某生物的触及范围时，它对你发动的{@action 借机攻击|XPHB}的攻击检定具有{@variantrule 劣势|XPHB}。若你在长有羽翼时坠落，你将以每轮 60 尺的速度缓缓下落，直到落地。",
+				"羽翼持续存在，直到你以{@action 魔法|XPHB}动作提前结束该效应，或你的{@variantrule 同调|XPHB}结束。若羽翼消失时你仍在空中，你将坠落。"
+			]
 		},
 		{
 			"ENG_name": "Axe Beak",
@@ -4619,6 +5289,9 @@
 			"lootTables": [
 				"魔法物品表C"
 			],
+			"miscTags": [
+				"CNS"
+			],
 			"hasFluffImages": true,
 			"translator": "不全书"
 		},
@@ -4700,6 +5373,9 @@
 			"lootTables": [
 				"奥秘 - 珍稀|XDMG",
 				"器具 - 珍稀|XDMG"
+			],
+			"miscTags": [
+				"CNS"
 			],
 			"hasFluffImages": true,
 			"translator": "不全书"
@@ -6034,6 +6710,25 @@
 			"translator": "不全书"
 		},
 		{
+			"ENG_name": "Bauble of True Blood",
+			"name": "纯血珠饰",
+			"source": "ICC",
+			"page": 72,
+			"rarity": "very rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6}",
+			"charges": 9,
+			"entries": [
+				"这条项链上的红色坠饰拥有 9 点充能，并在每天黎明恢复{@dice 1d6}点已消耗的充能。你在结束{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}时，也可以消耗{@variantrule 生命值骰|XPHB}来补充其充能，每消耗一颗{@variantrule 生命值骰|XPHB|生命值骰}提供 1 点充能。",
+				"你可以消耗任意数量的充能，从坠饰中施展{@spell 疗伤术|XPHB}，消耗的充能数量决定法术的环阶（施展 9 环法术最多需要 9 点充能）。"
+			],
+			"attachedSpells": [
+				"疗伤术|xphb"
+			]
+		},
+		{
 			"ENG_name": "Bead of Force",
 			"name": "力场珠",
 			"source": "DMG",
@@ -6095,6 +6790,7 @@
 			"miscTags": [
 				"CNS"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -6120,6 +6816,7 @@
 				"CF/W",
 				"CNS"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -6162,6 +6859,7 @@
 			"miscTags": [
 				"CNS"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -6752,6 +7450,7 @@
 			"lootTables": [
 				"魔法物品表H"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -6775,6 +7474,7 @@
 			"lootTables": [
 				"武备 - 极珍稀|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -6807,6 +7507,7 @@
 			"lootTables": [
 				"魔法物品表G"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -6833,6 +7534,7 @@
 			"lootTables": [
 				"武备 - 珍稀|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -6937,6 +7639,7 @@
 			"lootTables": [
 				"武备 - 传说|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -8330,6 +9033,31 @@
 			"translator": "不全书"
 		},
 		{
+			"ENG_name": "Bloodvenom Blade",
+			"name": "血毒长剑",
+			"type": "M|XPHB",
+			"source": "ICC",
+			"page": 72,
+			"baseItem": "长剑|xphb",
+			"rarity": "legendary",
+			"reqAttune": true,
+			"weight": 3,
+			"weaponCategory": "martial",
+			"property": [
+				"V|XPHB"
+			],
+			"mastery": [
+				"削弱|XPHB"
+			],
+			"dmg1": "1d8",
+			"dmgType": "S",
+			"dmg2": "1d10",
+			"bonusWeapon": "+3",
+			"entries": [
+				"你用这把魔法武器进行的攻击检定和伤害掷骰获得 +3 加值。此外，它对被其命中的任何生物额外造成{@damage 2d6}点毒素伤害，且该生物处于{@condition 中毒|XPHB}状态，直到你的下个回合开始。"
+			]
+		},
+		{
 			"ENG_name": "Blue Chromatic Rose",
 			"name": "蓝彩玫瑰",
 			"source": "WBtW",
@@ -9332,6 +10060,7 @@
 			"lootTables": [
 				"器具 - 普通|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -9383,7 +10112,8 @@
 			},
 			"lootTables": [
 				"魔法物品表G"
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Boots of Levitation",
@@ -9409,6 +10139,7 @@
 			"lootTables": [
 				"器具 - 珍稀|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -11099,6 +11830,11 @@
 			"page": 229,
 			"srd52": true,
 			"basicRules2024": true,
+			"otherSources": [
+				{
+					"source": "WoW"
+				}
+			],
 			"rarity": "none",
 			"value": 5000,
 			"carryingCapacity": 450,
@@ -11408,6 +12144,7 @@
 				"奥秘 - 普通|XDMG",
 				"器具 - 普通|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -11756,7 +12493,8 @@
 			"entries": [
 				"你可以用一个动作说出飞毯的命令语使其悬停和飞行。只要你位于飞毯周围30尺内，它就会按照你口述的方向移动。",
 				"一张3尺×5尺的飞毯可以承载最多200磅重物，并以80尺的飞行速度飞行。飞毯最多可以承载两倍于此的重量，但如果承载超过正常容量，它的飞行速度将减半。"
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Carpet of Flying, 3 ft. × 5 ft.",
@@ -11771,6 +12509,7 @@
 				"你可以用一个{@action 魔法|XPHB}动作，说出飞毯的命令词来让它起飞或悬停。只要你在飞毯周围30尺内，它就会按照你的指示移动。",
 				"一块3英尺×5英尺的地毯可以承载最多200磅的重量，并以80英尺的速度飞行。飞毯的载重上限为正常载重的两倍，但超过正常载重时飞毯的{@variantrule 飞行速度|XPHB}减半。"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -11791,7 +12530,8 @@
 			"entries": [
 				"你可以用一个动作说出飞毯的命令语使其悬停和飞行。只要你位于飞毯周围30尺内，它就会按照你口述的方向移动。",
 				"一张4尺×6尺的飞毯可以承载最多400磅重物，并以60尺的飞行速度飞行。飞毯的载重上限为表中数值的两倍，但超过正常载重时飞毯的飞行速度减半。"
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Carpet of Flying, 4 ft. × 6 ft.",
@@ -11806,6 +12546,7 @@
 				"你可以用一个{@action 魔法|XPHB}动作，说出飞毯的命令词来让它起飞或悬停。只要你在飞毯周围30尺内，它就会按照你的指示移动。",
 				"一块4英尺×6英尺的地毯可以承载最多400磅的重量，飞行速度为60英尺。飞毯的载重上限为正常载重的两倍，但超过正常载重时飞毯的{@variantrule 飞行速度|XPHB}减半。"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -11823,7 +12564,8 @@
 			"entries": [
 				"你可以用一个动作说出飞毯的命令语使其悬停和飞行。只要你位于飞毯周围30尺内，它就会按照你口述的方向移动。",
 				"一张5尺×7尺的飞毯可以承载最多600磅重物，并以40尺的飞行速度飞行。飞毯的载重上限为表中数值的两倍，但超过正常载重时飞毯的飞行速度减半。"
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Carpet of Flying, 5 ft. × 7 ft.",
@@ -11838,6 +12580,7 @@
 				"你可以用一个{@action 魔法|XPHB}动作，说出飞毯的命令词来让它起飞或悬停。只要你在飞毯周围30尺内，它就会按照你的指示移动。",
 				"一块5英尺×7英尺的地毯最多可以承载600磅，飞行速度为40英尺。飞毯的载重上限为正常载重的两倍，但超过正常载重时飞毯的{@variantrule 飞行速度|XPHB}减半。"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -11855,7 +12598,8 @@
 			"entries": [
 				"你可以用一个动作说出飞毯的命令语使其悬停和飞行。只要你位于飞毯周围30尺内，它就会按照你口述的方向移动。",
 				"一张6尺×9尺的飞毯可以承载最多800磅重物，并以30尺的飞行速度飞行。飞毯的载重上限为表中数值的两倍，但超过正常载重时飞毯的飞行速度减半。"
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Carpet of Flying, 6 ft. × 9 ft.",
@@ -11870,6 +12614,7 @@
 				"你可以用一个{@action 魔法|XPHB}动作，说出飞毯的命令词来让它起飞或悬停。只要你在飞毯周围30尺内，它就会按照你的指示移动。",
 				"一张6英尺×9英尺的地毯可以携带最多800磅的重量，飞行速度为30英尺。飞毯的载重上限为正常载重的两倍，但超过正常载重时飞毯的{@variantrule 飞行速度|XPHB}减半。"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -12242,6 +12987,18 @@
 			],
 			"hasFluffImages": true,
 			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Cenarion War Hippogryph",
+			"name": "塞纳里奥作战角鹰兽",
+			"type": "MNT|XPHB",
+			"source": "WoW",
+			"rarity": "none",
+			"value": 200000,
+			"entries": [
+				"使用{@creature 骏鹰|XMM}的属性数据块。",
+				"{@b 先决条件：}在{@book 塞纳里奥议会|WoW|4|塞纳里奥议会声望福利}声望 50+。若你在塞纳里奥议会的声望值跌破 50，你的坐骑将不再听从你的命令。"
+			]
 		},
 		{
 			"ENG_name": "Censer of Controlling Air Elementals",
@@ -12733,6 +13490,9 @@
 				"奥秘 - 珍稀|XDMG",
 				"器具 - 珍稀|XDMG"
 			],
+			"miscTags": [
+				"CNS"
+			],
 			"hasFluffImages": true,
 			"translator": "不全书"
 		},
@@ -13198,7 +13958,8 @@
 			},
 			"lootTables": [
 				"魔法物品表H"
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Cloak of Arachnida",
@@ -13263,6 +14024,7 @@
 			"lootTables": [
 				"奥秘 - 极珍稀|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -13623,7 +14385,8 @@
 			},
 			"lootTables": [
 				"魔法物品表G"
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Cloak of the Bat",
@@ -13652,6 +14415,7 @@
 			"lootTables": [
 				"奥秘 - 珍稀|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -14450,6 +15214,54 @@
 			"translator": "不全书"
 		},
 		{
+			"ENG_name": "Corrupted Ashbringer",
+			"name": "腐化的灰烬使者",
+			"source": "WoW",
+			"_copy": {
+				"ENG_name": "Ashbringer",
+				"name": "灰烬使者",
+				"source": "WoW",
+				"_mod": {
+					"entries": [
+						{
+							"mode": "removeArr",
+							"names": [
+								"灰烬觉醒（仅真形态）"
+							]
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "智能",
+							"items": {
+								"ENG_name": "Sentience",
+								"name": "智能",
+								"type": "entries",
+								"entries": [
+									"灰烬使者是一件具有智能的武器，智力为14、感知为17、魅力为17。在腐化形态下，其阵营为守序邪恶。它具有听觉和120尺范围的{@sense 黑暗视觉|XPHB}。",
+									"这把武器以心灵感应与持用者沟通，会说通用语和矮人语。"
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "个性",
+							"items": {
+								"ENG_name": "Personality",
+								"name": "个性",
+								"type": "entries",
+								"entries": [
+									"灰烬使者的声音听起来如同微弱而断续的低语。在腐化形态下，灰烬使者意图动摇人们对圣光的信仰，并摧毁正义之士。若持有者与灰烬使者当前形态的目标不一致，便会产生冲突。"
+								]
+							}
+						}
+					]
+				},
+				"_preserve": {
+					"page": true
+				}
+			}
+		},
+		{
 			"ENG_name": "Costume",
 			"name": "戏服",
 			"type": "G|XPHB",
@@ -15075,6 +15887,28 @@
 			]
 		},
 		{
+			"ENG_name": "Crown of the Ogre King",
+			"name": "食人魔王之冠",
+			"source": "WoW",
+			"page": 107,
+			"rarity": "very rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"curse": true,
+			"entries": [
+				"戴着这顶王冠时，你可以采取{@action 魔法|XPHB}动作，打出一声 300 尺内皆可闻见的惊天响嗝。以你为源 20 尺{@variantrule 锥状 [效应区域]|XPHB|锥状}内的每个生物进行{@dc 17}力量豁免。豁免失败的生物被推离你至多 20 尺并倒地受{@condition 倒地|XPHB}状态。",
+				{
+					"ENG_name": "Cursed",
+					"name": "诅咒",
+					"type": "entries",
+					"entries": [
+						"这件物品受到诅咒。同调它便会诅咒你，直到你成为{@spell 移除诅咒|XPHB}法术或类似魔法的目标。摘下王冠并不能解除你身上的诅咒。受诅咒期间，你远比平常饥饿。你彻底丢光餐桌礼仪，每日所需的食物增至三倍。"
+					]
+				}
+			],
+			"hasFluffImages": true
+		},
+		{
 			"ENG_name": "Crown of the Wrath Bringer",
 			"name": "降怒王冠",
 			"source": "BGG",
@@ -15320,7 +16154,8 @@
 			],
 			"lootTables": [
 				"魔法物品表H"
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Crystal Ball",
@@ -15345,6 +16180,7 @@
 			"lootTables": [
 				"奥秘 - 极珍稀|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -17150,7 +17986,11 @@
 			],
 			"seeAlsoDeck": [
 				"幻象牌组"
-			]
+			],
+			"miscTags": [
+				"CNS"
+			],
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Deck of Illusions",
@@ -17318,6 +18158,10 @@
 			"seeAlsoDeck": [
 				"幻象牌组|XDMG"
 			],
+			"miscTags": [
+				"CNS"
+			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -20201,6 +21045,43 @@
 			"hasFluffImages": true
 		},
 		{
+			"ENG_name": "Defias Leather",
+			"name": "迪菲亚皮甲",
+			"type": "LA|XPHB",
+			"source": "WoW",
+			"page": 108,
+			"baseItem": "皮甲|xphb",
+			"rarity": "rare",
+			"weight": 10,
+			"ac": 11,
+			"entries": [
+				"迪菲亚兄弟会的精英成员穿戴这套护甲，以纪念该组织当年的石匠创始人。穿着这套护甲时，你获得以下收益。",
+				{
+					"ENG_name": "Mason's Camouflage",
+					"name": "石匠伪装",
+					"type": "entries",
+					"entries": [
+						"你在躲藏于石制物体和建筑后时进行的敏捷（{@skill 隐匿|XPHB}）检定具有{@variantrule 优势|XPHB}。"
+					]
+				},
+				{
+					"ENG_name": "Meld into Stone",
+					"name": "融身入石",
+					"type": "entries",
+					"entries": [
+						"你可以从护甲中施展{@spell 融身入石|XPHB}。一旦护甲被用于施展此法术，在下一个黎明到来之前，它不能再次用于施展该法术。"
+					]
+				}
+			],
+			"attachedSpells": {
+				"daily": {
+					"1e": [
+						"融身入石|xphb"
+					]
+				}
+			}
+		},
+		{
 			"ENG_name": "Dekella, Bident of Thassa",
 			"name": "戴刻拉,塔萨之双叉戟",
 			"type": "M",
@@ -21301,6 +22182,19 @@
 			"translator": "不全书"
 		},
 		{
+			"ENG_name": "Dire Wolf",
+			"name": "恐狼",
+			"type": "MNT|XPHB",
+			"source": "WoW",
+			"rarity": "none",
+			"value": 75000,
+			"carryingCapacity": 510,
+			"entries": [
+				"使用{@creature 恐狼|XMM}的属性数据块。",
+				"{@b 先决条件：}在{@book 奥格瑞玛|WoW|4|奥格瑞玛声望福利}声望 10+。"
+			]
+		},
+		{
 			"ENG_name": "Disguise Kit",
 			"name": "易容工具",
 			"type": "T",
@@ -21762,6 +22656,122 @@
 			"translator": "不全书"
 		},
 		{
+			"ENG_name": "Doomhammer",
+			"name": "毁灭之锤",
+			"type": "M|XPHB",
+			"source": "WoW",
+			"page": 108,
+			"baseItem": "战锤|xphb",
+			"rarity": "artifact",
+			"reqAttune": "被野蛮人",
+			"reqAttuneTags": [
+				{
+					"class": "野蛮人"
+				}
+			],
+			"weight": 5,
+			"weaponCategory": "martial",
+			"property": [
+				"V|XPHB"
+			],
+			"mastery": [
+				"推离|XPHB"
+			],
+			"dmg1": "1d8",
+			"dmgType": "B",
+			"dmg2": "1d10",
+			"bonusWeapon": "+3",
+			"entries": [
+				"很久以前，在德拉诺世界，一位名叫格尔纳的兽人着手打造一件能助族人对抗食人魔之敌的武器。他在一处元素熔岩池的烈焰中锻成了一把可怖的战锤。这柄得名\"毁灭之锤\"的武器在黑石兽人中世代相传。一则古老预言有言：此锤终有一日会脱离黑石一脉\u2014当兽人萨满{@creature 萨尔|WoW}证明自己是配得上这把武器的持有者时，预言应验了。",
+				{
+					"ENG_name": "Magic Weapon",
+					"name": "魔化武器",
+					"type": "entries",
+					"entries": [
+						"你用这把魔法武器进行的攻击检定和伤害检定获得 +3 加值。命中时，它额外造成{@damage 1d8}点闪电伤害。"
+					]
+				},
+				{
+					"ENG_name": "Gelnar's Gifts",
+					"name": "格尔纳的馈赠",
+					"type": "entries",
+					"entries": [
+						"手持毁灭之锤时，你获得以下收益：",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"ENG_name": "Doom Winds",
+									"name": "毁灭之风",
+									"type": "item",
+									"entries": [
+										"你的怒火携着风暴般毫无羁绊的势头。在你的{@classFeature 狂暴|野蛮人|XPHB|1|XPHB}激活期间，你的{@variantrule 速度|XPHB}翻倍，且你在自己的每个回合可以额外采取一次{@action 攻击|XPHB}动作（仅一次攻击）。"
+									]
+								},
+								{
+									"ENG_name": "Lava Stride",
+									"name": "熔岩漫步",
+									"type": "item",
+									"entries": [
+										"你不会受到熔岩伤害，可以在熔岩上行走，如同行走在坚实地面。"
+									]
+								},
+								{
+									"ENG_name": "Lightning Rod",
+									"name": "避雷针",
+									"type": "item",
+									"entries": [
+										"当距你 60 尺内你能看见的某生物将受到闪电伤害时，你可以采取{@variantrule 反应|XPHB}将该伤害减为 0。"
+									]
+								},
+								{
+									"ENG_name": "Storm's Passage",
+									"name": "风暴通道",
+									"type": "item",
+									"entries": [
+										"你可以从这把武器施展{@spell 御风而行|XPHB}。一旦武器被用于施展此法术，在下一个黎明到来之前，它不能再次用于施展该法术。"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Random Properties",
+					"name": "随机词条",
+					"type": "entries",
+					"entries": [
+						"毁灭之锤具有以下随机属性：",
+						{
+							"type": "list",
+							"items": [
+								"2项{@table 神器词条; 次要增益词条|XDMG|次要增益}词条",
+								"1项{@table 神器词条; 主要增益词条|XDMG|主要增益}词条",
+								"1项{@table 神器词条; 次要减益词条|XDMG|次要减益}词条"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Destroying Doomhammer",
+					"name": "摧毁毁灭之锤",
+					"type": "entries",
+					"entries": [
+						"要摧毁毁灭之锤，必须由格尔纳的后裔将武器掷入德拉诺毁灭后的残躯\u2014外域\u2014之中一场风暴的风眼。"
+					]
+				}
+			],
+			"attachedSpells": {
+				"daily": {
+					"1e": [
+						"御风而行|xphb"
+					]
+				}
+			},
+			"hasFluffImages": true
+		},
+		{
 			"ENG_name": "Dowsing Dagger",
 			"name": "探水匕首",
 			"type": "OTH",
@@ -21769,7 +22779,7 @@
 			"page": 19,
 			"rarity": "unknown (magic)",
 			"entries": [
-				"由河传者打造的弯曲玉质刀刃，这把{@item +1 匕首}能探测到持有者周围200尺内的淡水。"
+				"由川流使打造的弯曲玉质刀刃，这把{@item +1 匕首}能探测到持有者周围200尺内的淡水。"
 			]
 		},
 		{
@@ -21844,6 +22854,11 @@
 			"page": 229,
 			"srd52": true,
 			"basicRules2024": true,
+			"otherSources": [
+				{
+					"source": "WoW"
+				}
+			],
 			"rarity": "none",
 			"value": 5000,
 			"carryingCapacity": 540,
@@ -22689,7 +23704,11 @@
 			],
 			"lootTables": [
 				"魔法物品表B"
-			]
+			],
+			"miscTags": [
+				"CNS"
+			],
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Dust of Dryness",
@@ -22708,6 +23727,10 @@
 				"奥秘 - 非普通|XDMG",
 				"器具 - 非普通|XDMG"
 			],
+			"miscTags": [
+				"CNS"
+			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -22758,6 +23781,9 @@
 			"lootTables": [
 				"奥秘 - 非普通|XDMG",
 				"器具 - 非普通|XDMG"
+			],
+			"miscTags": [
+				"CNS"
 			],
 			"hasFluffImages": true,
 			"translator": "不全书"
@@ -23013,6 +24039,7 @@
 				"器具 - 普通|XDMG",
 				"圣物 - 普通|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -23283,6 +24310,9 @@
 			"lootTables": [
 				"奥秘 - 极珍稀|XDMG"
 			],
+			"miscTags": [
+				"CNS"
+			],
 			"hasFluffImages": true,
 			"translator": "不全书"
 		},
@@ -23438,6 +24468,19 @@
 			"rarity": "none",
 			"value": 50,
 			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Elekk",
+			"name": "雷象",
+			"type": "MNT|XPHB",
+			"source": "WoW",
+			"rarity": "none",
+			"value": 40000,
+			"carryingCapacity": 510,
+			"entries": [
+				"使用{@creature 巨山羊|XMM}的属性数据块。",
+				"{@b 先决条件：}在{@book 埃索达|WoW|4|埃索达声望福利}声望 10+。"
+			]
 		},
 		{
 			"ENG_name": "Elemental Essence Shard",
@@ -23663,6 +24706,9 @@
 			"entries": [
 				"这枚宝石蕴含了一道元素能量的微尘。你可以使用一个{@action 操作|XPHB}动作来打破宝石，随后宝石便会失去魔法，并召唤出一只{@creature 气元素|XMM}。元素会出现在距离被打破的宝石最近的未被占据的空间、理解你所说的语言、服从你的命令、使用你的{@variantrule 先攻|XPHB}并在你之后立即执行其回合。元素会在1小时后、它死亡时、你用一个{@variantrule 附赠动作|XPHB}解消时消失。"
 			],
+			"miscTags": [
+				"CNS"
+			],
 			"hasFluffImages": true,
 			"translator": "不全书"
 		},
@@ -23711,6 +24757,9 @@
 			"entries": [
 				"这枚宝石蕴含了一道元素能量的微尘。你可以使用一个{@action 操作|XPHB}动作来打破宝石，随后宝石便会失去魔法，并召唤出一只{@creature 水元素|XMM}。元素会出现在距离被打破的宝石最近的未被占据的空间、理解你所说的语言、服从你的命令、使用你的{@variantrule 先攻|XPHB}并在你之后立即执行其回合。元素会在1小时后、它死亡时、你用一个{@variantrule 附赠动作|XPHB}解消时消失。"
 			],
+			"miscTags": [
+				"CNS"
+			],
 			"hasFluffImages": true,
 			"translator": "不全书"
 		},
@@ -23754,6 +24803,9 @@
 			"wondrous": true,
 			"entries": [
 				"这枚宝石蕴含了一道元素能量的微尘。你可以使用一个{@action 操作|XPHB}动作来打破宝石，随后宝石便会失去魔法，并召唤出一只{@creature 火元素|XMM}。元素会出现在距离被打破的宝石最近的未被占据的空间、理解你所说的语言、服从你的命令、使用你的{@variantrule 先攻|XPHB}并在你之后立即执行其回合。元素会在1小时后、它死亡时、你用一个{@variantrule 附赠动作|XPHB}解消时消失。"
+			],
+			"miscTags": [
+				"CNS"
 			],
 			"hasFluffImages": true,
 			"translator": "不全书"
@@ -23801,6 +24853,9 @@
 			"wondrous": true,
 			"entries": [
 				"这枚宝石蕴含了一道元素能量的微尘。你可以使用一个{@action 操作|XPHB}动作来打破宝石，随后宝石便会失去魔法，并召唤出一只{@creature 土元素|XMM}。元素会出现在距离被打破的宝石最近的未被占据的空间、理解你所说的语言、服从你的命令、使用你的{@variantrule 先攻|XPHB}并在你之后立即执行其回合。元素会在1小时后、它死亡时、你用一个{@variantrule 附赠动作|XPHB}解消时消失。"
+			],
+			"miscTags": [
+				"CNS"
 			],
 			"hasFluffImages": true,
 			"translator": "不全书"
@@ -23891,6 +24946,7 @@
 			"miscTags": [
 				"CNS"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -24261,6 +25317,7 @@
 			"lootTables": [
 				"奥秘 - 普通|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -25101,6 +26158,18 @@
 			"translator": "不全书"
 		},
 		{
+			"ENG_name": "Experimental Goblin Jetpack",
+			"name": "实验型地精喷气背包",
+			"source": "WoW",
+			"page": 108,
+			"rarity": "rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"背着这个背包时，你可以采取{@action 魔法|XPHB}动作点燃它的喷射引擎。引擎持续运作 1 小时，或直到你以{@action 魔法|XPHB}动作提前结束该效应。引擎使你获得 60 尺的{@variantrule 飞行速度|XPHB}。若引擎停止运作时你仍在空中，你将坠落。引擎停止后，你必须等待{@dice 1d12}小时才能再次使用。"
+			]
+		},
+		{
 			"ENG_name": "Explorer's Pack",
 			"name": "探索套组",
 			"type": "G",
@@ -25627,7 +26696,8 @@
 			],
 			"lootTables": [
 				"魔法物品表C"
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Eyes of Minute Seeing",
@@ -25648,6 +26718,7 @@
 				"奥秘 - 非普通|XDMG",
 				"器具 - 非普通|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -26556,6 +27627,27 @@
 			"capCargo": 100
 		},
 		{
+			"ENG_name": "Figurine of Wondrous Power (Jeweled Panther)",
+			"name": "奇妙雕像（镶宝石黑豹）",
+			"source": "WoW",
+			"page": 108,
+			"rarity": "rare",
+			"wondrous": true,
+			"entries": [
+				"{@item 异能塑像|XDMG}是小到可以装在口袋里的小雕塑。当你用一个{@action 魔法|XPHB}动作来将雕像扔到你周围60尺以内的某处时，它将变成一只活体生物（见下文对每种雕像的描述）。如果雕像被扔到的地方被其他生物或物件占据，或者周围的空间不足以容纳该雕像变成的生物，则它将不会变成生物。",
+				"雕像变成的生物对你和你的盟友态度为{@variantrule 友好【态度】|XPHB|友好}。它能听懂你的语言并会按你的口头命令行事，使用你的{@variantrule 先攻|XPHB}并在你回合结束后立即执行其回合。如果你不下达任何命令，则该生物会保护自己而不作其他动作。",
+				"生物存在的时间依雕像而不同。持续时间结束时，生物将变回异能塑像形态。当它的{@variantrule 生命值|XPHB}降至0，或是你在触碰它期间用一个{@action 魔法|XPHB}动作令其变回雕像时，它亦将提前变回雕像状态。变回雕像后，异能塑像的词条必须经过一段时间后才能再次启动（见下文描述）。",
+				{
+					"ENG_name": "Jeweled Panther (Rare)",
+					"name": "镶宝石黑豹（珍稀）",
+					"type": "entries",
+					"entries": [
+						"这尊雕像是一只由玉、玛瑙、红宝石、蓝宝石或日长石打造的黑豹。它可以变为一只大型{@creature 豹|XMM}，拥有 30 尺的{@variantrule 飞行速度|XPHB}，持续至多 12 小时，并可被骑乘为坐骑。一旦被使用，须经过 2 天才能再次使用。"
+					]
+				}
+			]
+		},
+		{
 			"ENG_name": "Figurine of Wondrous Power, Bronze Griffon",
 			"name": "异能塑像，青铜狮鹫",
 			"source": "DMG",
@@ -26585,7 +27677,8 @@
 			],
 			"lootTables": [
 				"魔法物品表G"
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Figurine of Wondrous Power, Bronze Griffon",
@@ -26612,6 +27705,7 @@
 			"lootTables": [
 				"奥秘 - 珍稀|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -26985,7 +28079,8 @@
 			],
 			"lootTables": [
 				"魔法物品表G"
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Figurine of Wondrous Power, Onyx Dog",
@@ -27015,6 +28110,7 @@
 			"lootTables": [
 				"奥秘 - 珍稀|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -27114,7 +28210,8 @@
 			],
 			"lootTables": [
 				"魔法物品表F"
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Figurine of Wondrous Power, Silver Raven",
@@ -27144,6 +28241,7 @@
 			"lootTables": [
 				"奥秘 - 非普通|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -27242,7 +28340,7 @@
 		},
 		{
 			"ENG_name": "Fine gold chain with fire opals (Legion of Dusk)",
-			"name": "镶有火蛋白石的纯金链条",
+			"name": "镶有火蛋白石的纯金链条（暮影军团）",
 			"type": "$A|DMG",
 			"source": "PSX",
 			"page": 25,
@@ -27494,6 +28592,21 @@
 			"translator": "不全书"
 		},
 		{
+			"ENG_name": "Flask of the Titans",
+			"name": "泰坦合剂",
+			"type": "P|XPHB",
+			"source": "WoW",
+			"page": 109,
+			"rarity": "very rare",
+			"entries": [
+				"喝下这瓶药剂时，你的{@variantrule 生命值|XPHB|生命值}上限与当前{@variantrule 生命值|XPHB}提高 30 点，持续 1 小时。",
+				"瓶中的金色液体尝起来像蜂蜜，闪耀着黎明的光辉。"
+			],
+			"miscTags": [
+				"CNS"
+			]
+		},
+		{
 			"ENG_name": "Flayer Slayer",
 			"name": "弑灵者",
 			"type": "M",
@@ -27738,6 +28851,25 @@
 			],
 			"seeAlsoVehicle": [
 				"飞鱼舰|AAG"
+			]
+		},
+		{
+			"ENG_name": "Flying Machine",
+			"name": "飞行器",
+			"type": "AIR|XPHB",
+			"source": "WoW",
+			"rarity": "none",
+			"crew": 1,
+			"vehAc": 19,
+			"vehHp": 27,
+			"vehSpeed": 4,
+			"capPassenger": 0,
+			"capCargo": 0.15,
+			"hasRefs": true,
+			"entries": [
+				"一架小型旋翼机，顶部有一具旋翼，两侧各装一台引擎，并以滑橇作为起落架。",
+				"{#itemEntry 动力载具|WoW}",
+				"飞行器无法购买；它必须由拥有专家级{@book 工程学|WoW|3|工程学}的角色制造。制造这台机器需要价值 2,000 GP 的资源。"
 			]
 		},
 		{
@@ -28030,6 +29162,17 @@
 			]
 		},
 		{
+			"ENG_name": "Fragment of Frozen Bone",
+			"name": "冻骨碎片",
+			"source": "ICC",
+			"page": 73,
+			"rarity": "very rare",
+			"wondrous": true,
+			"entries": [
+				"你可以采取{@action 魔法|XPHB}动作并以一个命令词，使这枚取自{@creature 玛洛加尔领主|ICC|玛洛加尔领主}遗骸的小小骨片，变形成玛洛加尔领主的微缩复制品，名为碎骨。碎骨依照《{@book 魔兽世界|WoW}》中的宠物规则，作为一头亡灵宠物侍奉你。它将保持变形状态，直到你用命令词将其遣散、它受到任何伤害，或你召唤另一个宠物。它偶尔会在你脚边绕圈时高喊\"白骨风暴！\""
+			]
+		},
+		{
 			"ENG_name": "Fragmentation Grenade",
 			"name": "破片榴弹",
 			"type": "EXP|DMG",
@@ -28126,6 +29269,122 @@
 			],
 			"miscTags": [
 				"TT"
+			]
+		},
+		{
+			"ENG_name": "Frostmourne",
+			"name": "霜之哀伤",
+			"type": "M|XPHB",
+			"source": "WoW",
+			"page": 109,
+			"baseItem": "巨剑|xphb",
+			"rarity": "artifact",
+			"reqAttune": true,
+			"weight": 6,
+			"weaponCategory": "martial",
+			"property": [
+				"H|XPHB",
+				"2H|XPHB"
+			],
+			"mastery": [
+				"擦掠|XPHB"
+			],
+			"dmg1": "2d6",
+			"dmgType": "S",
+			"bonusWeapon": "+3",
+			"entries": [
+				"统御符文缀满这把冰冷的哀伤之刃。典狱长\u2014暗影界的统治者之一\u2014最初想用霜之哀伤征服艾泽拉斯，而那份残忍的意图以一则预言的形式永远萦绕着这把剑：\"凡执此剑者，将掌永恒之力。正如利刃撕裂血肉，力量亦必灼伤灵魂。\"阿尔萨斯·米奈希尔第一个领会了预言的真意\u2014他因执掌此剑而失去灵魂，最终成为{@creature 巫妖王阿尔萨斯|WoW|巫妖王}。",
+				{
+					"ENG_name": "Magic Weapon",
+					"name": "魔化武器",
+					"type": "entries",
+					"entries": [
+						"你用这把魔法武器进行的攻击检定和伤害检定获得 +3 加值。命中时，它额外造成{@damage 2d12}点寒冷伤害。每当你以霜之哀伤将某生物的{@variantrule 生命值|XPHB}降至 0，该生物死亡，其灵魂被囚入剑中。在霜之哀伤被摧毁之前，该目标无法被复活。"
+					]
+				},
+				{
+					"ENG_name": "Pawn of the Lich King",
+					"name": "巫妖王的棋子",
+					"type": "entries",
+					"entries": [
+						"在你与霜之哀伤同调期间，巫妖王可以透过你的双眼视物、借你的双耳聆听，并隔着任何距离、甚至跨越位面以心灵感应与你交流。"
+					]
+				},
+				{
+					"ENG_name": "Prophecy of Frostmourne",
+					"name": "霜之哀伤的预言",
+					"type": "entries",
+					"entries": [
+						"当你同调霜之哀伤时，你的生物类型变为亡灵，阵营变为中立邪恶。即使你的{@variantrule 同调|XPHB}结束，这些改变仍会保留。"
+					]
+				},
+				{
+					"ENG_name": "Twisted Aura",
+					"name": "扭曲光环",
+					"type": "entries",
+					"entries": [
+						"如果你是圣武士，你在与霜之哀伤同调期间还获得以下收益：",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"ENG_name": "Marshal Undead",
+									"name": "不死统帅",
+									"type": "item",
+									"entries": [
+										"你{@classFeature 守护灵光|圣武士|XPHB|6|XPHB}内你选择的亡灵生物（不包括你）在攻击检定和豁免检定上具有{@variantrule 优势|XPHB}。"
+									]
+								},
+								{
+									"ENG_name": "Numb to Cold",
+									"name": "不畏严寒",
+									"type": "item",
+									"entries": [
+										"你{@classFeature 守护灵光|圣武士|XPHB|6|XPHB}内的盟友对寒冷伤害具有{@variantrule 免疫|XPHB}。"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Random Properties",
+					"name": "随机词条",
+					"type": "entries",
+					"entries": [
+						"霜之哀伤具有以下随机属性：",
+						{
+							"type": "list",
+							"items": [
+								"1项{@table 神器词条; 主要增益词条|XDMG|主要增益}词条",
+								"1项{@table 神器词条; 次要减益词条|XDMG|次要减益}词条",
+								"1项{@table 神器词条; 主要减益词条|XDMG|主要减益}词条"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Destroying Frostmourne",
+					"name": "摧毁霜之哀伤",
+					"type": "entries",
+					"entries": [
+						"若持用者被传奇之剑{@item 灰烬使者|WoW}所杀，霜之哀伤便会碎裂。只有奉典狱长之命锻成此武器的符文雕刻者，能用碎片重铸霜之哀伤。"
+					]
+				}
+			],
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Fuel",
+			"name": "燃料",
+			"type": "G|XPHB",
+			"source": "WoW",
+			"rarity": "none",
+			"weight": 10,
+			"value": 100,
+			"entries": [
+				"这种燃料可供一台载具行驶 8 小时。角色可以使用{@book 炼金术|WoW|3|炼金术}专业来制造燃料。"
 			]
 		},
 		{
@@ -28613,6 +29872,9 @@
 			"lootTables": [
 				"奥秘 - 非普通|XDMG"
 			],
+			"miscTags": [
+				"CNS"
+			],
 			"hasFluffImages": true,
 			"translator": "不全书"
 		},
@@ -28774,6 +30036,44 @@
 			]
 		},
 		{
+			"ENG_name": "Giant Goat",
+			"name": "巨山羊",
+			"type": "MNT|XPHB",
+			"source": "WoW",
+			"rarity": "none",
+			"value": 40000,
+			"carryingCapacity": 510,
+			"entries": [
+				"使用{@creature 巨山羊|XMM}的属性数据块。",
+				"{@b 先决条件：}在{@book 铁炉堡|WoW|4|铁炉堡声望福利}声望 10+。"
+			]
+		},
+		{
+			"ENG_name": "Giant Hyena",
+			"name": "巨鬣狗",
+			"type": "MNT|XPHB",
+			"source": "WoW",
+			"rarity": "none",
+			"value": 75000,
+			"carryingCapacity": 480,
+			"entries": [
+				"使用{@creature 巨鬣狗|XMM}的属性数据块。",
+				"{@b 先决条件：}在{@book 热砂港财团|WoW|4|Steamwheedle Cartel}声望 10+。"
+			]
+		},
+		{
+			"ENG_name": "Giant Seahorse",
+			"name": "巨海马",
+			"type": "MNT|XPHB",
+			"source": "WoW",
+			"rarity": "none",
+			"value": 100000,
+			"carryingCapacity": 450,
+			"entries": [
+				"使用{@creature 巨海马|XMM}的属性数据块。"
+			]
+		},
+		{
 			"ENG_name": "Giant Trinket",
 			"name": "巨人饰品",
 			"type": "G",
@@ -28884,7 +30184,8 @@
 			],
 			"lootTables": [
 				"魔法物品表G"
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Glamoured Studded Leather",
@@ -28905,6 +30206,7 @@
 			"lootTables": [
 				"器具 - 珍稀|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -29039,7 +30341,8 @@
 			],
 			"lootTables": [
 				"魔法物品表F"
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Gloves of Swimming and Climbing",
@@ -29060,6 +30363,7 @@
 			"lootTables": [
 				"器具 - 非普通|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -29186,6 +30490,28 @@
 			]
 		},
 		{
+			"ENG_name": "Gnomeregan Engineering Device",
+			"name": "诺莫瑞根工程装置",
+			"source": "WoW",
+			"_copy": {
+				"ENG_name": "Wand of Wonder",
+				"name": "惊异魔杖",
+				"source": "XDMG",
+				"_mod": {
+					"type": "remove",
+					"reqAttune": "remove",
+					"weight": "remove",
+					"recharge": "remove",
+					"rechargeAmount": "remove"
+				}
+			},
+			"wondrous": true,
+			"entries": [
+				"{@i 先决条件：诺莫瑞根声望 25+}",
+				"你可以在代表诺莫瑞根的领袖执行任务之前，向他们请求一台复杂的工程装置。你会收到一台功能如同{@item 惊异魔杖|XDMG}的机械装置，但它无法恢复充能，并在最后一发充能耗尽时会剧烈却无害地爆炸。该装置不需要同调，但只为你运作。"
+			]
+		},
+		{
 			"ENG_name": "Goat",
 			"name": "山羊",
 			"type": "TG",
@@ -29209,6 +30535,38 @@
 			"rarity": "none",
 			"value": 100,
 			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Goblin Jumper Cables",
+			"name": "地精起搏线",
+			"source": "WoW",
+			"page": 109,
+			"rarity": "uncommon",
+			"wondrous": true,
+			"entries": [
+				"以一个{@action 魔法|XPHB}动作，你可以把这些缆线接到一具尸体上，尝试令该生物复生。使用{@item 修补工具|XPHB}进行一次{@dc 15}智力（{@skill 奥秘|XPHB}）检定。检定成功时，只要该生物死亡不超过 1 分钟且并非死于衰老，它便会以 1 {@variantrule 生命值|XPHB|生命值}复活。检定失败时，你受{@damage 2d6}点闪电伤害。",
+				"一套地精起搏线一旦被使用，在下一个黎明到来之前不能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Goblin Trike",
+			"name": "地精三轮摩托",
+			"type": "VEH|XPHB",
+			"source": "WoW",
+			"rarity": "none",
+			"value": 40000,
+			"crew": 1,
+			"vehAc": 19,
+			"vehHp": 27,
+			"vehSpeed": 3,
+			"capPassenger": 0,
+			"capCargo": 0.3,
+			"hasRefs": true,
+			"entries": [
+				"一辆三轮机动车，配有豪华的木质镶板。",
+				"{#itemEntry 动力载具|WoW}",
+				"{@b 先决条件：}在任一地精财团声望 10+。"
+			]
 		},
 		{
 			"ENG_name": "Goggles of Night",
@@ -29887,7 +31245,7 @@
 						],
 						[
 							"4",
-							"蛋里有一瓶没有容器的{@item 山丘巨人之力药水||山丘巨人之力药水}。"
+							"蛋里有一瓶没有容器的{@item 山丘巨人之力药水||巨人力量药水（山丘巨人）}。"
 						],
 						[
 							"5",
@@ -30549,6 +31907,19 @@
 				"持续时间结束时，该生物恢复为符镇兵形态。当该生物生命值降至0时，或当你使用一个动作再次说出命令语并触及它时，它会提前恢复为符镇兵形态。当该生物恢复为符镇兵形态后，经过36小时才能再次变为生物形态。"
 			],
 			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Gryphon",
+			"name": "狮鹫",
+			"type": "MNT|XPHB",
+			"source": "WoW",
+			"rarity": "none",
+			"value": 200000,
+			"carryingCapacity": 540,
+			"entries": [
+				"使用{@creature 狮鹫|XMM}的属性数据块。",
+				"{@b 先决条件：}在{@book 联盟|WoW|4|联盟声望福利}声望 25+。"
+			]
 		},
 		{
 			"ENG_name": "Guardian Emblem",
@@ -31598,6 +32969,7 @@
 			"lootTables": [
 				"奥秘 - 极珍稀|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -31730,6 +33102,19 @@
 				}
 			],
 			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Hawkstrider",
+			"name": "陆行鸟",
+			"type": "MNT|XPHB",
+			"source": "WoW",
+			"rarity": "none",
+			"value": 15000,
+			"carryingCapacity": 420,
+			"entries": [
+				"使用{@creature 斧嘴鸟|XMM}数据卡（见《怪物图鉴》）。",
+				"{@b 先决条件：}在{@book 银月城|WoW|4|银月城声望福利}声望 10+。"
+			]
 		},
 		{
 			"ENG_name": "Hazirawn",
@@ -31967,6 +33352,20 @@
 				"催眠图纹",
 				"篡改记忆",
 				"暗示术"
+			]
+		},
+		{
+			"ENG_name": "Hearthstone",
+			"name": "炉石",
+			"source": "WoW",
+			"page": 109,
+			"rarity": "uncommon",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"炉石能将你传送至一处预先设定的地点\u2014通常是一家旅店。激活炉石需要 1 分钟和一个{@action 魔法|XPHB}动作。你出现在你先前设定的目的地 30 尺内一处未被占据的空间。",
+				"当你在旅店（或 DM 认可的其他地点）时，你可以采取{@action 魔法|XPHB}动作，将该处设为炉石传送的目的地。该地点将一直是你的目的地，直到你更改为止。",
+				"一块炉石不计入你可{@variantrule 同调|XPHB}的魔法物品数量。"
 			]
 		},
 		{
@@ -32338,6 +33737,147 @@
 			],
 			"hasFluffImages": true,
 			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Helm of Domination",
+			"name": "统御头盔",
+			"source": "WoW",
+			"page": 110,
+			"rarity": "artifact",
+			"reqAttune": true,
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d4 + 4}",
+			"charges": 8,
+			"entries": [
+				"这顶华丽的头盔浸透统御之力\u2014一种旨在彻底压制他人意志的符文魔法。这顶头盔（连同与之配套的神器{@item 霜之哀伤|WoW}）使其佩戴者\u2014先后三任巫妖王\u2014得以统治天灾军团。",
+				{
+					"ENG_name": "Attuning to the Helm",
+					"name": "同调头盔",
+					"type": "entries",
+					"entries": [
+						"当你同调这顶头盔时，进行一次{@dc 18}魅力豁免。豁免成功，你受{@damage 10d6}点心灵伤害。豁免失败，你的灵魂与巫妖王融合，后者如操纵傀儡般控制你的躯体，而你变成一名由 DM 控制的 NPC。",
+						"在同调头盔期间，你不愿与它分离，无时无刻不戴着它，且无法自愿结束对它的{@variantrule 同调|XPHB}。"
+					]
+				},
+				{
+					"ENG_name": "Properties of the Helm",
+					"name": "头盔的属性",
+					"type": "entries",
+					"entries": [
+						"在同调头盔期间，你的阵营变为中立邪恶，且你获得以下收益：",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"ENG_name": "Command the Scourge",
+									"name": "号令天灾",
+									"type": "item",
+									"entries": [
+										"以一个{@action 魔法|XPHB}动作，你可以向天灾军团的每名亡灵发送一条心灵命令。使用你的施法属性进行一次属性检定（{@dc 20}）。检定成功时，你可以向天灾亡灵下达一条概括性命令，如\"攻击你遇到的任何生物\"或\"守卫我的要塞\"，也可以向天灾军团的特定成员下达命令，如\"把瘟疫送到暴风城\"。无论成功与否，头盔的这项属性在下一个黎明到来之前不能再次使用。"
+									]
+								},
+								{
+									"ENG_name": "Truesight",
+									"name": "真实视觉",
+									"type": "item",
+									"entries": [
+										"你具有 120 尺的{@sense 真实视觉|XPHB}。"
+									]
+								},
+								{
+									"ENG_name": "Spellcasting",
+									"name": "施法",
+									"type": "item",
+									"entries": [
+										"这顶头盔有 8 点充能，并在每天黎明恢复{@dice 1d4 + 4}点已消耗的充能。戴着头盔时，你可以从表中施放下列法术之一（豁免{@dc 18}）。表中标注了施展该法术须消耗的点数。",
+										{
+											"type": "table",
+											"colLabels": [
+												"法术",
+												"消耗充能"
+											],
+											"colStyles": [
+												"col-10",
+												"col-2 text-center"
+											],
+											"rows": [
+												[
+													"{@spell 活化死尸|XPHB}",
+													"1"
+												],
+												[
+													"{@spell 鹰眼术|XPHB}",
+													"2"
+												],
+												[
+													"{@spell 托梦术|XPHB}",
+													"4"
+												],
+												[
+													"{@spell 死者交谈|XPHB}",
+													"1"
+												],
+												[
+													"{@spell 心灵感应|XPHB}",
+													"5"
+												],
+												[
+													"{@spell 回返真言|XPHB}",
+													"5"
+												]
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Random Properties",
+					"name": "随机词条",
+					"type": "entries",
+					"entries": [
+						"统御头盔具有以下随机属性：",
+						{
+							"type": "list",
+							"items": [
+								"1项{@table 神器词条; 主要增益词条|XDMG|主要增益}词条",
+								"1项{@table 神器词条; 次要减益词条|XDMG|次要减益}词条",
+								"1项{@table 神器词条; 主要减益词条|XDMG|主要减益}词条"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Destroying the Helm of Domination",
+					"name": "摧毁统御头盔",
+					"type": "entries",
+					"entries": [
+						"若被一柄在暗影界锻成的利刃击中，这顶头盔便会碎裂。只有最初锻成它的符文雕刻者能用碎片将其重铸。"
+					]
+				}
+			],
+			"attachedSpells": {
+				"charges": {
+					"1": [
+						"活化死尸|xphb",
+						"死者交谈|xphb"
+					],
+					"2": [
+						"鹰眼术|xphb"
+					],
+					"4": [
+						"托梦术|xphb"
+					],
+					"5": [
+						"心灵感应|xphb",
+						"回返真言|xphb"
+					]
+				}
+			}
 		},
 		{
 			"ENG_name": "Helm of Perfect Potential",
@@ -33150,6 +34690,7 @@
 				"奥秘 - 普通|XDMG",
 				"器具 - 普通|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -33780,6 +35321,7 @@
 				"奥秘 - 普通|XDMG",
 				"器具 - 普通|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -33890,7 +35432,8 @@
 			],
 			"lootTables": [
 				"魔法物品表H"
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Horn of Valhalla, Bronze",
@@ -33992,7 +35535,8 @@
 			],
 			"lootTables": [
 				"魔法物品表G"
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Horn of Valhalla, Silver",
@@ -34025,7 +35569,7 @@
 			"rarity": "very rare",
 			"reqAttune": true,
 			"entries": [
-				"允许校准的佩戴者无视Undermountain的魔法限制（见\"对魔法的修改\"）。"
+				"允许校准的佩戴者无视地脉迷城的魔法限制（见\"对魔法的修改\"）。"
 			]
 		},
 		{
@@ -34476,7 +36020,8 @@
 			],
 			"lootTables": [
 				"魔法物品表D"
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Horseshoes of a Zephyr",
@@ -34495,6 +36040,7 @@
 				"奥秘 - 极珍稀|XDMG",
 				"器具 - 极珍稀|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -34518,7 +36064,8 @@
 			],
 			"lootTables": [
 				"魔法物品表C"
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Horseshoes of Speed",
@@ -34537,6 +36084,7 @@
 				"奥秘 - 珍稀|XDMG",
 				"器具 - 珍稀|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -35557,6 +37105,7 @@
 				"奥秘 - 普通|XDMG",
 				"器具 - 普通|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -36177,6 +37726,39 @@
 			],
 			"hasFluffImages": true,
 			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Invincible's Reins",
+			"name": "无敌的缰绳",
+			"source": "ICC",
+			"page": 73,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d3}",
+			"charges": 3,
+			"entries": [
+				"这副缰绳是一条沉重的金属链，连着镶有莹莹蓝水晶的辔头。缰绳拥有 3 点充能，并在每天黎明恢复{@dice 1d3}点已消耗的充能。你可以消耗 1 点充能施展{@spell 寻获坐骑|XPHB}（5 环版本）。",
+				"当你从缰绳施展{@spell 寻获坐骑|XPHB}时，召唤出的坐骑是{@creature 巫妖王阿尔萨斯|WoW|阿尔萨斯}的坐骑\"无敌\"\u2014\u2014一匹有着木乃伊化躯体、莹莹蓝眼和蝙蝠双翼的亡灵战马。这匹坐骑属于亡灵类型，其\"异界猛击\"攻击造成暗蚀伤害，并拥有以下{@variantrule 附赠动作|XPHB}：",
+				{
+					"ENG_name": "Ghostly Stride (Undead Only; Recharges After a Long Rest)",
+					"name": "幽灵疾步（仅亡灵坐骑；长休后充能）",
+					"type": "entries",
+					"entries": [
+						"本回合内，坐骑及其骑手可以穿过其他生物和物体移动，如同它们是{@variantrule 困难地形|XPHB}。若坐骑与骑手在物体内部结束回合，两者均受 5（{@damage 1d10}）点力场伤害。"
+					]
+				},
+				"\"无敌\"属于中立邪恶阵营，对巫妖王阿尔萨斯忠贞不渝。若\"无敌\"的骑手做出违背坐骑阵营或与巫妖王为敌之举，请参照{@book 城主指南|XDMG}中关于与有智能魔法物品发生冲突的指引来判定后果。在发生冲突的情况下，\"无敌\"可以拒绝缰绳的召唤。"
+			],
+			"attachedSpells": {
+				"charges": {
+					"1": [
+						"寻获坐骑|xphb"
+					]
+				}
+			},
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Ioun Stone of Vitality",
@@ -38292,6 +39874,28 @@
 			"translator": "不全书"
 		},
 		{
+			"ENG_name": "Judgment Armor",
+			"name": "审判护甲",
+			"type": "HA|XPHB",
+			"source": "WoW",
+			"page": 110,
+			"baseItem": "板甲|xphb",
+			"rarity": "legendary",
+			"weight": 65,
+			"ac": 18,
+			"strength": "15",
+			"stealth": true,
+			"entries": [
+				"穿着这套护甲时，你处于{@spell 侦测善恶|XPHB}和{@spell 防护善恶|XPHB}法术的效果之下（无需{@status 专注|XPHB}）。如果你是圣武士，{@spell 防护善恶|XPHB}的效果会扩展到你{@classFeature 守护灵光|圣武士|XPHB|6|XPHB}内你选择的生物。"
+			],
+			"attachedSpells": {
+				"other": [
+					"侦测善恶|xphb",
+					"防护善恶|xphb"
+				]
+			}
+		},
+		{
 			"ENG_name": "Jug",
 			"name": "壶",
 			"type": "G",
@@ -38477,6 +40081,9 @@
 			],
 			"lootTables": [
 				"圣物 - 非普通|XDMG"
+			],
+			"miscTags": [
+				"CNS"
 			],
 			"hasFluffImages": true,
 			"translator": "不全书"
@@ -38891,6 +40498,19 @@
 				"作为动作，你可以将这张卡牌投向距你60尺内地面上的一个未占据空间，同时说出命令语，随后卡牌会魔法性地变成一只{@creature 牌组守卫|BMT}（其数据卡参见{@book 第九章|BMT|8|牌组守卫}），持续最多1分钟或直到你再次用一个动作说出命令语，届时它会变回一张卡牌。牌组守卫遵循你的口头命令。如果你没有发布命令，它会采取{@action 回避}动作并移动以躲避危险。如果牌组守卫的生命值降至0，它会提前变回一张卡牌。这一属性一经使用，直到次日黎明之前无法再次使用。"
 			],
 			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Kodo",
+			"name": "科多兽",
+			"type": "MNT|XPHB",
+			"source": "WoW",
+			"rarity": "none",
+			"value": 10000,
+			"carryingCapacity": 450,
+			"entries": [
+				"使用{@creature 巨蜥|XMM}的属性数据块。",
+				"{@b 先决条件：}在{@book 雷霆崖|WoW|4|雷霆崖声望福利}声望 10+。"
+			]
 		},
 		{
 			"ENG_name": "Korolnor Scepter",
@@ -39767,6 +41387,73 @@
 			]
 		},
 		{
+			"ENG_name": "Life-Staff of the Web Lair",
+			"name": "网巢生命法杖",
+			"type": "M|XPHB",
+			"source": "WoW",
+			"page": 110,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"weight": 4,
+			"weaponCategory": "simple",
+			"property": [
+				"V|XPHB"
+			],
+			"mastery": [
+				"失衡|XPHB"
+			],
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"dmg2": "1d8",
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6 + 2}",
+			"charges": 8,
+			"staff": true,
+			"entries": [
+				"这根法杖有 8 点充能。",
+				{
+					"ENG_name": "Arachnid's Grace",
+					"name": "蛛形矫健",
+					"type": "entries",
+					"entries": [
+						"在与法杖同调期间，你可以不借助双手沿垂直表面和天花板上下左右移动。你还获得等同于你{@variantrule 速度|XPHB}的{@variantrule 攀爬速度|XPHB}。你无视蛛网造成的移动限制，并知晓触碰同一张蛛网的任何其他生物的位置。"
+					]
+				},
+				{
+					"ENG_name": "Web",
+					"name": "蛛网术",
+					"type": "entries",
+					"entries": [
+						"手持法杖时，你可以消耗 1 点充能从杖中施展{@spell 蛛网术|XPHB}（豁免{@dc 18}）。"
+					]
+				},
+				{
+					"ENG_name": "Vampiric Silk",
+					"name": "吸血蛛丝",
+					"type": "entries",
+					"entries": [
+						"手持法杖时，你可以采取{@variantrule 附赠动作|XPHB}并消耗 1 点充能，令你{@spell 蛛网术|XPHB}法术区域内的一个生物进行{@dc 18}体质豁免。（若该生物因蛛网而受{@condition 束缚|XPHB}状态，则此次豁免具有{@variantrule 劣势|XPHB}。）豁免失败的生物受{@damage 4d10}点黯蚀伤害，成功则仅受一半伤害。无论结果如何，你都会回复等同于所造成伤害一半的{@variantrule 生命值|XPHB}。"
+					]
+				},
+				{
+					"ENG_name": "Regaining Charges",
+					"name": "重获充能",
+					"type": "entries",
+					"entries": [
+						"这根法杖在每天黎明恢复{@dice 1d6 + 2}点已消耗的充能。若你耗尽最后一点充能，掷{@dice 1d20}。掷出 1 时，法杖溶散为一群无害的蜘蛛并被摧毁。"
+					]
+				}
+			],
+			"attachedSpells": {
+				"charges": {
+					"1": [
+						"蛛网术|xphb"
+					]
+				}
+			},
+			"hasFluffImages": true
+		},
+		{
 			"ENG_name": "Lifewell Tattoo",
 			"name": "命源刺青",
 			"source": "TCE",
@@ -39806,6 +41493,72 @@
 					]
 				}
 			]
+		},
+		{
+			"ENG_name": "Light's Vengeance",
+			"name": "圣光的复仇",
+			"type": "M|XPHB",
+			"source": "ICC",
+			"page": 73,
+			"baseItem": "巨锤|xphb",
+			"rarity": "artifact",
+			"reqAttune": true,
+			"weight": 10,
+			"weaponCategory": "martial",
+			"property": [
+				"H|XPHB",
+				"2H|XPHB"
+			],
+			"mastery": [
+				"失衡|XPHB"
+			],
+			"dmg1": "2d6",
+			"dmgType": "B",
+			"bonusWeapon": "+3",
+			"entries": [
+				"圣光的复仇是阿尔萨斯·米奈希尔生前担任圣骑士、效力于白银之手骑士团时挥舞的武器\u2014\u2014那时他尚未堕落，也尚未变成{@creature 巫妖王阿尔萨斯|WoW|巫妖王}。这柄巨锤庞大而沉重，银色锤头刻满力量符文，握柄裹着蓝色皮革，承载着圣光的祝福。阿尔萨斯拿起{@item 霜之哀伤|WoW}时，便弃用了这件武器。",
+				{
+					"ENG_name": "Magic Weapon",
+					"name": "魔化武器",
+					"type": "entries",
+					"entries": [
+						"你用这把武器进行的攻击检定和伤害掷骰获得 +3 加值，且它对亡灵额外造成{@damage 2d10}点光耀伤害。"
+					]
+				},
+				{
+					"ENG_name": "Repel Undead",
+					"name": "驱退亡灵",
+					"type": "entries",
+					"entries": [
+						"手持这把武器时，你可以采取{@action 魔法|XPHB}动作，使耀眼的光芒以你为中心迸发，形成一个 30 尺的{@variantrule 光环 [效应区域]|XPHB|光环}。该{@variantrule 光环 [效应区域]|XPHB|光环}内的每个亡灵进行{@dc 20}感知豁免。豁免失败的目标受{@damage 4d8}点光耀伤害，并处于{@condition 恐慌|XPHB}和{@condition 失能|XPHB}状态 1 分钟。目标处于{@condition 恐慌|XPHB}状态期间，必须在其每个回合使用其移动力，尽可能远离你。若目标受到任何伤害，此效应提前结束。"
+					]
+				},
+				{
+					"ENG_name": "Random Properties",
+					"name": "随机词条",
+					"type": "entries",
+					"entries": [
+						"尽管圣光的复仇受过圣光的祝福、曾由圣光的勇士挥舞，这柄武器仍沾染着巫妖王堕落留下的污点。这把武器具有以下随机属性：",
+						{
+							"type": "list",
+							"items": [
+								"2项{@table 神器词条; 次要增益词条|XDMG|次要增益}词条",
+								"1项{@table 神器词条; 主要增益词条|XDMG|主要增益}词条",
+								"2项{@table 神器词条; 次要减益词条|XDMG|次要减益}词条"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Destroying the Weapon",
+					"name": "摧毁武器",
+					"type": "entries",
+					"entries": [
+						"以{@item 霜之哀伤|WoW}击打圣光的复仇，即可摧毁这把{@item 巨锤|XPHB}。"
+					]
+				}
+			],
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Lightbringer",
@@ -40155,6 +41908,7 @@
 				"奥秘 - 普通|XDMG",
 				"器具 - 普通|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -40839,7 +42593,7 @@
 		},
 		{
 			"ENG_name": "Lute crafted of exotic wood with mother-of-pearl inlay and zircon gems (Brazen Coalition)",
-			"name": "镶嵌珠母和锆石的特制木质鲁特琴",
+			"name": "镶嵌珠母和锆石的特制木质鲁特琴（莽霸联盟）",
 			"type": "$A|DMG",
 			"source": "PSX",
 			"page": 24,
@@ -40881,6 +42635,7 @@
 				"武备 - 极珍稀|XDMG",
 				"器具 - 极珍稀|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -41331,7 +43086,7 @@
 		},
 		{
 			"ENG_name": "Maddgoth's Helm",
-			"name": "疯狂歌德的魔法帽",
+			"name": "疯狂哥德的魔法帽",
 			"type": "OTH",
 			"source": "WDMM",
 			"page": 103,
@@ -41343,7 +43098,7 @@
 				}
 			],
 			"entries": [
-				"当你佩戴这个头盔并在马德戈斯的城堡内、屋顶上或庭院中时，你对所有伤害免疫。如果头盔被带离城堡，它将化为尘土并被摧毁。"
+				"当你佩戴这个头盔并在疯狂哥德的城堡内、屋顶上或庭院中时，你对所有伤害免疫。如果头盔被带离城堡，它将化为尘土并被摧毁。"
 			]
 		},
 		{
@@ -41724,6 +43479,9 @@
 			"lootTables": [
 				"奥秘 - 极珍稀|XDMG"
 			],
+			"miscTags": [
+				"CNS"
+			],
 			"hasFluffImages": true,
 			"translator": "不全书"
 		},
@@ -41770,6 +43528,9 @@
 			"lootTables": [
 				"奥秘 - 极珍稀|XDMG"
 			],
+			"miscTags": [
+				"CNS"
+			],
 			"hasFluffImages": true,
 			"translator": "不全书"
 		},
@@ -41799,7 +43560,8 @@
 			],
 			"lootTables": [
 				"魔法物品表H"
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Manual of Gainful Exercise",
@@ -41820,6 +43582,7 @@
 			"lootTables": [
 				"武备 - 极珍稀|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -41865,6 +43628,9 @@
 			],
 			"lootTables": [
 				"奥秘 - 极珍稀|XDMG"
+			],
+			"miscTags": [
+				"CNS"
 			],
 			"hasFluffImages": true,
 			"translator": "不全书"
@@ -41962,6 +43728,9 @@
 			],
 			"lootTables": [
 				"奥秘 - 极珍稀|XDMG"
+			],
+			"miscTags": [
+				"CNS"
 			],
 			"hasFluffImages": true,
 			"translator": "不全书"
@@ -42558,6 +44327,39 @@
 			"hasFluffImages": true
 		},
 		{
+			"ENG_name": "Mechano-Hog",
+			"name": "机械路霸",
+			"type": "VEH|XPHB",
+			"source": "WoW",
+			"rarity": "none",
+			"value": 400000,
+			"crew": 1,
+			"vehAc": 19,
+			"vehHp": 27,
+			"vehSpeed": 4,
+			"capPassenger": 1,
+			"capCargo": 0.4,
+			"hasRefs": true,
+			"entries": [
+				"一辆动力强劲的摩托车，可选装边斗，由部落制造。",
+				"{#itemEntry 动力载具|WoW}",
+				"{@b 先决条件：}在{@book 部落|WoW|4|部落声望福利}声望 10+。"
+			]
+		},
+		{
+			"ENG_name": "Mechanostrider",
+			"name": "机械陆行鸟",
+			"type": "MNT|XPHB",
+			"source": "WoW",
+			"rarity": "none",
+			"value": 45000,
+			"carryingCapacity": 420,
+			"entries": [
+				"使用{@creature 机械陆行鸟|WoW}的属性数据块。",
+				"{@b 先决条件：}在{@book 诺莫瑞根|WoW|4|诺莫瑞根声望福利}声望 10+。"
+			]
+		},
+		{
 			"ENG_name": "Medal of Muscle",
 			"name": "肌肉奖章",
 			"source": "CRCotN",
@@ -42714,6 +44516,26 @@
 			],
 			"hasFluffImages": true,
 			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Mekgineer's Chopper",
+			"name": "机械师的摩托车",
+			"type": "VEH|XPHB",
+			"source": "WoW",
+			"rarity": "none",
+			"value": 400000,
+			"crew": 1,
+			"vehAc": 19,
+			"vehHp": 27,
+			"vehSpeed": 4,
+			"capPassenger": 1,
+			"capCargo": 0.4,
+			"hasRefs": true,
+			"entries": [
+				"一辆动力强劲的摩托车，可选装边斗，由联盟制造。",
+				"{#itemEntry 动力载具|WoW}",
+				"{@b 先决条件：}在{@book 联盟|WoW|4|联盟声望福利}声望 10+。"
+			]
 		},
 		{
 			"ENG_name": "Menga leaves (1 ounce)",
@@ -44156,6 +45978,7 @@
 				"奥秘 - 普通|XDMG",
 				"器具 - 普通|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -44615,6 +46438,9 @@
 			},
 			"lootTables": [
 				"奥秘 - 珍稀|XDMG"
+			],
+			"miscTags": [
+				"CNS"
 			],
 			"hasFluffImages": true,
 			"translator": "不全书"
@@ -45334,6 +47160,19 @@
 			]
 		},
 		{
+			"ENG_name": "Nightsaber",
+			"name": "夜刃豹",
+			"type": "MNT|XPHB",
+			"source": "WoW",
+			"rarity": "none",
+			"value": 75000,
+			"carryingCapacity": 510,
+			"entries": [
+				"使用{@creature 老虎|XMM}的属性数据块。",
+				"{@b 先决条件：}在{@book 达纳苏斯|WoW|4|达纳苏斯声望福利}声望 10+。"
+			]
+		},
+		{
 			"ENG_name": "Nightspider",
 			"name": "夜蛛",
 			"type": "SPC|AAG",
@@ -45490,6 +47329,25 @@
 			]
 		},
 		{
+			"ENG_name": "Noggenfogger Elixir",
+			"name": "诺格弗格药剂",
+			"type": "P|XPHB",
+			"source": "WoW",
+			"page": 111,
+			"rarity": "rare",
+			"entries": [
+				"诺格弗格药剂是热砂港财团贸易亲王马林·诺格弗格发明的效果难以预料的药剂。尽管\u2014或者说正因为\u2014效果不可预测，它深受冒险者（尤其是地精）的追捧。喝下这瓶药剂时，掷{@dice 1d6}：掷出 1-2，你呈现骷髅般的外貌，持续{@dice 1d4}小时，其间你无需呼吸。（不呼吸不会使你获得{@condition 力竭|XPHB}等级。）掷出 3-4，你获得{@spell 变巨/缩小术|XPHB}法术的缩小效果，持续{@dice 1d4}小时（无需{@status 专注|XPHB}）。掷出 5-6，你坠落时的下降速度减缓为每轮 60 尺，持续 10 分钟。其间你不会受到坠落伤害。",
+				"喝下多瓶诺格弗格药剂并不需要在《{@book 城主指南|XDMG}》的{@table 药水混合|XDMG|药水混合}表上掷骰。",
+				"这瓶绿色药剂入口油腻。"
+			],
+			"attachedSpells": [
+				"变巨/缩小术|xphb"
+			],
+			"miscTags": [
+				"CNS"
+			]
+		},
+		{
 			"ENG_name": "Nolzur's Marvelous Pigments",
 			"name": "诺泽尔的惊奇颜料",
 			"source": "DMG",
@@ -45545,6 +47403,9 @@
 			"lootTables": [
 				"奥秘 - 极珍稀|XDMG",
 				"器具 - 极珍稀|XDMG"
+			],
+			"miscTags": [
+				"CNS"
 			],
 			"hasFluffImages": true,
 			"translator": "不全书"
@@ -45933,6 +47794,7 @@
 			"miscTags": [
 				"CNS"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -45992,6 +47854,7 @@
 			"miscTags": [
 				"CNS"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -46056,6 +47919,7 @@
 			"miscTags": [
 				"CNS"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -46958,6 +48822,7 @@
 				"奥秘 - 普通|XDMG",
 				"器具 - 普通|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -47072,13 +48937,13 @@
 			"wondrous": true,
 			"entries": [
 				"用食人魔的{@condition 石化}心脏雕刻的这个不死主君的灰色雕像有着可怕的细节\u2014\u2014它单手抓着那顶端是头骨的法杖，另一只手拎着三个首级的头发。这个雕像带有五尺内可以闻见的腐肉气味。",
-				"这尊雕像是微型物件，拥有AC 17、3点生命值，并对光耀以外的全部伤害类型免疫。一道{@spell 侦测善恶}法术或者其它类似的魔法可以发现这个雕像已经被亵渎过。只要它至少有1点生命值，这个雕像就具有以下的魔法特性：",
+				"这个雕像是一个微型物体，具有AC 17、3点生命值，并免疫光耀以外的全部伤害类型。一个{@spell 侦测善恶}法术或者其它类似的魔法效应可以发现这个雕像已经被亵渎过。只要它至少有1点生命值，这个雕像就有以下的魔法特性：",
 				{
 					"type": "list",
 					"items": [
 						"雕像30尺范围内的不死生物不会被驱散。",
 						"雕像30尺范围内的死亡生物不能被复活。",
-						"持握该雕像向奥喀斯祈祷至少1小时的生物有{@chance 10}的可能性召唤这位恶魔领主冒着烟的化身。一旦它被成功召唤，30天内不能再召唤它。奥喀斯的化身有和{@creature 邪灵}一样的数据，只不过阵营是混乱邪恶。它会攻击一切遭遇的非不死生物，会在生命值降低到0或1小时后消失。"
+						"持握该雕像向奥喀斯祈祷至少1小时的生物有{@chance 10}的可能性召唤这位恶魔领主冒着烟的化身。一旦它被成功召唤，30天内不能再召唤它。奥喀斯的化身有和{@creature 邪灵}一样的数据，只不过阵营是混乱邪恶。它会攻击一切遭遇的非不死生物，会在生命值降低到0或一个小时后消失。"
 					]
 				}
 			],
@@ -47651,6 +49516,19 @@
 			"translator": "不全书"
 		},
 		{
+			"ENG_name": "Pandarian Dragon Turtle",
+			"name": "熊猫人龙龟",
+			"type": "MNT|XPHB",
+			"source": "WoW",
+			"rarity": "none",
+			"value": 50000,
+			"carryingCapacity": 480,
+			"entries": [
+				"使用{@creature 熊猫人龙龟|WoW}的属性数据块。",
+				"{@b 先决条件：}在{@book 火金派|WoW|4|火金派声望福利}或{@book 土水派|WoW|4|土水派声望福利}声望 10+。"
+			]
+		},
+		{
 			"ENG_name": "Paper",
 			"name": "纸张",
 			"type": "G|XPHB",
@@ -47873,7 +49751,8 @@
 			],
 			"lootTables": [
 				"魔法物品表F"
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Pearl of Power",
@@ -47897,6 +49776,7 @@
 				"奥秘 - 非普通|XDMG",
 				"圣物 - 非普通|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -48096,6 +49976,7 @@
 			"miscTags": [
 				"CNS"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -48197,7 +50078,8 @@
 			],
 			"lootTables": [
 				"魔法物品表G"
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Periapt of Proof against Poison",
@@ -48218,7 +50100,8 @@
 			],
 			"lootTables": [
 				"圣物 - 珍稀|XDMG"
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Periapt of Wound Closure",
@@ -48409,6 +50292,42 @@
 			]
 		},
 		{
+			"ENG_name": "Philosopher's Stone",
+			"name": "点金石",
+			"source": "WoW",
+			"page": 111,
+			"rarity": "very rare",
+			"reqAttune": "by its creator",
+			"wondrous": true,
+			"entries": [
+				"点金石是炼金术中使用的强力试剂，实际上只有炼成它的炼金师才能有效使用。携带它时，你获得以下收益。",
+				{
+					"ENG_name": "Spellcasting Focus",
+					"name": "法器",
+					"type": "entries",
+					"entries": [
+						"你可以将你的点金石用作你法术的{@variantrule 法器|XPHB}。"
+					]
+				},
+				{
+					"ENG_name": "Transmute Resources",
+					"name": "嬗变资源",
+					"type": "entries",
+					"entries": [
+						"如果你花费 1 小时（可与{@variantrule 短休|XPHB}同时进行），与你的点金石和单一类型的制作资源（鱼类、宝石、草药、矿石或岩石、皮革或生皮、布料）相处，你可以将这些资源魔法地嬗变为另一种类型但总价值相同的资源。因此，你可以把价值 100 GP 的草药转化为价值 100 GP 的矿石，反之亦然，或将 500 GP 的秘银（一种普通矿石）变为 500 GP 的真银（一种稀有矿石）。"
+					]
+				},
+				{
+					"ENG_name": "Mixology",
+					"name": "调酒学",
+					"type": "entries",
+					"entries": [
+						"当你掷骰决定所喝药剂的效果时（包括混合药剂的结果），你可以掷两次骰并任选其一。若你喝下的药剂有持续时间，该时间加倍。"
+					]
+				}
+			]
+		},
+		{
 			"ENG_name": "Philter of Love",
 			"name": "迷情媚药",
 			"type": "P",
@@ -48433,6 +50352,7 @@
 			"miscTags": [
 				"CNS"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -48455,6 +50375,7 @@
 			"miscTags": [
 				"CNS"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -48926,7 +50847,8 @@
 			},
 			"lootTables": [
 				"魔法物品表I"
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Plate of Knight's Fellowship",
@@ -49404,6 +51326,7 @@
 			"lootTables": [
 				"器具 - 普通|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -49648,6 +51571,7 @@
 				"奥秘 - 普通|XDMG",
 				"圣物 - 普通|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -49807,6 +51731,7 @@
 			"miscTags": [
 				"CNS"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -49912,6 +51837,7 @@
 			"miscTags": [
 				"CNS"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -50042,6 +51968,7 @@
 			"miscTags": [
 				"CNS"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -50134,6 +52061,7 @@
 			"miscTags": [
 				"CNS"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -50202,6 +52130,7 @@
 			"miscTags": [
 				"CNS"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -50515,6 +52444,7 @@
 			"miscTags": [
 				"CNS"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -50627,6 +52557,7 @@
 			"miscTags": [
 				"CNS"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -50695,6 +52626,7 @@
 			"miscTags": [
 				"CNS"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -50884,6 +52816,7 @@
 			"miscTags": [
 				"CNS"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -51086,6 +53019,7 @@
 			"miscTags": [
 				"CNS"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -51153,6 +53087,7 @@
 			"miscTags": [
 				"CNS"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -51310,6 +53245,7 @@
 			"miscTags": [
 				"CNS"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -51417,7 +53353,53 @@
 			"miscTags": [
 				"CNS"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Potion of Mana",
+			"name": "法力药水",
+			"type": "P|XPHB",
+			"source": "WoW",
+			"page": 111,
+			"rarity": "common",
+			"entries": [
+				"喝下这瓶药剂时，你回复一个已消耗的 1 环法术位。",
+				"药剂中的蓝色液体散发着内在的光芒。"
+			],
+			"miscTags": [
+				"CNS"
+			]
+		},
+		{
+			"ENG_name": "Potion of Mana (Greater)",
+			"name": "法力药水（高等）",
+			"type": "P|XPHB",
+			"source": "WoW",
+			"page": 111,
+			"rarity": "uncommon",
+			"entries": [
+				"喝下这瓶药剂时，你回复一个已消耗的 1-3 环法术位。由你选择回复的法术位。",
+				"药剂中的蓝色液体散发着内在的光芒。"
+			],
+			"miscTags": [
+				"CNS"
+			]
+		},
+		{
+			"ENG_name": "Potion of Mana (Superior)",
+			"name": "法力药水（强效）",
+			"type": "P|XPHB",
+			"source": "WoW",
+			"page": 111,
+			"rarity": "rare",
+			"entries": [
+				"喝下这瓶药剂时，你回复一个已消耗的 1-5 环法术位。由你选择回复的法术位。",
+				"药剂中的蓝色液体散发着内在的光芒。"
+			],
+			"miscTags": [
+				"CNS"
+			]
 		},
 		{
 			"ENG_name": "Potion of Maximum Power",
@@ -51668,6 +53650,7 @@
 			"miscTags": [
 				"CNS"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -51886,6 +53869,51 @@
 			]
 		},
 		{
+			"ENG_name": "Potion of Rejuvenation",
+			"name": "恢复药水",
+			"type": "P|XPHB",
+			"source": "WoW",
+			"page": 111,
+			"rarity": "uncommon",
+			"entries": [
+				"喝下这瓶药剂时，你回复{@dice 3d4 + 3}点{@variantrule 生命值|XPHB}和一个已消耗的 1 环法术位。",
+				"药剂中的品红色液体自内部泛着微光。"
+			],
+			"miscTags": [
+				"CNS"
+			]
+		},
+		{
+			"ENG_name": "Potion of Rejuvenation (Greater)",
+			"name": "恢复药水（高等）",
+			"type": "P|XPHB",
+			"source": "WoW",
+			"page": 111,
+			"rarity": "rare",
+			"entries": [
+				"喝下这瓶药剂时，你回复{@dice 6d4 + 6}点{@variantrule 生命值|XPHB}和一个已消耗的 1-3 环法术位。由你选择回复的法术位。",
+				"药剂中的品红色液体自内部泛着微光。"
+			],
+			"miscTags": [
+				"CNS"
+			]
+		},
+		{
+			"ENG_name": "Potion of Rejuvenation (Superior)",
+			"name": "恢复药水（强效）",
+			"type": "P|XPHB",
+			"source": "WoW",
+			"page": 111,
+			"rarity": "very rare",
+			"entries": [
+				"喝下这瓶药剂时，你回复{@dice 9d4 + 9}点{@variantrule 生命值|XPHB}和一个已消耗的 1-5 环法术位。由你选择回复的法术位。",
+				"药剂中的品红色液体自内部泛着微光。"
+			],
+			"miscTags": [
+				"CNS"
+			]
+		},
+		{
 			"ENG_name": "Potion of Speed",
 			"name": "加速药水",
 			"type": "P",
@@ -51945,6 +53973,7 @@
 			"miscTags": [
 				"CNS"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -52006,6 +54035,7 @@
 			"miscTags": [
 				"CNS"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -52189,6 +54219,7 @@
 			"miscTags": [
 				"CNS"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -53018,7 +55049,7 @@
 				{
 					"type": "list",
 					"items": [
-						"耐瑟瑞尔的历史（参见\"{@adventure 奈瑟瑞尔的命运|IDRotF|17|奈瑟瑞尔的命运}\"侧边栏）",
+						"耐瑟瑞尔的历史（参见\"{@adventure 耐瑟瑞尔的命运|IDRotF|17|耐瑟瑞尔的命运}\"侧边栏）",
 						"吸血鬼的行为及特征",
 						"制作、装瓶以及品尝虹影酒（一种稀有的红宝石色精灵烈酒，由日光和夏季水果蒸馏制成）",
 						"{@creature 泰拉斯奎}（见《怪物图鉴》）"
@@ -53588,6 +55619,9 @@
 				"奥秘 - 非普通|XDMG",
 				"器具 - 非普通|XDMG"
 			],
+			"miscTags": [
+				"CNS"
+			],
 			"hasFluffImages": true,
 			"translator": "不全书"
 		},
@@ -53641,6 +55675,9 @@
 				"奥秘 - 珍稀|XDMG",
 				"器具 - 珍稀|XDMG"
 			],
+			"miscTags": [
+				"CNS"
+			],
 			"hasFluffImages": true,
 			"translator": "不全书"
 		},
@@ -53689,6 +55726,9 @@
 				"奥秘 - 非普通|XDMG",
 				"器具 - 非普通|XDMG"
 			],
+			"miscTags": [
+				"CNS"
+			],
 			"hasFluffImages": true,
 			"translator": "不全书"
 		},
@@ -53736,6 +55776,9 @@
 			"lootTables": [
 				"奥秘 - 珍稀|XDMG",
 				"器具 - 珍稀|XDMG"
+			],
+			"miscTags": [
+				"CNS"
 			],
 			"hasFluffImages": true,
 			"translator": "不全书"
@@ -53789,6 +55832,9 @@
 				"奥秘 - 非普通|XDMG",
 				"器具 - 非普通|XDMG"
 			],
+			"miscTags": [
+				"CNS"
+			],
 			"hasFluffImages": true,
 			"translator": "不全书"
 		},
@@ -53838,6 +55884,9 @@
 			"lootTables": [
 				"奥秘 - 珍稀|XDMG",
 				"器具 - 珍稀|XDMG"
+			],
+			"miscTags": [
+				"CNS"
 			],
 			"hasFluffImages": true,
 			"translator": "不全书"
@@ -54239,7 +56288,7 @@
 			"wondrous": true,
 			"weight": 2,
 			"entries": [
-				"这个箭袋有三个口袋，每一个都连接着一个异次元空间。无论其中存放了多少东西，箭袋的重量永远不会超过2磅。三个口袋中最小的可以容纳60支{@item 箭|phb|箭矢}、{@item 弩矢|phb|弩箭}或类似的物件；中等大小的口袋可以容纳18支{@item 标枪|phb|标枪}或类似物件；最大的口袋可以容纳六件长条型物件（比如弓、{@item 长棍|phb|长棍}、{@item 矛|phb|三叉枪}等）。",
+				"这个箭袋有三个口袋，每一个都连接着一个异次元空间。无论其中存放了多少东西，箭袋的重量永远不会超过2磅。三个口袋中最小的可以容纳60支{@item 箭|phb|箭矢}、{@item 弩矢|phb|弩矢}或类似的物件；中等大小的口袋可以容纳18支{@item 标枪|phb|标枪}或类似物件；最大的口袋可以容纳六件长条型物件（比如弓、{@item 长棍|phb|长棍}、{@item 矛|phb|三叉枪}等）。",
 				"你可以如同从普通的箭袋或剑鞘中抽出物品一般抽出艾罗娜箭袋中的物品。"
 			],
 			"containerCapacity": {
@@ -54539,6 +56588,19 @@
 				}
 			],
 			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Raptor",
+			"name": "迅猛龙",
+			"type": "MNT|XPHB",
+			"source": "WoW",
+			"rarity": "none",
+			"value": 100000,
+			"carryingCapacity": 570,
+			"entries": [
+				"使用{@creature 异特龙|XMM}的属性数据块。",
+				"{@b 先决条件：}在{@book 暗矛部落|WoW|4|暗矛部落声望福利}声望 10+。"
+			]
 		},
 		{
 			"ENG_name": "Rations",
@@ -55059,6 +57121,11 @@
 			"page": 229,
 			"srd52": true,
 			"basicRules2024": true,
+			"otherSources": [
+				{
+					"source": "WoW"
+				}
+			],
 			"rarity": "none",
 			"value": 7500,
 			"carryingCapacity": 480,
@@ -56269,7 +58336,8 @@
 			},
 			"lootTables": [
 				"魔法物品表F"
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Ring of Jumping",
@@ -56301,6 +58369,7 @@
 			"lootTables": [
 				"器具 - 非普通|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -56347,6 +58416,31 @@
 			"entries": [
 				"{#itemEntry 抗性戒指|XDMG}"
 			]
+		},
+		{
+			"ENG_name": "Ring of Maddening Whispers",
+			"name": "狂语之戒",
+			"type": "RG|XDMG",
+			"source": "ICC",
+			"page": 74,
+			"rarity": "legendary",
+			"reqAttune": "由施法者",
+			"reqAttuneTags": [
+				{
+					"spellcasting": true
+				}
+			],
+			"entries": [
+				"这枚戒指形似一条紫色的血肉触手，箍着暗色金属环，透出微红的光晕。佩戴它时，你可以从中施展{@spell 支配怪物|XPHB}（9 环版本；法术豁免{@dc 19}）。一旦如此做了，在下一个黎明之前，你无法再次用戒指施展该法术。",
+				"每当有生物成功豁免了从戒指施展的法术，你都会受到{@damage 5d10}点心灵伤害，并处于{@condition 失能|XPHB}状态直到你的下个回合结束，因为一阵胡言乱语般的低语正侵扰你的心智。"
+			],
+			"attachedSpells": {
+				"daily": {
+					"1e": [
+						"支配怪物|xphb"
+					]
+				}
+			}
 		},
 		{
 			"ENG_name": "Ring of Mind Shielding",
@@ -57101,7 +59195,8 @@
 			],
 			"lootTables": [
 				"魔法物品表B"
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Ring of Swimming",
@@ -57126,6 +59221,7 @@
 			"lootTables": [
 				"器具 - 非普通|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -57338,6 +59434,9 @@
 			},
 			"lootTables": [
 				"奥秘 - 传说|XDMG"
+			],
+			"miscTags": [
+				"CNS"
 			],
 			"hasFluffImages": true,
 			"translator": "不全书"
@@ -57902,7 +60001,8 @@
 			],
 			"lootTables": [
 				"魔法物品表H"
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Robe of Scintillating Colors",
@@ -57929,6 +60029,7 @@
 			"lootTables": [
 				"奥秘 - 极珍稀|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -58396,6 +60497,9 @@
 				"奥秘 - 非普通|XDMG",
 				"器具 - 非普通|XDMG"
 			],
+			"miscTags": [
+				"CNS"
+			],
 			"hasFluffImages": true,
 			"translator": "不全书"
 		},
@@ -58563,7 +60667,8 @@
 			},
 			"lootTables": [
 				"魔法物品表H"
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Rod of Alertness",
@@ -58632,6 +60737,7 @@
 			"lootTables": [
 				"圣物 - 极珍稀|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -59045,7 +61151,8 @@
 			],
 			"lootTables": [
 				"魔法物品表H"
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Rod of Security",
@@ -59065,6 +61172,7 @@
 			"lootTables": [
 				"奥秘 - 极珍稀|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -59199,6 +61307,49 @@
 				}
 			},
 			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Rod of the Sleepwalker",
+			"name": "睡行者之杖",
+			"type": "RD|XDMG",
+			"source": "WoW",
+			"page": 111,
+			"rarity": "very rare",
+			"entries": [
+				"这根法杖使生物进入易受暗示的梦游状态。你可以从杖中施展{@spell 支配怪物|XPHB}（豁免{@dc 17}），并有以下调整：",
+				{
+					"ENG_name": "Duration",
+					"name": "持续时间",
+					"type": "entries",
+					"entries": [
+						"该法术的持续时间为{@status 专注|XPHB}，至多 8 小时。"
+					]
+				},
+				{
+					"ENG_name": "Immunity",
+					"name": "免疫",
+					"type": "entries",
+					"entries": [
+						"不需要睡眠的生物（如精灵），或对{@condition 力竭|XPHB}状态具有{@variantrule 免疫|XPHB}的生物，自动通过此次豁免。"
+					]
+				},
+				{
+					"ENG_name": "Memory",
+					"name": "记忆",
+					"type": "entries",
+					"entries": [
+						"受影响的生物在法术结束后，对法术持续期间的一切毫无记忆。"
+					]
+				},
+				"一旦法杖被用于以这种方式施展该法术，在下一个黎明到来之前，它不能再次用于施展。"
+			],
+			"attachedSpells": {
+				"daily": {
+					"1e": [
+						"支配怪物|xphb"
+					]
+				}
+			}
 		},
 		{
 			"ENG_name": "Rod of the Vonindod",
@@ -59336,7 +61487,8 @@
 			],
 			"lootTables": [
 				"魔法物品表B"
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Rope of Climbing",
@@ -59362,6 +61514,7 @@
 				"奥秘 - 非普通|XDMG",
 				"器具 - 非普通|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -59426,6 +61579,7 @@
 				"奥秘 - 普通|XDMG",
 				"器具 - 普通|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -59591,6 +61745,7 @@
 				"奥秘 - 普通|XDMG",
 				"圣物 - 普通|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -60173,6 +62328,7 @@
 			"lootTables": [
 				"魔法物品表B"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -60189,6 +62345,7 @@
 				"奥秘 - 非普通|XDMG",
 				"武备 - 非普通|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -60952,7 +63109,8 @@
 			],
 			"lootTables": [
 				"魔法物品表H"
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Scimitar of Speed",
@@ -62155,7 +64313,8 @@
 			],
 			"lootTables": [
 				"魔法物品表F"
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Sentinel Shield",
@@ -62178,6 +64337,7 @@
 			"lootTables": [
 				"武备 - 非普通|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -62192,7 +64352,7 @@
 			"ac": 14,
 			"dexterityMax": null,
 			"entries": [
-				"这套魔法护甲由闪闪发光的蛇鳞制成。当穿上它时，你可以使用全部的敏捷调整值（没有最高+2的限制）来决定你的护甲等级。除此之外，着装者进行敏捷（{@skill 隐匿}）检定时不再具有劣势。"
+				"这套魔法护甲由闪闪发光的蛇鳞制成。穿着它时，你在决定护甲等级时可以使用全部的敏捷调整值（而不是最多 +2）。此外，这套护甲不会使你的敏捷（{@skill 隐匿}）检定具有劣势。"
 			]
 		},
 		{
@@ -62274,6 +64434,160 @@
 			"translator": "不全书"
 		},
 		{
+			"ENG_name": "Shadow's Edge",
+			"name": "影锋",
+			"type": "M|XPHB",
+			"source": "ICC",
+			"page": 74,
+			"baseItem": "巨斧|xphb",
+			"rarity": "artifact",
+			"reqAttune": true,
+			"weight": 7,
+			"weaponCategory": "martial",
+			"property": [
+				"H|XPHB",
+				"2H|XPHB"
+			],
+			"mastery": [
+				"横扫|XPHB"
+			],
+			"dmg1": "1d12",
+			"dmgType": "S",
+			"bonusWeapon": "+3",
+			"entries": [
+				"黑锋骑士团的大领主达里安·莫格莱尼在自己的符文熔炉中锻成了影锋：他将{@item 圣光的复仇|ICC}的神圣力量、源生萨隆邪铁\u2014\u2014上古之神尤格-萨隆血液的矿物形态\u2014\u2014以及{@creature 巫妖王阿尔萨斯|WoW|巫妖王}两名爪牙的剧毒毒素熔于一炉。锻成的是一柄威力惊人的战斧，最终拥有毁灭巫妖王的潜能。",
+				{
+					"ENG_name": "Magic Weapon",
+					"name": "魔化武器",
+					"type": "entries",
+					"entries": [
+						"你用这把武器进行的攻击检定和伤害掷骰获得 +3 加值。"
+					]
+				},
+				{
+					"ENG_name": "Drain Soul",
+					"name": "吸取灵魂",
+					"type": "entries",
+					"entries": [
+						"每当你以影锋将某生物的{@variantrule 生命值|XPHB}降至 0，这柄战斧便会杀死该生物并吞噬其灵魂，除非它是构装体。被影锋吞噬灵魂的生物只能通过{@spell 祈愿术|XPHB}法术复活。",
+						"影锋吞噬灵魂时，你获得等同于被杀生物{@variantrule 生命值|XPHB|生命值}上限一半的{@variantrule 临时生命值|XPHB}（向下取整）。"
+					]
+				},
+				{
+					"ENG_name": "Random Properties",
+					"name": "随机词条",
+					"type": "entries",
+					"entries": [
+						"这把武器具有以下随机属性：",
+						{
+							"type": "list",
+							"items": [
+								"1项{@table 神器词条; 次要增益词条|XDMG|次要增益}词条",
+								"1项{@table 神器词条; 次要减益词条|XDMG|次要减益}词条"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Unholy Infusion",
+					"name": "注入邪恶",
+					"type": "entries",
+					"entries": [
+						"一旦影锋注入了{@creature 普崔塞德教授（阶段一）|ICC|普崔塞德教授}的畸变软泥，它便获得以下额外的随机属性：",
+						{
+							"type": "list",
+							"items": [
+								"1项{@table 神器词条; 次要增益词条|XDMG|次要增益}词条",
+								"1项{@table 神器词条; 主要减益词条|XDMG|主要减益}词条"
+							]
+						},
+						"此外，当你以影锋命中某生物时，你可以采取{@variantrule 附赠动作|XPHB}，从武器对该目标施展{@spell 枯萎术|XPHB}（豁免{@dc 19}）。一旦你以此方式用武器施展了该法术，在下一个黎明之前你不能再次这样做。"
+					]
+				},
+				{
+					"ENG_name": "Blood Infusion",
+					"name": "鲜血灌注",
+					"type": "entries",
+					"entries": [
+						"一旦影锋注入了{@creature 鲜血女王兰娜瑟尔|ICC|兰娜瑟尔的}鲜血镜像之血，它便获得以下额外的随机属性：",
+						{
+							"type": "list",
+							"items": [
+								"1项{@table 神器词条; 主要增益词条|XDMG|主要增益}词条",
+								"1项{@table 神器词条; 次要减益词条|XDMG|次要减益}词条"
+							]
+						},
+						"此外，当你以影锋命中某生物时，你可以采取{@variantrule 附赠动作|XPHB}，从武器施展{@spell 艾伐黑触手|XPHB}（豁免{@dc 19}），其区域须包含该目标。一旦你以此方式用武器施展了该法术，在下一个黎明之前你不能再次这样做。"
+					]
+				},
+				{
+					"ENG_name": "Frost Infusion",
+					"name": "冰霜灌注",
+					"type": "entries",
+					"entries": [
+						"一旦影锋注入了{@creature 辛达苟萨|ICC|辛达苟萨}吐息中的寒霜，它便获得以下额外的随机属性：",
+						{
+							"type": "list",
+							"items": [
+								"1项{@table 神器词条; 主要增益词条|XDMG|主要增益}词条",
+								"1项{@table 神器词条; 主要减益词条|XDMG|主要减益}词条"
+							]
+						},
+						"此外，当你以影锋命中某生物时，你可以采取{@variantrule 附赠动作|XPHB}，从武器施展{@spell 寒冰锥|XPHB}（豁免{@dc 19}），其区域须包含该目标。一旦你以此方式用武器施展了该法术，在下一个黎明之前你不能再次这样做。"
+					]
+				},
+				{
+					"ENG_name": "Destroying the Weapon",
+					"name": "摧毁武器",
+					"type": "entries",
+					"entries": [
+						"在莫格莱尼大领主的符文熔炉\u2014\u2014它的诞生之地\u2014\u2014将其熔毁，即可摧毁这柄战斧。摧毁它将解放它所吞噬的灵魂。"
+					]
+				}
+			],
+			"attachedSpells": {
+				"daily": {
+					"1e": [
+						"枯萎术|xphb",
+						"寒冰锥|xphb",
+						"艾伐黑触手|xphb"
+					]
+				}
+			}
+		},
+		{
+			"ENG_name": "Shadowfang",
+			"name": "影牙",
+			"type": "M|XPHB",
+			"source": "WoW",
+			"page": 111,
+			"baseItem": "长剑|xphb",
+			"rarity": "rare",
+			"weight": 3,
+			"weaponCategory": "martial",
+			"property": [
+				"V|XPHB"
+			],
+			"mastery": [
+				"削弱|XPHB"
+			],
+			"dmg1": "1d8",
+			"dmgType": "S",
+			"dmg2": "1d10",
+			"bonusWeapon": "+1",
+			"entries": [
+				"你以此魔法武器进行的攻击检定和伤害掷骰获得+1加值。",
+				{
+					"ENG_name": "Mark of the Worgen",
+					"name": "狼人之痕",
+					"type": "entries",
+					"entries": [
+						"大多数情况下，这件武器看起来平平无奇。但在夜空之下，粗糙的毛发和尖利的獠牙会从剑的十字护手周围生出。以这种方式变形期间，影牙命中时额外造成{@damage 2d6}点黯蚀伤害。武器会在黎明时或被带入室内时恢复原状。"
+					]
+				}
+			]
+		},
+		{
 			"ENG_name": "Shadowfell Brand Tattoo",
 			"name": "堕影冥界印记刺青",
 			"source": "TCE",
@@ -62334,6 +64648,226 @@
 				"当你在持有或佩戴碎片时对法术使用一种魔法塑形选项，你可以短暂地诅咒法术目标之一的生物；选择一项能力值，直到你的下一个回合结束，该生物在使用该能力的属性检定和豁免检定时处于劣势。"
 			],
 			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Shadowmourne",
+			"name": "影之哀伤",
+			"type": "M|XPHB",
+			"source": "ICC",
+			"page": 75,
+			"baseItem": "巨斧|xphb",
+			"rarity": "artifact",
+			"reqAttune": true,
+			"weight": 7,
+			"weaponCategory": "martial",
+			"property": [
+				"H|XPHB",
+				"2H|XPHB"
+			],
+			"mastery": [
+				"横扫|XPHB"
+			],
+			"dmg1": "1d12",
+			"dmgType": "S",
+			"bonusWeapon": "+3",
+			"entries": [
+				"在{@item 影锋|ICC}先后注入邪恶之力、鲜血魔法与不朽寒霜，并镶入来自冰封王座的影霜碎片后，大领主达里安·莫格莱尼将它锻成了影之哀伤。",
+				{
+					"ENG_name": "Magic Weapon",
+					"name": "魔化武器",
+					"type": "entries",
+					"entries": [
+						"你用这把武器进行的攻击检定和伤害掷骰获得 +3 加值。"
+					]
+				},
+				{
+					"ENG_name": "Soul Fragments",
+					"name": "灵魂碎片",
+					"type": "entries",
+					"entries": [
+						"每当你使用影之哀伤以近战攻击检定命中某生物，该生物额外受{@damage 1d12}点暗蚀伤害，而你获得等同于该暗蚀伤害数值的{@variantrule 临时生命值|XPHB}。"
+					]
+				},
+				{
+					"ENG_name": "Drain Soul",
+					"name": "吸取灵魂",
+					"type": "entries",
+					"entries": [
+						"每当你以影之哀伤将某生物的{@variantrule 生命值|XPHB}降至 0，这柄战斧便会杀死该生物并吞噬其灵魂，除非它是构装体。被影之哀伤吞噬灵魂的生物只能通过{@spell 祈愿术|XPHB}法术复活。",
+						"影之哀伤吞噬灵魂时，你获得等同于被杀生物{@variantrule 生命值|XPHB|生命值}上限的{@variantrule 临时生命值|XPHB}。"
+					]
+				},
+				{
+					"ENG_name": "Chaos Bane",
+					"name": "森罗万象",
+					"type": "entries",
+					"entries": [
+						"若你拥有至少 12 点{@variantrule 临时生命值|XPHB}，你可以采取{@variantrule 附赠动作|XPHB}献祭你的全部{@variantrule 临时生命值|XPHB}。以你为源的 15 尺{@variantrule 光环 [效应区域]|XPHB|光环}内由你选择的每个生物进行体质豁免（{@dc 21}），豁免失败者受等同于你所献祭的{@variantrule 临时生命值|XPHB}数值的伤害，成功者所受伤害减半。直到你的下个回合结束，你的攻击检定和豁免检定均具有{@variantrule 优势|XPHB}。"
+					]
+				},
+				{
+					"ENG_name": "Random Properties",
+					"name": "随机词条",
+					"type": "entries",
+					"entries": [
+						"这把武器拥有它作为{@item 影锋|ICC}最终形态时所具有的相同随机属性：",
+						{
+							"type": "list",
+							"items": [
+								"2项{@table 神器词条; 次要增益词条|XDMG|次要增益}词条",
+								"2项{@table 神器词条; 主要增益词条|XDMG|主要增益}词条",
+								"2项{@table 神器词条; 次要减益词条|XDMG|次要减益}词条",
+								"2项{@table 神器词条; 主要减益词条|XDMG|主要减益}词条"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Destroying the Weapon",
+					"name": "摧毁武器",
+					"type": "entries",
+					"entries": [
+						"将这柄战斧浸入一池上古之神的新鲜血液中，即可将其摧毁。摧毁它将解放它所吞噬的灵魂。"
+					]
+				}
+			],
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Shalamayne",
+			"name": "萨拉迈恩",
+			"type": "M|XPHB",
+			"source": "WoW",
+			"page": 112,
+			"baseItem": "巨剑|xphb",
+			"rarity": "artifact",
+			"reqAttune": true,
+			"weight": 6,
+			"weaponCategory": "martial",
+			"property": [
+				"H|XPHB",
+				"2H|XPHB"
+			],
+			"mastery": [
+				"擦掠|XPHB",
+				"削弱|XPHB"
+			],
+			"dmg1": "2d6",
+			"dmgType": "S",
+			"bonusWeapon": "+3",
+			"entries": [
+				"当巨龙魔法将瓦里安·乌瑞恩国王分裂为两个自我时，其中一个自我持着暗夜精灵之刃{@item 萨拉迈恩（沙拉托尔）|WoW|沙拉托尔}，另一个则持着暗夜精灵之刃{@item 萨拉迈恩（埃雷梅尼）|WoW|埃雷梅尼}。瓦里安最终将双生的自我重新合而为一，在此过程中，他无意间将两柄剑融合成一件名为萨拉迈恩的新武器。",
+				"暗影界的统治者之一、典狱长曾窃走萨拉迈恩，将其重铸为一柄名为弑君之哀的哀伤之刃。但瓦里安之子安度因·乌瑞恩后来将萨拉迈恩恢复了原貌。安度因是这把剑已知的最后一位持用者。",
+				{
+					"ENG_name": "Magic Weapon",
+					"name": "魔化武器",
+					"type": "entries",
+					"entries": [
+						"你用这把魔法武器进行的攻击检定和伤害检定获得 +3 加值。命中时，它额外造成{@damage 2d12}点力场伤害。"
+					]
+				},
+				{
+					"ENG_name": "Dual Mastery",
+					"name": "双重精通",
+					"type": "entries",
+					"entries": [
+						"如果你拥有武器精通特性并选择{@item 巨剑|XPHB}作为你的精通武器之一，你在挥舞萨拉迈恩时可以同时使用{@itemMastery 擦掠|XPHB}和{@itemMastery 削弱|XPHB}两个精通属性。"
+					]
+				},
+				{
+					"ENG_name": "Splitting and Reuniting the Sword",
+					"name": "分剑与合剑",
+					"type": "entries",
+					"entries": [
+						"手持萨拉迈恩时，你可以采取{@action 魔法|XPHB}动作，结束你对它的{@variantrule 同调|XPHB}，并将其分裂为两把魔法长剑：{@item 萨拉迈恩（沙拉托尔）|WoW|沙拉托尔}和{@item 萨拉迈恩（埃雷梅尼）|WoW|埃雷梅尼}。两剑各为一把{@item +3 长剑|XDMG}，具有{@itemProperty F|XPHB|灵巧}和{@itemProperty L|XPHB|轻型}属性。持有两剑的生物可以采取{@action 魔法|XPHB}动作将它们重新合为萨拉迈恩，并立即同调该武器。"
+					]
+				},
+				{
+					"ENG_name": "Random Properties",
+					"name": "随机词条",
+					"type": "entries",
+					"entries": [
+						"萨拉迈恩具有以下随机属性：",
+						{
+							"type": "list",
+							"items": [
+								"2项{@table 神器词条; 次要增益词条|XDMG|次要增益}词条",
+								"1项{@table 神器词条; 主要增益词条|XDMG|主要增益}词条"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Destroying Shalamayne",
+					"name": "摧毁萨拉迈恩",
+					"type": "entries",
+					"entries": [
+						"要摧毁萨拉迈恩，可以将其分裂为沙拉托尔和埃雷梅尼，然后将其中一柄或两柄剑埋入翡翠梦境中一棵世界之树的树根处。一年之后，被埋下的剑会溶入泥土。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Shalamayne (Ellemayne)",
+			"name": "萨拉迈恩（埃雷梅尼）",
+			"source": "WoW",
+			"_copy": {
+				"ENG_name": "Shalamayne (Shalla'tor)",
+				"name": "萨拉迈恩（沙拉托尔）",
+				"source": "WoW",
+				"_preserve": {
+					"page": true
+				}
+			}
+		},
+		{
+			"ENG_name": "Shalamayne (Shalla'tor)",
+			"name": "萨拉迈恩（沙拉托尔）",
+			"source": "WoW",
+			"_copy": {
+				"ENG_name": "Shalamayne",
+				"name": "萨拉迈恩",
+				"source": "WoW",
+				"_mod": {
+					"reqAttune": "remove",
+					"entries": [
+						{
+							"mode": "removeArr",
+							"names": [
+								"双重精通",
+								"随机词条"
+							]
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "魔化武器",
+							"items": {
+								"ENG_name": "Magic Weapon",
+								"name": "魔化武器",
+								"type": "entries",
+								"entries": [
+									"你用此魔法武器进行的攻击检定和伤害掷骰获得+3加值。"
+								]
+							}
+						}
+					]
+				},
+				"_preserve": {
+					"page": true
+				}
+			},
+			"baseItem": "长剑|xphb",
+			"weight": 3,
+			"property": [
+				"F|XPHB",
+				"L|XPHB",
+				"V|XPHB"
+			],
+			"mastery": [
+				"削弱|XPHB"
+			],
+			"dmg1": "1d8",
+			"dmg2": "1d10"
 		},
 		{
 			"ENG_name": "Shard",
@@ -62913,6 +65447,7 @@
 				"武备 - 普通|XDMG",
 				"圣物 - 普通|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -64368,6 +66903,9 @@
 					]
 				}
 			],
+			"miscTags": [
+				"CNS"
+			],
 			"translator": "不全书"
 		},
 		{
@@ -64900,6 +67438,9 @@
 			"lootTables": [
 				"奥秘 - 传说|XDMG",
 				"器具 - 传说|XDMG"
+			],
+			"miscTags": [
+				"CNS"
 			],
 			"hasFluffImages": true,
 			"translator": "不全书"
@@ -66503,9 +69044,6 @@
 			],
 			"lootTables": [
 				"魔法物品表I"
-			],
-			"miscTags": [
-				"CNS"
 			]
 		},
 		{
@@ -66566,9 +69104,6 @@
 			"lootTables": [
 				"奥秘 - 传说|XDMG",
 				"器具 - 传说|XDMG"
-			],
-			"miscTags": [
-				"CNS"
 			],
 			"hasFluffImages": true,
 			"translator": "不全书"
@@ -67128,6 +69663,7 @@
 				"奥秘 - 普通|XDMG",
 				"圣物 - 普通|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -67191,6 +69727,7 @@
 				"奥秘 - 普通|XDMG",
 				"器具 - 普通|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -68149,6 +70686,149 @@
 			"hasFluffImages": true
 		},
 		{
+			"ENG_name": "Staff of Light and Shadow",
+			"name": "光影法杖",
+			"type": "M|XPHB",
+			"source": "WoW",
+			"page": 112,
+			"rarity": "legendary",
+			"reqAttune": "由牧师",
+			"reqAttuneTags": [
+				{
+					"class": "牧师"
+				}
+			],
+			"weight": 4,
+			"weaponCategory": "simple",
+			"property": [
+				"V|XPHB"
+			],
+			"mastery": [
+				"失衡|XPHB"
+			],
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"dmg2": "1d8",
+			"staff": true,
+			"entries": [
+				"这根法杖有两种形态：称为{@item 光影法杖（咒罚）|WoW|咒罚}的暗影形态，和称为{@item 光影法杖（祈福）|WoW|祈福}的神圣形态。在与法杖同调期间，你可以在黎明时让法杖在两种形态间切换。",
+				{
+					"ENG_name": "Anathema",
+					"name": "咒罚",
+					"type": "entries",
+					"entries": [
+						"作为咒罚，法杖给予以下收益：",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"ENG_name": "Necrotic Resistance",
+									"name": "暗蚀抗性",
+									"type": "item",
+									"entries": [
+										"在与法杖同调期间，你对黯蚀伤害具有{@variantrule 抗性|XPHB}。"
+									]
+								},
+								{
+									"ENG_name": "Shadow Mana",
+									"name": "暗影法力",
+									"type": "item",
+									"entries": [
+										"手持法杖时，当你施展一个会消耗法术位的{@filter 1-5 环法术|spells|level=1;2;3;4;5|school=N}的死灵学派法术时，你可以掷{@dice 1d6}。若骰出的数值大于法术环阶，该法术位不会被消耗。"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Benediction",
+					"name": "祈福",
+					"type": "entries",
+					"entries": [
+						"作为祈福，法杖给予以下收益：",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"ENG_name": "Radiant Resistance",
+									"name": "光耀抗性",
+									"type": "item",
+									"entries": [
+										"在与法杖同调期间，你对光耀{@variantrule 伤害|XPHB}具有{@variantrule 抗性|XPHB}。"
+									]
+								},
+								{
+									"ENG_name": "Light-Blessed Healing",
+									"name": "圣光祝福治疗",
+									"type": "item",
+									"entries": [
+										"手持法杖时，当你施展一个会为某生物回复{@variantrule 生命值|XPHB}的法术时，你可以将其视为用高 1 环的法术位施展。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Staff of Light and Shadow (Anathema)",
+			"name": "光影法杖（咒罚）",
+			"source": "WoW",
+			"_copy": {
+				"ENG_name": "Staff of Light and Shadow",
+				"name": "光影法杖",
+				"source": "WoW",
+				"_mod": {
+					"entries": [
+						{
+							"mode": "removeArr",
+							"names": [
+								"祈福"
+							]
+						}
+					]
+				},
+				"_preserve": {
+					"page": true,
+					"hasFluffImages": true
+				}
+			},
+			"resist": [
+				"necrotic"
+			]
+		},
+		{
+			"ENG_name": "Staff of Light and Shadow (Benediction)",
+			"name": "光影法杖（祈福）",
+			"source": "WoW",
+			"_copy": {
+				"ENG_name": "Staff of Light and Shadow",
+				"name": "光影法杖",
+				"source": "WoW",
+				"_mod": {
+					"entries": [
+						{
+							"mode": "removeArr",
+							"names": [
+								"咒罚"
+							]
+						}
+					]
+				},
+				"_preserve": {
+					"page": true
+				}
+			},
+			"resist": [
+				"radiant"
+			]
+		},
+		{
 			"ENG_name": "Staff of Power",
 			"name": "威力法杖",
 			"source": "DMG",
@@ -68504,7 +71184,8 @@
 			],
 			"lootTables": [
 				"魔法物品表H"
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Staff of Striking",
@@ -68547,6 +71228,7 @@
 			"lootTables": [
 				"圣物 - 极珍稀|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -70114,6 +72796,28 @@
 			"translator": "不全书"
 		},
 		{
+			"ENG_name": "Steamwheedle Apparatus",
+			"name": "热砂港器械",
+			"source": "WoW",
+			"_copy": {
+				"ENG_name": "Apparatus of Kwalish",
+				"name": "夸力许装置",
+				"source": "XDMG",
+				"_mod": {
+					"entries": {
+						"mode": "replaceTxt",
+						"replace": "夸力许装置",
+						"with": "热砂港器械",
+						"props": [
+							null,
+							"caption"
+						]
+					}
+				}
+			},
+			"value": 10000000
+		},
+		{
 			"ENG_name": "Steel",
 			"name": "锻钢",
 			"type": "M",
@@ -70899,6 +73603,110 @@
 			]
 		},
 		{
+			"ENG_name": "Sulfuras, Hand of Ragnaros",
+			"name": "萨弗拉斯，拉格纳罗斯之手",
+			"type": "M|XPHB",
+			"source": "WoW",
+			"page": 112,
+			"baseItem": "巨锤|xphb",
+			"rarity": "artifact",
+			"reqAttune": true,
+			"weight": 10,
+			"weaponCategory": "martial",
+			"property": [
+				"H|XPHB",
+				"2H|XPHB"
+			],
+			"mastery": [
+				"失衡|XPHB"
+			],
+			"dmg1": "2d6",
+			"dmgType": "B",
+			"bonusWeapon": "+3",
+			"entries": [
+				"这件以元素锭锻成的{@item 巨锤|XPHB}萨弗拉斯，是火焰元素领主{@creature 拉格纳罗斯|WoW}的武器。太初之时，四位元素领主为争夺新生的艾泽拉斯的主导权而互相征战。当其他元素领主以各自元素的精妙造诣战斗时，拉格纳罗斯却用萨弗拉斯将他们的元素反戈相向\u2014煮沸海洋，以浓烟与余烬窒塞天空，把群山变成喷发的火山。",
+				{
+					"ENG_name": "Magic Weapon",
+					"name": "魔化武器",
+					"type": "entries",
+					"entries": [
+						"你用这把魔法武器进行的攻击检定和伤害检定获得 +3 加值。被此武器命中的生物额外受{@damage 1d10}点火焰伤害，并开始{@hazard 燃烧|XPHB}，在其每个回合开始时受{@damage 1d10}点火焰伤害，以代替正常的燃烧伤害。"
+					]
+				},
+				{
+					"ENG_name": "Ignite the Elements",
+					"name": "燃点元素",
+					"type": "entries",
+					"entries": [
+						"手持这把武器时，你可以采取{@action 魔法|XPHB}动作产生以下效应之一。一旦某个效应被使用，在下一个黎明到来之前，该效应不能再次使用：",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"ENG_name": "Boiling Point",
+									"name": "沸点",
+									"type": "item",
+									"entries": [
+										"你使距你 1 英里内的任何盛水容器或水体沸腾 1 分钟。进入沸水或在其中开始回合的生物受{@damage 2d10}点火焰伤害。"
+									]
+								},
+								{
+									"ENG_name": "Embersmoke",
+									"name": "余烬之烟",
+									"type": "item",
+									"entries": [
+										"你从武器中施展{@spell 焚云术|XPHB}（豁免{@dc 18}）。"
+									]
+								},
+								{
+									"ENG_name": "Eruption",
+									"name": "天灾爆发",
+									"type": "item",
+									"entries": [
+										"你使熔岩在距你 120 尺内可见的一点喷发，形成以该点为中心、半径 10 尺、高 60 尺的{@variantrule 柱状 [效应区域]|XPHB|柱状}。该区域内的每个生物进行{@dc 18}敏捷豁免，失败者受{@damage 9d10}点火焰伤害加{@damage 9d10}点钝击伤害，成功者仅受一半伤害。"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Random Properties",
+					"name": "随机词条",
+					"type": "entries",
+					"entries": [
+						"萨弗拉斯具有以下随机属性：",
+						{
+							"type": "list",
+							"items": [
+								"1项{@table 神器词条; 次要增益词条|XDMG|次要增益}词条",
+								"1项{@table 神器词条; 主要增益词条|XDMG|主要增益}词条",
+								"1项{@table 神器词条; 次要减益词条|XDMG|次要减益}词条",
+								"1项{@table 神器词条; 主要减益词条|XDMG|主要减益}词条"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Destroying Sulfuras",
+					"name": "摧毁萨弗拉斯",
+					"type": "entries",
+					"entries": [
+						"在瓦斯琪尔深处的海底隧道网络中，有一座废弃且机关密布的海神庙，供奉水元素领主耐普隆。将萨弗拉斯放上神庙的中央祭坛，便会永久熄灭它的烈焰，使其失去魔力、可以被摧毁。"
+					]
+				}
+			],
+			"attachedSpells": {
+				"daily": {
+					"1e": [
+						"焚云术|xphb"
+					]
+				}
+			},
+			"hasFluffImages": true
+		},
+		{
 			"ENG_name": "Sun",
 			"name": "太阳",
 			"type": "$C",
@@ -71096,6 +73904,121 @@
 					"dim": 30
 				}
 			]
+		},
+		{
+			"ENG_name": "Sundial of Eternal Dusk",
+			"name": "永恒暮色日晷",
+			"source": "ICC",
+			"page": 76,
+			"resist": [
+				"radiant"
+			],
+			"rarity": "legendary",
+			"reqAttune": true,
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6 + 3}",
+			"charges": 20,
+			"focus": true,
+			"entries": [
+				"虽然名为日晷，永恒暮色日晷看起来更像一盏提灯。一块粗糙的绿色萨隆邪铁金属碎片悬于铁质圆筒上方，两侧是黄铜铸成的双翼。萨隆邪铁碎片与圆筒之间蒸腾着发光的绿色气体，器具底部两根分叉的尖齿间还浮动着一块较小的绿色碎片。大碎片上方的弧形把手让人可以单手轻松持握。持握日晷期间，你始终知晓当下的时刻。",
+				{
+					"ENG_name": "Spellcasting Focus",
+					"name": "法器",
+					"type": "entries",
+					"entries": [
+						"你可以将这具日晷作为你施展法术时的{@variantrule 法器|XPHB}。"
+					]
+				},
+				{
+					"ENG_name": "Cloak of Shadows",
+					"name": "幽影斗篷",
+					"type": "entries",
+					"entries": [
+						"日晷散发出暗影，使你所在的空间充满{@variantrule 微光光照|XPHB}，令该空间{@variantrule 轻度遮蔽|XPHB}，并使你对光耀伤害具有{@variantrule 抗性|XPHB}。这片暗影不会遮蔽你的视觉。"
+					]
+				},
+				{
+					"ENG_name": "Spells",
+					"name": "法术",
+					"type": "entries",
+					"entries": [
+						"日晷拥有 20 点充能，并在每天黎明恢复{@dice 1d6 + 3}点已消耗的充能。持握日晷期间，你可以从中施展下表所列法术之一（豁免{@dc 19}）。表中标注了施展各法术所需消耗的充能数量。",
+						{
+							"type": "table",
+							"colLabels": [
+								"法术",
+								"消耗充能"
+							],
+							"colStyles": [
+								"col-10",
+								"col-2 text-right"
+							],
+							"rows": [
+								[
+									"{@spell 黑暗术|XPHB}",
+									"2"
+								],
+								[
+									"{@spell 任意门|XPHB}（目的地必须处于{@variantrule 微光光照|XPHB}或{@variantrule 黑暗|XPHB}中）",
+									"4"
+								],
+								[
+									"{@spell 艾伐黑触手|XPHB}",
+									"4"
+								],
+								[
+									"{@spell 恐惧术|XPHB}",
+									"3"
+								],
+								[
+									"{@spell 哈达之欲|XPHB}",
+									"3"
+								],
+								[
+									"{@spell 魅影杀手|XPHB}",
+									"4"
+								],
+								[
+									"{@spell 亡灵召唤术|XPHB}",
+									"3"
+								],
+								[
+									"{@spell 亡者丧钟|XPHB}",
+									"0"
+								],
+								[
+									"{@spell 真知术|XPHB}",
+									"6"
+								]
+							]
+						}
+					]
+				}
+			],
+			"attachedSpells": {
+				"charges": {
+					"0": [
+						"亡者丧钟|xphb"
+					],
+					"2": [
+						"黑暗术|xphb"
+					],
+					"3": [
+						"恐惧术|xphb",
+						"哈达之欲|xphb",
+						"亡灵召唤术|xphb"
+					],
+					"4": [
+						"任意门|xphb",
+						"艾伐黑触手|xphb",
+						"魅影杀手|xphb"
+					],
+					"6": [
+						"真知术|xphb"
+					]
+				}
+			}
 		},
 		{
 			"ENG_name": "Sunforger",
@@ -72181,6 +75104,18 @@
 			]
 		},
 		{
+			"ENG_name": "Talbuk",
+			"name": "塔布羊",
+			"type": "MNT|XPHB",
+			"source": "WoW",
+			"rarity": "none",
+			"value": 15000,
+			"carryingCapacity": 480,
+			"entries": [
+				"使用{@creature 赤鹿|XMM}的属性数据块。"
+			]
+		},
+		{
 			"ENG_name": "Talisman of Pure Good",
 			"name": "纯善护符",
 			"source": "DMG",
@@ -72512,6 +75447,7 @@
 				"奥秘 - 普通|XDMG",
 				"器具 - 普通|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -74242,6 +77178,19 @@
 			"translator": "不全书"
 		},
 		{
+			"ENG_name": "Thrice Fanged Signet",
+			"name": "三牙饰物",
+			"type": "RG|XDMG",
+			"source": "ICC",
+			"page": 76,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"entries": [
+				"这枚银戒饰有金字塔造型，塔顶镶着一颗莹亮的蓝色水晶。三枚令它得名的尖牙从金字塔底面探出，刺入佩戴者的手指。",
+				"佩戴这枚戒指施展法术时，你可以让戒指吸取你的鲜血来强化法术。若你如此做，你的当前生命值和{@variantrule 生命值|XPHB|生命值}上限均减少{@dice 3d6}点，且该法术的效果视为以比你实际所用高 1 环的法术位施展（最高 9 环）。"
+			]
+		},
+		{
 			"ENG_name": "Throne Card",
 			"name": "王座卡",
 			"source": "BMT",
@@ -74599,6 +77548,20 @@
 				}
 			},
 			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Tiny Abomination in a Jar",
+			"name": "瓶中的小憎恶",
+			"source": "ICC",
+			"page": 77,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"当你随身携带这件怪物般的物品时，若你在攻击检定的{@dice d20}上掷出 11，你便获得一粒怒火之尘\u2014\u2014一粒微型、不可摧毁的赤红光点，以{@dice 1d3}尺的距离绕着你的头部盘旋。怒火之尘持续到你结束一次{@variantrule 长休|XPHB}为止。每粒怒火之尘使你的伤害掷骰获得 +2 加值。",
+				"若你同时拥有四粒怒火之尘，它们会轰然爆发，令你怒火中烧，使你可以立即进行一次武器攻击，且该攻击检定具有{@variantrule 优势|XPHB}。若该攻击命中，怒火之尘将其伤害加值赋予此次攻击；无论命中与否，它们都会在攻击后消散。",
+				"瓶中漂浮的小憎恶看似毫无生气，但只要你拥有一粒或多粒怒火之尘，它便会苏醒；你拥有的怒火之尘越多，它就越活跃。"
+			]
 		},
 		{
 			"ENG_name": "Tiny jade figurine (River Heralds)",
@@ -75225,7 +78188,7 @@
 		},
 		{
 			"ENG_name": "Treasure chest crafted of exotic wood with gold fittings and opals (Brazen Coalition)",
-			"name": "金饰和蛋白石异国木宝箱",
+			"name": "金饰和蛋白石异国木宝箱（莽霸联盟）",
 			"type": "$A|DMG",
 			"source": "PSX",
 			"page": 25,
@@ -77285,6 +80248,66 @@
 			"translator": "不全书"
 		},
 		{
+			"ENG_name": "Troll's Blood Elixir",
+			"name": "巨魔之血药剂",
+			"type": "P|XPHB",
+			"source": "WoW",
+			"page": 113,
+			"rarity": "uncommon",
+			"entries": [
+				"喝下这瓶药剂时，你回复 2 点{@variantrule 生命值|XPHB}。在接下来的 1 分钟内，若你仍有至少 1 {@variantrule 生命值|XPHB|生命值}，你在自己的每个回合开始时再次回复该数值的{@variantrule 生命值|XPHB}。这种浓稠的绿色药剂由草药制成。",
+				"本次药剂的制作过程没有伤害任何巨魔。"
+			],
+			"miscTags": [
+				"CNS"
+			]
+		},
+		{
+			"ENG_name": "Troll's Blood Elixir (Greater)",
+			"name": "巨魔之血药剂（高等）",
+			"type": "P|XPHB",
+			"source": "WoW",
+			"page": 113,
+			"rarity": "rare",
+			"entries": [
+				"喝下这瓶药剂时，你回复 4 点{@variantrule 生命值|XPHB}。在接下来的 1 分钟内，若你仍有至少 1 {@variantrule 生命值|XPHB|生命值}，你在自己的每个回合开始时再次回复该数值的{@variantrule 生命值|XPHB}。这种浓稠的绿色药剂由草药制成。",
+				"本次药剂的制作过程没有伤害任何巨魔。"
+			],
+			"miscTags": [
+				"CNS"
+			]
+		},
+		{
+			"ENG_name": "Troll's Blood Elixir (Superior)",
+			"name": "巨魔之血药剂（强效）",
+			"type": "P|XPHB",
+			"source": "WoW",
+			"page": 113,
+			"rarity": "very rare",
+			"entries": [
+				"喝下这瓶药剂时，你回复 6 点{@variantrule 生命值|XPHB}。在接下来的 1 分钟内，若你仍有至少 1 {@variantrule 生命值|XPHB|生命值}，你在自己的每个回合开始时再次回复该数值的{@variantrule 生命值|XPHB}。这种浓稠的绿色药剂由草药制成。",
+				"本次药剂的制作过程没有伤害任何巨魔。"
+			],
+			"miscTags": [
+				"CNS"
+			]
+		},
+		{
+			"ENG_name": "Troll's Blood Elixir (Supreme)",
+			"name": "巨魔之血药剂（极效）",
+			"type": "P|XPHB",
+			"source": "WoW",
+			"page": 113,
+			"rarity": "legendary",
+			"entries": [
+				"喝下这瓶药剂时，你回复 8 点{@variantrule 生命值|XPHB}。在接下来的 1 分钟内，若你仍有至少 1 {@variantrule 生命值|XPHB|生命值}，你在自己的每个回合开始时再次回复该数值的{@variantrule 生命值|XPHB}。这种浓稠的绿色药剂由草药制成。",
+				"本次药剂的制作过程没有伤害任何巨魔。"
+			],
+			"miscTags": [
+				"CNS"
+			]
+		},
+		{
 			"ENG_name": "True-Ice Shards (Dagger)",
 			"name": "真冰碎片（匕首）",
 			"type": "M",
@@ -77575,6 +80598,82 @@
 			]
 		},
 		{
+			"ENG_name": "Twin Blades of Azzinoth",
+			"name": "埃辛诺斯双刃",
+			"type": "M|XPHB",
+			"source": "WoW",
+			"page": 113,
+			"baseItem": "弯刀|xphb",
+			"rarity": "artifact",
+			"reqAttune": true,
+			"weight": 3,
+			"weaponCategory": "martial",
+			"property": [
+				"F|XPHB",
+				"L|XPHB"
+			],
+			"mastery": [
+				"迅击|XPHB"
+			],
+			"dmg1": "1d6",
+			"dmgType": "S",
+			"bonusWeapon": "+3",
+			"entries": [
+				"这对恶魔战刃曾属于埃辛诺斯\u2014燃烧军团的一位远古末日守卫指挥官。{@creature 伊利丹·怒风|WoW}在数千年前的上古之战中斩杀埃辛诺斯，并为自己重铸了这对战刃，让他得以用邪能魔法对抗军团的恶魔。",
+				{
+					"ENG_name": "Magic Weapons",
+					"name": "魔法武器",
+					"type": "entries",
+					"entries": [
+						"你用这对魔法武器进行的攻击检定和伤害检定获得 +3 加值。每把剑命中邪魔时额外造成{@damage 2d8}点心灵伤害；此心灵伤害无视{@variantrule 抗性|XPHB}与{@variantrule 免疫|XPHB}。"
+					]
+				},
+				{
+					"ENG_name": "Fel Synchronization",
+					"name": "邪能同步",
+					"type": "entries",
+					"entries": [
+						"若你在同一回合内以两把武器命中同一个生物，该生物在第二把武器命中后立即进行{@dc 18}感知豁免。豁免失败的生物被邪能撕裂，受{@condition 震慑|XPHB}状态直到其下个回合结束。"
+					]
+				},
+				{
+					"ENG_name": "Flames of Azzinoth",
+					"name": "埃辛诺斯之焰",
+					"type": "entries",
+					"entries": [
+						"以一个{@action 魔法|XPHB}动作，你可以把其中一把武器掷到距你 30 尺内可见的地面一处未被占据的空间。刀刃化作一头烈焰熊熊的绿色邪魔，如同你施展了{@spell 邪魔召唤术|XPHB}法术（选择魔鬼选项）。法术持续 1 分钟，当被召唤的邪魔消失时，武器重新出现在你手中。在经过 7 天之前，你不能再次把该武器变为邪魔。"
+					]
+				},
+				{
+					"ENG_name": "Random Properties",
+					"name": "随机词条",
+					"type": "entries",
+					"entries": [
+						"埃辛诺斯双刃具有以下随机属性：",
+						{
+							"type": "list",
+							"items": [
+								"1项{@table 神器词条; 次要增益词条|XDMG|次要增益}词条",
+								"1项{@table 神器词条; 主要增益词条|XDMG|主要增益}词条",
+								"1项{@table 神器词条; 次要减益词条|XDMG|次要减益}词条"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Destroying the Blades",
+					"name": "摧毁双刃",
+					"type": "entries",
+					"entries": [
+						"对着双刃吟诵一首名为\"圣光的馈赠\"的古老诗篇，会使它们溶为闪烁的尘埃。这首诗篇大多已佚失于时光，但少数几尊纳鲁仍记得它。"
+					]
+				}
+			],
+			"attachedSpells": [
+				"邪魔召唤术|xphb"
+			]
+		},
+		{
 			"ENG_name": "Two-Birds Sling",
 			"name": "一石二鸟投石索",
 			"type": "R",
@@ -77763,6 +80862,9 @@
 			"lootTables": [
 				"奥秘 - 传说|XDMG",
 				"器具 - 传说|XDMG"
+			],
+			"miscTags": [
+				"CNS"
 			],
 			"hasFluffImages": true,
 			"translator": "不全书"
@@ -77981,6 +81083,7 @@
 				"武备 - 普通|XDMG",
 				"器具 - 普通|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -78121,6 +81224,20 @@
 				}
 			},
 			"rarity": "rare"
+		},
+		{
+			"ENG_name": "Vithrak, Gaze of the Deadman",
+			"name": "维斯拉克，亡者之瞳",
+			"type": "RG|XDMG",
+			"source": "WoW",
+			"page": 113,
+			"rarity": "very rare",
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d3}",
+			"charges": 3,
+			"entries": [
+				"这枚戒指有 3 点充能，并在每天黎明恢复{@dice 1d3}点已消耗的充能。戴着戒指时，你可以采取{@action 魔法|XPHB}动作并消耗 1 点充能，得知距你 120 尺内一个可见生物的{@variantrule 抗性|XPHB|抗性}、{@variantrule 易伤|XPHB|易伤}和{@variantrule 免疫|XPHB|免疫}（若有）。当你使用此效应时，你的双眼会短暂变成浑浊的灰色枯壳。"
+			]
 		},
 		{
 			"ENG_name": "Void Card",
@@ -78542,6 +81659,7 @@
 			"lootTables": [
 				"奥秘 - 珍稀|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -79684,6 +82802,7 @@
 				"奥秘 - 普通|XDMG",
 				"器具 - 普通|XDMG"
 			],
+			"hasFluffImages": true,
 			"translator": "不全书"
 		},
 		{
@@ -80431,6 +83550,19 @@
 			"ENG_name": "Warhorse",
 			"name": "战马",
 			"type": "MNT|XPHB",
+			"source": "WoW",
+			"rarity": "none",
+			"value": 40000,
+			"carryingCapacity": 540,
+			"entries": [
+				"使用{@creature 战马|XMM}的属性数据块。",
+				"{@b 先决条件：}在{@book 暴风城|WoW|4|暴风城声望福利}声望 10+。"
+			]
+		},
+		{
+			"ENG_name": "Warhorse",
+			"name": "战马",
+			"type": "MNT|XPHB",
 			"source": "XPHB",
 			"page": 229,
 			"srd52": true,
@@ -80440,6 +83572,19 @@
 			"carryingCapacity": 540,
 			"speed": 60,
 			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Warhorse Skeleton",
+			"name": "骷髅战马",
+			"type": "MNT|XPHB",
+			"source": "WoW",
+			"rarity": "none",
+			"value": 50000,
+			"carryingCapacity": 540,
+			"entries": [
+				"使用{@creature 骷髅战马|XMM}的属性数据块。",
+				"{@b 先决条件：}在{@book 幽暗城|WoW|4|幽暗城声望福利}声望 10+。"
+			]
 		},
 		{
 			"ENG_name": "Warm Fungal Clothing",
@@ -80659,7 +83804,7 @@
 			"dmg2": "1d8",
 			"bonusWeapon": "+3",
 			"entries": [
-				"被保管在白浪山地牢中，这把三叉戟是一把精美的武器，上面雕刻着波涛、贝壳和海洋生物的图案。虽然你必须崇拜一位海神才能调谐这件武器，但波涛欣然接受新的皈依者。",
+				"被保管在白羽山地牢中，这把三叉戟是一把精美的武器，上面雕刻着波涛、贝壳和海洋生物的图案。虽然你必须崇拜一位海神才能调谐这件武器，但波涛欣然接受新的皈依者。",
 				"你用此魔法武器发动的攻击检定和伤害掷骰获得+3加值。如果你用它造成重击，目标将受到等于其生命值上限一半的额外暗蚀伤害。",
 				"该武器也可作为一把{@item 唤鱼三叉戟}和一把{@item 警戒武器}使用。当你持握它时，它可以赋予{@item 水下呼吸帽}的好处，并且你可以通过选择效应来将其用作{@item 力场魔方}，而无需按压方块侧面来选择。",
 				{
@@ -81080,7 +84225,7 @@
 			"dmg2": "1d10",
 			"bonusWeapon": "+3",
 			"entries": [
-				"征服是一柄由矮人锻造的强大战锤，在白色尖峰山脉的地牢中遗失。",
+				"征服是一柄由矮人锻造的强大战锤，在白羽山的地牢中遗失。",
 				"你使用此魔法武器发动的攻击检定和伤害掷骰获得+3加值。在你首次用征服进行攻击检定后的第二天黎明，你会产生对户外的恐惧，这种恐惧在你保持与该武器调谐期间持续存在。这导致当你能看到白昼天空时，你的攻击检定、豁免和属性检定具有劣势。",
 				{
 					"ENG_name": "Thrown Weapon",
@@ -81803,6 +84948,19 @@
 			],
 			"hasFluffImages": true,
 			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Wind Rider",
+			"name": "双足飞龙",
+			"type": "MNT|XPHB",
+			"source": "WoW",
+			"rarity": "none",
+			"value": 200000,
+			"carryingCapacity": 450,
+			"entries": [
+				"使用{@creature 巨蝙蝠|XMM}的属性数据块。",
+				"{@b 先决条件：}在{@book 部落|WoW|4|部落声望福利}声望 25+。"
+			]
 		},
 		{
 			"ENG_name": "Windskiff",
@@ -82968,6 +86126,18 @@
 			"translator": "不全书"
 		},
 		{
+			"ENG_name": "Zhevra",
+			"name": "斑马兽",
+			"type": "MNT|XPHB",
+			"source": "WoW",
+			"rarity": "none",
+			"value": 20000,
+			"carryingCapacity": 480,
+			"entries": [
+				"使用{@creature 赤鹿|XMM}的属性数据块。"
+			]
+		},
+		{
 			"ENG_name": "Zircon",
 			"name": "锆石",
 			"type": "$G|DMG",
@@ -83114,7 +86284,8 @@
 				"心灵吸收刺青|TCE",
 				"光耀吸收刺青|TCE",
 				"雷鸣吸收刺青|TCE"
-			]
+			],
+			"itemsHidden": true
 		},
 		{
 			"ENG_name": "Arcane Focus",
@@ -83372,7 +86543,8 @@
 			],
 			"lootTables": [
 				"魔法物品表G"
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Armor of Vulnerability",
@@ -83392,7 +86564,8 @@
 			],
 			"lootTables": [
 				"武备 - 珍稀|XDMG"
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Artisan's Tools",
@@ -83456,6 +86629,130 @@
 				"修补工具|XPHB",
 				"织布工具|XPHB",
 				"木雕工具|XPHB"
+			]
+		},
+		{
+			"ENG_name": "Ashen Bands of Courage",
+			"name": "勇气之灰烬指环",
+			"type": "RG|XDMG",
+			"source": "ICC",
+			"page": 71,
+			"rarity": "varies",
+			"reqAttune": "由拥有灰烬审判军声望值的角色",
+			"entries": [
+				"这枚金属指环缀有五颗闪亮的水晶，形似野兽的利爪。指环内侧印着忏悔者欧姆斯的锻印\u2014\u2014一个风格化的字母 O。",
+				"{@item 勇气之灰烬指环|ICC}（不常见，需声望值 3+）。佩戴这枚指环时，你为避免或结束{@condition 魅惑|XPHB}和{@condition 恐慌|XPHB}状态而进行的豁免检定具有{@variantrule 优势|XPHB}。",
+				"{@item 汹涌勇气之灰烬指环|ICC}（珍稀，需声望值 10+）。在不常见属性的基础上，佩戴这枚指环时，你的{@variantrule 护甲等级|XPHB}获得 +1 加值。",
+				"{@item 无上勇气之灰烬指环|ICC}（非常珍稀，需声望值 25+）。在不常见和珍稀属性的基础上，佩戴这枚指环时，你的豁免检定获得 +1 加值。",
+				"{@item 永恒勇气之灰烬指环|ICC}（传说，需声望值 50+）。在珍稀和非常珍稀属性的基础上，佩戴这枚指环时，你{@variantrule 免疫|XPHB}{@condition 魅惑|XPHB}和{@condition 恐慌|XPHB}状态。"
+			],
+			"items": [
+				"勇气之灰烬指环|ICC",
+				"汹涌勇气之灰烬指环|ICC",
+				"无上勇气之灰烬指环|ICC",
+				"永恒勇气之灰烬指环|ICC"
+			]
+		},
+		{
+			"ENG_name": "Ashen Bands of Destruction",
+			"name": "毁灭之灰烬指环",
+			"type": "RG|XDMG",
+			"source": "ICC",
+			"page": 71,
+			"rarity": "varies",
+			"reqAttune": "由拥有灰烬审判军声望值的角色",
+			"entries": [
+				"这枚厚重的金属指环饰有骷髅图案，两颗透亮的蓝色宝石充当双眼。指环内侧印着忏悔者欧姆斯的锻印\u2014\u2014一个风格化的字母 O。",
+				"{@item 毁灭之灰烬指环|ICC}（不常见，需声望值 3+）。佩戴这枚指环时，你的法术攻击检定获得 +1 加值，且你的法术豁免 DC 提升 1。",
+				"{@item 汹涌毁灭之灰烬指环|ICC}（珍稀，需声望值 10+）。法术攻击检定加值与法术豁免 DC 的提升均变为 +2。",
+				"{@item 无上毁灭之灰烬指环|ICC}（非常珍稀，需声望值 25+）。法术攻击检定加值与法术豁免 DC 的提升均变为 +3。此外，佩戴这枚指环时，你在所施展法术的伤害骰上掷出的每个 1 都可视为 2。",
+				{
+					"ENG_name": "{@item Ashen Band of Endless Destruction|ICC} (Charisma, Intelligence, or Wisdom) (Legendary, Requires Renown 50+)",
+					"name": "{@item 永恒毁灭之灰烬指环|ICC}（魅力、智力或感知）（传说，需声望值 50+）",
+					"type": "entries",
+					"entries": [
+						"在非常珍稀属性的基础上，佩戴这枚指环时，你的施法属性提升 2（上限为 30）。你还可以为自己施展的每个法术的一次伤害掷骰附加 +3 加值。"
+					]
+				}
+			],
+			"items": [
+				"毁灭之灰烬指环|ICC",
+				"汹涌毁灭之灰烬指环|ICC",
+				"无上毁灭之灰烬指环|ICC",
+				"永恒毁灭之灰烬指环|ICC"
+			]
+		},
+		{
+			"ENG_name": "Ashen Bands of Might",
+			"name": "力量之灰烬指环",
+			"type": "RG|XDMG",
+			"source": "ICC",
+			"page": 71,
+			"rarity": "varies",
+			"reqAttune": "由拥有灰烬审判军声望值的角色",
+			"entries": [
+				"这枚金属指环饰有风格化的头盔图案，紫色宝石构成护鼻与冠饰。指环内侧印着忏悔者欧姆斯的锻印\u2014\u2014一个风格化的字母 O。",
+				"{@item 力量之灰烬指环|ICC}（不常见，需声望值 3+）。佩戴这枚指环时，你的近战武器攻击伤害掷骰获得 +1 加值。",
+				"{@item 汹涌力量之灰烬指环|ICC}（珍稀，需声望值 10+）。在不常见属性的基础上，佩戴这枚指环时，你的力量为 19。若你在没有此属性时力量已为 19 或更高，则此属性不产生效果。",
+				"{@item 无上力量之灰烬指环|ICC}（非常珍稀，需声望值 25+）。在不常见属性的基础上，佩戴这枚指环时，你的力量为 21。若你在没有此属性时力量已为 21 或更高，则此属性不产生效果。此外，你在近战武器的伤害骰上掷出的每个 1 都可视为 2。",
+				"{@item 永恒力量之灰烬指环|ICC}（传说，需声望值 50+）。在不常见和非常珍稀属性的基础上，佩戴这枚指环时，你的力量为 25。若你在没有此属性时力量已为 25 或更高，则此属性不产生效果。"
+			],
+			"items": [
+				"力量之灰烬指环|ICC",
+				"汹涌力量之灰烬指环|ICC",
+				"无上力量之灰烬指环|ICC",
+				"永恒力量之灰烬指环|ICC"
+			]
+		},
+		{
+			"ENG_name": "Ashen Bands of Vengeance",
+			"name": "复仇之灰烬指环",
+			"type": "RG|XDMG",
+			"source": "ICC",
+			"page": 72,
+			"rarity": "varies",
+			"reqAttune": "由拥有灰烬审判军声望值的角色",
+			"entries": [
+				"这枚金属指环饰有风格化的头盔图案，深蓝色宝石构成护鼻与冠饰。指环内侧印着忏悔者欧姆斯的锻印\u2014\u2014一个风格化的字母 O。",
+				"{@item 复仇之灰烬指环|ICC}（不常见，需声望值 3+）。佩戴这枚指环时，你进行远程武器攻击检定时无视{@variantrule 掩护|XPHB|半身掩护}，且你的远程武器伤害掷骰获得 +2 加值。",
+				"{@item 汹涌复仇之灰烬指环|ICC}（珍稀，需声望值 10+）。在不常见属性的基础上，佩戴这枚指环时，以远程武器在长射程进行攻击不会使你的攻击检定具有{@variantrule 劣势|XPHB}。",
+				"{@item 无上复仇之灰烬指环|ICC}（非常珍稀，需声望值 25+）。在不常见和珍稀属性的基础上，佩戴这枚指环时，你进行远程攻击检定时无视{@variantrule 掩护|XPHB|四分之三掩护}，且你的远程武器攻击的最大射程翻倍。",
+				"{@item 永恒复仇之灰烬指环|ICC}（传说，需声望值 50+）。在不常见、珍稀和非常珍稀属性的基础上，佩戴这枚指环时，你在远程武器的伤害骰上掷出的每个 1 或 2 都可视为 3。"
+			],
+			"items": [
+				"复仇之灰烬指环|ICC",
+				"汹涌复仇之灰烬指环|ICC",
+				"无上复仇之灰烬指环|ICC",
+				"永恒复仇之灰烬指环|ICC"
+			]
+		},
+		{
+			"ENG_name": "Ashen Bands of Wisdom",
+			"name": "智慧之灰烬指环",
+			"type": "RG|XDMG",
+			"source": "ICC",
+			"page": 72,
+			"rarity": "varies",
+			"reqAttune": "由拥有灰烬审判军声望值的角色",
+			"entries": [
+				"这枚金属指环饰有椭圆图案，形似一只眼睛，中央镶着一颗莹亮的绿松石。指环内侧印着忏悔者欧姆斯的锻印\u2014\u2014一个风格化的字母 O。",
+				"{@item 智慧之灰烬指环|ICC}（不常见，需声望值 3+）。佩戴这枚指环时，你在为回复自己或其他生物{@variantrule 生命值|XPHB}而掷的骰上掷出的每个 1 都可视为 2。",
+				"{@item 汹涌智慧之灰烬指环|ICC}（珍稀，需声望值 10+）。在不常见属性的基础上，佩戴这枚指环时，每当你创造的效应为某个生物回复{@variantrule 生命值|XPHB}，你可以选择距该生物 30 尺内的另一个生物，令其也回复该数量一半的{@variantrule 生命值|XPHB}（向下取整）。",
+				"{@item 无上智慧之灰烬指环|ICC}（非常珍稀，需声望值 25+）。在不常见和珍稀属性的基础上，佩戴这枚指环时，你施展施法距离为触碰且无需攻击检定的法术时，可以将该法术的施法距离提升至 30 尺。",
+				{
+					"ENG_name": "{@item Ashen Band of Endless Wisdom|ICC} (Charisma, Intelligence, or Wisdom) (Legendary, Requires Renown 50+)",
+					"name": "{@item 永恒智慧之灰烬指环|ICC}（魅力、智力或感知）（传说，需声望值 50+）",
+					"type": "entries",
+					"entries": [
+						"在不常见、珍稀和非常珍稀属性的基础上，佩戴这枚指环时，你的施法属性也提升 2（上限为 30）。"
+					]
+				}
+			],
+			"items": [
+				"智慧之灰烬指环|ICC",
+				"汹涌智慧之灰烬指环|ICC",
+				"无上智慧之灰烬指环|ICC",
+				"永恒智慧之灰烬指环|ICC"
 			]
 		},
 		{
@@ -83865,7 +87162,8 @@
 				"绿彩玫瑰|WBtW",
 				"红彩玫瑰|WBtW",
 				"白彩玫瑰|WBtW"
-			]
+			],
+			"itemsHidden": true
 		},
 		{
 			"ENG_name": "Crystal Ball (Legendary Version)",
@@ -84242,7 +87540,8 @@
 				"武备 - 珍稀|XDMG",
 				"武备 - 极珍稀|XDMG",
 				"武备 - 传说|XDMG"
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Enspelled Staff",
@@ -84292,7 +87591,8 @@
 				"圣物 - 珍稀|XDMG",
 				"圣物 - 极珍稀|XDMG",
 				"圣物 - 传说|XDMG"
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Enspelled Weapon",
@@ -84325,7 +87625,8 @@
 				"器具 - 珍稀|XDMG",
 				"器具 - 极珍稀|XDMG",
 				"器具 - 传说|XDMG"
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Eye and Hand of Vecna",
@@ -85236,7 +88537,8 @@
 				"蕴能木杖（瑞西亚松木）|ERLW",
 				"蕴能木杖（撒法拉斯桦木）|ERLW",
 				"蕴能木杖（宙瑞亚特文格木）|ERLW"
-			]
+			],
+			"itemsHidden": true
 		},
 		{
 			"ENG_name": "Infiltrator's Key",
@@ -85972,7 +89274,8 @@
 				"防护法球（瑞西亚页岩）|ERLW",
 				"防护法球（撒法拉斯黑硅石）|ERLW",
 				"防护法球（宙瑞亚特大理石）|ERLW"
-			]
+			],
+			"itemsHidden": true
 		},
 		{
 			"ENG_name": "Potion of Giant Strength",
@@ -86201,12 +89504,12 @@
 		},
 		{
 			"ENG_name": "Potions of Healing",
-			"name": "治疗药水",
+			"name": "治疗药水分类",
 			"type": "P",
 			"source": "DMG",
 			"page": 187,
 			"reprintedAs": [
-				"治疗药水|XDMG"
+				"治疗药水分类|XDMG"
 			],
 			"rarity": "varies",
 			"items": [
@@ -86238,7 +89541,110 @@
 			"rarity": "varies",
 			"source": "XDMG",
 			"srd52": true,
-			"weight": 0.5
+			"weight": 0.5,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Potions of Mana",
+			"name": "法力药水",
+			"type": "P|XPHB",
+			"source": "WoW",
+			"page": 111,
+			"rarity": "varies",
+			"entries": [
+				"喝下这瓶药剂时，你回复一个已消耗的法术位。法术位的环阶取决于药剂的稀有度，见下表。（若给出的是环阶范围，由你选择回复的法术位。）",
+				"无论效力如何，药剂中的蓝色液体都散发着内在的光芒。",
+				{
+					"type": "table",
+					"colLabels": [
+						"药水",
+						"法术位环阶",
+						"稀有度"
+					],
+					"colStyles": [
+						"col-8",
+						"col-2 text-center",
+						"col-2 text-center"
+					],
+					"rows": [
+						[
+							"{@item 法力药水|WoW}",
+							"1",
+							"通用语"
+						],
+						[
+							"{@item 法力药水（高等）|WoW}",
+							"1-3",
+							"非普通"
+						],
+						[
+							"{@item 法力药水（强效）|WoW}",
+							"1-5",
+							"珍稀"
+						]
+					]
+				}
+			],
+			"items": [
+				"法力药水|WoW",
+				"法力药水（高等）|WoW",
+				"法力药水（强效）|WoW"
+			],
+			"itemsHidden": true,
+			"miscTags": [
+				"CNS"
+			]
+		},
+		{
+			"ENG_name": "Potions of Rejuvenation",
+			"name": "恢复药水",
+			"type": "P|XPHB",
+			"source": "WoW",
+			"page": 111,
+			"rarity": "varies",
+			"entries": [
+				"喝下这瓶药剂时，你回复{@variantrule 生命值|XPHB}和一个已消耗的法术位。回复的{@variantrule 生命值|XPHB}数量与法术位的环阶取决于药剂的稀有度，见下表。（若给出的是环阶范围，由你选择回复的法术位。）",
+				"无论效力如何，药剂中的品红色液体都自内部泛着微光。",
+				{
+					"type": "table",
+					"colLabels": [
+						"药水",
+						"回复的生命值与法术位",
+						"稀有度"
+					],
+					"colStyles": [
+						"col-5",
+						"col-5 text-center",
+						"col-2 text-center"
+					],
+					"rows": [
+						[
+							"{@item 恢复药水|WoW}",
+							"{@dice 3d4 + 3} 生命值；法术位环阶：1",
+							"非普通"
+						],
+						[
+							"{@item 恢复药水（高等）|WoW}",
+							"{@dice 6d4 + 6} 生命值；法术位环阶：1-3",
+							"珍稀"
+						],
+						[
+							"{@item 恢复药水（强效）|WoW}",
+							"{@dice 9d4 + 9} 生命值；法术位环阶：1-5",
+							"极珍稀"
+						]
+					]
+				}
+			],
+			"items": [
+				"恢复药水|WoW",
+				"恢复药水（高等）|WoW",
+				"恢复药水（强效）|WoW"
+			],
+			"itemsHidden": true,
+			"miscTags": [
+				"CNS"
+			]
 		},
 		{
 			"ENG_name": "Prehistoric Figurine of Wondrous Power",
@@ -86424,7 +89830,8 @@
 				"命令土元素戒指",
 				"命令火元素戒指",
 				"命令水元素戒指"
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Ring of Elemental Command",
@@ -86444,7 +89851,8 @@
 				"命令元素戒指（土）|XDMG",
 				"命令元素戒指（火）|XDMG",
 				"命令元素戒指（水）|XDMG"
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Ring of Resistance",
@@ -86639,7 +90047,8 @@
 			"itemsHidden": true,
 			"lootTables": [
 				"圣物 - 珍稀|XDMG"
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Rod of the Honed Mind",
@@ -86688,7 +90097,8 @@
 				"+1 契约掌控者权杖",
 				"+2 契约掌控者权杖",
 				"+3 契约掌控者权杖"
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Rod of the Pact Keeper",
@@ -86711,7 +90121,8 @@
 			],
 			"lootTables": [
 				"奥秘 - 非普通|XDMG"
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Ruin's Wake",
@@ -87513,6 +90924,63 @@
 			}
 		},
 		{
+			"ENG_name": "Troll's Blood Elixirs",
+			"name": "巨魔之血药剂",
+			"type": "P|XPHB",
+			"source": "WoW",
+			"page": 113,
+			"rarity": "varies",
+			"entries": [
+				"喝下这瓶药剂时，你回复一定数量的{@variantrule 生命值|XPHB}，具体数值取决于药剂的稀有度，见下表。在接下来的 1 分钟内，若你仍有至少 1 {@variantrule 生命值|XPHB|生命值}，你在自己的每个回合开始时再次回复该数值的{@variantrule 生命值|XPHB}。",
+				"这种浓稠的绿色药剂由草药制成。本次药剂的制作过程没有伤害任何巨魔。",
+				{
+					"type": "table",
+					"colLabels": [
+						"药水",
+						"HP",
+						"稀有度"
+					],
+					"colStyles": [
+						"col-8",
+						"col-2 text-center",
+						"col-2 text-center"
+					],
+					"rows": [
+						[
+							"{@item 巨魔之血药剂|WoW}",
+							"2",
+							"非普通"
+						],
+						[
+							"{@item 巨魔之血药剂（高等）|WoW}",
+							"4",
+							"珍稀"
+						],
+						[
+							"{@item 巨魔之血药剂（强效）|WoW}",
+							"6",
+							"极珍稀"
+						],
+						[
+							"{@item 巨魔之血药剂（极效）|WoW}",
+							"8",
+							"传说"
+						]
+					]
+				}
+			],
+			"items": [
+				"巨魔之血药剂|WoW",
+				"巨魔之血药剂（高等）|WoW",
+				"巨魔之血药剂（强效）|WoW",
+				"巨魔之血药剂（极效）|WoW"
+			],
+			"itemsHidden": true,
+			"miscTags": [
+				"CNS"
+			]
+		},
+		{
 			"ENG_name": "True-Ice Shards",
 			"name": "真冰碎片",
 			"type": "M",
@@ -87764,7 +91232,8 @@
 				"+1 神功绑带|XDMG",
 				"+2 神功绑带|XDMG",
 				"+3 神功绑带|XDMG"
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Wraps of Unarmed Prowess",

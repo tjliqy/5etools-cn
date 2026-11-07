@@ -93,7 +93,7 @@
 				}
 			],
 			"environment": [
-				"城市"
+				"urban"
 			],
 			"traitTags": [
 				"Magic Resistance"
@@ -167,7 +167,7 @@
 				"stealth": "+5"
 			},
 			"senses": [
-				"黑暗视觉120尺（不受魔法{@variantrule 黑暗|XPHB}阻碍）"
+				"黑暗视觉 120 尺（不受魔法{@variantrule 黑暗|XPHB}影响）"
 			],
 			"passive": 13,
 			"resist": [
@@ -240,7 +240,7 @@
 				}
 			],
 			"environment": [
-				"位面, 九层地狱"
+				"planar, nine hells"
 			],
 			"traitTags": [
 				"Devil's Sight",
@@ -412,7 +412,7 @@
 				}
 			],
 			"environment": [
-				"位面, 九层地狱"
+				"planar, nine hells"
 			],
 			"traitTags": [
 				"Magic Resistance"
@@ -511,7 +511,7 @@
 				"stealth": "+8"
 			},
 			"senses": [
-				"黑暗视觉120尺（不受魔法{@variantrule 黑暗|XPHB}阻碍）"
+				"黑暗视觉 120 尺（不受魔法{@variantrule 黑暗|XPHB}影响）"
 			],
 			"passive": 18,
 			"resist": [
@@ -687,9 +687,9 @@
 				"source": "ABH"
 			},
 			"environment": [
-				"位面, 九层地狱",
-				"幽暗地域",
-				"城市"
+				"planar, nine hells",
+				"underdark",
+				"urban"
 			],
 			"traitTags": [
 				"Devil's Sight",
@@ -908,8 +908,8 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"城市"
+				"underdark",
+				"urban"
 			],
 			"tokenCredit": "ThePrisoner",
 			"tokenCustom": true,

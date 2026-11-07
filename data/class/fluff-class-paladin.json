@@ -87,7 +87,7 @@
 									"type": "table",
 									"caption": "个人目标",
 									"colLabels": [
-										"{@dice d6}",
+										"{@dice D6}",
 										"个人目标"
 									],
 									"colStyles": [
@@ -164,7 +164,7 @@
 									"type": "table",
 									"caption": "徽记",
 									"colLabels": [
-										"{@dice d6}",
+										"{@dice D6}",
 										"徽记"
 									],
 									"colStyles": [
@@ -241,7 +241,7 @@
 									"type": "table",
 									"caption": "复仇",
 									"colLabels": [
-										"{@dice d6}",
+										"{@dice D6}",
 										"复仇"
 									],
 									"colStyles": [
@@ -318,7 +318,7 @@
 									"type": "table",
 									"caption": "诱惑",
 									"colLabels": [
-										"{@dice d6}",
+										"{@dice D6}",
 										"诱惑"
 									],
 									"colStyles": [
@@ -432,16 +432,18 @@
 			]
 		},
 		{
-			"name": "Paladin",
+			"ENG_name": "Paladin",
+			"name": "圣骑士",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Paladin",
+					"name": "圣骑士",
 					"type": "section",
-					"name": "Paladin",
 					"entries": [
-						"The call of the paladin is to protect the weak, mete out justice to the unjust, and vanquish evil from the darkest corners of the world. These holy warriors are heavily armored and favor powerful weapons as they confront the toughest of foes, and the blessing of the Light allows them to heal wounds and smite their enemies.",
-						"Paladins' magical power comes from the Holy Light, one of the great cosmic forces of the universe (see \"{@book The Cosmic Forces|WoW|5|The Cosmic Forces}\" in chapter 5). The first paladins on Azeroth were humans who belonged to the Church of the Holy Light. Due to their virtue and piety, they were inducted into the Order of the Silver Hand during the Second War. Dwarves soon joined the ranks of the knights, and the order played a key role in battling both the Horde in the Second War and the Scourge in the Third War.",
-						"{@race Draenei|WoW} access the power of the Light through their connection to the naaru, living embodiments of Light, while {@race Elf|WoW|blood elves} channel the Light's power through their Sunwell. {@race Tauren|WoW} servants of An'she, their sun god, wield holy power in similar ways, as do {@race Troll|WoW|Zandalari troll} devotees of Rezan. {@race Earthen|WoW} warriors called Ordinants channel the power of Order with effects that are indistinguishable from paladins' use of the Light."
+						"圣骑士的天命是保护弱者、惩处不义、从世界最黑暗的角落铲除邪恶。这些神圣的勇士身披重甲、手持强力武器直面最顽强的敌人，而圣光的祝福让他们能治愈创伤、痛击敌人。",
+						"圣骑士的魔法之力源自圣光\u2014\u2014宇宙的伟大力量之一（见第五章的\"{@book 宇宙之力|WoW|5|The Cosmic Forces}\"）。艾泽拉斯最初的圣骑士是隶属圣光教会的人类。凭借美德与虔诚，他们在第二次战争期间入选白银之手骑士团。矮人随即加入骑士行列，该骑士团在第二次战争对抗部落、第三次战争对抗天灾的战斗中都发挥了关键作用。",
+						"{@race 德莱尼|WoW}通过与纳鲁\u2014\u2014圣光的活体化身\u2014\u2014的联结获取圣光之力，而{@race 精灵|WoW|血精灵}则通过太阳之井引导圣光之力。侍奉太阳神安希的{@race 牛头人|WoW}、以及{@race 巨魔|WoW|赞达拉巨魔}中雷赞的信徒，也以相似的方式挥洒神圣之力。名为\"秩序执守者\"的{@race 土灵|WoW}战士引导秩序之力，其效果与圣骑士运用圣光别无二致。"
 					]
 				}
 			],
@@ -454,7 +456,7 @@
 					},
 					"width": 1700,
 					"height": 2247,
-					"title": "Blood Elf Paladin",
+					"title": "血精灵圣骑士",
 					"credit": "Wei Wang, Blizzard Artist"
 				},
 				{

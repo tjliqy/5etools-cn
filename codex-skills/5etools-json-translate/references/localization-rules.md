@@ -17,6 +17,12 @@
 - Do not silently omit repeated sentences, examples, table cells, captions, footnotes, or nested entries that are in scope.
 - Keep proper nouns untranslated only when references and repository usage support that choice.
 
+### Adventure and book terminology
+
+- In `adventureData` and `bookData`, annotate the first body-text occurrence of each proper term (such as a person's name, place name, or monster name) in `entries` with its original English in parentheses immediately after the Chinese translation, e.g. `灰烬谷（Ashen Vale）`. Do not count the title field `name` as a body-text occurrence; the first occurrence in `entries` still receives the annotation.
+- Apply this once per distinct term across the adventure or book body, rather than repeating the English at every mention. Preserve the annotation when the term appears in nested `entries` content, while avoiding machine fields and tag syntax that are not rendered as body text.
+- Do not add the English annotation for terms originating in the Player’s Handbook (`PHB`, `XPHB`), Monster Manual (`MM`, `XMM`), or Dungeon Master’s Guide (`DMG`, `XDMG`); their established Chinese names are sufficiently familiar. Determine origin from the referenced entity's source metadata or source-qualified tag/UID, not from a coincidental name match. If a term has no reliable source attribution, follow the annotation rule.
+
 ## Incremental alignment
 
 - A line diff is evidence of source change, not necessarily a one-to-one target line map. Reconstruct the semantic change from the old English object and current English object.

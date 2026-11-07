@@ -106,8 +106,8 @@
 				}
 			],
 			"environment": [
-				"山地",
-				"位面, 空中"
+				"mountain",
+				"planar, air"
 			],
 			"treasure": [
 				"器具",
@@ -199,8 +199,8 @@
 				}
 			],
 			"environment": [
-				"山地",
-				"位面, 空中"
+				"mountain",
+				"planar, air"
 			],
 			"treasure": [
 				"器具",
@@ -342,7 +342,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"个体",
@@ -539,8 +539,8 @@
 				"source": "XMM"
 			},
 			"environment": [
-				"幽暗地域",
-				"水下"
+				"underdark",
+				"underwater"
 			],
 			"treasure": [
 				"圣物"
@@ -689,7 +689,7 @@
 				}
 			],
 			"environment": [
-				"极地"
+				"arctic"
 			],
 			"treasure": [
 				"任何"
@@ -836,7 +836,7 @@
 					"ENG_name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
 					"name": "传奇抗性（3/日，或巢穴内4/日）",
 					"entries": [
-						"龙豁免失败时，可以将其改为豁免成功。"
+						"该龙豁免失败时，可以将其改为豁免成功。"
 					]
 				}
 			],
@@ -893,7 +893,7 @@
 				"source": "XMM"
 			},
 			"environment": [
-				"沼泽"
+				"swamp"
 			],
 			"treasure": [
 				"圣物"
@@ -1055,7 +1055,7 @@
 					"ENG_name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
 					"name": "传奇抗性（3/日，或巢穴内4/日）",
 					"entries": [
-						"龙豁免失败时，可以将其改为豁免成功。"
+						"该龙豁免失败时，可以将其改为豁免成功。"
 					]
 				}
 			],
@@ -1112,8 +1112,8 @@
 				"source": "XMM"
 			},
 			"environment": [
-				"海岸",
-				"荒漠"
+				"coastal",
+				"desert"
 			],
 			"treasure": [
 				"圣物"
@@ -1269,7 +1269,7 @@
 					"ENG_name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
 					"name": "传奇抗性（3/日，或巢穴内4/日）",
 					"entries": [
-						"龙豁免失败时，可以将其改为豁免成功。"
+						"该龙豁免失败时，可以将其改为豁免成功。"
 					]
 				}
 			],
@@ -1333,7 +1333,7 @@
 				"source": "XMM"
 			},
 			"environment": [
-				"荒漠"
+				"desert"
 			],
 			"treasure": [
 				"奥秘"
@@ -1493,7 +1493,7 @@
 					"ENG_name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
 					"name": "传奇抗性（3/日，或巢穴内4/日）",
 					"entries": [
-						"龙豁免失败时，可以将其改为豁免成功。"
+						"该龙豁免失败时，可以将其改为豁免成功。"
 					]
 				}
 			],
@@ -1557,7 +1557,7 @@
 				"source": "XMM"
 			},
 			"environment": [
-				"海岸"
+				"coastal"
 			],
 			"treasure": [
 				"器具"
@@ -1718,7 +1718,7 @@
 					"ENG_name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
 					"name": "传奇抗性（3/日，或巢穴内4/日）",
 					"entries": [
-						"龙豁免失败时，可以将其改为豁免成功。"
+						"该龙豁免失败时，可以将其改为豁免成功。"
 					]
 				}
 			],
@@ -1782,7 +1782,7 @@
 				"source": "XMM"
 			},
 			"environment": [
-				"丘陵"
+				"hill"
 			],
 			"treasure": [
 				"奥秘"
@@ -1948,7 +1948,7 @@
 					"ENG_name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
 					"name": "传奇抗性（3/日，或巢穴内4/日）",
 					"entries": [
-						"龙豁免失败时，可以将其改为豁免成功。"
+						"该龙豁免失败时，可以将其改为豁免成功。"
 					]
 				}
 			],
@@ -2012,8 +2012,8 @@
 				"source": "XMM"
 			},
 			"environment": [
-				"森林",
-				"草地"
+				"forest",
+				"grassland"
 			],
 			"treasure": [
 				"奥秘"
@@ -2183,7 +2183,7 @@
 					"ENG_name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
 					"name": "传奇抗性（3/日，或巢穴内4/日）",
 					"entries": [
-						"龙豁免失败时，可以将其改为豁免成功。"
+						"该龙豁免失败时，可以将其改为豁免成功。"
 					]
 				}
 			],
@@ -2240,7 +2240,7 @@
 				"source": "XMM"
 			},
 			"environment": [
-				"森林"
+				"forest"
 			],
 			"treasure": [
 				"奥秘"
@@ -2380,7 +2380,7 @@
 						"红龙施展以下一道法术，无需材料成分并使用魅力作为施法属性（法术豁免{@dc 20}，{@hit 12}法术攻击命中）："
 					],
 					"will": [
-						"{@spell 命令术|XPHB}（2环版本）",
+						"{@spell 命令术|XPHB} (2环版本)",
 						"{@spell 侦测魔法|XPHB}",
 						"{@spell 灼热射线|XPHB}"
 					],
@@ -2398,7 +2398,7 @@
 					"ENG_name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
 					"name": "传奇抗性（3/日，或巢穴内4/日）",
 					"entries": [
-						"龙豁免失败时，可以将其改为豁免成功。"
+						"该龙豁免失败时，可以将其改为豁免成功。"
 					]
 				}
 			],
@@ -2455,8 +2455,8 @@
 				"source": "XMM"
 			},
 			"environment": [
-				"丘陵",
-				"山地"
+				"hill",
+				"mountain"
 			],
 			"treasure": [
 				"任何"
@@ -2599,7 +2599,7 @@
 					],
 					"daily": {
 						"1e": [
-							"{@spell 冰风暴|XPHB}（五环版本）",
+							"{@spell 冰风暴|XPHB} (5环版本)",
 							"{@spell 诚实之域|XPHB}"
 						]
 					},
@@ -2612,7 +2612,7 @@
 					"ENG_name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
 					"name": "传奇抗性（3/日，或巢穴内4/日）",
 					"entries": [
-						"龙豁免失败时，可以将其改为豁免成功。"
+						"该龙豁免失败时，可以将其改为豁免成功。"
 					]
 				}
 			],
@@ -2676,8 +2676,8 @@
 				"source": "XMM"
 			},
 			"environment": [
-				"山地",
-				"城市"
+				"mountain",
+				"urban"
 			],
 			"treasure": [
 				"奥秘"
@@ -2844,7 +2844,7 @@
 					"ENG_name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
 					"name": "传奇抗性（3/日，或巢穴内4/日）",
 					"entries": [
-						"龙豁免失败时，可以将其改为豁免成功。"
+						"该龙豁免失败时，可以将其改为豁免成功。"
 					]
 				}
 			],
@@ -2894,7 +2894,7 @@
 				"source": "XMM"
 			},
 			"environment": [
-				"极地"
+				"arctic"
 			],
 			"treasure": [
 				"奥秘"
@@ -3051,9 +3051,9 @@
 				}
 			],
 			"environment": [
-				"荒漠",
-				"山地",
-				"位面, 空中"
+				"desert",
+				"mountain",
+				"planar, air"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -3151,7 +3151,7 @@
 				}
 			],
 			"environment": [
-				"草地"
+				"grassland"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -3279,7 +3279,7 @@
 					"ENG_name": "Legendary Resistance (4/Day, or 5/Day in Lair)",
 					"name": "传奇抗性（4/日，或巢穴内5/日）",
 					"entries": [
-						"龙豁免失败时，可以将其改为豁免成功。"
+						"该龙豁免失败时，可以将其改为豁免成功。"
 					]
 				}
 			],
@@ -3336,7 +3336,7 @@
 				"source": "XMM"
 			},
 			"environment": [
-				"沼泽"
+				"swamp"
 			],
 			"treasure": [
 				"圣物"
@@ -3499,7 +3499,7 @@
 					"ENG_name": "Legendary Resistance (4/Day, or 5/Day in Lair)",
 					"name": "传奇抗性（4/日，或巢穴内5/日）",
 					"entries": [
-						"龙豁免失败时，可以将其改为豁免成功。"
+						"该龙豁免失败时，可以将其改为豁免成功。"
 					]
 				}
 			],
@@ -3556,8 +3556,8 @@
 				"source": "XMM"
 			},
 			"environment": [
-				"海岸",
-				"荒漠"
+				"coastal",
+				"desert"
 			],
 			"treasure": [
 				"圣物"
@@ -3713,7 +3713,7 @@
 					"ENG_name": "Legendary Resistance (4/Day, or 5/Day in Lair)",
 					"name": "传奇抗性（4/日，或巢穴内5/日）",
 					"entries": [
-						"龙豁免失败时，可以将其改为豁免成功。"
+						"该龙豁免失败时，可以将其改为豁免成功。"
 					]
 				}
 			],
@@ -3777,7 +3777,7 @@
 				"source": "XMM"
 			},
 			"environment": [
-				"荒漠"
+				"desert"
 			],
 			"treasure": [
 				"奥秘"
@@ -3939,7 +3939,7 @@
 					"ENG_name": "Legendary Resistance (4/Day, or 5/Day in Lair)",
 					"name": "传奇抗性（4/日，或巢穴内5/日）",
 					"entries": [
-						"龙豁免失败时，可以将其改为豁免成功。"
+						"该龙豁免失败时，可以将其改为豁免成功。"
 					]
 				}
 			],
@@ -4003,7 +4003,7 @@
 				"source": "XMM"
 			},
 			"environment": [
-				"海岸"
+				"coastal"
 			],
 			"treasure": [
 				"器具"
@@ -4165,7 +4165,7 @@
 					"ENG_name": "Legendary Resistance (4/Day, or 5/Day in Lair)",
 					"name": "传奇抗性（4/日，或巢穴内5/日）",
 					"entries": [
-						"龙豁免失败时，可以将其改为豁免成功。"
+						"该龙豁免失败时，可以将其改为豁免成功。"
 					]
 				}
 			],
@@ -4229,7 +4229,7 @@
 				"source": "XMM"
 			},
 			"environment": [
-				"丘陵"
+				"hill"
 			],
 			"treasure": [
 				"奥秘"
@@ -4397,7 +4397,7 @@
 					"ENG_name": "Legendary Resistance (4/Day, or 5/Day in Lair)",
 					"name": "传奇抗性（4/日，或巢穴内5/日）",
 					"entries": [
-						"龙豁免失败时，可以将其改为豁免成功。"
+						"该龙豁免失败时，可以将其改为豁免成功。"
 					]
 				}
 			],
@@ -4461,8 +4461,8 @@
 				"source": "XMM"
 			},
 			"environment": [
-				"森林",
-				"草地"
+				"forest",
+				"grassland"
 			],
 			"treasure": [
 				"奥秘"
@@ -4630,7 +4630,7 @@
 					"ENG_name": "Legendary Resistance (4/Day, or 5/Day in Lair)",
 					"name": "传奇抗性（4/日，或巢穴内5/日）",
 					"entries": [
-						"龙豁免失败时，可以将其改为豁免成功。"
+						"该龙豁免失败时，可以将其改为豁免成功。"
 					]
 				}
 			],
@@ -4687,7 +4687,7 @@
 				"source": "XMM"
 			},
 			"environment": [
-				"森林"
+				"forest"
 			],
 			"treasure": [
 				"奥秘"
@@ -4828,7 +4828,7 @@
 						"红龙施展以下一道法术，无需材料成分并使用魅力作为施法属性（法术豁免{@dc 23}，法术攻击命中{@hit 15}）："
 					],
 					"will": [
-						"{@spell 命令术|XPHB}（2环版本）",
+						"{@spell 命令术|XPHB} (2环版本)",
 						"{@spell 侦测魔法|XPHB}",
 						"{@spell 灼热射线|XPHB}（三环版本）"
 					],
@@ -4847,7 +4847,7 @@
 					"ENG_name": "Legendary Resistance (4/Day, or 5/Day in Lair)",
 					"name": "传奇抗性（4/日，或巢穴内5/日）",
 					"entries": [
-						"龙豁免失败时，可以将其改为豁免成功。"
+						"该龙豁免失败时，可以将其改为豁免成功。"
 					]
 				}
 			],
@@ -4904,8 +4904,8 @@
 				"source": "XMM"
 			},
 			"environment": [
-				"丘陵",
-				"山地"
+				"hill",
+				"mountain"
 			],
 			"treasure": [
 				"任何"
@@ -5063,7 +5063,7 @@
 					"ENG_name": "Legendary Resistance (4/Day, or 5/Day in Lair)",
 					"name": "传奇抗性（4/日，或巢穴内5/日）",
 					"entries": [
-						"龙豁免失败时，可以将其改为豁免成功。"
+						"该龙豁免失败时，可以将其改为豁免成功。"
 					]
 				}
 			],
@@ -5127,8 +5127,8 @@
 				"source": "XMM"
 			},
 			"environment": [
-				"山地",
-				"城市"
+				"mountain",
+				"urban"
 			],
 			"treasure": [
 				"奥秘"
@@ -5291,7 +5291,7 @@
 					"ENG_name": "Legendary Resistance (4/Day, or 5/Day in Lair)",
 					"name": "传奇抗性（4/日，或巢穴内5/日）",
 					"entries": [
-						"龙豁免失败时，可以将其改为豁免成功。"
+						"该龙豁免失败时，可以将其改为豁免成功。"
 					]
 				}
 			],
@@ -5341,7 +5341,7 @@
 				"source": "XMM"
 			},
 			"environment": [
-				"极地"
+				"arctic"
 			],
 			"treasure": [
 				"奥秘"
@@ -5637,7 +5637,7 @@
 				}
 			],
 			"environment": [
-				"位面, 万兽乡"
+				"planar, beastlands"
 			],
 			"treasure": [
 				"圣物"
@@ -5866,7 +5866,7 @@
 				}
 			],
 			"environment": [
-				"城市"
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -5966,7 +5966,7 @@
 				}
 			],
 			"environment": [
-				"城市"
+				"urban"
 			],
 			"traitTags": [
 				"Flyby"
@@ -6061,7 +6061,7 @@
 				}
 			],
 			"environment": [
-				"城市"
+				"urban"
 			],
 			"senseTags": [
 				"B"
@@ -6146,7 +6146,7 @@
 				}
 			],
 			"environment": [
-				"城市"
+				"urban"
 			],
 			"senseTags": [
 				"B"
@@ -6233,8 +6233,8 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"草地"
+				"forest",
+				"grassland"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -6325,7 +6325,7 @@
 				}
 			],
 			"environment": [
-				"草地"
+				"grassland"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -6419,7 +6419,7 @@
 				}
 			],
 			"environment": [
-				"森林"
+				"forest"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -6623,7 +6623,7 @@
 				}
 			],
 			"environment": [
-				"位面, 下层"
+				"planar, lower"
 			],
 			"treasure": [
 				"奥秘"
@@ -6887,7 +6887,7 @@
 				"source": "XMM"
 			},
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"奥秘"
@@ -7018,7 +7018,7 @@
 				}
 			],
 			"environment": [
-				"水下"
+				"underwater"
 			],
 			"traitTags": [
 				"Amphibious"
@@ -7140,7 +7140,7 @@
 						],
 						"1e": [
 							"{@spell 寒冰锥|XPHB}（九环版本）",
-							"{@spell 心灵屏障|XPHB}（于战斗前施展）",
+							"{@spell 心灵屏障|XPHB}（在战斗前施展）",
 							"{@spell 探知术|XPHB}",
 							"{@spell 传送术|XPHB}"
 						]
@@ -7212,7 +7212,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"奥秘",
@@ -7397,7 +7397,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"个体",
@@ -7550,7 +7550,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"器具",
@@ -7638,7 +7638,7 @@
 				}
 			],
 			"environment": [
-				"森林"
+				"forest"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -7716,7 +7716,7 @@
 				}
 			],
 			"environment": [
-				"森林"
+				"forest"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -7779,14 +7779,14 @@
 					"ENG_name": "Beak",
 					"name": "喙啄",
 					"entries": [
-						"{@atkr m}： {@hit 4}，触及 5 尺。{@h}： 5（{@damage 1d6 + 2}）挥砍伤害。"
+						"{@atkr m} 命中{@hit 4}，触及 5 尺。{@h}5 ({@damage 1d6 + 2}) 点挥砍伤害。"
 					]
 				}
 			],
 			"environment": [
-				"极地",
-				"草地",
-				"丘陵"
+				"arctic",
+				"grassland",
+				"hill"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -7928,8 +7928,8 @@
 				}
 			],
 			"environment": [
-				"山地",
-				"位面, 火"
+				"mountain",
+				"planar, fire"
 			],
 			"treasure": [
 				"武备",
@@ -8042,8 +8042,8 @@
 				}
 			],
 			"environment": [
-				"山地",
-				"位面, 火"
+				"mountain",
+				"planar, fire"
 			],
 			"treasure": [
 				"武备",
@@ -8121,8 +8121,8 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"丘陵"
+				"forest",
+				"hill"
 			],
 			"familiar": true,
 			"soundClip": {
@@ -8201,7 +8201,7 @@
 				}
 			],
 			"environment": [
-				"森林"
+				"forest"
 			],
 			"familiar": true,
 			"soundClip": {
@@ -8359,7 +8359,7 @@
 				}
 			],
 			"environment": [
-				"位面, 无底深渊"
+				"planar, abyss"
 			],
 			"treasure": [
 				"武备"
@@ -8476,7 +8476,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"任何"
@@ -8596,7 +8596,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"任何"
@@ -8729,7 +8729,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"任何"
@@ -8864,7 +8864,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"任何"
@@ -9030,7 +9030,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"圣物"
@@ -9195,12 +9195,12 @@
 					"ENG_name": "Hurl Flame",
 					"name": "投掷烈焰",
 					"entries": [
-						"{@atkr r} ： {@hit 5}，射程 150 尺。{@h} ：17（{@damage 5d6}）火焰伤害。若目标为未被着装或携带的可燃物件，则目标开始{@hazard 燃烧|XPHB}。"
+						"{@atkr r} ： {@hit 5}，射程 150 尺。{@h} ：17（{@damage 5d6}）火焰伤害。若目标为未被着装或携带的可燃物件，则目标开始{@hazard burning|XPHB}。"
 					]
 				}
 			],
 			"environment": [
-				"位面, 九层地狱"
+				"planar, nine hells"
 			],
 			"treasure": [
 				"任何"
@@ -9374,7 +9374,7 @@
 				}
 			],
 			"environment": [
-				"位面, 无底深渊"
+				"planar, abyss"
 			],
 			"treasure": [
 				"任何"
@@ -9483,8 +9483,8 @@
 				}
 			],
 			"environment": [
-				"山地",
-				"幽暗地域"
+				"mountain",
+				"underdark"
 			],
 			"treasure": [
 				"任何"
@@ -9567,10 +9567,10 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"山地",
-				"幽暗地域",
-				"城市"
+				"forest",
+				"mountain",
+				"underdark",
+				"urban"
 			],
 			"familiar": true,
 			"soundClip": {
@@ -9690,7 +9690,7 @@
 				}
 			],
 			"environment": [
-				"位面, 九层地狱"
+				"planar, nine hells"
 			],
 			"treasure": [
 				"武备"
@@ -9825,7 +9825,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"treasure": [
 				"任何"
@@ -10088,7 +10088,7 @@
 				"source": "XMM"
 			},
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"treasure": [
 				"奥秘"
@@ -10278,9 +10278,9 @@
 				}
 			],
 			"environment": [
-				"位面, 堕影冥界",
-				"幽暗地域",
-				"城市"
+				"planar, shadowfell",
+				"underdark",
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -10395,7 +10395,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"武备",
@@ -10523,7 +10523,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"武备",
@@ -10612,12 +10612,12 @@
 					"ENG_name": "Rend",
 					"name": "撕裂",
 					"entries": [
-						"{@atkr m}： {@hit 4}，触及 5 尺。{@h}： 5（{@damage 1d6 + 2}）挥砍伤害。"
+						"{@atkr m} 命中{@hit 4}，触及 5 尺。{@h}5 ({@damage 1d6 + 2}) 点挥砍伤害。"
 					]
 				}
 			],
 			"environment": [
-				"森林"
+				"forest"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -10737,7 +10737,7 @@
 				}
 			],
 			"environment": [
-				"沼泽"
+				"swamp"
 			],
 			"treasure": [
 				"圣物"
@@ -10876,7 +10876,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -10969,8 +10969,8 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"位面, 妖精荒野"
+				"forest",
+				"planar, feywild"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -11154,7 +11154,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"任何"
@@ -11248,12 +11248,12 @@
 				}
 			],
 			"environment": [
-				"极地",
-				"海岸",
-				"森林",
-				"草地",
-				"丘陵",
-				"山地"
+				"arctic",
+				"coastal",
+				"forest",
+				"grassland",
+				"hill",
+				"mountain"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -11361,8 +11361,8 @@
 				}
 			],
 			"environment": [
-				"海岸",
-				"荒漠"
+				"coastal",
+				"desert"
 			],
 			"treasure": [
 				"圣物"
@@ -11483,7 +11483,7 @@
 				}
 			],
 			"environment": [
-				"位面, 混沌海"
+				"planar, limbo"
 			],
 			"treasure": [
 				"任何"
@@ -11581,9 +11581,9 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"草地",
-				"丘陵"
+				"forest",
+				"grassland",
+				"hill"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -11717,7 +11717,7 @@
 				}
 			],
 			"environment": [
-				"位面, 九层地狱"
+				"planar, nine hells"
 			],
 			"treasure": [
 				"器具"
@@ -11850,7 +11850,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"treasure": [
 				"圣物"
@@ -11986,7 +11986,7 @@
 				}
 			],
 			"environment": [
-				"荒漠"
+				"desert"
 			],
 			"treasure": [
 				"奥秘"
@@ -12108,9 +12108,9 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"草地",
-				"丘陵"
+				"forest",
+				"grassland",
+				"hill"
 			],
 			"treasure": [
 				"任何"
@@ -12249,7 +12249,7 @@
 				}
 			],
 			"environment": [
-				"海岸"
+				"coastal"
 			],
 			"treasure": [
 				"器具"
@@ -12364,9 +12364,9 @@
 				}
 			],
 			"environment": [
-				"极地",
-				"森林",
-				"丘陵"
+				"arctic",
+				"forest",
+				"hill"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -12503,10 +12503,10 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"草地",
-				"位面, 妖精荒野",
-				"幽暗地域"
+				"forest",
+				"grassland",
+				"planar, feywild",
+				"underdark"
 			],
 			"treasure": [
 				"武备",
@@ -12636,10 +12636,10 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"草地",
-				"位面, 妖精荒野",
-				"幽暗地域"
+				"forest",
+				"grassland",
+				"planar, feywild",
+				"underdark"
 			],
 			"treasure": [
 				"武备",
@@ -12748,9 +12748,9 @@
 				}
 			],
 			"environment": [
-				"草地",
-				"丘陵",
-				"山地"
+				"grassland",
+				"hill",
+				"mountain"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -12841,9 +12841,9 @@
 				}
 			],
 			"environment": [
-				"草地",
-				"丘陵",
-				"山地"
+				"grassland",
+				"hill",
+				"mountain"
 			],
 			"senseTags": [
 				"D",
@@ -12976,7 +12976,7 @@
 				}
 			],
 			"environment": [
-				"沼泽"
+				"swamp"
 			],
 			"treasure": [
 				"器具",
@@ -13095,7 +13095,7 @@
 				}
 			],
 			"environment": [
-				"沼泽"
+				"swamp"
 			],
 			"treasure": [
 				"器具",
@@ -13232,7 +13232,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"圣物"
@@ -13339,7 +13339,7 @@
 				}
 			],
 			"environment": [
-				"荒漠"
+				"desert"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -13435,8 +13435,8 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"城市"
+				"underdark",
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -13541,10 +13541,10 @@
 				}
 			],
 			"environment": [
-				"荒漠",
-				"森林",
-				"草地",
-				"城市"
+				"desert",
+				"forest",
+				"grassland",
+				"urban"
 			],
 			"familiar": true,
 			"soundClip": {
@@ -13648,9 +13648,9 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"草地",
-				"位面, 妖精荒野"
+				"forest",
+				"grassland",
+				"planar, feywild"
 			],
 			"treasure": [
 				"武备",
@@ -13783,9 +13783,9 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"草地",
-				"位面, 妖精荒野"
+				"forest",
+				"grassland",
+				"planar, feywild"
 			],
 			"treasure": [
 				"武备",
@@ -13945,7 +13945,7 @@
 				}
 			],
 			"environment": [
-				"位面, 九层地狱"
+				"planar, nine hells"
 			],
 			"treasure": [
 				"器具"
@@ -14103,7 +14103,7 @@
 				}
 			],
 			"environment": [
-				"位面, 无底深渊"
+				"planar, abyss"
 			],
 			"treasure": [
 				"圣物"
@@ -14229,9 +14229,9 @@
 				}
 			],
 			"environment": [
-				"草地",
-				"丘陵",
-				"山地"
+				"grassland",
+				"hill",
+				"mountain"
 			],
 			"treasure": [
 				"任何"
@@ -14364,9 +14364,9 @@
 				}
 			],
 			"environment": [
-				"海岸",
-				"沼泽",
-				"幽暗地域"
+				"coastal",
+				"swamp",
+				"underdark"
 			],
 			"treasure": [
 				"圣物"
@@ -14523,7 +14523,7 @@
 				}
 			],
 			"environment": [
-				"城市"
+				"urban"
 			],
 			"treasure": [
 				"圣物"
@@ -14675,7 +14675,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"treasure": [
 				"器具"
@@ -14839,7 +14839,7 @@
 				}
 			],
 			"environment": [
-				"山地"
+				"mountain"
 			],
 			"treasure": [
 				"奥秘"
@@ -14935,7 +14935,7 @@
 				}
 			],
 			"environment": [
-				"草地"
+				"grassland"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -15044,7 +15044,7 @@
 				}
 			],
 			"environment": [
-				"草地"
+				"grassland"
 			],
 			"traitTags": [
 				"Flyby"
@@ -15222,7 +15222,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"圣物"
@@ -15341,7 +15341,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"个体"
@@ -15433,10 +15433,10 @@
 				}
 			],
 			"environment": [
-				"荒漠",
-				"森林",
-				"沼泽",
-				"水下"
+				"desert",
+				"forest",
+				"swamp",
+				"underwater"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -15554,7 +15554,7 @@
 				}
 			],
 			"environment": [
-				"丘陵"
+				"hill"
 			],
 			"treasure": [
 				"奥秘"
@@ -15719,10 +15719,10 @@
 				}
 			],
 			"environment": [
-				"荒漠",
-				"森林",
-				"草地",
-				"城市"
+				"desert",
+				"forest",
+				"grassland",
+				"urban"
 			],
 			"treasure": [
 				"圣物"
@@ -15835,8 +15835,8 @@
 				}
 			],
 			"environment": [
-				"海岸",
-				"水下"
+				"coastal",
+				"underwater"
 			],
 			"familiar": true,
 			"soundClip": {
@@ -15922,7 +15922,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -16009,9 +16009,9 @@
 				}
 			],
 			"environment": [
-				"海岸",
-				"沼泽",
-				"城市"
+				"coastal",
+				"swamp",
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -16100,7 +16100,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"个体",
@@ -16238,7 +16238,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"个体",
@@ -16374,7 +16374,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"个体",
@@ -16522,12 +16522,12 @@
 				}
 			],
 			"environment": [
-				"海岸",
-				"荒漠",
-				"草地",
-				"丘陵",
-				"山地",
-				"幽暗地域"
+				"coastal",
+				"desert",
+				"grassland",
+				"hill",
+				"mountain",
+				"underdark"
 			],
 			"treasure": [
 				"武备"
@@ -16629,12 +16629,12 @@
 				}
 			],
 			"environment": [
-				"海岸",
-				"荒漠",
-				"草地",
-				"丘陵",
-				"山地",
-				"幽暗地域"
+				"coastal",
+				"desert",
+				"grassland",
+				"hill",
+				"mountain",
+				"underdark"
 			],
 			"treasure": [
 				"武备"
@@ -16807,8 +16807,8 @@
 				}
 			],
 			"environment": [
-				"位面, 土",
-				"幽暗地域"
+				"planar, earth",
+				"underdark"
 			],
 			"treasure": [
 				"器具"
@@ -16924,7 +16924,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -17055,7 +17055,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"个体",
@@ -17160,7 +17160,7 @@
 				}
 			],
 			"environment": [
-				"荒漠"
+				"desert"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -17362,7 +17362,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"武备"
@@ -17552,7 +17552,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"武备"
@@ -17728,7 +17728,7 @@
 				}
 			],
 			"environment": [
-				"位面, 混沌海"
+				"planar, limbo"
 			],
 			"treasure": [
 				"任何"
@@ -18016,7 +18016,7 @@
 				"source": "XMM"
 			},
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"treasure": [
 				"任何"
@@ -18132,8 +18132,8 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"草地"
+				"forest",
+				"grassland"
 			],
 			"familiar": true,
 			"soundClip": {
@@ -18299,7 +18299,7 @@
 				"source": "XMM"
 			},
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"奥秘"
@@ -18488,7 +18488,7 @@
 				}
 			],
 			"environment": [
-				"位面, 上层"
+				"planar, upper"
 			],
 			"treasure": [
 				"圣物"
@@ -18594,8 +18594,8 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"丘陵"
+				"forest",
+				"hill"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -18713,10 +18713,10 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"草地",
-				"丘陵",
-				"位面, 妖精荒野"
+				"forest",
+				"grassland",
+				"hill",
+				"planar, feywild"
 			],
 			"traitTags": [
 				"Magic Resistance"
@@ -18838,7 +18838,7 @@
 				}
 			],
 			"environment": [
-				"森林"
+				"forest"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -19020,8 +19020,8 @@
 				}
 			],
 			"environment": [
-				"海岸",
-				"位面, 空中"
+				"coastal",
+				"planar, air"
 			],
 			"treasure": [
 				"奥秘"
@@ -19175,8 +19175,8 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"城市"
+				"underdark",
+				"urban"
 			],
 			"treasure": [
 				"个体"
@@ -19395,7 +19395,7 @@
 				"source": "XMM"
 			},
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"任何"
@@ -19504,7 +19504,7 @@
 				}
 			],
 			"environment": [
-				"城市"
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -19615,8 +19615,8 @@
 				}
 			],
 			"environment": [
-				"海岸",
-				"水下"
+				"coastal",
+				"underwater"
 			],
 			"treasure": [
 				"任何"
@@ -19735,7 +19735,7 @@
 				}
 			],
 			"environment": [
-				"位面, 无底深渊"
+				"planar, abyss"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -19883,8 +19883,8 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"幽暗地域"
+				"forest",
+				"underdark"
 			],
 			"treasure": [
 				"武备"
@@ -20041,7 +20041,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"个体",
@@ -20210,7 +20210,7 @@
 				}
 			],
 			"environment": [
-				"森林"
+				"forest"
 			],
 			"treasure": [
 				"任何"
@@ -20360,7 +20360,7 @@
 				}
 			],
 			"environment": [
-				"位面, 元素"
+				"planar, elemental"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -20457,10 +20457,10 @@
 				}
 			],
 			"environment": [
-				"海岸",
-				"草地",
-				"丘陵",
-				"山地"
+				"coastal",
+				"grassland",
+				"hill",
+				"mountain"
 			],
 			"familiar": true,
 			"soundClip": {
@@ -20577,9 +20577,9 @@
 				}
 			],
 			"environment": [
-				"山地",
-				"位面, 土",
-				"幽暗地域"
+				"mountain",
+				"planar, earth",
+				"underdark"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -20750,8 +20750,8 @@
 				}
 			],
 			"environment": [
-				"荒漠",
-				"位面, 火"
+				"desert",
+				"planar, fire"
 			],
 			"treasure": [
 				"武备"
@@ -20954,7 +20954,7 @@
 									"name": "1: 焚天业火",
 									"type": "item",
 									"entries": [
-										"{@actSave dex} {@dc 23}，以150尺内天劫可见一点为中心，半径60尺{@variantrule 球状 [效应区域]|XPHB|球状}区域内的每名生物。{@actSaveFail} 45（{@damage 13d6}）火焰伤害。{@actSaveSuccess}半伤。{@actSaveSuccessOrFail} 目标开始{@hazard 燃烧|XPHB}。"
+										"{@actSave dex} {@dc 23}，以150尺内天劫可见一点为中心，半径60尺{@variantrule 球状 [效应区域]|XPHB|球状}区域内的每名生物。{@actSaveFail} 45（{@damage 13d6}）火焰伤害。{@actSaveSuccess}半伤。{@actSaveSuccessOrFail} 目标开始{@hazard burning|XPHB}。"
 									]
 								},
 								{
@@ -21003,7 +21003,7 @@
 				}
 			],
 			"environment": [
-				"位面, 元素混沌"
+				"planar, elemental chaos"
 			],
 			"traitTags": [
 				"Legendary Resistances",
@@ -21156,7 +21156,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"个体",
@@ -21249,7 +21249,7 @@
 				}
 			],
 			"environment": [
-				"草地"
+				"grassland"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -21333,9 +21333,9 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"草地",
-				"丘陵"
+				"forest",
+				"grassland",
+				"hill"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -21525,7 +21525,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"圣物"
@@ -21707,7 +21707,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"圣物"
@@ -21869,7 +21869,7 @@
 				}
 			],
 			"environment": [
-				"位面, 九层地狱"
+				"planar, nine hells"
 			],
 			"treasure": [
 				"武备"
@@ -22012,7 +22012,7 @@
 				}
 			],
 			"environment": [
-				"森林"
+				"forest"
 			],
 			"treasure": [
 				"器具"
@@ -22134,9 +22134,9 @@
 				}
 			],
 			"environment": [
-				"丘陵",
-				"山地",
-				"幽暗地域"
+				"hill",
+				"mountain",
+				"underdark"
 			],
 			"treasure": [
 				"个体"
@@ -22282,7 +22282,7 @@
 				}
 			],
 			"environment": [
-				"森林"
+				"forest"
 			],
 			"treasure": [
 				"器具"
@@ -22435,7 +22435,7 @@
 				}
 			],
 			"environment": [
-				"森林"
+				"forest"
 			],
 			"treasure": [
 				"器具"
@@ -22590,7 +22590,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"个体",
@@ -22699,7 +22699,7 @@
 					"ENG_name": "Fire Aura",
 					"name": "火焰灵光",
 					"entries": [
-						"火元素回合结束时位于源自火元素的10尺{@variantrule 光环 [效应区域]|XPHB|光环}区域内的每名生物受到5（{@damage 1d10}）点火焰伤害。{@variantrule 光环 [效应区域]|XPHB|光环}内的生物和易燃物件开始{@hazard 燃烧|XPHB}燃烧。"
+						"火元素回合结束时位于源自火元素的10尺{@variantrule 光环 [效应区域]|XPHB|光环}区域内的每名生物受到5（{@damage 1d10}）点火焰伤害。{@variantrule 光环 [效应区域]|XPHB|光环}内的生物和易燃物件开始{@hazard burning|XPHB}燃烧。"
 					]
 				},
 				{
@@ -22736,13 +22736,13 @@
 					"ENG_name": "Burn",
 					"name": "燃烧",
 					"entries": [
-						"{@atkr m} {@hit 6}，触及5尺。{@h}10（{@damage 2d6 + 3}）火焰伤害。若目标为生物或易燃物件，则其开始{@hazard 燃烧|XPHB}。"
+						"{@atkr m} {@hit 6}，触及5尺。{@h}10（{@damage 2d6 + 3}）火焰伤害。若目标为生物或易燃物件，则其开始{@hazard burning|XPHB}。"
 					]
 				}
 			],
 			"environment": [
-				"荒漠",
-				"位面, 火"
+				"desert",
+				"planar, fire"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -22852,8 +22852,8 @@
 				}
 			],
 			"environment": [
-				"山地",
-				"幽暗地域"
+				"mountain",
+				"underdark"
 			],
 			"treasure": [
 				"武备"
@@ -23012,7 +23012,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"treasure": [
 				"奥秘"
@@ -23153,9 +23153,9 @@
 				}
 			],
 			"environment": [
-				"位面, 堕影冥界",
-				"幽暗地域",
-				"城市"
+				"planar, shadowfell",
+				"underdark",
+				"urban"
 			],
 			"traitTags": [
 				"Death Burst",
@@ -23297,7 +23297,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"奥秘"
@@ -23426,7 +23426,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"treasure": [
 				"奥秘"
@@ -23523,9 +23523,9 @@
 				}
 			],
 			"environment": [
-				"荒漠",
-				"森林",
-				"草地"
+				"desert",
+				"forest",
+				"grassland"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -23618,7 +23618,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"treasure": [
 				"任何"
@@ -23728,8 +23728,8 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"沼泽"
+				"forest",
+				"swamp"
 			],
 			"familiar": true,
 			"soundClip": {
@@ -23842,8 +23842,8 @@
 				}
 			],
 			"environment": [
-				"极地",
-				"山地"
+				"arctic",
+				"mountain"
 			],
 			"treasure": [
 				"武备"
@@ -23945,8 +23945,8 @@
 				}
 			],
 			"environment": [
-				"丘陵",
-				"山地"
+				"hill",
+				"mountain"
 			],
 			"treasure": [
 				"任何"
@@ -24064,8 +24064,8 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"城市"
+				"underdark",
+				"urban"
 			],
 			"treasure": [
 				"任何"
@@ -24169,7 +24169,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"traitTags": [
 				"Death Burst"
@@ -24278,7 +24278,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"treasure": [
 				"任何"
@@ -24392,9 +24392,9 @@
 				}
 			],
 			"environment": [
-				"沼泽",
-				"幽暗地域",
-				"城市"
+				"swamp",
+				"underdark",
+				"urban"
 			],
 			"treasure": [
 				"任何"
@@ -24536,9 +24536,9 @@
 				}
 			],
 			"environment": [
-				"沼泽",
-				"幽暗地域",
-				"城市"
+				"swamp",
+				"underdark",
+				"urban"
 			],
 			"treasure": [
 				"任何"
@@ -24719,8 +24719,8 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"城市"
+				"underdark",
+				"urban"
 			],
 			"treasure": [
 				"任何"
@@ -24849,9 +24849,9 @@
 				}
 			],
 			"environment": [
-				"沼泽",
-				"幽暗地域",
-				"城市"
+				"swamp",
+				"underdark",
+				"urban"
 			],
 			"treasure": [
 				"任何"
@@ -24964,7 +24964,7 @@
 				}
 			],
 			"environment": [
-				"森林"
+				"forest"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -25056,9 +25056,9 @@
 				}
 			],
 			"environment": [
-				"极地",
-				"草地",
-				"丘陵"
+				"arctic",
+				"grassland",
+				"hill"
 			],
 			"actionTags": [
 				"Multiattack"
@@ -25136,7 +25136,7 @@
 				}
 			],
 			"environment": [
-				"森林"
+				"forest"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -25204,9 +25204,9 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"山地",
-				"幽暗地域"
+				"forest",
+				"mountain",
+				"underdark"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -25284,9 +25284,9 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"草地",
-				"丘陵"
+				"forest",
+				"grassland",
+				"hill"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -25357,8 +25357,8 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"城市"
+				"underdark",
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -25443,10 +25443,10 @@
 				}
 			],
 			"environment": [
-				"荒漠",
-				"森林",
-				"沼泽",
-				"水下"
+				"desert",
+				"forest",
+				"swamp",
+				"underwater"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -25545,8 +25545,8 @@
 				}
 			],
 			"environment": [
-				"海岸",
-				"水下"
+				"coastal",
+				"underwater"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -25645,8 +25645,8 @@
 				}
 			],
 			"environment": [
-				"海岸",
-				"沼泽"
+				"coastal",
+				"swamp"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -25736,10 +25736,10 @@
 				}
 			],
 			"environment": [
-				"海岸",
-				"草地",
-				"丘陵",
-				"山地"
+				"coastal",
+				"grassland",
+				"hill",
+				"mountain"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -25834,9 +25834,9 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"草地",
-				"丘陵"
+				"forest",
+				"grassland",
+				"hill"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -25928,7 +25928,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"familiar": true,
 			"soundClip": {
@@ -26029,8 +26029,8 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"沼泽"
+				"forest",
+				"swamp"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -26124,9 +26124,9 @@
 				}
 			],
 			"environment": [
-				"草地",
-				"丘陵",
-				"山地"
+				"grassland",
+				"hill",
+				"mountain"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -26209,10 +26209,10 @@
 				}
 			],
 			"environment": [
-				"荒漠",
-				"森林",
-				"草地",
-				"丘陵"
+				"desert",
+				"forest",
+				"grassland",
+				"hill"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -26292,11 +26292,11 @@
 				}
 			],
 			"environment": [
-				"海岸",
-				"荒漠",
-				"森林",
-				"沼泽",
-				"幽暗地域"
+				"coastal",
+				"desert",
+				"forest",
+				"swamp",
+				"underdark"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -26387,7 +26387,7 @@
 				}
 			],
 			"environment": [
-				"水下"
+				"underwater"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -26512,9 +26512,9 @@
 				}
 			],
 			"environment": [
-				"极地",
-				"森林",
-				"丘陵"
+				"arctic",
+				"forest",
+				"hill"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -26611,10 +26611,10 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"沼泽",
-				"幽暗地域",
-				"城市"
+				"forest",
+				"swamp",
+				"underdark",
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -26700,7 +26700,7 @@
 				}
 			],
 			"environment": [
-				"荒漠"
+				"desert"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -26797,7 +26797,7 @@
 				}
 			],
 			"environment": [
-				"水下"
+				"underwater"
 			],
 			"traitTags": [
 				"Water Breathing"
@@ -26886,7 +26886,7 @@
 				}
 			],
 			"environment": [
-				"水下"
+				"underwater"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -26996,11 +26996,11 @@
 				}
 			],
 			"environment": [
-				"荒漠",
-				"森林",
-				"沼泽",
-				"幽暗地域",
-				"城市"
+				"desert",
+				"forest",
+				"swamp",
+				"underdark",
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -27113,7 +27113,7 @@
 				}
 			],
 			"environment": [
-				"水下"
+				"underwater"
 			],
 			"traitTags": [
 				"Water Breathing"
@@ -27212,10 +27212,10 @@
 				}
 			],
 			"environment": [
-				"海岸",
-				"森林",
-				"沼泽",
-				"幽暗地域"
+				"coastal",
+				"forest",
+				"swamp",
+				"underdark"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -27301,12 +27301,12 @@
 				}
 			],
 			"environment": [
-				"海岸",
-				"荒漠",
-				"森林",
-				"草地",
-				"丘陵",
-				"沼泽"
+				"coastal",
+				"desert",
+				"forest",
+				"grassland",
+				"hill",
+				"swamp"
 			],
 			"senseTags": [
 				"B"
@@ -27391,9 +27391,9 @@
 				}
 			],
 			"environment": [
-				"荒漠",
-				"草地",
-				"丘陵"
+				"desert",
+				"grassland",
+				"hill"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -27474,9 +27474,9 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"草地",
-				"城市"
+				"forest",
+				"grassland",
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -27553,9 +27553,9 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"草地",
-				"丘陵"
+				"forest",
+				"grassland",
+				"hill"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -27638,11 +27638,11 @@
 				}
 			],
 			"environment": [
-				"海岸",
-				"荒漠",
-				"森林",
-				"草地",
-				"丘陵"
+				"coastal",
+				"desert",
+				"forest",
+				"grassland",
+				"hill"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -27767,7 +27767,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -27922,7 +27922,7 @@
 				}
 			],
 			"environment": [
-				"位面, 星光"
+				"planar, astral"
 			],
 			"treasure": [
 				"武备"
@@ -28079,7 +28079,7 @@
 				}
 			],
 			"environment": [
-				"位面, 星光"
+				"planar, astral"
 			],
 			"treasure": [
 				"武备"
@@ -28221,7 +28221,7 @@
 				}
 			],
 			"environment": [
-				"位面, 星光"
+				"planar, astral"
 			],
 			"treasure": [
 				"武备"
@@ -28378,7 +28378,7 @@
 				}
 			],
 			"environment": [
-				"位面, 混沌海"
+				"planar, limbo"
 			],
 			"treasure": [
 				"奥秘",
@@ -28523,7 +28523,7 @@
 				}
 			],
 			"environment": [
-				"位面, 混沌海"
+				"planar, limbo"
 			],
 			"treasure": [
 				"奥秘",
@@ -28684,7 +28684,7 @@
 				}
 			],
 			"environment": [
-				"位面, 混沌海"
+				"planar, limbo"
 			],
 			"treasure": [
 				"奥秘",
@@ -28859,7 +28859,7 @@
 				}
 			],
 			"environment": [
-				"位面, 无底深渊"
+				"planar, abyss"
 			],
 			"treasure": [
 				"圣物"
@@ -29006,7 +29006,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"武备",
@@ -29127,10 +29127,10 @@
 				}
 			],
 			"environment": [
-				"荒漠",
-				"森林",
-				"草地",
-				"丘陵"
+				"desert",
+				"forest",
+				"grassland",
+				"hill"
 			],
 			"treasure": [
 				"武备",
@@ -29245,10 +29245,10 @@
 				}
 			],
 			"environment": [
-				"荒漠",
-				"森林",
-				"草地",
-				"丘陵"
+				"desert",
+				"forest",
+				"grassland",
+				"hill"
 			],
 			"treasure": [
 				"武备",
@@ -29367,10 +29367,10 @@
 				}
 			],
 			"environment": [
-				"荒漠",
-				"森林",
-				"草地",
-				"丘陵"
+				"desert",
+				"forest",
+				"grassland",
+				"hill"
 			],
 			"treasure": [
 				"武备",
@@ -29474,10 +29474,10 @@
 				}
 			],
 			"environment": [
-				"荒漠",
-				"森林",
-				"草地",
-				"丘陵"
+				"desert",
+				"forest",
+				"grassland",
+				"hill"
 			],
 			"treasure": [
 				"武备",
@@ -29563,10 +29563,10 @@
 				}
 			],
 			"environment": [
-				"草地",
-				"丘陵",
-				"山地",
-				"城市"
+				"grassland",
+				"hill",
+				"mountain",
+				"urban"
 			],
 			"familiar": true,
 			"soundClip": {
@@ -29690,12 +29690,12 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"草地",
-				"丘陵",
-				"位面, 修罗场",
-				"位面, 妖精荒野",
-				"幽暗地域"
+				"forest",
+				"grassland",
+				"hill",
+				"planar, acheron",
+				"planar, feywild",
+				"underdark"
 			],
 			"treasure": [
 				"器具",
@@ -29831,12 +29831,12 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"草地",
-				"丘陵",
-				"位面, 修罗场",
-				"位面, 妖精荒野",
-				"幽暗地域"
+				"forest",
+				"grassland",
+				"hill",
+				"planar, acheron",
+				"planar, feywild",
+				"underdark"
 			],
 			"treasure": [
 				"器具",
@@ -29957,12 +29957,12 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"草地",
-				"丘陵",
-				"位面, 修罗场",
-				"位面, 妖精荒野",
-				"幽暗地域"
+				"forest",
+				"grassland",
+				"hill",
+				"planar, acheron",
+				"planar, feywild",
+				"underdark"
 			],
 			"treasure": [
 				"器具",
@@ -30080,12 +30080,12 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"草地",
-				"丘陵",
-				"位面, 修罗场",
-				"位面, 妖精荒野",
-				"幽暗地域"
+				"forest",
+				"grassland",
+				"hill",
+				"planar, acheron",
+				"planar, feywild",
+				"underdark"
 			],
 			"treasure": [
 				"器具",
@@ -30201,7 +30201,7 @@
 					"ENG_name": "Rend",
 					"name": "撕裂",
 					"entries": [
-						"{@atkr m} {@hit 6}，触及5尺。{@h}9（{@damage 1d10 + 4}）挥砍伤害。"
+						"{@atkr m} 命中{@hit 6}，触及 5 尺。{@h}9 ({@damage 1d10 + 4}) 点挥砍伤害。"
 					]
 				},
 				{
@@ -30220,8 +30220,8 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"草地"
+				"forest",
+				"grassland"
 			],
 			"treasure": [
 				"奥秘"
@@ -30331,9 +30331,9 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"草地",
-				"丘陵"
+				"forest",
+				"grassland",
+				"hill"
 			],
 			"treasure": [
 				"任何"
@@ -30497,7 +30497,7 @@
 				}
 			],
 			"environment": [
-				"位面, 无底深渊"
+				"planar, abyss"
 			],
 			"treasure": [
 				"武备"
@@ -30630,9 +30630,9 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"沼泽",
-				"城市"
+				"forest",
+				"swamp",
+				"urban"
 			],
 			"treasure": [
 				"任何"
@@ -30751,7 +30751,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -30898,7 +30898,7 @@
 				}
 			],
 			"environment": [
-				"位面, 混沌海"
+				"planar, limbo"
 			],
 			"treasure": [
 				"任何"
@@ -31059,7 +31059,7 @@
 				}
 			],
 			"environment": [
-				"森林"
+				"forest"
 			],
 			"treasure": [
 				"奥秘"
@@ -31226,9 +31226,9 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"丘陵",
-				"沼泽"
+				"forest",
+				"hill",
+				"swamp"
 			],
 			"treasure": [
 				"奥秘"
@@ -31397,7 +31397,7 @@
 				}
 			],
 			"environment": [
-				"位面, 混沌海"
+				"planar, limbo"
 			],
 			"treasure": [
 				"任何"
@@ -31546,7 +31546,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -31646,8 +31646,8 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"幽暗地域"
+				"forest",
+				"underdark"
 			],
 			"treasure": [
 				"任何"
@@ -31751,8 +31751,8 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"幽暗地域"
+				"forest",
+				"underdark"
 			],
 			"treasure": [
 				"任何"
@@ -31842,11 +31842,11 @@
 				}
 			],
 			"environment": [
-				"极地",
-				"海岸",
-				"草地",
-				"丘陵",
-				"山地"
+				"arctic",
+				"coastal",
+				"grassland",
+				"hill",
+				"mountain"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -31926,7 +31926,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -32014,7 +32014,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"武备",
@@ -32128,7 +32128,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"武备",
@@ -32278,9 +32278,9 @@
 				}
 			],
 			"environment": [
-				"荒漠",
-				"森林",
-				"位面, 上层"
+				"desert",
+				"forest",
+				"planar, upper"
 			],
 			"treasure": [
 				"圣物"
@@ -32427,7 +32427,7 @@
 				}
 			],
 			"environment": [
-				"森林"
+				"forest"
 			],
 			"senseTags": [
 				"B"
@@ -32563,7 +32563,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"武备"
@@ -32654,10 +32654,10 @@
 				}
 			],
 			"environment": [
-				"海岸",
-				"森林",
-				"丘陵",
-				"山地"
+				"coastal",
+				"forest",
+				"hill",
+				"mountain"
 			],
 			"treasure": [
 				"任何"
@@ -32794,9 +32794,9 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"沼泽",
-				"城市"
+				"forest",
+				"swamp",
+				"urban"
 			],
 			"treasure": [
 				"任何"
@@ -32884,12 +32884,12 @@
 				}
 			],
 			"environment": [
-				"极地",
-				"海岸",
-				"森林",
-				"草地",
-				"丘陵",
-				"山地"
+				"arctic",
+				"coastal",
+				"forest",
+				"grassland",
+				"hill",
+				"mountain"
 			],
 			"familiar": true,
 			"soundClip": {
@@ -32988,9 +32988,9 @@
 				}
 			],
 			"environment": [
-				"山地",
-				"位面, 下层",
-				"幽暗地域"
+				"mountain",
+				"planar, lower",
+				"underdark"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -33130,7 +33130,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"武备"
@@ -33284,7 +33284,7 @@
 				}
 			],
 			"environment": [
-				"位面, 无底深渊"
+				"planar, abyss"
 			],
 			"treasure": [
 				"任何"
@@ -33396,7 +33396,7 @@
 				}
 			],
 			"environment": [
-				"丘陵"
+				"hill"
 			],
 			"treasure": [
 				"武备"
@@ -33493,9 +33493,9 @@
 				}
 			],
 			"environment": [
-				"草地",
-				"丘陵",
-				"山地"
+				"grassland",
+				"hill",
+				"mountain"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -33582,9 +33582,9 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"草地",
-				"沼泽"
+				"forest",
+				"grassland",
+				"swamp"
 			],
 			"traitTags": [
 				"Hold Breath"
@@ -33696,13 +33696,13 @@
 				}
 			],
 			"environment": [
-				"荒漠",
-				"森林",
-				"草地",
-				"丘陵",
-				"山地",
-				"位面, 修罗场",
-				"幽暗地域"
+				"desert",
+				"forest",
+				"grassland",
+				"hill",
+				"mountain",
+				"planar, acheron",
+				"underdark"
 			],
 			"treasure": [
 				"武备",
@@ -33846,13 +33846,13 @@
 				}
 			],
 			"environment": [
-				"荒漠",
-				"森林",
-				"草地",
-				"丘陵",
-				"山地",
-				"位面, 修罗场",
-				"幽暗地域"
+				"desert",
+				"forest",
+				"grassland",
+				"hill",
+				"mountain",
+				"planar, acheron",
+				"underdark"
 			],
 			"treasure": [
 				"武备",
@@ -33974,13 +33974,13 @@
 				}
 			],
 			"environment": [
-				"荒漠",
-				"森林",
-				"草地",
-				"丘陵",
-				"山地",
-				"位面, 修罗场",
-				"幽暗地域"
+				"desert",
+				"forest",
+				"grassland",
+				"hill",
+				"mountain",
+				"planar, acheron",
+				"underdark"
 			],
 			"treasure": [
 				"武备",
@@ -34083,7 +34083,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -34179,7 +34179,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -34260,7 +34260,7 @@
 				"cha": "+8"
 			},
 			"senses": [
-				"黑暗视觉150尺（不受魔法{@variantrule 黑暗|XPHB}阻碍）"
+				"黑暗视觉 150 尺（不受魔法{@variantrule 黑暗|XPHB}影响）"
 			],
 			"passive": 13,
 			"immune": [
@@ -34309,7 +34309,7 @@
 					"ENG_name": "Hurl Flame",
 					"name": "投掷烈焰",
 					"entries": [
-						"{@atkr r} {@hit 8}，射程150尺。{@h}26（{@damage 5d8 + 4}）火焰伤害。若目标为未被着装或携带的可燃物件，则目标开始{@hazard 燃烧|XPHB}。"
+						"{@atkr r} {@hit 8}，射程150尺。{@h}26（{@damage 5d8 + 4}）火焰伤害。若目标为未被着装或携带的可燃物件，则目标开始{@hazard burning|XPHB}。"
 					]
 				},
 				{
@@ -34321,7 +34321,7 @@
 				}
 			],
 			"environment": [
-				"位面, 九层地狱"
+				"planar, nine hells"
 			],
 			"treasure": [
 				"圣物"
@@ -34422,7 +34422,7 @@
 				}
 			],
 			"environment": [
-				"水下"
+				"underwater"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -34540,8 +34540,8 @@
 				}
 			],
 			"environment": [
-				"海岸",
-				"沼泽"
+				"coastal",
+				"swamp"
 			],
 			"treasure": [
 				"任何"
@@ -34630,10 +34630,10 @@
 				}
 			],
 			"environment": [
-				"荒漠",
-				"森林",
-				"草地",
-				"丘陵"
+				"desert",
+				"forest",
+				"grassland",
+				"hill"
 			],
 			"familiar": true,
 			"soundClip": {
@@ -34788,7 +34788,7 @@
 				}
 			],
 			"environment": [
-				"位面, 九层地狱"
+				"planar, nine hells"
 			],
 			"treasure": [
 				"奥秘"
@@ -34944,7 +34944,7 @@
 				}
 			],
 			"environment": [
-				"位面, 元素"
+				"planar, elemental"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -35100,7 +35100,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -35253,8 +35253,8 @@
 				}
 			],
 			"environment": [
-				"位面, 下层",
-				"城市"
+				"planar, lower",
+				"urban"
 			],
 			"treasure": [
 				"任何"
@@ -35395,7 +35395,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -35546,7 +35546,7 @@
 				}
 			],
 			"environment": [
-				"城市"
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -35693,7 +35693,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"任何"
@@ -35785,8 +35785,8 @@
 				}
 			],
 			"environment": [
-				"荒漠",
-				"草地"
+				"desert",
+				"grassland"
 			],
 			"familiar": true,
 			"soundClip": {
@@ -35901,8 +35901,8 @@
 				}
 			],
 			"environment": [
-				"荒漠",
-				"草地"
+				"desert",
+				"grassland"
 			],
 			"treasure": [
 				"器具"
@@ -36052,8 +36052,8 @@
 				}
 			],
 			"environment": [
-				"位面, 堕影冥界",
-				"幽暗地域"
+				"planar, shadowfell",
+				"underdark"
 			],
 			"treasure": [
 				"任何"
@@ -36173,9 +36173,9 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"位面, 堕影冥界",
-				"城市"
+				"forest",
+				"planar, shadowfell",
+				"urban"
 			],
 			"treasure": [
 				"器具",
@@ -36276,7 +36276,7 @@
 				}
 			],
 			"environment": [
-				"水下"
+				"underwater"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -36390,7 +36390,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"武备",
@@ -36499,15 +36499,15 @@
 				}
 			],
 			"environment": [
-				"极地",
-				"海岸",
-				"荒漠",
-				"森林",
-				"丘陵",
-				"山地",
-				"沼泽",
-				"幽暗地域",
-				"城市"
+				"arctic",
+				"coastal",
+				"desert",
+				"forest",
+				"hill",
+				"mountain",
+				"swamp",
+				"underdark",
+				"urban"
 			],
 			"treasure": [
 				"武备"
@@ -36703,7 +36703,7 @@
 				"source": "XMM"
 			},
 			"environment": [
-				"水下"
+				"underwater"
 			],
 			"treasure": [
 				"任何"
@@ -36854,8 +36854,8 @@
 				}
 			],
 			"environment": [
-				"海岸",
-				"幽暗地域"
+				"coastal",
+				"underdark"
 			],
 			"treasure": [
 				"圣物"
@@ -37021,8 +37021,8 @@
 				}
 			],
 			"environment": [
-				"海岸",
-				"幽暗地域"
+				"coastal",
+				"underdark"
 			],
 			"treasure": [
 				"圣物"
@@ -37153,8 +37153,8 @@
 				}
 			],
 			"environment": [
-				"海岸",
-				"幽暗地域"
+				"coastal",
+				"underdark"
 			],
 			"treasure": [
 				"圣物"
@@ -37290,8 +37290,8 @@
 				}
 			],
 			"environment": [
-				"海岸",
-				"幽暗地域"
+				"coastal",
+				"underdark"
 			],
 			"treasure": [
 				"圣物"
@@ -37416,9 +37416,9 @@
 				}
 			],
 			"environment": [
-				"沼泽",
-				"幽暗地域",
-				"城市"
+				"swamp",
+				"underdark",
+				"urban"
 			],
 			"treasure": [
 				"任何"
@@ -37554,7 +37554,7 @@
 				}
 			],
 			"environment": [
-				"荒漠"
+				"desert"
 			],
 			"treasure": [
 				"奥秘"
@@ -37651,7 +37651,7 @@
 				}
 			],
 			"environment": [
-				"位面, 下层"
+				"planar, lower"
 			],
 			"senseTags": [
 				"D"
@@ -37750,7 +37750,7 @@
 				}
 			],
 			"environment": [
-				"位面, 九层地狱"
+				"planar, nine hells"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -37999,7 +37999,7 @@
 				"source": "XMM"
 			},
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"奥秘"
@@ -38149,10 +38149,10 @@
 				}
 			],
 			"environment": [
-				"荒漠",
-				"草地",
-				"丘陵",
-				"山地"
+				"desert",
+				"grassland",
+				"hill",
+				"mountain"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -38245,11 +38245,11 @@
 				}
 			],
 			"environment": [
-				"海岸",
-				"荒漠",
-				"森林",
-				"沼泽",
-				"幽暗地域"
+				"coastal",
+				"desert",
+				"forest",
+				"swamp",
+				"underdark"
 			],
 			"familiar": true,
 			"soundClip": {
@@ -38363,8 +38363,8 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"沼泽"
+				"forest",
+				"swamp"
 			],
 			"treasure": [
 				"个体"
@@ -38494,8 +38494,8 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"沼泽"
+				"forest",
+				"swamp"
 			],
 			"treasure": [
 				"个体"
@@ -38677,7 +38677,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"奥秘",
@@ -38814,7 +38814,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"奥秘",
@@ -38928,7 +38928,7 @@
 				}
 			],
 			"environment": [
-				"位面, 元素"
+				"planar, elemental"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -39022,7 +39022,7 @@
 					"ENG_name": "Touch",
 					"name": "触碰",
 					"entries": [
-						"{@atkr m} {@hit 4}，触及 5 尺。{@h}7（{@damage 2d4 + 2}）点火焰伤害。若目标为生物或未被着装或携带的可燃物件，则目标开始{@hazard 燃烧|XPHB}。"
+						"{@atkr m} {@hit 4}，触及 5 尺。{@h}7（{@damage 2d4 + 2}）点火焰伤害。若目标为生物或未被着装或携带的可燃物件，则目标开始{@hazard burning|XPHB}。"
 					]
 				}
 			],
@@ -39036,7 +39036,7 @@
 				}
 			],
 			"environment": [
-				"位面, 火"
+				"planar, fire"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -39138,7 +39138,7 @@
 				}
 			],
 			"environment": [
-				"极地"
+				"arctic"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -39234,7 +39234,7 @@
 				}
 			],
 			"environment": [
-				"位面, 无底深渊"
+				"planar, abyss"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -39356,7 +39356,7 @@
 				}
 			],
 			"environment": [
-				"位面, 无底深渊"
+				"planar, abyss"
 			],
 			"senseTags": [
 				"D"
@@ -39452,11 +39452,11 @@
 				}
 			],
 			"environment": [
-				"极地",
-				"海岸",
-				"草地",
-				"丘陵",
-				"山地"
+				"arctic",
+				"coastal",
+				"grassland",
+				"hill",
+				"mountain"
 			],
 			"treasure": [
 				"任何"
@@ -39645,9 +39645,9 @@
 				}
 			],
 			"environment": [
-				"海岸",
-				"位面, 水",
-				"水下"
+				"coastal",
+				"planar, water",
+				"underwater"
 			],
 			"treasure": [
 				"圣物"
@@ -39839,7 +39839,7 @@
 				}
 			],
 			"environment": [
-				"位面, 无底深渊"
+				"planar, abyss"
 			],
 			"treasure": [
 				"武备"
@@ -39943,9 +39943,9 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"丘陵",
-				"城市"
+				"forest",
+				"hill",
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -40062,7 +40062,7 @@
 				}
 			],
 			"environment": [
-				"荒漠"
+				"desert"
 			],
 			"treasure": [
 				"任何"
@@ -40161,8 +40161,8 @@
 				}
 			],
 			"environment": [
-				"海岸",
-				"水下"
+				"coastal",
+				"underwater"
 			],
 			"treasure": [
 				"个体"
@@ -40298,8 +40298,8 @@
 				}
 			],
 			"environment": [
-				"海岸",
-				"水下"
+				"coastal",
+				"underwater"
 			],
 			"treasure": [
 				"个体"
@@ -40427,8 +40427,8 @@
 				}
 			],
 			"environment": [
-				"海岸",
-				"水下"
+				"coastal",
+				"underwater"
 			],
 			"treasure": [
 				"任何"
@@ -40604,7 +40604,7 @@
 				}
 			],
 			"environment": [
-				"位面, 焦炎地狱"
+				"planar, gehenna"
 			],
 			"treasure": [
 				"武备"
@@ -40715,7 +40715,7 @@
 			"trait": [
 				{
 					"ENG_name": "Adhesive (Object Form Only)",
-					"name": "黏着 (仅物件形态）",
+					"name": "黏着（仅物件形态）",
 					"entries": [
 						"拟身怪粘附在任何触碰到其的东西上。体型不超过巨型的被粘附生物陷入{@condition 受擒|XPHB}状态（逃脱{@dc 13}）。为逃脱此擒抱进行的属性检定具有{@variantrule 劣势|XPHB}。"
 					]
@@ -40747,8 +40747,8 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"城市"
+				"underdark",
+				"urban"
 			],
 			"treasure": [
 				"任何"
@@ -40901,7 +40901,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"treasure": [
 				"奥秘"
@@ -41100,7 +41100,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"treasure": [
 				"奥秘"
@@ -41217,7 +41217,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"treasure": [
 				"武备"
@@ -41315,9 +41315,9 @@
 				}
 			],
 			"environment": [
-				"位面, 堕影冥界",
-				"幽暗地域",
-				"城市"
+				"planar, shadowfell",
+				"underdark",
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -41416,7 +41416,7 @@
 				}
 			],
 			"environment": [
-				"位面, 机械境"
+				"planar, mechanus"
 			],
 			"senseTags": [
 				"U"
@@ -41506,7 +41506,7 @@
 				}
 			],
 			"environment": [
-				"位面, 机械境"
+				"planar, mechanus"
 			],
 			"senseTags": [
 				"U"
@@ -41609,7 +41609,7 @@
 				}
 			],
 			"environment": [
-				"位面, 机械境"
+				"planar, mechanus"
 			],
 			"senseTags": [
 				"U"
@@ -41717,7 +41717,7 @@
 				}
 			],
 			"environment": [
-				"位面, 机械境"
+				"planar, mechanus"
 			],
 			"senseTags": [
 				"U"
@@ -41810,7 +41810,7 @@
 				}
 			],
 			"environment": [
-				"位面, 机械境"
+				"planar, mechanus"
 			],
 			"senseTags": [
 				"U"
@@ -41914,7 +41914,7 @@
 				}
 			],
 			"environment": [
-				"位面, 元素"
+				"planar, elemental"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -42014,9 +42014,9 @@
 				}
 			],
 			"environment": [
-				"荒漠",
-				"丘陵",
-				"城市"
+				"desert",
+				"hill",
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -42125,8 +42125,8 @@
 				}
 			],
 			"environment": [
-				"荒漠",
-				"沼泽"
+				"desert",
+				"swamp"
 			],
 			"treasure": [
 				"圣物"
@@ -42277,7 +42277,7 @@
 					],
 					"legendary": {
 						"1": [
-							"{@spell 命令术|XPHB}（2环版本）"
+							"{@spell 命令术|XPHB} (2环版本)"
 						]
 					},
 					"ability": "wis",
@@ -42372,8 +42372,8 @@
 				"source": "XMM"
 			},
 			"environment": [
-				"荒漠",
-				"沼泽"
+				"desert",
+				"swamp"
 			],
 			"treasure": [
 				"圣物"
@@ -42510,7 +42510,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"treasure": [
 				"任何"
@@ -42637,7 +42637,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"treasure": [
 				"任何"
@@ -42733,7 +42733,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"treasure": [
 				"任何"
@@ -42823,7 +42823,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"treasure": [
 				"任何"
@@ -42980,7 +42980,7 @@
 				}
 			],
 			"environment": [
-				"位面, 无底深渊"
+				"planar, abyss"
 			],
 			"treasure": [
 				"圣物"
@@ -43082,7 +43082,7 @@
 				}
 			],
 			"environment": [
-				"森林"
+				"forest"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -43265,7 +43265,7 @@
 					"ENG_name": "Claw",
 					"name": "爪击",
 					"entries": [
-						"{@atkr m} {@hit 7}，触及 5 尺。{@h}13（{@damage 2d8 + 4}）挥砍伤害。"
+						"{@atkr m} 命中{@hit 7}，触及 5 尺。{@h}13 ({@damage 2d8 + 4}) 点挥砍伤害。"
 					]
 				}
 			],
@@ -43279,7 +43279,7 @@
 				}
 			],
 			"environment": [
-				"位面, 下层"
+				"planar, lower"
 			],
 			"treasure": [
 				"奥秘"
@@ -43410,7 +43410,7 @@
 				}
 			],
 			"environment": [
-				"位面, 下层"
+				"planar, lower"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -43517,7 +43517,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"个体"
@@ -43661,7 +43661,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"个体"
@@ -43781,7 +43781,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"treasure": [
 				"奥秘"
@@ -43926,7 +43926,7 @@
 				}
 			],
 			"environment": [
-				"位面, 焦炎地狱"
+				"planar, gehenna"
 			],
 			"treasure": [
 				"武备"
@@ -44053,7 +44053,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -44157,7 +44157,7 @@
 				}
 			],
 			"environment": [
-				"水下"
+				"underwater"
 			],
 			"familiar": true,
 			"soundClip": {
@@ -44256,14 +44256,14 @@
 				}
 			],
 			"environment": [
-				"极地",
-				"荒漠",
-				"森林",
-				"草地",
-				"丘陵",
-				"山地",
-				"沼泽",
-				"幽暗地域"
+				"arctic",
+				"desert",
+				"forest",
+				"grassland",
+				"hill",
+				"mountain",
+				"swamp",
+				"underdark"
 			],
 			"treasure": [
 				"武备"
@@ -44369,9 +44369,9 @@
 				}
 			],
 			"environment": [
-				"位面, 堕影冥界",
-				"幽暗地域",
-				"城市"
+				"planar, shadowfell",
+				"underdark",
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -44464,14 +44464,14 @@
 				}
 			],
 			"environment": [
-				"极地",
-				"荒漠",
-				"森林",
-				"草地",
-				"丘陵",
-				"山地",
-				"沼泽",
-				"幽暗地域"
+				"arctic",
+				"desert",
+				"forest",
+				"grassland",
+				"hill",
+				"mountain",
+				"swamp",
+				"underdark"
 			],
 			"treasure": [
 				"武备"
@@ -44638,8 +44638,8 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"城市"
+				"forest",
+				"urban"
 			],
 			"treasure": [
 				"武备"
@@ -44766,7 +44766,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"treasure": [
 				"任何"
@@ -44875,9 +44875,9 @@
 				}
 			],
 			"environment": [
-				"极地",
-				"森林",
-				"丘陵"
+				"arctic",
+				"forest",
+				"hill"
 			],
 			"familiar": true,
 			"soundClip": {
@@ -44963,7 +44963,7 @@
 				}
 			],
 			"environment": [
-				"森林"
+				"forest"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -45055,9 +45055,9 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"草地",
-				"丘陵"
+				"forest",
+				"grassland",
+				"hill"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -45139,10 +45139,10 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"草地",
-				"丘陵",
-				"位面, 上层"
+				"forest",
+				"grassland",
+				"hill",
+				"planar, upper"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -45237,7 +45237,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"器具",
@@ -45368,7 +45368,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"器具",
@@ -45506,7 +45506,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"器具",
@@ -45629,8 +45629,8 @@
 				}
 			],
 			"environment": [
-				"丘陵",
-				"山地"
+				"hill",
+				"mountain"
 			],
 			"treasure": [
 				"武备"
@@ -45753,13 +45753,13 @@
 				}
 			],
 			"environment": [
-				"荒漠",
-				"森林",
-				"草地",
-				"丘陵",
-				"位面, 以太",
-				"幽暗地域",
-				"城市"
+				"desert",
+				"forest",
+				"grassland",
+				"hill",
+				"planar, ethereal",
+				"underdark",
+				"urban"
 			],
 			"treasure": [
 				"任何"
@@ -45866,7 +45866,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"treasure": [
 				"个体"
@@ -45950,7 +45950,7 @@
 				}
 			],
 			"environment": [
-				"水下"
+				"underwater"
 			],
 			"familiar": true,
 			"traitTags": [
@@ -46054,7 +46054,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"器具",
@@ -46206,7 +46206,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"器具",
@@ -46342,7 +46342,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"器具",
@@ -46526,7 +46526,7 @@
 				}
 			],
 			"environment": [
-				"位面, 九层地狱"
+				"planar, nine hells"
 			],
 			"treasure": [
 				"圣物"
@@ -46672,8 +46672,8 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"位面, 妖精荒野"
+				"forest",
+				"planar, feywild"
 			],
 			"treasure": [
 				"奥秘"
@@ -46829,8 +46829,8 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"位面, 妖精荒野"
+				"forest",
+				"planar, feywild"
 			],
 			"treasure": [
 				"奥秘"
@@ -47040,7 +47040,7 @@
 				}
 			],
 			"environment": [
-				"位面, 上层"
+				"planar, upper"
 			],
 			"treasure": [
 				"圣物"
@@ -47155,8 +47155,8 @@
 				}
 			],
 			"environment": [
-				"极地",
-				"水下"
+				"arctic",
+				"underwater"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -47240,7 +47240,7 @@
 				}
 			],
 			"environment": [
-				"极地"
+				"arctic"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -47376,8 +47376,8 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"城市"
+				"underdark",
+				"urban"
 			],
 			"treasure": [
 				"任何"
@@ -47468,8 +47468,8 @@
 				}
 			],
 			"environment": [
-				"草地",
-				"城市"
+				"grassland",
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -47614,7 +47614,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"个体",
@@ -47764,7 +47764,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"个体",
@@ -47875,7 +47875,7 @@
 				}
 			],
 			"environment": [
-				"森林"
+				"forest"
 			],
 			"traitTags": [
 				"Magic Resistance"
@@ -47991,12 +47991,12 @@
 				}
 			],
 			"environment": [
-				"海岸",
-				"荒漠",
-				"森林",
-				"丘陵",
-				"山地",
-				"城市"
+				"coastal",
+				"desert",
+				"forest",
+				"hill",
+				"mountain",
+				"urban"
 			],
 			"treasure": [
 				"奥秘"
@@ -48127,7 +48127,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"traitTags": [
 				"Amorphous"
@@ -48216,9 +48216,9 @@
 				}
 			],
 			"environment": [
-				"海岸",
-				"草地",
-				"山地"
+				"coastal",
+				"grassland",
+				"mountain"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -48330,8 +48330,8 @@
 				}
 			],
 			"environment": [
-				"荒漠",
-				"幽暗地域"
+				"desert",
+				"underdark"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -48444,7 +48444,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -48585,7 +48585,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -48743,7 +48743,7 @@
 				}
 			],
 			"environment": [
-				"位面, 无底深渊"
+				"planar, abyss"
 			],
 			"familiar": true,
 			"soundClip": {
@@ -48900,7 +48900,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"武备",
@@ -49067,8 +49067,8 @@
 				}
 			],
 			"environment": [
-				"位面, 九层地狱",
-				"城市"
+				"planar, nine hells",
+				"urban"
 			],
 			"treasure": [
 				"圣物"
@@ -49183,10 +49183,10 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"沼泽",
-				"幽暗地域",
-				"城市"
+				"forest",
+				"swamp",
+				"underdark",
+				"urban"
 			],
 			"familiar": true,
 			"soundClip": {
@@ -49272,9 +49272,9 @@
 				}
 			],
 			"environment": [
-				"丘陵",
-				"沼泽",
-				"城市"
+				"hill",
+				"swamp",
+				"urban"
 			],
 			"familiar": true,
 			"soundClip": {
@@ -49385,8 +49385,8 @@
 				}
 			],
 			"environment": [
-				"丘陵",
-				"山地"
+				"hill",
+				"mountain"
 			],
 			"treasure": [
 				"任何"
@@ -49506,7 +49506,7 @@
 				}
 			],
 			"environment": [
-				"位面, 混沌海"
+				"planar, limbo"
 			],
 			"treasure": [
 				"任何"
@@ -49613,12 +49613,12 @@
 					"ENG_name": "Bite",
 					"name": "啃咬",
 					"entries": [
-						"{@atkr m} {@hit 4}，触及5尺。{@h}7（{@damage 2d4 + 2}）穿刺伤害。"
+						"{@atkr m} 命中{@hit 4}，触及 5 尺。{@h}7 ({@damage 2d4 + 2}) 点穿刺伤害。"
 					]
 				}
 			],
 			"environment": [
-				"水下"
+				"underwater"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -49717,7 +49717,7 @@
 				}
 			],
 			"environment": [
-				"极地"
+				"arctic"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -49864,9 +49864,9 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"沼泽",
-				"城市"
+				"forest",
+				"swamp",
+				"urban"
 			],
 			"treasure": [
 				"任何"
@@ -49952,7 +49952,7 @@
 				}
 			],
 			"environment": [
-				"草地"
+				"grassland"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -50023,8 +50023,8 @@
 				}
 			],
 			"environment": [
-				"草地",
-				"城市"
+				"grassland",
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -50122,11 +50122,11 @@
 				}
 			],
 			"environment": [
-				"极地",
-				"海岸",
-				"荒漠",
-				"丘陵",
-				"山地"
+				"arctic",
+				"coastal",
+				"desert",
+				"hill",
+				"mountain"
 			],
 			"treasure": [
 				"任何"
@@ -50244,7 +50244,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"treasure": [
 				"任何"
@@ -50366,7 +50366,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -50472,9 +50472,9 @@
 				}
 			],
 			"environment": [
-				"极地",
-				"丘陵",
-				"山地"
+				"arctic",
+				"hill",
+				"mountain"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -50606,8 +50606,8 @@
 				}
 			],
 			"environment": [
-				"海岸",
-				"水下"
+				"coastal",
+				"underwater"
 			],
 			"treasure": [
 				"任何"
@@ -50773,8 +50773,8 @@
 				}
 			],
 			"environment": [
-				"海岸",
-				"水下"
+				"coastal",
+				"underwater"
 			],
 			"treasure": [
 				"任何"
@@ -50909,8 +50909,8 @@
 				}
 			],
 			"environment": [
-				"海岸",
-				"水下"
+				"coastal",
+				"underwater"
 			],
 			"treasure": [
 				"任何"
@@ -51017,8 +51017,8 @@
 				}
 			],
 			"environment": [
-				"位面, 火",
-				"幽暗地域"
+				"planar, fire",
+				"underdark"
 			],
 			"treasure": [
 				"武备"
@@ -51122,8 +51122,8 @@
 				}
 			],
 			"environment": [
-				"位面, 火",
-				"幽暗地域"
+				"planar, fire",
+				"underdark"
 			],
 			"treasure": [
 				"武备"
@@ -51235,7 +51235,7 @@
 					"ENG_name": "Inferno Blast {@recharge 5}",
 					"name": "炎狱爆裂{@recharge 5}",
 					"entries": [
-						"{@actSave dex} {@dc 18}，以120尺内火蜥蜴可见的一点为中心，半径30尺{@variantrule 球状 [效应区域]|XPHB|球状}区域内的每名生物。{@actSaveFail} 35（{@damage 10d6}）火焰伤害，且目标开始{@hazard 燃烧|XPHB}燃烧，目标在其回合开始时受到5（{@damage 1d10}）火焰伤害，而非普通的{@hazard 燃烧|XPHB}燃烧伤害。每当目标承受此{@hazard 燃烧|XPHB}燃烧伤害，目标获得1级{@condition 力竭|XPHB}力竭。{@actSaveSuccess} 仅半伤。"
+						"{@actSave dex} {@dc 18}，以120尺内火蜥蜴可见的一点为中心，半径30尺{@variantrule 球状 [效应区域]|XPHB|球状}区域内的每名生物。{@actSaveFail} 35（{@damage 10d6}）火焰伤害，且目标开始{@hazard burning|XPHB}燃烧，目标在其回合开始时受到5（{@damage 1d10}）火焰伤害，而非普通的{@hazard burning|XPHB}燃烧伤害。每当目标承受此{@hazard burning|XPHB}燃烧伤害，目标获得1级{@condition 力竭|XPHB}力竭。{@actSaveSuccess} 仅半伤。"
 					]
 				}
 			],
@@ -51249,8 +51249,8 @@
 				}
 			],
 			"environment": [
-				"位面, 火",
-				"幽暗地域"
+				"planar, fire",
+				"underdark"
 			],
 			"treasure": [
 				"武备"
@@ -51364,8 +51364,8 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"位面, 妖精荒野"
+				"forest",
+				"planar, feywild"
 			],
 			"treasure": [
 				"器具"
@@ -51502,8 +51502,8 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"位面, 妖精荒野"
+				"forest",
+				"planar, feywild"
 			],
 			"treasure": [
 				"器具"
@@ -51616,7 +51616,7 @@
 				}
 			],
 			"environment": [
-				"草地"
+				"grassland"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -51697,7 +51697,7 @@
 				}
 			],
 			"environment": [
-				"荒漠"
+				"desert"
 			],
 			"familiar": true,
 			"soundClip": {
@@ -51799,7 +51799,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"器具",
@@ -51930,7 +51930,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"器具",
@@ -52074,8 +52074,8 @@
 				}
 			],
 			"environment": [
-				"海岸",
-				"水下"
+				"coastal",
+				"underwater"
 			],
 			"treasure": [
 				"奥秘"
@@ -52178,7 +52178,7 @@
 				}
 			],
 			"environment": [
-				"水下"
+				"underwater"
 			],
 			"familiar": true,
 			"traitTags": [
@@ -52294,9 +52294,9 @@
 				}
 			],
 			"environment": [
-				"位面, 堕影冥界",
-				"幽暗地域",
-				"城市"
+				"planar, shadowfell",
+				"underdark",
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -52448,7 +52448,7 @@
 				}
 			],
 			"environment": [
-				"位面, 无底深渊"
+				"planar, abyss"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -52548,7 +52548,7 @@
 					"ENG_name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
 					"name": "传奇抗性（3/日，或巢穴内4/日）",
 					"entries": [
-						"龙豁免失败时，可以将其改为豁免成功。"
+						"该龙豁免失败时，可以将其改为豁免成功。"
 					]
 				},
 				{
@@ -52621,8 +52621,8 @@
 				"source": "XMM"
 			},
 			"environment": [
-				"位面, 堕影冥界",
-				"幽暗地域"
+				"planar, shadowfell",
+				"underdark"
 			],
 			"treasure": [
 				"任何"
@@ -52747,8 +52747,8 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"沼泽"
+				"forest",
+				"swamp"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -52891,7 +52891,7 @@
 				}
 			],
 			"environment": [
-				"城市"
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -52977,7 +52977,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"senseTags": [
 				"B"
@@ -53084,8 +53084,8 @@
 				}
 			],
 			"environment": [
-				"山地",
-				"城市"
+				"mountain",
+				"urban"
 			],
 			"treasure": [
 				"奥秘"
@@ -53211,9 +53211,9 @@
 				}
 			],
 			"environment": [
-				"位面, 堕影冥界",
-				"幽暗地域",
-				"城市"
+				"planar, shadowfell",
+				"underdark",
+				"urban"
 			],
 			"familiar": true,
 			"soundClip": {
@@ -53318,7 +53318,7 @@
 				}
 			],
 			"environment": [
-				"位面, 混沌海"
+				"planar, limbo"
 			],
 			"treasure": [
 				"任何"
@@ -53430,7 +53430,7 @@
 				}
 			],
 			"environment": [
-				"位面, 元素"
+				"planar, elemental"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -53649,7 +53649,7 @@
 				}
 			],
 			"environment": [
-				"位面, 上层"
+				"planar, upper"
 			],
 			"treasure": [
 				"任何"
@@ -53832,7 +53832,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"treasure": [
 				"任何"
@@ -53957,14 +53957,14 @@
 					"ENG_name": "Incorporeal Movement",
 					"name": "虚体移动",
 					"entries": [
-						"恶灵可以移动穿过其他生物或物件，如同穿过{@variantrule 困难地形|XPHB}一般。在其回合结束时，若恶灵还处于物件内，其受到5（{@damage 1d10}）力场伤害"
+						"该幽灵可以如穿过{@variantrule 困难地形|XPHB}般穿过其他生物和物体。若它在一个物体内部结束回合，它受 5 ({@damage 1d10}) 点力场伤害。"
 					]
 				},
 				{
 					"ENG_name": "Sunlight Sensitivity",
 					"name": "日照敏感",
 					"entries": [
-						"若恶灵身处阳光下，其进行的属性检定和攻击检定具有{@variantrule 劣势|XPHB}。"
+						"在阳光下时，该幽灵的属性检定和攻击检定具有{@variantrule 劣势|XPHB}。"
 					]
 				}
 			],
@@ -53973,13 +53973,13 @@
 					"ENG_name": "Life Drain",
 					"name": "吸取生命",
 					"entries": [
-						"{@atkr m} {@hit 4}，触及5尺。{@h}7（{@damage 2d6}）暗蚀伤害。若目标为生物，其{@variantrule 生命值|XPHB|生命值}上限减少等于其受到伤害的数值。"
+						"{@atkr m} 命中{@hit 4}，触及 5 尺。{@h}7 ({@damage 2d6}) 点暗蚀伤害。若目标是生物，其{@variantrule 生命值|XPHB|生命值}上限降低等同于所受伤害的数值。"
 					]
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"城市"
+				"underdark",
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -54170,8 +54170,8 @@
 				"source": "XMM"
 			},
 			"environment": [
-				"荒漠",
-				"位面, 上层"
+				"desert",
+				"planar, upper"
 			],
 			"treasure": [
 				"奥秘"
@@ -54336,8 +54336,8 @@
 				}
 			],
 			"environment": [
-				"荒漠",
-				"位面, 上层"
+				"desert",
+				"planar, upper"
 			],
 			"treasure": [
 				"奥秘"
@@ -54560,8 +54560,8 @@
 				"source": "XMM"
 			},
 			"environment": [
-				"荒漠",
-				"位面, 上层"
+				"desert",
+				"planar, upper"
 			],
 			"treasure": [
 				"奥秘"
@@ -54694,8 +54694,8 @@
 				}
 			],
 			"environment": [
-				"荒漠",
-				"位面, 上层"
+				"desert",
+				"planar, upper"
 			],
 			"treasure": [
 				"奥秘"
@@ -54796,11 +54796,11 @@
 				}
 			],
 			"environment": [
-				"荒漠",
-				"森林",
-				"沼泽",
-				"幽暗地域",
-				"城市"
+				"desert",
+				"forest",
+				"swamp",
+				"underdark",
+				"urban"
 			],
 			"familiar": true,
 			"soundClip": {
@@ -54921,7 +54921,7 @@
 				}
 			],
 			"environment": [
-				"位面, 九层地狱"
+				"planar, nine hells"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -55031,7 +55031,7 @@
 							"{@spell 侦测思想|XPHB}",
 							"{@spell 任意门|XPHB}",
 							"{@spell 定身类人|XPHB}（三环版本）",
-							"{@spell 闪电束|XPHB}（四环版本）"
+							"{@spell 闪电束|XPHB} (4环版本)"
 						]
 					},
 					"ability": "int",
@@ -55071,8 +55071,8 @@
 				}
 			],
 			"environment": [
-				"位面, 下层",
-				"幽暗地域"
+				"planar, lower",
+				"underdark"
 			],
 			"treasure": [
 				"奥秘"
@@ -55217,8 +55217,8 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"位面, 妖精荒野"
+				"forest",
+				"planar, feywild"
 			],
 			"treasure": [
 				"武备"
@@ -55346,7 +55346,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"器具",
@@ -55480,7 +55480,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"器具",
@@ -55601,7 +55601,7 @@
 				}
 			],
 			"environment": [
-				"位面, 元素"
+				"planar, elemental"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -55688,14 +55688,14 @@
 				}
 			],
 			"environment": [
-				"荒漠",
-				"森林",
-				"草地",
-				"丘陵",
-				"山地",
-				"沼泽",
-				"幽暗地域",
-				"城市"
+				"desert",
+				"forest",
+				"grassland",
+				"hill",
+				"mountain",
+				"swamp",
+				"underdark",
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -55803,8 +55803,8 @@
 				}
 			],
 			"environment": [
-				"山地",
-				"幽暗地域"
+				"mountain",
+				"underdark"
 			],
 			"treasure": [
 				"武备"
@@ -55962,7 +55962,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -56134,8 +56134,8 @@
 				}
 			],
 			"environment": [
-				"海岸",
-				"水下"
+				"coastal",
+				"underwater"
 			],
 			"treasure": [
 				"武备"
@@ -56293,8 +56293,8 @@
 				}
 			],
 			"environment": [
-				"位面, 下层",
-				"城市"
+				"planar, lower",
+				"urban"
 			],
 			"treasure": [
 				"器具"
@@ -56405,10 +56405,10 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"山地",
-				"幽暗地域",
-				"城市"
+				"forest",
+				"mountain",
+				"underdark",
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -56518,7 +56518,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"senseTags": [
 				"B"
@@ -56644,7 +56644,7 @@
 				}
 			],
 			"environment": [
-				"位面, 无底深渊"
+				"planar, abyss"
 			],
 			"senseTags": [
 				"D"
@@ -56764,13 +56764,13 @@
 				}
 			],
 			"environment": [
-				"荒漠",
-				"森林",
-				"草地",
-				"丘陵",
-				"沼泽",
-				"幽暗地域",
-				"城市"
+				"desert",
+				"forest",
+				"grassland",
+				"hill",
+				"swamp",
+				"underdark",
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -56869,7 +56869,7 @@
 				}
 			],
 			"environment": [
-				"位面, 下层"
+				"planar, lower"
 			],
 			"senseTags": [
 				"D"
@@ -56991,7 +56991,7 @@
 				}
 			],
 			"environment": [
-				"位面, 九层地狱"
+				"planar, nine hells"
 			],
 			"traitTags": [
 				"Devil's Sight"
@@ -57096,7 +57096,7 @@
 				}
 			],
 			"environment": [
-				"水下"
+				"underwater"
 			],
 			"traitTags": [
 				"Water Breathing"
@@ -57191,10 +57191,10 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"沼泽",
-				"幽暗地域",
-				"城市"
+				"forest",
+				"swamp",
+				"underdark",
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -57296,9 +57296,9 @@
 				}
 			],
 			"environment": [
-				"丘陵",
-				"沼泽",
-				"城市"
+				"hill",
+				"swamp",
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -57395,14 +57395,14 @@
 				}
 			],
 			"environment": [
-				"荒漠",
-				"森林",
-				"草地",
-				"丘陵",
-				"山地",
-				"沼泽",
-				"幽暗地域",
-				"城市"
+				"desert",
+				"forest",
+				"grassland",
+				"hill",
+				"mountain",
+				"swamp",
+				"underdark",
+				"urban"
 			],
 			"senseTags": [
 				"D"
@@ -57497,12 +57497,12 @@
 				}
 			],
 			"environment": [
-				"海岸",
-				"荒漠",
-				"森林",
-				"草地",
-				"丘陵",
-				"沼泽"
+				"coastal",
+				"desert",
+				"forest",
+				"grassland",
+				"hill",
+				"swamp"
 			],
 			"senseTags": [
 				"B"
@@ -57685,7 +57685,7 @@
 				}
 			],
 			"environment": [
-				"城市"
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -57808,8 +57808,8 @@
 				}
 			],
 			"environment": [
-				"荒漠",
-				"草地"
+				"desert",
+				"grassland"
 			],
 			"treasure": [
 				"武备"
@@ -57933,8 +57933,8 @@
 				}
 			],
 			"environment": [
-				"荒漠",
-				"草地"
+				"desert",
+				"grassland"
 			],
 			"treasure": [
 				"武备"
@@ -58041,8 +58041,8 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"草地"
+				"forest",
+				"grassland"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -58142,7 +58142,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"武备"
@@ -58257,7 +58257,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"武备"
@@ -58384,7 +58384,7 @@
 				}
 			],
 			"environment": [
-				"森林"
+				"forest"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -58495,7 +58495,7 @@
 				}
 			],
 			"environment": [
-				"森林"
+				"forest"
 			],
 			"senseTags": [
 				"B"
@@ -58584,7 +58584,7 @@
 				}
 			],
 			"environment": [
-				"草地"
+				"grassland"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -58672,12 +58672,12 @@
 					"ENG_name": "Rend",
 					"name": "撕裂",
 					"entries": [
-						"{@atkr m}： {@hit 4}，触及 5 尺。{@h}： 5（{@damage 1d6 + 2}）挥砍伤害。"
+						"{@atkr m} 命中{@hit 4}，触及 5 尺。{@h}5 ({@damage 1d6 + 2}) 点挥砍伤害。"
 					]
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"treasure": [
 				"武备"
@@ -58804,12 +58804,12 @@
 				}
 			],
 			"environment": [
-				"极地",
-				"森林",
-				"丘陵",
-				"山地",
-				"沼泽",
-				"幽暗地域"
+				"arctic",
+				"forest",
+				"hill",
+				"mountain",
+				"swamp",
+				"underdark"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -58904,12 +58904,12 @@
 				}
 			],
 			"environment": [
-				"极地",
-				"森林",
-				"丘陵",
-				"山地",
-				"沼泽",
-				"幽暗地域"
+				"arctic",
+				"forest",
+				"hill",
+				"mountain",
+				"swamp",
+				"underdark"
 			],
 			"traitTags": [
 				"Regeneration"
@@ -58999,7 +58999,7 @@
 				}
 			],
 			"environment": [
-				"森林"
+				"forest"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -59105,7 +59105,7 @@
 				}
 			],
 			"environment": [
-				"草地"
+				"grassland"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -59293,7 +59293,7 @@
 				}
 			],
 			"environment": [
-				"位面, 下层"
+				"planar, lower"
 			],
 			"treasure": [
 				"武备"
@@ -59459,7 +59459,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -59653,8 +59653,8 @@
 				"source": "XMM"
 			},
 			"environment": [
-				"森林",
-				"位面, 妖精荒野"
+				"forest",
+				"planar, feywild"
 			],
 			"treasure": [
 				"任何"
@@ -60092,8 +60092,8 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"城市"
+				"underdark",
+				"urban"
 			],
 			"treasure": [
 				"任何"
@@ -60234,8 +60234,8 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"城市"
+				"underdark",
+				"urban"
 			],
 			"treasure": [
 				"任何"
@@ -60412,8 +60412,8 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"城市"
+				"underdark",
+				"urban"
 			],
 			"treasure": [
 				"任何"
@@ -60785,12 +60785,12 @@
 				}
 			],
 			"environment": [
-				"海岸",
-				"荒漠",
-				"森林",
-				"草地",
-				"丘陵",
-				"沼泽"
+				"coastal",
+				"desert",
+				"forest",
+				"grassland",
+				"hill",
+				"swamp"
 			],
 			"familiar": true,
 			"senseTags": [
@@ -60888,7 +60888,7 @@
 				}
 			],
 			"environment": [
-				"森林"
+				"forest"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -60985,7 +60985,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -61099,7 +61099,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"senseTags": [
 				"B"
@@ -61243,7 +61243,7 @@
 				}
 			],
 			"environment": [
-				"位面, 无底深渊"
+				"planar, abyss"
 			],
 			"treasure": [
 				"武备"
@@ -61343,9 +61343,9 @@
 				}
 			],
 			"environment": [
-				"荒漠",
-				"草地",
-				"丘陵"
+				"desert",
+				"grassland",
+				"hill"
 			],
 			"familiar": true,
 			"soundClip": {
@@ -61421,7 +61421,7 @@
 				}
 			],
 			"environment": [
-				"城市"
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -61499,9 +61499,9 @@
 				}
 			],
 			"environment": [
-				"位面, 堕影冥界",
-				"幽暗地域",
-				"城市"
+				"planar, shadowfell",
+				"underdark",
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -61649,7 +61649,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"武备"
@@ -61741,7 +61741,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"武备"
@@ -61856,7 +61856,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"武备"
@@ -61987,10 +61987,10 @@
 				}
 			],
 			"environment": [
-				"海岸",
-				"位面, 水",
-				"沼泽",
-				"水下"
+				"coastal",
+				"planar, water",
+				"swamp",
+				"underwater"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -62107,8 +62107,8 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"城市"
+				"underdark",
+				"urban"
 			],
 			"treasure": [
 				"任何"
@@ -62201,9 +62201,9 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"草地",
-				"丘陵"
+				"forest",
+				"grassland",
+				"hill"
 			],
 			"familiar": true,
 			"soundClip": {
@@ -62327,7 +62327,7 @@
 					"ENG_name": "Rend (Bear or Hybrid Form Only)",
 					"name": "撕裂（仅熊与混合形态）",
 					"entries": [
-						"{@atkr m} {@hit 7}，触及 5 尺。{@h}13（{@damage 2d8 + 4}）挥砍伤害。"
+						"{@atkr m} 命中{@hit 7}，触及 5 尺。{@h}13 ({@damage 2d8 + 4}) 点挥砍伤害。"
 					]
 				}
 			],
@@ -62341,9 +62341,9 @@
 				}
 			],
 			"environment": [
-				"极地",
-				"森林",
-				"丘陵"
+				"arctic",
+				"forest",
+				"hill"
 			],
 			"treasure": [
 				"圣物"
@@ -62489,9 +62489,9 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"草地",
-				"丘陵"
+				"forest",
+				"grassland",
+				"hill"
 			],
 			"treasure": [
 				"个体"
@@ -62628,8 +62628,8 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"城市"
+				"forest",
+				"urban"
 			],
 			"treasure": [
 				"个体"
@@ -62779,9 +62779,9 @@
 				}
 			],
 			"environment": [
-				"荒漠",
-				"森林",
-				"草地"
+				"desert",
+				"forest",
+				"grassland"
 			],
 			"treasure": [
 				"武备"
@@ -62938,8 +62938,8 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"丘陵"
+				"forest",
+				"hill"
 			],
 			"treasure": [
 				"任何"
@@ -63080,7 +63080,7 @@
 				}
 			],
 			"environment": [
-				"极地"
+				"arctic"
 			],
 			"treasure": [
 				"奥秘"
@@ -63221,11 +63221,11 @@
 				}
 			],
 			"environment": [
-				"荒漠",
-				"位面, 堕影冥界",
-				"沼泽",
-				"幽暗地域",
-				"城市"
+				"desert",
+				"planar, shadowfell",
+				"swamp",
+				"underdark",
+				"urban"
 			],
 			"treasure": [
 				"武备"
@@ -63496,15 +63496,15 @@
 				}
 			],
 			"environment": [
-				"极地",
-				"海岸",
-				"荒漠",
-				"森林",
-				"丘陵",
-				"山地",
-				"沼泽",
-				"幽暗地域",
-				"城市"
+				"arctic",
+				"coastal",
+				"desert",
+				"forest",
+				"hill",
+				"mountain",
+				"swamp",
+				"underdark",
+				"urban"
 			],
 			"treasure": [
 				"武备"
@@ -63613,7 +63613,7 @@
 				}
 			],
 			"environment": [
-				"极地"
+				"arctic"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -63717,9 +63717,9 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"草地",
-				"丘陵"
+				"forest",
+				"grassland",
+				"hill"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -63802,10 +63802,10 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"草地",
-				"丘陵",
-				"位面, 妖精荒野"
+				"forest",
+				"grassland",
+				"hill",
+				"planar, feywild"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -63940,8 +63940,8 @@
 				}
 			],
 			"environment": [
-				"位面, 堕影冥界",
-				"幽暗地域"
+				"planar, shadowfell",
+				"underdark"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -64028,7 +64028,7 @@
 					"ENG_name": "Bite",
 					"name": "啃咬",
 					"entries": [
-						"{@atkr m} {@hit 7}，触及 5 尺。{@h}13（{@damage 2d8 + 4}）穿刺伤害。"
+						"{@atkr m} 命中{@hit 7}，触及 5 尺。{@h}13 ({@damage 2d8 + 4}) 点穿刺伤害。"
 					]
 				},
 				{
@@ -64040,8 +64040,8 @@
 				}
 			],
 			"environment": [
-				"丘陵",
-				"山地"
+				"hill",
+				"mountain"
 			],
 			"treasure": [
 				"任何"
@@ -64176,8 +64176,8 @@
 				}
 			],
 			"environment": [
-				"位面, 土",
-				"幽暗地域"
+				"planar, earth",
+				"underdark"
 			],
 			"treasure": [
 				"任何"
@@ -64299,7 +64299,7 @@
 				}
 			],
 			"environment": [
-				"极地"
+				"arctic"
 			],
 			"treasure": [
 				"任何"
@@ -64658,7 +64658,7 @@
 				}
 			],
 			"environment": [
-				"沼泽"
+				"swamp"
 			],
 			"treasure": [
 				"圣物"
@@ -64792,8 +64792,8 @@
 				}
 			],
 			"environment": [
-				"海岸",
-				"荒漠"
+				"coastal",
+				"desert"
 			],
 			"treasure": [
 				"圣物"
@@ -64931,7 +64931,7 @@
 				}
 			],
 			"environment": [
-				"荒漠"
+				"desert"
 			],
 			"treasure": [
 				"奥秘"
@@ -65083,7 +65083,7 @@
 				}
 			],
 			"environment": [
-				"海岸"
+				"coastal"
 			],
 			"treasure": [
 				"器具"
@@ -65228,7 +65228,7 @@
 				}
 			],
 			"environment": [
-				"丘陵"
+				"hill"
 			],
 			"treasure": [
 				"奥秘"
@@ -65373,8 +65373,8 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"草地"
+				"forest",
+				"grassland"
 			],
 			"treasure": [
 				"奥秘"
@@ -65520,7 +65520,7 @@
 				}
 			],
 			"environment": [
-				"森林"
+				"forest"
 			],
 			"treasure": [
 				"奥秘"
@@ -65654,8 +65654,8 @@
 				}
 			],
 			"environment": [
-				"丘陵",
-				"山地"
+				"hill",
+				"mountain"
 			],
 			"treasure": [
 				"任何"
@@ -65755,7 +65755,7 @@
 				}
 			],
 			"environment": [
-				"极地"
+				"arctic"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -65873,8 +65873,8 @@
 				}
 			],
 			"environment": [
-				"山地",
-				"城市"
+				"mountain",
+				"urban"
 			],
 			"treasure": [
 				"奥秘"
@@ -66014,7 +66014,7 @@
 				}
 			],
 			"environment": [
-				"极地"
+				"arctic"
 			],
 			"treasure": [
 				"奥秘"
@@ -66177,10 +66177,10 @@
 				}
 			],
 			"environment": [
-				"荒漠",
-				"森林",
-				"沼泽",
-				"城市"
+				"desert",
+				"forest",
+				"swamp",
+				"urban"
 			],
 			"treasure": [
 				"圣物"
@@ -66337,10 +66337,10 @@
 				}
 			],
 			"environment": [
-				"荒漠",
-				"森林",
-				"沼泽",
-				"城市"
+				"desert",
+				"forest",
+				"swamp",
+				"urban"
 			],
 			"treasure": [
 				"圣物"
@@ -66505,10 +66505,10 @@
 				}
 			],
 			"environment": [
-				"荒漠",
-				"森林",
-				"沼泽",
-				"城市"
+				"desert",
+				"forest",
+				"swamp",
+				"urban"
 			],
 			"treasure": [
 				"圣物"
@@ -66660,10 +66660,10 @@
 				}
 			],
 			"environment": [
-				"荒漠",
-				"森林",
-				"沼泽",
-				"城市"
+				"desert",
+				"forest",
+				"swamp",
+				"urban"
 			],
 			"treasure": [
 				"圣物"
@@ -66823,10 +66823,10 @@
 				}
 			],
 			"environment": [
-				"荒漠",
-				"森林",
-				"沼泽",
-				"城市"
+				"desert",
+				"forest",
+				"swamp",
+				"urban"
 			],
 			"treasure": [
 				"圣物"
@@ -66966,9 +66966,9 @@
 				}
 			],
 			"environment": [
-				"位面, 堕影冥界",
-				"幽暗地域",
-				"城市"
+				"planar, shadowfell",
+				"underdark",
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",

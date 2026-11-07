@@ -89,7 +89,7 @@
 									"type": "table",
 									"caption": "宗主态度",
 									"colLabels": [
-										"{@dice d6}",
+										"{@dice D6}",
 										"态度"
 									],
 									"colStyles": [
@@ -166,7 +166,7 @@
 									"type": "table",
 									"caption": "特殊术语",
 									"colLabels": [
-										"{@dice d6}",
+										"{@dice D6}",
 										"术语"
 									],
 									"colStyles": [
@@ -337,20 +337,23 @@
 			]
 		},
 		{
-			"name": "Warlock",
+			"ENG_name": "Warlock",
+			"name": "术士",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Warlock",
+					"name": "术士",
 					"type": "section",
-					"name": "Warlock",
 					"entries": [
-						"Throughout the ages, many mortals have bargained with the demonic forces of the Burning Legion and the entities of the Void to gain power. To these warlocks, the destructive might of demons isn't something to be feared, but an opportunity to be coveted. The worst of them seek domination over others. The best of them wield demonic power as a weapon against the demons it comes from, turning the might of the Burning Legion against itself.",
-						"Warlocks summon demon minions to fight alongside them\u2014wretched imps, loyal voidwalkers, manipulative sayaad (succubi and incubi), relentless felhunters, and more. While their minions harry their enemies, warlocks scour their foes with searing flames, demonic corruption, and ravaging curses.",
+						"古往今来，许多凡人为获取力量与燃烧军团的恶魔势力和虚空存在交易。对这些术士而言，恶魔的毁灭伟力并非可怖之物，而是值得觊觎的机遇。其中最恶劣者谋求支配他人；最优秀者则将恶魔之力用作对抗其来源的武器，令燃烧军团的伟力反噬其身。",
+						"术士召唤恶魔仆从并肩作战\u2014\u2014卑劣的小鬼、忠实的虚空行者、工于操弄的萨亚德（魅魔与魅魔男）、无情的地狱猎犬等等。当仆从们缠住敌人时，术士以灼热烈焰、恶魔腐化与蹂躏诅咒涤荡对手。",
 						{
+							"ENG_name": "Warlock Patrons",
+							"name": "魔契宗主",
 							"type": "inset",
-							"name": "Warlock Patrons",
 							"entries": [
-								"The Fiend Patron subclass draws on the powers of the fel forces of the Burning Legion. The Great Old One Patron subclass gains its magic from the powers of the Void, including the Old Gods. Any given Warlock might have a multitude of both fel and Void patrons, but a Warlock's subclass shapes their spells and other abilities."
+								"邪魔宗主子职汲取燃烧军团邪能势力的力量。旧日支配者宗主子职的魔法则得自虚空之力，包括上古之神。一名魔契师可能同时拥有众多邪能与虚空的宗主，但魔契师的子职决定了其法术与其他能力。"
 							]
 						}
 					]
@@ -365,7 +368,7 @@
 					},
 					"width": 1700,
 					"height": 2433,
-					"title": "Gnome Warlock",
+					"title": "侏儒术士",
 					"credit": "Dan Scott, Blizzard Artist"
 				},
 				{

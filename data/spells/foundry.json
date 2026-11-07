@@ -5873,7 +5873,7 @@
 						"marked"
 					],
 					"descriptionEntries": [
-						"你是{@i 决斗场地}的指定目标。"
+						"你是{@spell 决斗场地|AU}的指定目标。"
 					]
 				}
 			],
@@ -6773,7 +6773,7 @@
 					"ENG_name": "Drain Life",
 					"name": "汲取生命",
 					"type": "damage",
-					"description": "对受此次施放的{@i 汲能术}影响的生物造成[[/damage]]伤害。",
+					"description": "对受此次施放的{@spell 汲能术|XGE}影响的生物造成[[/damage]]伤害。",
 					"activation": {
 						"type": "bonus"
 					},
@@ -7733,7 +7733,7 @@
 					"ENG_name": "Ongoing Poison Damage",
 					"name": "持续毒素伤害",
 					"type": "damage",
-					"description": "被{@i 溃烂爆发}中毒的生物在其回合开始时受到毒素伤害。",
+					"description": "被{@spell 溃烂爆发|AU}中毒的生物在其回合开始时受到毒素伤害。",
 					"activation": {
 						"type": "special"
 					},
@@ -7766,7 +7766,7 @@
 					"ENG_name": "Repeat Save",
 					"name": "重复豁免",
 					"type": "save",
-					"description": "在其回合结束时，因{@i 溃烂爆发}而中毒的生物重复进行体质豁免，豁免成功则法术对其自身结束。",
+					"description": "在其回合结束时，因{@spell 溃烂爆发|AU}而中毒的生物重复进行体质豁免，豁免成功则法术对其自身结束。",
 					"activation": {
 						"type": "special"
 					},
@@ -14401,7 +14401,7 @@
 					"ENG_name": "Spellcasting Save",
 					"name": "施法豁免",
 					"type": "save",
-					"description": "受影响的生物在施放其法术前需进行一次体质豁免。豁免失败时，将触发{@i 律令痛苦}中描述的施法失败后果。",
+					"description": "受影响的生物在施放其法术前需进行一次体质豁免。豁免失败时，将触发{@spell 律令痛苦|XGE}中描述的施法失败后果。",
 					"activation": {
 						"type": "special"
 					},
@@ -14422,7 +14422,7 @@
 					"ENG_name": "Repeat Save",
 					"name": "重复豁免",
 					"type": "save",
-					"description": "在其回合结束时，受影响的生物进行一次体质豁免，豁免成功则自身身上的{@i 律令痛苦}效果结束。",
+					"description": "在其回合结束时，受影响的生物进行一次体质豁免，豁免成功则自身身上的{@spell 律令痛苦|XGE}效果结束。",
 					"activation": {
 						"type": "special"
 					},
@@ -16957,7 +16957,7 @@
 						}
 					],
 					"descriptionEntries": [
-						"直到你的下一回合开始，你获得+5的AC加值（包括针对触发攻击），且你不会受到来自{@i 魔法飞弹}的伤害。"
+						"直到你的下一回合开始，你获得+5的AC加值（包括针对触发攻击），且你不会受到来自{@spell 魔法飞弹|XPHB}的伤害。"
 					]
 				}
 			],
@@ -22469,7 +22469,7 @@
 			"activities": [
 				{
 					"type": "utility",
-					"descriptionChat": "{@i 祈愿术}在掷出1时失效：[[/r 1d3cs1]]",
+					"descriptionChat": "{@spell 祈愿术|XPHB}在掷出1时失效：[[/r 1d3cs1]]",
 					"activation": {
 						"type": "action"
 					},

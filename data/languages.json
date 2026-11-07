@@ -406,11 +406,25 @@
 			"ENG_name": "Common",
 			"name": "通用语",
 			"type": "standard",
+			"source": "WoW",
+			"origin": "人类"
+		},
+		{
+			"ENG_name": "Common",
+			"name": "通用语",
+			"type": "standard",
 			"source": "XPHB",
 			"page": 37,
 			"srd52": true,
 			"basicRules2024": true,
 			"origin": "印记城"
+		},
+		{
+			"ENG_name": "Common Sign Language",
+			"name": "通用手语",
+			"type": "standard",
+			"source": "WoW",
+			"origin": "人类"
 		},
 		{
 			"ENG_name": "Common Sign Language",
@@ -440,6 +454,13 @@
 			"entries": [
 				"一种在不同民族成员相互交流时使用的语言。但这种语言几乎不可能用于深入讨论任何问题。"
 			]
+		},
+		{
+			"ENG_name": "Cyphers of the First Ones",
+			"name": "初诞者密文",
+			"type": "rare",
+			"source": "WoW",
+			"origin": "初诞者"
 		},
 		{
 			"ENG_name": "Daelkyr",
@@ -507,6 +528,13 @@
 					]
 				}
 			]
+		},
+		{
+			"ENG_name": "Darnassian",
+			"name": "达纳苏斯语",
+			"type": "standard",
+			"source": "WoW",
+			"origin": "暗夜精灵"
 		},
 		{
 			"ENG_name": "Deep Crow",
@@ -638,12 +666,26 @@
 			"ENG_name": "Draconic",
 			"name": "龙语",
 			"type": "standard",
+			"source": "WoW",
+			"origin": "龙类"
+		},
+		{
+			"ENG_name": "Draconic",
+			"name": "龙语",
+			"type": "standard",
 			"source": "XPHB",
 			"page": 37,
 			"srd52": true,
 			"basicRules2024": true,
 			"origin": "龙",
 			"script": "龙语"
+		},
+		{
+			"ENG_name": "Draenei",
+			"name": "德莱尼语",
+			"type": "standard",
+			"source": "WoW",
+			"origin": "德莱尼"
 		},
 		{
 			"ENG_name": "Druidic",
@@ -679,11 +721,25 @@
 			"ENG_name": "Druidic",
 			"name": "德鲁伊语",
 			"type": "rare",
+			"source": "WoW",
+			"origin": "德鲁伊结社"
+		},
+		{
+			"ENG_name": "Druidic",
+			"name": "德鲁伊语",
+			"type": "rare",
 			"source": "XPHB",
 			"page": 37,
 			"srd52": true,
 			"basicRules2024": true,
 			"origin": "德鲁伊结社"
+		},
+		{
+			"ENG_name": "Dwarven",
+			"name": "矮人语",
+			"type": "standard",
+			"source": "WoW",
+			"origin": "矮人"
 		},
 		{
 			"ENG_name": "Dwarvish",
@@ -819,6 +875,13 @@
 			"origin": "精灵"
 		},
 		{
+			"ENG_name": "Eredun",
+			"name": "艾瑞达语",
+			"type": "rare",
+			"source": "WoW",
+			"origin": "燃烧军团的恶魔"
+		},
+		{
 			"ENG_name": "Ergot",
 			"name": "亚苟斯语",
 			"type": "standard",
@@ -828,6 +891,20 @@
 				"北亚苟斯"
 			],
 			"script": "通用语"
+		},
+		{
+			"ENG_name": "Forsaken",
+			"name": "被遗忘者语",
+			"type": "standard",
+			"source": "WoW",
+			"origin": "被遗忘者语"
+		},
+		{
+			"ENG_name": "Furbolg",
+			"name": "熊怪语",
+			"type": "rare",
+			"source": "WoW",
+			"origin": "熊怪"
 		},
 		{
 			"ENG_name": "Giant",
@@ -1046,6 +1123,13 @@
 			"ENG_name": "Gnomish",
 			"name": "侏儒语",
 			"type": "standard",
+			"source": "WoW",
+			"origin": "侏儒"
+		},
+		{
+			"ENG_name": "Gnomish",
+			"name": "侏儒语",
+			"type": "standard",
 			"source": "XPHB",
 			"page": 37,
 			"srd52": true,
@@ -1113,6 +1197,13 @@
 			],
 			"script": "矮人语",
 			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Goblin",
+			"name": "地精语",
+			"type": "standard",
+			"source": "WoW",
+			"origin": "地精"
 		},
 		{
 			"ENG_name": "Goblin",
@@ -1232,6 +1323,13 @@
 					]
 				}
 			]
+		},
+		{
+			"ENG_name": "Hara'ni",
+			"name": "哈拉尼语",
+			"type": "standard",
+			"source": "WoW",
+			"origin": "哈拉尼尔"
 		},
 		{
 			"ENG_name": "Homarid",
@@ -1380,6 +1478,13 @@
 				"{@creature 伊希鳐鱼吸血鬼|OotA}",
 				"{@creature 伊希鳐鱼吸血鬼牧师|OotA|伊希鳐鱼吸血鬼牧师}"
 			]
+		},
+		{
+			"ENG_name": "Kalimag",
+			"name": "卡利麦格语",
+			"type": "rare",
+			"source": "WoW",
+			"origin": "元素生物"
 		},
 		{
 			"ENG_name": "Keldon",
@@ -1665,6 +1770,13 @@
 			]
 		},
 		{
+			"ENG_name": "Nathrezim",
+			"name": "纳斯雷兹姆语",
+			"type": "rare",
+			"source": "WoW",
+			"origin": "纳斯雷兹姆语"
+		},
+		{
 			"ENG_name": "Naush",
 			"name": "纳乌什语",
 			"source": "EGW",
@@ -1672,6 +1784,13 @@
 			"entries": [
 				"原本由居住在集会海岸的基瑙岛民所说的纳乌什语，在克洛维斯联邦的多元文化城市中蓬勃发展。即使是只说通用语的水手，也会在他们的航海术语中融入数十个纳乌什词汇。"
 			]
+		},
+		{
+			"ENG_name": "Nazja",
+			"name": "纳兹加语",
+			"type": "rare",
+			"source": "WoW",
+			"origin": "纳迦"
 		},
 		{
 			"ENG_name": "Nerakese",
@@ -1683,6 +1802,20 @@
 				"奈拉卡"
 			],
 			"script": "伊斯塔语"
+		},
+		{
+			"ENG_name": "Nerglish",
+			"name": "纳格利什语",
+			"type": "rare",
+			"source": "WoW",
+			"origin": "鱼人"
+		},
+		{
+			"ENG_name": "Nerubian",
+			"name": "蛛魔语",
+			"type": "rare",
+			"source": "WoW",
+			"origin": "蛛魔"
 		},
 		{
 			"ENG_name": "Netherese",
@@ -1732,6 +1865,13 @@
 			"script": "食人魔语"
 		},
 		{
+			"ENG_name": "Ogre",
+			"name": "食人魔语",
+			"type": "rare",
+			"source": "WoW",
+			"origin": "食人魔们"
+		},
+		{
 			"ENG_name": "Olman",
 			"name": "奥尔曼语",
 			"source": "TftYP",
@@ -1779,6 +1919,20 @@
 			"origin": "兽人"
 		},
 		{
+			"ENG_name": "Orcish",
+			"name": "兽人语",
+			"type": "standard",
+			"source": "WoW",
+			"origin": "兽人"
+		},
+		{
+			"ENG_name": "Orcish Sign Language",
+			"name": "兽人手语",
+			"type": "standard",
+			"source": "WoW",
+			"origin": "兽人"
+		},
+		{
 			"ENG_name": "Otyugh",
 			"name": "食腐兽语",
 			"source": "MM",
@@ -1798,6 +1952,13 @@
 			"typicalSpeakers": [
 				"{@creature 食腐兽|XMM}"
 			]
+		},
+		{
+			"ENG_name": "Pandaren",
+			"name": "熊猫人语",
+			"type": "standard",
+			"source": "WoW",
+			"origin": "熊猫人语"
 		},
 		{
 			"ENG_name": "Primordial",
@@ -1887,6 +2048,13 @@
 			"srd52": true,
 			"basicRules2024": true,
 			"origin": "元素"
+		},
+		{
+			"ENG_name": "Qiraji",
+			"name": "其拉语",
+			"type": "rare",
+			"source": "WoW",
+			"origin": "其拉人"
 		},
 		{
 			"ENG_name": "Qualith",
@@ -2042,6 +2210,20 @@
 					]
 				}
 			]
+		},
+		{
+			"ENG_name": "Shalassian",
+			"name": "沙拉萨语",
+			"type": "standard",
+			"source": "WoW",
+			"origin": "夜之子"
+		},
+		{
+			"ENG_name": "Shath'Yar",
+			"name": "沙斯亚尔",
+			"type": "rare",
+			"source": "WoW",
+			"origin": "上古之神"
 		},
 		{
 			"ENG_name": "Shou",
@@ -2227,6 +2409,20 @@
 			"origin": "妖精荒野"
 		},
 		{
+			"ENG_name": "Taur-ahe",
+			"name": "牛头人语",
+			"type": "standard",
+			"source": "WoW",
+			"origin": "牛头人"
+		},
+		{
+			"ENG_name": "Thalassian",
+			"name": "萨拉斯语",
+			"type": "standard",
+			"source": "WoW",
+			"origin": "高等精灵"
+		},
+		{
 			"ENG_name": "Thayan",
 			"name": "赛尔语",
 			"type": "standard",
@@ -2294,6 +2490,13 @@
 			"ENG_name": "Thieves' Cant",
 			"name": "盗贼黑话",
 			"type": "rare",
+			"source": "WoW",
+			"origin": "各种犯罪公会"
+		},
+		{
+			"ENG_name": "Thieves' Cant",
+			"name": "盗贼黑话",
+			"type": "rare",
 			"source": "XPHB",
 			"page": 37,
 			"srd52": true,
@@ -2321,6 +2524,13 @@
 				"{@creature 螳螂人劫掠者|XMM}",
 				"{@creature 螳螂人灵能使|XMM}"
 			]
+		},
+		{
+			"ENG_name": "Titan",
+			"name": "泰坦语",
+			"type": "rare",
+			"source": "WoW",
+			"origin": "泰坦"
 		},
 		{
 			"ENG_name": "Tlincalli",
@@ -2550,6 +2760,20 @@
 			]
 		},
 		{
+			"ENG_name": "Vrykul",
+			"name": "维库语",
+			"type": "rare",
+			"source": "WoW",
+			"origin": "维库人"
+		},
+		{
+			"ENG_name": "Vulpera",
+			"name": "狐人语",
+			"type": "standard",
+			"source": "WoW",
+			"origin": "狐人语"
+		},
+		{
 			"ENG_name": "Waelan",
 			"name": "威兰语",
 			"source": "SCAG",
@@ -2634,6 +2858,13 @@
 				"{@creature 牦牛人祭司|SKT|牦牛人祭司}",
 				"{@creature 牦牛人武者|SKT|牦牛人武者}"
 			]
+		},
+		{
+			"ENG_name": "Zandali",
+			"name": "赞达拉语",
+			"type": "standard",
+			"source": "WoW",
+			"origin": "巨魔"
 		},
 		{
 			"ENG_name": "Zemnian",

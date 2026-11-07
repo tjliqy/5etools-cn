@@ -12,7 +12,15 @@
 	},
 	"monster": [
 		{
-			"name": "Blood-Queen Lana'thel",
+			"ENG_name": "Blood-Queen Lana'thel",
+			"name": "鲜血女王兰娜瑟尔",
+			"type": {
+				"type": "undead",
+				"tags": [
+					"精灵",
+					"吸血鬼"
+				]
+			},
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "ICC",
@@ -20,13 +28,6 @@
 			"size": [
 				"L"
 			],
-			"type": {
-				"type": "undead",
-				"tags": [
-					"elf",
-					"vampire"
-				]
-			},
 			"alignment": [
 				"L",
 				"E"
@@ -43,7 +44,7 @@
 				"climb": 40,
 				"fly": {
 					"number": 40,
-					"condition": "(hover)"
+					"condition": "(悬浮)"
 				},
 				"canHover": true
 			},
@@ -67,7 +68,7 @@
 				"stealth": "+11"
 			},
 			"senses": [
-				"Blindsight 120 ft."
+				"盲视 120 尺"
 			],
 			"passive": 27,
 			"immune": [
@@ -79,22 +80,23 @@
 				"exhaustion"
 			],
 			"languages": [
-				"Common",
-				"Forsaken",
-				"Orcish",
-				"Thalassian"
+				"通用语",
+				"被遗忘者语",
+				"兽人语",
+				"萨拉斯语"
 			],
 			"cr": "23",
 			"spellcasting": [
 				{
-					"name": "Incite Terror (1/Day, Usable Only While Bloodied)",
+					"ENG_name": "Incite Terror (1/Day, Usable Only While Bloodied)",
+					"name": "煽动惊恐（1/日，仅在其浴血时可用）",
 					"type": "spellcasting",
 					"headerEntries": [
-						"Lana'thel moves up to her {@variantrule Fly Speed|XPHB} without provoking {@action Opportunity Attack|XPHB|Opportunity Attacks}; casts {@spell Fear|XPHB}, requiring no spell components and using Charisma as the spellcasting ability (spell save {@dc 21}); and makes three Twilight Bloodbolt attacks."
+						"兰娜瑟尔移动至多等于其{@variantrule 飞行速度|XPHB}的距离，且不会引发{@action 借机攻击|XPHB|借机攻击}；施展{@spell 恐惧术|XPHB}，无需法术成分并使用魅力作为施法属性（法术豁免{@dc 21}）；并发动三次暮光血箭攻击。"
 					],
 					"daily": {
 						"1": [
-							"{@spell Fear|XPHB}"
+							"{@spell 恐惧术|XPHB}"
 						]
 					},
 					"ability": "cha",
@@ -104,14 +106,15 @@
 					]
 				},
 				{
-					"name": "Hunger of Hadar (1/Day)",
+					"ENG_name": "Hunger of Hadar (1/Day)",
+					"name": "哈达之欲（1/日）",
 					"type": "spellcasting",
 					"headerEntries": [
-						"Lana'thel casts {@spell Hunger of Hadar|XPHB} (level 5 version), requiring no spell components or {@status Concentration|XPHB} and using Charisma as the spellcasting ability (spell save {@dc 21}). The spell ends when Lana'thel has the {@condition Incapacitated|XPHB} condition."
+						"兰娜瑟尔施展{@spell 哈达之欲|XPHB}（五环版本），无需法术成分或{@status 专注|XPHB}，并使用魅力作为施法属性（法术豁免{@dc 21}）。兰娜瑟尔陷入{@condition 失能|XPHB}状态时，该法术终止。"
 					],
 					"daily": {
 						"1": [
-							"{@spell Hunger of Hadar|XPHB} (level 5 version)"
+							"{@spell 哈达之欲|XPHB}（五环版本）"
 						]
 					},
 					"ability": "cha",
@@ -121,14 +124,15 @@
 					]
 				},
 				{
-					"name": "Dominate Prey",
+					"ENG_name": "Dominate Prey",
+					"name": "支配猎物",
 					"type": "spellcasting",
 					"headerEntries": [
-						"Lana'thel casts {@spell Dominate Monster|XPHB}, requiring no spell components and using Charisma as the spellcasting ability (spell save {@dc 21}). Lana'thel can't take this action again until the start of her next turn."
+						"兰娜瑟尔施展{@spell 支配怪物|XPHB}，无需法术成分并使用魅力作为施法属性（法术豁免{@dc 21}）。直至其下个回合开始，兰娜瑟尔都无法再执行此动作。"
 					],
 					"legendary": {
 						"1": [
-							"{@spell Dominate Monster|XPHB}"
+							"{@spell 支配怪物|XPHB}"
 						]
 					},
 					"ability": "cha",
@@ -140,69 +144,79 @@
 			],
 			"trait": [
 				{
-					"name": "Legendary Resistance (4/Day)",
+					"ENG_name": "Legendary Resistance (4/Day)",
+					"name": "传奇抗性（4/日）",
 					"entries": [
-						"If Lana'thel fails a saving throw, she can choose to succeed instead."
+						"兰娜瑟尔豁免失败时，可以将其改为豁免成功。"
 					]
 				},
 				{
-					"name": "Shadow Escape",
+					"ENG_name": "Shadow Escape",
+					"name": "幽影遁行",
 					"entries": [
-						"If Lana'thel drops to 0 {@variantrule Hit Points|XPHB} outside her resting place, she teleports into her resting place unless she is in running water or sunlight. If she can't teleport, she is destroyed. Once inside her resting place, she has the {@condition Paralyzed|XPHB} condition for 1 hour, after which she regains 1 {@variantrule Hit Points|XPHB|Hit Point}."
+						"若兰娜瑟尔在其休眠地之外{@variantrule 生命值|XPHB}降至0，其传送回其休眠地，除非其身处流水或阳光下。若其无法传送，则其被摧毁。一旦进入其休眠地，其陷入{@condition 麻痹|XPHB}状态1小时，此后其恢复1{@variantrule 生命值|XPHB|生命值}。"
 					]
 				},
 				{
-					"name": "Shroud of Sorrow",
+					"ENG_name": "Shroud of Sorrow",
+					"name": "哀伤之雾",
 					"entries": [
-						"At the end of each of Lana'thel's turns, each creature in a 20-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from her takes 9 ({@damage 2d8}) Psychic damage, provided she doesn't have the {@condition Incapacitated|XPHB} condition."
+						"在兰娜瑟尔每个回合结束时，源自其的20尺{@variantrule 光环 [效应区域]|XPHB|光环}区域内的每名生物受到9（{@damage 2d8}）心灵伤害，除非兰娜瑟尔处于{@condition 失能|XPHB}状态。"
 					]
 				},
 				{
-					"name": "Sunlight Weakness",
+					"ENG_name": "Sunlight Weakness",
+					"name": "日照弱点",
 					"entries": [
-						"Lana'thel takes 20 Radiant damage if she starts her turn in sunlight. While in sunlight, she has {@variantrule Disadvantage|XPHB} on attack rolls and ability checks."
+						"若兰娜瑟尔在阳光下开始其回合，其受到20光耀伤害。身处阳光下时，其攻击检定和属性检定具有{@variantrule 劣势|XPHB}。"
 					]
 				}
 			],
 			"action": [
 				{
-					"name": "Multiattack",
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
 					"entries": [
-						"Lana'thel makes two attacks, using Bloodthirsty Bite or Twilight Bloodbolt in any combination."
+						"兰娜瑟尔使用嗜血啃咬或暮光血箭发动共计两次攻击。"
 					]
 				},
 				{
-					"name": "Bloodthirsty Bite",
+					"ENG_name": "Bloodthirsty Bite",
+					"name": "嗜血啃咬",
 					"entries": [
-						"{@atkr m} {@hit 13}, reach 10 ft. {@h}15 ({@damage 2d8 + 6}) Slashing damage plus 9 ({@damage 2d8}) Necrotic damage. The target's {@variantrule Hit Points|XPHB|Hit Point} maximum decreases by an amount equal to the Necrotic damage taken, and Lana'thel regains {@variantrule Hit Points|XPHB} equal to that amount."
+						"{@atkr m} 命中{@hit 13}，触及10尺。{@h}15（{@damage 2d8 + 6}）挥砍伤害外加9（{@damage 2d8}）暗蚀伤害。目标的{@variantrule 生命值|XPHB|生命值}上限减少等于其所受暗蚀伤害的数值，且兰娜瑟尔恢复等同该数值的{@variantrule 生命值|XPHB}。"
 					]
 				},
 				{
-					"name": "Twilight Bloodbolt",
+					"ENG_name": "Twilight Bloodbolt",
+					"name": "暮光血箭",
 					"entries": [
-						"{@atkr r} {@hit 13}, range 120 ft. {@h}22 ({@damage 4d10 + 6}) Psychic damage, and the target has the {@condition Frightened|XPHB} condition until the end of Lana'thel's next turn."
+						"{@atkr r} 命中{@hit 13}，射程120尺。{@h}22（{@damage 4d10 + 6}）心灵伤害，且目标陷入{@condition 恐慌|XPHB}状态，直至兰娜瑟尔的下个回合结束。"
 					]
 				}
 			],
 			"bonus": [
 				{
-					"name": "Blood Mirror (1/Day)",
+					"ENG_name": "Blood Mirror (1/Day)",
+					"name": "鲜血镜像（1/日）",
 					"entries": [
-						"Lana'thel curses a creature she can see within 20 feet. Whenever Lana'thel hits another creature with an attack roll and deals damage, the cursed creature takes the same damage. The curse ends when Lana'thel drops to 0 {@variantrule Hit Points|XPHB}."
+						"兰娜瑟尔诅咒其20尺内可见的一名生物。每当兰娜瑟尔以攻击检定命中另一名生物并造成伤害时，被诅咒的生物受到相同的伤害。该诅咒在兰娜瑟尔{@variantrule 生命值|XPHB}降至0时终止。"
 					]
 				},
 				{
-					"name": "Pact of the Darkfallen (1/Day)",
+					"ENG_name": "Pact of the Darkfallen (1/Day)",
+					"name": "黑暗堕落者的契约（1/日）",
 					"entries": [
-						"Lana'thel curses three creatures she can see within 120 feet. Coruscating beams of necrotic energy link the three creatures. At the start of each cursed creature's turn, it takes 21 ({@damage 6d6}) Necrotic damage. The curse ends when each cursed creature is within 5 feet of both other cursed creatures, or when Lana'thel drops to 0 {@variantrule Hit Points|XPHB}."
+						"兰娜瑟尔诅咒其120尺内可见的三名生物。闪亮的暗蚀能量光束将这三名生物连接起来。每名被诅咒生物的回合开始时，其受到21（{@damage 6d6}）暗蚀伤害。当每名被诅咒生物都与其他两名被诅咒生物相距5尺以内时，或当兰娜瑟尔{@variantrule 生命值|XPHB}降至0时，该诅咒终止。"
 					]
 				}
 			],
 			"legendary": [
 				{
-					"name": "Umbral Strike",
+					"ENG_name": "Umbral Strike",
+					"name": "暗影袭",
 					"entries": [
-						"Lana'thel moves up to half her {@variantrule Speed|XPHB}, and she makes one Bloodthirsty Bite or Twilight Bloodbolt attack."
+						"兰娜瑟尔移动至多等于其{@variantrule 速度|XPHB}一半的距离，并发动一次嗜血啃咬或暮光血箭攻击。"
 					]
 				}
 			],
@@ -254,7 +268,14 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Deathbringer Saurfang",
+			"ENG_name": "Deathbringer Saurfang",
+			"name": "死亡使者萨鲁法尔",
+			"type": {
+				"type": "undead",
+				"tags": [
+					"死亡骑士"
+				]
+			},
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "ICC",
@@ -262,12 +283,6 @@
 			"size": [
 				"M"
 			],
-			"type": {
-				"type": "undead",
-				"tags": [
-					"death knight"
-				]
-			},
 			"alignment": [
 				"L",
 				"E"
@@ -296,7 +311,7 @@
 				"wis": "+10"
 			},
 			"senses": [
-				"Darkvision 120 ft."
+				"黑暗视觉 120 尺"
 			],
 			"passive": 13,
 			"immune": [
@@ -310,25 +325,26 @@
 				"poisoned"
 			],
 			"languages": [
-				"Common",
-				"Forsaken",
-				"Orcish"
+				"通用语",
+				"被遗忘者语",
+				"兽人语"
 			],
 			"cr": "21",
 			"spellcasting": [
 				{
-					"name": "Spellcasting",
+					"ENG_name": "Spellcasting",
+					"name": "施法",
 					"type": "spellcasting",
 					"headerEntries": [
-						"Saurfang casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 21}):"
+						"萨鲁法尔施展以下一道法术，无需材料成分并使用魅力作为施法属性（法术豁免{@dc 21}）："
 					],
 					"will": [
-						"{@spell Detect Magic|XPHB}",
-						"{@spell Phantom Steed|XPHB}"
+						"{@spell 侦测魔法|XPHB}",
+						"{@spell 魅影驹|XPHB}"
 					],
 					"daily": {
 						"2": [
-							"{@spell Dispel Magic|XPHB}"
+							"{@spell 解除魔法|XPHB}"
 						]
 					},
 					"ability": "cha",
@@ -337,71 +353,81 @@
 			],
 			"trait": [
 				{
-					"name": "Legendary Resistance (4/Day)",
+					"ENG_name": "Legendary Resistance (4/Day)",
+					"name": "传奇抗性（4/日）",
 					"entries": [
-						"If Saurfang fails a saving throw, he can choose to succeed instead."
+						"萨鲁法尔豁免失败时，可以将其改为豁免成功。"
 					]
 				},
 				{
-					"name": "Magic Resistance",
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
 					"entries": [
-						"Saurfang has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects."
+						"萨鲁法尔对抗法术和其他魔法效应时进行的豁免检定具有{@variantrule 优势|XPHB}。"
 					]
 				}
 			],
 			"action": [
 				{
-					"name": "Multiattack",
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
 					"entries": [
-						"Saurfang makes three Bloodrune Blade attacks."
+						"萨鲁法尔发动三次血符文之刃攻击。"
 					]
 				},
 				{
-					"name": "Bloodrune Blade",
+					"ENG_name": "Bloodrune Blade",
+					"name": "血符文之刃",
 					"entries": [
-						"{@atkr m} {@hit 13}, reach 5 ft. {@h}13 ({@damage 2d6 + 6}) Slashing damage plus 4 ({@damage 1d8}) Necrotic damage. The first time during his turn that Saurfang hits a creature with this attack, the creature takes an extra 22 ({@damage 5d8}) Necrotic damage, and Saurfang regains 12 ({@dice 5d4}) {@variantrule Hit Points|XPHB}."
+						"{@atkr m} 命中{@hit 13}，触及5尺。{@h}13（{@damage 2d6 + 6}）挥砍伤害外加4（{@damage 1d8}）暗蚀伤害。在其回合内萨鲁法尔首次以此攻击命中一名生物时，该生物额外受到22（{@damage 5d8}）暗蚀伤害，且萨鲁法尔恢复12（{@dice 5d4}）{@variantrule 生命值|XPHB}。"
 					]
 				},
 				{
-					"name": "Boiling Blood {@recharge 5}",
+					"ENG_name": "Boiling Blood {@recharge 5}",
+					"name": "沸腾之血{@recharge 5}",
 					"entries": [
-						"{@actSave con} {@dc 21}, one creature Saurfang can see within 120 feet. {@actSaveFail} 65 ({@damage 10d12}) Necrotic damage, and the target gains 1 {@condition Exhaustion|XPHB} level. {@actSaveSuccess} Half damage only."
+						"{@actSave con} {@dc 21}，萨鲁法尔120尺内可见的单一生物。{@actSaveFail} 65（{@damage 10d12}）暗蚀伤害，且目标获得1级{@condition 力竭|XPHB}。{@actSaveSuccess} 仅半伤。"
 					]
 				}
 			],
 			"bonus": [
 				{
-					"name": "Mark of the Fallen Champion (1/Day; Usable Only While Bloodied)",
+					"ENG_name": "Mark of the Fallen Champion (1/Day; Usable Only While Bloodied)",
+					"name": "阵亡勇士的印记（1/日；仅在其浴血时可用）",
 					"entries": [
-						"{@actSave wis} {@dc 21}, one creature Saurfang can see within 120 feet. {@actSaveFail} The target is cursed for 24 hours or until Saurfang dies. While cursed, the target takes 13 ({@damage 2d12}) Necrotic damage whenever Saurfang hits a creature with an attack roll. If the target is reduced to 0 {@variantrule Hit Points|XPHB} while cursed, Saurfang regains 13 ({@dice 2d12}) {@variantrule Hit Points|XPHB}."
+						"{@actSave wis} {@dc 21}，萨鲁法尔120尺内可见的单一生物。{@actSaveFail} 目标被诅咒24小时，或直至萨鲁法尔死亡。被诅咒期间，每当萨鲁法尔以攻击检定命中一名生物，目标就受到13（{@damage 2d12}）暗蚀伤害。若目标在被诅咒期间{@variantrule 生命值|XPHB}降至0，萨鲁法尔恢复13（{@dice 2d12}）{@variantrule 生命值|XPHB}。"
 					]
 				}
 			],
 			"reaction": [
 				{
-					"name": "Parry",
+					"ENG_name": "Parry",
+					"name": "格挡",
 					"entries": [
-						"{@actTrigger} Saurfang is hit by a melee attack roll while holding a weapon. {@actResponse} Saurfang adds 6 to his AC against that attack, possibly causing it to miss."
+						"{@actTrigger} 萨鲁法尔在持握一把武器时被一次近战攻击检定命中。{@actResponse} 萨鲁法尔针对该次攻击的AC增加6，可能令该次攻击改为失手。"
 					]
 				}
 			],
 			"legendary": [
 				{
-					"name": "Blood Nova",
+					"ENG_name": "Blood Nova",
+					"name": "鲜血新星",
 					"entries": [
-						"{@actSave con} {@dc 21}, one creature Saurfang can see within 120 feet. {@actSaveFail} 26 ({@damage 4d12}) Necrotic damage, and each creature in a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the target takes the same damage. {@actSaveSuccess} Half damage only. {@actSaveSuccessOrFail} Saurfang can't take this action again until the start of his next turn."
+						"{@actSave con} {@dc 21}，萨鲁法尔120尺内可见的单一生物。{@actSaveFail} 26（{@damage 4d12}）暗蚀伤害，且源自目标的30尺{@variantrule 光环 [效应区域]|XPHB|光环}区域内的每名生物受到相同的伤害。{@actSaveSuccess} 仅半伤。{@actSaveSuccessOrFail} 萨鲁法尔直至其下个回合开始都无法再执行此动作。"
 					]
 				},
 				{
-					"name": "Frenzied Strike (Usable Only While Bloodied)",
+					"ENG_name": "Frenzied Strike (Usable Only While Bloodied)",
+					"name": "狂乱打击（仅在其浴血时可用）",
 					"entries": [
-						"Saurfang moves up to his {@variantrule Speed|XPHB} and makes two Bloodrune Blade attacks."
+						"萨鲁法尔移动至多等于其{@variantrule 速度|XPHB}的距离，并发动两次血符文之刃攻击。"
 					]
 				},
 				{
-					"name": "Lunge",
+					"ENG_name": "Lunge",
+					"name": "猛冲",
 					"entries": [
-						"Saurfang moves up to half his {@variantrule Speed|XPHB} and makes one Bloodrune Blade attack."
+						"萨鲁法尔移动至多等于其{@variantrule 速度|XPHB}一半的距离，并发动一次血符文之刃攻击。"
 					]
 				}
 			],
@@ -442,19 +468,20 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Deathspeaker High Priest",
+			"ENG_name": "Deathspeaker High Priest",
+			"name": "亡语高阶祭司",
+			"type": {
+				"type": "undead",
+				"tags": [
+					"牧师",
+					"蛛魔语"
+				]
+			},
 			"source": "ICC",
 			"page": 55,
 			"size": [
 				"H"
 			],
-			"type": {
-				"type": "undead",
-				"tags": [
-					"cleric",
-					"nerubian"
-				]
-			},
 			"alignment": [
 				"L",
 				"E"
@@ -485,7 +512,7 @@
 				"religion": "+9"
 			},
 			"senses": [
-				"Darkvision 120 ft."
+				"黑暗视觉 120 尺"
 			],
 			"passive": 20,
 			"immune": [
@@ -498,37 +525,41 @@
 				"poisoned"
 			],
 			"languages": [
-				"Common",
-				"Forsaken",
-				"Nerubian",
-				"Orcish"
+				"通用语",
+				"被遗忘者语",
+				"蛛魔语",
+				"兽人语"
 			],
 			"cr": "10",
 			"trait": [
 				{
-					"name": "Aura of Darkness",
+					"ENG_name": "Aura of Darkness",
+					"name": "黑影光环",
 					"entries": [
-						"The priest is surrounded by an aura of shadow while it doesn't have the {@condition Incapacitated|XPHB} condition. At the end of each of the priest's turns, each creature in a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the priest takes 11 ({@damage 2d10}) Psychic damage. The {@variantrule Emanation [Area of Effect]|XPHB|Emanation} is {@variantrule Dim Light|XPHB}."
+						"祭司在不处于{@condition 失能|XPHB}状态时被一圈暗影光环包围。在祭司每个回合结束时，源自祭司的15尺{@variantrule 光环 [效应区域]|XPHB|光环}区域内的每名生物受到11（{@damage 2d10}）心灵伤害。该{@variantrule 光环 [效应区域]|XPHB|光环}为{@variantrule 微光光照|XPHB}。"
 					]
 				}
 			],
 			"action": [
 				{
-					"name": "Multiattack",
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
 					"entries": [
-						"The priest makes two Shadow Blast attacks."
+						"祭司发动两次暗影冲击攻击。"
 					]
 				},
 				{
-					"name": "Shadow Blast",
+					"ENG_name": "Shadow Blast",
+					"name": "暗影冲击",
 					"entries": [
-						"{@atkr m,r} {@hit 10}, reach 10 ft. or range 120 ft. {@h}17 ({@damage 2d10 + 6}) Psychic damage."
+						"{@atkr m,r} 命中{@hit 10}，触及10尺或射程120尺。{@h}17（{@damage 2d10 + 6}）心灵伤害。"
 					]
 				},
 				{
-					"name": "Dark Reckoning {@recharge 5}",
+					"ENG_name": "Dark Reckoning {@recharge 5}",
+					"name": "黑暗清算{@recharge 5}",
 					"entries": [
-						"{@atkr r} {@hit 10}, range 120 ft. {@h}33 ({@damage 6d10}) Necrotic damage, and the target is cursed. At the start of the priest's next turn, the cursed target erupts with shadow energy, dealing 11 ({@damage 2d10}) Psychic damage to each creature in a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from and including the cursed target, and the curse ends."
+						"{@atkr r} {@hit 10}，射程120尺。{@h}33（{@damage 6d10}）暗蚀伤害，且目标被诅咒。在祭司的下个回合开始时，被诅咒的目标迸发出暗影能量，对源自并包含被诅咒目标的10尺{@variantrule 光环 [效应区域]|XPHB|光环}区域内的每名生物造成11（{@damage 2d10}）心灵伤害，随后该诅咒终止。"
 					]
 				}
 			],
@@ -555,7 +586,9 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Festergut",
+			"ENG_name": "Festergut",
+			"name": "烂肠",
+			"type": "construct",
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "ICC",
@@ -563,7 +596,6 @@
 			"size": [
 				"H"
 			],
-			"type": "construct",
 			"alignment": [
 				"N",
 				"E"
@@ -588,7 +620,7 @@
 			"wis": 12,
 			"cha": 10,
 			"senses": [
-				"Darkvision 60 ft."
+				"黑暗视觉 60 尺"
 			],
 			"passive": 11,
 			"immune": [
@@ -604,63 +636,71 @@
 				"poisoned"
 			],
 			"languages": [
-				"Common",
-				"Forsaken",
-				"Orcish"
+				"通用语",
+				"被遗忘者语",
+				"兽人语"
 			],
 			"cr": "17",
 			"trait": [
 				{
-					"name": "Gaseous Blight",
+					"ENG_name": "Gaseous Blight",
+					"name": "凋零毒气",
 					"entries": [
-						"Festergut fills the room with toxic rot. {@actSave con} {@dc 19}, each creature that starts its turn in the room. {@actSaveFail} 21 ({@damage 6d6}) Poison damage."
+						"烂肠使房间充满有毒的腐气。{@actSave con} {@dc 19}，在房间内开始其回合的每名生物。{@actSaveFail} 21（{@damage 6d6}）毒素伤害。"
 					]
 				},
 				{
-					"name": "Legendary Resistance (4/Day)",
+					"ENG_name": "Legendary Resistance (4/Day)",
+					"name": "传奇抗性（4/日）",
 					"entries": [
-						"If Festergut fails a saving throw, it can choose to succeed instead."
+						"烂肠豁免失败时，可以将其改为豁免成功。"
 					]
 				}
 			],
 			"action": [
 				{
-					"name": "Multiattack",
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
 					"entries": [
-						"Festergut makes two attacks, using Claw or Gastric Bloat in any combination."
+						"烂肠使用爪击或毒肿发动共计两次攻击。"
 					]
 				},
 				{
-					"name": "Claw",
+					"ENG_name": "Claw",
+					"name": "爪击",
 					"entries": [
-						"{@atkr m} {@hit 11}, reach 10 ft. {@h}38 ({@damage 6d10 + 5}) Slashing damage plus 14 ({@damage 4d6}) Necrotic damage."
+						"{@atkr m} 命中{@hit 11}，触及10尺。{@h}38（{@damage 6d10 + 5}）挥砍伤害外加14（{@damage 4d6}）暗蚀伤害。"
 					]
 				},
 				{
-					"name": "Gastric Bloat",
+					"ENG_name": "Gastric Bloat",
+					"name": "毒肿",
 					"entries": [
-						"{@atkr r} {@hit 11}, range 120 ft. {@h}39 ({@damage 6d12}) Acid damage, and the target gains 1 {@condition Exhaustion|XPHB} level. If the target dies from {@condition Exhaustion|XPHB}, it explodes, creating the following effect: {@actSave dex} {@dc 19}, each creature in a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the dead creature. {@actSaveFail} 33 ({@damage 6d10}) Acid damage. {@actSaveSuccess} Half damage.",
-						"{@condition Exhaustion|XPHB} levels gained from Gastric Bloat vanish when Festergut dies."
+						"{@atkr r} {@hit 11}，射程120尺。{@h}39（{@damage 6d12}）强酸伤害，且目标获得1级{@condition 力竭|XPHB}。若目标死于{@condition 力竭|XPHB}，其爆炸并产生以下效应：{@actSave dex} {@dc 19}，源自该死亡生物的10尺{@variantrule 光环 [效应区域]|XPHB|光环}区域内的每名生物。{@actSaveFail} 33（{@damage 6d10}）强酸伤害。{@actSaveSuccess} 半伤。",
+						"烂肠死亡时，因毒肿而获得的{@condition 力竭|XPHB}等级消失。"
 					]
 				},
 				{
-					"name": "Vile Gas {@recharge 5}",
+					"ENG_name": "Vile Gas {@recharge 5}",
+					"name": "邪恶毒气{@recharge 5}",
 					"entries": [
-						"{@actSave con} {@dc 19}, each creature in a 20-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on a point Festergut can see within 120 feet. {@actSaveFail} 35 ({@damage 10d6}) Poison damage, and the target has the {@condition Poisoned|XPHB} condition until the end of its next turn. While {@condition Poisoned|XPHB}, the target has the {@condition Stunned|XPHB} condition as it vomits uncontrollably. {@actSaveSuccess} Half damage, and the target has the {@condition Poisoned|XPHB} condition until the end of its next turn."
+						"{@actSave con} {@dc 19}，以烂肠120尺内可见的一点为中心的20尺半径{@variantrule 球状 [效应区域]|XPHB|球状}区域内的每名生物。{@actSaveFail} 35（{@damage 10d6}）毒素伤害，且目标陷入{@condition 中毒|XPHB}状态，直至其下个回合结束。处于{@condition 中毒|XPHB}状态期间，目标因不受控制地呕吐而陷入{@condition 震慑|XPHB}状态。{@actSaveSuccess} 半伤，且目标陷入{@condition 中毒|XPHB}状态，直至其下个回合结束。"
 					]
 				}
 			],
 			"bonus": [
 				{
-					"name": "Inhale Blight",
+					"ENG_name": "Inhale Blight",
+					"name": "凋零呼吸",
 					"entries": [
-						"Festergut inhales toxic rot, empowering itself and diminishing the potency of its Gaseous Blight. It regains 19 ({@dice 3d12}) {@variantrule Hit Points|XPHB} and has {@variantrule Advantage|XPHB} on attack rolls and saving throws until the end of its next turn. The damage dealt by its Gaseous Blight trait is reduced by 11 ({@dice 3d6})."
+						"烂肠吸入有毒的腐气，强化自身并削弱其凋零毒气的威力。其恢复19（{@dice 3d12}）{@variantrule 生命值|XPHB}，且直至其下个回合结束，其攻击检定和豁免检定具有{@variantrule 优势|XPHB}。其凋零毒气特性造成的伤害减少11（{@dice 3d6}）。"
 					]
 				},
 				{
-					"name": "Pungent Blight (Requires 2 Uses of Inhale Blight)",
+					"ENG_name": "Pungent Blight (Requires 2 Uses of Inhale Blight)",
+					"name": "刺鼻毒气（需两次使用凋零呼吸）",
 					"entries": [
-						"If Festergut has used Inhale Blight twice, it violently releases the blight, creating the following effect and returning its Gaseous Blight to full strength. {@actSave con} {@dc 19}, each creature in a 40-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from Festergut. {@actSaveFail} 35 ({@damage 10d6}) Poison damage. {@actSaveSuccess} Half damage."
+						"若烂肠已两次使用凋零呼吸，其猛烈地释放凋零毒气，产生以下效应并使其凋零毒气恢复全部威力。{@actSave con} {@dc 19}，源自烂肠的40尺{@variantrule 光环 [效应区域]|XPHB|光环}区域内的每名生物。{@actSaveFail} 35（{@damage 10d6}）毒素伤害。{@actSaveSuccess} 半伤。"
 					]
 				}
 			],
@@ -701,13 +741,14 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Frost Wyrm",
+			"ENG_name": "Frost Wyrm",
+			"name": "冰霜巨龙",
+			"type": "undead",
 			"source": "ICC",
 			"page": 57,
 			"size": [
 				"H"
 			],
-			"type": "undead",
 			"alignment": [
 				"L",
 				"E"
@@ -742,8 +783,8 @@
 				"stealth": "+6"
 			},
 			"senses": [
-				"Blindsight 60 ft.",
-				"Darkvision 120 ft."
+				"盲视 60 尺",
+				"黑暗视觉 120 尺"
 			],
 			"passive": 24,
 			"immune": [
@@ -759,69 +800,78 @@
 				"poisoned"
 			],
 			"languages": [
-				"Common",
-				"Draconic (WoW)",
-				"Forsaken",
-				"Orcish"
+				"通用语",
+				"龙语",
+				"被遗忘者语",
+				"兽人语"
 			],
 			"cr": "17",
 			"trait": [
 				{
-					"name": "Legendary Resistance (3/Day)",
+					"ENG_name": "Legendary Resistance (3/Day)",
+					"name": "传奇抗性（3/日）",
 					"entries": [
-						"If the wyrm fails a saving throw, it can choose to succeed instead."
+						"冰霜巨龙豁免失败时，可以将其改为豁免成功。"
 					]
 				},
 				{
-					"name": "Life Suppression",
+					"ENG_name": "Life Suppression",
+					"name": "生机抑止",
 					"entries": [
-						"Creatures within 60 feet of the wyrm can't regain {@variantrule Hit Points|XPHB}."
+						"冰霜巨龙60尺内的生物无法恢复{@variantrule 生命值|XPHB}。"
 					]
 				},
 				{
-					"name": "Magic Resistance",
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
 					"entries": [
-						"The wyrm has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects."
+						"冰霜巨龙对抗法术和其他魔法效应时进行的豁免检定具有{@variantrule 优势|XPHB}。"
 					]
 				}
 			],
 			"action": [
 				{
-					"name": "Multiattack",
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
 					"entries": [
-						"The wyrm makes three attacks, using Rend or Icy Blast in any combination."
+						"冰霜巨龙使用撕裂或寒冰冲击发动共计三次攻击。"
 					]
 				},
 				{
-					"name": "Rend",
+					"ENG_name": "Rend",
+					"name": "撕裂",
 					"entries": [
-						"{@atkr m} {@hit 13}, reach 10 ft. {@h}18 ({@damage 2d10 + 7}) Slashing damage plus 4 ({@damage 1d8}) Cold damage."
+						"{@atkr m} 命中{@hit 13}，触及10尺。{@h}18（{@damage 2d10 + 7}）挥砍伤害外加4（{@damage 1d8}）寒冷伤害。"
 					]
 				},
 				{
-					"name": "Icy Blast",
+					"ENG_name": "Icy Blast",
+					"name": "寒冰冲击",
 					"entries": [
-						"{@atkr r} {@hit 11}, range 60 ft. {@h}21 ({@damage 6d6}) Cold damage, and the target's {@variantrule Speed|XPHB} is reduced by 10 feet until the end of the wyrm's next turn."
+						"{@atkr r} 命中{@hit 11}，射程60尺。{@h}21（{@damage 6d6}）寒冷伤害，且直至冰霜巨龙的下个回合结束，目标的{@variantrule 速度|XPHB}减少10尺。"
 					]
 				},
 				{
-					"name": "Frost Breath {@recharge 5}",
+					"ENG_name": "Frost Breath {@recharge 5}",
+					"name": "冰霜吐息{@recharge 5}",
 					"entries": [
-						"{@actSave con} {@dc 20}, each creature in a 60-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} 39 ({@damage 6d12}) Cold damage, and until the end of the target's next turn, the target's {@variantrule Speed|XPHB} is halved; the target can't take {@variantrule Reaction|XPHB|Reactions}; and it can take either an action or a {@variantrule Bonus Action|XPHB} on its turn, not both. {@actSaveSuccess} Half damage only."
+						"{@actSave con} {@dc 20}，60尺{@variantrule 锥状 [效应区域]|XPHB|锥状}区域内的每名生物。{@actSaveFail} 39（{@damage 6d12}）寒冷伤害，且直至目标的下个回合结束，目标的{@variantrule 速度|XPHB}减半；目标无法执行{@variantrule 反应|XPHB|反应}；且目标在其回合中仅可以执行一个动作或一个{@variantrule 附赠动作|XPHB}，但不能同时执行二者。{@actSaveSuccess} 仅半伤。"
 					]
 				}
 			],
 			"legendary": [
 				{
-					"name": "Pounce",
+					"ENG_name": "Pounce",
+					"name": "猛扑",
 					"entries": [
-						"The wyrm moves up to half its {@variantrule Speed|XPHB}, and it makes one Rend or Icy Blast attack."
+						"冰霜巨龙移动至多等于其{@variantrule 速度|XPHB}一半的距离，并发动一次撕裂或寒冰冲击攻击。"
 					]
 				},
 				{
-					"name": "Terrifying Roar",
+					"ENG_name": "Terrifying Roar",
+					"name": "恐惧咆哮",
 					"entries": [
-						"{@actSave wis} {@dc 19}, each creature in a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the wyrm. {@actSaveFail} 11 ({@damage 2d10}) Psychic damage, and the target has the {@condition Frightened|XPHB} condition until the end of its next turn. {@actSaveSuccessOrFail} The wyrm can't take this action again until the start of its next turn."
+						"{@actSave wis} {@dc 19}，源自冰霜巨龙的30尺{@variantrule 光环 [效应区域]|XPHB|光环}区域内的每名生物。{@actSaveFail} 11（{@damage 2d10}）心灵伤害，且目标陷入{@condition 恐慌|XPHB}状态，直至其下个回合结束。{@actSaveSuccessOrFail} 冰霜巨龙直至其下个回合开始都无法再执行此动作。"
 					]
 				}
 			],
@@ -863,7 +913,15 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Lady Deathwhisper",
+			"ENG_name": "Lady Deathwhisper",
+			"name": "亡语者女士",
+			"type": {
+				"type": "undead",
+				"tags": [
+					"巫妖",
+					"法师"
+				]
+			},
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "ICC",
@@ -871,13 +929,6 @@
 			"size": [
 				"M"
 			],
-			"type": {
-				"type": "undead",
-				"tags": [
-					"lich",
-					"wizard"
-				]
-			},
 			"alignment": [
 				"L",
 				"E"
@@ -915,7 +966,7 @@
 				"religion": "+20"
 			},
 			"senses": [
-				"Truesight 120 ft."
+				"真实视觉 120 尺"
 			],
 			"passive": 26,
 			"resist": [
@@ -934,44 +985,46 @@
 				"poisoned"
 			],
 			"languages": [
-				"Common",
-				"Forsaken",
-				"Orcish"
+				"通用语",
+				"被遗忘者语",
+				"兽人语"
 			],
 			"cr": "21",
 			"spellcasting": [
 				{
-					"name": "Spellcasting",
+					"ENG_name": "Spellcasting",
+					"name": "施法",
 					"type": "spellcasting",
 					"headerEntries": [
-						"Deathwhisper casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 21}):"
+						"亡语者施展以下一道法术，使用智力作为施法属性（法术豁免{@dc 21}）："
 					],
 					"will": [
-						"{@spell Detect Magic|XPHB}",
-						"{@spell Detect Thoughts|XPHB}",
-						"{@spell Dispel Magic|XPHB}",
-						"{@spell Invisibility|XPHB}",
-						"{@spell Mage Hand|XPHB}",
-						"{@spell Prestidigitation|XPHB}"
+						"{@spell 侦测魔法|XPHB}",
+						"{@spell 侦测思想|XPHB}",
+						"{@spell 解除魔法|XPHB}",
+						"{@spell 隐形术|XPHB}",
+						"{@spell 法师之手|XPHB}",
+						"{@spell 魔法伎俩|XPHB}"
 					],
 					"daily": {
 						"1": [
-							"{@spell Scrying|XPHB}"
+							"{@spell 探知术|XPHB}"
 						],
 						"2e": [
-							"{@spell Animate Dead|XPHB}",
-							"{@spell Dimension Door|XPHB}",
-							"{@spell Plane Shift|XPHB}"
+							"{@spell 活化死尸|XPHB}",
+							"{@spell 任意门|XPHB}",
+							"{@spell 位面转移|XPHB}"
 						]
 					},
 					"ability": "int",
 					"displayAs": "action"
 				},
 				{
-					"name": "Dominate Mind {@recharge 5}",
+					"ENG_name": "Dominate Mind {@recharge 5}",
+					"name": "统御心灵{@recharge 5}",
 					"type": "spellcasting",
 					"headerEntries": [
-						"Deathwhisper casts {@spell Dominate Monster|XPHB}, using the same spellcasting ability as Spellcasting."
+						"亡语者施展{@spell 支配怪物|XPHB}，使用与施法动作相同的施法属性。"
 					],
 					"recharge": {
 						"5": [
@@ -985,14 +1038,15 @@
 					]
 				},
 				{
-					"name": "Protective Magic",
+					"ENG_name": "Protective Magic",
+					"name": "护身魔法",
 					"type": "spellcasting",
 					"headerEntries": [
-						"Deathwhisper casts {@spell Counterspell|XPHB} or {@spell Shield|XPHB} in response to the spell's trigger, using the same spellcasting ability as Spellcasting."
+						"亡语者施展{@spell 法术反制|XPHB}或{@spell 护盾术|XPHB}以响应该法术的触发条件，使用与施法动作相同的施法属性。"
 					],
 					"will": [
-						"{@spell Counterspell|XPHB}",
-						"{@spell Shield|XPHB}"
+						"{@spell 法术反制|XPHB}",
+						"{@spell 护盾术|XPHB}"
 					],
 					"ability": "int",
 					"displayAs": "reaction",
@@ -1003,61 +1057,70 @@
 			],
 			"trait": [
 				{
-					"name": "Legendary Resistance (4/Day)",
+					"ENG_name": "Legendary Resistance (4/Day)",
+					"name": "传奇抗性（4/日）",
 					"entries": [
-						"If Deathwhisper fails a saving throw, she can choose to succeed instead."
+						"亡语者豁免失败时，可以将其改为豁免成功。"
 					]
 				},
 				{
-					"name": "Mana Shield",
+					"ENG_name": "Mana Shield",
+					"name": "法力护盾",
 					"entries": [
-						"Deathwhisper is surrounded by a magical shield of force with 150 {@variantrule Hit Points|XPHB}. Whenever she would take damage, the shield takes the damage instead (after applying her {@variantrule Resistance|XPHB|Resistances} and {@variantrule Immunity|XPHB|Immunities}). If damage reduces the shield to 0 HP, Deathwhisper takes any remaining damage. {@variantrule Damage|XPHB} taken by the shield doesn't affect Deathwhisper's {@status Concentration|XPHB}. Deathwhisper restores the shield to its {@variantrule Hit Points|XPHB|Hit Point} maximum whenever she finishes a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB}."
+						"亡语者被一面具有150{@variantrule 生命值|XPHB}的魔法力场护盾包围。每当其将受到伤害时，该护盾改为承受该伤害（在其{@variantrule 抗性|XPHB|抗性}和{@variantrule 免疫|XPHB|免疫}生效之后）。若伤害将护盾降至0生命值，亡语者受到剩余的所有伤害。护盾受到的{@variantrule 伤害|XPHB}不影响亡语者的{@status 专注|XPHB}。每当亡语者完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}，其便将护盾恢复至其{@variantrule 生命值|XPHB|生命值}上限。"
 					]
 				}
 			],
 			"action": [
 				{
-					"name": "Multiattack",
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
 					"entries": [
-						"If her Mana Shield is active, Deathwhisper makes three Shadow Bolt attacks. Otherwise, she makes three attacks, using Paralyzing Touch or Frostbolt in any combination."
+						"若其法力护盾生效，亡语者发动三次暗影箭攻击。否则，其使用麻痹之触或寒冰箭发动共计三次攻击。"
 					]
 				},
 				{
-					"name": "Paralyzing Touch",
+					"ENG_name": "Paralyzing Touch",
+					"name": "麻痹之触",
 					"entries": [
-						"{@atkr m} {@hit 13}, reach 10 ft. {@h}16 ({@damage 3d6 + 6}) Cold damage, and the target has the {@condition Paralyzed|XPHB} condition until the start of Deathwhisper's next turn."
+						"{@atkr m} 命中{@hit 13}，触及10尺。{@h}16（{@damage 3d6 + 6}）寒冷伤害，且目标陷入{@condition 麻痹|XPHB}状态，直至亡语者的下个回合开始。"
 					]
 				},
 				{
-					"name": "Shadow Bolt",
+					"ENG_name": "Shadow Bolt",
+					"name": "暗影箭",
 					"entries": [
-						"{@atkr m,r} {@hit 13}, reach 10 ft. or range 120 ft. {@h}25 ({@damage 3d12 + 6}) Psychic damage."
+						"{@atkr m,r} 命中{@hit 13}，触及10尺或射程120尺。{@h}25（{@damage 3d12 + 6}）心灵伤害。"
 					]
 				},
 				{
-					"name": "Frostbolt",
+					"ENG_name": "Frostbolt",
+					"name": "寒冰箭",
 					"entries": [
-						"{@atkr r} {@hit 13}, range 120 ft. {@h}19 ({@damage 2d12 + 6}) Cold damage, and the target has the {@condition Restrained|XPHB} condition until the start of Deathwhisper's next turn."
+						"{@atkr r} 命中{@hit 13}，射程120尺。{@h}19（{@damage 2d12 + 6}）寒冷伤害，且目标陷入{@condition 束缚|XPHB}状态，直至亡语者的下个回合开始。"
 					]
 				}
 			],
 			"legendary": [
 				{
-					"name": "Death and Decay",
+					"ENG_name": "Death and Decay",
+					"name": "枯萎凋零",
 					"entries": [
-						"{@actSave wis} {@dc 21}, each creature in a 20-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on a point Deathwhisper can see within 120 feet. {@actSaveFail} 7 ({@damage 2d6}) Necrotic damage, and the target is cursed until the end of Deathwhisper's next turn. A cursed creature takes an extra {@damage 1d6} Necrotic damage each time it takes damage from Deathwhisper's spell or attack roll. {@actSaveSuccess} Half damage only. {@actSaveSuccessOrFail} Deathwhisper can't take this action again until the start of her next turn."
+						"{@actSave wis} {@dc 21}，以亡语者120尺内可见的一点为中心的20尺半径{@variantrule 球状 [效应区域]|XPHB|球状}区域内的每名生物。{@actSaveFail} 7（{@damage 2d6}）暗蚀伤害，且目标被诅咒，直至亡语者的下个回合结束。被诅咒的生物每次受到来自亡语者法术或攻击检定的伤害时，额外受到{@damage 1d6}暗蚀伤害。{@actSaveSuccess} 仅半伤。{@actSaveSuccessOrFail} 亡语者直至其下个回合开始都无法再执行此动作。"
 					]
 				},
 				{
-					"name": "Deathly Teleport (Requires No Mana Shield)",
+					"ENG_name": "Deathly Teleport (Requires No Mana Shield)",
+					"name": "蚀命传送（需无法力护盾）",
 					"entries": [
-						"Deathwhisper teleports up to 60 feet to an unoccupied space she can see, and each creature within 10 feet of the space she left takes 11 ({@damage 2d10}) Necrotic damage."
+						"亡语者传送至多60尺至一处其可见的未占据空间，且其离开的空间10尺内的每名生物受到11（{@damage 2d10}）暗蚀伤害。"
 					]
 				},
 				{
-					"name": "Shadow Strike",
+					"ENG_name": "Shadow Strike",
+					"name": "暗影打击",
 					"entries": [
-						"Deathwhisper makes one Shadow Bolt attack."
+						"亡语者发动一次暗影箭攻击。"
 					]
 				}
 			],
@@ -1109,7 +1172,9 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Lord Marrowgar",
+			"ENG_name": "Lord Marrowgar",
+			"name": "玛洛加尔领主",
+			"type": "undead",
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "ICC",
@@ -1117,7 +1182,6 @@
 			"size": [
 				"L"
 			],
-			"type": "undead",
 			"alignment": [
 				"N",
 				"E"
@@ -1150,7 +1214,7 @@
 				"perception": "+16"
 			},
 			"senses": [
-				"Truesight 60 ft."
+				"真实视觉 60 尺"
 			],
 			"passive": 26,
 			"resist": [
@@ -1173,63 +1237,71 @@
 				"unconscious"
 			],
 			"languages": [
-				"Common",
-				"Forsaken",
-				"Orcish"
+				"通用语",
+				"被遗忘者语",
+				"兽人语"
 			],
 			"cr": "21",
 			"trait": [
 				{
-					"name": "Bone Storm",
+					"ENG_name": "Bone Storm",
+					"name": "骸骨风暴",
 					"entries": [
-						"At the end of each of Marrowgar's turns, each creature in a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from Marrowgar takes 10 ({@damage 3d6}) Slashing damage."
+						"在玛洛加尔每个回合结束时，源自玛洛加尔的10尺{@variantrule 光环 [效应区域]|XPHB|光环}区域内的每名生物受到10（{@damage 3d6}）挥砍伤害。"
 					]
 				},
 				{
-					"name": "Legendary Resistance (4/Day)",
+					"ENG_name": "Legendary Resistance (4/Day)",
+					"name": "传奇抗性（4/日）",
 					"entries": [
-						"If Marrowgar fails a saving throw, it can choose to succeed instead."
+						"玛洛加尔豁免失败时，可以将其改为豁免成功。"
 					]
 				}
 			],
 			"action": [
 				{
-					"name": "Multiattack",
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
 					"entries": [
-						"Marrowgar makes one Axe of the Frozen Throne attack and two Bone Slice attacks."
+						"玛洛加尔发动一次冰封王座之斧攻击和两次军刀猛刺攻击。"
 					]
 				},
 				{
-					"name": "Axe of the Frozen Throne",
+					"ENG_name": "Axe of the Frozen Throne",
+					"name": "冰封王座之斧",
 					"entries": [
-						"{@atkr m} {@hit 14}, reach 10 ft. {@h}13 ({@damage 1d12 + 7}) Slashing damage plus 6 ({@damage 1d12}) Cold damage, and the target has the {@condition Prone|XPHB} condition."
+						"{@atkr m} 命中{@hit 14}，触及10尺。{@h}13（{@damage 1d12 + 7}）挥砍伤害外加6（{@damage 1d12}）寒冷伤害，且目标陷入{@condition 倒地|XPHB}状态。"
 					]
 				},
 				{
-					"name": "Bone Slice",
+					"ENG_name": "Bone Slice",
+					"name": "军刀猛刺",
 					"entries": [
-						"{@atkr m} {@hit 14}, reach 20 ft. {@h}18 ({@damage 2d10 + 7}) Slashing damage."
+						"{@atkr m} 命中{@hit 14}，触及20尺。{@h}18（{@damage 2d10 + 7}）挥砍伤害。"
 					]
 				},
 				{
-					"name": "Bone Spike Graveyard {@recharge 5}",
+					"ENG_name": "Bone Spike Graveyard {@recharge 5}",
+					"name": "天灾领主之刺{@recharge 5}",
 					"entries": [
-						"{@actSave dex} {@dc 21}, each creature in a 60-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from Marrowgar. {@actSaveFail} 14 ({@damage 4d6}) Piercing damage, and the target has the {@condition Restrained|XPHB} condition as it is trapped inside a bone spike. {@actSaveSuccess} Half damage only.",
-						"A {@condition Restrained|XPHB} creature can be freed by destroying the bone spike, which is a Large object with AC 17; HP 25; and {@variantrule Immunity|XPHB} to Cold, Necrotic, Poison, and Psychic damage."
+						"{@actSave dex} {@dc 21}，源自玛洛加尔的60尺{@variantrule 光环 [效应区域]|XPHB|光环}区域内的每名生物。{@actSaveFail} 14（{@damage 4d6}）穿刺伤害，且目标因被困在一根骨刺中而陷入{@condition 束缚|XPHB}状态。{@actSaveSuccess} 仅半伤。",
+						"被{@condition 束缚|XPHB}的生物可以通过摧毁骨刺来获释，骨刺是一个大型物件，具有AC 17、HP 25，且{@variantrule 免疫|XPHB}寒冷、暗蚀、毒素和心灵伤害。"
 					]
 				}
 			],
 			"legendary": [
 				{
-					"name": "Coldflame",
+					"ENG_name": "Coldflame",
+					"name": "冷焰",
 					"entries": [
-						"{@actSave dex} {@dc 21}, each creature in a 300-foot-long, 10-foot-wide {@variantrule Line [Area of Effect]|XPHB|Line}. {@actSaveFail} 16 ({@damage 3d10}) Cold damage. {@actSaveSuccess} Half damage. {@actSaveSuccessOrFail} Marrowgar can't take this action again until the start of its next turn."
+						"{@actSave dex} {@dc 21}，300尺长、10尺宽的{@variantrule 线状 [效应区域]|XPHB|线状}区域内的每名生物。{@actSaveFail} 16（{@damage 3d10}）寒冷伤害。{@actSaveSuccess} 半伤。{@actSaveSuccessOrFail} 玛洛加尔直至其下个回合开始都无法再执行此动作。"
 					]
 				},
 				{
-					"name": "Strike",
+					"ENG_name": "Strike",
+					"name": "打击",
 					"entries": [
-						"Marrowgar makes one Axe of the Frozen Throne attack."
+						"玛洛加尔发动一次冰封王座之斧攻击。"
 					]
 				}
 			],
@@ -1266,13 +1338,14 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Plague-Dog",
+			"ENG_name": "Plague-Dog",
+			"name": "天灾犬",
+			"type": "construct",
 			"source": "ICC",
 			"page": 60,
 			"size": [
 				"H"
 			],
-			"type": "construct",
 			"alignment": [
 				"N",
 				"E"
@@ -1297,7 +1370,7 @@
 			"wis": 12,
 			"cha": 10,
 			"senses": [
-				"Darkvision 60 ft."
+				"黑暗视觉 60 尺"
 			],
 			"passive": 11,
 			"immune": [
@@ -1315,44 +1388,50 @@
 			"cr": "14",
 			"trait": [
 				{
-					"name": "Pack Tactics",
+					"ENG_name": "Pack Tactics",
+					"name": "集群战术",
 					"entries": [
-						"The plague-dog has {@variantrule Advantage|XPHB} on an attack roll against a creature if at least one of the plague-dog's allies is within 5 feet of the creature and the ally doesn't have the {@condition Incapacitated|XPHB} condition."
+						"若天灾犬的至少一名盟友位于该生物5尺内且该盟友未处于{@condition 失能|XPHB}状态，天灾犬针对该生物的攻击检定具有{@variantrule 优势|XPHB}。"
 					]
 				},
 				{
-					"name": "Plague Stench",
+					"ENG_name": "Plague Stench",
+					"name": "天灾恶臭",
 					"entries": [
-						"{@actSave con} {@dc 17}, any creature that starts its turn in a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the plague-dog. {@actSaveFail} 19 ({@damage 3d12}) Poison damage, and the target has the {@condition Poisoned|XPHB} condition until the start of its next turn."
+						"{@actSave con} {@dc 17}，在源自天灾犬的10尺{@variantrule 光环 [效应区域]|XPHB|光环}区域内开始其回合的每名生物。{@actSaveFail} 19（{@damage 3d12}）毒素伤害，且目标陷入{@condition 中毒|XPHB}状态，直至其下个回合开始。"
 					]
 				}
 			],
 			"action": [
 				{
-					"name": "Multiattack",
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
 					"entries": [
-						"The plague-dog makes two Rend attacks."
+						"天灾犬发动两次撕裂攻击。"
 					]
 				},
 				{
-					"name": "Rend",
+					"ENG_name": "Rend",
+					"name": "撕裂",
 					"entries": [
-						"{@atkr m} {@hit 11}, reach 10 ft. {@h}20 ({@damage 4d6 + 6}) Slashing damage plus 14 ({@damage 4d6}) Necrotic damage."
+						"{@atkr m} 命中{@hit 11}，触及10尺。{@h}20（{@damage 4d6 + 6}）挥砍伤害外加14（{@damage 4d6}）暗蚀伤害。"
 					]
 				},
 				{
-					"name": "Decimate (1/Day)",
+					"ENG_name": "Decimate (1/Day)",
+					"name": "毁灭（1/日）",
 					"entries": [
-						"{@actSave con} {@dc 17}, each creature in a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the plague-dog. {@actSaveFail} 61 ({@damage 7d8 + 30}) Necrotic damage. {@actSaveSuccess} Half damage.",
-						"A Humanoid killed by this action rises at the start of the plague-dog's next turn as a {@creature Zombie|XMM} that is an ally to the plague-dog and its allies."
+						"{@actSave con} {@dc 17}，源自天灾犬的30尺{@variantrule 光环 [效应区域]|XPHB|光环}区域内的每名生物。{@actSaveFail} 61（{@damage 7d8 + 30}）暗蚀伤害。{@actSaveSuccess} 半伤。",
+						"被此动作杀死的一名类人生物在天灾犬的下个回合开始时作为{@creature 丧尸|XMM}复生，该丧尸是天灾犬及其盟友的盟友。"
 					]
 				}
 			],
 			"bonus": [
 				{
-					"name": "Eerie Howl {@recharge 5}",
+					"ENG_name": "Eerie Howl {@recharge 5}",
+					"name": "阴森嚎叫{@recharge 5}",
 					"entries": [
-						"{@actSave wis} {@dc 17}, each creature in a 60-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the plague-dog. {@actSaveFail} 14 ({@damage 4d6}) Psychic damage, and the target has the {@condition Frightened|XPHB} condition. At the end of each of its turns, the target repeats the save, ending the effect on itself on a success. After 1 minute, it succeeds automatically. While {@condition Frightened|XPHB}, the target can do only one of the following on each of its turns: move, take an action, or take a {@variantrule Bonus Action|XPHB}. {@actSaveSuccess} Half damage only."
+						"{@actSave wis} {@dc 17}，源自天灾犬的60尺{@variantrule 光环 [效应区域]|XPHB|光环}区域内的每名生物。{@actSaveFail} 14（{@damage 4d6}）心灵伤害，且目标陷入{@condition 恐慌|XPHB}状态。目标在其每个回合结束时重复豁免，成功则终止其身上的该效应。1分钟后，其豁免自动成功。处于{@condition 恐慌|XPHB}状态期间，目标在其每个回合中仅可以执行以下事项之一：移动、执行一个动作，或执行一个{@variantrule 附赠动作|XPHB}。{@actSaveSuccess} 仅半伤。"
 					]
 				}
 			],
@@ -1388,13 +1467,14 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Plagueworks Ooze",
+			"ENG_name": "Plagueworks Ooze",
+			"name": "天灾工厂软泥怪",
+			"type": "ooze",
 			"source": "ICC",
 			"page": 61,
 			"size": [
 				"M"
 			],
-			"type": "ooze",
 			"alignment": [
 				"U"
 			],
@@ -1416,7 +1496,7 @@
 			"wis": 6,
 			"cha": 1,
 			"senses": [
-				"Blindsight 60 ft."
+				"盲视 60 尺"
 			],
 			"passive": 8,
 			"immune": [
@@ -1436,42 +1516,48 @@
 			"cr": "4",
 			"trait": [
 				{
-					"name": "Amorphous",
+					"ENG_name": "Amorphous",
+					"name": "无定形",
 					"entries": [
-						"The ooze can move through a space as narrow as 1 inch without expending extra movement to do so."
+						"该泥怪可以穿过窄至1寸的空间而无需为此消耗额外移动力。"
 					]
 				},
 				{
-					"name": "Corrosive Form",
+					"ENG_name": "Corrosive Form",
+					"name": "腐蚀形态",
 					"entries": [
-						"A creature that hits the ooze with a melee attack roll takes 4 ({@damage 1d8}) Acid damage. If the ooze has used its Merge action, the damage is increased by 4 ({@damage 1d8}) for each merged ooze beyond the first. Nonmagical ammunition is destroyed immediately after hitting the ooze and dealing any damage. Any nonmagical weapon takes a -1 cumulative penalty to attack rolls immediately after dealing damage to the ooze and coming into contact with it. The weapon is destroyed if the penalty reaches -5. The penalty can be removed by casting the {@spell Mending|XPHB} spell on the weapon.",
-						"In 1 minute, the ooze can eat through 2 feet of nonmagical wood or metal."
+						"以近战攻击检定命中软泥怪的生物受到4（{@damage 1d8}）强酸伤害。若软泥怪已使用其融合动作，则每有一团额外的融合软泥怪，该伤害增加4（{@damage 1d8}）。非魔法弹药在命中软泥怪并造成任何伤害后立即被摧毁。任何非魔法武器在对软泥怪造成伤害并与其接触后，其攻击检定立即承受-1的累计减值。若减值达到-5，该武器被摧毁。对该武器施展{@spell 修复术|XPHB}可以移除此减值。",
+						"软泥怪可以在1分钟内蚀穿2尺非魔法木材或金属。"
 					]
 				},
 				{
-					"name": "Spider Climb",
+					"ENG_name": "Spider Climb",
+					"name": "蛛行术",
 					"entries": [
-						"The ooze can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+						"软泥怪可以在难以攀爬的表面上攀爬，包括沿着天花板移动，且无需为此进行属性检定。"
 					]
 				}
 			],
 			"action": [
 				{
-					"name": "Multiattack",
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
 					"entries": [
-						"The ooze makes one Sticky Pseudopod attack and can make one additional Sticky Pseudopod attack for each size category it is larger than Medium (maximum of three additional attacks)."
+						"软泥怪发动一次黏性伪足攻击，且其体型每比中型大一级，便可额外发动一次黏性伪足攻击（至多额外三次攻击）。"
 					]
 				},
 				{
-					"name": "Sticky Pseudopod",
+					"ENG_name": "Sticky Pseudopod",
+					"name": "黏性伪足",
 					"entries": [
-						"{@atkr m} {@hit 5}, reach 5 ft. {@h}17 ({@damage 4d6 + 3}) Acid damage, and the target's {@variantrule Speed|XPHB} is reduced by 10 feet until the end of its next turn. Nonmagical armor worn by the target takes a -1 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10. The penalty can be removed by casting the {@spell Mending|XPHB} spell on the armor."
+						"{@atkr m} 命中{@hit 5}，触及5尺。{@h}17（{@damage 4d6 + 3}）强酸伤害，且直至目标的下个回合结束，目标的{@variantrule 速度|XPHB}减少10尺。目标所穿的非魔法护甲为其提供的AC承受-1减值。若该减值使护甲的AC降至10，该护甲被摧毁。对该护甲施展{@spell 修复术|XPHB}可以移除此减值。"
 					]
 				},
 				{
-					"name": "Merge",
+					"ENG_name": "Merge",
+					"name": "融合",
 					"entries": [
-						"The ooze merges with another Plagueworks Ooze within 5 feet of itself. The merged ooze's size increases by one category (from Medium to Large, Large to Huge, or Huge to Gargantuan [the maximum]), it acts on the {@variantrule Initiative|XPHB} count of the other ooze, and it has the combined {@variantrule Hit Points|XPHB} of both component oozes."
+						"软泥怪与其5尺内的另一团天灾工厂软泥怪融合。融合后的软泥怪体型增大一级（从中型到大型、大型到巨型，或巨型到超巨型[上限]），其在另一团软泥怪的{@variantrule 先攻|XPHB}顺位行动，且其拥有两团软泥怪的{@variantrule 生命值|XPHB}总和。"
 					]
 				}
 			],
@@ -1495,7 +1581,15 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Prince Keleseth",
+			"ENG_name": "Prince Keleseth",
+			"name": "凯雷塞斯王子",
+			"type": {
+				"type": "undead",
+				"tags": [
+					"精灵",
+					"吸血鬼"
+				]
+			},
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "ICC",
@@ -1503,13 +1597,6 @@
 			"size": [
 				"M"
 			],
-			"type": {
-				"type": "undead",
-				"tags": [
-					"elf",
-					"vampire"
-				]
-			},
 			"alignment": [
 				"L",
 				"E"
@@ -1526,7 +1613,7 @@
 				"climb": 40,
 				"fly": {
 					"number": 40,
-					"condition": "(hover)"
+					"condition": "(悬浮)"
 				},
 				"canHover": true
 			},
@@ -1551,7 +1638,7 @@
 				"stealth": "+10"
 			},
 			"senses": [
-				"Blindsight 120 ft."
+				"盲视 120 尺"
 			],
 			"passive": 25,
 			"immune": [
@@ -1563,18 +1650,19 @@
 				"exhaustion"
 			],
 			"languages": [
-				"Common",
-				"Forsaken",
-				"Orcish",
-				"Thalassian"
+				"通用语",
+				"被遗忘者语",
+				"兽人语",
+				"萨拉斯语"
 			],
 			"cr": "18",
 			"spellcasting": [
 				{
-					"name": "Hunger of Hadar {@recharge 5}",
+					"ENG_name": "Hunger of Hadar {@recharge 5}",
+					"name": "哈达之欲{@recharge 5}",
 					"type": "spellcasting",
 					"headerEntries": [
-						"Keleseth casts {@spell Hunger of Hadar|XPHB} (level 5 version), requiring no spell components and using Charisma as the spellcasting ability (spell save {@dc 20})."
+						"凯雷塞斯施展{@spell 哈达之欲|XPHB}（五环版本），无需法术成分并使用魅力作为施法属性（法术豁免{@dc 20}）。"
 					],
 					"recharge": {
 						"5": [
@@ -1588,14 +1676,15 @@
 					]
 				},
 				{
-					"name": "Beguile",
+					"ENG_name": "Beguile",
+					"name": "诱骗",
 					"type": "spellcasting",
 					"headerEntries": [
-						"The vampire casts {@spell Hold Person|XPHB}, requiring no spell components and using Charisma as the spellcasting ability (spell save {@dc 20}). The vampire can't take this action again until the start of its next turn."
+						"该吸血鬼施展{@spell 定身类人|XPHB}，无需法术成分并使用魅力作为施法属性（法术豁免{@dc 20}）。直至其下个回合开始，该吸血鬼都无法再执行此动作。"
 					],
 					"legendary": {
 						"1": [
-							"{@spell Hold Person|XPHB}"
+							"{@spell 定身类人|XPHB}"
 						]
 					},
 					"ability": "cha",
@@ -1607,60 +1696,68 @@
 			],
 			"trait": [
 				{
-					"name": "Invocation of Blood",
+					"ENG_name": "Invocation of Blood",
+					"name": "鲜血唤醒",
 					"entries": [
-						"At any time, one of the three vampires is under the Invocation of Blood (it starts on Prince Valanar). While under the Invocation of Blood, the vampire has {@variantrule Vulnerability|XPHB} to all damage and gains one additional Legendary Action use each round. At the end of each of Valanar's turns, the Invocation of Blood shifts to a different vampire. Roll {@dice 1d6}: on a 1-2, it moves to Prince Keleseth; on a 3-4, it moves to Prince Taldaram; on a 5-6, it moves to Prince Valanar. If the result indicates the vampire currently under the Invocation, the Invocation doesn't move this turn."
+						"任意时刻，三名吸血鬼中必有一名处于鲜血唤醒的影响下（初始为瓦拉纳王子）。处于鲜血唤醒影响下期间，该吸血鬼对所有伤害具有{@variantrule 易伤|XPHB}，且每轮获得一次额外的传奇动作使用次数。在瓦拉纳每个回合结束时，鲜血唤醒转移至另一名吸血鬼。掷{@dice 1d6}：掷出1-2时，其转移至凯雷塞斯王子；掷出3-4时，其转移至塔达拉姆王子；掷出5-6时，其转移至瓦拉纳王子。若结果指向当前处于鲜血唤醒影响下的吸血鬼，则鲜血唤醒本回合不转移。"
 					]
 				},
 				{
-					"name": "Legendary Resistance (3/Day)",
+					"ENG_name": "Legendary Resistance (3/Day)",
+					"name": "传奇抗性（3/日）",
 					"entries": [
-						"If the vampire fails a saving throw, it can choose to succeed instead."
+						"吸血鬼豁免失败时，可以将其改为豁免成功。"
 					]
 				},
 				{
-					"name": "Sunlight Weakness",
+					"ENG_name": "Sunlight Weakness",
+					"name": "日照弱点",
 					"entries": [
-						"The vampire takes 20 Radiant damage if it starts its turn in sunlight. While in sunlight, it has {@variantrule Disadvantage|XPHB} on attack rolls and ability checks."
+						"若吸血鬼在阳光下开始其回合，其受到 20 光耀伤害。若其身处阳光下，其进行的攻击检定和属性检定具有{@variantrule 劣势|XPHB}。"
 					]
 				}
 			],
 			"action": [
 				{
-					"name": "Multiattack",
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
 					"entries": [
-						"Keleseth makes two attacks, using Grave Strike or Shadow Lance in any combination."
+						"凯雷塞斯使用墓穴打击或影枪发动共计两次攻击。"
 					]
 				},
 				{
-					"name": "Grave Strike",
+					"ENG_name": "Grave Strike",
+					"name": "葬送打击",
 					"entries": [
-						"{@atkr m} {@hit 12}, reach 5 ft. {@h}10 ({@damage 1d8 + 6}) Slashing damage plus 18 ({@damage 4d8}) Necrotic damage."
+						"{@atkr m} 命中{@hit 12}，触及5尺。{@h}10（{@damage 1d8 + 6}）挥砍伤害外加18（{@damage 4d8}）暗蚀伤害。"
 					]
 				},
 				{
-					"name": "Shadow Lance",
+					"ENG_name": "Shadow Lance",
+					"name": "影枪",
 					"entries": [
-						"{@atkr r} {@hit 12}, range 120 ft. {@h}22 ({@damage 4d10 + 6}) Psychic damage."
+						"{@atkr r} 命中{@hit 12}，射程120尺。{@h}22（{@damage 4d10 + 6}）心灵伤害。"
 					]
 				}
 			],
 			"bonus": [
 				{
-					"name": "Sanguine Drain",
+					"ENG_name": "Sanguine Drain",
+					"name": "猩红征收",
 					"entries": [
-						"{@actSave con} {@dc 20}, one creature the vampire can see within 30 feet that isn't a Construct or an Undead. {@actSaveFail} 14 ({@damage 4d6}) Necrotic damage. The target's {@variantrule Hit Points|XPHB|Hit Point} maximum decreases by an amount equal to the damage taken, and the vampire regains {@variantrule Hit Points|XPHB} equal to that amount."
+						"{@actSave con} {@dc 20}，该吸血鬼30尺内可见的单一生物，且该生物不是构造体或亡灵。{@actSaveFail} 14（{@damage 4d6}）暗蚀伤害。目标的{@variantrule 生命值|XPHB|生命值}上限减少等于其所受伤害的数值，且该吸血鬼恢复等同该数值的{@variantrule 生命值|XPHB}。"
 					]
 				}
 			],
 			"legendaryHeader": [
-				"Legendary Action Uses: 3 (4 Under Invocation of Blood). Immediately after another creature's turn, the vampire can expend a use to take one of the following actions. The vampire regains all expended uses at the start of each of its turns."
+				"传奇动作使用次数：3（鲜血唤醒期间为4）。在另一生物的回合结束后，该吸血鬼可以消耗一次使用次数来执行以下动作之一。该吸血鬼在其每个回合开始时恢复所有已消耗的使用次数。"
 			],
 			"legendary": [
 				{
-					"name": "Umbral Strike",
+					"ENG_name": "Umbral Strike",
+					"name": "暗影袭",
 					"entries": [
-						"The vampire moves up to half its {@variantrule Speed|XPHB}, and it makes one Grave Strike or Shadow Lance attack."
+						"该吸血鬼移动至多等于其{@variantrule 速度|XPHB}一半的距离，并发动一次墓穴打击或影枪攻击。"
 					]
 				}
 			],
@@ -1710,7 +1807,15 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Prince Taldaram",
+			"ENG_name": "Prince Taldaram",
+			"name": "塔达拉姆王子",
+			"type": {
+				"type": "undead",
+				"tags": [
+					"精灵",
+					"吸血鬼"
+				]
+			},
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "ICC",
@@ -1718,13 +1823,6 @@
 			"size": [
 				"M"
 			],
-			"type": {
-				"type": "undead",
-				"tags": [
-					"elf",
-					"vampire"
-				]
-			},
 			"alignment": [
 				"L",
 				"E"
@@ -1741,7 +1839,7 @@
 				"climb": 40,
 				"fly": {
 					"number": 40,
-					"condition": "(hover)"
+					"condition": "(悬浮)"
 				},
 				"canHover": true
 			},
@@ -1766,7 +1864,7 @@
 				"stealth": "+10"
 			},
 			"senses": [
-				"Blindsight 120 ft."
+				"盲视 120 尺"
 			],
 			"passive": 25,
 			"immune": [
@@ -1778,22 +1876,23 @@
 				"exhaustion"
 			],
 			"languages": [
-				"Common",
-				"Forsaken",
-				"Orcish",
-				"Thalassian"
+				"通用语",
+				"被遗忘者语",
+				"兽人语",
+				"萨拉斯语"
 			],
 			"cr": "18",
 			"spellcasting": [
 				{
-					"name": "Beguile",
+					"ENG_name": "Beguile",
+					"name": "诱骗",
 					"type": "spellcasting",
 					"headerEntries": [
-						"The vampire casts {@spell Hold Person|XPHB}, requiring no spell components and using Charisma as the spellcasting ability (spell save {@dc 20}). The vampire can't take this action again until the start of its next turn."
+						"该吸血鬼施展{@spell 定身类人|XPHB}，无需法术成分并使用魅力作为施法属性（法术豁免{@dc 20}）。直至其下个回合开始，该吸血鬼都无法再执行此动作。"
 					],
 					"legendary": {
 						"1": [
-							"{@spell Hold Person|XPHB}"
+							"{@spell 定身类人|XPHB}"
 						]
 					},
 					"ability": "cha",
@@ -1805,66 +1904,75 @@
 			],
 			"trait": [
 				{
-					"name": "Invocation of Blood",
+					"ENG_name": "Invocation of Blood",
+					"name": "鲜血唤醒",
 					"entries": [
-						"At any time, one of the three vampires is under the Invocation of Blood (it starts on Prince Valanar). While under the Invocation of Blood, the vampire has {@variantrule Vulnerability|XPHB} to all damage and gains one additional Legendary Action use each round. At the end of each of Valanar's turns, the Invocation of Blood shifts to a different vampire. Roll {@dice 1d6}: on a 1-2, it moves to Prince Keleseth; on a 3-4, it moves to Prince Taldaram; on a 5-6, it moves to Prince Valanar. If the result indicates the vampire currently under the Invocation, the Invocation doesn't move this turn."
+						"任意时刻，三名吸血鬼中必有一名处于鲜血唤醒的影响下（初始为瓦拉纳王子）。处于鲜血唤醒影响下期间，该吸血鬼对所有伤害具有{@variantrule 易伤|XPHB}，且每轮获得一次额外的传奇动作使用次数。在瓦拉纳每个回合结束时，鲜血唤醒转移至另一名吸血鬼。掷{@dice 1d6}：掷出1-2时，其转移至凯雷塞斯王子；掷出3-4时，其转移至塔达拉姆王子；掷出5-6时，其转移至瓦拉纳王子。若结果指向当前处于鲜血唤醒影响下的吸血鬼，则鲜血唤醒本回合不转移。"
 					]
 				},
 				{
-					"name": "Legendary Resistance (3/Day)",
+					"ENG_name": "Legendary Resistance (3/Day)",
+					"name": "传奇抗性（3/日）",
 					"entries": [
-						"If the vampire fails a saving throw, it can choose to succeed instead."
+						"吸血鬼豁免失败时，可以将其改为豁免成功。"
 					]
 				},
 				{
-					"name": "Sunlight Weakness",
+					"ENG_name": "Sunlight Weakness",
+					"name": "日照弱点",
 					"entries": [
-						"The vampire takes 20 Radiant damage if it starts its turn in sunlight. While in sunlight, it has {@variantrule Disadvantage|XPHB} on attack rolls and ability checks."
+						"若吸血鬼在阳光下开始其回合，其受到 20 光耀伤害。若其身处阳光下，其进行的攻击检定和属性检定具有{@variantrule 劣势|XPHB}。"
 					]
 				}
 			],
 			"action": [
 				{
-					"name": "Multiattack",
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
 					"entries": [
-						"Taldaram makes two attacks, using Grave Strike or Conjure Flame in any combination."
+						"塔达拉姆使用墓穴打击或幻化烈焰发动共计两次攻击。"
 					]
 				},
 				{
-					"name": "Grave Strike",
+					"ENG_name": "Grave Strike",
+					"name": "葬送打击",
 					"entries": [
-						"{@atkr m} {@hit 12}, reach 5 ft. {@h}10 ({@damage 1d8 + 6}) Slashing damage plus 18 ({@damage 4d8}) Necrotic damage."
+						"{@atkr m} 命中{@hit 12}，触及5尺。{@h}10（{@damage 1d8 + 6}）挥砍伤害外加18（{@damage 4d8}）暗蚀伤害。"
 					]
 				},
 				{
-					"name": "Conjure Flame",
+					"ENG_name": "Conjure Flame",
+					"name": "咒唤炽焰",
 					"entries": [
-						"{@atkr r} {@hit 12}, range 120 ft. {@h}22 ({@damage 3d10 + 6}) Fire damage, and each creature within a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the target takes 5 ({@damage 1d10}) Fire damage."
+						"{@atkr r} 命中{@hit 12}，射程120尺。{@h}22（{@damage 3d10 + 6}）火焰伤害，且源自目标的10尺{@variantrule 光环 [效应区域]|XPHB|光环}区域内的每名生物受到5（{@damage 1d10}）火焰伤害。"
 					]
 				},
 				{
-					"name": "Glittering Sparks {@recharge 5}",
+					"ENG_name": "Glittering Sparks {@recharge 5}",
+					"name": "闪耀火花{@recharge 5}",
 					"entries": [
-						"{@actSave dex} {@dc 20}, each creature in a 30-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} 31 ({@damage 7d8}) Fire damage, and the target's {@variantrule Speed|XPHB} is reduced by 10 feet until the end of Taldaram's next turn. {@actSaveSuccess} Half damage only."
+						"{@actSave dex} {@dc 20}，30尺{@variantrule 锥状 [效应区域]|XPHB|锥状}区域内的每名生物。{@actSaveFail} 31（{@damage 7d8}）火焰伤害，且直至塔达拉姆的下个回合结束，目标的{@variantrule 速度|XPHB}减少10尺。{@actSaveSuccess} 仅半伤。"
 					]
 				}
 			],
 			"bonus": [
 				{
-					"name": "Sanguine Drain",
+					"ENG_name": "Sanguine Drain",
+					"name": "猩红征收",
 					"entries": [
-						"{@actSave con} {@dc 20}, one creature the vampire can see within 30 feet that isn't a Construct or an Undead. {@actSaveFail} 14 ({@damage 4d6}) Necrotic damage. The target's {@variantrule Hit Points|XPHB|Hit Point} maximum decreases by an amount equal to the damage taken, and the vampire regains {@variantrule Hit Points|XPHB} equal to that amount."
+						"{@actSave con} {@dc 20}，该吸血鬼30尺内可见的单一生物，且该生物不是构造体或亡灵。{@actSaveFail} 14（{@damage 4d6}）暗蚀伤害。目标的{@variantrule 生命值|XPHB|生命值}上限减少等于其所受伤害的数值，且该吸血鬼恢复等同该数值的{@variantrule 生命值|XPHB}。"
 					]
 				}
 			],
 			"legendaryHeader": [
-				"Legendary Action Uses: 3 (4 Under Invocation of Blood). Immediately after another creature's turn, the vampire can expend a use to take one of the following actions. The vampire regains all expended uses at the start of each of its turns."
+				"传奇动作使用次数：3（鲜血唤醒期间为4）。在另一生物的回合结束后，该吸血鬼可以消耗一次使用次数来执行以下动作之一。该吸血鬼在其每个回合开始时恢复所有已消耗的使用次数。"
 			],
 			"legendary": [
 				{
-					"name": "Umbral Strike",
+					"ENG_name": "Umbral Strike",
+					"name": "暗影袭",
 					"entries": [
-						"The vampire moves up to half its {@variantrule Speed|XPHB}, and it makes one Grave Strike or Conjure Flame attack."
+						"该吸血鬼移动至多等于其{@variantrule 速度|XPHB}一半的距离，并发动一次墓穴打击或幻化烈焰攻击。"
 					]
 				}
 			],
@@ -1909,7 +2017,15 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Prince Valanar",
+			"ENG_name": "Prince Valanar",
+			"name": "瓦拉纳王子",
+			"type": {
+				"type": "undead",
+				"tags": [
+					"精灵",
+					"吸血鬼"
+				]
+			},
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "ICC",
@@ -1917,13 +2033,6 @@
 			"size": [
 				"M"
 			],
-			"type": {
-				"type": "undead",
-				"tags": [
-					"elf",
-					"vampire"
-				]
-			},
 			"alignment": [
 				"L",
 				"E"
@@ -1940,7 +2049,7 @@
 				"climb": 40,
 				"fly": {
 					"number": 40,
-					"condition": "(hover)"
+					"condition": "(悬浮)"
 				},
 				"canHover": true
 			},
@@ -1965,7 +2074,7 @@
 				"stealth": "+10"
 			},
 			"senses": [
-				"Blindsight 120 ft."
+				"盲视 120 尺"
 			],
 			"passive": 25,
 			"immune": [
@@ -1977,22 +2086,23 @@
 				"exhaustion"
 			],
 			"languages": [
-				"Common",
-				"Forsaken",
-				"Orcish",
-				"Thalassian"
+				"通用语",
+				"被遗忘者语",
+				"兽人语",
+				"萨拉斯语"
 			],
 			"cr": "18",
 			"spellcasting": [
 				{
-					"name": "Beguile",
+					"ENG_name": "Beguile",
+					"name": "诱骗",
 					"type": "spellcasting",
 					"headerEntries": [
-						"The vampire casts {@spell Hold Person|XPHB}, requiring no spell components and using Charisma as the spellcasting ability (spell save {@dc 20}). The vampire can't take this action again until the start of its next turn."
+						"该吸血鬼施展{@spell 定身类人|XPHB}，无需法术成分并使用魅力作为施法属性（法术豁免{@dc 20}）。直至其下个回合开始，该吸血鬼都无法再执行此动作。"
 					],
 					"legendary": {
 						"1": [
-							"{@spell Hold Person|XPHB}"
+							"{@spell 定身类人|XPHB}"
 						]
 					},
 					"ability": "cha",
@@ -2004,67 +2114,76 @@
 			],
 			"trait": [
 				{
-					"name": "Invocation of Blood",
+					"ENG_name": "Invocation of Blood",
+					"name": "鲜血唤醒",
 					"entries": [
-						"At any time, one of the three vampires is under the Invocation of Blood (it starts on Prince Valanar). While under the Invocation of Blood, the vampire has {@variantrule Vulnerability|XPHB} to all damage and gains one additional Legendary Action use each round. At the end of each of Valanar's turns, the Invocation of Blood shifts to a different vampire. Roll {@dice 1d6}: on a 1-2, it moves to Prince Keleseth; on a 3-4, it moves to Prince Taldaram; on a 5-6, it moves to Prince Valanar. If the result indicates the vampire currently under the Invocation, the Invocation doesn't move this turn."
+						"任意时刻，三名吸血鬼中必有一名处于鲜血唤醒的影响下（初始为瓦拉纳王子）。处于鲜血唤醒影响下期间，该吸血鬼对所有伤害具有{@variantrule 易伤|XPHB}，且每轮获得一次额外的传奇动作使用次数。在瓦拉纳每个回合结束时，鲜血唤醒转移至另一名吸血鬼。掷{@dice 1d6}：掷出1-2时，其转移至凯雷塞斯王子；掷出3-4时，其转移至塔达拉姆王子；掷出5-6时，其转移至瓦拉纳王子。若结果指向当前处于鲜血唤醒影响下的吸血鬼，则鲜血唤醒本回合不转移。"
 					]
 				},
 				{
-					"name": "Legendary Resistance (3/Day)",
+					"ENG_name": "Legendary Resistance (3/Day)",
+					"name": "传奇抗性（3/日）",
 					"entries": [
-						"If the vampire fails a saving throw, it can choose to succeed instead."
+						"吸血鬼豁免失败时，可以将其改为豁免成功。"
 					]
 				},
 				{
-					"name": "Sunlight Weakness",
+					"ENG_name": "Sunlight Weakness",
+					"name": "日照弱点",
 					"entries": [
-						"The vampire takes 20 Radiant damage if it starts its turn in sunlight. While in sunlight, it has {@variantrule Disadvantage|XPHB} on attack rolls and ability checks."
+						"若吸血鬼在阳光下开始其回合，其受到 20 光耀伤害。若其身处阳光下，其进行的攻击检定和属性检定具有{@variantrule 劣势|XPHB}。"
 					]
 				}
 			],
 			"action": [
 				{
-					"name": "Multiattack",
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
 					"entries": [
-						"Valanar makes two attacks, using Grave Strike or Shock Vortex in any combination."
+						"瓦拉纳使用墓穴打击或震荡涡流发动共计两次攻击。"
 					]
 				},
 				{
-					"name": "Grave Strike",
+					"ENG_name": "Grave Strike",
+					"name": "葬送打击",
 					"entries": [
-						"{@atkr m} {@hit 12}, reach 5 ft. {@h}10 ({@damage 1d8 + 6}) Slashing damage plus 18 ({@damage 4d8}) Necrotic damage."
+						"{@atkr m} 命中{@hit 12}，触及5尺。{@h}10（{@damage 1d8 + 6}）挥砍伤害外加18（{@damage 4d8}）暗蚀伤害。"
 					]
 				},
 				{
-					"name": "Shock Vortex",
+					"ENG_name": "Shock Vortex",
+					"name": "震荡涡流",
 					"entries": [
-						"{@atkr r} {@hit 12}, range 120 ft. {@h}22 ({@damage 3d10 + 6}) Lightning damage, and the target is pushed 5 feet straight away from Valanar and has the {@condition Prone|XPHB} condition."
+						"{@atkr r} 命中{@hit 12}，射程120尺。{@h}22（{@damage 3d10 + 6}）闪电伤害，且目标被瓦拉纳直线推离5尺并陷入{@condition 倒地|XPHB}状态。"
 					]
 				},
 				{
-					"name": "Kinetic Bomb {@recharge 5}",
+					"ENG_name": "Kinetic Bomb {@recharge 5}",
+					"name": "动力炸弹{@recharge 5}",
 					"entries": [
-						"Valanar creates a kinetic bomb\u2014a Small object with AC 13 and {@variantrule Immunity|XPHB} to all damage\u2014in an unoccupied space he can see within 120 feet of himself, 20 feet above the ground. Each round at the start of Valanar's turn, the bomb drifts 10 feet toward the ground. If it is hit by an attack roll, it rises 5 feet. If it reaches the ground, it explodes, creating the following effect. {@actSave dex} {@dc 20}, each creature of Valanar's choice in a 60-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on the bomb. {@actSaveFail} 42 ({@damage 12d6}) Force damage, and the target is pushed 10 feet straight away from the bomb and has the {@condition Prone|XPHB} condition. {@actSaveSuccess} Half damage only.",
-						"The bomb vanishes when all three vampires drop to 0 {@variantrule Hit Points|XPHB}."
+						"瓦拉纳创造一枚动力炸弹\u2014\u2014一个AC 13且{@variantrule 免疫|XPHB}所有伤害的小型物件\u2014\u2014置于其120尺内可见的一处未占据空间中，离地20尺。每轮在瓦拉纳的回合开始时，炸弹向地面漂移10尺。若其被一次攻击检定命中，其上升5尺。若其抵达地面，其爆炸并产生以下效应。{@actSave dex} {@dc 20}，以炸弹为中心的60尺半径{@variantrule 球状 [效应区域]|XPHB|球状}区域内瓦拉纳选定的每名生物。{@actSaveFail} 42（{@damage 12d6}）力场伤害，且目标被炸弹直线推离10尺并陷入{@condition 倒地|XPHB}状态。{@actSaveSuccess} 仅半伤。",
+						"当三名吸血鬼全部{@variantrule 生命值|XPHB}降至0时，该炸弹消失。"
 					]
 				}
 			],
 			"bonus": [
 				{
-					"name": "Sanguine Drain",
+					"ENG_name": "Sanguine Drain",
+					"name": "猩红征收",
 					"entries": [
-						"{@actSave con} {@dc 20}, one creature the vampire can see within 30 feet that isn't a Construct or an Undead. {@actSaveFail} 14 ({@damage 4d6}) Necrotic damage. The target's {@variantrule Hit Points|XPHB|Hit Point} maximum decreases by an amount equal to the damage taken, and the vampire regains {@variantrule Hit Points|XPHB} equal to that amount."
+						"{@actSave con} {@dc 20}，该吸血鬼30尺内可见的单一生物，且该生物不是构造体或亡灵。{@actSaveFail} 14（{@damage 4d6}）暗蚀伤害。目标的{@variantrule 生命值|XPHB|生命值}上限减少等于其所受伤害的数值，且该吸血鬼恢复等同该数值的{@variantrule 生命值|XPHB}。"
 					]
 				}
 			],
 			"legendaryHeader": [
-				"Legendary Action Uses: 3 (4 Under Invocation of Blood). Immediately after another creature's turn, the vampire can expend a use to take one of the following actions. The vampire regains all expended uses at the start of each of its turns."
+				"传奇动作使用次数：3（鲜血唤醒期间为4）。在另一生物的回合结束后，该吸血鬼可以消耗一次使用次数来执行以下动作之一。该吸血鬼在其每个回合开始时恢复所有已消耗的使用次数。"
 			],
 			"legendary": [
 				{
-					"name": "Umbral Strike",
+					"ENG_name": "Umbral Strike",
+					"name": "暗影袭",
 					"entries": [
-						"The vampire moves up to half its {@variantrule Speed|XPHB}, and it makes one Grave Strike or Shock Vortex attack."
+						"该吸血鬼移动至多等于其{@variantrule 速度|XPHB}一半的距离，并发动一次墓穴打击或震荡涡流攻击。"
 					]
 				}
 			],
@@ -2113,7 +2232,9 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Professor Putricide, Phase 1",
+			"ENG_name": "Professor Putricide, Phase 1",
+			"name": "普崔塞德教授（阶段一）",
+			"type": "undead",
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "ICC",
@@ -2121,7 +2242,6 @@
 			"size": [
 				"L"
 			],
-			"type": "undead",
 			"alignment": [
 				"C",
 				"E"
@@ -2155,7 +2275,7 @@
 				"perception": "+11"
 			},
 			"senses": [
-				"Darkvision 120 ft."
+				"黑暗视觉 120 尺"
 			],
 			"passive": 21,
 			"immune": [
@@ -2170,69 +2290,78 @@
 				"poisoned"
 			],
 			"languages": [
-				"Common",
-				"Forsaken",
-				"Orcish"
+				"通用语",
+				"被遗忘者语",
+				"兽人语"
 			],
 			"cr": "20",
 			"trait": [
 				{
-					"name": "Legendary Resistance (4/Day)",
+					"ENG_name": "Legendary Resistance (4/Day)",
+					"name": "传奇抗性（4/日）",
 					"entries": [
-						"If Putricide fails a saving throw, he can choose to succeed instead."
+						"普崔塞德豁免失败时，可以将其改为豁免成功。"
 					]
 				},
 				{
-					"name": "Magic Resistance",
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
 					"entries": [
-						"Putricide has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects."
+						"普崔塞德对抗法术和其他魔法效应时进行的豁免检定具有{@variantrule 优势|XPHB}。"
 					]
 				},
 				{
-					"name": "Unstable Mutation (1/Day)",
+					"ENG_name": "Unstable Mutation (1/Day)",
+					"name": "不稳定突变（1/日）",
 					"entries": [
-						"When Putricide is reduced to 0 {@variantrule Hit Points|XPHB}, his current {@variantrule Hit Points|XPHB|Hit Point} total instead resets to 299 {@variantrule Hit Points|XPHB}, and he regains any expended uses of Legendary Resistance. Additionally, he sprouts two additional arms from his back, loses access to the actions below, and gains access to the actions in \"{@creature Professor Putricide, Phase 2|ICC|Actions\u2014Phase 2}\". Award the characters an additional 25,000 XP for defeating Professor Putricide after Unstable Mutation activates (50,000 XP total)."
+						"当普崔塞德被降至0{@variantrule 生命值|XPHB}时，其当前{@variantrule 生命值|XPHB|生命值}总数重置为299{@variantrule 生命值|XPHB}，且其恢复传奇抗性的所有已消耗使用次数。此外，其背后长出两条额外的手臂，失去以下动作的使用权，并获得\"{@creature 普崔塞德教授（阶段二）|ICC|动作\u2014\u2014阶段二}\"中动作的使用权。在不稳定突变触发后击败普崔塞德教授，授予角色额外25,000 XP（总计50,000 XP）。"
 					]
 				}
 			],
 			"action": [
 				{
-					"name": "Multiattack",
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
 					"entries": [
-						"Professor Putricide makes two Thrash attacks and uses Spawn Volatile Ooze or Spawn Gas Cloud if available."
+						"普崔塞德教授发动两次猛砸攻击，并在可用时使用生成不稳定的软泥怪或生成毒气之云。"
 					]
 				},
 				{
-					"name": "Thrash",
+					"ENG_name": "Thrash",
+					"name": "猛砸",
 					"entries": [
-						"{@atkr m} {@hit 12}, reach 5 ft. {@h}19 ({@damage 2d12 + 6}) Slashing damage."
+						"{@atkr m} 命中{@hit 12}，触及5尺。{@h}19（{@damage 2d12 + 6}）挥砍伤害。"
 					]
 				},
 				{
-					"name": "Spawn Volatile Ooze (Recharges When a Gas Cloud Is Destroyed)",
+					"ENG_name": "Spawn Volatile Ooze (Recharges When a Gas Cloud Is Destroyed)",
+					"name": "生成不稳定的软泥怪（在毒气之云被摧毁时恢复）",
 					"entries": [
-						"Putricide creates a volatile ooze\u2014a Small object with AC 9; HP 90; and {@variantrule Resistance|XPHB} to Acid, Cold, and Fire damage\u2014in an unoccupied space he can see within 15 feet of himself. The ooze targets a random enemy within 60 feet of itself; the target is cursed until the ooze is destroyed. A cursed creature's {@variantrule Speed|XPHB} becomes 0. At the end of Putricide's turn, the cursed creature takes 35 ({@damage 10d6}) Acid damage, and the ooze moves 10 feet straight toward it. When the ooze enters a space within 5 feet of the cursed creature, it releases a spray of acid, creating the following effect. {@actSave dex} {@dc 20}, each creature in a 20-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the ooze. {@actSaveFail} 78 ({@damage 12d12}) Acid damage, and the target is pushed 10 feet directly away from the ooze. {@actSaveSuccess} Half damage only. {@actSaveSuccessOrFail} The ooze curses a new random enemy within 60 feet of itself and repeats this process until it is destroyed."
+						"普崔塞德创造一团不稳定的软泥怪\u2014\u2014一个AC 9、HP 90，且对强酸、寒冷和火焰伤害具有{@variantrule 抗性|XPHB}的小型物件\u2014\u2014置于其15尺内可见的一处未占据空间中。该软泥怪选定其60尺内的一名随机敌人；该目标被诅咒，直至软泥怪被摧毁。被诅咒生物的{@variantrule 速度|XPHB}变为0。在普崔塞德的回合结束时，被诅咒的生物受到35（{@damage 10d6}）强酸伤害，且软泥怪向其直线移动10尺。当软泥怪进入被诅咒生物5尺内的空间时，其释放一阵酸液喷溅，产生以下效应。{@actSave dex} {@dc 20}，源自软泥怪的20尺{@variantrule 光环 [效应区域]|XPHB|光环}区域内的每名生物。{@actSaveFail} 78（{@damage 12d12}）强酸伤害，且目标被软泥怪直线推离10尺。{@actSaveSuccess} 仅半伤。{@actSaveSuccessOrFail} 软泥怪诅咒其60尺内的一名新的随机敌人并重复此过程，直至其被摧毁。"
 					]
 				},
 				{
-					"name": "Spawn Gas Cloud (Recharges When a Volatile Ooze Is Destroyed)",
+					"ENG_name": "Spawn Gas Cloud (Recharges When a Volatile Ooze Is Destroyed)",
+					"name": "生成毒气之云（在不稳定的软泥怪被摧毁时恢复）",
 					"entries": [
-						"Putricide creates a gas cloud\u2014a Small object with AC 9, HP 45, and {@variantrule Resistance|XPHB} to all damage\u2014in an unoccupied space within 15 feet of himself. The cloud targets a random enemy within 60 feet of itself; the target is cursed until the cloud is destroyed. At the end of Putricide's turn, the cursed creature takes 56 ({@damage 16d6}) Poison damage, and the cloud moves 10 feet straight toward it. This Poison damage is reduced by 7 ({@dice 2d6}) each round after the first, to a minimum of 7 ({@dice 2d6}). When the cloud enters a space within 5 feet of the cursed creature, it releases a toxic spray, creating the following effect. {@actSave dex} {@dc 20}, each creature in a 120-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the cloud. {@actSaveFail} 10 Poison damage for each {@damage d6} of damage the cursed creature took this round. {@actSaveSuccess} Half damage. {@actSaveSuccessOrFail} The cloud curses a new random enemy within 60 feet of itself and repeats this process until it is destroyed."
+						"普崔塞德创造一团毒气之云\u2014\u2014一个AC 9、HP 45，且对所有伤害具有{@variantrule 抗性|XPHB}的小型物件\u2014\u2014置于其15尺内的一处未占据空间中。该毒气之云选定其60尺内的一名随机敌人；该目标被诅咒，直至毒气之云被摧毁。在普崔塞德的回合结束时，被诅咒的生物受到56（{@damage 16d6}）毒素伤害，且毒气之云向其直线移动10尺。从第二轮起，此毒素伤害每轮减少7（{@dice 2d6}），至低为7（{@dice 2d6}）。当毒气之云进入被诅咒生物5尺内的空间时，其释放一阵毒液喷溅，产生以下效应。{@actSave dex} {@dc 20}，源自毒气之云的120尺{@variantrule 光环 [效应区域]|XPHB|光环}区域内的每名生物。{@actSaveFail} 被诅咒生物本轮每受到一骰{@damage d6}的伤害，目标便受到10毒素伤害。{@actSaveSuccess} 半伤。{@actSaveSuccessOrFail} 毒气之云诅咒其60尺内的一名新的随机敌人并重复此过程，直至其被摧毁。"
 					]
 				}
 			],
 			"bonus": [
 				{
-					"name": "Bounding Enthusiasm",
+					"ENG_name": "Bounding Enthusiasm",
+					"name": "蹦跳热情",
 					"entries": [
-						"Putricide moves up to his {@variantrule Speed|XPHB} without provoking {@action Opportunity Attack|XPHB|Opportunity Attacks}."
+						"普崔塞德移动至多等于其{@variantrule 速度|XPHB}的距离，且不会引发{@action 借机攻击|XPHB|借机攻击}。"
 					]
 				},
 				{
-					"name": "Mutated Slime",
+					"ENG_name": "Mutated Slime",
+					"name": "畸变软泥",
 					"entries": [
-						"Putricide hurls a vial of mutated slime to a point on the ground he can see within 60 feet of himself, where it shatters and spreads over the ground in a 5-foot-radius circle. A creature that starts its turn in the area or enters it for the first time on a turn is subjected to the following effect. {@actSave con} {@dc 20}. {@actSaveFail} 44 ({@damage 8d10}) Poison damage. {@actSaveSuccess} Half damage only. A creature makes this save only once per turn.",
-						"The pool lasts for 10 minutes, and at the start of Putricide's turn, the pool expands, increasing its radius by 5 feet (to a maximum of 30 feet)."
+						"普崔塞德将一瓶畸变软泥掷向其60尺内可见的地面一点，瓶子在那里破碎并在地面铺展成一个5尺半径的圆形。在区域内开始其回合或在一回合内首次进入该区域的生物须承受以下效应。{@actSave con} {@dc 20}。{@actSaveFail} 44（{@damage 8d10}）毒素伤害。{@actSaveSuccess} 仅半伤。一名生物每回合仅进行一次此豁免。",
+						"该泥潭持续10分钟，且在普崔塞德的回合开始时，该泥潭扩张，其半径增加5尺（至多30尺）。"
 					]
 				}
 			],
@@ -2267,59 +2396,65 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Professor Putricide, Phase 2",
+			"ENG_name": "Professor Putricide, Phase 2",
+			"name": "普崔塞德教授（阶段二）",
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "ICC",
 			"page": 62,
 			"_copy": {
-				"name": "Professor Putricide, Phase 1",
+				"ENG_name": "Professor Putricide, Phase 1",
+				"name": "普崔塞德教授（阶段一）",
 				"source": "ICC",
 				"_mod": {
 					"trait": {
 						"mode": "removeArr",
-						"names": "Unstable Mutation (1/Day)"
+						"names": "不稳定突变（1/日）"
 					},
 					"action": [
 						{
 							"mode": "replaceArr",
-							"replace": "Multiattack",
+							"replace": "多重攻击",
 							"items": {
-								"name": "Multiattack",
+								"ENG_name": "Multiattack",
+								"name": "多重攻击",
 								"entries": [
-									"Professor Putricide makes four Thrash attacks."
+									"普崔塞德教授发动四次猛砸攻击。"
 								]
 							}
 						},
 						{
 							"mode": "removeArr",
 							"names": [
-								"Spawn Volatile Ooze (Recharges When a Gas Cloud Is Destroyed)",
-								"Spawn Gas Cloud (Recharges When a Volatile Ooze Is Destroyed)"
+								"生成不稳定的软泥怪（在毒气之云被摧毁时恢复）",
+								"生成毒气之云（在不稳定的软泥怪被摧毁时恢复）"
 							]
 						},
 						{
 							"mode": "appendArr",
 							"items": {
-								"name": "Alchemical Assault {@recharge 4}",
+								"ENG_name": "Alchemical Assault {@recharge 4}",
+								"name": "炼金轰炸{@recharge 4}",
 								"entries": [
-									"Professor Putricide hurls one of the following alchemical substances:",
+									"普崔塞德教授掷出以下一种炼金物质：",
 									{
 										"type": "list",
 										"style": "list-hang-notitle",
 										"items": [
 											{
+												"ENG_name": "Choking Gas Bombs",
+												"name": "窒息毒气弹",
 												"type": "item",
-												"name": "Choking Gas Bombs",
 												"entries": [
-													"Putricide throws three vials that explode at separate points he can see within 60 feet of himself. {@actSave con} {@dc 20}, each creature in a 10-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on the point. {@actSaveFail} 21 ({@damage 6d6}) Poison damage, and the target has the {@condition Poisoned|XPHB} condition until the end of Putricide's next turn. {@actSaveSuccess} Half damage only."
+													"普崔塞德掷出三个瓶子，分别在其60尺内可见的不同地点爆炸。{@actSave con} {@dc 20}，以该地点为中心的10尺半径{@variantrule 球状 [效应区域]|XPHB|球状}区域内的每名生物。{@actSaveFail} 21（{@damage 6d6}）毒素伤害，且目标陷入{@condition 中毒|XPHB}状态，直至普崔塞德的下个回合结束。{@actSaveSuccess} 仅半伤。"
 												]
 											},
 											{
+												"ENG_name": "Malleable Goo",
+												"name": "可延展黏液",
 												"type": "item",
-												"name": "Malleable Goo",
 												"entries": [
-													"Putricide hurls rubbery goo. {@atkr r} {@hit 12}, range 60 ft. {@h}19 ({@damage 3d8 + 6}) Acid damage, and the target can take only an action or a {@variantrule Bonus Action|XPHB} on its next turn, not both. {@hom} The goo bounces to another target within 60 feet of the previous one, repeating the attack until it has hit or missed three times."
+													"普崔塞德掷出黏弹的软泥。{@atkr r} 命中{@hit 12}，射程60尺。{@h}19（{@damage 3d8 + 6}）强酸伤害，且目标在其下个回合仅可以执行一个动作或一个{@variantrule 附赠动作|XPHB}，但不能同时执行二者。{@hom} 该软泥弹跳至前一个目标60尺内的另一目标，重复此攻击直至其命中或失手三次。"
 												]
 											}
 										]
@@ -2345,13 +2480,14 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Pustulating Horror",
+			"ENG_name": "Pustulating Horror",
+			"name": "毒脓恐魔",
+			"type": "undead",
 			"source": "ICC",
 			"page": 64,
 			"size": [
 				"H"
 			],
-			"type": "undead",
 			"alignment": [
 				"N",
 				"E"
@@ -2373,7 +2509,7 @@
 			"wis": 8,
 			"cha": 5,
 			"senses": [
-				"Darkvision 60 ft."
+				"黑暗视觉 60 尺"
 			],
 			"passive": 9,
 			"immune": [
@@ -2384,40 +2520,45 @@
 				"poisoned"
 			],
 			"languages": [
-				"understands Forsaken and Giant but can't speak"
+				"理解被遗忘者语和巨人语，但不会说"
 			],
 			"cr": "7",
 			"trait": [
 				{
-					"name": "Blight Bomb",
+					"ENG_name": "Blight Bomb",
+					"name": "凋零炸弹",
 					"entries": [
-						"The horror explodes when it dies. {@actSave con} {@dc 15}, each creature in a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the horror. {@actSaveFail} 28 ({@damage 8d6}) Fire damage. {@actSaveSuccess} Half damage."
+						"该恐魔在死亡时爆炸。{@actSave con} {@dc 15}，源自该恐魔的15尺{@variantrule 光环 [效应区域]|XPHB|光环}区域内的每名生物。{@actSaveFail} 28（{@damage 8d6}）火焰伤害。{@actSaveSuccess} 半伤。"
 					]
 				},
 				{
-					"name": "Pestilent Pustules",
+					"ENG_name": "Pestilent Pustules",
+					"name": "瘟疫脓疱",
 					"entries": [
-						"A creature that hits the horror with a melee attack roll takes 7 ({@damage 2d6}) Poison damage."
+						"以近战攻击检定命中该恐魔的生物受到7（{@damage 2d6}）毒素伤害。"
 					]
 				}
 			],
 			"action": [
 				{
-					"name": "Multiattack",
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
 					"entries": [
-						"The horror makes two Slam attacks and uses Spit Plague."
+						"该恐魔发动两次猛击攻击并使用喷吐瘟疫。"
 					]
 				},
 				{
-					"name": "Slam",
+					"ENG_name": "Slam",
+					"name": "猛击",
 					"entries": [
-						"{@atkr m} {@hit 7}, reach 10 ft. {@h}13 ({@damage 2d8 + 4}) Bludgeoning damage."
+						"{@atkr m} 命中{@hit 7}，触及10尺。{@h}13（{@damage 2d8 + 4}）钝击伤害。"
 					]
 				},
 				{
-					"name": "Spit Plague",
+					"ENG_name": "Spit Plague",
+					"name": "喷吐瘟疫",
 					"entries": [
-						"{@actSave dex} {@dc 15}, one creature the horror can see within 30 feet. {@actSaveFail} 10 ({@damage 3d6}) Poison damage, and the target has the {@condition Poisoned|XPHB} condition until the end of its next turn."
+						"{@actSave dex} {@dc 15}，该恐魔30尺内可见的单一生物。{@actSaveFail} 10（{@damage 3d6}）毒素伤害，且目标陷入{@condition 中毒|XPHB}状态，直至其下个回合结束。"
 					]
 				}
 			],
@@ -2455,7 +2596,9 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Rotface",
+			"ENG_name": "Rotface",
+			"name": "腐面",
+			"type": "construct",
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "ICC",
@@ -2463,7 +2606,6 @@
 			"size": [
 				"H"
 			],
-			"type": "construct",
 			"alignment": [
 				"N",
 				"E"
@@ -2488,7 +2630,7 @@
 			"wis": 12,
 			"cha": 10,
 			"senses": [
-				"Darkvision 60 ft."
+				"黑暗视觉 60 尺"
 			],
 			"passive": 11,
 			"immune": [
@@ -2504,51 +2646,57 @@
 				"poisoned"
 			],
 			"languages": [
-				"Common",
-				"Forsaken",
-				"Orcish"
+				"通用语",
+				"被遗忘者语",
+				"兽人语"
 			],
 			"cr": "17",
 			"trait": [
 				{
-					"name": "Legendary Resistance (4/Day)",
+					"ENG_name": "Legendary Resistance (4/Day)",
+					"name": "传奇抗性（4/日）",
 					"entries": [
-						"If Rotface fails a saving throw, it can choose to succeed instead."
+						"腐面豁免失败时，可以将其改为豁免成功。"
 					]
 				},
 				{
-					"name": "Ooze Flood",
+					"ENG_name": "Ooze Flood",
+					"name": "软泥洪流",
 					"entries": [
-						"Acidic slime drips from the vats in Rotface's room, creating a growing pool on the floor. At the start of Rotface's first turn during each combat, the pool's area is a 10-foot-radius circle centered on a point along one of the room's walls. At the start of each of Rotface's turns, the area's radius expands by 5 feet. A creature that enters the area for the first time on a turn or starts its turn there takes 10 ({@damage 3d6}) Acid damage, and its {@variantrule Speed|XPHB} is reduced by 10 feet until the start of its next turn."
+						"酸性软泥从腐面房间中的大桶里滴落，在地面形成一滩不断扩大的泥潭。在每场战斗中腐面的首个回合开始时，该泥潭的区域是一个以房间某面墙上一点为中心的10尺半径圆形。在腐面每个回合开始时，该区域的半径扩大5尺。在一回合内首次进入该区域或在该区域内开始其回合的生物受到10（{@damage 3d6}）强酸伤害，且直至其下个回合开始，其{@variantrule 速度|XPHB}减少10尺。"
 					]
 				}
 			],
 			"action": [
 				{
-					"name": "Multiattack",
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
 					"entries": [
-						"Rotface makes two Claw attacks and uses Slime Spray."
+						"腐面发动两次爪击攻击并使用软泥喷射。"
 					]
 				},
 				{
-					"name": "Claw",
+					"ENG_name": "Claw",
+					"name": "爪击",
 					"entries": [
-						"{@atkr m} {@hit 12}, reach 10 ft. {@h}39 ({@damage 6d10 + 6}) Slashing damage plus 14 ({@damage 4d6}) Acid damage."
+						"{@atkr m} 命中{@hit 12}，触及10尺。{@h}39（{@damage 6d10 + 6}）挥砍伤害外加14（{@damage 4d6}）强酸伤害。"
 					]
 				},
 				{
-					"name": "Slime Spray",
+					"ENG_name": "Slime Spray",
+					"name": "软泥喷射",
 					"entries": [
-						"{@actSave dex} {@dc 20}, each creature in a 60-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} 26 ({@damage 4d12}) Acid damage. The creature takes the damage again at the start of each of its turns until the slime is scraped off (requiring an action). {@actSaveSuccess} Half damage only."
+						"{@actSave dex} {@dc 20}，60尺{@variantrule 锥状 [效应区域]|XPHB|锥状}区域内的每名生物。{@actSaveFail} 26（{@damage 4d12}）强酸伤害。该生物在其每个回合开始时再次受到该伤害，直至软泥被刮除（需要一个动作）。{@actSaveSuccess} 仅半伤。"
 					]
 				}
 			],
 			"bonus": [
 				{
-					"name": "Mutated Infection {@recharge 5}",
+					"ENG_name": "Mutated Infection {@recharge 5}",
+					"name": "畸变感染{@recharge 5}",
 					"entries": [
-						"{@actSave con} {@dc 20}, one creature Rotface can see within 60 feet. {@actSaveFail} The target has the {@condition Poisoned|XPHB} condition. While {@condition Poisoned|XPHB}, the target can't regain {@variantrule Hit Points|XPHB} and takes 21 ({@damage 6d6}) Acid damage at the start of each of its turns, and it repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.",
-						"When the {@condition Poisoned|XPHB} condition on the target ends, a {@creature Plagueworks Ooze|ICC} is created in an unoccupied space within 5 feet of the creature. The ooze takes its turn immediately after Rotface on the same {@variantrule Initiative|XPHB} count. The ooze fights until destroyed."
+						"{@actSave con} {@dc 20}，腐面60尺内可见的单一生物。{@actSaveFail} 目标陷入{@condition 中毒|XPHB}状态。处于{@condition 中毒|XPHB}状态期间，目标无法恢复{@variantrule 生命值|XPHB}，且在其每个回合开始时受到21（{@damage 6d6}）强酸伤害，并在其每个回合结束时重复豁免，成功则终止其身上的该效应。1分钟后，其豁免自动成功。",
+						"当目标身上的{@condition 中毒|XPHB}状态终止时，在该生物5尺内的一处未占据空间中生成一团{@creature 天灾工厂软泥怪|ICC}。该软泥怪在腐面之后立即以相同的{@variantrule 先攻|XPHB}顺位行动。该软泥怪战斗直至被摧毁。"
 					]
 				}
 			],
@@ -2584,19 +2732,20 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Servant of the Throne",
+			"ENG_name": "Servant of the Throne",
+			"name": "王座仆从",
+			"type": {
+				"type": "undead",
+				"tags": [
+					"巫妖",
+					"法师"
+				]
+			},
 			"source": "ICC",
 			"page": 65,
 			"size": [
 				"L"
 			],
-			"type": {
-				"type": "undead",
-				"tags": [
-					"lich",
-					"wizard"
-				]
-			},
 			"alignment": [
 				"L",
 				"E"
@@ -2628,7 +2777,7 @@
 				"perception": "+6"
 			},
 			"senses": [
-				"Darkvision 120 ft."
+				"黑暗视觉 120 尺"
 			],
 			"passive": 16,
 			"resist": [
@@ -2646,45 +2795,47 @@
 				"poisoned"
 			],
 			"languages": [
-				"Common",
-				"Forsaken",
-				"Orcish"
+				"通用语",
+				"被遗忘者语",
+				"兽人语"
 			],
 			"cr": "12",
 			"spellcasting": [
 				{
-					"name": "Spellcasting",
+					"ENG_name": "Spellcasting",
+					"name": "施法",
 					"type": "spellcasting",
 					"headerEntries": [
-						"The servant casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 17}):"
+						"王座仆从施展以下一道法术，使用智力作为施法属性（法术豁免{@dc 17}）："
 					],
 					"will": [
-						"{@spell Detect Magic|XPHB}",
-						"{@spell Detect Thoughts|XPHB}",
-						"{@spell Light|XPHB}",
-						"{@spell Mage Hand|XPHB}",
-						"{@spell Prestidigitation|XPHB}"
+						"{@spell 侦测魔法|XPHB}",
+						"{@spell 侦测思想|XPHB}",
+						"{@spell 光亮术|XPHB}",
+						"{@spell 法师之手|XPHB}",
+						"{@spell 魔法伎俩|XPHB}"
 					],
 					"daily": {
 						"1e": [
-							"{@spell Cone of Cold|XPHB} (level 9 version)",
-							"{@spell Fly|XPHB}",
-							"{@spell Scrying|XPHB}",
-							"{@spell Teleport|XPHB}"
+							"{@spell 寒冰锥|XPHB}（九环版本）",
+							"{@spell 飞行术|XPHB}",
+							"{@spell 探知术|XPHB}",
+							"{@spell 传送术|XPHB}"
 						]
 					},
 					"ability": "int",
 					"displayAs": "action"
 				},
 				{
-					"name": "Misty Step (3/Day)",
+					"ENG_name": "Misty Step (3/Day)",
+					"name": "迷踪步 (3/日)",
 					"type": "spellcasting",
 					"headerEntries": [
-						"The servant casts {@spell Misty Step|XPHB}, using the same spellcasting ability as Spellcasting."
+						"王座仆从施展{@spell 迷踪步|XPHB}，使用与施法动作相同的施法属性。"
 					],
 					"daily": {
 						"3": [
-							"{@spell Misty Step|XPHB}"
+							"{@spell 迷踪步|XPHB}"
 						]
 					},
 					"ability": "int",
@@ -2694,14 +2845,15 @@
 					]
 				},
 				{
-					"name": "Protective Magic",
+					"ENG_name": "Protective Magic",
+					"name": "护身魔法",
 					"type": "spellcasting",
 					"headerEntries": [
-						"The servant casts {@spell Counterspell|XPHB} or {@spell Shield|XPHB} in response to the spell's trigger, using the same spellcasting ability as Spellcasting."
+						"王座仆从施展{@spell 法术反制|XPHB}或{@spell 护盾术|XPHB}以响应该法术的触发条件，使用与施法动作相同的施法属性。"
 					],
 					"will": [
-						"{@spell Counterspell|XPHB}",
-						"{@spell Shield|XPHB}"
+						"{@spell 法术反制|XPHB}",
+						"{@spell 护盾术|XPHB}"
 					],
 					"ability": "int",
 					"displayAs": "reaction",
@@ -2712,23 +2864,26 @@
 			],
 			"trait": [
 				{
-					"name": "Magic Resistance",
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
 					"entries": [
-						"The servant has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects."
+						"王座仆从对抗法术和其他魔法效应时进行的豁免检定具有{@variantrule 优势|XPHB}。"
 					]
 				}
 			],
 			"action": [
 				{
-					"name": "Multiattack",
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
 					"entries": [
-						"The servant makes three Icy Burst attacks."
+						"王座仆从发动三次寒冰迸发攻击。"
 					]
 				},
 				{
-					"name": "Icy Burst",
+					"ENG_name": "Icy Burst",
+					"name": "寒冰迸发",
 					"entries": [
-						"{@atkr m,r} {@hit 9}, reach 5 ft. or range 120 ft. {@h}27 ({@damage 4d10 + 5}) Cold damage."
+						"{@atkr m,r} 命中{@hit 9}，触及5尺或射程120尺。{@h}27（{@damage 4d10 + 5}）寒冷伤害。"
 					]
 				}
 			],
@@ -2766,7 +2921,9 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Sindragosa",
+			"ENG_name": "Sindragosa",
+			"name": "辛达苟萨",
+			"type": "undead",
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "ICC",
@@ -2774,7 +2931,6 @@
 			"size": [
 				"G"
 			],
-			"type": "undead",
 			"alignment": [
 				"L",
 				"E"
@@ -2808,8 +2964,8 @@
 				"stealth": "+7"
 			},
 			"senses": [
-				"Blindsight 60 ft.",
-				"Darkvision 120 ft."
+				"盲视 60 尺",
+				"黑暗视觉 120 尺"
 			],
 			"passive": 26,
 			"immune": [
@@ -2825,22 +2981,23 @@
 				"poisoned"
 			],
 			"languages": [
-				"Common",
-				"Draconic (WoW)",
-				"Forsaken",
-				"Orcish"
+				"通用语",
+				"龙语",
+				"被遗忘者语",
+				"兽人语"
 			],
 			"cr": "23",
 			"spellcasting": [
 				{
-					"name": "Unchained Magic (2/Day)",
+					"ENG_name": "Unchained Magic (2/Day)",
+					"name": "狂咒（2/日）",
 					"type": "spellcasting",
 					"headerEntries": [
-						"Sindragosa casts {@spell Counterspell|XPHB} in response to the spell's trigger, using Charisma as the spellcasting ability (save {@dc 20}). If the target fails the save against the spell, it takes 13 ({@damage 2d12}) Psychic damage."
+						"辛达苟萨施展{@spell 法术反制|XPHB}以响应该法术的触发条件，使用魅力作为施法属性（豁免{@dc 20}）。若目标对抗该法术的豁免失败，其受到13（{@damage 2d12}）心灵伤害。"
 					],
 					"daily": {
 						"2": [
-							"{@spell Counterspell|XPHB}"
+							"{@spell 法术反制|XPHB}"
 						]
 					},
 					"ability": "cha",
@@ -2852,76 +3009,87 @@
 			],
 			"trait": [
 				{
-					"name": "Legendary Resistance (4/Day)",
+					"ENG_name": "Legendary Resistance (4/Day)",
+					"name": "传奇抗性（4/日）",
 					"entries": [
-						"If Sindragosa fails a saving throw, she can choose to succeed instead."
+						"辛达苟萨豁免失败时，可以将其改为豁免成功。"
 					]
 				},
 				{
-					"name": "Life Suppression",
+					"ENG_name": "Life Suppression",
+					"name": "生机抑止",
 					"entries": [
-						"Creatures within 60 feet of Sindragosa can't regain {@variantrule Hit Points|XPHB}."
+						"辛达苟萨60尺内的生物无法恢复{@variantrule 生命值|XPHB}。"
 					]
 				},
 				{
-					"name": "Magic Resistance",
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
 					"entries": [
-						"Sindragosa has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects."
+						"辛达苟萨对抗法术和其他魔法效应时进行的豁免检定具有{@variantrule 优势|XPHB}。"
 					]
 				}
 			],
 			"action": [
 				{
-					"name": "Multiattack",
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
 					"entries": [
-						"Sindragosa makes three attacks, using Rend or Icy Grip in any combination."
+						"辛达苟萨使用撕裂或冰冷之握发动共计三次攻击。"
 					]
 				},
 				{
-					"name": "Rend",
+					"ENG_name": "Rend",
+					"name": "撕裂",
 					"entries": [
-						"{@atkr m} {@hit 14}, reach 10 ft. {@h}18 ({@damage 2d10 + 7}) Slashing damage plus 4 ({@damage 1d8}) Cold damage."
+						"{@atkr m} 命中{@hit 14}，触及10尺。{@h}18（{@damage 2d10 + 7}）挥砍伤害外加4（{@damage 1d8}）寒冷伤害。"
 					]
 				},
 				{
-					"name": "Icy Grip",
+					"ENG_name": "Icy Grip",
+					"name": "冰结之握",
 					"entries": [
-						"{@atkr r} {@hit 12}, range 60 ft. {@h}21 ({@damage 6d6}) Cold damage, and the target is pulled up to 40 feet straight toward Sindragosa."
+						"{@atkr r} 命中{@hit 12}，射程60尺。{@h}21（{@damage 6d6}）寒冷伤害，且目标被辛达苟萨直线拉近至多40尺。"
 					]
 				},
 				{
-					"name": "Frost Breath {@recharge 5}",
+					"ENG_name": "Frost Breath {@recharge 5}",
+					"name": "冰霜吐息{@recharge 5}",
 					"entries": [
-						"{@actSave con} {@dc 22}, each creature in a 60-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} 52 ({@damage 8d12}) Cold damage, and the target has the {@condition Restrained|XPHB} condition until the end of Sindragosa's next turn. {@actSaveSuccess} Half damage only."
+						"{@actSave con} {@dc 22}，60尺{@variantrule 锥状 [效应区域]|XPHB|锥状}区域内的每名生物。{@actSaveFail} 52（{@damage 8d12}）寒冷伤害，且目标陷入{@condition 束缚|XPHB}状态，直至辛达苟萨的下个回合结束。{@actSaveSuccess} 仅半伤。"
 					]
 				},
 				{
-					"name": "Ice Tombs (1/Day, Usable Only While Bloodied)",
+					"ENG_name": "Ice Tombs (1/Day, Usable Only While Bloodied)",
+					"name": "寒冰坟墓（1/日，仅在其浴血时可用）",
 					"entries": [
-						"{@actSave con} {@dc 22}, each of two creatures Sindragosa can see within 60 feet. {@actSaveFail} 27 ({@damage 6d8}) Cold damage, and the target is entombed in ice. {@actSaveSuccess} Half damage only.",
-						"An entombed creature is suffocating, has the {@condition Restrained|XPHB} and {@condition Stunned|XPHB} conditions, has {@variantrule Cover|XPHB|Total Cover} against attacks and other effects outside the tomb, and takes 24 ({@damage 7d6}) Cold damage at the start of each of its turns. The ice tomb is a Large object with AC 13; HP 27; and {@variantrule Immunity|XPHB} to Cold, Poison, and Psychic damage. Breaking the tomb ends the effect on an entombed creature."
+						"{@actSave con} {@dc 22}，辛达苟萨60尺内可见的两名生物。{@actSaveFail} 27（{@damage 6d8}）寒冷伤害，且目标被封入冰墓。{@actSaveSuccess} 仅半伤。",
+						"被封入冰墓的生物正在窒息，陷入{@condition 束缚|XPHB}和{@condition 震慑|XPHB}状态，对墓外的攻击和其他效应而言处于{@variantrule 掩护|XPHB|全身掩护}，且在其每个回合开始时受到24（{@damage 7d6}）寒冷伤害。冰墓是一个大型物件，具有AC 13、HP 27，且{@variantrule 免疫|XPHB}寒冷、毒素和心灵伤害。打破冰墓将终止被封入冰墓的生物身上的该效应。"
 					]
 				}
 			],
 			"bonus": [
 				{
-					"name": "Blistering Cold",
+					"ENG_name": "Blistering Cold",
+					"name": "严寒",
 					"entries": [
-						"{@actSave con} {@dc 22}, each creature in a 20-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation}. {@actSaveFail} 19 ({@damage 3d12}) Cold damage."
+						"{@actSave con} {@dc 22}，20尺{@variantrule 光环 [效应区域]|XPHB|光环}区域内的每名生物。{@actSaveFail} 19（{@damage 3d12}）寒冷伤害。"
 					]
 				}
 			],
 			"legendary": [
 				{
-					"name": "Pounce",
+					"ENG_name": "Pounce",
+					"name": "猛扑",
 					"entries": [
-						"Sindragosa moves up to half her {@variantrule Speed|XPHB}, and she makes one Rend or Icy Grip attack."
+						"辛达苟萨移动至多等于其{@variantrule 速度|XPHB}一半的距离，并发动一次撕裂或冰冷之握攻击。"
 					]
 				},
 				{
-					"name": "Terrifying Roar",
+					"ENG_name": "Terrifying Roar",
+					"name": "恐惧咆哮",
 					"entries": [
-						"{@actSave wis} {@dc 20}, each creature in a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from Sindragosa. {@actSaveFail} 11 ({@damage 2d10}) Psychic damage, and the target has the {@condition Frightened|XPHB} condition until the end of its next turn. {@actSaveSuccessOrFail} Sindragosa can't take this action again until the start of her next turn."
+						"{@actSave wis} {@dc 20}，源自辛达苟萨的30尺{@variantrule 光环 [效应区域]|XPHB|光环}区域内的每名生物。{@actSaveFail} 11（{@damage 2d10}）心灵伤害，且目标陷入{@condition 恐慌|XPHB}状态，直至其下个回合结束。{@actSaveSuccessOrFail} 辛达苟萨直至其下个回合开始都无法再执行此动作。"
 					]
 				}
 			],
@@ -2971,7 +3139,14 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Sister Svalna",
+			"ENG_name": "Sister Svalna",
+			"name": "女武神席瓦娜",
+			"type": {
+				"type": "undead",
+				"tags": [
+					"天使"
+				]
+			},
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "ICC",
@@ -2979,12 +3154,6 @@
 			"size": [
 				"L"
 			],
-			"type": {
-				"type": "undead",
-				"tags": [
-					"angel"
-				]
-			},
 			"alignment": [
 				"L",
 				"E"
@@ -3000,7 +3169,7 @@
 				"walk": 40,
 				"fly": {
 					"number": 120,
-					"condition": "(hover)"
+					"condition": "(悬浮)"
 				},
 				"canHover": true
 			},
@@ -3023,7 +3192,7 @@
 				"perception": "+11"
 			},
 			"senses": [
-				"Truesight 120 ft."
+				"真实视觉 120 尺"
 			],
 			"passive": 21,
 			"resist": [
@@ -3035,23 +3204,24 @@
 				"frightened"
 			],
 			"languages": [
-				"all; telepathy 120 ft."
+				"全部; 心灵感应 120 尺"
 			],
 			"cr": "16",
 			"spellcasting": [
 				{
-					"name": "Spellcasting",
+					"ENG_name": "Spellcasting",
+					"name": "施法",
 					"type": "spellcasting",
 					"headerEntries": [
-						"Sister Svalna casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability:"
+						"女武神席瓦娜施展以下一道法术，无需材料成分并使用魅力作为施法属性："
 					],
 					"will": [
-						"{@spell Detect Evil and Good|XPHB}"
+						"{@spell 侦测善恶|XPHB}"
 					],
 					"daily": {
 						"1e": [
-							"{@spell Commune|XPHB}",
-							"{@spell Create Undead|XPHB} (usable at any hour of the day)"
+							"{@spell 通神术|XPHB}",
+							"{@spell 唤起死灵|XPHB}（可在一天中的任何时刻使用）"
 						]
 					},
 					"ability": "cha",
@@ -3060,29 +3230,33 @@
 			],
 			"trait": [
 				{
-					"name": "Magic Resistance",
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
 					"entries": [
-						"Sister Svalna has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects."
+						"女武神席瓦娜对抗法术和其他魔法效应时进行的豁免检定具有{@variantrule 优势|XPHB}。"
 					]
 				}
 			],
 			"action": [
 				{
-					"name": "Multiattack",
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
 					"entries": [
-						"Sister Svalna makes three Bone Spear attacks or uses Divine Surge twice."
+						"女武神席瓦娜发动三次骨矛攻击，或使用两次神圣涌动。"
 					]
 				},
 				{
-					"name": "Bone Spear",
+					"ENG_name": "Bone Spear",
+					"name": "骨矛",
 					"entries": [
-						"{@atkr m,r} {@hit 12}, reach 10 ft. or range 60/120 ft. {@h}14 ({@damage 2d6 + 7}) Piercing damage plus 18 ({@damage 4d8}) Cold damage."
+						"{@atkr m,r} 命中{@hit 12}，触及10尺或射程60/120尺。{@h}14（{@damage 2d6 + 7}）穿刺伤害外加18（{@damage 4d8}）寒冷伤害。"
 					]
 				},
 				{
-					"name": "Divine Surge",
+					"ENG_name": "Divine Surge",
+					"name": "神圣涌动",
 					"entries": [
-						"{@actSave dex} {@dc 20}, each enemy in a 20-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on a point Sister Svalna can see within 120 feet. {@actSaveFail} 24 ({@damage 7d6}) Necrotic damage. {@actSaveSuccess} Half damage."
+						"{@actSave dex} {@dc 20}，以女武神席瓦娜120尺内可见的一点为中心的20尺半径{@variantrule 球状 [效应区域]|XPHB|球状}区域内的每名敌人。{@actSaveFail} 24（{@damage 7d6}）暗蚀伤害。{@actSaveSuccess} 半伤。"
 					]
 				}
 			],
@@ -3122,13 +3296,14 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "The Damned",
+			"ENG_name": "The Damned",
+			"name": "被诅咒者",
+			"type": "undead",
 			"source": "ICC",
 			"page": 68,
 			"size": [
 				"L"
 			],
-			"type": "undead",
 			"alignment": [
 				"N",
 				"E"
@@ -3159,7 +3334,7 @@
 				"stealth": "+7"
 			},
 			"senses": [
-				"Darkvision 120 ft."
+				"黑暗视觉 120 尺"
 			],
 			"passive": 16,
 			"resist": [
@@ -3177,42 +3352,47 @@
 				"poisoned"
 			],
 			"languages": [
-				"understands Forsaken but can't speak"
+				"理解被遗忘者语，但不会说"
 			],
 			"cr": "12",
 			"trait": [
 				{
-					"name": "Blood Frenzy",
+					"ENG_name": "Blood Frenzy",
+					"name": "血腥狂怒",
 					"entries": [
-						"The Damned has {@variantrule Advantage|XPHB} on attack rolls against any creature that doesn't have all its {@variantrule Hit Points|XPHB}."
+						"被诅咒者对{@variantrule 生命值|XPHB}未满的生物进行攻击检定时具有{@variantrule 优势|XPHB}。"
 					]
 				},
 				{
-					"name": "Shattered Bones",
+					"ENG_name": "Shattered Bones",
+					"name": "碎骨爆裂",
 					"entries": [
-						"The Damned explodes when it dies. {@actSave con} {@dc 15}, each creature in a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the Damned. {@actSaveFail} 32 ({@damage 5d12}) Necrotic damage. {@actSaveSuccess} Half damage."
+						"被诅咒者在死亡时爆炸。{@actSave con} {@dc 15}，源自被诅咒者的15尺{@variantrule 光环 [效应区域]|XPHB|光环}区域内的每名生物。{@actSaveFail} 32（{@damage 5d12}）暗蚀伤害。{@actSaveSuccess} 半伤。"
 					]
 				}
 			],
 			"action": [
 				{
-					"name": "Multiattack",
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
 					"entries": [
-						"The Damned makes two Scything Claw attacks."
+						"被诅咒者发动两次镰爪攻击。"
 					]
 				},
 				{
-					"name": "Scything Claw",
+					"ENG_name": "Scything Claw",
+					"name": "镰爪",
 					"entries": [
-						"{@atkr m} {@hit 9}, reach 15 ft. {@h}21 ({@damage 3d10 + 5}) Slashing damage plus 9 ({@damage 2d8}) Necrotic damage."
+						"{@atkr m} 命中{@hit 9}，触及15尺。{@h}21（{@damage 3d10 + 5}）挥砍伤害外加9（{@damage 2d8}）暗蚀伤害。"
 					]
 				}
 			],
 			"reaction": [
 				{
-					"name": "Deadly Reach",
+					"ENG_name": "Deadly Reach",
+					"name": "死亡触及",
 					"entries": [
-						"{@actTrigger} A creature enters a space within 15 feet of the Damned. {@actResponse} The Damned makes one Scything Claw attack against the triggering creature."
+						"{@actTrigger} 一名生物进入被诅咒者15尺内的空间。{@actResponse} 被诅咒者对触发生物发动一次镰爪攻击。"
 					]
 				}
 			],
@@ -3244,7 +3424,15 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Tirion Fordring",
+			"ENG_name": "Tirion Fordring",
+			"name": "提里奥·弗丁",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类",
+					"圣武士"
+				]
+			},
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "ICC",
@@ -3252,13 +3440,6 @@
 			"size": [
 				"M"
 			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"human",
-					"paladin"
-				]
-			},
 			"alignment": [
 				"L",
 				"G"
@@ -3300,28 +3481,29 @@
 				"frightened"
 			],
 			"languages": [
-				"Common",
-				"Dwarven",
-				"Orcish"
+				"通用语",
+				"矮人语",
+				"兽人语"
 			],
 			"cr": "15",
 			"gear": [
-				"ashbringer|wow",
-				"plate armor|xphb"
+				"灰烬使者|wow",
+				"板甲|xphb"
 			],
 			"spellcasting": [
 				{
-					"name": "Spellcasting",
+					"ENG_name": "Spellcasting",
+					"name": "施法",
 					"type": "spellcasting",
 					"headerEntries": [
-						"Tirion casts one of the following spells, using Charisma as the spellcasting ability (spell save {@dc 17}):"
+						"提里奥施展以下一道法术，使用魅力作为施法属性（法术豁免{@dc 17}）："
 					],
 					"daily": {
 						"1e": [
-							"{@spell Daylight|XPHB}",
-							"{@spell Dispel Evil and Good|XPHB}",
-							"{@spell Greater Restoration|XPHB}",
-							"{@spell Phantom Steed|XPHB}"
+							"{@spell 昼明术|XPHB}",
+							"{@spell 驱逐善恶|XPHB}",
+							"{@spell 高等复原术|XPHB}",
+							"{@spell 魅影驹|XPHB}"
 						]
 					},
 					"ability": "cha",
@@ -3330,23 +3512,26 @@
 			],
 			"trait": [
 				{
-					"name": "Aura of Bravery",
+					"ENG_name": "Aura of Bravery",
+					"name": "勇毅灵光",
 					"entries": [
-						"Creatures of Tirion's choice in a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from him have {@variantrule Immunity|XPHB} to the {@condition Charmed|XPHB} and {@condition Frightened|XPHB} conditions while there."
+						"身处源自提里奥的30尺{@variantrule 光环 [效应区域]|XPHB|光环}区域内期间，提里奥选定的生物对{@condition 魅惑|XPHB}和{@condition 恐慌|XPHB}状态具有{@variantrule 免疫|XPHB}。"
 					]
 				}
 			],
 			"action": [
 				{
-					"name": "Multiattack",
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
 					"entries": [
-						"Tirion makes three Ashbringer attacks."
+						"提里奥发动三次灰烬使者攻击。"
 					]
 				},
 				{
-					"name": "Ashbringer",
+					"ENG_name": "Ashbringer",
+					"name": "灰烬使者",
 					"entries": [
-						"{@atkr m} {@hit 13}, reach 5 ft. {@h}15 ({@damage 2d6 + 8}) Slashing damage plus 27 ({@damage 5d10}) Fire damage. If the target is Undead, it takes an extra 11 ({@damage 2d10}) Fire damage."
+						"{@atkr m} 命中{@hit 13}，触及5尺。{@h}15（{@damage 2d6 + 8}）挥砍伤害外加27（{@damage 5d10}）火焰伤害。若目标为亡灵，其额外受到11（{@damage 2d10}）火焰伤害。"
 					]
 				}
 			],
@@ -3374,18 +3559,19 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Val'kyr Herald",
+			"ENG_name": "Val'kyr Herald",
+			"name": "瓦格里传令官",
+			"type": {
+				"type": "undead",
+				"tags": [
+					"天使"
+				]
+			},
 			"source": "ICC",
 			"page": 69,
 			"size": [
 				"L"
 			],
-			"type": {
-				"type": "undead",
-				"tags": [
-					"angel"
-				]
-			},
 			"alignment": [
 				"N",
 				"E"
@@ -3421,7 +3607,7 @@
 				"religion": "+9"
 			},
 			"senses": [
-				"Truesight 120 ft."
+				"真实视觉 120 尺"
 			],
 			"passive": 25,
 			"immune": [
@@ -3434,43 +3620,48 @@
 				"frightened"
 			],
 			"languages": [
-				"all"
+				"所有"
 			],
 			"cr": "14",
 			"trait": [
 				{
-					"name": "Flyby",
+					"ENG_name": "Flyby",
+					"name": "飞掠",
 					"entries": [
-						"The val'kyr doesn't provoke an {@action Opportunity Attack|XPHB} when it flies out of an enemy's reach."
+						"瓦格里飞行离开敌人的触及范围时不会引发{@action 借机攻击|XPHB}。"
 					]
 				},
 				{
-					"name": "Magic Resistance",
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
 					"entries": [
-						"The val'kyr has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects."
+						"瓦格里对抗法术和其他魔法效应时进行的豁免检定具有{@variantrule 优势|XPHB}。"
 					]
 				}
 			],
 			"action": [
 				{
-					"name": "Multiattack",
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
 					"entries": [
-						"The val'kyr makes two Reaper's Spear attacks."
+						"瓦格里发动两次收割者之矛攻击。"
 					]
 				},
 				{
-					"name": "Reaper's Spear",
+					"ENG_name": "Reaper's Spear",
+					"name": "收割者之矛",
 					"entries": [
-						"{@atkr m,r} {@hit 11}, reach 10 ft. or range 40/120 ft. {@h}13 ({@damage 2d6 + 6}) Piercing damage plus 27 ({@damage 6d8}) Necrotic damage."
+						"{@atkr m,r} 命中{@hit 11}，触及10尺或射程40/120尺。{@h}13（{@damage 2d6 + 6}）穿刺伤害外加27（{@damage 6d8}）暗蚀伤害。"
 					]
 				}
 			],
 			"bonus": [
 				{
-					"name": "Severed Essence {@recharge 4}",
+					"ENG_name": "Severed Essence {@recharge 4}",
+					"name": "被切割的精魄{@recharge 4}",
 					"entries": [
-						"{@actSave cha} {@dc 19}, one creature the val'kyr can see within 120 feet of itself. {@actSaveFail} 18 ({@damage 4d8}) Psychic damage, and the val'kyr creates an animated spectral echo of the target in an unoccupied space the val'kyr can see within 30 feet of the target. {@actSaveSuccess} Half damage only.",
-						"The spectral echo has the same size, {@variantrule Armor Class|XPHB}, and saving throw bonuses as the target, and it has {@variantrule Hit Points|XPHB} equal to the amount of Psychic damage this action dealt to the target. At the start of each of the val'kyr's turns until the echo or the val'kyr is destroyed, the echo makes a psychic assault on the target, which the target perceives as a version of itself using its own weapons or spells against it. The target takes 18 ({@damage 4d8}) Psychic damage."
+						"{@actSave cha} {@dc 19}，瓦格里120尺内可见的单一生物。{@actSaveFail} 18（{@damage 4d8}）心灵伤害，且瓦格里在目标30尺内其可见的一处未占据空间中创造一个该目标的活化幽影回响。{@actSaveSuccess} 仅半伤。",
+						"该幽影回响具有与目标相同的体型、{@variantrule 护甲等级|XPHB}和豁免加值，且其{@variantrule 生命值|XPHB}等于此动作对目标造成的心灵伤害数值。在回响或瓦格里被摧毁之前，瓦格里的每个回合开始时，回响都会对目标发动一次心灵攻击，目标将其感知为另一个自己，正用目标自身的武器或法术对付它。目标受到18（{@damage 4d8}）心灵伤害。"
 					]
 				}
 			],
@@ -3506,13 +3697,14 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Vengeful Geist",
+			"ENG_name": "Vengeful Geist",
+			"name": "复仇的恶鬼",
+			"type": "undead",
 			"source": "ICC",
 			"page": 70,
 			"size": [
 				"M"
 			],
-			"type": "undead",
 			"alignment": [
 				"C",
 				"E"
@@ -3538,7 +3730,7 @@
 				"dex": "+6"
 			},
 			"senses": [
-				"Darkvision 60 ft."
+				"黑暗视觉 60 尺"
 			],
 			"passive": 10,
 			"resist": [
@@ -3553,38 +3745,42 @@
 				"poisoned"
 			],
 			"languages": [
-				"Common",
-				"Forsaken",
-				"Orcish"
+				"通用语",
+				"被遗忘者语",
+				"兽人语"
 			],
 			"cr": "3",
 			"trait": [
 				{
-					"name": "Avoidance",
+					"ENG_name": "Avoidance",
+					"name": "豁免闪避",
 					"entries": [
-						"If the geist is subjected to an effect that allows it to make a saving throw to take only half damage, it instead takes no damage if it succeeds on the save and only half damage if it fails. It can't use this trait if it has the {@condition Incapacitated|XPHB} condition."
+						"当恶鬼受到一个允许其进行豁免检定来只承受一半伤害的效应影响时，其豁免成功时改为不受伤害，豁免失败时只承受一半伤害。其处于{@condition 失能|XPHB}状态时无法使用此特性。"
 					]
 				},
 				{
-					"name": "Pack Tactics",
+					"ENG_name": "Pack Tactics",
+					"name": "集群战术",
 					"entries": [
-						"The geist has {@variantrule Advantage|XPHB} on an attack roll against a creature if at least one of the geist's allies is within 5 feet of the creature and the ally doesn't have the {@condition Incapacitated|XPHB} condition."
+						"若恶鬼的至少一名盟友位于该生物5尺内且该盟友未处于{@condition 失能|XPHB}状态，恶鬼针对该生物的攻击检定具有{@variantrule 优势|XPHB}。"
 					]
 				}
 			],
 			"action": [
 				{
-					"name": "Claw",
+					"ENG_name": "Claw",
+					"name": "爪击",
 					"entries": [
-						"{@atkr m} {@hit 6}, reach 5 ft. {@h}11 ({@damage 2d6 + 4}) Slashing damage. If the geist used Leap immediately before this attack, it deals an extra 14 ({@damage 4d6}) Slashing damage, and the target has the {@condition Prone|XPHB} condition."
+						"{@atkr m} 命中{@hit 6}，触及5尺。{@h}11（{@damage 2d6 + 4}）挥砍伤害。若恶鬼在此攻击前立即使用了跳跃，其额外造成14（{@damage 4d6}）挥砍伤害，且目标陷入{@condition 倒地|XPHB}状态。"
 					]
 				}
 			],
 			"bonus": [
 				{
-					"name": "Leap {@recharge 4}",
+					"ENG_name": "Leap {@recharge 4}",
+					"name": "跳跃{@recharge 4}",
 					"entries": [
-						"The geist jumps up to 30 feet by spending 10 feet of movement."
+						"恶鬼消耗10尺移动力跳跃至多30尺。"
 					]
 				}
 			],

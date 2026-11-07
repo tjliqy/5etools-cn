@@ -160,7 +160,7 @@
 				}
 			],
 			"environment": [
-				"城市"
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -409,7 +409,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -604,13 +604,13 @@
 						"一个集会由三位鬼婆组成，这样如果其中两个意见不一就可以由第三个表决。如果超过三个鬼婆在一起，就会有如两个鬼婆集会针锋相对，结果混乱不堪而导致集会解散。",
 						{
 							"ENG_name": "Shared Spellcasting (Coven Only)",
-							"name": "共享施法 (仅集会)",
+							"name": "共享施法（仅集会）",
 							"type": "spellcasting",
 							"headerEntries": [
 								"当鬼婆集会的三名成员互相在30尺范围内时，它们都可以施放以下法师法术并共享所使用的法术位："
 							],
 							"footerEntries": [
-								"施展这些法术时，每个鬼婆都作为12级的施法者，其施法能力基于智力。法术豁免DC为12＋该鬼婆的智力调整值，法术攻击加值为4＋该鬼婆的智力调整值。"
+								"施展这些法术时，每名鬼婆都视为12级施法者，使用智力作为施法属性。法术豁免DC为12＋该鬼婆的智力调整值，法术攻击加值为4＋该鬼婆的智力调整值。"
 							],
 							"spells": {
 								"1": {
@@ -675,7 +675,7 @@
 					"entries": [
 						{
 							"ENG_name": "Shared Spellcasting (Coven Only)",
-							"name": "共享施法 (仅集会)",
+							"name": "共享施法（仅集会）",
 							"type": "spellcasting",
 							"headerEntries": [
 								"对于一个死亡集会，将鬼婆的共享施法特质中的法术列表替换为以下法术："
@@ -734,7 +734,7 @@
 					"entries": [
 						{
 							"ENG_name": "Shared Spellcasting (Coven Only)",
-							"name": "共享施法 (仅集会)",
+							"name": "共享施法（仅集会）",
 							"type": "spellcasting",
 							"headerEntries": [
 								"对于自然集会，将鬼婆的共享施法特质中的法术列表替换为以下法术："
@@ -793,7 +793,7 @@
 					"entries": [
 						{
 							"ENG_name": "Shared Spellcasting (Coven Only)",
-							"name": "共享施法 (仅集会)",
+							"name": "共享施法（仅集会）",
 							"type": "spellcasting",
 							"headerEntries": [
 								"对于预言集会，将鬼婆的共享施法特质中的法术列表替换为以下法术："
@@ -847,8 +847,8 @@
 				}
 			],
 			"environment": [
-				"山地",
-				"丘陵"
+				"mountain",
+				"hill"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -910,7 +910,7 @@
 							"mode": "appendArr",
 							"items": {
 								"ENG_name": "Shared Spellcasting (Coven Only)",
-								"name": "共享施法 (仅集会)",
+								"name": "共享施法（仅集会）",
 								"headerEntries": [
 									"当鬼婆集会的三名成员互相在30尺范围内时，它们都可以施放以下法师法术并共享所使用的法术位："
 								],
@@ -977,7 +977,7 @@
 							"mode": "appendArr",
 							"items": {
 								"ENG_name": "Shared Spellcasting (Coven Only)",
-								"name": "共享施法 (仅集会)",
+								"name": "共享施法（仅集会）",
 								"headerEntries": [
 									"当鬼婆集会的三名成员互相在30尺范围内时，它们都可以施放以下法师法术并共享所使用的法术位："
 								],
@@ -1044,7 +1044,7 @@
 							"mode": "appendArr",
 							"items": {
 								"ENG_name": "Shared Spellcasting (Coven Only)",
-								"name": "共享施法 (仅集会)",
+								"name": "共享施法（仅集会）",
 								"headerEntries": [
 									"当鬼婆集会的三名成员互相在30尺范围内时，它们都可以施放以下法师法术并共享所使用的法术位："
 								],
@@ -1111,7 +1111,7 @@
 							"mode": "appendArr",
 							"items": {
 								"ENG_name": "Shared Spellcasting (Coven Only)",
-								"name": "共享施法 (仅集会)",
+								"name": "共享施法（仅集会）",
 								"headerEntries": [
 									"当鬼婆集会的三名成员互相在30尺范围内时，它们都可以施放以下法师法术并共享所使用的法术位："
 								],
@@ -1262,7 +1262,7 @@
 				}
 			],
 			"environment": [
-				"城市"
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -1472,9 +1472,9 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"山地",
-				"沼泽"
+				"forest",
+				"mountain",
+				"swamp"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -1610,8 +1610,8 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"城市"
+				"forest",
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -1698,9 +1698,9 @@
 				}
 			],
 			"environment": [
-				"山地",
-				"草地",
-				"丘陵"
+				"mountain",
+				"grassland",
+				"hill"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -1848,8 +1848,8 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"城市"
+				"underdark",
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -1995,7 +1995,7 @@
 				}
 			],
 			"environment": [
-				"城市"
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -2160,7 +2160,7 @@
 				}
 			],
 			"environment": [
-				"城市"
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -2366,11 +2366,11 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"山地",
-				"草地",
-				"森林",
-				"丘陵"
+				"underdark",
+				"mountain",
+				"grassland",
+				"forest",
+				"hill"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -2549,13 +2549,13 @@
 						"一个集会由三位鬼婆组成，这样如果其中两个意见不一就可以由第三个表决。如果超过三个鬼婆在一起，就会有如两个鬼婆集会针锋相对，结果混乱不堪而导致集会解散。",
 						{
 							"ENG_name": "Shared Spellcasting (Coven Only)",
-							"name": "共享施法 (仅集会)",
+							"name": "共享施法（仅集会）",
 							"type": "spellcasting",
 							"headerEntries": [
 								"当鬼婆集会的三名成员互相在30尺范围内时，它们都可以施放以下法师法术并共享所使用的法术位："
 							],
 							"footerEntries": [
-								"施展这些法术时，每个鬼婆都作为12级的施法者，其施法能力基于智力。法术豁免DC为12＋该鬼婆的智力调整值，法术攻击加值为4＋该鬼婆的智力调整值。"
+								"施展这些法术时，每名鬼婆都视为12级施法者，使用智力作为施法属性。法术豁免DC为12＋该鬼婆的智力调整值，法术攻击加值为4＋该鬼婆的智力调整值。"
 							],
 							"spells": {
 								"1": {
@@ -2620,7 +2620,7 @@
 					"entries": [
 						{
 							"ENG_name": "Shared Spellcasting (Coven Only)",
-							"name": "共享施法 (仅集会)",
+							"name": "共享施法（仅集会）",
 							"type": "spellcasting",
 							"headerEntries": [
 								"对于一个死亡集会，将鬼婆的共享施法特质中的法术列表替换为以下法术："
@@ -2679,7 +2679,7 @@
 					"entries": [
 						{
 							"ENG_name": "Shared Spellcasting (Coven Only)",
-							"name": "共享施法 (仅集会)",
+							"name": "共享施法（仅集会）",
 							"type": "spellcasting",
 							"headerEntries": [
 								"对于自然集会，将鬼婆的共享施法特质中的法术列表替换为以下法术："
@@ -2738,7 +2738,7 @@
 					"entries": [
 						{
 							"ENG_name": "Shared Spellcasting (Coven Only)",
-							"name": "共享施法 (仅集会)",
+							"name": "共享施法（仅集会）",
 							"type": "spellcasting",
 							"headerEntries": [
 								"对于预言集会，将鬼婆的共享施法特质中的法术列表替换为以下法术："
@@ -2792,7 +2792,7 @@
 				}
 			],
 			"environment": [
-				"极地"
+				"arctic"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -2860,7 +2860,7 @@
 							"mode": "appendArr",
 							"items": {
 								"ENG_name": "Shared Spellcasting (Coven Only)",
-								"name": "共享施法 (仅集会)",
+								"name": "共享施法（仅集会）",
 								"headerEntries": [
 									"当鬼婆集会的三名成员互相在30尺范围内时，它们都可以施放以下法师法术并共享所使用的法术位："
 								],
@@ -2927,7 +2927,7 @@
 							"mode": "appendArr",
 							"items": {
 								"ENG_name": "Shared Spellcasting (Coven Only)",
-								"name": "共享施法 (仅集会)",
+								"name": "共享施法（仅集会）",
 								"headerEntries": [
 									"当鬼婆集会的三名成员互相在30尺范围内时，它们都可以施放以下法师法术并共享所使用的法术位："
 								],
@@ -2994,7 +2994,7 @@
 							"mode": "appendArr",
 							"items": {
 								"ENG_name": "Shared Spellcasting (Coven Only)",
-								"name": "共享施法 (仅集会)",
+								"name": "共享施法（仅集会）",
 								"headerEntries": [
 									"当鬼婆集会的三名成员互相在30尺范围内时，它们都可以施放以下法师法术并共享所使用的法术位："
 								],
@@ -3061,7 +3061,7 @@
 							"mode": "appendArr",
 							"items": {
 								"ENG_name": "Shared Spellcasting (Coven Only)",
-								"name": "共享施法 (仅集会)",
+								"name": "共享施法（仅集会）",
 								"headerEntries": [
 									"当鬼婆集会的三名成员互相在30尺范围内时，它们都可以施放以下法师法术并共享所使用的法术位："
 								],
@@ -3205,8 +3205,8 @@
 				}
 			],
 			"environment": [
-				"沼泽",
-				"城市"
+				"swamp",
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -3367,8 +3367,8 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"城市"
+				"underdark",
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -3496,8 +3496,8 @@
 				}
 			],
 			"environment": [
-				"荒漠",
-				"城市"
+				"desert",
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -3643,9 +3643,9 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"沼泽",
-				"城市"
+				"underdark",
+				"swamp",
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -3777,10 +3777,10 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"森林",
-				"丘陵",
-				"城市"
+				"underdark",
+				"forest",
+				"hill",
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -4101,8 +4101,8 @@
 				}
 			],
 			"environment": [
-				"草地",
-				"森林"
+				"grassland",
+				"forest"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -4202,7 +4202,7 @@
 				}
 			],
 			"environment": [
-				"沼泽"
+				"swamp"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -4326,7 +4326,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -4471,8 +4471,8 @@
 				}
 			],
 			"environment": [
-				"荒漠",
-				"城市"
+				"desert",
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -4600,7 +4600,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -4779,7 +4779,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -4999,7 +4999,7 @@
 				}
 			],
 			"environment": [
-				"山地"
+				"mountain"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -5187,7 +5187,7 @@
 				}
 			],
 			"environment": [
-				"城市"
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -5278,7 +5278,7 @@
 				}
 			],
 			"environment": [
-				"草地"
+				"grassland"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -5362,8 +5362,8 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"城市"
+				"underdark",
+				"urban"
 			],
 			"familiar": true,
 			"soundClip": {
@@ -5413,7 +5413,7 @@
 				{
 					"ac": 14,
 					"from": [
-						"{@item 皮甲|phb}"
+						"{@item 皮甲|PHB}"
 					]
 				}
 			],
@@ -5472,10 +5472,10 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"森林",
-				"沼泽",
-				"城市"
+				"underdark",
+				"forest",
+				"swamp",
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -5604,10 +5604,10 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"森林",
-				"沼泽",
-				"城市"
+				"underdark",
+				"forest",
+				"swamp",
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -5746,7 +5746,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -5854,7 +5854,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -5995,8 +5995,8 @@
 				}
 			],
 			"environment": [
-				"水下",
-				"海岸"
+				"underwater",
+				"coastal"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -6120,9 +6120,9 @@
 				}
 			],
 			"environment": [
-				"草地",
-				"森林",
-				"丘陵"
+				"grassland",
+				"forest",
+				"hill"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -6238,7 +6238,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -6328,8 +6328,8 @@
 				}
 			],
 			"environment": [
-				"沼泽",
-				"海岸"
+				"swamp",
+				"coastal"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -6502,7 +6502,7 @@
 				}
 			],
 			"environment": [
-				"城市"
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -6612,8 +6612,8 @@
 				}
 			],
 			"environment": [
-				"水下",
-				"海岸"
+				"underwater",
+				"coastal"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -6756,7 +6756,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -6968,7 +6968,7 @@
 				"source": "VGM"
 			},
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -7171,7 +7171,7 @@
 				}
 			],
 			"environment": [
-				"城市"
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -7363,7 +7363,7 @@
 				}
 			],
 			"environment": [
-				"城市"
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -7500,8 +7500,8 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"山地"
+				"underdark",
+				"mountain"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -7662,10 +7662,10 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"山地",
-				"丘陵",
-				"荒漠"
+				"underdark",
+				"mountain",
+				"hill",
+				"desert"
 			],
 			"attachedItems": [
 				"钉头锤|phb"
@@ -7789,10 +7789,10 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"山地",
-				"丘陵",
-				"荒漠"
+				"underdark",
+				"mountain",
+				"hill",
+				"desert"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -7952,9 +7952,9 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"森林",
-				"沼泽"
+				"underdark",
+				"forest",
+				"swamp"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -8093,10 +8093,10 @@
 				}
 			],
 			"environment": [
-				"草地",
-				"森林",
-				"丘陵",
-				"极地"
+				"grassland",
+				"forest",
+				"hill",
+				"arctic"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -8243,8 +8243,8 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"沼泽"
+				"underdark",
+				"swamp"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -8395,8 +8395,8 @@
 				}
 			],
 			"environment": [
-				"海岸",
-				"极地"
+				"coastal",
+				"arctic"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -8571,7 +8571,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -8757,7 +8757,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"familiar": true,
 			"soundClip": {
@@ -8862,9 +8862,9 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"山地",
-				"丘陵"
+				"underdark",
+				"mountain",
+				"hill"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -8973,7 +8973,7 @@
 				}
 			],
 			"environment": [
-				"森林"
+				"forest"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -9094,10 +9094,10 @@
 				}
 			],
 			"environment": [
-				"草地",
-				"森林",
-				"丘陵",
-				"极地"
+				"grassland",
+				"forest",
+				"hill",
+				"arctic"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -9154,7 +9154,7 @@
 				{
 					"ac": 13,
 					"from": [
-						"{@item 皮甲|phb}"
+						"{@item 皮甲|PHB}"
 					]
 				}
 			],
@@ -9223,10 +9223,10 @@
 				}
 			],
 			"environment": [
-				"草地",
-				"森林",
-				"丘陵",
-				"极地"
+				"grassland",
+				"forest",
+				"hill",
+				"arctic"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -9355,10 +9355,10 @@
 				}
 			],
 			"environment": [
-				"草地",
-				"森林",
-				"丘陵",
-				"极地"
+				"grassland",
+				"forest",
+				"hill",
+				"arctic"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -9476,8 +9476,8 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"城市"
+				"forest",
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -9659,7 +9659,7 @@
 				}
 			],
 			"environment": [
-				"森林"
+				"forest"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -9978,7 +9978,7 @@
 				}
 			],
 			"environment": [
-				"森林"
+				"forest"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -10332,7 +10332,7 @@
 				}
 			],
 			"environment": [
-				"森林"
+				"forest"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -10551,8 +10551,8 @@
 				}
 			],
 			"environment": [
-				"草地",
-				"沼泽"
+				"grassland",
+				"swamp"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -10698,9 +10698,9 @@
 				}
 			],
 			"environment": [
-				"草地",
-				"森林",
-				"丘陵"
+				"grassland",
+				"forest",
+				"hill"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -10864,9 +10864,9 @@
 				}
 			],
 			"environment": [
-				"草地",
-				"森林",
-				"丘陵"
+				"grassland",
+				"forest",
+				"hill"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -11191,7 +11191,7 @@
 				"source": "VGM"
 			},
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -11404,7 +11404,7 @@
 				}
 			],
 			"environment": [
-				"城市"
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -11692,10 +11692,10 @@
 				"source": "VGM"
 			},
 			"environment": [
-				"山地",
-				"草地",
-				"荒漠",
-				"海岸"
+				"mountain",
+				"grassland",
+				"desert",
+				"coastal"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -11771,7 +11771,7 @@
 				{
 					"ac": 15,
 					"from": [
-						"{@item 皮甲|phb}",
+						"{@item 皮甲|PHB}",
 						"{@item 盾牌|phb}"
 					]
 				}
@@ -11848,10 +11848,10 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"山地",
-				"森林",
-				"丘陵"
+				"underdark",
+				"mountain",
+				"forest",
+				"hill"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -12034,11 +12034,11 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"山地",
-				"森林",
-				"丘陵",
-				"城市"
+				"underdark",
+				"mountain",
+				"forest",
+				"hill",
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -12208,11 +12208,11 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"山地",
-				"森林",
-				"丘陵",
-				"城市"
+				"underdark",
+				"mountain",
+				"forest",
+				"hill",
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -12403,7 +12403,7 @@
 				}
 			],
 			"environment": [
-				"森林"
+				"forest"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -12578,8 +12578,8 @@
 				}
 			],
 			"environment": [
-				"海岸",
-				"水下"
+				"coastal",
+				"underwater"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -12735,8 +12735,8 @@
 				}
 			],
 			"environment": [
-				"草地",
-				"荒漠"
+				"grassland",
+				"desert"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -12876,7 +12876,7 @@
 				}
 			],
 			"environment": [
-				"城市"
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -13040,7 +13040,7 @@
 				}
 			],
 			"environment": [
-				"城市"
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -13159,7 +13159,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -13274,9 +13274,9 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"沼泽",
-				"城市"
+				"forest",
+				"swamp",
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -13329,7 +13329,7 @@
 				{
 					"ac": 15,
 					"from": [
-						"{@item 胸甲|phb}"
+						"{@item 胸甲|PHB}"
 					]
 				}
 			],
@@ -13468,7 +13468,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"traitTags": [
 				"Magic Resistance"
@@ -13670,7 +13670,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -13906,8 +13906,8 @@
 				"source": "VGM"
 			},
 			"environment": [
-				"水下",
-				"海岸"
+				"underwater",
+				"coastal"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -14056,8 +14056,8 @@
 				}
 			],
 			"environment": [
-				"草地",
-				"丘陵"
+				"grassland",
+				"hill"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -14235,8 +14235,8 @@
 				}
 			],
 			"environment": [
-				"荒漠",
-				"城市"
+				"desert",
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -14365,8 +14365,8 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"丘陵"
+				"underdark",
+				"hill"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -14470,8 +14470,8 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"丘陵"
+				"underdark",
+				"hill"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -14643,8 +14643,8 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"丘陵"
+				"underdark",
+				"hill"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -14817,7 +14817,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -14897,7 +14897,7 @@
 				{
 					"ac": 13,
 					"from": [
-						"{@item 皮甲|phb}"
+						"{@item 皮甲|PHB}"
 					]
 				}
 			],
@@ -14989,9 +14989,9 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"森林",
-				"丘陵"
+				"underdark",
+				"forest",
+				"hill"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -15143,11 +15143,11 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"山地",
-				"草地",
-				"森林",
-				"丘陵"
+				"underdark",
+				"mountain",
+				"grassland",
+				"forest",
+				"hill"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -15305,8 +15305,8 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"山地"
+				"underdark",
+				"mountain"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -15455,11 +15455,11 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"山地",
-				"草地",
-				"森林",
-				"丘陵"
+				"underdark",
+				"mountain",
+				"grassland",
+				"forest",
+				"hill"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -15578,11 +15578,11 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"山地",
-				"草地",
-				"森林",
-				"丘陵"
+				"underdark",
+				"mountain",
+				"grassland",
+				"forest",
+				"hill"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -15730,11 +15730,11 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"山地",
-				"森林",
-				"丘陵",
-				"城市"
+				"underdark",
+				"mountain",
+				"forest",
+				"hill",
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -15830,7 +15830,7 @@
 				}
 			],
 			"environment": [
-				"草地"
+				"grassland"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -15924,9 +15924,9 @@
 				}
 			],
 			"environment": [
-				"山地",
-				"丘陵",
-				"海岸"
+				"mountain",
+				"hill",
+				"coastal"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -16029,7 +16029,7 @@
 				}
 			],
 			"environment": [
-				"森林"
+				"forest"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -16136,9 +16136,9 @@
 				}
 			],
 			"environment": [
-				"山地",
-				"幽暗地域",
-				"城市"
+				"mountain",
+				"underdark",
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -16279,9 +16279,9 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"沼泽",
-				"丘陵"
+				"forest",
+				"swamp",
+				"hill"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -16380,7 +16380,7 @@
 				}
 			],
 			"environment": [
-				"草地"
+				"grassland"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -16504,8 +16504,8 @@
 				}
 			],
 			"environment": [
-				"水下",
-				"海岸"
+				"underwater",
+				"coastal"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -16660,9 +16660,9 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"沼泽",
-				"丘陵"
+				"forest",
+				"swamp",
+				"hill"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -16829,10 +16829,10 @@
 				}
 			],
 			"environment": [
-				"草地",
-				"森林",
-				"丘陵",
-				"极地"
+				"grassland",
+				"forest",
+				"hill",
+				"arctic"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -17013,8 +17013,8 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"城市"
+				"underdark",
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -17140,8 +17140,8 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"荒漠"
+				"underdark",
+				"desert"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -17230,8 +17230,8 @@
 				}
 			],
 			"environment": [
-				"草地",
-				"森林"
+				"grassland",
+				"forest"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -17443,9 +17443,9 @@
 				}
 			],
 			"environment": [
-				"山地",
-				"丘陵",
-				"海岸"
+				"mountain",
+				"hill",
+				"coastal"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -17629,11 +17629,11 @@
 				"source": "VGM"
 			},
 			"environment": [
-				"水下",
-				"山地",
-				"荒漠",
-				"海岸",
-				"极地"
+				"underwater",
+				"mountain",
+				"desert",
+				"coastal",
+				"arctic"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -17786,8 +17786,8 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"城市"
+				"underdark",
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -17895,8 +17895,8 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"沼泽"
+				"underdark",
+				"swamp"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -17950,7 +17950,7 @@
 				{
 					"ac": 17,
 					"from": [
-						"{@item 皮甲|phb}"
+						"{@item 皮甲|PHB}"
 					]
 				}
 			],
@@ -18017,8 +18017,8 @@
 				}
 			],
 			"environment": [
-				"海岸",
-				"城市"
+				"coastal",
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -18158,9 +18158,9 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"山地",
-				"丘陵"
+				"underdark",
+				"mountain",
+				"hill"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -18281,8 +18281,8 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"沼泽"
+				"forest",
+				"swamp"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -18386,7 +18386,7 @@
 				}
 			],
 			"environment": [
-				"荒漠"
+				"desert"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -18576,7 +18576,7 @@
 				}
 			],
 			"environment": [
-				"城市"
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -18691,7 +18691,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -18750,7 +18750,7 @@
 				{
 					"ac": 15,
 					"from": [
-						"{@item 胸甲|phb}"
+						"{@item 胸甲|PHB}"
 					]
 				}
 			],
@@ -18863,7 +18863,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -19002,9 +19002,9 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"沼泽",
-				"荒漠"
+				"underdark",
+				"swamp",
+				"desert"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -19126,8 +19126,8 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"沼泽"
+				"forest",
+				"swamp"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -19261,8 +19261,8 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"沼泽"
+				"forest",
+				"swamp"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -19388,8 +19388,8 @@
 				}
 			],
 			"environment": [
-				"草地",
-				"森林"
+				"grassland",
+				"forest"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -19565,8 +19565,8 @@
 				}
 			],
 			"environment": [
-				"荒漠",
-				"城市"
+				"desert",
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -19744,11 +19744,11 @@
 				}
 			],
 			"environment": [
-				"极地",
-				"森林",
-				"山地",
-				"沼泽",
-				"城市"
+				"arctic",
+				"forest",
+				"mountain",
+				"swamp",
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -19946,10 +19946,10 @@
 				}
 			],
 			"environment": [
-				"极地",
-				"荒漠",
-				"幽暗地域",
-				"城市"
+				"arctic",
+				"desert",
+				"underdark",
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -20146,11 +20146,11 @@
 				}
 			],
 			"environment": [
-				"荒漠",
-				"丘陵",
-				"山地",
-				"幽暗地域",
-				"城市"
+				"desert",
+				"hill",
+				"mountain",
+				"underdark",
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -20326,7 +20326,7 @@
 				}
 			],
 			"environment": [
-				"城市"
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -20437,8 +20437,8 @@
 				}
 			],
 			"environment": [
-				"极地",
-				"城市"
+				"arctic",
+				"urban"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -20580,7 +20580,7 @@
 				}
 			],
 			"environment": [
-				"森林"
+				"forest"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -20639,7 +20639,7 @@
 				{
 					"ac": 13,
 					"from": [
-						"{@item 皮甲|phb}"
+						"{@item 皮甲|PHB}"
 					]
 				}
 			],
@@ -20707,8 +20707,8 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"丘陵"
+				"underdark",
+				"hill"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -20760,7 +20760,7 @@
 				{
 					"ac": 13,
 					"from": [
-						"{@item 皮甲|phb}"
+						"{@item 皮甲|PHB}"
 					]
 				}
 			],
@@ -20828,8 +20828,8 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"丘陵"
+				"underdark",
+				"hill"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -20993,8 +20993,8 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"丘陵"
+				"underdark",
+				"hill"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -21143,9 +21143,9 @@
 				}
 			],
 			"environment": [
-				"草地",
-				"森林",
-				"丘陵"
+				"grassland",
+				"forest",
+				"hill"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -21380,9 +21380,9 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"森林",
-				"荒漠"
+				"underdark",
+				"forest",
+				"desert"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -21581,9 +21581,9 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"森林",
-				"荒漠"
+				"underdark",
+				"forest",
+				"desert"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -21760,9 +21760,9 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"沼泽",
-				"荒漠"
+				"forest",
+				"swamp",
+				"desert"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -21955,9 +21955,9 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"沼泽",
-				"荒漠"
+				"forest",
+				"swamp",
+				"desert"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -22206,9 +22206,9 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"森林",
-				"荒漠"
+				"underdark",
+				"forest",
+				"desert"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -22464,9 +22464,9 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"森林",
-				"荒漠"
+				"underdark",
+				"forest",
+				"desert"
 			],
 			"soundClip": {
 				"type": "internal",
@@ -22733,9 +22733,9 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"森林",
-				"荒漠"
+				"underdark",
+				"forest",
+				"desert"
 			],
 			"soundClip": {
 				"type": "internal",

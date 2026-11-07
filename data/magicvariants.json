@@ -45,6 +45,9 @@
 				],
 				"lootTables": [
 					"魔法物品表B"
+				],
+				"miscTags": [
+					"CNS"
 				]
 			},
 			"hasFluffImages": true
@@ -80,6 +83,9 @@
 				"lootTables": [
 					"武备 - 非普通|XDMG",
 					"器具 - 非普通|XDMG"
+				],
+				"miscTags": [
+					"CNS"
 				]
 			},
 			"hasFluffImages": true
@@ -352,6 +358,9 @@
 				],
 				"lootTables": [
 					"魔法物品表C"
+				],
+				"miscTags": [
+					"CNS"
 				]
 			},
 			"hasFluffImages": true
@@ -387,6 +396,9 @@
 				"lootTables": [
 					"武备 - 珍稀|XDMG",
 					"器具 - 珍稀|XDMG"
+				],
+				"miscTags": [
+					"CNS"
 				]
 			},
 			"hasFluffImages": true
@@ -650,6 +662,9 @@
 				],
 				"lootTables": [
 					"魔法物品表D"
+				],
+				"miscTags": [
+					"CNS"
 				]
 			},
 			"hasFluffImages": true
@@ -685,6 +700,9 @@
 				"lootTables": [
 					"武备 - 极珍稀|XDMG",
 					"器具 - 极珍稀|XDMG"
+				],
+				"miscTags": [
+					"CNS"
 				]
 			},
 			"hasFluffImages": true
@@ -1228,6 +1246,9 @@
 				],
 				"lootTables": [
 					"武备 - 极珍稀|XDMG"
+				],
+				"miscTags": [
+					"CNS"
 				]
 			},
 			"hasFluffImages": true
@@ -2382,6 +2403,9 @@
 				"entries": [
 					"{=baseName/at} {=baseName/l} 的杀戮是一种旨在杀死特定类型生物的魔法武器。有些更专注于特定的目标；例如，既有 {@i {=baseName/l}的龙类屠杀箭} 也有 {@i {=baseName/l}的蓝龙屠戮}。如果属于与 {=baseName/a} {=baseName/l} 的杀戮相关联的类型、种族或群体的生物受到来自 {=baseName/l} 的伤害，该生物必须进行一次 {@dc 17} 体质豁免检定，失败则额外受到 {@damage 6d10} 穿刺伤害，成功则受到一半的额外伤害。",
 					"一旦{=baseName/a} {=baseName/l}屠戮武器对生物造成了额外伤害，它就会变成一把非魔法的{=baseName/l}。"
+				],
+				"miscTags": [
+					"CNS"
 				]
 			},
 			"hasFluffImages": true
@@ -3264,6 +3288,9 @@
 				"rarity": "uncommon",
 				"entries": [
 					"当目标受到这枚魔法弹药造成的伤害时，目标身上任何持续生效的三环或更低环阶的法术都会结束。一旦该弹药对目标造成伤害，其便不再具有魔法。"
+				],
+				"miscTags": [
+					"CNS"
 				]
 			}
 		},
@@ -3421,6 +3448,9 @@
 				"rarity": "uncommon",
 				"entries": [
 					"这种水蛭已经干燥并被赋予了一丝活化魔法。如果你用这种弹药进行远程攻击并击中生物，水蛭会复活并咬住目标，在目标的每个回合开始时造成{@damage 1d4}穿刺伤害。如果水蛭至少造成10点伤害或目标死亡，水蛭就会脱落。一个生物，包括目标，可以使用其动作来分离水蛭。一旦水蛭不再附着在目标上，水蛭就会死亡，不再具有魔法效果。"
+				],
+				"miscTags": [
+					"CNS"
 				]
 			}
 		},
@@ -4796,6 +4826,9 @@
 				"rarity": "uncommon",
 				"entries": [
 					"如果这枚魔法弹药命中一个生物并造成伤害，则目标需进行一次{@dc 13}的魅力豁免。若豁免失败，则目标在其下一回合开始前无法执行{@variantrule 反应|XPHB|反应}，只能气急败坏地咆哮和暴怒。弹药一旦命中目标，便不再具有魔法。"
+				],
+				"miscTags": [
+					"CNS"
 				]
 			}
 		},

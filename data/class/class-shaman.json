@@ -14,172 +14,186 @@
 	},
 	"class": [
 		{
-			"name": "Shaman",
+			"ENG_name": "Shaman",
+			"name": "萨满祭司",
 			"alias": [
-				"Barbarian"
+				"野蛮人"
 			],
 			"source": "WoW",
 			"reskinOf": [
-				"Barbarian|XPHB"
+				"野蛮人|XPHB"
 			],
 			"_copy": {
-				"name": "Barbarian",
+				"ENG_name": "Barbarian",
+				"name": "野蛮人",
 				"source": "XPHB"
 			},
 			"classFeatures": [
-				"Rage|Barbarian|XPHB|1",
-				"Unarmored Defense|Barbarian|XPHB|1",
-				"Weapon Mastery|Barbarian|XPHB|1",
-				"Danger Sense|Barbarian|XPHB|2",
-				"Reckless Attack|Barbarian|XPHB|2",
+				"狂暴|野蛮人|XPHB|1",
+				"无甲防御|野蛮人|XPHB|1",
+				"武器精通|野蛮人|XPHB|1",
+				"危机感应|野蛮人|XPHB|2",
+				"鲁莽攻击|野蛮人|XPHB|2",
 				{
-					"classFeature": "Shaman Subclass|Shaman|WoW|3",
+					"classFeature": "萨满祭司子职|萨满祭司|WoW|3",
 					"gainSubclassFeature": true
 				},
-				"Totems|Shaman|WoW|3",
-				"Ability Score Improvement|Barbarian|XPHB|4",
-				"Extra Attack|Barbarian|XPHB|5",
-				"Fast Movement|Barbarian|XPHB|5",
+				"图腾|萨满祭司|WoW|3",
+				"属性值提升|野蛮人|XPHB|4",
+				"额外攻击|野蛮人|XPHB|5",
+				"快速移动|野蛮人|XPHB|5",
 				{
-					"classFeature": "Subclass Feature|Barbarian|XPHB|6",
+					"classFeature": "子职特性|野蛮人|XPHB|6",
 					"gainSubclassFeature": true
 				},
-				"Feral Instinct|Barbarian|XPHB|7",
-				"Instinctive Pounce|Barbarian|XPHB|7",
-				"Ability Score Improvement|Barbarian|XPHB|8",
-				"Brutal Strike|Barbarian|XPHB|9",
+				"野性直觉|野蛮人|XPHB|7",
+				"莽驰|野蛮人|XPHB|7",
+				"属性值提升|野蛮人|XPHB|8",
+				"凶蛮打击|野蛮人|XPHB|9",
 				{
-					"classFeature": "Subclass Feature|Barbarian|XPHB|10",
+					"classFeature": "子职特性|野蛮人|XPHB|10",
 					"gainSubclassFeature": true
 				},
-				"Relentless Rage|Barbarian|XPHB|11",
-				"Ability Score Improvement|Barbarian|XPHB|12",
-				"Improved Brutal Strike|Barbarian|XPHB|13",
+				"坚韧狂暴|野蛮人|XPHB|11",
+				"属性值提升|野蛮人|XPHB|12",
+				"强化凶蛮打击|野蛮人|XPHB|13",
 				{
-					"classFeature": "Subclass Feature|Barbarian|XPHB|14",
+					"classFeature": "子职特性|野蛮人|XPHB|14",
 					"gainSubclassFeature": true
 				},
-				"Persistent Rage|Barbarian|XPHB|15",
-				"Ability Score Improvement|Barbarian|XPHB|16",
-				"Improved Brutal Strike|Barbarian|XPHB|17",
-				"Indomitable Might|Barbarian|XPHB|18",
-				"Epic Boon|Barbarian|XPHB|19",
-				"Primal Champion|Barbarian|XPHB|20"
+				"持久狂暴|野蛮人|XPHB|15",
+				"属性值提升|野蛮人|XPHB|16",
+				"强化凶蛮打击|野蛮人|XPHB|17",
+				"不屈勇武|野蛮人|XPHB|18",
+				"传奇恩惠|野蛮人|XPHB|19",
+				"原初斗士|野蛮人|XPHB|20"
 			],
 			"includeSubclassesFrom": [
-				"Barbarian|XPHB"
+				"野蛮人|XPHB"
 			],
-			"subclassTitle": "Shaman Subclass",
+			"subclassTitle": "萨满祭司子职",
 			"hasFluff": true,
 			"hasFluffImages": true
 		}
 	],
 	"subclass": [
 		{
-			"name": "Path of the Berserker",
-			"shortName": "Berserker",
+			"ENG_name": "Path of the Berserker",
+			"name": "狂战士道途",
+			"shortName": "狂战士",
 			"source": "WoW",
-			"className": "Shaman",
+			"className": "萨满祭司",
 			"classSource": "WoW",
 			"_copy": {
-				"name": "Path of the Berserker",
+				"ENG_name": "Path of the Berserker",
+				"name": "狂战士道途",
 				"source": "XPHB",
-				"shortName": "Berserker",
-				"className": "Barbarian",
+				"shortName": "狂战士",
+				"className": "野蛮人",
 				"classSource": "XPHB"
 			}
 		},
 		{
-			"name": "Path of the Elements",
-			"shortName": "Elements",
+			"ENG_name": "Path of the Elements",
+			"name": "元素道途",
+			"shortName": "元素",
 			"source": "WoW",
-			"className": "Shaman",
+			"className": "萨满祭司",
 			"classSource": "WoW",
 			"edition": "one",
 			"subclassFeatures": [
-				"Path of the Elements|Shaman|WoW|Elements|WoW|3",
-				"Echo of the Elements|Shaman|WoW|Elements|WoW|6",
-				"Primordial Bond|Shaman|WoW|Elements|WoW|10",
-				"Elemental Overload|Shaman|WoW|Elements|WoW|14"
+				"元素道途|萨满祭司|WoW|元素|WoW|3",
+				"元素回响|萨满祭司|WoW|元素|WoW|6",
+				"原初羁绊|萨满祭司|WoW|元素|WoW|10",
+				"元素过载|萨满祭司|WoW|元素|WoW|14"
 			]
 		},
 		{
-			"name": "Path of the Spiritual Guardian",
-			"shortName": "Spiritual Guardian",
+			"ENG_name": "Path of the Spiritual Guardian",
+			"name": "灵体卫士道途",
+			"shortName": "灵体卫士",
 			"source": "WoW",
-			"className": "Shaman",
+			"className": "萨满祭司",
 			"classSource": "WoW",
 			"edition": "one",
 			"subclassFeatures": [
-				"Path of the Spiritual Guardian|Shaman|WoW|Spiritual Guardian|WoW|3",
-				"Spirit Shield|Shaman|WoW|Spiritual Guardian|WoW|6",
-				"Consult the Spirits|Shaman|WoW|Spiritual Guardian|WoW|10",
-				"Spirits' Fury|Shaman|WoW|Spiritual Guardian|WoW|14"
+				"灵体卫士道途|萨满祭司|WoW|灵体卫士|WoW|3",
+				"精魂之盾|萨满祭司|WoW|灵体卫士|WoW|6",
+				"问道精魂|萨满祭司|WoW|灵体卫士|WoW|10",
+				"灵体之怒|萨满祭司|WoW|灵体卫士|WoW|14"
 			],
 			"hasFluffImages": true
 		},
 		{
-			"name": "Path of the World Tree",
-			"shortName": "World Tree",
+			"ENG_name": "Path of the World Tree",
+			"name": "世界树道途",
+			"shortName": "世界树",
 			"source": "WoW",
-			"className": "Shaman",
+			"className": "萨满祭司",
 			"classSource": "WoW",
 			"_copy": {
-				"name": "Path of the World Tree",
+				"ENG_name": "Path of the World Tree",
+				"name": "世界树道途",
 				"source": "XPHB",
-				"shortName": "World Tree",
-				"className": "Barbarian",
+				"shortName": "世界树",
+				"className": "野蛮人",
 				"classSource": "XPHB"
 			}
 		}
 	],
 	"classFeature": [
 		{
-			"name": "Shaman Subclass",
+			"ENG_name": "Shaman Subclass",
+			"name": "萨满祭司子职",
 			"source": "WoW",
-			"className": "Shaman",
+			"className": "萨满祭司",
 			"classSource": "WoW",
 			"level": 3,
 			"entries": [
-				"You gain a Shaman subclass of your choice. A subclass is a specialization that grants you features at certain Shaman levels. For the rest of your career, you gain each of your subclass's features that are of your Shaman level or lower."
+				"你获得一个自选的萨满祭司子职。子职是一种专精方向，在特定萨满祭司等级给予你特性。在余下的生涯中，你获得子职中所有等级不高于你萨满祭司等级的特性。"
 			]
 		},
 		{
-			"name": "Totems",
+			"ENG_name": "Totems",
+			"name": "图腾",
 			"source": "WoW",
-			"className": "Shaman",
+			"className": "萨满祭司",
 			"classSource": "WoW",
 			"level": 3,
 			"entries": [
-				"This feature replaces the Barbarian's {@classFeature Primal Knowledge|Barbarian|XPHB|3|XPHB} feature.",
-				"You can coalesce elemental spirits into a totem that aids you and your allies. As a {@variantrule Bonus Action|XPHB}, you can plant one of the totems below into the ground in an unoccupied space you can see within 10 feet of yourself.",
-				"A totem is a Small object that has AC 10 and 1 {@variantrule Hit Points|XPHB|Hit Point} and lasts for 1 minute, until it drops to 0 {@variantrule Hit Points|XPHB}, or until you use this feature again. At the end of each of your turns, the totem pulses with elemental energy that fills a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation}.",
+				"此特性取代野蛮人的{@classFeature 原初学识|野蛮人|XPHB|3|XPHB}特性。",
+				"你可以将元素之灵凝聚成一座图腾，为你和你的盟友提供帮助。以一个{@variantrule 附赠动作|XPHB}，你可以将下述图腾之一插进你 10 尺内一处你能看见的未被占据空间的地面上。",
+				"图腾是一个小型物体，具有AC 10和1点{@variantrule 生命值|XPHB|生命值}，持续1分钟，直到其生命值降至0点{@variantrule 生命值|XPHB}，或直到你再次使用此特性。在你的每个回合结束时，图腾会脉动元素能量，充满一个30尺的{@variantrule 光环 [效应区域]|XPHB|光环}。",
 				{
+					"ENG_name": "Earthbind Totem",
+					"name": "大地图腾",
 					"type": "entries",
-					"name": "Earthbind Totem",
 					"entries": [
-						"Each enemy in the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} has its {@variantrule Speed|XPHB} reduced by 10 feet until the end of your next turn."
+						"{@variantrule 光环 [效应区域]|XPHB|光环}内的每个敌人，其{@variantrule 速度|XPHB}减少10尺，直到你的下一回合结束。"
 					]
 				},
 				{
+					"ENG_name": "Primal Knowledge Totem",
+					"name": "原初知识图腾",
 					"type": "entries",
-					"name": "Primal Knowledge Totem",
 					"entries": [
-						"Each ally in the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} is empowered with nature's focus until the end of your next turn. While empowered in this way, whenever the creature makes an ability check using one of the following skills, the creature can make it as a Strength check even if it normally uses a different ability: {@skill Acrobatics|XPHB}, {@skill Intimidation|XPHB}, {@skill Perception|XPHB}, {@skill Stealth|XPHB}, or {@skill Survival|XPHB}. After you plant this totem, you can't do so again until you finish a {@variantrule Long Rest|XPHB}. You can also restore your use of this totem by expending one use of your {@classFeature Rage|Barbarian|XPHB|1|XPHB} (no action required)."
+						"位于该{@variantrule 光环 [效应区域]|XPHB|光环}内的每个盟友都将获得自然的专注，此效应持续至你的下个回合结束。以此方式获得赋能时，每当该生物使用下列技能之一进行属性检定时，即使该技能通常使用其他属性，该生物也可以将其作为力量检定进行：{@skill 特技|XPHB}、{@skill 威吓|XPHB}、{@skill 察觉|XPHB}、{@skill 隐匿|XPHB}或{@skill 求生|XPHB}。在你竖立此图腾后，直到你完成一次{@variantrule 长休|XPHB}前，你无法再次竖立它。你也可以通过消耗一次你的{@classFeature 狂暴|野蛮人|XPHB|1|XPHB}使用次数来恢复此图腾的使用次数（无需动作）。"
 					]
 				},
 				{
+					"ENG_name": "Tremor Totem",
+					"name": "战栗图腾",
 					"type": "entries",
-					"name": "Tremor Totem",
 					"entries": [
-						"Each ally in the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} has {@variantrule Immunity|XPHB} to the {@condition Charmed|XPHB} and {@condition Frightened|XPHB} conditions until the end of your next turn. If the creature was already {@condition Charmed|XPHB} or {@condition Frightened|XPHB}, those conditions are suppressed until the end of its next turn."
+						"位于{@variantrule 光环 [效应区域]|XPHB|光环}内的每个盟友，直到你的下个回合结束前，对{@condition 魅惑|XPHB}和{@condition 恐慌|XPHB}状态具有{@variantrule 免疫|XPHB}。如果该生物已经处于{@condition 魅惑|XPHB}或{@condition 恐慌|XPHB}状态，这些状态将被抑制，直到它的下个回合结束。"
 					]
 				},
 				{
+					"ENG_name": "Wind Rush Totem",
+					"name": "疾风图腾",
 					"type": "entries",
-					"name": "Wind Rush Totem",
 					"entries": [
-						"Each ally in the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} has its {@variantrule Speed|XPHB} increased by 10 feet until the end of your next turn."
+						"{@variantrule 光环 [效应区域]|XPHB|光环}内的每个盟友，其{@variantrule 速度|XPHB}增加10尺，持续到你的下个回合结束。"
 					]
 				}
 			]
@@ -187,207 +201,227 @@
 	],
 	"subclassFeature": [
 		{
-			"name": "Path of the Elements",
+			"ENG_name": "Path of the Elements",
+			"name": "元素道途",
 			"source": "WoW",
-			"className": "Shaman",
+			"className": "萨满祭司",
 			"classSource": "WoW",
-			"subclassShortName": "Elements",
+			"subclassShortName": "元素",
 			"subclassSource": "WoW",
 			"level": 3,
 			"entries": [
-				"{@i Wield the Fury of the Elements}",
-				"Barbarians who follow the Path of the Elements learn to harness their {@classFeature Rage|Barbarian|XPHB|1|XPHB} into a storm of flames, frost, and lightning. When in their {@classFeature Rage|Barbarian|XPHB|1|XPHB}, these Barbarians tap into the elemental forces of nature to create powerful magical effects.",
+				"{@i 挥舞元素的怒火}",
+				"追随元素道途的野蛮人学会将他们的{@classFeature 狂暴|野蛮人|XPHB|1|XPHB}驾驭为烈焰、寒霜与闪电的风暴。这些野蛮人在{@classFeature 狂暴|野蛮人|XPHB|1|XPHB}中汲取自然的元素之力，创造强大的魔法效应。",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Raging Elements|Shaman|WoW|Elements|WoW|3"
+					"subclassFeature": "怒火元素|萨满祭司|WoW|元素|WoW|3"
 				}
 			]
 		},
 		{
-			"name": "Raging Elements",
+			"ENG_name": "Raging Elements",
+			"name": "怒火元素",
 			"source": "WoW",
-			"className": "Shaman",
+			"className": "萨满祭司",
 			"classSource": "WoW",
-			"subclassShortName": "Elements",
+			"subclassShortName": "元素",
 			"subclassSource": "WoW",
 			"level": 3,
 			"entries": [
-				"Whenever you activate your {@classFeature Rage|Barbarian|XPHB|1|XPHB}, you can take one of the following Raging Elements options of your choice as part of that {@variantrule Bonus Action|XPHB}. While your {@classFeature Rage|Barbarian|XPHB|1|XPHB|rage} is active, you can take a {@variantrule Bonus Action|XPHB} to use that option again or a different option.",
-				"If a Raging Elements option requires a saving throw, the DC equals 8 plus your Constitution modifier and {@variantrule Proficiency|XPHB|Proficiency Bonus}.",
+				"每当你激活{@classFeature 狂暴|野蛮人|XPHB|1|XPHB}时，你可以作为该{@variantrule 附赠动作|XPHB}的一部分，选择以下怒火元素选项之一。当你的{@classFeature 狂暴|野蛮人|XPHB|1|XPHB|rage}生效期间，你可以以一个{@variantrule 附赠动作|XPHB}再次使用该选项或改用另一选项。",
+				"怒火元素选项若需豁免检定，其 DC 等于 8 加你的体质调整值与{@variantrule 熟练|XPHB|熟练加值}。",
 				{
+					"ENG_name": "Icefury",
+					"name": "寒冰之怒",
 					"type": "entries",
-					"name": "Icefury",
 					"entries": [
-						"When this effect is activated, roll a number of d8s equal to your {@classFeature Rage|Barbarian|XPHB|1|XPHB} Damage bonus, and add them together. You hurl frigid ice at one creature within 30 feet of yourself. Make either a melee spell attack (if the target is within 5 feet) or a ranged spell attack, using Constitution as your spellcasting ability. On a hit, the attack deals Cold damage equal to the number rolled, and the next time the target takes Fire damage before the end of your next turn, it takes an extra {@damage 1d10} Fire damage."
+						"此效应激活时，掷等同于你{@classFeature 狂暴|野蛮人|XPHB|1|XPHB}伤害加值数量的 d8 并求和。你向 30 尺内一个生物掷出酷寒坚冰。进行近战法术攻击（若目标在 5 尺内）或远程法术攻击，以体质为施法属性。命中时，该攻击造成等同于掷骰总和的寒冷伤害，且在你的下个回合结束前，目标下次受到火焰伤害时，额外受{@damage 1d10}点火焰伤害。"
 					]
 				},
 				{
+					"ENG_name": "Lava Burst",
+					"name": "熔岩爆裂",
 					"type": "entries",
-					"name": "Lava Burst",
 					"entries": [
-						"When this effect is activated, roll a number of d4s equal to your {@classFeature Rage|Barbarian|XPHB|1|XPHB} Damage bonus, and add them together. You then hurl molten lava at one creature you can see within 30 feet. The target makes a Dexterity saving throw. On a failed save, the target takes Fire damage equal to the number rolled, and the next time the target takes Lightning damage until the end of your next turn, it takes an extra {@damage 1d8} Lightning damage. On a successful save, the target takes half as much damage only."
+						"此效应激活时，掷等同于你{@classFeature 狂暴|野蛮人|XPHB|1|XPHB}伤害加值数量的 d4 并求和。随后你向 30 尺内一个可见生物掷出熔岩。目标进行敏捷豁免。豁免失败的目标受等同于掷骰总和的火焰伤害，且在你的下个回合结束前，目标下次受到闪电伤害时，额外受{@damage 1d8}点闪电伤害。豁免成功则仅受一半伤害。"
 					]
 				},
 				{
+					"ENG_name": "Lightning Bolt",
+					"name": "闪电束",
 					"type": "entries",
-					"name": "Lightning Bolt",
 					"entries": [
-						"When this effect is activated, roll a number of d6s equal to your {@classFeature Rage|Barbarian|XPHB|1|XPHB} Damage bonus, and add them together. You can then hurl a bolt of lightning at one other creature you can see within 30 feet. The target makes a Dexterity saving throw. On a failed save, the target takes Lightning damage equal to the roll's total, and the next time the target takes Cold damage until the end of your next turn, it takes an extra {@damage 1d6} Cold damage. On a successful save, the target takes half as much damage only."
+						"此效应激活时，掷等同于你{@classFeature 狂暴|野蛮人|XPHB|1|XPHB}伤害加值数量的 d6 并求和。随后你可以向 30 尺内另一个可见生物掷出一道闪电。目标进行敏捷豁免。豁免失败的目标受等同于掷骰总和的闪电伤害，且在你的下个回合结束前，目标下次受到寒冷伤害时，额外受{@damage 1d6}点寒冷伤害。豁免成功则仅受一半伤害。"
 					]
 				}
 			]
 		},
 		{
-			"name": "Echo of the Elements",
+			"ENG_name": "Echo of the Elements",
+			"name": "元素回响",
 			"source": "WoW",
-			"className": "Shaman",
+			"className": "萨满祭司",
 			"classSource": "WoW",
-			"subclassShortName": "Elements",
+			"subclassShortName": "元素",
 			"subclassSource": "WoW",
 			"level": 6,
 			"header": 2,
 			"consumes": {
-				"name": "Rage"
+				"ENG_name": "Rage",
+				"name": "狂暴"
 			},
 			"entries": [
-				"You tap into the tranquility of the elements. You know the {@spell Elementalism|XPHB} cantrip. In addition, you can expend a use of your {@classFeature Rage|Barbarian|XPHB|1|XPHB} to cast {@spell Daylight|XPHB}, {@spell Water Walk|XPHB}, or {@spell Wind Wall|XPHB}. Wisdom is your spellcasting ability for these spells."
+				"你汲取元素的宁静。你习得{@spell 四象法门|XPHB}戏法。此外，你可以消耗一次{@classFeature 狂暴|野蛮人|XPHB|1|XPHB}的使用次数，施展{@spell 昼明术|XPHB}、{@spell 水上行走|XPHB}或{@spell 风墙术|XPHB}。就这些法术而言，你的施法属性是感知。"
 			]
 		},
 		{
-			"name": "Primordial Bond",
+			"ENG_name": "Primordial Bond",
+			"name": "原初羁绊",
 			"source": "WoW",
-			"className": "Shaman",
+			"className": "萨满祭司",
 			"classSource": "WoW",
-			"subclassShortName": "Elements",
+			"subclassShortName": "元素",
 			"subclassSource": "WoW",
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"While your {@classFeature Rage|Barbarian|XPHB|1|XPHB} is active, you have {@variantrule Resistance|XPHB} to Cold, Fire, and Lightning damage."
+				"当你的{@classFeature 狂暴|野蛮人|XPHB|1|XPHB}生效期间，你对寒冷、火焰和闪电伤害具有{@variantrule 抗性|XPHB}。"
 			]
 		},
 		{
-			"name": "Elemental Overload",
+			"ENG_name": "Elemental Overload",
+			"name": "元素过载",
 			"source": "WoW",
-			"className": "Shaman",
+			"className": "萨满祭司",
 			"classSource": "WoW",
-			"subclassShortName": "Elements",
+			"subclassShortName": "元素",
 			"subclassSource": "WoW",
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"The power of the storm you channel grows mightier, lashing out at your foes. Your {@subclassFeature Raging Elements|Shaman|WoW|Elements|WoW|3|WoW} options gain the following effects.",
+				"你引导的风暴之力愈发强大，向你的敌人横扫而去。你的{@subclassFeature 怒火元素|萨满祭司|WoW|元素|WoW|3|WoW}选项获得以下效果。",
 				{
+					"ENG_name": "Icefury",
+					"name": "寒冰之怒",
 					"type": "entries",
-					"name": "Icefury",
 					"entries": [
-						"Whether or not you hit the target with this option, the target subtracts half the number rolled (round down) from the next damage roll it makes before the start of your next turn."
+						"无论你以此选项是否命中目标，目标在你的下个回合开始前进行的下次伤害掷骰，都减去掷骰总和的一半（向下取整）。"
 					]
 				},
 				{
+					"ENG_name": "Lava Burst",
+					"name": "熔岩爆裂",
 					"type": "entries",
-					"name": "Lava Burst",
 					"entries": [
-						"Whether or not the target fails its saving throw against this option, the target and each enemy within 10 feet of it start {@hazard burning|XPHB}."
+						"无论目标与此选项的豁免是否失败，目标及其 10 尺内的每个敌人开始{@hazard burning|XPHB}。"
 					]
 				},
 				{
+					"ENG_name": "Lightning Bolt",
+					"name": "闪电束",
 					"type": "entries",
-					"name": "Lightning Bolt",
 					"entries": [
-						"Whether or not the target fails its saving throw against this option, a bolt of lightning leaps from the target to another target of your choice that you can see within 30 feet of the first target. The new target makes a Dexterity saving throw, taking Lightning damage equal to the roll's total on a failed save or half as much damage on a successful one."
+						"无论目标与此选项的豁免是否失败，一道闪电从目标跃向第一个目标 30 尺内另一个由你选择的可见目标。新目标进行敏捷豁免，失败者受等同于掷骰总和的闪电伤害，成功者仅受一半伤害。"
 					]
 				}
 			]
 		},
 		{
-			"name": "Path of the Spiritual Guardian",
+			"ENG_name": "Path of the Spiritual Guardian",
+			"name": "灵体卫士道途",
 			"source": "WoW",
-			"className": "Shaman",
+			"className": "萨满祭司",
 			"classSource": "WoW",
-			"subclassShortName": "Spiritual Guardian",
+			"subclassShortName": "灵体卫士",
 			"subclassSource": "WoW",
 			"level": 3,
 			"entries": [
-				"{@i Call on the Spirits for Combat Aid}",
-				"Barbarians who walk the Path of the Spiritual Guardian call on spirits\u2014whether bestial spirits of nature, spirits of departed ancestors, or spirits of raw elemental power\u2014to guide and protect them. When these Barbarians rage, they contact the realm of the spirits and call on them for aid.",
+				"{@i 呼唤灵体前来助战}",
+				"行走灵体卫士道途的野蛮人呼唤灵体\u2014\u2014无论是自然的野兽之灵、逝去先祖之灵，还是纯粹元素之力之灵\u2014\u2014引导并守护他们。当这些野蛮人狂暴时，他们便沟通灵界，请求援助。",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Spiritual Protectors|Shaman|WoW|Spiritual Guardian|WoW|3"
+					"subclassFeature": "灵魂守护者|萨满祭司|WoW|灵体卫士|WoW|3"
 				}
 			]
 		},
 		{
-			"name": "Spiritual Protectors",
+			"ENG_name": "Spiritual Protectors",
+			"name": "灵魂守护者",
 			"source": "WoW",
-			"className": "Shaman",
+			"className": "萨满祭司",
 			"classSource": "WoW",
-			"subclassShortName": "Spiritual Guardian",
+			"subclassShortName": "灵体卫士",
 			"subclassSource": "WoW",
 			"level": 3,
 			"entries": [
-				"Your {@classFeature Rage|Barbarian|XPHB|1|XPHB} summons spectral warriors to your aid. While your {@classFeature Rage|Barbarian|XPHB|1|XPHB} is active, when you hit a creature with a weapon or an {@variantrule Unarmed Strike|XPHB}, that creature becomes a target of the spirits, which cause one of the following effects of your choice.",
+				"你的{@classFeature 狂暴|野蛮人|XPHB|1|XPHB}召唤幽灵战士前来助阵。当你的{@classFeature 狂暴|野蛮人|XPHB|1|XPHB}生效期间，每当你以武器或{@variantrule 徒手打击|XPHB}命中一个生物，该生物便成为灵体的目标，灵体造成以下由你选择的效果之一。",
 				{
+					"ENG_name": "Distract",
+					"name": "牵制",
 					"type": "entries",
-					"name": "Distract",
 					"entries": [
-						"Until the start of your next turn, the target has {@variantrule Disadvantage|XPHB} on attack rolls against targets other than you or another Barbarian who has this feature."
+						"直到你的下个回合开始，目标对非你、亦非其他拥有此特性的野蛮人的目标进行攻击检定时具有{@variantrule 劣势|XPHB}。"
 					]
 				},
 				{
+					"ENG_name": "Hinder",
+					"name": "阻碍",
 					"type": "entries",
-					"name": "Hinder",
 					"entries": [
-						"You can activate the {@itemMastery Slow} mastery property in addition to a different mastery property you're using with that weapon."
+						"除了你正随该武器使用的另一掌握词条外，你还可以激活{@itemMastery 缓速}掌握词条。"
 					]
 				},
 				{
+					"ENG_name": "Strike",
+					"name": "打击",
 					"type": "entries",
-					"name": "Strike",
 					"entries": [
-						"The target takes an extra {@damage 1d4} damage, which can be Cold, Fire, or Lightning damage (your choice)."
+						"目标额外受{@damage 1d4}点伤害，其类型可以为寒冷、火焰或闪电伤害（由你选择）。"
 					]
 				}
 			]
 		},
 		{
-			"name": "Spirit Shield",
+			"ENG_name": "Spirit Shield",
+			"name": "精魂之盾",
 			"source": "WoW",
-			"className": "Shaman",
+			"className": "萨满祭司",
 			"classSource": "WoW",
-			"subclassShortName": "Spiritual Guardian",
+			"subclassShortName": "灵体卫士",
 			"subclassSource": "WoW",
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"Your guardian spirits can provide supernatural protection to those you defend. While your {@classFeature Rage|Barbarian|XPHB|1|XPHB} is active, when another creature you can see within 30 feet of you takes damage, you can take a {@variantrule Reaction|XPHB} to reduce that damage. To determine the amount the damage is reduced by, roll a number of d6s equal to your {@classFeature Rage|Barbarian|XPHB|1|XPHB} Damage bonus, and add them together."
+				"你的守护灵体能为你所守护的人提供超自然的庇护。当你的{@classFeature 狂暴|野蛮人|XPHB|1|XPHB}生效期间，当你 30 尺内另一个可见生物受到伤害时，你可以以一个{@variantrule 反应|XPHB}减少该伤害。为决定伤害减少的数值，掷等同于你{@classFeature 狂暴|野蛮人|XPHB|1|XPHB}伤害加值数量的 d6 并求和。"
 			]
 		},
 		{
-			"name": "Consult the Spirits",
+			"ENG_name": "Consult the Spirits",
+			"name": "问道精魂",
 			"source": "WoW",
-			"className": "Shaman",
+			"className": "萨满祭司",
 			"classSource": "WoW",
-			"subclassShortName": "Spiritual Guardian",
+			"subclassShortName": "灵体卫士",
 			"subclassSource": "WoW",
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"You gain the ability to consult with your guardian spirits. When you do so, you cast the {@spell Augury|XPHB} or {@spell Clairvoyance|XPHB} spell without expending a spell slot or needing Material components. Rather than creating a spherical sensor, this use of {@spell Clairvoyance|XPHB} invisibly summons one of your guardian spirits to the chosen location. Wisdom is your spellcasting ability for these spells.",
-				"After you cast either spell in this way, you can't use this feature again until you finish a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB}."
+				"你获得与守护灵体商议的能力。此时你施展{@spell 卜筮术|XPHB}或{@spell 鹰眼术|XPHB}法术，无需消耗法术位或材料成分。此用法下的{@spell 鹰眼术|XPHB}并非创造球形感应器，而是隐形地召唤你的一名守护灵体前往所选地点。就这些法术而言，你的施法属性是感知。",
+				"以此方式施展任一法术后，你须完成{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}才能再次使用此特性。"
 			]
 		},
 		{
-			"name": "Spirits' Fury",
+			"ENG_name": "Spirits' Fury",
+			"name": "灵体之怒",
 			"source": "WoW",
-			"className": "Shaman",
+			"className": "萨满祭司",
 			"classSource": "WoW",
-			"subclassShortName": "Spiritual Guardian",
+			"subclassShortName": "灵体卫士",
 			"subclassSource": "WoW",
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"Your spirits hasten your attacks. When you make an attack roll with a Melee weapon as part of the {@action Attack|XPHB} action and roll 18\u201320 on the {@dice d20}, you can make one additional attack roll with the same weapon as part of that action. Once you use this feature, you can't do so again until the start of your next turn."
+				"你的灵体令你的攻击更加迅疾。当你以近战武器进行作为{@action 攻击|XPHB}动作一部分的攻击检定且{@dice d20}掷出 18\u201320 时，你可以作为该动作的一部分用同一武器再进行一次攻击检定。使用此特性后，直到你的下个回合开始你不能再次使用。"
 			]
 		}
 	]

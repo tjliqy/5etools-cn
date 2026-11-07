@@ -1,7 +1,8 @@
 {
 	"spell": [
 		{
-			"name": "Apotheosis",
+			"ENG_name": "Apotheosis",
+			"name": "神圣化身",
 			"source": "WoW",
 			"page": 54,
 			"level": 9,
@@ -31,26 +32,29 @@
 				}
 			],
 			"entries": [
-				"You transform into a spectral, angelic form that grants you the following benefits.",
+				"你化为一具幽灵般的天使形态，获得以下收益。",
 				{
+					"ENG_name": "Angelic Wings",
+					"name": "天使之翼",
 					"type": "entries",
-					"name": "Angelic Wings",
 					"entries": [
-						"You have a {@variantrule Fly Speed|XPHB} of 90 feet."
+						"你的{@variantrule 飞行速度|XPHB}为 90 尺。"
 					]
 				},
 				{
+					"ENG_name": "Spectral Form",
+					"name": "幽灵形态",
 					"type": "entries",
-					"name": "Spectral Form",
 					"entries": [
-						"You have {@variantrule Resistance|XPHB} to Bludgeoning, Piercing, Radiant, and Slashing damage."
+						"你具有对钝击、穿刺、光耀和挥砍伤害的{@variantrule 抗性|XPHB}。"
 					]
 				},
 				{
+					"ENG_name": "Holy Empowerment",
+					"name": "神圣强化",
 					"type": "entries",
-					"name": "Holy Empowerment",
 					"entries": [
-						"Whenever you cast a spell using a spell slot that restores {@variantrule Hit Points|XPHB} to one or more creatures or deals Radiant damage, determine the spell's effects as if you had used a spell slot 2 levels higher than the spell slot you used to cast it (maximum of level 9)."
+						"每当你使用法术位施展能为一个或多个生物恢复{@variantrule 生命值|XPHB}或造成光耀伤害的法术时，按比你实际消耗的法术位高 2 环（最高 9 环）来决定该法术的效果。"
 					]
 				}
 			],
@@ -65,7 +69,8 @@
 			]
 		},
 		{
-			"name": "Arcane Pulse",
+			"ENG_name": "Arcane Pulse",
+			"name": "奥术脉冲",
 			"source": "WoW",
 			"page": 78,
 			"level": 0,
@@ -97,7 +102,7 @@
 				}
 			],
 			"entries": [
-				"You create a pulse of arcane energy in a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from yourself. Each creature of your choice within this area makes a Constitution saving throw. On a failed save, it takes {@damage 1d8} Force damage, and its {@variantrule Speed|XPHB} is reduced by 10 feet (to a minimum of 0 feet) until the end of your next turn."
+				"你以自身为中心创造一道 10 尺{@variantrule 光环 [效应区域]|XPHB|光环}的奥术能量脉冲。区域内的每个目标生物进行体质豁免。豁免失败者受{@damage 1d8}点力场伤害，且其{@variantrule 速度|XPHB}降低 10 尺（最低为 0 尺），直到你的下个回合结束。"
 			],
 			"damageInflict": [
 				"force"
@@ -107,7 +112,8 @@
 			]
 		},
 		{
-			"name": "Azure Strike",
+			"ENG_name": "Azure Strike",
+			"name": "蔚蓝打击",
 			"source": "WoW",
 			"page": 31,
 			"level": 1,
@@ -139,14 +145,15 @@
 				}
 			],
 			"entries": [
-				"You fire rays of arcane and frigid energy at up to two targets within range that are within 30 feet of each other. Make a ranged spell attack for each target. On a hit, the target takes {@damage 2d6} Force damage, and its {@variantrule Speed|XPHB} is reduced by 10 feet until the end of its next turn."
+				"你向射程内最多两个彼此相距 30 尺内的目标射出奥术与酷寒能量束。对每个目标各进行一次远程法术攻击。命中时，目标受{@damage 2d6}点力场伤害，且其{@variantrule 速度|XPHB}降低 10 尺，直到其下个回合结束。"
 			],
 			"entriesHigherLevel": [
 				{
+					"ENG_name": "Using a Higher-Level Spell Slot",
+					"name": "升环施法",
 					"type": "entries",
-					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"The damage increases by {@dice 1d6} for each spell slot level above 1."
+						"以高于 1 环的法术位施展此法术时，每升高一环，伤害增加 {@dice 1d6}。"
 					]
 				}
 			],
@@ -158,7 +165,8 @@
 			]
 		},
 		{
-			"name": "Azure Sweep",
+			"ENG_name": "Azure Sweep",
+			"name": "蔚蓝横扫",
 			"source": "WoW",
 			"page": 31,
 			"level": 6,
@@ -190,7 +198,7 @@
 				}
 			],
 			"entries": [
-				"Pure magic sweeps out from you in a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation}. Creatures of your choice in the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} make a Constitution saving throw. On a failed save, a creature takes {@damage 7d8} Force damage, and its {@variantrule Speed|XPHB} is reduced by 20 feet for the duration. On a successful save, the target takes half as much damage only."
+				"纯粹的魔法以你为中心向外横扫，形成一个30尺的{@variantrule 光环 [效应区域]|XPHB|光环}。你选择该{@variantrule 光环 [效应区域]|XPHB|光环}内的生物进行一次体质豁免。豁免失败时，该生物受到{@damage 7d8}力场伤害，且其{@variantrule 速度|XPHB}在持续时间内减少20尺。豁免成功时，目标仅受到一半伤害。"
 			],
 			"damageInflict": [
 				"force"
@@ -200,7 +208,8 @@
 			]
 		},
 		{
-			"name": "Blistering Scales",
+			"ENG_name": "Blistering Scales",
+			"name": "灼痛之鳞",
 			"source": "WoW",
 			"page": 31,
 			"level": 3,
@@ -221,7 +230,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a scale of a Dragon"
+				"m": "一片龙鳞"
 			},
 			"duration": [
 				{
@@ -234,14 +243,15 @@
 				}
 			],
 			"entries": [
-				"Choose a willing creature you can see within range. Five explosive scales form on the target, granting it a +1 bonus to AC for the duration. If a creature hits the target with a melee attack roll before the spell ends, a scale explodes, and the attacking creature takes {@damage 1d8} Fire damage. The spell ends early if the target has no explosive scales."
+				"选择射程内一名你能看见的自愿生物。五片爆裂鳞片在目标身上成形，在持续时间内为其 AC 提供 +1 加值。法术结束前，若有生物以近战攻击检定命中目标，一片鳞片爆裂，攻击者受{@damage 1d8}点火焰伤害。目标失去所有爆裂鳞片后，法术提前结束。"
 			],
 			"entriesHigherLevel": [
 				{
+					"ENG_name": "Using a Higher-Level Spell Slot",
+					"name": "升环施法",
 					"type": "entries",
-					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"The number of explosive scales that form on the target increases by one for each spell slot level above 3."
+						"以高于 3 环的法术位施展此法术时，每升高一环，目标身上形成的爆炸鳞片便增加 1 片。"
 					]
 				}
 			],
@@ -255,7 +265,8 @@
 			]
 		},
 		{
-			"name": "Bonestorm",
+			"ENG_name": "Bonestorm",
+			"name": "白骨风暴",
 			"source": "WoW",
 			"page": 14,
 			"level": 5,
@@ -282,7 +293,7 @@
 				}
 			],
 			"entries": [
-				"You conjure a whirl of battering bone and gore around yourself. You regain {@dice 4d6} {@variantrule Hit Points|XPHB}, and each creature in a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from you makes a Constitution saving throw. A target takes {@damage 4d8} Necrotic damage on a failed save or half as much damage on a successful one."
+				"你在自身周围召唤一场骨肉横飞的旋风。你回复{@dice 4d6}点{@variantrule 生命值|XPHB}，以你为中心 10 尺{@variantrule 光环 [效应区域]|XPHB|光环}内的每个生物进行体质豁免。豁免失败的目标受{@damage 4d8}点黯蚀伤害，成功则仅受一半伤害。"
 			],
 			"damageInflict": [
 				"necrotic"
@@ -295,7 +306,8 @@
 			]
 		},
 		{
-			"name": "Breath of Eons",
+			"ENG_name": "Breath of Eons",
+			"name": "万世龙息",
 			"source": "WoW",
 			"page": 31,
 			"level": 4,
@@ -327,19 +339,21 @@
 				}
 			],
 			"entries": [
-				"You draw on the magic of the bronze dragonflight. For the duration, you gain the following benefits.",
+				"你汲取青铜龙军团的魔法。在持续时间内，你获得以下收益。",
 				{
+					"ENG_name": "Temporal Wounds",
+					"name": "时序创伤",
 					"type": "entries",
-					"name": "Temporal Wounds",
 					"entries": [
-						"When you move within 5 feet of a creature, you can curse it until the start of your next turn. While a creature is cursed, the next time it takes damage, it takes an extra {@damage 1d10} Force damage, and the curse ends. A creature can be cursed this way only once per turn."
+						"当你移动到某生物 5 尺内时，你可以诅咒它直到你的下个回合开始。生物受诅咒期间，其下次受到伤害时额外受{@damage 1d10}点力场伤害，随后诅咒结束。每回合只能以这种方式诅咒一个生物一次。"
 					]
 				},
 				{
+					"ENG_name": "Wings",
+					"name": "飞翼",
 					"type": "entries",
-					"name": "Wings",
 					"entries": [
-						"You sprout spectral wings from your back if you don't already have wings. You have a {@variantrule Fly Speed|XPHB} of 60 feet and can hover. In addition, your movement doesn't provoke {@action Opportunity Attack|XPHB|Opportunity Attacks}."
+						"如果你本没有翅膀，背后会长出幽灵双翼。你的{@variantrule 飞行速度|XPHB}为 60 尺且可以悬浮。此外，你的移动不会引发{@action 借机攻击|XPHB|借机攻击}。"
 					]
 				}
 			],
@@ -348,7 +362,8 @@
 			]
 		},
 		{
-			"name": "Chains of Ice",
+			"ENG_name": "Chains of Ice",
+			"name": "寒冰锁链",
 			"source": "WoW",
 			"page": 14,
 			"level": 1,
@@ -375,14 +390,15 @@
 				}
 			],
 			"entries": [
-				"You create chains of ice around a creature you can see within range. The target makes a Dexterity saving throw. On a failed save, the target takes {@damage 1d10} Cold damage, and its {@variantrule Speed|XPHB} is halved until the end of its next turn. On a successful save, the target takes half as much damage only."
+				"你在射程内一个可见生物周围造出寒冰锁链。目标进行敏捷豁免。豁免失败的目标受{@damage 1d10}点寒冷伤害，且其{@variantrule 速度|XPHB}减半直到其下个回合结束。豁免成功则仅受一半伤害。"
 			],
 			"entriesHigherLevel": [
 				{
+					"ENG_name": "Using a Higher-Level Spell Slot",
+					"name": "升环施法",
 					"type": "entries",
-					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"The damage increases by {@dice 1d10} for each spell slot level above 1."
+						"以高于 1 环的法术位施展此法术时，每升高一环，伤害增加 {@dice 1d10}。"
 					]
 				}
 			],
@@ -397,7 +413,8 @@
 			]
 		},
 		{
-			"name": "Chaos Nova",
+			"ENG_name": "Chaos Nova",
+			"name": "混沌新星",
 			"source": "WoW",
 			"page": 19,
 			"level": 4,
@@ -424,7 +441,7 @@
 				}
 			],
 			"entries": [
-				"Chaos energy bursts out in a 20-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from you. Each creature of your choice in the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} takes {@damage 2d6} Force damage and must succeed on a Wisdom saving throw or have the {@condition Stunned|XPHB} condition until the end of your next turn."
+				"混沌能量以你为中心，在20尺范围内爆发出一道{@variantrule 光环 [效应区域]|XPHB|光环}。位于该{@variantrule 光环 [效应区域]|XPHB|光环}内每个你选择的生物受到{@damage 2d6}力场伤害，并且必须成功通过一次感知豁免，否则将陷入{@condition 震慑|XPHB}状态，持续到你的下一个回合结束。"
 			],
 			"damageInflict": [
 				"force"
@@ -437,7 +454,8 @@
 			]
 		},
 		{
-			"name": "Collapsing Star",
+			"ENG_name": "Collapsing Star",
+			"name": "坍缩之星",
 			"source": "WoW",
 			"page": 19,
 			"level": 4,
@@ -464,7 +482,7 @@
 				}
 			],
 			"entries": [
-				"You channel Void energy into a cataclysmic blast that fills a 20-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on a point you can see within range. Each creature of your choice within the {@variantrule Sphere [Area of Effect]|XPHB|Sphere} makes a Constitution saving throw, taking {@damage 4d12} Force damage on a failed save or half as much damage on a successful one."
+				"你将虚空能量引导为一场灾变冲击，填充一个以你视线范围内某点为中心、半径20尺的{@variantrule 球状 [效应区域]|XPHB|球状}区域。你选择的位于该{@variantrule 球状 [效应区域]|XPHB|球状}区域内的每个生物必须进行一次体质豁免，豁免失败则受到{@damage 4d12}力场伤害，豁免成功则只受到一半伤害。"
 			],
 			"damageInflict": [
 				"force"
@@ -477,7 +495,8 @@
 			]
 		},
 		{
-			"name": "Combustion",
+			"ENG_name": "Combustion",
+			"name": "灼热焚烧",
 			"source": "WoW",
 			"page": 41,
 			"level": 6,
@@ -509,8 +528,8 @@
 				}
 			],
 			"entries": [
-				"You engulf yourself in flames for the duration, shedding {@variantrule Bright Light|XPHB} in a 20-foot radius and {@variantrule Dim Light|XPHB} for an additional 10 feet. These flames grant you {@variantrule Immunity|XPHB} to Fire damage. While they last, you have {@variantrule Advantage|XPHB} on spell attack rolls.",
-				"At the end of each of your turns, each creature of your choice in a 5-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from you takes {@damage 3d8} Fire damage."
+				"你在持续时间内被烈焰包裹，散发 20 尺半径的{@variantrule 明亮光照|XPHB}及额外 10 尺的{@variantrule 微光光照|XPHB}。这些火焰使你对火焰伤害具有{@variantrule 免疫|XPHB}。火焰持续期间，你的法术攻击检定具有{@variantrule 优势|XPHB}。",
+				"在你的每个回合结束时，以你为中心 5 尺{@variantrule 光环 [效应区域]|XPHB|光环}内的每个目标生物受{@damage 3d8}点火焰伤害。"
 			],
 			"damageImmune": [
 				"fire"
@@ -524,7 +543,8 @@
 			]
 		},
 		{
-			"name": "Consecration",
+			"ENG_name": "Consecration",
+			"name": "奉献",
 			"source": "WoW",
 			"page": 49,
 			"level": 2,
@@ -556,7 +576,7 @@
 				}
 			],
 			"entries": [
-				"You consecrate the area in a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from you. Creatures of your choice that start their turn in the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} take {@damage 1d8} Radiant damage. The {@variantrule Emanation [Area of Effect]|XPHB|Emanation} is {@variantrule Difficult Terrain|XPHB} for Fiends and Undead."
+				"你奉献一个以你为源点、半径15尺的{@variantrule 光环 [效应区域]|XPHB|光环}区域。由你选择的、在其回合开始时位于该{@variantrule 光环 [效应区域]|XPHB|光环}内的生物受到{@damage 1d8}光耀伤害。该{@variantrule 光环 [效应区域]|XPHB|光环}对邪魔和不死生物而言是{@variantrule 困难地形|XPHB}。"
 			],
 			"damageInflict": [
 				"radiant"
@@ -566,7 +586,8 @@
 			]
 		},
 		{
-			"name": "Consume Soul",
+			"ENG_name": "Consume Soul",
+			"name": "吞噬灵魂",
 			"source": "WoW",
 			"page": 19,
 			"level": 1,
@@ -593,14 +614,15 @@
 				}
 			],
 			"entries": [
-				"You drain the essence from a creature within range, which makes a Constitution saving throw. On a failed save, it takes {@damage 4d4} Force damage, and you gain {@variantrule Temporary Hit Points|XPHB} equal to half the Force damage dealt. On a successful save, it takes half as much damage only."
+				"你抽取射程内一个生物的本源，该生物进行体质豁免。豁免失败者受{@damage 4d4}点力场伤害，你获得等同于所造成力场伤害一半的{@variantrule 临时生命值|XPHB}。豁免成功则仅受一半伤害。"
 			],
 			"entriesHigherLevel": [
 				{
+					"ENG_name": "Using a Higher-Level Spell Slot",
+					"name": "升环施法",
 					"type": "entries",
-					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"The damage increases by {@dice 1d4} for each spell slot level above 1."
+						"以高于 1 环的法术位施展此法术时，每升高一环，伤害增加 {@dice 1d4}。"
 					]
 				}
 			],
@@ -615,7 +637,8 @@
 			]
 		},
 		{
-			"name": "Curse of Agony",
+			"ENG_name": "Curse of Agony",
+			"name": "痛苦诅咒",
 			"source": "WoW",
 			"page": 64,
 			"level": 2,
@@ -647,7 +670,7 @@
 				}
 			],
 			"entries": [
-				"You curse one creature within range with excruciating pain. The target makes a Constitution saving throw; the spell's damage starts at {@damage 1d4} Psychic damage. On a failed save, the target takes the spell's damage, and the spell's damage die increases: from {@dice 1d4} to {@dice 1d6}, {@dice 1d6} to {@dice 1d8}, {@dice 1d8} to {@dice 1d10}, or {@dice 1d10} to {@dice 1d12} (the maximum). On a successful save, the target takes the spell's damage, and the effect ends. The target repeats the save at the end of each of its turns."
+				"你以剧痛诅咒射程内一个生物。目标进行体质豁免；法术伤害起始为{@damage 1d4}点心灵伤害。豁免失败时，目标受法术伤害，且法术的伤害骰升级：从{@dice 1d4}升为{@dice 1d6}、{@dice 1d6}升为{@dice 1d8}、{@dice 1d8}升为{@dice 1d10}，或{@dice 1d10}升为{@dice 1d12}（上限）。豁免成功时，目标受法术伤害，效应结束。目标在其每个回合结束时重复豁免。"
 			],
 			"damageInflict": [
 				"psychic"
@@ -657,7 +680,8 @@
 			]
 		},
 		{
-			"name": "Death and Decay",
+			"ENG_name": "Death and Decay",
+			"name": "枯萎凋零",
 			"source": "WoW",
 			"page": 14,
 			"level": 2,
@@ -684,7 +708,7 @@
 				}
 			],
 			"entries": [
-				"Corruption ripples out in a 20-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} from a point on the ground you can see within range. Each creature in that area makes a Wisdom saving throw. On a failed save, a target takes {@damage 2d6} Necrotic damage and is cursed until the end of your next turn. If you deal damage to a cursed target with an attack roll, the target takes an extra {@damage 1d6} Necrotic damage. On a successful save, the target takes half as much damage only."
+				"腐化从射程内可见的地面一点荡开，形成半径 20 尺的{@variantrule 球状 [效应区域]|XPHB|球状}。区域内的每个生物进行感知豁免。豁免失败的目标受{@damage 2d6}点黯蚀伤害，并被诅咒直到你的下个回合结束。如果你以攻击检定对受诅咒目标造成伤害，目标额外受{@damage 1d6}点黯蚀伤害。豁免成功则仅受一半伤害。"
 			],
 			"damageInflict": [
 				"necrotic"
@@ -697,7 +721,8 @@
 			]
 		},
 		{
-			"name": "Death Grip",
+			"ENG_name": "Death Grip",
+			"name": "死亡之握",
 			"source": "WoW",
 			"page": 14,
 			"level": 1,
@@ -724,7 +749,7 @@
 				}
 			],
 			"entries": [
-				"You harness runic energies to bind a foe to you. One creature you can see within range must succeed on a Strength saving throw or be pulled straight toward you to the nearest unoccupied space within 5 feet of you."
+				"你驾驭符文能量将敌人缚于己身。射程内一个可见生物必须通过力量豁免，否则被直线拖向你，至你 5 尺内最近的未被占据空间。"
 			],
 			"savingThrow": [
 				"strength"
@@ -735,7 +760,8 @@
 			]
 		},
 		{
-			"name": "Demon Spikes",
+			"ENG_name": "Demon Spikes",
+			"name": "恶魔尖刺",
 			"source": "WoW",
 			"page": 19,
 			"level": 3,
@@ -765,7 +791,7 @@
 				}
 			],
 			"entries": [
-				"You surge with fel power and sprout hard, jagged spikes. You gain a +2 bonus to AC for the duration, and when a creature within 5 feet of you hits you with a melee attack roll, it takes 10 Piercing damage."
+				"邪能之力在你体内奔涌，长出坚硬的锯齿尖刺。在持续时间内你的 AC 获得 +2 加值，且当 5 尺内的生物以近战攻击检定命中你时，它受 10 点穿刺伤害。"
 			],
 			"damageInflict": [
 				"piercing"
@@ -775,7 +801,8 @@
 			]
 		},
 		{
-			"name": "Divine Shield",
+			"ENG_name": "Divine Shield",
+			"name": "圣盾术",
 			"source": "WoW",
 			"page": 49,
 			"level": 4,
@@ -784,7 +811,7 @@
 				{
 					"number": 1,
 					"unit": "reaction",
-					"condition": "which you take when you take damage"
+					"condition": "当你受到伤害时执行"
 				}
 			],
 			"range": {
@@ -806,7 +833,7 @@
 				}
 			],
 			"entries": [
-				"You have {@variantrule Immunity|XPHB} to all damage until the start of your next turn, including the triggering damage. For the duration, your {@variantrule Speed|XPHB} can't be reduced, any current reductions to your {@variantrule Speed|XPHB} are suspended, and no effect can move you against your will."
+				"直到你的下个回合开始前，你对所有伤害具有{@variantrule 免疫|XPHB}，包括触发此效果的伤害。在此持续时间内，你的{@variantrule 速度|XPHB}无法被降低，任何对你{@variantrule 速度|XPHB}的当前降低效果都将被暂停，且没有效果能违背你的意愿移动你。"
 			],
 			"damageImmune": [
 				"acid",
@@ -825,7 +852,8 @@
 			]
 		},
 		{
-			"name": "Dream Breath",
+			"ENG_name": "Dream Breath",
+			"name": "梦境吐息",
 			"source": "WoW",
 			"page": 31,
 			"level": 2,
@@ -853,14 +881,15 @@
 				}
 			],
 			"entries": [
-				"You exhale verdant healing magic. Each creature of your choice in a 15-foot {@variantrule Cone [Area of Effect]|XPHB|Cone} regains {@dice 2d6} {@variantrule Hit Points|XPHB}."
+				"你呼出苍翠的治疗魔法。15 尺{@variantrule 锥状 [效应区域]|XPHB|锥状}内的每个目标生物回复{@dice 2d6}点{@variantrule 生命值|XPHB}。"
 			],
 			"entriesHigherLevel": [
 				{
+					"ENG_name": "Using a Higher-Level Spell Slot",
+					"name": "升环施法",
 					"type": "entries",
-					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"The healing increases by {@dice 2d6} for each spell slot level above 2."
+						"以高于 2 环的法术位施展此法术时，每升高一环，恢复的生命值增加 {@dice 2d6}。"
 					]
 				}
 			],
@@ -869,7 +898,8 @@
 			]
 		},
 		{
-			"name": "Dream Flight",
+			"ENG_name": "Dream Flight",
+			"name": "梦境飞行",
 			"source": "WoW",
 			"page": 31,
 			"level": 5,
@@ -901,19 +931,21 @@
 				}
 			],
 			"entries": [
-				"You draw on the magic of the green dragonflight. For the duration, you gain the following benefits.",
+				"你汲取绿龙军团的魔法。在持续时间内，你获得以下收益。",
 				{
+					"ENG_name": "Healing Presence",
+					"name": "治疗之息",
 					"type": "entries",
-					"name": "Healing Presence",
 					"entries": [
-						"When you move within 5 feet of a creature, you can restore {@dice 5d4} {@variantrule Hit Points|XPHB} to that creature. A creature can regain these {@variantrule Hit Points|XPHB} only once per turn."
+						"当你移动至一个生物5尺内时，你可以为该生物恢复{@dice 5d4}点{@variantrule 生命值|XPHB}。一个生物每回合只能以此方式恢复一次{@variantrule 生命值|XPHB}。"
 					]
 				},
 				{
+					"ENG_name": "Wings",
+					"name": "飞翼",
 					"type": "entries",
-					"name": "Wings",
 					"entries": [
-						"You sprout spectral wings from your back if you don't already have wings. You have a {@variantrule Fly Speed|XPHB} of 60 feet and can hover. In addition, your movement doesn't provoke {@action Opportunity Attack|XPHB|Opportunity Attacks}."
+						"如果你本没有翅膀，背后会长出幽灵双翼。你的{@variantrule 飞行速度|XPHB}为 60 尺且可以悬浮。此外，你的移动不会引发{@action 借机攻击|XPHB|借机攻击}。"
 					]
 				}
 			],
@@ -922,7 +954,8 @@
 			]
 		},
 		{
-			"name": "Ebon Might",
+			"ENG_name": "Ebon Might",
+			"name": "黑檀之力",
 			"source": "WoW",
 			"page": 32,
 			"level": 1,
@@ -950,7 +983,7 @@
 				}
 			],
 			"entries": [
-				"As you invoke the black dragonflight, draconic might erupts from you. Each creature of your choice in a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from you is empowered until the end of your next turn. While a creature is empowered, when it hits a target with an attack roll, the attack deals an extra {@damage 1d4} Force damage."
+				"当你祈唤黑龙军团时，巨龙之力自你体内迸发。以你为中心 10 尺{@variantrule 光环 [效应区域]|XPHB|光环}内的每个目标生物获得强化，直到你的下个回合结束。生物受强化期间，其以攻击检定命中目标时，该攻击额外造成{@damage 1d4}点力场伤害。"
 			],
 			"damageInflict": [
 				"force"
@@ -960,7 +993,8 @@
 			]
 		},
 		{
-			"name": "Emberstorm",
+			"ENG_name": "Emberstorm",
+			"name": "余烬风暴",
 			"source": "WoW",
 			"page": 32,
 			"level": 4,
@@ -988,15 +1022,16 @@
 				}
 			],
 			"entries": [
-				"White-hot embers fill a 20-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on a point you choose within range. Each creature in the {@variantrule Sphere [Area of Effect]|XPHB|Sphere} makes a Constitution saving throw, taking {@damage 6d8} Fire damage on a failed save or half as much damage on a successful one.",
-				"Creatures and flammable objects in the {@variantrule Sphere [Area of Effect]|XPHB|Sphere} that aren't being worn or carried start {@hazard burning|XPHB}, taking {@damage 1d8} Fire damage at the start of each of their turns instead of the normal {@hazard burning|XPHB} damage."
+				"白热余烬充满一个以你选择范围内一点为中心、半径20尺的{@variantrule 球状 [效应区域]|XPHB|球状}。{@variantrule 球状 [效应区域]|XPHB|球状}内的每个生物需进行一次体质豁免，豁免失败则受到{@damage 6d8}点火焰伤害，豁免成功则只受一半伤害。",
+				"位于该{@variantrule 球状 [效应区域]|XPHB|球状}区域内且未被穿着或携带的生物和可燃物开始{@hazard burning|XPHB}，在其每回合开始时受到{@damage 1d8}火焰伤害，而非通常的{@hazard burning|XPHB}伤害。"
 			],
 			"entriesHigherLevel": [
 				{
+					"ENG_name": "Using a Higher-Level Spell Slot",
+					"name": "升环施法",
 					"type": "entries",
-					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"The damage increases by {@dice 1d8} for each spell slot level above 4."
+						"以高于 4 环的法术位施展此法术时，每升高一环，伤害增加 {@dice 1d8}。"
 					]
 				}
 			],
@@ -1012,7 +1047,8 @@
 			]
 		},
 		{
-			"name": "Emerald Blossom",
+			"ENG_name": "Emerald Blossom",
+			"name": "翡翠之花",
 			"source": "WoW",
 			"page": 32,
 			"level": 3,
@@ -1045,15 +1081,16 @@
 				}
 			],
 			"entries": [
-				"You conjure a spectral bulb that sprouts from the ground in an unoccupied space that you can see within range. The bulb lasts for the duration.",
-				"The bulb emits healing magic in a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} at the end of each of your turns. Allies of your choice in the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} regain 5 {@variantrule Hit Points|XPHB}. The bulb vanishes when it restores a total of 20 {@variantrule Hit Points|XPHB}."
+				"你召唤一枚幽灵球茎，从射程内可见的未被占据空间的地面破土而出。球茎持续存在至法术结束。",
+				"在你的每个回合结束时，花苞会向10尺范围内的{@variantrule 光环 [效应区域]|XPHB|光环}散发治疗魔法。你选择的位于该{@variantrule 光环 [效应区域]|XPHB|光环}内的盟友恢复5点{@variantrule 生命值|XPHB}。当花苞总共恢复了20点{@variantrule 生命值|XPHB}时，它便会消失。"
 			],
 			"entriesHigherLevel": [
 				{
+					"ENG_name": "Using a Higher-Level Spell Slot",
+					"name": "升环施法",
 					"type": "entries",
-					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"The total {@variantrule Hit Points|XPHB} the bulb can restore increases by 5 for each spell slot level above 3."
+						"以高于 3 环的法术位施展此法术时，每升高一环，花蕾可恢复的{@variantrule 生命值|XPHB}总量增加 5。"
 					]
 				}
 			],
@@ -1063,7 +1100,8 @@
 			]
 		},
 		{
-			"name": "Entropic Embrace",
+			"ENG_name": "Entropic Embrace",
+			"name": "熵能之拥",
 			"source": "WoW",
 			"page": 78,
 			"level": 1,
@@ -1072,7 +1110,7 @@
 				{
 					"number": 1,
 					"unit": "reaction",
-					"condition": "which you take when you make a D20 Test with Advantage or Disadvantage and roll the same number on both dice"
+					"condition": "当你进行具有优势或劣势的D20检定，且两颗骰子掷出相同数字时触发"
 				}
 			],
 			"range": {
@@ -1094,35 +1132,39 @@
 				}
 			],
 			"entries": [
-				"You are empowered by the essence of the Void for the duration, becoming swathed in shadow and taking on a dark-blue or purple appearance. While this effect lasts, you gain the following benefits.",
+				"在持续时间内，虚空的本源强化了你，你被暗影包裹，呈现出深蓝或紫色的外观。此效应持续期间，你获得以下收益。",
 				{
+					"ENG_name": "Preternatural Calm",
+					"name": "超然宁静",
 					"type": "entries",
-					"name": "Preternatural Calm",
 					"entries": [
-						"You automatically succeed on Constitution saving throws to maintain {@status Concentration|XPHB}."
+						"你自动通过为维持{@status 专注|XPHB}而进行的体质豁免。"
 					]
 				},
 				{
+					"ENG_name": "Shadow Shroud",
+					"name": "暗影蔽体",
 					"type": "entries",
-					"name": "Shadow Shroud",
 					"entries": [
-						"You are shrouded in shadow, making your space {@variantrule Lightly Obscured|XPHB}."
+						"你被暗影笼罩，你所在的空间成为{@variantrule 轻度遮蔽|XPHB}。"
 					]
 				},
 				{
+					"ENG_name": "Touch of the Void",
+					"name": "虚空之触",
 					"type": "entries",
-					"name": "Touch of the Void",
 					"entries": [
-						"Once on each of your turns, you can deal an extra {@damage 1d4} Necrotic damage to one creature when you deal damage to it, or you can restore an extra {@dice 1d4} {@variantrule Hit Points|XPHB} to one creature when you heal it."
+						"你的每个回合一次，当你对一个生物造成伤害时，可以使其额外受{@damage 1d4}点黯蚀伤害；或当你治疗一个生物时，可以为其额外回复{@dice 1d4}点{@variantrule 生命值|XPHB}。"
 					]
 				}
 			],
 			"entriesHigherLevel": [
 				{
+					"ENG_name": "Using a Higher-Level Spell Slot",
+					"name": "升环施法",
 					"type": "entries",
-					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"The extra damage or healing from the Touch of the Void effect increases by {@dice 1d4} for each spell slot level above 1."
+						"以高于 1 环的法术位施展此法术时，每升高一环，虚空之触效应造成的额外伤害或恢复的生命值增加 {@dice 1d4}。"
 					]
 				}
 			],
@@ -1135,7 +1177,8 @@
 			]
 		},
 		{
-			"name": "Eruption",
+			"ENG_name": "Eruption",
+			"name": "喷发",
 			"source": "WoW",
 			"page": 32,
 			"level": 2,
@@ -1163,15 +1206,16 @@
 				}
 			],
 			"entries": [
-				"The ground in a 20-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on a point within range erupts with flames. Each creature in the {@variantrule Sphere [Area of Effect]|XPHB|Sphere} makes a Dexterity saving throw, taking {@damage 3d8} Fire damage on a failed save or half as much damage on a successful one.",
-				"The cracks turn the ground in the {@variantrule Sphere [Area of Effect]|XPHB|Sphere} into {@variantrule Difficult Terrain|XPHB} until the end of your next turn, at which point they close."
+				"以射程内一点为中心，半径20尺的{@variantrule 球状 [效应区域]|XPHB|球状}范围内的地面喷发出火焰。该{@variantrule 球状 [效应区域]|XPHB|球状}内的每个生物需进行一次敏捷豁免，豁免失败则受到{@damage 3d8}点火焰伤害，豁免成功则伤害减半。",
+				"裂隙将{@variantrule 球状 [效应区域]|XPHB|球状}范围内的地面变为{@variantrule 困难地形|XPHB}，直到你的下个回合结束，届时裂隙会闭合。"
 			],
 			"entriesHigherLevel": [
 				{
+					"ENG_name": "Using a Higher-Level Spell Slot",
+					"name": "升环施法",
 					"type": "entries",
-					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"The damage increases by {@dice 1d8} for each spell slot level above 2."
+						"以高于 2 环的法术位施展此法术时，每升高一环，伤害增加 {@dice 1d8}。"
 					]
 				}
 			],
@@ -1186,7 +1230,8 @@
 			]
 		},
 		{
-			"name": "Explosive Trap",
+			"ENG_name": "Explosive Trap",
+			"name": "爆炸陷阱",
 			"source": "WoW",
 			"page": 37,
 			"level": 5,
@@ -1218,7 +1263,7 @@
 				}
 			],
 			"entries": [
-				"An {@condition Invisible|XPHB}, intangible trap appears on the ground at a point you choose within range. The first time a creature comes within 5 feet of the trap, the trap explodes in a fiery burst that fills a 20-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on the trap. The spell ends, and each creature within the {@variantrule Sphere [Area of Effect]|XPHB|Sphere} makes a Dexterity saving throw. On a failed save, a creature takes {@damage 8d6} Fire damage and, if it is Huge or smaller, is pushed 20 feet straight away from the trap's location."
+				"一个{@condition 隐形|XPHB}、无形的陷阱出现在你选择范围内的一点地面上。当一个生物首次进入陷阱5尺范围内时，陷阱会爆炸，产生一次火焰爆发，充满以陷阱为中心的20尺半径{@variantrule 球状 [效应区域]|XPHB|球状}。法术结束，{@variantrule 球状 [效应区域]|XPHB|球状}内的每个生物需进行一次敏捷豁免。豁免失败时，生物受到{@damage 8d6}火焰伤害，并且如果它是巨型或更小的体型，会被径直推离陷阱位置20尺。"
 			],
 			"damageInflict": [
 				"fire"
@@ -1231,7 +1276,8 @@
 			]
 		},
 		{
-			"name": "Eye Beam",
+			"ENG_name": "Eye Beam",
+			"name": "眼棱",
 			"source": "WoW",
 			"page": 20,
 			"level": 2,
@@ -1263,14 +1309,15 @@
 				}
 			],
 			"entries": [
-				"You concentrate your magic into your eyes. When you cast the spell, and as a {@action Magic|XPHB} action on your subsequent turns for the duration, you can unleash a burst of fel magic. Each creature in a 15-foot {@variantrule Cone [Area of Effect]|XPHB|Cone} makes a Dexterity saving throw, taking {@damage 3d6} Force damage on a failed save or half as much damage on a successful one."
+				"你将魔法凝聚于双眼。施展此法术时，以及持续时间内你后续回合的{@action 魔法|XPHB}动作中，你可以释放一股邪能爆发。15 尺{@variantrule 锥状 [效应区域]|XPHB|锥状}内的每个生物进行敏捷豁免，失败者受{@damage 3d6}点力场伤害，成功者仅受一半伤害。"
 			],
 			"entriesHigherLevel": [
 				{
+					"ENG_name": "Using a Higher-Level Spell Slot",
+					"name": "升环施法",
 					"type": "entries",
-					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"The damage increases by {@dice 1d6} for each spell slot level above 1."
+						"以高于 1 环的法术位施展此法术时，每升高一环，伤害增加 {@dice 1d6}。"
 					]
 				}
 			],
@@ -1282,7 +1329,8 @@
 			]
 		},
 		{
-			"name": "Fel Rush",
+			"ENG_name": "Fel Rush",
+			"name": "邪能冲刺",
 			"source": "WoW",
 			"page": 20,
 			"level": 1,
@@ -1308,15 +1356,16 @@
 				}
 			],
 			"entries": [
-				"Fiery fel magic surrounds you and grants you explosive speed. Until the end of your turn, your {@variantrule Speed|XPHB} increases by 30 feet, and your movement doesn't provoke {@action Opportunity Attack|XPHB|Opportunity Attacks}.",
-				"When you move within 5 feet of a creature or an object that isn't being worn or carried, it makes a Dexterity saving throw, taking {@damage 2d6} Fire damage on a failed save or half as much damage on a successful one. A creature or object can take this damage only once per turn."
+				"炽烈的邪能魔法环绕你，赋予你爆发的速度。直到你的回合结束，你的{@variantrule 速度|XPHB}提高 30 尺，且你的移动不会引发{@action 借机攻击|XPHB|借机攻击}。",
+				"当你移动到某生物或未被穿戴携带的物体 5 尺内时，其进行敏捷豁免，失败者受{@damage 2d6}点火焰伤害，成功者仅受一半伤害。一个生物或物体每回合只能受此伤害一次。"
 			],
 			"entriesHigherLevel": [
 				{
+					"ENG_name": "Using a Higher-Level Spell Slot",
+					"name": "升环施法",
 					"type": "entries",
-					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"The damage increases by {@dice 1d6} for each spell slot level above 1."
+						"以高于 1 环的法术位施展此法术时，每升高一环，伤害增加 {@dice 1d6}。"
 					]
 				}
 			],
@@ -1331,7 +1380,8 @@
 			]
 		},
 		{
-			"name": "Feral Prowl",
+			"ENG_name": "Feral Prowl",
+			"name": "野性潜行",
 			"source": "WoW",
 			"page": 26,
 			"level": 2,
@@ -1361,14 +1411,15 @@
 				}
 			],
 			"entries": [
-				"You shape-shift as if you had used {@classFeature Wild Shape|Druid|XPHB|2|XPHB}, but you don't expend a use of your {@classFeature Wild Shape|Druid|XPHB|2|XPHB}. You have the {@condition Invisible|XPHB} condition until the spell ends. The spell ends early immediately after you make an attack roll, deal damage, cast a spell, or revert to your natural form."
+				"你如同使用了{@classFeature 荒野形态|德鲁伊|XPHB|2|XPHB}一般变形，但不消耗{@classFeature 荒野形态|德鲁伊|XPHB|2|XPHB}的使用次数。直到法术结束，你处于{@condition 隐形|XPHB}状态。你进行攻击检定、造成伤害、施展法术或变回原形后，法术立即提前结束。"
 			],
 			"conditionInflict": [
 				"invisible"
 			]
 		},
 		{
-			"name": "Fiery Brand",
+			"ENG_name": "Fiery Brand",
+			"name": "烈火烙印",
 			"source": "WoW",
 			"page": 20,
 			"level": 2,
@@ -1399,8 +1450,8 @@
 				}
 			],
 			"entries": [
-				"You magically place a fiery demonic symbol on a creature within range, which makes a Wisdom saving throw. On a failed save, the creature takes {@damage 3d10} Fire damage and is cursed. While it remains cursed, you have {@variantrule Resistance|XPHB} to all damage it deals. On a successful save, it takes half as much damage only.",
-				"A cursed creature repeats the save at the end of each of its turns, ending the spell on a success."
+				"你以魔法将一枚炽烈的恶魔符记烙在射程内一个生物身上，该生物进行感知豁免。豁免失败的生物受{@damage 3d10}点火焰伤害并被诅咒。它受诅咒期间，你对其造成的所有伤害具有{@variantrule 抗性|XPHB}。豁免成功则仅受一半伤害。",
+				"受诅咒的生物在其每个回合结束时重复豁免，成功则法术对其结束。"
 			],
 			"damageResist": [
 				"acid",
@@ -1425,7 +1476,8 @@
 			]
 		},
 		{
-			"name": "Flurry",
+			"ENG_name": "Flurry",
+			"name": "冰枪连射",
 			"source": "WoW",
 			"page": 41,
 			"level": 3,
@@ -1453,14 +1505,15 @@
 				}
 			],
 			"entries": [
-				"You hurl three shards of ice at one target within range or at several. Make a ranged spell attack for each shard. On a hit, the target takes {@damage 3d6} Cold damage. On a {@variantrule Critical Hit|XPHB}, the target has the {@condition Restrained|XPHB} condition until the end of your next turn."
+				"你向射程内一个或多个目标掷出三枚冰片。对每枚冰片各进行一次远程法术攻击。命中时，目标受{@damage 3d6}点寒冷伤害。若为{@variantrule 重击|XPHB}，目标受{@condition 束缚|XPHB}状态直到你的下个回合结束。"
 			],
 			"entriesHigherLevel": [
 				{
+					"ENG_name": "Using a Higher-Level Spell Slot",
+					"name": "升环施法",
 					"type": "entries",
-					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"You create one additional shard of ice for each spell slot level above 3."
+						"以高于 3 环的法术位施展此法术时，每升高一环，你便额外创造一枚冰晶碎片。"
 					]
 				}
 			],
@@ -1475,7 +1528,8 @@
 			]
 		},
 		{
-			"name": "Freezing Trap",
+			"ENG_name": "Freezing Trap",
+			"name": "冰冻陷阱",
 			"source": "WoW",
 			"page": 37,
 			"level": 1,
@@ -1507,7 +1561,7 @@
 				}
 			],
 			"entries": [
-				"An {@condition Invisible|XPHB}, intangible trap appears on the ground at a point you choose within range. The first time a creature comes within 5 feet of the trap, the trap explodes in a burst of frost, the spell ends, and the triggering creature makes a Constitution saving throw. On a failed save, the target has the {@condition Restrained|XPHB} condition for 1 minute. If the creature takes any damage, the {@condition Restrained|XPHB} condition from the trap ends."
+				"一个{@condition 隐形|XPHB}且无形的陷阱出现在射程内你选择的地面一点。当生物首次进入陷阱 5 尺内时，陷阱爆发出一股霜寒，法术结束，触发生物进行体质豁免。豁免失败的目标受{@condition 束缚|XPHB}状态 1 分钟。若该生物受到任何伤害，来自陷阱的{@condition 束缚|XPHB}状态结束。"
 			],
 			"conditionInflict": [
 				"restrained"
@@ -1517,7 +1571,8 @@
 			]
 		},
 		{
-			"name": "Frost Nova",
+			"ENG_name": "Frost Nova",
+			"name": "冰霜新星",
 			"source": "WoW",
 			"page": 41,
 			"level": 1,
@@ -1545,14 +1600,15 @@
 				}
 			],
 			"entries": [
-				"You unleash a burst of frost, creating a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from you. Each creature of your choice in the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} makes a Constitution saving throw. On a failed save, a creature takes {@damage 2d6} Cold damage, and it has the {@condition Restrained|XPHB} condition until the end of your next turn. On a successful save, the creature takes half as much damage only."
+				"你释放出一股冰霜爆发，创造一个以你为源点的15尺{@variantrule 光环 [效应区域]|XPHB|光环}。位于该{@variantrule 光环 [效应区域]|XPHB|光环}内每个你选择的生物需进行一次体质豁免。豁免失败时，该生物受到{@damage 2d6}冷冻伤害，并且获得{@condition 束缚|XPHB}状态，持续至你的下个回合结束。豁免成功时，该生物仅受到一半伤害。"
 			],
 			"entriesHigherLevel": [
 				{
+					"ENG_name": "Using a Higher-Level Spell Slot",
+					"name": "升环施法",
 					"type": "entries",
-					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"The damage increases by {@dice 1d6} for each spell slot level above 1."
+						"以高于 1 环的法术位施展此法术时，每升高一环，伤害增加 {@dice 1d6}。"
 					]
 				}
 			],
@@ -1567,7 +1623,8 @@
 			]
 		},
 		{
-			"name": "Frostscythe",
+			"ENG_name": "Frostscythe",
+			"name": "霜之镰",
 			"source": "WoW",
 			"page": 14,
 			"level": 2,
@@ -1594,14 +1651,15 @@
 				}
 			],
 			"entries": [
-				"Sweeping your weapon before you, you unleash a blast of icy cold. Each creature in a 20-foot {@variantrule Cone [Area of Effect]|XPHB|Cone} makes a Constitution saving throw. On a failed save, a creature takes {@damage 3d8} Cold damage, and its {@variantrule Speed|XPHB} is reduced by 10 feet for 1 minute. On a successful save, a creature takes half as much damage only."
+				"你挥扫身前的武器，释放一股酷寒冲击。20 尺{@variantrule 锥状 [效应区域]|XPHB|锥状}内的每个生物进行体质豁免。豁免失败的生物受{@damage 3d8}点寒冷伤害，且其{@variantrule 速度|XPHB}降低 10 尺，持续 1 分钟。豁免成功则仅受一半伤害。"
 			],
 			"entriesHigherLevel": [
 				{
+					"ENG_name": "Using a Higher-Level Spell Slot",
+					"name": "升环施法",
 					"type": "entries",
-					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"The damage increases by {@dice 1d8} for each spell slot level above 2."
+						"以高于 2 环的法术位施展此法术时，每升高一环，伤害增加 {@dice 1d8}。"
 					]
 				}
 			],
@@ -1613,7 +1671,8 @@
 			]
 		},
 		{
-			"name": "Guided Prayer",
+			"ENG_name": "Guided Prayer",
+			"name": "引导祈祷",
 			"source": "WoW",
 			"page": 49,
 			"level": 3,
@@ -1622,7 +1681,7 @@
 				{
 					"number": 1,
 					"unit": "reaction",
-					"condition": "which you take when you become Bloodied or take damage while you are Bloodied"
+					"condition": "当你进入浴血状态或处于浴血状态期间受到伤害时执行"
 				}
 			],
 			"range": {
@@ -1640,7 +1699,7 @@
 				}
 			],
 			"entries": [
-				"You regain {@variantrule Hit Points|XPHB} equal to {@dice 8d4} plus your spellcasting ability modifier. You have {@variantrule Advantage|XPHB} on the next attack roll you make before the end of your next turn."
+				"你回复{@dice 8d4}加你的施法属性调整值点{@variantrule 生命值|XPHB}。在你的下个回合结束前，你进行的下一次攻击检定具有{@variantrule 优势|XPHB}。"
 			],
 			"miscTags": [
 				"ADV",
@@ -1648,7 +1707,8 @@
 			]
 		},
 		{
-			"name": "Hand of Gul'dan",
+			"ENG_name": "Hand of Gul'dan",
+			"name": "古尔丹之手",
 			"source": "WoW",
 			"page": 65,
 			"level": 3,
@@ -1681,8 +1741,8 @@
 				}
 			],
 			"entries": [
-				"A demonic meteor hurtles from you to a point you choose within range and then erupts. Each creature in a 20-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on that point makes a Dexterity saving throw, taking {@damage 2d8} Fire damage plus {@damage 2d8} Necrotic damage on a failed save or half as much damage on a successful one.",
-				"Demonic spirits resembling fel imps flit about the {@variantrule Sphere [Area of Effect]|XPHB|Sphere} for the duration. A creature that enters the {@variantrule Sphere [Area of Effect]|XPHB|Sphere} or ends its turn there makes a Dexterity saving throw, taking {@damage 1d8} Fire damage plus {@damage 1d8} Necrotic damage on a failed save or half as much damage on a successful one. A creature can be affected by this spell only once per turn."
+				"一颗恶魔陨石从你手中呼啸飞向射程内你选择的一点并爆发。以该点为中心、半径 20 尺{@variantrule 球状 [效应区域]|XPHB|球状}内的每个生物进行敏捷豁免，失败者受{@damage 2d8}点火焰伤害加{@damage 2d8}点黯蚀伤害，成功者仅受一半伤害。",
+				"恶魔精魂，形似邪能小鬼，在法术持续时间内环绕着{@variantrule 球状 [效应区域]|XPHB|球状}区域飞舞。一个生物若进入{@variantrule 球状 [效应区域]|XPHB|球状}区域或在其内结束其回合，则需进行一次敏捷豁免，豁免失败则受到{@damage 1d8}火焰伤害加上{@damage 1d8}黯蚀伤害，豁免成功则只受到一半伤害。一个生物每回合只能被此法术影响一次。"
 			],
 			"damageInflict": [
 				"fire",
@@ -1693,7 +1753,8 @@
 			]
 		},
 		{
-			"name": "Holy Nova",
+			"ENG_name": "Holy Nova",
+			"name": "神圣新星",
 			"source": "WoW",
 			"page": 54,
 			"level": 4,
@@ -1720,14 +1781,15 @@
 				}
 			],
 			"entries": [
-				"An explosion of holy light surrounds you in a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation}, harming your enemies and healing your allies. Each creature of your choice in the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} makes a Constitution saving throw, taking {@damage 5d6} Radiant damage on a failed save or half as much damage on a successful one. Each other creature in the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} regains {@dice 3d6} {@variantrule Hit Points|XPHB}."
+				"一阵神圣光芒的爆炸在你周围30尺的{@variantrule 光环 [效应区域]|XPHB|光环}内爆发，伤害你的敌人并治疗你的盟友。你选择的{@variantrule 光环 [效应区域]|XPHB|光环}内的每个生物必须进行一次体质豁免，豁免失败则受到{@damage 5d6}光耀伤害，豁免成功则只受一半伤害。{@variantrule 光环 [效应区域]|XPHB|光环}内的其他每个生物恢复{@dice 3d6}{@variantrule 生命值|XPHB}。"
 			],
 			"entriesHigherLevel": [
 				{
+					"ENG_name": "Using a Higher-Level Spell Slot",
+					"name": "升环施法",
 					"type": "entries",
-					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"The damage and healing each increase by {@dice 1d6} for each spell slot level above 4."
+						"以高于 4 环的法术位施展此法术时，每升高一环，伤害和恢复的生命值各增加 {@dice 1d6}。"
 					]
 				}
 			],
@@ -1742,7 +1804,8 @@
 			]
 		},
 		{
-			"name": "Infernal Strike",
+			"ENG_name": "Infernal Strike",
+			"name": "地狱火撞击",
 			"source": "WoW",
 			"page": 20,
 			"level": 1,
@@ -1769,14 +1832,15 @@
 				}
 			],
 			"entries": [
-				"You jump through the air without provoking {@action Opportunity Attack|XPHB|Opportunity Attacks} and land in an unoccupied space within 30 feet. Each creature in a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from you makes a Dexterity saving throw. On a failed save, a creature takes {@damage 2d6} Fire damage and has {@variantrule Disadvantage|XPHB} on attack rolls against creatures other than you until the start of your next turn. On a successful save, it takes half as much damage only."
+				"你腾空跃起而不引发{@action 借机攻击|XPHB|借机攻击}，落在 30 尺内一处未被占据的空间。以你为中心 10 尺{@variantrule 光环 [效应区域]|XPHB|光环}内的每个生物进行敏捷豁免。豁免失败的生物受{@damage 2d6}点火焰伤害，且在你下个回合开始前，其对非你生物的攻击检定具有{@variantrule 劣势|XPHB}。豁免成功则仅受一半伤害。"
 			],
 			"entriesHigherLevel": [
 				{
+					"ENG_name": "Using a Higher-Level Spell Slot",
+					"name": "升环施法",
 					"type": "entries",
-					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"The damage increases by {@dice 1d6} for each spell slot level above 1."
+						"以高于 1 环的法术位施展此法术时，每升高一环，伤害增加 {@dice 1d6}。"
 					]
 				}
 			],
@@ -1788,7 +1852,8 @@
 			]
 		},
 		{
-			"name": "Innervate",
+			"ENG_name": "Innervate",
+			"name": "激活",
 			"source": "WoW",
 			"page": 26,
 			"level": 5,
@@ -1815,12 +1880,13 @@
 				}
 			],
 			"entries": [
-				"A creature of your choice within range gains a level 4 spell slot. The spell slot vanishes after it is expended or the target finishes a {@variantrule Long Rest|XPHB}. It can use this spell slot to cast any spell it has prepared.",
-				"In addition, you regain one expended use of {@classFeature Wild Shape|Druid|XPHB|2|XPHB}."
+				"射程内一个目标生物获得一个 4 环法术位。该法术位在消耗后或目标完成{@variantrule 长休|XPHB}后消失。它可以用此法术位施展任意已准备的法术。",
+				"此外，你恢复一次已消耗的{@classFeature 荒野形态|德鲁伊|XPHB|2|XPHB}使用次数。"
 			]
 		},
 		{
-			"name": "Lay Waste",
+			"ENG_name": "Lay Waste",
+			"name": "肆虐",
 			"source": "WoW",
 			"page": 32,
 			"level": 7,
@@ -1847,8 +1913,8 @@
 				}
 			],
 			"entries": [
-				"You draw a deep breath and spew molten cinders along a 120-foot-long, 10-foot-wide {@variantrule Line [Area of Effect]|XPHB|Line} originating from you in a direction you choose. Each creature in the {@variantrule Line [Area of Effect]|XPHB|Line} makes a Dexterity saving throw, taking {@damage 12d6} Fire damage on a failed save or half as much damage on a successful one.",
-				"You then teleport to an unoccupied space within 5 feet of the end of the {@variantrule Line [Area of Effect]|XPHB|Line}."
+				"你深吸一口气，朝你选择的方向喷出一道120尺长、10尺宽的{@variantrule 线状 [效应区域]|XPHB|线状}熔岩余烬。处于该{@variantrule 线状 [效应区域]|XPHB|线状}区域内的每个生物必须进行一次敏捷豁免，豁免失败则受到{@damage 12d6}点火焰伤害，豁免成功则伤害减半。",
+				"随后你传送到{@variantrule 线状 [效应区域]|XPHB|线状}末端 5 尺内一处未被占据的空间。"
 			],
 			"damageInflict": [
 				"fire"
@@ -1858,7 +1924,8 @@
 			]
 		},
 		{
-			"name": "Leeching Strike",
+			"ENG_name": "Leeching Strike",
+			"name": "吸血打击",
 			"source": "WoW",
 			"page": 15,
 			"level": 3,
@@ -1867,7 +1934,7 @@
 				{
 					"number": 1,
 					"unit": "bonus",
-					"condition": "which you take immediately after hitting a target with a Melee weapon or an Unarmed Strike"
+					"condition": "当你使用近战武器或徒手打击命中目标后立即执行"
 				}
 			],
 			"range": {
@@ -1885,14 +1952,15 @@
 				}
 			],
 			"entries": [
-				"The target hit by the strike takes an extra {@damage 3d8} Necrotic damage from the attack, and you regain {@dice 3d4} {@variantrule Hit Points|XPHB}."
+				"被此打击命中的目标额外受{@damage 3d8}点黯蚀伤害，你回复{@dice 3d4}点{@variantrule 生命值|XPHB}。"
 			],
 			"entriesHigherLevel": [
 				{
+					"ENG_name": "Using a Higher-Level Spell Slot",
+					"name": "升环施法",
 					"type": "entries",
-					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"The damage increases by {@dice 1d8}, and the {@variantrule Hit Points|XPHB} you regain increase by {@dice 1d4}, for each spell slot level above 3."
+						"以高于 3 环的法术位施展此法术时，每升高一环，伤害增加 {@dice 1d8}，你恢复的{@variantrule 生命值|XPHB}增加 {@dice 1d4}。"
 					]
 				}
 			],
@@ -1904,7 +1972,8 @@
 			]
 		},
 		{
-			"name": "Living Flame",
+			"ENG_name": "Living Flame",
+			"name": "活焰",
 			"source": "WoW",
 			"page": 32,
 			"level": 1,
@@ -1931,23 +2000,25 @@
 				}
 			],
 			"entries": [
-				"Flickering flames hurtle toward a creature you choose within range. Choose one of these options:",
+				"摇曳的火焰扑向射程内你选择的一个生物。选择以下选项之一：",
 				{
 					"type": "list",
 					"style": "list-hang-notitle",
 					"items": [
 						{
+							"ENG_name": "Healing Flames",
+							"name": "疗愈之焰",
 							"type": "item",
-							"name": "Healing Flames",
 							"entries": [
-								"The target regains {@dice 2d6} {@variantrule Hit Points|XPHB}."
+								"目标回复{@dice 2d6}点{@variantrule 生命值|XPHB}。"
 							]
 						},
 						{
+							"ENG_name": "Searing Flames",
+							"name": "灼烧之焰",
 							"type": "item",
-							"name": "Searing Flames",
 							"entries": [
-								"Make a ranged attack roll against the target. On a hit, the target takes {@damage 2d8} Fire damage."
+								"对目标进行一次远程攻击检定。命中时，目标受{@damage 2d8}点火焰伤害。"
 							]
 						}
 					]
@@ -1955,10 +2026,11 @@
 			],
 			"entriesHigherLevel": [
 				{
+					"ENG_name": "Using a Higher-Level Spell Slot",
+					"name": "升环施法",
 					"type": "entries",
-					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"For every two spell slot levels above 1, you can choose an additional target (two targets with a level 3 or 4 slot, three targets with a level 5 or 6 slot, four targets with a level 7 or 8 slot, and five targets with a level 9 slot). You choose the flames' effect separately for each target."
+						"以 3 环或更高环阶的法术位施展此法术时，每高出 2 环，便可额外选择一个目标（使用 3 环或 4 环法术位时可选择两个目标，使用 5 环或 6 环法术位时可选择三个目标，使用 7 环或 8 环法术位时可选择四个目标，使用 9 环法术位时可选择五个目标）。你分别为每个目标选择烈焰效应。"
 					]
 				}
 			],
@@ -1970,7 +2042,8 @@
 			]
 		},
 		{
-			"name": "Mass Polymorph",
+			"ENG_name": "Mass Polymorph",
+			"name": "群体变形术",
 			"source": "WoW",
 			"page": 41,
 			"level": 9,
@@ -1991,7 +2064,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a caterpillar cocoon"
+				"m": "一枚毛毛虫茧"
 			},
 			"duration": [
 				{
@@ -2004,11 +2077,11 @@
 				}
 			],
 			"entries": [
-				"You attempt to transform any number of creatures in a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from you into identical Beasts. Each creature in the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} must succeed on a Wisdom saving throw or shapeshift into a Beast form for the duration. A creature that isn't a Beast, a Giant, a Humanoid, or a Monstrosity automatically succeeds on its saving throw.",
-				"The new form can be any {@filter Beast|bestiary|type=beast|challenge rating=[&0]|miscellaneous=!swarm} you choose that has a {@variantrule Challenge Rating|XPHB} of 0 ({@creature Goat|XMM} is recommended). Each target's game statistics are replaced by the stat block of the chosen Beast, but the target retains its alignment, personality, creature type, {@variantrule Hit Points|XPHB}, and {@variantrule Hit Point Dice|XPHB}.",
-				"Each target gains a number of {@variantrule Temporary Hit Points|XPHB} equal to the {@variantrule Hit Points|XPHB} of the Beast form. The spell ends early on the target if it has no {@variantrule Temporary Hit Points|XPHB} left.",
-				"The targets are limited in the actions they can perform by the anatomy of their new form, and they can't speak or cast spells.",
-				"Each target's gear melds into the new form. The creature can't use or otherwise benefit from any of that equipment."
+				"你尝试将你周围30尺{@variantrule 光环 [效应区域]|XPHB|光环}内的任意数量的生物转变为相同的野兽形态。{@variantrule 光环 [效应区域]|XPHB|光环}内的每个生物必须成功通过一次感知豁免，否则在法术持续时间内变形为野兽形态。非野兽、巨人、类人生物或怪兽的生物自动通过豁免。",
+				"新形态可以是任意你选择的{@variantrule 挑战等级|XPHB}为 0 的{@filter 野兽|bestiary|type=beast|challenge rating=[&0]|miscellaneous=!swarm}（推荐{@creature 山羊|XMM}）。每个目标的游戏数据被所选野兽的属性数据块取代，但目标保留其阵营、性格、生物类型、{@variantrule 生命值|XPHB}和{@variantrule 生命值骰|XPHB}。",
+				"每个目标获得等同于野兽形态{@variantrule 生命值|XPHB}的{@variantrule 临时生命值|XPHB}。目标失去所有{@variantrule 临时生命值|XPHB}后，法术对其提前结束。",
+				"目标受新形态解剖结构限制，无法执行其形态不允许的动作，也不能说话或施展法术。",
+				"每个目标的装备融入新形态。该生物无法使用或以其他方式从那些装备中获益。"
 			],
 			"savingThrow": [
 				"wisdom"
@@ -2018,7 +2091,8 @@
 			]
 		},
 		{
-			"name": "Metamorphosis",
+			"ENG_name": "Metamorphosis",
+			"name": "恶魔变形",
 			"source": "WoW",
 			"page": 20,
 			"level": 3,
@@ -2039,7 +2113,7 @@
 				"v": true,
 				"s": true,
 				"m": {
-					"text": "one soul fragment, which the spell consumes",
+					"text": "一枚灵魂碎片，法术会将其消耗",
 					"consume": true
 				}
 			},
@@ -2053,30 +2127,33 @@
 				}
 			],
 			"entries": [
-				"Uttering an incantation, you draw on fel or Void magic to transform yourself, taking on demonic features. You gain one of the following benefits of your choice until the spell ends:",
+				"念诵咒文，你汲取邪能或虚空魔法改造自身，呈现恶魔特征。直到法术结束，你获得以下由你选择的收益之一：",
 				{
 					"type": "list",
 					"style": "list-hang-notitle",
 					"items": [
 						{
+							"ENG_name": "Devourer",
+							"name": "噬灭",
 							"type": "item",
-							"name": "Devourer",
 							"entries": [
-								"When you roll damage for a spell, weapon, or feature that deals Force damage, you can treat any 1 or 2 on a damage die as a 3."
+								"当你为造成力场伤害的法术、武器或特性掷伤害时，可以将伤害骰上的 1 或 2 视为 3。"
 							]
 						},
 						{
+							"ENG_name": "Havoc",
+							"name": "浩劫",
 							"type": "item",
-							"name": "Havoc",
 							"entries": [
-								"Whenever you hit a creature with an attack roll using a Melee weapon, the target takes an extra {@damage 1d6} Fire damage."
+								"每当你以近战武器的攻击检定命中一个生物，目标额外受{@damage 1d6}点火焰伤害。"
 							]
 						},
 						{
+							"ENG_name": "Vengeance",
+							"name": "复仇",
 							"type": "item",
-							"name": "Vengeance",
 							"entries": [
-								"You have a +2 bonus to AC, and your {@variantrule Hit Points|XPHB|Hit Point} maximum and your current {@variantrule Hit Points|XPHB} increase by 5 for the spell's duration."
+								"你的 AC 获得 +2 加值，且在法术持续时间内，你的{@variantrule 生命值|XPHB|生命值}上限与当前{@variantrule 生命值|XPHB}提高 5 点。"
 							]
 						}
 					]
@@ -2090,7 +2167,8 @@
 			]
 		},
 		{
-			"name": "Moonfire",
+			"ENG_name": "Moonfire",
+			"name": "月火术",
 			"source": "WoW",
 			"page": 26,
 			"level": 1,
@@ -2121,14 +2199,15 @@
 				}
 			],
 			"entries": [
-				"A beam of lunar light burns a creature you can see within range. The target makes a Dexterity saving throw. On a failed save, it takes {@damage 2d8} Radiant damage, sheds {@variantrule Dim Light|XPHB} in a 10-foot radius, and can't benefit from the {@condition Invisible|XPHB} condition until the end of its next turn. At the end of its next turn, it takes an extra {@damage 1d8} Radiant damage, and the spell ends. On a successful save, it takes half the initial damage only."
+				"一道月光灼烧射程内一个可见生物。目标进行敏捷豁免。豁免失败者受{@damage 2d8}点光耀伤害，散发 10 尺半径的{@variantrule 微光光照|XPHB}，且直到其下个回合结束无法从{@condition 隐形|XPHB}状态中获益。其下个回合结束时，额外受{@damage 1d8}点光耀伤害，法术结束。豁免成功则仅受初始伤害的一半。"
 			],
 			"entriesHigherLevel": [
 				{
+					"ENG_name": "Using a Higher-Level Spell Slot",
+					"name": "升环施法",
 					"type": "entries",
-					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"Both the initial and the later damage increase by {@dice 1d8} for each spell slot level above 1."
+						"以高于 1 环的法术位施展此法术时，每升高一环，初始伤害和后续伤害各增加 {@dice 1d8}。"
 					]
 				}
 			],
@@ -2144,7 +2223,8 @@
 			]
 		},
 		{
-			"name": "Prayer of Mending",
+			"ENG_name": "Prayer of Mending",
+			"name": "恢复祷言",
 			"source": "WoW",
 			"page": 54,
 			"level": 3,
@@ -2164,7 +2244,7 @@
 			},
 			"components": {
 				"v": true,
-				"m": "a pinch of powdered silver"
+				"m": "一撮银粉"
 			},
 			"duration": [
 				{
@@ -2176,14 +2256,15 @@
 				}
 			],
 			"entries": [
-				"You place a holy ward on one willing creature in range. The next time that creature takes damage, the ward activates, and the creature regains {@variantrule Hit Points|XPHB} equal to {@dice 1d8} plus your spellcasting ability modifier. The ward then jumps to another ally of your choice within 30 feet of the warded creature, with the same effect. If no ally is in range, the spell ends, and it ends after the ward has healed five times."
+				"你在射程内一名自愿生物身上放置神圣守护。该生物下次受到伤害时，守护触发，该生物回复{@dice 1d8}加你的施法属性调整值点{@variantrule 生命值|XPHB}。守护随后跳到受守护生物 30 尺内你选择的另一名盟友身上，效果相同。若无盟友在范围内，法术结束；守护治疗五次后法术也会结束。"
 			],
 			"entriesHigherLevel": [
 				{
+					"ENG_name": "Using a Higher-Level Spell Slot",
+					"name": "升环施法",
 					"type": "entries",
-					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"The spell can heal one additional time for each spell slot level above 3."
+						"以高于 3 环的法术位施展此法术时，每升高一环，该法术便可额外治疗一次。"
 					]
 				}
 			],
@@ -2193,7 +2274,8 @@
 			]
 		},
 		{
-			"name": "Psychic Horror",
+			"ENG_name": "Psychic Horror",
+			"name": "灵魔恐惧",
 			"source": "WoW",
 			"page": 55,
 			"level": 4,
@@ -2213,7 +2295,7 @@
 			},
 			"components": {
 				"v": true,
-				"m": "a drop of ink"
+				"m": "一滴墨水"
 			},
 			"duration": [
 				{
@@ -2221,14 +2303,15 @@
 				}
 			],
 			"entries": [
-				"A creature within range is overwhelmed with mental visions of the Void and makes a Wisdom saving throw. On a failed save, the target takes {@damage 2d10} Psychic damage and has the {@condition Frightened|XPHB} condition for 1 minute. A {@condition Frightened|XPHB} creature also has the {@condition Stunned|XPHB} condition until the end of your next turn. At the end of each of its turns, the target repeats the save, ending the effect on itself on a success. On a successful save, the creature takes half as much damage only."
+				"射程内一个生物被虚空的心智幻象淹没，进行感知豁免。豁免失败的目标受{@damage 2d10}点心灵伤害，并受{@condition 恐慌|XPHB}状态 1 分钟。受{@condition 恐慌|XPHB}状态的生物同时受{@condition 震慑|XPHB}状态，直到你的下个回合结束。目标在其每个回合结束时重复豁免，成功则效应对其结束。豁免成功则仅受一半伤害。"
 			],
 			"entriesHigherLevel": [
 				{
+					"ENG_name": "Using a Higher-Level Spell Slot",
+					"name": "升环施法",
 					"type": "entries",
-					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"The damage increases by {@dice 1d10} for each spell slot level above 4."
+						"以高于 4 环的法术位施展此法术时，每升高一环，伤害增加 {@dice 1d10}。"
 					]
 				}
 			],
@@ -2244,7 +2327,8 @@
 			]
 		},
 		{
-			"name": "Rain of Fire",
+			"ENG_name": "Rain of Fire",
+			"name": "火焰之雨",
 			"source": "WoW",
 			"page": 65,
 			"level": 3,
@@ -2277,16 +2361,17 @@
 				}
 			],
 			"entries": [
-				"Hellfire rains down in a 20-foot-radius, 40-foot-high {@variantrule Cylinder [Area of Effect]|XPHB|Cylinder} centered on a point within range. Until the spell ends, you can take a {@action Magic|XPHB} action on later turns to move the {@variantrule Cylinder [Area of Effect]|XPHB|Cylinder} up to 60 feet.",
-				"When the {@variantrule Cylinder [Area of Effect]|XPHB|Cylinder} appears, each creature in it makes a Dexterity saving throw, taking {@damage 3d8} Fire damage on a failed save or half as much damage on a successful one. A creature also makes this save when the spell's area moves into its space and when it enters the spell's area or ends its turn there. A creature makes this save only once per turn.",
-				"You have {@variantrule Advantage|XPHB} on spell attack rolls against a creature in the {@variantrule Cylinder [Area of Effect]|XPHB|Cylinder}, and you deal an extra {@damage 1d6} Necrotic damage to the target if you hit."
+				"地狱之火倾泻在以射程内一点为中心、半径 20 尺、高 40 尺的{@variantrule 柱状 [效应区域]|XPHB|柱状}中。直到法术结束，你可以在后续回合采取{@action 魔法|XPHB}动作，将{@variantrule 柱状 [效应区域]|XPHB|柱状}移动至多 60 尺。",
+				"{@variantrule 柱状 [效应区域]|XPHB|柱状}出现时，其中的每个生物进行敏捷豁免，失败者受{@damage 3d8}点火焰伤害，成功者仅受一半伤害。当法术区域移入某生物的空间，或该生物进入法术区域或在其中结束回合时，它也进行此豁免。一个生物每回合只进行一次此豁免。",
+				"你对{@variantrule 柱状 [效应区域]|XPHB|柱状}内生物的法术攻击检定具有{@variantrule 优势|XPHB}，且命中时对目标额外造成{@damage 1d6}点黯蚀伤害。"
 			],
 			"entriesHigherLevel": [
 				{
+					"ENG_name": "Using a Higher-Level Spell Slot",
+					"name": "升环施法",
 					"type": "entries",
-					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"The Fire damage increases by {@dice 1d8} for each spell slot level above 3."
+						"以高于 3 环的法术位施展此法术时，每升高一环，火焰伤害增加 {@dice 1d8}。"
 					]
 				}
 			],
@@ -2303,7 +2388,8 @@
 			]
 		},
 		{
-			"name": "Regrowth",
+			"ENG_name": "Regrowth",
+			"name": "回春术",
 			"source": "WoW",
 			"page": 26,
 			"level": 3,
@@ -2335,7 +2421,7 @@
 				}
 			],
 			"entries": [
-				"One creature you can see within range regains {@dice 3d8} {@variantrule Hit Points|XPHB}. For the duration, the target regains {@dice 1d8} {@variantrule Hit Points|XPHB} at the start of each of your turns. The spell ends early once it restores at least 24 {@variantrule Hit Points|XPHB}."
+				"射程内一个可见生物回复{@dice 3d8}点{@variantrule 生命值|XPHB}。在持续时间内，目标在你的每个回合开始时回复{@dice 1d8}点{@variantrule 生命值|XPHB}。法术累计回复至少 24 点{@variantrule 生命值|XPHB}后提前结束。"
 			],
 			"miscTags": [
 				"HL",
@@ -2343,7 +2429,8 @@
 			]
 		},
 		{
-			"name": "Remorseless Winter",
+			"ENG_name": "Remorseless Winter",
+			"name": "无情寒冬",
 			"source": "WoW",
 			"page": 15,
 			"level": 3,
@@ -2370,14 +2457,15 @@
 				}
 			],
 			"entries": [
-				"You drain the warmth from nearby creatures. Each creature of your choice in a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from you makes a Constitution saving throw, taking {@damage 6d6} Cold damage on a failed save or half as much damage on a successful one. Whether or not a creature succeeds on its saving throw, its {@variantrule Speed|XPHB} is reduced to 10 feet until the end of its next turn as clinging frost hinders its movement."
+				"你抽取附近生物的体温。以你为中心 30 尺{@variantrule 光环 [效应区域]|XPHB|光环}内的每个目标生物进行体质豁免，失败者受{@damage 6d6}点寒冷伤害，成功者仅受一半伤害。无论豁免是否成功，附着的不解寒霜都会阻碍其行动，其{@variantrule 速度|XPHB}降为 10 尺直到其下个回合结束。"
 			],
 			"entriesHigherLevel": [
 				{
+					"ENG_name": "Using a Higher-Level Spell Slot",
+					"name": "升环施法",
 					"type": "entries",
-					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"The damage increases by {@dice 1d6} for each spell slot level above 3."
+						"以高于 3 环的法术位施展此法术时，每升高一环，伤害增加 {@dice 1d6}。"
 					]
 				}
 			],
@@ -2389,7 +2477,8 @@
 			]
 		},
 		{
-			"name": "Rescue",
+			"ENG_name": "Rescue",
+			"name": "拯救",
 			"source": "WoW",
 			"page": 33,
 			"level": 5,
@@ -2416,7 +2505,7 @@
 				}
 			],
 			"entries": [
-				"You teleport to an unoccupied space you can see within range. One willing creature within 60 feet of the space you left also teleports to an unoccupied space within 5 feet of your destination space."
+				"你传送到射程内一处可见的未被占据空间。你离开的空间 60 尺内的一名自愿生物，也传送到你的目的空间 5 尺内一处未被占据的空间。"
 			],
 			"miscTags": [
 				"SGT",
@@ -2425,7 +2514,8 @@
 			]
 		},
 		{
-			"name": "Roar of Ursoc",
+			"ENG_name": "Roar of Ursoc",
+			"name": "乌索克之吼",
 			"source": "WoW",
 			"page": 26,
 			"level": 2,
@@ -2455,11 +2545,12 @@
 				}
 			],
 			"entries": [
-				"You shape-shift as if you had used {@classFeature Wild Shape|Druid|XPHB|2|XPHB}, but you don't expend a use of your {@classFeature Wild Shape|Druid|XPHB|2|XPHB}. Until the start of your next turn, any creature that starts its turn within 5 feet of you has {@variantrule Disadvantage|XPHB} on attack rolls against any creature other than you."
+				"你如同使用了{@classFeature 荒野形态|德鲁伊|XPHB|2|XPHB}一般变形，但不消耗{@classFeature 荒野形态|德鲁伊|XPHB|2|XPHB}的使用次数。直到你的下个回合开始，任何在你 5 尺内开始回合的生物，对非你生物的攻击检定均具有{@variantrule 劣势|XPHB}。"
 			]
 		},
 		{
-			"name": "Rune Strike",
+			"ENG_name": "Rune Strike",
+			"name": "符文打击",
 			"source": "WoW",
 			"page": 15,
 			"level": 1,
@@ -2468,7 +2559,7 @@
 				{
 					"number": 1,
 					"unit": "bonus",
-					"condition": "which you take immediately after hitting a target with a Melee weapon or an Unarmed Strike"
+					"condition": "当你使用近战武器或徒手打击命中目标后立即执行"
 				}
 			],
 			"range": {
@@ -2486,14 +2577,15 @@
 				}
 			],
 			"entries": [
-				"The target takes an extra {@damage 2d8} Necrotic damage. The damage increases by {@dice 1d8} if the target is a Celestial."
+				"目标额外受{@damage 2d8}点黯蚀伤害。若目标为天族生物，伤害增加{@dice 1d8}。"
 			],
 			"entriesHigherLevel": [
 				{
+					"ENG_name": "Using a Higher-Level Spell Slot",
+					"name": "升环施法",
 					"type": "entries",
-					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"The damage increases by {@dice 1d8} for each spell slot level above 1."
+						"以高于 1 环的法术位施展此法术时，每升高一环，伤害增加 {@dice 1d8}。"
 					]
 				}
 			],
@@ -2502,7 +2594,8 @@
 			]
 		},
 		{
-			"name": "Scourge Strike",
+			"ENG_name": "Scourge Strike",
+			"name": "天灾打击",
 			"source": "WoW",
 			"page": 15,
 			"level": 1,
@@ -2511,7 +2604,7 @@
 				{
 					"number": 1,
 					"unit": "bonus",
-					"condition": "which you take immediately after hitting a target with a Melee weapon or an Unarmed Strike"
+					"condition": "当你使用近战武器或徒手打击命中目标后立即执行"
 				}
 			],
 			"range": {
@@ -2533,14 +2626,15 @@
 				}
 			],
 			"entries": [
-				"The target takes an extra {@damage 2d6} Necrotic damage from the attack, and it must succeed on a Constitution saving throw or have the {@condition Poisoned|XPHB} condition until the spell ends. At the end of each of its turns, the {@condition Poisoned|XPHB} target repeats the save, ending the spell on itself on a success."
+				"目标额外受{@damage 2d6}点黯蚀伤害，且必须通过体质豁免，否则受{@condition 中毒|XPHB}状态直到法术结束。受{@condition 中毒|XPHB}状态的目标在其每个回合结束时重复豁免，成功则法术对其结束。"
 			],
 			"entriesHigherLevel": [
 				{
+					"ENG_name": "Using a Higher-Level Spell Slot",
+					"name": "升环施法",
 					"type": "entries",
-					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"The damage increases by {@dice 1d6} for each spell slot level above 1."
+						"以高于 1 环的法术位施展此法术时，每升高一环，伤害增加 {@dice 1d6}。"
 					]
 				}
 			],
@@ -2555,7 +2649,8 @@
 			]
 		},
 		{
-			"name": "Serpent Sting",
+			"ENG_name": "Serpent Sting",
+			"name": "毒蛇钉刺",
 			"source": "WoW",
 			"page": 37,
 			"level": 3,
@@ -2564,7 +2659,7 @@
 				{
 					"number": 1,
 					"unit": "bonus",
-					"condition": "which you take immediately after hitting a creature with a weapon"
+					"condition": "在你用武器命中目标后立即可用"
 				}
 			],
 			"range": {
@@ -2586,7 +2681,7 @@
 				}
 			],
 			"entries": [
-				"The target takes an extra {@damage 4d6} Poison damage from the attack, and the target has the {@condition Poisoned|XPHB} condition until the spell ends. At the end of each of its turns, the {@condition Poisoned|XPHB} target makes a Constitution saving throw. On a failed save, the creature takes {@damage 2d6} Poison damage. On a successful save, the spell ends."
+				"目标额外受{@damage 4d6}点毒素伤害，且受{@condition 中毒|XPHB}状态直到法术结束。受{@condition 中毒|XPHB}状态的目标在其每个回合结束时进行体质豁免。豁免失败则受{@damage 2d6}点毒素伤害；豁免成功则法术结束。"
 			],
 			"damageInflict": [
 				"poison"
@@ -2599,7 +2694,8 @@
 			]
 		},
 		{
-			"name": "Shadow Word: Pain",
+			"ENG_name": "Shadow Word: Pain",
+			"name": "暗言术：痛",
 			"source": "WoW",
 			"page": 55,
 			"level": 1,
@@ -2630,15 +2726,16 @@
 				}
 			],
 			"entries": [
-				"Speaking a word of Void power, you cause one creature in range to suffer agonizing pain. The target makes a Wisdom saving throw. On a failed save, the target takes Psychic damage equal to {@damage 1d10} plus your spellcasting ability modifier and is cursed for the duration. On a successful save, it takes half as much damage only.",
-				"Until the curse ends, the target takes {@damage 1d10} Psychic damage at the start of each of its turns. It repeats the save at the end of each of its turns, ending the curse on a success."
+				"你吐出一个蕴含虚空之力的话语，使射程内一个生物承受剧痛。目标进行感知豁免。豁免失败的目标受{@damage 1d10}加你的施法属性调整值点心灵伤害，并在持续时间内被诅咒。豁免成功则仅受一半伤害。",
+				"诅咒结束前，目标在其每个回合开始时受{@damage 1d10}点心灵伤害。它在其每个回合结束时重复豁免，成功则诅咒结束。"
 			],
 			"entriesHigherLevel": [
 				{
+					"ENG_name": "Using a Higher-Level Spell Slot",
+					"name": "升环施法",
 					"type": "entries",
-					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"The spell's initial damage increases by {@damage 1d10} for each spell slot level above 1."
+						"以高于 1 环的法术位施展此法术时，每升高一环，初始伤害增加 {@damage 1d10}。"
 					]
 				}
 			],
@@ -2650,7 +2747,8 @@
 			]
 		},
 		{
-			"name": "Shattering Star",
+			"ENG_name": "Shattering Star",
+			"name": "碎裂之星",
 			"source": "WoW",
 			"page": 33,
 			"level": 5,
@@ -2678,14 +2776,15 @@
 				}
 			],
 			"entries": [
-				"You exhale a bolt of concentrated power at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 10d8} Force damage, and it takes a -2 penalty to AC until the start of your next turn as clinging frost makes the target's exterior brittle."
+				"你向射程内一个生物呼出一道凝缩的能量矢。对目标进行远程法术攻击。命中时，目标受{@damage 10d8}点力场伤害，且附着的不解寒霜使其外壳变脆，其 AC 受 -2 减值直到你的下个回合开始。"
 			],
 			"entriesHigherLevel": [
 				{
+					"ENG_name": "Using a Higher-Level Spell Slot",
+					"name": "升环施法",
 					"type": "entries",
-					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"The damage increases by {@dice 1d8} for each spell slot level above 5."
+						"以高于 5 环的法术位施展此法术时，每升高一环，伤害增加 {@dice 1d8}。"
 					]
 				}
 			],
@@ -2700,7 +2799,8 @@
 			]
 		},
 		{
-			"name": "Sigil of Chains",
+			"ENG_name": "Sigil of Chains",
+			"name": "锁链咒符",
 			"source": "WoW",
 			"page": 20,
 			"level": 5,
@@ -2731,7 +2831,7 @@
 				}
 			],
 			"entries": [
-				"A sigil appears at a point on the ground you can see within range, then erupts in a 20-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere}. Each creature in the {@variantrule Sphere [Area of Effect]|XPHB|Sphere} makes a Dexterity saving throw. On a failed save, a creature takes {@damage 5d6} Force damage, is pulled up to 10 feet straight toward the sigil, and has the {@condition Restrained|XPHB} condition until the end of your next turn. On a successful save, the creature takes half as much damage, and its {@variantrule Speed|XPHB} is reduced by 10 feet until the end of your next turn."
+				"一枚咒符出现在射程内可见的地面一点，随即爆发成半径 20 尺的{@variantrule 球状 [效应区域]|XPHB|球状}。{@variantrule 球状 [效应区域]|XPHB|球状}内的每个生物进行敏捷豁免。豁免失败的生物受{@damage 5d6}点力场伤害，被向咒符方向直线拖至多 10 尺，且受{@condition 束缚|XPHB}状态直到你的下个回合结束。豁免成功的生物仅受一半伤害，且其{@variantrule 速度|XPHB}降低 10 尺直到你的下个回合结束。"
 			],
 			"damageInflict": [
 				"force"
@@ -2748,7 +2848,8 @@
 			]
 		},
 		{
-			"name": "Sigil of Flame",
+			"ENG_name": "Sigil of Flame",
+			"name": "烈焰咒符",
 			"source": "WoW",
 			"page": 21,
 			"level": 2,
@@ -2775,14 +2876,15 @@
 				}
 			],
 			"entries": [
-				"You inscribe a sigil in the air that then appears on a creature you can see within range. The target makes a Constitution saving throw, taking {@damage 2d8} Fire damage on a failed save or half as much damage on a successful one. Whether or not the target fails its saving throw, it radiates heat in a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from itself until the end of its next turn. At the start of the target's next turn, the target and each creature in the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} must succeed on a Constitution saving throw or take {@damage 1d8} Fire damage."
+				"你在空中刻下一个咒符，使其显现在你射程内一个你能看见的生物身上。目标进行一次体质豁免，豁免失败则受到{@damage 2d8}点火焰伤害，豁免成功则只受一半伤害。无论目标豁免成功与否，直到其下一回合结束，它都会以自身为中心散发出一个10尺的{@variantrule 光环 [效应区域]|XPHB|光环}。在目标下一回合开始时，目标和处于该{@variantrule 光环 [效应区域]|XPHB|光环}内的每个生物必须成功通过一次体质豁免，否则受到{@damage 1d8}点火焰伤害。"
 			],
 			"entriesHigherLevel": [
 				{
+					"ENG_name": "Using a Higher-Level Spell Slot",
+					"name": "升环施法",
 					"type": "entries",
-					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"The damage (both initial and later) increases by {@dice 1d8} for each spell slot level above 2."
+						"以高于 2 环的法术位施展此法术时，每升高一环，初始伤害和后续伤害均增加 {@dice 1d8}。"
 					]
 				}
 			],
@@ -2797,7 +2899,8 @@
 			]
 		},
 		{
-			"name": "Soul Reap",
+			"ENG_name": "Soul Reap",
+			"name": "灵魂收割",
 			"source": "WoW",
 			"page": 21,
 			"level": 3,
@@ -2825,14 +2928,15 @@
 				}
 			],
 			"entries": [
-				"You cut a hole in the fabric of reality, sending a bolt of cosmic matter toward a creature in range. Make a ranged spell attack against the target, which gains no benefit from {@variantrule Cover|XPHB|Half Cover} or {@variantrule Cover|XPHB|Three-Quarters Cover}. On a hit, you deal {@damage 6d6} Force damage. If you roll a 6 on a {@dice d6} for this spell, you can roll another {@dice d6} and add it to the damage. When you cast this spell, the maximum number of these d6s you can add to the spell's damage equals your spellcasting ability modifier."
+				"你划开现实的织物，向射程内一个生物射出一道宇宙物质之矢。对目标进行远程法术攻击，目标无法从{@variantrule 掩护|XPHB|半身掩护}或{@variantrule 掩护|XPHB|四分之三掩护}中获益。命中时，你造成{@damage 6d6}点力场伤害。如果你为此法术掷{@dice d6}掷出 6，你可以再掷一枚{@dice d6}并加入伤害。施展此法术时，你能加入伤害的此类 d6 上限等于你的施法属性调整值。"
 			],
 			"entriesHigherLevel": [
 				{
+					"ENG_name": "Using a Higher-Level Spell Slot",
+					"name": "升环施法",
 					"type": "entries",
-					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"The damage increases by {@dice 1d6} for each spell slot level above 3."
+						"以高于 3 环的法术位施展此法术时，每升高一环，伤害增加 {@dice 1d6}。"
 					]
 				}
 			],
@@ -2844,7 +2948,8 @@
 			]
 		},
 		{
-			"name": "Starfall",
+			"ENG_name": "Starfall",
+			"name": "星落术",
 			"source": "WoW",
 			"page": 26,
 			"level": 4,
@@ -2865,7 +2970,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a pinch of stardust"
+				"m": "一撮星尘"
 			},
 			"duration": [
 				{
@@ -2877,8 +2982,8 @@
 				}
 			],
 			"entries": [
-				"You call down falling stars on creatures in a 30-foot-radius, 40-foot-high {@variantrule Cylinder [Area of Effect]|XPHB|Cylinder} within range. Each creature in the {@variantrule Cylinder [Area of Effect]|XPHB|Cylinder} makes a Dexterity saving throw, taking {@damage 7d8} Radiant damage on a failed save or half as much damage on a successful one.",
-				"Until the start of your next turn, a creature that enters the {@variantrule Cylinder [Area of Effect]|XPHB|Cylinder} for the first time on a turn or ends its turn there takes Radiant damage equal to your {@class Druid|WoW} level. A creature takes this damage only once per turn."
+				"你在施法范围内召唤坠落的星辰，轰击一个半径30尺、高40尺的{@variantrule 柱状 [效应区域]|XPHB|柱状}内的生物。该{@variantrule 柱状 [效应区域]|XPHB|柱状}内的每个生物必须进行一次敏捷豁免，豁免失败则受到{@damage 7d8}点光耀伤害，豁免成功则只受到一半伤害。",
+				"直到你的下个回合开始，首次于某回合进入{@variantrule 柱状 [效应区域]|XPHB|柱状}或在其中结束回合的生物，受等同于你{@class 德鲁伊|WoW}等级的光耀伤害。一个生物每回合只能受此伤害一次。"
 			],
 			"damageInflict": [
 				"radiant"
@@ -2888,7 +2993,8 @@
 			]
 		},
 		{
-			"name": "Throw Glaive",
+			"ENG_name": "Throw Glaive",
+			"name": "掷刃",
 			"source": "WoW",
 			"page": 21,
 			"level": 1,
@@ -2916,14 +3022,15 @@
 				}
 			],
 			"entries": [
-				"You create a demonic warglaive and hurl it at a creature or object in range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 1d8} Slashing damage plus {@damage 1d8} Fire damage, and the glaive ricochets to a different target of your choice within 30 feet of the target. Make new attack and damage rolls against the new target."
+				"你造出一柄恶魔战刃，掷向射程内的一个生物或物体。对目标进行远程法术攻击。命中时，目标受{@damage 1d8}点挥砍伤害加{@damage 1d8}点火焰伤害，战刃随即弹向目标 30 尺内你选择的另一目标。对新目标重新进行攻击与伤害掷骰。"
 			],
 			"entriesHigherLevel": [
 				{
+					"ENG_name": "Using a Higher-Level Spell Slot",
+					"name": "升环施法",
 					"type": "entries",
-					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"The Fire damage increases by {@dice 1d8} for each spell slot level above 1. The glaive ricochets a maximum number of times equal to the level of the slot expended; a creature can be targeted only once by each casting of this spell."
+						"以高于 1 环的法术位施展此法术时，每升高一环，火焰伤害增加 {@dice 1d8}。战刃弹射的次数至多等于所消耗法术位的环阶；每次施展此法术时，每个生物最多只能成为一次目标。"
 					]
 				}
 			],
@@ -2939,7 +3046,8 @@
 			]
 		},
 		{
-			"name": "Time Dilation",
+			"ENG_name": "Time Dilation",
+			"name": "时间膨胀",
 			"source": "WoW",
 			"page": 33,
 			"level": 4,
@@ -2948,7 +3056,7 @@
 				{
 					"number": 1,
 					"unit": "reaction",
-					"condition": "which you take in response to you or a creature you can see within 60 feet of you taking damage"
+					"condition": "当你或你能看见且位于 60 尺内的生物受到伤害时，作为对该伤害的回应执行"
 				}
 			],
 			"range": {
@@ -2968,14 +3076,15 @@
 				}
 			],
 			"entries": [
-				"The target reduces the damage taken by {@dice 4d8}. At the end of each of the target's turns, the target loses {@dice 1d8} {@variantrule Hit Points|XPHB} until it has lost a total of {@dice 4d8} {@variantrule Hit Points|XPHB} (roll these {@dice 4d8} separately from the damage reduction)."
+				"目标将其受到的伤害减少{@dice 4d8}点。在目标的每个回合结束时，目标失去{@dice 1d8}点{@variantrule 生命值|XPHB}，直到累计失去{@dice 4d8}点{@variantrule 生命值|XPHB}（这{@dice 4d8}与伤害减免分开掷骰）。"
 			],
 			"miscTags": [
 				"SGT"
 			]
 		},
 		{
-			"name": "Tranquility",
+			"ENG_name": "Tranquility",
+			"name": "宁静",
 			"source": "WoW",
 			"page": 27,
 			"level": 6,
@@ -3007,14 +3116,15 @@
 				}
 			],
 			"entries": [
-				"Nature's power flows around you in a 60-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} for the duration. Creatures of your choice in the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} have {@variantrule Resistance|XPHB} to Bludgeoning, Piercing, and Slashing damage. As a {@variantrule Bonus Action|XPHB}, you can cause each ally in the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} to regain {@variantrule Hit Points|XPHB} equal to {@dice 2d8} plus your spellcasting ability modifier."
+				"在法术持续时间内，自然之力在你周围60尺的{@variantrule 光环 [效应区域]|XPHB|光环}内流动。你选择的位于该{@variantrule 光环 [效应区域]|XPHB|光环}内的生物获得对钝击、穿刺和挥砍伤害的{@variantrule 抗性|XPHB}。以一个{@variantrule 附赠动作|XPHB}，你可以使该{@variantrule 光环 [效应区域]|XPHB|光环}内的每个盟友恢复等于{@dice 2d8}加上你的施法关键属性调整值的{@variantrule 生命值|XPHB}。"
 			],
 			"entriesHigherLevel": [
 				{
+					"ENG_name": "Using a Higher-Level Spell Slot",
+					"name": "升环施法",
 					"type": "entries",
-					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"Creatures regain {@dice 1d8} additional {@variantrule Hit Points|XPHB} for each spell slot level above 6."
+						"以高于 6 环的法术位施展此法术时，每升高一环，生物便额外恢复 {@dice 1d8} {@variantrule 生命值|XPHB}。"
 					]
 				}
 			],
@@ -3030,7 +3140,8 @@
 			]
 		},
 		{
-			"name": "Tree of Life",
+			"ENG_name": "Tree of Life",
+			"name": "生命之树",
 			"source": "WoW",
 			"page": 27,
 			"level": 8,
@@ -3061,40 +3172,45 @@
 				}
 			],
 			"entries": [
-				"You shape-shift into a Tree of Life form that resembles a treant. In this form, you gain the following benefits.",
+				"你变形成一株形似树人的生命之树形态。在此形态下，你获得以下收益。",
 				{
+					"ENG_name": "Tree Form",
+					"name": "树木型态",
 					"type": "entries",
-					"name": "Tree Form",
 					"entries": [
-						"You become Large. Your {@variantrule Speed|XPHB} becomes 10 feet and can't be reduced, and {@variantrule Difficult Terrain|XPHB} doesn't cost you extra movement."
+						"你变为大型体型。你的{@variantrule 速度|XPHB}变为 10 尺且不能被降低，且{@variantrule 困难地形|XPHB}不会消耗你额外的移动。"
 					]
 				},
 				{
+					"ENG_name": "Bark Skin",
+					"name": "树皮之肤",
 					"type": "entries",
-					"name": "Bark Skin",
 					"entries": [
-						"You gain a +2 bonus to {@variantrule Armor Class|XPHB} and 10 {@variantrule Temporary Hit Points|XPHB}."
+						"你的{@variantrule 护甲等级|XPHB}获得 +2 加值，并获得 10 点{@variantrule 临时生命值|XPHB}。"
 					]
 				},
 				{
+					"ENG_name": "Condition Immunity",
+					"name": "状态免疫",
 					"type": "entries",
-					"name": "Condition Immunity",
 					"entries": [
-						"You gain {@variantrule Immunity|XPHB} to the {@condition Paralyzed|XPHB} and {@condition Restrained|XPHB} conditions. You can't be shape-shifted against your will."
+						"你获得对{@condition 麻痹|XPHB}和{@condition 束缚|XPHB}状态的{@variantrule 免疫|XPHB}。你不能被违背意愿地变形。"
 					]
 				},
 				{
+					"ENG_name": "Source of Life",
+					"name": "生命之源",
 					"type": "entries",
-					"name": "Source of Life",
 					"entries": [
-						"When a spell you cast with a spell slot restores {@variantrule Hit Points|XPHB} to a creature, that creature regains an additional {@dice 1d8} {@variantrule Hit Points|XPHB} on the turn you cast the spell."
+						"当你使用法术位施展的法术为一个生物恢复{@variantrule 生命值|XPHB}时，该生物在你施展法术的回合额外回复{@dice 1d8}点{@variantrule 生命值|XPHB}。"
 					]
 				},
 				{
+					"ENG_name": "Spells Enhanced",
+					"name": "法术强化",
 					"type": "entries",
-					"name": "Spells Enhanced",
 					"entries": [
-						"The spell save DC of your {@class Druid|WoW} spells increases by 1, and you have {@variantrule Advantage|XPHB} on the attack rolls of {@class Druid|WoW} spells you cast."
+						"你{@class 德鲁伊|WoW}法术的法术豁免 DC 提高 1，且你施展的{@class 德鲁伊|WoW}法术的攻击检定具有{@variantrule 优势|XPHB}。"
 					]
 				}
 			],
@@ -3105,7 +3221,8 @@
 			]
 		},
 		{
-			"name": "Upheaval",
+			"ENG_name": "Upheaval",
+			"name": "剧变",
 			"source": "WoW",
 			"page": 33,
 			"level": 4,
@@ -3133,15 +3250,16 @@
 				}
 			],
 			"entries": [
-				"Fiery stones erupt, filling a 20-foot-radius, 10-foot tall {@variantrule Cylinder [Area of Effect]|XPHB|Cylinder} originating from a point on the ground you can see within range. Each creature in the {@variantrule Cylinder [Area of Effect]|XPHB|Cylinder} makes a Dexterity saving throw. On a failed save, a creature takes {@damage 1d12} Bludgeoning damage plus {@damage 3d8} Fire damage and is pushed vertically to the top of the cylinder, at which point the creature falls. On a successful save, a creature takes half as much damage only.",
-				"Smoldering stones turn the ground in the {@variantrule Cylinder [Area of Effect]|XPHB|Cylinder} into {@variantrule Difficult Terrain|XPHB} until the end of your next turn."
+				"炽热石块喷发，填充一个以你射程内可见地面一点为原点、半径20尺、高10尺的{@variantrule 柱状 [效应区域]|XPHB|柱状}区域。该{@variantrule 柱状 [效应区域]|XPHB|柱状}区域内的每个生物需进行一次敏捷豁免。豁免失败者，受到{@damage 1d12}钝击伤害加{@damage 3d8}火焰伤害，并被垂直推至柱状区域的顶部，随后坠落。豁免成功者，仅受到一半伤害。",
+				"闷燃的石头将{@variantrule 柱状 [效应区域]|XPHB|柱状}内的地面变为{@variantrule 困难地形|XPHB}，持续到你的下个回合结束。"
 			],
 			"entriesHigherLevel": [
 				{
+					"ENG_name": "Using a Higher-Level Spell Slot",
+					"name": "升环施法",
 					"type": "entries",
-					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"The Bludgeoning damage increases by {@dice 1d12} for each spell slot level above 4."
+						"以高于 4 环的法术位施展此法术时，每升高一环，钝击伤害增加 {@dice 1d12}。"
 					]
 				}
 			],
@@ -3158,7 +3276,8 @@
 			]
 		},
 		{
-			"name": "Vampiric Blood",
+			"ENG_name": "Vampiric Blood",
+			"name": "吸血鬼之血",
 			"source": "WoW",
 			"page": 15,
 			"level": 1,
@@ -3189,14 +3308,15 @@
 				}
 			],
 			"entries": [
-				"For the duration, your {@variantrule Hit Points|XPHB|Hit Point} maximum increases by 10. In addition, whenever you regain {@variantrule Hit Points|XPHB}, you regain an extra {@dice 1d6} {@variantrule Hit Points|XPHB}."
+				"在持续时间内，你的{@variantrule 生命值|XPHB|生命值}上限提高 10 点。此外，每当你回复{@variantrule 生命值|XPHB}时，额外回复{@dice 1d6}点{@variantrule 生命值|XPHB}。"
 			],
 			"entriesHigherLevel": [
 				{
+					"ENG_name": "Using a Higher-Level Spell Slot",
+					"name": "升环施法",
 					"type": "entries",
-					"name": "Using a Higher-Level Spell Slot",
 					"entries": [
-						"The additional healing increases by {@dice 1d6} for each spell slot level above 1."
+						"以高于 1 环的法术位施展此法术时，每升高一环，额外恢复的生命值增加 {@dice 1d6}。"
 					]
 				}
 			],
@@ -3205,7 +3325,8 @@
 			]
 		},
 		{
-			"name": "Void Eruption",
+			"ENG_name": "Void Eruption",
+			"name": "虚空爆发",
 			"source": "WoW",
 			"page": 55,
 			"level": 5,
@@ -3237,19 +3358,21 @@
 				}
 			],
 			"entries": [
-				"Shadowy Void energy erupts in a 20-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on a point you choose within range. Each creature in the {@variantrule Sphere [Area of Effect]|XPHB|Sphere} makes a Constitution saving throw, taking {@damage 5d6} Necrotic damage on a failed save or half as much damage on a successful one. At the same time, you take on a form of Void that grants you the following benefits for the duration.",
+				"暗影虚空能量在你选择范围内的一点爆发，形成一个20尺半径的{@variantrule 球状 [效应区域]|XPHB|球状}区域。该{@variantrule 球状 [效应区域]|XPHB|球状}区域内的每个生物必须进行一次体质豁免，豁免失败则受到{@damage 5d6}点黯蚀伤害，豁免成功则只受到一半伤害。同时，你获得虚空形态，在法术持续时间内获得以下增益。",
 				{
+					"ENG_name": "Void Bolt",
+					"name": "虚空之矢",
 					"type": "entries",
-					"name": "Void Bolt",
 					"entries": [
-						"As a {@variantrule Bonus Action|XPHB} on your turn, you can hurl a bolt of Void energy at a creature within 60 feet of yourself. Make a ranged spell attack; on a hit, the target takes Necrotic damage equal to {@damage 2d6} plus your spellcasting ability modifier."
+						"在你的回合以一个{@variantrule 附赠动作|XPHB}，你可以向 60 尺内的一个生物掷出一道虚空能量矢。进行远程法术攻击；命中时，目标受{@damage 2d6}加你的施法属性调整值点黯蚀伤害。"
 					]
 				},
 				{
+					"ENG_name": "Void Stealth",
+					"name": "虚空潜行",
 					"type": "entries",
-					"name": "Void Stealth",
 					"entries": [
-						"While you are in an area of {@variantrule Dim Light|XPHB} or {@variantrule Darkness|XPHB}, you have the {@condition Invisible|XPHB} condition."
+						"当你处于{@variantrule 微光光照|XPHB}或{@variantrule 黑暗|XPHB}区域时，你处于{@condition 隐形|XPHB}状态。"
 					]
 				}
 			],
@@ -3267,7 +3390,8 @@
 			]
 		},
 		{
-			"name": "Wrath",
+			"ENG_name": "Wrath",
+			"name": "狂怒",
 			"source": "WoW",
 			"page": 27,
 			"level": 0,
@@ -3295,19 +3419,20 @@
 				}
 			],
 			"entries": [
-				"You hurl a ball of energy at a target within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 1d8} Lightning damage, and its {@variantrule Speed|XPHB} is reduced by 10 feet until the end of your next turn."
+				"你向射程内一个目标掷出一枚能量球。对目标进行远程法术攻击。命中时，目标受{@damage 1d8}点闪电伤害，且其{@variantrule 速度|XPHB}降低 10 尺，直到你的下个回合结束。"
 			],
 			"entriesHigherLevel": [
 				{
+					"ENG_name": "Cantrip Upgrade",
+					"name": "戏法强化",
 					"type": "entries",
-					"name": "Cantrip Upgrade",
 					"entries": [
-						"The damage increases by {@dice 1d8} when you reach levels 5 ({@dice 2d8}), 11 ({@dice 3d8}), and 17 ({@dice 4d8})."
+						"当你达到以下等级时，伤害增加 {@dice 1d8}：5 级（{@dice 2d8}）、11 级（{@dice 3d8}）和 17 级（{@dice 4d8}）。"
 					]
 				}
 			],
 			"scalingLevelDice": {
-				"label": "Lightning damage",
+				"label": "闪电伤害",
 				"scaling": {
 					"1": "1d8",
 					"5": "2d8",

@@ -2653,6 +2653,539 @@
 			"translator": "不全书"
 		},
 		{
+			"ENG_name": "Dracthyr",
+			"name": "龙希尔",
+			"source": "WoW",
+			"page": 70,
+			"edition": "one",
+			"creatureTypes": [
+				"龙"
+			],
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"darkvision": 60,
+			"traitTags": [
+				"Natural Weapon"
+			],
+			"sizeEntry": {
+				"ENG_name": "Size:",
+				"name": "体型：",
+				"type": "item",
+				"entries": [
+					"中型（身高约 7 尺）"
+				]
+			},
+			"entries": [
+				{
+					"ENG_name": "Darkvision",
+					"name": "黑暗视觉",
+					"type": "entries",
+					"entries": [
+						"你拥有 60 尺{@sense 黑暗视觉|XPHB}。"
+					]
+				},
+				{
+					"ENG_name": "Gliding Wings",
+					"name": "滑翔之翼",
+					"type": "entries",
+					"entries": [
+						"当你处于自然形态且没有{@condition 失能|XPHB}状态时，若你坠落，你在计算坠落伤害时可将坠落距离减少至多 100 尺，且你每下降 1 尺，可以水平移动至多 2 尺。"
+					]
+				},
+				{
+					"ENG_name": "Natural Weaponry",
+					"name": "天生武器",
+					"type": "entries",
+					"entries": [
+						"当你处于自然形态时，你的翅膀和尾巴是强有力的武器。以一个{@variantrule 附赠动作|XPHB}，你可以用翅膀或尾巴进行一次{@variantrule 徒手打击|XPHB}以推撞生物。"
+					]
+				},
+				{
+					"ENG_name": "Visage",
+					"name": "幻容",
+					"type": "entries",
+					"entries": [
+						"以一个{@action 魔法|XPHB}动作，你可以变形为一种称为幻容的人形生物形态，或变回自然形态。你的幻容具有特定的外貌，由你在选择此物种时决定，包括你的配色、身高体重、发长和性别。以此特性变形不会改变你的衣着、装备或游戏数据。"
+					]
+				},
+				{
+					"ENG_name": "Draconic Flight",
+					"name": "龙族飞翼",
+					"type": "entries",
+					"entries": [
+						"当你达到5级 时，你可以用自然形态的翅膀做短途飞行。以一个{@variantrule 附赠动作|XPHB}，你跃入空中，获得等同于你{@variantrule 速度|XPHB}的{@variantrule 飞行速度|XPHB}，持续 10 分钟。一旦你使用此特性，你必须完成一次{@variantrule 长休|XPHB}才能再次使用。"
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Draenei",
+			"name": "德莱尼",
+			"source": "WoW",
+			"page": 72,
+			"edition": "one",
+			"creatureTypes": [
+				"类人生物"
+			],
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"darkvision": 60,
+			"resist": [
+				{
+					"choose": {
+						"from": [
+							"暗蚀",
+							"毒素",
+							"光耀",
+							"火焰"
+						]
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"ENG_name": "Draenei",
+					"name": "德莱尼",
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": [
+							"维生术|xphb#c"
+						]
+					},
+					"prepared": {
+						"3": {
+							"daily": {
+								"1": [
+									"治愈真言|xphb"
+								]
+							}
+						},
+						"5": {
+							"daily": {
+								"1": [
+									"治疗祷言|xphb"
+								]
+							}
+						}
+					}
+				},
+				{
+					"ENG_name": "Krokul",
+					"name": "克罗库",
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": [
+							"毒气喷涌|xphb#c"
+						]
+					},
+					"prepared": {
+						"3": {
+							"daily": {
+								"1": [
+									"致病射线|xphb"
+								]
+							}
+						},
+						"5": {
+							"daily": {
+								"1": [
+									"定身类人|xphb"
+								]
+							}
+						}
+					}
+				},
+				{
+					"ENG_name": "Lightforged",
+					"name": "光铸德莱尼",
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": [
+							"圣火术|xphb#c"
+						]
+					},
+					"prepared": {
+						"3": {
+							"daily": {
+								"1": [
+									"光导箭|xphb"
+								]
+							}
+						},
+						"5": {
+							"daily": {
+								"1": [
+									"援助术|xphb"
+								]
+							}
+						}
+					}
+				},
+				{
+					"ENG_name": "Man'ari",
+					"name": "玛纳里",
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": [
+							"火焰箭|xphb#c"
+						]
+					},
+					"prepared": {
+						"3": {
+							"daily": {
+								"1": [
+									"炼狱叱喝|xphb"
+								]
+							}
+						},
+						"5": {
+							"daily": {
+								"1": [
+									"黑暗术|xphb"
+								]
+							}
+						}
+					}
+				}
+			],
+			"sizeEntry": {
+				"ENG_name": "Size:",
+				"name": "体型：",
+				"type": "item",
+				"entries": [
+					"中型（身高超过 7 尺）"
+				]
+			},
+			"entries": [
+				{
+					"ENG_name": "Darkvision",
+					"name": "黑暗视觉",
+					"type": "entries",
+					"entries": [
+						"你拥有 60 尺{@sense 黑暗视觉|XPHB}。"
+					]
+				},
+				{
+					"ENG_name": "Eredar Lineage",
+					"name": "艾瑞达血脉",
+					"type": "entries",
+					"entries": [
+						"你属于一条与先祖拥抱圣光\u2014或燃烧军团之力\u2014相关的血脉。这条血脉赋予你超自然的能力。从艾瑞达血脉表中选择一条血脉：德莱尼、克罗库、光铸者或玛纳里。你获得该血脉的等级 1 收益。",
+						"当你达到3级和5级时，你习得表中所示的更高环阶法术。你始终让它处于已准备状态。你可以不消耗法术位施展它一次，并在完成{@variantrule 长休|XPHB}后恢复以此方式施展它的能力。你也可以使用你拥有的任意适当环阶的法术位施展该法术。",
+						"智力、感知或魅力是你以此特性施展法术的施法属性（在选择血脉时决定）。",
+						{
+							"type": "table",
+							"caption": "艾瑞达血脉表",
+							"colLabels": [
+								"血脉",
+								"1环",
+								"3环",
+								"5级"
+							],
+							"colStyles": [
+								"col-2",
+								"col-6",
+								"col-2",
+								"col-2"
+							],
+							"rows": [
+								[
+									"德莱尼",
+									"你对暗蚀伤害具有{@variantrule 抗性|XPHB}。你还知晓{@spell 维生术|XPHB}戏法。",
+									"{@spell 治愈真言|XPHB}",
+									"{@spell 治疗祷言|XPHB}"
+								],
+								[
+									"克罗库",
+									"你获得对毒素伤害的{@variantrule 抗性|XPHB}。你习得戏法{@spell 毒气喷涌|XPHB}。",
+									"{@spell 致病射线|XPHB}",
+									"{@spell 定身类人|XPHB}"
+								],
+								[
+									"光铸德莱尼",
+									"你对光耀伤害具有{@variantrule 抗性|XPHB}。你还知晓{@spell 圣火术|XPHB}戏法。",
+									"{@spell 光导箭|XPHB}",
+									"{@spell 援助术|XPHB}"
+								],
+								[
+									"玛纳里",
+									"你获得对火焰伤害的{@variantrule 抗性|XPHB}。你习得戏法{@spell 火焰箭|XPHB}。",
+									"{@spell 炼狱叱喝|XPHB}",
+									"{@spell 黑暗术|XPHB}"
+								]
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Heroic Presence",
+					"name": "英姿焕发",
+					"type": "entries",
+					"entries": [
+						"当你施展艾瑞达血脉给予的法术时，若你没有{@variantrule 英雄激励|XPHB}，你获得它。你以此方式获得{@variantrule 英雄激励|XPHB}的机会一次，完成{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}后恢复。"
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"_versions": [
+				{
+					"ENG_name": "Draenei; Draenei Lineage",
+					"name": "德莱尼; 德莱尼血统",
+					"source": "WoW",
+					"_mod": {
+						"entries": {
+							"mode": "replaceArr",
+							"replace": "艾瑞达血脉",
+							"items": {
+								"ENG_name": "Eredar Lineage (Draenei)",
+								"name": "艾瑞达血脉（德莱尼）",
+								"type": "entries",
+								"entries": [
+									"你对暗蚀伤害具有{@variantrule 抗性|XPHB}。你还知晓{@spell 维生术|XPHB}戏法。",
+									"当你达到3级时，你习得{@spell 治愈真言|XPHB}法术；达到5级 时，你还习得{@spell 治疗祷言|XPHB}法术。你始终让这些法术处于已准备状态，并且每个法术都可以不消耗法术位施展一次。使用此特性施展其中任一法术后，你必须完成一次{@variantrule 长休|XPHB}才能再次以此特性施展该法术。你也可以使用你拥有的任意适当环阶的法术位施展这些法术。",
+									"智力、感知或魅力是你以此特性施展法术时的施法属性（在选择血脉时决定）。"
+								]
+							}
+						}
+					},
+					"resist": [
+						"necrotic"
+					],
+					"additionalSpells": [
+						{
+							"ability": {
+								"choose": [
+									"int",
+									"wis",
+									"cha"
+								]
+							},
+							"known": {
+								"1": [
+									"维生术|xphb#c"
+								]
+							},
+							"prepared": {
+								"3": {
+									"daily": {
+										"1": [
+											"治愈真言|xphb"
+										]
+									}
+								},
+								"5": {
+									"daily": {
+										"1": [
+											"治疗祷言|xphb"
+										]
+									}
+								}
+							}
+						}
+					]
+				},
+				{
+					"ENG_name": "Draenei; Krokul Lineage",
+					"name": "德莱尼; 克罗库血统",
+					"source": "WoW",
+					"_mod": {
+						"entries": {
+							"mode": "replaceArr",
+							"replace": "艾瑞达血脉",
+							"items": {
+								"ENG_name": "Eredar Lineage (Krokul)",
+								"name": "艾瑞达血脉（克罗库）",
+								"type": "entries",
+								"entries": [
+									"你获得对毒素伤害的{@variantrule 抗性|XPHB}。你习得戏法{@spell 毒气喷涌|XPHB}。",
+									"当你到达 3 级时，你习得法术{@spell 致病射线|XPHB}。当你到达 5 级时，你习得法术{@spell 定身类人|XPHB}。你时刻准备着这道习得的法术，且可以不消耗法术位施展此法术一次，当你完成一次{@variantrule 长休|XPHB}时，你重获施展该道法术的能力。你也可以用任何你拥有的相应环阶法术位施展该道法术。",
+									"智力、感知或魅力是你以此特性施展法术时的施法属性（在选择血脉时决定）。"
+								]
+							}
+						}
+					},
+					"resist": [
+						"poison"
+					],
+					"additionalSpells": [
+						{
+							"ability": {
+								"choose": [
+									"int",
+									"wis",
+									"cha"
+								]
+							},
+							"known": {
+								"1": [
+									"毒气喷涌|xphb#c"
+								]
+							},
+							"prepared": {
+								"3": {
+									"daily": {
+										"1": [
+											"致病射线|xphb"
+										]
+									}
+								},
+								"5": {
+									"daily": {
+										"1": [
+											"定身类人|xphb"
+										]
+									}
+								}
+							}
+						}
+					]
+				},
+				{
+					"ENG_name": "Draenei; Lightforged Lineage",
+					"name": "德莱尼; 光铸血统",
+					"source": "WoW",
+					"_mod": {
+						"entries": {
+							"mode": "replaceArr",
+							"replace": "艾瑞达血脉",
+							"items": {
+								"ENG_name": "Eredar Lineage (Lightforged)",
+								"name": "艾瑞达血脉（光铸德莱尼）",
+								"type": "entries",
+								"entries": [
+									"你对光耀伤害具有{@variantrule 抗性|XPHB}。你还知晓{@spell 圣火术|XPHB}戏法。",
+									"当你达到3级时，你习得{@spell 光导箭|XPHB}法术；达到5级 时，你还习得{@spell 援助术|XPHB}法术。你始终让这些法术处于已准备状态，并且每个法术都可以不消耗法术位施展一次。使用此特性施展其中任一法术后，你必须完成一次{@variantrule 长休|XPHB}才能再次以此特性施展该法术。你也可以使用你拥有的任意适当环阶的法术位施展这些法术。",
+									"智力、感知或魅力是你以此特性施展法术时的施法属性（在选择血脉时决定）。"
+								]
+							}
+						}
+					},
+					"resist": [
+						"radiant"
+					],
+					"additionalSpells": [
+						{
+							"ability": {
+								"choose": [
+									"int",
+									"wis",
+									"cha"
+								]
+							},
+							"known": {
+								"1": [
+									"圣火术|xphb#c"
+								]
+							},
+							"prepared": {
+								"3": {
+									"daily": {
+										"1": [
+											"光导箭|xphb"
+										]
+									}
+								},
+								"5": {
+									"daily": {
+										"1": [
+											"援助术|xphb"
+										]
+									}
+								}
+							}
+						}
+					]
+				},
+				{
+					"ENG_name": "Draenei; Man'ari Lineage",
+					"name": "德莱尼; 玛纳里血统",
+					"source": "WoW",
+					"_mod": {
+						"entries": {
+							"mode": "replaceArr",
+							"replace": "艾瑞达血脉",
+							"items": {
+								"ENG_name": "Eredar Lineage (Man'ari)",
+								"name": "艾瑞达血脉（玛纳里）",
+								"type": "entries",
+								"entries": [
+									"你获得对火焰伤害的{@variantrule 抗性|XPHB}。你习得戏法{@spell 火焰箭|XPHB}。",
+									"当你到达3级时，你习得法术{@spell 炼狱叱喝|XPHB}。当你到达5级时，你习得法术{@spell 黑暗术|XPHB}。你时刻准备着这道习得的法术，且可以不消耗法术位施展此法术一次，当你完成一次{@variantrule 长休|XPHB}时，你重获施展该道法术的能力。你也可以用任何你拥有的相应环阶法术位施展该道法术。",
+									"智力、感知或魅力是你以此特性施展法术时的施法属性（在选择血脉时决定）。"
+								]
+							}
+						}
+					},
+					"resist": [
+						"fire"
+					],
+					"additionalSpells": [
+						{
+							"ability": {
+								"choose": [
+									"int",
+									"wis",
+									"cha"
+								]
+							},
+							"known": {
+								"1": [
+									"火焰箭|xphb#c"
+								]
+							},
+							"prepared": {
+								"3": {
+									"daily": {
+										"1": [
+											"炼狱叱喝|xphb"
+										]
+									}
+								},
+								"5": {
+									"daily": {
+										"1": [
+											"黑暗术|xphb"
+										]
+									}
+								}
+							}
+						}
+					]
+				}
+			]
+		},
+		{
 			"ENG_name": "Dragonborn",
 			"name": "龙裔",
 			"source": "PHB",
@@ -2665,7 +3198,22 @@
 				"M"
 			],
 			"speed": 30,
-			"darkvision": 60,
+			"ability": [
+				{
+					"str": 2,
+					"cha": 1
+				}
+			],
+			"heightAndWeight": {
+				"baseHeight": 66,
+				"heightMod": "2d8",
+				"baseWeight": 175,
+				"weightMod": "2d6"
+			},
+			"age": {
+				"mature": 15,
+				"max": 80
+			},
 			"traitTags": [
 				"Uncommon Race"
 			],
@@ -2688,12 +3236,9 @@
 					}
 				}
 			],
-			"sizeEntry": {
-				"type": "item",
-				"name": "Size:",
-				"entries": [
-					"Medium (about 7 feet tall)"
-				]
+			"soundClip": {
+				"type": "internal",
+				"path": "races/dragonborn.opus"
 			},
 			"entries": [
 				{
@@ -3078,108 +3623,16 @@
 							"resist": [
 								"cold"
 							]
+						},
+						{
+							"_variables": {
+								"color": "白",
+								"damageType": "寒冷"
 							},
-							{
-								"_variables": {
-									"color": "白",
-									"damageType": "寒冷"
-								},
-								"resist": [
-									"cold"
-								]
-							}
-					]
-				}
-			]
-		},
-		{
-			"name": "Duergar",
-			"source": "MPMM",
-			"page": 12,
-			"lineage": "VRGR",
-			"creatureTypes": [
-				"humanoid"
-			],
-			"creatureTypeTags": [
-				"dwarf"
-			],
-			"size": [
-				"M"
-			],
-			"speed": 30,
-			"age": {
-				"max": 350
-			},
-			"darkvision": 120,
-			"resist": [
-				"poison"
-			],
-			"soundClip": {
-				"type": "internal",
-				"path": "races/duergar.opus"
-			},
-			"additionalSpells": [
-				{
-					"innate": {
-						"3": {
-							"daily": {
-								"1": [
-									"enlarge/reduce"
-								]
-							}
-						},
-							"5": {
-								"daily": {
-									"1": [
-										"invisibility"
-									]
-								}
-							}
-						},
-					"ability": {
-						"choose": [
-							"int",
-							"wis",
-							"cha"
-						]
-					}
-				}
-			],
-			"entries": [
-				{
-					"type": "entries",
-					"name": "Creature Type",
-					"entries": [
-						"You are a Humanoid. You are also considered a dwarf for any prerequisite or effect that requires you to be a dwarf."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Darkvision",
-					"entries": [
-						"You can see in dim light within 120 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Duergar Magic",
-					"entries": [
-						"Starting at 3rd level, you can cast the {@spell enlarge/reduce} spell on yourself with this trait, without requiring a material component. Starting at 5th level, you can also cast the {@spell invisibility} spell on yourself with this trait, without requiring a material component. Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level.",
-						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Dwarven Resilience",
-					"entries": [
-						"You have advantage on saving throws you make to avoid or end the {@condition poisoned} condition on yourself. You also have resistance to poison damage."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Psionic Fortitude",
-					"entries": [
-						"You have advantage on saving throws you make to avoid or end the {@condition charmed} or {@condition stunned} condition on yourself."
+							"resist": [
+								"cold"
+							]
+						}
 					]
 				}
 			],
@@ -3193,27 +3646,12 @@
 			"reprintedAs": [
 				"龙裔|XPHB"
 			],
+			"lineage": "VRGR",
 			"size": [
 				"M"
 			],
-			"speed": 25,
-			"ability": [
-				{
-					"con": 2
-				}
-			],
-			"age": {
-				"mature": 20,
-				"max": 350
-			},
-			"darkvision": 60,
-			"languageProficiencies": [
-				{
-					"common": true,
-					"dwarvish": true
-				}
-			],
-			"toolProficiencies": [
+			"speed": 30,
+			"resist": [
 				{
 					"choose": {
 						"from": [
@@ -3226,20 +3664,9 @@
 					}
 				}
 			],
-			"weaponProficiencies": [
-				{
-					"battleaxe|phb": true,
-					"handaxe|phb": true,
-					"light hammer|phb": true,
-					"warhammer|phb": true
-				}
-			],
-			"resist": [
-				"poison"
-			],
 			"soundClip": {
 				"type": "internal",
-				"path": "races/dwarf.opus"
+				"path": "races/dragonborn.opus"
 			},
 			"entries": [
 				{
@@ -3308,7 +3735,11 @@
 					"entries": [
 						"5级起，你可以用一个动作引导出你的龙族能量来保护自身。1分钟内，你免疫你所选的色彩龙血脉对应的伤害类型。在你使用此特性后，你在完成一次长休之前不能再次使用。"
 					]
-				},
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"_versions": [
 				{
 					"_abstract": {
 						"ENG_name": "Dragonborn (Chromatic; {{color}})",
@@ -3409,7 +3840,6 @@
 				"M"
 			],
 			"speed": 30,
-			"darkvision": 120,
 			"resist": [
 				{
 					"choose": {
@@ -3425,14 +3855,7 @@
 			],
 			"soundClip": {
 				"type": "internal",
-				"path": "races/dwarf.opus"
-			},
-			"sizeEntry": {
-				"type": "item",
-				"name": "Size:",
-				"entries": [
-					"Medium (about 4-5 feet tall)"
-				]
+				"path": "races/dragonborn.opus"
 			},
 			"entries": [
 				{
@@ -3616,8 +4039,8 @@
 			"size": [
 				"M"
 			],
-			"speed": 25,
-			"ability": [
+			"speed": 30,
+			"resist": [
 				{
 					"choose": {
 						"from": [
@@ -3629,12 +4052,9 @@
 					}
 				}
 			],
-			"resist": [
-				"poison"
-			],
 			"soundClip": {
 				"type": "internal",
-				"path": "races/dwarf.opus"
+				"path": "races/dragonborn.opus"
 			},
 			"entries": [
 				{
@@ -3726,7 +4146,11 @@
 						},
 						"在你使用你的金属龙吐息武器后，你不能再次使用它，直至你完成一次长休。"
 					]
-				},
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"_versions": [
 				{
 					"_abstract": {
 						"ENG_name": "Dragonborn (Metallic; {{color}})",
@@ -3833,16 +4257,16 @@
 				"M"
 			],
 			"speed": 30,
+			"age": {
+				"max": 350
+			},
 			"darkvision": 120,
 			"resist": [
 				"poison"
 			],
-			"sizeEntry": {
-				"type": "item",
-				"name": "Size:",
-				"entries": [
-					"Medium (about 4\u20135 feet tall)"
-				]
+			"soundClip": {
+				"type": "internal",
+				"path": "races/duergar.opus"
 			},
 			"additionalSpells": [
 				{
@@ -3931,23 +4355,50 @@
 			"size": [
 				"M"
 			],
-			"speed": 30,
-			"age": {
-				"max": 750
-			},
-			"darkvision": 60,
-			"traitTags": [
-				"Improved Resting",
-				"Tool Proficiency",
-				"Weapon Proficiency"
-			],
-			"skillProficiencies": [
+			"speed": 25,
+			"ability": [
 				{
-					"perception": true
+					"con": 2
 				}
 			],
+			"age": {
+				"mature": 20,
+				"max": 350
+			},
+			"darkvision": 60,
+			"languageProficiencies": [
+				{
+					"common": true,
+					"dwarvish": true
+				}
+			],
+			"toolProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"smith's tools",
+							"brewer's supplies",
+							"mason's tools"
+						]
+					}
+				}
+			],
+			"weaponProficiencies": [
+				{
+					"battleaxe|phb": true,
+					"handaxe|phb": true,
+					"light hammer|phb": true,
+					"warhammer|phb": true
+				}
+			],
+			"resist": [
+				"poison"
+			],
+			"soundClip": {
+				"type": "internal",
+				"path": "races/dwarf.opus"
+			},
 			"entries": [
-				"{@i Choose your eladrin's season: autumn, winter, spring, or summer. When finishing a long rest, you can change your season. See the \"Info\" tab for more information.}",
 				{
 					"ENG_name": "Age",
 					"name": "年龄",
@@ -3995,8 +4446,46 @@
 					"entries": [
 						"你具有{@item 战斧|phb}、{@item 手斧|phb}、{@item 轻锤|phb}和{@item 战锤|phb}的熟练项。"
 					]
+				},
+				{
+					"ENG_name": "Tool Proficiency",
+					"name": "工具熟练",
+					"type": "entries",
+					"entries": [
+						"你获得自选一种{@item 工匠工具|PHB}的熟练项：{@item 铁匠工具|phb}、{@item 酿酒工具|phb}或{@item 石匠工具|phb}。"
+					]
+				},
+				{
+					"ENG_name": "Stonecunning",
+					"name": "石中精妙",
+					"type": "entries",
+					"entries": [
+						"每当你对一件石制品的起源做智力（{@skill 历史}）检定时，你视为具有{@skill 历史}技能的熟练项，并可以在检定中加上双倍的熟练加值，而非你平时的熟练加值。"
+					]
+				},
+				{
+					"ENG_name": "Languages",
+					"name": "语言",
+					"type": "entries",
+					"entries": [
+						"你能够说、读、写通用语和矮人语。矮人语中充满了硬辅音和喉音，这使得矮人在讲其他语言时也会带上这些特点。"
+					]
 				}
 			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Dwarf",
+			"name": "矮人",
+			"source": "WoW",
+			"page": 74,
+			"_copy": {
+				"ENG_name": "Dwarf",
+				"name": "矮人",
+				"source": "XPHB"
+			},
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -4081,31 +4570,32 @@
 			"speed": 25,
 			"ability": [
 				{
-					"dex": 2
+					"con": 2,
+					"wis": 1
 				}
 			],
 			"age": {
-				"mature": 100,
-				"max": 750
+				"mature": 50,
+				"max": 350
 			},
 			"darkvision": 60,
-			"traitTags": [
-				"Improved Resting"
-			],
-			"skillProficiencies": [
-				{
-					"perception": true
-				}
-			],
 			"languageProficiencies": [
 				{
 					"common": true,
-					"elvish": true
+					"dwarvish": true
 				}
+			],
+			"toolProficiencies": [
+				{
+					"anyArtisansTool": 2
+				}
+			],
+			"resist": [
+				"poison"
 			],
 			"soundClip": {
 				"type": "internal",
-				"path": "races/elf.opus"
+				"path": "races/dwarf.opus"
 			},
 			"entries": [
 				{
@@ -4184,6 +4674,78 @@
 			"hasFluff": true,
 			"hasFluffImages": true,
 			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Earthen",
+			"name": "土灵",
+			"source": "WoW",
+			"page": 75,
+			"edition": "one",
+			"creatureTypes": [
+				"类人生物"
+			],
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"darkvision": 120,
+			"resist": [
+				"poison"
+			],
+			"sizeEntry": {
+				"ENG_name": "Size:",
+				"name": "体型：",
+				"type": "item",
+				"entries": [
+					"中型（身高约 4\u20135 尺）"
+				]
+			},
+			"entries": [
+				{
+					"ENG_name": "Azerite Surge",
+					"name": "艾泽里特涌动",
+					"type": "entries",
+					"entries": [
+						"当你在自己的回合采取{@action 攻击|XPHB}动作时，你可以将其中一次攻击替换为一道艾泽里特能量的爆发，形成 15 尺{@variantrule 锥状 [效应区域]|XPHB|锥状}。{@variantrule 锥状 [效应区域]|XPHB|锥状}内你选择的每个生物回复{@dice 1d10}点{@variantrule 生命值|XPHB}。{@variantrule 锥状 [效应区域]|XPHB|锥状}内的其他每个生物进行敏捷豁免（{@dc 8}加你的体质调整值和你的{@variantrule 熟练|XPHB|熟练加值}），失败者受{@damage 1d10}点光耀伤害，成功者仅受一半伤害。",
+						"当你达到5级（{@dice 2d10}）、11（{@dice 3d10}）和 17（{@dice 4d10}）时，伤害和治疗都提高{@dice 1d10}。",
+						"你可以使用此能力的次数等同于你的{@variantrule 熟练|XPHB|熟练加值}，并在完成{@variantrule 长休|XPHB}后恢复所有已耗用的次数。"
+					]
+				},
+				{
+					"ENG_name": "Darkvision",
+					"name": "黑暗视觉",
+					"type": "entries",
+					"entries": [
+						"你拥有 120 尺{@sense 黑暗视觉|XPHB}。"
+					]
+				},
+				{
+					"ENG_name": "Earthen Resilience",
+					"name": "土灵韧性",
+					"type": "entries",
+					"entries": [
+						"你具有毒素伤害的{@variantrule 抗性|XPHB}。此外，你为避免/结束{@condition 中毒|XPHB}状态所做的豁免检定具有{@variantrule 优势|XPHB}。"
+					]
+				},
+				{
+					"ENG_name": "Ingest Minerals",
+					"name": "摄取矿物",
+					"type": "entries",
+					"entries": [
+						"你不会因营养不良而获得{@condition 力竭|XPHB}等级。"
+					]
+				},
+				{
+					"ENG_name": "Quiet Contemplation",
+					"name": "静息冥思",
+					"type": "entries",
+					"entries": [
+						"当你在完成{@variantrule 短休|XPHB}时消耗{@variantrule 生命值骰|XPHB}，你每消耗一枚{@variantrule 生命值骰|XPHB|生命值骰}就额外回复 1 点{@variantrule 生命值|XPHB|生命值}。"
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Eladrin",
@@ -4376,10 +4938,7 @@
 								]
 							}
 						}
-					}
-				},
-				{
-					"name": "Night Elf",
+					},
 					"ability": {
 						"choose": [
 							"int",
@@ -4415,10 +4974,7 @@
 								]
 							}
 						}
-					}
-				},
-				{
-					"name": "Void Elf",
+					},
 					"ability": {
 						"choose": [
 							"int",
@@ -4430,41 +4986,9 @@
 						"1": [
 							"点点星芒|xphb#c"
 						]
-					},
-					"known": {
-						"1": {
-							"_": [
-								{
-									"choose": "level=0|class=Wizard"
-								}
-							]
-						}
-					},
-					"prepared": {
-						"3": {
-							"daily": {
-								"1": [
-									"detect magic|xphb"
-								]
-							}
-						},
-						"5": {
-							"daily": {
-								"1": [
-									"misty step|xphb"
-								]
-							}
-						}
 					}
 				}
 			],
-			"sizeEntry": {
-				"type": "item",
-				"name": "Size:",
-				"entries": [
-					"Medium (about 6\u20138 feet tall)"
-				]
-			},
 			"hasFluff": true,
 			"hasFluffImages": true,
 			"_versions": [
@@ -4521,22 +5045,6 @@
 										}
 									]
 								}
-							},
-							"prepared": {
-								"3": {
-									"daily": {
-										"1": [
-											"detect magic|xphb"
-										]
-									}
-								},
-								"5": {
-									"daily": {
-										"1": [
-											"misty step|xphb"
-										]
-									}
-								}
 							}
 						}
 					]
@@ -4561,28 +5069,10 @@
 							}
 						}
 					},
-					"skillProficiencies": [
-						{
-							"stealth": true,
-							"choose": {
-								"from": [
-									"insight",
-									"perception",
-									"survival"
-								]
-							}
-						}
-					],
+					"darkvision": 120,
 					"additionalSpells": [
 						{
-							"ability": {
-								"choose": [
-									"int",
-									"wis",
-									"cha"
-								]
-							},
-							"prepared": {
+							"innate": {
 								"3": {
 									"daily": {
 										"1": [
@@ -4597,44 +5087,7 @@
 										]
 									}
 								}
-							}
-						}
-					]
-				},
-				{
-					"name": "Elf; Nightborne Lineage",
-					"source": "WoW",
-					"_mod": {
-						"entries": [
-							{
-								"mode": "replaceArr",
-								"replace": "Azeroth Elven Lineage",
-								"items": {
-									"name": "Azeroth Elven Lineage (Nightborne)",
-									"type": "entries",
-									"entries": [
-										"The range of your {@sense Darkvision|XPHB} increases to 120 feet. You also know the {@spell Arcane Pulse|WoW} cantrip.",
-										"When you reach character level 3, you learn the {@spell Faerie Fire|XPHB} spell. When you reach character level 5, you also learn the {@spell Darkness|XPHB} spell. You always have these spells prepared, and you can cast each spell once without a spell slot. Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a {@variantrule Long Rest|XPHB}. You can also cast the spell using any spell slots you have of the appropriate level.",
-										"Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage)."
-									]
-								}
 							},
-							{
-								"mode": "replaceArr",
-								"replace": "Darkvision",
-								"items": {
-									"type": "entries",
-									"name": "Darkvision",
-									"entries": [
-										"You have {@sense Darkvision|XPHB} with a range of 120 feet."
-									]
-								}
-							}
-						]
-					},
-					"darkvision": 120,
-					"additionalSpells": [
-						{
 							"ability": {
 								"choose": [
 									"int",
@@ -4646,22 +5099,6 @@
 								"1": [
 									"点点星芒|xphb#c"
 								]
-							},
-							"prepared": {
-								"3": {
-									"daily": {
-										"1": [
-											"faerie fire|xphb"
-										]
-									}
-								},
-								"5": {
-									"daily": {
-										"1": [
-											"darkness|xphb"
-										]
-									}
-								}
 							}
 						}
 					]
@@ -4773,6 +5210,568 @@
 			"hasFluff": true,
 			"hasFluffImages": true,
 			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Elf",
+			"name": "精灵",
+			"source": "WoW",
+			"page": 76,
+			"_copy": {
+				"ENG_name": "Elf",
+				"name": "精灵",
+				"source": "XPHB",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": "精灵血系",
+						"items": {
+							"ENG_name": "Azeroth Elven Lineage",
+							"name": "艾泽拉斯精灵血统",
+							"type": "entries",
+							"entries": [
+								"你属于一条赋予你超自然能力的血统。从艾泽拉斯精灵血统表中选择一条血统，并获得该血统的1级收益。",
+								"当你到达 3 级和 5 级时，你分别习得一道表格上更高级的法术；你时刻准备着这道习得的法术，且可以不消耗法术位施展此法术一次，当你完成一次{@variantrule 长休|XPHB}时，你重获施展该道法术的能力。你也可以用任何你拥有的相应环阶法术位施展该道法术。",
+								"当你选择血系时，选择智力、感知、或魅力之一，该属性即是你用此特质施展法术时的施法属性。",
+								{
+									"type": "table",
+									"caption": "艾泽拉斯精灵血统",
+									"colLabels": [
+										"血系",
+										"1环",
+										"3环",
+										"5级"
+									],
+									"colStyles": [
+										"col-2",
+										"col-6",
+										"col-2",
+										"col-2"
+									],
+									"rows": [
+										[
+											"血精灵",
+											"你知晓戏法{@spell 魔法伎俩|XPHB}。每当你完成{@variantrule 长休|XPHB}时，你可以将它替换为另一道{@filter 法师法术列表中的戏法|spells|level=0|class=法师}。",
+											"{@spell 侦测魔法|XPHB}",
+											"{@spell 复苏秘法|XPHB}"
+										],
+										[
+											"暗夜精灵",
+											"你熟练{@skill 隐匿|XPHB}技能；处于{@variantrule 微光光照|XPHB}或{@variantrule 黑暗|XPHB}中时，你可以用{@variantrule 附赠动作|XPHB}采取{@action 躲藏|XPHB}动作。",
+											"{@spell 大步奔行|XPHB}",
+											"{@spell 行动无踪|XPHB}"
+										],
+										[
+											"夜之子",
+											"你的{@sense 黑暗视觉|XPHB}范围增加至 120 尺。你还知晓{@spell 奥术脉冲|WoW}戏法。",
+											"{@spell 妖火|XPHB}",
+											"{@spell 黑暗术|XPHB}"
+										],
+										[
+											"虚空精灵",
+											"你的{@sense 黑暗视觉|XPHB}范围增加至 120 尺。你还知晓{@spell 心灵之楔|XPHB}戏法。",
+											"{@spell 熵能之拥|WoW}",
+											"{@spell 迷踪步|XPHB}"
+										],
+										[
+											"高等精灵",
+											"你知晓戏法{@spell 魔法伎俩|XPHB}。每当你完成{@variantrule 长休|XPHB}时，你可以将它替换为另一道{@filter 法师法术列表中的戏法|spells|level=0|class=法师}。",
+											"{@spell 侦测魔法|XPHB}",
+											"{@spell 迷踪步|XPHB}"
+										]
+									]
+								}
+							]
+						}
+					}
+				}
+			},
+			"additionalSpells": [
+				{
+					"ENG_name": "Blood Elf",
+					"name": "血精灵",
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": {
+							"_": [
+								{
+									"choose": "level=0|class=法师"
+								}
+							]
+						}
+					},
+					"prepared": {
+						"3": {
+							"daily": {
+								"1": [
+									"侦测魔法|xphb"
+								]
+							}
+						},
+						"5": {
+							"daily": {
+								"1": [
+									"复苏秘法|xphb"
+								]
+							}
+						}
+					}
+				},
+				{
+					"ENG_name": "Night Elf",
+					"name": "暗夜精灵",
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"prepared": {
+						"3": {
+							"daily": {
+								"1": [
+									"大步奔行|xphb"
+								]
+							}
+						},
+						"5": {
+							"daily": {
+								"1": [
+									"行动无踪|xphb"
+								]
+							}
+						}
+					}
+				},
+				{
+					"ENG_name": "Nightborne",
+					"name": "夜之子",
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": [
+							"奥术脉冲|wow#c"
+						]
+					},
+					"prepared": {
+						"3": {
+							"daily": {
+								"1": [
+									"妖火|xphb"
+								]
+							}
+						},
+						"5": {
+							"daily": {
+								"1": [
+									"黑暗术|xphb"
+								]
+							}
+						}
+					}
+				},
+				{
+					"ENG_name": "Void Elf",
+					"name": "虚空精灵",
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": [
+							"心灵之楔|xphb#c"
+						]
+					},
+					"prepared": {
+						"3": {
+							"daily": {
+								"1": [
+									"熵能之拥|wow"
+								]
+							}
+						},
+						"5": {
+							"daily": {
+								"1": [
+									"迷踪步|xphb"
+								]
+							}
+						}
+					}
+				},
+				{
+					"ENG_name": "High Elf",
+					"name": "高等精灵",
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": {
+							"_": [
+								{
+									"choose": "level=0|class=法师"
+								}
+							]
+						}
+					},
+					"prepared": {
+						"3": {
+							"daily": {
+								"1": [
+									"侦测魔法|xphb"
+								]
+							}
+						},
+						"5": {
+							"daily": {
+								"1": [
+									"迷踪步|xphb"
+								]
+							}
+						}
+					}
+				}
+			],
+			"sizeEntry": {
+				"ENG_name": "Size:",
+				"name": "体型：",
+				"type": "item",
+				"entries": [
+					"中型（约6-8尺高）"
+				]
+			},
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"_versions": [
+				{
+					"ENG_name": "Elf; Blood Elf Lineage",
+					"name": "精灵; 血精灵血统",
+					"source": "WoW",
+					"_mod": {
+						"entries": {
+							"mode": "replaceArr",
+							"replace": "艾泽拉斯精灵血统",
+							"items": {
+								"ENG_name": "Azeroth Elven Lineage (Blood Elf)",
+								"name": "艾泽拉斯精灵血统（血精灵）",
+								"type": "entries",
+								"entries": [
+									"你知晓戏法{@spell 魔法伎俩|XPHB}。每当你完成{@variantrule 长休|XPHB}时，你可以将它替换为另一道{@filter 法师法术列表中的戏法|spells|level=0|class=法师}。",
+									"当你达到3级时，你习得{@spell 侦测魔法|XPHB}法术；达到5级 时，你还习得{@spell 复苏秘法|XPHB}法术。你始终让这些法术处于已准备状态，并且每个法术都可以不消耗法术位施展一次。使用此特性施展其中任一法术后，你必须完成一次{@variantrule 长休|XPHB}才能再次以此特性施展该法术。你也可以使用你拥有的任意适当环阶的法术位施展这些法术。",
+									"当你选择血系时，选择智力、感知、或魅力之一，该属性即是你用此特质施展法术时的施法属性。"
+								]
+							}
+						}
+					},
+					"additionalSpells": [
+						{
+							"ability": {
+								"choose": [
+									"int",
+									"wis",
+									"cha"
+								]
+							},
+							"known": {
+								"1": {
+									"_": [
+										{
+											"choose": "level=0|class=法师"
+										}
+									]
+								}
+							},
+							"prepared": {
+								"3": {
+									"daily": {
+										"1": [
+											"侦测魔法|xphb"
+										]
+									}
+								},
+								"5": {
+									"daily": {
+										"1": [
+											"复苏秘法|xphb"
+										]
+									}
+								}
+							}
+						}
+					]
+				},
+				{
+					"ENG_name": "Elf; High Elf Lineage",
+					"name": "精灵; 高等精灵血系",
+					"source": "WoW",
+					"_mod": {
+						"entries": {
+							"mode": "replaceArr",
+							"replace": "艾泽拉斯精灵血统",
+							"items": {
+								"ENG_name": "Azeroth Elven Lineage (High Elf)",
+								"name": "艾泽拉斯精灵血统（高等精灵）",
+								"type": "entries",
+								"entries": [
+									"你知晓戏法{@spell 魔法伎俩|XPHB}。每当你完成{@variantrule 长休|XPHB}时，你可以将它替换为另一道{@filter 法师法术列表中的戏法|spells|level=0|class=法师}。",
+									"当你到达 3 级时，你习得法术{@spell 侦测魔法|XPHB}。当你到达 5 级时，你习得法术{@spell 迷踪步|XPHB}。你时刻准备着这道习得的法术，且可以不消耗法术位施展此法术一次，当你完成一次{@variantrule 长休|XPHB}时，你重获施展该道法术的能力。你也可以用任何你拥有的相应环阶法术位施展该道法术。",
+									"当你选择血系时，选择智力、感知、或魅力之一，该属性即是你用此特质施展法术时的施法属性。"
+								]
+							}
+						}
+					},
+					"additionalSpells": [
+						{
+							"ability": {
+								"choose": [
+									"int",
+									"wis",
+									"cha"
+								]
+							},
+							"known": {
+								"1": {
+									"_": [
+										{
+											"choose": "level=0|class=法师"
+										}
+									]
+								}
+							},
+							"prepared": {
+								"3": {
+									"daily": {
+										"1": [
+											"侦测魔法|xphb"
+										]
+									}
+								},
+								"5": {
+									"daily": {
+										"1": [
+											"迷踪步|xphb"
+										]
+									}
+								}
+							}
+						}
+					]
+				},
+				{
+					"ENG_name": "Elf; Night Elf Lineage",
+					"name": "精灵; 暗夜精灵血统",
+					"source": "WoW",
+					"_mod": {
+						"entries": {
+							"mode": "replaceArr",
+							"replace": "艾泽拉斯精灵血统",
+							"items": {
+								"ENG_name": "Azeroth Elven Lineage (Night Elf)",
+								"name": "艾泽拉斯精灵血统（暗夜精灵）",
+								"type": "entries",
+								"entries": [
+									"你熟练{@skill 隐匿|XPHB}技能；处于{@variantrule 微光光照|XPHB}或{@variantrule 黑暗|XPHB}中时，你可以用{@variantrule 附赠动作|XPHB}采取{@action 躲藏|XPHB}动作。",
+									"当你到达 3 级时，你习得法术{@spell 大步奔行|XPHB}。当你到达 5 级时，你习得法术{@spell 行动无踪|XPHB}。你时刻准备着这道习得的法术，且可以不消耗法术位施展此法术一次，当你完成一次{@variantrule 长休|XPHB}时，你重获施展该道法术的能力。你也可以用任何你拥有的相应环阶法术位施展该道法术。",
+									"当你选择血系时，选择智力、感知、或魅力之一，该属性即是你用此特质施展法术时的施法属性。"
+								]
+							}
+						}
+					},
+					"skillProficiencies": [
+						{
+							"stealth": true,
+							"choose": {
+								"from": [
+									"insight",
+									"perception",
+									"survival"
+								]
+							}
+						}
+					],
+					"additionalSpells": [
+						{
+							"ability": {
+								"choose": [
+									"int",
+									"wis",
+									"cha"
+								]
+							},
+							"prepared": {
+								"3": {
+									"daily": {
+										"1": [
+											"大步奔行|xphb"
+										]
+									}
+								},
+								"5": {
+									"daily": {
+										"1": [
+											"行动无踪|xphb"
+										]
+									}
+								}
+							}
+						}
+					]
+				},
+				{
+					"ENG_name": "Elf; Nightborne Lineage",
+					"name": "精灵; 夜之子血统",
+					"source": "WoW",
+					"_mod": {
+						"entries": [
+							{
+								"mode": "replaceArr",
+								"replace": "艾泽拉斯精灵血统",
+								"items": {
+									"ENG_name": "Azeroth Elven Lineage (Nightborne)",
+									"name": "Azeroth Elven Lineage (Nightborne)",
+									"type": "entries",
+									"entries": [
+										"你的{@sense 黑暗视觉|XPHB}范围增加至 120 尺。你还知晓{@spell 奥术脉冲|WoW}戏法。",
+										"当你到达 3 级时，你习得法术{@spell 妖火|XPHB}。当你到达 5 级时，你习得法术{@spell 黑暗术|XPHB}。你时刻准备着这道习得的法术，且可以不消耗法术位施展此法术一次，当你完成一次{@variantrule 长休|XPHB}时，你重获施展该道法术的能力。你也可以用任何你拥有的相应环阶法术位施展该道法术。",
+										"当你选择血系时，选择智力、感知、或魅力之一，该属性即是你用此特质施展法术时的施法属性。"
+									]
+								}
+							},
+							{
+								"mode": "replaceArr",
+								"replace": "黑暗视觉",
+								"items": {
+									"ENG_name": "Darkvision",
+									"name": "黑暗视觉",
+									"type": "entries",
+									"entries": [
+										"你拥有 120 尺{@sense 黑暗视觉|XPHB}。"
+									]
+								}
+							}
+						]
+					},
+					"darkvision": 120,
+					"additionalSpells": [
+						{
+							"ability": {
+								"choose": [
+									"int",
+									"wis",
+									"cha"
+								]
+							},
+							"known": {
+								"1": [
+									"奥术脉冲|wow#c"
+								]
+							},
+							"prepared": {
+								"3": {
+									"daily": {
+										"1": [
+											"妖火|xphb"
+										]
+									}
+								},
+								"5": {
+									"daily": {
+										"1": [
+											"黑暗术|xphb"
+										]
+									}
+								}
+							}
+						}
+					]
+				},
+				{
+					"ENG_name": "Elf; Void Elf Lineage",
+					"name": "精灵; 虚空精灵血统",
+					"source": "WoW",
+					"_mod": {
+						"entries": [
+							{
+								"mode": "replaceArr",
+								"replace": "艾泽拉斯精灵血统",
+								"items": {
+									"ENG_name": "Azeroth Elven Lineage (Void Elf)",
+									"name": "Azeroth Elven Lineage (Void Elf)",
+									"type": "entries",
+									"entries": [
+										"你的{@sense 黑暗视觉|XPHB}范围增加至 120 尺。你还知晓{@spell 心灵之楔|XPHB}戏法。",
+										"当你达到3级时，你习得{@spell 熵能之拥|WoW}法术；达到5级 时，你还习得{@spell 迷踪步|XPHB}法术。你始终让这些法术处于已准备状态，并且每个法术都可以不消耗法术位施展一次。使用此特性施展其中任一法术后，你必须完成一次{@variantrule 长休|XPHB}才能再次以此特性施展该法术。你也可以使用你拥有的任意适当环阶的法术位施展这些法术。",
+										"当你选择血系时，选择智力、感知、或魅力之一，该属性即是你用此特质施展法术时的施法属性。"
+									]
+								}
+							},
+							{
+								"mode": "replaceArr",
+								"replace": "黑暗视觉",
+								"items": {
+									"ENG_name": "Darkvision",
+									"name": "黑暗视觉",
+									"type": "entries",
+									"entries": [
+										"你拥有 120 尺{@sense 黑暗视觉|XPHB}。"
+									]
+								}
+							}
+						]
+					},
+					"darkvision": 120,
+					"additionalSpells": [
+						{
+							"ability": {
+								"choose": [
+									"int",
+									"wis",
+									"cha"
+								]
+							},
+							"known": {
+								"1": [
+									"心灵之楔|xphb#c"
+								]
+							},
+							"prepared": {
+								"3": {
+									"daily": {
+										"1": [
+											"熵能之拥|wow"
+										]
+									}
+								},
+								"5": {
+									"daily": {
+										"1": [
+											"迷踪步|xphb"
+										]
+									}
+								}
+							}
+						}
+					]
+				}
+			]
 		},
 		{
 			"ENG_name": "Elf",
@@ -5308,7 +6307,7 @@
 					"name": "精灵文化",
 					"type": "entries",
 					"entries": [
-						"卡德加什的精灵不将自己组织成国家或部落。尽管如此，他们在自己的族群中识别出三种不同的文化群体\u2014\u2014尽管实际上，这些群体更像是对社会其他部分以及使用技术的态度或立场。选择其中一种文化。"
+						"卡拉德许的精灵不将自己组织成国家或部落。尽管如此，他们在自己的族群中识别出三种不同的文化群体\u2014\u2014尽管实际上，这些群体更像是对社会其他部分以及使用技术的态度或立场。选择其中一种文化。"
 					]
 				}
 			],
@@ -5938,6 +6937,81 @@
 			"translator": "不全书"
 		},
 		{
+			"ENG_name": "Forsaken",
+			"name": "被遗忘者",
+			"source": "WoW",
+			"page": 78,
+			"edition": "one",
+			"creatureTypes": [
+				"亡灵"
+			],
+			"size": [
+				"S",
+				"M"
+			],
+			"speed": 30,
+			"darkvision": 60,
+			"traitTags": [
+				"Improved Resting"
+			],
+			"resist": [
+				"necrotic"
+			],
+			"sizeEntry": {
+				"ENG_name": "Size:",
+				"name": "体型：",
+				"type": "item",
+				"entries": [
+					"中型（身高约 4\u20137 尺）或小型（身高约 2\u20134 尺），在选择此物种时决定"
+				]
+			},
+			"entries": [
+				{
+					"ENG_name": "Darkvision",
+					"name": "黑暗视觉",
+					"type": "entries",
+					"entries": [
+						"你拥有 60 尺{@sense 黑暗视觉|XPHB}。"
+					]
+				},
+				{
+					"ENG_name": "Deathly Endurance",
+					"name": "死境耐力",
+					"type": "entries",
+					"entries": [
+						"你获得对暗蚀伤害的{@variantrule 抗性|XPHB}。"
+					]
+				},
+				{
+					"ENG_name": "Everlasting",
+					"name": "永固不朽",
+					"type": "entries",
+					"entries": [
+						"你不会因脱水、饥饿或窒息获得{@condition 力竭|XPHB}等级。你无需睡眠，魔法也无法使你陷入睡眠。你可以保持非活动的静止状态来仅用4小时完成{@variantrule 长休|XPHB}，且在这期间保持意识清醒。"
+					]
+				},
+				{
+					"ENG_name": "Touch of the Grave",
+					"name": "墓穴之触",
+					"type": "entries",
+					"entries": [
+						"当你对某生物造成伤害时，你可以掷数量等同于你{@variantrule 熟练|XPHB|熟练加值}的 d4。你对该生物造成等同于掷骰总值的额外黯蚀伤害，并回复等同于该额外伤害数值的{@variantrule 生命值|XPHB}。",
+						"一旦你使用此收益，你必须完成一次{@variantrule 长休|XPHB}才能再次使用。"
+					]
+				},
+				{
+					"ENG_name": "Will of the Forsaken",
+					"name": "被遗忘者的意志",
+					"type": "entries",
+					"entries": [
+						"你为避免或结束{@condition 魅惑|XPHB}或{@condition 恐慌|XPHB}状态而进行的豁免检定具有{@variantrule 优势|XPHB}。"
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
 			"ENG_name": "Genasi",
 			"name": "元素裔",
 			"source": "EEPC",
@@ -6487,6 +7561,51 @@
 		{
 			"ENG_name": "Gnome",
 			"name": "侏儒",
+			"source": "WoW",
+			"page": 80,
+			"_copy": {
+				"ENG_name": "Gnome",
+				"name": "侏儒",
+				"source": "XPHB",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": "侏儒血系",
+						"items": {
+							"ENG_name": "Gnomish Lineage",
+							"name": "侏儒血系",
+							"type": "entries",
+							"entries": [
+								"你属于一条赋予你超自然能力的血系。智力、感知或魅力是你以此特性施展法术时的施法属性：",
+								"你知晓{@spell 修复术|XPHB}和{@spell 魔法伎俩|XPHB}这两道戏法。此外，你可以花费 10 分钟时间，通过施展{@spell 魔法伎俩|XPHB}法术来创造一个微型发条装置（AC 为 5，HP 为 1），比如一件玩具、一个打火机、一个音乐盒。当你创造这个设备时，你可以从{@spell 魔法伎俩|XPHB}戏法中选择一个效果来决定它的功能；你与其他生物可以使用{@variantrule 附赠动作|XPHB}触碰该装置来激活它，此时该装置就会产生对应的效果。如果选择的效果存在选项，则在创建时选择其中一项应用。例如，如果你选择了法术中的那个点燃与熄灭的效果，你就需要决定设备是用来点火还是熄火的\u2014\u2014一台设备无法同时做到两个功能。你同时最多拥有三台这样的装置，每一个都会在被创造出来的 8 小时后解体消失。你也可以用{@action 操作|XPHB}动作，触摸你的一台设备将其拆除。"
+							]
+						}
+					}
+				}
+			},
+			"additionalSpells": [
+				{
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": [
+							"修复术|xphb#c",
+							"魔法伎俩|xphb#c"
+						]
+					}
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Gnome",
+			"name": "侏儒",
 			"source": "XPHB",
 			"page": 191,
 			"srd52": true,
@@ -6506,12 +7625,13 @@
 			},
 			"additionalSpells": [
 				{
-					"name": "Forest Gnome",
+					"ENG_name": "Forest Gnome",
+					"name": "森林侏儒",
 					"innate": {
 						"1": {
 							"daily": {
 								"pb": [
-									"speak with animals|xphb"
+									"动物交谈|xphb"
 								]
 							}
 						}
@@ -6525,12 +7645,13 @@
 					},
 					"known": {
 						"1": [
-							"minor illusion|xphb#c"
+							"次级幻象|xphb#c"
 						]
 					}
 				},
 				{
-					"name": "Rock Gnome",
+					"ENG_name": "Rock Gnome",
+					"name": "岩石侏儒",
 					"ability": {
 						"choose": [
 							"int",
@@ -6540,8 +7661,8 @@
 					},
 					"known": {
 						"1": [
-							"mending|xphb#c",
-							"prestidigitation|xphb#c"
+							"修复术|xphb#c",
+							"魔法伎俩|xphb#c"
 						]
 					}
 				}
@@ -7224,6 +8345,66 @@
 			"hasFluff": true,
 			"hasFluffImages": true,
 			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Goblin",
+			"name": "地精",
+			"source": "WoW",
+			"page": 81,
+			"edition": "one",
+			"creatureTypes": [
+				"类人生物"
+			],
+			"size": [
+				"S"
+			],
+			"speed": 30,
+			"darkvision": 60,
+			"sizeEntry": {
+				"ENG_name": "Size:",
+				"name": "体型：",
+				"type": "item",
+				"entries": [
+					"小型（身高约 4 尺）"
+				]
+			},
+			"entries": [
+				{
+					"ENG_name": "Darkvision",
+					"name": "黑暗视觉",
+					"type": "entries",
+					"entries": [
+						"你拥有 60 尺{@sense 黑暗视觉|XPHB}。"
+					]
+				},
+				{
+					"ENG_name": "Fey Ancestry",
+					"name": "妖精血统",
+					"type": "entries",
+					"entries": [
+						"你在进行避免或结束{@condition 魅惑|XPHB}状态的豁免时具有{@variantrule 优势|XPHB}。"
+					]
+				},
+				{
+					"ENG_name": "Fury of the Small",
+					"name": "以小博大",
+					"type": "entries",
+					"entries": [
+						"当你以攻击或法术伤害一个体型大于你的生物时，你可以使该攻击或法术对该生物造成额外伤害。额外伤害等同于你的{@variantrule 熟练|XPHB|熟练加值}，伤害类型与所造成的其他伤害相同。",
+						"你可以使用此特性的次数等同于你的{@variantrule 熟练|XPHB|熟练加值}，并在完成{@variantrule 长休|XPHB}后恢复所有已耗用的次数，且你每回合至多以此方式使用一次。"
+					]
+				},
+				{
+					"ENG_name": "Nimble Escape",
+					"name": "迅捷逃逸",
+					"type": "entries",
+					"entries": [
+						"你在自己的每个回合都可以将{@action 撤离|XPHB}或{@action 躲藏|XPHB}动作作为一个{@variantrule 附赠动作|XPHB}来采取。"
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Goblin (Dankwood)",
@@ -8363,98 +9544,6 @@
 				"path": "races/halfling.opus"
 			},
 			"sizeEntry": {
-				"type": "item",
-				"name": "Size:",
-				"entries": [
-					"Small (about 2-3 feet tall)"
-				]
-			},
-			"entries": [
-				{
-					"type": "entries",
-					"name": "Brave",
-					"entries": [
-						"You have {@variantrule Advantage|XPHB} on saving throws you make to avoid or end the {@condition Frightened|XPHB} condition."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Halfling Nimbleness",
-					"entries": [
-						"You can move through the space of any creature that is a size larger than you, but you can't stop in the same space."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Luck",
-					"entries": [
-						"When you roll a 1 on the {@dice d20} of a {@variantrule D20 Test|XPHB}, you can reroll the die, and you must use the new roll."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Naturally Stealthy",
-					"entries": [
-						"You can take the {@action Hide|XPHB} action even when you are obscured only by a creature that is at least one size larger than you."
-					]
-				}
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
-		},
-		{
-			"name": "Haranir",
-			"source": "WoW",
-			"page": 83,
-			"edition": "one",
-			"creatureTypes": [
-				"humanoid"
-			],
-			"size": [
-				"M"
-			],
-			"speed": 30,
-			"darkvision": 120,
-			"skillProficiencies": [
-				{
-					"nature": true,
-					"survival": true
-				}
-			],
-			"additionalSpells": [
-				{
-					"ability": {
-						"choose": [
-							"int",
-							"wis",
-							"cha"
-						]
-					},
-					"known": {
-						"1": [
-							"druidcraft|xphb#c",
-							"thorn whip|xphb#c"
-						]
-					},
-					"prepared": {
-						"3": {
-							"daily": {
-								"1": [
-									"entangle|xphb"
-								]
-							}
-						},
-						"5": {
-							"daily": {
-								"1": [
-									"spike growth|xphb"
-								]
-							}
-						}
-					}
-				}
-			],
-			"sizeEntry": {
 				"ENG_name": "Size:",
 				"name": "体型：",
 				"type": "item",
@@ -8499,6 +9588,99 @@
 			"hasFluff": true,
 			"hasFluffImages": true,
 			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Haranir",
+			"name": "哈拉尼尔",
+			"source": "WoW",
+			"page": 83,
+			"edition": "one",
+			"creatureTypes": [
+				"类人生物"
+			],
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"darkvision": 120,
+			"skillProficiencies": [
+				{
+					"nature": true,
+					"survival": true
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": [
+							"德鲁伊伎俩|xphb#c",
+							"荆棘之鞭|xphb#c"
+						]
+					},
+					"prepared": {
+						"3": {
+							"daily": {
+								"1": [
+									"纠缠术|xphb"
+								]
+							}
+						},
+						"5": {
+							"daily": {
+								"1": [
+									"荆棘丛生|xphb"
+								]
+							}
+						}
+					}
+				}
+			],
+			"sizeEntry": {
+				"ENG_name": "Size:",
+				"name": "体型：",
+				"type": "item",
+				"entries": [
+					"中型（身高约 7\u20138 尺）"
+				]
+			},
+			"entries": [
+				{
+					"ENG_name": "Darkvision",
+					"name": "黑暗视觉",
+					"type": "entries",
+					"entries": [
+						"你拥有 120 尺{@sense 黑暗视觉|XPHB}。"
+					]
+				},
+				{
+					"ENG_name": "Gift of the World Tree",
+					"name": "世界之树的馈赠",
+					"type": "entries",
+					"entries": [
+						"由于你与世界之树的超自然联结，你熟练{@skill 自然|XPHB}和{@skill 求生|XPHB}技能。"
+					]
+				},
+				{
+					"ENG_name": "Haranir Magic",
+					"name": "哈拉尼尔魔法",
+					"type": "entries",
+					"entries": [
+						"你习得{@spell 德鲁伊伎俩|XPHB}和{@spell 荆棘之鞭|XPHB}戏法。",
+						"当你达到3级时，你习得{@spell 纠缠术|XPHB}法术。你始终让它处于已准备状态。你可以不消耗法术位施展它一次，并在完成{@variantrule 长休|XPHB}后恢复以此方式施展它的能力。你也可以使用你拥有的任意适当环阶的法术位施展该法术。",
+						"当你达到5级 时，你还始终让{@spell 荆棘丛生|XPHB}法术处于已准备状态，并可以以同样的方式施展它。",
+						"智力、感知或魅力是你通过该特质施放这些法术时的施法属性（选择此种族时决定该属性）。"
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Harengon",
@@ -9219,6 +10401,33 @@
 		{
 			"ENG_name": "Human",
 			"name": "人类",
+			"source": "WoW",
+			"page": 84,
+			"_copy": {
+				"ENG_name": "Human",
+				"name": "人类",
+				"source": "XPHB",
+				"_mod": {
+					"entries": {
+						"mode": "replaceArr",
+						"replace": "多用",
+						"items": {
+							"ENG_name": "Versatile",
+							"name": "多用",
+							"type": "entries",
+							"entries": [
+								"你获得一项自选的{@filter 起源专长|feats|category=o}。"
+							]
+						}
+					}
+				}
+			},
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Human",
+			"name": "人类",
 			"source": "XPHB",
 			"page": 194,
 			"srd52": true,
@@ -9281,7 +10490,7 @@
 					"name": "多用",
 					"type": "entries",
 					"entries": [
-						"你获得一项自选的{@filter 起源专长|feats|category=o}。"
+						"你获得一个自选的{@filter 起源专长|feats|category=o}（参见{@book 第五章|XPHB|5}）。推荐选择{@feat 熟习|XPHB}。"
 					]
 				}
 			],
@@ -9391,7 +10600,7 @@
 								"name": "语言",
 								"type": "entries",
 								"entries": [
-									"你能说、读、写{@language 通用语}和你选择的一种额外语言。或者，如果你的战役使用上一节中找到的可选规则来确定语言，你的民族起源决定了你的母语：太阳帝国的{@language 阿佐坎语|PSX}，暮影军团的{@language 联盟皮钦语|PSX}，或者莽霸联盟的{@language 吸血鬼语|PSX}。你仍然可以选择一种额外的语言，如果在你的战役中存在，还有{@language 通用贸易皮钦语|PSX|通用语}。"
+									"你能说、读、写{@language 通用语}和你选择的一种额外语言。或者，如果你的战役使用上一节中找到的可选规则来确定语言，你的民族起源决定了你的母语：烈阳帝国的{@language 阿佐坎语|PSX}，暮影军团的{@language 联盟皮钦语|PSX}，或者莽霸联盟的{@language 吸血鬼语|PSX}。你仍然可以选择一种额外的语言，如果在你的战役中存在，还有{@language 通用贸易皮钦语|PSX|通用语}。"
 								]
 							}
 						}
@@ -10416,7 +11625,7 @@
 									"ENG_name": "Draconic Sorcery",
 									"name": "龙族术法",
 									"type": "item",
-									"entry": "你知晓一项你从术士法术列表中选择的{@filter 戏法|spells|level=0|class=术士}。智力，感知或魅力是你的施展该戏法的施法属性（当你选择该种族时进行决定）。"
+									"entry": "你知晓一项你{@filter 从术士法术列表中选择的戏法|spells|level=0|class=术士}。智力，感知或魅力是你的施展该戏法的施法属性（当你选择该种族时进行决定）。"
 								}
 							]
 						}
@@ -10480,7 +11689,7 @@
 								"name": "狗头人遗产 (龙族术法)",
 								"type": "entries",
 								"entries": [
-									"你知晓一项你从术士法术列表中选择的{@filter 戏法|spells|level=0|class=术士}。智力，感知或魅力是你的施展该戏法的施法属性（当你选择该种族时进行决定）。"
+									"你知晓一项你{@filter 从术士法术列表中选择的戏法|spells|level=0|class=术士}。智力，感知或魅力是你的施展该戏法的施法属性（当你选择该种族时进行决定）。"
 								]
 							}
 						}
@@ -11563,6 +12772,83 @@
 			"translator": "不全书"
 		},
 		{
+			"ENG_name": "Mechagnome",
+			"name": "机械侏儒",
+			"source": "WoW",
+			"page": 80,
+			"edition": "one",
+			"creatureTypes": [
+				"构装"
+			],
+			"size": [
+				"S"
+			],
+			"speed": 30,
+			"traitTags": [
+				"Improved Resting"
+			],
+			"toolProficiencies": [
+				{
+					"any": 2
+				}
+			],
+			"resist": [
+				"poison"
+			],
+			"sizeEntry": {
+				"ENG_name": "Size:",
+				"name": "体型：",
+				"type": "item",
+				"entries": [
+					"小型（身高约 4 尺）"
+				]
+			},
+			"entries": [
+				{
+					"ENG_name": "Built for Success",
+					"name": "铸订成功",
+					"type": "entries",
+					"entries": [
+						"你可以将{@dice 1d4}加到你的一次{@variantrule D20 检定|XPHB}上，并且你可以在掷骰之后、结算掷骰效果之前如此做。你可以使用此特性的次数等同于你的{@variantrule 熟练|XPHB|熟练加值}，并在完成{@variantrule 长休|XPHB}后恢复所有已耗用的次数。"
+					]
+				},
+				{
+					"ENG_name": "Emergency Fail-Safe",
+					"name": "紧急保险",
+					"type": "entries",
+					"entries": [
+						"当你进入{@status 浴血|XPHB}状态时，你可以采取{@variantrule 反应|XPHB}，消耗一枚{@variantrule 生命值骰|XPHB|生命值骰}，掷骰，并回复等同于掷骰结果加你的体质调整值（至少 1 {@variantrule 生命值|XPHB|生命值}）的{@variantrule 生命值|XPHB}。一旦你使用此特性，你必须完成{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}才能再次使用。"
+					]
+				},
+				{
+					"ENG_name": "Mechanical Nature",
+					"name": "机械本质",
+					"type": "entries",
+					"entries": [
+						"你对毒素伤害具有{@variantrule 抗性|XPHB}，且你为避免或结束{@condition 麻痹|XPHB}或{@condition 中毒|XPHB}状态而进行的豁免检定具有{@variantrule 优势|XPHB}。你不会因脱水、营养不良或窒息而获得{@condition 力竭|XPHB}等级。"
+					]
+				},
+				{
+					"ENG_name": "Sentry's Rest",
+					"name": "哨兵式休息",
+					"type": "entries",
+					"entries": [
+						"你无需睡眠。若你以不活动、不移动的状态度过 6 小时，你即可完成一次{@variantrule 长休|XPHB}，其间你保持意识。"
+					]
+				},
+				{
+					"ENG_name": "Specialized Design",
+					"name": "专业设计",
+					"type": "entries",
+					"entries": [
+						"你获得两种自选{@filter 工具|items|type=工具;工匠工具;乐器;赌具}的熟练项。"
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
 			"ENG_name": "Merfolk",
 			"name": "人鱼",
 			"source": "DMG",
@@ -12614,6 +13900,19 @@
 		{
 			"ENG_name": "Orc",
 			"name": "兽人",
+			"source": "WoW",
+			"page": 86,
+			"_copy": {
+				"ENG_name": "Orc",
+				"name": "兽人",
+				"source": "XPHB"
+			},
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Orc",
+			"name": "兽人",
 			"source": "XPHB",
 			"page": 195,
 			"srd52": true,
@@ -12832,6 +14131,65 @@
 			"hasFluff": true,
 			"hasFluffImages": true,
 			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Pandaren",
+			"name": "熊猫人",
+			"source": "WoW",
+			"page": 87,
+			"edition": "one",
+			"creatureTypes": [
+				"类人生物"
+			],
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"darkvision": 60,
+			"sizeEntry": {
+				"ENG_name": "Size:",
+				"name": "体型：",
+				"type": "item",
+				"entries": [
+					"中型（约6-7尺高）"
+				]
+			},
+			"entries": [
+				{
+					"ENG_name": "Bouncy",
+					"name": "弹力十足",
+					"type": "entries",
+					"entries": [
+						"你对坠落造成的钝击伤害具有{@variantrule 抗性|XPHB}。"
+					]
+				},
+				{
+					"ENG_name": "Darkvision",
+					"name": "黑暗视觉",
+					"type": "entries",
+					"entries": [
+						"你拥有 60 尺{@sense 黑暗视觉|XPHB}。"
+					]
+				},
+				{
+					"ENG_name": "Inner Peace",
+					"name": "心如止水",
+					"type": "entries",
+					"entries": [
+						"当你在{@variantrule 短休|XPHB}后消耗{@variantrule 生命值骰|XPHB}以回复{@variantrule 生命值|XPHB}时，你每消耗一枚{@variantrule 生命值骰|XPHB|生命值骰}就额外回复 1 点{@variantrule 生命值|XPHB|生命值}。"
+					]
+				},
+				{
+					"ENG_name": "Quaking Palm",
+					"name": "震掌",
+					"type": "entries",
+					"entries": [
+						"当你在自己的回合以近战攻击命中某生物时，直到你的回合结束，你的移动不会引发该生物的{@action 借机攻击|XPHB|借机攻击}。"
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"ENG_name": "Plasmoid",
@@ -14534,6 +15892,173 @@
 			"translator": "不全书"
 		},
 		{
+			"ENG_name": "Tauren",
+			"name": "牛头人",
+			"source": "WoW",
+			"page": 88,
+			"edition": "one",
+			"creatureTypes": [
+				"类人生物"
+			],
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"traitTags": [
+				"Natural Armor",
+				"Natural Weapon"
+			],
+			"sizeEntry": {
+				"ENG_name": "Size:",
+				"name": "体型：",
+				"type": "item",
+				"entries": [
+					"中型（身高约 8\u20139 尺）"
+				]
+			},
+			"entries": [
+				{
+					"ENG_name": "Horns",
+					"name": "角击",
+					"type": "entries",
+					"entries": [
+						"你的角是强有力的天生武器。当你以{@variantrule 徒手打击|XPHB}命中并造成伤害时，你可以造成等同于{@damage 1d6}加你的力量调整值的穿刺伤害，以代替{@variantrule 徒手打击|XPHB}的正常伤害。"
+					]
+				},
+				{
+					"ENG_name": "Goring Rush",
+					"name": "猛抵冲撞",
+					"type": "entries",
+					"entries": [
+						"当你在自己的回合采取{@action 疾走|XPHB}动作并移动至少 20 尺之后，你可以立即以{@variantrule 附赠动作|XPHB}进行一次{@variantrule 徒手打击|XPHB}。"
+					]
+				},
+				{
+					"ENG_name": "Hammering Horns",
+					"name": "角锤",
+					"type": "entries",
+					"entries": [
+						"当你在自己的回合以作为{@action 攻击|XPHB}动作一部分的近战攻击命中某生物后，如果该目标距你 5 尺内，你可以用{@variantrule 附赠动作|XPHB}以一次{@variantrule 徒手打击|XPHB}推撞该目标。以此方式推撞目标时，你可以将目标推离至多 10 尺而非 5 尺。"
+					]
+				},
+				{
+					"ENG_name": "Tauren Lineage",
+					"name": "牛头人血脉",
+					"type": "entries",
+					"entries": [
+						"你属于一条赋予你超自然特质的血脉。若你的血脉给予你一项允许豁免检定的能力，其 DC 等于 8 加你的力量、体质或感知调整值（在选择血脉时决定）加你的{@variantrule 熟练|XPHB|熟练加值}。选择以下选项之一：",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"ENG_name": "Mulgore Tauren",
+									"name": "莫高雷牛头人",
+									"type": "item",
+									"entries": [
+										"当你在自己的回合采取{@action 攻击|XPHB}动作时，你可以将其中一次攻击替换为一次魔法强化的踏地重击。若你处于{@condition 倒地|XPHB}状态，或你正在飞行、攀爬或游泳，则你不能使用此特性。当你使用战争践踏时，以你为源 5 尺{@variantrule 光环 [效应区域]|XPHB|光环}内你选择的每个生物进行体质豁免。豁免失败的生物受{@condition 震慑|XPHB}状态，直到你的当前回合结束。"
+									]
+								},
+								{
+									"ENG_name": "Highmountain Tauren",
+									"name": "至高岭牛头人",
+									"type": "item",
+									"entries": [
+										"以一个动作，你可以移动至多等同于你{@variantrule 速度|XPHB}的距离，不引发{@action 借机攻击|XPHB|借机攻击}，并可以穿过其他生物的空间。其空间被你进入的每个中型或更小的生物进行力量豁免。豁免失败的生物受等同于你的{@variantrule 熟练|XPHB|熟练加值}加你的力量调整值的伤害，并倒地受{@condition 倒地|XPHB}状态。一个生物每回合只能受此伤害一次。"
+									]
+								},
+								{
+									"ENG_name": "Taunka",
+									"name": "牦牛人",
+									"type": "item",
+									"entries": [
+										"你蓬松的毛皮使你的{@variantrule 护甲等级|XPHB}获得 +1 加值，且你对寒冷伤害具有{@variantrule 抗性|XPHB}。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"_versions": [
+				{
+					"ENG_name": "Tauren; Highmountain Lineage",
+					"name": "牛头人; 至高岭血统",
+					"source": "WoW",
+					"_mod": {
+						"entries": {
+							"mode": "replaceArr",
+							"replace": "牛头人血脉",
+							"items": {
+								"ENG_name": "Tauren Lineage (Highmountain Tauren)",
+								"name": "牛头人血脉（至高岭牛头人）",
+								"type": "entries",
+								"entries": [
+									"你属于一条赋予你超自然能力的血统。若你的血统赋予你一项允许进行豁免检定的能力，该豁免检定的难度等级等于 8 + 你的力量、体质或感知调整值（在选择血统时决定）+ 你的{@variantrule 熟练|XPHB|熟练加值}。",
+									"以一个动作，你可以移动至多等同于你{@variantrule 速度|XPHB}的距离，不引发{@action 借机攻击|XPHB|借机攻击}，并可以穿过其他生物的空间。其空间被你进入的每个中型或更小的生物进行力量豁免。豁免失败的生物受等同于你的{@variantrule 熟练|XPHB|熟练加值}加你的力量调整值的伤害，并倒地受{@condition 倒地|XPHB}状态。一个生物每回合只能受此伤害一次。"
+								]
+							}
+						}
+					},
+					"traitTags": [
+						"Natural Weapon"
+					]
+				},
+				{
+					"ENG_name": "Tauren; Mulgore Lineage",
+					"name": "牛头人; 莫高雷血统",
+					"source": "WoW",
+					"_mod": {
+						"entries": {
+							"mode": "replaceArr",
+							"replace": "牛头人血脉",
+							"items": {
+								"ENG_name": "Tauren Lineage (Mulgore Tauren)",
+								"name": "牛头人血脉（莫高雷牛头人）",
+								"type": "entries",
+								"entries": [
+									"你属于一条赋予你超自然能力的血统。若你的血统赋予你一项允许进行豁免检定的能力，该豁免检定的难度等级等于 8 + 你的力量、体质或感知调整值（在选择血统时决定）+ 你的{@variantrule 熟练|XPHB|熟练加值}。",
+									"当你在自己的回合采取{@action 攻击|XPHB}动作时，你可以将其中一次攻击替换为一次魔法强化的踏地重击。若你处于{@condition 倒地|XPHB}状态，或你正在飞行、攀爬或游泳，则你不能使用此特性。当你使用战争践踏时，以你为源 5 尺{@variantrule 光环 [效应区域]|XPHB|光环}内你选择的每个生物进行体质豁免。豁免失败的生物受{@condition 震慑|XPHB}状态，直到你的当前回合结束。"
+								]
+							}
+						}
+					},
+					"traitTags": [
+						"Natural Weapon"
+					]
+				},
+				{
+					"ENG_name": "Tauren; Taunka Lineage",
+					"name": "牛头人; 牦牛人血统",
+					"source": "WoW",
+					"_mod": {
+						"entries": {
+							"mode": "replaceArr",
+							"replace": "牛头人血脉",
+							"items": {
+								"ENG_name": "Tauren Lineage (Taunka)",
+								"name": "牛头人血脉（牦牛人）",
+								"type": "entries",
+								"entries": [
+									"你属于一条赋予你超自然能力的血统。若你的血统赋予你一项允许进行豁免检定的能力，该豁免检定的难度等级等于 8 + 你的力量、体质或感知调整值（在选择血统时决定）+ 你的{@variantrule 熟练|XPHB|熟练加值}。",
+									"你蓬松的毛皮使你的{@variantrule 护甲等级|XPHB}获得 +1 加值，且你对寒冷伤害具有{@variantrule 抗性|XPHB}。"
+								]
+							}
+						}
+					},
+					"traitTags": [
+						"Natural Armor",
+						"Natural Weapon"
+					],
+					"resist": [
+						"cold"
+					]
+				}
+			]
+		},
+		{
 			"ENG_name": "Thri-kreen",
 			"name": "螳螂人",
 			"source": "AAG",
@@ -15734,6 +17259,157 @@
 			"translator": "不全书"
 		},
 		{
+			"ENG_name": "Troll",
+			"name": "巨魔",
+			"source": "WoW",
+			"page": 91,
+			"edition": "one",
+			"creatureTypes": [
+				"类人生物"
+			],
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"darkvision": 60,
+			"sizeEntry": {
+				"ENG_name": "Size:",
+				"name": "体型：",
+				"type": "item",
+				"entries": [
+					"中型（身高约 7 尺）"
+				]
+			},
+			"entries": [
+				{
+					"ENG_name": "Bloodied Frenzy",
+					"name": "血腥狂怒",
+					"type": "entries",
+					"entries": [
+						"处于{@status 浴血|XPHB}状态时，你的攻击检定具有{@variantrule 优势|XPHB}。"
+					]
+				},
+				{
+					"ENG_name": "Darkvision",
+					"name": "黑暗视觉",
+					"type": "entries",
+					"entries": [
+						"你拥有 60 尺{@sense 黑暗视觉|XPHB}。"
+					]
+				},
+				{
+					"ENG_name": "Troll Healing",
+					"name": "巨魔再生",
+					"type": "entries",
+					"entries": [
+						"当你在{@variantrule 短休|XPHB}后消耗{@variantrule 生命值骰|XPHB}以回复{@variantrule 生命值|XPHB}时，你回复的{@variantrule 生命值|XPHB}等同于骰子的最大掷值加你的体质调整值。"
+					]
+				},
+				{
+					"ENG_name": "Troll Lineage",
+					"name": "巨魔血脉",
+					"type": "entries",
+					"entries": [
+						"你属于一条赋予你超自然特质的血脉。选择以下选项之一：",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"ENG_name": "Amani Troll",
+									"name": "阿曼尼巨魔",
+									"type": "item",
+									"entries": [
+										"每当你消耗{@variantrule 英雄激励|XPHB}时，你回复 1 枚已消耗的{@variantrule 生命值骰|XPHB|生命值骰}。"
+									]
+								},
+								{
+									"ENG_name": "Darkspear Troll",
+									"name": "暗矛巨魔",
+									"type": "item",
+									"entries": [
+										"当你采取{@action 疾走|XPHB}动作时，由冰、碎石、积雪或灌木丛构成的{@variantrule 困难地形|XPHB}不再消耗你额外的移动，直到你的回合结束。"
+									]
+								},
+								{
+									"ENG_name": "Zandalari Troll",
+									"name": "赞达拉巨魔",
+									"type": "item",
+									"entries": [
+										"若你在{@variantrule D20 检定|XPHB}的{@dice d20}上掷出 1，你在当前回合结束时获得{@variantrule 英雄激励|XPHB}。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"_versions": [
+				{
+					"ENG_name": "Troll; Amani Lineage",
+					"name": "巨魔; 阿曼尼血统",
+					"source": "WoW",
+					"_mod": {
+						"entries": {
+							"mode": "replaceArr",
+							"replace": "巨魔血脉",
+							"items": {
+								"ENG_name": "Troll Lineage (Amani Troll)",
+								"name": "巨魔血脉（阿曼尼巨魔）",
+								"type": "entries",
+								"entries": [
+									"你属于一条赋予你超自然特质的血统。",
+									"每当你消耗{@variantrule 英雄激励|XPHB}时，你回复 1 枚已消耗的{@variantrule 生命值骰|XPHB|生命值骰}。"
+								]
+							}
+						}
+					}
+				},
+				{
+					"ENG_name": "Troll; Darkspear Lineage",
+					"name": "巨魔; 暗矛血统",
+					"source": "WoW",
+					"_mod": {
+						"entries": {
+							"mode": "replaceArr",
+							"replace": "巨魔血脉",
+							"items": {
+								"ENG_name": "Troll Lineage (Darkspear Troll)",
+								"name": "巨魔血脉（暗矛巨魔）",
+								"type": "entries",
+								"entries": [
+									"你属于一条赋予你超自然特质的血统。",
+									"当你采取{@action 疾走|XPHB}动作时，由冰、碎石、积雪或灌木丛构成的{@variantrule 困难地形|XPHB}不再消耗你额外的移动，直到你的回合结束。"
+								]
+							}
+						}
+					}
+				},
+				{
+					"ENG_name": "Troll; Zandalari Lineage",
+					"name": "巨魔; 赞达拉血统",
+					"source": "WoW",
+					"_mod": {
+						"entries": {
+							"mode": "replaceArr",
+							"replace": "巨魔血脉",
+							"items": {
+								"ENG_name": "Troll Lineage (Zandalari Troll)",
+								"name": "巨魔血脉（赞达拉巨魔）",
+								"type": "entries",
+								"entries": [
+									"你属于一条赋予你超自然特质的血统。",
+									"若你在{@variantrule D20 检定|XPHB}的{@dice d20}上掷出 1，你在当前回合结束时获得{@variantrule 英雄激励|XPHB}。"
+								]
+							}
+						}
+					}
+				}
+			]
+		},
+		{
 			"ENG_name": "Vampire",
 			"name": "吸血鬼",
 			"source": "PSZ",
@@ -16128,6 +17804,68 @@
 			"translator": "不全书"
 		},
 		{
+			"ENG_name": "Vulpera",
+			"name": "狐人",
+			"source": "WoW",
+			"page": 92,
+			"edition": "one",
+			"creatureTypes": [
+				"类人生物"
+			],
+			"size": [
+				"S"
+			],
+			"speed": 30,
+			"darkvision": 60,
+			"resist": [
+				"fire"
+			],
+			"sizeEntry": {
+				"ENG_name": "Size:",
+				"name": "体型：",
+				"type": "item",
+				"entries": [
+					"小型（身高约 4\u20135 尺）"
+				]
+			},
+			"entries": [
+				{
+					"ENG_name": "Darkvision",
+					"name": "黑暗视觉",
+					"type": "entries",
+					"entries": [
+						"你拥有 60 尺{@sense 黑暗视觉|XPHB}。"
+					]
+				},
+				{
+					"ENG_name": "Fire Resistance",
+					"name": "火焰抗性",
+					"type": "entries",
+					"entries": [
+						"你对火焰伤害具有{@variantrule 抗性|XPHB}。"
+					]
+				},
+				{
+					"ENG_name": "Nose for Trouble",
+					"name": "嗅探危机",
+					"type": "entries",
+					"entries": [
+						"在你掷{@variantrule 先攻|XPHB}后第一次受到伤害时，你将所受的伤害减少等同于你等级的数值（伤害至低降为 0）。"
+					]
+				},
+				{
+					"ENG_name": "Vulpera Nimbleness",
+					"name": "狐人身手",
+					"type": "entries",
+					"entries": [
+						"你可以穿越任何体型比你大的生物所在空间，但你不能在其内停下。"
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
 			"ENG_name": "Warforged",
 			"name": "战俑",
 			"source": "EFA",
@@ -16363,6 +18101,88 @@
 			"translator": "不全书"
 		},
 		{
+			"ENG_name": "Worgen",
+			"name": "狼人",
+			"source": "WoW",
+			"page": 93,
+			"edition": "one",
+			"creatureTypes": [
+				"类人生物"
+			],
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"darkvision": 60,
+			"sizeEntry": {
+				"ENG_name": "Size:",
+				"name": "体型：",
+				"type": "item",
+				"entries": [
+					"中型（身高约 4\u20137 尺）"
+				]
+			},
+			"entries": [
+				{
+					"ENG_name": "Darkflight",
+					"name": "暗影疾奔",
+					"type": "entries",
+					"entries": [
+						"以一个{@variantrule 附赠动作|XPHB}，你可以变形为更具野性外表的形态。此变形持续 1 分钟，或直到你以{@variantrule 附赠动作|XPHB}变回正常外貌。进入野性形态时，你获得等同于 2 倍{@variantrule 熟练|XPHB|熟练加值}的{@variantrule 临时生命值|XPHB}。你进入此形态的次数等同于你的{@variantrule 熟练|XPHB|熟练加值}，并在完成{@variantrule 长休|XPHB}后恢复所有已耗用的次数。",
+						"在野性形态下，你获得以下收益：",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"ENG_name": "Increased Speed",
+									"name": "速度提升",
+									"type": "item",
+									"entries": [
+										"你的{@variantrule 速度|XPHB}提升 10 尺。"
+									]
+								},
+								{
+									"ENG_name": "Reactive Movement",
+									"name": "反应移动",
+									"type": "item",
+									"entries": [
+										"当某生物在距你 5 尺内结束其回合时，你可以采取{@variantrule 反应|XPHB}移动至多 10 尺。此反应移动不会引发{@action 借机攻击|XPHB|借机攻击}。"
+									]
+								},
+								{
+									"ENG_name": "Necrotic Resistance",
+									"name": "暗蚀抗性",
+									"type": "item",
+									"entries": [
+										"你获得对暗蚀伤害的{@variantrule 抗性|XPHB}。"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Darkvision",
+					"name": "黑暗视觉",
+					"type": "entries",
+					"entries": [
+						"你拥有 60 尺{@sense 黑暗视觉|XPHB}。"
+					]
+				},
+				{
+					"ENG_name": "Instinctual Shift",
+					"name": "本能变形",
+					"type": "entries",
+					"entries": [
+						"当你掷{@variantrule 先攻|XPHB}时，若你的暗影疾奔物种特性还有一次或多次可用次数，你可以立即使用该特性变形（无需动作）。"
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
 			"ENG_name": "Yuan-Ti",
 			"name": "蛇人",
 			"source": "MPMM",
@@ -16457,7 +18277,7 @@
 		},
 		{
 			"ENG_name": "Yuan-ti Pureblood",
-			"name": "纯血原体蛇人",
+			"name": "纯血蛇人",
 			"source": "VGM",
 			"page": 120,
 			"reprintedAs": [

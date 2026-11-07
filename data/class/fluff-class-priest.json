@@ -1,14 +1,16 @@
 {
 	"classFluff": [
 		{
-			"name": "Priest",
+			"ENG_name": "Priest",
+			"name": "牧师",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Priest",
+					"name": "牧师",
 					"type": "section",
-					"name": "Priest",
 					"entries": [
-						"Priests are devoted to the spiritual realm, drawing power from the opposing forces of Light and Void. From the Light\u2014which priests might conceptualize or revere as the Holy Light, Elune, or some other force or entity\u2014priests draw holy power for healing and protection. From Shadow, priests call on power to break the will and sap the vitality of their foes. Priests wield both forces to support their allies and devastate their enemies."
+						"牧师献身于精神界域，从光与虚空这两股对立的力量中汲取权能。从光\u2014\u2014牧师或将其理解或崇奉为圣光、艾露恩或其他力量与存在\u2014\u2014之中，牧师汲取用于治疗与守护的神圣之力。从暗影之中，牧师呼唤摧折敌人意志、汲取敌人活力的力量。牧师驾驭这两种力量，扶持盟友、重创敌人。"
 					]
 				}
 			],
@@ -21,7 +23,7 @@
 					},
 					"width": 1700,
 					"height": 2400,
-					"title": "Prophet Velen, a Draenei Priest",
+					"title": "先知维伦，一位德莱尼牧师",
 					"credit": "Wei Wang, Blizzard Artist"
 				},
 				{
@@ -38,10 +40,11 @@
 	],
 	"subclassFluff": [
 		{
-			"name": "Discipline Domain",
-			"shortName": "Discipline",
+			"ENG_name": "Discipline Domain",
+			"name": "戒律领域",
+			"shortName": "戒律",
 			"source": "WoW",
-			"className": "Priest",
+			"className": "牧师",
 			"classSource": "WoW",
 			"images": [
 				{
@@ -52,7 +55,7 @@
 					},
 					"width": 850,
 					"height": 849,
-					"title": "Tyrande Whisperwind, a Night Elf Priest",
+					"title": "泰兰德·语风，一位暗夜精灵牧师",
 					"credit": "Tooth Wu"
 				}
 			]

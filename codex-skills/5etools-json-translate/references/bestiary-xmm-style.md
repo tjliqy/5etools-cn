@@ -99,11 +99,12 @@
 保留攻击标签，用下列骨架：
 
 ```text
-{@atkr m} {@hit N}，触及X尺。{@h}A（{@damage ...}）伤害。
-{@atkr r} {@hit N}，射程X/Y尺。{@h}A（{@damage ...}）伤害。
-{@atkr m,r} {@hit N}，触及X尺或射程Y尺。{@h}A（{@damage ...}）伤害。
+{@atkr m} 命中{@hit N}，触及X尺。{@h}A（{@damage ...}）点伤害。
+{@atkr r} 命中{@hit N}，射程X/Y尺。{@h}A（{@damage ...}）点伤害。
+{@atkr m,r} 命中{@hit N}，触及X尺或射程Y尺。{@h}A（{@damage ...}）点伤害。
 ```
 
+- 英文 `{@hit N} to hit` 译为“命中{@hit N}”，将“命中”放在命中加值标签前；不要写成“{@hit N} 命中”。例如：`{@atkr m} 命中{@hit 7}，触及 5 尺。{@h}21 ({@damage 5d6 + 4}) 点穿刺伤害。`
 - `reach` → “触及”；`range` → “射程”。
 - 不要擅自在 `{@atkr ...}`、`{@h}` 后增加解释性文字；这些标签由渲染器生成标题。
 - `If the target is a Large or smaller creature` → “若目标为体型不超过大型的生物”。其他体型照此替换。

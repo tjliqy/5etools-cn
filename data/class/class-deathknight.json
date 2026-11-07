@@ -14,294 +14,309 @@
 	},
 	"class": [
 		{
-			"name": "Death Knight",
+			"ENG_name": "Death Knight",
+			"name": "死亡骑士",
 			"alias": [
-				"Paladin"
+				"圣武士"
 			],
 			"source": "WoW",
 			"reskinOf": [
-				"Paladin|XPHB"
+				"圣武士|XPHB"
 			],
 			"isHero": true,
 			"_copy": {
-				"name": "Paladin",
+				"ENG_name": "Paladin",
+				"name": "圣武士",
 				"source": "XPHB"
 			},
 			"additionalSpells": [
 				{
 					"prepared": {
 						"2": [
-							"rune strike|wow"
+							"符文打击|wow"
 						],
 						"5": [
-							"find steed|xphb"
+							"寻获坐骑|xphb"
 						]
 					}
 				}
 			],
 			"classFeatures": [
-				"Death Coil|Death Knight|WoW|1",
-				"Spellcasting|Paladin|XPHB|1",
-				"Weapon Mastery|Paladin|XPHB|1",
-				"Fighting Style|Paladin|XPHB|2",
-				"Runic Smite|Death Knight|WoW|2",
-				"Channel Divinity|Paladin|XPHB|3",
+				"死亡缠绕|死亡骑士|WoW|1",
+				"施法|圣武士|XPHB|1",
+				"武器精通|圣武士|XPHB|1",
+				"战斗风格|圣武士|XPHB|2",
+				"符文圣击|死亡骑士|WoW|2",
+				"引导神力|圣武士|XPHB|3",
 				{
-					"classFeature": "Death Knight Subclass|Death Knight|WoW|3",
+					"classFeature": "死亡骑士子职|死亡骑士|WoW|3",
 					"gainSubclassFeature": true
 				},
-				"Ability Score Improvement|Paladin|XPHB|4",
-				"Extra Attack|Paladin|XPHB|5",
-				"Faithful Steed|Death Knight|WoW|5",
-				"Aura of Protection|Paladin|XPHB|6",
+				"属性值提升|圣武士|XPHB|4",
+				"额外攻击|圣武士|XPHB|5",
+				"信实坐骑|死亡骑士|WoW|5",
+				"守护灵光|圣武士|XPHB|6",
 				{
-					"classFeature": "Subclass Feature|Paladin|XPHB|7",
+					"classFeature": "子职特性|圣武士|XPHB|7",
 					"gainSubclassFeature": true
 				},
-				"Ability Score Improvement|Paladin|XPHB|8",
-				"Abjure Foes|Paladin|XPHB|9",
-				"Aura of Courage|Paladin|XPHB|10",
-				"Runic Strikes|Death Knight|WoW|11",
-				"Ability Score Improvement|Paladin|XPHB|12",
-				"Improved Death Coil|Death Knight|WoW|14",
+				"属性值提升|圣武士|XPHB|8",
+				"弃绝众敌|圣武士|XPHB|9",
+				"勇气灵光|圣武士|XPHB|10",
+				"符文之击|死亡骑士|WoW|11",
+				"属性值提升|圣武士|XPHB|12",
+				"强化死亡缠绕|死亡骑士|WoW|14",
 				{
-					"classFeature": "Subclass Feature|Paladin|XPHB|15",
+					"classFeature": "子职特性|圣武士|XPHB|15",
 					"gainSubclassFeature": true
 				},
-				"Ability Score Improvement|Paladin|XPHB|16",
-				"Aura Expansion|Paladin|XPHB|18",
-				"Epic Boon|Paladin|XPHB|19",
+				"属性值提升|圣武士|XPHB|16",
+				"灵光增效|圣武士|XPHB|18",
+				"传奇恩惠|圣武士|XPHB|19",
 				{
-					"classFeature": "Subclass Feature|Paladin|XPHB|20",
+					"classFeature": "子职特性|圣武士|XPHB|20",
 					"gainSubclassFeature": true
 				}
 			],
 			"includeSubclassesFrom": [
-				"Paladin|XPHB"
+				"圣武士|XPHB"
 			],
-			"subclassTitle": "Death Knight Subclass",
+			"subclassTitle": "死亡骑士子职",
 			"hasFluff": true,
 			"hasFluffImages": true
 		}
 	],
 	"subclass": [
 		{
-			"name": "Oath of the Ebon Blade",
-			"shortName": "Ebon Blade",
+			"ENG_name": "Oath of the Ebon Blade",
+			"name": "黑锋之誓",
+			"shortName": "黑锋",
 			"source": "WoW",
-			"className": "Death Knight",
+			"className": "死亡骑士",
 			"classSource": "WoW",
 			"edition": "one",
 			"additionalSpells": [
 				{
-					"name": "Blood",
+					"ENG_name": "Blood",
+					"name": "鲜血",
 					"ability": "cha",
 					"prepared": {
 						"3": [
-							"death grip|wow",
-							"vampiric blood|wow"
+							"死亡之握|wow",
+							"吸血鬼之血|wow"
 						],
 						"5": [
-							"death and decay|wow",
-							"spiritual weapon|xphb"
+							"枯萎凋零|wow",
+							"灵体武器|xphb"
 						],
 						"9": [
-							"summon undead|xphb",
-							"leeching strike|wow"
+							"亡灵召唤术|xphb",
+							"吸血打击|wow"
 						],
 						"13": [
-							"freedom of movement|xphb",
-							"evard's black tentacles|xphb"
+							"行动自如|xphb",
+							"艾伐黑触手|xphb"
 						],
 						"17": [
-							"circle of power|xphb",
-							"bonestorm|wow"
+							"原力法阵|xphb",
+							"白骨风暴|wow"
 						]
 					}
 				},
 				{
-					"name": "Frost",
+					"ENG_name": "Frost",
+					"name": "冰霜",
 					"ability": "cha",
 					"prepared": {
 						"3": [
-							"death grip|wow",
-							"chains of ice|wow"
+							"死亡之握|wow",
+							"寒冰锁链|wow"
 						],
 						"5": [
-							"death and decay|wow",
-							"frostscythe|wow"
+							"枯萎凋零|wow",
+							"霜之镰|wow"
 						],
 						"9": [
-							"summon undead|xphb",
-							"remorseless winter|wow"
+							"亡灵召唤术|xphb",
+							"无情寒冬|wow"
 						],
 						"13": [
-							"freedom of movement|xphb",
-							"ice storm|xphb"
+							"行动自如|xphb",
+							"冰风暴|xphb"
 						],
 						"17": [
-							"circle of power|xphb",
-							"cone of cold|xphb"
+							"原力法阵|xphb",
+							"寒冰锥|xphb"
 						]
 					}
 				},
 				{
-					"name": "Unholy",
+					"ENG_name": "Unholy",
+					"name": "邪恶",
 					"ability": "cha",
 					"prepared": {
 						"3": [
-							"death grip|wow",
-							"scourge strike|wow"
+							"死亡之握|wow",
+							"天灾打击|wow"
 						],
 						"5": [
-							"death and decay|wow",
-							"ray of enfeeblement|xphb"
+							"枯萎凋零|wow",
+							"衰弱射线|xphb"
 						],
 						"9": [
-							"summon undead|xphb",
-							"bestow curse|xphb"
+							"亡灵召唤术|xphb",
+							"降咒|xphb"
 						],
 						"13": [
-							"freedom of movement|xphb",
-							"blight|xphb"
+							"行动自如|xphb",
+							"枯萎术|xphb"
 						],
 						"17": [
-							"circle of power|xphb",
-							"contagion|xphb"
+							"原力法阵|xphb",
+							"疫病术|xphb"
 						]
 					}
 				}
 			],
 			"subclassFeatures": [
-				"Oath of the Ebon Blade|Death Knight|WoW|Ebon Blade|WoW|3",
-				"Aura of Deathly Endurance|Death Knight|WoW|Ebon Blade|WoW|7",
-				"Runic Mastery|Death Knight|WoW|Ebon Blade|WoW|15",
-				"Aspect of the Horsemen|Death Knight|WoW|Ebon Blade|WoW|20"
+				"黑锋之誓|死亡骑士|WoW|黑锋|WoW|3",
+				"死寂坚忍灵光|死亡骑士|WoW|黑锋|WoW|7",
+				"符文精通|死亡骑士|WoW|黑锋|WoW|15",
+				"四骑士之相|死亡骑士|WoW|黑锋|WoW|20"
 			]
 		}
 	],
 	"classFeature": [
 		{
-			"name": "Death Coil",
+			"ENG_name": "Death Coil",
+			"name": "死亡缠绕",
 			"source": "WoW",
-			"className": "Death Knight",
+			"className": "死亡骑士",
 			"classSource": "WoW",
 			"level": 1,
 			"entries": [
-				"This feature replaces the {@classFeature Lay On Hands|Paladin|XPHB|1|XPHB} feature of the Paladin class.",
-				"Your creature type becomes Undead.",
-				"You also gain the ability to manipulate negative energy. You have a pool of d8s to fuel this ability. The number of dice in the pool equals one plus your Charisma modifier (minimum of one die).",
-				"As a {@variantrule Bonus Action|XPHB}, you can target a creature you can see within 60 feet of yourself and force it to make a Constitution saving throw, expending dice from the pool. The maximum number of dice you can expend at once equals your Charisma modifier (minimum of one die). Roll the dice you expend. The target takes Necrotic damage equal to the roll's total on a failed save or half as much damage on a successful one. If the target is an Undead, you can choose to have it regain {@variantrule Hit Points|XPHB} equal to the roll's total instead. Your pool regains all expended dice when you finish a {@variantrule Long Rest|XPHB}."
+				"此特性取代圣武士职业的{@classFeature 圣疗|圣武士|XPHB|1|XPHB}特性。",
+				"你的生物类型变为亡灵。",
+				"你还获得操纵负能量的能力。你拥有一池 d8 来为此能力供能。池中的骰数等于 1 加你的魅力调整值（至少一颗骰子）。",
+				"以一个{@variantrule 附赠动作|XPHB}，你可以指定 60 尺内一个可见生物，迫使其进行体质豁免，并从池中消耗骰子。你一次最多可消耗的骰数等于你的魅力调整值（至少一颗骰子）。掷消耗的骰子。豁免失败的目标受等同于掷骰总值的黯蚀伤害，成功则仅受一半伤害。如果目标是亡灵，你可以改为让它回复等同于掷骰总值的{@variantrule 生命值|XPHB}。完成{@variantrule 长休|XPHB}后，池中所有已消耗的骰子恢复。"
 			]
 		},
 		{
-			"name": "Runic Smite",
+			"ENG_name": "Runic Smite",
+			"name": "符文圣击",
 			"source": "WoW",
-			"className": "Death Knight",
+			"className": "死亡骑士",
 			"classSource": "WoW",
 			"level": 2,
 			"entries": [
-				"This feature replaces the Paladin's {@classFeature Paladin's Smite|Paladin|XPHB|2|XPHB|Smite} feature of the Paladin class.",
-				"You always have the {@spell Rune Strike|WoW} spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a {@variantrule Long Rest|XPHB}."
+				"此特性取代圣武士职业的{@classFeature 圣武斩|圣武士|XPHB|2|XPHB|圣武斩}特性。",
+				"你始终准备好{@spell 符文打击|WoW}法术。你可以不消耗法术位施展它一次，并在完成{@variantrule 长休|XPHB}后恢复以该方式施展它的能力。"
 			]
 		},
 		{
-			"name": "Death Knight Subclass",
+			"ENG_name": "Death Knight Subclass",
+			"name": "死亡骑士子职",
 			"source": "WoW",
-			"className": "Death Knight",
+			"className": "死亡骑士",
 			"classSource": "WoW",
 			"level": 3,
 			"entries": [
-				"You gain a Death Knight subclass of your choice. A subclass is a specialization that grants you features at certain Death Knight levels. For the rest of your career, you gain each of your subclass's features that are of your Death Knight level or lower."
+				"你获得一个自选的死亡骑士子职。子职是一种专精方向，在特定死亡骑士等级给予你特性。在余下的生涯中，你获得子职中所有等级不高于你死亡骑士等级的特性。"
 			]
 		},
 		{
-			"name": "Faithful Steed",
+			"ENG_name": "Faithful Steed",
+			"name": "信实坐骑",
 			"source": "WoW",
-			"className": "Death Knight",
+			"className": "死亡骑士",
 			"classSource": "WoW",
 			"level": 5,
 			"entries": [
-				"You can call on the aid of an otherworldly steed. You always have the {@spell Find Steed|XPHB} spell prepared.",
-				"You can also cast the spell once without expending a spell slot, and you regain the ability to do so when you finish a {@variantrule Long Rest|XPHB}.",
-				"In addition to the benefits of the Paladin's {@classFeature Faithful Steed|Paladin|XPHB|5|XPHB} feature, when you cast {@spell Find Steed|XPHB}, the {@b Otherworldly Steed} can be Undead. An Undead steed deals Necrotic damage with its Otherworldly Slam action and has this {@variantrule Bonus Action|XPHB}:",
+				"你能唤来异界坐骑的协助。你始终准备着法术{@spell 寻获坐骑|XPHB}。",
+				"此外，你可以不消耗法术位地施展该法术一次，而后你必须完成一次{@variantrule 长休|XPHB}才能再次这么做。",
+				"除圣武士{@classFeature 信实坐骑|圣武士|XPHB|5|XPHB}特性的收益外，你施展{@spell 寻获坐骑|XPHB}时，{@b 异界坐骑}可以为亡灵。亡灵坐骑的异界冲撞动作造成黯蚀伤害，并拥有以下{@variantrule 附赠动作|XPHB}：",
 				{
+					"ENG_name": "Ghostly Stride (Undead Only; Recharges After a Long Rest)",
+					"name": "幽灵疾步（仅亡灵坐骑；长休后充能）",
 					"type": "entries",
-					"name": "Ghostly Stride (Undead Only; Recharges After a Long Rest)",
 					"entries": [
-						"The steed and its rider can move through other creatures and objects this turn as if they were {@variantrule Difficult Terrain|XPHB}. Both steed and rider take 5 ({@dice 1d10}) Force damage if they end their turn inside an object."
+						"本回合内，坐骑及其骑手可以穿越其他生物与物体，如同它们是{@variantrule 困难地形|XPHB}。若坐骑或骑手在物体内部结束回合，均受 5（{@dice 1d10}）点力场伤害。"
 					]
 				}
 			]
 		},
 		{
-			"name": "Runic Strikes",
+			"ENG_name": "Runic Strikes",
+			"name": "符文之击",
 			"source": "WoW",
-			"className": "Death Knight",
+			"className": "死亡骑士",
 			"classSource": "WoW",
 			"level": 11,
 			"entries": [
-				"This feature replaces the Paladin's {@classFeature Radiant Strikes|Paladin|XPHB|11|XPHB} feature.",
-				"When you hit a target with an attack roll using a Melee weapon or an {@variantrule Unarmed Strike|XPHB}, the target takes an extra {@damage 1d8} Necrotic damage."
+				"此特性取代圣武士的{@classFeature 光耀打击|圣武士|XPHB|11|XPHB}特性。",
+				"当你以近战武器或{@variantrule 徒手打击|XPHB}的攻击检定命中目标时，目标额外受{@damage 1d8}点黯蚀伤害。"
 			]
 		},
 		{
-			"name": "Improved Death Coil",
+			"ENG_name": "Improved Death Coil",
+			"name": "强化死亡缠绕",
 			"source": "WoW",
-			"className": "Death Knight",
+			"className": "死亡骑士",
 			"classSource": "WoW",
 			"level": 14,
 			"entries": [
-				"This feature replaces the Paladin's {@classFeature Restoring Touch|Paladin|XPHB|14|XPHB} feature.",
-				"When you use {@classFeature Death Coil|Death Knight|WoW|1|WoW} to deal damage, the target takes extra Necrotic damage equal to your Charisma modifier (minimum of 1) whether or not it fails its saving throw. If the target is an Undead, and you have it regain {@variantrule Hit Points|XPHB}, it regains additional {@variantrule Hit Points|XPHB} equal to your Paladin level."
+				"此特性取代圣武士的{@classFeature 复原之触|圣武士|XPHB|14|XPHB}特性。",
+				"当你使用{@classFeature 死亡缠绕|死亡骑士|WoW|1|WoW}造成伤害时，无论目标豁免是否失败，都额外受等同于你魅力调整值（至少为 1）的黯蚀伤害。如果目标是亡灵且你让它回复{@variantrule 生命值|XPHB}，它额外回复等同于你圣武士等级的{@variantrule 生命值|XPHB}。"
 			]
 		}
 	],
 	"subclassFeature": [
 		{
-			"name": "Oath of the Ebon Blade",
+			"ENG_name": "Oath of the Ebon Blade",
+			"name": "黑锋之誓",
 			"source": "WoW",
-			"className": "Death Knight",
+			"className": "死亡骑士",
 			"classSource": "WoW",
-			"subclassShortName": "Ebon Blade",
+			"subclassShortName": "黑锋",
 			"subclassSource": "WoW",
 			"level": 3,
 			"entries": [
-				"{@i Wield the Power of Death Against the Scourge}",
-				"The Oath of the Ebon Blade unites the free death knights of Azeroth. No longer directly under the Lich King's control, they still serve Bolvar Fordragon\u2014first as agents of the new Lich King, and later, after the destruction of the {@item Helm of Domination|WoW}, as troops devoted to stopping the Scourge's spread.",
+				"{@i 以死亡之力对抗天灾}",
+				"黑锋之誓团结着艾泽拉斯的自由死亡骑士。他们不再直接受巫妖王控制，却仍效命于伯瓦尔·弗塔根\u2014\u2014先是作为新巫妖王的代理人，后来在{@item 统御头盔|WoW}被毁后，则成为致力于阻止天灾蔓延的部队。",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Oath of the Ebon Blade Spells|Death Knight|WoW|Ebon Blade|WoW|3"
+					"subclassFeature": "黑锋之誓法术|死亡骑士|WoW|黑锋|WoW|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Runeforging|Death Knight|WoW|Ebon Blade|WoW|3"
+					"subclassFeature": "符文锻造|死亡骑士|WoW|黑锋|WoW|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Runic Power|Death Knight|WoW|Ebon Blade|WoW|3"
+					"subclassFeature": "符文能量|死亡骑士|WoW|黑锋|WoW|3"
 				}
 			]
 		},
 		{
-			"name": "Oath of the Ebon Blade Spells",
+			"ENG_name": "Oath of the Ebon Blade Spells",
+			"name": "黑锋之誓法术",
 			"source": "WoW",
-			"className": "Death Knight",
+			"className": "死亡骑士",
 			"classSource": "WoW",
-			"subclassShortName": "Ebon Blade",
+			"subclassShortName": "黑锋",
 			"subclassSource": "WoW",
 			"level": 3,
 			"entries": [
-				"The magic of your oath and your {@subclassFeature Runeforging|Death Knight|WoW|Ebon Blade|WoW|3|WoW} feature (see below) ensure you always have certain spells ready; when you reach a Paladin level specified in the Oath of the Ebon Blade Spells table, you thereafter always have the spell in the Spells (All) column prepared. You also have the additional spells listed in the column matching the rune you have inscribed on your weapon, if any.",
+				"你誓言的魔法与你的{@subclassFeature 符文锻造|死亡骑士|WoW|黑锋|WoW|3|WoW}特性（见下文）确保你始终准备好特定法术；当你达到黑锋之誓法术表中列出的圣武士等级后，你始终准备好\"法术（全部）\"栏中的法术。若你的武器上铭刻了符文，你还拥有对应栏中列出的额外法术。",
 				{
 					"type": "table",
-					"caption": "Oath of the Ebon Blade Spells",
+					"caption": "黑锋之誓法术",
 					"colLabels": [
-						"Paladin Level",
-						"Spells (All)",
-						"Spells (Blood)",
-						"Spells (Frost)",
-						"Spells (Unholy)"
+						"圣武士等级",
+						"法术（全部）",
+						"法术（鲜血）",
+						"法术（冰霜）",
+						"法术（邪恶）"
 					],
 					"colStyles": [
 						"col-1-2 text-center",
@@ -313,182 +328,199 @@
 					"rows": [
 						[
 							"3",
-							"{@spell Death Grip|WoW}",
-							"{@spell Vampiric Blood|WoW}",
-							"{@spell Chains of Ice|WoW}",
-							"{@spell Scourge Strike|WoW}"
+							"{@spell 死亡之握|WoW|死亡之握}",
+							"{@spell 吸血鬼之血|WoW|吸血鬼之血}",
+							"{@spell 寒冰锁链|WoW|寒冰锁链}",
+							"{@spell 天灾打击|WoW|天灾打击}"
 						],
 						[
 							"5",
-							"{@spell Death and Decay|WoW}",
-							"{@spell Spiritual Weapon|XPHB}",
-							"{@spell Frostscythe|WoW}",
-							"{@spell Ray of Enfeeblement|XPHB}"
+							"{@spell 枯萎凋零|WoW|枯萎凋零}",
+							"{@spell 灵体武器|XPHB}",
+							"{@spell 霜之镰|WoW|霜之镰}",
+							"{@spell 衰弱射线|XPHB}"
 						],
 						[
 							"9",
-							"{@spell Summon Undead|XPHB}",
-							"{@spell Leeching Strike|WoW}",
-							"{@spell Remorseless Winter|WoW}",
-							"{@spell Bestow Curse|XPHB}"
+							"{@spell 亡灵召唤术|XPHB}",
+							"{@spell 吸血打击|WoW|吸血打击}",
+							"{@spell 无情寒冬|WoW|无情寒冬}",
+							"{@spell 降咒|XPHB}"
 						],
 						[
 							"13",
-							"{@spell Freedom of Movement|XPHB}",
-							"{@spell Evard's Black Tentacles|XPHB}",
-							"{@spell Ice Storm|XPHB}",
-							"{@spell Blight|XPHB}"
+							"{@spell 行动自如|XPHB}",
+							"{@spell 艾伐黑触手|XPHB}",
+							"{@spell 冰风暴|XPHB}",
+							"{@spell 枯萎术|XPHB}"
 						],
 						[
 							"17",
-							"{@spell Circle of Power|XPHB}",
-							"{@spell Bonestorm|WoW}",
-							"{@spell Cone of Cold|XPHB}",
-							"{@spell Contagion|XPHB}"
+							"{@spell 原力法阵|XPHB}",
+							"{@spell 白骨风暴|WoW|白骨风暴}",
+							"{@spell 寒冰锥|XPHB}",
+							"{@spell 疫病术|XPHB}"
 						]
 					]
 				}
 			]
 		},
 		{
-			"name": "Runeforging",
+			"ENG_name": "Runeforging",
+			"name": "符文锻造",
 			"source": "WoW",
-			"className": "Death Knight",
+			"className": "死亡骑士",
 			"classSource": "WoW",
-			"subclassShortName": "Ebon Blade",
+			"subclassShortName": "黑锋",
 			"subclassSource": "WoW",
 			"level": 3,
 			"entries": [
-				"When you finish a {@variantrule Long Rest|XPHB}, you can inscribe one of the following runes on a melee weapon you are holding, or you can transfer the rune to a different weapon. Whenever you gain a level, you can replace it with a different rune.",
+				"完成{@variantrule 长休|XPHB}后，你可以在手持的一件近战武器上铭刻以下符文之一，或将符文转移到另一件武器上。每当你获得一个等级，你可以将其替换为不同的符文。",
 				{
+					"ENG_name": "Blood",
+					"name": "鲜血",
 					"type": "entries",
-					"name": "Blood",
 					"entries": [
-						"When you inscribe this rune on your weapon, and whenever you finish a {@variantrule Long Rest|XPHB} while the rune is inscribed on your weapon, you gain {@variantrule Temporary Hit Points|XPHB} equal to your Charisma modifier plus your Paladin level. While you are wielding your inscribed weapon, you gain these {@variantrule Temporary Hit Points|XPHB} whenever you reduce an enemy to 0 {@variantrule Hit Points|XPHB}."
+						"当你在武器上铭刻此符文时，以及武器铭刻此符文期间每当你完成{@variantrule 长休|XPHB}时，你获得等同于你魅力调整值加圣武士等级的{@variantrule 临时生命值|XPHB}。手持铭刻武器期间，每当你将一个敌人的{@variantrule 生命值|XPHB}降至 0，你就获得这些{@variantrule 临时生命值|XPHB}。"
 					]
 				},
 				{
+					"ENG_name": "Frost",
+					"name": "冰霜",
 					"type": "entries",
-					"name": "Frost",
 					"entries": [
-						"While you are wielding your inscribed weapon, damage from your weapon attacks, Paladin spells, and Paladin features ignores {@variantrule Resistance|XPHB} to Cold damage. When you make the extra attack of the {@itemProperty L|XPHB|Light} property and hit while wielding your inscribed weapon, you deal an extra {@damage 1d4} Cold damage."
+						"手持铭刻武器期间，你的武器攻击、圣武士法术与圣武士特性造成的伤害无视对寒冷伤害的{@variantrule 抗性|XPHB}。当你以铭刻武器进行{@itemProperty L|XPHB|轻型}属性的额外攻击并命中时，额外造成{@damage 1d4}点寒冷伤害。"
 					]
 				},
 				{
+					"ENG_name": "Unholy",
+					"name": "邪恶",
 					"type": "entries",
-					"name": "Unholy",
 					"entries": [
-						"While you are wielding your inscribed weapon, damage from your weapon attacks, Paladin spells, and Paladin features ignores {@variantrule Resistance|XPHB} to Necrotic damage. If your inscribed weapon has the {@itemProperty H|XPHB|Heavy} property, the first creature you hit with it each turn takes extra Necrotic damage equal to your Charisma modifier (minimum of 1)."
+						"手持铭刻武器期间，你的武器攻击、圣武士法术与圣武士特性造成的伤害无视对黯蚀伤害的{@variantrule 抗性|XPHB}。如果你的铭刻武器具有{@itemProperty H|XPHB|重型}属性，你每回合以此武器命中的第一个生物额外受等同于你魅力调整值（至少为 1）的黯蚀伤害。"
 					]
 				}
 			]
 		},
 		{
-			"name": "Runic Power",
+			"ENG_name": "Runic Power",
+			"name": "符文能量",
 			"source": "WoW",
-			"className": "Death Knight",
+			"className": "死亡骑士",
 			"classSource": "WoW",
-			"subclassShortName": "Ebon Blade",
+			"subclassShortName": "黑锋",
 			"subclassSource": "WoW",
 			"level": 3,
 			"consumes": {
-				"name": "Channel Divinity"
+				"ENG_name": "Channel Divinity",
+				"name": "引导神力"
 			},
 			"entries": [
-				"Immediately after you cast {@spell Rune Strike|WoW}, you can expend one use of your {@classFeature Channel Divinity|Paladin|XPHB|3|XPHB} to gain one of the following benefits based on the rune inscribed on your weapon.",
+				"在你施展{@spell 符文打击|WoW}后立即，你可以消耗一次{@classFeature 引导神力|圣武士|XPHB|3|XPHB}，根据武器上铭刻的符文获得以下收益之一。",
 				{
+					"ENG_name": "Blood",
+					"name": "鲜血",
 					"type": "entries",
-					"name": "Blood",
 					"entries": [
-						"You regain a number of {@variantrule Hit Points|XPHB} equal to the Necrotic damage dealt with your {@spell Rune Strike|WoW}."
+						"你回复等同于你的{@spell 符文打击|WoW}所造成黯蚀伤害数值的{@variantrule 生命值|XPHB}。"
 					]
 				},
 				{
+					"ENG_name": "Frost",
+					"name": "冰霜",
 					"type": "entries",
-					"name": "Frost",
 					"entries": [
-						"Frost covers your weapon and shatters on impact. The target of your {@spell Rune Strike|WoW} and each enemy in a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the target take {@damage 2d6} Cold damage."
+						"寒霜覆盖你的武器并在撞击中碎裂。你的{@spell 符文打击|WoW}的目标，以及以该目标为中心 10 尺{@variantrule 光环 [效应区域]|XPHB|光环}内的每个敌人，均受{@damage 2d6}点寒冷伤害。"
 					]
 				},
 				{
+					"ENG_name": "Unholy",
+					"name": "邪恶",
 					"type": "entries",
-					"name": "Unholy",
 					"entries": [
-						"The target of your {@spell Rune Strike|WoW} is cursed until the end of your next turn. The next time the cursed target makes a saving throw, it subtracts {@dice 1d6} from the roll, and the curse ends."
+						"你的{@spell 符文打击|WoW}的目标被诅咒直到你的下个回合结束。受诅咒的目标下次进行豁免检定时，从掷骰结果中减去{@dice 1d6}，然后诅咒结束。"
 					]
 				}
 			]
 		},
 		{
-			"name": "Aura of Deathly Endurance",
+			"ENG_name": "Aura of Deathly Endurance",
+			"name": "死寂坚忍灵光",
 			"source": "WoW",
-			"className": "Death Knight",
+			"className": "死亡骑士",
 			"classSource": "WoW",
-			"subclassShortName": "Ebon Blade",
+			"subclassShortName": "黑锋",
 			"subclassSource": "WoW",
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"You and your allies have {@variantrule Resistance|XPHB} to Cold, Necrotic, and Psychic damage while in your {@classFeature Aura of Protection|Paladin|XPHB|6|XPHB}."
+				"身处你的{@classFeature 守护灵光|圣武士|XPHB|6|XPHB}内时，你和你的盟友对寒冷、黯蚀和心灵伤害具有{@variantrule 抗性|XPHB}。"
 			]
 		},
 		{
-			"name": "Runic Mastery",
+			"ENG_name": "Runic Mastery",
+			"name": "符文精通",
 			"source": "WoW",
-			"className": "Death Knight",
+			"className": "死亡骑士",
 			"classSource": "WoW",
-			"subclassShortName": "Ebon Blade",
+			"subclassShortName": "黑锋",
 			"subclassSource": "WoW",
 			"level": 15,
 			"header": 2,
 			"entries": [
-				"You can invoke the power of the rune inscribed on your weapon. Once you use this feature, you can't do so again until you finish a {@variantrule Long Rest|XPHB}. The effect depends on the rune you have inscribed.",
+				"你可以祈唤武器上所铭刻符文的力量。使用此特性后，你须完成{@variantrule 长休|XPHB}才能再次使用。效果取决于你铭刻的符文。",
 				{
+					"ENG_name": "Blood",
+					"name": "鲜血",
 					"type": "entries",
-					"name": "Blood",
 					"entries": [
-						"When a creature hits another creature you can see within 10 feet of you with an attack roll, you can take a {@variantrule Reaction|XPHB} to reduce the damage the target takes by your Paladin level. You then lose a number of {@variantrule Hit Points|XPHB} equal to your Paladin level."
+						"当一个生物以攻击检定命中你 10 尺内另一个可见生物时，你可以以一个{@variantrule 反应|XPHB}使目标所受伤害减少等同于你圣武士等级的数值。随后你失去等同于你圣武士等级的{@variantrule 生命值|XPHB}。"
 					]
 				},
 				{
+					"ENG_name": "Frost",
+					"name": "冰霜",
 					"type": "entries",
-					"name": "Frost",
 					"entries": [
-						"When you take the {@action Attack|XPHB} action on your turn, you can replace one attack with an exhalation of frost magic in a 30-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. Each creature in that area makes a Dexterity saving throw against your spell save DC. A creature takes {@damage 8d6} Cold damage on a failed save or half as much damage on a successful one."
+						"在你的回合采取{@action 攻击|XPHB}动作时，你可以将其中一次攻击替换为呼出一股 30 尺{@variantrule 锥状 [效应区域]|XPHB|锥状}的霜寒魔法。该区域内的每个生物对你的法术豁免 DC 进行敏捷豁免。豁免失败的生物受{@damage 8d6}点寒冷伤害，成功则仅受一半伤害。"
 					]
 				},
 				{
+					"ENG_name": "Unholy",
+					"name": "邪恶",
 					"type": "entries",
-					"name": "Unholy",
 					"entries": [
-						"When you cast {@spell Summon Undead|XPHB}, you can modify it so that the spell doesn't require {@status Concentration|XPHB}. If you do so, the spell's duration becomes 1 minute for that casting, and when summoned, the {@b Undead Spirit} has a number of {@variantrule Temporary Hit Points|XPHB} equal to your Paladin level plus your Charisma modifier. In addition, the first time each turn the spirit hits a creature, the spirit deals extra Necrotic damage equal to half your Paladin level (round up)."
+						"当你施展{@spell 亡灵召唤术|XPHB}时，可以对其进行调整，使其不需要{@status 专注|XPHB}。若如此做，该次施法的法术持续时间变为 1 分钟，且被召唤的{@b 亡灵灵魄}获得等同于你圣武士等级加魅力调整值的{@variantrule 临时生命值|XPHB}。此外，该精魂每回合首次命中一个生物时，额外造成等同于你圣武士等级一半（向上取整）的黯蚀伤害。"
 					]
 				}
 			]
 		},
 		{
-			"name": "Aspect of the Horsemen",
+			"ENG_name": "Aspect of the Horsemen",
+			"name": "四骑士之相",
 			"source": "WoW",
-			"className": "Death Knight",
+			"className": "死亡骑士",
 			"classSource": "WoW",
-			"subclassShortName": "Ebon Blade",
+			"subclassShortName": "黑锋",
 			"subclassSource": "WoW",
 			"level": 20,
 			"header": 2,
 			"entries": [
-				"As a {@variantrule Bonus Action|XPHB}, you gain the benefits below for 10 minutes or until you end them (no action required). Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|XPHB}. You can also restore your use of it by expending a level 5 spell slot (no action required).",
+				"以一个{@variantrule 附赠动作|XPHB}，你可获得下列的增益。持续 10 分钟，你也可以令其提前终止（无需动作）。此特性一经使用，直至完成{@variantrule 长休|XPHB}你都无法再次使用。你也可以消耗一个五环法术位（无需动作）重置此特性的使用权。",
 				{
+					"ENG_name": "Generate Runic Power",
+					"name": "生成符文能量",
 					"type": "entries",
-					"name": "Generate Runic Power",
 					"entries": [
-						"You can restore a use of your {@subclassFeature Runic Mastery|Death Knight|WoW|Ebon Blade|WoW|15|WoW} by expending a level 4 spell slot (no action required)."
+						"你可以消耗一个 4 环法术位来恢复一次{@subclassFeature 符文精通|死亡骑士|WoW|黑锋|WoW|15|WoW}的使用（无需动作）。"
 					]
 				},
 				{
+					"ENG_name": "Runeforging",
+					"name": "符文锻造",
 					"type": "entries",
-					"name": "Runeforging",
 					"entries": [
-						"When you use your {@subclassFeature Runic Power|Death Knight|WoW|Ebon Blade|WoW|3|WoW} and {@subclassFeature Runic Mastery|Death Knight|WoW|Ebon Blade|WoW|15|WoW} features, you can choose any effect, not just the one that corresponds to the rune inscribed on your weapon."
+						"当你使用{@subclassFeature 符文能量|死亡骑士|WoW|黑锋|WoW|3|WoW}和{@subclassFeature 符文精通|死亡骑士|WoW|黑锋|WoW|15|WoW}特性时，你可以选择任意效果，而不限于与武器所铭刻符文对应的效果。"
 					]
 				}
 			]

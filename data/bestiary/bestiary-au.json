@@ -66,7 +66,7 @@
 					"conditionImmune": [
 						"charmed"
 					],
-					"note": "(with Mind Blank)",
+					"note": "（带有心灵屏障）",
 					"cond": true
 				}
 			],
@@ -99,7 +99,7 @@
 							"{@spell 欧提路克弹力法球|XPHB}"
 						],
 						"1e": [
-							"{@spell 心灵屏障|XPHB}（于战斗前施展）",
+							"{@spell 心灵屏障|XPHB}（在战斗前施展）",
 							"{@spell 传送术|XPHB}"
 						]
 					},
@@ -186,7 +186,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"奥秘",
@@ -317,7 +317,7 @@
 						"{@spell 侦测思想|XPHB}",
 						"{@spell 解除魔法|XPHB}",
 						"{@spell 隐形术|XPHB}",
-						"{@spell 闪电束|XPHB}（四环版本）",
+						"{@spell 闪电束|XPHB} (4环版本)",
 						"{@spell 法师之手|XPHB}",
 						"{@spell 魔法伎俩|XPHB}"
 					],
@@ -426,12 +426,13 @@
 				}
 			],
 			"legendaryGroup": {
-				"name": "Baelnorn",
+				"ENG_name": "Baelnorn",
+				"name": "贝伦巫妖",
 				"source": "AU"
 			},
 			"environment": [
-				"森林",
-				"城市"
+				"forest",
+				"urban"
 			],
 			"treasure": [
 				"奥秘"
@@ -856,7 +857,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"奥秘",
@@ -987,9 +988,9 @@
 				}
 			],
 			"environment": [
-				"草地",
-				"丘陵",
-				"城市"
+				"grassland",
+				"hill",
+				"urban"
 			],
 			"traitTags": [
 				"Sunlight Sensitivity"
@@ -1288,7 +1289,7 @@
 				"perception": "+7"
 			},
 			"senses": [
-				"Truesight 60 ft."
+				"真实视觉 60 尺"
 			],
 			"passive": 17,
 			"languages": [
@@ -1373,7 +1374,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"奥秘",
@@ -1579,7 +1580,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"奥秘",
@@ -1635,6 +1636,7 @@
 			"source": "AU",
 			"page": 138,
 			"size": [
+				"S",
 				"M"
 			],
 			"alignment": [
@@ -1770,7 +1772,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"奥秘",
@@ -1888,8 +1890,8 @@
 				}
 			],
 			"environment": [
-				"丘陵",
-				"城市"
+				"hill",
+				"urban"
 			],
 			"treasure": [
 				"武备"
@@ -2008,8 +2010,8 @@
 				}
 			],
 			"environment": [
-				"丘陵",
-				"城市"
+				"hill",
+				"urban"
 			],
 			"treasure": [
 				"武备"
@@ -2126,8 +2128,8 @@
 				}
 			],
 			"environment": [
-				"丘陵",
-				"城市"
+				"hill",
+				"urban"
 			],
 			"treasure": [
 				"武备"
@@ -2310,7 +2312,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"奥秘",
@@ -2376,7 +2378,7 @@
 				"walk": 25,
 				"fly": {
 					"number": 25,
-					"condition": "(hover)"
+					"condition": "(悬浮)"
 				},
 				"canHover": true
 			},
@@ -2445,7 +2447,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"tokenCredit": "scorpion0rk",
 			"tokenCustom": true,
@@ -2498,7 +2500,7 @@
 				"walk": 25,
 				"fly": {
 					"number": 25,
-					"condition": "(hover)"
+					"condition": "(悬浮)"
 				},
 				"canHover": true
 			},
@@ -2560,7 +2562,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"traitTags": [
 				"Amorphous",
@@ -2608,7 +2610,7 @@
 				"walk": 25,
 				"fly": {
 					"number": 25,
-					"condition": "(hover)"
+					"condition": "(悬浮)"
 				},
 				"canHover": true
 			},
@@ -2677,7 +2679,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"tokenCredit": "Joe Hustak",
 			"tokenCustom": true,
@@ -2717,6 +2719,7 @@
 			"source": "AU",
 			"page": 139,
 			"size": [
+				"S",
 				"M"
 			],
 			"alignment": [
@@ -2841,7 +2844,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"奥秘",
@@ -3238,7 +3241,7 @@
 				}
 			],
 			"environment": [
-				"城市"
+				"urban"
 			],
 			"treasure": [
 				"武备"
@@ -3288,7 +3291,7 @@
 				"walk": 40,
 				"fly": {
 					"number": 60,
-					"condition": "(hover)"
+					"condition": "(悬浮)"
 				},
 				"canHover": true
 			},
@@ -3330,7 +3333,8 @@
 				"restrained"
 			],
 			"languages": [
-				"全部; 心灵感应 120 尺"
+				"所有",
+				"心灵感应 120 尺"
 			],
 			"cr": "19",
 			"spellcasting": [
@@ -3435,7 +3439,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"奥秘"
@@ -3644,7 +3648,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"奥秘",
@@ -3731,7 +3735,7 @@
 				"perception": "+8"
 			},
 			"senses": [
-				"黑暗视觉120尺（不受魔法{@variantrule 黑暗|XPHB}阻碍）"
+				"黑暗视觉 120 尺（不受魔法{@variantrule 黑暗|XPHB}影响）"
 			],
 			"passive": 18,
 			"resist": [
@@ -3895,7 +3899,8 @@
 				}
 			],
 			"legendaryGroup": {
-				"name": "Venger",
+				"ENG_name": "Venger",
+				"name": "文格尔",
 				"source": "AU"
 			},
 			"traitTags": [

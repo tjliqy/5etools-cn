@@ -853,6 +853,38 @@
 			]
 		},
 		{
+			"ENG_name": "Baelnorn",
+			"name": "贝伦巫妖",
+			"source": "AU",
+			"page": 141,
+			"regionalEffects": [
+				"贝伦巫妖会将其存在延展至所栖息的地区，产生以下效应：",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Projection",
+							"name": "投影",
+							"type": "item",
+							"entries": [
+								"身处巢穴期间，贝伦巫妖可以施展{@spell 投影术|XPHB}，无需法术成分并使用智力作为施法属性（法术豁免{@dc 19}）。该法术的射程仅限于贝伦巫妖的巢穴。"
+							]
+						},
+						{
+							"ENG_name": "Travel Ward",
+							"name": "限制传送",
+							"type": "item",
+							"entries": [
+								"生物无法通过传送或位面旅行进入或离开巢穴。"
+							]
+						}
+					]
+				},
+				"若贝伦巫妖被摧毁或将巢穴移至别处，这些效应立即终止。"
+			]
+		},
+		{
 			"ENG_name": "Baernaloth",
 			"name": "贝纳罗斯魔",
 			"source": "MPP",
@@ -2536,7 +2568,7 @@
 							"name": "限制传送",
 							"type": "item",
 							"entries": [
-								"生物无法使用传送或位面旅行进入或离开巢穴。"
+								"生物无法通过传送或位面旅行进入或离开巢穴。"
 							]
 						}
 					]
@@ -6042,6 +6074,38 @@
 			]
 		},
 		{
+			"ENG_name": "Ragnaros",
+			"name": "拉格纳罗斯",
+			"source": "WoW",
+			"page": 248,
+			"regionalEffects": [
+				"拉格纳罗斯的巢穴周边区域遍布灼痕焦土，产生以下效应：",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Extreme Heat",
+							"name": "极度高温",
+							"type": "item",
+							"entries": [
+								"巢穴周围1英里内的气温堪比酷热的沙漠，生物会受到极端高温影响。"
+							]
+						},
+						{
+							"ENG_name": "Sulfurous Vapors",
+							"name": "硫磺蒸气",
+							"type": "item",
+							"entries": [
+								"巢穴周围1英里内，毒气自地面渗出。在该区域完成{@variantrule 长休|XPHB}的生物，必须通过一次{@dc 15}的体质豁免，否则将陷入{@condition 中毒|XPHB}状态，持续1小时。"
+							]
+						}
+					]
+				},
+				"这些效应，是拉格纳罗斯的存在烙在地貌上的永久伤痕。"
+			]
+		},
+		{
 			"ENG_name": "Red Dragon",
 			"name": "红龙",
 			"source": "MM",
@@ -7669,6 +7733,38 @@
 			]
 		},
 		{
+			"ENG_name": "Venger",
+			"name": "文格尔",
+			"source": "AU",
+			"page": 150,
+			"regionalEffects": [
+				"文格尔的存在会污秽其巢穴所在的地区，产生以下效应：",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Desolate Terrain",
+							"name": "荒芜地形",
+							"type": "item",
+							"entries": [
+								"巢穴1英里内的植物枯萎死亡，形成一片泥土龟裂的不毛荒原。"
+							]
+						},
+						{
+							"ENG_name": "Tormented Rest",
+							"name": "折磨之眠",
+							"type": "item",
+							"entries": [
+								"深渊低语侵扰访客的梦境。除文格尔及其盟友外，任何生物若在巢穴周围1英里内完成一次{@variantrule 长休|XPHB}，必须通过一次{@dc 15}的体质豁免，否则获得1级{@condition 力竭|XPHB}。"
+							]
+						}
+					]
+				},
+				"若文格尔死亡或将其巢穴移往别处，这些效应立即终止。"
+			]
+		},
+		{
 			"ENG_name": "Viktra Mordenheim",
 			"name": "维克特拉·莫登海姆",
 			"source": "RHW",
@@ -8469,11 +8565,11 @@
 								],
 								[
 									"61\u201380",
-									"\"我的心智正在逐渐消失，我的智力似乎在起伏不定。\""
+									"\"我的心智正在逐渐流失，我的智力似乎时好时坏。\""
 								],
 								[
 									"81\u201300",
-									"\"我不断地抓挠那些看不见的真菌感染。\""
+									"\"我一直在不停地抓挠，因为我觉得自己被一种看不见的真菌感染了。\""
 								]
 							]
 						}

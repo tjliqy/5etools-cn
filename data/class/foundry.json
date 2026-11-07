@@ -13021,6 +13021,26 @@
 			"migrationVersion": 3
 		},
 		{
+			"ENG_name": "Soul Fragments",
+			"name": "灵魂碎片",
+			"source": "WoW",
+			"className": "恶魔猎手",
+			"classSource": "WoW",
+			"subclassShortName": "恶魔猎手",
+			"subclassSource": "WoW",
+			"level": 3,
+			"system": {
+				"uses.max": "max(1, @abilities.wis.mod + min(floor(@classes.demon-hunter.levels / 13), 1) + min(floor(@classes.demon-hunter.levels / 17), 1))",
+				"uses.recovery": [
+					{
+						"period": "lr",
+						"type": "recoverAll"
+					}
+				]
+			},
+			"migrationVersion": 3
+		},
+		{
 			"ENG_name": "Frenzy",
 			"name": "狂怒",
 			"source": "XPHB",
@@ -28451,7 +28471,7 @@
 						}
 					],
 					"descriptionEntries": [
-						"处于{@i 变身术}法术的{@b 天生武器}选项效应下时。"
+						"处于{@spell 变身术}法术的{@b 天生武器}选项效应下时。"
 					]
 				},
 				{

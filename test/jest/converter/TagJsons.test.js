@@ -93,7 +93,7 @@ describe("CoreRuleTag: Name matching", () => {
 	it.each([
 		["Cone [Area of Effect]", "{@variantrule Cone [Area of Effect]|XPHB}"],
 
-		["Cone", "{@variantrule Cone [Area of Effect]|XPHB|Cone}"],
+		["Cone", "{@variantrule Cone [Area of Effect]|XPHB|锥状}"],
 
 		["Proficiency Bonus", "{@variantrule Proficiency|XPHB|Proficiency Bonus}"],
 		["Half Cover", "{@variantrule Cover|XPHB|Half Cover}"],
@@ -126,7 +126,7 @@ describe("CoreRuleTag: Name matching", () => {
 		["Legendary Action and Flying Sword", "Legendary Action and Flying Sword"],
 
 		["Cone [Area of Effect]", "{@variantrule Cone [Area of Effect]|XPHB}"],
-		["Cone", "{@variantrule Cone [Area of Effect]|XPHB|Cone}"],
+		["Cone", "{@variantrule Cone [Area of Effect]|XPHB|锥状}"],
 	])("Correctly tags in strict mode (input=%s)", (input, expected) => {
 		expect(CoreRuleTag.tryRunStrictCapsWords(input, {styleHint: "one"})).toBe(expected);
 		expect(CoreRuleTag.tryRunStrictCapsWords(expected, {styleHint: "one"})).toBe(expected);

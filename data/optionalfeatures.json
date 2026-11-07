@@ -419,6 +419,21 @@
 			]
 		},
 		{
+			"ENG_name": "Battle Shout",
+			"name": "战斗怒吼",
+			"source": "WoW",
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"ENG_name": "Superiority Die",
+				"name": "卓越骰"
+			},
+			"entries": [
+				"以一个{@variantrule 附赠动作|XPHB}，你可以消耗一枚{@subclassFeature 卓越战技|战士|XPHB|战斗大师|XPHB|3|XPHB|卓越骰}，向距你 30 尺内能听见你声音的盟友高声激励。直到你的下个回合开始，每名受影响的盟友下次以近战攻击命中时，其伤害检定加上该{@subclassFeature 卓越战技|战士|XPHB|战斗大师|XPHB|3|XPHB|卓越骰}。"
+			]
+		},
+		{
 			"ENG_name": "Beast Speech",
 			"name": "野兽之语",
 			"source": "PHB",
@@ -799,6 +814,57 @@
 			]
 		},
 		{
+			"ENG_name": "Call of the Void",
+			"name": "虚空召唤",
+			"source": "WoW",
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "术士",
+							"source": "XPHB",
+							"visibleStats": true
+						}
+					},
+					"optionalfeature": [
+						"军团契约|wow"
+					]
+				}
+			],
+			"entries": [
+				"当你以{@optfeature 军团契约|WoW}施展{@spell 寻获魔宠|XPHB}时，你可以选择召唤{@creature 邪能小鬼|WoW}或{@creature 虚空行者|WoW}魔宠。此外，你获得以下收益。",
+				{
+					"ENG_name": "Quick Attack",
+					"name": "迅捷打击",
+					"type": "entries",
+					"entries": [
+						"以一个{@variantrule 附赠动作|XPHB}，你可以指挥你的魔宠执行{@action 攻击|XPHB}动作。"
+					]
+				},
+				{
+					"ENG_name": "Your Spell Attack",
+					"name": "你的法术攻击",
+					"type": "entries",
+					"entries": [
+						"魔宠的攻击使用你的法术攻击加值。"
+					]
+				},
+				{
+					"ENG_name": "Shadow Shield",
+					"name": "暗影护盾",
+					"type": "entries",
+					"entries": [
+						"当你的虚空行者魔宠受到伤害时，你可以采取{@variantrule 反应|XPHB}，给予它对该伤害的{@variantrule 抗性|XPHB}。"
+					]
+				}
+			]
+		},
+		{
 			"ENG_name": "Careful Spell",
 			"name": "谨慎法术",
 			"source": "PHB",
@@ -1064,6 +1130,30 @@
 			"translator": "不全书"
 		},
 		{
+			"ENG_name": "Curse of Corruption",
+			"name": "腐蚀诅咒",
+			"source": "WoW",
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 2,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "术士",
+							"source": "XPHB",
+							"visibleStats": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"当一名敌人在其回合开始时受你施展的术士法术诅咒（如{@spell 脆弱诅咒|XPHB}），它必须通过魅力豁免，否则受等同于你魅力调整值的黯蚀伤害。"
+			]
+		},
+		{
 			"ENG_name": "Defense",
 			"name": "防御",
 			"source": "PHB",
@@ -1094,6 +1184,21 @@
 				"着装护甲时，你的AC获得 +1加值。"
 			],
 			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Demoralizing Shout",
+			"name": "挫志怒吼",
+			"source": "WoW",
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"ENG_name": "Superiority Die",
+				"name": "卓越骰"
+			},
+			"entries": [
+				"以一个{@variantrule 附赠动作|XPHB}，你可以消耗一枚{@subclassFeature 卓越战技|战士|XPHB|战斗大师|XPHB|3|XPHB|卓越骰}厉声怒吼，挫伤距你 30 尺内能听见你声音的敌人的士气。直到你的下个回合结束，每名受影响的敌人下次以近战攻击命中你之外的目标时，其伤害检定减去该{@subclassFeature 卓越战技|战士|XPHB|战斗大师|XPHB|3|XPHB|卓越骰}。"
+			]
 		},
 		{
 			"ENG_name": "Devil's Sight",
@@ -1834,6 +1939,30 @@
 				"以一个{@variantrule 附赠动作|XPHB}，你可以消耗一枚卓越骰并执行{@action 撤离|XPHB}动作，并将卓越骰结果加入你的AC中，直到你下回合开始为止。"
 			],
 			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Expendable Minions",
+			"name": "弃子仆从",
+			"source": "WoW",
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "术士",
+							"source": "XPHB",
+							"visibleStats": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你的魔宠或你召唤并控制的生物死亡时，你或距你 60 尺内的另一个生物回复等同于你的术士等级加魅力调整值的{@variantrule 生命值|XPHB}。"
+			]
 		},
 		{
 			"ENG_name": "Extended Spell",
@@ -2583,6 +2712,30 @@
 			"translator": "不全书"
 		},
 		{
+			"ENG_name": "Health Funnel",
+			"name": "生命通道",
+			"source": "WoW",
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 2,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师",
+							"source": "XPHB",
+							"visibleStats": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"以一个{@variantrule 附赠动作|XPHB}，你可以消耗任意数量的未消耗{@variantrule 生命值骰|XPHB|生命骰}，掷这些骰子，每枚骰子加上你的魅力调整值，然后加总。你的魔宠或你指挥的另一名邪魔获得该数量的{@variantrule 临时生命值|XPHB}。"
+			]
+		},
+		{
 			"ENG_name": "Heightened Spell",
 			"name": "升阶法术",
 			"source": "PHB",
@@ -2656,6 +2809,21 @@
 				"穿戴此头盔时，那个生物在先攻检定上具有优势。此外，穿戴者只要未处于{@condition 失能}状态，就无法被{@status 突袭}。"
 			],
 			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Heroic Leap",
+			"name": "英勇飞跃",
+			"source": "WoW",
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"ENG_name": "Superiority Die",
+				"name": "卓越骰"
+			},
+			"entries": [
+				"以一个{@variantrule 附赠动作|XPHB}，你可以消耗一枚{@subclassFeature 卓越战技|战士|XPHB|战斗大师|XPHB|3|XPHB|卓越骰}，跃起等同于你力量值的尺数。你落地时，距你 5 尺内的生物进行力量豁免，失败者受等同于该{@subclassFeature 卓越战技|战士|XPHB|战斗大师|XPHB|3|XPHB|卓越骰}掷骰结果的钝击伤害，成功者仅受一半伤害。"
+			]
 		},
 		{
 			"ENG_name": "Hill Rune",
@@ -2885,6 +3053,47 @@
 				"每个你的回合一次，当你用{@spell 魔能爆}击中一个生物时，你可以使目标的速度降低10尺，持续直至你的下个回合结束。"
 			],
 			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Legion Summoning",
+			"name": "军团召唤",
+			"source": "WoW",
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师",
+							"source": "XPHB",
+							"visibleStats": true
+						}
+					},
+					"optionalfeature": [
+						"军团契约|wow"
+					]
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": "cha",
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									"异界誓缚|xphb"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以施展{@spell 异界誓缚|XPHB}而不消耗法术位。此时你召唤一名{@creature 恶魔卫士|WoW}、一只{@creature 地狱猎犬|WoW}、一名{@creature 梦魔|XMM}或一名{@creature 魅魔|XMM}，该邪魔成为法术的目标。一旦你以此方式施展该法术，你必须完成一次{@variantrule 长休|XPHB}才能再次如此做。"
+			]
 		},
 		{
 			"ENG_name": "Lessons of the First Ones",
@@ -3159,6 +3368,30 @@
 				"你可以施展{@spell 易容术|XPHB}且无需消耗法术位。"
 			],
 			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Master Demonologist",
+			"name": "恶魔学识大师",
+			"source": "WoW",
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师",
+							"source": "XPHB",
+							"visibleStats": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你指挥的所有邪魔对{@spell 脆弱诅咒|XPHB}法术的目标也造成额外伤害，如同它们是你一般。"
+			]
 		},
 		{
 			"ENG_name": "Master of Myriad Forms",
@@ -3478,6 +3711,21 @@
 			"translator": "不全书"
 		},
 		{
+			"ENG_name": "Mortal Strike",
+			"name": "致死打击",
+			"source": "WoW",
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"ENG_name": "Superiority Die",
+				"name": "卓越骰"
+			},
+			"entries": [
+				"当你以攻击检定命中某生物时，你可以消耗一枚{@subclassFeature 卓越战技|战士|XPHB|战斗大师|XPHB|3|XPHB|卓越骰}来阻止目标治疗。该{@subclassFeature 卓越战技|战士|XPHB|战斗大师|XPHB|3|XPHB|卓越骰}加到该攻击的伤害检定上。目标直到你的下个回合结束无法回复{@variantrule 生命值|XPHB}。"
+			]
+		},
+		{
 			"ENG_name": "One with Shadows",
 			"name": "融身入影",
 			"source": "PHB",
@@ -3707,6 +3955,28 @@
 				"此外，当你执行{@action 攻击|XPHB}动作时可以放弃自己动作攻击中的一次攻击，转而让你的魔宠使用其{@variantrule 反应|XPHB}发动一次攻击。"
 			],
 			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Pact of the Legion",
+			"name": "军团契约",
+			"source": "WoW",
+			"featureType": [
+				"EI"
+			],
+			"additionalSpells": [
+				{
+					"ability": "cha",
+					"innate": {
+						"_": [
+							"寻获魔宠|xphb"
+						]
+					}
+				}
+			],
+			"entries": [
+				"你习得{@spell 寻获魔宠|XPHB}法术，并可以以{@action 魔法|XPHB}动作施展它而不消耗法术位。施展该法术时，你召唤一只{@creature 邪能小鬼|WoW}魔宠。",
+				"此外，当你采取{@action 攻击|XPHB}动作时，你可以放弃自己的一次攻击，改让你的魔宠以它的{@variantrule 反应|XPHB}进行一次攻击。"
+			]
 		},
 		{
 			"ENG_name": "Pact of the Talisman",
@@ -5860,6 +6130,21 @@
 				"只要你与你的魔宠处于同一位面，你就可以用心灵感应与其进行交流，以及使用其感官感知世界。此外，当你通过魔宠的感官感知时，你可以通过魔宠用你自己的声音说话，而不论你的魔宠是否能够说话。"
 			],
 			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Warding Maneuver",
+			"name": "守护战技",
+			"source": "WoW",
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"ENG_name": "Superiority Die",
+				"name": "卓越骰"
+			},
+			"entries": [
+				"当你或距你 5 尺内你能看见的一个生物被攻击检定命中时，如果你持有一把近战武器或一面{@item 盾牌|XPHB}，你可以采取{@variantrule 反应|XPHB}并消耗一枚{@subclassFeature 卓越战技|战士|XPHB|战斗大师|XPHB|3|XPHB|卓越骰}。将该{@subclassFeature 卓越战技|战士|XPHB|战斗大师|XPHB|3|XPHB|卓越骰}加到目标对触发攻击的 AC 上。若该攻击仍然命中，目标对这次攻击的伤害具有{@variantrule 抗性|XPHB}。"
+			]
 		},
 		{
 			"ENG_name": "Water Whip",

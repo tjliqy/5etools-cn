@@ -53,7 +53,7 @@
 					"ENG_name": "Regeneration (Slaad Only)",
 					"name": "再生（仅史拉蟾）",
 					"entries": [
-						"若灵魄至少拥有 1 {@variantrule 生命值|XPHB}，则其在自己回合开始时回复 10 {@variantrule 生命值|XPHB|生命值}。"
+						"若该灵魄拥有至少 1 {@variantrule 生命值|XPHB|生命值}，则其在自己回合开始时回复 5 {@variantrule 生命值|XPHB}。"
 					]
 				},
 				{
@@ -76,7 +76,7 @@
 					"ENG_name": "Claw (Slaad Only)",
 					"name": "爪击（仅史拉蟾）",
 					"entries": [
-						"{@atkr m} {@hitYourSpellAttack 加值等于你的法术攻击加值}, 触及 5 尺。{@h}{@damage 1d10 + 3 + summonSpellLevel}挥砍伤害，目标无法恢复{@variantrule 生命值|XPHB}直至灵魄的下个回合开始。"
+						"{@atkr m} {@hitYourSpellAttack}，触及5尺。{@h}{@damage 1d10 + 3 + summonSpellLevel}挥砍伤害，且目标在灵魄的下个回合开始前无法恢复{@variantrule 生命值|XPHB}。"
 					]
 				},
 				{
@@ -889,7 +889,7 @@
 					"ENG_name": "Healing Touch (1/Day)",
 					"name": "治愈之触（1/日）",
 					"entries": [
-						"灵魄触碰另一生物。目标魔法性地恢复{@dice 2d8 + summonSpellLevel}点{@variantrule 生命值|XPHB}。"
+						"灵魄触碰另一个生物。目标恢复等于{@dice 2d8 + summonSpellLevel}的{@variantrule 生命值|XPHB}。"
 					]
 				}
 			],
@@ -1851,7 +1851,7 @@
 					"ENG_name": "Death Throes (Demon Only)",
 					"name": "焚身爆（仅恶魔）",
 					"entries": [
-						"当灵魄{@variantrule 生命值|XPHB}降至 0 或法术结束时，灵魄爆炸。{@actSave dex}：DC等于你的法术豁免DC，源自灵魄的 10 尺{@variantrule 光环 [效应区域]|XPHB|光环}区域内的每名生物。{@actSaveFail}：{@damage 2d10} + 法术环阶的火焰伤害。{@actSaveSuccess}：半伤。"
+						"当灵魄生命值降至 0 {@variantrule 生命值|XPHB} 或法术结束时，灵魄爆炸。{@actSave dex} DC等于你的法术豁免DC，源自灵魄的 10 尺 {@variantrule 光环 [效应区域]|XPHB|光环} 内的每名生物。{@actSaveFail} {@damage 2d10} 加上本法术环阶的火焰伤害。{@actSaveSuccess} 半伤。"
 					]
 				},
 				{
@@ -2302,7 +2302,7 @@
 					"ENG_name": "Life Bond",
 					"name": "生命连接",
 					"entries": [
-						"当你从一道一环或以上的法术中恢复{@variantrule 生命值|XPHB}时，若你位于坐骑 5 尺内，则坐骑也会恢复相同数量的{@variantrule 生命值|XPHB}。"
+						"当你从一个1环或更高环阶的法术恢复{@variantrule 生命值|XPHB}时，若你位于坐骑5尺内，坐骑恢复相同数量的{@variantrule 生命值|XPHB}。"
 					]
 				}
 			],
@@ -2334,7 +2334,7 @@
 					"ENG_name": "Healing Touch (Celestial Only; Recharges after a Long Rest)",
 					"name": "治愈之触（仅天族，长休充能）",
 					"entries": [
-						"一名距坐骑 5 尺内的生物恢复{@dice 2d8 + summonSpellLevel}点{@variantrule 生命值|XPHB}。"
+						"坐骑5尺内的一个生物恢复等于{@dice 2d8 + summonSpellLevel}点的{@variantrule 生命值|XPHB}。"
 					]
 				}
 			],

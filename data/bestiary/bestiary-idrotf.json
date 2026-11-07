@@ -1942,6 +1942,12 @@
 		{
 			"ENG_name": "Dzaan",
 			"name": "德赞",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "IDRotF",
@@ -1958,12 +1964,6 @@
 						"flags": "i"
 					}
 				}
-			},
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"human"
-				]
 			},
 			"hp": {
 				"average": 49,
@@ -5869,7 +5869,7 @@
 					"ENG_name": "Incorporeal Movement",
 					"name": "虚体移动",
 					"entries": [
-						"幽魂可以如同穿过{@quickref 困难地形||3}一样穿过其他生物和物件。如果它在自己的回合结束时仍处在物件内部则受到5（{@damage 1d10}）点力场伤害。"
+						"幽魂可以如同穿过{@quickref 困难地形||3}一样穿过其他生物和物件。如果它在自己的回合结束时仍处在物件内部，则受到5（{@damage 1d10}）力场伤害。"
 					]
 				}
 			],
@@ -6556,7 +6556,7 @@
 					"ENG_name": "Unusual Nature",
 					"name": "非凡本质",
 					"entries": [
-						"魔像不需要空气，食物，水或睡眠。"
+						"魔像不需要空气、食物、饮水或睡眠。"
 					]
 				}
 			],
@@ -6945,7 +6945,7 @@
 				},
 				{
 					"ENG_name": "Adhesive (Object Form Only)",
-					"name": "黏着 (仅物件形态）",
+					"name": "黏着（仅物件形态）",
 					"entries": [
 						"拟身怪可以黏住任何触碰到它的东西。体型为大型或更小体型的生物被拟身怪黏着时视为被其{@condition 受擒}（逃脱 {@dc 16}）。其为逃脱擒抱而进行的属性检定具有劣势。"
 					]

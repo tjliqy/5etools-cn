@@ -917,17 +917,19 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Rogue",
+			"ENG_name": "Rogue",
+			"name": "潜行者",
 			"source": "WoW",
 			"reskinOf": [
-				"Rogue|XPHB"
+				"游荡者|XPHB"
 			],
 			"_copy": {
-				"name": "Rogue",
+				"ENG_name": "Rogue",
+				"name": "游荡者",
 				"source": "XPHB"
 			},
 			"includeSubclassesFrom": [
-				"Rogue|XPHB"
+				"游荡者|XPHB"
 			],
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -1525,7 +1527,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Swashbuckler|Rogue|WoW|WoW"
+				"剑客|潜行者|WoW|WoW"
 			],
 			"edition": "classic",
 			"subclassFeatures": [
@@ -2203,45 +2205,50 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Assassin",
-			"shortName": "Assassin",
+			"ENG_name": "Assassin",
+			"name": "刺客",
+			"shortName": "刺客",
 			"source": "WoW",
-			"className": "Rogue",
+			"className": "潜行者",
 			"classSource": "WoW",
 			"_copy": {
-				"name": "Assassin",
+				"ENG_name": "Assassin",
+				"name": "刺客",
 				"source": "XPHB",
-				"shortName": "Assassin",
-				"className": "Rogue",
+				"shortName": "刺客",
+				"className": "游荡者",
 				"classSource": "XPHB"
 			}
 		},
 		{
-			"name": "Soulknife",
-			"shortName": "Soulknife",
+			"ENG_name": "Soulknife",
+			"name": "魂刃",
+			"shortName": "魂刃",
 			"source": "WoW",
-			"className": "Rogue",
+			"className": "潜行者",
 			"classSource": "WoW",
 			"_copy": {
-				"name": "Soulknife",
+				"ENG_name": "Soulknife",
+				"name": "魂刃",
 				"source": "XPHB",
-				"shortName": "Soulknife",
-				"className": "Rogue",
+				"shortName": "魂刃",
+				"className": "游荡者",
 				"classSource": "XPHB"
 			}
 		},
 		{
-			"name": "Swashbuckler",
-			"shortName": "Swashbuckler",
+			"ENG_name": "Swashbuckler",
+			"name": "剑客",
+			"shortName": "剑客",
 			"source": "WoW",
-			"className": "Rogue",
+			"className": "潜行者",
 			"classSource": "WoW",
 			"edition": "one",
 			"subclassFeatures": [
-				"Swashbuckler|Rogue|WoW|Swashbuckler|WoW|3",
-				"Panache|Rogue|WoW|Swashbuckler|WoW|9",
-				"Dashing Strikes|Rogue|WoW|Swashbuckler|WoW|13",
-				"Master Duelist|Rogue|WoW|Swashbuckler|WoW|17"
+				"剑客|潜行者|WoW|剑客|WoW|3",
+				"潇洒气质|潜行者|WoW|剑客|WoW|9",
+				"疾风连击|潜行者|WoW|剑客|WoW|13",
+				"决斗大师|潜行者|WoW|剑客|WoW|17"
 			]
 		}
 	],
@@ -4204,6 +4211,129 @@
 			"header": 2,
 			"entries": [
 				"从17级起，你对剑术的精通使你可以在战斗中转败为胜。当你的攻击失手时，你可以选择以优势再投一次攻击检定。一旦你使用了这一特性，直到完成一次短休或长休前你都不能再次使用它。"
+			]
+		},
+		{
+			"ENG_name": "Fancy Footwork",
+			"name": "梦幻舞步",
+			"source": "WoW",
+			"className": "潜行者",
+			"classSource": "WoW",
+			"subclassShortName": "剑客",
+			"subclassSource": "WoW",
+			"level": 3,
+			"entries": [
+				"你学会了出手一击后全身而退。如果你在你的回合内对一个生物进行近战攻击检定，该生物在本回合余下时间里不能对你进行{@action opportunity attack|XPHB|借机攻击}。"
+			]
+		},
+		{
+			"ENG_name": "Rakish Audacity",
+			"name": "潇洒无畏",
+			"source": "WoW",
+			"className": "潜行者",
+			"classSource": "WoW",
+			"subclassShortName": "剑客",
+			"subclassSource": "WoW",
+			"level": 3,
+			"entries": [
+				"当你掷{@variantrule 先攻|XPHB}时，你可以为掷骰结果加上等同于你魅力调整值的加值。",
+				"你还获得使用{@classFeature 偷袭|游荡者|XPHB|1|XPHB}的额外方式：如果你与一个生物相距 5 尺内、没有其他生物在你 5 尺内，且你的攻击检定没有{@variantrule 劣势|XPHB}，则你无需攻击检定上的{@variantrule 优势|XPHB}即可对该生物使用偷袭。偷袭的其他规则对你仍然适用。"
+			]
+		},
+		{
+			"ENG_name": "Swashbuckler",
+			"name": "剑客",
+			"source": "WoW",
+			"className": "潜行者",
+			"classSource": "WoW",
+			"subclassShortName": "剑客",
+			"subclassSource": "WoW",
+			"level": 3,
+			"entries": [
+				"{@i 以派头与敏捷滑入近战}",
+				"作为一名剑客，你专注于剑之艺术，为你的战斗风格注入速度、优雅与魅力\u2014\u2014再以精妙的派头收尾。你擅长单打独斗，你的招法让决斗看起来像一场华丽的表演。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "梦幻舞步|潜行者|WoW|剑客|WoW|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "潇洒无畏|潜行者|WoW|剑客|WoW|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Panache",
+			"name": "潇洒气质",
+			"source": "WoW",
+			"className": "潜行者",
+			"classSource": "WoW",
+			"subclassShortName": "剑客",
+			"subclassSource": "WoW",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"你练习了使用{@classFeature 偷袭|游荡者|XPHB|1|XPHB}的新方式。以下效果现列入你的{@classFeature 诡诈打击|游荡者|XPHB|5|XPHB}选项。",
+				{
+					"ENG_name": "Goad (Cost: 1d6)",
+					"name": "挑衅（消耗：1d6）",
+					"type": "entries",
+					"entries": [
+						"目标必须通过感知豁免，否则直到其下个回合结束，目标对非你目标的攻击检定具有{@variantrule 劣势|XPHB}，且不能对非你目标进行{@action opportunity attack|XPHB|借机攻击}。"
+					]
+				},
+				{
+					"ENG_name": "Awe (Cost: 3d6)",
+					"name": "威慑（消耗：3d6）",
+					"type": "entries",
+					"entries": [
+						"你 30 尺内每个由你选择的生物必须通过感知豁免，否则受{@condition 魅惑|XPHB}状态直到你的下个回合结束。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Dashing Strikes",
+			"name": "疾风连击",
+			"source": "WoW",
+			"className": "潜行者",
+			"classSource": "WoW",
+			"subclassShortName": "剑客",
+			"subclassSource": "WoW",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"你练习了使用{@classFeature 偷袭|游荡者|XPHB|1|XPHB}的新方式。以下效果现列入你的{@classFeature 诡诈打击|游荡者|XPHB|5|XPHB}选项。",
+				{
+					"ENG_name": "Invigorate (Cost: 2d6)",
+					"name": "鼓舞（消耗：2d6）",
+					"type": "entries",
+					"entries": [
+						"选择你 30 尺内一个可见生物。直到该生物下个回合结束，每当他进行攻击检定或豁免检定时，都可以掷{@dice 1d6}并将掷骰数值加入该攻击检定或豁免检定。"
+					]
+				},
+				{
+					"ENG_name": "Parrying Stance (Cost: 2d6)",
+					"name": "招架架势（消耗：2d6）",
+					"type": "entries",
+					"entries": [
+						"掷{@dice 1d6}。直到你的下个回合开始，你的 AC 获得等同于掷骰数值的加值。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Master Duelist",
+			"name": "决斗大师",
+			"source": "WoW",
+			"className": "潜行者",
+			"classSource": "WoW",
+			"subclassShortName": "剑客",
+			"subclassSource": "WoW",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"在你使用{@classFeature 偷袭|游荡者|XPHB|1|XPHB}后立即，如果目标与你相距 5 尺内且没有其他生物在你 5 尺内，你可以对同一目标再进行一次攻击。"
 			]
 		},
 		{

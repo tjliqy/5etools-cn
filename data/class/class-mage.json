@@ -14,38 +14,42 @@
 	},
 	"class": [
 		{
-			"name": "Mage",
+			"ENG_name": "Mage",
+			"name": "法师",
 			"alias": [
-				"Wizard"
+				"法师"
 			],
 			"source": "WoW",
 			"reskinOf": [
-				"Wizard|XPHB"
+				"法师|XPHB"
 			],
 			"_copy": {
-				"name": "Wizard",
+				"ENG_name": "Wizard",
+				"name": "法师",
 				"source": "XPHB"
 			},
 			"includeSubclassesFrom": [
-				"Wizard|XPHB"
+				"法师|XPHB"
 			],
-			"subclassTitle": "Mage Subclass",
+			"subclassTitle": "法师子职",
 			"hasFluff": true,
 			"hasFluffImages": true
 		}
 	],
 	"subclass": [
 		{
-			"name": "Evoker",
-			"shortName": "Evoker",
+			"ENG_name": "Evoker",
+			"name": "塑能师",
+			"shortName": "塑能师",
 			"source": "WoW",
-			"className": "Mage",
+			"className": "法师",
 			"classSource": "WoW",
 			"_copy": {
-				"name": "Evoker",
+				"ENG_name": "Evoker",
+				"name": "塑能师",
 				"source": "XPHB",
-				"shortName": "Evoker",
-				"className": "Wizard",
+				"shortName": "塑能师",
+				"className": "法师",
 				"classSource": "XPHB"
 			}
 		}

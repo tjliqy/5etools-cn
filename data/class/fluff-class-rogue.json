@@ -93,7 +93,7 @@
 									"type": "table",
 									"caption": "犯罪的快感",
 									"colLabels": [
-										"{@dice d6}",
+										"{@dice D6}",
 										"快感"
 									],
 									"colStyles": [
@@ -171,7 +171,7 @@
 									"type": "table",
 									"caption": "对手",
 									"colLabels": [
-										"{@dice d6}",
+										"{@dice D6}",
 										"挑战者"
 									],
 									"colStyles": [
@@ -248,7 +248,7 @@
 									"type": "table",
 									"caption": "恩人",
 									"colLabels": [
-										"{@dice d6}",
+										"{@dice D6}",
 										"恩人"
 									],
 									"colStyles": [
@@ -392,14 +392,16 @@
 			]
 		},
 		{
-			"name": "Rogue",
+			"ENG_name": "Rogue",
+			"name": "潜行者",
 			"source": "WoW",
 			"entries": [
 				{
+					"ENG_name": "Rogue",
+					"name": "潜行者",
 					"type": "section",
-					"name": "Rogue",
 					"entries": [
-						"Rogues are lethal assassins and masters of stealth, whose preferred tactics include ambushes from the shadows, lethally precise strikes, and combinations of attacks that soften the enemy up for a killing blow. For many rogues, their only code of conduct is their employment contract, and their honor is purchased in gold. Others are loyal to organizations such as Stormwind's shadowy SI:7, the rebellious Defias Brotherhood, or the Deathstalkers among the Forsaken."
+						"潜行者是致命的刺客与潜行大师，惯用的战术包括从暗影中伏击、致命的精准打击，以及为终结一击软化敌人的连绵攻势。对许多潜行者而言，唯一的行事准则就是雇佣契约，荣誉以黄金计价。另一些则忠于组织，如暴风城神秘的 SI:7、反叛的迪菲亚兄弟会，或被遗忘者中的死亡行者。"
 					]
 				}
 			],
@@ -412,7 +414,7 @@
 					},
 					"width": 1700,
 					"height": 709,
-					"title": "Worgen Rogue",
+					"title": "狼人潜行者",
 					"credit": "Blizzard Artist, Glenn Rane"
 				},
 				{

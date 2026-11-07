@@ -2328,7 +2328,7 @@
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
-						"replace": "原体蛇人",
+						"replace": "蛇人",
 						"with": "芬萨札",
 						"flags": "i"
 					}
@@ -4565,12 +4565,12 @@
 			"page": 35,
 			"_copy": {
 				"ENG_name": "Yuan-ti Pureblood",
-				"name": "纯血原体蛇人",
+				"name": "纯血蛇人",
 				"source": "MM",
 				"_mod": {
 					"*": {
 						"mode": "replaceTxt",
-						"replace": "原体蛇人",
+						"replace": "蛇人",
 						"with": "萨莉达",
 						"flags": "i"
 					}
@@ -4604,7 +4604,7 @@
 				"_templates": [
 					{
 						"ENG_name": "Yuan-ti Pureblood",
-						"name": "纯血原体蛇人",
+						"name": "纯血蛇人",
 						"source": "VGM"
 					}
 				],
@@ -5240,7 +5240,7 @@
 					"ENG_name": "Claws",
 					"name": "爪击",
 					"entries": [
-						"{@atk mw} 命中{@hit 2}，触及 5 尺，单一目标。{@h}2 ({@damage 1d4}) 点挥砍伤害。"
+						"{@atk mw} 命中{@hit 2}，触及5尺，单一目标。{@h}2（{@damage 1d4}）点挥砍伤害。"
 					]
 				},
 				{
@@ -5363,7 +5363,7 @@
 					"ENG_name": "Claws",
 					"name": "爪击",
 					"entries": [
-						"{@atk mw} 命中{@hit 2}，触及 5 尺，单一目标。{@h}2 ({@damage 1d4}) 点挥砍伤害。"
+						"{@atk mw} 命中{@hit 2}，触及5尺，单一目标。{@h}2（{@damage 1d4}）点挥砍伤害。"
 					]
 				},
 				{

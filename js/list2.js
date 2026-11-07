@@ -139,7 +139,7 @@ class _ListSearch {
 }
 
 export class List {
-	static _ENGLISH_NAME_COLUMN_WIDTH = 22;
+	static _ENGLISH_NAME_COLUMN_WIDTH = 15;
 	static _NAME_COLLATOR = new Intl.Collator("zh-CN-u-co-pinyin", {numeric: true, sensitivity: "base"});
 
 	static _DEFAULTS = {
@@ -603,7 +603,9 @@ export class List {
 			.map(ele => ({ele, width: this._getNameColumnWidth(ele)}))
 			.filter(({width}) => width != null);
 		const totalWidth = columns.reduce((total, {width}) => total + width, 0);
-		const factor = Math.min(1, (100 - this._ENGLISH_NAME_COLUMN_WIDTH) / totalWidth);
+		// Scale against at least the full row width so un-sized flex columns (e.g. the source column) retain their share,
+		// while still shrinking columns which already exceed the row width.
+		const factor = Math.min(1, (100 - this._ENGLISH_NAME_COLUMN_WIDTH) / Math.max(totalWidth, 100));
 		for (const {ele, width} of columns) {
 			this._setNameColumnWidth(ele, width * factor, {widthSubPx});
 			ele.style.minWidth = "0";

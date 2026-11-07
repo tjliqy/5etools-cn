@@ -2,7 +2,7 @@
 
 // in deployment, `IS_DEPLOYED = "<version number>";` should be set below.
 globalThis.IS_DEPLOYED = undefined;
-globalThis.VERSION_NUMBER = /* 5ETOOLS_VERSION__OPEN */"2.40.0"/* 5ETOOLS_VERSION__CLOSE */;
+globalThis.VERSION_NUMBER = /* 5ETOOLS_VERSION__OPEN */"2.40.0-cn.1"/* 5ETOOLS_VERSION__CLOSE */;
 globalThis.DEPLOYED_IMG_ROOT = "/img/";
 // for the roll20 script to set
 globalThis.IS_VTT = false;
@@ -3512,7 +3512,8 @@ globalThis.SearchUtil = class {
 		//   - trimming (e.g. `the fire.` -> `the fire`)
 		//   - stop-word filtering (e.g. `the fire` -> `fire`)
 		//   - (stemming (e.g. `running` -> `run`))
-		if (!elasticSearch.pipeline.get().includes(fnFold)) elasticSearch.pipeline.before(elasticlunr.trimmer, fnFold);
+		const trimmer = elasticlunr.zh?.trimmer || elasticlunr.trimmer;
+		if (!elasticSearch.pipeline.get().includes(fnFold)) elasticSearch.pipeline.before(trimmer, fnFold);
 
 		if (!isRemoveStemmer) return;
 

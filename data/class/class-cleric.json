@@ -231,15 +231,15 @@
 				{
 					"title": "每环法术位",
 					"colLabels": [
-						"{@filter 1st|spells|level=1|class=牧师}",
-						"{@filter 2nd|spells|level=2|class=牧师}",
-						"{@filter 3rd|spells|level=3|class=牧师}",
-						"{@filter 4th|spells|level=4|class=牧师}",
-						"{@filter 5th|spells|level=5|class=牧师}",
-						"{@filter 6th|spells|level=6|class=牧师}",
-						"{@filter 7th|spells|level=7|class=牧师}",
-						"{@filter 8th|spells|level=8|class=牧师}",
-						"{@filter 9th|spells|level=9|class=牧师}"
+						"{@filter 1环|spells|level=1|class=牧师}",
+						"{@filter 2环|spells|level=2|class=牧师}",
+						"{@filter 3环|spells|level=3|class=牧师}",
+						"{@filter 4环|spells|level=4|class=牧师}",
+						"{@filter 5环|spells|level=5|class=牧师}",
+						"{@filter 6环|spells|level=6|class=牧师}",
+						"{@filter 7环|spells|level=7|class=牧师}",
+						"{@filter 8环|spells|level=8|class=牧师}",
+						"{@filter 9环|spells|level=9|class=牧师}"
 					],
 					"rowsSpellProgression": [
 						[
@@ -8959,7 +8959,7 @@
 				},
 				{
 					"ENG_name": "Distract",
-					"name": "干扰",
+					"name": "牵制",
 					"type": "entries",
 					"entries": [
 						"当你和你的幻象都在同一个生物身边 5 尺内，且该生物可以看见幻象时，由于幻象对目标造成的干扰，你对其进行的攻击检定具有{@variantrule 优势|XPHB}。"

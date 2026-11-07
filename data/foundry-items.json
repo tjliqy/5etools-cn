@@ -567,7 +567,7 @@
 					"ENG_name": "Cast Charm Monster",
 					"name": "施放魅惑怪物",
 					"type": "cast",
-					"description": "当你手持此书时，你可以从中施放{@i 魅惑怪物}法术（法术豁免DC 15）。如果目标不是类人生物，则其对抗此法术的豁免检定具有劣势。直到下一次拂晓前，你无法再次以此方式施放该法术。",
+					"description": "当你手持此书时，你可以从中施放{@spell 魅惑怪物|XPHB}法术（法术豁免DC 15）。如果目标不是类人生物，则其对抗此法术的豁免检定具有劣势。直到下一次拂晓前，你无法再次以此方式施放该法术。",
 					"activation": {
 						"type": "action"
 					},
@@ -1888,7 +1888,7 @@
 					"ENG_name": "Third Command Word",
 					"name": "第三命令语",
 					"type": "cast",
-					"description": "消耗5发充能以从风箱施放{@i 死云术}（法术豁免DC 17）。",
+					"description": "消耗5发充能以从风箱施放{@spell 死云术|XPHB}（法术豁免DC 17）。",
 					"activation": {
 						"type": "action"
 					},
@@ -30582,7 +30582,7 @@
 			"activities": [
 				{
 					"type": "cast",
-					"description": "在关闭匣盖并消耗价值至少100金币的钻石尘后，对匣内生物施放{@i 克隆术}。",
+					"description": "在关闭匣盖并消耗价值至少100金币的钻石尘后，对匣内生物施放{@spell 克隆术|XPHB}。",
 					"activation": {
 						"type": "action"
 					},
@@ -30600,7 +30600,7 @@
 					"ENG_name": "Grow Clone",
 					"name": "培育克隆体",
 					"type": "enchant",
-					"description": "在{@i 克隆术}法术的施法时间完成后使用此活动，以开始克隆体120日的生长周期并密封仿制匣。",
+					"description": "在{@spell 克隆术|XPHB}法术的施法时间完成后使用此活动，以开始克隆体120日的生长周期并密封仿制匣。",
 					"activation": {
 						"type": "special",
 						"condition": "在克隆术法术的施法时间完成后"

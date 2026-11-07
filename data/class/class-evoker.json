@@ -17,138 +17,147 @@
 	},
 	"class": [
 		{
-			"name": "Evoker",
+			"ENG_name": "Evoker",
+			"name": "唤魔师",
 			"alias": [
-				"Sorcerer"
+				"术士"
 			],
 			"source": "WoW",
 			"reskinOf": [
-				"Sorcerer|XPHB"
+				"术士|XPHB"
 			],
 			"isHero": true,
 			"_copy": {
-				"name": "Sorcerer",
+				"ENG_name": "Sorcerer",
+				"name": "术士",
 				"source": "XPHB"
 			},
 			"includeSubclassesFrom": [
-				"Sorcerer|XPHB"
+				"术士|XPHB"
 			],
-			"subclassTitle": "Evoker Subclass",
+			"subclassTitle": "唤魔师子职",
 			"hasFluff": true,
 			"hasFluffImages": true
 		}
 	],
 	"subclass": [
 		{
-			"name": "Draconic Sorcery",
-			"shortName": "Draconic",
+			"ENG_name": "Draconic Sorcery",
+			"name": "龙族术法",
+			"shortName": "龙族血脉",
 			"source": "WoW",
-			"className": "Evoker",
+			"className": "唤魔师",
 			"classSource": "WoW",
 			"_copy": {
-				"name": "Draconic Sorcery",
+				"ENG_name": "Draconic Sorcery",
+				"name": "龙族术法",
 				"source": "XPHB",
-				"shortName": "Draconic",
-				"className": "Sorcerer",
+				"shortName": "龙族血脉",
+				"className": "术士",
 				"classSource": "XPHB"
 			},
 			"additionalSpells": [
 				{
-					"name": "Augmentation",
+					"ENG_name": "Augmentation",
+					"name": "增辉",
 					"ability": "cha",
 					"prepared": {
 						"3": [
-							"chromatic orb|xphb",
-							"dragon's breath|xphb",
-							"ebon might|wow",
-							"eruption|wow"
+							"繁彩球|xphb",
+							"龙息术|xphb",
+							"黑檀之力|wow",
+							"喷发|wow"
 						],
 						"5": [
-							"fly|xphb",
-							"blistering scales|wow"
+							"飞行术|xphb",
+							"灼痛之鳞|wow"
 						],
 						"7": [
-							"arcane eye|xphb",
-							"upheaval|wow"
+							"秘法眼|xphb",
+							"剧变|wow"
 						],
 						"9": [
-							"summon dragon|xphb",
-							"breath of eons|wow"
+							"龙类召唤术|xphb",
+							"万世龙息|wow"
 						]
 					}
 				},
 				{
-					"name": "Devastation",
+					"ENG_name": "Devastation",
+					"name": "湮灭",
 					"ability": "cha",
 					"prepared": {
 						"3": [
-							"chromatic orb|xphb",
-							"dragon's breath|xphb",
-							"azure strike|wow",
-							"scorching ray|xphb"
+							"繁彩球|xphb",
+							"龙息术|xphb",
+							"蔚蓝打击|wow",
+							"灼热射线|xphb"
 						],
 						"5": [
-							"fly|xphb",
-							"fireball|xphb"
+							"飞行术|xphb",
+							"火球术|xphb"
 						],
 						"7": [
-							"arcane eye|xphb",
-							"emberstorm|wow"
+							"秘法眼|xphb",
+							"余烬风暴|wow"
 						],
 						"9": [
-							"summon dragon|xphb",
-							"shattering star|wow"
+							"龙类召唤术|xphb",
+							"碎裂之星|wow"
 						]
 					}
 				},
 				{
-					"name": "Preservation",
+					"ENG_name": "Preservation",
+					"name": "恩护",
 					"ability": "cha",
 					"prepared": {
 						"3": [
-							"chromatic orb|xphb",
-							"dragon's breath|xphb",
-							"dream breath|wow",
-							"living flame|wow"
+							"繁彩球|xphb",
+							"龙息术|xphb",
+							"梦境吐息|wow",
+							"活焰|wow"
 						],
 						"5": [
-							"fly|xphb",
-							"emerald blossom|wow"
+							"飞行术|xphb",
+							"翡翠之花|wow"
 						],
 						"7": [
-							"arcane eye|xphb",
-							"time dilation|wow"
+							"秘法眼|xphb",
+							"时间膨胀|wow"
 						],
 						"9": [
-							"summon dragon|xphb",
-							"dream flight|wow"
+							"龙类召唤术|xphb",
+							"梦境飞行|wow"
 						]
 					}
 				}
 			],
 			"subclassFeatures": [
-				"Draconic Sorcery|Evoker|WoW|Draconic|WoW|3",
-				"Elemental Affinity|Sorcerer|XPHB|Draconic|XPHB|6",
-				"Dragon Wings|Sorcerer|XPHB|Draconic|XPHB|14",
-				"Dragon Companion|Sorcerer|XPHB|Draconic|XPHB|18"
+				"龙族术法|唤魔师|WoW|龙族血脉|WoW|3",
+				"元素亲和|术士|XPHB|龙族血脉|XPHB|6",
+				"龙翼|术士|XPHB|龙族血脉|XPHB|14",
+				"龙伴|术士|XPHB|龙族血脉|XPHB|18"
 			]
 		}
 	],
 	"subclassFeature": [
 		{
-			"name": "Draconic Sorcery",
+			"ENG_name": "Draconic Sorcery",
+			"name": "龙族术法",
 			"source": "WoW",
-			"className": "Evoker",
+			"className": "唤魔师",
 			"classSource": "WoW",
-			"subclassShortName": "Draconic",
+			"subclassShortName": "龙族血脉",
 			"subclassSource": "WoW",
 			"level": 3,
 			"_copy": {
-				"name": "Draconic Sorcery",
+				"ENG_name": "Draconic Sorcery",
+				"name": "龙族术法",
 				"source": "XPHB",
-				"className": "Sorcerer",
+				"className": "术士",
 				"classSource": "XPHB",
-				"subclassShortName": "Draconic",
+				"subclassShortName": "龙族血脉",
 				"subclassSource": "XPHB",
 				"level": 3,
 				"_mod": {
@@ -160,7 +169,7 @@
 						"items": [
 							{
 								"type": "refSubclassFeature",
-								"subclassFeature": "Evoker Spells|Evoker|WoW|Draconic|WoW|3"
+								"subclassFeature": "唤魔师法术|唤魔师|WoW|龙族血脉|WoW|3"
 							}
 						]
 					}
@@ -168,24 +177,25 @@
 			}
 		},
 		{
-			"name": "Evoker Spells",
+			"ENG_name": "Evoker Spells",
+			"name": "唤魔师法术",
 			"source": "WoW",
-			"className": "Evoker",
+			"className": "唤魔师",
 			"classSource": "WoW",
-			"subclassShortName": "Draconic",
+			"subclassShortName": "龙族血脉",
 			"subclassSource": "WoW",
 			"level": 3,
 			"entries": [
-				"When you reach a Sorcerer level specified in the Evoker Spells table, you thereafter always have the spells in the Spells (All) column prepared. You also have the additional spells listed in one other column of your choice.",
+				"当你达到唤魔师法术表中列出的术士等级后，你始终准备好\"法术（全部）\"栏中的法术。你还拥有另外一栏（由你选择）中列出的额外法术。",
 				{
 					"type": "table",
-					"caption": "Evoker Spells",
+					"caption": "唤魔师法术",
 					"colLabels": [
-						"Sorcerer Level",
-						"Spells (All)",
-						"Spells (Augmentation)",
-						"Spells (Devastation)",
-						"Spells (Preservation)"
+						"术士等级",
+						"法术（全部）",
+						"法术（增辉）",
+						"法术（湮灭）",
+						"法术（恩护）"
 					],
 					"colStyles": [
 						"col-1-2 text-center",
@@ -197,31 +207,31 @@
 					"rows": [
 						[
 							"3",
-							"{@spell Chromatic Orb|XPHB}, {@spell Dragon's Breath|XPHB}",
-							"{@spell Ebon Might|WoW}, {@spell Eruption|WoW}",
-							"{@spell Azure Strike|WoW}, {@spell Scorching Ray|XPHB}",
-							"{@spell Dream Breath|WoW}, {@spell Living Flame|WoW}"
+							"{@spell 繁彩球|XPHB}, {@spell 龙息术|XPHB}",
+							"{@spell 黑檀之力|WoW}, {@spell 喷发|WoW}",
+							"{@spell 蔚蓝打击|WoW}, {@spell 灼热射线|XPHB}",
+							"{@spell 梦境吐息|WoW}, {@spell 活焰|WoW}"
 						],
 						[
 							"5",
-							"{@spell Fly|XPHB}",
-							"{@spell Blistering Scales|WoW}",
-							"{@spell Fireball|XPHB}",
-							"{@spell Emerald Blossom|WoW}"
+							"{@spell 飞行术|XPHB}",
+							"{@spell 灼痛之鳞|WoW}",
+							"{@spell 火球术|XPHB}",
+							"{@spell 翡翠之花|WoW}"
 						],
 						[
 							"7",
-							"{@spell Arcane Eye|XPHB}",
-							"{@spell Upheaval|WoW}",
-							"{@spell Emberstorm|WoW}",
-							"{@spell Time Dilation|WoW}"
+							"{@spell 秘法眼|XPHB}",
+							"{@spell 剧变|WoW}",
+							"{@spell 余烬风暴|WoW}",
+							"{@spell 时间膨胀|WoW}"
 						],
 						[
 							"9",
-							"{@spell Summon Dragon|XPHB}",
-							"{@spell Breath of Eons|WoW}",
-							"{@spell Shattering Star|WoW}",
-							"{@spell Dream Flight|WoW}"
+							"{@spell 龙类召唤术|XPHB}",
+							"{@spell 万世龙息|WoW}",
+							"{@spell 碎裂之星|WoW}",
+							"{@spell 梦境飞行|WoW}"
 						]
 					]
 				}

@@ -254,11 +254,11 @@
 				{
 					"title": "每环法术位",
 					"colLabels": [
-						"{@filter 1st|spells|level=1|class=游侠}",
-						"{@filter 2nd|spells|level=2|class=游侠}",
-						"{@filter 3rd|spells|level=3|class=游侠}",
-						"{@filter 4th|spells|level=4|class=游侠}",
-						"{@filter 5th|spells|level=5|class=游侠}"
+						"{@filter 1环|spells|level=1|class=游侠}",
+						"{@filter 2环|spells|level=2|class=游侠}",
+						"{@filter 3环|spells|level=3|class=游侠}",
+						"{@filter 4环|spells|level=4|class=游侠}",
+						"{@filter 5环|spells|level=5|class=游侠}"
 					],
 					"rowsSpellProgression": [
 						[
@@ -3515,7 +3515,7 @@
 			"entries": [
 				"{@i 15级妖精漫游者特性}",
 				"你可以在眨眼之间穿梭妖精荒原以进行移动：你可以免费施展{@spell 迷踪步}而不需要消耗法术位，次数等同于你的感知调整值（至少一次），在完成一次长休后，你重获所有的已消耗的次数。",
-				"另外，每当你施展{@i 迷踪步}时，你可以携带一个五尺以内你可见的自愿生物与你一同传送。那个生物会被传送到由你选择的，位于你的目标位置周围五尺范围内的一处未被占据的空间内。"
+				"另外，每当你施展{@spell 迷踪步}时，你可以携带一个五尺以内你可见的自愿生物与你一同传送。那个生物会被传送到由你选择的，位于你的目标位置周围五尺范围内的一处未被占据的空间内。"
 			]
 		},
 		{

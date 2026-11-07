@@ -6,10 +6,11 @@
 	},
 	"monsterFluff": [
 		{
-			"name": "Blood-Queen Lana'thel",
+			"ENG_name": "Blood-Queen Lana'thel",
+			"name": "鲜血女王兰娜瑟尔",
 			"source": "ICC",
 			"entries": [
-				"Less than a decade ago, Lana'thel marched under Kael'thas Sunstrider in an attempt to defeat the Lich King and claim revenge against the Scourge for the losses she suffered in the Third War. But Arthas defeated the blood elf forces, and the survivors scattered across the frozen wastes of Northrend. Arthas hunted each one down, and he personally raised Lana'thel to undeath to be the queen of the San'layn."
+				"不到十年前，兰娜瑟尔追随凯尔萨斯·逐日者出征，试图击败巫妖王，为她在第三次战争中蒙受的损失向天灾军团复仇。但阿尔萨斯击溃了血精灵部队，幸存者四散逃入诺森德的冰封荒原。阿尔萨斯将他们一一猎杀，并亲手将兰娜瑟尔复活为亡灵，立她为萨莱因的女王。"
 			],
 			"images": [
 				{
@@ -20,35 +21,37 @@
 					},
 					"width": 1700,
 					"height": 1124,
-					"title": "Blood-Queen Lana'thel",
+					"title": "鲜血女王兰娜瑟尔",
 					"credit": "Arthur Bozonnet"
 				}
 			]
 		},
 		{
-			"name": "Darkfallen Blood Prince",
+			"ENG_name": "Darkfallen Blood Prince",
+			"name": "黑暗堕落者鲜血王子",
 			"source": "ICC",
 			"entries": [
-				"The three princes of the darkfallen\u2014Keleseth, Taldaram, and Valanar\u2014are lieutenants of the {@creature Lich King Arthas|WoW|Lich King} who rule fiefdoms in Northrend in Arthas's name. Prince Keleseth ruled the southeastern part of the continent as Scourge overlord of the Howling Fjord and served as liaison to the vrykul in Utgarde Keep. The Lich King sent Prince Taldaram to the nerubian city of Ahn'kahet to collect ancient relics to empower the Scourge. Prince Valanar, Keleseth's brother, ruled over the Borean Tundra from the necropolis of Naxxanar and manipulated the Alliance leadership in Valiance Keep by disguising himself as a human adviser named Counselor Talbot."
+				"黑暗堕落者的三位王子\u2014\u2014凯雷塞斯、塔达拉姆与瓦拉纳\u2014\u2014是{@creature 巫妖王阿尔萨斯|WoW|巫妖王}麾下的副手，以阿尔萨斯之名统治诺森德境内的封地。凯雷塞斯王子曾以嚎风峡湾天灾领主的身份统治这片大陆的东南部，并担任与乌特加德城堡维库人的联络官。巫妖王派遣塔达拉姆王子前往蛛魔城市安卡赫特收集古代遗物，用以增强天灾军团的力量。凯雷塞斯的兄弟瓦拉纳王子以纳克萨纳尔浮空城为治所统治北风苔原，并化名人类顾问塔尔伯特潜入无畏要塞，操纵联盟的领导层。"
 			]
 		},
 		{
-			"name": "Deathbringer Saurfang",
+			"ENG_name": "Deathbringer Saurfang",
+			"name": "死亡使者萨鲁法尔",
 			"source": "ICC",
 			"entries": [
 				{
 					"type": "quote",
 					"entries": [
-						"With every Horde and Alliance soldier that has fallen in this pointless squabble of yours, the Lich King's armies have grown. Even now the val'kyr work to raise your fallen as Scourge. Things are about to get much worse. Taste the power the Lich King has bestowed on me!"
+						"\"随着你们的部落与联盟士兵在这场毫无意义的争斗中不断倒下，巫妖王的大军日益壮大。瓦格里正在把你们的阵亡者变为天灾战士。你们就要大祸临头了。尝尝巫妖王赐予我的力量吧！\""
 					]
 				},
 				{
 					"type": "quote",
 					"entries": [
-						"Join me, father. Join me and we will crush this world in the name of the Scourge\u2014for the glory of the Lich King!"
+						"\"加入我，父亲。让我们一同以天灾之名来粉碎这个渺小的世界\u2014\u2014巫妖王万岁！\""
 					]
 				},
-				"A young orc warrior named Dranosh Saurfang commanded the Horde's Warsong Offensive in Northrend and led the Horde forces at the Battle of the Wrathgate. Born a Mag'har orc on Draenor, uncorrupted by demonic blood, Dranosh held firm to the ideals of honor and wisdom. He fell to the {@creature Lich King Arthas|WoW|Lich King} at the Wrathgate, and Arthas raised him as a death knight."
+				"一位名叫德拉诺什·萨鲁法尔的年轻兽人战士曾统领部落的战歌远征军在诺森德作战，并在天谴之门之战中率领部落军队。他生于德拉诺，是未被恶魔之血玷污的玛格汉兽人，坚守荣耀与睿智的理想。他在天谴之门败于{@creature 巫妖王阿尔萨斯|WoW|巫妖王}之手，而阿尔萨斯将他复活为死亡骑士。"
 			],
 			"images": [
 				{
@@ -59,16 +62,17 @@
 					},
 					"width": 1700,
 					"height": 1093,
-					"title": "Deathbringer Saurfang",
+					"title": "死亡使者萨鲁法尔",
 					"credit": "Alex Horley-Orlandelli"
 				}
 			]
 		},
 		{
-			"name": "Deathspeaker High Priest",
+			"ENG_name": "Deathspeaker High Priest",
+			"name": "亡语高阶祭司",
 			"source": "ICC",
 			"entries": [
-				"Lady Deathwhisper's high priests are Undead {@book nerubians|WoW|7|Nerubians} empowered with divine magic by their devotion to the Cult of the Damned. Towering about 18 feet tall on their four spiderlike legs, they wear priestly vestments and elaborate headdresses that make them seem even taller."
+				"亡语者女士麾下的高阶祭司是亡灵{@book 蛛魔|WoW|7|蛛魔}，他们因对诅咒神教的虔信而获得了神圣魔法的赋能。他们以四条蛛形长腿立身，高达约 18 尺，身着祭司法衣、头戴繁复的头冠，显得更加高大。"
 			],
 			"images": [
 				{
@@ -79,16 +83,17 @@
 					},
 					"width": 850,
 					"height": 1557,
-					"title": "Deathspeaker High Priest",
+					"title": "亡语高阶祭司",
 					"credit": "Luca Zontini"
 				}
 			]
 		},
 		{
-			"name": "Festergut",
+			"ENG_name": "Festergut",
+			"name": "烂肠",
 			"source": "ICC",
 			"entries": [
-				"Festergut is one of two {@creature Abomination|WoW|abominations} created by {@creature Professor Putricide, Phase 1|ICC|Professor Putricide}. Festergut has a childlike mind, calls Putricide \"Daddy,\" and seems to cherish its pet {@creature plague-dog|ICC}, Stinky, but it shares Putricide's loathing of all living things."
+				"烂肠是{@creature 普崔塞德教授（阶段一）|ICC|普崔塞德教授}创造的两具{@creature 憎恶|WoW|憎恶}之一。烂肠有着孩童般的心智，管普崔塞德教授叫\"爸爸\"，似乎十分疼爱自己的宠物{@creature 天灾犬|ICC}大臭，但它与普崔塞德一样，对一切活物深恶痛绝。"
 			],
 			"images": [
 				{
@@ -104,10 +109,11 @@
 			]
 		},
 		{
-			"name": "Frost Wyrm",
+			"ENG_name": "Frost Wyrm",
+			"name": "冰霜巨龙",
 			"source": "ICC",
 			"entries": [
-				"Frost wyrms are Undead dragons created from the skeletal remains of adult dragons of the {@book blue dragonflight|WoW|7|Blue Dragonflight}. The first Lich King, Ner'zhul, animated the remains of long-dead dragons who fell during the War of the Ancients, and {@creature Lich King Arthas|WoW|Arthas} continued that practice when he raised Sindragosa to become the frost queen."
+				"冰霜巨龙是由{@book 蓝龙军团|WoW|7|蓝龙军团}成年巨龙的骸骨所制的亡灵巨龙。第一代巫妖王耐奥祖驱动了上古之战中阵亡已久的巨龙遗骸，而{@creature 巫妖王阿尔萨斯|WoW|阿尔萨斯}延续了这一做法，将辛达苟萨复活为冰霜女王。"
 			],
 			"images": [
 				{
@@ -123,16 +129,17 @@
 			]
 		},
 		{
-			"name": "Lady Deathwhisper",
+			"ENG_name": "Lady Deathwhisper",
+			"name": "亡语者女士",
 			"source": "ICC",
 			"entries": [
 				{
 					"type": "quote",
 					"entries": [
-						"You can see through the fog that hangs over this world like a shroud, and grasp where true power lies. Fix your eyes upon your crude hands: the sinew, the soft meat, the dark blood coursing within. It is a weakness, a crippling flaw\u2014a joke played by the Creators upon their own creations. The sooner you come to accept your condition as a defect, the sooner you will find yourselves in a position to transcend it. Through our Master, all things are possible. His power is without limit, and his will unbending. Those who oppose him will be destroyed utterly, and those who serve\u2014who serve wholly, unquestioningly, with utter devotion of mind and soul\u2014will be elevated to heights beyond your ken."
+						"\"你们能够看穿遮蔽世界的迷雾，掌握真正的力量。好好看看你粗陋的手：看看那肌腱、软肉和其中的黑暗之血。多么的软弱和不堪......这真是造物主的玩笑。你只有承认自己必然的失败，才有可能早日获得更强的力量，重获新生。我的主人是无所不能的，他有无比强大的力量，不可抗拒的意志。反抗者必将被毁灭。而那些全身心的，坚定不移的，有虔诚的思想与灵魂的效忠者们，必将得到超乎你们想象范畴的强大的力量。\""
 					]
 				},
-				"Lady Deathwhisper is the Supreme Overseer of the Cult of the Damned, the {@creature Lich King Arthas|WoW|Lich King's} cult of death worshippers. Her oratorical skills and electric personality make her an ideal evangelist for the cult's twisted message\u2014that undeath is the only path to true power, free from the weakness of mortal flesh."
+				"亡语者女士是诅咒神教的最高监督者，这个教派正是{@creature 巫妖王阿尔萨斯|WoW|巫妖王}麾下崇拜死亡的邪教。她的雄辩之才与摄人心魄的魅力，使她成为散布教派扭曲信条的理想布道者\u2014\u2014那信条便是：亡灵化是通往真正力量的唯一道路，能让人摆脱凡人血肉的软弱。"
 			],
 			"images": [
 				{
@@ -143,7 +150,7 @@
 					},
 					"width": 850,
 					"height": 1405,
-					"title": "Lady Deathwhisper",
+					"title": "亡语者女士",
 					"credit": "Greg Staples"
 				},
 				{
@@ -154,15 +161,16 @@
 					},
 					"width": 1700,
 					"height": 1392,
-					"title": "Lady Deathwhisper"
+					"title": "亡语者女士"
 				}
 			]
 		},
 		{
-			"name": "Lord Marrowgar",
+			"ENG_name": "Lord Marrowgar",
+			"name": "玛洛加尔领主",
 			"source": "ICC",
 			"entries": [
-				"Lord Marrowgar is the guardian of the Frozen Throne within the Spire Chamber. Pieced together by the {@creature Lich King Arthas|WoW|Lich King} from the bones of a thousand vanquished adventurers, Marrowgar wields the power of the throne itself."
+				"玛洛加尔领主是冰冠之塔大厅内冰封王座的守卫。它由{@creature 巫妖王阿尔萨斯|WoW|巫妖王}以一千名败亡冒险者的骸骨拼合而成，玛洛加尔因此得以施展王座本身的力量。"
 			],
 			"images": [
 				{
@@ -173,16 +181,17 @@
 					},
 					"width": 1700,
 					"height": 1750,
-					"title": "Lord Marrowgar",
+					"title": "玛洛加尔领主",
 					"credit": "James Ryman"
 				}
 			]
 		},
 		{
-			"name": "Plague-Dog",
+			"ENG_name": "Plague-Dog",
+			"name": "天灾犬",
 			"source": "ICC",
 			"entries": [
-				"Plague-dogs, also called zombie dogs, are a form of Scourge abomination pieced together from animal parts rather than pieces of humanoid flesh. The first of their kind, a horror called Gluth, was created to serve as a guardian in the necropolis of Naxxramas. {@creature Professor Putricide, Phase 1|ICC|Professor Putricide} created two more\u2014Precious and Stinky\u2014apparently to serve as pets to his abomination \"children,\" {@creature Festergut|ICC} and {@creature Rotface|ICC}."
+				"天灾犬又称丧尸犬，是一种用动物肢体而非类人生物血肉拼合而成的天灾军团憎恶。这一族群的始祖是一头名为格拉斯的怪物，它被创造出来在纳克萨玛斯浮空城中担任守卫。{@creature 普崔塞德教授（阶段一）|ICC|普崔塞德教授}后来又造了两只\u2014\u2014小宝与大臭\u2014\u2014显然是给他那些憎恶\"孩子\"{@creature 烂肠|ICC}和{@creature 腐面|ICC}充当宠物。"
 			],
 			"images": [
 				{
@@ -193,16 +202,17 @@
 					},
 					"width": 861,
 					"height": 1000,
-					"title": "Plague-Dog",
+					"title": "天灾犬",
 					"credit": "Luke Mancini"
 				}
 			]
 		},
 		{
-			"name": "Plagueworks Ooze",
+			"ENG_name": "Plagueworks Ooze",
+			"name": "天灾工厂软泥怪",
 			"source": "ICC",
 			"entries": [
-				"{@creature Professor Putricide, Phase 1|ICC|Professor Putricide's} ooze lab is a workshop for the creation of ooze monsters. Putricide's abomination {@creature Rotface|ICC} infects opponents with a mutating disorder that results in the victim expelling a Plagueworks ooze; the oozes seek each other out and merge to form larger and larger oozes. The creation of an ooze large enough to engulf the whole world is one path toward eliminating life on Azeroth that Professor Putricide has envisioned."
+				"{@creature 普崔塞德教授（阶段一）|ICC|普崔塞德教授}的软泥实验室是一座制造软泥怪物的工坊。普崔塞德的憎恶{@creature 腐面|ICC}会用一种致变紊乱感染敌人，使受害者排出一只天灾工厂软泥怪；这些软泥怪会彼此靠拢，融合成越来越大的软泥怪。制造一团大到足以吞没整个世界的软泥，正是普崔塞德教授构想中消灭艾泽拉斯生命的路径之一。"
 			],
 			"images": [
 				{
@@ -213,16 +223,18 @@
 					},
 					"width": 774,
 					"height": 1000,
-					"title": "Plagueworks Ooze",
+					"title": "天灾工厂软泥怪",
 					"credit": "Chris Rahn"
 				}
 			]
 		},
 		{
-			"name": "Prince Keleseth",
+			"ENG_name": "Prince Keleseth",
+			"name": "凯雷塞斯王子",
 			"source": "ICC",
 			"_copy": {
-				"name": "Darkfallen Blood Prince",
+				"ENG_name": "Darkfallen Blood Prince",
+				"name": "黑暗堕落者鲜血王子",
 				"source": "ICC"
 			},
 			"images": [
@@ -234,16 +246,18 @@
 					},
 					"width": 750,
 					"height": 1000,
-					"title": "Prince Keleseth",
+					"title": "凯雷塞斯王子",
 					"credit": "Vladimir Kafanov"
 				}
 			]
 		},
 		{
-			"name": "Prince Taldaram",
+			"ENG_name": "Prince Taldaram",
+			"name": "塔达拉姆王子",
 			"source": "ICC",
 			"_copy": {
-				"name": "Darkfallen Blood Prince",
+				"ENG_name": "Darkfallen Blood Prince",
+				"name": "黑暗堕落者鲜血王子",
 				"source": "ICC"
 			},
 			"images": [
@@ -255,16 +269,18 @@
 					},
 					"width": 750,
 					"height": 1000,
-					"title": "Prince Taldaram",
+					"title": "塔达拉姆王子",
 					"credit": "Arthur Gimaldinov"
 				}
 			]
 		},
 		{
-			"name": "Prince Valanar",
+			"ENG_name": "Prince Valanar",
+			"name": "瓦拉纳王子",
 			"source": "ICC",
 			"_copy": {
-				"name": "Darkfallen Blood Prince",
+				"ENG_name": "Darkfallen Blood Prince",
+				"name": "黑暗堕落者鲜血王子",
 				"source": "ICC"
 			},
 			"images": [
@@ -276,16 +292,17 @@
 					},
 					"width": 750,
 					"height": 1000,
-					"title": "Prince Valanar",
+					"title": "瓦拉纳王子",
 					"credit": "Arthur Bozonnet"
 				}
 			]
 		},
 		{
-			"name": "Professor Putricide, Phase 1",
+			"ENG_name": "Professor Putricide, Phase 1",
+			"name": "普崔塞德教授（阶段一）",
 			"source": "ICC",
 			"entries": [
-				"Professor Putricide is one of the evil geniuses responsible for creating innovative ways to spread the Scourge, destroy the living, and create new undead soldiers for the {@creature Lich King Arthas|WoW|Lich King's} armies. His alchemical research focuses on toxic gases and mutagenic slimes."
+				"普崔塞德教授是那些邪恶天才中的一员，专门为{@creature 巫妖王阿尔萨斯|WoW|巫妖王}的大军构思新颖的手段，以扩散天灾军团、毁灭生者、制造新的亡灵士兵。他的炼金研究专注于毒气与致变软泥。"
 			],
 			"images": [
 				{
@@ -296,7 +313,7 @@
 					},
 					"width": 853,
 					"height": 1000,
-					"title": "Professor Putricide, Phase 1",
+					"title": "普崔塞德教授（阶段一）",
 					"credit": "Mike Sass"
 				},
 				{
@@ -307,24 +324,27 @@
 					},
 					"width": 1700,
 					"height": 1198,
-					"title": "Professor Putricide",
+					"title": "普崔塞德教授",
 					"credit": "Ben Olson"
 				}
 			]
 		},
 		{
-			"name": "Professor Putricide, Phase 2",
+			"ENG_name": "Professor Putricide, Phase 2",
+			"name": "普崔塞德教授（阶段二）",
 			"source": "ICC",
 			"_copy": {
-				"name": "Professor Putricide, Phase 1",
+				"ENG_name": "Professor Putricide, Phase 1",
+				"name": "普崔塞德教授（阶段一）",
 				"source": "ICC"
 			}
 		},
 		{
-			"name": "Pustulating Horror",
+			"ENG_name": "Pustulating Horror",
+			"name": "毒脓恐魔",
 			"source": "ICC",
 			"entries": [
-				"The pustulating horrors found in Icecrown Citadel are one variety of plague eruptors\u2014oversize zombies designed to spread horror, chaos, and the undead plague as part of Scourge armies. The bloated sores across a pustulating horror's body erupt with toxic plague whenever the horror is hit in combat, and it explodes in a fiery inferno when it is killed."
+				"冰冠堡垒中的毒脓恐魔是天灾喷发者的一种\u2014\u2014这类超大号丧尸被设计用来随天灾军团作战，散播恐怖、混乱与亡灵瘟疫。毒脓恐魔在战斗中受到攻击时，周身肿胀的脓疮便会喷出剧毒瘟疫；而被杀死时，它会在一片烈焰火海中轰然爆炸。"
 			],
 			"images": [
 				{
@@ -337,10 +357,11 @@
 			]
 		},
 		{
-			"name": "Rotface",
+			"ENG_name": "Rotface",
+			"name": "腐面",
 			"source": "ICC",
 			"entries": [
-				"Rotface is one of two {@creature Abomination|WoW|abominations} created by {@creature Professor Putricide, Phase 1|ICC|Professor Putricide}. Rotface has a childlike mind and voice and calls Putricide \"Daddy.\" It is devoted to its pet {@creature plague-dog|ICC}, Precious, and erupts in fury if any harm comes to the creature. It also despises the living and seeks to spread Putricide's mutated slimes to wipe them out."
+				"腐面是{@creature 普崔塞德教授（阶段一）|ICC|普崔塞德教授}创造的两具{@creature 憎恶|WoW|憎恶}之一。腐面有着孩童般的心智和嗓音，管普崔塞德教授叫\"爸爸\"。它深爱自己的宠物{@creature 天灾犬|ICC}小宝，一旦小宝受到伤害便会勃然大怒。它同样蔑视活物，试图散播普崔塞德的畸变软泥将其斩尽杀绝。"
 			],
 			"images": [
 				{
@@ -351,16 +372,17 @@
 					},
 					"width": 850,
 					"height": 1232,
-					"title": "Rotface",
+					"title": "腐面",
 					"credit": "Anton Zemskov"
 				}
 			]
 		},
 		{
-			"name": "Servant of the Throne",
+			"ENG_name": "Servant of the Throne",
+			"name": "王座仆从",
 			"source": "ICC",
 			"entries": [
-				"Servants of the Throne are a form of lesser lich, skeletal mages bound to the Frozen Throne and the {@creature Lich King Arthas|WoW|Lich King} who sits upon it. They wield frost magic empowered by the throne."
+				"王座仆从是一种低阶巫妖，即被缚于冰封王座及端坐其上的{@creature 巫妖王阿尔萨斯|WoW|巫妖王}的骸骨法师。他们施展着经王座强化的冰霜魔法。"
 			],
 			"images": [
 				{
@@ -373,11 +395,12 @@
 			]
 		},
 		{
-			"name": "Sindragosa",
+			"ENG_name": "Sindragosa",
+			"name": "辛达苟萨",
 			"source": "ICC",
 			"entries": [
-				"During the War of the Ancients, the {@book blue dragonflight|WoW|7|Blue Dragonflight} was decimated; many of the dragons, including Malygos's consort Sindragosa, fell onto ground that later became covered by the Icecrown Glacier. After Ner'zhul raised many of the dead blue dragons up as frost wyrms in service of the Scourge, Arthas continued the practice, raising Sindragosa and even the dead dragon whelps.",
-				"Sindragosa's first death was caused by Deathwing's betrayal. Perhaps that made it easier for the {@creature Lich King Arthas|WoW|Lich King} to turn her and twist her in undeath; his final desecration was to tear apart the spirits of her whelps in front of her. Now she defends the Lich King in Icecrown Citadel and serves as his mount."
+				"上古之战期间，{@book 蓝龙军团|WoW|7|蓝龙军团}死伤惨重；许多巨龙\u2014\u2014包括玛里苟斯的伴侣辛达苟萨\u2014\u2014坠落在后来被冰冠冰川覆盖的土地上。耐奥祖将许多死去的蓝龙复活为服务于天灾军团的冰霜巨龙之后，阿尔萨斯延续了这一做法，复活了辛达苟萨，甚至连死去的巨龙幼崽也不放过。",
+				"辛达苟萨的第一次死亡源于死亡之翼的背叛。或许正因如此，{@creature 巫妖王阿尔萨斯|WoW|巫妖王}才更容易蛊惑她、在亡灵状态下扭曲她；他最后的亵渎之举，是在她面前将她幼崽们的灵魂撕成碎片。如今她在冰冠堡垒中保卫巫妖王，并充当他的坐骑。"
 			],
 			"images": [
 				{
@@ -398,16 +421,17 @@
 					},
 					"width": 1700,
 					"height": 1198,
-					"title": "Sindragosa",
+					"title": "辛达苟萨",
 					"credit": "Raymond Swanland"
 				}
 			]
 		},
 		{
-			"name": "Sister Svalna",
+			"ENG_name": "Sister Svalna",
+			"name": "女武神席瓦娜",
 			"source": "ICC",
 			"entries": [
-				"Sister Svalna is the foremost among the ranks of the Scourge's val'kyr\u2014undead angelic beings formed from the ranks of fallen vrykul warriors. She helped {@creature Lich King Arthas|WoW|Arthas} create the death knights of Acherus and supervised their training, alongside other val'kyr, ensuring that they didn't perish before their training was complete."
+				"女武神席瓦娜是天灾军团瓦格里中的翘楚\u2014\u2014瓦格里是由阵亡维库人战士化成的亡灵天使。她曾协助{@creature 巫妖王阿尔萨斯|WoW|阿尔萨斯}创造阿彻鲁斯的死亡骑士，并与其他瓦格里一同监督死亡骑士的训练，确保他们不致在训练完成前死去。"
 			],
 			"images": [
 				{
@@ -418,16 +442,17 @@
 					},
 					"width": 850,
 					"height": 1648,
-					"title": "Sister Svalna",
+					"title": "女武神席瓦娜",
 					"credit": "James Ryman"
 				}
 			]
 		},
 		{
-			"name": "The Damned",
+			"ENG_name": "The Damned",
+			"name": "被诅咒者",
 			"source": "ICC",
 			"entries": [
-				"The Damned are skeletal horrors with scythe-like claws in place of hands. They are assembled from the bones of other living creatures, and they have jagged blades protruding from their bodies, as well as sharp tusks. As their name suggests, they are animated by trapped souls that are tormented by their imprisonment."
+				"被诅咒者是以镰刀般的利爪代替双手的骸骨怪物。它们由其他生物的骸骨拼合而成，身上突出着锯齿状的刀刃，还长着尖利的獠牙。正如其名，驱使它们的是被囚禁的灵魂\u2014\u2014那些饱受禁锢折磨的怨灵。"
 			],
 			"images": [
 				{
@@ -440,16 +465,17 @@
 			]
 		},
 		{
-			"name": "Tirion Fordring",
+			"ENG_name": "Tirion Fordring",
+			"name": "提里奥·弗丁",
 			"source": "ICC",
 			"entries": [
 				{
 					"type": "quote",
 					"entries": [
-						"This is our final stand. What happens here will echo through the ages. Regardless of the outcome, they will know that we fought with honor\u2014that we fought for the freedom and safety of our people! Remember, heroes, fear is your greatest enemy in these befouled halls. Steel your hearts, and your souls will shine brighter than a thousand suns. The enemy will falter at the sight of you. They will fall as the light of righteousness envelops them! Our march upon Icecrown Citadel begins now!"
+						"\"这是我们最后的阵地。今天的一切都将千古流传。无论是生是死，我们都是为了荣誉而战。我们都是为了自由和人民而战！记住，英雄们，在这邪恶之地，恐惧是你们最大的敌人。勇气将让你们的灵魂比千颗太阳还要明亮。敌人会在你们面前溃不成军。正义的光芒将彻底摧毁他们！现在，我们向冰冠堡垒进军！\""
 					]
 				},
-				"Tirion Fordring was one of the first five paladins of the Order of the Silver Hand\u2014a martial extension of the Church of Light. Archbishop Alonsus Faol chose Tirion, as well as four other human heroes, to serve as a champion of the church during the Second War. Excommunicated for showing mercy to an orc, Tirion rejoined the paladins after the Third War to fight the Scourge, and he has been battling the forces of the {@creature Lich King Arthas|WoW|Lich King} ever since. He wields the sword {@item Ashbringer|WoW}, which he helped to purify after it was corrupted by its original wielder's act of murder. After repelling the Lich King's forces from Light's Hope Chapel, Tirion united the Argent Dawn and the Knights of the Silver Hand to form the Argent Crusade, and he personally led the assault on Northrend."
+				"提里奥·弗丁是最初五位圣骑士之一，隶属白银之手骑士团\u2014\u2014圣光教会的武力分支。大主教阿隆索斯·法奥选中提里奥和其他四位人类英雄，在第二次战争中担任教会的勇士。提里奥因对一名兽人心生怜悯而被逐出教会，第三次战争后重新加入圣骑士行列对抗天灾军团，自此一直在与{@creature 巫妖王阿尔萨斯|WoW|巫妖王}的军队作战。他挥舞着{@item 灰烬使者|WoW}之剑\u2014\u2014此剑因第一位持有者的谋杀行径而堕落，提里奥协助净化了它。在将巫妖王的军队逐出圣光之愿礼拜堂后，提里奥统一了银色黎明与白银之手骑士团，组成银色北伐军，并亲自率领大军远征诺森德。"
 			],
 			"images": [
 				{
@@ -460,16 +486,17 @@
 					},
 					"width": 850,
 					"height": 1865,
-					"title": "Highlord Tirion Fordring",
+					"title": "大领主提里奥·弗丁",
 					"credit": "Gerald Brom"
 				}
 			]
 		},
 		{
-			"name": "Val'kyr Herald",
+			"ENG_name": "Val'kyr Herald",
+			"name": "瓦格里传令官",
 			"source": "ICC",
 			"entries": [
-				"The first val'kyr were angelic beings created by Odyn, one of the keepers of the titan Aman-Thul. Odyn objected to the creation of the Dragon Aspects and created the val'kyr as alternative protectors of Azeroth. The {@creature Lich King Arthas|WoW|Lich King} created his own version of these warriors from the vrykul of Northrend and employed them to train and sustain his death knights and other warriors. Val'kyr heralds patrol inside and outside Icecrown Citadel, ensuring that no one approaches the Frozen Throne by air."
+				"最初的瓦格里是由奥丁创造的天使生物；奥丁是泰坦阿曼苏尔麾下守护者之一。奥丁反对创造守护巨龙，于是创造了瓦格里，作为艾泽拉斯的替代守护者。{@creature 巫妖王阿尔萨斯|WoW|巫妖王}以诺森德的维库人为原料创造了他自己版本的这类战士，并用她们来训练和维系他的死亡骑士及其他战士。瓦格里传令官巡逻于冰冠堡垒内外，确保没有人从空中接近冰封王座。"
 			],
 			"images": [
 				{
@@ -482,10 +509,11 @@
 			]
 		},
 		{
-			"name": "Vengeful Geist",
+			"ENG_name": "Vengeful Geist",
+			"name": "复仇的恶鬼",
 			"source": "ICC",
 			"entries": [
-				"Geists are hideous creatures of the Scourge. The first were created from the corpses of executed criminals, and all geists still wear the hood and noose of a hanging victim. A geist's hooded face is dominated by a single yellow eye, and its voice is a harsh rasp. Geists move with surprising quickness, using all four limbs in an unnerving, loping gait."
+				"恶鬼是天灾军团的丑恶造物。最早的恶鬼由处决罪犯的尸体制成，因而所有恶鬼至今仍戴着绞刑受害者的头罩与绳套。恶鬼兜帽下的面孔几乎被一只黄色独眼占据，嗓音则是刺耳的嘶声。恶鬼行动快得惊人，四肢并用，以令人不安的阔步疾行。"
 			],
 			"images": [
 				{
@@ -496,7 +524,7 @@
 					},
 					"width": 850,
 					"height": 1403,
-					"title": "Vengeful Geist",
+					"title": "复仇的恶鬼",
 					"credit": "Slawomir Maniak"
 				}
 			]

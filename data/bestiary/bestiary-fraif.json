@@ -81,7 +81,7 @@
 					"ENG_name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
 					"name": "传奇抗性（3/日，或巢穴内4/日）",
 					"entries": [
-						"龙豁免失败时，可以将其改为豁免成功。"
+						"该龙豁免失败时，可以将其改为豁免成功。"
 					]
 				}
 			],
@@ -140,7 +140,7 @@
 				"source": "FRAiF"
 			},
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"treasure": [
 				"奥秘"
@@ -270,7 +270,7 @@
 					"ENG_name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
 					"name": "传奇抗性（3/日，或巢穴内4/日）",
 					"entries": [
-						"龙豁免失败时，可以将其改为豁免成功。"
+						"该龙豁免失败时，可以将其改为豁免成功。"
 					]
 				}
 			],
@@ -334,7 +334,7 @@
 				"source": "FRAiF"
 			},
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"任何"
@@ -459,7 +459,7 @@
 					"ENG_name": "Legendary Resistance (4/Day, or 5/Day in Lair)",
 					"name": "传奇抗性（4/日，或巢穴内5/日）",
 					"entries": [
-						"龙豁免失败时，可以将其改为豁免成功。"
+						"该龙豁免失败时，可以将其改为豁免成功。"
 					]
 				}
 			],
@@ -518,7 +518,7 @@
 				"source": "FRAiF"
 			},
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"treasure": [
 				"奥秘"
@@ -629,7 +629,7 @@
 					"will": [
 						"{@spell 侦测魔法|XPHB}",
 						"{@spell 形体变化|XPHB}（仅野兽与类人形态，不会因此法术获得{@variantrule 临时生命值|XPHB}，但无需为维持此法术而保有{@variantrule 临时生命值|XPHB}或维持{@status 专注|XPHB}）",
-						"{@spell 雷鸣波|XPHB}（2环版本）"
+						"{@spell 雷鸣波|XPHB} (2环版本)"
 					],
 					"daily": {
 						"1e": [
@@ -646,7 +646,7 @@
 					"ENG_name": "Legendary Resistance (4/Day, or 5/Day in Lair)",
 					"name": "传奇抗性（4/日，或巢穴内5/日）",
 					"entries": [
-						"龙豁免失败时，可以将其改为豁免成功。"
+						"该龙豁免失败时，可以将其改为豁免成功。"
 					]
 				}
 			],
@@ -710,7 +710,7 @@
 				"source": "FRAiF"
 			},
 			"environment": [
-				"任何"
+				"any"
 			],
 			"dragonCastingColor": "灵",
 			"dragonAge": "远古",
@@ -889,8 +889,8 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"沼泽"
+				"forest",
+				"swamp"
 			],
 			"treasure": [
 				"个体"
@@ -1065,9 +1065,9 @@
 				}
 			],
 			"environment": [
-				"海岸",
-				"森林",
-				"丘陵"
+				"coastal",
+				"forest",
+				"hill"
 			],
 			"traitTags": [
 				"Amphibious",
@@ -1434,7 +1434,7 @@
 				}
 			],
 			"environment": [
-				"城市"
+				"urban"
 			],
 			"treasure": [
 				"个体",
@@ -1568,7 +1568,7 @@
 				}
 			],
 			"environment": [
-				"城市"
+				"urban"
 			],
 			"treasure": [
 				"个体",
@@ -1714,7 +1714,7 @@
 				}
 			],
 			"environment": [
-				"城市"
+				"urban"
 			],
 			"treasure": [
 				"个体",
@@ -1841,7 +1841,7 @@
 					],
 					"legendary": {
 						"1": [
-							"{@spell 命令术|XPHB}（2环版本）"
+							"{@spell 命令术|XPHB} (2环版本)"
 						]
 					},
 					"ability": "cha",
@@ -1907,8 +1907,8 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"城市"
+				"underdark",
+				"urban"
 			],
 			"treasure": [
 				"圣物"
@@ -2037,7 +2037,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"treasure": [
 				"奥秘"
@@ -2252,8 +2252,8 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"城市"
+				"underdark",
+				"urban"
 			],
 			"treasure": [
 				"任何"
@@ -2439,8 +2439,8 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"城市"
+				"underdark",
+				"urban"
 			],
 			"treasure": [
 				"任何"
@@ -2587,8 +2587,8 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"城市"
+				"underdark",
+				"urban"
 			],
 			"treasure": [
 				"任何"
@@ -2774,8 +2774,8 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"城市"
+				"underdark",
+				"urban"
 			],
 			"treasure": [
 				"任何"
@@ -2914,7 +2914,6 @@
 					"人类"
 				]
 			},
-			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "FRAiF",
 			"page": 263,
@@ -3137,7 +3136,6 @@
 					"法师"
 				]
 			},
-			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "FRAiF",
 			"page": 265,
@@ -3208,7 +3206,7 @@
 						"{@spell 侦测魔法|XPHB}",
 						"{@spell 侦测思想|XPHB}",
 						"{@spell 光亮术|XPHB}",
-						"{@spell 闪电束|XPHB}（四环版本）",
+						"{@spell 闪电束|XPHB} (4环版本)",
 						"{@spell 法师护甲|XPHB}（已计入AC）",
 						"{@spell 法师之手|XPHB}",
 						"{@spell 魔法伎俩|XPHB}"
@@ -3223,7 +3221,7 @@
 							"{@spell 摧心术|XPHB}",
 							"{@spell 克隆术|XPHB}",
 							"{@spell 死亡一指|XPHB}",
-							"{@spell 心灵屏障|XPHB}（于战斗前施展）",
+							"{@spell 心灵屏障|XPHB}（在战斗前施展）",
 							"{@spell 拟像术|XPHB}"
 						]
 					},
@@ -3428,7 +3426,7 @@
 				}
 			],
 			"environment": [
-				"城市"
+				"urban"
 			],
 			"attachedItems": [
 				"弯刀|phb"
@@ -3556,7 +3554,7 @@
 				}
 			],
 			"environment": [
-				"城市"
+				"urban"
 			],
 			"traitTags": [
 				"Magic Resistance"
@@ -3666,7 +3664,7 @@
 				}
 			],
 			"environment": [
-				"城市"
+				"urban"
 			],
 			"senseTags": [
 				"D"
@@ -3833,8 +3831,8 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"城市"
+				"underdark",
+				"urban"
 			],
 			"treasure": [
 				"奥秘",
@@ -3976,8 +3974,8 @@
 				}
 			],
 			"environment": [
-				"幽暗地域",
-				"城市"
+				"underdark",
+				"urban"
 			],
 			"treasure": [
 				"奥秘",
@@ -4094,8 +4092,8 @@
 				}
 			],
 			"environment": [
-				"极地",
-				"幽暗地域"
+				"arctic",
+				"underdark"
 			],
 			"senseTags": [
 				"D"
@@ -4130,7 +4128,6 @@
 			"ENG_name": "Queen Forfallen",
 			"name": "堕落女王",
 			"type": "construct",
-			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "FRAiF",
 			"page": 271,
@@ -4345,8 +4342,8 @@
 				}
 			],
 			"environment": [
-				"海岸",
-				"森林"
+				"coastal",
+				"forest"
 			],
 			"treasure": [
 				"个体"
@@ -4451,8 +4448,8 @@
 				}
 			],
 			"environment": [
-				"海岸",
-				"森林"
+				"coastal",
+				"forest"
 			],
 			"treasure": [
 				"个体"
@@ -4573,8 +4570,8 @@
 				}
 			],
 			"environment": [
-				"海岸",
-				"森林"
+				"coastal",
+				"forest"
 			],
 			"treasure": [
 				"个体"
@@ -4618,7 +4615,6 @@
 			"ENG_name": "Sammaster (Dracolich Form)",
 			"name": "萨马斯特（龙巫妖形态）",
 			"type": "undead",
-			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "FRAiF",
 			"page": 275,
@@ -4852,7 +4848,6 @@
 					"法师"
 				]
 			},
-			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "FRAiF",
 			"page": 276,
@@ -5180,7 +5175,7 @@
 				"source": "FRAiF"
 			},
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"任何"
@@ -5318,8 +5313,8 @@
 				}
 			],
 			"environment": [
-				"森林",
-				"沼泽"
+				"forest",
+				"swamp"
 			],
 			"senseTags": [
 				"B"
@@ -5475,7 +5470,7 @@
 				}
 			],
 			"environment": [
-				"森林"
+				"forest"
 			],
 			"treasure": [
 				"个体"
@@ -5528,7 +5523,6 @@
 					"法师"
 				]
 			},
-			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "FRAiF",
 			"page": 283,
@@ -5901,8 +5895,8 @@
 				}
 			],
 			"environment": [
-				"丘陵",
-				"山地"
+				"hill",
+				"mountain"
 			],
 			"treasure": [
 				"个体"
@@ -6029,7 +6023,7 @@
 				}
 			],
 			"environment": [
-				"幽暗地域"
+				"underdark"
 			],
 			"treasure": [
 				"奥秘"
@@ -6159,7 +6153,7 @@
 				"source": "FRAiF"
 			},
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"任何"
@@ -6293,7 +6287,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"武备"
@@ -6406,7 +6400,7 @@
 				}
 			],
 			"environment": [
-				"任何"
+				"any"
 			],
 			"treasure": [
 				"武备"
@@ -6447,7 +6441,6 @@
 					"法师"
 				]
 			},
-			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "FRAiF",
 			"page": 287,

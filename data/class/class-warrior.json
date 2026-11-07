@@ -14,52 +14,58 @@
 	},
 	"class": [
 		{
-			"name": "Warrior",
+			"ENG_name": "Warrior",
+			"name": "战士",
 			"alias": [
-				"Fighter"
+				"战士"
 			],
 			"source": "WoW",
 			"reskinOf": [
-				"Fighter|XPHB"
+				"战士|XPHB"
 			],
 			"_copy": {
-				"name": "Fighter",
+				"ENG_name": "Fighter",
+				"name": "战士",
 				"source": "XPHB"
 			},
 			"includeSubclassesFrom": [
-				"Fighter|XPHB"
+				"战士|XPHB"
 			],
-			"subclassTitle": "Warrior Subclass",
+			"subclassTitle": "战士子职",
 			"hasFluff": true,
 			"hasFluffImages": true
 		}
 	],
 	"subclass": [
 		{
-			"name": "Battle Master",
-			"shortName": "Battle Master",
+			"ENG_name": "Battle Master",
+			"name": "战斗大师",
+			"shortName": "战斗大师",
 			"source": "WoW",
-			"className": "Warrior",
+			"className": "战士",
 			"classSource": "WoW",
 			"_copy": {
-				"name": "Battle Master",
+				"ENG_name": "Battle Master",
+				"name": "战斗大师",
 				"source": "XPHB",
-				"shortName": "Battle Master",
-				"className": "Fighter",
+				"shortName": "战斗大师",
+				"className": "战士",
 				"classSource": "XPHB"
 			}
 		},
 		{
-			"name": "Champion",
-			"shortName": "Champion",
+			"ENG_name": "Champion",
+			"name": "勇士",
+			"shortName": "勇士",
 			"source": "WoW",
-			"className": "Warrior",
+			"className": "战士",
 			"classSource": "WoW",
 			"_copy": {
-				"name": "Champion",
+				"ENG_name": "Champion",
+				"name": "勇士",
 				"source": "XPHB",
-				"shortName": "Champion",
-				"className": "Fighter",
+				"shortName": "勇士",
+				"className": "战士",
 				"classSource": "XPHB"
 			}
 		}

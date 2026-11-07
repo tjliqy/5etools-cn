@@ -14,32 +14,35 @@
 	},
 	"class": [
 		{
-			"name": "Priest",
+			"ENG_name": "Priest",
+			"name": "牧师",
 			"alias": [
-				"Cleric"
+				"牧师"
 			],
 			"source": "WoW",
 			"reskinOf": [
-				"Cleric|XPHB"
+				"牧师|XPHB"
 			],
 			"_copy": {
-				"name": "Cleric",
+				"ENG_name": "Cleric",
+				"name": "牧师",
 				"source": "XPHB"
 			},
 			"includeSubclassesFrom": [
-				"Cleric|XPHB"
+				"牧师|XPHB"
 			],
-			"subclassTitle": "Priest Subclass",
+			"subclassTitle": "牧师子职",
 			"hasFluff": true,
 			"hasFluffImages": true
 		}
 	],
 	"subclass": [
 		{
-			"name": "Discipline Domain",
-			"shortName": "Discipline",
+			"ENG_name": "Discipline Domain",
+			"name": "戒律领域",
+			"shortName": "戒律",
 			"source": "WoW",
-			"className": "Priest",
+			"className": "牧师",
 			"classSource": "WoW",
 			"edition": "one",
 			"additionalSpells": [
@@ -47,52 +50,55 @@
 					"ability": "wis",
 					"prepared": {
 						"3": [
-							"arcane vigor|xphb",
-							"guiding bolt|xphb",
-							"magic weapon|xphb",
-							"shield of faith|xphb"
+							"复苏秘法|xphb",
+							"光导箭|xphb",
+							"魔化武器|xphb",
+							"虔诚护盾|xphb"
 						],
 						"5": [
-							"prayer of mending|wow",
-							"protection from energy|xphb"
+							"恢复祷言|wow",
+							"防护能量|xphb"
 						],
 						"7": [
-							"guardian of faith|xphb",
-							"stoneskin|xphb"
+							"信仰守卫|xphb",
+							"石肤术|xphb"
 						],
 						"9": [
-							"circle of power|xphb",
-							"destructive wave|xphb"
+							"原力法阵|xphb",
+							"湮灭波|xphb"
 						]
 					}
 				}
 			],
 			"subclassFeatures": [
-				"Discipline Domain|Priest|WoW|Discipline|WoW|3",
-				"Luminous Barrier|Priest|WoW|Discipline|WoW|6",
-				"Ultimate Penitence|Priest|WoW|Discipline|WoW|17"
+				"戒律领域|牧师|WoW|戒律|WoW|3",
+				"辉光屏障|牧师|WoW|戒律|WoW|6",
+				"终极忏悔|牧师|WoW|戒律|WoW|17"
 			],
 			"hasFluffImages": true
 		},
 		{
-			"name": "Life Domain",
-			"shortName": "Life",
+			"ENG_name": "Life Domain",
+			"name": "生命领域",
+			"shortName": "生命",
 			"source": "WoW",
-			"className": "Priest",
+			"className": "牧师",
 			"classSource": "WoW",
 			"_copy": {
-				"name": "Life Domain",
+				"ENG_name": "Life Domain",
+				"name": "生命领域",
 				"source": "XPHB",
-				"shortName": "Life",
-				"className": "Cleric",
+				"shortName": "生命",
+				"className": "牧师",
 				"classSource": "XPHB"
 			}
 		},
 		{
-			"name": "Shadow Domain",
-			"shortName": "Shadow",
+			"ENG_name": "Shadow Domain",
+			"name": "暗影领域",
+			"shortName": "暗影",
 			"source": "WoW",
-			"className": "Priest",
+			"className": "牧师",
 			"classSource": "WoW",
 			"edition": "one",
 			"additionalSpells": [
@@ -100,101 +106,106 @@
 					"ability": "wis",
 					"prepared": {
 						"3": [
-							"crown of madness|xphb",
-							"dissonant whispers|xphb",
-							"mind spike|xphb",
-							"shadow word: pain|wow"
+							"疯狂冠冕|xphb",
+							"不谐低语|xphb",
+							"心灵尖刺|xphb",
+							"暗言术：痛|wow"
 						],
 						"5": [
-							"summon undead|xphb",
-							"vampiric touch|xphb"
+							"亡灵召唤术|xphb",
+							"吸血鬼之触|xphb"
 						],
 						"7": [
-							"evard's black tentacles|xphb",
-							"psychic horror|wow"
+							"艾伐黑触手|xphb",
+							"灵魔恐惧|wow"
 						],
 						"9": [
-							"dominate person|xphb",
-							"void eruption|wow"
+							"支配类人|xphb",
+							"虚空爆发|wow"
 						]
 					}
 				}
 			],
 			"subclassFeatures": [
-				"Shadow Domain|Priest|WoW|Shadow|WoW|3",
-				"Dispersion|Priest|WoW|Shadow|WoW|6",
-				"Vampiric Embrace|Priest|WoW|Shadow|WoW|17"
+				"暗影领域|牧师|WoW|暗影|WoW|3",
+				"消散|牧师|WoW|暗影|WoW|6",
+				"吸血的拥抱|牧师|WoW|暗影|WoW|17"
 			]
 		},
 		{
-			"name": "War Domain",
-			"shortName": "War",
+			"ENG_name": "War Domain",
+			"name": "战争领域",
+			"shortName": "战争",
 			"source": "WoW",
-			"className": "Priest",
+			"className": "牧师",
 			"classSource": "WoW",
 			"_copy": {
-				"name": "War Domain",
+				"ENG_name": "War Domain",
+				"name": "战争领域",
 				"source": "XPHB",
-				"shortName": "War",
-				"className": "Cleric",
+				"shortName": "战争",
+				"className": "牧师",
 				"classSource": "XPHB"
 			}
 		}
 	],
 	"subclassFeature": [
 		{
-			"name": "Atonement",
+			"ENG_name": "Atonement",
+			"name": "赎罪",
 			"source": "WoW",
-			"className": "Priest",
+			"className": "牧师",
 			"classSource": "WoW",
-			"subclassShortName": "Discipline",
+			"subclassShortName": "戒律",
 			"subclassSource": "WoW",
 			"level": 3,
 			"entries": [
-				"When a level 1+ spell you cast restores {@variantrule Hit Points|XPHB} to one or more creatures, each of those creatures gains a blessing that lasts until the end of your next turn. Whenever you cast a spell that deals damage to a creature using a spell slot, each blessed creature regains additional {@variantrule Hit Points|XPHB} equal to the level of the spell slot you used to cast the damaging spell."
+				"当你施展的 1 环及以上法术为一个或多个生物恢复{@variantrule 生命值|XPHB}时，这些生物各获得一份祝福，持续到你的下个回合结束。每当你使用法术位施展对一个生物造成伤害的法术时，每个受祝福的生物额外回复等同于你施展该伤害法术所用法术位环阶的{@variantrule 生命值|XPHB}。"
 			]
 		},
 		{
-			"name": "Discipline Domain",
+			"ENG_name": "Discipline Domain",
+			"name": "戒律领域",
 			"source": "WoW",
-			"className": "Priest",
+			"className": "牧师",
 			"classSource": "WoW",
-			"subclassShortName": "Discipline",
+			"subclassShortName": "戒律",
 			"subclassSource": "WoW",
 			"level": 3,
 			"entries": [
-				"{@i Cure Allies' Wounds While Smiting Enemies}",
-				"The Discipline Domain focuses on the balance between the Holy Light and its shadowy mirror, the Void. Wielding both powers at once, Clerics who embrace this domain aid their allies and harm their foes, often with a single spell.",
+				"{@i 讨伐敌人的同时治愈盟友}",
+				"戒律领域专注于圣光与其暗影镜像\u2014\u2014虚空\u2014\u2014之间的平衡。拥抱此领域的牧师同时驾驭两种力量，济友伤敌，常以单一法术兼而为之。",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Discipline Spells|Priest|WoW|Discipline|WoW|3"
+					"subclassFeature": "戒律法术|牧师|WoW|戒律|WoW|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Holy Bolt|Priest|WoW|Discipline|WoW|3"
+					"subclassFeature": "神圣之矢|牧师|WoW|戒律|WoW|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Atonement|Priest|WoW|Discipline|WoW|3"
+					"subclassFeature": "赎罪|牧师|WoW|戒律|WoW|3"
 				}
 			]
 		},
 		{
-			"name": "Discipline Spells",
+			"ENG_name": "Discipline Spells",
+			"name": "戒律法术",
 			"source": "WoW",
-			"className": "Priest",
+			"className": "牧师",
 			"classSource": "WoW",
-			"subclassShortName": "Discipline",
+			"subclassShortName": "戒律",
 			"subclassSource": "WoW",
 			"level": 3,
 			"entries": [
-				"Your connection to this domain ensures you always have certain spells ready. When you reach a Cleric level specified in the Discipline Domain Spells table, you thereafter always have the listed spells prepared.",
+				"你与此领域的联结确保你始终准备好特定法术。当你达到戒律领域法术表中列出的牧师等级后，你始终准备好表中列出的法术。",
 				{
 					"type": "table",
-					"caption": "Discipline Domain Spells",
+					"caption": "戒律领域法术",
 					"colLabels": [
-						"Cleric Level",
-						"Spells"
+						"牧师等级",
+						"法术"
 					],
 					"colStyles": [
 						"col-2 text-center",
@@ -203,136 +214,146 @@
 					"rows": [
 						[
 							"3",
-							"{@spell Arcane Vigor|XPHB}, {@spell Guiding Bolt|XPHB}, {@spell Magic Weapon|XPHB}, {@spell Shield of Faith|XPHB}"
+							"{@spell 复苏秘法|XPHB}, {@spell 光导箭|XPHB}, {@spell 魔化武器|XPHB}, {@spell 虔诚护盾|XPHB}"
 						],
 						[
 							"5",
-							"{@spell Prayer of Mending|WoW}, {@spell Protection from Energy|XPHB}"
+							"{@spell 恢复祷言|WoW}, {@spell 防护能量|XPHB}"
 						],
 						[
 							"7",
-							"{@spell Guardian of Faith|XPHB}, {@spell Stoneskin|XPHB}"
+							"{@spell 信仰守卫|XPHB}, {@spell 石肤术|XPHB}"
 						],
 						[
 							"9",
-							"{@spell Circle of Power|XPHB}, {@spell Destructive Wave|XPHB}"
+							"{@spell 原力法阵|XPHB}, {@spell 湮灭波|XPHB}"
 						]
 					]
 				}
 			]
 		},
 		{
-			"name": "Holy Bolt",
+			"ENG_name": "Holy Bolt",
+			"name": "神圣之矢",
 			"source": "WoW",
-			"className": "Priest",
+			"className": "牧师",
 			"classSource": "WoW",
-			"subclassShortName": "Discipline",
+			"subclassShortName": "戒律",
 			"subclassSource": "WoW",
 			"level": 3,
 			"consumes": {
-				"name": "Channel Divinity"
+				"ENG_name": "Channel Divinity",
+				"name": "引导神力"
 			},
 			"entries": [
-				"As a {@variantrule Bonus Action|XPHB}, you present your {@item Holy Symbol|XPHB} and expend a use of your {@classFeature Channel Divinity|Cleric|XPHB|2|XPHB} to make a ranged spell attack, hurling a bolt of holy energy targeting one creature within 60 feet of yourself. On a hit, the target takes Radiant damage equal to {@damage 2d10} plus your Wisdom modifier, and you can choose a creature you can see within 60 feet of yourself to regain {@variantrule Hit Points|XPHB} equal to {@dice 1d10} plus your Wisdom modifier."
+				"以一个{@variantrule 附赠动作|XPHB}，你亮出{@item 圣徽|XPHB}并消耗一次{@classFeature 引导神力|牧师|XPHB|2|XPHB}，进行一次远程法术攻击，向 60 尺内一个生物掷出神圣能量之矢。命中时，目标受{@damage 2d10}加你的感知调整值点光耀伤害，且你可以选择 60 尺内一个可见生物，令其回复{@dice 1d10}加你的感知调整值点{@variantrule 生命值|XPHB}。"
 			]
 		},
 		{
-			"name": "Luminous Barrier",
+			"ENG_name": "Luminous Barrier",
+			"name": "辉光屏障",
 			"source": "WoW",
-			"className": "Priest",
+			"className": "牧师",
 			"classSource": "WoW",
-			"subclassShortName": "Discipline",
+			"subclassShortName": "戒律",
 			"subclassSource": "WoW",
 			"level": 6,
 			"header": 2,
 			"consumes": {
-				"name": "Channel Divinity"
+				"ENG_name": "Channel Divinity",
+				"name": "引导神力"
 			},
 			"entries": [
-				"As a {@variantrule Bonus Action|XPHB}, you can expend a use of your {@classFeature Channel Divinity|Cleric|XPHB|2|XPHB} to place a magical ward of glowing light on each creature blessed by your {@subclassFeature Atonement|Priest|WoW|Discipline|WoW|3|WoW}. Each affected creature gains a number of {@variantrule Temporary Hit Points|XPHB} equal to your Cleric level plus your Wisdom modifier. While a creature has {@variantrule Temporary Hit Points|XPHB} gained from this feature, it has {@variantrule Resistance|XPHB} to all damage."
+				"以一个{@variantrule 附赠动作|XPHB}，你可以消耗一次{@classFeature 引导神力|牧师|XPHB|2|XPHB}，为每个被你的{@subclassFeature 赎罪|牧师|WoW|戒律|WoW|3|WoW}祝福的生物附上发光的魔法守护。每个受影响的生物获得等同于你牧师等级加感知调整值的{@variantrule 临时生命值|XPHB}。只要生物拥有由此特性获得的{@variantrule 临时生命值|XPHB}，它便对所有伤害具有{@variantrule 抗性|XPHB}。"
 			]
 		},
 		{
-			"name": "Ultimate Penitence",
+			"ENG_name": "Ultimate Penitence",
+			"name": "终极忏悔",
 			"source": "WoW",
-			"className": "Priest",
+			"className": "牧师",
 			"classSource": "WoW",
-			"subclassShortName": "Discipline",
+			"subclassShortName": "戒律",
 			"subclassSource": "WoW",
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"Your {@subclassFeature Holy Bolt|Priest|WoW|Discipline|WoW|3|WoW} grows more powerful as detailed below.",
+				"你的{@subclassFeature 神圣之矢|牧师|WoW|戒律|WoW|3|WoW}变得更加强大，详情如下。",
 				{
+					"ENG_name": "Ascending Step",
+					"name": "升腾之步",
 					"type": "entries",
-					"name": "Ascending Step",
 					"entries": [
-						"When you use {@subclassFeature Holy Bolt|Priest|WoW|Discipline|WoW|3|WoW}, you can teleport to an unoccupied space you can see within 30 feet before you make an attack roll."
+						"当你使用{@subclassFeature 神圣之矢|牧师|WoW|戒律|WoW|3|WoW}时，你可以在进行攻击检定前传送到 30 尺内一处可见的未被占据空间。"
 					]
 				},
 				{
+					"ENG_name": "Ascending Volley",
+					"name": "升腾齐射",
 					"type": "entries",
-					"name": "Ascending Volley",
 					"entries": [
-						"When you use {@subclassFeature Holy Bolt|Priest|WoW|Discipline|WoW|3|WoW}, you can expend a spell slot as part of the {@variantrule Bonus Action|XPHB} to hurl a number of additional bolts equal to the spell slot level expended. You can direct the bolts to hit one creature or several. Make a separate attack roll for each bolt."
+						"当你使用{@subclassFeature 神圣之矢|牧师|WoW|戒律|WoW|3|WoW}时，你可以作为该{@variantrule 附赠动作|XPHB}的一部分消耗一个法术位，掷出等同于所耗法术位环阶数量的额外能量矢。你可以让能量矢命中一个或多个生物。每道能量矢分别进行攻击检定。"
 					]
 				}
 			]
 		},
 		{
-			"name": "Devouring Plague",
+			"ENG_name": "Devouring Plague",
+			"name": "吞噬瘟疫",
 			"source": "WoW",
-			"className": "Priest",
+			"className": "牧师",
 			"classSource": "WoW",
-			"subclassShortName": "Shadow",
+			"subclassShortName": "暗影",
 			"subclassSource": "WoW",
 			"level": 3,
 			"entries": [
-				"When a creature you can see within 30 feet of you fails a saving throw, you can cause that creature to take {@damage 1d10} Necrotic damage. If you do, you regain {@variantrule Hit Points|XPHB} equal to the Necrotic damage dealt.",
-				"You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}."
+				"当你 30 尺内一个可见生物豁免检定失败时，你可以使该生物受{@damage 1d10}点黯蚀伤害。若如此做，你回复等同于所造成黯蚀伤害的{@variantrule 生命值|XPHB}。",
+				"你可以使用该特性的次数等同于你的感知调整值（最少 1 次）。你在完成一次{@variantrule 长休|XPHB}时重获所有已消耗的使用次数。"
 			]
 		},
 		{
-			"name": "Shadow Domain",
+			"ENG_name": "Shadow Domain",
+			"name": "暗影领域",
 			"source": "WoW",
-			"className": "Priest",
+			"className": "牧师",
 			"classSource": "WoW",
-			"subclassShortName": "Shadow",
+			"subclassShortName": "暗影",
 			"subclassSource": "WoW",
 			"level": 3,
 			"entries": [
-				"{@i Draw on the Debilitating Power of the Void}",
-				"The Shadow Domain deals with the powers of shadow and the Void\u2014a sinister mirror of the life-giving powers of the Light. Clerics who embrace these powers can wither their enemies' flesh and debilitate their minds.",
+				"{@i 汲取虚空的削弱之力}",
+				"暗影领域执掌暗影与虚空之力\u2014\u2014圣光赋生之力阴森的镜像。拥抱这些力量的牧师能令敌人的血肉枯萎、心智衰弱。",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Shadow Spells|Priest|WoW|Shadow|WoW|3"
+					"subclassFeature": "暗影法术|牧师|WoW|暗影|WoW|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Shadowform|Priest|WoW|Shadow|WoW|3"
+					"subclassFeature": "暗影形态|牧师|WoW|暗影|WoW|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Devouring Plague|Priest|WoW|Shadow|WoW|3"
+					"subclassFeature": "吞噬瘟疫|牧师|WoW|暗影|WoW|3"
 				}
 			]
 		},
 		{
-			"name": "Shadow Spells",
+			"ENG_name": "Shadow Spells",
+			"name": "暗影法术",
 			"source": "WoW",
-			"className": "Priest",
+			"className": "牧师",
 			"classSource": "WoW",
-			"subclassShortName": "Shadow",
+			"subclassShortName": "暗影",
 			"subclassSource": "WoW",
 			"level": 3,
 			"entries": [
-				"Your connection to this domain ensures you always have certain spells ready. When you reach a Cleric level specified in the Shadow Domain Spells table, you thereafter always have the listed spells prepared.",
+				"你与此领域的联结确保你始终准备好特定法术。当你达到暗影领域法术表中列出的牧师等级后，你始终准备好表中列出的法术。",
 				{
 					"type": "table",
-					"caption": "Shadow Domain Spells",
+					"caption": "暗影领域法术",
 					"colLabels": [
-						"Cleric Level",
-						"Spells"
+						"牧师等级",
+						"法术"
 					],
 					"colStyles": [
 						"col-2 text-center",
@@ -341,81 +362,87 @@
 					"rows": [
 						[
 							"3",
-							"{@spell Crown of Madness|XPHB}, {@spell Dissonant Whispers|XPHB}, {@spell Mind Spike|XPHB}, {@spell Shadow Word: Pain|WoW}"
+							"{@spell 疯狂冠冕|XPHB}, {@spell 不谐低语|XPHB}, {@spell 心灵尖刺|XPHB}, {@spell 暗言术：痛|WoW}"
 						],
 						[
 							"5",
-							"{@spell Summon Undead|XPHB}, {@spell Vampiric Touch|XPHB}"
+							"{@spell 亡灵召唤术|XPHB}, {@spell 吸血鬼之触|XPHB}"
 						],
 						[
 							"7",
-							"{@spell Evard's Black Tentacles|XPHB}, {@spell Psychic Horror|WoW}"
+							"{@spell 艾伐黑触手|XPHB}, {@spell 灵魔恐惧|WoW}"
 						],
 						[
 							"9",
-							"{@spell Dominate Person|XPHB}, {@spell Void Eruption|WoW}"
+							"{@spell 支配类人|XPHB}, {@spell 虚空爆发|WoW}"
 						]
 					]
 				}
 			]
 		},
 		{
-			"name": "Shadowform",
+			"ENG_name": "Shadowform",
+			"name": "暗影形态",
 			"source": "WoW",
-			"className": "Priest",
+			"className": "牧师",
 			"classSource": "WoW",
-			"subclassShortName": "Shadow",
+			"subclassShortName": "暗影",
 			"subclassSource": "WoW",
 			"level": 3,
 			"consumes": {
-				"name": "Channel Divinity"
+				"ENG_name": "Channel Divinity",
+				"name": "引导神力"
 			},
 			"entries": [
-				"As a {@variantrule Bonus Action|XPHB}, you can expend a use of your {@classFeature Channel Divinity|Cleric|XPHB|2|XPHB} to take on a shadowy form that grants you the following benefits:",
+				"以一个{@variantrule 附赠动作|XPHB}，你可以消耗一次{@classFeature 引导神力|牧师|XPHB|2|XPHB}，进入暗影形态，获得以下收益：",
 				{
 					"type": "list",
 					"style": "list-hang-notitle",
 					"items": [
 						{
+							"ENG_name": "Shadow Stealth",
+							"name": "幽影隐匿",
 							"type": "item",
-							"name": "Shadow Stealth",
-							"entry": "While you are in an area of {@variantrule Dim Light|XPHB} or {@variantrule Darkness|XPHB}, you can take the {@action Hide|XPHB} action as a {@variantrule Bonus Action|XPHB}."
+							"entry": "当你处于{@variantrule 微光光照|XPHB}或{@variantrule 黑暗|XPHB}区域时，你可以以一个{@variantrule 附赠动作|XPHB}采取{@action 躲藏|XPHB}动作。"
 						},
 						{
+							"ENG_name": "Void Empowerment",
+							"name": "虚空强化",
 							"type": "item",
-							"name": "Void Empowerment",
-							"entry": "When you cast a spell using a spell slot that deals Psychic or Necrotic damage, you can add {@dice 1d6} to one damage roll of the spell."
+							"entry": "当你使用法术位施展造成心灵或黯蚀伤害的法术时，你可以为该法术的一次伤害掷骰加上{@dice 1d6}。"
 						}
 					]
 				},
-				"The form lasts for 1 minute, but it ends early if you dismiss it (no action required), if you have the {@condition Incapacitated|XPHB} condition, or if you deal Radiant damage with a spell."
+				"该形态持续 1 分钟，但如果你解除它（无需动作）、你受{@condition 失能|XPHB}状态，或你以法术造成光耀伤害，则提前结束。"
 			]
 		},
 		{
-			"name": "Dispersion",
+			"ENG_name": "Dispersion",
+			"name": "消散",
 			"source": "WoW",
-			"className": "Priest",
+			"className": "牧师",
 			"classSource": "WoW",
-			"subclassShortName": "Shadow",
+			"subclassShortName": "暗影",
 			"subclassSource": "WoW",
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"When you are hit by an attack roll, you can take a {@variantrule Reaction|XPHB} to disperse into shadowy energy. Until the end of your next turn, you have {@variantrule Resistance|XPHB} to all damage (including the damage from the triggering attack); you can't take any action, {@variantrule Bonus Action|XPHB}, or {@variantrule Reaction|XPHB}; and you have a {@variantrule Fly Speed|XPHB} of 40 feet. When the effect ends, you can spend up to half of your total {@variantrule Hit Point Dice|XPHB}, regaining {@variantrule Hit Points|XPHB} as if you had finished a {@variantrule Short Rest|XPHB}.",
-				"Once you use this feature, you can't use it again until you finish a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB}."
+				"当你被攻击检定命中时，你可以以一个{@variantrule 反应|XPHB}消散为暗影能量。直到你的下个回合结束，你对所有伤害（包括触发攻击的伤害）具有{@variantrule 抗性|XPHB}；你不能采取任何动作、{@variantrule 附赠动作|XPHB}或{@variantrule 反应|XPHB}；且你拥有 40 尺{@variantrule 飞行速度|XPHB}。效应结束时，你可以消耗至多总数一半的{@variantrule 生命值骰|XPHB}，如同完成了一次{@variantrule 短休|XPHB}般回复{@variantrule 生命值|XPHB}。",
+				"此特性一经使用，直至完成{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}你都无法再次使用。"
 			]
 		},
 		{
-			"name": "Vampiric Embrace",
+			"ENG_name": "Vampiric Embrace",
+			"name": "吸血的拥抱",
 			"source": "WoW",
-			"className": "Priest",
+			"className": "牧师",
 			"classSource": "WoW",
-			"subclassShortName": "Shadow",
+			"subclassShortName": "暗影",
 			"subclassSource": "WoW",
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"While your {@subclassFeature Shadowform|Priest|WoW|Shadow|WoW|3|WoW} is active, whenever you roll {@dice 1d6} to add extra damage to a spell, one creature of your choice within 30 feet of you regains that many {@variantrule Hit Points|XPHB}."
+				"当你的{@subclassFeature 暗影形态|牧师|WoW|暗影|WoW|3|WoW}生效期间，每当你掷{@dice 1d6}为法术增加额外伤害时，你 30 尺内一个由你选择的生物回复等同于掷骰数值的{@variantrule 生命值|XPHB}。"
 			]
 		}
 	]

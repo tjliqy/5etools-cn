@@ -316,11 +316,11 @@
 				{
 					"title": "每环法术位",
 					"colLabels": [
-						"{@filter 1st|spells|level=1|class=奇械师}",
-						"{@filter 2nd|spells|level=2|class=奇械师}",
-						"{@filter 3rd|spells|level=3|class=奇械师}",
-						"{@filter 4th|spells|level=4|class=奇械师}",
-						"{@filter 5th|spells|level=5|class=奇械师}"
+						"{@filter 1环|spells|level=1|class=奇械师}",
+						"{@filter 2环|spells|level=2|class=奇械师}",
+						"{@filter 3环|spells|level=3|class=奇械师}",
+						"{@filter 4环|spells|level=4|class=奇械师}",
+						"{@filter 5环|spells|level=5|class=奇械师}"
 					],
 					"rowsSpellProgression": [
 						[
@@ -3603,7 +3603,7 @@
 						],
 						[
 							"13",
-							"{@spell 冰风暴|XPHB}, {@spell 火墙术|XPHB}"
+							"{@spell 冰风暴|XPHB}、{@spell 火墙术|XPHB}"
 						],
 						[
 							"17",
@@ -3836,7 +3836,7 @@
 						],
 						[
 							"5",
-							"{@spell 闪耀斩|XPHB}, {@spell 守护之链|XPHB}"
+							"{@spell 闪耀斩|XPHB}、{@spell 守护之链|XPHB}"
 						],
 						[
 							"9",

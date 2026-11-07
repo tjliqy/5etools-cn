@@ -93,7 +93,7 @@
 			"name": "魔力依赖",
 			"source": "DMG",
 			"entries": [
-				"<$title_short_name$>在{@i 反魔法场}的作用范围内处于{@condition 失能}状态。如果被{@i 解除魔法}针对，<$short_name$>必须在施法者的法术豁免DC上成功进行体质豁免检定，否则将昏迷{@condition 昏迷}1分钟。"
+				"<$title_short_name$>在{@spell 反魔法场}的作用范围内处于{@condition 失能}状态。如果被{@spell 解除魔法}针对，<$short_name$>必须在施法者的法术豁免DC上成功进行体质豁免检定，否则将昏迷{@condition 昏迷}1分钟。"
 			]
 		},
 		{

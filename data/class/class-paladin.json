@@ -158,11 +158,11 @@
 				{
 					"title": "每环法术位",
 					"colLabels": [
-						"{@filter 1st|spells|level=1|class=圣武士}",
-						"{@filter 2nd|spells|level=2|class=圣武士}",
-						"{@filter 3rd|spells|level=3|class=圣武士}",
-						"{@filter 4th|spells|level=4|class=圣武士}",
-						"{@filter 5th|spells|level=5|class=圣武士}"
+						"{@filter 1环|spells|level=1|class=圣武士}",
+						"{@filter 2环|spells|level=2|class=圣武士}",
+						"{@filter 3环|spells|level=3|class=圣武士}",
+						"{@filter 4环|spells|level=4|class=圣武士}",
+						"{@filter 5环|spells|level=5|class=圣武士}"
 					],
 					"rowsSpellProgression": [
 						[
@@ -812,17 +812,19 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Paladin",
+			"ENG_name": "Paladin",
+			"name": "圣骑士",
 			"source": "WoW",
 			"reskinOf": [
-				"Paladin|XPHB"
+				"圣武士|XPHB"
 			],
 			"_copy": {
-				"name": "Paladin",
+				"ENG_name": "Paladin",
+				"name": "圣武士",
 				"source": "XPHB"
 			},
 			"includeSubclassesFrom": [
-				"Paladin|XPHB"
+				"圣武士|XPHB"
 			],
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -1707,24 +1709,27 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Oath of Devotion",
-			"shortName": "Devotion",
+			"ENG_name": "Oath of Devotion",
+			"name": "奉献之誓",
+			"shortName": "奉献",
 			"source": "WoW",
-			"className": "Paladin",
+			"className": "圣骑士",
 			"classSource": "WoW",
 			"_copy": {
-				"name": "Oath of Devotion",
+				"ENG_name": "Oath of Devotion",
+				"name": "奉献之誓",
 				"source": "XPHB",
-				"shortName": "Devotion",
-				"className": "Paladin",
+				"shortName": "奉献",
+				"className": "圣武士",
 				"classSource": "XPHB"
 			}
 		},
 		{
-			"name": "Oath of the Holy",
-			"shortName": "Holy",
+			"ENG_name": "Oath of the Holy",
+			"name": "神圣之誓",
+			"shortName": "神圣",
 			"source": "WoW",
-			"className": "Paladin",
+			"className": "圣骑士",
 			"classSource": "WoW",
 			"edition": "one",
 			"additionalSpells": [
@@ -1732,46 +1737,48 @@
 					"ability": "cha",
 					"prepared": {
 						"3": [
-							"cure wounds|xphb",
-							"healing word|xphb"
+							"疗伤术|xphb",
+							"治愈真言|xphb"
 						],
 						"5": [
-							"lesser restoration|xphb",
-							"prayer of healing|xphb"
+							"次等复原术|xphb",
+							"治疗祷言|xphb"
 						],
 						"9": [
-							"dispel magic|xphb",
-							"mass healing word|xphb"
+							"解除魔法|xphb",
+							"群体治愈真言|xphb"
 						],
 						"13": [
-							"aura of life|xphb",
-							"death ward|xphb"
+							"生命灵光|xphb",
+							"防死结界|xphb"
 						],
 						"17": [
-							"greater restoration|xphb",
-							"mass cure wounds|xphb"
+							"高等复原术|xphb",
+							"群体疗伤术|xphb"
 						]
 					}
 				}
 			],
 			"subclassFeatures": [
-				"Oath of the Holy|Paladin|WoW|Holy|WoW|3",
-				"Lightbringer's Aura|Paladin|WoW|Holy|WoW|7",
-				"Infusion of Light|Paladin|WoW|Holy|WoW|15",
-				"Holy Deliverance|Paladin|WoW|Holy|WoW|20"
+				"神圣之誓|圣骑士|WoW|神圣|WoW|3",
+				"光明使者之辉|圣骑士|WoW|神圣|WoW|7",
+				"圣光灌注|圣骑士|WoW|神圣|WoW|15",
+				"神圣救赎|圣骑士|WoW|神圣|WoW|20"
 			]
 		},
 		{
-			"name": "Oath of Vengeance",
-			"shortName": "Vengeance",
+			"ENG_name": "Oath of Vengeance",
+			"name": "复仇之誓",
+			"shortName": "复仇",
 			"source": "WoW",
-			"className": "Paladin",
+			"className": "圣骑士",
 			"classSource": "WoW",
 			"_copy": {
-				"name": "Oath of Vengeance",
+				"ENG_name": "Oath of Vengeance",
+				"name": "复仇之誓",
 				"source": "XPHB",
-				"shortName": "Vengeance",
-				"className": "Paladin",
+				"shortName": "复仇",
+				"className": "圣武士",
 				"classSource": "XPHB"
 			}
 		}
@@ -4897,6 +4904,159 @@
 					]
 				},
 				"当你对某一生物发动了攻击、施展了法术、或以此特性以外的方式对其造成了伤害，那么此特性将对该生物无效。这一无效将持续到你完成一次长休前，完成长休后，此特性将能再次对那些生物生效。"
+			]
+		},
+		{
+			"ENG_name": "Beacon of Light",
+			"name": "圣光信标",
+			"source": "WoW",
+			"className": "圣骑士",
+			"classSource": "WoW",
+			"subclassShortName": "神圣",
+			"subclassSource": "WoW",
+			"level": 3,
+			"consumes": {
+				"ENG_name": "Channel Divinity",
+				"name": "引导神力"
+			},
+			"entries": [
+				"以一个{@action 魔法|XPHB}动作，你可以消耗一次{@classFeature 引导神力|圣武士|XPHB|3|XPHB}，以圣光能量包裹 60 尺内的一名盟友。持续 1 分钟，每当你以法术或{@classFeature 圣疗|圣武士|XPHB|1|XPHB}治疗受此影响的盟友以外的生物时，被选中的盟友也回复一半数值的{@variantrule 生命值|XPHB}。"
+			]
+		},
+		{
+			"ENG_name": "Oath of the Holy",
+			"name": "神圣之誓",
+			"source": "WoW",
+			"className": "圣骑士",
+			"classSource": "WoW",
+			"subclassShortName": "神圣",
+			"subclassSource": "WoW",
+			"level": 3,
+			"entries": [
+				"{@i 化身圣光的信标}",
+				"神圣之誓团结着那些培育生命、以圣光之力治疗与支援的圣武士。他们将虔诚与美德和武艺相结合，追求道德、利他与自我牺牲的最高标准。",
+				"立下此誓言的圣武士都遵循以下信条。",
+				{
+					"type": "list",
+					"items": [
+						"以服务其他善念之人为生。",
+						"竭尽所能减轻无辜者的苦难。",
+						"让圣光透过你闪耀，驱散黑暗。"
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "神圣之誓法术|圣骑士|WoW|神圣|WoW|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "圣光信标|圣骑士|WoW|神圣|WoW|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Oath of the Holy Spells",
+			"name": "神圣之誓法术",
+			"source": "WoW",
+			"className": "圣骑士",
+			"classSource": "WoW",
+			"subclassShortName": "神圣",
+			"subclassSource": "WoW",
+			"level": 3,
+			"entries": [
+				"你誓言的魔法确保你始终准备好特定法术；当你达到神圣之誓法术表中列出的圣武士等级后，你始终准备好表中列出的法术。",
+				{
+					"type": "table",
+					"caption": "神圣之誓法术",
+					"colLabels": [
+						"圣武士等级",
+						"法术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3",
+							"{@spell 疗伤术|XPHB}, {@spell 治愈真言|XPHB}"
+						],
+						[
+							"5",
+							"{@spell 次等复原术|XPHB}, {@spell 治疗祷言|XPHB}"
+						],
+						[
+							"9",
+							"{@spell 解除魔法|XPHB}, {@spell 群体治愈真言|XPHB}"
+						],
+						[
+							"13",
+							"{@spell 生命灵光|XPHB}，{@spell 防死结界|XPHB}"
+						],
+						[
+							"17",
+							"{@spell 高等复原术|XPHB}、{@spell 群体疗伤术|XPHB}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Lightbringer's Aura",
+			"name": "光明使者之辉",
+			"source": "WoW",
+			"className": "圣骑士",
+			"classSource": "WoW",
+			"subclassShortName": "神圣",
+			"subclassSource": "WoW",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"每当你施展法术或使用{@classFeature 圣疗|圣武士|XPHB|1|XPHB}为你的{@classFeature 守护灵光|圣武士|XPHB|6|XPHB}内一个{@status 浴血|XPHB}生物恢复{@variantrule 生命值|XPHB}时，该生物额外回复{@dice 1d6}点{@variantrule 生命值|XPHB}。"
+			]
+		},
+		{
+			"ENG_name": "Infusion of Light",
+			"name": "圣光灌注",
+			"source": "WoW",
+			"className": "圣骑士",
+			"classSource": "WoW",
+			"subclassShortName": "神圣",
+			"subclassSource": "WoW",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"每当你施展造成光耀伤害的法术时，你为{@classFeature 圣疗|圣武士|XPHB|1|XPHB}特性的治疗之力池补充能量。你的治疗之力池回复等同于该法术光耀伤害掷骰总值的{@variantrule 生命值|XPHB}，至多为你圣武士等级的五倍。"
+			]
+		},
+		{
+			"ENG_name": "Holy Deliverance",
+			"name": "神圣救赎",
+			"source": "WoW",
+			"className": "圣骑士",
+			"classSource": "WoW",
+			"subclassShortName": "神圣",
+			"subclassSource": "WoW",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"以一个{@variantrule 附赠动作|XPHB}，你可以将神圣之力灌注你的{@classFeature 守护灵光|圣武士|XPHB|6|XPHB}，给予以下收益，持续 10 分钟或直到你结束它（无需动作）。使用此特性后，你须完成{@variantrule 长休|XPHB}才能再次使用。你也可以消耗一个 5 环法术位来恢复其使用（无需动作）。",
+				{
+					"ENG_name": "Healing Power",
+					"name": "治疗之力",
+					"type": "entries",
+					"entries": [
+						"每当一名盟友以{@status 浴血|XPHB}状态在灵光中开始其回合，该生物回复等同于你魅力调整值加{@variantrule 熟练|XPHB|熟练加值}的{@variantrule 生命值|XPHB}。"
+					]
+				},
+				{
+					"ENG_name": "Sunlight",
+					"name": "阳光",
+					"type": "entries",
+					"entries": [
+						"你的灵光内变为{@variantrule 明亮光照|XPHB}，视为阳光。"
+					]
+				}
 			]
 		},
 		{

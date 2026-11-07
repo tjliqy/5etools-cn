@@ -296,84 +296,84 @@
 							3,
 							10,
 							2,
-							"{@filter 5th|spells|level=5|class=魔契师}",
+							"{@filter 5环|spells|level=5|class=魔契师}",
 							5
 						],
 						[
 							4,
 							10,
 							2,
-							"{@filter 5th|spells|level=5|class=魔契师}",
+							"{@filter 5环|spells|level=5|class=魔契师}",
 							5
 						],
 						[
 							4,
 							11,
 							3,
-							"{@filter 5th|spells|level=5|class=魔契师}",
+							"{@filter 5环|spells|level=5|class=魔契师}",
 							5
 						],
 						[
 							4,
 							11,
 							3,
-							"{@filter 5th|spells|level=5|class=魔契师}",
+							"{@filter 5环|spells|level=5|class=魔契师}",
 							6
 						],
 						[
 							4,
 							12,
 							3,
-							"{@filter 5th|spells|level=5|class=魔契师}",
+							"{@filter 5环|spells|level=5|class=魔契师}",
 							6
 						],
 						[
 							4,
 							12,
 							3,
-							"{@filter 5th|spells|level=5|class=魔契师}",
+							"{@filter 5环|spells|level=5|class=魔契师}",
 							6
 						],
 						[
 							4,
 							13,
 							3,
-							"{@filter 5th|spells|level=5|class=魔契师}",
+							"{@filter 5环|spells|level=5|class=魔契师}",
 							7
 						],
 						[
 							4,
 							13,
 							3,
-							"{@filter 5th|spells|level=5|class=魔契师}",
+							"{@filter 5环|spells|level=5|class=魔契师}",
 							7
 						],
 						[
 							4,
 							14,
 							4,
-							"{@filter 5th|spells|level=5|class=魔契师}",
+							"{@filter 5环|spells|level=5|class=魔契师}",
 							7
 						],
 						[
 							4,
 							14,
 							4,
-							"{@filter 5th|spells|level=5|class=魔契师}",
+							"{@filter 5环|spells|level=5|class=魔契师}",
 							8
 						],
 						[
 							4,
 							15,
 							4,
-							"{@filter 5th|spells|level=5|class=魔契师}",
+							"{@filter 5环|spells|level=5|class=魔契师}",
 							8
 						],
 						[
 							4,
 							15,
 							4,
-							"{@filter 5th|spells|level=5|class=魔契师}",
+							"{@filter 5环|spells|level=5|class=魔契师}",
 							8
 						]
 					]
@@ -820,17 +820,19 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Warlock",
+			"ENG_name": "Warlock",
+			"name": "术士",
 			"source": "WoW",
 			"reskinOf": [
-				"Warlock|XPHB"
+				"魔契师|XPHB"
 			],
 			"_copy": {
-				"name": "Warlock",
+				"ENG_name": "Warlock",
+				"name": "魔契师",
 				"source": "XPHB"
 			},
 			"includeSubclassesFrom": [
-				"Warlock|XPHB"
+				"魔契师|XPHB"
 			],
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -2020,30 +2022,34 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Fiend Patron",
-			"shortName": "Fiend",
+			"ENG_name": "Fiend Patron",
+			"name": "邪魔宗主",
+			"shortName": "邪魔",
 			"source": "WoW",
-			"className": "Warlock",
+			"className": "术士",
 			"classSource": "WoW",
 			"_copy": {
-				"name": "Fiend Patron",
+				"ENG_name": "Fiend Patron",
+				"name": "邪魔宗主",
 				"source": "XPHB",
-				"shortName": "Fiend",
-				"className": "Warlock",
+				"shortName": "邪魔",
+				"className": "魔契师",
 				"classSource": "XPHB"
 			}
 		},
 		{
-			"name": "Great Old One Patron",
-			"shortName": "Great Old One",
+			"ENG_name": "Great Old One Patron",
+			"name": "旧日支配者宗主",
+			"shortName": "旧日支配者",
 			"source": "WoW",
-			"className": "Warlock",
+			"className": "术士",
 			"classSource": "WoW",
 			"_copy": {
-				"name": "Great Old One Patron",
+				"ENG_name": "Great Old One Patron",
+				"name": "旧日支配者宗主",
 				"source": "XPHB",
-				"shortName": "Great Old One",
-				"className": "Warlock",
+				"shortName": "旧日支配者",
+				"className": "魔契师",
 				"classSource": "XPHB"
 			}
 		}
@@ -2426,6 +2432,20 @@
 						},
 						{
 							"type": "refOptionalfeature",
+							"optionalfeature": "虚空召唤|WoW",
+							"preserve": {
+								"prerequisite": true
+							}
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "腐蚀诅咒|WoW",
+							"preserve": {
+								"prerequisite": true
+							}
+						},
+						{
+							"type": "refOptionalfeature",
 							"optionalfeature": "魔鬼视界|XPHB",
 							"preserve": {
 								"prerequisite": true
@@ -2461,6 +2481,13 @@
 						},
 						{
 							"type": "refOptionalfeature",
+							"optionalfeature": "弃子仆从|WoW",
+							"preserve": {
+								"prerequisite": true
+							}
+						},
+						{
+							"type": "refOptionalfeature",
 							"optionalfeature": "邪魔活力|XPHB",
 							"preserve": {
 								"prerequisite": true
@@ -2489,7 +2516,21 @@
 						},
 						{
 							"type": "refOptionalfeature",
+							"optionalfeature": "生命通道|WoW",
+							"preserve": {
+								"prerequisite": true
+							}
+						},
+						{
+							"type": "refOptionalfeature",
 							"optionalfeature": "链主赋能|XPHB",
+							"preserve": {
+								"prerequisite": true
+							}
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "军团召唤|WoW",
 							"preserve": {
 								"prerequisite": true
 							}
@@ -2511,6 +2552,13 @@
 						{
 							"type": "refOptionalfeature",
 							"optionalfeature": "千面之脸|XPHB",
+							"preserve": {
+								"prerequisite": true
+							}
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "恶魔学识大师|WoW",
 							"preserve": {
 								"prerequisite": true
 							}
@@ -2553,6 +2601,13 @@
 						{
 							"type": "refOptionalfeature",
 							"optionalfeature": "链之魔契|XPHB",
+							"preserve": {
+								"prerequisite": true
+							}
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "军团契约|WoW",
 							"preserve": {
 								"prerequisite": true
 							}
