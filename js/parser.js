@@ -3525,6 +3525,8 @@ Parser.SRC_FFotR = "FFotR";
 Parser.SRC_RHW = "RHW";
 Parser.SRC_AU = "AU";
 Parser.SRC_AUD = "AUD";
+Parser.SRC_WoW = "WoW";
+Parser.SRC_ICC = "ICC";
 
 Parser.SRC_TD = "TD";
 Parser.SRC_SCREEN = "Screen";
@@ -3569,8 +3571,7 @@ Parser.SRC_BQDD = "BQDD";
 Parser.SRC_SoS = "SoS";
 Parser.SRC_RWG = "RWG";
 Parser.SRC_PL = "PL";
-Parser.SRC_WoW = "WoW";
-Parser.SRC_ICC = "ICC";
+Parser.SRC_DDE = "DDE";
 
 Parser.SRC_PS_PREFIX = "PS";
 
@@ -3739,6 +3740,9 @@ Parser.SOURCE_JSON_TO_FULL[Parser.SRC_FFotR] = "隐士的命定航旅";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_RHW] = "鸦阁魔域：魔障深藏";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_AU] = "启封奥秘";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_AUD] = "启封奥秘：死亡陷阱";
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_WoW] = "D&D: 魔兽世界";
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_ICC] = "魔兽世界：冰冠堡垒";
+
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_TD] = "塔罗牌";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_SCREEN] = "地下城主帷幕";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_SCREEN_WILDERNESS_KIT] = "地下城主帷幕：荒野套组";
@@ -3796,8 +3800,7 @@ Parser.SOURCE_JSON_TO_FULL[Parser.SRC_BQDD] = "边陲之地任务：匕首危机
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_SoS] = "席斯库斯之影";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_RWG] = "红袍巫师的博弈";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PL] = "拉莫迪亚计划";
-Parser.SOURCE_JSON_TO_FULL[Parser.SRC_WoW] = "D&D：魔兽世界";
-Parser.SOURCE_JSON_TO_FULL[Parser.SRC_ICC] = "魔兽世界：冰冠堡垒";
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_DDE] = "魔兽世界：死亡矿井";
 
 Parser.SOURCE_JSON_TO_ABV = {};
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHB] = "PHB'14";
@@ -3930,6 +3933,9 @@ Parser.SOURCE_JSON_TO_ABV[Parser.SRC_FFotR] = "FFotR";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_RHW] = "RHW";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_AU] = "AU";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_AUD] = "AUD";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_WoW] = "WoW";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_ICC] = "ICC";
+
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_TD] = "TD";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_SCREEN] = "Scr'14";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_SCREEN_WILDERNESS_KIT] = "ScrWild";
@@ -3987,8 +3993,7 @@ Parser.SOURCE_JSON_TO_ABV[Parser.SRC_BQDD] = "BQDD";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_SoS] = "SoS";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_RWG] = "RWG";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PL] = "PL";
-Parser.SOURCE_JSON_TO_ABV[Parser.SRC_WoW] = "WoW";
-Parser.SOURCE_JSON_TO_ABV[Parser.SRC_ICC] = "ICC";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_DDE] = "DDE";
 
 Parser.SOURCE_JSON_TO_DATE = {};
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_PHB] = "2014-08-19";
@@ -4120,6 +4125,9 @@ Parser.SOURCE_JSON_TO_DATE[Parser.SRC_FFotR] = "2025-12-09";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_RHW] = "2026-06-16";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_AU] = "2026-09-15";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_AUD] = "2026-09-15";
+Parser.SOURCE_JSON_TO_DATE[Parser.SRC_WoW] = "2026-11-17";
+Parser.SOURCE_JSON_TO_DATE[Parser.SRC_ICC] = "2026-11-17";
+
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_TD] = "2022-05-24";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_SCREEN] = "2015-01-20";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_SCREEN_WILDERNESS_KIT] = "2020-11-17";
@@ -4177,8 +4185,7 @@ Parser.SOURCE_JSON_TO_DATE[Parser.SRC_BQDD] = "2026-05-28";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_SoS] = "2026-05-29";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_RWG] = "2026-09-15";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_PL] = "2026-10-13";
-Parser.SOURCE_JSON_TO_DATE[Parser.SRC_WoW] = "2026-11-17";
-Parser.SOURCE_JSON_TO_DATE[Parser.SRC_ICC] = "2026-11-17";
+Parser.SOURCE_JSON_TO_DATE[Parser.SRC_DDE] = "2026-11-03";
 
 // region Source categories
 Parser.SOURCES_ADVENTURES = new Set([
@@ -4286,6 +4293,7 @@ Parser.SOURCES_ADVENTURES = new Set([
 	Parser.SRC_SoS,
 	Parser.SRC_RWG,
 	Parser.SRC_PL,
+	Parser.SRC_DDE,
 	Parser.SRC_ICC,
 ]);
 Parser.SOURCES_CORE_SUPPLEMENTS = new Set(Object.keys(Parser.SOURCE_JSON_TO_FULL).filter(it => !Parser.SOURCES_ADVENTURES.has(it)));
@@ -4339,6 +4347,7 @@ Parser.SOURCES_NON_STANDARD_WOTC = new Set([
 	Parser.SRC_SoS,
 	Parser.SRC_RWG,
 	Parser.SRC_PL,
+	Parser.SRC_DDE,
 ]);
 Parser.SOURCES_PARTNERED_WOTC = new Set([
 	/*
@@ -4665,6 +4674,7 @@ Parser.SOURCES_AVAILABLE_DOCS_ADVENTURE = {};
 	Parser.SRC_AUD,
 	Parser.SRC_RWG,
 	Parser.SRC_SoS,
+	Parser.SRC_DDE,
 	Parser.SRC_ICC,
 ].forEach(src => {
 	Parser.SOURCES_AVAILABLE_DOCS_ADVENTURE[src] = src;

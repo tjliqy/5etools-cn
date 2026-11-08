@@ -112,27 +112,27 @@
 							"rows": [
 								[
 									"1\u20134",
-									"{@dice 1d10}",
-									"{@dice 2d10}",
-									"{@dice 4d10}"
+									"{@damage 1d10}",
+									"{@damage 2d10}",
+									"{@damage 4d10}"
 								],
 								[
 									"5\u201310",
-									"{@dice 2d10}",
-									"{@dice 4d10}",
-									"{@dice 10d10}"
+									"{@damage 2d10}",
+									"{@damage 4d10}",
+									"{@damage 10d10}"
 								],
 								[
 									"11\u201316",
-									"{@dice 4d10}",
-									"{@dice 10d10}",
-									"{@dice 18d10}"
+									"{@damage 4d10}",
+									"{@damage 10d10}",
+									"{@damage 18d10}"
 								],
 								[
 									"17\u201320",
-									"{@dice 10d10}",
-									"{@dice 18d10}",
-									"{@dice 24d10}"
+									"{@damage 10d10}",
+									"{@damage 18d10}",
+									"{@damage 24d10}"
 								]
 							]
 						},

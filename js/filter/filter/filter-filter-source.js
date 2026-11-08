@@ -128,7 +128,7 @@ export class SourceFilter extends Filter {
 		const btnAdventures = veE({
 			tag: "button",
 			clazz: `ve-btn ve-btn-default ve-w-100 ${opts.isMulti ? "ve-btn-xxs" : "ve-btn-xs"}`,
-			title: `按住 Shift 可加入现有选择；按住 ALT 进行相交；按住 Ctrl 可包含 UA。`,
+			title: `按住 Shift 可加入现有选择；按住 ALT 进行相交；按住 Ctrl 可包含 UA等。`,
 			html: `冒险`,
 			click: evt => this._doSetPinsAdventures({isIncludeUnofficial: EventUtil.isCtrlMetaKey(evt), isAdditive: evt.shiftKey, isIntersection: EventUtil.isAltOptionKey(evt)}),
 		});
@@ -319,11 +319,19 @@ export class SourceFilter extends Filter {
 	}
 
 	_doSetPinsSupplements ({isIncludeUnofficial = false, ...opts} = {}) {
-		this._doSetPins({...opts, fnIsMatch: k => SourceUtil.isCoreOrSupplement(k) && (isIncludeUnofficial || !SourceUtil.isNonstandardSource(k))});
+		this._doSetPins({
+			...opts,
+			fnIsMatch: k => SourceUtil.isCoreOrSupplement(k)
+				&& (isIncludeUnofficial || (!SourceUtil.isNonstandardSource(k) && !SourceUtil.isUniversesBeyondSource(k))),
+		});
 	}
 
 	_doSetPinsAdventures ({isIncludeUnofficial = false, ...opts} = {}) {
-		this._doSetPins({...opts, fnIsMatch: k => SourceUtil.isAdventure(k) && (isIncludeUnofficial || !SourceUtil.isNonstandardSource(k))});
+		this._doSetPins({
+			...opts,
+			fnIsMatch: k => SourceUtil.isAdventure(k)
+				&& (isIncludeUnofficial || (!SourceUtil.isNonstandardSource(k) && !SourceUtil.isUniversesBeyondSource(k))),
+		});
 	}
 
 	_doSetPinsHomebrew (opts) {

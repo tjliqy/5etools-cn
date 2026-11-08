@@ -133,7 +133,11 @@
 											"height": 1964,
 											"imageType": "map",
 											"grid": {
-												"type": "square"
+												"type": "square",
+												"size": 87,
+												"offsetX": -11,
+												"offsetY": 16,
+												"scale": 2
 											},
 											"title": "地图 0.1：圣光之锤",
 											"credit": "Blizzard Artist, Marc Moureau"
@@ -149,7 +153,11 @@
 											"height": 1963,
 											"imageType": "mapPlayer",
 											"grid": {
-												"type": "square"
+												"type": "square",
+												"size": 87,
+												"offsetX": -11,
+												"offsetY": 16,
+												"scale": 2
 											},
 											"title": "玩家版本",
 											"credit": "Blizzard Artist, Marc Moureau",
@@ -808,7 +816,10 @@
 													"height": 1210,
 													"imageType": "map",
 													"grid": {
-														"type": "none"
+														"type": "none",
+														"size": 149,
+														"scale": 2,
+														"distance": 90
 													},
 													"title": "地图 0.2：冰冠堡垒",
 													"credit": "Blizzard Artist, Marc Moureau"
@@ -824,7 +835,10 @@
 													"height": 1210,
 													"imageType": "mapPlayer",
 													"grid": {
-														"type": "none"
+														"type": "none",
+														"size": 149,
+														"scale": 2,
+														"distance": 90
 													},
 													"title": "玩家版本",
 													"credit": "Blizzard Artist, Marc Moureau",
@@ -944,7 +958,11 @@
 											"height": 1451,
 											"imageType": "map",
 											"grid": {
-												"type": "square"
+												"type": "square",
+												"size": 190,
+												"offsetX": -54,
+												"offsetY": 70,
+												"scale": 12
 											},
 											"title": "地图 1：尖塔下层与颅骨之墙",
 											"credit": "Blizzard Artist, Marc Moureau"
@@ -960,7 +978,11 @@
 											"height": 1448,
 											"imageType": "mapPlayer",
 											"grid": {
-												"type": "square"
+												"type": "square",
+												"size": 190,
+												"offsetX": -54,
+												"offsetY": 70,
+												"scale": 12
 											},
 											"title": "玩家版本",
 											"credit": "Blizzard Artist, Marc Moureau",
@@ -1400,7 +1422,11 @@
 											"height": 1523,
 											"imageType": "map",
 											"grid": {
-												"type": "square"
+												"type": "square",
+												"size": 192,
+												"offsetX": -20,
+												"offsetY": 100,
+												"scale": 12
 											},
 											"title": "地图 2：萨鲁法尔之台、尖塔上层与瘟疫工坊",
 											"credit": "Blizzard Artist, Marc Moureau"
@@ -1416,7 +1442,11 @@
 											"height": 1519,
 											"imageType": "mapPlayer",
 											"grid": {
-												"type": "square"
+												"type": "square",
+												"size": 192,
+												"offsetX": -20,
+												"offsetY": 100,
+												"scale": 12
 											},
 											"title": "玩家版本",
 											"credit": "Blizzard Artist, Marc Moureau",
@@ -1957,7 +1987,11 @@
 											"height": 1080,
 											"imageType": "map",
 											"grid": {
-												"type": "square"
+												"type": "square",
+												"size": 192,
+												"offsetX": 7,
+												"offsetY": -9,
+												"scale": 10
 											},
 											"title": "地图 3：血色厅堂",
 											"credit": "Blizzard Artist, Marc Moureau"
@@ -1973,7 +2007,11 @@
 											"height": 1080,
 											"imageType": "mapPlayer",
 											"grid": {
-												"type": "square"
+												"type": "square",
+												"size": 192,
+												"offsetX": 7,
+												"offsetY": -9,
+												"scale": 10
 											},
 											"title": "玩家版本",
 											"credit": "Blizzard Artist, Marc Moureau",
@@ -2302,7 +2340,11 @@
 											"height": 1070,
 											"imageType": "map",
 											"grid": {
-												"type": "square"
+												"type": "square",
+												"size": 216,
+												"offsetX": 37,
+												"offsetY": 155,
+												"scale": 12
 											},
 											"title": "地图 4：霜翼大厅",
 											"credit": "Blizzard Artist, Marc Moureau"
@@ -2318,7 +2360,11 @@
 											"height": 1070,
 											"imageType": "mapPlayer",
 											"grid": {
-												"type": "square"
+												"type": "square",
+												"size": 216,
+												"offsetX": 37,
+												"offsetY": 155,
+												"scale": 12
 											},
 											"title": "玩家版本",
 											"credit": "Blizzard Artist, Marc Moureau",
@@ -2663,7 +2709,10 @@
 											"height": 1268,
 											"imageType": "map",
 											"grid": {
-												"type": "square"
+												"type": "square",
+												"size": 54,
+												"offsetX": 13,
+												"offsetY": 13
 											},
 											"title": "地图 5：冰封王座",
 											"credit": "Blizzard Artist, Marc Moureau"
@@ -2679,7 +2728,10 @@
 											"height": 1265,
 											"imageType": "mapPlayer",
 											"grid": {
-												"type": "square"
+												"type": "square",
+												"size": 54,
+												"offsetX": 13,
+												"offsetY": 11
 											},
 											"title": "玩家版本",
 											"credit": "Blizzard Artist, Marc Moureau",
