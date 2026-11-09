@@ -1029,7 +1029,8 @@
 				"武僧|XPHB"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Kiwee"
 		}
 	],
 	"subclass": [
@@ -1989,7 +1990,8 @@
 				"shortName": "命流",
 				"className": "武僧",
 				"classSource": "XPHB"
-			}
+			},
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Warrior of Mystic Brews",
@@ -2006,7 +2008,8 @@
 				"老练酒师|武僧|WoW|秘酿|WoW|11",
 				"酿酒大师|武僧|WoW|秘酿|WoW|17",
 				"酣醉若狂|武僧|WoW|秘酿|WoW|17"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Warrior of the Open Hand",
@@ -2022,7 +2025,8 @@
 				"shortName": "散打",
 				"className": "武僧",
 				"classSource": "XPHB"
-			}
+			},
+			"translator": "Kiwee"
 		}
 	],
 	"classFeature": [
@@ -4645,7 +4649,8 @@
 			"level": 3,
 			"entries": [
 				"你获得{@skill 表演|XPHB}技能的熟练项；若你已拥有，则改为从武僧 1 级可选技能中选择一项获得熟练项。如果你尚无{@item 酿酒工具|XPHB}熟练项，你还获得它。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Drunken Technique",
@@ -4658,7 +4663,8 @@
 			"level": 3,
 			"entries": [
 				"你移动时身法迅疾、辗转腾挪。每当你使用{@classFeature 坚强防御|武僧|XPHB|2|XPHB}消耗一点{@classFeature 武僧武功|武僧|XPHB|2|XPHB|Focus Point}，你的{@variantrule 速度|XPHB}提高 10 尺直到当前回合结束，且你可以在该{@variantrule 附赠动作|XPHB}之后立即进行一次{@variantrule 徒手打击|XPHB}。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Warrior of Mystic Brews",
@@ -4681,7 +4687,8 @@
 					"type": "refSubclassFeature",
 					"subclassFeature": "醉拳技巧|武僧|WoW|秘酿|WoW|3"
 				}
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Enhancing a Magical Beverage",
@@ -4698,7 +4705,8 @@
 			},
 			"entries": [
 				"当你酿造魔法饮品时，你可以消耗 1 点{@classFeature 武僧武功|武僧|XPHB|2|XPHB|Focus Point}，将其收益的持续时间延长为 8 小时。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Leap to Your Feet",
@@ -4711,7 +4719,8 @@
 			"level": 6,
 			"entries": [
 				"当你处于{@condition 倒地|XPHB}状态时，你可以只消耗 5 尺移动来起身。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Redirect Attack",
@@ -4728,7 +4737,8 @@
 			},
 			"entries": [
 				"当一个敌人以近战攻击检定错过你时，你可以以一个{@variantrule 反应|XPHB}并消耗 1 点{@classFeature 武僧武功|武僧|XPHB|2|XPHB|Focus Point}，使该攻击转而命中你 5 尺内一个由你选择、除攻击者以外的可见生物。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Mystic Brew",
@@ -4778,7 +4788,8 @@
 					"type": "refSubclassFeature",
 					"subclassFeature": "强化魔法饮品|武僧|WoW|秘酿|WoW|6"
 				}
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Tipsy Sway",
@@ -4806,7 +4817,8 @@
 						}
 					]
 				}
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Wizened Brewer",
@@ -4844,7 +4856,8 @@
 						}
 					]
 				}
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Intoxicated Frenzy",
@@ -4858,7 +4871,8 @@
 			"header": 2,
 			"entries": [
 				"在你使用{@classFeature 坚强防御|武僧|XPHB|2|XPHB}后立即，你可以移动至多等同于你{@variantrule 速度|XPHB}的距离。在此移动期间，每当你进入某生物 5 尺内的空间，你可以对它进行一次{@variantrule 徒手打击|XPHB}。此外，当你以此特性赋予的{@variantrule 徒手打击|XPHB}命中一个生物时，该生物必须通过敏捷豁免，否则受{@condition 倒地|XPHB}状态。一个生物每回合只能被此特性赋予的{@variantrule 徒手打击|XPHB}指定一次。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Master Brewer",
@@ -4872,7 +4886,8 @@
 			"header": 2,
 			"entries": [
 				"当你使用{@subclassFeature 秘酿|武僧|WoW|秘酿|WoW|6|WoW}特性酿造魔法饮品时，你可以选择两个不同选项并酿出一瓶魔法饮品。饮用该饮品在持续时间内同时提供两个选项的效果。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Warrior of the Mystic Arts",

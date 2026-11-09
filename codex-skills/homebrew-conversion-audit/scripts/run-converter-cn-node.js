@@ -134,7 +134,7 @@ function _parseBonusMap (line, prefix) {
 		魅力: "cha",
 		察觉: "perception",
 		隐匿: "stealth",
-		生存: "survival",
+		求生: "survival",
 	};
 	for (const part of body.split(/[、,，]/u).map(it => it.trim()).filter(Boolean)) {
 		const match = /(?<name>[\p{Script=Han}A-Za-z]+)\s*(?<bonus>[+-]\d+)/u.exec(part);

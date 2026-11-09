@@ -71,7 +71,8 @@
 			],
 			"subclassTitle": "恶魔猎手子职",
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Kiwee"
 		}
 	],
 	"subclass": [
@@ -90,7 +91,7 @@
 					"ability": "wis",
 					"prepared": {
 						"3": [
-							"掷刃|wow",
+							"投掷利刃|wow",
 							"吞噬灵魂|wow"
 						],
 						"5": [
@@ -102,7 +103,7 @@
 							"灵魂收割|wow"
 						],
 						"13": [
-							"混沌新星|wow",
+							"混乱新星|wow",
 							"坍缩之星|wow"
 						],
 						"17": [
@@ -117,8 +118,8 @@
 					"ability": "wis",
 					"prepared": {
 						"3": [
-							"掷刃|wow",
-							"邪能冲刺|wow"
+							"投掷利刃|wow",
+							"邪能冲撞|wow"
 						],
 						"5": [
 							"烈焰咒符|wow",
@@ -129,7 +130,7 @@
 							"闪现术|xphb"
 						],
 						"13": [
-							"混沌新星|wow",
+							"混乱新星|wow",
 							"火焰护盾|xphb"
 						],
 						"17": [
@@ -144,7 +145,7 @@
 					"ability": "wis",
 					"prepared": {
 						"3": [
-							"掷刃|wow",
+							"投掷利刃|wow",
 							"地狱火撞击|wow"
 						],
 						"5": [
@@ -156,7 +157,7 @@
 							"恶魔尖刺|wow"
 						],
 						"13": [
-							"混沌新星|wow",
+							"混乱新星|wow",
 							"放逐术|xphb"
 						],
 						"17": [
@@ -171,7 +172,8 @@
 				"折磨|恶魔猎手|WoW|恶魔猎手|WoW|7",
 				"伊利达雷学识|恶魔猎手|WoW|恶魔猎手|WoW|11",
 				"灵魂破碎|恶魔猎手|WoW|恶魔猎手|WoW|15"
-			]
+			],
+			"translator": "Kiwee"
 		}
 	],
 	"classFeature": [
@@ -231,7 +233,8 @@
 						}
 					]
 				}
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Deft Explorer",
@@ -263,7 +266,8 @@
 						}
 					]
 				}
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Fighting Style",
@@ -287,7 +291,8 @@
 					"type": "refFeat",
 					"feat": "虚空战士|WoW"
 				}
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Demon Hunter Subclass",
@@ -298,7 +303,8 @@
 			"level": 3,
 			"entries": [
 				"你获得一个自选的恶魔猎手子职。子职是一种专精方向，在特定恶魔猎手等级给予你特性。在余下的生涯中，你获得子职中所有等级不高于你恶魔猎手等级的特性。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Improved Spectral Sight",
@@ -310,7 +316,8 @@
 			"entries": [
 				"此特性取代游侠的{@classFeature 野性感官|游侠|XPHB|18|XPHB}特性。",
 				"你具有 30 尺{@sense 真实视觉|XPHB}。"
-			]
+			],
+			"translator": "Kiwee"
 		}
 	],
 	"subclassFeature": [
@@ -338,7 +345,8 @@
 					"type": "refSubclassFeature",
 					"subclassFeature": "幽灵视觉|恶魔猎手|WoW|恶魔猎手|WoW|3"
 				}
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Demon Hunter Spells",
@@ -371,9 +379,9 @@
 					"rows": [
 						[
 							"3",
-							"{@spell 掷刃|WoW|掷刃}",
+							"{@spell 投掷利刃|WoW|投掷利刃}",
 							"{@spell 吞噬灵魂|WoW|吞噬灵魂}",
-							"{@spell 邪能冲刺|WoW|邪能冲刺}",
+							"{@spell 邪能冲撞|WoW|邪能冲撞}",
 							"{@spell 地狱火撞击|WoW|地狱火撞击}"
 						],
 						[
@@ -392,7 +400,7 @@
 						],
 						[
 							"13",
-							"{@spell 混沌新星|WoW|混沌新星}",
+							"{@spell 混乱新星|WoW|混乱新星}",
 							"{@spell 坍缩之星|WoW|坍缩之星}",
 							"{@spell 火焰护盾|XPHB}",
 							"{@spell 放逐术|XPHB}"
@@ -406,7 +414,8 @@
 						]
 					]
 				}
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Double Jump",
@@ -423,11 +432,12 @@
 			},
 			"entries": [
 				"你可以消耗一枚灵魂碎片，施展{@spell 羽落术|XPHB}或{@spell 跳跃术|XPHB}而不消耗法术位。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Soul Cleave",
-			"name": "灵魂裂解",
+			"name": "灵魂裂劈",
 			"source": "WoW",
 			"className": "恶魔猎手",
 			"classSource": "WoW",
@@ -440,7 +450,8 @@
 			},
 			"entries": [
 				"你的每回合一次，当你采取{@action 攻击|XPHB}动作时，你可以消耗一枚灵魂碎片，将其中一次攻击替换为一道灵魂能量旋风。以你为中心 10 尺{@variantrule 光环 [效应区域]|XPHB|光环}内的每个生物进行敏捷豁免。豁免失败的生物受{@damage 1d12}加你的感知调整值点心灵伤害，你回复等同于你感知调整值的{@variantrule 生命值|XPHB}。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Soul Fragments",
@@ -471,7 +482,7 @@
 								},
 								{
 									"type": "refSubclassFeature",
-									"subclassFeature": "灵魂裂解|恶魔猎手|WoW|恶魔猎手|WoW|3"
+									"subclassFeature": "灵魂裂劈|恶魔猎手|WoW|恶魔猎手|WoW|3"
 								}
 							]
 						}
@@ -485,7 +496,8 @@
 						"当你 30 尺内一个可见敌人死亡时，你可以以一个{@variantrule 反应|XPHB}恢复一枚已消耗的灵魂碎片。"
 					]
 				}
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Spectral Sight",
@@ -498,7 +510,8 @@
 			"level": 3,
 			"entries": [
 				"你获得 10 尺距离的{@sense 盲视|XPHB}。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Torment",
@@ -531,7 +544,8 @@
 						}
 					]
 				}
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Disrupt",
@@ -549,7 +563,8 @@
 			},
 			"entries": [
 				"你可以消耗两枚灵魂碎片，响应该法术的触发时机施展{@spell 法术反制|XPHB}，使用你的施法属性。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Warglaive Mastery",
@@ -565,8 +580,9 @@
 				"name": "灵魂碎片"
 			},
 			"entries": [
-				"以一个{@variantrule 附赠动作|XPHB}，你可以消耗一枚灵魂碎片，施展{@spell 掷刃|WoW}而不消耗法术位。"
-			]
+				"以一个{@variantrule 附赠动作|XPHB}，你可以消耗一枚灵魂碎片，施展{@spell 投掷利刃|WoW}而不消耗法术位。"
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Illidari Knowledge",
@@ -594,7 +610,8 @@
 						}
 					]
 				}
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Soul Shatter",
@@ -607,9 +624,10 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
-				"你对邪能魔法的掌控更上层楼。当你使用{@subclassFeature 灵魂碎片|恶魔猎手|WoW|恶魔猎手|WoW|3|WoW}的{@subclassFeature 灵魂裂解|恶魔猎手|WoW|恶魔猎手|WoW|3|WoW}选项时，伤害提高到{@damage 2d12}加你的感知调整值。",
+				"你对邪能魔法的掌控更上层楼。当你使用{@subclassFeature 灵魂碎片|恶魔猎手|WoW|恶魔猎手|WoW|3|WoW}的{@subclassFeature 灵魂裂劈|恶魔猎手|WoW|恶魔猎手|WoW|3|WoW}选项时，伤害提高到{@damage 2d12}加你的感知调整值。",
 				"此外，当你掷{@variantrule 先攻|XPHB}时，如果你没有灵魂碎片，则恢复一枚。"
-			]
+			],
+			"translator": "Kiwee"
 		}
 	]
 }

@@ -73,7 +73,8 @@
 			],
 			"subclassTitle": "猎人子职",
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Kiwee"
 		}
 	],
 	"subclass": [
@@ -100,7 +101,8 @@
 						]
 					}
 				}
-			}
+			},
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Hunter",
@@ -125,7 +127,8 @@
 						]
 					}
 				}
-			}
+			},
+			"translator": "Kiwee"
 		}
 	],
 	"classFeature": [
@@ -138,7 +141,8 @@
 			"level": 3,
 			"entries": [
 				"你获得一个自选的猎人子职。子职是一种专精方向，在特定猎人等级给予你特性。在余下的生涯中，你获得子职中所有等级不高于你猎人等级的特性。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Subclass Feature",
@@ -149,7 +153,8 @@
 			"level": 6,
 			"entries": [
 				"你获得一个来自你猎人子职的特性。"
-			]
+			],
+			"translator": "Kiwee"
 		}
 	],
 	"subclassFeature": [
@@ -190,7 +195,8 @@
 						"你的{@variantrule 生命值|XPHB|生命值}上限增加6点。每当你获得一个游侠等级，你的{@variantrule 生命值|XPHB|生命值}上限额外增加1点{@variantrule 生命值|XPHB|生命值}。你的原始野兽的{@variantrule 生命值|XPHB|生命值}上限也会增加等同于你游侠等级的点数。此外，你的原始野兽可以使用它的动作施放{@spell 石肤术|XPHB}而无需任何法术成分，效果作用于它自身和你（如果你在范围内）。一旦它这样做，直到你完成一次{@variantrule 长休|XPHB}前，它不能再这样做。"
 					]
 				}
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Roving",
@@ -204,7 +210,8 @@
 			"header": 2,
 			"entries": [
 				"只要你未着装重甲，你的{@variantrule 速度|XPHB}提升 10 尺。你也获得{@variantrule 攀爬速度|XPHB}和{@variantrule 游泳速度|XPHB}（等于你的{@variantrule 速度|XPHB}）。"
-			]
+			],
+			"translator": "Kiwee"
 		}
 	]
 }

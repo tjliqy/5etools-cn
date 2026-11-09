@@ -33,7 +33,8 @@
 			],
 			"subclassTitle": "牧师子职",
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Kiwee"
 		}
 	],
 	"subclass": [
@@ -56,7 +57,7 @@
 							"虔诚护盾|xphb"
 						],
 						"5": [
-							"恢复祷言|wow",
+							"愈合祷言|wow",
 							"防护能量|xphb"
 						],
 						"7": [
@@ -73,9 +74,10 @@
 			"subclassFeatures": [
 				"戒律领域|牧师|WoW|戒律|WoW|3",
 				"辉光屏障|牧师|WoW|戒律|WoW|6",
-				"终极忏悔|牧师|WoW|戒律|WoW|17"
+				"终极苦修|牧师|WoW|戒律|WoW|17"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Life Domain",
@@ -91,7 +93,8 @@
 				"shortName": "生命",
 				"className": "牧师",
 				"classSource": "XPHB"
-			}
+			},
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Shadow Domain",
@@ -117,7 +120,7 @@
 						],
 						"7": [
 							"艾伐黑触手|xphb",
-							"灵魔恐惧|wow"
+							"心灵惊骇|wow"
 						],
 						"9": [
 							"支配类人|xphb",
@@ -129,8 +132,9 @@
 			"subclassFeatures": [
 				"暗影领域|牧师|WoW|暗影|WoW|3",
 				"消散|牧师|WoW|暗影|WoW|6",
-				"吸血的拥抱|牧师|WoW|暗影|WoW|17"
-			]
+				"吸血鬼的拥抱|牧师|WoW|暗影|WoW|17"
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "War Domain",
@@ -146,13 +150,14 @@
 				"shortName": "战争",
 				"className": "牧师",
 				"classSource": "XPHB"
-			}
+			},
+			"translator": "Kiwee"
 		}
 	],
 	"subclassFeature": [
 		{
 			"ENG_name": "Atonement",
-			"name": "赎罪",
+			"name": "救赎",
 			"source": "WoW",
 			"className": "牧师",
 			"classSource": "WoW",
@@ -161,7 +166,8 @@
 			"level": 3,
 			"entries": [
 				"当你施展的 1 环及以上法术为一个或多个生物恢复{@variantrule 生命值|XPHB}时，这些生物各获得一份祝福，持续到你的下个回合结束。每当你使用法术位施展对一个生物造成伤害的法术时，每个受祝福的生物额外回复等同于你施展该伤害法术所用法术位环阶的{@variantrule 生命值|XPHB}。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Discipline Domain",
@@ -185,9 +191,10 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "赎罪|牧师|WoW|戒律|WoW|3"
+					"subclassFeature": "救赎|牧师|WoW|戒律|WoW|3"
 				}
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Discipline Spells",
@@ -218,7 +225,7 @@
 						],
 						[
 							"5",
-							"{@spell 恢复祷言|WoW}, {@spell 防护能量|XPHB}"
+							"{@spell 愈合祷言|WoW}, {@spell 防护能量|XPHB}"
 						],
 						[
 							"7",
@@ -230,7 +237,8 @@
 						]
 					]
 				}
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Holy Bolt",
@@ -247,7 +255,8 @@
 			},
 			"entries": [
 				"以一个{@variantrule 附赠动作|XPHB}，你亮出{@item 圣徽|XPHB}并消耗一次{@classFeature 引导神力|牧师|XPHB|2|XPHB}，进行一次远程法术攻击，向 60 尺内一个生物掷出神圣能量之矢。命中时，目标受{@damage 2d10}加你的感知调整值点光耀伤害，且你可以选择 60 尺内一个可见生物，令其回复{@dice 1d10}加你的感知调整值点{@variantrule 生命值|XPHB}。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Luminous Barrier",
@@ -264,12 +273,13 @@
 				"name": "引导神力"
 			},
 			"entries": [
-				"以一个{@variantrule 附赠动作|XPHB}，你可以消耗一次{@classFeature 引导神力|牧师|XPHB|2|XPHB}，为每个被你的{@subclassFeature 赎罪|牧师|WoW|戒律|WoW|3|WoW}祝福的生物附上发光的魔法守护。每个受影响的生物获得等同于你牧师等级加感知调整值的{@variantrule 临时生命值|XPHB}。只要生物拥有由此特性获得的{@variantrule 临时生命值|XPHB}，它便对所有伤害具有{@variantrule 抗性|XPHB}。"
-			]
+				"以一个{@variantrule 附赠动作|XPHB}，你可以消耗一次{@classFeature 引导神力|牧师|XPHB|2|XPHB}，为每个被你的{@subclassFeature 救赎|牧师|WoW|戒律|WoW|3|WoW}祝福的生物附上发光的魔法守护。每个受影响的生物获得等同于你牧师等级加感知调整值的{@variantrule 临时生命值|XPHB}。只要生物拥有由此特性获得的{@variantrule 临时生命值|XPHB}，它便对所有伤害具有{@variantrule 抗性|XPHB}。"
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Ultimate Penitence",
-			"name": "终极忏悔",
+			"name": "终极苦修",
 			"source": "WoW",
 			"className": "牧师",
 			"classSource": "WoW",
@@ -295,11 +305,12 @@
 						"当你使用{@subclassFeature 神圣之矢|牧师|WoW|戒律|WoW|3|WoW}时，你可以作为该{@variantrule 附赠动作|XPHB}的一部分消耗一个法术位，掷出等同于所耗法术位环阶数量的额外能量矢。你可以让能量矢命中一个或多个生物。每道能量矢分别进行攻击检定。"
 					]
 				}
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Devouring Plague",
-			"name": "吞噬瘟疫",
+			"name": "噬灵瘟疫",
 			"source": "WoW",
 			"className": "牧师",
 			"classSource": "WoW",
@@ -309,7 +320,8 @@
 			"entries": [
 				"当你 30 尺内一个可见生物豁免检定失败时，你可以使该生物受{@damage 1d10}点黯蚀伤害。若如此做，你回复等同于所造成黯蚀伤害的{@variantrule 生命值|XPHB}。",
 				"你可以使用该特性的次数等同于你的感知调整值（最少 1 次）。你在完成一次{@variantrule 长休|XPHB}时重获所有已消耗的使用次数。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Shadow Domain",
@@ -333,9 +345,10 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "吞噬瘟疫|牧师|WoW|暗影|WoW|3"
+					"subclassFeature": "噬灵瘟疫|牧师|WoW|暗影|WoW|3"
 				}
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Shadow Spells",
@@ -370,7 +383,7 @@
 						],
 						[
 							"7",
-							"{@spell 艾伐黑触手|XPHB}, {@spell 灵魔恐惧|WoW}"
+							"{@spell 艾伐黑触手|XPHB}, {@spell 心灵惊骇|WoW}"
 						],
 						[
 							"9",
@@ -378,7 +391,8 @@
 						]
 					]
 				}
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Shadowform",
@@ -414,7 +428,8 @@
 					]
 				},
 				"该形态持续 1 分钟，但如果你解除它（无需动作）、你受{@condition 失能|XPHB}状态，或你以法术造成光耀伤害，则提前结束。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Dispersion",
@@ -429,11 +444,12 @@
 			"entries": [
 				"当你被攻击检定命中时，你可以以一个{@variantrule 反应|XPHB}消散为暗影能量。直到你的下个回合结束，你对所有伤害（包括触发攻击的伤害）具有{@variantrule 抗性|XPHB}；你不能采取任何动作、{@variantrule 附赠动作|XPHB}或{@variantrule 反应|XPHB}；且你拥有 40 尺{@variantrule 飞行速度|XPHB}。效应结束时，你可以消耗至多总数一半的{@variantrule 生命值骰|XPHB}，如同完成了一次{@variantrule 短休|XPHB}般回复{@variantrule 生命值|XPHB}。",
 				"此特性一经使用，直至完成{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}你都无法再次使用。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Vampiric Embrace",
-			"name": "吸血的拥抱",
+			"name": "吸血鬼的拥抱",
 			"source": "WoW",
 			"className": "牧师",
 			"classSource": "WoW",
@@ -443,7 +459,8 @@
 			"header": 2,
 			"entries": [
 				"当你的{@subclassFeature 暗影形态|牧师|WoW|暗影|WoW|3|WoW}生效期间，每当你掷{@dice 1d6}为法术增加额外伤害时，你 30 尺内一个由你选择的生物回复等同于掷骰数值的{@variantrule 生命值|XPHB}。"
-			]
+			],
+			"translator": "Kiwee"
 		}
 	]
 }

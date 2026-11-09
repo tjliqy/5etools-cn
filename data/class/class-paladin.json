@@ -827,7 +827,8 @@
 				"圣武士|XPHB"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Kiwee"
 		}
 	],
 	"subclass": [
@@ -1722,7 +1723,8 @@
 				"shortName": "奉献",
 				"className": "圣武士",
 				"classSource": "XPHB"
-			}
+			},
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Oath of the Holy",
@@ -1764,7 +1766,8 @@
 				"光明使者之辉|圣骑士|WoW|神圣|WoW|7",
 				"圣光灌注|圣骑士|WoW|神圣|WoW|15",
 				"神圣救赎|圣骑士|WoW|神圣|WoW|20"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Oath of Vengeance",
@@ -1780,7 +1783,8 @@
 				"shortName": "复仇",
 				"className": "圣武士",
 				"classSource": "XPHB"
-			}
+			},
+			"translator": "Kiwee"
 		}
 	],
 	"classFeature": [
@@ -4908,7 +4912,7 @@
 		},
 		{
 			"ENG_name": "Beacon of Light",
-			"name": "圣光信标",
+			"name": "圣光道标",
 			"source": "WoW",
 			"className": "圣骑士",
 			"classSource": "WoW",
@@ -4921,7 +4925,8 @@
 			},
 			"entries": [
 				"以一个{@action 魔法|XPHB}动作，你可以消耗一次{@classFeature 引导神力|圣武士|XPHB|3|XPHB}，以圣光能量包裹 60 尺内的一名盟友。持续 1 分钟，每当你以法术或{@classFeature 圣疗|圣武士|XPHB|1|XPHB}治疗受此影响的盟友以外的生物时，被选中的盟友也回复一半数值的{@variantrule 生命值|XPHB}。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Oath of the Holy",
@@ -4950,9 +4955,10 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "圣光信标|圣骑士|WoW|神圣|WoW|3"
+					"subclassFeature": "圣光道标|圣骑士|WoW|神圣|WoW|3"
 				}
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Oath of the Holy Spells",
@@ -4999,7 +5005,8 @@
 						]
 					]
 				}
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Lightbringer's Aura",
@@ -5013,7 +5020,8 @@
 			"header": 2,
 			"entries": [
 				"每当你施展法术或使用{@classFeature 圣疗|圣武士|XPHB|1|XPHB}为你的{@classFeature 守护灵光|圣武士|XPHB|6|XPHB}内一个{@status 浴血|XPHB}生物恢复{@variantrule 生命值|XPHB}时，该生物额外回复{@dice 1d6}点{@variantrule 生命值|XPHB}。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Infusion of Light",
@@ -5027,7 +5035,8 @@
 			"header": 2,
 			"entries": [
 				"每当你施展造成光耀伤害的法术时，你为{@classFeature 圣疗|圣武士|XPHB|1|XPHB}特性的治疗之力池补充能量。你的治疗之力池回复等同于该法术光耀伤害掷骰总值的{@variantrule 生命值|XPHB}，至多为你圣武士等级的五倍。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Holy Deliverance",
@@ -5057,7 +5066,8 @@
 						"你的灵光内变为{@variantrule 明亮光照|XPHB}，视为阳光。"
 					]
 				}
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Dao's Crush",

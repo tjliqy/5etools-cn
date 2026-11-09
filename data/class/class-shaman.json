@@ -73,7 +73,8 @@
 			],
 			"subclassTitle": "萨满祭司子职",
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Kiwee"
 		}
 	],
 	"subclass": [
@@ -91,7 +92,8 @@
 				"shortName": "狂战士",
 				"className": "野蛮人",
 				"classSource": "XPHB"
-			}
+			},
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Path of the Elements",
@@ -106,7 +108,8 @@
 				"元素回响|萨满祭司|WoW|元素|WoW|6",
 				"原初羁绊|萨满祭司|WoW|元素|WoW|10",
 				"元素过载|萨满祭司|WoW|元素|WoW|14"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Path of the Spiritual Guardian",
@@ -122,7 +125,8 @@
 				"问道精魂|萨满祭司|WoW|灵体卫士|WoW|10",
 				"灵体之怒|萨满祭司|WoW|灵体卫士|WoW|14"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Path of the World Tree",
@@ -138,7 +142,8 @@
 				"shortName": "世界树",
 				"className": "野蛮人",
 				"classSource": "XPHB"
-			}
+			},
+			"translator": "Kiwee"
 		}
 	],
 	"classFeature": [
@@ -151,7 +156,8 @@
 			"level": 3,
 			"entries": [
 				"你获得一个自选的萨满祭司子职。子职是一种专精方向，在特定萨满祭司等级给予你特性。在余下的生涯中，你获得子职中所有等级不高于你萨满祭司等级的特性。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Totems",
@@ -166,7 +172,7 @@
 				"图腾是一个小型物体，具有AC 10和1点{@variantrule 生命值|XPHB|生命值}，持续1分钟，直到其生命值降至0点{@variantrule 生命值|XPHB}，或直到你再次使用此特性。在你的每个回合结束时，图腾会脉动元素能量，充满一个30尺的{@variantrule 光环 [效应区域]|XPHB|光环}。",
 				{
 					"ENG_name": "Earthbind Totem",
-					"name": "大地图腾",
+					"name": "地缚图腾",
 					"type": "entries",
 					"entries": [
 						"{@variantrule 光环 [效应区域]|XPHB|光环}内的每个敌人，其{@variantrule 速度|XPHB}减少10尺，直到你的下一回合结束。"
@@ -174,7 +180,7 @@
 				},
 				{
 					"ENG_name": "Primal Knowledge Totem",
-					"name": "原初知识图腾",
+					"name": "原初学识图腾",
 					"type": "entries",
 					"entries": [
 						"位于该{@variantrule 光环 [效应区域]|XPHB|光环}内的每个盟友都将获得自然的专注，此效应持续至你的下个回合结束。以此方式获得赋能时，每当该生物使用下列技能之一进行属性检定时，即使该技能通常使用其他属性，该生物也可以将其作为力量检定进行：{@skill 特技|XPHB}、{@skill 威吓|XPHB}、{@skill 察觉|XPHB}、{@skill 隐匿|XPHB}或{@skill 求生|XPHB}。在你竖立此图腾后，直到你完成一次{@variantrule 长休|XPHB}前，你无法再次竖立它。你也可以通过消耗一次你的{@classFeature 狂暴|野蛮人|XPHB|1|XPHB}使用次数来恢复此图腾的使用次数（无需动作）。"
@@ -196,7 +202,8 @@
 						"{@variantrule 光环 [效应区域]|XPHB|光环}内的每个盟友，其{@variantrule 速度|XPHB}增加10尺，持续到你的下个回合结束。"
 					]
 				}
-			]
+			],
+			"translator": "Kiwee"
 		}
 	],
 	"subclassFeature": [
@@ -216,7 +223,8 @@
 					"type": "refSubclassFeature",
 					"subclassFeature": "怒火元素|萨满祭司|WoW|元素|WoW|3"
 				}
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Raging Elements",
@@ -254,7 +262,8 @@
 						"此效应激活时，掷等同于你{@classFeature 狂暴|野蛮人|XPHB|1|XPHB}伤害加值数量的 d6 并求和。随后你可以向 30 尺内另一个可见生物掷出一道闪电。目标进行敏捷豁免。豁免失败的目标受等同于掷骰总和的闪电伤害，且在你的下个回合结束前，目标下次受到寒冷伤害时，额外受{@damage 1d6}点寒冷伤害。豁免成功则仅受一半伤害。"
 					]
 				}
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Echo of the Elements",
@@ -272,7 +281,8 @@
 			},
 			"entries": [
 				"你汲取元素的宁静。你习得{@spell 四象法门|XPHB}戏法。此外，你可以消耗一次{@classFeature 狂暴|野蛮人|XPHB|1|XPHB}的使用次数，施展{@spell 昼明术|XPHB}、{@spell 水上行走|XPHB}或{@spell 风墙术|XPHB}。就这些法术而言，你的施法属性是感知。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Primordial Bond",
@@ -286,7 +296,8 @@
 			"header": 2,
 			"entries": [
 				"当你的{@classFeature 狂暴|野蛮人|XPHB|1|XPHB}生效期间，你对寒冷、火焰和闪电伤害具有{@variantrule 抗性|XPHB}。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Elemental Overload",
@@ -324,7 +335,8 @@
 						"无论目标与此选项的豁免是否失败，一道闪电从目标跃向第一个目标 30 尺内另一个由你选择的可见目标。新目标进行敏捷豁免，失败者受等同于掷骰总和的闪电伤害，成功者仅受一半伤害。"
 					]
 				}
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Path of the Spiritual Guardian",
@@ -342,7 +354,8 @@
 					"type": "refSubclassFeature",
 					"subclassFeature": "灵魂守护者|萨满祭司|WoW|灵体卫士|WoW|3"
 				}
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Spiritual Protectors",
@@ -379,7 +392,8 @@
 						"目标额外受{@damage 1d4}点伤害，其类型可以为寒冷、火焰或闪电伤害（由你选择）。"
 					]
 				}
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Spirit Shield",
@@ -393,7 +407,8 @@
 			"header": 2,
 			"entries": [
 				"你的守护灵体能为你所守护的人提供超自然的庇护。当你的{@classFeature 狂暴|野蛮人|XPHB|1|XPHB}生效期间，当你 30 尺内另一个可见生物受到伤害时，你可以以一个{@variantrule 反应|XPHB}减少该伤害。为决定伤害减少的数值，掷等同于你{@classFeature 狂暴|野蛮人|XPHB|1|XPHB}伤害加值数量的 d6 并求和。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Consult the Spirits",
@@ -408,7 +423,8 @@
 			"entries": [
 				"你获得与守护灵体商议的能力。此时你施展{@spell 卜筮术|XPHB}或{@spell 鹰眼术|XPHB}法术，无需消耗法术位或材料成分。此用法下的{@spell 鹰眼术|XPHB}并非创造球形感应器，而是隐形地召唤你的一名守护灵体前往所选地点。就这些法术而言，你的施法属性是感知。",
 				"以此方式施展任一法术后，你须完成{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}才能再次使用此特性。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Spirits' Fury",
@@ -422,7 +438,8 @@
 			"header": 2,
 			"entries": [
 				"你的灵体令你的攻击更加迅疾。当你以近战武器进行作为{@action 攻击|XPHB}动作一部分的攻击检定且{@dice d20}掷出 18\u201320 时，你可以作为该动作的一部分用同一武器再进行一次攻击检定。使用此特性后，直到你的下个回合开始你不能再次使用。"
-			]
+			],
+			"translator": "Kiwee"
 		}
 	]
 }

@@ -83,7 +83,8 @@
 			],
 			"subclassTitle": "死亡骑士子职",
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Kiwee"
 		}
 	],
 	"subclass": [
@@ -134,11 +135,11 @@
 						],
 						"5": [
 							"枯萎凋零|wow",
-							"霜之镰|wow"
+							"冰霜之镰|wow"
 						],
 						"9": [
 							"亡灵召唤术|xphb",
-							"无情寒冬|wow"
+							"冷酷严冬|wow"
 						],
 						"13": [
 							"行动自如|xphb",
@@ -183,7 +184,8 @@
 				"死寂坚忍灵光|死亡骑士|WoW|黑锋|WoW|7",
 				"符文精通|死亡骑士|WoW|黑锋|WoW|15",
 				"四骑士之相|死亡骑士|WoW|黑锋|WoW|20"
-			]
+			],
+			"translator": "Kiwee"
 		}
 	],
 	"classFeature": [
@@ -199,7 +201,8 @@
 				"你的生物类型变为亡灵。",
 				"你还获得操纵负能量的能力。你拥有一池 d8 来为此能力供能。池中的骰数等于 1 加你的魅力调整值（至少一颗骰子）。",
 				"以一个{@variantrule 附赠动作|XPHB}，你可以指定 60 尺内一个可见生物，迫使其进行体质豁免，并从池中消耗骰子。你一次最多可消耗的骰数等于你的魅力调整值（至少一颗骰子）。掷消耗的骰子。豁免失败的目标受等同于掷骰总值的黯蚀伤害，成功则仅受一半伤害。如果目标是亡灵，你可以改为让它回复等同于掷骰总值的{@variantrule 生命值|XPHB}。完成{@variantrule 长休|XPHB}后，池中所有已消耗的骰子恢复。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Runic Smite",
@@ -211,7 +214,8 @@
 			"entries": [
 				"此特性取代圣武士职业的{@classFeature 圣武斩|圣武士|XPHB|2|XPHB|圣武斩}特性。",
 				"你始终准备好{@spell 符文打击|WoW}法术。你可以不消耗法术位施展它一次，并在完成{@variantrule 长休|XPHB}后恢复以该方式施展它的能力。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Death Knight Subclass",
@@ -222,7 +226,8 @@
 			"level": 3,
 			"entries": [
 				"你获得一个自选的死亡骑士子职。子职是一种专精方向，在特定死亡骑士等级给予你特性。在余下的生涯中，你获得子职中所有等级不高于你死亡骑士等级的特性。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Faithful Steed",
@@ -243,7 +248,8 @@
 						"本回合内，坐骑及其骑手可以穿越其他生物与物体，如同它们是{@variantrule 困难地形|XPHB}。若坐骑或骑手在物体内部结束回合，均受 5（{@dice 1d10}）点力场伤害。"
 					]
 				}
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Runic Strikes",
@@ -255,7 +261,8 @@
 			"entries": [
 				"此特性取代圣武士的{@classFeature 光耀打击|圣武士|XPHB|11|XPHB}特性。",
 				"当你以近战武器或{@variantrule 徒手打击|XPHB}的攻击检定命中目标时，目标额外受{@damage 1d8}点黯蚀伤害。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Improved Death Coil",
@@ -267,7 +274,8 @@
 			"entries": [
 				"此特性取代圣武士的{@classFeature 复原之触|圣武士|XPHB|14|XPHB}特性。",
 				"当你使用{@classFeature 死亡缠绕|死亡骑士|WoW|1|WoW}造成伤害时，无论目标豁免是否失败，都额外受等同于你魅力调整值（至少为 1）的黯蚀伤害。如果目标是亡灵且你让它回复{@variantrule 生命值|XPHB}，它额外回复等同于你圣武士等级的{@variantrule 生命值|XPHB}。"
-			]
+			],
+			"translator": "Kiwee"
 		}
 	],
 	"subclassFeature": [
@@ -289,13 +297,14 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "符文锻造|死亡骑士|WoW|黑锋|WoW|3"
+					"subclassFeature": "符文熔铸|死亡骑士|WoW|黑锋|WoW|3"
 				},
 				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "符文能量|死亡骑士|WoW|黑锋|WoW|3"
 				}
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Oath of the Ebon Blade Spells",
@@ -307,7 +316,7 @@
 			"subclassSource": "WoW",
 			"level": 3,
 			"entries": [
-				"你誓言的魔法与你的{@subclassFeature 符文锻造|死亡骑士|WoW|黑锋|WoW|3|WoW}特性（见下文）确保你始终准备好特定法术；当你达到黑锋之誓法术表中列出的圣武士等级后，你始终准备好\"法术（全部）\"栏中的法术。若你的武器上铭刻了符文，你还拥有对应栏中列出的额外法术。",
+				"你誓言的魔法与你的{@subclassFeature 符文熔铸|死亡骑士|WoW|黑锋|WoW|3|WoW}特性（见下文）确保你始终准备好特定法术；当你达到黑锋之誓法术表中列出的圣武士等级后，你始终准备好\"法术（全部）\"栏中的法术。若你的武器上铭刻了符文，你还拥有对应栏中列出的额外法术。",
 				{
 					"type": "table",
 					"caption": "黑锋之誓法术",
@@ -337,14 +346,14 @@
 							"5",
 							"{@spell 枯萎凋零|WoW|枯萎凋零}",
 							"{@spell 灵体武器|XPHB}",
-							"{@spell 霜之镰|WoW|霜之镰}",
+							"{@spell 冰霜之镰|WoW|冰霜之镰}",
 							"{@spell 衰弱射线|XPHB}"
 						],
 						[
 							"9",
 							"{@spell 亡灵召唤术|XPHB}",
 							"{@spell 吸血打击|WoW|吸血打击}",
-							"{@spell 无情寒冬|WoW|无情寒冬}",
+							"{@spell 冷酷严冬|WoW|冷酷严冬}",
 							"{@spell 降咒|XPHB}"
 						],
 						[
@@ -363,11 +372,12 @@
 						]
 					]
 				}
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Runeforging",
-			"name": "符文锻造",
+			"name": "符文熔铸",
 			"source": "WoW",
 			"className": "死亡骑士",
 			"classSource": "WoW",
@@ -400,7 +410,8 @@
 						"手持铭刻武器期间，你的武器攻击、圣武士法术与圣武士特性造成的伤害无视对黯蚀伤害的{@variantrule 抗性|XPHB}。如果你的铭刻武器具有{@itemProperty H|XPHB|重型}属性，你每回合以此武器命中的第一个生物额外受等同于你魅力调整值（至少为 1）的黯蚀伤害。"
 					]
 				}
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Runic Power",
@@ -441,7 +452,8 @@
 						"你的{@spell 符文打击|WoW}的目标被诅咒直到你的下个回合结束。受诅咒的目标下次进行豁免检定时，从掷骰结果中减去{@dice 1d6}，然后诅咒结束。"
 					]
 				}
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Aura of Deathly Endurance",
@@ -455,7 +467,8 @@
 			"header": 2,
 			"entries": [
 				"身处你的{@classFeature 守护灵光|圣武士|XPHB|6|XPHB}内时，你和你的盟友对寒冷、黯蚀和心灵伤害具有{@variantrule 抗性|XPHB}。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Runic Mastery",
@@ -493,7 +506,8 @@
 						"当你施展{@spell 亡灵召唤术|XPHB}时，可以对其进行调整，使其不需要{@status 专注|XPHB}。若如此做，该次施法的法术持续时间变为 1 分钟，且被召唤的{@b 亡灵灵魄}获得等同于你圣武士等级加魅力调整值的{@variantrule 临时生命值|XPHB}。此外，该精魂每回合首次命中一个生物时，额外造成等同于你圣武士等级一半（向上取整）的黯蚀伤害。"
 					]
 				}
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Aspect of the Horsemen",
@@ -517,13 +531,14 @@
 				},
 				{
 					"ENG_name": "Runeforging",
-					"name": "符文锻造",
+					"name": "符文熔铸",
 					"type": "entries",
 					"entries": [
 						"当你使用{@subclassFeature 符文能量|死亡骑士|WoW|黑锋|WoW|3|WoW}和{@subclassFeature 符文精通|死亡骑士|WoW|黑锋|WoW|15|WoW}特性时，你可以选择任意效果，而不限于与武器所铭刻符文对应的效果。"
 					]
 				}
-			]
+			],
+			"translator": "Kiwee"
 		}
 	]
 }

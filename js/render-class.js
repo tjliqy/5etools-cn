@@ -76,7 +76,7 @@ class _RenderClassesSidebarImplBase {
 
 		const ptMeta = [
 			cls.isHero ? `<span class="ve-help-subtle" title="Hero classes are typically available only to characters starting at level 3 or higher.">${renderer.render(`{@book Hero Class|WoW|1|Hero Classes}`)}</span>` : null,
-			ptReskins ? `Reskins: ${ptReskins}` : null,
+			ptReskins ? `换皮: ${ptReskins}` : null,
 		]
 			.filter(Boolean)
 			.join(" • ");

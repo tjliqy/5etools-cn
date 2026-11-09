@@ -3765,7 +3765,7 @@
 					"name": "形态转换",
 					"type": "entries",
 					"entries": [
-						"初次遇到灰烬使者时，它可能处于{@item 灰烬使者（真形态）|WoW|真形态}或{@item 腐化的灰烬使者|WoW|腐化形态}。由 DM 裁定：若持用者以之犯下穷凶极恶之举，灰烬使者会转为腐化形态；若持用者以之成就传奇功业，它会转为真形态。灰烬使者当前的状态会给予你以下收益之一："
+						"初次遇到灰烬使者时，它可能处于{@item 灰烬使者（真形态）|WoW|真形态}或{@item 堕落的灰烬使者|WoW|腐化形态}。由 DM 裁定：若持用者以之犯下穷凶极恶之举，灰烬使者会转为腐化形态；若持用者以之成就传奇功业，它会转为真形态。灰烬使者当前的状态会给予你以下收益之一："
 					]
 				},
 				{
@@ -3826,7 +3826,8 @@
 					]
 				}
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Ashbringer (True State)",
@@ -3874,8 +3875,10 @@
 				"_preserve": {
 					"page": true,
 					"hasFluffImages": true
-				}
-			}
+				},
+				"translator": "Kiwee"
+			},
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Ashen Band of Courage",
@@ -4526,7 +4529,7 @@
 		},
 		{
 			"ENG_name": "Aviana's Feather",
-			"name": "阿维亚娜之羽",
+			"name": "艾维娜之羽",
 			"source": "WoW",
 			"page": 107,
 			"rarity": "legendary",
@@ -4535,7 +4538,8 @@
 			"entries": [
 				"在与这片金色羽毛同调期间，你可以采取{@action 魔法|XPHB}动作，让背后生出一对发光的金色羽翼。羽翼使你获得 80 尺的{@variantrule 飞行速度|XPHB}，且当你飞离某生物的触及范围时，它对你发动的{@action 借机攻击|XPHB}的攻击检定具有{@variantrule 劣势|XPHB}。若你在长有羽翼时坠落，你将以每轮 60 尺的速度缓缓下落，直到落地。",
 				"羽翼持续存在，直到你以{@action 魔法|XPHB}动作提前结束该效应，或你的{@variantrule 同调|XPHB}结束。若羽翼消失时你仍在空中，你将坠落。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Axe Beak",
@@ -10690,7 +10694,7 @@
 					"name": "腐蚀",
 					"type": "entries",
 					"entries": [
-						"这个物品具有腐蚀性。详见\"{@adventure 地狱物品腐化|CoA|16|地狱物品腐化}\"部分。"
+						"这个物品具有腐蚀性。详见\"{@adventure 地狱物品腐败|CoA|16|地狱物品腐败}\"部分。"
 					]
 				}
 			]
@@ -12203,7 +12207,7 @@
 					"name": "腐蚀",
 					"type": "entries",
 					"entries": [
-						"这个物品具有腐蚀性。详见\"{@adventure 地狱物品腐化|CoA|16|地狱物品腐化}\"部分。"
+						"这个物品具有腐蚀性。详见\"{@adventure 地狱物品腐败|CoA|16|地狱物品腐败}\"部分。"
 					]
 				}
 			]
@@ -12998,7 +13002,8 @@
 			"entries": [
 				"使用{@creature 骏鹰|XMM}的属性数据块。",
 				"{@b 先决条件：}在{@book 塞纳里奥议会|WoW|4|塞纳里奥议会声望福利}声望 50+。若你在塞纳里奥议会的声望值跌破 50，你的坐骑将不再听从你的命令。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Censer of Controlling Air Elementals",
@@ -13544,7 +13549,8 @@
 			],
 			"attachedSpells": [
 				"半位面"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Chronolometer",
@@ -15215,7 +15221,7 @@
 		},
 		{
 			"ENG_name": "Corrupted Ashbringer",
-			"name": "腐化的灰烬使者",
+			"name": "堕落的灰烬使者",
 			"source": "WoW",
 			"_copy": {
 				"ENG_name": "Ashbringer",
@@ -15258,8 +15264,10 @@
 				},
 				"_preserve": {
 					"page": true
-				}
-			}
+				},
+				"translator": "Kiwee"
+			},
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Costume",
@@ -15427,7 +15435,8 @@
 			],
 			"attachedSpells": [
 				"光亮术"
-			]
+			],
+			"translator": "锁姐等"
 		},
 		{
 			"ENG_name": "Crampons",
@@ -15883,7 +15892,7 @@
 			"wondrous": true,
 			"entries": [
 				"佩戴这顶王冠时，角色在尝试识破幻象的智力（{@skill 调查}）检定时会自动失败。被触摸的幻象仍然会揭示其真实本质。然而，佩戴王冠的角色对幻象如此坚信不疑，以至于他们可能不知道应该相信哪一种感官。",
-				"如果一个角色在一次{@dc 20}智力（{@skill 自然})或智慧（{@skill 察觉})检定中成功，或者使用3级或更高级别的法术位施放{@spell 侦测魔法}法术，仔细检查这顶王冠，就能发现其魔法的本质。"
+				"如果一个角色在一次{@dc 20}智力（{@skill 自然})或感知（{@skill 察觉})检定中成功，或者使用3级或更高级别的法术位施放{@spell 侦测魔法}法术，仔细检查这顶王冠，就能发现其魔法的本质。"
 			]
 		},
 		{
@@ -15906,7 +15915,8 @@
 					]
 				}
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Crown of the Wrath Bringer",
@@ -21079,7 +21089,8 @@
 						"融身入石|xphb"
 					]
 				}
-			}
+			},
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Dekella, Bident of Thassa",
@@ -22192,7 +22203,8 @@
 			"entries": [
 				"使用{@creature 恐狼|XMM}的属性数据块。",
 				"{@b 先决条件：}在{@book 奥格瑞玛|WoW|4|奥格瑞玛声望福利}声望 10+。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Disguise Kit",
@@ -22719,7 +22731,7 @@
 								},
 								{
 									"ENG_name": "Lightning Rod",
-									"name": "避雷针",
+									"name": "引雷针",
 									"type": "item",
 									"entries": [
 										"当距你 60 尺内你能看见的某生物将受到闪电伤害时，你可以采取{@variantrule 反应|XPHB}将该伤害减为 0。"
@@ -22769,7 +22781,8 @@
 					]
 				}
 			},
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Dowsing Dagger",
@@ -24480,7 +24493,8 @@
 			"entries": [
 				"使用{@creature 巨山羊|XMM}的属性数据块。",
 				"{@b 先决条件：}在{@book 埃索达|WoW|4|埃索达声望福利}声望 10+。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Elemental Essence Shard",
@@ -26167,7 +26181,8 @@
 			"wondrous": true,
 			"entries": [
 				"背着这个背包时，你可以采取{@action 魔法|XPHB}动作点燃它的喷射引擎。引擎持续运作 1 小时，或直到你以{@action 魔法|XPHB}动作提前结束该效应。引擎使你获得 60 尺的{@variantrule 飞行速度|XPHB}。若引擎停止运作时你仍在空中，你将坠落。引擎停止后，你必须等待{@dice 1d12}小时才能再次使用。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Explorer's Pack",
@@ -27645,7 +27660,8 @@
 						"这尊雕像是一只由玉、玛瑙、红宝石、蓝宝石或日长石打造的黑豹。它可以变为一只大型{@creature 豹|XMM}，拥有 30 尺的{@variantrule 飞行速度|XPHB}，持续至多 12 小时，并可被骑乘为坐骑。一旦被使用，须经过 2 天才能再次使用。"
 					]
 				}
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Figurine of Wondrous Power, Bronze Griffon",
@@ -28604,7 +28620,8 @@
 			],
 			"miscTags": [
 				"CNS"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Flayer Slayer",
@@ -28870,7 +28887,8 @@
 				"一架小型旋翼机，顶部有一具旋翼，两侧各装一台引擎，并以滑橇作为起落架。",
 				"{#itemEntry 动力载具|WoW}",
 				"飞行器无法购买；它必须由拥有专家级{@book 工程学|WoW|3|工程学}的角色制造。制造这台机器需要价值 2,000 GP 的资源。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Flying Snake",
@@ -29373,7 +29391,8 @@
 					]
 				}
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Fuel",
@@ -29385,7 +29404,8 @@
 			"value": 100,
 			"entries": [
 				"这种燃料可供一台载具行驶 8 小时。角色可以使用{@book 炼金术|WoW|3|炼金术}专业来制造燃料。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Fulminating Treatise",
@@ -30046,7 +30066,8 @@
 			"entries": [
 				"使用{@creature 巨山羊|XMM}的属性数据块。",
 				"{@b 先决条件：}在{@book 铁炉堡|WoW|4|铁炉堡声望福利}声望 10+。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Giant Hyena",
@@ -30058,8 +30079,9 @@
 			"carryingCapacity": 480,
 			"entries": [
 				"使用{@creature 巨鬣狗|XMM}的属性数据块。",
-				"{@b 先决条件：}在{@book 热砂港财团|WoW|4|Steamwheedle Cartel}声望 10+。"
-			]
+				"{@b 先决条件：}在{@book 热砂财团|WoW|4|Steamwheedle Cartel}声望 10+。"
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Giant Seahorse",
@@ -30071,7 +30093,8 @@
 			"carryingCapacity": 450,
 			"entries": [
 				"使用{@creature 巨海马|XMM}的属性数据块。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Giant Trinket",
@@ -30317,7 +30340,8 @@
 			"entries": [
 				"你佩戴这副手套时，你的体质属性值为20。如果你的体质已经是20或更高，手套的这一特性对你没有效果。",
 				"在戴着这副手套成功进行一次徒手打击后，你可以使用手套对目标造成额外的{@damage 2d10}力场伤害，并且你恢复等同于所造成力场伤害数值的生命值。你也可以不通过这种方式恢复生命值，而是选择在你的下一回合结束前进行的一次攻击检定、属性检定或豁免检定上获得优势。"
-			]
+			],
+			"translator": "锁姐等"
 		},
 		{
 			"ENG_name": "Gloves of Swimming and Climbing",
@@ -30509,7 +30533,8 @@
 			"entries": [
 				"{@i 先决条件：诺莫瑞根声望 25+}",
 				"你可以在代表诺莫瑞根的领袖执行任务之前，向他们请求一台复杂的工程装置。你会收到一台功能如同{@item 惊异魔杖|XDMG}的机械装置，但它无法恢复充能，并在最后一发充能耗尽时会剧烈却无害地爆炸。该装置不需要同调，但只为你运作。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Goat",
@@ -30538,15 +30563,16 @@
 		},
 		{
 			"ENG_name": "Goblin Jumper Cables",
-			"name": "地精起搏线",
+			"name": "地精起搏器",
 			"source": "WoW",
 			"page": 109,
 			"rarity": "uncommon",
 			"wondrous": true,
 			"entries": [
 				"以一个{@action 魔法|XPHB}动作，你可以把这些缆线接到一具尸体上，尝试令该生物复生。使用{@item 修补工具|XPHB}进行一次{@dc 15}智力（{@skill 奥秘|XPHB}）检定。检定成功时，只要该生物死亡不超过 1 分钟且并非死于衰老，它便会以 1 {@variantrule 生命值|XPHB|生命值}复活。检定失败时，你受{@damage 2d6}点闪电伤害。",
-				"一套地精起搏线一旦被使用，在下一个黎明到来之前不能再次使用。"
-			]
+				"一套地精起搏器一旦被使用，在下一个黎明到来之前不能再次使用。"
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Goblin Trike",
@@ -30566,7 +30592,8 @@
 				"一辆三轮机动车，配有豪华的木质镶板。",
 				"{#itemEntry 动力载具|WoW}",
 				"{@b 先决条件：}在任一地精财团声望 10+。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Goggles of Night",
@@ -31919,7 +31946,8 @@
 			"entries": [
 				"使用{@creature 狮鹫|XMM}的属性数据块。",
 				"{@b 先决条件：}在{@book 联盟|WoW|4|联盟声望福利}声望 25+。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Guardian Emblem",
@@ -33114,7 +33142,8 @@
 			"entries": [
 				"使用{@creature 斧嘴鸟|XMM}数据卡（见《怪物图鉴》）。",
 				"{@b 先决条件：}在{@book 银月城|WoW|4|银月城声望福利}声望 10+。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Hazirawn",
@@ -33366,7 +33395,8 @@
 				"炉石能将你传送至一处预先设定的地点\u2014通常是一家旅店。激活炉石需要 1 分钟和一个{@action 魔法|XPHB}动作。你出现在你先前设定的目的地 30 尺内一处未被占据的空间。",
 				"当你在旅店（或 DM 认可的其他地点）时，你可以采取{@action 魔法|XPHB}动作，将该处设为炉石传送的目的地。该地点将一直是你的目的地，直到你更改为止。",
 				"一块炉石不计入你可{@variantrule 同调|XPHB}的魔法物品数量。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Heartstone",
@@ -33877,7 +33907,8 @@
 						"回返真言|xphb"
 					]
 				}
-			}
+			},
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Helm of Perfect Potential",
@@ -36645,7 +36676,7 @@
 					"name": "腐蚀",
 					"type": "entries",
 					"entries": [
-						"这个物品具有腐蚀性。详见\"{@adventure 地狱物品腐化|CoA|16|地狱物品腐化}\"部分。"
+						"这个物品具有腐蚀性。详见\"{@adventure 地狱物品腐败|CoA|16|地狱物品腐败}\"部分。"
 					]
 				}
 			]
@@ -36680,7 +36711,7 @@
 					"name": "腐蚀",
 					"type": "entries",
 					"entries": [
-						"这个物品具有腐蚀性。详见\"{@adventure 地狱物品腐化|CoA|16|地狱物品腐化}\"部分。"
+						"这个物品具有腐蚀性。详见\"{@adventure 地狱物品腐败|CoA|16|地狱物品腐败}\"部分。"
 					]
 				}
 			]
@@ -39893,7 +39924,8 @@
 					"侦测善恶|xphb",
 					"防护善恶|xphb"
 				]
-			}
+			},
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Jug",
@@ -40028,7 +40060,8 @@
 			"rarity": "none",
 			"entries": [
 				"向生物或物体投掷的一桶炼金术士的火焰，在命中时造成21（{@damage 6d6}）火焰伤害。此外，目标被点燃，并在每一轮（如果是生物，在每个回合开始时）再次受到相同的伤害，直到火焰被扑灭。在火焰范围内的生物可以采取行动，使用毯子或地毯来扑灭火焰，减少{@dice 2d6}的火焰伤害。完全扑灭火焰需要三个这样的行动。"
-			]
+			],
+			"translator": "柴猫"
 		},
 		{
 			"ENG_name": "Keoghtom's Ointment",
@@ -40247,7 +40280,8 @@
 						}
 					]
 				}
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Khrusor, Spear of Heliod",
@@ -40510,7 +40544,8 @@
 			"entries": [
 				"使用{@creature 巨蜥|XMM}的属性数据块。",
 				"{@b 先决条件：}在{@book 雷霆崖|WoW|4|雷霆崖声望福利}声望 10+。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Korolnor Scepter",
@@ -41451,7 +41486,8 @@
 					]
 				}
 			},
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Lifewell Tattoo",
@@ -44344,7 +44380,8 @@
 				"一辆动力强劲的摩托车，可选装边斗，由部落制造。",
 				"{#itemEntry 动力载具|WoW}",
 				"{@b 先决条件：}在{@book 部落|WoW|4|部落声望福利}声望 10+。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Mechanostrider",
@@ -44357,7 +44394,8 @@
 			"entries": [
 				"使用{@creature 机械陆行鸟|WoW}的属性数据块。",
 				"{@b 先决条件：}在{@book 诺莫瑞根|WoW|4|诺莫瑞根声望福利}声望 10+。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Medal of Muscle",
@@ -44535,7 +44573,8 @@
 				"一辆动力强劲的摩托车，可选装边斗，由联盟制造。",
 				"{#itemEntry 动力载具|WoW}",
 				"{@b 先决条件：}在{@book 联盟|WoW|4|联盟声望福利}声望 10+。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Menga leaves (1 ounce)",
@@ -47032,7 +47071,8 @@
 					]
 				},
 				"当你获得卷轴的增益后，一具{@creature 石魔像}魔法地出现在距离你60尺内一处未被占据的空间，并作为你的盟友行动。如果你死亡，魔像会化作尘埃。"
-			]
+			],
+			"translator": "锁姐等"
 		},
 		{
 			"ENG_name": "Netherese Ring of Protection",
@@ -47170,7 +47210,8 @@
 			"entries": [
 				"使用{@creature 老虎|XMM}的属性数据块。",
 				"{@b 先决条件：}在{@book 达纳苏斯|WoW|4|达纳苏斯声望福利}声望 10+。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Nightspider",
@@ -47234,7 +47275,8 @@
 						"天界召唤术|xphb"
 					]
 				}
-			}
+			},
+			"translator": "东风等"
 		},
 		{
 			"ENG_name": "Nimblewright Detector",
@@ -47336,7 +47378,7 @@
 			"page": 111,
 			"rarity": "rare",
 			"entries": [
-				"诺格弗格药剂是热砂港财团贸易亲王马林·诺格弗格发明的效果难以预料的药剂。尽管\u2014或者说正因为\u2014效果不可预测，它深受冒险者（尤其是地精）的追捧。喝下这瓶药剂时，掷{@dice 1d6}：掷出 1-2，你呈现骷髅般的外貌，持续{@dice 1d4}小时，其间你无需呼吸。（不呼吸不会使你获得{@condition 力竭|XPHB}等级。）掷出 3-4，你获得{@spell 变巨/缩小术|XPHB}法术的缩小效果，持续{@dice 1d4}小时（无需{@status 专注|XPHB}）。掷出 5-6，你坠落时的下降速度减缓为每轮 60 尺，持续 10 分钟。其间你不会受到坠落伤害。",
+				"诺格弗格药剂是热砂财团贸易亲王马林·诺格弗格发明的效果难以预料的药剂。尽管\u2014或者说正因为\u2014效果不可预测，它深受冒险者（尤其是地精）的追捧。喝下这瓶药剂时，掷{@dice 1d6}：掷出 1-2，你呈现骷髅般的外貌，持续{@dice 1d4}小时，其间你无需呼吸。（不呼吸不会使你获得{@condition 力竭|XPHB}等级。）掷出 3-4，你获得{@spell 变巨/缩小术|XPHB}法术的缩小效果，持续{@dice 1d4}小时（无需{@status 专注|XPHB}）。掷出 5-6，你坠落时的下降速度减缓为每轮 60 尺，持续 10 分钟。其间你不会受到坠落伤害。",
 				"喝下多瓶诺格弗格药剂并不需要在《{@book 城主指南|XDMG}》的{@table 药水混合|XDMG|药水混合}表上掷骰。",
 				"这瓶绿色药剂入口油腻。"
 			],
@@ -47345,7 +47387,8 @@
 			],
 			"miscTags": [
 				"CNS"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Nolzur's Marvelous Pigments",
@@ -48947,7 +48990,8 @@
 					]
 				}
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "锁姐等"
 		},
 		{
 			"ENG_name": "Order of the Gauntlet Trinket",
@@ -49526,7 +49570,8 @@
 			"entries": [
 				"使用{@creature 熊猫人龙龟|WoW}的属性数据块。",
 				"{@b 先决条件：}在{@book 火金派|WoW|4|火金派声望福利}或{@book 土水派|WoW|4|土水派声望福利}声望 10+。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Paper",
@@ -50319,13 +50364,14 @@
 				},
 				{
 					"ENG_name": "Mixology",
-					"name": "调酒学",
+					"name": "药剂混合学",
 					"type": "entries",
 					"entries": [
 						"当你掷骰决定所喝药剂的效果时（包括混合药剂的结果），你可以掷两次骰并任选其一。若你喝下的药剂有持续时间，该时间加倍。"
 					]
 				}
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Philter of Love",
@@ -50716,7 +50762,8 @@
 						"位面转移"
 					]
 				}
-			}
+			},
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Planar Philosopher Trinket",
@@ -53369,7 +53416,8 @@
 			],
 			"miscTags": [
 				"CNS"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Potion of Mana (Greater)",
@@ -53384,7 +53432,8 @@
 			],
 			"miscTags": [
 				"CNS"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Potion of Mana (Superior)",
@@ -53399,7 +53448,8 @@
 			],
 			"miscTags": [
 				"CNS"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Potion of Maximum Power",
@@ -53881,7 +53931,8 @@
 			],
 			"miscTags": [
 				"CNS"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Potion of Rejuvenation (Greater)",
@@ -53896,7 +53947,8 @@
 			],
 			"miscTags": [
 				"CNS"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Potion of Rejuvenation (Superior)",
@@ -53911,7 +53963,8 @@
 			],
 			"miscTags": [
 				"CNS"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Potion of Speed",
@@ -56385,7 +56438,8 @@
 						"强化属性"
 					]
 				}
-			}
+			},
+			"translator": "锁姐等"
 		},
 		{
 			"ENG_name": "Radiant Absorbing Tattoo",
@@ -56600,7 +56654,8 @@
 			"entries": [
 				"使用{@creature 异特龙|XMM}的属性数据块。",
 				"{@b 先决条件：}在{@book 暗矛部落|WoW|4|暗矛部落声望福利}声望 10+。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Rations",
@@ -61349,7 +61404,8 @@
 						"支配怪物|xphb"
 					]
 				}
-			}
+			},
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Rod of the Vonindod",
@@ -64353,7 +64409,8 @@
 			"dexterityMax": null,
 			"entries": [
 				"这套魔法护甲由闪闪发光的蛇鳞制成。穿着它时，你在决定护甲等级时可以使用全部的敏捷调整值（而不是最多 +2）。此外，这套护甲不会使你的敏捷（{@skill 隐匿}）检定具有劣势。"
-			]
+			],
+			"translator": "锁姐等"
 		},
 		{
 			"ENG_name": "Serpent Venom",
@@ -64421,7 +64478,8 @@
 			"dmg2": "1d10",
 			"entries": [
 				"这把单刃魔法剑由一只巨蛇的毒牙制成，它的剑柄可以改变形状，以适应任何生物的握持。使用该武器击中任何目标都会造成额外的{@damage 1d10}毒伤。"
-			]
+			],
+			"translator": "锁姐等"
 		},
 		{
 			"ENG_name": "Set of gold nesting dolls",
@@ -64585,7 +64643,8 @@
 						"大多数情况下，这件武器看起来平平无奇。但在夜空之下，粗糙的毛发和尖利的獠牙会从剑的十字护手周围生出。以这种方式变形期间，影牙命中时额外造成{@damage 2d6}点黯蚀伤害。武器会在黎明时或被带入室内时恢复原状。"
 					]
 				}
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Shadowfell Brand Tattoo",
@@ -64805,7 +64864,8 @@
 						"要摧毁萨拉迈恩，可以将其分裂为沙拉托尔和埃雷梅尼，然后将其中一柄或两柄剑埋入翡翠梦境中一棵世界之树的树根处。一年之后，被埋下的剑会溶入泥土。"
 					]
 				}
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Shalamayne (Ellemayne)",
@@ -64817,8 +64877,10 @@
 				"source": "WoW",
 				"_preserve": {
 					"page": true
-				}
-			}
+				},
+				"translator": "Kiwee"
+			},
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Shalamayne (Shalla'tor)",
@@ -64854,7 +64916,8 @@
 				},
 				"_preserve": {
 					"page": true
-				}
+				},
+				"translator": "Kiwee"
 			},
 			"baseItem": "长剑|xphb",
 			"weight": 3,
@@ -64867,7 +64930,8 @@
 				"削弱|XPHB"
 			],
 			"dmg1": "1d8",
-			"dmg2": "1d10"
+			"dmg2": "1d10",
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Shard",
@@ -70107,7 +70171,8 @@
 						"如果你耗尽了法杖的所有充能，掷一次{@dice d20}。当结果为9或更低时，这根法杖会变成一根非魔法长棍，在第一次命中并造成伤害时折断。结果为10或更高的时候，法杖会回复{@dice 1d6}发充能。"
 					]
 				}
-			]
+			],
+			"translator": "锁姐等"
 		},
 		{
 			"ENG_name": "Staff of Fire",
@@ -70711,13 +70776,13 @@
 			"dmg2": "1d8",
 			"staff": true,
 			"entries": [
-				"这根法杖有两种形态：称为{@item 光影法杖（咒罚）|WoW|咒罚}的暗影形态，和称为{@item 光影法杖（祈福）|WoW|祈福}的神圣形态。在与法杖同调期间，你可以在黎明时让法杖在两种形态间切换。",
+				"这根法杖有两种形态：称为{@item 光影法杖（咒逐）|WoW|咒逐}的暗影形态，和称为{@item 光影法杖（祈福）|WoW|祈福}的神圣形态。在与法杖同调期间，你可以在黎明时让法杖在两种形态间切换。",
 				{
 					"ENG_name": "Anathema",
-					"name": "咒罚",
+					"name": "咒逐",
 					"type": "entries",
 					"entries": [
-						"作为咒罚，法杖给予以下收益：",
+						"咒逐形态的法杖给予以下增益：",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
@@ -70747,7 +70812,7 @@
 					"name": "祈福",
 					"type": "entries",
 					"entries": [
-						"作为祈福，法杖给予以下收益：",
+						"祈福形态的法杖给予以下增益：",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
@@ -70773,11 +70838,12 @@
 					]
 				}
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Staff of Light and Shadow (Anathema)",
-			"name": "光影法杖（咒罚）",
+			"name": "光影法杖（咒逐）",
 			"source": "WoW",
 			"_copy": {
 				"ENG_name": "Staff of Light and Shadow",
@@ -70796,11 +70862,13 @@
 				"_preserve": {
 					"page": true,
 					"hasFluffImages": true
-				}
+				},
+				"translator": "Kiwee"
 			},
 			"resist": [
 				"necrotic"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Staff of Light and Shadow (Benediction)",
@@ -70815,18 +70883,20 @@
 						{
 							"mode": "removeArr",
 							"names": [
-								"咒罚"
+								"咒逐"
 							]
 						}
 					]
 				},
 				"_preserve": {
 					"page": true
-				}
+				},
+				"translator": "Kiwee"
 			},
 			"resist": [
 				"radiant"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Staff of Power",
@@ -72815,7 +72885,8 @@
 					}
 				}
 			},
-			"value": 10000000
+			"value": 10000000,
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Steel",
@@ -73112,7 +73183,8 @@
 						"若造境之石抵达元素混沌，或被一根与元素混沌同调的分叉金属棒击中（如{@spell 位面转移}法术所述），它就会被摧毁，并碎裂成无害、失去魔力的岩石碎片。造境之石毁灭后，由其石片和石楔创造的地点会崩塌、腐朽或逐渐消散。造境之石本身是否也是某件更大神器的一部分，仍是未知之谜。"
 					]
 				}
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Stone of Golorr",
@@ -73429,7 +73501,8 @@
 				"will": [
 					"心灵遥控"
 				]
-			}
+			},
+			"translator": "锁姐等"
 		},
 		{
 			"ENG_name": "Storm Boomerang",
@@ -73604,7 +73677,7 @@
 		},
 		{
 			"ENG_name": "Sulfuras, Hand of Ragnaros",
-			"name": "萨弗拉斯，拉格纳罗斯之手",
+			"name": "萨弗拉斯，炎魔拉格纳罗斯之手",
 			"type": "M|XPHB",
 			"source": "WoW",
 			"page": 112,
@@ -73704,7 +73777,8 @@
 					]
 				}
 			},
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Sun",
@@ -75113,7 +75187,8 @@
 			"carryingCapacity": 480,
 			"entries": [
 				"使用{@creature 赤鹿|XMM}的属性数据块。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Talisman of Pure Good",
@@ -80260,7 +80335,8 @@
 			],
 			"miscTags": [
 				"CNS"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Troll's Blood Elixir (Greater)",
@@ -80275,7 +80351,8 @@
 			],
 			"miscTags": [
 				"CNS"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Troll's Blood Elixir (Superior)",
@@ -80290,7 +80367,8 @@
 			],
 			"miscTags": [
 				"CNS"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Troll's Blood Elixir (Supreme)",
@@ -80305,7 +80383,8 @@
 			],
 			"miscTags": [
 				"CNS"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "True-Ice Shards (Dagger)",
@@ -80671,7 +80750,8 @@
 			],
 			"attachedSpells": [
 				"邪魔召唤术|xphb"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Two-Birds Sling",
@@ -81005,7 +81085,7 @@
 						{
 							"type": "list",
 							"items": [
-								"你在依赖嗅觉的智慧（{@skill 察觉}）检定上具有优势，你免疫疾病，并且你拥有60尺范围的{@sense 黑暗视觉}。如果你已经拥有{@sense 黑暗视觉}，佩戴该斗篷会使你的{@sense 黑暗视觉}范围增加60尺。",
+								"你在依赖嗅觉的感知（{@skill 察觉}）检定上具有优势，你免疫疾病，并且你拥有60尺范围的{@sense 黑暗视觉}。如果你已经拥有{@sense 黑暗视觉}，佩戴该斗篷会使你的{@sense 黑暗视觉}范围增加60尺。",
 								"你可以用一个动作，使用害兽之幕以自己为目标施放{@spell 变形术}，将自己变为一只{@creature 巨鼠}或{@creature 老鼠}。同时，你保留自己的智力，感知与魅力属性以及这件斗篷带给你的增益效果。此后直到下一次黎明前，该特性都无法再次使用。"
 							]
 						}
@@ -81237,7 +81317,8 @@
 			"charges": 3,
 			"entries": [
 				"这枚戒指有 3 点充能，并在每天黎明恢复{@dice 1d3}点已消耗的充能。戴着戒指时，你可以采取{@action 魔法|XPHB}动作并消耗 1 点充能，得知距你 120 尺内一个可见生物的{@variantrule 抗性|XPHB|抗性}、{@variantrule 易伤|XPHB|易伤}和{@variantrule 免疫|XPHB|免疫}（若有）。当你使用此效应时，你的双眼会短暂变成浑浊的灰色枯壳。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Void Card",
@@ -83557,7 +83638,8 @@
 			"entries": [
 				"使用{@creature 战马|XMM}的属性数据块。",
 				"{@b 先决条件：}在{@book 暴风城|WoW|4|暴风城声望福利}声望 10+。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Warhorse",
@@ -83584,7 +83666,8 @@
 			"entries": [
 				"使用{@creature 骷髅战马|XMM}的属性数据块。",
 				"{@b 先决条件：}在{@book 幽暗城|WoW|4|幽暗城声望福利}声望 10+。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Warm Fungal Clothing",
@@ -83719,7 +83802,8 @@
 						"识破隐形"
 					]
 				}
-			}
+			},
+			"translator": "锁姐等"
 		},
 		{
 			"ENG_name": "Waterskin",
@@ -84960,7 +85044,8 @@
 			"entries": [
 				"使用{@creature 巨蝙蝠|XMM}的属性数据块。",
 				"{@b 先决条件：}在{@book 部落|WoW|4|部落声望福利}声望 25+。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Windskiff",
@@ -86135,7 +86220,8 @@
 			"carryingCapacity": 480,
 			"entries": [
 				"使用{@creature 赤鹿|XMM}的属性数据块。"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Zircon",
@@ -89593,7 +89679,8 @@
 			"itemsHidden": true,
 			"miscTags": [
 				"CNS"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Potions of Rejuvenation",
@@ -89644,7 +89731,8 @@
 			"itemsHidden": true,
 			"miscTags": [
 				"CNS"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Prehistoric Figurine of Wondrous Power",
@@ -90978,7 +91066,8 @@
 			"itemsHidden": true,
 			"miscTags": [
 				"CNS"
-			]
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "True-Ice Shards",

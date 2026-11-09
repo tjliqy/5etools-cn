@@ -772,7 +772,7 @@ export class ArtifactPropertiesTag {
 
 export class SkillTag extends ConverterTaggerInitializable {
 	static _RE_BASIC_XPHB = null;
-	static _RE_BASIC = /^(?<name>Acrobatics|特技|Animal Handling|驯兽|Arcana|奥秘|Athletics|运动|Deception|欺瞒|History|历史|Insight|洞悉|Intimidation|威吓|Investigation|调查|Medicine|医药|Nature|自然|Perception|察觉|Performance|表演|Persuasion|游说|Religion|宗教|Sleight of Hand|巧手|Stealth|隐匿|Survival|生存)$/g;
+	static _RE_BASIC = /^(?<name>Acrobatics|特技|Animal Handling|驯兽|Arcana|奥秘|Athletics|运动|Deception|欺瞒|History|历史|Insight|洞悉|Intimidation|威吓|Investigation|调查|Medicine|医药|Nature|自然|Perception|察觉|Performance|表演|Persuasion|游说|Religion|宗教|Sleight of Hand|巧手|Stealth|隐匿|Survival|求生)$/g;
 
 	static async _pInit () {
 		const skillData = await DataLoader.pCacheAndGetAllSite("skill");

@@ -91,7 +91,11 @@ def stable_token(value) -> str:
 # inherits weight/valueExpression ("[[baseItem.value]]*10" interpolation
 # templates; zh main repo 具装 keeps them byte-identical) are entity-routing
 # codes / renderer math, all kept Latin in every zh repository.
-MACHINE_LEAF = re.compile(r"/(alId|colStyles(?:\[\d+\])?|summonedByClass|style|type/tags(?:\[\d+\])?|spellcasting(?:\[\d+\])?/ability|featureType(?:\[\d+\])?|page|dmg[12]|(?:skill|save)/[a-z]+|midiProperties/[A-Za-z0-9_]+|healing/bonus|flags(?:/[A-Za-z0-9_.%-]+|\[\d+\])+|foundryEffects(?:\[[^\]]*\])?/changes(?:\[\d+\])?/(?:key|mode|value|priority)|activities(?:\[[^\]]*\])?/roll\.formula|foundryActivities(?:\[[^\]]*\])?/save/dc\.formula|foundryActivities(?:\[[^\]]*\])?/target\.affects/count|foundryActivities(?:\[[^\]]*\])?/check\.associated(?:\[\d+\])?|foundryActivities(?:\[[^\]]*\])?/consumption/targets(?:\[\d+\])?/target|additionalSpells(?:\[[^\]]*\])?/(?:known|innate|prepared)/_(?:\[\d+\])?(?:/(?:atwill|daily|weekly)\/[a-z0-9]+\[\d+\])?/choose|resources(?:\[[^\]]*\])?/count|activities(?:\[[^\]]*\])?/settings/(?:minimumAC|tempFormula)|activities(?:\[[^\]]*\])?/(?:range/value|save/dc\.formula|target\.affects/count|activity\.id)|foundryActivities(?:\[[^\]]*\])?/activity\.id|(?:foundryActivities|activities)(?:\[[^\]]*\])?/effects(?:\[\d+\])?/riders\.(?:activity|effect)(?:\[\d+\])?|activities(?:\[[^\]]*\])?/check\.associated(?:\[\d+\])?|activities(?:\[[^\]]*\])?/consumption\.targets(?:\[\d+\])?/value|activities(?:\[[^\]]*\])?/save\.dc\.formula|activities(?:\[[^\]]*\])?/(?:summon/)?profiles(?:\[\d+\])?/cr|foundryActivities(?:\[[^\]]*\])?/roll\.formula|foundryActivities(?:\[[^\]]*\])?/check/dc\.formula|foundryActivities(?:\[[^\]]*\])?/duration/units|foundryActivities(?:\[[^\]]*\])?/(?:summon/)?profiles(?:\[\d+\])?/uuid|foundryActivities(?:\[[^\]]*\])?/target/affects\.type|spell(?:\[[^\]]*\])?/school|spell(?:\[[^\]]*\])?/subschools(?:\[\d+\])?|foundryClassFeature(?:\[[^\]]*\])?/entryData/resources(?:\[[^\]]*\])?/faces|book(?:\[[^\]]*\])?/author|adventure(?:\[[^\]]*\])?/author|by|fluff(?:\[[^\]]*\])?/entries(?:\[[^\]]*\])?/font(?:\[\d+\])?|foundryImg(?:\[[^\]]*\])?|_copy(?:\[[^\]]*\])?/_mod/inherits\.valueExpression/value|_copy(?:\[[^\]]*\])?/_mod/items(?:\[\d+\])?/replace|items\[name=Example-[^\]]*\]/entr(?:y|ies)(?:\[\d+\])?|items\[name=[^\]]*(?:Playtesters?|Credits?|Artists?|Illustrators?|Authors?|Editors?|Cartographers?|Designers?|Developers?|Proofreaders?|Typesetters?|Consultants?|Playtest)[^\]]*\]/entries(?:\[\d+\])?|fontFamily|itemProperty(?:\[[^\]]*\])?/template|citation(?:\[[^\]]*\])?/name|appliesTo|upgradeType(?:\[\d+\])?|inherits/(?:weight|value)Expression)$")
+# reprintedAs[].uid is a routing anchor ("防护师的镀金|24GriffonsSaddlebag1"):
+# name/class segments are localized but source-code segments stay byte-identical
+# Latin regardless of whether the referenced source is declared in
+# _meta.dependencies (the declared case is already exempt via source_codes).
+MACHINE_LEAF = re.compile(r"/(alId|colStyles(?:\[\d+\])?|summonedByClass|style|type/tags(?:\[\d+\])?|spellcasting(?:\[\d+\])?/ability|featureType(?:\[\d+\])?|page|dmg[12]|(?:skill|save)/[a-z]+|midiProperties/[A-Za-z0-9_]+|healing/bonus|flags(?:/[A-Za-z0-9_.%-]+|\[\d+\])+|foundryEffects(?:\[[^\]]*\])?/changes(?:\[\d+\])?/(?:key|mode|value|priority)|activities(?:\[[^\]]*\])?/roll\.formula|foundryActivities(?:\[[^\]]*\])?/save/dc\.formula|foundryActivities(?:\[[^\]]*\])?/target\.affects/count|foundryActivities(?:\[[^\]]*\])?/check\.associated(?:\[\d+\])?|foundryActivities(?:\[[^\]]*\])?/consumption/targets(?:\[\d+\])?/target|additionalSpells(?:\[[^\]]*\])?/(?:known|innate|prepared)/_(?:\[\d+\])?(?:/(?:atwill|daily|weekly)\/[a-z0-9]+\[\d+\])?/choose|resources(?:\[[^\]]*\])?/count|activities(?:\[[^\]]*\])?/settings/(?:minimumAC|tempFormula)|activities(?:\[[^\]]*\])?/(?:range/value|save/dc\.formula|target\.affects/count|activity\.id)|foundryActivities(?:\[[^\]]*\])?/activity\.id|(?:foundryActivities|activities)(?:\[[^\]]*\])?/effects(?:\[\d+\])?/riders\.(?:activity|effect)(?:\[\d+\])?|activities(?:\[[^\]]*\])?/check\.associated(?:\[\d+\])?|activities(?:\[[^\]]*\])?/consumption\.targets(?:\[\d+\])?/value|activities(?:\[[^\]]*\])?/save\.dc\.formula|activities(?:\[[^\]]*\])?/(?:summon/)?profiles(?:\[\d+\])?/cr|foundryActivities(?:\[[^\]]*\])?/roll\.formula|foundryActivities(?:\[[^\]]*\])?/check/dc\.formula|foundryActivities(?:\[[^\]]*\])?/duration/units|foundryActivities(?:\[[^\]]*\])?/(?:summon/)?profiles(?:\[\d+\])?/uuid|foundryActivities(?:\[[^\]]*\])?/target/affects\.type|spell(?:\[[^\]]*\])?/school|spell(?:\[[^\]]*\])?/subschools(?:\[\d+\])?|foundryClassFeature(?:\[[^\]]*\])?/entryData/resources(?:\[[^\]]*\])?/faces|book(?:\[[^\]]*\])?/author|adventure(?:\[[^\]]*\])?/author|by|fluff(?:\[[^\]]*\])?/entries(?:\[[^\]]*\])?/font(?:\[\d+\])?|foundryImg(?:\[[^\]]*\])?|_copy(?:\[[^\]]*\])?/_mod/inherits\.valueExpression/value|_copy(?:\[[^\]]*\])?/_mod/items(?:\[\d+\])?/replace|items\[name=Example-[^\]]*\]/entr(?:y|ies)(?:\[\d+\])?|items\[name=[^\]]*(?:Playtesters?|Credits?|Artists?|Illustrators?|Authors?|Editors?|Cartographers?|Designers?|Developers?|Proofreaders?|Typesetters?|Consultants?|Playtest)[^\]]*\]/entries(?:\[\d+\])?|fontFamily|itemProperty(?:\[[^\]]*\])?/template|citation(?:\[[^\]]*\])?/name|appliesTo|upgradeType(?:\[\d+\])?|inherits/(?:weight|value)Expression|reprintedAs(?:\[\d+\])?/uid)$")
 
 # Renderer variable placeholders like "<$cha_mod$>" (item charge counts) are
 # substituted verbatim by the site and must stay byte-identical.
@@ -500,7 +504,17 @@ _RETAINED_SPECIES_NAMES = {
 }
 # Personal/shop names deliberately kept in Latin in the book's own Chinese
 # prose (L'Arsène appears verbatim inside translated sentences).
-_RETAINED_LATIN_NAMES = {"L'Arsène"}
+_RETAINED_LATIN_NAMES = {
+    "L'Arsène",
+    # GSB3 binding rulings (glossary evidence, chunk-0008/0010/0013 rounds):
+    # Lantern of the Frost Watch command words (/item/202) and the ship name
+    # Navis Anima (/item/111 family) stay in Latin by adjudication.
+    "Aduro",
+    "Calidum",
+    "Micare",
+    "Revelare",
+    "Navis Anima",
+}
 
 
 def is_retained_species_name(en_str) -> bool:
@@ -656,6 +670,23 @@ def resolve_job_value(root, key_path: str):
                 index = int(explicit_index)
             elif len(candidates) == 1:
                 index = candidates[0]
+            elif len(candidates) > 1 and "name" in expected and sum(
+                1
+                for i in candidates
+                if current[i].get("name") == expected["name"]
+                or current[i].get("ENG_name") == expected["name"]
+            ) == 1:
+                # Token-collision tiebreak: a translated name can collapse to the
+                # same stable token as a sibling's literal name (GSB3 Games
+                # Master: "龙棋召唤（1/日）" tokenizes to "1" beside a literal
+                # action name "1"). Prefer the candidate whose raw name/ENG_name
+                # string equals the anchor verbatim.
+                index = next(
+                    i
+                    for i in candidates
+                    if current[i].get("name") == expected["name"]
+                    or current[i].get("ENG_name") == expected["name"]
+                )
             elif len(candidates) > 1 and "source" in expected:
                 # Duplicate names (e.g. "Stokkvari" gallery + statblock): prefer the
                 # candidate that also matches an expected "source" field when present.
