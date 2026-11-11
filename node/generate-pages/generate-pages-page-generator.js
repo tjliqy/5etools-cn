@@ -24,6 +24,7 @@ export class PageGeneratorBase {
 	static _SITE_NAME = "5etools";
 	static _SITE_ALT_NAME = "龙与地下城中文资料站 - 5etools";
 	static _BAIDU_TONGJI_ID = process.env.BAIDU_TONGJI_ID || null;
+	static _ICP_BEIAN = process.env.ICP_BEIAN || null;
 
 	init () {
 		this._registerPartials();
@@ -84,6 +85,7 @@ export class PageGeneratorBase {
 			isNoIndex: this._isNoIndex,
 			jsonLd: this._getJsonLd({canonicalUrl}),
 			baiduTongjiId: this.constructor._BAIDU_TONGJI_ID,
+			icpBeian: this.constructor._ICP_BEIAN,
 		};
 	}
 
