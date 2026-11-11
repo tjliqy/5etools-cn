@@ -265,7 +265,8 @@
 				"wisdom"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Deathbringer Saurfang",
@@ -465,7 +466,8 @@
 				"wisdom"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Deathspeaker High Priest",
@@ -583,7 +585,8 @@
 				"RCH"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Festergut",
@@ -738,7 +741,8 @@
 				"dexterity"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Frost Wyrm",
@@ -910,7 +914,8 @@
 				"wisdom"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Lady Deathwhisper",
@@ -1169,7 +1174,8 @@
 				"wisdom"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Lord Marrowgar",
@@ -1335,7 +1341,8 @@
 				"dexterity"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Plague-Dog",
@@ -1464,11 +1471,12 @@
 				"wisdom"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Plagueworks Ooze",
-			"name": "天灾工厂软泥怪",
+			"name": "瘟疫工坊软泥怪",
 			"type": "ooze",
 			"source": "ICC",
 			"page": 61,
@@ -1557,7 +1565,7 @@
 					"ENG_name": "Merge",
 					"name": "融合",
 					"entries": [
-						"软泥怪与其5尺内的另一团天灾工厂软泥怪融合。融合后的软泥怪体型增大一级（从中型到大型、大型到巨型，或巨型到超巨型[上限]），其在另一团软泥怪的{@variantrule 先攻|XPHB}顺位行动，且其拥有两团软泥怪的{@variantrule 生命值|XPHB}总和。"
+						"软泥怪与其5尺内的另一团瘟疫工坊软泥怪融合。融合后的软泥怪体型增大一级（从中型到大型、大型到巨型，或巨型到超巨型[上限]），其在另一团软泥怪的{@variantrule 先攻|XPHB}顺位行动，且其拥有两团软泥怪的{@variantrule 生命值|XPHB}总和。"
 					]
 				}
 			],
@@ -1578,7 +1586,8 @@
 				"MA"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Prince Keleseth",
@@ -1804,7 +1813,8 @@
 				"wisdom"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Prince Taldaram",
@@ -2014,7 +2024,8 @@
 				"wisdom"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Prince Valanar",
@@ -2229,7 +2240,8 @@
 				"wisdom"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Professor Putricide, Phase 1",
@@ -2393,7 +2405,8 @@
 				"dexterity"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Professor Putricide, Phase 2",
@@ -2463,7 +2476,8 @@
 							}
 						}
 					]
-				}
+				},
+				"translator": "Kiwee"
 			},
 			"miscTags": [
 				"AOE",
@@ -2477,7 +2491,8 @@
 				"constitution"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Pustulating Horror",
@@ -2593,7 +2608,8 @@
 				"dexterity"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Rotface",
@@ -2696,7 +2712,7 @@
 					"name": "畸变感染{@recharge 5}",
 					"entries": [
 						"{@actSave con} {@dc 20}，腐面60尺内可见的单一生物。{@actSaveFail} 目标陷入{@condition 中毒|XPHB}状态。处于{@condition 中毒|XPHB}状态期间，目标无法恢复{@variantrule 生命值|XPHB}，且在其每个回合开始时受到21（{@damage 6d6}）强酸伤害，并在其每个回合结束时重复豁免，成功则终止其身上的该效应。1分钟后，其豁免自动成功。",
-						"当目标身上的{@condition 中毒|XPHB}状态终止时，在该生物5尺内的一处未占据空间中生成一团{@creature 天灾工厂软泥怪|ICC}。该软泥怪在腐面之后立即以相同的{@variantrule 先攻|XPHB}顺位行动。该软泥怪战斗直至被摧毁。"
+						"当目标身上的{@condition 中毒|XPHB}状态终止时，在该生物5尺内的一处未占据空间中生成一团{@creature 瘟疫工坊软泥怪|ICC}。该软泥怪在腐面之后立即以相同的{@variantrule 先攻|XPHB}顺位行动。该软泥怪战斗直至被摧毁。"
 					]
 				}
 			],
@@ -2729,7 +2745,8 @@
 				"dexterity"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Servant of the Throne",
@@ -2918,7 +2935,8 @@
 				"wisdom"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Sindragosa",
@@ -3136,7 +3154,8 @@
 				"constitution"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Sister Svalna",
@@ -3293,7 +3312,8 @@
 				"dexterity"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "The Damned",
@@ -3421,7 +3441,8 @@
 				"constitution"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Tirion Fordring",
@@ -3556,7 +3577,8 @@
 				"charisma"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Val'kyr Herald",
@@ -3694,7 +3716,8 @@
 				"charisma"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Vengeful Geist",
@@ -3803,7 +3826,8 @@
 				"prone"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Kiwee"
 		}
 	]
 }

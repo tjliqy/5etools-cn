@@ -169,7 +169,7 @@ const _DAMAGE_TYPE_MAP = {
 	火焰: "fire",
 	力场: "force",
 	闪电: "lightning",
-	黯蚀: "necrotic",
+	暗蚀: "necrotic",
 	死灵: "necrotic",
 	穿刺: "piercing",
 	毒素: "poison",

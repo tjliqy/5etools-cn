@@ -265,7 +265,7 @@
 					"ENG_name": "Caustic Bile {@recharge 5}",
 					"name": "腐蚀胆汁{@recharge 5}",
 					"entries": [
-						"{@actSave dex} {@dc 16}，阿库麦尔 30 尺内可见一点为中心、半径 20 尺的{@variantrule 球状 [效应区域]|XPHB|球状}内的每个生物。{@actSaveFail} 9 ({@damage 2d8}) 点酸蚀伤害，且其下个回合结束时受 4 ({@damage 1d8}) 点酸蚀伤害。{@actSaveSuccess} 仅受一半初始伤害。"
+						"{@actSave dex} {@dc 16}，阿库麦尔 30 尺内可见一点为中心、半径 20 尺的{@variantrule 球状 [效应区域]|XPHB|球状}内的每个生物。{@actSaveFail} 9 ({@damage 2d8}) 点强酸伤害，且其下个回合结束时受 4 ({@damage 1d8}) 点强酸伤害。{@actSaveSuccess} 仅受一半初始伤害。"
 					]
 				}
 			],
@@ -5526,7 +5526,7 @@
 					"ENG_name": "Emerald Gas Breath {@recharge 5}",
 					"name": "翡翠毒气吐息{@recharge 5}",
 					"entries": [
-						"{@actSave con} {@dc 22}，90 尺{@variantrule 锥状 [效应区域]|XPHB|锥状}内的每个生物。{@actSaveFail} 24 ({@damage 7d6}) 点酸蚀伤害外加 24 ({@damage 7d6}) 点毒素伤害。{@actSaveSuccess} 伤害减半。"
+						"{@actSave con} {@dc 22}，90 尺{@variantrule 锥状 [效应区域]|XPHB|锥状}内的每个生物。{@actSaveFail} 24 ({@damage 7d6}) 点强酸伤害外加 24 ({@damage 7d6}) 点毒素伤害。{@actSaveSuccess} 伤害减半。"
 					]
 				}
 			],
@@ -5708,7 +5708,7 @@
 					"ENG_name": "Emerald Gas Breath {@recharge 5}",
 					"name": "翡翠毒气吐息{@recharge 5}",
 					"entries": [
-						"{@actSave con} {@dc 19}，60 尺{@variantrule 锥状 [效应区域]|XPHB|锥状}内的每个生物。{@actSaveFail} 24 ({@damage 7d6}) 点酸蚀伤害外加 24 ({@damage 7d6}) 点毒素伤害。{@actSaveSuccess} 伤害减半。"
+						"{@actSave con} {@dc 19}，60 尺{@variantrule 锥状 [效应区域]|XPHB|锥状}内的每个生物。{@actSaveFail} 24 ({@damage 7d6}) 点强酸伤害外加 24 ({@damage 7d6}) 点毒素伤害。{@actSaveSuccess} 伤害减半。"
 					]
 				}
 			],
@@ -5833,7 +5833,7 @@
 					"ENG_name": "Emerald Gas Breath {@recharge 5}",
 					"name": "翡翠毒气吐息{@recharge 5}",
 					"entries": [
-						"{@actSave con} {@dc 14}，15 尺{@variantrule 锥状 [效应区域]|XPHB|锥状}内的每个生物。{@actSaveFail} 14 ({@damage 4d6}) 点酸蚀伤害外加 14 ({@damage 4d6}) 点毒素伤害。{@actSaveSuccess} 伤害减半。"
+						"{@actSave con} {@dc 14}，15 尺{@variantrule 锥状 [效应区域]|XPHB|锥状}内的每个生物。{@actSaveFail} 14 ({@damage 4d6}) 点强酸伤害外加 14 ({@damage 4d6}) 点毒素伤害。{@actSaveSuccess} 伤害减半。"
 					]
 				}
 			],
@@ -9961,7 +9961,7 @@
 					"ENG_name": "Web Strand",
 					"name": "绞网",
 					"entries": [
-						"{@actSave dex} {@dc 19}，该蛛魔 60 尺内可见的一个大型或更小的生物。{@actSaveFail} 11 ({@damage 2d10}) 点钝击伤害，外加 9 ({@damage 2d8}) 点酸蚀伤害，且目标处于{@condition 束缚|XPHB}状态，直到蛛网被摧毁（AC 10；HP 5；对火焰伤害具有{@variantrule 易伤|XPHB}；对钝击、毒素和心灵伤害具有{@variantrule 免疫|XPHB}）。"
+						"{@actSave dex} {@dc 19}，该蛛魔 60 尺内可见的一个大型或更小的生物。{@actSaveFail} 11 ({@damage 2d10}) 点钝击伤害，外加 9 ({@damage 2d8}) 点强酸伤害，且目标处于{@condition 束缚|XPHB}状态，直到蛛网被摧毁（AC 10；HP 5；对火焰伤害具有{@variantrule 易伤|XPHB}；对钝击、毒素和心灵伤害具有{@variantrule 免疫|XPHB}）。"
 					]
 				}
 			],

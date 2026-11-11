@@ -520,7 +520,7 @@
 					"ENG_name": "Create Lornlings {@recharge 5}",
 					"name": "创造洛林灵 {@recharge 5}",
 					"entries": [
-						"Bavlorna 创造了一个或两个1尺高的自己的复制品，称为 lornlings（使用附录C中的 Quickling 统计块）。每个 lornling 出现在 Bavlorna 周围5尺内的未被占据的空间，服从她的命令，并在她的回合之后立即进行它的回合。一个 lornling 持续时间为1小时，直到它或 Bavlorna 死亡，或者直到 Bavlorna 采取行动解散它。Bavlorna 一次最多可以有八个 lornlings 存在。"
+						"Bavlorna 创造了一个或两个1尺高的自己的复制品，称为 lornlings（使用附录C中的 Quickling 数据卡）。每个 lornling 出现在 Bavlorna 周围5尺内的未被占据的空间，服从她的命令，并在她的回合之后立即进行它的回合。一个 lornling 持续时间为1小时，直到它或 Bavlorna 死亡，或者直到 Bavlorna 采取行动解散它。Bavlorna 一次最多可以有八个 lornlings 存在。"
 					]
 				}
 			],
@@ -529,7 +529,7 @@
 					"ENG_name": "Swallow",
 					"name": "吞咽",
 					"entries": [
-						"巴夫洛娜吞下一个她正在摔跤的小型或更小的生物，结束对它的摔跤。被吞下的生物处于{@condition 目盲}和{@condition 束缚}状态，它对巴夫洛娜外部的攻击和其他效果有{@quickref 掩护||3||全身掩护}，并且在它的每个回合开始时受到10 ({@damage 3d6}) 酸液伤害。如果被吞下的生物是巴夫洛娜的洛林灵之一，当酸液伤害将其生命值减少到0时，巴夫洛娜会获得洛林灵的所有记忆。",
+						"巴夫洛娜吞下一个她正在摔跤的小型或更小的生物，结束对它的摔跤。被吞下的生物处于{@condition 目盲}和{@condition 束缚}状态，它对巴夫洛娜外部的攻击和其他效果有{@quickref 掩护||3||全身掩护}，并且在它的每个回合开始时受到10 ({@damage 3d6}) 强酸伤害。如果被吞下的生物是巴夫洛娜的洛林灵之一，当强酸伤害将其生命值减少到0时，巴夫洛娜会获得洛林灵的所有记忆。",
 						"Bavlorna一次只能吞下一只生物。如果Bavlorna死亡，被吞下的生物不再处于{@condition 束缚}状态，并可以使用5尺的移动力从尸体中逃脱，以{@condition 倒地}状态出现。"
 					]
 				}
