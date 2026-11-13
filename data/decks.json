@@ -3350,8 +3350,8 @@
 				"height": 561
 			},
 			"entries": [
-				"在{@adventure 附录D|CRCotN|11}中的牌应该给予那些在{@adventure 第六章|CRCotN|6}中角色获得{@deck 痛苦碎片|CRCotN}的玩家（详见该章节以获取更多信息）。",
-				"{@note 可打印资源位于{@adventure 附录D.|CRCotN|11}}"
+				"{@adventure 附录D|CRCotN|11}中的卡牌用来发放给其角色在{@adventure 第六章|CRCotN|6}中获得{@deck 痛苦碎片|CRCotN}的玩家（更多信息见该章节）。",
+				"{@note 可打印素材见{@adventure 附录D。|CRCotN|11}}"
 			],
 			"hasCardArt": true
 		},
@@ -3617,10 +3617,10 @@
 			"cards": [
 				"肌肉奖章|善行奖章|CRCotN",
 				"海螺奖章|善行奖章|CRCotN",
-				"天际巨龟勋章|善行奖章|CRCotN",
+				"天际巨龟奖章|善行奖章|CRCotN",
 				"迷宫奖章|善行奖章|CRCotN",
 				"肉馅饼奖章|善行奖章|CRCotN",
-				"湿地勋章|善行奖章|CRCotN",
+				"湿地奖章|善行奖章|CRCotN",
 				"智慧奖章|善行奖章|CRCotN",
 				"使用卡牌|善行奖章|CRCotN"
 			],
@@ -3634,8 +3634,8 @@
 				"height": 561
 			},
 			"entries": [
-				"本页上的卡片是为了复印并给予那些在{@adventure 第一章|CRCotN|1}中赢得{@deck 善行奖章|CRCotN}的角色的玩家（有关比赛规则，请参见该章节）。",
-				"{@note 可打印资源可在{@adventure 附录C.|CRCotN|10}中找到}"
+				"本页的卡牌可复印后发放给其角色在{@adventure 第一章|CRCotN|1}中赢得{@deck 善行奖章|CRCotN}的玩家（竞赛规则见该章节）。",
+				"{@note 可打印素材见{@adventure 附录C。|CRCotN|10}}"
 			],
 			"hasCardArt": true
 		},
@@ -22408,7 +22408,7 @@
 		},
 		{
 			"ENG_name": "Medal of the Horizonback",
-			"name": "天际巨龟勋章",
+			"name": "天际巨龟奖章",
 			"source": "CRCotN",
 			"set": "善行奖章",
 			"page": 217,
@@ -22424,7 +22424,7 @@
 			"entries": [
 				{
 					"ENG_name": "Medal of the Horizonback",
-					"name": "天际巨龟勋章",
+					"name": "天际巨龟奖章",
 					"type": "statblock",
 					"tag": "item",
 					"source": "CRCotN",
@@ -22486,7 +22486,7 @@
 		},
 		{
 			"ENG_name": "Medal of the Wetlands",
-			"name": "湿地勋章",
+			"name": "湿地奖章",
 			"source": "CRCotN",
 			"set": "善行奖章",
 			"page": 217,
@@ -22502,7 +22502,7 @@
 			"entries": [
 				{
 					"ENG_name": "Medal of the Wetlands",
-					"name": "湿地勋章",
+					"name": "湿地奖章",
 					"type": "statblock",
 					"tag": "item",
 					"source": "CRCotN",
@@ -22552,8 +22552,8 @@
 				"height": 787
 			},
 			"entries": [
-				"本页上的卡片是为了复印并给予那些在{@adventure 第一章|CRCotN|1}中赢得{@deck 善行奖章|CRCotN}的角色的玩家（有关比赛规则，请参见该章节）。",
-				"在{@adventure 附录D|CRCotN|11}中的牌应该给予那些在{@adventure 第六章|CRCotN|6}中角色获得{@deck 痛苦碎片|CRCotN}的玩家（详见该章节以获取更多信息）。"
+				"本页的卡牌可复印后发放给其角色在{@adventure 第一章|CRCotN|1}中赢得{@deck 善行奖章|CRCotN}的玩家（竞赛规则见该章节）。",
+				"{@adventure 附录D|CRCotN|11}中的卡牌用来发放给其角色在{@adventure 第六章|CRCotN|6}中获得{@deck 痛苦碎片|CRCotN}的玩家（更多信息见该章节）。"
 			]
 		},
 		{

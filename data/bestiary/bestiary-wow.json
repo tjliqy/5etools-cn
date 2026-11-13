@@ -1421,7 +1421,7 @@
 				"walk": 30,
 				"fly": {
 					"number": 30,
-					"condition": "(see Dark Archangel Form)"
+					"condition": "(见黑暗大天使形态)"
 				}
 			},
 			"initiative": {
@@ -1718,11 +1718,11 @@
 			"typeNote": "（你的生物类型与阵营不会改变。要求：{@subclassFeature 结社形态|德鲁伊|XPHB|月亮|XPHB|3|XPHB}）",
 			"ac": [
 				{
-					"special": "15 + your Wisdom modifier"
+					"special": "15 + 你的感知调整值"
 				}
 			],
 			"hp": {
-				"special": "3 times your Druid level",
+				"special": "3 * 你的德鲁伊等级",
 				"isTemporary": true
 			},
 			"speed": {
@@ -3457,7 +3457,7 @@
 				}
 			],
 			"hp": {
-				"special": "3 times your Druid level",
+				"special": "3 * 你的德鲁伊等级",
 				"isTemporary": true
 			},
 			"speed": {
@@ -10282,7 +10282,7 @@
 				"walk": 30,
 				"fly": {
 					"number": 60,
-					"condition": "(see Fel Metamorphosis)"
+					"condition": "(见邪能变形)"
 				}
 			},
 			"initiative": {

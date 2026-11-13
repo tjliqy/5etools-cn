@@ -1227,11 +1227,11 @@ globalThis.Renderer = class {
 	}
 
 	_getPtExpandCollapse () {
-		return `<span class="ve-rd__h-toggle ve-ml-2 ve-clickable ve-no-select ve-print__hidden ve-lst-is-exporting-image__hidden" data-rd-h-toggle-button="true" title="折叠/展开（按住SHIFT切换所有）">[\u2212]</span>`;
+		return `<span class="ve-rd__h-toggle ve-ml-2 ve-clickable ve-no-select ve-print__hidden ve-lst-is-exporting-image__hidden" data-rd-h-toggle-button="true" title="折叠/展开（按住 Shift 键可切换全部）">[\u2212]</span>`;
 	}
 
 	_getPtExpandCollapseSpecial () {
-		return `<span class="ve-rd__h-toggle ve-ml-2 ve-clickable ve-no-select ve-print__hidden ve-lst-is-exporting-image__hidden" data-rd-h-special-toggle-button="true" title="折叠/展开（按住SHIFT切换所有）">[\u2212]</span>`;
+		return `<span class="ve-rd__h-toggle ve-ml-2 ve-clickable ve-no-select ve-print__hidden ve-lst-is-exporting-image__hidden" data-rd-h-special-toggle-button="true" title="折叠/展开（按住 Shift 键可切换全部）">[\u2212]</span>`;
 	}
 
 	/* -------------------------------------------- */
@@ -3451,7 +3451,7 @@ Renderer.utils = class {
 	}
 
 	static getBtnSendToFoundryHtml ({isMb = true} = {}) {
-		return `<button title="发送到Foundry (按住SHIFT以临时导入)" class="ve-print__hidden ve-btn ve-btn-xs ve-btn-default stats__btn-stats-name mx-2 ${isMb ? "mb-2" : ""} ve-self-flex-end lst-is-exporting-image__hidden" onclick="ExtensionUtil.pDoSendStats(event, this)" draggable="true" ondragstart="ExtensionUtil.doDragStart(event, this)"><span class="glyphicon glyphicon-send"></span></button>`;
+		return `<button title="发送到 Foundry（按住 Shift 键可临时导入）" class="ve-print__hidden ve-btn ve-btn-xs ve-btn-default stats__btn-stats-name mx-2 ${isMb ? "mb-2" : ""} ve-self-flex-end lst-is-exporting-image__hidden" onclick="ExtensionUtil.pDoSendStats(event, this)" draggable="true" ondragstart="ExtensionUtil.doDragStart(event, this)"><span class="glyphicon glyphicon-send"></span></button>`;
 	}
 
 	static isDisplayPage (page) { return page != null && ((!isNaN(page) && page > 0) || isNaN(page)); }
@@ -3508,12 +3508,12 @@ Renderer.utils = class {
 				const {name, source, displayText} = unpacked;
 
 				if (isText) {
-					return `${Renderer.stripTags(displayText || name)} in ${Parser.sourceJsonToAbv(source)}`;
+					return `${Renderer.stripTags(displayText || name)}，来源：${Parser.sourceJsonToAbv(source)}`;
 				}
 
 				const asTag = `{@${tag_} ${uid}}`;
 
-				return `${Renderer.get().render(asTag)} in <i class="ve-help-subtle" title="${Parser.sourceJsonToFull(source).qq()}">${Parser.sourceJsonToAbv(source)}</i>`;
+				return `${Renderer.get().render(asTag)}，来源：<i class="ve-help-subtle" title="${Parser.sourceJsonToFull(source).qq()}">${Parser.sourceJsonToAbv(source)}</i>`;
 			})
 			.join("; ");
 
@@ -4570,7 +4570,7 @@ Renderer.utils = class {
 
 							if (isListMode) return `${abs.map(ab => ab.uppercaseFirst()).join(", ")} ${req}+`;
 
-							const ptHigher = styleHint === "classic" ? " or higher" : "+";
+							const ptHigher = styleHint === "classic" ? " 或更高" : "+";
 							return `${abs.map(ab => Parser.attAbvToFull(ab)).joinConjunct(", ", " 和 ")} ${req}${ptHigher}`;
 						});
 
@@ -4607,10 +4607,10 @@ Renderer.utils = class {
 					) continue;
 
 					switch (prop) {
-						case "weapon": return `Proficiency with a ${v.map(obj => obj[prop]).joinConjunct(", ", " or ")} weapon`;
-						case "weaponGroup": return `${v.map(obj => obj[prop].toTitleCase()).joinConjunct(", ", " or ")} Weapon Proficiency`;
-						case "skill": return `Proficiency in the ${v.map(obj => `{@skill ${obj[prop][0].toTitleCase()}}`).joinConjunct(", ", " or ")} skill`;
-						case "tool": return `Proficiency with ${v.map(obj => obj[prop][0].toTitleCase()).joinConjunct(", ", " or ")}`;
+						case "weapon": return `具有${v.map(obj => obj[prop]).joinConjunct(", ", " 或 ")}武器熟练项`;
+						case "weaponGroup": return `${v.map(obj => obj[prop].toTitleCase()).joinConjunct(", ", " 或 ")}类武器熟练项`;
+						case "skill": return `具有${v.map(obj => `{@skill ${obj[prop][0].toTitleCase()}}`).joinConjunct(", ", " 或 ")}技能熟练项`;
+						case "tool": return `具有${v.map(obj => obj[prop][0].toTitleCase()).joinConjunct(", ", " 或 ")}工具熟练项`;
 						default: throw new Error("Unimplemented!");
 					}
 				}
@@ -4644,7 +4644,7 @@ Renderer.utils = class {
 							if (prof === true) return isListMode ? "工具熟练项" : "熟练于一个工具";
 							return isListMode
 								? prof.map(tool => tool.toTitleCase()).join("+")
-								: `熟练于${prof.map(tool => tool.toTitleCase()).joinConjunct(", ", " and ")}`;
+								: `熟练于${prof.map(tool => tool.toTitleCase()).joinConjunct(", ", " 和 ")}`;
 						}
 						default: throw new Error(`Unhandled proficiency type: "${profType}"`);
 					}
@@ -4666,7 +4666,7 @@ Renderer.utils = class {
 					}
 				});
 			});
-			return isListMode ? parts.join("/") : parts.joinConjunct(", ", " or ");
+			return isListMode ? parts.join("/") : parts.joinConjunct(", ", " 或 ");
 		}
 
 		static _getEntry_spellcasting ({v, isListMode}) {
@@ -11815,7 +11815,7 @@ Renderer.monster = class {
 			});
 
 		return isJoinWithOr
-			? toJoin.joinConjunct(", ", " or ")
+			? toJoin.joinConjunct(", ", " 或 ")
 			: toJoin.join(", ");
 	}
 
@@ -14383,8 +14383,8 @@ Renderer.vehicle = class {
 			const entriesOtherOthers = (ent.other || []).filter(it => it.name !== "Actions" && it.name !== "动作");
 
 			const ptDimensionsTerrain = [
-				ent.terrain ? ent.terrain.joinConjunct(", ", " and ") : null,
-				ent.dimensions ? ent.dimensions.join(" by ") : null,
+				ent.terrain ? ent.terrain.joinConjunct(", ", " 和 ") : null,
+				ent.dimensions ? ent.dimensions.join(" × ") : null,
 			]
 				.filter(Boolean)
 				.join("; ");
@@ -15612,7 +15612,7 @@ Renderer.crochetPattern = class {
 	static getCrochetPatternRenderableEntriesMeta (ent) {
 		return {
 			entrySkillLevel: Parser.crochetPatternSkilLevelToFull(ent.level),
-			entryDesignedBy: ent.designers ? ent.designers.joinConjunct(", ", " and ") : null,
+			entryDesignedBy: ent.designers ? ent.designers.joinConjunct(", ", " 和 ") : null,
 			entriesMeasurements: this._getCrochetPatternRenderableEntriesMeta_entriesMeasurements({ent}),
 			entriesHooks: this._getCrochetPatternRenderableEntriesMeta_entriesHooks({ent}),
 		};
