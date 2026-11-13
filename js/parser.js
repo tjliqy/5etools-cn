@@ -1855,8 +1855,8 @@ Parser.SP_MISC_TAG_TO_FULL = {
 	"ADV": "提供优势",
 	"PIR": "重复施法使效用永久",
 	"BO": "点燃物品",
-	"WLT": "Targets Willing Creatures",
-	"ALT": "Targets Allies",
+	"WLT": "目标为自愿的生物",
+	"ALT": "目标为盟友",
 };
 Parser.spMiscTagToFull = function (type) {
 	return Parser._parse_aToB(Parser.SP_MISC_TAG_TO_FULL, type);
@@ -2177,7 +2177,7 @@ Parser.monLanguageTagToFull = function (tag) {
 	return Parser._parse_aToB(Parser.LANGUAGES_TO_CN, Parser._parse_aToB(Parser.MON_LANGUAGE_TAG_TO_FULL, tag).toLowerCase());
 };
 
-Parser.ENVIRONMENTS = ["丘陵", "城镇", "山地", "幽暗地域", "极地", "森林", "水下", "沼泽", "海岸", "草地", "荒漠"];
+Parser.ENVIRONMENTS = ["hill", "town", "mountain", "underdark", "arctic", "forest", "underwater", "swamp", "coastal", "grassland", "desert"];
 
 Parser.ENVIRONMENT__PLANAR_FEYWILD = "planar, feywild";
 Parser.ENVIRONMENT__PLANAR_SHADOWFELL = "planar, shadowfell";
@@ -2286,6 +2286,19 @@ Parser.getExpandedEnvironments = function (env) {
 };
 
 Parser.ENVIRONMENT_DISPLAY_NAMES = {
+	["hill"]: "丘陵",
+	["town"]: "城镇",
+	["mountain"]: "山地",
+	["underdark"]: "幽暗地域",
+	["arctic"]: "极地",
+	["forest"]: "森林",
+	["underwater"]: "水下",
+	["swamp"]: "沼泽",
+	["coastal"]: "海岸",
+	["grassland"]: "草地",
+	["desert"]: "荒漠",
+	["urban"]: "城市",
+
 	[Parser.ENVIRONMENT__PLANAR_FEYWILD]: "位面（妖精荒野）",
 	[Parser.ENVIRONMENT__PLANAR_SHADOWFELL]: "位面（堕影冥界）",
 
@@ -3177,6 +3190,10 @@ Parser.MON_EN_TYPES = [Parser.TP_ABERRATION, Parser.TP_BEAST, Parser.TP_CELESTIA
 Parser.MON_TYPES = Parser.MON_EN_TYPES.map(it => Parser.MON_TYPE_TO_PLURAL[it] || it);
 Parser.MON_TYPE_TO_PLURAL[Parser.TP_VEHICLE] = "载具";
 Parser.MON_TYPE_TO_PLURAL[Parser.TP_SPECIAL] = "特殊";
+
+// ua
+Parser.MON_TYPE_TO_PLURAL["Winged Animal"] = "带翼动物";
+Parser.MON_TYPE_TO_PLURAL["Terrestrial Animal"] = "地表动物";
 
 Parser.SZ_FINE = "F";
 Parser.SZ_DIMINUTIVE = "D";
