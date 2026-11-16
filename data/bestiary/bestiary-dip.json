@@ -82,12 +82,12 @@
 					],
 					"daily": {
 						"3": [
-							"{@spell 雷鸣波} ({@damage 2d8} 伤害)"
+							"{@spell 雷鸣波}（{@damage 2d8}点伤害）"
 						],
 						"1e": [
 							"{@spell 卜筮术}",
 							"{@spell 祝福术}",
-							"{@spell 闪电束} ({@damage 8d6} 伤害)",
+							"{@spell 闪电束}（{@damage 8d6}点伤害）",
 							"{@spell 回生术}"
 						]
 					},
@@ -106,14 +106,14 @@
 			"action": [
 				{
 					"ENG_name": "Clawed Gauntlet (Humanoid Form Only)",
-					"name": "带爪手套（仅类人形态）",
+					"name": "带爪护手（仅类人形态）",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}5 ({@damage 1d4 + 3}) 点挥砍伤害。"
 					]
 				},
 				{
 					"ENG_name": "Tusk (Boar Form Only)",
-					"name": "獠牙（仅野猪形态）",
+					"name": "牙撕（仅野猪形态）",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}6（{@damage 1d6 + 3}）点挥砍伤害。"
 					]
@@ -153,7 +153,7 @@
 		},
 		{
 			"ENG_name": "Don-Jon Raskin",
-			"name": "东容·拉斯坎",
+			"name": "东-容·拉斯坎",
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -205,12 +205,12 @@
 					"ENG_name": "Brave",
 					"name": "勇气",
 					"entries": [
-						"东容在对抗{@condition 恐慌}的豁免中有优势。"
+						"东-容为抵抗{@condition 恐慌}而作的豁免检定具有优势。"
 					]
 				},
 				{
 					"ENG_name": "Not Dead Yet (Recharges after a Long Rest)",
-					"name": "还没死呢（长休息后充能）",
+					"name": "还没死呢（长休后充能）",
 					"entries": [
 						"如果东容受到伤害并降至0点生命值，那么他降到1点生命值，并在他下回合结束前的所有攻击中具有优势。"
 					]
@@ -221,21 +221,21 @@
 					"ENG_name": "Multiattack",
 					"name": "多重攻击",
 					"entries": [
-						"东容进行三次近战攻击。"
+						"东-容发动三次近战攻击。"
 					]
 				},
 				{
 					"ENG_name": "Dagger",
 					"name": "匕首",
 					"entries": [
-						"{@atk mw,rw} 命中{@hit 2}，触及范围5尺或射程20/60尺，单一目标。{@h}2 ({@damage 1d4}) 点穿刺伤害。"
+						"{@atk mw,rw} 命中{@hit 2}，触及5尺或射程20/60尺，单一目标。{@h}2（{@damage 1d4}）点穿刺伤害。"
 					]
 				},
 				{
 					"ENG_name": "Sling",
 					"name": "投石索",
 					"entries": [
-						"{@atk rw} 命中{@hit 2}，射程 30/120 尺，单一目标。{@h}2 ({@damage 1d4}) 点钝击伤害。"
+						"{@atk rw} 命中{@hit 2}，射程30/120尺，单一目标。{@h}2（{@damage 1d4}）点钝击伤害。"
 					]
 				}
 			],
@@ -333,7 +333,7 @@
 					"ENG_name": "Sharpshooter",
 					"name": "神射手",
 					"entries": [
-						"战隼的远程武器攻击无视{@quickref 掩护||3||半身掩护}与{@quickref 掩护||3||四分之三掩护}。"
+						"战隼的远程武器攻击无视{@quickref 掩护||3||半身掩护}和{@quickref 掩护||3||四分之三掩护}。"
 					]
 				}
 			],
@@ -462,14 +462,14 @@
 					"ENG_name": "Lightning Tusks",
 					"name": "闪电獠牙",
 					"entries": [
-						"{@atk mw} 命中{@hit 8}，触及10尺，单一目标。{@h}12 ({@damage 2d6 + 5}) 点挥砍伤害加上7 ({@damage 2d6})点 闪电伤害。"
+						"{@atk mw} 命中{@hit 8}，触及10尺，单一目标。{@h}12（{@damage 2d6 + 5}）点挥砍伤害，外加7（{@damage 2d6}）点闪电伤害。"
 					]
 				},
 				{
 					"ENG_name": "Thunder Hooves",
 					"name": "雷鸣蹄击",
 					"entries": [
-						"{@atk mw} 命中{@hit 8}，触及10尺，单一目标。{@h}12 ({@damage 2d6 + 5}) 钝击伤害加上7 ({@damage 2d6}) 雷鸣伤害。"
+						"{@atk mw} 命中{@hit 8}，触及10尺，单一目标。{@h}12（{@damage 2d6 + 5}）点钝击伤害，外加7（{@damage 2d6}）点雷鸣伤害。"
 					]
 				},
 				{
@@ -562,7 +562,7 @@
 					"name": "施法",
 					"type": "spellcasting",
 					"headerEntries": [
-						"侏儒是2级施法者。其施法能力是智力（法术豁免{@dc 12}，法术攻击命中{@hit 4}）。它准备了以下法师法术："
+						"侏儒是2级施法者。它的施法属性为智力（法术豁免{@dc 12}，法术攻击命中{@hit 4}）。它准备了以下法师法术："
 					],
 					"spells": {
 						"0": {
@@ -606,7 +606,7 @@
 					"ENG_name": "Ray of Frost",
 					"name": "冷冻射线",
 					"entries": [
-						"{@atk rs} 命中{@hit 4}，射程60尺，单一生物。{@h}4 ({@damage 1d8}) 寒冷伤害，并且目标的速度在侏儒下一个回合开始前减少10尺。"
+						"{@atk rs} 命中{@hit 4}，射程60尺，单一生物。{@h}4（{@damage 1d8}）点寒冷伤害，且目标的速度在侏儒的下个回合开始前降低10尺。"
 					]
 				}
 			],

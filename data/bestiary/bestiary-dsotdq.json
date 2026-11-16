@@ -282,7 +282,7 @@
 								"ENG_name": "Quarterstaff",
 								"name": "长棍",
 								"entries": [
-									"{@atk mw} {@hit 4} 命中，触及5尺，单一目标。{@h}3（{@damage 1d6}）钝击伤害，或用双手时4（{@damage 1d8}）钝击伤害。"
+									"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}3 ({@damage 1d6}) 点钝击伤害，或双手使用时4 ({@damage 1d8}) 点钝击伤害。"
 								]
 							}
 						}
@@ -366,7 +366,7 @@
 								"ENG_name": "Quarterstaff",
 								"name": "长棍",
 								"entries": [
-									"{@atk mw} {@hit 4} 命中，触及5尺，单一目标。{@h}3（{@damage 1d6}）钝击伤害，或用双手时4（{@damage 1d8}）钝击伤害。"
+									"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}3 ({@damage 1d6}) 点钝击伤害，或双手使用时4 ({@damage 1d8}) 点钝击伤害。"
 								]
 							}
 						}
@@ -553,7 +553,7 @@
 								"ENG_name": "Quarterstaff",
 								"name": "长棍",
 								"entries": [
-									"{@atk mw} {@hit 3} 命中，触及5尺，单一目标。{@h}3（{@damage 1d6}）钝击伤害，或使用双手攻击时4（{@damage 1d8}）钝击伤害。"
+									"{@atk mw} 命中{@hit 3}，触及5尺，单一目标。{@h}3 ({@damage 1d6}) 点钝击伤害，或双手使用时4 ({@damage 1d8}) 点钝击伤害。"
 								]
 							}
 						}
@@ -629,7 +629,7 @@
 								"ENG_name": "Quarterstaff",
 								"name": "长棍",
 								"entries": [
-									"{@atk mw} {@hit 3} 命中，触及5尺，单一目标。{@h}3（{@damage 1d6}）钝击伤害，或使用双手攻击时4（{@damage 1d8}）钝击伤害。"
+									"{@atk mw} 命中{@hit 3}，触及5尺，单一目标。{@h}3 ({@damage 1d6}) 点钝击伤害，或双手使用时4 ({@damage 1d8}) 点钝击伤害。"
 								]
 							}
 						}
@@ -705,7 +705,7 @@
 								"ENG_name": "Quarterstaff",
 								"name": "长棍",
 								"entries": [
-									"{@atk mw} {@hit 3} 命中，触及5尺，单一目标。{@h}3（{@damage 1d6}）钝击伤害，或使用双手攻击时4（{@damage 1d8}）钝击伤害。"
+									"{@atk mw} 命中{@hit 3}，触及5尺，单一目标。{@h}3 ({@damage 1d6}) 点钝击伤害，或双手使用时4 ({@damage 1d8}) 点钝击伤害。"
 								]
 							}
 						}
@@ -782,7 +782,7 @@
 								"ENG_name": "Quarterstaff",
 								"name": "长棍",
 								"entries": [
-									"{@atk mw} {@hit 3} 命中，触及5尺，单一目标。{@h}3（{@damage 1d6}）钝击伤害，或使用双手攻击时4（{@damage 1d8}）钝击伤害。"
+									"{@atk mw} 命中{@hit 3}，触及5尺，单一目标。{@h}3 ({@damage 1d6}) 点钝击伤害，或双手使用时4 ({@damage 1d8}) 点钝击伤害。"
 								]
 							}
 						}
@@ -859,7 +859,7 @@
 								"ENG_name": "Quarterstaff",
 								"name": "长棍",
 								"entries": [
-									"{@atk mw} {@hit 4} 命中，触及5尺，单一目标。{@h}3（{@damage 1d6}）钝击伤害，或用双手时4（{@damage 1d8}）钝击伤害。"
+									"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}3 ({@damage 1d6}) 点钝击伤害，或双手使用时4 ({@damage 1d8}) 点钝击伤害。"
 								]
 							}
 						}
@@ -1701,7 +1701,7 @@
 							"ENG_name": "Shortsword",
 							"name": "短剑",
 							"entries": [
-								"{@atk mw} {@hit 8} 命中，触及5尺，单一目标。{@h}7（{@damage 1d6 + 4}）穿刺伤害。"
+								"{@atk mw} 命中{@hit 8}，触及5尺，单一目标。{@h}7 ({@damage 1d6 + 4}) 点穿刺伤害。"
 							]
 						},
 						{
@@ -6554,12 +6554,12 @@
 								],
 								[
 									"9环",
-									"65 （{@dice 10d8 + 20}）",
+									"65（{@dice 10d8 + 20}）",
 									"熟练加值。蕾芙娜的熟练加值提高1，因此将以下数值提高1：豁免检定和技能条目中的加值、她的被动{@skill 察觉}属性值以及她的武器攻击的命中加值。"
 								],
 								[
 									"10th",
-									"71 （{@dice 11d8 + 22}）",
+									"71（{@dice 11d8 + 22}）",
 									"精通防御。蕾芙娜的护甲等级提高1。"
 								],
 								[

@@ -746,7 +746,7 @@
 												"{@creature 纳瑟斯|HotB}",
 												"{@creature 诺斯怪|XMM}",
 												"{@creature 食人魔|XMM}",
-												"{@creature 食人魔僵尸|XMM}",
+												"{@creature 食人魔丧尸|XMM}",
 												"{@creature 枭熊|XMM}",
 												"{@creature 红龙雏龙|XMM}",
 												"{@creature 骷髅|XMM}",
@@ -7185,7 +7185,7 @@
 								},
 								{
 									"ENG_name": "Shrine Locations",
-									"name": "神殿位置",
+									"name": "神殿地点",
 									"type": "entries",
 									"id": "0fa",
 									"page": 26,
@@ -7538,7 +7538,7 @@
 														"死亡恶臭充斥着这条走廊。苍蝇围绕着一个呻吟着、嘴巴大张的巨人嗡嗡作响，背后是红色火焰壁灯的映照。"
 													]
 												},
-												"一只被邪教徒们征召来守卫他们邪恶行径的{@creature 食人魔僵尸|XMM}在此站岗，但这个残暴的不死生物很容易被愚弄。",
+												"一只被邪教徒们征召来守卫他们邪恶行径的{@creature 食人魔丧尸|XMM}在此站岗，但这个残暴的不死生物很容易被愚弄。",
 												"食人魔丧尸会让混沌教派的成员安然通过，但对未穿着教派服饰的进入者则持有{@variantrule 敌对【态度】|XPHB|敌对}态度，一见即攻击。该生物对任何穿着{@item 邪教徒的法袍|HotB}的人都持有{@variantrule 冷漠【态度】|XPHB|冷漠}态度。"
 											]
 										},
@@ -13009,7 +13009,7 @@
 												"{@creature 拟身怪|XMM}",
 												"{@creature 贵族|XMM}",
 												"{@creature 食人魔|XMM}",
-												"{@creature 食人魔僵尸|XMM}",
+												"{@creature 食人魔丧尸|XMM}",
 												"{@creature 枭熊|XMM}",
 												"{@creature 普拉尔|HotB}",
 												"{@creature 红龙雏龙|XMM}",
@@ -14866,7 +14866,7 @@
 										],
 										[
 											"2",
-											"一只{@creature 蚊蝠|XMM}正在吸食一只{@creature 食人魔僵尸|XMM}。这两个生物对角色都持有{@variantrule 敌对【态度】|XPHB|敌对}的态度。"
+											"一只{@creature 蚊蝠|XMM}正在吸食一只{@creature 食人魔丧尸|XMM}。这两个生物对角色都持有{@variantrule 敌对【态度】|XPHB|敌对}的态度。"
 										],
 										[
 											"3",
@@ -16587,7 +16587,7 @@
 								"{@creature 贵族|XMM}",
 								"{@creature 诺斯怪|XMM}",
 								"{@creature 食人魔|XMM}",
-								"{@creature 食人魔僵尸|XMM}",
+								"{@creature 食人魔丧尸|XMM}",
 								"{@creature 枭熊|XMM}",
 								"{@creature 普拉尔|HotB}",
 								"{@creature 红龙雏龙|XMM}",
@@ -17470,13 +17470,13 @@
 						},
 						{
 							"ENG_name": "Ogre Zombie",
-							"name": "食人魔僵尸",
+							"name": "食人魔丧尸",
 							"type": "section",
 							"id": "263",
 							"entries": [
 								{
 									"ENG_name": "Ogre Zombie",
-									"name": "食人魔僵尸",
+									"name": "食人魔丧尸",
 									"type": "statblock",
 									"prop": "monsterFluff",
 									"source": "XMM",
@@ -17488,7 +17488,7 @@
 								},
 								{
 									"ENG_name": "Ogre Zombie",
-									"name": "食人魔僵尸",
+									"name": "食人魔丧尸",
 									"type": "statblock",
 									"tag": "creature",
 									"source": "XMM",

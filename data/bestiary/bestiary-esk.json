@@ -52,7 +52,7 @@
 			"passive": 10,
 			"languages": [
 				"通用语",
-				"增加你选择的一项"
+				"外加任选一种"
 			],
 			"trait": [
 				{
@@ -66,7 +66,7 @@
 					"ENG_name": "Tools",
 					"name": "工具",
 					"entries": [
-						"该专家拥有{@item 盗贼工具|phb}和一件乐器。"
+						"专家拥有{@item 盗贼工具|phb}和一件乐器。"
 					]
 				}
 			],
@@ -163,7 +163,7 @@
 			"passive": 12,
 			"languages": [
 				"通用语",
-				"增加你选择的一项"
+				"外加任选一种"
 			],
 			"spellcasting": [
 				{
@@ -191,7 +191,7 @@
 				},
 				{
 					"ENG_name": "Spellcasting (Mage)",
-					"name": "施法（法师）",
+					"name": "施法（魔法师）",
 					"type": "spellcasting",
 					"headerEntries": [
 						"施法者的施法能力是智力（法术豁免难度{@dc 12}，法术攻击命中{@hit 4}）。施法者准备了以下法师法术："
@@ -315,14 +315,14 @@
 			"passive": 13,
 			"languages": [
 				"通用语",
-				"增加你选择的一项"
+				"外加任选一种"
 			],
 			"trait": [
 				{
 					"ENG_name": "Martial Role",
 					"name": "战斗职能",
 					"entries": [
-						"该战士具有以下特质之一，由你选择：",
+						"武者具有以下特质之一，由你选择：",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
@@ -331,13 +331,13 @@
 									"ENG_name": "Attacker",
 									"name": "攻击手",
 									"type": "item",
-									"entry": "战士获得攻击检定的+2加值。"
+									"entry": "武者的攻击掷骰获得+2加值。"
 								},
 								{
 									"ENG_name": "Defender",
 									"name": "防御者",
 									"type": "item",
-									"entry": "战士获得了以下保护反应。"
+									"entry": "武者获得下文的防护反应。"
 								}
 							]
 						}
@@ -365,14 +365,14 @@
 					"ENG_name": "Protection (Defender Only)",
 					"name": "防护（仅守卫者）",
 					"entries": [
-						"战士对5尺内的目标不是战士的生物的攻击检定施加劣势。战士必须能看到攻击者。"
+						"当一个位于武者5尺内的生物攻击并非武者的目标时，武者可对该攻击掷骰施加劣势。武者必须能看见攻击者。"
 					]
 				}
 			],
 			"altArt": [
 				{
 					"ENG_name": "Warrior (Defender)",
-					"name": "武者（守卫者）",
+					"name": "武者（防御者）",
 					"source": "ESK"
 				}
 			],
