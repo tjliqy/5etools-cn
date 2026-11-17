@@ -55,19 +55,18 @@
 			"source": "WoW",
 			"className": "萨满祭司",
 			"classSource": "WoW",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "classes/WoW/Path of the Spiritual Guardian Shaman.webp"
-					},
-					"width": 850,
-					"height": 1671,
-					"title": "萨尔，一位兽人萨满祭司",
-					"credit": "Alex Horley-Orlandelli"
-				}
-			],
+			"_copy": {
+				"ENG_name": "Path of the Spiritual Guardian",
+				"name": "灵体卫士道途",
+				"shortName": "灵体卫士",
+				"source": "WoW",
+				"className": "野蛮人",
+				"classSource": "XPHB",
+				"_preserve": {
+					"*": true
+				},
+				"translator": "Kiwee"
+			},
 			"translator": "Kiwee"
 		}
 	]

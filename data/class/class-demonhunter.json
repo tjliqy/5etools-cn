@@ -89,23 +89,23 @@
 					"ENG_name": "Devourer",
 					"name": "吞噬者",
 					"ability": "wis",
-					"resourceName": "Soul Fragment",
+					"resourceName": "灵魂碎片",
 					"innate": {
 						"3": {
 							"resource": {
 								"1": [
-									"feather fall|xphb",
-									"jump|xphb"
+									"羽落术|xphb",
+									"跳跃术|xphb"
 								]
 							}
 						},
 						"11": {
 							"resource": {
 								"1": [
-									"throw glaive|wow"
+									"投掷利刃|wow"
 								],
 								"2": [
-									"counterspell|xphb"
+									"法术反制|xphb"
 								]
 							}
 						}
@@ -137,23 +137,23 @@
 					"ENG_name": "Havoc",
 					"name": "浩劫",
 					"ability": "wis",
-					"resourceName": "Soul Fragment",
+					"resourceName": "灵魂碎片",
 					"innate": {
 						"3": {
 							"resource": {
 								"1": [
-									"feather fall|xphb",
-									"jump|xphb"
+									"羽落术|xphb",
+									"跳跃术|xphb"
 								]
 							}
 						},
 						"11": {
 							"resource": {
 								"1": [
-									"throw glaive|wow"
+									"投掷利刃|wow"
 								],
 								"2": [
-									"counterspell|xphb"
+									"法术反制|xphb"
 								]
 							}
 						}
@@ -185,23 +185,23 @@
 					"ENG_name": "Vengeance",
 					"name": "复仇",
 					"ability": "wis",
-					"resourceName": "Soul Fragment",
+					"resourceName": "灵魂碎片",
 					"innate": {
 						"3": {
 							"resource": {
 								"1": [
-									"feather fall|xphb",
-									"jump|xphb"
+									"羽落术|xphb",
+									"跳跃术|xphb"
 								]
 							}
 						},
 						"11": {
 							"resource": {
 								"1": [
-									"throw glaive|wow"
+									"投掷利刃|wow"
 								],
 								"2": [
-									"counterspell|xphb"
+									"法术反制|xphb"
 								]
 							}
 						}
@@ -347,12 +347,12 @@
 						{
 							"type": "refFeat",
 							"feat": "德鲁伊教战士|XPHB"
+						},
+						{
+							"type": "refFeat",
+							"feat": "虚空战士|WoW"
 						}
 					]
-				},
-				{
-					"type": "refFeat",
-					"feat": "虚空战士|WoW"
 				}
 			],
 			"translator": "Kiwee"

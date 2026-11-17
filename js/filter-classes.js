@@ -74,7 +74,7 @@ class PageFilterClassesBase extends PageFilterBase {
 
 			// Retain subclasses when blue-misc-filtering classes
 			if (cls.isHero) sc._fMisc.push("英雄职业");
-			if (this.isReskin(cls) && !sc._fMisc.includes("换皮")) sc._fMisc.push("Reskin");
+			if (this.isReskin(cls) && !sc._fMisc.includes("换皮")) sc._fMisc.push("换皮");
 
 			this._mutateForFilters_commonSources(sc);
 		});

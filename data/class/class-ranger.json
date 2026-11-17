@@ -952,6 +952,7 @@
 				"属性值提升|游侠|XPHB|4",
 				"额外攻击|游侠|XPHB|5",
 				"越野|游侠|XPHB|6",
+				"宠物专精|游侠|XPHB|6|WoW",
 				{
 					"classFeature": "子职特性|游侠|XPHB|7",
 					"gainSubclassFeature": true
@@ -2424,6 +2425,44 @@
 			"entries": [
 				"当你在自己的回合执行{@action 攻击|XPHB}动作时，你可以发动两次攻击而非一次。"
 			]
+		},
+		{
+			"ENG_name": "Pet Specialization",
+			"name": "宠物专精",
+			"source": "WoW",
+			"className": "游侠",
+			"classSource": "XPHB",
+			"level": 6,
+			"isClassFeatureVariant": true,
+			"entries": [
+				"此特性为拥有{@subclass 驯兽师|猎人|WoW|WoW}子职业的{@class 猎人|WoW}替换了{@classFeature 越野|游侠|XPHB|6}特性。",
+				"当你的{@subclassFeature 原初伴侣|游侠|XPHB|驯兽师|XPHB|3|XPHB}特性的野兽处于你 60 尺内时，你根据该野兽的宠物科及其专精（见\"{@book 猎人的宠物|WoW|1|猎人的宠物}\"）获得以下收益之一。",
+				{
+					"ENG_name": "Cunning",
+					"name": "狡诈",
+					"type": "entries",
+					"entries": [
+						"你的{@variantrule 速度|XPHB}与你的原初野兽的所有速度提高 10 尺。此外，你的原初野兽可以用它的动作施展{@spell 行动自如|XPHB}，无需任何法术成分，影响它自身与你（如果你在射程内）。一旦如此做，它须等你完成{@variantrule 长休|XPHB}后才能再次如此做。"
+					]
+				},
+				{
+					"ENG_name": "Ferocity",
+					"name": "狂怒",
+					"type": "entries",
+					"entries": [
+						"当你的原初野兽处于{@status 浴血|XPHB}状态且以野兽之击命中时，你与原初野兽各回复等同于你感知调整值的{@variantrule 生命值|XPHB}。此外，你的原初野兽可以用它的动作施展{@spell 加速术|XPHB}，无需任何法术成分，影响它自身与你（如果你在射程内）。一旦如此做，它须等你完成{@variantrule 长休|XPHB}后才能再次如此做。"
+					]
+				},
+				{
+					"ENG_name": "Tenacity",
+					"name": "坚韧",
+					"type": "entries",
+					"entries": [
+						"你的{@variantrule 生命值|XPHB|生命值}上限增加6点。每当你获得一个游侠等级，你的{@variantrule 生命值|XPHB|生命值}上限额外增加1点{@variantrule 生命值|XPHB|生命值}。你的原始野兽的{@variantrule 生命值|XPHB|生命值}上限也会增加等同于你游侠等级的点数。此外，你的原始野兽可以使用它的动作施放{@spell 石肤术|XPHB}而无需任何法术成分，效果作用于它自身和你（如果你在范围内）。一旦它这样做，直到你完成一次{@variantrule 长休|XPHB}前，它不能再这样做。"
+					]
+				}
+			],
+			"translator": "Kiwee"
 		},
 		{
 			"ENG_name": "Roving",
@@ -4209,7 +4248,7 @@
 					"type": "entries",
 					"page": 6,
 					"entries": [
-						"当你用武器对生物进行一次攻击检定并命中时，你可以额外对目标造成{@damage 1d4}点寒冷伤害。每名目标每回合仅会受到一次该额外伤害。你的游侠等级达到11级时，这一额外伤害变为{@dice 1d6}。"
+						"当你用武器对生物进行一次攻击检定并命中时，你可以额外对目标造成{@damage 1d4}点寒冷伤害。每名目标每回合仅会受到一次该额外伤害。你的游侠等级达到11级时，这一额外伤害变为{@damage 1d6}。"
 					]
 				}
 			]

@@ -18709,7 +18709,7 @@
 					"name": "制作组"
 				}
 			],
-			"translator": "机翻"
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Essentials Kit: Storm Lord's Wrath",
@@ -19531,7 +19531,7 @@
 					"name": "制作组"
 				}
 			],
-			"translator": "机翻"
+			"translator": "阿破等"
 		},
 		{
 			"ENG_name": "Essentials Kit: Sleeping Dragon's Wake",
@@ -20281,7 +20281,7 @@
 					"name": "制作组"
 				}
 			],
-			"translator": "机翻"
+			"translator": "Ra酱"
 		},
 		{
 			"ENG_name": "Essentials Kit: Divine Contention",
@@ -21315,7 +21315,7 @@
 					"name": "制作组"
 				}
 			],
-			"translator": "机翻"
+			"translator": "布丁"
 		},
 		{
 			"ENG_name": "Baldur's Gate: Descent Into Avernus",
@@ -40501,7 +40501,7 @@
 					"name": "导言：席斯库斯之影",
 					"headers": [
 						"恐怖季日程",
-						"《Dungeon Masters》跑团实录系列"
+						"《Dungeon Masters》跑团实况系列"
 					]
 				},
 				{
@@ -40610,7 +40610,7 @@
 					"name": "导言：红袍巫师的博弈",
 					"headers": [
 						"魔法季日程",
-						"《Dungeon Masters》跑团实录系列"
+						"《Dungeon Masters》跑团实况系列"
 					]
 				},
 				{
@@ -41356,6 +41356,114 @@
 						"启封奥秘：死亡陷阱",
 						"D&D 工作室团队"
 					]
+				}
+			],
+			"translator": "机翻"
+		},
+		{
+			"ENG_name": "World of Warcraft: Deadmines Dungeon",
+			"name": "魔兽世界：死亡矿井地下城",
+			"id": "DDE",
+			"source": "DDE",
+			"group": "supplement-alt",
+			"cover": {
+				"type": "internal",
+				"path": "covers/DDE.webp"
+			},
+			"published": "2026-11-03",
+			"author": "威世智RPG团队",
+			"storyline": "魔兽世界",
+			"level": {
+				"start": 3,
+				"end": 4
+			},
+			"contents": [
+				{
+					"ENG_name": "Introduction",
+					"name": "简介",
+					"headers": [
+						"冠军季日程",
+						"《Dungeon Masters》跑团实况系列"
+					]
+				},
+				{
+					"ENG_name": "Enter the Deadmines",
+					"name": "进入死亡矿井",
+					"headers": [
+						"D&D庆典活动概览",
+						"关键剧情节点",
+						"预备",
+						"冒险背景",
+						"开始冒险",
+						"支线任务",
+						"死亡矿井遭遇",
+						"结局"
+					]
+				},
+				{
+					"ENG_name": "Goblin Foundry",
+					"name": "地精铸造厂",
+					"headers": [
+						"冒险背景",
+						"开始冒险",
+						"地精铸造厂",
+						"继续冒险"
+					]
+				},
+				{
+					"ENG_name": "The Trials",
+					"name": "试炼",
+					"headers": [
+						"冒险背景",
+						"开始冒险",
+						"入会试炼",
+						"继续冒险"
+					]
+				},
+				{
+					"ENG_name": "Ironclad Cove",
+					"name": "铁甲湾",
+					"headers": [
+						"冒险背景",
+						"开始冒险",
+						"距埃德温三步之遥",
+						{
+							"header": "1. 兄弟会暴徒",
+							"depth": 1
+						},
+						{
+							"header": "2. 海盗骚动",
+							"depth": 1
+						},
+						{
+							"header": "3. 地精阴谋",
+							"depth": 1
+						},
+						{
+							"header": "4. 空中威胁",
+							"depth": 1
+						},
+						{
+							"header": "5. 水域污患",
+							"depth": 1
+						},
+						"继续冒险"
+					]
+				},
+				{
+					"ENG_name": "The Juggernaut",
+					"name": "强袭战舰",
+					"headers": [
+						"冒险背景",
+						"开始冒险",
+						"强攻强袭战舰",
+						"结局",
+						"继续你的冒险"
+					]
+				},
+				{
+					"ENG_name": "Credits",
+					"name": "制作组"
 				}
 			],
 			"translator": "机翻"

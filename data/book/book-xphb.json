@@ -611,7 +611,7 @@
 											"id": "018",
 											"page": 9,
 											"entries": [
-												"{@dice d20}以外的骰子，最常见的用途就是确定伤害。在你成功进行了一次攻击检定（一种{@variantrule D20 检定|XPHB}）后，你需要骰伤害，来决定你的攻击有多有效。施展法术时，你也可能需要骰伤害。不同的武器和法术使用不同的骰子来计算伤害。例如：一把{@item 匕首|XPHB}使用{@dice 1d4}；一柄{@item 巨斧|XPHB}使用{@dice 1d12}；一道法术{@spell 火球术|XPHB}使用{@dice 8d6}。"
+												"{@dice d20}以外的骰子，最常见的用途就是确定伤害。在你成功进行了一次攻击检定（一种{@variantrule D20 检定|XPHB}）后，你需要骰伤害，来决定你的攻击有多有效。施展法术时，你也可能需要骰伤害。不同的武器和法术使用不同的骰子来计算伤害。例如：一把{@item 匕首|XPHB}使用{@damage 1d4}；一柄{@item 巨斧|XPHB}使用{@damage 1d12}；一道法术{@spell 火球术|XPHB}使用{@damage 8d6}。"
 											]
 										},
 										{
@@ -3492,7 +3492,7 @@
 									"id": "099",
 									"page": 27,
 									"entries": [
-										"当你掷出重击命中（简称重击），你会造成更多的伤害。投掷两次该攻击的伤害骰并将其累加，再如常加上有关的调整值。举例来说，如果你用{@item 匕首|XPHB}掷出重击，投掷伤害时，你掷{@dice 2d4}而非{@dice 1d4}，再加上此次攻击相关的属性调整值。如果这次攻击附带有其他伤害骰，例如来自游荡者的偷袭 特性的伤害骰，你将那些骰子也掷两次。"
+										"当你掷出重击命中（简称重击），你会造成更多的伤害。投掷两次该攻击的伤害骰并将其累加，再如常加上有关的调整值。举例来说，如果你用{@item 匕首|XPHB}掷出重击，投掷伤害时，你掷{@damage 2d4}而非{@damage 1d4}，再加上此次攻击相关的属性调整值。如果这次攻击附带有其他伤害骰，例如来自游荡者的偷袭 特性的伤害骰，你将那些骰子也掷两次。"
 									]
 								},
 								{
@@ -9167,7 +9167,7 @@
 											"style": "row-indent-first",
 											"row": [
 												"{@item 短棒|XPHB}",
-												"{@dice 1d4} 钝击",
+												"{@damage 1d4} 钝击",
 												"{@itemProperty L|XPHB|轻型}",
 												"{@itemMastery 缓速}",
 												"2 磅",
@@ -9179,7 +9179,7 @@
 											"style": "row-indent-first",
 											"row": [
 												"{@item 匕首|XPHB}",
-												"{@dice 1d4} 穿刺",
+												"{@damage 1d4} 穿刺",
 												"{@itemProperty F|XPHB|灵巧}, {@itemProperty L|XPHB|轻型}, {@itemProperty T|XPHB|投掷} (射程 20/60)",
 												"{@itemMastery 迅击}",
 												"1 磅",
@@ -9191,7 +9191,7 @@
 											"style": "row-indent-first",
 											"row": [
 												"{@item 巨棒|XPHB}",
-												"{@dice 1d8} 钝击",
+												"{@damage 1d8} 钝击",
 												"{@itemProperty 2H|XPHB|双手}",
 												"{@itemMastery 推离}",
 												"10 磅",
@@ -9203,7 +9203,7 @@
 											"style": "row-indent-first",
 											"row": [
 												"{@item 手斧|XPHB}",
-												"{@dice 1d6} 挥砍",
+												"{@damage 1d6} 挥砍",
 												"{@itemProperty L|XPHB|轻型}, {@itemProperty T|XPHB|投掷} (射程 20/60)",
 												"{@itemMastery 侵扰}",
 												"2 磅",
@@ -9215,7 +9215,7 @@
 											"style": "row-indent-first",
 											"row": [
 												"{@item 标枪|XPHB}",
-												"{@dice 1d6} 穿刺",
+												"{@damage 1d6} 穿刺",
 												"{@itemProperty T|XPHB|投掷}（射程30/120）",
 												"{@itemMastery 缓速}",
 												"2 磅",
@@ -9227,7 +9227,7 @@
 											"style": "row-indent-first",
 											"row": [
 												"{@item 轻锤|XPHB}",
-												"{@dice 1d4} 钝击",
+												"{@damage 1d4} 钝击",
 												"{@itemProperty L|XPHB|轻型}, {@itemProperty T|XPHB|投掷} (射程 20/60)",
 												"{@itemMastery 迅击}",
 												"2 磅",
@@ -9239,7 +9239,7 @@
 											"style": "row-indent-first",
 											"row": [
 												"{@item 硬头锤|XPHB}",
-												"{@dice 1d6} 钝击",
+												"{@damage 1d6} 钝击",
 												"\u2014",
 												"{@itemMastery 削弱}",
 												"4 磅",
@@ -9251,8 +9251,8 @@
 											"style": "row-indent-first",
 											"row": [
 												"{@item 长棍|XPHB}",
-												"{@dice 1d6} 钝击",
-												"{@itemProperty V|XPHB|多用} ({@dice 1d8})",
+												"{@damage 1d6} 钝击",
+												"{@itemProperty V|XPHB|多用} ({@damage 1d8})",
 												"{@itemMastery 失衡}",
 												"4 磅",
 												"2 SP"
@@ -9263,7 +9263,7 @@
 											"style": "row-indent-first",
 											"row": [
 												"{@item 镰刀|XPHB}",
-												"{@dice 1d4} 挥砍",
+												"{@damage 1d4} 挥砍",
 												"{@itemProperty L|XPHB|轻型}",
 												"{@itemMastery 迅击}",
 												"2 磅",
@@ -9275,8 +9275,8 @@
 											"style": "row-indent-first",
 											"row": [
 												"{@item 矛|XPHB}",
-												"{@dice 1d6} 穿刺",
-												"{@itemProperty T|XPHB|投掷}（射程20/60），{@itemProperty V|XPHB|多用}（{@dice 1d8}）",
+												"{@damage 1d6} 穿刺",
+												"{@itemProperty T|XPHB|投掷}（射程20/60），{@itemProperty V|XPHB|多用}（{@damage 1d8}）",
 												"{@itemMastery 削弱}",
 												"3 磅",
 												"1GP"
@@ -9294,7 +9294,7 @@
 											"style": "row-indent-first",
 											"row": [
 												"{@item 飞镖|XPHB}",
-												"{@dice 1d4} 穿刺",
+												"{@damage 1d4} 穿刺",
 												"{@itemProperty F|XPHB|灵巧}，{@itemProperty T|XPHB|投掷} （射程20/60）",
 												"{@itemMastery 侵扰}",
 												"0.25 磅",
@@ -9306,7 +9306,7 @@
 											"style": "row-indent-first",
 											"row": [
 												"{@item 轻弩|XPHB}",
-												"{@dice 1d8} 穿刺",
+												"{@damage 1d8} 穿刺",
 												"{@itemProperty A|XPHB|弹药}（射程 80/320；弩矢），{@itemProperty LD|XPHB|装填}, {@itemProperty 2H|XPHB|双手}",
 												"{@itemMastery 缓速}",
 												"5 磅",
@@ -9318,7 +9318,7 @@
 											"style": "row-indent-first",
 											"row": [
 												"{@item 短弓|XPHB}",
-												"{@dice 1d6} 穿刺",
+												"{@damage 1d6} 穿刺",
 												"{@itemProperty A|XPHB|弹药}（射程 80/320；箭矢），{@itemProperty 2H|XPHB|双手}",
 												"{@itemMastery 侵扰}",
 												"2 磅",
@@ -9330,7 +9330,7 @@
 											"style": "row-indent-first",
 											"row": [
 												"{@item 投石索|XPHB}",
-												"{@dice 1d4} 钝击",
+												"{@damage 1d4} 钝击",
 												"{@itemProperty A|XPHB|弹药}（射程 30/120；子弹）",
 												"{@itemMastery 缓速}",
 												"\u2014",
@@ -9349,8 +9349,8 @@
 											"style": "row-indent-first",
 											"row": [
 												"{@item 战斧|XPHB}",
-												"{@dice 1d8} 挥砍",
-												"{@itemProperty V|XPHB|多用}（{@dice 1d10}）",
+												"{@damage 1d8} 挥砍",
+												"{@itemProperty V|XPHB|多用}（{@damage 1d10}）",
 												"{@itemMastery 失衡}",
 												"4 磅",
 												"10 GP"
@@ -9361,7 +9361,7 @@
 											"style": "row-indent-first",
 											"row": [
 												"{@item 链枷|XPHB}",
-												"{@dice 1d8} 钝击",
+												"{@damage 1d8} 钝击",
 												"\u2014",
 												"{@itemMastery 削弱}",
 												"2 磅",
@@ -9373,7 +9373,7 @@
 											"style": "row-indent-first",
 											"row": [
 												"{@item 长柄刀|XPHB}",
-												"{@dice 1d10} 挥砍",
+												"{@damage 1d10} 挥砍",
 												"{@itemProperty H|XPHB|重型}, {@itemProperty R|XPHB|触及}, {@itemProperty 2H|XPHB|双手}",
 												"{@itemMastery 擦掠}",
 												"6 磅",
@@ -9385,7 +9385,7 @@
 											"style": "row-indent-first",
 											"row": [
 												"{@item 巨斧|XPHB}",
-												"{@dice 1d12} 挥砍",
+												"{@damage 1d12} 挥砍",
 												"{@itemProperty H|XPHB|重型}, {@itemProperty 2H|XPHB|双手}",
 												"{@itemMastery 横扫}",
 												"7 磅",
@@ -9397,7 +9397,7 @@
 											"style": "row-indent-first",
 											"row": [
 												"{@item 巨剑|XPHB}",
-												"{@dice 2d6} 挥砍",
+												"{@damage 2d6} 挥砍",
 												"{@itemProperty H|XPHB|重型}, {@itemProperty 2H|XPHB|双手}",
 												"{@itemMastery 擦掠}",
 												"6 磅",
@@ -9409,7 +9409,7 @@
 											"style": "row-indent-first",
 											"row": [
 												"{@item 长戟|XPHB}",
-												"{@dice 1d10} 挥砍",
+												"{@damage 1d10} 挥砍",
 												"{@itemProperty H|XPHB|重型}, {@itemProperty R|XPHB|触及}, {@itemProperty 2H|XPHB|双手}",
 												"{@itemMastery 横扫}",
 												"6 磅",
@@ -9421,7 +9421,7 @@
 											"style": "row-indent-first",
 											"row": [
 												"{@item 骑枪|XPHB}",
-												"{@dice 1d10} 穿刺",
+												"{@damage 1d10} 穿刺",
 												"{@itemProperty H|XPHB|重型}, {@itemProperty R|XPHB|触及}, {@itemProperty 2H|XPHB|双手}（骑乘时除外）",
 												"{@itemMastery 失衡}",
 												"6 磅",
@@ -9433,8 +9433,8 @@
 											"style": "row-indent-first",
 											"row": [
 												"{@item 长剑|XPHB}",
-												"{@dice 1d8} 挥砍",
-												"{@itemProperty V|XPHB|多用}（{@dice 1d10}）",
+												"{@damage 1d8} 挥砍",
+												"{@itemProperty V|XPHB|多用}（{@damage 1d10}）",
 												"{@itemMastery 削弱}",
 												"3 磅",
 												"15GP"
@@ -9445,7 +9445,7 @@
 											"style": "row-indent-first",
 											"row": [
 												"{@item 巨锤|XPHB}",
-												"{@dice 2d6} 钝击",
+												"{@damage 2d6} 钝击",
 												"{@itemProperty H|XPHB|重型}, {@itemProperty 2H|XPHB|双手}",
 												"{@itemMastery 失衡}",
 												"10 磅",
@@ -9457,7 +9457,7 @@
 											"style": "row-indent-first",
 											"row": [
 												"{@item 钉头锤|XPHB}",
-												"{@dice 1d8} 穿刺",
+												"{@damage 1d8} 穿刺",
 												"\u2014",
 												"{@itemMastery 削弱}",
 												"4 磅",
@@ -9469,7 +9469,7 @@
 											"style": "row-indent-first",
 											"row": [
 												"{@item 长矛|XPHB}",
-												"{@dice 1d10} 穿刺",
+												"{@damage 1d10} 穿刺",
 												"{@itemProperty H|XPHB|重型}, {@itemProperty R|XPHB|触及}, {@itemProperty 2H|XPHB|双手}",
 												"{@itemMastery 推离}",
 												"18 磅",
@@ -9481,7 +9481,7 @@
 											"style": "row-indent-first",
 											"row": [
 												"{@item 刺剑|XPHB}",
-												"{@dice 1d8} 穿刺",
+												"{@damage 1d8} 穿刺",
 												"{@itemProperty F|XPHB|灵巧}",
 												"{@itemMastery 侵扰}",
 												"2 磅",
@@ -9493,7 +9493,7 @@
 											"style": "row-indent-first",
 											"row": [
 												"{@item 弯刀|XPHB}",
-												"{@dice 1d6} 挥砍",
+												"{@damage 1d6} 挥砍",
 												"{@itemProperty F|XPHB|灵巧}, {@itemProperty L|XPHB|轻型}",
 												"{@itemMastery 迅击}",
 												"3 磅",
@@ -9505,7 +9505,7 @@
 											"style": "row-indent-first",
 											"row": [
 												"{@item 短剑|XPHB}",
-												"{@dice 1d6} 穿刺",
+												"{@damage 1d6} 穿刺",
 												"{@itemProperty F|XPHB|灵巧}, {@itemProperty L|XPHB|轻型}",
 												"{@itemMastery 侵扰}",
 												"2 磅",
@@ -9517,8 +9517,8 @@
 											"style": "row-indent-first",
 											"row": [
 												"{@item 三叉戟|XPHB}",
-												"{@dice 1d8} 穿刺",
-												"{@itemProperty T|XPHB|投掷} (射程 20/60), {@itemProperty V|XPHB|多用} ({@dice 1d10})",
+												"{@damage 1d8} 穿刺",
+												"{@itemProperty T|XPHB|投掷} (射程 20/60), {@itemProperty V|XPHB|多用} ({@damage 1d10})",
 												"{@itemMastery 失衡}",
 												"4 磅",
 												"5GP"
@@ -9529,8 +9529,8 @@
 											"style": "row-indent-first",
 											"row": [
 												"{@item 战锤|XPHB}",
-												"{@dice 1d8} 钝击",
-												"{@itemProperty V|XPHB|多用}（{@dice 1d10}）",
+												"{@damage 1d8} 钝击",
+												"{@itemProperty V|XPHB|多用}（{@damage 1d10}）",
 												"{@itemMastery 推离}",
 												"5 磅",
 												"15GP"
@@ -9541,8 +9541,8 @@
 											"style": "row-indent-first",
 											"row": [
 												"{@item 战镐|XPHB}",
-												"{@dice 1d8} 穿刺",
-												"{@itemProperty V|XPHB|多用}（{@dice 1d10}）",
+												"{@damage 1d8} 穿刺",
+												"{@itemProperty V|XPHB|多用}（{@damage 1d10}）",
 												"{@itemMastery 削弱}",
 												"2 磅",
 												"5GP"
@@ -9553,7 +9553,7 @@
 											"style": "row-indent-first",
 											"row": [
 												"{@item 鞭子|XPHB}",
-												"{@dice 1d4} 挥砍",
+												"{@damage 1d4} 挥砍",
 												"{@itemProperty F|XPHB|灵巧}, {@itemProperty R|XPHB|触及}",
 												"{@itemMastery 缓速}",
 												"3 磅",
@@ -9584,7 +9584,7 @@
 											"style": "row-indent-first",
 											"row": [
 												"{@item 手弩|XPHB}",
-												"{@dice 1d6} 穿刺",
+												"{@damage 1d6} 穿刺",
 												"{@itemProperty A|XPHB|弹药}（射程 30/120；弩矢），{@itemProperty L|XPHB|轻型}, {@itemProperty LD|XPHB|装填}",
 												"{@itemMastery 侵扰}",
 												"3 磅",
@@ -9596,7 +9596,7 @@
 											"style": "row-indent-first",
 											"row": [
 												"{@item 重弩|XPHB}",
-												"{@dice 1d10} 穿刺",
+												"{@damage 1d10} 穿刺",
 												"{@itemProperty A|XPHB|弹药}（射程 100/400；弩矢），{@itemProperty H|XPHB|重型}, {@itemProperty LD|XPHB|装填}, {@itemProperty 2H|XPHB|双手}",
 												"{@itemMastery 推离}",
 												"18 磅",
@@ -9608,7 +9608,7 @@
 											"style": "row-indent-first",
 											"row": [
 												"{@item 长弓|XPHB}",
-												"{@dice 1d8} 穿刺",
+												"{@damage 1d8} 穿刺",
 												"{@itemProperty A|XPHB|弹药}（射程 150/600；箭矢），{@itemProperty H|XPHB|重型}, {@itemProperty 2H|XPHB|双手}",
 												"{@itemMastery 缓速}",
 												"2 磅",
@@ -9620,7 +9620,7 @@
 											"style": "row-indent-first",
 											"row": [
 												"{@item 火铳|XPHB}",
-												"{@dice 1d12} 穿刺",
+												"{@damage 1d12} 穿刺",
 												"{@itemProperty A|XPHB|弹药}（射程 40/120；子弹），{@itemProperty LD|XPHB|装填}, {@itemProperty 2H|XPHB|双手}",
 												"{@itemMastery 缓速}",
 												"10 磅",
@@ -9632,7 +9632,7 @@
 											"style": "row-indent-first",
 											"row": [
 												"{@item 手枪|XPHB}",
-												"{@dice 1d10} 穿刺",
+												"{@damage 1d10} 穿刺",
 												"{@itemProperty A|XPHB|弹药}（射程 30/90；子弹），{@itemProperty LD|XPHB|装填}",
 												"{@itemMastery 侵扰}",
 												"3 磅",
@@ -11749,7 +11749,7 @@
 											"id": "6aa",
 											"page": 222,
 											"entries": [
-												"当你执行{@action 攻击|XPHB}动作时，你可以将你的一次攻击替换为丢出一小瓶强酸。你可以选择位于你 20 尺内可见的一个生物或物件作为目标。该目标必须通过一次敏捷豁免（{@dc 8} + 你的敏捷调整值 + 你的熟练加值），否则承受{@dice 2d6}点强酸伤害。"
+												"当你执行{@action 攻击|XPHB}动作时，你可以将你的一次攻击替换为丢出一小瓶强酸。你可以选择位于你 20 尺内可见的一个生物或物件作为目标。该目标必须通过一次敏捷豁免（{@dc 8} + 你的敏捷调整值 + 你的熟练加值），否则承受{@damage 2d6}点强酸伤害。"
 											]
 										},
 										{
@@ -11759,7 +11759,7 @@
 											"id": "6ab",
 											"page": 222,
 											"entries": [
-												"当你执行{@action 攻击|XPHB}动作时，你可以将你的一次攻击替换为丢出一扁瓶炽火胶。你可以选择位于你 20 尺内可见的一个生物或物件作为目标。该目标必须通过一次敏捷豁免（{@dc 8} + 你的敏捷调整值 + 你的熟练加值），否则承受{@dice 1d4}点火焰伤害并开始{@hazard 燃烧|XPHB}。"
+												"当你执行{@action 攻击|XPHB}动作时，你可以将你的一次攻击替换为丢出一扁瓶炽火胶。你可以选择位于你 20 尺内可见的一个生物或物件作为目标。该目标必须通过一次敏捷豁免（{@dc 8} + 你的敏捷调整值 + 你的熟练加值），否则承受{@damage 1d4}点火焰伤害并开始{@hazard burning|XPHB}。"
 											]
 										},
 										{
@@ -12296,7 +12296,7 @@
 											"id": "6d0",
 											"page": 226,
 											"entries": [
-												"当你执行{@action 攻击|XPHB}动作时，你可以将你的一次攻击替换为丢出一扁瓶圣水。你可以选择位于你 20 尺内可见的一个生物作为目标。该目标必须通过一次敏捷豁免（{@dc 8} + 你的敏捷调整值 + 你的熟练加值），并且如果这个目标是邪魔或亡灵生物，失败时承受{@dice 2d8}点光耀伤害。"
+												"当你执行{@action 攻击|XPHB}动作时，你可以将你的一次攻击替换为丢出一扁瓶圣水。你可以选择位于你 20 尺内可见的一个生物作为目标。该目标必须通过一次敏捷豁免（{@dc 8} + 你的敏捷调整值 + 你的熟练加值），并且如果这个目标是邪魔或亡灵生物，失败时承受{@damage 2d8}点光耀伤害。"
 											]
 										},
 										{
@@ -12306,7 +12306,7 @@
 											"id": "6d1",
 											"page": 226,
 											"entries": [
-												"以一个{@action 操作|XPHB}动作，你可以在某处设下捕猎陷阱。捕猎陷阱是一组带有锯齿的铁环，当一个生物踩到中心的压力板时，两边的锯齿会迅速合上。这组陷阱需要用沉重的链条固定至某个无法移动的物件上\u2014\u2014例如大树或刺入地面的固定钉。踩到压力板的生物必须通过一次{@dc 13}的敏捷豁免，否则受到{@dice 1d4}点穿刺伤害，并且速度降至 0，直至他的下一回合开始。直到该生物挣脱陷阱前，它的移动范围会被链条的长度限制（通常为 3 尺）。一个生物可以使用它的动作来进行一次{@dc 13}的力量（{@skill 运动|XPHB}）检定，检定成功时能够让自己或自己触及范围内的一个其他生物脱困。每次检定失败都会导致被困生物受到 1 点穿刺伤害。"
+												"以一个{@action 操作|XPHB}动作，你可以在某处设下捕猎陷阱。捕猎陷阱是一组带有锯齿的铁环，当一个生物踩到中心的压力板时，两边的锯齿会迅速合上。这组陷阱需要用沉重的链条固定至某个无法移动的物件上\u2014\u2014例如大树或刺入地面的固定钉。踩到压力板的生物必须通过一次{@dc 13}的敏捷豁免，否则受到{@damage 1d4}点穿刺伤害，并且速度降至 0，直至他的下一回合开始。直到该生物挣脱陷阱前，它的移动范围会被链条的长度限制（通常为 3 尺）。一个生物可以使用它的动作来进行一次{@dc 13}的力量（{@skill 运动|XPHB}）检定，检定成功时能够让自己或自己触及范围内的一个其他生物脱困。每次检定失败都会导致被困生物受到 1 点穿刺伤害。"
 											]
 										},
 										{
@@ -12529,7 +12529,7 @@
 											"id": "6e6",
 											"page": 227,
 											"entries": [
-												"以一个附赠动作，你可以将一小瓶基础毒药涂抹在一把武器或至多三枚弹药上。当一个生物受到由涂过毒的武器或弹药所造成的穿刺或劈砍伤害时，该生物将受到额外{@dice 1d4}点毒素伤害。毒药一旦被涂抹，毒效只会持续1分钟或直至造成了额外伤害。"
+												"以一个附赠动作，你可以将一小瓶基础毒药涂抹在一把武器或至多三枚弹药上。当一个生物受到由涂过毒的武器或弹药所造成的穿刺或劈砍伤害时，该生物将受到额外{@damage 1d4}点毒素伤害。毒药一旦被涂抹，毒效只会持续1分钟或直至造成了额外伤害。"
 											]
 										},
 										{

@@ -1288,7 +1288,7 @@
 					"ENG_name": "Force Strike",
 					"name": "力场打击",
 					"entries": [
-						"{@atkr m,r} {@hitYourSpellAttack 加值等于你的法术攻击加值}，触及5尺或范围30尺 {@h}{@dice 1d6 + summonSpellLevel} 力场伤害。"
+						"{@atkr m,r} {@hitYourSpellAttack}，触及5尺或射程30尺。{@h}{@damage 1d6 + summonSpellLevel}力场伤害。"
 					]
 				}
 			],
@@ -2496,7 +2496,7 @@
 					"ENG_name": "Force-Empowered Rend",
 					"name": "力场动能撕扯",
 					"entries": [
-						"{@atkr m} {@hitYourSpellAttack 加值等于你的法术攻击加值}，触及5尺。{@h}{@dice 1d8 + 2}加上你的智力调整值的力场伤害。"
+						"{@atkr m} {@hitYourSpellAttack}，触及5尺。{@h}{@damage 1d8 + 2}加上你的智力调整值的力场伤害。"
 					]
 				},
 				{

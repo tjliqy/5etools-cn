@@ -148,7 +148,7 @@
 										"items": [
 											"内部链接：{@5etools 这是你的人生|lifegen.html}",
 											"内部 \"img\" 链接（即 {@link https://github.com/5etools-mirror-3/5etools-img} 中的任何内容）：{@5etoolsImg 玩家手册封面|covers/PHB.webp}；{@5etoolsImg 人类圣武士角色表|pdf/DoSI/Human-Paladin.pdf}",
-											"内部 \"音频\" 链接（即 {@link https://github.com/5etools-mirror-3/5etools-src/tree/main/audio} 中的任何内容）：{@5etoolsAudio 盐沼船歌|adventure/GoS/saltmarsh-shanty.mp3}",
+											"内部 \"音频\" 链接（即 {@link https://github.com/5etools-mirror-3/5etools-src/tree/main/audio} 中的任何内容）：{@5etoolsAudio 盐沼船歌|冒险/GoS/盐沼-船歌.opus}",
 											"外部链接：{@link https://discord.gg/5etools} 或 {@link 争斗|https://discord.gg/5etools}"
 										]
 									},
@@ -691,7 +691,7 @@
 											"ENG_name": "Charge",
 											"name": "冲锋",
 											"entries": [
-												"若独角兽向其目标直线移动至少 20 尺，且在同一回合里以角击攻击命中该目标，则该目标受额外 9（{@dice 2d8}）点穿刺伤害。如果目标是生物，则该生物必须成功通过一次 {@dc 15} 的力量豁免，否则应击倒地。"
+												"若独角兽向其目标直线移动至少 20 尺，且在同一回合里以角击攻击命中该目标，则该目标受额外 9（{@damage 2d8}）点穿刺伤害。如果目标是生物，则该生物必须成功通过一次 {@dc 15} 的力量豁免，否则应击倒地。"
 											]
 										},
 										{
@@ -850,7 +850,7 @@
 									],
 									"source": "PHB",
 									"entries": [
-										"明亮的闪光从你的指间飞驰向施法距离内你指定的一点，并随着一声低吼迸成一片烈焰。目标点周围半径 20 尺球状区域内的每个生物必须进行一次敏捷豁免。豁免失败者将受到 {@dice 8d6} 点火焰伤害，豁免成功则伤害减半。",
+										"明亮的闪光从你的指间飞驰向施法距离内你指定的一点，并随着一声低吼迸成一片烈焰。目标点周围半径 20 尺球状区域内的每个生物必须进行一次敏捷豁免。豁免失败者将受到 {@damage 8d6} 点火焰伤害，豁免成功则伤害减半",
 										"迸发的火焰将绕过拐角扩散。并点燃区域内所有未被着装或携带的可燃物件。"
 									],
 									"entriesHigherLevel": [
@@ -859,7 +859,7 @@
 											"name": "升环施法",
 											"type": "entries",
 											"entries": [
-												"使用四环或更高法术位施展该法术时，你使用的法术位每比三环高一环，其伤害就增加{@scaledice 8d6|3-9|1d6}。"
+												"使用四环或更高法术位施展该法术时，你使用的法术位每比三环高一环，其伤害就增加{@scaledamage 8d6|3-9|1d6}。"
 											]
 										}
 									],

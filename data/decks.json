@@ -3549,7 +3549,8 @@
 				"这张牌描述了一个特殊的护身符。将这张牌交给获得护身符的角色的玩家。当该角色的护身符效果结束时收回这张牌。",
 				"{@note 可打印的素材可在{@adventure 这里。|DIP|18}获取。}"
 			],
-			"hasCardArt": true
+			"hasCardArt": true,
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Magic Item Cards",
@@ -3607,7 +3608,8 @@
 				"当角色获得一个魔法物品并{@book 鉴定它|DMG|7|鉴定魔法物品}时，给玩家那张物品的卡片。让持有该物品角色的玩家保留这张卡片作为参考，直到物品被消耗或不再属于那个角色。",
 				"{@note 可打印的素材可在{@adventure 这里。|DIP|18}获取。}"
 			],
-			"hasCardArt": true
+			"hasCardArt": true,
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Medals of Merit",
@@ -3668,7 +3670,8 @@
 				"当一个新的任务对角色们可用时，将该任务的卡片交给玩家。如果角色们完成任务或决定他们不想完成它，则收集那张卡片。",
 				"{@note 可打印的素材可在{@adventure 这里。|DIP|18}获取。}"
 			],
-			"hasCardArt": true
+			"hasCardArt": true,
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Roleplaying Cards",
@@ -3794,7 +3797,8 @@
 				"DM会告诉你们使用哪种类型的协力者或让你们选择一个。由你们和DM决定谁在游戏中控制该协力者。",
 				"{@note 可打印的素材可在{@adventure 这里。|DIP|18}获取。}"
 			],
-			"hasCardArt": true
+			"hasCardArt": true,
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Story Deck",
@@ -20152,7 +20156,7 @@
 					"name": "恩惠效应：",
 					"type": "entries",
 					"entries": [
-						"目标获得一个包含十个{@dice d6|d6s}的骰池。每次最多可以消耗两个这样的骰子，并将其加到目标在进行武器攻击命中时的任何伤害骰上。这些骰子增加的伤害是火焰伤害。"
+						"目标获得一个包含十个{@damage d6|d6s}的骰池。每次最多可以消耗两个这样的骰子，并将其加到目标在进行武器攻击命中时的任何伤害骰上。这些骰子增加的伤害是火焰伤害。"
 					]
 				}
 			]
@@ -21537,9 +21541,11 @@
 					"tag": "reward",
 					"source": "DIP",
 					"page": 41,
-					"style": "inset"
+					"style": "inset",
+					"translator": "Caelum"
 				}
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "+1 Battleaxe",
@@ -21573,7 +21579,8 @@
 						"当你拥有这把战斧时，你可以说话并理解{@language 矮人语}。"
 					]
 				}
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "+1 Longbow",
@@ -21607,7 +21614,8 @@
 						"在使用长弓时，你可以使用一个行动来了解哪个方向是北方。"
 					]
 				}
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "+1 Mace",
@@ -21641,7 +21649,8 @@
 						"持有这把权杖时，你可以使用一次行动使你的声音在下一轮结束前清晰传播至300尺远。"
 					]
 				}
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "+1 Shield",
@@ -21667,7 +21676,8 @@
 					"source": "DMG",
 					"style": "inset"
 				}
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "+1 Shortsword",
@@ -21701,7 +21711,8 @@
 						"持有短剑时，你可以使用一个附赠动作使武器在10尺半径内发出明亮的光，并在额外的10尺内发出微光，或者熄灭光线。"
 					]
 				}
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Boots of Elvenkind",
@@ -21727,7 +21738,8 @@
 					"source": "DMG",
 					"style": "inset"
 				}
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Cloak of Billowing",
@@ -21753,7 +21765,8 @@
 					"source": "XGE",
 					"style": "inset"
 				}
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Cloak of Many Fashions",
@@ -21779,7 +21792,8 @@
 					"source": "XGE",
 					"style": "inset"
 				}
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Clockwork Amulet",
@@ -21805,7 +21819,8 @@
 					"source": "XGE",
 					"style": "inset"
 				}
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Dragon Slayer",
@@ -21831,7 +21846,8 @@
 					"source": "DMG",
 					"style": "inset"
 				}
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Dread Helm",
@@ -21857,7 +21873,8 @@
 					"source": "XGE",
 					"style": "inset"
 				}
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Dust of Disappearance",
@@ -21883,7 +21900,8 @@
 					"source": "DMG",
 					"style": "inset"
 				}
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Gauntlets of Ogre Power",
@@ -21909,7 +21927,8 @@
 					"source": "DMG",
 					"style": "inset"
 				}
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Goggles of Night",
@@ -21935,7 +21954,8 @@
 					"source": "DMG",
 					"style": "inset"
 				}
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Hat of Wizardry",
@@ -21961,7 +21981,8 @@
 					"source": "XGE",
 					"style": "inset"
 				}
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Immovable Rod",
@@ -21987,7 +22008,8 @@
 					"source": "DMG",
 					"style": "inset"
 				}
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Lute of Illusions",
@@ -22014,7 +22036,8 @@
 					"source": "XGE",
 					"style": "inset"
 				}
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Mithral Chain Mail",
@@ -22040,7 +22063,8 @@
 					"source": "DMG",
 					"style": "inset"
 				}
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Mystery Key",
@@ -22066,7 +22090,8 @@
 					"source": "XGE",
 					"style": "inset"
 				}
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Necklace of Fireballs",
@@ -22092,7 +22117,8 @@
 					"source": "DMG",
 					"style": "inset"
 				}
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Pole of Collapsing",
@@ -22118,7 +22144,8 @@
 					"source": "XGE",
 					"style": "inset"
 				}
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Potion of Greater Healing",
@@ -22144,7 +22171,8 @@
 					"source": "DMG",
 					"style": "inset"
 				}
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Potion of Healing",
@@ -22170,7 +22198,8 @@
 					"source": "DMG",
 					"style": "inset"
 				}
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Potion of Invulnerability",
@@ -22196,7 +22225,8 @@
 					"source": "DMG",
 					"style": "inset"
 				}
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Potion of Superior Healing",
@@ -22222,7 +22252,8 @@
 					"source": "DMG",
 					"style": "inset"
 				}
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Potion of Water Breathing",
@@ -22248,7 +22279,8 @@
 					"source": "DMG",
 					"style": "inset"
 				}
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Sending Stone",
@@ -22274,7 +22306,8 @@
 					"source": "DMG",
 					"style": "inset"
 				}
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Staff of Birdcalls",
@@ -22300,7 +22333,8 @@
 					"source": "XGE",
 					"style": "inset"
 				}
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Wand of Pyrotechnics",
@@ -22326,7 +22360,8 @@
 					"source": "XGE",
 					"style": "inset"
 				}
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Wand of Secrets",
@@ -22352,7 +22387,8 @@
 					"source": "DMG",
 					"style": "inset"
 				}
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Medal of Muscle",
@@ -22573,7 +22609,8 @@
 			},
 			"entries": [
 				"位于Phandalin南部山脉中的古代矮人堡垒Axeholm已经封闭多年。如果龙的攻击迫在眉睫，Phandalin的居民可以疏散并到Axeholm避难。为此，需要有人打开堡垒并使其适合居住。一旦你完成这些任务，回到镇长Wester那里领取250金币的奖励。"
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Butterskull Ranch",
@@ -22592,7 +22629,8 @@
 			},
 			"entries": [
 				"兽人袭击了位于兔莓镇以东五英里、三猪小径旁的黄油骷髅牧场！赶快前往那里，评估损失，并尽你所能提供帮助。牧场主阿方斯·卡拉佐恩是一位退休的警长，他可以为你们的努力提供奖励。如果他死了，请带着卡拉佐恩死亡的证据回到镇长哈宾·韦斯特那里，以获得100金币的奖励。"
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Dragon Barrow",
@@ -22611,7 +22649,8 @@
 			},
 			"entries": [
 				"困扰我们的龙并不是第一个威胁这个地区的龙。在这儿和无冬城之间，有一个战士的土丘，他的魔法屠龙剑在一个世纪前帮助击败了一条恐吓大公路的绿龙。有传言说那把{@item 屠龙者}剑也埋在那里。取回它，让剑本身成为它的奖赏吧！"
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Dwarven Excavation",
@@ -22630,7 +22669,8 @@
 			},
 			"entries": [
 				"矮人勘探者在这片地区西南的山脉中发现了古代矮人遗迹，并已开始挖掘寻找宝藏和遗物。他们需要被警告，因为有一条白龙已经迁移到了该地区。将这个警告传达给他们，然后回到镇长Harbin Wester那里领取50金币的奖励。"
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Gnomengarde",
@@ -22649,7 +22689,8 @@
 			},
 			"entries": [
 				"一群隐居的岩石地精居住在东南山区的一个小洞穴网络中。地精族的诺门加德以其魔法发明而闻名。他们可能拥有能够击败龙的东西。从他们那里获取你们能得到的任何东西。如果你们带回了有用的东西并且不想自己保留，镇长哈宾·韦斯特将为它支付50金币。"
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Loggers' Camp",
@@ -22668,7 +22709,8 @@
 			},
 			"entries": [
 				"在通往无冬城的河流旁的无冬森林深处，有一个伐木营地。每两个月，Phandalin会向由Phandalin镇长Harbin Wester的同父异母兄弟运营的营地运送新鲜物资。当地的供应者Barthen已经准备好了新的一批物资。他需要有人安全地将物资运送到营地。带着由他的同父异母兄弟Tibor Wester签署的交货通知返回给Harbin Wester，以领取你的100金币奖励。"
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Mountain's Toe",
@@ -22687,7 +22729,8 @@
 			},
 			"entries": [
 				"\"山趾\"金矿位于Phandalin东北方向十五英里处。新任监管人Don-Jon Raskin刚刚从无冬城来到Phandalin，需要有人护送他到矿区。从这里到那里的路上可能潜藏着未知的危险。一旦你安全地将Raskin送达，回到镇长Harbin Wester那里领取100金币的奖励。"
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Umbrage Hill",
@@ -22706,7 +22749,8 @@
 			},
 			"entries": [
 				"当地的接生婆\u2014\u2014一位名为Adabra Gwynn的{@deity 裳缇亚|费伦|SCAG}的侍僧\u2014\u2014独自住在潘达林南边几英里处山坡上的一座石风车中。随着龙的出现变得越来越常见，她独自一人并不安全。敦促Adabra回到潘达林。一旦她安全了，去见镇长Harbin Wester领取25金币的奖励。"
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Woodland Manse",
@@ -22725,7 +22769,8 @@
 			},
 			"entries": [
 				"兽人在无冬森林的邪恶施法者的影响下已经堕落，并且在Falcon's Hunting Lodge附近被看到的数量越来越多。施法者居住在一座废弃的宅邸中。Falcon需要有人对它进行先发制人的打击。摧毁宅邸中的邪恶，然后期待他给予你奖励。"
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Agdon Longscarf the Harengon",
@@ -25247,7 +25292,8 @@
 						"\"哪怕拼上我的性命\u2014\u2014或是别人的性命\u2014\u2014我也守不住秘密。\""
 					]
 				}
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Galandro Luna",
@@ -25309,7 +25355,8 @@
 						"\"为了赢得名声与荣耀，我什么事都做得出来。\""
 					]
 				}
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Inverna Nightbreeze",
@@ -25371,7 +25418,8 @@
 						"\"我就是没法承认自己错了。\""
 					]
 				}
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Nib Addlespur",
@@ -25433,7 +25481,8 @@
 						"\"深水吓得我魂飞魄散。我宁可被巨龙一口吞掉，也不肯登上小船或下水游泳。\""
 					]
 				}
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Pickled Pete",
@@ -25495,7 +25544,8 @@
 						"\"这么个喝法对我的记性可没好处。说真的，我连自己的姓都想不起来了。\""
 					]
 				}
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Quinn Hightopple",
@@ -25557,7 +25607,8 @@
 						"\"我就是忍不住要朝高个子们的腹股沟来一拳。我管这招叫'半身人式问候'。\""
 					]
 				}
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Ruby Hammerwhacker",
@@ -25619,7 +25670,8 @@
 						"\"告诉我我做不到某件事，我就一定要证明你错了。\""
 					]
 				}
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Shanjan Kwan",
@@ -25681,7 +25733,8 @@
 						"\"我不喜欢谜团。不解开它们，我就夜不能寐。\""
 					]
 				}
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Talon Thornwild",
@@ -25743,7 +25796,8 @@
 						"\"只要我比别人更需要，拿了就不算偷。\""
 					]
 				}
-			]
+			],
+			"translator": "Caelum"
 		},
 		{
 			"ENG_name": "Abjurer",

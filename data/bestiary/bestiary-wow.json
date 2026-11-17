@@ -1799,7 +1799,7 @@
 			"translator": "Kiwee"
 		},
 		{
-			"ENG_name": "Black Dragonflight Dragon (Gargantuan)",
+			"ENG_name": "Black Dragonflight Dragon",
 			"name": "黑龙军团巨龙",
 			"type": "dragon",
 			"source": "WoW",
@@ -1853,7 +1853,8 @@
 			"languages": [
 				"通用语",
 				"龙语",
-				"兽人语和另外两门语言"
+				"兽人语",
+				"以及其他两者"
 			],
 			"cr": "22",
 			"spellcasting": [
@@ -2400,7 +2401,7 @@
 			"translator": "Kiwee"
 		},
 		{
-			"ENG_name": "Blue Dragonflight Dragon (Gargantuan)",
+			"ENG_name": "Blue Dragonflight Dragon",
 			"name": "蓝龙军团巨龙",
 			"type": "dragon",
 			"source": "WoW",
@@ -2454,7 +2455,8 @@
 			"languages": [
 				"通用语",
 				"龙语",
-				"兽人语和另外两门语言"
+				"兽人语",
+				"以及其他两者"
 			],
 			"cr": "20",
 			"spellcasting": [
@@ -2877,7 +2879,7 @@
 			"translator": "Kiwee"
 		},
 		{
-			"ENG_name": "Bronze Dragonflight Dragon (Gargantuan)",
+			"ENG_name": "Bronze Dragonflight Dragon",
 			"name": "青铜龙军团巨龙",
 			"type": "dragon",
 			"source": "WoW",
@@ -2931,7 +2933,8 @@
 			"languages": [
 				"通用语",
 				"龙语",
-				"兽人语和另外两门语言"
+				"兽人语",
+				"以及其他两者"
 			],
 			"cr": "23",
 			"spellcasting": [
@@ -5072,7 +5075,7 @@
 					"ENG_name": "Scimitar",
 					"name": "弯刀",
 					"entries": [
-						"{@atkr m} 命中{@hit 7}，触及 5 尺。{@h}7 ({@dice 1d6 + 4}) 点挥砍伤害。"
+						"{@atkr m} 命中{@hit 7}，触及 5 尺。{@h}7 ({@damage 1d6 + 4}) 点挥砍伤害。"
 					]
 				},
 				{
@@ -5411,7 +5414,7 @@
 			"translator": "Kiwee"
 		},
 		{
-			"ENG_name": "Green Dragonflight Dragon (Gargantuan)",
+			"ENG_name": "Green Dragonflight Dragon",
 			"name": "绿龙军团巨龙",
 			"type": "dragon",
 			"source": "WoW",
@@ -5468,7 +5471,8 @@
 			"languages": [
 				"通用语",
 				"龙语",
-				"兽人语和另外两门语言"
+				"兽人语",
+				"以及其他两者"
 			],
 			"cr": "19",
 			"spellcasting": [
@@ -5558,7 +5562,7 @@
 					"ENG_name": "Dream Banishment",
 					"name": "梦境放逐",
 					"entries": [
-						"{@actSave cha} {@dc 21}，该龙 120 尺内可见的一个生物。{@actSaveFail} 10 ({@damage 3d6}) 点力场伤害，且目标处于{@condition 失能|XPHB}状态，并被送往一个类似翡翠梦境的无害半位面，直到该龙的下个回合开始，届时它在它离开的空间或最近的未被占据空间重新出现。{@actSaveSuccessOrFail} 该龙在其下个回合开始前不能再次使用此动作。"
+						"{@actSave 叉} {@dc 21}，该龙 120 尺内可见的一个生物。{@actSaveFail} 10 ({@damage 3d6}) 点力场伤害，且目标处于{@condition 失能|XPHB}状态，并被送往一个类似翡翠梦境的无害半位面，直到该龙的下个回合开始，届时它在它离开的空间或最近的未被占据空间重新出现。{@actSaveSuccessOrFail} 该龙在其下个回合开始前不能再次使用此动作。"
 					]
 				},
 				{
@@ -7900,7 +7904,7 @@
 				"stunned"
 			],
 			"languages": [
-				"所有语言及 100 里心灵感应"
+				"所有；心灵感应 100 英里"
 			],
 			"cr": "25",
 			"gear": [
@@ -10569,7 +10573,7 @@
 				"poisoned"
 			],
 			"languages": [
-				"能理解通用语和巨人语，但不能说话"
+				"理解通用语和巨人语但不会说"
 			],
 			"cr": "2",
 			"trait": [
@@ -11012,7 +11016,7 @@
 			"translator": "Kiwee"
 		},
 		{
-			"ENG_name": "Red Dragonflight Dragon (Gargantuan)",
+			"ENG_name": "Red Dragonflight Dragon",
 			"name": "红龙军团巨龙",
 			"type": "dragon",
 			"source": "WoW",
@@ -11065,7 +11069,8 @@
 			"languages": [
 				"通用语",
 				"龙语",
-				"兽人语和另外两门语言"
+				"兽人语",
+				"以及其他两者"
 			],
 			"cr": "21",
 			"spellcasting": [
@@ -12227,9 +12232,7 @@
 				"unconscious"
 			],
 			"languages": [
-				"懂通用语",
-				"被遗忘者语",
-				"和兽人语但不会说"
+				"理解通用语、被遗忘者语和兽人语但无法说话"
 			],
 			"cr": "1",
 			"trait": [

@@ -3800,7 +3800,7 @@ Parser.SOURCE_JSON_TO_FULL[Parser.SRC_BQDD] = "边陲之地任务：匕首危机
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_SoS] = "席斯库斯之影";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_RWG] = "红袍巫师的博弈";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PL] = "拉莫迪亚计划";
-Parser.SOURCE_JSON_TO_FULL[Parser.SRC_DDE] = "魔兽世界：死亡矿井";
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_DDE] = "魔兽世界：死亡矿井地下城";
 
 Parser.SOURCE_JSON_TO_ABV = {};
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHB] = "PHB'14";

@@ -54,19 +54,18 @@
 			"source": "WoW",
 			"className": "牧师",
 			"classSource": "WoW",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "classes/WoW/Discipline Domain Priest.webp"
-					},
-					"width": 850,
-					"height": 849,
-					"title": "泰兰德·语风，一位暗夜精灵牧师",
-					"credit": "Tooth Wu"
-				}
-			],
+			"_copy": {
+				"ENG_name": "Discipline Domain",
+				"name": "戒律领域",
+				"shortName": "戒律",
+				"source": "WoW",
+				"className": "牧师",
+				"classSource": "XPHB",
+				"_preserve": {
+					"*": true
+				},
+				"translator": "Kiwee"
+			},
 			"translator": "Kiwee"
 		}
 	]
