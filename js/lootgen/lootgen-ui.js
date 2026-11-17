@@ -158,7 +158,7 @@ export class LootGenUi extends BaseComponent {
 				};
 			});
 		// const tablesMagicItemsXdmg = await ["Arcana", "Armaments", "Implements", "Relics"]
-		// const tablesMagicItemsXdmg = await [I18nUtil.get("奥术", "军备", "法器", "遗物"]
+		// const tablesMagicItemsXdmg = await [I18nUtil.get("奥术", "武备", "法器", "圣物"]
 		const tablesMagicItemsXdmg = await [I18nUtil.get("page.lootgen.arcana"), I18nUtil.get("page.lootgen.armaments"), I18nUtil.get("page.lootgen.implements"), I18nUtil.get("page.lootgen.relics")]
 			.flatMap(theme => {
 				// return ["Common", "Uncommon", "Rare", "Very Rare", "Legendary"]
@@ -220,7 +220,7 @@ export class LootGenUi extends BaseComponent {
 				filterExpression,
 				valuesOverride: {
 					"Miscellaneous": {
-						"重印": PILL_STATE__IGNORE,
+						"被重制": PILL_STATE__IGNORE,
 					},
 				},
 			}),

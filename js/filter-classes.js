@@ -22,10 +22,10 @@ class PageFilterClassesBase extends PageFilterBase {
 		this._miscFilter = new Filter({
 			header: "Miscellaneous",
 			cnHeader: "杂项",
-			items: ["重制", "协力者", "传奇"],
-			deselFn: (it) => { return ["重制", "协力者", "换皮"].includes(it); },
-			displayFnMini: it => it === "重制" ? "重制" : it,
-			displayFnTitle: it => it === "重制" ? it : "",
+			items: ["被重制", "协力者", "传奇"],
+			deselFn: (it) => { return ["被重制", "协力者", "换皮"].includes(it); },
+			displayFnMini: it => it === "被重制" ? "被重制" : it,
+			displayFnTitle: it => it === "被重制" ? it : "",
 			isMiscFilter: true,
 		});
 

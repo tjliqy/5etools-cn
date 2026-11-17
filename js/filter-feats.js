@@ -5,7 +5,9 @@ class PageFilterFeats extends PageFilterBase {
 	static _PREREQ_KEYs_OTHER_IGNORED = new Set(["level"]);
 
 	static _TRAIT_DISPLAY_VALUES = {
-		"Armor Proficiency": "Armor Training",
+		"Armor Proficiency": "护甲受训",
+		"Damage Resistance": "伤害抗性",
+		"Speed": "速度"
 	};
 	// endregion
 
@@ -39,18 +41,20 @@ class PageFilterFeats extends PageFilterBase {
 			displayFn: function (tag) {
 				switch (tag) {
 					case "Ability": 	return "属性值";
+					case "Alignment": return "阵营"; // Special in UA22Hok
 					case "Race": 		return "种族";
 					case "Proficiency": return "熟练";
 					case "Spellcasting":return "施法";
 					case "Background": return "背景";
 					case "Campaign": return "战役";
 					case "Feat": return "专长";
+					case "Group": return "群组"; // Special in XUA22EC
 					case "Psionics": return "灵能";
 					case "Special": return "特殊";
 					case "Feature": return "特性";
-					case "Species": return "种族";
-					case "ExclusiveFeatCategory": return "同类专长中唯一"
-					case "FeatCategory": return "同类专长"
+					case "Species": return "物种";
+					case "ExclusiveFeatCategory": return "同类专长中唯一";
+					case "FeatCategory": return "同类专长";
 					default: return tag;
 				}
 			},
@@ -106,7 +110,7 @@ class PageFilterFeats extends PageFilterBase {
 			: [];
 		feat._fBenefits = [
 			...(feat.traitTags || []),
-			feat.resist ? "伤害抗性" : null,
+			feat.resist ? "Damage Resistance" : null,
 			feat.immune ? "伤害免疫" : null,
 			feat.conditionImmune ? "状态免疫" : null,
 			feat.skillProficiencies ? "技能熟练项" : null,

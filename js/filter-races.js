@@ -37,43 +37,63 @@ class PageFilterRaces extends PageFilterBase {
 	// endregion
 
 	static _TRAIT_DISPLAY_VALUES = {
-		"Monstrous Race": "怪物种族",
-		"NPC Race": "NPC种族",
-		"Uncommon Race": "罕见种族",
-
+		"Amphibious": "两栖",
 		"Armor Proficiency": "护甲受训",
+		"Blindsight": "盲视",
+		"Darkvision": "黑暗视觉",
+		"Superior Darkvision": "增强黑暗视觉",
+		"Dragonmark": "龙纹",
+		"Feat": "专长",
+		"Improved Resting": "修整强化",
+		"Monstrous Race": "怪物种族",
+		"Natural Armor": "天生护甲",
+		"Natural Weapon": "天生武器",
+		"NPC Race": "NPC种族",
+		"Powerful Build": "强力构筑",
+		"Skill Proficiency": "技能熟练项",
+		"Spellcasting": "施法",
+		"Sunlight Sensitivity": "日照敏感",
+		"Tool Proficiency": "工具熟练项",
+		"Uncommon Race": "罕见种族",
+		"Weapon Proficiency": "武器熟练项",
+		"Language Proficiency": "语言熟练项",
+		"Magic Resistance": "魔法抗性",
+		"Skill Bonus Dice": "技能增益骰",
+		"Speed": "速度",
+		"Tool Bonus Dice": "工具增益骰",
 	};
 
 	constructor () {
 		super();
 
-		this._sizeFilter = new Filter({header: "体型Size", cnHeader: "体型", displayFn: Parser.sizeAbvToFull, itemSortFn: PageFilterRaces.filterAscSortSize});
+		this._sizeFilter = new Filter({header: "Size", cnHeader: "体型", displayFn: Parser.sizeAbvToFull, itemSortFn: PageFilterRaces.filterAscSortSize});
 		this._asiFilter = new AbilityScoreFilter({header: "Ability Scores (Including Subrace)", cnHeader: "属性加值 (包括亚种)"});
-		this._baseRaceFilter = new Filter({header: "基础种族Base Race", cnHeader: "基础种族"});
-		this._speedFilter = new Filter({header: "速度Speed", cnHeader: "速度", items: ["攀爬", "飞行", "游泳", "步行 (快)", "步行", "步行 (慢)"]});
+		this._baseRaceFilter = new Filter({header: "Base Race", cnHeader: "基础种族"});
+		this._speedFilter = new Filter({header: "Speed", cnHeader: "速度", items: ["攀爬", "飞行", "游泳", "步行 (快)", "步行", "步行 (慢)"]});
 		this._traitFilter = new Filter({
 			header: "Traits",
 			cnHeader: "特质",
 			items: [
-				"两栖",
-				"护甲熟练项",
-				"盲视",
-				"黑暗视觉",
-				"增强黑暗视觉",
-				"龙纹",
-				"专长",
-				"修整强化",
-				"怪物种族",
-				"天生护甲",
-				"天生武器",
-				"NPC种族",
-				"强力构筑",
-				"技能熟练项",
-				"施法",
-				"日照敏感",
-				"工具熟练项",
-				"罕见种族",
-				"武器熟练项",
+				"Amphibious",
+				"Armor Proficiency",
+				"Blindsight",
+				"Darkvision",
+				"Superior Darkvision",
+				"Dragonmark",
+				"Feat",
+				"Improved Resting",
+				"Monstrous Race",
+				"Natural Armor",
+				"Natural Weapon",
+				"NPC Race",
+				"Powerful Build",
+				"Skill Proficiency",
+				"Spellcasting",
+				"Sunlight Sensitivity",
+				"Tool Proficiency",
+				"Uncommon Race",
+				"Weapon Proficiency",
+
 			],
 			displayFn: val => this.constructor._TRAIT_DISPLAY_VALUES[val] || val,
 			deselFn: (it) => {
@@ -128,8 +148,7 @@ class PageFilterRaces extends PageFilterBase {
 		this._miscFilter = new Filter({
 			header: "Miscellaneous",
 			cnHeader: "杂项",
-			items: ["基础种族", "关键种族", "Lineage", "修改副本", "重印", "传奇", "有图片", "有简介"],
-			displayFn: it => it === "Lineage" ? "血脉" : it,
+			items: ["基础种族", "关键种族", "血脉", "修订", "被重制", "传奇", "有图片", "有简介"],
 			isMiscFilter: true,
 			deselFn: PageFilterBase.defaultMiscellaneousDeselFn.bind(PageFilterBase),
 		});
@@ -158,7 +177,7 @@ class PageFilterRaces extends PageFilterBase {
 		this._mutateForFilters_commonMisc(r);
 		if (r._isBaseRace) r._fMisc.push("基础种族");
 		if (r._isBaseRace || !r._isSubRace) r._fMisc.push("关键种族");
-		if (r.lineage) r._fMisc.push("血缘");
+		if (r.lineage) r._fMisc.push("血脉");
 
 		const ability = r.ability
 			? Renderer.getAbilityData(r.ability, {isOnlyShort: true, isCurrentLineage: r.lineage === "VRGR"})

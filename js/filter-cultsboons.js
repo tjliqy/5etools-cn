@@ -18,7 +18,7 @@ class PageFilterCultsBoons extends PageFilterBase {
 		this._miscFilter = new Filter({
 			header: "Miscellaneous",
 			cnHeader: "杂项",
-			items: ["传奇", "重印"],
+			items: ["传奇", "被重制"],
 			isMiscFilter: true,
 			deselFn: PageFilterBase.defaultMiscellaneousDeselFn.bind(PageFilterBase),
 		});

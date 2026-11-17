@@ -7,7 +7,7 @@ class PageFilterEquipment extends PageFilterBase {
 		"传奇",
 		"有图片",
 		"有简介",
-		"重印",
+		"被重制",
 		"潜在劣势",
 		"需要力量",
 		"发光：明亮",

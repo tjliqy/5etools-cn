@@ -374,7 +374,7 @@ export class SourceFilter extends Filter {
 		// also disable "Reprinted" otherwise some Deities are missing
 		const reprintedFilter = this._filterBox.filters.find(it => it.isReprintedFilter);
 		if (reprintedFilter) {
-			reprintedFilter.setValue("重印", PILL_STATE__IGNORE);
+			reprintedFilter.setValue("被重制", PILL_STATE__IGNORE);
 			reprintedFilter.setValue("Reprinted", PILL_STATE__IGNORE);
 		}
 	}
@@ -399,7 +399,7 @@ export class SourceFilter extends Filter {
 		// also disable "Reprinted" otherwise some Deities are missing
 		const reprintedFilter = this._filterBox.filters.find(it => it.isReprintedFilter);
 		if (reprintedFilter) {
-			reprintedFilter.setValue("重印", PILL_STATE__IGNORE);
+			reprintedFilter.setValue("被重制", PILL_STATE__IGNORE);
 			reprintedFilter.setValue("Reprinted", PILL_STATE__IGNORE);
 		}
 	}

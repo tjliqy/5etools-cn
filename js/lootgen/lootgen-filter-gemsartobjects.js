@@ -5,7 +5,7 @@ class PageFilterGemsArtObjects extends PageFilterBase {
 			header: "Miscellaneous",
 			cnHeader: "杂项",
 			items: ["Reprinted"],
-			displayFn: it => it === "Reprinted" ? "重印" : it,
+			displayFn: it => it === "Reprinted" ? "被重制" : it,
 			isMiscFilter: true,
 			deselFn: PageFilterBase.defaultMiscellaneousDeselFn.bind(PageFilterBase),
 		});

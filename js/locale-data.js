@@ -90,7 +90,7 @@ globalThis.__I18N_PRELOADED_TRANSLATIONS = Object.freeze(
 			"common.filter.manage_snapshot": "管理配置",
 			"common.filter.include_variants": "包含变体",
 			"common.filter.include_references": "包含引用",
-			"common.filter.include_references_tooltip": "将实体视为属于它们出现的每个来源（如：重印）以及它们的主要来源",
+			"common.filter.include_references_tooltip": "将实体视为属于它们出现的每个来源（如：被重制）以及它们的主要来源",
 			"common.preferences.preferences": "偏好设置",
 			"common.preferences.appearance": "外观设置",
 			"common.preferences.theme": "主题",

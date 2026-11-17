@@ -31,7 +31,7 @@ class PageFilterDeities extends PageFilterBase {
 		this._miscFilter = new Filter({
 			header: "Miscellaneous",
 			cnHeader: "杂项",
-			items: ["虔信值特性", "有简介", "有图片", "重印", "传奇"],
+			items: ["虔信值特性", "有简介", "有图片", "被重制", "传奇"],
 			displayFn: StrUtil.uppercaseFirst,
 			isMiscFilter: true,
 			deselFn: PageFilterBase.defaultMiscellaneousDeselFn.bind(PageFilterBase),

@@ -104,7 +104,7 @@ export class Filter extends FilterBase {
 		this._umbrellaExcludes = Filter._getAsFilterItems(opts.umbrellaExcludes);
 		this._isSortByDisplayItems = !!opts.isSortByDisplayItems;
 		this._pFnOnChange = opts.pFnOnChange;
-		this._isReprintedFilter = !!opts.isMiscFilter && this._items.some(it => it.item === "重印" || it.item === "Reprinted");
+		this._isReprintedFilter = !!opts.isMiscFilter && this._items.some(it => it.item === "被重制" || it.item === "Reprinted");
 		this._isSrdFilter = !!opts.isMiscFilter && this._items.some(it => it.item === MISC_FILTER_VALUE__SRD_5_1 || it.item === MISC_FILTER_VALUE__SRD_5_2);
 		this._isBasicRulesFilter = !!opts.isMiscFilter && this._items.some(it => it.item === MISC_FILTER_VALUE__BASIC_RULES_2014 || it.item === MISC_FILTER_VALUE__BASIC_RULES_2024);
 
@@ -155,13 +155,13 @@ export class Filter extends FilterBase {
 			// could persist a bad "exclude reprinted" state which empties pages like Spells.
 			delete out["重置"];
 
-			// One-time repair for already-migrated bad states: if the user's saved state only excludes "重印",
+			// One-time repair for already-migrated bad states: if the user's saved state only excludes "被重制",
 			// treat it as corrupted legacy state and clear it.
 			if (isUserSavedState) {
 				const activeEntries = Object.entries(out).filter(([, v]) => !!v);
 				if (
 					activeEntries.length === 1
-					&& (activeEntries[0][0] === "重印" || activeEntries[0][0] === "Reprinted")
+					&& (activeEntries[0][0] === "被重制" || activeEntries[0][0] === "Reprinted")
 					&& activeEntries[0][1] === PILL_STATE__NO
 				) {
 					delete out[activeEntries[0][0]];

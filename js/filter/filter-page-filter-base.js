@@ -20,7 +20,7 @@ export class PageFilterBase {
 	}
 
 	static defaultMiscellaneousDeselFn (val) {
-		return val === "Reprinted" || val === "重印";
+		return val === "Reprinted" || val === "被重制";
 	}
 
 	constructor (opts = null) {
@@ -152,7 +152,7 @@ export class PageFilterBase {
 
 		if (SourceUtil.isLegacySourceWotc(ent.source)) ent._fMisc.push("传奇");
 
-		if (ent.isReprinted) ent._fMisc.push("重印");
+		if (ent.isReprinted) ent._fMisc.push("被重制");
 		if (ent._isCopy) ent._fMisc.push("修订");
 
 		if (this._hasFluff(ent)) ent._fMisc.push("有简介");
@@ -160,7 +160,7 @@ export class PageFilterBase {
 
 		if (this._hasSoundClip(ent)) ent._fMisc.push("有发音音频");
 
-		if (this.isReprinted(ent)) ent._fMisc.push("重印");
+		if (this.isReprinted(ent)) ent._fMisc.push("被重制");
 		if (this.isReskin(ent)) ent._fMisc.push("换皮");
 
 		if (ent.tokenCustom) ent._fMisc.push("有自定义/非官方Token");

@@ -7,7 +7,7 @@ class RenderDeities {
 			${Renderer.utils.getExcludedTr({entity: deity, dataProp: "deity"})}
 			${Renderer.utils.getNameTr(deity, {suffix: deity.title ? `, ${deity.title.toTitleCase()}` : "", page: UrlUtil.PG_DEITIES})}
 			${RenderDeities._getDeityBody(deity)}
-			${deity.reprinted ? `<tr><td colspan="6"><i class="ve-muted">注意：此神祇已被重印在较新的出版物中。</i></td></tr>` : ""}
+			${deity.reprinted ? `<tr><td colspan="6"><i class="ve-muted">注意：此神祇已被重制在较新的出版物中。</i></td></tr>` : ""}
 			${Renderer.utils.getPageTr(deity)}
 			${deity.previousVersions ? `
 			${Renderer.utils.getDividerTr()}
@@ -41,7 +41,7 @@ class RenderDeities {
 			${reprintIndex ? `
 				<tr><td colspan="6">
 				<i class="ve-muted">
-				${reprintIndex === 1 ? `此神祇是重印版本。` : ""} 以下版本被印于较旧的出版物中 (${Parser.sourceJsonToFull(deity.source)}${Renderer.utils.isDisplayPage(deity.page) ? `, 第${deity.page}页` : ""}).
+				${reprintIndex === 1 ? `此神祇是重制版本。` : ""} 以下版本被印于较旧的出版物中 (${Parser.sourceJsonToFull(deity.source)}${Renderer.utils.isDisplayPage(deity.page) ? `, 第${deity.page}页` : ""}).
 				</i>
 				</td></tr>
 			` : ""}

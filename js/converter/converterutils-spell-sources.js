@@ -67,7 +67,7 @@ class _SpellSourceUtil {
 				valuesOverride: {
 					"Components & Miscellaneous": {
 						"传奇": 0,
-						"重印": 0,
+						"被重制": 0,
 					},
 				},
 			})
@@ -81,7 +81,7 @@ class _SpellSourceUtil {
 					valuesOverride: {
 						"Components & Miscellaneous": {
 							"传奇": 0,
-							"重印": 0,
+							"被重制": 0,
 						},
 					},
 				})

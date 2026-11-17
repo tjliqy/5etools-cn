@@ -15,7 +15,7 @@ const config = {
 	// filter-filter-source.js
 	"include_references": ["包含引用", "包含引用", "Include References"],
 	"include_references_tooltip": [
-		"将实体视为属于它们出现的每个来源（如：重印）以及它们的主要来源",
+		"将实体视为属于它们出现的每个来源（如：被重制）以及它们的主要来源",
 		"",
 		"Consider entities as belonging to every source they appear in (i.e. reprints) as well as their primary source"],
 };

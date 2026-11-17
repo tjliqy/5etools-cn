@@ -157,12 +157,12 @@ class PageFilterOptionalFeatures extends PageFilterBase {
 									const [filter, values] = pt.split("=");
 									switch (filter.toLowerCase()) {
 										case "level": return values.split(";").map(v => Parser.spLevelToFullLevelText(Number(v), {isPluralCantrips: false})).join("/");
-										case "class": return values.split(";").map(v => v.toTitleCase()).join("/");
+										case "class": return values.split(";").map(v => Parser.ClassToDisplay(v)).join("/");
 										case "spell attack": {
 											const spl = values.split(";");
 											return spl.length === Object.keys(Parser.SPELL_ATTACK_TYPE_TO_FULL).length
-												? `Spell Attack`
-												: `${spl.map(v => Parser.spAttackTypeToFull(v.toUpperCase())).join("/")} Spell Attack`;
+												? `造伤的`
+												: `造成${spl.map(v => Parser.spAttackTypeToFull(v.toUpperCase())).join("/")}伤害的`;
 										}
 										default: return pt;
 									}

@@ -3584,7 +3584,7 @@ Renderer.utils = class {
 			})
 			.join("; ");
 
-		return `重印为 ${ptReprinted}`;
+		return `重制为 ${ptReprinted}`;
 	}
 
 	static getSourceAndPageHtml (it) { return this._getSourceAndPageHtmlOrText(it); }

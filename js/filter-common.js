@@ -172,7 +172,7 @@ class FilterCommon {
 
 	/* -------------------------------------------- */
 
-	static PREREQ_FILTER_ITEMS = ["Ability", "Species", "Psionics", "Proficiency", "Special", "Spellcasting"];
+	static PREREQ_FILTER_ITEMS = ["Ability", "Psionics", "Proficiency", "Special", "Spellcasting"];
 
 	static _PREREQ_KEY_TO_FULL = {
 		"other": "Special",
@@ -243,6 +243,7 @@ class FilterCommon {
 	/* -------------------------------------------- */
 
 	static _TOOL_TO_DISPLAY = {
+		"any": "任意",
 		"anyTool": "任意工具",
 		"anyArtisansTool": "任意工匠工具",
 		"anyMusicalInstrument": "任意乐器",

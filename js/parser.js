@@ -2352,7 +2352,7 @@ Parser.getEnvironmentDisplayName = function (env) {
 	return Parser.ENVIRONMENT_DISPLAY_NAMES[env] || env.toTitleCase();
 };
 
-Parser.TREASURE_TYPES = ["奥秘", "军备", "器具", "遗物"];
+Parser.TREASURE_TYPES = ["奥秘", "武备", "器具", "圣物"];
 
 Parser.getTreasureTypeEntry = function (typ) {
 	if (Parser.TREASURE_TYPES.includes(typ)) return `{@table 随机魔法物品 - ${typ.toTitleCase()}|${Parser.SRC_XDMG}|${typ.toTitleCase()}}`;
@@ -3181,7 +3181,7 @@ Parser.MON_TYPE_TO_PLURAL[Parser.TP_ELEMENTAL] = "元素";
 Parser.MON_TYPE_TO_PLURAL[Parser.TP_FEY] = "妖精";
 Parser.MON_TYPE_TO_PLURAL[Parser.TP_FIEND] = "邪魔";
 Parser.MON_TYPE_TO_PLURAL[Parser.TP_GIANT] = "巨人";
-Parser.MON_TYPE_TO_PLURAL[Parser.TP_HUMANOID] = "类人";
+Parser.MON_TYPE_TO_PLURAL[Parser.TP_HUMANOID] = "类人生物";
 Parser.MON_TYPE_TO_PLURAL[Parser.TP_MONSTROSITY] = "怪兽";
 Parser.MON_TYPE_TO_PLURAL[Parser.TP_OOZE] = "泥怪";
 Parser.MON_TYPE_TO_PLURAL[Parser.TP_PLANT] = "植物";
@@ -3669,7 +3669,7 @@ Parser.SOURCE_JSON_TO_FULL[Parser.SRC_IMR] = "重建炼狱机器";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_SADS] = "蓝宝石周年纪念骰套组";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_EGW] = "荒洲探险家指南";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_EGW_ToR] = "复仇之潮";
-Parser.SOURCE_JSON_TO_FULL[Parser.SRC_EGW_DD] = "危险计划";
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_EGW_DD] = "危险设计";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_EGW_FS] = "封冻恶疾";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_EGW_US] = "恶客自来";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_MOT] = "塞洛斯之神话奥德赛";
@@ -4991,7 +4991,8 @@ Parser.LANGUAGES_TO_CN = {
 	"thieves' cant": "盗贼黑话",
 	"sylvan": "木族语",
 	"undercommon": "地底通用语",
-
+	"common sign language": "印记城通用语",
+	
 	// Types
 	"standard": "标准",
 	"exotic": "特种",
