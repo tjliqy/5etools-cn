@@ -2816,7 +2816,7 @@
 				},
 				{
 					"ENG_name": "Lightforged",
-					"name": "光铸德莱尼",
+					"name": "光铸",
 					"ability": {
 						"choose": [
 							"int",
@@ -2898,19 +2898,19 @@
 				},
 				{
 					"ENG_name": "Eredar Lineage",
-					"name": "艾瑞达血脉",
+					"name": "艾瑞达血系",
 					"type": "entries",
 					"entries": [
-						"你属于一条与先祖拥抱圣光\u2014或燃烧军团之力\u2014相关的血脉。这条血脉赋予你超自然的能力。从艾瑞达血脉表中选择一条血脉：德莱尼、克罗库、光铸者或玛纳里。你获得该血脉的等级 1 收益。",
+						"你属于一条与先祖拥抱圣光\u2014或燃烧军团之力\u2014相关的血系。这条血系赋予你超自然的能力。从艾瑞达血系表中选择一条血系：德莱尼、克罗库、光铸者或玛纳里。你获得该血系的等级 1 收益。",
 						"当你达到3级和5级时，你习得表中所示的更高环阶法术。你始终让它处于已准备状态。你可以不消耗法术位施展它一次，并在完成{@variantrule 长休|XPHB}后恢复以此方式施展它的能力。你也可以使用你拥有的任意适当环阶的法术位施展该法术。",
-						"智力、感知或魅力是你以此特性施展法术的施法属性（在选择血脉时决定）。",
+						"智力、感知或魅力是你以此特性施展法术的施法属性（在选择血系时决定）。",
 						{
 							"type": "table",
-							"caption": "艾瑞达血脉表",
+							"caption": "艾瑞达血系表",
 							"colLabels": [
-								"血脉",
-								"1环",
-								"3环",
+								"血系",
+								"1级",
+								"3级",
 								"5级"
 							],
 							"colStyles": [
@@ -2933,7 +2933,7 @@
 									"{@spell 定身类人|XPHB}"
 								],
 								[
-									"光铸德莱尼",
+									"光铸",
 									"你对光耀伤害具有{@variantrule 抗性|XPHB}。你还知晓{@spell 圣火术|XPHB}戏法。",
 									"{@spell 光导箭|XPHB}",
 									"{@spell 援助术|XPHB}"
@@ -2953,7 +2953,7 @@
 					"name": "英姿焕发",
 					"type": "entries",
 					"entries": [
-						"当你施展艾瑞达血脉给予的法术时，若你没有{@variantrule 英雄激励|XPHB}，你获得它。你以此方式获得{@variantrule 英雄激励|XPHB}的机会一次，完成{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}后恢复。"
+						"当你施展艾瑞达血系给予的法术时，若你没有{@variantrule 英雄激励|XPHB}，你获得它。你以此方式获得{@variantrule 英雄激励|XPHB}的机会一次，完成{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}后恢复。"
 					]
 				}
 			],
@@ -2962,20 +2962,20 @@
 			"_versions": [
 				{
 					"ENG_name": "Draenei; Draenei Lineage",
-					"name": "德莱尼; 德莱尼血统",
+					"name": "德莱尼; 德莱尼血系",
 					"source": "WoW",
 					"_mod": {
 						"entries": {
 							"mode": "replaceArr",
-							"replace": "艾瑞达血脉",
+							"replace": "艾瑞达血系",
 							"items": {
 								"ENG_name": "Eredar Lineage (Draenei)",
-								"name": "艾瑞达血脉（德莱尼）",
+								"name": "艾瑞达血系（德莱尼）",
 								"type": "entries",
 								"entries": [
 									"你对暗蚀伤害具有{@variantrule 抗性|XPHB}。你还知晓{@spell 维生术|XPHB}戏法。",
 									"当你达到3级时，你习得{@spell 治愈真言|XPHB}法术；达到5级 时，你还习得{@spell 治疗祷言|XPHB}法术。你始终让这些法术处于已准备状态，并且每个法术都可以不消耗法术位施展一次。使用此特性施展其中任一法术后，你必须完成一次{@variantrule 长休|XPHB}才能再次以此特性施展该法术。你也可以使用你拥有的任意适当环阶的法术位施展这些法术。",
-									"智力、感知或魅力是你以此特性施展法术时的施法属性（在选择血脉时决定）。"
+									"智力、感知或魅力是你以此特性施展法术时的施法属性（在选择血系时决定）。"
 								]
 							}
 						}
@@ -3019,20 +3019,20 @@
 				},
 				{
 					"ENG_name": "Draenei; Krokul Lineage",
-					"name": "德莱尼; 克罗库血统",
+					"name": "德莱尼; 克罗库血系",
 					"source": "WoW",
 					"_mod": {
 						"entries": {
 							"mode": "replaceArr",
-							"replace": "艾瑞达血脉",
+							"replace": "艾瑞达血系",
 							"items": {
 								"ENG_name": "Eredar Lineage (Krokul)",
-								"name": "艾瑞达血脉（克罗库）",
+								"name": "艾瑞达血系（克罗库）",
 								"type": "entries",
 								"entries": [
 									"你获得对毒素伤害的{@variantrule 抗性|XPHB}。你习得戏法{@spell 毒气喷涌|XPHB}。",
 									"当你到达 3 级时，你习得法术{@spell 致病射线|XPHB}。当你到达 5 级时，你习得法术{@spell 定身类人|XPHB}。你时刻准备着这道习得的法术，且可以不消耗法术位施展此法术一次，当你完成一次{@variantrule 长休|XPHB}时，你重获施展该道法术的能力。你也可以用任何你拥有的相应环阶法术位施展该道法术。",
-									"智力、感知或魅力是你以此特性施展法术时的施法属性（在选择血脉时决定）。"
+									"智力、感知或魅力是你以此特性施展法术时的施法属性（在选择血系时决定）。"
 								]
 							}
 						}
@@ -3076,20 +3076,20 @@
 				},
 				{
 					"ENG_name": "Draenei; Lightforged Lineage",
-					"name": "德莱尼; 光铸血统",
+					"name": "德莱尼; 光铸血系",
 					"source": "WoW",
 					"_mod": {
 						"entries": {
 							"mode": "replaceArr",
-							"replace": "艾瑞达血脉",
+							"replace": "艾瑞达血系",
 							"items": {
 								"ENG_name": "Eredar Lineage (Lightforged)",
-								"name": "艾瑞达血脉（光铸德莱尼）",
+								"name": "艾瑞达血系（光铸）",
 								"type": "entries",
 								"entries": [
 									"你对光耀伤害具有{@variantrule 抗性|XPHB}。你还知晓{@spell 圣火术|XPHB}戏法。",
 									"当你达到3级时，你习得{@spell 光导箭|XPHB}法术；达到5级 时，你还习得{@spell 援助术|XPHB}法术。你始终让这些法术处于已准备状态，并且每个法术都可以不消耗法术位施展一次。使用此特性施展其中任一法术后，你必须完成一次{@variantrule 长休|XPHB}才能再次以此特性施展该法术。你也可以使用你拥有的任意适当环阶的法术位施展这些法术。",
-									"智力、感知或魅力是你以此特性施展法术时的施法属性（在选择血脉时决定）。"
+									"智力、感知或魅力是你以此特性施展法术时的施法属性（在选择血系时决定）。"
 								]
 							}
 						}
@@ -3133,20 +3133,20 @@
 				},
 				{
 					"ENG_name": "Draenei; Man'ari Lineage",
-					"name": "德莱尼; 玛纳里血统",
+					"name": "德莱尼; 玛纳里血系",
 					"source": "WoW",
 					"_mod": {
 						"entries": {
 							"mode": "replaceArr",
-							"replace": "艾瑞达血脉",
+							"replace": "艾瑞达血系",
 							"items": {
 								"ENG_name": "Eredar Lineage (Man'ari)",
-								"name": "艾瑞达血脉（玛纳里）",
+								"name": "艾瑞达血系（玛纳里）",
 								"type": "entries",
 								"entries": [
 									"你获得对火焰伤害的{@variantrule 抗性|XPHB}。你习得戏法{@spell 火焰箭|XPHB}。",
 									"当你到达3级时，你习得法术{@spell 炼狱叱喝|XPHB}。当你到达5级时，你习得法术{@spell 黑暗术|XPHB}。你时刻准备着这道习得的法术，且可以不消耗法术位施展此法术一次，当你完成一次{@variantrule 长休|XPHB}时，你重获施展该道法术的能力。你也可以用任何你拥有的相应环阶法术位施展该道法术。",
-									"智力、感知或魅力是你以此特性施展法术时的施法属性（在选择血脉时决定）。"
+									"智力、感知或魅力是你以此特性施展法术时的施法属性（在选择血系时决定）。"
 								]
 							}
 						}
@@ -5059,7 +5059,7 @@
 				},
 				{
 					"ENG_name": "Elf; Shadowmoor Lineage",
-					"name": "精灵；暗影荒原血统",
+					"name": "精灵；暗影荒原血系",
 					"source": "LFL",
 					"_mod": {
 						"entries": {
@@ -5234,19 +5234,19 @@
 						"replace": "精灵血系",
 						"items": {
 							"ENG_name": "Azeroth Elven Lineage",
-							"name": "艾泽拉斯精灵血统",
+							"name": "艾泽拉斯精灵血系",
 							"type": "entries",
 							"entries": [
-								"你属于一条赋予你超自然能力的血统。从艾泽拉斯精灵血统表中选择一条血统，并获得该血统的1级收益。",
+								"你属于一条赋予你超自然能力的血系。从艾泽拉斯精灵血系表中选择一条血系，并获得该血系的1级收益。",
 								"当你到达 3 级和 5 级时，你分别习得一道表格上更高级的法术；你时刻准备着这道习得的法术，且可以不消耗法术位施展此法术一次，当你完成一次{@variantrule 长休|XPHB}时，你重获施展该道法术的能力。你也可以用任何你拥有的相应环阶法术位施展该道法术。",
 								"当你选择血系时，选择智力、感知、或魅力之一，该属性即是你用此特质施展法术时的施法属性。",
 								{
 									"type": "table",
-									"caption": "艾泽拉斯精灵血统",
+									"caption": "艾泽拉斯精灵血系",
 									"colLabels": [
 										"血系",
-										"1环",
-										"3环",
+										"1级",
+										"3级",
 										"5级"
 									],
 									"colStyles": [
@@ -5471,15 +5471,15 @@
 			"_versions": [
 				{
 					"ENG_name": "Elf; Blood Elf Lineage",
-					"name": "精灵; 血精灵血统",
+					"name": "精灵; 血精灵血系",
 					"source": "WoW",
 					"_mod": {
 						"entries": {
 							"mode": "replaceArr",
-							"replace": "艾泽拉斯精灵血统",
+							"replace": "艾泽拉斯精灵血系",
 							"items": {
 								"ENG_name": "Azeroth Elven Lineage (Blood Elf)",
-								"name": "艾泽拉斯精灵血统（血精灵）",
+								"name": "艾泽拉斯精灵血系（血精灵）",
 								"type": "entries",
 								"entries": [
 									"你知晓戏法{@spell 魔法伎俩|XPHB}。每当你完成{@variantrule 长休|XPHB}时，你可以将它替换为另一道{@filter 法师法术列表中的戏法|spells|level=0|class=法师}。",
@@ -5534,10 +5534,10 @@
 					"_mod": {
 						"entries": {
 							"mode": "replaceArr",
-							"replace": "艾泽拉斯精灵血统",
+							"replace": "艾泽拉斯精灵血系",
 							"items": {
 								"ENG_name": "Azeroth Elven Lineage (High Elf)",
-								"name": "艾泽拉斯精灵血统（高等精灵）",
+								"name": "艾泽拉斯精灵血系（高等精灵）",
 								"type": "entries",
 								"entries": [
 									"你知晓戏法{@spell 魔法伎俩|XPHB}。每当你完成{@variantrule 长休|XPHB}时，你可以将它替换为另一道{@filter 法师法术列表中的戏法|spells|level=0|class=法师}。",
@@ -5587,15 +5587,15 @@
 				},
 				{
 					"ENG_name": "Elf; Night Elf Lineage",
-					"name": "精灵; 暗夜精灵血统",
+					"name": "精灵; 暗夜精灵血系",
 					"source": "WoW",
 					"_mod": {
 						"entries": {
 							"mode": "replaceArr",
-							"replace": "艾泽拉斯精灵血统",
+							"replace": "艾泽拉斯精灵血系",
 							"items": {
 								"ENG_name": "Azeroth Elven Lineage (Night Elf)",
-								"name": "艾泽拉斯精灵血统（暗夜精灵）",
+								"name": "艾泽拉斯精灵血系（暗夜精灵）",
 								"type": "entries",
 								"entries": [
 									"你熟练{@skill 隐匿|XPHB}技能；处于{@variantrule 微光光照|XPHB}或{@variantrule 黑暗|XPHB}中时，你可以用{@variantrule 附赠动作|XPHB}采取{@action 躲藏|XPHB}动作。",
@@ -5648,13 +5648,13 @@
 				},
 				{
 					"ENG_name": "Elf; Nightborne Lineage",
-					"name": "精灵; 夜之子血统",
+					"name": "精灵; 夜之子血系",
 					"source": "WoW",
 					"_mod": {
 						"entries": [
 							{
 								"mode": "replaceArr",
-								"replace": "艾泽拉斯精灵血统",
+								"replace": "艾泽拉斯精灵血系",
 								"items": {
 									"ENG_name": "Azeroth Elven Lineage (Nightborne)",
 									"name": "Azeroth Elven Lineage (Nightborne)",
@@ -5717,13 +5717,13 @@
 				},
 				{
 					"ENG_name": "Elf; Void Elf Lineage",
-					"name": "精灵; 虚空精灵血统",
+					"name": "精灵; 虚空精灵血系",
 					"source": "WoW",
 					"_mod": {
 						"entries": [
 							{
 								"mode": "replaceArr",
-								"replace": "艾泽拉斯精灵血统",
+								"replace": "艾泽拉斯精灵血系",
 								"items": {
 									"ENG_name": "Azeroth Elven Lineage (Void Elf)",
 									"name": "Azeroth Elven Lineage (Void Elf)",
@@ -5952,10 +5952,10 @@
 							"type": "table",
 							"caption": "精灵血系",
 							"colLabels": [
-								"血统",
-								"1环",
-								"3环",
-								"5环"
+								"血系",
+								"1级",
+								"3级",
+								"5级"
 							],
 							"colStyles": [
 								"col-2",
@@ -6016,7 +6016,7 @@
 			"_versions": [
 				{
 					"ENG_name": "Elf; Drow Lineage",
-					"name": "精灵; 卓尔血统",
+					"name": "精灵; 卓尔血系",
 					"source": "XPHB",
 					"_mod": {
 						"entries": [
@@ -15965,10 +15965,10 @@
 				},
 				{
 					"ENG_name": "Tauren Lineage",
-					"name": "牛头人血脉",
+					"name": "牛头人血系",
 					"type": "entries",
 					"entries": [
-						"你属于一条赋予你超自然特质的血脉。若你的血脉给予你一项允许豁免检定的能力，其 DC 等于 8 加你的力量、体质或感知调整值（在选择血脉时决定）加你的{@variantrule 熟练|XPHB|熟练加值}。选择以下选项之一：",
+						"你属于一条赋予你超自然特质的血系。若你的血系给予你一项允许豁免检定的能力，其 DC 等于 8 加你的力量、体质或感知调整值（在选择血系时决定）加你的{@variantrule 熟练|XPHB|熟练加值}。选择以下选项之一：",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
@@ -16007,18 +16007,18 @@
 			"_versions": [
 				{
 					"ENG_name": "Tauren; Highmountain Lineage",
-					"name": "牛头人; 至高岭血统",
+					"name": "牛头人; 至高岭血系",
 					"source": "WoW",
 					"_mod": {
 						"entries": {
 							"mode": "replaceArr",
-							"replace": "牛头人血脉",
+							"replace": "牛头人血系",
 							"items": {
 								"ENG_name": "Tauren Lineage (Highmountain Tauren)",
-								"name": "牛头人血脉（至高岭牛头人）",
+								"name": "牛头人血系（至高岭牛头人）",
 								"type": "entries",
 								"entries": [
-									"你属于一条赋予你超自然能力的血统。若你的血统赋予你一项允许进行豁免检定的能力，该豁免检定的难度等级等于 8 + 你的力量、体质或感知调整值（在选择血统时决定）+ 你的{@variantrule 熟练|XPHB|熟练加值}。",
+									"你属于一条赋予你超自然能力的血系。若你的血系赋予你一项允许进行豁免检定的能力，该豁免检定的难度等级等于 8 + 你的力量、体质或感知调整值（在选择血系时决定）+ 你的{@variantrule 熟练|XPHB|熟练加值}。",
 									"以一个动作，你可以移动至多等同于你{@variantrule 速度|XPHB}的距离，不引发{@action 借机攻击|XPHB|借机攻击}，并可以穿过其他生物的空间。其空间被你进入的每个中型或更小的生物进行力量豁免。豁免失败的生物受等同于你的{@variantrule 熟练|XPHB|熟练加值}加你的力量调整值的伤害，并倒地受{@condition 倒地|XPHB}状态。一个生物每回合只能受此伤害一次。"
 								]
 							}
@@ -16031,18 +16031,18 @@
 				},
 				{
 					"ENG_name": "Tauren; Mulgore Lineage",
-					"name": "牛头人; 莫高雷血统",
+					"name": "牛头人; 莫高雷血系",
 					"source": "WoW",
 					"_mod": {
 						"entries": {
 							"mode": "replaceArr",
-							"replace": "牛头人血脉",
+							"replace": "牛头人血系",
 							"items": {
 								"ENG_name": "Tauren Lineage (Mulgore Tauren)",
-								"name": "牛头人血脉（莫高雷牛头人）",
+								"name": "牛头人血系（莫高雷牛头人）",
 								"type": "entries",
 								"entries": [
-									"你属于一条赋予你超自然能力的血统。若你的血统赋予你一项允许进行豁免检定的能力，该豁免检定的难度等级等于 8 + 你的力量、体质或感知调整值（在选择血统时决定）+ 你的{@variantrule 熟练|XPHB|熟练加值}。",
+									"你属于一条赋予你超自然能力的血系。若你的血系赋予你一项允许进行豁免检定的能力，该豁免检定的难度等级等于 8 + 你的力量、体质或感知调整值（在选择血系时决定）+ 你的{@variantrule 熟练|XPHB|熟练加值}。",
 									"当你在自己的回合采取{@action 攻击|XPHB}动作时，你可以将其中一次攻击替换为一次魔法强化的踏地重击。若你处于{@condition 倒地|XPHB}状态，或你正在飞行、攀爬或游泳，则你不能使用此特性。当你使用战争践踏时，以你为源 5 尺{@variantrule 光环 [效应区域]|XPHB|光环}内你选择的每个生物进行体质豁免。豁免失败的生物受{@condition 震慑|XPHB}状态，直到你的当前回合结束。"
 								]
 							}
@@ -16055,18 +16055,18 @@
 				},
 				{
 					"ENG_name": "Tauren; Taunka Lineage",
-					"name": "牛头人; 牦牛人血统",
+					"name": "牛头人; 牦牛人血系",
 					"source": "WoW",
 					"_mod": {
 						"entries": {
 							"mode": "replaceArr",
-							"replace": "牛头人血脉",
+							"replace": "牛头人血系",
 							"items": {
 								"ENG_name": "Tauren Lineage (Taunka)",
-								"name": "牛头人血脉（牦牛人）",
+								"name": "牛头人血系（牦牛人）",
 								"type": "entries",
 								"entries": [
-									"你属于一条赋予你超自然能力的血统。若你的血统赋予你一项允许进行豁免检定的能力，该豁免检定的难度等级等于 8 + 你的力量、体质或感知调整值（在选择血统时决定）+ 你的{@variantrule 熟练|XPHB|熟练加值}。",
+									"你属于一条赋予你超自然能力的血系。若你的血系赋予你一项允许进行豁免检定的能力，该豁免检定的难度等级等于 8 + 你的力量、体质或感知调整值（在选择血系时决定）+ 你的{@variantrule 熟练|XPHB|熟练加值}。",
 									"你蓬松的毛皮使你的{@variantrule 护甲等级|XPHB}获得 +1 加值，且你对寒冷伤害具有{@variantrule 抗性|XPHB}。"
 								]
 							}
@@ -16458,9 +16458,9 @@
 							"caption": "邪魔遗赠",
 							"colLabels": [
 								"遗赠",
-								"1环",
-								"3环",
-								"5环"
+								"1级",
+								"3级",
+								"5级"
 							],
 							"colStyles": [
 								"col-2",
@@ -17333,10 +17333,10 @@
 				},
 				{
 					"ENG_name": "Troll Lineage",
-					"name": "巨魔血脉",
+					"name": "巨魔血系",
 					"type": "entries",
 					"entries": [
-						"你属于一条赋予你超自然特质的血脉。选择以下选项之一：",
+						"你属于一条赋予你超自然特质的血系。选择以下选项之一：",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
@@ -17375,18 +17375,18 @@
 			"_versions": [
 				{
 					"ENG_name": "Troll; Amani Lineage",
-					"name": "巨魔; 阿曼尼血统",
+					"name": "巨魔; 阿曼尼血系",
 					"source": "WoW",
 					"_mod": {
 						"entries": {
 							"mode": "replaceArr",
-							"replace": "巨魔血脉",
+							"replace": "巨魔血系",
 							"items": {
 								"ENG_name": "Troll Lineage (Amani Troll)",
-								"name": "巨魔血脉（阿曼尼巨魔）",
+								"name": "巨魔血系（阿曼尼巨魔）",
 								"type": "entries",
 								"entries": [
-									"你属于一条赋予你超自然特质的血统。",
+									"你属于一条赋予你超自然特质的血系。",
 									"每当你消耗{@variantrule 英雄激励|XPHB}时，你回复 1 枚已消耗的{@variantrule 生命值骰|XPHB|生命值骰}。"
 								]
 							}
@@ -17396,18 +17396,18 @@
 				},
 				{
 					"ENG_name": "Troll; Darkspear Lineage",
-					"name": "巨魔; 暗矛血统",
+					"name": "巨魔; 暗矛血系",
 					"source": "WoW",
 					"_mod": {
 						"entries": {
 							"mode": "replaceArr",
-							"replace": "巨魔血脉",
+							"replace": "巨魔血系",
 							"items": {
 								"ENG_name": "Troll Lineage (Darkspear Troll)",
-								"name": "巨魔血脉（暗矛巨魔）",
+								"name": "巨魔血系（暗矛巨魔）",
 								"type": "entries",
 								"entries": [
-									"你属于一条赋予你超自然特质的血统。",
+									"你属于一条赋予你超自然特质的血系。",
 									"当你采取{@action 疾走|XPHB}动作时，由冰、碎石、积雪或灌木丛构成的{@variantrule 困难地形|XPHB}不再消耗你额外的移动，直到你的回合结束。"
 								]
 							}
@@ -17417,18 +17417,18 @@
 				},
 				{
 					"ENG_name": "Troll; Zandalari Lineage",
-					"name": "巨魔; 赞达拉血统",
+					"name": "巨魔; 赞达拉血系",
 					"source": "WoW",
 					"_mod": {
 						"entries": {
 							"mode": "replaceArr",
-							"replace": "巨魔血脉",
+							"replace": "巨魔血系",
 							"items": {
 								"ENG_name": "Troll Lineage (Zandalari Troll)",
-								"name": "巨魔血脉（赞达拉巨魔）",
+								"name": "巨魔血系（赞达拉巨魔）",
 								"type": "entries",
 								"entries": [
-									"你属于一条赋予你超自然特质的血统。",
+									"你属于一条赋予你超自然特质的血系。",
 									"若你在{@variantrule D20 检定|XPHB}的{@dice d20}上掷出 1，你在当前回合结束时获得{@variantrule 英雄激励|XPHB}。"
 								]
 							}

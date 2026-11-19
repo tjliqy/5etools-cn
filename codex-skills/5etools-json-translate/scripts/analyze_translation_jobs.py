@@ -514,6 +514,14 @@ _RETAINED_LATIN_NAMES = {
     "Micare",
     "Revelare",
     "Navis Anima",
+    # HHH3 binding rulings (070001 locked "CR N" terminal state, 130001
+    # review round): the CR-band section headers "CR <1" (book contents
+    # headers + bookData section names, the "<1" companion of the
+    # untranslated "CR N" ladder) and the Reddit credit handle
+    # "/u/AeronDrake" (bookData artwork credits, identity string) stay
+    # verbatim by adjudication.
+    "CR <1",
+    "/u/AeronDrake",
 }
 
 

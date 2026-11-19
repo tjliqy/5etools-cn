@@ -18,7 +18,7 @@
 			"name": "专家",
 			"type": {
 				"type": "humanoid",
-				"sidekickType": "专家",
+				"sidekickType": "expert",
 				"sidekickHidden": true
 			},
 			"source": "SLW",
@@ -213,7 +213,7 @@
 			"name": "施法者（治疗者）",
 			"type": {
 				"type": "humanoid",
-				"sidekickType": "施法者",
+				"sidekickType": "spellcaster",
 				"tags": [
 					"医疗师"
 				],
@@ -355,7 +355,7 @@
 			"name": "施法者（魔法师）",
 			"type": {
 				"type": "humanoid",
-				"sidekickType": "施法者",
+				"sidekickType": "spellcaster",
 				"tags": [
 					"魔法师"
 				],
@@ -729,7 +729,7 @@
 			"name": "武者",
 			"type": {
 				"type": "humanoid",
-				"sidekickType": "战士",
+				"sidekickType": "warrior",
 				"sidekickHidden": true
 			},
 			"source": "SLW",

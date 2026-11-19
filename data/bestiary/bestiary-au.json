@@ -491,9 +491,9 @@
 			"type": {
 				"type": {
 					"choose": [
-						"天族",
-						"妖精",
-						"邪魔"
+						"celestial",
+						"fey",
+						"fiend"
 					]
 				}
 			},
@@ -1708,9 +1708,9 @@
 					],
 					"recharge": {
 						"5": [
-							"{@spell Fireball|XPHB}",
-							"{@spell Ice Storm|XPHB}",
-							"{@spell Lightning Bolt|XPHB}"
+							"{@spell 火球术|XPHB}",
+							"{@spell 冰风暴|XPHB}",
+							"{@spell 闪电束|XPHB}"
 						]
 					},
 					"ability": "int",
@@ -3967,9 +3967,9 @@
 			"type": {
 				"type": {
 					"choose": [
-						"天界语",
-						"邪魔",
-						"亡灵"
+						"celestial",
+						"fiend",
+						"undead"
 					]
 				}
 			},
