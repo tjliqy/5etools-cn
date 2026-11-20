@@ -38,7 +38,8 @@
 						"with": "阿柴娅",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"hp": {
 				"average": 140,
@@ -122,7 +123,8 @@
 			"_copy": {
 				"ENG_name": "Giant Poisonous Snake",
 				"name": "巨毒蛇",
-				"source": "MM"
+				"source": "MM",
+				"translator": "不全书"
 			},
 			"immune": [
 				"poison"
@@ -265,7 +267,8 @@
 							]
 						}
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"U"
@@ -299,7 +302,8 @@
 							]
 						}
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"size": [
 				"H"
@@ -417,7 +421,8 @@
 							]
 						}
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"hasToken": true
 		},
@@ -439,7 +444,8 @@
 						"with": "阿克托莉雅",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"speed": {
 				"walk": 30,
@@ -600,7 +606,8 @@
 							}
 						}
 					]
-				}
+				},
+				"translator": "不全书"
 			},
 			"ac": [
 				{
@@ -637,7 +644,8 @@
 						"with": "艾什泰兰瑟",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"spellcasting": [
 				{
@@ -679,9 +687,11 @@
 					{
 						"ENG_name": "Awakened",
 						"name": "觉醒",
-						"source": "PHB"
+						"source": "PHB",
+						"translator": "不全书"
 					}
-				]
+				],
+				"translator": "不全书"
 			},
 			"hasToken": true,
 			"translator": "不全书"
@@ -699,9 +709,11 @@
 					{
 						"ENG_name": "Awakened",
 						"name": "觉醒",
-						"source": "PHB"
+						"source": "PHB",
+						"translator": "不全书"
 					}
-				]
+				],
+				"translator": "不全书"
 			},
 			"hasToken": true,
 			"translator": "不全书"
@@ -719,9 +731,11 @@
 					{
 						"ENG_name": "Awakened",
 						"name": "觉醒",
-						"source": "PHB"
+						"source": "PHB",
+						"translator": "不全书"
 					}
-				]
+				],
+				"translator": "不全书"
 			},
 			"hasToken": true,
 			"translator": "不全书"
@@ -744,7 +758,8 @@
 						"with": "阿扎尔",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"hasToken": true,
 			"hasFluffImages": true
@@ -778,7 +793,8 @@
 							]
 						}
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"C",
@@ -903,7 +919,8 @@
 			"_copy": {
 				"ENG_name": "Xorn",
 				"name": "石鼎兽",
-				"source": "MM"
+				"source": "MM",
+				"translator": "不全书"
 			},
 			"size": [
 				"L"
@@ -966,7 +983,8 @@
 							}
 						]
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"hasToken": true,
 			"translator": "不全书"
@@ -1123,7 +1141,8 @@
 						"with": "恩加索德船长",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"hp": {
 				"average": 111,
@@ -1150,7 +1169,8 @@
 			"_copy": {
 				"ENG_name": "Ogre",
 				"name": "食人魔",
-				"source": "MM"
+				"source": "MM",
+				"translator": "不全书"
 			},
 			"int": 1,
 			"languages": null,
@@ -1231,7 +1251,8 @@
 						}
 					},
 					"action": "remove"
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"C",
@@ -1387,7 +1408,8 @@
 					{
 						"ENG_name": "Shield Dwarf",
 						"name": "盾矮人",
-						"source": "PHB"
+						"source": "PHB",
+						"translator": "不全书"
 					}
 				],
 				"_mod": {
@@ -1397,7 +1419,8 @@
 						"with": "赤铜",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"N",
@@ -1432,7 +1455,8 @@
 						"with": "乌鸦",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"hasToken": true,
 			"translator": "不全书"
@@ -1453,7 +1477,8 @@
 						"with": "战斧",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"action": [
 				{
@@ -1503,7 +1528,8 @@
 							}
 						]
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"traitTags": [
 				"Illumination",
@@ -1528,7 +1554,8 @@
 			"_copy": {
 				"ENG_name": "Nothic",
 				"name": "诺斯怪",
-				"source": "MM"
+				"source": "MM",
+				"translator": "不全书"
 			},
 			"hasToken": true,
 			"hasFluffImages": true
@@ -1563,7 +1590,8 @@
 							}
 						]
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"hp": {
 				"average": 40,
@@ -1608,7 +1636,8 @@
 							}
 						]
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"languages": [
 				"深渊语",
@@ -1690,7 +1719,8 @@
 					{
 						"ENG_name": "Drow (Levitate)",
 						"name": "卓尔（浮空术）",
-						"source": "PHB"
+						"source": "PHB",
+						"translator": "不全书"
 					}
 				],
 				"_mod": {
@@ -1710,7 +1740,8 @@
 							]
 						}
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"N",
@@ -1776,7 +1807,8 @@
 							]
 						}
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"hp": {
 				"average": 221,
@@ -1822,7 +1854,8 @@
 				},
 				"_preserve": {
 					"legendaryGroup": true
-				}
+				},
+				"translator": "不全书"
 			},
 			"languages": [
 				"通用语",
@@ -1960,7 +1993,8 @@
 						"mode": "removeArr",
 						"names": "治愈之触 (4/日)"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"L",
@@ -2000,7 +2034,8 @@
 						"with": "费德里奥",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"L",
@@ -2037,7 +2072,8 @@
 							]
 						}
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"cr": "8",
 			"hasToken": true
@@ -2069,7 +2105,8 @@
 							]
 						}
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"damageTags": [
 				"P"
@@ -2094,7 +2131,8 @@
 						"replace": "\\b剑\\b",
 						"with": "魔杖"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"action": [
 				{
@@ -2120,7 +2158,8 @@
 			"_copy": {
 				"ENG_name": "Giant Spider",
 				"name": "巨蜘蛛",
-				"source": "MM"
+				"source": "MM",
+				"translator": "不全书"
 			},
 			"speed": {
 				"walk": 30,
@@ -2177,7 +2216,8 @@
 							]
 						}
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"hasToken": true
 		},
@@ -2199,7 +2239,8 @@
 						"with": "格利斯特",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"L",
@@ -2244,7 +2285,8 @@
 				},
 				"_preserve": {
 					"legendaryGroup": true
-				}
+				},
+				"translator": "不全书"
 			},
 			"languages": [
 				"矮人语",
@@ -2650,7 +2692,8 @@
 							]
 						}
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"action": [
 				{
@@ -2769,7 +2812,8 @@
 							]
 						}
 					]
-				}
+				},
+				"translator": "不全书"
 			},
 			"hasToken": true
 		},
@@ -2853,7 +2897,8 @@
 					{
 						"ENG_name": "Tiefling",
 						"name": "提夫林",
-						"source": "PHB"
+						"source": "PHB",
+						"translator": "不全书"
 					}
 				],
 				"_mod": {
@@ -2862,7 +2907,8 @@
 						"replace": "(^| )法师",
 						"with": "$1号角姐妹"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"L",
@@ -2907,7 +2953,8 @@
 						"with": "赫罗斯克",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"hasToken": true,
 			"hasFluffImages": true
@@ -2920,7 +2967,8 @@
 			"_copy": {
 				"ENG_name": "Gray Ooze",
 				"name": "灰泥怪",
-				"source": "MM"
+				"source": "MM",
+				"translator": "不全书"
 			},
 			"size": [
 				"H"
@@ -2982,7 +3030,8 @@
 			"_copy": {
 				"ENG_name": "Black Pudding",
 				"name": "黑布丁",
-				"source": "MM"
+				"source": "MM",
+				"translator": "不全书"
 			},
 			"int": 14,
 			"languages": [
@@ -3116,7 +3165,8 @@
 					{
 						"ENG_name": "Drow",
 						"name": "卓尔",
-						"source": "PHB"
+						"source": "PHB",
+						"translator": "不全书"
 					}
 				],
 				"_mod": {
@@ -3125,7 +3175,8 @@
 						"replace": "祭司",
 						"with": "女祭司"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"N",
@@ -3176,7 +3227,8 @@
 						"with": "卡维尔",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"N",
@@ -3225,7 +3277,8 @@
 							]
 						}
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"spellcasting": [
 				{
@@ -3354,7 +3407,8 @@
 							}
 						}
 					]
-				}
+				},
+				"translator": "不全书"
 			},
 			"hp": {
 				"average": 20,
@@ -3375,7 +3429,8 @@
 			"_copy": {
 				"ENG_name": "Mimic",
 				"name": "拟身怪",
-				"source": "MM"
+				"source": "MM",
+				"translator": "不全书"
 			},
 			"size": [
 				"L"
@@ -3530,7 +3585,8 @@
 							]
 						}
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"size": [
 				"T"
@@ -3668,7 +3724,8 @@
 							]
 						}
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"size": [
 				"H"
@@ -3728,7 +3785,8 @@
 							]
 						}
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"size": [
 				"L"
@@ -3772,7 +3830,8 @@
 					{
 						"ENG_name": "High Elf",
 						"name": "高等精灵",
-						"source": "PHB"
+						"source": "PHB",
+						"translator": "不全书"
 					}
 				],
 				"_mod": {
@@ -3792,7 +3851,8 @@
 							}
 						}
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"N",
@@ -3854,7 +3914,8 @@
 							]
 						}
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"N"
@@ -3883,7 +3944,8 @@
 			"_copy": {
 				"ENG_name": "Giant Wasp",
 				"name": "巨黄蜂",
-				"source": "MM"
+				"source": "MM",
+				"translator": "不全书"
 			},
 			"ac": [
 				{
@@ -4231,7 +4293,8 @@
 							}
 						]
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"N",
@@ -4342,7 +4405,8 @@
 							]
 						}
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"damageTags": [
 				"N",
@@ -4395,7 +4459,8 @@
 							]
 						}
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"C",
@@ -4463,7 +4528,8 @@
 							"names": "啃咬"
 						}
 					]
-				}
+				},
+				"translator": "不全书"
 			},
 			"cr": "1/8",
 			"damageTags": [
@@ -4497,7 +4563,8 @@
 				},
 				"_preserve": {
 					"legendaryGroup": true
-				}
+				},
+				"translator": "不全书"
 			},
 			"size": [
 				"L"
@@ -4554,7 +4621,8 @@
 							}
 						}
 					]
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"C",
@@ -4591,7 +4659,8 @@
 						"replace": "水诡",
 						"with": "毒怪"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"cr": "4",
 			"trait": [
@@ -4701,7 +4770,8 @@
 						"with": "普里塔",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"C",
@@ -4780,7 +4850,8 @@
 			"_copy": {
 				"ENG_name": "Commoner",
 				"name": "平民",
-				"source": "MM"
+				"source": "MM",
+				"translator": "不全书"
 			},
 			"alignment": [
 				"U"
@@ -4810,7 +4881,8 @@
 						"with": "瑞辛达",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"hasToken": true,
 			"hasFluffImages": true
@@ -4823,7 +4895,8 @@
 			"_copy": {
 				"ENG_name": "Mimic",
 				"name": "拟身怪",
-				"source": "MM"
+				"source": "MM",
+				"translator": "不全书"
 			},
 			"size": [
 				"L"
@@ -4842,7 +4915,8 @@
 			"_copy": {
 				"ENG_name": "Behir",
 				"name": "青足龙蛇",
-				"source": "MM"
+				"source": "MM",
+				"translator": "不全书"
 			},
 			"spellcasting": [
 				{
@@ -5171,7 +5245,8 @@
 							]
 						}
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"traitTags": [
 				"False Appearance",
@@ -5339,7 +5414,8 @@
 							]
 						}
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"L",
@@ -5364,9 +5440,11 @@
 					{
 						"ENG_name": "Stout Halfling",
 						"name": "敦实半身人",
-						"source": "PHB"
+						"source": "PHB",
+						"translator": "不全书"
 					}
-				]
+				],
+				"translator": "不全书"
 			},
 			"alignment": [
 				"L",
@@ -5403,7 +5481,8 @@
 						"with": "仓鼠",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"cr": {
 				"cr": "0",
@@ -5461,7 +5540,8 @@
 							]
 						}
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"L",
@@ -5513,7 +5593,8 @@
 							]
 						}
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"tokenCustom": true,
 			"hasToken": true
@@ -5534,7 +5615,8 @@
 						"with": "石肤术",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"int": 9,
 			"cha": 9,
@@ -5624,7 +5706,8 @@
 					{
 						"ENG_name": "Shield Dwarf",
 						"name": "盾矮人",
-						"source": "PHB"
+						"source": "PHB",
+						"translator": "不全书"
 					}
 				],
 				"_mod": {
@@ -5708,7 +5791,8 @@
 						"with": "Torbit",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"C",
@@ -5745,7 +5829,8 @@
 						"with": "特伦齐亚",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"resist": [
 				"fire",
@@ -5843,7 +5928,8 @@
 						"with": "特洛布里安",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"int": 20,
 			"cr": "22",
@@ -5972,7 +6058,8 @@
 					{
 						"ENG_name": "Legendary Shadow Dragon",
 						"name": "传奇幽影龙",
-						"source": "MM"
+						"source": "MM",
+						"translator": "不全书"
 					}
 				],
 				"_mod": {
@@ -5982,7 +6069,8 @@
 						"with": "乌姆布拉克萨尔",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"N",
@@ -5991,7 +6079,8 @@
 			"legendaryGroup": {
 				"ENG_name": "Shadow Dragon (Bronze Dragon)",
 				"name": "幽影龙（青铜龙）",
-				"source": "MM"
+				"source": "MM",
+				"translator": "不全书"
 			},
 			"traitTags": [
 				"Amphibious",
@@ -6017,7 +6106,8 @@
 			"_copy": {
 				"ENG_name": "Bulette",
 				"name": "鲨蜥",
-				"source": "MM"
+				"source": "MM",
+				"translator": "不全书"
 			},
 			"hp": {
 				"average": 125,
@@ -6046,7 +6136,8 @@
 			"_copy": {
 				"ENG_name": "Shambling Mound",
 				"name": "蔓生怪",
-				"source": "MM"
+				"source": "MM",
+				"translator": "不全书"
 			},
 			"immune": [
 				"necrotic",
@@ -6107,7 +6198,8 @@
 							]
 						}
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"L",
@@ -6171,7 +6263,8 @@
 							]
 						}
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"C",
@@ -6216,7 +6309,8 @@
 						"with": "冯德",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"hasToken": true,
 			"hasFluffImages": true
@@ -6406,7 +6500,8 @@
 						"with": "驴",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"senses": [
 				"盲视30尺（此范围外则视为目盲）"
@@ -6443,7 +6538,8 @@
 					{
 						"ENG_name": "Wood Elf",
 						"name": "木精灵",
-						"source": "PHB"
+						"source": "PHB",
+						"translator": "不全书"
 					}
 				],
 				"_mod": {
@@ -6494,7 +6590,8 @@
 					{
 						"ENG_name": "Drow (Levitate)",
 						"name": "卓尔（浮空术）",
-						"source": "PHB"
+						"source": "PHB",
+						"translator": "不全书"
 					}
 				],
 				"_mod": {
@@ -6514,7 +6611,8 @@
 							]
 						}
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"N",
@@ -6549,7 +6647,8 @@
 						"with": "Xorta",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"hasToken": true,
 			"hasFluffImages": true
@@ -6582,7 +6681,8 @@
 							]
 						}
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"hasToken": true,
 			"hasFluffImages": true
@@ -6637,7 +6737,8 @@
 							]
 						}
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"languages": [
 				"深渊语",
@@ -6886,7 +6987,8 @@
 			"legendaryGroup": {
 				"ENG_name": "Vampire",
 				"name": "吸血鬼",
-				"source": "MM"
+				"source": "MM",
+				"translator": "不全书"
 			},
 			"tokenCustom": true,
 			"attachedItems": [
@@ -6942,7 +7044,8 @@
 					{
 						"ENG_name": "Rock Gnome",
 						"name": "岩石侏儒",
-						"source": "PHB"
+						"source": "PHB",
+						"translator": "不全书"
 					}
 				],
 				"_mod": {
@@ -6963,7 +7066,8 @@
 							]
 						}
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"C",

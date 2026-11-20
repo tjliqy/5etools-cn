@@ -347,7 +347,8 @@
 			],
 			"subclassTitle": "神圣誓言",
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Paladin",
@@ -809,7 +810,8 @@
 			],
 			"subclassTitle": "圣武士子职",
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Paladin",
@@ -821,7 +823,8 @@
 			"_copy": {
 				"ENG_name": "Paladin",
 				"name": "圣武士",
-				"source": "XPHB"
+				"source": "XPHB",
+				"translator": "威世智慧汉化组"
 			},
 			"includeSubclassesFrom": [
 				"圣武士|XPHB"
@@ -876,7 +879,8 @@
 				"奉献灵光|圣武士||奉献||7",
 				"纯净之魂|圣武士||奉献||15",
 				"至圣光轮|圣武士||奉献||20"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Oath of Devotion",
@@ -899,8 +903,10 @@
 					"srd": true,
 					"basicRules": true,
 					"reprintedAs": true
-				}
-			}
+				},
+				"translator": "不全书"
+			},
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Oath of the Ancients",
@@ -945,7 +951,8 @@
 				"守御灵光|圣武士||古贤||7",
 				"不灭哨卫|圣武士||古贤||15",
 				"上古斗士|圣武士||古贤||20"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Oath of the Ancients",
@@ -968,8 +975,10 @@
 					"srd": true,
 					"basicRules": true,
 					"reprintedAs": true
-				}
-			}
+				},
+				"translator": "不全书"
+			},
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Oath of Vengeance",
@@ -1014,7 +1023,8 @@
 				"坚韧复仇|圣武士||复仇||7",
 				"复仇之魂|圣武士||复仇||15",
 				"复仇天使|圣武士||复仇||20"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Oath of Vengeance",
@@ -1037,8 +1047,10 @@
 					"srd": true,
 					"basicRules": true,
 					"reprintedAs": true
-				}
-			}
+				},
+				"translator": "不全书"
+			},
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Oathbreaker",
@@ -1534,7 +1546,8 @@
 				"卫护斩|圣武士|XPHB|奉献|XPHB|15",
 				"至圣光轮|圣武士|XPHB|奉献|XPHB|20"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Oath of Glory",
@@ -1577,7 +1590,8 @@
 				"辉煌防御|圣武士|XPHB|荣耀|XPHB|15",
 				"现世传说|圣武士|XPHB|荣耀|XPHB|20"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Oath of the Ancients",
@@ -1620,7 +1634,8 @@
 				"不灭哨卫|圣武士|XPHB|古贤|XPHB|15",
 				"上古斗士|圣武士|XPHB|古贤|XPHB|20"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Oath of Vengeance",
@@ -1663,7 +1678,8 @@
 				"复仇之魂|圣武士|XPHB|复仇|XPHB|15",
 				"复仇天使|圣武士|XPHB|复仇|XPHB|20"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Oath of the Noble Genies",
@@ -1722,7 +1738,8 @@
 				"source": "XPHB",
 				"shortName": "奉献",
 				"className": "圣武士",
-				"classSource": "XPHB"
+				"classSource": "XPHB",
+				"translator": "威世智慧汉化组"
 			},
 			"translator": "Kiwee"
 		},
@@ -1803,7 +1820,8 @@
 				"source": "XPHB",
 				"shortName": "复仇",
 				"className": "圣武士",
-				"classSource": "XPHB"
+				"classSource": "XPHB",
+				"translator": "威世智慧汉化组"
 			},
 			"translator": "Kiwee"
 		}
@@ -1821,7 +1839,8 @@
 			"entries": [
 				"强大的邪恶存在于你有如带毒的香气，而强大的善良光环于你则如仙乐般悠扬。你可以使用一个动作扩展你的意识，以侦测此类势力。直到你下回合结束前，你可以对身边60尺范围内进行感测，任何未对你处在{@quickref 掩护||3||全身掩护}状态的天界生物、邪魔或不死生物都将被你定位。你感应到范围内生物的种类（天界生物、邪魔、不死生物），不过并不能精确指明（比如\"吸血鬼伯爵施特拉德·冯·扎洛维奇Vampire Count Strahd von Zarovich\"）。在同样的范围内，你也可以侦测任何受到{@spell 圣居}一类的法术祝福或亵渎的地点或物件。",
 				"该特性的可用次数等于1＋你的魅力调整值。而已消耗的特性使用次数，则可以通过完成一次长休进行恢复。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Lay on Hands",
@@ -1837,7 +1856,8 @@
 				"你可以用一个动作触碰一个生物，并抽取治疗能量池中的能量恢复该生物的生命值，其恢复量最多等于你治疗能量池中剩余的治疗量。",
 				"此外，你也可以使用5点治疗量治愈目标生物身上的一种疾病，或者祛除一种中毒效应。你可以在一次圣疗中治愈复数的疾病并祛除复数的毒素，但你需要为每一种疾病和毒素分别支付治疗量。",
 				"该职业特性对不死生物和构装生物无效。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Divine Smite",
@@ -1850,7 +1870,8 @@
 			"level": 2,
 			"entries": [
 				"第2级起，你使用近战武器攻击命中一个生物时，可以消耗一枚法术位，并对目标造成除武器伤害外附加的光耀伤害。1环法术位时，额外伤害的数值为{@damage 2d8}；更高法术位时，每比1环高一环就额外增加{@damage 1d8}，其最高值为{@damage 5d8}。如果目标是不死生物或邪魔，则该伤害将再额外增加{@damage 1d8}，至高提升到{@damage 6d8}。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Fighting Style",
@@ -1897,7 +1918,8 @@
 						}
 					]
 				}
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Spellcasting",
@@ -1953,7 +1975,8 @@
 						"你可用{@item 圣徽|phb}作为施展你圣武士法术的法器。"
 					]
 				}
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Channel Divinity",
@@ -1968,7 +1991,8 @@
 				"你的誓言使你获得引导神所授神圣能量的能力，引导的能量将用以实现各种魔法效应。誓言赋予的相应效应，可以参考相关誓言的描述内容。",
 				"引导神力时，神力最终产生的效应由你自行选择。引导神力后，你必须完成一次短休或长休才能再次使用该特性。",
 				"某些引导神力的效应需要豁免，其豁免DC等于你的圣武士法术豁免DC。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Channel Divinity: Harness Divine Power",
@@ -1999,7 +2023,8 @@
 			"level": 3,
 			"entries": [
 				"第3级起，你体内涌动的神圣魔法使你免疫疾病。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Sacred Oath",
@@ -2040,7 +2065,8 @@
 						"如果圣武士自愿打破誓言，又没有任何悔过的迹象，后果可能就严重了。根据DM的不同考量，一个不知悔过的圣武士可能会被迫放弃圣武士等级并选择其他职业，或者也可以选用《城主指南》中关于破誓圣武士的选项。"
 					]
 				}
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Ability Score Improvement",
@@ -2054,7 +2080,8 @@
 			"entries": [
 				"当你达到4级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
 				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Martial Versatility",
@@ -2081,7 +2108,8 @@
 			"level": 5,
 			"entries": [
 				"第5级起，你在自己回合内执行{@action 攻击}动作时可以攻击两次而非一次。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Aura of Protection",
@@ -2095,7 +2123,8 @@
 			"entries": [
 				"第6级起，你与友方生物在你身边10尺内进行豁免检定时，可以将你的魅力调整值作为加值加在其豁免结果上（至少为 +1）。提供该加值时你必须保持意识清醒。",
 				"第18级起，该灵光的作用范围扩展至30尺。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Sacred Oath feature",
@@ -2108,7 +2137,8 @@
 			"level": 7,
 			"entries": [
 				"你将在第7级时获得所选圣誓的相应特性。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Ability Score Improvement",
@@ -2122,7 +2152,8 @@
 			"entries": [
 				"当你达到第8级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过该特性让属性超过20。",
 				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Aura of Courage",
@@ -2136,7 +2167,8 @@
 			"entries": [
 				"第10级起，你和10尺范围内的友方生物不会陷入{@condition 恐慌}。提供该增益时你必须保持意识清醒。",
 				"第18级起，该灵光的作用范围扩展至30尺。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Improved Divine Smite",
@@ -2149,7 +2181,8 @@
 			"level": 11,
 			"entries": [
 				"第11级起，你体内充盈的公正之力使你的近战武器打击中携带着神圣的力量。当你使用近战武器命中一个生物时，该生物将额外受到{@damage 1d8}光耀伤害。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Ability Score Improvement",
@@ -2163,7 +2196,8 @@
 			"entries": [
 				"当你达到第12级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过该特性让属性超过20。",
 				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Cleansing Touch",
@@ -2177,7 +2211,8 @@
 			"entries": [
 				"第14级起，你可以用动作触碰你自身或一个自愿生物，以中止该目标身上的一个法术效应。",
 				"该特性的可用次数等于你的魅力调整值（至少一次）。而已消耗的特性使用次数则可以通过完成一次长休进行恢复。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Sacred Oath feature",
@@ -2190,7 +2225,8 @@
 			"level": 15,
 			"entries": [
 				"在15级时获得所选圣誓的相应特性。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Ability Score Improvement",
@@ -2204,7 +2240,8 @@
 			"entries": [
 				"当你达到16级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
 				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Aura improvements",
@@ -2217,7 +2254,8 @@
 			"level": 18,
 			"entries": [
 				"第18级起，守护灵光的作用范围扩展至30尺。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Ability Score Improvement",
@@ -2231,7 +2269,8 @@
 			"entries": [
 				"当你达到19级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
 				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Sacred Oath feature",
@@ -2244,7 +2283,8 @@
 			"level": 20,
 			"entries": [
 				"在20级时获得所选圣誓的相应特性。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Lay on Hands",
@@ -2260,7 +2300,8 @@
 				"你的触碰溢满祝福，可以医治伤口。你获得一个治疗能量池，其内的治疗能量在每次完成{@variantrule 长休|XPHB}后自动补满。治疗能量池储备的可恢复{@variantrule 生命值|XPHB}总值等于你的圣武士职业等级 ×5。",
 				"你能够以一个{@variantrule 附赠动作|XPHB}触碰一个生物（可以是你自己），并抽取治疗能量池中的能量恢复该生物的{@variantrule 生命值|XPHB}，其恢复量最多等于你治疗能量池中剩余的治疗量。",
 				"此外，你也可以使用 5 点{@variantrule 生命值|XPHB}治疗量来移除目标身上的{@condition 中毒|XPHB}状态，而非恢复{@variantrule 生命值|XPHB}。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Spellcasting",
@@ -2321,7 +2362,8 @@
 						}
 					]
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Weapon Mastery",
@@ -2336,7 +2378,8 @@
 			"entries": [
 				"你对武器的训练使你能够运用两种自选的你具有熟练的{@filter 武器|items|type=简易武器;军用武器}的{@variantrule 武器精通词条|XPHB|精通词条}，例如{@item 长剑|XPHB|长剑}和{@item 标枪|XPHB|标枪}。",
 				"每当你完成一次{@variantrule 长休|XPHB}时，你可以改变你所选择的{@variantrule 武器精通词条|XPHB|精通词条}。比如你可以改为{@item 长戟|XPHB|长戟}和{@item 链枷|XPHB|链枷}。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Fighting Style",
@@ -2359,7 +2402,8 @@
 						}
 					]
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Paladin's Smite",
@@ -2373,7 +2417,8 @@
 			"level": 2,
 			"entries": [
 				"你始终准备着法术{@spell 至圣斩|XPHB} 。此外，你可以不消耗法术位地施展该法术一次，而后你必须完成一次{@variantrule 长休|XPHB}才能再次这么做。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Channel Divinity",
@@ -2398,7 +2443,8 @@
 						}
 					]
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Divine Sense",
@@ -2416,7 +2462,8 @@
 			},
 			"entries": [
 				"以一个{@variantrule 附赠动作|XPHB}，你可以扩展你的意识侦测天族，邪魔以及亡灵生物。持续 10 分钟内或直至你陷入{@condition 失能|XPHB}状态，你能感知到自身周围 60 尺内这些生物的位置，以及它们的生物类型。你也可以侦测任何受到{@spell 圣居|XPHB}一类的法术祝福或亵渎的地点或物件。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Paladin Subclass",
@@ -2440,7 +2487,8 @@
 						"如果你的圣武士主动打破了誓言且不愿悔改，请和DM沟通。你可能需要更换一个更合适的圣武士子职，甚至改换为其他职业。"
 					]
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Ability Score Improvement",
@@ -2454,7 +2502,8 @@
 			"level": 4,
 			"entries": [
 				"你获得{@feat 属性值提升|XPHB}专长或其他你满足条件的{@5etools 专长|feats.html}。如圣武士特性表所示，你还会在第8，第12，第16级时再次获得本特性。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Extra Attack",
@@ -2468,7 +2517,8 @@
 			"level": 5,
 			"entries": [
 				"当你在自己的回合执行{@action 攻击|XPHB}动作时，你可以发动两次攻击而非一次。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Faithful Steed",
@@ -2483,7 +2533,8 @@
 			"entries": [
 				"你能唤来异界坐骑的协助。你始终准备着法术{@spell 寻获坐骑|XPHB}。",
 				"此外，你可以不消耗法术位地施展该法术一次，而后你必须完成一次{@variantrule 长休|XPHB}才能再次这么做。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Aura of Protection",
@@ -2499,7 +2550,8 @@
 				"你散发出无形的保护性的灵光 ，覆盖源自你的 10 尺{@variantrule 光环 [效应区域]|XPHB|光环}区域。在你陷入{@condition 失能|XPHB}状态期间，此灵光失效。",
 				"你与灵光内盟友的豁免结果获得相当于你魅力调整值的加值（最少为 +1）。",
 				"如果同时存在有其他圣武士，一个生物同时也只能从一个守护灵光中获得增益。这个生物自己选择享受谁的灵光。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Subclass Feature",
@@ -2513,7 +2565,8 @@
 			"level": 7,
 			"entries": [
 				"你获得一个来自圣武士子职的特性。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Ability Score Improvement",
@@ -2527,7 +2580,8 @@
 			"level": 8,
 			"entries": [
 				"你获得{@feat 属性值提升|XPHB}专长或其它你满足条件的{@5etools 专长|feats.html}。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Abjure Foes",
@@ -2545,7 +2599,8 @@
 			},
 			"entries": [
 				"以一个{@action 魔法|XPHB}动作，你消耗一次引导神力使用次数让敌人被恐惧吞没。你高举{@item 圣徽|XPHB}或武器，选择位于你 60 尺内，数量至多等于你魅力调整值（最少为 1）的可见生物作为目标。每个目标必须成功通过一次感知豁免，否则陷入{@condition 恐慌|XPHB}状态，持续 1 分钟或直到其受到任何伤害为止。因此陷入{@condition 恐慌|XPHB}的生物每回合只能执行下列选项之一：移动、执行一个动作或执行一个{@variantrule 附赠动作|XPHB}。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Aura of Courage",
@@ -2559,7 +2614,8 @@
 			"level": 10,
 			"entries": [
 				"你与守护灵光内盟友获得对{@condition 恐慌|XPHB}状态的{@variantrule 免疫|XPHB}。陷入{@condition 恐慌|XPHB}的盟友进入灵光时，该状态在灵光内会暂时无效。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Radiant Strikes",
@@ -2573,7 +2629,8 @@
 			"level": 11,
 			"entries": [
 				"神圣之力充盈你身，连带你的武器也承载着超自然力量。当你使用近战武器或{@variantrule 徒手打击|XPHB}进行攻击检定并命中目标时，目标额外受到{@damage 1d8}点光耀伤害。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Ability Score Improvement",
@@ -2587,7 +2644,8 @@
 			"level": 12,
 			"entries": [
 				"你获得{@feat 属性值提升|XPHB}专长或其它你满足条件的{@5etools 专长|feats.html}。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Restoring Touch",
@@ -2601,7 +2659,8 @@
 			"level": 14,
 			"entries": [
 				"当你对一个生物使用圣疗时，你可以终止该生物身上以下一种或更多种类的状态：{@condition 目盲|XPHB}、{@condition 魅惑|XPHB}、{@condition 耳聋|XPHB}、{@condition 恐慌|XPHB}、{@condition 麻痹|XPHB}或{@condition 震慑|XPHB}。你每终止一个效应，都需要花费圣疗的 5 点{@variantrule 生命值|XPHB}治疗能量；这些治疗能量不会恢复该生物的{@variantrule 生命值|XPHB}。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Subclass Feature",
@@ -2615,7 +2674,8 @@
 			"level": 15,
 			"entries": [
 				"你获得一个来自圣武士子职的特性。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Ability Score Improvement",
@@ -2629,7 +2689,8 @@
 			"level": 16,
 			"entries": [
 				"你获得{@feat 属性值提升|XPHB}专长或其它你满足条件的{@5etools 专长|feats.html}。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Aura Expansion",
@@ -2643,7 +2704,8 @@
 			"level": 18,
 			"entries": [
 				"你的守护灵光的{@variantrule 光环 [效应区域]|XPHB|光环}区域现在提升至 30 尺。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Epic Boon",
@@ -2657,7 +2719,8 @@
 			"level": 19,
 			"entries": [
 				"你获得一项{@filter 传奇恩惠专长|feats|category=EB}专长或其他一项你选择的适用的{@5etools 专长|feats.html}。推荐选择{@feat 真实视觉之恩惠|XPHB} 。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Subclass Feature",
@@ -2671,7 +2734,8 @@
 			"level": 20,
 			"entries": [
 				"你获得一个来自圣武士子职的特性。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		}
 	],
 	"subclassFeature": [
@@ -2872,7 +2936,8 @@
 					"type": "refSubclassFeature",
 					"subclassFeature": "引导神力|圣武士||古贤||3"
 				}
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Channel Divinity",
@@ -2895,7 +2960,8 @@
 					"type": "refSubclassFeature",
 					"subclassFeature": "驱散无信者|圣武士||古贤||3"
 				}
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Nature's Wrath",
@@ -2914,7 +2980,8 @@
 			},
 			"entries": [
 				"你可以用引导神力特性唤起原初之力来诱捕敌人。作为一个动作，你可以让特殊的藤蔓生长并缠绕一个距离你10尺内，你能看见的生物。该生物必须进行一次力量或敏捷豁免（由其选择），豁免失败者将陷入{@condition 束缚}状态。此后，每当该生物结束其回合时，都可以再进行一次该豁免。一旦豁免成功，则该生物挣脱 {@condition 束缚}，藤蔓也就此消失。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Oath Spells",
@@ -2963,7 +3030,8 @@
 						]
 					]
 				}
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Tenets of the Ancients",
@@ -3030,7 +3098,8 @@
 						}
 					]
 				}
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Turn the Faithless",
@@ -3051,7 +3120,8 @@
 				"你可以用引导神力特性发出远古的圣言，使听到圣言的精类生物和邪魔感到痛苦。作为一个动作，你亮出圣徽，迫使身边30尺范围内能够听到你声音的所有精类生物或邪魔都进行一次感知豁免，豁免失败者将受到驱散，其效应持续1分钟或直至其受到任何伤害。",
 				"以该方式被驱散的生物必须花费其回合内的所有移动力尽量远离你，且无法主动靠近你30尺内。被驱散的生物无法执行反应，只能使用既有的{@action 疾走}动作或从任何妨碍其移动的效应中挣脱。该生物无路可走时将执行{@action 回避}动作。",
 				"如果被驱散生物的真实外形被幻术、变形、或其他效应掩盖，那么在被驱散后，它将显露出原形。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Aura of Warding",
@@ -3067,7 +3137,8 @@
 			"entries": [
 				"第7级起，强大的远古魔法眷顾着你，以至于在你身边形成了一道神秘的结界。你和距离你10尺以内的友善生物获得对法术伤害的抗性。",
 				"第18级起，该灵光的作用范围扩展至30尺。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Undying Sentinel",
@@ -3083,7 +3154,8 @@
 			"entries": [
 				"第15级起，你生命值降至0点，但尚未被直接杀死时，可以选择让你的生命值降到1点而不是0点。你必须完成一次长休后才能再次使用该能力。",
 				"此外，你不受任何衰老减益。也不会因为魔法效应而衰老。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Elder Champion",
@@ -3108,7 +3180,8 @@
 					]
 				},
 				"必须完成一次长休才能再次使用该特性。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Oath of Devotion",
@@ -3135,7 +3208,8 @@
 					"type": "refSubclassFeature",
 					"subclassFeature": "引导神力|圣武士||奉献||3"
 				}
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Channel Divinity",
@@ -3159,7 +3233,8 @@
 					"type": "refSubclassFeature",
 					"subclassFeature": "驱散不洁|圣武士||奉献||3"
 				}
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Oath Spells",
@@ -3209,7 +3284,8 @@
 						]
 					]
 				}
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Sacred Weapon",
@@ -3230,7 +3306,8 @@
 			"entries": [
 				"作为一个动作，你可以用引导神力特性向你正持握的一把武器注入正能量。随后1分钟内，你使用该武器进行攻击检定时可以加上你的魅力调整值（至少为+1）。该武器同时提供20尺半径的明亮光照，该范围外再延伸出20尺微光光照。如果该武器之前不是魔法武器，则在效应持续期间该武器将视为魔法武器。",
 				"你可以在你的回合中作为其他任何动作的一部分结束此效果。如果你不再持有或携带此武器，或如果你陷入{@condition 昏迷}状态，此效果结束。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Tenets of Devotion",
@@ -3311,7 +3388,8 @@
 						}
 					]
 				}
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Turn the Unholy",
@@ -3332,7 +3410,8 @@
 			"entries": [
 				"作为一个动作，你可以用引导神力特性亮出圣徽高喊祷言，以逐退不死生物和邪魔。你身边30尺范围内能够看见圣徽或能听到你祷言的不死生物或邪魔都必须进行一次感知豁免，豁免失败者将受到驱散，其效应持续1分钟或直至其受到任何伤害。",
 				"以该方式被驱散的生物必须花费其回合内的所有移动力尽量远离你，且无法主动靠近你30尺内。被驱散的生物无法执行反应，只能使用既有的{@action 疾走}动作或从任何妨碍其移动的效应中挣脱。该生物无路可走时将执行{@action 回避}动作。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Aura of Devotion",
@@ -3349,7 +3428,8 @@
 			"entries": [
 				"第7级起，你与友方生物在你身边10尺内不会被{@condition 魅惑}。你必须保持意识清醒才能提供该增益。",
 				"第18级起，该灵光的作用范围扩展至30尺。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Purity of Spirit",
@@ -3365,7 +3445,8 @@
 			"header": 2,
 			"entries": [
 				"第15级起，你会永远处于{@spell 防护善恶}的法术效应之下。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Holy Nimbus",
@@ -3384,7 +3465,8 @@
 				"在该明亮光照范围内开始其回合的每个敌对生物都将受到10点光耀伤害。",
 				"此外，在该特性持续时间内，你对抗不死生物或邪魔的法术时进行的豁免检定具有优势。",
 				"必须完成一次长休才能再次使用该特性。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Oath of Vengeance",
@@ -3410,7 +3492,8 @@
 					"type": "refSubclassFeature",
 					"subclassFeature": "引导神力|圣武士||复仇||3"
 				}
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Abjure Enemy",
@@ -3431,7 +3514,8 @@
 				"作为一个动作，你亮出圣徽，高喊一句斥责敌人的祷言，并使用引导神力特性。指定一个你能看见，且距离你60尺以内的生物。目标生物必须进行一次感知豁免，除非其免疫{@condition 恐慌}。邪魔和不死生物进行该豁免时具有劣势。",
 				"豁免失败者将在接下来的一分钟内陷入{@condition 恐慌}，直至其受到伤害。在{@condition 恐慌}状态下，目标生物的速度降至0，且不能从任何增加移动速度的效应中上获益。",
 				"豁免成功，则目标生物的速度在接下来的1分钟内减半，直至其受到伤害。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Channel Divinity",
@@ -3454,7 +3538,8 @@
 					"type": "refSubclassFeature",
 					"subclassFeature": "仇敌誓言|圣武士||复仇||3"
 				}
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Oath Spells",
@@ -3503,7 +3588,8 @@
 						]
 					]
 				}
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Tenets of Vengeance",
@@ -3570,7 +3656,8 @@
 						}
 					]
 				}
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Vow of Enmity",
@@ -3589,7 +3676,8 @@
 			},
 			"entries": [
 				"作为一个附赠动作，你可以立下一个仇敌誓言，宣誓歼灭一个你可以看到，且距离你10尺以内的生物，同时使用你的引导神力。在接下来的1分钟内，你对该生物发动攻击时进行的攻击检定具有优势，直至该生物的生命值降至0或者陷入{@condition 昏迷}状态。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Relentless Avenger",
@@ -3604,7 +3692,8 @@
 			"header": 2,
 			"entries": [
 				"第7级起，你超自然的专注力使你可以拦截敌人撤退。你以借机攻击中命中一个生物时，可以在该攻击后立刻移动至多相当于你速度一半的距离，本次移动是原反应的一部分。且本次移动不引起借机攻击。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Soul of Vengeance",
@@ -3619,7 +3708,8 @@
 			"header": 2,
 			"entries": [
 				"第15级起，你立下仇敌誓言时所宣誓之存在赐予你更大的力量以击倒敌人。一个受你仇敌誓言影响的生物发动攻击时，如果其身处你的近战武器攻击范围内，则你就可以用你的反应对其发动一次近战武器攻击。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Avenging Angel",
@@ -3642,7 +3732,8 @@
 					]
 				},
 				"必须完成一次长休才能再次使用该特性。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Oath of the Crown",
@@ -5376,7 +5467,8 @@
 			},
 			"entries": [
 				"以一个{@action 魔法|XPHB}动作，你可以消耗一次引导神力次数，唤出灵体藤蔓缠绕周围的生物。你选择你能看到的位于你 15 尺内的任意数量生物，令其必须通过一次力量豁免，失败陷入{@condition 束缚|XPHB}状态 1 分钟。被{@condition 束缚|XPHB}的生物可以在其回合结束时重复豁免，成功则不再受到此效应影响。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Oath of the Ancients",
@@ -5408,7 +5500,8 @@
 					"type": "refSubclassFeature",
 					"subclassFeature": "自然之怒|圣武士|XPHB|古贤|XPHB|3"
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Oath of the Ancients Spells",
@@ -5472,7 +5565,8 @@
 			"header": 2,
 			"entries": [
 				"强大的远古魔法眷顾着你，以至于在你身边形成了一道神秘的结界，阻挡着来自物质位面外的能量；你和位于你守护灵光内的盟友获得对暗蚀，心灵以及光耀伤害的{@variantrule 抗性|XPHB}。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Undying Sentinel",
@@ -5488,7 +5582,8 @@
 			"entries": [
 				"当你{@variantrule 生命值|XPHB}降至 0，但尚未被直接杀死时，可以选择让你的{@variantrule 生命值|XPHB|生命值}降到 1 而不是 0，然后你再恢复相当于你圣武士等级三倍的{@variantrule 生命值|XPHB}。该能力一经使用，直至完成{@variantrule 长休|XPHB}你都无法再次使用。",
 				"此外，你不会因为魔法效应而衰老，你的外表也会停止老去。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Elder Champion",
@@ -5563,7 +5658,8 @@
 					"type": "refSubclassFeature",
 					"subclassFeature": "神圣武器|圣武士|XPHB|奉献|XPHB|3"
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Oath of Devotion Spells",
@@ -5636,7 +5732,8 @@
 				"当你执行{@action 攻击|XPHB}动作时，你可以消耗一次你的引导神力次数，为你持握的一把近战武器注入正能量。随后 10 分钟或你再次使用此特性为止，你使用该武器进行的攻击检定可以加上你的魅力调整值（至少为 +1），且每次命中时可以选择是造成正常伤害或者是光耀伤害。",
 				"该武器同时提供半径 20 尺的{@variantrule 明亮光照|XPHB}以及额外 20 尺{@variantrule 微光光照|XPHB}。",
 				"你可以提前终止此效应（无需动作）。当你不再携带这把武器，此效应同样终止。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Aura of Devotion",
@@ -5653,7 +5750,8 @@
 			"header": 2,
 			"entries": [
 				"你与位于你守护灵光内的盟友具有{@condition 魅惑|XPHB}{@variantrule 免疫|XPHB}。陷入{@condition 魅惑|XPHB}的盟友进入灵光时，该状态在灵光内会暂时无效。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Smite of Protection",
@@ -5670,7 +5768,8 @@
 			"header": 2,
 			"entries": [
 				"你现在能让魔法斩击散发出保护性的能量。每当你施展{@spell 至圣斩|XPHB}时，直到你的下个回合开始为止，你的灵光获得以下增益：身处你的守护灵光期间，你和你的盟友具有{@variantrule 掩护|XPHB|半身掩护}。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Holy Nimbus",
@@ -5711,7 +5810,8 @@
 						"你的灵光内变为{@variantrule 明亮光照|XPHB}，视为阳光。"
 					]
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Inspiring Smite",
@@ -5729,7 +5829,8 @@
 			},
 			"entries": [
 				"当你施展{@spell 至圣斩|XPHB}后，你可以立即消耗一次你的引导神力次数，使3 0 尺内由你选择的生物或你自身获得{@variantrule 临时生命值|XPHB}。这些生物共获得的{@variantrule 临时生命值|XPHB}等同于{@dice 2d8} + 你的圣武士等级，你可以为其随意分配这些临时生命值。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Oath of Glory",
@@ -5765,7 +5866,8 @@
 					"type": "refSubclassFeature",
 					"subclassFeature": "绝伦健将|圣武士|XPHB|荣耀|XPHB|3"
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Oath of Glory Spells",
@@ -5832,7 +5934,8 @@
 			},
 			"entries": [
 				"以一个{@variantrule 附赠动作|XPHB}，你可以消耗一次引导神力次数以增强运动能力。1 小时内，你在力量（{@skill 运动|XPHB}）检定和敏捷（{@skill 特技|XPHB}）检定上获得{@variantrule 优势|XPHB}，且你跳远和跳高的距离增加 10 尺（你依然为此正常消耗移动力）。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Aura of Alacrity",
@@ -5848,7 +5951,8 @@
 			"entries": [
 				"你的速度增加 10 尺。",
 				"此外，每个在自己回合第一次进入你守护灵光内的盟友，或在其内开始回合的盟友，{@variantrule 速度|XPHB}提升 10 尺，直到其下个回合结束为止。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Glorious Defense",
@@ -5864,7 +5968,8 @@
 			"entries": [
 				"你能在防御中转守为攻，对敌人发起突然袭击。当你或位于你 10 尺内一个你可见的生物成为一次攻击的目标并被击中时，你可以用{@variantrule 反应|XPHB}使其获得一定的AC加值，此举可能使该次攻击改为失手。此加值等同于你的魅力调整值（至少为 +1）。若该次攻击失手，且攻击者在你的武器触及范围内，你可以用武器对其进行一次攻击，这次攻击视为{@variantrule 反应|XPHB}的一部分。",
 				"你能使用此特性的次数等同于你的魅力调整值（最少 1 次），你在完成一次{@variantrule 长休|XPHB}后重获所有消耗的次数。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Living Legend",
@@ -5903,7 +6008,8 @@
 						"每自己回合一次，当你进行一次武器攻击但失手，你可以使其改为命中。"
 					]
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Oath of Vengeance",
@@ -5935,7 +6041,8 @@
 					"type": "refSubclassFeature",
 					"subclassFeature": "仇敌誓言|圣武士|XPHB|复仇|XPHB|3"
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Oath of Vengeance Spells",
@@ -6003,7 +6110,8 @@
 			"entries": [
 				"当你执行{@action 攻击|XPHB}动作时，你可以消耗一次你的引导神力次数，对一个你能看见的位于你 30 尺内的生物立下仇敌誓言。你在接下来 1 分钟内，对该生物的攻击检定具有{@variantrule 优势|XPHB}。",
 				"如果在誓言结束前，该生物的{@variantrule 生命值|XPHB}就降至 0，你可以将誓言的目标换为另一个你可见的位于你 30 尺的生物（无需动作）。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Relentless Avenger",
@@ -6018,7 +6126,8 @@
 			"header": 2,
 			"entries": [
 				"你超自然的专注力使你可以拦截敌人撤退。你以{@action 借机攻击|XPHB}中命中一个生物时，可以将其{@variantrule 速度|XPHB}降为 0，直到当前回合结束为止。且你在该攻击后立刻移动至多相当于你{@variantrule 速度|XPHB}一半的距离，本次移动是原{@variantrule 反应|XPHB}的一部分，且不引发{@action 借机攻击|XPHB|借机攻击}。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Soul of Vengeance",
@@ -6033,7 +6142,8 @@
 			"header": 2,
 			"entries": [
 				"受你仇敌誓言影响的生物在发动一次攻击以后，无论是否命中，只要其位于你的触及内，你就能够立即以{@variantrule 反应|XPHB}对其进行一次近战攻击。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Avenging Angel",
@@ -6064,7 +6174,8 @@
 						"每个在灵光范围内开始其回合的敌人，必须成功通过一个感知豁免，否则将陷入{@condition 恐慌|XPHB}状态 1 分钟，或直到其受到伤害。此外，对被{@condition 恐慌|XPHB}生物发动的{@action 攻击|XPHB}检定具有{@variantrule 优势|XPHB}。"
 					]
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		}
 	]
 }

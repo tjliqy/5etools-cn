@@ -309,7 +309,8 @@
 			],
 			"subclassTitle": "原初道途",
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Barbarian",
@@ -641,7 +642,8 @@
 			],
 			"subclassTitle": "野蛮人子职",
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "威世智慧汉化组"
 		}
 	],
 	"subclass": [
@@ -663,7 +665,8 @@
 				"无我狂暴|野蛮人||狂战士||6",
 				"威慑之姿|野蛮人||狂战士||10",
 				"报偿|野蛮人||狂战士||14"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Path of the Berserker",
@@ -686,8 +689,10 @@
 					"srd": true,
 					"basicRules": true,
 					"reprintedAs": true
-				}
-			}
+				},
+				"translator": "不全书"
+			},
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Path of the Totem Warrior",
@@ -724,7 +729,8 @@
 				"精魂行者|野蛮人||图腾武者||10",
 				"图腾同调|野蛮人||图腾武者||14"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Path of the Totem Warrior",
@@ -747,7 +753,8 @@
 					"srd": true,
 					"basicRules": true,
 					"reprintedAs": true
-				}
+				},
+				"translator": "不全书"
 			},
 			"fluff": {
 				"_subclassFluff": {
@@ -756,9 +763,11 @@
 					"source": "PHB",
 					"shortName": "图腾武者",
 					"className": "野蛮人",
-					"classSource": "PHB"
+					"classSource": "PHB",
+					"translator": "不全书"
 				}
-			}
+			},
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Path of the Battlerager",
@@ -1138,7 +1147,8 @@
 				"报偿|野蛮人|XPHB|狂战士|XPHB|10",
 				"威慑之姿|野蛮人|XPHB|狂战士|XPHB|14"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Path of the Wild Heart",
@@ -1172,7 +1182,8 @@
 				"自然语者|野蛮人|XPHB|兽心|XPHB|10",
 				"兽力威能|野蛮人|XPHB|兽心|XPHB|14"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Path of the World Tree",
@@ -1189,7 +1200,8 @@
 				"根击千钧|野蛮人|XPHB|世界树|XPHB|10",
 				"世界树之奇旅|野蛮人|XPHB|世界树|XPHB|14"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Path of the Zealot",
@@ -1206,7 +1218,8 @@
 				"狂热威仪|野蛮人|XPHB|狂热者|XPHB|10",
 				"神之狂暴|野蛮人|XPHB|狂热者|XPHB|14"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Path of the Elements",
@@ -1303,7 +1316,8 @@
 				"拥有施法能力的角色无法在狂暴持续期间施展法术或进行法术专注。",
 				"你的狂暴状态维持1分钟。如果你在狂暴其间陷入{@condition 昏迷} ，或者，如果你从自己上回合结束开始到本回合结束时都未攻击任何敌对生物也未受到伤害，则狂暴提前结束。你也可以在自己回合里以一个附赠动作主动结束狂暴状态。",
 				"一旦你使用狂暴的次数达到了你的野蛮人等级所允许的最大次数，你必须完成一次长休才能再次使用狂暴。你在1级时可以狂暴2次，3级时3次，6级时4次，12级时5次，17级时6次。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Unarmored Defense",
@@ -1316,7 +1330,8 @@
 			"level": 1,
 			"entries": [
 				"未着装任何护甲时，你的AC等于10＋你的敏捷调整值＋你的体质调整值。使用盾牌不会影响你从此特性获益。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Danger Sense",
@@ -1329,7 +1344,8 @@
 			"level": 2,
 			"entries": [
 				"第2级时，你获得对周遭异常情况超乎寻常的感测力，让你能先一步脱离危险。在受到你能看见的效应（诸如陷阱和法术）影响时，你对其进行的敏捷豁免具有优势。你无法在{@condition 目盲}、{@condition 耳聋}或是{@condition 失能}的状态下从此特性获益。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Reckless Attack",
@@ -1342,7 +1358,8 @@
 			"level": 2,
 			"entries": [
 				"第2级起，你可以抛弃一切防御的执念进行狂乱的攻击。你在自己回合内发动第一次攻击时，可以选择发动鲁莽攻击。使用此特性后，你本回合内所有使用力量值发动的近战武器攻击具有优势。此后，所有对你发动的攻击检定也将具有优势，且该优势持续存在至你的下个回合。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Primal Knowledge",
@@ -1369,7 +1386,8 @@
 			"level": 3,
 			"entries": [
 				"第3级时，你选择一种道途来塑造你狂怒时的特质。随后，你将在第3、第6、第10、第14级时获得所选道途的相应特性。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Ability Score Improvement",
@@ -1383,7 +1401,8 @@
 			"entries": [
 				"当你达到4级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
 				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Extra Attack",
@@ -1396,7 +1415,8 @@
 			"level": 5,
 			"entries": [
 				"第5级起，你在自己回合内执行{@action 攻击}动作时可以攻击两次而非一次。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Fast Movement",
@@ -1409,7 +1429,8 @@
 			"level": 5,
 			"entries": [
 				"第5级起，你在未着装重甲时速度提升10尺。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Path Feature",
@@ -1422,7 +1443,8 @@
 			"level": 6,
 			"entries": [
 				"第6时，获得所选道途的相应特性。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Feral Instinct",
@@ -1436,7 +1458,8 @@
 			"entries": [
 				"第7级时，你的直觉变的异常敏锐，从而使你骰先攻时具有优势。",
 				"此外，如果你在战斗开始时{@status 突袭}但并未陷入{@condition 失能}，则你仍可以在你的第一回合正常行动。不过你必须在那一回合进行其它任何行动前先进入狂暴。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Instinctive Pounce",
@@ -1464,7 +1487,8 @@
 			"entries": [
 				"当你达到第8级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过该特性让属性超过20。",
 				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Brutal Critical (1 die)",
@@ -1478,7 +1502,8 @@
 			"entries": [
 				"第9级起，计算近战攻击的重击伤害时，你可以额外骰一枚所用武器的伤害骰。",
 				"第13级时，你可以额外骰两枚；第17级时，你可以额外骰三枚。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Path feature",
@@ -1491,7 +1516,8 @@
 			"level": 10,
 			"entries": [
 				"第10时，获得所选道途的相应特性。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Relentless Rage",
@@ -1505,7 +1531,8 @@
 			"entries": [
 				"从11级开始，你的狂暴能让你在遭受重创时继续战斗。当你在狂暴状态下生命值降至0但未直接死亡时，你可以进行一次{@dc 10}的体质豁免检定。若成功，则改为生命值降至1。",
 				"第一次使用此特性后，每当你再次使用此特性时其体质豁免DC提高5。在你完成一次短休或长休后其DC重置为10。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Ability Score Improvement",
@@ -1519,7 +1546,8 @@
 			"entries": [
 				"当你达到第12级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过该特性让属性超过20。",
 				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Brutal Critical (2 dice)",
@@ -1533,7 +1561,8 @@
 			"entries": [
 				"在13级时，计算近战攻击的重击伤害时，你可以额外骰两枚所用武器的伤害骰。",
 				"第17级时，你可以额外骰三枚。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Path feature",
@@ -1546,7 +1575,8 @@
 			"level": 14,
 			"entries": [
 				"第14时，获得所选道途的相应特性。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Persistent Rage",
@@ -1559,7 +1589,8 @@
 			"level": 15,
 			"entries": [
 				"第15级起，你狂暴期间的情绪高涨得难以抑制，以至于只有当你陷入{@condition 昏迷}或是主动终止才能使你的狂暴提前结束。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Ability Score Improvement",
@@ -1573,7 +1604,8 @@
 			"entries": [
 				"当你达到16级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
 				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Brutal Critical (3 dice)",
@@ -1586,7 +1618,8 @@
 			"level": 17,
 			"entries": [
 				"在13级时，计算近战攻击的重击伤害时，你可以额外骰三枚所用武器的伤害骰。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Indomitable Might",
@@ -1599,7 +1632,8 @@
 			"level": 18,
 			"entries": [
 				"第18级起，你进行力量检定的结果低于你的力量值时，可以直接使用力量值作为检定结果。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Ability Score Improvement",
@@ -1613,7 +1647,8 @@
 			"entries": [
 				"当你达到19级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
 				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Primal Champion",
@@ -1626,7 +1661,8 @@
 			"level": 20,
 			"entries": [
 				"第20级时，你的存在即是野性之力的具现。你的力量和体质各提升4。并且你这两项属性的上限变为24。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Rage",
@@ -1696,7 +1732,8 @@
 					]
 				},
 				"每当狂暴被延长，都会持续至你的下个回合结束。你至多可以维持狂暴 10 分钟。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Unarmored Defense",
@@ -1710,7 +1747,8 @@
 			"level": 1,
 			"entries": [
 				"你未着装任何护甲期间，你的基础{@variantrule 护甲等级|XPHB}等于10+你的敏捷调整值+你的体质调整值。你可以使用{@item 盾牌|XPHB}而仍然从此特性获益。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Weapon Mastery",
@@ -1725,7 +1763,8 @@
 			"entries": [
 				"你对武器的训练使你获得{@variantrule 武器精通词条|XPHB|精通词条}：包括两种自选的{@filter 简易|items|type=简易武器;近战武器=sand}或{@filter 军用近战武器|items|type=军用武器;近战武器=sand}的精通属性，例如{@item 巨斧|XPHB|巨斧}和{@item 手斧|XPHB|手斧}。当你完成一次{@variantrule 长休|XPHB}后，你可以重新演练武器技巧，来改变你所选择的其中一个武器类型。",
 				"当你获得特定的野蛮人等级时，你还可以使用更多种类武器的{@variantrule 武器精通词条|XPHB|精通词条}，具体数据见野蛮人特性表中\"武器精通\"一栏。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Danger Sense",
@@ -1739,7 +1778,8 @@
 			"level": 2,
 			"entries": [
 				"当非常事态发生时，一种不可思议的感觉降临你的心头，指引你更好的躲避危机。只要你未陷入{@condition 失能|XPHB}状态，你的敏捷豁免检定就具有{@variantrule 优势|XPHB}。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Reckless Attack",
@@ -1753,7 +1793,8 @@
 			"level": 2,
 			"entries": [
 				"你可以抛弃一切对防御的顾虑来发起更加狂乱的攻击。你在自己回合中进行第一次攻击检定时，可以不顾一切地发起攻击。若如此做，直到你的下个回合开始时，你使用力量进行的攻击检定具有{@variantrule 优势|XPHB}，但在此期间所有以你为目标的攻击检定也具有{@variantrule 优势|XPHB}。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Barbarian Subclass",
@@ -1767,7 +1808,8 @@
 			"level": 3,
 			"entries": [
 				"你选择获得一项野蛮人子职。子职是一种特化，在特定的野蛮人等级给予你对应的独特能力。此后你将获得你所选的子职所有能力......只要其所需等级等于或低于你的野蛮人等级。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Primal Knowledge",
@@ -1782,7 +1824,8 @@
 			"entries": [
 				"除了 1 级选择的技能以外，你可以从野蛮人技能表中额外获得一个技能的熟练。",
 				"此外，你的狂暴激活期间，你可以在尝试完成特定的事项时与原初之力相连。每当你使用以下技能进行一次属性检定时，你可以使用力量进行检定而非通常使用的其他属性：{@skill 特技|XPHB}，{@skill 威吓|XPHB}，{@skill 察觉|XPHB}，{@skill 隐匿|XPHB}或{@skill 求生|XPHB}。当你使用这项能力时，你的力量值代表着一种环绕你身的原初之力，强化了你的灵敏度、气质和感知力。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Ability Score Improvement",
@@ -1796,7 +1839,8 @@
 			"level": 4,
 			"entries": [
 				"你获得{@feat 属性值提升|XPHB}专长或其它你满足条件的{@5etools 专长|feats.html}。如野蛮人特性表所示，你还会在第8，第12，第16级时再次获得本特性。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Extra Attack",
@@ -1810,7 +1854,8 @@
 			"level": 5,
 			"entries": [
 				"当你在自己的回合执行{@action 攻击|XPHB}动作时，你可以发动两次攻击而非一次。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Fast Movement",
@@ -1824,7 +1869,8 @@
 			"level": 5,
 			"entries": [
 				"当你未着装重甲时，你的速度增加 10 尺。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Subclass Feature",
@@ -1838,7 +1884,8 @@
 			"level": 6,
 			"entries": [
 				"你获得了来自你野蛮人子职的特性。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Feral Instinct",
@@ -1852,7 +1899,8 @@
 			"level": 7,
 			"entries": [
 				"你的直觉变得格外敏锐。你获得{@variantrule 优势|XPHB}（仅限{@variantrule 先攻|XPHB}检定）。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Instinctive Pounce",
@@ -1866,7 +1914,8 @@
 			"level": 7,
 			"entries": [
 				"作为你进入狂暴的{@variantrule 附赠动作|XPHB}的一部分，你可以移动至多等于你{@variantrule 速度|XPHB}一半的距离。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Ability Score Improvement",
@@ -1880,7 +1929,8 @@
 			"level": 8,
 			"entries": [
 				"你获得{@feat 属性值提升|XPHB}专长或其它你满足条件的{@5etools 专长|feats.html}。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Brutal Strike",
@@ -1915,7 +1965,8 @@
 						}
 					]
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Subclass Feature",
@@ -1929,7 +1980,8 @@
 			"level": 10,
 			"entries": [
 				"你获得了来自你野蛮人子职的特性。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Relentless Rage",
@@ -1944,7 +1996,8 @@
 			"entries": [
 				"你狂暴的力量让你即使身受重伤也能持续战斗。你的狂暴激活期间，如果你的{@variantrule 生命值|XPHB}降至 0 且并未立即死亡，则你可以进行一次{@dc 10}的体质豁免。成功则你的{@variantrule 生命值|XPHB}将变为你野蛮人等级的两倍。",
 				"第一次使用此特性后，每当你再次使用此特性时其体质豁免DC提高 5。当你完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}后其DC重置为 10。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Ability Score Improvement",
@@ -1958,7 +2011,8 @@
 			"level": 12,
 			"entries": [
 				"你获得{@feat 属性值提升|XPHB}专长或其它你满足条件的{@5etools 专长|feats.html}。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Improved Brutal Strike",
@@ -1993,7 +2047,8 @@
 						}
 					]
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Subclass Feature",
@@ -2007,7 +2062,8 @@
 			"level": 14,
 			"entries": [
 				"你获得了来自你野蛮人子职的特性。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Persistent Rage",
@@ -2022,7 +2078,8 @@
 			"entries": [
 				"当你投掷{@variantrule 先攻|XPHB}时，你可以重获所有已使用的狂暴次数。你以此法重获狂暴次数后，直到完成一次{@variantrule 长休|XPHB}时，你都不能再这么做。",
 				"此外，你的狂暴是如此凶悍，现在你的狂暴可以持续 10 分钟，而你无需在每一轮中做任何事情来延长它。除非你处于{@condition 昏迷|XPHB}状态（不仅仅是{@condition 失能|XPHB}状态）或穿戴重甲时，你的狂暴会提前结束。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Ability Score Improvement",
@@ -2036,7 +2093,8 @@
 			"level": 16,
 			"entries": [
 				"你获得{@feat 属性值提升|XPHB}专长或其它你满足条件的{@5etools 专长|feats.html}。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Improved Brutal Strike",
@@ -2050,7 +2108,8 @@
 			"level": 17,
 			"entries": [
 				"你凶蛮打击的额外伤害提升至{@damage 2d10}。此外，每当你使用凶蛮打击特性时，你可以同时使用两种不同的凶蛮打击效应。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Indomitable Might",
@@ -2064,7 +2123,8 @@
 			"level": 18,
 			"entries": [
 				"如果你进行的力量检定或力量豁免检定的总值低于你的力量属性值，你可以使用你的力量属性值替代检定总值。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Epic Boon",
@@ -2078,7 +2138,8 @@
 			"level": 19,
 			"entries": [
 				"你获得了一个{@filter 传奇恩惠专长|feats|category=EB}，或者你选择另一个符合条件的{@5etools 专长|feats.html}。推荐选择{@feat 无敌攻势之恩惠|XPHB}。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Primal Champion",
@@ -2092,7 +2153,8 @@
 			"level": 20,
 			"entries": [
 				"你本身便是原初之力的象征。你的力量和体质各提升 4，你这两项属性的上限变为 25。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		}
 	],
 	"subclassFeature": [
@@ -2235,7 +2297,8 @@
 					"type": "refSubclassFeature",
 					"subclassFeature": "狂怒|野蛮人||狂战士||3"
 				}
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Frenzy",
@@ -2251,7 +2314,8 @@
 			"header": 1,
 			"entries": [
 				"从你第3级选择此道途起，你可以在进入狂暴的同时进入狂怒。使用此特性时，你可以在本回合之后狂暴持续时间内的每个回合里，以一个附赠动作发动一次近战武器攻击。而当本次狂暴终止时，你将提升一级{@condition 力竭}。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Mindless Rage",
@@ -2267,7 +2331,8 @@
 			"header": 2,
 			"entries": [
 				"第6级起，你在狂暴期间无法被{@condition 魅惑}或{@condition 恐慌}。如果你开始狂暴时已经陷入{@condition 魅惑}或{@condition 恐慌}，则该效应在你狂暴期间被压制。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Intimidating Presence",
@@ -2284,7 +2349,8 @@
 			"entries": [
 				"第10级起，你可以用一个动作展示自己的可怖姿态来恐吓他人。指定30尺内一个你能看见的生物。如果该生物能看见你或听见你的声音，则其必须进行一次感知豁免（DC为8＋你的熟练加值＋你的魅力调整值），豁免失败者将因此而陷入{@condition 恐慌}，并持续至你的下回合结束。在接下来的回合里，你可以通过使用动作来延长此效应的持续时间，使之持续至你此后一回合结束。如果{@condition 恐慌}的生物在结束其回合时离开你的视线范围，或是离开你60尺外，则此效应提前终止。",
 				"如果此生物成功通过此豁免，则你在随后的24小时内无法对该生物使用此特性。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Retaliation",
@@ -2300,7 +2366,8 @@
 			"header": 2,
 			"entries": [
 				"第14级起，身边5尺内敌人对你造成伤害时，你可以用反应对该生物发动一次近战武器攻击。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Bear",
@@ -2314,7 +2381,8 @@
 			"level": 3,
 			"entries": [
 				"狂暴期间，你获得对心灵伤害之外所有伤害类型的抗性。熊之精魄令你坚韧无匹，无惧于任何打击。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Eagle",
@@ -2328,7 +2396,8 @@
 			"level": 3,
 			"entries": [
 				"狂暴期间，如果你未着装重甲，则其他生物在对你进行借机攻击时进行的攻击检定具有劣势。另外，你在自己回合内可以用附赠动作执行{@action 疾走}动作。雕之精魄让你成为在战场中自由穿梭的猎杀者。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Elk",
@@ -2365,7 +2434,8 @@
 					"type": "refSubclassFeature",
 					"subclassFeature": "图腾精魄|野蛮人||图腾武者||3"
 				}
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Tiger",
@@ -2393,7 +2463,8 @@
 			"level": 3,
 			"entries": [
 				"狂暴期间，如果你周围5尺范围内有任何敌对生物，则你的盟友对这些生物发动近战攻击时的攻击检定具有优势。狼之精魄让你成为猎手中的领袖。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Spirit Seeker",
@@ -2408,7 +2479,8 @@
 			"header": 1,
 			"entries": [
 				"你追求融入自然之道，与动物为友。在你选择此道途的第3级时，你获得施展法术{@spell 野兽感官}与{@spell 动物交谈}的能力，但你只能以仪式的方式施展它们，相关法术描述见PHB{@book 第十章|PHB|10|仪式}。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Totem Spirit",
@@ -2450,7 +2522,8 @@
 						}
 					]
 				}
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Bear",
@@ -2464,7 +2537,8 @@
 			"level": 6,
 			"entries": [
 				"你拥有熊之巨力。你的载重（包括最大负重和最大举重）翻倍，并且你在推、拉、举和破坏物件时进行的力量检定具有优势。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Eagle",
@@ -2478,7 +2552,8 @@
 			"level": 6,
 			"entries": [
 				"你拥有雕之锐目。你可以轻易的看清1里之内的范围，细节之处与100尺距离内的影像一样清晰。此外，你在微光环境中进行感知（{@skill 察觉}）检定时不会具有劣势。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Elk",
@@ -2520,7 +2595,8 @@
 			"level": 6,
 			"entries": [
 				"你拥有狼之敏锐。你可以在用快速步调旅行的同时追踪其他生物，也可以在用正常步调旅行时保持隐匿。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Aspect of the Beast",
@@ -2561,7 +2637,8 @@
 						}
 					]
 				}
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Spirit Walker",
@@ -2576,7 +2653,8 @@
 			"header": 2,
 			"entries": [
 				"第10级时，你获得施展法术{@spell 问道自然}的能力，但你只能以仪式的方式施展它。施展此法术时，你所选的图腾兽会以精魄形态现身并提供你想要得到的那些信息。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Bear",
@@ -2590,7 +2668,8 @@
 			"level": 14,
 			"entries": [
 				"狂暴期间，如果身处你周边5尺内的任何敌对生物发动攻击，而其目标不是你或另一个具有此特性的生物，则该攻击的攻击检定具有劣势。无法看到你或听到你声音的生物，以及无法陷入{@condition 恐慌}的生物对该特性免疫。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Eagle",
@@ -2604,7 +2683,8 @@
 			"level": 14,
 			"entries": [
 				"狂暴期间，你获得等同于你移动速度的飞行速度。此特性只能用于短途冲刺。如果回合结束时你仍在空中且毫无凭依，则你将坠落。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Elk",
@@ -2646,7 +2726,8 @@
 			"level": 14,
 			"entries": [
 				"当你处于狂暴状态时，在你的回合中可以使用一个附赠动作，当你用近战武器攻击命中一个大型或更小的生物时，可以将其击倒{@condition 倒地}。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Totemic Attunement",
@@ -2687,7 +2768,8 @@
 						}
 					]
 				}
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Path of the Battlerager",
@@ -3803,7 +3885,8 @@
 					"type": "refSubclassFeature",
 					"subclassFeature": "狂怒|野蛮人|XPHB|狂战士|XPHB|3"
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Frenzy",
@@ -3819,7 +3902,8 @@
 			"header": 2,
 			"entries": [
 				"狂暴激活期间，在你使用鲁莽攻击的回合中，你基于力量的攻击首次命中时，对目标造成额外伤害。投掷等于你狂暴伤害加值数量的d6，将它们相加，即是你造成的额外伤害。额外伤害类型与此次攻击所使用的武器或{@variantrule 徒手打击|XPHB}造成的伤害类型相同。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Mindless Rage",
@@ -3835,7 +3919,8 @@
 			"header": 2,
 			"entries": [
 				"狂暴激活期间，你具有{@condition 魅惑|XPHB}与{@condition 恐慌|XPHB}状态的{@variantrule 免疫|XPHB}。当你进入狂暴时，若你已陷入{@condition 魅惑|XPHB}或{@condition 恐慌|XPHB}，你陷入的这些状态立即结束。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Retaliation",
@@ -3851,7 +3936,8 @@
 			"header": 2,
 			"entries": [
 				"当一名位于你 5 尺内的生物对你造成伤害时，你能够以{@variantrule 反应|XPHB}使用武器或{@variantrule 徒手打击|XPHB}对其发动一次近战攻击。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Intimidating Presence",
@@ -3868,7 +3954,8 @@
 			"entries": [
 				"以一个{@variantrule 附赠动作|XPHB}，你可以用你那令人魂消胆丧的面相，在原初之力的辅助下将恐惧打入他者内心。当你如此做时，每个位于以你为源点的 30 尺{@variantrule 光环 [效应区域]|XPHB|光环}区域内你所选择的生物必须进行一次感知豁免检定（{@dc 8} + 你的力量调整值 + 你的{@variantrule 熟练|XPHB|熟练加值}）。豁免失败则陷入{@condition 恐慌|XPHB}状态，持续 1 分钟。陷入{@condition 恐慌|XPHB}的生物在其每个回合结束时重复豁免，成功则终止其身上的该效应。",
 				"此特性一经使用，直至完成{@variantrule 长休|XPHB}你都无法再次使用。你也可以消耗一次狂暴使用次数（无需动作）来重置此特性的使用权。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Path of the Wild Heart",
@@ -3891,7 +3978,8 @@
 					"type": "refSubclassFeature",
 					"subclassFeature": "兽性狂暴|野蛮人|XPHB|兽心|XPHB|3"
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Animal Speaker",
@@ -3906,7 +3994,8 @@
 			"header": 2,
 			"entries": [
 				"你可以施展法术{@spell 野兽感官|XPHB}与{@spell 动物交谈|XPHB}，仅限仪式施展。感知是你这些法术的施法属性。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Rage of the Wilds",
@@ -3945,7 +4034,8 @@
 						"狂暴激活期间，你的盟友对位于你 5 尺内的敌人进行的攻击检定具有{@variantrule 优势|XPHB}。"
 					]
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Aspect of the Wilds",
@@ -4000,7 +4090,8 @@
 			"header": 2,
 			"entries": [
 				"你可以施展法术{@spell 问道自然|XPHB}，仅限{@variantrule 仪式|XPHB}施展。感知是你该法术的施法属性。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Power of the Wilds",
@@ -4059,7 +4150,8 @@
 					"type": "refSubclassFeature",
 					"subclassFeature": "圣树活力|野蛮人|XPHB|世界树|XPHB|3"
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Vitality of the Tree",
@@ -4095,7 +4187,8 @@
 						}
 					]
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Branches of the Tree",
@@ -4110,7 +4203,8 @@
 			"header": 2,
 			"entries": [
 				"你的狂暴激活期间，每当你可见的位于你 30 尺内的生物的回合开始时，你能够以{@variantrule 反应|XPHB}在其周围召唤世界树的灵体枝条。目标必须成功通过一次力量豁免（{@dc 8} + 你的力量调整值 + 你的{@variantrule 熟练|XPHB|熟练加值}），否则将被传送到位于你5尺内的你可见的未占据空间内或距离你最近的你可见的未占据空间内。目标被你传送后，你可以令其{@variantrule 速度|XPHB}降为 0，持续至当前回合结束。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Battering Roots",
@@ -4125,7 +4219,8 @@
 			"header": 2,
 			"entries": [
 				"世界树的卷须将你的武器延长。你的回合内，你持用的任何{@filter 具有重型或多用词条的近战武器|items|type=近战武器|property=重型;两用}的触及增加 10 尺。当你在你的回合内以该武器命中时，除了激活这把武器本身具有的其他精通词条外，你还可以激活{@itemMastery 推离|XPHB}或{@itemMastery 失衡|XPHB}精通词条。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Travel Along the Tree",
@@ -4141,7 +4236,8 @@
 			"entries": [
 				"当你激活狂暴时，你可以传送至多 60 尺的距离，到一处你可见的未占据空间中。在你的狂暴激活期间，你也能够以一个{@variantrule 附赠动作|XPHB}来进行传送。",
 				"此外，每次狂暴期间仅一次，你可以使传送的距离提升至 150 尺，并可以选择带上至多 6 个位于你 10 尺内的自愿生物同你一起传送。每个其他生物都将被传送至位于你目的地 10 尺内的你选择的未占据空间中。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Path of the Zealot",
@@ -4164,7 +4260,8 @@
 					"type": "refSubclassFeature",
 					"subclassFeature": "神之勇者|野蛮人|XPHB|狂热者|XPHB|3"
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Divine Fury",
@@ -4179,7 +4276,8 @@
 			"header": 1,
 			"entries": [
 				"你可以引导神性的怒火，将其注入打击之中。你的狂暴激活期间，你的每个回合中你首次以武器或{@variantrule 徒手打击|XPHB}命中的生物将受到等于{@damage 1d6} + 你野蛮人等级的一半（向下取整）的额外伤害。额外伤害的伤害类型为光耀或暗蚀，在每次造成伤害时由你选择伤害类型。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Warrior of the Gods",
@@ -4196,7 +4294,8 @@
 				"某个神圣实体对你施以援手以确保你总能继续战斗。你获得一个有着 4 枚d12的治疗池，你可以用其中的骰子治愈自身。以一个{@variantrule 附赠动作|XPHB}，你可以消耗治疗池中任意枚骰子来恢复你的{@variantrule 生命值|XPHB}。投掷所有你消耗的骰子，将它们相加，即是你以此恢复的生命值。",
 				"当你完成一次{@variantrule 长休|XPHB}时，你的治疗池重获所有已消耗的骰子。",
 				"治疗池中骰子的最大数量将会在你到达特定野蛮人等级时增加，分别为 6 级时增加至 5 枚，12 级时增加至 6 枚，17 级时增加至 7 枚。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Fanatical Focus",
@@ -4211,7 +4310,8 @@
 			"header": 2,
 			"entries": [
 				"每次狂暴期间仅一次，若你失败于某次豁免检定，你可以重骰这次检定并在检定中获得等于你的狂暴伤害加值的加值，你必须使用重骰后的结果。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Zealous Presence",
@@ -4227,7 +4327,8 @@
 			"entries": [
 				"以一个{@variantrule 附赠动作|XPHB}，你以满腔神圣能量发出战吼。选择至多十名位于你 60 尺内的生物，直至你的下个回合开始，他们的攻击检定和豁免检定具有{@variantrule 优势|XPHB}。",
 				"此特性一经使用，直至完成{@variantrule 长休|XPHB}你都无法再次使用。你也可以消耗一次狂暴使用次数（无需动作）来重置此特性的使用权。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Rage of the Gods",

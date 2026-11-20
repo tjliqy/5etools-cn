@@ -178,6 +178,14 @@ def unfinished_dependencies(
     connection: sqlite3.Connection, source_path: str, source_root: Path, target_repo: Path,
 ) -> list[str]:
     """Return queued parent paths which must be integrated before this source."""
+    # HOMEBREW_IGNORE_DEPS_FOR: comma-separated exact source paths whose declared
+    # _meta.dependencies are known vestigial (the sole reference to the dependency
+    # source is the declaration itself, so integrating first creates no dangling
+    # links). Used to break mutual dependency declarations inside a re-release
+    # family; every use must be justified against the source content.
+    ignored = {p.strip() for p in os.environ.get("HOMEBREW_IGNORE_DEPS_FOR", "").split(",") if p.strip()}
+    if source_path in ignored:
+        return []
     source = source_root / source_path
     try:
         data = json.loads(source.read_text(encoding="utf-8-sig"))

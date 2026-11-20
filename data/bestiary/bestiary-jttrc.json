@@ -30,7 +30,8 @@
 					{
 						"ENG_name": "High Elf",
 						"name": "高等精灵",
-						"source": "PHB"
+						"source": "PHB",
+						"translator": "不全书"
 					}
 				],
 				"_mod": {
@@ -40,7 +41,8 @@
 						"with": "Afsoun",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"C",
@@ -77,7 +79,8 @@
 						"with": "阿玛尼沙",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"N",
@@ -110,7 +113,8 @@
 						"with": "阿梅亚利",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"N",
@@ -134,7 +138,8 @@
 						"replace": "间谍",
 						"with": "无政府主义者"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"hasToken": true,
 			"hasFluffImages": true
@@ -147,7 +152,8 @@
 			"_copy": {
 				"ENG_name": "Assassin",
 				"name": "刺客",
-				"source": "MM"
+				"source": "MM",
+				"translator": "不全书"
 			},
 			"hasToken": true
 		},
@@ -159,7 +165,8 @@
 			"_copy": {
 				"ENG_name": "Mage",
 				"name": "魔法师",
-				"source": "MM"
+				"source": "MM",
+				"translator": "不全书"
 			},
 			"hasToken": true,
 			"hasFluffImages": true
@@ -172,7 +179,8 @@
 			"_copy": {
 				"ENG_name": "Veteran",
 				"name": "老兵",
-				"source": "MM"
+				"source": "MM",
+				"translator": "不全书"
 			},
 			"hasToken": true
 		},
@@ -194,7 +202,8 @@
 						"with": "阿塔什",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"L",
@@ -227,7 +236,8 @@
 						"with": "阿提巴-帕",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"L",
@@ -238,7 +248,7 @@
 		},
 		{
 			"ENG_name": "Aunt Dellie",
-			"name": "戴尔阿姨",
+			"name": "德莉姨妈",
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "JttRC",
@@ -251,10 +261,11 @@
 					"*": {
 						"mode": "replaceTxt",
 						"replace": "平民",
-						"with": "戴尔阿姨",
+						"with": "德莉姨妈",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"hasToken": true,
 			"hasFluffImages": true
@@ -513,7 +524,8 @@
 						"with": "阿瓦",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"hasToken": true,
 			"hasFluffImages": true
@@ -536,7 +548,8 @@
 						"with": "Azra",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"hasToken": true,
 			"hasFluffImages": true
@@ -743,7 +756,8 @@
 						"replace": "异特龙",
 						"with": "骷髅"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"senses": [
 				"黑暗视觉 60 尺"
@@ -777,7 +791,8 @@
 						"replace": "斥候",
 						"with": "天后"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"action": [
 				{
@@ -816,7 +831,8 @@
 						"with": "迪瓦·卢玛",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"action": [
 				{
@@ -861,7 +877,8 @@
 						"with": "杰内巴",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"C",
@@ -896,7 +913,8 @@
 							]
 						}
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"ac": [
 				{
@@ -929,7 +947,8 @@
 						"with": "杜卡",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"N"
@@ -953,7 +972,8 @@
 						"replace": "邪教徒",
 						"with": "农民"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"hasToken": true,
 			"hasFluffImages": true,
@@ -984,7 +1004,8 @@
 						"with": "甘蒙",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"C",
@@ -1167,7 +1188,8 @@
 						"replace": "魔像",
 						"with": "雕像"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"hasToken": true,
 			"hasFluffImages": true
@@ -1203,7 +1225,8 @@
 							]
 						}
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"hasToken": true,
 			"hasFluff": true
@@ -1232,7 +1255,8 @@
 						"with": "卡拉",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"N",
@@ -1265,7 +1289,8 @@
 						"with": "卡森",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"C",
@@ -1298,7 +1323,8 @@
 						"with": "凯德裘",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"N",
@@ -1331,7 +1357,8 @@
 						"with": "基安娜",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"C",
@@ -1355,7 +1382,8 @@
 						"replace": "海马",
 						"with": "虾"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"hasToken": true,
 			"hasFluffImages": true
@@ -1384,7 +1412,8 @@
 						"with": "坤 安-俊",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"N",
@@ -1418,7 +1447,8 @@
 						"with": "库萨",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"L",
@@ -1455,7 +1485,8 @@
 						"with": "德瑞女士",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"C",
@@ -1479,7 +1510,8 @@
 					{
 						"ENG_name": "High Elf",
 						"name": "高等精灵",
-						"source": "PHB"
+						"source": "PHB",
+						"translator": "不全书"
 					}
 				],
 				"_mod": {
@@ -1489,7 +1521,8 @@
 						"with": "拉莱赫",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"N",
@@ -1517,7 +1550,8 @@
 					{
 						"ENG_name": "Rock Gnome",
 						"name": "岩石侏儒",
-						"source": "PHB"
+						"source": "PHB",
+						"translator": "不全书"
 					}
 				],
 				"_mod": {
@@ -1527,7 +1561,8 @@
 						"with": "拉迈",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"L",
@@ -1560,7 +1595,8 @@
 						"with": "Lu Zhong",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"L",
@@ -1587,7 +1623,8 @@
 						"with": "隆天",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"C",
@@ -1611,7 +1648,8 @@
 					{
 						"ENG_name": "Rock Gnome",
 						"name": "岩石侏儒",
-						"source": "PHB"
+						"source": "PHB",
+						"translator": "不全书"
 					}
 				],
 				"_mod": {
@@ -1621,7 +1659,8 @@
 						"with": "库尔普女士",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"N"
@@ -1654,7 +1693,8 @@
 						"with": "纳吉斯",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"N",
@@ -1690,7 +1730,8 @@
 							"{@spell 变形术}（仅自身）"
 						]
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"hasToken": true,
 			"hasFluffImages": true
@@ -1714,7 +1755,8 @@
 						"with": "内内",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"int": 7,
 			"languages": [
@@ -1749,7 +1791,8 @@
 							]
 						}
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"senses": [
 				"黑暗视觉 60 尺"
@@ -1785,7 +1828,8 @@
 						"with": "Nimuel",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"N",
@@ -1809,7 +1853,8 @@
 					{
 						"ENG_name": "Tiefling",
 						"name": "提夫林",
-						"source": "PHB"
+						"source": "PHB",
+						"translator": "不全书"
 					}
 				],
 				"_mod": {
@@ -1819,7 +1864,8 @@
 						"with": "奥林",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"C",
@@ -1856,7 +1902,8 @@
 					{
 						"ENG_name": "Rock Gnome",
 						"name": "岩石侏儒",
-						"source": "PHB"
+						"source": "PHB",
+						"translator": "不全书"
 					}
 				],
 				"_mod": {
@@ -1866,7 +1913,8 @@
 						"with": "帕洛玛",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"C",
@@ -2108,7 +2156,8 @@
 							"重弩"
 						]
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"ac": [
 				11
@@ -2151,7 +2200,8 @@
 							"重弩"
 						]
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"ac": [
 				11
@@ -2353,7 +2403,8 @@
 						"replace": "隼",
 						"with": "公鸡"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"speed": {
 				"walk": 10
@@ -2375,7 +2426,8 @@
 					{
 						"ENG_name": "High Elf",
 						"name": "高等精灵",
-						"source": "PHB"
+						"source": "PHB",
+						"translator": "不全书"
 					}
 				],
 				"_mod": {
@@ -2385,7 +2437,8 @@
 						"with": "Samira",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"N"
@@ -2438,7 +2491,8 @@
 						"with": "索莱赫",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"N",
@@ -2867,7 +2921,8 @@
 					{
 						"ENG_name": "Mountain Dwarf",
 						"name": "山地矮人",
-						"source": "PHB"
+						"source": "PHB",
+						"translator": "不全书"
 					}
 				],
 				"_mod": {
@@ -2877,7 +2932,8 @@
 						"with": "托纳利",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"L",
@@ -2888,7 +2944,7 @@
 		},
 		{
 			"ENG_name": "Tungsten Ward",
-			"name": "钨·沃德",
+			"name": "汤恩斯敦·监守",
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -2910,7 +2966,8 @@
 						"with": "钨",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"L",
@@ -2934,7 +2991,8 @@
 					{
 						"ENG_name": "Mountain Dwarf",
 						"name": "山地矮人",
-						"source": "PHB"
+						"source": "PHB",
+						"translator": "不全书"
 					}
 				],
 				"_mod": {
@@ -2944,7 +3002,8 @@
 						"with": "乌佐马",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"L",
@@ -2977,7 +3036,8 @@
 						"with": "Vi",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"C",
@@ -3010,7 +3070,8 @@
 						"with": "卫风",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"L",
@@ -3170,7 +3231,8 @@
 					{
 						"ENG_name": "Hill Dwarf",
 						"name": "丘陵矮人",
-						"source": "PHB"
+						"source": "PHB",
+						"translator": "不全书"
 					}
 				],
 				"_mod": {
@@ -3179,7 +3241,8 @@
 						"replace": "贵族",
 						"with": "皇帝"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"L",
@@ -3317,7 +3380,8 @@
 							}
 						}
 					]
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"N"
@@ -3349,7 +3413,8 @@
 						"with": "亚拉纳",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"N",
@@ -3373,7 +3438,8 @@
 					{
 						"ENG_name": "Dragonborn (Red)",
 						"name": "龙裔 (红)",
-						"source": "PHB"
+						"source": "PHB",
+						"translator": "不全书"
 					}
 				],
 				"_mod": {
@@ -3383,7 +3449,8 @@
 						"with": "英基",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"N"

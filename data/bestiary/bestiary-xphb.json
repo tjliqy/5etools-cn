@@ -76,7 +76,7 @@
 					"ENG_name": "Claw (Slaad Only)",
 					"name": "爪击（仅史拉蟾）",
 					"entries": [
-						"{@atkr m} {@hitYourSpellAttack}，触及5尺。{@h}{@damage 1d10 + 3 + 召唤法术等级}挥砍伤害，且目标在灵魄的下个回合开始前无法恢复{@variantrule 生命值|XPHB}。"
+						"{@atkr m} {@hitYourSpellAttack}，触及5尺。{@h}{@damage 1d10 + 3 + summonSpellLevel}挥砍伤害，并且目标在灵魄的下个回合开始前不能恢复{@variantrule 生命值|XPHB}。"
 					]
 				},
 				{
@@ -160,7 +160,8 @@
 						"RA"
 					],
 					"hasToken": true,
-					"foundryTokenScale": 1.1
+					"foundryTokenScale": 1.1,
+					"translator": "威世智慧汉化组"
 				},
 				{
 					"ENG_name": "Aberrant Spirit (Mind Flayer)",
@@ -209,7 +210,8 @@
 					"miscTags": [
 						"RA"
 					],
-					"hasToken": true
+					"hasToken": true,
+					"translator": "威世智慧汉化组"
 				},
 				{
 					"ENG_name": "Aberrant Spirit (Slaad)",
@@ -260,7 +262,8 @@
 					"miscTags": [
 						"MA"
 					],
-					"hasToken": true
+					"hasToken": true,
+					"translator": "威世智慧汉化组"
 				}
 			],
 			"translator": "不全书"
@@ -341,7 +344,8 @@
 								"{@atkr m} {@hitYourSpellAttack 加值等于你的法术攻击加值}，触及5尺。{@h}造成相当于{@damage (summonSpellLevel - 3)d12 + 3|2d12 + 3} + 你的施法调整值的力场伤害。。"
 							]
 						}
-					]
+					],
+					"translator": "威世智慧汉化组"
 				},
 				{
 					"ENG_name": "Animated Object (Large)",
@@ -358,7 +362,8 @@
 								"{@atkr m} {@hitYourSpellAttack 加值等于你的法术攻击加值}, 触及5尺。{@h}造成相当于{@damage (summonSpellLevel - 3)d6 + 3|2d6 + 3}点+你的施法调整值的力场伤害。"
 							]
 						}
-					]
+					],
+					"translator": "威世智慧汉化组"
 				},
 				{
 					"ENG_name": "Animated Object (Medium or Smaller)",
@@ -375,7 +380,8 @@
 								"{@atkr m} {@hitYourSpellAttack 加值等于你的法术攻击加值}，触及5尺。{@h}造成等于{@damage (summonSpellLevel - 4)d4 + 3|1d4 + 3} + 你的施法调整值的力场伤害。"
 							]
 						}
-					]
+					],
+					"translator": "威世智慧汉化组"
 				}
 			],
 			"translator": "不全书"
@@ -741,7 +747,8 @@
 					"traitTags": [
 						"Flyby"
 					],
-					"hasToken": true
+					"hasToken": true,
+					"translator": "威世智慧汉化组"
 				},
 				{
 					"ENG_name": "Bestial Spirit (Land)",
@@ -776,7 +783,8 @@
 						"Pack Tactics"
 					],
 					"hasToken": true,
-					"foundryTokenScale": 1.3
+					"foundryTokenScale": 1.3,
+					"translator": "威世智慧汉化组"
 				},
 				{
 					"ENG_name": "Bestial Spirit (Water)",
@@ -810,7 +818,8 @@
 						"Pack Tactics",
 						"Water Breathing"
 					],
-					"hasToken": true
+					"hasToken": true,
+					"translator": "威世智慧汉化组"
 				}
 			],
 			"translator": "不全书"
@@ -937,7 +946,8 @@
 						"RW"
 					],
 					"hasToken": true,
-					"foundryTokenScale": 1.1
+					"foundryTokenScale": 1.1,
+					"translator": "威世智慧汉化组"
 				},
 				{
 					"ENG_name": "Celestial Spirit (Defender)",
@@ -968,7 +978,8 @@
 						"MLW"
 					],
 					"hasToken": true,
-					"foundryTokenScale": 1.1
+					"foundryTokenScale": 1.1,
+					"translator": "威世智慧汉化组"
 				}
 			],
 			"translator": "不全书"
@@ -1099,7 +1110,8 @@
 					"damageTags": [
 						"B"
 					],
-					"hasToken": true
+					"hasToken": true,
+					"translator": "威世智慧汉化组"
 				},
 				{
 					"ENG_name": "Construct Spirit (Metal)",
@@ -1121,7 +1133,8 @@
 						]
 					},
 					"reaction": null,
-					"hasToken": true
+					"hasToken": true,
+					"translator": "威世智慧汉化组"
 				},
 				{
 					"ENG_name": "Construct Spirit (Stone)",
@@ -1147,7 +1160,8 @@
 						"B"
 					],
 					"hasToken": true,
-					"foundryTokenScale": 1.3
+					"foundryTokenScale": 1.3,
+					"translator": "威世智慧汉化组"
 				}
 			],
 			"translator": "不全书"
@@ -1289,7 +1303,8 @@
 									}
 								}
 							]
-						}
+						},
+						"translator": "威世智慧汉化组"
 					},
 					"_implementations": [
 						{
@@ -1319,7 +1334,8 @@
 						}
 					]
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Elemental Spirit",
@@ -1498,7 +1514,8 @@
 						"B"
 					],
 					"hasToken": true,
-					"foundryTokenScale": 1.1
+					"foundryTokenScale": 1.1,
+					"translator": "威世智慧汉化组"
 				},
 				{
 					"ENG_name": "Elemental Spirit (Earth)",
@@ -1533,7 +1550,8 @@
 						"B"
 					],
 					"hasToken": true,
-					"foundryTokenScale": 1.1
+					"foundryTokenScale": 1.1,
+					"translator": "威世智慧汉化组"
 				},
 				{
 					"ENG_name": "Elemental Spirit (Fire)",
@@ -1572,7 +1590,8 @@
 						"F"
 					],
 					"hasToken": true,
-					"foundryTokenScale": 1.1
+					"foundryTokenScale": 1.1,
+					"translator": "威世智慧汉化组"
 				},
 				{
 					"ENG_name": "Elemental Spirit (Water)",
@@ -1614,7 +1633,8 @@
 						"B"
 					],
 					"hasToken": true,
-					"foundryTokenScale": 1.1
+					"foundryTokenScale": 1.1,
+					"translator": "威世智慧汉化组"
 				}
 			],
 			"translator": "不全书"
@@ -1755,7 +1775,8 @@
 								"灵魄魔法地传送至多 30 尺至一处它可见的未被占据空间。灵魄在此回合结束前的下一次攻击检定具有{@variantrule 优势|XPHB}。"
 							]
 						}
-					]
+					],
+					"translator": "威世智慧汉化组"
 				},
 				{
 					"ENG_name": "Fey Spirit (Mirthful)",
@@ -1769,7 +1790,8 @@
 								"灵魄魔法地传送至多 30 尺至一处它可见的未被占据空间。{@actSave wis}：DC等于你的法术豁免DC，单一灵魄 10 尺内它可见的生物。{@actSaveFail}：目标受你和灵魄{@condition 魅惑|XPHB} 1 分钟或在目标受到任意伤害时提前结束。"
 							]
 						}
-					]
+					],
+					"translator": "威世智慧汉化组"
 				},
 				{
 					"ENG_name": "Fey Spirit (Tricksy)",
@@ -1783,7 +1805,8 @@
 								"灵魄魔法地传送至多 30 尺至一处它可见的未被占据空间。灵魄令魔法黑暗充斥于它 5 尺内的一处 10 尺{@variantrule 立方 [效应区域]|XPHB|立方}区域，持续至灵魄的下个回合结束。"
 							]
 						}
-					]
+					],
+					"translator": "威世智慧汉化组"
 				}
 			],
 			"translator": "不全书"
@@ -1972,7 +1995,8 @@
 					"damageTags": [
 						"F"
 					],
-					"hasToken": true
+					"hasToken": true,
+					"translator": "威世智慧汉化组"
 				},
 				{
 					"ENG_name": "Fiendish Spirit (Devil)",
@@ -2024,7 +2048,8 @@
 						"N"
 					],
 					"hasToken": true,
-					"foundryTokenScale": 1.1
+					"foundryTokenScale": 1.1,
+					"translator": "威世智慧汉化组"
 				},
 				{
 					"ENG_name": "Fiendish Spirit (Yugoloth)",
@@ -2069,7 +2094,8 @@
 					"damageTags": [
 						"F"
 					],
-					"hasToken": true
+					"hasToken": true,
+					"translator": "威世智慧汉化组"
 				}
 			],
 			"translator": "不全书"
@@ -2096,7 +2122,8 @@
 					"speed": {
 						"climb": 40,
 						"walk": 40
-					}
+					},
+					"translator": "威世智慧汉化组"
 				},
 				{
 					"ENG_name": "Giant Insect (Spider)",
@@ -2117,7 +2144,8 @@
 					"speed": {
 						"climb": 40,
 						"walk": 40
-					}
+					},
+					"translator": "威世智慧汉化组"
 				},
 				{
 					"ENG_name": "Giant Insect (Wasp)",
@@ -2138,7 +2166,8 @@
 						"climb": 40,
 						"fly": 40,
 						"walk": 40
-					}
+					},
+					"translator": "威世智慧汉化组"
 				}
 			],
 			"ac": [
@@ -2390,7 +2419,8 @@
 						"R"
 					],
 					"conditionInflict": null,
-					"savingThrowForced": null
+					"savingThrowForced": null,
+					"translator": "威世智慧汉化组"
 				},
 				{
 					"ENG_name": "Otherworldly Steed (Fey)",
@@ -2428,7 +2458,8 @@
 						"Y"
 					],
 					"conditionInflict": null,
-					"savingThrowForced": null
+					"savingThrowForced": null,
+					"translator": "威世智慧汉化组"
 				},
 				{
 					"ENG_name": "Otherworldly Steed (Fiend)",
@@ -2464,7 +2495,8 @@
 					],
 					"damageTags": [
 						"N"
-					]
+					],
+					"translator": "威世智慧汉化组"
 				}
 			],
 			"translator": "不全书"
@@ -2652,7 +2684,8 @@
 						"frightened"
 					],
 					"hasToken": true,
-					"foundryTokenScale": 1.3
+					"foundryTokenScale": 1.3,
+					"translator": "威世智慧汉化组"
 				},
 				{
 					"ENG_name": "Undead Spirit (Putrid)",
@@ -2704,7 +2737,8 @@
 						"paralyzed",
 						"poisoned"
 					],
-					"hasToken": true
+					"hasToken": true,
+					"translator": "威世智慧汉化组"
 				},
 				{
 					"ENG_name": "Undead Spirit (Skeletal)",
@@ -2740,7 +2774,8 @@
 						"N"
 					],
 					"conditionInflict": null,
-					"hasToken": true
+					"hasToken": true,
+					"translator": "威世智慧汉化组"
 				}
 			],
 			"translator": "不全书"

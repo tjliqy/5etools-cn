@@ -324,7 +324,8 @@
 						"你可以提升捕网的重量，从而提高豁免DC和力量（{@skill 运动|XPHB}）检定DC，以此提升陷阱对应的等级范围：5-10级时{@dc 12}，11-16级时{@dc 14}，17-20级时{@dc 16}。"
 					]
 				}
-			]
+			],
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Falling Portcullis",
@@ -1821,7 +1822,8 @@
 				"棕霉菌长得像一块毛绒绒的、浅棕色的地毯。这种真菌以热量为食，从周围所有的物体中汲取热量。一片棕霉菌覆盖10 尺方形区域，并且其30尺范围内的温度总是寒冷刺骨的。",
 				"生物在一回合中首次进入棕霉菌周边5尺范围内时，或者在该区域内开始其回合时，该生物必须进行一次 {@dc 12} 的体质豁免，豁免失败时，该生物受22（{@damage 4d10}）的寒冷伤害，豁免成功则伤害减半。",
 				"棕霉菌{@variantrule 免疫|XPHB}火焰。任何形式的火焰接近其周边5尺范围区域内时，棕霉菌将立即向火焰的方向延伸，创造出一片新的霉菌覆盖前方 10 尺的方形区域。一片棕霉菌受到任何造成寒冷伤害的效果影响时，将会被立即摧毁。"
-			]
+			],
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Burning",
@@ -1831,7 +1833,8 @@
 			"srd52": true,
 			"entries": [
 				"燃烧中的生物或物件在其每个回合开始时受到{@damage 1d4}火焰伤害。以一个动作，你可以在地上打滚来熄灭你身上的火焰，并因此陷入{@condition 倒地|XPHB}状态。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Calim Sandstorm",
@@ -1852,7 +1855,8 @@
 			"trapHazType": "ENV",
 			"entries": [
 				"死魔法区域是魔法的结构被彻底撕毁的区域。其效果和{@spell 反魔法场|XPHB}法术一样，但它具有永久性，并且覆盖区域的直径通常不会超过300尺。"
-			]
+			],
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Deep Water",
@@ -1863,7 +1867,8 @@
 			"trapHazType": "ENV",
 			"entries": [
 				"在深水区（水深超过100尺）中游泳将面临更大的挑战。由于水压和低温，在深水中每游泳一个小时，一个不具有游泳速度的生物就必须成功通过{@dc 10}的体质豁免，否则就会获得1级{@condition 力竭|XPHB}。"
-			]
+			],
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Dehydration",
@@ -2061,7 +2066,8 @@
 			"trapHazType": "ENV",
 			"entries": [
 				"当温度到达0华氏度或更低时（译者注：0华氏≈零下17.8摄氏）。暴露在极度寒冷中的生物必须每小时成功通过{@dc 10}的体质豁免，否则就会获得1级{@condition 力竭|XPHB}。对寒冷伤害具有{@variantrule 抗性|XPHB}或{@variantrule 免疫|XPHB}的生物会在豁免时自动成功。"
-			]
+			],
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Extreme Heat",
@@ -2086,7 +2092,8 @@
 			"trapHazType": "ENV",
 			"entries": [
 				"当温度到达100华氏度或更高时（译者注:100华氏度≈37.8摄氏度）。暴露在极度高温下而且无法获得饮用水的生物，其必须在每个小时过去时成功通过一次体质豁免，否则将会获得1级{@condition 力竭|XPHB}。其中第一个小时的豁免是DC5，每过一个小时，DC便再增加1。正着装中型或重型护甲的生物在豁免时处于{@variantrule 劣势|XPHB}。对火焰伤害具有{@variantrule 抗性|XPHB}或{@variantrule 免疫|XPHB}的生物会在豁免时自动成功。"
-			]
+			],
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Falling",
@@ -2097,7 +2104,8 @@
 			"entries": [
 				"坠落结束时，坠落生物会基于其坠落的距离受到钝击伤害：其每坠落 10 尺距离，就会受到{@damage 1d6}点钝击伤害（至多{@damage 20d6}）。当生物着地时，除非它将坠落伤害全数避免，不然它还会因此陷入{@condition 倒地|XPHB}状态。",
 				"生物坠入水中（或者别的什么液体中）时，其可以用{@variantrule 反应|XPHB}进行一次{@dc 15}的力量（{@skill 运动|XPHB}）或敏捷（{@skill 特技|XPHB}）检定使自己以头先触水或以脚先触水。若检定成功，该生物所受的、由此次坠落导致的所有伤害将减半。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Falling into Water",
@@ -2144,7 +2152,8 @@
 						"一株火球菇的爆炸将会使其爆炸范围内的其余火球菇也一并爆炸。你可以通过额外添加一株火球菇，来将危害对应等级范围提高到11-16级 ，增加三株火球菇可以将等级范围提高到17-20级。"
 					]
 				}
-			]
+			],
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Flame Storm",
@@ -2190,7 +2199,8 @@
 			"trapHazType": "ENV",
 			"entries": [
 				"如果一个生物浸泡在寒冷的水中，那么他在遭受不良影响前可以支撑一小段时间，具体为等同于该生物的体质值的分钟数。在寒冷的水中每再多花一分钟，生物就必须通过{@dc 10}的体质豁免，否则将会获得1级{@condition 力竭|XPHB}。对寒冷伤害具有{@variantrule 抗性|XPHB}或{@variantrule 免疫|XPHB}的生物会在豁免时自动成功，自然栖息于在寒冷水域中的生物也是如此。"
-			]
+			],
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Glittermoss",
@@ -2245,7 +2255,8 @@
 				"与绿软泥接触的生物会受到5（{@damage 1d10}）点强酸伤害。该生物在每个自己的回合开始时再次受到该伤害，直至将软泥摧毁或将其从身上刮除（需要一个动作）。绿软泥对木材和金属造成每轮11（{@damage 2d10}）点强酸伤害，并且任何用于刮除软泥的木质或金属质非魔法物品都将被摧毁。",
 				"阳光直射或者任何寒冷、火焰或光耀伤害都将立刻摧毁一块绿软泥。"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Hailstorm",
@@ -2279,7 +2290,8 @@
 			"trapHazType": "ENV",
 			"entries": [
 				"一切处于暴雨或暴雪的区域都视为{@variantrule 轻度遮蔽|XPHB}，该区域内的生物在所有感知（{@skill 察觉|XPHB}）检定中处于{@variantrule 劣势|XPHB}，暴雨还能熄灭暴露的火焰。"
-			]
+			],
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "High Altitude",
@@ -2305,7 +2317,8 @@
 			"entries": [
 				"由于空气中的氧气含量减少的原因，在海拔10000尺或更高的地方旅行对大多数生物来说都是一种负担。计算生物的旅行时间时，生物在高海拔地区旅行的每1个小时都被算作2个小时（见{@book 第二章|XDMG|1} {@book 旅行步调|XDMG|1|旅行步调} 一节）。",
 				"生物可以通过在高海拔地区待上30天或更长的时间来适应高海拔环境。不过，生物通常无法适应海拔20000尺以上的环境，除非它们是这种环境的原生生物。（译者注:一万英尺≈3034米，两万英尺≈6096米）"
-			]
+			],
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Howling Wind",
@@ -2499,7 +2512,8 @@
 				},
 				"妨害型伤害很少在角色处于所示等级时将他们置于死地，但已被严重削弱的角色可能会被这次伤害所击溃。",
 				"致死型伤害对处于所示等级的角色构成了显著的威胁，且有可能杀死已经失去许多{@variantrule 生命值|XPHB}的角色。"
-			]
+			],
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Inferno",
@@ -2520,7 +2534,8 @@
 				"当火焰不受控制地蔓延时，就能制造出一片燎原烈火，迅速地吞噬生物、物件和植物。",
 				"一片燎原烈火由至少四个10尺{@variantrule 立方 [效应区域]|XPHB|立方}的火焰相连组成。每10尺立方的火焰可以被10加仑的水扑灭。暴露在一阵强风中1分钟后，燎原烈火会扩张，额外增加{@dice 1d4}个10尺立方的火焰。一片失去燃料的燎原烈火将在{@dice 1d10}分钟后燃尽。",
 				"燎原烈火会立即对任何它接触到的，未被穿戴的植物或物件造成22（{@damage 4d10}）点火焰伤害，并且 每一分钟会再次造成该伤害。生物在一回合内首次进入燎原烈火范围内，或者在范围内开始其回合时，将受到22（{@damage 4d10}）点火焰伤害，并开始燃烧。"
-			]
+			],
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Lightning Strikes",
@@ -2686,7 +2701,8 @@
 						"喧癫空隧的狂风常出现在{@book 喧癫空隧|XDMG|5|喧癫空隧}位面和受其影响的地区，包括幽暗地域的部分地区。一个生物在尖啸狂风中每经过1个小时将进行一次{@dc 10}的感知豁免，如果豁免失败，该生物获得1级{@condition 力竭|XPHB}。狂风不能将生物的{@condition 力竭|XPHB}等级提高到3级以上。长休无法降低狂风中的生物的力竭等级，除非该生物能够以某种方式避开狂风肆虐。"
 					]
 				}
-			]
+			],
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Poisonous Gas",
@@ -2740,7 +2756,8 @@
 						}
 					]
 				}
-			]
+			],
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Psionic Field",
@@ -2819,7 +2836,8 @@
 						}
 					]
 				}
-			]
+			],
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Razorvine",
@@ -2849,7 +2867,8 @@
 			"entries": [
 				"剃刀藤是一种生长在野外丛林和灌木丛中的植物。它还可以像常春藤一样，附着在建筑物和其他表面上。一块10尺高，10尺宽，5尺厚的剃刀藤墙或剃刀藤篱笆拥有AC11，25点生命值，对钝击、穿刺和心灵伤害具有{@variantrule 免疫|XPHB}。",
 				"生物在一回合内第一次接触剃刀藤时，该生物必须成功通过一次{@dc 10}的敏捷豁免，否则将被其刀锋般的荆棘划伤而受到5（{@damage 1d10}）点挥砍伤害。"
-			]
+			],
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "River Styx",
@@ -2867,7 +2886,8 @@
 				"从冥河中饮水、走入河水或在河水中开始其回合的生物必须进行一次{@dc 20}的智力豁免，除非该生物免疫冥河的效果。豁免失败时，生物受到19（{@damage 3d12}）点心灵伤害，并且在接下来的30天内无法施放法术或执行{@action 魔法|XPHB}动作。已经受到冥河效果影响的生物可以自由饮用河水或在河水中游泳，不会受到额外的影响。",
 				"这一效应只能被{@spell 高等复原术|XPHB}、{@spell 医疗术|XPHB}或{@spell 祈愿术|XPHB}所终止。如果此效应在30天内没有被终止，它将转化为永久效应，受影响的生物则会失去所有记忆。到了这种程度后，只有{@spell 祈愿术|XPHB}和神圣干预才能将其解除。",
 				"从冥河中取出的水，在24小时后会失去其效力，成为无害的、有腐烂味道的液体。奥登罗斯魔Arcanaloths，夜鬼婆Night hags和其他邪恶生物可能知晓延长冥河水效力的仪式，这由你决定。"
-			]
+			],
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Rockslide",
@@ -2892,7 +2912,8 @@
 						"你可以通过提高钝击伤害来提高这一危害所对应的等级范围，按照如此：5-10级范围受到22（{@damage 4d10}）点伤害，11-16级范围受到55（{@damage 10d10}）点伤害，17-20级范围受到99（{@damage 18d10}）点伤害。"
 					]
 				}
-			]
+			],
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Rot Grub",
@@ -3078,7 +3099,8 @@
 			"trapHazType": "ENV",
 			"entries": [
 				"湿滑冰面视为{@variantrule 困难地形|XPHB}，在一回合内首次移动到湿滑冰面上或在冰面上开始自己的回合的生物必须成功通过{@dc 10}的敏捷豁免，否则将会{@condition 倒地|XPHB}。"
-			]
+			],
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Strong Wind",
@@ -3104,7 +3126,8 @@
 			"entries": [
 				"强风会使得用武器进行的远程攻击具有{@variantrule 劣势|XPHB}。强风还会熄灭没有遮掩的明火并驱散浓雾。一个在强风中飞行的生物必须在回合结束时落地着陆，否则就会坠落。",
 				"当强风出现在沙漠中时能够造成沙尘暴，对感知（{@skill 察觉|XPHB}）检定造成劣势。"
-			]
+			],
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Suffocation",
@@ -3114,7 +3137,8 @@
 			"srd52": true,
 			"entries": [
 				"生物可以屏息至多 1 + 其体质调整值分钟（至少 30 秒），然后窒息开始。若一个生物的屏息时间殆尽或呼吸受阻，它将在自己的每个回合结束时获得 1 级{@condition 力竭|XPHB}等级。当生物重新可以呼吸时，所有因窒息而获得的{@condition 力竭|XPHB}等级都会被移除。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Thin Ice",
@@ -3138,7 +3162,8 @@
 			"trapHazType": "ENV",
 			"entries": [
 				"每10尺方形区域的薄冰，其能承受的最大重量为{@dice 3d10 × 10}磅。只要一处薄冰区域的总重量超过了承受能力，这个区域的冰层便会全部破裂，所有生物都会掉下去。薄冰下面是{@hazard 寒冷水域|XDMG}。"
-			]
+			],
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Thrym's Howl",
@@ -3205,7 +3230,8 @@
 						}
 					]
 				}
-			]
+			],
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Webs",
@@ -3236,7 +3262,8 @@
 				"一个生物若在回合中首次进入布满蛛网的区域或在其内开始回合时，必须成功通过{@dc 12}的敏捷豁免检定，否则将陷入{@condition 束缚|XPHB}状态。被蛛网束缚的生物可以消耗一个动作尝试逃脱，需成功通过{@dc 12}的力量（{@skill 运动|XPHB}）或敏捷（{@skill 特技|XPHB}）检定。",
 				"每10尺{@variantrule 立方 [效应区域]|XPHB|立方}的蛛网拥有AC10，15点生命值，蛛网对火焰伤害具有易伤，而对穿刺、毒素和心灵伤害具有免疫。"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Wild Magic Zone",
@@ -3247,7 +3274,8 @@
 			"entries": [
 				"过去发生的魔法灾难或者不受控制的力量肆虐，都可能导致某个地区的魔法结构崩溃，进而形成狂野魔法区域。这样的区域其直径通常不会超过300尺，而在此区域内，魔法可能会表现出不可预测的变化。",
 				"每当一个生物在狂野魔法区域消耗一个法术位来施展法术时，投掷{@dice 1d20}，如果掷出的骰子是20，则在{@book 玩家手册|XPHB}中的{@table 狂野魔法浪涌|XPHB}上掷骰来创建一个魔法效应。"
-			]
+			],
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Wildstorm",
@@ -3358,7 +3386,8 @@
 			"entries": [
 				"黄霉菌生在阴暗处，每片黄霉菌覆盖5尺方形区域。如果被触碰，黄霉菌会喷射出一片覆盖10尺{@variantrule 立方 [效应区域]|XPHB|立方}的孢子云。任何处于此区域内的生物必须成功通过一次{@dc 15}的体质豁免，否则将受到11（{@damage 2d10}）点毒素伤害，并在接下来的一分钟内陷入{@condition 中毒|XPHB}状态。以此法中毒的生物在其每个回合开始时受到5（{@damage 1d10}）点毒素伤害。生物在每个自己的回合结束时重新豁免，豁免成功则效应终止。",
 				"阳光直射或任何火焰伤害都会立刻摧毁一片黄霉菌。"
-			]
+			],
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Zlanic Chardalyn",

@@ -507,7 +507,8 @@
 			],
 			"subclassTitle": "德鲁伊结社",
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Druid",
@@ -1075,7 +1076,8 @@
 			],
 			"subclassTitle": "德鲁伊子职",
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Druid",
@@ -1087,7 +1089,8 @@
 			"_copy": {
 				"ENG_name": "Druid",
 				"name": "德鲁伊",
-				"source": "XPHB"
+				"source": "XPHB",
+				"translator": "威世智慧汉化组"
 			},
 			"includeSubclassesFrom": [
 				"德鲁伊|XPHB"
@@ -1366,7 +1369,8 @@
 				"大地行者|德鲁伊||大地||6",
 				"自然之护|德鲁伊||大地||10",
 				"自然庇护|德鲁伊||大地||14"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Circle of the Land",
@@ -1389,14 +1393,16 @@
 					"srd": true,
 					"basicRules": true,
 					"reprintedAs": true
-				}
+				},
+				"translator": "不全书"
 			},
 			"subclassFeatures": [
 				"大地结社|德鲁伊|XPHB|大地||3",
 				"大地行者|德鲁伊||大地||6",
 				"自然之护|德鲁伊||大地||10",
 				"自然庇护|德鲁伊||大地||14"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Circle of the Moon",
@@ -1424,7 +1430,8 @@
 				"原力蛮击|德鲁伊||月亮||6",
 				"元素荒野形态|德鲁伊||月亮||10",
 				"千面相|德鲁伊||月亮||14"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Circle of the Moon",
@@ -1447,14 +1454,16 @@
 					"srd": true,
 					"basicRules": true,
 					"reprintedAs": true
-				}
+				},
+				"translator": "不全书"
 			},
 			"subclassFeatures": [
 				"月亮结社|德鲁伊|XPHB|月亮||3",
 				"原力蛮击|德鲁伊||月亮||6",
 				"元素荒野形态|德鲁伊||月亮||10",
 				"千面相|德鲁伊||月亮||14"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Circle of Dreams",
@@ -1917,7 +1926,8 @@
 				"自然之护|德鲁伊|XPHB|大地|XPHB|10",
 				"自然庇护|德鲁伊|XPHB|大地|XPHB|14"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Circle of the Moon",
@@ -1954,7 +1964,8 @@
 				"月光飞步|德鲁伊|XPHB|月亮|XPHB|10",
 				"月辉形态|德鲁伊|XPHB|月亮|XPHB|14"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Circle of the Sea",
@@ -1996,7 +2007,8 @@
 				"风暴降生|德鲁伊|XPHB|海洋|XPHB|10",
 				"大洋慨赠|德鲁伊|XPHB|海洋|XPHB|14"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Circle of the Stars",
@@ -2027,7 +2039,8 @@
 				"闪耀星座|德鲁伊|XPHB|星辰|XPHB|10",
 				"灿若繁星|德鲁伊|XPHB|星辰|XPHB|14"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Circle of the Land",
@@ -2042,7 +2055,8 @@
 				"source": "XPHB",
 				"shortName": "大地",
 				"className": "德鲁伊",
-				"classSource": "XPHB"
+				"classSource": "XPHB",
+				"translator": "威世智慧汉化组"
 			},
 			"translator": "Kiwee"
 		},
@@ -2059,7 +2073,8 @@
 				"source": "XPHB",
 				"shortName": "月亮",
 				"className": "德鲁伊",
-				"classSource": "XPHB"
+				"classSource": "XPHB",
+				"translator": "威世智慧汉化组"
 			},
 			"translator": "Kiwee"
 		},
@@ -2076,7 +2091,8 @@
 				"source": "XPHB",
 				"shortName": "星辰",
 				"className": "德鲁伊",
-				"classSource": "XPHB"
+				"classSource": "XPHB",
+				"translator": "威世智慧汉化组"
 			},
 			"translator": "Kiwee"
 		}
@@ -2093,7 +2109,8 @@
 			"level": 1,
 			"entries": [
 				"你懂得{@language 德鲁伊语}，这是德鲁伊们的秘密语言。你可以说这种语言并用它留下隐藏信息。你和其他懂这种语言的人能自动发现这类信息。其他人需要通过一次{@dc 15}的感知（{@skill 察觉}）检定才能发现信息的存在，但若无魔法辅助则无法解读。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Spellcasting",
@@ -2165,7 +2182,8 @@
 						"你可以用{@item 德鲁伊法器|phb}作为你施展德鲁伊法术的法器。"
 					]
 				}
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Druid Circle",
@@ -2178,7 +2196,8 @@
 			"level": 2,
 			"entries": [
 				"第2级时，你将选择参与一个德鲁伊结社。你可以从德鲁伊结社列表中选择其一。随后，你将在第2、第6、第10、第14级时获得所选结社相应的特性。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Wild Companion",
@@ -2259,7 +2278,8 @@
 						"变形时，你可以选择将你的装备丢在所处空间，或者将其融入新形态，又或者直接着装在身上。新形态直接着装的装备可以如常起作用，但DM有权基于新形态的体型和身姿作出判断，并最终决定新形态使用该装备是否合理。装备不会改变大小来适应新形态，新形态无法着装某装备时，该装备会掉落你所处空间或融入新形态中。融入新形态的装备失去其效应，且在你变回原形时才能恢复。"
 					]
 				}
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Ability Score Improvement",
@@ -2273,7 +2293,8 @@
 			"entries": [
 				"当你达到4级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
 				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Cantrip Versatility",
@@ -2300,7 +2321,8 @@
 			"level": 4,
 			"entries": [
 				"第4级时，你的荒野形态能力会根据野兽形态表上显示的那样得到增强。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Druid Circle feature",
@@ -2313,7 +2335,8 @@
 			"level": 6,
 			"entries": [
 				"你将第6时获得所选结社相应的特性。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Ability Score Improvement",
@@ -2327,7 +2350,8 @@
 			"entries": [
 				"当你达到第8级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过该特性让属性超过20。",
 				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Wild Shape Improvement",
@@ -2340,7 +2364,8 @@
 			"level": 8,
 			"entries": [
 				"第8级时，你的荒野形态能力会根据野兽形态表上显示的那样得到增强。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Druid Circle feature",
@@ -2353,7 +2378,8 @@
 			"level": 10,
 			"entries": [
 				"你将在第10时获得所选结社相应的特性。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Ability Score Improvement",
@@ -2367,7 +2393,8 @@
 			"entries": [
 				"当你达到第12级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过该特性让属性超过20。",
 				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Druid Circle feature",
@@ -2380,7 +2407,8 @@
 			"level": 14,
 			"entries": [
 				"你将在第14时获得所选结社相应的特性。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Ability Score Improvement",
@@ -2394,7 +2422,8 @@
 			"entries": [
 				"当你达到16级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
 				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Beast Spells",
@@ -2407,7 +2436,8 @@
 			"level": 18,
 			"entries": [
 				"第18级起，你在荒野形态下可以施展大部分的德鲁伊法术。在野兽形态时，你可以完成德鲁伊法术的姿势与言语成分，但无法完成其材料成分的使用。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Timeless Body",
@@ -2420,7 +2450,8 @@
 			"level": 18,
 			"entries": [
 				"第18级起，你行使的原初荒野魔力让你的衰老速度减缓。每经过10年的岁月，你的身体就仿佛只过了1年。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Ability Score Improvement",
@@ -2434,7 +2465,8 @@
 			"entries": [
 				"当你达到19级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
 				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Archdruid",
@@ -2448,7 +2480,8 @@
 			"entries": [
 				"第20级时，你可以无限次的使用荒野变形。",
 				"另外，你还可以将德鲁伊法术中的姿势和言语成分，以及无价值和不被法术消耗的材料成分忽略。你在原形态和荒野形态下都可以从此特性获益。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Druidic",
@@ -2463,7 +2496,8 @@
 			"entries": [
 				"你学会了德鲁伊语，一门德鲁伊之间的秘密语言。在学会这门古老语言的同时，你也解锁了和动物交谈的魔法：你始终准备{@spell 动物交谈|XPHB}法术。",
 				"你可以使用德鲁伊语来传递隐藏的信息。你和其他知晓这门语言的对象能够自动辨认出信息。其他人需要通过{@dc 15}的智力（{@skill 调查|XPHB}）检定才能意识到信息的存在，但不借助魔法则无法解读。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Magician",
@@ -2477,7 +2511,8 @@
 			"level": 1,
 			"entries": [
 				"你学会一个额外的{@filter 德鲁伊法术列表|spells|class=德鲁伊}中的戏法。此外，你和自然的神秘连接让你在智力（{@skill 奥秘|XPHB}或{@skill 自然|XPHB}）检定上获得加值。加值等于你的感知调整值（最小为1）。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Primal Order",
@@ -2510,7 +2545,8 @@
 						}
 					]
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Spellcasting",
@@ -2581,7 +2617,8 @@
 						}
 					]
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Warden",
@@ -2595,7 +2632,8 @@
 			"level": 1,
 			"entries": [
 				"你受到了战斗的训练，获得{@filter 军用武器|items|type=军用武器}熟练和{@filter 中甲|items|type=中甲}熟练。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Wild Companion",
@@ -2610,7 +2648,8 @@
 			"entries": [
 				"你可以召唤出一个动物外形的自然精魂来帮助自己。以一个{@action 魔法|XPHB}动作，你可以消耗一个法术位或一次荒野变形次数来施展{@spell 寻获魔宠|XPHB}法术，无需任何材料成分。",
 				"当你以这种方式施展这一法术时，获得的魔宠为妖精Fey，并且它会在你完成一次{@variantrule 长休|XPHB}后消失。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Wild Shape",
@@ -2729,7 +2768,8 @@
 						}
 					]
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Druid Subclass",
@@ -2743,7 +2783,8 @@
 			"level": 3,
 			"entries": [
 				"你选择获得一项德鲁伊子职。子职是一种特化，在特定的德鲁伊等级给予你对应的独特能力。此后你将获得每一个你所选的子职的能力，只要其所需等级等于或低于你的德鲁伊等级。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Ability Score Improvement",
@@ -2757,7 +2798,8 @@
 			"level": 4,
 			"entries": [
 				"你获得{@feat 属性值提升|XPHB}专长或其它你满足条件的{@5etools 专长|feats.html}。你还会在你的德鲁伊等级达到第8、第12、第16级时再次获得本特性。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Wild Resurgence",
@@ -2772,7 +2814,8 @@
 			"entries": [
 				"每个你的回合内一次，如果你没有荒野变形使用次数，你可以消耗一个法术位（无需动作）让自己获得一次荒野变形次数。",
 				"此外，你可以消耗一次荒野变形使用次数（无需动作）来令自己获得一个1环法术位，在你完成一次{@variantrule 长休|XPHB}以前，你无法再次这样做。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Subclass Feature",
@@ -2786,7 +2829,8 @@
 			"level": 6,
 			"entries": [
 				"你从你的德鲁伊子职中获得了一个特性。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Elemental Fury",
@@ -2819,7 +2863,8 @@
 						}
 					]
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Potent Spellcasting",
@@ -2834,7 +2879,8 @@
 			"header": 2,
 			"entries": [
 				"你将你的感知调整值加在你的以德鲁伊戏法造成的伤害上。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Primal Strike",
@@ -2849,7 +2895,8 @@
 			"header": 2,
 			"entries": [
 				"每个你的回合内一次，当你以一次武器攻击或荒野变形中野兽形态的攻击命中一名生物时，你可以对目标额外造成{@damage 1d8}寒冷、火焰、闪电或雷鸣伤害（由你命中时选择）。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Ability Score Improvement",
@@ -2863,7 +2910,8 @@
 			"level": 8,
 			"entries": [
 				"你获得{@feat 属性值提升|XPHB}专长或其它你满足条件的{@5etools 专长|feats.html}。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Subclass Feature",
@@ -2877,7 +2925,8 @@
 			"level": 10,
 			"entries": [
 				"你从你的德鲁伊子职中获得了一个特性。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Ability Score Improvement",
@@ -2891,7 +2940,8 @@
 			"level": 12,
 			"entries": [
 				"你获得{@feat 属性值提升|XPHB}专长或其它你满足条件的{@5etools 专长|feats.html}。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Subclass Feature",
@@ -2905,7 +2955,8 @@
 			"level": 14,
 			"entries": [
 				"你从你的德鲁伊子职中获得了一个特性。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Improved Elemental Fury",
@@ -2940,7 +2991,8 @@
 						}
 					]
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Ability Score Improvement",
@@ -2954,7 +3006,8 @@
 			"level": 16,
 			"entries": [
 				"你获得{@feat 属性值提升|XPHB}专长或其它你满足条件的{@5etools 专长|feats.html}。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Beast Spells",
@@ -2968,7 +3021,8 @@
 			"level": 18,
 			"entries": [
 				"你可以在任何荒野变形下施法。当一个法术需要标有价值的材料成分或需要消耗材料成分时，你无法在荒野变形下施展。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Epic Boon",
@@ -2982,7 +3036,8 @@
 			"level": 19,
 			"entries": [
 				"你获得一项{@filter 传奇恩惠专长|feats|category=EB}或其他一项你选择的适用的{@5etools 专长|feats.html}。推荐选择{@feat 次元旅行之恩惠|XPHB}。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Archdruid",
@@ -3025,7 +3080,8 @@
 						}
 					]
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		}
 	],
 	"subclassFeature": [
@@ -3054,7 +3110,8 @@
 					"type": "refSubclassFeature",
 					"subclassFeature": "结社法术|德鲁伊||大地||2"
 				}
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Bonus Cantrip",
@@ -3070,7 +3127,8 @@
 			"header": 1,
 			"entries": [
 				"在第2级选择该结社时，你学会一个额外的德鲁伊戏法。这个戏法不计入你的已知戏法数量中。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Circle Spells",
@@ -3327,7 +3385,8 @@
 						]
 					]
 				}
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Natural Recovery",
@@ -3344,7 +3403,8 @@
 			"entries": [
 				"第2级起，你可以通过静坐冥想与自然建立交流，并以此恢复部分魔法能量。完成一次短休后，你可以选择恢复部分已使用的法术位。所恢复法术位环阶的总和等于你德鲁伊职业等级的一半（向上取整），且不能是6环或更高环阶。你在完成一次长休后才能再次使用该特性。",
 				"例如，作为一名4级德鲁伊时，你可恢复环阶总数为二的法术位。你可以选择恢复一枚2环法术位或者两枚1环法术位。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Land's Stride",
@@ -3361,7 +3421,8 @@
 			"entries": [
 				"第6级起，你穿过非魔法的{@quickref 困难地形||3}时不会消耗额外移动力。你穿过非魔法的植物时不会消耗额外的移动力，且这类植物的荆棘、毛刺或类似的危害物也无法对你造成伤害。",
 				"另外，在抵抗魔法制造或控制的植物造成的移动障碍效应时（例如{@spell 纠缠术}），你进行豁免检定时具有优势。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Nature's Ward",
@@ -3377,7 +3438,8 @@
 			"header": 2,
 			"entries": [
 				"第10级起，你免疫元素生物或精类生物造成的{@condition 魅惑}或{@condition 恐慌}状态，并且免疫中毒和疾病。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Nature's Sanctuary",
@@ -3394,7 +3456,8 @@
 			"entries": [
 				"第14级起，自然界的生物感知到你跟自然的链接而不会主动攻击你。当一个野兽或植物类的生物攻击你时，该生物必须先进行一次对抗你德鲁伊法术DC的感知豁免。豁免失败时，该生物必须选择另一个目标，否则其攻击将判为未命中。豁免成功时，该生物在随后的24小时内免疫此效应。",
 				"该生物会在攻击你之前就意识到你有此效应。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Circle of the Moon",
@@ -3417,7 +3480,8 @@
 					"type": "refSubclassFeature",
 					"subclassFeature": "结社形态|德鲁伊||月亮||2"
 				}
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Circle Forms",
@@ -3489,7 +3553,8 @@
 						]
 					]
 				}
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Combat Wild Shape",
@@ -3505,7 +3570,8 @@
 			"entries": [
 				"从你选择该结社的第2级起，你可以在自己回合内用一个附赠动作而不是动作来使用荒野形态特性。",
 				"此外，在你荒野形态变形期间，你可以用附赠动作消耗一个法术位来恢复相应法术位每环阶{@dice 1d8}点生命值。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Primal Strike",
@@ -3520,7 +3586,8 @@
 			"header": 2,
 			"entries": [
 				"第6级起，你以野兽形态攻击时，如果目标对非魔法攻击或伤害具有免疫或抗性，则你的攻击此时视为魔法攻击。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Elemental Wild Shape",
@@ -3540,7 +3607,8 @@
 			},
 			"entries": [
 				"第10级起，你可以花费两次荒野形态次数以变成{@creature 气元素}，{@creature 土元素}，{@creature 火元素}或者{@creature 水元素}。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Thousand Forms",
@@ -3555,7 +3623,8 @@
 			"header": 2,
 			"entries": [
 				"第14级起，你学会了用魔法精确改变自身外形的方法。你可以随意施展法术{@spell 变身术}。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Circle of Spores",
@@ -4387,8 +4456,10 @@
 				"_preserve": {
 					"page": true,
 					"srd": true
-				}
-			}
+				},
+				"translator": "不全书"
+			},
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Circle of the Moon",
@@ -4410,8 +4481,10 @@
 				"level": 2,
 				"_preserve": {
 					"page": true
-				}
-			}
+				},
+				"translator": "不全书"
+			},
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Circle of Spores",
@@ -4551,7 +4624,8 @@
 					"type": "refSubclassFeature",
 					"subclassFeature": "大地之援|德鲁伊|XPHB|大地|XPHB|3"
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Circle of the Land Spells",
@@ -4687,7 +4761,8 @@
 						]
 					]
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Land's Aid",
@@ -4704,7 +4779,8 @@
 			"entries": [
 				"以一个{@action 魔法|XPHB}动作，你可以消耗一次荒野变形使用次数并且选择距你 60 尺内的一点。给予活力的繁花和吸取生命的荆刺在以那一点为源点的 10 尺半径{@variantrule 球状 [效应区域]|XPHB|球状}区域同时生出。在该{@variantrule 球状 [效应区域]|XPHB|球状}区域内每个你所选择的生物必须进行一次对抗你法术豁免DC的体质豁免，豁免失败时生物受到{@damage 2d6}暗蚀伤害，豁免成功时受到半数伤害。此外，区域内你所选择的一名生物恢复{@dice 2d6}{@variantrule 生命值|XPHB}。",
 				"当你到达特定的德鲁伊等级时，伤害和治疗量会提升{@dice 1d6}：10 级（{@dice 3d6}）和 14 级（{@dice 4d6}）。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Natural Recovery",
@@ -4722,7 +4798,8 @@
 			"entries": [
 				"你可以施展一个你以结社法术特性准备的一环及以上法术，而无须消耗法术位，并且你必须在完成一次{@variantrule 长休|XPHB}后才能再次这么做。",
 				"此外，当你结束一次{@variantrule 短休|XPHB}时，你可以选择恢复消耗的法术位。法术环阶的总和等于你德鲁伊职业等级的一半（向上取整），且不能是六环或更高环阶的法术位。比如说，作为一位 6 级德鲁伊，你可以恢复环阶总和最多为 3 的法术位。你可以恢复一个三环法术位，或者一个二环和一个一环法术位，或者三个一环法术位。一旦你以此特性恢复过法术位，直到完成一次{@variantrule 长休|XPHB}为止，你无法再次这么做。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Nature's Ward",
@@ -4774,7 +4851,8 @@
 						}
 					]
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Nature's Sanctuary",
@@ -4792,7 +4870,8 @@
 			"entries": [
 				"以一个{@action 魔法|XPHB}动作，你可以消耗一次荒野形态的使用次数，并让灵体树木和藤蔓出现在你自身120尺范围内地面上的一个15尺{@variantrule 立方 [效应区域]|XPHB|立方}效应区域内。它们在那里持续存在1分钟，或者直到你陷入{@condition 失能|XPHB}状态或死亡。你和你的盟友在该区域内拥有{@variantrule 掩护|XPHB|半身掩护}，并且你的盟友在该区域内获得你自然之护的当前{@variantrule 抗性|XPHB}。",
 				"以一个{@variantrule 附赠动作|XPHB}，你可以将{@variantrule 立方 [效应区域]|XPHB|立方}区域在你的120尺内移动最多60尺距离。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Circle Forms",
@@ -4835,7 +4914,8 @@
 						}
 					]
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Circle of the Moon",
@@ -4859,7 +4939,8 @@
 					"type": "refSubclassFeature",
 					"subclassFeature": "结社形态|德鲁伊|XPHB|月亮|XPHB|3"
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Circle of the Moon Spells",
@@ -4941,7 +5022,8 @@
 						}
 					]
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Moonlight Step",
@@ -4957,7 +5039,8 @@
 			"entries": [
 				"能以魔法转移自身，在一道月光中重新出现。以一个{@variantrule 附赠动作|XPHB}，你传送最多 30 尺到一处你能看见的未被占据的空间，并且你在这个回合结束前进行的下一次攻击具有{@variantrule 优势|XPHB}。",
 				"你可以使用该特性的次数等于你的感知调整值（最少 1 次），并且你在结束一次{@variantrule 长休|XPHB}后重获全部已消耗的使用次数。你也能消耗一个二环或更高的法术位来恢复一次使用次数（无需任何动作）。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Lunar Form",
@@ -4993,7 +5076,8 @@
 						}
 					]
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Circle of the Sea",
@@ -5016,7 +5100,8 @@
 					"type": "refSubclassFeature",
 					"subclassFeature": "瀚海之怒|德鲁伊|XPHB|海洋|XPHB|3"
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Circle of the Sea Spells",
@@ -5076,7 +5161,8 @@
 			"entries": [
 				"以一个{@variantrule 附赠动作|XPHB}，你可以消耗一次你的荒野变形次数来在自己周围显现出海浪形态的 5 尺{@variantrule 光环 [效应区域]|XPHB|光环}。光环会持续存在 10 分钟。当你解除它（无需任何动作）、再度显现光环或陷入{@condition 失能|XPHB}时，它会提前结束。",
 				"当你显现出{@variantrule 光环 [效应区域]|XPHB|光环}时，以及在之后的回合中以一个{@variantrule 附赠动作|XPHB}，你可以选择另一个在你{@variantrule 光环 [效应区域]|XPHB|光环}范围内你可见的生物。该生物必须成功通过一次对抗你的法术豁免DC的体质豁免，否则受到寒冷伤害，如果该生物是大型或更小体型，它会被从你身边推离至多 15 尺距离。投掷等于你感知调整值数量（最少 1 颗）的d6骰来决定伤害。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Aquatic Affinity",
@@ -5092,7 +5178,8 @@
 			"entries": [
 				"你的瀚海之怒创造的{@variantrule 光环 [效应区域]|XPHB|光环}范围提升至 10 尺。",
 				"此外，你获得等于你{@variantrule 速度|XPHB}的{@variantrule 游泳速度|XPHB}。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Stormborn",
@@ -5123,7 +5210,8 @@
 						"你获得对寒冷、闪电和雷鸣伤害的{@variantrule 抗性|XPHB}。"
 					]
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Oceanic Gift",
@@ -5139,7 +5227,8 @@
 			"entries": [
 				"当你使用瀚海之怒时，你可以让 60 尺内一个自愿生物而非你自己身上显现出{@variantrule 光环 [效应区域]|XPHB|光环}。该生物获得{@variantrule 光环 [效应区域]|XPHB|光环}的所有增益，并在特性中使用你的法术豁免DC和感知调整值。",
 				"此外，如果你消耗两次而非一次荒野变形使用次数，你可以同时在你自己和另一个生物身上显现出{@variantrule 光环 [效应区域]|XPHB|光环}。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Circle of the Stars",
@@ -5162,7 +5251,8 @@
 					"type": "refSubclassFeature",
 					"subclassFeature": "星耀形态|德鲁伊|XPHB|星辰|XPHB|3"
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Star Map",
@@ -5217,7 +5307,8 @@
 						]
 					]
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Starry Form",
@@ -5266,7 +5357,8 @@
 			"header": 2,
 			"entries": [
 				"一个弓箭射手的星座于你身上浮现。当你激活这个形态时你可以进行一次远程法术攻击，对你 60 尺内的一个生物射出一发光箭，在形态持续期间的后续回合中你也能够以一个{@variantrule 附赠动作|XPHB}发射光箭。命中时，此攻击将造成等同于 {@damage 1d8} + 你的感知调整值点的光耀伤害。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Chalice",
@@ -5281,7 +5373,8 @@
 			"header": 2,
 			"entries": [
 				"一个予命圣杯的星座于你身上浮现。当你消耗法术位施展一个为生物恢复{@variantrule 生命值|XPHB}的法术时，你或你周围 30 尺内的另一生物可以恢复等同于 {@dice 1d8} + 你的感知调整值点的{@variantrule 生命值|XPHB}。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Dragon",
@@ -5335,7 +5428,8 @@
 					]
 				},
 				"你可以使用这一{@variantrule 反应|XPHB}能力的次数等同于你的感知调整值（最少 1 次），在你完成一次{@variantrule 长休|XPHB}后，你会重获所有已消耗的使用次数。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Twinkling Constellations",
@@ -5351,7 +5445,8 @@
 			"entries": [
 				"你的星耀形态星座增强了。射手座和圣杯座中的{@damage 1d8}都变成了{@damage 2d8}，而在巨龙座激活期间，你将获得 20 尺的{@variantrule 飞行速度|XPHB}，并且可以悬浮。",
 				"此外，每个你的回合开始时，若此时你处于在星耀形态下，你可以更改当前身上闪耀的星座。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Full of Stars",
@@ -5366,7 +5461,8 @@
 			"header": 2,
 			"entries": [
 				"处于星耀形态期间，你的身体部分无实质化，使你获得钝击、穿刺与挥砍伤害的{@variantrule 抗性|XPHB}。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		}
 	]
 }

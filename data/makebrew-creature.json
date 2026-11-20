@@ -6,7 +6,8 @@
 			"source": "MM",
 			"entries": [
 				"<$short_name$>周围10英尺半径内的地面变得像面团一样{@quickref 困难地形||3}。每个在该区域内开始其回合的生物必须成功通过一个{@dc 10}力量豁免检定，否则其速度将减少到0，直到其下一回合开始。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Acid Absorption",
@@ -14,7 +15,8 @@
 			"source": "MM",
 			"entries": [
 				"每当<$short_name$>遭受强酸伤害时，它不会受到伤害，反而会根据受到的强酸伤害值恢复等量的生命值。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Adhesive",
@@ -22,7 +24,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 会粘附在任何触碰它的物体上。被粘附的巨型或更小的生物也会被其 {@condition 受擒}（逃脱 {@dc 13}）。逃脱此擒抱的能力检定具有劣势。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Aggressive",
@@ -38,7 +41,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 可以进入一个敌对生物的空间并停留在那里。它可以通过宽仅1英寸的空间而无需挤压。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Ambusher",
@@ -70,7 +74,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>的武器攻击是魔法性的。当<$short_name$>使用任何武器命中时，该武器造成额外的{@damage 4d8}光辉伤害。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Angelic Weapons (Planetar)",
@@ -78,7 +83,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>的武器攻击具有魔法性质。当<$short_name$>用任何武器命中时，该武器会造成额外的{@damage 5d8}光辉伤害。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Angelic Weapons (Solar)",
@@ -86,7 +92,8 @@
 			"source": "MM",
 			"entries": [
 				"在每个回合开始时，<$title_short_name$>对任何正在擒抱它的生物造成5点（{@damage 6d8}）穿刺伤害。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Antimagic Susceptibility",
@@ -102,7 +109,8 @@
 			"source": "MM",
 			"entries": [
 				"在它的第一回合，<$short_name$>对尚未行动的任何生物进行攻击检定时具有优势。<$short_name$>对处于{@status 突袭}状态的生物命中的任何攻击都是重击。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Aversion of Fire",
@@ -110,7 +118,8 @@
 			"source": "MM",
 			"entries": [
 				"如果<$short_name$>受到火焰伤害，直到其下一回合结束，其攻击检定和属性检定都会处于不利状态。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Avoidance",
@@ -126,7 +135,8 @@
 			"source": "MM",
 			"entries": [
 				"在其每回合开始时，<$short_name$>会对任何擒抱它的生物造成5（{@damage 1d10}）点穿刺伤害。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Beast of Burden",
@@ -134,7 +144,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 在确定其承载能力时被认为是大型动物。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Berserk (Clay Golem)",
@@ -142,7 +153,8 @@
 			"source": "MM",
 			"entries": [
 				"每当<$short_name$>的生命值降至60点或更少时，投掷一个{@dice d6}。如果结果是6，<$short_name$>会变得狂暴。在狂暴状态下的每个回合，<$short_name$>会攻击它能看到的最近的生物。如果没有生物足够近以至于可以移动并攻击，<$short_name$>会选择攻击一个物体，优先选择比自己小的物体。一旦<$short_name$>变得狂暴，它会持续狂暴状态，直到被摧毁或恢复所有生命值。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Berserk (Flesh Golem)",
@@ -151,7 +163,8 @@
 			"entries": [
 				"每当<$short_name$>以40点或更少生命值开始其回合时，掷一个{@dice d6}骰子。若结果为6，<$short_name$>进入狂暴状态。狂暴期间，<$short_name$>每回合会攻击其能看到的最近生物。如果没有生物足够近以供其移动并攻击，<$short_name$>会攻击一个物体，优先选择比其自身小的物体。一旦<$short_name$>进入狂暴状态，它会持续狂暴直到被摧毁或恢复所有生命值。",
 				"<$title_short_name$>的创造者，如果在狂暴的<$short_name$>60英尺内，可以通过坚定而有说服力地说话来尝试使其平静下来。<$title_short_name$>必须能够听到其创造者的声音，而创造者必须采取行动进行一次{@skill 游说}的魅力（{@dc 15}）检定。如果检定成功，<$short_name$>将停止狂暴。如果它在仍然有40点或更少的生命值时受到伤害，<$short_name$>可能会再次陷入狂暴。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Blind Senses",
@@ -175,7 +188,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>与一个命令护符魔法性地相连。在<$title_short_name$>和其命令护符位于同一存在位面期间，命令护符的佩戴者可以心灵感应般的呼唤<$title_short_name$>来到自己的位置，并且<$title_short_name$>知晓自己与命令护符的距离及其位置。如果<$title_short_name$>位于命令护符佩戴者60尺范围内，佩戴者所承受到的任何伤害的一半（向上取整）都会转移给<$title_short_name$>。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Brave",
@@ -183,7 +197,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>在对抗{@condition 恐慌}状态的豁免检定上有优势。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Brute",
@@ -207,7 +222,8 @@
 			"source": "MM",
 			"entries": [
 				"如果<$short_name$>在同一回合内至少向目标直线移动15英尺，然后用它的长牙击中目标，目标将额外受到7点（{@damage 2d6}）的挥砍伤害。如果目标是生物，它必须成功通过一次{@dc 13}的力量豁免检定，否则将被击倒为{@condition 倒地}状态。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Confer Fire Resistance",
@@ -215,7 +231,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>可以赋予骑乘它的人火焰伤害抗性。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Consume Life (Will-o'-Wisp)",
@@ -223,7 +240,8 @@
 			"source": "MM",
 			"entries": [
 				"作为奖励动作，<$short_name$>可以瞄准一个它在5英尺内能看到的、拥有0生命值但仍然存活的生物。目标必须通过一次{@dc 10}体质豁免检定来抵抗这个魔法，否则就会死亡。如果目标死亡，<$short_name$>恢复10（{@dice 3d6}）生命值。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Corrode Metal",
@@ -232,7 +250,8 @@
 			"entries": [
 				"任何击中<$short_name$>的非魔法金属武器都会腐蚀。在造成伤害后，武器对伤害骰的投掷将获得一个永久且累积的-1惩罚。如果其惩罚降至-5，武器将被摧毁。任何击中<$short_name$>的非魔法金属制弹药，在造成伤害后将被摧毁。",
 				"<$title_short_name$>可以在1回合内吃掉2英寸厚的非魔法金属。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Corrosive Form",
@@ -241,7 +260,8 @@
 			"entries": [
 				"任何触碰<$short_name$>或在5英尺内使用近战攻击击中它的生物，将受到4点（{@damage 1d8}）的强酸伤害。任何由金属或木材制成的非魔法武器，如果击中<$short_name$>，则会腐蚀。造成伤害后，该武器对伤害掷骰有永久性和累积性的-1惩罚。如果其惩罚降至-5，该武器将被摧毁。由金属或木材制成的非魔法弹药，如果击中<$short_name$>，则在造成伤害后被摧毁。",
 				"<$title_short_name$> 能在1回合内吃掉2英寸厚的非魔法木材或金属。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Damage Transfer (Cloaker)",
@@ -249,7 +269,8 @@
 			"source": "MM",
 			"entries": [
 				"当<$short_name$> 附着于一个生物时，任何对其造成的伤害减半（向下取整），而另一半伤害则由被附着的生物承受。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Damage Transfer (Rug of Smothering)",
@@ -257,7 +278,8 @@
 			"source": "MM",
 			"entries": [
 				"当<$short_name$>擒抱一个生物时，<$short_name$>只受到一半的伤害，而被<$short_name$> {@condition 受擒} 的生物则受到另一半伤害。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Dark Devotion",
@@ -265,7 +287,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 在对抗被{@condition 魅惑}或{@condition 恐慌}的豁免检定上具有优势。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Death Burst (Dust Mephit)",
@@ -273,7 +296,8 @@
 			"source": "MM",
 			"entries": [
 				"当<$short_name$>死亡时，它会在一阵尘埃中爆炸。每个在其5英尺内的生物都必须成功通过一次{@dc 10}体质豁免检定，否则会在接下来的1分钟内处于{@condition 目盲}状态。一个{@condition 目盲}的生物可以在其每个回合上重复进行豁免检定，一旦成功即可解除该效果。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Death Burst (Ice Mephit)",
@@ -281,7 +305,8 @@
 			"source": "MM",
 			"entries": [
 				"当<$short_name$>死亡时，它会在一阵尖锐的冰中爆炸。它周围5英尺内的每个生物都必须进行一次{@dc 10}敏捷豁免检定，失败则受到4 ({@damage 1d8}) 点挥砍伤害，成功则受到一半的伤害。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Death Burst (Magma Mephit)",
@@ -289,7 +314,8 @@
 			"source": "MM",
 			"entries": [
 				"当<$short_name$>死亡时，它会在一阵熔岩爆发中爆炸。在其5英尺内的每个生物都必须进行一次{@dc 11}敏捷豁免，失败则受到7（{@damage 2d6}）点火焰伤害，成功则受到一半的伤害。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Death Burst (Magmin)",
@@ -297,7 +323,8 @@
 			"source": "MM",
 			"entries": [
 				"当<$short_name$>死亡时，它会在一阵火焰和岩浆中爆炸。距离它10英尺内的每个生物都必须进行一次{@dc 11}敏捷豁免检定，失败者会受到7 ({@damage 2d6})点火焰伤害，成功者则受到一半伤害。该区域内未被穿戴或携带的易燃物品会被点燃。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Death Burst (Steam Mephit)",
@@ -305,7 +332,8 @@
 			"source": "MM",
 			"entries": [
 				"当<$short_name$>死亡时，它会在一团蒸汽中爆炸。每个在其 5 英尺范围内的生物必须进行一次 {@dc 10} 敏捷豁免检定，豁免失败则受到 4（{@damage 1d8}）点火焰伤害，豁免成功则受到一半伤害。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Death Throes (Balor)",
@@ -313,7 +341,8 @@
 			"source": "MM",
 			"entries": [
 				"当<$short_name$>死亡时，它会爆炸，每个位于其30英尺范围内的生物必须进行一次{@dc 20}敏捷豁免，若豁免失败则受到70（{@damage 20d6}）点火焰伤害，若豁免成功则只受到一半伤害。爆炸会点燃该区域内未被穿戴或携带的可燃物，并摧毁<$short_name$>的武器。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Devil's Sight",
@@ -321,7 +350,8 @@
 			"source": "MM",
 			"entries": [
 				"魔法造成的黑暗不会妨碍<$short_name$>的黑暗视觉。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Dive Attack (Aarakocra)",
@@ -329,7 +359,8 @@
 			"source": "MM",
 			"entries": [
 				"如果<$short_name$>在飞行中，并且向目标直线俯冲至少30英尺，然后用近战武器攻击命中目标，该攻击会对目标造成额外的3点({@damage 1d6})伤害。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Divine Awareness",
@@ -337,7 +368,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 能知道它听到的是谎言。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Duergar Resilience",
@@ -345,7 +377,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>对毒药、法术和幻术的豁免检定具有优势，并且能够抵抗被{@condition 魅惑}或{@condition 麻痹}。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Earth Glide",
@@ -353,7 +386,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 能够通过非魔法、未加工的土壤和石头进行挖掘。在这样做时，<$short_name$> 不会扰乱它穿过的材料。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Echolocation",
@@ -369,7 +403,8 @@
 			"source": "MM",
 			"entries": [
 				"<$short_name$>死亡时，它的身体将分解为温暖的微风，只留下该<$short_name$>原先着装或携带的装备。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Elemental Demise (Efreeti)",
@@ -377,7 +412,8 @@
 			"source": "MM",
 			"entries": [
 				"<$short_name$>死亡时，它的身体将分解为一团火和一缕烟，只留下该<$short_name$>原先着装或携带的装备。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Ephemeral",
@@ -385,7 +421,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 不能穿戴或携带任何物品。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Ethereal Jaunt",
@@ -393,7 +430,8 @@
 			"source": "MM",
 			"entries": [
 				"作为一个附赠动作，<$short_name$>可以神奇地从物质界转移到以太界，或者反之亦然。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Evasion",
@@ -401,7 +439,8 @@
 			"source": "MM",
 			"entries": [
 				"如果<$short_name$>遭受允许它进行敏捷豁免检定以只承受一半伤害的效果，<$short_name$>如果在豁免检定中成功，则不承受任何伤害；如果失败，则只承受一半伤害。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "False Appearance (Animated Armor)",
@@ -409,7 +448,8 @@
 			"source": "MM",
 			"entries": [
 				"当<$short_name$>保持静止时，它与普通的盔甲无异。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "False Appearance (Awakened Shrub)",
@@ -417,7 +457,8 @@
 			"source": "MM",
 			"entries": [
 				"当<$short_name$>保持静止时，它与普通的灌木丛无法区分。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "False Appearance (Awakened Tree)",
@@ -425,7 +466,8 @@
 			"source": "MM",
 			"entries": [
 				"当<$short_name$>保持静止时，它与普通树木无法区分。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "False Appearance (Cloaker)",
@@ -433,7 +475,8 @@
 			"source": "MM",
 			"entries": [
 				"当<$short_name$>保持静止不动且其底部未被暴露时，它与一件黑暗的皮甲斗篷无法区分。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "False Appearance (Darkmantle)",
@@ -441,7 +484,8 @@
 			"source": "MM",
 			"entries": [
 				"当<$short_name$>保持静止时，它与洞穴构造如钟乳石或石笋无法区分。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "False Appearance (Flying Sword)",
@@ -449,7 +493,8 @@
 			"source": "MM",
 			"entries": [
 				"当<$short_name$>停止飞行并静止不动时与普通的剑一模一样。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "False Appearance (Gargoyle)",
@@ -457,7 +502,8 @@
 			"source": "MM",
 			"entries": [
 				"当<$short_name$>保持静止时，它与一尊无生命的雕像无法区分。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "False Appearance (Gray Ooze)",
@@ -465,7 +511,8 @@
 			"source": "MM",
 			"entries": [
 				"当<$short_name$>保持静止时，它与油质池或湿滑的岩石无法区分。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "False Appearance (Ice Mephit)",
@@ -473,7 +520,8 @@
 			"source": "MM",
 			"entries": [
 				"当<$short_name$>静止不动时和普通的冰锥几乎一模一样。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "False Appearance (Magma Mephit)",
@@ -481,7 +529,8 @@
 			"source": "MM",
 			"entries": [
 				"当<$short_name$>保持静止时，它与普通的岩浆堆无法区分。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "False Appearance (Mimic)",
@@ -489,7 +538,8 @@
 			"source": "MM",
 			"entries": [
 				"当<$short_name$>保持静止时，它与普通物体无法区分。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "False Appearance (Roper)",
@@ -497,7 +547,8 @@
 			"source": "MM",
 			"entries": [
 				"当<$short_name$>保持静止时，它与普通的洞穴构造，比如石笋，无法区分。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "False Appearance (Rug of Smothering)",
@@ -505,7 +556,8 @@
 			"source": "MM",
 			"entries": [
 				"当<$short_name$>保持静止时，它与普通的地毯无法区分。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "False Appearance (Shrieker)",
@@ -513,7 +565,8 @@
 			"source": "MM",
 			"entries": [
 				"当<$short_name$>保持静止时，它与普通的真菌无法区分。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "False Appearance (Treant)",
@@ -521,7 +574,8 @@
 			"source": "MM",
 			"entries": [
 				"当<$short_name$>保持静止时，它与普通树木无法区分。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "False Appearance (Violet Fungus)",
@@ -529,7 +583,8 @@
 			"source": "MM",
 			"entries": [
 				"当<$short_name$>保持静止时，它与普通的真菌无法区分。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Faultless Tracker",
@@ -537,7 +592,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 由其召唤者赋予一个猎物。只要两者存在于同一存在平面上，<$title_short_name$> 就知道其猎物的方向和距离。<$title_short_name$> 还知道其召唤者的位置。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Fear Aura (Pit Fiend)",
@@ -545,7 +601,8 @@
 			"source": "MM",
 			"entries": [
 				"任何对<$short_name$>怀有敌意的生物，如果在<$short_name$>20英尺内开始其回合，必须进行一次{@dc 21}的感知豁免掷骰，除非<$short_name$>处于{@condition 失能}状态。如果豁免失败，该生物将处于{@condition 恐慌}状态，直到其下一个回合开始。如果一个生物的豁免掷骰成功，那么在接下来的24小时内，该生物对<$short_name$>的恐惧光环免疫。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Fey Ancestry",
@@ -569,7 +626,8 @@
 			"source": "MM",
 			"entries": [
 				"每当<$short_name$>遭受火焰伤害时，它不会受到伤害，反而会恢复等于所受火焰伤害数值的生命值。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Fire Aura (Balor)",
@@ -577,7 +635,8 @@
 			"source": "MM",
 			"entries": [
 				"在<$short_name$>每回合开始时，其5英尺内的每个生物受到10点（{@damage 3d6}）火焰伤害，且该光环中的易燃物品如果未被穿戴或携带则会被引燃。一个生物如果在5英尺内触摸<$short_name$>或用近战攻击击中它，则会受到10点（{@damage 3d6}）火焰伤害。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Fire Form (Fire Elemental)",
@@ -585,7 +644,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 可以穿过宽达1英寸的狭窄空间而不挤压。当生物触碰 <$short_name$> 或在5英尺内用近战攻击击中它时，会受到5点（{@damage 1d10}）火焰伤害。此外，<$short_name$> 可以进入敌对生物的空间并停留在那里。它在一回合中第一次进入生物空间时，该生物会受到5点（{@damage 1d10}）火焰伤害并着火；直到有人采取行动扑灭火焰，该生物在每个回合开始时都会受到5点（{@damage 1d10}）火焰伤害。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Flyby",
@@ -601,7 +661,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>忽略{@quickref 困难地形||3}，魔法效果不能降低其速度或使其处于{@condition 束缚}状态。它可以花费5尺的移动力来逃脱非魔法的束缚或{@condition 受擒}。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Freeze",
@@ -609,7 +670,8 @@
 			"source": "MM",
 			"entries": [
 				"如果<$short_name$>受到寒冷伤害，它会部分冻结；它的速度在下回合结束前减少20尺。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Gibbering (Gibbering Mouther)",
@@ -617,7 +679,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>在看到任何生物且不被{@condition 失能}时，会语无伦次地胡言乱语。每个在<$short_name$>周围20英尺内开始其回合并能听到这些胡言的生物必须成功通过一个{@dc 10}的感知豁免检定。若失败，该生物在其下一个回合开始前不能进行反应，并投掷一个{@dice d8}来决定其在该回合中的行动。投掷结果为1至4时，该生物不采取任何行动。投掷结果为5或6时，该生物不采取任何行动或附加行动，并使用其所有移动能力沿随机确定的方向移动。投掷结果为7或8时，该生物对其攻击范围内的一个随机确定的生物发动一次近战攻击，如果无法进行此类攻击则不采取任何行动。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Gnome Cunning",
@@ -625,7 +688,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>在对抗魔法的感知、感知和魅力豁免检定中具有优势。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Grappler",
@@ -641,7 +705,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 一次最多可以有六条触手。每条触手都可以被攻击（AC 20；10点生命值；对毒素和心灵伤害免疫）。摧毁一条触手不会对捕食者造成伤害，捕食者可以在其下一个回合伸出一条替代的触手。如果一个生物采取行动并且成功通过一个 {@dc 15} 力量检定对抗它，也可以打断触手。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Heated Body (Azer)",
@@ -649,7 +714,8 @@
 			"source": "MM",
 			"entries": [
 				"任何接触到<$short_name$>或在5英尺内用近战攻击击中它的生物都会受到4点（{@damage 1d10}）的酸蚀伤害。任何由金属或木头制成的非魔法武器，如果击中<$short_name$>，就会腐蚀。造成伤害后，该武器对伤害掷骰会有永久且累积的-1减值。如果其减值降至-5，该武器就会被摧毁。由金属或木头制成的非魔法弹药，如果击中<$short_name$>，会在造成伤害后被摧毁。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Heated Body (Remorhaz)",
@@ -657,7 +723,8 @@
 			"source": "MM",
 			"entries": [
 				"当一个生物在距离<$short_name$> 5英尺范围内触摸它或用近战攻击命中它时，受到10点（{@damage 3d6}）火焰伤害。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Heated Body (Salamander)",
@@ -665,7 +732,8 @@
 			"source": "MM",
 			"entries": [
 				"一个生物在5英尺范围内触摸<$short_name$>或用近战攻击击中它时，将受到7点（{@damage 2d6}）火焰伤害。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Heated Weapons (Azer)",
@@ -673,7 +741,8 @@
 			"source": "MM",
 			"entries": [
 				"任何金属近战武器<$short_name$>攻击命中时额外造成3（{@damage 1d6}）点火焰伤害。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Heated Weapons (Salamander)",
@@ -681,7 +750,8 @@
 			"source": "MM",
 			"entries": [
 				"任何金属近战武器<$short_name$>攻击命中时额外造成3（{@damage 1d6}）点火焰伤害。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Hellish Rejuvenation (Lemure)",
@@ -689,7 +759,8 @@
 			"source": "MM",
 			"entries": [
 				"一个<$short_name$>若在九层地狱中死亡，会在{@dice 1d10}天后复活并恢复所有生命值，除非它被一个善良阵营的生物杀死，且该生物正受祝福术影响，或者它的遗骸被撒上{@item 圣水 (扁瓶)|PHB|圣水}。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Hellish Weapons (Erinyes)",
@@ -697,7 +768,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>的武器攻击是魔法的，命中时额外造成13点({@damage 3d8})毒素伤害。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Hold Breath (Crocodile)",
@@ -705,7 +777,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>可以屏住呼吸15分钟。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Hold Breath (Giant Crocodile)",
@@ -713,7 +786,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>可以屏住呼吸30分钟。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Hold Breath (Giant Octopus)",
@@ -721,7 +795,8 @@
 			"source": "MM",
 			"entries": [
 				"离开水时，<$short_name$>可以憋气1小时。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Hold Breath (Hydra)",
@@ -729,7 +804,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>可以憋气1小时。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Hold Breath (Killer Whale)",
@@ -737,7 +813,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>可以屏住呼吸30分钟。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Hold Breath (Lizardfolk)",
@@ -745,7 +822,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>可以屏住呼吸15分钟。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Hold Breath (Octopus)",
@@ -753,7 +831,8 @@
 			"source": "MM",
 			"entries": [
 				"离开水时，<$short_name$>可以憋气30分钟。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Hold Breath (Plesiosaurus)",
@@ -761,7 +840,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>可以憋气1小时。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Horrific Appearance (Sea Hag)",
@@ -770,7 +850,8 @@
 			"entries": [
 				"任何在<$short_name$>30英尺内开始其回合并能看到<$short_name$>真身的人形生物都必须进行一次{@dc 11}感知豁免检定。豁免失败时，该生物会陷入{@condition 恐慌}状态1分钟。一个生物可以在每个回合结束时重复进行豁免检定，如果<$short_name$>在其视线范围内，则带有劣势，成功时效果对自己终止。如果一个生物的豁免检定成功或效果对其结束，那么在接下来的24小时内，该生物对<$short_name$>的恐怖外貌免疫。",
 				"除非目标处于{@status 突袭}状态，或者<$short_name$>的真实形态突然显露，否则目标可以避开视线，避免进行初次豁免检定。直到其下个回合开始之前，避开视线的生物在对<$short_name$>的攻击检定上会有劣势。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Ice Walk",
@@ -778,7 +859,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>可以在冰面上移动和攀爬，无需进行属性检定。此外，由冰或雪构成的{@quickref 困难地形||3}不会增加它的额外移动。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Ignited Illumination (Magmin)",
@@ -786,7 +868,8 @@
 			"source": "MM",
 			"entries": [
 				"作为一个附赠动作，<$short_name$>可以自燃或熄灭火焰。在燃烧时，<$short_name$>在10尺半径内发出明亮的光线，并在额外的10尺内发出微光。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Illumination (Azer)",
@@ -794,7 +877,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>在10尺半径内发出明亮的光芒，并在额外的10尺内发出微光。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Illumination (Fire Elemental)",
@@ -802,7 +886,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>在30尺半径内发出明亮的光线，并在额外的30尺内发出微光。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Illumination (Giant Fire Beetle)",
@@ -810,7 +895,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>在10尺半径内发出明亮的光芒，并在额外的10尺内发出微光。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Illumination (Nightmare)",
@@ -818,7 +904,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>在10尺半径内发出明亮的光芒，并在额外的10尺内发出微光。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Immutable Form",
@@ -858,7 +945,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>能通过嗅觉精确定位它周围30尺内的铁质金属。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Keen Hearing",
@@ -866,7 +954,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>在依赖于听觉的感知（{@skill 察觉}）检定时具有优势。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Keen Hearing and Sight",
@@ -874,7 +963,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>在依靠听觉或视觉的感知（{@skill 察觉}）检定上拥有优势。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Keen Hearing and Smell",
@@ -882,7 +972,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>在依赖听觉或嗅觉的感知（{@skill 察觉}）检定上具有优势。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Keen Senses",
@@ -898,7 +989,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 在依赖视觉的感知（{@skill 察觉}）检定上具有优势。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Keen Sight and Smell",
@@ -906,7 +998,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>在依靠视觉或嗅觉的感知（{@skill 察觉}）检定上拥有优势。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Keen Smell",
@@ -914,7 +1007,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>在依靠嗅觉的感知（{@skill 察觉}）检定上拥有优势。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Labyrinthine Recall",
@@ -930,7 +1024,8 @@
 			"source": "MM",
 			"entries": [
 				"如果<$short_name$>未能通过豁免检定，它可以选择成功。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Light Sensitivity",
@@ -946,7 +1041,8 @@
 			"source": "MM",
 			"entries": [
 				"每当<$short_name$>遭受到闪电伤害时，它不会受到伤害，反而会恢复等同于所受闪电伤害数值的生命值。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Limited Amphibiousness (Sahuagin)",
@@ -954,7 +1050,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>可以呼吸空气和水，但它需要至少每4小时被淹没一次以避免窒息。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Limited Magic Immunity (Rakshasa)",
@@ -962,7 +1059,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>可以随自己意愿的免受6环或更低环阶法术的效应影响或侦测。它在对抗其他法术和魔法效应时所作的豁免检定具有优势。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Limited Telepathy (Otyugh)",
@@ -970,7 +1068,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>可以向任何能够理解语言的，在它120尺范围内的生物，通过魔法传递简单的信息和图像。这种心灵感应不允许接收生物进行心灵感应回应。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Limited Telepathy (Pseudodragon)",
@@ -978,7 +1077,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>可以神奇地与任何能理解语言的生物进行心灵感应，传递简单的想法、情感和图像，这些生物必须在它100尺范围内。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Magic Resistance",
@@ -1002,7 +1102,8 @@
 			"source": "MM",
 			"entries": [
 				"每回合一次，<$short_name$> 可以用武器攻击对一个位于其盟友5英尺内的非{@condition 失能}生物造成额外7点({@damage 2d6})伤害。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Mimicry (Green Hag)",
@@ -1010,7 +1111,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 可以模仿动物的声音和人声。听到这些声音的生物可以通过一次成功的 {@dc 14} 感知 ({@skill 洞悉}) 检定来识别它们是模仿的。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Mimicry (Raven)",
@@ -1018,7 +1120,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 可以模仿它听到的简单声音，例如人耳语、婴儿哭泣或动物吱吱叫。听到这些声音的生物可以通过一次成功的 {@dc 10} 感知（{@skill 洞悉}）检定来识别它们是被模仿的。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Misty Escape (Vampire)",
@@ -1027,7 +1130,8 @@
 			"entries": [
 				"当<$short_name$>在其休息地之外降至0点生命值时，<$short_name$>会转变成一团雾气（如变形者特性所述），而不是进入{@condition 昏迷}状态，前提是它不在阳光或流水中。如果它不能转变，它将被摧毁。",
 				"当它以雾态形式的生命值降至0点时，它不能恢复为<$short_name$>形态，并且必须在2小时内到达其休息场所，否则将被毁灭。一旦到达休息场所，它将恢复为<$short_name$>形态。此时它将处于{@condition 麻痹}状态，直到它至少恢复1点生命值。在其休息场所以0点生命值度过1小时后，它将恢复1点生命值。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Mucous Cloud (Aboleth)",
@@ -1035,7 +1139,8 @@
 			"source": "MM",
 			"entries": [
 				"在水下时，<$short_name$> 被转化的黏液包围。触碰到 <$short_name$> 或在5英尺内用近战攻击击中它的生物必须进行一次 {@dc 14} 体质豁免检定。失败的话，该生物会患病 {@dice 1d4} 小时。患病的生物只能在水下呼吸。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Multiple Heads (Hydra)",
@@ -1045,7 +1150,8 @@
 				"<$title_short_name$> 有五个头。只要它有超过一个头，<$short_name$> 在对抗致盲（{@condition 目盲}）、魅惑（{@condition 魅惑}）、失聪（{@condition 耳聋}）、恐惧（{@condition 恐慌}）、昏迷（{@condition 震慑}）以及击昏（{@condition 昏迷}）效果的豁免检定上具有优势。",
 				"当<$short_name$>在一回合内受到25点以上的伤害时，它的一个脑袋便会死去。当它所有脑袋死去时，<$short_name$>也随之死亡。",
 				"<$title_short_name$>在其自己回合结束时，会从其上一回合中死去脑袋处长出两颗新脑袋，除非它从上一回合开始的时间里曾遭受火焰伤害。每有一颗脑袋以该方式再生，<$title_short_name$>便回复10点生命值。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Nimble Escape",
@@ -1064,7 +1170,8 @@
 				"在<$short_name$>内的生物可以被看到，但{@quickref 掩护||3||全身掩护}。",
 				"<$short_name$> 5英尺内的生物可以采取行动，将生物或物体从<$short_name$>中拉出。这样做需要一次成功的{@dc 12}力量检定，尝试的生物会受到10点（{@damage 3d6}）强酸伤害。",
 				"<$title_short_name$>一次只能容纳一个大型生物或最多四个中型或更小的生物。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Otherworldly Perception",
@@ -1090,7 +1197,8 @@
 				"如果一个生物在其回合开始时位于<$short_name$>的30英尺内，且两者能够互相看见，那么<$short_name$>可以强迫该生物进行一次{@dc 12}体质豁免检定，前提是<$short_name$>没有处于{@condition 失能}状态。在豁免失败的情况下，该生物会神奇地开始变成石头并被{@condition 束缚}。它必须在下一个回合结束时重复进行豁免检定。若成功，效果结束。若失败，该生物将{@condition 石化}，直到通过更强大的复原法术或其他魔法解除。",
 				"一个不是{@status 突袭}的生物可以在其回合开始时避开视线以避免进行豁免检定。如果它这样做了，直到其下一个回合开始前它都无法看到<$short_name$>，届时它又可以避开视线。如果在此期间它看向<$short_name$>，它必须立即进行豁免。",
 				"如果<$short_name$>在明亮的光线下看到距离它30尺以内的自己的倒影，它会误认为自己是对手，并用目光锁定自己。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Pounce (Lion)",
@@ -1098,7 +1206,8 @@
 			"source": "MM",
 			"entries": [
 				"如果<$short_name$>在一回合内至少直线移动20英尺朝向一个生物，然后使用爪击攻击它，该目标必须成功通过一次{@dc 13}力量豁免检定，否则将被击倒{@condition 倒地}。如果目标已经处于{@condition 倒地}状态，<$short_name$>可以作为一个额外动作对其发动一次撕咬攻击。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Pounce (Panther)",
@@ -1106,7 +1215,8 @@
 			"source": "MM",
 			"entries": [
 				"如果<$short_name$>直朝一个生物移动至少20英尺，并在同一回合内以爪击命中该生物，目标必须成功通过一次{@dc 12}力量豁免检定，否则将被击倒{@condition 倒地}。如果目标{@condition 倒地}，<$short_name$>可以对其进行一次咬击作为附加动作。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Pounce (Saber-Toothed Tiger)",
@@ -1114,7 +1224,8 @@
 			"source": "MM",
 			"entries": [
 				"如果<$short_name$>在同一回合内至少向一个生物直线移动20英尺，并使用爪击攻击该生物，则目标必须通过一次{@dc 14}力量豁免检定，否则会被击倒为{@condition 倒地}状态。如果目标处于{@condition 倒地}状态，<$short_name$>可以作为奖励动作对其发动一次撕咬攻击。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Pounce (Tiger)",
@@ -1122,7 +1233,8 @@
 			"source": "MM",
 			"entries": [
 				"如果<$short_name$>在一回合内至少直线移动20英尺朝向一个生物，然后使用爪击攻击它，该目标必须成功通过一次{@dc 13}力量豁免检定，否则将被击倒{@condition 倒地}。如果目标已经处于{@condition 倒地}状态，<$short_name$>可以作为一个额外动作对其发动一次撕咬攻击。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Pounce (Weretiger)",
@@ -1130,7 +1242,8 @@
 			"source": "MM",
 			"entries": [
 				"如果<$short_name$>在直线移动至少15英尺朝向一个生物并在同一回合内用爪击命中它，则该目标必须成功通过一次{@dc 14}力量豁免检定，否则将被击倒 {@condition 倒地}。如果目标处于 {@condition 倒地} 状态，<$short_name$>可以用一次奖励动作对它进行咬击。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Probing Telepathy (Aboleth)",
@@ -1138,7 +1251,8 @@
 			"source": "MM",
 			"entries": [
 				"如果一个生物通过心灵感应与<$short_name$>沟通，如果<$short_name$>能看到这个生物，<$short_name$>就会了解到这个生物最深的欲望。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Psychic Defense",
@@ -1170,7 +1284,8 @@
 			"source": "MM",
 			"entries": [
 				"除了一个头之外，<$short_name$>每多一个头，就会获得一个额外的反应，只能用来进行借机攻击。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Reckless",
@@ -1186,7 +1301,8 @@
 			"source": "MM",
 			"entries": [
 				"任何时候<$short_name$>被{@spell 魔法飞弹}法术、线形法术或需要远程攻击判定的法术作为目标时，掷一个{@dice d6}。如果是1到5，<$short_name$>不受影响。如果是6，<$short_name$>不受影响，并且效果会反射回施法者，就好像它起源于<$short_name$>一样，将施法者变成目标。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Regeneration (Oni)",
@@ -1194,7 +1310,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>在其自己的回合开始时恢复10点生命值，前提是它至少有1点生命值。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Regeneration (Shield Guardian)",
@@ -1202,7 +1319,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>在其自己的回合开始时恢复10点生命值，前提是它至少有1点生命值。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Regeneration (Troll)",
@@ -1210,7 +1328,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>在它的回合开始时回复10点生命值。如果<$title_short_name$>受到强酸或者火焰伤害，则该特质在它的下一回合里无法生效。如果<$title_short_name$>以0生命值开始其自己回合且无法使用再生，则<$title_short_name$>死亡。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Regeneration (Vampire Spawn)",
@@ -1218,7 +1337,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 在它的回合开始时恢复10点生命值，前提是它至少有1点生命值且不在阳光或流水中。如果<$short_name$>受到光耀伤害或来自{@item 圣水 (扁瓶)|PHB|圣水}的伤害，此特质在<$short_name$>的下个回合开始时失效。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Regeneration (Vampire)",
@@ -1226,7 +1346,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 在它的回合开始时恢复 20 点生命值，前提是它至少有 1 点生命值且不在阳光或流水中。如果 <$short_name$> 受到光耀伤害或来自 {@item 圣水 (扁瓶)|PHB|圣水} 的伤害，此特质在 <$short_name$> 的下个回合开始时不会生效。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Rejuvenation (Guardian Naga)",
@@ -1234,7 +1355,8 @@
 			"source": "MM",
 			"entries": [
 				"如果它死亡，<$short_name$>将在{@dice 1d6}天后复活并恢复所有生命值。只有{@spell 祈愿术}法术可以阻止这一特性发挥作用。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Rejuvenation (Lich)",
@@ -1242,7 +1364,8 @@
 			"source": "MM",
 			"entries": [
 				"如果它有法器，被摧毁的<$short_name$>将在{@dice 1d10}天内获得新的身体，恢复所有生命值并再次活跃。新的身体出现在法器周围5尺内。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Rejuvenation (Mummy Lord)",
@@ -1250,7 +1373,8 @@
 			"source": "MM",
 			"entries": [
 				"如果<$short_name$>的心脏完好，被摧毁的<$short_name$>在24小时内会获得一个新身体，恢复其所有的生命值并再次活跃。新身体出现在<$short_name$>心脏的5尺范围内。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Rejuvenation (Spirit Naga)",
@@ -1258,7 +1382,8 @@
 			"source": "MM",
 			"entries": [
 				"如果它死亡，<$short_name$>将在{@dice 1d6}天后复活并恢复所有生命值。只有{@spell 祈愿术}法术可以阻止这一特性发挥作用。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Relentless (Boar)",
@@ -1266,7 +1391,8 @@
 			"source": "MM",
 			"entries": [
 				"如果<$short_name$>受到7点伤害或更少，这将使其生命值降至0点，则其生命值改为降至1点。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Relentless (Giant Boar)",
@@ -1274,7 +1400,8 @@
 			"source": "MM",
 			"entries": [
 				"如果<$short_name$>受到的伤害小于或等于10点，并且这会将其生命值减少到0，则其生命值反而减少到1点。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Relentless (Wereboar)",
@@ -1282,7 +1409,8 @@
 			"source": "MM",
 			"entries": [
 				"如果<$short_name$>受到的伤害小于或等于14点，并且这会将其生命值减少到0，则其生命值反而减少到1点。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Running Leap (Lion)",
@@ -1290,7 +1418,8 @@
 			"source": "MM",
 			"entries": [
 				"借助10尺的助跑，<$short_name$>可以跳远至25尺。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Rust Metal",
@@ -1298,7 +1427,8 @@
 			"source": "MM",
 			"entries": [
 				"任何击中<$short_name$>的非魔法金属武器都会腐蚀。在造成伤害后，武器对伤害骰的投掷将获得一个永久且累积的-1惩罚。如果其惩罚降至-5，武器将被摧毁。任何击中<$short_name$>的非魔法金属制弹药，在造成伤害后将被摧毁。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Sense Magic (Chuul)",
@@ -1306,7 +1436,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>可以随意感知其120尺范围内的魔法。此特质在其他方面如同侦测魔法法术，但其本身并非魔法。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Shadow Stealth",
@@ -1322,7 +1453,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>可以使用其行动来变形成它见过的小型或中型类人生物，或者恢复其真实形态。除了体型之外，它在每种形态下的具体数值都相同。它穿着或携带的任何装备不会被变形。如果它死亡，它将恢复其真实形态。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Shapechanger (Imp)",
@@ -1330,7 +1462,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>可以使用其行动来变形成类似于老鼠（速度20尺）、乌鸦（20尺，飞行60尺）或蜘蛛（20尺，攀爬20尺）的野兽形态，或者恢复其真实形态。它在每种形态下的具体数值相同，除了注明的速度变化。它穿着或携带的任何装备不会被变形。如果它死亡，它将恢复其真实形态。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Shapechanger (Mimic)",
@@ -1338,7 +1471,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>可以使用其行动变形成物体或恢复其真实的无定形形态。它在每种形态下的具体数值都相同。它穿着或携带的任何装备都不会被变形。如果它死亡，它将恢复其真实形态。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Shapechanger (Quasit)",
@@ -1346,7 +1480,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>用一个动作变形为一只野兽的相仿形态。可选野兽形态有三种：蝙蝠bat（速度10尺，飞行40尺），蜈蚣centipede（速度40尺，攀爬40尺），蟾蜍toad（速度40尺，游泳40尺）。它也同样可以用该动作恢复其真实形态。除速度外，它的所有资料均不会发生改变，其随身着装和携带的装备不会随变形发生变化。在死亡时，小恶魔将恢复其真实形态。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Shapechanger (Succubus/Incubus)",
@@ -1354,7 +1489,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 可以使用它的行动来变化为小型或中型的人形生物，或者恢复其真实形态。没有翅膀时，<$short_name$> 失去了它的飞行速度。除了它的大小和速度，它在每种形态下的具体数值都是相同的。它穿戴或携带的任何装备不会被变化。如果它死亡，它将恢复其真实形态。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Shapechanger (Vampire)",
@@ -1362,7 +1498,8 @@
 			"source": "MM",
 			"entries": [
 				"如果<$short_name$>不在阳光直射下或不在流动的水中，它可以利用它的行动变化成一个微小的蝙蝠或中等大小的雾云，或者恢复其真正形态。在蝙蝠形态时，<$short_name$>不能说话，它的行走速度为5尺，飞行速度为30尺。除了体型和速度的变化外，它的其他具体数值保持不变。它穿戴的任何物品会随着它一起变化，但它携带的任何物品则不会。如果它死亡，它将恢复其真正形态。在雾的形态中，<$short_name$>不能采取任何行动，说话或操纵物体。它是无重量的，飞行速度为20尺，可以悬停，并可以进入敌对生物的空间并停留在那里。此外，如果空气可以通过一个空间，雾也可以在不挤压的情况下通过，并且它不能通过水。它在力量、敏捷和体质豁免检定上具有优势，并且对所有非魔法伤害免疫，除了它从阳光下受到的伤害。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Shapechanger (Werebear)",
@@ -1370,7 +1507,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 可以使用它的行动变化为大型熊人混生体或大型熊，或者恢复其真实的人形形态。除了它的大小和护甲等级（AC），它在每种形态下的具体数值都是相同的。它穿戴或携带的任何装备不会被变化。如果它死亡，它将恢复其真实形态。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Shapechanger (Wereboar)",
@@ -1378,7 +1516,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 可以使用它的行动变化为野猪人混生体或野猪，或者恢复其真实的人形形态。除了它的护甲等级（AC），它在每种形态下的具体数值都是相同的。它穿戴或携带的任何装备不会被变化。如果它死亡，它将恢复其真实形态。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Shapechanger (Wererat)",
@@ -1386,7 +1525,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 可以使用它的行动变化成一个鼠人混生体或一个巨大的老鼠，或者恢复其真正的人形形态。每种形态下的具体数值相同，除了体型的变化。它穿戴或携带的任何装备不会被转变。如果它死亡，它将恢复其真正形态。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Shapechanger (Weretiger)",
@@ -1394,7 +1534,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 可以使用它的行动来变身为虎人混生体或老虎，或者变回它的真身，即人类形态。它在每种形态下的具体数值，除了大小之外，都是相同的。它穿着或携带的任何装备不会被转换。如果它死亡，它将恢复到它的真身形态。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Shapechanger (Werewolf)",
@@ -1402,7 +1543,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>可以使用它的行动来变身为狼人混生体或狼，或者变回其真实的人形形态。除了AC之外，它在每种形态下的具体数值都是相同的。它穿着或携带的任何装备都不会被变形。如果它死亡，它将恢复其真实形态。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Shark Telepathy",
@@ -1410,7 +1552,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>可以利用有限的心灵感应魔法命令它周围120尺内的任何鲨鱼。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Shielded Mind",
@@ -1418,7 +1561,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>对占卜免疫，并且对任何探测其情感、读取其思想或侦测其位置的效果免疫。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Siege Monster",
@@ -1442,7 +1586,8 @@
 			"source": "MM",
 			"entries": [
 				"<$short_name$> 每回合一次，当使用武器攻击命中目标且在攻击掷骰上有优势，或者目标位于 <$short_name$> 的一位未处于 {@condition 失能} 状态的盟友5英尺内且 <$short_name$> 在攻击掷骰上没有劣势时，造成额外的14点（{@damage 4d6})伤害。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Sneak Attack (Spy)",
@@ -1450,7 +1595,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>在使用武器攻击命中目标时，且攻击掷骰具有优势，或当目标在<$short_name$>的盟友5英尺范围内且该盟友未处于{@condition 失能}状态，且<$short_name$>在攻击掷骰上没有劣势时，额外造成7（{@damage 2d6}）点伤害。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Snow Camouflage",
@@ -1458,7 +1604,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>在雪地地形中进行敏捷（{@skill 隐匿}）检定以隐藏时具有优势。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Speak with Beasts and Plants",
@@ -1466,7 +1613,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>能够与野兽和植物沟通，就好像它们共享着一种语言。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Spell Storing (Shield Guardian)",
@@ -1474,7 +1622,8 @@
 			"source": "MM",
 			"entries": [
 				"着装<$short_name$>护符的施法者可以让<$short_name$>储存一个4环或更低环阶的法术。护符着装者必须向<$short_name$>施展该法术以完成该过程，而该法术此时不会产生效应而是储存于<$short_name$>体内。当着装者下令或者当满足其预先设置的条件时，该<$short_name$>便会将储存的法术施展完整不变的施展出来，且无需任何成分。当储存的法术被施展，或一个新的法术被储存时，则任何旧有的法术也会随之消失。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Spider Climb",
@@ -1490,7 +1639,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>的立定跳远可达30尺，立定跳高可达15尺，无论是否助跑。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Standing Leap (Frog)",
@@ -1498,7 +1648,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 的立定跳远可达10尺，立定跳高可达5尺，无论是否助跑。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Standing Leap (Giant Frog)",
@@ -1506,7 +1657,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 的长跳可达20尺，高跳可达10尺，无论是否助跑。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Standing Leap (Giant Toad)",
@@ -1514,7 +1666,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 的长跳可达20尺，高跳可达10尺，无论是否助跑。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Steadfast",
@@ -1530,7 +1683,8 @@
 			"source": "MM",
 			"entries": [
 				"任何生物在其回合开始时位于<$short_name$>10英尺范围内，必须成功进行一次{@dc 14}体质豁免检定，否则将被{@condition 中毒}直到其下一个回合开始。如果豁免检定成功，该生物将在24小时内对<$short_name$>的恶臭免疫。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Stone Camouflage",
@@ -1538,7 +1692,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 在岩石地形中进行潜行（{@skill 隐匿}）检定时具有优势。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Sunlight Sensitivity",
@@ -1554,7 +1709,8 @@
 			"source": "MM",
 			"entries": [
 				"在日光下，<$short_name$>在攻击检定、属性检定和豁免检定上具有劣势。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Sure-Footed",
@@ -1562,7 +1718,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>在对抗可能使其进入{@condition 倒地}状态的效果时，在力量和敏捷豁免检定上拥有优势。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Surprise Attack (Bugbear)",
@@ -1570,7 +1727,8 @@
 			"source": "MM",
 			"entries": [
 				"如果<$short_name$>在战斗的第一轮中出其不意地攻击一个生物并命中，目标将额外受到7点（{@damage 2d6}）的伤害。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Surprise Attack (Doppelganger)",
@@ -1578,7 +1736,8 @@
 			"source": "MM",
 			"entries": [
 				"如果<$short_name$>在战斗的第一轮中出其不意地攻击到一个生物并命中，目标会从这次攻击中额外受到10点（{@damage 3d6}）伤害。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Swamp Camouflage",
@@ -1586,7 +1745,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>在沼泽地形中进行敏捷（{@skill 隐匿})检定时拥有优势。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Swarm (Swarm of Bats)",
@@ -1594,7 +1754,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 可以占据另一个生物的空间，反之亦然，这个群体可以通过足够大的开口移动，这个开口至少要能容纳一只微小的蝙蝠。这个群体无法恢复生命值或获得临时生命值。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Swarm (Swarm of Insects)",
@@ -1602,7 +1763,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>可以占据另一个生物的空间，反之亦然，并且群体可以穿过足够大的微小昆虫的开口。群体不能恢复生命值或获得临时生命值。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Swarm (Swarm of Poisonous Snakes)",
@@ -1610,7 +1772,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>可以占据另一个生物的空间，反之亦然，并且群体可以穿过足够大的微小蛇类生物的开口。群体不能恢复生命值或获得临时生命值。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Swarm (Swarm of Quippers)",
@@ -1618,7 +1781,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>可以占据另一个生物的空间，反之亦然，并且群体可以穿过足够大的食人鱼的开口。群体不能恢复生命值或获得临时生命值。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Swarm (Swarm of Rats)",
@@ -1626,7 +1790,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 可以占据另一个生物的空间，反之亦然，这个群体可以通过足够大的开口移动，这个开口至少要能容纳一只微小的老鼠。这个群体无法恢复生命值或获得临时生命值。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Swarm (Swarm of Ravens)",
@@ -1634,7 +1799,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>可以占据另一个生物的空间，反之亦然，并且群体可以穿过足够大的微小乌鸦的开口。群体不能恢复生命值或获得临时生命值。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Tactical Discipline",
@@ -1642,7 +1808,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>在战斗中进行的所有属性检定和豁免检定具有优势。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Tail Spike Regrowth (Manticore)",
@@ -1650,7 +1817,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>有二十四根尾刺。使用过的尾刺会在<$short_name$>完成一次长休后重新生长。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Telepathic Bond (Homunculus)",
@@ -1658,7 +1826,8 @@
 			"source": "MM",
 			"entries": [
 				"当<$short_name$>与其主人位于同一存在位面时，它能以魔法方式将其感知传递给主人，两者可通过心灵感应交流。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Telepathic Bond (Succubus/Incubus)",
@@ -1666,7 +1835,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>在与其已{@condition 魅惑}的生物进行心灵感应交流时，不受其心灵感应的距离限制。两者甚至不需要存在于同一存在平面上。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Trampling Charge (Elephant)",
@@ -1674,7 +1844,8 @@
 			"source": "MM",
 			"entries": [
 				"如果<$short_name$>在直线移动至少20英尺后在同回合内以角击命中一个生物，该目标必须成功通过一次 {@dc 12} 力量豁免检定，否则将被击倒 {@condition 倒地}。如果目标 {@condition 倒地}，<$short_name$>可以作为一个附加动作对其进行一次践踏攻击。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Trampling Charge (Gorgon)",
@@ -1682,7 +1853,8 @@
 			"source": "MM",
 			"entries": [
 				"如果<$short_name$>向一个生物直线移动至少20英尺，然后在同个回合用冲撞攻击击中它，那么目标必须成功通过一次{@dc 16}力量豁免检定，否则将被击倒为 {@condition 倒地}。如果目标已经处于 {@condition 倒地} 状态，<$short_name$>可以在作为奖励动作时用它的蹄子对其进行一次攻击。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Trampling Charge (Mammoth)",
@@ -1690,7 +1862,8 @@
 			"source": "MM",
 			"entries": [
 				"如果<$short_name$>至少向一个生物直线移动20英尺，然后在同回合用角击攻击它，目标必须成功通过一次{@dc 18}力量豁免掷骰或被击倒{@condition 倒地}。如果目标已经{@condition 倒地}，<$short_name$>可以作为一个奖励动作对其进行一次踩踏攻击。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Trampling Charge (Triceratops)",
@@ -1698,7 +1871,8 @@
 			"source": "MM",
 			"entries": [
 				"如果<$short_name$>朝一个生物直线移动至少20英尺，并在同一回合内用角击攻击命中它，该目标必须成功通过一次{@dc 13}力量豁免检定，否则将被击倒{@condition 倒地}。如果目标处于{@condition 倒地}状态，<$short_name$>可以作为一个附加动作对它进行一次践踏攻击。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Trampling Charge (Warhorse)",
@@ -1706,7 +1880,8 @@
 			"source": "MM",
 			"entries": [
 				"如果<$short_name$>直线移动至少20英尺向一个生物，并在同一回合用蹄攻击命中该生物，该目标必须成功通过一个{@dc 14}力量豁免检定，否则将被击倒{@condition 倒地}。如果目标已处于{@condition 倒地}状态，<$short_name$>可以作为一个附加动作再对其进行一次蹄攻击。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Transparent (Gelatinous Cube)",
@@ -1714,7 +1889,8 @@
 			"source": "MM",
 			"entries": [
 				"即使当<$short_name$>在明显可见的位置时，也需要成功的{@dc 15}感知（{@skill 察觉}）检定才能发现一个既没有移动也没有攻击的<$short_name$>。当一个生物在未察觉到<$short_name$>的情况下试图进入<$short_name$>的空间时，该生物会被<$short_name$>{@status 突袭}。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Treasure Sense",
@@ -1722,7 +1898,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 可以通过嗅觉精确定位60尺范围内的贵金属和宝石，例如硬币和宝石。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Tree Stride",
@@ -1730,7 +1907,8 @@
 			"source": "MM",
 			"entries": [
 				"在它们的回合中，<$short_name$>可以使用10尺的移动力，神奇地步入一个可触及的活树，并从第一个树60尺范围内的第二个活树中出现，出现在第二个树5尺内的未被占据的空间。两棵树都必须是大型或更大。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Tunneler (Purple Worm)",
@@ -1738,7 +1916,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 能够以其一半的掘穴速度掘穴通过坚硬的岩石，并在其身后留下直径10尺的地道。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Turn Immunity",
@@ -1762,7 +1941,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>以及其周围30尺范围内的所有食尸鬼在对驱散不死生物效果的豁免检定中具有优势。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Two Heads",
@@ -1786,7 +1966,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 在水下进行敏捷（{@skill 隐匿}）检定时具有优势。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Vampire Weakness (Vampire)",
@@ -1798,7 +1979,8 @@
 				"{@i 流水之伤}。如果<$title_short_name$>在流水中结束其回合，它将受到20点强酸伤害。",
 				"{@i 桩刺}. 如果一把由木头制成的穿刺武器在<$short_name$>位于其休息处且处于{@condition 失能}状态时被刺入<$short_name$>的心脏，<$short_name$>将处于{@condition 麻痹}状态，直到木桩被移除。",
 				"{@i 日照超敏}<$title_short_name$> 在其自己的回合开始时若处于阳光直射下，则受20点光耀伤害。此外，他的攻击检定与属性检定也具有劣势。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Variable Illumination (Will-o'-Wisp)",
@@ -1806,7 +1988,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>在5到20尺半径内散发出明亮的光芒，并在等于所选半径的额外尺数内散发出昏暗的光芒。<$title_short_name$>可以作为一个附赠动作改变半径。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Wakeful (Ettin)",
@@ -1814,7 +1997,8 @@
 			"source": "MM",
 			"entries": [
 				"当<$short_name$>的一个头在睡觉时，另一个头是醒着的。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Wakeful (Hydra)",
@@ -1822,7 +2006,8 @@
 			"source": "MM",
 			"entries": [
 				"当<$short_name$>睡觉时，至少有一个头是醒着的。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Water Breathing",
@@ -1830,7 +2015,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 只能在水下呼吸。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Water Form (Water Elemental)",
@@ -1838,7 +2024,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 可以进入一个敌对生物的空间并停留在那里。它可以通过宽仅1英寸的空间而无需挤压。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Water Susceptibility (Fire Elemental)",
@@ -1846,7 +2033,8 @@
 			"source": "MM",
 			"entries": [
 				"每在水里移动5尺，或每有1加仑的水溅到<$short_name$>身上，它就会受到1点寒冷伤害。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Web Sense",
@@ -1872,7 +2060,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>在一条30尺长、5尺宽的直线上喷射酸液，前提是它没有生物{@condition 受擒}。在该直线上的每个生物必须进行一次DC <$dc__dex$> 敏捷豁免检定，失败时受到10 ({@damage 3d6})点强酸伤害，成功则伤害减半。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Animate Chains (Chain Devil)",
@@ -1881,7 +2070,8 @@
 			"entries": [
 				"在<$short_name$>能看到的60尺范围内，最多四根链条会神奇地长出剃刀般锋利的倒钩，并在<$short_name$>的控制下动起来，前提是这些链条没有被穿戴或携带。",
 				"每条活化的链条是一个具有AC 20、20生命值的对象，对穿刺伤害有抗性，并对心灵和雷鸣伤害免疫。当<$short_name$>在其回合使用多重攻击时，它可以使用每条活化链条进行一次额外的链条攻击。活化链条可以缠绕一个生物，但在缠绕时不能进行攻击。如果活化链条的生命值降至0点，或者<$short_name$>处于{@condition 失能}状态或死亡，它将恢复为无生命状态。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Beard (Bearded Devil)",
@@ -1889,7 +2079,8 @@
 			"source": "MM",
 			"entries": [
 				"{@atk mw} 命中{@hit <$命中__力量$>}，触及5尺，单一生物。{@h}<$damage_avg__5+str$> ({@damage 1d8<$伤害修正__力量$>}) 穿刺伤害，目标必须成功通过一次 DC <$dc__con$> 体质豁免检定，否则将 {@condition 中毒} 1 分钟。以这种方式 {@condition 中毒} 时，目标无法恢复生命值。目标可以在其每回合结束时重复进行豁免检定，成功则结束此效果。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Bite (Cloaker)",
@@ -1897,7 +2088,8 @@
 			"source": "MM",
 			"entries": [
 				"{@atk mw} 命中{@hit <$命中__力量$>}，触及5尺，单一生物。{@h}<$damage_avg__6+str$>（{@damage 2d6<$damage_mod__str$>}）点穿刺伤害，如果目标体型为大型或更小，<$short_name$>会附着在它身上。如果<$short_name$>对目标有优势，<$short_name$>会附着在目标的头部，目标在<$short_name$>附着期间将处于{@condition 目盲}状态且无法呼吸。附着时，<$title_short_name$>只能对目标进行这次攻击，并在攻击掷骰上有优势。<$title_short_name$>可以通过消耗5尺的移动来自行脱离。任何生物，包括目标，都可以采取行动尝试脱离<$short_name$>，通过成功进行DC <$dc__str$>的检定。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Bite (Cockatrice)",
@@ -1905,7 +2097,8 @@
 			"source": "MM",
 			"entries": [
 				"{@atk mw} 命中{@hit <$命中__力量$>}，触及5尺，单一生物。{@h}<$damage_avg__2.5+str$>（{@damage 1d4<$damage_mod__str$>}）点穿刺伤害，目标必须成功进行一次DC <$dc__con$>的豁免检定以抵抗魔法造成的{@condition 石化}。如果豁免失败，生物开始变成石头并处于{@condition 束缚}状态。它必须在下一个回合结束时重复豁免检定。如果成功，效果结束。如果失败，生物将被{@condition 石化}24小时。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Bite (Death Dog)",
@@ -1913,7 +2106,8 @@
 			"source": "MM",
 			"entries": [
 				"{@atk mw} 命中{@hit <$命中__力量$>}，触及5尺，单一目标。{@h}<$damage_avg__3+str$>（{@damage 1d6<$damage_mod__str$>}）点穿刺伤害。如果目标是一个生物，它必须通过对抗疾病的DC <$dc__con$> 豁免检定，否则将变为{@condition 中毒}，直到疾病被治愈。每过24小时，生物必须重复豁免检定，失败时其生命值上限减少5（{@dice 1d10}）。这种减少持续到疾病被治愈。如果疾病将其生命值上限减少至0，生物将死亡。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Bite (Kraken)",
@@ -1921,7 +2115,8 @@
 			"source": "MM",
 			"entries": [
 				"{@atk mw} 命中{@hit <$命中__力量$>}，射程 5 英尺，单一目标。{@h}<$damage_avg__12+str$> （{@damage 3d8<$damage_mod__str$>}）穿刺伤害。如果目标是大型或更小的生物，被 <$short_name$> 所 {@condition 受擒}，那么该生物被吞噬，抓握结束。当生物被吞噬时，它处于 {@condition 目盲} 和 {@condition 束缚} 状态，对 <$short_name$> 外部的攻击和其他效果有 {@quickref 掩护||3||全身掩护}，并且在 <$short_name$> 的每个回合开始时承受 42 ({@damage 12d6}) 强酸伤害。如果 <$short_name$> 在一个回合内从体内生物受到 50 点或更多伤害，<$short_name$> 必须在该回合结束时通过 DC <$dc__con$> 的豁免检定，否则会吐出所有被吞噬的生物，它们在 <$short_name$> 10 英尺内的某个空间中处于 {@condition 倒地} 状态。如果 <$short_name$> 死亡，被吞噬的生物不再被它 {@condition 束缚} 并且可以使用 15 英尺移动力从尸体中逃脱，以 {@condition 倒地} 状态离开。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Blinding Breath (Dust Mephit)",
@@ -1929,7 +2124,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 呼出15尺范围的致盲尘土。该区域内的每个生物都必须成功进行一次DC <$dc__dex$> 敏捷豁免检定，否则将被{@condition 目盲}状态影响1分钟。生物可以在自己的每个回合结束时重复豁免检定，如果成功则结束此效果。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Chain (Chain Devil)",
@@ -1937,7 +2133,8 @@
 			"source": "MM",
 			"entries": [
 				"{@atk mw} 命中{@hit <$命中__力量$>}，触及10尺，单一目标。{@h}<$damage_avg__7+str$>（{@damage 2d6<$damage_mod__str$>}）挥砍伤害。如果<$short_name$>尚未缠绕另一生物，则目标将{@condition 受擒}（逃脱DC <$dc__str$>）。直到这次缠绕结束，目标将{@condition 束缚}，并在其每个回合开始时受到7（{@damage 2d6}）点穿刺伤害。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Change Shape (Couatl)",
@@ -1946,7 +2143,8 @@
 			"entries": [
 				"<$title_short_name$>可以神奇地变身为一个挑战等级等于或低于它自身的类人生物或野兽，或者变回其真实形态。如果它死亡，它将恢复其真实形态。它穿戴或携带的任何装备会被新形态吸收或携带（由<$short_name$>选择）。",
 				"在新形态中，<$short_name$> 保留了其游戏具体数值和说话能力，但其AC（护甲等级）、移动方式、力量、敏捷以及其他动作都被新形态所取代，并且它获得了新形态拥有但自身缺乏的任何具体数值和能力（不包括职业特性、传说动作和巢穴动作）。如果新形态具有咬击攻击，<$short_name$> 在该形态下可以使用其咬击。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Change Shape (Oni)",
@@ -1954,7 +2152,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 通过魔法变形成小型或中型的人形生物，变成大型的巨人，或者变回它的真身。除了大小之外，它在每种形态下的具体数值都是相同的。唯一被转变的装备是它的长柄武器，它会缩小，以便在人形形态中使用。如果 <$short_name$> 死亡，它将恢复到它的真身形态，它的长柄武器也会恢复到正常大小。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Charm (Succubus/Incubus)",
@@ -1963,7 +2162,8 @@
 			"entries": [
 				"在<$short_name$>周围30尺内的一个类人生物必须成功进行一次DC <$dc__wis$> 感知豁免检定，否则会被魔法地{@condition 魅惑}一天。被{@condition 魅惑}的目标服从<$short_name$>的口头或心灵感应命令。如果目标遭受任何伤害或接收到自杀命令，它可以重复豁免检定，成功则结束此效果。如果目标成功抵抗此效果，或者此效果在其身上结束，目标将在接下来的24小时内对此<$short_name$>的魅惑免疫。",
 				"<$title_short_name$> 一次只能有一个目标处于{@condition 魅惑}状态。如果它魅惑了另一个目标，对之前目标的效果就会结束。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Claw (Rakshasa)",
@@ -1971,7 +2171,8 @@
 			"source": "MM",
 			"entries": [
 				"{@atk mw} 命中{@hit <$命中__力量$>}，触及5尺，单一目标。{@h}<$damage_avg__7+str$>（{@damage 2d6<$damage_mod__str$>}）挥砍伤害，如果目标是一个生物，则会被诅咒。这个魔法诅咒在目标进行短休息或长休息时生效，用可怕的图像和梦境充满目标的思想。被诅咒的目标在完成短休息或长休息时不会获得任何好处。这个诅咒会持续存在，直到通过{@spell 移除诅咒}法术或类似的魔法解除。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Constrict (Behir)",
@@ -1979,7 +2180,8 @@
 			"source": "MM",
 			"entries": [
 				"{@atk mw} 命中{@hit <$命中__力量$>}，触及5尺，单一大型或更小生物。{@h}17（{@damage 2d10<$damage_mod__str$>}）钝击伤害加上17（{@damage 2d10<$damage_mod__str$>}）挥砍伤害。如果<$short_name$>尚未缠绕另一生物，则目标将{@condition 受擒}（逃脱DC <$dc__str$>），并且目标将{@condition 束缚}直到这次缠绕结束。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Constrict (Constrictor Snake)",
@@ -1987,7 +2189,8 @@
 			"source": "MM",
 			"entries": [
 				"{@atk mw} 命中{@hit <$命中__力量$>}，触及5尺，单一生物。{@h}<$damage_avg__4+str$>（{@damage 1d8<$伤害修正__力量$>}）钝击伤害，目标{@condition 受擒}（逃脱DC <$dc__str$>）。直到这次摔跤结束，生物处于{@condition 束缚}状态，<$short_name$>不能缠绕另一个目标。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Create Specter (Wraith)",
@@ -1995,7 +2198,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 针对距离它10尺以内，死亡时间不超过1分钟且死于非命的人形生物。目标的灵魂在其尸体所在空间或最近的未被占据的空间中以{@creature 恶灵}的形式升起。这个{@creature 恶灵}受到<$short_name$>的控制。<$title_short_name$>一次最多可以控制七个幽灵。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Create Whirlwind (Djinni)",
@@ -2004,7 +2208,8 @@
 			"entries": [
 				"一个5尺半径、30尺高的旋转空气柱在<$short_name$>能看到的120尺内形成一个点。只要<$short_name$>维持{@status 专注}（就好像在{@status 专注||专注于}施法），旋风就会持续存在。除了<$short_name$>之外，任何进入旋风的生物都必须成功进行一次DC <$dc__str$>豁免检定，否则被它{@condition 束缚}。<$title_short_name$>可以作为一个动作将旋风移动最多60尺，被旋风{@condition 束缚}的生物也会随之移动。如果<$short_name$>看不见旋风，旋风就会结束。",
 				"一个生物可以使用它的行动来释放被旋风{@condition 束缚}的生物，包括它自己，通过成功进行一次DC <$dc__str$> 力量检定。如果检定成功，该生物不再被{@condition 束缚}，并且移动到旋风最近的外部空间。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Crush (Darkmantle)",
@@ -2014,7 +2219,8 @@
 				"{@atk mw} 命中{@hit <$命中__力量$>}，触及5尺，单一生物。{@h}<$damage_avg__3+str$>（{@damage 1d6<$damage_mod__str$>}）钝击伤害，<$short_name$>附着在目标上。如果目标是中等大小或更小，并且<$short_name$>在攻击骰上有优势，它会通过吞没目标的头部来附着，并且当<$short_name$>以这种方式附着时，目标也会被{@condition 目盲}，并且无法呼吸。",
 				"当附着在目标上时，<$short_name$> 除了目标外不能攻击其他生物，但其攻击掷骰具有优势。<$title_short_name$>的速度也变为0，它不能从任何速度加成中受益，并且随着目标移动。",
 				"一个生物可以通过作为行动进行成功的DC <$dc__str$> 力量检定来分离<$short_name$>。在它的回合，<$short_name$>可以通过使用5尺的移动来从目标上分离。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Darkness Aura (Darkmantle)",
@@ -2022,7 +2228,8 @@
 			"source": "MM",
 			"entries": [
 				"从<$short_name$>延伸出15尺半径的魔法黑暗，随其移动，并在角落周围扩散。只要<$short_name$>保持{@status 专注}，黑暗就会持续存在，最长可达10分钟（就好像{@status 专注||专注于}在法术上）。黑暗视觉无法穿透这种黑暗，任何自然光也无法照亮它。如果任何黑暗区域与由2级或更低级别的法术创造的光照区域重叠，创造光的法术将被解除。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Deadly Leap (Bulette)",
@@ -2030,7 +2237,8 @@
 			"source": "MM",
 			"entries": [
 				"如果<$short_name$>作为其移动的一部分至少跳跃15尺，然后它可以使用这个动作落在包含一个或多个其他生物的空间的脚上。这些生物中的每一个都必须成功进行一次DC <$dc__str$>或敏捷豁免检定（目标选择）否则将被击倒{@condition 倒地}并承受14（{@damage 3d6<$damage_mod__str$>}）钝击伤害加上14（{@damage 3d6<$damage_mod__str$>}）挥砍伤害。在成功的豁免检定下，生物只承受一半的伤害，不会被击倒{@condition 倒地}，并被推出5尺离开<$short_name$>的空间进入生物选择的未被占据的空间。如果没有未被占据的空间在范围内，生物则会在<$short_name$>的空间内倒地{@condition 倒地}。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Death Glare (Sea Hag)",
@@ -2038,7 +2246,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>以它能看到的30尺范围内的一个{@condition 恐慌}生物为目标。如果目标能看到<$short_name$>，它必须成功进行一次DC <$dc__wis$> 感知豁免检定以抵抗这种魔法，否则生命值将降至0点。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Disrupt Life (Lich)",
@@ -2046,7 +2255,8 @@
 			"source": "MM",
 			"entries": [
 				"在<$short_name$>周围20尺内的每一只非不死生物都必须对这种魔法进行一次DC <$dc__con$> 体质豁免检定，失败时受到21（{@damage 6d6}）点暗蚀伤害，成功则伤害减半。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Draining Kiss (Succubus/Incubus)",
@@ -2054,7 +2264,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>亲吻一个被它{@condition 魅惑}的生物或一个愿意的生物。目标必须对这种魔法进行一次DC <$dc__con$> 体质豁免检定，失败时受到32（{@damage 5d10<$伤害修正__力量$>}）点心灵伤害，成功则伤害减半。目标的生命值最大值会减少等同于受到的伤害的量。这种减少持续到目标完成一次长休息。如果这个效果将目标的生命值最大值减少到0，目标将死亡。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Dreadful Glare (Mummy Lord)",
@@ -2062,7 +2273,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 针对它能看到的60尺范围内的一个生物。如果目标能看到<$short_name$>，它必须成功进行一次DC <$dc__wis$> 感知豁免检定来对抗这个魔法，否则直到木乃伊的下一回合结束时将处于{@condition 恐慌}状态。如果目标的豁免检定失败5点或更多，它在相同时间内也会被{@condition 麻痹}。成功进行豁免检定的目标在接下来的24小时内对所有木乃伊和<$short_name$>s的恐怖凝视免疫。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Engulf (Gelatinous Cube)",
@@ -2073,7 +2285,8 @@
 				"在成功的豁免检定后，生物可以选择向后或向<$short_name$>的一侧移动5尺。选择不被推动的生物将承受失败豁免检定的后果。",
 				"如果豁免失败，<$short_name$>进入生物的空间，生物受到10（{@damage 3d6}）点强酸伤害并被吞噬。被吞噬的生物不能呼吸，处于{@condition 束缚}状态，并在<$short_name$>的每个回合开始时受到21（{@damage 6d6}）点强酸伤害。当<$short_name$>移动时，被吞噬的生物也会随之移动。",
 				"被吞没的生物可以通过采取行动进行一次DC <$dc__str$> 力量检定来尝试逃脱。成功的话，该生物逃脱并进入<$short_name$>周围5尺内它选择的空间。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Engulf (Shambling Mound)",
@@ -2081,7 +2294,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 吞没一个被它{@condition 受擒}的中等大小或更小的生物。被吞没的目标处于{@condition 目盲}状态，{@condition 束缚}状态，无法呼吸，并且在<$short_name$>的每个回合开始时，必须成功进行一次DC <$dc__con$>的豁免检定，否则将承受13（{@damage 2d8<$damage_mod_力量$>}）的钝击伤害。如果<$short_name$>移动，被吞没的目标也会随之移动。<$title_short_name$>一次只能吞没一个生物。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Enlarge (Duergar)",
@@ -2089,7 +2303,8 @@
 			"source": "MM",
 			"entries": [
 				"在1分钟内，<$short_name$>会与其穿戴或携带的任何物品一起神奇地增大。增大时，<$short_name$>成为大型生物，基于力量的武器攻击的伤害骰加倍（包含在攻击中），并且在进行力量检定和力量豁免检定时具有优势。如果<$short_name$>没有足够的空间变成大型生物，它将达到可用空间内的最大大小。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Enslave (Aboleth)",
@@ -2098,7 +2313,8 @@
 			"entries": [
 				"<$title_short_name$>指定30尺内一个它能看到的生物作为目标。该目标必须进一次DC<$dc__wis$>感知豁免，豁免失败则如同着魔一般被<$title_short_name$>{@condition 魅惑}，直至该<$short_name$>死亡，或者直至该<$short_name$>与目标不再同处一个位面。被{@condition 魅惑}的目标处于<$short_name$>的控制之下且无法反抗，<$short_name$>和该目标可以无视距离通过心灵感应进行交流。",
 				"被{@condition 魅惑}的目标每次受到伤害时可以重投该豁免。豁免成功则结束该魅惑效应。该目标距离<$short_name$>至少1里时，也可以重投该豁免，但这种重骰的豁免每24小时只可进行一次。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Ethereal Stride (Nightmare)",
@@ -2106,7 +2322,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>可以连同其身边5尺内至多三个自愿的生物一起从物质位面进入以太位面，反之亦然。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Etherealness (Ghost)",
@@ -2114,7 +2331,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>从物质位面进入以太位面，或相反。当它处于边界以太状态时，在物质位面上是可见的，反之亦然，但它不能影响另一个位面上的任何事物，也不会受到另一个位面上事物的影响。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Etherealness (Succubus/Incubus)",
@@ -2122,7 +2340,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>可以从物质位面进入以太位面，或者从以太位面回到物质位面。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Fetid Cloud (Dretch)",
@@ -2130,7 +2349,8 @@
 			"source": "MM",
 			"entries": [
 				"从<$short_name$>延伸出10尺半径的令人作呕的绿色气体。气体绕过角落传播，其区域轻微遮蔽。它持续1分钟，或直到强风将其驱散。任何在其回合开始时位于该区域的生物必须成功进行一次DC <$dc__con$>的豁免检定，否则将被{@condition 中毒}直到其下一回合开始。以这种方式被{@condition 中毒}时，目标在其回合中只能采取动作或附赠动作，不能两者都采取，并且不能采取反应动作。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Fey Charm (Dryad)",
@@ -2140,7 +2360,8 @@
 				"<$title_short_name$>以她能看到的30尺范围内的一个类人生物或野兽为目标。如果目标能看到<$short_name$>，它必须成功进行一次DC <$dc__wis$> 感知豁免检定，否则会被魔法地{@condition 魅惑}。被{@condition 魅惑}的生物将<$short_name$>视为值得信赖的朋友，会听从并保护。尽管目标不受<$short_name$>的控制，但它会尽可能以最有利的方式接受<$short_name$>的请求或行为。",
 				"每次<$short_name$>或其盟友对目标造成任何伤害时，目标可以重复进行豁免检定，在成功时结束自身的效果。否则，效果持续24小时，或直到<$short_name$>死亡，与目标处于不同的存在平面，或作为附赠动作结束效果。如果目标的豁免检定成功，目标在接下来的24小时内对<$short_name$>的精类魅力免疫。",
 				"<$title_short_name$> 一次最多可以有一个人形生物和多达三个野兽处于{@condition 魅惑}状态。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Fling (Kraken)",
@@ -2148,7 +2369,8 @@
 			"source": "MM",
 			"entries": [
 				"一个被<$short_name$>抓住的大型或更小物体或{@condition 受擒}的生物被随机方向抛出60英尺并{@condition 倒地}。如果被抛出的目标撞击到坚固的表面，目标每抛出10英尺将受到3点({@damage 1d6})钝击伤害。如果目标被抛向另一个生物，该生物必须成功通过一个DC<$dc__dex$>的敏捷豁免，否则将受到相同的伤害并{@condition 倒地}。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Flying Sword (Solar)",
@@ -2156,7 +2378,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>可以释放巨剑使其悬浮于身边5尺内一处未被占据的空间。只要<$short_name$>可以看到巨剑，<$short_name$>便可用一个附赠动作对巨剑发出心灵指使，令其飞行至多50尺，然后再对一个目标发动一次攻击或者返回<$short_name$>手中。如果巨剑在悬浮时被任何效应指定为目标，则<$short_name$>将被视作手持该剑。如果<$short_name$>死亡，悬浮的剑亦将坠落。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Frightening Gaze (Lich)",
@@ -2164,7 +2387,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>凝视着它能看到的10尺范围内的一个生物。目标必须成功进行一次DC <$dc__wis$> 感知豁免检定以抵抗这种魔法，否则会进入{@condition 恐慌}状态1分钟。处于{@condition 恐慌}状态的目标可以在每个回合结束时重复进行豁免检定，成功则结束此效果。如果目标的豁免检定成功或者效果对它结束，目标将在未来24小时内对<$short_name$>的凝视免疫。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Frightful Presence (Dragon)",
@@ -2172,7 +2396,8 @@
 			"source": "MM",
 			"entries": [
 				"在<$short_name$>周围120尺范围内且知道它存在的每个<$short_name$>选择的生物，必须成功进行一次DC <$dc__wis$> 感知豁免检定，否则将被{@condition 恐慌}状态影响1分钟。生物可以在自己的每个回合结束时重复豁免检定，如果成功则结束自身的效果。如果生物的豁免检定成功或效果对它结束，该生物在接下来的24小时内对<$short_name$>的骇人威仪免疫。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Frightful Presence (Tarrasque)",
@@ -2180,7 +2405,8 @@
 			"source": "MM",
 			"entries": [
 				"在<$short_name$>周围120尺内并且知道它存在的每个生物，必须成功进行一次DC <$dc__wis$> 感知豁免检定，否则会进入{@condition 恐慌}状态1分钟。生物可以在每个回合结束时重复进行豁免检定，如果<$short_name$>在视线范围内，则处于劣势，成功则结束此效果。如果生物的豁免检定成功或者效果对它结束，生物将在未来24小时内对<$short_name$>的骇人威仪免疫。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Glaive (Bearded Devil)",
@@ -2188,7 +2414,8 @@
 			"source": "MM",
 			"entries": [
 				"{@atk mw} 命中{@hit <$命中__力量$>}，触及 10 尺，单一目标。{@h}<$damage_avg__5+str$> （{@damage 1d10<$damage_mod__str$>}）挥砍伤害。如果目标不是不死生物或构装生物，它必须通过 DC <$dc__con$> 的豁免检定，否则在它每个回合的开始时因地狱之伤失去 5 ({@damage 1d10}) 点生命值。每当 <$short_name$> 用这次攻击击中受伤目标时，伤口造成的伤害增加 5 ({@dice 1d10})。任何生物都可以采取行动，通过成功的 DC <$dc_wis$> （医学）检定来止血。如果目标接受魔法治疗，伤口也会闭合。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Harpoon (Merrow)",
@@ -2196,7 +2423,8 @@
 			"source": "MM",
 			"entries": [
 				"{@atk mw,rw} 命中{@hit <$命中__力量$>}，触及5尺或20/60尺，单一目标。{@h}<$damage_avg__7+str$>（{@damage 2d6<$damage_mod__str$>}）点穿刺伤害。如果目标是巨型或更小的生物，它必须在力量比拼中胜过<$short_name$>，否则会被拉向<$short_name$>最多20尺。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Haste (Clay Golem)",
@@ -2204,7 +2432,8 @@
 			"source": "MM",
 			"entries": [
 				"直到它的下一回合结束，<$short_name$> 会神奇地获得+2的AC加值，在敏捷豁免检定上有优势，并且可以使用它的撞击攻击作为附赠动作。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Heart Sight (Sprite)",
@@ -2212,7 +2441,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 触摸一个生物，并通过魔法知道生物当前的情绪状态。如果目标未能通过DC <$dc__cha$> 魅力豁免检定，<$short_name$> 还会知道生物的阵营。天界生物、恶魔以及不死生物自动失败豁免检定。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Horrifying Visage (Ghost)",
@@ -2220,7 +2450,8 @@
 			"source": "MM",
 			"entries": [
 				"每个在<$short_name$>60尺内且能看见它的非亡灵生物必须成功通过一次DC <$dc__wis$>的感知豁免检定，否则将陷入{@condition 恐慌}状态1分钟。如果豁免检定失败且差值达到5或更多，目标还会衰老{@dice 1d4 × 10}年。一个{@condition 恐慌}的目标可以在其每个回合结束时重复进行豁免检定，成功则自身身上的{@condition 恐慌}状态结束。如果一个目标的豁免检定成功或此效应对其结束，该目标在接下来的24小时内对此<$short_name$>的恐惧面容免疫。衰老效应可以通过{@spell 高等复原术}法术逆转，但仅限于其发生后的24小时内。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Horror Nimbus (Nalfeshnee)",
@@ -2228,7 +2459,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 通过魔法发出闪烁的多彩光芒。在<$short_name$>周围15尺内能够看到光线的每一个生物都必须成功进行一次DC <$dc__wis$> 感知豁免检定，否则将被{@condition 恐慌}状态影响1分钟。生物可以在自己的每个回合结束时重复豁免检定，如果成功则结束自身的效果。如果生物的豁免检定成功或效果对它结束，该生物在接下来的24小时内对<$short_name$>的恐怖光环免疫。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Hurl Flame (Barbed Devil)",
@@ -2236,7 +2468,8 @@
 			"source": "MM",
 			"entries": [
 				"{@atk rs} 命中{@hit <$to_hit_敏捷$>}，射程150尺，单一目标。{@h}10（{@damage 3d6}）火焰伤害。如果目标是一个易燃物体且没有被穿戴或携带，它也会着火。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Illusory Appearance (Sea Hag)",
@@ -2245,7 +2478,8 @@
 			"entries": [
 				"<$title_short_name$>用一个魔法幻术覆盖自身以及她穿着或携带的任何东西，使其看起来像一个与其大致体型和类人生物形状相仿的丑陋生物。如果<$short_name$>用一个附赠动作来结束它，或者它死亡，该效应即告结束。",
 				"此效应造成的变化经不起物理检查。例如，<$short_name$>可能看起来没有爪子，但触摸其手的人可能会感觉到爪子。否则，一个生物必须用一个动作来视觉检查该幻术，并成功通过一次DC <$dc__int$>的（调查）检定，才能察觉<$short_name$>是易容的。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Intoxicating Touch (Lamia)",
@@ -2253,7 +2487,8 @@
 			"source": "MM",
 			"entries": [
 				"{@atk ms} 命中{@hit <$命中__力量$>}，触及5尺，单一生物。{@h}目标被魔法诅咒持续1小时。直到诅咒结束，目标在所有感知豁免检定和属性检定上都有不利。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Invisibility (Duergar)",
@@ -2261,7 +2496,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 可以魔法地变为{@condition 隐形}，直到它攻击、施法或使用其放大技能，或直到它的{@status 专注}被打破，最长持续1小时（就好像在{@status 专注||专注于}于一个法术）。<$short_name$>穿戴或携带的任何装备也会随之变为{@condition 隐形}。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Invisibility (Quasit)",
@@ -2269,7 +2505,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 魔法般地变为 {@condition 隐形}，直到它攻击或使用惊吓技能，或者其 {@status 专注} 结束（如同 {@status 专注||专注于} 一个法术）。<$short_name$> 穿着或携带的任何装备也会与它一起变为 {@condition 隐形}。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Invisibility (Sprite)",
@@ -2277,7 +2514,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 魔法般地变为 {@condition 隐形}，直到它攻击或施放法术，或直到它的 {@status 专注} 结束（如同 {@status 专注||专注于} 一个法术）。<$short_name$> 穿戴或携带的任何装备也会与其一同变为 {@condition 隐形}。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Leadership (Knight)",
@@ -2285,7 +2523,8 @@
 			"source": "MM",
 			"entries": [
 				"持续1分钟，<$short_name$>可以在30尺范围内看到且非敌对生物进行攻击检定或豁免检定时，发出特殊命令或警告。如果生物能够听到并理解<$short_name$>，它可以在其检定上增加一个{@dice d4}。一个生物一次只能从领导骰中获益。如果<$short_name$>处于{@condition 失能}状态，此效果将结束。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Life Drain (Wight)",
@@ -2294,7 +2533,8 @@
 			"entries": [
 				"{@atk mw} 命中{@hit <$命中__力量$>}，触及5尺，单一生物。{@h}<$damage_avg__3+str$>（{@damage 1d6<$damage_mod__str$>}）暗蚀伤害。目标必须进行一次DC <$dc__con$> 体质豁免检定，否则其生命值最大值将减少等同于受到的伤害。这种减少持续到目标完成一次长休。如果这个效果将目标的生命值最大值减少到0，目标将死亡。",
 				"被这次攻击杀死的人形生物在24小时后会作为一只{@creature 丧尸}在<$short_name$>的控制下复活，除非该人形生物被恢复生命或其身体被摧毁。<$title_short_name$>一次最多只能控制十二个僵尸。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Life Drain (Wraith)",
@@ -2302,7 +2542,8 @@
 			"source": "MM",
 			"entries": [
 				"{@atk mw} 命中{@hit <$命中__力量$>}，触及 5 尺，单一生物。{@h}<$damage_avg__16+str$>（{@damage 4d8<$damage_mod__str$>}）暗蚀伤害。目标必须成功进行一次DC <$dc__con$> 体质豁免检定，否则其生命值最大值将减少等同于受到的伤害。这种减少持续到目标完成一次长休。如果这个效果将目标的生命值最大值减少到0，目标将死亡。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Lightning Breath (Behir)",
@@ -2310,7 +2551,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 呼出一道20尺长、5尺宽的闪电。在该直线上的每一生物都必须进行一次DC <$dc__dex$> 敏捷豁免检定，若失败则承受66（{@damage 12d10}）闪电伤害，若成功则承受一半的伤害。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Lightning Storm (Kraken)",
@@ -2318,7 +2560,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 可以施法创造出三道闪电，每一道都可以打击<$short_name$>在120尺内能看到的目标。目标必须进行一次DC <$dc__dex$> 敏捷豁免检定，若失败则承受22（{@damage 4d10}）闪电伤害，若成功则承受一半的伤害。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Lightning Strike (Storm Giant)",
@@ -2326,7 +2569,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 向它能看到的500尺内的某一点投掷一个魔法闪电。在那个点周围10尺范围内的每个生物都必须进行一次DC <$dc__dex$> 敏捷豁免检定，失败时受到54（{@damage 12d8}）闪电伤害，成功时受到一半的伤害。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Moan (Cloaker)",
@@ -2334,7 +2578,8 @@
 			"source": "MM",
 			"entries": [
 				"在<$short_name$>周围60尺内，能够听到它的呻吟并且不是异怪的每个生物都必须进行一次DC <$dc__wis$> 感知豁免检定，否则直到<$short_name$>的下个回合结束时将处于{@condition 恐慌}状态。如果一个生物的豁免检定成功，该生物在接下来的24小时内对<$short_name$>的呻吟免疫。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Nightmare Haunting (Night Hag)",
@@ -2342,7 +2587,8 @@
 			"source": "MM",
 			"entries": [
 				"当处于以太位面时，<$short_name$>会魔法性地接触物质位面上一个沉睡的类人生物。对目标施放{@spell 防护善恶}法术可以阻止这种接触，防护法阵也能起到相同效果。只要接触持续，目标就会产生恐怖的幻象。如果这些幻象持续至少1小时，目标将无法从其休息中获得增益，并且其生命值上限降低5（{@dice 1d10}）。如果此效应将目标的生命值上限降至0，目标死亡，并且如果目标是邪恶的，其灵魂将被困在<$short_name$>的灵魂袋中。目标生命值上限的降低效果将持续到被{@spell 高等复原术}法术或类似的魔法移除为止。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Paralyzing Touch (Lich)",
@@ -2350,7 +2596,8 @@
 			"source": "MM",
 			"entries": [
 				"{@atk ms} 命中{@hit <$命中__力量$>}，触及5尺，单一生物。{@h}10（{@damage 3d6}）寒冷伤害。目标必须成功进行一次DC <$dc__con$> 豁免检定，否则将被{@condition 麻痹}持续1分钟。目标可以在每个回合结束时重复进行豁免检定，成功则结束此效果。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Phantasms (Cloaker)",
@@ -2360,7 +2607,8 @@
 				"<$title_short_name$> 可以在不是在强光下的情况下施法创造出三个自己的幻象副本。这些副本与它一起移动并模仿它的动作，改变位置以使得追踪哪一个<$short_name$>是真实的变得不可能。如果<$short_name$>在强光区域，这些副本就会消失。",
 				"每当任何生物在复制体存在时以<$short_name$>为目标进行攻击或有害法术时，该生物会随机掷骰以确定它是以<$short_name$>还是其中一个复制体为目标。如果一个生物不能看见或依赖除视觉之外的感觉，则不受这种魔法效果的影响。",
 				"副本具有<$short_name$>的护甲等级（AC），并使用它的豁免检定。如果攻击击中了一个副本，或者副本未能通过针对造成伤害效果的豁免检定，该副本就会消失。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Possession (Ghost)",
@@ -2369,7 +2617,8 @@
 			"entries": [
 				"在<$short_name$> 5尺范围内，<$short_name$>能看到的一个人形生物必须成功进行一次DC <$dc__cha$> 魅力豁免检定，否则将被<$short_name$>附身；然后<$short_name$>消失，目标将变得{@condition 失能}并失去对自己身体的控制。<$title_short_name$>现在控制着这个身体，但不会剥夺目标的意识。<$title_short_name$>不能成为任何攻击、法术或其他效果的目标，除了那些针对不死生物的效果，并且它保留自己的阵营、感知、感知、魅力以及对被{@condition 魅惑}和{@condition 恐慌}的免疫。除此之外，它使用被附身目标的具体数值，但不获得目标的知识、职业特性或熟练度。",
 				"附身持续直到该躯体生命值降至0点，<$short_name$>以一个附赠动作结束它，或<$short_name$>被类似{@spell 驱逐善恶}法术的效果驱散或强制驱逐。当附身结束时，<$short_name$>在躯体5尺范围内的一个未被占据的空间重新出现。目标在成功进行豁免检定或附身结束后的24小时内对该<$short_name$>的附身免疫。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Pseudopod (Gray Ooze)",
@@ -2377,7 +2626,8 @@
 			"source": "MM",
 			"entries": [
 				"{@atk mw} 命中{@hit <$命中__力量$>}，触及5尺，单一目标。{@h}<$damage_avg__3+str$>（{@damage 1d6<$damage_mod__str$>}）钝击伤害加上18（{@damage 4d8}）强酸伤害。此外，目标穿戴的非魔法盔甲部分溶解，对其所提供的护甲等级（AC）造成永久性累积的-1惩罚。如果惩罚使其AC降至10，则盔甲被摧毁。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Read Thoughts (Doppelganger)",
@@ -2385,7 +2635,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 能魔法性地读取60尺范围内一个生物的表面思想。这个效果可以穿透障碍物，但是3尺的木头或泥土、2尺的石头、2英寸的金属或一层薄铅板可以阻挡它。只要目标在范围内，<$short_name$> 可以继续读取它的思想，只要<$short_name$>的{@status 专注}没有被打破（就好像在{@status 专注||专注于}于一个法术）。在读取目标的思想时，<$short_name$>在对抗目标的感知（{@skill 洞悉}）和魅力（{@skill 欺瞒}、{@skill 威吓}和{@skill 游说}）检定上有优势。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Reaping Scythe",
@@ -2393,7 +2644,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 挥舞其幽灵镰刀穿过其周围5尺内的生物，造成<$damage_avg__4+str$>（{@damage 1d8<$伤害修正__力量$>}）挥砍伤害加上4（{@damage 1d8}）暗蚀伤害。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Reel (Roper)",
@@ -2401,7 +2653,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 将每个被它{@condition 受擒}的生物直接拉向它，距离最多25尺。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Rotting Fist (Mummy Lord)",
@@ -2409,7 +2662,8 @@
 			"source": "MM",
 			"entries": [
 				"{@atk mw} 命中{@hit <$命中__力量$>}，触及 5 尺，单一目标。{@h}<$damage_avg__12+str$> （{@damage 3d6<$damage_mod__str$>}）钝击伤害加上 21 （{@damage 6d6}）暗蚀伤害。如果目标是一个生物，它必须成功进行一次 DC <$dc_体质$> 豁免检定，否则会被诅咒为木乃伊腐烂。被诅咒的目标无法恢复生命值，并且其生命值最大值每过 24 小时就会减少 10 （{@dice 3d6}）。如果诅咒将目标的生命值最大值减少到 0，目标死亡，其身体化为尘土。诅咒持续直到通过 {@spell 移除诅咒} 法术或其他魔法解除。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Scare (Quasit)",
@@ -2417,7 +2671,8 @@
 			"source": "MM",
 			"entries": [
 				"在<$short_name$>周围20尺内，它选择的生物必须进行一次DC <$dc__wis$> 感知豁免检定，否则将被{@condition 恐慌}持续1分钟。目标可以在每个回合结束时重复进行豁免检定，如果<$short_name$>在视线范围内，则处于不利状态，成功则结束此效果。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Slam (Clay Golem)",
@@ -2425,7 +2680,8 @@
 			"source": "MM",
 			"entries": [
 				"{@atk mw} {@hit <$命中__力量$>} 命中，触及范围 5 尺，单一目标。{@h}<$damage_avg__10+str$> ({@damage 2d10<$damage_mod__str$>}) 钝击伤害。如果目标是生物，则必须成功通过 DC <$dc__con$> 的豁免检定，否则其生命值上限将减少等同于所受伤害的数值。如果此攻击将其生命值上限降至 0，则目标死亡。此减少效果持续到被 {@spell 高等复原术} 法术或其他魔法移除为止。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Slaying Longbow (Solar)",
@@ -2433,7 +2689,8 @@
 			"source": "MM",
 			"entries": [
 				"{@atk rw} 命中{@hit <$to_hit_敏捷$>}，射程150/600尺，单一目标。{@h}<$damage_avg__9+dex$>（{@damage 2d8<$damage_mod__dex$>}）点穿刺伤害加上27（{@damage 6d8}）光耀伤害。如果目标是一个生命值100点或更少的生物，它必须成功进行一次DC <$dc__con$> 豁免检定，否则死亡。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Slow (Stone Golem)",
@@ -2441,7 +2698,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 以它能看到的10尺范围内的一个或多个生物为目标。每个目标必须对这种魔法进行一次DC <$dc__wis$> 感知豁免检定。豁免失败时，目标不能使用反应，其速度减半，并且在其回合上不能进行超过一次攻击。此外，目标在其回合上只能采取动作或附赠动作，不能同时采取两者。这些效果持续1分钟。目标可以在每个回合结束时重复豁免检定，成功则结束自身上的这种效果。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Smother (Smothering Rug)",
@@ -2449,7 +2707,8 @@
 			"source": "MM",
 			"entries": [
 				"{@atk mw} {@hit <$命中__力量$>} 命中，触及范围 5 尺，一个中型或更小的生物。{@h}该生物陷入{@condition 受擒}（逃脱 DC <$dc__str$>）。直到此擒抱结束，目标处于{@condition 束缚}、{@condition 目盲}状态，并有窒息风险，且<$short_name$>无法卷紧另一个目标。此外，在目标每个回合开始时，目标受到<$damage_avg__6+str$>（{@damage 2d6<$damage_mod__str$>}）钝击伤害。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Spores (Vrock)",
@@ -2457,7 +2716,8 @@
 			"source": "MM",
 			"entries": [
 				"一团半径15尺的毒性孢子云雾从<$short_name$>处向外扩散。孢子会绕过转角蔓延。该区域内的每个生物必须成功通过一次DC <$dc__con$>的体质豁免检定，否则陷入{@condition 中毒}状态。以此方式{@condition 中毒}时，目标在其每回合开始时受到5（{@damage 1d10}）毒素伤害。目标可以在其每回合结束时重复进行该豁免检定，成功则终止其身上的效应。将一瓶{@item 圣水 (扁瓶)|PHB|小圣水瓶}倒在目标身上也能终止其身上的效应。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Steam Breath (Dragon Turtle)",
@@ -2465,7 +2725,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 呼出滚烫的蒸汽，形成一个60尺长的锥形区域。在该区域内的每个生物都必须进行一次DC <$dc__con$> 体质豁免检定，失败时承受52（{@damage 15d6}）火焰伤害，成功则承受一半的伤害。处于水下状态不会对此伤害提供抗性。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Sting (Bone Devil)",
@@ -2473,7 +2734,8 @@
 			"source": "MM",
 			"entries": [
 				"{@atk mw} 命中{@hit <$命中__力量$>}，触及 10 尺，单一目标。{@h}<$damage_avg__9+str$>（{@damage 2d8<$damage_mod_力量$>}）点穿刺伤害加上17（{@damage 5d6}）毒素伤害，目标必须成功进行一次DC <$dc__con$> 豁免检定，否则在1分钟内被{@condition 中毒}。目标可以在每个回合结束时重复豁免检定，成功则结束自身的中毒效果。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Strength Drain (Shadow)",
@@ -2482,7 +2744,8 @@
 			"entries": [
 				"{@atk mw} 命中{@hit <$命中__力量$>}，触及5尺，单一生物。{@h}<$平均伤害__7+力量$> （{@damage 2d6<$damage_mod__str$>}）暗蚀伤害，并且目标的力量值减少{@dice 1d4}。如果这将力量值减少至0，则目标死亡。否则，减少效果持续到目标完成一次短休或长休。",
 				"如果一个非邪恶类人生物死于该攻击，则一个新的幽影会在{@dice 1d4}小时后从其尸体上唤起。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Stunning Screech (Vrock)",
@@ -2490,7 +2753,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$>发出一声骇人尖啸。其周围20尺内能听到此声音且非恶魔的生物必须成功通过DC <$dc__con$>的体质豁免检定，否则将被{@condition 震慑}直到<$short_name$>的下个回合结束。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Swallow (Behir)",
@@ -2499,7 +2763,8 @@
 			"entries": [
 				"<$title_short_name$> 对它正在摔跤的中等大小或更小的目标进行一次咬击。如果攻击命中，目标也会被吞下，摔跤结束。在被吞下时，目标处于{@condition 目盲}和{@condition 束缚}状态，它对来自<$short_name$>外部的攻击和其他效果有{@quickref 掩护||3||全身掩护}，并且在<$short_name$>的每个回合开始时受到21点（{@damage 6d6}）强酸伤害。<$short_name$>一次只能吞下一个生物。",
 				"如果<$short_name$>在单个回合内被吞下的生物造成30点或更多伤害，<$short_name$>必须在该回合结束时进行一次DC <$dc__con$> 体质豁免检定，否则将吐出该生物，该生物会{@condition 倒地}地落在<$short_name$>周围10尺内的空间。如果<$short_name$>死亡，被吞下的生物不再被它{@condition 束缚}，可以使用15尺的移动力从尸体中逃脱，并且{@condition 倒地}地退出。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Tail (Marilith)",
@@ -2507,7 +2772,8 @@
 			"source": "MM",
 			"entries": [
 				"{@atk mw} 命中{@hit <$命中__力量$>}，触及 10 尺，单一生物。{@h}<$damage_avg__11+str$>（{@damage 2d10<$damage_mod__str$>}）钝击伤害。如果目标是中等大小或更小，它将{@condition 受擒}（逃脱 DC <$dc__str$>）。直到这次摔跤结束，目标处于{@condition 束缚}状态，<$short_name$>可以自动用尾巴命中目标，且<$short_name$>不能对其他目标进行尾巴攻击。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Teleport (Balor)",
@@ -2515,7 +2781,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 可以施法传送，连同它穿戴或携带的任何装备，最多可以传送到它能看到的120尺内的未被占据的空间。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Teleport (Blink Dog)",
@@ -2523,7 +2790,8 @@
 			"source": "MM",
 			"entries": [
 				"<$title_short_name$> 可以施法传送，连同它穿戴或携带的任何装备，最多可以传送到它能看到的40尺内的未被占据的空间。在传送之前或之后，<$short_name$> 可以进行一次咬击攻击。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Tendril (Roper)",
@@ -2531,7 +2799,8 @@
 			"source": "MM",
 			"entries": [
 				"{@atk mw} 命中{@hit <$命中__力量$>}，触及 50 尺，单一生物。{@h}目标{@condition 受擒}（逃脱 DC <$dc__str$>）。直到摔跤结束，目标处于{@condition 束缚}状态，并且在力量检定和力量豁免检定上具有劣势，且<$short_name$>不能使用同一触须对另一个目标进行攻击。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Tentacle (Aboleth)",
@@ -2539,7 +2808,8 @@
 			"source": "MM",
 			"entries": [
 				"{@atk mw} 命中{@hit <$命中__力量$>}，触及10尺，单一目标。{@h}<$damage_avg__7+str$>（{@damage 2d6<$damage_mod__str$>}）钝击伤害。如果目标是一个生物，它必须进行一次DC <$dc__con$> 体质豁免检定，否则会感染疾病。这种疾病在1分钟内没有效果，并且可以通过任何治愈疾病的魔法来移除。1分钟后，感染疾病的生物的皮肤会变得半透明且黏滑，除非在水下，否则生物不能恢复生命值，并且这种疾病只能通过{@spell 医疗术}法术或更高等级的治愈疾病法术来移除。当生物不在水体中时，除非在10分钟内对皮肤施加水分，否则它每10分钟会受到6（{@damage 1d12}）强酸伤害。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Tentacle (Kraken)",
@@ -2547,7 +2817,8 @@
 			"source": "MM",
 			"entries": [
 				"{@atk mw} 命中{@hit <$命中__力量$>}，触及 30 尺，单一目标。{@h}<$damage_avg__9+str$>（{@damage 3d6<$damage_mod__str$>0}）钝击伤害，目标{@condition 受擒}（逃脱 DC <$dc__str$>）。直到这次摔跤结束，目标处于{@condition 束缚}状态。<$title_short_name$>有十条触手，每条触手可以摔跤一个目标。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Tentacles (Chuul)",
@@ -2555,7 +2826,8 @@
 			"source": "MM",
 			"entries": [
 				"被<$short_name$>{@condition 受擒}的生物必须进行一次DC <$dc__con$> 体质豁免检定，否则将{@condition 中毒}持续1分钟。直到这种毒素结束，目标将处于{@condition 麻痹}状态。目标可以在每个回合结束时重复进行豁免检定，成功则结束此效果。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Touch (Magmin)",
@@ -2563,7 +2835,8 @@
 			"source": "MM",
 			"entries": [
 				"{@atk mw} 命中{@hit <$命中__力量$>}，触及 5 尺，单一目标。{@h}<$damage_avg__7+str$>（{@damage 2d6}）火焰伤害。如果目标是一个生物或易燃物体，它将被点燃。除非一个生物采取行动扑灭火焰，否则目标在其每个回合结束时承受3（{@damage 1d6}）火焰伤害。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Web (Ettercap)",
@@ -2571,7 +2844,8 @@
 			"source": "MM",
 			"entries": [
 				"{@atk rw} 命中{@hit <$to_hit_敏捷$>}，射程30/60 尺，单一大型或更小的生物。{@h}该生物被蛛网{@condition 束缚}。作为一个动作，被{@condition 束缚}的生物可以进行一次DC <$dc__str$> 力量检定，成功则从蛛网中逃脱。如果蛛网被摧毁，效果结束。蛛网的AC为10，生命值为5点，对火焰伤害易损，对钝击、毒素和心灵伤害免疫。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Web Garrote (Ettercap)",
@@ -2579,7 +2853,8 @@
 			"source": "MM",
 			"entries": [
 				"{@atk mw} 命中{@hit <$命中__力量$>}，范围 5 英尺，<$short_name$> 在攻击掷骰上具有优势的中型或小型生物。 {@h}4 ({@damage 1d4<$damage_mod__str$>}) 钝击伤害，并且目标被 {@condition 受擒}（逃脱 DC <$dc__str$>）。在擒抱结束前，目标无法呼吸，并且 <$short_name$> 对其攻击掷骰具有优势。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Whelm (Water Elemental)",
@@ -2588,7 +2863,8 @@
 			"entries": [
 				"在<$short_name$>空间内的每个生物都必须进行一次DC <$dc__str$> 力量豁免检定。失败时，目标会受到13（{@damage 2d8<$damage_mod_力量$>}）钝击伤害。如果目标是大型或更小，它也会{@condition 受擒}（逃脱 DC <$dc__str$>）。直到这次摔跤结束，目标处于{@condition 束缚}状态，并且除非它能在水中呼吸，否则无法呼吸。如果豁免检定成功，目标会被推出<$short_name$>的空间。",
 				"<$title_short_name$> 能够同时抓住一个大型生物或多达两个中型或更小的生物。在每个<$short_name$>的回合开始时，每个被它{@condition 受擒}的目标会受到13（{@damage 2d8<$damage_mod_力量$>}）钝击伤害。在<$short_name$>周围5尺内的生物可以通过采取行动进行一次DC <$dc__str$> 力量检定并成功，来拉出<$short_name$>中的生物或物体。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Whirlwind (Air Elemental)",
@@ -2597,7 +2873,8 @@
 			"entries": [
 				"在<$short_name$>空间内的每个生物都必须进行一次DC <$dc__str$> 力量豁免检定。失败时，目标会受到15（{@damage 3d8<$damage_mod__str$>}）钝击伤害，并被随机方向抛飞20尺远离<$short_name$>并且被击倒{@condition 倒地}。如果被抛出的目标撞到物体，例如墙壁或地板，目标每被抛飞10尺就会受到3（{@damage 1d6}）钝击伤害。如果目标被抛向另一个生物，那个生物必须成功进行一次DC <$dc__dex$> 敏捷豁免检定，否则会受到同样的伤害并被击倒{@condition 倒地}。",
 				"豁免成功则该钝击伤害减半且不再被击飞和因此而{@condition 倒地}。"
-			]
+			],
+			"translator": "不全书"
 		}
 	]
 }

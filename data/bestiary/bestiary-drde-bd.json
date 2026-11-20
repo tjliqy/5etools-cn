@@ -9,7 +9,7 @@
 	"monster": [
 		{
 			"ENG_name": "Bubba Wugga",
-			"name": "巴霸·乌加",
+			"name": "布霸·呜嘎",
 			"type": "construct",
 			"isNpc": true,
 			"isNamedCreature": true,
@@ -18,7 +18,8 @@
 			"_copy": {
 				"ENG_name": "Ogre",
 				"name": "食人魔",
-				"source": "XMM"
+				"source": "XMM",
+				"translator": "Balduo等"
 			},
 			"languages": [
 				"通用语",
@@ -28,7 +29,8 @@
 				"C",
 				"E"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"translator": "独孤剑"
 		}
 	]
 }

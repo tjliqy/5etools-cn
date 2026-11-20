@@ -681,7 +681,8 @@
 					{
 						"ENG_name": "Stout Halfling",
 						"name": "敦实半身人",
-						"source": "PHB"
+						"source": "PHB",
+						"translator": "不全书"
 					}
 				],
 				"_mod": {
@@ -691,7 +692,8 @@
 						"with": "科林",
 						"flags": "i"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"alignment": [
 				"L",
@@ -1499,7 +1501,8 @@
 			"_copy": {
 				"ENG_name": "Half-Ogre (Ogrillon)",
 				"name": "半食人魔 (半兽食人魔)",
-				"source": "MM"
+				"source": "MM",
+				"translator": "不全书"
 			},
 			"alignment": [
 				"C",
@@ -1904,7 +1907,8 @@
 							}
 						}
 					},
-					"variant": null
+					"variant": null,
+					"translator": "皮卡丘等"
 				},
 				{
 					"ENG_name": "Inspired (Quori Vessel; Kalaraq)",
@@ -1930,7 +1934,8 @@
 							}
 						}
 					},
-					"variant": null
+					"variant": null,
+					"translator": "皮卡丘等"
 				},
 				{
 					"ENG_name": "Inspired (Quori Vessel; Tsucora)",
@@ -1946,7 +1951,8 @@
 							}
 						}
 					},
-					"variant": null
+					"variant": null,
+					"translator": "皮卡丘等"
 				}
 			]
 		},
@@ -3943,7 +3949,8 @@
 			"_copy": {
 				"ENG_name": "Guard",
 				"name": "警卫",
-				"source": "MM"
+				"source": "MM",
+				"translator": "不全书"
 			},
 			"tokenCustom": true,
 			"hasToken": true,

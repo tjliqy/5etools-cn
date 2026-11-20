@@ -589,7 +589,8 @@
 			],
 			"subclassTitle": "术法起源",
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Sorcerer",
@@ -1167,7 +1168,8 @@
 			],
 			"subclassTitle": "术士子职",
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "威世智慧汉化组"
 		}
 	],
 	"subclass": [
@@ -1189,7 +1191,8 @@
 				"元素亲和|术士||龙族血脉||6",
 				"龙翼|术士||龙族血脉||14",
 				"龙之威仪|术士||龙族血脉||18"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Draconic Bloodline",
@@ -1212,14 +1215,16 @@
 					"srd": true,
 					"basicRules": true,
 					"reprintedAs": true
-				}
+				},
+				"translator": "不全书"
 			},
 			"subclassFeatures": [
 				"龙族血脉|术士|XPHB|龙族血脉||3",
 				"元素亲和|术士||龙族血脉||6",
 				"龙翼|术士||龙族血脉||14",
 				"龙之威仪|术士||龙族血脉||18"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Wild Magic",
@@ -1239,7 +1244,8 @@
 				"掌控混沌|术士||狂野魔法||14",
 				"法术轰击|术士||狂野魔法||18"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Wild Magic",
@@ -1262,7 +1268,8 @@
 					"srd": true,
 					"basicRules": true,
 					"reprintedAs": true
-				}
+				},
+				"translator": "不全书"
 			},
 			"subclassFeatures": [
 				"狂野魔法|术士|XPHB|狂野魔法||3",
@@ -1277,9 +1284,11 @@
 					"source": "PHB",
 					"shortName": "狂野魔法",
 					"className": "术士",
-					"classSource": "PHB"
+					"classSource": "PHB",
+					"translator": "不全书"
 				}
-			}
+			},
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Pyromancer (PSK)",
@@ -2100,7 +2109,8 @@
 				"血肉启示|术士|XPHB|畸变|XPHB|14",
 				"扭曲爆裂|术士|XPHB|畸变|XPHB|18"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Clockwork Sorcery",
@@ -2141,7 +2151,8 @@
 				"序列意识|术士|XPHB|时械|XPHB|14",
 				"时械矩阵|术士|XPHB|时械|XPHB|18"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Draconic Sorcery",
@@ -2184,7 +2195,8 @@
 				"龙翼|术士|XPHB|龙族血脉|XPHB|14",
 				"龙伴|术士|XPHB|龙族血脉|XPHB|18"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Wild Magic Sorcery",
@@ -2201,7 +2213,8 @@
 				"掌控混沌|术士|XPHB|狂野魔法|XPHB|14",
 				"驯服浪涌|术士|XPHB|狂野魔法|XPHB|18"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Spellfire Sorcery",
@@ -2312,7 +2325,8 @@
 			"entries": [
 				"选择一个术法起源作为你天赋魔力的源泉。你可在可用起源列表中选择其一。",
 				"随后，你将在第1、第6、第14、第18级获得相应起源的职业特性。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Spellcasting",
@@ -2384,7 +2398,8 @@
 						"你可以使用{@item 奥术法器|phb}，作为你施展术士法术时的法器。"
 					]
 				}
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Flexible Casting",
@@ -2448,7 +2463,8 @@
 						"你可以在自己回合内使用附赠动作消耗一枚法术位，并获得等于该法术位环阶的术法点。"
 					]
 				}
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Font of Magic",
@@ -2469,7 +2485,8 @@
 					"type": "refClassFeature",
 					"classFeature": "灵活施法|术士||2"
 				}
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Sorcery Points",
@@ -2483,7 +2500,8 @@
 			"header": 1,
 			"entries": [
 				"开始时，你拥有2个术法点。此后你每提升一个术士等级，都会获得1个术法点，最多至第20级的20点。你的术法点永远不能超过表中所列对应你当前等级的数值。而已消耗的术法点则可以通过完成一次长休进行恢复。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Metamagic",
@@ -2559,7 +2577,8 @@
 						}
 					]
 				}
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Metamagic Options",
@@ -2606,7 +2625,8 @@
 			"entries": [
 				"当你达到4级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
 				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Sorcerous Versatility",
@@ -2658,7 +2678,8 @@
 			"level": 6,
 			"entries": [
 				"第6级时，你获得你选择的术法起源的职业特性。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Ability Score Improvement",
@@ -2672,7 +2693,8 @@
 			"entries": [
 				"当你达到第8级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过该特性让属性超过20。",
 				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Metamagic",
@@ -2685,7 +2707,8 @@
 			"level": 10,
 			"entries": [
 				"第10级时，你获得一个额外的超魔法选项。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Ability Score Improvement",
@@ -2699,7 +2722,8 @@
 			"entries": [
 				"当你达到第12级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过该特性让属性超过20。",
 				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Sorcerous Origin feature",
@@ -2712,7 +2736,8 @@
 			"level": 14,
 			"entries": [
 				"第14级时，你获得你选择的术法起源的职业特性。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Ability Score Improvement",
@@ -2726,7 +2751,8 @@
 			"entries": [
 				"当你达到16级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
 				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Metamagic",
@@ -2739,7 +2765,8 @@
 			"level": 17,
 			"entries": [
 				"第17级时，你获得一个额外的超魔法选项。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Sorcerous Origin feature",
@@ -2752,7 +2779,8 @@
 			"level": 18,
 			"entries": [
 				"第18级时，你获得你选择的术法起源的职业特性。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Ability Score Improvement",
@@ -2766,7 +2794,8 @@
 			"entries": [
 				"当你达到19级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
 				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Sorcerous Restoration",
@@ -2779,7 +2808,8 @@
 			"level": 20,
 			"entries": [
 				"第20级时，你每完成一次短休，可以恢复4术法点。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Innate Sorcery",
@@ -2801,7 +2831,8 @@
 					]
 				},
 				"你可以使用此特性两次，你在完成一次{@variantrule 长休|XPHB}时重获所有已消耗的使用次数。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Spellcasting",
@@ -2871,7 +2902,8 @@
 						}
 					]
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Font of Magic",
@@ -2950,7 +2982,8 @@
 						}
 					]
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Metamagic",
@@ -2966,7 +2999,8 @@
 				"由于你的魔法直接从你体内流向外界，你可以修改你的法术来适应自己的需要。你从超魔法选项中选择并获得2个你所选的{@filter 超魔法选项|optionalfeatures|feature type=MM|source=XPHB}。你使用你所选的超魔法来临时改变你施展的法术。要使用一个超魔法选项，你必须消耗等同于其描述中需求的术法点。",
 				"当你施展一道法术时，你只能在其上应用一次超魔法选项，除非超魔法选项中另有说明。",
 				"每当你获得一级术士等级时，你可以将一个超魔法选项更改为另一个超魔法选项。当你到达10级和17级术士等级时，你可以分别再获得2个超魔法选项。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Metamagic Options",
@@ -3056,7 +3090,8 @@
 						}
 					]
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Sorcerer Subclass",
@@ -3070,7 +3105,8 @@
 			"level": 3,
 			"entries": [
 				"你选择获得一项术士子职。子职是一种特化，在特定的术士等级给予你对应的独特能力。此后你将获得你所选的子职所有能力\u2014\u2014只要其所需等级不超过你的术士等级。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Ability Score Improvement",
@@ -3084,7 +3120,8 @@
 			"level": 4,
 			"entries": [
 				"你获得{@feat 属性值提升|XPHB}专长或其他你满足条件的{@5etools 专长|feats.html}。如术士特性表所示。你在第8，第12，第16级时会再次获得本特性。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Sorcerous Restoration",
@@ -3098,7 +3135,8 @@
 			"level": 5,
 			"entries": [
 				"当你完成一次{@variantrule 短休|XPHB}时，你可以恢复不大于你术士等级一半（向下取整）的已消耗术法点。此特性一经使用，直到你完成一次{@variantrule 长休|XPHB}为止不能再次使用。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Subclass Feature",
@@ -3112,7 +3150,8 @@
 			"level": 6,
 			"entries": [
 				"你获得一个来自术士子职的特性。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Sorcery Incarnate",
@@ -3132,7 +3171,8 @@
 			"entries": [
 				"如果你的先天术法特性的使用次数耗尽，则你仍可以消耗 2 点术法点来用{@variantrule 附赠动作|XPHB}继续激活该特性。",
 				"此外，在你的先天术法特性处于激活状态期间，你可以在你施展的每道法术上应用最多两次{@filter 超魔法选项|optionalfeatures|feature type=MM}。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Ability Score Improvement",
@@ -3146,7 +3186,8 @@
 			"level": 8,
 			"entries": [
 				"你获得{@feat 属性值提升|XPHB}专长或其它你满足条件的{@5etools 专长|feats.html}。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Metamagic",
@@ -3162,7 +3203,8 @@
 				"由于你的魔法直接从你体内流向外界，你可以修改你的法术来适应自己的需要。你从{@filter 超魔法选项|optionalfeatures|feature type=MM|source=XPHB}中选择并获得2个你所选的超魔法选项。",
 				"当你施展一道法术时，你只能在其上应用一次超魔法选项，除非超魔法选项中另有说明。",
 				"每当你获得一级术士等级时，你可以将一个超魔法选项更改为另一个超魔法选项。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Ability Score Improvement",
@@ -3176,7 +3218,8 @@
 			"level": 12,
 			"entries": [
 				"你获得{@feat 属性值提升|XPHB}专长或其它你满足条件的{@5etools 专长|feats.html}。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Subclass Feature",
@@ -3190,7 +3233,8 @@
 			"level": 14,
 			"entries": [
 				"你获得一个来自术士子职的特性。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Ability Score Improvement",
@@ -3204,7 +3248,8 @@
 			"level": 16,
 			"entries": [
 				"你获得{@feat 属性值提升|XPHB}专长或其它你满足条件的{@5etools 专长|feats.html}。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Metamagic",
@@ -3220,7 +3265,8 @@
 				"由于你的魔法直接从你体内流向外界，你可以修改你的法术来适应自己的需要。你从{@filter 超魔法选项|optionalfeatures|feature type=MM|source=XPHB}中选择并获得2个你所选的超魔法选项。",
 				"当你施展一道法术时，你只能在其上应用一次超魔法选项，除非超魔法选项中另有说明。",
 				"每当你获得一级术士等级时，你可以将一个超魔法选项更改为另一个超魔法选项。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Subclass Feature",
@@ -3234,7 +3280,8 @@
 			"level": 18,
 			"entries": [
 				"你获得一个来自术士子职的特性。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Epic Boon",
@@ -3248,7 +3295,8 @@
 			"level": 19,
 			"entries": [
 				"你获得一项{@filter 传奇恩惠专长|feats|category=EB}或其他一项你选择的适用的{@5etools 专长|feats.html}。推荐选择{@feat 次元旅行之恩惠|XPHB}。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Arcane Apotheosis",
@@ -3262,7 +3310,8 @@
 			"level": 20,
 			"entries": [
 				"在你的先天术法特性处于激活状态期间，每个你的回合一次，你可以无需消耗术法点地使用一次超魔法选项。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		}
 	],
 	"subclassFeature": [
@@ -3552,7 +3601,8 @@
 					"type": "refSubclassFeature",
 					"subclassFeature": "龙族体魄|术士||龙族血脉||1"
 				}
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Draconic Resilience",
@@ -3569,7 +3619,8 @@
 			"entries": [
 				"魔法在你的体内流动，并使你显露出你巨龙先祖的部分身体特质。第1级时，你的生命值上限提升1点，此后每提升一个术士等级，都将再次提升1点。",
 				"此外，你部分皮肤覆盖着龙鳞样式的柔鳞。未着装护甲时，你的AC等于13＋你的敏捷调整值。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Dragon Ancestor",
@@ -3640,7 +3691,8 @@
 					]
 				},
 				"你可以说、读、写{@language 龙语}。此外，你与巨龙互动时进行的魅力检定可以使用熟练加值时，可以加上双倍的加值。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Elemental Affinity",
@@ -3660,7 +3712,8 @@
 			},
 			"entries": [
 				"第6级起，当你施展伤害类型与你巨龙先祖相对应的法术时，可以将你的魅力调整值附加到该法术其中一次伤害掷骰中。此时你还可以用1术法点来获得持续1小时的相应伤害抗性。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Dragon Wings",
@@ -3677,7 +3730,8 @@
 			"entries": [
 				"第14级时，你获得一对可以从背后张开的龙翼，并获得等于你当前速度的飞行速度。你可以在自己回合内用一个附赠动作生成龙翼。龙翼持续存在至你在自己回合内用一个附赠动作将其解散。",
 				"你不能在着装护甲时张开龙翼（除非该护甲经过特殊的设计）。而当你显现龙翼时，未经过特殊设计的衣服可能会毁坏。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Draconic Presence",
@@ -3698,7 +3752,8 @@
 			},
 			"entries": [
 				"18级起，你可以导引你巨龙先祖的恐怖气息，使你周围的生物感到震撼或{@condition 恐慌}。你可以用一个动作和5术法点引导这股力量，并张开一个60尺范围的震撼（或恐惧）灵光。在1分钟内，只要你保持{@status 专注}（等同于施法时进行{@status 专注}），在灵光范围内开始其回合的每个敌对生物都必须进行一次感知豁免，豁免失败则被{@condition 魅惑}（震撼灵光）或陷入{@condition 恐慌}（恐惧灵光）直至灵光消失。豁免成功者将在随后的24小时内免疫你的灵光效应。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Wild Magic",
@@ -3720,7 +3775,8 @@
 					"type": "refSubclassFeature",
 					"subclassFeature": "混沌之潮|术士||狂野魔法||1"
 				}
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Tides of Chaos",
@@ -3736,7 +3792,8 @@
 			"entries": [
 				"第1级起，你可以驾驭机运与混乱的力量，以使一次攻击检定，属性检定或豁免检定具有优势。此后，你必须完成一次长休后才能再次使用该特性。",
 				"在你重获使用混乱之潮的能力前，你每次施展一个不低于1环的术士法术后，DM都可以要求你立刻骰一次{@table 狂野魔法浪涌|PHB}效果。此后，你重获使用该特性的能力。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Wild Magic Surge",
@@ -3974,7 +4031,8 @@
 						}
 					}
 				}
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Bend Luck",
@@ -3994,7 +4052,8 @@
 			},
 			"entries": [
 				"第6级起，你获得用你的狂野魔法扭曲命运的能力。当一个你能看见的生物进行攻击检定、属性检定或豁免检定时，你可以用一个反应并消耗2术法点骰一次{@dice 1d4}，再将结果用作加值或减值（由你决定）加到目标生物的检定结果中。你可以在看到检定结果后使用该特性，但必须在这次检定生效前声明。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Controlled Chaos",
@@ -4009,7 +4068,8 @@
 			"header": 2,
 			"entries": [
 				"第14级起，你获得了对狂野魔法涌动的些微掌控。你每次骰{@table 狂野魔法浪涌|PHB}效果时，可以骰两次检定再自选其一生效。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Spell Bombardment",
@@ -4024,7 +4084,8 @@
 			"header": 2,
 			"entries": [
 				"第18级起，你法术中的伤害性能量极度扩张。你在为法术进行伤害掷骰时，如果其中的任何一粒骰子掷出最大值，则选择这些骰子之一再骰一次，并将其结果加在伤害数值上。你每回合只能使用一次该特性。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Pyromancer (PSK)",
@@ -5154,8 +5215,10 @@
 				"_preserve": {
 					"page": true,
 					"srd": true
-				}
-			}
+				},
+				"translator": "不全书"
+			},
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Wild Magic",
@@ -5177,8 +5240,10 @@
 				"level": 1,
 				"_preserve": {
 					"page": true
-				}
-			}
+				},
+				"translator": "不全书"
+			},
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Pyromancer (PSK)",
@@ -5504,7 +5569,8 @@
 					"type": "refSubclassFeature",
 					"subclassFeature": "传心谈话|术士|XPHB|畸变|XPHB|3"
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Psionic Spells",
@@ -5566,7 +5632,8 @@
 			"entries": [
 				"你能够在自己与他人的意识中构建一道心灵感应的链接。以一个{@variantrule 附赠动作|XPHB}，你可以选择 30 尺内一个你可见的生物创造这一链接。链接能使你与其能够通过心灵感应方式进行交流，但交流时，你们之间距离的里数不超过你的魅力调整值里（至少 1 里）。你们必须使用互相知晓的语言进行心灵交流，才能使其理解你通过心灵感应传达的话语。",
 				"心灵感应的链接持续等同于你术士等级的分钟数。这一链接在你与另一生物构建链接时提前结束。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Psionic Sorcery",
@@ -5581,7 +5648,8 @@
 			"header": 2,
 			"entries": [
 				"灵能法术特性中的一环或更高环阶的法术时，你可以改为使用等同于该法术环数数量的术法点而非消耗法术位施展该法术。你消耗术法点施放法术时，你无视该法术施法需要的言语成分或姿势成分。你同时无视该法术需要的不会消耗且未给出具体价值的材料成分。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Psychic Defenses",
@@ -5596,7 +5664,8 @@
 			"header": 2,
 			"entries": [
 				"你获得心灵伤害的{@variantrule 抗性|XPHB}。此外，你在避免和结束{@condition 魅惑|XPHB}状态与{@condition 恐慌|XPHB}状态的豁免检定上具有{@variantrule 优势|XPHB}。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Revelation in Flesh",
@@ -5648,7 +5717,8 @@
 						}
 					]
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Warping Implosion",
@@ -5669,7 +5739,8 @@
 			"entries": [
 				"你能够释放出扭曲空间的异常现象。以一个{@action 魔法|XPHB}动作，你传送到 120 尺内你可见的一个未被占据的位置，然后你消失位置 30 尺内的每个生物必须进行一次对抗你施法DC的力量豁免，豁免失败将受{@damage 3d10}力场伤害并被立即拉向你原本的位置，并停在最靠近的一处未被占据的空间内，豁免成功只受半伤。",
 				"一旦你使用此特性，在完成一次{@variantrule 长休|XPHB}前无法再次使用，除非你消耗5点术法点（无需动作）来恢复其使用次数。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Clockwork Sorcery",
@@ -5692,7 +5763,8 @@
 					"type": "refSubclassFeature",
 					"subclassFeature": "归复平衡|术士|XPHB|时械|XPHB|3"
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Clockwork Spells",
@@ -5793,7 +5865,8 @@
 			"entries": [
 				"你与绝对秩序之位面的联系使你能重整混沌的时刻。当你 60 尺内一个你可见的生物即将带着{@variantrule 优势|XPHB}或是{@variantrule 劣势|XPHB}进行一次{@dice d20}检定时，你可以用{@variantrule 反应|XPHB}使这次检定免受{@variantrule 优势|XPHB}或{@variantrule 劣势|XPHB}的影响。",
 				"你能使用此特性的次数等同于你的魅力调整值（最少 1 次），你在完成一次{@variantrule 长休|XPHB}后重获所有消耗的次数。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Bastion of Law",
@@ -5815,7 +5888,8 @@
 			"entries": [
 				"你可以利用世界的均衡之力为一个生物激发闪烁的秩序之盾。以一个{@action 魔法|XPHB}动作，你可以消耗 1-5 点术法点来创造出一个环绕你或 30 尺内的一个可见生物的魔法屏障。屏障具有等同于你所消耗术法点数量的d8骰。当被守护的生物受到伤害时，其可以消耗任意数量的这些d8骰，投掷它们，并使该伤害减少掷出结果合计的数值。",
 				"此屏障将一直保持存在，直到你完成一次{@variantrule 长休|XPHB}或直至你再次使用该特性。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Trance of Order",
@@ -5836,7 +5910,8 @@
 			"entries": [
 				"你获得了将你的意识和机械境无尽的计算达成同步的能力。以一个{@variantrule 附赠动作|XPHB}，你可以在 1 分钟内进入此种状态。在此期间，对你进行的攻击免受{@variantrule 优势|XPHB}的影响，且每当你进行一次{@variantrule D20 检定|XPHB}时，你可以将{@dice d20}掷出的 9 或以下的骰值视为 10。",
 				"此特性一经使用，直至完成{@variantrule 长休|XPHB}你都无法再次使用。你也可以消耗 5 点术法点（无需动作）重置此特性的使用权。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Clockwork Cavalcade",
@@ -5911,7 +5986,8 @@
 					"type": "refSubclassFeature",
 					"subclassFeature": "龙族法术|术士|XPHB|龙族血脉|XPHB|3"
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Draconic Spells",
@@ -5977,7 +6053,8 @@
 			"entries": [
 				"魔法在你的体内流动，外化为龙族赠礼体现出的生理特质。你的{@variantrule 生命值|XPHB|生命值}上限提升 3，此后每提升一个术士等级，都将再次提升1。",
 				"你部分皮肤覆盖着龙鳞样式的柔鳞。未着装护甲时，你的基础{@variantrule 护甲等级|XPHB}等于 10 + 你的敏捷调整值 + 你的魅力调整值。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Elemental Affinity",
@@ -5995,7 +6072,8 @@
 			"entries": [
 				"你的龙族魔法与龙族相关的伤害类型有较强的亲和力。选择以下伤害类型之一：强酸、寒冷、火焰、闪电或毒素。",
 				"你获得对所选伤害类型的{@variantrule 抗性|XPHB}，且当你施展造成那种伤害的法术时，你可以将你的魅力调整值加到那个法术的其中一次伤害掷骰中。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Dragon Wings",
@@ -6018,7 +6096,8 @@
 			"entries": [
 				"以一个{@variantrule 附赠动作|XPHB}，你可以在背后张开一对龙翼。龙翼持续 1 小时，若你选择将其解散（无需动作）则会提前终止，在龙翼持续期间你获得 60 尺{@variantrule 飞行速度|XPHB}。",
 				"此特性一经使用，直至完成{@variantrule 长休|XPHB}你都无法再次使用。你也可以消耗 3 点术法点（无需动作）重置此特性的使用权。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Dragon Companion",
@@ -6036,7 +6115,8 @@
 			"entries": [
 				"你可以无需材料成分施展{@spell 龙类召唤术|XPHB}。你可以无需法术位施展它一次，随后你在完成一次{@variantrule 长休|XPHB}后重获以此法施展它的能力。",
 				"每当你开始施展此法术时，都可以修改此法术使其无需{@status 专注|XPHB}。以此法施展时，此法术的持续时间将变为 1 分钟。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Wild Magic Sorcery",
@@ -6059,7 +6139,8 @@
 					"type": "refSubclassFeature",
 					"subclassFeature": "混沌之潮|术士|XPHB|狂野魔法|XPHB|3"
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Tides of Chaos",
@@ -6075,7 +6156,8 @@
 			"entries": [
 				"你可以驾驭机运的力量，以获得一次自身具有{@variantrule 优势|XPHB}的{@variantrule D20 检定|XPHB}。你必须在掷出{@dice d20}之前决定是否使用此特性。此特性一经使用，你必须使用法术位施展一道术士法术、或完成{@variantrule 长休|XPHB}后才能再次使用。",
 				"如果你在完成{@variantrule 长休|XPHB}前使用法术位施展了术士法术来恢复特性，则你自动于{@table 狂野魔法浪涌|XPHB}表上掷骰。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Wild Magic Surge",
@@ -6230,7 +6312,8 @@
 			},
 			"entries": [
 				"你获得用你的狂野魔法扭曲命运的能力。当一个你能看见的生物投掷{@dice d20}进行{@variantrule D20 检定|XPHB}时，你可以在掷骰完成之后立即用一个{@variantrule 反应|XPHB}并消耗 1 术法点来骰一次{@dice 1d4}，并将结果用作加值或减值（由你决定）加到该{@dice d20}的骰值结果中。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Controlled Chaos",
@@ -6245,7 +6328,8 @@
 			"header": 2,
 			"entries": [
 				"你获得了对狂野魔法浪涌的一定控制。每当你掷骰狂野魔法浪涌表格时，你可以掷骰两次并使用任一数值。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Tamed Surge",
@@ -6261,7 +6345,8 @@
 			"entries": [
 				"你使用法术位施展一道术士法术之后，可以立即创造一种从{@table 狂野魔法浪涌|XPHB}表中选择的效应而非在其上掷骰。你可以选择表中任何除了最后一行的效应，且如果你选择的效应包含掷骰，则你必须掷骰。",
 				"该特性一经使用，则直至你完成一次{@variantrule 长休|XPHB}之前，都无法再次使用。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		}
 	]
 }

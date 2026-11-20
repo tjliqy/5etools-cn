@@ -148,7 +148,7 @@
 										"items": [
 											"内部链接：{@5etools 这是你的人生|lifegen.html}",
 											"内部 \"img\" 链接（即 {@link https://github.com/5etools-mirror-3/5etools-img} 中的任何内容）：{@5etoolsImg 玩家手册封面|covers/PHB.webp}；{@5etoolsImg 人类圣武士角色表|pdf/DoSI/Human-Paladin.pdf}",
-											"内部 \"音频\" 链接（即 {@link https://github.com/5etools-mirror-3/5etools-src/tree/main/audio} 中的任何内容）：{@5etoolsAudio 盐沼船歌|冒险/GoS/盐沼-船歌.opus}",
+											"内部 \"音频\" 链接（即 {@link https://github.com/5etools-mirror-3/5etools-src/tree/main/audio} 中的任何内容）：{@5etoolsAudio 盐沼船歌|adventure/GoS/saltmarsh-shanty.opus}",
 											"外部链接：{@link https://discord.gg/5etools} 或 {@link 争斗|https://discord.gg/5etools}"
 										]
 									},
@@ -749,7 +749,8 @@
 									"legendaryGroup": {
 										"ENG_name": "Unicorn",
 										"name": "独角兽",
-										"source": "MM"
+										"source": "MM",
+										"translator": "不全书"
 									},
 									"legendary": [
 										{
@@ -812,7 +813,8 @@
 									],
 									"actionTags": [
 										"Multiattack"
-									]
+									],
+									"translator": "不全书"
 								}
 							},
 							"法术；同上：",
@@ -863,7 +865,8 @@
 											]
 										}
 									],
-									"page": 241
+									"page": 241,
+									"translator": "不全书"
 								}
 							},
 							"使用 \"dependencies\" 和 \"_copy\" 来复制既有的内容：",
@@ -880,10 +883,12 @@
 									"_copy": {
 										"ENG_name": "Ancient Red Dragon",
 										"name": "远古红龙",
-										"source": "MM"
+										"source": "MM",
+										"translator": "不全书"
 									},
 									"str": 3,
-									"con": 3
+									"con": 3,
+									"translator": "不全书"
 								}
 							}
 						]
@@ -918,7 +923,8 @@
 								"className": "术士",
 								"classSource": "XPHB",
 								"source": "XPHB",
-								"collapsed": true
+								"collapsed": true,
+								"translator": "威世智慧汉化组"
 							}
 						]
 					}
@@ -1417,10 +1423,12 @@
 							"_copy": {
 								"ENG_name": "Ancient Red Dragon",
 								"name": "远古红龙",
-								"source": "MM"
+								"source": "MM",
+								"translator": "不全书"
 							},
 							"str": 3,
-							"con": 3
+							"con": 3,
+							"translator": "不全书"
 						}
 					}
 				]
@@ -1440,7 +1448,8 @@
 						"name": "远古绿龙",
 						"type": "statblock",
 						"tag": "creature",
-						"source": "MM"
+						"source": "MM",
+						"translator": "不全书"
 					},
 					"混合复杂免疫",
 					{
@@ -1448,7 +1457,8 @@
 						"name": "粘土魔像",
 						"type": "statblock",
 						"tag": "creature",
-						"source": "MM"
+						"source": "MM",
+						"translator": "不全书"
 					},
 					"集会CR",
 					{
@@ -1456,7 +1466,8 @@
 						"name": "绿鬼婆",
 						"type": "statblock",
 						"tag": "creature",
-						"source": "MM"
+						"source": "MM",
+						"translator": "不全书"
 					},
 					"易伤",
 					{
@@ -1464,7 +1475,8 @@
 						"name": "稻草人",
 						"type": "statblock",
 						"tag": "creature",
-						"source": "MM"
+						"source": "MM",
+						"translator": "不全书"
 					},
 					"神话",
 					{
@@ -1503,7 +1515,8 @@
 							"renderCompact": {
 								"isSkipRootName": true
 							}
-						}
+						},
+						"translator": "不全书"
 					},
 					{
 						"ENG_name": "Forge Domain",

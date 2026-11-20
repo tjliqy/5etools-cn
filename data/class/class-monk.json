@@ -503,7 +503,8 @@
 			],
 			"subclassTitle": "修行宗派",
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Monk",
@@ -1011,7 +1012,8 @@
 			],
 			"subclassTitle": "武僧子职",
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Monk",
@@ -1023,7 +1025,8 @@
 			"_copy": {
 				"ENG_name": "Monk",
 				"name": "武僧",
-				"source": "XPHB"
+				"source": "XPHB",
+				"translator": "威世智慧汉化组"
 			},
 			"includeSubclassesFrom": [
 				"武僧|XPHB"
@@ -1074,7 +1077,8 @@
 				"暗影步|武僧||幽影||6",
 				"幽影斗篷|武僧||幽影||11",
 				"灵机一斩|武僧||幽影||17"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Way of Shadow",
@@ -1097,8 +1101,10 @@
 					"srd": true,
 					"basicRules": true,
 					"reprintedAs": true
-				}
-			}
+				},
+				"translator": "不全书"
+			},
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Way of the Four Elements",
@@ -1138,7 +1144,8 @@
 				"额外法门|武僧||四象||6",
 				"额外法门|武僧||四象||11",
 				"额外法门|武僧||四象||17"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Way of the Four Elements",
@@ -1161,8 +1168,10 @@
 					"srd": true,
 					"basicRules": true,
 					"reprintedAs": true
-				}
-			}
+				},
+				"translator": "不全书"
+			},
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Way of the Open Hand",
@@ -1196,7 +1205,8 @@
 				"混元体|武僧||散打||6",
 				"宁神境|武僧||散打||11",
 				"渗透劲|武僧||散打||17"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Way of the Open Hand",
@@ -1219,8 +1229,10 @@
 					"srd": true,
 					"basicRules": true,
 					"reprintedAs": true
-				}
-			}
+				},
+				"translator": "不全书"
+			},
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Way of the Long Death",
@@ -1582,7 +1594,8 @@
 				"生杀予夺|武僧|XPHB|命流|XPHB|11",
 				"命极之手|武僧|XPHB|命流|XPHB|17"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Warrior of Shadow",
@@ -1619,7 +1632,8 @@
 				"无影步|武僧|XPHB|幽影|XPHB|11",
 				"幽影斗篷|武僧|XPHB|幽影|XPHB|17"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Warrior of the Elements",
@@ -1646,7 +1660,8 @@
 				"四象遁术|武僧|XPHB|元素|XPHB|11",
 				"四象神通|武僧|XPHB|元素|XPHB|17"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Warrior of the Open Hand",
@@ -1665,7 +1680,8 @@
 				"流星步|武僧|XPHB|散打|XPHB|11",
 				"渗透劲|武僧|XPHB|散打|XPHB|17"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Warrior of the Mystic Arts",
@@ -1989,7 +2005,8 @@
 				"source": "XPHB",
 				"shortName": "命流",
 				"className": "武僧",
-				"classSource": "XPHB"
+				"classSource": "XPHB",
+				"translator": "威世智慧汉化组"
 			},
 			"translator": "Kiwee"
 		},
@@ -2045,7 +2062,8 @@
 				"source": "XPHB",
 				"shortName": "散打",
 				"className": "武僧",
-				"classSource": "XPHB"
+				"classSource": "XPHB",
+				"translator": "威世智慧汉化组"
 			},
 			"translator": "Kiwee"
 		}
@@ -2072,7 +2090,8 @@
 					]
 				},
 				"某些宗派的武僧会使用一些奇异的武僧武器，比如铁链连接的两根短棒（双截棍nunchaku），或者带直刃的镰刀（单镰kama）。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Unarmored Defense",
@@ -2085,7 +2104,8 @@
 			"level": 1,
 			"entries": [
 				"第1级起，未着装任何护甲也没持用盾牌时，你的AC值等于10＋你的敏捷调整值＋你的感知调整值。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Dedicated Weapon",
@@ -2126,7 +2146,8 @@
 			},
 			"entries": [
 				"你在自己回合内执行{@action 攻击}动作后，可立即消耗1点气并以一个附赠动作发动两次徒手打击。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Ki",
@@ -2167,7 +2188,8 @@
 						}
 					]
 				}
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Patient Defense",
@@ -2185,7 +2207,8 @@
 			},
 			"entries": [
 				"你在自己回合内，可以消耗1点气，并以一个附赠动作的形式来执行{@action 回避}动作。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Step of the Wind",
@@ -2203,7 +2226,8 @@
 			},
 			"entries": [
 				"你在自己回合内，可以消耗1点气，并以一个附赠动作的形式来执行{@action 撤离}动作或{@action 疾走}动作，同时使你该回合内的跳跃距离翻倍。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Unarmored Movement",
@@ -2217,7 +2241,8 @@
 			"entries": [
 				"第2级起，当未穿着任何护甲也没持用盾牌时，你的移动速度增加10尺。该加值将随着武僧职业等级的提升而增加，具体数值见\"武僧职业表\"中\"无甲移动\"一栏。",
 				"第9级起，你在自己的回合内，可以在垂直平面或水面等地形移动，但移动结束时你必须处在不会坠落的地方。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Deflect Missiles",
@@ -2231,7 +2256,8 @@
 			"entries": [
 				"第3级起，你可以用你的反应拨挡或抓取一个击中你的远程武器攻击。使用本特性后，该次攻击的伤害将被削弱，其减数值等于{@dice 1d10}＋你的敏捷调整值＋你的武僧职业等级。",
 				"当被拨挡攻击的伤害减少至0，且实施伤害的飞弹足够小，并且可以被你单手抓住时，你可以用此时空闲的手去抓取该飞弹。此时你可以消耗1点气以该\"飞弹\"进行一次远程攻击，而该攻击将视为本次反应的一部分。无论你是否具有被拨挡武器的熟练项，本次攻击中你都视为进行具有熟练项的攻击，所使用的飞弹也视为武僧武器，其射程为20/60尺。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Ki-Fueled Attack",
@@ -2258,7 +2284,8 @@
 			"level": 3,
 			"entries": [
 				"第3级时，你选择投入一个宗派精进你的技艺。你可以从可选宗派中选择其一。随后，你将在第3、第6、第11、第17级时获得相应宗派的特性传承。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Ability Score Improvement",
@@ -2272,7 +2299,8 @@
 			"entries": [
 				"当你达到4级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
 				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Quickened Healing",
@@ -2304,7 +2332,8 @@
 			"level": 4,
 			"entries": [
 				"第4级起，当你要承受坠地伤害时，你可以使用反应将伤害减少等同于五倍武僧职业等级的数值。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Extra Attack",
@@ -2317,7 +2346,8 @@
 			"level": 5,
 			"entries": [
 				"第5级起，你在自己回合内执行{@action 攻击}动作时可以攻击两次而非一次。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Focused Aim",
@@ -2349,7 +2379,8 @@
 			},
 			"entries": [
 				"第5级起，你能够阻碍敌人体内的气的流动。你的近战武器攻击命中时，可以消耗1点气尝试发动震慑拳。被命中目标必须进行一次体质豁免，豁免失败则受到{@condition 震慑}，并持续至你的下一回合结束。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Ki-Empowered Strikes",
@@ -2362,7 +2393,8 @@
 			"level": 6,
 			"entries": [
 				"第6级起，攻击对非魔法攻击或伤害具有抗性或免疫的目标时，你的徒手打击视为魔法攻击。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Monastic Tradition feature",
@@ -2375,7 +2407,8 @@
 			"level": 6,
 			"entries": [
 				"第6级时，你将获得相应宗派的一项特性传承。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Evasion",
@@ -2388,7 +2421,8 @@
 			"level": 7,
 			"entries": [
 				"第7级起，你敏锐的直觉让你可以躲过某些特定的区域效应，比如蓝龙的闪电吐息或是法术{@spell 火球术}。你在成为某一范围效应影响对象时，若该效应允许你通过成功的敏捷豁免来使伤害减半，则你在该豁免成功时不受伤害，而豁免失败时只受一半伤害。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Stillness of Mind",
@@ -2401,7 +2435,8 @@
 			"level": 7,
 			"entries": [
 				"第7级起，你可以用你的动作结束一个正影响你的{@condition 魅惑}或{@condition 恐慌}状态。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Ability Score Improvement",
@@ -2415,7 +2450,8 @@
 			"entries": [
 				"当你达到第8级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过该特性让属性超过20。",
 				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Unarmored Movement improvement",
@@ -2428,7 +2464,8 @@
 			"level": 9,
 			"entries": [
 				"第9级起，你在自己的回合内，可以在垂直平面或水面等地形移动，但移动结束时你必须处在不会坠落的地方。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Purity of Body",
@@ -2441,7 +2478,8 @@
 			"level": 10,
 			"entries": [
 				"第10级起，你浑身的气流动使你免疫疾病和毒素。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Monastic Tradition feature",
@@ -2454,7 +2492,8 @@
 			"level": 11,
 			"entries": [
 				"第11级时，你将获得相应宗派的一项特性传承。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Ability Score Improvement",
@@ -2468,7 +2507,8 @@
 			"entries": [
 				"当你达到第12级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过该特性让属性超过20。",
 				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Tongue of the Sun and Moon",
@@ -2481,7 +2521,8 @@
 			"level": 13,
 			"entries": [
 				"第13级起，你可以与其它生物进行心灵交流。此后，你能够听懂所有语言，同时，掌握至少一门语言的任何生物都能理解你说的话。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Diamond Soul",
@@ -2500,7 +2541,8 @@
 			"entries": [
 				"第14级起，你对气的掌控令你所有的豁免检定都成了熟练项。",
 				"另外，当豁免失败时，你可以消耗1点气重掷豁免并使用重掷的结果。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Timeless Body",
@@ -2513,7 +2555,8 @@
 			"level": 15,
 			"entries": [
 				"第15级起，你的气充盈身体让你不受衰老的减益，并且无法被魔法变老。尽管你依然会寿终正寝，但再不需要饮食。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Ability Score Improvement",
@@ -2527,7 +2570,8 @@
 			"entries": [
 				"当你达到16级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
 				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Monastic Tradition feature",
@@ -2540,7 +2584,8 @@
 			"level": 17,
 			"entries": [
 				"第17级时，你将获得相应宗派的一项特性传承。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Empty Body",
@@ -2559,7 +2604,8 @@
 			"entries": [
 				"第18级起，你可以消耗4点气并使用动作来变得{@condition 隐形}，持续1分钟。此时，你对力场伤害之外的所有伤害都具有抗性。",
 				"另外，你可以消耗8点气施展法术{@spell 星界投影}，以该形式施展的法术不需要材料成分，且无法捎带其他生物与你同行。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Ability Score Improvement",
@@ -2573,7 +2619,8 @@
 			"entries": [
 				"当你达到19级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
 				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Perfect Self",
@@ -2586,7 +2633,8 @@
 			"level": 20,
 			"entries": [
 				"第20级起，若你骰先攻时身上未有储备的气，则你获得4点气。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Bonus Unarmed Strike",
@@ -2601,7 +2649,8 @@
 			"header": 2,
 			"entries": [
 				"你可以用一个{@variantrule 附赠动作|XPHB}进行一次{@variantrule 徒手打击|XPHB}。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Dexterous Attacks",
@@ -2616,7 +2665,8 @@
 			"header": 2,
 			"entries": [
 				"你使用徒手打击或武僧武器进行攻击时，可以用敏捷代替力量进行攻击检定和伤害掷骰。此外，当你使用{@variantrule 徒手打击|XPHB}的擒抱或推撞选项时，你也可以使用你的敏捷代替力量决定豁免DC。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Martial Arts",
@@ -2655,7 +2705,8 @@
 						}
 					]
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Martial Arts Die",
@@ -2670,7 +2721,8 @@
 			"header": 2,
 			"entries": [
 				"可以选择用{@damage 1d6}骰代替{@variantrule 徒手打击|XPHB}或武僧武器的伤害。该骰子将随武僧职业等级的提升而增大，具体数据见武僧特性表中的武艺骰一列。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Unarmored Defense",
@@ -2684,7 +2736,8 @@
 			"level": 1,
 			"entries": [
 				"若你未着装任何护甲且未持用{@item 盾牌|XPHB}，你的基础{@variantrule 护甲等级|XPHB}等于 10 + 你的敏捷调整值 + 你的感知调整值。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Flurry of Blows",
@@ -2703,7 +2756,8 @@
 			},
 			"entries": [
 				"你可以消耗 1 点功力，以一个{@variantrule 附赠动作|XPHB}发动两次徒手打击。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Monk's Focus",
@@ -2737,7 +2791,8 @@
 						}
 					]
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Patient Defense",
@@ -2756,7 +2811,8 @@
 			},
 			"entries": [
 				"你能以一个{@variantrule 附赠动作|XPHB}执行{@action 撤离|XPHB}动作。此外，你可以消耗 1 点功力，以一个{@variantrule 附赠动作|XPHB}同时执行{@action 回避|XPHB}与{@action 撤离|XPHB}动作。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Step of the Wind",
@@ -2775,7 +2831,8 @@
 			},
 			"entries": [
 				"你能以一个{@variantrule 附赠动作|XPHB}执行{@action 疾走|XPHB}动作。此外，你可以消耗 1 点功力，以一个{@variantrule 附赠动作|XPHB}同时执行{@action 撤离|XPHB}与{@action 疾走|XPHB}动作，同时使你该回合内的跳跃距离翻倍。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Unarmored Movement",
@@ -2789,7 +2846,8 @@
 			"level": 2,
 			"entries": [
 				"若你未着装任何护甲且未持用{@item 盾牌|XPHB}，你的速度提升 10 尺。该加值将随着武僧职业等级的提升而增加，具体数值见武僧特性表。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Uncanny Metabolism",
@@ -2804,7 +2862,8 @@
 			"entries": [
 				"当你投掷{@variantrule 先攻|XPHB}时，你可以重获所有已消耗的功力。若你如此做，掷你的武艺骰，并且恢复其结果 + 你的武僧等级的{@variantrule 生命值|XPHB}。",
 				"此特性一经使用，直至完成{@variantrule 长休|XPHB}你都无法再次使用。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Deflect Attacks",
@@ -2823,7 +2882,8 @@
 			"entries": [
 				"当你被一次伤害中包含钝击，穿刺或挥砍伤害的攻击检定命中时，你可以执行{@variantrule 反应|XPHB}减少此次攻击对你造成伤害的总值，减值等于{@dice 1d10} + 你的敏捷调整值 + 你的武僧等级。",
 				"若被拨挡攻击的伤害减少至 0，则你可以消耗 1 点功力将此次攻击的部分伤害重新定向。如果是近战攻击，选择你周围 5 尺内的一个你可见的生物；如果是远程攻击，选择 60 尺内一个不位于{@variantrule 掩护|XPHB|全身掩护}后的你可见的生物。该生物必须成功通过一次敏捷豁免，否则受到相当于你 2 个武艺骰 + 你的敏捷调整值的伤害。其伤害类型与原先攻击的伤害类型相同。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Monk Subclass",
@@ -2837,7 +2897,8 @@
 			"level": 3,
 			"entries": [
 				"你选择获得一项武僧子职。子职是一种特化，在特定的武僧等级给予你对应的独特能力。以后你将获得你所选的子职的所有能力\u2014\u2014只要其所需等级不超过你的武僧等级。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Ability Score Improvement",
@@ -2851,7 +2912,8 @@
 			"level": 4,
 			"entries": [
 				"你获得{@feat 属性值提升|XPHB}专长或其他你满足条件的{@5etools 专长|feats.html}。如武僧特性表所示，你在第8，第12，第16级时会再次获得本特性。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Slow Fall",
@@ -2865,7 +2927,8 @@
 			"level": 4,
 			"entries": [
 				"当你要承受坠落伤害时，你可以使用{@variantrule 反应|XPHB}将伤害减少等同于五倍武僧职业等级的数值。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Extra Attack",
@@ -2879,7 +2942,8 @@
 			"level": 5,
 			"entries": [
 				"当你在自己的回合执行{@action 攻击|XPHB}动作时，你可以发动两次攻击而非一次。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Stunning Strike",
@@ -2897,7 +2961,8 @@
 			},
 			"entries": [
 				"每回合一次，当你使用{@variantrule 徒手打击|XPHB}或武僧武器命中一个生物后，你可以消耗 1 点功力尝试发动震慑拳。目标必须进行一次体质豁免，豁免失败则陷入{@condition 震慑|XPHB}状态，直至你的下个回合开始。若豁免成功，则目标的{@variantrule 速度|XPHB}减半，直至你的下个回合开始，并且下一次对该目标进行的攻击检定具有{@variantrule 优势|XPHB}。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Empowered Strikes",
@@ -2911,7 +2976,8 @@
 			"level": 6,
 			"entries": [
 				"当你使用{@variantrule 徒手打击|XPHB}造成伤害时，你可以选择造成力场伤害或是其原本的伤害类型。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Subclass Feature",
@@ -2925,7 +2991,8 @@
 			"level": 6,
 			"entries": [
 				"你获得一个武僧子职特性。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Evasion",
@@ -2940,7 +3007,8 @@
 			"entries": [
 				"当你受到一个允许你进行敏捷豁免来只承受一半伤害的效应影响时，你在豁免成功时不受伤害，豁免失败时只承受一半伤害。",
 				"如果你处于{@condition 失能|XPHB}状态，则你无法从此特性中受益。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Ability Score Improvement",
@@ -2954,7 +3022,8 @@
 			"level": 8,
 			"entries": [
 				"你获得{@feat 属性值提升|XPHB}专长或其它你满足条件的{@5etools 专长|feats.html}。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Acrobatic Movement",
@@ -2968,7 +3037,8 @@
 			"level": 9,
 			"entries": [
 				"若你未着装任何护甲也没持用{@item 盾牌|XPHB}，你便可以在你的回合中在垂直表面和液体表面上移动而不会坠落。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Heightened Focus",
@@ -3013,7 +3083,8 @@
 						}
 					]
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Self-Restoration",
@@ -3028,7 +3099,8 @@
 			"entries": [
 				"凭借纯粹的意志，你能够在每次自己的回合结束时移除你身上的下列状态之一：{@condition 魅惑|XPHB}、{@condition 恐慌|XPHB}或{@condition 中毒|XPHB}。",
 				"此外，不吃不喝不再会使你提升{@condition 力竭|XPHB}等级。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Subclass Feature",
@@ -3042,7 +3114,8 @@
 			"level": 11,
 			"entries": [
 				"你获得一个武僧子职特性。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Ability Score Improvement",
@@ -3056,7 +3129,8 @@
 			"level": 12,
 			"entries": [
 				"你获得{@feat 属性值提升|XPHB}专长或其它你满足条件的{@5etools 专长|feats.html}。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Deflect Energy",
@@ -3070,7 +3144,8 @@
 			"level": 13,
 			"entries": [
 				"你现在可以使用你的拨挡攻击特性对抗造成任何伤害类型的攻击，而不仅限于钝击，穿刺或挥砍。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Disciplined Survivor",
@@ -3089,7 +3164,8 @@
 			"entries": [
 				"你的身心修行已然有所成就，你获得所有豁免的熟练。",
 				"此外，当你豁免失败时，你可以消耗 1 点功力重掷豁免，但必须使用重掷的结果。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Perfect Focus",
@@ -3103,7 +3179,8 @@
 			"level": 15,
 			"entries": [
 				"若你在投掷{@variantrule 先攻|XPHB}，且选择不使用运转周天时，你的功力为 3 点或更少，则你的功力恢复至 4 点。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Ability Score Improvement",
@@ -3117,7 +3194,8 @@
 			"level": 16,
 			"entries": [
 				"你获得{@feat 属性值提升|XPHB}专长或其它你满足条件的{@5etools 专长|feats.html}。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Subclass Feature",
@@ -3131,7 +3209,8 @@
 			"level": 17,
 			"entries": [
 				"你获得一个武僧子职特性。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Superior Defense",
@@ -3150,7 +3229,8 @@
 			},
 			"entries": [
 				"在你的回合开始时，你可以消耗 3 点功力提高自己抵挡伤害的能力，持续 1 分钟或直至你陷入{@condition 失能|XPHB}状态。持续时间内，你对力场伤害之外的所有伤害都具有{@variantrule 抗性|XPHB}。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Epic Boon",
@@ -3164,7 +3244,8 @@
 			"level": 19,
 			"entries": [
 				"你获得了一个{@filter 传奇恩惠专长|feats|category=EB}，或者你选择另一个符合条件的{@5etools 专长|feats.html}。推荐选择{@feat 无敌攻势之恩惠|XPHB}。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Body and Mind",
@@ -3178,7 +3259,8 @@
 			"level": 20,
 			"entries": [
 				"你行满功成，身心性命皆已突破超然境界。你的敏捷和感知各提升 4。现在你这些属性的上限为 25。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		}
 	],
 	"subclassFeature": [
@@ -3414,7 +3496,8 @@
 					"type": "refSubclassFeature",
 					"subclassFeature": "法门|武僧||四象||3"
 				}
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Disciple of the Elements",
@@ -3471,7 +3554,8 @@
 						}
 					]
 				}
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Elemental Disciplines",
@@ -3581,7 +3665,8 @@
 						}
 					]
 				}
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Extra Elemental Discipline",
@@ -3597,7 +3682,8 @@
 			"entries": [
 				"你学习一个额外的自选法门。除了元素同调法门外，你应该已经学会2个其他法门。",
 				"你每次习得新的法门时，还可以将一个你已知的法门替换为另一个符合选择条件的法门。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Extra Elemental Discipline",
@@ -3613,7 +3699,8 @@
 			"entries": [
 				"你学习一个额外的自选法门。除了元素同调法门外，你应该已经学会3个其他法门。",
 				"你每次习得新的法门时，还可以将一个你已知的法门替换为另一个符合选择条件的法门。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Extra Elemental Discipline",
@@ -3629,7 +3716,8 @@
 			"entries": [
 				"你学习一个额外的自选法门。除了元素同调法门外，你应该已经学会4个其他法门。",
 				"你每次习得新的法门时，还可以将一个你已知的法门替换为另一个符合选择条件的法门。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Way of the Open Hand",
@@ -3648,7 +3736,8 @@
 					"type": "refSubclassFeature",
 					"subclassFeature": "散打技巧|武僧||散打||3"
 				}
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Open Hand Technique",
@@ -3672,7 +3761,8 @@
 						"目标直到你的下一回合结束前，无法执行反应。"
 					]
 				}
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Wholeness of Body",
@@ -3688,7 +3778,8 @@
 			"header": 2,
 			"entries": [
 				"你获得自疗的能力。你可以使用一个动作获得等同于三倍武僧职业等级的生命值。你必须完成一次长休才能再次使用该特性。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Tranquility",
@@ -3704,7 +3795,8 @@
 			"header": 2,
 			"entries": [
 				"第11级起，你可以进入一种特殊的冥想状态，使浑身环绕着和平的灵光。完成长休后，你将获得法术 {@spell 庇护术} 的效应，其效应持续至你再次开始长休之前（该法术效应可以如常被提前终止）。该法术效应的豁免DC等于8＋你的感知调整值＋你的熟练加值。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Quivering Palm",
@@ -3726,7 +3818,8 @@
 			"entries": [
 				"你可以将暗劲击入他人体内。你的徒手打击命中目标生物时，可以消耗3点气将一股致命的劲力送入敌人体内。劲力的持续日数等于你的武僧等级，且在你用动作终止劲力之前它不产生任何减益。若要终止劲力，你和目标必须在同一个位面。而你使用动作终止劲力后，目标必须进行一次体质豁免，豁免失败则其生命值降为0，豁免成功则目标受到{@damage 10d10}的暗蚀伤害。",
 				"同一时间只能有一个生物受你渗透劲特性影响。你也可以选择不造成任何伤害的终止渗透劲，且不需要使用动作。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Way of Shadow",
@@ -3744,7 +3837,8 @@
 					"type": "refSubclassFeature",
 					"subclassFeature": "暗影技艺|武僧||幽影||3"
 				}
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Shadow Arts",
@@ -3764,7 +3858,8 @@
 			},
 			"entries": [
 				"你可复制某些特定法术的效应。你可用一个动作消耗2点气以施放{@spell 黑暗术}，{@spell 黑暗视觉}，{@spell 行动无踪}或{@spell 沉默术}，且无需材料成分。此外，若你仍未习得戏法{@spell 次级幻象}，则你将获得该戏法。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Shadow Step",
@@ -3779,7 +3874,8 @@
 			"header": 2,
 			"entries": [
 				"你获得在阴影中漫步的能力。你处于微光光照或黑暗环境时，可以用附赠动作传送至多60尺，到达一个你能看见且未被占据还必须同样处于微光光照或黑暗环境中的区域。随后直至你本回合结束前，你下一次发动近战攻击时具有优势。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Cloak of Shadows",
@@ -3794,7 +3890,8 @@
 			"header": 2,
 			"entries": [
 				"第11级起，你学会如何化身为幽影。当你处于微光光照或黑暗环境时，可以用动作变为{@condition 隐形}。{@condition 隐形}状态将一直持续至你发动攻击、施展法术或进入明亮光照区域时结束。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Opportunist",
@@ -3809,7 +3906,8 @@
 			"header": 2,
 			"entries": [
 				"第17级起，你可以抓住利用生物被攻击命中时的短暂停顿。身处你身边5尺范围内的生物被除你之外的生物攻击命中时，你可以用反应对该被攻击生物发动一次近战攻击。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Way of the Long Death",
@@ -5161,7 +5259,8 @@
 						}
 					]
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Manipulate Elements",
@@ -5175,7 +5274,8 @@
 			"level": 3,
 			"entries": [
 				"你习得戏法{@spell 四象法门|XPHB}，其施法属性为感知。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Warrior of the Elements",
@@ -5198,7 +5298,8 @@
 					"type": "refSubclassFeature",
 					"subclassFeature": "掌控元素|武僧|XPHB|元素|XPHB|3"
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Elemental Burst",
@@ -5219,7 +5320,8 @@
 			"entries": [
 				"以一个{@action 魔法|XPHB}动作，你可以消耗 2 点功力，凝聚元素能量，在你周围 120 尺内的一点产生一场半径 20 尺{@variantrule 球状 [效应区域]|XPHB|球状}区域的能量爆发。你选择一种伤害类型：强酸、寒冷、火焰、闪电或雷鸣。",
 				"{@variantrule 球状 [效应区域]|XPHB|球状}区域内的每个生物必须成功通过进行一次敏捷豁免。若失败，该生物受到相当于你 3 个武艺骰的伤害，其伤害类型为你之前所选择的类型。若成功，则受到一半伤害。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Stride of the Elements",
@@ -5234,7 +5336,8 @@
 			"header": 2,
 			"entries": [
 				"当你处于元素同调特性激活期间，你获得相当于你{@variantrule 速度|XPHB}的{@variantrule 飞行速度|XPHB}与{@variantrule 游泳速度|XPHB}。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Elemental Epitome",
@@ -5273,7 +5376,8 @@
 						"每个你的回合一次，当你用{@variantrule 徒手打击|XPHB}命中一个目标时，你可以对其造成相当于你武艺骰的额外伤害。此伤害的类型与此次徒手打击所造成的伤害类型相同。"
 					]
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Warrior of Mercy",
@@ -5300,7 +5404,8 @@
 					"type": "refSubclassFeature",
 					"subclassFeature": "操命本事|武僧|XPHB|命流|XPHB|3"
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Hand of Harm",
@@ -5319,7 +5424,8 @@
 			},
 			"entries": [
 				"每回合一次，当你用{@variantrule 徒手打击|XPHB}命中一个生物并造成伤害时，你可以消耗 1 点功力来额外造成等于一枚你的武艺骰 + 你的感知调整值的暗蚀伤害。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Hand of Healing",
@@ -5338,7 +5444,8 @@
 			},
 			"entries": [
 				"以一个{@action 魔法|XPHB}动作，你能消耗 1 点功力来接触一个生物，恢复目标等于一枚你的武艺骰 + 你的感知调整值的{@variantrule 生命值|XPHB}。当你使用疾风连击时，你能将其中一次徒手打击改为使用此特性治疗一个生物，且不需要为治疗额外消耗功力。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Implements of Mercy",
@@ -5353,7 +5460,8 @@
 			"header": 1,
 			"entries": [
 				"你获得{@skill 洞悉|XPHB}和{@skill 医药|XPHB}的熟练，并且获得{@item 草药工具|XPHB}的熟练。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Physician's Touch",
@@ -5389,7 +5497,8 @@
 						}
 					]
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Flurry of Healing and Harm",
@@ -5406,7 +5515,8 @@
 				"当你使用疾风连击时，你可以将每一次徒手打击都替换为使用予命之手，且均无需为予命之手消耗功力。",
 				"此外，当你以疾风连击发动{@variantrule 徒手打击|XPHB}并造成伤害时，你可以为那次打击使用夺命之手且无需为夺命之手消耗功力。但你每回合仍然只能使用一次夺命之手。",
 				"你能使用此增益的次数等于你的感知调整值（最少一次）。你在完成一次{@variantrule 长休|XPHB}后重获所有已消耗的次数。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Hand of Ultimate Mercy",
@@ -5427,7 +5537,8 @@
 			"entries": [
 				"你对生命能量的掌握打开了通往命流奥义的大门。以一个{@action 魔法|XPHB}动作，你可以消耗 5 点功力并触碰一名死亡不超过 24 小时的生物的尸体。该生物会起死回生，以等于{@dice 4d10} + 你的感知调整值的{@variantrule 生命值|XPHB}复活。如果该生物死前具有任意以下状态，该生物复活时这些状态被移除：{@condition 目盲|XPHB}、{@condition 耳聋|XPHB}、{@condition 麻痹|XPHB}、{@condition 中毒|XPHB}和{@condition 震慑|XPHB}。",
 				"此特性一经使用，直至完成{@variantrule 长休|XPHB}你都无法再次使用。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Open Hand Technique",
@@ -5467,7 +5578,8 @@
 						"目标必须成功通过一次敏捷豁免，否则陷入{@condition 倒地|XPHB}状态。"
 					]
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Warrior of the Open Hand",
@@ -5488,7 +5600,8 @@
 					"type": "refSubclassFeature",
 					"subclassFeature": "散打技巧|武僧|XPHB|散打|XPHB|3"
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Wholeness of Body",
@@ -5506,7 +5619,8 @@
 			"entries": [
 				"你获得治愈己身的能力。你能够以一个{@variantrule 附赠动作|XPHB}掷你的武艺骰。你恢复相当于掷骰结果+你的感知调整值数量的{@variantrule 生命值|XPHB}（至少恢复1点{@variantrule 生命值|XPHB|生命值}）。",
 				"你可以使用该特性的次数等同于你的感知调整值（最少 1 次）。你在完成一次{@variantrule 长休|XPHB}时重获所有已消耗的使用次数。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Fleet Step",
@@ -5523,7 +5637,8 @@
 			"header": 2,
 			"entries": [
 				"当你使用一个{@variantrule 附赠动作|XPHB}而非疾步如风时，你可以在该{@variantrule 附赠动作|XPHB}后立即使用疾步如风。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Quivering Palm",
@@ -5546,7 +5661,8 @@
 			"entries": [
 				"你获得了将内劲击入他人体内的能力。当你以{@variantrule 徒手打击|XPHB}命中一个生物时，可以消耗 4 点功力打入暗劲，其持续相当于你武僧等级的天数。在你使用你的动作将之结束前，暗劲是无害的。此外，当你在自己的回合执行{@action 攻击|XPHB}动作时，你可以将其中一次攻击替换为这个动作使暗劲结束。若你如此做，你和目标必须处于同一个存在位面。当你结束暗劲时，目标必须进行一次体质豁免，失败则受到{@damage 10d12}力场伤害，成功则只受到一半伤害。",
 				"在同一时间你只能用这个特性使一个生物处于此效应中。你可以结束某人身上的暗劲而不造成伤害（不需要动作）。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Shadow Arts",
@@ -5572,7 +5688,8 @@
 					"type": "refSubclassFeature",
 					"subclassFeature": "幻影术|武僧|XPHB|幽影|XPHB|3"
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Warrior of Shadow",
@@ -5591,7 +5708,8 @@
 					"type": "refSubclassFeature",
 					"subclassFeature": "暗影技艺|武僧|XPHB|幽影|XPHB|3"
 				}
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Darkness",
@@ -5610,7 +5728,8 @@
 			},
 			"entries": [
 				"你可以消耗 1 点功力以施展{@spell 黑暗术|XPHB}法术且无需任何法术成分。你可以看穿以这个特性施展的{@variantrule 黑暗|XPHB}区域。法术持续期间，你可以在你的每个回合开始时将此法术区域移动到你 60 尺范围内的任意一处空间。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Darkvision",
@@ -5625,7 +5744,8 @@
 			"header": 2,
 			"entries": [
 				"你获得 60 尺{@sense 黑暗视觉|XPHB}。如果你已经有{@sense 黑暗视觉|XPHB}，则其范围提升 60 尺。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Shadowy Figments",
@@ -5640,7 +5760,8 @@
 			"header": 2,
 			"entries": [
 				"你知晓戏法{@spell 次级幻象|XPHB}。其施法属性为感知。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Shadow Step",
@@ -5655,7 +5776,8 @@
 			"header": 2,
 			"entries": [
 				"当你完全身处{@variantrule 微光光照|XPHB}或{@variantrule 黑暗|XPHB}下时，你能以一个{@variantrule 附赠动作|XPHB}传送到 60 尺内另一处你可见的未占据的空间，目标地点需要同样位于{@variantrule 微光光照|XPHB}或{@variantrule 黑暗|XPHB}下。接下来，你在当前回合结束前所做的下一次近战攻击具有{@variantrule 优势|XPHB}。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Improved Shadow Step",
@@ -5674,7 +5796,8 @@
 			},
 			"entries": [
 				"你可以利用与堕影冥界的连结来增强自己的传送能力。当你使用暗影步特性时，你可以消耗 1 点功力，移除开始和结束时对{@variantrule 微光光照|XPHB}或{@variantrule 黑暗|XPHB}的要求。此外，作为这个{@variantrule 附赠动作|XPHB}的一部分，你可以立即在传送之后进行一次{@variantrule 徒手打击|XPHB}。"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Cloak of Shadows",

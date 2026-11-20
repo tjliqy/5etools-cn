@@ -1634,7 +1634,8 @@
 			"_copy": {
 				"ENG_name": "Alchemist's Fire (flask)",
 				"name": "炽火胶(扁瓶装)",
-				"source": "PHB"
+				"source": "PHB",
+				"translator": "不全书"
 			},
 			"rarity": "unknown",
 			"value": null,
@@ -1699,7 +1700,8 @@
 			],
 			"miscTags": [
 				"CNS"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Alchemy Jug",
@@ -2547,7 +2549,8 @@
 			"entries": [
 				"这枚护符闻起来像散发着淡淡的麦酒香气的旧木头。着装此护符时，你可以喝下一品脱的啤酒、麦酒、蜂蜜酒或红酒以回复{@dice 4d4 + 4}点生命值。一旦护符恢复了生命值，在第二天黎明前，此特性无法再次使用。"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Amulet of the Inferno",
@@ -3183,7 +3186,8 @@
 						"火炮喷出毒气并覆盖一处60尺的锥状区域。该区域内的每个生物必须进行一次{@dc 15}的体质豁免。豁免失败时，该生物受到22（{@damage 4d10}）毒素伤害并被{@condition 中毒}1分钟。豁免成功时，该生物受到一半伤害且不会{@condition 中毒}。以此方式{@condition 中毒}的生物可以在其每回合结束时重复进行该豁免检定，成功则结束其身上的该效应。"
 					]
 				}
-			]
+			],
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Arcane Chatelaine",
@@ -6062,7 +6066,8 @@
 			"value": 0.1,
 			"entries": [
 				"最常见于一个{@item 滚珠 (一袋1,000粒)|phb|滚珠袋}内。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Ball Bearings",
@@ -6106,7 +6111,8 @@
 					"quantity": 1000
 				}
 			],
-			"atomicPackContents": true
+			"atomicPackContents": true,
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Balloon Pack",
@@ -6238,7 +6244,8 @@
 			"value": 200,
 			"entries": [
 				"一个木桶可以容纳40加仑液体或4立方英尺固体。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Barrel",
@@ -6624,7 +6631,8 @@
 						]
 					]
 				}
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Basic Poison",
@@ -6667,7 +6675,8 @@
 			],
 			"miscTags": [
 				"CNS"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Basket",
@@ -6690,7 +6699,8 @@
 				"weight": [
 					40
 				]
-			}
+			},
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Basket",
@@ -6731,7 +6741,8 @@
 			"entries": [
 				"持握此铁制塔盾时，你在AC上获得+1加值。此加值是在盾牌本身的AC加值之外的。",
 				"此外，该盾牌拥有3发充能，并在每天黎明时恢复{@dice 1d3}发已消耗的充能。如果你持握此盾牌并将一个处于你触及范围内的生物推开至少5尺，你可以消耗1发充能使该生物被额外推开10尺、使其{@condition 倒地}，或同时产生这两种效果。"
-			]
+			],
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Battle Standard of Infernal Power",
@@ -7952,7 +7963,8 @@
 			"entries": [
 				"{#itemEntry 龙鳞甲|XDMG}"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Black Ghost Orchid Seed",
@@ -8041,7 +8053,8 @@
 			],
 			"miscTags": [
 				"CNS"
-			]
+			],
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Black Sapphire",
@@ -8531,7 +8544,8 @@
 				"_preserve": {
 					"page": true,
 					"hasFluffImages": true
-				}
+				},
+				"translator": "皮卡丘等"
 			},
 			"bonusWeapon": "+2",
 			"attachedSpells": {
@@ -8543,7 +8557,8 @@
 						"魅影杀手"
 					]
 				}
-			}
+			},
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Blade of Broken Mirrors (Dormant)",
@@ -8616,7 +8631,8 @@
 						"叛神之器如同诀别遗物一样获得进阶。在休眠状态下，每件这些神器拥有一项{@table 神器词条; 次要增益词条|dmg|次要增益}词条和一项{@table 神器词条; 次要减益词条|dmg|次要减益}词条。当神器进入觉醒态，它获得一项额外的{@table 神器词条; 次要增益词条|dmg|次要增益}属性和一项额外的{@table 神器词条; 次要减益词条|dmg|次要减益}属性。当物品到达升华态时，它获得一项{@table 神器词条; 主要增益词条|dmg|主要增益}属性。见《城主指南》第7章的\"神器属性\"获得更多信息。"
 					]
 				}
-			]
+			],
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Blade of Broken Mirrors (Exalted)",
@@ -8651,9 +8667,11 @@
 				"_preserve": {
 					"page": true,
 					"hasFluffImages": true
-				}
+				},
+				"translator": "皮卡丘等"
 			},
-			"bonusWeapon": "+3"
+			"bonusWeapon": "+3",
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Blanket",
@@ -8754,9 +8772,10 @@
 			],
 			"rarity": "none",
 			"entries": [
-				"这种挥发性炼金粉末以小袋封装。当被明火或引线点燃时，粉末便会爆炸。爆开的袋子5尺内的每个生物都必须进行{@dc 13}敏捷豁免，失败者受到{@damage 3d6}点钝击伤害，成功则伤害减半。",
+				"这种挥发性炼金粉末以小袋封装。引线或保险丝一旦被明火点燃，粉末便会爆炸。爆开的袋子5尺内的每个生物都必须进行{@dc 13}敏捷豁免，失败者受到{@damage 3d6}点钝击伤害，成功则伤害减半。",
 				"角色可以把多袋爆破粉捆在一起，让它们同时起爆。每增加一袋，伤害提高{@damage 1d6}（至多{@damage 10d6}），爆炸半径扩大5尺（至多20尺）。"
-			]
+			],
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Blemished Idol of Good Fortunes",
@@ -8801,7 +8820,8 @@
 			],
 			"miscTags": [
 				"CNS"
-			]
+			],
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Block and Tackle",
@@ -9015,7 +9035,8 @@
 			"entries": [
 				"你在使用该魔法斧头发动攻击检定与伤害掷骰时获得+2加值。血斧将对非构装生物或非亡灵额外造成{@damage 1d6}的暗蚀伤害。如果你使用此武器将一个此类生物的生命值降为0，你将获得10点临时生命值。",
 				"这把斧子由深铁锈色的金属所制成，曾属于机械之声的歌利亚野蛮人格罗格·强颚。"
-			]
+			],
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Bloodrage Greataxe",
@@ -9244,7 +9265,8 @@
 			"entries": [
 				"{#itemEntry 龙鳞甲|XDMG}"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Blue Quartz",
@@ -9468,7 +9490,8 @@
 			"value": 2500,
 			"entries": [
 				"一本书可能包含诗歌、历史记载、关于特定学识领域的信息、侏儒机械的图表和笔记，或者任何其他能够用文字或图形表达的内容。一本载有法术的书则是一本{@item 法术书|phb}。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Book",
@@ -9649,7 +9672,8 @@
 					"dim": 20
 				}
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Book of Vile Darkness",
@@ -9892,7 +9916,8 @@
 					]
 				}
 			},
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Book of Vile Darkness (Variant)",
@@ -10858,7 +10883,8 @@
 			"entries": [
 				"{#itemEntry 龙鳞甲|XDMG}"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Brass mug with jade inlay",
@@ -11022,7 +11048,8 @@
 			"entries": [
 				"这个半透明的泡泡状球体外表面微微发黏，只有像头盔一样把它罩在头上时，你才能获得这件物品的益处。",
 				"泡泡内含有可供呼吸1小时的空气。泡泡在每天黎明恢复所有已耗用的空气。"
-			]
+			],
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Bridle of Capturing",
@@ -11192,7 +11219,8 @@
 			"entries": [
 				"{#itemEntry 龙鳞甲|XDMG}"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Bronze spyglass (Brazen Coalition)",
@@ -11214,7 +11242,8 @@
 			"wondrous": true,
 			"entries": [
 				"戴着这枚无明显特征的胸针时，法术或其他任何能侦测或揭示你的生物类型的方法，都会将你视为类人生物，而那些能够揭示你所属阵营的途径都会将你的阵营视为中立。"
-			]
+			],
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Brooch of Shielding",
@@ -11358,7 +11387,8 @@
 			"value": 5,
 			"entries": [
 				"一个吊桶可容纳3加仑液体或1/2立方尺固体。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Bucket",
@@ -11553,7 +11583,8 @@
 				"火绒盒|phb",
 				"水袋|phb",
 				"麻绳(50尺)|phb"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Burglar's Pack",
@@ -11660,7 +11691,8 @@
 					]
 				}
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Calimemnon Crystal",
@@ -11798,7 +11830,8 @@
 			"value": 5,
 			"entries": [
 				"你可以用一个动作将一包铁蒺藜撒出，并覆盖一块边长5尺的方形区域。任何进入该区域的生物必须进行一次{@dc 15}的敏捷豁免，豁免失败则该生物停止移动，并受到1点穿刺伤害。在该生物恢复至少1点生命值前，其步行速度将减少10尺。以半速穿过该区域的生物不需要进行该豁免。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Caltrops",
@@ -11845,7 +11878,8 @@
 					"quantity": 20
 				}
 			],
-			"atomicPackContents": true
+			"atomicPackContents": true,
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Camel",
@@ -13159,7 +13193,8 @@
 			"value": 500,
 			"entries": [
 				"一根链条有10点生命值。它可以被一次成功的{@dc 20}力量检定挣断。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Chalcedony",
@@ -13399,7 +13434,8 @@
 				"weight": [
 					300
 				]
-			}
+			},
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Chest",
@@ -14091,7 +14127,8 @@
 							]
 						}
 					}
-				}
+				},
+				"translator": "Amethyst Dragonlord（可以这很方）等"
 			},
 			"hasFluffImages": true
 		},
@@ -14787,7 +14824,8 @@
 				{
 					"dim": 5
 				}
-			]
+			],
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Cold Absorbing Tattoo",
@@ -15123,7 +15161,8 @@
 				"另外，用其他贵重金属制作的货币偶尔也会出现在宝藏中。银金币（ep）和铂金币（pp）发行于衰亡的帝国和失落的王国，它们常常伴随着某些疑虑，有时也会在交易引其对方的怀疑。一枚银金币价值五枚银币，而一枚铂金币价值十枚金币。",
 				"一枚标准的货币约重三分之一盎司ounce，所以五十枚货币重约一磅pound。"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Copper Alms-Coin",
@@ -15206,7 +15245,8 @@
 			"entries": [
 				"{#itemEntry 龙鳞甲|XDMG}"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Copper stein with silver filigree (Brazen Coalition)",
@@ -15656,7 +15696,8 @@
 						"弩矢|phb": 20
 					}
 				]
-			}
+			},
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Crossbow Bolt Case",
@@ -16168,7 +16209,8 @@
 							]
 						}
 					}
-				}
+				},
+				"translator": "Amethyst Dragonlord（可以这很方）等"
 			},
 			"rarity": "rare"
 		},
@@ -17144,9 +17186,11 @@
 				"_preserve": {
 					"page": true,
 					"hasFluffImages": true
-				}
+				},
+				"translator": "皮卡丘等"
 			},
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Danoth's Visor (Dormant)",
@@ -17170,7 +17214,8 @@
 					]
 				}
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Danoth's Visor (Exalted)",
@@ -17204,12 +17249,14 @@
 				"_preserve": {
 					"page": true,
 					"hasFluffImages": true
-				}
+				},
+				"translator": "皮卡丘等"
 			},
 			"attachedSpells": [
 				"反魔法场"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Daoud's Wondrous Lanthorn",
@@ -21552,7 +21599,8 @@
 					]
 				}
 			},
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Desert Clothing",
@@ -22184,7 +22232,8 @@
 				"香水 (小瓶)|phb",
 				"封蜡|phb",
 				"肥皂|phb"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Diplomat's Pack",
@@ -22348,7 +22397,8 @@
 						]
 					]
 				}
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Disguise Kit",
@@ -22404,7 +22454,8 @@
 			"wondrous": true,
 			"entries": [
 				"这个光滑的彩虹色卵形石头可以被扔到至多30尺远的地方，在冲击下爆炸，创造一个10尺半径的魔法能量球体范围，石头随即被摧毁。范围内所有五环及更低环阶的魔法被终止。"
-			]
+			],
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Dissuader",
@@ -23204,7 +23255,8 @@
 							]
 						}
 					}
-				}
+				},
+				"translator": "Amethyst Dragonlord（可以这很方）等"
 			},
 			"hasFluffImages": true
 		},
@@ -23527,7 +23579,8 @@
 				},
 				"水袋|phb",
 				"麻绳(50尺)|phb"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Dungeoneer's Pack",
@@ -23645,7 +23698,8 @@
 					]
 				}
 			},
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Dust of Corrosion",
@@ -23668,7 +23722,8 @@
 			"wondrous": true,
 			"entries": [
 				"这瓶红棕色的粉末可以被洒在任意可食用物品上以极大地改善该物品的美味程度。同时，食用被洒上美味尘的食物的人的其他感官将被削弱，并将在接下来一小时内所进行的所有感知检定和感知豁免上承受劣势。一份美味尘可以被使用6次。"
-			]
+			],
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Dust of Disappearance",
@@ -24508,7 +24563,8 @@
 				"另外，用其他贵重金属制作的货币偶尔也会出现在宝藏中。银金币（ep）和铂金币（pp）发行于衰亡的帝国和失落的王国，它们常常伴随着某些疑虑，有时也会在交易引其对方的怀疑。一枚银金币价值五枚银币，而一枚铂金币价值十枚金币。",
 				"一枚标准的货币约重三分之一盎司ounce，所以五十枚货币重约一磅pound。"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Electrum 50-Zib Coin",
@@ -25349,7 +25405,8 @@
 						"mode": "appendArr",
 						"items": "这副牌中有一张牌被施了魔法，可以按照其拥有者的命令变成任何特定的牌。这个魔法只有25%的几率生效，但对于那些不介意风险的认真赌徒来说，这副牌价值500金币\u2014\u2014或者对于那些不知道这一点的人来说。"
 					}
-				}
+				},
+				"translator": "不全书"
 			},
 			"value": null
 		},
@@ -25761,7 +25818,8 @@
 				},
 				"水袋|phb",
 				"易容工具|phb"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Entertainer's Pack",
@@ -26191,7 +26249,8 @@
 			"value": 6000,
 			"entries": [
 				"水栖和飞行坐骑需要使用特制鞍座。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Exotic Saddle",
@@ -26275,7 +26334,8 @@
 				},
 				"水袋|phb",
 				"麻绳(50尺)|phb"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Explorer's Pack",
@@ -26327,7 +26387,8 @@
 			"rarity": "none",
 			"entries": [
 				"这颗橡子大小的黄铜球体内封着少许爆破粉和一个发条引信。用一个动作可将爆炸种子掷出至多30尺，撞击即爆。爆炸种子5尺范围内的每个生物都必须进行{@dc 10}敏捷豁免，失败者受到{@damage 1d8}点钝击伤害，成功则伤害减半。"
-			]
+			],
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Eye Agate",
@@ -28524,7 +28585,8 @@
 			"entries": [
 				"这套笨重的套装将你的头部和身体完全包裹起来，穿脱它需要1分钟的时间。穿戴期间，它能使你能在没有空气的环境中呼吸，并保护你免受你周遭任何有害气体的影响。这套服装还能在你在水中环境下为你提供等同于你步行速度的游泳速度，或在无重力环境下为你提供等同于你步行速度的飞行速度。"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Fishing Tackle",
@@ -28622,7 +28684,8 @@
 			"value": 2,
 			"entries": [
 				"一个扁瓶可容纳1品脱液体。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Flask",
@@ -28906,7 +28969,8 @@
 			],
 			"seeAlsoVehicle": [
 				"飞鱼舰|AAG"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Flying Machine",
@@ -29168,7 +29232,8 @@
 						]
 					]
 				}
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Forgery Kit",
@@ -29263,11 +29328,12 @@
 			"hasRefs": true,
 			"entries": [
 				"{#itemEntry 手榴弹|XDMG}",
-				"{@variantrule 球状 [效应区域]|XPHB|球状}内的每个生物都必须进行一次{@dc 15}的敏捷豁免，豁免失败者受到17（{@damage 5d6}）穿刺伤害，豁免成功则伤害减半。"
+				"位于{@variantrule 球状 [效应区域]|XPHB|球状}内的每个生物需进行一次{@dc 15}的敏捷豁免检定，豁免失败则受到17（{@damage 5d6}）穿刺伤害，豁免成功则伤害减半。"
 			],
 			"miscTags": [
 				"CNS"
-			]
+			],
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Frostfell and Everice Trinket",
@@ -30287,7 +30353,8 @@
 			"value": 200,
 			"entries": [
 				"一个瓶子可容纳1½品脱液体。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Glass Bottle",
@@ -30567,7 +30634,8 @@
 					"weight": "remove",
 					"recharge": "remove",
 					"rechargeAmount": "remove"
-				}
+				},
+				"translator": "Amethyst Dragonlord（可以这很方）等"
 			},
 			"wondrous": true,
 			"entries": [
@@ -30712,7 +30780,8 @@
 						"鉴定术"
 					]
 				}
-			}
+			},
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Gold",
@@ -30761,7 +30830,8 @@
 				"另外，用其他贵重金属制作的货币偶尔也会出现在宝藏中。银金币（ep）和铂金币（pp）发行于衰亡的帝国和失落的王国，它们常常伴随着某些疑虑，有时也会在交易引其对方的怀疑。一枚银金币价值五枚银币，而一枚铂金币价值十枚金币。",
 				"一枚标准的货币约重三分之一盎司ounce，所以五十枚货币重约一磅pound。"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Gold 5-Zino Coin",
@@ -30999,7 +31069,8 @@
 			"entries": [
 				"{#itemEntry 龙鳞甲|XDMG}"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Gold idol",
@@ -31636,7 +31707,8 @@
 			"entries": [
 				"{#itemEntry 龙鳞甲|XDMG}"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Grenade Launcher",
@@ -31668,7 +31740,8 @@
 			"hasRefs": true,
 			"entries": [
 				"{#itemEntry 手榴弹|XDMG}"
-			]
+			],
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Grimoire Infinitus (Awakened)",
@@ -31702,9 +31775,11 @@
 				"_preserve": {
 					"page": true,
 					"hasFluffImages": true
-				}
+				},
+				"translator": "皮卡丘等"
 			},
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Grimoire Infinitus (Dormant)",
@@ -31735,7 +31810,8 @@
 					]
 				}
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Grimoire Infinitus (Exalted)",
@@ -31769,9 +31845,11 @@
 				"_preserve": {
 					"page": true,
 					"hasFluffImages": true
-				}
+				},
+				"translator": "皮卡丘等"
 			},
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Grovelthrash (Awakened)",
@@ -31806,7 +31884,8 @@
 				"_preserve": {
 					"page": true,
 					"hasFluffImages": true
-				}
+				},
+				"translator": "皮卡丘等"
 			},
 			"bonusWeapon": "+2",
 			"modifySpeed": {
@@ -31814,7 +31893,8 @@
 					"burrow": "walk"
 				}
 			},
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Grovelthrash (Dormant)",
@@ -31881,7 +31961,8 @@
 					]
 				}
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Grovelthrash (Exalted)",
@@ -31916,7 +31997,8 @@
 				"_preserve": {
 					"page": true,
 					"hasFluffImages": true
-				}
+				},
+				"translator": "皮卡丘等"
 			},
 			"bonusWeapon": "+3",
 			"attachedSpells": {
@@ -31928,7 +32010,8 @@
 					]
 				}
 			},
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Gruul Guild Signet",
@@ -32200,7 +32283,8 @@
 			"entries": [
 				"一个女巫团体可以制作一种名为女巫之眼的魔法物品，它由一个真正的眼睛制成，涂上了清漆，通常安装在吊坠或其他可穿戴物品上。女巫之眼通常被托付给一个手下保管和运输。如果女巫之眼存在于同一存在平面上，团体中的女巫可以采取行动来看到女巫之眼所看到的。女巫之眼有AC 10，1点生命值，并且有60尺半径的{@sense 黑暗视觉}（暗视）。如果它被摧毁，每个团体成员会受到{@damage 3d10}点心灵伤害，并且在24小时内处于{@condition 目盲}（失明）状态。",
 				"一个鬼婆集会一次只能拥有一个鬼婆之眼，制作一个新的鬼婆之眼需要聚会所有三名成员进行一个仪式。仪式花费1小时，且进行仪式时鬼婆不能处于{@condition 目盲}中。如果仪式中的鬼婆进行任何仪式外的动作，则仪式必需重新开始。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Hag Eye",
@@ -32360,7 +32444,8 @@
 			],
 			"seeAlsoVehicle": [
 				"锤头鲨舰|AAG"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Hammock of Worlds",
@@ -33450,7 +33535,8 @@
 			"rarity": "very rare",
 			"entries": [
 				"这个光泽的黑色宝石允许一个{@creature 夜鬼婆}在拥有它时变得虚无。心石的触摸还可以治愈任何疾病。制作一个心石需要30天。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Heliacal Wand of Celestial Prowess",
@@ -34499,7 +34585,8 @@
 						]
 					]
 				}
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Herbalism Kit",
@@ -34845,10 +34932,12 @@
 				"_preserve": {
 					"page": true,
 					"hasFluffImages": true
-				}
+				},
+				"translator": "皮卡丘等"
 			},
 			"bonusWeapon": "+2",
-			"bonusAc": "+2"
+			"bonusAc": "+2",
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Hide of the Feral Guardian (Dormant)",
@@ -34891,7 +34980,8 @@
 						"变形术"
 					]
 				}
-			}
+			},
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Hide of the Feral Guardian (Exalted)",
@@ -34926,10 +35016,12 @@
 				"_preserve": {
 					"page": true,
 					"hasFluffImages": true
-				}
+				},
+				"translator": "皮卡丘等"
 			},
 			"bonusWeapon": "+3",
-			"bonusAc": "+3"
+			"bonusAc": "+3",
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Hither-Thither Staff",
@@ -35093,7 +35185,8 @@
 			],
 			"miscTags": [
 				"CNS"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Homeward Compass",
@@ -36223,7 +36316,8 @@
 				"着装该护甲时，你的AC获得+1加值。",
 				"这身皮甲共有3发充能。当你攻击并命中一个失去了任何量生命值的生物时，你可以消耗一发充能，并对该目标额外造成{@damage 1d10}的暗蚀伤害。这身皮甲于每天黎明时恢复{@dice 1d3}发已消耗的充能。",
 				"该护甲的护胸和护肩由通过油煮硬化的皮子制成。护甲的其余部分则由更软更灵活的材料制作。"
-			]
+			],
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Hunting Trap",
@@ -36246,7 +36340,8 @@
 			"value": 500,
 			"entries": [
 				"当你使用动作设置好该陷阱后，其形成一个锯齿钢圈，并在生物踏上其中央压板时闭合。陷阱由一根沉重的链条固定在某处，例如一棵树或是一根钉在地上的钉子。任何踩上压板的生物都必须进行一次{@dc 13}的敏捷豁免，豁免失败则受到{@damage 1d4}点穿刺伤害，并停止移动。在该生物从陷阱中解脱前，其移动范围都被限制在链条的长度内（通常为3尺）。一个生物可以使用动作进行一次{@dc 13}的力量检定，以解脱自己或其触及范围内的另一生物。每次豁免失败时，被困生物都将受到1点穿刺伤害。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Hunting Trap",
@@ -36837,7 +36932,8 @@
 				"_preserve": {
 					"page": true,
 					"hasFluffImages": true
-				}
+				},
+				"translator": "皮卡丘等"
 			},
 			"bonusWeapon": "+2",
 			"attachedSpells": {
@@ -36850,7 +36946,8 @@
 					]
 				}
 			},
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Infiltrator's Key (Dormant)",
@@ -36883,7 +36980,8 @@
 					]
 				}
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Infiltrator's Key (Exalted)",
@@ -36917,7 +37015,8 @@
 				"_preserve": {
 					"page": true,
 					"hasFluffImages": true
-				}
+				},
+				"translator": "皮卡丘等"
 			},
 			"bonusWeapon": "+3",
 			"attachedSpells": {
@@ -36933,7 +37032,8 @@
 					]
 				}
 			},
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Ingot of the Skold Rune",
@@ -37891,7 +37991,8 @@
 			"lootTables": [
 				"奥秘 - 极珍稀|XDMG"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Ioun Stone, Agility",
@@ -37941,7 +38042,8 @@
 			"lootTables": [
 				"器具 - 极珍稀|XDMG"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Ioun Stone, Awareness",
@@ -37989,7 +38091,8 @@
 			"lootTables": [
 				"器具 - 珍稀|XDMG"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Ioun Stone, Fortitude",
@@ -38039,7 +38142,8 @@
 			"lootTables": [
 				"奥秘 - 极珍稀|XDMG"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Ioun Stone, Greater Absorption",
@@ -38083,7 +38187,8 @@
 			"lootTables": [
 				"奥秘 - 传说|XDMG"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Ioun Stone, Historical Knowledge",
@@ -38154,7 +38259,8 @@
 			"lootTables": [
 				"圣物 - 极珍稀|XDMG"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Ioun Stone, Intellect",
@@ -38204,7 +38310,8 @@
 			"lootTables": [
 				"奥秘 - 极珍稀|XDMG"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Ioun Stone, Language Knowledge",
@@ -38272,7 +38379,8 @@
 			"lootTables": [
 				"奥秘 - 极珍稀|XDMG"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Ioun Stone, Mastery",
@@ -38321,7 +38429,8 @@
 			"lootTables": [
 				"奥秘 - 传说|XDMG"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Ioun Stone, Natural Knowledge",
@@ -38383,7 +38492,8 @@
 			"lootTables": [
 				"武备 - 珍稀|XDMG"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Ioun Stone, Regeneration",
@@ -38427,7 +38537,8 @@
 			"lootTables": [
 				"奥秘 - 传说|XDMG"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Ioun Stone, Religious Knowledge",
@@ -38496,7 +38607,8 @@
 				"奥秘 - 珍稀|XDMG",
 				"圣物 - 珍稀|XDMG"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Ioun Stone, Self-Preservation",
@@ -38562,7 +38674,8 @@
 			"lootTables": [
 				"武备 - 极珍稀|XDMG"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Ioun Stone, Supreme Intellect",
@@ -38624,7 +38737,8 @@
 			"lootTables": [
 				"圣物 - 珍稀|XDMG"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Iron",
@@ -39058,7 +39172,8 @@
 			"value": 200,
 			"entries": [
 				"一个铁壶可容纳1加仑液体。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Iron Pot",
@@ -39984,7 +40099,8 @@
 			"value": 2,
 			"entries": [
 				"一个壶可容纳1加仑液体。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Jug",
@@ -40799,7 +40915,8 @@
 			],
 			"seeAlsoVehicle": [
 				"七鳃鳗舰|AAG"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Lantern of Revealing",
@@ -41207,10 +41324,12 @@
 				"_preserve": {
 					"page": true,
 					"hasFluffImages": true
-				}
+				},
+				"translator": "皮卡丘等"
 			},
 			"bonusWeapon": "+2",
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Lash of Shadows (Dormant)",
@@ -41295,7 +41414,8 @@
 					]
 				}
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Lash of Shadows (Exalted)",
@@ -41330,10 +41450,12 @@
 				"_preserve": {
 					"page": true,
 					"hasFluffImages": true
-				}
+				},
+				"translator": "皮卡丘等"
 			},
 			"bonusWeapon": "+3",
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Leather Golem Armor",
@@ -41882,7 +42004,8 @@
 			],
 			"seeAlsoVehicle": [
 				"生物舰|AAG"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Loadstone",
@@ -41954,7 +42077,8 @@
 			"value": 1000,
 			"entries": [
 				"每把锁与一把钥匙相配套。不使用钥匙时，一个具有{@item 盗贼工具|phb}熟练项的生物可以通过一次成功的{@dc 15}敏捷检定撬开这把锁。DM可决定是否能够用更高的价格买到更好的锁。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Lock",
@@ -42744,7 +42868,8 @@
 					]
 				}
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Lyre of Building",
@@ -43022,10 +43147,12 @@
 				"_preserve": {
 					"page": true,
 					"hasFluffImages": true
-				}
+				},
+				"translator": "皮卡丘等"
 			},
 			"bonusWeapon": "+2",
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Mace of the Black Crown (Dormant)",
@@ -43101,7 +43228,8 @@
 					"dim": 80
 				}
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Mace of the Black Crown (Exalted)",
@@ -43136,10 +43264,12 @@
 				"_preserve": {
 					"page": true,
 					"hasFluffImages": true
-				}
+				},
+				"translator": "皮卡丘等"
 			},
 			"bonusWeapon": "+3",
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Macuahuitl",
@@ -43386,7 +43516,8 @@
 			"value": 200,
 			"entries": [
 				"这些金属束具可以困住一只小型或中型体型的生物。解开镣铐必须成功通过一次{@dc 20}的敏捷检定。破坏镣铐则必须成功通过一次{@dc 20}的力量检定。每套镣铐配有一把对应的钥匙。不用钥匙时，一个具有{@item 盗贼工具|PHB}熟练项的生物可以通过一次成功的{@dc 15}敏捷检定撬开镣铐的锁。镣铐具有15点生命值。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Manacles",
@@ -43886,7 +44017,8 @@
 						"纸(每张)|phb": 10
 					}
 				]
-			}
+			},
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Map or Scroll Case",
@@ -44170,7 +44302,8 @@
 				"每一个{@creature 构装盾卫}都有一个与之神奇连接的护身符。一个盾卫者只能有一个对应的护身符，如果那个护身符被摧毁，盾卫者会处于{@condition 失能}状态，直到制造出一个替代的护身符。如果盾卫者的护身符没有被佩戴或携带，它将面临直接攻击。它具有AC 10，10点生命值，并且对毒素和心灵伤害免疫。制造一个护身符需要1周时间，并且需要1000金币的组件成本。",
 				"盾卫的专门任务是保护护符的佩戴者。护符的佩戴者可以命令盾卫攻击其敌人，或保护佩戴者免受攻击。如果一次攻击将会伤害佩戴者，这个构装生物可以神奇地将打击吸收到自己的身体中，即使在一定距离外也是如此。",
 				"施法者可以在盾卫中储存一个法术，然后盾卫可以根据命令或在特定条件下施放该法术。许多法师在敌人面前变得无助，只有当其盾卫释放出强大的魔法力量时，才让敌人感到惊讶。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Masterpiece painting in mahogany frame with gold inlay (Legion of Dusk)",
@@ -44808,7 +44941,8 @@
 			"value": 2000,
 			"entries": [
 				"军用鞍座用以稳固骑师坐姿，帮助你在战斗中的活跃坐骑上保持骑乘姿势。它使你在为维持骑乘所进行的任何检定中都具有优势。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Military Saddle",
@@ -45773,7 +45907,8 @@
 			"entries": [
 				"在乔哈斯，驮兽随处可见，通常而言，马和其他的骑乘动物总是最好或是唯一的选择。对于那些需要速度并且有更多硬币可花的人来说，最好的选择通常是野跃兽。然而，没有经过适当训练或与主人建立信任关系的野跃兽往往会攻击甚至吃掉他们的骑手。",
 				"野跃兽每匹的价格在300gp至500gp之间。与罗索纳这样的城市相比，通常在荒原上的城镇中，它们会更便宜、也更常见。"
-			]
+			],
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Moss Agate",
@@ -46043,7 +46178,8 @@
 			"entries": [
 				"这种由木罗莎灌木制成的膏状物被认为有助于防止晒伤，同时它也是一种阻燃剂。花费1分钟在你的皮肤上涂抹四分之一品脱的木罗莎膏，你将在1小时内获得对于火焰伤害的抗性。",
 				"一剂用于防晒的木罗莎膏费用为1 gp。"
-			]
+			],
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Mystery Key",
@@ -46245,7 +46381,8 @@
 			],
 			"seeAlsoVehicle": [
 				"鹦鹉螺|AAG"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Navigation Orb",
@@ -46342,7 +46479,8 @@
 						]
 					]
 				}
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Navigator's Tools",
@@ -47003,7 +47141,8 @@
 				"will": [
 					"修复术"
 				]
-			}
+			},
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Needler Pistol",
@@ -47239,7 +47378,8 @@
 			"wondrous": true,
 			"entries": [
 				"这枚直径6英寸的漆黑球体触感冰冷，用于召唤黑夜。你可以花费10分钟激活它，一旦被激活，则周围半径十里的区域都将被夜幕笼罩，不论将其激活的时间点是白昼还是黑夜。黑夜将持续24小时，直到你与珍珠失去同调，或你使用一个动作终止此魔法效应。夜幕珍珠一旦被使用，则在接下来的24小时中无法被再次激活。"
-			]
+			],
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Nightsaber",
@@ -47276,7 +47416,8 @@
 			],
 			"seeAlsoVehicle": [
 				"夜蛛|AAG"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Niko's Mace",
@@ -48089,7 +48230,8 @@
 			"value": 5000,
 			"entries": [
 				"这些晒干的欧利苏巴树的树叶可以用来泡茶，它可以帮助身体从疲劳中恢复。如果你在长休期间饮下一剂欧利苏巴茶，那么在长休结束时，你的{@condition 力竭}等级会降低2而不是1。"
-			]
+			],
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Ominous Staff of Skulls",
@@ -48888,7 +49030,8 @@
 						"该法球被诅咒，与其同调会将诅咒延伸至你。只要诅咒还生效，你便不愿与法球分开，总是将其随身携带。所有非魔法火焰在距离你30尺半径范围内自动熄灭，你所造成的火焰伤害减半。"
 					]
 				}
-			]
+			],
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Orb of Time",
@@ -50188,7 +50331,8 @@
 			"lootTables": [
 				"圣物 - 珍稀|XDMG"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Periapt of Wound Closure",
@@ -50725,7 +50869,8 @@
 			"value": 2,
 			"entries": [
 				"一个罐可容纳1加仑液体。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Piton",
@@ -51004,7 +51149,8 @@
 				"另外，用其他贵重金属制作的货币偶尔也会出现在宝藏中。银金币（ep）和铂金币（pp）发行于衰亡的帝国和失落的王国，它们常常伴随着某些疑虑，有时也会在交易引其对方的怀疑。一枚银金币价值五枚银币，而一枚铂金币价值十枚金币。",
 				"一枚标准的货币约重三分之一盎司ounce，所以五十枚货币重约一磅pound。"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Platinum 10-Zino Coin",
@@ -51320,7 +51466,8 @@
 						]
 					]
 				}
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Poisoner's Kit",
@@ -51742,7 +51889,8 @@
 			],
 			"miscTags": [
 				"CNS"
-			]
+			],
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Potion of Advantage",
@@ -52106,7 +52254,8 @@
 			],
 			"miscTags": [
 				"CNS"
-			]
+			],
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Potion of Comprehension",
@@ -52458,7 +52607,8 @@
 			],
 			"miscTags": [
 				"CNS"
-			]
+			],
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Potion of Flying",
@@ -52582,7 +52732,8 @@
 			],
 			"miscTags": [
 				"CNS"
-			]
+			],
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Potion of Frost Giant Strength",
@@ -53385,7 +53536,8 @@
 			],
 			"miscTags": [
 				"CNS"
-			]
+			],
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Potion of Longevity",
@@ -53506,7 +53658,8 @@
 			],
 			"miscTags": [
 				"CNS"
-			]
+			],
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Potion of Mind Control (beast)",
@@ -53624,7 +53777,8 @@
 			"miscTags": [
 				"CNS"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Potion of Necrotic Resistance",
@@ -53676,7 +53830,8 @@
 			],
 			"miscTags": [
 				"CNS"
-			]
+			],
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Potion of Poison",
@@ -53793,7 +53948,8 @@
 			],
 			"miscTags": [
 				"CNS"
-			]
+			],
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Potion of Polychromy",
@@ -53826,7 +53982,8 @@
 			],
 			"miscTags": [
 				"CNS"
-			]
+			],
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Potion of Psionic Fortitude",
@@ -53889,7 +54046,8 @@
 			],
 			"miscTags": [
 				"CNS"
-			]
+			],
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Potion of Pugilism",
@@ -53958,7 +54116,8 @@
 			],
 			"miscTags": [
 				"CNS"
-			]
+			],
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Potion of Rejuvenation",
@@ -54256,7 +54415,8 @@
 			"miscTags": [
 				"CNS"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Potion of Supreme Healing",
@@ -54363,7 +54523,8 @@
 			],
 			"miscTags": [
 				"CNS"
-			]
+			],
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Potion of Tirelessness",
@@ -54554,7 +54715,8 @@
 						"吹箭|phb": 50
 					}
 				]
-			}
+			},
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Pouch",
@@ -54873,7 +55035,8 @@
 			"value": 10000,
 			"entries": [
 				"该地区独有的丰产丝绸长期以来一直是当地人引以为傲的东西。经过适当加工和编织后，产生的布料就是普莱德丝绸：一种极其柔韧的材料，具有鞣制皮革的耐久性。普莱德丝绸已成为军用船帆、战争旗帜和其他实用用途的首选布料，同时在富裕阶层中也颇受欢迎。用普莱德丝绸制作的高端服装既时尚又具防护性，这导致许多贵族和富商寻求用这种丝绸制作的全套服装和正式礼服。能够制作此类服装的裁缝寥寥无几，因此虽然普莱德丝绸作为原材料可能很昂贵，但对于大多数普通人来说，用这种布料制成的服装更是贵得令人望而却步。"
-			]
+			],
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Pride Silk Outfit",
@@ -54886,7 +55049,8 @@
 			"value": 50000,
 			"entries": [
 				"一套由普莱德丝绸制成的装备重量为4磅，售价为500gp。若你没有穿戴其他护甲，着装此护甲时，你的基础护甲等级为11+你的敏捷调整值。"
-			]
+			],
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Priest's Pack",
@@ -54950,7 +55114,8 @@
 				{
 					"special": "祭袍"
 				}
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Priest's Pack",
@@ -55183,7 +55348,8 @@
 			"_copy": {
 				"ENG_name": "Prosthetic Limb",
 				"name": "假肢",
-				"source": "XDMG"
+				"source": "XDMG",
+				"translator": "Amethyst Dragonlord（可以这很方）等"
 			},
 			"value": 0,
 			"hasFluff": true,
@@ -56336,7 +56502,8 @@
 						"箭|phb": 20
 					}
 				]
-			}
+			},
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Quiver",
@@ -56432,7 +56599,7 @@
 				"weightless": true
 			},
 			"entries": [
-				"这个箭袋有三个大小不一的隔层，每个隔层都连接着一个异次元空间。无论其中存放着多少东西，箭袋的总重量都永远都不会超过2磅。最小的隔层可以容纳至多60支{@item 箭|XPHB|箭矢}、{@item 弩矢|XPHB|弩矢}或类似的物件；中等大小的隔层可以容纳至多18支{@item 标枪|XPHB|标枪}或类似的物件；最大的隔层可以容纳至多6件长条型的物件，例如弓、{@item 长棍|XPHB|长棍的}、{@item 矛|XPHB|矛}等。",
+				"这个箭袋有三个大小不一的隔层，每个隔层都连接着一个异次元空间。无论其中存放着多少东西，箭袋的总重量都永远都不会超过2磅。最小的隔层可以容纳至多60支{@item 箭|XPHB|箭矢}、{@item 弩矢|XPHB|弩矢}或类似的物件；中等大小的隔层可以容纳至多18支{@item 标枪|XPHB|标枪}或类似的物件；最大的隔层可以容纳至多6件长条型的物件，例如弓、{@item 长棍|XPHB|长棍的}、{@item 矛|XPHB|三叉枪}等。",
 				"你可以如同从普通的箭袋或剑鞘中抽出物品一般抽出艾罗娜箭袋中的物品。"
 			],
 			"hasFluffImages": true,
@@ -56929,7 +57096,8 @@
 			"entries": [
 				"{#itemEntry 龙鳞甲|XDMG}"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Red Wizard Blade",
@@ -57022,7 +57190,8 @@
 			],
 			"miscTags": [
 				"CNS"
-			]
+			],
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Reliquary",
@@ -57308,7 +57477,8 @@
 			"hasRefs": true,
 			"entries": [
 				"{#itemEntry 抗性戒指|XDMG}"
-			]
+			],
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Ring of Air Elemental Command",
@@ -57538,7 +57708,8 @@
 			"hasRefs": true,
 			"entries": [
 				"{#itemEntry 抗性戒指|XDMG}"
-			]
+			],
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Ring of Collecting",
@@ -58254,7 +58425,8 @@
 			"entries": [
 				"{#itemEntry 抗性戒指|XDMG}"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Ring of Force Resistance",
@@ -58299,7 +58471,8 @@
 			"hasRefs": true,
 			"entries": [
 				"{#itemEntry 抗性戒指|XDMG}"
-			]
+			],
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Ring of Free Action",
@@ -58512,7 +58685,8 @@
 			"hasRefs": true,
 			"entries": [
 				"{#itemEntry 抗性戒指|XDMG}"
-			]
+			],
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Ring of Maddening Whispers",
@@ -58648,7 +58822,8 @@
 			"hasRefs": true,
 			"entries": [
 				"{#itemEntry 抗性戒指|XDMG}"
-			]
+			],
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Ring of Obscuring",
@@ -58674,7 +58849,8 @@
 					]
 				}
 			},
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Ring of Poison Resistance",
@@ -58719,7 +58895,8 @@
 			"hasRefs": true,
 			"entries": [
 				"{#itemEntry 抗性戒指|XDMG}"
-			]
+			],
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Ring of Protection",
@@ -58833,7 +59010,8 @@
 			"hasRefs": true,
 			"entries": [
 				"{#itemEntry 抗性戒指|XDMG}"
-			]
+			],
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Ring of Puzzler's Wit",
@@ -58891,7 +59069,8 @@
 			"hasRefs": true,
 			"entries": [
 				"{#itemEntry 抗性戒指|XDMG}"
-			]
+			],
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Ring of Red Fury",
@@ -59386,7 +59565,8 @@
 			"reqAttune": true,
 			"entries": [
 				"当你佩戴这枚灰色水晶戒指时死亡，你会消隐并重新出现在你离开空间5尺内的一个未占据空间（或最近的未占据空间）。你获得等于{@dice 3d6} + 你的体质调整值的生命值。如果你的生命值上限低于你恢复的生命值数量，你的生命值上限提升到类似数值。如果你有任何等级的{@condition 力竭}，你的{@condition 力竭}等级减少1。戒指使用一次后，会化为灰尘并被摧毁。"
-			]
+			],
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Ring of the Copycat",
@@ -59579,7 +59759,8 @@
 			"hasRefs": true,
 			"entries": [
 				"{#itemEntry 抗性戒指|XDMG}"
-			]
+			],
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Ring of Treachery",
@@ -61178,7 +61359,8 @@
 			"entries": [
 				"这根精金权杖的顶端镶嵌着一颗发光的晶状眼睛。该权杖有3充能，每天黎明恢复所有已消耗的充能。",
 				"当你持握此权杖时，一个你60尺内可见的生物对你造成伤害，你可以使用你的反应消耗此权杖的1充能使该生物进行一次{@dc 13}的敏捷豁免。豁免失败时，该生物受到{@damage 2d10}闪电伤害，豁免成功则受到一半伤害。"
-			]
+			],
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Rod of Rulership",
@@ -62100,10 +62282,12 @@
 				"_preserve": {
 					"page": true,
 					"hasFluffImages": true
-				}
+				},
+				"translator": "皮卡丘等"
 			},
 			"bonusWeapon": "+2",
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Ruin's Wake (Dormant)",
@@ -62172,7 +62356,8 @@
 					]
 				}
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Ruin's Wake (Exalted)",
@@ -62207,10 +62392,12 @@
 				"_preserve": {
 					"page": true,
 					"hasFluffImages": true
-				}
+				},
+				"translator": "皮卡丘等"
 			},
 			"bonusWeapon": "+3",
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Ruinblade",
@@ -62385,7 +62572,8 @@
 				"weight": [
 					30
 				]
-			}
+			},
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Sack",
@@ -63141,7 +63329,8 @@
 				{
 					"special": "小刀"
 				}
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Scholar's Pack",
@@ -63325,7 +63514,8 @@
 			],
 			"seeAlsoVehicle": [
 				"蝎舰|AAG"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Scourge of Shadow",
@@ -63437,7 +63627,8 @@
 			"miscTags": [
 				"CNS"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Scroll of Protection (Beasts)",
@@ -63455,7 +63646,8 @@
 			"miscTags": [
 				"CNS"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Scroll of Protection (Celestials)",
@@ -63473,7 +63665,8 @@
 			"miscTags": [
 				"CNS"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Scroll of Protection (Constructs)",
@@ -63491,7 +63684,8 @@
 			"miscTags": [
 				"CNS"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Scroll of Protection (Dragons)",
@@ -63509,7 +63703,8 @@
 			"miscTags": [
 				"CNS"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Scroll of Protection (Elementals)",
@@ -63527,7 +63722,8 @@
 			"miscTags": [
 				"CNS"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Scroll of Protection (Fey)",
@@ -63545,7 +63741,8 @@
 			"miscTags": [
 				"CNS"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Scroll of Protection (Fiends)",
@@ -63563,7 +63760,8 @@
 			"miscTags": [
 				"CNS"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Scroll of Protection (Giants)",
@@ -63581,7 +63779,8 @@
 			"miscTags": [
 				"CNS"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Scroll of Protection (Humanoids)",
@@ -63599,7 +63798,8 @@
 			"miscTags": [
 				"CNS"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Scroll of Protection (Monstrosities)",
@@ -63617,7 +63817,8 @@
 			"miscTags": [
 				"CNS"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Scroll of Protection (Oozes)",
@@ -63635,7 +63836,8 @@
 			"miscTags": [
 				"CNS"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Scroll of Protection (Plants)",
@@ -63653,7 +63855,8 @@
 			"miscTags": [
 				"CNS"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Scroll of Protection (Undead)",
@@ -63671,7 +63874,8 @@
 			"miscTags": [
 				"CNS"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Scroll of Protection from Aberrations",
@@ -66036,7 +66240,8 @@
 			],
 			"seeAlsoVehicle": [
 				"伯劳鸟舰|AAG"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Signal Whistle",
@@ -66184,7 +66389,8 @@
 				"_preserve": {
 					"page": true,
 					"hasFluffImages": true
-				}
+				},
+				"translator": "皮卡丘等"
 			},
 			"bonusWeapon": "+2",
 			"attachedSpells": {
@@ -66196,7 +66402,8 @@
 						"蛛网术"
 					]
 				}
-			}
+			},
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Silken Spite (Dormant)",
@@ -66268,7 +66475,8 @@
 						"叛神之器如同诀别遗物一样获得进阶。在休眠状态下，每件这些神器拥有一项{@table 神器词条; 次要增益词条|dmg|次要增益}词条和一项{@table 神器词条; 次要减益词条|dmg|次要减益}词条。当神器进入觉醒态，它获得一项额外的{@table 神器词条; 次要增益词条|dmg|次要增益}属性和一项额外的{@table 神器词条; 次要减益词条|dmg|次要减益}属性。当物品到达升华态时，它获得一项{@table 神器词条; 主要增益词条|dmg|主要增益}属性。见《城主指南》第7章的\"神器属性\"获得更多信息。"
 					]
 				}
-			]
+			],
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Silken Spite (Exalted)",
@@ -66304,9 +66512,11 @@
 				"_preserve": {
 					"page": true,
 					"hasFluffImages": true
-				}
+				},
+				"translator": "皮卡丘等"
 			},
-			"bonusWeapon": "+3"
+			"bonusWeapon": "+3",
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Silver",
@@ -66352,7 +66562,8 @@
 				"另外，用其他贵重金属制作的货币偶尔也会出现在宝藏中。银金币（ep）和铂金币（pp）发行于衰亡的帝国和失落的王国，它们常常伴随着某些疑虑，有时也会在交易引其对方的怀疑。一枚银金币价值五枚银币，而一枚铂金币价值十枚金币。",
 				"一枚标准的货币约重三分之一盎司ounce，所以五十枚货币重约一磅pound。"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Silver 25-Zib Coin",
@@ -66490,7 +66701,8 @@
 			"entries": [
 				"{#itemEntry 龙鳞甲|XDMG}"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Silver ewer",
@@ -67253,7 +67465,8 @@
 			],
 			"miscTags": [
 				"CNS"
-			]
+			],
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Smokepowder",
@@ -67392,7 +67605,8 @@
 			],
 			"miscTags": [
 				"CNS"
-			]
+			],
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Sorcerous Spyglass",
@@ -67414,7 +67628,8 @@
 			"rarity": "very rare",
 			"entries": [
 				"当一个邪恶的人形生物因{@creature 夜鬼婆}的噩梦侵扰而死亡时，夜巫会用这个由缝合的肉体制成的黑色袋子捕捉灵魂。一个灵魂袋一次只能装一个邪恶的灵魂，而且只有制作这个袋子的夜巫才能用它捕捉灵魂。制作一个灵魂袋需要7天时间和一个人形生物的牺牲（其肉体被用来制作袋子）。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Soul Coin",
@@ -67574,7 +67789,8 @@
 			],
 			"seeAlsoVehicle": [
 				"太空帆船|AAG"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Spaceship Trinket",
@@ -67897,7 +68113,8 @@
 				"当你拿着瓶子的时候，你可以施放储存在瓶子里的法术。该法术使用原施法者的法术位等级、法术豁免DC、法术攻击加值和施法能力，但其他方面视为由你施法。一旦法术被施展，瓶子就空了。",
 				"如果你拿着空瓶子，当你看到一个生物在你周围60尺范围内施法时，你可以以一个反应打开瓶子，并试图打断这个咒语。如果该生物正在施放一个3环或更低环阶的法术，该法术没有效果，并且它被储存在了瓶子里。如果它施展的是4环或更高的法术，进行一次智力检定。DC = 10+法术等级。一旦成功，这个咒语就没有效果了，它被储存在瓶子里。"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Spell Component Ring",
@@ -68576,7 +68793,8 @@
 			"miscTags": [
 				"CNS"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Spell Scroll (Level 2)",
@@ -68608,7 +68826,8 @@
 			"miscTags": [
 				"CNS"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Spell Scroll (Level 3)",
@@ -68643,7 +68862,8 @@
 			"miscTags": [
 				"CNS"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Spell Scroll (Level 4)",
@@ -68675,7 +68895,8 @@
 			"miscTags": [
 				"CNS"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Spell Scroll (Level 5)",
@@ -68707,7 +68928,8 @@
 			"miscTags": [
 				"CNS"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Spell Scroll (Level 6)",
@@ -68739,7 +68961,8 @@
 			"miscTags": [
 				"CNS"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Spell Scroll (Level 7)",
@@ -68771,7 +68994,8 @@
 			"miscTags": [
 				"CNS"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Spell Scroll (Level 8)",
@@ -68803,7 +69027,8 @@
 			"miscTags": [
 				"CNS"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Spell Scroll (Level 9)",
@@ -68835,7 +69060,8 @@
 			"miscTags": [
 				"CNS"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Spell-Refueling Ring",
@@ -68988,7 +69214,8 @@
 					]
 				}
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Spellshard",
@@ -69718,7 +69945,8 @@
 			],
 			"seeAlsoVehicle": [
 				"鱿鱼舰|AAG"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Stabling (per day)",
@@ -70183,7 +70411,8 @@
 						"引力裂沟|egw"
 					]
 				}
-			}
+			},
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Staff of Fate",
@@ -70794,7 +71023,8 @@
 				"器具 - 珍稀|XDMG",
 				"圣物 - 珍稀|XDMG"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Staff of Light and Shadow",
@@ -71723,7 +71953,8 @@
 			"staff": true,
 			"entries": [
 				"这根浅灰色和天蓝色的法杖顶端有一个象牙雕刻的小龙爪。持杖时，你的法术攻击骰得到+1加值。当你用一次法术攻击骰出暴击时，目标将受到额外的{@damage 3d6}光耀伤害。"
-			]
+			],
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Staff of the Lost",
@@ -72759,7 +72990,8 @@
 				"奥秘 - 珍稀|XDMG",
 				"圣物 - 珍稀|XDMG"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Star Card",
@@ -72794,7 +73026,8 @@
 			],
 			"seeAlsoVehicle": [
 				"星蛾|AAG"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Star rose quartz",
@@ -72929,7 +73162,8 @@
 							"caption"
 						]
 					}
-				}
+				},
+				"translator": "Amethyst Dragonlord（可以这很方）等"
 			},
 			"value": 10000000,
 			"translator": "Kiwee"
@@ -73599,8 +73833,10 @@
 				"_preserve": {
 					"page": true,
 					"hasFluffImages": true
-				}
-			}
+				},
+				"translator": "皮卡丘等"
+			},
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Stormgirdle (Dormant)",
@@ -73641,7 +73877,8 @@
 						"一旦你使用了腰带的暴风化身特性，该特性直到下次黎明前不能再使用。"
 					]
 				}
-			]
+			],
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Stormgirdle (Exalted)",
@@ -73676,7 +73913,8 @@
 				"_preserve": {
 					"page": true,
 					"hasFluffImages": true
-				}
+				},
+				"translator": "皮卡丘等"
 			},
 			"attachedSpells": {
 				"daily": {
@@ -73684,7 +73922,8 @@
 						"操控天气"
 					]
 				}
-			}
+			},
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "String",
@@ -75531,7 +75770,8 @@
 			"value": 2,
 			"entries": [
 				"一个大杯可容纳1品脱液体。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Tankard of Plenty",
@@ -76178,9 +76418,11 @@
 				"_preserve": {
 					"page": true,
 					"hasFluffImages": true
-				}
+				},
+				"translator": "皮卡丘等"
 			},
-			"bonusWeapon": "+2"
+			"bonusWeapon": "+2",
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "The Bloody End (Dormant)",
@@ -76254,7 +76496,8 @@
 						"恐惧术"
 					]
 				}
-			}
+			},
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "The Bloody End (Exalted)",
@@ -76290,9 +76533,11 @@
 				"_preserve": {
 					"page": true,
 					"hasFluffImages": true
-				}
+				},
+				"translator": "皮卡丘等"
 			},
-			"bonusWeapon": "+3"
+			"bonusWeapon": "+3",
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "The Codicil of White",
@@ -76982,7 +77227,8 @@
 			],
 			"miscTags": [
 				"CNS"
-			]
+			],
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Thermal Cube",
@@ -77166,7 +77412,8 @@
 					]
 				}
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Thieves' Tools",
@@ -79937,7 +80184,8 @@
 			"miscTags": [
 				"TT"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Trinket",
@@ -80723,7 +80971,8 @@
 			],
 			"seeAlsoVehicle": [
 				"海龟舰|AAG"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Twin Blades of Azzinoth",
@@ -80868,7 +81117,8 @@
 			],
 			"seeAlsoVehicle": [
 				"暴君舰|AAG"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Ulcrun",
@@ -81095,7 +81345,8 @@
 				"_preserve": {
 					"page": true,
 					"hasFluffImages": true
-				}
+				},
+				"translator": "皮卡丘等"
 			},
 			"resist": [
 				"poison"
@@ -81107,7 +81358,8 @@
 						"变形术"
 					]
 				}
-			}
+			},
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Verminshroud (Dormant)",
@@ -81147,7 +81399,8 @@
 						"变形术"
 					]
 				}
-			}
+			},
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Verminshroud (Exalted)",
@@ -81182,7 +81435,8 @@
 				"_preserve": {
 					"page": true,
 					"hasFluffImages": true
-				}
+				},
+				"translator": "皮卡丘等"
 			},
 			"modifySpeed": {
 				"equal": {
@@ -81196,7 +81450,8 @@
 						"变形术"
 					]
 				}
-			}
+			},
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Veteran's Cane",
@@ -81246,7 +81501,8 @@
 			"value": 100,
 			"entries": [
 				"一个小瓶最多可容纳4盎司液体。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Vial",
@@ -81350,7 +81606,8 @@
 							]
 						}
 					}
-				}
+				},
+				"translator": "Amethyst Dragonlord（可以这很方）等"
 			},
 			"rarity": "rare"
 		},
@@ -81437,7 +81694,8 @@
 			"wondrous": true,
 			"entries": [
 				"这件发条装置形似一只餐盘大小的金属螃蟹。每上一次发条，它便可行动1分钟，至多累计10分钟。运转期间，该物品使用相应的{@creature 觅音师|EGW}数据卡，由DM操控。其生命值一旦降至0，这只自动机便被摧毁。"
-			]
+			],
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Voyager Staff",
@@ -83830,7 +84088,8 @@
 			],
 			"seeAlsoVehicle": [
 				"黄蜂舰|AAG"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Watchful Helm",
@@ -84783,7 +85042,8 @@
 			"entries": [
 				"{#itemEntry 龙鳞甲|XDMG}"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "White Ghost Orchid Seed",
@@ -84824,7 +85084,8 @@
 			"wondrous": true,
 			"entries": [
 				"在荒宇系中，这个便携奥法装置会自动跟踪标记星系中所有恒星、行星、卫星和彗星的位置和其运动轨迹，并在其当前位置上方的空间中投射出所有这些天体的影像。在投影中，一个白色的跳动光点会标明荒宇系仪的当前位置。"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Will of the Talon (Awakened)",
@@ -84860,7 +85121,8 @@
 				"_preserve": {
 					"page": true,
 					"hasFluffImages": true
-				}
+				},
+				"translator": "皮卡丘等"
 			},
 			"resist": [
 				"acid",
@@ -84869,7 +85131,8 @@
 				"lightning",
 				"poison"
 			],
-			"bonusWeapon": "+2"
+			"bonusWeapon": "+2",
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Will of the Talon (Dormant)",
@@ -84976,7 +85239,8 @@
 						"叛神之器如同诀别遗物一样获得进阶。在休眠状态下，每件这些神器拥有一项{@table 神器词条; 次要增益词条|dmg|次要增益}词条和一项{@table 神器词条; 次要减益词条|dmg|次要减益}词条。当神器进入觉醒态，它获得一项额外的{@table 神器词条; 次要增益词条|dmg|次要增益}属性和一项额外的{@table 神器词条; 次要减益词条|dmg|次要减益}属性。当物品到达升华态时，它获得一项{@table 神器词条; 主要增益词条|dmg|主要增益}属性。见《城主指南》第7章的\"神器属性\"获得更多信息。"
 					]
 				}
-			]
+			],
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Will of the Talon (Exalted)",
@@ -85011,9 +85275,11 @@
 				"_preserve": {
 					"page": true,
 					"hasFluffImages": true
-				}
+				},
+				"translator": "皮卡丘等"
 			},
-			"bonusWeapon": "+3"
+			"bonusWeapon": "+3",
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Willowshade Oil",
@@ -85025,7 +85291,8 @@
 			"value": 3000,
 			"entries": [
 				"这种深蓝色的油可以从一种名为柳荫的稀有植物的果实中提取。一个生物可以花费一个动作将这种油涂抹到另外一个陷入{@condition 石化}状态不到1分钟的生物上，该生物的{@condition 石化}状态将在该生物的下一个回合开始时结束。"
-			]
+			],
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Wind Fan",
@@ -85653,9 +85920,11 @@
 				"_preserve": {
 					"page": true,
 					"hasFluffImages": true
-				}
+				},
+				"translator": "皮卡丘等"
 			},
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Wreath of the Prism (Dormant)",
@@ -85685,7 +85954,8 @@
 					"支配怪物"
 				]
 			},
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Wreath of the Prism (Exalted)",
@@ -85719,9 +85989,11 @@
 				"_preserve": {
 					"page": true,
 					"hasFluffImages": true
-				}
+				},
+				"translator": "皮卡丘等"
 			},
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Wrought-Iron Tower",
@@ -86448,7 +86720,8 @@
 				"权杖|phb",
 				"法杖|phb",
 				"魔杖|phb"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Arcane Focus",
@@ -86470,7 +86743,8 @@
 				"权杖|XPHB",
 				"法杖|XPHB",
 				"魔杖|XPHB"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Armor of Resistance",
@@ -86647,7 +86921,8 @@
 			"lootTables": [
 				"武备 - 珍稀|XDMG"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Armor of Vulnerability",
@@ -86700,7 +86975,8 @@
 			"lootTables": [
 				"武备 - 珍稀|XDMG"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Artisan's Tools",
@@ -86736,7 +87012,8 @@
 				"修补工具|PHB",
 				"织布工具|PHB",
 				"木雕工具|PHB"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Artisan's Tools",
@@ -86764,7 +87041,8 @@
 				"修补工具|XPHB",
 				"织布工具|XPHB",
 				"木雕工具|XPHB"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Ashen Bands of Courage",
@@ -86941,7 +87219,8 @@
 			"lootTables": [
 				"奥秘 - 非普通|XDMG"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Belt of Giant Strength",
@@ -87025,7 +87304,8 @@
 				"风暴巨人力量腰带|XDMG"
 			],
 			"itemsHidden": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Blade of Broken Mirrors",
@@ -87060,7 +87340,8 @@
 				"碎镜之锋（休眠）|EGW",
 				"碎镜之锋（觉醒）|EGW",
 				"碎镜之锋（升华）|EGW"
-			]
+			],
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Blade of the Guardian",
@@ -87241,7 +87522,8 @@
 				"奥秘 - 极珍稀|XDMG",
 				"器具 - 极珍稀|XDMG"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Chromatic Rose",
@@ -87346,7 +87628,8 @@
 				"达诺斯护目镜（觉醒）|EGW",
 				"达诺斯护目镜（升华）|EGW"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Devastation Orb",
@@ -87438,7 +87721,8 @@
 			"lootTables": [
 				"武备 - 极珍稀|XDMG"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Dragon Vessel",
@@ -87569,7 +87853,8 @@
 				"图腾|phb",
 				"木质法杖|phb",
 				"紫杉魔杖|phb"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Druidic Focus",
@@ -87587,7 +87872,8 @@
 				"槲寄生枝条|XPHB",
 				"木质法杖|XPHB",
 				"紫杉魔杖|XPHB"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Elemental Gem",
@@ -87651,7 +87937,8 @@
 			"miscTags": [
 				"CNS"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Enspelled Armor",
@@ -87681,7 +87968,8 @@
 				"武备 - 极珍稀|XDMG",
 				"武备 - 传说|XDMG"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Enspelled Staff",
@@ -87732,7 +88020,8 @@
 				"圣物 - 极珍稀|XDMG",
 				"圣物 - 传说|XDMG"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Enspelled Weapon",
@@ -87766,7 +88055,8 @@
 				"器具 - 极珍稀|XDMG",
 				"器具 - 传说|XDMG"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Eye and Hand of Vecna",
@@ -88189,7 +88479,8 @@
 					"祈愿术|xphb"
 				]
 			},
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Figurine of Wondrous Power",
@@ -88241,7 +88532,8 @@
 				"异能塑像，蛇纹石鸮|XDMG",
 				"异能塑像, 白银渡鸦|XDMG"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Flensing Claws",
@@ -88279,7 +88571,8 @@
 				"龙棋组|PHB",
 				"整副纸牌|PHB",
 				"整副三龙牌|PHB"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Gaming Set",
@@ -88295,7 +88588,8 @@
 				"龙棋组|XPHB",
 				"纸牌|XPHB",
 				"整副三龙牌|XPHB"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Glamerweave",
@@ -88334,7 +88628,8 @@
 				"无限秘典（觉醒）|EGW",
 				"无限秘典（升华）|EGW"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Grovelthrash",
@@ -88363,7 +88658,8 @@
 				"蹂躏者（觉醒）|EGW",
 				"蹂躏者（升华）|EGW"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Guild Keyrune",
@@ -88442,7 +88738,8 @@
 						"变形术"
 					]
 				}
-			}
+			},
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Holy Symbol",
@@ -88471,7 +88768,8 @@
 				"护符|phb",
 				"纹章|phb",
 				"圣物匣|phb"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Holy Symbol",
@@ -88493,7 +88791,8 @@
 				"护符|XPHB",
 				"纹章|XPHB",
 				"圣物匣|XPHB"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Horn of Valhalla",
@@ -88579,7 +88878,8 @@
 				"瓦尔哈拉号角，白银|XDMG"
 			],
 			"itemsHidden": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Idol of Good Fortunes",
@@ -88700,7 +89000,8 @@
 				"渗透者之匙（觉醒）|EGW",
 				"渗透者之匙（升华）|EGW"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Instrument of the Bards",
@@ -88788,7 +89089,8 @@
 					]
 				}
 			},
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Ioun Stone",
@@ -88873,7 +89175,8 @@
 				"艾恩石, 力量|XDMG",
 				"艾恩石, 维生|XDMG"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Jewel of Three Prayers",
@@ -89048,7 +89351,8 @@
 				"阴影之鞭（觉醒）|EGW",
 				"阴影之鞭（升华）|EGW"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Mace of the Black Crown",
@@ -89079,7 +89383,8 @@
 				"黑冠权杖（觉醒）|EGW",
 				"黑冠权杖（升华）|EGW"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Manual of Golems",
@@ -89176,7 +89481,8 @@
 			"miscTags": [
 				"CNS"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Mechanical Wonder",
@@ -89263,7 +89569,8 @@
 				"排箫|PHB",
 				"芦笛|PHB",
 				"提琴|PHB"
-			]
+			],
+			"translator": "不全书"
 		},
 		{
 			"ENG_name": "Musical Instrument",
@@ -89310,7 +89617,8 @@
 				"排箫|XPHB",
 				"芦笛|XPHB",
 				"提琴|XPHB"
-			]
+			],
+			"translator": "威世智慧汉化组"
 		},
 		{
 			"ENG_name": "Necklace of the Beastly Familiar",
@@ -89467,7 +89775,8 @@
 			"miscTags": [
 				"CNS"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Potion of Healing (*)",
@@ -89640,7 +89949,8 @@
 			"miscTags": [
 				"CNS"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Potions of Healing",
@@ -89682,7 +89992,8 @@
 			"source": "XDMG",
 			"srd52": true,
 			"weight": 0.5,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Potions of Mana",
@@ -89952,7 +90263,8 @@
 			"miscTags": [
 				"CNS"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Ring of Elemental Command",
@@ -89994,7 +90306,8 @@
 				"命令元素戒指（火）|XDMG",
 				"命令元素戒指（水）|XDMG"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Ring of Resistance",
@@ -90190,7 +90503,8 @@
 			"lootTables": [
 				"圣物 - 珍稀|XDMG"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Rod of the Honed Mind",
@@ -90264,7 +90578,8 @@
 			"lootTables": [
 				"奥秘 - 非普通|XDMG"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Ruin's Wake",
@@ -90295,7 +90610,8 @@
 				"毁灭残迹（觉醒）|EGW",
 				"毁灭残迹（升华）|EGW"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Sage's Signet",
@@ -90551,7 +90867,8 @@
 			"miscTags": [
 				"CNS"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Scroll of Titan Summoning",
@@ -90621,7 +90938,8 @@
 			],
 			"miscTags": [
 				"CNS"
-			]
+			],
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Shard Solitaire",
@@ -90754,7 +91072,8 @@
 				"如丝毒怨（休眠）|EGW",
 				"如丝毒怨（觉醒）|EGW",
 				"如丝毒怨（升华）|EGW"
-			]
+			],
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Spell Gem",
@@ -90898,7 +91217,8 @@
 			"miscTags": [
 				"CNS"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Spellwrought Tattoo",
@@ -90988,7 +91308,8 @@
 				"风暴腰带（休眠）|EGW",
 				"风暴腰带（觉醒）|EGW",
 				"风暴腰带（升华）|EGW"
-			]
+			],
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Sword of Answering",
@@ -91063,7 +91384,8 @@
 						"恐惧术"
 					]
 				}
-			}
+			},
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Troll's Blood Elixirs",
@@ -91243,7 +91565,8 @@
 						"变形术"
 					]
 				}
-			}
+			},
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Wand of Celestial Prowess",
@@ -91315,7 +91638,8 @@
 				"+2 战法师魔杖|XDMG",
 				"+3 战法师魔杖|XDMG"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Wave-Swept Weapon",
@@ -91362,7 +91686,8 @@
 				"爪之意志（休眠）|EGW",
 				"爪之意志（觉醒）|EGW",
 				"爪之意志（升华）|EGW"
-			]
+			],
+			"translator": "皮卡丘等"
 		},
 		{
 			"ENG_name": "Wraps of Unarmed Power",
@@ -91376,7 +91701,8 @@
 				"+2 神功绑带|XDMG",
 				"+3 神功绑带|XDMG"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "Amethyst Dragonlord（可以这很方）等"
 		},
 		{
 			"ENG_name": "Wraps of Unarmed Prowess",
@@ -91418,7 +91744,8 @@
 					"支配怪物"
 				]
 			},
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"translator": "皮卡丘等"
 		}
 	]
 }
